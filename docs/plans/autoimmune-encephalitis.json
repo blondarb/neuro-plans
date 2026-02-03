@@ -3,7 +3,9 @@
   "title": "Autoimmune Encephalitis",
   "version": "1.0",
   "icd10": [
-    "** G04.81 (Other autoimmune encephalitis)"
+    "** G04.81 (Other autoimmune encephalitis)",
+    "G04.90 (Encephalitis and encephalomyelitis",
+    "unspecified)"
   ],
   "scope": "** Diagnostic workup, acute treatment, and long-term management of suspected or confirmed autoimmune encephalitis. Covers antibody-mediated encephalitis (anti-NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX, IgLON5, GABA-A, GAD65), first-line immunotherapy, second-line escalation, seizure management, psychiatric symptom management, ICU considerations, tumor screening, and long-term immunosuppression. For infectious encephalitis, use \"HSV Encephalitis\" template. For paraneoplastic syndromes without encephalitis, use \"Paraneoplastic Syndrome\" template. For status epilepticus management, use \"Status Epilepticus\" template.",
   "notes": [],
@@ -11,7 +13,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -20,7 +22,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -29,7 +31,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -38,7 +40,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR",
+          "item": "ESR (CPT 85652)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -47,7 +49,7 @@
           "target": "Normal (<20 mm/hr)"
         },
         {
-          "item": "CRP",
+          "item": "CRP (CPT 86140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -56,7 +58,7 @@
           "target": "Normal"
         },
         {
-          "item": "Urinalysis with culture",
+          "item": "Urinalysis with culture (CPT 81003+87086)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -65,7 +67,7 @@
           "target": "Negative"
         },
         {
-          "item": "Blood cultures (x2 sets)",
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -74,7 +76,7 @@
           "target": "No growth"
         },
         {
-          "item": "Blood glucose",
+          "item": "Blood glucose (CPT 82947)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -83,7 +85,7 @@
           "target": "Normal"
         },
         {
-          "item": "HbA1c",
+          "item": "HbA1c (CPT 83036)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -92,7 +94,7 @@
           "target": "<5.7%"
         },
         {
-          "item": "Ammonia",
+          "item": "Ammonia (CPT 82140)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -101,7 +103,7 @@
           "target": "Normal"
         },
         {
-          "item": "Lactate",
+          "item": "Lactate (CPT 83605)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -110,7 +112,7 @@
           "target": "Normal (<2.0 mmol/L)"
         },
         {
-          "item": "PT/INR, aPTT",
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -119,7 +121,7 @@
           "target": "Normal"
         },
         {
-          "item": "Magnesium",
+          "item": "Magnesium (CPT 83735)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -128,7 +130,7 @@
           "target": "Normal"
         },
         {
-          "item": "Phosphorus",
+          "item": "Phosphorus (CPT 84100)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -137,7 +139,7 @@
           "target": "Normal"
         },
         {
-          "item": "Procalcitonin",
+          "item": "Procalcitonin (CPT 84145)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -146,7 +148,7 @@
           "target": "Normal (<0.1 ng/mL)"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -155,7 +157,7 @@
           "target": "Normal"
         },
         {
-          "item": "CPK",
+          "item": "CPK (CPT 82550)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -164,7 +166,7 @@
           "target": "Normal"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -173,7 +175,7 @@
           "target": "Negative"
         },
         {
-          "item": "Alcohol level",
+          "item": "Alcohol level (CPT 80320)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -182,7 +184,7 @@
           "target": "Negative"
         },
         {
-          "item": "Pregnancy test (females of childbearing age)",
+          "item": "Pregnancy test (females of childbearing age) (CPT 81025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -200,7 +202,7 @@
           "target": "Normal"
         },
         {
-          "item": "LDH",
+          "item": "LDH (CPT 83615)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -227,9 +229,9 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Autoimmune Antibody Panel": [
         {
-          "item": "**Anti-NMDAR antibody (serum AND CSF)**",
+          "item": "**Anti-NMDAR antibody (serum AND CSF)** (CPT 86255)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -238,7 +240,7 @@
           "target": "Negative"
         },
         {
-          "item": "**Anti-LGI1 antibody (serum AND CSF)**",
+          "item": "**Anti-LGI1 antibody (serum AND CSF)** (CPT 86235)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -247,7 +249,7 @@
           "target": "Negative"
         },
         {
-          "item": "**Anti-CASPR2 antibody (serum AND CSF)**",
+          "item": "**Anti-CASPR2 antibody (serum AND CSF)** (CPT 86235)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -328,7 +330,7 @@
           "target": "All negative"
         },
         {
-          "item": "ANA",
+          "item": "ANA (CPT 86235)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -409,7 +411,7 @@
           "target": "Normal"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Anti-neuronal nuclear antibody type 1 (ANNA-1/anti-Hu)",
           "ED": "-",
@@ -565,7 +567,7 @@
           "target": "10-20 cm H2O"
         },
         {
-          "item": "Cell count with differential (tubes 1 and 4)",
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -573,7 +575,7 @@
           "target": "WBC 5-80 (lymphocyte-predominant); RBC 0"
         },
         {
-          "item": "Protein",
+          "item": "Protein (CPT 84157)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -581,7 +583,7 @@
           "target": "Normal to mildly elevated (usually <100 mg/dL)"
         },
         {
-          "item": "Glucose with paired serum glucose",
+          "item": "Glucose with paired serum glucose (CPT 82945)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -589,7 +591,7 @@
           "target": "Normal (>60% of serum)"
         },
         {
-          "item": "Gram stain and bacterial culture",
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -597,7 +599,7 @@
           "target": "No organisms"
         },
         {
-          "item": "HSV 1/2 PCR",
+          "item": "HSV 1/2 PCR (CPT 87529)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -653,7 +655,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cryptococcal antigen",
+          "item": "Cryptococcal antigen (CPT 87327)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -661,7 +663,7 @@
           "target": "Negative"
         },
         {
-          "item": "VDRL (CSF)",
+          "item": "VDRL (CSF) (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -669,7 +671,7 @@
           "target": "Negative"
         },
         {
-          "item": "Oligoclonal bands (CSF AND paired serum)",
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -685,7 +687,7 @@
           "target": "May be elevated"
         },
         {
-          "item": "Cytology",
+          "item": "Cytology (CPT 88104)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -717,7 +719,7 @@
           "target": "Negative"
         },
         {
-          "item": "AFB culture and smear",
+          "item": "AFB culture and smear (CPT 87116)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -725,7 +727,7 @@
           "target": "Negative"
         },
         {
-          "item": "Fungal culture",
+          "item": "Fungal culture (CPT 87102)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -737,7 +739,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -747,7 +749,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "MRI brain with and without contrast",
+          "item": "MRI brain with and without contrast (CPT 70553)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -757,7 +759,7 @@
           "contraindications": "GFR <30, gadolinium allergy, pacemaker"
         },
         {
-          "item": "EEG (routine or continuous)",
+          "item": "EEG (routine or continuous) (CPT 95816)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -767,7 +769,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "ECG (12-lead)",
+          "item": "ECG (12-lead) (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -777,7 +779,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -809,7 +811,7 @@
           "contraindications": "GFR <30, gadolinium allergy"
         },
         {
-          "item": "CT chest/abdomen/pelvis with contrast",
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -839,7 +841,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "FDG-PET/CT (whole body)",
+          "item": "FDG-PET/CT (whole body) (CPT 78816)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -1037,19 +1039,19 @@
       ],
       "First-Line Immunotherapy": [
         {
-          "item": "Methylprednisolone IV",
+          "item": "Methylprednisolone IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1000 mg",
-                "orderSentence": "Methylprednisolone IV 1000 mg IV"
+                "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 5 days; infuse over 1-2 hours",
-            "orderSentence": "Methylprednisolone IV 1000 mg IV"
+            "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis",
@@ -1103,19 +1105,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "IVIG (intravenous immunoglobulin)",
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.4 g/kg",
-                "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg IV"
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine",
-            "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg IV"
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
           },
           "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure",
           "monitoring": "Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose",
@@ -2218,7 +2220,7 @@
           "indication": "Steroid-induced hyperglycemia management; thyroid evaluation if Hashimoto suspected"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "Return to ED immediately for new seizures, sudden behavioral changes, fever, difficulty breathing, or loss of consciousness",
           "ED": "Y",
@@ -2310,7 +2312,7 @@
           "OPD": "Y"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Tumor Screening Protocols by Antibody": [
         {
           "frequency": "At diagnosis; repeat q6 months x 2 years if initially negative"
         },
@@ -2666,6 +2668,81 @@
       "item": "Fibrinogen (during PLEX)",
       "frequency": "Before each exchange",
       "action": "Hold PLEX if <100; FFP replacement"
+    },
+    {
+      "item": "Neurologic examination (cognition, behavior, seizures, motor)",
+      "frequency": "Monthly x 6 months; then q3 months x 2 years; then q6 months",
+      "action": "If relapse: repeat LP/MRI; resume or escalate immunotherapy; re-screen for tumor"
+    },
+    {
+      "item": "Modified Rankin Scale (mRS)",
+      "frequency": "Each visit",
+      "action": "Document trajectory; adjust rehab goals; consider treatment escalation if plateau or decline"
+    },
+    {
+      "item": "CASE score (Clinical Assessment Scale in Autoimmune Encephalitis)",
+      "frequency": "Each visit",
+      "action": "Standardized outcome measure; guide treatment decisions"
+    },
+    {
+      "item": "MRI brain with and without contrast",
+      "frequency": "3-6 months post-treatment; then annually x 3 years",
+      "action": "New/worsening lesions: relapse workup; repeat antibody testing; escalate treatment"
+    },
+    {
+      "item": "EEG (routine)",
+      "frequency": "3-6 months post-treatment; as needed for seizure management",
+      "action": "If persistent abnormality: continue/adjust ASMs; consider repeat immunotherapy"
+    },
+    {
+      "item": "Serum antibody titers",
+      "frequency": "q3-6 months x 2 years; then annually",
+      "action": "Rising titers may precede clinical relapse; increase surveillance; consider preemptive treatment"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q2-4 weeks on mycophenolate/azathioprine; then monthly",
+      "action": "Hold/reduce immunosuppression; growth factor support"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "Monthly x 3 months on azathioprine/mycophenolate; then q3 months",
+      "action": "Dose reduction or switch agent"
+    },
+    {
+      "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+      "frequency": "Q3-6 months on rituximab or other B-cell depletion",
+      "action": "Immunoglobulin replacement if recurrent infections with hypogammaglobulinemia"
+    },
+    {
+      "item": "CD19/CD20 B-cell counts",
+      "frequency": "Q3 months on rituximab",
+      "action": "Guide re-dosing interval; B-cell repopulation may trigger relapse"
+    },
+    {
+      "item": "TPMT activity/genotype",
+      "frequency": "Once before starting azathioprine",
+      "action": "Dose reduce or avoid azathioprine if intermediate/low TPMT"
+    },
+    {
+      "item": "Tumor surveillance (per antibody type -- Section 4C)",
+      "frequency": "Per protocol: q6 months x 2-4 years",
+      "action": "If tumor found: urgent oncology referral and surgical resection"
+    },
+    {
+      "item": "Neuropsychological testing",
+      "frequency": "Baseline (when able); 6 months; 12 months; annually",
+      "action": "Guide cognitive rehabilitation; inform return to work/school planning"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline if steroids >3 months; repeat q1-2 years",
+      "action": "Bisphosphonate therapy; calcium/vitamin D optimization"
+    },
+    {
+      "item": "ASM drug levels (if applicable)",
+      "frequency": "Per drug-specific schedule; after dose changes",
+      "action": "Adjust dose; assess adherence"
     }
   ],
   "disposition": [

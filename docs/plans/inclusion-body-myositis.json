@@ -1,0 +1,1652 @@
+{
+  "id": "inclusion-body-myositis",
+  "title": "Inclusion Body Myositis (IBM)",
+  "version": "1.1",
+  "icd10": [
+    "** G72.41 (Inclusion body myositis)"
+  ],
+  "scope": "** Evaluation and management of sporadic inclusion body myositis (sIBM), the most common acquired myopathy in adults over age 50. Includes diagnostic workup, differentiation from polymyositis and other myopathies, symptomatic management, trial of immunotherapy for dysphagia, fall prevention, and rehabilitation. Excludes hereditary inclusion body myopathy (hIBM/GNE myopathy), other inflammatory myopathies (dermatomyositis, polymyositis, IMNM -- see separate plans), and metabolic/toxic myopathies.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Creatine kinase (CK) (CPT 82550)",
+          "rationale": "Primary muscle enzyme; characteristically mildly elevated in IBM (typically <10x ULN, often 1-3x ULN); higher elevation suggests alternative diagnosis",
+          "target": "Normal (30-200 U/L); expect mild-moderate elevation (typically 300-1500 U/L)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function baseline; hepatic function for medication planning; AST/ALT may be mildly elevated from muscle source",
+          "target": "Normal; mild AST/ALT elevation may reflect muscle rather than liver injury",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline blood counts; infection screen; lymphocyte subset if considering immunotherapy trial",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aldolase (CPT 82085)",
+          "rationale": "Muscle enzyme that may be elevated when CK is normal or mildly elevated; supportive of myopathic process",
+          "target": "Normal (<7.7 U/L); may be mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory marker; usually normal or mildly elevated in IBM (minimal systemic inflammation)",
+          "target": "Normal; mild elevation possible",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; usually normal in IBM",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "Muscle enzyme; may be mildly elevated",
+          "target": "Normal or mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Exclude hypothyroid myopathy in differential",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Baseline; relevant if corticosteroid trial considered",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia can exacerbate weakness",
+          "target": "Normal (1.7-2.2 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Hypophosphatemia causes weakness (mimic)",
+          "target": "Normal (2.5-4.5 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis with microscopy (CPT 81001)",
+          "rationale": "Myoglobinuria screen; baseline renal assessment",
+          "target": "No myoglobin; no casts",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "rationale": "Coagulation baseline before muscle biopsy",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Anti-cN1A (anti-NT5C1A) antibody",
+          "rationale": "IBM-specific biomarker; sensitivity ~60%, specificity ~70-90%; supports IBM diagnosis when positive; also found in Sjogren and SLE (lower specificity in those contexts)",
+          "target": "Negative in healthy controls; positive supports IBM diagnosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Myositis-specific antibody panel (comprehensive) (CPT 86235)",
+          "rationale": "Exclude polymyositis, dermatomyositis, IMNM; anti-Jo-1, anti-Mi-2, anti-MDA5, anti-SRP, anti-HMGCR all expected negative in IBM",
+          "target": "Negative for myositis-specific antibodies (positive suggests alternative diagnosis)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-Jo-1 antibody (CPT 86235)",
+          "rationale": "Exclude anti-synthetase syndrome (arthritis, ILD, mechanic's hands, Raynaud)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SRP antibody",
+          "rationale": "Exclude immune-mediated necrotizing myopathy (IMNM); anti-SRP causes severe proximal weakness with very high CK",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-HMGCR antibody",
+          "rationale": "Exclude statin-associated immune-mediated necrotizing myopathy; important if statin exposure history",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86038)",
+          "rationale": "Connective tissue disease overlap screen; may be positive in IBM (~20%) but nonspecific",
+          "target": "Negative or low titer",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA/Ro, Anti-SSB/La",
+          "rationale": "Sjogren syndrome overlap screen; Sjogren can coexist with IBM",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency causes neuropathy that may compound weakness; common in older adults",
+          "target": "Normal (>300 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Folate deficiency; baseline if methotrexate trial considered",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D (25-OH) (CPT 82306)",
+          "rationale": "Deficiency common in older adults; worsens muscle weakness and fall risk; relevant for bone health",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes screen; diabetic neuropathy may compound weakness; relevant if steroid trial",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen, anti-HBc (CPT 80074)",
+          "rationale": "Screen before immunotherapy trial (IVIG, rituximab) for reactivation risk",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "rationale": "Screen before immunotherapy; HCV-associated myopathy in differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV-associated myopathy in differential; screen before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "rationale": "Baseline before IVIG trial; IgA deficiency is contraindication to standard IVIG",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Genetic testing for GNE myopathy (hereditary IBM)",
+          "rationale": "If onset age <50, autosomal recessive family history, or atypical features (no inflammation on biopsy); GNE gene mutation causes hereditary inclusion body myopathy",
+          "target": "Normal (no GNE mutation); positive suggests hIBM, not sporadic IBM",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for hereditary myopathy panel",
+          "rationale": "If biopsy atypical or diagnosis uncertain; includes VCP, SQSTM1, HNRNPA1, HNRNPA2B1 (multisystem proteinopathy genes), GNE, desmin, myotilin, ZASP",
+          "target": "Normal; mutation identifies hereditary myopathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86255)",
+          "rationale": "If rapid progression atypical for IBM; consider paraneoplastic myopathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mitochondrial DNA testing (blood or muscle)",
+          "rationale": "If biopsy shows mitochondrial abnormalities (COX-negative fibers common in IBM but also in mitochondrial myopathy); distinguish primary mitochondrial disease",
+          "target": "Normal; pathogenic mutation suggests mitochondrial myopathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acid alpha-glucosidase activity (dried blood spot) (CPT 82657)",
+          "rationale": "Late-onset Pompe disease in differential (proximal weakness, respiratory insufficiency, mildly elevated CK)",
+          "target": "Normal enzyme activity; reduced activity suggests Pompe disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "SPEP with immunofixation (CPT 86334)",
+          "rationale": "Paraproteinemia screen; monoclonal gammopathy-associated neuropathy/myopathy in older adults",
+          "target": "Normal; no monoclonal protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement C3, C4 (CPT 86160, 86161)",
+          "rationale": "Baseline if considering complement-modulating therapies; overlap autoimmune conditions",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-PM-Scl antibody",
+          "rationale": "Overlap myositis-scleroderma phenotype if scleroderma features present",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI thighs with and without contrast (bilateral) (CPT 73721)",
+          "timing": "Within first 1-2 weeks of evaluation; guides biopsy site",
+          "target": "IBM-characteristic pattern: selective fatty replacement and atrophy of quadriceps (especially vastus lateralis and medialis with relative sparing of rectus femoris), medial gastrocnemius, and forearm flexor muscles; T2/STIR edema in active areas; asymmetric involvement",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/NCS (CPT 95886, 95907-95913)",
+          "timing": "During initial workup; essential for diagnosis",
+          "target": "IBM-characteristic: mixed myopathic AND neurogenic pattern (short-duration and long-duration MUAPs); fibrillations and positive sharp waves (irritable myopathy); increased insertional activity; NCS usually normal (may show mild sensory neuropathy in older patients)",
+          "contraindications": "None significant; avoid anticoagulated limbs for needle EMG",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral) (CPT 71046)",
+          "timing": "At presentation if respiratory concerns",
+          "target": "Baseline; IBM rarely causes ILD (unlike DM/PM); screen for aspiration pneumonia if dysphagia present",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI forearms with and without contrast (bilateral)",
+          "timing": "If finger flexor weakness prominent; helps confirm IBM pattern",
+          "target": "Selective atrophy and fatty infiltration of flexor digitorum profundus (FDP); relative sparing of flexor digitorum superficialis; asymmetric",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modified barium swallow study (MBSS) (CPT 74230)",
+          "timing": "If dysphagia present or suspected; cricopharyngeal dysfunction common in IBM (40-80%)",
+          "target": "Cricopharyngeal bar; impaired pharyngeal transit; vallecular and piriform sinus residue; aspiration or penetration",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PFTs with DLCO (CPT 94010, 94729)",
+          "timing": "If respiratory symptoms present; IBM can cause respiratory muscle weakness in advanced disease",
+          "target": "FVC >80% predicted; DLCO >80% predicted; mild restrictive pattern in advanced disease from respiratory muscle weakness",
+          "contraindications": "Unable to cooperate; active pneumothorax",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Baseline cardiac assessment in older patients",
+          "target": "Normal sinus rhythm; no conduction abnormalities",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Whole-body MRI or MRI pelvis/upper extremities",
+          "timing": "Comprehensive assessment of muscle involvement pattern; document disease extent for monitoring",
+          "target": "Selective atrophy pattern consistent with IBM; quadriceps, medial gastrocnemius, FDP, FCR preferentially affected; asymmetric",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Muscle biopsy (open or needle) (CPT 20200, 20206)",
+          "timing": "After MRI guidance; within 2-4 weeks of evaluation; biopsy affected (but not end-stage fatty) muscle; avoid recently EMG'd muscle on ipsilateral side",
+          "target": "IBM-diagnostic findings: rimmed vacuoles (eosinophilic cytoplasmic inclusions with basophilic rim); endomysial inflammation with CD8+ T-cell invasion of non-necrotic fibers; congophilic (Congo red positive) amyloid deposits under fluorescence; p62-positive aggregates; TDP-43 positive inclusions; 15-18nm tubulofilaments on electron microscopy; mitochondrial changes (COX-negative fibers, ragged red fibers)",
+          "contraindications": "Coagulopathy; anticoagulation (hold); infection at site",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Muscle ultrasound (CPT 76881)",
+          "timing": "Non-invasive assessment of muscle echogenicity; can guide biopsy site",
+          "target": "Increased echogenicity in affected muscles; selective quadriceps and FDP involvement; asymmetric",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Esophageal manometry (CPT 91010)",
+          "timing": "If dysphagia evaluation warrants motility assessment beyond MBSS",
+          "target": "Cricopharyngeal dysfunction; reduced pharyngeal contraction; abnormal UES relaxation",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV fluids (normal saline)",
+          "route": "IV",
+          "indication": "Dehydration and fall-related injury in patients presenting to ED with IBM-related falls; rhabdomyolysis if CK significantly elevated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125-250 mL/h",
+                "orderSentence": "IV fluids (normal saline) 125-250 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "125-250 mL/h NS for hydration; increase to 200-300 mL/h if CK >5000 (rare in IBM but possible with falls/crush)",
+            "orderSentence": "IV fluids (normal saline) 125-250 mL/h IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "Urine output; electrolytes; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Pain management for fall-related injuries; myalgia (uncommon in IBM but may occur)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN pain; max 4 g/day (2 g/day if hepatic impairment); IV alternative: 1000 mg IV q6h if NPO",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe liver disease; hepatic impairment (reduce dose)",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "VTE prevention in immobilized patients admitted with fall-related injuries or acute deconditioning",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start on admission if immobile",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding; platelets <50K; CrCl <30 (use UFH)",
+          "monitoring": "Platelets q3 days; anti-Xa if renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "DVT prophylaxis: Heparin SC (alternative)",
+          "route": "SC",
+          "indication": "VTE prevention if enoxaparin contraindicated (CrCl <30)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8-12h",
+            "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+          },
+          "contraindications": "Active bleeding; HIT history",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Aspiration pneumonia treatment: Ampicillin-sulbactam",
+          "route": "IV",
+          "indication": "Aspiration pneumonia from IBM-related dysphagia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 g",
+                "orderSentence": "Aspiration pneumonia treatment: Ampicillin-sulbactam 3 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3 g (ampicillin 2 g / sulbactam 1 g) IV q6h; duration 5-7 days; switch to oral amoxicillin-clavulanate when improving",
+            "orderSentence": "Aspiration pneumonia treatment: Ampicillin-sulbactam 3 g IV"
+          },
+          "contraindications": "Penicillin allergy; severe hepatic impairment",
+          "monitoring": "Temperature; WBC; chest X-ray improvement; renal function for dose adjustment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative)",
+          "route": "IV",
+          "indication": "Aspiration pneumonia in penicillin-allergic patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600-900 mg",
+                "orderSentence": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative) 600-900 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "600-900 mg IV q8h; duration 5-7 days; switch to oral clindamycin 300-450 mg q6h when improving",
+            "orderSentence": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative) 600-900 mg IV"
+          },
+          "contraindications": "Clindamycin hypersensitivity; C. difficile history (relative)",
+          "monitoring": "C. difficile monitoring; LFTs; diarrhea",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Creatine monohydrate",
+          "route": "PO",
+          "indication": "Modest improvement in muscle strength and endurance in IBM (limited evidence); well-tolerated nutritional supplement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 g",
+                "orderSentence": "Creatine monohydrate 5 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 g PO daily mixed in water or juice; no loading phase needed; take with meal",
+            "orderSentence": "Creatine monohydrate 5 g PO"
+          },
+          "contraindications": "Severe renal impairment (relative, monitor)",
+          "monitoring": "Renal function at baseline and q6 months; serum creatinine (will be mildly elevated from supplement, not nephrotoxicity)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alendronate",
+          "route": "PO",
+          "indication": "Osteoporosis prevention in older adults with IBM at high fall risk; bone protection if corticosteroid trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg",
+                "orderSentence": "Alendronate 70 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "70 mg PO weekly on empty stomach with full glass of water; remain upright 30 min after",
+            "orderSentence": "Alendronate 70 mg PO"
+          },
+          "contraindications": "GFR <35; esophageal disorders; inability to remain upright 30 min; hypocalcemia",
+          "monitoring": "DEXA at baseline and q2 years; renal function; calcium; dental exam (ONJ risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium carbonate + Vitamin D",
+          "route": "PO",
+          "indication": "Bone health and fall prevention in older adults with IBM; vitamin D deficiency common and worsens muscle weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1200 mg Ca + 1000-2000 IU D",
+                "orderSentence": "Calcium carbonate + Vitamin D 1000-1200 mg Ca + 1000-2000 IU D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 1000-2000 IU PO daily; higher vitamin D doses if deficient (50,000 IU weekly x 8 weeks then maintenance)",
+            "orderSentence": "Calcium carbonate + Vitamin D 1000-1200 mg Ca + 1000-2000 IU D PO"
+          },
+          "contraindications": "Hypercalcemia; hyperparathyroidism; renal stones (relative)",
+          "monitoring": "Serum calcium; vitamin D level q3-6 months until replete",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain or painful cramps associated with IBM; concurrent peripheral neuropathy common in older adults",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg PO qHS; increase by 300 mg/day every 3-5 days; target 900-1800 mg/day divided TID; max 3600 mg/day; reduce dose if CrCl <60",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); respiratory depression risk in elderly",
+          "monitoring": "Sedation; dizziness; fall risk (critical in IBM patients); renal function for dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain or muscle cramps if gabapentin not tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg PO BID; may increase to 150 mg BID after 1 week; max 300 mg BID; reduce dose if CrCl <60",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history",
+          "monitoring": "Sedation; dizziness; fall risk; peripheral edema; weight gain; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation prevention (immobility, reduced activity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation (immobility-related, common in IBM due to reduced activity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz liquid PO daily; adjust frequency based on response",
+            "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+          },
+          "contraindications": "GI obstruction; bowel perforation",
+          "monitoring": "Bowel function; hydration status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GERD management in patients with dysphagia; GI protection if aspirin or NSAID use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Omeprazole 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg PO daily; take 30 minutes before breakfast",
+            "orderSentence": "Omeprazole 20 mg PO"
+          },
+          "contraindications": "PPI allergy; long-term use concerns (B12, Mg, bone density)",
+          "monitoring": "Magnesium if prolonged use; B12 level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression (common comorbidity in chronic progressive neuromuscular disease); also helps anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO daily; increase to 50 mg after 1 week; may titrate by 25-50 mg q2-4 weeks; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs (14-day washout); concurrent pimozide",
+          "monitoring": "Suicidality monitoring (first 4 weeks); serotonin syndrome; hyponatremia (SIADH, especially elderly); fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression and anxiety in IBM patients; alternative to sertraline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Escitalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily in elderly; increase to 10 mg after 1 week; max 20 mg/day (10 mg in age >65 per FDA)",
+            "orderSentence": "Escitalopram 10 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation; concurrent pimozide",
+          "monitoring": "QTc if risk factors; hyponatremia (SIADH, especially elderly); suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia (common in chronic disease; adjustment disorder; pain-related)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Trazodone 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg PO qHS; may increase to 100 mg qHS; max 200 mg for insomnia",
+            "orderSentence": "Trazodone 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation (high dose)",
+          "monitoring": "Sedation; orthostatic hypotension (fall risk in IBM); priapism (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Daytime fatigue and somnolence associated with chronic progressive disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO every morning; may increase to 200 mg daily; avoid afternoon dosing",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; cardiac arrhythmia",
+          "monitoring": "BP; heart rate; mood; insomnia; hepatic function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "IBM-related dysphagia unresponsive to conservative measures; NOT proven for limb weakness in IBM; limited evidence of transient swallowing improvement; time-limited trial (3-6 months) with objective assessment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 2 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg total divided over 2-5 days (e.g., 0.4 g/kg/day x 5 days) every 4 weeks; assess dysphagia response objectively at 3 and 6 months; discontinue if no improvement",
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 2 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; recent thrombotic event; volume overload",
+          "monitoring": "Vital signs q15min during first infusion; renal function (BUN, Cr) before and after; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs); MBSS at 3 and 6 months to assess dysphagia response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Subcutaneous immunoglobulin (SCIg)",
+          "route": "SC",
+          "indication": "Alternative to IVIG for dysphagia management; patient self-administration at home; fewer systemic side effects than IVIG",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Weight-based",
+                "orderSentence": "Subcutaneous immunoglobulin (SCIg) Weight-based SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Equivalent monthly dose to IVIG divided into weekly SC infusions; multiple sites simultaneously; train patient/caregiver on self-administration",
+            "orderSentence": "Subcutaneous immunoglobulin (SCIg) Weight-based SC"
+          },
+          "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; recent thrombotic event; inadequate SC tissue",
+          "monitoring": "Local infusion site reactions; IgG trough levels; renal function; dysphagia response (MBSS q6 months)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (limited trial)",
+          "route": "PO",
+          "indication": "Time-limited trial (12 weeks) ONLY if diagnosis uncertain and polymyositis remains in differential; most IBM patients do NOT respond; steroid myopathy may worsen weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg/kg",
+                "orderSentence": "Prednisone (limited trial) 0.5-1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5-1 mg/kg/day (max 60 mg) as single morning dose; assess strength and CK at 4, 8, 12 weeks; taper and discontinue if no objective improvement by 12 weeks; steroid myopathy can WORSEN IBM weakness",
+            "orderSentence": "Prednisone (limited trial) 0.5-1 mg/kg PO"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis; GI bleeding; strong clinical suspicion for IBM (avoid unnecessary trial)",
+          "monitoring": "Glucose weekly; BP; weight; mood; bone density if >3 months; muscle strength (MMT) at 4, 8, 12 weeks to objectively assess response; CK trending",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate (limited trial)",
+          "route": "PO",
+          "indication": "Time-limited trial if polymyositis remains in differential and steroid trial inconclusive; NOT effective for IBM in clinical trials",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-15 mg",
+                "orderSentence": "Methotrexate (limited trial) 10-15 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-15 mg PO once weekly; folic acid 1 mg PO daily (except methotrexate day); assess at 3-6 months; discontinue if no objective improvement",
+            "orderSentence": "Methotrexate (limited trial) 10-15 mg PO"
+          },
+          "contraindications": "Pregnancy (Category X); hepatic disease; CrCl <30; active infection; pulmonary fibrosis; concurrent TMP-SMX",
+          "monitoring": "CBC q2-4 weeks during titration then q8-12 weeks; LFTs q8-12 weeks; renal function; pulmonary symptoms; strength assessment q3 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin injection (cricopharyngeal)",
+          "route": "Local injection",
+          "indication": "Cricopharyngeal dysfunction causing dysphagia refractory to conservative measures; EMG-guided injection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 units",
+                "orderSentence": "Botulinum toxin injection (cricopharyngeal) 15-30 units Local injection"
+              }
+            ],
+            "route": "Local injection",
+            "instructions": "15-30 units onabotulinumtoxinA injected into cricopharyngeus muscle under EMG or fluoroscopic guidance; effect onset 3-7 days; duration 3-6 months; may repeat",
+            "orderSentence": "Botulinum toxin injection (cricopharyngeal) 15-30 units Local injection"
+          },
+          "contraindications": "Infection at injection site; known hypersensitivity; myasthenia gravis (relative)",
+          "monitoring": "Dysphagia response; MBSS 2-4 weeks post-injection; transient worsening of swallow possible; aspiration risk monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cricopharyngeal myotomy (surgical)",
+          "route": "Surgical",
+          "indication": "Severe refractory cricopharyngeal dysphagia not responsive to botulinum toxin or IVIG; surgical division of cricopharyngeus muscle",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Cricopharyngeal myotomy (surgical) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Surgical myotomy of cricopharyngeus muscle by otolaryngology/head and neck surgeon; one-time procedure; can significantly improve swallowing in appropriately selected patients",
+            "orderSentence": "Cricopharyngeal myotomy (surgical) N/A Surgical"
+          },
+          "contraindications": "Poor surgical candidate; significant pharyngeal weakness (not just cricopharyngeal); respiratory failure risk",
+          "monitoring": "Post-operative swallow assessment; wound healing; aspiration risk; MBSS 4-6 weeks post-operatively",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "No proven disease-modifying therapy for IBM",
+          "route": "N/A",
+          "indication": "IBM has no FDA-approved or proven disease-modifying treatment; multiple clinical trials (arimoclomol, bimagrumab, rapamycin, natalizumab) have not demonstrated efficacy; management is supportive and symptomatic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "No proven disease-modifying therapy for IBM N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "No disease-modifying therapy available; focus on symptomatic management, fall prevention, dysphagia management, and rehabilitation",
+            "orderSentence": "No proven disease-modifying therapy for IBM N/A N/A"
+          },
+          "pretreatment": "N/A",
+          "contraindications": "N/A",
+          "monitoring": "Continued monitoring for emerging clinical trial opportunities; annual reassessment of functional status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist for diagnostic confirmation, EMG interpretation, biopsy planning, and long-term disease management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for comprehensive swallow evaluation given high prevalence of cricopharyngeal dysfunction and aspiration risk in IBM (40-80% develop dysphagia)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for individualized exercise program, fall prevention strategies, gait training, and assistive device fitting given progressive quadriceps weakness and high fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, hand function optimization (grip aids, adaptive utensils), energy conservation, and home modification assessment given finger flexor weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Otolaryngology (ENT) for cricopharyngeal dysfunction evaluation, botulinum toxin injection consideration, and cricopharyngeal myotomy evaluation if dysphagia is severe and refractory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/Dietetics for dysphagia diet modification (texture adaptation), weight management, protein optimization for muscle preservation, and nutritional supplementation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology if respiratory symptoms develop (advanced IBM may cause respiratory muscle weakness); PFT monitoring in advanced disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physiatry (PM&R) for comprehensive rehabilitation planning, durable medical equipment prescription, and disability evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability evaluation assistance, insurance navigation, community resources, and caregiver support given progressive nature of IBM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/Psychology for adjustment to chronic progressive illness, depression screening, coping strategies, and cognitive behavioral therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology for PEG tube placement evaluation if severe dysphagia with weight loss and recurrent aspiration despite conservative measures and IVIG trial",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if refractory musculoskeletal pain from compensatory movement patterns and joint stress",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for symptom management, goals of care discussion, and quality of life optimization in advanced IBM with significant disability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling if hereditary inclusion body myopathy (hIBM/GNE myopathy) suspected based on age <50, family history, or atypical features",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical trial coordinator for enrollment in IBM clinical trials (check clinicaltrials.gov for active studies)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if new difficulty breathing or worsening shortness of breath (may indicate aspiration pneumonia or respiratory muscle weakness)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if choking episodes during eating or drinking, or inability to swallow medications (aspiration risk requiring urgent evaluation)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if fall with head injury, inability to get up, or new severe pain (high fall risk due to quadriceps weakness)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if fever with cough or difficulty breathing (may indicate aspiration pneumonia given dysphagia risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Expect slow but progressive weakness over years; IBM is a chronic condition without cure, but many patients remain ambulatory for 10-15 years after diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use assistive devices as recommended by PT/OT (cane, walker, wheelchair) to prevent falls and maintain independence -- early adoption improves safety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modify diet texture as recommended by speech therapist; avoid thin liquids if swallow evaluation shows aspiration risk; use thickened liquids and soft foods as directed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sit upright during and for 30 minutes after meals to reduce aspiration risk; eat slowly and take small bites",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new difficulty swallowing, coughing during meals, or unintentional weight loss to neurology (may indicate worsening dysphagia requiring intervention)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear supportive footwear with non-slip soles; use grab bars in bathroom; remove loose rugs and floor obstacles to prevent falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive if quadriceps weakness limits ability to safely brake or operate pedals; discuss driving safety with neurology and OT",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain regular exercise as tolerated -- supervised low-to-moderate intensity exercise is safe and may help maintain function longer; avoid extreme exertion or eccentric exercises",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Attend all scheduled follow-up appointments (strength assessment and swallow monitoring essential to guide management)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carry a medical identification card or bracelet indicating IBM diagnosis in case of emergency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Supervised progressive resistance exercise program (moderate intensity) -- evidence supports safety and modest functional benefit in IBM; focus on non-atrophied muscle groups; 2-3 sessions per week",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-impact aerobic exercise (stationary cycling, water-based exercise, swimming) to maintain cardiovascular fitness and slow deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "High-protein diet (1.2-1.5 g/kg/day protein) to support muscle preservation and slow sarcopenia progression; adequate caloric intake to prevent weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety evaluation by OT to remove fall hazards, install grab bars, raised toilet seat, shower bench, stair rails, and adequate lighting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Annual influenza vaccination (inactivated) and pneumococcal vaccination per guidelines given aspiration risk and respiratory vulnerability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention program including balance exercises, home modifications, medication review for fall-risk-increasing medications, and vision correction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration (minimum 1.5-2 L/day) to support muscle health and prevent constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol limitation as alcohol worsens muscle weakness and increases fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate sleep (7-9 hours) to support muscle recovery and overall health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight management to reduce load on weakened quadriceps and improve mobility; avoid obesity which accelerates functional decline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D supplementation to maintain level >30 ng/mL for muscle and bone health; higher dose repletion if deficient",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Assistive device progression planning with PT/OT: ankle-foot orthosis (AFO) for foot drop, cane, walker, wheelchair as needed for safety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caregiver education on safe transfer techniques, fall management, and recognizing signs of aspiration to optimize home safety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social engagement and meaningful activities adaptation to maintain quality of life despite progressive physical limitations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Polymyositis",
+      "features": "Symmetric proximal weakness; typically subacute onset; higher CK (10-50x ULN); responsive to immunotherapy (steroids, steroid-sparing agents); no distal finger flexor weakness; no rimmed vacuoles on biopsy",
+      "tests": "CK (higher in PM); muscle biopsy (endomysial CD8+ invasion WITHOUT rimmed vacuoles or amyloid); EMG (purely myopathic, no neurogenic features); MSA panel (anti-Jo-1, anti-SRP); robust steroid response"
+    },
+    {
+      "diagnosis": "Dermatomyositis",
+      "features": "Characteristic skin findings (heliotrope rash, Gottron papules, V-sign, shawl sign); symmetric proximal weakness; higher CK; responsive to immunotherapy; skin precedes or accompanies weakness",
+      "tests": "Skin examination; CK (higher); muscle biopsy (perifascicular atrophy, perivascular inflammation); MSA panel (anti-Mi-2, anti-MDA5, anti-TIF1-gamma, anti-NXP2); skin biopsy"
+    },
+    {
+      "diagnosis": "Immune-mediated necrotizing myopathy (IMNM)",
+      "features": "Very high CK (often >5000-10,000); severe symmetric proximal weakness; rapid progression; statin-associated or idiopathic; responsive to aggressive immunotherapy (IVIG, rituximab)",
+      "tests": "CK (much higher); anti-SRP or anti-HMGCR antibodies; muscle biopsy (necrotic/regenerating fibers with minimal inflammation, MAC deposition); dramatic CK response to IVIG/rituximab"
+    },
+    {
+      "diagnosis": "Limb-girdle muscular dystrophy (LGMD)",
+      "features": "Earlier onset (variable); family history; progressive without inflammatory markers; symmetric proximal weakness; no finger flexor involvement typically; specific genetic subtypes",
+      "tests": "Genetic testing panel (>30 subtypes); CK (variable); muscle biopsy (dystrophic changes, absent/reduced protein on immunostaining, no rimmed vacuoles); no inflammation"
+    },
+    {
+      "diagnosis": "Motor neuron disease (ALS)",
+      "features": "Fasciculations; upper motor neuron signs (hyperreflexia, Babinski, spasticity); mixed UMN/LMN pattern; bulbar onset with dysarthria/dysphagia; more rapid progression; no sensory loss",
+      "tests": "EMG (widespread active denervation with fasciculations in multiple regions including thoracic paraspinals); normal or mildly elevated CK; no rimmed vacuoles on biopsy; clinical pattern of combined UMN + LMN signs"
+    },
+    {
+      "diagnosis": "Distal myopathy (Welander, Nonaka, Miyoshi)",
+      "features": "Predominantly distal weakness; specific patterns per subtype; typically earlier onset; genetic basis; no inflammation on biopsy",
+      "tests": "Genetic testing; CK variable; muscle biopsy (myopathic changes without inflammation in most; Nonaka/GNE shows rimmed vacuoles but no inflammation); EMG purely myopathic"
+    },
+    {
+      "diagnosis": "Myasthenia gravis",
+      "features": "Fatigable weakness (worse with repetitive use, improves with rest); ocular involvement (ptosis, diplopia); fluctuating symptoms; normal CK; intact muscle bulk",
+      "tests": "AChR/MuSK antibodies; repetitive nerve stimulation (decremental response); SFEMG (increased jitter); normal CK; ice pack test; edrophonium test"
+    },
+    {
+      "diagnosis": "Hypothyroid myopathy",
+      "features": "Proximal weakness with fatigue; elevated CK (mild); hypothyroid symptoms (weight gain, cold intolerance, constipation, bradycardia); delayed relaxation of reflexes",
+      "tests": "TSH (elevated); free T4 (low); CK normalizes with thyroid hormone replacement; no biopsy changes of IBM"
+    },
+    {
+      "diagnosis": "Drug-induced myopathy (statins, colchicine)",
+      "features": "Temporal correlation with drug initiation; symmetric proximal weakness; CK may be elevated; improves after drug discontinuation",
+      "tests": "Medication history; CK trending after drug withdrawal; anti-HMGCR negative (if positive, diagnose IMNM instead); improvement within weeks to months of stopping offending drug"
+    },
+    {
+      "diagnosis": "Late-onset Pompe disease",
+      "features": "Proximal weakness (especially hip girdle); respiratory muscle weakness (disproportionate to limb weakness); elevated CK (mild-moderate); autosomal recessive; enzyme replacement available",
+      "tests": "Acid alpha-glucosidase activity (dried blood spot -- reduced); GAA gene testing; muscle biopsy (vacuolar myopathy with PAS-positive material, acid phosphatase); disproportionate respiratory weakness"
+    },
+    {
+      "diagnosis": "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+      "features": "Symmetric proximal AND distal weakness; sensory loss; areflexia; elevated CSF protein; demyelinating NCS; responsive to IVIG/steroids; no myopathic EMG pattern",
+      "tests": "NCS (demyelinating pattern: prolonged distal latencies, slow CV, conduction block, temporal dispersion); CSF protein elevated; normal CK; nerve biopsy if needed"
+    },
+    {
+      "diagnosis": "Multifocal motor neuropathy (MMN)",
+      "features": "Asymmetric distal > proximal weakness; no UMN signs; no sensory loss; conduction block on NCS; anti-GM1 antibodies; responsive to IVIG",
+      "tests": "NCS (motor conduction block); anti-GM1 antibody; normal CK; EMG neurogenic pattern; IVIG-responsive"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IBM diagnostic criteria and clinical features",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Griggs RC et al. Ann Neurol 1995](https://pubmed.ncbi.nlm.nih.gov/7574450/); [Rose MR et al. Neuromuscul Disord 2013 (ENMC criteria)](https://pubmed.ncbi.nlm.nih.gov/24290393/)"
+    },
+    {
+      "recommendation": "ENMC 2011 diagnostic criteria for IBM (clinico-pathologically defined, clinically defined, probable)",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Rose MR et al. Neuromuscul Disord 2013](https://pubmed.ncbi.nlm.nih.gov/24290393/)"
+    },
+    {
+      "recommendation": "Anti-cN1A (NT5C1A) antibody as IBM biomarker",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Pluk H et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23460448/); [Larman HB et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23460487/)"
+    },
+    {
+      "recommendation": "Anti-cN1A antibody sensitivity and specificity",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Herbert MK et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/26994006/)"
+    },
+    {
+      "recommendation": "MRI pattern of selective muscle involvement in IBM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Cox FM et al. Rheumatology 2011](https://pubmed.ncbi.nlm.nih.gov/21169343/); [Phillips BA et al. Muscle Nerve 2001](https://pubmed.ncbi.nlm.nih.gov/11745657/)"
+    },
+    {
+      "recommendation": "EMG showing mixed myopathic and neurogenic pattern in IBM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Lotz BP et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2554669/)"
+    },
+    {
+      "recommendation": "Muscle biopsy: rimmed vacuoles, endomysial inflammation, amyloid deposits",
+      "evidenceLevel": "Class II, Level A",
+      "source": "[Askanas V, Engel WK. Curr Opin Rheumatol 2003](https://pubmed.ncbi.nlm.nih.gov/14564920/)"
+    },
+    {
+      "recommendation": "TDP-43 and p62 inclusions in IBM muscle",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Weihl CC et al. J Neuropathol Exp Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18648327/)"
+    },
+    {
+      "recommendation": "IBM is the most common acquired myopathy over age 50",
+      "evidenceLevel": "Epidemiologic",
+      "source": "[Callan A et al. Neuromuscul Disord 2017](https://pubmed.ncbi.nlm.nih.gov/28284866/); [Needham M et al. Neuromuscul Disord 2008](https://pubmed.ncbi.nlm.nih.gov/18555680/)"
+    },
+    {
+      "recommendation": "IVIG for IBM: no significant benefit for strength; possible dysphagia improvement",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Dalakas MC et al. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9109889/); [Dalakas MC et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11305259/)"
+    },
+    {
+      "recommendation": "Immunosuppressive therapies (steroids, methotrexate, azathioprine) not effective for IBM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Barohn RJ et al. Neurology 1995](https://pubmed.ncbi.nlm.nih.gov/8538696/); [Leff RL et al. Ann Intern Med 1993](https://pubmed.ncbi.nlm.nih.gov/8442612/)"
+    },
+    {
+      "recommendation": "Bimagrumab (anti-activin receptor II antibody) trial for IBM (RESILIENT)",
+      "evidenceLevel": "Class I, Level B (negative)",
+      "source": "[Hanna MG et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/30926683/)"
+    },
+    {
+      "recommendation": "Arimoclomol trial for IBM (failed primary endpoint)",
+      "evidenceLevel": "Class I, Level B (negative)",
+      "source": "[Benatar M et al. JAMA Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/37782487/)"
+    },
+    {
+      "recommendation": "Rapamycin (sirolimus) trial for IBM",
+      "evidenceLevel": "Class I, Level B (mixed results)",
+      "source": "[Benveniste O et al. Lancet Rheumatol 2021](https://pubmed.ncbi.nlm.nih.gov/38279412/)"
+    },
+    {
+      "recommendation": "Exercise is safe and beneficial in IBM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Johnson LG et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19487647/)"
+    },
+    {
+      "recommendation": "Creatine supplementation modest benefit in myopathies",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Tarnopolsky M et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15477563/)"
+    },
+    {
+      "recommendation": "Dysphagia prevalence and management in IBM",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/17583772/); [Cox FM et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19652176/)"
+    },
+    {
+      "recommendation": "Cricopharyngeal myotomy for IBM dysphagia",
+      "evidenceLevel": "Class III (case series)",
+      "source": "[Murata KY et al. Neuromuscul Disord 2012](https://pubmed.ncbi.nlm.nih.gov/22742934/)"
+    },
+    {
+      "recommendation": "Botulinum toxin for cricopharyngeal dysfunction",
+      "evidenceLevel": "Class III (case series)",
+      "source": "[Schrey A et al. Eur Arch Otorhinolaryngol 2017](https://pubmed.ncbi.nlm.nih.gov/27492017/)"
+    },
+    {
+      "recommendation": "Natural history of IBM: slow progression, 10-15 years to wheelchair",
+      "evidenceLevel": "Class II",
+      "source": "[Benveniste O et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21771855/)"
+    },
+    {
+      "recommendation": "IBM Functional Rating Scale (IBMFRS)",
+      "evidenceLevel": "Class II",
+      "source": "[Jackson CE et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18852436/)"
+    },
+    {
+      "recommendation": "GNE myopathy (hereditary IBM) genetics and differentiation",
+      "evidenceLevel": "Class II",
+      "source": "[Nishino I et al. Science 2002](https://pubmed.ncbi.nlm.nih.gov/11931011/)"
+    },
+    {
+      "recommendation": "Pathogenesis: combined degenerative and inflammatory mechanisms in IBM",
+      "evidenceLevel": "Expert review",
+      "source": "[Greenberg SA. Curr Opin Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/31343434/)"
+    },
+    {
+      "recommendation": "Fall prevention in neuromuscular disease",
+      "evidenceLevel": "Class II, Level C",
+      "source": "Expert consensus; standard of care for neuromuscular disorders"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Muscle strength (MMT -- manual muscle testing)",
+      "frequency": "Each clinic visit; q6-12 months formal assessment; focus on quadriceps, hip flexors, finger flexors, wrist flexors",
+      "action": "If accelerated decline: reassess diagnosis; consider overlap myositis; repeat EMG/biopsy if atypical; adjust rehabilitation program",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Grip strength (dynamometry)",
+      "frequency": "Each clinic visit; q6-12 months",
+      "action": "If rapid decline: reassess diagnosis; optimize hand therapy; update adaptive equipment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Creatine kinase (CK)",
+      "frequency": "q6-12 months in established IBM; more frequently if diagnosis uncertain or immunotherapy trial",
+      "action": "If CK >5x from baseline: evaluate for rhabdomyolysis (fall/injury), reconsider diagnosis, assess medication effects",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function (clinical assessment)",
+      "frequency": "Each clinic visit; formal MBSS q6-12 months if dysphagia present",
+      "action": "If worsening: SLP re-evaluation; diet modification; consider IVIG trial for dysphagia; ENT referral for botulinum toxin or myotomy; PEG tube discussion if severe",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight and nutritional status",
+      "frequency": "Each clinic visit; monthly if dysphagia present",
+      "action": "If weight loss >5% in 6 months: reassess dysphagia; nutrition consultation; calorie supplementation; PEG tube consideration",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pulmonary function (FVC)",
+      "frequency": "Annually; q6 months if respiratory symptoms or FVC <80%",
+      "action": "If FVC declining or <60% predicted: pulmonology referral; assess need for nocturnal ventilatory support (BiPAP); sleep study",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall frequency and circumstances",
+      "frequency": "Each clinic visit; patient-reported fall diary",
+      "action": "If recurrent falls: PT reassessment; home safety re-evaluation; assistive device upgrade; medication review for fall-risk drugs",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (ADLs/IADLs)",
+      "frequency": "q6-12 months; IBM Functional Rating Scale (IBMFRS) if available",
+      "action": "If accelerated functional decline: comprehensive reassessment; optimize PT/OT; reassess diagnosis if atypical",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline in all IBM patients (older adults at fall risk); q2 years; sooner if steroid exposure",
+      "action": "If T-score <-2.5 (osteoporosis): bisphosphonate; calcium/vitamin D; endocrine referral; fall prevention is critical",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Vitamin D level",
+      "frequency": "q6-12 months until replete, then annually",
+      "action": "If deficient (<20): high-dose repletion (50,000 IU weekly x 8 weeks); maintenance 2000-4000 IU daily; recheck in 3 months",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screening (PHQ-9)",
+      "frequency": "Annually minimum; more frequently if concerns",
+      "action": "If PHQ-9 >=10: assess safety; initiate antidepressant (sertraline or escitalopram); psychology/psychiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "frequency": "Annually; q3-6 months if on gabapentin/pregabalin or creatine supplementation",
+      "action": "If declining: adjust renally-cleared medications; assess hydration; nephrology referral if progressive",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Ambulatory (with or without assistive device); safe swallow (no active aspiration); adequate oral intake; pain controlled; fall risk assessed and mitigated; outpatient neuromuscular follow-up arranged within 2-4 weeks; home safety adequate or modifications planned; understands return precautions"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Fall-related injury requiring monitoring (fracture, head injury); aspiration pneumonia requiring IV antibiotics; new diagnosis requiring expedited inpatient workup (biopsy, EMG); severe dehydration or malnutrition from dysphagia; acute deconditioning with inability to safely function at home"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Respiratory failure from aspiration pneumonia requiring ventilatory support; severe aspiration event with airway compromise; fall with traumatic brain injury or hemodynamic instability (rare, situational)"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for neuromuscular specialist not available locally; need for specialized muscle biopsy with neuromuscular pathology expertise; need for cricopharyngeal myotomy or advanced dysphagia intervention not available on-site"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant functional decline from IBM with deconditioning; able to participate in 3 hours/day therapy; medically stable; post-fall with functional decline; benefit expected from intensive PT/OT"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehabilitation; unable to safely manage at home despite assistive devices; requires ongoing skilled nursing (wound care, PEG feeds, respiratory support); end-stage IBM with high care needs"
+    }
+  ]
+}

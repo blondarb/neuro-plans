@@ -58,9 +58,13 @@ class MarkdownParser:
         'treatment_3e': r'###?\s*3E[.\s]+',
         'treatment_3f': r'###?\s*3F[.\s]+',
         'treatment_3g': r'###?\s*3G[.\s]+',
+        'treatment_3h': r'###?\s*3H[.\s]+',
+        'treatment_3i': r'###?\s*3I[.\s]+',
         'referrals': r'###?\s*4A[.\s]+',
         'patient_instructions': r'###?\s*4B[.\s]+',
         'lifestyle': r'###?\s*4C[.\s]+',
+        'other_4d': r'###?\s*4D[.\s]+',
+        'other_4e': r'###?\s*4E[.\s]+',
         'differential': r'##?\s*5[.\s]+DIFFERENTIAL',
         'monitoring': r'##?\s*6[.\s]+MONITORING',
         'disposition': r'##?\s*7[.\s]+DISPOSITION',
@@ -234,54 +238,101 @@ class MarkdownParser:
             result[title] = items
         return result
 
+    # Default lab subsection title mapping (for generic names)
+    LAB_TITLE_MAP = {
+        'essential': 'Essential/Core Labs',
+        'extended': 'Extended Workup',
+    }
+
     def _parse_lab_sections(self) -> list:
-        """Parse laboratory workup sections."""
+        """Parse laboratory workup sections dynamically."""
         subsections = []
 
-        # Core Labs
-        core_items = self._parse_table_section('labs_core', 'labs_extended')
-        if core_items:
-            subsections.append({'title': 'Essential/Core Labs', 'items': core_items})
+        lab_keys = [
+            ('labs_core', 'labs_extended'),
+            ('labs_extended', 'labs_rare'),
+            ('labs_rare', 'imaging_essential'),
+        ]
 
-        # Extended Labs
-        extended_items = self._parse_table_section('labs_extended', 'labs_rare')
-        if extended_items:
-            subsections.append({'title': 'Extended Workup', 'items': extended_items})
+        for start_key, end_key in lab_keys:
+            start_idx = self._find_section_start(start_key)
+            if start_idx is None:
+                continue
 
-        # Rare/Specialized Labs
-        rare_items = self._parse_table_section('labs_rare', 'imaging_essential')
-        if rare_items:
-            subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
+            # Extract actual title from the markdown heading
+            title = self._extract_section_title(start_idx)
+
+            # Map generic names to standard lab titles
+            title_mapped = self.LAB_TITLE_MAP.get(title.lower(), title)
+
+            items = self._parse_table_section(start_key, end_key)
+            if items:
+                subsections.append({'title': title_mapped, 'items': items})
 
         # Lumbar Puncture / CSF Studies (logically part of lab workup)
-        # Note: LP appears under Labs in the clinical tool, even though it may be
-        # positioned after Imaging in the markdown file for historical reasons
         lp_items = self._parse_table_section('lumbar_puncture', 'treatment_3a')
         if lp_items:
             subsections.append({'title': 'Lumbar Puncture', 'items': lp_items})
 
         return subsections
 
+    # Default imaging subsection title mapping (for generic names)
+    IMAGING_TITLE_MAP = {
+        'essential': 'Essential/First-line',
+        'extended': 'Extended',
+    }
+
     def _parse_imaging_sections(self) -> list:
-        """Parse imaging sections."""
+        """Parse imaging sections dynamically."""
         subsections = []
 
-        # Essential Imaging
-        essential_items = self._parse_table_section('imaging_essential', 'imaging_extended')
-        if essential_items:
-            subsections.append({'title': 'Essential/First-line', 'items': essential_items})
+        # Ordered sequence of imaging boundaries; each section uses the next
+        # existing boundary as its end-point.
+        imaging_boundary_seq = [
+            'imaging_essential', 'imaging_extended', 'imaging_rare',
+            'lumbar_puncture', 'treatment_3a',
+        ]
 
-        # Extended Imaging
-        extended_items = self._parse_table_section('imaging_extended', 'imaging_rare')
-        if extended_items:
-            subsections.append({'title': 'Extended', 'items': extended_items})
+        imaging_keys = [
+            ('imaging_essential', 'imaging_extended'),
+            ('imaging_extended', 'imaging_rare'),
+            ('imaging_rare', 'lumbar_puncture'),
+        ]
 
-        # Rare/Specialized Imaging
-        rare_items = self._parse_table_section('imaging_rare', 'lumbar_puncture')
-        if rare_items:
-            subsections.append({'title': 'Rare/Specialized', 'items': rare_items})
+        for start_key, end_key in imaging_keys:
+            start_idx = self._find_section_start(start_key)
+            if start_idx is None:
+                continue
 
-        # Note: Lumbar Puncture is now a subsection under Laboratory Workup
+            # Extract actual title from the markdown heading
+            title = self._extract_section_title(start_idx)
+
+            # Map generic names to standard imaging titles
+            title_mapped = self.IMAGING_TITLE_MAP.get(title.lower(), title)
+
+            # Find the effective end boundary: if end_key doesn't exist,
+            # walk forward through the boundary sequence to find the next
+            # existing section that appears AFTER the start section.
+            effective_end = end_key
+            end_exists = self._find_section_start(end_key) is not None
+            if end_exists and self._find_section_start(end_key) <= start_idx:
+                end_exists = False  # End boundary is before start — invalid
+            if not end_exists:
+                bp = imaging_boundary_seq.index(end_key) if end_key in imaging_boundary_seq else -1
+                if bp >= 0:
+                    for candidate in imaging_boundary_seq[bp + 1:]:
+                        cand_idx = self._find_section_start(candidate)
+                        if cand_idx is not None and cand_idx > start_idx:
+                            effective_end = candidate
+                            end_exists = True
+                            break
+
+            # Use multi_table when we have a valid end boundary (prevents
+            # bleeding into the next major section)
+            items = self._parse_table_section(start_key, effective_end,
+                                              multi_table=end_exists)
+            if items:
+                subsections.append({'title': title_mapped, 'items': items})
 
         return subsections
 
@@ -297,7 +348,9 @@ class MarkdownParser:
             ('treatment_3d', 'treatment_3e'),
             ('treatment_3e', 'treatment_3f'),
             ('treatment_3f', 'treatment_3g'),
-            ('treatment_3g', 'referrals'),
+            ('treatment_3g', 'treatment_3h'),
+            ('treatment_3h', 'treatment_3i'),
+            ('treatment_3i', 'referrals'),
         ]
 
         for start_key, end_key in treatment_keys:
@@ -325,28 +378,50 @@ class MarkdownParser:
         # Fallback: remove leading # and return
         return re.sub(r'^#+\s*', '', line).strip()
 
+    # Generic Other-Recommendations subsection names → standard titles
+    OTHER_REC_TITLE_MAP = {
+        'essential': 'Referrals & Consults',
+        'extended': 'Patient Instructions',
+        'atypical/refractory': 'Lifestyle & Prevention',
+    }
+
     def _parse_other_sections(self) -> list:
-        """Parse other recommendations sections."""
+        """Parse other recommendations sections dynamically.
+
+        Scans for all 4X subsections (4A through 4E), extracts their titles,
+        and uses natural subsection boundaries rather than assuming a fixed
+        4A=Referrals, 4B=Patient Instructions, 4C=Lifestyle ordering.
+        """
         subsections = []
 
-        # Referrals
-        referral_items = self._parse_table_section('referrals', 'patient_instructions')
-        if referral_items:
-            subsections.append({'title': 'Referrals & Consults', 'items': referral_items})
+        # Define the other-recommendations section sequence with boundaries
+        other_keys = [
+            ('referrals', 'patient_instructions'),      # 4A → 4B
+            ('patient_instructions', 'lifestyle'),       # 4B → 4C
+            ('lifestyle', 'other_4d'),                   # 4C → 4D
+            ('other_4d', 'other_4e'),                    # 4D → 4E
+            ('other_4e', 'differential'),                # 4E → Section 5
+        ]
 
-        # Patient Instructions
-        instruction_items = self._parse_table_section('patient_instructions', 'lifestyle')
-        if instruction_items:
-            subsections.append({'title': 'Patient Instructions', 'items': instruction_items})
+        for start_key, end_key in other_keys:
+            start_idx = self._find_section_start(start_key)
+            if start_idx is None:
+                continue
 
-        # Lifestyle
-        lifestyle_items = self._parse_table_section('lifestyle', 'differential')
-        if lifestyle_items:
-            subsections.append({'title': 'Lifestyle & Prevention', 'items': lifestyle_items})
+            # Extract the actual title from the markdown heading
+            title = self._extract_section_title(start_idx)
+
+            # Map generic names (Essential, Extended, Atypical/Refractory)
+            # to standard Other Recommendations titles
+            title_mapped = self.OTHER_REC_TITLE_MAP.get(title.lower(), title)
+
+            items = self._parse_table_section(start_key, end_key)
+            if items:
+                subsections.append({'title': title_mapped, 'items': items})
 
         return subsections
 
-    # Header words to skip in differential/disposition tables
+    # Header words to skip in differential/disposition/evidence tables
     DIFF_HEADER_WORDS = {
         'alternative diagnosis', 'diagnosis', 'condition', 'category', 'type',
         'nystagmus type', 'feature', 'red flag', 'criterion', 'letter',
@@ -355,7 +430,30 @@ class MarkdownParser:
         'disposition', 'criteria', 'recommendation', 'evidence level',
         'source', 'features', 'tests', 'domain',
         'guideline', 'tool', 'subtype',
+        'component', 'class', 'score',
+        'antibody', 'pattern', 'tempo',
+        'etiology', 'maneuver', 'disorder', 'precipitant', 'item',
+        'organism', 'factor', 'grade', 'asm', 'phase',
+        'sign', 'syndrome', 'finding',
     }
+
+    # Prefix patterns for header detection (JSON parser)
+    DIFF_HEADER_PREFIXES = [
+        'alternative diagnosis', 'nystagmus type', 'level of care',
+        'evidence level', 'test (', 'study (', 'treatment (', 'medication (',
+        'primary tumor', 'major risk factors',
+        'ds-gpa score', 'sins total score',
+        'general condition (kps)',
+        'tokuhashi score',
+    ]
+
+    @classmethod
+    def _is_header_cell(cls, first_cell: str) -> bool:
+        """Check if a table cell looks like a header."""
+        lower = first_cell.lower().strip()
+        if lower in cls.DIFF_HEADER_WORDS:
+            return True
+        return any(lower.startswith(prefix) for prefix in cls.DIFF_HEADER_PREFIXES)
 
     def _parse_differential_section(self) -> list:
         """Parse differential diagnosis section."""
@@ -376,9 +474,9 @@ class MarkdownParser:
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                first_cell = cells[0].lower().strip() if cells else ''
+                first_cell = cells[0].strip() if cells else ''
                 # Skip header rows
-                if first_cell in self.DIFF_HEADER_WORDS:
+                if self._is_header_cell(first_cell):
                     in_table = True
                     continue
                 if len(cells) >= 2 and cells[0]:
@@ -416,9 +514,9 @@ class MarkdownParser:
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                first_cell = cells[0].lower().strip() if cells else ''
+                first_cell = cells[0].strip() if cells else ''
                 # Skip header rows
-                if first_cell in self.DIFF_HEADER_WORDS:
+                if self._is_header_cell(first_cell):
                     in_table = True
                     continue
                 if len(cells) >= 2 and cells[0]:
@@ -458,12 +556,12 @@ class MarkdownParser:
 
             if line.startswith('|') and '---' not in line:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
-                first_cell = cells[0].lower().strip() if cells else ''
+                first_cell = cells[0].strip() if cells else ''
                 # Skip header rows using shared header-word detection
-                if first_cell in self.DIFF_HEADER_WORDS:
+                if self._is_header_cell(first_cell):
                     in_table = True
                     continue
-                if len(cells) >= 3 and cells[0]:
+                if len(cells) >= 2 and cells[0]:
                     items.append({
                         'recommendation': cells[0],
                         'evidenceLevel': cells[1] if len(cells) > 1 else '',
@@ -535,9 +633,18 @@ class MarkdownParser:
             if end_idx is None:
                 end_idx = len(self.lines)
 
+        # Patterns for reference/interpretation/timeline tables to skip in multi_table mode
+        SKIP_TABLE_RE = re.compile(
+            r'\*\*.*(?:Reference|Interpretation Guide|Interpretation Key).*:\*\*'
+            r'|####?\s*Timeline-Based Protocol',
+            re.IGNORECASE
+        )
+
         # Parse table
         header_cols = []
         in_table = False
+        skip_table = False
+        in_skipped_table = False  # Track if we're inside a skipped table
 
         for i in range(start_idx, end_idx):
             line = self.lines[i].strip()
@@ -546,9 +653,22 @@ class MarkdownParser:
                 if in_table:
                     if multi_table:
                         in_table = False
+                        skip_table = False
                         header_cols = []  # Reset for potential next sub-table
                     else:
                         break  # Single-table mode: stop at end of first table
+                elif in_skipped_table:
+                    # We've passed the skipped table — reset flags
+                    in_skipped_table = False
+                    skip_table = False
+                # Check if next table should be skipped (reference/interpretation)
+                if multi_table and SKIP_TABLE_RE.match(line):
+                    skip_table = True
+                continue
+
+            # Skip tables flagged as reference/interpretation
+            if skip_table:
+                in_skipped_table = True
                 continue
 
             cells = [c.strip() for c in line.split('|')[1:-1]]
@@ -590,6 +710,14 @@ class MarkdownParser:
             field = self._map_header_to_field(header)
             if field:
                 item[field] = value
+
+        # Fallback: if no fields matched standard mappings, use first cell as 'item'
+        # and remaining cells with their header names as-is
+        if not item and cells[0]:
+            item['item'] = cells[0]
+            for i, header in enumerate(headers[1:], 1):
+                if i < len(cells) and cells[i].strip():
+                    item[header] = cells[i].strip()
 
         # Parse structured dosing if present
         if 'dosing' in item and item.get('item'):
@@ -756,10 +884,20 @@ class ParityChecker:
 
         # Track current section
         current_subsection = None
+        current_main_section = None  # Track parent section (e.g., 'Other Recommendations')
         in_table = False
+        seen_table = False  # Whether we've seen at least one table in current subsection
         item_count = 0
         in_valid_section = False  # Track if we're in a countable section
         skip_next_table = False   # For skipping timeline tables
+
+        # Generic "Other Recommendations" subsection names that need context-aware mapping
+        # When 4A/4B/4C use these generic names, they map to standard Other Rec subsections
+        OTHER_REC_GENERIC_NAMES = {
+            'essential': 'referrals',
+            'extended': 'patient instructions',
+            'atypical/refractory': 'lifestyle',
+        }
 
         # Patterns for sections we want to count (Sections 1-8)
         # Each pattern extracts the section title dynamically from the heading
@@ -788,9 +926,13 @@ class ParityChecker:
             (r'###\s*3E[.\s]+(.+)', None),
             (r'###\s*3F[.\s]+(.+)', None),
             (r'###\s*3G[.\s]+(.+)', None),
+            (r'###\s*3H[.\s]+(.+)', None),
+            (r'###\s*3I[.\s]+(.+)', None),
             (r'###\s*4A[.\s]+(.+)', None),
             (r'###\s*4B[.\s]+(.+)', None),
             (r'###\s*4C[.\s]+(.+)', None),
+            (r'###\s*4D[.\s]+(.+)', None),
+            (r'###\s*4E[.\s]+(.+)', None),
         ]
 
         # Patterns that indicate we should STOP counting (end of main content)
@@ -841,19 +983,36 @@ class ParityChecker:
                     if current_subsection and item_count > 0:
                         counts[current_subsection] = counts.get(current_subsection, 0) + item_count
 
+                    # Track main section for context-aware subsection naming
+                    if section_name in ('Laboratory Workup', 'Diagnostic Imaging',
+                                        'Treatment', 'Other Recommendations',
+                                        'Differential Diagnosis', 'Monitoring Parameters',
+                                        'Disposition Criteria', 'Evidence & References'):
+                        current_main_section = section_name
+
                     # If section_name is None, extract from captured group or full match
                     if section_name is None:
                         if match.groups():
                             # Use the captured group (title after the section number)
-                            current_subsection = match.group(1).strip()
+                            extracted = match.group(1).strip()
                         else:
                             # Fall back to the full match
-                            current_subsection = match.group(0).strip()
+                            extracted = match.group(0).strip()
+
+                        # Context-aware naming: generic names under Other Recommendations
+                        # get mapped to standard subsection names (referrals, patient
+                        # instructions, lifestyle) since the JSON parser uses those
+                        if (current_main_section == 'Other Recommendations' and
+                                extracted.lower() in OTHER_REC_GENERIC_NAMES):
+                            current_subsection = OTHER_REC_GENERIC_NAMES[extracted.lower()]
+                        else:
+                            current_subsection = extracted
                     else:
                         current_subsection = section_name
 
                     item_count = 0
                     in_table = False
+                    seen_table = False  # Reset sub-table tracking for new section
                     in_valid_section = True
                     skip_next_table = False  # Reset skip flag on new section
                     matched_section = True
@@ -867,8 +1026,8 @@ class ParityChecker:
             if re.match(r'####\s+(?:First-Line|Second-Line)\s+Immunotherapy', line, re.IGNORECASE):
                 skip_next_table = False  # These ARE treatment tables, don't skip
 
-            # Skip reference tables (like "**ASM Therapeutic Level Reference:**")
-            if re.match(r'\*\*.*Reference.*:\*\*', line, re.IGNORECASE):
+            # Skip reference/interpretation tables (not actionable items)
+            if re.match(r'\*\*.*(?:Reference|Interpretation Guide|Interpretation Key).*:\*\*', line, re.IGNORECASE):
                 skip_next_table = True
                 continue
 
@@ -883,29 +1042,51 @@ class ParityChecker:
                 cells = [c.strip() for c in line.split('|')[1:-1]]
                 # Skip header rows and separator rows
                 if cells and not all(set(c) <= {'-', ':', ' '} for c in cells):
-                    # Skip rows where first cell is a header-like word
-                    first_cell = cells[0].lower() if cells else ''
-                    # Exact-match header words (too short/generic for prefix matching)
-                    exact_headers = {'test', 'study', 'treatment', 'medication', 'drug',
-                                    'recommendation', 'parameter', 'disposition', 'diagnosis',
-                                    'timing', 'intervention', 'guideline', 'type', 'feature',
-                                    'criterion', 'level', 'letter', 'step', 'procedure',
-                                    'condition', 'category', 'setting', 'domain', 'criteria',
-                                    'source', 'tool', 'subtype'}
-                    # Prefix-match header words (multi-word, specific enough)
-                    prefix_headers = ['alternative diagnosis', 'nystagmus type', 'red flag',
-                                     'level of care', 'evidence level', 'test (', 'study (',
-                                     'treatment (', 'medication (']
-                    is_header = (first_cell in exact_headers or
-                                any(first_cell.startswith(ph) for ph in prefix_headers))
-                    if first_cell and not is_header and not first_cell.startswith('---'):
-                        # Additional check: skip timeline entries like "Day 0-3", "Day 7", etc.
-                        if not re.match(r'\*?\*?day\s+\d', first_cell, re.IGNORECASE):
-                            item_count += 1
-                            in_table = True
+                    # Skip header row of sub-tables (not the first table in section)
+                    # When in_table was reset to False (saw non-table content), the next
+                    # table's first non-separator row is its header
+                    if not in_table and seen_table:
+                        # This is the header row of a subsequent sub-table; skip it
+                        in_table = True
+                    else:
+                        # Check if it's a header via word matching
+                        first_cell = cells[0].lower() if cells else ''
+                        # Exact-match header words
+                        exact_headers = {'test', 'study', 'treatment', 'medication', 'drug',
+                                        'recommendation', 'parameter', 'disposition', 'diagnosis',
+                                        'timing', 'intervention', 'guideline', 'type', 'feature',
+                                        'criterion', 'level', 'letter', 'step', 'procedure',
+                                        'condition', 'category', 'setting', 'domain', 'criteria',
+                                        'source', 'tool', 'subtype', 'component', 'class',
+                                        'score', 'red flag', 'red flags', 'antibody', 'pattern',
+                                        'tempo', 'etiology', 'maneuver', 'disorder',
+                                        'precipitant', 'item', 'organism', 'factor', 'grade',
+                                        'asm', 'phase', 'sign', 'syndrome', 'finding',
+                                        'scenario', 'medication class', 'medication/class',
+                                        'intervention', 'location', 'population',
+                                        'symptom', 'situation'}
+                        # Prefix-match header words
+                        prefix_headers = ['alternative diagnosis', 'nystagmus type',
+                                         'level of care', 'evidence level', 'test (', 'study (',
+                                         'treatment (', 'medication (',
+                                         'medications to avoid/',
+                                         'high-risk features', 'high risk features',
+                                         'primary tumor', 'major risk factors',
+                                         'ds-gpa score', 'sins total score',
+                                         'general condition (kps)',
+                                         'tokuhashi score']
+                        is_header = (first_cell in exact_headers or
+                                    any(first_cell.startswith(ph) for ph in prefix_headers))
+                        if first_cell and not is_header and not first_cell.startswith('---'):
+                            # Additional check: skip timeline entries
+                            if not re.match(r'\*?\*?day\s+\d', first_cell, re.IGNORECASE):
+                                item_count += 1
+                        in_table = True
+                        seen_table = True
             elif in_table and not line.strip().startswith('|') and line.strip():
-                # End of table
-                skip_next_table = False  # Reset after table ends
+                # End of table - reset for potential next sub-table
+                in_table = False
+                skip_next_table = False
 
         # Save final subsection
         if current_subsection and item_count > 0:
@@ -1007,8 +1188,13 @@ class ParityChecker:
         return counts
 
     def _normalize_section_name(self, name: str) -> str:
-        """Normalize section names for comparison."""
-        # Common variations to standardize
+        """Normalize section names for comparison.
+
+        Uses a two-phase approach:
+        1. Exact match against known normalizations dict
+        2. Pattern-based fallback for varied parenthetical qualifiers
+        """
+        # Common variations to standardize (exact match)
         normalizations = {
             # Status Epilepticus specific
             'stabilization/acute': 'stabilization',
@@ -1077,9 +1263,125 @@ class ParityChecker:
             'monitoring intermittent': 'monitoring',
             'disposition criteria': 'disposition',
             'criteria': 'disposition',
+
+            # Plan-specific exact mappings (unmappable by pattern)
+            'foot care & ulcer prevention (critical)': 'patient instructions',
+            'medication review (discontinue iih-associated drugs)': 'patient instructions',
+            'legal, ethical & documentation': 'lifestyle',
+            'infection control, safety & lifestyle': 'lifestyle',
+            'close contacts prophylaxis (public health)': 'patient instructions',
+            'csf analysis (diagnostic lp)': 'lumbar puncture',
+            'ophthalmologic studies': 'rare/specialized',
+            'iih mri findings (supportive but not diagnostic)': 'extended imaging',
+            'mri findings in wernicke encephalopathy': 'extended imaging',
+            'risk stratification (san francisco syncope rule, egsys, oesil, canadian syncope risk score)': 'patient instructions',
+            'at-risk populations (prophylactic thiamine)': 'patient instructions',
+            'duration of treatment and discontinuation': 'patient instructions',
+            'non-pharmacologic considerations': 'lifestyle',
+            'pre-procedure considerations': 'patient instructions',
+            'prevention strategies': 'lifestyle',
+            'driving & activity restrictions': 'lifestyle',
+            'comorbidity management': 'lifestyle',
+            'pregnancy considerations': 'pregnancy considerations',
+            'vaccinations': 'vaccinations',
+            'tumor screening protocols by antibody': 'rare/specialized',
+            'medications to avoid or use with caution in lems': 'lifestyle',
+            'medications to avoid in myasthenia gravis': 'lifestyle',
+
         }
         lower = name.lower().strip()
-        return normalizations.get(lower, lower)
+
+        # Phase 1: exact match
+        if lower in normalizations:
+            return normalizations[lower]
+
+        # Phase 2: pattern-based fallback
+        # Core labs variants (with parenthetical qualifiers)
+        if (lower.startswith('core labs (') or
+                lower.startswith('essential/core labs') or
+                lower.startswith('baseline labs')):
+            return 'core labs'
+
+        # Extended workup variants
+        if (lower.startswith('extended workup (') or
+                lower.startswith('extended labs') or
+                lower.endswith(' panel') or
+                lower.endswith(' workup') or
+                lower.startswith('autoimmune') and 'panel' in lower):
+            return 'extended workup'
+
+        # Rare/specialized variants
+        if (lower.startswith('rare/specialized (') or
+                lower.startswith('rare/specialized labs') or
+                lower.startswith('rare/advanced') or
+                lower.startswith('specialized studies') or
+                lower.startswith('specialized testing') or
+                lower.startswith('specialized protocols') or
+                lower.startswith('specialized labs')):
+            return 'rare/specialized'
+
+        # Essential imaging variants
+        if (lower.startswith('essential/first-line') or
+                lower.startswith('essential imaging') or
+                lower.startswith('neuroimaging')):
+            return 'essential imaging'
+
+        # Extended imaging variants
+        if (lower.startswith('extended (') or
+                lower.startswith('ancillary tests')):
+            return 'extended imaging'
+
+        # Patient instructions variants
+        if (('patient' in lower and 'instruction' in lower) or
+                lower.startswith('patient and family') or
+                lower.startswith('patient/family') or
+                lower.startswith('patient / family')):
+            return 'patient instructions'
+
+        # Lifestyle variants
+        if (lower.startswith('lifestyle') or
+                lower.startswith('medications that may worsen') or
+                lower.startswith('medications to avoid')):
+            return 'lifestyle'
+
+        # Monitoring variants
+        if lower.startswith('monitoring '):
+            return 'monitoring'
+
+        # Electrodiagnostic studies -> rare/specialized
+        if lower.startswith('electrodiagnostic'):
+            return 'rare/specialized'
+
+        # Autonomic testing -> rare/specialized
+        if lower.startswith('autonomic testing') or lower.startswith('autonomic function'):
+            return 'rare/specialized'
+
+        # Additional studies -> rare/specialized
+        if lower == 'additional studies':
+            return 'rare/specialized'
+
+        # Cardiac studies -> rare/specialized
+        if lower.startswith('cardiac stud') or lower.startswith('extended cardiac'):
+            return 'rare/specialized'
+
+        # Small fiber neuropathy assessment -> rare/specialized
+        if lower.startswith('small fiber'):
+            return 'rare/specialized'
+
+        # Cancer screening -> rare/specialized
+        if lower.startswith('cancer screening'):
+            return 'rare/specialized'
+
+        # Tumor screening -> rare/specialized
+        if lower.startswith('tumor screening'):
+            return 'rare/specialized'
+
+        # Bedside clinical tests -> rare/specialized
+        if lower.startswith('bedside clinical'):
+            return 'rare/specialized'
+
+        # No match - return as-is
+        return lower
 
     # Sections that exist only in JSON and are expected (not errors)
     JSON_ONLY_SECTIONS = {'definitions', 'notes', 'treatment'}

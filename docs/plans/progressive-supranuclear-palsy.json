@@ -1,0 +1,1664 @@
+{
+  "id": "progressive-supranuclear-palsy",
+  "title": "Progressive Supranuclear Palsy (PSP)",
+  "version": "1.1",
+  "icd10": [
+    "** G23.1 (Progressive supranuclear ophthalmoplegia [Steele-Richardson-Olszewski])",
+    "F02.80 (Dementia in other diseases classified elsewhere",
+    "without behavioral disturbance)",
+    "F02.81 (Dementia in other diseases classified elsewhere",
+    "with behavioral disturbance)",
+    "G25.9 (Extrapyramidal and movement disorder",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis and comprehensive management of progressive supranuclear palsy in adults across ED, hospital, outpatient, and ICU settings. Covers MDS-PSP diagnostic criteria application, imaging workup, symptomatic pharmacotherapy (levodopa trial, symptomatic medications), fall prevention, dysphagia management, supportive care, and palliative care integration. Excludes other atypical parkinsonian syndromes (MSA, CBD, DLB) as primary diagnosis, drug-induced parkinsonism, and pediatric tauopathies.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline health; infection screen in falls workup",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Electrolytes, hepatic/renal function for medication dosing",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism can cause slowness and gait dysfunction",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "Deficiency causes myelopathy and gait instability",
+          "target": ">400 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis in differential of vertical gaze palsy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "UTI as cause of acute worsening, delirium",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "rationale": "Inflammatory/autoimmune cause of parkinsonism",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Serum ceruloplasmin (CPT 82390)",
+          "rationale": "Wilson disease if age <50",
+          "target": "20-40 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum copper (CPT 82525)",
+          "rationale": "Wilson disease if ceruloplasmin abnormal",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "24-hour urine copper",
+          "rationale": "Wilson disease confirmation",
+          "target": "<100 mcg/24h",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "HIV-associated parkinsonism",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "rationale": "Lyme disease in endemic areas (cranial neuropathy)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "CNS lupus, autoimmune causes",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-neuronal antibodies (paraneoplastic panel)",
+          "rationale": "Paraneoplastic syndrome causing parkinsonism or gaze palsy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Whipple disease PCR (Tropheryma whipplei)",
+          "rationale": "Whipple disease mimics PSP (oculomasticatory myorhythmia, gaze palsy)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D (CPT 82306)",
+          "rationale": "Deficiency increases fall risk",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Specialized Testing": [
+        {
+          "item": "Serum neurofilament light chain (NfL)",
+          "rationale": "Emerging biomarker; elevated in neurodegeneration; may correlate with disease severity",
+          "target": "Elevated (research only)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (MAPT gene)",
+          "rationale": "Familial PSP rare; MAPT H1/H1 haplotype is risk factor",
+          "target": "Informational",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF total tau / phospho-tau",
+          "rationale": "Research biomarker; may help differentiate tauopathies",
+          "target": "Elevated in PSP",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF Abeta-42",
+          "rationale": "Distinguish from Alzheimer-related pathology",
+          "target": "Normal or mildly decreased",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Heavy metals (manganese, lead) (CPT 83655)",
+          "rationale": "Manganese-induced parkinsonism in occupational exposure",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "timing": "At diagnosis",
+          "target": "Midbrain atrophy (\"hummingbird sign\" on sagittal, \"morning glory sign\" on axial); midbrain-to-pons ratio decreased; third ventricle dilation",
+          "contraindications": "Pacemaker, metal implants",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "If MRI unavailable; acute fall with head injury",
+          "target": "Rule out hemorrhage, mass, hydrocephalus",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with contrast (CPT 70552)",
+          "timing": "If mass or infection suspected",
+          "target": "Rule out structural lesion",
+          "contraindications": "Contrast allergy, renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain volumetry / midbrain measurement",
+          "timing": "Supportive; diagnostic uncertainty",
+          "target": "Midbrain area <70 mm2 on midsagittal; midbrain-to-pons ratio <0.52 (MRPI)",
+          "contraindications": "Per MRI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DaTscan (CPT 78830)",
+          "timing": "Diagnostic uncertainty; PSP vs non-degenerative",
+          "target": "Reduced striatal uptake (abnormal in PSP, PD, MSA)",
+          "contraindications": "Pregnancy, iodine allergy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "Distinguish PSP from other parkinsonism",
+          "target": "Frontal and midbrain hypometabolism; \"frontal lobe syndrome\" pattern",
+          "contraindications": "Per PET",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tau PET (flortaucipir/Tauvid)",
+          "timing": "Research; not yet validated for PSP specifically",
+          "target": "4R-tau deposition in basal ganglia, brainstem, cortex",
+          "contraindications": "Per PET",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Amyloid PET (CPT 78811)",
+          "timing": "Rule out concurrent AD pathology",
+          "target": "Negative in pure PSP",
+          "contraindications": "Per PET",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MIBG cardiac scintigraphy",
+          "timing": "Distinguish PSP from PD (preserved in PSP, reduced in PD)",
+          "target": "Normal cardiac uptake in PSP",
+          "contraindications": "Drugs affecting uptake",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Specialized Studies": [
+        {
+          "item": "Polysomnography (CPT 95810)",
+          "timing": "If REM sleep behavior disorder suspected",
+          "target": "RBD less common in PSP than PD/DLB",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Video-oculography / infrared oculography",
+          "timing": "Quantify saccade velocity; confirm vertical saccade slowing",
+          "target": "Reduced vertical saccade velocity",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Videofluoroscopic swallow study (VFSS) (CPT 74230)",
+          "timing": "If dysphagia present; baseline and serial",
+          "target": "Assess aspiration risk, pharyngeal residue",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FEES (fiberoptic endoscopic evaluation of swallowing) (CPT 92612)",
+          "timing": "Alternative to VFSS; bedside evaluation",
+          "target": "Silent aspiration, pooling",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132)",
+          "timing": "Baseline; characterize cognitive profile",
+          "target": "Frontal-executive dysfunction; preserved memory early",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "timing": "If seizures or myoclonus suspected",
+          "target": "Usually normal or diffuse slowing",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "Carbidopa/Levodopa (Sinemet)",
+          "route": "PO",
+          "indication": "Levodopa responsiveness trial; required by MDS criteria for akinetic-rigid parkinsonism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/100 mg",
+                "orderSentence": "Carbidopa/Levodopa (Sinemet) 25/100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks to 25/250 mg TID; adequate trial requires 800-1000 mg levodopa/day for ≥1 month; document response",
+            "orderSentence": "Carbidopa/Levodopa (Sinemet) 25/100 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs",
+          "monitoring": "Nausea, orthostatic hypotension, dyskinesia (rare in PSP); document percent improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbidopa/Levodopa CR (Sinemet CR)",
+          "route": "PO",
+          "indication": "Sustained-release option if GI intolerance to IR or for nocturnal dosing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50/200 mg",
+                "orderSentence": "Carbidopa/Levodopa CR (Sinemet CR) 50/200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50/200 mg BID-TID; ~30% less bioavailable than IR; may combine with IR",
+            "orderSentence": "Carbidopa/Levodopa CR (Sinemet CR) 50/200 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs",
+          "monitoring": "Nausea, orthostatic hypotension; less predictable absorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thickened liquids",
+          "route": "PO",
+          "indication": "Dysphagia with thin liquid aspiration on swallow study",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per SLP recommendation",
+                "orderSentence": "Thickened liquids Per SLP recommendation PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Nectar-thick, honey-thick, or pudding-thick per swallow study results; reassess as disease progresses",
+            "orderSentence": "Thickened liquids Per SLP recommendation PO"
+          },
+          "contraindications": "Patient refusal (goals of care discussion)",
+          "monitoring": "Weight, hydration status, aspiration events; serial swallow evaluations",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Symptomatic/Maintenance Treatment": [
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Gait freezing, akinesia; may help some patients with motor symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; increase to 100 mg BID-TID; avoid evening dosing (insomnia); max 300 mg/day; reduce dose in renal impairment (CrCl <50)",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "contraindications": "Severe renal impairment (CrCl <15); seizure history (relative); uncontrolled glaucoma",
+          "monitoring": "Livedo reticularis, peripheral edema, hallucinations, insomnia, confusion; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - blepharospasm",
+          "route": "IM",
+          "indication": "Blepharospasm causing functional blindness; involuntary eyelid closure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-5 units/site",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - blepharospasm 2.5-5 units/site IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "2.5-5 units per injection site in orbicularis oculi; total 10-30 units per eye; repeat q12 weeks; specialist administration",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - blepharospasm 2.5-5 units/site IM"
+          },
+          "contraindications": "Infection at injection site; myasthenia gravis; aminoglycoside use",
+          "monitoring": "Ptosis, dry eye, excessive tearing, hematoma; reassess at each visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - dystonia",
+          "route": "IM",
+          "indication": "Dystonia (retrocollis, limb dystonia) causing pain or functional impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Dose varies by muscle",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - dystonia Dose varies by muscle IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "EMG-guided injection; retrocollis: splenius capitis 50-200 units; dose per target muscle; repeat q12 weeks",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - dystonia Dose varies by muscle IM"
+          },
+          "contraindications": "Infection at injection site; myasthenia gravis; aminoglycoside use",
+          "monitoring": "Dysphagia (especially cervical injections), weakness, pain at injection site",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OnabotulinumtoxinA (Botox) - sialorrhea",
+          "route": "IM",
+          "indication": "Sialorrhea (drooling) not responsive to oral anticholinergics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 units/parotid",
+                "orderSentence": "OnabotulinumtoxinA (Botox) - sialorrhea 30 units/parotid IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "30 units per parotid gland; 20 units per submandibular gland; repeat q12 weeks",
+            "orderSentence": "OnabotulinumtoxinA (Botox) - sialorrhea 30 units/parotid IM"
+          },
+          "contraindications": "Infection at injection site; myasthenia gravis",
+          "monitoring": "Dry mouth, dysphagia, jaw weakness",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Axial rigidity, limb spasticity causing pain or functional impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3-5 days; max 80 mg/day; do NOT discontinue abruptly (risk of withdrawal seizures)",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment (reduce dose); seizure history (relative)",
+          "monitoring": "Sedation, weakness, confusion (especially elderly); renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Axial rigidity, spasticity as alternative to baclofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg at bedtime; titrate to 2-4 mg TID; max 36 mg/day; reduce dose in hepatic impairment",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin)",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation, dry mouth, hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression common in PSP; first-line SSRI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg q1-2 weeks; target 50-100 mg daily; max 200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation (relative)",
+          "monitoring": "GI bleeding risk, hyponatremia, serotonin syndrome; Na+ if elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression as alternative SSRI; well-tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase to 10-20 mg daily; max 20 mg (QTc risk at higher doses)",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "QTc if risk factors; hyponatremia; GI bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dextromethorphan/Quinidine (Nuedexta)",
+          "route": "PO",
+          "indication": "Pseudobulbar affect (involuntary laughing/crying); FDA-approved for PBA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20/10 mg",
+                "orderSentence": "Dextromethorphan/Quinidine (Nuedexta) 20/10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20/10 mg daily x 7 days, then increase to 20/10 mg BID; take at least q12 hours",
+            "orderSentence": "Dextromethorphan/Quinidine (Nuedexta) 20/10 mg PO"
+          },
+          "contraindications": "QT prolongation; concurrent MAOIs; CYP2D6 poor metabolizers on quinidine",
+          "monitoring": "QTc at baseline and after dose increase; drug interactions (CYP2D6 substrates)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Excessive daytime sleepiness, fatigue, and apathy in PSP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg every morning; may increase to 200 mg daily; avoid afternoon dosing",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; hepatic impairment (reduce dose)",
+          "monitoring": "Blood pressure, heart rate; insomnia; headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Apathy and abulia not responsive to other measures; off-label for frontal symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg in AM and at noon; titrate to 10 mg BID; max 20 mg BID; avoid afternoon dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Severe anxiety, agitation; cardiac arrhythmia; concurrent MAOIs",
+          "monitoring": "Heart rate, blood pressure, appetite, sleep; abuse potential (low in this population)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zolpidem",
+          "route": "PO",
+          "indication": "Oculomotor dysfunction; limited evidence for transient improvement in saccades and motor function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Zolpidem 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg once daily (trial dose); evidence is limited to case series; some patients show paradoxical improvement in motor and oculomotor function",
+            "orderSentence": "Zolpidem 5 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; respiratory depression; myasthenia gravis",
+          "monitoring": "Sedation, falls (paradoxically may improve in some), confusion; short trial recommended",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Donepezil",
+          "route": "PO",
+          "indication": "Cognitive impairment in PSP; cholinergic deficit in PSP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg QHS x 4-6 weeks; may increase to 10 mg QHS; limited evidence in PSP but reasonable trial",
+            "orderSentence": "Donepezil 5 mg PO"
+          },
+          "contraindications": "Bradycardia; sick sinus syndrome; GI bleeding; peptic ulcer",
+          "monitoring": "Bradycardia, GI side effects (nausea, diarrhea), nightmares; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rivastigmine patch (Exelon)",
+          "route": "Transdermal",
+          "indication": "Cognitive impairment alternative to donepezil; may help attention and executive function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4.6 mg/24h",
+                "orderSentence": "Rivastigmine patch (Exelon) 4.6 mg/24h Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Start 4.6 mg/24h patch; increase monthly to 9.5-13.3 mg/24h; patch preferred over oral (less GI side effects)",
+            "orderSentence": "Rivastigmine patch (Exelon) 4.6 mg/24h Transdermal"
+          },
+          "contraindications": "Bradycardia; sick sinus syndrome; GI bleeding",
+          "monitoring": "Skin irritation, GI effects, bradycardia; weight; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Agitation, psychosis, or behavioral disturbance in PSP; safest antipsychotic in parkinsonian syndromes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5 mg QHS; titrate slowly to 25-100 mg QHS; lowest effective dose",
+            "orderSentence": "Quetiapine 12.5 mg PO"
+          },
+          "contraindications": "QT prolongation; metabolic syndrome",
+          "monitoring": "QTc, fasting glucose, lipids, weight; sedation; increased mortality risk (black box warning in dementia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia and sleep-wake cycle disturbance; safe first-line sleep aid",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg at bedtime; extended-release may be better for sleep maintenance",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Daytime drowsiness (minimal)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia as second-line; may help behavioral symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg QHS; max 100 mg QHS for sleep",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Orthostatic hypotension (caution in PSP with falls)",
+          "monitoring": "Sedation, orthostasis, priapism (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycopyrrolate",
+          "route": "PO",
+          "indication": "Sialorrhea (drooling) causing skin breakdown or aspiration risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Glycopyrrolate 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg BID; titrate to 1-2 mg TID; max 8 mg/day",
+            "orderSentence": "Glycopyrrolate 1 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention; bowel obstruction",
+          "monitoring": "Dry mouth (desired), urinary retention, constipation, tachycardia, cognitive worsening",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atropine 1% ophthalmic drops (sublingual)",
+          "route": "SL",
+          "indication": "Sialorrhea; alternative to systemic anticholinergics with less cognitive effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops SL"
+              }
+            ],
+            "route": "SL",
+            "instructions": "1-2 drops of 1% ophthalmic solution sublingual TID PRN drooling; local effect",
+            "orderSentence": "Atropine 1% ophthalmic drops (sublingual) 1-2 drops SL"
+          },
+          "contraindications": "Narrow-angle glaucoma",
+          "monitoring": "Dry mouth, tachycardia; minimal systemic absorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Scopolamine patch (Transderm Scop)",
+          "route": "Transdermal",
+          "indication": "Sialorrhea; transdermal delivery avoids swallowing difficulty",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg",
+                "orderSentence": "Scopolamine patch (Transderm Scop) 1.5 mg Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "1.5 mg patch q72 hours; apply behind ear; rotate sides",
+            "orderSentence": "Scopolamine patch (Transderm Scop) 1.5 mg Transdermal"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention",
+          "monitoring": "Dry mouth, blurred vision, confusion (especially elderly); urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Prophylactic/Preventive Treatment": [
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Osteoporosis prevention given high fall risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg calcium + 1000 IU D3",
+                "orderSentence": "Calcium + Vitamin D 600 mg calcium + 1000 IU D3 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium carbonate 600 mg BID with meals + Vitamin D3 1000-2000 IU daily; total 1200 mg calcium/day",
+            "orderSentence": "Calcium + Vitamin D 600 mg calcium + 1000 IU D3 PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones (relative)",
+          "monitoring": "Calcium level, Vitamin D level annually; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bisphosphonate (alendronate)",
+          "route": "PO",
+          "indication": "Osteoporosis treatment if T-score ≤ -2.5 or fragility fracture",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg",
+                "orderSentence": "Bisphosphonate (alendronate) 70 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "70 mg PO weekly; take on empty stomach with full glass water; remain upright 30 min",
+            "orderSentence": "Bisphosphonate (alendronate) 70 mg PO"
+          },
+          "contraindications": "Esophageal disorders; inability to sit upright 30 min; GFR <30-35",
+          "monitoring": "DEXA q2 years; jaw osteonecrosis (rare); esophageal symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension contributing to falls",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Midodrine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID; titrate to 5-10 mg TID; last dose by 4 PM (avoid supine hypertension); max 30 mg/day",
+            "orderSentence": "Midodrine 2.5 mg PO"
+          },
+          "contraindications": "Supine hypertension; urinary retention; severe cardiac disease",
+          "monitoring": "Supine blood pressure; urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Orthostatic hypotension as adjunct to midodrine or if midodrine insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg",
+                "orderSentence": "Fludrocortisone 0.1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg daily; may increase to 0.2 mg daily; max 0.3 mg/day",
+            "orderSentence": "Fludrocortisone 0.1 mg PO"
+          },
+          "contraindications": "Heart failure; hypertension; hypokalemia",
+          "monitoring": "Potassium, edema, supine blood pressure, weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic hypotension not responsive to midodrine/fludrocortisone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Droxidopa (Northera) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg/dose q24-48h; max 600 mg TID; last dose 5+ hours before bedtime",
+            "orderSentence": "Droxidopa (Northera) 100 mg PO"
+          },
+          "contraindications": "Supine hypertension (severe)",
+          "monitoring": "Supine blood pressure; headache; falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Percutaneous endoscopic gastrostomy (PEG) tube",
+          "route": "Surgical",
+          "indication": "Severe dysphagia with recurrent aspiration or inability to maintain nutrition/hydration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Percutaneous endoscopic gastrostomy (PEG) tube N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Discuss early when dysphagia progresses; ideally placed before FVC <50%; does not prevent aspiration but ensures nutrition; goals of care discussion essential",
+            "orderSentence": "Percutaneous endoscopic gastrostomy (PEG) tube N/A Surgical"
+          },
+          "contraindications": "Coagulopathy; peritonitis; patient refusal",
+          "monitoring": "Tube site infection, displacement; weight; nutritional parameters",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies": [
+        {
+          "item": "Coenzyme Q10 (ubiquinone)",
+          "route": "PO",
+          "indication": "Mitochondrial support; investigational in PSP; negative phase III trial but still used by some patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Coenzyme Q10 (ubiquinone) 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600-1200 mg daily in divided doses with fatty food for absorption; no proven efficacy in PSP (QE3 trial negative)",
+            "orderSentence": "Coenzyme Q10 (ubiquinone) 600 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None significant",
+          "monitoring": "GI upset; may reduce warfarin effect; no proven benefit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Davunetide (NAP)",
+          "route": "N/A",
+          "indication": "Investigational tau-targeting neuroprotective agent; failed phase II/III",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Davunetide (NAP) N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "Phase II/III completed; failed to show benefit; not currently available; historical reference",
+            "orderSentence": "Davunetide (NAP) N/A N/A"
+          },
+          "pretreatment": "N/A",
+          "contraindications": "N/A",
+          "monitoring": "N/A",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Riluzole",
+          "route": "PO",
+          "indication": "Investigational in PSP; failed to show benefit in clinical trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Riluzole N/A PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg BID trialed; NNIPPS trial showed no benefit in PSP; NOT recommended",
+            "orderSentence": "Riluzole N/A PO"
+          },
+          "pretreatment": "N/A",
+          "contraindications": "Hepatic impairment",
+          "monitoring": "LFTs; neutrophil count; no proven benefit in PSP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorder specialist for diagnosis confirmation, MDS-PSP criteria application, and ongoing management optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, balance exercises, fall prevention strategies, and use of weighted walker",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, home safety evaluation, and assistive device fitting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation (VFSS or FEES), dysarthria management, and communication strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuro-ophthalmology for evaluation of vertical gaze palsy, blepharospasm, and prism fitting for downgaze difficulty",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for baseline cognitive assessment and characterization of frontal-executive dysfunction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for depression, pseudobulbar affect, behavioral changes, and caregiver support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for community resources, disability planning, caregiver respite, and long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for goals of care discussion, symptom management, and advance care planning early in disease course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Nutrition/Dietitian for caloric optimization, texture-modified diet guidance, and PEG tube nutrition planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pulmonology for respiratory function monitoring if respiratory compromise suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Orthopedic surgery or trauma consult for fracture management in fall-related injuries",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "PSP is a progressive neurodegenerative disease; no cure exists but symptoms can be managed to improve quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Falls are the most dangerous complication; use a weighted walker at all times when mobile to prevent backward falls",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT attempt to walk without assistive device or supervision given high risk of serious falls and head injury",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED immediately if fall with head injury, loss of consciousness, or new neurological symptoms (worsening speech, inability to swallow, breathing difficulty)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Swallowing will gradually worsen; follow speech therapy recommendations for diet texture modification to prevent aspiration pneumonia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eat in upright position, take small bites, allow adequate time for meals, and avoid talking while eating to reduce choking risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa trial may provide modest benefit; take medication with meals and report any improvement in movement to your neurologist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop any prescribed medications abruptly without physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report pseudobulbar affect (involuntary crying or laughing) as this is treatable with medication",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Establish healthcare proxy, power of attorney, and advance directives early while patient can participate in decision-making",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Contact CurePSP (curepsp.org) and PSP Foundation for patient and caregiver support resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving should be discontinued due to impaired downgaze, slowed saccades, and cognitive changes affecting reaction time",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Home safety evaluation: remove throw rugs, install grab bars in bathroom, improve lighting, eliminate trip hazards",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use weighted or rolling walker (weighted preferred to counteract backward falls tendency in PSP)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear hip protectors to reduce fracture risk from falls",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular physical activity within safe limits: seated exercises, recumbent cycling, supervised balance training",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Head-of-bed elevation to 30 degrees for orthostatic hypotension management and aspiration prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Maintain adequate hydration and nutrition; high-calorie supplementation if weight loss occurs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Cognitive stimulation activities (puzzles, reading, social engagement) to support remaining cognitive function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sedating medications (benzodiazepines, anticholinergics, antihistamines) that increase fall risk and cognitive impairment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Caregiver respite planning; caregiver burnout is common in PSP given rapid functional decline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid excessive heat exposure which may worsen symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Parkinson's disease (PD)",
+      "features": "Asymmetric onset, rest tremor, excellent levodopa response, limb > axial rigidity, no early falls, no vertical gaze palsy",
+      "tests": "DaTscan (abnormal in both), MIBG (reduced in PD, normal in PSP), MRI (no midbrain atrophy in PD), levodopa trial"
+    },
+    {
+      "diagnosis": "Multiple system atrophy (MSA)",
+      "features": "Early severe autonomic failure (orthostatic hypotension, urinary retention), cerebellar signs (MSA-C), stridor, poor levodopa response",
+      "tests": "MRI (\"hot cross bun\" sign, cerebellar atrophy), MIBG (preserved in MSA), autonomic testing"
+    },
+    {
+      "diagnosis": "Corticobasal degeneration (CBD)",
+      "features": "Markedly asymmetric, limb apraxia, alien limb phenomenon, cortical sensory loss, myoclonus, dystonia",
+      "tests": "MRI (asymmetric cortical atrophy), FDG-PET (asymmetric cortical hypometabolism)"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies (DLB)",
+      "features": "Visual hallucinations, fluctuating cognition, REM sleep behavior disorder, dementia before or within 1 year of parkinsonism",
+      "tests": "DaTscan (abnormal), MIBG (reduced), EEG (posterior slow-wave activity)"
+    },
+    {
+      "diagnosis": "Frontotemporal dementia - behavioral variant (bvFTD)",
+      "features": "Prominent personality/behavioral changes, disinhibition, apathy, compulsions; no early motor features",
+      "tests": "MRI (frontal/temporal atrophy), FDG-PET (frontal hypometabolism), neuropsychological testing"
+    },
+    {
+      "diagnosis": "Vascular parkinsonism",
+      "features": "Stepwise progression, lower-body predominant, vascular risk factors, gait disorder, no tremor",
+      "tests": "MRI (extensive white matter disease, lacunar infarcts), vascular risk factors"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Magnetic gait (feet glued to floor), urinary incontinence, dementia; triad",
+      "tests": "MRI (ventriculomegaly out of proportion to atrophy), large volume LP tap test with gait improvement"
+    },
+    {
+      "diagnosis": "Whipple disease",
+      "features": "Oculomasticatory myorhythmia (pathognomonic), diarrhea, weight loss, arthralgias, vertical gaze palsy",
+      "tests": "PCR for Tropheryma whipplei (blood, CSF, small bowel biopsy); PAS-positive macrophages"
+    },
+    {
+      "diagnosis": "Niemann-Pick type C",
+      "features": "Vertical supranuclear gaze palsy, ataxia, dystonia; younger onset; organomegaly",
+      "tests": "Filipin staining of fibroblasts, NPC1/NPC2 genetic testing, oxysterol levels"
+    },
+    {
+      "diagnosis": "Prion disease (CJD)",
+      "features": "Rapid progression (weeks-months), myoclonus, cortical visual changes, MRI cortical ribboning",
+      "tests": "MRI (DWI cortical ribboning), EEG (periodic complexes), CSF RT-QuIC, 14-3-3 protein"
+    },
+    {
+      "diagnosis": "Drug-induced parkinsonism",
+      "features": "Temporal relationship to dopamine-blocking agents; symmetric; may include vertical gaze limitation with certain agents",
+      "tests": "Medication review; DaTscan (usually normal); improvement after drug withdrawal"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MDS-PSP diagnostic criteria",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Hoglinger et al., Mov Disord 2017"
+    },
+    {
+      "recommendation": "Levodopa trial recommended in PSP workup",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Respondek et al., Mov Disord 2014"
+    },
+    {
+      "recommendation": "Limited levodopa response in PSP (<30% of patients)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Kompoliti et al., Mov Disord 1998"
+    },
+    {
+      "recommendation": "MRI midbrain atrophy (hummingbird sign) supports PSP diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Massey et al., Neurology 2012"
+    },
+    {
+      "recommendation": "Magnetic resonance parkinsonism index (MRPI) distinguishes PSP from PD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Quattrone et al., Neurology 2008"
+    },
+    {
+      "recommendation": "MIBG cardiac scintigraphy normal in PSP, reduced in PD",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Nagayama et al., Neurology 2005"
+    },
+    {
+      "recommendation": "Amantadine may improve gait freezing in parkinsonian syndromes",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Kompoliti et al., Neurology 1998"
+    },
+    {
+      "recommendation": "Botulinum toxin effective for blepharospasm and dystonia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Simpson et al., Neurology 2008 (AAN guideline)"
+    },
+    {
+      "recommendation": "Botulinum toxin effective for sialorrhea in neurodegenerative disease",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Jost et al., J Neurol 2019"
+    },
+    {
+      "recommendation": "Dextromethorphan/quinidine (Nuedexta) FDA-approved for pseudobulbar affect",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Pioro et al., Ann Neurol 2010 (STAR trial)"
+    },
+    {
+      "recommendation": "Cholinesterase inhibitors for cognitive symptoms in PSP",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Litvan et al., Neurology 2001"
+    },
+    {
+      "recommendation": "Coenzyme Q10 failed to show efficacy in PSP",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Apetauerova et al., Neurology 2016 (QE3 trial)"
+    },
+    {
+      "recommendation": "Riluzole failed to show benefit in PSP",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Bensimon et al., Lancet Neurol 2009 (NNIPPS trial)"
+    },
+    {
+      "recommendation": "Davunetide failed phase II/III in PSP",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Boxer et al., Lancet Neurol 2014"
+    },
+    {
+      "recommendation": "Weighted walker superior to standard walker for PSP backward falls",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Bluett et al., Mov Disord 2020"
+    },
+    {
+      "recommendation": "Early palliative care improves quality of life in neurodegenerative disease",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Temel et al., NEJM 2010 (extrapolated from ALS/oncology)"
+    },
+    {
+      "recommendation": "PSP-RS most common variant; median survival 6-9 years",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Respondek et al., Ann Neurol 2014"
+    },
+    {
+      "recommendation": "PSP neuropathology: 4-repeat tauopathy with globose neurofibrillary tangles",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Dickson et al., J Neuropathol Exp Neurol 2007"
+    },
+    {
+      "recommendation": "Tau PET imaging in PSP shows subcortical uptake",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Whitwell et al., Brain 2018"
+    },
+    {
+      "recommendation": "Serum neurofilament light chain elevated in PSP",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Rojas et al., Ann Clin Transl Neurol 2016"
+    },
+    {
+      "recommendation": "Zolpidem transient improvement in oculomotor and motor function (case series)",
+      "evidenceLevel": "Class IV, Level U",
+      "source": "Daniele et al., Mov Disord 1999"
+    },
+    {
+      "recommendation": "PSP clinical variants and tau pathology correlations",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Kovacs et al., Acta Neuropathol 2020"
+    },
+    {
+      "recommendation": "Physical therapy and exercise benefit in atypical parkinsonism",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Zampieri and Di Fabio, Phys Ther 2008"
+    },
+    {
+      "recommendation": "PEG placement timing in neurodegenerative dysphagia",
+      "evidenceLevel": "Class III, Level C",
+      "source": "ProGas Study Group, Lancet Neurol 2015"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "PSP Rating Scale (PSPRS)",
+      "frequency": "q6 months",
+      "action": "Adjust symptomatic therapy; reassess goals",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MoCA or frontal assessment battery (FAB)",
+      "frequency": "q6-12 months",
+      "action": "Cholinesterase inhibitor trial; neuropsychology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Falls frequency and severity",
+      "frequency": "Each visit",
+      "action": "PT, home safety, assistive devices, hip protectors",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Orthostatic vital signs",
+      "frequency": "Each visit",
+      "action": "Midodrine, fludrocortisone, droxidopa, compression stockings",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "q6 months or if worsening",
+      "action": "Speech therapy; diet modification; PEG tube discussion",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Each visit",
+      "action": "Nutrition consult; caloric supplementation; PEG discussion",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Depression screening (PHQ-9)",
+      "frequency": "q6 months",
+      "action": "SSRI initiation or adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pseudobulbar affect assessment",
+      "frequency": "Each visit",
+      "action": "Nuedexta initiation or dose adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional independence (ADLs/IADLs)",
+      "frequency": "q6 months",
+      "action": "OT, increase home support",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden assessment",
+      "frequency": "q6-12 months",
+      "action": "Respite care, support services, social work referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Visual function / gaze assessment",
+      "frequency": "Each visit",
+      "action": "Prism glasses; neuro-ophthalmology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bone density (DEXA)",
+      "frequency": "Baseline and q2 years",
+      "action": "Bisphosphonate therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Respiratory function (FVC)",
+      "frequency": "q6-12 months or if dyspnea",
+      "action": "Pulmonology; BiPAP discussion",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Most PSP patients; ambulatory (with assistive device), adequate home support, stable swallowing, no acute illness"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Fall with serious injury (fracture, subdural hematoma, head injury); aspiration pneumonia; inability to maintain oral intake; acute delirium or rapid decline; UTI or other infection causing significant functional worsening"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Acute condition treated; safe swallowing or PEG in place; ambulatory with assistance; caregiver education completed; outpatient follow-up arranged; home safety plan in place"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Aspiration pneumonia with respiratory failure; severe sepsis from aspiration or UTI; post-fall with intracranial hemorrhage requiring monitoring; respiratory failure requiring ventilatory support"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to safely live at home despite maximum support; recurrent falls despite interventions; severe dysphagia requiring constant supervision; advanced cognitive impairment"
+    },
+    {
+      "disposition": "Hospice",
+      "criteria": "End-stage PSP; bedbound; unable to communicate; recurrent aspiration; patient/family goals focused on comfort; estimated prognosis <6 months"
+    },
+    {
+      "disposition": "Transfer to tertiary center",
+      "criteria": "Diagnostic uncertainty requiring specialized movement disorder evaluation; consideration for clinical trial enrollment; complex symptom management"
+    }
+  ]
+}

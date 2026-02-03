@@ -1,0 +1,2055 @@
+{
+  "id": "ataxia-evaluation",
+  "title": "Ataxia Evaluation",
+  "version": "1.1",
+  "icd10": [
+    "** R27.0 (Ataxia",
+    "unspecified)",
+    "G11.9 (Hereditary ataxia",
+    "unspecified)",
+    "G11.1 (Early-onset cerebellar ataxia)",
+    "G11.2 (Late-onset cerebellar ataxia)",
+    "G11.0 (Congenital nonprogressive ataxia)",
+    "G11.3 (Cerebellar ataxia with defective DNA repair)",
+    "G11.4 (Hereditary spastic paraplegia)",
+    "G31.89 (Other specified degenerative diseases of nervous system — cerebellar degeneration NOS)",
+    "G32.81 (Cerebellar ataxia in diseases classified elsewhere)",
+    "G13.1 (Other systemic atrophy primarily affecting central nervous system in neoplastic disease — paraneoplastic cerebellar degeneration)"
+  ],
+  "scope": "** Evaluation and management of ataxia in adults. Covers the differential diagnosis approach to cerebellar vs. sensory ataxia, acute/subacute etiologies (stroke, toxic, infectious, paraneoplastic, autoimmune), and chronic/progressive etiologies (hereditary, degenerative, immune-mediated). Includes diagnostic workup, etiology-directed treatment, symptomatic management, and rehabilitation. Excludes isolated vertigo (see Vertigo/Dizziness Evaluation), ataxia in children, and ataxia secondary to acute intoxication without persistent deficits.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Infection screen (cerebellitis, abscess); anemia (B12 deficiency); malignancy (paraneoplastic)",
+          "target": "Normal; leukocytosis suggests infection; macrocytic anemia suggests B12/folate deficiency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Electrolyte derangements (hyponatremia, uremia); hepatic encephalopathy; renal dysfunction affecting drug clearance",
+          "target": "Normal; hyponatremia <130 mEq/L can cause neurologic symptoms; elevated ammonia/LFTs suggest hepatic cause",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemia can mimic acute cerebellar dysfunction; diabetes as comorbidity in neuropathic ataxia",
+          "target": "70-180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism can cause cerebellar ataxia (rare but treatable); thyroid dysfunction in autoimmune conditions",
+          "target": "Normal (0.4-4.0 mIU/L); hypothyroidism → thyroid replacement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency causes subacute combined degeneration with sensory ataxia; posterior column disease",
+          "target": ">300 pg/mL; low or borderline → methylmalonic acid and homocysteine",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Folate deficiency can contribute to neuropathy and myelopathy causing sensory ataxia",
+          "target": "Normal (>5.9 ng/mL); low → supplement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin E level (CPT 82608)",
+          "rationale": "Vitamin E deficiency causes spinocerebellar syndrome mimicking Friedreich ataxia; fat malabsorption states",
+          "target": "Normal (5.5-17 mg/L); deficiency → supplement and evaluate malabsorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia can contribute to ataxia and tremor; often low in alcoholism",
+          "target": "Normal (1.7-2.2 mg/dL); low → replace",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "rationale": "Inflammatory markers for autoimmune, infectious, or paraneoplastic etiologies",
+          "target": "Normal; elevated → further autoimmune/infectious workup",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Drug levels (phenytoin, lithium, carbamazepine) (CPT 80185/80178/80156)",
+          "rationale": "Drug toxicity is common reversible cause of cerebellar ataxia; phenytoin toxicity is classic cause",
+          "target": "Phenytoin 10-20 mcg/mL; lithium 0.6-1.2 mEq/L; carbamazepine 4-12 mcg/mL; supratherapeutic levels → dose adjust or discontinue",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood alcohol level (CPT 80320)",
+          "rationale": "Acute alcohol intoxication; chronic alcoholic cerebellar degeneration",
+          "target": "Negative or low; elevated → address intoxication",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis with drug screen (CPT 81003/80307)",
+          "rationale": "Toxic exposures; illicit substances causing ataxia",
+          "target": "Negative; positive → identify offending agent",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Anti-GAD65 antibodies (CPT 86235)",
+          "rationale": "Autoimmune cerebellar ataxia; stiff-person spectrum; high titers (>2000 IU/mL) associated with cerebellar ataxia",
+          "target": "Negative; positive at high titers → autoimmune cerebellar ataxia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-gliadin antibodies (IgA and IgG) (CPT 86258)",
+          "rationale": "Gluten ataxia is most common autoimmune cause of sporadic ataxia; may occur without GI symptoms",
+          "target": "Negative; positive → trial gluten-free diet; tissue transglutaminase (tTG) for celiac confirmation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tissue transglutaminase IgA (CPT 86364)",
+          "rationale": "Celiac disease confirmation when anti-gliadin positive; gluten ataxia",
+          "target": "Negative; positive → confirm with duodenal biopsy; strict gluten-free diet",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CPT 86255)",
+          "rationale": "Paraneoplastic cerebellar degeneration (PCD); anti-Yo (ovarian, breast), anti-Hu (small cell lung), anti-Tr/DNER (Hodgkin lymphoma), anti-mGluR1, anti-CV2/CRMP5",
+          "target": "Negative; positive → CT chest/abdomen/pelvis and PET-CT for occult malignancy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylmalonic acid (CPT 83921)",
+          "rationale": "Confirms functional B12 deficiency when B12 borderline (200-400 pg/mL)",
+          "target": "Normal (<0.4 mcmol/L); elevated → B12 deficiency confirmed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "rationale": "Elevated in B12 and folate deficiency; vascular risk factor",
+          "target": "Normal (<15 mcmol/L); elevated → supplement B12/folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Systemic autoimmune conditions causing CNS involvement (SLE cerebritis, Sjogren syndrome)",
+          "target": "Negative; positive → further autoimmune workup (dsDNA, SSA/SSB, complement)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper and ceruloplasmin (CPT 82390/82390)",
+          "rationale": "Wilson disease (onset typically <50 years); copper deficiency from zinc excess or malabsorption can cause ataxia",
+          "target": "Ceruloplasmin >20 mg/dL; low ceruloplasmin + low serum copper → Wilson disease; low copper → copper deficiency myelopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine (vitamin B1) level (CPT 84425)",
+          "rationale": "Wernicke encephalopathy (ataxia, ophthalmoplegia, confusion); alcoholism, malnutrition",
+          "target": "Normal (70-180 nmol/L); low → IV thiamine replacement urgently",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "24-hour urine copper (CPT 82525)",
+          "rationale": "Wilson disease confirmation; elevated urinary copper excretion",
+          "target": "<40 mcg/24h normal; >100 mcg/24h suggestive of Wilson disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "rationale": "Vascular risk factors if stroke-related cerebellar infarction",
+          "target": "LDL <70 (high risk); assess global vascular risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetic neuropathy contributing to sensory ataxia; vascular risk",
+          "target": "<7.0%; elevated → diabetes management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis (tabes dorsalis causing sensory ataxia); rare but treatable",
+          "target": "Negative; positive → FTA-ABS confirmation and CSF analysis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV screening (CPT 87389)",
+          "rationale": "HIV-associated cerebellar degeneration; opportunistic infections (PML, toxoplasmosis); medication-related",
+          "target": "Negative; positive → CD4 count, viral load, CNS evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Genetic testing — SCA panel (CPT 81401)",
+          "rationale": "Spinocerebellar ataxia types 1, 2, 3, 6, 7, 8, 10, 12, 17; repeat expansion testing; family history of progressive ataxia",
+          "target": "Negative; positive → specific SCA subtype identified; genetic counseling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing — Friedreich ataxia (FXN gene) (CPT 81284)",
+          "rationale": "Friedreich ataxia (GAA repeat expansion); onset typically <25 years; cardiomyopathy, scoliosis, diabetes",
+          "target": "Negative; positive (>66 GAA repeats on both alleles) → cardiologic evaluation, diabetes screening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing — ataxia-telangiectasia (ATM gene) (CPT 81408)",
+          "rationale": "Ataxia-telangiectasia; childhood onset but mild forms present in adults; telangiectasias, immunodeficiency, cancer predisposition",
+          "target": "Negative; positive → cancer surveillance, immunology referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing — episodic ataxia (CACNA1A, KCNA1) (CPT 81406)",
+          "rationale": "Episodic ataxia type 1 (KCNA1) and type 2 (CACNA1A); recurrent episodes; EA2 responsive to acetazolamide",
+          "target": "Negative; positive → targeted therapy (acetazolamide for EA2)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Whole exome sequencing (CPT 81415)",
+          "rationale": "Undiagnosed hereditary ataxia after targeted panels negative; novel or rare genetic causes",
+          "target": "Variant of uncertain significance or pathogenic variant identified; many ataxias have no known genetic cause",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-mGluR1 antibodies",
+          "rationale": "Autoimmune cerebellar ataxia; Hodgkin lymphoma association",
+          "target": "Negative; positive → malignancy search and immunotherapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-DPPX antibodies",
+          "rationale": "Autoimmune encephalitis with ataxia, hyperexcitability, diarrhea",
+          "target": "Negative; positive → immunotherapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-CASPR2 antibodies (CPT 86255)",
+          "rationale": "Autoimmune cerebellar ataxia; neuromyotonia; Morvan syndrome",
+          "target": "Negative; positive → immunotherapy, thymoma search",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Very long chain fatty acids (VLCFA) (CPT 82542)",
+          "rationale": "Adrenomyeloneuropathy (X-linked); peroxisomal disorders causing ataxia and myelopathy",
+          "target": "Normal; elevated → adrenoleukodystrophy/adrenomyeloneuropathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-fetoprotein (AFP) (CPT 82105)",
+          "rationale": "Elevated in ataxia-telangiectasia; screening marker",
+          "target": "Normal; elevated → ataxia-telangiectasia evaluation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CoQ10 level (CPT 82542)",
+          "rationale": "Coenzyme Q10 deficiency causes treatable cerebellar ataxia",
+          "target": "Normal; low → CoQ10 supplementation (responds well)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Phytanic acid (CPT 82542)",
+          "rationale": "Refsum disease (phytanic acid oxidase deficiency); ataxia, retinitis pigmentosa, neuropathy",
+          "target": "Normal; elevated → dietary modification (phytanic acid restriction)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP (mass lesion, hydrocephalus, meningitis)",
+          "target": "10-20 cm H2O; elevated → obtain imaging before LP; initiate ICP management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Infection, inflammation, malignancy",
+          "target": "WBC <5, RBC 0; pleocytosis → infection or inflammation; lymphocytic → viral, autoimmune, or paraneoplastic",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Infection, inflammation, Guillain-Barre variants",
+          "target": "15-45 mg/dL; elevated → infection, inflammation, malignancy; markedly elevated → GBS variant (Miller Fisher)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Infection (bacterial, TB, fungal)",
+          "target": "CSF/serum ratio >0.6; low ratio → bacterial, TB, fungal, or carcinomatous meningitis",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and culture",
+          "rationale": "Bacterial meningitis; brain abscess rupture",
+          "target": "No organisms; positive → targeted antibiotics",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands and IgG index",
+          "rationale": "Multiple sclerosis; other inflammatory CNS disease",
+          "target": "Absent; present → MS or other inflammatory condition",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "Leptomeningeal carcinomatosis; CNS lymphoma",
+          "target": "Negative; positive → oncology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GAD65 in CSF",
+          "rationale": "Intrathecal anti-GAD production in autoimmune cerebellar ataxia",
+          "target": "Negative; positive (especially with high index vs. serum) → autoimmune cerebellar ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibodies in CSF",
+          "rationale": "More sensitive than serum for some paraneoplastic antibodies",
+          "target": "Negative; positive → malignancy search",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "14-3-3 protein and RT-QuIC",
+          "rationale": "Prion disease (Creutzfeldt-Jakob disease) if rapidly progressive ataxia with cognitive decline",
+          "target": "Negative; positive → CJD highly likely",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "STAT in acute ataxia for hemorrhage or mass effect; does NOT adequately visualize posterior fossa",
+          "target": "Cerebellar hemorrhage; posterior fossa mass; hydrocephalus; large cerebellar infarction with edema; **NEGATIVE CT does NOT exclude posterior fossa stroke**",
+          "contraindications": "None for non-contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Gold standard for cerebellar evaluation; assess atrophy pattern, lesions, enhancement; DWI for acute stroke",
+          "target": "Cerebellar atrophy (global vs. vermian vs. hemispheric); acute infarction on DWI; demyelinating lesions (MS); tumor; abscess; enhancement (inflammation, tumor)",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia; GFR <30 for gadolinium",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA head and neck (CPT 70544/70547) or CTA head and neck (CPT 70496/70498)",
+          "timing": "If vascular etiology suspected (vertebrobasilar stroke, dissection)",
+          "target": "Vertebral artery dissection or stenosis; basilar artery stenosis or occlusion; posterior circulation aneurysm",
+          "contraindications": "MRA: MRI-incompatible implants, severe claustrophobia, GFR <30 for gadolinium; CTA: contrast allergy, renal impairment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI cervical and thoracic spine (CPT 72141/72146)",
+          "timing": "If sensory ataxia suspected; dorsal column disease; myelopathy; B12 deficiency; copper deficiency",
+          "target": "Dorsal column hyperintensity (subacute combined degeneration); compressive myelopathy; demyelinating lesions; syrinx",
+          "contraindications": "MRI-incompatible implants",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 74177)",
+          "timing": "Paraneoplastic cerebellar degeneration — malignancy search when paraneoplastic antibodies positive",
+          "target": "Occult malignancy (lung, ovarian, breast, lymphoma); thymoma",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PET-CT (CPT 78816)",
+          "timing": "Occult malignancy search when paraneoplastic antibodies positive and CT negative",
+          "target": "Hypermetabolic lesion suggesting occult neoplasm; small cell lung cancer, ovarian cancer, Hodgkin lymphoma",
+          "contraindications": "Pregnancy; significant hyperglycemia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nerve conduction study / Electromyography (NCS/EMG) (CPT 95907-95913)",
+          "timing": "Sensory ataxia evaluation; peripheral neuropathy; Friedreich ataxia (sensory neuropathy); CIDP; paraneoplastic neuropathy",
+          "target": "Sensory neuropathy (reduced SNAP amplitudes); sensory neuronopathy (non-length-dependent); demyelinating neuropathy (CIDP)",
+          "contraindications": "Anticoagulation (relative for EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Electroencephalogram (EEG) (CPT 95816)",
+          "timing": "If seizures suspected; progressive myoclonus ataxia syndromes; prion disease (periodic sharp waves)",
+          "target": "Normal background; epileptiform discharges; periodic sharp wave complexes (CJD); myoclonic correlates",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MR spectroscopy of cerebellum (CPT 76390)",
+          "timing": "Evaluate cerebellar metabolites in neurodegenerative ataxia; NAA reduction in neuronal loss",
+          "target": "Reduced NAA/Cr ratio (neuronal loss); elevated choline (inflammation or tumor); lactate peak (mitochondrial disease)",
+          "contraindications": "MRI-incompatible implants; severe claustrophobia; GFR <30 for gadolinium",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "DAT scan (DaTscan, ioflupane SPECT) (CPT 78830)",
+          "timing": "Differentiate MSA-C from cerebellar ataxia without parkinsonism; presynaptic dopaminergic deficit",
+          "target": "Normal uptake (pure cerebellar) vs. reduced uptake (MSA-C, Parkinson-plus)",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiac MRI (CPT 75557)",
+          "timing": "Friedreich ataxia — hypertrophic cardiomyopathy screening; cardiac iron deposition",
+          "target": "Normal; hypertrophic cardiomyopathy; myocardial fibrosis",
+          "contraindications": "MRI-incompatible implants; claustrophobia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "Friedreich ataxia — cardiomyopathy screening; MSA — autonomic cardiac involvement",
+          "target": "Normal; hypertrophic or dilated cardiomyopathy (Friedreich); LV dysfunction",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic function testing (CPT 95923)",
+          "timing": "MSA-C evaluation; autonomic failure (orthostatic hypotension, urinary dysfunction, anhidrosis)",
+          "target": "Normal; abnormal (cardiovagal, adrenergic, or sudomotor dysfunction) → supports MSA-C diagnosis",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "Thiamine (vitamin B1)",
+          "route": "IV",
+          "indication": "Wernicke encephalopathy (ataxia + ophthalmoplegia + confusion); empiric in alcoholism or malnutrition with acute ataxia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine (vitamin B1) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID for 3 days, then 250 mg IV daily for 5 days; give BEFORE glucose; infuse over 30 min",
+            "orderSentence": "Thiamine (vitamin B1) 500 mg IV"
+          },
+          "contraindications": "Rare anaphylaxis (IV formulation)",
+          "monitoring": "Allergic reaction during infusion; clinical improvement (ophthalmoplegia resolves first, then confusion, then ataxia)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV alteplase (tPA)",
+          "route": "IV",
+          "indication": "Acute posterior circulation ischemic stroke causing cerebellar infarction within treatment window",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.9 mg/kg",
+                "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.9 mg/kg IV (max 90 mg); 10% bolus over 1 min, remainder over 60 min; within 4.5 hours of symptom onset",
+            "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+          },
+          "contraindications": "Active hemorrhage; recent surgery; INR >1.7; platelets <100,000; BP >185/110; see full stroke exclusion criteria",
+          "monitoring": "BP q15min x 2h, then q30min x 6h, then q1h x 16h; neuro checks q15min during infusion; NIHSS; signs of hemorrhage",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Tenecteplase",
+          "route": "IV",
+          "indication": "Alternative thrombolytic for acute posterior circulation stroke; single bolus dosing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg/kg",
+                "orderSentence": "Tenecteplase 0.25 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.25 mg/kg IV bolus (max 25 mg); single dose; emerging evidence for posterior circulation",
+            "orderSentence": "Tenecteplase 0.25 mg/kg IV"
+          },
+          "contraindications": "Active hemorrhage; recent surgery; INR >1.7; platelets <100,000; BP >185/110; see full stroke exclusion criteria",
+          "monitoring": "BP q15min x 2h, then q30min x 6h, then q1h x 16h; neuro checks q15min during infusion; NIHSS; signs of hemorrhage",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Vasogenic edema from cerebellar mass (tumor, abscess); NOT for cytotoxic edema (stroke)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV q6h; for tumor/abscess-related edema only",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active GI bleeding; uncontrolled infection (relative); avoid in stroke",
+          "monitoring": "Blood glucose q6h; GI prophylaxis (PPI); mood changes; insomnia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol",
+          "route": "IV",
+          "indication": "Elevated ICP from posterior fossa mass effect with impending herniation; cerebellar stroke with edema",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/kg IV bolus over 15-20 min; then 0.25-0.5 g/kg q6h PRN; target serum osmolality <320",
+            "orderSentence": "Mannitol 1 g/kg IV"
+          },
+          "contraindications": "Severe dehydration; anuria; pulmonary edema",
+          "monitoring": "Serum osmolality q6h (hold if >320); BMP q6h; urine output; neuro exam",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline (23.4%)",
+          "route": "IV",
+          "indication": "Acute ICP crisis from posterior fossa mass effect when rapid osmotic effect needed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline (23.4%) 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL of 23.4% NaCl IV over 10-15 min via central line; may repeat if needed",
+            "orderSentence": "Hypertonic saline (23.4%) 30 mL IV"
+          },
+          "contraindications": "Severe hypernatremia (Na >160); CHF",
+          "monitoring": "Serum sodium q4-6h (target 145-155); central line required for 23.4%; serum osmolality",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phenytoin dose adjustment or discontinuation",
+          "route": "IV/PO",
+          "indication": "Phenytoin toxicity causing cerebellar ataxia (most common drug-induced cause); supratherapeutic level",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Phenytoin dose adjustment or discontinuation N/A IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Hold phenytoin; recheck level in 24-48h; resume at lower dose or switch to alternative AED; chronic toxicity may cause permanent cerebellar damage",
+            "orderSentence": "Phenytoin dose adjustment or discontinuation N/A IV/PO"
+          },
+          "contraindications": "Do not abruptly discontinue if on for seizures — taper and bridge",
+          "monitoring": "Repeat phenytoin level q12-24h until therapeutic; monitor for seizure breakthrough if reducing dose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lithium dose adjustment or discontinuation",
+          "route": "PO",
+          "indication": "Lithium toxicity causing cerebellar ataxia; supratherapeutic level",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Lithium dose adjustment or discontinuation N/A PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Hold lithium; aggressive IV hydration; recheck level q6-12h; hemodialysis if level >4.0 or severe symptoms; resume at lower dose when level therapeutic",
+            "orderSentence": "Lithium dose adjustment or discontinuation N/A PO"
+          },
+          "contraindications": "Psychiatry consult before discontinuation; monitor for rebound mania",
+          "monitoring": "Lithium level q6-12h; BMP q6-12h; renal function; neurologic exam; hemodialysis if level >4.0",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Episodic ataxia type 2 (EA2, CACNA1A mutation); first-line preventive therapy; reduces frequency and severity of episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate to 250-500 mg BID-TID based on response; max 1000 mg/day",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe hepatic or renal impairment; metabolic acidosis; hypokalemia",
+          "monitoring": "BMP q3 months (metabolic acidosis, hypokalemia); renal function; paresthesias (common, benign); kidney stones (hydration)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "4-Aminopyridine (dalfampridine)",
+          "route": "PO",
+          "indication": "Episodic ataxia type 2; downbeat nystagmus; cerebellar gait ataxia; improves Purkinje cell function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "4-Aminopyridine (dalfampridine) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; may increase to 10 mg BID; 12 hours apart; max 20 mg/day",
+            "orderSentence": "4-Aminopyridine (dalfampridine) 5 mg PO"
+          },
+          "contraindications": "Seizure history (lowers seizure threshold); moderate-severe renal impairment (CrCl <50); concurrent use of other forms of 4-AP",
+          "monitoring": "Seizure risk; renal function at baseline and periodically; GI side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Riluzole",
+          "route": "PO",
+          "indication": "Some spinocerebellar ataxias (SCA); neuroprotective; modest evidence for ataxia improvement in selected patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Riluzole 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg PO BID; take on empty stomach (1 hour before or 2 hours after meals)",
+            "orderSentence": "Riluzole 50 mg PO"
+          },
+          "contraindications": "Hepatic impairment (ALT >5x ULN); pregnancy",
+          "monitoring": "LFTs monthly x 3 months, then q3 months for first year, then periodically; neutrophil count; nausea, asthenia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Cerebellar ataxia (various etiologies); modest evidence for gait improvement; anti-glutamatergic properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; increase to 100 mg BID-TID over 1-2 weeks; max 300 mg/day; avoid afternoon dosing (insomnia)",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust if CrCl <50); seizure history; livedo reticularis; angle-closure glaucoma",
+          "monitoring": "Renal function; hallucinations (especially elderly); insomnia; livedo reticularis; ankle edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO",
+          "indication": "Cerebellar ataxia (various etiologies); serotonergic mechanism may improve cerebellar function; modest evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Buspirone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose q3-5 days; target 30-60 mg/day divided TID; max 60 mg/day",
+            "orderSentence": "Buspirone 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; severe hepatic or renal impairment",
+          "monitoring": "Dizziness; headache; nausea (usually transient); no dependence risk unlike benzodiazepines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain in sensory ataxia; proprioceptive neuropathy symptoms; cerebellar tremor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3d; target 900-1800 mg/day divided TID; max 3600 mg/day; adjust for renal function",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); respiratory depression with opioids or CNS depressants",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function; suicidality (rare); respiratory depression if combined with CNS depressants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain in sensory ataxia; may help cerebellar tremor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 600 mg/day; adjust for renal function",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history",
+          "monitoring": "Sedation; dizziness; weight gain; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Cerebellar tremor; myoclonus in progressive myoclonic ataxia; action tremor refractory to other treatments",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg BID; increase by 0.25 mg q3-5 days; target 0.5-2 mg/day; max 4 mg/day; use lowest effective dose",
+            "orderSentence": "Clonazepam 0.25 mg PO"
+          },
+          "contraindications": "Respiratory insufficiency; severe hepatic impairment; acute narrow-angle glaucoma; avoid abrupt discontinuation",
+          "monitoring": "Sedation; respiratory depression; dependence (limit duration); fall risk; cognitive impairment; paradoxical agitation (elderly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Cerebellar action tremor (kinetic/intention tremor component); reduces tremor amplitude",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Propranolol 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20 mg BID; titrate by 20 mg/dose q1 week; max 320 mg/day; use LA formulation for once-daily dosing",
+            "orderSentence": "Propranolol 20 mg PO"
+          },
+          "contraindications": "Asthma/severe COPD (non-selective beta-blocker); bradycardia (HR <50); AV block (2nd/3rd degree); decompensated heart failure; severe peripheral vascular disease",
+          "monitoring": "Heart rate; blood pressure; blood glucose (masks hypoglycemia in diabetics); fatigue; depression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting associated with acute cerebellar dysfunction and vertigo",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "4-8 mg IV/PO q8h PRN nausea; max 24 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV/PO"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if risk factors; constipation; headache",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Vestibular symptoms (vertigo, nausea) associated with cerebellar ataxia; short-term use only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Meclizine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO q6-8h PRN; short-term use only (48-72h); do NOT use chronically — delays vestibular compensation",
+            "orderSentence": "Meclizine 25 mg PO"
+          },
+          "contraindications": "Elderly (anticholinergic effects); urinary retention; glaucoma",
+          "monitoring": "Sedation; anticholinergic effects; discontinue within 72 hours; does not treat underlying cause",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue associated with chronic cerebellar disease; daytime somnolence from medications or disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; may increase to 200 mg daily; take before noon to avoid insomnia",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; history of left ventricular hypertrophy; arrhythmia",
+          "monitoring": "Blood pressure; heart rate; insomnia; headache; may reduce efficacy of hormonal contraceptives",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression and anxiety commonly comorbid with chronic ataxia; does not worsen ataxia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg q1-2 weeks; target 50-150 mg daily; max 200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs (14-day washout); concurrent pimozide",
+          "monitoring": "Suicidality (especially first 4 weeks); serotonin syndrome; GI upset; sexual dysfunction; hyponatremia (elderly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory (Etiology-Specific Treatments)": [
+        {
+          "item": "IV methylprednisolone",
+          "route": "IV",
+          "indication": "Autoimmune cerebellar ataxia (anti-GAD, paraneoplastic); MS cerebellar relapse; acute inflammatory cerebellitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 1 hour; may follow with oral prednisone taper",
+            "orderSentence": "IV methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; GI bleeding; psychosis",
+          "monitoring": "Blood glucose q6h; blood pressure; mood/sleep; GI prophylaxis (PPI); potassium",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin)",
+          "route": "IV",
+          "indication": "Autoimmune cerebellar ataxia (anti-GAD); paraneoplastic cerebellar degeneration; Miller Fisher syndrome (GBS variant with ataxia); post-infectious cerebellitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV for 5 days (total 2 g/kg); infuse slowly — start 0.5 mL/kg/h, increase to max 4 mL/kg/h; premedicate with acetaminophen and diphenhydramine",
+            "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk — check IgA level); severe renal impairment; hypercoagulable state",
+          "monitoring": "Renal function (BMP before and after); headache (aseptic meningitis); thrombotic events; infusion reactions; vital signs during infusion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Plasma exchange (PLEX)",
+          "route": "IV",
+          "indication": "Autoimmune cerebellar ataxia refractory to steroids/IVIG; Miller Fisher syndrome; paraneoplastic cerebellar degeneration (limited benefit once neuronal loss established)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 plasma volumes",
+                "orderSentence": "Plasma exchange (PLEX) 1-1.5 plasma volumes IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement",
+            "orderSentence": "Plasma exchange (PLEX) 1-1.5 plasma volumes IV"
+          },
+          "contraindications": "Hemodynamic instability; active infection; severe coagulopathy",
+          "monitoring": "Electrolytes (calcium, magnesium) q exchange; fibrinogen; blood pressure; line complications; infection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory autoimmune cerebellar ataxia (anti-GAD, other antibody-mediated); gluten ataxia not responding to diet; MS cerebellar involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV on day 0 and day 14; repeat q6 months based on response or CD19/CD20 counts; premedicate with methylprednisolone, acetaminophen, diphenhydramine",
+            "orderSentence": "Rituximab 1000 mg IV"
+          },
+          "contraindications": "Active hepatitis B (check HBsAg, anti-HBc before); active severe infection; severe heart failure",
+          "monitoring": "CBC with differential q3 months; immunoglobulin levels q6 months; hepatitis B reactivation screening; PML risk (rare); infusion reactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for chronic autoimmune cerebellar ataxia; maintenance immunosuppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase to 1000 mg BID after 2 weeks; max 3000 mg/day (rarely needed)",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "contraindications": "Pregnancy (Category D — teratogenic); active infection; hypersensitivity",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs monthly; renal function; GI symptoms (diarrhea, nausea); infections; live vaccines contraindicated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "Alternative steroid-sparing agent for autoimmune cerebellar ataxia; TPMT testing required",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Check TPMT before starting; start 50 mg daily; increase by 25 mg q2 weeks to target 2-2.5 mg/kg/day based on TPMT activity",
+            "orderSentence": "Azathioprine 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (severe myelosuppression); concurrent allopurinol (reduce dose by 75%); pregnancy",
+          "monitoring": "CBC weekly x 4 weeks, then q2 weeks x 3 months, then monthly; LFTs monthly; TPMT genotype/phenotype before starting; infections; lymphoma risk (long-term)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gluten-free diet",
+          "route": "Dietary",
+          "indication": "Gluten ataxia (positive anti-gliadin antibodies); strict adherence required for benefit; improvement may take 6-12 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Gluten-free diet N/A Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Complete elimination of wheat, barley, rye, and cross-contaminated oats; dietitian referral essential; compliance monitoring with repeat anti-gliadin antibodies",
+            "orderSentence": "Gluten-free diet N/A Dietary"
+          },
+          "contraindications": "None",
+          "monitoring": "Anti-gliadin antibody levels q6 months (should decrease with compliance); clinical ataxia scores (SARA, ICARS); nutritional status; B12 and iron",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Coenzyme Q10 (CoQ10)",
+          "route": "PO",
+          "indication": "CoQ10 deficiency (primary cerebellar ataxia responsive to supplementation); may benefit some mitochondrial ataxias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Coenzyme Q10 (CoQ10) 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg BID; increase to 600 mg BID if tolerated and deficiency confirmed; take with fatty meal for absorption; may take months for improvement",
+            "orderSentence": "Coenzyme Q10 (CoQ10) 300 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Clinical ataxia scores; CoQ10 levels if available; GI tolerance; well-tolerated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 supplementation",
+          "route": "IM/PO",
+          "indication": "B12 deficiency causing sensory ataxia (subacute combined degeneration); posterior column disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg",
+                "orderSentence": "Vitamin B12 supplementation 1000 mcg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1000 mcg IM daily x 7 days, then weekly x 4 weeks, then monthly indefinitely; or high-dose oral 1000-2000 mcg daily if absorption adequate",
+            "orderSentence": "Vitamin B12 supplementation 1000 mcg IM"
+          },
+          "contraindications": "None",
+          "monitoring": "B12 level at 2 months; MMA for adequacy of replacement; neurologic exam; CBC (reticulocyte response); sensory exam improvement may take months",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin E supplementation",
+          "route": "PO",
+          "indication": "Vitamin E deficiency ataxia (abetalipoproteinemia, fat malabsorption); treatable cause",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "800 IU",
+                "orderSentence": "Vitamin E supplementation 800 IU PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "800-1200 IU daily; higher doses may be needed in malabsorption syndromes; take with fatty meal",
+            "orderSentence": "Vitamin E supplementation 800 IU PO"
+          },
+          "contraindications": "Caution with anticoagulants (may increase bleeding risk at high doses)",
+          "monitoring": "Vitamin E levels q3 months initially; PT/INR if on anticoagulants; clinical ataxia assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper supplementation",
+          "route": "PO/IV",
+          "indication": "Copper deficiency myelopathy and ataxia (zinc excess, bariatric surgery, malabsorption)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Copper supplementation 2 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "Acute: 2 mg IV daily x 5 days; Maintenance: 2 mg PO daily; remove cause (e.g., stop excess zinc)",
+            "orderSentence": "Copper supplementation 2 mg PO/IV"
+          },
+          "contraindications": "Wilson disease (must be excluded before copper supplementation)",
+          "monitoring": "Serum copper and ceruloplasmin q3 months; zinc levels; CBC (copper deficiency causes anemia, neutropenia); neurologic exam",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Idebenone",
+          "route": "PO",
+          "indication": "Friedreich ataxia — may reduce cardiac hypertrophy; limited evidence for neurological benefit; investigational",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg",
+                "orderSentence": "Idebenone 5 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg/kg TID (typically 150-300 mg TID); take with food; not FDA-approved but used off-label",
+            "orderSentence": "Idebenone 5 mg/kg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Cardiac function (echocardiogram); LFTs; clinical ataxia scores; well-tolerated",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Omaveloxolone (Skyclarys)",
+          "route": "PO",
+          "indication": "Friedreich ataxia — FDA-approved Nrf2 activator; first approved therapy for Friedreich ataxia (2023)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Omaveloxolone (Skyclarys) 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150 mg PO once daily on empty stomach (1 hour before first meal); swallow capsule whole",
+            "orderSentence": "Omaveloxolone (Skyclarys) 150 mg PO"
+          },
+          "contraindications": "Moderate-to-severe hepatic impairment; avoid strong CYP3A4 inhibitors; concurrent hepatotoxic drugs",
+          "monitoring": "LFTs at baseline, monthly x 3 months, then q3 months; BNP (cardiac); weight; clinical ataxia scores (mFARS)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Rituximab (maintenance)",
+          "route": "IV",
+          "indication": "Long-term immunosuppression for autoimmune cerebellar ataxia (anti-GAD, CASPR2, other autoantibodies)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab (maintenance) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV q6 months; adjust interval based on CD19/CD20 B cell counts and clinical response",
+            "orderSentence": "Rituximab (maintenance) 1000 mg IV"
+          },
+          "pretreatment": "HBsAg, anti-HBc, anti-HBs; quantitative immunoglobulins; CBC; LFTs; pregnancy test; vaccination update (live vaccines >4 weeks before)",
+          "contraindications": "Active hepatitis B; active severe infection; pregnancy; severe immunodeficiency",
+          "monitoring": "CD19/CD20 counts before each infusion; immunoglobulin levels q6 months; CBC q3 months; infections; PML screening (JCV risk very low with rituximab)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (maintenance)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance for chronic autoimmune cerebellar ataxia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Mycophenolate mofetil (maintenance) 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg BID; dose adjust based on CBC and GI tolerance",
+            "orderSentence": "Mycophenolate mofetil (maintenance) 1000 mg PO"
+          },
+          "pretreatment": "CBC; LFTs; renal function; pregnancy test (teratogenic); TPMT not required for mycophenolate",
+          "contraindications": "Pregnancy (Category D); active infection; live vaccines",
+          "monitoring": "CBC monthly; LFTs q3 months; renal function q3 months; GI tolerance; infections; malignancy surveillance (skin exam annually)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (maintenance)",
+          "route": "PO",
+          "indication": "Alternative steroid-sparing maintenance for autoimmune cerebellar ataxia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-2.5 mg/kg",
+                "orderSentence": "Azathioprine (maintenance) 2-2.5 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Target 2-2.5 mg/kg/day divided daily or BID; dose based on TPMT activity",
+            "orderSentence": "Azathioprine (maintenance) 2-2.5 mg/kg PO"
+          },
+          "pretreatment": "TPMT genotype/phenotype; CBC; LFTs; renal function",
+          "contraindications": "TPMT deficiency; concurrent allopurinol (dose reduce 75%); pregnancy",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs monthly; infections; lymphoma risk (long-term); annual skin exam",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for ataxia evaluation, localization (cerebellar vs. sensory), and diagnostic workup guidance",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Movement disorders specialist referral for chronic or progressive ataxia requiring specialized evaluation and genetic testing interpretation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stroke neurology consultation if acute cerebellar stroke suspected based on sudden onset, vascular risk factors, or central exam findings",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Physical therapy for gait training, balance exercises, fall prevention, and adaptive strategies for progressive ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for fine motor training, adaptive equipment (weighted utensils, writing aids), and ADL modifications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy for cerebellar dysarthria (scanning speech) evaluation and treatment; swallow evaluation if dysphagia present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling referral when hereditary ataxia (SCA, Friedreich, EA) is confirmed or suspected based on family history or genetic testing results",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral for Friedreich ataxia (cardiomyopathy screening) or MSA-C (autonomic cardiovascular dysfunction)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation for posterior fossa mass lesion, large cerebellar stroke with mass effect, or obstructive hydrocephalus requiring intervention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Oncology referral for paraneoplastic cerebellar degeneration with identified or suspected malignancy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral for depression or anxiety management in chronic progressive ataxia affecting quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dietitian referral for gluten-free diet implementation in gluten ataxia; nutritional assessment in malabsorption-related ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability resources, adaptive equipment funding, home safety assessment, and caregiver support in progressive ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care referral for advanced degenerative ataxia (MSA-C, advanced SCA) for symptom management and goals of care discussion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for sudden worsening of ataxia, new headache, vomiting, or change in consciousness (may indicate stroke or mass lesion requiring emergency treatment)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return immediately for new double vision, slurred speech, weakness, or numbness (may indicate brainstem or cerebellar stroke)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology due to impaired coordination and fall risk affecting vehicle control",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use assistive devices (walker, cane) as recommended by physical therapy to prevent falls and injury",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Remove tripping hazards at home (rugs, clutter, poor lighting) and install grab bars in bathroom to reduce fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop or adjust seizure medications (phenytoin, carbamazepine) without physician guidance as this may cause breakthrough seizures",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol as it worsens cerebellar function and may cause permanent cerebellar damage with chronic use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For gluten ataxia: strictly avoid all wheat, barley, rye, and cross-contaminated products; improvement may take 6-12 months of strict adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a symptom diary tracking episode frequency, duration, and triggers for episodic ataxia to guide treatment optimization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing results may have implications for family members; discuss with genetic counselor before sharing results",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Alcohol cessation to prevent further cerebellar damage and reduce ongoing cerebellar toxicity (alcohol-related cerebellar degeneration primarily affects anterior vermis)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk factors for posterior circulation stroke and overall health improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular exercise program adapted to balance limitations (swimming, stationary bike, seated exercises) to maintain strength and cardiovascular health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention strategies: adequate lighting, non-skid footwear, remove loose rugs, install handrails on both sides of stairs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Strict glycemic control (HbA1c <7%) if diabetic neuropathy contributing to sensory ataxia component",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mediterranean diet for vascular risk reduction in stroke-related ataxia; adequate nutrition in malabsorption-related ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 and folate-rich diet (meat, fish, dairy, leafy greens) to support nerve health and prevent deficiency-related ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight management to reduce joint stress and improve mobility in patients with gait ataxia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and adequate sleep (7-9 hours) as stress and fatigue may worsen ataxia symptoms and trigger episodic ataxia attacks",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medic alert bracelet recommended for patients with episodic ataxia (may appear intoxicated during episodes) or Friedreich ataxia (cardiac risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "**Acute (hours-days)**",
+      "features": "Posterior fossa stroke (cerebellar infarct/hemorrhage), drug toxicity (phenytoin, lithium, alcohol), Wernicke encephalopathy, post-infectious cerebellitis, acute MS relapse, basilar migraine",
+      "tests": "Sudden onset; vascular risk factors (stroke); medication history (toxic); triad of ataxia/ophthalmoplegia/confusion (Wernicke); recent viral illness (post-infectious); prior MS or demyelinating events"
+    },
+    {
+      "diagnosis": "**Subacute (weeks-months)**",
+      "features": "Paraneoplastic cerebellar degeneration, autoimmune (anti-GAD), gluten ataxia, vitamin deficiency (B12, E, thiamine), prion disease (CJD), CNS lymphoma, brain abscess",
+      "tests": "Progressive over weeks; weight loss/smoking (paraneoplastic); GI symptoms (gluten/celiac); dietary history (B12/E); rapid cognitive decline (CJD); fever/immunosuppression (abscess)"
+    },
+    {
+      "diagnosis": "**Chronic (months-years)**",
+      "features": "Hereditary (SCA types, Friedreich, EA, AT), degenerative (MSA-C), alcoholic cerebellar degeneration, chronic drug exposure, idiopathic late-onset cerebellar ataxia",
+      "tests": "Family history (hereditary); progressive over years; autonomic failure (MSA-C); heavy alcohol use history; chronic medication exposure; anterior vermis atrophy on MRI (alcohol)"
+    },
+    {
+      "diagnosis": "**Episodic (discrete attacks)**",
+      "features": "Episodic ataxia type 1 (EA1), episodic ataxia type 2 (EA2), vestibular migraine, TIA (vertebrobasilar), metabolic decompensation",
+      "tests": "Attacks lasting minutes (EA1) or hours (EA2); myokymia between attacks (EA1); nystagmus between attacks (EA2); migraine features; vascular risk factors (TIA)"
+    },
+    {
+      "diagnosis": "**Romberg sign**",
+      "features": "Negative or mildly positive (unsteady with eyes open AND closed)",
+      "tests": "Strongly positive (markedly worse with eyes closed)"
+    },
+    {
+      "diagnosis": "**Proprioception**",
+      "features": "Normal",
+      "tests": "Impaired (loss of vibration and position sense)"
+    },
+    {
+      "diagnosis": "**Deep tendon reflexes**",
+      "features": "Variable (may be normal or decreased)",
+      "tests": "Decreased or absent"
+    },
+    {
+      "diagnosis": "**Dysmetria**",
+      "features": "Present (finger-to-nose, heel-to-shin)",
+      "tests": "Absent or mild"
+    },
+    {
+      "diagnosis": "**Nystagmus**",
+      "features": "Present (gaze-evoked, downbeat, or positional)",
+      "tests": "Absent"
+    },
+    {
+      "diagnosis": "**Dysarthria**",
+      "features": "Scanning/explosive speech",
+      "tests": "Normal speech"
+    },
+    {
+      "diagnosis": "**Gait**",
+      "features": "Wide-based, irregular, cannot tandem walk",
+      "tests": "Wide-based, stamping gait, worse in dark/eyes closed"
+    },
+    {
+      "diagnosis": "**Pseudoathetosis**",
+      "features": "Absent",
+      "tests": "Present (involuntary writhing of outstretched fingers)"
+    },
+    {
+      "diagnosis": "**MRI finding**",
+      "features": "Cerebellar atrophy or lesion",
+      "tests": "Normal cerebellum; may show dorsal column signal change on spine MRI"
+    },
+    {
+      "diagnosis": "**Common causes**",
+      "features": "Stroke, alcohol, SCA, MSA-C, paraneoplastic, autoimmune",
+      "tests": "B12 deficiency, sensory neuropathy, dorsal column lesion, tabes dorsalis, Friedreich ataxia"
+    },
+    {
+      "diagnosis": "**Anterior vermis atrophy**",
+      "features": "Alcohol-related cerebellar degeneration (classic pattern)",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Global cerebellar atrophy**",
+      "features": "SCA types, MSA-C, paraneoplastic",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Hemispheric atrophy (unilateral)**",
+      "features": "Prior stroke; focal lesion; post-radiation",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**Pontocerebellar atrophy**",
+      "features": "MSA-C (hot cross bun sign in pons on MRI); SCA1, SCA2, SCA7",
+      "tests": ""
+    },
+    {
+      "diagnosis": "**No atrophy (early stage)**",
+      "features": "Early paraneoplastic; acute causes; episodic ataxia",
+      "tests": ""
+    },
+    {
+      "diagnosis": "Anti-Yo (PCA-1)",
+      "features": "Ovarian cancer, breast cancer",
+      "tests": "Most common paraneoplastic cerebellar antibody; poor neurological recovery"
+    },
+    {
+      "diagnosis": "Anti-Hu (ANNA-1)",
+      "features": "Small cell lung cancer",
+      "tests": "Often with sensory neuropathy (sensory ataxia + cerebellar)"
+    },
+    {
+      "diagnosis": "Anti-Tr (DNER)",
+      "features": "Hodgkin lymphoma",
+      "tests": "Good neurological recovery if lymphoma treated early"
+    },
+    {
+      "diagnosis": "Anti-mGluR1",
+      "features": "Hodgkin lymphoma",
+      "tests": "Rare; good response to tumor treatment"
+    },
+    {
+      "diagnosis": "Anti-CV2/CRMP5",
+      "features": "Small cell lung cancer, thymoma",
+      "tests": "Mixed neuropathy + cerebellar syndrome"
+    },
+    {
+      "diagnosis": "Anti-VGCC (P/Q type)",
+      "features": "Small cell lung cancer",
+      "tests": "Often with Lambert-Eaton syndrome"
+    },
+    {
+      "diagnosis": "Anti-amphiphysin",
+      "features": "Breast cancer, small cell lung cancer",
+      "tests": "Often with stiff-person spectrum"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Approach to the Patient with Chronic Progressive Ataxia",
+      "evidenceLevel": "[Manto & Marmolino. Cerebellum 2009](https://pubmed.ncbi.nlm.nih.gov/19484583/)",
+      "source": "2009"
+    },
+    {
+      "recommendation": "AAN Practice Parameter: Evaluation of Ataxia",
+      "evidenceLevel": "[Fogel & Perlman. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17438218/)",
+      "source": "2007"
+    },
+    {
+      "recommendation": "European Guidelines for Spinocerebellar Ataxias",
+      "evidenceLevel": "[van de Warrenburg et al. Eur J Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24330321/)",
+      "source": "2014"
+    },
+    {
+      "recommendation": "Treatment of Degenerative Ataxias",
+      "evidenceLevel": "[Zesiewicz et al. Neurology 2018](https://pubmed.ncbi.nlm.nih.gov/29848788/)",
+      "source": "2018"
+    },
+    {
+      "recommendation": "Paraneoplastic cerebellar degeneration — early tumor treatment improves outcomes",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Shams'ili et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12937085/)"
+    },
+    {
+      "recommendation": "Anti-GAD antibodies in autoimmune cerebellar ataxia — high titers (>2000 IU/mL) associated with cerebellar syndrome",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Honnorat et al. Brain 2001](https://pubmed.ncbi.nlm.nih.gov/11157551/)"
+    },
+    {
+      "recommendation": "Gluten ataxia — anti-gliadin antibodies in sporadic ataxia; response to gluten-free diet",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Hadjivassiliou et al. Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9886529/)"
+    },
+    {
+      "recommendation": "Gluten ataxia — most common cause of sporadic ataxia; anti-gliadin prevalence",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Hadjivassiliou et al. Brain 2003](https://pubmed.ncbi.nlm.nih.gov/12615643/)"
+    },
+    {
+      "recommendation": "4-Aminopyridine effective for episodic ataxia type 2 and downbeat nystagmus",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Strupp et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220722/)"
+    },
+    {
+      "recommendation": "Riluzole for cerebellar ataxia — moderate improvement in SARA scores across mixed ataxia etiologies",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Romano et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/26067125/)"
+    },
+    {
+      "recommendation": "Acetazolamide for episodic ataxia type 2 — reduces episode frequency and severity",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Griggs et al. Ann Neurol 1978](https://pubmed.ncbi.nlm.nih.gov/727714/)"
+    },
+    {
+      "recommendation": "Omaveloxolone (Skyclarys) — FDA-approved for Friedreich ataxia; improved mFARS score",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Lynch et al. N Engl J Med 2024](https://pubmed.ncbi.nlm.nih.gov/38354141/)"
+    },
+    {
+      "recommendation": "IVIG for autoimmune cerebellar ataxia (anti-GAD) — case series showing improvement",
+      "evidenceLevel": "Class IV, Level C",
+      "source": "[Arino et al. JAMA Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24934144/)"
+    },
+    {
+      "recommendation": "Friedreich ataxia — natural history and cardiac involvement require surveillance",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Pandolfo. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18852343/)"
+    },
+    {
+      "recommendation": "SARA scale — validated rating scale for cerebellar ataxia assessment and monitoring",
+      "evidenceLevel": "Validation study",
+      "source": "[Schmitz-Hubsch et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16801660/)"
+    },
+    {
+      "recommendation": "Alcohol-related cerebellar degeneration — anterior vermis atrophy pattern; abstinence may halt progression",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Fitzpatrick et al. Eur Radiol 2008](https://pubmed.ncbi.nlm.nih.gov/18175105/)"
+    },
+    {
+      "recommendation": "MSA-C diagnostic criteria and natural history",
+      "evidenceLevel": "Consensus criteria",
+      "source": "[Gilman et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18695389/)"
+    },
+    {
+      "recommendation": "Thiamine replacement for Wernicke encephalopathy — IV thiamine prevents permanent cerebellar damage",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Galvin et al. J Neurol Neurosurg Psychiatry 2010](https://pubmed.ncbi.nlm.nih.gov/20185465/)"
+    },
+    {
+      "recommendation": "Rituximab for autoimmune cerebellar ataxia — emerging evidence for anti-GAD and paraneoplastic",
+      "evidenceLevel": "Class IV, Level C",
+      "source": "[Jarius et al. J Neuroimmunol 2010](https://pubmed.ncbi.nlm.nih.gov/20655592/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (cerebellar signs, gait, coordination)",
+      "frequency": "Each visit; q8h if acute",
+      "action": "Worsening → repeat imaging; reassess diagnosis; adjust treatment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "SARA score (Scale for Assessment and Rating of Ataxia)",
+      "frequency": "Baseline, then q3-6 months",
+      "action": "Progressive worsening → reassess etiology; intensify treatment/rehabilitation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Drug levels (phenytoin, lithium, carbamazepine)",
+      "frequency": "At presentation if on these medications; then per drug monitoring schedule",
+      "action": "Supratherapeutic → dose adjustment; discontinue if persistent cerebellar toxicity",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRI brain",
+      "frequency": "Baseline; repeat at 6-12 months for progressive ataxia; earlier if worsening",
+      "action": "New lesion → reassess diagnosis; progressive atrophy → adjust management",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose (on high-dose steroids)",
+      "frequency": "q6h during IV steroids; QID during oral taper",
+      "action": ">200 → sliding scale insulin; endocrinology if persistent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "CBC (on immunosuppressive therapy)",
+      "frequency": "q2 weeks x 3 months, then monthly (azathioprine/mycophenolate); q3 months (rituximab)",
+      "action": "Cytopenias → hold or reduce immunosuppression; infection evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (on riluzole, immunosuppressants)",
+      "frequency": "Monthly x 3 months, then q3 months (riluzole); monthly (azathioprine/mycophenolate)",
+      "action": "Elevated >3x → reduce dose; >5x → discontinue",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (on immunotherapy, aminopyridine)",
+      "frequency": "At baseline, then q3-6 months",
+      "action": "Declining → adjust renally-cleared medications (aminopyridine, gabapentin, pregabalin)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Immunoglobulin levels (on rituximab)",
+      "frequency": "q6 months",
+      "action": "Low IgG → supplement with IVIG; evaluate infection risk",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Echocardiogram (Friedreich ataxia)",
+      "frequency": "At diagnosis, then annually",
+      "action": "LV hypertrophy or dysfunction → cardiology management; adjust exercise restrictions",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c (Friedreich ataxia)",
+      "frequency": "q6 months",
+      "action": "Elevated → diabetes management; Friedreich ataxia has high rate of glucose intolerance/diabetes",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Anti-gliadin antibodies (gluten ataxia)",
+      "frequency": "q6 months after starting gluten-free diet",
+      "action": "Persistent elevation → assess dietary compliance; dietitian reinforcement",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall risk assessment",
+      "frequency": "Each visit",
+      "action": "Recurrent falls → PT reassessment; home safety evaluation; assistive device upgrade",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "At baseline if dysarthria present; repeat if worsening",
+      "action": "Dysphagia → modified diet; speech therapy; PEG placement if severe (advanced disease)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Clear etiology identified (drug toxicity with drug held, BPPV treated, B12 initiated); stable neurologic exam; safe ambulation (with or without assistive device); able to tolerate oral medications; outpatient follow-up arranged with neurology; no red flags for central cause"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "New subacute ataxia requiring expedited workup (paraneoplastic panel, autoimmune labs, MRI with contrast); acute ataxia with diagnostic uncertainty; intractable nausea/vomiting requiring IV fluids and antiemetics; initiation of IV immunotherapy (steroids, IVIG); unsafe ambulation with high fall risk and inadequate home support"
+    },
+    {
+      "disposition": "**Admit to ICU / Stroke unit**",
+      "criteria": "Acute posterior fossa stroke (cerebellar infarction or hemorrhage); posterior fossa mass with mass effect or hydrocephalus; Wernicke encephalopathy with altered consciousness; basilar artery occlusion; need for emergent neurosurgical intervention (posterior fossa decompression, EVD)"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Posterior fossa stroke or mass requiring neurosurgical capability not available at current facility; need for endovascular intervention (basilar artery thrombectomy); need for specialized neurocritical care"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "Neurology follow-up in 2-4 weeks for chronic ataxia evaluation results; movement disorders follow-up in 4-8 weeks for genetic testing results; PCP within 1-2 weeks for medication adjustment; PT/OT within 1 week for ongoing rehabilitation"
+    }
+  ]
+}

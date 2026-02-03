@@ -7,7 +7,18 @@
     "G40.909 (Epilepsy",
     "unspecified",
     "not intractable",
-    "without status epilepticus)"
+    "without status epilepticus)",
+    "G40.901 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "with status epilepticus)",
+    "G40.309 (Generalized idiopathic epilepsy",
+    "not intractable",
+    "without status epilepticus)",
+    "G40.409 (Other generalized epilepsy",
+    "not intractable",
+    "without status epilepticus)",
+    "R56.1 (Post-traumatic seizures)"
   ],
   "scope": "** Initial evaluation and management of first-time unprovoked seizure or first presentation of seizure activity in adults. Covers immediate stabilization, diagnostic workup to identify etiology, acute treatment, and framework for anti-seizure medication (ASM) initiation. Excludes status epilepticus (see \"Status Epilepticus\" template), pediatric seizures, febrile seizures, and known epilepsy with breakthrough seizures.",
   "notes": [],
@@ -15,7 +26,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "Point-of-care glucose",
+          "item": "Point-of-care glucose (CPT 82962)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -24,7 +35,7 @@
           "target": ">70 mg/dL"
         },
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -33,7 +44,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -42,7 +53,7 @@
           "target": "Normal"
         },
         {
-          "item": "Magnesium",
+          "item": "Magnesium (CPT 83735)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -51,7 +62,7 @@
           "target": ">1.8 mg/dL"
         },
         {
-          "item": "Calcium (ionized if available)",
+          "item": "Calcium, ionized (CPT 82330)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -60,7 +71,7 @@
           "target": "Normal (ionized 4.5-5.3 mg/dL)"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -69,7 +80,7 @@
           "target": "Negative"
         },
         {
-          "item": "Blood alcohol level",
+          "item": "Blood alcohol level (CPT 80320)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -78,7 +89,7 @@
           "target": "Correlate with history"
         },
         {
-          "item": "Urinalysis",
+          "item": "Urinalysis (CPT 81003)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -96,7 +107,7 @@
           "target": "Elevated 2-3Ã— baseline (if drawn <20 min)"
         },
         {
-          "item": "Phosphorus",
+          "item": "Phosphorus (CPT 84100)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -105,9 +116,9 @@
           "target": ">2.5 mg/dL"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -116,7 +127,7 @@
           "target": "Normal"
         },
         {
-          "item": "Ammonia",
+          "item": "Ammonia (CPT 82140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -125,7 +136,7 @@
           "target": "Normal (<35 Î¼mol/L)"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -134,7 +145,7 @@
           "target": "Negative"
         },
         {
-          "item": "ECG",
+          "item": "ECG (CPT 93000)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -143,7 +154,7 @@
           "target": "Normal"
         },
         {
-          "item": "Lactate",
+          "item": "Lactate (CPT 83605)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -152,7 +163,7 @@
           "target": "Mild elevation acceptable post-ictal"
         },
         {
-          "item": "Blood gas (ABG or VBG)",
+          "item": "Blood gas (ABG or VBG) (CPT 82803)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -161,7 +172,7 @@
           "target": "Normal or mild post-ictal acidosis"
         },
         {
-          "item": "Serum osmolality",
+          "item": "Serum osmolality (CPT 83930)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -179,7 +190,7 @@
           "target": "Negative (or explains eclampsia if positive)"
         },
         {
-          "item": "B12 level",
+          "item": "B12 level (CPT 82607)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -188,7 +199,7 @@
           "target": "Normal (>300 pg/mL)"
         },
         {
-          "item": "Folate level",
+          "item": "Folate level (CPT 82746)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -197,7 +208,7 @@
           "target": "Normal"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Serum/urine toxicology (expanded panel)",
           "ED": "URGENT",
@@ -226,7 +237,7 @@
           "target": "Normal"
         },
         {
-          "item": "HIV",
+          "item": "HIV (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -235,7 +246,7 @@
           "target": "Negative"
         },
         {
-          "item": "RPR/VDRL",
+          "item": "RPR/VDRL (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -290,7 +301,7 @@
           "target": "10-20 cm H2O"
         },
         {
-          "item": "Cell count (tubes 1 and 4)",
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -298,7 +309,7 @@
           "target": "WBC <5; RBC 0"
         },
         {
-          "item": "Protein",
+          "item": "Protein (CPT 84157)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -306,7 +317,7 @@
           "target": "15-45 mg/dL"
         },
         {
-          "item": "Glucose with serum glucose",
+          "item": "Glucose with serum glucose (CPT 82945)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -314,7 +325,7 @@
           "target": ">60% serum"
         },
         {
-          "item": "Gram stain and culture",
+          "item": "Gram stain and culture (CPT 87205, 87070)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -322,7 +333,7 @@
           "target": "No organisms"
         },
         {
-          "item": "BioFire FilmArray ME Panel",
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -330,7 +341,7 @@
           "target": "Negative"
         },
         {
-          "item": "HSV-1/2 PCR",
+          "item": "HSV-1/2 PCR (CPT 87529)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -346,7 +357,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cytology",
+          "item": "Cytology (CPT 88104)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -362,7 +373,7 @@
           "target": "Negative"
         },
         {
-          "item": "Oligoclonal bands",
+          "item": "Oligoclonal bands (CPT 83916)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -374,7 +385,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -384,7 +395,7 @@
           "contraindications": "Pregnancy (relative - benefit usually outweighs risk)"
         },
         {
-          "item": "MRI brain with and without contrast (epilepsy protocol)*",
+          "item": "MRI brain with and without contrast (epilepsy protocol)* (CPT 70553)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -394,7 +405,7 @@
           "contraindications": "GFR <30, gadolinium allergy, pacemaker"
         },
         {
-          "item": "EEG (routine)",
+          "item": "EEG (routine) (CPT 95816)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -406,7 +417,7 @@
       ],
       "Extended": [
         {
-          "item": "Continuous EEG (cEEG) monitoring",
+          "item": "Continuous EEG (cEEG) monitoring (CPT 95700)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -446,7 +457,7 @@
           "contraindications": "Same as MRI"
         },
         {
-          "item": "CT angiography head",
+          "item": "CT angiography head (CPT 70496)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -456,7 +467,7 @@
           "contraindications": "Contrast allergy, renal insufficiency"
         },
         {
-          "item": "Echocardiogram",
+          "item": "Echocardiogram (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -466,7 +477,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -532,19 +543,19 @@
     "Treatment": {
       "Acute/Emergent": [
         {
-          "item": "Lorazepam IV/IM (if actively seizing)",
+          "item": "Lorazepam IV/IM (if actively seizing) (CPT 96374)",
           "route": "IM",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.1 mg/kg",
-                "orderSentence": "Lorazepam IV/IM (if actively seizing) 0.1 mg/kg IV"
+                "orderSentence": "Lorazepam IV/IM (if actively seizing) (CPT 96374) 0.1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.1 mg/kg IV (max 4 mg); may repeat once in 5 min",
-            "orderSentence": "Lorazepam IV/IM (if actively seizing) 0.1 mg/kg IV"
+            "orderSentence": "Lorazepam IV/IM (if actively seizing) (CPT 96374) 0.1 mg/kg IV"
           },
           "contraindications": "Respiratory depression, severe hypotension",
           "monitoring": "RR, O2 sat, BP; have airway equipment ready",
@@ -696,19 +707,19 @@
       ],
       "Anti-Seizure Medications (ASMs) - Acute Loading": [
         {
-          "item": "Levetiracetam IV",
+          "item": "Levetiracetam IV (CPT 96365)",
           "route": "IV",
           "indication": "First-line acute loading",
           "dosing": {
             "doseOptions": [
               {
                 "text": "40-60 mg/kg",
-                "orderSentence": "Levetiracetam IV 40-60 mg/kg IV"
+                "orderSentence": "Levetiracetam IV (CPT 96365) 40-60 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV",
-            "orderSentence": "Levetiracetam IV 40-60 mg/kg IV"
+            "orderSentence": "Levetiracetam IV (CPT 96365) 40-60 mg/kg IV"
           },
           "contraindications": "None significant; reduce dose if CrCl <50",
           "monitoring": "Somnolence, agitation (rare)",

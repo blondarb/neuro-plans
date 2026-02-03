@@ -1,0 +1,1767 @@
+{
+  "id": "myotonic-dystrophy",
+  "title": "Myotonic Dystrophy",
+  "version": "1.1",
+  "icd10": [
+    "** G71.11 (Myotonic muscular dystrophy",
+    "type 1 -- DM1/Steinert disease)",
+    "G71.12 (Myotonic muscular dystrophy",
+    "type 2 -- DM2/PROMM)",
+    "G71.19 (Other specified myotonic disorders)"
+  ],
+  "scope": "** Evaluation and management of myotonic dystrophy type 1 (DM1) and type 2 (DM2) across care settings. Includes diagnostic workup, genetic testing, multisystem assessment (cardiac, respiratory, endocrine, GI, ophthalmologic), symptomatic management of myotonia, and chronic disease monitoring. Covers anesthesia precautions and genetic counseling. Excludes congenital myotonic dystrophy (CDM -- pediatric onset), non-dystrophic myotonias (myotonia congenita, paramyotonia congenita -- see separate plans), and other muscular dystrophies (FSHD, LGMD -- see separate plans).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Creatine kinase (CK) (CPT 82550)",
+          "rationale": "Muscle enzyme; typically mildly elevated in DM1 (1-3x ULN) and normal to mildly elevated in DM2; aids in distinguishing from inflammatory myopathies",
+          "target": "Normal (30-200 U/L); expect mild elevation (200-600 U/L in DM1; often normal in DM2)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function baseline; hepatic function; AST/ALT may be mildly elevated from muscle source; glucose assessment given diabetes risk",
+          "target": "Normal; mildly elevated AST/ALT may reflect muscle origin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline blood counts; infection screen if presenting acutely; IgG deficiency and immunologic abnormalities occur in DM1",
+          "target": "Normal; mild leukopenia possible",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "rationale": "Insulin resistance and diabetes mellitus are common in DM1 (25-75%); screening essential for multisystem management",
+          "target": "Normal (<100 mg/dL); impaired fasting glucose or diabetes common",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes screening and monitoring; insulin resistance frequent in DM1; less common in DM2",
+          "target": "<5.7% normal; 5.7-6.4% prediabetes; >=6.5% diabetes",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction (hypothyroidism) occurs in myotonic dystrophy; contributes to fatigue and weakness",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "rationale": "Complement TSH if abnormal; hypothyroidism common in DM1",
+          "target": "Normal (0.8-1.8 ng/dL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Liver function tests (ALT, AST, ALP, bilirubin, albumin) (CPT 80076)",
+          "rationale": "Hepatic involvement in DM1; fatty liver and elevated GGT common; baseline before hepatotoxic medications",
+          "target": "Normal; mildly elevated GGT and ALT common in DM1",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia can exacerbate cardiac conduction abnormalities and myotonia",
+          "target": "Normal (1.7-2.2 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium (CPT 82310)",
+          "rationale": "Hypocalcemia/hypercalcemia can affect myotonia and cardiac conduction",
+          "target": "Normal (8.5-10.5 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "rationale": "Dyslipidemia screening; metabolic syndrome common in DM1",
+          "target": "Total cholesterol <200; LDL <130; triglycerides <150",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis (CPT 81001)",
+          "rationale": "Baseline renal assessment; screen for myoglobinuria if acute presentation",
+          "target": "Normal; no myoglobin",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Genetic testing: DMPK gene CTG repeat expansion (DM1) (CPT 81401)",
+          "rationale": "Definitive diagnosis of DM1; CTG trinucleotide repeat expansion on chromosome 19q13.3; normal <37 repeats; DM1 = 50 to >2000 repeats; repeat length correlates with severity and age of onset",
+          "target": "Normal <37 CTG repeats; mild DM1 50-150; classic DM1 100-1000; congenital DM1 >1000",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing: CNBP (ZNF9) gene CCTG repeat expansion (DM2) (CPT 81401)",
+          "rationale": "Definitive diagnosis of DM2; CCTG tetranucleotide repeat expansion on chromosome 3q21.3; normal <26 repeats; DM2 = 75 to >11,000 repeats; no clear genotype-phenotype correlation",
+          "target": "Normal <26 CCTG repeats; DM2 typically 75 to >11,000 repeats",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone (total and free) (CPT 84402, 84403)",
+          "rationale": "Hypogonadism common in DM1 males (60-80%); testicular atrophy; contributes to fatigue, reduced muscle mass, erectile dysfunction",
+          "target": "Normal male: total 300-1000 ng/dL; expect low or low-normal in DM1",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FSH, LH (CPT 83001, 83002)",
+          "rationale": "Evaluate hypogonadal axis; primary vs secondary hypogonadism in DM1",
+          "target": "Normal or elevated FSH/LH (primary hypogonadism pattern in DM1)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Estradiol (CPT 82670)",
+          "rationale": "Evaluate gonadal function in females with DM1; menstrual irregularities and early menopause",
+          "target": "Normal for age and menstrual phase",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting insulin (CPT 83525)",
+          "rationale": "Insulin resistance assessment; hyperinsulinemia precedes overt diabetes in DM1",
+          "target": "Normal (<25 mIU/L fasting); elevated insulin with normal glucose suggests insulin resistance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunoglobulin levels (IgG, IgA, IgM) (CPT 82784, 82787)",
+          "rationale": "Hypogammaglobulinemia (especially IgG) occurs in DM1; increased infection susceptibility",
+          "target": "Normal IgG (700-1600 mg/dL); low IgG may explain recurrent infections",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "GGT (CPT 82977)",
+          "rationale": "Elevated in DM1 even without alcohol use; marker of hepatic involvement; distinguish from alcohol-related elevation",
+          "target": "Normal (<60 U/L); expect mild-moderate elevation in DM1",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D (25-OH) (CPT 82306)",
+          "rationale": "Deficiency common; worsens weakness and fall risk; important for bone health in patients with limited mobility",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Iron studies (ferritin, TIBC, serum iron) (CPT 82728, 83550, 83540)",
+          "rationale": "Fatigue evaluation; iron deficiency common cause of fatigue superimposed on DM-related fatigue",
+          "target": "Normal ferritin (30-300 ng/mL); normal iron and TIBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "rationale": "Coagulation baseline if muscle biopsy needed or pre-procedural",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Myotonia-specific genetic panel (expanded)",
+          "rationale": "If DM1 and DM2 testing negative; includes CLCN1 (myotonia congenita), SCN4A (paramyotonia congenita, sodium channel myotonia), KCNJ2 (Andersen-Tawil)",
+          "target": "Negative for DM1/DM2 mutations; may identify non-dystrophic myotonia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Myositis-specific antibody panel (CPT 86235)",
+          "rationale": "If inflammatory myopathy in differential; elevated CK with proximal weakness and unclear genetic testing",
+          "target": "Negative; positive suggests alternative diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acid alpha-glucosidase activity (dried blood spot) (CPT 82657)",
+          "rationale": "Late-onset Pompe disease in differential if proximal weakness and respiratory insufficiency without myotonia",
+          "target": "Normal enzyme activity; reduced suggests Pompe disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "BNP or NT-proBNP (CPT 83880)",
+          "rationale": "Cardiac involvement assessment; heart failure screening in symptomatic DM1 patients",
+          "target": "Normal BNP (<100 pg/mL); elevated suggests cardiac dysfunction",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Acute cardiac injury evaluation if presenting with chest pain or arrhythmia",
+          "target": "Normal; elevated suggests myocardial injury",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sleep study referral labs: ABG or SpO2 (CPT 82803)",
+          "rationale": "Respiratory assessment if hypoventilation or excessive daytime somnolence suspected",
+          "target": "Normal PaCO2 (35-45 mmHg); SpO2 >95%; elevated PaCO2 suggests hypoventilation",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "At presentation and annually; critical for cardiac conduction abnormality screening (leading cause of sudden death in DM1)",
+          "target": "Normal sinus rhythm; look for first-degree AV block (PR >200ms), bundle branch block, QTc prolongation, atrial flutter/fibrillation; any conduction abnormality requires cardiology referral",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EMG/NCS (CPT 95886, 95907-95913)",
+          "timing": "During initial workup; essential for diagnosis",
+          "target": "Myotonic discharges (waxing-and-waning \"dive bomber\" sound); myopathic MUAPs (short duration, low amplitude, early recruitment); fibrillations and positive sharp waves; NCS usually normal",
+          "contraindications": "None significant; avoid anticoagulated limbs for needle EMG",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral) (CPT 71046)",
+          "timing": "At presentation; baseline; respiratory assessment",
+          "target": "Baseline lung fields; elevated hemidiaphragm suggests diaphragmatic weakness; aspiration pneumonia",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Slit-lamp ophthalmologic exam",
+          "timing": "Within first 3 months of diagnosis; annual thereafter",
+          "target": "Posterior subcapsular cataracts (iridescent \"Christmas tree\" cataracts pathognomonic for DM1); found in >90% of DM1 and common in DM2",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "24-hour Holter monitor (CPT 93224)",
+          "timing": "At diagnosis and annually; more frequently if symptomatic or conduction abnormality on ECG",
+          "target": "Normal rhythm; detect intermittent AV block, atrial fibrillation/flutter, ventricular tachycardia, prolonged pauses (>2.5 sec); DM1 patients at risk for sudden cardiac death",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "timing": "At diagnosis; repeat if symptoms or ECG changes",
+          "target": "Normal LV function (EF >55%); assess for LV systolic dysfunction, diastolic dysfunction, mitral valve prolapse (common in DM1); wall motion abnormalities",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pulmonary function tests (PFTs) with DLCO (CPT 94010, 94729)",
+          "timing": "At diagnosis and annually; essential for respiratory monitoring",
+          "target": "FVC >80% predicted; restrictive pattern (reduced FVC, normal FEV1/FVC ratio); MIP/MEP reduced (respiratory muscle weakness); DLCO usually normal",
+          "contraindications": "Unable to cooperate; active pneumothorax",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maximum inspiratory pressure (MIP) and maximum expiratory pressure (MEP) (CPT 94750)",
+          "timing": "At diagnosis and annually; sensitive for respiratory muscle weakness",
+          "target": "MIP >60 cm H2O; MEP >40 cm H2O; reduced values indicate diaphragmatic and respiratory muscle weakness requiring intervention",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polysomnography (sleep study) (CPT 95810)",
+          "timing": "If excessive daytime somnolence (very common in DM1), snoring, or FVC <70% predicted",
+          "target": "No obstructive or central sleep apnea; DM1 patients frequently have OSA, central apnea, and/or sleep-disordered breathing; AHI <5 normal",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain (with and without contrast) (CPT 70553)",
+          "timing": "If cognitive decline, behavioral changes, or excessive somnolence beyond expected for DM1",
+          "target": "White matter hyperintensities (common in DM1); temporal lobe atrophy; cerebral atrophy; assess for extent of CNS involvement",
+          "contraindications": "Pacemaker (relative), metallic implants, severe claustrophobia, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Modified barium swallow study (MBSS) (CPT 74230)",
+          "timing": "If dysphagia symptoms present; oropharyngeal weakness common in DM1",
+          "target": "Normal swallow mechanics; DM1 may show delayed pharyngeal transit, vallecular residue, aspiration or penetration",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI thighs (bilateral, with and without contrast) (CPT 73721)",
+          "timing": "For disease monitoring or if diagnosis uncertain; assess muscle involvement pattern",
+          "target": "DM1: preferential fatty infiltration of medial gastrocnemius, soleus, tibialis anterior (distal > proximal); DM2: preferential involvement of hip flexors, hip extensors, quadriceps (proximal > distal)",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Cardiac MRI (CPT 75561)",
+          "timing": "If echocardiogram abnormal or high clinical suspicion for myocardial fibrosis; risk stratification for sudden cardiac death",
+          "target": "Normal myocardium; late gadolinium enhancement indicates fibrosis/scarring (predictor of arrhythmia risk); assess LV function",
+          "contraindications": "Pacemaker (relative -- MRI-conditional devices acceptable), metallic implants, GFR <30 (gadolinium)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Electrophysiology study (EPS) (CPT 93620)",
+          "timing": "If syncope, near-syncope, or significant conduction abnormalities; risk stratification for sudden cardiac death",
+          "target": "Normal conduction intervals; prolonged HV interval (>70ms) predicts high-degree AV block risk and may warrant pacemaker/ICD",
+          "contraindications": "Active infection; coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Muscle biopsy (CPT 20200)",
+          "timing": "Only if genetic testing inconclusive and diagnosis uncertain; rarely needed given availability of genetic testing",
+          "target": "DM1: increased central nuclei, type 1 fiber atrophy, ring fibers, sarcoplasmic masses, pyknotic nuclear clumps; DM2: type 2 fiber atrophy (distinguishing feature), nuclear clumps",
+          "contraindications": "Coagulopathy; anticoagulation (hold); infection at site",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132)",
+          "timing": "If cognitive concerns or behavioral changes; DM1 frequently involves CNS (executive dysfunction, apathy, visuospatial deficits)",
+          "target": "Normal for age; DM1 patients often show executive dysfunction, reduced processing speed, apathy, attention deficits, reduced motivation; DM2 milder cognitive involvement",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastric emptying study (CPT 78264)",
+          "timing": "If gastroparesis symptoms (nausea, bloating, early satiety, vomiting); GI dysmotility common in DM1",
+          "target": "Normal gastric emptying (>90% at 4 hours); delayed emptying indicates gastroparesis",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV fluids (normal saline)",
+          "route": "IV",
+          "indication": "Dehydration; fall-related injury; rhabdomyolysis (rare); aspiration pneumonia hydration support",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mL/h",
+                "orderSentence": "IV fluids (normal saline) 125 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "125-250 mL/h NS for hydration; increase rate if CK significantly elevated; monitor for heart failure given cardiac involvement in DM",
+            "orderSentence": "IV fluids (normal saline) 125 mL/h IV"
+          },
+          "contraindications": "Heart failure; volume overload (common cardiac comorbidity in DM1)",
+          "monitoring": "Urine output; electrolytes; fluid balance; cardiac status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Pain management for fall-related injuries; myalgia; headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650 mg",
+                "orderSentence": "Acetaminophen 650 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN pain; max 4 g/day (2 g/day if hepatic impairment -- liver involvement common in DM1)",
+            "orderSentence": "Acetaminophen 650 mg PO"
+          },
+          "contraindications": "Severe liver disease; hepatic impairment (reduce dose -- GGT/ALT often elevated in DM1)",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspiration pneumonia treatment: Ampicillin-sulbactam",
+          "route": "IV",
+          "indication": "Aspiration pneumonia from DM1-related dysphagia and oropharyngeal weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 g",
+                "orderSentence": "Aspiration pneumonia treatment: Ampicillin-sulbactam 3 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3 g (ampicillin 2 g / sulbactam 1 g) IV q6h; duration 5-7 days; transition to oral amoxicillin-clavulanate when clinically improving",
+            "orderSentence": "Aspiration pneumonia treatment: Ampicillin-sulbactam 3 g IV"
+          },
+          "contraindications": "Penicillin allergy; severe hepatic impairment",
+          "monitoring": "Temperature; WBC; chest X-ray improvement; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative)",
+          "route": "IV",
+          "indication": "Aspiration pneumonia in penicillin-allergic patients with DM-related dysphagia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative) 600 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "600-900 mg IV q8h; duration 5-7 days; transition to oral clindamycin 300-450 mg q6h when improving",
+            "orderSentence": "Aspiration pneumonia treatment: Clindamycin (penicillin allergy alternative) 600 mg IV"
+          },
+          "contraindications": "Clindamycin hypersensitivity; C. difficile history (relative -- GI dysmotility in DM increases risk)",
+          "monitoring": "C. difficile monitoring; LFTs; diarrhea (GI dysmotility already present)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "VTE prevention in immobilized patients admitted with fall-related injuries or acute deconditioning",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start on admission if immobile; hold if active bleeding",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding; platelets <50K; CrCl <30 (use UFH)",
+          "monitoring": "Platelets q3 days; anti-Xa if renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "DVT prophylaxis: Heparin SC (alternative)",
+          "route": "SC",
+          "indication": "VTE prevention if enoxaparin contraindicated (CrCl <30)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8-12h",
+            "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+          },
+          "contraindications": "Active bleeding; HIT history",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "First-line treatment for symptomatic myotonia (grip myotonia, jaw myotonia, difficulty releasing objects); sodium channel blocker that reduces myotonic stiffness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Mexiletine 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg PO BID; increase to 150 mg TID after 1-2 weeks; may increase to 200 mg TID; max 900 mg/day; take with food to reduce GI side effects",
+            "orderSentence": "Mexiletine 150 mg PO"
+          },
+          "contraindications": "Second- or third-degree AV block (without pacemaker); cardiogenic shock; hepatic impairment; QTc prolongation; CRITICAL: obtain ECG before starting -- cardiac conduction disease common in DM1",
+          "monitoring": "ECG at baseline and 1-2 weeks after dose changes; LFTs q6-12 months; CBC; heart rate; GI tolerance; cardiac symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Excessive daytime somnolence (EDS) and central hypersomnia in DM1 (CNS-mediated, not solely from sleep apnea); improves alertness and quality of life",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO every morning; may increase to 200 mg daily after 1-2 weeks; max 400 mg/day; avoid afternoon dosing to prevent insomnia",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; cardiac arrhythmia (common in DM1 -- use with caution)",
+          "monitoring": "BP; heart rate; mood; insomnia; hepatic function; cardiac rhythm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Armodafinil",
+          "route": "PO",
+          "indication": "Excessive daytime somnolence in DM1 if modafinil not tolerated; R-enantiomer with longer half-life",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Armodafinil 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg PO every morning; may increase to 250 mg daily; avoid afternoon dosing",
+            "orderSentence": "Armodafinil 150 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; cardiac arrhythmia",
+          "monitoring": "BP; heart rate; mood; insomnia; hepatic function; cardiac rhythm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Excessive daytime somnolence refractory to modafinil; also helps apathy and cognitive sluggishness in DM1",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID (morning and noon); increase by 5-10 mg/day weekly; max 60 mg/day; avoid evening dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; severe hypertension; glaucoma; agitation; concurrent MAOI; tics/Tourette",
+          "monitoring": "BP; heart rate; ECG at baseline (cardiac conduction disease in DM1); appetite; weight; sleep; mood",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CPAP or BiPAP",
+          "route": "Device",
+          "indication": "Obstructive sleep apnea (OSA) and/or central hypoventilation from respiratory muscle weakness; very common in DM1",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "CPAP or BiPAP N/A Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "Titrate via sleep study; CPAP for OSA; BiPAP (with backup rate) preferred if central apnea or respiratory muscle weakness (FVC <60% predicted); use nightly",
+            "orderSentence": "CPAP or BiPAP N/A Device"
+          },
+          "contraindications": "Intolerance (mask fitting, claustrophobia); pneumothorax",
+          "monitoring": "Compliance monitoring; repeat sleep study after titration; overnight oximetry; PaCO2 if hypoventilation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Metformin",
+          "route": "PO",
+          "indication": "Insulin resistance and type 2 diabetes mellitus in DM1; first-line oral hypoglycemic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Metformin 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO daily with meals; increase by 500 mg weekly; target 1000 mg BID; max 2550 mg/day; take with food",
+            "orderSentence": "Metformin 500 mg PO"
+          },
+          "contraindications": "eGFR <30; metabolic acidosis; acute illness with risk of lactic acidosis; hold for contrast procedures",
+          "monitoring": "HbA1c q3 months; renal function q6-12 months; B12 annually (long-term use); lactic acidosis symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levothyroxine",
+          "route": "PO",
+          "indication": "Hypothyroidism treatment in DM1 patients with confirmed thyroid dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mcg",
+                "orderSentence": "Levothyroxine 25 mcg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mcg PO daily (lower dose in elderly or cardiac disease); titrate by 12.5-25 mcg q6-8 weeks based on TSH; take on empty stomach 30-60 min before breakfast",
+            "orderSentence": "Levothyroxine 25 mcg PO"
+          },
+          "contraindications": "Untreated adrenal insufficiency; acute MI; thyrotoxicosis",
+          "monitoring": "TSH q6-8 weeks during titration; then q6-12 months when stable; heart rate; cardiac symptoms (arrhythmia risk in DM1)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain or painful cramps; concurrent peripheral neuropathy in older DM patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg PO qHS; increase by 300 mg/day every 3-5 days; target 900-1800 mg/day divided TID; max 3600 mg/day; reduce dose if CrCl <60",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); respiratory depression risk (caution in DM1 with respiratory muscle weakness)",
+          "monitoring": "Sedation; dizziness; fall risk; respiratory status; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain or muscle cramps if gabapentin not tolerated; concurrent pain conditions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg PO BID; may increase to 150 mg BID after 1 week; max 300 mg BID; reduce dose if CrCl <60",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history; respiratory depression risk (caution in DM1)",
+          "monitoring": "Sedation; dizziness; fall risk; respiratory status; peripheral edema; weight gain; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression and anxiety (common comorbidities in chronic progressive neuromuscular disease; adjustment disorder)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO daily; increase to 50 mg after 1 week; may titrate by 25-50 mg q2-4 weeks; max 200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs (14-day washout); concurrent pimozide",
+          "monitoring": "Suicidality monitoring (first 4 weeks); serotonin syndrome; hyponatremia (SIADH); QTc if high dose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression and anxiety in DM patients; alternative to sertraline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; increase to 10 mg after 1 week; max 20 mg/day (10 mg in age >65 per FDA)",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation (particularly relevant given cardiac conduction risk in DM1)",
+          "monitoring": "QTc monitoring (essential in DM1); hyponatremia; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation prevention (GI dysmotility common in DM1; reduced activity; smooth muscle involvement)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation (GI dysmotility from smooth muscle involvement in DM1; reduced physical activity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz liquid PO daily; adjust frequency based on response",
+            "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
+          },
+          "contraindications": "GI obstruction; bowel perforation",
+          "monitoring": "Bowel function; hydration status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "PO",
+          "indication": "Gastroparesis and GI dysmotility in DM1; promotes gastric emptying",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Metoclopramide 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg PO 30 minutes before meals and at bedtime; max 40 mg/day; limit use to <12 weeks due to tardive dyskinesia risk",
+            "orderSentence": "Metoclopramide 5 mg PO"
+          },
+          "contraindications": "Parkinsonian symptoms; seizure disorder; GI obstruction; pheochromocytoma; concurrent use of drugs causing EPS",
+          "monitoring": "Tardive dyskinesia (limit duration); EPS; prolactin elevation; QTc prolongation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia (sleep disruption common in DM1 from central mechanisms, pain, and respiratory issues)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg PO qHS; may increase to 100 mg qHS; max 200 mg for insomnia",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation (cardiac conduction disease in DM1)",
+          "monitoring": "Sedation; orthostatic hypotension (fall risk); QTc monitoring; priapism (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone cypionate (males)",
+          "route": "IM",
+          "indication": "Symptomatic hypogonadism in DM1 males (fatigue, reduced libido, muscle wasting, osteoporosis); confirmed by low testosterone levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Testosterone cypionate (males) 200 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Testosterone cypionate 200 mg IM q2 weeks; adjust dose based on trough levels; target total testosterone 400-700 ng/dL",
+            "orderSentence": "Testosterone cypionate (males) 200 mg IM"
+          },
+          "contraindications": "Prostate cancer; breast cancer; polycythemia (Hct >54%); severe BPH; untreated sleep apnea (caution -- OSA common in DM1)",
+          "monitoring": "PSA and DRE at baseline and annually; hematocrit q3-6 months (polycythemia risk); testosterone trough levels; lipids; LFTs; bone density; sleep apnea symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone gel 1% (males)",
+          "route": "TOP",
+          "indication": "Symptomatic hypogonadism in DM1 males (fatigue, reduced libido, muscle wasting, osteoporosis); alternative to IM injection; confirmed by low testosterone levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Testosterone gel 1% (males) 50 mg TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Testosterone gel 1% (50 mg) applied topically to shoulders/upper arms daily; avoid skin-to-skin transfer; adjust dose based on testosterone levels",
+            "orderSentence": "Testosterone gel 1% (males) 50 mg TOP"
+          },
+          "contraindications": "Prostate cancer; breast cancer; polycythemia (Hct >54%); severe BPH; untreated sleep apnea (caution -- OSA common in DM1); skin-to-skin transfer risk to women/children",
+          "monitoring": "PSA and DRE at baseline and annually; hematocrit q3-6 months (polycythemia risk); testosterone levels; lipids; LFTs; bone density; sleep apnea symptoms; application site reactions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium carbonate + Vitamin D",
+          "route": "PO",
+          "indication": "Bone health in DM patients at fall risk; vitamin D deficiency common and worsens muscle weakness; osteoporosis prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg Ca + 1000 IU D",
+                "orderSentence": "Calcium carbonate + Vitamin D 1000 mg Ca + 1000 IU D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 1000-2000 IU PO daily; higher vitamin D doses if deficient (50,000 IU weekly x 8 weeks then maintenance)",
+            "orderSentence": "Calcium carbonate + Vitamin D 1000 mg Ca + 1000 IU D PO"
+          },
+          "contraindications": "Hypercalcemia; hyperparathyroidism; renal stones (relative)",
+          "monitoring": "Serum calcium; vitamin D level q3-6 months until replete; then annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Second-line for myotonia if mexiletine not tolerated or contraindicated; sodium channel blocker",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO BID; increase by 100-200 mg/week; target 400-600 mg/day divided BID-TID; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "AV block (without pacemaker); bone marrow suppression; concurrent use with MAOIs; HLA-B*1502 positive (Stevens-Johnson risk in Southeast Asian descent)",
+          "monitoring": "CBC q2-4 weeks x 3 months then q3-6 months (agranulocytosis risk); LFTs; sodium (hyponatremia common); carbamazepine level (therapeutic 4-12 mcg/mL); ECG (cardiac conduction in DM1)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Phenytoin",
+          "route": "PO",
+          "indication": "Second-line for myotonia if mexiletine and carbamazepine not tolerated; sodium channel blocker with antimyotonic properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Phenytoin 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO TID; adjust based on levels; target level 10-20 mcg/mL; extended-release: 200-300 mg daily",
+            "orderSentence": "Phenytoin 100 mg PO"
+          },
+          "contraindications": "AV block (without pacemaker); hypersensitivity; porphyria; cardiac conduction disease in DM1 (use with extreme caution)",
+          "monitoring": "Phenytoin level (therapeutic 10-20 mcg/mL); CBC; LFTs; calcium/vitamin D (chronic use depletes); ECG; gingival health; drug interactions (potent enzyme inducer)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "Alternative for myotonia refractory to mexiletine; limited evidence but sodium channel blocking mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Lamotrigine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO daily x 2 weeks; then 50 mg daily x 2 weeks; then 100 mg daily; max 200-400 mg/day divided BID; SLOW titration to avoid SJS/TEN",
+            "orderSentence": "Lamotrigine 25 mg PO"
+          },
+          "contraindications": "Hypersensitivity; concurrent valproate (halve dose due to interaction); rash history with AEDs",
+          "monitoring": "Rash (Stevens-Johnson/TEN risk -- educate patient to stop immediately if rash develops); LFTs; renal function; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Myotonia refractory to first-line agents; may improve myotonia through carbonic anhydrase inhibition; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg PO BID; may increase to 250 mg TID; max 1000 mg/day",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Severe hepatic or renal impairment; sulfonamide allergy; hyponatremia; hypokalemia; adrenal insufficiency",
+          "monitoring": "Electrolytes (hypokalemia, metabolic acidosis); renal function; paresthesias (common, benign); renal stones risk; CBC",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Pacemaker or ICD implantation",
+          "route": "Procedure",
+          "indication": "Cardiac conduction disease with symptomatic bradycardia, high-degree AV block, prolonged HV interval (>70 ms), or ventricular arrhythmia; lower threshold for device in DM1 given progressive conduction disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Pacemaker or ICD implantation N/A Procedure"
+              }
+            ],
+            "route": "Procedure",
+            "instructions": "Pacemaker for symptomatic bradycardia or high-degree AV block; ICD if sustained VT, VF, or high-risk features; cardiology-driven decision with lower threshold than general population given progressive conduction disease in DM1",
+            "orderSentence": "Pacemaker or ICD implantation N/A Procedure"
+          },
+          "contraindications": "Active infection; coagulopathy; patient refusal",
+          "monitoring": "Device interrogation q6-12 months; remote monitoring preferred; ECG annually; continued Holter monitoring as needed",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cataract surgery (phacoemulsification)",
+          "route": "Surgical",
+          "indication": "Visually significant posterior subcapsular cataracts causing functional impairment; pathognomonic \"Christmas tree\" cataracts in DM1",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Cataract surgery (phacoemulsification) N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Phacoemulsification with IOL implant by ophthalmology; CRITICAL: anesthesia team must be aware of DM diagnosis -- malignant hyperthermia-like risk, avoid succinylcholine, prolonged recovery from sedation",
+            "orderSentence": "Cataract surgery (phacoemulsification) N/A Surgical"
+          },
+          "contraindications": "Anesthesia risk (see anesthesia precautions); active ocular infection",
+          "monitoring": "Visual acuity post-operatively; IOP; posterior capsule opacification (higher rate in DM1); anesthesia recovery monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "No proven disease-modifying therapy for DM1 or DM2",
+          "route": "N/A",
+          "indication": "No FDA-approved disease-modifying treatment exists; multiple clinical trials ongoing (antisense oligonucleotides targeting DMPK mRNA, small molecules, CRISPR-based approaches); management is entirely supportive and symptomatic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "No proven disease-modifying therapy for DM1 or DM2 N/A N/A"
+              }
+            ],
+            "route": "N/A",
+            "instructions": "No disease-modifying therapy available; focus on multisystem monitoring, symptomatic management, cardiac surveillance, respiratory support, and rehabilitation",
+            "orderSentence": "No proven disease-modifying therapy for DM1 or DM2 N/A N/A"
+          },
+          "pretreatment": "N/A",
+          "contraindications": "N/A",
+          "monitoring": "Monitor for emerging clinical trial opportunities; annual reassessment of functional status; reassess trial eligibility at each visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist for diagnostic confirmation, genetic testing coordination, multisystem disease management, and longitudinal monitoring of DM1/DM2",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology for cardiac conduction abnormality assessment, annual ECG/Holter monitoring, pacemaker/ICD evaluation, and arrhythmia management (leading cause of sudden death in DM1)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology for respiratory function monitoring, sleep-disordered breathing evaluation, non-invasive ventilation titration, and management of respiratory muscle weakness",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmology for annual slit-lamp examination to monitor posterior subcapsular cataracts (>90% prevalence in DM1) and surgical planning when visually significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology for diabetes mellitus management, thyroid dysfunction treatment, hypogonadism evaluation and testosterone replacement, and metabolic syndrome optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling for autosomal dominant inheritance education, anticipation phenomenon explanation (earlier onset and increased severity in successive generations), family member testing, and reproductive planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation given oropharyngeal weakness and dysarthria risk in DM1; aspiration prevention strategies",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for individualized exercise program (low-to-moderate intensity), gait training, fall prevention, and assistive device fitting given progressive weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, hand function optimization (grip myotonia management), energy conservation, and home modification assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anesthesiology pre-operative consultation REQUIRED before any surgical procedure; DM patients at high risk for malignant hyperthermia-like reactions, cardiac arrhythmias, prolonged recovery, respiratory failure; succinylcholine is CONTRAINDICATED",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gastroenterology for GI dysmotility evaluation, gastroparesis management, pseudo-obstruction assessment, and gallbladder disease screening (cholelithiasis common in DM1)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/Psychology for cognitive-behavioral assessment, depression/anxiety treatment, apathy management, and neuropsychological testing in DM1 (CNS involvement causes executive dysfunction and personality changes)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability evaluation assistance, insurance navigation, community resources, vocational rehabilitation, and caregiver support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physiatry (PM&R) for comprehensive rehabilitation planning, durable medical equipment prescription, orthotic fitting (AFOs for foot drop), and disability evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine for excessive daytime somnolence evaluation, polysomnography interpretation, CPAP/BiPAP titration, and central hypersomnia management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for goals of care discussion, symptom management optimization, advance care planning, and quality of life support in advanced disease",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if palpitations, lightheadedness, syncope, or near-syncope (may indicate cardiac arrhythmia or heart block -- leading cause of sudden death in DM1)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if new difficulty breathing, worsening shortness of breath, or morning headaches (may indicate respiratory muscle weakness or hypoventilation requiring ventilatory support)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if fall with head injury, inability to get up, or new severe pain (progressive weakness increases fall risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if choking during eating or drinking, inability to swallow medications, or recurrent coughing with meals (aspiration risk from oropharyngeal weakness)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if fever with cough or difficulty breathing (may indicate aspiration pneumonia given dysphagia risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "CRITICAL: Inform ALL healthcare providers and anesthesiologists of myotonic dystrophy diagnosis before ANY surgical or dental procedure; succinylcholine is CONTRAINDICATED; risk of malignant hyperthermia-like reaction, cardiac arrhythmia, and prolonged recovery from anesthesia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Carry a medical alert bracelet or card identifying myotonic dystrophy diagnosis and \"No Succinylcholine\" warning for emergency situations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use assistive devices as recommended by PT/OT (AFOs for foot drop, cane, walker) to prevent falls; early adoption improves safety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Expect slow but progressive weakness over years; DM is a chronic condition without cure, but proactive multisystem monitoring significantly improves quality of life and prevents complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Attend annual cardiac monitoring (ECG and Holter) even if asymptomatic; conduction abnormalities can develop without symptoms and cause sudden cardiac death",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new or worsening daytime sleepiness, snoring, or morning headaches to neurology (may indicate sleep apnea or hypoventilation requiring CPAP/BiPAP)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive if excessive daytime somnolence or cardiac arrhythmia is present; discuss driving safety with neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Inform family members that myotonic dystrophy is inherited (autosomal dominant); children have a 50% chance of inheriting the condition; genetic counseling available for family planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Be aware of anticipation: children (especially those inheriting from mother) may develop more severe, earlier-onset disease; genetic counseling and prenatal testing are available",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-to-moderate intensity exercise program (walking, swimming, stationary cycling) 3-5 days per week to maintain cardiovascular fitness and slow deconditioning; avoid extreme exertion which may worsen weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "High-protein diet (1.0-1.5 g/kg/day protein) to support muscle preservation; adequate caloric intake to prevent weight loss from dysphagia or GI dysmotility",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home safety evaluation by OT to remove fall hazards, install grab bars, raised toilet seat, shower bench, stair rails, and adequate lighting given progressive weakness and fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Annual influenza vaccination (inactivated) and pneumococcal vaccination per guidelines given respiratory muscle weakness and aspiration risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Strict glycemic control (HbA1c <7%) to prevent diabetic complications and neuropathy progression in DM patients with insulin resistance or diabetes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol limitation as alcohol worsens respiratory depression, increases fall risk, exacerbates hepatic dysfunction, and interacts with CNS-depressant medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to reduce respiratory infection risk and improve pulmonary function (already compromised by respiratory muscle weakness)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "CPAP/BiPAP compliance essential for patients with sleep-disordered breathing to prevent nocturnal hypoxia, morning headaches, and daytime somnolence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep hygiene (consistent schedule, 7-9 hours) to manage DM1-related hypersomnia; avoid sedating medications when possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management to reduce metabolic burden and improve mobility; obesity worsens insulin resistance and respiratory function in DM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Vitamin D supplementation to maintain level >30 ng/mL for muscle and bone health; higher dose repletion if deficient",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention program including balance exercises, home modifications, medication review for fall-risk-increasing medications, and vision correction (cataracts)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Advance care planning discussion including code status, ventilatory support preferences, and goals of care early in disease course while patient can fully participate in decision-making",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Myotonia congenita (Thomsen/Becker disease)",
+      "features": "Non-dystrophic myotonia; pure myotonia WITHOUT progressive weakness or systemic features; onset in childhood; muscle hypertrophy rather than atrophy; no cardiac involvement; no cataracts; CLCN1 gene mutation",
+      "tests": "Genetic testing (CLCN1 mutation; negative DMPK/CNBP); EMG (myotonic discharges but no myopathic MUAPs); no systemic features; normal cardiac evaluation"
+    },
+    {
+      "diagnosis": "Paramyotonia congenita",
+      "features": "Cold-induced myotonia (paradoxical -- worsens with repeated activity unlike classic myotonia); episodic weakness; SCN4A gene mutation; no progressive weakness or systemic involvement",
+      "tests": "Genetic testing (SCN4A mutation); cold provocation test; EMG with cooling; no systemic features; no cataracts; normal cardiac evaluation"
+    },
+    {
+      "diagnosis": "Polymyositis",
+      "features": "Symmetric proximal weakness; subacute onset; higher CK (10-50x ULN); NO myotonia; responsive to immunotherapy; no cataracts; no cardiac conduction disease; no genetic basis",
+      "tests": "CK (much higher); EMG (irritable myopathy WITHOUT myotonic discharges); muscle biopsy (endomysial CD8+ invasion without rimmed vacuoles); myositis-specific antibodies; steroid response"
+    },
+    {
+      "diagnosis": "Inclusion body myositis (IBM)",
+      "features": "Onset >50 years; finger flexor and quadriceps weakness pattern; NO myotonia; poor response to immunotherapy; rimmed vacuoles on biopsy; anti-cN1A antibody",
+      "tests": "EMG (mixed myopathic/neurogenic WITHOUT myotonic discharges); anti-cN1A antibody; muscle biopsy (rimmed vacuoles, amyloid deposits); no genetic trinucleotide repeat expansion"
+    },
+    {
+      "diagnosis": "Limb-girdle muscular dystrophy (LGMD)",
+      "features": "Progressive proximal weakness; NO myotonia; variable CK elevation; no systemic features (no cataracts, no cardiac conduction disease, no diabetes); specific genetic subtypes",
+      "tests": "Genetic testing panel (>30 subtypes); no myotonic discharges on EMG; no trinucleotide repeat expansion; muscle biopsy (dystrophic changes, specific protein deficiencies)"
+    },
+    {
+      "diagnosis": "Motor neuron disease (ALS)",
+      "features": "Upper AND lower motor neuron signs; fasciculations; NO myotonia; no systemic features; rapid progression; bulbar onset with dysarthria common",
+      "tests": "EMG (widespread denervation, fasciculations, NO myotonic discharges); no cardiac or endocrine involvement; no cataracts; no genetic trinucleotide repeat"
+    },
+    {
+      "diagnosis": "Hypothyroid myopathy",
+      "features": "Proximal weakness; fatigue; delayed relaxation of reflexes (may mimic myotonia clinically); elevated CK; reversible with thyroid replacement; no true electrical myotonia on EMG",
+      "tests": "TSH (elevated); free T4 (low); EMG (no myotonic discharges -- delayed relaxation is not electrical myotonia); CK normalizes with treatment; no genetic testing needed"
+    },
+    {
+      "diagnosis": "Drug-induced myotonia (statins, colchicine, chloroquine)",
+      "features": "Temporal correlation with drug exposure; myalgia and weakness; may have myotonic features on EMG; improves with drug discontinuation; no systemic features",
+      "tests": "Medication history; improvement after drug withdrawal; negative genetic testing for DM1/DM2; no cataracts or cardiac conduction disease"
+    },
+    {
+      "diagnosis": "Schwartz-Jampel syndrome",
+      "features": "Childhood onset; continuous muscle stiffness (not true myotonia); short stature; blepharospasm; skeletal abnormalities; HSPG2 gene mutation",
+      "tests": "Genetic testing (HSPG2); childhood onset; skeletal features; EMG (high-frequency discharges but not classic myotonic discharges); no systemic features of DM"
+    },
+    {
+      "diagnosis": "Brody myopathy",
+      "features": "Exercise-induced muscle stiffness (silent contractures -- no electrical activity on EMG); ATP2A1 gene mutation; no percussion myotonia; no systemic features",
+      "tests": "EMG (electrically silent contractures -- NO myotonic discharges); genetic testing (ATP2A1); no cataracts; no cardiac conduction disease"
+    },
+    {
+      "diagnosis": "Late-onset Pompe disease",
+      "features": "Proximal weakness; respiratory muscle weakness disproportionate to limb weakness; mildly elevated CK; NO myotonia; autosomal recessive",
+      "tests": "Acid alpha-glucosidase activity (reduced); GAA gene testing; EMG (myopathic without myotonic discharges in most -- some rare cases show myotonic discharges); no cardiac conduction disease"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Myotonic dystrophy clinical practice guidelines (comprehensive)",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Ashizawa T et al. Neurology 2018 (AAN Practice Guideline)](https://pubmed.ncbi.nlm.nih.gov/29592893/)"
+    },
+    {
+      "recommendation": "DM1 genetics: CTG trinucleotide repeat expansion on DMPK gene (chromosome 19)",
+      "evidenceLevel": "Class II, Level A",
+      "source": "[Brook JD et al. Cell 1992](https://pubmed.ncbi.nlm.nih.gov/1568252/)"
+    },
+    {
+      "recommendation": "DM2 genetics: CCTG tetranucleotide repeat expansion on CNBP/ZNF9 gene (chromosome 3)",
+      "evidenceLevel": "Class II, Level A",
+      "source": "[Liquori CL et al. Science 2001](https://pubmed.ncbi.nlm.nih.gov/11486055/)"
+    },
+    {
+      "recommendation": "Anticipation in DM1: progressive expansion of CTG repeats across generations with earlier onset and greater severity",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Harley HG et al. Nature 1993](https://pubmed.ncbi.nlm.nih.gov/8381966/)"
+    },
+    {
+      "recommendation": "Cardiac conduction abnormalities as leading cause of mortality in DM1",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18550876/)"
+    },
+    {
+      "recommendation": "ECG abnormalities predict sudden cardiac death in DM1; PR >200ms and QRS >100ms identify high-risk patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Groh WJ et al. NEJM 2008](https://pubmed.ncbi.nlm.nih.gov/18550876/)"
+    },
+    {
+      "recommendation": "Prophylactic pacemaker implantation in DM1 with conduction abnormalities",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Wahbi K et al. JAMA 2012](https://pubmed.ncbi.nlm.nih.gov/23032549/)"
+    },
+    {
+      "recommendation": "Mexiletine for myotonia in DM1 and non-dystrophic myotonia",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Logigian EL et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20660862/)"
+    },
+    {
+      "recommendation": "Mexiletine reduces myotonia in myotonic dystrophy: randomized controlled trial",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Stunnenberg BC et al. Brain 2018 (MYOMEX trial)](https://pubmed.ncbi.nlm.nih.gov/29438540/)"
+    },
+    {
+      "recommendation": "Modafinil for excessive daytime somnolence in DM1",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Talbot K et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/14581672/)"
+    },
+    {
+      "recommendation": "Respiratory involvement in myotonic dystrophy: diaphragmatic weakness, restrictive pattern, sleep-disordered breathing",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Boussaid G et al. Neuromuscul Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32386756/)"
+    },
+    {
+      "recommendation": "Sleep-disordered breathing and central hypersomnia in DM1",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Laberge L et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23345639/)"
+    },
+    {
+      "recommendation": "Insulin resistance and diabetes in DM1",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Moxley RT et al. J Clin Invest 1984](https://pubmed.ncbi.nlm.nih.gov/6370475/)"
+    },
+    {
+      "recommendation": "Gastrointestinal dysmotility in myotonic dystrophy",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Hilbert JE et al. Curr Gastroenterol Rep 2017](https://pubmed.ncbi.nlm.nih.gov/28770476/)"
+    },
+    {
+      "recommendation": "Anesthesia complications in myotonic dystrophy: malignant hyperthermia-like reactions, succinylcholine contraindicated",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Mathieu J et al. Can J Anaesth 1997](https://pubmed.ncbi.nlm.nih.gov/9305555/)"
+    },
+    {
+      "recommendation": "Posterior subcapsular cataracts in myotonic dystrophy: pathognomonic \"Christmas tree\" cataracts",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Baig KM et al. Saudi J Ophthalmol 2020](https://pubmed.ncbi.nlm.nih.gov/33575658/)"
+    },
+    {
+      "recommendation": "Cognitive and behavioral involvement in DM1: executive dysfunction, apathy, social cognition deficits",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Minnerop M et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21832231/)"
+    },
+    {
+      "recommendation": "DM2 (PROMM): clinical features, proximal weakness predominance, milder phenotype than DM1",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Day JW et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12629210/)"
+    },
+    {
+      "recommendation": "Myotonic dystrophy multisystem management consensus recommendations",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Bird TD. GeneReviews. University of Washington 2021](https://pubmed.ncbi.nlm.nih.gov/20301344/)"
+    },
+    {
+      "recommendation": "Natural history of DM1: functional decline and survival data",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Mathieu J et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10442680/)"
+    },
+    {
+      "recommendation": "Exercise safety and modest benefit in myotonic dystrophy",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Orngreen MC et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15956411/)"
+    },
+    {
+      "recommendation": "Hypogonadism in DM1 males: testicular atrophy, reduced testosterone, infertility",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Peric S et al. Acta Myol 2018](https://pubmed.ncbi.nlm.nih.gov/30838337/)"
+    },
+    {
+      "recommendation": "Genetic counseling and anticipation in autosomal dominant myotonic dystrophy",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Harper PS. Myotonic Dystrophy. 3rd ed. WB Saunders 2001](https://pubmed.ncbi.nlm.nih.gov/20301344/)"
+    },
+    {
+      "recommendation": "Carbamazepine and phenytoin as second-line agents for myotonia",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Trip J et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16887794/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "ECG (12-lead)",
+      "frequency": "Annually minimum; more frequently if conduction abnormalities present; at any new cardiac symptom",
+      "action": "If new conduction abnormality: urgent cardiology referral; Holter monitor; consider EPS; pacemaker/ICD evaluation; PR >240ms or HV >70ms warrants device consideration",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "24-hour Holter monitor",
+      "frequency": "Annually in DM1; q2-3 years in DM2 if asymptomatic; more frequently if abnormal",
+      "action": "If significant arrhythmia: electrophysiology study; pacemaker/ICD evaluation; antiarrhythmic consideration (but most are contraindicated in DM1)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pulmonary function tests (FVC, MIP, MEP)",
+      "frequency": "Annually; q6 months if FVC <70% predicted or symptoms",
+      "action": "If FVC declining or <60%: pulmonology referral; sleep study; BiPAP initiation; discuss advance care planning if FVC <40%",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Slit-lamp ophthalmologic exam",
+      "frequency": "Annually",
+      "action": "If cataracts progressing and visually significant: ophthalmology surgical planning with anesthesia precautions; correct refractive error",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "Annually if normal; q3-6 months if diabetic or prediabetic",
+      "action": "If prediabetes: lifestyle modification, metformin consideration; if diabetes: initiate or optimize treatment; endocrinology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TSH",
+      "frequency": "Annually",
+      "action": "If elevated: confirm with free T4; initiate levothyroxine; recheck q6-8 weeks; endocrinology referral if complex",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Testosterone (males)",
+      "frequency": "Annually in symptomatic males; at diagnosis",
+      "action": "If low with symptoms: endocrinology referral; testosterone replacement; monitor PSA and hematocrit",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Liver function tests (ALT, GGT)",
+      "frequency": "Annually; q6 months if on hepatotoxic medications",
+      "action": "If progressive elevation: hepatology referral; abdominal ultrasound; reassess medications; fatty liver common in DM1",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Muscle strength (MMT) and functional assessment",
+      "frequency": "Every clinic visit; q6-12 months formal assessment",
+      "action": "If accelerated decline: reassess for superimposed conditions; optimize rehabilitation; adjust assistive devices",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "Each clinic visit clinical screening; MBSS if symptomatic",
+      "action": "If worsening dysphagia: SLP re-evaluation; diet modification; MBSS; aspiration precautions; consider PEG if severe",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Depression/anxiety screening (PHQ-9)",
+      "frequency": "Annually minimum; more frequently if concerns",
+      "action": "If PHQ-9 >=10: assess safety; initiate antidepressant; psychology/psychiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality assessment (Epworth Sleepiness Scale)",
+      "frequency": "Annually; more frequently if EDS or OSA present",
+      "action": "If ESS >=10: sleep study; CPAP/BiPAP evaluation; modafinil consideration; sleep hygiene review",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bone density (DEXA)",
+      "frequency": "Baseline; q2 years; sooner if fracture or steroid exposure",
+      "action": "If T-score <-2.5: bisphosphonate; calcium/vitamin D optimization; endocrine referral; fall prevention critical",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight and nutritional status",
+      "frequency": "Each clinic visit",
+      "action": "If weight loss >5% in 6 months: reassess dysphagia; nutrition consultation; calorie supplementation; GI evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Ambulatory (with or without assistive device); safe swallow; adequate oral intake; cardiac rhythm stable (no new conduction abnormality requiring monitoring); pain controlled; respiratory status stable; outpatient neuromuscular and cardiology follow-up arranged; home safety adequate; understands return precautions and anesthesia warnings"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Fall-related injury requiring monitoring (fracture, head injury); aspiration pneumonia requiring IV antibiotics; new cardiac conduction abnormality requiring telemetry monitoring; new diagnosis requiring expedited inpatient workup; severe dehydration or malnutrition from dysphagia; respiratory decompensation not requiring ICU; pre-operative optimization for urgent surgery"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Respiratory failure from aspiration pneumonia or respiratory muscle weakness requiring mechanical ventilation or non-invasive ventilation; hemodynamically significant arrhythmia (complete heart block, sustained VT); post-anesthesia prolonged respiratory depression or malignant hyperthermia-like reaction; cardiac arrest from conduction disease"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for neuromuscular specialist not available locally; electrophysiology study and pacemaker/ICD implantation not available on-site; cardiac MRI not available; genetic counseling services unavailable"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant functional decline with deconditioning; post-fall with functional decline; able to participate in 3 hours/day therapy; medically stable; benefit expected from intensive PT/OT"
+    }
+  ]
+}

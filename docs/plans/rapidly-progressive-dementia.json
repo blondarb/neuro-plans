@@ -7,7 +7,10 @@
     "G31.9 (Degenerative disease of nervous system",
     "unspecified)",
     "A81.00 (Creutzfeldt-Jakob disease",
-    "unspecified)"
+    "unspecified)",
+    "G30.9 (Alzheimer's disease",
+    "unspecified)",
+    "G31.09 (Other frontotemporal dementia)"
   ],
   "scope": "** Urgent evaluation of cognitive decline progressing over weeks to months (typically <1-2 years from symptom onset to severe disability). Covers comprehensive workup to identify treatable causes including autoimmune encephalitis, infectious etiologies, toxic-metabolic causes, CNS malignancy, and prion disease (CJD). The key principle: assume a treatable cause exists until proven otherwise. Excludes typical slowly progressive dementias (Alzheimer's, FTD) unless presenting atypically fast, and acute delirium (<days).",
   "notes": [],
@@ -15,7 +18,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -24,7 +27,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -33,7 +36,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH, free T4",
+          "item": "TSH (CPT 84443), free T4 (CPT 84439)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -42,7 +45,7 @@
           "target": "Normal"
         },
         {
-          "item": "B12, methylmalonic acid (MMA)",
+          "item": "B12 (CPT 82607), methylmalonic acid (MMA) (CPT 83921)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -51,7 +54,7 @@
           "target": "B12 >300 pg/mL; MMA normal"
         },
         {
-          "item": "Folate",
+          "item": "Folate (CPT 82746)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -60,7 +63,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR",
+          "item": "ESR (CPT 85652)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -69,7 +72,7 @@
           "target": "Normal (<20 mm/h age-adjusted)"
         },
         {
-          "item": "CRP",
+          "item": "CRP (CPT 86140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -78,7 +81,7 @@
           "target": "Normal"
         },
         {
-          "item": "RPR or VDRL (syphilis screen)",
+          "item": "RPR or VDRL (CPT 86592)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -87,7 +90,7 @@
           "target": "Non-reactive"
         },
         {
-          "item": "HIV 1/2 antigen/antibody",
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -105,7 +108,7 @@
           "target": "Normal (<35 µmol/L)"
         },
         {
-          "item": "Urinalysis + urine culture",
+          "item": "Urinalysis (CPT 81003) + urine culture",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -123,7 +126,7 @@
           "target": "Negative or expected medications only"
         },
         {
-          "item": "Blood glucose",
+          "item": "Blood glucose (CPT 82947)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -132,7 +135,7 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
           "item": "Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin)",
           "ED": "-",
@@ -143,7 +146,7 @@
           "target": "Negative (positive + encephalopathy = consider SREAT)"
         },
         {
-          "item": "ANA",
+          "item": "ANA (CPT 86235)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -188,7 +191,7 @@
           "target": "Normal"
         },
         {
-          "item": "Serum protein electrophoresis (SPEP) + immunofixation",
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334) + immunofixation",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -215,7 +218,7 @@
           "target": "Normal"
         },
         {
-          "item": "Thiamine (B1) level",
+          "item": "Thiamine (B1) level (CPT 84425)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -224,7 +227,7 @@
           "target": "Normal (>70 nmol/L)"
         },
         {
-          "item": "Copper and ceruloplasmin",
+          "item": "Copper (CPT 82390) and ceruloplasmin (CPT 82390)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -233,7 +236,7 @@
           "target": "Normal"
         },
         {
-          "item": "Zinc level",
+          "item": "Zinc level (CPT 84630)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -242,7 +245,7 @@
           "target": "Normal"
         },
         {
-          "item": "Cortisol (AM or random)",
+          "item": "Cortisol (CPT 82533)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -251,7 +254,7 @@
           "target": "Normal (>18 µg/dL AM)"
         },
         {
-          "item": "Heavy metals (lead, mercury, arsenic)",
+          "item": "Heavy metals: lead (CPT 83655), mercury (CPT 83825), arsenic (CPT 82175)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -278,9 +281,9 @@
           "target": "Negative"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
-          "item": "14-3-3 protein (CSF)",
+          "item": "14-3-3 protein (CSF) (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -289,7 +292,7 @@
           "target": "Negative (positive supports CJD in right clinical context)"
         },
         {
-          "item": "RT-QuIC (Real-Time Quaking-Induced Conversion) — CSF",
+          "item": "RT-QuIC (CPT 86235) — CSF",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -298,7 +301,7 @@
           "target": "Negative (positive = prion disease essentially confirmed)"
         },
         {
-          "item": "Tau protein (CSF — total tau)",
+          "item": "Tau protein (CSF — total tau) (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -316,7 +319,7 @@
           "target": "Normal"
         },
         {
-          "item": "AD biomarkers (CSF Aβ42, p-tau, t-tau)",
+          "item": "AD biomarkers (CSF Aβ42, p-tau, t-tau) (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -325,7 +328,7 @@
           "target": "Aβ42/Aβ40 ratio normal; p-tau/t-tau ratio helps distinguish"
         },
         {
-          "item": "Neurofilament light chain (NfL) — CSF or serum",
+          "item": "Neurofilament light chain (NfL) (CPT 83519) — CSF or serum",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -407,7 +410,7 @@
           "target": "Normal (10-20 cm H2O)"
         },
         {
-          "item": "Cell count with differential (tubes 1 and 4)",
+          "item": "Cell count with differential (CPT 89051)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -415,7 +418,7 @@
           "target": "Normal in CJD; elevated in autoimmune/infectious"
         },
         {
-          "item": "Protein",
+          "item": "Protein (CPT 84157)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -423,7 +426,7 @@
           "target": "Normal or mildly elevated in CJD; elevated in infection/autoimmune"
         },
         {
-          "item": "Glucose with paired serum",
+          "item": "Glucose with paired serum (CPT 82945)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -439,7 +442,7 @@
           "target": "No organisms"
         },
         {
-          "item": "RT-QuIC (Real-Time Quaking-Induced Conversion)",
+          "item": "RT-QuIC (CPT 86235)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -447,7 +450,7 @@
           "target": "Negative"
         },
         {
-          "item": "14-3-3 protein",
+          "item": "14-3-3 protein (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -455,7 +458,7 @@
           "target": "Negative"
         },
         {
-          "item": "Total tau protein",
+          "item": "Total tau protein (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -487,7 +490,7 @@
           "target": "Negative"
         },
         {
-          "item": "Oligoclonal bands, IgG index",
+          "item": "Oligoclonal bands (CPT 83916), IgG index",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -591,7 +594,7 @@
           "target": "Normal"
         },
         {
-          "item": "Alzheimer biomarkers (Aβ42, Aβ40, p-tau 181, t-tau)",
+          "item": "Alzheimer biomarkers (Aβ42, Aβ40, p-tau 181, t-tau) (CPT 83519)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -599,7 +602,7 @@
           "target": "Context-dependent"
         },
         {
-          "item": "Neurofilament light chain (NfL) — CSF",
+          "item": "Neurofilament light chain (NfL) (CPT 83519) — CSF",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -611,7 +614,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI brain with and without contrast + DWI",
+          "item": "MRI brain with and without contrast (CPT 70553) + DWI",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -621,7 +624,7 @@
           "contraindications": "Pacemaker, metallic implants"
         },
         {
-          "item": "EEG (routine or prolonged)",
+          "item": "EEG (CPT 95816)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -631,7 +634,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -653,7 +656,7 @@
           "contraindications": "Same as MRI"
         },
         {
-          "item": "MRI spine",
+          "item": "MRI spine (CPT 72141)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -663,7 +666,7 @@
           "contraindications": "Same as MRI"
         },
         {
-          "item": "Continuous EEG (cEEG)",
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -673,7 +676,7 @@
           "contraindications": "None"
         },
         {
-          "item": "FDG-PET brain",
+          "item": "FDG-PET brain (CPT 78608)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
@@ -683,7 +686,7 @@
           "contraindications": "Pregnancy; uncontrolled diabetes"
         },
         {
-          "item": "PET-CT body (whole body)",
+          "item": "PET-CT body (CPT 78816)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
@@ -789,19 +792,19 @@
     "Treatment": {
       "Empiric / Treatable Causes — TREAT WHILE AWAITING RESULTS": [
         {
-          "item": "Thiamine (B1) IV",
+          "item": "Thiamine (B1) IV (CPT 96374)",
           "route": "IV",
           "indication": "Empiric for Wernicke encephalopathy if ANY suspicion (alcohol, malnutrition, bariatric surgery); treat before glucose",
           "dosing": {
             "doseOptions": [
               {
                 "text": "500 mg",
-                "orderSentence": "Thiamine (B1) IV 500 mg IV"
+                "orderSentence": "Thiamine (B1) IV (CPT 96374) 500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing",
-            "orderSentence": "Thiamine (B1) IV 500 mg IV"
+            "orderSentence": "Thiamine (B1) IV (CPT 96374) 500 mg IV"
           },
           "contraindications": "None significant",
           "monitoring": "Clinical response (confusion, ataxia, ophthalmoplegia should improve)",
@@ -811,19 +814,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "IV methylprednisolone (empiric immunotherapy trial)",
+          "item": "IV methylprednisolone (CPT 96365)",
           "route": "IV",
           "indication": "Suspected autoimmune encephalitis, Hashimoto encephalopathy (SREAT), neurosarcoidosis, CNS vasculitis",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1000 mg",
-                "orderSentence": "IV methylprednisolone (empiric immunotherapy trial) 1000 mg IV"
+                "orderSentence": "IV methylprednisolone (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam.",
-            "orderSentence": "IV methylprednisolone (empiric immunotherapy trial) 1000 mg IV"
+            "orderSentence": "IV methylprednisolone (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis)",
           "monitoring": "Glucose q6h; BP; GI prophylaxis; response assessment",
@@ -855,19 +858,19 @@
           "ICU": "URGENT"
         },
         {
-          "item": "Acyclovir IV (if HSV not excluded)",
+          "item": "Acyclovir IV (CPT 96365)",
           "route": "IV",
           "indication": "Empiric while awaiting HSV PCR; fever + encephalopathy",
           "dosing": {
             "doseOptions": [
               {
                 "text": "10 mg/kg",
-                "orderSentence": "Acyclovir IV (if HSV not excluded) 10 mg/kg IV"
+                "orderSentence": "Acyclovir IV (CPT 96365) 10 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV q8h. Continue until HSV PCR confirmed negative",
-            "orderSentence": "Acyclovir IV (if HSV not excluded) 10 mg/kg IV"
+            "orderSentence": "Acyclovir IV (CPT 96365) 10 mg/kg IV"
           },
           "contraindications": "Renal impairment (dose adjust)",
           "monitoring": "Cr daily; hydration",
@@ -879,19 +882,19 @@
       ],
       "Targeted Treatments (Once Diagnosis Established)": [
         {
-          "item": "IV methylprednisolone → oral prednisone taper",
+          "item": "IV methylprednisolone (CPT 96365) → oral prednisone taper",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1g",
-                "orderSentence": "IV methylprednisolone → oral prednisone taper 1g IV"
+                "orderSentence": "IV methylprednisolone (CPT 96365) → oral prednisone taper 1g IV"
               }
             ],
             "route": "IV",
             "instructions": "1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months",
-            "orderSentence": "IV methylprednisolone → oral prednisone taper 1g IV"
+            "orderSentence": "IV methylprednisolone (CPT 96365) → oral prednisone taper 1g IV"
           },
           "contraindications": "-",
           "monitoring": "Glucose, BP, bone density, weight, mood",
@@ -923,19 +926,19 @@
           "ICU": "-"
         },
         {
-          "item": "Rituximab",
+          "item": "Rituximab (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "375 mg/m2",
-                "orderSentence": "Rituximab 375 mg/m2 IV"
+                "orderSentence": "Rituximab (CPT 96365) 375 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart)",
-            "orderSentence": "Rituximab 375 mg/m2 IV"
+            "orderSentence": "Rituximab (CPT 96365) 375 mg/m2 IV"
           },
           "contraindications": "-",
           "monitoring": "CD19/20 counts; immunoglobulins; infection risk; PML risk",
@@ -945,19 +948,19 @@
           "ICU": "-"
         },
         {
-          "item": "Cyclophosphamide",
+          "item": "Cyclophosphamide (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "750-1000 mg/m2",
-                "orderSentence": "Cyclophosphamide 750-1000 mg/m2 IV"
+                "orderSentence": "Cyclophosphamide (CPT 96365) 750-1000 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day",
-            "orderSentence": "Cyclophosphamide 750-1000 mg/m2 IV"
+            "orderSentence": "Cyclophosphamide (CPT 96365) 750-1000 mg/m2 IV"
           },
           "contraindications": "-",
           "monitoring": "CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion",
@@ -967,12 +970,12 @@
           "ICU": "-"
         },
         {
-          "item": "Penicillin G IV",
+          "item": "Penicillin G IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "instructions": "18-24 million units/day IV (3-4 MU q4h) x 14 days",
-            "orderSentence": "Penicillin G IV - IV - see dosing"
+            "orderSentence": "Penicillin G IV (CPT 96365) - IV - see dosing"
           },
           "contraindications": "-",
           "monitoring": "RPR titer follow-up q3-6 months (4-fold decline expected)",
@@ -1027,19 +1030,19 @@
           "ICU": "-"
         },
         {
-          "item": "Antifungals (amphotericin B + flucytosine)",
+          "item": "Antifungals (amphotericin B + flucytosine) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.7-1 mg/kg",
-                "orderSentence": "Antifungals (amphotericin B + flucytosine) 0.7-1 mg/kg IV"
+                "orderSentence": "Antifungals (amphotericin B + flucytosine) (CPT 96365) 0.7-1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction)",
-            "orderSentence": "Antifungals (amphotericin B + flucytosine) 0.7-1 mg/kg IV"
+            "orderSentence": "Antifungals (amphotericin B + flucytosine) (CPT 96365) 0.7-1 mg/kg IV"
           },
           "contraindications": "-",
           "monitoring": "Renal function; electrolytes; LFTs",
@@ -1081,19 +1084,19 @@
       ],
       "Symptomatic Treatments": [
         {
-          "item": "Levetiracetam",
+          "item": "Levetiracetam (CPT 96374)",
           "route": "IV",
           "indication": "Seizures",
           "dosing": {
             "doseOptions": [
               {
                 "text": "500-1500 mg",
-                "orderSentence": "Levetiracetam 500-1500 mg IV"
+                "orderSentence": "Levetiracetam (CPT 96374) 500-1500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500-1500 mg PO/IV BID; max 3000 mg/day",
-            "orderSentence": "Levetiracetam 500-1500 mg IV"
+            "orderSentence": "Levetiracetam (CPT 96374) 500-1500 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Severe renal impairment (dose adjust)",
@@ -1104,19 +1107,19 @@
           "ICU": "-"
         },
         {
-          "item": "Lorazepam",
+          "item": "Lorazepam (CPT 96374)",
           "route": "IV",
           "indication": "Agitation, myoclonus (CJD)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.5-1 mg",
-                "orderSentence": "Lorazepam 0.5-1 mg IV"
+                "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-1 mg PO/IV q6-8h PRN",
-            "orderSentence": "Lorazepam 0.5-1 mg IV"
+            "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Respiratory depression",
@@ -1366,7 +1369,7 @@
           "indication": "Safety; mobility; ADLs; fall prevention"
         }
       ],
-      "Patient Instructions": [
+      "Patient and Family Instructions": [
         {
           "item": "RPD has many TREATABLE causes — aggressive workup is justified",
           "ED": "-",
@@ -1428,7 +1431,7 @@
           "OPD": "ROUTINE"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Lifestyle & Safety": [
         {
           "item": "Fall prevention (remove tripping hazards, grab bars, non-slip surfaces)",
           "ED": "-",

@@ -1,0 +1,2245 @@
+{
+  "id": "inflammatory-myopathy",
+  "title": "Inflammatory Myopathy (Dermatomyositis/Polymyositis)",
+  "version": "1.1",
+  "icd10": [
+    "** G72.41 (Inclusion body myositis - note: excluded from this template scope but listed for differential)",
+    "M33.10 (Other dermatomyositis",
+    "unspecified organ involvement)",
+    "M33.20 (Polymyositis",
+    "unspecified organ involvement)",
+    "M33.90 (Dermatopolymyositis",
+    "unspecified)",
+    "M33.00 (Juvenile dermatomyositis)",
+    "M33.92 (Dermatopolymyositis",
+    "unspecified with myopathy)",
+    "M60.9 (Myositis",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of inflammatory myopathies including dermatomyositis, polymyositis, and immune-mediated necrotizing myopathy. Includes diagnosis, acute management, immunotherapy, interstitial lung disease (ILD) screening, malignancy screening, and disease-modifying therapy. Excludes inclusion body myositis (IBM -- separate plan), drug-induced myopathy, infectious myositis, and metabolic myopathies.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Creatine kinase (CK) (CPT 82550)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Primary biomarker of muscle inflammation; typically elevated 10-50x ULN in PM/IMNM; may be normal or mildly elevated in DM (especially amyopathic DM)",
+          "target": "Normal (30-200 U/L); expect markedly elevated in active disease"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function (rhabdomyolysis risk); hepatic function baseline for immunotherapy; AST/ALT often elevated from muscle (not liver)",
+          "target": "Normal; expect elevated AST/ALT (muscle source)"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before immunotherapy; infection screen; lymphopenia may suggest DM/anti-MDA5",
+          "target": "Normal"
+        },
+        {
+          "item": "Aldolase (CPT 82085)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Elevated in inflammatory myopathies; may be elevated when CK is normal (especially in DM)",
+          "target": "Normal (<7.7 U/L); expect elevated in active disease"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; often modestly elevated",
+          "target": "Normal; mild-moderate elevation expected"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal; mild-moderate elevation expected"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Muscle enzyme marker; elevated in active myositis; also marker for ILD severity with anti-MDA5",
+          "target": "Normal; elevated in active disease"
+        },
+        {
+          "item": "AST (CPT 84450) / ALT (CPT 84460)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Often elevated from skeletal muscle (not hepatic) -- correlate with CK; baseline before methotrexate/azathioprine",
+          "target": "Normal; expect elevated (muscle source)"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pre-steroid baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic status before corticosteroid initiation",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Urinalysis with microscopy (CPT 81001)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Myoglobinuria screen (rhabdomyolysis); baseline",
+          "target": "No myoglobin; no casts"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Hypothyroid myopathy in differential; autoimmune thyroid overlap",
+          "target": "Normal"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline electrolyte; hypomagnesemia worsens weakness",
+          "target": "Normal (1.7-2.2 mg/dL)"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypophosphatemia causes weakness (mimic)",
+          "target": "Normal (2.5-4.5 mg/dL)"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulation baseline before procedures (muscle biopsy)",
+          "target": "Normal"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Affects imaging and immunotherapy choices; methotrexate and mycophenolate contraindicated",
+          "target": "Document result"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Myositis-specific antibody panel (comprehensive) (CPT 86235)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Identifies subtype and guides management: anti-Jo-1 (ASyS), anti-Mi-2 (classic DM, good prognosis), anti-MDA5 (amyopathic DM, rapidly progressive ILD), anti-NXP2 (calcinosis, malignancy), anti-TIF1-gamma (malignancy association), anti-SRP (necrotizing myopathy, severe), anti-HMGCR (necrotizing myopathy, statin-associated)",
+          "target": "Negative; positive result defines clinical phenotype"
+        },
+        {
+          "item": "Anti-Jo-1 antibody (CPT 86235)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Most common anti-synthetase antibody (20-30% of myositis); anti-synthetase syndrome: myositis + ILD + mechanic's hands + arthritis + Raynaud + fever",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Mi-2 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Classic dermatomyositis phenotype (heliotrope rash, Gottron papules); generally good prognosis and steroid-responsive",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-MDA5 (anti-CADM-140) antibody",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Clinically amyopathic DM with rapidly progressive ILD (high mortality); skin ulcers; palmar papules; ferritin often markedly elevated",
+          "target": "Negative; positive requires URGENT ILD evaluation"
+        },
+        {
+          "item": "Anti-NXP2 (anti-MJ) antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Associated with calcinosis (especially juvenile DM); adult-onset associated with malignancy risk",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-TIF1-gamma (anti-p155/140) antibody",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Strongly associated with malignancy in adult-onset DM (up to 60% cancer risk); requires comprehensive malignancy screening",
+          "target": "Negative; positive mandates cancer screening"
+        },
+        {
+          "item": "Anti-SRP (signal recognition particle) antibody",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Immune-mediated necrotizing myopathy (IMNM); severe proximal weakness; very high CK; poor response to steroids alone; cardiac involvement risk",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-HMGCR antibody",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Immune-mediated necrotizing myopathy (IMNM); often statin-associated but can occur without statin exposure; very high CK; requires aggressive immunotherapy",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-PL-7 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anti-synthetase antibody; ILD risk; arthritis; mechanic's hands",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-PL-12 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anti-synthetase antibody; ILD-predominant phenotype",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-EJ antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anti-synthetase antibody; ILD risk",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-OJ antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anti-synthetase antibody; ILD risk",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-SAE antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Dermatomyositis-specific; dysphagia common; may initially present with skin-only disease then develop myopathy",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA (CPT 86038)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Positive in 60-80% of inflammatory myopathy; connective tissue disease overlap screen",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Anti-dsDNA (CPT 86255)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "SLE overlap syndrome screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-SSA/Ro, Anti-SSB/La",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Sjogren overlap; neonatal lupus risk if positive in pregnancy",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-U1 RNP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Mixed connective tissue disease overlap (myositis + Raynaud + swollen hands + ILD)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Scl-70 (anti-topoisomerase I)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Scleroderma overlap myositis",
+          "target": "Negative"
+        },
+        {
+          "item": "Myoglobin (serum) (CPT 83874)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rhabdomyolysis assessment in acute severe myositis (CK >10,000)",
+          "target": "Normal; elevated in rhabdomyolysis"
+        },
+        {
+          "item": "Myoglobin (urine)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Myoglobinuria detection in rhabdomyolysis",
+          "target": "Negative"
+        },
+        {
+          "item": "Troponin I (cardiac-specific) (CPT 84484)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cardiac involvement screening (myocarditis risk especially with anti-SRP); do NOT use troponin T (cross-reacts with skeletal muscle)",
+          "target": "Normal; elevated suggests cardiac involvement"
+        },
+        {
+          "item": "BNP/NT-proBNP (CPT 83880)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Heart failure screen; pulmonary hypertension from ILD",
+          "target": "Normal"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Markedly elevated (>1500 ng/mL) in anti-MDA5 with rapidly progressive ILD; also macrophage activation syndrome marker",
+          "target": "Normal; markedly elevated in anti-MDA5 ILD"
+        },
+        {
+          "item": "Hepatitis B surface antigen, anti-HBc (CPT 80074)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before rituximab/immunosuppression (reactivation risk)",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression; HCV-associated myositis in differential",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated myopathy in differential; screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "Vitamin D (25-OH) (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency common; steroid-induced osteoporosis prevention; immune modulation",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before IVIG/rituximab; monitor on immunosuppression",
+          "target": "Normal"
+        },
+        {
+          "item": "TB test (QuantiFERON-Gold or PPD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Anti-cN1A (anti-NT5C1A) antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Inclusion body myositis marker; if clinical features suggest IBM (distal weakness, finger flexor/quad weakness, refractory to immunotherapy)",
+          "target": "Negative (positive suggests IBM)"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (serum) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic myopathy screen if malignancy workup negative but clinical suspicion high",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-HMGCR antibody (if not in initial panel)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If statin exposure history and necrotizing myopathy pattern on biopsy",
+          "target": "Negative"
+        },
+        {
+          "item": "Complement C3, C4 (CPT 86160, 86161)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before complement-modulating therapy; SLE overlap",
+          "target": "Normal"
+        },
+        {
+          "item": "SPEP with immunofixation (CPT 86334)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraproteinemia screen; some myopathies associated with monoclonal gammopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Anti-PM-Scl antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Overlap myositis-scleroderma phenotype",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Ku antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Overlap syndrome (SLE/scleroderma/myositis)",
+          "target": "Negative"
+        },
+        {
+          "item": "Muscle enzyme panel: AST, ALT, LDH, aldolase, CK (serial)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Trending response to immunotherapy; all may be elevated from muscle source",
+          "target": "Declining toward normal with treatment"
+        },
+        {
+          "item": "IL-18 level",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Markedly elevated in anti-MDA5 rapidly progressive ILD; prognostic marker",
+          "target": "Normal"
+        },
+        {
+          "item": "KL-6 (Krebs von den Lungen-6)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "ILD biomarker; elevated in active ILD; may guide treatment response",
+          "target": "Normal"
+        },
+        {
+          "item": "Genetic testing (hereditary myopathy panel)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If inflammatory myopathy treatment-refractory and biopsy atypical; consider limb-girdle muscular dystrophy, dysferlinopathy (which can mimic PM)",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI thighs with and without contrast (bilateral) (CPT 73721)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within first week of evaluation; guides biopsy site",
+          "target": "Muscle edema (T2/STIR hyperintensity) indicating active inflammation; fatty infiltration indicating chronic damage; patterns help distinguish DM vs PM vs IMNM",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral) (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "At presentation",
+          "target": "Interstitial lung disease screening; aspiration pneumonia; baseline",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "CT chest high-resolution (HRCT) without contrast (CPT 71250)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 1-2 weeks of diagnosis; URGENT if anti-MDA5, anti-Jo-1, or respiratory symptoms",
+          "target": "ILD pattern: NSIP (most common), UIP, organizing pneumonia, DAD (anti-MDA5); ground-glass opacities; basilar predominant",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "At presentation",
+          "target": "Conduction abnormalities; arrhythmias (myocarditis screen, especially anti-SRP)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Pulmonary function tests (PFTs) with DLCO (CPT 94010, 94729)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within first 2 weeks of diagnosis; baseline for ILD monitoring",
+          "target": "FVC >80% predicted; DLCO >80% predicted; restrictive pattern suggests ILD or respiratory muscle weakness",
+          "contraindications": "Unable to cooperate; active pneumothorax"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within first 2 weeks; URGENT if cardiac symptoms or anti-SRP positive",
+          "target": "Normal LV/RV function; no pericardial effusion; PASP <35 mmHg (screen for pulmonary HTN from ILD)",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "EMG/NCS (CPT 95886, 95907-95913)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "During initial workup; helps confirm myopathic process and guide biopsy",
+          "target": "Myopathic pattern: short-duration, low-amplitude, polyphasic MUAPs; fibrillations and positive sharp waves (active inflammation); increased insertional activity; normal NCS (unless overlap neuropathy)",
+          "contraindications": "None significant; avoid anticoagulated limbs for needle EMG"
+        },
+        {
+          "item": "MRI pelvis and proximal upper extremities (CPT 73221)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If thigh MRI insufficient or upper extremity involvement prominent",
+          "target": "Muscle edema pattern; guide biopsy site; assess disease extent",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 74177)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 1 month of diagnosis for malignancy screening; URGENT if anti-TIF1-gamma positive",
+          "target": "No occult malignancy",
+          "contraindications": "Contrast allergy; renal insufficiency"
+        },
+        {
+          "item": "PET/CT (FDG) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If anti-TIF1-gamma positive or age >40 with DM; comprehensive malignancy screen",
+          "target": "No FDG-avid malignancy; may also show active myositis",
+          "contraindications": "Uncontrolled diabetes (affects FDG uptake); pregnancy"
+        },
+        {
+          "item": "Cardiac MRI with contrast (CPT 75561)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If troponin elevated or echocardiogram abnormal; especially with anti-SRP",
+          "target": "No myocarditis; no late gadolinium enhancement",
+          "contraindications": "Pacemaker; GFR <30"
+        },
+        {
+          "item": "Whole-body MRI (WB-MRI)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Comprehensive assessment of muscle involvement if considering multiple biopsy sites",
+          "target": "Map of active inflammation vs chronic damage across all muscle groups",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia, GFR <30 (gadolinium)"
+        },
+        {
+          "item": "Barium swallow / Modified barium swallow (CPT 74220)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If dysphagia present; cricopharyngeal involvement common in inflammatory myopathy",
+          "target": "Normal swallow mechanics; no aspiration; no cricopharyngeal bar",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Esophageal manometry (CPT 91010)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If dysphagia without structural cause; proximal esophageal dysmotility",
+          "target": "Normal esophageal motility; abnormal proximal striated muscle segment suggests myositis",
+          "contraindications": "Unable to cooperate"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Muscle biopsy (open or needle) (CPT 20200, 20206)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "After MRI guidance; within 2-4 weeks of diagnosis; biopsy inflamed (not fatty) muscle; avoid recently EMG'd muscle on ipsilateral side",
+          "target": "DM: perifascicular atrophy, perivascular inflammation (CD4+/B cells), MAC deposition on capillaries. PM: endomysial inflammation with CD8+ T-cell invasion of non-necrotic fibers. IMNM: necrotic and regenerating fibers with minimal inflammation, MAC deposition on muscle fibers",
+          "contraindications": "Coagulopathy; anticoagulation (hold); infection at site"
+        },
+        {
+          "item": "Skin biopsy (if DM rash atypical)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If DM rash uncertain; distinguish from SLE, psoriasis, eczema",
+          "target": "Interface dermatitis; mucin deposition; perivascular lymphocytic infiltrate",
+          "contraindications": "Infection at site"
+        },
+        {
+          "item": "Mammography and/or breast MRI (CPT 77067)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Malignancy screening in DM (especially anti-TIF1-gamma); age-appropriate or if DM diagnosed",
+          "target": "No malignancy",
+          "contraindications": "Pregnancy (for mammography; MRI alternative)"
+        },
+        {
+          "item": "Colonoscopy (CPT 45378)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Malignancy screening if anti-TIF1-gamma positive or age >50 with any DM/PM",
+          "target": "No malignancy",
+          "contraindications": "Active GI bleeding; bowel perforation"
+        },
+        {
+          "item": "Pelvic ultrasound (female patients) (CPT 76856)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Ovarian cancer screening in female DM patients (especially anti-TIF1-gamma)",
+          "target": "No ovarian mass",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "PSA (male patients) (CPT 84153)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Prostate cancer screening in male DM patients",
+          "target": "Normal (<4 ng/mL)",
+          "contraindications": "None"
+        },
+        {
+          "item": "Nailfold capillaroscopy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "DM-specific microvascular assessment; correlates with disease activity; enlarged capillaries, dropout, hemorrhages",
+          "target": "Normal capillary architecture",
+          "contraindications": "None"
+        },
+        {
+          "item": "Right heart catheterization (CPT 93451)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "timing": "If echocardiogram suggests pulmonary hypertension (PASP >40); especially with chronic ILD",
+          "target": "mPAP <20 mmHg",
+          "contraindications": "Coagulopathy; active infection"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone IV (pulse therapy) (CPT 96365)",
+          "route": "IV",
+          "indication": "Severe active myositis; rapidly progressive ILD (anti-MDA5); dysphagia with aspiration risk; respiratory failure from ILD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (pulse therapy) (CPT 96365) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 60-90 min; followed by oral prednisone taper",
+            "orderSentence": "Methylprednisolone IV (pulse therapy) (CPT 96365) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis; GI bleeding",
+          "monitoring": "Glucose q6h (target <180); BP; mood/sleep; cardiac monitoring during infusion; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prednisone (high-dose oral)",
+          "route": "PO",
+          "indication": "Active inflammatory myopathy; transition from IV pulse therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Prednisone (high-dose oral) 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 80 mg) as single morning dose; maintain 4-8 weeks until CK normalizes and strength improves, then taper",
+            "orderSentence": "Prednisone (high-dose oral) 1 mg/kg PO"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis",
+          "monitoring": "Glucose, BP, weight, mood weekly inpatient; bone density baseline; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "Moderate-severe DM (ProDERM trial); dysphagia; steroid-refractory myositis; bridge therapy during steroid-sparing agent onset",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 2 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg total divided over 2-5 days (e.g., 0.4 g/kg/day x 5 days); then 2 g/kg every 4 weeks as maintenance; start infusion slow and increase per protocol",
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 2 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; recent thrombotic event",
+          "monitoring": "Vital signs q15min during first infusion; renal function (BUN, Cr); headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Plasmapheresis (PLEX) (CPT 36514)",
+          "route": "Extracorporeal",
+          "indication": "Severe/refractory myositis not responding to steroids/IVIG; anti-SRP IMNM; acute respiratory failure from ILD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 exchanges",
+                "orderSentence": "Plasmapheresis (PLEX) (CPT 36514) 5 exchanges Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "5 exchanges over 10-14 days (every other day); each exchange 1-1.5 plasma volumes; albumin replacement",
+            "orderSentence": "Plasmapheresis (PLEX) (CPT 36514) 5 exchanges Extracorporeal"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; active bleeding; poor vascular access",
+          "monitoring": "BP continuous during exchange; calcium (citrate toxicity); fibrinogen; CBC; electrolytes; line infection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis during steroids)",
+          "route": "PO",
+          "indication": "GI protection during high-dose corticosteroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mg PO daily while on steroids",
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale (steroid-induced hyperglycemia)",
+          "route": "SC",
+          "indication": "Glucose management during high-dose steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale (steroid-induced hyperglycemia) Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per institutional sliding scale protocol if glucose >180 mg/dL",
+            "orderSentence": "Insulin sliding scale (steroid-induced hyperglycemia) Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h minimum during pulse steroids",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "DVT prophylaxis: Enoxaparin",
+          "route": "SC",
+          "indication": "VTE prevention in immobilized patients with myositis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start on admission",
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding; platelets <50K; CrCl <30 (use UFH)",
+          "monitoring": "Platelets q3 days; anti-Xa if renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "DVT prophylaxis: Heparin SC (alternative)",
+          "route": "SC",
+          "indication": "VTE prevention if enoxaparin contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5000 units SC q8-12h",
+            "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
+          },
+          "contraindications": "Active bleeding; HIT history",
+          "monitoring": "Platelets q3 days",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Aggressive IV hydration (rhabdomyolysis)",
+          "route": "IV",
+          "indication": "Rhabdomyolysis prevention/treatment if CK >10,000; myoglobinuria",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-300 mL/h NS",
+                "orderSentence": "Aggressive IV hydration (rhabdomyolysis) 200-300 mL/h NS IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-300 mL/hr normal saline; target urine output >200 mL/h; consider sodium bicarbonate drip to alkalinize urine (target pH >6.5)",
+            "orderSentence": "Aggressive IV hydration (rhabdomyolysis) 200-300 mL/h NS IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "Urine output hourly; serum CK q6-12h; electrolytes q6h (hyperkalemia risk); renal function; urine pH",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Myalgia and arthralgia pain relief",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN; max 4 g/day (2 g if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe liver disease",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Arthralgia (anti-synthetase syndrome); mild myalgia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6-8h PRN with food; max 2400 mg/day; use lowest effective dose for shortest duration",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "contraindications": "Active GI bleeding; renal impairment; concurrent anticoagulation",
+          "monitoring": "Renal function; GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxychloroquine (Plaquenil)",
+          "route": "PO",
+          "indication": "DM skin disease (rash, photosensitivity); anti-synthetase syndrome arthritis; adjunctive immunomodulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Hydroxychloroquine (Plaquenil) 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO BID (max 5 mg/kg/day based on actual body weight); onset 2-3 months for skin benefit",
+            "orderSentence": "Hydroxychloroquine (Plaquenil) 200 mg PO"
+          },
+          "contraindications": "Retinal disease; G6PD deficiency; QTc prolongation",
+          "monitoring": "Baseline ophthalmologic exam; annual retinal screening after 5 years (or 1 year if high risk); ECG baseline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sunscreen and sun protection",
+          "route": "TOP",
+          "indication": "DM skin disease management; photosensitivity is hallmark of DM",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "SPF 50+",
+                "orderSentence": "Sunscreen and sun protection SPF 50+ TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply broad-spectrum SPF 50+ to all exposed areas daily; reapply q2h with sun exposure; photoprotective clothing",
+            "orderSentence": "Sunscreen and sun protection SPF 50+ TOP"
+          },
+          "contraindications": "None",
+          "monitoring": "Skin exam; rash activity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical corticosteroid (triamcinolone 0.1%)",
+          "route": "TOP",
+          "indication": "DM skin rash (Gottron papules, heliotrope, V-sign, shawl sign)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Thin layer",
+                "orderSentence": "Topical corticosteroid (triamcinolone 0.1%) Thin layer TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply thin layer to affected skin BID; avoid face for prolonged use (use hydrocortisone 1% or tacrolimus on face)",
+            "orderSentence": "Topical corticosteroid (triamcinolone 0.1%) Thin layer TOP"
+          },
+          "contraindications": "Skin infection at site; skin atrophy",
+          "monitoring": "Skin atrophy; telangiectasia; infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical tacrolimus 0.1% (Protopic)",
+          "route": "TOP",
+          "indication": "DM facial rash (heliotrope rash); steroid-sparing for facial skin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Thin layer",
+                "orderSentence": "Topical tacrolimus 0.1% (Protopic) Thin layer TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply thin layer to affected facial skin BID; onset 2-4 weeks",
+            "orderSentence": "Topical tacrolimus 0.1% (Protopic) Thin layer TOP"
+          },
+          "contraindications": "Skin infection; immunosuppression concern",
+          "monitoring": "Burning sensation (transient); skin infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium carbonate + Vitamin D (bone protection)",
+          "route": "PO",
+          "indication": "Osteoporosis prevention during chronic corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1200 mg Ca + 1000-2000 IU D",
+                "orderSentence": "Calcium carbonate + Vitamin D (bone protection) 1000-1200 mg Ca + 1000-2000 IU D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 1000-2000 IU PO daily while on chronic steroids",
+            "orderSentence": "Calcium carbonate + Vitamin D (bone protection) 1000-1200 mg Ca + 1000-2000 IU D PO"
+          },
+          "contraindications": "Hypercalcemia; hyperparathyroidism",
+          "monitoring": "Serum calcium; vitamin D level; DEXA if steroids >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alendronate (bone protection)",
+          "route": "PO",
+          "indication": "Osteoporosis prevention if chronic steroids anticipated >3 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "70 mg",
+                "orderSentence": "Alendronate (bone protection) 70 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "70 mg PO weekly on empty stomach; remain upright 30 min after",
+            "orderSentence": "Alendronate (bone protection) 70 mg PO"
+          },
+          "contraindications": "GFR <35; esophageal disorders; inability to remain upright 30 min",
+          "monitoring": "DEXA at baseline and q2 years; renal function; dental exam (ONJ risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trimethoprim-sulfamethoxazole (PCP prophylaxis)",
+          "route": "PO",
+          "indication": "PCP prevention if prednisone >=20 mg for >=4 weeks or concurrent immunosuppressants",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet (160/800 mg)",
+                "orderSentence": "Trimethoprim-sulfamethoxazole (PCP prophylaxis) 1 DS tablet (160/800 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 DS tablet (160/800 mg) PO daily or 3 times per week",
+            "orderSentence": "Trimethoprim-sulfamethoxazole (PCP prophylaxis) 1 DS tablet (160/800 mg) PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe renal impairment",
+          "monitoring": "CBC; renal function; use dapsone or atovaquone if allergic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation (immobility + opioid use)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "GI obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia (steroid-induced)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO qHS",
+            "orderSentence": "Melatonin 3-5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain or myalgia not responsive to simple analgesics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg PO qHS; increase by 300 mg/day every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation, dizziness; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Rituximab (Rituxan) (CPT 96365)",
+          "route": "IV",
+          "indication": "Refractory DM/PM not responding to conventional immunosuppressants; anti-SRP IMNM; anti-synthetase syndrome refractory to first-line",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2 or 1000 mg",
+                "orderSentence": "Rituximab (Rituxan) (CPT 96365) 375 mg/m2 or 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 weeks; OR 1000 mg IV x 2 doses 14 days apart; re-dose based on CD19/CD20 recovery and clinical response; onset 3-6 months",
+            "orderSentence": "Rituximab (Rituxan) (CPT 96365) 375 mg/m2 or 1000 mg IV"
+          },
+          "contraindications": "Active hepatitis B; active severe infection; severe immunodeficiency",
+          "monitoring": "HBV serology before; CD19/CD20 counts q3-6 months; immunoglobulins q6 months; PML risk (very rare); premedicate with acetaminophen, diphenhydramine, methylprednisolone",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tofacitinib (Xeljanz)",
+          "route": "PO",
+          "indication": "Refractory DM (especially skin disease); anti-MDA5 DM with ILD (emerging evidence); refractory anti-synthetase syndrome",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Tofacitinib (Xeljanz) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO BID; may increase to 11 mg daily (XR formulation); onset 1-3 months",
+            "orderSentence": "Tofacitinib (Xeljanz) 5 mg PO"
+          },
+          "contraindications": "Active serious infection; lymphopenia <500; current or history of DVT/PE (FDA black box); malignancy history",
+          "monitoring": "CBC q4-8 weeks; lipids at 4-8 weeks; LFTs; renal function; infection screen; VTE risk assessment; TB screening",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ruxolitinib (Jakafi)",
+          "route": "PO",
+          "indication": "Refractory DM skin disease; refractory anti-MDA5 ILD (emerging evidence)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Ruxolitinib (Jakafi) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID; may increase to 10 mg BID based on response and tolerability",
+            "orderSentence": "Ruxolitinib (Jakafi) 5 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; severe renal impairment; concurrent strong CYP3A4 inhibitors (reduce dose)",
+          "monitoring": "CBC weekly x 4 weeks then q2-4 weeks; lipids; LFTs; infection; VTE risk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcineurin inhibitor: Tacrolimus (rescue for anti-MDA5 ILD)",
+          "route": "PO",
+          "indication": "Anti-MDA5 rapidly progressive ILD (combined with steroids and cyclophosphamide as triple therapy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Calcineurin inhibitor: Tacrolimus (rescue for anti-MDA5 ILD) 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg PO BID; titrate to trough level 5-10 ng/mL; onset 2-4 weeks; used in Japanese triple-therapy protocol",
+            "orderSentence": "Calcineurin inhibitor: Tacrolimus (rescue for anti-MDA5 ILD) 1 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; renal impairment",
+          "monitoring": "Trough levels q1-2 weeks during titration; renal function; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cyclophosphamide (CPT 96365)",
+          "route": "IV",
+          "indication": "Rapidly progressive ILD (especially anti-MDA5); severe refractory myositis; anti-synthetase syndrome with progressive ILD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg/m2",
+                "orderSentence": "Cyclophosphamide (CPT 96365) 500-1000 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "IV pulse: 500-1000 mg/m2 monthly x 6 months; OR low-dose Euro-Lupus protocol: 500 mg IV every 2 weeks x 6 doses; MESNA prophylaxis with each dose",
+            "orderSentence": "Cyclophosphamide (CPT 96365) 500-1000 mg/m2 IV"
+          },
+          "contraindications": "Pregnancy; active infection; bone marrow suppression; hemorrhagic cystitis",
+          "monitoring": "CBC weekly; urinalysis (hemorrhagic cystitis); fertility counseling; malignancy risk; MESNA with IV dosing; aggressive hydration",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Combination therapy for anti-MDA5 ILD: Methylprednisolone + Tacrolimus + Cyclophosphamide",
+          "route": "IV/PO",
+          "indication": "Rapidly progressive ILD with anti-MDA5 antibody (Tsuji triple-therapy protocol; high mortality without aggressive treatment)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Methylpred 1000 mg IV x 3d + tacrolimus 1 mg BID + CYC 500-750 mg/m2",
+                "orderSentence": "Combination therapy for anti-MDA5 ILD: Methylprednisolone + Tacrolimus + Cyclophosphamide Methylpred 1000 mg IV x 3d + tacrolimus 1 mg BID + CYC 500-750 mg/m2 IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Pulse methylprednisolone 1000 mg IV x 3 days then prednisone 1 mg/kg + tacrolimus (trough 5-10 ng/mL) + IV cyclophosphamide 500-750 mg/m2 monthly; early combination improves survival",
+            "orderSentence": "Combination therapy for anti-MDA5 ILD: Methylprednisolone + Tacrolimus + Cyclophosphamide Methylpred 1000 mg IV x 3d + tacrolimus 1 mg BID + CYC 500-750 mg/m2 IV/PO"
+          },
+          "contraindications": "Active untreated infection; pregnancy; bone marrow suppression; hemorrhagic cystitis; uncontrolled diabetes; uncontrolled hypertension; renal impairment",
+          "monitoring": "Glucose q6h during pulse steroids; tacrolimus trough q1-2 weeks; CBC weekly; urinalysis (hemorrhagic cystitis); renal function; electrolytes; BP; combined immunosuppression toxicity; infection prophylaxis critical",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Second course IVIG",
+          "route": "IV",
+          "indication": "DM/PM with incomplete response to initial IVIG course; relapse during taper",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "Second course IVIG 2 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg total divided over 2-5 days; repeat q4 weeks as maintenance",
+            "orderSentence": "Second course IVIG 2 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; recent thrombotic event",
+          "monitoring": "Vital signs q15min during infusion; renal function (BUN, Cr); headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Methotrexate",
+          "route": "PO/SC",
+          "indication": "First-line steroid-sparing agent for PM and DM; anti-synthetase syndrome arthritis; onset 3-6 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-15 mg",
+                "orderSentence": "Methotrexate 10-15 mg PO/SC"
+              }
+            ],
+            "route": "PO/SC",
+            "instructions": "Start 10-15 mg PO/SC once weekly; increase by 5 mg every 4 weeks to target 20-25 mg/week; folic acid 1 mg PO daily (except methotrexate day) mandatory",
+            "orderSentence": "Methotrexate 10-15 mg PO/SC"
+          },
+          "pretreatment": "CBC, LFTs, renal function, hepatitis B/C serology, chest X-ray; TB screening",
+          "contraindications": "Pregnancy (Category X); hepatic disease; renal impairment (CrCl <30); active infection; pulmonary fibrosis (caution -- methotrexate pneumonitis vs ILD); concurrent TMP-SMX (increases toxicity)",
+          "monitoring": "CBC q2-4 weeks during titration then q8-12 weeks; LFTs q8-12 weeks; renal function; pulmonary symptoms (methotrexate pneumonitis); folic acid compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for PM and DM; maintenance therapy; onset 6-12 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day)",
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+          },
+          "pretreatment": "TPMT genotype/activity BEFORE starting (mandatory); CBC; LFTs; hepatitis B/C serology; TB screening",
+          "contraindications": "TPMT deficiency (homozygous); concurrent allopurinol (reduce azathioprine dose by 75%); pregnancy (relative -- discuss risk/benefit)",
+          "monitoring": "TPMT before starting; CBC q1-2 weeks during titration then monthly; LFTs q4-8 weeks; lymphocyte count target 600-1000; amylase/lipase if abdominal pain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for DM and PM; ILD associated with anti-synthetase syndrome; onset 3-6 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day in divided doses",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+          },
+          "pretreatment": "CBC, LFTs, renal function; hepatitis B/C serology; TB screening; pregnancy test (females)",
+          "contraindications": "Pregnancy (Category D -- teratogenic); concurrent azathioprine; active infection",
+          "monitoring": "CBC q2 weeks x 3 months then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tacrolimus",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; particularly effective for anti-synthetase syndrome and ILD; faster onset than azathioprine/mycophenolate (2-3 months)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Tacrolimus 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg PO BID; titrate to trough level 5-10 ng/mL; onset 2-3 months",
+            "orderSentence": "Tacrolimus 1 mg PO"
+          },
+          "pretreatment": "CBC, LFTs, renal function; electrolytes; glucose; BP; hepatitis B/C serology",
+          "contraindications": "Uncontrolled hypertension; renal impairment; concurrent strong CYP3A4 inhibitors",
+          "monitoring": "Trough levels q1-2 weeks during titration then q1-3 months; renal function; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (chronic taper)",
+          "route": "PO",
+          "indication": "Long-term immunosuppression taper; target lowest effective dose with steroid-sparing agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Prednisone (chronic taper) 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Once stable on target dose with steroid-sparing agent for 4-8 weeks: decrease by 5-10 mg every 2-4 weeks until 20 mg, then 2.5-5 mg monthly; target <10 mg daily or off; many patients require long-term low-dose (5-10 mg)",
+            "orderSentence": "Prednisone (chronic taper) 5-10 mg PO"
+          },
+          "pretreatment": "Stable on steroid-sparing agent at target dose for 4-8 weeks before initiating taper",
+          "contraindications": "Do NOT stop abruptly if >2 weeks of therapy; active infection",
+          "monitoring": "Adrenal insufficiency symptoms; disease flare; cortisol level if concerns about adrenal suppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG (maintenance)",
+          "route": "IV",
+          "indication": "Maintenance immunomodulation for DM (FDA evidence from ProDERM); steroid-sparing; refractory disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (maintenance) 2 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg IV divided over 2-5 days every 4 weeks; may reduce frequency to q6-8 weeks if stable",
+            "orderSentence": "IVIG (maintenance) 2 g/kg IV"
+          },
+          "pretreatment": "IgA level, renal function, CBC; hepatitis B serology",
+          "contraindications": "IgA deficiency; renal failure; recent thrombotic event",
+          "monitoring": "Pre-infusion renal function; vital signs during infusion; headache; thrombosis risk; renal function trending",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Subcutaneous immunoglobulin (SCIg)",
+          "route": "SC",
+          "indication": "Alternative to IVIG for maintenance; patient self-administration; fewer systemic side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Weight-based",
+                "orderSentence": "Subcutaneous immunoglobulin (SCIg) Weight-based SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Equivalent monthly dose to IVIG divided into weekly SC infusions; multiple sites simultaneously; onset immediate (conversion from IVIG)",
+            "orderSentence": "Subcutaneous immunoglobulin (SCIg) Weight-based SC"
+          },
+          "pretreatment": "IgA level; renal function; adequate SC tissue assessment",
+          "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; recent thrombotic event; inadequate SC tissue",
+          "monitoring": "Local infusion site reactions; IgG trough levels; renal function; thrombotic events",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/Neuromuscular specialist for diagnostic confirmation, antibody interpretation, and immunotherapy guidance",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rheumatology co-management for overlap connective tissue disease, shared immunotherapy decisions, and skin disease management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology for ILD evaluation, PFT interpretation, and respiratory management (mandatory if anti-Jo-1, anti-MDA5, or any respiratory symptoms)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dermatology for DM rash management, skin biopsy if needed, and photosensitivity counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oncology referral for malignancy screening and management (mandatory if anti-TIF1-gamma positive or age >40 with new DM)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation given dysphagia risk (cricopharyngeal and proximal esophageal involvement common in inflammatory myopathy)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for proximal weakness rehabilitation, fall prevention, and graded exercise program (avoid eccentric exercise during active inflammation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, energy conservation, and upper extremity function given proximal weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology if elevated troponin, arrhythmia, or anti-SRP antibody positive (myocarditis risk)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gastroenterology for dysphagia evaluation (esophageal manometry, EGD) and malignancy screening (colonoscopy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gynecology for ovarian cancer screening in female DM patients (especially anti-TIF1-gamma positive)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability evaluation, insurance navigation for biologic therapies, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for IVIG, rituximab, or cyclophosphamide infusion scheduling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if refractory myalgia or arthralgia not responding to standard analgesics and immunotherapy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/Psychology for adjustment to chronic illness, depression screening, and steroid-induced mood disturbance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/Dietetics for dysphagia diet modification, weight management on steroids, and nutritional optimization for muscle recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for severely refractory disease with significant symptom burden and goals of care discussion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if worsening difficulty breathing or new shortness of breath (may indicate ILD progression or respiratory muscle failure)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if worsening difficulty swallowing, choking on food or liquids, or new voice changes (aspiration risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if dark brown or cola-colored urine (may indicate rhabdomyolysis requiring urgent IV fluids)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Return to ED if new chest pain or palpitations (may indicate myocarditis or cardiac involvement)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any new rash or worsening skin changes to neurology/rheumatology (may indicate disease flare or new DM diagnosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do NOT stop prednisone or immunosuppressant abruptly (adrenal crisis risk; disease flare risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Monitor and report progressive difficulty climbing stairs, rising from chairs, reaching overhead, or lifting head from pillow (proximal weakness worsening)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid sun exposure and use broad-spectrum SPF 50+ sunscreen daily for DM skin disease (UV light worsens DM rash)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any fever or signs of infection immediately to treating physician (immunosuppression increases infection risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Take medications as prescribed; bring complete medication list to ALL healthcare visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Attend all scheduled follow-up appointments (CK monitoring and strength assessment are essential to guide treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Do not drive if significant proximal weakness limits ability to safely operate vehicle pedals or steering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Use fall precautions including grab bars, non-slip mats, and assistive devices as recommended by PT/OT given proximal weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Rest before meals if dysphagia present; eat smaller, more frequent meals; sit upright for 30 min after eating",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any new lump, unexplained weight loss, blood in stool/urine, or persistent pain (malignancy screening is important in myositis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Graded exercise program supervised by physical therapist -- low-impact aerobic exercise (walking, swimming, stationary bike) is safe and beneficial even during active disease; avoid eccentric/high-resistance exercise during active inflammation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Strict sun protection for all DM patients: broad-spectrum SPF 50+ daily, photoprotective clothing, wide-brimmed hat, avoid peak UV hours (10am-4pm)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation as smoking worsens ILD and impairs immune function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Balanced high-protein diet to support muscle recovery (1.2-1.5 g/kg/day protein); adequate calcium and vitamin D intake for bone health on steroids",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Low-sodium diet to reduce fluid retention and blood pressure elevation on corticosteroids",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Influenza vaccination (inactivated) annually; pneumococcal vaccination per schedule; avoid live vaccines during immunosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Shingles vaccination (Shingrix -- non-live recombinant vaccine) if age >=50 or immunosuppressed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete all vaccinations before starting immunosuppression when possible (ideally 4-6 weeks before rituximab)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Annual dermatologic exam for skin cancer screening given immunosuppression and DM skin disease",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Annual age-appropriate malignancy screening for 3-5 years after DM diagnosis (highest cancer risk in first 3 years)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Energy conservation techniques: prioritize tasks, use adaptive equipment, plan rest periods throughout the day",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home safety evaluation to remove fall hazards given proximal weakness and fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol limitation as alcohol interacts with methotrexate (hepatotoxicity) and immunosuppressants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep (7-9 hours) to promote immune health and muscle recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Inclusion body myositis (IBM)",
+      "features": "Age >50; insidious onset; distal weakness (finger flexors, wrist flexors, quadriceps); asymmetric; refractory to immunotherapy; CK mildly elevated or normal",
+      "tests": "Muscle biopsy (rimmed vacuoles, eosinophilic inclusions, congophilic amyloid deposits); anti-cN1A antibody; EMG (mixed myopathic + neurogenic pattern)"
+    },
+    {
+      "diagnosis": "Hypothyroid myopathy",
+      "features": "Proximal weakness with fatigue; elevated CK (mild); hypothyroid symptoms (weight gain, cold intolerance, constipation); delayed relaxation of reflexes",
+      "tests": "TSH (elevated); free T4 (low); CK normalizes with thyroid replacement"
+    },
+    {
+      "diagnosis": "Drug-induced myopathy (statins, colchicine, steroids)",
+      "features": "Temporal correlation with drug initiation; statin myopathy most common; steroid myopathy causes proximal weakness without CK elevation",
+      "tests": "Drug history; CK may or may not be elevated (statin); improvement after drug discontinuation; EMG may be normal or myopathic; biopsy shows type 2 fiber atrophy (steroid myopathy)"
+    },
+    {
+      "diagnosis": "Muscular dystrophy (limb-girdle, dystrophinopathy)",
+      "features": "Earlier onset (variable); family history; progressive without remission; specific pattern of weakness; no rash",
+      "tests": "Genetic testing; CK elevated; muscle biopsy (dystrophic changes, absent/reduced protein on immunostaining); no inflammation or perifascicular atrophy"
+    },
+    {
+      "diagnosis": "Motor neuron disease (ALS)",
+      "features": "Fasciculations; upper motor neuron signs (hyperreflexia, Babinski); mixed UMN/LMN pattern; bulbar onset may mimic dysphagia; no rash; no CK elevation or mild only",
+      "tests": "EMG (widespread active denervation, fasciculations); normal muscle enzymes or mildly elevated CK; no myositis antibodies"
+    },
+    {
+      "diagnosis": "Myasthenia gravis",
+      "features": "Fatigable weakness (worse with repetitive use, improves with rest); ocular involvement (ptosis, diplopia); normal CK; intact reflexes",
+      "tests": "AChR/MuSK antibodies; RNS (decremental response); SFEMG (increased jitter); normal CK; ice pack test"
+    },
+    {
+      "diagnosis": "Lambert-Eaton myasthenic syndrome (LEMS)",
+      "features": "Proximal weakness with facilitation (improvement after brief exercise); autonomic dysfunction; often paraneoplastic (SCLC)",
+      "tests": "VGCC antibody; RNS (incremental response at high rate); CT chest for malignancy"
+    },
+    {
+      "diagnosis": "Polymyalgia rheumatica (PMR)",
+      "features": "Age >50; proximal pain/stiffness more than weakness; elevated ESR/CRP; rapid response to low-dose prednisone (15-20 mg); normal CK; normal strength on exam",
+      "tests": "ESR/CRP markedly elevated; CK normal; EMG normal; dramatic response to low-dose prednisone; PET/CT may show bursitis/synovitis"
+    },
+    {
+      "diagnosis": "Endocrine myopathy (Cushing, Addison, hyperparathyroidism)",
+      "features": "Associated endocrine symptoms; steroid myopathy presents with proximal weakness but normal CK; insidious onset",
+      "tests": "Cortisol, ACTH, calcium, PTH; CK normal in steroid myopathy; EMG may be normal; biopsy shows type 2 fiber atrophy"
+    },
+    {
+      "diagnosis": "Metabolic myopathy (McArdle, Pompe, mitochondrial)",
+      "features": "Exercise intolerance; second wind phenomenon (McArdle); ptosis and ophthalmoparesis (mitochondrial); infantile or late-onset forms (Pompe)",
+      "tests": "Acid alpha-glucosidase activity (Pompe); myophosphorylase activity (McArdle); lactate/pyruvate ratio; genetic testing; muscle biopsy (ragged red fibers, vacuoles)"
+    },
+    {
+      "diagnosis": "Viral myositis (influenza, HIV, HTLV-1)",
+      "features": "Acute onset with viral prodrome; self-limited in influenza; HIV/HTLV-1 chronic",
+      "tests": "Viral serology; self-limited course (influenza); HIV testing; biopsy if persistent"
+    },
+    {
+      "diagnosis": "Sarcoidosis (muscular)",
+      "features": "Granulomatous myopathy; systemic involvement (lungs, skin, eyes, lymph nodes); elevated ACE level",
+      "tests": "ACE level; chest CT (hilar lymphadenopathy); muscle biopsy (non-caseating granulomas); gallium scan or PET/CT"
+    },
+    {
+      "diagnosis": "Parasitic myositis (trichinosis, toxoplasmosis)",
+      "features": "Eosinophilia; travel/exposure history; periorbital edema (trichinosis); fever",
+      "tests": "Eosinophil count; serology; muscle biopsy (larvae/cysts)"
+    },
+    {
+      "diagnosis": "Overlap myositis (SLE, scleroderma, Sjogren, MCTD)",
+      "features": "Features of multiple autoimmune diseases; Raynaud phenomenon; sclerodactyly; sicca symptoms; malar rash",
+      "tests": "ANA, anti-dsDNA, anti-Scl-70, anti-U1 RNP, anti-SSA/SSB; specific overlap antibodies (anti-PM-Scl, anti-Ku)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IVIG for dermatomyositis (ProDERM trial)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Aggarwal R et al. NEJM 2022](https://pubmed.ncbi.nlm.nih.gov/36260794/)"
+    },
+    {
+      "recommendation": "Myositis-specific antibody classification and clinical significance",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Betteridge Z et al. Nat Rev Rheumatol 2020](https://pubmed.ncbi.nlm.nih.gov/32839602/)"
+    },
+    {
+      "recommendation": "Anti-TIF1-gamma association with malignancy in DM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Trallero-Araguas E et al. Rheumatology 2012](https://pubmed.ncbi.nlm.nih.gov/22539482/); [Oldroyd A et al. Rheumatology 2019](https://pubmed.ncbi.nlm.nih.gov/30590730/)"
+    },
+    {
+      "recommendation": "Anti-MDA5 and rapidly progressive ILD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Sato S et al. Arthritis Rheum 2009](https://pubmed.ncbi.nlm.nih.gov/19248105/); [Moghadam-Kia S et al. Chest 2016](https://pubmed.ncbi.nlm.nih.gov/27445093/)"
+    },
+    {
+      "recommendation": "Anti-SRP and immune-mediated necrotizing myopathy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Hengstman GJ et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16634041/); [Allenbach Y et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24808022/)"
+    },
+    {
+      "recommendation": "Anti-HMGCR necrotizing myopathy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Mammen AL et al. N Engl J Med 2011](https://pubmed.ncbi.nlm.nih.gov/21992115/)"
+    },
+    {
+      "recommendation": "High-dose corticosteroids as first-line treatment",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Expert consensus; [Oddis CV, Aggarwal R. Nat Rev Rheumatol 2018](https://pubmed.ncbi.nlm.nih.gov/29867057/)"
+    },
+    {
+      "recommendation": "Methotrexate as steroid-sparing agent",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/7432151/)"
+    },
+    {
+      "recommendation": "Azathioprine as steroid-sparing agent",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bunch TW et al. Medicine 1980](https://pubmed.ncbi.nlm.nih.gov/7432151/)"
+    },
+    {
+      "recommendation": "Mycophenolate for inflammatory myopathy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rowin J et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16966546/); [Pisoni CN et al. Rheumatology 2007](https://pubmed.ncbi.nlm.nih.gov/17586862/)"
+    },
+    {
+      "recommendation": "Rituximab for refractory inflammatory myopathy (RIM trial)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Oddis CV et al. Arthritis Rheum 2013](https://pubmed.ncbi.nlm.nih.gov/23740368/)"
+    },
+    {
+      "recommendation": "Cyclophosphamide for ILD in anti-synthetase syndrome",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Fischer A et al. J Rheumatol 2006](https://pubmed.ncbi.nlm.nih.gov/16652425/)"
+    },
+    {
+      "recommendation": "Triple therapy (steroids + tacrolimus + cyclophosphamide) for anti-MDA5 ILD",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Tsuji H et al. Rheumatology 2020](https://pubmed.ncbi.nlm.nih.gov/31697388/)"
+    },
+    {
+      "recommendation": "JAK inhibitors (tofacitinib) for refractory DM",
+      "evidenceLevel": "Class III (case series)",
+      "source": "[Chen Z et al. Clin Rheumatol 2021](https://pubmed.ncbi.nlm.nih.gov/33420630/); [Paik JJ et al. Brain 2021](https://pubmed.ncbi.nlm.nih.gov/33585898/)"
+    },
+    {
+      "recommendation": "Hydroxychloroquine for DM skin disease",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Ang GC, Werth VP. Curr Rheumatol Rep 2005](https://pubmed.ncbi.nlm.nih.gov/16078084/)"
+    },
+    {
+      "recommendation": "ENMC classification of inflammatory myopathies",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Hoogendijk JE et al. Neuromuscul Disord 2004](https://pubmed.ncbi.nlm.nih.gov/14609683/)"
+    },
+    {
+      "recommendation": "ACR/EULAR classification criteria for idiopathic inflammatory myopathies",
+      "evidenceLevel": "Class I",
+      "source": "[Lundberg IE et al. Ann Rheum Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28646086/)"
+    },
+    {
+      "recommendation": "Muscle biopsy findings in DM vs PM vs IMNM",
+      "evidenceLevel": "Class II",
+      "source": "[Dalakas MC. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/26132883/)"
+    },
+    {
+      "recommendation": "Malignancy screening in dermatomyositis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Hill CL et al. Lancet 2001](https://pubmed.ncbi.nlm.nih.gov/11166885/); [Olazagasti JM et al. Arthritis Care Res 2015](https://pubmed.ncbi.nlm.nih.gov/25155471/)"
+    },
+    {
+      "recommendation": "MRI for guiding muscle biopsy site selection",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Tomasova Studynkova J et al. Rheumatology 2007](https://pubmed.ncbi.nlm.nih.gov/17478465/)"
+    },
+    {
+      "recommendation": "Exercise safety and benefit in inflammatory myopathy",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Alemo Munters L et al. Arthritis Res Ther 2013](https://pubmed.ncbi.nlm.nih.gov/24286216/)"
+    },
+    {
+      "recommendation": "Anti-synthetase syndrome clinical spectrum",
+      "evidenceLevel": "Class II",
+      "source": "[Connors GR et al. Semin Respir Crit Care Med 2010](https://pubmed.ncbi.nlm.nih.gov/21213203/)"
+    },
+    {
+      "recommendation": "DVT prophylaxis in immobilized patients",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Standard of care for immobilized patients"
+    },
+    {
+      "recommendation": "PCP prophylaxis during immunosuppression",
+      "evidenceLevel": "Class II, Level C",
+      "source": "Expert consensus; standard infectious disease practice"
+    },
+    {
+      "recommendation": "Rhabdomyolysis management with aggressive IV hydration",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Bosch X et al. NEJM 2009](https://pubmed.ncbi.nlm.nih.gov/19571312/)"
+    },
+    {
+      "recommendation": "Dysphagia management in inflammatory myopathy",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/17583772/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Creatine kinase (CK)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q24-48h inpatient during acute phase; q2-4 weeks outpatient during treatment; q3 months when stable",
+      "action": "If CK rising or not declining: reassess immunotherapy intensity; check compliance; consider refractory disease or alternative diagnosis"
+    },
+    {
+      "item": "Muscle strength (MMT)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Each visit; standardized manual muscle testing of proximal groups (deltoid, hip flexors, neck flexors)",
+      "action": "If worsening: increase immunotherapy; reassess diagnosis; consider biopsy if not done"
+    },
+    {
+      "item": "FVC and DLCO (PFTs)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline then q3-6 months; q1-2 months if ILD present or anti-MDA5/anti-Jo-1 positive",
+      "action": "If declining >10% FVC or >15% DLCO: escalate ILD treatment; pulmonology referral; repeat HRCT"
+    },
+    {
+      "item": "HRCT chest",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; repeat q6-12 months if ILD present; sooner if symptoms worsen",
+      "action": "If progressive: escalate immunotherapy (cyclophosphamide, rituximab, JAK inhibitor); consider lung transplant referral if refractory"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q6h during pulse steroids; daily during high-dose oral; HbA1c q3 months on chronic steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent hyperglycemia; attempt steroid taper"
+    },
+    {
+      "item": "CBC with differential",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q2-4 weeks during immunosuppressant titration; then q4-8 weeks when stable",
+      "action": "Hold/reduce immunosuppressant if cytopenic; G-CSF if severe neutropenia; infection evaluation if febrile"
+    },
+    {
+      "item": "LFTs (AST, ALT, ALP, bilirubin)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q2-4 weeks during methotrexate/azathioprine titration; then q8-12 weeks",
+      "action": "If hepatic transaminases rising (disproportionate to CK): hold offending agent; hepatology referral; consider alternative steroid-sparing agent"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q24h during rhabdomyolysis; q1-3 months on tacrolimus; q3 months otherwise",
+      "action": "If declining: aggressive hydration during rhabdomyolysis; dose-adjust nephrotoxic agents; nephrology referral"
+    },
+    {
+      "item": "TPMT genotype/activity (before azathioprine)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Once before starting azathioprine",
+      "action": "Adjust or avoid azathioprine based on TPMT status"
+    },
+    {
+      "item": "Tacrolimus trough level",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q1-2 weeks during titration; then q1-3 months",
+      "action": "Dose adjustment based on level and clinical response"
+    },
+    {
+      "item": "CD19/CD20 B-cell counts (if on rituximab)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q3-6 months",
+      "action": "Redose rituximab when B-cells recover and symptoms worsen"
+    },
+    {
+      "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "q6 months if on rituximab or chronic immunosuppression",
+      "action": "IVIG replacement if symptomatic hypogammaglobulinemia with recurrent infections"
+    },
+    {
+      "item": "Swallowing function",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily if dysphagia present; each clinic visit",
+      "action": "NPO if aspiration risk; SLP reevaluation; may need NG tube or PEG"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline if starting chronic steroids; repeat q2 years",
+      "action": "Bisphosphonate; calcium/vitamin D; endocrine referral"
+    },
+    {
+      "item": "Ophthalmologic exam (if on HCQ)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline; annual after 5 years (or 1 year if high risk)",
+      "action": "Discontinue HCQ if retinal toxicity detected"
+    },
+    {
+      "item": "Malignancy screening (DM patients)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At diagnosis; annually for 3-5 years after DM diagnosis; comprehensive if anti-TIF1-gamma positive",
+      "action": "Oncology referral if malignancy identified"
+    },
+    {
+      "item": "Cardiac monitoring (troponin, ECG, echo)",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT",
+      "frequency": "Baseline; repeat if symptoms; annually if anti-SRP positive",
+      "action": "Cardiology referral; cardiac MRI if troponin elevated"
+    },
+    {
+      "item": "Urine output and urine color",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Hourly during rhabdomyolysis; daily inpatient otherwise",
+      "action": "Aggressive IV hydration; consider bicarbonate drip; nephrology if oliguric"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Mild myositis with preserved functional ability (able to rise from chair, climb stairs, lift arms overhead); stable CK and trending down; adequate oral intake and safe swallow; oral medications tolerated; no ILD or stable ILD; reliable outpatient follow-up within 1-2 weeks; understands return precautions"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Moderate-severe proximal weakness (unable to rise from chair or climb stairs without assistance); CK >5000 or rising; new diagnosis requiring expedited workup including muscle biopsy; dysphagia requiring diet modification; ILD requiring monitoring; IVIG infusion; steroid initiation with monitoring needs"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rhabdomyolysis with CK >10,000 and myoglobinuria (renal failure risk); respiratory failure from ILD (especially anti-MDA5 rapidly progressive ILD); severe dysphagia with aspiration pneumonia; cardiac involvement (myocarditis, arrhythmia); hemodynamic instability during PLEX"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for PLEX not available on-site; need for muscle biopsy with neuromuscular pathology expertise; neuromuscular specialist not available; rapidly progressive ILD requiring advanced respiratory support; consideration for lung transplant evaluation"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant proximal weakness limiting ADLs (unable to walk independently); able to participate in 3h/day therapy; medically stable; oral medications established; no active rhabdomyolysis"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehabilitation; requires ongoing nursing care; severe deconditioning; chronic high-level care needs"
+    }
+  ]
+}

@@ -1,0 +1,1843 @@
+{
+  "id": "mogad",
+  "title": "MOG Antibody Disease (MOGAD)",
+  "version": "1.1",
+  "icd10": [
+    "** G36.9 (Acute disseminated demyelination",
+    "unspecified)",
+    "G36.0 (Neuromyelitis optica)"
+  ],
+  "scope": "** Diagnosis, acute treatment, relapse prevention, and long-term monitoring of MOG antibody disease (MOGAD). Covers MOG-IgG testing and interpretation, clinical phenotypes (optic neuritis, transverse myelitis, ADEM-like presentations, brainstem/cerebellar syndromes), differentiation from MS and NMOSD (AQP4), acute attack treatment (IV methylprednisolone, IVIG, PLEX), slow oral steroid taper, maintenance immunotherapy (IVIG, azathioprine, mycophenolate, rituximab), monophasic vs relapsing disease course, and serial MOG-IgG titer monitoring. Excludes AQP4-positive NMOSD (use \"NMOSD\" template) and MS (use \"MS - New Diagnosis\" template).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; pre-immunotherapy assessment",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; renal/hepatic baseline for immunotherapy dosing",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory/vasculitis screen; systemic autoimmune disease evaluation",
+          "target": "Normal (<20 mm/hr)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Pre-steroid baseline; metabolic encephalopathy screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before high-dose steroid therapy",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction as encephalopathy/myelopathy mimic",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81003+87086)",
+          "rationale": "UTI as symptom trigger; infection screen before immunotherapy",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulopathy screen before lumbar puncture",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "rationale": "Rule out sepsis if febrile or acutely ill",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (females of childbearing age) (CPT 81025)",
+          "rationale": "Treatment planning (teratogenicity of immunotherapy); MRI contrast safety",
+          "target": "As applicable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Electrolyte baseline; seizure threshold assessment (ADEM presentation)",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "**MOG-IgG antibody (serum) -- live cell-based assay (CBA)** (CPT 86255)",
+          "rationale": "Diagnostic: MOG-IgG seropositivity defines MOGAD; serum is the primary test specimen; live CBA preferred over fixed CBA or ELISA for sensitivity/specificity",
+          "target": "Positive (titer reported)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**AQP4-IgG (NMO-IgG) antibody (serum) -- cell-based assay** (CPT 86255)",
+          "rationale": "Differentiation: AQP4-positive NMOSD has different treatment and prognosis; dual-positive (MOG+/AQP4+) is extremely rare -- retest if occurs",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Lupus cerebritis and systemic autoimmune disease screen",
+          "target": "Negative or low titer",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-dsDNA (CPT 86225)",
+          "rationale": "If ANA positive; SLE evaluation",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA/SSB (Ro/La)",
+          "rationale": "Sjogren syndrome with CNS involvement",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency myelopathy/optic neuropathy mimic",
+          "target": "Normal (>300 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Folate deficiency myelopathy mimic",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D (25-OH) (CPT 82306)",
+          "rationale": "Low levels associated with demyelinating disease activity",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV-associated myelopathy and optic neuropathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis causes optic neuropathy and myelopathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (ELISA with reflex Western blot)",
+          "rationale": "Endemic areas; neuroborreliosis causes cranial neuropathy and myelitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis causes optic neuropathy and myelopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "rationale": "Baseline before IVIG or rituximab; IgA deficiency is IVIG contraindication",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen, anti-HBc, anti-HBs (CPT 80074)",
+          "rationale": "Screen before rituximab; reactivation risk with B-cell depletion",
+          "target": "Negative (or immune from vaccination)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Anti-NMDAR antibody (serum and CSF)",
+          "rationale": "Overlap syndrome: anti-NMDAR encephalitis can co-occur with MOG-IgG positivity",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel (serum)",
+          "rationale": "Atypical features or poor treatment response; optic neuropathy/myelopathy with occult malignancy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GAD65 antibody",
+          "rationale": "Stiff-person spectrum; autoimmune cerebellar ataxia; overlap evaluation",
+          "target": "Negative or low titer",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA panel (CPT 86235)",
+          "rationale": "CNS vasculitis (granulomatosis with polyangiitis causes pachymeningitis, optic neuropathy)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper, ceruloplasmin (CPT 82390)",
+          "rationale": "Wilson disease in young patients with brain and spinal cord lesions",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mitochondrial DNA studies (LHON mutations)",
+          "rationale": "Leber hereditary optic neuropathy mimic (bilateral optic neuritis in young males)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Very long chain fatty acids",
+          "rationale": "Adrenomyeloneuropathy (myelopathy in young males)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GFAP antibody (serum and CSF)",
+          "rationale": "Autoimmune GFAP astrocytopathy overlap; perivascular radial enhancement pattern",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP assessment; may be elevated in MOGAD with cerebral edema",
+          "target": "10-20 cm H2O",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Lymphocytic or neutrophilic pleocytosis common in acute MOGAD; neutrophils more common than in MS",
+          "target": "WBC 10-100+ (often mixed or neutrophil-predominant early); RBC 0",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Mildly to moderately elevated in acute attacks",
+          "target": "Normal to moderately elevated (50-150 mg/dL typical)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Low glucose suggests infection or carcinomatous meningitis",
+          "target": "Normal (>60% of serum)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HSV 1/2 PCR (CPT 87529)",
+          "rationale": "Rule out HSV encephalitis (especially with ADEM-like presentation)",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "VZV PCR",
+          "rationale": "Varicella vasculopathy and myelitis mimic",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "rationale": "Typically ABSENT in MOGAD (present in >95% of MS); key differentiating feature",
+          "target": "Negative (absent CSF-restricted OCBs)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index",
+          "rationale": "Intrathecal IgG synthesis; typically normal in MOGAD",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Rule out carcinomatous meningitis if atypical",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "rationale": "Neurosyphilis causes optic neuropathy and myelitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Myelin basic protein (CPT 83519)",
+          "rationale": "Elevated in acute demyelination; supports active attack but non-specific",
+          "target": "Elevated during acute attack; normal between attacks",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB culture and smear (CPT 87116)",
+          "rationale": "TB myelitis if risk factors present",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24h if acute; within 2 weeks if stable",
+          "target": "Fluffy/ill-defined T2/FLAIR white matter lesions; deep gray matter involvement; thalamic lesions (ADEM-like); cortical lesions; absent Dawson fingers (unlike MS)",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI orbits with and without contrast and fat suppression (CPT 70543)",
+          "timing": "Within 24-48h if optic neuritis suspected",
+          "target": "Optic nerve enhancement with perineural enhancement (characteristic of MOGAD); bilateral involvement common; anterior/long segment enhancement (unlike MS short segment)",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI C-spine with and without contrast (CPT 72156)",
+          "timing": "With brain MRI",
+          "target": "Longitudinally extensive transverse myelitis (LETM >=3 segments); central/H-sign cord lesion; conus medullaris involvement",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI T-spine with and without contrast (CPT 72157)",
+          "timing": "With brain/C-spine MRI",
+          "target": "LETM; conus medullaris involvement (more common in MOGAD than MS/NMOSD)",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate (ED triage)",
+          "target": "Rule out hemorrhage, mass, hydrocephalus before LP",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Baseline cardiac rhythm; QTc assessment for medication safety",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Visual evoked potentials (VEP) (CPT 95930)",
+          "timing": "During workup",
+          "target": "Prolonged P100 latency (subclinical or prior optic nerve involvement); often recovers well in MOGAD",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "OCT (Optical coherence tomography) (CPT 92134)",
+          "timing": "Baseline and follow-up",
+          "target": "RNFL thinning (prior optic neuritis); pRNFL often better preserved than AQP4-NMOSD",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain with epilepsy protocol",
+          "timing": "If seizures present (ADEM-like presentation)",
+          "target": "Cortical involvement; subtle signal changes",
+          "contraindications": "Gadolinium contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest with contrast (CPT 71260)",
+          "timing": "If atypical features or paraneoplastic concern",
+          "target": "Rule out occult malignancy (thymoma, lymphoma)",
+          "contraindications": "Contrast allergy, renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FDG-PET brain",
+          "timing": "If diagnostic uncertainty",
+          "target": "Metabolic changes corresponding to inflammatory lesions",
+          "contraindications": "Uncontrolled diabetes, pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Conventional cerebral angiography",
+          "timing": "If vasculitis strongly suspected",
+          "target": "Rule out CNS vasculitis",
+          "contraindications": "Contrast allergy, coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain with 7T (research)",
+          "timing": "Diagnostic uncertainty between MS and MOGAD",
+          "target": "Central vein sign absent in MOGAD (present in MS); paramagnetic rim lesions absent in MOGAD",
+          "contraindications": "GFR <30, gadolinium allergy, pacemaker",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone IV (CPT 96365)",
+          "route": "IV",
+          "indication": "First-line acute attack treatment for MOGAD optic neuritis, transverse myelitis, or ADEM-like attacks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 5 days; infuse over 1-2 hours; follow with slow oral prednisone taper",
+            "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids; active GI bleeding",
+          "monitoring": "Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis with PPI",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole (GI prophylaxis during steroids)",
+          "route": "PO/IV",
+          "indication": "GI ulcer prevention during high-dose steroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO/IV daily during IV steroid course and oral taper",
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per institutional protocol if glucose >180 mg/dL",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h; adjust per response",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "Alternative first-line acute treatment; especially useful if steroids contraindicated or if steroid-refractory; strong evidence in MOGAD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen 650 mg and diphenhydramine 25 mg",
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure",
+          "monitoring": "Renal function daily; headache (aseptic meningitis); thrombosis risk; volume overload; check IgA level before first dose",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Oral prednisone taper (CRITICAL: slow taper)",
+          "route": "PO",
+          "indication": "Post-IV steroid taper; HIGH RELAPSE RATE with rapid taper in MOGAD -- taper over 3-6 months minimum",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Oral prednisone taper (CRITICAL: slow taper) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg/kg/day (max 60 mg) after IV pulse; taper: 60 mg x 2 wk; 50 mg x 2 wk; 40 mg x 2 wk; 30 mg x 2 wk; 20 mg x 2 wk; 15 mg x 2 wk; 10 mg x 2 wk; 5 mg x 2 wk; then stop; do NOT taper faster than 5 mg/month below 20 mg; relapse risk highest when prednisone <20 mg or within 2 months of discontinuation",
+            "orderSentence": "Oral prednisone taper (CRITICAL: slow taper) 60 mg PO"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; avascular necrosis; psychosis",
+          "monitoring": "Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal insufficiency assessment on taper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain from transverse myelitis; painful tonic spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-900 mg TID; max 3600 mg/day divided TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain from transverse myelitis; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase q1wk to 150 mg BID; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl); angioedema history",
+          "monitoring": "Sedation; dizziness; weight gain; edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity and painful tonic spasms from myelitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Seizure disorder (lower threshold); renal impairment",
+          "monitoring": "Sedation; weakness; abrupt withdrawal causes seizures/hallucinations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity from myelitis; alternative to baclofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS; titrate by 2-4 mg q1-4d; max 36 mg/day divided TID",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent fluvoxamine or ciprofloxacin (CYP1A2 inhibitors)",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Neurogenic bladder urgency/frequency from myelitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; max 5 mg TID",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction",
+          "monitoring": "Anticholinergic effects; cognitive effects (especially elderly); dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tamsulosin",
+          "route": "PO",
+          "indication": "Urinary retention from myelitis-related neurogenic bladder",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 mg",
+                "orderSentence": "Tamsulosin 0.4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.4 mg PO daily; take 30 min after same meal each day",
+            "orderSentence": "Tamsulosin 0.4 mg PO"
+          },
+          "contraindications": "Orthostatic hypotension; planned cataract surgery (intraoperative floppy iris)",
+          "monitoring": "Orthostatic BP; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Pain control; headache from steroids or acute attack",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease)",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation prevention during opioid use or immobility from myelitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "Intestinal obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol 3350 (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation from neurogenic bowel or immobility",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz water daily",
+            "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+          },
+          "contraindications": "Intestinal obstruction; bowel perforation",
+          "monitoring": "Bowel function; electrolytes if prolonged",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "PO/IV",
+          "indication": "Seizure management in ADEM-like presentation with cortical involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase by 500 mg/day q1-2wk; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 500 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes (rage, irritability); suicidality screening; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Second-line/Refractory (Acute Attack)": [
+        {
+          "item": "Plasmapheresis (PLEX)",
+          "route": "Extracorporeal",
+          "indication": "Steroid-refractory acute attack; severe optic neuritis or myelitis not responding to IV steroids within 5-7 days",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 exchanges",
+                "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement",
+            "orderSentence": "Plasmapheresis (PLEX) 5-7 exchanges Extracorporeal"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; coagulopathy; poor vascular access",
+          "monitoring": "BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Repeat IV methylprednisolone (extended course)",
+          "route": "IV",
+          "indication": "Incomplete response to initial 5-day course; may extend to 7-10 days in severe cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Repeat IV methylprednisolone (extended course) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily; extend course to 7-10 days total if partial response after initial 5 days",
+            "orderSentence": "Repeat IV methylprednisolone (extended course) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; steroid psychosis",
+          "monitoring": "Glucose q6h; BP; mood; I/O; infection surveillance; bone protection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "IVIG (if not used as first-line)",
+          "route": "IV",
+          "indication": "Steroid-refractory attack; second-line acute treatment after IV steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (if not used as first-line) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); premedicate with acetaminophen and diphenhydramine",
+            "orderSentence": "IVIG (if not used as first-line) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency; recent thromboembolic event; renal failure",
+          "monitoring": "Renal function daily; headache; thrombosis; volume overload",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Combined PLEX + IVIG (sequential)",
+          "route": "Extracorporeal/IV",
+          "indication": "Severe refractory attack not responding to steroids alone; sequential approach: PLEX first, then IVIG (PLEX removes IVIG, so give IVIG after PLEX completion)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PLEX x 5-7 exchanges then IVIG 0.4 g/kg x 5 days",
+                "orderSentence": "Combined PLEX + IVIG (sequential) PLEX x 5-7 exchanges then IVIG 0.4 g/kg x 5 days Extracorporeal/IV"
+              }
+            ],
+            "route": "Extracorporeal/IV",
+            "instructions": "PLEX x 5-7 exchanges, then IVIG 0.4 g/kg/day x 5 days starting at least 24 hours after final PLEX exchange",
+            "orderSentence": "Combined PLEX + IVIG (sequential) PLEX x 5-7 exchanges then IVIG 0.4 g/kg x 5 days Extracorporeal/IV"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; coagulopathy; IgA deficiency; renal failure",
+          "monitoring": "BP during PLEX; electrolytes; coagulation; renal function during IVIG; coordinate timing carefully",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ],
+      "Disease-Modifying / Maintenance Therapies": [
+        {
+          "item": "IVIG maintenance (most evidence in MOGAD)",
+          "route": "IV",
+          "indication": "First-line maintenance immunotherapy for relapsing MOGAD; strongest evidence base among maintenance options; reduces relapse rate and steroid dependence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "IVIG maintenance (most evidence in MOGAD) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4-2 g/kg IV every 4-6 weeks; typical starting dose 1 g/kg monthly; adjust dose/interval based on relapse frequency and trough IgG levels",
+            "orderSentence": "IVIG maintenance (most evidence in MOGAD) 1 g/kg IV"
+          },
+          "pretreatment": "IgA level (rule out deficiency); renal function; baseline immunoglobulin levels; hepatitis B/C screening; pregnancy test",
+          "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; uncontrolled renal disease; hyperviscosity syndrome",
+          "monitoring": "IgG trough levels q3 months (target >800 mg/dL); renal function; CBC; headache (aseptic meningitis); thrombosis surveillance; hemolysis (DAT if anemia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Subcutaneous immunoglobulin (SCIg)",
+          "route": "SC",
+          "indication": "Alternative to IV maintenance IVIG; allows home self-administration; equivalent efficacy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.4 g/kg",
+                "orderSentence": "Subcutaneous immunoglobulin (SCIg) 0.1-0.4 g/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Convert from IVIG: divide monthly dose by 4 for weekly dosing; typical 0.1-0.4 g/kg/week SC; adjust per response",
+            "orderSentence": "Subcutaneous immunoglobulin (SCIg) 0.1-0.4 g/kg SC"
+          },
+          "pretreatment": "IgA level (rule out deficiency); renal function; baseline immunoglobulin levels; hepatitis B/C screening; patient training for self-administration",
+          "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; uncontrolled renal disease; skin infection at infusion site",
+          "monitoring": "IgG trough levels q3 months; injection site reactions; renal function; CBC; thrombosis surveillance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oral prednisone (low-dose maintenance)",
+          "route": "PO",
+          "indication": "Bridge immunosuppression while steroid-sparing agent takes effect; some patients require low-dose maintenance long-term",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Oral prednisone (low-dose maintenance) 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-10 mg PO daily; aim to taper off within 3-6 months once steroid-sparing agent established; some patients require indefinite low-dose (5 mg)",
+            "orderSentence": "Oral prednisone (low-dose maintenance) 5-10 mg PO"
+          },
+          "pretreatment": "Baseline glucose; BP; DEXA if anticipated >3 months",
+          "contraindications": "Active infection; uncontrolled diabetes; avascular necrosis",
+          "monitoring": "Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance immunotherapy; takes 3-6 months for full effect -- bridge with prednisone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2-4 weeks to target 2-3 mg/kg/day; onset of action 3-6 months",
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+          },
+          "pretreatment": "TPMT genotype/phenotype BEFORE starting; CBC; LFTs; hepatitis B/C screening; pregnancy test",
+          "contraindications": "TPMT deficiency (myelosuppression risk); pregnancy (Category D -- teratogenic); concurrent allopurinol (reduce dose by 75%)",
+          "monitoring": "CBC q2 weeks x 2 months, then monthly; LFTs q month x 3 months, then q3 months; pancreatitis; MCV (macrocytosis indicates therapeutic effect)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance immunotherapy; alternative to azathioprine; takes 2-3 months for full effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase to 1000 mg PO BID over 2-4 weeks; target 2000-3000 mg/day",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+          },
+          "pretreatment": "Pregnancy test; CBC; LFTs; hepatitis B/C screening; baseline immunoglobulin levels",
+          "contraindications": "Pregnancy (Category D -- teratogenic; requires two forms of contraception); active infection; live vaccines",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (nausea, diarrhea); infection surveillance; pregnancy prevention (two methods required)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab (Rituxan)",
+          "route": "IV",
+          "indication": "Second-line maintenance for MOGAD refractory to IVIG, azathioprine, or mycophenolate; less evidence than in AQP4-NMOSD; some MOGAD patients respond poorly to rituximab",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab (Rituxan) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose every 6 months or based on CD19/CD20 B-cell repopulation; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine",
+            "orderSentence": "Rituximab (Rituxan) 1000 mg IV"
+          },
+          "pretreatment": "Hepatitis B serology (HBsAg, anti-HBc, anti-HBs); hepatitis C; CBC; immunoglobulin levels; CD19/CD20 B-cell counts; TB screening (PPD or QuantiFERON); pregnancy test; vaccinations current (no live vaccines within 4 weeks)",
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypersensitivity to murine proteins",
+          "monitoring": "Hepatitis B serology before first dose; CBC q2-4 weeks; immunoglobulin levels q3-6 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tocilizumab (Actemra)",
+          "route": "IV/SC",
+          "indication": "Third-line maintenance for MOGAD refractory to IVIG and standard immunosuppressants; emerging evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8 mg/kg",
+                "orderSentence": "Tocilizumab (Actemra) 8 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "8 mg/kg IV every 4 weeks (max 800 mg) OR 162 mg SC every 2 weeks",
+            "orderSentence": "Tocilizumab (Actemra) 8 mg/kg IV"
+          },
+          "pretreatment": "CBC; LFTs; lipids; TB screening; hepatitis B/C; pregnancy test",
+          "contraindications": "Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines",
+          "monitoring": "CBC, LFTs, lipids q4-8 weeks; CRP suppressed (cannot use as infection marker); infection surveillance; GI perforation risk; neutropenia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D (bone protection with steroids)",
+          "route": "PO",
+          "indication": "Osteoporosis prevention during prolonged corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg calcium + 2000 IU vitamin D",
+                "orderSentence": "Calcium + Vitamin D (bone protection with steroids) 1000 mg calcium + 2000 IU vitamin D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day",
+            "orderSentence": "Calcium + Vitamin D (bone protection with steroids) 1000 mg calcium + 2000 IU vitamin D PO"
+          },
+          "pretreatment": "Baseline 25-OH Vitamin D level; calcium level",
+          "contraindications": "Hypercalcemia; kidney stones",
+          "monitoring": "25-OH Vitamin D level; calcium; DEXA at baseline if anticipated steroid use >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuroimmunology) consult for diagnosis confirmation, antibody interpretation, and immunotherapy management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuro-ophthalmology evaluation for optic neuritis severity assessment, visual field testing, and OCT baseline",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology urgent evaluation for visual acuity assessment and fundoscopic examination if optic neuritis suspected",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait training, balance assessment, and fall prevention given myelitis-related weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, adaptive equipment, and energy conservation strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for swallowing evaluation if brainstem involvement or bulbar symptoms present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Urology for neurogenic bladder management if urinary retention or refractory urgency from myelitis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for refractory neuropathic pain not responding to first-line agents",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry if depression, anxiety, or adjustment disorder from chronic illness requiring treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for insurance navigation, disability resources, and infusion center coordination for maintenance IVIG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology if respiratory compromise from high cervical myelitis requiring ventilatory support assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rehabilitation medicine for comprehensive inpatient rehabilitation program if significant residual deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for outpatient IVIG maintenance therapy scheduling and monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pediatric neurology referral if ADEM-like presentation in child (MOGAD is more common in children than adults)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for new or worsening vision loss, new weakness, numbness, or bladder/bowel dysfunction (may indicate new attack or relapse)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop oral prednisone abruptly -- rapid steroid taper causes high relapse risk in MOGAD and may cause adrenal crisis",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new visual changes immediately including blurred vision, eye pain with movement, or color desaturation (may indicate optic neuritis relapse)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT drive until visual acuity and visual fields have been formally assessed and cleared by ophthalmology/neuro-ophthalmology",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "MOGAD is a treatable condition -- most patients recover well from attacks, especially with early and aggressive treatment",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunosuppressive therapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy; inform all healthcare providers of immunosuppressed status",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep an attack diary documenting new symptoms, dates, and steroid dose at time of relapse to guide treatment decisions",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy planning must be discussed with neurology before conception; some maintenance therapies are teratogenic",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG infusions must not be skipped or delayed without neurology approval; missed infusions increase relapse risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Medical alert bracelet recommended (MOGAD, immunosuppressed, steroid-dependent)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up with neurology within 1-2 weeks after acute attack treatment to assess response and plan taper/maintenance",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Vitamin D supplementation (2000-4000 IU daily) to maintain levels >30 ng/mL given association between low vitamin D and demyelinating disease activity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk and potential inflammatory disease activity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-sodium diet during steroid therapy to reduce fluid retention, hypertension, and weight gain",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium supplementation (1000-1200 mg daily) during prolonged steroid use to prevent osteoporosis",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular low-impact exercise (swimming, stationary bike, yoga) to maintain strength and reduce fatigue without overexertion",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate sleep hygiene and stress management as fatigue is common in demyelinating disease",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures at home (remove rugs, install grab bars, adequate lighting) if myelitis-related weakness or gait instability",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Influenza and pneumococcal vaccination recommended while on immunosuppression (inactivated vaccines are safe)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid extreme heat exposure (Uhthoff phenomenon: transient worsening of neurological symptoms with elevated body temperature)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Multiple sclerosis (MS)",
+      "features": "Short-segment spinal cord lesions; Dawson fingers on MRI; CSF oligoclonal bands positive (>95%); progressive course common; central vein sign on MRI; periventricular/juxtacortical lesions",
+      "tests": "MRI pattern; CSF OCBs (positive in MS, negative in MOGAD); MOG-IgG negative; AQP4-IgG negative; 7T MRI central vein sign"
+    },
+    {
+      "diagnosis": "AQP4-positive NMOSD",
+      "features": "AQP4-IgG positive; area postrema syndrome; longitudinally extensive ON (posterior/chiasmal involvement); worse visual outcomes; predominantly female; non-white ethnicity predilection",
+      "tests": "AQP4-IgG (positive in NMOSD); MOG-IgG (positive in MOGAD); MRI pattern differences; OCT (worse RNFL loss in AQP4-NMOSD)"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM) -- seronegative",
+      "features": "Monophasic; post-infectious/post-vaccination; large fluffy white matter lesions; MOG-IgG negative; typically pediatric",
+      "tests": "MOG-IgG testing (many ADEM cases are MOG-IgG positive); clinical course (monophasic vs relapsing)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies; leptomeningeal enhancement; hypothalamic dysfunction; hilar lymphadenopathy",
+      "tests": "ACE level; chest CT (hilar adenopathy); biopsy; MOG-IgG negative"
+    },
+    {
+      "diagnosis": "CNS lymphoma",
+      "features": "Mass effect; periventricular enhancement; immunocompromised risk factor; progressive course",
+      "tests": "CSF cytology/flow cytometry; FDG-PET; brain biopsy"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Optic neuropathy; myelopathy; Argyll Robertson pupils; positive serology",
+      "tests": "RPR/VDRL; CSF VDRL; FTA-ABS"
+    },
+    {
+      "diagnosis": "Leber hereditary optic neuropathy (LHON)",
+      "features": "Bilateral sequential painless optic neuropathy; young males; maternal inheritance; no MRI enhancement",
+      "tests": "Mitochondrial DNA testing; MOG-IgG negative; painless (MOGAD is painful)"
+    },
+    {
+      "diagnosis": "Optic neuritis -- idiopathic (seronegative)",
+      "features": "MOG-IgG and AQP4-IgG both negative; isolated optic neuritis; good recovery; some may later develop MS",
+      "tests": "Antibody testing; MRI surveillance for MS lesions; serial MOG-IgG retesting"
+    },
+    {
+      "diagnosis": "Neuromyelitis optica spectrum disorder (seronegative)",
+      "features": "AQP4-IgG negative, MOG-IgG negative; clinical phenotype of NMOSD; poor recovery",
+      "tests": "Both antibody tests negative; clinical/MRI criteria for NMOSD"
+    },
+    {
+      "diagnosis": "CNS vasculitis",
+      "features": "Multifocal stroke-like lesions; headache; elevated inflammatory markers; vessel wall enhancement",
+      "tests": "Angiography; vessel wall MRI; brain biopsy; ESR/CRP; ANA/ANCA"
+    },
+    {
+      "diagnosis": "Autoimmune GFAP astrocytopathy",
+      "features": "Meningoencephalitis; radial perivascular enhancement; CSF pleocytosis; steroid-responsive",
+      "tests": "Anti-GFAP antibody (serum and CSF); characteristic radial MRI pattern"
+    },
+    {
+      "diagnosis": "Sarcoid optic neuropathy",
+      "features": "Granulomatous enhancement; systemic sarcoidosis features; bilateral can occur",
+      "tests": "ACE; chest imaging; biopsy if needed"
+    },
+    {
+      "diagnosis": "Infectious myelitis (HSV, VZV, TB, HIV)",
+      "features": "Fever; infectious prodrome; specific imaging patterns; CSF neutrophilic then lymphocytic",
+      "tests": "Viral PCR; bacterial/fungal cultures; specific serology"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MOG-IgG cell-based assay (CBA) as diagnostic standard; live CBA preferred",
+      "evidenceLevel": "Class II",
+      "source": "[Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/31263244/)"
+    },
+    {
+      "recommendation": "International MOGAD diagnostic criteria (2023 consensus)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Banwell B et al. Lancet Neurol 2023;22:268-282](https://pubmed.ncbi.nlm.nih.gov/36706773/)"
+    },
+    {
+      "recommendation": "MOG-IgG serum testing preferred over CSF",
+      "evidenceLevel": "Class III",
+      "source": "[Reindl M et al. Nat Rev Neurol 2019;15:455-468](https://pubmed.ncbi.nlm.nih.gov/31263244/)"
+    },
+    {
+      "recommendation": "Clinical phenotypes of MOGAD (ON, TM, ADEM, brainstem)",
+      "evidenceLevel": "Class II",
+      "source": "[Jurynczyk M et al. Brain 2017;140:3128-3138](https://pubmed.ncbi.nlm.nih.gov/29136091/)"
+    },
+    {
+      "recommendation": "Bilateral optic neuritis and perineural enhancement characteristic of MOGAD",
+      "evidenceLevel": "Class III",
+      "source": "[Ramanathan S et al. J Neurol Neurosurg Psychiatry 2018;89:127-137](https://pubmed.ncbi.nlm.nih.gov/29142145/)"
+    },
+    {
+      "recommendation": "LETM in MOGAD (>=3 segments); conus involvement more common than NMOSD",
+      "evidenceLevel": "Class III",
+      "source": "[Mariano R et al. Neurology 2019;93:e280-e294](https://pubmed.ncbi.nlm.nih.gov/31213484/)"
+    },
+    {
+      "recommendation": "MRI differentiation of MOGAD from MS (absent Dawson fingers, ill-defined lesions)",
+      "evidenceLevel": "Class III",
+      "source": "[Jurynczyk M et al. Brain 2017;140:3128-3138](https://pubmed.ncbi.nlm.nih.gov/29136091/)"
+    },
+    {
+      "recommendation": "CSF oligoclonal bands typically absent in MOGAD (vs >95% positive in MS)",
+      "evidenceLevel": "Class II",
+      "source": "[Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802824/)"
+    },
+    {
+      "recommendation": "High-dose IV methylprednisolone as first-line acute treatment",
+      "evidenceLevel": "Expert Consensus, Class III",
+      "source": "[Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29210070/)"
+    },
+    {
+      "recommendation": "Slow oral prednisone taper essential (3-6 months); high relapse with rapid taper",
+      "evidenceLevel": "Class III",
+      "source": "[Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/)"
+    },
+    {
+      "recommendation": "IVIG effective for acute MOGAD attacks",
+      "evidenceLevel": "Class III",
+      "source": "[Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/32913017/)"
+    },
+    {
+      "recommendation": "PLEX for steroid-refractory MOGAD attacks",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/)"
+    },
+    {
+      "recommendation": "IVIG maintenance as most effective relapse prevention in MOGAD",
+      "evidenceLevel": "Class III",
+      "source": "[Chen JJ et al. Neurology 2020;95:e2201-e2212](https://pubmed.ncbi.nlm.nih.gov/32913017/)"
+    },
+    {
+      "recommendation": "Rituximab may be less effective in MOGAD than AQP4-NMOSD (MOG-IgG from plasmablasts)",
+      "evidenceLevel": "Class III",
+      "source": "[Whittam DH et al. Neurology 2020;94:e1592-e1604](https://pubmed.ncbi.nlm.nih.gov/32161030/)"
+    },
+    {
+      "recommendation": "Azathioprine and mycophenolate as steroid-sparing agents",
+      "evidenceLevel": "Class IV",
+      "source": "[Ramanathan S et al. Ann Neurol 2018;84:5-20](https://pubmed.ncbi.nlm.nih.gov/29733457/)"
+    },
+    {
+      "recommendation": "Tocilizumab for refractory MOGAD",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Ringelstein M et al. Neurol Neuroimmunol Neuroinflamm 2022;9:e200033](https://pubmed.ncbi.nlm.nih.gov/36192173/)"
+    },
+    {
+      "recommendation": "Persistent MOG-IgG seropositivity predicts relapsing course",
+      "evidenceLevel": "Class III",
+      "source": "[Lopez-Chiriboga AS et al. Neurology 2018;91:e1735-e1740](https://pubmed.ncbi.nlm.nih.gov/30291183/)"
+    },
+    {
+      "recommendation": "Seroconversion to negative may allow treatment withdrawal",
+      "evidenceLevel": "Class III",
+      "source": "[Hyun JW et al. Neurology 2017;88:1482-1489](https://pubmed.ncbi.nlm.nih.gov/28283598/)"
+    },
+    {
+      "recommendation": "Monophasic vs relapsing MOGAD course -- treatment implications",
+      "evidenceLevel": "Class III",
+      "source": "[Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/31865372/)"
+    },
+    {
+      "recommendation": "Better visual recovery in MOGAD vs AQP4-NMOSD",
+      "evidenceLevel": "Class II",
+      "source": "[Stiebel-Kalish H et al. J Neuroophthalmol 2019;39:155-160](https://pubmed.ncbi.nlm.nih.gov/30036290/)"
+    },
+    {
+      "recommendation": "MOGAD in children: ADEM most common phenotype; generally good prognosis",
+      "evidenceLevel": "Class III",
+      "source": "[Hacohen Y et al. Dev Med Child Neurol 2018;60:236-243](https://pubmed.ncbi.nlm.nih.gov/29210070/)"
+    },
+    {
+      "recommendation": "Differentiation of MOGAD from MS and AQP4-NMOSD -- comprehensive review",
+      "evidenceLevel": "Class III",
+      "source": "[Marignier R et al. Ann Neurol 2021;89:855-873](https://pubmed.ncbi.nlm.nih.gov/33543537/)"
+    },
+    {
+      "recommendation": "MOGAD optic neuritis: anterior nerve involvement with perineural fat enhancement",
+      "evidenceLevel": "Class III",
+      "source": "[Chen JJ et al. Ophthalmology 2018;125:899-905](https://pubmed.ncbi.nlm.nih.gov/29310963/)"
+    },
+    {
+      "recommendation": "OCT findings in MOGAD: better RNFL preservation than AQP4-NMOSD",
+      "evidenceLevel": "Class III",
+      "source": "[Akaishi T et al. J Neurol 2021;268:1532-1544](https://pubmed.ncbi.nlm.nih.gov/33215236/)"
+    },
+    {
+      "recommendation": "MOGAD relapse rate approximately 40-80% in seropositive patients",
+      "evidenceLevel": "Class III",
+      "source": "[Cobo-Calvo A et al. Brain 2020;143:220-235](https://pubmed.ncbi.nlm.nih.gov/31865372/)"
+    },
+    {
+      "recommendation": "Neutrophilic CSF pleocytosis can occur in acute MOGAD (distinguishing from MS)",
+      "evidenceLevel": "Class III",
+      "source": "[Jarius S et al. J Neuroinflammation 2016;13:280](https://pubmed.ncbi.nlm.nih.gov/27802824/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Visual acuity (Snellen chart, low-contrast)",
+      "frequency": "Daily during acute ON; each visit outpatient",
+      "action": "If worsening despite steroids: escalate to PLEX; neuro-ophthalmology urgent",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic examination (strength, sensation, gait, reflexes)",
+      "frequency": "Q8-12h inpatient; each visit outpatient",
+      "action": "If worsening: re-image; escalate immunotherapy; reassess diagnosis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "EDSS (Expanded Disability Status Scale)",
+      "frequency": "Each outpatient visit",
+      "action": "Document trajectory; guide treatment decisions",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids; daily during oral taper",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q4h inpatient; each visit outpatient",
+      "action": "Antihypertensive if sustained elevation; adjust steroid dose if possible",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MOG-IgG titer (serum)",
+      "frequency": "3-6 months after attack; then q6-12 months",
+      "action": "Persistent positivity: higher relapse risk, continue maintenance; seroconversion to negative: may consider tapering maintenance therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain and spine with contrast",
+      "frequency": "3-6 months post-attack; annually x 3 years; then as clinically indicated",
+      "action": "New/worsening lesions: relapse workup; adjust maintenance therapy; repeat MOG-IgG",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "OCT (retinal nerve fiber layer)",
+      "frequency": "Baseline after acute ON; then q6-12 months",
+      "action": "Progressive thinning without clinical attack: subclinical disease activity; adjust therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q2-4 weeks during immunosuppression initiation; then monthly x 3 months; then q3 months",
+      "action": "Hold/reduce immunosuppression; growth factor support if needed",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "Monthly x 3 months on azathioprine/mycophenolate; then q3 months",
+      "action": "Dose reduction or switch agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Before and after each IVIG infusion; q3 months on maintenance",
+      "action": "Hold IVIG if Cr rising; hydration; reduce IVIG infusion rate; nephrology consult",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+      "frequency": "Q3-6 months on rituximab; q3 months on IVIG (trough levels)",
+      "action": "Immunoglobulin replacement if recurrent infections; adjust IVIG dosing per trough",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD19/CD20 B-cell counts",
+      "frequency": "Q3 months on rituximab",
+      "action": "Guide re-dosing interval; repopulation may trigger relapse",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline if steroids >3 months; repeat q1-2 years",
+      "action": "Bisphosphonate therapy; calcium/vitamin D optimization; endocrine referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "25-OH Vitamin D",
+      "frequency": "Baseline; q6-12 months",
+      "action": "Increase supplementation; recheck in 3 months",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TPMT genotype/activity",
+      "frequency": "Once before starting azathioprine",
+      "action": "Dose reduce or avoid azathioprine if intermediate/low TPMT",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bladder function (PVR by ultrasound)",
+      "frequency": "If urinary symptoms present; as clinically indicated",
+      "action": "Intermittent catheterization if PVR >200 mL; urology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Mild symptoms (mild optic neuritis with preserved function); stable or improving on oral steroids; no bladder/bowel dysfunction; able to perform basic ADLs; reliable follow-up within 1-2 weeks; outpatient infusion arranged if IVIG needed; clear understanding of steroid taper schedule"
+    },
+    {
+      "disposition": "**Admit to floor (neurology)**",
+      "criteria": "Acute optic neuritis with significant vision loss requiring IV steroids; acute transverse myelitis with weakness or sensory level; ADEM-like presentation requiring workup and IV immunotherapy; need for LP; inability to manage oral medications/self-care"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "High cervical myelitis with respiratory compromise; severe bilateral optic neuritis with near-complete vision loss; status epilepticus from cortical MOGAD; hemodynamic instability during PLEX; severe encephalopathy (ADEM-like with decreased consciousness)"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "PLEX not available at current facility; neuroimmunology specialist not available; pediatric case requiring pediatric neurology; need for ICU care exceeding current capabilities"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Significant residual weakness from myelitis; gait instability requiring intensive PT/OT; functional deficits preventing safe return home"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All patients: neurology follow-up within 1-2 weeks; neuro-ophthalmology within 2-4 weeks if optic neuritis; infusion center for maintenance IVIG; ophthalmology for visual field testing and OCT; PCP for steroid side effect monitoring"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New vision loss or worsening visual acuity; new weakness, numbness, or bowel/bladder dysfunction; relapse during steroid taper; severe steroid side effects requiring management; infection while immunosuppressed"
+    }
+  ]
+}

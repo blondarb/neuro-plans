@@ -1,0 +1,1996 @@
+{
+  "id": "primary-cns-lymphoma",
+  "title": "Primary CNS Lymphoma (PCNSL), Diffuse Large B-Cell Lymphoma Confined to the CNS",
+  "version": "1.1",
+  "icd10": [
+    "** C85.19 (Other unspecified non-Hodgkin lymphoma",
+    "extranodal and solid organ sites)",
+    "C83.30 (Diffuse large B-cell lymphoma",
+    "unspecified site)",
+    "C85.10 (Unspecified B-cell non-Hodgkin lymphoma",
+    "unspecified site)",
+    "C79.31 (Secondary malignant neoplasm of brain)",
+    "G93.6 (Cerebral edema)"
+  ],
+  "scope": "** Comprehensive management of newly diagnosed and recurrent primary CNS lymphoma (PCNSL) in immunocompetent and immunocompromised (HIV/AIDS, post-transplant) adults. Covers initial presentation and stabilization, neuroimaging evaluation (MRI with gadolinium, diffusion-weighted imaging), the critical importance of avoiding corticosteroids before biopsy, stereotactic brain biopsy, CSF analysis (cytology, flow cytometry), slit lamp ophthalmologic examination, systemic staging (whole body CT/PET, bone marrow biopsy, testicular ultrasound in males), high-dose methotrexate (HD-MTX)-based induction chemotherapy, rituximab, consolidation strategies (whole brain radiation therapy, high-dose chemotherapy with autologous stem cell transplant, cytarabine-based consolidation), management of relapsed/refractory disease, HIV-associated PCNSL management (ART initiation, modified chemotherapy), and supportive care. Excludes secondary CNS involvement from systemic lymphoma, primary vitreoretinal lymphoma as sole presentation (overlapping but managed differently), and pediatric PCNSL.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline before chemotherapy; assess for cytopenias; lymphocyte count for immune status; platelet count for biopsy candidacy",
+          "target": "WBC, ANC, platelets within normal limits; ALC for baseline immune function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function critical for methotrexate dosing (excreted renally); hepatic function for chemotherapy clearance; electrolytes for SIADH screening; glucose baseline for steroid use",
+          "target": "Normal renal function (CrCl >50 mL/min required for HD-MTX); normal LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "Tumor burden and prognostic marker; elevated LDH is adverse prognostic factor in IELSG scoring system",
+          "target": "Normal; elevated suggests higher tumor burden",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulopathy assessment for biopsy candidacy; baseline before procedures",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Baseline before corticosteroids (if used post-biopsy); pre-operative assessment",
+          "target": "<180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (4th gen) (CPT 87389)",
+          "rationale": "HIV-associated PCNSL occurs in severely immunocompromised patients (CD4 <50); dramatically alters treatment approach; EBV-driven lymphomagenesis in HIV",
+          "target": "Negative; if positive proceed to CD4 count and viral load",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hepatitis B panel (HBsAg, anti-HBs, anti-HBc) (CPT 87340+86706+86704)",
+          "rationale": "Rituximab can cause fatal HBV reactivation; mandatory screening before anti-CD20 therapy",
+          "target": "Negative; if positive consult hepatology for antiviral prophylaxis before rituximab",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 86803)",
+          "rationale": "Baseline hepatic risk assessment before hepatotoxic chemotherapy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "rationale": "Tumor lysis syndrome risk (high-grade lymphoma); baseline before chemotherapy initiation",
+          "target": "Normal; elevated requires prophylaxis with allopurinol or rasburicase",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy test (women of childbearing age) (CPT 81025)",
+          "rationale": "Methotrexate is abortifacient and teratogenic; rituximab is pregnancy category C; radiation contraindicated",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Type and screen",
+          "rationale": "Pre-biopsy; anticipate possible intraoperative blood loss",
+          "target": "Available for crossmatch",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) with immunofixation (CPT 86334+86335)",
+          "rationale": "Evaluate for monoclonal protein; rule out Waldenstrom macroglobulinemia or myeloma with CNS involvement",
+          "target": "No monoclonal band",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "CD4 count (if HIV positive) (CPT 86360)",
+          "rationale": "Stratifies treatment approach; CD4 <50 classic for HIV-associated PCNSL; higher CD4 may tolerate full chemotherapy",
+          "target": "Document CD4; <200 requires PJP prophylaxis; <50 typical for HIV-PCNSL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HIV viral load (if HIV positive) (CPT 87536)",
+          "rationale": "Baseline for ART management; high viral load correlates with PCNSL risk",
+          "target": "Quantify; goal is undetectable on ART",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EBV serology and EBV PCR (serum) (CPT 86665+87799)",
+          "rationale": "EBV drives HIV-associated PCNSL; EBV viral load correlates with disease activity; can be used for monitoring",
+          "target": "Positive EBV in immunocompromised = supports PCNSL diagnosis; negative does not exclude",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784+82784+82784)",
+          "rationale": "Baseline humoral immunity before rituximab (depletes B cells); hypogammaglobulinemia risk assessment",
+          "target": "Normal; low IgG increases infection risk during treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Beta-2 microglobulin (CPT 82232)",
+          "rationale": "Prognostic marker; component of some PCNSL prognostic scoring systems; elevated correlates with tumor burden",
+          "target": "Normal; elevated = adverse prognostic marker",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Baseline thyroid function before radiation therapy (hypothyroidism risk with WBRT); fatigue differential",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "If hypothalamic/pituitary involvement suspected; adrenal function if prior steroids",
+          "target": "Normal (>10 mcg/dL AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CrCl (calculated or 24-hour urine) (CPT 82575)",
+          "rationale": "Precise renal function assessment critical for methotrexate dosing; CrCl >50 mL/min required for HD-MTX",
+          "target": "CrCl >50 mL/min for HD-MTX eligibility",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "If syncope or seizure presentation; cardiac evaluation before chemotherapy",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CPK/CK (CPT 82550)",
+          "rationale": "Post-seizure rhabdomyolysis screen",
+          "target": "Normal; elevated after prolonged seizures",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Toxoplasma IgG (CPT 86777)",
+          "rationale": "HIV-positive patients: toxoplasmosis is the main differential for ring-enhancing lesions; positive IgG + compatible imaging = empiric treatment trial before biopsy",
+          "target": "Negative supports PCNSL over toxoplasmosis; positive requires empiric treatment trial",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "CSF EBV PCR (CPT 87799)",
+          "rationale": "In HIV-positive patients unable to undergo biopsy; EBV PCR + compatible imaging has high specificity (>95%) for HIV-associated PCNSL",
+          "target": "Positive in HIV-associated PCNSL (sensitivity ~80%, specificity >95%)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF MYD88 L265P mutation (CPT 81479)",
+          "rationale": "Present in ~70-80% of PCNSL; supports diagnosis when tissue is limited; emerging biomarker for monitoring treatment response",
+          "target": "Positive supports PCNSL diagnosis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF IL-10 and IL-6 (CPT 83519)",
+          "rationale": "Elevated CSF IL-10 and high IL-10/IL-6 ratio (>1.0) highly suggestive of CNS lymphoma; useful when tissue is equivocal",
+          "target": "Elevated IL-10; IL-10/IL-6 ratio >1.0 supports lymphoma",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF cell-free DNA / liquid biopsy",
+          "rationale": "Emerging technology for noninvasive diagnosis and monitoring; ctDNA mutations (MYD88, CD79B) detectable in CSF",
+          "target": "Clonal immunoglobulin rearrangement or oncogenic mutations support diagnosis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Soluble CD27 (CSF)",
+          "rationale": "Elevated in CNS lymphoma; may help differentiate from other CNS malignancies",
+          "target": "Elevated supports B-cell lymphoproliferative process",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Whole exome / targeted NGS panel (tumor tissue)",
+          "rationale": "Identify actionable mutations (CD79B, MYD88, CARD11, KMT2D) for targeted therapy in relapsed disease; ibrutinib sensitivity (BTK inhibitor)",
+          "target": "MYD88 L265P and CD79B mutations predict ibrutinib response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP from mass effect; baseline for serial monitoring",
+          "target": "10-20 cm H2O; elevated with significant mass effect",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Lymphocytic pleocytosis common in PCNSL; infection differential",
+          "target": "WBC elevated (lymphocytic predominance); RBC 0",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in majority of PCNSL cases (>60%); reflects leptomeningeal involvement and BBB disruption",
+          "target": "Normal 15-45 mg/dL; often elevated (50-200+ mg/dL) in PCNSL",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "rationale": "Low in leptomeningeal disease; infection differential",
+          "target": "Normal (>60% serum); may be low with extensive leptomeningeal involvement",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Malignant lymphocytes from leptomeningeal dissemination; positive in 15-30% of PCNSL",
+          "target": "Large atypical lymphocytes; sensitivity improves with repeat LP and larger volume",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry (CPT 88184+88185)",
+          "rationale": "Most sensitive method for detecting clonal B-cell population in CSF; mandatory in PCNSL workup",
+          "target": "Monoclonal B-cell population (CD19+, CD20+, surface light chain restricted); sensitivity higher than cytology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF protein electrophoresis (CPT 86325)",
+          "rationale": "Oligoclonal bands may be present; helps differentiate from MS and other inflammatory conditions",
+          "target": "Absent oligoclonal bands favors lymphoma over MS; if present, does not exclude lymphoma",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "rationale": "Infection differential (abscess, meningitis vs. tumor)",
+          "target": "No organisms",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EBV PCR (CSF) (CPT 87799)",
+          "rationale": "HIV-positive patients: high specificity for PCNSL when combined with compatible imaging; may avoid biopsy if clinical picture concordant",
+          "target": "Positive in HIV-associated PCNSL; negative does not exclude",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MYD88 L265P mutation (CSF) (CPT 81479)",
+          "rationale": "Emerging diagnostic biomarker; present in ~70-80% of PCNSL; supports diagnosis when tissue is limited",
+          "target": "Positive supports PCNSL diagnosis; false negative in ~20-30%",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediately upon presentation; first-line for acute symptoms (seizure, headache, focal deficit, altered mental status)",
+          "target": "Hyperdense (because highly cellular) periventricular mass; may show hemorrhage (rare); edema; midline shift; usually homogeneous without ring enhancement",
+          "contraindications": "None in emergency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (gadolinium) (CPT 70553)",
+          "timing": "Within 24h of presentation; GOLD STANDARD for PCNSL diagnosis and characterization",
+          "target": "Homogeneously enhancing periventricular or deep white matter mass; T1 iso/hypointense, T2 iso/hypointense; restricted diffusion on DWI (bright DWI, dark ADC); typically involves corpus callosum, basal ganglia, periventricular regions; multifocal in 25-50%; ring enhancement suggests immunocompromised (HIV)",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
+          "timing": "Within 48-72h; systemic staging to exclude secondary CNS lymphoma from systemic disease",
+          "target": "No extracranial lymphoma; absence of lymphadenopathy, splenomegaly, or other organ involvement confirms primary CNS disease",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PET/CT (FDG) whole body (CPT 78816)",
+          "timing": "Within 1-2 weeks; preferred over CT for systemic staging per IPCG guidelines; more sensitive for occult systemic lymphoma",
+          "target": "No extracranial FDG-avid lymphoma; CNS lesions may or may not show FDG uptake (skull limits sensitivity for brain lesions)",
+          "contraindications": "Pregnancy; uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Pre-operative and pre-chemotherapy baseline; QTc for anti-emetics",
+          "target": "Normal",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Pre-operative clearance; lung pathology screen",
+          "target": "No lung mass; no effusion; no mediastinal lymphadenopathy",
+          "contraindications": "Pregnancy (shield)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with DWI/ADC maps (CPT 70553)",
+          "timing": "With initial MRI; critical for differential diagnosis",
+          "target": "Restricted diffusion (bright DWI, dark ADC) = PCNSL (highly cellular tumor); GBM necrotic center does NOT restrict; abscess center DOES restrict",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MR perfusion (DSC) (CPT 70553)",
+          "timing": "With diagnostic MRI; differentiates from high-grade glioma",
+          "target": "Lower rCBV than GBM (PCNSL has lower vascularity); moderate rCBV elevation compared to normal brain",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MR spectroscopy (MRS) (CPT 76390)",
+          "timing": "With diagnostic MRI; tumor characterization",
+          "target": "Elevated choline (highly cellular); elevated lipid and lactate peaks; reduced NAA; high Cho/Cr ratio; large lipid peak more prominent than in GBM",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Slit lamp ophthalmologic examination",
+          "timing": "Within 1 week of diagnosis; mandatory staging per IPCG; 15-25% of PCNSL has occular involvement",
+          "target": "Vitreous cells, subretinal infiltrates, or retinal/vitreal lymphoma deposits indicating intraocular involvement; changes management if positive",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI spine (whole) with contrast (CPT 72156+72157+72158)",
+          "timing": "If spinal symptoms present or CSF positive for lymphoma cells; leptomeningeal staging",
+          "target": "Leptomeningeal enhancement; nerve root thickening; intramedullary lesion (rare)",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testicular ultrasound (males) (CPT 76870)",
+          "timing": "Staging per IPCG guidelines; testis is a sanctuary site; concurrent testicular lymphoma in 2-5%",
+          "target": "No testicular mass; if present, changes staging and treatment approach",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "Baseline cardiac function before anthracycline-containing regimens or high-dose chemotherapy with ASCT",
+          "target": "LVEF >50%; adequate cardiac function for chemotherapy",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FDG-PET brain (CPT 78816)",
+          "timing": "When MRI equivocal; recurrence vs. treatment effect",
+          "target": "Increased FDG uptake in lymphoma (highly metabolic); helps differentiate recurrence from treatment-related changes",
+          "contraindications": "Pregnancy; uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Bone marrow biopsy (CPT 38222)",
+          "timing": "Staging per IPCG guidelines; rule out occult systemic lymphoma",
+          "target": "No lymphoma involvement; if positive, reclassify as systemic lymphoma with CNS involvement (different treatment)",
+          "contraindications": "Severe coagulopathy; local infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitreous biopsy (CPT 67039)",
+          "timing": "If slit lamp exam shows vitreous cells or subretinal infiltrates suggesting intraocular lymphoma",
+          "target": "Cytology positive for large B-cells; flow cytometry showing monoclonal B-cell population; IL-10/IL-6 ratio >1.0 in vitreous fluid",
+          "contraindications": "Active endophthalmitis; monocular patient (relative)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Thallium SPECT (HIV patients) (CPT 78607)",
+          "timing": "HIV-positive patients: differentiates PCNSL from toxoplasmosis when imaging equivocal and biopsy not feasible",
+          "target": "Increased thallium uptake = PCNSL; decreased uptake = toxoplasmosis",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Dexamethasone (ONLY if life-threatening herniation or biopsy not immediately available)",
+          "route": "IV/PO",
+          "indication": "Vasogenic edema with herniation risk or severe mass effect ONLY when biopsy cannot be performed within 24-48h; steroids cause rapid tumor regression making biopsy non-diagnostic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone (ONLY if life-threatening herniation or biopsy not immediately available) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV bolus, then 4 mg IV/PO q6h; use LOWEST effective dose for SHORTEST duration; document that steroids were given and inform neurosurgeon and neuro-oncologist; biopsy should proceed ASAP even after steroids (may need repeat biopsy if non-diagnostic)",
+            "orderSentence": "Dexamethasone (ONLY if life-threatening herniation or biopsy not immediately available) 10 mg IV"
+          },
+          "contraindications": "AVOID BEFORE BIOPSY whenever possible (causes vanishing tumor); active untreated infection; uncontrolled diabetes (relative)",
+          "monitoring": "Glucose q6h (target <180 mg/dL), BP, document timing relative to biopsy, neurologic exam improvement (may confirm lymphoma diagnosis clinically)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Acute seizure termination; 10-20% of PCNSL patients present with seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total",
+            "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator",
+          "monitoring": "RR, O2 sat, BP, sedation level; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure - loading)",
+          "route": "IV",
+          "indication": "Anti-seizure medication loading for new seizures; preferred in CNS lymphoma patients due to no CYP enzyme induction (preserves chemotherapy efficacy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1500 mg",
+                "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load, then 500-1500 mg PO/IV BID; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, irritability); generally well tolerated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP with herniation signs; bridge to biopsy and definitive treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q4-6h; maintain serum osmolality <320 mOsm/kg",
+            "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial bleeding (relative)",
+          "monitoring": "Serum osmolality q6h, serum sodium, I/O, renal function",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP; alternative to mannitol; may be preferred in hypotensive patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "23.4% NaCl 30 mL via central line over 15 min OR 3% NaCl 250 mL IV over 30 min; target Na 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+          },
+          "contraindications": "Severe hypernatremia (Na >160)",
+          "monitoring": "Sodium q4-6h, serum osmolality, I/O, central line required for 23.4%",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Stereotactic brain biopsy",
+          "route": "-",
+          "indication": "Definitive tissue diagnosis; gold standard for PCNSL diagnosis; target enhancing component of lesion; AVOID open craniotomy/resection (no survival benefit from debulking in PCNSL unlike GBM)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Stereotactic biopsy",
+                "orderSentence": "Stereotactic brain biopsy Stereotactic biopsy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Frame-based or frameless stereotactic biopsy; target enhancing tumor component; tissue for histology, immunohistochemistry (CD20, Ki-67, MUM1, BCL6), and flow cytometry; send for molecular studies (MYD88, CD79B)",
+            "orderSentence": "Stereotactic brain biopsy Stereotactic biopsy -"
+          },
+          "contraindications": "Active coagulopathy (correct first); location precluding safe biopsy (deep brainstem); prior steroids may reduce diagnostic yield (proceed anyway but warn pathologist)",
+          "monitoring": "Post-biopsy CT within 6h; neurologic checks q1h x 24h; hemorrhage risk 1-3%",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Enoxaparin (DVT prophylaxis)",
+          "route": "SC",
+          "indication": "Lymphoma patients have elevated VTE risk; SCDs immediately; pharmacologic prophylaxis within 24-48h post-biopsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Enoxaparin 40 mg SC daily or heparin 5000 units SC q8h; start within 24-48h post-biopsy per neurosurgery; SCDs until ambulatory",
+            "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+          },
+          "contraindications": "Active intracranial hemorrhage; planned biopsy within 24h",
+          "monitoring": "Platelet count; signs of bleeding",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole (stress ulcer prophylaxis)",
+          "route": "PO/IV",
+          "indication": "GI bleed prevention while on dexamethasone (if steroids were initiated); combined corticosteroid + critical illness increases risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pantoprazole 40 mg IV/PO daily OR omeprazole 20 mg PO daily; continue throughout steroid course",
+            "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam (maintenance)",
+          "route": "PO",
+          "indication": "Seizure prevention after first seizure; NO prophylactic AEDs in patients without seizures; preferred due to no drug interactions with chemotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate by 500 mg/day q1-2 weeks to seizure control; max 3000 mg/day; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, depression, irritability), somnolence; no drug interactions with methotrexate or rituximab",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Alternative or adjunct AED for seizures; minimal drug interactions with chemotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Lacosamide 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; titrate by 50 mg/dose weekly; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg PO"
+          },
+          "contraindications": "PR interval >200 ms; 2nd/3rd degree AV block; severe hepatic impairment",
+          "monitoring": "ECG at baseline and with dose changes; PR interval monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting from elevated ICP, chemotherapy (methotrexate, cytarabine), or radiation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO q8h PRN nausea; max 24 mg/day; give 30 min before chemotherapy",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; concurrent use of QT-prolonging agents",
+          "monitoring": "QTc if risk factors; serotonin syndrome risk with SSRIs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Headache from elevated ICP or mass effect; avoid NSAIDs peri-biopsy due to bleeding risk; avoid NSAIDs during methotrexate therapy (impairs renal MTX clearance)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN headache; max 3 g/day (2 g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (taper - post-biopsy only)",
+          "route": "PO",
+          "indication": "Transition from IV to PO after biopsy obtained; taper as soon as clinically feasible; PCNSL often dramatically steroid-responsive; rapid taper once chemotherapy begins (MTX preferred without steroids)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Dexamethasone (taper - post-biopsy only) 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 2 mg every 3-5 days (e.g., 16 to 12 to 8 to 6 to 4 to 2 to 1 to off); PCNSL may regrow during taper; definitive chemotherapy should start before taper is complete if possible",
+            "orderSentence": "Dexamethasone (taper - post-biopsy only) 4 mg PO"
+          },
+          "contraindications": "Symptom recurrence during taper (may need slower taper or earlier chemotherapy)",
+          "monitoring": "Glucose, BP, mood, steroid myopathy, immunosuppression, osteoporosis risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insulin (steroid-induced hyperglycemia)",
+          "route": "SC/IV",
+          "indication": "Glucose management while on dexamethasone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Variable",
+                "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Fingerstick glucose q6h; sliding scale insulin initially; basal-bolus if persistently >180 mg/dL; may need 2-3x baseline insulin on dexamethasone",
+            "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h (q1h if insulin drip)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TMP-SMX (PJP prophylaxis)",
+          "route": "PO",
+          "indication": "Pneumocystis prophylaxis during chemotherapy-induced immunosuppression; especially important given rituximab-induced B-cell depletion and chemotherapy-induced lymphopenia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet",
+                "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tablet PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri) during chemotherapy and for 3-6 months after; continue if CD4 <200",
+            "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tablet PO"
+          },
+          "contraindications": "Sulfa allergy (use atovaquone 1500 mg daily or dapsone 100 mg daily as alternatives); renal impairment (dose adjust)",
+          "monitoring": "CBC; renal function; rash (Stevens-Johnson risk); hold during methotrexate infusion (interferes with MTX excretion)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir (HSV/VZV prophylaxis)",
+          "route": "PO",
+          "indication": "Herpes prophylaxis during immunosuppressive chemotherapy; rituximab increases reactivation risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Acyclovir (HSV/VZV prophylaxis) 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Acyclovir 400 mg PO BID or valacyclovir 500 mg PO daily; continue during chemotherapy and 3-6 months after completion",
+            "orderSentence": "Acyclovir (HSV/VZV prophylaxis) 400 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Renal function; signs of viral reactivation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Filgrastim (G-CSF)",
+          "route": "SC",
+          "indication": "Chemotherapy-induced neutropenia prevention or treatment; used with dose-dense methotrexate regimens to maintain treatment intensity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mcg/kg",
+                "orderSentence": "Filgrastim (G-CSF) 5 mcg/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "5 mcg/kg SC daily starting 24-48h after chemotherapy until ANC >1500; pegfilgrastim 6 mg SC x1 dose alternative (not with MTX due to timing)",
+            "orderSentence": "Filgrastim (G-CSF) 5 mcg/kg SC"
+          },
+          "contraindications": "Hypersensitivity; concurrent with chemotherapy (start 24h after)",
+          "monitoring": "CBC daily during neutropenic phase; bone pain (common); spleen size if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Steroid-induced osteoporosis prevention while on prolonged dexamethasone; especially important with multiple steroid courses",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg Ca + 800 IU Vit D",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on steroids",
+            "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones (relative)",
+          "monitoring": "Calcium level; vitamin D level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate (cancer-related fatigue)",
+          "route": "PO",
+          "indication": "Cancer-related fatigue and cognitive slowing from tumor, chemotherapy, or radiation; may improve alertness during treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate (cancer-related fatigue) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID (morning and noon); titrate by 5 mg/dose q3-7 days; max 40 mg/day; avoid evening dosing",
+            "orderSentence": "Methylphenidate (cancer-related fatigue) 5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; tachyarrhythmia; severe anxiety; concurrent MAO inhibitors; glaucoma",
+          "monitoring": "Heart rate, BP, appetite, sleep quality, mood (agitation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Ibrutinib (BTK inhibitor)",
+          "route": "PO",
+          "indication": "Relapsed/refractory PCNSL; excellent CNS penetration; especially effective if MYD88 L265P mutation present; single agent or with MTX-based regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "560 mg",
+                "orderSentence": "Ibrutinib (BTK inhibitor) 560 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "560 mg PO daily continuously until progression or intolerable toxicity; take at same time daily; avoid strong CYP3A4 inhibitors/inducers",
+            "orderSentence": "Ibrutinib (BTK inhibitor) 560 mg PO"
+          },
+          "contraindications": "Active bleeding; requires dose modification with CYP3A4 inhibitors; atrial fibrillation risk; warfarin contraindicated (use DOACs)",
+          "monitoring": "CBC weekly x4 then monthly; LFTs monthly; ECG for atrial fibrillation; bleeding assessment; infection monitoring; hold 3-7 days before/after procedures",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Temozolomide (relapsed PCNSL)",
+          "route": "PO",
+          "indication": "Relapsed/refractory PCNSL after HD-MTX failure; oral alkylating agent with CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg/m2",
+                "orderSentence": "Temozolomide (relapsed PCNSL) 150 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150-200 mg/m2 PO days 1-5 of 28-day cycle; take on empty stomach 1h before bed; antiemetic pre-medication",
+            "orderSentence": "Temozolomide (relapsed PCNSL) 150 mg/m2 PO"
+          },
+          "contraindications": "Severe myelosuppression; prior temozolomide intolerance; hypersensitivity to dacarbazine",
+          "monitoring": "CBC Day 1 and Day 22 of each cycle; LFTs monthly; watch for lymphopenia and opportunistic infections",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lenalidomide",
+          "route": "PO",
+          "indication": "Relapsed/refractory PCNSL; immunomodulatory agent; may combine with rituximab (R2 regimen)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Lenalidomide 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO days 1-21 of 28-day cycle (21 days on, 7 days off); requires REMS enrollment (Revlimid REMS); thromboprophylaxis required",
+            "orderSentence": "Lenalidomide 25 mg PO"
+          },
+          "contraindications": "Pregnancy (teratogenic, Category X); DVT/PE history (requires prophylaxis); neutropenia (ANC <1000); renal impairment (dose reduce)",
+          "monitoring": "CBC weekly x8 then monthly; pregnancy testing monthly (female patients); LFTs; renal function; TSH q3 months; VTE monitoring; REMS compliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pemetrexed",
+          "route": "IV",
+          "indication": "Relapsed/refractory PCNSL; antifolate with CNS activity; single agent or combination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "900 mg/m2",
+                "orderSentence": "Pemetrexed 900 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "900 mg/m2 IV over 10 min q3 weeks; supplement with folic acid 1 mg PO daily and B12 1000 mcg IM q9 weeks (start 7 days before first dose); dexamethasone 4 mg PO BID x3 days starting day before pemetrexed",
+            "orderSentence": "Pemetrexed 900 mg/m2 IV"
+          },
+          "contraindications": "CrCl <45; inability to take folic acid/B12 supplementation; pleural effusion (3rd space - delays clearance)",
+          "monitoring": "CBC weekly; renal function; LFTs; rash; signs of toxicity; folic acid and B12 compliance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topotecan",
+          "route": "IV",
+          "indication": "Relapsed/refractory PCNSL; topoisomerase I inhibitor with CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg/m2",
+                "orderSentence": "Topotecan 1.5 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1.5 mg/m2 IV daily x 5 days every 21 days; dose reduce for renal impairment or myelosuppression",
+            "orderSentence": "Topotecan 1.5 mg/m2 IV"
+          },
+          "contraindications": "Severe myelosuppression (ANC <1500, platelets <100K); severe renal impairment",
+          "monitoring": "CBC with differential before each cycle; nadir at day 11; renal function; signs of infection during neutropenic period",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Whole brain radiation therapy (salvage)",
+          "route": "-",
+          "indication": "Relapsed/refractory PCNSL after HD-MTX failure; salvage option; avoid if possible in patients who may be candidates for re-challenge with chemotherapy; significant neurotoxicity risk especially in elderly (>60)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "23.4 Gy",
+                "orderSentence": "Whole brain radiation therapy (salvage) 23.4 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "23.4 Gy in 13 fractions (1.8 Gy/fraction) reduced-dose WBRT per RTOG 1114; OR 36-45 Gy in 20-25 fractions (higher dose if used as sole therapy); consider omission in patients >60 due to severe neurocognitive toxicity risk",
+            "orderSentence": "Whole brain radiation therapy (salvage) 23.4 Gy -"
+          },
+          "contraindications": "Prior full-dose WBRT; pregnancy; age >60 (relative, due to neurotoxicity)",
+          "monitoring": "Neurocognitive testing at baseline and q3 months; MRI q2-3 months; watch for delayed leukoencephalopathy (may develop 6-12 months post-RT); neurotoxicity screening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Induction Chemotherapy / Consolidation)": [
+        {
+          "item": "High-dose Methotrexate (HD-MTX) - Induction",
+          "route": "IV",
+          "indication": "CORNERSTONE of PCNSL treatment; first-line induction; achieves therapeutic CNS concentrations; administered as part of multi-agent regimen (R-MPV, MATRix, DeAngelis protocol); 60-80% overall response rate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3.5 g/m2",
+                "orderSentence": "High-dose Methotrexate (HD-MTX) - Induction 3.5 g/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3.5 g/m2 IV over 4 hours; aggressive IV hydration (2-3 L/m2) starting 12h before and continuing 48h after; urine alkalinization with sodium bicarbonate (target pH >7.0); leucovorin rescue starting 24h after MTX completion (25 mg IV/PO q6h until MTX level <0.05 micromol/L); q2 week cycles x 5-7 based on response; hold TMP-SMX during MTX weeks",
+            "orderSentence": "High-dose Methotrexate (HD-MTX) - Induction 3.5 g/m2 IV"
+          },
+          "pretreatment": "CrCl >50 mL/min (essential); no third-space fluid collections (ascites, pleural effusion - delays MTX clearance); CBC (ANC >1000, platelets >75K); LFTs normal; urine pH >7.0 before infusion; hepatitis B cleared or on prophylaxis; adequate hydration status; no concurrent nephrotoxic drugs (NSAIDs, aminoglycosides)",
+          "contraindications": "CrCl <50 mL/min; third-space fluid (ascites, large pleural effusion); concurrent nephrotoxic drugs including NSAIDs; active infection; severe hepatic impairment; pregnancy",
+          "monitoring": "Serum MTX levels at 24h, 48h, 72h (and until <0.05 micromol/L); creatinine q12h during infusion and for 72h after; urine output (target >100 mL/h); urine pH q6h (maintain >7.0); CBC with differential; LFTs; mucositis assessment; neurologic exam",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Anti-CD20 monoclonal antibody; combined with HD-MTX in R-MPV and MATRix regimens; PCNSL is CD20+ in >95% of cases; improves response rate when combined with MTX-based chemotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab 375 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV; first infusion: start at 50 mg/h, increase by 50 mg/h q30min to max 400 mg/h; subsequent infusions: start at 100 mg/h, increase by 100 mg/h q30min to max 400 mg/h; administer per protocol schedule (typically Day 1 of each cycle); premedicate with acetaminophen 650 mg, diphenhydramine 50 mg, and methylprednisolone 100 mg IV",
+            "orderSentence": "Rituximab 375 mg/m2 IV"
+          },
+          "pretreatment": "Hepatitis B screening completed (HBsAg, anti-HBc, anti-HBs); CBC; baseline immunoglobulins; premedication protocol; cardiac function assessment",
+          "contraindications": "Active HBV infection without antiviral prophylaxis (fatal reactivation risk); severe active infection; severe cardiac disease (arrhythmia risk with infusion); known hypersensitivity",
+          "monitoring": "Infusion reaction monitoring (vitals q15min during first infusion, q30min subsequent); HBV DNA if core antibody positive (q3 months); quantitative immunoglobulins q3 months; signs of progressive multifocal leukoencephalopathy (PML)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Procarbazine (R-MPV regimen component)",
+          "route": "PO",
+          "indication": "Component of R-MPV regimen (Rituximab, Methotrexate, Procarbazine, Vincristine); alkylating agent with CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg/m2",
+                "orderSentence": "Procarbazine (R-MPV regimen component) 100 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg/m2 PO daily x 7 days on odd-numbered cycles (cycles 1, 3, 5); take on empty stomach; tyramine-free diet during and 2 weeks after (MAO inhibitor properties)",
+            "orderSentence": "Procarbazine (R-MPV regimen component) 100 mg/m2 PO"
+          },
+          "pretreatment": "Concurrent MAO inhibitors, SSRIs, SNRIs, meperidine, sympathomimetics; tyramine-rich foods (aged cheese, wine, fermented foods); severe myelosuppression; severe hepatic/renal impairment",
+          "contraindications": "CBC before each cycle; LFTs; educate on dietary restrictions (tyramine); signs of peripheral neuropathy; rash (allergic dermatitis common, may require discontinuation)",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Vincristine (R-MPV regimen component)",
+          "route": "IV",
+          "indication": "Component of R-MPV regimen; vinca alkaloid; contributes to multi-agent synergy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.4 mg/m2",
+                "orderSentence": "Vincristine (R-MPV regimen component) 1.4 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1.4 mg/m2 IV push (max 2 mg per dose) on Day 1 of each cycle; NEVER administer intrathecally (fatal); vesicant - administer through running IV",
+            "orderSentence": "Vincristine (R-MPV regimen component) 1.4 mg/m2 IV"
+          },
+          "pretreatment": "Pre-existing severe peripheral neuropathy; Charcot-Marie-Tooth disease; demyelinating conditions; NEVER intrathecal (fatal)",
+          "contraindications": "Peripheral neuropathy assessment before each dose (grade and hold if Grade 3+); constipation (autonomic neuropathy); jaw pain; ileus monitoring; foot drop assessment",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Cytarabine (high-dose, MATRix regimen component)",
+          "route": "IV",
+          "indication": "Component of MATRix regimen (MTX, Ara-C, Thiotepa, Rituximab); high-dose achieves therapeutic CSF levels; consolidation in younger patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/m2",
+                "orderSentence": "Cytarabine (high-dose, MATRix regimen component) 2 g/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/m2 IV over 3h q12h on Days 2-3 (4 doses total per cycle); corticosteroid eye drops (dexamethasone 0.1% q6h) starting 12h before and continuing 48h after to prevent chemical conjunctivitis; cerebellar function assessment before each dose",
+            "orderSentence": "Cytarabine (high-dose, MATRix regimen component) 2 g/m2 IV"
+          },
+          "pretreatment": "Age >60 (increased cerebellar toxicity risk); cerebellar dysfunction; renal impairment (CrCl <60 - dose reduce); hepatic impairment",
+          "contraindications": "Cerebellar exam before each dose (finger-to-nose, rapid alternating movements, tandem gait); if ANY cerebellar signs develop, STOP immediately (irreversible); CBC; LFTs; renal function; ophtho eye drops compliance",
+          "monitoring": "-",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-"
+        },
+        {
+          "item": "Thiotepa (MATRix regimen component or ASCT conditioning)",
+          "route": "IV",
+          "indication": "Component of MATRix regimen; CNS-penetrating alkylating agent; also used in ASCT conditioning regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg/m2",
+                "orderSentence": "Thiotepa (MATRix regimen component or ASCT conditioning) 30 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg/m2 IV over 15-30 min on Day 4 of each MATRix cycle; for ASCT conditioning: higher doses per transplant protocol",
+            "orderSentence": "Thiotepa (MATRix regimen component or ASCT conditioning) 30 mg/m2 IV"
+          },
+          "pretreatment": "Severe myelosuppression; active infection; pregnancy",
+          "contraindications": "CBC (profound myelosuppression expected); mucositis; skin toxicity (rash, hyperpigmentation); LFTs; signs of VOD with high-dose conditioning",
+          "monitoring": "-",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-"
+        },
+        {
+          "item": "Whole brain radiation therapy (consolidation)",
+          "route": "-",
+          "indication": "Consolidation after chemotherapy induction; REDUCED dose (23.4 Gy) after CR to HD-MTX per RTOG 1114; previously full dose (45 Gy) but reduced due to neurotoxicity; alternative: ASCT consolidation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "23.4 Gy",
+                "orderSentence": "Whole brain radiation therapy (consolidation) 23.4 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "23.4 Gy in 13 fractions (1.8 Gy/fraction) for patients in CR after HD-MTX induction; 45 Gy in 25 fractions for partial responders; begin 4-6 weeks after last chemotherapy cycle; consider omission in patients >60 due to delayed neurotoxicity risk",
+            "orderSentence": "Whole brain radiation therapy (consolidation) 23.4 Gy -"
+          },
+          "pretreatment": "Prior WBRT; pregnancy; age >60 (relative contraindication - consider ASCT or observation instead)",
+          "contraindications": "Neurocognitive testing at baseline and q3-6 months post-RT; MRI q2-3 months; watch for delayed leukoencephalopathy; neurotoxicity risk increases with age and cumulative MTX exposure",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "High-dose chemotherapy with autologous stem cell transplant (HDC-ASCT)",
+          "route": "IV",
+          "indication": "Consolidation alternative to WBRT; preferred in younger patients (age <65-70) to avoid radiation neurotoxicity; thiotepa-based conditioning regimen most common for PCNSL",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Thiotepa-based conditioning",
+                "orderSentence": "High-dose chemotherapy with autologous stem cell transplant (HDC-ASCT) Thiotepa-based conditioning IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Stem cell mobilization after induction CR; conditioning: thiotepa 5 mg/kg IV x2 days + carmustine (BCNU) 400 mg/m2 IV x1 day (or other institutional protocol); autologous stem cell infusion Day 0; requires transplant-capable center",
+            "orderSentence": "High-dose chemotherapy with autologous stem cell transplant (HDC-ASCT) Thiotepa-based conditioning IV"
+          },
+          "pretreatment": "Age >70 (relative); KPS <60; inadequate stem cell collection; active infection; organ dysfunction (cardiac, pulmonary, hepatic, renal)",
+          "contraindications": "Engraftment monitoring (ANC, platelets); infection prophylaxis; mucositis; hepatic VOD screening; renal function; pulmonary function; MRI q3 months post-transplant",
+          "monitoring": "-",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "STAT"
+        },
+        {
+          "item": "Intrathecal Methotrexate",
+          "route": "IT",
+          "indication": "Positive CSF cytology/flow cytometry; leptomeningeal involvement documented; administered via lumbar puncture or Ommaya reservoir; role diminished with HD-MTX (which achieves therapeutic CSF levels)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12 mg",
+                "orderSentence": "Intrathecal Methotrexate 12 mg IT"
+              }
+            ],
+            "route": "IT",
+            "instructions": "12 mg IT (preservative-free) via LP or Ommaya reservoir; 2x/week for 4 weeks, then weekly x4-8 weeks, then monthly; reconstitute in preservative-free normal saline; give with leucovorin 10 mg PO q6h x 4 doses starting 24h after IT MTX",
+            "orderSentence": "Intrathecal Methotrexate 12 mg IT"
+          },
+          "pretreatment": "Active CNS infection; elevated ICP with herniation risk; LP contraindications",
+          "contraindications": "Opening pressure before each IT injection; neurologic exam (arachnoiditis, myelopathy); MTX neurotoxicity symptoms; concurrent systemic MTX timing (avoid within 48h)",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "ART initiation (HIV-associated PCNSL)",
+          "route": "PO",
+          "indication": "HIV-positive patients: ART is critical component of treatment; immune reconstitution may independently cause tumor regression; start concurrently with chemotherapy or before if CD4 critically low",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per HIV guidelines",
+                "orderSentence": "ART initiation (HIV-associated PCNSL) Per HIV guidelines PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Preferred: bictegravir/emtricitabine/TAF (Biktarvy) 1 tablet PO daily or dolutegravir-based regimen; check for drug interactions with chemotherapy; avoid protease inhibitors (CYP interactions with chemotherapy); INSTI-based regimens preferred",
+            "orderSentence": "ART initiation (HIV-associated PCNSL) Per HIV guidelines PO"
+          },
+          "pretreatment": "Check drug-drug interactions with chemotherapy regimen; avoid strong CYP3A4 inhibitors",
+          "contraindications": "CD4 count and HIV viral load at baseline and q3 months; drug interaction review with each chemotherapy cycle; IRIS monitoring (immune reconstitution inflammatory syndrome may cause paradoxical worsening)",
+          "monitoring": "-",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery STAT consultation for stereotactic biopsy planning; emphasize AVOID open resection (no survival benefit in PCNSL, unlike gliomas); biopsy should proceed before steroids if possible",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuro-oncology consultation for HD-MTX-based chemotherapy planning, response assessment, and long-term management",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology/oncology consultation for lymphoma staging, systemic evaluation, and consideration of ASCT consolidation in eligible patients",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation oncology consultation for consolidation WBRT planning or salvage radiation therapy; discuss reduced-dose WBRT (23.4 Gy) vs. ASCT consolidation options",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology consultation with dilated slit lamp examination for all PCNSL patients to evaluate for intraocular lymphoma (15-25% prevalence) as this changes staging and may require ocular radiation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Multidisciplinary tumor board presentation for coordinated treatment planning including neurosurgery, neuro-oncology, hematology, radiation oncology, neuropathology, and neuroradiology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropathology consultation for comprehensive tissue analysis including CD20, CD79a, MUM1, BCL6, Ki-67, MYD88 L265P mutation, and CD79B mutation to confirm DLBCL and identify actionable targets",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infectious disease consultation for HIV-positive patients for ART optimization, opportunistic infection prophylaxis, and drug interaction management with chemotherapy",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care consultation for symptom management, goals of care discussion, and advance directive completion given median survival of 2-5 years (immunocompetent) or shorter (HIV-associated without ART)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy for mobility assessment, fall prevention given neurologic deficits and steroid myopathy, and exercise program to mitigate chemotherapy-related deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive compensation strategies, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation if posterior fossa involvement, and language/cognitive assessment if dominant hemisphere tumor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consultation for insurance authorization (HD-MTX requires frequent hospitalization), disability paperwork, caregiver support, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology evaluation for baseline cognitive assessment before radiation or transplant to monitor for treatment-related neurotoxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/psychology referral for depression, anxiety, and adjustment disorder management given cancer diagnosis and cognitive symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fertility counseling in reproductive-age patients before chemotherapy initiation as methotrexate, procarbazine, and alkylating agents may cause infertility",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transplant evaluation consultation for patients under age 65-70 who achieve CR to induction chemotherapy and are candidates for HDC-ASCT consolidation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical trials evaluation for eligible patients at all stages including newly diagnosed (novel combinations) and relapsed/refractory (BTK inhibitors, immunotherapy, CAR-T)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for new or worsening headache, sudden weakness, vision changes, speech difficulty, or seizures (may indicate tumor progression or increased intracranial pressure)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return immediately for fever >100.4F, chills, or signs of infection during chemotherapy as this may indicate life-threatening neutropenic sepsis requiring emergency evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology due to seizure risk, visual changes, and cognitive impairment from tumor and treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop dexamethasone abruptly (if prescribed) as this may cause adrenal crisis; follow prescribed taper schedule exactly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any mouth sores, difficulty swallowing, or abdominal pain during methotrexate treatment as mucositis requires early intervention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain excellent oral hydration (2-3 L/day unless restricted) during methotrexate treatment to promote renal clearance and reduce nephrotoxicity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid NSAIDs (ibuprofen, naproxen, aspirin) during methotrexate treatment as these impair methotrexate excretion and increase toxicity risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol during chemotherapy to prevent hepatotoxicity and to avoid seizure threshold lowering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any visual changes (blurred vision, floaters, eye pain) as these may indicate intraocular lymphoma involvement requiring ophthalmologic evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a symptom diary documenting headaches, seizures, weakness, cognitive changes, vision changes, and mood to track treatment response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Discuss advance directive and healthcare proxy designation given diagnosis and treatment complexity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification indicating cancer diagnosis, seizure risk, and immunosuppressed status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid live vaccines during and for 6 months after chemotherapy and rituximab due to immunosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If taking procarbazine: avoid tyramine-rich foods (aged cheese, cured meats, red wine, soy sauce, fermented foods) as this can cause hypertensive crisis (MAO inhibitor properties)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-sodium diet while on dexamethasone to reduce fluid retention, edema, and hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood sugar monitoring and diabetic diet while on steroids to prevent steroid-induced hyperglycemia complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular low-impact exercise (walking, swimming, yoga) as tolerated to maintain strength, reduce steroid myopathy, and improve mood and quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall precautions at home including removal of trip hazards, use of handrails, non-slip mats, and night lights given neurologic deficits, steroid myopathy, and seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to optimize wound healing, immune function, and reduce thrombotic risk during chemotherapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol avoidance during chemotherapy to prevent hepatotoxicity and avoid seizure threshold lowering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sun protection during chemotherapy and methotrexate treatment due to photosensitivity risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day unless fluid restricted) especially critical during methotrexate treatment weeks to support renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutritious high-protein diet to support immune function and maintain weight during chemotherapy; dietitian referral if weight loss >5%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hand hygiene and infection avoidance measures (avoid crowds, sick contacts) during immunosuppressive chemotherapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Glioblastoma (GBM)",
+      "features": "Ring-enhancing (vs. homogeneous in PCNSL); central necrosis (common in GBM, rare in immunocompetent PCNSL); irregular thick rim; hemorrhagic; typically single; does NOT restrict on DWI centrally; does NOT respond dramatically to steroids",
+      "tests": "MRI with DWI (PCNSL restricts, GBM necrosis does not); MR perfusion (GBM has higher rCBV); steroid response (dramatic in PCNSL); stereotactic biopsy (GFAP+ in GBM, CD20+ in PCNSL)"
+    },
+    {
+      "diagnosis": "Brain metastases",
+      "features": "History of systemic malignancy; multiple lesions at gray-white junction; well-demarcated ring enhancement; less periventricular predilection; known primary cancer",
+      "tests": "CT chest/abdomen/pelvis; PET/CT for primary site; biopsy with immunohistochemistry for primary site markers (TTF-1, CK7/20, HER2, melanoma markers)"
+    },
+    {
+      "diagnosis": "Toxoplasmosis (HIV/immunocompromised)",
+      "features": "HIV/AIDS with CD4 <100; multiple ring-enhancing lesions; basal ganglia predilection; eccentric target sign; positive Toxoplasma IgG in >90%; responds to empiric treatment in 10-14 days",
+      "tests": "Toxoplasma IgG (positive in >90% of toxo, but also common in general population); empiric treatment trial with pyrimethamine + sulfadiazine (10-14 days); if no improvement then biopsy; Thallium SPECT (cold in toxo, hot in lymphoma)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Younger patients; leptomeningeal enhancement pattern; cranial nerve palsies (especially CN VII); pulmonary involvement (hilar lymphadenopathy); elevated ACE; non-caseating granulomas",
+      "tests": "Chest CT (hilar lymphadenopathy); serum ACE; CSF ACE; PET/CT for systemic sarcoidosis; tissue biopsy showing non-caseating granulomas (vs. large B-cells in PCNSL)"
+    },
+    {
+      "diagnosis": "Tumefactive multiple sclerosis",
+      "features": "Younger patients; incomplete ring enhancement (\"open ring sign\"); less mass effect relative to size; clinical dissemination in time and space; other demyelinating lesions",
+      "tests": "MRI: open ring enhancement; CSF oligoclonal bands; MOG/AQP4 antibodies; clinical dissemination criteria; biopsy showing demyelination (not lymphoma)"
+    },
+    {
+      "diagnosis": "Progressive multifocal leukoencephalopathy (PML)",
+      "features": "Immunocompromised (HIV, natalizumab, rituximab); non-enhancing white matter lesions (unlike PCNSL which enhances); no mass effect; JC virus-mediated",
+      "tests": "CSF JC virus PCR (positive); non-enhancing pattern; no restricted diffusion (vs. PCNSL which restricts); brain biopsy if PCR negative but clinical suspicion high"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Ring-enhancing with central restricted diffusion on DWI (bright DWI in cavity center, similar to PCNSL); thin smooth rim (vs. thick irregular in PCNSL); fever, leukocytosis; source (dental, ENT, cardiac)",
+      "tests": "DWI (both PCNSL and abscess restrict, but abscess cavity center restricts while PCNSL is solid); MR spectroscopy (amino acid peaks in abscess: succinate, acetate, not present in lymphoma); blood cultures; echocardiogram"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute cognitive/behavioral changes; limbic involvement; seizures; autoantibodies (NMDAR, LGI1, CASPR2); less mass effect; often non-enhancing or mildly enhancing",
+      "tests": "Autoimmune encephalitis antibody panel (serum and CSF); EEG (extreme delta brush in NMDAR); MRI pattern (medial temporal, less mass effect); CSF lymphocytic pleocytosis without malignant cells"
+    },
+    {
+      "diagnosis": "CNS vasculitis (primary or secondary)",
+      "features": "Multifocal white matter lesions; may enhance; headache; cognitive decline; vessel wall enhancement on VWI; stroke-like episodes",
+      "tests": "MRA/CTA (beading, stenosis); vessel wall imaging (concentric enhancement); ESR/CRP; angiography (classic beading pattern); brain and leptomeningeal biopsy showing vasculitis (not lymphoma)"
+    },
+    {
+      "diagnosis": "Intravascular lymphoma",
+      "features": "Rare B-cell lymphoma confined to blood vessel lumens; multifocal strokes; diffuse white matter disease; skin involvement; no discrete mass on imaging (unlike PCNSL)",
+      "tests": "Random skin biopsy (positive in 70-80%); brain biopsy showing intravascular large B-cells; MRI pattern (punctate enhancing lesions, diffuse white matter changes, stroke-like pattern)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "High-dose methotrexate (>=3 g/m2) is the backbone of PCNSL induction therapy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ferreri et al. Lancet 2009 (IELSG #20)](https://pubmed.ncbi.nlm.nih.gov/19230772/)"
+    },
+    {
+      "recommendation": "Combination of HD-MTX with rituximab improves outcomes in PCNSL (IELSG #32); MATRix regimen (MTX, Ara-C, Thiotepa, Rituximab) is effective induction for PCNSL",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ferreri et al. Lancet Haematol 2016 (IELSG #32)](https://pubmed.ncbi.nlm.nih.gov/27216018/)"
+    },
+    {
+      "recommendation": "R-MPV regimen (Rituximab, Methotrexate, Procarbazine, Vincristine) followed by reduced-dose WBRT",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Morris et al. J Clin Oncol 2013](https://pubmed.ncbi.nlm.nih.gov/23547075/)"
+    },
+    {
+      "recommendation": "Reduced-dose WBRT (23.4 Gy) after CR to MTX-based chemotherapy preserves neurocognitive function (RTOG 1114)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Thiel et al. Lancet Haematol 2022 (G-PCNSL-SG-1)](https://pubmed.ncbi.nlm.nih.gov/34732322/)"
+    },
+    {
+      "recommendation": "WBRT omission with ASCT consolidation is noninferior to WBRT in younger patients",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Houillier et al. Lancet Haematol 2019 (PRECIS)](https://pubmed.ncbi.nlm.nih.gov/31285178/)"
+    },
+    {
+      "recommendation": "HDC-ASCT is effective consolidation for PCNSL with thiotepa-based conditioning",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Illerhaus et al. Blood 2016](https://pubmed.ncbi.nlm.nih.gov/27432878/); [Omuro et al. Blood 2015](https://pubmed.ncbi.nlm.nih.gov/26186940/)"
+    },
+    {
+      "recommendation": "Ibrutinib has CNS activity in relapsed/refractory PCNSL",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Grommes et al. Cancer Discov 2017](https://pubmed.ncbi.nlm.nih.gov/28619981/)"
+    },
+    {
+      "recommendation": "Lenalidomide plus rituximab (R2) active in relapsed PCNSL",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Ghesquieres et al. Eur J Cancer 2019](https://pubmed.ncbi.nlm.nih.gov/31437738/)"
+    },
+    {
+      "recommendation": "Corticosteroids cause vanishing tumor in PCNSL; avoid before biopsy",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Kuhlmann et al. Acta Neuropathol 2008](https://pubmed.ncbi.nlm.nih.gov/18060551/); Expert consensus"
+    },
+    {
+      "recommendation": "MYD88 L265P mutation present in ~70-80% of PCNSL; diagnostic and therapeutic target",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Gonzalez-Aguilar et al. Clin Cancer Res 2012](https://pubmed.ncbi.nlm.nih.gov/22912393/)"
+    },
+    {
+      "recommendation": "IELSG prognostic scoring system for PCNSL (age, ECOG, LDH, CSF protein, deep brain involvement)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ferreri et al. J Clin Oncol 2003](https://pubmed.ncbi.nlm.nih.gov/12506181/)"
+    },
+    {
+      "recommendation": "Slit lamp examination mandatory at diagnosis (15-25% ocular involvement)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Grimm et al. Neuro-Oncology 2008](https://pubmed.ncbi.nlm.nih.gov/18458085/); [IPCG guidelines]"
+    },
+    {
+      "recommendation": "NCCN Guidelines for CNS Cancers - Primary CNS Lymphoma section",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[NCCN CNS Cancers Guidelines v3.2024](https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1425)"
+    },
+    {
+      "recommendation": "EBV CSF PCR highly specific for HIV-associated PCNSL",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Cingolani et al. J Clin Oncol 2000](https://pubmed.ncbi.nlm.nih.gov/11054433/)"
+    },
+    {
+      "recommendation": "Rituximab requires HBV screening before administration (fatal reactivation risk)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[FDA Black Box Warning]; [Evens et al. Blood 2011](https://pubmed.ncbi.nlm.nih.gov/21653327/)"
+    },
+    {
+      "recommendation": "Prophylactic AEDs NOT recommended in brain tumor patients without seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Glantz et al. Neurology 2000 (AAN Practice Parameter)](https://pubmed.ncbi.nlm.nih.gov/10993896/)"
+    },
+    {
+      "recommendation": "Levetiracetam preferred AED in CNS tumor patients (no CYP enzyme induction)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/20352269/)"
+    },
+    {
+      "recommendation": "Pemetrexed active in relapsed PCNSL",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Raizer et al. J Clin Oncol 2012](https://pubmed.ncbi.nlm.nih.gov/22949149/)"
+    },
+    {
+      "recommendation": "CSF IL-10/IL-6 ratio >1.0 supports CNS lymphoma diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rubenstein et al. Blood 2013](https://pubmed.ncbi.nlm.nih.gov/23287856/)"
+    },
+    {
+      "recommendation": "Temozolomide has activity in relapsed PCNSL",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Reni et al. J Clin Oncol 2007](https://pubmed.ncbi.nlm.nih.gov/17846449/)"
+    },
+    {
+      "recommendation": "Thallium SPECT differentiates PCNSL from toxoplasmosis in HIV patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Antinori et al. J Neurooncol 1999](https://pubmed.ncbi.nlm.nih.gov/10505664/)"
+    },
+    {
+      "recommendation": "Dexamethasone eye drops prevent cytarabine-induced chemical conjunctivitis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Expert consensus; [Cerci & Ostronoff J Clin Oncol 2014](https://pubmed.ncbi.nlm.nih.gov/25422493/)"
+    },
+    {
+      "recommendation": "Memorial Sloan Kettering prognostic model for PCNSL (age, KPS)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Abrey et al. J Clin Oncol 2006](https://pubmed.ncbi.nlm.nih.gov/16966685/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (motor, sensory, language, cognition, cranial nerves, visual fields)",
+      "frequency": "q2-4h inpatient; each clinic visit",
+      "action": "STAT MRI if decline; increase dexamethasone if post-biopsy; expedite chemotherapy initiation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h while on dexamethasone (q1h if insulin drip)",
+      "action": "Sliding scale to basal-bolus insulin; endocrine consult if refractory",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum creatinine",
+      "frequency": "q12h during MTX infusion and for 72h after; each cycle pre-treatment",
+      "action": "Delay MTX until CrCl recovers; aggressive hydration; glucarpidase if MTX level critically elevated with renal failure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum methotrexate level",
+      "frequency": "24h, 48h, 72h post-infusion (and until <0.05 micromol/L)",
+      "action": "Continue leucovorin rescue until level <0.05; if level >10 micromol/L at 48h with rising creatinine, consider glucarpidase",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "q48h during MTX hospitalization; weekly between cycles; before each cycle Day 1",
+      "action": "Delay chemotherapy; G-CSF for neutropenia (ANC <1000); platelet transfusion if <10K or bleeding; neutropenic fever protocol if febrile with ANC <500",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Urine pH",
+      "frequency": "q6h during MTX infusion and for 48h after",
+      "action": "Increase sodium bicarbonate infusion; hold MTX infusion if pH <7.0; recheck in 1h after bolus",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "q1h during MTX infusion and for 48-72h after",
+      "action": "Increase IV fluids; furosemide if fluid overloaded but oliguria; STAT creatinine and MTX level",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Hepatic function (LFTs)",
+      "frequency": "q2 weeks during induction; monthly during consolidation",
+      "action": "Dose reduce or hold chemotherapy; hepatology consult if Grade 3-4 elevation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q6-12h inpatient during IV hydration for MTX",
+      "action": "SIADH workup if <130; adjust hydration; hypertonic saline if <125 or symptomatic",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRI brain with contrast",
+      "frequency": "Post-biopsy CT within 6h; baseline MRI; after 2-3 cycles of induction; end of induction; then q2-3 months",
+      "action": "Tumor board discussion if progression; consider salvage therapy; rebiopsy if uncertain (pseudoprogression rare in PCNSL but can occur with immunotherapy)",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Slit lamp ophthalmologic exam",
+      "frequency": "Baseline (mandatory); after induction; q3-6 months for 2 years; annually thereafter",
+      "action": "If new ocular involvement: ocular radiation therapy (30-36 Gy); intravitreal methotrexate; reassess systemic disease",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Quantitative immunoglobulins",
+      "frequency": "Baseline; q3 months during rituximab; q6 months after completion",
+      "action": "IVIG replacement if IgG <400 with recurrent infections; hold rituximab if severe hypogammaglobulinemia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD4 count (all patients)",
+      "frequency": "Baseline; q3 months during treatment; monthly if HIV-positive",
+      "action": "Maintain PJP and antiviral prophylaxis; dose adjustments; delay treatment if critically immunosuppressed with active infection",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Continuous in ICU; q4h on floor; each clinic visit",
+      "action": "Antihypertensives; especially important during aggressive hydration for MTX",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurocognitive assessment",
+      "frequency": "Baseline; 6 months post-treatment; annually (especially after WBRT)",
+      "action": "Neuropsychology referral; rehabilitation; consider memantine or cognitive rehabilitation; screen for delayed leukoencephalopathy after WBRT",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "KPS / ECOG performance status",
+      "frequency": "Each clinic visit",
+      "action": "KPS <40: reassess goals of care; transition to supportive care/hospice",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression / anxiety screening (PHQ-9)",
+      "frequency": "Each clinic visit",
+      "action": "Psychiatry/psychology referral; SSRI initiation (check drug interactions)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "ICU admission",
+      "criteria": "GCS <=12; signs of herniation (pupil asymmetry, posturing, Cushing triad); status epilepticus; methotrexate toxicity with acute renal failure requiring monitoring or glucarpidase; neutropenic sepsis with hemodynamic instability; tumor lysis syndrome; HDC-ASCT conditioning and engraftment period"
+    },
+    {
+      "disposition": "General neurology/neurosurgery floor",
+      "criteria": "New diagnosis requiring workup, biopsy, and staging; HD-MTX infusion cycles (typically 3-5 day admission per cycle for hydration, monitoring, leucovorin rescue); symptomatic edema requiring IV dexamethasone with close glucose monitoring; post-biopsy observation; seizures requiring AED optimization; functional decline requiring rehabilitation planning"
+    },
+    {
+      "disposition": "Observation (<=24h)",
+      "criteria": "Known PCNSL with mild symptom worsening on stable regimen; MRI showing possible progression requiring multidisciplinary discussion; steroid dose adjustment with monitoring"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Neurologically stable for >=24h; seizure-free >=24h on oral AED; methotrexate level <0.05 micromol/L; creatinine stable; oral dexamethasone taper plan (if applicable); adequate oral hydration demonstrated; pain controlled on oral medications; treatment plan established with scheduled follow-up (neuro-oncology within 1-2 weeks); safe ambulation or adequate caregiver; patient/family education completed; neutropenic precaution education if ANC recovering"
+    },
+    {
+      "disposition": "Transfer to higher level care",
+      "criteria": "Need for neuro-oncology expertise with HD-MTX protocol; transplant-capable center for ASCT consolidation; clinical trial access; complex HIV co-management"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant neurologic deficits (hemiparesis, aphasia, cognitive impairment) requiring intensive rehabilitation before outpatient treatment; KPS 40-60 with rehabilitation potential; coordination with ongoing chemotherapy schedule"
+    },
+    {
+      "disposition": "Palliative care / Hospice",
+      "criteria": "Progressive PCNSL refractory to multiple lines of therapy; poor functional status (KPS <30); patient/family goals aligned with comfort-focused care; no longer candidate for disease-directed therapy"
+    }
+  ]
+}

@@ -5,15 +5,16 @@
   "icd10": [
     "** G50.0 (Trigeminal neuralgia)",
     "G50.1 (Atypical facial pain)",
+    "G50.8 (Other disorders of trigeminal nerve)",
     "G44.847 (Trigeminal autonomic cephalalgia)"
   ],
   "scope": "** Evaluation and management of trigeminal neuralgia in adults including classical TN (with or without neurovascular compression), secondary TN, and painful trigeminal neuropathy. Covers medical management, procedural interventions, and surgical options. Applies to ED, hospital, and outpatient settings.",
   "notes": [],
   "sections": {
     "Laboratory Workup": {
-      "Essential/Core Labs": [
+      "Core Labs (Baseline Before Treatment)": [
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -22,7 +23,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (sodium, LFTs)",
+          "item": "CMP (CPT 80053) (sodium, LFTs)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -40,9 +41,9 @@
           "target": "Negative"
         }
       ],
-      "Extended Workup": [
+      "Extended Labs (Atypical Presentations)": [
         {
-          "item": "ESR, CRP",
+          "item": "ESR (CPT 85652), CRP (CPT 86140)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -51,7 +52,7 @@
           "target": "Normal"
         },
         {
-          "item": "ANA, SSA/SSB",
+          "item": "ANA (CPT 86235), SSA/SSB",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -60,7 +61,7 @@
           "target": "Negative"
         },
         {
-          "item": "CSF analysis",
+          "item": "CSF analysis (CPT 62270)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -69,7 +70,7 @@
           "target": "Normal; or MS-consistent findings"
         },
         {
-          "item": "ACE level",
+          "item": "ACE level (CPT 82164)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -80,9 +81,9 @@
       ]
     },
     "Imaging & Studies": {
-      "Essential/First-line": [
+      "Neuroimaging": [
         {
-          "item": "MRI brain with dedicated trigeminal protocol",
+          "item": "MRI brain with dedicated trigeminal protocol (CPT 70553)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -92,7 +93,7 @@
           "contraindications": "Pacemaker, metal"
         },
         {
-          "item": "MRA (if MRI equivocal)",
+          "item": "MRA (CPT 70544) (if MRI equivocal)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -102,7 +103,7 @@
           "contraindications": "Same"
         },
         {
-          "item": "CT head (if MRI unavailable)",
+          "item": "CT head (CPT 70450) (if MRI unavailable)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -112,7 +113,7 @@
           "contraindications": "None (contrast: renal)"
         }
       ],
-      "Extended": [
+      "Specialized Protocols": [
         {
           "item": "3D-CISS/FIESTA sequence",
           "ED": "-",
@@ -134,9 +135,9 @@
           "contraindications": "Same"
         }
       ],
-      "Rare/Specialized": [
+      "Additional Studies": [
         {
-          "item": "Trigeminal reflex testing (blink reflex)",
+          "item": "Trigeminal reflex testing (blink reflex) (CPT 95933)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -343,19 +344,19 @@
       ],
       "Acute Exacerbation Management": [
         {
-          "item": "Fosphenytoin (severe exacerbation)",
+          "item": "Fosphenytoin (severe exacerbation) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "15-20 mg",
-                "orderSentence": "Fosphenytoin (severe exacerbation) 15-20 mg IV"
+                "orderSentence": "Fosphenytoin (severe exacerbation) (CPT 96365) 15-20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID",
-            "orderSentence": "Fosphenytoin (severe exacerbation) 15-20 mg IV"
+            "orderSentence": "Fosphenytoin (severe exacerbation) (CPT 96365) 15-20 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Sinus bradycardia, heart block, Adams-Stokes syndrome",
@@ -366,19 +367,19 @@
           "ICU": "-"
         },
         {
-          "item": "IV lidocaine",
+          "item": "IV lidocaine (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1-3 mg/kg",
-                "orderSentence": "IV lidocaine 1-3 mg/kg IV"
+                "orderSentence": "IV lidocaine (CPT 96365) 1-3 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain",
-            "orderSentence": "IV lidocaine 1-3 mg/kg IV"
+            "orderSentence": "IV lidocaine (CPT 96365) 1-3 mg/kg IV"
           },
           "pretreatment": "-",
           "contraindications": "Cardiac conduction abnormalities",
@@ -389,12 +390,12 @@
           "ICU": "-"
         },
         {
-          "item": "Peripheral nerve block (V2/V3)",
+          "item": "Peripheral nerve block (V2/V3) (CPT 64400)",
           "route": "-",
           "indication": "-",
           "dosing": {
             "instructions": "Lidocaine/bupivacaine at foramen rotundum/ovale",
-            "orderSentence": "Peripheral nerve block (V2/V3) - - - see dosing"
+            "orderSentence": "Peripheral nerve block (V2/V3) (CPT 64400) - - - see dosing"
           },
           "pretreatment": "-",
           "contraindications": "Infection, coagulopathy",
@@ -481,6 +482,26 @@
           "OPD": "-",
           "ICU": "-"
         }
+      ],
+      "Treatment for Specific Subtypes": [
+        {
+          "item": "Classical TN with clear vascular compression"
+        },
+        {
+          "item": "Classical TN without compression/idiopathic"
+        },
+        {
+          "item": "TN due to MS"
+        },
+        {
+          "item": "TN due to tumor"
+        },
+        {
+          "item": "TN with concomitant continuous pain"
+        },
+        {
+          "item": "V1 distribution"
+        }
       ]
     },
     "Other Recommendations": {
@@ -542,7 +563,7 @@
           "indication": "If MS-related TN"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "TN is a chronic condition; medications can control but rarely cure",
           "ED": "-",
@@ -592,7 +613,7 @@
           "OPD": "ROUTINE"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Pre-Procedure Considerations": [
         {
           "item": "Discuss risks/benefits of all surgical options",
           "ED": "-",

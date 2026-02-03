@@ -6,8 +6,10 @@
     "** I63.9 (Cerebral infarction",
     "unspecified)",
     "I63.50 (Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebral artery)",
-    "I63.3 (Cerebral infarction due to thrombosis of cerebral arteries)",
-    "I63.4 (Cerebral infarction due to embolism of cerebral arteries)"
+    "I63.30 (Cerebral infarction due to thrombosis of unspecified cerebral artery)",
+    "I63.40 (Cerebral infarction due to embolism of unspecified cerebral artery)",
+    "G45.9 (Transient cerebral ischemic attack",
+    "unspecified)"
   ],
   "scope": "** Acute ischemic stroke in adults — covers initial stabilization, thrombolytic therapy (IV alteplase/tenecteplase), endovascular thrombectomy criteria, blood pressure management, stroke etiology workup, secondary prevention initiation, and early rehabilitation. Excludes hemorrhagic stroke (see Intracerebral Hemorrhage template), transient ischemic attack (see TIA template), pediatric stroke, and chronic post-stroke management.",
   "notes": [],
@@ -15,7 +17,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "Point-of-care glucose",
+          "item": "Point-of-care glucose (CPT 82962)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -24,7 +26,7 @@
           "target": ">60 mg/dL"
         },
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -33,7 +35,7 @@
           "target": "Platelets >100,000"
         },
         {
-          "item": "BMP (Na, K, Cr, glucose, BUN)",
+          "item": "BMP (Na, K, Cr, glucose, BUN) (CPT 80048)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -42,7 +44,7 @@
           "target": "Normal"
         },
         {
-          "item": "PT/INR",
+          "item": "PT/INR (CPT 85610)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -51,7 +53,7 @@
           "target": "INR ≤1.7 for tPA eligibility"
         },
         {
-          "item": "aPTT",
+          "item": "aPTT (CPT 85730)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -60,7 +62,7 @@
           "target": "Normal range"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -69,7 +71,7 @@
           "target": "Normal"
         },
         {
-          "item": "Type and screen",
+          "item": "Type and screen (CPT 86900)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -78,7 +80,7 @@
           "target": "On file"
         },
         {
-          "item": "Lipid panel (fasting or non-fasting)",
+          "item": "Lipid panel (fasting or non-fasting) (CPT 80061)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -87,7 +89,7 @@
           "target": "LDL target <70 mg/dL"
         },
         {
-          "item": "HbA1c",
+          "item": "HbA1c (CPT 83036)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -96,9 +98,9 @@
           "target": "<7.0% (individualized)"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "Hepatic function panel (AST, ALT, albumin)",
+          "item": "Hepatic function panel (AST, ALT, albumin) (CPT 80076)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -107,7 +109,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -116,7 +118,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR / CRP",
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -125,7 +127,7 @@
           "target": "Normal"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -134,7 +136,7 @@
           "target": "Negative"
         },
         {
-          "item": "Pregnancy test (β-hCG)",
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -143,7 +145,7 @@
           "target": "Negative"
         },
         {
-          "item": "Blood alcohol level",
+          "item": "Blood alcohol level (CPT 80320)",
           "ED": "URGENT",
           "HOSP": "-",
           "OPD": "-",
@@ -152,7 +154,7 @@
           "target": "Correlate with clinical picture"
         },
         {
-          "item": "Magnesium",
+          "item": "Magnesium (CPT 83735)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -161,7 +163,7 @@
           "target": "Normal (>1.8 mg/dL)"
         },
         {
-          "item": "Phosphorus",
+          "item": "Phosphorus (CPT 84100)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -179,7 +181,7 @@
           "target": "Normal"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Hypercoagulable panel (protein C, protein S, antithrombin III, Factor V Leiden, prothrombin gene mutation)",
           "ED": "-",
@@ -199,7 +201,7 @@
           "target": "Negative"
         },
         {
-          "item": "Homocysteine",
+          "item": "Homocysteine (CPT 83090)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -208,7 +210,7 @@
           "target": "Normal (<15 µmol/L)"
         },
         {
-          "item": "RPR/VDRL",
+          "item": "RPR/VDRL (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -217,7 +219,7 @@
           "target": "Negative"
         },
         {
-          "item": "HIV",
+          "item": "HIV (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -226,7 +228,7 @@
           "target": "Negative"
         },
         {
-          "item": "ANA, dsDNA",
+          "item": "ANA (CPT 86235), dsDNA",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -271,7 +273,7 @@
           "target": "Negative"
         },
         {
-          "item": "Fibrinogen",
+          "item": "Fibrinogen (CPT 85384)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -280,7 +282,7 @@
           "target": "Normal (200-400 mg/dL)"
         },
         {
-          "item": "D-dimer",
+          "item": "D-dimer (CPT 85379)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -293,7 +295,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -303,7 +305,7 @@
           "contraindications": "Pregnancy (relative)"
         },
         {
-          "item": "CT angiography head and neck (CTA)",
+          "item": "CT angiography head and neck (CTA) (CPT 70496, 70498)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -313,7 +315,7 @@
           "contraindications": "Contrast allergy (premedicate), eGFR <30 (benefit outweighs risk in acute setting)"
         },
         {
-          "item": "CT perfusion (CTP)",
+          "item": "CT perfusion (CTP) (CPT 0042T)",
           "ED": "STAT",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -323,7 +325,7 @@
           "contraindications": "Same as CTA"
         },
         {
-          "item": "MRI brain with DWI (diffusion-weighted imaging)",
+          "item": "MRI brain with DWI (diffusion-weighted imaging) (CPT 70553)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -333,7 +335,7 @@
           "contraindications": "Pacemaker, metallic implants, severe claustrophobia"
         },
         {
-          "item": "ECG (12-lead)",
+          "item": "ECG (12-lead) (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -345,7 +347,7 @@
       ],
       "Extended": [
         {
-          "item": "MRA head and neck",
+          "item": "MRA head and neck (CPT 70544, 70547)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -355,7 +357,7 @@
           "contraindications": "Same as MRI"
         },
         {
-          "item": "Transthoracic echocardiogram (TTE)",
+          "item": "Transthoracic echocardiogram (TTE) (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -365,7 +367,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Transesophageal echocardiogram (TEE) with bubble study",
+          "item": "Transesophageal echocardiogram (TEE) (CPT 93312) with bubble study",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -375,7 +377,7 @@
           "contraindications": "Esophageal pathology, uncooperative patient"
         },
         {
-          "item": "Carotid duplex ultrasound",
+          "item": "Carotid duplex ultrasound (CPT 93880)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -385,7 +387,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Transcranial Doppler (TCD)",
+          "item": "Transcranial Doppler (TCD) (CPT 93886)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -395,7 +397,7 @@
           "contraindications": "Absent temporal bone window (~10% patients)"
         },
         {
-          "item": "Continuous cardiac telemetry",
+          "item": "Continuous cardiac telemetry (CPT 93228)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -415,7 +417,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -427,7 +429,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "Conventional cerebral angiography (DSA)",
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -481,19 +483,19 @@
     "Treatment": {
       "Acute/Emergent": [
         {
-          "item": "IV alteplase (tPA)",
+          "item": "IV alteplase (tPA) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.9 mg/kg",
-                "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+                "orderSentence": "IV alteplase (tPA) (CPT 96365) 0.9 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remaining 90% infused over 60 min. Door-to-needle target <45 min",
-            "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+            "orderSentence": "IV alteplase (tPA) (CPT 96365) 0.9 mg/kg IV"
           },
           "contraindications": ">4.5h from last known well (relative 3-4.5h window with additional exclusions); BP >185/110 despite treatment; platelets <100K; INR >1.7; active bleeding; recent surgery <14 days; recent stroke <3 months; intracranial hemorrhage history",
           "monitoring": "Neuro checks q15min during infusion, q30min x 6h, then q1h x 18h; BP q15min x 2h, q30min x 6h, then q1h; hold anticoagulants/antiplatelets 24h",
@@ -503,19 +505,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Tenecteplase IV (if available)",
+          "item": "Tenecteplase IV (CPT 96374) (if available)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.25 mg/kg",
-                "orderSentence": "Tenecteplase IV (if available) 0.25 mg/kg IV"
+                "orderSentence": "Tenecteplase IV (CPT 96374) (if available) 0.25 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.25 mg/kg IV single bolus (max 25 mg); preferred if LVO planned for thrombectomy",
-            "orderSentence": "Tenecteplase IV (if available) 0.25 mg/kg IV"
+            "orderSentence": "Tenecteplase IV (CPT 96374) (if available) 0.25 mg/kg IV"
           },
           "contraindications": "Same as alteplase",
           "monitoring": "Same as alteplase",
@@ -562,19 +564,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Blood pressure management PRE-tPA: Labetalol IV",
+          "item": "Blood pressure management PRE-tPA: Labetalol IV (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "10-20 mg",
-                "orderSentence": "Blood pressure management PRE-tPA: Labetalol IV 10-20 mg IV"
+                "orderSentence": "Blood pressure management PRE-tPA: Labetalol IV (CPT 96374) 10-20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10-20 mg IV over 1-2 min; may repeat once; target BP <185/110 before tPA",
-            "orderSentence": "Blood pressure management PRE-tPA: Labetalol IV 10-20 mg IV"
+            "orderSentence": "Blood pressure management PRE-tPA: Labetalol IV (CPT 96374) 10-20 mg IV"
           },
           "contraindications": "Heart block (2nd/3rd degree), severe bradycardia, decompensated HF, asthma/severe COPD",
           "monitoring": "Heart rate, BP continuous",
@@ -584,19 +586,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Blood pressure management PRE-tPA: Nicardipine IV",
+          "item": "Blood pressure management PRE-tPA: Nicardipine IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "5 mg/h",
-                "orderSentence": "Blood pressure management PRE-tPA: Nicardipine IV 5 mg/h IV"
+                "orderSentence": "Blood pressure management PRE-tPA: Nicardipine IV (CPT 96365) 5 mg/h IV"
               }
             ],
             "route": "IV",
             "instructions": "5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h; target BP <185/110",
-            "orderSentence": "Blood pressure management PRE-tPA: Nicardipine IV 5 mg/h IV"
+            "orderSentence": "Blood pressure management PRE-tPA: Nicardipine IV (CPT 96365) 5 mg/h IV"
           },
           "contraindications": "Severe aortic stenosis",
           "monitoring": "BP continuous monitoring",
@@ -606,19 +608,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Blood pressure management PRE-tPA: Clevidipine IV",
+          "item": "Blood pressure management PRE-tPA: Clevidipine IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1-2 mg/h",
-                "orderSentence": "Blood pressure management PRE-tPA: Clevidipine IV 1-2 mg/h IV"
+                "orderSentence": "Blood pressure management PRE-tPA: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
               }
             ],
             "route": "IV",
             "instructions": "1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h",
-            "orderSentence": "Blood pressure management PRE-tPA: Clevidipine IV 1-2 mg/h IV"
+            "orderSentence": "Blood pressure management PRE-tPA: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
           },
           "contraindications": "Soy/egg allergy, severe lipid disorders, defective lipid metabolism",
           "monitoring": "BP continuous monitoring",

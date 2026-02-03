@@ -4,15 +4,16 @@
   "version": "1.0",
   "icd10": [
     "** G25.81 (Restless legs syndrome)",
-    "G25.89 (Other specified extrapyramidal and movement disorders)"
+    "G25.89 (Other specified extrapyramidal and movement disorders)",
+    "G47.61 (Periodic limb movement disorder)"
   ],
   "scope": "** Diagnosis and management of restless legs syndrome in adults. Covers diagnostic criteria, workup for secondary causes, pharmacologic and non-pharmacologic treatment, and prevention of augmentation. Excludes periodic limb movement disorder as separate entity, akathisia, and leg cramps.",
   "notes": [],
   "sections": {
     "Laboratory Workup": {
-      "Essential/Core Labs": [
+      "Essential/Core Labs (All Patients)": [
         {
-          "item": "Serum ferritin",
+          "item": "Serum ferritin (CPT 82728)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -21,7 +22,7 @@
           "target": ">75 ng/mL (>100 preferred)"
         },
         {
-          "item": "Serum iron",
+          "item": "Serum iron (CPT 83540)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -30,7 +31,7 @@
           "target": "Normal"
         },
         {
-          "item": "TIBC",
+          "item": "TIBC (CPT 83550)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -39,7 +40,7 @@
           "target": "Normal"
         },
         {
-          "item": "Transferrin saturation",
+          "item": "Transferrin saturation (CPT 84466)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -48,7 +49,7 @@
           "target": ">20%"
         },
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -57,7 +58,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP",
+          "item": "CMP (CPT 80053)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -66,7 +67,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -75,7 +76,7 @@
           "target": "Normal"
         },
         {
-          "item": "Glucose/HbA1c",
+          "item": "Glucose (CPT 82947) / HbA1c (CPT 83036)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -84,9 +85,9 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "Vitamin B12",
+          "item": "Vitamin B12 (CPT 82607)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -95,7 +96,7 @@
           "target": ">400 pg/mL"
         },
         {
-          "item": "Folate",
+          "item": "Folate (CPT 82746)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -104,7 +105,7 @@
           "target": "Normal"
         },
         {
-          "item": "Magnesium",
+          "item": "Magnesium (CPT 83735)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -133,7 +134,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "Nerve conduction studies/EMG",
+          "item": "Nerve conduction studies (CPT 95907-95913) / EMG (CPT 95885)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -142,7 +143,7 @@
           "target": "Rule out neuropathy mimics"
         },
         {
-          "item": "ANA, anti-SSA/SSB",
+          "item": "ANA (CPT 86235), anti-SSA/SSB",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -167,7 +168,7 @@
       ],
       "Extended": [
         {
-          "item": "Polysomnography (PSG)",
+          "item": "Polysomnography (PSG) (CPT 95810)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -187,7 +188,7 @@
           "contraindications": "None"
         },
         {
-          "item": "MRI spine",
+          "item": "MRI spine (CPT 72141)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -362,19 +363,19 @@
           "ICU": "-"
         },
         {
-          "item": "IV iron (ferric carboxymaltose)",
+          "item": "IV iron (ferric carboxymaltose) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1000 mg",
-                "orderSentence": "IV iron (ferric carboxymaltose) 1000 mg IV"
+                "orderSentence": "IV iron (ferric carboxymaltose) (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV once (if oral intolerant or severe deficiency); may repeat",
-            "orderSentence": "IV iron (ferric carboxymaltose) 1000 mg IV"
+            "orderSentence": "IV iron (ferric carboxymaltose) (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Iron overload, infection",
           "monitoring": "Ferritin in 8 weeks; faster response",
@@ -384,19 +385,19 @@
           "ICU": "-"
         },
         {
-          "item": "IV iron sucrose",
+          "item": "IV iron sucrose (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "200 mg",
-                "orderSentence": "IV iron sucrose 200 mg IV"
+                "orderSentence": "IV iron sucrose (CPT 96365) 200 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "200 mg IV × 5 doses over 2 weeks",
-            "orderSentence": "IV iron sucrose 200 mg IV"
+            "orderSentence": "IV iron sucrose (CPT 96365) 200 mg IV"
           },
           "contraindications": "Same",
           "monitoring": "Same",
@@ -764,7 +765,7 @@
           "indication": "Opioid management in refractory cases"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "RLS is a real neurological condition, not psychological",
           "ED": "-",
@@ -820,7 +821,7 @@
           "OPD": "ROUTINE"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Medications That May Worsen RLS (Avoid/Minimize)": [
         {
           "item": "Antihistamines (diphenhydramine, hydroxyzine)",
           "ED": "ROUTINE",

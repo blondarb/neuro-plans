@@ -1,0 +1,1304 @@
+{
+  "id": "lyme-neuroborreliosis",
+  "title": "Lyme Neuroborreliosis",
+  "version": "1.1",
+  "icd10": [
+    "** A69.22 (Other neurologic disorders in Lyme disease)"
+  ],
+  "scope": "** Evaluation and management of nervous system involvement by Borrelia burgdorferi infection, including early neuroborreliosis (cranial neuropathy, lymphocytic meningitis, painful radiculopathy/Bannwarth syndrome) and late neuroborreliosis (encephalomyelitis, peripheral neuropathy, encephalopathy). Includes diagnosis with two-tier serologic testing and CSF analysis, treatment with IV ceftriaxone and oral doxycycline, and management of post-treatment Lyme disease syndrome (PTLDS). Excludes non-neurologic Lyme disease (erythema migrans, Lyme arthritis, Lyme carditis) unless as context for neurologic presentation.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Lyme ELISA or EIA (serum) (CPT 86618)",
+          "rationale": "First-tier screening test in two-tier algorithm; sensitivity 70-100% depending on disease stage (lower in early infection <2 weeks); high sensitivity in disseminated/late disease",
+          "target": "Positive or equivocal (proceed to Western blot); negative in very early infection does not exclude",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lyme Western blot IgM and IgG (serum) (CPT 86617)",
+          "rationale": "Second-tier confirmatory test; IgM positive if >=2 of 3 bands (23, 39, 41 kDa); IgG positive if >=5 of 10 bands; IgM only reliable within first 4 weeks of illness",
+          "target": "IgM: >=2 of 3 bands (early disease). IgG: >=5 of 10 bands (disseminated/late disease). IgM alone unreliable after 4 weeks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection markers; rule out hematologic mimics; lymphocytosis may be present",
+          "target": "Normal or mild lymphocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function for antibiotic dosing; hepatic function (Lyme hepatitis may coexist); electrolytes",
+          "target": "Normal; document baseline Cr and LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85651)",
+          "rationale": "Inflammatory marker; often elevated in disseminated Lyme disease",
+          "target": "May be mildly to moderately elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; baseline",
+          "target": "May be mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Blood glucose (paired with CSF if LP performed) (CPT 82947)",
+          "rationale": "CSF:serum glucose ratio interpretation",
+          "target": "Document paired with LP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Lyme C6 antibody index (serum) (CPT 86618)",
+          "rationale": "Modified two-tier testing (MTTT); some labs now use C6 ELISA as first or second tier; may improve sensitivity in early disease",
+          "target": "Positive supports Borrelia infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT) (CPT 85610+85730)",
+          "rationale": "Before lumbar puncture; coagulopathy workup",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (4th generation) (CPT 87389)",
+          "rationale": "Immunosuppression may alter Lyme disease presentation and serologic response; co-infection consideration in endemic areas",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR or VDRL (serum) (CPT 86592)",
+          "rationale": "Neurosyphilis in differential (cranial neuropathies, meningitis, radiculopathy); must be excluded",
+          "target": "Non-reactive",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction in differential for fatigue, cognitive complaints, and neuropathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 level (CPT 82607)",
+          "rationale": "B12 deficiency neuropathy in differential for peripheral neuropathy presentation",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "SLE and other autoimmune conditions in differential for cranial neuropathies, meningitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (serum) (CPT 82164)",
+          "rationale": "Neurosarcoidosis in differential (cranial neuropathies, meningitis, radiculopathy)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetic neuropathy in differential if peripheral neuropathy presentation",
+          "target": "<5.7% (normal)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Babesia smear and PCR (CPT 87798)",
+          "rationale": "Co-infection with Babesia microti common in endemic areas (Northeast US); affects clinical presentation and treatment",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anaplasma phagocytophilum PCR or IgG (CPT 86666)",
+          "rationale": "Co-infection with Anaplasma (human granulocytic anaplasmosis) common in endemic areas; thrombocytopenia, leukopenia suggest co-infection",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ehrlichia chaffeensis antibody (CPT 86666)",
+          "rationale": "Tick-borne co-infection screening in endemic areas",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Borrelia PCR (CSF) (CPT 87798)",
+          "rationale": "Low sensitivity (10-30%) but high specificity; may be useful in seronegative early disease or when serologic interpretation is unclear",
+          "target": "Negative (positive confirms B. burgdorferi DNA in CNS)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Borrelia PCR (blood) (CPT 87798)",
+          "rationale": "Transient spirochetemia; low sensitivity; rarely positive in disseminated disease",
+          "target": "Negative (positive confirms active infection)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF CXCL13 (B-cell chemokine)",
+          "rationale": "Emerging biomarker for active neuroborreliosis; elevated in acute neuroborreliosis; declines with treatment; may be useful for early diagnosis and treatment monitoring; not widely available",
+          "target": "Elevated (>250 pg/mL suggests active neuroborreliosis)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum + CSF) (CPT 86255)",
+          "rationale": "Autoimmune encephalitis in differential if encephalopathy or psychiatric symptoms",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (serum) (CPT 86255)",
+          "rationale": "If rapidly progressive neurologic syndrome with atypical features",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-ganglioside antibodies (GM1, GD1b, GQ1b) (CPT 86255)",
+          "rationale": "GBS in differential if ascending weakness or cranial neuropathy pattern",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquaporin-4 (NMO-IgG) and MOG antibody (CPT 86235)",
+          "rationale": "If myelopathy or optic neuritis component raises concern for NMOSD",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Rule out elevated ICP; usually normal or mildly elevated in Lyme meningitis",
+          "target": "Normal or mildly elevated (10-20 cm H2O)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "CSF lymphocytic pleocytosis is the hallmark of neuroborreliosis; typically 10-1000 WBC/uL (lymphocyte predominant); distinguishes from bacterial meningitis",
+          "target": "WBC typically 10-1000 cells/uL (lymphocyte predominant >80%); plasma cells may be present (suggestive of Lyme)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in neuroborreliosis (50-300 mg/dL typically)",
+          "target": "Elevated (>45 mg/dL); typically 50-300 mg/dL",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Usually normal in Lyme meningitis (distinguishes from bacterial and TB meningitis where glucose is low)",
+          "target": "Normal (>60% serum glucose ratio); low glucose suggests bacterial or TB meningitis, NOT Lyme",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Exclude bacterial meningitis in acute presentation",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF Lyme antibody index (CPT 86618)",
+          "rationale": "GOLD STANDARD for neuroborreliosis diagnosis; compares CSF:serum antibody ratio to determine intrathecal antibody production; elevated index confirms CNS infection (not just passive diffusion from serum)",
+          "target": "Elevated CSF:serum antibody index (>1.0-1.3 depending on lab) confirms intrathecal antibody production = neuroborreliosis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF Lyme IgM and IgG antibodies (CPT 86618)",
+          "rationale": "Detect Borrelia-specific antibodies in CSF; must be interpreted alongside serum antibodies (CSF:serum index); isolated CSF positivity without elevated index may represent passive diffusion",
+          "target": "Positive CSF Lyme antibodies (interpret with antibody index)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
+          "rationale": "Rapid multiplex PCR to exclude viral and bacterial meningitis pathogens; does NOT detect Borrelia",
+          "target": "Negative (excludes common viral/bacterial pathogens)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands, IgG index (CPT 83916)",
+          "rationale": "Intrathecal immunoglobulin synthesis; positive in neuroborreliosis; also positive in MS (differential)",
+          "target": "Often positive (intrathecal IgG synthesis); not specific",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "rationale": "Exclude neurosyphilis (chronic lymphocytic meningitis differential)",
+          "target": "Non-reactive",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Leptomeningeal malignancy in differential for chronic meningitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "rationale": "TB meningitis in differential if chronic lymphocytic meningitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24-48h; STAT if altered mental status, focal deficits, or concern for encephalomyelitis",
+          "target": "Cranial nerve enhancement (especially CN VII); leptomeningeal enhancement; white matter lesions (late neuroborreliosis); may be NORMAL in early neuroborreliosis with isolated cranial neuropathy or meningitis",
+          "contraindications": "Pacemaker, metallic implants",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate in ED if acute neurologic presentation (altered consciousness, focal deficit, papilledema) to rule out mass/hemorrhage before LP",
+          "target": "Usually normal; excludes mass lesion before LP",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI spine (cervical/thoracic) with contrast (CPT 72156)",
+          "timing": "If myelopathy symptoms (weakness, sensory level, bladder dysfunction) suggesting Lyme myelitis",
+          "target": "Spinal cord T2 hyperintensity; nerve root enhancement (radiculitis); meningeal enhancement",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nerve conduction studies / EMG (CPT 95907+95861)",
+          "timing": "If peripheral neuropathy or radiculopathy symptoms to characterize pattern and severity",
+          "target": "Axonal polyneuropathy (late neuroborreliosis); radiculopathy pattern (early); mononeuritis multiplex (rare)",
+          "contraindications": "Anticoagulation (relative for EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Screen for Lyme carditis (AV block) which may coexist with neuroborreliosis; baseline before ceftriaxone",
+          "target": "PR prolongation or AV block (Lyme carditis); baseline QTc",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "EEG (routine or continuous) (CPT 95816)",
+          "timing": "If seizures, altered mental status, or encephalopathy",
+          "target": "Focal or generalized slowing (encephalopathy); epileptiform discharges (rare in Lyme)",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Evoked potentials (VEP, BAEP, SSEP) (CPT 95930)",
+          "timing": "If subclinical demyelination suspected (late neuroborreliosis); optic nerve or brainstem involvement",
+          "target": "Prolonged latencies suggesting demyelination",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "If PR prolongation or AV block on ECG (Lyme carditis workup)",
+          "target": "Normal or valvular abnormalities; evaluate cardiac function",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ceftriaxone (CPT 96365)",
+          "route": "IV",
+          "indication": "First-line treatment for neuroborreliosis with CNS involvement (meningitis, encephalomyelitis, encephalopathy) and cranial neuropathy with CSF pleocytosis; also for Lyme radiculopathy with CSF abnormalities",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g daily",
+                "orderSentence": "Ceftriaxone (CPT 96365) 2 g daily IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV once daily for 14-28 days (most experts recommend 14-21 days); infuse over 30-60 min; standard duration 14 days for most cases, 21-28 days for late neuroborreliosis or encephalomyelitis",
+            "orderSentence": "Ceftriaxone (CPT 96365) 2 g daily IV"
+          },
+          "contraindications": "Cephalosporin anaphylaxis; severe penicillin allergy (cross-reactivity ~1-2%); caution with biliary disease (ceftriaxone can cause biliary sludge/pseudolithiasis)",
+          "monitoring": "Renal function (BUN, Cr) weekly; CBC weekly; LFTs; monitor for C. difficile diarrhea; biliary symptoms; IV site assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Doxycycline",
+          "route": "PO",
+          "indication": "First-line for isolated facial palsy WITHOUT CSF pleocytosis or other evidence of CNS involvement; also acceptable for Lyme radiculopathy without meningitis in European practice; IDSA/AAN guidelines support oral doxycycline for cranial neuropathy without meningitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Doxycycline 100 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID for 14-21 days; take with full glass of water; remain upright 30 min after dosing to prevent esophageal ulceration",
+            "orderSentence": "Doxycycline 100 mg BID PO"
+          },
+          "contraindications": "Pregnancy; children <8 years; severe hepatic impairment; concurrent retinoids; esophageal stricture",
+          "monitoring": "GI tolerance; photosensitivity counseling; LFTs if prolonged course",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cefotaxime (alternative to ceftriaxone)",
+          "route": "IV",
+          "indication": "Alternative parenteral beta-lactam for neuroborreliosis when ceftriaxone is contraindicated (biliary disease) or unavailable; equivalent CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g q8h",
+                "orderSentence": "Cefotaxime (alternative to ceftriaxone) 2 g q8h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV every 8 hours for 14-28 days",
+            "orderSentence": "Cefotaxime (alternative to ceftriaxone) 2 g q8h IV"
+          },
+          "contraindications": "Cephalosporin anaphylaxis; severe penicillin allergy",
+          "monitoring": "Renal function; CBC; LFTs; C. difficile monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Penicillin G (aqueous crystalline)",
+          "route": "IV",
+          "indication": "Alternative parenteral antibiotic for neuroborreliosis; effective but less commonly used than ceftriaxone due to q4h dosing requirement; reserved for beta-lactam-tolerant patients when ceftriaxone unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "18-24 million units/day",
+                "orderSentence": "Penicillin G (aqueous crystalline) 18-24 million units/day IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3-4 million units IV q4h (total 18-24 million units/day) for 14-28 days",
+            "orderSentence": "Penicillin G (aqueous crystalline) 18-24 million units/day IV"
+          },
+          "contraindications": "Penicillin anaphylaxis",
+          "monitoring": "Renal function; serum potassium (high-dose penicillin contains potassium); seizure risk at very high doses",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (if bacterial meningitis not excluded)",
+          "route": "IV",
+          "indication": "Empiric adjunctive therapy if bacterial meningitis cannot yet be excluded pending culture results; give BEFORE or WITH first antibiotic dose; discontinue if Lyme meningitis confirmed (no role for steroids in Lyme meningitis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg q6h x 4 days",
+                "orderSentence": "Dexamethasone (if bacterial meningitis not excluded) 0.15 mg/kg q6h x 4 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h for 4 days (discontinue if Lyme meningitis confirmed); administer before or with first antibiotic dose",
+            "orderSentence": "Dexamethasone (if bacterial meningitis not excluded) 0.15 mg/kg q6h x 4 days IV"
+          },
+          "contraindications": "Active untreated infection (relative); uncontrolled diabetes",
+          "monitoring": "Glucose; blood pressure; discontinue when Lyme confirmed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Headache and pain management in Lyme meningitis; radicular pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg q6-8h",
+                "orderSentence": "Ibuprofen 400-600 mg q6-8h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6-8h as needed; max 2400 mg/day; take with food",
+            "orderSentence": "Ibuprofen 400-600 mg q6-8h PO"
+          },
+          "contraindications": "Renal impairment; active GI bleed; aspirin-exacerbated respiratory disease; third trimester pregnancy",
+          "monitoring": "GI symptoms; renal function; blood pressure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache and pain management; fever reduction; alternative if NSAIDs contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg q6h",
+                "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 3 g/day (2 g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650-1000 mg q6h PO"
+          },
+          "contraindications": "Severe hepatic disease; active liver failure",
+          "monitoring": "LFTs; hepatic function",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (Lyme radiculopathy; painful radiculoneuritis/Bannwarth syndrome; peripheral neuropathy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d to 300 mg TID; target 900-1800 mg/day divided TID; max 3600 mg/day; dose adjust for CrCl <60",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust: CrCl <60)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain (Lyme radiculopathy; peripheral neuropathy); alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase to 150 mg BID after 1 wk; max 300 mg BID (600 mg/day); dose adjust for renal impairment",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history",
+          "monitoring": "Sedation; weight gain; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain (late Lyme peripheral neuropathy); concurrent depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "LFTs; blood pressure; serotonin syndrome symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (Lyme radiculopathy; chronic pain); may also help with insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; target 50-75 mg qHS; max 150 mg/day",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; glaucoma; elderly (anticholinergic risk)",
+          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects; sedation; weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone (facial palsy adjunctive -- controversial)",
+          "route": "PO",
+          "indication": "Short course for acute facial nerve palsy to reduce inflammation and improve recovery; evidence extrapolated from Bell's palsy data; NOT standard of care for Lyme facial palsy and NOT recommended by most experts; discuss with specialist",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Prednisone (facial palsy adjunctive -- controversial) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg daily x 5 days, then taper over 5 days; controversial in Lyme -- some experts avoid due to concern for impaired immune clearance of Borrelia; use ONLY with concurrent antibiotics",
+            "orderSentence": "Prednisone (facial palsy adjunctive -- controversial) 60 mg PO"
+          },
+          "contraindications": "Active untreated infection without antibiotics; uncontrolled diabetes",
+          "monitoring": "Glucose; blood pressure; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Artificial tears (lubricant eye drops)",
+          "route": "TOP",
+          "indication": "Eye protection for facial palsy (incomplete eye closure); prevents exposure keratopathy and corneal abrasion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Artificial tears (lubricant eye drops) 1-2 drops TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply lubricant drops q1-2h while awake; use lubricant ointment at bedtime; tape eye closed at night if unable to fully close",
+            "orderSentence": "Artificial tears (lubricant eye drops) 1-2 drops TOP"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Corneal integrity; refer ophthalmology if corneal exposure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting associated with Lyme meningitis or vertigo",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg q6-8h PRN",
+                "orderSentence": "Ondansetron 4 mg q6-8h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO q6-8h as needed; max 24 mg/day",
+            "orderSentence": "Ondansetron 4 mg q6-8h PRN IV"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if risk factors",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Vertigo associated with cranial nerve VIII involvement (vestibulocochlear nerve)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg q6-8h PRN",
+                "orderSentence": "Meclizine 25 mg q6-8h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO q6-8h as needed for vertigo; max 100 mg/day",
+            "orderSentence": "Meclizine 25 mg q6-8h PRN PO"
+          },
+          "contraindications": "Urinary retention; glaucoma",
+          "monitoring": "Sedation; anticholinergic effects",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Doxycycline (extended course for late neuroborreliosis)",
+          "route": "PO",
+          "indication": "Late neuroborreliosis with encephalopathy or peripheral neuropathy; some European guidelines support oral doxycycline for all neuroborreliosis (including meningitis); may be used as step-down therapy after initial IV ceftriaxone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Doxycycline (extended course for late neuroborreliosis) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID for 21-28 days (some European protocols use 200 mg BID); IDSA 2020 guidelines suggest oral doxycycline may be equivalent to IV ceftriaxone for neuroborreliosis",
+            "orderSentence": "Doxycycline (extended course for late neuroborreliosis) 100 mg PO"
+          },
+          "contraindications": "Pregnancy; children <8 years; severe hepatic impairment",
+          "monitoring": "LFTs; GI tolerance; photosensitivity counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azithromycin (third-line alternative)",
+          "route": "PO",
+          "indication": "Third-line alternative ONLY when both ceftriaxone and doxycycline are contraindicated; inferior CNS penetration; less well-studied for neuroborreliosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg daily",
+                "orderSentence": "Azithromycin (third-line alternative) 500 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg PO daily for 14-21 days; limited evidence for CNS disease; use only if no other option",
+            "orderSentence": "Azithromycin (third-line alternative) 500 mg daily PO"
+          },
+          "contraindications": "QT prolongation; hepatic impairment; concurrent QT-prolonging drugs",
+          "monitoring": "LFTs; QTc; GI tolerance; hearing (rare ototoxicity)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IV immunoglobulin (IVIG) (for severe Bannwarth syndrome -- rare)",
+          "route": "IV",
+          "indication": "Severe, refractory painful radiculoneuritis (Bannwarth syndrome) not responding to antibiotics and analgesics; limited evidence; case reports only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg/day x 5 days",
+                "orderSentence": "IV immunoglobulin (IVIG) (for severe Bannwarth syndrome -- rare) 0.4 g/kg/day x 5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV for 5 days; infuse slowly starting at 0.5 mL/kg/h; premedicate with acetaminophen and diphenhydramine",
+            "orderSentence": "IV immunoglobulin (IVIG) (for severe Bannwarth syndrome -- rare) 0.4 g/kg/day x 5 days IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk); renal impairment; hypercoagulability",
+          "monitoring": "Renal function; infusion reactions; CBC; consider IgA level before first dose",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Lancinating/paroxysmal neuropathic pain in Lyme radiculopathy (similar mechanism to trigeminal neuralgia pain) refractory to gabapentin/pregabalin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day divided BID; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting)",
+          "monitoring": "CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation for treatment optimization, duration guidance, co-infection management, and complex diagnostic interpretation",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for diagnosis confirmation, CSF interpretation, differentiation from MS and other neurologic mimics, and management of neurologic complications",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology evaluation for ALL patients with incomplete eye closure from facial palsy to assess corneal exposure risk and recommend eye protection strategy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Audiology evaluation for patients with hearing loss, tinnitus, or vestibular symptoms (cranial nerve VIII involvement) for baseline audiometry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training and balance rehabilitation if ataxia or weakness from myelopathy or peripheral neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and adaptive strategies for patients with hand weakness or fine motor deficits from peripheral neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive testing if encephalopathy or cognitive complaints persist after antibiotic treatment to establish baseline and guide rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for refractory neuropathic pain not responding to first-line and second-line analgesics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology consultation if ECG shows PR prolongation or AV block (Lyme carditis may coexist with neuroborreliosis and requires separate management)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Social work for discharge planning, home health services coordination, and support resources for prolonged IV antibiotic therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED if: worsening headache, new weakness, vision changes, difficulty breathing, chest pain (Lyme carditis), high fever, or worsening confusion (may indicate disease progression or alternative diagnosis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Complete the FULL course of antibiotics as prescribed (14-28 days); do NOT stop treatment early even if symptoms improve, as incomplete treatment may lead to persistent or late neurologic complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Facial palsy from Lyme disease has an excellent prognosis; most patients recover fully within weeks to months with appropriate antibiotic treatment; tape affected eye closed at night and use lubricant drops to protect the cornea",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Some symptoms (fatigue, pain, cognitive difficulty) may persist for weeks to months after completing antibiotics (post-treatment Lyme disease syndrome/PTLDS); this does NOT indicate ongoing infection and does NOT require additional antibiotics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Follow-up with neurology in 2-4 weeks after completing antibiotics for clinical reassessment; additional follow-up at 3 and 6 months to confirm resolution",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report any new neurologic symptoms (numbness, weakness, cognitive changes, hearing loss, visual changes) between follow-up visits as they may indicate treatment failure or alternative diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Tick prevention: use DEET-based repellent, wear long sleeves/pants in wooded areas, perform daily tick checks, shower within 2 hours of outdoor activity in endemic areas, and check pets for ticks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Remove attached ticks promptly with fine-tipped tweezers by grasping close to skin and pulling straight out; risk of Lyme transmission is low if tick is removed within 36 hours of attachment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Driving restrictions if significant cognitive impairment, seizures, or visual deficit until cleared by neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Tick bite prevention in endemic areas (Northeast US, upper Midwest, Pacific Northwest): use permethrin-treated clothing, DEET or picaridin repellent, avoid tall grass/leaf litter during peak season (May-September)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Yard maintenance to reduce tick habitat: keep grass short, remove leaf litter, create gravel/wood chip barriers between lawn and wooded areas, consider professional tick treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Pet tick prevention with veterinarian-recommended tick control products, as pets can carry ticks into the home environment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Gradual return to physical activity as symptoms improve; rest during acute illness; avoid strenuous exercise until neurologic symptoms have stabilized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Adequate sleep and stress management to support immune recovery during and after treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol avoidance during antibiotic treatment (potential hepatotoxicity with doxycycline; general immune recovery support)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "No reinfection immunity: prior Lyme disease does NOT prevent future infections; continue tick prevention measures indefinitely in endemic areas",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Bell's palsy (idiopathic facial nerve palsy)",
+      "features": "Unilateral facial weakness without other neurologic findings; no tick exposure or erythema migrans; no meningeal symptoms; BILATERAL facial palsy strongly favors Lyme in endemic areas",
+      "tests": "Lyme serologies (two-tier); CSF analysis (pleocytosis favors Lyme); MRI brain"
+    },
+    {
+      "diagnosis": "Viral meningitis (enterovirus, HSV-2, VZV)",
+      "features": "Acute febrile illness with headache, neck stiffness; CSF lymphocytic pleocytosis; season (summer/fall for enterovirus); no tick exposure history",
+      "tests": "BioFire ME panel; viral CSF PCR; Lyme serologies; enterovirus typically has lower CSF protein than Lyme"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Cranial neuropathies; meningitis; CSF pleocytosis; may be clinically indistinguishable; different risk factors (sexual exposure vs. tick exposure)",
+      "tests": "RPR/VDRL; FTA-ABS; CSF VDRL; Lyme serologies; may coexist"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing neurologic deficits; optic neuritis; myelopathy; white matter lesions; younger women; oligoclonal bands positive",
+      "tests": "MRI brain/spine (periventricular lesions, Dawson fingers); CSF oligoclonal bands; Lyme serologies (must exclude in endemic areas before MS diagnosis)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies (CN VII common); chronic meningitis; granulomatous inflammation; systemic involvement (lungs, skin, eyes)",
+      "tests": "Chest CT (hilar adenopathy); serum/CSF ACE; biopsy; Lyme serologies negative"
+    },
+    {
+      "diagnosis": "Guillain-Barre syndrome (GBS)",
+      "features": "Ascending symmetric weakness; areflexia; cytoalbuminous dissociation (high protein, normal WBC); facial diplegia variant exists",
+      "tests": "CSF analysis (GBS: high protein, <5 WBC; Lyme meningitis: elevated WBC AND protein); NCS/EMG; anti-ganglioside antibodies; Lyme serologies"
+    },
+    {
+      "diagnosis": "Tuberculous meningitis",
+      "features": "Subacute chronic meningitis; basilar predominance; cranial neuropathies; very low CSF glucose; very high protein; exposure/travel history",
+      "tests": "AFB culture; TB PCR (GeneXpert); CSF ADA; chest X-ray; PPD/IGRA; Lyme CSF glucose is NORMAL"
+    },
+    {
+      "diagnosis": "Sarcoidosis (facial nerve)",
+      "features": "Bilateral facial palsy (like Lyme); uveoparotid fever (Heerfordt syndrome); erythema nodosum; no tick exposure",
+      "tests": "Chest imaging; ACE level; biopsy; Lyme serologies negative"
+    },
+    {
+      "diagnosis": "Lymphomatous meningitis",
+      "features": "Chronic meningitis; cranial neuropathies; constitutional symptoms; immunocompromised host",
+      "tests": "CSF cytology; flow cytometry; brain MRI with contrast; Lyme serologies negative"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute psychiatric symptoms; seizures; movement disorders; may present with encephalopathy similar to late neuroborreliosis",
+      "tests": "Autoimmune encephalitis panel (serum + CSF); MRI; EEG; Lyme serologies"
+    },
+    {
+      "diagnosis": "West Nile virus neuroinvasive disease",
+      "features": "Summer/fall; mosquito exposure; acute flaccid paralysis; meningoencephalitis; CSF pleocytosis",
+      "tests": "WNV IgM (serum and CSF); Lyme serologies; WNV PCR"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IV ceftriaxone 2g daily x 14-28 days for neuroborreliosis with CNS involvement",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Halperin et al. Neurology 2007 (AAN Practice Parameter)](https://pubmed.ncbi.nlm.nih.gov/17562735/); [Wormser et al. CID 2006 (IDSA Guidelines)](https://pubmed.ncbi.nlm.nih.gov/17029130/)"
+    },
+    {
+      "recommendation": "Oral doxycycline 100 mg BID adequate for isolated facial palsy without CSF abnormalities",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Halperin et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17562735/); [Ljøstad et al. Eur J Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18484988/)"
+    },
+    {
+      "recommendation": "Oral doxycycline non-inferior to IV ceftriaxone for European neuroborreliosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ljøstad et al. Eur J Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18484988/); [Karlsson et al. Neurology 1994](https://pubmed.ncbi.nlm.nih.gov/7936230/)"
+    },
+    {
+      "recommendation": "Two-tier serologic testing (ELISA then Western blot) is standard for Lyme diagnosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[CDC MMWR 2019](https://pubmed.ncbi.nlm.nih.gov/31393867/); [Moore et al. CID 2016](https://pubmed.ncbi.nlm.nih.gov/27535950/)"
+    },
+    {
+      "recommendation": "CSF Lyme antibody index (intrathecal antibody production) confirms neuroborreliosis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Halperin et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17562735/); [Blanc et al. CID 2007](https://pubmed.ncbi.nlm.nih.gov/17243059/)"
+    },
+    {
+      "recommendation": "CSF pleocytosis (lymphocytic) is the hallmark of active neuroborreliosis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Halperin JJ. Handb Clin Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24365339/)"
+    },
+    {
+      "recommendation": "Bilateral facial palsy in endemic area should prompt Lyme testing (present in ~25% of Lyme facial palsy cases)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Halperin et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17562735/); [Clark et al. Pediatrics 1985](https://pubmed.ncbi.nlm.nih.gov/4058983/)"
+    },
+    {
+      "recommendation": "Prolonged antibiotic courses (>28 days) provide no additional benefit for post-treatment Lyme disease syndrome (PTLDS)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Klempner et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11450679/); [Krupp et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12874399/); [Berende et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27028911/)"
+    },
+    {
+      "recommendation": "Co-infection with Babesia and Anaplasma should be considered in endemic areas as it affects clinical presentation and treatment",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Wormser et al. CID 2006](https://pubmed.ncbi.nlm.nih.gov/17029130/)"
+    },
+    {
+      "recommendation": "Lyme carditis with high-degree AV block may require temporary pacemaker; IV ceftriaxone is treatment",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Fishe et al. Am J Emerg Med 2015](https://pubmed.ncbi.nlm.nih.gov/25770596/); [Wormser et al. CID 2006](https://pubmed.ncbi.nlm.nih.gov/17029130/)"
+    },
+    {
+      "recommendation": "Facial palsy from Lyme disease has excellent prognosis; >95% recover fully with appropriate antibiotics",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Halperin et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17562735/); [Bagger-Sjöbäck et al. Otol Neurotol 2005](https://pubmed.ncbi.nlm.nih.gov/15793413/)"
+    },
+    {
+      "recommendation": "Modified two-tier testing (MTTT) with two EIA tests improves early sensitivity over standard two-tier",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Branda et al. CID 2011](https://pubmed.ncbi.nlm.nih.gov/21860012/)"
+    },
+    {
+      "recommendation": "CXCL13 in CSF is an emerging biomarker for active neuroborreliosis",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Rupprecht et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15911814/)"
+    },
+    {
+      "recommendation": "Lyme disease serology (IgG) may remain positive for years after successful treatment; clinical improvement is the primary outcome measure",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Wormser et al. CID 2006](https://pubmed.ncbi.nlm.nih.gov/17029130/)"
+    },
+    {
+      "recommendation": "AAN/IDSA 2020 updated guidelines for prevention, diagnosis, and treatment of Lyme disease",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Lantos et al. CID 2021 (IDSA/AAN/ACR Guidelines)](https://pubmed.ncbi.nlm.nih.gov/33417672/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (cranial nerves, motor, sensory, gait, mental status)",
+      "frequency": "q8-12h inpatient; each outpatient visit",
+      "action": "If declining: reassess diagnosis; repeat imaging; repeat LP; consider treatment failure or alternative diagnosis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Facial nerve function (House-Brackmann scale)",
+      "frequency": "Daily inpatient; each outpatient visit for facial palsy patients",
+      "action": "If no improvement by 3 months: repeat Lyme serologies; consider EMG; ophthalmology for corneal protection; neurology reassessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4-8h inpatient",
+      "action": "Persistent fever >48h: reassess diagnosis; evaluate for co-infection (Babesia, Anaplasma); blood cultures",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ECG (PR interval)",
+      "frequency": "Admission and daily if PR prolonged; repeat if palpitations or syncope",
+      "action": "If PR >300 ms or Mobitz II/complete heart block: cardiology STAT; temporary pacemaker may be needed; IV ceftriaxone continues",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum Lyme serologies (follow-up)",
+      "frequency": "4-6 weeks after treatment; 3 and 6 months",
+      "action": "Persistent IgG is common and does NOT indicate treatment failure; clinical improvement is the primary measure of treatment response",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "frequency": "Baseline, then weekly during IV antibiotics",
+      "action": "Dose adjust antibiotics if renal function declines",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Hepatic function (LFTs)",
+      "frequency": "Baseline, then weekly during doxycycline; at completion of therapy",
+      "action": "If transaminases >3x ULN: consider switching antibiotic; evaluate for hepatotoxicity",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC",
+      "frequency": "Baseline, then weekly during antibiotic therapy",
+      "action": "Leukopenia/thrombocytopenia may suggest co-infection (Anaplasma/Ehrlichia); C. difficile if diarrhea",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Pain scores (VAS or NRS)",
+      "frequency": "Each visit; daily inpatient if neuropathic pain",
+      "action": "Escalate analgesic therapy per Section 3B; consider pain management referral",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Cognitive function (if encephalopathy)",
+      "frequency": "Baseline and at follow-up visits; formal testing at 3-6 months if persistent",
+      "action": "If persistent cognitive deficits >6 months after treatment: neuropsychology evaluation; consider PTLDS; supportive care",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home with oral antibiotics",
+      "criteria": "Isolated facial palsy WITHOUT CSF pleocytosis; normal mental status; no meningeal signs; able to take oral medications; reliable follow-up arranged; Lyme serologies sent or positive"
+    },
+    {
+      "disposition": "Discharge home with IV antibiotics (OPAT)",
+      "criteria": "Neurologically stable after initial inpatient treatment; PICC line placed; home infusion services arranged; reliable patient with follow-up arranged; no complications of IV therapy"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Confirmed or suspected neuroborreliosis with meningitis, encephalopathy, or myelopathy requiring IV antibiotics; bilateral facial palsy (warrants LP and IV treatment); significant radicular pain requiring parenteral pain management; new Lyme carditis with PR prolongation requiring monitoring"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Lyme carditis with high-degree AV block requiring temporary pacemaker; severe encephalopathy with altered consciousness (GCS <13); respiratory compromise from myelopathy or ascending weakness; status epilepticus (rare)"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for temporary pacemaker not available at current facility; need for neurology/infectious disease consultation not available; MRI not available for suspected myelopathy"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Late neuroborreliosis with peripheral neuropathy or mild encephalopathy; follow-up after completed inpatient treatment; PTLDS management; oral doxycycline for isolated facial palsy"
+    }
+  ]
+}

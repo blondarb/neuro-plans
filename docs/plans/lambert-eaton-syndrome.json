@@ -1,0 +1,2117 @@
+{
+  "id": "lambert-eaton-syndrome",
+  "title": "Lambert-Eaton Myasthenic Syndrome (LEMS)",
+  "version": "1.1",
+  "icd10": [
+    "** G73.1 (Lambert-Eaton syndrome)",
+    "C34.90 (Malignant neoplasm of unspecified part of unspecified bronchus or lung - for paraneoplastic LEMS)",
+    "G70.80 (Other specified myoneural disorders)"
+  ],
+  "scope": "** Diagnosis and management of Lambert-Eaton myasthenic syndrome in adults, including both paraneoplastic (P-LEMS, ~60% associated with small cell lung cancer) and autoimmune (A-LEMS) subtypes. Covers VGCC antibody testing, DELTA-P score calculation for paraneoplastic risk stratification, electrodiagnostic evaluation (repetitive nerve stimulation), cancer screening protocols, symptomatic treatment with 3,4-diaminopyridine, immunotherapy, and long-term monitoring. Excludes myasthenia gravis (separate template), botulism, and congenital myasthenic syndromes.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before immunotherapy; infection screen; paraneoplastic cytopenias",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function baseline; electrolytes; pre-treatment assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "P/Q-type VGCC antibody (CPT 86255)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Primary diagnostic test; positive in ~85-90% of LEMS (both P-LEMS and A-LEMS); sensitivity highest for P/Q-type",
+          "target": "Negative (<0.02 nmol/L); positive confirms LEMS in appropriate clinical context"
+        },
+        {
+          "item": "N-type VGCC antibody",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "May be co-positive with P/Q-type; less specific but supportive",
+          "target": "Negative"
+        },
+        {
+          "item": "SOX1 antibody",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Paraneoplastic marker highly specific for SCLC (~64% sensitivity in P-LEMS); helps distinguish P-LEMS from A-LEMS",
+          "target": "Negative (positive strongly suggests underlying SCLC)"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory/autoimmune screen; cancer screening",
+          "target": "Normal"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Thyroid disease as autoimmune comorbidity; hypothyroidism worsens weakness",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Pre-steroid baseline; autonomic dysfunction assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic status before corticosteroid initiation",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia worsens neuromuscular transmission",
+          "target": "Normal (1.7-2.2 mg/dL)"
+        },
+        {
+          "item": "Calcium (CPT 82310)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Calcium channel function directly relevant to LEMS pathophysiology",
+          "target": "Normal (8.5-10.5 mg/dL)"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline electrolyte panel",
+          "target": "Normal"
+        },
+        {
+          "item": "PT/INR (CPT 85610)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulation baseline before procedures",
+          "target": "Normal"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; baseline",
+          "target": "Negative"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Tumor marker; baseline before immunotherapy",
+          "target": "Normal"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "AChR binding antibody (CPT 86235)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MG overlap screen; ~15% of LEMS patients have concurrent MG antibodies",
+          "target": "Negative"
+        },
+        {
+          "item": "AChR modulating antibody (CPT 86235)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MG overlap; increases sensitivity for coexistent MG",
+          "target": "Negative"
+        },
+        {
+          "item": "GAD65 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune overlap (stiff person syndrome, cerebellar ataxia, type 1 diabetes)",
+          "target": "Negative"
+        },
+        {
+          "item": "ANNA-1 (anti-Hu) antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic marker for SCLC; sensory neuropathy overlap",
+          "target": "Negative"
+        },
+        {
+          "item": "CRMP-5 (anti-CV2) antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic marker; associated with SCLC, chorea, neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "Amphiphysin antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic marker; stiff person spectrum; breast/lung cancer",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Zic4 antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic marker; cerebellar degeneration with SCLC",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune overlap screen (SLE, Sjogren)",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Hepatitis B surface antigen (CPT 80074)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before rituximab/immunosuppression (reactivation risk)",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis B core antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for prior HBV before rituximab",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before IVIg; monitor on immunosuppression",
+          "target": "Normal"
+        },
+        {
+          "item": "TB test (QuantiFERON-Gold or PPD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative"
+        },
+        {
+          "item": "Vitamin D (25-OH) (CPT 82306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Immune modulation; deficiency common in autoimmune disease",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "PSA (males >50) (CPT 84153)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Malignancy screen in paraneoplastic workup",
+          "target": "Normal"
+        },
+        {
+          "item": "CEA (CPT 82378)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Tumor marker screen; lung and GI malignancies",
+          "target": "Normal (<5 ng/mL)"
+        },
+        {
+          "item": "NSE (neuron-specific enolase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "SCLC tumor marker; elevated in ~60% of SCLC",
+          "target": "Normal"
+        },
+        {
+          "item": "ProGRP (pro-gastrin-releasing peptide)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "SCLC-specific tumor marker; more specific than NSE",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "VGKC-complex antibody (LGI1, CASPR2)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis overlap; if cognitive or autonomic features prominent",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibody comprehensive panel",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If initial antibodies negative but paraneoplastic syndrome suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "SPEP with immunofixation (CPT 86334)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraproteinemic neuropathy screen in atypical cases",
+          "target": "Normal"
+        },
+        {
+          "item": "Free light chains (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Light chain disease screen",
+          "target": "Normal ratio"
+        },
+        {
+          "item": "Ganglionic AChR antibody",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune autonomic ganglionopathy if prominent autonomic features",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-Purkinje cell antibody (PCA-Tr/DNER)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic cerebellar degeneration overlap with LEMS",
+          "target": "Negative"
+        },
+        {
+          "item": "Muscle biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If diagnosis uncertain; rule out inflammatory myopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Genetic testing (CACNA1A, CACNB4)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Familial hemiplegic migraine/episodic ataxia with calcium channelopathy overlap; very rare",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT chest with contrast (CPT 71260)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24-48h of diagnosis; primary malignancy screen",
+          "target": "No lung mass, mediastinal lymphadenopathy, or thymoma",
+          "contraindications": "Contrast allergy, renal insufficiency"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral) (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; initial screen for lung mass",
+          "target": "No mass lesion, no hilar adenopathy",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "PET/CT (FDG) (CPT 78816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 1-2 weeks of diagnosis; most sensitive for occult SCLC if CT chest negative; recommended for all LEMS patients",
+          "target": "No FDG-avid lesion; SCLC can be very small and CT-occult",
+          "contraindications": "Uncontrolled diabetes (glucose >200); pregnancy"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "At presentation; autonomic dysfunction assessment",
+          "target": "Normal sinus rhythm; no QTc prolongation",
+          "contraindications": "None"
+        }
+      ],
+      "Electrodiagnostic & Specialized Studies": [
+        {
+          "item": "Repetitive nerve stimulation (RNS) - low rate (2-3 Hz) (CPT 95937)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "During workup; test multiple nerves including proximal muscles",
+          "target": "Decremental response >10% at 2-3 Hz (similar to MG but typically more pronounced; test hand and shoulder muscles)",
+          "contraindications": "Pacemaker (relative)"
+        },
+        {
+          "item": "Repetitive nerve stimulation (RNS) - high rate (20-50 Hz) (CPT 95937)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Immediately after low-rate RNS; DIAGNOSTIC hallmark of LEMS",
+          "target": "Incremental response >100% (often >200%) at high-frequency stimulation; this distinguishes LEMS from MG",
+          "contraindications": "Pacemaker (relative); painful - consider post-exercise facilitation instead"
+        },
+        {
+          "item": "Post-exercise facilitation testing (CPT 95937)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "10 seconds of maximal voluntary contraction then immediate repeat CMAP; preferred over high-rate RNS (less painful)",
+          "target": ">100% increment in CMAP amplitude post-exercise; characteristic of presynaptic NMJ disorder",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Baseline CMAP amplitude assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Before RNS; record resting CMAP amplitudes in multiple nerves",
+          "target": "Low resting CMAP amplitudes (typically <5 mV in hand muscles); hallmark of LEMS",
+          "contraindications": "None"
+        },
+        {
+          "item": "Standard EMG/NCS (CPT 95886, 95907-95913)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Complete electrodiagnostic evaluation; rule out concurrent neuropathy/myopathy",
+          "target": "Low CMAP amplitudes at rest; normal sensory responses; no active denervation (unless cancer-related neuropathy)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Single-fiber EMG (SFEMG) (CPT 95872)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If RNS non-diagnostic; increased jitter with improvement at higher firing rates (opposite of MG pattern)",
+          "target": "Increased jitter that improves with increased firing rate (presynaptic pattern)",
+          "contraindications": "Requires experienced electromyographer"
+        },
+        {
+          "item": "Autonomic function testing (CPT 95921-95924)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If autonomic symptoms present; quantifies autonomic involvement",
+          "target": "Abnormal sudomotor, cardiovagal, or adrenergic responses; supports LEMS diagnosis",
+          "contraindications": "None significant"
+        }
+      ],
+      "Cancer Screening Protocol": [
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If initial CT chest negative and clinical suspicion high (DELTA-P >=2)",
+          "target": "No occult malignancy"
+        },
+        {
+          "item": "PET/CT (repeat if initial negative)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Every 6 months for 2 years if DELTA-P >=3 and initial PET negative",
+          "target": "No FDG-avid lesion"
+        },
+        {
+          "item": "CT chest (low-dose screening)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Every 6 months for 2 years from diagnosis; then annually for 2 more years (total 4 years screening)",
+          "target": "No new lung nodules or mass"
+        },
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If neurological symptoms suggest brain metastases or paraneoplastic cerebellar degeneration",
+          "target": "No metastases; no cerebellar atrophy"
+        },
+        {
+          "item": "Bronchoscopy with biopsy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If CT/PET shows suspicious pulmonary lesion",
+          "target": "Tissue diagnosis; SCLC vs NSCLC"
+        },
+        {
+          "item": "Mammography (females)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "As part of comprehensive malignancy screen",
+          "target": "No malignancy"
+        },
+        {
+          "item": "Colonoscopy (age-appropriate)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If no lung cancer found; screen for other malignancies",
+          "target": "No malignancy"
+        },
+        {
+          "item": "Deep tendon reflex testing (pre- and post-exercise)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam; Lambert sign assessment",
+          "target": "Hyporeflexia or areflexia at rest that improves after 10 sec maximal contraction (Lambert sign); pathognomonic for LEMS"
+        },
+        {
+          "item": "Manual muscle testing (proximal emphasis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "Proximal weakness legs > arms; hip flexors and quadriceps most affected; may improve briefly with initial contraction"
+        },
+        {
+          "item": "Grip strength testing (pre- and post-exercise)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Serial assessment",
+          "target": "Reduced grip at baseline; may improve after initial maximal effort (post-exercise facilitation)"
+        },
+        {
+          "item": "Forced vital capacity (FVC)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "At presentation and serially if respiratory symptoms",
+          "target": ">20 mL/kg (>1.5 L)"
+        },
+        {
+          "item": "Negative inspiratory force (NIF/MIP)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "At presentation and serially",
+          "target": "More negative than -40 cm H2O"
+        },
+        {
+          "item": "Orthostatic vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial assessment; autonomic dysfunction quantification",
+          "target": "No orthostatic hypotension (drop >20 systolic or >10 diastolic on standing)"
+        },
+        {
+          "item": "Pupillary examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Initial exam",
+          "target": "Normal pupillary responses; sluggish pupils may suggest autonomic involvement"
+        },
+        {
+          "item": "Dry mouth assessment (visual analog scale)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Each visit; autonomic symptom tracking",
+          "target": "No xerostomia"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IVIg (intravenous immunoglobulin) (CPT 96365)",
+          "route": "IV",
+          "indication": "Acute LEMS exacerbation with significant functional impairment; rapid symptom control; pre-treatment or perioperative optimization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIg (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg) OR 1 g/kg/day x 2 days; infuse over 4-6 hours; slow initial rate per protocol",
+            "orderSentence": "IVIg (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency (check IgA level first); recent thrombotic event; renal failure (use sucrose-free formulation)",
+          "monitoring": "Pre-infusion: IgA level, renal function, CBC; during: vital signs q15 min first hour then q1h; headache; aseptic meningitis; thrombosis risk; renal function post-infusion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Plasma exchange (PLEX) (CPT 36514)",
+          "route": "IV",
+          "indication": "Acute LEMS exacerbation; alternative to IVIg; LEMS crisis with respiratory compromise; pre-thymectomy optimization if concurrent thymoma",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 plasma volumes",
+                "orderSentence": "Plasma exchange (PLEX) (CPT 36514) 1-1.5 plasma volumes IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-7 exchanges over 10-14 days; exchange 1-1.5 plasma volumes per session every other day; albumin replacement preferred",
+            "orderSentence": "Plasma exchange (PLEX) (CPT 36514) 1-1.5 plasma volumes IV"
+          },
+          "contraindications": "Hemodynamic instability; sepsis; central line contraindication; heparin allergy",
+          "monitoring": "BP during exchange; electrolytes (Ca, K, Mg); coagulation studies; fibrinogen; line site infection; hypotension",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Normal saline IV",
+          "route": "IV",
+          "indication": "Volume resuscitation for orthostatic hypotension from autonomic dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "Normal saline IV 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mL NS bolus then 75-125 mL/hr maintenance as needed for orthostatic symptoms",
+            "orderSentence": "Normal saline IV 500-1000 mL IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "I/O; BP; orthostatic vitals; weight",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "3,4-Diaminopyridine (amifampridine/Firdapse)",
+          "route": "PO",
+          "indication": "First-line symptomatic treatment for LEMS; enhances presynaptic acetylcholine release by blocking potassium channels; improves strength and autonomic symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "3,4-Diaminopyridine (amifampridine/Firdapse) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg per dose every 3-5 days; usual effective dose 15-20 mg TID-QID; max 80 mg/day (max 20 mg per single dose); take with food",
+            "orderSentence": "3,4-Diaminopyridine (amifampridine/Firdapse) 5 mg PO"
+          },
+          "contraindications": "Seizure history (lowers seizure threshold); concurrent use of drugs that lower seizure threshold; QT prolongation",
+          "monitoring": "ECG at baseline and after dose changes; seizure precautions; QTc monitoring; paresthesias (perioral, digital); GI upset",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "3,4-Diaminopyridine phosphate (Ruzurgi)",
+          "route": "PO",
+          "indication": "Alternative formulation of amifampridine for LEMS; enhances presynaptic acetylcholine release by blocking potassium channels; improves strength and autonomic symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "3,4-Diaminopyridine phosphate (Ruzurgi) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg per dose every 3-5 days; usual effective dose 15-20 mg TID-QID; max 80 mg/day (max 20 mg per single dose); take with food",
+            "orderSentence": "3,4-Diaminopyridine phosphate (Ruzurgi) 5 mg PO"
+          },
+          "contraindications": "Seizure history (lowers seizure threshold); concurrent use of drugs that lower seizure threshold; QT prolongation",
+          "monitoring": "ECG at baseline and after dose changes; seizure precautions; QTc monitoring; paresthesias (perioral, digital); GI upset",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pyridostigmine (Mestinon)",
+          "route": "PO",
+          "indication": "Adjunctive symptomatic treatment; enhances postsynaptic acetylcholine effect; less effective in LEMS than in MG but may provide modest additional benefit when combined with 3,4-DAP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Pyridostigmine (Mestinon) 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg TID; increase by 30 mg per dose every 2-3 days; usual effective dose 60 mg q4-6h; max 120 mg per dose; less effective as monotherapy in LEMS than MG",
+            "orderSentence": "Pyridostigmine (Mestinon) 30 mg PO"
+          },
+          "contraindications": "Mechanical GI/GU obstruction; uncontrolled asthma",
+          "monitoring": "Cholinergic side effects: diarrhea, cramping, salivation, bradycardia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Guanfacine",
+          "route": "PO",
+          "indication": "Refractory dry mouth from autonomic dysfunction not responsive to 3,4-DAP; off-label use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Guanfacine 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg daily; may increase to 2 mg daily; used off-label for autonomic dry mouth",
+            "orderSentence": "Guanfacine 1 mg PO"
+          },
+          "contraindications": "Hypotension; bradycardia; renal impairment",
+          "monitoring": "BP; HR; sedation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Orthostatic hypotension from autonomic dysfunction in LEMS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Midodrine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID; titrate by 2.5 mg per dose every 1-2 weeks; max 10 mg TID; avoid dosing within 4 hours of bedtime",
+            "orderSentence": "Midodrine 2.5 mg PO"
+          },
+          "contraindications": "Supine hypertension; urinary retention; severe organic heart disease; pheochromocytoma",
+          "monitoring": "Supine BP (check 1 hour after first dose); avoid supine position for 4h after dosing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Orthostatic hypotension refractory to midodrine; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg",
+                "orderSentence": "Fludrocortisone 0.1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg daily; may increase to 0.2 mg daily; max 0.3 mg daily",
+            "orderSentence": "Fludrocortisone 0.1 mg PO"
+          },
+          "contraindications": "Heart failure; hypertension; edema",
+          "monitoring": "Electrolytes (hypokalemia); weight; BP; edema; supine hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol 3350 (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation from autonomic dysfunction in LEMS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz liquid once daily; adjust frequency to bowel response",
+            "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+          },
+          "contraindications": "Known bowel obstruction",
+          "monitoring": "Bowel habits; electrolytes if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Senna",
+          "route": "PO",
+          "indication": "Constipation from autonomic dysfunction; adjunct to osmotic laxative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8.6 mg",
+                "orderSentence": "Senna 8.6 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "8.6-17.2 mg PO qHS; may increase to BID if needed; max 34.4 mg/day",
+            "orderSentence": "Senna 8.6 mg PO"
+          },
+          "contraindications": "Bowel obstruction; acute abdominal pain",
+          "monitoring": "Bowel habits; avoid long-term use if possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Artificial tears/saliva substitutes",
+          "route": "TOP",
+          "indication": "Dry eyes and dry mouth from autonomic dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Artificial tears/saliva substitutes 1-2 drops TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Artificial tears q2-4h PRN for dry eyes; saliva substitute spray or lozenges PRN for dry mouth",
+            "orderSentence": "Artificial tears/saliva substitutes 1-2 drops TOP"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Symptom relief assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sildenafil",
+          "route": "PO",
+          "indication": "Erectile dysfunction from autonomic dysfunction in LEMS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sildenafil 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO 1 hour before sexual activity; may increase to 50-100 mg; max 100 mg/day",
+            "orderSentence": "Sildenafil 25 mg PO"
+          },
+          "contraindications": "Concurrent nitrates (CONTRAINDICATED); severe cardiovascular disease; recent stroke/MI within 6 months",
+          "monitoring": "BP; cardiac status; vision changes; priapism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Autoimmune LEMS (A-LEMS) with inadequate response to 3,4-DAP alone; bridge to steroid-sparing agent; NOT first-line for P-LEMS (treat cancer first)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Prednisone 10-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-20 mg daily; increase by 10 mg every 5-7 days to 0.5-1 mg/kg/day; maintain 4-8 weeks then taper by 5-10 mg/month to lowest effective dose",
+            "orderSentence": "Prednisone 10-20 mg PO"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis history",
+          "monitoring": "Glucose; BP; mood/sleep; weight; bone density; GI prophylaxis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIg (maintenance)",
+          "route": "IV",
+          "indication": "Chronic immunomodulation for LEMS with ongoing functional impairment despite 3,4-DAP and oral immunotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "IVIg (maintenance) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/kg IV every 4 weeks (may adjust to 0.4-1 g/kg based on response); infuse over 4-6 hours",
+            "orderSentence": "IVIg (maintenance) 1 g/kg IV"
+          },
+          "contraindications": "IgA deficiency; recent thrombotic event; renal failure",
+          "monitoring": "Renal function; IgA level; vital signs during infusion; headache; thrombosis risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Plasma exchange (maintenance)",
+          "route": "IV",
+          "indication": "Chronic LEMS refractory to IVIg and oral immunotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 plasma volume",
+                "orderSentence": "Plasma exchange (maintenance) 1 plasma volume IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Single volume exchange every 2-4 weeks; adjust frequency based on clinical response and antibody levels; albumin replacement",
+            "orderSentence": "Plasma exchange (maintenance) 1 plasma volume IV"
+          },
+          "contraindications": "Hemodynamic instability; line complications",
+          "monitoring": "BP; electrolytes; coagulation; line site",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying / Immunosuppressive Therapies": [
+        {
+          "item": "Azathioprine (Imuran)",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for A-LEMS; long-term immunosuppression to reduce VGCC antibody production; onset 6-18 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day); onset 6-18 months",
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
+          },
+          "pretreatment": "TPMT genotype/activity BEFORE starting (mandatory); CBC; LFTs; hepatitis B/C screen; TB test",
+          "contraindications": "TPMT deficiency (homozygous); concurrent allopurinol (reduce dose by 75%); pregnancy (relative); active infection",
+          "monitoring": "TPMT genotype before starting; CBC q1-2 weeks during titration then monthly; LFTs monthly; amylase/lipase if abdominal pain; lymphocyte count target 600-1000",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (CellCept)",
+          "route": "PO",
+          "indication": "Steroid-sparing agent for A-LEMS; alternative to azathioprine; onset 6-12 months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day; onset 6-12 months",
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
+          },
+          "pretreatment": "CBC; LFTs; hepatitis B/C screen; pregnancy test (females); TB test",
+          "contraindications": "Pregnancy (Category D - teratogenic); concurrent azathioprine; active infection",
+          "monitoring": "CBC q2 weeks x 3 months then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab (Rituxan)",
+          "route": "IV",
+          "indication": "Refractory A-LEMS not responding to conventional immunosuppressants; may be used earlier in severe cases; less evidence than in MG but reported efficacy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab (Rituxan) 375 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 weeks; OR 1000 mg IV x 2 doses 14 days apart; re-dose when CD19/CD20 recover or clinical worsening; onset 3-6 months",
+            "orderSentence": "Rituximab (Rituxan) 375 mg/m2 IV"
+          },
+          "pretreatment": "HBV serology (HBsAg, anti-HBc, anti-HBs); hepatitis C screen; HIV test; CBC; immunoglobulins; TB test; vaccinations up to date",
+          "contraindications": "Active hepatitis B; active infection; severe immunodeficiency; PML history",
+          "monitoring": "CD19/CD20 counts q3-6 months; immunoglobulins q6 months; PML risk (very rare); infusion reactions (premedicate with acetaminophen, diphenhydramine, methylprednisolone)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclosporine (Sandimmune/Neoral)",
+          "route": "PO",
+          "indication": "Alternative steroid-sparing agent for A-LEMS; faster onset than azathioprine (2-6 months)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mg/kg/day",
+                "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2-3 mg/kg/day divided BID; target trough 100-150 ng/mL; onset 2-6 months",
+            "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg/day PO"
+          },
+          "pretreatment": "Renal function; BP; electrolytes; hepatitis screen; TB test",
+          "contraindications": "Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs",
+          "monitoring": "Trough levels; renal function q2 weeks then monthly; BP; electrolytes (K, Mg); lipids; gingival hyperplasia; hirsutism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "Severe refractory LEMS not responding to other immunosuppressants; reserved for life-threatening or disabling disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg/m2",
+                "orderSentence": "Cyclophosphamide 500-1000 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pulse IV 500-1000 mg/m2 monthly x 6 months; OR oral 1-2 mg/kg/day; reserved for refractory cases; MESNA uroprotection with IV dosing",
+            "orderSentence": "Cyclophosphamide 500-1000 mg/m2 IV"
+          },
+          "pretreatment": "CBC; renal function; hepatitis screen; pregnancy test; fertility counseling",
+          "contraindications": "Pregnancy; active infection; bone marrow suppression; hemorrhagic cystitis history",
+          "monitoring": "CBC weekly during treatment; urinalysis (hemorrhagic cystitis); fertility counseling; malignancy risk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Oncology-directed chemotherapy (cisplatin/etoposide)",
+          "route": "IV",
+          "indication": "Standard first-line for SCLC in P-LEMS; treatment of underlying malignancy is the primary therapy for paraneoplastic LEMS; neurological symptoms often improve with cancer treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per oncology protocol",
+                "orderSentence": "Oncology-directed chemotherapy (cisplatin/etoposide) Per oncology protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Cisplatin 60-80 mg/m2 day 1 + etoposide 100-120 mg/m2 days 1-3 q21d x 4-6 cycles; defer to oncology for specific regimen",
+            "orderSentence": "Oncology-directed chemotherapy (cisplatin/etoposide) Per oncology protocol IV"
+          },
+          "pretreatment": "Oncology staging; LEMS diagnosis confirmation; LEMS-specific caution: avoid neuromuscular blocking agents if surgery needed",
+          "contraindications": "Per oncology assessment",
+          "monitoring": "Neuromuscular function during treatment; FVC if respiratory symptoms; electrolytes; renal function; myelosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation therapy (SCLC)",
+          "route": "EXT",
+          "indication": "Limited-stage SCLC with or without concurrent chemotherapy; palliative radiation for extensive-stage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per radiation oncology protocol",
+                "orderSentence": "Radiation therapy (SCLC) Per radiation oncology protocol EXT"
+              }
+            ],
+            "route": "EXT",
+            "instructions": "Concurrent chemoradiation for limited stage; palliative for extensive stage; prophylactic cranial irradiation per oncology",
+            "orderSentence": "Radiation therapy (SCLC) Per radiation oncology protocol EXT"
+          },
+          "pretreatment": "Radiation oncology staging; treatment planning",
+          "contraindications": "Per radiation oncology assessment",
+          "monitoring": "Neurological function; esophagitis; pneumonitis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immune checkpoint inhibitors (with extreme caution)",
+          "route": "IV",
+          "indication": "SCLC maintenance (atezolizumab, durvalumab); CRITICAL WARNING: may worsen LEMS or trigger myasthenic crisis; only under joint neuro-oncology management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per oncology protocol",
+                "orderSentence": "Immune checkpoint inhibitors (with extreme caution) Per oncology protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Per oncology; MUST be administered with close neuromuscular monitoring; have IVIg/PLEX available",
+            "orderSentence": "Immune checkpoint inhibitors (with extreme caution) Per oncology protocol IV"
+          },
+          "pretreatment": "Baseline FVC; neuromuscular assessment; joint neuro-oncology plan",
+          "contraindications": "Pre-existing myasthenic crisis; uncontrolled LEMS; use only with neuromuscular specialist co-management",
+          "monitoring": "FVC before each cycle; MG-ADL equivalent assessment; creatine kinase; troponin (myocarditis); monitor for rapid neurological deterioration",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist referral for diagnosis confirmation, treatment planning, and long-term management of LEMS",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oncology referral for cancer screening and management in all LEMS patients (mandatory given ~60% paraneoplastic association)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pulmonology referral for respiratory function monitoring if FVC declining or significant weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Thoracic surgery referral if lung mass identified on imaging",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation oncology referral if SCLC confirmed for treatment planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation if dysphagia or bulbar symptoms present",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for proximal strengthening, gait training, and fall prevention given proximal leg weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation and energy conservation strategies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urology referral for erectile dysfunction management if not responsive to first-line treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology referral for refractory constipation from autonomic dysfunction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/Psychology referral for depression, anxiety, and adjustment to chronic diagnosis with cancer risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consult for insurance navigation, disability evaluation, and cancer support resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for chronic pain from sustained weakness or paraneoplastic neuropathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care referral for P-LEMS with advanced malignancy for goals of care discussion and symptom management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Infusion center coordination for IVIg or rituximab scheduling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation program referral given strong association between LEMS and SCLC in tobacco users",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral if autonomic dysfunction includes cardiac arrhythmias or significant orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if difficulty breathing, worsening weakness preventing walking, or inability to swallow (may indicate LEMS crisis or cancer progression)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Return to ED if new severe weakness, falls, or inability to rise from chair (proximal weakness progression)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Take 3,4-diaminopyridine (amifampridine) exactly as prescribed; do NOT exceed 20 mg per single dose or 80 mg/day (seizure risk)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Take 3,4-diaminopyridine with food to reduce GI side effects (nausea, abdominal discomfort)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report any seizures, tingling around the mouth, or numbness in fingers immediately (may indicate 3,4-DAP toxicity)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Carry LEMS medical alert identification at all times (anesthesia and medication precautions critical)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Provide LEMS medication list to ALL healthcare providers (emergency, dental, surgical) - many medications worsen neuromuscular junction disorders",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Attend ALL scheduled cancer screening appointments even if feeling well (cancer may develop years after LEMS diagnosis)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report any new cough, weight loss, fatigue, chest pain, or hemoptysis immediately (may indicate lung cancer)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Rise slowly from sitting or lying position to avoid falls from orthostatic hypotension (stand at bed/chair edge for 30 seconds before walking)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Increase fluid and salt intake to help manage orthostatic hypotension from autonomic dysfunction (unless restricted by other conditions)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Plan activities for times of best strength; use energy conservation techniques; rest between tasks",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Do NOT stop immunosuppressant medications abruptly without physician guidance (disease flare risk)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Avoid extreme heat, hot baths, and saunas (may worsen weakness)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report excessive dry mouth, constipation, or urinary symptoms to neurologist (autonomic dysfunction may require treatment adjustment)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Avoid alcohol (potentiates weakness and interacts with medications)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Understand that LEMS symptoms may improve if underlying cancer is successfully treated (for P-LEMS patients)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Stop smoking immediately if current smoker (reduces cancer risk and may slow disease progression)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation mandatory given strong association between LEMS, SCLC, and tobacco use (reduces ongoing cancer risk)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Low-impact exercise (swimming, stationary bike, yoga) to maintain strength and mobility without overexertion given proximal weakness",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Energy conservation with scheduled rest periods to manage fatigue and optimize function throughout the day",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Home safety evaluation to remove fall hazards given proximal leg weakness and orthostatic hypotension (secure rugs, install grab bars, adequate lighting)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Compression stockings (waist-high, 30-40 mmHg) for orthostatic hypotension management from autonomic dysfunction",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Elevate head of bed 10-20 degrees to reduce nocturnal supine hypertension while managing orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Increase dietary fluid intake to 2-3 L/day and liberal salt intake (unless contraindicated) for orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "High-fiber diet with adequate hydration for constipation management from autonomic dysfunction",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Regular dental care and oral hygiene given xerostomia (dry mouth) from autonomic dysfunction (increased caries risk)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "✓"
+        },
+        {
+          "item": "Vitamin D supplementation if deficient (1000-2000 IU daily) to support immune function and bone health, especially if on chronic steroids",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Calcium supplementation (1000-1200 mg daily) if on chronic corticosteroids for bone protection",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Annual influenza vaccination (inactivated form) and COVID-19 vaccination as recommended; avoid live vaccines if on immunosuppression",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Aspiration precautions including thickened liquids and chin tuck positioning if dysphagia present from bulbar involvement",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        }
+      ],
+      "Medications to Avoid or Use with Caution in LEMS": [
+        {
+          "item": "**NEUROMUSCULAR BLOCKING AGENTS**"
+        },
+        {
+          "item": "Succinylcholine",
+          "risk level": "HIGH",
+          "details": "Unpredictable response in LEMS; may have prolonged block",
+          "safe alternative (if applicable)": "Non-depolarizing agents at markedly reduced dose with sugammadex available"
+        },
+        {
+          "item": "Non-depolarizing NM blockers (vecuronium, rocuronium, pancuronium)",
+          "risk level": "HIGH",
+          "details": "Exaggerated and prolonged response; use 1/10 to 1/5 normal dose if absolutely necessary",
+          "safe alternative (if applicable)": "Sugammadex for reversal of rocuronium; neuromuscular monitoring with TOF mandatory"
+        },
+        {
+          "item": "**ANTIBIOTICS**"
+        },
+        {
+          "item": "Aminoglycosides (gentamicin, tobramycin, amikacin)",
+          "risk level": "HIGH",
+          "details": "Impair presynaptic ACh release; can precipitate respiratory failure",
+          "safe alternative (if applicable)": "Non-aminoglycoside antibiotics based on culture sensitivity"
+        },
+        {
+          "item": "Fluoroquinolones (ciprofloxacin, levofloxacin, moxifloxacin)",
+          "risk level": "HIGH",
+          "details": "NMJ blocking effect; FDA warning for neuromuscular disorders",
+          "safe alternative (if applicable)": "Beta-lactams, cephalosporins (generally safe)"
+        },
+        {
+          "item": "Macrolides (azithromycin, erythromycin)",
+          "risk level": "MODERATE",
+          "details": "Reports of NMJ worsening",
+          "safe alternative (if applicable)": "Penicillins, cephalosporins"
+        },
+        {
+          "item": "Polymyxins (colistin)",
+          "risk level": "HIGH",
+          "details": "Strong NMJ blocking effect",
+          "safe alternative (if applicable)": "Alternative per culture sensitivity"
+        },
+        {
+          "item": "**CARDIOVASCULAR**"
+        },
+        {
+          "item": "Beta-blockers (propranolol, metoprolol)",
+          "risk level": "MODERATE",
+          "details": "May worsen weakness; impair NMJ transmission; worsen orthostatic hypotension",
+          "safe alternative (if applicable)": "ACE inhibitors, ARBs"
+        },
+        {
+          "item": "Calcium channel blockers (verapamil, diltiazem)",
+          "risk level": "HIGH",
+          "details": "Directly antagonize VGCC; may significantly worsen LEMS by further reducing calcium influx at nerve terminal",
+          "safe alternative (if applicable)": "Amlodipine (lower risk); ACE inhibitors; avoid verapamil/diltiazem specifically"
+        },
+        {
+          "item": "Magnesium sulfate IV",
+          "risk level": "HIGH",
+          "details": "Inhibits presynaptic ACh release; can precipitate crisis",
+          "safe alternative (if applicable)": "Avoid except life-threatening hypomagnesemia; ICU monitoring required"
+        },
+        {
+          "item": "**ANESTHETIC**"
+        },
+        {
+          "item": "Volatile anesthetics (isoflurane, sevoflurane)",
+          "risk level": "MODERATE",
+          "details": "May potentiate NMJ blockade",
+          "safe alternative (if applicable)": "TIVA (total intravenous anesthesia) preferred"
+        },
+        {
+          "item": "**IMMUNE/CHECKPOINT**"
+        },
+        {
+          "item": "Immune checkpoint inhibitors (nivolumab, pembrolizumab, ipilimumab)",
+          "risk level": "HIGH",
+          "details": "May worsen paraneoplastic neurological syndromes; can trigger myasthenic crisis; use only with joint neuro-oncology management",
+          "safe alternative (if applicable)": "If required for cancer treatment, close neuromuscular monitoring mandatory"
+        },
+        {
+          "item": "**OTHER**"
+        },
+        {
+          "item": "Botulinum toxin",
+          "risk level": "HIGH",
+          "details": "Blocks presynaptic ACh release; CONTRAINDICATED in LEMS",
+          "safe alternative (if applicable)": "Physical therapy; oral medications for spasticity"
+        },
+        {
+          "item": "Quinine/tonic water",
+          "risk level": "MODERATE",
+          "details": "NMJ blocking effect",
+          "safe alternative (if applicable)": "Avoid quinine-containing beverages"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Myasthenia Gravis (MG)",
+      "features": "Fatigable weakness that WORSENS with exertion (opposite of LEMS); ptosis and diplopia prominent (rare in LEMS); normal or brisk reflexes; no autonomic dysfunction; no cancer association (except thymoma)",
+      "tests": "AChR/MuSK antibodies positive; RNS shows decrement at low-rate WITHOUT significant increment at high-rate; CMAP amplitudes normal at rest"
+    },
+    {
+      "diagnosis": "Botulism",
+      "features": "Acute onset descending paralysis; dilated/fixed pupils; recent ingestion of contaminated food or wound; autonomic dysfunction present; NO prior NMJ disease",
+      "tests": "Stool/serum botulinum toxin assay; EMG shows BSAP pattern with incremental response similar to LEMS but acute onset"
+    },
+    {
+      "diagnosis": "Polymyositis/Dermatomyositis",
+      "features": "Proximal weakness without fatigability; elevated CK (often >1000); skin findings in DM (heliotrope rash, Gottron papules); no autonomic dysfunction; no NMJ abnormalities on RNS",
+      "tests": "CK; myositis antibody panel; EMG shows myopathic pattern (no NMJ findings); muscle biopsy"
+    },
+    {
+      "diagnosis": "Inclusion Body Myositis (IBM)",
+      "features": "Slowly progressive; finger flexor and quadriceps weakness (asymmetric); no autonomic dysfunction; older males; no NMJ findings",
+      "tests": "CK mildly elevated; EMG shows mixed myopathic/neurogenic pattern; muscle biopsy (rimmed vacuoles); anti-cN1A antibody"
+    },
+    {
+      "diagnosis": "Motor Neuron Disease (ALS)",
+      "features": "Progressive weakness with fasciculations; UMN signs (hyperreflexia, Babinski); no autonomic dysfunction; no fatigability pattern; EMG shows active denervation",
+      "tests": "EMG/NCS: active denervation, fasciculations, normal NMJ studies; no VGCC antibodies"
+    },
+    {
+      "diagnosis": "Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+      "features": "Progressive proximal and distal weakness; hyporeflexia/areflexia (but NO post-exercise facilitation); sensory involvement prominent; elevated CSF protein",
+      "tests": "NCS: demyelinating pattern; CSF protein elevated; no VGCC antibodies; no RNS increment"
+    },
+    {
+      "diagnosis": "Guillain-Barre Syndrome (GBS)",
+      "features": "Acute ascending weakness; areflexia; post-infectious; no autonomic facilitation; respiratory failure more common",
+      "tests": "CSF albuminocytologic dissociation; NCS: demyelinating or axonal pattern; no VGCC antibodies"
+    },
+    {
+      "diagnosis": "Hypothyroid myopathy",
+      "features": "Proximal weakness with myalgias; delayed relaxation of reflexes (NOT facilitation); fatigue; weight gain; cold intolerance",
+      "tests": "TSH elevated; free T4 low; CK may be elevated; EMG non-specific; no NMJ findings"
+    },
+    {
+      "diagnosis": "Addison disease",
+      "features": "Fatigue and weakness; orthostatic hypotension; hyperpigmentation; electrolyte abnormalities (hyperkalemia, hyponatremia); weight loss",
+      "tests": "Morning cortisol; ACTH stimulation test; electrolytes; no NMJ findings"
+    },
+    {
+      "diagnosis": "Primary autonomic failure (MSA, PAF)",
+      "features": "Prominent autonomic dysfunction; orthostatic hypotension; urinary dysfunction; NO proximal weakness pattern; NO NMJ findings on RNS",
+      "tests": "Autonomic function testing; brain MRI (MSA: hot cross bun sign); no VGCC antibodies; normal RNS"
+    },
+    {
+      "diagnosis": "Congenital Myasthenic Syndromes (CMS)",
+      "features": "Childhood onset; family history; seronegative; specific gene mutations; may have presynaptic, synaptic, or postsynaptic defect",
+      "tests": "Genetic testing (CMS gene panel); no VGCC antibodies; specific RNS patterns depend on CMS type"
+    },
+    {
+      "diagnosis": "Spinal muscular atrophy (SMA)",
+      "features": "Proximal weakness; areflexia; childhood or adult onset; fasciculations; no autonomic dysfunction; no NMJ findings",
+      "tests": "Genetic testing (SMN1 deletion); EMG shows anterior horn cell disease pattern; no VGCC antibodies"
+    },
+    {
+      "diagnosis": "Paraneoplastic cerebellar degeneration",
+      "features": "Ataxia rather than proximal weakness; may coexist with LEMS in ~15% of cases; anti-Purkinje cell antibodies",
+      "tests": "PCA-Tr/DNER, Yo, Hu antibodies; brain MRI showing cerebellar atrophy; VGCC may be positive (overlap)"
+    },
+    {
+      "diagnosis": "Drug-induced neuromuscular blockade",
+      "features": "Temporal correlation with offending medication (aminoglycosides, calcium channel blockers); reversible on drug withdrawal",
+      "tests": "Drug history review; NMJ studies normalize after drug discontinuation; no VGCC antibodies"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "P/Q-type VGCC antibodies diagnostic for LEMS (~85-90% sensitivity)",
+      "evidenceLevel": "Class I",
+      "source": "Lennon VA et al. N Engl J Med 1995; 332:1467-1474"
+    },
+    {
+      "recommendation": "LEMS association with SCLC (~60% paraneoplastic)",
+      "evidenceLevel": "Class II",
+      "source": "Titulaer MJ et al. J Clin Oncol 2011; 29:902-908"
+    },
+    {
+      "recommendation": "DELTA-P score for paraneoplastic risk stratification",
+      "evidenceLevel": "Class II",
+      "source": "Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2011; 82:1222-1228"
+    },
+    {
+      "recommendation": "SOX1 antibody as SCLC biomarker in LEMS (~64% sensitivity)",
+      "evidenceLevel": "Class II",
+      "source": "Titulaer MJ et al. J Neuroimmunol 2009; 210:78-82"
+    },
+    {
+      "recommendation": "Repetitive nerve stimulation: >100% increment at high-rate diagnostic for presynaptic NMJ disorder",
+      "evidenceLevel": "Class I",
+      "source": "Oh SJ et al. Muscle Nerve 2005; 32:549-556"
+    },
+    {
+      "recommendation": "Low resting CMAP amplitudes as hallmark of LEMS",
+      "evidenceLevel": "Class I",
+      "source": "Sanders DB. Ann N Y Acad Sci 2003; 998:500-508"
+    },
+    {
+      "recommendation": "Post-exercise facilitation (>100% CMAP increment) equivalent to high-rate RNS",
+      "evidenceLevel": "Class II",
+      "source": "Oh SJ et al. Muscle Nerve 2005; 32:549-556"
+    },
+    {
+      "recommendation": "3,4-Diaminopyridine as first-line symptomatic treatment for LEMS",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Wirtz PW et al. Neurology 2009; 73:1849-1854"
+    },
+    {
+      "recommendation": "3,4-DAP improves strength and autonomic symptoms in LEMS (randomized controlled trial)",
+      "evidenceLevel": "Class I",
+      "source": "Oh SJ et al. Muscle Nerve 2009; 40:795-800"
+    },
+    {
+      "recommendation": "Amifampridine (Firdapse) FDA approval for LEMS",
+      "evidenceLevel": "Regulatory",
+      "source": "FDA approval November 2018; NDA 208078"
+    },
+    {
+      "recommendation": "Pyridostigmine as adjunctive therapy in LEMS (less effective than in MG)",
+      "evidenceLevel": "Class III",
+      "source": "Tim RW, Sanders DB. Semin Neurol 2004; 24:49-57"
+    },
+    {
+      "recommendation": "IVIg effective for LEMS acute exacerbation",
+      "evidenceLevel": "Class I",
+      "source": "Bain PG et al. J Neurol Neurosurg Psychiatry 1996; 61:510-515"
+    },
+    {
+      "recommendation": "Plasma exchange for LEMS exacerbation",
+      "evidenceLevel": "Class II",
+      "source": "Newsom-Davis J, Murray NM. Neurology 1984; 34:480-485"
+    },
+    {
+      "recommendation": "Cancer treatment improves neurological symptoms in P-LEMS",
+      "evidenceLevel": "Class II",
+      "source": "Chalk CH et al. Neurology 1990; 40:1644-1645"
+    },
+    {
+      "recommendation": "Cancer screening every 6 months for 2 years in LEMS",
+      "evidenceLevel": "Consensus",
+      "source": "Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2011; 82:1222-1228"
+    },
+    {
+      "recommendation": "PET/CT more sensitive than CT alone for detecting occult SCLC in LEMS",
+      "evidenceLevel": "Class II",
+      "source": "Titulaer MJ et al. Chest 2011; 139:1187-1193"
+    },
+    {
+      "recommendation": "Azathioprine as steroid-sparing agent in autoimmune LEMS",
+      "evidenceLevel": "Class III",
+      "source": "Newsom-Davis J. Muscle Nerve 1998; 21:1762-1768"
+    },
+    {
+      "recommendation": "Rituximab for refractory autoimmune LEMS (case series)",
+      "evidenceLevel": "Class IV",
+      "source": "Maddison P et al. Neurology 2011; 76:474-476"
+    },
+    {
+      "recommendation": "Lambert sign (post-exercise facilitation of reflexes) as clinical hallmark",
+      "evidenceLevel": "Class II",
+      "source": "Lambert EH, Eaton LM, Rooke ED. Am J Physiol 1956; 187:612-613"
+    },
+    {
+      "recommendation": "Autonomic dysfunction in LEMS (dry mouth, constipation, erectile dysfunction)",
+      "evidenceLevel": "Class II",
+      "source": "O'Neill JH et al. Brain 1988; 111:577-596"
+    },
+    {
+      "recommendation": "EFNS/PNS guidelines for LEMS management",
+      "evidenceLevel": "Consensus",
+      "source": "Titulaer MJ et al. Eur J Neurol 2011; 18:486-490"
+    },
+    {
+      "recommendation": "Immune checkpoint inhibitors may worsen paraneoplastic syndromes",
+      "evidenceLevel": "Class III",
+      "source": "Guidon AC et al. Neurology 2021; 97:e234-e245"
+    },
+    {
+      "recommendation": "Calcium channel blockers particularly dangerous in LEMS (direct pathophysiologic antagonism)",
+      "evidenceLevel": "Class III",
+      "source": "Sanders DB et al. Neurology 2000; 54:2163-2167"
+    },
+    {
+      "recommendation": "Neuromuscular blocking agent sensitivity in LEMS (1/10 normal dose)",
+      "evidenceLevel": "Class II",
+      "source": "Baraka A. Can J Anaesth 1992; 39:817-819"
+    },
+    {
+      "recommendation": "FVC and NIF monitoring for respiratory assessment in neuromuscular disease",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Thomas CE et al. Neurology 1997; 48:1253-1260"
+    },
+    {
+      "recommendation": "Midodrine for orthostatic hypotension management",
+      "evidenceLevel": "Class I",
+      "source": "Low PA et al. JAMA 1997; 277:1046-1051"
+    },
+    {
+      "recommendation": "3,4-DAP seizure risk and QTc monitoring requirement",
+      "evidenceLevel": "Class II",
+      "source": "FDA prescribing information for Firdapse (amifampridine) 2018"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Forced vital capacity (FVC)",
+      "frequency": "Q4-6h in acute; Q shift if stable",
+      "action": "If <15 mL/kg or <1 L: ICU transfer and prepare for intubation; respiratory failure less common in LEMS than MG but can occur",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Negative inspiratory force (NIF/MIP)",
+      "frequency": "Q4-6h in acute; Q shift if stable",
+      "action": "If weaker than -20 cm H2O: intubation consideration; ICU monitoring",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Oxygen saturation (SpO2)",
+      "frequency": "Continuous in acute",
+      "action": "Supplemental O2; BiPAP; intubation if declining",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Orthostatic vital signs",
+      "frequency": "Q shift; daily when stable",
+      "action": "Increase IV fluids; add midodrine; compression stockings; hold offending medications",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q shift; more frequent during PLEX",
+      "action": "Antihypertensives PRN; adjust autonomic medications",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic exam (LEMS-specific: proximal strength, reflexes with post-exercise check)",
+      "frequency": "Q shift inpatient; BID in ICU",
+      "action": "If worsening: reassess 3,4-DAP dose; consider IVIg/PLEX; evaluate for cancer progression",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Swallow function assessment",
+      "frequency": "Daily; each meal if bulbar symptoms",
+      "action": "NPO if aspiration risk; modified diet; SLP consult",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "ECG monitoring",
+      "frequency": "At baseline; after 3,4-DAP dose changes",
+      "action": "Hold 3,4-DAP if QTc prolongation; cardiology consult for arrhythmia",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV/high-dose steroids",
+      "action": "Insulin sliding scale",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Electrolytes (K, Mg, Ca, Phos)",
+      "frequency": "Daily while acute",
+      "action": "Replace aggressively; calcium homeostasis especially important in LEMS",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q shift",
+      "action": "Infection workup if febrile (infection can worsen LEMS)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "I/O and daily weight",
+      "frequency": "Daily (inpatient)",
+      "action": "Adjust fluids; consider autonomic contribution to dysregulation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "VGCC antibody titer",
+      "frequency": "Every 6-12 months",
+      "action": "Rising titer: reassess cancer screening; consider treatment escalation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CT chest (cancer screening)",
+      "frequency": "Every 6 months for 2 years; then annually for 2 more years",
+      "action": "Immediate oncology referral; biopsy; staging workup",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PET/CT (if DELTA-P >=3 and initial negative)",
+      "frequency": "Every 6 months for 2 years",
+      "action": "Oncology referral; biopsy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Proximal muscle strength testing (MRC grading)",
+      "frequency": "Each clinic visit",
+      "action": "Treatment escalation; reassess 3,4-DAP dose; consider immunotherapy adjustment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Autonomic symptom assessment (dry mouth, constipation, orthostasis, ED)",
+      "frequency": "Each clinic visit",
+      "action": "Adjust symptomatic medications; consider 3,4-DAP dose optimization",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Orthostatic vital signs",
+      "frequency": "Each clinic visit",
+      "action": "Adjust midodrine/fludrocortisone; increase fluids/salt; compression stockings",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "FVC (office spirometry)",
+      "frequency": "Each visit initially; q3-6 months when stable",
+      "action": "Pulmonology referral if declining; reassess treatment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG (QTc monitoring)",
+      "frequency": "At baseline; after 3,4-DAP dose changes; annually",
+      "action": "Hold/reduce 3,4-DAP if QTc prolonging; cardiology consult",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q2-4 weeks during immunosuppressant titration; then q3 months",
+      "action": "Hold/reduce immunosuppressant if cytopenic",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs",
+      "frequency": "Q2-4 weeks during immunosuppressant titration; then q3 months",
+      "action": "Reduce or hold offending agent; hepatology referral if persistent",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Q3 months on cyclosporine; q6 months otherwise",
+      "action": "Dose adjustment; avoid nephrotoxins",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fasting glucose / HbA1c",
+      "frequency": "Q3 months while on steroids",
+      "action": "Endocrinology referral; steroid dose reduction",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline if starting chronic steroids; repeat q2 years",
+      "action": "Bisphosphonate; calcium/vitamin D",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+      "frequency": "Q6 months if on rituximab/chronic immunosuppression",
+      "action": "IVIg replacement if symptomatic hypogammaglobulinemia",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD19/CD20 B-cell counts (if on rituximab)",
+      "frequency": "Q3-6 months",
+      "action": "Redose rituximab when B-cells recover and symptoms worsen",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight monitoring",
+      "frequency": "Each clinic visit",
+      "action": "Unexplained weight loss >5%: repeat cancer screening urgently",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression/anxiety screening (PHQ-9, GAD-7)",
+      "frequency": "Each clinic visit",
+      "action": "Psychiatry referral; consider SSRI (safe in LEMS)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Mild symptoms; stable on 3,4-DAP; adequate oral intake; no respiratory compromise (FVC >60% predicted); cancer screening plan in place; reliable follow-up within 1-2 weeks; understands return precautions"
+    },
+    {
+      "disposition": "**Admit to floor (general neurology)**",
+      "criteria": "New diagnosis requiring expedited workup; moderate proximal weakness limiting ambulation; initiating IVIg or immunotherapy; significant autonomic dysfunction requiring stabilization; new cancer diagnosis requiring coordination"
+    },
+    {
+      "disposition": "**Admit to step-down/telemetry**",
+      "criteria": "Declining FVC or NIF trending toward danger zone; moderate-severe orthostatic hypotension with syncope; starting PLEX; cardiac arrhythmias from autonomic dysfunction"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "FVC <30% predicted or <1 L; NIF weaker than -25 cm H2O; progressive respiratory failure; severe autonomic instability (symptomatic bradycardia, sustained hypotension); concurrent SCLC with acute complications; myasthenic crisis-like presentation"
+    },
+    {
+      "disposition": "**Transfer to higher level**",
+      "criteria": "Neuromuscular specialist not available; PLEX needed but unavailable; ICU capability needed; oncology expertise needed for SCLC management"
+    },
+    {
+      "disposition": "**Discharge from hospital**",
+      "criteria": "FVC stable and improving; adequate oral intake; stable on oral medications; cancer screening/treatment plan in place; outpatient follow-up scheduled within 1-2 weeks; patient and family educated on LEMS management and cancer screening importance"
+    }
+  ]
+}

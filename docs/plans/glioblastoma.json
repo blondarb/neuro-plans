@@ -1,0 +1,1726 @@
+{
+  "id": "glioblastoma",
+  "title": "Glioblastoma (GBM), IDH-wildtype, WHO Grade 4",
+  "version": "1.1",
+  "icd10": [
+    "** C71.9 (Malignant neoplasm of brain",
+    "unspecified)",
+    "C71.0 (Malignant neoplasm of cerebral lobe",
+    "frontal)",
+    "C71.1 (Malignant neoplasm of cerebral lobe",
+    "temporal)",
+    "C71.2 (Malignant neoplasm of cerebral lobe",
+    "parietal)",
+    "C71.3 (Malignant neoplasm of cerebral lobe",
+    "occipital)",
+    "C71.4 (Malignant neoplasm of cerebral ventricle)",
+    "C71.5 (Malignant neoplasm of other parts of cerebrum)",
+    "C71.6 (Malignant neoplasm of cerebellum)",
+    "C71.7 (Malignant neoplasm of brainstem)",
+    "C71.8 (Malignant neoplasm of overlapping sites of brain)",
+    "D49.6 (Neoplasm of unspecified behavior of brain)",
+    "G93.6 (Cerebral edema)"
+  ],
+  "scope": "** Comprehensive management of newly diagnosed and recurrent glioblastoma (IDH-wildtype, WHO grade 4) in adults. Covers initial presentation and stabilization, neuroimaging evaluation (MRI with gadolinium, perfusion MRI, MR spectroscopy), histopathologic and molecular profiling (MGMT promoter methylation, TERT promoter mutation, EGFR amplification, +7/-10 chromosome changes), surgical planning (maximal safe resection, stereotactic biopsy), standard Stupp protocol (concurrent temozolomide + radiation followed by adjuvant temozolomide), tumor treating fields (TTFields/Optune), recurrence management (bevacizumab, lomustine, re-resection), supportive care (dexamethasone, seizure management), and palliative care integration. Excludes pediatric gliomas, IDH-mutant astrocytomas, oligodendrogliomas, and brain metastases (separate templates).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline before surgery and chemotherapy; leukocytosis screen; platelet count for surgical candidacy and temozolomide eligibility",
+          "target": "WBC, platelets within normal limits; ALC for treatment planning",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function for contrast imaging; hepatic function for chemotherapy dosing; electrolytes (SIADH risk with brain lesions); glucose (steroid-induced hyperglycemia baseline)",
+          "target": "Normal; anticipate glucose elevation with dexamethasone",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulopathy assessment for surgical candidacy; glioblastoma patients have elevated VTE risk",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Steroid-induced hyperglycemia baseline; pre-operative assessment",
+          "target": "<180 mg/dL; start insulin if persistently elevated on steroids",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Fatigue and cognitive symptom differential; baseline before radiation therapy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Type and screen",
+          "rationale": "Pre-operative; anticipate intraoperative blood loss during craniotomy",
+          "target": "Available for crossmatch",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (women of childbearing age) (CPT 81025)",
+          "rationale": "Temozolomide is teratogenic (Category D); radiation contraindicated in pregnancy",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before initiating prolonged dexamethasone; perioperative glucose optimization",
+          "target": "<7.0% (ideal); higher values require aggressive insulin management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "Tumor burden marker; prognostic significance",
+          "target": "Elevated may indicate aggressive disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "If syncope or seizure presentation; cardiac evaluation before surgery",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CPK/CK (CPT 82550)",
+          "rationale": "Post-seizure rhabdomyolysis screen",
+          "target": "Normal; elevated after prolonged seizures",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "If hypothalamic/pituitary involvement suspected; baseline before dexamethasone",
+          "target": "Normal (>10 mcg/dL AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prealbumin / Albumin (CPT 84134)",
+          "rationale": "Nutritional status for surgical planning and chemoradiation tolerance; steroid-induced catabolism",
+          "target": "Normal; low values predict poor surgical outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "Primary CNS lymphoma differential; immunosuppression assessment",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR / CRP (CPT 85652+86140)",
+          "rationale": "Infection differential (abscess vs. tumor); inflammatory markers",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "rationale": "If on valproic acid for seizures; altered mental status workup",
+          "target": "<35 micromol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Paraneoplastic antibody panel (serum)",
+          "rationale": "If clinical presentation suggests paraneoplastic syndrome coexisting with glioblastoma",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "BRCA1/2 germline testing",
+          "rationale": "Consider in young patients (<40 years) or family history of cancer; may affect treatment options",
+          "target": "Variable",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Li-Fraumeni syndrome screening (TP53 germline)",
+          "rationale": "Young patients with glioblastoma (<45 years), personal or family history of multiple cancers",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Circulating tumor DNA (ctDNA)",
+          "rationale": "Emerging biomarker for treatment response monitoring and early recurrence detection",
+          "target": "Baseline and serial monitoring",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EBV serology / CSF EBV PCR",
+          "rationale": "Primary CNS lymphoma differential if tissue diagnosis unclear",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP from mass effect",
+          "target": "10-20 cm H2O",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Leptomeningeal dissemination; infection differential",
+          "target": "WBC <5; RBC 0",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in leptomeningeal disease, infection",
+          "target": "15-45 mg/dL",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "rationale": "Low in infection, carcinomatous meningitis",
+          "target": "Normal (>60% serum)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Malignant cells from leptomeningeal spread",
+          "target": "Negative; positive = leptomeningeal glioblastoma (poor prognosis)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry (CPT 88184)",
+          "rationale": "Primary CNS lymphoma differential",
+          "target": "No monoclonal B-cell population",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "rationale": "Infection differential (abscess vs. tumor)",
+          "target": "No organisms",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediately upon presentation; first-line for acute symptoms (seizure, headache, focal deficit, altered mental status)",
+          "target": "Hypodense mass with surrounding edema, calcification (rare in GBM), hemorrhage, midline shift, hydrocephalus; classic ring-enhancing lesion not visible without contrast",
+          "contraindications": "None in emergency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (gadolinium) (CPT 70553)",
+          "timing": "Within 24h of presentation; GOLD STANDARD for glioblastoma; thin-cut (1mm) 3D T1 post-contrast sequences",
+          "target": "Ring-enhancing mass with central necrosis; irregular thick enhancing rim; significant surrounding T2/FLAIR edema; hemorrhagic components; butterfly pattern if crossing corpus callosum; multifocal in 2-5%",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
+          "timing": "Within 48h; rule out metastatic disease to brain (brain metastasis is more common than GBM); staging",
+          "target": "No extracranial primary malignancy",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Pre-operative baseline; QTc for anti-emetics and targeted therapies",
+          "target": "Normal",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Pre-operative clearance; lung primary exclusion (most common source of brain metastases)",
+          "target": "No lung mass; no effusion",
+          "contraindications": "Pregnancy (shield)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MR perfusion (DSC or DCE) (CPT 70553)",
+          "timing": "With diagnostic MRI or pre-operative; differentiates high-grade glioma from low-grade or lymphoma",
+          "target": "Elevated rCBV (>1.75) in enhancing region = high-grade glioma; hot spot mapping for biopsy targeting",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MR spectroscopy (MRS) (CPT 76390)",
+          "timing": "With diagnostic MRI; differentiates tumor from abscess or radiation necrosis",
+          "target": "Elevated choline (Cho), reduced N-acetylaspartate (NAA), elevated Cho/NAA ratio (>2.0), elevated Cho/Cr ratio; lipid/lactate peak suggests necrosis/high grade",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Diffusion tensor imaging (DTI) / Tractography",
+          "timing": "Pre-operative planning; white matter tract mapping relative to tumor",
+          "target": "Motor tract (corticospinal tract), language pathways (arcuate fasciculus), visual pathways relative to tumor margins; guides extent of resection",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Functional MRI (fMRI) (CPT 70554)",
+          "timing": "Pre-operative; motor and language cortex mapping for tumors near eloquent areas",
+          "target": "Motor cortex activation; language lateralization (Broca, Wernicke); visual cortex if occipital location",
+          "contraindications": "Same as MRI; requires patient cooperation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI spine (whole) with contrast (CPT 72156+72157+72158)",
+          "timing": "If spinal symptoms present; staging for drop metastases (rare in GBM but occurs)",
+          "target": "Leptomeningeal enhancement; drop metastases",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PET/CT (FDG or amino acid-based: FET, FDOPA) (CPT 78816)",
+          "timing": "Differentiating tumor from treatment-related changes; FET-PET superior to FDG for brain tumors; biopsy target guidance",
+          "target": "FET uptake TBR >1.6 suggests tumor; hot spot for biopsy targeting; useful in recurrence vs. pseudoprogression",
+          "contraindications": "Pregnancy; uncontrolled diabetes (FDG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Intraoperative MRI (iMRI)",
+          "timing": "During craniotomy at centers with iMRI capability",
+          "target": "Real-time assessment of extent of resection; residual enhancing tumor identification; enables additional resection during same surgery",
+          "contraindications": "Same as MRI; equipment compatibility",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Awake craniotomy mapping",
+          "timing": "For tumors in eloquent cortex (motor strip, language areas); requires patient cooperation",
+          "target": "Direct cortical stimulation to define functional boundaries; enables maximal safe resection",
+          "contraindications": "Unable to cooperate; severe aphasia; anxiety precluding awake procedure",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnetoencephalography (MEG)",
+          "timing": "Pre-operative functional mapping; alternative to fMRI when fMRI not feasible",
+          "target": "Language and motor cortex localization; epileptogenic focus mapping",
+          "contraindications": "Metal implants (some); limited availability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Thallium SPECT",
+          "timing": "When MR perfusion/spectroscopy equivocal for recurrence vs. radiation necrosis",
+          "target": "Increased uptake = viable tumor; decreased uptake = necrosis",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Dexamethasone (vasogenic edema)",
+          "route": "IV/PO",
+          "indication": "Vasogenic edema from tumor; symptomatic mass effect; reduce peritumoral edema to improve neurologic function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV/PO q6h; moderate symptoms: 4-8 mg/day; severe edema/herniation: 10 mg IV bolus then 4-8 mg q6h (up to 16-24 mg/day); taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI while on steroids; symptomatic improvement typically within 24-72h",
+            "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes (relative); psychosis history (relative)",
+          "monitoring": "Glucose q6h (target <180 mg/dL), BP, mood/sleep, GI symptoms, signs of infection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Acute seizure termination; 20-40% of GBM patients present with seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total",
+            "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator",
+          "monitoring": "RR, O2 sat, BP, sedation level; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure - loading)",
+          "route": "IV",
+          "indication": "Anti-seizure medication loading for new seizures; preferred in brain tumor patients due to no CYP enzyme induction (does not reduce efficacy of steroids, chemotherapy, or targeted agents)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1500 mg",
+                "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load, then 500-1500 mg PO/IV BID; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, irritability); generally well tolerated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP with herniation signs; bridge to definitive surgical intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q4-6h; maintain serum osmolality <320 mOsm/kg",
+            "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial bleeding (relative)",
+          "monitoring": "Serum osmolality q6h, serum sodium, I/O, renal function",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP; alternative to mannitol; may be preferred in hypotensive patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "23.4% NaCl 30 mL via central line over 15 min OR 3% NaCl 250 mL IV over 30 min; target Na 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+          },
+          "contraindications": "Severe hypernatremia (Na >160)",
+          "monitoring": "Sodium q4-6h, serum osmolality, I/O, central line required for 23.4%",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Airway management (obtunded patient)",
+          "route": "-",
+          "indication": "GCS <=8; impending herniation; respiratory compromise",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per RSI protocol",
+                "orderSentence": "Airway management (obtunded patient) Per RSI protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Intubation per RSI protocol; elevate HOB 30 degrees; maintain PaCO2 30-35 mmHg (brief hyperventilation as bridge only)",
+            "orderSentence": "Airway management (obtunded patient) Per RSI protocol -"
+          },
+          "contraindications": "None in emergency",
+          "monitoring": "O2 sat, ETCO2, hemodynamics",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin (DVT prophylaxis)",
+          "route": "SC",
+          "indication": "Brain tumor patients have 20-30% VTE risk; sequential compression devices immediately; pharmacologic prophylaxis within 24-48h post-operatively",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Enoxaparin 40 mg SC daily or heparin 5000 units SC q8h; start within 24-48h unless hemorrhagic or planned surgery within 24h; post-craniotomy restart per neurosurgery (typically 24-48h)",
+            "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+          },
+          "contraindications": "Active intracranial hemorrhage; planned surgery within 24h",
+          "monitoring": "Platelet count; signs of bleeding",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole (stress ulcer prophylaxis)",
+          "route": "PO/IV",
+          "indication": "GI bleed prevention while on dexamethasone; combined corticosteroid + critical illness increases risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pantoprazole 40 mg IV/PO daily OR omeprazole 20 mg PO daily; continue throughout steroid course",
+            "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam (maintenance)",
+          "route": "PO",
+          "indication": "Seizure prevention after first seizure; NO prophylactic AEDs in patients without seizures (AAN guideline)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate by 500 mg/day q1-2 weeks to seizure control; max 3000 mg/day; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, depression, irritability), somnolence; generally well tolerated; no drug interactions with chemotherapy",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Alternative or adjunct AED for seizures; minimal drug interactions with chemotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Lacosamide 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; titrate by 50 mg/dose weekly; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg PO"
+          },
+          "contraindications": "PR interval >200 ms; 2nd/3rd degree AV block; severe hepatic impairment",
+          "monitoring": "ECG at baseline and with dose changes; PR interval monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO/IV",
+          "indication": "Second-line AED; some preclinical data suggesting synergy with temozolomide via HDAC inhibition (clinical significance uncertain)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate by 250 mg q3-5 days to therapeutic level (50-100 mcg/mL); max 60 mg/kg/day",
+            "orderSentence": "Valproic acid 250 mg PO"
+          },
+          "contraindications": "Hepatic disease; mitochondrial disorders (Alpers syndrome); pregnancy (teratogenic); urea cycle disorders; pancreatitis history",
+          "monitoring": "LFTs at baseline and periodically; ammonia if AMS; CBC (thrombocytopenia may limit chemotherapy); VPA level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting from elevated ICP, chemotherapy, or radiation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO q8h PRN nausea; max 24 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; concurrent use of QT-prolonging agents",
+          "monitoring": "QTc if risk factors; serotonin syndrome risk with SSRIs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Headache from elevated ICP; avoid NSAIDs peri-operatively due to bleeding risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN headache; max 3 g/day (2 g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (taper)",
+          "route": "PO",
+          "indication": "Transition from IV to PO; taper as soon as clinically feasible to minimize steroid side effects; taper after surgery and/or after radiation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Dexamethasone (taper) 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 2 mg every 3-5 days (e.g., 16 to 12 to 8 to 6 to 4 to 2 to 1 to off); slower taper if symptoms recur; monitor for adrenal insufficiency if >3 weeks of use",
+            "orderSentence": "Dexamethasone (taper) 4 mg PO"
+          },
+          "contraindications": "Symptom recurrence (hold taper, reassess)",
+          "monitoring": "Glucose, BP, mood, steroid myopathy (proximal weakness may mimic disease progression), immunosuppression, osteoporosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insulin (steroid-induced hyperglycemia)",
+          "route": "SC/IV",
+          "indication": "Glucose management while on dexamethasone; 50-60% of patients on dexamethasone develop hyperglycemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Variable",
+                "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Fingerstick glucose q6h; sliding scale insulin initially; basal-bolus if persistently >180 mg/dL; may need 2-3x baseline insulin on dexamethasone; anticipate glucose elevation 4-8h after steroid dose",
+            "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h (q1h if insulin drip)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TMP-SMX (PJP prophylaxis)",
+          "route": "PO",
+          "indication": "Pneumocystis prophylaxis during concurrent temozolomide + radiation (Stupp protocol); lymphopenia risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tablet",
+                "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tablet PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri) during concurrent chemoradiation and for 1 month after; continue if CD4 <200 or ALC <500",
+            "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tablet PO"
+          },
+          "contraindications": "Sulfa allergy (use atovaquone 1500 mg daily or dapsone 100 mg daily as alternatives); renal impairment",
+          "monitoring": "CBC; renal function; rash",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Steroid-induced osteoporosis prevention while on prolonged dexamethasone (>2 weeks)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg Ca + 800 IU Vit D",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on steroids",
+            "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones (relative)",
+          "monitoring": "Calcium level; vitamin D level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate (cancer-related fatigue)",
+          "route": "PO",
+          "indication": "Cancer-related fatigue; cognitive slowing from tumor or treatment; may improve alertness and concentration during chemoradiation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate (cancer-related fatigue) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID (morning and noon); titrate by 5 mg/dose q3-7 days; max 40 mg/day; avoid evening dosing; reassess need monthly",
+            "orderSentence": "Methylphenidate (cancer-related fatigue) 5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; tachyarrhythmia; severe anxiety; concurrent MAO inhibitors; glaucoma",
+          "monitoring": "Heart rate, BP, appetite, sleep quality, mood (agitation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine (neuroprotection during RT)",
+          "route": "PO",
+          "indication": "Cognitive protection during radiation therapy; RTOG 0614 showed reduced cognitive decline at 24 weeks (emerging evidence; not yet standard of care)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine (neuroprotection during RT) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; increase by 5 mg weekly (5 mg daily, 5 mg BID, 10 mg AM/5 mg PM, 10 mg BID); continue during and after radiation; max 20 mg/day",
+            "orderSentence": "Memantine (neuroprotection during RT) 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (CrCl <30); concurrent use of other NMDA antagonists",
+          "monitoring": "Renal function; dizziness; confusion; reassess benefit at 6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Bevacizumab (Avastin)",
+          "route": "IV",
+          "indication": "Recurrent glioblastoma; FDA-approved as monotherapy for recurrent GBM; anti-VEGF monoclonal antibody; reduces edema and may allow steroid taper; does not clearly improve overall survival but improves PFS and quality of life",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Bevacizumab (Avastin) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV every 2 weeks; infuse first dose over 90 min, then 60 min, then 30 min if tolerated; continue until progression or intolerable toxicity",
+            "orderSentence": "Bevacizumab (Avastin) 10 mg/kg IV"
+          },
+          "contraindications": "Uncontrolled hypertension; recent (28 days) surgery or wound healing complications; active hemorrhage; bowel perforation risk; pregnancy; severe proteinuria (>3.5 g/24h)",
+          "monitoring": "BP each visit; urinalysis for proteinuria q2-4 weeks; wound healing assessment; CBC; signs of GI perforation, thromboembolism; hold 28 days before and after surgery",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lomustine (CCNU)",
+          "route": "PO",
+          "indication": "Recurrent glioblastoma; alkylating agent; can be combined with bevacizumab; single agent option for recurrence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "110 mg/m2",
+                "orderSentence": "Lomustine (CCNU) 110 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "110 mg/m2 PO as single dose every 6 weeks; reduce to 100 mg/m2 if prior myelosuppression; take on empty stomach; do not repeat until platelets >100K and WBC >4K",
+            "orderSentence": "Lomustine (CCNU) 110 mg/m2 PO"
+          },
+          "contraindications": "Severe myelosuppression; platelets <100K; WBC <4K; hepatic/renal impairment; pregnancy",
+          "monitoring": "CBC with differential weekly for 6 weeks after each dose (nadir at 4-6 weeks); LFTs; renal function; pulmonary function (cumulative pulmonary toxicity)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bevacizumab + Lomustine (combination)",
+          "route": "IV/PO",
+          "indication": "Recurrent glioblastoma; EORTC 26101 trial showed PFS benefit (not OS) vs. lomustine alone; consider for good performance status patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bevacizumab 10 mg/kg q2wk + Lomustine 90 mg/m2 q6wk",
+                "orderSentence": "Bevacizumab + Lomustine (combination) Bevacizumab 10 mg/kg q2wk + Lomustine 90 mg/m2 q6wk IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Bevacizumab 10 mg/kg IV q2 weeks + Lomustine 90 mg/m2 PO q6 weeks (reduced dose when combined); monitor for combined toxicity",
+            "orderSentence": "Bevacizumab + Lomustine (combination) Bevacizumab 10 mg/kg q2wk + Lomustine 90 mg/m2 q6wk IV/PO"
+          },
+          "contraindications": "Per individual agents",
+          "monitoring": "Per individual agents; additional monitoring for combined myelosuppression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Temozolomide rechallenge",
+          "route": "PO",
+          "indication": "Recurrent GBM with prior temozolomide response; dose-dense or metronomic schedule; consider if long interval since initial treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg/m2",
+                "orderSentence": "Temozolomide rechallenge 75 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Dose-dense: 75-150 mg/m2 PO daily x 21 days of 28-day cycle; metronomic: 50 mg/m2 PO daily continuous; take on empty stomach 1h before bed",
+            "orderSentence": "Temozolomide rechallenge 75 mg/m2 PO"
+          },
+          "contraindications": "Severe myelosuppression; prior temozolomide intolerance; hypersensitivity to dacarbazine",
+          "monitoring": "CBC weekly for first 2 cycles, then q2 weeks; LFTs monthly; watch for cumulative lymphopenia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Re-resection (surgical)",
+          "route": "-",
+          "indication": "Recurrent GBM amenable to resection; symptomatic mass effect not responsive to medical management; good performance status (KPS >=70)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Maximal safe resection",
+                "orderSentence": "Re-resection (surgical) Maximal safe resection -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Maximal safe resection per neurosurgical assessment; consider 5-ALA fluorescence guidance; post-op MRI within 48h",
+            "orderSentence": "Re-resection (surgical) Maximal safe resection -"
+          },
+          "contraindications": "Poor functional status (KPS <50); eloquent cortex involvement precluding safe resection; diffuse/multifocal recurrence",
+          "monitoring": "Post-op MRI within 48h; neurologic exams; wound monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Re-irradiation (SRS or fractionated)",
+          "route": "-",
+          "indication": "Recurrent GBM; focal recurrence amenable to SRS; consider fractionated re-irradiation for larger volumes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 Gy",
+                "orderSentence": "Re-irradiation (SRS or fractionated) 15 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "SRS 12-18 Gy single fraction for focal lesions (<=3 cm); hypofractionated re-radiation (35 Gy in 10 fractions) for larger areas; consider cumulative brain dose constraints",
+            "orderSentence": "Re-irradiation (SRS or fractionated) 15 Gy -"
+          },
+          "contraindications": "Prior radiation dose limits exceeded; diffuse progression; brainstem tolerance",
+          "monitoring": "Radiation necrosis risk (advanced imaging with perfusion MRI q2-3 months); new neurologic deficits",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Chemotherapy / Targeted / Adjuvant)": [
+        {
+          "item": "Temozolomide - Concurrent with RT (Stupp Protocol Phase 1)",
+          "route": "PO",
+          "indication": "Standard of care for newly diagnosed GBM; concurrent with focal radiation (60 Gy in 30 fractions); Stupp et al. NEJM 2005 demonstrated OS benefit (14.6 vs. 12.1 months)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg/m2",
+                "orderSentence": "Temozolomide - Concurrent with RT (Stupp Protocol Phase 1) 75 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg/m2 PO daily throughout radiation (42 consecutive days including weekends/holidays); take on empty stomach 1 hour before bedtime; antiemetic 30-60 min before (ondansetron 8 mg); PJP prophylaxis (TMP-SMX) mandatory",
+            "orderSentence": "Temozolomide - Concurrent with RT (Stupp Protocol Phase 1) 75 mg/m2 PO"
+          },
+          "pretreatment": "CBC with differential at baseline; weekly CBC during concurrent phase; hepatic function; renal function; MGMT methylation status (predicts response but treatment given regardless); negative pregnancy test; no active infection",
+          "contraindications": "ANC <1500; platelets <100K; severe hepatic/renal impairment; known hypersensitivity to temozolomide or dacarbazine; pregnancy/breastfeeding",
+          "monitoring": "CBC weekly during concurrent phase; if ANC <1000 or platelets <50K, hold temozolomide until recovery; LFTs q2 weeks; PJP prophylaxis; watch for severe lymphopenia (CD4 <200)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Temozolomide - Adjuvant (Stupp Protocol Phase 2)",
+          "route": "PO",
+          "indication": "Standard adjuvant chemotherapy following concurrent chemoradiation; 6 cycles of dose-dense temozolomide",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg/m2",
+                "orderSentence": "Temozolomide - Adjuvant (Stupp Protocol Phase 2) 150 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Cycle 1: 150 mg/m2 PO days 1-5 of 28-day cycle; if tolerated (ANC >1500, platelets >100K), increase to 200 mg/m2 for cycles 2-6; take on empty stomach 1h before bedtime; antiemetic pre-medication; 6 cycles total",
+            "orderSentence": "Temozolomide - Adjuvant (Stupp Protocol Phase 2) 150 mg/m2 PO"
+          },
+          "pretreatment": "CBC on Day 22 of each cycle (nadir) and Day 1 of next cycle; hepatic function; renal function; adequate bone marrow recovery from concurrent phase",
+          "contraindications": "ANC <1500; platelets <100K on Day 1 of cycle; same as concurrent phase",
+          "monitoring": "CBC Day 1 and Day 22 of each cycle; LFTs monthly; MGMT methylation-positive patients have better response (median OS ~21 months vs. ~14 months); hold if ANC <1000 or platelets <50K until recovery; reduce dose by 50 mg/m2 for Grade 3-4 toxicity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation therapy (focal)",
+          "route": "-",
+          "indication": "Standard of care concurrent with temozolomide; 60 Gy in 30 fractions to tumor bed + 2cm margin; for GBM in all age groups with good functional status",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 Gy",
+                "orderSentence": "Radiation therapy (focal) 60 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "60 Gy in 30 fractions over 6 weeks; begin within 3-6 weeks of surgery; concurrent with temozolomide 75 mg/m2 daily; MRI-based treatment planning with T1-post-contrast and FLAIR for target delineation",
+            "orderSentence": "Radiation therapy (focal) 60 Gy -"
+          },
+          "pretreatment": "Simulation MRI within 2 weeks of starting RT; post-surgical MRI (within 48h of surgery) for planning; adequate wound healing; functional status assessment (KPS >=60)",
+          "contraindications": "Pregnancy; prior full-dose brain radiation (assess cumulative dose); very poor performance status (KPS <40) - consider hypofractionated or palliative",
+          "monitoring": "Weekly neurologic assessment during RT; MRI 4 weeks after RT completion (new baseline); then q2-3 months; watch for pseudoprogression (especially in MGMT methylated tumors) at 3-6 month post-RT MRI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation therapy (hypofractionated - elderly/poor KPS)",
+          "route": "-",
+          "indication": "Alternative for elderly patients (>65-70 years) or poor functional status; Perry et al. NEJM 2017 showed benefit of adding temozolomide to hypofractionated RT in elderly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 Gy",
+                "orderSentence": "Radiation therapy (hypofractionated - elderly/poor KPS) 40 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "40 Gy in 15 fractions (2.67 Gy/fraction) over 3 weeks; with or without concurrent temozolomide (75 mg/m2 daily); consider adjuvant temozolomide (6 cycles) if MGMT methylated",
+            "orderSentence": "Radiation therapy (hypofractionated - elderly/poor KPS) 40 Gy -"
+          },
+          "pretreatment": "Post-surgical MRI for planning; functional status assessment",
+          "contraindications": "Same as standard RT; very poor KPS (<30) - consider temozolomide alone or best supportive care",
+          "monitoring": "Same as standard RT but with adjusted imaging schedule",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tumor Treating Fields (TTFields / Optune)",
+          "route": "TOP",
+          "indication": "FDA-approved for newly diagnosed GBM as adjuvant with temozolomide; alternating electric fields (200 kHz) disrupt mitosis; EF-14 trial: OS 20.9 vs. 16.0 months with temozolomide alone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous",
+                "orderSentence": "Tumor Treating Fields (TTFields / Optune) Continuous TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "4 transducer arrays applied to shaved scalp; continuous use >=18h/day for optimal benefit; worn during adjuvant temozolomide phase and beyond; continue until progression",
+            "orderSentence": "Tumor Treating Fields (TTFields / Optune) Continuous TOP"
+          },
+          "pretreatment": "Scalp measured and arrays prescribed by trained provider; head shaving; patient education and training session; compliance monitoring device built into system",
+          "contraindications": "Active implanted medical device in the brain (DBS, programmable shunt with metallic parts); skull defect with no bone flap replacement; sensitivity to conductive hydrogel; pregnancy",
+          "monitoring": "Compliance monitoring (>=18h/day target; <75% compliance reduces benefit); scalp skin assessment q2 weeks initially then monthly (contact dermatitis in ~16%); treat skin irritation with topical corticosteroids and array repositioning; quality of life assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Temozolomide alone (elderly/poor KPS without RT)",
+          "route": "PO",
+          "indication": "Elderly patients (>70) or poor functional status (KPS 30-60) who cannot tolerate radiation; consider if MGMT methylated (better response); Wick et al. Lancet Oncol 2012 (NOA-08)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg/m2",
+                "orderSentence": "Temozolomide alone (elderly/poor KPS without RT) 150 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Standard 5/28 day dosing (as per adjuvant protocol); MGMT methylation status guides decision: methylated = temozolomide preferred; unmethylated = consider RT alone or best supportive care",
+            "orderSentence": "Temozolomide alone (elderly/poor KPS without RT) 150 mg/m2 PO"
+          },
+          "pretreatment": "CBC baseline and Day 22; MGMT methylation status; hepatic/renal function",
+          "contraindications": "Same as concurrent/adjuvant temozolomide",
+          "monitoring": "Same as adjuvant temozolomide",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery STAT consultation for surgical candidacy evaluation, maximal safe resection planning, and ICP management for all patients with suspected high-grade glioma",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuro-oncology consultation for molecular profiling interpretation, Stupp protocol initiation, and long-term treatment planning",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Radiation oncology consultation for treatment planning (60 Gy in 30 fractions or hypofractionated per age/KPS) to begin within 3-6 weeks post-surgery",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Multidisciplinary tumor board presentation for coordinated treatment planning including neurosurgery, neuro-oncology, radiation oncology, neuropathology, and neuroradiology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropathology consultation for comprehensive molecular profiling including IDH mutation, MGMT promoter methylation, TERT promoter mutation, EGFR amplification, +7/-10 chromosome status, and integrated WHO 2021 classification",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care consultation for symptom management, goals of care discussion, and advance directive completion given median survival of 14-16 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy for mobility assessment, fall prevention given steroid myopathy and neurologic deficits, and exercise program to mitigate deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive compensation strategies, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation if posterior fossa or brainstem involvement, and language assessment if dominant hemisphere tumor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consultation for insurance authorization, disability paperwork, caregiver support, and community resource coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology evaluation for baseline cognitive assessment before radiation and chemotherapy to monitor treatment-related decline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling if age <45 years, family history of cancer, or clinical suspicion for Li-Fraumeni or other cancer predisposition syndrome",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/psychology referral for depression, anxiety, and adjustment disorder management given diagnosis of malignant brain tumor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology consultation if visual field deficits, papilledema, or tumor near visual pathways",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology consultation if persistent steroid-induced hyperglycemia difficult to manage or hypothalamic/pituitary involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical trials evaluation for eligible patients at all stages including newly diagnosed (novel combinations) and recurrence (immunotherapy, targeted agents, novel delivery)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for new or worsening headache, sudden weakness, vision changes, speech difficulty, or seizures (may indicate tumor progression, hemorrhage, or increased intracranial pressure)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology and neurosurgery due to seizure risk, visual field deficits, and cognitive impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop dexamethasone abruptly as this may cause adrenal crisis; follow prescribed taper schedule exactly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take temozolomide on empty stomach 1 hour before bedtime with antiemetic pre-medication to minimize nausea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any fever, unusual bruising, or signs of infection while on chemotherapy as this may indicate dangerous myelosuppression requiring urgent evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For TTFields (Optune) users: maintain device use for at least 18 hours/day for optimal benefit; inspect scalp for skin irritation daily; contact device support team for technical issues",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a symptom diary documenting headaches, seizures, weakness, cognitive changes, and mood to track treatment response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Discuss advance directive and healthcare proxy designation given diagnosis and expected disease course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification indicating brain tumor diagnosis and seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid live vaccines during chemotherapy and steroid therapy due to immunosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-sodium diet while on dexamethasone to reduce fluid retention, edema, and hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood sugar monitoring and diabetic diet while on steroids to prevent steroid-induced hyperglycemia complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular low-impact exercise (walking, swimming, yoga) as tolerated to maintain strength, reduce steroid myopathy, and improve mood and quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall precautions at home including removal of trip hazards, use of handrails, non-slip mats, and night lights given focal deficits, steroid myopathy, and seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to optimize wound healing, radiation response, and reduce thrombotic risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol avoidance during chemotherapy to prevent hepatotoxicity and avoid seizure threshold lowering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CPAP compliance if obstructive sleep apnea present to prevent nocturnal hypoxia which may worsen cerebral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sun protection while on temozolomide due to photosensitivity risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day unless fluid restricted) during chemotherapy and steroid use to support renal function and prevent constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Brain metastases",
+      "features": "History of systemic malignancy; often multiple lesions (vs. GBM usually single); well-demarcated ring enhancement; located at gray-white junction; less infiltrative",
+      "tests": "CT chest/abdomen/pelvis; PET/CT for primary site; tissue biopsy (cytokeratin, TTF-1, melanoma markers); typically no IDH mutation, no GFAP expression"
+    },
+    {
+      "diagnosis": "Primary CNS lymphoma (PCNSL)",
+      "features": "Periventricular homogeneous enhancement (not ring-enhancing unless HIV); restricted diffusion on DWI; responds dramatically to corticosteroids (\"ghost tumor\"); immunocompromised patients",
+      "tests": "AVOID steroids before biopsy (may render non-diagnostic); DWI showing restricted diffusion; CSF flow cytometry; stereotactic biopsy; HIV testing; slit lamp exam for vitreous involvement"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Ring-enhancing with central restricted diffusion on DWI (bright DWI, dark ADC in cavity -- GBM does NOT show central restricted diffusion); thin smooth rim; fever, leukocytosis; recent ENT/dental/cardiac source",
+      "tests": "DWI is key differentiator (central restriction = abscess); MR spectroscopy (amino acid peaks: succinate, acetate); blood cultures; echocardiogram for endocarditis"
+    },
+    {
+      "diagnosis": "IDH-mutant astrocytoma (WHO grade 2-4)",
+      "features": "Younger patients (30-50 years); less aggressive imaging appearance; may lack ring enhancement; frontal lobe predilection; FLAIR mismatch sign in grade 2",
+      "tests": "IDH1/2 mutation testing (positive); ATRX loss; p53 overexpression; no EGFR amplification; no +7/-10; prognosis significantly better than IDH-wildtype GBM"
+    },
+    {
+      "diagnosis": "Oligodendroglioma (IDH-mutant, 1p/19q-codeleted)",
+      "features": "\"Fried egg\" histology; calcifications common; cortical involvement; T2-FLAIR mismatch less common; typically younger patients",
+      "tests": "IDH mutation (positive); 1p/19q codeletion (defining feature); calcifications on CT; distinct molecular profile from GBM"
+    },
+    {
+      "diagnosis": "Tumefactive multiple sclerosis",
+      "features": "Younger patients; incomplete ring enhancement (\"open ring sign\"); less mass effect relative to size; clinical history of MS symptoms; other demyelinating lesions",
+      "tests": "MRI: open ring enhancement; CSF oligoclonal bands; MOG/AQP4 antibodies; clinical dissemination in time and space; response to corticosteroids with resolution"
+    },
+    {
+      "diagnosis": "Toxoplasmosis (immunocompromised)",
+      "features": "HIV/AIDS with CD4 <100; multiple ring-enhancing lesions; basal ganglia predilection; eccentric target sign",
+      "tests": "Toxoplasma IgG; CD4 count; empiric treatment trial (response in 10-14 days); if no response then biopsy; Thallium SPECT"
+    },
+    {
+      "diagnosis": "Radiation necrosis",
+      "features": "History of prior brain radiation (typically 6-24 months post-treatment); enhancing lesion at prior radiation site; challenging to distinguish from recurrent GBM on conventional MRI",
+      "tests": "MR perfusion (low rCBV in necrosis vs. high in tumor); MR spectroscopy (elevated lipid/lactate, low choline in necrosis); FET-PET; biopsy if equivocal"
+    },
+    {
+      "diagnosis": "Cerebral infarct (subacute)",
+      "features": "Vascular territory distribution; ring enhancement at 1-4 weeks post-stroke; clinical history of acute onset; DWI conforming to vascular territory",
+      "tests": "Vascular territory distribution; DWI/ADC map evolution; clinical history; MRA/CTA showing vascular occlusion"
+    },
+    {
+      "diagnosis": "Gliomatosis cerebri pattern",
+      "features": "Diffuse infiltration involving >=3 lobes; minimal or no enhancement; widespread T2/FLAIR abnormality; no discrete mass",
+      "tests": "MRI showing diffuse T2/FLAIR without focal enhancing mass; biopsy from most abnormal region; molecular profiling"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Maximal safe resection improves overall survival in GBM",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Lacroix et al. J Neurosurg 2001; Sanai et al. J Neurosurg 2011"
+    },
+    {
+      "recommendation": "5-ALA fluorescence-guided surgery improves extent of resection",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Stummer et al. Lancet Oncol 2006"
+    },
+    {
+      "recommendation": "Concurrent temozolomide + radiation (Stupp protocol) standard of care for newly diagnosed GBM",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Stupp et al. NEJM 2005; Stupp et al. Lancet Oncol 2009 (5-year data)"
+    },
+    {
+      "recommendation": "MGMT promoter methylation predicts temozolomide response and overall survival",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Hegi et al. NEJM 2005"
+    },
+    {
+      "recommendation": "Tumor Treating Fields (TTFields) with adjuvant temozolomide improves OS in newly diagnosed GBM",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Stupp et al. JAMA 2017 (EF-14 trial)"
+    },
+    {
+      "recommendation": "Hypofractionated RT (40 Gy/15 fractions) + temozolomide beneficial in elderly GBM",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Perry et al. NEJM 2017"
+    },
+    {
+      "recommendation": "Temozolomide alone vs. RT alone in elderly GBM; treatment guided by MGMT status",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Wick et al. Lancet Oncol 2012 (NOA-08); Malmstrom et al. Lancet Oncol 2012 (Nordic trial)"
+    },
+    {
+      "recommendation": "Bevacizumab for recurrent GBM: PFS benefit, no OS benefit",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Friedman et al. J Clin Oncol 2009; Wick et al. Lancet Oncol 2017 (EORTC 26101)"
+    },
+    {
+      "recommendation": "Bevacizumab in newly diagnosed GBM: PFS benefit, no OS benefit",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Chinot et al. NEJM 2014 (AVAglio); Gilbert et al. NEJM 2014 (RTOG 0825)"
+    },
+    {
+      "recommendation": "WHO 2021 classification: IDH-wildtype glioblastoma defined by molecular criteria",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Louis et al. Neuro-Oncology 2021 (WHO CNS5)"
+    },
+    {
+      "recommendation": "TERT promoter mutation, EGFR amplification, +7/-10 as molecular diagnostic criteria for GBM",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Louis et al. Neuro-Oncology 2021 (WHO CNS5)"
+    },
+    {
+      "recommendation": "Prophylactic AEDs NOT recommended in brain tumor patients without seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Glantz et al. Neurology 2000 (AAN Practice Parameter); reaffirmed"
+    },
+    {
+      "recommendation": "Levetiracetam preferred AED in brain tumor patients (no CYP enzyme induction)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Rosati et al. J Neurooncol 2010; RANO guidelines"
+    },
+    {
+      "recommendation": "DVT prophylaxis safe in brain tumor patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Perry et al. Lancet 2010 (PRODIGE trial)"
+    },
+    {
+      "recommendation": "Dexamethasone for vasogenic edema; use minimum effective dose and taper",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Ryken et al. J Neurooncol 2010 (CNS systematic review)"
+    },
+    {
+      "recommendation": "Pseudoprogression occurs in 20-30% of GBM patients post-chemoradiation, especially MGMT methylated",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Brandsma et al. Lancet Oncol 2008; RANO criteria 2010"
+    },
+    {
+      "recommendation": "RANO response criteria for glioblastoma clinical assessment",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Wen et al. J Clin Oncol 2010"
+    },
+    {
+      "recommendation": "Lomustine for recurrent GBM; combination with bevacizumab PFS benefit",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Wick et al. Lancet Oncol 2017 (EORTC 26101)"
+    },
+    {
+      "recommendation": "PJP prophylaxis recommended during concurrent chemoradiation",
+      "evidenceLevel": "Class II, Level C",
+      "source": "Expert consensus; NCCN guidelines"
+    },
+    {
+      "recommendation": "Supratotal resection may improve outcomes beyond contrast-enhancing boundary",
+      "evidenceLevel": "Class II, Level C",
+      "source": "Li et al. World Neurosurg 2016; emerging evidence"
+    },
+    {
+      "recommendation": "MR spectroscopy and perfusion MRI differentiate tumor from treatment effects",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Law et al. AJNR 2003; various meta-analyses"
+    },
+    {
+      "recommendation": "Memantine may reduce cognitive decline during brain radiation therapy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Brown et al. Neuro-Oncology 2013 (RTOG 0614)"
+    },
+    {
+      "recommendation": "Methylphenidate for cancer-related fatigue",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Lower et al. Cancer 2009; Minton et al. J Clin Oncol 2013 (Cochrane review)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (motor, sensory, language, cognition, cranial nerves)",
+      "frequency": "q2-4h inpatient; each clinic visit",
+      "action": "STAT MRI if decline; increase dexamethasone; neurosurgery alert if herniation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h while on dexamethasone (q1h if insulin drip)",
+      "action": "Sliding scale to basal-bolus insulin; endocrine consult if refractory",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Weekly during concurrent chemoradiation; Day 1 and Day 22 of each adjuvant TMZ cycle",
+      "action": "Hold temozolomide if ANC <1000 or platelets <50K; PJP prophylaxis if CD4 <200 or ALC <500",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Hepatic function (LFTs)",
+      "frequency": "q2 weeks during concurrent TMZ; monthly during adjuvant TMZ",
+      "action": "Dose reduce or hold temozolomide; hepatology consult if Grade 3-4 elevation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Baseline; monthly during treatment",
+      "action": "Adjust renally-cleared medications (levetiracetam, temozolomide)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q6-12h inpatient; each visit outpatient",
+      "action": "SIADH workup if <130; fluid restriction; hypertonic saline if <125 or symptomatic",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRI brain with contrast",
+      "frequency": "Post-op within 48h; 4 weeks post-RT (new baseline); then q2-3 months",
+      "action": "Tumor board discussion if progression suspected; advanced imaging (perfusion, spectroscopy, PET); rebiopsy if equivocal",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Continuous in ICU; q4h on floor; each clinic visit",
+      "action": "Antihypertensives; especially important if on bevacizumab (target <140/90)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "KPS / ECOG performance status",
+      "frequency": "Each clinic visit",
+      "action": "KPS <40: consider transition to best supportive care/hospice",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Continuous inpatient; patient diary outpatient",
+      "action": "AED dose adjustment; consider cEEG if subclinical seizures suspected; verify medication compliance",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Body weight / nutritional status",
+      "frequency": "Weekly inpatient; each clinic visit",
+      "action": "Dietitian referral; consider appetite stimulants; evaluate for steroid myopathy vs. cachexia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression / anxiety screening (PHQ-9)",
+      "frequency": "Each clinic visit",
+      "action": "Psychiatry/psychology referral; SSRI initiation (avoid CYP interactions); supportive care",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TTFields compliance",
+      "frequency": "Each clinic visit",
+      "action": "Patient education; troubleshoot barriers; scalp care for contact dermatitis",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Urinalysis (proteinuria)",
+      "frequency": "q2-4 weeks if on bevacizumab",
+      "action": "24-hour urine if >2+; hold bevacizumab if nephrotic range (>3.5 g/24h)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "ICU admission",
+      "criteria": "GCS <=12; signs of herniation (pupil asymmetry, posturing, Cushing triad); acute hemorrhage into tumor; status epilepticus; post-craniotomy (first 24h per institutional protocol); respiratory compromise requiring intubation; hemodynamic instability"
+    },
+    {
+      "disposition": "General neurology/neurosurgery floor",
+      "criteria": "New diagnosis requiring workup and stabilization; symptomatic edema requiring IV dexamethasone with close glucose monitoring; post-craniotomy step-down from ICU (typically POD 1-2); seizures requiring AED optimization and observation; functional decline requiring inpatient rehabilitation planning"
+    },
+    {
+      "disposition": "Observation (<=24h)",
+      "criteria": "Known GBM with mild symptom worsening on stable regimen; MRI showing possible progression requiring multidisciplinary discussion; steroid dose adjustment with monitoring"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Neurologically stable for >=24h; seizure-free >=24h on oral AED; oral dexamethasone taper plan established with written instructions; glucose management plan in place; pain controlled on oral medications; treatment plan established with scheduled appointments (neurosurgery, neuro-oncology, radiation oncology within 1-2 weeks); safe ambulation and ADLs or adequate caregiver; patient/family education completed"
+    },
+    {
+      "disposition": "Transfer to higher level care",
+      "criteria": "Need for neurosurgical expertise not available; tumor board or neuro-oncology consultation not available; need for specialized intraoperative monitoring (iMRI, awake craniotomy); clinical trial access at tertiary center"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant post-operative neurologic deficits (hemiparesis, aphasia, cognitive impairment) requiring intensive rehabilitation before outpatient treatment can begin; KPS 40-60 with rehabilitation potential"
+    },
+    {
+      "disposition": "Palliative care / Hospice",
+      "criteria": "End-stage GBM with progressive decline despite treatment; KPS <30; exhausted reasonable treatment options; patient/family goals aligned with comfort-focused care; no longer candidate for disease-directed therapy"
+    }
+  ]
+}

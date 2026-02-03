@@ -1,0 +1,1728 @@
+{
+  "id": "tb-meningitis",
+  "title": "Tuberculous Meningitis",
+  "version": "1.1",
+  "icd10": [
+    "** A17.0 (Tuberculous meningitis)"
+  ],
+  "scope": "** Diagnosis, anti-tuberculous treatment, adjunctive corticosteroids, and monitoring of tuberculous meningitis in adults. Includes BMRC staging, CSF analysis, empiric treatment initiation, RIPE therapy with CNS modifications, management of hydrocephalus, paradoxical reaction/IRIS, and prolonged treatment course monitoring. Excludes pediatric TBM, spinal TB (Pott disease), tuberculomas managed surgically, and HIV-specific ART initiation protocols (though HIV co-infection is addressed).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; anemia common in chronic TB; leukocytosis or leukopenia; lymphopenia in advanced disease",
+          "target": "Mild leukocytosis or normal; lymphopenia suggests advanced disease",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Baseline renal/hepatic function BEFORE starting RIPE therapy (isoniazid, rifampin, pyrazinamide all hepatotoxic); electrolytes for SIADH",
+          "target": "Normal; document baseline ALT/AST for hepatotoxicity monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (paired with CSF) (CPT 82947)",
+          "rationale": "CSF:serum glucose ratio is critical for TB meningitis diagnosis (typically <0.5)",
+          "target": "Document paired value with LP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures x2 (CPT 87040)",
+          "rationale": "Exclude concurrent bacteremia; disseminated TB can be cultured from blood (mycobacterial blood cultures separately)",
+          "target": "No bacterial growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT) (CPT 85610+85730)",
+          "rationale": "Before LP; coagulopathy assessment; DIC in severe sepsis",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Elevated in active TB; nonspecific but supports infectious/inflammatory process",
+          "target": "Elevated (often >50 mm/h)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; elevated in active TB; monitor treatment response",
+          "target": "Elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Serum sodium (CPT 84295)",
+          "rationale": "SIADH is common complication of TBM (up to 45% of cases); cerebral salt wasting also reported",
+          "target": "135-145 mEq/L; watch for hyponatremia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "rationale": "SIADH evaluation when hyponatremia present",
+          "target": "280-295 mOsm/kg",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Low-to-moderate elevation in TB (typically <2); helps distinguish from acute bacterial meningitis where procalcitonin is typically >2",
+          "target": "Mildly elevated (<2 ng/mL favors TB over bacterial)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV co-infection in 50-70% of TBM in endemic areas; affects prognosis, treatment (drug interactions with ART), and IRIS risk",
+          "target": "Document result; if positive: CD4 count, viral load",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CD4 count (if HIV positive) (CPT 86360)",
+          "rationale": "Degree of immunosuppression guides prognosis and ART timing",
+          "target": "Document level",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HIV viral load (if HIV positive) (CPT 87536)",
+          "rationale": "Baseline before ART initiation",
+          "target": "Document level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "QuantiFERON-TB Gold Plus (IGRA) (CPT 86480)",
+          "rationale": "Positive supports TB diagnosis but CANNOT rule out TBM if negative (sensitivity only 50-70% in active TB, lower in immunocompromised); negative IGRA does NOT exclude TBM",
+          "target": "Positive supports diagnosis; negative does NOT rule out TBM",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Tuberculin skin test (PPD) (CPT 86580)",
+          "rationale": "Same limitations as IGRA; up to 50% false negative in active TBM; immunosuppression further reduces sensitivity",
+          "target": "Positive supports diagnosis; negative does NOT rule out TBM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "rationale": "Pyrazinamide causes hyperuricemia; baseline needed",
+          "target": "Document baseline; expect elevation on treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen (CPT 87340)",
+          "rationale": "Chronic hepatitis B increases hepatotoxicity risk with RIPE therapy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 86803)",
+          "rationale": "Chronic hepatitis C increases hepatotoxicity risk with RIPE therapy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine osmolality and sodium",
+          "rationale": "Confirm SIADH if hyponatremia present (urine osm >100, urine Na >40 with low serum Na)",
+          "target": "Evaluate if hyponatremic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Mycobacterial blood cultures (CPT 87116)",
+          "rationale": "Disseminated TB (miliary); especially in HIV co-infection",
+          "target": "M. tuberculosis growth (takes 2-6 weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Serum cortisol (random) (CPT 82533)",
+          "rationale": "Adrenal insufficiency from TB (adrenal involvement in disseminated disease); rifampin accelerates cortisol metabolism",
+          "target": ">18 µg/dL (random stress level)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Sputum AFB smear and culture x3 (CPT 87116)",
+          "rationale": "Active pulmonary TB (present in 30-50% of TBM cases); aids in obtaining drug susceptibility",
+          "target": "AFB positive supports disseminated TB; culture for sensitivities",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "GeneXpert MTB/RIF on sputum",
+          "rationale": "Rapid molecular detection of pulmonary TB and rifampin resistance",
+          "target": "M. tuberculosis detected; rifampin susceptible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Drug susceptibility testing (DST) on positive cultures",
+          "rationale": "Guide therapy if drug-resistant TB suspected (MDR-TB, XDR-TB)",
+          "target": "Pan-susceptible ideal; document resistance pattern",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Metagenomic next-generation sequencing (mNGS) of CSF",
+          "rationale": "Culture-negative cases; atypical presentations; when molecular and culture methods fail",
+          "target": "Mycobacterium tuberculosis complex identified",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Cryptococcal antigen (serum and CSF) (CPT 87327)",
+          "rationale": "Exclude concurrent or alternative fungal meningitis (especially in HIV with CD4 <100)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Serum angiotensin-converting enzyme (ACE)",
+          "rationale": "Neurosarcoidosis in differential (chronic basilar meningitis with cranial neuropathies)",
+          "target": "Normal (elevated in sarcoidosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (serum) (CPT 86592)",
+          "rationale": "Neurosyphilis in differential for chronic meningitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated in 50-80% of TBM; monitor for hydrocephalus and ICP",
+          "target": "Typically 100-300 mm H2O (mildly to moderately elevated); markedly elevated suggests hydrocephalus or mass effect",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Lymphocytic pleocytosis is hallmark of TBM; early disease may show neutrophil predominance transitioning to lymphocytic over days",
+          "target": "WBC 100-500 cells/uL (lymphocyte predominant, typically 60-90% lymphocytes); early cases may have neutrophil predominance; very low counts (<50) or very high (>1000) atypical",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Markedly elevated protein is characteristic of TBM (higher than viral, comparable to bacterial)",
+          "target": "Elevated 100-500+ mg/dL (often >100; can exceed 500 in advanced cases with subarachnoid block)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Very low CSF glucose is characteristic (CSF:serum ratio <0.5); distinguishes from viral meningitis where glucose is normal",
+          "target": "Low: <45 mg/dL or CSF:serum ratio <0.5 (often <0.3); glucose may be extremely low (<20 mg/dL) in advanced cases",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gram stain (CPT 87205)",
+          "rationale": "Exclude bacterial meningitis; should be NEGATIVE in TB meningitis",
+          "target": "No organisms (Gram stain does not detect mycobacteria)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Bacterial culture and sensitivity (CPT 87070)",
+          "rationale": "Exclude bacterial meningitis",
+          "target": "No bacterial growth",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "AFB smear (Ziehl-Neelsen stain) (CPT 87116)",
+          "rationale": "Low sensitivity (10-20%) but highly specific if positive; larger CSF volume (>6 mL) and prolonged microscopy improve yield",
+          "target": "AFB detected; negative does NOT rule out TBM (sensitivity only 10-20% on standard smear)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF TB culture (Lowenstein-Jensen and liquid BACTEC) (CPT 87116)",
+          "rationale": "GOLD STANDARD for diagnosis; sensitivity 50-80% but takes 2-6 weeks for growth; ALWAYS send regardless of smear result",
+          "target": "Mycobacterium tuberculosis growth; provides drug susceptibility testing",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "GeneXpert MTB/RIF (CSF) (CPT 87556)",
+          "rationale": "Rapid molecular PCR — sensitivity 60-80% for TBM (lower than pulmonary TB); specificity >98%; also detects rifampin resistance; results in 2 hours",
+          "target": "M. tuberculosis detected; rifampin susceptible; negative does NOT rule out TBM",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF adenosine deaminase (ADA) (CPT 86235)",
+          "rationale": "Elevated ADA supports TB diagnosis; >8-10 U/L suggests TBM; sensitivity 70-90%, specificity 80-90%; less specific in HIV co-infection",
+          "target": "Elevated: >8-10 U/L strongly supports TBM (some use cutoff >6 U/L); very high levels (>20) highly suggestive",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF lactate (CPT 83605)",
+          "rationale": "Elevated in TBM (>3.5 mmol/L); helps distinguish from viral meningitis",
+          "target": "Elevated >3.5 mmol/L (similar to bacterial meningitis)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
+          "rationale": "Rapid exclusion of common bacterial and viral pathogens; does NOT detect M. tuberculosis",
+          "target": "Negative for other pathogens (positive for another pathogen suggests alternative diagnosis)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cryptococcal antigen (CSF) (CPT 87327)",
+          "rationale": "Exclude cryptococcal meningitis (especially HIV co-infection, similar CSF profile)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "rationale": "Exclude neurosyphilis (chronic meningitis differential)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Exclude leptomeningeal carcinomatosis (chronic meningitis with low glucose)",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands, IgG index (CPT 83916)",
+          "rationale": "Intrathecal antibody production; may be positive in TBM but nonspecific",
+          "target": "May be positive (nonspecific)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB culture (repeat LP)",
+          "rationale": "Repeat LP at 2-4 weeks if initial cultures negative but clinical suspicion remains high; larger volume (20+ mL) improves yield",
+          "target": "M. tuberculosis growth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate — before LP to exclude mass effect, hydrocephalus",
+          "target": "Hydrocephalus (present in 60-80% of TBM); basilar enhancement; tuberculomas; cerebral edema; infarcts (especially in basal ganglia and internal capsule territory)",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (PA and lateral) (CPT 71046)",
+          "timing": "Within hours of presentation",
+          "target": "Miliary pattern (up to 30-50%); upper lobe infiltrates; hilar/mediastinal lymphadenopathy; pleural effusion; may be NORMAL in isolated CNS TB",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24-48h; STAT if available and clinical deterioration",
+          "target": "Basilar meningeal enhancement (most characteristic finding); hydrocephalus; tuberculomas (ring-enhancing lesions); periventricular infarcts (vasculitis of perforating arteries); cranial nerve enhancement; spinal cord involvement",
+          "contraindications": "Pacemaker, metallic implants",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT head with contrast (CPT 70460)",
+          "timing": "If MRI unavailable",
+          "target": "Basilar meningeal enhancement; hydrocephalus; ring-enhancing tuberculomas; infarcts",
+          "contraindications": "Contrast allergy, renal impairment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA (MR angiography) of head (CPT 70544)",
+          "timing": "If vasculitis/stroke suspected",
+          "target": "Narrowing or occlusion of basal arteries (especially middle cerebral artery branches, lenticulostriate arteries); TB vasculitis",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "MRI spine with contrast (CPT 72156)",
+          "timing": "If spinal symptoms present (radiculopathy, myelopathy, bladder dysfunction)",
+          "target": "Spinal arachnoiditis; spinal tuberculomas; epidural abscess; cord compression",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CT chest (CPT 71260)",
+          "timing": "If chest X-ray abnormal or high suspicion for pulmonary/miliary TB",
+          "target": "Miliary nodules; tree-in-bud pattern; lymphadenopathy; cavitary disease",
+          "contraindications": "Contrast allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Continuous EEG (CPT 95700)",
+          "timing": "If altered consciousness with suspected seizures",
+          "target": "Seizure activity, non-convulsive status epilepticus, focal slowing",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "On admission",
+          "target": "Baseline; QTc assessment (fluoroquinolones can prolong QTc if used); electrolyte abnormalities",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT/MR venography (CPT 70554)",
+          "timing": "If venous sinus thrombosis suspected (worsening headache, papilledema, seizures)",
+          "target": "Venous sinus thrombosis (complication of meningitis)",
+          "contraindications": "Same as MRI/contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Conventional cerebral angiography (CPT 36224)",
+          "timing": "If vasculitis suspected and MRA inconclusive",
+          "target": "Small vessel vasculitis pattern",
+          "contraindications": "Catheter-related complications; contrast",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "CT abdomen/pelvis (CPT 74177)",
+          "timing": "If disseminated TB suspected (hepatosplenic, adrenal, peritoneal)",
+          "target": "Hepatosplenic granulomas; adrenal enlargement; peritoneal thickening; lymphadenopathy",
+          "contraindications": "Contrast allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "ICP monitoring (EVD placement)",
+          "timing": "If clinical signs of elevated ICP; declining GCS despite treatment",
+          "target": "ICP <22 mmHg; CPP >60 mmHg",
+          "contraindications": "Coagulopathy (correct first)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent — Anti-Tuberculous Therapy (RIPE + Pyridoxine)": [
+        {
+          "item": "Isoniazid (INH)",
+          "route": "PO/IV",
+          "indication": "First-line anti-TB therapy; excellent CNS penetration (CSF levels 80-90% of serum); bactericidal against M. tuberculosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg daily (max 300 mg)",
+                "orderSentence": "Isoniazid (INH) 5 mg/kg daily (max 300 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg/kg PO/IV daily (max 300 mg/day); some experts use 10 mg/kg for first 2 months for enhanced CNS penetration; duration 12 months",
+            "orderSentence": "Isoniazid (INH) 5 mg/kg daily (max 300 mg) PO"
+          },
+          "contraindications": "Acute hepatic disease; severe hepatic impairment; prior INH hepatotoxicity; caution with alcohol use",
+          "monitoring": "LFTs (ALT/AST) at baseline, 2 weeks, then monthly; hold if ALT >5x ULN (asymptomatic) or >3x ULN with symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rifampin (RIF)",
+          "route": "PO/IV",
+          "indication": "First-line anti-TB therapy; bactericidal; moderate CNS penetration (10-20% of serum in inflamed meninges); critical for sterilizing activity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg daily (max 600 mg)",
+                "orderSentence": "Rifampin (RIF) 10 mg/kg daily (max 600 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg/kg PO/IV daily (max 600 mg/day); some experts recommend 15 mg/kg (max 900 mg) for TBM due to lower CNS penetration; take on empty stomach; IV formulation available for patients unable to take PO",
+            "orderSentence": "Rifampin (RIF) 10 mg/kg daily (max 600 mg) PO"
+          },
+          "contraindications": "Severe hepatic disease; concurrent protease inhibitors (major drug interactions); porphyria",
+          "monitoring": "LFTs at baseline, 2 weeks, monthly; CBC monthly (rare thrombocytopenia); orange discoloration of bodily fluids (warn patient); EXTENSIVE drug interactions (warfarin, OCPs, antiretrovirals, steroids)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pyrazinamide (PZA)",
+          "route": "PO",
+          "indication": "First-line anti-TB therapy; excellent CNS penetration; most effective sterilizing agent in first 2 months; bactericidal at acidic pH (in caseous granulomas)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg/kg daily (max 2000 mg)",
+                "orderSentence": "Pyrazinamide (PZA) 25 mg/kg daily (max 2000 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg/kg PO daily (max 2000 mg/day); round to nearest 250 mg; duration: 2 months (intensive phase only)",
+            "orderSentence": "Pyrazinamide (PZA) 25 mg/kg daily (max 2000 mg) PO"
+          },
+          "contraindications": "Severe hepatic disease; acute gout (causes hyperuricemia); porphyria",
+          "monitoring": "LFTs at baseline, 2 weeks, monthly during PZA use; uric acid (expect elevation — treat only symptomatic gout); joint pain assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ethambutol (EMB)",
+          "route": "PO",
+          "indication": "First-line anti-TB therapy; bacteriostatic; included to prevent emergence of drug resistance during intensive phase; POOR CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg daily (max 1600 mg)",
+                "orderSentence": "Ethambutol (EMB) 15-20 mg/kg daily (max 1600 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15-20 mg/kg PO daily (max 1600 mg/day); duration: 2 months (intensive phase); some experts substitute ethionamide (better CNS penetration) for TBM",
+            "orderSentence": "Ethambutol (EMB) 15-20 mg/kg daily (max 1600 mg) PO"
+          },
+          "contraindications": "Optic neuritis (pre-existing); renal impairment (dose adjust, renally cleared); visual impairment that prevents acuity monitoring",
+          "monitoring": "Visual acuity and color vision (Ishihara plates) at baseline, then monthly; discontinue IMMEDIATELY if visual symptoms develop (optic neuritis); renal function for dose adjustment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pyridoxine (vitamin B6)",
+          "route": "PO",
+          "indication": "Prevention of isoniazid-induced peripheral neuropathy; ALWAYS co-prescribe with INH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg daily",
+                "orderSentence": "Pyridoxine (vitamin B6) 25-50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO daily throughout INH therapy; use 50 mg daily if HIV co-infection, diabetes, alcoholism, malnutrition, or pre-existing neuropathy",
+            "orderSentence": "Pyridoxine (vitamin B6) 25-50 mg daily PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Clinical neuropathy assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (Thwaites protocol)",
+          "route": "IV then PO",
+          "indication": "Adjunctive corticosteroid for ALL BMRC stages — reduces mortality by 30% (NNT ~5 for stage II/III); reduces inflammation, cerebral edema, and vasculitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "See Appendix A for detailed Thwaites protocol",
+                "orderSentence": "Dexamethasone (Thwaites protocol) See Appendix A for detailed Thwaites protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "BMRC Stage I: 0.3 mg/kg/day IV x 4 weeks, then taper PO over 4 weeks. BMRC Stage II-III: 0.4 mg/kg/day IV x 4 weeks, then taper PO over 4 weeks. Total steroid duration: 6-8 weeks. Start simultaneously with anti-TB therapy",
+            "orderSentence": "Dexamethasone (Thwaites protocol) See Appendix A for detailed Thwaites protocol IV"
+          },
+          "contraindications": "Active GI bleeding (relative); uncontrolled diabetes (relative — manage glucose aggressively); concurrent untreated strongyloides (dissemination risk — screen in endemic areas)",
+          "monitoring": "Glucose q6h while on IV steroids; blood pressure; GI prophylaxis; mood/psychiatric effects; infection surveillance; taper slowly (do NOT stop abruptly)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Fever reduction and headache; avoid NSAIDs due to hepatotoxicity risk with RIPE therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 3g/day (reduced from 4g due to concurrent hepatotoxic medications)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe hepatic disease; concurrent RIPE therapy warrants reduced max dose (3g/day)",
+          "monitoring": "Temperature; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV/PO",
+          "indication": "Seizure management (seizures occur in 20-30% of TBM); preferred ASM due to minimal hepatic metabolism (important with hepatotoxic RIPE therapy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day; preferred over phenytoin because no significant hepatic metabolism or CYP interactions with RIPE",
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust for CrCl <50)",
+          "monitoring": "Renal function; behavioral side effects (irritability, depression)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (seizure rescue)",
+          "route": "IV",
+          "indication": "Active seizure rescue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min",
+            "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment",
+          "monitoring": "Respiratory status; SpO2; airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting (common with RIPE therapy, especially pyrazinamide)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation",
+          "monitoring": "QTc",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV/PO",
+          "indication": "GI prophylaxis (steroids + critical illness); gastroprotection during RIPE therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole 40 mg PO"
+          },
+          "contraindications": "Prolonged use C. diff risk",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Elevated ICP / cerebral edema management (before definitive hydrocephalus treatment)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h; maintain serum osm <320",
+            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; renal failure",
+          "monitoring": "Serum osmolality (<320); electrolytes; renal function; I/O",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation from hydrocephalus or cerebral edema",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV via central line over 10-20 min for acute herniation",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access; hypernatremia (Na >160)",
+          "monitoring": "Na (target 145-155); osmolality; neurologic exam",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis (prolonged hospitalization and immobility)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start when no active hemorrhagic complications and platelet count adequate",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active bleeding; thrombocytopenia (platelets <50K); hemorrhagic transformation on imaging",
+          "monitoring": "Platelets q3 days; signs of bleeding",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "DVT prophylaxis (start immediately on admission)",
+          "dosing": {
+            "instructions": "Apply bilaterally on admission",
+            "orderSentence": "Pneumatic compression devices - - - see dosing"
+          },
+          "contraindications": "Acute DVT in lower extremity",
+          "monitoring": "Skin checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fluid restriction",
+          "route": "-",
+          "indication": "SIADH management (if Na <130 with confirmed SIADH)",
+          "dosing": {
+            "instructions": "1-1.2 L/day fluid restriction",
+            "orderSentence": "Fluid restriction - - - see dosing"
+          },
+          "contraindications": "Dehydration; volume depletion",
+          "monitoring": "Na q6-8h; urine osm and Na; I/O",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Ethionamide",
+          "route": "PO",
+          "indication": "Alternative to ethambutol for CNS TB (BETTER CNS penetration than EMB); used when drug resistance suspected or EMB toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg daily (max 1000 mg)",
+                "orderSentence": "Ethionamide 15-20 mg/kg daily (max 1000 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15-20 mg/kg PO daily (max 1000 mg); often in divided BID dosing to reduce GI side effects; frequently used in place of EMB for TBM due to superior CNS penetration",
+            "orderSentence": "Ethionamide 15-20 mg/kg daily (max 1000 mg) PO"
+          },
+          "contraindications": "Severe hepatic disease (hepatotoxic — additive with INH/RIF); pregnancy (teratogenic)",
+          "monitoring": "LFTs monthly; TSH q3 months (causes hypothyroidism in up to 30%); GI tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Levofloxacin",
+          "route": "PO/IV",
+          "indication": "Drug-resistant TB (MDR-TB); rifampin-resistant TB detected on GeneXpert; alternative when first-line agents not tolerated; good CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750-1000 mg",
+                "orderSentence": "Levofloxacin 750-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "750-1000 mg PO/IV daily; superior CNS penetration among fluoroquinolones; critical component of MDR-TB regimen",
+            "orderSentence": "Levofloxacin 750-1000 mg PO"
+          },
+          "contraindications": "QT prolongation; tendinopathy; myasthenia gravis (worsens weakness); pregnancy",
+          "monitoring": "QTc; tendon symptoms; renal function; glucose (dysglycemia); C. diff",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Moxifloxacin",
+          "route": "PO/IV",
+          "indication": "Drug-resistant TB; alternative fluoroquinolone with excellent CNS penetration; useful in MDR-TB meningitis regimens",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Moxifloxacin 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO/IV daily; excellent CNS penetration; some studies suggest benefit even in drug-susceptible TBM (moxifloxacin-containing regimens)",
+            "orderSentence": "Moxifloxacin 400 mg PO"
+          },
+          "contraindications": "QT prolongation (more than levofloxacin); hepatic disease",
+          "monitoring": "QTc; LFTs; tendon symptoms",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Linezolid",
+          "route": "PO/IV",
+          "indication": "Drug-resistant TB (MDR/XDR-TB); excellent CNS penetration; reserve for resistant cases due to toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Linezolid 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg PO/IV daily (some protocols use 600 mg BID initially then reduce to daily); duration limited by toxicity (aim for <6 months if possible)",
+            "orderSentence": "Linezolid 600 mg PO"
+          },
+          "contraindications": "Concurrent serotonergic medications (serotonin syndrome); thrombocytopenia; myelosuppression",
+          "monitoring": "CBC weekly x 4, then monthly; peripheral neuropathy assessment monthly; visual acuity (optic neuropathy); lactic acidosis symptoms",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Amikacin",
+          "route": "IV/IM",
+          "indication": "Drug-resistant TB (MDR-TB); injectable agent for severe MDR-TBM; second-line injectable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg/kg daily (max 1000 mg)",
+                "orderSentence": "Amikacin 15 mg/kg daily (max 1000 mg) IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15 mg/kg IV/IM daily (max 1000 mg); adjust for renal function; duration typically 2-4 months",
+            "orderSentence": "Amikacin 15 mg/kg daily (max 1000 mg) IV"
+          },
+          "contraindications": "Renal impairment; hearing impairment; vestibular dysfunction; pregnancy (ototoxic to fetus)",
+          "monitoring": "Audiometry monthly; renal function weekly; drug levels; vestibular function",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Cycloserine",
+          "route": "PO",
+          "indication": "Drug-resistant TB (MDR/XDR-TB); CNS penetration adequate; frequent neuropsychiatric side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg",
+                "orderSentence": "Cycloserine 250-500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "250 mg PO BID initially, increase to 500 mg BID; max 1000 mg/day; take with pyridoxine 50-100 mg daily",
+            "orderSentence": "Cycloserine 250-500 mg PO"
+          },
+          "contraindications": "Seizure disorder (lowers seizure threshold); severe depression; psychosis; renal impairment",
+          "monitoring": "Psychiatric symptoms (depression, psychosis, suicidality); seizures; renal function; pyridoxine supplementation mandatory",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "VP shunt (ventriculoperitoneal)",
+          "route": "Surgical",
+          "indication": "Communicating hydrocephalus not responsive to medical management or serial LPs; definitive treatment for persistent hydrocephalus",
+          "dosing": {
+            "instructions": "Neurosurgical procedure; discuss timing with neurosurgery (some operate early, others wait for treatment response)",
+            "orderSentence": "VP shunt (ventriculoperitoneal) - Surgical - see dosing"
+          },
+          "contraindications": "Active ventriculitis (relative); coagulopathy (correct first)",
+          "monitoring": "Post-operative neuro checks; shunt function assessment; infection monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "External ventricular drain (EVD)",
+          "route": "Surgical",
+          "indication": "Acute obstructive hydrocephalus; emergency ICP management; temporizing measure before VP shunt",
+          "dosing": {
+            "instructions": "Neurosurgical procedure; bedside in ICU",
+            "orderSentence": "External ventricular drain (EVD) - Surgical - see dosing"
+          },
+          "contraindications": "Coagulopathy (correct first)",
+          "monitoring": "ICP continuous; CSF output and character; daily CSF sampling; ventriculitis surveillance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylprednisolone (paradoxical reaction/IRIS)",
+          "route": "IV",
+          "indication": "Paradoxical worsening (expanding tuberculomas, worsening symptoms) despite adequate anti-TB therapy; TB-IRIS in HIV patients starting ART",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone (paradoxical reaction/IRIS) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily x 3-5 days; followed by oral prednisone taper over 4-8 weeks; for severe paradoxical reaction or IRIS not responding to dexamethasone taper adjustment",
+            "orderSentence": "Methylprednisolone (paradoxical reaction/IRIS) 1000 mg IV"
+          },
+          "contraindications": "Uncontrolled infection; active GI bleeding",
+          "monitoring": "Glucose; blood pressure; infection surveillance; neuroimaging response",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Continuation Phase and Long-Term Treatment": [
+        {
+          "item": "Isoniazid (continuation phase)",
+          "route": "PO",
+          "indication": "Continuation phase anti-TB therapy; months 3-12 of treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg daily (max 300 mg)",
+                "orderSentence": "Isoniazid (continuation phase) 5 mg/kg daily (max 300 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg/kg PO daily (max 300 mg/day); continue for total duration 12 months; some experts recommend 18 months for severe disease or slow responders",
+            "orderSentence": "Isoniazid (continuation phase) 5 mg/kg daily (max 300 mg) PO"
+          },
+          "pretreatment": "Documented hepatic function baseline; LFTs stable on treatment",
+          "contraindications": "Severe hepatic disease; prior INH hepatotoxicity",
+          "monitoring": "LFTs monthly; peripheral neuropathy assessment; ensure pyridoxine co-administration",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rifampin (continuation phase)",
+          "route": "PO",
+          "indication": "Continuation phase anti-TB therapy; months 3-12 of treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg daily (max 600 mg)",
+                "orderSentence": "Rifampin (continuation phase) 10 mg/kg daily (max 600 mg) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg/kg PO daily (max 600 mg/day); continue for total 12 months; drug interactions must be reviewed at each visit",
+            "orderSentence": "Rifampin (continuation phase) 10 mg/kg daily (max 600 mg) PO"
+          },
+          "pretreatment": "Documented hepatic function baseline; drug interaction review",
+          "contraindications": "Severe hepatic disease; incompatible drug interactions",
+          "monitoring": "LFTs monthly; CBC q3 months; drug interaction review at each visit; compliance assessment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridoxine (vitamin B6 — continuation)",
+          "route": "PO",
+          "indication": "Neuropathy prevention throughout INH therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg daily",
+                "orderSentence": "Pyridoxine (vitamin B6 — continuation) 25-50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO daily for duration of INH therapy",
+            "orderSentence": "Pyridoxine (vitamin B6 — continuation) 25-50 mg daily PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None significant",
+          "monitoring": "Clinical neuropathy assessment at each visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation for anti-TB regimen optimization, drug resistance management, drug interactions (especially with HIV ART), and treatment duration decisions",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for seizure management, altered consciousness evaluation, cranial nerve palsy assessment, and vasculitis monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurosurgery consultation for hydrocephalus management (EVD placement, VP shunt evaluation), ICP monitoring, and tuberculoma with mass effect",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Critical care/ICU team for BMRC Stage II-III patients, respiratory failure, ICP management, and hemodynamic instability",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology for baseline visual acuity and color vision assessment before ethambutol initiation, and for optic neuritis evaluation if visual symptoms develop on treatment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology for concurrent pulmonary TB management, miliary TB, and respiratory compromise",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HIV specialist/infectious disease for ART initiation timing in co-infected patients (defer ART 2-8 weeks after starting anti-TB therapy to reduce IRIS risk)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for early mobilization, deconditioning prevention, and gait/balance training given prolonged hospitalization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive rehabilitation, and adaptive equipment if focal deficits persist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallowing assessment (if altered consciousness or cranial nerve palsies affect CN IX/X) and cognitive-communication evaluation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Social work for treatment adherence support, discharge planning, directly observed therapy (DOT) coordination, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Public health department notification for TB reporting (mandatory), contact tracing, DOT program enrollment, and treatment completion monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for depression/anxiety screening (chronic illness, social isolation), steroid-induced psychiatric effects, and cycloserine-induced neuropsychiatric symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Audiology for hearing assessment if aminoglycosides used (amikacin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if worsening headache, new confusion, seizure, vision changes, worsening weakness, or fever recurrence (may indicate treatment failure, hydrocephalus, or paradoxical reaction)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all anti-TB medications together at the same time daily, on an empty stomach (1 hour before or 2 hours after meals) for optimal absorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop medications early even if feeling better; incomplete treatment leads to relapse and drug resistance; total treatment duration is 12 months minimum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report immediately: nausea/vomiting, abdominal pain, jaundice (yellow skin/eyes), dark urine — these may indicate hepatotoxicity requiring medication adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any vision changes (blurred vision, difficulty distinguishing colors) immediately — ethambutol can cause optic neuritis (reversible if caught early)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report numbness, tingling, or burning in hands/feet (peripheral neuropathy) — dose adjustment of INH or increased pyridoxine may be needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rifampin causes orange-red discoloration of urine, tears, sweat, and saliva — this is expected and harmless; warn about permanent staining of contact lenses and clothing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol completely during treatment (increases hepatotoxicity risk with INH, RIF, and PZA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rifampin reduces effectiveness of oral contraceptives — use alternative contraception methods during treatment and for 1 month after completion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Directly Observed Therapy (DOT) will be arranged through the public health department to ensure treatment completion and monitor for side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up with neurology in 2-4 weeks after discharge, then monthly for first 3 months, then every 2-3 months until treatment completion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up with infectious disease at 2 weeks, then monthly during intensive phase, and every 1-2 months during continuation phase",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving restrictions if seizures occurred — do not drive until seizure-free per state law (typically 3-12 months) and cleared by neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Absolute alcohol avoidance for entire 12-month treatment duration to minimize hepatotoxicity risk from RIPE therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Contact tracing and screening for household contacts and close contacts (public health department coordinates; focus on pulmonary TB transmission)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Respiratory isolation precautions if concurrent pulmonary TB confirmed or suspected (airborne precautions, N95 respirator for healthcare workers, negative pressure room)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nutritional support and high-protein diet to support immune recovery (malnutrition common in TB patients and worsens outcomes)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Adequate hydration throughout treatment to reduce medication-related GI side effects and maintain renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to improve immune function and reduce respiratory complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mental health support for chronic illness burden, social stigma, prolonged treatment course, and medication side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Seizure safety precautions if seizures occurred: avoid heights, swimming alone, operating heavy machinery; ensure home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medication adherence support: pill organizers, DOT enrollment, family education, and addressing barriers to adherence (transportation, cost, side effects)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "Acute onset (hours-days, not weeks); higher fever; CSF neutrophilic pleocytosis with very low glucose; positive Gram stain (60-90%); rapid deterioration",
+      "tests": "CSF Gram stain and culture; BioFire ME panel; procalcitonin markedly elevated (>2); CSF lactate elevated; rapid response to antibiotics"
+    },
+    {
+      "diagnosis": "Cryptococcal meningitis",
+      "features": "Subacute/chronic; immunocompromised (HIV CD4 <100); headache predominant; minimal pleocytosis; CSF India ink positive; often less focal than TBM",
+      "tests": "CSF cryptococcal antigen (CrAg — very sensitive); India ink; fungal culture; serum CrAg; opening pressure often very high"
+    },
+    {
+      "diagnosis": "Viral meningitis",
+      "features": "Acute onset; self-limited; CSF lymphocytic but normal glucose and mildly elevated protein; less severe clinical course; no basilar enhancement",
+      "tests": "CSF enterovirus PCR; BioFire ME panel; normal glucose distinguishes from TBM; MRI normal"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Chronic meningitis; psychiatric symptoms; pupillary abnormalities (Argyll Robertson pupils); tabes dorsalis; history of STI; CSF may mimic TBM",
+      "tests": "CSF VDRL (specific); serum RPR/VDRL and FTA-ABS; response to penicillin"
+    },
+    {
+      "diagnosis": "Leptomeningeal carcinomatosis",
+      "features": "Known malignancy; multiple cranial neuropathies; progressive; CSF low glucose and high protein (mimics TBM); positive cytology",
+      "tests": "CSF cytology (repeat x3 for sensitivity); MRI with contrast (leptomeningeal enhancement); flow cytometry"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Chronic basilar meningitis; cranial nerve palsies (especially CN VII); hilar lymphadenopathy; elevated ACE; non-caseating granulomas",
+      "tests": "Serum and CSF ACE; chest CT (bilateral hilar adenopathy); biopsy (non-caseating granulomas vs caseating in TB); IGRA/PPD negative"
+    },
+    {
+      "diagnosis": "Fungal meningitis (Histoplasma, Coccidioides)",
+      "features": "Geographic exposure (Ohio/Mississippi Valley, Southwest US); chronic meningitis; CSF similar to TBM; endemic mycosis",
+      "tests": "Histoplasma/Coccidioides antibodies and antigen (serum and CSF); fungal cultures; complement fixation titers"
+    },
+    {
+      "diagnosis": "Autoimmune/inflammatory meningitis",
+      "features": "Subacute; may have systemic autoimmune features; steroid-responsive; cranial neuropathies; no fever initially",
+      "tests": "Autoimmune panel; IgG4 levels; meningeal biopsy; response to immunotherapy; no organisms on culture"
+    },
+    {
+      "diagnosis": "Partially treated bacterial meningitis",
+      "features": "Prior antibiotic use; CSF may show lymphocytic shift and negative cultures mimicking TBM",
+      "tests": "Antibiotic history; BioFire ME panel (detects DNA even after antibiotics); procalcitonin; clinical trajectory"
+    },
+    {
+      "diagnosis": "CNS lymphoma",
+      "features": "Immunocompromised (HIV); progressive focal deficits; periventricular enhancing lesions; EBV PCR positive in CSF",
+      "tests": "MRI with contrast; CSF EBV PCR; CSF cytology and flow cytometry; stereotactic biopsy"
+    },
+    {
+      "diagnosis": "Brain abscess",
+      "features": "Focal deficits; ring-enhancing lesion with restricted diffusion; fever and headache; may coexist with TBM (tuberculous abscess)",
+      "tests": "MRI with contrast and DWI (ring enhancement with central restriction); neurosurgical aspiration; cultures"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Adjunctive dexamethasone reduces mortality in TBM (all BMRC stages)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Thwaites et al. (NEJM 2004)](https://pubmed.ncbi.nlm.nih.gov/15509818/) — RCT of 545 patients; 30% mortality reduction with dexamethasone"
+    },
+    {
+      "recommendation": "RIPE therapy (INH, RIF, PZA, EMB) as standard initial regimen",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[WHO consolidated guidelines on tuberculosis (2022)](https://pubmed.ncbi.nlm.nih.gov/35536703/); ATS/CDC/IDSA Treatment of TB ([Nahid et al. CID 2016](https://pubmed.ncbi.nlm.nih.gov/27516382/))"
+    },
+    {
+      "recommendation": "12-month treatment duration for TBM (minimum)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[WHO guidelines (2022)](https://pubmed.ncbi.nlm.nih.gov/35536703/); ATS/CDC/IDSA guidelines; AAP Red Book; [Donald PR. Tuberculosis 2010](https://pubmed.ncbi.nlm.nih.gov/20541472/)"
+    },
+    {
+      "recommendation": "GeneXpert MTB/RIF on CSF for rapid molecular diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Bahr et al. (Lancet Infect Dis 2018)](https://pubmed.ncbi.nlm.nih.gov/29198749/) — systematic review; sensitivity ~60-80% on CSF; [Nhu et al. (Lancet Infect Dis 2014)](https://pubmed.ncbi.nlm.nih.gov/24507858/)"
+    },
+    {
+      "recommendation": "CSF adenosine deaminase (ADA) >8-10 U/L supports TBM diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Xu et al. (PLoS One 2014)](https://pubmed.ncbi.nlm.nih.gov/24551232/) — meta-analysis of diagnostic accuracy; [Tuon et al. (Scand J Infect Dis 2010)](https://pubmed.ncbi.nlm.nih.gov/20001225/)"
+    },
+    {
+      "recommendation": "BMRC staging predicts outcomes",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[British Medical Research Council (1948)](https://pubmed.ncbi.nlm.nih.gov/18890278/) original classification; validated in multiple cohorts; [Marais et al. (Lancet Infect Dis 2011)](https://pubmed.ncbi.nlm.nih.gov/21453871/) uniform case definition"
+    },
+    {
+      "recommendation": "Hydrocephalus management with EVD/VP shunt",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Rajshekhar V. (Neurol India 2009)](https://pubmed.ncbi.nlm.nih.gov/19934549/); hydrocephalus present in 60-80% of TBM; EVD for acute obstruction; VP shunt for communicating hydrocephalus"
+    },
+    {
+      "recommendation": "Higher-dose rifampin (15 mg/kg) may improve outcomes in TBM",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Ruslami et al. (Lancet Infect Dis 2013)](https://pubmed.ncbi.nlm.nih.gov/23313389/) — pharmacokinetic study; [Te Brake et al. (Clin Infect Dis 2015)](https://pubmed.ncbi.nlm.nih.gov/25870327/); adequate CSF levels may require higher doses"
+    },
+    {
+      "recommendation": "Fluoroquinolones (levofloxacin, moxifloxacin) for MDR-TBM",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "WHO MDR-TB guidelines; [Thwaites et al. (CID 2011)](https://pubmed.ncbi.nlm.nih.gov/21467012/) review; good CNS penetration documented"
+    },
+    {
+      "recommendation": "Paradoxical reaction/IRIS management with corticosteroids",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Meintjes et al. (NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/30380453/) — prednisone for TB-IRIS; [Singh et al. (BMC Infect Dis 2016)](https://pubmed.ncbi.nlm.nih.gov/27430511/) — paradoxical reactions in TBM"
+    },
+    {
+      "recommendation": "Levetiracetam preferred ASM in TBM (minimal hepatic metabolism, no CYP interactions)",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; avoids hepatic enzyme interactions with RIPE; [Zhu et al. (Epilepsy Res 2017)](https://pubmed.ncbi.nlm.nih.gov/28689038/)"
+    },
+    {
+      "recommendation": "Ethionamide as alternative to EMB for improved CNS penetration",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Donald PR. (Tuberculosis 2010)](https://pubmed.ncbi.nlm.nih.gov/20541472/); superior CSF penetration compared to ethambutol"
+    },
+    {
+      "recommendation": "Linezolid for MDR/XDR-TBM",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[WHO consolidated guidelines (2022)](https://pubmed.ncbi.nlm.nih.gov/35536703/); excellent CNS penetration; [Sun et al. (Int J Infect Dis 2019)](https://pubmed.ncbi.nlm.nih.gov/30986530/)"
+    },
+    {
+      "recommendation": "CSF AFB smear sensitivity only 10-20%",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Thwaites et al. (Lancet 2009)](https://pubmed.ncbi.nlm.nih.gov/19854238/) — review; larger volume (>6 mL) improves yield"
+    },
+    {
+      "recommendation": "Dexamethasone long-term follow-up shows sustained mortality benefit at 5 years",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Thwaites et al. (NEJM 2004)](https://pubmed.ncbi.nlm.nih.gov/15509818/); [Torok et al. (PLoS One 2011)](https://pubmed.ncbi.nlm.nih.gov/21858222/) — 5-year follow-up"
+    },
+    {
+      "recommendation": "Defer ART 2-8 weeks after starting anti-TB therapy in HIV-TBM co-infection",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Torok et al. (NEJM 2011)](https://pubmed.ncbi.nlm.nih.gov/21992768/) — immediate vs deferred ART in TBM; immediate ART associated with more severe adverse events without mortality benefit"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, cranial nerves, motor, meningismus)",
+      "frequency": "q2h x 48h, then q4h; more frequent if declining",
+      "action": "If declining: STAT CT (hydrocephalus?); neurosurgery consult; ICP assessment",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If persistent fever >2 weeks: reassess diagnosis; evaluate for drug resistance; consider paradoxical reaction; drug fever",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ALT/AST (LFTs)",
+      "frequency": "Baseline; 2 weeks; then monthly throughout treatment",
+      "action": "If ALT >5x ULN (asymptomatic) or >3x ULN with symptoms (nausea, vomiting, jaundice): HOLD all hepatotoxic drugs (INH, RIF, PZA); reintroduce one at a time after LFTs normalize; see Appendix B",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity and color vision (Ishihara)",
+      "frequency": "Baseline before EMB; monthly during EMB use",
+      "action": "If any visual decline: STOP ethambutol immediately; ophthalmology referral STAT; optic neuritis usually reversible if caught early",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q6-8h x 48h, then daily, then q visit (OPD)",
+      "action": "If <130: SIADH evaluation and fluid restriction; if <120: 3% saline; balance with adequate hydration",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum creatinine / BUN",
+      "frequency": "Daily (inpatient); monthly (OPD)",
+      "action": "Dose adjust ethambutol and aminoglycosides for renal impairment; evaluate dehydration",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h during IV dexamethasone; daily after transition to PO; at each visit OPD",
+      "action": "Sliding scale insulin; basal insulin if persistent; monitor closely in diabetic patients",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Uric acid",
+      "frequency": "Baseline; monthly during PZA",
+      "action": "If symptomatic gout: colchicine 0.6 mg BID; dose reduce PZA or discontinue if severe; do NOT stop PZA for asymptomatic hyperuricemia alone",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Baseline; monthly",
+      "action": "If thrombocytopenia: evaluate rifampin hypersensitivity; if anemia: evaluate chronic disease, drug effect; if neutropenia: evaluate drug effect",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Serum osmolality / Urine studies",
+      "frequency": "As needed for SIADH evaluation",
+      "action": "SIADH: fluid restriction; cerebral salt wasting: volume repletion with saline",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Follow-up MRI brain",
+      "frequency": "At 2-3 months; at treatment completion; and if clinical worsening",
+      "action": "If worsening despite treatment: paradoxical reaction vs treatment failure vs drug resistance; consider repeat LP; ID and neurosurgery input",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Repeat LP (CSF parameters)",
+      "frequency": "At 1-2 months if clinical concern; at treatment completion if indicated",
+      "action": "If CSF not improving at 2 months: evaluate for drug resistance; adherence assessment; consider alternative diagnosis; extend treatment duration",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Treatment adherence",
+      "frequency": "Each clinic visit; DOT records review",
+      "action": "If non-adherent: reinforce education; address barriers; intensify DOT; social work involvement; consider directly observed therapy video (VDOT)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Clinical observation continuously; EEG if seizures suspected",
+      "action": "If seizures: optimize levetiracetam; add second agent if needed; cEEG if altered consciousness; avoid hepatically cleared ASMs when possible",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "frequency": "Continuous",
+      "action": "Tiered ICP management: CSF drainage, osmotherapy, sedation, neurosurgery",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Never discharge from ED with suspected TBM — always admit. Discharge from hospital when: clinically improving (resolving fever, improving neuro exam); tolerating oral RIPE therapy; stable or improving imaging; DOT arranged through public health; reliable follow-up with ID and neurology confirmed; able to care for self or adequate home support; no active hydrocephalus requiring intervention"
+    },
+    {
+      "disposition": "Admit to floor (monitored bed)",
+      "criteria": "BMRC Stage I (GCS 15, no focal deficits); hemodynamically stable; no seizures; able to cooperate with neuro checks"
+    },
+    {
+      "disposition": "Admit to ICU / Neuro-ICU",
+      "criteria": "BMRC Stage II-III (GCS <15 with focal deficits or altered consciousness); active seizures or status epilepticus; hydrocephalus requiring EVD; respiratory compromise; hemodynamic instability; need for continuous EEG; ICP monitoring"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery (EVD, VP shunt) not available at current facility; need for neuro-ICU expertise; continuous EEG monitoring not available; drug-resistant TB requiring specialized treatment center"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Persistent focal neurologic deficits (hemiparesis, cranial neuropathies); cognitive impairment; able to participate in 3h/day therapy; stable on oral RIPE therapy; DOT coordination with rehab facility"
+    },
+    {
+      "disposition": "Skilled nursing facility",
+      "criteria": "Unable to tolerate intensive rehabilitation; requires ongoing nursing care; needs IV medication access or complex wound care; DOT coordination with facility"
+    }
+  ]
+}

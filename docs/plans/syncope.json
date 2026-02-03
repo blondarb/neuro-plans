@@ -12,9 +12,9 @@
   "notes": [],
   "sections": {
     "Laboratory Workup": {
-      "Essential/Core Labs": [
+      "Core Labs (All Patients)": [
         {
-          "item": "Fingerstick glucose",
+          "item": "Fingerstick glucose (CPT 82962)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -23,7 +23,7 @@
           "target": "70-180 mg/dL"
         },
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -32,7 +32,7 @@
           "target": "Normal"
         },
         {
-          "item": "BMP (electrolytes, creatinine)",
+          "item": "BMP (CPT 80048) (electrolytes, creatinine)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -41,7 +41,7 @@
           "target": "Normal"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -50,7 +50,7 @@
           "target": "Negative"
         },
         {
-          "item": "BNP or NT-proBNP",
+          "item": "BNP or NT-proBNP (CPT 83880)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -68,9 +68,9 @@
           "target": "Document"
         }
       ],
-      "Extended Workup": [
+      "Extended Labs (Based on Clinical Suspicion)": [
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -79,7 +79,7 @@
           "target": "Normal"
         },
         {
-          "item": "Cortisol (AM)",
+          "item": "Cortisol (CPT 82533) (AM)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -88,7 +88,7 @@
           "target": "Normal"
         },
         {
-          "item": "D-dimer",
+          "item": "D-dimer (CPT 85379)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -106,7 +106,7 @@
           "target": "Negative"
         },
         {
-          "item": "Blood cultures",
+          "item": "Blood cultures (CPT 87040)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -117,9 +117,9 @@
       ]
     },
     "Imaging & Studies": {
-      "Essential/First-line": [
+      "Cardiac Studies (Priority Based on Risk)": [
         {
-          "item": "12-lead ECG",
+          "item": "12-lead ECG (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -139,7 +139,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Transthoracic echocardiogram",
+          "item": "Transthoracic echocardiogram (CPT 93306)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -169,9 +169,9 @@
           "contraindications": "Pacemaker, metal"
         }
       ],
-      "Extended": [
+      "Extended Cardiac Monitoring": [
         {
-          "item": "Holter monitor (24-48 hour)",
+          "item": "Holter monitor (CPT 93224) (24-48 hour)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -181,7 +181,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Event recorder (2-4 weeks)",
+          "item": "Event recorder (CPT 93268) (2-4 weeks)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -211,7 +211,7 @@
           "contraindications": "Active infection"
         }
       ],
-      "Rare/Specialized": [
+      "Autonomic Testing": [
         {
           "item": "Orthostatic vital signs",
           "ED": "STAT",
@@ -223,7 +223,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Tilt table test",
+          "item": "Tilt table test (CPT 95924)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -243,7 +243,7 @@
           "contraindications": "Carotid bruit, recent stroke/TIA"
         },
         {
-          "item": "Autonomic function tests",
+          "item": "Autonomic function tests (CPT 95924)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -251,6 +251,46 @@
           "timing": "Suspected autonomic failure",
           "target": "Characterize dysautonomia",
           "contraindications": "Per test"
+        },
+        {
+          "item": "CT head (CPT 70450)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Head trauma; focal neuro signs; NOT routine for syncope",
+          "target": "No acute pathology",
+          "contraindications": "None (contrast: renal disease)"
+        },
+        {
+          "item": "MRI brain (CPT 70551)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Atypical features suggesting CNS cause",
+          "target": "Normal",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If seizure suspected (prolonged LOC, postictal state, witnessed tonic-clonic)",
+          "target": "No epileptiform activity",
+          "contraindications": "None"
+        },
+        {
+          "item": "Carotid ultrasound",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "NOT indicated for typical syncope",
+          "target": "N/A",
+          "contraindications": "None"
         }
       ]
     },
@@ -767,7 +807,45 @@
       ]
     },
     "Other Recommendations": {
-      "Patient Instructions": [
+      "Risk Stratification (San Francisco Syncope Rule, EGSYS, OESIL, Canadian Syncope Risk Score)": [
+        {
+          "item": "Abnormal ECG (new changes, arrhythmia, ischemia, prolonged QTc, Brugada pattern)"
+        },
+        {
+          "item": "History of heart failure or reduced LVEF"
+        },
+        {
+          "item": "Syncope during exertion"
+        },
+        {
+          "item": "Syncope while supine or sitting"
+        },
+        {
+          "item": "Family history of sudden cardiac death"
+        },
+        {
+          "item": "Structural heart disease"
+        },
+        {
+          "item": "Significant anemia or GI bleeding"
+        },
+        {
+          "item": "Abnormal vital signs (persistent hypotension, bradycardia)"
+        },
+        {
+          "item": "Elevated troponin or BNP"
+        },
+        {
+          "item": "No prodrome (sudden syncope without warning)"
+        },
+        {
+          "item": "Palpitations before syncope"
+        },
+        {
+          "item": "Age >60 with first syncope"
+        }
+      ],
+      "Referrals & Consults": [
         {
           "item": "Cardiology",
           "ED": "URGENT",
@@ -801,7 +879,7 @@
           "indication": "Refractory orthostatic hypotension; complex dysautonomia"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Patient/Family Instructions": [
         {
           "item": "Recognize prodromal symptoms and immediately sit/lie down",
           "ED": "ROUTINE",
@@ -843,6 +921,33 @@
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
+        }
+      ],
+      "Driving & Activity Restrictions": [
+        {
+          "item": "Single vasovagal syncope with clear trigger",
+          "private driving": "Usually OK immediately",
+          "commercial driving": "Per regulations; often 3-12 months"
+        },
+        {
+          "item": "Recurrent vasovagal syncope",
+          "private driving": "Restrict until controlled",
+          "commercial driving": "Often disqualifying"
+        },
+        {
+          "item": "Unexplained syncope under investigation",
+          "private driving": "Restrict until diagnosis",
+          "commercial driving": "Restrict"
+        },
+        {
+          "item": "Cardiac syncope (treated)",
+          "private driving": "Per cardiologist; typically 6 months if ICD",
+          "commercial driving": "Often disqualifying"
+        },
+        {
+          "item": "Orthostatic syncope (treated)",
+          "private driving": "When stable",
+          "commercial driving": "Per individual assessment"
         }
       ]
     }

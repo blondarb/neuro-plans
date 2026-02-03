@@ -1,0 +1,1883 @@
+{
+  "id": "anoxic-brain-injury",
+  "title": "Anoxic Brain Injury / Neuroprognostication",
+  "version": "1.1",
+  "icd10": [
+    "** G93.1 (Anoxic brain damage",
+    "not elsewhere classified)",
+    "G93.82 (Brain death)",
+    "I46.9 (Cardiac arrest",
+    "cause unspecified)",
+    "I46.2 (Cardiac arrest due to underlying cardiac condition)",
+    "I46.8 (Cardiac arrest due to other underlying condition)",
+    "G93.6 (Cerebral edema)",
+    "G40.901 (Epilepsy with status epilepticus — post-anoxic seizures)",
+    "G25.3 (Myoclonus — post-anoxic myoclonus)"
+  ],
+  "scope": "** Acute management, targeted temperature management (TTM), neuroprognostication, and rehabilitation pathway for anoxic brain injury following cardiac arrest or other causes of global cerebral hypoxia in adults. Covers post-cardiac arrest care bundle (TTM 32-36C for 24h, hemodynamic optimization, seizure management), multimodal neuroprognostication (clinical exam, EEG, SSEP, MRI, biomarkers, CT), confounder identification and elimination, myoclonus classification, and rehabilitation pathway for survivors. Excludes neonatal HIE, pediatric cardiac arrest, primary respiratory arrest without cardiac arrest, focal stroke, and traumatic brain injury.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; thrombocytopenia from ischemia-reperfusion",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Electrolytes; renal function (ischemic ATN common); hepatic injury (shock liver); glucose management",
+          "target": "Normal; watch Cr, LFTs, K",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Arterial blood gas (ABG) (CPT 82803)",
+          "rationale": "Oxygenation; ventilation; acid-base status; lactate clearance",
+          "target": "pH 7.35-7.45; PaCO2 35-45; PaO2 >60; lactate trending down",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Tissue perfusion marker; serial clearance predicts survival",
+          "target": "<2 mmol/L; clearance >20% at 6h is favorable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (serial) (CPT 84484)",
+          "rationale": "Myocardial injury is nearly universal post-arrest; ACS as precipitant; myocardial dysfunction severity",
+          "target": "Trend; peak predicts myocardial dysfunction severity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "rationale": "Coagulopathy from ischemia-reperfusion (DIC common); pre-procedural",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "rationale": "DIC screen; consumptive coagulopathy from prolonged arrest",
+          "target": ">150 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hyperglycemia worsens neurological outcomes; hypoglycemia mimics encephalopathy",
+          "target": "140-180 mg/dL target (avoid <70 and >180)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia lowers seizure threshold; arrhythmia risk",
+          "target": ">2.0 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium, ionized (CPT 82330)",
+          "rationale": "Cardiac rhythm stability; seizure threshold",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Refeeding risk; electrolyte management",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG) (CPT 84703)",
+          "rationale": "Affects imaging and medication decisions",
+          "target": "Document result",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood type and screen (CPT 86900)",
+          "rationale": "Potential need for blood products; DIC management",
+          "target": "On file",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Toxicologic cause of arrest (cocaine, opioids, amphetamines); affects prognostication timeline",
+          "target": "Document result",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood alcohol level (CPT 80320)",
+          "rationale": "Confounding factor for neurological exam; withdrawal risk",
+          "target": "Document result",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Neuron-Specific Enolase (NSE) (CPT 83519)",
+          "rationale": "Prognostic biomarker; draw at 24h, 48h, and 72h post-ROSC. NSE >33 ug/L at 48-72h associated with poor outcome (FPR <5% per ERC/ESICM 2021). Must exclude hemolysis (falsely elevates NSE)",
+          "target": "<33 ug/L at 48-72h suggests potential for recovery; >60 ug/L highly predictive of poor outcome",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "DIC screening; ischemia-reperfusion coagulopathy",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Differentiate post-arrest SIRS from infection; guide antibiotic decisions",
+          "target": "<0.5 ng/mL (elevated common post-arrest without infection)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "Adrenal insufficiency from prolonged shock; critical illness-related corticosteroid insufficiency",
+          "target": ">18 ug/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism as contributing factor",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "BNP / NT-proBNP (CPT 83880)",
+          "rationale": "Post-arrest myocardial dysfunction severity; volume status",
+          "target": "Elevated (expected post-arrest)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "rationale": "Hepatic encephalopathy confounding neurologic exam; shock liver",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "rationale": "Monitor during osmotherapy if cerebral edema develops",
+          "target": "280-320 mOsm/kg",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes management; glucose control optimization",
+          "target": "<7.0%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lipid panel (CPT 80061)",
+          "rationale": "Cardiovascular risk for secondary prevention",
+          "target": "Document baseline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "S100B protein",
+          "rationale": "Additional prognostic biomarker; less studied than NSE; elevated >0.18 ug/L at 24-48h suggests poor outcome",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Tau protein (serum or CSF)",
+          "rationale": "Emerging biomarker for axonal injury severity; research context",
+          "target": "Lower levels favorable",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "GFAP (glial fibrillary acidic protein)",
+          "rationale": "Emerging astrocytic injury biomarker; elevated in severe ABI",
+          "target": "Lower levels favorable",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Neurofilament light chain (NfL) serum",
+          "rationale": "Emerging biomarker for axonal injury; correlates with outcome at 24-72h post-arrest",
+          "target": "Lower levels favorable",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Genetic testing (SCN5A, KCNQ1, etc.)",
+          "rationale": "Channelopathy workup if arrest etiology unclear in young patient without structural heart disease",
+          "target": "Document result",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Toxicology (expanded)",
+          "rationale": "Cyanide, carbon monoxide, organophosphates if environmental exposure suspected",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Carboxyhemoglobin (CPT 82375)",
+          "rationale": "Carbon monoxide poisoning as cause of anoxia; house fire, CO exposure",
+          "target": "<3% (non-smoker); <10% (smoker)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediately post-ROSC; rule out primary intracranial event as cause of arrest",
+          "target": "Exclude hemorrhage, stroke, herniation, mass as primary cause. Post-anoxic findings: diffuse sulcal effacement, loss of gray-white differentiation (GWR) — GWR <1.1 at 24-48h predicts poor outcome",
+          "contraindications": "Pregnancy (benefit outweighs risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediately post-ROSC; identify STEMI (emergent cath), arrhythmia, QTc, Brugada, channelopathy",
+          "target": "STEMI -> emergent PCI; arrhythmia identification; QTc assessment",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "ETT position; rib fractures from CPR; aspiration; pulmonary edema",
+          "target": "Normal; exclude complications",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Coronary angiography / cardiac catheterization (CPT 93458)",
+          "timing": "Emergent if STEMI; urgent if no obvious non-cardiac etiology and shockable rhythm (VF/VT). AHA/ILCOR: emergent PCI for STEMI; consider early cath for non-STEMI arrests with shockable rhythm",
+          "target": "Identify and treat coronary occlusion as precipitant of arrest",
+          "contraindications": "Active bleeding; known anaphylaxis to contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "timing": "Initiate within 12h of ICU admission; detect nonconvulsive seizures (NCSE in 10-30% of comatose post-arrest); monitor for burst-suppression; assess background reactivity for prognostication at >=72h",
+          "target": "Background: continuous vs burst-suppression vs suppression; reactivity to stimuli; seizures/NCSE. Highly malignant patterns (suppression, burst-suppression without reactivity) predict poor outcome",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "Within 24h; assess post-arrest myocardial dysfunction (stunned myocardium); EF for hemodynamic management; identify structural cause (HCM, valvular)",
+          "target": "Post-arrest EF often 25-40% (usually recovers by 72h); wall motion abnormalities; structural abnormality",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with DWI/ADC (CPT 70553)",
+          "timing": "Day 2-7 post-ROSC (optimal at day 3-5); critical for neuroprognostication. DWI is most sensitive imaging modality for anoxic injury",
+          "target": "Extensive cortical and subcortical restricted diffusion (DWI bright, ADC dark) = poor outcome. Diffuse cortical involvement, basal ganglia, thalamic, brainstem involvement all predict poor outcome. Quantitative ADC values may improve accuracy",
+          "contraindications": "Pacemaker (non-MRI-conditional); hemodynamic instability; active TTM devices (MRI-compatible alternatives exist)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "SSEP (somatosensory evoked potentials) (CPT 95925)",
+          "timing": "Perform at >=72h post-ROSC after rewarming and sedation washout. Bilateral absence of N20 cortical responses is one of the most reliable poor prognostic indicators (FPR <1%)",
+          "target": "Bilateral N20 present = good sign. Bilateral N20 absent = poor prognosis (FPR ~0-1% per AAN). N20 amplitude <0.62 uV also predictive",
+          "contraindications": "None absolute; requires cooperative technician and reduced electrical interference",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT head with quantitative GWR measurement",
+          "timing": "At 24-48h post-ROSC; measure gray-white matter ratio at basal ganglia level and centrum semiovale",
+          "target": "GWR <1.10 at caudate nucleus level at 24-48h predicts poor outcome (FPR <5%). Diffuse sulcal effacement, absent basal cisterns, loss of differentiation",
+          "contraindications": "Pregnancy (benefit outweighs risk)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MR spectroscopy (CPT 76390)",
+          "timing": "If available; assess metabolic injury severity",
+          "target": "Reduced NAA/Cr ratio; elevated lactate peak = poor prognosis",
+          "contraindications": "Pacemaker (non-MRI-conditional); hemodynamic instability",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Cardiac MRI (CPT 75557)",
+          "timing": "After stabilization; assess myocardial injury, cardiomyopathy, fibrosis, ARVC",
+          "target": "Structural/ischemic etiology of arrest; myocardial viability",
+          "contraindications": "Pacemaker (non-MRI-conditional); hemodynamic instability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT angiography coronary (CPT 75574)",
+          "timing": "If catheterization deferred or non-STEMI; non-invasive coronary evaluation",
+          "target": "Coronary disease; anomalous coronary artery",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Electrophysiology study (EPS) (CPT 93620)",
+          "timing": "After recovery; if arrhythmic etiology suspected and ICD consideration",
+          "target": "Inducible VT/VF; risk stratification for ICD",
+          "contraindications": "Hemodynamic instability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Brain CT perfusion (CPT 0042T)",
+          "timing": "Research context; assess global cerebral perfusion",
+          "target": "Absent cortical perfusion predicts poor outcome",
+          "contraindications": "Contrast allergy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "PET brain (FDG) (CPT 78608)",
+          "timing": "Research/rare context; cortical metabolic assessment",
+          "target": "Absent cortical metabolism",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Targeted Temperature Management (TTM) — cooling to 32-36C",
+          "route": "IV/External",
+          "indication": "ALL comatose cardiac arrest survivors (GCS motor <6 after ROSC). TTM2 trial: no difference between 33C vs 36C; both superior to fever. AHA/ILCOR 2020: target 32-36C for at least 24h",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "32-36C",
+                "orderSentence": "Targeted Temperature Management (TTM) — cooling to 32-36C 32-36C external/IV"
+              }
+            ],
+            "route": "external/IV",
+            "instructions": "Initiate cooling ASAP post-ROSC; use surface (Arctic Sun) or intravascular (Thermogard) cooling; target temperature within 4h; maintain for at least 24h; rewarm at 0.25C/h (avoid >0.5C/h); prevent fever (<37.7C) for at least 72h after ROSC",
+            "orderSentence": "Targeted Temperature Management (TTM) — cooling to 32-36C 32-36C external/IV"
+          },
+          "contraindications": "Active hemorrhage (relative); refractory cardiogenic shock (relative); terminal illness (relative)",
+          "monitoring": "Core temperature (esophageal or bladder probe) continuously; shivering assessment (BSAS) q1h; electrolytes (K, Mg, Ca, Phos) q4-6h during cooling; coagulation q12h; skin checks q4h for surface cooling",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Meperidine (Demerol)",
+          "route": "IV",
+          "indication": "Shivering during TTM (counterproductive; increases metabolic demand and defeats cooling); first-line anti-shivering agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Meperidine (Demerol) 25-50 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 mg IV q4h PRN shivering; first-line anti-shivering agent",
+            "orderSentence": "Meperidine (Demerol) 25-50 mg IV"
+          },
+          "contraindications": "MAOIs; seizure disorder (lowers threshold); renal impairment (normeperidine accumulation)",
+          "monitoring": "Shivering scale (BSAS); sedation; respiratory status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO/NG",
+          "indication": "Adjunctive anti-shivering during TTM; lowers shivering threshold by 0.7C",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Buspirone 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mg PO/NG q8h; lowers shivering threshold by 0.7C",
+            "orderSentence": "Buspirone 30 mg PO"
+          },
+          "contraindications": "MAOIs",
+          "monitoring": "Shivering scale",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Magnesium sulfate",
+          "route": "IV",
+          "indication": "Adjunctive anti-shivering; lowers shivering threshold and seizure threshold",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 g",
+                "orderSentence": "Magnesium sulfate 2-4 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 g IV bolus then 1-2 g/h infusion; target Mg 3-4 mg/dL",
+            "orderSentence": "Magnesium sulfate 2-4 g IV"
+          },
+          "contraindications": "Renal failure (accumulation); severe bradycardia",
+          "monitoring": "Mg level q4-6h; deep tendon reflexes; HR",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cisatracurium",
+          "route": "IV",
+          "indication": "Refractory shivering despite first-line measures during TTM; note: obscures clinical exam and must be discontinued well before prognostication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Cisatracurium 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV bolus, then 1-3 mcg/kg/min infusion; titrate to train-of-four 1-2/4",
+            "orderSentence": "Cisatracurium 0.15 mg/kg IV"
+          },
+          "contraindications": "Caution in myasthenia gravis",
+          "monitoring": "Train-of-four (TOF) q4h; cEEG mandatory when paralyzed (seizures undetectable clinically)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Norepinephrine",
+          "route": "IV",
+          "indication": "Post-arrest myocardial dysfunction with MAP <65 mmHg; first-line vasopressor for post-arrest shock",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.5 mcg/kg/min",
+                "orderSentence": "Norepinephrine 0.1-0.5 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.05-0.1 mcg/kg/min; titrate to MAP >65 (or >80 if signs of cerebral hypoperfusion); max 2 mcg/kg/min",
+            "orderSentence": "Norepinephrine 0.1-0.5 mcg/kg/min IV"
+          },
+          "contraindications": "Peripheral line extravasation (central access preferred)",
+          "monitoring": "Arterial line BP; MAP; urine output; lactate q4-6h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dobutamine",
+          "route": "IV",
+          "indication": "Post-arrest cardiogenic shock with reduced EF (<30%); augment cardiac output when vasopressors alone insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-20 mcg/kg/min",
+                "orderSentence": "Dobutamine 2.5-20 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 2.5 mcg/kg/min; titrate to cardiac output and MAP; consider with echo guidance",
+            "orderSentence": "Dobutamine 2.5-20 mcg/kg/min IV"
+          },
+          "contraindications": "LVOT obstruction; severe tachyarrhythmia",
+          "monitoring": "HR; BP; cardiac output (echo or PA catheter); arrhythmia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vasopressin",
+          "route": "IV",
+          "indication": "Adjunctive vasopressor for refractory hypotension when norepinephrine dose >0.3 mcg/kg/min",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.01-0.04 units/min",
+                "orderSentence": "Vasopressin 0.01-0.04 units/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.01-0.04 units/min; does not titrate above 0.04",
+            "orderSentence": "Vasopressin 0.01-0.04 units/min IV"
+          },
+          "contraindications": "Digital ischemia (relative); peripheral vascular disease",
+          "monitoring": "MAP; urine output; peripheral perfusion; serum Na",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV",
+          "indication": "First-line for post-anoxic seizures and NCSE (common in 10-30% of comatose post-arrest patients); treat all electrographic seizures aggressively",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV BID; transition to PO when able; no hepatic metabolism; minimal drug interactions",
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust for CrCl <30)",
+          "monitoring": "cEEG; renal function; seizure recurrence",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproic acid (Depakote)",
+          "route": "IV",
+          "indication": "Second-line for post-anoxic seizures; add if seizures refractory to levetiracetam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg/kg",
+                "orderSentence": "Valproic acid (Depakote) 20-40 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20-40 mg/kg IV load over 15 min (max 3000 mg); then 500 mg IV q12h; target level 50-100 ug/mL",
+            "orderSentence": "Valproic acid (Depakote) 20-40 mg/kg IV"
+          },
+          "contraindications": "Hepatic failure; mitochondrial disease (Alpers); pregnancy (teratogenic); thrombocytopenia",
+          "monitoring": "LFTs; ammonia; CBC; drug level; pancreatitis symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Regular insulin",
+          "route": "IV",
+          "indication": "Hyperglycemia (>180 mg/dL); target 140-180 mg/dL; avoid hypoglycemia (<70 mg/dL) which worsens neurologic injury",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "per protocol",
+                "orderSentence": "Regular insulin per protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Continuous insulin infusion titrated to BG 140-180; transition to sliding scale when hemodynamically stable and tolerating nutrition",
+            "orderSentence": "Regular insulin per protocol IV"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "BG q1h while on drip; q4-6h on sliding scale; potassium with each BG",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mechanical ventilation optimization",
+          "route": "-",
+          "indication": "ALL intubated post-arrest patients; target normoxia and normocapnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "per protocol",
+                "orderSentence": "Mechanical ventilation optimization per protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Target PaO2 75-100 mmHg (avoid hyperoxia PaO2 >300); PaCO2 35-45 mmHg (avoid hypo/hypercapnia); PEEP as needed",
+            "orderSentence": "Mechanical ventilation optimization per protocol -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "ABG q4-6h during active TTM; SpO2 continuous; EtCO2 continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Propofol",
+          "route": "IV",
+          "indication": "Sedation during TTM; additional anti-seizure properties; preferred for shorter-acting effect facilitating neurological assessment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-80 mcg/kg/min",
+                "orderSentence": "Propofol 5-80 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-50 mcg/kg/min; titrate to RASS -4 to -5 during active TTM; wean after rewarming",
+            "orderSentence": "Propofol 5-80 mcg/kg/min IV"
+          },
+          "contraindications": "Propofol infusion syndrome risk (monitor for metabolic acidosis, rhabdomyolysis, hypertriglyceridemia if >48h at high doses >70 mcg/kg/min); egg/soy allergy",
+          "monitoring": "Triglycerides q24h; CK if prolonged use; RASS; cEEG",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fentanyl",
+          "route": "IV",
+          "indication": "Analgesia and sedation during TTM; preferred analgesic during hypothermia (hepatic metabolism reduced)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-200 mcg/h",
+                "orderSentence": "Fentanyl 25-200 mcg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-100 mcg/h continuous infusion; titrate to RASS target; bolus 25-50 mcg PRN",
+            "orderSentence": "Fentanyl 25-200 mcg/h IV"
+          },
+          "contraindications": "Respiratory depression (ventilated patients); severe hepatic impairment",
+          "monitoring": "RASS; respiratory rate (if not ventilated); bowel function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam",
+          "route": "IV",
+          "indication": "Alternative/adjunctive sedation if propofol contraindicated; anti-seizure properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.02-0.1 mg/kg/h",
+                "orderSentence": "Midazolam 0.02-0.1 mg/kg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.02-0.1 mg/kg/h continuous; accumulates with prolonged use; prolongs sedation washout (confounder for prognostication)",
+            "orderSentence": "Midazolam 0.02-0.1 mg/kg/h IV"
+          },
+          "contraindications": "Severe hepatic impairment; prolonged use delays prognostication",
+          "monitoring": "RASS; cEEG; watch for prolonged effect delaying prognostication",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "IV",
+          "indication": "Fever prevention and treatment post-TTM; target normothermia (<37.7C) for at least 72h post-ROSC",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV q6h scheduled (not PRN); max 4g/day",
+            "orderSentence": "Acetaminophen 1000 mg IV"
+          },
+          "contraindications": "Severe hepatic impairment",
+          "monitoring": "Temperature q4h; LFTs",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV",
+          "indication": "GI stress ulcer prophylaxis; post-arrest patients at high risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV daily; transition to PO when tolerating",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "C. difficile risk with prolonged use",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis; immobilized comatose patients at high VTE risk; start after active hemorrhage excluded and hemostasis adequate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start 24-48h post-ROSC if no active bleeding",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active hemorrhage; platelet count <50,000; DIC",
+          "monitoring": "Platelet count; signs of bleeding; anti-Xa level if renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "External",
+          "indication": "DVT prophylaxis; start IMMEDIATELY in all post-arrest patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "apply bilaterally",
+                "orderSentence": "Pneumatic compression devices apply bilaterally external"
+              }
+            ],
+            "route": "external",
+            "instructions": "Apply bilaterally on admission; maintain continuously when not ambulating",
+            "orderSentence": "Pneumatic compression devices apply bilaterally external"
+          },
+          "contraindications": "Active DVT; skin breakdown",
+          "monitoring": "Skin checks; compliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO/NG",
+          "indication": "Post-anoxic myoclonus (both early status myoclonus and Lance-Adams syndrome); first-line for myoclonus suppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg PO BID; titrate by 0.5 mg q3d to effect; max 6 mg/day",
+            "orderSentence": "Clonazepam 0.5 mg PO"
+          },
+          "contraindications": "Severe respiratory depression (non-ventilated); severe hepatic impairment",
+          "monitoring": "Sedation; respiratory status; swallowing function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Valproic acid (myoclonus)",
+          "route": "PO/IV",
+          "indication": "Post-anoxic myoclonus (adjunctive or alternative to clonazepam)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid (myoclonus) 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg PO BID; titrate to 500-1000 mg TID; target level 50-100 ug/mL",
+            "orderSentence": "Valproic acid (myoclonus) 250 mg PO"
+          },
+          "contraindications": "Hepatic failure; mitochondrial disease; pregnancy",
+          "monitoring": "LFTs; ammonia; CBC; drug level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Levetiracetam (myoclonus)",
+          "route": "PO/IV",
+          "indication": "Post-anoxic myoclonus (adjunctive; less effective as monotherapy for myoclonus than clonazepam)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (myoclonus) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; titrate to 1000-1500 mg BID",
+            "orderSentence": "Levetiracetam (myoclonus) 500 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Behavioral changes; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Lacosamide",
+          "route": "IV",
+          "indication": "Post-anoxic refractory seizures not controlled by levetiracetam and valproic acid",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Lacosamide 200 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200 mg IV load over 15 min; then 100-200 mg IV BID; target level 10-20 ug/mL",
+            "orderSentence": "Lacosamide 200 mg IV"
+          },
+          "contraindications": "PR prolongation >200 ms; second/third-degree heart block; severe hepatic impairment",
+          "monitoring": "ECG (PR interval); cardiac rhythm",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Phenobarbital",
+          "route": "IV",
+          "indication": "Refractory post-anoxic status epilepticus (third-line ASM)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Phenobarbital 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV load at 50-75 mg/min; then 1-3 mg/kg/day maintenance; target level 20-40 ug/mL",
+            "orderSentence": "Phenobarbital 15-20 mg/kg IV"
+          },
+          "contraindications": "Severe respiratory depression (intubated patients only); acute intermittent porphyria",
+          "monitoring": "Drug level; respiratory status; BP (causes hypotension); sedation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam infusion (RSE)",
+          "route": "IV",
+          "indication": "Continuous seizure activity despite two ASMs (refractory status epilepticus protocol)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2 mg/kg",
+                "orderSentence": "Midazolam infusion (RSE) 0.2 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.2 mg/kg IV bolus, then start 0.1 mg/kg/h; titrate q15min by 0.1 mg/kg/h to EEG seizure suppression or burst-suppression; max 2 mg/kg/h",
+            "orderSentence": "Midazolam infusion (RSE) 0.2 mg/kg IV"
+          },
+          "contraindications": "Hemodynamic instability (may worsen)",
+          "monitoring": "cEEG mandatory; BP; vasopressor requirements",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pentobarbital",
+          "route": "IV",
+          "indication": "Super-refractory post-anoxic status epilepticus (when midazolam/propofol infusions fail)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg",
+                "orderSentence": "Pentobarbital 5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV load over 1h (may repeat 5 mg/kg boluses); maintenance 1-5 mg/kg/h; titrate to burst-suppression on cEEG",
+            "orderSentence": "Pentobarbital 5 mg/kg IV"
+          },
+          "contraindications": "Hemodynamic instability (severe myocardial depression); porphyria",
+          "monitoring": "cEEG; arterial line; vasopressors (nearly always required); ileus; temperature (poikilothermia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketamine",
+          "route": "IV",
+          "indication": "Adjunctive for refractory post-anoxic seizures; NMDA antagonism addresses late-stage glutamate excitotoxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/kg",
+                "orderSentence": "Ketamine 1-2 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg/kg IV bolus; then 1-5 mg/kg/h infusion; titrate to cEEG",
+            "orderSentence": "Ketamine 1-2 mg/kg IV"
+          },
+          "contraindications": "Elevated ICP (relative — disputed); severe hypertension",
+          "monitoring": "cEEG; BP (may increase); HR; oral secretions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Elevated ICP with clinical signs of herniation (post-anoxic cerebral edema); acute temporizing measure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus for acute herniation; 0.25-0.5 g/kg q4-6h maintenance",
+            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; serum osmolality >320",
+          "monitoring": "Serum osmolality q4-6h; Cr; urine output",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation from post-anoxic cerebral edema; requires central venous access",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV via central line over 10-20 min for acute herniation",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access; hypernatremia >160",
+          "monitoring": "Na q4-6h; osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3%",
+          "route": "IV",
+          "indication": "ICP management; less emergent than 23.4%; can give via peripheral line",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150-500 mL",
+                "orderSentence": "Hypertonic saline 3% 150-500 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "150-500 mL bolus or 0.5-1 mL/kg/h continuous infusion; target Na 145-155",
+            "orderSentence": "Hypertonic saline 3% 150-500 mL IV"
+          },
+          "contraindications": "Hypernatremia >160",
+          "monitoring": "Na q4-6h; osmolality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Chronic/Rehabilitation Therapies (Survivors)": [
+        {
+          "item": "ICD (implantable cardioverter-defibrillator)",
+          "route": "Procedure",
+          "indication": "Secondary prevention of sudden cardiac death in survivors with cardiac etiology and EF <=35% (or per electrophysiology study); typically implanted before discharge or at 40 days post-MI",
+          "dosing": {
+            "instructions": "Per cardiology/electrophysiology; ICD vs S-ICD per anatomy",
+            "orderSentence": "ICD (implantable cardioverter-defibrillator) - Procedure - see dosing"
+          },
+          "pretreatment": "Cardiac workup complete; EF assessment; electrophysiology study if indicated; shared decision-making",
+          "contraindications": "Active infection; terminal illness with <1yr life expectancy",
+          "monitoring": "Device checks q3-6 months; wound; inappropriate shocks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Arousal promotion in patients with disorders of consciousness (vegetative state/minimally conscious state); accelerates functional recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID (via NG if needed); increase to 200 mg BID; give before noon to avoid insomnia",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "pretreatment": "Baseline renal function; seizure history assessment",
+          "contraindications": "Renal impairment (dose adjust); seizure history (relative — lowers threshold)",
+          "monitoring": "Renal function; seizure activity; livedo reticularis; hallucinations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression and emotional lability in ABI survivors; common post-anoxic complication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO daily; increase by 25 mg q1-2 weeks; max 200 mg daily",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "pretreatment": "Baseline ECG if cardiac risk factors",
+          "contraindications": "MAOIs; QT prolongation",
+          "monitoring": "Suicidality; serotonin syndrome signs; QTc if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Cognitive impairment and attention deficits in ABI survivors; post-anoxic apathy/abulia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO BID (morning and noon); titrate by 5 mg q3-5 days; max 60 mg/day; avoid afternoon dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "pretreatment": "Baseline HR and BP; cardiac arrhythmia screen",
+          "contraindications": "Uncontrolled hypertension; severe anxiety; cardiac arrhythmia; psychosis",
+          "monitoring": "HR; BP; appetite; sleep; behavioral changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Excessive daytime somnolence and fatigue in ABI survivors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg PO daily in morning; increase to 200 mg; max 400 mg/day",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "pretreatment": "Baseline hepatic function; cardiac screening",
+          "contraindications": "Severe hepatic impairment; cardiac arrhythmia",
+          "monitoring": "BP; HR; sleep quality; mood",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity in ABI survivors with upper motor neuron signs; post-anoxic posturing or hypertonia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; titrate by 5 mg/dose q3d; max 80 mg/day; do not stop abruptly",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "pretreatment": "Baseline renal function",
+          "contraindications": "Renal impairment (dose adjust); seizure risk (withdrawal)",
+          "monitoring": "Sedation; weakness; urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity alternative; post-anoxic hypertonia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg PO TID; titrate by 2 mg q3-7d; max 36 mg/day",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "pretreatment": "Baseline LFTs; avoid concurrent CYP1A2 inhibitors",
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin)",
+          "monitoring": "LFTs at baseline, 1mo, 3mo, 6mo; BP (hypotension); sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin type A (Botox)",
+          "route": "IM",
+          "indication": "Focal spasticity in ABI survivors (upper or lower extremity) not responding to oral agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "per muscle group",
+                "orderSentence": "Botulinum toxin type A (Botox) per muscle group IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose per target muscles; typical total 200-400 units; repeat q12 weeks; onset 3-7 days",
+            "orderSentence": "Botulinum toxin type A (Botox) per muscle group IM"
+          },
+          "pretreatment": "Muscle selection by trained provider; identify target muscles with ultrasound/EMG guidance",
+          "contraindications": "Infection at injection site; neuromuscular junction disorder",
+          "monitoring": "Weakness (focal); dysphagia (if cervical muscles); antibody formation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology/neurocritical care consult for neuroprognostication guidance and seizure management in all comatose post-arrest patients",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cardiology consult for coronary evaluation, post-arrest myocardial dysfunction management, and arrhythmia workup",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Electrophysiology consult for ICD evaluation in cardiac arrest survivors with arrhythmic etiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care consult for goals of care discussion and family support when neuroprognostication suggests poor outcome",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for early mobilization protocol when neurologically and hemodynamically stable; passive range of motion to prevent contractures in comatose patients",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive rehabilitation, and adaptive equipment in ABI survivors",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation (high aspiration risk in ABI survivors), communication assessment, and cognitive-linguistic rehabilitation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive assessment in ABI survivors at 3-6 months post-injury to identify specific deficits and guide rehabilitation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry) for comprehensive rehabilitation planning and disposition (acute rehab vs skilled nursing)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for family support, advance directive assistance, guardianship if needed, and community resource coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Chaplain/spiritual care for spiritual support for patient family during critical illness and end-of-life discussions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Organ procurement organization (OPO) notification when brain death or withdrawal of life-sustaining treatment being discussed; federal requirement in most jurisdictions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Psychiatry consult for post-cardiac arrest anxiety, PTSD, depression in survivors who regain consciousness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient / Family Instructions": [
+        {
+          "item": "Explain that anoxic brain injury occurs because the brain was deprived of oxygen during cardiac arrest and that recovery is unpredictable in the first 72 hours",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Reassure family that targeted temperature management (cooling) is a standard evidence-based treatment and that the patient appears deeply sedated because of medications and cooling, not necessarily because of brain injury severity",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Explain that formal neuroprognostication will not occur until at least 72 hours after rewarming because sedation and hypothermia confound the neurological exam",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Inform family that neuroprognostication uses multiple tests together (exam, EEG, SSEP, MRI, blood tests) and that no single test alone determines outcome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "If poor prognosis confirmed through multimodal testing, discuss goals of care including comfort care, withdrawal of life-sustaining treatment, and organ donation in a compassionate and unhurried manner",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "For survivors: explain that recovery from anoxic brain injury is a prolonged process (months to years); cognitive, emotional, and physical deficits are common; and rehabilitation is essential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "For survivors: report immediately if new seizures (shaking, staring, confusion), worsening weakness, difficulty swallowing, or significant mood changes occur as these may indicate complications requiring treatment adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "For survivors: do not drive until formally cleared by neurology due to risk of seizures and cognitive impairment following anoxic brain injury",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Provide written information about cardiac arrest survivors support groups and brain injury advocacy organizations (Brain Injury Association of America, Sudden Cardiac Arrest Foundation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Cardiac rehabilitation program enrollment for all cardiac arrest survivors to improve cardiovascular fitness and reduce recurrence risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation as smoking increases cardiac arrhythmia and recurrent arrest risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Strict medication adherence for cardiac medications (antiarrhythmics, beta-blockers, antiplatelets, statins) to prevent recurrent arrest",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol cessation or strict limitation to reduce cardiomyopathy progression and seizure threshold lowering",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise (30 min moderate intensity 5 days/week) after cardiac rehabilitation clearance to improve cardiovascular outcomes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mediterranean or DASH diet for cardiovascular risk reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood pressure target <130/80 mmHg for cardiovascular risk reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c target <7.0% for diabetic patients to reduce cardiovascular risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CPAP compliance if obstructive sleep apnea present as OSA increases arrhythmia and recurrent arrest risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home AED (automated external defibrillator) placement for household members trained in BLS if patient at ongoing arrhythmia risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention program for ABI survivors with gait instability, cognitive impairment, or seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive rehabilitation exercises (memory aids, structured routines, environmental modifications) for daily function optimization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Residual sedation / medication effect",
+      "features": "History of prolonged sedation; improves with time after washout; normal SSEP and MRI",
+      "tests": "Sedation washout (5 half-lives); pharmacokinetic assessment; drug levels"
+    },
+    {
+      "diagnosis": "Non-convulsive status epilepticus (NCSE)",
+      "features": "May mimic or coexist with anoxic coma; electrographic seizure activity; some patients improve with ASM treatment",
+      "tests": "cEEG (mandatory; seizures in 10-30% of comatose post-arrest patients)"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy",
+      "features": "Renal failure, hepatic failure, electrolyte disturbances, hypothyroidism; potentially reversible",
+      "tests": "CMP; ammonia; TSH; renal function; blood gas"
+    },
+    {
+      "diagnosis": "Traumatic brain injury",
+      "features": "History of trauma preceding arrest; focal findings on CT; epidural/subdural hematoma",
+      "tests": "CT head; clinical history; mechanism"
+    },
+    {
+      "diagnosis": "Primary intracranial hemorrhage (ICH/SAH)",
+      "features": "Focal deficits; hemorrhage on CT preceding arrest; headache history",
+      "tests": "CT head at admission; CTA"
+    },
+    {
+      "diagnosis": "Acute ischemic stroke (large vessel)",
+      "features": "Focal deficits; vessel occlusion on CTA; asymmetric DWI changes",
+      "tests": "CTA; MRI DWI (focal rather than global restriction)"
+    },
+    {
+      "diagnosis": "Basilar artery occlusion",
+      "features": "Locked-in syndrome mimics coma; preserved vertical eye movements and blinks; posterior circulation stroke",
+      "tests": "CTA (basilar occlusion); MRI brainstem DWI; clinical exam for locked-in"
+    },
+    {
+      "diagnosis": "Toxic/metabolic coma",
+      "features": "Drug overdose, poisoning (CO, cyanide); may respond to specific antidotes; history of exposure",
+      "tests": "Toxicology screen; carboxyhemoglobin; cyanide level; osmolar gap"
+    },
+    {
+      "diagnosis": "Hypothermia (primary)",
+      "features": "Environmental exposure history; core temp <35C preceding arrest; reversibility with rewarming",
+      "tests": "Core temperature; history; rewarm before declaring poor prognosis"
+    },
+    {
+      "diagnosis": "Psychogenic unresponsiveness",
+      "features": "Inconsistent exam findings; may resist eye opening; normal EEG, SSEP, MRI",
+      "tests": "EEG (normal alpha); SSEP normal; MRI normal; caloric testing (nystagmus)"
+    },
+    {
+      "diagnosis": "Brain death / death by neurologic criteria",
+      "features": "Absent all brainstem reflexes; no respiratory drive; irreversible cessation of all brain function",
+      "tests": "Formal brain death evaluation protocol (see separate template)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "TTM at 32-36C for at least 24h in comatose cardiac arrest survivors",
+      "evidenceLevel": "Class I, Level B-R",
+      "source": "[TTM2 Trial Investigators. NEJM 2021](https://pubmed.ncbi.nlm.nih.gov/34133859/) — hypothermia at 33C vs normothermia (37.5C): no significant difference in mortality or neurological outcome at 6 months; [Bernard et al. NEJM 2002](https://pubmed.ncbi.nlm.nih.gov/11856794/) — initial trial showing benefit of 33C; [HACA Trial. NEJM 2002](https://pubmed.ncbi.nlm.nih.gov/11856793/)"
+    },
+    {
+      "recommendation": "Avoid fever (target <37.7C) for at least 72h post-ROSC",
+      "evidenceLevel": "Class I, Level B-NR",
+      "source": "AHA/ILCOR 2020 Guidelines; [Dankiewicz et al. NEJM 2021 (TTM2)](https://pubmed.ncbi.nlm.nih.gov/34133859/)"
+    },
+    {
+      "recommendation": "Multimodal neuroprognostication no earlier than 72h after rewarming",
+      "evidenceLevel": "Class I, Level B-NR",
+      "source": "[Sandroni et al. Intensive Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25223853/); ERC/ESICM 2021 Guidelines; [AAN Practice Parameter Update 2023](https://pubmed.ncbi.nlm.nih.gov/36697245/)"
+    },
+    {
+      "recommendation": "Bilateral absence of N20 on SSEP predicts poor outcome (FPR <1%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Sandroni et al. Intensive Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25223853/); [Zandbergen et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16401859/) — PROPAC study; [Bouwes et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22764258/)"
+    },
+    {
+      "recommendation": "NSE >33 ug/L at 48-72h predicts poor outcome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Stammet et al. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/26132946/) — TTM biomarker substudy; [Sandroni et al. Intensive Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25223853/)"
+    },
+    {
+      "recommendation": "Highly malignant EEG patterns (suppression, burst-suppression without reactivity) predict poor outcome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Westhall et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/26865516/) — TTM EEG substudy; ERC/ESICM 2021; [Hofmeijer et al. Clin Neurophysiol 2015](https://pubmed.ncbi.nlm.nih.gov/24929900/)"
+    },
+    {
+      "recommendation": "Absent pupillary reflexes at >=72h after rewarming predicts poor outcome",
+      "evidenceLevel": "Class I, Level B",
+      "source": "ERC/ESICM 2021; [Sandroni et al. Intensive Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25223853/); Automated pupillometry (NPi) more reliable than manual assessment"
+    },
+    {
+      "recommendation": "Extensive DWI restriction on MRI at 2-7 days predicts poor outcome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Wijman et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19237700/); [Mlynash et al. Neurocrit Care 2010](https://pubmed.ncbi.nlm.nih.gov/20428968/)"
+    },
+    {
+      "recommendation": "CT gray-white ratio <1.10 at 24-48h predicts poor outcome",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Metter et al. Resuscitation 2011](https://pubmed.ncbi.nlm.nih.gov/21367516/); [Lee et al. Resuscitation 2016](https://pubmed.ncbi.nlm.nih.gov/26826561/)"
+    },
+    {
+      "recommendation": "Emergent coronary angiography for STEMI post-arrest",
+      "evidenceLevel": "Class I, Level B",
+      "source": "AHA 2020 Guidelines; [Lemkes et al. NEJM 2019 (COACT trial)](https://pubmed.ncbi.nlm.nih.gov/30883050/) — immediate vs delayed angiography in non-STEMI shockable arrest: no difference"
+    },
+    {
+      "recommendation": "Target normoxia (PaO2 75-100) and normocapnia (PaCO2 35-45)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Kilgannon et al. JAMA 2010](https://pubmed.ncbi.nlm.nih.gov/20571015/) — hyperoxia associated with increased mortality; [Roberts et al. JAMA 2018](https://pubmed.ncbi.nlm.nih.gov/29362797/)"
+    },
+    {
+      "recommendation": "Glucose target 140-180 mg/dL; avoid hypoglycemia",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "AHA 2020 Guidelines; [NICE-SUGAR Trial. NEJM 2009](https://pubmed.ncbi.nlm.nih.gov/19318384/) — intensive glucose control increases mortality in ICU"
+    },
+    {
+      "recommendation": "Post-anoxic status myoclonus within 72h associated with poor outcome but not invariably fatal",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Elmer et al. JAMA Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/26999438/); [Seder et al. Crit Care Med 2015](https://pubmed.ncbi.nlm.nih.gov/25365722/) — some patients with early myoclonus survive with good outcome"
+    },
+    {
+      "recommendation": "Lance-Adams syndrome (chronic post-hypoxic myoclonus in awake patients) compatible with good neurological outcome",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Lance and Adams. Brain 1963](https://pubmed.ncbi.nlm.nih.gov/14090989/); [Freund et al. Medicine 2017](https://pubmed.ncbi.nlm.nih.gov/28178139/)"
+    },
+    {
+      "recommendation": "Amantadine accelerates recovery in disorders of consciousness",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Giacino et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22397877/) — primarily TBI patients; extrapolated to ABI"
+    },
+    {
+      "recommendation": "Self-fulfilling prophecy avoidance: early WLST biases outcome data",
+      "evidenceLevel": "Expert consensus",
+      "source": "[Geocadin et al. Circulation 2019](https://pubmed.ncbi.nlm.nih.gov/31242784/) — AHA scientific statement; [Steinberg et al. Neurology 2020](https://pubmed.ncbi.nlm.nih.gov/32414878/)"
+    },
+    {
+      "recommendation": "Levetiracetam first-line for post-anoxic seizures",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Ruijter et al. JAMA Neurology 2022 (TELSTAR trial)](https://pubmed.ncbi.nlm.nih.gov/35695374/) — aggressive vs standard treatment of electrographic status epilepticus: no difference in primary outcome; treat clinical and electrographic seizures"
+    },
+    {
+      "recommendation": "cEEG monitoring recommended for all comatose post-arrest patients",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Claassen et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15136697/); AHA/AAN guidelines"
+    },
+    {
+      "recommendation": "Avoid early withdrawal of life-sustaining treatment (<72h post-rewarming)",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[Sandroni et al. Intensive Care Med 2020](https://pubmed.ncbi.nlm.nih.gov/32519006/); ERC/ESICM 2021"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Core temperature (esophageal or bladder)",
+      "frequency": "Continuous during TTM; q4h after rewarming",
+      "action": "Adjust cooling device; anti-shivering protocol; investigate fever source",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Arterial blood pressure (arterial line preferred)",
+      "frequency": "Continuous (ICU); q15min (ED); q4h (OPD)",
+      "action": "Titrate vasopressors/inotropes; volume resuscitation; echo",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "GCS / Neurologic exam",
+      "frequency": "q1h x 24h during TTM; q2h x 24h after rewarming; q4h thereafter; formal exam at >=72h after rewarming",
+      "action": "If declining: STAT CT; rule out new event; reassess prognostication",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Continuous EEG (cEEG)",
+      "frequency": "Continuous x 48-72h minimum; longer if seizures detected",
+      "action": "Treat seizures aggressively; highly malignant pattern (suppression, burst-suppression without reactivity) is poor prognostic sign",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q1h during insulin drip; q4-6h on sliding scale",
+      "action": "Adjust insulin; avoid hypoglycemia <70",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum electrolytes (K, Mg, Ca, Phos)",
+      "frequency": "q4-6h during TTM (hypothermia causes intracellular K shift, hypomagnesemia); q12h after rewarming",
+      "action": "Aggressive replacement; arrhythmia risk if uncorrected",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Lactate clearance",
+      "frequency": "q4-6h until normal",
+      "action": "Optimize perfusion; volume; vasopressors",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "NSE (neuron-specific enolase)",
+      "frequency": "At 24h, 48h, 72h post-ROSC; check for hemolysis (invalidates result)",
+      "action": "Interpret as part of multimodal prognostication; >60 ug/L highly predictive of poor outcome",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Pupillary light reflex (including automated pupillometry if available)",
+      "frequency": "q1h during acute phase; formal assessment at >=72h after rewarming",
+      "action": "Absent at >=72h after rewarming is poor prognostic sign; automated pupillometry more quantitative; reduce confounder effect",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q6h during osmotherapy; q12h otherwise",
+      "action": "Adjust osmotherapy; free water restriction vs replacement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum osmolality",
+      "frequency": "q6h during mannitol therapy",
+      "action": "Hold mannitol if >320",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Shivering assessment (BSAS)",
+      "frequency": "q1h during TTM",
+      "action": "Stepwise anti-shivering protocol",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ICP (if monitoring in place)",
+      "frequency": "Continuous",
+      "action": "Tiered ICP management; osmotherapy; sedation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to ICU (ALL comatose post-arrest)",
+      "criteria": "ALL comatose cardiac arrest survivors require ICU admission for: TTM, cEEG, hemodynamic monitoring, mechanical ventilation, neuroprognostication at >=72h after rewarming"
+    },
+    {
+      "disposition": "Remain in ICU",
+      "criteria": "Ongoing TTM or rewarming phase; hemodynamic instability requiring vasopressors; active seizures; mechanical ventilation; pending formal neuroprognostication"
+    },
+    {
+      "disposition": "Step down to floor (monitored bed)",
+      "criteria": "Completed TTM and rewarming; hemodynamically stable off vasopressors; no active seizures; extubated with adequate airway; neuroprognostication suggests potential recovery; awaiting rehabilitation placement"
+    },
+    {
+      "disposition": "Transfer to acute inpatient rehabilitation",
+      "criteria": "Following commands consistently; medically stable; can tolerate 3 hours/day of therapy; motivated for rehabilitation; functional deficits amenable to rehabilitation interventions"
+    },
+    {
+      "disposition": "Transfer to skilled nursing facility (SNF)",
+      "criteria": "Unable to tolerate 3h/day of rehabilitation therapy; chronic disorders of consciousness (vegetative or minimally conscious state) requiring ongoing medical management; tracheostomy/PEG care"
+    },
+    {
+      "disposition": "Transfer to long-term acute care (LTAC)",
+      "criteria": "Requires prolonged ventilator weaning; ongoing complex medical needs; not yet stable enough for SNF or rehabilitation"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Alert, communicating; ambulatory or safe with home support; seizures controlled; cardiac workup complete; medications reconciled; follow-up arranged; home AED placed if indicated"
+    },
+    {
+      "disposition": "Comfort care / withdrawal of life-sustaining treatment",
+      "criteria": "Multimodal neuroprognostication at >=72h post-rewarming confirms poor outcome by at least 2 independent modalities (exam, EEG, SSEP, MRI, NSE); family informed and goals of care aligned; palliative care involved"
+    },
+    {
+      "disposition": "Brain death evaluation",
+      "criteria": "Clinical suspicion of brain death (absent brainstem reflexes, no respiratory drive); proceed with formal brain death protocol (see Brain Death Evaluation template)"
+    },
+    {
+      "disposition": "Organ donation consideration",
+      "criteria": "When brain death confirmed or withdrawal of life-sustaining treatment planned; OPO notified per federal requirement; family approached by OPO designated requestor"
+    }
+  ]
+}

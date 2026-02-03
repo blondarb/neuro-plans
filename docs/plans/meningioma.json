@@ -1,0 +1,1625 @@
+{
+  "id": "meningioma",
+  "title": "Meningioma (WHO Grade I, II, III)",
+  "version": "1.1",
+  "icd10": [
+    "** D32.9 (Benign neoplasm of meninges",
+    "unspecified)",
+    "D32.0 (Benign neoplasm of cerebral meninges)",
+    "D32.1 (Benign neoplasm of spinal meninges)",
+    "D42.9 (Neoplasm of uncertain behavior of meninges",
+    "unspecified)",
+    "D42.0 (Neoplasm of uncertain behavior of cerebral meninges)",
+    "C70.0 (Malignant neoplasm of cerebral meninges)",
+    "C70.9 (Malignant neoplasm of meninges",
+    "unspecified)",
+    "G93.6 (Cerebral edema)"
+  ],
+  "scope": "** Comprehensive management of newly diagnosed and recurrent meningiomas (WHO grades I, II, and III) in adults. Covers incidental discovery, symptomatic presentation, neuroimaging evaluation (MRI with gadolinium, CT), observation criteria for asymptomatic/small meningiomas, surgical planning (including skull base approaches), stereotactic radiosurgery (SRS) and fractionated radiation therapy, perioperative management (dexamethasone, seizure control), recurrence monitoring with serial MRI, and grade-specific treatment strategies. Excludes pediatric meningiomas, radiation-induced meningiomas (separate etiologic consideration but same management), and spinal meningiomas (briefly referenced but distinct surgical approach).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Pre-operative baseline; platelet count for surgical candidacy; leukocytosis screen if infection differential",
+          "target": "WBC, platelets within normal limits",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function for contrast imaging; hepatic function baseline for medications; electrolyte assessment; glucose baseline before dexamethasone",
+          "target": "Normal; anticipate glucose elevation with dexamethasone",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulopathy assessment for surgical candidacy; pre-operative clearance",
+          "target": "Normal (INR <1.5 for surgery)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Steroid-induced hyperglycemia baseline if dexamethasone initiated; pre-operative assessment",
+          "target": "<180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Type and screen",
+          "rationale": "Pre-operative for craniotomy; anticipate intraoperative blood loss especially for vascular skull base meningiomas",
+          "target": "Available for crossmatch",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Fatigue differential; baseline before radiation therapy if planned; pituitary axis assessment if parasellar meningioma",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy test (women of childbearing age) (CPT 81025)",
+          "rationale": "Radiation contraindicated in pregnancy; contrast imaging considerations; meningiomas may enlarge during pregnancy due to progesterone receptors",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Prolactin (CPT 84146)",
+          "rationale": "If parasellar or suprasellar meningioma compressing pituitary stalk; hyperprolactinemia from stalk effect",
+          "target": "Mildly elevated if stalk effect (<200 ng/mL); markedly elevated suggests prolactinoma",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "If parasellar meningioma with suspected pituitary axis compromise; baseline before dexamethasone",
+          "target": "Normal (>10 mcg/dL AM); low suggests hypopituitarism",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IGF-1 (CPT 84305)",
+          "rationale": "Growth hormone axis assessment if parasellar meningioma compressing pituitary",
+          "target": "Normal for age",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "rationale": "Pituitary axis assessment if parasellar meningioma; complement TSH",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "LH, FSH (CPT 83002, 83001)",
+          "rationale": "Gonadotropin axis assessment if parasellar meningioma; menstrual irregularity evaluation",
+          "target": "Normal for age and sex",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR / CRP (CPT 85652+86140)",
+          "rationale": "If infection differential (epidural abscess, pachymeningitis); inflammatory markers",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "If syncope or seizure presentation; cardiac evaluation before surgery",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CPK/CK (CPT 82550)",
+          "rationale": "Post-seizure rhabdomyolysis screen",
+          "target": "Normal; elevated after prolonged seizures",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before initiating prolonged dexamethasone; perioperative glucose optimization",
+          "target": "<7.0% (ideal)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86335)",
+          "rationale": "If multiple dural-based lesions raising concern for plasmacytoma or lymphoproliferative disorder",
+          "target": "Normal; monoclonal band absent",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis differential if dural-based enhancing mass",
+          "target": "Normal (<52 U/L); elevated in sarcoidosis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG4 (CPT 86235)",
+          "rationale": "IgG4-related pachymeningitis differential if diffuse dural thickening",
+          "target": "Normal (<135 mg/dL); elevated in IgG4 disease",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "NF2 genetic testing",
+          "rationale": "If bilateral meningiomas or multiple meningiomas suggesting neurofibromatosis type 2; young patients with meningioma",
+          "target": "NF2 mutation status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "SMARCE1, TRAF7, KLF4, AKT1, PIK3CA, SMO mutation panel",
+          "rationale": "Molecular profiling for treatment-refractory or recurrent atypical/anaplastic meningiomas; emerging targeted therapy targets",
+          "target": "Molecular profile for treatment planning",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (serum)",
+          "rationale": "If clinical presentation suggests paraneoplastic syndrome; dural metastasis differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediately upon presentation for acute symptoms (seizure, headache, focal deficit, altered mental status)",
+          "target": "Extra-axial hyperdense or isodense mass; calcification (20-25% of meningiomas); hyperostosis of adjacent bone; possible hemorrhage; midline shift; hydrocephalus",
+          "contraindications": "None in emergency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without contrast (gadolinium) (CPT 70553)",
+          "timing": "Within 24-48h of presentation; GOLD STANDARD for meningioma; for incidental findings: baseline MRI then observation",
+          "target": "Homogeneously enhancing extra-axial dural-based mass; broad dural attachment; dural tail sign (60-72%); well-circumscribed margins; CSF cleft between tumor and brain; T2 signal variable (iso to hyperintense); calcification as signal voids; arterial supply from meningeal vessels; possible venous sinus invasion (parasagittal/falcine)",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT head with contrast (CPT 70460)",
+          "timing": "If MRI contraindicated or unavailable; initial evaluation in ED",
+          "target": "Homogeneously enhancing extra-axial mass; calcification; hyperostosis; may show bony invasion",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Pre-operative baseline; QTc assessment for anti-emetics",
+          "target": "Normal",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Pre-operative clearance; metastatic disease differential (dural metastases)",
+          "target": "No lung mass; no effusion",
+          "contraindications": "Pregnancy (shield)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MR venography (MRV) (CPT 70547)",
+          "timing": "Pre-operative for parasagittal and falcine meningiomas; assess venous sinus patency and degree of invasion",
+          "target": "Patent vs. occluded sagittal sinus; degree of sinus invasion (partial vs. complete); collateral venous drainage pathways; critical for surgical planning",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT angiography (CTA) of head (CPT 70496)",
+          "timing": "Pre-operative vascular mapping; large or vascular meningiomas; skull base tumors encasing major arteries",
+          "target": "Arterial supply identification; ICA/vertebral artery encasement assessment; surgical planning for vascular control",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Digital subtraction angiography (DSA) (CPT 36224)",
+          "timing": "Pre-operative embolization planning for large vascular meningiomas; assess feeding vessels and collateral supply",
+          "target": "Tumor blush; feeding arteries (MMA, occipital, APhA); degree of vascularity; potential for pre-operative embolization to reduce intraoperative blood loss",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy; vascular access complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pre-operative embolization (CPT 61624)",
+          "timing": "24-48h before surgery for large hypervascular meningiomas; reduces intraoperative blood loss",
+          "target": "Reduced tumor vascularity; confirmation of embolized feeding vessels",
+          "contraindications": "Eloquent vessel supply; dangerous anastomoses (ECA to ICA); coagulopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI orbits with contrast (CPT 70543)",
+          "timing": "Sphenoid wing or optic nerve sheath meningioma with visual symptoms",
+          "target": "Optic nerve compression; optic canal involvement; orbital extension",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Formal visual field testing (Humphrey) (CPT 92083)",
+          "timing": "Baseline for parasellar, sphenoid wing, or optic nerve sheath meningiomas; monitor visual function pre and post treatment",
+          "target": "Visual field deficit pattern (bitemporal hemianopia if chiasmal; homonymous if optic tract)",
+          "contraindications": "Patient cooperation required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Audiometry (CPT 92557)",
+          "timing": "Baseline for cerebellopontine angle (CPA) meningiomas or those involving internal auditory canal",
+          "target": "Sensorineural hearing loss; speech discrimination score",
+          "contraindications": "Patient cooperation required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI spine (whole) with contrast (CPT 72156+72157+72158)",
+          "timing": "If NF2 suspected (multiple meningiomas); spinal symptoms suggesting spinal meningioma",
+          "target": "Spinal meningiomas; drop metastases (very rare, grade III only)",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MR perfusion (DSC or DCE) (CPT 70553)",
+          "timing": "Atypical imaging features; differentiate meningioma from hemangiopericytoma/SFT, dural metastases, or lymphoma",
+          "target": "Elevated rCBV in meningioma; hemangiopericytoma may show higher rCBV; dural metastases variable",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MR spectroscopy (MRS) (CPT 76390)",
+          "timing": "Atypical imaging appearance; differentiate from other dural-based lesions",
+          "target": "Elevated alanine peak (characteristic of meningioma); elevated glutamine/glutamate; low NAA (extra-axial, no neuronal markers)",
+          "contraindications": "MRI-incompatible implants; GFR <30 (gadolinium risk); severe claustrophobia",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET or Ga-68 DOTATATE PET (CPT 78816)",
+          "timing": "Ga-68 DOTATATE: somatostatin receptor-positive meningioma detection; recurrence monitoring; treatment planning for peptide receptor radionuclide therapy (PRRT); FDG-PET: differentiate high-grade from low-grade meningioma",
+          "target": "DOTATATE: high uptake in meningioma (somatostatin receptor 2a positive); FDG: higher uptake in grade II/III vs. grade I",
+          "contraindications": "Pregnancy; limited availability for DOTATATE",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Octreotide scan (In-111 pentetreotide) (CPT 78802)",
+          "timing": "Somatostatin receptor expression assessment for potential somatostatin analog therapy in recurrent meningioma",
+          "target": "Positive uptake indicates somatostatin receptor expression (treatment target)",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Dexamethasone (vasogenic edema)",
+          "route": "IV/PO",
+          "indication": "Vasogenic edema from meningioma; symptomatic mass effect; perioperative edema reduction; reduce peritumoral swelling to improve neurologic function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV/PO q6h; moderate symptoms: 4-8 mg/day; severe edema/herniation: 10 mg IV bolus then 4-8 mg q6h (up to 16-24 mg/day); taper as soon as clinically feasible over 1-2 weeks post-surgery; GI prophylaxis with PPI while on steroids",
+            "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes (relative); psychosis history (relative)",
+          "monitoring": "Glucose q6h (target <180 mg/dL), BP, mood/sleep, GI symptoms, signs of infection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Acute seizure termination; seizures occur in 20-50% of convexity meningiomas",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total",
+            "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator",
+          "monitoring": "RR, O2 sat, BP, sedation level; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure - loading)",
+          "route": "IV",
+          "indication": "Anti-seizure medication loading for new seizures associated with meningioma; preferred due to no CYP enzyme induction and favorable safety profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1500 mg",
+                "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load, then 500-1500 mg PO/IV BID; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (seizure - loading) 1500 mg IV"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, irritability); generally well tolerated",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP with herniation signs from large meningioma; bridge to surgical intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q4-6h; maintain serum osmolality <320 mOsm/kg",
+            "orderSentence": "Mannitol (elevated ICP) 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial bleeding (relative)",
+          "monitoring": "Serum osmolality q6h, serum sodium, I/O, renal function",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline (elevated ICP)",
+          "route": "IV",
+          "indication": "Acute elevated ICP from large meningioma; alternative to mannitol; may be preferred in hypotensive patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "23.4% NaCl 30 mL via central line over 15 min OR 3% NaCl 250 mL IV over 30 min; target Na 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline (elevated ICP) 30 mL IV"
+          },
+          "contraindications": "Severe hypernatremia (Na >160)",
+          "monitoring": "Sodium q4-6h, serum osmolality, I/O, central line required for 23.4%",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin (DVT prophylaxis)",
+          "route": "SC",
+          "indication": "DVT prophylaxis for surgical patients; meningioma surgery carries VTE risk especially with prolonged procedures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Enoxaparin 40 mg SC daily; start 24h post-operatively per neurosurgery; mechanical prophylaxis (SCDs) from admission until ambulatory",
+            "orderSentence": "Enoxaparin (DVT prophylaxis) 40 mg SC"
+          },
+          "contraindications": "Active intracranial hemorrhage; planned surgery within 24h",
+          "monitoring": "Platelet count; signs of bleeding",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole (stress ulcer prophylaxis)",
+          "route": "PO/IV",
+          "indication": "GI bleed prevention while on dexamethasone; combined corticosteroid use increases risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pantoprazole 40 mg IV/PO daily OR omeprazole 20 mg PO daily; continue throughout steroid course",
+            "orderSentence": "Pantoprazole (stress ulcer prophylaxis) 40 mg IV"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam (maintenance)",
+          "route": "PO",
+          "indication": "Seizure prevention after first seizure from meningioma; NO prophylactic AEDs in patients without seizures unless high-risk perioperative period",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate by 500 mg/day q1-2 weeks to seizure control; max 3000 mg/day; renal dosing if GFR <50",
+            "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes (agitation, depression, irritability), somnolence; no drug interactions",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Alternative or adjunct AED for seizures from meningioma; minimal drug interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Lacosamide 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; titrate by 50 mg/dose weekly; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg PO"
+          },
+          "contraindications": "PR interval >200 ms; 2nd/3rd degree AV block; severe hepatic impairment",
+          "monitoring": "ECG at baseline and with dose changes; PR interval monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO/IV",
+          "indication": "Second-line AED for meningioma-related seizures; useful when levetiracetam not tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate by 250 mg q3-5 days to therapeutic level (50-100 mcg/mL); max 60 mg/kg/day",
+            "orderSentence": "Valproic acid 250 mg PO"
+          },
+          "contraindications": "Hepatic disease; mitochondrial disorders (Alpers syndrome); pregnancy (teratogenic); urea cycle disorders; pancreatitis history",
+          "monitoring": "LFTs at baseline and periodically; ammonia if AMS; CBC (thrombocytopenia); VPA level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Dexamethasone (taper)",
+          "route": "PO",
+          "indication": "Transition from IV to PO; taper after surgery as soon as clinically feasible to minimize steroid side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Dexamethasone (taper) 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 2 mg every 3-5 days (e.g., 16 to 12 to 8 to 6 to 4 to 2 to 1 to off); slower taper if symptoms recur; monitor for adrenal insufficiency if >3 weeks of use",
+            "orderSentence": "Dexamethasone (taper) 4 mg PO"
+          },
+          "contraindications": "Symptom recurrence (hold taper, reassess)",
+          "monitoring": "Glucose, BP, mood, steroid myopathy (proximal weakness), immunosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea/vomiting from elevated ICP or perioperative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO q8h PRN nausea; max 24 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; concurrent use of QT-prolonging agents",
+          "monitoring": "QTc if risk factors; serotonin syndrome risk with SSRIs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Headache from tumor-associated edema or post-operative; avoid NSAIDs peri-operatively due to bleeding risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN headache; max 3 g/day (2 g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin (steroid-induced hyperglycemia)",
+          "route": "SC/IV",
+          "indication": "Glucose management while on dexamethasone; hyperglycemia common with steroid use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Variable",
+                "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Fingerstick glucose q6h; sliding scale insulin initially; basal-bolus if persistently >180 mg/dL; may need 2-3x baseline insulin on dexamethasone; anticipate glucose improvement as steroids taper",
+            "orderSentence": "Insulin (steroid-induced hyperglycemia) Variable SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h (q1h if insulin drip)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Steroid-induced osteoporosis prevention if prolonged dexamethasone (>2 weeks) anticipated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg Ca + 800 IU Vit D",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg + Vitamin D 800-1000 IU daily while on steroids",
+            "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 800 IU Vit D PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones (relative)",
+          "monitoring": "Calcium level; vitamin D level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TMP-SMX (PJP prophylaxis)",
+          "route": "PO",
+          "indication": "Pneumocystis jirovecii pneumonia prophylaxis if dexamethasone >20 mg/week AND concomitant temozolomide, bevacizumab, or other immunosuppression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 DS tab",
+                "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tab PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "TMP-SMX 1 DS tablet 3x/week (Mon/Wed/Fri); if sulfa allergic: atovaquone 1500 mg PO daily or dapsone 100 mg PO daily (check G6PD first)",
+            "orderSentence": "TMP-SMX (PJP prophylaxis) 1 DS tab PO"
+          },
+          "contraindications": "Sulfa allergy (use alternative); severe renal impairment; megaloblastic anemia from folate deficiency",
+          "monitoring": "CBC q2-4 weeks; renal function; rash; report fever/dyspnea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam (perioperative prophylaxis)",
+          "route": "PO/IV",
+          "indication": "Short-course perioperative seizure prophylaxis for craniotomy in patients without seizure history; 7-day course only per institutional protocol; NOT recommended beyond 7 days without documented seizure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (perioperative prophylaxis) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Levetiracetam 500 mg BID starting day of surgery; discontinue at 7 days post-operatively unless seizure occurs; if seizure occurs, convert to maintenance dosing",
+            "orderSentence": "Levetiracetam (perioperative prophylaxis) 500 mg PO"
+          },
+          "contraindications": "None absolute; reduce dose if CrCl <50",
+          "monitoring": "Behavioral changes; generally well tolerated",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Re-resection (surgical)",
+          "route": "-",
+          "indication": "Recurrent meningioma amenable to re-resection; symptomatic recurrence after initial surgery; Simpson grade-dependent recurrence risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Maximal safe resection",
+                "orderSentence": "Re-resection (surgical) Maximal safe resection -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Maximal safe resection; Simpson Grade I (complete removal with dural attachment and abnormal bone) is goal when safely achievable; post-op MRI within 48h",
+            "orderSentence": "Re-resection (surgical) Maximal safe resection -"
+          },
+          "contraindications": "Poor functional status; eloquent location precluding safe resection; extensive dural sinus invasion",
+          "monitoring": "Post-op MRI within 48h; neurologic exams; wound monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Bevacizumab (Avastin)",
+          "route": "IV",
+          "indication": "Recurrent/progressive meningioma refractory to surgery and radiation; anti-VEGF monoclonal antibody; limited evidence but some case series show stabilization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Bevacizumab (Avastin) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV every 2 weeks; infuse first dose over 90 min, then 60 min, then 30 min if tolerated; continue until progression or intolerable toxicity",
+            "orderSentence": "Bevacizumab (Avastin) 10 mg/kg IV"
+          },
+          "contraindications": "Uncontrolled hypertension; recent surgery (28 days); active hemorrhage; bowel perforation risk; pregnancy; severe proteinuria (>3.5 g/24h)",
+          "monitoring": "BP each visit; urinalysis for proteinuria q2-4 weeks; wound healing assessment; CBC; signs of GI perforation, thromboembolism",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Somatostatin analog (Octreotide LAR)",
+          "route": "IM",
+          "indication": "Recurrent meningioma expressing somatostatin receptors (confirmed by octreotide scan or DOTATATE PET); limited evidence; some patients show disease stabilization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Somatostatin analog (Octreotide LAR) 30 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Octreotide LAR 30 mg IM every 4 weeks; may require dose adjustment based on response; continue if stable disease or objective response",
+            "orderSentence": "Somatostatin analog (Octreotide LAR) 30 mg IM"
+          },
+          "contraindications": "Gallbladder disease (relative); uncontrolled diabetes",
+          "monitoring": "Gallbladder ultrasound q6 months; glucose monitoring; GI symptoms (diarrhea, abdominal pain); GH/IGF-1 levels",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Temozolomide",
+          "route": "PO",
+          "indication": "Recurrent atypical or anaplastic meningioma (WHO grade II/III) refractory to surgery and radiation; limited evidence; consider when no clinical trial available",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg/m2",
+                "orderSentence": "Temozolomide 150 mg/m2 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "150-200 mg/m2 PO days 1-5 of 28-day cycle; take on empty stomach 1h before bedtime; antiemetic pre-medication",
+            "orderSentence": "Temozolomide 150 mg/m2 PO"
+          },
+          "contraindications": "ANC <1500; platelets <100K; severe hepatic/renal impairment; pregnancy",
+          "monitoring": "CBC Day 1 and Day 22 of each cycle; LFTs monthly; limited efficacy data in meningioma",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Sunitinib",
+          "route": "PO",
+          "indication": "Recurrent/progressive meningioma refractory to standard therapies; VEGFR/PDGFR tyrosine kinase inhibitor; Kaley et al. showed PFS-6 of 42% in atypical/anaplastic meningioma",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sunitinib 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg PO daily for 28 days followed by 14-day rest (4/2 schedule); or 37.5 mg continuous daily schedule; dose reduce for toxicity",
+            "orderSentence": "Sunitinib 50 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; hepatic impairment; QT prolongation; bleeding risk",
+          "monitoring": "BP weekly initially; CBC q2 weeks; LFTs; TSH q3 months; cardiac function (LVEF); hand-foot syndrome; diarrhea",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mifepristone (RU-486)",
+          "route": "PO",
+          "indication": "Progesterone receptor-positive meningioma (mostly WHO grade I); antiprogesterone therapy; SWOG S9005 showed no significant benefit overall but some individual responses",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Mifepristone (RU-486) 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO daily continuously; efficacy data limited and conflicting",
+            "orderSentence": "Mifepristone (RU-486) 200 mg PO"
+          },
+          "contraindications": "Pregnancy (abortifacient); chronic adrenal failure; concurrent corticosteroid use for life-threatening conditions; hemorrhagic disorders",
+          "monitoring": "Cortisol levels (adrenal insufficiency); potassium; endometrial thickness in women; vaginal bleeding",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying Therapies (Surgery / Radiation)": [
+        {
+          "item": "Surgical resection (craniotomy)",
+          "route": "-",
+          "indication": "Symptomatic meningioma; growing meningioma on serial imaging; large meningiomas (>3 cm) with mass effect; WHO grade II/III meningiomas; Simpson Grade I-III resection goal based on location",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per neurosurgical approach",
+                "orderSentence": "Surgical resection (craniotomy) Per neurosurgical approach -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Approach depends on location: convexity (direct), parasagittal (with sinus evaluation), skull base (various approaches - subfrontal, pterional, retrosigmoid, transpetrosal); aim for Simpson Grade I (complete resection with dural attachment and involved bone) when safely achievable",
+            "orderSentence": "Surgical resection (craniotomy) Per neurosurgical approach -"
+          },
+          "pretreatment": "Pre-operative MRI within 2 weeks; MRV for parasagittal tumors; CTA/DSA for vascular assessment of skull base tumors; consider pre-operative embolization for hypervascular tumors; medical optimization; DVT prophylaxis plan",
+          "contraindications": "Poor surgical candidate (advanced age with significant comorbidities, KPS <50); tumor in surgically inaccessible location; patient preference for observation or radiation",
+          "monitoring": "Post-op MRI within 48h; neurologic exams q2-4h for 24-48h; wound care; DVT prophylaxis; pain management; taper dexamethasone post-operatively",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stereotactic radiosurgery (SRS) - Gamma Knife / CyberKnife / LINAC",
+          "route": "-",
+          "indication": "WHO grade I meningiomas <=3 cm not amenable to surgery or patient preference; residual/recurrent meningiomas after subtotal resection; cavernous sinus meningiomas (surgery high risk); adjuvant after subtotal resection of WHO grade II",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12-16 Gy",
+                "orderSentence": "Stereotactic radiosurgery (SRS) - Gamma Knife / CyberKnife / LINAC 12-16 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "12-16 Gy to tumor margin in single fraction (typically 13-14 Gy for skull base; 14-16 Gy for convexity); dose depends on proximity to critical structures (optic chiasm <=8 Gy, brainstem <=12 Gy)",
+            "orderSentence": "Stereotactic radiosurgery (SRS) - Gamma Knife / CyberKnife / LINAC 12-16 Gy -"
+          },
+          "pretreatment": "High-resolution MRI for treatment planning (thin-cut, contrast-enhanced); frame-based or frameless immobilization; pathologic confirmation preferred (especially if imaging atypical)",
+          "contraindications": "Tumor >3 cm (relative; may use fractionated SRT instead); too close to optic apparatus for single fraction (use fractionated); diffuse/en plaque meningioma",
+          "monitoring": "MRI at 6 months, then annually for 5 years, then q2 years; monitor for radiation necrosis (1-3%); cranial nerve deficits (optic, trigeminal, facial depending on location)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fractionated stereotactic radiotherapy (fSRT)",
+          "route": "-",
+          "indication": "WHO grade I meningiomas >3 cm or near critical structures (optic chiasm, brainstem); WHO grade II after subtotal resection or recurrence; large skull base meningiomas",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-54 Gy",
+                "orderSentence": "Fractionated stereotactic radiotherapy (fSRT) 50-54 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "50-54 Gy in 28-30 fractions (1.8 Gy/fraction) over 5-6 weeks; conforms to irregularly shaped tumors near critical structures",
+            "orderSentence": "Fractionated stereotactic radiotherapy (fSRT) 50-54 Gy -"
+          },
+          "pretreatment": "MRI-based treatment planning; immobilization mask fitting; adequate interval from surgery (typically 4-6 weeks)",
+          "contraindications": "Pregnancy; prior full-dose radiation to same area (assess cumulative dose)",
+          "monitoring": "MRI q6 months for 2 years, then annually; radiation necrosis risk; fatigue during treatment; alopecia at entry sites",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adjuvant radiation therapy (WHO grade II - atypical)",
+          "route": "-",
+          "indication": "WHO grade II (atypical) meningioma after subtotal resection (Simpson grade IV-V); consider after gross total resection if high proliferation index (Ki-67 >10%) or brain invasion; reduces recurrence rate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "54-60 Gy",
+                "orderSentence": "Adjuvant radiation therapy (WHO grade II - atypical) 54-60 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "54-60 Gy in 30-33 fractions; begin 4-6 weeks after surgery; target tumor bed with margin",
+            "orderSentence": "Adjuvant radiation therapy (WHO grade II - atypical) 54-60 Gy -"
+          },
+          "pretreatment": "Post-operative MRI for treatment planning; adequate wound healing; pathologic confirmation of WHO grade II",
+          "contraindications": "Pregnancy; prior full-dose radiation to same area (assess cumulative dose)",
+          "monitoring": "MRI q3-4 months for first 2 years, then q6 months; monitor for recurrence which is common in grade II (35-40% at 5 years even with treatment)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adjuvant radiation therapy (WHO grade III - anaplastic)",
+          "route": "-",
+          "indication": "WHO grade III (anaplastic/malignant) meningioma after any extent of resection; radiation indicated regardless of surgical completeness due to high recurrence rate (50-80% at 5 years)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "59.4-60 Gy",
+                "orderSentence": "Adjuvant radiation therapy (WHO grade III - anaplastic) 59.4-60 Gy -"
+              }
+            ],
+            "route": "-",
+            "instructions": "59.4-60 Gy in 33 fractions (1.8 Gy/fraction) over 6.5 weeks; some centers consider dose escalation; target tumor bed with 1-2 cm CTV margin",
+            "orderSentence": "Adjuvant radiation therapy (WHO grade III - anaplastic) 59.4-60 Gy -"
+          },
+          "pretreatment": "Post-operative MRI for treatment planning; pathologic confirmation of WHO grade III; molecular profiling",
+          "contraindications": "Pregnancy; prior full-dose radiation to same area (assess cumulative dose)",
+          "monitoring": "MRI q2-3 months for first 2 years given high recurrence risk; close clinical follow-up; consider systemic therapy trials",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Observation (watchful waiting)",
+          "route": "-",
+          "indication": "Asymptomatic incidental meningiomas (especially small <2 cm); elderly patients with slowly growing tumors; patient preference; no significant edema or mass effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Serial MRI surveillance",
+                "orderSentence": "Observation (watchful waiting) Serial MRI surveillance -"
+              }
+            ],
+            "route": "-",
+            "instructions": "MRI at 3 months (first scan), then 6 months, then annually for 5 years, then q2 years if stable; intervene if growth >2-3 mm/year, development of symptoms, or new edema",
+            "orderSentence": "Observation (watchful waiting) Serial MRI surveillance -"
+          },
+          "pretreatment": "Baseline MRI with volumetric assessment; patient counseling about observation rationale and surveillance plan; reliable patient for follow-up",
+          "contraindications": "Not appropriate for symptomatic meningiomas, WHO grade II/III, or rapidly growing tumors",
+          "monitoring": "MRI per schedule; clinical assessment at each visit; patient education on symptoms warranting urgent evaluation (new headache, seizure, focal deficit)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery consultation for surgical candidacy evaluation, resection planning, and assessment of Simpson grade achievability based on tumor location and vascular involvement",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Radiation oncology consultation for SRS, fSRT, or adjuvant radiation planning in patients with WHO grade II/III meningioma, residual tumor after surgery, or meningioma not amenable to resection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuro-oncology consultation for WHO grade II/III meningioma management, systemic therapy options for recurrent/refractory disease, and clinical trial enrollment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Multidisciplinary tumor board presentation for coordinated treatment planning including neurosurgery, radiation oncology, neuro-oncology, neuropathology, and neuroradiology",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuro-ophthalmology consultation for visual field deficits, papilledema, or optic nerve/chiasm compression from parasellar, sphenoid wing, or olfactory groove meningioma",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology for formal visual field testing (Humphrey perimetry) baseline and follow-up if tumor near visual pathways",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology consultation for pituitary axis evaluation if parasellar meningioma causing hormonal dysfunction, or for steroid-induced hyperglycemia management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT/Otolaryngology for hearing assessment and management if CPA meningioma with auditory symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for mobility assessment, fall prevention given neurologic deficits and steroid myopathy, and post-operative rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive compensation strategies, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation if posterior fossa or skull base meningioma with cranial nerve involvement, and language assessment if dominant hemisphere tumor",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consultation for insurance authorization, disability paperwork, caregiver support, and community resource coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology evaluation for baseline cognitive assessment if tumor in eloquent cortex, before radiation, or if cognitive complaints",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling if multiple meningiomas, bilateral meningiomas, or age <40 years for NF2 screening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care consultation for WHO grade III meningioma or recurrent progressive disease for symptom management and goals of care discussion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for new or worsening headache, sudden weakness, vision changes, speech difficulty, or seizures (may indicate tumor progression, hemorrhage, or increased edema)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology and neurosurgery due to seizure risk and visual field deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop dexamethasone abruptly as this may cause adrenal crisis; follow prescribed taper schedule exactly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new vision changes (blurring, double vision, visual field loss) as this may indicate tumor growth or post-treatment edema requiring urgent evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For observed (watchful waiting) patients: attend all scheduled MRI surveillance appointments as recommended; growth may occur without symptoms initially",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification indicating brain tumor diagnosis and seizure risk if history of seizures",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a symptom diary documenting headaches, seizures, vision changes, weakness, and cognitive changes to track disease course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any fever, wound swelling, or drainage after surgery as this may indicate post-operative infection requiring urgent treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Post-SRS/radiation: report any new or worsening neurologic symptoms (may indicate radiation-induced edema or necrosis, typically at 3-12 months post-treatment)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For women of childbearing age: meningiomas may grow during pregnancy; discuss family planning with neurosurgeon and OB/GYN before conception",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Low-sodium diet while on dexamethasone to reduce fluid retention, edema, and hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood sugar monitoring and diabetic diet while on steroids to prevent steroid-induced hyperglycemia complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular low-impact exercise (walking, swimming, yoga) as tolerated to maintain strength, reduce steroid myopathy, and improve quality of life",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall precautions at home including removal of trip hazards, use of handrails, non-slip mats, and night lights given focal deficits and seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to optimize wound healing and surgical outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid exogenous hormones (hormone replacement therapy, oral contraceptives with progesterone) as meningiomas express progesterone receptors and may grow with hormonal stimulation; discuss with OB/GYN for alternatives",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CPAP compliance if obstructive sleep apnea present to prevent nocturnal hypoxia which may worsen cerebral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day unless fluid restricted) to support renal function particularly if undergoing contrast imaging studies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sun protection during radiation therapy course due to scalp sensitivity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight-bearing exercise and calcium/vitamin D supplementation for bone health if on prolonged steroids",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Dural metastases",
+      "features": "History of systemic malignancy (breast, lung, prostate most common); often multiple dural-based lesions; may lack the classic dural tail or show irregular enhancement; leptomeningeal involvement more common; known primary malignancy",
+      "tests": "CT chest/abdomen/pelvis for primary site; PET/CT; biopsy showing non-meningothelial histology (cytokeratin, TTF-1, etc.); clinical history of known cancer"
+    },
+    {
+      "diagnosis": "Solitary fibrous tumor / Hemangiopericytoma (SFT/HPC)",
+      "features": "WHO grade 2 or 3; narrow dural attachment (vs. broad base of meningioma); prominent flow voids; heterogeneous enhancement; more aggressive; higher recurrence and metastasis risk",
+      "tests": "MR perfusion (very high rCBV); angiography showing dense tumor blush; biopsy with STAT6 nuclear positivity (defining marker); CD34 positive; lack of EMA/progesterone receptor expression"
+    },
+    {
+      "diagnosis": "Primary CNS lymphoma (dural)",
+      "features": "Rare dural presentation; homogeneous enhancement; restricted diffusion on DWI; may respond dramatically to corticosteroids; immunocompromised patients at higher risk",
+      "tests": "DWI showing restricted diffusion; CSF flow cytometry; stereotactic biopsy; HIV testing; typically B-cell markers positive; avoid steroids before biopsy"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis (dural involvement)",
+      "features": "Diffuse pachymeningeal enhancement; may be focal mimicking meningioma; systemic sarcoidosis features; elevated ACE level; hilar lymphadenopathy",
+      "tests": "Serum ACE level; chest CT (bilateral hilar lymphadenopathy); CSF analysis; biopsy showing non-caseating granulomas; tissue ACE immunostaining; FDG-PET for systemic disease"
+    },
+    {
+      "diagnosis": "IgG4-related pachymeningitis",
+      "features": "Diffuse dural thickening and enhancement; may mimic en plaque meningioma; often involves other organs (pancreas, salivary glands, orbits); responds to corticosteroids initially",
+      "tests": "Serum IgG4 level; dural biopsy showing IgG4-positive plasma cells (>10/HPF); IgG4/IgG ratio >40%; storiform fibrosis; obliterative phlebitis"
+    },
+    {
+      "diagnosis": "Granulomatosis with polyangiitis (GPA/Wegener's)",
+      "features": "Dural-based mass with pachymeningeal thickening; sinunasal involvement; may present with cranial neuropathies; systemic vasculitis features",
+      "tests": "ANCA (cANCA/PR3); sinus CT showing mucosal disease; biopsy showing necrotizing granulomatous inflammation; renal function"
+    },
+    {
+      "diagnosis": "Dural arteriovenous fistula (DAVF)",
+      "features": "Can cause dural enhancement mimicking meningioma; venous hypertension; pulsatile tinnitus; hemorrhage risk; associated with venous sinus thrombosis",
+      "tests": "MRA/MRV showing abnormal flow voids; catheter angiography is gold standard (shows fistula with early venous filling); lack of solid mass component"
+    },
+    {
+      "diagnosis": "Plasmacytoma / Multiple myeloma",
+      "features": "Solitary or multiple dural-based lesions; may erode bone; lytic skull lesions; elevated serum protein",
+      "tests": "SPEP/UPEP; serum free light chains; bone marrow biopsy; skeletal survey; biopsy showing plasma cell neoplasm; CD138 positive"
+    },
+    {
+      "diagnosis": "Rosai-Dorfman disease (meningeal)",
+      "features": "Rare; dural-based mass mimicking meningioma; may have lymphadenopathy; young adults",
+      "tests": "Biopsy showing emperipolesis (lymphocytes within histiocyte cytoplasm); S100 positive, CD68 positive; CD1a negative"
+    },
+    {
+      "diagnosis": "Schwannoma (dural-based)",
+      "features": "Typically arises from cranial nerves; may appear dural-based at skull base (especially CPA); heterogeneous enhancement; cystic components common",
+      "tests": "MRI: arising from cranial nerve (vs. dural attachment); internal auditory canal widening if vestibular schwannoma; biopsy showing S100 positive, EMA negative (opposite of meningioma)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MRI with gadolinium is the gold standard imaging for meningioma diagnosis and surgical planning",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Watts et al. J Neurooncol 2022](https://pubmed.ncbi.nlm.nih.gov/36322327/) (EANO guideline)"
+    },
+    {
+      "recommendation": "Simpson grading system for extent of resection predicts recurrence risk",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Simpson D. J Neurol Neurosurg Psychiatry 1957](https://pubmed.ncbi.nlm.nih.gov/13416946/)"
+    },
+    {
+      "recommendation": "Gross total resection (Simpson Grade I) provides best local control for WHO grade I meningioma",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Meling et al. J Neurosurg 2019](https://pubmed.ncbi.nlm.nih.gov/30485223/); [Gousias et al. J Neurosurg 2016](https://pubmed.ncbi.nlm.nih.gov/26495946/)"
+    },
+    {
+      "recommendation": "Stereotactic radiosurgery achieves 90-95% local control for WHO grade I meningiomas at 10 years",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Kondziolka et al. J Neurosurg 1999](https://pubmed.ncbi.nlm.nih.gov/10413154/); [Pollock et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12546362/)"
+    },
+    {
+      "recommendation": "SRS marginal dose of 12-16 Gy recommended for meningiomas; higher doses associated with better control",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Flickinger et al. Int J Radiat Oncol Biol Phys 2003](https://pubmed.ncbi.nlm.nih.gov/14630270/)"
+    },
+    {
+      "recommendation": "WHO 2021 classification defines meningioma grading (Grade I, II, III) based on histologic criteria",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Louis et al. Neuro-Oncology 2021](https://pubmed.ncbi.nlm.nih.gov/34185076/) (WHO CNS5)"
+    },
+    {
+      "recommendation": "WHO grade II (atypical) meningioma has 35-40% recurrence at 5 years; adjuvant RT reduces recurrence",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rogers et al. J Neurosurg 2015](https://pubmed.ncbi.nlm.nih.gov/25679280/); [Komotar et al. J Neurooncol 2012](https://pubmed.ncbi.nlm.nih.gov/22270846/)"
+    },
+    {
+      "recommendation": "NRC/RTOG 0539: risk-adapted radiation for meningiomas; intermediate-risk (recurrent grade I, new grade II) benefit from adjuvant RT",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Rogers et al. J Clin Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/33108247/) (NRG/RTOG 0539)"
+    },
+    {
+      "recommendation": "Observation is appropriate for small asymptomatic incidental meningiomas with serial MRI surveillance",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Yano et al. J Neurol Neurosurg Psychiatry 2006](https://pubmed.ncbi.nlm.nih.gov/16788012/); [Oya et al. J Neurosurg 2018](https://pubmed.ncbi.nlm.nih.gov/29701559/)"
+    },
+    {
+      "recommendation": "Meningioma growth rate averages 2-4 mm/year; 63-75% remain stable or grow slowly on observation",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Hashimoto et al. J Neurosurg 2012](https://pubmed.ncbi.nlm.nih.gov/22480234/)"
+    },
+    {
+      "recommendation": "Bevacizumab shows limited activity in recurrent meningioma; some disease stabilization",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Nayak et al. Neuro-Oncology 2012](https://pubmed.ncbi.nlm.nih.gov/22718995/); [Lou et al. J Neurooncol 2015](https://pubmed.ncbi.nlm.nih.gov/25432052/)"
+    },
+    {
+      "recommendation": "Sunitinib shows PFS-6 of 42% in recurrent atypical/anaplastic meningioma",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Kaley et al. J Clin Oncol 2015](https://pubmed.ncbi.nlm.nih.gov/25488966/)"
+    },
+    {
+      "recommendation": "Prophylactic AEDs NOT recommended in meningioma patients without seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Glantz et al. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10762503/) (AAN Practice Parameter)"
+    },
+    {
+      "recommendation": "Levetiracetam preferred AED in brain tumor patients due to no enzyme induction",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/20352281/)"
+    },
+    {
+      "recommendation": "Dexamethasone effective for peritumoral vasogenic edema; use minimum effective dose and taper",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ryken et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/20352275/)"
+    },
+    {
+      "recommendation": "MRV essential for preoperative planning of parasagittal meningiomas to assess sinus invasion",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Sindou M. Practical Handbook of Neurosurgery 2009](https://pubmed.ncbi.nlm.nih.gov/19885601/)"
+    },
+    {
+      "recommendation": "Pre-operative embolization reduces intraoperative blood loss for hypervascular meningiomas",
+      "evidenceLevel": "Class II, Level C",
+      "source": "[Raper et al. J Neurointerv Surg 2020](https://pubmed.ncbi.nlm.nih.gov/31619529/)"
+    },
+    {
+      "recommendation": "Ga-68 DOTATATE PET superior to conventional imaging for meningioma detection and treatment planning",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Galldiks et al. Neuro-Oncology 2017](https://pubmed.ncbi.nlm.nih.gov/28011929/)"
+    },
+    {
+      "recommendation": "Meningiomas express progesterone receptors; exogenous hormone use may promote growth",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Wiemels et al. J Clin Oncol 2010](https://pubmed.ncbi.nlm.nih.gov/20065189/)"
+    },
+    {
+      "recommendation": "EANO guidelines for meningioma diagnosis and management",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Goldbrunner et al. Lancet Oncol 2021](https://pubmed.ncbi.nlm.nih.gov/34418401/) (EANO guideline update)"
+    },
+    {
+      "recommendation": "NCCN Clinical Practice Guidelines for CNS Cancers: Meningioma section",
+      "evidenceLevel": "Expert Consensus",
+      "source": "NCCN Guidelines v1.2024 (https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (motor, sensory, language, cognition, cranial nerves, visual fields)",
+      "frequency": "q2-4h inpatient; each clinic visit",
+      "action": "STAT MRI if decline; increase dexamethasone; neurosurgery alert if herniation",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h while on dexamethasone (q1h if insulin drip)",
+      "action": "Sliding scale to basal-bolus insulin; endocrine consult if refractory",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRI brain with contrast (post-operative)",
+      "frequency": "Within 48h of surgery (new baseline); then at 3 months, 6 months, 12 months",
+      "action": "If residual: radiation oncology referral; if recurrence: tumor board",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain with contrast (WHO grade I - observation)",
+      "frequency": "3 months (baseline), 6 months, then annually for 5 years, then q2 years if stable",
+      "action": "Growth >2-3 mm/year: consider intervention (surgery or SRS)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain with contrast (WHO grade I - post-treatment)",
+      "frequency": "6 months, then annually for 5 years, then q2 years",
+      "action": "Recurrence: tumor board for re-resection, radiation, or observation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain with contrast (WHO grade II)",
+      "frequency": "q3-4 months for first 2 years, then q6 months for years 3-5, then annually",
+      "action": "Recurrence: multidisciplinary re-evaluation; consider re-resection, re-irradiation, systemic therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain with contrast (WHO grade III)",
+      "frequency": "q2-3 months for first 2 years, then q3-4 months for years 3-5",
+      "action": "Recurrence: urgent tumor board; systemic therapy, clinical trials",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Visual fields (Humphrey perimetry)",
+      "frequency": "Baseline pre-treatment; 3 months post-treatment; then annually if near visual pathways",
+      "action": "Urgent MRI if new deficits; ophthalmology reassessment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Audiometry",
+      "frequency": "Baseline for CPA meningiomas; 6 months and annually post-treatment",
+      "action": "ENT referral for hearing aid evaluation; assess for radiation injury vs. recurrence",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pituitary hormone panel",
+      "frequency": "q6 months for parasellar meningiomas; annually after treatment",
+      "action": "Hormone replacement as needed; endocrinology follow-up",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Continuous in ICU; q4h on floor; each clinic visit",
+      "action": "Antihypertensives; especially monitor if on steroids",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q6-12h inpatient; each visit outpatient",
+      "action": "SIADH workup if <130; DI workup if >150 post-op; fluid management",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Continuous inpatient if seizure history; patient diary outpatient",
+      "action": "AED dose adjustment; verify compliance; EEG if subclinical suspected",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "ICU admission",
+      "criteria": "GCS <=12; signs of herniation (pupil asymmetry, posturing, Cushing triad); acute hemorrhage into tumor; status epilepticus; post-craniotomy (first 24h per institutional protocol); respiratory compromise requiring intubation; large skull base resection with cranial nerve monitoring needs"
+    },
+    {
+      "disposition": "General neurology/neurosurgery floor",
+      "criteria": "New diagnosis with symptomatic edema requiring IV dexamethasone; post-craniotomy step-down from ICU (typically POD 1-2); seizures requiring AED optimization; functional decline requiring inpatient rehabilitation planning; pre-operative workup and embolization"
+    },
+    {
+      "disposition": "Observation (<=24h)",
+      "criteria": "Known meningioma with mild symptom worsening; post-SRS monitoring (typically outpatient but observation if large or eloquent location); steroid dose adjustment"
+    },
+    {
+      "disposition": "Discharge home",
+      "criteria": "Neurologically stable for >=24h; seizure-free >=24h on oral AED; oral dexamethasone taper plan established with written instructions; pain controlled on oral medications; outpatient follow-up scheduled (neurosurgery and/or radiation oncology within 2-4 weeks); safe ambulation or adequate caregiver; wound care instructions if post-operative"
+    },
+    {
+      "disposition": "Discharge home (incidental meningioma)",
+      "criteria": "Asymptomatic incidental finding; MRI baseline obtained or ordered; observation plan established with surveillance MRI schedule; neurosurgery outpatient referral within 4-6 weeks; return precautions provided"
+    },
+    {
+      "disposition": "Transfer to higher level care",
+      "criteria": "Need for neurosurgical expertise not available (especially skull base surgery); need for SRS/radiation not available; tumor board or neuro-oncology consultation not available; clinical trial access"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Significant post-operative neurologic deficits requiring intensive rehabilitation (hemiparesis, aphasia, cranial nerve deficits); KPS 40-60 with rehabilitation potential"
+    },
+    {
+      "disposition": "Palliative care / Hospice",
+      "criteria": "End-stage WHO grade III meningioma with progressive decline; exhausted reasonable treatment options; patient/family goals aligned with comfort care"
+    }
+  ]
+}

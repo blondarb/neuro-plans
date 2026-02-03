@@ -1,0 +1,1124 @@
+{
+  "id": "narcolepsy",
+  "title": "Narcolepsy",
+  "version": "1.1",
+  "icd10": [
+    "** G47.411 (Narcolepsy with cataplexy)",
+    "G47.419 (Narcolepsy with cataplexy",
+    "unspecified)",
+    "G47.421 (Narcolepsy without cataplexy)",
+    "G47.429 (Narcolepsy without cataplexy",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis and management of narcolepsy type 1 (with cataplexy/orexin deficiency) and type 2 (without cataplexy) in adults. Covers diagnostic workup including PSG/MSLT, CSF orexin, pharmacologic treatment of excessive daytime sleepiness and cataplexy, and long-term management. Excludes idiopathic hypersomnia as separate entity, Kleine-Levin syndrome, and secondary narcolepsy due to structural brain lesions.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "rationale": "Exclude anemia contributing to fatigue",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Renal/hepatic function; electrolytes; pre-treatment baseline",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Exclude hypothyroidism causing fatigue/hypersomnia",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum ferritin (CPT 82728)",
+          "rationale": "Iron deficiency contributes to EDS and RLS comorbidity",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Exclude substance use causing sleepiness; required pre-MSLT",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "CSF hypocretin-1 / orexin-A (sent to Stanford reference lab)",
+          "rationale": "Definitive diagnosis of NT1 if ≤110 pg/mL; useful when MSLT equivocal or impractical",
+          "target": "≤110 pg/mL diagnostic of NT1; >200 pg/mL normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HLA-DQB1*06:02 typing (CPT 81383)",
+          "rationale": "Present in >90% of NT1; supportive but not diagnostic (also in 25% general population)",
+          "target": "Positive supports NT1 diagnosis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "Deficiency can cause fatigue",
+          "target": ">400 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes screening; metabolic contributors to fatigue",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatic function panel (CPT 80076)",
+          "rationale": "Baseline before medication initiation",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-streptococcal antibodies (ASO, anti-DNase B)",
+          "rationale": "Pediatric/young adult onset following streptococcal infection",
+          "target": "Document; may support autoimmune etiology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-tribbles homolog 2 (TRIB2) antibodies",
+          "rationale": "Research biomarker for autoimmune etiology of NT1",
+          "target": "Document",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum cortisol / ACTH",
+          "rationale": "If adrenal insufficiency suspected",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "CSF hypocretin-1 / orexin-A",
+          "rationale": "Definitive biomarker for NT1; ≤110 pg/mL diagnostic",
+          "target": "≤110 pg/mL (NT1); >200 pg/mL normal; 110-200 intermediate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count",
+          "rationale": "Rule out inflammatory process",
+          "target": "WBC <5, RBC 0",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Rule out CNS inflammation",
+          "target": "15-45 mg/dL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Baseline; rule out infection",
+          "target": ">60% serum glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Polysomnography (PSG) (CPT 95810)",
+          "timing": "Night before MSLT; required for MSLT interpretation",
+          "target": "Exclude OSA, PLMD; document SOREMP within 15 min",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Multiple Sleep Latency Test (MSLT) (CPT 95805)",
+          "timing": "Day following PSG; at least 2 weeks off REM-suppressant medications",
+          "target": "Mean sleep latency ≤8 min with ≥2 SOREMPs",
+          "contraindications": "Must have preceding PSG; stop REM-suppressants 2 weeks prior",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "If secondary narcolepsy suspected (structural hypothalamic lesion)",
+          "target": "Rule out hypothalamic mass, demyelination, sarcoidosis",
+          "contraindications": "Per MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Actigraphy (2 weeks) (CPT 95803)",
+          "timing": "Pre-MSLT; document adequate sleep schedule",
+          "target": "≥7 hours nightly sleep for 2 weeks before MSLT",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep diary (2 weeks)",
+          "timing": "Pre-MSLT; confirm adequate sleep duration",
+          "target": "≥7 hours nightly for 2 weeks",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Maintenance of Wakefulness Test (MWT) (CPT 95805)",
+          "timing": "Treatment response monitoring; fitness-for-duty evaluation",
+          "target": "Mean latency >8 min (normal >40 min)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Repeat MSLT",
+          "timing": "If initial MSLT equivocal or performed while on REM-suppressants",
+          "target": "Confirm or refute diagnosis",
+          "contraindications": "Same as initial MSLT",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Non-Pharmacologic Treatment (All Patients)": [
+        {
+          "item": "Scheduled daytime naps",
+          "route": "-",
+          "indication": "EDS management; adjunct to all pharmacotherapy",
+          "dosing": {
+            "instructions": "15-20 minute naps 1-2 times daily; schedule at predictable times (mid-morning, early afternoon)",
+            "orderSentence": "Scheduled daytime naps - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep hygiene optimization",
+          "route": "-",
+          "indication": "Consolidate nocturnal sleep; reduce daytime sleepiness",
+          "dosing": {
+            "instructions": "Regular sleep-wake schedule; 7-9 hours nightly; cool dark room; limit screen time before bed",
+            "orderSentence": "Sleep hygiene optimization - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sedating substances",
+          "route": "-",
+          "indication": "Prevent worsening of EDS",
+          "dosing": {
+            "instructions": "Avoid alcohol, sedating antihistamines, benzodiazepines; limit caffeine to morning only",
+            "orderSentence": "Avoid sedating substances - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom response",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Safety counseling",
+          "route": "-",
+          "indication": "Prevent injury from sleepiness or cataplexy",
+          "dosing": {
+            "instructions": "Driving restrictions until EDS controlled; avoid heights, swimming alone, operating heavy machinery",
+            "orderSentence": "Safety counseling - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Compliance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Treatment - Excessive Daytime Sleepiness": [
+        {
+          "item": "Modafinil (Provigil)",
+          "route": "PO",
+          "indication": "First-line wake-promoting agent for EDS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil (Provigil) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; increase to 200 mg daily after 1 week; may split 200 mg AM + 200 mg early afternoon if needed; max 400 mg/day",
+            "orderSentence": "Modafinil (Provigil) 100 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives",
+          "monitoring": "Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Armodafinil (Nuvigil)",
+          "route": "PO",
+          "indication": "First-line wake-promoting agent for EDS; longer duration than modafinil",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Armodafinil (Nuvigil) 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg each morning; may increase to 250 mg daily; longer half-life than modafinil; max 250 mg/day",
+            "orderSentence": "Armodafinil (Nuvigil) 150 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives",
+          "monitoring": "Blood pressure; rash (rare Stevens-Johnson); sleep quality; contraceptive efficacy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Solriamfetol (Sunosi)",
+          "route": "PO",
+          "indication": "EDS in narcolepsy; dopamine/norepinephrine reuptake inhibitor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Solriamfetol (Sunosi) 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg once daily upon awakening; may increase to 150 mg daily after ≥3 days; max 150 mg/day for narcolepsy",
+            "orderSentence": "Solriamfetol (Sunosi) 75 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; uncontrolled hypertension; severe renal impairment (eGFR <15); end-stage renal disease",
+          "monitoring": "Blood pressure; heart rate; psychiatric symptoms; weight; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pitolisant (Wakix)",
+          "route": "PO",
+          "indication": "EDS and cataplexy in narcolepsy; histamine-3 receptor antagonist/inverse agonist",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8.9 mg",
+                "orderSentence": "Pitolisant (Wakix) 8.9 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 8.9 mg once daily upon awakening; titrate weekly: 8.9 mg to 17.8 mg to 35.6 mg; max 35.6 mg/day",
+            "orderSentence": "Pitolisant (Wakix) 8.9 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent strong CYP2D6 inhibitors (max 17.8 mg); QT-prolonging drugs",
+          "monitoring": "QTc interval if risk factors; hepatic function; insomnia; headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Treatment - Cataplexy and REM-Related Symptoms": [
+        {
+          "item": "Sodium oxybate (Xyrem)",
+          "route": "PO",
+          "indication": "First-line for cataplexy; also improves EDS and disrupted nocturnal sleep; REMS program (Xyrem REMS)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.25 g",
+                "orderSentence": "Sodium oxybate (Xyrem) 2.25 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 4.5 g/night divided into 2 equal doses (2.25 g at bedtime + 2.25 g 2.5-4 hours later); titrate by 1.5 g/night every 1-2 weeks; effective range 6-9 g/night; max 9 g/night",
+            "orderSentence": "Sodium oxybate (Xyrem) 2.25 g PO"
+          },
+          "contraindications": "Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids; untreated sleep-disordered breathing",
+          "monitoring": "Respiratory depression; CNS depression; sleepwalking; depression/suicidality; sodium intake (high sodium content); abuse potential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lower-sodium oxybate (Xywav)",
+          "route": "PO",
+          "indication": "First-line for cataplexy; 92% less sodium than Xyrem; also improves EDS and disrupted nocturnal sleep; REMS program (Xywav REMS)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.25 g",
+                "orderSentence": "Lower-sodium oxybate (Xywav) 2.25 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 4.5 g/night divided into 2 equal doses at bedtime and 2.5-4 hours later; titrate by 1.5 g/night every 1-2 weeks; max 9 g/night",
+            "orderSentence": "Lower-sodium oxybate (Xywav) 2.25 g PO"
+          },
+          "contraindications": "Succinic semialdehyde dehydrogenase deficiency; concurrent sedative-hypnotics or alcohol; concurrent opioids",
+          "monitoring": "Respiratory depression; CNS depression; sleepwalking; depression/suicidality; abuse potential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine",
+          "route": "PO",
+          "indication": "Anticataplectic agent; also treats comorbid depression and anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; increase by 37.5-75 mg every 1-2 weeks; target 75-225 mg/day; max 225 mg/day",
+            "orderSentence": "Venlafaxine 37.5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; uncontrolled hypertension; abrupt discontinuation risk",
+          "monitoring": "Blood pressure; heart rate; serotonin syndrome; discontinuation symptoms if stopped abruptly; suicidality in young adults",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluoxetine",
+          "route": "PO",
+          "indication": "Anticataplectic agent; also treats comorbid depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Fluoxetine 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-20 mg daily; increase by 10-20 mg every 2-4 weeks; target 20-60 mg/day; max 80 mg/day",
+            "orderSentence": "Fluoxetine 10 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; concurrent pimozide or thioridazine",
+          "monitoring": "Serotonin syndrome; QTc at higher doses; activation/insomnia; suicidality in young adults",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clomipramine",
+          "route": "PO",
+          "indication": "Potent anticataplectic agent; tricyclic antidepressant with strong REM-suppressive properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Clomipramine 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg at bedtime; titrate by 25 mg every 1-2 weeks; target 25-75 mg/day; max 150 mg/day",
+            "orderSentence": "Clomipramine 10 mg PO"
+          },
+          "contraindications": "Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma",
+          "monitoring": "ECG if dose >75 mg/day or age >40; anticholinergic effects; orthostatic hypotension; weight gain; sexual dysfunction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line / Refractory Treatment": [
+        {
+          "item": "Methylphenidate (Ritalin)",
+          "route": "PO",
+          "indication": "EDS refractory to first-line agents; rapid onset of action",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate (Ritalin) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID (morning and early afternoon); titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing",
+            "orderSentence": "Methylphenidate (Ritalin) 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; severe anxiety or agitation; motor tics/Tourette; glaucoma; structural cardiac abnormalities",
+          "monitoring": "Blood pressure; heart rate; weight; appetite; growth (pediatric); psychiatric symptoms; abuse potential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dextroamphetamine (Dexedrine)",
+          "route": "PO",
+          "indication": "EDS refractory to modafinil/solriamfetol; potent wake-promoting agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Dextroamphetamine (Dexedrine) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg once or twice daily; titrate by 5 mg/week; max 60 mg/day; avoid evening dosing",
+            "orderSentence": "Dextroamphetamine (Dexedrine) 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse",
+          "monitoring": "Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mixed amphetamine salts (Adderall)",
+          "route": "PO",
+          "indication": "EDS refractory to first-line agents; combined amphetamine formulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Mixed amphetamine salts (Adderall) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg once or twice daily; titrate by 5-10 mg/week; max 60 mg/day; avoid evening dosing",
+            "orderSentence": "Mixed amphetamine salts (Adderall) 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; advanced atherosclerosis; symptomatic cardiovascular disease; moderate-severe hypertension; glaucoma; agitated states; history of drug abuse",
+          "monitoring": "Blood pressure; heart rate; weight; appetite; psychiatric symptoms; abuse potential (Schedule II)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protriptyline",
+          "route": "PO",
+          "indication": "Anticataplectic agent with stimulant properties; less sedating TCA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Protriptyline 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg in the morning; titrate by 5-10 mg every 1-2 weeks; max 60 mg/day",
+            "orderSentence": "Protriptyline 5 mg PO"
+          },
+          "contraindications": "Recent MI; concurrent MAOIs; cardiac conduction disease; urinary retention; narrow-angle glaucoma",
+          "monitoring": "ECG if dose >20 mg/day or age >40; anticholinergic effects; dry mouth; urinary retention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Adjunctive / Symptomatic Treatment": [
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Disrupted nocturnal sleep; circadian rhythm support",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg 30 minutes before bedtime; may help consolidate nighttime sleep",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "Autoimmune conditions (theoretical)",
+          "monitoring": "Daytime sedation; next-day grogginess",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Disrupted nocturnal sleep; comorbid insomnia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg at bedtime; max 100 mg; avoid if nocturnal oxybate used",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; may worsen daytime sedation",
+          "monitoring": "Priapism (rare); orthostatic hypotension; next-day sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atomoxetine",
+          "route": "PO",
+          "indication": "EDS with comorbid ADHD; norepinephrine reuptake inhibitor with mild anticataplectic properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Atomoxetine 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 40 mg daily; increase to 80 mg after ≥3 days; max 100 mg/day",
+            "orderSentence": "Atomoxetine 40 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; narrow-angle glaucoma; pheochromocytoma; severe cardiovascular disease",
+          "monitoring": "Blood pressure; heart rate; hepatic function (rare hepatotoxicity); suicidality in children/adolescents",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Sleep medicine specialist for PSG/MSLT scheduling, diagnosis confirmation, and treatment optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology for evaluation of secondary causes if structural brain lesion suspected or atypical presentation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for management of comorbid depression, anxiety, or behavioral issues associated with narcolepsy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability evaluation, vocational counseling, and community resource coordination",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for workplace accommodation strategies and energy conservation techniques",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology if concurrent obstructive sleep apnea identified on PSG requiring CPAP titration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Narcolepsy is a lifelong neurological condition caused by loss of brain cells that produce hypocretin; it is not laziness or a psychological problem",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until excessive daytime sleepiness is adequately controlled with treatment (risk of sleep attacks at the wheel)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report to state DMV as required by local law; obtain fitness-to-drive evaluation through MWT when applicable",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take scheduled 15-20 minute naps during the day to improve alertness (naps are therapeutic, not a sign of inadequate treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not abruptly stop antidepressant medications used for cataplexy as this may cause severe rebound cataplexy (status cataplecticus)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Notify all providers about narcolepsy diagnosis before any sedation or anesthesia (heightened sensitivity to sedatives)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol, which worsens excessive sleepiness and disrupts nocturnal sleep",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification stating narcolepsy diagnosis, especially if taking sodium oxybate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Narcolepsy Network (narcolepsynetwork.org) and Wake Up Narcolepsy (wakeupnarcolepsy.org) for patient resources and support groups",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain strict sleep-wake schedule with consistent bedtime and wake time to consolidate nocturnal sleep",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular moderate exercise (30 minutes daily) to improve alertness and overall health; avoid vigorous exercise close to bedtime",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid heavy meals during the day as postprandial sleepiness exacerbates EDS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine to morning hours only; excessive caffeine may disrupt nighttime sleep without adequately controlling EDS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inform employer about narcolepsy for reasonable workplace accommodations (scheduled nap breaks, flexible schedule) under ADA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid shift work and jobs requiring sustained vigilance (air traffic control, long-haul driving) unless EDS is well-controlled",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Emotional management strategies to reduce cataplexy triggers; cognitive behavioral techniques for emotional regulation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight management as narcolepsy type 1 is associated with obesity and metabolic syndrome",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Obstructive sleep apnea (OSA)",
+      "features": "Snoring, witnessed apneas, obesity; EDS improves with CPAP; no cataplexy; MSLT may show shortened latency but typically <2 SOREMPs",
+      "tests": "PSG with respiratory scoring; AHI >5 events/hour"
+    },
+    {
+      "diagnosis": "Idiopathic hypersomnia",
+      "features": "Prolonged non-refreshing sleep; sleep inertia/drunkenness; no cataplexy; MSLT mean latency ≤8 min but <2 SOREMPs; long total sleep time (>11 hours)",
+      "tests": "MSLT (<2 SOREMPs); actigraphy showing prolonged sleep; CSF orexin normal"
+    },
+    {
+      "diagnosis": "Insufficient sleep syndrome",
+      "features": "Chronic sleep restriction; resolves with sleep extension; no cataplexy; ESS elevated but normalizes with adequate sleep",
+      "tests": "Sleep diary/actigraphy showing <7 hours habitual sleep; resolution with sleep extension"
+    },
+    {
+      "diagnosis": "Depression with hypersomnia",
+      "features": "Depressed mood, anhedonia, psychomotor retardation; fatigue more than true sleepiness; no cataplexy; MSLT usually normal",
+      "tests": "Psychiatric evaluation; PHQ-9; MSLT typically mean latency >8 min"
+    },
+    {
+      "diagnosis": "Medication-induced somnolence",
+      "features": "Temporal relationship to medication initiation; resolves with dose reduction or discontinuation; no cataplexy",
+      "tests": "Medication review; temporal correlation"
+    },
+    {
+      "diagnosis": "Hypothyroidism",
+      "features": "Fatigue, cold intolerance, weight gain, constipation; no cataplexy; no SOREMPs",
+      "tests": "TSH elevated; free T4 low"
+    },
+    {
+      "diagnosis": "Periodic limb movement disorder",
+      "features": "Nocturnal limb movements; EDS from sleep disruption; no cataplexy",
+      "tests": "PSG with PLMS >15/hour without other narcolepsy features"
+    },
+    {
+      "diagnosis": "Kleine-Levin syndrome",
+      "features": "Recurrent episodes of hypersomnia lasting days-weeks with cognitive/behavioral changes; asymptomatic between episodes",
+      "tests": "Episodic pattern; normal inter-episode PSG/MSLT"
+    },
+    {
+      "diagnosis": "Epilepsy (atonic seizures)",
+      "features": "Sudden falls with loss of consciousness (vs. preserved consciousness in cataplexy); may have postictal confusion",
+      "tests": "EEG; video-EEG monitoring; no emotional trigger"
+    },
+    {
+      "diagnosis": "Conversion disorder (functional cataplexy)",
+      "features": "Atypical triggers; prolonged episodes; variable pattern; no other narcolepsy symptoms",
+      "tests": "PSG/MSLT normal; CSF orexin normal; psychiatric evaluation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ICSD-3 diagnostic criteria for narcolepsy type 1 and type 2",
+      "evidenceLevel": "Consensus guidelines",
+      "source": "[Trotti LM. Curr Med Res Opin 2016](https://pubmed.ncbi.nlm.nih.gov/27359185/)"
+    },
+    {
+      "recommendation": "CSF hypocretin-1 ≤110 pg/mL diagnostic for narcolepsy type 1",
+      "evidenceLevel": "Class I",
+      "source": "[Mignot et al. Arch Neurol 2002](https://pubmed.ncbi.nlm.nih.gov/12374492/)"
+    },
+    {
+      "recommendation": "CSF hypocretin deficiency in narcolepsy with cataplexy",
+      "evidenceLevel": "Class I",
+      "source": "[Nishino et al. Ann Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11558795/)"
+    },
+    {
+      "recommendation": "Modafinil efficacy for EDS in narcolepsy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[US Modafinil in Narcolepsy Multicenter Study Group. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10720292/)"
+    },
+    {
+      "recommendation": "Modafinil systematic review and meta-analysis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Golicki et al. Br J Clin Pharmacol 2010](https://pubmed.ncbi.nlm.nih.gov/20671626/)"
+    },
+    {
+      "recommendation": "Solriamfetol efficacy for EDS in narcolepsy (TONES 2)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Thorpy et al. Ann Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30694576/)"
+    },
+    {
+      "recommendation": "Pitolisant efficacy for EDS in narcolepsy (HARMONY I)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Dauvilliers et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/24107292/)"
+    },
+    {
+      "recommendation": "Pitolisant long-term efficacy and safety (HARMONY III)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Dauvilliers et al. Sleep 2019](https://pubmed.ncbi.nlm.nih.gov/31529094/)"
+    },
+    {
+      "recommendation": "Sodium oxybate efficacy for cataplexy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Xyrem International Study Group. Sleep Med 2005](https://pubmed.ncbi.nlm.nih.gov/16099718/)"
+    },
+    {
+      "recommendation": "Sodium oxybate systematic review for narcolepsy-cataplexy",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Alshaikh et al. J Clin Sleep Med 2012](https://pubmed.ncbi.nlm.nih.gov/22893778/)"
+    },
+    {
+      "recommendation": "European guideline on narcolepsy management (modafinil, pitolisant, SXB, solriamfetol strong; methylphenidate, amphetamines weak for EDS)",
+      "evidenceLevel": "Guideline, GRADE methodology",
+      "source": "[Bassetti et al. J Sleep Res 2021](https://pubmed.ncbi.nlm.nih.gov/34173288/)"
+    },
+    {
+      "recommendation": "Venlafaxine and clomipramine strong recommendation for cataplexy",
+      "evidenceLevel": "Guideline",
+      "source": "[Bassetti et al. J Sleep Res 2021](https://pubmed.ncbi.nlm.nih.gov/34173288/)"
+    },
+    {
+      "recommendation": "Scheduled naps improve alertness in narcolepsy",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Expert consensus; [Bassetti et al. J Sleep Res 2021](https://pubmed.ncbi.nlm.nih.gov/34173288/)"
+    },
+    {
+      "recommendation": "HLA-DQB1*06:02 associated with narcolepsy type 1 (>90%)",
+      "evidenceLevel": "Class I",
+      "source": "[Mignot et al. Arch Neurol 2002](https://pubmed.ncbi.nlm.nih.gov/12374492/)"
+    },
+    {
+      "recommendation": "Rebound cataplexy with abrupt antidepressant discontinuation",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; case reports"
+    },
+    {
+      "recommendation": "Sodium oxybate REMS program required",
+      "evidenceLevel": "FDA mandate",
+      "source": "[FDA labeling / REMS](https://www.accessdata.fda.gov/scripts/cder/rems/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Epworth Sleepiness Scale (ESS)",
+      "frequency": "Each visit",
+      "action": "Adjust wake-promoting agent dose or switch therapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cataplexy frequency (episodes/week)",
+      "frequency": "Each visit",
+      "action": "Adjust anticataplectic dose; add or switch therapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Each visit; more frequently if on stimulants or solriamfetol",
+      "action": "Dose reduction; add antihypertensive; switch medication",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Heart rate",
+      "frequency": "Each visit if on stimulants",
+      "action": "Dose reduction; cardiology referral if persistent tachycardia",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight/BMI",
+      "frequency": "Every 3-6 months",
+      "action": "Dietary counseling; exercise; evaluate medication effects",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Mood/depression screening (PHQ-9)",
+      "frequency": "Every 3-6 months",
+      "action": "Psychiatric referral; adjust medications; monitor suicidality",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "QTc interval (if on pitolisant)",
+      "frequency": "Baseline and with dose changes",
+      "action": "Reduce dose or discontinue; correct electrolytes; cardiology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Hepatic function (if on pitolisant or atomoxetine)",
+      "frequency": "Baseline; 6 months; annually",
+      "action": "Dose reduction or discontinuation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sodium intake assessment (if on Xyrem)",
+      "frequency": "Each visit",
+      "action": "Switch to Xywav (lower-sodium formulation); dietary counseling",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality / nocturnal disruption",
+      "frequency": "Each visit",
+      "action": "Adjust sodium oxybate dose; evaluate comorbid sleep disorders",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Driving safety assessment",
+      "frequency": "Every 6-12 months",
+      "action": "Reinforce driving restrictions; consider MWT; adjust treatment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Substance use screening (if on stimulants)",
+      "frequency": "Every 6-12 months",
+      "action": "Consider non-stimulant alternatives; refer to addiction medicine",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Majority of patients; newly suspected or established narcolepsy for diagnostic workup and chronic management"
+    },
+    {
+      "disposition": "Admit for PSG/MSLT",
+      "criteria": "Patients requiring in-lab sleep study; schedule PSG night followed by next-day MSLT; ensure REM-suppressants discontinued ≥2 weeks"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe rebound cataplexy (status cataplecticus) after abrupt discontinuation of anticataplectics; narcolepsy with concurrent medical condition requiring inpatient management"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Not typically applicable; consider if respiratory depression from sodium oxybate or overdose"
+    },
+    {
+      "disposition": "Sleep medicine referral",
+      "criteria": "All patients with suspected narcolepsy for diagnostic confirmation and treatment initiation"
+    },
+    {
+      "disposition": "Neurology referral",
+      "criteria": "Atypical presentation; suspected secondary narcolepsy; treatment-refractory cases"
+    },
+    {
+      "disposition": "Follow-up frequency",
+      "criteria": "Every 2-4 weeks during initial titration; every 3-6 months once stable"
+    }
+  ]
+}

@@ -1,0 +1,1626 @@
+{
+  "id": "creutzfeldt-jakob-disease",
+  "title": "Creutzfeldt-Jakob Disease (CJD)",
+  "version": "1.1",
+  "icd10": [
+    "** A81.00 (Creutzfeldt-Jakob disease",
+    "unspecified)",
+    "A81.01 (Variant Creutzfeldt-Jakob disease)",
+    "A81.09 (Other Creutzfeldt-Jakob disease)",
+    "A81.1 (Subacute sclerosing panencephalitis)",
+    "A81.9 (Atypical virus infections of CNS",
+    "unspecified)"
+  ],
+  "scope": "** Diagnostic workup, symptomatic management, and palliative care for suspected or confirmed Creutzfeldt-Jakob disease across all subtypes (sporadic, familial/genetic, iatrogenic, variant). Covers WHO/CDC diagnostic criteria application, biomarker interpretation (RT-QuIC, 14-3-3, tau), neuroimaging (MRI DWI cortical ribboning), EEG (periodic sharp wave complexes), PRNP genotyping, myoclonus management, infection control (prion decontamination), palliative care initiation, family counseling, genetic counseling for familial forms, and autopsy/National Prion Disease Pathology Surveillance Center referral. No disease-modifying treatment exists -- management is entirely supportive and palliative. For comprehensive RPD evaluation including treatable mimics, use the \"Rapidly Progressive Dementia\" template. For autoimmune encephalitis (key differential), use the \"Autoimmune Encephalitis\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; rule out hematologic causes of encephalopathy",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Metabolic encephalopathy screen (hepatic, renal, electrolyte); baseline before medications",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443), free T4 (CPT 84439)",
+          "rationale": "Hashimoto encephalopathy (SREAT) is a treatable mimic; hypothyroid encephalopathy",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "B12 (CPT 82607), methylmalonic acid (MMA) (CPT 83921)",
+          "rationale": "B12 deficiency is a reversible cause of cognitive decline; rule out before accepting prion diagnosis",
+          "target": "B12 >300 pg/mL; MMA normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Vasculitis screen; inflammatory conditions; normal in CJD (helps exclude autoimmune/inflammatory mimics)",
+          "target": "Normal (<20 mm/h age-adjusted)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; elevated suggests non-prion etiology (autoimmune, infection, vasculitis)",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "RPR or VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis is a treatable RPD mimic",
+          "target": "Non-reactive",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV-associated neurocognitive disorder; opportunistic infections",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "rationale": "Hepatic encephalopathy mimic",
+          "target": "Normal (<35 micromol/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemia; diabetic encephalopathy",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis (CPT 81003) + urine culture",
+          "rationale": "UTI causing delirium superimposed on CJD",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen",
+          "rationale": "Substance-related cognitive impairment; drug toxicity",
+          "target": "Negative or expected medications only",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Anti-thyroid antibodies (anti-TPO, anti-thyroglobulin)",
+          "rationale": "Hashimoto encephalopathy (SREAT) -- treatable with steroids; can mimic CJD",
+          "target": "Negative (positive + encephalopathy = consider SREAT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Lupus cerebritis; systemic autoimmune disease mimicking RPD",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX, IgLON5",
+          "rationale": "Treatable autoimmune encephalitis is the most important reversible CJD mimic to identify",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel (serum) -- comprehensive (ANNA-1/Hu, ANNA-2/Ri, CRMP-5, amphiphysin, PCA-1/Yo, GAD65)",
+          "rationale": "Paraneoplastic encephalitis can mimic CJD presentation",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Deficiency associated with cognitive impairment",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "LDH",
+          "rationale": "Lymphoma; intravascular lymphoma (CJD mimic)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peripheral blood smear",
+          "rationale": "Intravascular lymphoma (schistocytes); TTP",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (serum)",
+          "rationale": "Neurosarcoidosis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334) + immunofixation",
+          "rationale": "CNS lymphoma; POEMS; paraneoplastic",
+          "target": "Normal pattern",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine (B1) level (CPT 84425)",
+          "rationale": "Wernicke encephalopathy -- reversible with treatment",
+          "target": "Normal (>70 nmol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper (CPT 82390) and ceruloplasmin",
+          "rationale": "Wilson disease (if age <50)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Prion-Specific and Genetic)": [
+        {
+          "item": "PRNP gene analysis (blood) (CPT 81479)",
+          "rationale": "Identifies genetic/familial prion disease (fCJD, GSS, FFI); determines codon 129 polymorphism (methionine/valine) which influences sCJD phenotype and prognosis; important for family counseling",
+          "target": "No pathogenic mutation; document codon 129 genotype (MM, MV, VV)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Codon 129 polymorphism (PRNP)",
+          "rationale": "MM homozygosity most common in sCJD-MM1 (classic rapid form); MV and VV associated with different clinical phenotypes and prognosis",
+          "target": "MM most common in sCJD; VV/MV in some atypical forms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurofilament light chain (NfL) (CPT 83519) -- serum",
+          "rationale": "Markedly elevated in CJD; useful as accessible blood biomarker of neuronal damage; may support diagnosis when CSF unavailable",
+          "target": "Markedly elevated (>10,000 pg/mL in CJD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prion protein gene full sequencing",
+          "rationale": "If PRNP targeted analysis negative but clinical suspicion for genetic prion disease remains high",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "AD biomarkers (serum p-tau217, p-tau181)",
+          "rationale": "Rapidly progressive Alzheimer disease is the most common misdiagnosis of CJD; serum AD biomarkers help distinguish",
+          "target": "Normal p-tau ratio (elevated suggests rpAD, not CJD)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP assessment; typically normal in CJD",
+          "target": "Normal (10-20 cm H2O); normal in CJD",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Normal or minimal pleocytosis in CJD; elevated WBC suggests autoimmune or infectious etiology",
+          "target": "Normal in CJD (WBC <5); elevated WBC suggests non-prion diagnosis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Mildly elevated or normal in CJD; markedly elevated suggests infection/autoimmune",
+          "target": "Normal or mildly elevated in CJD (usually <100 mg/dL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Low in bacterial/TB/fungal meningitis, carcinomatous meningitis; normal in CJD",
+          "target": "Normal in CJD (>60% of serum)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Exclude chronic bacterial infection",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**RT-QuIC (real-time quaking-induced conversion) (CPT 86235)**",
+          "rationale": "GOLD STANDARD for CJD diagnosis. Sensitivity 92%, specificity 99-100%. Detects misfolded prion protein amplification. Send to National Prion Disease Pathology Surveillance Center (Cleveland) or Quest/Mayo",
+          "target": "Negative (positive = prion disease essentially confirmed)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "14-3-3 protein (CPT 83519)",
+          "rationale": "Elevated in rapid neuronal destruction. Sensitivity ~90% for sCJD but NOT specific (also elevated in stroke, encephalitis, seizures, CNS lymphoma). Largely superseded by RT-QuIC",
+          "target": "Negative (positive supports CJD in right clinical context but has significant false-positive rate)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Total tau protein (CPT 83519)",
+          "rationale": "Markedly elevated in CJD (>1150 pg/mL has sensitivity 90%, specificity 86%). Higher levels correlate with more rapid progression. Not specific (also elevated in AD, stroke)",
+          "target": "Normal (<400 pg/mL); CJD often >1150, frequently >10,000 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuron-specific enolase (NSE)",
+          "rationale": "Elevated in CJD (>35 ng/mL); marker of neuronal damage; less specific than tau or RT-QuIC",
+          "target": "Normal (<35 ng/mL); elevated in CJD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurofilament light chain (NfL) (CPT 83519) -- CSF",
+          "rationale": "Markedly elevated in CJD; non-specific marker of neuronal damage; useful for tracking progression",
+          "target": "Markedly elevated in CJD (often >10,000 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (CSF) -- NMDAR, LGI1, CASPR2, GABA-B, GABA-A, AMPA, DPPX",
+          "rationale": "CSF more sensitive than serum for NMDAR antibodies; rule out treatable autoimmune encephalitis before accepting CJD diagnosis",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Alzheimer biomarkers (CSF Abeta42, Abeta40, p-tau 181, t-tau) (CPT 83519)",
+          "rationale": "Rapidly progressive AD (rpAD) is the most common misdiagnosis of CJD. AD pattern: low Abeta42/Abeta40 ratio + elevated p-tau. In CJD: t-tau markedly elevated but p-tau NOT proportionally elevated (p-tau/t-tau ratio very low)",
+          "target": "Context-dependent; p-tau/t-tau ratio helps distinguish CJD from rpAD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands (CPT 83916), IgG index",
+          "rationale": "Intrathecal antibody synthesis (MS, autoimmune, neurosarcoidosis); typically absent in CJD",
+          "target": "Absent in CJD; present suggests inflammatory/autoimmune etiology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HSV 1/2 PCR (CPT 87529)",
+          "rationale": "HSV encephalitis mimic",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Leptomeningeal carcinomatosis/lymphoma (RPD mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry",
+          "rationale": "CNS lymphoma (B-cell clonality)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "rationale": "Neurosyphilis",
+          "target": "Non-reactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (CPT 87327)",
+          "rationale": "Cryptococcal meningitis (immunocompromised)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553) + DWI/FLAIR",
+          "timing": "Within 24h. DWI is CRITICAL -- cortical ribboning on DWI is highly characteristic of CJD. 3T preferred for sensitivity",
+          "target": "sCJD: cortical ribboning on DWI (high signal in neocortex) + caudate/putamen signal on DWI/FLAIR. vCJD: pulvinar sign (bilateral pulvinar thalamic high signal). fCJD: variable by mutation. Sensitivity of MRI DWI for sCJD >90%",
+          "contraindications": "Pacemaker; metallic implants; severe claustrophobia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "timing": "Within 24h",
+          "target": "sCJD: periodic sharp wave complexes (PSWCs) at 1-2 Hz -- triphasic morphology; generalized; sensitivity ~65% (highest in sCJD-MM1 subtype). Also rules out non-convulsive status epilepticus",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate if acute presentation, focal deficit, or pre-LP",
+          "target": "Mass lesion; hydrocephalus; hemorrhage; CT is typically normal early in CJD but may show atrophy in later stages",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Continuous EEG monitoring (cEEG) (CPT 95700)",
+          "timing": "If altered consciousness, suspected NCSE, or fluctuating exam",
+          "target": "Non-convulsive seizures; evolution of PSWCs; helps distinguish CJD periodic pattern from seizures",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "Within 1-2 weeks",
+          "target": "CJD: cortical and striatal hypometabolism (often asymmetric early); helps distinguish from AD pattern (temporoparietal); may be useful when MRI is equivocal",
+          "contraindications": "Pregnancy; uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA brain",
+          "timing": "If vasculitis suspected as alternative diagnosis",
+          "target": "CNS vasculitis (beading); normal in CJD",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "timing": "If paraneoplastic syndrome suspected",
+          "target": "Occult malignancy (paraneoplastic RPD mimic)",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep polysomnography",
+          "timing": "If fatal familial insomnia (FFI) suspected",
+          "target": "Absent sleep spindles; disrupted sleep architecture; progressive total insomnia",
+          "contraindications": "Cooperation required",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Brain biopsy",
+          "timing": "When all non-invasive testing inconclusive and treatable etiology must be excluded; NOT required for CJD diagnosis if RT-QuIC positive and MRI/EEG consistent",
+          "target": "Spongiform change; PrP immunostaining (definite CJD); also rules out vasculitis, lymphoma, autoimmune",
+          "contraindications": "Coagulopathy; surgical risk; biopsy only changes management if treatable diagnosis possible",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Second opinion MRI neuroradiology review",
+          "timing": "If initial MRI read as normal but clinical suspicion for CJD remains high",
+          "target": "Subtle DWI cortical signal missed on initial read; CJD MRI findings require expertise",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nasal brushing for RT-QuIC",
+          "timing": "Emerging alternative to CSF RT-QuIC; non-invasive; sensitivity 97% in some studies",
+          "target": "Positive RT-QuIC from olfactory mucosa supports prion diagnosis",
+          "contraindications": "None significant; early-stage research",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Lorazepam (acute seizure)",
+          "route": "IV",
+          "indication": "Acute seizure or status epilepticus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 min; max 8 mg total",
+            "orderSentence": "Lorazepam (acute seizure) 4 mg IV"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure management)",
+          "route": "IV",
+          "indication": "Seizure prophylaxis and treatment in CJD; preferred first-line ASM due to minimal drug interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (seizure management) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1000-1500 mg IV; maintenance 500-1500 mg PO/IV BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam (seizure management) 1000 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust per CrCl)",
+          "monitoring": "Behavioral changes; renal function; seizure frequency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thiamine (B1) IV -- empiric",
+          "route": "IV",
+          "indication": "Empiric for Wernicke encephalopathy while RPD workup pending; treat before glucose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine (B1) IV -- empiric 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID x 3 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily",
+            "orderSentence": "Thiamine (B1) IV -- empiric 500 mg IV"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Clinical response (confusion, ataxia, ophthalmoplegia)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV methylprednisolone (empiric trial)",
+          "route": "IV",
+          "indication": "Empiric immunotherapy trial ONLY if autoimmune encephalitis remains in differential; do NOT continue if CJD confirmed (steroids do not help CJD)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone (empiric trial) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily x 3-5 days; infuse over 1-2 hours; DISCONTINUE if CJD confirmed",
+            "orderSentence": "IV methylprednisolone (empiric trial) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; CJD confirmed (no benefit); uncontrolled diabetes",
+          "monitoring": "Glucose q6h; BP; GI prophylaxis; clinical response assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Symptomatic Treatments -- Myoclonus": [
+        {
+          "item": "Clonazepam (first-line for myoclonus)",
+          "route": "PO",
+          "indication": "Myoclonus -- most effective treatment for CJD-associated myoclonus; reduces startle response and involuntary jerking",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam (first-line for myoclonus) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg PO BID; increase by 0.5 mg every 3-5 days as tolerated; target 1-2 mg TID; max 6 mg/day",
+            "orderSentence": "Clonazepam (first-line for myoclonus) 0.5 mg PO"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; fall risk (elderly); acute narrow-angle glaucoma",
+          "monitoring": "Sedation level; respiratory status; fall risk assessment; swallowing function (may worsen dysphagia)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproic acid (adjunctive for myoclonus)",
+          "route": "PO",
+          "indication": "Myoclonus and seizure control -- add to or substitute for clonazepam if insufficient myoclonus control or excessive sedation from benzodiazepines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid (adjunctive for myoclonus) 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg PO BID; increase by 250 mg every 3-5 days; target level 50-100 mcg/mL; max 2000 mg/day",
+            "orderSentence": "Valproic acid (adjunctive for myoclonus) 250 mg PO"
+          },
+          "contraindications": "Hepatic disease; pancreatitis; urea cycle disorders; pregnancy (teratogenic)",
+          "monitoring": "LFTs; ammonia; CBC (thrombocytopenia); drug level q1-2 weeks until stable; pancreatitis symptoms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Levetiracetam (adjunctive for myoclonus)",
+          "route": "PO",
+          "indication": "Myoclonus -- alternative or adjunct when benzodiazepine sedation is limiting; also provides seizure coverage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (adjunctive for myoclonus) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase by 500 mg/day every 1-2 weeks; max 3000 mg/day",
+            "orderSentence": "Levetiracetam (adjunctive for myoclonus) 500 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust per CrCl)",
+          "monitoring": "Behavioral changes (irritability, aggression); renal function; seizure/myoclonus diary",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Piracetam (adjunctive for myoclonus)",
+          "route": "PO",
+          "indication": "Cortical myoclonus -- may be effective for CJD myoclonus; not FDA-approved in US but available internationally",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2400 mg",
+                "orderSentence": "Piracetam (adjunctive for myoclonus) 2400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2400 mg PO TID; may increase to 4800 mg TID; max 24 g/day",
+            "orderSentence": "Piracetam (adjunctive for myoclonus) 2400 mg PO"
+          },
+          "contraindications": "Severe renal impairment; cerebral hemorrhage",
+          "monitoring": "Renal function; clinical response",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments -- Behavioral and Other Symptoms": [
+        {
+          "item": "Quetiapine (agitation/psychosis)",
+          "route": "PO",
+          "indication": "Agitation, psychosis, behavioral disturbance in CJD -- preferred atypical antipsychotic due to lower EPS risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Quetiapine (agitation/psychosis) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO qHS; increase by 25 mg/day every 2-3 days; max 200-400 mg/day",
+            "orderSentence": "Quetiapine (agitation/psychosis) 25 mg PO"
+          },
+          "contraindications": "QTc prolongation; Lewy body dementia (must distinguish from CJD -- DLB has worse antipsychotic sensitivity)",
+          "monitoring": "QTc; metabolic panel; sedation; fall risk; EPS monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Haloperidol (acute severe agitation)",
+          "route": "IV",
+          "indication": "Acute severe agitation or psychosis not responsive to reorientation and non-pharmacologic measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Haloperidol (acute severe agitation) 0.5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-2 mg IV/IM q4-6h PRN agitation; use lowest effective dose; max 10 mg/day",
+            "orderSentence": "Haloperidol (acute severe agitation) 0.5 mg IV"
+          },
+          "contraindications": "QTc >500 ms; Parkinson disease; neuroleptic malignant syndrome history",
+          "monitoring": "ECG (QTc before and after); EPS; NMS surveillance (temperature, rigidity, CPK)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trazodone (insomnia)",
+          "route": "PO",
+          "indication": "Sleep disruption and insomnia -- common in CJD; preferred over benzodiazepine hypnotics to avoid excessive sedation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone (insomnia) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg PO qHS; increase by 25 mg every 3-5 days; max 150 mg qHS",
+            "orderSentence": "Trazodone (insomnia) 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation; priapism risk",
+          "monitoring": "Sedation; orthostatic hypotension; swallowing safety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin (insomnia)",
+          "route": "PO",
+          "indication": "Sleep-wake cycle disruption -- may be tried first given excellent safety profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin (insomnia) 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-10 mg PO qHS; start at 3 mg",
+            "orderSentence": "Melatonin (insomnia) 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Morphine (pain and distress)",
+          "route": "IV",
+          "indication": "Pain, suffering, and distress in advanced CJD -- palliative intent; myoclonus can be painful",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Morphine (pain and distress) 2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 1-2 mg IV q2-4h PRN; titrate to comfort; convert to scheduled dosing if frequent PRN use",
+            "orderSentence": "Morphine (pain and distress) 2 mg IV"
+          },
+          "contraindications": "Respiratory depression (acceptable in comfort-focused care); severe hepatic impairment",
+          "monitoring": "Respiratory rate; comfort level; sedation; bowel function (constipation prophylaxis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Morphine oral/sublingual (outpatient palliative)",
+          "route": "PO",
+          "indication": "Pain and distress management in home hospice setting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Morphine oral/sublingual (outpatient palliative) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Immediate release: 5-10 mg PO q4h PRN; convert to sustained-release when dose established; sublingual concentrated solution for dysphagia",
+            "orderSentence": "Morphine oral/sublingual (outpatient palliative) 5 mg PO"
+          },
+          "contraindications": "Respiratory depression (acceptable in comfort-focused care); severe hepatic impairment",
+          "monitoring": "Respiratory rate; comfort level; sedation; bowel function; stool softener/laxative prophylaxis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycopyrrolate (sialorrhea)",
+          "route": "PO",
+          "indication": "Excessive drooling/sialorrhea -- common in advanced CJD with bulbar dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Glycopyrrolate (sialorrhea) 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg PO TID; increase to 2 mg TID as needed",
+            "orderSentence": "Glycopyrrolate (sialorrhea) 1 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention; GI obstruction",
+          "monitoring": "Anticholinergic effects; urinary retention; constipation; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hyoscine (scopolamine) patch (sialorrhea)",
+          "route": "TOP",
+          "indication": "Alternative for sialorrhea management when oral medications difficult due to dysphagia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 mg",
+                "orderSentence": "Hyoscine (scopolamine) patch (sialorrhea) 1.5 mg TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "Apply 1 transdermal patch behind ear every 72 hours; rotate ears",
+            "orderSentence": "Hyoscine (scopolamine) patch (sialorrhea) 1.5 mg TOP"
+          },
+          "contraindications": "Narrow-angle glaucoma; urinary retention",
+          "monitoring": "Confusion (may worsen); dry mouth; urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron (nausea)",
+          "route": "IV",
+          "indication": "Nausea and vomiting -- may occur with brainstem involvement or medication side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron (nausea) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q8h PRN; or 4-8 mg PO q8h PRN",
+            "orderSentence": "Ondansetron (nausea) 4 mg IV"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment",
+          "monitoring": "QTc if repeated dosing",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Docusate + senna (constipation prophylaxis)",
+          "route": "PO",
+          "indication": "Constipation prevention -- universal need with immobility and opioid use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate + senna (constipation prophylaxis) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Docusate 100 mg PO BID + senna 8.6 mg PO BID; titrate senna to effect",
+            "orderSentence": "Docusate + senna (constipation prophylaxis) 100 mg PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Bowel frequency; abdominal distension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol (PEG 3350) (constipation)",
+          "route": "PO",
+          "indication": "Constipation refractory to docusate/senna",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (PEG 3350) (constipation) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g PO daily in 8 oz water; may increase to BID",
+            "orderSentence": "Polyethylene glycol (PEG 3350) (constipation) 17 g PO"
+          },
+          "contraindications": "Bowel obstruction; ileus",
+          "monitoring": "Bowel frequency; electrolytes if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Palliative Care Interventions": [
+        {
+          "item": "Comfort-focused care transition",
+          "route": "-",
+          "indication": "All confirmed CJD patients -- initiate goals of care discussion at diagnosis; median survival 5-6 months for sCJD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Comfort-focused care transition - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Goals of care discussion; advance directive completion; POLST/MOLST completion; hospice referral when appropriate",
+            "orderSentence": "Comfort-focused care transition - -"
+          },
+          "contraindications": "None",
+          "monitoring": "Goals of care revisited at each visit; functional status; caregiver burden",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hospice enrollment",
+          "route": "-",
+          "indication": "Prognosis <6 months (applies to most sCJD at diagnosis); patient/family ready for comfort-focused approach",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Hospice enrollment - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Per hospice agency; home hospice preferred if safe; inpatient hospice if symptoms uncontrolled or caregiver unable",
+            "orderSentence": "Hospice enrollment - -"
+          },
+          "contraindications": "Patient/family not ready; still pursuing curative workup for non-CJD diagnosis",
+          "monitoring": "Comfort; family coping; symptom control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Discontinuation of non-essential medications",
+          "route": "PO",
+          "indication": "Medication reconciliation -- stop statins, antihypertensives, diabetes medications, preventive therapies that no longer serve goals of care",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Discontinuation of non-essential medications - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Gradual taper or discontinuation per clinical judgment",
+            "orderSentence": "Discontinuation of non-essential medications - -"
+          },
+          "contraindications": "Do not abruptly stop benzodiazepines, opioids, or anticonvulsants (taper if discontinuing)",
+          "monitoring": "Comfort; symptom control after medication changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (prion/neurodegenerative specialist if available) for diagnostic confirmation, prognostication, and ongoing management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Palliative care for goals of care discussion, symptom management, advance care planning, and hospice referral coordination",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "National Prion Disease Pathology Surveillance Center (NPDPSC, Case Western Reserve University, Cleveland, OH; phone 1-216-368-0587) for diagnostic guidance, RT-QuIC testing, and potential autopsy coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling for familial CJD evaluation, PRNP testing implications, and family member risk assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for behavioral symptom management, capacity evaluation, and caregiver psychiatric support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for advance directive facilitation, caregiver support, insurance/disability assistance, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ethics consultation for end-of-life decision-making, especially if family conflict about goals of care or capacity questions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for dysphagia evaluation and aspiration risk assessment to guide feeding recommendations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for safety assessment, mobility aids, and fall prevention as motor function declines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, caregiver training for safe transfers, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Chaplain/spiritual care for patient and family spiritual support during terminal diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infection control/hospital epidemiology for prion decontamination protocols and staff education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CJD Foundation (www.cjdfoundation.org) referral for patient and family support, educational resources, and peer connections",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient and Family Instructions": [
+        {
+          "item": "CJD is NOT contagious through casual contact, sharing meals, kissing, or caring for the patient -- standard household precautions are sufficient; no isolation needed at home",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CJD has no cure or disease-modifying treatment; management focuses entirely on comfort, symptom control, and quality of life",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Return to ED immediately if new seizures, choking/aspiration, inability to swallow, high fever, or sudden worsening of symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complete advance directives and healthcare power of attorney EARLY while patient can still participate in decision-making (capacity declines rapidly in CJD)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Do NOT drive at any point after CJD diagnosis due to progressive cognitive and motor impairment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ensure 24/7 supervision due to fall risk, wandering, impaired judgment, and progressive functional decline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Notify all surgical, dental, and medical providers of CJD diagnosis -- special instrument sterilization or single-use instruments required for any invasive procedure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Blood, organ, and tissue donation is NOT permitted with CJD diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Contact the CJD Foundation (1-800-659-1991 or www.cjdfoundation.org) for family support resources, educational materials, and peer support groups",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autopsy is strongly encouraged for definitive diagnosis, disease surveillance, and scientific research -- discuss with NPDPSC early; autopsy is provided at no cost through the Surveillance Center",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Familial CJD: first-degree relatives should be offered genetic counseling and PRNP testing if mutation identified in proband",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Infection Control, Safety & Lifestyle": [
+        {
+          "item": "Standard precautions only for routine patient care (gloves, gown as needed); CJD is NOT transmitted by respiratory droplets, blood, urine, or feces in normal care",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Prion decontamination for surgical instruments: instruments contacting high-infectivity tissues (brain, spinal cord, eye) must be destroyed or undergo WHO-recommended decontamination (1N NaOH for 1 hour followed by autoclaving at 134 degrees C for 1 hour in a gravity displacement autoclave)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Standard sterilization is INSUFFICIENT for prion decontamination -- conventional autoclaving, ethylene oxide, formaldehyde, alcohol, and UV do not reliably inactivate prions",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Single-use disposable instruments recommended for any invasive procedure on confirmed or suspected CJD patients",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Avoid LP needle reuse; dispose of all LP supplies as biohazard (standard practice)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CSF handling: standard laboratory precautions are adequate; prion concentration in CSF is very low; gloves and eye protection for splash risk",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Endoscopy in CJD patients: use disposable accessories where possible; standard endoscope reprocessing may be insufficient for prion decontamination -- consult infection control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Fall prevention measures: bed alarm, non-slip surfaces, grab bars, low bed, hip protectors for patients with gait instability and myoclonus",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Aspiration precautions: head of bed elevated 30 degrees; thickened liquids if dysphagia present; SLP evaluation for safe diet recommendations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Skin integrity: frequent repositioning every 2 hours; pressure-relieving mattress; skin assessment daily for immobile patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Caregiver self-care: encourage caregivers to maintain their own medical appointments, sleep hygiene, nutrition, and social connections; connect with respite care services and CJD Foundation peer support groups",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety modifications: remove tripping hazards (rugs, cords); install grab bars in bathroom; ensure adequate lighting; consider hospital bed for advanced disease; secure medications and hazardous items",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain structured daily routine with consistent sleep-wake schedule, regular mealtimes, and familiar environment to reduce confusion and agitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Rapidly progressive Alzheimer disease (rpAD)",
+      "features": "Most common misdiagnosis of CJD; positive AD biomarkers (low Abeta42, elevated p-tau); no myoclonus typically early on; MRI shows atrophy without DWI cortical ribboning; slower course (years not months)",
+      "tests": "CSF AD biomarkers (Abeta42/Abeta40 ratio low, p-tau elevated, p-tau/t-tau ratio higher than CJD); RT-QuIC negative; MRI without cortical ribboning"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR, anti-LGI1)",
+      "features": "Subacute onset; psychiatric symptoms prominent (NMDAR); faciobrachial dystonic seizures (LGI1); steroid-responsive; CSF pleocytosis common",
+      "tests": "Autoimmune encephalitis antibody panel (CSF and serum); MRI mesial temporal signal (LGI1); response to immunotherapy; RT-QuIC negative"
+    },
+    {
+      "diagnosis": "Hashimoto encephalopathy (SREAT)",
+      "features": "Elevated anti-TPO; steroid-responsive; cognitive fluctuation; seizures; may mimic CJD closely; diagnosis of exclusion",
+      "tests": "Anti-TPO and anti-thyroglobulin antibodies; empiric steroid trial (dramatic improvement supports diagnosis); RT-QuIC negative"
+    },
+    {
+      "diagnosis": "CNS lymphoma (primary or intravascular)",
+      "features": "B symptoms; enhancing mass (primary CNS lymphoma); multifocal white matter changes + elevated LDH (intravascular lymphoma); no myoclonus",
+      "tests": "MRI with contrast (enhancement); CSF cytology + flow cytometry; LDH; peripheral blood smear; brain biopsy"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "RPR/VDRL positive; Argyll Robertson pupils; psychiatric symptoms; may have CSF pleocytosis",
+      "tests": "RPR/VDRL (serum); CSF VDRL; FTA-ABS; LP with CSF analysis"
+    },
+    {
+      "diagnosis": "Viral encephalitis (HSV, others)",
+      "features": "Acute onset; fever; CSF pleocytosis; MRI temporal lobe signal (HSV); seizures",
+      "tests": "HSV PCR (CSF); viral panels; MRI temporal enhancement; CSF pleocytosis present"
+    },
+    {
+      "diagnosis": "Leptomeningeal carcinomatosis",
+      "features": "Known malignancy history; cranial neuropathies; communicating hydrocephalus",
+      "tests": "CSF cytology (repeat x3); MRI with contrast (leptomeningeal enhancement); known primary malignancy"
+    },
+    {
+      "diagnosis": "CNS vasculitis",
+      "features": "Headache; multifocal deficits; strokes; CSF pleocytosis; ESR/CRP elevated",
+      "tests": "MRA (beading); DSA; ESR/CRP; brain/meningeal biopsy; ANCA"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies (DLB)",
+      "features": "Visual hallucinations; parkinsonism; REM sleep behavior disorder; fluctuating cognition; slower progression",
+      "tests": "DaT scan (reduced dopamine transporter); clinical criteria; response to cholinesterase inhibitors; no DWI cortical ribboning"
+    },
+    {
+      "diagnosis": "Toxic/metabolic encephalopathy",
+      "features": "Medication toxicity; substance abuse; hepatic/uremic/electrolyte encephalopathy; reversible",
+      "tests": "Drug levels; LFTs; ammonia; BUN/Cr; UDS; correction of metabolic derangement improves cognition"
+    },
+    {
+      "diagnosis": "Non-convulsive status epilepticus (NCSE)",
+      "features": "Altered consciousness; may have subtle motor signs; EEG shows electrographic seizures not periodic discharges",
+      "tests": "Continuous EEG (seizure activity vs PSWCs); response to benzodiazepine trial; MRI without CJD pattern"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Triad: gait (predominant) + urinary incontinence + dementia; ventricular enlargement disproportionate to atrophy",
+      "tests": "Large-volume LP with pre/post gait assessment; MRI (Evans index >0.3, disproportionate ventriculomegaly)"
+    },
+    {
+      "diagnosis": "Fatal familial insomnia (FFI)",
+      "features": "Genetic prion disease (PRNP D178N-129M); progressive insomnia; autonomic dysfunction; late motor/cognitive decline; family history",
+      "tests": "PRNP gene testing; polysomnography (absent sleep spindles); FDG-PET (thalamic hypometabolism)"
+    },
+    {
+      "diagnosis": "Gerstmann-Straussler-Scheinker syndrome (GSS)",
+      "features": "Genetic prion disease; cerebellar ataxia predominant; slower course (2-10 years); family history",
+      "tests": "PRNP gene testing (P102L most common); cerebellar atrophy on MRI; slower than sCJD"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "RT-QuIC for CJD diagnosis (sensitivity 92%, specificity 99-100%) -- gold standard CSF prion biomarker",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[McGuire et al. (Ann Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22926858/); [Atarashi et al. (Nat Med 2011)](https://pubmed.ncbi.nlm.nih.gov/21278748/)"
+    },
+    {
+      "recommendation": "MRI DWI cortical ribboning for CJD diagnosis (sensitivity >90%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Vitali et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21471469/); [Young et al. (AJNR 2005)](https://pubmed.ncbi.nlm.nih.gov/15956529/)"
+    },
+    {
+      "recommendation": "CSF 14-3-3 protein for CJD (sensitivity ~90%, specificity 70-85%)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Muayqil et al. (BMC Neurol 2012)](https://pubmed.ncbi.nlm.nih.gov/22993290/); WHO diagnostic criteria"
+    },
+    {
+      "recommendation": "CSF total tau >1150 pg/mL for CJD diagnosis (sensitivity 90%, specificity 86%)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Hamlin et al. (Neurology 2012)](https://pubmed.ncbi.nlm.nih.gov/22302548/)"
+    },
+    {
+      "recommendation": "CDC diagnostic criteria for probable sporadic CJD (updated 2018)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[CDC Prion Disease - Diagnostic Criteria](https://www.cdc.gov/prion-disease/hcp/diagnostic-criteria/)"
+    },
+    {
+      "recommendation": "WHO surveillance criteria for CJD classification (definite, probable, possible)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[WHO Manual for Surveillance of Human Transmissible Spongiform Encephalopathies (2003)](https://www.who.int/publications/i/item/WHO-CDS-CSR-EPH-2002-6)"
+    },
+    {
+      "recommendation": "EEG periodic sharp wave complexes in CJD -- sensitivity ~65% (highest in MM1 subtype)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Steinhoff et al. (Clin Neurophysiol 2004)](https://pubmed.ncbi.nlm.nih.gov/15351383/)"
+    },
+    {
+      "recommendation": "PRNP codon 129 polymorphism influences CJD phenotype and susceptibility",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10482261/)"
+    },
+    {
+      "recommendation": "Molecular classification of sCJD subtypes (MM1, VV2, MV2K, etc.)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Parchi et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10482261/); [Parchi et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/23065788/)"
+    },
+    {
+      "recommendation": "Clonazepam for CJD-associated myoclonus",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; [Brown et al. (Neurology 1986)](https://pubmed.ncbi.nlm.nih.gov/3520375/)"
+    },
+    {
+      "recommendation": "No disease-modifying treatment exists for CJD; multiple clinical trials have failed",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Stewart et al. (Neurology 2008)](https://pubmed.ncbi.nlm.nih.gov/18725590/) -- quinacrine trial; [Geschwind et al. (Ann Neurol 2013)](https://pubmed.ncbi.nlm.nih.gov/24038413/) -- quinacrine RCT"
+    },
+    {
+      "recommendation": "Rapidly progressive AD is the most common misdiagnosis of CJD",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Paterson et al. (Brain 2012)](https://pubmed.ncbi.nlm.nih.gov/23065788/); NPDPSC autopsy series data"
+    },
+    {
+      "recommendation": "Prion decontamination requires NaOH + extended autoclaving; standard sterilization insufficient",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[WHO Infection Control Guidelines for TSE (2000)](https://www.who.int/publications/i/item/WHO-CDS-CSR-APH-2000.3)"
+    },
+    {
+      "recommendation": "Pulvinar sign (bilateral pulvinar high signal on MRI) characteristic of variant CJD",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Zeidler et al. (Lancet 2000)](https://pubmed.ncbi.nlm.nih.gov/10744092/)"
+    },
+    {
+      "recommendation": "National Prion Disease Pathology Surveillance Center (NPDPSC) for diagnostic referral and autopsy",
+      "evidenceLevel": "Class I, Level C",
+      "source": "[NPDPSC (Case Western Reserve University)](https://case.edu/medicine/npdpsc/)"
+    },
+    {
+      "recommendation": "Serum neurofilament light chain (NfL) markedly elevated in CJD; emerging blood biomarker",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Thompson et al. (Ann Clin Transl Neurol 2018)](https://pubmed.ncbi.nlm.nih.gov/30349859/)"
+    },
+    {
+      "recommendation": "CSF p-tau/t-tau ratio distinguishes CJD from Alzheimer disease",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Skillback et al. (J Alzheimers Dis 2014)](https://pubmed.ncbi.nlm.nih.gov/24898646/)"
+    },
+    {
+      "recommendation": "Palliative care approach recommended for all confirmed CJD patients at diagnosis",
+      "evidenceLevel": "Class I, Level C",
+      "source": "Expert consensus; [Mead et al. (Prion 2013)](https://pubmed.ncbi.nlm.nih.gov/23370273/)"
+    },
+    {
+      "recommendation": "Nasal brushing RT-QuIC as emerging non-invasive prion diagnostic (sensitivity ~97%)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Orru et al. (NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/25099575/); [Bongianni et al. (NEJM 2017)](https://pubmed.ncbi.nlm.nih.gov/28125426/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Cognitive assessment (MMSE, MoCA, or bedside exam)",
+      "frequency": "Baseline; weekly inpatient; each outpatient visit",
+      "action": "Document rate of decline; adjust prognosis; guide goals of care",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic exam (myoclonus, focal signs, gait, cranial nerves, akinetic mutism)",
+      "frequency": "Daily inpatient; each outpatient visit",
+      "action": "Adjust symptomatic medications (clonazepam for myoclonus); update prognosis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Swallowing assessment (SLP bedside or videofluoroscopy)",
+      "frequency": "Weekly inpatient; each outpatient visit; urgent if coughing with meals",
+      "action": "Modified diet texture; NG tube or PEG tube discussion if progressive; aspiration precautions",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Functional status (ADLs, Barthel Index)",
+      "frequency": "Weekly inpatient; each outpatient visit",
+      "action": "Increase caregiver support; modify care plan; facility placement if home care insufficient",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Continuous clinical observation; EEG if suspected subclinical seizures",
+      "action": "Adjust ASM dosing; add second agent; cEEG if unclear",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Myoclonus severity assessment",
+      "frequency": "Daily inpatient; each outpatient visit",
+      "action": "Titrate clonazepam; add valproic acid; adjust doses",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Respiratory status",
+      "frequency": "Each shift inpatient; each visit outpatient",
+      "action": "Chest X-ray if fever/tachypnea; antibiotics for aspiration PNA (if consistent with goals of care); supplemental O2",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Weight and nutritional status",
+      "frequency": "Weekly inpatient; each outpatient visit",
+      "action": "Nutritional supplementation; feeding tube discussion; palliative nutrition approach",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Skin integrity (pressure injury assessment)",
+      "frequency": "Daily (inpatient); each visit (outpatient)",
+      "action": "Pressure-relieving surfaces; repositioning schedule; wound care if needed",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden assessment",
+      "frequency": "Each outpatient visit; at discharge",
+      "action": "Respite care; support groups; social work referral; facility placement if caregiver unable to continue",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Safety assessment (fall risk, wandering, capacity)",
+      "frequency": "Daily inpatient; each outpatient visit",
+      "action": "Increase supervision; bed alarm; sitters; facility placement",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Valproic acid level (if prescribed)",
+      "frequency": "Weekly until stable; then q1-3 months",
+      "action": "Dose adjustment; LFTs; ammonia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable symptoms with adequate 24/7 caregiver; myoclonus and seizures controlled; safe swallowing or appropriate feeding plan; hospice/palliative care arranged; outpatient neurology follow-up within 1-2 weeks; advance directives completed"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "New diagnosis requiring urgent workup (LP, MRI, EEG); uncontrolled seizures or myoclonus; acute decline requiring medication adjustment; aspiration pneumonia (if consistent with goals of care); caregiver inability to manage at home; goals of care discussion needed"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Status epilepticus; respiratory failure requiring mechanical ventilation (if consistent with goals of care); severe autonomic instability; refractory agitation requiring continuous sedation"
+    },
+    {
+      "disposition": "Transfer to tertiary center",
+      "criteria": "Prion disease expertise for diagnostic confirmation; clinical trial enrollment; complex diagnostic workup (brain biopsy consideration); genetic counseling for familial forms"
+    },
+    {
+      "disposition": "Memory care / Long-term care facility",
+      "criteria": "Progressive functional decline exceeding home caregiver capacity; safety concerns (falls, wandering, aspiration) not manageable at home"
+    },
+    {
+      "disposition": "Hospice (home or inpatient)",
+      "criteria": "Confirmed CJD diagnosis with prognosis <6 months (applies to most sCJD at diagnosis); patient/family goals aligned with comfort-focused care; symptom management as primary goal"
+    }
+  ]
+}

@@ -1,0 +1,1830 @@
+{
+  "id": "multiple-system-atrophy",
+  "title": "Multiple System Atrophy (MSA)",
+  "version": "1.1",
+  "icd10": [
+    "** G90.3 (Multi-system degeneration of the autonomic nervous system)",
+    "G23.2 (Striatonigral degeneration — MSA-P)",
+    "G23.3 (Multiple system atrophy",
+    "cerebellar type — MSA-C)"
+  ],
+  "scope": "** Diagnosis and comprehensive management of multiple system atrophy (MSA-P and MSA-C) in adults. Covers 2022 MDS diagnostic criteria, autonomic function testing, neuroimaging, symptomatic management of autonomic failure (orthostatic hypotension, urogenital dysfunction), motor symptoms (parkinsonism, cerebellar ataxia), sleep disorders (REM sleep behavior disorder, stridor), and multidisciplinary care. Excludes Parkinson's disease, progressive supranuclear palsy (PSP), corticobasal degeneration (CBD), dementia with Lewy bodies (DLB), pure autonomic failure (PAF), and hereditary cerebellar ataxias.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline health assessment; rule out anemia contributing to orthostatic symptoms",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Electrolytes, renal/hepatic function for medication dosing; hyponatremia screening",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism can cause cerebellar ataxia and autonomic dysfunction",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency causes ataxia and autonomic neuropathy",
+          "target": ">300 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylmalonic acid (CPT 83921)",
+          "rationale": "More sensitive for B12 deficiency if level borderline (200-400 pg/mL)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "rationale": "Diabetic autonomic neuropathy in differential",
+          "target": "<100 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Screen for diabetes/prediabetes causing autonomic neuropathy",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81001)",
+          "rationale": "UTI screening given urinary retention; recurrent UTIs common in MSA",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Post-void residual (bladder scan)",
+          "rationale": "Neurogenic bladder assessment; PVR ≥100 mL supports MSA diagnosis",
+          "target": "<100 mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Serum catecholamines (norepinephrine, supine and standing) (CPT 82382)",
+          "rationale": "Failure to rise with standing suggests preganglionic lesion (MSA); rise >2x suggests postganglionic (PAF/PD)",
+          "target": "Low-normal supine NE with failure to increase on standing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Plasma metanephrines (CPT 83835)",
+          "rationale": "Rule out pheochromocytoma if paroxysmal hypertension",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis can cause tabes dorsalis with autonomic failure",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "rationale": "HIV-associated autonomic neuropathy, cerebellar degeneration",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Autoimmune autonomic ganglionopathy in differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ganglionic acetylcholine receptor antibody (anti-gAChR)",
+          "rationale": "Autoimmune autonomic ganglionopathy (treatable mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) with immunofixation (CPT 86334)",
+          "rationale": "Paraprotein-associated neuropathy/cerebellar degeneration",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (anti-Yo, anti-Hu, anti-VGCC, anti-Tr, anti-GAD65)",
+          "rationale": "Paraneoplastic cerebellar degeneration if subacute onset",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for hereditary ataxias (SCA1, 2, 3, 6, 7, 17; FXTAS)",
+          "rationale": "If family history of ataxia or young onset (<50 years)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-synuclein seed amplification assay (SAA)",
+          "rationale": "Emerging biomarker for synucleinopathies; positive in MSA (lower sensitivity than PD)",
+          "target": "Positive supports synucleinopathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "CSF alpha-synuclein SAA",
+          "rationale": "Higher sensitivity than serum SAA for MSA; helps distinguish from non-synucleinopathies",
+          "target": "Positive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF neurofilament light chain (NfL)",
+          "rationale": "Elevated in MSA (higher than PD); prognostic biomarker",
+          "target": "Elevated supports rapid neurodegeneration",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy for phosphorylated alpha-synuclein",
+          "rationale": "Emerging biomarker; different distribution pattern than PD (more proximal in MSA)",
+          "target": "Research/emerging",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum/urine heavy metals (arsenic, lead, mercury, thallium)",
+          "rationale": "Toxic exposure causing cerebellar or autonomic dysfunction",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GAD65 antibody (serum)",
+          "rationale": "GAD-antibody cerebellar ataxia (treatable mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Very long chain fatty acids",
+          "rationale": "Adrenomyeloneuropathy (young males with ataxia and autonomic dysfunction)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CoQ10 level",
+          "rationale": "CoQ10 deficiency cerebellar ataxia (treatable)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain without and with contrast (CPT 70553)",
+          "timing": "At diagnosis or initial workup",
+          "target": "MSA-C: \"hot cross bun sign\" in pons, cerebellar atrophy, MCP atrophy; MSA-P: \"putaminal slit sign\" (hyperintense lateral putaminal rim on T2), putaminal atrophy, putaminal hypointensity on T2*/SWI",
+          "contraindications": "Pacemaker, metallic implants, severe renal disease (gadolinium)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI brain susceptibility-weighted imaging (SWI/T2*)",
+          "timing": "With initial MRI",
+          "target": "Putaminal hypointensity (iron deposition) in MSA-P; \"putaminal slit sign\" more visible",
+          "contraindications": "Same as MRI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nerve conduction studies / EMG (CPT 95907-95913, 95886)",
+          "timing": "During diagnostic workup",
+          "target": "Chronic denervation in external anal sphincter (Onuf's nucleus involvement); general neuropathy screening",
+          "contraindications": "Anticoagulation (relative for needle EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt-table test with continuous BP and HR monitoring (CPT 95924)",
+          "timing": "During diagnostic workup",
+          "target": "Neurogenic OH: SBP drop ≥20 or DBP drop ≥10 within 3 min without compensatory heart rate increase (HR rise <0.5 bpm per mmHg SBP drop)",
+          "contraindications": "Severe aortic stenosis, recent MI, unstable angina",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "DaTscan (Ioflupane I-123 SPECT) (CPT 78830)",
+          "timing": "Diagnostic uncertainty",
+          "target": "Reduced striatal dopamine transporter uptake (abnormal in MSA-P and PD; does NOT distinguish MSA from PD)",
+          "contraindications": "Pregnancy, iodine/shellfish allergy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MIBG cardiac scintigraphy (CPT 78451)",
+          "timing": "Distinguish MSA from PD/DLB",
+          "target": "PRESERVED cardiac uptake in MSA (vs. reduced in PD and DLB) — key distinguishing test",
+          "contraindications": "Drugs affecting uptake (tricyclics, labetalol); recent MI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "Atypical presentations",
+          "target": "MSA-C: cerebellar and brainstem hypometabolism; MSA-P: putaminal hypometabolism; helps distinguish from PD",
+          "contraindications": "Per PET protocols",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Polysomnography (CPT 95810)",
+          "timing": "If RBD or stridor suspected",
+          "target": "REM sleep without atonia (RBD); nocturnal stridor; obstructive/central sleep apnea",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative sudomotor axon reflex test (QSART) (CPT 95923)",
+          "timing": "Autonomic workup",
+          "target": "Reduced/absent sweat response indicating postganglionic sudomotor failure",
+          "contraindications": "Skin lesions at test sites",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thermoregulatory sweat test (TST)",
+          "timing": "Comprehensive autonomic assessment",
+          "target": "Widespread anhidrosis pattern (preganglionic pattern in MSA vs. distal in PD)",
+          "contraindications": "Claustrophobia (sweat chamber), skin conditions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Urodynamic studies (CPT 51726, 51729)",
+          "timing": "Urinary symptoms",
+          "target": "Neurogenic detrusor overactivity, detrusor-sphincter dyssynergia, incomplete emptying",
+          "contraindications": "Active UTI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Laryngoscopy",
+          "timing": "If stridor present",
+          "target": "Vocal cord abductor paralysis (bilateral) — risk for sudden death",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Cardiac autonomic testing (HR variability, Valsalva maneuver, deep breathing) (CPT 95921, 95922)",
+          "timing": "Comprehensive autonomic evaluation",
+          "target": "Reduced heart rate variability, abnormal Valsalva ratio, blunted HR response to deep breathing",
+          "contraindications": "Severe cardiac arrhythmia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anal sphincter EMG (CPT 51785)",
+          "timing": "Supportive diagnostic test",
+          "target": "Chronic neurogenic changes in external anal sphincter (Onuf's nucleus) — early finding in MSA",
+          "contraindications": "Patient refusal, active perianal disease",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI volumetry (research protocol)",
+          "timing": "Research/academic setting",
+          "target": "Quantitative measurement of putaminal, pontine, cerebellar volume loss",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Diffusion-weighted MRI of pons/cerebellum",
+          "timing": "With initial MRI",
+          "target": "Diffusion changes in middle cerebellar peduncles; cross-shaped hyperintensity in pons on DWI",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV normal saline (0.9% NaCl)",
+          "route": "IV",
+          "indication": "Acute symptomatic orthostatic hypotension with syncope or presyncope; volume resuscitation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV normal saline (0.9% NaCl) 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mL IV bolus over 1-2 hours; repeat as needed for symptomatic OH; avoid overhydration if supine hypertension",
+            "orderSentence": "IV normal saline (0.9% NaCl) 500-1000 mL IV"
+          },
+          "contraindications": "Heart failure, severe supine hypertension",
+          "monitoring": "BP supine and standing, urine output, signs of volume overload",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midodrine (acute dosing)",
+          "route": "PO",
+          "indication": "Acute symptomatic orthostatic hypotension not responding to fluids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Midodrine (acute dosing) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO for symptomatic OH; onset 30-45 min; do NOT give within 4 hours of bedtime",
+            "orderSentence": "Midodrine (acute dosing) 5 mg PO"
+          },
+          "contraindications": "Supine hypertension, urinary retention, severe cardiac disease, pheochromocytoma",
+          "monitoring": "Supine BP (check 30 min after dose), standing BP",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Trendelenburg positioning",
+          "route": "-",
+          "indication": "Acute symptomatic OH with syncope or near-syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Trendelenburg positioning - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Elevate legs, supine positioning for acute symptomatic OH; avoid prolonged Trendelenburg if supine hypertension present",
+            "orderSentence": "Trendelenburg positioning - -"
+          },
+          "contraindications": "Increased ICP, severe supine hypertension",
+          "monitoring": "BP continuously, neurologic status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Abdominal binder / Compression stockings",
+          "route": "-",
+          "indication": "Acute symptomatic OH as adjunct to pharmacotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Abdominal binder / Compression stockings - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Apply waist-high compression (30-40 mmHg) before sitting/standing; abdominal binder preferred; reduces venous pooling",
+            "orderSentence": "Abdominal binder / Compression stockings - -"
+          },
+          "contraindications": "DVT (relative), peripheral arterial disease, skin breakdown",
+          "monitoring": "Skin integrity, comfort, compliance",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Midodrine (Proamatine)",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic hypotension — first-line pharmacotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg TID",
+                "orderSentence": "Midodrine (Proamatine) 2.5 mg TID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Midodrine (Proamatine) 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Midodrine (Proamatine) 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID (upon awakening, midday, mid-afternoon); titrate by 2.5 mg q1-2 weeks; max 10 mg TID; last dose no later than 4 PM to avoid supine hypertension",
+            "orderSentence": "Midodrine (Proamatine) 2.5 mg TID PO"
+          },
+          "contraindications": "Supine hypertension (SBP >180), urinary retention, pheochromocytoma, thyrotoxicosis",
+          "monitoring": "Supine BP (check 30 min post-dose); standing BP; urinary retention symptoms; scalp tingling (expected)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Neurogenic OH — volume expansion; adjunct to midodrine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg daily",
+                "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+              },
+              {
+                "text": "0.2 mg daily",
+                "orderSentence": "Fludrocortisone 0.2 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg daily; may increase to 0.2 mg daily after 1-2 weeks; max 0.3 mg/day; take with food",
+            "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+          },
+          "contraindications": "Heart failure, severe edema, severe supine hypertension, hypokalemia",
+          "monitoring": "Potassium (weekly x4, then monthly), supine BP, weight, edema, BMP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Neurogenic OH — norepinephrine precursor; FDA-approved for neurogenic OH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Droxidopa (Northera) 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Droxidopa (Northera) 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Droxidopa (Northera) 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID; take upon awakening, midday, late afternoon",
+            "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+          },
+          "contraindications": "Supine hypertension (SBP >180 at baseline), closed-angle glaucoma",
+          "monitoring": "Supine and standing BP (initial dose and titration); supine hypertension (measure BP supine before bedtime)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine (Mestinon)",
+          "route": "PO",
+          "indication": "Neurogenic OH — enhances ganglionic transmission; reduces OH without supine hypertension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine (Mestinon) 30 mg TID PO"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine (Mestinon) 60 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg TID; increase to 60 mg TID if tolerated; modest effect on OH; advantage: does NOT worsen supine hypertension",
+            "orderSentence": "Pyridostigmine (Mestinon) 30 mg TID PO"
+          },
+          "contraindications": "Mechanical GI/GU obstruction, bradycardia",
+          "monitoring": "GI symptoms (diarrhea, cramping), heart rate, cholinergic side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atomoxetine",
+          "route": "PO",
+          "indication": "Neurogenic OH — norepinephrine reuptake inhibitor; may augment other agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Atomoxetine 10 mg BID PO"
+              },
+              {
+                "text": "18 mg BID",
+                "orderSentence": "Atomoxetine 18 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg BID; increase to 18 mg BID after 1 week; off-label use for neurogenic OH",
+            "orderSentence": "Atomoxetine 10 mg BID PO"
+          },
+          "contraindications": "MAOIs, narrow-angle glaucoma, pheochromocytoma, severe cardiac arrhythmia",
+          "monitoring": "BP (supine and standing), heart rate, mood changes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin (Ditropan)",
+          "route": "PO",
+          "indication": "Neurogenic detrusor overactivity — urinary urgency/frequency/incontinence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg BID",
+                "orderSentence": "Oxybutynin (Ditropan) 2.5 mg BID PO"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Oxybutynin (Ditropan) 5 mg BID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Oxybutynin (Ditropan) 5 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg BID; titrate to 5 mg BID-TID; max 20 mg/day; ER formulation preferred (less cognitive impairment)",
+            "orderSentence": "Oxybutynin (Ditropan) 2.5 mg BID PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma, urinary retention, GI obstruction, myasthenia gravis",
+          "monitoring": "Cognitive function (especially elderly), post-void residual, dry mouth, constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirabegron (Myrbetriq)",
+          "route": "PO",
+          "indication": "Neurogenic detrusor overactivity — preferred over antimuscarinics due to less cognitive impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Mirabegron (Myrbetriq) 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Mirabegron (Myrbetriq) 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase to 50 mg after 4-8 weeks if needed; no anticholinergic side effects",
+            "orderSentence": "Mirabegron (Myrbetriq) 25 mg daily PO"
+          },
+          "contraindications": "Uncontrolled hypertension (may raise BP 1-2 mmHg), severe hepatic impairment",
+          "monitoring": "Blood pressure, urinary retention, UTI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tamsulosin (Flomax)",
+          "route": "PO",
+          "indication": "Urinary retention with elevated post-void residual — alpha-blocker for bladder outlet relaxation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 mg daily",
+                "orderSentence": "Tamsulosin (Flomax) 0.4 mg daily PO"
+              },
+              {
+                "text": "0.8 mg daily",
+                "orderSentence": "Tamsulosin (Flomax) 0.8 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.4 mg daily 30 min after same meal each day; may increase to 0.8 mg daily after 2-4 weeks; CAUTION: may worsen OH in MSA",
+            "orderSentence": "Tamsulosin (Flomax) 0.4 mg daily PO"
+          },
+          "contraindications": "Severe orthostatic hypotension (may worsen OH), hypersensitivity",
+          "monitoring": "Orthostatic BP (may exacerbate OH — use cautiously in MSA), dizziness, retrograde ejaculation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Desmopressin (DDAVP)",
+          "route": "PO/intranasal",
+          "indication": "Nocturnal polyuria contributing to morning OH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg QHS",
+                "orderSentence": "Desmopressin (DDAVP) 0.1 mg QHS PO"
+              },
+              {
+                "text": "0.2 mg QHS",
+                "orderSentence": "Desmopressin (DDAVP) 0.2 mg QHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.2 mg PO at bedtime; OR 10 mcg intranasal at bedtime; reduces nocturnal urine production",
+            "orderSentence": "Desmopressin (DDAVP) 0.1 mg QHS PO"
+          },
+          "contraindications": "Hyponatremia, heart failure, polydipsia",
+          "monitoring": "Serum sodium (check at 1 week, 1 month, then q3 months), weight, fluid balance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intermittent self-catheterization",
+          "route": "-",
+          "indication": "Urinary retention with PVR >150-200 mL not responsive to medications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Intermittent self-catheterization - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Perform clean intermittent catheterization 3-4 times daily or as needed based on symptoms and PVR; clean technique adequate (sterile not required for home use)",
+            "orderSentence": "Intermittent self-catheterization - -"
+          },
+          "contraindications": "Urethral stricture (relative), severe hand dexterity impairment",
+          "monitoring": "PVR, UTI surveillance, urethral integrity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sildenafil (Viagra)",
+          "route": "PO",
+          "indication": "Erectile dysfunction in MSA — PDE5 inhibitor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg PRN",
+                "orderSentence": "Sildenafil (Viagra) 25 mg PRN PO"
+              },
+              {
+                "text": "50 mg PRN",
+                "orderSentence": "Sildenafil (Viagra) 50 mg PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg (lower dose due to OH risk); take 30-60 min before activity; max 1 dose/day; CAUTION: may worsen orthostatic hypotension",
+            "orderSentence": "Sildenafil (Viagra) 25 mg PRN PO"
+          },
+          "contraindications": "Nitrate use, severe OH (SBP <90 standing), severe cardiac disease",
+          "monitoring": "Blood pressure (standing) after first use; warn about OH risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "REM sleep behavior disorder (RBD) — first-line; fewer side effects than clonazepam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg QHS",
+                "orderSentence": "Melatonin 3 mg QHS PO"
+              },
+              {
+                "text": "6 mg QHS",
+                "orderSentence": "Melatonin 6 mg QHS PO"
+              },
+              {
+                "text": "9 mg QHS",
+                "orderSentence": "Melatonin 9 mg QHS PO"
+              },
+              {
+                "text": "12 mg QHS",
+                "orderSentence": "Melatonin 12 mg QHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg at bedtime; titrate by 3 mg q1-2 weeks; max 12 mg; take 30-60 min before bed",
+            "orderSentence": "Melatonin 3 mg QHS PO"
+          },
+          "contraindications": "None absolute; caution with warfarin (may potentiate)",
+          "monitoring": "RBD episode frequency (bed partner report), daytime sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "REM sleep behavior disorder (RBD) — second-line if melatonin insufficient; highly effective",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg QHS",
+                "orderSentence": "Clonazepam 0.25 mg QHS PO"
+              },
+              {
+                "text": "0.5 mg QHS",
+                "orderSentence": "Clonazepam 0.5 mg QHS PO"
+              },
+              {
+                "text": "1 mg QHS",
+                "orderSentence": "Clonazepam 1 mg QHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg at bedtime; titrate to 0.5-1 mg QHS; max 2 mg; use lowest effective dose",
+            "orderSentence": "Clonazepam 0.25 mg QHS PO"
+          },
+          "contraindications": "Sleep apnea (may worsen — contraindicated if untreated OSA or stridor), severe hepatic impairment, fall risk",
+          "monitoring": "Respiratory status (CRITICAL — may worsen stridor/sleep apnea), daytime sedation, falls, cognitive worsening",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CPAP/BiPAP",
+          "route": "-",
+          "indication": "Obstructive sleep apnea; nocturnal stridor (laryngeal abductor paralysis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "CPAP/BiPAP - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "CPAP or BiPAP per sleep study titration; for stridor: CPAP may splint airway open; if severe stridor, may need tracheostomy",
+            "orderSentence": "CPAP/BiPAP - -"
+          },
+          "contraindications": "Severe claustrophobia (relative)",
+          "monitoring": "Adherence, AHI, stridor resolution, respiratory status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Polyethylene glycol 3350 (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation — neurogenic bowel dysfunction; common in MSA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g daily",
+                "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz water daily; titrate frequency to effect; target 1 soft stool daily",
+            "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g daily PO"
+          },
+          "contraindications": "Bowel obstruction, ileus",
+          "monitoring": "Bowel frequency, abdominal distension, electrolytes if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Senna (Senokot)",
+          "route": "PO",
+          "indication": "Constipation — stimulant laxative adjunct if osmotic alone insufficient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8.6 mg QHS",
+                "orderSentence": "Senna (Senokot) 8.6 mg QHS PO"
+              },
+              {
+                "text": "17.2 mg QHS",
+                "orderSentence": "Senna (Senokot) 17.2 mg QHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "8.6-17.2 mg at bedtime; may use daily or as needed; combine with PEG for refractory constipation",
+            "orderSentence": "Senna (Senokot) 8.6 mg QHS PO"
+          },
+          "contraindications": "Bowel obstruction, acute abdominal conditions",
+          "monitoring": "Bowel frequency, cramping, electrolytes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fluoxetine",
+          "route": "PO",
+          "indication": "Depression; pseudobulbar affect — SSRI with mild activating effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Fluoxetine 10 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Fluoxetine 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; increase to 20 mg after 2-4 weeks if needed; max 60 mg/day; take in morning",
+            "orderSentence": "Fluoxetine 10 mg daily PO"
+          },
+          "contraindications": "MAOIs (within 14 days), concurrent thioridazine/pimozide",
+          "monitoring": "Mood, suicidality (first 4 weeks), serotonin syndrome, hyponatremia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline (Zoloft)",
+          "route": "PO",
+          "indication": "Depression; anxiety — SSRI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Sertraline (Zoloft) 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline (Zoloft) 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline (Zoloft) 100 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase to 50-100 mg after 1-2 weeks; max 200 mg/day",
+            "orderSentence": "Sertraline (Zoloft) 25 mg daily PO"
+          },
+          "contraindications": "MAOIs (within 14 days)",
+          "monitoring": "Mood, suicidality, serotonin syndrome, hyponatremia (especially elderly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Excessive daytime sleepiness refractory to sleep optimization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg QAM",
+                "orderSentence": "Modafinil 100 mg QAM PO"
+              },
+              {
+                "text": "200 mg QAM",
+                "orderSentence": "Modafinil 200 mg QAM PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; may increase to 200 mg; take early morning to avoid insomnia",
+            "orderSentence": "Modafinil 100 mg QAM PO"
+          },
+          "contraindications": "Mitral valve prolapse (relative), cardiac arrhythmia, hepatic impairment",
+          "monitoring": "Blood pressure, heart rate, sleep quality, mood",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycopyrrolate",
+          "route": "PO",
+          "indication": "Sialorrhea — anticholinergic with minimal CNS penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg BID",
+                "orderSentence": "Glycopyrrolate 1 mg BID PO"
+              },
+              {
+                "text": "2 mg BID",
+                "orderSentence": "Glycopyrrolate 2 mg BID PO"
+              },
+              {
+                "text": "1 mg TID",
+                "orderSentence": "Glycopyrrolate 1 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg BID; titrate to 1-2 mg BID-TID; max 8 mg/day",
+            "orderSentence": "Glycopyrrolate 1 mg BID PO"
+          },
+          "contraindications": "Narrow-angle glaucoma, GI obstruction, urinary retention, myasthenia gravis",
+          "monitoring": "Dry mouth (therapeutic), urinary retention, constipation, tachycardia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dextromethorphan/Quinidine (Nuedexta)",
+          "route": "PO",
+          "indication": "Pseudobulbar affect (pathological laughing/crying)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20/10 mg daily",
+                "orderSentence": "Dextromethorphan/Quinidine (Nuedexta) 20/10 mg daily PO"
+              },
+              {
+                "text": "20/10 mg BID",
+                "orderSentence": "Dextromethorphan/Quinidine (Nuedexta) 20/10 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20/10 mg daily x7 days, then 20/10 mg BID; space 12 hours apart",
+            "orderSentence": "Dextromethorphan/Quinidine (Nuedexta) 20/10 mg daily PO"
+          },
+          "contraindications": "Concurrent quinidine/quinine/mefloquine, MAOIs, CYP2D6 substrates with narrow TI, prolonged QT, complete AV block",
+          "monitoring": "QTc on ECG (baseline and at steady state), hepatic function, concomitant medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Maintenance/Motor Symptom Management": [
+        {
+          "item": "Carbidopa/Levodopa (Sinemet) — therapeutic trial",
+          "route": "PO",
+          "indication": "Parkinsonism in MSA-P — levodopa trial required for diagnosis (poor response expected in most)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/100 mg TID",
+                "orderSentence": "Carbidopa/Levodopa (Sinemet) — therapeutic trial 25/100 mg TID PO"
+              },
+              {
+                "text": "25/250 mg TID",
+                "orderSentence": "Carbidopa/Levodopa (Sinemet) — therapeutic trial 25/250 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID with meals; titrate to 25/250 mg TID over 4-8 weeks; up to 1000-1500 mg levodopa/day to document response; ~30% have partial/transient response",
+            "orderSentence": "Carbidopa/Levodopa (Sinemet) — therapeutic trial 25/100 mg TID PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs",
+          "monitoring": "Orthostatic BP (levodopa may worsen OH), nausea, dyskinesia (especially facial/cervical in MSA), motor response assessment using UPDRS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Mild parkinsonism symptom relief; may help gait freezing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Amantadine 100 mg daily PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Amantadine 100 mg BID PO"
+              },
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Amantadine 100 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; increase to 100 mg BID-TID over 1-2 weeks; max 300 mg/day; avoid evening doses (insomnia); adjust for renal function",
+            "orderSentence": "Amantadine 100 mg daily PO"
+          },
+          "contraindications": "Renal impairment (reduce dose if CrCl <50), seizure history, severe CHF",
+          "monitoring": "Livedo reticularis, peripheral edema, hallucinations, insomnia, renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin type A (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Dystonia (antecollis, limb dystonia, orofacial dystonia); sialorrhea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per muscle group",
+                "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) Per muscle group IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dystonia: individualized dosing by muscle group (e.g., sternocleidomastoid 25-50 units each side for antecollis); sialorrhea: 30 units per parotid, 20 units per submandibular; repeat q3 months",
+            "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) Per muscle group IM"
+          },
+          "contraindications": "Myasthenia gravis, Lambert-Eaton, infection at injection site",
+          "monitoring": "Dysphagia (especially cervical injections — CRITICAL in MSA), weakness at injection site, bruising",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Octreotide",
+          "route": "SC",
+          "indication": "Refractory postprandial hypotension — somatostatin analogue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mcg before meals",
+                "orderSentence": "Octreotide 25 mcg before meals SC"
+              },
+              {
+                "text": "50 mcg before meals",
+                "orderSentence": "Octreotide 50 mcg before meals SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Start 25 mcg SC 30 min before meals; increase to 50 mcg if needed; max 50 mcg TID; reduces splanchnic blood pooling",
+            "orderSentence": "Octreotide 25 mcg before meals SC"
+          },
+          "contraindications": "Gallstones (long-term risk), diabetes (alters glucose)",
+          "monitoring": "Blood glucose, GI tolerance, gallbladder ultrasound annually if chronic use",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Erythropoietin (EPO)",
+          "route": "SC",
+          "indication": "Refractory neurogenic OH with anemia (Hgb <11) — increases red cell mass and BP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 units/kg",
+                "orderSentence": "Erythropoietin (EPO) 25-50 units/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "25-50 units/kg SC three times weekly; target Hgb 11-12 g/dL; used when other agents fail; off-label for OH",
+            "orderSentence": "Erythropoietin (EPO) 25-50 units/kg SC"
+          },
+          "contraindications": "Uncontrolled hypertension, history of VTE, pure red cell aplasia",
+          "monitoring": "CBC with reticulocytes q2 weeks until stable, iron studies, BP, VTE surveillance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tracheostomy",
+          "route": "-",
+          "indication": "Severe nocturnal stridor with vocal cord paralysis refractory to CPAP — prevents sudden death",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Tracheostomy - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Consider if severe bilateral vocal cord abductor paralysis with stridor unresponsive to CPAP; discuss goals of care thoroughly",
+            "orderSentence": "Tracheostomy - -"
+          },
+          "contraindications": "Patient/family preference against; limited life expectancy with advanced disease (goals of care discussion)",
+          "monitoring": "Tracheostomy care, respiratory status, infection surveillance",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorder specialist for diagnostic confirmation, levodopa trial interpretation, and longitudinal management of parkinsonism/ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic disorders specialist for comprehensive autonomic function testing and OH management optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urology for neurogenic bladder evaluation, urodynamic studies, and intermittent catheterization training",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallowing evaluation (VFSS or FEES) given progressive bulbar dysfunction and aspiration risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait and balance training, fall prevention, and assistive device fitting (walker, wheelchair)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, home safety evaluation, and adaptive equipment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine for polysomnography to evaluate RBD, stridor, and sleep apnea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Otolaryngology (ENT) for laryngoscopy if stridor present to evaluate vocal cord function",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pulmonology for respiratory function monitoring if stridor or respiratory compromise",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Palliative care for symptom management, goals of care discussions, and advance directive planning given progressive disease course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for caregiver support, community resources, disability applications, and support group referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for depression, anxiety, or emotional lability management refractory to first-line agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/dietitian for swallowing-safe diet modification, adequate caloric intake, and salt supplementation guidance for OH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology for evaluation if autonomic cardiac involvement (recurrent syncope, arrhythmias)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "MSA is a progressive neurodegenerative disease; treatments manage symptoms but do not slow progression — early goals of care discussion recommended",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rise slowly from lying to sitting to standing (staged position changes over 1-2 minutes) to minimize orthostatic hypotension episodes",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increase dietary salt intake to 6-10 g/day and fluid intake to 2-2.5 L/day unless contraindicated by heart failure or renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Elevate head of bed 10-15 degrees (4-6 inch blocks) at night to reduce nocturnal supine hypertension and morning orthostatic symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid large carbohydrate-heavy meals (eat smaller, more frequent meals) to prevent postprandial hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop orthostatic hypotension medications abruptly; these require gradual tapering under physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new or worsening stridor (noisy breathing during sleep) immediately — this may indicate vocal cord paralysis requiring urgent evaluation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures: remove rugs and tripping hazards, install grab bars in bathroom, use walker or wheelchair as prescribed, avoid standing quickly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol as it worsens orthostatic hypotension and cerebellar ataxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medications that worsen OH: diuretics, alpha-blockers, tricyclic antidepressants, sildenafil (use cautiously), nitrates — discuss all new medications with neurologist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification indicating MSA and autonomic dysfunction for emergency situations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Advance directives and healthcare proxy should be established early while patient can participate fully in decisions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Physical exercise (seated exercises, recumbent bike, aquatic therapy) tailored to functional level for cardiovascular health and mobility preservation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression garments (waist-high stockings 30-40 mmHg or abdominal binder) worn during daytime upright activities to reduce venous pooling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bolus water drinking: drink 500 mL (16 oz) of cold water rapidly to transiently raise BP by 20-30 mmHg for 30-60 minutes (pressor effect)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid hot environments, prolonged hot showers/baths, and saunas as heat worsens vasodilation and OH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "High-fiber diet with adequate hydration for neurogenic constipation management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to optimize cardiovascular and respiratory function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Support group referral: The MSA Coalition (www.multiplesystematrophy.org) and Defeat MSA Alliance for patient and caregiver resources",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caregiver respite care planning and caregiver burnout screening given high caregiving demands",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Parkinson's disease (PD)",
+      "features": "Sustained excellent levodopa response (>5 years), asymmetric onset, rest tremor, slower progression, no early autonomic failure, no cerebellar signs",
+      "tests": "DaTscan (abnormal in both); MIBG (reduced in PD, preserved in MSA); clinical response to levodopa"
+    },
+    {
+      "diagnosis": "Progressive supranuclear palsy (PSP)",
+      "features": "Early falls (backward), vertical supranuclear gaze palsy, axial rigidity > limb, frontal cognitive changes, no autonomic failure",
+      "tests": "MRI (\"hummingbird sign\" on sagittal, \"morning glory sign\" on axial); clinical"
+    },
+    {
+      "diagnosis": "Corticobasal degeneration (CBD)",
+      "features": "Markedly asymmetric, limb apraxia, alien limb phenomenon, cortical sensory loss, myoclonus, dystonia",
+      "tests": "MRI (asymmetric cortical atrophy); clinical"
+    },
+    {
+      "diagnosis": "Dementia with Lewy bodies (DLB)",
+      "features": "Prominent cognitive decline/dementia within 1 year of parkinsonism, visual hallucinations, fluctuating cognition, neuroleptic sensitivity",
+      "tests": "Clinical criteria; MIBG (reduced like PD); DaTscan abnormal"
+    },
+    {
+      "diagnosis": "Pure autonomic failure (PAF)",
+      "features": "Autonomic failure WITHOUT motor features (no parkinsonism, no cerebellar ataxia); may convert to MSA over years",
+      "tests": "Autonomic testing; serial neurological examination; alpha-synuclein SAA"
+    },
+    {
+      "diagnosis": "Hereditary cerebellar ataxias (SCA1, 2, 3, 6, 7, 17)",
+      "features": "Family history, slower progression, absence of autonomic failure (usually), younger onset",
+      "tests": "Genetic testing; MRI (isolated cerebellar atrophy); family history"
+    },
+    {
+      "diagnosis": "Fragile X-associated tremor/ataxia syndrome (FXTAS)",
+      "features": "Males >50, intention tremor, gait ataxia, cognitive decline, MCP sign on MRI; premutation carrier",
+      "tests": "FMR1 CGG repeat analysis; MRI (symmetric MCP hyperintensity without pontine hot cross bun)"
+    },
+    {
+      "diagnosis": "Autoimmune autonomic ganglionopathy (AAG)",
+      "features": "Subacute onset, pandysautonomia, may respond to immunotherapy",
+      "tests": "Ganglionic AChR antibody; response to IVIG/PLEX"
+    },
+    {
+      "diagnosis": "Paraneoplastic cerebellar degeneration",
+      "features": "Subacute cerebellar ataxia, associated malignancy (ovarian, lung, breast, lymphoma)",
+      "tests": "Paraneoplastic antibodies (anti-Yo, anti-Hu, anti-Tr, anti-VGCC); CT body; PET"
+    },
+    {
+      "diagnosis": "Drug-induced parkinsonism",
+      "features": "Temporal relationship to offending medication (antipsychotics, metoclopramide, valproate), symmetric, may resolve with drug withdrawal",
+      "tests": "Medication history; DaTscan (normal in drug-induced); resolution with drug removal"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Magnetic gait apraxia, urinary incontinence, cognitive decline (triad); no cerebellar signs",
+      "tests": "MRI (ventriculomegaly out of proportion to atrophy); large-volume LP with gait improvement"
+    },
+    {
+      "diagnosis": "Vascular parkinsonism",
+      "features": "Lower-body predominant, stepwise progression, vascular risk factors, subcortical white matter disease",
+      "tests": "MRI (extensive white matter disease, lacunar infarcts); vascular risk factor profile"
+    },
+    {
+      "diagnosis": "Wilson disease",
+      "features": "Age <50, liver disease, psychiatric features, Kayser-Fleischer rings, wing-beating tremor",
+      "tests": "Ceruloplasmin, 24-hour urine copper, slit lamp exam; MRI (\"face of the giant panda\" sign)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "2022 MDS diagnostic criteria for MSA",
+      "evidenceLevel": "Consensus guidelines",
+      "source": "Wenning et al., Mov Disord 2022 [PubMed: 35445419](https://pubmed.ncbi.nlm.nih.gov/35445419/)"
+    },
+    {
+      "recommendation": "Midodrine first-line for neurogenic OH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Low et al., JAMA 1997 [PubMed: 9343467](https://pubmed.ncbi.nlm.nih.gov/9343467/)"
+    },
+    {
+      "recommendation": "Droxidopa for neurogenic OH",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Biaggioni et al., Neurology 2015 [PubMed: 25411440](https://pubmed.ncbi.nlm.nih.gov/25411440/)"
+    },
+    {
+      "recommendation": "Fludrocortisone for neurogenic OH",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Expert consensus; Kaufmann et al., Clin Auton Res 2017 [PubMed: 28578472](https://pubmed.ncbi.nlm.nih.gov/28578472/)"
+    },
+    {
+      "recommendation": "Pyridostigmine for OH without supine hypertension",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Singer et al., Neurology 2006 [PubMed: 16567700](https://pubmed.ncbi.nlm.nih.gov/16567700/)"
+    },
+    {
+      "recommendation": "Melatonin for REM sleep behavior disorder",
+      "evidenceLevel": "Class II, Level B",
+      "source": "McGrane et al., Sleep Med Rev 2015 [PubMed: 25613822](https://pubmed.ncbi.nlm.nih.gov/25613822/)"
+    },
+    {
+      "recommendation": "Clonazepam for REM sleep behavior disorder",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Schenck & Mahowald, Mov Disord 2002 [PubMed: 12465050](https://pubmed.ncbi.nlm.nih.gov/12465050/)"
+    },
+    {
+      "recommendation": "Levodopa trial in MSA (30% partial response)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Wenning et al., Mov Disord 2000 [PubMed: 10752569](https://pubmed.ncbi.nlm.nih.gov/10752569/)"
+    },
+    {
+      "recommendation": "Hot cross bun sign on MRI",
+      "evidenceLevel": "Diagnostic marker",
+      "source": "Schrag et al., J Neurol Neurosurg Psychiatry 2000 [PubMed: 10753770](https://pubmed.ncbi.nlm.nih.gov/10753770/)"
+    },
+    {
+      "recommendation": "Putaminal slit sign on MRI",
+      "evidenceLevel": "Diagnostic marker",
+      "source": "Kraft et al., Mov Disord 2002 [PubMed: 12210890](https://pubmed.ncbi.nlm.nih.gov/12210890/)"
+    },
+    {
+      "recommendation": "MIBG scintigraphy preserved in MSA vs reduced in PD",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Braune, Clin Auton Res 2001 [PubMed: 11570609](https://pubmed.ncbi.nlm.nih.gov/11570609/)"
+    },
+    {
+      "recommendation": "Alpha-synuclein SAA for synucleinopathies",
+      "evidenceLevel": "Emerging evidence",
+      "source": "Siderowf et al., NEJM 2023 [PubMed: 36449420](https://pubmed.ncbi.nlm.nih.gov/36449420/)"
+    },
+    {
+      "recommendation": "Nonpharmacologic OH management (compression, fluids, salt)",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Lahrmann et al., Eur J Neurol 2006 [PubMed: 16930356](https://pubmed.ncbi.nlm.nih.gov/16930356/)"
+    },
+    {
+      "recommendation": "Rapid water drinking pressor effect",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Jordan et al., Circulation 2000 [PubMed: 10648763](https://pubmed.ncbi.nlm.nih.gov/10648763/)"
+    },
+    {
+      "recommendation": "Supine hypertension management in neurogenic OH",
+      "evidenceLevel": "Expert consensus",
+      "source": "Fanciulli & Wenning, Clin Auton Res 2015 [PubMed: 25859752](https://pubmed.ncbi.nlm.nih.gov/25859752/)"
+    },
+    {
+      "recommendation": "Vocal cord abductor paralysis and stridor in MSA",
+      "evidenceLevel": "Case series",
+      "source": "Isozaki et al., J Neurol Neurosurg Psychiatry 1996 [PubMed: 8916507](https://pubmed.ncbi.nlm.nih.gov/8916507/)"
+    },
+    {
+      "recommendation": "Natural history of MSA (median survival 6-10 years)",
+      "evidenceLevel": "Observational",
+      "source": "Wenning et al., Lancet Neurol 2004 [PubMed: 14980530](https://pubmed.ncbi.nlm.nih.gov/14980530/)"
+    },
+    {
+      "recommendation": "External anal sphincter EMG in MSA",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Gilman et al., Neurology 2008 [PubMed: 18172063](https://pubmed.ncbi.nlm.nih.gov/18172063/)"
+    },
+    {
+      "recommendation": "Botulinum toxin for MSA dystonia",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; Jankovic, Mov Disord 2004 [PubMed: 15077235](https://pubmed.ncbi.nlm.nih.gov/15077235/)"
+    },
+    {
+      "recommendation": "MSA autonomic testing battery",
+      "evidenceLevel": "Practice guideline",
+      "source": "Freeman et al., Clin Auton Res 2011 [PubMed: 21431947](https://pubmed.ncbi.nlm.nih.gov/21431947/)"
+    },
+    {
+      "recommendation": "Desmopressin for nocturnal polyuria in autonomic failure",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Mathias et al., BMJ 1986 [PubMed: 3089429](https://pubmed.ncbi.nlm.nih.gov/3089429/)"
+    },
+    {
+      "recommendation": "Octreotide for postprandial hypotension",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Hoeldtke et al., Am J Med 1989 [PubMed: 2672593](https://pubmed.ncbi.nlm.nih.gov/2672593/)"
+    },
+    {
+      "recommendation": "Atomoxetine for neurogenic OH",
+      "evidenceLevel": "Class II, Level B",
+      "source": "Ramirez et al., Hypertension 2014 [PubMed: 24446058](https://pubmed.ncbi.nlm.nih.gov/24446058/)"
+    },
+    {
+      "recommendation": "Mirabegron preferred over antimuscarinics for neurogenic OAB",
+      "evidenceLevel": "Expert consensus",
+      "source": "Herschorn et al., Neurourol Urodyn 2020 [PubMed: 31926040](https://pubmed.ncbi.nlm.nih.gov/31926040/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Orthostatic vital signs (supine and standing BP, HR)",
+      "frequency": "Each visit; daily inpatient; q15min if acute OH",
+      "action": "Titrate OH medications; volume expansion; compression garments",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Supine blood pressure",
+      "frequency": "Before bedtime and upon waking",
+      "action": "Avoid nocturnal midodrine; elevate HOB; short-acting antihypertensive at bedtime if SBP >180",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Post-void residual (bladder scan)",
+      "frequency": "q3-6 months; more frequently if urinary symptoms change",
+      "action": "Initiate or increase catheterization; adjust anticholinergics; urology referral",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Swallowing function assessment",
+      "frequency": "q6-12 months or if new dysphagia symptoms",
+      "action": "Modified diet; SLP evaluation; consider PEG placement if severe",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Respiratory function (FVC, MIP, MEP)",
+      "frequency": "q6-12 months or if stridor/dyspnea",
+      "action": "Sleep study; ENT evaluation; CPAP; consider tracheostomy if severe stridor",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Body weight",
+      "frequency": "Each visit",
+      "action": "Nutritional supplementation; reassess swallowing; dietitian consult",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression screening (PHQ-9)",
+      "frequency": "q6 months",
+      "action": "Initiate or adjust antidepressant; psychiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Falls assessment",
+      "frequency": "Each visit",
+      "action": "PT reassessment; assistive device upgrade; home safety evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive screening (MoCA)",
+      "frequency": "Annually",
+      "action": "Neuropsychology referral; adjust anticholinergic medications",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Impulse control (if on levodopa/dopamine agonist)",
+      "frequency": "Each visit while on dopaminergic therapy",
+      "action": "Reduce or discontinue dopamine agonist",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality / RBD episodes",
+      "frequency": "Each visit (bed partner report)",
+      "action": "Titrate melatonin/clonazepam; repeat sleep study",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Stridor assessment (nocturnal breathing pattern)",
+      "frequency": "Each visit; bed partner report",
+      "action": "Urgent laryngoscopy; CPAP; consider tracheostomy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Serum potassium (if on fludrocortisone)",
+      "frequency": "Weekly x4, then q3 months",
+      "action": "Potassium supplementation; reduce fludrocortisone dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum sodium (if on desmopressin)",
+      "frequency": "At 1 week, 1 month, then q3 months",
+      "action": "Hold desmopressin; reassess need and dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Most MSA patients managed primarily as outpatients; stable autonomic symptoms on current regimen; ambulatory with or without assistive device; adequate home support; able to maintain oral intake"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Recurrent syncope despite outpatient OH management; severe symptomatic orthostatic hypotension requiring IV fluids and medication titration; new dysphagia with aspiration risk; fall with injury; urinary retention requiring catheterization; need for autonomic function testing not available outpatient"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Acute stridor with respiratory compromise (vocal cord paralysis); severe autonomic instability (labile BP with end-organ compromise); aspiration pneumonia with respiratory failure; cardiovascular collapse from refractory OH"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "OH symptoms controlled on oral medications; safe swallowing confirmed; urinary management plan established; falls risk assessed and mitigated; follow-up scheduled within 1-2 weeks"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Refractory autonomic crises; need for tracheostomy evaluation; respiratory failure; cardiovascular instability not responding to floor-level interventions"
+    },
+    {
+      "disposition": "Palliative care/hospice referral",
+      "criteria": "Advanced disease with recurrent aspiration, inability to maintain nutrition, respiratory failure, recurrent life-threatening autonomic crises; patient/family goals aligned with comfort-focused care"
+    }
+  ]
+}

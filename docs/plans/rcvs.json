@@ -1,0 +1,1447 @@
+{
+  "id": "rcvs",
+  "title": "Reversible Cerebral Vasoconstriction Syndrome (RCVS)",
+  "version": "1.1",
+  "icd10": [
+    "** I67.841 (Reversible cerebrovascular vasoconstriction syndrome)",
+    "I67.848 (Other cerebrovascular vasospasm and vasoconstriction)"
+  ],
+  "scope": "** Diagnosis, acute management, and follow-up of RCVS in adults. Covers thunderclap headache evaluation, vasoconstrictor identification and withdrawal, calcium channel blocker therapy, blood pressure management, monitoring for complications (convexity SAH, ischemic stroke, PRES overlap), and serial imaging to document resolution. Excludes primary CNS vasculitis (PACNS — separate evaluation), aneurysmal SAH, and isolated thunderclap headache without vasoconstriction.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; rule out infection or thrombocytopenia; pre-procedure assessment",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Electrolytes; renal function for contrast imaging; hepatic function",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Differentiate from CNS vasculitis (PACNS) — ESR is typically NORMAL in RCVS; elevated ESR favors vasculitis",
+          "target": "Normal (elevated suggests alternative diagnosis such as PACNS)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Differentiate from CNS vasculitis — CRP is typically NORMAL in RCVS; elevated CRP favors vasculitis",
+          "target": "Normal (elevated suggests alternative diagnosis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG) (CPT 84703)",
+          "rationale": "Postpartum RCVS is a major trigger; pregnancy affects treatment options",
+          "target": "Document result",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Cannabis, cocaine, amphetamines, and other sympathomimetics are common RCVS triggers",
+          "target": "Negative (positive identifies trigger for withdrawal)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction as headache contributor; baseline before treatment",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Low magnesium may exacerbate vasospasm; correct before CCB therapy",
+          "target": ">1.8 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Neurogenic cardiac injury; stress cardiomyopathy with severe hypertension",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Screen for systemic autoimmune disease if vasculitis differential remains",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (CPT 86235)",
+          "rationale": "Granulomatosis with polyangiitis and other ANCA-associated vasculitides causing cerebral vasculitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement levels (C3, C4) (CPT 86160, 86161)",
+          "rationale": "Lupus-associated vasculitis differential",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Syphilis screen (RPR/VDRL) (CPT 86592)",
+          "rationale": "Syphilitic meningitis/vasculitis can mimic RCVS on angiography",
+          "target": "Non-reactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV screen (CPT 87389)",
+          "rationale": "HIV-associated vasculopathy differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Toxicology panel (expanded) (CPT 80307)",
+          "rationale": "Identify specific sympathomimetic agents (cocaine, amphetamines, ecstasy, pseudoephedrine); serotonergic drugs",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum serotonin (CPT 84260)",
+          "rationale": "Serotonin syndrome overlap; carcinoid-related vasoconstriction",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Catecholamines/metanephrines (serum or urine)",
+          "rationale": "Pheochromocytoma can cause hypertensive crisis with thunderclap headache and vasoconstriction",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "ACE level (CPT 82164)",
+          "rationale": "Neurosarcoidosis with cerebral vasculopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hypercoagulable panel (protein C, S, antithrombin III, Factor V Leiden)",
+          "rationale": "If ischemic stroke complication; atypical presentation",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF cytology and flow cytometry",
+          "rationale": "Intravascular lymphoma or leptomeningeal disease mimicking vasoconstriction",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (COL4A1/COL4A2)",
+          "rationale": "Familial or recurrent RCVS; collagen vascular disorders predisposing to cerebral vasculopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated in SAH, IIH; typically normal in RCVS",
+          "target": "10-20 cm H2O (normal in RCVS)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "SAH (RBC non-clearing); meningitis (WBC); RCVS typically <10 WBC. WBC >10 strongly suggests PACNS or infection",
+          "target": "WBC <5; RBC 0 or clearing (RCVS: normal or minimal pleocytosis <10 WBC)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in vasculitis, infection; RCVS typically normal or mildly elevated (<60 mg/dL). Protein >60 suggests PACNS",
+          "target": "15-45 mg/dL (RCVS: normal or mildly elevated)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "rationale": "Low CSF glucose suggests infection; normal in RCVS and PACNS",
+          "target": ">60% of serum glucose (normal)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Xanthochromia",
+          "rationale": "Rule out SAH if CT negative; present if prior subarachnoid bleeding",
+          "target": "Negative (unless convexity SAH present)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "rationale": "Exclude bacterial meningitis (meningismus overlap with thunderclap headache)",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cytology (CPT 88108)",
+          "rationale": "Leptomeningeal carcinomatosis causing vessel encasement and secondary vasoconstriction",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Fungal culture",
+          "rationale": "Fungal meningitis with secondary vasculopathy (immunocompromised)",
+          "target": "No growth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "IMMEDIATE — rule out hemorrhage (convexity SAH in ~30% of RCVS); parenchymal hemorrhage; large territory infarct",
+          "target": "Convexity SAH (non-aneurysmal pattern over convexities, NOT in basal cisterns); may be normal early",
+          "contraindications": "None in emergency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT angiography head (CTA) (CPT 70496)",
+          "timing": "Simultaneously with non-contrast CT; first-line vascular imaging for RCVS",
+          "target": "Multifocal segmental narrowing (\"string of beads\" pattern) of large and medium cerebral arteries; alternating areas of constriction and dilation",
+          "contraindications": "Contrast allergy (premedicate); renal impairment (benefit outweighs risk in acute setting)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "timing": "Within 24 hours of presentation; superior to CT for detecting ischemic stroke, PRES, and edema",
+          "target": "Cortical SAH on FLAIR/GRE; PRES (posterior white matter vasogenic edema); DWI restriction (watershed infarcts); convexity hemorrhage on SWI",
+          "contraindications": "Pacemaker; hemodynamic instability; severe claustrophobia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA head (CPT 70544)",
+          "timing": "With MRI; non-invasive vascular assessment without contrast",
+          "target": "Multifocal segmental narrowing; \"string of beads\"; may underestimate vasoconstriction compared to DSA",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "At presentation; baseline before calcium channel blocker therapy",
+          "target": "Normal baseline; rule out QT prolongation; arrhythmia; ischemic changes",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "If concern for vasculitis (vessel wall enhancement); PRES confirmation",
+          "target": "RCVS: NO vessel wall enhancement (key differentiator from PACNS). PRES: posterior white matter edema without enhancement",
+          "contraindications": "Contrast allergy; renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI vessel wall imaging (VWI)",
+          "timing": "When available; distinguish RCVS from PACNS definitively",
+          "target": "RCVS: smooth narrowing WITHOUT concentric vessel wall enhancement. PACNS: concentric vessel wall enhancement (gadolinium)",
+          "contraindications": "Standard MRI contraindications; gadolinium allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "timing": "GOLD STANDARD for cerebral vasoconstriction; if CTA/MRA equivocal or PACNS cannot be excluded; also allows provocative testing",
+          "target": "\"String of beads\" — multifocal segmental narrowing and dilation affecting multiple vascular territories bilaterally; smooth tapering",
+          "contraindications": "Contrast allergy; coagulopathy; renal impairment; procedural risk (~0.5-1% stroke)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Transcranial Doppler (TCD) (CPT 93886)",
+          "timing": "Non-invasive bedside monitoring; serial studies to track vasoconstriction evolution",
+          "target": "Elevated mean flow velocities in affected arteries (MCA >120 cm/s suggests vasospasm); velocities normalize as RCVS resolves over 4-12 weeks",
+          "contraindications": "Absent temporal bone window (~10% of patients)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "CT perfusion (CTP) (CPT 0042T)",
+          "timing": "If clinical suspicion for ischemic complication (new focal deficit)",
+          "target": "Perfusion deficits in watershed distributions; mismatch (penumbra — potentially salvageable)",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "If cardiac murmur, cardiac biomarker elevation, or PFO/embolic source evaluation",
+          "target": "Normal; rule out Takotsubo; PFO evaluation",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Follow-up CTA or MRA (12-week resolution)",
+          "timing": "At 8-12 weeks from onset; confirmatory diagnostic criterion",
+          "target": "COMPLETE RESOLUTION of previously seen vasoconstriction — confirms RCVS diagnosis (reversibility is the defining feature)",
+          "contraindications": "Per modality",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up CTA or MRA (4-6 week interim)",
+          "timing": "At 4-6 weeks; interim assessment of vasoconstriction trajectory",
+          "target": "Improving or resolving vasoconstriction; persistent constriction warrants continued treatment",
+          "contraindications": "Per modality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cerebral perfusion SPECT",
+          "timing": "Research/atypical cases; functional assessment of perfusion deficits",
+          "target": "Hypoperfusion in affected territories",
+          "contraindications": "Limited availability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Brain biopsy (leptomeningeal/cortical)",
+          "timing": "ONLY if PACNS remains the leading diagnosis despite non-invasive workup; avoid if RCVS is strongly suspected",
+          "target": "Vasculitis: vessel wall inflammation, granulomata. RCVS: normal biopsy",
+          "contraindications": "Surgical risk; sampling error",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Vasoconstrictor withdrawal",
+          "route": "-",
+          "indication": "CORNERSTONE OF RCVS MANAGEMENT — removal of the inciting trigger",
+          "dosing": {
+            "instructions": "Immediately discontinue ALL vasoconstrictors: triptans, ergotamine, cocaine, amphetamines, cannabis, pseudoephedrine, SSRIs/SNRIs (taper if on chronic therapy to avoid withdrawal), nasal decongestants, diet pills, energy supplements. Document complete medication reconciliation",
+            "orderSentence": "Vasoconstrictor withdrawal - - - see dosing"
+          },
+          "contraindications": "Abrupt SSRI/SNRI discontinuation may cause withdrawal syndrome — taper over 1-2 weeks if on chronic therapy",
+          "monitoring": "Review medication list daily; urine drug screen to confirm compliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Verapamil (preferred first-line CCB)",
+          "route": "PO",
+          "indication": "Calcium channel blocker to reduce cerebral vasoconstriction and prevent recurrent thunderclap headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg",
+                "orderSentence": "Verapamil (preferred first-line CCB) 80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 80 mg PO TID; titrate to 120 mg TID (or 240 mg SR BID) over 3-5 days based on BP tolerance; max 480 mg/day; continue for 4-12 weeks until imaging resolution",
+            "orderSentence": "Verapamil (preferred first-line CCB) 80 mg PO"
+          },
+          "contraindications": "Heart block (2nd/3rd degree AV block); severe LV dysfunction (EF <30%); sick sinus syndrome; concurrent beta-blocker use (risk of severe bradycardia/hypotension); SBP <90",
+          "monitoring": "ECG before starting and at 48-72h; BP and HR q4-6h during titration; continuous telemetry first 24h inpatient",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nimodipine (alternative first-line CCB)",
+          "route": "PO",
+          "indication": "Calcium channel blocker with preferential cerebral vascular selectivity; alternative to verapamil",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (alternative first-line CCB) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "60 mg PO q4h (or 30 mg q2h if hypotension); continue for 4-12 weeks until imaging resolution; do NOT give IV (severe hypotension)",
+            "orderSentence": "Nimodipine (alternative first-line CCB) 60 mg PO"
+          },
+          "contraindications": "Hypotension (SBP <90 — reduce to 30 mg q2h); hepatic impairment (reduce dose)",
+          "monitoring": "BP with each dose; enteral route ONLY (never IV); may cause hypotension especially in first 24-48h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure control: Nicardipine IV",
+          "route": "IV",
+          "indication": "Severe hypertension (SBP >180) in acute RCVS — IV nicardipine provides precise BP control; dual benefit as CCB for vasoconstriction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Blood pressure control: Nicardipine IV 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV infusion; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP 120-160 mmHg; avoid aggressive BP lowering below 120 (risk of watershed ischemia from vasoconstriction)",
+            "orderSentence": "Blood pressure control: Nicardipine IV 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis",
+          "monitoring": "Continuous arterial BP monitoring; neuro checks q1h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure control: Labetalol IV",
+          "route": "IV",
+          "indication": "Severe hypertension (SBP >180) when CCB alone insufficient or not yet started",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Blood pressure control: Labetalol IV 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV push q10-20min; max 300 mg. Target SBP 120-160 mmHg",
+            "orderSentence": "Blood pressure control: Labetalol IV 20 mg IV"
+          },
+          "contraindications": "Heart block; severe bradycardia; asthma; decompensated CHF",
+          "monitoring": "HR; BP continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV isotonic fluids (euvolemia)",
+          "route": "IV",
+          "indication": "Maintain euvolemia to prevent worsening of vasoconstriction-related ischemia; dehydration may exacerbate vasospasm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mL/h",
+                "orderSentence": "IV isotonic fluids (euvolemia) 100 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS at 75-125 mL/h; titrate to maintain euvolemia; avoid both hypovolemia and fluid overload",
+            "orderSentence": "IV isotonic fluids (euvolemia) 100 mL/h IV"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; daily weights; serum Na",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium sulfate (supplemental)",
+          "route": "IV",
+          "indication": "Correct hypomagnesemia; magnesium has vasodilatory properties and may reduce vasospasm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Magnesium sulfate (supplemental) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 g IV over 1-2h if Mg <2.0; target serum Mg >2.0 mg/dL; maintenance 1-2 g IV q6h if persistently low",
+            "orderSentence": "Magnesium sulfate (supplemental) 2 g IV"
+          },
+          "contraindications": "Renal failure; hypermagnesemia",
+          "monitoring": "Serum Mg q12-24h; deep tendon reflexes",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Analgesic for thunderclap headache — first-line because it does NOT cause vasoconstriction; avoid all triptans and ergotamines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO q6h PRN headache; max 4000 mg/day (3000 mg/day if hepatic impairment). IV: 1000 mg IV q6h PRN if NPO",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "Hepatic function if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "NSAID for severe thunderclap headache refractory to acetaminophen; short-course only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV x1, then 15-30 mg IV q6h PRN; max 5 days total; reduce to 15 mg in elderly or renal impairment",
+            "orderSentence": "Ketorolac 30 mg IV"
+          },
+          "contraindications": "Active GI bleeding; renal impairment (CrCl <30); coagulopathy; concurrent anticoagulation; known SAH with active bleeding risk",
+          "monitoring": "Renal function; GI symptoms; bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "NSAID for outpatient headache management after discharge; avoid in patients with SAH complication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Ibuprofen 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6-8h PRN; max 2400 mg/day; take with food",
+            "orderSentence": "Ibuprofen 400 mg PO"
+          },
+          "contraindications": "GI bleeding; renal impairment; concurrent anticoagulation; known intracranial hemorrhage",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Antiemetic for nausea/vomiting associated with thunderclap headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6-8h PRN nausea; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; allergy",
+          "monitoring": "QTc if repeated doses",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Antiemetic with mild analgesic properties for headache-associated nausea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q8h PRN nausea; give with diphenhydramine 25 mg to prevent akathisia",
+            "orderSentence": "Metoclopramide 10 mg IV"
+          },
+          "contraindications": "Parkinsonism; seizure history; bowel obstruction; pheochromocytoma",
+          "monitoring": "Extrapyramidal symptoms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV/PO",
+          "indication": "Anxiolysis and headache relief; reduces sympathetic drive which may worsen vasoconstriction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Lorazepam 0.5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV/PO q6-8h PRN severe headache or anxiety; short-course only (3-5 days)",
+            "orderSentence": "Lorazepam 0.5 mg IV"
+          },
+          "contraindications": "Respiratory depression; severe hepatic impairment; concurrent CNS depressants",
+          "monitoring": "Respiratory status; sedation level",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Stool softener to prevent straining/Valsalva which may trigger thunderclap headache recurrence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID while symptomatic; Valsalva is a common trigger for RCVS thunderclap headaches",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "Bowel obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Verapamil (IV loading — refractory cases)",
+          "route": "IV",
+          "indication": "Refractory vasoconstriction with progressive neurologic deficits despite oral CCB therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Verapamil (IV loading — refractory cases) 5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg IV over 2 min; may repeat q15min x3; max 20 mg; then transition to oral verapamil. Use with continuous cardiac monitoring",
+            "orderSentence": "Verapamil (IV loading — refractory cases) 5 mg IV"
+          },
+          "contraindications": "Complete heart block; severe LV dysfunction; concurrent IV beta-blocker; SBP <90",
+          "monitoring": "Continuous telemetry; BP q5min during infusion; ECG for PR prolongation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nimodipine (dose escalation)",
+          "route": "PO",
+          "indication": "Persistent thunderclap headaches or worsening vasoconstriction on standard dose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "90 mg",
+                "orderSentence": "Nimodipine (dose escalation) 90 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Increase from 60 mg to 90 mg PO q4h; monitor BP closely; max 540 mg/day; higher doses increase hypotension risk",
+            "orderSentence": "Nimodipine (dose escalation) 90 mg PO"
+          },
+          "contraindications": "Hypotension (SBP <90); hepatic impairment",
+          "monitoring": "BP q2h during escalation; hepatic function",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Intra-arterial verapamil (endovascular rescue)",
+          "route": "IA",
+          "indication": "Severe, progressive vasoconstriction with ischemic deficit refractory to oral/IV therapy — endovascular rescue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Intra-arterial verapamil (endovascular rescue) 5 mg IA"
+              }
+            ],
+            "route": "IA",
+            "instructions": "Verapamil 5-10 mg intra-arterial per vessel during cerebral angiography; may repeat in multiple territories; performed by neurointerventionalist",
+            "orderSentence": "Intra-arterial verapamil (endovascular rescue) 5 mg IA"
+          },
+          "contraindications": "Hemodynamic instability; inaccessible distal vessels",
+          "monitoring": "Angiographic response; clinical improvement; BP during procedure",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intra-arterial nicardipine (endovascular rescue)",
+          "route": "IA",
+          "indication": "Severe, progressive vasoconstriction with ischemic deficit refractory to oral/IV therapy — alternative to IA verapamil",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Intra-arterial nicardipine (endovascular rescue) 5 mg IA"
+              }
+            ],
+            "route": "IA",
+            "instructions": "Nicardipine 5-10 mg intra-arterial per vessel during cerebral angiography",
+            "orderSentence": "Intra-arterial nicardipine (endovascular rescue) 5 mg IA"
+          },
+          "contraindications": "Hemodynamic instability",
+          "monitoring": "Angiographic response; clinical improvement; BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Balloon angioplasty",
+          "route": "-",
+          "indication": "Focal severe proximal vasoconstriction causing critical ischemia; refractory to pharmacologic vasodilation",
+          "dosing": {
+            "instructions": "Mechanical dilation of severely spastic proximal cerebral arteries during angiography",
+            "orderSentence": "Balloon angioplasty - - - see dosing"
+          },
+          "contraindications": "Vessel rupture risk; distal vasoconstriction not amenable to balloon; diffuse disease",
+          "monitoring": "Angiographic result; post-procedure neuro exam",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylprednisolone IV (if PRES overlap with edema)",
+          "route": "IV",
+          "indication": "PRES-type cerebral edema with seizures or encephalopathy overlapping with RCVS; NOT standard for uncomplicated RCVS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (if PRES overlap with edema) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mg IV daily for 3-5 days; infuse over 1 hour. Use ONLY for PRES overlap with significant edema; steroids are NOT routinely recommended for RCVS and may worsen outcomes if PACNS is misdiagnosed",
+            "orderSentence": "Methylprednisolone IV (if PRES overlap with edema) 1000 mg IV"
+          },
+          "contraindications": "Active infection; poorly controlled diabetes; GI bleeding",
+          "monitoring": "Blood glucose q6h; BP; infection signs; psychiatric effects",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Levetiracetam (for seizures)",
+          "route": "IV/PO",
+          "indication": "Seizure prophylaxis or treatment if seizures occur (more common with PRES overlap or cortical SAH)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (for seizures) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1000-1500 mg IV, then 500-1000 mg BID; adjust for renal function",
+            "orderSentence": "Levetiracetam (for seizures) 1000 mg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust for CrCl <50)",
+          "monitoring": "Seizure monitoring; renal function; mood/behavior changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Verapamil (maintenance taper)",
+          "route": "PO",
+          "indication": "Ongoing CCB therapy during recovery phase; continue until imaging confirms resolution of vasoconstriction at 8-12 weeks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "240 mg",
+                "orderSentence": "Verapamil (maintenance taper) 240 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Maintain effective dose (typically 240-480 mg/day as 80-120 mg TID or 240 mg SR BID) for 8-12 weeks; taper gradually over 2-4 weeks once follow-up CTA/MRA shows complete resolution",
+            "orderSentence": "Verapamil (maintenance taper) 240 mg PO"
+          },
+          "pretreatment": "ECG (assess PR interval); renal and hepatic function",
+          "contraindications": "Heart block; severe LV dysfunction; concurrent beta-blocker",
+          "monitoring": "ECG at baseline and q2-4 weeks during taper; BP at each visit; repeat CTA/MRA at 8-12 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nimodipine (maintenance course)",
+          "route": "PO",
+          "indication": "Alternative to verapamil for ongoing CCB therapy during recovery phase",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (maintenance course) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Continue 60 mg PO q4h for 8-12 weeks; taper by reducing frequency to q6h then q8h over 2-4 weeks once imaging confirms resolution",
+            "orderSentence": "Nimodipine (maintenance course) 60 mg PO"
+          },
+          "pretreatment": "Hepatic function (dose reduce in hepatic impairment)",
+          "contraindications": "Hypotension; hepatic failure",
+          "monitoring": "BP with dose changes; hepatic function; follow-up CTA/MRA at 8-12 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amlodipine (transition to long-acting CCB)",
+          "route": "PO",
+          "indication": "Long-acting CCB for patients transitioning from verapamil or nimodipine; easier compliance for outpatient management; also provides BP control",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Amlodipine (transition to long-acting CCB) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; increase to 10 mg daily as needed; may use as transition from verapamil/nimodipine for longer-term management",
+            "orderSentence": "Amlodipine (transition to long-acting CCB) 5 mg PO"
+          },
+          "pretreatment": "BP assessment",
+          "contraindications": "Severe hypotension; aortic stenosis",
+          "monitoring": "BP; pedal edema; repeat CTA/MRA at 8-12 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consult for RCVS diagnosis confirmation, vasoconstrictor identification, and CCB management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurocritical care if ischemic stroke, significant SAH, or PRES with seizures requiring ICU-level monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurointerventional radiology if progressive vasoconstriction with ischemic deficits refractory to medical management (intra-arterial vasodilator or angioplasty)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Headache specialist (neurology) for long-term headache management and migraine prophylaxis after RCVS resolution, as migraine is a common comorbidity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry consultation if vasoconstrictor exposure was illicit drug use (cocaine, amphetamines, cannabis) requiring addiction medicine support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Obstetrics/MFM consultation if postpartum RCVS for future pregnancy counseling and breastfeeding-safe medication review",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pharmacy consultation for complete medication reconciliation to identify all potential vasoconstrictors including OTC and herbal supplements",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait assessment and fall prevention if focal deficits from stroke complication",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and cognitive rehabilitation if ischemic stroke complication",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow and language evaluation if stroke complication affects dominant hemisphere or brainstem",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately or call 911 if sudden severe headache recurs, new weakness or numbness develops, vision changes, difficulty speaking, or seizure occurs (may indicate stroke complication from ongoing vasoconstriction)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AVOID all known triggers: do NOT use triptans, ergotamine, cocaine, amphetamines, cannabis, excessive caffeine, pseudoephedrine/phenylephrine nasal decongestants, or energy supplements — these may worsen vasoconstriction and cause stroke",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid Valsalva maneuvers (heavy lifting, straining at stool, vigorous exercise) for 4-6 weeks as these commonly trigger recurrent thunderclap headaches in RCVS",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid very hot showers or baths (bath-related thunderclap headache is a recognized RCVS trigger)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sexual activity during acute phase (2-4 weeks) as orgasm-related headache is a common RCVS trigger",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take calcium channel blocker medication exactly as prescribed; do not stop suddenly without physician guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology due to risk of sudden severe headache or stroke while operating a vehicle",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new medications (including OTC, herbals, and supplements) to your neurologist before starting, as many common medications can trigger vasoconstriction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RCVS typically resolves completely within 12 weeks — follow-up imaging will confirm resolution and guide medication taper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Complete cessation of all illicit drug use (cocaine, amphetamines, cannabis, ecstasy/MDMA) — these are among the strongest RCVS triggers",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid all vasoconstrictor medications long-term including triptans, ergotamine, and sympathomimetic decongestants — provide patient with written list of medications to avoid",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood pressure control target <130/80 mmHg to reduce risk of hemorrhagic and ischemic complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk and improve endothelial function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caffeine moderation (limit to <200 mg/day) as excessive caffeine may contribute to vasoconstriction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and sleep hygiene as physiological stress and sleep deprivation may lower the threshold for vasoconstriction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Graduated return to exercise starting with light activity (walking, yoga) after 4-6 weeks; avoid heavy resistance training until imaging confirms resolution",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If postpartum RCVS: discuss recurrence risk with neurologist before future pregnancies; recurrence rate is low (~5-10%) but higher with re-exposure to triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Primary angiitis of the CNS (PACNS)",
+      "features": "Progressive headache over weeks (NOT thunderclap); CSF abnormal (pleocytosis >10 WBC, elevated protein >60); vessel wall enhancement on MRI VWI; ESR/CRP often elevated; does NOT resolve spontaneously; requires immunosuppression",
+      "tests": "CSF analysis (abnormal in PACNS, normal in RCVS); MRI VWI (concentric enhancement in PACNS, absent in RCVS); ESR/CRP (elevated in PACNS); brain biopsy (granulomatous inflammation)"
+    },
+    {
+      "diagnosis": "Aneurysmal subarachnoid hemorrhage (aSAH)",
+      "features": "Blood in BASAL CISTERNS (not convexities); aneurysm on CTA/DSA; single thunderclap event; Hunt-Hess grading; requires aneurysm securing",
+      "tests": "CT (cisternal blood pattern); CTA (aneurysm identified); DSA (gold standard); LP (xanthochromia if CT negative)"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "May overlap with RCVS (10-40% co-occurrence); seizures and encephalopathy more prominent; bilateral posterior white matter edema on MRI; associated with hypertension, eclampsia, immunosuppressants",
+      "tests": "MRI (posterior-dominant vasogenic edema); clinical context (hypertension, eclampsia); RCVS and PRES frequently coexist"
+    },
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Gradual onset aura (over 5-60 min); headache builds over minutes-hours (NOT thunderclap peaking in <60 sec); recurrent stereotyped episodes; normal vascular imaging",
+      "tests": "Clinical history (gradual onset vs thunderclap); CTA/MRA (normal in migraine; \"string of beads\" in RCVS)"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT)",
+      "features": "Subacute headache over days; papilledema; seizures; hemorrhagic venous infarcts; risk factors (OCPs, pregnancy, coagulopathy); thrombosed sinus on MRV",
+      "tests": "MRV or CT venogram (sinus thrombosis); D-dimer (may be elevated); CSF (elevated pressure)"
+    },
+    {
+      "diagnosis": "Cervical artery dissection",
+      "features": "Neck pain with ipsilateral headache; Horner syndrome; ischemic stroke in single vascular territory (NOT multifocal); intimal flap on CTA",
+      "tests": "CTA/MRA neck (intimal flap, pseudoaneurysm, mural hematoma); MRI neck with fat sat (crescent sign)"
+    },
+    {
+      "diagnosis": "Pituitary apoplexy",
+      "features": "Sudden headache with visual field defect and ophthalmoplegia; known pituitary adenoma; hemorrhage/infarction within pituitary gland",
+      "tests": "MRI sella (hemorrhagic/infarcted pituitary mass); hormone panel (panhypopituitarism); visual fields"
+    },
+    {
+      "diagnosis": "Intracranial hypotension (CSF leak)",
+      "features": "Orthostatic headache (worse upright, better supine); may have thunderclap onset; diffuse pachymeningeal enhancement; brain sagging on MRI",
+      "tests": "MRI (diffuse pachymeningeal enhancement, brain sagging, subdural fluid); LP (low opening pressure <6 cm H2O)"
+    },
+    {
+      "diagnosis": "Hypertensive emergency",
+      "features": "Severely elevated BP (>220/120); headache; may have PRES features; no segmental vasoconstriction on vascular imaging",
+      "tests": "CTA/MRA (no \"string of beads\"); MRI (may show PRES); BP response to treatment"
+    },
+    {
+      "diagnosis": "Pheochromocytoma",
+      "features": "Paroxysmal hypertension with headache, palpitations, diaphoresis; episodic; adrenal mass",
+      "tests": "Serum/urine catecholamines and metanephrines; CT/MRI abdomen (adrenal mass)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Thunderclap headache as hallmark presentation; recurrent thunderclap headaches over 1-4 weeks are pathognomonic for RCVS",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/) — largest prospective cohort (67 patients); defined clinical spectrum"
+    },
+    {
+      "recommendation": "Vasoconstrictor exposure identification and withdrawal as cornerstone of management",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237903/) — comprehensive review of triggers and management"
+    },
+    {
+      "recommendation": "CTA/MRA as first-line vascular imaging; \"string of beads\" pattern; may be normal early",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Chen et al. Cephalalgia 2010](https://pubmed.ncbi.nlm.nih.gov/19614691/) — CTA sensitivity and serial imaging findings"
+    },
+    {
+      "recommendation": "Calcium channel blockers (verapamil, nimodipine) as mainstay therapy",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/); [Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220720/) — observational data; no RCTs available"
+    },
+    {
+      "recommendation": "Verapamil preferred first-line CCB for RCVS",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Singhal & Bernstein. Neurocrit Care 2005](https://pubmed.ncbi.nlm.nih.gov/16159052/) — early description of verapamil use; expert consensus"
+    },
+    {
+      "recommendation": "Nimodipine as alternative CCB with cerebrovascular selectivity",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17210890/) — narrative review and recommendations"
+    },
+    {
+      "recommendation": "Resolution of vasoconstriction within 12 weeks confirms diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/) — resolution documented by serial angiography"
+    },
+    {
+      "recommendation": "Convexity SAH occurs in ~30% of RCVS patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20966404/) — hemorrhagic and ischemic complications of RCVS"
+    },
+    {
+      "recommendation": "CSF is typically normal in RCVS (distinguishes from PACNS)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros et al. Brain 2007](https://pubmed.ncbi.nlm.nih.gov/17533168/); [Calabrese et al. Ann Intern Med 2007](https://pubmed.ncbi.nlm.nih.gov/17210890/)"
+    },
+    {
+      "recommendation": "MRI vessel wall imaging differentiates RCVS (no enhancement) from PACNS (concentric enhancement)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Mandell et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22308252/) — vessel wall MRI distinguishing RCVS from vasculitis"
+    },
+    {
+      "recommendation": "PRES overlap occurs in 10-40% of RCVS patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Singhal et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21220720/) — RCVS clinical and radiographic spectrum"
+    },
+    {
+      "recommendation": "Ischemic stroke complicates 10-40% of RCVS, typically watershed distribution",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ducros et al. Stroke 2010](https://pubmed.ncbi.nlm.nih.gov/20966404/)"
+    },
+    {
+      "recommendation": "Transcranial Doppler for non-invasive monitoring of vasoconstriction",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Chen et al. Ann Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21793098/) — TCD changes correlate with angiographic findings"
+    },
+    {
+      "recommendation": "Postpartum angiopathy is a recognized RCVS variant",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Fugate et al. Stroke 2012](https://pubmed.ncbi.nlm.nih.gov/22246694/) — postpartum cerebral angiopathy and RCVS"
+    },
+    {
+      "recommendation": "Intra-arterial vasodilators for refractory RCVS with progressive ischemia",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Elstner et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19289478/) — case series of endovascular rescue"
+    },
+    {
+      "recommendation": "Avoid glucocorticoids in uncomplicated RCVS (may worsen outcomes; risk of misdiagnosis)",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Singhal et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28250024/) — glucocorticoid use associated with worse outcomes in RCVS"
+    },
+    {
+      "recommendation": "Recurrence rate of RCVS is low (~5-8%)",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Topcuoglu et al. Stroke 2017](https://pubmed.ncbi.nlm.nih.gov/28526763/) — recurrence and long-term prognosis"
+    },
+    {
+      "recommendation": "Blood pressure management: avoid both severe hypertension and aggressive lowering",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; [Ducros & Bousser. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237903/)"
+    },
+    {
+      "recommendation": "Cannabis is an emerging common trigger for RCVS",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Wolff et al. Cerebrovasc Dis 2015](https://pubmed.ncbi.nlm.nih.gov/26184913/) — cannabis-associated RCVS; systematic review"
+    },
+    {
+      "recommendation": "RCVS diagnostic criteria and proposed scoring system",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Rocha et al. Stroke 2019](https://pubmed.ncbi.nlm.nih.gov/31272315/) — RCVS2 score for clinical diagnosis"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure",
+      "frequency": "Continuous in ICU/ED; q1h on floor x 24h, then q4h; each outpatient visit",
+      "action": "Titrate antihypertensives; avoid precipitous drops; raise if vasospasm-related ischemia",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic examination (GCS, focal deficits)",
+      "frequency": "q1h x 24h; then q2h x 48h; then q4h; each outpatient visit",
+      "action": "New deficit: STAT CT/CTA (stroke complication); reassess treatment; consider endovascular rescue",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Heart rate and rhythm",
+      "frequency": "Continuous telemetry x 48-72h on CCB; each visit on CCB",
+      "action": "Hold CCB if HR <50 or new AV block; ECG; cardiology if needed",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ECG (PR interval)",
+      "frequency": "Baseline; 48-72h after CCB initiation; with each dose escalation; q2-4 weeks outpatient on verapamil",
+      "action": "Reduce or hold verapamil if PR prolongation >200 ms or new heart block",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Headache severity and frequency",
+      "frequency": "Daily (inpatient); each visit (outpatient). Use numeric rating scale (0-10)",
+      "action": "New thunderclap headache: STAT vascular imaging (CTA/MRA) to assess vasoconstriction; escalate therapy",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "Daily x 72h; then q48h; if cerebral edema or SIADH concern",
+      "action": "Correct hyponatremia cautiously (<10 mEq/24h)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum magnesium",
+      "frequency": "Daily x 72h; then q48h",
+      "action": "Replete with MgSO4 2-4 g IV",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BMP)",
+      "frequency": "At baseline; q48h inpatient; at each outpatient visit on NSAIDs",
+      "action": "Adjust medications; hold NSAIDs if declining",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Follow-up CTA or MRA",
+      "frequency": "At 4-6 weeks (interim); at 8-12 weeks (confirmatory); consider earlier if worsening",
+      "action": "If no resolution by 12 weeks: reconsider diagnosis (PACNS?); consider biopsy; extend CCB therapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TCD velocities (if available)",
+      "frequency": "Every 3-5 days inpatient; q2-4 weeks outpatient",
+      "action": "Increasing velocities suggest worsening vasoconstriction; consider escalating therapy",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Clinical observation; continuous EEG if altered consciousness or PRES overlap",
+      "action": "If seizure: levetiracetam; continuous EEG; MRI to assess for PRES or infarct",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home from ED",
+      "criteria": "Generally NOT recommended from ED on initial presentation; RCVS requires inpatient observation to monitor for stroke complications (SAH, ischemic stroke) which may develop over days. Exception: stable patient with mild symptoms, confirmed diagnosis from prior admission, and close neurology follow-up within 48-72 hours"
+    },
+    {
+      "disposition": "Admit to hospital floor",
+      "criteria": "Thunderclap headache with imaging consistent with RCVS; no evidence of ischemic stroke, significant SAH, or PRES; hemodynamically stable; able to take oral medications; no ICU-level monitoring needs"
+    },
+    {
+      "disposition": "Admit to ICU / Step-down",
+      "criteria": "Ischemic stroke complication; significant convexity SAH; PRES with seizures or encephalopathy; need for IV antihypertensives or IV CCB; hemodynamic instability; progressive neurologic deficits; need for endovascular intervention"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "If neurointerventional radiology not available and patient has progressive deficits requiring intra-arterial treatment; if neurocritical care not available for complex RCVS with stroke/SAH"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Headaches controlled on oral CCB; no new thunderclap episodes for >=48 hours; stable neurologic exam; blood pressure controlled; vasoconstrictor triggers identified and discontinued; follow-up neurology appointment scheduled within 1-2 weeks; follow-up imaging (CTA/MRA) scheduled at 4-6 weeks"
+    },
+    {
+      "disposition": "Outpatient follow-up schedule",
+      "criteria": "Neurology 1-2 weeks post-discharge; repeat at 4-6 weeks with interim CTA/MRA; confirmatory CTA/MRA at 8-12 weeks; if complete resolution confirmed, begin CCB taper; final visit after CCB discontinuation"
+    }
+  ]
+}

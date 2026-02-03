@@ -3,7 +3,17 @@
   "title": "Parkinson's Disease",
   "version": "1.0",
   "icd10": [
-    "** G20 (Parkinson's disease)"
+    "** G20 (Parkinson's disease)",
+    "G20.A1 (Parkinson's disease without dyskinesia",
+    "without motor fluctuations)",
+    "G20.A2 (Parkinson's disease without dyskinesia",
+    "with motor fluctuations)",
+    "G20.B1 (Parkinson's disease with dyskinesia",
+    "without motor fluctuations)",
+    "G20.B2 (Parkinson's disease with dyskinesia",
+    "with motor fluctuations)",
+    "G20.C (Parkinsonism",
+    "unspecified)"
   ],
   "scope": "** Diagnosis confirmation, dopaminergic therapy initiation and optimization, motor fluctuation management, and non-motor symptom treatment. Excludes Parkinson-plus syndromes (MSA, PSP, CBD, DLB - separate protocols).",
   "notes": [],
@@ -11,7 +21,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "rationale": "Baseline; rule out anemia contributing to fatigue",
           "target": "Normal",
           "ED": "STAT",
@@ -20,7 +30,7 @@
           "ICU": "-"
         },
         {
-          "item": "BMP",
+          "item": "BMP (CPT 80048)",
           "rationale": "Renal function for medication dosing; electrolytes",
           "target": "Normal",
           "ED": "STAT",
@@ -29,7 +39,7 @@
           "ICU": "-"
         },
         {
-          "item": "Hepatic panel (LFTs)",
+          "item": "Hepatic panel (LFTs) (CPT 80076)",
           "rationale": "Baseline before COMT inhibitors",
           "target": "Normal",
           "ED": "-",
@@ -38,7 +48,7 @@
           "ICU": "-"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "rationale": "Rule out hypothyroidism mimicking bradykinesia",
           "target": "Normal",
           "ED": "-",
@@ -47,7 +57,7 @@
           "ICU": "-"
         },
         {
-          "item": "Vitamin B12",
+          "item": "Vitamin B12 (CPT 82607)",
           "rationale": "Deficiency can cause parkinsonism; common in elderly",
           "target": ">300 pg/mL",
           "ED": "-",
@@ -56,7 +66,7 @@
           "ICU": "-"
         },
         {
-          "item": "Vitamin D, 25-hydroxy",
+          "item": "Vitamin D, 25-hydroxy (CPT 82306)",
           "rationale": "Deficiency common; associated with falls and disease severity",
           "target": ">30 ng/mL",
           "ED": "-",
@@ -65,9 +75,9 @@
           "ICU": "-"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "Ceruloplasmin, serum copper",
+          "item": "Ceruloplasmin (CPT 82390), serum copper (CPT 82390)",
           "rationale": "Wilson's disease if age <50",
           "target": "Normal",
           "ED": "-",
@@ -85,7 +95,7 @@
           "ICU": "-"
         },
         {
-          "item": "Ferritin, iron studies",
+          "item": "Ferritin (CPT 82728), iron studies (CPT 83540, 83550)",
           "rationale": "Neurodegeneration with brain iron accumulation",
           "target": "Normal",
           "ED": "-",
@@ -94,7 +104,7 @@
           "ICU": "-"
         },
         {
-          "item": "RPR or VDRL",
+          "item": "RPR or VDRL (CPT 86592)",
           "rationale": "Syphilis can cause parkinsonism",
           "target": "Nonreactive",
           "ED": "-",
@@ -103,7 +113,7 @@
           "ICU": "-"
         },
         {
-          "item": "HIV testing",
+          "item": "HIV testing (CPT 87389)",
           "rationale": "HIV-associated parkinsonism",
           "target": "Negative",
           "ED": "-",
@@ -112,7 +122,7 @@
           "ICU": "-"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Genetic testing (LRRK2, GBA, SNCA, PARK2, PINK1, DJ-1)",
           "rationale": "Family history or early-onset (<50 years)",
@@ -145,7 +155,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI Brain without contrast",
+          "item": "MRI Brain without contrast (CPT 70551)",
           "timing": "At diagnosis",
           "target": "Normal (rules out structural causes, vascular parkinsonism, NPH)",
           "contraindications": "MRI-incompatible devices",
@@ -157,7 +167,7 @@
       ],
       "Extended": [
         {
-          "item": "DaTscan (ioflupane I-123 SPECT)",
+          "item": "DaTscan (CPT 78830)",
           "timing": "Diagnostic uncertainty; essential tremor vs PD",
           "target": "Reduced dopamine transporter uptake in striatum",
           "contraindications": "Hypersensitivity to iodine",
@@ -187,7 +197,7 @@
           "ICU": "-"
         },
         {
-          "item": "Sleep study (polysomnography)",
+          "item": "Sleep study (polysomnography) (CPT 95810)",
           "timing": "REM sleep behavior disorder evaluation",
           "target": "Confirms RBD (prodromal marker)",
           "contraindications": "None",
@@ -197,7 +207,7 @@
           "ICU": "-"
         },
         {
-          "item": "Autonomic function testing",
+          "item": "Autonomic function testing (CPT 95924)",
           "timing": "Dysautonomia assessment",
           "target": "Orthostatic hypotension, abnormal HR variability",
           "contraindications": "None",
@@ -209,7 +219,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "FDG-PET",
+          "item": "FDG-PET (CPT 78608)",
           "timing": "Atypical parkinsonism differentiation",
           "target": "Pattern recognition for PD vs PSP vs MSA",
           "contraindications": "None",

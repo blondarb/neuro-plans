@@ -4,6 +4,8 @@
   "version": "1.0",
   "icd10": [
     "** G06.1 (Intraspinal abscess and granuloma)",
+    "G06.2 (Extradural and subdural abscess",
+    "unspecified)",
     "M46.40 (Discitis",
     "unspecified site)",
     "M46.46 (Discitis",
@@ -19,7 +21,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "Blood cultures (x2 sets, before antibiotics)",
+          "item": "Blood cultures (x2 sets, before antibiotics) (CPT 87040)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -28,7 +30,7 @@
           "target": "Positive → organism identification; S. aureus (MRSA vs. MSSA) most common; also Streptococci, gram-negatives, anaerobes"
         },
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -37,7 +39,7 @@
           "target": "Leukocytosis (66%); normal WBC does NOT exclude SEA (20-40% have normal WBC); leukopenia concerning for overwhelming sepsis"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -46,7 +48,7 @@
           "target": "Normal or abnormal; elevated glucose → diabetes workup; renal dysfunction affects antibiotic choice"
         },
         {
-          "item": "ESR (erythrocyte sedimentation rate)",
+          "item": "ESR (erythrocyte sedimentation rate) (CPT 85652)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -55,7 +57,7 @@
           "target": "ESR >20 mm/hr (sensitivity 94%); mean ESR is typically 50-80 mm/hr; if normal → SEA very unlikely"
         },
         {
-          "item": "CRP (C-reactive protein)",
+          "item": "CRP (C-reactive protein) (CPT 86140)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -64,7 +66,7 @@
           "target": "Elevated (typically >10 mg/dL); declines faster than ESR with successful treatment"
         },
         {
-          "item": "Procalcitonin",
+          "item": "Procalcitonin (CPT 84145)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -73,7 +75,7 @@
           "target": ">0.5 ng/mL suggests bacterial infection; >2.0 ng/mL concerning for sepsis; useful in atypical presentations"
         },
         {
-          "item": "Blood glucose / HbA1c",
+          "item": "Blood glucose / HbA1c (CPT 82947+83036)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -82,7 +84,7 @@
           "target": "Document diabetes status; HbA1c >6.5% = diabetes; glucose control target <180 mg/dL"
         },
         {
-          "item": "PT/INR, aPTT",
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -91,7 +93,7 @@
           "target": "Normal; prolonged → concern for DIC, liver dysfunction; affects surgical risk"
         },
         {
-          "item": "Lactate",
+          "item": "Lactate (CPT 83605)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -100,7 +102,7 @@
           "target": "<2 mmol/L (normal); >4 mmol/L = severe sepsis/septic shock requiring aggressive resuscitation"
         },
         {
-          "item": "Type and screen",
+          "item": "Type and screen (CPT 86900)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -109,7 +111,7 @@
           "target": "On file"
         },
         {
-          "item": "Urinalysis + urine culture",
+          "item": "Urinalysis + urine culture (CPT 81003+87086)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -118,9 +120,9 @@
           "target": "Normal or pyuria/bacteriuria; if positive → potential primary source"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "HIV antibody/antigen",
+          "item": "HIV antibody/antigen (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -147,7 +149,7 @@
           "target": "<6.5% (normal); ≥6.5% = diabetes; 5.7-6.4% = prediabetes"
         },
         {
-          "item": "D-dimer",
+          "item": "D-dimer (CPT 85379)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -156,7 +158,7 @@
           "target": "Elevated (non-specific); very high levels → consider DIC"
         },
         {
-          "item": "Fibrinogen",
+          "item": "Fibrinogen (CPT 85384)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -183,7 +185,7 @@
           "target": "Negative by 48-72h of appropriate antibiotics; persistent positivity → echocardiogram, repeat imaging"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Surgical specimen culture (intraoperative)",
           "ED": "-",
@@ -203,7 +205,7 @@
           "target": "Organism identification; Gram stain; histopathology (rule out tumor)"
         },
         {
-          "item": "Acid-fast bacilli (AFB) smear and culture",
+          "item": "Acid-fast bacilli (AFB) smear and culture (CPT 87116)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -212,7 +214,7 @@
           "target": "Negative; positive → TB requires different treatment (anti-TB regimen; may not need surgery if no instability/neurologic deficit)"
         },
         {
-          "item": "Fungal cultures",
+          "item": "Fungal cultures (CPT 87102)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -239,7 +241,7 @@
           "target": "Identifies organism even when cultures are negative; research/reference lab"
         },
         {
-          "item": "Transthoracic echocardiogram (TTE)",
+          "item": "Transthoracic echocardiogram (TTE) (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -273,7 +275,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI entire spine with and without contrast (gadolinium)",
+          "item": "MRI entire spine with and without contrast (gadolinium) (CPT 72156+72157+72158)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "URGENT",
@@ -293,7 +295,7 @@
           "contraindications": "Pregnancy (shield)"
         },
         {
-          "item": "CT spine without contrast",
+          "item": "CT spine without contrast (CPT 72125/72128/72131)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -303,7 +305,7 @@
           "contraindications": "Pregnancy (relative)"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -315,7 +317,7 @@
       ],
       "Extended": [
         {
-          "item": "CT chest/abdomen/pelvis with contrast",
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260+74178)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -365,7 +367,7 @@
           "contraindications": "Limited availability; time-consuming; replaced largely by MRI"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Advanced": [
         {
           "item": "CT-guided biopsy/aspiration",
           "ED": "-",
@@ -377,7 +379,7 @@
           "contraindications": "Coagulopathy; inaccessible location; very small collection"
         },
         {
-          "item": "PET/CT (FDG)",
+          "item": "PET/CT (FDG) (CPT 78816)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -411,19 +413,19 @@
     "Treatment": {
       "Acute/Emergent Treatment": [
         {
-          "item": "**Empiric IV antibiotics (STAT)**",
+          "item": "**Empiric IV antibiotics (STAT)** (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "25-30 mg/kg",
-                "orderSentence": "**Empiric IV antibiotics (STAT)** 25-30 mg/kg IV"
+                "orderSentence": "**Empiric IV antibiotics (STAT)** (CPT 96365) 25-30 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "**Start IMMEDIATELY after blood cultures drawn — do NOT delay for MRI or organism identification**; **First-line empiric:** Vancomycin 25-30 mg/kg IV load (max 2g), then 15-20 mg/kg IV q8-12h (target trough 15-20 mcg/mL) PLUS Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h; **Alternative for β-lactam allergy:** Vancomycin + aztreonam 2g IV q8h OR Vancomycin + fluoroquinolone (levofloxacin 750 mg daily); **If Pseudomonas risk (IVDU, immunocompromised):** Add anti-pseudomonal coverage with cefepime or piperacillin-tazobactam 4.5g IV q6h; **Adjust to culture results when available**",
-            "orderSentence": "**Empiric IV antibiotics (STAT)** 25-30 mg/kg IV"
+            "orderSentence": "**Empiric IV antibiotics (STAT)** (CPT 96365) 25-30 mg/kg IV"
           },
           "contraindications": "-",
           "monitoring": "Vancomycin covers MRSA (most important cause); ceftriaxone/cefepime covers MSSA, streptococci, gram-negatives; early antibiotics are associated with better outcomes; every hour of delay increases mortality in sepsis",
@@ -1058,11 +1060,6 @@
   },
   "differential": [
     {
-      "diagnosis": "Diagnosis",
-      "features": "Key Differentiating Features",
-      "tests": "Distinguishing Studies"
-    },
-    {
       "diagnosis": "Malignant spinal cord compression (MSCC) / Metastatic epidural disease",
       "features": "Known cancer history; bone destruction without disc involvement (SEA typically involves disc); no fever (usually); no elevated ESR/CRP/WBC (unless concurrent infection); may be painful but not typically as acute; enhances but no ring-enhancement or diffusion restriction",
       "tests": "MRI: enhancing epidural mass WITHOUT ring enhancement or restricted diffusion; bone destruction; CT/PET: metastatic staging; tumor markers; biopsy if uncertain; ESR/CRP may be mildly elevated in malignancy but not as high as SEA"
@@ -1101,14 +1098,59 @@
       "diagnosis": "Psoas abscess",
       "features": "Contiguous spread can cause spinal infection; flank/groin pain; hip flexion pain; may track from spine or vice versa; fever; iliopsoas enhancement on imaging",
       "tests": "CT/MRI: psoas muscle enlargement with rim-enhancing collection; may extend to spine; blood cultures; percutaneous drainage often possible"
+    },
+    {
+      "diagnosis": "Phase 1",
+      "features": "Back pain (localized, severe)",
+      "tests": "Days to weeks before diagnosis"
+    },
+    {
+      "diagnosis": "Phase 2",
+      "features": "Radicular pain (nerve root irritation)",
+      "tests": "Days after back pain onset"
+    },
+    {
+      "diagnosis": "Phase 3",
+      "features": "Neurologic deficit (weakness, bowel/bladder)",
+      "tests": "Hours to days after radicular pain"
+    },
+    {
+      "diagnosis": "ANY new neurologic deficit (weakness, sensory loss, bladder dysfunction)",
+      "features": "Progression of cord/root compression; medical management failure",
+      "tests": "STAT MRI; immediate surgical consultation; emergent decompression if progressive"
+    },
+    {
+      "diagnosis": "Fever not improving after 48-72h of antibiotics",
+      "features": "Undrained collection; wrong antibiotic coverage; drug fever; secondary site",
+      "tests": "Repeat imaging (MRI); reassess antibiotic coverage; consider surgical drainage"
+    },
+    {
+      "diagnosis": "Persistent or worsening back pain",
+      "features": "Abscess enlargement; vertebral instability; pathologic fracture",
+      "tests": "Repeat MRI; surgical re-evaluation; bracing assessment"
+    },
+    {
+      "diagnosis": "Persistent bacteremia",
+      "features": "Undrained source; endocarditis; seeded secondary site",
+      "tests": "TEE; repeat imaging; consider surgery for source control"
+    },
+    {
+      "diagnosis": "Sepsis not resolving",
+      "features": "Inadequate source control; resistant organism; secondary infection",
+      "tests": "ICU reassessment; surgical drainage if not done; broaden antibiotics; repeat cultures"
+    },
+    {
+      "diagnosis": "New back pain at different level",
+      "features": "Multifocal SEA (present in 15-20%); skip lesion",
+      "tests": "MRI whole spine (if not already done); assess new level"
+    },
+    {
+      "diagnosis": "Rising inflammatory markers after initial improvement",
+      "features": "Treatment failure; secondary infection; abscess loculation",
+      "tests": "Repeat imaging; reassess antibiotic coverage; surgical consultation"
     }
   ],
   "evidence": [
-    {
-      "recommendation": "Guideline",
-      "evidenceLevel": "Source",
-      "source": "Year"
-    },
     {
       "recommendation": "Vertebral Osteomyelitis Guidelines",
       "evidenceLevel": "IDSA Clinical Practice Guideline",
@@ -1123,11 +1165,6 @@
       "recommendation": "Native Vertebral Osteomyelitis",
       "evidenceLevel": "British Infection Association / British Orthopaedic Association",
       "source": "2015"
-    },
-    {
-      "recommendation": "Study",
-      "evidenceLevel": "Finding",
-      "source": "Impact"
     },
     {
       "recommendation": "[Darouiche (2006) — NEJM Review](https://pubmed.ncbi.nlm.nih.gov/17093252/)",
@@ -1165,9 +1202,49 @@
       "source": "Established prognostic importance of pre-operative neurologic status and early intervention"
     },
     {
-      "recommendation": "Organism",
-      "evidenceLevel": "Frequency",
-      "source": "Key Features"
+      "recommendation": "Diabetes mellitus",
+      "evidenceLevel": "30-50%",
+      "source": ""
+    },
+    {
+      "recommendation": "Intravenous drug use (IVDU)",
+      "evidenceLevel": "20-30%",
+      "source": ""
+    },
+    {
+      "recommendation": "Recent spinal procedure/injection",
+      "evidenceLevel": "15-20%",
+      "source": ""
+    },
+    {
+      "recommendation": "Immunocompromised state (HIV, malignancy, steroids)",
+      "evidenceLevel": "15-20%",
+      "source": ""
+    },
+    {
+      "recommendation": "Chronic renal failure/hemodialysis",
+      "evidenceLevel": "10-15%",
+      "source": ""
+    },
+    {
+      "recommendation": "Alcoholism",
+      "evidenceLevel": "10-15%",
+      "source": ""
+    },
+    {
+      "recommendation": "Distant infection source (UTI, endocarditis, skin)",
+      "evidenceLevel": "30-40%",
+      "source": ""
+    },
+    {
+      "recommendation": "Recent bacteremia",
+      "evidenceLevel": "20-30%",
+      "source": ""
+    },
+    {
+      "recommendation": "Spinal abnormality (prior surgery, degenerative disease)",
+      "evidenceLevel": "15-20%",
+      "source": ""
     },
     {
       "recommendation": "Staphylococcus aureus",
@@ -1269,13 +1346,87 @@
       "frequency": "q6h (q4h if critically ill)",
       "target": "<180 mg/dL",
       "action": "Insulin titration"
+    },
+    {
+      "item": "Neurologic examination",
+      "frequency": "Daily (hospital); weekly (OPAT)",
+      "target": "Stable or improving",
+      "action": "New deficits: urgent MRI; surgical re-evaluation"
+    },
+    {
+      "item": "ESR",
+      "frequency": "Weekly",
+      "target": "Declining trend (may take 3-4 weeks to start declining); normalize by 6-8 weeks (varies)",
+      "action": "Not declining: consider treatment failure; repeat imaging; ID reassessment"
+    },
+    {
+      "item": "CRP",
+      "frequency": "Weekly",
+      "target": "Should decline within 1-2 weeks; normalize before ESR",
+      "action": "Rising CRP: treatment failure; repeat imaging"
+    },
+    {
+      "item": "CBC (especially if on linezolid)",
+      "frequency": "Weekly",
+      "target": "Stable; no cytopenias",
+      "action": "Linezolid: thrombocytopenia, anemia → consider discontinuation if <2 weeks remaining or switch agent"
+    },
+    {
+      "item": "Renal function + vancomycin trough",
+      "frequency": "2-3x/week; weekly once stable",
+      "target": "Stable; trough 15-20",
+      "action": "Dose adjustment"
+    },
+    {
+      "item": "LFTs (if on rifampin)",
+      "frequency": "Weekly",
+      "target": "Stable",
+      "action": "Transaminases >3x ULN: consider discontinuing rifampin"
+    },
+    {
+      "item": "PICC line site",
+      "frequency": "Daily",
+      "target": "No erythema, drainage, tenderness",
+      "action": "Line infection: remove PICC; cultures; may need new site"
+    },
+    {
+      "item": "MRI spine",
+      "frequency": "At 2-4 weeks; end of treatment; PRN for symptoms",
+      "target": "Improving or stable; abscess resolving; NOTE: imaging may lag behind clinical improvement",
+      "action": "Enlarging abscess despite antibiotics: surgical drainage; worsening imaging despite clinical improvement may be normal at 2-4 weeks"
+    },
+    {
+      "item": "Clinic visit (ID)",
+      "frequency": "Weekly during OPAT; 2 weeks after completion; 3 months; 6 months; 12 months",
+      "target": "No relapse; no recurrence",
+      "action": "Relapse: repeat imaging; extended antibiotics; surgical reassessment"
+    },
+    {
+      "item": "ESR/CRP",
+      "frequency": "At end of treatment; 3 months; PRN",
+      "target": "Normalized or stable at new baseline",
+      "action": "Elevated: repeat MRI; consider relapse"
+    },
+    {
+      "item": "MRI spine",
+      "frequency": "End of treatment; 3-6 months; PRN for symptoms",
+      "target": "Resolved or stable; no new disease",
+      "action": "New or worsening: relapse; restart antibiotics ± surgery"
+    },
+    {
+      "item": "Functional assessment",
+      "frequency": "Each visit",
+      "target": "Improved or stable function",
+      "action": "Rehabilitation referral; pain management; chronic deficit management"
+    },
+    {
+      "item": "Spine stability / alignment",
+      "frequency": "Radiographs at 6 weeks, 3 months, 6 months, 12 months if instability",
+      "target": "Stable alignment; healing",
+      "action": "Progressive kyphosis or instability: surgical stabilization"
     }
   ],
   "disposition": [
-    {
-      "disposition": "Level of Care",
-      "criteria": "Criteria"
-    },
     {
       "disposition": "ICU admission",
       "criteria": "Sepsis/septic shock; hemodynamic instability; respiratory compromise; post-operative monitoring (surgeon-dependent); severe neurologic deficit with close monitoring needed"
@@ -1287,6 +1438,78 @@
     {
       "disposition": "Observation (NOT appropriate)",
       "criteria": "SEA is NEVER an observation diagnosis; all patients require admission until diagnosis confirmed/excluded and treatment initiated"
+    },
+    {
+      "disposition": "Neurologic stability",
+      "criteria": "Stable or improving neurologic exam for ≥48-72h; no new deficits; if deficits present: stable plateau"
+    },
+    {
+      "disposition": "Afebrile",
+      "criteria": "Afebrile for ≥24-48h on antibiotics"
+    },
+    {
+      "disposition": "Hemodynamically stable",
+      "criteria": "Off vasopressors; stable vital signs"
+    },
+    {
+      "disposition": "Organism identified",
+      "criteria": "Blood cultures or surgical cultures positive with sensitivities back; targeted antibiotic regimen"
+    },
+    {
+      "disposition": "Antibiotic regimen finalized",
+      "criteria": "IV regimen established; OPAT-compatible dosing (once daily or BID preferred); duration plan documented"
+    },
+    {
+      "disposition": "PICC line placed",
+      "criteria": "Functional PICC; confirmed position; patient educated on care"
+    },
+    {
+      "disposition": "Pain controlled",
+      "criteria": "Adequate oral pain control; no IV opioid requirement"
+    },
+    {
+      "disposition": "Safe home environment",
+      "criteria": "Able to care for self or adequate caregiver support; refrigeration for medications; clean environment; phone access"
+    },
+    {
+      "disposition": "Follow-up arranged",
+      "criteria": "ID clinic within 1 week; spine surgery follow-up (1-2 weeks if post-op); PCP; VNA nursing visits 2-3x/week"
+    },
+    {
+      "disposition": "Patient/family education",
+      "criteria": "PICC care; infusion technique (if self-administering); signs of treatment failure (fever, worsening pain, new weakness); when to call/return"
+    },
+    {
+      "disposition": "Pharmacy/infusion arranged",
+      "criteria": "Home infusion company contracted; medications delivered; pump if needed"
+    },
+    {
+      "disposition": "IV antibiotic (specific to organism)",
+      "criteria": "Dose, frequency, duration clearly documented (e.g., \"Cefazolin 2g IV q8h x 6 weeks from [date]\")"
+    },
+    {
+      "disposition": "Oral analgesics",
+      "criteria": "Acetaminophen, limited opioid PRN, gabapentin if neuropathic pain"
+    },
+    {
+      "disposition": "DVT prophylaxis",
+      "criteria": "Enoxaparin 40 mg SQ daily (if continuing) or transition to ambulation-based prevention"
+    },
+    {
+      "disposition": "Rifampin (if applicable)",
+      "criteria": "Only as adjunctive therapy; never monotherapy; document interactions"
+    },
+    {
+      "disposition": "PPI / H2 blocker",
+      "criteria": "If on steroids or at risk for GI bleed"
+    },
+    {
+      "disposition": "Bowel regimen",
+      "criteria": "If on opioids"
+    },
+    {
+      "disposition": "Heparin flushes",
+      "criteria": "For PICC maintenance"
     }
   ]
 }

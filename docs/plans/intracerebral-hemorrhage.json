@@ -9,8 +9,16 @@
     "subcortical)",
     "I61.1 (ICH in hemisphere",
     "cortical)",
+    "I61.2 (ICH in hemisphere",
+    "unspecified)",
     "I61.3 (ICH in brain stem)",
-    "I61.4 (ICH in cerebellum)"
+    "I61.4 (ICH in cerebellum)",
+    "I61.5 (ICH",
+    "intraventricular)",
+    "I61.6 (ICH",
+    "multiple localized)",
+    "I62.9 (Nontraumatic intracranial hemorrhage",
+    "unspecified)"
   ],
   "scope": "** Spontaneous (non-traumatic) intracerebral hemorrhage in adults. Covers acute BP management, anticoagulant reversal, ICH score and prognosis, ICP management, surgical indications, etiology workup, and secondary prevention. Excludes traumatic ICH, subarachnoid hemorrhage (separate template), hemorrhagic transformation of ischemic stroke, and subdural/epidural hematomas.",
   "notes": [],
@@ -18,7 +26,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -27,7 +35,7 @@
           "target": "Platelets >100,000 (>50,000 minimum for hemostasis)"
         },
         {
-          "item": "PT/INR",
+          "item": "PT/INR (CPT 85610)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -36,7 +44,7 @@
           "target": "INR <1.4 target (if elevated: REVERSE IMMEDIATELY)"
         },
         {
-          "item": "aPTT",
+          "item": "aPTT (CPT 85730)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -45,7 +53,7 @@
           "target": "Normal"
         },
         {
-          "item": "Fibrinogen",
+          "item": "Fibrinogen (CPT 85384)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -54,7 +62,7 @@
           "target": ">150 mg/dL (if <150: give cryoprecipitate)"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -63,7 +71,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood glucose",
+          "item": "Blood glucose (CPT 82947)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -72,7 +80,7 @@
           "target": "140-180 mg/dL target"
         },
         {
-          "item": "Type and screen / crossmatch",
+          "item": "Type and screen / crossmatch (CPT 86900)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -81,7 +89,7 @@
           "target": "On file; crossmatch if OR likely"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -90,7 +98,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood alcohol level",
+          "item": "Blood alcohol level (CPT 80320)",
           "ED": "STAT",
           "HOSP": "-",
           "OPD": "-",
@@ -99,7 +107,7 @@
           "target": "Document result"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "STAT",
           "HOSP": "-",
           "OPD": "-",
@@ -108,7 +116,7 @@
           "target": "Negative"
         },
         {
-          "item": "Pregnancy test (β-hCG)",
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -135,9 +143,9 @@
           "target": "Negative/undetectable (elevated = DOAC present and active)"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "Lipid panel",
+          "item": "Lipid panel (CPT 80061)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -146,7 +154,7 @@
           "target": "Document baseline"
         },
         {
-          "item": "HbA1c",
+          "item": "HbA1c (CPT 83036)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -155,7 +163,7 @@
           "target": "<7.0%"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -164,7 +172,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR / CRP",
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -173,7 +181,7 @@
           "target": "Normal"
         },
         {
-          "item": "D-dimer",
+          "item": "D-dimer (CPT 85379)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -182,7 +190,7 @@
           "target": "Normal"
         },
         {
-          "item": "Serum osmolality",
+          "item": "Serum osmolality (CPT 83930)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -191,7 +199,7 @@
           "target": "280-320 mOsm/kg; hold osmotherapy if >320"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Hypercoagulable panel",
           "ED": "-",
@@ -202,7 +210,7 @@
           "target": "Normal"
         },
         {
-          "item": "ANA, ANCA",
+          "item": "ANA (CPT 86235), ANCA",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -242,7 +250,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -252,7 +260,7 @@
           "contraindications": "Pregnancy (benefit outweighs risk)"
         },
         {
-          "item": "CT angiography (CTA) head",
+          "item": "CT angiography (CTA) head (CPT 70496)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -262,7 +270,7 @@
           "contraindications": "Contrast allergy; renal impairment (benefit outweighs risk in emergency)"
         },
         {
-          "item": "ECG (12-lead)",
+          "item": "ECG (12-lead) (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -284,7 +292,7 @@
       ],
       "Extended": [
         {
-          "item": "MRI brain with and without contrast (include GRE/SWI sequences)",
+          "item": "MRI brain with and without contrast (CPT 70553) (include GRE/SWI sequences)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -304,7 +312,7 @@
           "contraindications": "Same as MRI"
         },
         {
-          "item": "Conventional cerebral angiography (DSA)",
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "EXT",
@@ -324,7 +332,7 @@
           "contraindications": "Same as initial DSA"
         },
         {
-          "item": "Echocardiogram",
+          "item": "Echocardiogram (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -334,7 +342,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Continuous EEG (cEEG)",
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -344,7 +352,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -380,19 +388,19 @@
     "Treatment": {
       "Acute/Emergent": [
         {
-          "item": "Blood pressure reduction: Nicardipine IV",
+          "item": "Blood pressure reduction: Nicardipine IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "5 mg/h",
-                "orderSentence": "Blood pressure reduction: Nicardipine IV 5 mg/h IV"
+                "orderSentence": "Blood pressure reduction: Nicardipine IV (CPT 96365) 5 mg/h IV"
               }
             ],
             "route": "IV",
             "instructions": "5 mg/h IV; increase by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP 130-150 mmHg (INTERACT2: <140 safe; AHA 2022: <140 reasonable if presenting SBP 150-220)",
-            "orderSentence": "Blood pressure reduction: Nicardipine IV 5 mg/h IV"
+            "orderSentence": "Blood pressure reduction: Nicardipine IV (CPT 96365) 5 mg/h IV"
           },
           "contraindications": "Severe aortic stenosis; advanced HF",
           "monitoring": "Continuous arterial line BP; neuro checks with each change; avoid SBP <110 (renal hypoperfusion)",
@@ -402,19 +410,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Blood pressure reduction: Labetalol IV",
+          "item": "Blood pressure reduction: Labetalol IV (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "10-20 mg",
-                "orderSentence": "Blood pressure reduction: Labetalol IV 10-20 mg IV"
+                "orderSentence": "Blood pressure reduction: Labetalol IV (CPT 96374) 10-20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10-20 mg IV bolus over 1-2 min; may repeat or double q10min; max 300 mg. Alternative to nicardipine",
-            "orderSentence": "Blood pressure reduction: Labetalol IV 10-20 mg IV"
+            "orderSentence": "Blood pressure reduction: Labetalol IV (CPT 96374) 10-20 mg IV"
           },
           "contraindications": "Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma",
           "monitoring": "HR; BP continuous",
@@ -424,19 +432,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Blood pressure reduction: Clevidipine IV",
+          "item": "Blood pressure reduction: Clevidipine IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1-2 mg/h",
-                "orderSentence": "Blood pressure reduction: Clevidipine IV 1-2 mg/h IV"
+                "orderSentence": "Blood pressure reduction: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
               }
             ],
             "route": "IV",
             "instructions": "1-2 mg/h IV; titrate by doubling q90sec initially; max 32 mg/h",
-            "orderSentence": "Blood pressure reduction: Clevidipine IV 1-2 mg/h IV"
+            "orderSentence": "Blood pressure reduction: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
           },
           "contraindications": "Soy/egg allergy; lipid disorders",
           "monitoring": "BP continuous",
@@ -461,19 +469,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Warfarin reversal: 4-factor PCC (Kcentra)",
+          "item": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "25-50 units/kg",
-                "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) 25-50 units/kg IV"
+                "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374) 25-50 units/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "25-50 units/kg IV (dose based on INR: INR 2-4: 25 u/kg; INR 4-6: 35 u/kg; INR >6: 50 u/kg); infuse over 10-15 min. Reverses INR within 15-30 min. PREFERRED over FFP (faster, smaller volume)",
-            "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) 25-50 units/kg IV"
+            "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374) 25-50 units/kg IV"
           },
           "contraindications": "Active DIC (relative); HIT (contains heparin traces)",
           "monitoring": "INR 15 min after infusion; repeat if INR >1.4; thrombotic risk",
@@ -527,19 +535,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Dabigatran reversal: Idarucizumab (Praxbind)",
+          "item": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "5 g",
-                "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) 5 g IV"
+                "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374) 5 g IV"
               }
             ],
             "route": "IV",
             "instructions": "5 g IV (two 2.5g boluses or infusions). Specific reversal agent for dabigatran. Reversal within minutes",
-            "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) 5 g IV"
+            "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374) 5 g IV"
           },
           "contraindications": "None absolute",
           "monitoring": "Thrombin time (TT), aPTT; clinical hemostasis",
@@ -549,19 +557,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa)",
+          "item": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "400 mg",
-                "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) 400 mg IV"
+                "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) (CPT 96365) 400 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "For rivaroxaban/apixaban. Low-dose: 400 mg IV bolus then 4 mg/min x 2h (last dose >8h ago). High-dose: 800 mg IV bolus then 8 mg/min x 2h (last dose <8h ago or unknown, or rivaroxaban)",
-            "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) 400 mg IV"
+            "orderSentence": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) (CPT 96365) 400 mg IV"
           },
           "contraindications": "Thrombotic risk (10-15% VTE in trials)",
           "monitoring": "Anti-Xa levels; thrombosis monitoring; arterial line",
@@ -1185,7 +1193,7 @@
           "indication": "AVM/aneurysm treatment planning; dural AV fistula"
         }
       ],
-      "Patient Instructions": [
+      "Patient / Family Instructions": [
         {
           "item": "ICH is serious but outcomes vary; early aggressive treatment improves survival",
           "ED": "STAT",

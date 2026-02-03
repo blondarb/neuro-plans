@@ -10,9 +10,9 @@
   "notes": [],
   "sections": {
     "Laboratory Workup": {
-      "Essential/Core Labs": [
+      "Core Labs (Rule Out Secondary Causes)": [
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -21,7 +21,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP",
+          "item": "CMP (CPT 80053)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -30,7 +30,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -48,7 +48,7 @@
           "target": "Normal"
         },
         {
-          "item": "Pregnancy test",
+          "item": "Pregnancy test (CPT 84703)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -57,7 +57,7 @@
           "target": "Document"
         }
       ],
-      "Extended Workup": [
+      "CSF Analysis (Diagnostic LP)": [
         {
           "item": "Opening pressure",
           "ED": "STAT",
@@ -68,7 +68,7 @@
           "target": "Elevated (≥25 cm H2O)"
         },
         {
-          "item": "CSF cell count",
+          "item": "CSF cell count (CPT 89051)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -77,7 +77,7 @@
           "target": "Normal (≤5 WBC/μL)"
         },
         {
-          "item": "CSF protein",
+          "item": "CSF protein (CPT 84157)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -86,7 +86,7 @@
           "target": "Normal (≤45 mg/dL)"
         },
         {
-          "item": "CSF glucose",
+          "item": "CSF glucose (CPT 82945)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -95,7 +95,7 @@
           "target": "Normal (>60% serum)"
         },
         {
-          "item": "Cytology",
+          "item": "Cytology (CPT 88104)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -113,7 +113,7 @@
           "target": "Negative"
         }
       ],
-      "Rare/Specialized": [
+      "Extended Labs (If Secondary Cause Suspected)": [
         {
           "item": "Iron studies",
           "ED": "-",
@@ -133,7 +133,7 @@
           "target": "Normal"
         },
         {
-          "item": "ANA, dsDNA",
+          "item": "ANA, dsDNA (CPT 86235, 86225)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -153,9 +153,9 @@
       ]
     },
     "Imaging & Studies": {
-      "Essential/First-line": [
+      "Neuroimaging (Required Before LP)": [
         {
-          "item": "MRI brain with and without contrast + MRV",
+          "item": "MRI brain with and without contrast + MRV (CPT 70553)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -165,7 +165,7 @@
           "contraindications": "Pacemaker, metal"
         },
         {
-          "item": "CT head (if MRI unavailable)",
+          "item": "CT head (if MRI unavailable) (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -185,7 +185,7 @@
           "contraindications": "Renal disease; contrast allergy"
         }
       ],
-      "Extended": [
+      "Ophthalmologic Studies": [
         {
           "item": "Dilated fundoscopic exam",
           "ED": "STAT",
@@ -197,7 +197,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Optical coherence tomography (OCT)",
+          "item": "Optical coherence tomography (OCT) (CPT 92134)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -237,7 +237,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Fundus photography",
+          "item": "Fundus photography (CPT 92250)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -245,6 +245,32 @@
           "timing": "Document papilledema; follow",
           "target": "Baseline; monitor",
           "contraindications": "None"
+        }
+      ],
+      "IIH MRI Findings (Supportive but Not Diagnostic)": [
+        {
+          "item": "Empty or partially empty sella",
+          "significance": "Chronic elevated ICP"
+        },
+        {
+          "item": "Flattening of posterior sclera",
+          "significance": "Elevated ICP transmitted to globe"
+        },
+        {
+          "item": "Optic nerve sheath distension",
+          "significance": "Elevated ICP; perineural CSF"
+        },
+        {
+          "item": "Vertical tortuosity of optic nerve",
+          "significance": "Elevated ICP"
+        },
+        {
+          "item": "Transverse sinus stenosis",
+          "significance": "Common; may be cause or effect"
+        },
+        {
+          "item": "Enhancement of optic nerve head",
+          "significance": "Active papilledema"
         }
       ]
     },
@@ -447,19 +473,19 @@
       ],
       "Therapeutic Lumbar Puncture": [
         {
-          "item": "Large-volume LP",
+          "item": "Large-volume LP (CPT 62272)",
           "route": "-",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "20-40 mL",
-                "orderSentence": "Large-volume LP 20-40 mL -"
+                "orderSentence": "Large-volume LP (CPT 62272) 20-40 mL -"
               }
             ],
             "route": "-",
             "instructions": "Remove 20-40 mL CSF; immediate symptom relief",
-            "orderSentence": "Large-volume LP 20-40 mL -"
+            "orderSentence": "Large-volume LP (CPT 62272) 20-40 mL -"
           },
           "contraindications": "Mass lesion, coagulopathy, infection at site",
           "monitoring": "Headache, symptoms; temporary benefit",
@@ -469,12 +495,12 @@
           "ICU": "-"
         },
         {
-          "item": "Serial LPs",
+          "item": "Serial LPs (CPT 62272)",
           "route": "-",
           "indication": "-",
           "dosing": {
             "instructions": "Bridge to surgery or when medical therapy insufficient",
-            "orderSentence": "Serial LPs - - - see dosing"
+            "orderSentence": "Serial LPs (CPT 62272) - - - see dosing"
           },
           "contraindications": "Same",
           "monitoring": "Same; not long-term solution",
@@ -533,19 +559,19 @@
       ],
       "Fulminant IIH (Urgent Vision Loss)": [
         {
-          "item": "High-dose IV acetazolamide",
+          "item": "High-dose IV acetazolamide (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "500 mg",
-                "orderSentence": "High-dose IV acetazolamide 500 mg IV"
+                "orderSentence": "High-dose IV acetazolamide (CPT 96374) 500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500 mg IV q6h initially",
-            "orderSentence": "High-dose IV acetazolamide 500 mg IV"
+            "orderSentence": "High-dose IV acetazolamide (CPT 96374) 500 mg IV"
           },
           "contraindications": "Per above",
           "monitoring": "K+, bicarb",
@@ -585,19 +611,19 @@
           "ICU": "-"
         },
         {
-          "item": "IV steroids (controversial)",
+          "item": "IV steroids (controversial) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "250 mg",
-                "orderSentence": "IV steroids (controversial) 250 mg IV"
+                "orderSentence": "IV steroids (controversial) (CPT 96365) 250 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term",
-            "orderSentence": "IV steroids (controversial) 250 mg IV"
+            "orderSentence": "IV steroids (controversial) (CPT 96365) 250 mg IV"
           },
           "contraindications": "Contraindicated for maintenance",
           "monitoring": "Glucose; short-term only",
@@ -667,7 +693,27 @@
           "indication": "Weight loss counseling"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Medication Review (Discontinue IIH-Associated Drugs)": [
+        {
+          "item": "Vitamin A and retinoids (isotretinoin, tretinoin)"
+        },
+        {
+          "item": "Tetracyclines (doxycycline, minocycline)"
+        },
+        {
+          "item": "Growth hormone"
+        },
+        {
+          "item": "Lithium"
+        },
+        {
+          "item": "Corticosteroid withdrawal (taper slowly if on steroids)"
+        },
+        {
+          "item": "Levonorgestrel (controversial)"
+        }
+      ],
+      "Patient/Family Instructions": [
         {
           "item": "IIH is a chronic condition requiring ongoing monitoring",
           "ED": "-",
@@ -714,6 +760,44 @@
           "item": "IIH Research Foundation (ihrfoundation.org) for resources",
           "ED": "-",
           "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Pregnancy Considerations": [
+        {
+          "item": "Acetazolamide: Category C; discuss risks/benefits; some use in 2nd/3rd trimester",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Topiramate: Category D; contraindicated in pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management critical before conception",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Serial LPs may be used in pregnancy if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Surgical intervention if vision-threatening",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-"
+        },
+        {
+          "item": "Vaginal delivery generally safe; avoid prolonged Valsalva",
+          "ED": "-",
+          "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         }
       ]

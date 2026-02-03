@@ -1,0 +1,1340 @@
+{
+  "id": "brain-death-evaluation",
+  "title": "Brain Death Evaluation / Death by Neurologic Criteria",
+  "version": "1.1",
+  "icd10": [
+    "** G93.82 (Brain death)",
+    "G93.1 (Anoxic brain damage",
+    "not elsewhere classified)",
+    "G93.5 (Compression of brain)",
+    "G93.6 (Cerebral edema)",
+    "T85.110A (Breakdown of ventricular intracranial shunt",
+    "initial encounter)",
+    "S06.9X (Unspecified intracranial injury)"
+  ],
+  "scope": "** Comprehensive evaluation and determination of brain death (death by neurologic criteria) in adults per AAN 2023 updated practice guideline. Covers prerequisites for testing, clinical examination (coma and brainstem reflex testing), apnea test protocol, ancillary testing indications and options, documentation requirements, family communication, legal/ethical considerations, organ procurement organization (OPO) notification, and donor management protocols. Excludes pediatric brain death determination (different age-specific criteria per AAP/CNS/SCCM guidelines), determination in neonates, and determination in patients on ECMO (requires institutional-specific protocols).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs (Prerequisites — Must Be Obtained BEFORE Brain Death Examination)": [
+        {
+          "item": "Core body temperature (CPT 99000)",
+          "rationale": "**PREREQUISITE**: Hypothermia must be excluded as confounder; core temp ≥36°C (96.8°F) required before examination",
+          "target": "Core temperature ≥36°C (96.8°F); if hypothermic, actively rewarm before proceeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "**PREREQUISITE**: Exclude severe metabolic derangement as confounder; electrolytes, glucose, renal and hepatic function",
+          "target": "No severe metabolic derangement: sodium 115-160 mEq/L; glucose >54 mg/dL; no hepatic encephalopathy; no severe uremia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "**PREREQUISITE**: Hypoglycemia can mimic brain death; must be excluded",
+          "target": "Glucose >54 mg/dL (>3 mmol/L); if low, correct and reassess",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Arterial blood gas (ABG) (CPT 82803)",
+          "rationale": "**PREREQUISITE**: Baseline before apnea test; assess acid-base status; ensure adequate pre-oxygenation; confirm PaCO2 baseline",
+          "target": "Pre-apnea test baseline: PaCO2 35-45 mmHg; pH 7.35-7.45; PaO2 >200 mmHg (after pre-oxygenation); post-apnea: PaCO2 ≥60 mmHg AND ≥20 mmHg above baseline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "rationale": "Exclude hyperosmolar state as confounder; assess for severe dehydration",
+          "target": "<320 mOsm/kg; severe hyperosmolality may confound examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Comprehensive toxicology screen (CPT 80307)",
+          "rationale": "**PREREQUISITE**: Exclude CNS depressant drug intoxication as confounder; sedatives, narcotics, paralytics, barbiturates, alcohol",
+          "target": "Negative for CNS depressants; if positive, must wait for clearance (5 half-lives) or use ancillary testing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum drug levels (specific)",
+          "rationale": "If any CNS depressant administered: measure specific drug levels; barbiturate, benzodiazepine, opioid, propofol levels",
+          "target": "Below therapeutic/active levels; barbiturates <10 mcg/mL; midazolam <50 ng/mL; propofol: discontinued ≥5 half-lives",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection assessment; evaluate for sepsis as potential confounder; organ donation workup",
+          "target": "Normal or interpretable in context; severe sepsis/septic shock may confound",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "rationale": "Baseline coagulation; organ donation workup; procedural planning",
+          "target": "Normal or correctable; coagulopathy does not preclude brain death testing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Assess tissue perfusion; hemodynamic adequacy for valid examination",
+          "target": "<4 mmol/L preferred; severe shock must be treated before valid examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "rationale": "Organ donation preparedness; potential surgical procedures",
+          "target": "On file",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thyroid function (TSH, free T4) (CPT 84443, 84439)",
+          "rationale": "Exclude severe hypothyroidism (myxedema coma) as confounder; donor management (hormone replacement therapy protocol)",
+          "target": "TSH and free T4 within range that excludes myxedema; if severely abnormal, correct or use ancillary testing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cortisol (random) (CPT 82533)",
+          "rationale": "Donor management protocol (assess adrenal function); severe adrenal insufficiency as confounder (rare)",
+          "target": ">10 mcg/dL (random); if low, initiate stress-dose steroids for donor management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Serial / Monitoring / Organ Donation Workup)": [
+        {
+          "item": "Serial ABG (pre- and post-apnea test)",
+          "rationale": "**CRITICAL for apnea test**: Pre-test baseline PaCO2 → post-test PaCO2 must rise ≥60 mmHg AND ≥20 mmHg above baseline",
+          "target": "Pre-test: PaCO2 35-45 mmHg; PaO2 >200 after pre-oxygenation; Post-test: PaCO2 ≥60 AND ≥20 above baseline = positive (absent respiratory drive)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serial sodium (q4-6h)",
+          "rationale": "Diabetes insipidus is common in brain death (posterior pituitary failure); rapidly rising sodium indicates DI",
+          "target": "Watch for rapid sodium rise >145 mEq/L; rising >2-3 mEq/L/hr suggests diabetes insipidus; initiate desmopressin",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine output monitoring (hourly)",
+          "rationale": "Diabetes insipidus detection; polyuria >250-300 mL/hr or >3 mL/kg/hr with dilute urine indicates DI",
+          "target": "<200 mL/hr; if >300 mL/hr with serum Na rising and urine specific gravity <1.005 → DI; treat with desmopressin",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine specific gravity / urine osmolality",
+          "rationale": "Confirm diabetes insipidus if polyuria present; dilute urine with rising serum sodium",
+          "target": "Urine specific gravity >1.005; if <1.005 with polyuria and hypernatremia → DI confirmed",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Neurogenic cardiac injury assessment; organ donation cardiac evaluation",
+          "target": "Normal or mildly elevated acceptable; severely elevated → echocardiography for donation evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BNP/NT-proBNP (CPT 83880)",
+          "rationale": "Cardiac function assessment for donation",
+          "target": "Normal or mildly elevated; guides cardiac donation suitability",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Infection evaluation; organ donation infectious disease screening",
+          "target": "<0.5 ng/mL preferred; elevated → evaluate for infection source; does not preclude donation",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures x2 sets (CPT 87040)",
+          "rationale": "Organ donation infectious disease screening; evaluate for sepsis",
+          "target": "No growth; if positive → treat and evaluate donation eligibility per OPO protocols",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis and urine culture (CPT 81001, 87088)",
+          "rationale": "Organ donation screening; infection assessment",
+          "target": "Negative; if UTI → treat; does not preclude donation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HIV, Hepatitis B surface Ag, Hepatitis B core Ab, Hepatitis C Ab (CPT 86689, 87340, 86704, 86803)",
+          "rationale": "**Required for organ donation**: Infectious disease screening per UNOS requirements",
+          "target": "Negative preferred; positive results do not absolutely preclude donation (NAT testing; risk-assessed donors)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMV IgG, EBV IgG (CPT 86644, 86663)",
+          "rationale": "Organ donation viral serology; recipient matching",
+          "target": "Document serostatus for recipient matching",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Organ donation; pancreas/kidney suitability assessment",
+          "target": "<6.5% preferred for pancreas donation; elevated → may preclude pancreas but not other organs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lipase (CPT 83690)",
+          "rationale": "Pancreas donation suitability",
+          "target": "Normal; elevated → evaluate pancreas suitability for donation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Quantitative drug levels (barbiturate, benzodiazepine, propofol metabolite)",
+          "rationale": "When specific CNS depressant clearance must be confirmed; if standard toxicology screen insufficient",
+          "target": "Below threshold that could confound examination: pentobarbital <10 mcg/mL; phenobarbital <10 mcg/mL; midazolam <50 ng/mL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Anti-GQ1b antibodies",
+          "rationale": "If Guillain-Barre (Miller Fisher variant) suspected as mimic; areflexia with ophthalmoplegia",
+          "target": "Negative; if positive → GBS mimic, NOT brain death; requires alternative evaluation",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Serum ammonia (CPT 82140)",
+          "rationale": "Exclude severe hepatic encephalopathy as confounder",
+          "target": "<200 μmol/L; severely elevated ammonia (>200) may confound clinical exam; treat hepatic failure first",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuromuscular junction testing (train-of-four)",
+          "rationale": "**PREREQUISITE if neuromuscular blocking agents administered**: Must confirm 4/4 twitches (complete recovery from paralysis) before clinical examination",
+          "target": "4 of 4 twitches present (full neuromuscular recovery); if <4/4, examination is invalid — wait for clearance or use ancillary test",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line (Establish Etiology — PREREQUISITE)": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "**PREREQUISITE** — Must establish known structural cause of brain death; imaging before examination",
+          "target": "Identified catastrophic brain injury: massive stroke, hemorrhage, anoxic injury (diffuse edema, loss of gray-white differentiation), herniation, absence of intracranial blood flow (dense MCA sign); must establish irreversible cause",
+          "contraindications": "None for non-contrast CT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT angiography head (CTA) (CPT 70496)",
+          "timing": "If etiology unclear; may serve as ancillary test for cerebral circulatory arrest if performed per protocol",
+          "target": "Absence of intracranial arterial opacification (if used as ancillary test); identifies vascular cause (massive stroke, SAH)",
+          "contraindications": "Contrast allergy (premedicate); renal impairment (acceptable if donation anticipated)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Ancillary Tests (When Clinical Examination Cannot Be Completed)": [
+        {
+          "item": "Cerebral angiography (4-vessel conventional) (CPT 36224-36226)",
+          "timing": "Gold standard ancillary test; when clinical testing cannot be completed",
+          "target": "**Absence of intracerebral filling** at the level of the carotid bifurcation or circle of Willis; external carotid filling may be present; delayed filling up to the proximal segments does NOT exclude brain death if no intracerebral filling",
+          "contraindications": "Contrast allergy; hemodynamic instability (relative — may require vasopressor support during procedure); renal impairment (acceptable if donation anticipated)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Technetium-99m HMPAO SPECT brain perfusion scan (CPT 78607)",
+          "timing": "Radionuclide cerebral perfusion study; widely available; high sensitivity and specificity",
+          "target": "**\"Hollow skull\" phenomenon**: Complete absence of intracranial tracer uptake; no perfusion to cerebral hemispheres or brainstem; scalp and facial blood flow present (external carotid territory)",
+          "contraindications": "None absolute; limited availability of isotope in some centers; patient must be transported to nuclear medicine (logistically challenging for unstable patients)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Technetium-99m pertechnetate cerebral blood flow study (CPT 78610)",
+          "timing": "Alternative radionuclide study; more widely available than HMPAO",
+          "target": "Absence of intracranial blood flow on anterior and lateral views; \"empty light bulb\" sign; less sensitive for posterior fossa/brainstem than HMPAO-SPECT",
+          "contraindications": "Same as above; pertechnetate less specific than HMPAO for posterior fossa",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "EEG (electrocerebral inactivity) (CPT 95816)",
+          "timing": "Demonstrates electrocerebral inactivity (ECI); 16+ channel recording per ACNS guidelines",
+          "target": "**Electrocerebral inactivity (ECI):** No electrical activity >2 μV over 30 minutes of recording; must use minimum 16 channels; interelectrode distances ≥10 cm; impedances 100-10,000 ohms; sensitivity 2 μV/mm; high-frequency filter ≤70 Hz; low-frequency filter ≤1 Hz",
+          "contraindications": "Does NOT assess brainstem function directly; can be confounded by sedatives, hypothermia, metabolic derangement; artifact from ICU environment; should NOT be sole ancillary test if brainstem assessment incomplete",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT angiography (CTA) — brain death protocol (CPT 70496)",
+          "timing": "Non-invasive vascular study; increasingly used; AAN 2023 acknowledges but notes variable sensitivity",
+          "target": "Absence of opacification of cortical segments of MCA, cortical segments of ACA, and internal cerebral veins (7-point CTA scoring system); some protocols assess 4-point or 10-point systems",
+          "contraindications": "Contrast allergy; renal impairment; false negatives possible (sensitivity 85-95% depending on protocol and timing of image acquisition)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Transcranial Doppler ultrasonography (TCD) (CPT 93886)",
+          "timing": "Non-invasive bedside study; can be repeated; useful for trending toward brain death",
+          "target": "**Cerebral circulatory arrest pattern:** Reverberating (oscillating) flow pattern; small systolic spikes (<50 cm/s duration <200 ms); absent diastolic flow → absent flow in all assessed vessels; must assess bilateral MCA AND basilar artery",
+          "contraindications": "Operator-dependent; 10-15% of patients have inadequate temporal windows; not universally accepted as sole ancillary test; AAN 2023: acceptable if institutional protocol supports; cannot assess in presence of craniectomy defects",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Advanced Ancillary Tests": [
+        {
+          "item": "MRI/MRA brain (CPT 70553)",
+          "timing": "Rarely used for brain death determination; may demonstrate diffuse injury; MRA may show absent flow",
+          "target": "Diffuse cortical and brainstem injury; absent intracranial arterial flow on MRA; tonsillar herniation; diffuse restricted diffusion on DWI",
+          "contraindications": "MRI-incompatible devices; hemodynamic instability; transport risk; prolonged study time in unstable patient",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Somatosensory evoked potentials (SSEP) (CPT 95925)",
+          "timing": "Assesses brainstem and cortical conduction; bilateral median nerve stimulation",
+          "target": "Bilateral absence of N20 cortical response with preserved Erb point potential (peripheral nerve intact, cortex non-functional); does NOT assess brainstem directly",
+          "contraindications": "Peripheral neuropathy may confound; requires intact peripheral nerve; not widely available for acute bedside use",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Brainstem auditory evoked potentials (BAEP) (CPT 92585)",
+          "timing": "Assesses auditory brainstem pathway; complements EEG (which only assesses cortex)",
+          "target": "Absence of all waveforms beyond wave I (wave I may be present — cochlear origin; absence of waves III and V = brainstem non-function)",
+          "contraindications": "Middle ear pathology; peripheral hearing loss; limited availability",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Confounder Management (Prerequisites Before Brain Death Examination)": [
+        {
+          "item": "**Active rewarming**",
+          "route": "External/Internal",
+          "indication": "Hypothermia correction; core temperature must be ≥36°C before examination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target ≥36°C",
+                "orderSentence": "**Active rewarming** Target ≥36°C External/Internal"
+              }
+            ],
+            "route": "External/Internal",
+            "instructions": "Warm IV fluids 40-42°C; forced air warming blankets; warmed humidified ventilator gases; if severe hypothermia: peritoneal lavage, bladder irrigation, or extracorporeal rewarming; must achieve target before proceeding",
+            "orderSentence": "**Active rewarming** Target ≥36°C External/Internal"
+          },
+          "contraindications": "None; must achieve target before proceeding",
+          "monitoring": "Core temperature continuous monitoring (esophageal, rectal, or bladder probe); target ≥36°C",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Desmopressin (DDAVP)**",
+          "route": "IV",
+          "indication": "Diabetes insipidus treatment (common in brain death due to pituitary failure); maintain hemodynamic stability for valid examination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-4 mcg",
+                "orderSentence": "**Desmopressin (DDAVP)** 1-4 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-4 mcg IV q6-12h; titrate to urine output <200-300 mL/hr; may also give 10-20 mcg intranasally; onset IV: 15-30 min; adjust based on urine output and sodium",
+            "orderSentence": "**Desmopressin (DDAVP)** 1-4 mcg IV"
+          },
+          "contraindications": "Hyponatremia (relative)",
+          "monitoring": "Urine output hourly; serum sodium q2-4h; urine specific gravity; serum osmolality; goal UOP 0.5-3 mL/kg/hr",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Isotonic crystalloid (0.9% NaCl or LR)**",
+          "route": "IV",
+          "indication": "Volume resuscitation for hemodynamic stability; replace massive urine losses from DI; maintain adequate perfusion for valid examination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.9% NaCl",
+                "orderSentence": "**Isotonic crystalloid (0.9% NaCl or LR)** 0.9% NaCl IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Bolus 500-1000 mL for hypotension; maintenance 100-250 mL/hr; replace urine output mL-for-mL if DI present; avoid hypotonic fluids",
+            "orderSentence": "**Isotonic crystalloid (0.9% NaCl or LR)** 0.9% NaCl IV"
+          },
+          "contraindications": "Fluid overload; pulmonary edema (balance with organ preservation goals)",
+          "monitoring": "CVP if available; urine output; serum sodium; blood pressure; lung auscultation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Norepinephrine**",
+          "route": "IV",
+          "indication": "Vasopressor for hemodynamic support; neurogenic shock (loss of sympathetic tone) common in brain death; maintain MAP ≥60 mmHg for valid examination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.5 mcg/kg/min",
+                "orderSentence": "**Norepinephrine** 0.1-0.5 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.05-0.1 mcg/kg/min; titrate to MAP ≥60 mmHg (or ≥70 for donor management); max 0.5 mcg/kg/min; consider adding vasopressin if escalating",
+            "orderSentence": "**Norepinephrine** 0.1-0.5 mcg/kg/min IV"
+          },
+          "contraindications": "Peripheral extravasation (central line required)",
+          "monitoring": "Continuous arterial BP monitoring; MAP target ≥60; assess for adequate organ perfusion; limit escalation if possible for donor management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Vasopressin**",
+          "route": "IV",
+          "indication": "Adjunct vasopressor; particularly useful in brain death (endogenous vasopressin deficiency from pituitary failure); hemodynamic support + DI treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.01-0.04 units/min",
+                "orderSentence": "**Vasopressin** 0.01-0.04 units/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.01 units/min; titrate to MAP ≥60 mmHg; max 0.04 units/min for vasopressor effect; also treats DI at higher doses; AAN/HRSA donor management: 1 unit IV bolus then 0.5-2.4 units/hr",
+            "orderSentence": "**Vasopressin** 0.01-0.04 units/min IV"
+          },
+          "contraindications": "High-dose may cause mesenteric ischemia; coronary vasoconstriction",
+          "monitoring": "MAP continuous; urine output hourly; lactate; assess perfusion; cardiac telemetry",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Correction of metabolic derangements**",
+          "route": "IV",
+          "indication": "Exclude metabolic confounders; sodium, glucose, pH, calcium must be within acceptable ranges",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per derangement",
+                "orderSentence": "**Correction of metabolic derangements** Per derangement IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Correct sodium to 115-160 mEq/L range; glucose >54 mg/dL (D50 50 mL if needed); correct severe acidosis (NaHCO3 if pH <7.2); correct severe hypocalcemia (calcium gluconate 1-2 g IV); correct hypothyroidism",
+            "orderSentence": "**Correction of metabolic derangements** Per derangement IV"
+          },
+          "contraindications": "Overly rapid sodium correction (risk of osmotic demyelination — less relevant in brain death but important for organ preservation)",
+          "monitoring": "Serial electrolytes q2-4h; glucose q1-2h; ABG q4h; target physiologic ranges",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Apnea Test Protocol (Step-by-Step)": [
+        {
+          "item": "**Step 1: Pre-oxygenation**",
+          "route": "Ventilator",
+          "indication": "Prevent hypoxia during apnea test; build oxygen reservoir",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "FiO2 1.0",
+                "orderSentence": "**Step 1: Pre-oxygenation** FiO2 1.0 Ventilator"
+              }
+            ],
+            "route": "Ventilator",
+            "instructions": "Pre-oxygenate with FiO2 1.0 (100% O2) for ≥10 minutes before disconnection; confirm PaO2 >200 mmHg on pre-apnea ABG",
+            "orderSentence": "**Step 1: Pre-oxygenation** FiO2 1.0 Ventilator"
+          },
+          "contraindications": "None",
+          "monitoring": "ABG after 10 min pre-oxygenation; SpO2 continuous; confirm PaO2 >200 mmHg",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Step 2: Baseline ABG**",
+          "route": "Arterial",
+          "indication": "Establish PaCO2 baseline; must be 35-45 mmHg before starting apnea test",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "ABG draw",
+                "orderSentence": "**Step 2: Baseline ABG** ABG draw Arterial"
+              }
+            ],
+            "route": "Arterial",
+            "instructions": "Draw ABG after pre-oxygenation; adjust ventilator to normalize PaCO2 if needed; if baseline PaCO2 chronically elevated (e.g., COPD), target must be ≥20 mmHg above chronic baseline AND ≥60 mmHg",
+            "orderSentence": "**Step 2: Baseline ABG** ABG draw Arterial"
+          },
+          "contraindications": "If PaCO2 cannot be normalized to 35-45 (chronic hypercarbia), document chronic baseline and adjust targets accordingly",
+          "monitoring": "PaCO2 35-45 mmHg; pH 7.35-7.45; if chronically elevated CO2, document baseline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Step 3: Disconnect ventilator and apply O2**",
+          "route": "Intratracheal",
+          "indication": "Apnea test initiation; remove external respiratory drive; observe for spontaneous respiratory effort",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-10 L/min O2",
+                "orderSentence": "**Step 3: Disconnect ventilator and apply O2** 6-10 L/min O2 Intratracheal"
+              }
+            ],
+            "route": "Intratracheal",
+            "instructions": "Disconnect from ventilator; immediately place O2 cannula into trachea (or T-piece with CPAP at 5-10 cmH2O) delivering 6-10 L/min O2 at carina level; ensures oxygenation without ventilation",
+            "orderSentence": "**Step 3: Disconnect ventilator and apply O2** 6-10 L/min O2 Intratracheal"
+          },
+          "contraindications": "Severe ARDS with FiO2 >0.7 and PEEP >10 (may desaturate rapidly — consider ancillary test instead); hemodynamic instability (relative)",
+          "monitoring": "SpO2 continuous; arterial line continuous; direct observation for ANY respiratory movement (chest, abdomen)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Step 4: Observe for respiratory effort**",
+          "route": "Visual",
+          "indication": "Detect any spontaneous breathing; absence confirms apnea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-10 min",
+                "orderSentence": "**Step 4: Observe for respiratory effort** 8-10 min Visual"
+              }
+            ],
+            "route": "Visual",
+            "instructions": "Observe 8-10 minutes (AAN 2023); watch for ANY chest or abdominal respiratory movements; look at proximal ETT for condensation/gas movement; if ANY respiratory effort observed → ABORT: patient is NOT brain dead",
+            "orderSentence": "**Step 4: Observe for respiratory effort** 8-10 min Visual"
+          },
+          "contraindications": "SpO2 <85% despite O2 supplementation; severe hemodynamic instability (MAP <60 despite vasopressors); dangerous cardiac arrhythmia",
+          "monitoring": "Visual observation: chest wall, abdomen; SpO2; BP continuous; cardiac telemetry; 8-10 min observation minimum",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Step 5: Post-apnea ABG**",
+          "route": "Arterial",
+          "indication": "Confirm PaCO2 rise meets threshold for valid test",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "ABG draw",
+                "orderSentence": "**Step 5: Post-apnea ABG** ABG draw Arterial"
+              }
+            ],
+            "route": "Arterial",
+            "instructions": "Draw ABG at 8-10 minutes of apnea (or sooner if SpO2 <85%); POSITIVE (absent respiratory drive): PaCO2 ≥60 mmHg AND rise ≥20 mmHg above baseline",
+            "orderSentence": "**Step 5: Post-apnea ABG** ABG draw Arterial"
+          },
+          "contraindications": "If PaCO2 target not reached and test aborted for desaturation, test is INCONCLUSIVE — need ancillary test",
+          "monitoring": "PaCO2 ≥60 mmHg AND ≥20 above baseline = POSITIVE (brain death); if target not met → repeat or ancillary test",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Step 6: Reconnect ventilator**",
+          "route": "Ventilator",
+          "indication": "Resume mechanical ventilation after ABG drawn; restore hemodynamic stability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Pre-test settings",
+                "orderSentence": "**Step 6: Reconnect ventilator** Pre-test settings Ventilator"
+              }
+            ],
+            "route": "Ventilator",
+            "instructions": "Reconnect to pre-test ventilator settings immediately after post-apnea ABG drawn; restore FiO2 1.0 temporarily; resume standard settings once stable",
+            "orderSentence": "**Step 6: Reconnect ventilator** Pre-test settings Ventilator"
+          },
+          "contraindications": "None",
+          "monitoring": "SpO2; BP; cardiac rhythm; ensure hemodynamic stability; resume standard ventilator settings",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Donor Management Protocol (After Brain Death Declaration — Organ Preservation)": [
+        {
+          "item": "**Vasopressin (donor management)**",
+          "route": "IV",
+          "indication": "Hemodynamic support and DI treatment; first-line vasopressor for brain-dead donors per UNOS/HRSA protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-2.4 units/hr",
+                "orderSentence": "**Vasopressin (donor management)** 0.5-2.4 units/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "HRSA protocol: 1 unit IV bolus then 0.5-2.4 units/hr; titrate to MAP ≥60 mmHg; also treats DI; preferred over catecholamines (less myocardial oxygen demand)",
+            "orderSentence": "**Vasopressin (donor management)** 0.5-2.4 units/hr IV"
+          },
+          "contraindications": "Mesenteric ischemia at high doses; coronary vasoconstriction",
+          "monitoring": "MAP continuous; urine output hourly; serum sodium q2-4h; lactate q6h; target MAP 60-100 mmHg; CVP 4-12 mmHg",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Levothyroxine (T4)**",
+          "route": "IV",
+          "indication": "Hormone replacement therapy (HRT) for brain-dead donors; pituitary failure causes hypothyroidism; improves hemodynamic stability and organ function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mcg",
+                "orderSentence": "**Levothyroxine (T4)** 20 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "HRSA protocol: 20 mcg IV bolus then 10 mcg/hr continuous infusion; alternative: T3 (liothyronine) 4 mcg IV bolus then 3 mcg/hr; improves cardiac output and donor hemodynamics",
+            "orderSentence": "**Levothyroxine (T4)** 20 mcg IV"
+          },
+          "contraindications": "None in this context",
+          "monitoring": "TSH, free T4 q6-12h; hemodynamic response; cardiac function",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Methylprednisolone**",
+          "route": "IV",
+          "indication": "Hormone replacement therapy component; reduces inflammation; supports hemodynamic stability; decreases vasopressor requirement; improves oxygenation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg/kg",
+                "orderSentence": "**Methylprednisolone** 15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "HRSA protocol: 15 mg/kg IV bolus (max 1 g); single dose; alternative: hydrocortisone 100 mg IV q8h or stress dose 50 mg q6h; reduces inflammatory cytokines; improves lung and cardiac donation outcomes",
+            "orderSentence": "**Methylprednisolone** 15 mg/kg IV"
+          },
+          "contraindications": "Active untreated infection (relative)",
+          "monitoring": "Blood glucose (hyperglycemia common); hemodynamic response; WBC (may be falsely elevated)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Insulin infusion**",
+          "route": "IV",
+          "indication": "Glycemic control during donor management; methylprednisolone and stress response cause hyperglycemia; tight glucose control improves organ preservation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-10 units/hr",
+                "orderSentence": "**Insulin infusion** 1-10 units/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Regular insulin infusion; target blood glucose 120-180 mg/dL; start if BG >150 mg/dL; titrate per institutional insulin drip protocol; avoid hypoglycemia (<70 mg/dL)",
+            "orderSentence": "**Insulin infusion** 1-10 units/hr IV"
+          },
+          "contraindications": "Hypoglycemia; hypokalemia",
+          "monitoring": "Blood glucose q1-2h; potassium q4h; avoid hypoglycemia",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Desmopressin (DDAVP) (donor management)**",
+          "route": "IV",
+          "indication": "Diabetes insipidus treatment; maintain euvolemia and sodium homeostasis for organ preservation; most brain-dead patients develop DI",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-4 mcg",
+                "orderSentence": "**Desmopressin (DDAVP) (donor management)** 1-4 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-4 mcg IV q6-12h PRN; titrate to urine output 0.5-3 mL/kg/hr; target sodium 135-155 mEq/L; may also give 10-20 mcg intranasally",
+            "orderSentence": "**Desmopressin (DDAVP) (donor management)** 1-4 mcg IV"
+          },
+          "contraindications": "Hyponatremia (hold if Na <135)",
+          "monitoring": "Urine output hourly; serum sodium q2-4h; urine specific gravity; goal UOP 0.5-3 mL/kg/hr; serum osmolality",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Norepinephrine (donor management)**",
+          "route": "IV",
+          "indication": "Second-line vasopressor if vasopressin insufficient; maintain MAP ≥60 mmHg; minimize dose to reduce end-organ catecholamine toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05-0.2 mcg/kg/min",
+                "orderSentence": "**Norepinephrine (donor management)** 0.05-0.2 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.05 mcg/kg/min; titrate to MAP ≥60; goal: minimize catecholamine use (excess catecholamines damage transplantable organs, especially heart); transition to vasopressin-dominant regimen",
+            "orderSentence": "**Norepinephrine (donor management)** 0.05-0.2 mcg/kg/min IV"
+          },
+          "contraindications": "Peripheral administration (central line required); excessive doses damage cardiac allografts",
+          "monitoring": "MAP; cardiac function; troponin trends; try to wean as vasopressin and HRT take effect",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Mechanical ventilation (lung-protective for donation)**",
+          "route": "Ventilator",
+          "indication": "Maintain oxygenation; lung-protective ventilation preserves lungs for transplant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "TV 6-8 mL/kg IBW",
+                "orderSentence": "**Mechanical ventilation (lung-protective for donation)** TV 6-8 mL/kg IBW Ventilator"
+              }
+            ],
+            "route": "Ventilator",
+            "instructions": "Tidal volume 6-8 mL/kg IBW; PEEP 5-10 cmH2O; FiO2 titrate to SpO2 >95%; target PaO2 >100 mmHg; recruitment maneuvers PRN; suction PRN; avoid excessive tidal volumes",
+            "orderSentence": "**Mechanical ventilation (lung-protective for donation)** TV 6-8 mL/kg IBW Ventilator"
+          },
+          "contraindications": "None",
+          "monitoring": "ABG q4-6h; SpO2 continuous; CXR daily; peak and plateau pressures; compliance trending",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Goal-directed fluid therapy**",
+          "route": "IV",
+          "indication": "Euvolemia maintenance; organ perfusion; replace insensible and DI losses without fluid overload (damages lungs)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-250 mL/hr",
+                "orderSentence": "**Goal-directed fluid therapy** 100-250 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.9% NaCl or LR; titrate to CVP 4-12 mmHg (or PCWP 8-12 mmHg if PA catheter); avoid hypovolemia (organ ischemia) and hypervolemia (pulmonary edema); use balanced crystalloid; transfuse PRN (Hgb >7 g/dL)",
+            "orderSentence": "**Goal-directed fluid therapy** 100-250 mL/hr IV"
+          },
+          "contraindications": "Pulmonary edema (restrict fluids, add diuretics if lung preservation critical)",
+          "monitoring": "CVP; urine output; lactate; hemodynamics; daily CXR; ECHO if available",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Medications to AVOID During Brain Death Examination": [
+        {
+          "item": "All sedatives (propofol, midazolam, dexmedetomidine)",
+          "route": "-",
+          "indication": "Must be discontinued ≥5 half-lives before clinical examination; active sedation invalidates brain death determination",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "All sedatives (propofol, midazolam, dexmedetomidine) - - - see dosing"
+          },
+          "contraindications": "Active sedation invalidates brain death examination",
+          "monitoring": "Drug levels if uncertain clearance; clinical assessment; ancillary testing if clearance uncertain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "All opioids (fentanyl, morphine, hydromorphone)",
+          "route": "-",
+          "indication": "Must be discontinued ≥5 half-lives before clinical examination; opioids suppress respiratory drive (invalidate apnea test)",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "All opioids (fentanyl, morphine, hydromorphone) - - - see dosing"
+          },
+          "contraindications": "Active opioids invalidate apnea test",
+          "monitoring": "Drug levels if uncertain clearance; naloxone reversal NOT sufficient (reversal may be incomplete; must confirm clearance)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuromuscular blocking agents (rocuronium, cisatracurium, vecuronium)",
+          "route": "-",
+          "indication": "Must be fully reversed before clinical examination; paralysis prevents assessment of motor and respiratory function",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Neuromuscular blocking agents (rocuronium, cisatracurium, vecuronium) - - - see dosing"
+          },
+          "contraindications": "Active paralysis completely invalidates all clinical brain death testing",
+          "monitoring": "Train-of-four monitoring: must show 4/4 twitches before examination; sugammadex reversal for rocuronium/vecuronium if needed; wait for spontaneous clearance of cisatracurium",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Atropine (diagnostic test — should NOT be administered as treatment)",
+          "route": "-",
+          "indication": "Atropine is used as a diagnostic test during brain death examination (IV bolus → no heart rate increase confirms vagal nucleus non-function); NOT a treatment",
+          "dosing": {
+            "instructions": "-",
+            "orderSentence": "Atropine (diagnostic test — should NOT be administered as treatment) - - - see dosing"
+          },
+          "contraindications": "Not used therapeutically in this context; used diagnostically: 1 mg IV → if NO heart rate increase >3% → confirms brainstem non-function",
+          "monitoring": "Document pre- and post-atropine heart rate; absence of response supports brain death",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Notify attending physician and neurology/neurocritical care for brain death evaluation when clinical suspicion arises",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Verify institutional brain death policy and state law requirements before proceeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Contact Organ Procurement Organization (OPO) — REQUIRED by federal law when brain death is imminent or declared",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Establish time of death as time of completion of brain death determination (final examination or ancillary test)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ensure at least one independent qualified examiner for brain death determination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Document all prerequisites, clinical findings, and apnea test results on institutional brain death determination form",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Family meeting to explain prognosis, brain death concept, and planned evaluation process BEFORE beginning testing",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Provide family with explanation that brain death IS legal death in all 50 US states (with NJ religious exemption)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Social work and chaplain/spiritual care consultation for family support",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Palliative care consultation for family support and goals-of-care discussion if determination is delayed or contested",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Communicate with OPO regarding family approach timing and strategy",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Provide family time with patient after brain death declaration and before organ recovery, if applicable",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Legal, Ethical & Documentation": [
+        {
+          "item": "Complete institutional brain death determination checklist documenting all prerequisites and examination findings",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Issue death certificate with time of death as moment of brain death declaration, NOT time of ventilator removal",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Address religious/conscientious objections per state law (New Jersey Declaration of Death Act)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ethics consultation if brain death determination is contested, delayed, or involves complex circumstances",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "**Severe hypothermia (<32°C)**",
+      "features": "History of exposure; core temperature <32°C; can cause fixed dilated pupils, absent reflexes, flat EEG; FULLY REVERSIBLE; \"no one is dead until warm and dead\"",
+      "tests": "Core temperature measurement; actively rewarm to ≥36°C before brain death examination; all clinical findings may normalize with rewarming"
+    },
+    {
+      "diagnosis": "**CNS depressant drug intoxication**",
+      "features": "History of overdose or recent sedative administration; barbiturates, benzodiazepines, opioids, propofol, alcohol; can mimic all brain death findings including flat EEG",
+      "tests": "Comprehensive toxicology screen; specific drug levels; wait ≥5 half-lives for clearance; if cannot wait, use ancillary testing (cerebral blood flow study NOT affected by drugs)"
+    },
+    {
+      "diagnosis": "**Severe metabolic derangement**",
+      "features": "Hepatic encephalopathy (ammonia >200); severe hyponatremia or hypernatremia; diabetic coma; severe uremia; hyperosmolar state",
+      "tests": "CMP; ammonia; osmolality; ABG; correct derangement and reassess; if uncorrectable, ancillary testing"
+    },
+    {
+      "diagnosis": "**Locked-in syndrome**",
+      "features": "Basilar artery occlusion/pontine stroke; patient is CONSCIOUS but appears unresponsive; preserved vertical eye movements and blinking; normal EEG",
+      "tests": "Ask patient to \"look up\" and \"blink\"; EEG shows normal alpha rhythm; MRI brainstem shows pontine lesion; brain death exam: pupils reactive, corneal reflex may be present"
+    },
+    {
+      "diagnosis": "**Guillain-Barre syndrome (severe/Miller Fisher variant)**",
+      "features": "Ascending paralysis; areflexia; may have facial diplegia and ophthalmoplegia; cranial nerve involvement can mimic brainstem areflexia",
+      "tests": "CSF: albuminocytologic dissociation (elevated protein, normal cells); NCS/EMG: demyelinating pattern; anti-GQ1b antibodies; EEG shows normal cerebral activity; cerebral blood flow is NORMAL"
+    },
+    {
+      "diagnosis": "**High cervical spinal cord injury**",
+      "features": "Complete cord transection above C3 → apnea, quadriplegia, areflexia below lesion; BUT brainstem reflexes PRESERVED (pupillary, corneal, oculovestibular)",
+      "tests": "MRI cervical spine; brainstem reflexes intact on examination; EEG shows cerebral activity; cerebral blood flow normal"
+    },
+    {
+      "diagnosis": "**Severe myasthenia gravis crisis**",
+      "features": "Generalized weakness including cranial nerve and respiratory muscles; may appear unresponsive with absent reflexes; pupil reactivity usually preserved",
+      "tests": "Edrophonium/ice pack test; NCS with repetitive stimulation: decremental response; acetylcholine receptor antibodies; EEG: normal cerebral activity"
+    },
+    {
+      "diagnosis": "**Baclofen intoxication (intrathecal pump malfunction)**",
+      "features": "Intrathecal baclofen overdose can cause deep coma, areflexia, absent respiratory drive; REVERSIBLE",
+      "tests": "History of intrathecal baclofen pump; check pump function; CSF baclofen level; supportive care until clearance; EEG may show slowing but NOT electrocerebral inactivity; cerebral blood flow normal"
+    },
+    {
+      "diagnosis": "**Posterior fossa hemorrhage with brainstem compression**",
+      "features": "Acute cerebellar hemorrhage compressing brainstem; may present with absent brainstem reflexes; potentially surgically treatable",
+      "tests": "CT head: posterior fossa hemorrhage; neurosurgical evaluation for emergent decompression BEFORE declaring brain death; surgical evacuation may be life-saving"
+    },
+    {
+      "diagnosis": "**Severe hypothyroidism (myxedema coma)**",
+      "features": "Profound hypothermia, coma, hypoventilation, bradycardia; very slow reflexes may appear absent",
+      "tests": "TSH markedly elevated; free T4 very low; treat with IV levothyroxine and hydrocortisone; reassess after thyroid hormone replacement"
+    },
+    {
+      "diagnosis": "**Persistent vegetative state (UWS)**",
+      "features": "Eyes open, sleep-wake cycles, no awareness; brainstem function INTACT",
+      "tests": "NOT brain death — brainstem reflexes present; breathing spontaneously"
+    },
+    {
+      "diagnosis": "**Minimally conscious state**",
+      "features": "Inconsistent but reproducible evidence of awareness; follows commands intermittently",
+      "tests": "NOT brain death — evidence of consciousness"
+    },
+    {
+      "diagnosis": "**Anencephaly**",
+      "features": "Congenital absence of cerebral hemispheres; brainstem present and functioning",
+      "tests": "NOT brain death — brainstem functions intact; different legal/ethical considerations"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "[Evidence-Based Guideline Update: Determining Brain Death in Adults — Report of the Quality Standards Subcommittee of the AAN](https://pubmed.ncbi.nlm.nih.gov/20530327/)",
+      "evidenceLevel": "American Academy of Neurology (AAN)",
+      "source": "2010"
+    },
+    {
+      "recommendation": "[Practice Guideline Update: Disorders of Consciousness — Brain Death (Death by Neurologic Criteria)](https://pubmed.ncbi.nlm.nih.gov/37491971/)",
+      "evidenceLevel": "AAN/AHA/NCS Joint Guideline",
+      "source": "2023"
+    },
+    {
+      "recommendation": "[Uniform Determination of Death Act (UDDA)](https://pubmed.ncbi.nlm.nih.gov/10113691/)",
+      "evidenceLevel": "National Conference of Commissioners on Uniform State Laws",
+      "source": "1981 (revised 2023)"
+    },
+    {
+      "recommendation": "[Management of the Potential Organ Donor in the ICU — Society of Critical Care Medicine/ACCP/AOPO Consensus Statement](https://pubmed.ncbi.nlm.nih.gov/25978154/)",
+      "evidenceLevel": "SCCM/ACCP/AOPO",
+      "source": "2015"
+    },
+    {
+      "recommendation": "[HRSA/UNOS Critical Pathway for the Organ Donor](https://pubmed.ncbi.nlm.nih.gov/12461551/)",
+      "evidenceLevel": "HRSA/UNOS",
+      "source": "2002 (updated)"
+    },
+    {
+      "recommendation": "[Wijdicks et al. AAN Practice Parameter (2010)](https://pubmed.ncbi.nlm.nih.gov/20530327/)",
+      "evidenceLevel": "Evidence-based review of brain death determination; no published reports of recovery after proper brain death determination",
+      "source": "Established current clinical standard; confirmed that properly performed brain death examination is 100% specific"
+    },
+    {
+      "recommendation": "[Greer et al. AAN/AHA/NCS Guideline Update (2023)](https://pubmed.ncbi.nlm.nih.gov/37491971/)",
+      "evidenceLevel": "Updated 2010 guideline; expanded prerequisites; clarified confounder management; updated ancillary test recommendations; addressed legal/ethical issues",
+      "source": "Current standard of practice; checklist-based approach reduces errors; addresses previously ambiguous areas"
+    },
+    {
+      "recommendation": "[Shemie et al. International Guidelines for DNC (2014)](https://pubmed.ncbi.nlm.nih.gov/24501666/)",
+      "evidenceLevel": "World Brain Death Project; international consensus on minimum clinical standards for brain death determination",
+      "source": "Harmonized international standards; framework for countries developing brain death protocols"
+    },
+    {
+      "recommendation": "[Nair-Collins et al. Survey of Brain Death Policies (2015)](https://pubmed.ncbi.nlm.nih.gov/25285760/)",
+      "evidenceLevel": "Significant variability in hospital brain death policies across the United States; many policies outdated or incomplete",
+      "source": "Highlighted need for policy standardization; drove AAN 2023 guideline development"
+    },
+    {
+      "recommendation": "[Malinoski et al. Donor Management Goals (2013)](https://pubmed.ncbi.nlm.nih.gov/22895561/)",
+      "evidenceLevel": "Achieving ≥4 of 6 donor management goals (MAP, CVP, Na, glucose, pH, PaO2/FiO2) significantly increases organ yield per donor",
+      "source": "Standard donor management targets; bundled approach improves transplant outcomes"
+    },
+    {
+      "recommendation": "[Nikas et al. Brain Death and Organ Donation (2016)](https://pubmed.ncbi.nlm.nih.gov/26771781/)",
+      "evidenceLevel": "Family approach by trained OPO requestors yields higher donation consent rates than physician-initiated requests",
+      "source": "OPO-led family approach is standard; physicians should not approach families about donation without OPO coordination"
+    },
+    {
+      "recommendation": "[Bernat JL. Controversies in Defining and Determining Death (2013)](https://pubmed.ncbi.nlm.nih.gov/23592174/)",
+      "evidenceLevel": "Philosophical and clinical analysis of brain death concept; addressed criticisms and confirmed validity of whole-brain death criterion",
+      "source": "Intellectual framework supporting brain death as death; addressed critics of concept"
+    },
+    {
+      "recommendation": "[Lustbader et al. Second Brain Death Examination (2011)](https://pubmed.ncbi.nlm.nih.gov/21926594/)",
+      "evidenceLevel": "No patient found to have different results on second brain death examination when confounders properly excluded in first examination",
+      "source": "Supports AAN position that single examination is sufficient when properly performed; second examination is institutional/legal requirement, not clinical necessity"
+    },
+    {
+      "recommendation": "[Powner et al. Hormonal Therapy for Organ Donors (2004)](https://pubmed.ncbi.nlm.nih.gov/15616782/)",
+      "evidenceLevel": "Thyroid hormone replacement improves cardiac function and donor hemodynamics; reduces vasopressor requirements",
+      "source": "Hormonal resuscitation bundle became standard donor management practice"
+    },
+    {
+      "recommendation": "Cerebral angiography (4-vessel)",
+      "evidenceLevel": "95-100%",
+      "source": "~100%"
+    },
+    {
+      "recommendation": "Tc-99m HMPAO SPECT",
+      "evidenceLevel": "94-100%",
+      "source": "~100%"
+    },
+    {
+      "recommendation": "EEG (electrocerebral inactivity)",
+      "evidenceLevel": "90-95%",
+      "source": "High"
+    },
+    {
+      "recommendation": "CTA (brain death protocol)",
+      "evidenceLevel": "85-95%",
+      "source": "Variable (protocol-dependent)"
+    },
+    {
+      "recommendation": "TCD (transcranial Doppler)",
+      "evidenceLevel": "89-99%",
+      "source": "97-100%"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Core temperature (esophageal/rectal/bladder)",
+      "frequency": "Continuous",
+      "action": "If <36°C: active rewarming; do NOT proceed with examination; if >38°C: cooling measures",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Arterial blood pressure (invasive — arterial line)",
+      "frequency": "Continuous",
+      "action": "Hypotension: IV fluids → vasopressin → norepinephrine; escalate per donor protocol",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Heart rate and cardiac rhythm (telemetry)",
+      "frequency": "Continuous",
+      "action": "Arrhythmia: correct electrolytes (K, Mg, Ca); standard ACLS if needed; atropine test: no HR response expected in brain death",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "SpO2 (pulse oximetry)",
+      "frequency": "Continuous",
+      "action": "<85% during apnea test → ABORT test and reconnect ventilator; troubleshoot; consider ancillary testing",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Urine output (Foley)",
+      "frequency": "Hourly",
+      "action": "DI (>300 mL/hr, dilute urine, rising Na): desmopressin 1-4 mcg IV; replace volume; monitor sodium q2h",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q2-4h (more frequently if DI)",
+      "action": "Rising Na + polyuria → DI → desmopressin + volume replacement; falling Na → adjust desmopressin",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ABG (arterial blood gas)",
+      "frequency": "q4-6h; pre/post apnea test",
+      "action": "Acidosis: sodium bicarbonate if pH <7.2; ventilator adjustments; apnea test ABGs are critical for determination",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q1-2h during insulin drip; q4h otherwise",
+      "action": "<70: D50 bolus; >180: start/increase insulin infusion; steroid-induced hyperglycemia common",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serial neurologic checks (GCS, pupils, brainstem reflexes)",
+      "frequency": "q1-2h pre-determination",
+      "action": "Any improvement → brain death cannot be diagnosed; reassess; look for confounders",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CVP (central venous pressure)",
+      "frequency": "Continuous if CVC placed",
+      "action": "Low: volume resuscitation; high: restrict fluids (protect lungs); diuretics if pulmonary edema",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Troponin (serial)",
+      "frequency": "q6-12h during donor management",
+      "action": "Rising troponin: echocardiography; may affect cardiac donation suitability; neurogenic cardiac injury common",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**ICU admission**",
+      "criteria": "All patients undergoing brain death evaluation require ICU-level care; mechanical ventilation; continuous hemodynamic monitoring; arterial line; vasopressor support; hourly neuro checks; controlled environment for apnea testing"
+    },
+    {
+      "disposition": "**Continue ICU for organ donation**",
+      "criteria": "After brain death declaration with organ donation consent: continue ICU-level care for donor management (hemodynamic optimization, hormone replacement, organ preservation); OPO manages care; OR scheduling for organ recovery"
+    },
+    {
+      "disposition": "**Ventilator discontinuation**",
+      "criteria": "After brain death declaration WITHOUT organ donation: family notification → reasonable time for family to visit → ventilator discontinuation; patient is legally dead — ventilator removal is NOT \"withdrawal of care\""
+    },
+    {
+      "disposition": "**Morgue/funeral home**",
+      "criteria": "After ventilator removal (non-donor) or after organ recovery (donor): standard post-mortem care; death certificate completed with time of brain death determination; autopsy per institutional/legal requirements"
+    },
+    {
+      "disposition": "**Delayed determination**",
+      "criteria": "If confounders cannot be excluded (e.g., recent sedative administration): continue ICU care; repeat evaluation after drug clearance (≥5 half-lives); consider ancillary testing if clearance uncertain or delayed"
+    },
+    {
+      "disposition": "**Contested brain death**",
+      "criteria": "If family contests: ethics consultation; social work; chaplain; legal counsel; reasonable accommodation; NJ religious exemption if applicable; continue ICU care during resolution"
+    },
+    {
+      "disposition": "**Transfer considerations**",
+      "criteria": "If institution lacks resources for ancillary testing: arrange transfer to facility with nuclear medicine, angiography, or neurophysiology capabilities; OPO may facilitate transfer"
+    }
+  ]
+}

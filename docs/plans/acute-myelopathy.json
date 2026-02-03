@@ -6,7 +6,9 @@
     "** G95.9 (Disease of spinal cord",
     "unspecified)",
     "G95.89 (Other specified diseases of spinal cord)",
-    "G37.3 (Acute transverse myelitis in demyelinating disease)"
+    "G37.3 (Acute transverse myelitis in demyelinating disease)",
+    "G04.91 (Myelitis",
+    "unspecified)"
   ],
   "scope": "** Acute or subacute spinal cord dysfunction — broad differential approach. Covers urgent MRI, LP, and comprehensive workup to differentiate compressive (epidural abscess, tumor, disc herniation, hematoma) from non-compressive causes (inflammatory/demyelinating, vascular, infectious). Compressive myelopathy is a surgical emergency. Excludes chronic cervical spondylotic myelopathy, cauda equina syndrome (separate template), and isolated radiculopathy.",
   "notes": [],
@@ -14,7 +16,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -23,7 +25,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -32,7 +34,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR",
+          "item": "ESR (CPT 85652)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -41,7 +43,7 @@
           "target": "Normal; >20 raises concern for abscess/infection"
         },
         {
-          "item": "CRP",
+          "item": "CRP (CPT 86140)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -50,7 +52,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood cultures x2",
+          "item": "Blood cultures x2 (CPT 87040)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -59,7 +61,7 @@
           "target": "No growth"
         },
         {
-          "item": "PT/INR, aPTT",
+          "item": "PT/INR, aPTT (CPT 85610, 85730)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -68,7 +70,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood glucose",
+          "item": "Blood glucose (CPT 82947)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -77,7 +79,7 @@
           "target": "Normal"
         },
         {
-          "item": "Urinalysis",
+          "item": "Urinalysis (CPT 81003)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -86,7 +88,7 @@
           "target": "Normal"
         },
         {
-          "item": "Type and screen",
+          "item": "Type and screen (CPT 86900)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -95,7 +97,7 @@
           "target": "On file"
         },
         {
-          "item": "Procalcitonin",
+          "item": "Procalcitonin (CPT 84145)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -104,9 +106,9 @@
           "target": "<0.5 ng/mL"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay",
+          "item": "AQP4-IgG (aquaporin-4 antibody, serum) — cell-based assay (CPT 86255)",
           "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -115,7 +117,7 @@
           "target": "Negative (positive = NMOSD)"
         },
         {
-          "item": "MOG-IgG antibody (serum) — cell-based assay",
+          "item": "MOG-IgG antibody (serum) — cell-based assay (CPT 86255)",
           "ED": "-",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -124,7 +126,7 @@
           "target": "Negative (positive = MOGAD)"
         },
         {
-          "item": "B12, methylmalonic acid",
+          "item": "B12, methylmalonic acid (CPT 82607)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -133,7 +135,7 @@
           "target": "Normal"
         },
         {
-          "item": "Copper and ceruloplasmin",
+          "item": "Copper and ceruloplasmin (CPT 82390)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -151,7 +153,7 @@
           "target": "Normal"
         },
         {
-          "item": "HIV 1/2 antigen/antibody",
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -169,7 +171,7 @@
           "target": "Negative"
         },
         {
-          "item": "RPR/VDRL",
+          "item": "RPR/VDRL (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -178,7 +180,7 @@
           "target": "Non-reactive"
         },
         {
-          "item": "ANA, dsDNA",
+          "item": "ANA, dsDNA (CPT 86235, 86225)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -187,7 +189,7 @@
           "target": "Negative"
         },
         {
-          "item": "Anti-SSA (Ro), anti-SSB (La)",
+          "item": "Anti-SSA (Ro), anti-SSB (La) (CPT 86235)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -196,7 +198,7 @@
           "target": "Negative"
         },
         {
-          "item": "ACE level (serum)",
+          "item": "ACE level (serum) (CPT 82164)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -223,7 +225,7 @@
           "target": "Negative"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Paraneoplastic panel (serum) — ANNA-1, CRMP-5, amphiphysin",
           "ED": "-",
@@ -252,7 +254,7 @@
           "target": "Negative"
         },
         {
-          "item": "Serum protein electrophoresis (SPEP)",
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -307,7 +309,7 @@
           "target": "Normal (10-20 cm H2O)"
         },
         {
-          "item": "Cell count with differential (tubes 1 and 4)",
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -315,7 +317,7 @@
           "target": "Variable by etiology"
         },
         {
-          "item": "Protein",
+          "item": "Protein (CPT 84157)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -323,7 +325,7 @@
           "target": "Variable"
         },
         {
-          "item": "Glucose with paired serum",
+          "item": "Glucose with paired serum (CPT 82945)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -331,7 +333,7 @@
           "target": "Normal in most inflammatory causes"
         },
         {
-          "item": "Oligoclonal bands (paired with serum)",
+          "item": "Oligoclonal bands (paired with serum) (CPT 83916)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -339,7 +341,7 @@
           "target": "Positive bands in CSF only = intrathecal synthesis (MS)"
         },
         {
-          "item": "IgG index",
+          "item": "IgG index (CPT 86327)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -371,7 +373,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cytology",
+          "item": "Cytology (CPT 88104)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -471,7 +473,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI entire spine (cervical, thoracic, lumbar) with and without gadolinium contrast",
+          "item": "MRI entire spine (cervical, thoracic, lumbar) with and without gadolinium contrast (CPT 72156+72157+72158)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "URGENT",
@@ -481,7 +483,7 @@
           "contraindications": "GFR <30 (give contrast anyway if emergent); gadolinium allergy (premedicate); pacemaker"
         },
         {
-          "item": "MRI brain with and without contrast",
+          "item": "MRI brain with and without contrast (CPT 70553)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "ROUTINE",
@@ -501,7 +503,7 @@
           "contraindications": "Pregnancy (relative)"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -512,7 +514,7 @@
       ],
       "Extended": [
         {
-          "item": "CT chest/abdomen/pelvis with contrast",
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 71260, 74178)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -552,7 +554,7 @@
           "contraindications": "Contrast allergy; coagulopathy"
         },
         {
-          "item": "PET-CT (whole body)",
+          "item": "PET-CT (whole body) (CPT 78816)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
@@ -572,7 +574,7 @@
           "contraindications": "Same as initial"
         },
         {
-          "item": "NCS/EMG",
+          "item": "NCS/EMG (CPT 95907-95913, 95886)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -584,7 +586,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "Somatosensory evoked potentials (SSEPs)",
+          "item": "Somatosensory evoked potentials (SSEPs) (CPT 95925)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -618,19 +620,19 @@
     "Treatment": {
       "Acute/Emergent": [
         {
-          "item": "IV methylprednisolone (empiric — inflammatory myelitis)",
+          "item": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1000 mg",
-                "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) 1000 mg IV"
+                "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results",
-            "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) 1000 mg IV"
+            "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes",
           "monitoring": "Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan",
@@ -753,12 +755,12 @@
       ],
       "Second-line / Specific Treatments": [
         {
-          "item": "Plasma exchange (PLEX)",
+          "item": "Plasma exchange (PLEX) (CPT 36514)",
           "route": "-",
           "indication": "Steroid-refractory inflammatory myelitis; NMOSD exacerbation; severe transverse myelitis",
           "dosing": {
             "instructions": "5-7 exchanges over 10-14 days (every other day); 1-1.5 plasma volumes per exchange",
-            "orderSentence": "Plasma exchange (PLEX) - - - see dosing"
+            "orderSentence": "Plasma exchange (PLEX) (CPT 36514) - - - see dosing"
           },
           "contraindications": "Hemodynamic instability; sepsis",
           "monitoring": "BP; electrolytes; Ca2+; fibrinogen",
@@ -768,19 +770,19 @@
           "ICU": "URGENT"
         },
         {
-          "item": "IVIG",
+          "item": "IVIG (CPT 96365)",
           "route": "-",
           "indication": "Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.4 g/kg",
-                "orderSentence": "IVIG 0.4 g/kg -"
+                "orderSentence": "IVIG (CPT 96365) 0.4 g/kg -"
               }
             ],
             "route": "-",
             "instructions": "0.4 g/kg/day x 5 days (total 2 g/kg)",
-            "orderSentence": "IVIG 0.4 g/kg -"
+            "orderSentence": "IVIG (CPT 96365) 0.4 g/kg -"
           },
           "contraindications": "IgA deficiency; renal failure",
           "monitoring": "Renal function; headache; thrombosis",

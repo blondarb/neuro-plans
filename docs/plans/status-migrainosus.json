@@ -1,0 +1,1481 @@
+{
+  "id": "status-migrainosus",
+  "title": "Status Migrainosus",
+  "version": "1.1",
+  "icd10": [
+    "** G43.901 (Migraine",
+    "unspecified",
+    "not intractable",
+    "with status migrainosus)",
+    "G43.911 (Migraine",
+    "unspecified",
+    "intractable",
+    "with status migrainosus)",
+    "G43.919 (Migraine",
+    "unspecified",
+    "intractable",
+    "without status migrainosus)"
+  ],
+  "scope": "** Evaluation and management of status migrainosus (debilitating migraine lasting >72 hours), including acute abortive therapy, rescue protocols, and prevention of recurrence. Excludes routine migraine management, chronic migraine prophylaxis initiation, cluster headache, and secondary headache disorders.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Rule out infection, anemia contributing to headache",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Electrolyte abnormalities from dehydration/vomiting; renal function for medication dosing",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia lowers migraine threshold and is common in status migrainosus",
+          "target": ">1.8 mg/dL",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (hCG, women of childbearing age) (CPT 84703)",
+          "rationale": "Pregnancy status affects treatment selection (contraindication to triptans, DHE, valproate)",
+          "target": "Document status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction as contributing factor to refractory headache",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "rationale": "Rule out giant cell arteritis (age >50, new-onset) or inflammatory etiology",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vitamin D (CPT 82306)",
+          "rationale": "Deficiency associated with increased migraine frequency and chronification",
+          "target": ">30 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ferritin (CPT 82728)",
+          "rationale": "Iron deficiency associated with migraine; may contribute to refractoriness",
+          "target": ">50 ng/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "LFTs (AST, ALT, Alk Phos) (CPT 80076)",
+          "rationale": "Baseline before valproate or repeated NSAID use",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ammonia (CPT 82140)",
+          "rationale": "Baseline before valproate; elevated levels worsen encephalopathy",
+          "target": "<35 micromol/L",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood gas (VBG) (CPT 82803)",
+          "rationale": "Assess for metabolic derangement in prolonged vomiting/dehydration",
+          "target": "Normal pH, bicarbonate",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Occult substance use contributing to headache; medication overuse",
+          "target": "Negative for unexpected substances",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood cultures (CPT 87040)",
+          "rationale": "If fever present or meningitis suspected",
+          "target": "No growth",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Autoimmune panel (ANA (CPT 86235), ESR, CRP)",
+          "rationale": "Suspected vasculitis or autoimmune etiology in atypical presentation",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "If sepsis or meningitis suspected",
+          "target": "<2 mmol/L",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "rationale": "Elevated levels associated with migraine with aura; refractory cases",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Rule out elevated ICP (IIH) or low-pressure headache",
+          "target": "10-20 cm H2O",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Infection, SAH",
+          "target": "WBC <5; RBC 0 or clearing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Infection, inflammation",
+          "target": "15-45 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "rationale": "Infection (low in bacterial/fungal)",
+          "target": ">60% serum glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Xanthochromia",
+          "rationale": "SAH if CT negative and >12 hours from onset",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "rationale": "Bacterial meningitis",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate if thunderclap onset, new focal deficit, altered mental status, worst headache of life",
+          "target": "Rule out hemorrhage, mass, hydrocephalus",
+          "contraindications": "None in emergency",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "timing": "Before DHE, triptan, or antiemetic administration",
+          "target": "Normal QTc (<470 ms women, <450 ms men), no ischemia",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "timing": "When stable; new headache pattern, refractory to treatment, atypical features",
+          "target": "Normal; rule out structural lesion, pituitary apoplexy, Chiari malformation",
+          "contraindications": "Pacemaker, metal implants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "If mass, infection, inflammation, or venous thrombosis suspected",
+          "target": "Rule out enhancement, meningeal disease",
+          "contraindications": "Contrast allergy, severe renal disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRV or CT venogram (CPT 70547 or 70498)",
+          "timing": "If cerebral venous thrombosis suspected (postpartum, OCP use, papilledema)",
+          "target": "Patent venous sinuses",
+          "contraindications": "Per modality",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA head (CPT 70544)",
+          "timing": "If vasculopathy or aneurysm suspected",
+          "target": "Normal vasculature",
+          "contraindications": "Per modality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fundoscopic exam",
+          "timing": "All patients; assess for papilledema suggesting elevated ICP",
+          "target": "Normal optic discs",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CTA head and neck (CPT 70496, 70498)",
+          "timing": "If cervical artery dissection suspected (neck pain, Horner syndrome)",
+          "target": "No dissection",
+          "contraindications": "Contrast allergy, renal disease",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Temporal artery ultrasound",
+          "timing": "Age >50, elevated ESR, suspected GCA",
+          "target": "No halo sign",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/First-Line - IV Rehydration and \"Headache Cocktail\"": [
+        {
+          "item": "Normal saline IV",
+          "route": "IV",
+          "indication": "Rehydration; prolonged vomiting and poor oral intake common in status migrainosus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL bolus",
+                "orderSentence": "Normal saline IV 1000 mL bolus IV"
+              },
+              {
+                "text": "75-125 mL/hr",
+                "orderSentence": "Normal saline IV 75-125 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS 1L bolus over 1-2h, then 75-125 mL/hr maintenance",
+            "orderSentence": "Normal saline IV 1000 mL bolus IV"
+          },
+          "contraindications": "Heart failure, volume overload",
+          "monitoring": "I/O, signs of fluid overload",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactated Ringer's IV",
+          "route": "IV",
+          "indication": "Alternative IV fluid for rehydration with electrolyte replacement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL bolus",
+                "orderSentence": "Lactated Ringer's IV 1000 mL bolus IV"
+              },
+              {
+                "text": "75-125 mL/hr",
+                "orderSentence": "Lactated Ringer's IV 75-125 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "LR 1L bolus over 1-2h, then 75-125 mL/hr maintenance",
+            "orderSentence": "Lactated Ringer's IV 1000 mL bolus IV"
+          },
+          "contraindications": "Heart failure, hyperkalemia",
+          "monitoring": "I/O, electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prochlorperazine IV",
+          "route": "IV",
+          "indication": "First-line antiemetic and primary analgesic for acute migraine via dopamine antagonism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV once",
+                "orderSentence": "Prochlorperazine IV 10 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV slow push over 5-10 min; may repeat x1 in 30 min; max 20 mg",
+            "orderSentence": "Prochlorperazine IV 10 mg IV once IV"
+          },
+          "contraindications": "QT prolongation (QTc >500 ms), Parkinson disease, pheochromocytoma",
+          "monitoring": "QTc, akathisia, dystonic reaction, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide IV",
+          "route": "IV",
+          "indication": "First-line antiemetic and primary analgesic for acute migraine via dopamine antagonism; alternative to prochlorperazine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV once",
+                "orderSentence": "Metoclopramide IV 10 mg IV once IV"
+              },
+              {
+                "text": "20 mg IV once",
+                "orderSentence": "Metoclopramide IV 20 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV over 15-30 min; may repeat x1 in 30 min; max 40 mg",
+            "orderSentence": "Metoclopramide IV 10 mg IV once IV"
+          },
+          "contraindications": "QT prolongation, Parkinson disease, seizure disorder, bowel obstruction",
+          "monitoring": "QTc, akathisia, dystonic reaction, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diphenhydramine IV",
+          "route": "IV",
+          "indication": "Prevention of akathisia and dystonic reactions from dopamine antagonist antiemetics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg IV once",
+                "orderSentence": "Diphenhydramine IV 25 mg IV once IV"
+              },
+              {
+                "text": "50 mg IV once",
+                "orderSentence": "Diphenhydramine IV 50 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 mg IV push with each antiemetic dose",
+            "orderSentence": "Diphenhydramine IV 25 mg IV once IV"
+          },
+          "contraindications": "Narrow-angle glaucoma, urinary retention, severe drowsiness risk",
+          "monitoring": "Sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketorolac IV",
+          "route": "IV",
+          "indication": "Potent parenteral NSAID for acute pain relief; synergistic with antiemetics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg IV once",
+                "orderSentence": "Ketorolac IV 30 mg IV once IV"
+              },
+              {
+                "text": "15 mg IV once",
+                "orderSentence": "Ketorolac IV 15 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV push (15 mg if age >65, CrCl <50, or weight <50 kg); max 2 doses in 24h; max 5 days total",
+            "orderSentence": "Ketorolac IV 30 mg IV once IV"
+          },
+          "contraindications": "Active GI bleeding, renal insufficiency (CrCl <30), coagulopathy, concurrent anticoagulation, third trimester pregnancy",
+          "monitoring": "Renal function, GI symptoms, bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone IV",
+          "route": "IV",
+          "indication": "Prevention of headache recurrence within 72 hours; does not treat acute pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg IV once",
+                "orderSentence": "Dexamethasone IV 10 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV once; single dose (NNT 9 for recurrence prevention)",
+            "orderSentence": "Dexamethasone IV 10 mg IV once IV"
+          },
+          "contraindications": "Active untreated infection, uncontrolled diabetes mellitus",
+          "monitoring": "Blood glucose (check at 4-6h), mood changes",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Magnesium sulfate IV",
+          "route": "IV",
+          "indication": "Direct analgesic effect in migraine; low magnesium lowers cortical spreading depression threshold",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g IV once",
+                "orderSentence": "Magnesium sulfate IV 2 g IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV in 50 mL NS over 20-30 min",
+            "orderSentence": "Magnesium sulfate IV 2 g IV once IV"
+          },
+          "contraindications": "Renal failure (GFR <30), myasthenia gravis, heart block",
+          "monitoring": "Magnesium level, deep tendon reflexes, respiratory status, flushing",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Second-Line Acute Treatments": [
+        {
+          "item": "Sumatriptan SC",
+          "route": "SC",
+          "indication": "Triptan-naive or triptan-responsive patients without vascular contraindications; most effective when given early",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg SC once",
+                "orderSentence": "Sumatriptan SC 6 mg SC once SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "6 mg SC once; may repeat x1 in 2h; max 12 mg/24h",
+            "orderSentence": "Sumatriptan SC 6 mg SC once SC"
+          },
+          "contraindications": "CAD, prior stroke/TIA, uncontrolled hypertension (>140/90), hemiplegic or basilar migraine, pregnancy, use of ergotamine/DHE within 24h, concurrent MAOI",
+          "monitoring": "Chest tightness, blood pressure, coronary symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sumatriptan nasal",
+          "route": "IN",
+          "indication": "Alternative triptan route when SC not tolerated or for moderate attacks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg IN once",
+                "orderSentence": "Sumatriptan nasal 20 mg IN once IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "20 mg intranasal; may repeat in 2h; max 40 mg/24h",
+            "orderSentence": "Sumatriptan nasal 20 mg IN once IN"
+          },
+          "contraindications": "CAD, prior stroke/TIA, uncontrolled hypertension (>140/90), hemiplegic or basilar migraine, pregnancy, use of ergotamine/DHE within 24h, concurrent MAOI",
+          "monitoring": "Chest tightness, blood pressure, coronary symptoms",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Valproate sodium IV",
+          "route": "IV",
+          "indication": "Acute migraine treatment for patients who cannot receive triptans/DHE or as adjunct; also anti-nausea properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg IV once",
+                "orderSentence": "Valproate sodium IV 500 mg IV once IV"
+              },
+              {
+                "text": "1000 mg IV once",
+                "orderSentence": "Valproate sodium IV 1000 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500-1000 mg IV over 15-30 min; may repeat once in 8h",
+            "orderSentence": "Valproate sodium IV 500 mg IV once IV"
+          },
+          "contraindications": "Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease (POLG mutation), urea cycle disorders, pancreatitis",
+          "monitoring": "Ammonia, LFTs, platelet count",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Chlorpromazine IV",
+          "route": "IV",
+          "indication": "Alternative dopamine antagonist with potent analgesic and sedative effect for refractory migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg IV once",
+                "orderSentence": "Chlorpromazine IV 12.5 mg IV once IV"
+              },
+              {
+                "text": "25 mg IV once",
+                "orderSentence": "Chlorpromazine IV 25 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "12.5-25 mg IV over 20 min with 500 mL NS bolus; may repeat x2 q30min; max 75 mg",
+            "orderSentence": "Chlorpromazine IV 12.5 mg IV once IV"
+          },
+          "contraindications": "QT prolongation, severe hypotension, Parkinson disease",
+          "monitoring": "BP q15min (orthostatic hypotension common), QTc, sedation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Droperidol IV",
+          "route": "IV",
+          "indication": "Alternative dopamine antagonist with strong antiemetic and analgesic effect; FDA black box for QT prolongation requires ECG",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg IV once",
+                "orderSentence": "Droperidol IV 2.5 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2.5 mg IV over 2-5 min; may repeat x1 in 30 min; max 5 mg",
+            "orderSentence": "Droperidol IV 2.5 mg IV once IV"
+          },
+          "contraindications": "QT prolongation (QTc >440 ms), hypokalemia, hypomagnesemia, Parkinson disease",
+          "monitoring": "ECG before and after (FDA black box), QTc, BP, akathisia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ondansetron IV",
+          "route": "IV",
+          "indication": "Antiemetic for nausea/vomiting when dopamine antagonists contraindicated (Parkinson disease)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV once",
+                "orderSentence": "Ondansetron IV 4 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV over 2-5 min; may repeat q6-8h; max 16 mg/24h (FDA max single IV dose 16 mg due to QT risk)",
+            "orderSentence": "Ondansetron IV 4 mg IV once IV"
+          },
+          "contraindications": "QT prolongation (dose-dependent), concurrent serotonergic drugs (caution)",
+          "monitoring": "QTc at higher doses",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Greater occipital nerve block",
+          "route": "Local",
+          "indication": "Acute pain relief and potential sustained benefit (3-4 weeks); safe in pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 mL per side",
+                "orderSentence": "Greater occipital nerve block 2-3 mL per side Local"
+              }
+            ],
+            "route": "Local",
+            "instructions": "Bupivacaine 0.5% 2-3 mL per side (bilateral) at greater occipital nerve; may add triamcinolone 20 mg per side",
+            "orderSentence": "Greater occipital nerve block 2-3 mL per side Local"
+          },
+          "contraindications": "Local anesthetic allergy, infection at injection site, concurrent anticoagulation (relative)",
+          "monitoring": "Local reaction, vasovagal response",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Supraorbital nerve block",
+          "route": "Local",
+          "indication": "Additional peripheral nerve block targeting frontal headache distribution",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mL per side",
+                "orderSentence": "Supraorbital nerve block 1-2 mL per side Local"
+              }
+            ],
+            "route": "Local",
+            "instructions": "Bupivacaine 0.5% 1-2 mL per side at supraorbital notch",
+            "orderSentence": "Supraorbital nerve block 1-2 mL per side Local"
+          },
+          "contraindications": "Local anesthetic allergy, infection at site",
+          "monitoring": "Local reaction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Refractory/Third-Line - DHE Protocol and Rescue Therapies": [
+        {
+          "item": "Dihydroergotamine (DHE) IV - test dose",
+          "route": "IV",
+          "indication": "First dose to assess tolerability before initiating repetitive DHE protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg IV once",
+                "orderSentence": "Dihydroergotamine (DHE) IV - test dose 0.5 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Premedicate: metoclopramide 10 mg IV + diphenhydramine 25 mg IV 30 min prior; then DHE 0.5 mg IV over 3-5 min as test dose",
+            "orderSentence": "Dihydroergotamine (DHE) IV - test dose 0.5 mg IV once IV"
+          },
+          "contraindications": "Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors",
+          "monitoring": "BP q15min during infusion, chest pain, limb ischemia, nausea",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dihydroergotamine (DHE) IV - repetitive protocol",
+          "route": "IV",
+          "indication": "Repetitive IV DHE for sustained break of status migrainosus (Raskin protocol)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg IV q8h",
+                "orderSentence": "Dihydroergotamine (DHE) IV - repetitive protocol 0.5 mg IV q8h IV"
+              },
+              {
+                "text": "1 mg IV q8h",
+                "orderSentence": "Dihydroergotamine (DHE) IV - repetitive protocol 1 mg IV q8h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "If test dose tolerated: 0.5-1 mg IV q8h for up to 3-5 days; premedicate each dose with antiemetic; may titrate to 1 mg if 0.5 mg tolerated",
+            "orderSentence": "Dihydroergotamine (DHE) IV - repetitive protocol 0.5 mg IV q8h IV"
+          },
+          "contraindications": "Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors",
+          "monitoring": "BP q15min during infusion, chest pain, limb ischemia, nausea; daily ECG during protocol",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "DHE nasal spray",
+          "route": "IN",
+          "indication": "Alternative to IV DHE for patients who decline IV protocol or as bridge to outpatient",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg per nostril once",
+                "orderSentence": "DHE nasal spray 0.5 mg per nostril once IN"
+              }
+            ],
+            "route": "IN",
+            "instructions": "0.5 mg per nostril (1 mg total); may repeat once in 15 min; max 3 mg/24h; max 4 mg/week",
+            "orderSentence": "DHE nasal spray 0.5 mg per nostril once IN"
+          },
+          "contraindications": "Pregnancy, CAD, CVA, PVD, uncontrolled HTN (>180/110), triptan within 24h, ergot allergy, basilar/hemiplegic migraine, severe hepatic or renal disease, concurrent CYP3A4 inhibitors",
+          "monitoring": "Nausea, nasal congestion, BP, chest pain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketamine IV sub-anesthetic",
+          "route": "IV",
+          "indication": "Refractory status migrainosus not responding to standard therapies; NMDA receptor antagonism disrupts central sensitization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg bolus",
+                "orderSentence": "Ketamine IV sub-anesthetic 0.1 mg/kg bolus IV"
+              },
+              {
+                "text": "0.1-0.5 mg/kg/hr",
+                "orderSentence": "Ketamine IV sub-anesthetic 0.1-0.5 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV bolus, then 0.1-0.5 mg/kg/hr infusion; titrate by 0.1 mg/kg/hr q30min; max 1 mg/kg/hr; typical duration 24-48h",
+            "orderSentence": "Ketamine IV sub-anesthetic 0.1 mg/kg bolus IV"
+          },
+          "contraindications": "Uncontrolled hypertension, active psychosis, elevated ICP (relative), age <18",
+          "monitoring": "BP, HR (may increase), dissociative symptoms, nystagmus, sedation level, psychiatric effects",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Propofol sub-anesthetic bolus",
+          "route": "IV",
+          "indication": "Brief burst-like suppression of migraine pain via GABA modulation; requires monitored setting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-30 mg IV once",
+                "orderSentence": "Propofol sub-anesthetic bolus 20-30 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20-30 mg IV bolus; may repeat q5min up to 100 mg total; must have respiratory monitoring",
+            "orderSentence": "Propofol sub-anesthetic bolus 20-30 mg IV once IV"
+          },
+          "contraindications": "Egg/soy allergy, hemodynamic instability, respiratory compromise without airway support",
+          "monitoring": "O2 sat, BP, respiratory status; requires procedural sedation monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Lidocaine IV infusion",
+          "route": "IV",
+          "indication": "Sodium channel blockade for refractory status migrainosus; typically inpatient protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/kg bolus",
+                "orderSentence": "Lidocaine IV infusion 1-2 mg/kg bolus IV"
+              },
+              {
+                "text": "1-2 mg/min",
+                "orderSentence": "Lidocaine IV infusion 1-2 mg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1-2 mg/kg IV over 20 min, then 1-2 mg/min (60-120 mg/hr) infusion x 24-48h",
+            "orderSentence": "Lidocaine IV infusion 1-2 mg/kg bolus IV"
+          },
+          "contraindications": "Heart block, severe CHF, hepatic failure",
+          "monitoring": "Continuous cardiac monitoring, lidocaine level q12h (target <5 mcg/mL), neuro checks for toxicity (perioral numbness, tinnitus, seizures)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ],
+      "Adjunctive Treatments and Recurrence Prevention": [
+        {
+          "item": "Dexamethasone PO taper",
+          "route": "PO",
+          "indication": "Prevention of headache recurrence after ED/hospital discharge; bridge to preventive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg BID x 4 days",
+                "orderSentence": "Dexamethasone PO taper 4 mg BID x 4 days PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "4 mg PO BID x 4 days; may taper over 1 week",
+            "orderSentence": "Dexamethasone PO taper 4 mg BID x 4 days PO"
+          },
+          "contraindications": "Active infection, uncontrolled DM, GI ulcer",
+          "monitoring": "Blood glucose, GI symptoms, mood",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen sodium PO",
+          "route": "PO",
+          "indication": "Transitional therapy for recurrence prevention after discharge; scheduled dosing more effective than PRN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Naproxen sodium PO 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg PO BID with food x 5-7 days as bridge",
+            "orderSentence": "Naproxen sodium PO 500 mg BID PO"
+          },
+          "contraindications": "GI bleeding, renal disease, third trimester pregnancy",
+          "monitoring": "Renal function, GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen IV",
+          "route": "IV",
+          "indication": "Mild-moderate pain adjunct when NSAIDs contraindicated; pregnancy-safe option",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg IV q6h",
+                "orderSentence": "Acetaminophen IV 1000 mg IV q6h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV q6h; max 3000 mg/day (2000 mg/day if hepatic risk)",
+            "orderSentence": "Acetaminophen IV 1000 mg IV q6h IV"
+          },
+          "contraindications": "Severe hepatic disease (Child-Pugh C), chronic alcohol use (>3 drinks/day)",
+          "monitoring": "LFTs if repeated use >3 days",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Methylprednisolone IV",
+          "route": "IV",
+          "indication": "Alternative to dexamethasone for acute anti-inflammatory effect in severe cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mg IV once",
+                "orderSentence": "Methylprednisolone IV 125 mg IV once IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "125 mg IV once",
+            "orderSentence": "Methylprednisolone IV 125 mg IV once IV"
+          },
+          "contraindications": "Active infection, uncontrolled DM",
+          "monitoring": "Blood glucose, mood",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Promethazine IV/IM",
+          "route": "IV, IM",
+          "indication": "Antiemetic and sedative adjunct for nausea-predominant status migrainosus when other antiemetics inadequate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg IV once",
+                "orderSentence": "Promethazine IV/IM 12.5 mg IV once IV, IM"
+              },
+              {
+                "text": "25 mg IM once",
+                "orderSentence": "Promethazine IV/IM 25 mg IM once IV, IM"
+              }
+            ],
+            "route": "IV, IM",
+            "instructions": "12.5-25 mg IV slow push (over 10-15 min to reduce phlebitis) or 25 mg deep IM; may repeat q4-6h; max 75 mg/day",
+            "orderSentence": "Promethazine IV/IM 12.5 mg IV once IV, IM"
+          },
+          "contraindications": "QT prolongation, respiratory depression (especially with opioids), tissue necrosis risk with IV extravasation",
+          "monitoring": "Sedation, respiratory status, IV site (severe vesicant)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Sumatriptan PO (post-discharge rescue)",
+          "route": "PO",
+          "indication": "Outpatient rescue for breakthrough migraine after discharge from status migrainosus treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg PO once",
+                "orderSentence": "Sumatriptan PO (post-discharge rescue) 100 mg PO once PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO at onset; may repeat in 2h; max 200 mg/24h; limit to ≤9 days/month",
+            "orderSentence": "Sumatriptan PO (post-discharge rescue) 100 mg PO once PO"
+          },
+          "contraindications": "CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h",
+          "monitoring": "Chest tightness, blood pressure, coronary symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rizatriptan PO (post-discharge rescue)",
+          "route": "PO",
+          "indication": "Outpatient rescue for breakthrough migraine; rapid-onset oral triptan option",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg PO once",
+                "orderSentence": "Rizatriptan PO (post-discharge rescue) 10 mg PO once PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg PO at onset (ODT available); may repeat in 2h; max 30 mg/24h; limit to ≤9 days/month; use 5 mg if on propranolol",
+            "orderSentence": "Rizatriptan PO (post-discharge rescue) 10 mg PO once PO"
+          },
+          "contraindications": "CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h, concurrent MAOI",
+          "monitoring": "Chest tightness, blood pressure, coronary symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eletriptan PO (post-discharge rescue)",
+          "route": "PO",
+          "indication": "Outpatient rescue for breakthrough migraine; high efficacy oral triptan option",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg PO once",
+                "orderSentence": "Eletriptan PO (post-discharge rescue) 40 mg PO once PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO at onset; may repeat in 2h; max 80 mg/24h; limit to ≤9 days/month",
+            "orderSentence": "Eletriptan PO (post-discharge rescue) 40 mg PO once PO"
+          },
+          "contraindications": "CAD, prior stroke/TIA, uncontrolled HTN (>140/90), hemiplegic or basilar migraine, pregnancy, concurrent ergot/DHE within 24h, severe hepatic impairment",
+          "monitoring": "Chest tightness, blood pressure, coronary symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consult for diagnosis confirmation, treatment escalation guidance, and preventive strategy",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Headache specialist referral for chronic migraine management and refractory status migrainosus",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management consult for refractory cases not responding to standard protocols, nerve block consideration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmology consult if papilledema found on fundoscopic exam to rule out IIH",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Psychiatry or behavioral health referral for comorbid anxiety, depression, or significant psychosocial stressors contributing to refractoriness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consult for discharge planning, outpatient resource coordination, and insurance authorization for specialty medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy referral for cervicogenic component evaluation, trigger point therapy, and postural correction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center referral for outpatient DHE or ketamine infusion protocol if refractory",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Return immediately if thunderclap headache onset, fever, neck stiffness, new neurologic deficits, or altered mental status develop (may indicate secondary cause requiring emergency evaluation)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if headache recurs at severe intensity within 72 hours of discharge despite rescue medications (may require repeat parenteral therapy)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Treat recurrent migraine within the first hour of onset for maximal medication efficacy (early treatment is more effective than delayed treatment)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medication overuse: limit triptans to no more than 9 days per month and NSAIDs to no more than 14 days per month to prevent medication overuse headache",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a detailed headache diary documenting frequency, severity (0-10), triggers, medications used, and response to treatment for follow-up appointments",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow up with neurology or headache specialist within 2-4 weeks of discharge for preventive therapy initiation and treatment plan adjustment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until headache has fully resolved and no sedating medications are on board due to impaired reaction time and concentration",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all prescribed discharge medications as directed and do not abruptly discontinue steroids if prescribed a taper (may cause rebound headache or adrenal insufficiency)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain a regular sleep schedule of 7-8 hours per night as both sleep deprivation and oversleeping are established migraine triggers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise (30 minutes, 5 days per week) reduces migraine frequency through endorphin release and stress reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management with biofeedback, progressive muscle relaxation, or cognitive behavioral therapy (Level A evidence for migraine prevention)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stay well-hydrated with at least 64 ounces of water daily as dehydration is a common and modifiable migraine trigger",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid known dietary triggers including alcohol (especially red wine), aged cheeses, MSG, processed meats, and skipped meals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine to consistent moderate intake (less than 200 mg per day) and avoid abrupt caffeine withdrawal which is a potent headache trigger",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Discuss preventive medication initiation at follow-up if experiencing 4 or more migraine days per month, significant disability, or recurrent status migrainosus episodes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Identify and manage comorbid conditions that worsen migraine including depression, anxiety, insomnia, and obesity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap onset (\"worst headache of life\"), neck stiffness, rapid deterioration, no prior migraine history",
+      "tests": "CT head (sensitivity >95% within 6h); LP if CT negative (xanthochromia)"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis",
+      "features": "Progressive headache, seizures, focal deficits, risk factors (OCP, pregnancy, prothrombotic state), papilledema",
+      "tests": "MRV or CT venogram; D-dimer (low sensitivity)"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension",
+      "features": "Papilledema, visual obscurations, pulsatile tinnitus, bilateral pressure headache worse with Valsalva; often obese women",
+      "tests": "Fundoscopic exam, LP with elevated opening pressure (>25 cm H2O), MRI with empty sella/optic nerve sheath distension"
+    },
+    {
+      "diagnosis": "Cervical artery dissection",
+      "features": "Acute neck pain, Horner syndrome (miosis, ptosis), preceding trauma or neck manipulation, focal neurologic deficits",
+      "tests": "CTA head/neck or MRA with fat-suppressed sequences"
+    },
+    {
+      "diagnosis": "Giant cell arteritis",
+      "features": "Age >50, new-onset headache, jaw claudication, scalp tenderness, visual symptoms, constitutional symptoms",
+      "tests": "ESR/CRP markedly elevated; temporal artery biopsy; temporal artery ultrasound (halo sign)"
+    },
+    {
+      "diagnosis": "Medication overuse headache",
+      "features": "Chronic daily headache (≥15 days/month), frequent acute medication use (>10-15 days/month for >3 months), headache worsens with continued overuse",
+      "tests": "Detailed medication diary; headache improves within 2 months of medication withdrawal"
+    },
+    {
+      "diagnosis": "Meningitis/encephalitis",
+      "features": "Fever, neck stiffness, photophobia, altered mental status, rash (meningococcal); may present subacutely",
+      "tests": "LP (cell count, protein, glucose, culture, PCR); blood cultures"
+    },
+    {
+      "diagnosis": "Brain tumor",
+      "features": "Progressive headache worse in morning or with Valsalva, new focal deficits, papilledema, weight loss, seizures",
+      "tests": "MRI brain with contrast"
+    },
+    {
+      "diagnosis": "Hypertensive emergency",
+      "features": "BP >180/120 with headache, visual changes, encephalopathy, end-organ damage",
+      "tests": "BP measurement, fundoscopic exam, renal function, troponin"
+    },
+    {
+      "diagnosis": "Pituitary apoplexy",
+      "features": "Sudden severe headache, visual field deficits (bitemporal hemianopia), ophthalmoplegia, known or unknown pituitary adenoma",
+      "tests": "MRI brain with pituitary protocol; hormone levels (cortisol, TSH, prolactin)"
+    },
+    {
+      "diagnosis": "Spontaneous intracranial hypotension",
+      "features": "Orthostatic headache (better lying down, worse upright), may have neck stiffness, subdural fluid collections",
+      "tests": "MRI brain with contrast (diffuse pachymeningeal enhancement, brain sagging); LP with low opening pressure"
+    },
+    {
+      "diagnosis": "Reversible cerebral vasoconstriction syndrome",
+      "features": "Recurrent thunderclap headaches, may mimic SAH, associated with vasoactive substances or postpartum",
+      "tests": "CTA/MRA (segmental vasoconstriction); may require repeat imaging as vasoconstriction evolves"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IV prochlorperazine and metoclopramide are effective acute treatments for migraine in the ED",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Friedman et al. Ann Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18006188/); [Kelley & Tepper. Headache 2012](https://pubmed.ncbi.nlm.nih.gov/22946834/)"
+    },
+    {
+      "recommendation": "IV metoclopramide 10-20 mg superior to placebo for acute migraine",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Friedman et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/25009204/)"
+    },
+    {
+      "recommendation": "Single-dose IV dexamethasone reduces headache recurrence within 72 hours (NNT 9)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/); [Colman et al. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18569933/)"
+    },
+    {
+      "recommendation": "Ketorolac IV effective for acute migraine; comparable to opioids without sedation",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Friedman et al. Headache 2008](https://pubmed.ncbi.nlm.nih.gov/18377386/)"
+    },
+    {
+      "recommendation": "IV magnesium sulfate effective for acute migraine, especially with aura",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/12390634/); [Chiu et al. Ann Emerg Med 2016](https://pubmed.ncbi.nlm.nih.gov/27017579/)"
+    },
+    {
+      "recommendation": "Subcutaneous sumatriptan 6 mg effective for acute migraine",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Ferrari et al. Lancet 2001](https://pubmed.ncbi.nlm.nih.gov/11742007/)"
+    },
+    {
+      "recommendation": "Repetitive IV DHE effective for breaking status migrainosus",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Raskin. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3520384/); [Nagy et al. Headache 1993](https://pubmed.ncbi.nlm.nih.gov/8436511/)"
+    },
+    {
+      "recommendation": "Greater occipital nerve block effective for acute migraine and status migrainosus",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Afridi et al. Headache 2006](https://pubmed.ncbi.nlm.nih.gov/17115982/); [Inan et al. J Headache Pain 2015](https://pubmed.ncbi.nlm.nih.gov/25916334/)"
+    },
+    {
+      "recommendation": "Valproate IV effective for acute migraine in ED",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Tanen et al. Ann Emerg Med 2003](https://pubmed.ncbi.nlm.nih.gov/12883516/)"
+    },
+    {
+      "recommendation": "Chlorpromazine IV effective for acute migraine in ED",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Kelly et al. Ann Emerg Med 2017](https://pubmed.ncbi.nlm.nih.gov/28601267/)"
+    },
+    {
+      "recommendation": "Sub-anesthetic ketamine infusion for refractory migraine",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Pomeroy et al. Headache 2017](https://pubmed.ncbi.nlm.nih.gov/28862769/); [Schwenk et al. Reg Anesth Pain Med 2018](https://pubmed.ncbi.nlm.nih.gov/29469714/)"
+    },
+    {
+      "recommendation": "IV lidocaine for refractory migraine and status migrainosus",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Williams & Bhatt. Anesthesiology 2007](https://pubmed.ncbi.nlm.nih.gov/17413916/); [Rosen et al. Cephalalgia 2009](https://pubmed.ncbi.nlm.nih.gov/19438917/)"
+    },
+    {
+      "recommendation": "Diphenhydramine co-administration prevents akathisia from dopamine antagonists",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Vinson. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15226072/)"
+    },
+    {
+      "recommendation": "ICHD-3 diagnostic criteria for status migrainosus",
+      "evidenceLevel": "Consensus",
+      "source": "[ICHD-3. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "AHS consensus statement on migraine treatment in the ED",
+      "evidenceLevel": "Consensus/Guidelines",
+      "source": "[American Headache Society. Headache 2016](https://pubmed.ncbi.nlm.nih.gov/27300483/)"
+    },
+    {
+      "recommendation": "Lifestyle modifications (sleep, exercise, stress management) reduce migraine frequency",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AAN/AHS Practice Guidelines, Silberstein et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22529202/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain scale (0-10 NRS)",
+      "frequency": "q1h during treatment, q4h if stable",
+      "action": "Escalate to next treatment tier",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Vital signs (BP, HR, RR, O2 sat, Temp)",
+      "frequency": "q15min during IV infusions, q4h when stable",
+      "action": "Address abnormality; hypertension may drive headache",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "ECG/QTc",
+      "frequency": "Before dopamine antagonist or DHE; repeat if QT-prolonging agents used",
+      "action": "Avoid QT-prolonging medications; correct electrolytes",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Nausea/vomiting severity",
+      "frequency": "With each pain assessment",
+      "action": "Add or change antiemetic",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Oral intake tolerance",
+      "frequency": "q4-8h",
+      "action": "Continue IV hydration; delay discharge",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Blood glucose (if on steroids)",
+      "frequency": "q6h while on dexamethasone/methylprednisolone",
+      "action": "Sliding scale insulin; adjust steroid dose",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Magnesium level (if supplemented)",
+      "frequency": "After IV magnesium; daily if repletion ongoing",
+      "action": "Replete if low; hold if >3.0 mg/dL",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Neurologic exam",
+      "frequency": "At each encounter; after treatment changes",
+      "action": "Urgent imaging if new deficits; reassess diagnosis",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "Each visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Akathisia/EPS assessment",
+      "frequency": "30 min after each antiemetic dose",
+      "action": "Diphenhydramine 25-50 mg IV; switch antiemetic class",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Headache diary (MIDAS or HIT-6)",
+      "frequency": "Outpatient visits",
+      "action": "Adjust preventive therapy; consider specialist referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "Each visit",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Pain controlled to tolerable level (NRS ≤4/10); tolerating oral fluids and medications; no red flag features; able to ambulate; rescue medication and follow-up plan provided; headache diary instructions given"
+    },
+    {
+      "disposition": "Admit to hospital (observation or floor)",
+      "criteria": "Status migrainosus unresponsive to ED headache cocktail (2 or more treatment rounds); inability to tolerate oral intake despite antiemetics; need for repetitive IV DHE protocol; severe dehydration requiring ongoing IV fluids; concern for secondary headache requiring further workup"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Refractory status migrainosus requiring ketamine infusion or sub-anesthetic propofol; hemodynamic instability from treatments (severe hypotension from chlorpromazine); altered mental status not explained by medications; suspected secondary cause requiring ICU-level monitoring"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for services unavailable at current facility (headache specialist, DHE protocol capability, interventional procedures)"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Pain controlled on oral medications (NRS ≤3/10 for ≥12 hours); tolerating oral fluids and solid food; ambulatory without significant dizziness; discharge medications reviewed with patient; follow-up with neurology arranged within 2-4 weeks"
+    },
+    {
+      "disposition": "Outpatient follow-up intervals",
+      "criteria": "Post-discharge: 2-4 weeks for treatment assessment; Chronic migraine: q1-3 months; Stable on preventive: q3-6 months"
+    }
+  ]
+}

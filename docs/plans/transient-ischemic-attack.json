@@ -6,7 +6,8 @@
     "** G45.9 (Transient cerebral ischemic attack",
     "unspecified)",
     "G45.0 (Vertebro-basilar artery syndrome)",
-    "G45.1 (Carotid artery syndrome)"
+    "G45.1 (Carotid artery syndrome)",
+    "G45.8 (Other transient cerebral ischemic attacks and related syndromes)"
   ],
   "scope": "** Acute evaluation and secondary prevention after transient ischemic attack in adults. Covers risk stratification (ABCD2), urgent workup (MRI with DWI, vascular imaging, cardiac evaluation), dual antiplatelet therapy initiation, and rapid secondary prevention. TIA is a medical emergency — 90-day stroke risk is 10-15% without intervention, highest in first 48h. Excludes completed ischemic stroke (see Acute Ischemic Stroke template), hemorrhagic stroke, and TIA mimics.",
   "notes": [],
@@ -14,7 +15,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "Point-of-care glucose",
+          "item": "Point-of-care glucose (CPT 82962)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "STAT",
@@ -23,7 +24,7 @@
           "target": ">60 mg/dL"
         },
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -32,7 +33,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -41,7 +42,7 @@
           "target": "Normal"
         },
         {
-          "item": "PT/INR",
+          "item": "PT/INR (CPT 85610)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -50,7 +51,7 @@
           "target": "Normal"
         },
         {
-          "item": "Lipid panel (fasting or non-fasting)",
+          "item": "Lipid panel (fasting or non-fasting) (CPT 80061)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -59,7 +60,7 @@
           "target": "LDL <70"
         },
         {
-          "item": "HbA1c",
+          "item": "HbA1c (CPT 83036)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -68,7 +69,7 @@
           "target": "<7.0%"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -77,7 +78,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood glucose (fasting)",
+          "item": "Blood glucose (fasting) (CPT 82947)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -86,7 +87,7 @@
           "target": "<126 mg/dL"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -95,9 +96,9 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "ESR / CRP",
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -106,7 +107,7 @@
           "target": "Normal"
         },
         {
-          "item": "Homocysteine",
+          "item": "Homocysteine (CPT 83090)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -115,7 +116,7 @@
           "target": "Normal (<15 µmol/L)"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -124,7 +125,7 @@
           "target": "Negative"
         },
         {
-          "item": "RPR/VDRL",
+          "item": "RPR/VDRL (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -133,7 +134,7 @@
           "target": "Non-reactive"
         },
         {
-          "item": "HIV 1/2 antigen/antibody",
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -142,7 +143,7 @@
           "target": "Negative"
         },
         {
-          "item": "Pregnancy test (β-hCG)",
+          "item": "Pregnancy test (β-hCG) (CPT 84703)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -151,7 +152,7 @@
           "target": "Document result"
         },
         {
-          "item": "Magnesium",
+          "item": "Magnesium (CPT 83735)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -160,7 +161,7 @@
           "target": "Normal"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Young TIA or Cryptogenic)": [
         {
           "item": "Hypercoagulable panel (Protein C, S, antithrombin III, Factor V Leiden, prothrombin gene mutation)",
           "ED": "-",
@@ -180,7 +181,7 @@
           "target": "Negative"
         },
         {
-          "item": "ANA, dsDNA",
+          "item": "ANA (CPT 86235), dsDNA",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "ROUTINE",
@@ -229,7 +230,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI brain with DWI",
+          "item": "MRI brain with DWI (CPT 70553)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "URGENT",
@@ -239,7 +240,7 @@
           "contraindications": "Pacemaker, metallic implants, severe claustrophobia"
         },
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -249,7 +250,7 @@
           "contraindications": "Pregnancy (relative)"
         },
         {
-          "item": "CTA head and neck (OR MRA head and neck)",
+          "item": "CTA head and neck (CPT 70496, 70498) (OR MRA head and neck)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "URGENT",
@@ -259,7 +260,7 @@
           "contraindications": "Contrast allergy; renal impairment (for CTA). MRA: pacemaker"
         },
         {
-          "item": "ECG (12-lead)",
+          "item": "ECG (12-lead) (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -269,7 +270,7 @@
           "contraindications": "None"
         },
         {
-          "item": "Continuous cardiac monitoring (telemetry)",
+          "item": "Continuous cardiac monitoring (telemetry) (CPT 93228)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -281,7 +282,7 @@
       ],
       "Extended": [
         {
-          "item": "Transthoracic echocardiogram (TTE)",
+          "item": "Transthoracic echocardiogram (TTE) (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -291,7 +292,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Transesophageal echocardiogram (TEE) with bubble study",
+          "item": "Transesophageal echocardiogram (TEE) (CPT 93312) with bubble study",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -301,7 +302,7 @@
           "contraindications": "Esophageal pathology"
         },
         {
-          "item": "Carotid duplex ultrasound",
+          "item": "Carotid duplex ultrasound (CPT 93880)",
           "ED": "URGENT",
           "HOSP": "URGENT",
           "OPD": "URGENT",
@@ -321,7 +322,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Transcranial Doppler (TCD) with bubble study",
+          "item": "Transcranial Doppler (TCD) (CPT 93886) with bubble study",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -343,7 +344,7 @@
       ],
       "Rare/Specialized": [
         {
-          "item": "Conventional cerebral angiography (DSA)",
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",

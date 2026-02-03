@@ -1,0 +1,2398 @@
+{
+  "id": "neurosarcoidosis",
+  "title": "Neurosarcoidosis",
+  "version": "1.1",
+  "icd10": [
+    "** D86.82 (Sarcoid meningitis)",
+    "D86.89 (Sarcoidosis of other sites)",
+    "D86.9 (Sarcoidosis",
+    "unspecified)",
+    "G53 (Cranial nerve disorders in diseases classified elsewhere)"
+  ],
+  "scope": "** Diagnostic workup and management of suspected or confirmed neurosarcoidosis across all neurological presentations: cranial neuropathies, aseptic meningitis, hypothalamic-pituitary dysfunction, myelopathy, peripheral neuropathy, hydrocephalus, and mass lesions. Covers Zajicek diagnostic criteria (definite, probable, possible), acute immunotherapy, steroid-sparing agents, and long-term immunosuppression. For isolated pulmonary or systemic sarcoidosis without neurological involvement, defer to pulmonology. For other granulomatous CNS diseases (e.g., granulomatosis with polyangiitis, TB meningitis), use respective templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; leukopenia in sarcoidosis; pre-immunotherapy",
+          "target": "Normal; lymphopenia common",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; hepatic involvement (granulomatous hepatitis); renal function; hypercalcemia screening",
+          "target": "Normal; elevated ALP/GGT suggests hepatic involvement",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium (total and ionized) (CPT 82310+82330)",
+          "rationale": "Hypercalcemia from granulomatous 1,25-dihydroxyvitamin D production; present in 10-17% of sarcoidosis",
+          "target": "Normal (8.5-10.5 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory marker; often elevated in active sarcoidosis",
+          "target": "Elevated (non-specific)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal to mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Serum ACE level (CPT 82164)",
+          "rationale": "Elevated in ~60% of systemic sarcoidosis but only ~30-50% of neurosarcoidosis; limited sensitivity; false positives in DM, hyperthyroidism, lymphoma",
+          "target": "Elevated (>52 U/L; varies by lab)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothalamic-pituitary dysfunction screen; central hypothyroidism",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "rationale": "Central hypothyroidism from hypothalamic-pituitary sarcoidosis",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Prolactin (CPT 84146)",
+          "rationale": "Elevated with hypothalamic/pituitary stalk involvement; usually mild elevation (<100 ng/mL)",
+          "target": "Normal (<25 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "AM cortisol (CPT 82533)",
+          "rationale": "Adrenal insufficiency from HPA axis involvement; central hypoadrenalism",
+          "target": "Normal (>10 mcg/dL at 8AM)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Diabetes insipidus screen; pre-steroid baseline",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Glycemic status before high-dose steroids",
+          "target": "<5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81003+87086)",
+          "rationale": "Infection screen; 24h urine calcium if hypercalcemia",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "rationale": "Rule out infection (particularly TB, fungal before immunosuppression)",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulation status pre-LP; pre-procedure",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Seizure threshold; metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "Marker of granulomatous activity; lymphoma screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "rationale": "Elevated in active sarcoidosis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "rationale": "Distinguish bacterial infection from granulomatous inflammation",
+          "target": "Normal (<0.1 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
+          "rationale": "Polyclonal hypergammaglobulinemia common in sarcoidosis; lymphoma screen",
+          "target": "Polyclonal pattern or normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784)",
+          "rationale": "Baseline before immunotherapy; hypergammaglobulinemia",
+          "target": "Normal or elevated IgG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "1,25-dihydroxyvitamin D (calcitriol) (CPT 82652)",
+          "rationale": "Elevated due to granulomatous production by activated macrophages; more specific than calcium alone",
+          "target": "Elevated (supports sarcoidosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "25-hydroxyvitamin D (CPT 82306)",
+          "rationale": "May be low (consumed by granulomatous conversion to 1,25-D); guides supplementation",
+          "target": "Normal (>30 ng/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "24-hour urine calcium (CPT 82340)",
+          "rationale": "Hypercalciuria (more common than hypercalcemia); nephrolithiasis risk",
+          "target": "<300 mg/24h",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum lysozyme (CPT 86318)",
+          "rationale": "Elevated in active sarcoidosis; marker of macrophage activity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Soluble IL-2 receptor (sIL-2R) (CPT 86235)",
+          "rationale": "Elevated in active sarcoidosis; may be more sensitive than ACE; correlates with disease activity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Lupus/vasculitis screen",
+          "target": "Negative or low titer",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-dsDNA (CPT 86225)",
+          "rationale": "If ANA positive; lupus cerebritis exclusion",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (c-ANCA and p-ANCA) (CPT 86235)",
+          "rationale": "Granulomatosis with polyangiitis exclusion (CNS vasculitis mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-SSA/SSB (Ro/La)",
+          "rationale": "Sjogren syndrome with CNS involvement",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis exclusion (granulomatous meningitis mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "rationale": "Lyme neuroborreliosis (cranial neuropathy, meningitis mimic)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "QuantiFERON-TB Gold or PPD (CPT 86480)",
+          "rationale": "TB exclusion before immunosuppression; TB meningitis is critical differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "Immunocompromised screen; CNS lymphoma risk",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen + core antibody (CPT 80074)",
+          "rationale": "Reactivation risk before immunosuppression (rituximab, methotrexate)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "LH, FSH",
+          "rationale": "Hypogonadotropic hypogonadism from pituitary involvement",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone (males) or estradiol (premenopausal females)",
+          "rationale": "Central hypogonadism screen",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IGF-1 (CPT 84305)",
+          "rationale": "Growth hormone deficiency from pituitary involvement",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum osmolality + urine osmolality (CPT 83930+83935)",
+          "rationale": "Diabetes insipidus screen (central DI from hypothalamic/posterior pituitary involvement)",
+          "target": "Serum 275-295 mOsm/kg; urine concentrated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Water deprivation test (supervised)",
+          "rationale": "Confirm central diabetes insipidus if polyuria/polydipsia",
+          "target": "Normal concentration ability",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-AQP4 (NMO-IgG) (CPT 86255)",
+          "rationale": "NMOSD exclusion if longitudinally extensive transverse myelitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-MOG IgG",
+          "rationale": "MOGAD exclusion if optic neuritis or myelitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Chitotriosidase (CPT 82657)",
+          "rationale": "Elevated in active sarcoidosis; macrophage activation marker; may monitor treatment response",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum amyloid A (SAA)",
+          "rationale": "Inflammatory marker in refractory sarcoidosis; monitor activity",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Bronchoalveolar lavage (BAL) with CD4/CD8 ratio",
+          "rationale": "CD4/CD8 ratio >3.5 supports sarcoidosis; helps differentiate from other granulomatous diseases",
+          "target": "CD4/CD8 >3.5",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Kveim test",
+          "rationale": "Historical; rarely available; skin biopsy 4-6 weeks after injection of sarcoid tissue extract",
+          "target": "Granuloma formation",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-neuronal antibody panel",
+          "rationale": "Paraneoplastic/autoimmune encephalitis exclusion if atypical presentation",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "14-3-3 protein (CSF)",
+          "rationale": "Prion disease exclusion if rapidly progressive",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "RT-QuIC (CSF)",
+          "rationale": "Prion disease exclusion",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF metagenomics (next-generation sequencing)",
+          "rationale": "Occult infection exclusion when standard testing negative",
+          "target": "No pathogens detected",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (BTNL2, HLA-DRB1)",
+          "rationale": "Sarcoidosis susceptibility genes; research/atypical cases",
+          "target": "Informational",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Elevated ICP assessment; hydrocephalus from meningeal involvement",
+          "target": "10-20 cm H2O (often elevated in neurosarcoidosis)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Lymphocytic pleocytosis (50-70% of neurosarcoidosis); distinguish from infection",
+          "target": "WBC 10-100 (lymphocyte-predominant); RBC 0",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in 50-70% of neurosarcoidosis; usually 50-200 mg/dL",
+          "target": "Normal to elevated (often 50-200 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Low in ~18% of neurosarcoidosis; also low in TB, fungal, bacterial meningitis",
+          "target": "Normal or low (>40 mg/dL; >60% of serum)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF ACE level (CPT 82164)",
+          "rationale": "Elevated in ~50-70% of neurosarcoidosis; limited sensitivity (50%) but reasonable specificity (~90%); NOT diagnostic alone",
+          "target": "Elevated supports diagnosis (normal does not exclude)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "rationale": "Intrathecal IgG synthesis; present in ~30-40% of neurosarcoidosis; helps differentiate from MS",
+          "target": "May show CSF-specific bands",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index (CPT 83787)",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": "May be elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "rationale": "TB meningitis exclusion (CRITICAL differential for granulomatous meningitis)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fungal culture (CPT 87102)",
+          "rationale": "Fungal meningitis exclusion (cryptococcal, coccidioidomycosis)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (CPT 87327)",
+          "rationale": "Cryptococcal meningitis exclusion",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CSF VDRL (CPT 86592)",
+          "rationale": "Neurosyphilis exclusion",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Carcinomatous/lymphomatous meningitis exclusion",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry (CPT 88184)",
+          "rationale": "CNS lymphoma exclusion",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HSV PCR (CPT 87529)",
+          "rationale": "Viral encephalitis exclusion",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TB PCR (GeneXpert)",
+          "rationale": "Rapid TB meningitis exclusion; more sensitive than AFB smear",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF CD4/CD8 ratio",
+          "rationale": "Elevated CD4/CD8 ratio supports neurosarcoidosis (similar to BAL)",
+          "target": "Elevated (>3.0 suggestive)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adenosine deaminase (ADA) (CPT 86235)",
+          "rationale": "Elevated in TB meningitis (>10 IU/L); helps differentiate TB from sarcoid",
+          "target": "Normal (<10 IU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate (ED triage)",
+          "target": "Rule out mass, hemorrhage, hydrocephalus; calcified granulomas",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with and without gadolinium (CPT 70553)",
+          "timing": "Within 24h",
+          "target": "Leptomeningeal enhancement (most common); pachymeningeal enhancement; hypothalamic/pituitary enhancement; cranial nerve enhancement (especially CN II, VII); parenchymal granulomas; periventricular white matter lesions; hydrocephalus",
+          "contraindications": "GFR <30; gadolinium allergy; pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI spine (cervical and thoracic) with and without contrast (CPT 72156+72157)",
+          "timing": "Within 24-48h if myelopathy suspected",
+          "target": "Intramedullary lesions; leptomeningeal enhancement; cord expansion; dorsal subpial enhancement (\"trident sign\"); longitudinally extensive lesions",
+          "contraindications": "GFR <30; gadolinium allergy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT chest (with or without contrast) (CPT 71260)",
+          "timing": "Within 24-48h",
+          "target": "Bilateral hilar lymphadenopathy (Scadding stages); pulmonary infiltrates; mediastinal lymphadenopathy -- present in up to 90% of sarcoidosis",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Conduction abnormalities (cardiac sarcoidosis); QTc prolongation; heart block",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Immediate",
+          "target": "Bilateral hilar lymphadenopathy; pulmonary infiltrates",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "FDG-PET/CT (whole body) (CPT 78816)",
+          "timing": "Within 1-2 weeks",
+          "target": "FDG-avid lymph nodes, pulmonary infiltrates, or other sites for biopsy targeting; disease activity assessment; identify biopsy-accessible sites",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gallium-67 scan",
+          "timing": "Within 1-2 weeks",
+          "target": "Lambda sign (bilateral hilar + right paratracheal uptake); panda sign (lacrimal + parotid uptake); largely replaced by FDG-PET",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiac MRI (CPT 75561)",
+          "timing": "Within 1-2 weeks",
+          "target": "Cardiac sarcoidosis (late gadolinium enhancement, myocardial edema); conduction disease; cardiomyopathy",
+          "contraindications": "Pacemaker; GFR <30",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "timing": "Within 48h",
+          "target": "Cardiac sarcoidosis; wall motion abnormalities; systolic/diastolic dysfunction",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT orbits with contrast",
+          "timing": "If orbital/optic nerve involvement",
+          "target": "Optic nerve/sheath enhancement; orbital mass; lacrimal gland enlargement",
+          "contraindications": "Contrast allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/NCS (electromyography/nerve conduction studies) (CPT 95907-95913)",
+          "timing": "Within 1-2 weeks",
+          "target": "Small fiber neuropathy; axonal polyneuropathy; mononeuritis multiplex; polyradiculopathy",
+          "contraindications": "Anticoagulation (relative for needle EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonary function tests (PFTs) (CPT 94010)",
+          "timing": "Within 1-2 weeks",
+          "target": "Restrictive pattern; reduced DLCO; pulmonary sarcoidosis staging",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmologic slit lamp examination",
+          "timing": "Within 24-48h",
+          "target": "Anterior uveitis; posterior uveitis; optic disc edema; lacrimal gland enlargement; keratoconjunctivitis sicca",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Visual evoked potentials (VEPs) (CPT 95930)",
+          "timing": "Within 1-2 weeks",
+          "target": "Optic neuropathy assessment; P100 latency prolongation",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Holter monitor/event monitor (CPT 93224)",
+          "timing": "Within 1 week",
+          "target": "Cardiac arrhythmias from cardiac sarcoidosis",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Meningeal biopsy (open or stereotactic)",
+          "timing": "When tissue diagnosis required",
+          "target": "Non-caseating granulomas with multinucleated giant cells; exclusion of infection/malignancy; definite neurosarcoidosis diagnosis",
+          "contraindications": "Coagulopathy; inaccessible location",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Lymph node biopsy (mediastinal or peripheral)",
+          "timing": "When systemic tissue confirmation needed",
+          "target": "Non-caseating granulomas; probable neurosarcoidosis diagnosis",
+          "contraindications": "Coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Transbronchial lung biopsy (TBLB)",
+          "timing": "If hilar lymphadenopathy present",
+          "target": "Non-caseating granulomas; high yield (60-90%) with EBUS guidance",
+          "contraindications": "Coagulopathy; severe pulmonary hypertension",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Endobronchial ultrasound (EBUS) with biopsy",
+          "timing": "Preferred for mediastinal lymph node sampling",
+          "target": "Non-caseating granulomas; diagnostic yield >90% for stage I-II sarcoidosis",
+          "contraindications": "Same as TBLB",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy (if skin lesions present)",
+          "timing": "When cutaneous sarcoidosis suspected",
+          "target": "Non-caseating granulomas; easiest biopsy site",
+          "contraindications": "Coagulopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Minor salivary gland biopsy (lip biopsy)",
+          "timing": "Alternative biopsy site when other sites not accessible",
+          "target": "Non-caseating granulomas; yield ~30-60%",
+          "contraindications": "Coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Conjunctival biopsy",
+          "timing": "If lacrimal/conjunctival nodules present",
+          "target": "Non-caseating granulomas",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Brain biopsy (stereotactic)",
+          "timing": "Last resort; when diagnosis uncertain and treatment-critical",
+          "target": "Non-caseating granulomas; definite neurosarcoidosis",
+          "contraindications": "Coagulopathy; deep lesion location",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain",
+          "timing": "If brain MRI equivocal",
+          "target": "Focal or diffuse hypermetabolism; meningeal uptake",
+          "contraindications": "Uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone",
+          "route": "IV",
+          "indication": "Acute severe neurosarcoidosis (optic neuropathy, myelopathy, cranial neuropathy, acute hydrocephalus, mass lesion with edema)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 1-2 hours",
+            "orderSentence": "Methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection (especially TB); uncontrolled diabetes; active GI bleeding; psychosis from steroids",
+          "monitoring": "Glucose q6h (target <180 mg/dL); BP; mood/sleep; I/O; GI prophylaxis; electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GI protection during high-dose corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Omeprazole 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO daily during steroid course and oral taper; IV if NPO",
+            "orderSentence": "Omeprazole 40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per sliding scale if glucose >180 mg/dL; adjust per glucose trends",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Glucose q6h; adjust per response",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Cerebral edema from granulomatous mass lesion; acute elevated ICP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV loading dose, then 4 mg IV q6h; taper over days-weeks as clinically improving",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes",
+          "monitoring": "Glucose; BP; neurological status; GI prophylaxis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Seizure secondary to cortical/meningeal sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV push (max 4 mg/dose); may repeat x1 in 5 minutes",
+            "orderSentence": "Lorazepam 4 mg IV"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma",
+          "monitoring": "Respiratory status; sedation level; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Desmopressin",
+          "route": "IV",
+          "indication": "Central diabetes insipidus from hypothalamic/posterior pituitary sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mcg",
+                "orderSentence": "Desmopressin 1-2 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mcg IV/SC q12h; or 10-20 mcg intranasal BID; titrate to urine output and serum sodium",
+            "orderSentence": "Desmopressin 1-2 mcg IV"
+          },
+          "contraindications": "Hyponatremia; type IIb von Willebrand disease",
+          "monitoring": "Sodium q4-6h initially; urine output; urine specific gravity; serum osmolality; weight",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol",
+          "route": "IV",
+          "indication": "Acute elevated ICP from mass lesion or obstructive hydrocephalus pending surgical intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g/kg IV bolus over 15-20 minutes; may repeat 0.5 g/kg q6h; maintain serum osmolality <320 mOsm/kg",
+            "orderSentence": "Mannitol 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial hemorrhage",
+          "monitoring": "Serum osmolality q6h; electrolytes; renal function; I/O",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3%",
+          "route": "IV",
+          "indication": "Acute elevated ICP from obstructive hydrocephalus or mass effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mL",
+                "orderSentence": "Hypertonic saline 3% 250 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "250 mL 3% NaCl IV over 15-30 minutes; may repeat; target sodium 145-155 mEq/L",
+            "orderSentence": "Hypertonic saline 3% 250 mL IV"
+          },
+          "contraindications": "Hypernatremia >155 mEq/L; severe CHF",
+          "monitoring": "Sodium q2-4h; serum osmolality; central line preferred for concentrations >3%",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain from peripheral neuropathy or radiculopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase q1wk; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose); Class V controlled substance",
+          "monitoring": "Sedation; weight gain; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain; comorbid depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week, then increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "BP; hepatic function; serotonin syndrome risk; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Trigeminal neuralgia from CN V sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 200 mg/day q3-7d; target level 4-12 mcg/mL; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "AV block; bone marrow suppression; HLA-B*1502 positive (SJS risk); hepatic porphyria",
+          "monitoring": "CBC q2 weeks x 2 months, then q3 months; LFTs; sodium (SIADH); drug level; HLA-B*1502 before starting in at-risk populations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV",
+          "indication": "Seizures secondary to cortical or meningeal neurosarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 500 mg BID (IV or PO); increase by 500 mg/day q1-2wk; max 3000 mg/day; transition to PO when tolerated",
+            "orderSentence": "Levetiracetam 500 mg IV"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes (rage, irritability); suicidality; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "IV",
+          "indication": "Seizures; second-line ASM or adjunctive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Lacosamide 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 100 mg BID (IV or PO); increase by 50 mg/dose q1wk; max 400 mg/day; transition to PO when tolerated",
+            "orderSentence": "Lacosamide 100 mg IV"
+          },
+          "contraindications": "Second/third degree AV block; severe hepatic impairment",
+          "monitoring": "ECG (PR prolongation); dizziness; cardiac monitoring during IV load",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Levothyroxine",
+          "route": "PO",
+          "indication": "Central hypothyroidism from hypothalamic-pituitary sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mcg",
+                "orderSentence": "Levothyroxine 25 mcg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mcg daily (lower in elderly/cardiac disease); titrate q6-8 weeks by 12.5-25 mcg; target free T4 in upper half of normal range (NOT TSH-guided for central hypothyroidism)",
+            "orderSentence": "Levothyroxine 25 mcg PO"
+          },
+          "contraindications": "Adrenal insufficiency (must correct cortisol FIRST); acute MI",
+          "monitoring": "Free T4 (NOT TSH) q6-8 weeks; monitor for adrenal crisis if cortisol not replaced",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydrocortisone (physiologic replacement)",
+          "route": "PO",
+          "indication": "Central adrenal insufficiency from HPA axis sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Hydrocortisone (physiologic replacement) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg on waking + 5 mg in early afternoon; stress dosing: double or triple during illness/surgery",
+            "orderSentence": "Hydrocortisone (physiologic replacement) 10 mg PO"
+          },
+          "contraindications": "Active infection (relative); peptic ulcer",
+          "monitoring": "AM cortisol (before dose); ACTH stimulation test; stress dose education",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Testosterone cypionate (males)",
+          "route": "IM",
+          "indication": "Hypogonadotropic hypogonadism from pituitary sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Testosterone cypionate (males) 200 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "100-200 mg IM every 2 weeks; titrate based on testosterone trough levels",
+            "orderSentence": "Testosterone cypionate (males) 200 mg IM"
+          },
+          "contraindications": "Prostate cancer; breast cancer; polycythemia (Hct >54%); OSA (untreated); desire for fertility",
+          "monitoring": "Testosterone level; PSA; Hct q3 months initially; DRE annually; lipids",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testosterone gel 1% (males)",
+          "route": "TOP",
+          "indication": "Hypogonadotropic hypogonadism from pituitary sarcoidosis; alternative to IM injection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Testosterone gel 1% (males) 50 mg TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "50 mg (5g gel) applied to shoulders/upper arms daily; wash hands after application; avoid skin-to-skin transfer",
+            "orderSentence": "Testosterone gel 1% (males) 50 mg TOP"
+          },
+          "contraindications": "Prostate cancer; breast cancer; polycythemia (Hct >54%); women/children skin contact",
+          "monitoring": "Testosterone level; PSA; Hct q3 months initially; DRE annually; lipids",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D (bone protection)",
+          "route": "PO",
+          "indication": "Bone protection during chronic corticosteroid therapy; AVOID vitamin D supplementation if hypercalcemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 500-600 mg PO BID + Vitamin D 800-1000 IU daily; HOLD vitamin D if serum calcium elevated",
+            "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+          },
+          "contraindications": "Hypercalcemia; hypercalciuria; nephrolithiasis (avoid vitamin D in active sarcoid hypercalcemia)",
+          "monitoring": "Serum calcium; 25-OH vitamin D; 24h urine calcium; DEXA if steroids >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Communicating hydrocephalus; elevated ICP from meningeal sarcoidosis (adjunct to steroids)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; may increase to 500 mg BID; max 2000 mg/day",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Sulfa allergy; severe renal/hepatic failure; hypokalemia; metabolic acidosis",
+          "monitoring": "BMP (potassium, bicarbonate); renal function; paresthesias; kidney stones",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Artificial tears",
+          "route": "TOP",
+          "indication": "Keratoconjunctivitis sicca from lacrimal gland sarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 drops",
+                "orderSentence": "Artificial tears 1-2 drops TOP"
+              }
+            ],
+            "route": "TOP",
+            "instructions": "1-2 drops in each eye q2-4h PRN for dryness; preservative-free preferred for frequent use",
+            "orderSentence": "Artificial tears 1-2 drops TOP"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Symptom relief; ophthalmology follow-up",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Transition from IV steroids; maintenance corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Prednisone 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 10 mg every 2 weeks to 20 mg, then by 5 mg every 2-4 weeks to lowest effective dose (goal 5-10 mg daily or off); total taper over 6-12 months",
+            "orderSentence": "Prednisone 60 mg PO"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; avascular necrosis; psychosis from steroids",
+          "monitoring": "Glucose; BP; weight; mood; bone density (DEXA if >3 months); ophthalmology (cataracts, glaucoma); adrenal function on taper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methotrexate",
+          "route": "PO",
+          "indication": "Steroid-sparing immunosuppression; relapsing neurosarcoidosis; inability to taper steroids below 10 mg/day",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Methotrexate 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-10 mg PO once weekly; increase by 2.5-5 mg q2-4wk; target 15-25 mg weekly; always co-prescribe folic acid 1 mg daily (except MTX day)",
+            "orderSentence": "Methotrexate 10 mg PO"
+          },
+          "contraindications": "Pregnancy (Category X -- teratogenic); severe hepatic/renal disease; active infection; bone marrow suppression; significant pleural effusion/ascites",
+          "monitoring": "CBC q2 weeks x 2 months, then monthly; LFTs monthly; renal function q3 months; chest X-ray annually; hepatic fibrosis screen (FibroScan or liver biopsy if cumulative dose >1.5g); pulmonary toxicity (cough, dyspnea)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; alternative to methotrexate; relapsing neurosarcoidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID (2000-3000 mg/day total)",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "contraindications": "Pregnancy (Category D -- teratogenic); active infection; concurrent live vaccines",
+          "monitoring": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; alternative to methotrexate/mycophenolate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day; onset of action 3-6 months",
+            "orderSentence": "Azathioprine 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (check before starting); concurrent allopurinol (reduce dose 75%); pregnancy (relative)",
+          "monitoring": "TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs monthly; amylase if abdominal pain (pancreatitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxychloroquine",
+          "route": "PO",
+          "indication": "Mild neurosarcoidosis; cutaneous sarcoidosis with mild CNS involvement; adjunctive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Hydroxychloroquine 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO BID (max 5 mg/kg/day based on actual body weight); onset 2-3 months",
+            "orderSentence": "Hydroxychloroquine 200 mg PO"
+          },
+          "contraindications": "Retinal disease; G6PD deficiency; QTc prolongation",
+          "monitoring": "Baseline and annual ophthalmologic exam (OCT + visual fields) after 5 years (or earlier if risk factors); CBC; LFTs; ECG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Leflunomide",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; alternative to methotrexate (similar mechanism)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Leflunomide 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Loading dose: 100 mg PO daily x 3 days (optional); then 20 mg PO daily",
+            "orderSentence": "Leflunomide 20 mg PO"
+          },
+          "contraindications": "Pregnancy (Category X); severe hepatic impairment; immunodeficiency",
+          "monitoring": "LFTs monthly x 6 months, then q2 months; CBC; BP; cholestyramine washout if pregnancy desired (11g TID x 11 days)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying / Biologic Therapies (Refractory)": [
+        {
+          "item": "Infliximab",
+          "route": "IV",
+          "indication": "Refractory neurosarcoidosis failing methotrexate/mycophenolate; severe/progressive disease; CNS mass lesions; optic neuropathy not responding to steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg",
+                "orderSentence": "Infliximab 5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3-5 mg/kg IV at weeks 0, 2, and 6 (induction), then every 4-8 weeks (maintenance); may increase to 7-10 mg/kg if inadequate response; infuse over 2 hours minimum",
+            "orderSentence": "Infliximab 5 mg/kg IV"
+          },
+          "pretreatment": "TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs, CMP; chest X-ray; age-appropriate cancer screening; heart failure assessment (NYHA class); pregnancy test",
+          "contraindications": "Active or latent TB (treat first); active serious infection; decompensated CHF (NYHA III-IV); demyelinating disease; live vaccines within 4 weeks",
+          "monitoring": "CBC with differential q2-4 months; LFTs q3 months; ANA/anti-dsDNA annually (drug-induced lupus); infection surveillance; infusion reactions; skin cancer screening annually; heart failure symptoms",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Adalimumab",
+          "route": "SC",
+          "indication": "Refractory neurosarcoidosis; alternative to infliximab; may be preferred for outpatient self-administration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Adalimumab 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "80 mg SC at week 0, then 40 mg SC every other week; may increase to 40 mg weekly or 80 mg q2wk if inadequate response",
+            "orderSentence": "Adalimumab 40 mg SC"
+          },
+          "pretreatment": "TB testing (QuantiFERON); Hepatitis B/C screening; CBC, LFTs; chest X-ray; pregnancy test",
+          "contraindications": "Active or latent TB (treat first); active serious infection; decompensated CHF; demyelinating disease; live vaccines within 4 weeks",
+          "monitoring": "CBC q2-4 months; LFTs q3 months; ANA annually; infection surveillance; injection site reactions; skin cancer screening",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory neurosarcoidosis failing anti-TNF therapy; B-cell-mediated disease component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly x 4 doses OR 1000 mg IV x 2 doses (day 0 and day 14); re-dose based on CD19/CD20 repopulation or clinical relapse; premedicate with methylprednisolone 100 mg, acetaminophen, diphenhydramine",
+            "orderSentence": "Rituximab 1000 mg IV"
+          },
+          "pretreatment": "Hepatitis B serology; CBC, CMP; quantitative immunoglobulins; JCV antibody (PML risk); pregnancy test; vaccination update",
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia",
+          "monitoring": "Hepatitis B surveillance; CBC q2-4 weeks initially; immunoglobulin levels q3 months; CD19/CD20 B-cell counts q3 months; infusion reactions; PML surveillance; infection monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "Severe refractory neurosarcoidosis with progressive neurological decline despite other therapies; last resort",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly for 6 cycles; pre-hydrate with 1L NS; administer with MESNA for uroprotection; consider dose reduction for renal impairment",
+            "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+          },
+          "pretreatment": "Pregnancy (Category D); CBC, CMP, UA before each cycle; fertility counseling",
+          "contraindications": "Pregnancy; active infection; bone marrow failure; bladder outlet obstruction",
+          "monitoring": "CBC weekly x 4 weeks after each cycle (nadir day 10-14); urinalysis (hemorrhagic cystitis); BMP; LFTs; fertility preservation discussion; malignancy risk (bladder cancer)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuroimmunology/neurosarcoidosis specialist) for diagnosis confirmation, immunotherapy guidance, and long-term management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pulmonology for pulmonary sarcoidosis staging, PFTs, and bronchoscopy/EBUS biopsy coordination",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmology for comprehensive eye examination including slit lamp (uveitis screen), visual acuity, OCT, and visual fields",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Endocrinology for hypothalamic-pituitary axis evaluation and hormonal replacement management if pituitary involvement documented",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology for systemic sarcoidosis co-management and steroid-sparing immunosuppression coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery for VP shunt placement if obstructive hydrocephalus, or for meningeal/brain biopsy if tissue diagnosis required",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Interventional pulmonology for EBUS-guided lymph node biopsy to confirm systemic sarcoidosis diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology for cardiac MRI interpretation and management if cardiac sarcoidosis suspected (conduction abnormalities, cardiomyopathy)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait training, balance assessment, and fall prevention given myelopathy or peripheral neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation and energy conservation given fatigue and functional impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for swallowing evaluation given cranial nerve involvement (CN IX, X) and cognitive-linguistic rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychology for cognitive assessment and rehabilitation planning given neurocognitive impairment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management for refractory neuropathic pain not responding to first-line agents",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for insurance navigation, disability resources, and long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dermatology for skin biopsy if cutaneous lesions present (erythema nodosum, lupus pernio, papules, plaques) as accessible biopsy site",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for IV methylprednisolone, infliximab, rituximab, or cyclophosphamide infusions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fertility specialist for reproductive counseling before initiating teratogenic immunosuppressants (methotrexate, mycophenolate, cyclophosphamide)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for sudden vision loss, new weakness, difficulty walking, severe headache, seizures, or difficulty breathing (may indicate disease progression or complications)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosarcoidosis is a chronic, treatable condition -- improvement may be gradual over weeks to months with appropriate immunotherapy",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop corticosteroids abruptly as this may cause adrenal crisis and disease flare; always taper under physician supervision",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Report signs of infection immediately (fever >100.4F, cough, dysuria, rash, wound redness) as immunosuppressive therapy increases infection risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy (inform all physicians and pharmacists of immunosuppression status)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Monitor blood sugars if diabetic or if on corticosteroids -- steroids significantly elevate blood glucose",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology if visual impairment, seizures, or significant neurological deficits are present",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a symptom diary tracking visual changes, weakness, numbness, headaches, fatigue, and pain to monitor treatment response",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Take methotrexate on the same day each week; take folic acid daily EXCEPT on methotrexate day to reduce side effects",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Report excessive thirst or urination (may indicate diabetes insipidus from hypothalamic involvement requiring treatment adjustment)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy must be avoided during methotrexate, mycophenolate, or cyclophosphamide therapy; discuss contraception with neurology and OB/GYN",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Attend all follow-up appointments -- neurosarcoidosis requires regular monitoring with MRI, labs, and clinical assessments",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical alert identification (bracelet/card) indicating neurosarcoidosis, immunosuppressive medications, and adrenal insufficiency if applicable",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Sun protection is important while on methotrexate and immunosuppressive therapy due to increased skin cancer risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Smoking cessation to improve pulmonary function and reduce infection risk during immunosuppression",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol avoidance or strict limitation while on methotrexate due to additive hepatotoxicity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-sodium diet to reduce fluid retention and hypertension from corticosteroid therapy",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium-rich diet (dairy, leafy greens) for bone protection during chronic steroid use; AVOID excessive vitamin D supplementation unless calcium is normal",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular weight-bearing exercise as tolerated (walking, resistance training) to prevent steroid-related osteoporosis and deconditioning",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration (2-3 L/day) especially if on methotrexate or if hypercalciuria present to prevent nephrolithiasis",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures at home (remove loose rugs, adequate lighting, grab bars in bathroom) given myelopathy and balance impairment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and adequate sleep (7-8 hours nightly) as stress may exacerbate symptoms and fatigue",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Vaccinations should be up to date before initiating immunosuppressive therapy (especially pneumococcal, influenza, hepatitis B); avoid live vaccines on immunosuppression",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Sun protection (SPF 50+, protective clothing) during immunosuppressive therapy due to increased skin cancer risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Energy conservation techniques (pacing activities, scheduled rest periods) to manage sarcoidosis-related fatigue",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Annual ophthalmologic examination even if asymptomatic due to risk of subclinical uveitis and steroid-related cataracts/glaucoma",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Tuberculosis meningitis",
+      "features": "Subacute meningitis; basilar meningeal enhancement; caseating granulomas; CSF low glucose, high protein, elevated ADA; risk factors (endemic areas, immunosuppression)",
+      "tests": "AFB culture/smear; CSF TB PCR (GeneXpert); QuantiFERON-TB; chest CT (apical disease vs. hilar adenopathy); tissue biopsy (caseating vs. non-caseating)"
+    },
+    {
+      "diagnosis": "CNS lymphoma (primary)",
+      "features": "Progressive encephalopathy; periventricular enhancement; homogeneous enhancing mass; immunocompromised",
+      "tests": "CSF cytology/flow cytometry; brain biopsy; FDG-PET (intense uptake); HIV testing"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing-remitting course; periventricular/juxtacortical/infratentorial/spinal cord lesions (Dawson fingers); oligoclonal bands; young female predominance",
+      "tests": "MRI (MS vs. sarcoid pattern); CSF oligoclonal bands; no systemic involvement; no hilar adenopathy"
+    },
+    {
+      "diagnosis": "Neuromyelitis optica spectrum disorder (NMOSD)",
+      "features": "Optic neuritis and longitudinally extensive transverse myelitis; area postrema syndrome",
+      "tests": "AQP4-IgG (positive); no hilar adenopathy; different MRI pattern"
+    },
+    {
+      "diagnosis": "CNS vasculitis (primary or secondary)",
+      "features": "Headache; multifocal strokes; beading on angiography; CSF pleocytosis",
+      "tests": "Cerebral angiography (beading); brain/leptomeningeal biopsy; ANCA; no hilar adenopathy"
+    },
+    {
+      "diagnosis": "Granulomatosis with polyangiitis (GPA/Wegener)",
+      "features": "Sinusitis; pulmonary nodules/cavities; glomerulonephritis; pachymeningeal enhancement",
+      "tests": "c-ANCA (PR3); biopsy showing necrotizing vasculitis with granulomas; renal function"
+    },
+    {
+      "diagnosis": "Lyme neuroborreliosis",
+      "features": "Cranial neuropathy (CN VII bilateral); meningitis; radiculopathy; erythema migrans; endemic area",
+      "tests": "Lyme serology (two-tier); CSF Lyme antibody index; travel history"
+    },
+    {
+      "diagnosis": "Neurosyphilis",
+      "features": "Cranial neuropathies; meningitis; Argyll Robertson pupils; cognitive decline; positive serology",
+      "tests": "RPR/VDRL; CSF VDRL; FTA-ABS; HIV co-testing"
+    },
+    {
+      "diagnosis": "Histoplasmosis/Coccidioidomycosis (CNS fungal)",
+      "features": "Chronic meningitis; basilar enhancement; endemic area; immunocompromised",
+      "tests": "Fungal cultures; Histoplasma/Coccidioides antigen; CSF antibodies; biopsy"
+    },
+    {
+      "diagnosis": "Meningeal carcinomatosis",
+      "features": "Known malignancy; cranial neuropathies; headache; progressive; CSF cytology positive",
+      "tests": "CSF cytology (serial LPs increase yield); MRI (nodular leptomeningeal enhancement); whole-body staging"
+    },
+    {
+      "diagnosis": "IgG4-related disease",
+      "features": "Mass-forming lesions; pachymeningeal or orbital involvement; elevated serum IgG4; multi-organ fibrosis",
+      "tests": "Serum IgG4 level; tissue biopsy (storiform fibrosis, IgG4+ plasma cells >40%); no non-caseating granulomas"
+    },
+    {
+      "diagnosis": "Histiocytic disorders (Erdheim-Chester, Langerhans cell histiocytosis)",
+      "features": "Hypothalamic-pituitary involvement; orbital masses; bone lesions; skin involvement",
+      "tests": "Tissue biopsy (CD68+ foamy histiocytes in ECD; CD1a+/Langerin+ in LCH); BRAF V600E mutation; PET/CT"
+    },
+    {
+      "diagnosis": "Lymphomatoid granulomatosis",
+      "features": "Pulmonary nodules; CNS involvement; EBV-associated; angiocentric lymphoid proliferation",
+      "tests": "Lung biopsy; EBV in-situ hybridization; angiocentric/angiodestructive pattern"
+    },
+    {
+      "diagnosis": "Behcet disease",
+      "features": "Oral/genital ulcers; brainstem involvement; CSF neutrophilic pleocytosis; pathergy test",
+      "tests": "Clinical criteria; pathergy test; HLA-B51; no hilar adenopathy"
+    },
+    {
+      "diagnosis": "Chronic meningitis (idiopathic)",
+      "features": "Persistent CSF pleocytosis and meningeal enhancement without identifiable cause after exhaustive workup",
+      "tests": "Comprehensive infectious, inflammatory, and neoplastic workup; brain/meningeal biopsy if refractory"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Zajicek diagnostic criteria for neurosarcoidosis (definite, probable, possible)",
+      "evidenceLevel": "Expert Consensus, Class III",
+      "source": "Zajicek JP et al. J Neurol Neurosurg Psychiatry 1999;67:517-521"
+    },
+    {
+      "recommendation": "Updated consensus diagnostic criteria for neurosarcoidosis (Stern et al.)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Stern BJ et al. JAMA Neurol 2018;75:1546-1553"
+    },
+    {
+      "recommendation": "High-dose IV methylprednisolone as first-line acute treatment",
+      "evidenceLevel": "Class III, Expert Consensus",
+      "source": "Fritz D et al. J Neuroimmunol 2016;299:146-151"
+    },
+    {
+      "recommendation": "Prednisone oral taper following IV pulse therapy",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Tavee JO, Stern BJ. Neurol Clin 2015;33:553-577"
+    },
+    {
+      "recommendation": "Methotrexate as first-line steroid-sparing agent",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Lower EE, Broderick JP. Neurology 2004;62:2198-2202"
+    },
+    {
+      "recommendation": "Methotrexate efficacy in neurosarcoidosis",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Scott TF et al. Neurology 2007;68:1405-1407"
+    },
+    {
+      "recommendation": "Mycophenolate mofetil as steroid-sparing agent",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Moravan M, Segal BM. Arch Neurol 2009;66:1144-1145"
+    },
+    {
+      "recommendation": "Infliximab for refractory neurosarcoidosis",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Gelfand JM et al. Neurology 2017;89:2092-2100"
+    },
+    {
+      "recommendation": "Infliximab safety and efficacy in sarcoidosis",
+      "evidenceLevel": "Class III",
+      "source": "Judson MA et al. Sarcoidosis Vasc Diffuse Lung Dis 2008;25:49-57"
+    },
+    {
+      "recommendation": "Adalimumab for refractory sarcoidosis",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Erckens RJ et al. Ophthalmology 2012;119:2020-2028"
+    },
+    {
+      "recommendation": "Rituximab for refractory neurosarcoidosis",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "Bomprezzi R et al. J Neurol 2010;257:1108-1110"
+    },
+    {
+      "recommendation": "Cranial neuropathy (CN VII most common) in neurosarcoidosis",
+      "evidenceLevel": "Class II, Retrospective",
+      "source": "Stern BJ et al. Arch Neurol 1985;42:909-917"
+    },
+    {
+      "recommendation": "Optic neuropathy in neurosarcoidosis",
+      "evidenceLevel": "Class III",
+      "source": "Koczman JJ et al. Ophthalmology 2008;115:890-896"
+    },
+    {
+      "recommendation": "CSF ACE levels -- sensitivity and specificity in neurosarcoidosis",
+      "evidenceLevel": "Class II",
+      "source": "Dale JC, O'Brien JF. Mayo Clin Proc 1999;74:535-540"
+    },
+    {
+      "recommendation": "Serum ACE -- limited sensitivity in neurosarcoidosis (~30-50%)",
+      "evidenceLevel": "Class II",
+      "source": "Miyoshi S et al. Clin Biochem 2010;43:1004-1008"
+    },
+    {
+      "recommendation": "MRI patterns in neurosarcoidosis (leptomeningeal enhancement most common)",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "Shah R et al. AJR Am J Roentgenol 2009;193:1317-1332"
+    },
+    {
+      "recommendation": "Hypothalamic-pituitary involvement in neurosarcoidosis",
+      "evidenceLevel": "Class III",
+      "source": "Anthony J et al. QJM 2016;109:643-648"
+    },
+    {
+      "recommendation": "Diabetes insipidus as presenting feature of neurosarcoidosis",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Stuart CA et al. Am J Med 1978;65:585-594"
+    },
+    {
+      "recommendation": "Scadding staging for pulmonary sarcoidosis",
+      "evidenceLevel": "Class II",
+      "source": "Scadding JG. Br Med J 1961;2:1165-1172"
+    },
+    {
+      "recommendation": "FDG-PET for biopsy site identification in sarcoidosis",
+      "evidenceLevel": "Class III",
+      "source": "Teirstein AS et al. Sarcoidosis Vasc Diffuse Lung Dis 2007;24:85-92"
+    },
+    {
+      "recommendation": "Small fiber neuropathy in sarcoidosis",
+      "evidenceLevel": "Class III",
+      "source": "Hoitsma E et al. Lancet Neurol 2004;3:349-353"
+    },
+    {
+      "recommendation": "Neurosarcoidosis clinical features and outcomes",
+      "evidenceLevel": "Class II, Retrospective",
+      "source": "Joubert B et al. Medicine (Baltimore) 2017;96:e8340"
+    },
+    {
+      "recommendation": "Hypercalcemia mechanism in sarcoidosis (1,25-dihydroxyvitamin D)",
+      "evidenceLevel": "Class II",
+      "source": "Bell NH et al. J Clin Invest 1979;64:218-225"
+    },
+    {
+      "recommendation": "Cyclophosphamide for refractory neurosarcoidosis",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Doty JD et al. Chest 2003;124:2023-2027"
+    },
+    {
+      "recommendation": "Long-term outcomes of neurosarcoidosis treatment",
+      "evidenceLevel": "Class III",
+      "source": "Bitoun S et al. Medicine (Baltimore) 2016;95:e3241"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic examination (cranial nerves, motor, sensory, gait, cognition)",
+      "frequency": "Q4-6h (ICU); Q8-12h (floor)",
+      "action": "If worsening: urgent re-imaging; escalate immunotherapy; neurosurgery consult if hydrocephalus",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity testing",
+      "frequency": "Daily if optic neuropathy",
+      "action": "Worsening: urgent ophthalmology; escalate steroids; consider PLEX",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h during IV steroids",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250 mg/dL",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Antihypertensive therapy; steroid dose adjustment if severe",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "Rule out infection; blood cultures if febrile on immunosuppression",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "Q6-12h if diabetes insipidus",
+      "action": "Desmopressin titration; fluid balance adjustment",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "If polyuria (>3 L/day): check sodium, osmolality; diabetes insipidus workup",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Calcium (total and ionized)",
+      "frequency": "Daily during steroid therapy",
+      "action": "If hypercalcemia: IV normal saline hydration; hold vitamin D; consider calcitonin",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Daily during acute treatment",
+      "action": "Adjust renally-dosed medications; hydration",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "ICP monitoring (if VP shunt or EVD)",
+      "frequency": "Continuous if EVD",
+      "action": "CSF drainage; escalate ICP management; repeat imaging",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic examination (comprehensive)",
+      "frequency": "Monthly x 6 months; then q3 months x 2 years; then q6 months",
+      "action": "If relapse: repeat MRI; escalate immunotherapy; consider biopsy if diagnosis uncertain",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI brain with and without gadolinium",
+      "frequency": "3-6 months after treatment initiation; then q6-12 months x 2-3 years; then annually",
+      "action": "New/worsening lesions: treatment failure; escalate; re-evaluate diagnosis",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI spine (if myelopathy)",
+      "frequency": "3-6 months; then annually x 2-3 years",
+      "action": "Worsening: escalate therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CT chest",
+      "frequency": "Annually",
+      "action": "Progression: pulmonology consult; adjust systemic treatment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q2 weeks x 2 months on methotrexate/azathioprine; then monthly; q2-4 months on infliximab",
+      "action": "Hold/reduce immunosuppression; growth factor support if needed",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (ALT, AST, ALP, bilirubin)",
+      "frequency": "Monthly on methotrexate; q3 months on other agents",
+      "action": "Dose reduction or switch agent; hepatology consult if persistent elevation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Q3 months",
+      "action": "Dose adjustment of renally-cleared drugs; evaluate nephrocalcinosis if hypercalcemia",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum calcium",
+      "frequency": "Q3-6 months (more frequent if history of hypercalcemia)",
+      "action": "If elevated: hold vitamin D; increase hydration; consider disease activity",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum ACE level",
+      "frequency": "Q3-6 months",
+      "action": "Rising ACE: consider disease relapse; repeat imaging",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Endocrine panel (TSH, free T4, cortisol, prolactin)",
+      "frequency": "Q6-12 months if pituitary involvement",
+      "action": "Adjust hormone replacement; endocrinology follow-up",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline if steroids >3 months; repeat q1-2 years",
+      "action": "Bisphosphonate therapy; calcium/vitamin D optimization (if not hypercalcemic); endocrinology referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ophthalmologic examination",
+      "frequency": "Q6-12 months; more frequent if uveitis history or on steroids",
+      "action": "Topical/systemic treatment per ophthalmology; IOP management",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pulmonary function tests (PFTs)",
+      "frequency": "Annually if pulmonary involvement",
+      "action": "Pulmonology adjustment; consider escalation of systemic therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Quantitative immunoglobulins",
+      "frequency": "Q6 months on rituximab or prolonged immunosuppression",
+      "action": "Immunoglobulin replacement if recurrent infections with hypogammaglobulinemia",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "TB screening (QuantiFERON)",
+      "frequency": "Annually on anti-TNF therapy",
+      "action": "If positive: infectious disease consult; TB prophylaxis; hold anti-TNF",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Skin cancer screening",
+      "frequency": "Annually on immunosuppression",
+      "action": "Dermatology referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Stable or improving neurological exam; able to perform basic ADLs; seizure-free (if applicable); diabetes insipidus well-controlled on desmopressin; oral medications tolerated; steroid taper plan established; follow-up with neurology within 1-2 weeks; outpatient labs and imaging scheduled; family/caregiver education completed"
+    },
+    {
+      "disposition": "**Admit to floor (neurology)**",
+      "criteria": "New-onset or worsening neurosarcoidosis requiring IV methylprednisolone; diagnostic workup requiring expedited imaging and LP; new cranial neuropathy with visual threat; new seizures requiring medication optimization; diabetes insipidus requiring titration; need for tissue biopsy coordination"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Acute hydrocephalus requiring EVD/VP shunt; severe elevated ICP; status epilepticus; severe myelopathy with respiratory compromise; rapid neurological decline; autonomic instability; severe hyponatremia or hypercalcemia requiring close monitoring"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neurosurgery not available (hydrocephalus, biopsy); neuroimmunology specialist not available; interventional pulmonology for EBUS biopsy; infusion center for biologic therapy not available"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Significant functional deficits from myelopathy or multifocal disease; medically stable; expected to benefit from intensive PT/OT/ST; unable to safely return home"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All discharged patients: neurology follow-up within 1-2 weeks; ophthalmology within 2-4 weeks; pulmonology if pulmonary involvement; endocrinology if pituitary involvement; labs per monitoring schedule; MRI per protocol"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "New or worsening neurological symptoms (vision loss, weakness, seizures); infection on immunosuppression; suspected relapse; uncontrolled diabetes insipidus; severe steroid side effects"
+    }
+  ]
+}

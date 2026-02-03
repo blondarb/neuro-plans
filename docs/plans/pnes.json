@@ -1,0 +1,1325 @@
+{
+  "id": "pnes",
+  "title": "Psychogenic Non-Epileptic Spells (PNES)",
+  "version": "1.1",
+  "icd10": [
+    "** F44.5 (Conversion disorder with seizures or convulsions)"
+  ],
+  "scope": "** Diagnosis, acute management, and long-term treatment of psychogenic non-epileptic spells (PNES). Covers the diagnostic workup including video-EEG confirmation, semiology features distinguishing PNES from epileptic seizures, diagnosis delivery as a therapeutic intervention, psychotherapy (CBT as evidence-based treatment), management of psychiatric comorbidities (PTSD, depression, anxiety), and anti-seizure medication taper. Addresses the ~10% of PNES patients with comorbid epilepsy. Settings: ED (acute event management), HOSP (video-EEG monitoring and diagnosis), OPD (long-term therapy and follow-up). ICU is generally NOT applicable for PNES. For epileptic seizures, see \"New Onset Seizure\" and \"Status Epilepticus\" templates. For the broader category of functional neurological disorder, see \"FND\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; rule out infection or anemia as contributor to altered consciousness",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic encephalopathy screen; electrolyte abnormalities can provoke both epileptic and non-epileptic events",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemia as event mimic; altered consciousness differential",
+          "target": "Normal (70-100 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction contributing to anxiety, mood disturbance, or tremor",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "UTI as contributor to altered mental status; drug screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prolactin (15-20 min post-event) (CPT 84146)",
+          "rationale": "Elevated >2x baseline supports epileptic seizure; NORMAL post-event supports PNES diagnosis; must be drawn within 10-20 min of event onset",
+          "target": "Normal in PNES (elevated >2x baseline suggests epileptic seizure)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Substance intoxication/withdrawal as event precipitant; establish baseline for psychiatric treatment",
+          "target": "Negative (document for differential)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory screen if autoimmune etiology suspected",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory screen if autoimmune or infectious etiology suspected",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency contributing to neuropsychiatric symptoms",
+          "target": "Normal (>300 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetic neuropathy or metabolic contributor; baseline for psychiatric medication management",
+          "target": "Normal (<5.7%)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum anti-seizure medication levels (CPT 80184/80185/80177)",
+          "rationale": "If patient on ASMs, verify compliance and levels before diagnosing \"breakthrough seizures\" as PNES",
+          "target": "Therapeutic (varies by drug)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Autoimmune encephalitis antibody panel (serum and CSF)",
+          "rationale": "If acute onset with psychiatric features, movement disorder, or cognitive decline suggestive of anti-NMDAR encephalitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "rationale": "If atypical features or suspicion for paraneoplastic neurological syndrome",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "Adrenal insufficiency presenting as recurrent syncope-like episodes",
+          "target": "Normal (6-23 mcg/dL AM)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "ED triage for first-time event or atypical features",
+          "target": "Normal; rules out hemorrhage, mass, or acute structural lesion",
+          "contraindications": "None significant",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Routine EEG (CPT 95816)",
+          "timing": "Baseline interictal recording; screens for epileptiform abnormalities",
+          "target": "Normal interictal EEG supports PNES (but does NOT exclude comorbid epilepsy)",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Video-EEG monitoring (prolonged) (CPT 95711-95720)",
+          "timing": "GOLD STANDARD for PNES diagnosis; capture habitual event with simultaneous EEG showing no epileptiform correlate",
+          "target": "Normal EEG during clinically typical event = definitive PNES diagnosis (ILAE diagnostic certainty level: \"documented\")",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Rule out structural lesion; required to exclude epileptogenic pathology, especially if comorbid epilepsy suspected",
+          "target": "Normal (no epileptogenic lesion)",
+          "contraindications": "Standard MRI contraindications (pacemaker, metallic implants)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Ambulatory EEG (24-72 hours) (CPT 95711)",
+          "timing": "If events too infrequent for inpatient vEEG; outpatient alternative",
+          "target": "Capture event with no EEG correlate",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain with epilepsy protocol (CPT 70553)",
+          "timing": "If comorbid epilepsy suspected (thin cuts through hippocampi, 3T preferred)",
+          "target": "Normal or identifies epileptogenic lesion in dual-diagnosis patients",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ECG/Holter monitor (CPT 93000/93224)",
+          "timing": "If syncope in differential; arrhythmia as event mimic",
+          "target": "Normal",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tilt table test (CPT 95921)",
+          "timing": "If vasovagal syncope suspected as alternative or comorbid diagnosis",
+          "target": "Normal or positive (identifies syncope component)",
+          "contraindications": "Severe aortic stenosis; recent MI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "PET-CT brain (CPT 78816)",
+          "timing": "If epilepsy cannot be excluded and MRI is normal; identifies hypometabolic epileptogenic focus",
+          "target": "Normal in PNES; focal hypometabolism in epilepsy",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "SPECT ictal/interictal (CPT 78607)",
+          "timing": "If surgical epilepsy evaluation warranted for comorbid epilepsy",
+          "target": "Normal in PNES; focal hyperperfusion ictally in epilepsy",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132)",
+          "timing": "If functional cognitive symptoms present or baseline cognitive assessment needed",
+          "target": "May show inconsistent effort patterns; rules out neurodegenerative process",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Event Management in ED)": [
+        {
+          "item": "Verbal reassurance and grounding techniques (first-line)",
+          "route": "-",
+          "indication": "Active PNES event; first-line acute management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Verbal reassurance and grounding techniques (first-line) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Use calm, reassuring voice; say \"You are safe, I am here to help you\"; guide grounding (name 5 things you see, 4 you hear, 3 you touch); do NOT restrain, force oral airway, or attempt IV access during event",
+            "orderSentence": "Verbal reassurance and grounding techniques (first-line) N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Event duration; response to verbal cues; vital signs; document semiology features",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Withhold IV benzodiazepines",
+          "route": "-",
+          "indication": "Do NOT administer benzodiazepines for confirmed or suspected PNES; benzodiazepines cause respiratory depression without benefit; leading cause of iatrogenic intubation in PNES",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Withhold IV benzodiazepines N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Withhold lorazepam, midazolam, diazepam; if epileptic seizure cannot be excluded, treat per status epilepticus protocol while awaiting clarification",
+            "orderSentence": "Withhold IV benzodiazepines N/A -"
+          },
+          "contraindications": "If epileptic seizure cannot be excluded, treat as epileptic until proven otherwise",
+          "monitoring": "Respiratory status; level of consciousness; document clinical features to aid differentiation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Withhold IV anti-seizure medications",
+          "route": "-",
+          "indication": "Do NOT load IV phenytoin, levetiracetam, or valproate for confirmed or suspected PNES; ineffective and delays correct diagnosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Withhold IV anti-seizure medications N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Withhold IV ASM loading; if comorbid epilepsy is established and epileptic seizure possible, continue home ASMs",
+            "orderSentence": "Withhold IV anti-seizure medications N/A -"
+          },
+          "contraindications": "Comorbid epilepsy with possible epileptic breakthrough",
+          "monitoring": "Document event semiology; EEG if available",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Nasal ammonia capsule (smelling salts)",
+          "route": "INH",
+          "indication": "Functional unresponsiveness; aids differentiation from epileptic postictal state",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 capsule",
+                "orderSentence": "Nasal ammonia capsule (smelling salts) 1 capsule INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "Break capsule 6 inches from nose; grimace or withdrawal response confirms awareness and supports functional diagnosis",
+            "orderSentence": "Nasal ammonia capsule (smelling salts) 1 capsule INH"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Response to stimulation; document findings",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Supportive safety measures",
+          "route": "-",
+          "indication": "Injury prevention during active PNES event",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Supportive safety measures N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Place patient in safe position; pad side rails if in bed; remove nearby sharp objects; do NOT insert bite block or tongue blade; position on side if secretions present",
+            "orderSentence": "Supportive safety measures N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Injury check post-event; vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Diagnosis Delivery (\"The Name\")": [
+        {
+          "item": "Structured diagnosis delivery session",
+          "route": "-",
+          "indication": "All PNES patients after diagnostic confirmation; the single most important therapeutic intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Structured diagnosis delivery session N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Explain: \"You have a condition called functional seizures (or non-epileptic events). These are REAL events, not fabricated. Your brain is sending the wrong signals, like a software glitch rather than hardware damage. The good news is this is treatable.\" Show the patient their vEEG results (normal EEG during event). Use the term \"functional seizures\" rather than \"psychogenic\" if patient prefers. Validate the reality of symptoms. Express diagnostic confidence. Emphasize treatability. Provide neurosymptoms.org",
+            "orderSentence": "Structured diagnosis delivery session N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient understanding and acceptance; emotional response; therapeutic alliance; repeat key messages across multiple encounters if needed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Psychotherapy (Primary Treatment)": [
+        {
+          "item": "Cognitive Behavioral Therapy -- PNES-specific (CBT-PNES)",
+          "route": "-",
+          "indication": "All PNES patients; strongest evidence base (CODES trial); addresses illness beliefs, avoidance, seizure-related cognitions, and perpetuating factors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12-16 sessions",
+                "orderSentence": "Cognitive Behavioral Therapy -- PNES-specific (CBT-PNES) 12-16 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Weekly 50-60 min sessions; PNES-specific CBT model per Goldstein et al. (CODES trial); includes psychoeducation, seizure control techniques, cognitive restructuring of illness beliefs, graded behavioral activation, addressing avoidance, trauma processing if indicated; booster sessions at 3 and 6 months",
+            "orderSentence": "Cognitive Behavioral Therapy -- PNES-specific (CBT-PNES) 12-16 sessions -"
+          },
+          "contraindications": "Active psychosis; severe intellectual disability preventing engagement; active substance dependence (treat first)",
+          "monitoring": "Seizure/event frequency diary; PHQ-9; GAD-7; functional measures; treatment engagement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EMDR (Eye Movement Desensitization and Reprocessing)",
+          "route": "-",
+          "indication": "PNES with PTSD or significant trauma history (present in ~30-50% of patients)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "EMDR (Eye Movement Desensitization and Reprocessing) 8-12 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Standard EMDR protocol; 60-90 min sessions; process traumatic memories identified as precipitating or perpetuating PNES; may be combined with CBT",
+            "orderSentence": "EMDR (Eye Movement Desensitization and Reprocessing) 8-12 sessions -"
+          },
+          "contraindications": "Active psychosis; severe dissociative disorder (requires specialist modification); acute suicidality",
+          "monitoring": "PCL-5 (PTSD scale); event frequency; dissociation measures (DES); treatment engagement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychodynamic psychotherapy",
+          "route": "-",
+          "indication": "PNES with prominent interpersonal difficulties, attachment disturbance, or alexithymia (difficulty identifying emotions)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-12 months",
+                "orderSentence": "Psychodynamic psychotherapy 6-12 months -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Explore unconscious conflicts, emotional processing difficulties, and relational patterns contributing to PNES; helps patients connect emotional states to physical symptoms",
+            "orderSentence": "Psychodynamic psychotherapy 6-12 months -"
+          },
+          "contraindications": "Active psychosis; severe personality disorder (relative contraindication)",
+          "monitoring": "Event frequency; functional measures; therapeutic alliance assessment; emotional awareness",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mindfulness-Based Stress Reduction (MBSR)",
+          "route": "-",
+          "indication": "PNES with high anxiety, somatic hypervigilance, or as adjunct to CBT",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-week program",
+                "orderSentence": "Mindfulness-Based Stress Reduction (MBSR) 8-week program -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Standard 8-week MBSR program; weekly 2.5-hour sessions plus home practice; body scan modified to reduce somatic hypervigilance; focus on non-reactive awareness of body sensations",
+            "orderSentence": "Mindfulness-Based Stress Reduction (MBSR) 8-week program -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "GAD-7; mindfulness measures (FFMQ); event frequency; patient-reported stress",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Group psychoeducation",
+          "route": "-",
+          "indication": "All PNES patients; normalizes experience, reduces isolation, provides peer support",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-8 sessions",
+                "orderSentence": "Group psychoeducation 6-8 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Structured group program (6-10 participants); covers PNES education, coping strategies, trigger identification, self-management skills, grounding techniques, relapse prevention",
+            "orderSentence": "Group psychoeducation 6-8 sessions -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Attendance; knowledge assessment; patient satisfaction; event frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Pharmacologic Management of Psychiatric Comorbidities": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Comorbid major depression (present in ~50-85% of PNES patients); comorbid anxiety; PTSD (first-line for all three)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; titrate by 50 mg q2-4wk; max 200 mg/day; takes 4-6 weeks for full effect",
+            "orderSentence": "Sertraline 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs (14-day washout); QTc prolongation at high doses",
+          "monitoring": "Suicidality monitoring (first 8 weeks); serotonin syndrome symptoms; QTc if risk factors; sexual side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Comorbid generalized anxiety disorder; depression; alternative to sertraline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Escitalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; may increase to 20 mg after 4 weeks; max 20 mg/day",
+            "orderSentence": "Escitalopram 10 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation; congenital long QT syndrome",
+          "monitoring": "QTc monitoring if risk factors; serotonin syndrome; hyponatremia in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Comorbid depression with prominent anxiety; chronic pain comorbidity (dual SNRI benefit); alternative when SSRIs ineffective",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily x 1 week; titrate by 37.5-75 mg q1wk; max 225 mg/day; MUST taper to discontinue (severe discontinuation syndrome)",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs; narrow-angle glaucoma",
+          "monitoring": "BP (dose-dependent hypertension); HR; serotonin syndrome; discontinuation syndrome risk (taper over 2-4 weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Comorbid depression with chronic pain (common in PNES); fibromyalgia comorbidity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Hepatic impairment (CrCl <30); concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "LFTs; BP; serotonin syndrome; discontinuation syndrome (taper slowly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prazosin",
+          "route": "PO",
+          "indication": "PTSD-related nightmares and sleep disruption (common in PNES patients with trauma history)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Prazosin 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg PO qHS; titrate by 1-2 mg q1wk; max 15 mg qHS; monitor for first-dose hypotension (give first dose at bedtime)",
+            "orderSentence": "Prazosin 1 mg PO"
+          },
+          "contraindications": "Hypotension; concurrent PDE5 inhibitors",
+          "monitoring": "Orthostatic BP (especially first dose); dizziness; syncope; nightmare frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxyzine",
+          "route": "PO",
+          "indication": "Acute anxiety; situational anxiety in PNES patients; avoids benzodiazepine use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Hydroxyzine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose; non-addictive alternative to benzodiazepines",
+            "orderSentence": "Hydroxyzine 25 mg PO"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment",
+          "monitoring": "QTc; sedation level; anticholinergic effects",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO",
+          "indication": "Comorbid generalized anxiety disorder; non-addictive anxiolytic; avoids benzodiazepine dependence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Buspirone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; titrate by 5 mg/day q2-3d; max 60 mg/day; takes 2-4 weeks for full effect (NOT a PRN medication)",
+            "orderSentence": "Buspirone 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Serotonin syndrome if combined with SSRIs/SNRIs; dizziness; headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Comorbid chronic pain (headache, fibromyalgia); insomnia; migraine prophylaxis in PNES patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia; lower doses effective for pain than depression",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden)",
+          "monitoring": "ECG if dose >50 mg; anticholinergic effects (dry mouth, constipation, urinary retention); sedation; orthostatic hypotension; weight gain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia (common PNES comorbidity); adjunct for depression; avoids benzodiazepine hypnotics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-100 mg PO qHS for insomnia; max 150 mg qHS",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Orthostatic hypotension; priapism (rare -- counsel male patients); sedation; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia; sleep-wake dysregulation (common in PNES/trauma)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-10 mg PO qHS; take 30-60 min before bedtime; max 10 mg",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality; daytime drowsiness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Anti-Seizure Medication Taper": [
+        {
+          "item": "Gradual ASM taper -- levetiracetam",
+          "route": "PO",
+          "indication": "Confirmed PNES on levetiracetam without comorbid epilepsy; taper AFTER definitive vEEG diagnosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg reduction",
+                "orderSentence": "Gradual ASM taper -- levetiracetam 250-500 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 250-500 mg every 2 weeks; typical taper from 1000 mg BID over 8-12 weeks; monitor for anxiety/mood changes (levetiracetam withdrawal can worsen mood)",
+            "orderSentence": "Gradual ASM taper -- levetiracetam 250-500 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy confirmed or suspected (~10% dual diagnosis); do NOT taper without epileptologist input in dual-diagnosis patients",
+          "monitoring": "Event frequency diary; mood (levetiracetam withdrawal may improve mood or cause rebound anxiety); verify no epileptiform events during taper",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual ASM taper -- lamotrigine",
+          "route": "PO",
+          "indication": "Confirmed PNES on lamotrigine without comorbid epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg reduction",
+                "orderSentence": "Gradual ASM taper -- lamotrigine 25-50 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 25-50 mg every 2 weeks; slower taper than other ASMs (lamotrigine has mood-stabilizing properties -- monitor for mood destabilization)",
+            "orderSentence": "Gradual ASM taper -- lamotrigine 25-50 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy; bipolar disorder (lamotrigine may be serving as mood stabilizer)",
+          "monitoring": "Event frequency; mood stability (PHQ-9, mood diary); rash (rare during taper but document)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual ASM taper -- valproic acid",
+          "route": "PO",
+          "indication": "Confirmed PNES on valproic acid without comorbid epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg reduction",
+                "orderSentence": "Gradual ASM taper -- valproic acid 250 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 250 mg every 2 weeks; monitor for mood changes (valproate has mood-stabilizing properties); check levels during taper if comorbid epilepsy cannot be fully excluded",
+            "orderSentence": "Gradual ASM taper -- valproic acid 250 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy; bipolar disorder (valproate may be serving as mood stabilizer)",
+          "monitoring": "Event frequency; mood; weight (may lose weight with taper); LFTs; tremor (may improve with taper)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual ASM taper -- carbamazepine/oxcarbazepine",
+          "route": "PO",
+          "indication": "Confirmed PNES on carbamazepine or oxcarbazepine without comorbid epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-200 mg reduction",
+                "orderSentence": "Gradual ASM taper -- carbamazepine/oxcarbazepine 100-200 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 100-200 mg every 2 weeks; carbamazepine induces its own metabolism (levels may shift during taper); complete taper over 8-12 weeks",
+            "orderSentence": "Gradual ASM taper -- carbamazepine/oxcarbazepine 100-200 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy; trigeminal neuralgia (carbamazepine may be treating pain)",
+          "monitoring": "Event frequency; mood; sodium level (hyponatremia more common with oxcarbazepine -- may resolve with taper); CBC",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual ASM taper -- topiramate",
+          "route": "PO",
+          "indication": "Confirmed PNES on topiramate without comorbid epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg reduction",
+                "orderSentence": "Gradual ASM taper -- topiramate 25-50 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 25-50 mg every 1-2 weeks; cognitive side effects may improve with taper; monitor for weight changes",
+            "orderSentence": "Gradual ASM taper -- topiramate 25-50 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy; migraine prophylaxis (topiramate may be treating migraines -- assess before taper)",
+          "monitoring": "Event frequency; cognitive function (may improve); weight; migraine frequency if history of headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual ASM taper -- phenobarbital",
+          "route": "PO",
+          "indication": "Confirmed PNES on phenobarbital without comorbid epilepsy; REQUIRES SLOW TAPER (barbiturate withdrawal risk)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 mg reduction",
+                "orderSentence": "Gradual ASM taper -- phenobarbital 15-30 mg reduction PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper by 15-30 mg every 2-4 weeks; VERY SLOW taper over 3-6 months; barbiturate withdrawal can cause TRUE seizures even in non-epileptic patients; inpatient monitoring may be needed for high doses",
+            "orderSentence": "Gradual ASM taper -- phenobarbital 15-30 mg reduction PO"
+          },
+          "contraindications": "Comorbid epilepsy; barbiturate dependence (consider inpatient taper for high doses >120 mg/day)",
+          "monitoring": "Event frequency; withdrawal symptoms (anxiety, insomnia, tremor, TRUE seizures); vital signs during taper; may need phenobarbital levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (epileptologist preferred) for vEEG confirmation of diagnosis and differentiation from epileptic seizures",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epilepsy monitoring unit (EMU) admission for prolonged video-EEG to capture habitual events and establish definitive diagnosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry with PNES/FND experience for comorbidity assessment (depression, PTSD, anxiety, personality disorder) and medication management",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical psychology (CBT-PNES trained) for evidence-based psychotherapy as primary treatment modality",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychiatry for complex cases with overlapping functional and organic symptoms or diagnostic uncertainty",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability navigation, vocational rehabilitation, family education, and community resource coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for deconditioning and functional motor symptoms that may coexist with PNES",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for return-to-work planning and ADL adaptation during treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primary care follow-up for chronic disease management, medication reconciliation, and psychiatric medication monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Your events are REAL -- they are caused by your brain sending the wrong signals, like a software problem rather than structural brain damage, and they are NOT fabricated or imagined",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "The good news is that functional seizures are TREATABLE -- many patients improve significantly or become event-free with the right therapy",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Visit www.neurosymptoms.org for reliable, expert-written information about functional seizures (recommended by leading neurologists worldwide)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Anti-seizure medications do NOT work for functional seizures -- your neurologist will work with you to safely taper these medications if you are taking them",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Do NOT take extra doses of anti-seizure medication during or after an event -- this will NOT help and may cause side effects",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "During an event, use grounding techniques: focus on your surroundings, name objects you see, feel textures in your hands, listen to sounds around you -- these techniques can help shorten events",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Family members and caregivers: during an event, stay calm, speak reassuringly, do NOT restrain or force anything into the mouth, time the event, and do NOT call 911 unless there is injury or the event is clearly different from usual",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Keep a seizure diary recording event frequency, duration, possible triggers (stress, sleep deprivation, conflict), and context to help identify patterns",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Attend ALL recommended therapy appointments (psychology and physiotherapy are the primary treatments -- more important than any medication)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Return to the ED only for events that are clearly DIFFERENT from your usual events, for injury during an event, or for new symptoms such as sudden severe headache, fever, or one-sided weakness",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30 minutes, 5 days per week) to reduce stress, improve mood, and support overall brain health",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Sleep hygiene: consistent bed and wake times, 7-9 hours nightly, avoid screens 1 hour before bed, limit caffeine after noon (sleep deprivation is a common PNES trigger)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management: identify and address major stressors; use breathing exercises, progressive muscle relaxation, or mindfulness daily",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid alcohol and recreational drugs (lower event threshold, worsen mood and anxiety, interfere with therapy)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Avoid benzodiazepines for anxiety (not helpful for PNES, can worsen dissociation, and carry addiction risk) -- discuss non-benzodiazepine alternatives with your provider",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Pacing: balance activity and rest throughout the day to avoid the \"boom-bust\" cycle (overexertion on good days leads to increased events on subsequent days)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Maintain social connections and meaningful activities to prevent isolation, which worsens PNES outcomes",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Driving restrictions: follow state-specific regulations for seizure-like events; most states require a seizure-free interval (varies by state) -- discuss with your neurologist",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Epileptic seizures (generalized tonic-clonic)",
+      "features": "Stereotyped semiology; eyes OPEN (~95%); postictal confusion (>5 min); tonic-clonic evolution; tongue lateral bite; incontinence; duration typically <3 min",
+      "tests": "Video-EEG with event capture (gold standard); prolactin level (elevated >2x post-GTC); MRI brain"
+    },
+    {
+      "diagnosis": "Epileptic seizures (frontal lobe)",
+      "features": "Bizarre motor automatisms; brief (<30 sec); stereotyped; nocturnal predominance; may not show surface EEG changes",
+      "tests": "Video-EEG (may need intracranial monitoring); MRI brain with epilepsy protocol; seizure semiology analysis"
+    },
+    {
+      "diagnosis": "Vasovagal syncope",
+      "features": "Triggered by prolonged standing, pain, or emotional stress; prodrome (lightheadedness, diaphoresis, tunnel vision); brief loss of consciousness; rapid recovery; no postictal confusion",
+      "tests": "Tilt table test; ECG; history and trigger identification"
+    },
+    {
+      "diagnosis": "Cardiac arrhythmia (syncope)",
+      "features": "Sudden onset without prodrome; associated with palpitations; may occur during exertion; family history of sudden death",
+      "tests": "ECG; Holter/event monitor; echocardiogram; cardiac electrophysiology study"
+    },
+    {
+      "diagnosis": "Panic attacks",
+      "features": "Sudden onset fear; palpitations; chest pain; dyspnea; paresthesias; derealization; duration 10-30 min; preserved consciousness",
+      "tests": "Clinical history; GAD-7/PHQ-9; panic typically does not involve rhythmic movements or unresponsiveness"
+    },
+    {
+      "diagnosis": "Transient ischemic attack",
+      "features": "Sudden focal neurological deficit; duration <24 hours; vascular risk factors; arterial territory distribution",
+      "tests": "MRI brain (DWI); CT angiography; vascular risk factor assessment"
+    },
+    {
+      "diagnosis": "Paroxysmal movement disorders (dystonia, dyskinesia)",
+      "features": "Brief, stereotyped movement episodes; may be triggered by sudden movement (kinesigenic); genetic basis; responsive to carbamazepine (kinesigenic type)",
+      "tests": "Genetic testing (PRRT2 for PKD); clinical semiology; family history; treatment trial"
+    },
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Visual or sensory aura with gradual spread; followed by headache; duration 5-60 min for aura; episodic",
+      "tests": "Clinical history; headache diary; MRI brain to rule out structural lesion"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Diaphoresis; tremor; confusion; pallor; triggered by fasting or insulin administration; rapid resolution with glucose",
+      "tests": "Blood glucose during event; continuous glucose monitoring; HbA1c"
+    },
+    {
+      "diagnosis": "Sleep disorders (narcolepsy, cataplexy)",
+      "features": "Excessive daytime sleepiness; cataplexy triggered by emotion (laughter, surprise); sleep paralysis; hypnagogic hallucinations",
+      "tests": "Polysomnography; MSLT (mean sleep latency test); CSF hypocretin level"
+    },
+    {
+      "diagnosis": "Factitious disorder / malingering",
+      "features": "Intentional symptom production; external motivation in malingering, sick role in factitious; VERY RARE -- do NOT assume",
+      "tests": "No reliable test; clinical judgment; inconsistency with incentives; PNES is NOT malingering or factitious"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Video-EEG with event capture is the gold standard for PNES diagnosis",
+      "evidenceLevel": "Class II",
+      "source": "[LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52](https://pubmed.ncbi.nlm.nih.gov/23458467/)"
+    },
+    {
+      "recommendation": "CBT is effective for reducing PNES event frequency (CODES trial -- largest RCT)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/)"
+    },
+    {
+      "recommendation": "CBT-PNES long-term outcomes at 12-month follow-up",
+      "evidenceLevel": "Class I (RCT follow-up)",
+      "source": "[Goldstein LH et al. Neurology 2022;98:e1015-e1025](https://pubmed.ncbi.nlm.nih.gov/35190474/)"
+    },
+    {
+      "recommendation": "Diagnosis delivery communication is the single most important therapeutic intervention",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Stone J. Practical Neurology 2016;16:7-17](https://pubmed.ncbi.nlm.nih.gov/26715324/)"
+    },
+    {
+      "recommendation": "Comorbid epilepsy in ~10% of PNES patients (dual diagnosis prevalence)",
+      "evidenceLevel": "Class II",
+      "source": "[Benbadis SR et al. Neurology 2001;57:915-917](https://pubmed.ncbi.nlm.nih.gov/11552032/)"
+    },
+    {
+      "recommendation": "ILAE diagnostic certainty levels for PNES (Possible/Probable/Established/Documented)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[LaFrance WC et al. Epileptic Disord 2013;15:257-266](https://pubmed.ncbi.nlm.nih.gov/23906571/)"
+    },
+    {
+      "recommendation": "Prolactin level utility: elevated post-GTC but not post-PNES (~60% sensitivity)",
+      "evidenceLevel": "Class II",
+      "source": "[Chen DK et al. Epilepsy Behav 2005;6:435-438](https://pubmed.ncbi.nlm.nih.gov/15820355/)"
+    },
+    {
+      "recommendation": "Semiology features distinguishing PNES from epileptic seizures (eyes closed, duration, etc.)",
+      "evidenceLevel": "Class II",
+      "source": "[Avbersek A, Sisodiya S. Seizure 2010;19:5-9](https://pubmed.ncbi.nlm.nih.gov/19942466/)"
+    },
+    {
+      "recommendation": "PNES epidemiology: 2-33 per 100,000; 20-30% of epilepsy monitoring unit referrals",
+      "evidenceLevel": "Class III",
+      "source": "[Benbadis SR, Allen Hauser W. Neurology 2000;55:915-917](https://pubmed.ncbi.nlm.nih.gov/11061244/)"
+    },
+    {
+      "recommendation": "Benzodiazepines are ineffective and harmful for PNES events; cause iatrogenic respiratory depression",
+      "evidenceLevel": "Class III",
+      "source": "[Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12609230/)"
+    },
+    {
+      "recommendation": "Specialized physiotherapy effective for functional neurological disorder (including PNES with motor symptoms)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/)"
+    },
+    {
+      "recommendation": "Anti-seizure medication taper in confirmed PNES: safe and recommended",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[LaFrance WC et al. Neurology 2022;98:186-196](https://pubmed.ncbi.nlm.nih.gov/34996879/)"
+    },
+    {
+      "recommendation": "PTSD comorbidity in 30-50% of PNES patients; trauma history as risk factor",
+      "evidenceLevel": "Class II",
+      "source": "[Fiszman A et al. J Neurol Neurosurg Psychiatry 2004;75:1009-1012](https://pubmed.ncbi.nlm.nih.gov/15201360/)"
+    },
+    {
+      "recommendation": "Psychiatric comorbidity (depression, anxiety) in >80% of PNES patients",
+      "evidenceLevel": "Class II",
+      "source": "[Bowman ES, Markand ON. Epilepsia 1996;37:667-674](https://pubmed.ncbi.nlm.nih.gov/8681900/)"
+    },
+    {
+      "recommendation": "Patient preference for term \"functional seizures\" over \"psychogenic\"",
+      "evidenceLevel": "Class III",
+      "source": "[Stone J et al. Epilepsy Behav 2010;17:354-357](https://pubmed.ncbi.nlm.nih.gov/20071245/)"
+    },
+    {
+      "recommendation": "neurosymptoms.org: validated patient education resource for FND/PNES",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Stone J. Practical Neurology 2014;14:368-379](https://pubmed.ncbi.nlm.nih.gov/24778269/)"
+    },
+    {
+      "recommendation": "DSM-5 diagnostic criteria for conversion disorder with seizures (F44.5)",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm)"
+    },
+    {
+      "recommendation": "NES Treatment Guidelines: comprehensive management recommendations",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[LaFrance WC et al. Epilepsia 2013;54 Suppl 1:53-67](https://pubmed.ncbi.nlm.nih.gov/23458468/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Event/seizure frequency (patient diary)",
+      "frequency": "Daily (patient-reported); reviewed each visit",
+      "action": "Reassess treatment plan; intensify psychotherapy; address perpetuating factors; review triggers",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Event duration and character",
+      "frequency": "Each event (patient/family-reported)",
+      "action": "If character changes (new features), reassess for comorbid epilepsy or new diagnosis",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PHQ-9 (depression screening)",
+      "frequency": "Each visit (baseline, then q4-8 weeks)",
+      "action": "Adjust antidepressant; intensify psychological treatment; psychiatric referral for refractory depression",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "GAD-7 (anxiety screening)",
+      "frequency": "Each visit (baseline, then q4-8 weeks)",
+      "action": "Adjust anxiolytic; psychological treatment; consider SNRI or buspirone if not responding",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PCL-5 (PTSD Checklist)",
+      "frequency": "Baseline and q8-12 weeks if PTSD comorbidity",
+      "action": "Adjust trauma therapy; consider EMDR; prazosin for nightmares; psychiatric referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Treatment engagement (therapy attendance)",
+      "frequency": "Each visit",
+      "action": "Explore barriers (transportation, financial, stigma); motivational interviewing; modify modality if needed",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "ASM taper progress",
+      "frequency": "q2-4 weeks during taper",
+      "action": "If new event types appear during taper, obtain EEG; consider dual diagnosis; slow or pause taper",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (work, school, ADLs)",
+      "frequency": "q1-3 months",
+      "action": "Vocational rehabilitation; occupational therapy; graded return plan; address disability perpetuation",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Medication side effects",
+      "frequency": "Each visit",
+      "action": "Dose adjustment; medication switch; reassess risk-benefit",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Quality of life (SF-36 or QOLIE-31)",
+      "frequency": "Baseline and q3-6 months",
+      "action": "Reassess treatment components; multidisciplinary team review",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home from ED**",
+      "criteria": "Event resolved; patient hemodynamically stable; no injury requiring treatment; diagnosis communicated (or follow-up arranged for formal diagnosis delivery); outpatient neurology follow-up arranged within 2-4 weeks; patient educated that these events are not life-threatening; family educated on event management (do not call 911 for typical events unless injury or clearly different from usual)"
+    },
+    {
+      "disposition": "**Admit to floor (general neurology or EMU)**",
+      "criteria": "Video-EEG monitoring needed for diagnostic confirmation; diagnostic uncertainty requiring observation; recurrent ED presentations for events requiring care coordination and definitive diagnosis; concurrent ASM taper requiring monitoring (phenobarbital, high-dose benzodiazepines)"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Generally NOT indicated for PNES; consider ONLY if: iatrogenic complication from inappropriate treatment (respiratory depression from benzodiazepines); diagnostic uncertainty with ongoing concern for status epilepticus requiring continuous EEG"
+    },
+    {
+      "disposition": "**Psychiatric admission**",
+      "criteria": "Active suicidality; severe psychiatric decompensation; psychosis; inability to maintain safety in outpatient setting"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Video-EEG monitoring not available at current facility; epilepsy monitoring unit referral; PNES-specialized treatment program not available locally"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "ALL patients: neurology follow-up within 2-4 weeks for diagnosis delivery and treatment planning; psychology referral within 1-2 weeks; psychiatry for comorbidity management within 1 month; PCP within 1-2 weeks for medication reconciliation"
+    }
+  ]
+}

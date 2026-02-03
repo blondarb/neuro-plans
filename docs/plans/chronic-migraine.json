@@ -80,7 +80,7 @@
           "ICU": "-"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
           "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "rationale": "If inflammatory or secondary cause suspected; age >50 with new headache",
@@ -296,7 +296,7 @@
           "ICU": "-"
         }
       ],
-      "Rare/Specialized": [
+      "Specialized": [
         {
           "item": "MRI cervical spine (CPT 72141)",
           "timing": "Cervicogenic component suspected; occipital neuralgia",
@@ -1129,6 +1129,100 @@
           "OPD": "ROUTINE",
           "ICU": "-"
         }
+      ],
+      "Preventive Therapies - Nutraceuticals and Supplements": [
+        {
+          "item": "Magnesium oxide",
+          "route": "PO",
+          "indication": "Adjunctive preventive; Level B evidence; low side effect profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Magnesium oxide 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO daily; use chelated form (glycinate or citrate) if GI intolerance",
+            "orderSentence": "Magnesium oxide 400-600 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Renal failure (CrCl <30)",
+          "monitoring": "Diarrhea (dose-limiting); check serum Mg if symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Riboflavin (Vitamin B2)",
+          "route": "PO",
+          "indication": "Adjunctive preventive; Level B evidence; nutraceutical",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Riboflavin (Vitamin B2) 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO daily; may take 3 months for full effect",
+            "orderSentence": "Riboflavin (Vitamin B2) 400 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "None significant",
+          "monitoring": "Bright yellow urine (benign); minimal side effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Coenzyme Q10 (CoQ10)",
+          "route": "PO",
+          "indication": "Adjunctive preventive; Level C evidence; nutraceutical",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Coenzyme Q10 (CoQ10) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO TID (300 mg/day total); may take 3 months for full effect",
+            "orderSentence": "Coenzyme Q10 (CoQ10) 100 mg PO"
+          },
+          "pretreatment": "None",
+          "contraindications": "Caution with warfarin (may reduce INR)",
+          "monitoring": "GI upset; monitor INR if on warfarin",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Butterbur (Petasites)",
+          "route": "PO",
+          "indication": "Preventive; Level A evidence (AAN recommendation withdrawn due to hepatotoxicity concerns - use with caution)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Butterbur (Petasites) 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg PO BID of PA-free extract only; NOT recommended without PA-free verification",
+            "orderSentence": "Butterbur (Petasites) 75 mg PO"
+          },
+          "pretreatment": "Verify PA-free (pyrrolizidine alkaloid-free) extract",
+          "contraindications": "Hepatotoxicity risk with non-PA-free products; ragweed allergy; pregnancy",
+          "monitoring": "LFTs if prolonged use; USE WITH CAUTION - AAN withdrew recommendation due to safety concerns",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
       ]
     },
     "Other Recommendations": {
@@ -1206,7 +1300,7 @@
           "ICU": "-"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "Chronic migraine is a neurological condition that requires long-term management",
           "ED": "ROUTINE",
@@ -1268,7 +1362,7 @@
           "OPD": "ROUTINE"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Lifestyle & Non-Pharmacologic Interventions": [
         {
           "item": "Regular sleep schedule (7-8 hours); avoid oversleeping and sleep deprivation",
           "ED": "-",

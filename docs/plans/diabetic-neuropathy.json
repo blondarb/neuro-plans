@@ -8,15 +8,17 @@
     "E11.41 (Type 2 diabetes with diabetic mononeuropathy)",
     "E11.42 (Type 2 diabetes with diabetic polyneuropathy)",
     "E10.40-E10.42 (Type 1 equivalents)",
-    "G63.2 (Diabetic polyneuropathy)"
+    "G63.2 (Diabetic polyneuropathy)",
+    "G62.9 (Polyneuropathy",
+    "unspecified)"
   ],
   "scope": "** Evaluation and management of diabetic neuropathy in adults including distal symmetric polyneuropathy (most common), painful diabetic neuropathy, diabetic autonomic neuropathy, and focal/multifocal neuropathies. Applies to ED, hospital, and outpatient settings.",
   "notes": [],
   "sections": {
     "Laboratory Workup": {
-      "Essential/Core Labs": [
+      "Core Labs (All Patients)": [
         {
-          "item": "HbA1c",
+          "item": "HbA1c (CPT 83036)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -25,7 +27,7 @@
           "target": "<7% (individualized)"
         },
         {
-          "item": "Fasting glucose",
+          "item": "Fasting glucose (CPT 82947)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -34,7 +36,7 @@
           "target": "80-130 mg/dL"
         },
         {
-          "item": "BMP (electrolytes, creatinine, BUN)",
+          "item": "BMP (CPT 80048)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -43,7 +45,7 @@
           "target": "Normal"
         },
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "ROUTINE",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -52,7 +54,7 @@
           "target": "Normal"
         },
         {
-          "item": "Vitamin B12",
+          "item": "Vitamin B12 (CPT 82607)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -61,7 +63,7 @@
           "target": ">400 pg/mL"
         },
         {
-          "item": "Methylmalonic acid (MMA)",
+          "item": "Methylmalonic acid (MMA) (CPT 83921)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -70,7 +72,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -79,7 +81,7 @@
           "target": "Normal"
         },
         {
-          "item": "Lipid panel",
+          "item": "Lipid panel (CPT 80061)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -88,9 +90,9 @@
           "target": "LDL <100 (or <70 if ASCVD)"
         }
       ],
-      "Extended Workup": [
+      "Extended Labs (Atypical Presentations)": [
         {
-          "item": "SPEP/UPEP with immunofixation",
+          "item": "SPEP/UPEP with immunofixation (CPT 86334, 86335)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -108,7 +110,7 @@
           "target": "Normal ratio"
         },
         {
-          "item": "Liver function tests",
+          "item": "Liver function tests (CPT 80076)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -117,7 +119,7 @@
           "target": "Normal"
         },
         {
-          "item": "HIV",
+          "item": "HIV (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -126,7 +128,7 @@
           "target": "Negative"
         },
         {
-          "item": "RPR/VDRL",
+          "item": "RPR/VDRL (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -135,7 +137,7 @@
           "target": "Nonreactive"
         },
         {
-          "item": "ESR, CRP",
+          "item": "ESR (CPT 85652), CRP (CPT 86140)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "EXT",
@@ -144,7 +146,7 @@
           "target": "Normal"
         },
         {
-          "item": "ANA",
+          "item": "ANA (CPT 86235)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -153,7 +155,7 @@
           "target": "Negative"
         },
         {
-          "item": "Anti-GAD65, IA-2 antibodies",
+          "item": "Anti-GAD65, IA-2 antibodies (CPT 86235)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -162,9 +164,9 @@
           "target": "Document"
         }
       ],
-      "Rare/Specialized": [
+      "Specialized Labs (Diabetic Amyotrophy/Atypical)": [
         {
-          "item": "CSF analysis",
+          "item": "CSF analysis (CPT 89051, 84157, 82945)",
           "ED": "-",
           "HOSP": "EXT",
           "OPD": "EXT",
@@ -184,9 +186,9 @@
       ]
     },
     "Imaging & Studies": {
-      "Essential/First-line": [
+      "Electrodiagnostic Studies": [
         {
-          "item": "Nerve conduction studies (NCS)",
+          "item": "Nerve conduction studies (NCS) (CPT 95907-95913)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -196,7 +198,7 @@
           "contraindications": "Pacemaker (relative); anticoagulation (relative)"
         },
         {
-          "item": "Electromyography (EMG)",
+          "item": "Electromyography (EMG) (CPT 95886)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -216,9 +218,9 @@
           "contraindications": "None"
         }
       ],
-      "Extended": [
+      "Autonomic Testing": [
         {
-          "item": "Cardiovascular autonomic reflex tests",
+          "item": "Cardiovascular autonomic reflex tests (CPT 95924)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -228,7 +230,7 @@
           "contraindications": "Arrhythmias"
         },
         {
-          "item": "Tilt table test",
+          "item": "Tilt table test (CPT 95924)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -238,7 +240,7 @@
           "contraindications": "Severe coronary disease"
         },
         {
-          "item": "Sudomotor function (QSART)",
+          "item": "Sudomotor function (QSART) (CPT 95924)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "EXT",
@@ -258,9 +260,9 @@
           "contraindications": "None"
         }
       ],
-      "Rare/Specialized": [
+      "Small Fiber Neuropathy Assessment": [
         {
-          "item": "Skin punch biopsy (IENFD)",
+          "item": "Skin punch biopsy (IENFD) (CPT 11104)",
           "ED": "-",
           "HOSP": "-",
           "OPD": "ROUTINE",
@@ -278,6 +280,26 @@
           "timing": "Non-invasive small fiber assessment",
           "target": "Reduced corneal nerve fiber density",
           "contraindications": "None"
+        },
+        {
+          "item": "MRI lumbosacral plexus (CPT 72148)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Diabetic amyotrophy; asymmetric weakness",
+          "target": "Plexus/root enhancement in DLRPN",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "MRI spine (CPT 72141)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "R/o structural if myelopathy suspected",
+          "target": "R/o compression",
+          "contraindications": "Same"
         }
       ]
     },
@@ -641,6 +663,97 @@
           },
           "monitoring": "Anticholinergic effects"
         }
+      ],
+      "Diabetic Amyotrophy (DLRPN) Treatment": [
+        {
+          "item": "Glycemic control",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Optimize; avoid rapid correction",
+            "orderSentence": "Glycemic control - - - see dosing"
+          },
+          "contraindications": "Per diabetes management",
+          "monitoring": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Prevent contractures; strengthen",
+            "orderSentence": "Physical therapy - - - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management",
+          "route": "-",
+          "indication": "-",
+          "dosing": {
+            "instructions": "Per neuropathic pain algorithm",
+            "orderSentence": "Pain management - - - see dosing"
+          },
+          "contraindications": "Per agent",
+          "monitoring": "Per agent",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG (severe/refractory) (CPT 96365)",
+          "route": "PO",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (severe/refractory) (CPT 96365) 2 g/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 g/kg over 2-5 days; may repeat",
+            "orderSentence": "IVIG (severe/refractory) (CPT 96365) 2 g/kg PO"
+          },
+          "contraindications": "IgA deficiency",
+          "monitoring": "Renal function; infusion reactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylprednisolone (CPT 96374)",
+          "route": "IV",
+          "indication": "-",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g",
+                "orderSentence": "Methylprednisolone (CPT 96374) 1 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g IV daily × 3-5 days; taper (may use if IVIG unavailable)",
+            "orderSentence": "Methylprednisolone (CPT 96374) 1 g IV"
+          },
+          "contraindications": "Uncontrolled DM (relative)",
+          "monitoring": "Glucose; infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
       ]
     },
     "Other Recommendations": {
@@ -726,7 +839,7 @@
           "indication": "Diabetic foot ulcers"
         }
       ],
-      "Patient Instructions": [
+      "Foot Care & Ulcer Prevention (Critical)": [
         {
           "item": "Daily foot inspection (patient or caregiver)",
           "ED": "-",
@@ -776,7 +889,7 @@
           "OPD": "URGENT"
         }
       ],
-      "Lifestyle & Prevention": [
+      "Patient/Family Instructions": [
         {
           "item": "Neuropathy is common in diabetes; can be slowed with good control",
           "ED": "-",
@@ -817,6 +930,44 @@
           "item": "American Diabetes Association (diabetes.org) resources",
           "ED": "-",
           "HOSP": "-",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Comorbidity Management": [
+        {
+          "item": "Statin therapy for dyslipidemia (reduces neuropathy progression)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Blood pressure control <140/90 (or <130/80 if tolerated)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Alcohol moderation (<1 drink/day women, <2 men)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Weight management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "SGLT2 inhibitor or GLP-1 RA if ASCVD or CKD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
           "OPD": "ROUTINE"
         }
       ]

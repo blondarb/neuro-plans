@@ -1,0 +1,1468 @@
+{
+  "id": "viral-meningitis",
+  "title": "Viral Meningitis",
+  "version": "1.1",
+  "icd10": [
+    "** A87.9 (Viral meningitis",
+    "unspecified)",
+    "A87.0 (Enteroviral meningitis)",
+    "A87.1 (Adenoviral meningitis)",
+    "A87.2 (Lymphocytic choriomeningitis)",
+    "B00.3 (Herpesviral meningitis)",
+    "B02.1 (Zoster meningitis)",
+    "B26.1 (Mumps meningitis)"
+  ],
+  "scope": "** Diagnosis, supportive management, and follow-up of viral (aseptic) meningitis in adults. Covers empiric antibiotic and antiviral therapy until bacterial meningitis and HSV encephalitis are excluded, viral pathogen identification via CSF PCR and BioFire ME Panel, supportive care (IV fluids, analgesics, antiemetics), differentiation from bacterial meningitis, HIV testing, and discharge criteria. Excludes bacterial meningitis (separate template), HSV encephalitis (separate template), fungal meningitis, tuberculous meningitis, drug-induced aseptic meningitis, and neonatal/pediatric meningitis.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; leukocytosis may be mild or absent in viral meningitis; helps differentiate from bacterial (marked leukocytosis with left shift)",
+          "target": "Normal or mild leukocytosis; lymphocyte predominance favors viral"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function for medication dosing (acyclovir); electrolytes (SIADH risk); hepatic function baseline",
+          "target": "Normal; watch sodium for SIADH"
+        },
+        {
+          "item": "Blood cultures x2 (different sites) (CPT 87040)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "MUST be drawn BEFORE empiric antibiotics; exclude concurrent bacteremia; positive blood cultures argue against isolated viral meningitis",
+          "target": "No growth (expected in viral meningitis)"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Highly useful for distinguishing bacterial from viral meningitis; procalcitonin <0.5 ng/mL strongly argues against bacterial etiology (negative predictive value >95%)",
+          "target": "Low (<0.5 ng/mL favors viral; >2.0 ng/mL favors bacterial)"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Inflammatory marker; typically lower in viral than bacterial meningitis; helps monitor clinical course",
+          "target": "Normal to mildly elevated (markedly elevated suggests bacterial)"
+        },
+        {
+          "item": "Blood glucose (paired with CSF) (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Calculate CSF:serum glucose ratio; normal ratio (>0.6) expected in viral meningitis; low ratio (<0.4) suggests bacterial, TB, or fungal",
+          "target": "Pair with CSF glucose; CSF:serum ratio >0.6 expected"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT) (CPT 85610+85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Pre-LP coagulopathy screen; sepsis-associated DIC risk if bacterial meningitis not yet excluded",
+          "target": "Normal (coagulopathy argues against benign viral process)"
+        },
+        {
+          "item": "Lactate (serum) (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis screening; elevated serum lactate suggests systemic bacterial infection rather than viral meningitis",
+          "target": "<2 mmol/L (elevated suggests bacterial sepsis)"
+        },
+        {
+          "item": "Point-of-care glucose (CPT 82962)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rapid sepsis and hypoglycemia assessment",
+          "target": ">60 mg/dL"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "HIV 1/2 antigen/antibody (4th gen) (CPT 87389)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "ALL patients with viral meningitis should be tested for HIV; acute HIV seroconversion is an important cause of aseptic meningitis (present in 10-17% of acute HIV); missed HIV has major treatment implications",
+          "target": "Negative; if positive, obtain viral load and CD4 count"
+        },
+        {
+          "item": "HIV viral load (RNA PCR) (CPT 87536)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If acute HIV seroconversion suspected (high-risk exposure, rash, pharyngitis, lymphadenopathy); antibody test may be negative early",
+          "target": "Negative; if positive, confirms acute HIV infection"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "SIADH assessment (can occur with any meningitis, though less common in viral than bacterial)",
+          "target": "280-295 mOsm/kg"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction in altered mental status differential",
+          "target": "Normal"
+        },
+        {
+          "item": "RPR/VDRL (serum) (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis can mimic viral meningitis with lymphocytic CSF; screen in sexually active adults",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis B surface antigen, Hepatitis C antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Concurrent viral hepatitis screen; shared risk factors with HIV; affects management",
+          "target": "Negative"
+        },
+        {
+          "item": "Monospot / EBV VCA IgM (CPT 86308)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "EBV meningitis in differential (infectious mononucleosis); pharyngitis, lymphadenopathy, splenomegaly",
+          "target": "Negative"
+        },
+        {
+          "item": "Serum tryptase or ACE level",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Sarcoidosis (neurosarcoidosis mimics chronic aseptic meningitis); obtain if recurrent or atypical",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Arboviral serologies (West Nile IgM/IgG, Eastern equine, St. Louis encephalitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Seasonal (summer-fall); geographic risk; mosquito exposure; West Nile virus can cause meningitis in addition to encephalitis",
+          "target": "Negative; if positive, confirms arboviral etiology (supportive care only)"
+        },
+        {
+          "item": "Cryptococcal antigen (serum) (CPT 87327)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "If immunocompromised (HIV, transplant, chronic steroids); chronic meningitis presentation; headache predominant",
+          "target": "Negative (<60 pg/mL)"
+        },
+        {
+          "item": "QuantiFERON-TB Gold / T-SPOT",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "TB meningitis in differential (subacute, basilar, low glucose); high-risk populations (immigrants, HIV, incarcerated)",
+          "target": "Negative"
+        },
+        {
+          "item": "Beta-D-glucan (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "rationale": "If fungal meningitis suspected (immunocompromised, chronic presentation)",
+          "target": "Negative (<60 pg/mL)"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum) (CPT 86255)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "rationale": "If recurrent aseptic meningitis or encephalitic features; NMDAR, LGI1, CASPR2 antibodies",
+          "target": "Negative"
+        },
+        {
+          "item": "Complement levels (C3, C4, CH50)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Recurrent meningitis; complement deficiency predisposes to Neisseria infection",
+          "target": "Normal"
+        },
+        {
+          "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Recurrent meningitis; hypogammaglobulinemia predisposes to recurrent infections",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Usually normal or mildly elevated in viral meningitis; markedly elevated suggests bacterial, fungal, or TB meningitis",
+          "target": "Normal to mildly elevated (10-25 cm H2O); >30 cm H2O uncommon in viral — consider alternative diagnosis"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 AND 4) (CPT 89051)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "HALLMARK: Lymphocytic pleocytosis; tube 1 vs 4 comparison differentiates traumatic tap; early viral meningitis (<48h) may show neutrophil predominance that shifts to lymphocytes on repeat LP",
+          "target": "WBC 10-500 cells/uL with lymphocyte predominance (>50%); NOTE: early viral meningitis may have neutrophil predominance in first 24-48h"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Mildly elevated in viral meningitis; markedly elevated (>200 mg/dL) suggests bacterial, TB, or fungal",
+          "target": "Normal to mildly elevated (50-100 mg/dL); >200 mg/dL argues against simple viral meningitis"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "NORMAL glucose is key differentiator from bacterial meningitis; CSF:serum ratio >0.6 expected in viral",
+          "target": "Normal (>40 mg/dL; CSF:serum ratio >0.6); LOW glucose (<40 or ratio <0.4) argues strongly against viral — consider bacterial, TB, fungal, or carcinomatous meningitis"
+        },
+        {
+          "item": "Gram stain (CPT 87205)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rule out bacterial meningitis; should be NEGATIVE in viral meningitis",
+          "target": "No organisms seen (negative Gram stain expected)"
+        },
+        {
+          "item": "Bacterial culture and sensitivity (CPT 87070)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Gold standard to exclude bacterial meningitis; negative cultures at 48-72h help confirm viral etiology",
+          "target": "No growth at 48-72h (expected in viral meningitis)"
+        },
+        {
+          "item": "BioFire FilmArray Meningitis/Encephalitis Panel (CPT 87483)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rapid multiplex PCR (~1 hour turnaround); identifies 14 pathogens: 6 bacteria (E. coli K1, H. influenzae, L. monocytogenes, N. meningitidis, S. agalactiae, S. pneumoniae), 7 viruses (CMV, enterovirus, HSV-1, HSV-2, HHV-6, parechovirus, VZV), and Cryptococcus neoformans/gattii",
+          "target": "Viral pathogen identified (most commonly enterovirus); negative for bacterial pathogens allows de-escalation of empiric antibiotics"
+        },
+        {
+          "item": "Enterovirus PCR (CSF) (CPT 87498)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Most common cause of viral meningitis (50-80% of identified cases); summer-fall seasonality; rapid confirmation allows discontinuation of empiric antibiotics and acyclovir",
+          "target": "Positive in enteroviral meningitis; negative does not exclude viral etiology"
+        },
+        {
+          "item": "HSV-1/2 PCR (CSF) (CPT 87529)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "CRITICAL: Exclude HSV encephalitis (treatable and fatal if missed); HSV-2 causes benign recurrent (Mollaret) meningitis",
+          "target": "Negative (positive HSV-1 → treat as HSV encephalitis; positive HSV-2 → Mollaret meningitis, consider suppressive therapy)"
+        },
+        {
+          "item": "VZV PCR (CSF)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "VZV meningitis can occur with or without rash (zoster sine herpete); immunocompromised patients at higher risk",
+          "target": "Negative; if positive → IV acyclovir treatment indicated"
+        },
+        {
+          "item": "CSF lactate",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "CSF lactate <3.5 mmol/L strongly argues against bacterial meningitis (sensitivity ~93%, specificity ~96%); valuable when Gram stain negative and clinical picture unclear",
+          "target": "<3.5 mmol/L (viral); >3.5 mmol/L (bacterial)"
+        },
+        {
+          "item": "West Nile virus IgM (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Summer-fall; mosquito exposure; elderly; flaccid paralysis; encephalitic features",
+          "target": "Negative; if positive, confirms WNV neuroinvasive disease (supportive care)"
+        },
+        {
+          "item": "Cryptococcal antigen (CSF) (CPT 87327)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "If immunocompromised (HIV, transplant); subacute or chronic meningitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If malignancy in differential (subacute, cranial neuropathies, known cancer)",
+          "target": "Negative for malignant cells"
+        },
+        {
+          "item": "VDRL (CSF) (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis screen; lymphocytic CSF with normal glucose",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "If TB meningitis suspected (subacute presentation, basilar enhancement, low glucose, high protein, immigrant/HIV)",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "ONLY if LP delay indications present (see Contraindications to LP below). Do NOT delay empiric antibiotics for CT. CT BEFORE LP only if: immunocompromised, history of CNS disease, new seizure within 1 week, papilledema, altered consciousness (GCS <10), focal neurologic deficit",
+          "target": "Normal in viral meningitis (rules out mass effect, hydrocephalus, abscess before LP)",
+          "contraindications": "Pregnancy (relative); CT is NOT required before LP in all patients — only if specific indications present",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "On admission; baseline",
+          "target": "Baseline; rule out QTc prolongation before antiemetics (ondansetron)",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24-48h if: altered mental status, focal deficits, seizures, encephalitic features, or failure to improve; STAT if encephalitis suspected",
+          "target": "Normal in uncomplicated viral meningitis; meningeal enhancement (non-specific); temporal lobe T2/FLAIR signal suggests HSV encephalitis; hydrocephalus",
+          "contraindications": "Pacemaker; metallic implants; claustrophobia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "timing": "If altered mental status, seizures, or encephalitic features",
+          "target": "Normal background or mild diffuse slowing; focal findings or PLEDs suggest encephalitis rather than meningitis",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "If respiratory symptoms; rule out concurrent pneumonia",
+          "target": "Normal; infiltrate suggests bacterial source",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT temporal bones / skull base",
+          "timing": "If recurrent meningitis (rule out CSF leak, skull base defect)",
+          "target": "No fracture or tegmen dehiscence",
+          "contraindications": "Contrast allergy (if contrast used)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI spine with contrast",
+          "timing": "If myelitic symptoms (weakness, bowel/bladder dysfunction); rule out concurrent myelitis",
+          "target": "Normal; spinal cord signal change suggests myelitis",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "timing": "If persistent altered consciousness; concern for non-convulsive seizures",
+          "target": "No seizure activity",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374)",
+          "route": "IV",
+          "indication": "Empiric bacterial coverage; covers S. pneumoniae, N. meningitidis, H. influenzae, gram-negatives; continue until CSF cultures negative at 48-72h and BioFire negative for bacteria",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h; start within 30 minutes of presentation; discontinue when bacterial meningitis excluded (negative Gram stain + negative BioFire + CSF consistent with viral + cultures negative at 48-72h)",
+            "orderSentence": "Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy (true anaphylaxis — use chloramphenicol or meropenem as alternative)",
+          "monitoring": "CBC; LFTs; biliary sludge with prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365)",
+          "route": "IV",
+          "indication": "Covers penicillin-resistant S. pneumoniae and MRSA; essential component of empiric bacterial meningitis coverage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h (target trough 15-20 ug/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe; discontinue when bacterial meningitis excluded",
+            "orderSentence": "Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) 15-20 mg/kg IV"
+          },
+          "contraindications": "Red man syndrome (infuse over 1h minimum); renal impairment (dose adjust)",
+          "monitoring": "Trough levels before 4th dose; renal function daily; watch nephrotoxicity and ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374)",
+          "route": "IV",
+          "indication": "Covers Listeria monocytogenes (resistant to cephalosporins); add to vancomycin + ceftriaxone if risk factors present: age >50, immunocompromised, alcoholism, pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q4h; discontinue when bacterial meningitis excluded and Listeria not identified",
+            "orderSentence": "Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) 2 g IV"
+          },
+          "contraindications": "Penicillin anaphylaxis (use TMP-SMX as Listeria alternative)",
+          "monitoring": "Rash; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365)",
+          "route": "IV",
+          "indication": "CRITICAL: Empiric HSV coverage; HSV encephalitis is fatal if untreated; start on ALL patients with meningitis until HSV PCR returns negative and no encephalitic features present",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h (based on ideal body weight); infuse over 1h; discontinue when HSV PCR negative AND no encephalitic features (confusion, focal deficits, seizures, temporal lobe MRI changes). CrCl 25-50: q12h; CrCl 10-25: q24h",
+            "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust; do NOT withhold)",
+          "monitoring": "Renal function (BUN, Cr) daily; ensure adequate hydration (1 mL/kg/h); urine output; acyclovir crystal nephropathy risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose)",
+          "route": "IV",
+          "indication": "Give empirically with antibiotics; greatest benefit if bacterial meningitis (especially S. pneumoniae); discontinue when bacterial meningitis excluded",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.15 mg/kg",
+                "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.15 mg/kg IV q6h (typically 10 mg IV q6h) x 4 days; MUST be given BEFORE or simultaneously with first antibiotic dose; discontinue when bacterial meningitis excluded; no proven benefit in viral meningitis",
+            "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+          },
+          "contraindications": "Not beneficial if antibiotics already started >1h prior",
+          "monitoring": "Glucose q6h; GI prophylaxis; blood pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Volume resuscitation; maintain hydration for acyclovir clearance (prevent crystal nephropathy); correct dehydration from poor oral intake, vomiting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 mL/kg/h",
+                "orderSentence": "IV normal saline 1-1.5 mL/kg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 mL/kg/h continuous maintenance; bolus 500-1000 mL if dehydrated or hypotensive",
+            "orderSentence": "IV normal saline 1-1.5 mL/kg/h IV"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; electrolytes q6-12h; watch for SIADH (fluid restrict if Na <130)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache and fever reduction; first-line analgesic and antipyretic for viral meningitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV formulation for patients unable to take PO",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe hepatic disease (Child-Pugh C); acetaminophen allergy",
+          "monitoring": "Temperature; LFTs if prolonged use; total daily dose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Headache and fever; anti-inflammatory for meningeal inflammation; may be more effective than acetaminophen alone for meningitis headache",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6h with food; max 2400 mg/day; use in combination with acetaminophen for refractory headache",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "contraindications": "Renal impairment; GI bleed risk; coagulopathy; allergy; dehydration",
+          "monitoring": "Renal function; GI symptoms; avoid if not adequately hydrated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Severe headache refractory to oral analgesics; potent anti-inflammatory; short-term use only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 mg",
+                "orderSentence": "Ketorolac 15-30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-30 mg IV q6h (15 mg if age >65, renal impairment, or weight <50 kg); max 5 days; transition to oral NSAID",
+            "orderSentence": "Ketorolac 15-30 mg IV"
+          },
+          "contraindications": "Renal impairment; GI bleed; coagulopathy; age >65 (dose reduce); concurrent anticoagulants",
+          "monitoring": "Renal function daily; GI symptoms; limit to 5 days maximum",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting (common with meningitis; worsened by meningeal irritation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN; may increase to 8 mg q6h if refractory",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; congenital long QT syndrome",
+          "monitoring": "QTc if risk factors or concurrent QT-prolonging medications",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Nausea refractory to ondansetron; also has prokinetic effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q6-8h PRN; max 30 days use (tardive dyskinesia risk)",
+            "orderSentence": "Metoclopramide 10 mg IV"
+          },
+          "contraindications": "Parkinson disease; history of tardive dyskinesia; bowel obstruction; pheochromocytoma",
+          "monitoring": "Extrapyramidal symptoms; tardive dyskinesia (limit duration)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Prochlorperazine",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting refractory to ondansetron; also effective for headache with nausea",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Prochlorperazine 5-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-10 mg IV q6-8h PRN; max 40 mg/day",
+            "orderSentence": "Prochlorperazine 5-10 mg IV"
+          },
+          "contraindications": "Parkinson disease; seizure history (lowers threshold); QT prolongation",
+          "monitoring": "Extrapyramidal symptoms; QTc; sedation",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "IV fluids (maintenance)",
+          "route": "IV",
+          "indication": "Maintain hydration during period of poor oral intake; support acyclovir clearance; replace insensible losses from fever",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75-125 mL/h",
+                "orderSentence": "IV fluids (maintenance) 75-125 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "75-125 mL/h 0.9% normal saline or LR; adjust based on I/O and clinical status",
+            "orderSentence": "IV fluids (maintenance) 75-125 mL/h IV"
+          },
+          "contraindications": "Volume overload; SIADH (restrict if Na <130)",
+          "monitoring": "Electrolytes q12-24h; I/O; daily weight",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV/PO",
+          "indication": "GI prophylaxis if receiving dexamethasone or if critical illness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily; discontinue when dexamethasone stopped",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "C. diff risk with prolonged use",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Morphine",
+          "route": "IV",
+          "indication": "Severe headache refractory to acetaminophen + NSAIDs; use sparingly and short-term only; avoid in patients who can tolerate oral analgesics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Morphine 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV q3-4h PRN; titrate to pain relief; minimize use; transition to non-opioid regimen as soon as possible",
+            "orderSentence": "Morphine 2-4 mg IV"
+          },
+          "contraindications": "Respiratory depression; altered mental status; opioid allergy; ileus",
+          "monitoring": "Respiratory rate; sedation level; pain scores; bowel function",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Valacyclovir (for HSV-2 Mollaret meningitis)",
+          "route": "PO",
+          "indication": "Suppressive antiviral therapy for recurrent HSV-2 meningitis (Mollaret meningitis); reduces frequency and severity of recurrences",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Valacyclovir (for HSV-2 Mollaret meningitis) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg PO BID or 1000 mg PO daily for suppressive therapy; duration individualized (months to years); discuss risk/benefit with patient",
+            "orderSentence": "Valacyclovir (for HSV-2 Mollaret meningitis) 500 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); thrombotic thrombocytopenic purpura (rare, high dose)",
+          "monitoring": "Renal function at baseline and periodically; CBC if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir IV (for confirmed VZV meningitis)",
+          "route": "IV",
+          "indication": "Targeted therapy for VZV meningitis (with or without rash); immunocompromised patients require IV therapy; immunocompetent may be treated with oral valacyclovir if mild",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (for confirmed VZV meningitis) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h (based on ideal body weight) x 10-14 days; transition to oral valacyclovir 1000 mg PO TID when clinically improving",
+            "orderSentence": "Acyclovir IV (for confirmed VZV meningitis) 10 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Renal function daily; adequate hydration; urine output",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valacyclovir (for VZV meningitis — oral step-down)",
+          "route": "PO",
+          "indication": "Oral step-down for VZV meningitis in immunocompetent patients who are clinically improving; total treatment duration 10-14 days",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Valacyclovir (for VZV meningitis — oral step-down) 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO TID; complete total 10-14 day course (combined IV + PO)",
+            "orderSentence": "Valacyclovir (for VZV meningitis — oral step-down) 1000 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam (if seizures occur)",
+          "route": "IV/PO",
+          "indication": "Seizure management if seizures develop (uncommon in uncomplicated viral meningitis; suggests encephalitis component); NOT routine prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam (if seizures occur) 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load then 500-1000 mg IV/PO BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam (if seizures occur) 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Renal function; mood/behavioral changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (seizure rescue)",
+          "route": "IV",
+          "indication": "Active seizure rescue; rare in isolated viral meningitis; more common if encephalitis component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg); may repeat x1 in 5 min",
+            "orderSentence": "Lorazepam (seizure rescue) 0.1 mg/kg IV"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "Respiratory rate; SpO2; airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20% (if elevated ICP)",
+          "route": "IV",
+          "indication": "Elevated ICP management (rare in viral meningitis; suggests alternative diagnosis or complication)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% (if elevated ICP) 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h",
+            "orderSentence": "Mannitol 20% (if elevated ICP) 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration",
+          "monitoring": "Serum osmolality (<320); osmolar gap; renal function; I/O",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies": [
+        {
+          "item": "Valacyclovir (chronic suppression for Mollaret meningitis)",
+          "route": "PO",
+          "indication": "Chronic suppressive therapy for recurrent HSV-2 meningitis (Mollaret meningitis); initiate after second or third recurrence; reduces frequency of episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Valacyclovir (chronic suppression for Mollaret meningitis) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg PO BID or 1000 mg PO daily; continue for 6-12 months then reassess; some patients require indefinite suppression",
+            "orderSentence": "Valacyclovir (chronic suppression for Mollaret meningitis) 500 mg PO"
+          },
+          "pretreatment": "Confirm HSV-2 by CSF PCR during acute episode; baseline renal function; educate patient on adherence and expected benefit",
+          "contraindications": "Renal impairment (dose adjust CrCl <30: 500 mg daily); TTP/HUS (rare, high-dose)",
+          "monitoring": "Renal function q3-6 months; CBC annually; symptom recurrence diary",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation for all cases with unclear etiology, immunocompromised host, HIV-positive patient, or recurrent meningitis to guide pathogen identification and management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurology consultation if altered mental status, seizures, focal neurologic deficits, or encephalitic features are present to differentiate meningitis from encephalitis and guide management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology follow-up in 2-4 weeks for post-meningitis headache management and cognitive assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primary care follow-up in 1-2 weeks after discharge for symptom reassessment, medication review, and lab follow-up (HIV results, other pending studies)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV specialist/infectious disease referral if new HIV diagnosis to initiate antiretroviral therapy and long-term management",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunology referral for recurrent meningitis (2 or more episodes) to evaluate for complement deficiency, hypogammaglobulinemia, or anatomic CSF leak",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT/Otolaryngology referral if recurrent meningitis with suspected CSF leak (rhinorrhea, otorrhea, skull base defect) for surgical evaluation and repair",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry or psychology referral for persistent mood or cognitive symptoms following meningitis (post-infectious fatigue, depression, anxiety, difficulty concentrating)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if: worsening headache, new confusion or personality change, seizure, high fever (>39C/102.2F), new rash (especially petechial/purpuric), neck stiffness worsening, vision changes, new weakness — these may indicate bacterial meningitis or encephalitis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Viral meningitis is usually self-limited and resolves in 7-10 days; headache and fatigue may persist for 2-4 weeks during recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stay well-hydrated (drink at least 2 liters of fluids daily) to support recovery and prevent dehydration",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take acetaminophen and/or ibuprofen on a scheduled basis (not PRN) for the first 3-5 days to control headache and fever; taper as symptoms improve",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid bright lights and loud environments if photophobia and phonophobia persist (dim rooms and sunglasses may help)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rest in a quiet, dark room; gradual return to activity over 1-2 weeks as symptoms improve; avoid strenuous exercise until headache-free",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enteroviral meningitis is mildly contagious via fecal-oral route; practice good hand hygiene (handwashing after bathroom use) for 2 weeks to prevent transmission to household contacts",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow up with primary care in 1-2 weeks; follow up with neurology if persistent headache, cognitive symptoms, or new neurologic symptoms develop",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any recurrent episodes of headache with fever and neck stiffness (recurrent meningitis requires additional workup for underlying cause)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Hand hygiene education (handwashing with soap for 20 seconds, especially after bathroom use) to prevent enteroviral transmission",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mosquito bite prevention (DEET-containing repellent, protective clothing, screen windows) for patients in arboviral-endemic areas during summer-fall season to reduce West Nile virus and other arboviral meningitis risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV testing and prevention counseling for all patients with viral meningitis (acute HIV is an important cause of aseptic meningitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ensure up-to-date vaccination (MMR, varicella) to prevent vaccine-preventable causes of viral meningitis (mumps, measles)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid close contact with individuals who have hand-foot-mouth disease or known enteroviral illness during outbreaks (especially pregnant women, immunocompromised, neonates)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to support immune function and reduce upper respiratory infection risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate sleep (7-9 hours per night) and stress management during recovery period to support immune function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For patients with Mollaret (recurrent HSV-2) meningitis: discuss suppressive antiviral therapy with neurology/infectious disease to reduce recurrence frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sharing eating utensils, drinking glasses, and towels during acute illness to prevent enteroviral transmission to household contacts",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pneumococcal and meningococcal vaccination review to ensure up-to-date status (does NOT prevent viral meningitis but prevents future bacterial meningitis risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Safe sexual practices counseling for patients with HSV-2 meningitis (Mollaret) to reduce transmission risk and inform partners",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Bacterial meningitis",
+      "features": "More toxic appearance; higher fever; rapid deterioration; CSF: neutrophilic pleocytosis (WBC >1000), low glucose (CSF:serum <0.4), very high protein (>100 mg/dL), positive Gram stain (60-90%); procalcitonin >2.0 ng/mL; CSF lactate >3.5 mmol/L",
+      "tests": "CSF Gram stain, culture, BioFire ME Panel; procalcitonin; CSF lactate; CSF glucose"
+    },
+    {
+      "diagnosis": "HSV encephalitis",
+      "features": "Encephalitis features (confusion, personality change, focal deficits, seizures); temporal lobe predilection on MRI; PLEDs on EEG; CSF may be hemorrhagic (RBCs); more altered mental status than isolated meningitis",
+      "tests": "MRI brain (temporal lobe T2/FLAIR signal); CSF HSV PCR; EEG (PLEDs); clinical features (confusion, seizures, focal deficits)"
+    },
+    {
+      "diagnosis": "Tuberculous meningitis",
+      "features": "Subacute onset (weeks); basilar meningitis with cranial neuropathies; CSF: lymphocytic but LOW glucose, very HIGH protein (100-500 mg/dL); TB risk factors (immigrant, HIV, incarcerated)",
+      "tests": "AFB smear/culture; TB PCR (GeneXpert); CSF ADA (>8 IU/L); chest imaging; QuantiFERON; clinical chronicity"
+    },
+    {
+      "diagnosis": "Fungal meningitis (Cryptococcus)",
+      "features": "Subacute/chronic; immunocompromised (HIV with CD4 <100); headache predominant; minimal pleocytosis; elevated opening pressure",
+      "tests": "CSF cryptococcal antigen (CrAg); India ink; fungal culture; serum CrAg"
+    },
+    {
+      "diagnosis": "Acute HIV seroconversion",
+      "features": "Fever, headache, pharyngitis, rash, lymphadenopathy, myalgias 2-4 weeks after exposure; CSF lymphocytic pleocytosis; antibody test may be negative (window period)",
+      "tests": "HIV RNA viral load (positive before antibody); 4th-gen Ag/Ab test; detailed sexual/exposure history"
+    },
+    {
+      "diagnosis": "Drug-induced aseptic meningitis",
+      "features": "Temporal relationship with offending drug (NSAIDs, IVIG, TMP-SMX, isoniazid, azathioprine, OKT3); resolves with drug withdrawal; recurs with rechallenge",
+      "tests": "Medication history review; drug withdrawal with resolution; sterile CSF cultures; re-exposure reproduces symptoms"
+    },
+    {
+      "diagnosis": "Subarachnoid hemorrhage",
+      "features": "Thunderclap headache (worst headache of life); NOT typically febrile initially; meningismus from blood irritation; xanthochromia; RBCs on CSF",
+      "tests": "CT head (blood in subarachnoid space); CSF xanthochromia; RBCs equal in tubes 1 and 4; CTA if SAH confirmed"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR)",
+      "features": "Subacute; psychiatric symptoms (psychosis, agitation); orofacial dyskinesias; seizures; young women; fever may occur; MRI may be normal or show temporal changes",
+      "tests": "Autoimmune antibody panel (serum + CSF); NMDAR, LGI1, CASPR2; MRI; EEG; ovarian teratoma screen"
+    },
+    {
+      "diagnosis": "Carcinomatous/leptomeningeal meningitis",
+      "features": "Subacute; cranial neuropathies; known malignancy; CSF: low glucose, elevated protein, positive cytology; may be recurrent",
+      "tests": "CSF cytology (repeat x3 for sensitivity); MRI with contrast (leptomeningeal enhancement); flow cytometry"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Chronic headache; cranial neuropathies (CN VII most common); hilar lymphadenopathy; elevated ACE level; non-caseating granulomas",
+      "tests": "Chest CT (hilar adenopathy); serum ACE; CSF ACE; biopsy of accessible tissue"
+    },
+    {
+      "diagnosis": "Behcet disease meningitis",
+      "features": "Recurrent aseptic meningitis; oral and genital ulcers; uveitis; pathergy; Mediterranean/Middle Eastern descent",
+      "tests": "Clinical criteria (oral ulcers + 2 of: genital ulcers, eye lesions, skin lesions, positive pathergy); HLA-B51"
+    },
+    {
+      "diagnosis": "Partially treated bacterial meningitis",
+      "features": "Prior antibiotic exposure masking CSF findings; CSF may appear viral (lymphocytic, normal glucose) after partial treatment; cultures negative",
+      "tests": "Antibiotic history; BioFire ME Panel (may still detect bacterial DNA); clinical trajectory; procalcitonin (remains elevated in bacterial)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Empiric antibiotics and acyclovir until bacterial meningitis and HSV excluded",
+      "evidenceLevel": "Class I, Level A",
+      "source": "IDSA Guidelines ([Tunkel et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15494903/)); standard of care — cannot reliably distinguish viral from bacterial meningitis clinically"
+    },
+    {
+      "recommendation": "Enterovirus is the most common cause of viral meningitis (50-80%)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Sawyer MH. Enterovirus infections: diagnosis and treatment. Semin Pediatr Infect Dis 2002](https://pubmed.ncbi.nlm.nih.gov/12183980/); [Rotbart HA. Viral meningitis. Semin Neurol 2000](https://pubmed.ncbi.nlm.nih.gov/11149714/)"
+    },
+    {
+      "recommendation": "BioFire ME Panel for rapid pathogen identification (~1 hour)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Leber et al. JCM 2016](https://pubmed.ncbi.nlm.nih.gov/27335149/); FDA-cleared multiplex PCR with high sensitivity/specificity; enables rapid de-escalation of empiric therapy"
+    },
+    {
+      "recommendation": "CSF lactate <3.5 mmol/L to distinguish viral from bacterial meningitis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Meta-analysis: [Sakushima et al. J Infect 2011](https://pubmed.ncbi.nlm.nih.gov/21382412/) — sensitivity 93%, specificity 96% for bacterial meningitis"
+    },
+    {
+      "recommendation": "Procalcitonin <0.5 ng/mL argues against bacterial meningitis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Meta-analysis: [Wei et al. PLoS One 2016](https://pubmed.ncbi.nlm.nih.gov/27227519/); [Vikse et al. BMC Infect Dis 2015](https://pubmed.ncbi.nlm.nih.gov/26084830/) — high NPV for excluding bacterial meningitis"
+    },
+    {
+      "recommendation": "HIV testing in all cases of aseptic meningitis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "CDC recommendations; acute HIV seroconversion causes 10-17% of aseptic meningitis in some series ([Kellinghaus et al. Eur J Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18484989/))"
+    },
+    {
+      "recommendation": "CSF findings in viral meningitis (lymphocytic pleocytosis, normal glucose)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Standard diagnostic criteria; [Logan & MacMahon. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18299256/) — comprehensive review of meningitis CSF patterns"
+    },
+    {
+      "recommendation": "Early neutrophilic predominance in viral meningitis (first 24-48h)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Negrini et al. BMC Infect Dis 2000](https://pubmed.ncbi.nlm.nih.gov/11118044/); up to 60% of enteroviral meningitis shows neutrophil predominance early — repeat LP in 12-24h shows lymphocytic shift"
+    },
+    {
+      "recommendation": "Supportive care (fluids, analgesics, antiemetics) as primary treatment",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Standard of care; no antiviral therapy improves outcomes for enteroviral meningitis; [Desmond et al. CID 2006](https://pubmed.ncbi.nlm.nih.gov/17109281/)"
+    },
+    {
+      "recommendation": "Valacyclovir suppressive therapy for recurrent HSV-2 (Mollaret) meningitis",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; [Aurelius et al. Scand J Infect Dis 1991](https://pubmed.ncbi.nlm.nih.gov/1652779/); limited RCT data but widely used in practice"
+    },
+    {
+      "recommendation": "CT before LP only for specific indications (not all patients)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Hasbun et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11742046/) — criteria for when CT is needed before LP; routine CT delays diagnosis unnecessarily"
+    },
+    {
+      "recommendation": "Dexamethasone adjunctive therapy (for bacterial meningitis coverage)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[de Gans & van de Beek NEJM 2002](https://pubmed.ncbi.nlm.nih.gov/12432041/) — reduces mortality and hearing loss in S. pneumoniae; given empirically before etiology known"
+    },
+    {
+      "recommendation": "Acyclovir nephrotoxicity prevention with aggressive hydration",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Well-established pharmacology; crystal nephropathy prevention; [Izzedine et al. Am J Kidney Dis 2005](https://pubmed.ncbi.nlm.nih.gov/16214309/)"
+    },
+    {
+      "recommendation": "Viral meningitis is self-limited in immunocompetent adults (7-10 days)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "Multiple prospective studies; [McGill et al. Lancet Infect Dis 2018](https://pubmed.ncbi.nlm.nih.gov/30292484/) — comprehensive review of viral meningitis outcomes"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, orientation, meningismus, focal deficits)",
+      "frequency": "q4h in ED/HOSP; q1-2h in ICU; at each OPD visit",
+      "action": "If GCS declining or focal deficits develop: STAT MRI to rule out encephalitis, abscess, or other complication; reassess diagnosis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If persistent fever >72h: consider alternative diagnosis (bacterial, partially treated, abscess); repeat cultures; imaging",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Headache severity (NRS 0-10)",
+      "frequency": "q4h in ED/HOSP; at each OPD visit",
+      "action": "If worsening headache: repeat neuroimaging; check for hydrocephalus, elevated ICP; reassess diagnosis",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "q12h x 48h, then daily",
+      "action": "If <130: suspect SIADH; fluid restriction 1-1.2 L/day; if <120: 3% saline; recheck q4-6h",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum creatinine (if on acyclovir)",
+      "frequency": "Daily while on acyclovir",
+      "action": "If rising: increase IV hydration; consider dose adjustment; ensure urine output >0.5 mL/kg/h",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood culture results",
+      "frequency": "At 24h and 48h (read as available)",
+      "action": "If positive: bacterial meningitis confirmed; continue antibiotics and escalate management per bacterial meningitis protocol",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CSF culture results",
+      "frequency": "At 24h, 48h, and 72h (read as available)",
+      "action": "If positive: transition to targeted antibiotic therapy per bacterial meningitis protocol",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "HIV test result follow-up",
+      "frequency": "Ensure result reviewed before discharge",
+      "action": "If positive: urgent HIV specialist referral; CD4 count; viral load; initiate antiretroviral therapy discussion; ensure linkage to care",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pain medication response",
+      "frequency": "q4h in HOSP; at each OPD visit",
+      "action": "If refractory headache persists >2 weeks: neurology referral; evaluate for post-meningitis headache syndrome; consider prophylactic headache treatment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Oral intake and hydration status",
+      "frequency": "q shift in HOSP; daily in ICU",
+      "action": "If unable to tolerate PO: continue IV fluids; assess for vomiting control; delay discharge until PO tolerance established",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Oxygen saturation",
+      "frequency": "Continuous in ICU; q4h on floor",
+      "action": "If declining: supplemental O2; assess for aspiration, pulmonary embolism; reassess need for ICU",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Fluid balance (I/O)",
+      "frequency": "q shift in HOSP; q1h in ICU",
+      "action": "If oliguria: increase IV fluids; assess renal function; consider acyclovir dose adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Post-discharge symptom monitoring",
+      "frequency": "At 1-2 week follow-up visit",
+      "action": "If persistent symptoms at 2-4 weeks: repeat labs (CBC, CRP); consider repeat LP if atypical course; neurology referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive and functional recovery",
+      "frequency": "At 2-4 week and 3 month follow-up",
+      "action": "If persistent cognitive complaints: neuropsychological testing; neurology referral; evaluate for post-infectious syndrome",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home from ED",
+      "criteria": "ONLY after bacterial meningitis has been sufficiently excluded: negative Gram stain, CSF profile consistent with viral (lymphocytic pleocytosis, normal glucose, protein <100), negative BioFire for bacteria, procalcitonin <0.5, clinically non-toxic, tolerating PO fluids and analgesics, reliable follow-up within 24-48h, responsible adult at home, clear return precautions provided. Blood cultures must be pending with 48h follow-up mechanism (callback system)."
+    },
+    {
+      "disposition": "Admit to hospital floor",
+      "criteria": "Unable to exclude bacterial meningitis (awaiting cultures); unable to tolerate oral intake (persistent vomiting, severe headache); immunocompromised; altered mental status (even mild); concern for encephalitis; severe dehydration; no reliable outpatient follow-up; elderly (>65); pregnancy"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "GCS <13 or declining mental status; active seizures; hemodynamic instability; suspected bacterial meningitis with sepsis; respiratory compromise; concern for elevated ICP; immunocompromised with rapidly progressive symptoms"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurology/infectious disease expertise not available; need for continuous EEG not available; MRI not available for evaluation of encephalitis"
+    },
+    {
+      "disposition": "Discharge home from hospital",
+      "criteria": "Bacterial meningitis definitively excluded (negative cultures at 48-72h); afebrile >24h; headache controlled with oral analgesics; tolerating oral fluids and medications; GCS 15 with normal neurologic exam; HIV result reviewed; follow-up arranged within 1-2 weeks"
+    },
+    {
+      "disposition": "Outpatient follow-up timeline",
+      "criteria": "PCP visit in 1-2 weeks; neurology if persistent headache or cognitive symptoms at 2-4 weeks; infectious disease if HIV positive or immunocompromised; immunology if recurrent meningitis"
+    },
+    {
+      "disposition": "Return to work/school",
+      "criteria": "Gradual return after symptom improvement (typically 1-2 weeks for mild cases; up to 4 weeks for severe); no driving until headache-free and neurologically intact"
+    }
+  ]
+}

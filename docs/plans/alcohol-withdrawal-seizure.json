@@ -1,0 +1,1534 @@
+{
+  "id": "alcohol-withdrawal-seizure",
+  "title": "Alcohol Withdrawal Seizure",
+  "version": "1.1",
+  "icd10": [
+    "** G40.509 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "without status epilepticus)",
+    "F10.231 (Alcohol dependence with withdrawal with perceptual disturbance)",
+    "F10.239 (Alcohol dependence with withdrawal",
+    "uncomplicated)",
+    "F10.230 (Alcohol dependence with withdrawal",
+    "uncomplicated)",
+    "F10.232 (Alcohol dependence with withdrawal with perceptual disturbance)",
+    "R56.9 (Unspecified convulsions)"
+  ],
+  "scope": "** Evaluation and management of seizures in the context of alcohol withdrawal in adults, including acute seizure management, prevention of recurrence, thiamine supplementation, electrolyte correction, CIWA-Ar protocol monitoring, and disposition planning. Covers both single withdrawal seizures and recurrent withdrawal seizures. Excludes chronic epilepsy management, status epilepticus (see Status Epilepticus template), seizures from acute alcohol intoxication, and non-withdrawal alcohol-associated seizures (e.g., head trauma while intoxicated).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Point-of-care glucose (CPT 82962)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia is immediately reversible cause; alcoholics have depleted glycogen stores",
+          "target": ">70 mg/dL"
+        },
+        {
+          "item": "Blood alcohol level (CPT 80320)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Document current level; seizures typically occur as level falls (not at peak); helps timeline estimation",
+          "target": "Document level and correlate with withdrawal timeline"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; macrocytosis (chronic alcohol); thrombocytopenia (alcohol-related liver disease); baseline before treatment",
+          "target": "Normal; macrocytosis suggests chronic alcohol use"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities (Na, K, Ca, Mg, glucose); renal function; hepatic function (alcoholic liver disease); AST:ALT ratio >2:1 suggests alcoholic hepatitis",
+          "target": "Normal; correct abnormalities"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia is common in chronic alcohol use and lowers seizure threshold; required cofactor for thiamine metabolism",
+          "target": ">2.0 mg/dL; replete aggressively if low"
+        },
+        {
+          "item": "Calcium, ionized (CPT 82330)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypocalcemia lowers seizure threshold; common in alcoholism and malnutrition",
+          "target": "Ionized 4.5-5.3 mg/dL"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypophosphatemia common in chronic alcohol use; refeeding risk",
+          "target": ">2.5 mg/dL"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Concurrent illicit drug use (cocaine, amphetamines, benzodiazepines); polypharmacy",
+          "target": "Identify co-intoxicants; benzodiazepine presence may mask withdrawal"
+        },
+        {
+          "item": "Lipase (CPT 83690)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Alcoholic pancreatitis as concurrent condition",
+          "target": "Normal (<60 U/L)"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Post-ictal elevation expected; persistent elevation suggests ongoing seizure activity or sepsis",
+          "target": "Mildly elevated post-ictal; should normalize within 1-2 hours"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI as additional precipitant; rhabdomyolysis (myoglobinuria)",
+          "target": "Negative; brown urine suggests rhabdomyolysis"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Ammonia (CPT 82140)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy may coexist with or mimic alcohol withdrawal",
+          "target": "<35 µmol/L"
+        },
+        {
+          "item": "CPK/CK (CPT 82550)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rhabdomyolysis from prolonged seizure activity or falls",
+          "target": "<1000 U/L; if elevated, aggressive hydration"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, PTT) (CPT 85610, 85730)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy from liver disease; needed before LP if considered",
+          "target": "Normal; elevated INR suggests hepatic synthetic dysfunction"
+        },
+        {
+          "item": "Blood gas (ABG or VBG) (CPT 82803)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Post-ictal acidosis; respiratory status; lactate",
+          "target": "Normal or mild post-ictal metabolic acidosis"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cardiac stress from seizure, autonomic surge, or arrhythmia",
+          "target": "Negative"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can affect seizure threshold",
+          "target": "Normal"
+        },
+        {
+          "item": "Pregnancy test (urine or serum beta-hCG) (CPT 81025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Affects treatment decisions (benzodiazepine safety, imaging); eclampsia consideration",
+          "target": "Document status"
+        },
+        {
+          "item": "Thiamine level (whole blood) (CPT 84425)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Confirms deficiency; do NOT delay treatment for result",
+          "target": "Low suggests deficiency; treat empirically regardless"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Often co-deficient with thiamine in chronic alcohol use",
+          "target": "Normal (>300 pg/mL)"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Folate deficiency common in chronic alcohol use; contributes to macrocytic anemia",
+          "target": "Normal"
+        },
+        {
+          "item": "Prealbumin (CPT 84134)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Nutritional status assessment; short half-life reflects recent intake",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Anti-seizure medication levels (if on ASMs)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Subtherapeutic levels if patient on chronic ASMs",
+          "target": "Therapeutic range"
+        },
+        {
+          "item": "Expanded toxicology panel",
+          "ED": "URGENT",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Synthetic drugs, medications not on standard screen; methanol, ethylene glycol",
+          "target": "Negative"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "rationale": "If clinical presentation is atypical for simple withdrawal seizure",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated CNS disease; higher prevalence in some populations with alcohol use disorder",
+          "target": "Negative"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis; risk factor overlap with alcohol use",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis panel (CPT 86803, 86706)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatitis B/C common with alcohol use disorder; affects treatment decisions",
+          "target": "Negative"
+        },
+        {
+          "item": "Osmolality (serum) (CPT 83930)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Osmolar gap to exclude methanol or ethylene glycol poisoning",
+          "target": "280-295 mOsm/kg; calculate osmolar gap"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Elevated ICP",
+          "target": "10-20 cm H2O"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Infection, inflammation",
+          "target": "WBC <5; RBC 0"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Elevated in infection, inflammation",
+          "target": "15-45 mg/dL"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 82945)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Low in bacterial/fungal meningitis",
+          "target": ">60% serum"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87205, 87070)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Bacterial meningitis",
+          "target": "No organisms"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rapid pathogen identification",
+          "target": "Negative"
+        },
+        {
+          "item": "HSV-1/2 PCR (CPT 87529)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "HSV encephalitis",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediately; alcoholic patients at high risk for subdural hematoma, traumatic hemorrhage, and falls",
+          "target": "No hemorrhage, mass, or acute stroke; subdural hematoma common in chronic alcoholism",
+          "contraindications": "None in emergency"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24 hours if any atypical features or concern for non-convulsive status; not required for classic single withdrawal seizure",
+          "target": "No ongoing epileptiform activity; generalized slowing expected in withdrawal",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24-48 hours if first seizure, focal neurologic deficit, focal seizure semiology, or CT findings requiring further evaluation",
+          "target": "Structural lesion, cortical abnormality, Wernicke changes (medial thalami, mammillary bodies, periaqueductal gray)",
+          "contraindications": "GFR <30 for gadolinium, pacemaker"
+        },
+        {
+          "item": "Continuous EEG (cEEG) monitoring (CPT 95700)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered mental status persists beyond expected post-ictal period; concern for non-convulsive status epilepticus",
+          "target": "Non-convulsive seizures, non-convulsive status epilepticus",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Aspiration risk post-ictal; concurrent pneumonia in malnourished patients",
+          "target": "Clear lungs; aspiration pneumonitis",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Arrhythmia from electrolyte abnormalities (hypomagnesemia, hypokalemia); QTc prolongation; cardiomyopathy",
+          "target": "Normal sinus rhythm; correct QTc prolongation",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT angiography head/neck (CPT 70496, 70498)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If stroke suspected",
+          "target": "Vascular occlusion, dissection",
+          "contraindications": "Contrast allergy, renal insufficiency"
+        },
+        {
+          "item": "MRA/MRV brain (CPT 70544)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If vascular etiology suspected",
+          "target": "Venous thrombosis, vascular malformation",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "Abdominal ultrasound (CPT 76700)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Liver assessment if hepatic disease suspected",
+          "target": "Cirrhosis, portal hypertension, hepatic steatosis",
+          "contraindications": "None significant"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Lorazepam IV",
+          "route": "IV",
+          "indication": "Acute seizure cessation and withdrawal seizure prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Lorazepam IV 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV push over 2 min; may repeat q5-10min; max 8-10 mg in first hour; preferred in hepatic impairment (no hepatic metabolism)",
+            "orderSentence": "Lorazepam IV 2-4 mg IV"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator support",
+          "monitoring": "RR, O2 sat, BP, sedation level; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam IV",
+          "route": "IV",
+          "indication": "Acute seizure cessation; preferred for smooth withdrawal prophylaxis due to long-acting metabolites",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Diazepam IV 5-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-10 mg IV push over 2-5 min; may repeat q5-10min; max 30 mg in first hour; long-acting active metabolite (desmethyldiazepam) provides smoother withdrawal coverage",
+            "orderSentence": "Diazepam IV 5-10 mg IV"
+          },
+          "contraindications": "Severe hepatic impairment (use lorazepam instead); severe respiratory depression",
+          "monitoring": "RR, O2 sat, BP, sedation level; active metabolites accumulate in liver disease",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam IM",
+          "route": "IM",
+          "indication": "Acute seizure if no IV access",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Midazolam IM 10 mg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "10 mg IM (if >=40 kg) or 0.2 mg/kg IM; single dose; obtain IV access urgently",
+            "orderSentence": "Midazolam IM 10 mg IM"
+          },
+          "contraindications": "Respiratory compromise",
+          "monitoring": "RR, O2 sat; prepare IV access immediately",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thiamine IV (high-dose)",
+          "route": "IV",
+          "indication": "Wernicke encephalopathy prevention and treatment; MUST give before or with glucose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine IV (high-dose) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID for 3 days (diluted in 100 mL NS over 30 min), then 250 mg IV daily for 5 days; give BEFORE glucose",
+            "orderSentence": "Thiamine IV (high-dose) 500 mg IV"
+          },
+          "contraindications": "Rare anaphylaxis (extremely uncommon); have epinephrine available",
+          "monitoring": "Infusion reaction (rare); anaphylaxis extremely rare",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dextrose 50% IV",
+          "route": "IV",
+          "indication": "Hypoglycemia correction; give AFTER thiamine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 g (50 mL)",
+                "orderSentence": "Dextrose 50% IV 25 g (50 mL) IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "50 mL IV push (25 g) if glucose <70 or unknown; ALWAYS give thiamine first or simultaneously",
+            "orderSentence": "Dextrose 50% IV 25 g (50 mL) IV"
+          },
+          "contraindications": "Document hyperglycemia",
+          "monitoring": "Glucose recheck in 15-30 min",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium sulfate IV",
+          "route": "IV",
+          "indication": "Hypomagnesemia correction; required cofactor for thiamine metabolism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Magnesium sulfate IV 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV over 1 hour initially; then 1 g IV q6h until Mg >2.0 mg/dL; severe deficiency may require 4-6 g over first 24 hours",
+            "orderSentence": "Magnesium sulfate IV 2 g IV"
+          },
+          "contraindications": "Renal failure (monitor levels closely); myasthenia gravis",
+          "monitoring": "Mg levels q12-24h; deep tendon reflexes; respiratory status; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Supplemental oxygen",
+          "route": "INH",
+          "indication": "Maintain oxygenation during and after seizure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-15 L",
+                "orderSentence": "Supplemental oxygen 2-15 L INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "2-4 L nasal cannula or non-rebreather as needed to maintain O2 sat >94%",
+            "orderSentence": "Supplemental oxygen 2-15 L INH"
+          },
+          "contraindications": "None",
+          "monitoring": "O2 sat continuous",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluids (isotonic)",
+          "route": "IV",
+          "indication": "Volume resuscitation; chronic alcohol users are often dehydrated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV fluids (isotonic) 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS or LR bolus 500-1000 mL, then 150-250 mL/hr maintenance; add dextrose (D5NS) once thiamine given; correct dehydration",
+            "orderSentence": "IV fluids (isotonic) 500-1000 mL IV"
+          },
+          "contraindications": "Fluid overload; severe hyponatremia (use caution with rate)",
+          "monitoring": "I/O, BP, Na; avoid rapid correction of hyponatremia (max 8-10 mEq/L per 24h)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic/Withdrawal Management": [
+        {
+          "item": "Chlordiazepoxide PO",
+          "route": "PO",
+          "indication": "Symptom-triggered withdrawal management (CIWA-Ar based); preferred for mild-moderate withdrawal when oral route available",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 mg",
+                "orderSentence": "Chlordiazepoxide PO 25-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "CIWA-Ar >=10: give 25-100 mg PO q1h until CIWA <10; then PRN dosing; typical total day 1: 200-400 mg; taper over 3-5 days; long half-life provides smooth coverage",
+            "orderSentence": "Chlordiazepoxide PO 25-100 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment (use lorazepam); respiratory depression; acute intoxication",
+          "monitoring": "CIWA-Ar q1h during active treatment, then q4h when stable; RR, sedation level",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Diazepam PO",
+          "route": "PO",
+          "indication": "Symptom-triggered withdrawal management; alternative to chlordiazepoxide",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Diazepam PO 10-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "CIWA-Ar >=10: give 10-20 mg PO q1-2h until CIWA <10; then PRN dosing; taper over 3-5 days; long-acting metabolites",
+            "orderSentence": "Diazepam PO 10-20 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment (use lorazepam); respiratory depression",
+          "monitoring": "CIWA-Ar q1h during active treatment, then q4h; RR, sedation level",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Lorazepam PO",
+          "route": "PO",
+          "indication": "Symptom-triggered withdrawal management; preferred in liver disease (no hepatic metabolism required)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg",
+                "orderSentence": "Lorazepam PO 1-2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "CIWA-Ar >=10: give 1-2 mg PO q1-2h until CIWA <10; then PRN dosing; shorter half-life requires more frequent dosing; preferred if AST/ALT elevated or known cirrhosis",
+            "orderSentence": "Lorazepam PO 1-2 mg PO"
+          },
+          "contraindications": "Severe respiratory depression",
+          "monitoring": "CIWA-Ar q1h during active treatment, then q4h; RR, sedation level; shorter acting - watch for rebound",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oxazepam PO",
+          "route": "PO",
+          "indication": "Withdrawal management in severe liver disease; no active metabolites",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 mg",
+                "orderSentence": "Oxazepam PO 15-30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15-30 mg PO q6-8h; CIWA-Ar guided; no active metabolites; safest in severe hepatic impairment",
+            "orderSentence": "Oxazepam PO 15-30 mg PO"
+          },
+          "contraindications": "Severe respiratory depression",
+          "monitoring": "CIWA-Ar; shorter half-life requires frequent monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Folic acid PO",
+          "route": "PO",
+          "indication": "Folate deficiency correction; common in chronic alcohol use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg",
+                "orderSentence": "Folic acid PO 1 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg PO daily; continue long-term if alcohol use disorder",
+            "orderSentence": "Folic acid PO 1 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Folate levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Multivitamin PO",
+          "route": "PO",
+          "indication": "Nutritional supplementation; multiple micronutrient deficiencies in chronic alcohol use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 tablet",
+                "orderSentence": "Multivitamin PO 1 tablet PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 multivitamin tablet PO daily",
+            "orderSentence": "Multivitamin PO 1 tablet PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Nutritional status",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Potassium chloride",
+          "route": "IV/PO",
+          "indication": "Hypokalemia correction; common in alcoholism and with vomiting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mEq",
+                "orderSentence": "Potassium chloride 20-40 mEq IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Replace per level: K 3.0-3.5: 40 mEq PO; K <3.0: 20-40 mEq IV over 1-2 hours; check Mg (must replete Mg for K to correct)",
+            "orderSentence": "Potassium chloride 20-40 mEq IV/PO"
+          },
+          "contraindications": "Renal failure; hyperkalemia",
+          "monitoring": "K levels q6-12h; cardiac monitor if IV replacement",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium gluconate IV",
+          "route": "IV",
+          "indication": "Hypocalcemia correction; ionized calcium low",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 g",
+                "orderSentence": "Calcium gluconate IV 1-2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 g calcium gluconate IV over 10-20 min; check Mg (required for calcium homeostasis)",
+            "orderSentence": "Calcium gluconate IV 1-2 g IV"
+          },
+          "contraindications": "Digoxin use (cardiac arrhythmia risk)",
+          "monitoring": "Ionized calcium; cardiac monitor during infusion",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus replacement",
+          "route": "IV/PO",
+          "indication": "Hypophosphatemia correction; common in alcoholism and refeeding",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-45 mmol IV or 250 mg PO",
+                "orderSentence": "Phosphorus replacement 15-45 mmol IV or 250 mg PO IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Mild (2.0-2.5): K-Phos 250 mg PO TID; Moderate (1.0-2.0): NaPhos 15-30 mmol IV over 4-6h; Severe (<1.0): 30-45 mmol IV over 6h",
+            "orderSentence": "Phosphorus replacement 15-45 mmol IV or 250 mg PO IV/PO"
+          },
+          "contraindications": "Hyperphosphatemia; renal failure",
+          "monitoring": "Phosphorus levels q12-24h; calcium (inversely related)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea/vomiting (common in withdrawal)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q8h PRN; may also use PO/ODT formulation",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment",
+          "monitoring": "QTc if multiple doses",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Headache and pain management; avoid NSAIDs due to bleeding and hepatic risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "650-1000 mg PO/IV q6h PRN; max 2000 mg/day in liver disease (3000 mg/day if normal liver)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO/IV"
+          },
+          "contraindications": "Severe hepatic impairment (reduce max dose)",
+          "monitoring": "LFTs if prolonged use; reduce dose in liver disease",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Phenobarbital IV",
+          "route": "IV",
+          "indication": "Refractory alcohol withdrawal not controlled by benzodiazepines alone; synergistic with benzodiazepines at GABA-A receptor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "130-260 mg",
+                "orderSentence": "Phenobarbital IV 130-260 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "130-260 mg IV q15-30 min, titrate to symptom control; max loading 10-20 mg/kg; maintenance 32-65 mg IV/PO q8-12h; can be used as primary agent or adjunct",
+            "orderSentence": "Phenobarbital IV 130-260 mg IV"
+          },
+          "contraindications": "Porphyria; severe respiratory disease (unless intubated)",
+          "monitoring": "RR (respiratory depression additive with benzodiazepines); sedation; intubation equipment at bedside; phenobarbital level if prolonged use",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Propofol infusion",
+          "route": "IV",
+          "indication": "Severe refractory withdrawal with seizures requiring ICU-level sedation; GABA-A and NMDA activity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/kg bolus, then 20-80 mcg/kg/min",
+                "orderSentence": "Propofol infusion 1-2 mg/kg bolus, then 20-80 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1-2 mg/kg IV bolus; infusion 20-80 mcg/kg/min; titrate to RASS -2 to -3; max 200 mcg/kg/min; limit duration <48h at high doses",
+            "orderSentence": "Propofol infusion 1-2 mg/kg bolus, then 20-80 mcg/kg/min IV"
+          },
+          "contraindications": "Propofol infusion syndrome risk; egg/soy allergy",
+          "monitoring": "cEEG if concern for seizures; triglycerides q24h; CPK; metabolic acidosis panel; hemodynamics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexmedetomidine infusion",
+          "route": "IV",
+          "indication": "Adjunctive sedation for withdrawal; reduces benzodiazepine requirement; treats sympathetic hyperactivity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2 mcg/kg/hr",
+                "orderSentence": "Dexmedetomidine infusion 0.2 mcg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.2 mcg/kg/hr; titrate to effect (max 1.5 mcg/kg/hr); no loading dose in hemodynamically unstable patients; reduces BZD requirements by 30-50%",
+            "orderSentence": "Dexmedetomidine infusion 0.2 mcg/kg/hr IV"
+          },
+          "contraindications": "Severe bradycardia; 2nd/3rd degree heart block; hypotension",
+          "monitoring": "HR, BP (bradycardia and hypotension); does NOT prevent seizures - must continue benzodiazepines",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valproate IV",
+          "route": "IV",
+          "indication": "Adjunctive for withdrawal seizure prevention when benzodiazepines insufficient; NOT a substitute for benzodiazepines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg/kg",
+                "orderSentence": "Valproate IV 20-40 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20-40 mg/kg IV over 30 min; then 250-500 mg IV q8h; monitor ammonia",
+            "orderSentence": "Valproate IV 20-40 mg/kg IV"
+          },
+          "contraindications": "Pregnancy (teratogenic); hepatic disease (common in this population); pancreatitis; mitochondrial disease",
+          "monitoring": "LFTs, ammonia, platelets; hepatotoxicity risk higher in alcoholic liver disease; pancreatitis risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Levetiracetam IV",
+          "route": "IV",
+          "indication": "Adjunctive seizure prophylaxis; NOT a substitute for benzodiazepines for withdrawal management; may be considered if concurrent epilepsy diagnosis or concern for non-withdrawal seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV q12h; does NOT treat withdrawal syndrome itself; use as adjunct only",
+            "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+          },
+          "contraindications": "Renal impairment (adjust dose if CrCl <50)",
+          "monitoring": "Behavioral changes; renal function; does NOT replace benzodiazepines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Carbamazepine PO",
+          "route": "PO",
+          "indication": "Alternative/adjunctive for mild-moderate withdrawal; may reduce withdrawal severity and seizure risk; evidence in European literature",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Carbamazepine PO 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 200 mg TID on day 1; may increase to 400 mg TID; taper over 5-7 days; can be used alone for mild withdrawal or as adjunct",
+            "orderSentence": "Carbamazepine PO 200 mg PO"
+          },
+          "contraindications": "Hepatic disease; bone marrow suppression; AV block; HLA-B*1502 positive (Asian populations)",
+          "monitoring": "CBC, LFTs, sodium (hyponatremia risk); drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin PO",
+          "route": "PO",
+          "indication": "Adjunctive for mild-moderate withdrawal symptoms; may reduce benzodiazepine requirements; limited evidence for seizure prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300-600 mg",
+                "orderSentence": "Gabapentin PO 300-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300-600 mg TID; may increase to 900 mg TID; taper over 5-7 days; limited evidence for seizure prevention; better evidence for anxiety/insomnia symptoms",
+            "orderSentence": "Gabapentin PO 300-600 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose)",
+          "monitoring": "Sedation; renal function; NOT a substitute for benzodiazepines in moderate-severe withdrawal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consult for first-time seizure evaluation to exclude non-withdrawal etiology and guide workup",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Addiction medicine or psychiatry consult for alcohol use disorder treatment initiation (naltrexone, acamprosate, medication-assisted treatment)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consult for substance abuse resources, rehabilitation program referral, and discharge planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology/Hepatology referral if liver disease identified (elevated LFTs, cirrhosis on imaging, coagulopathy)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/Dietitian consult for malnutrition assessment and refeeding syndrome prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "ICU consult if CIWA-Ar >20, recurrent seizures despite treatment, or hemodynamic instability",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for fall risk assessment and gait evaluation if ataxia or peripheral neuropathy present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Outpatient neurology follow-up in 2-4 weeks for seizure evaluation completion (MRI, EEG review) and determination if chronic ASM therapy needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primary care follow-up within 1 week of discharge for ongoing alcohol cessation support and medical management",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol treatment program referral (inpatient rehabilitation, intensive outpatient program, or Alcoholics Anonymous)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if another seizure occurs, seizure lasts >5 minutes, difficulty breathing, persistent confusion, chest pain, or severe tremors/hallucinations (may indicate progression to delirium tremens)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology; seizures impair driving safety and most states require seizure-free interval",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop drinking alcohol abruptly without medical supervision as this can provoke seizures and life-threatening withdrawal (seek medical detoxification)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all medications exactly as prescribed, especially benzodiazepines during the taper period; do NOT stop benzodiazepines abruptly",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid operating heavy machinery, working at heights, swimming alone, or bathing alone until seizure-free and cleared by neurology",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inform family members or housemates about seizure first aid: stay with person, protect head, do NOT put anything in mouth, time the seizure, call 911 if seizure lasts >5 minutes",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Eat regular balanced meals to prevent hypoglycemia and maintain electrolyte balance; malnutrition increases seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep follow-up appointments with neurology and addiction medicine; recurrent withdrawal episodes worsen seizure severity via kindling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear medical identification bracelet indicating seizure history",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Understand that each episode of alcohol withdrawal increases future seizure risk (kindling phenomenon); this is a progressive condition",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Alcohol cessation is the definitive treatment and most important intervention to prevent recurrent withdrawal seizures",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Supervised medical detoxification for future alcohol cessation attempts to prevent withdrawal seizures and delirium tremens",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Balanced nutrition with emphasis on thiamine-containing foods (whole grains, legumes, lean meats) to rebuild depleted stores",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep hygiene: maintain regular sleep schedule; sleep deprivation independently lowers seizure threshold",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thiamine supplementation 100 mg PO daily indefinitely if continued alcohol use or malnutrition risk persists",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Folic acid supplementation 1 mg PO daily for chronic deficiency prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Avoid illicit drugs (especially stimulants: cocaine, amphetamines) which independently lower seizure threshold",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and coping strategies as alternatives to alcohol use; consider cognitive behavioral therapy (CBT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety modifications: remove sharp furniture edges, avoid glass shower doors, keep bathroom door unlocked due to seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular exercise to improve overall health and support alcohol recovery; avoid extreme exertion that leads to dehydration",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Engage with peer support groups (Alcoholics Anonymous, SMART Recovery) for sustained sobriety",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medications that lower seizure threshold (tramadol, bupropion at high doses, certain antipsychotics) without neurology guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Epilepsy (new-onset or undiagnosed)",
+      "features": "Focal onset features, aura, focal neurologic findings, seizures not temporally related to withdrawal timeline (6-48h)",
+      "tests": "MRI brain, EEG, detailed seizure semiology; focal epileptiform discharges on EEG"
+    },
+    {
+      "diagnosis": "Subdural hematoma (acute or chronic)",
+      "features": "History of falls or trauma (may be unrecognized); focal neurologic deficits; headache",
+      "tests": "CT head (STAT); chronic SDH common in alcoholics"
+    },
+    {
+      "diagnosis": "Hypoglycemia",
+      "features": "Diaphoresis, tremor, confusion; rapid improvement with glucose correction",
+      "tests": "Fingerstick glucose; resolves with dextrose"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy (hepatic)",
+      "features": "Asterixis, gradual onset, jaundice, ascites; no discrete seizure activity; elevated ammonia",
+      "tests": "Ammonia level, LFTs, abdominal exam; EEG shows triphasic waves"
+    },
+    {
+      "diagnosis": "Delirium tremens",
+      "features": "Occurs later (48-96h); prominent hallucinations, severe autonomic instability, agitation; altered sensorium is continuous (not post-ictal)",
+      "tests": "CIWA-Ar scoring; clinical timeline; seizures may precede DTs"
+    },
+    {
+      "diagnosis": "Meningitis/Encephalitis",
+      "features": "Fever, nuchal rigidity, photophobia; may have rash; progressive altered mental status",
+      "tests": "LP with CSF analysis; blood cultures; BioFire ME Panel"
+    },
+    {
+      "diagnosis": "Wernicke encephalopathy",
+      "features": "Oculomotor dysfunction (nystagmus, ophthalmoplegia), ataxia, confusion; may coexist with withdrawal seizures",
+      "tests": "MRI brain (thalamic/mammillary body changes); thiamine level; clinical response to thiamine"
+    },
+    {
+      "diagnosis": "Toxic ingestion (methanol, ethylene glycol)",
+      "features": "Anion gap metabolic acidosis, osmolar gap, visual disturbance (methanol), renal failure (ethylene glycol)",
+      "tests": "Osmolarity, osmolar gap, specific levels if available; ABG"
+    },
+    {
+      "diagnosis": "Cocaine or amphetamine-induced seizure",
+      "features": "Sympathomimetic signs (tachycardia, hypertension, mydriasis); seizure during intoxication rather than withdrawal",
+      "tests": "Urine drug screen; clinical timeline (seizure during use, not after stopping)"
+    },
+    {
+      "diagnosis": "Traumatic brain injury",
+      "features": "History of head trauma, focal deficits, scalp laceration/hematoma; may be unrecognized in intoxicated patients",
+      "tests": "CT head; clinical exam for signs of trauma"
+    },
+    {
+      "diagnosis": "Psychogenic non-epileptic spells",
+      "features": "Prolonged duration, asynchronous movements, eye closure, preserved awareness with bilateral movements, no post-ictal confusion",
+      "tests": "Video-EEG; normal prolactin drawn within 20 min"
+    },
+    {
+      "diagnosis": "Hyponatremia-induced seizure",
+      "features": "Sodium <120 mEq/L; gradual or rapid onset depending on acuity; often with beer potomania or SIADH",
+      "tests": "Serum sodium, osmolality; clinical response to sodium correction"
+    },
+    {
+      "diagnosis": "Isoniazid toxicity",
+      "features": "History of TB treatment, refractory seizures, metabolic acidosis; pyridoxine-responsive",
+      "tests": "Medication history; responds to pyridoxine (vitamin B6)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Benzodiazepines are first-line treatment for alcohol withdrawal seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Mayo-Smith MF. NEJM 1997;337:689-695](https://pubmed.ncbi.nlm.nih.gov/9278467/)"
+    },
+    {
+      "recommendation": "Symptom-triggered therapy (CIWA-Ar) reduces total benzodiazepine dose and treatment duration vs fixed-schedule dosing",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Saitz R et al. JAMA 1994;272:519-523](https://pubmed.ncbi.nlm.nih.gov/8046805/)"
+    },
+    {
+      "recommendation": "Phenytoin is NOT effective for alcohol withdrawal seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Rathlev NK et al. Ann Emerg Med 1994;24:116-118](https://pubmed.ncbi.nlm.nih.gov/8010553/); [Chance JF. Ann Emerg Med 1991;20:520-522](https://pubmed.ncbi.nlm.nih.gov/2024791/)"
+    },
+    {
+      "recommendation": "Lorazepam IV reduces seizure recurrence in alcohol withdrawal",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[D'Onofrio G et al. Ann Emerg Med 1999;34:725-731](https://pubmed.ncbi.nlm.nih.gov/10577399/)"
+    },
+    {
+      "recommendation": "High-dose IV thiamine (500 mg TID) for Wernicke encephalopathy prevention in at-risk patients",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Ambrose ML et al. J Clin Neurosci 2001;8:256-259](https://pubmed.ncbi.nlm.nih.gov/11386801/); [Thomson AD et al. Alcohol Alcohol 2002;37:513-521](https://pubmed.ncbi.nlm.nih.gov/12414541/)"
+    },
+    {
+      "recommendation": "Alcohol withdrawal seizures occur in 6-48 hours after last drink; peak at 12-24 hours",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Victor M, Brausch C. Electroencephalogr Clin Neurophysiol 1967;22:63-70](https://pubmed.ncbi.nlm.nih.gov/4163649/)"
+    },
+    {
+      "recommendation": "Kindling phenomenon: progressive worsening of withdrawal with repeated episodes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Ballenger JC, Post RM. Br J Psychiatry 1978;133:1-14](https://pubmed.ncbi.nlm.nih.gov/352467/)"
+    },
+    {
+      "recommendation": "CT head recommended for all first alcohol withdrawal seizures due to high incidence of concurrent traumatic pathology",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Earnest MP et al. Neurology 1988;38:1561-1565](https://pubmed.ncbi.nlm.nih.gov/3419599/)"
+    },
+    {
+      "recommendation": "Magnesium supplementation for alcohol withdrawal",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Wilson A, Bhagwan T. Cochrane Database Syst Rev 2001](https://pubmed.ncbi.nlm.nih.gov/11279756/)"
+    },
+    {
+      "recommendation": "Phenobarbital as adjunct or alternative for severe alcohol withdrawal",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Tidwell WP et al. Ann Pharmacother 2018;52:57-65](https://pubmed.ncbi.nlm.nih.gov/28886676/)"
+    },
+    {
+      "recommendation": "ASAM Clinical Practice Guideline on alcohol withdrawal management",
+      "evidenceLevel": "Guideline",
+      "source": "[ASAM 2020 Clinical Practice Guideline](https://pubmed.ncbi.nlm.nih.gov/31916890/)"
+    },
+    {
+      "recommendation": "ACEP Clinical Policy on alcohol withdrawal management",
+      "evidenceLevel": "Guideline",
+      "source": "[Wolf SJ et al. Ann Emerg Med 2022;79:e1-e26](https://pubmed.ncbi.nlm.nih.gov/34112510/)"
+    },
+    {
+      "recommendation": "Dexmedetomidine as adjunctive therapy reduces benzodiazepine requirements in alcohol withdrawal",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Mueller SW et al. Pharmacotherapy 2014;34:127-135](https://pubmed.ncbi.nlm.nih.gov/23907726/)"
+    },
+    {
+      "recommendation": "Gabapentin and carbamazepine may have role in mild-moderate alcohol withdrawal",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Myrick H et al. Am J Psychiatry 2009;166:1025-1034](https://pubmed.ncbi.nlm.nih.gov/19487400/)"
+    },
+    {
+      "recommendation": "Alcohol withdrawal seizures are provoked/acute symptomatic seizures and do not establish a diagnosis of epilepsy",
+      "evidenceLevel": "Class I",
+      "source": "[Beghi E et al. Epilepsia 2010;51:671-675](https://pubmed.ncbi.nlm.nih.gov/19874385/)"
+    },
+    {
+      "recommendation": "Thiamine must be given before glucose to prevent precipitating Wernicke encephalopathy",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; [Galvin R et al. Eur J Intern Med 2010;21:509-514](https://pubmed.ncbi.nlm.nih.gov/21111935/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "CIWA-Ar score",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h during active withdrawal, then q4h when CIWA <10 for 24h",
+      "action": "Administer benzodiazepines per CIWA protocol; CIWA >20 → consider ICU"
+    },
+    {
+      "item": "Neurologic exam (mental status, focal deficits)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2h in ED; q4h on floor; each visit OPD",
+      "action": "Persistent AMS → cEEG; focal findings → urgent imaging"
+    },
+    {
+      "item": "Vital signs (HR, BP, RR, temp)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Continuous in ED/ICU; q1-2h on floor during active withdrawal",
+      "action": "Tachycardia/hypertension → increase benzodiazepines; fever → infection workup"
+    },
+    {
+      "item": "Pulse oximetry",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous in ED/ICU; q4h on floor",
+      "action": "Supplemental O2; assess airway; chest X-ray"
+    },
+    {
+      "item": "Seizure recurrence",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Continuous observation during withdrawal period (48-72h)",
+      "action": "Additional benzodiazepine dosing; consider cEEG; ICU if recurrent"
+    },
+    {
+      "item": "Glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6h during active withdrawal; QAC if on D5 fluids",
+      "action": "Dextrose; adjust IV fluids"
+    },
+    {
+      "item": "Electrolytes (Na, K, Mg, Ca, Phos)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q6-12h during active withdrawal; daily once stable",
+      "action": "Replete deficiencies; monitor sodium correction rate"
+    },
+    {
+      "item": "LFTs",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Baseline, then q24-48h if abnormal",
+      "action": "Adjust medications metabolized hepatically; hepatology consult if worsening"
+    },
+    {
+      "item": "Cardiac telemetry",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous during active withdrawal",
+      "action": "Treat arrhythmia; correct electrolytes; avoid QT-prolonging medications"
+    },
+    {
+      "item": "Respiratory rate and pattern",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous with benzodiazepine use",
+      "action": "Reduce benzodiazepine dose; naloxone if opioid co-ingestion suspected; consider intubation"
+    },
+    {
+      "item": "Fluid balance (I/O)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q8h on floor; q1-4h in ICU",
+      "action": "Adjust IV fluids; assess for renal function"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Single withdrawal seizure; returned to baseline neurologic function; CIWA <10 for >24 hours; stable vital signs; able to tolerate oral medications; no dangerous structural findings on CT; reliable adult supervision for 72 hours; outpatient follow-up arranged (neurology within 2-4 weeks, PCP within 1 week); understands return precautions and driving restriction; willing to engage with alcohol cessation resources"
+    },
+    {
+      "disposition": "**Admit to floor (observation/telemetry)**",
+      "criteria": "Multiple seizures; prolonged post-ictal period (>2 hours); CIWA 10-20 requiring ongoing benzodiazepine titration; electrolyte abnormalities requiring IV correction; new structural lesion on imaging requiring monitoring; unable to tolerate oral medications; no reliable supervision at home; history of delirium tremens or complicated withdrawal; significant comorbidities (liver disease, malnutrition)"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Recurrent seizures despite benzodiazepine treatment; status epilepticus; CIWA >20 requiring high-dose or continuous benzodiazepine infusion; hemodynamic instability; respiratory compromise; delirium tremens; need for continuous EEG monitoring; phenobarbital or propofol infusion required; aspiration pneumonia with respiratory failure"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neurology unavailable for consultation; continuous EEG monitoring unavailable; ICU services unavailable for refractory withdrawal; need for neurosurgical intervention (e.g., subdural hematoma evacuation)"
+    }
+  ]
+}

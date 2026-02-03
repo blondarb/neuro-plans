@@ -1,0 +1,1966 @@
+{
+  "id": "stiff-person-syndrome",
+  "title": "Stiff Person Syndrome",
+  "version": "1.1",
+  "icd10": [
+    "** G25.82 (Stiff-man syndrome)"
+  ],
+  "scope": "** Diagnostic workup and management of suspected or confirmed Stiff Person Syndrome and its spectrum disorders (classic SPS, stiff-limb syndrome, PERM) across all care settings. Covers initial evaluation, antibody testing (anti-GAD65, anti-amphiphysin, anti-DPPX, anti-glycine receptor), EMG findings, first-line symptomatic therapy (benzodiazepines, baclofen), immunotherapy (IVIg, rituximab, plasmapheresis), and management of acute exacerbations including status spasticus. For isolated cerebellar ataxia with anti-GAD antibodies or autoimmune epilepsy with anti-GAD antibodies, use respective templates. For tetanus or functional neurological disorder evaluation, use respective templates.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection screen; pre-immunotherapy assessment",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic screen; renal/hepatic function; pre-immunotherapy baseline",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Anti-GAD65 antibodies (serum) (CPT 86235)",
+          "rationale": "Primary diagnostic antibody; present in ~80% of classic SPS; titers >2000 IU/mL highly suggestive of SPS (vs. lower titers in T1DM, cerebellar ataxia)",
+          "target": "Positive, high titer (>2000 IU/mL)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CK (creatine kinase) (CPT 82550)",
+          "rationale": "Rhabdomyolysis from severe spasms; elevated during acute exacerbations",
+          "target": "Normal or elevated during spasms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Screen for concurrent type 1 diabetes mellitus (30-60% comorbidity with SPS); pre-treatment baseline",
+          "target": "Normal or elevated (if T1DM)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Type 1 diabetes mellitus screening and monitoring (common autoimmune comorbidity)",
+          "target": "<5.7% (normal); >6.5% suggests DM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Autoimmune thyroiditis screening (common comorbidity)",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Free T4 (CPT 84439)",
+          "rationale": "Thyroid function if TSH abnormal",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory marker; baseline",
+          "target": "Normal to mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; infection screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia can exacerbate spasms; seizure threshold",
+          "target": "Normal (1.8-2.4 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium (total and ionized) (CPT 82310+82330)",
+          "rationale": "Hypocalcemia exacerbates spasms; metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Metabolic screen",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Lactic acidosis from prolonged severe spasms",
+          "target": "Normal (<2 mmol/L)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "rationale": "Coagulation status pre-LP",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "Myoglobinuria screen if rhabdomyolysis suspected; infection screen",
+          "target": "Negative for myoglobin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures (x2 sets) (CPT 87040)",
+          "rationale": "Rule out infection (especially tetanus differential; pre-immunosuppression)",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "Myelopathy/neuropathy differential",
+          "target": "Normal (>300 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Anti-amphiphysin antibodies (serum) (CPT 86235)",
+          "rationale": "Paraneoplastic SPS marker; associated with breast cancer, lung cancer, thymoma; present in ~5% of SPS",
+          "target": "Negative (positive indicates paraneoplastic variant)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-glycine receptor (GlyR) antibodies (serum) (CPT 86235)",
+          "rationale": "PERM variant marker; associated with brainstem involvement, myoclonus, autonomic dysfunction",
+          "target": "Negative (positive suggests PERM variant)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-DPPX antibodies (serum) (CPT 86235)",
+          "rationale": "PERM variant with hyperexcitability, GI dysmotility, cognitive changes",
+          "target": "Negative (positive suggests PERM)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-GABA-A receptor antibodies (CPT 86235)",
+          "rationale": "Associated with SPS spectrum; seizures and encephalopathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-GABA-B receptor antibodies (CPT 86235)",
+          "rationale": "Associated with SPS spectrum; seizures; paraneoplastic",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (Hu, Yo, Ri, CV2/CRMP5, Ma2) (CPT 86255)",
+          "rationale": "Comprehensive paraneoplastic screen; amphiphysin-positive SPS is paraneoplastic",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anti-thyroid peroxidase (anti-TPO) (CPT 86376)",
+          "rationale": "Autoimmune thyroiditis comorbidity screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-thyroglobulin antibodies (CPT 86800)",
+          "rationale": "Autoimmune thyroiditis comorbidity screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-parietal cell antibodies (CPT 86255)",
+          "rationale": "Pernicious anemia comorbidity screen (autoimmune gastritis)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-intrinsic factor antibodies (CPT 86340)",
+          "rationale": "Pernicious anemia comorbidity screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Insulin antibodies (CPT 86337)",
+          "rationale": "Type 1 diabetes autoimmune panel",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Islet cell antibodies (ICA) (CPT 86341)",
+          "rationale": "Type 1 diabetes autoimmune panel",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Autoimmune comorbidity screen (lupus, Sjogren)",
+          "target": "Negative or low titer",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) (CPT 86334)",
+          "rationale": "Monoclonal gammopathy screen; lymphoma differential",
+          "target": "Normal pattern",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784)",
+          "rationale": "Baseline before IVIg; hypogammaglobulinemia screen before rituximab",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV (CPT 87389)",
+          "rationale": "Immunocompromised screen",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen + core antibody (CPT 80074)",
+          "rationale": "Reactivation risk before rituximab or immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 80074)",
+          "rationale": "Screen before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "QuantiFERON-TB Gold (CPT 86480)",
+          "rationale": "TB exclusion before immunosuppression",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Anti-GAD65 antibodies (paired CSF and serum with index) (CPT 86235)",
+          "rationale": "Intrathecal anti-GAD production; CSF anti-GAD supports diagnosis; serum may be negative in rare cases with positive CSF",
+          "target": "CSF anti-GAD positive; intrathecal synthesis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-RIG1 (CASPR2) antibodies (CPT 86235)",
+          "rationale": "Neuromyotonia/Morvan syndrome differential; overlaps with SPS spectrum",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-LGI1 antibodies (CPT 86235)",
+          "rationale": "Autoimmune encephalitis differential with seizures and movement disorder",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for hereditary hyperekplexia (GLRA1, GLRB, SLC6A5)",
+          "rationale": "Hereditary hyperekplexia differential in early-onset cases",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Stiff person syndrome-specific autoantibody panel (comprehensive)",
+          "rationale": "Commercial panels including GAD65, amphiphysin, DPPX, GlyR, GABA-A, GABA-B",
+          "target": "Identifies specific antibody profile",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum free light chains (kappa/lambda)",
+          "rationale": "Monoclonal gammopathy and lymphoproliferative disorder screen",
+          "target": "Normal ratio",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Catecholamines (plasma) and metanephrines",
+          "rationale": "Pheochromocytoma if paroxysmal hypertension with spasms (rare differential)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Assess for elevated ICP; typically normal in SPS",
+          "target": "10-20 cm H2O (normal)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "Rule out infection and inflammation; usually normal or mild pleocytosis in SPS",
+          "target": "WBC <5 (usually normal); RBC 0",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "May be mildly elevated; rule out infectious meningitis",
+          "target": "Normal to mildly elevated (15-60 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "Rule out infectious meningitis; typically normal in SPS",
+          "target": "Normal (>60% of serum)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF anti-GAD65 antibodies (CPT 86235)",
+          "rationale": "Intrathecal anti-GAD synthesis; may be positive even when serum is negative; calculate CSF/serum ratio to confirm intrathecal production",
+          "target": "Positive (supports diagnosis); calculate index",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF AND paired serum) (CPT 83916)",
+          "rationale": "Intrathecal IgG synthesis; may show CSF-specific bands in SPS; helps distinguish from MS",
+          "target": "May show CSF-specific bands",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index (CPT 83787)",
+          "rationale": "Intrathecal antibody synthesis",
+          "target": "May be elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Rule out bacterial meningitis (tetanus differential)",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF cytology (CPT 88104)",
+          "rationale": "Malignancy exclusion if paraneoplastic suspected",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF flow cytometry (CPT 88184)",
+          "rationale": "CNS lymphoma exclusion if atypical presentation",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without gadolinium (CPT 70553)",
+          "timing": "Within 24-48h",
+          "target": "Typically NORMAL in classic SPS (important negative finding); may show cerebellar atrophy if anti-GAD cerebellar involvement; rule out structural lesions, MS, myelopathy",
+          "contraindications": "GFR <30; gadolinium allergy; pacemaker",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI spine (cervical and thoracic) with and without gadolinium (CPT 72156+72157)",
+          "timing": "Within 24-48h",
+          "target": "Typically NORMAL in classic SPS; rule out myelopathy (compressive, inflammatory, vascular); may show cord signal in PERM variant",
+          "contraindications": "GFR <30; gadolinium allergy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "EMG/NCS (electromyography/nerve conduction studies) (CPT 95907-95913)",
+          "timing": "Within 1-7 days",
+          "target": "Continuous motor unit activity (CMUA) at rest in agonist and antagonist muscles simultaneously; no voluntary suppression; involuntary co-contraction pattern; motor units normal morphology",
+          "contraindications": "Anticoagulation (relative for needle EMG)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis with contrast (CPT 74178)",
+          "timing": "Within 1-2 weeks",
+          "target": "Malignancy screen (breast, lung, thymoma, lymphoma); especially if anti-amphiphysin positive",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Baseline rhythm; QTc assessment; autonomic dysfunction",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Immediate",
+          "target": "Pulmonary pathology screen; malignancy screen",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Mammography (females) (CPT 77067)",
+          "timing": "Within 2-4 weeks",
+          "target": "Breast cancer screening (paraneoplastic SPS, especially anti-amphiphysin)",
+          "contraindications": "Breast implants (relative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest with contrast (if not done above) (CPT 71260)",
+          "timing": "Within 1-2 weeks",
+          "target": "Thymoma; lung cancer; mediastinal lymphadenopathy",
+          "contraindications": "Contrast allergy; renal insufficiency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PET/CT (whole body) (CPT 78816)",
+          "timing": "Within 2-4 weeks",
+          "target": "Occult malignancy (if paraneoplastic SPS suspected or anti-amphiphysin positive); breast, lung, thymoma, lymphoma",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pelvic ultrasound (females) (CPT 76856)",
+          "timing": "Within 2-4 weeks",
+          "target": "Ovarian cancer screen (paraneoplastic)",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Testicular ultrasound (males, young) (CPT 76870)",
+          "timing": "Within 2-4 weeks",
+          "target": "Testicular cancer screen if paraneoplastic suspected",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transvaginal ultrasound (females) (CPT 76830)",
+          "timing": "Within 2-4 weeks",
+          "target": "Ovarian pathology; paraneoplastic screen",
+          "contraindications": "Patient refusal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (routine or continuous) (CPT 95816 or 95711)",
+          "timing": "Within 1-7 days",
+          "target": "Rule out epileptic origin of spasms; PERM variant may show encephalopathic changes; differentiate from epileptic myoclonus",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Pulmonary function tests (PFTs) with inspiratory/expiratory pressures (CPT 94010+94060)",
+          "timing": "Within 1-2 weeks",
+          "target": "Respiratory muscle function; restrictive pattern from chest wall rigidity; assess ventilatory capacity",
+          "contraindications": "Unable to cooperate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Skin biopsy (punch) for small fiber neuropathy (CPT 88305)",
+          "timing": "Within 2-4 weeks",
+          "target": "Intraepidermal nerve fiber density; SPS can coexist with small fiber neuropathy",
+          "contraindications": "Coagulopathy; skin infection at site",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "FDG-PET brain",
+          "timing": "If atypical presentation",
+          "target": "Cerebellar or brainstem hypermetabolism (PERM); cortical dysfunction",
+          "contraindications": "Uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI breast (if mammography inconclusive) (CPT 77049)",
+          "timing": "If paraneoplastic suspected",
+          "target": "Occult breast cancer",
+          "contraindications": "Claustrophobia; breast implants (relative)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Video-EEG monitoring (long-term) (CPT 95711)",
+          "timing": "If diagnosis uncertain",
+          "target": "Distinguish epileptic vs. non-epileptic spasms; characterize movement phenomenology",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Somatosensory evoked potentials (SSEPs) (CPT 95925+95926)",
+          "timing": "If PERM suspected",
+          "target": "Central sensory pathway assessment; spinal cord involvement",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Diazepam",
+          "route": "IV",
+          "indication": "Acute severe spasms; status spasticus; first-line benzodiazepine for SPS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Diazepam 5-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-10 mg IV push over 2-5 minutes; may repeat q5-10 min PRN; max 30 mg in first hour; then transition to scheduled dosing; typical maintenance 10-30 mg PO TID-QID",
+            "orderSentence": "Diazepam 5-10 mg IV"
+          },
+          "contraindications": "Respiratory depression without ventilator support; acute narrow-angle glaucoma; severe hepatic insufficiency; myasthenia gravis",
+          "monitoring": "Respiratory rate; SpO2; sedation level; BP; airway patency; have flumazenil available",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Acute spasms; alternative to diazepam if IV diazepam unavailable; status spasticus",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Lorazepam 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV push over 2 minutes; may repeat q5-10 min; max 8 mg in first hour; less lipophilic than diazepam (shorter CNS duration)",
+            "orderSentence": "Lorazepam 2-4 mg IV"
+          },
+          "contraindications": "Respiratory depression without ventilator support; acute narrow-angle glaucoma; severe hepatic insufficiency",
+          "monitoring": "Respiratory rate; SpO2; sedation level; BP; airway patency",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam",
+          "route": "IV",
+          "indication": "Status spasticus requiring continuous infusion; ICU setting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05 mg/kg/hr",
+                "orderSentence": "Midazolam 0.05 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg IV bolus, then 0.05-0.2 mg/kg/hr continuous infusion; titrate to spasm control; taper gradually over days once spasms controlled",
+            "orderSentence": "Midazolam 0.05 mg/kg/hr IV"
+          },
+          "contraindications": "Respiratory depression (requires mechanical ventilation for continuous infusion); acute narrow-angle glaucoma",
+          "monitoring": "Continuous SpO2; respiratory rate; BP; sedation level (RASS); ventilator settings",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Propofol",
+          "route": "IV",
+          "indication": "Refractory status spasticus not responding to benzodiazepines; ICU with mechanical ventilation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mcg/kg/min",
+                "orderSentence": "Propofol 20 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5-1 mg/kg IV bolus, then 20-50 mcg/kg/min infusion; titrate to spasm suppression; max 80 mcg/kg/min; avoid >48 hours at high doses",
+            "orderSentence": "Propofol 20 mcg/kg/min IV"
+          },
+          "contraindications": "Propofol allergy (egg/soy); propofol infusion syndrome risk >48h; hemodynamic instability",
+          "monitoring": "Triglycerides q24h; CK; metabolic panel; lactate; propofol infusion syndrome (fever, rhabdo, metabolic acidosis, cardiac failure); hemodynamics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV crystalloid (normal saline or lactated Ringer)",
+          "route": "IV",
+          "indication": "Rhabdomyolysis prevention and treatment during severe spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mL/hr",
+                "orderSentence": "IV crystalloid (normal saline or lactated Ringer) 250 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 L bolus then 150-250 mL/hr; target urine output >200 mL/hr if CK >5000; add sodium bicarbonate 150 mEq/L NS if myoglobinuria",
+            "orderSentence": "IV crystalloid (normal saline or lactated Ringer) 250 mL/hr IV"
+          },
+          "contraindications": "Heart failure; volume overload",
+          "monitoring": "I/O; CK q6h; BMP q6-12h; urine myoglobin; urine output",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dantrolene",
+          "route": "IV",
+          "indication": "Refractory spasms with hyperthermia or malignant hyperthermia-like presentation during severe SPS crisis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2.5 mg/kg",
+                "orderSentence": "Dantrolene 1-2.5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2.5 mg/kg IV push; may repeat q5-10 min; max 10 mg/kg; transition to PO 25-100 mg QID when stabilized",
+            "orderSentence": "Dantrolene 1-2.5 mg/kg IV"
+          },
+          "contraindications": "Hepatic disease; active hepatitis",
+          "monitoring": "LFTs; hepatotoxicity (BLACK BOX); CK; temperature",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Diazepam",
+          "route": "PO",
+          "indication": "First-line symptomatic therapy for rigidity and spasms in SPS; GABAergic mechanism addresses pathophysiology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Diazepam 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; titrate by 5 mg/dose every 3-5 days as tolerated; typical effective dose 20-60 mg/day in divided doses; some patients require up to 100+ mg/day; max limited by sedation",
+            "orderSentence": "Diazepam 5 mg PO"
+          },
+          "contraindications": "Respiratory depression; acute narrow-angle glaucoma; severe hepatic insufficiency; myasthenia gravis; severe OSA without CPAP",
+          "monitoring": "Sedation; respiratory status; falls; cognitive function; tolerance; dependence (do NOT abruptly discontinue)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Adjunctive to benzodiazepines for rigidity and spasms; GABA-B agonist",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; increase by 5 mg/dose every 3-5 days; target 40-80 mg/day in divided doses; max 80 mg/day (higher doses off-label with close monitoring)",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment (reduce dose); abrupt withdrawal causes seizures and hallucinations",
+          "monitoring": "Sedation; dizziness; weakness; renal function; do NOT discontinue abruptly (withdrawal seizures, hallucinations, autonomic instability)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Adjunctive therapy for rigidity, spasms, and neuropathic pain; anticonvulsant with GABA-modulating properties",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Adjunctive therapy for rigidity, spasms, and neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase q1wk; target 150-300 mg BID; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose); Class V controlled substance",
+          "monitoring": "Sedation; weight gain; peripheral edema; dizziness; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Adjunctive therapy for rigidity and spasms; alpha-2 adrenergic agonist muscle relaxant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg PO TID; increase by 2-4 mg q3-7d; max 36 mg/day divided TID; take consistently with or without food",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Concurrent fluvoxamine or ciprofloxacin (CYP1A2 inhibitors); hepatic impairment",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months, then periodically; BP (hypotension); sedation; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Adjunctive benzodiazepine for myoclonus (especially PERM variant); nocturnal spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.5 mg PO BID; increase by 0.5 mg q3-5d; max 6 mg/day; useful for myoclonus in PERM variant",
+            "orderSentence": "Clonazepam 0.5 mg PO"
+          },
+          "contraindications": "Respiratory depression; severe hepatic disease; acute narrow-angle glaucoma",
+          "monitoring": "Sedation; ataxia; cognitive impairment; respiratory status; do NOT discontinue abruptly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "PO",
+          "indication": "Myoclonus treatment (especially PERM variant); anti-seizure prophylaxis if cortical involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase by 500 mg/day q1-2wk; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 500 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Behavioral changes (rage, irritability); suicidality; renal function",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Comorbid neuropathic pain; depression and anxiety (common in SPS)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg PO daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "BP; hepatic function; serotonin syndrome risk; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Anxiety and depression comorbidity management; high prevalence in SPS patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 25-50 mg q1-2wk; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; concurrent pimozide",
+          "monitoring": "Suicidality monitoring; serotonin syndrome risk; hyponatremia (SIADH) in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "IVIg (intravenous immunoglobulin)",
+          "route": "IV",
+          "indication": "First-line immunotherapy for SPS; Class I evidence (Dalakas 2001 NEJM RCT); reduces stiffness and improves function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg/day",
+                "orderSentence": "IVIg (intravenous immunoglobulin) 0.4 g/kg/day IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV for 5 days (total 2 g/kg); infuse initial rate 0.5 mL/kg/hr, increase q30min by 0.5 mL/kg/hr to max 4 mL/kg/hr; premedicate with acetaminophen and diphenhydramine; repeat every 4-6 weeks for maintenance",
+            "orderSentence": "IVIg (intravenous immunoglobulin) 0.4 g/kg/day IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk -- check IgA level); renal insufficiency (use sucrose-free); hypercoagulable states (thrombosis risk)",
+          "monitoring": "Renal function (BUN/Cr before each cycle); CBC; vital signs during infusion; headache (aseptic meningitis); DVT/PE risk; hemolysis (DAT, LDH, haptoglobin); IgA level before first infusion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Plasmapheresis (PLEX)",
+          "route": "IV",
+          "indication": "Acute severe SPS or status spasticus not responding to benzodiazepines and IVIg; removes pathogenic antibodies",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 plasma volumes",
+                "orderSentence": "Plasmapheresis (PLEX) 1-1.5 plasma volumes IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 exchanges over 10-14 days (every other day); 1-1.5 plasma volume exchanges per session; albumin replacement (NOT FFP unless coagulopathy); central venous catheter required",
+            "orderSentence": "Plasmapheresis (PLEX) 1-1.5 plasma volumes IV"
+          },
+          "contraindications": "Active sepsis; hemodynamic instability; heparin allergy (if used); unable to establish vascular access",
+          "monitoring": "BP and vitals during sessions; calcium (citrate-induced hypocalcemia); fibrinogen; coagulation studies; electrolytes; CBC; line infections",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intrathecal baclofen (ITB pump)",
+          "route": "IT",
+          "indication": "Refractory rigidity and spasms not controlled by maximal oral medications; severe functional impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mcg",
+                "orderSentence": "Intrathecal baclofen (ITB pump) 50-100 mcg IT"
+              }
+            ],
+            "route": "IT",
+            "instructions": "Trial: 50-100 mcg intrathecal bolus; if positive response, implant programmable pump; typical maintenance 100-800 mcg/day continuous infusion; titrate over weeks",
+            "orderSentence": "Intrathecal baclofen (ITB pump) 50-100 mcg IT"
+          },
+          "contraindications": "Active infection; coagulopathy; CSF obstruction; patient unable to return for pump refills",
+          "monitoring": "Pump function and refill schedule; withdrawal symptoms if pump malfunction (medical emergency -- similar to status spasticus); CSF leak; infection; catheter complications",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin A (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal refractory rigidity and spasms; specific muscle group targeting",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-200 units",
+                "orderSentence": "Botulinum toxin A (onabotulinumtoxinA) 50-200 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose varies by muscle group; typical 50-200 units per large muscle (e.g., paraspinal); EMG/ultrasound-guided injection; repeat q12 weeks; onset 3-7 days, peak 2-4 weeks",
+            "orderSentence": "Botulinum toxin A (onabotulinumtoxinA) 50-200 units IM"
+          },
+          "contraindications": "Systemic neuromuscular disease (relative); infection at injection site; known antibodies to botulinum toxin",
+          "monitoring": "Weakness at injection site; dysphagia (if cervical muscles); distant spread effects; antibody development with repeated use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying / Immunotherapy (Long-term)": [
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Second-line immunotherapy for SPS; B-cell depletion reduces anti-GAD production; used when IVIg insufficient or for IVIg-sparing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV x 2 doses (day 0 and day 14); repeat based on CD19/CD20 repopulation or clinical relapse (typically q6 months); premedicate with methylprednisolone 100 mg IV, acetaminophen 650 mg, diphenhydramine 50 mg",
+            "orderSentence": "Rituximab 1000 mg IV"
+          },
+          "pretreatment": "Hepatitis B serology; CBC, CMP; quantitative immunoglobulins (IgG, IgA, IgM); JCV antibody (PML risk); TB screening (QuantiFERON); pregnancy test; vaccination update (before initiating)",
+          "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks; severe hypogammaglobulinemia (IgG <300)",
+          "monitoring": "Hepatitis B surveillance; CBC q2-4 weeks initially; immunoglobulin levels q3-6 months; CD19/CD20 B-cell counts q3 months; infusion reactions (slow rate if reaction); PML surveillance; infection monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "Steroid-sparing immunosuppression; adjunctive to IVIg or rituximab",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg PO BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID (2000-3000 mg/day total); onset of effect 2-3 months",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "pretreatment": "CBC, CMP, LFTs; pregnancy test; hepatitis B/C serology; TB screen",
+          "contraindications": "Pregnancy (Category D -- teratogenic); active infection; concurrent live vaccines",
+          "monitoring": "CBC q2 weeks x 3 months then monthly; LFTs; GI symptoms (diarrhea, nausea); infection surveillance; pregnancy prevention (two forms of contraception)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine",
+          "route": "PO",
+          "indication": "Steroid-sparing agent; adjunctive immunotherapy for SPS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg PO daily; increase by 50 mg every 2 weeks; target 2-3 mg/kg/day; onset of action 3-6 months",
+            "orderSentence": "Azathioprine 50 mg PO"
+          },
+          "pretreatment": "TPMT genotype/activity level; CBC, CMP, LFTs; hepatitis B/C; TB screen",
+          "contraindications": "TPMT deficiency (myelosuppression risk); concurrent allopurinol (reduce dose 75%); pregnancy (relative)",
+          "monitoring": "TPMT genotype before starting; CBC q2 weeks x 2 months then monthly; LFTs monthly; amylase if abdominal pain (pancreatitis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Adjunctive immunosuppression; short-term during acute flares; bridge while waiting for IVIg/rituximab effect; less effective as monotherapy for SPS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg/kg/day",
+                "orderSentence": "Prednisone 0.5-1 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5-1 mg/kg/day (max 60 mg); taper by 10 mg every 2 weeks to 20 mg, then by 5 mg every 2-4 weeks; attempt to discontinue or reach lowest effective dose; avoid prolonged use (less effective for SPS than for other autoimmune conditions)",
+            "orderSentence": "Prednisone 0.5-1 mg/kg/day PO"
+          },
+          "pretreatment": "Active infection; uncontrolled diabetes; avascular necrosis; psychosis from steroids; PUD",
+          "contraindications": "Glucose; BP; weight; mood; bone density (DEXA if >3 months); ophthalmology (cataracts, glaucoma)",
+          "monitoring": "-",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "-"
+        },
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV",
+          "indication": "Severe refractory SPS failing IVIg, rituximab, and other agents; last resort",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly for 6 cycles; pre-hydrate with 1L NS; administer with MESNA for uroprotection; adjust for renal function",
+            "orderSentence": "Cyclophosphamide 750 mg/m2 IV"
+          },
+          "pretreatment": "CBC, CMP, UA before each cycle; pregnancy test; fertility counseling; hepatitis B/C; TB screen",
+          "contraindications": "Pregnancy (Category D); active infection; bone marrow failure; bladder outlet obstruction",
+          "monitoring": "CBC weekly x 4 weeks after each cycle (nadir day 10-14); UA (hemorrhagic cystitis); BMP; LFTs; fertility preservation discussion; malignancy risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (neuroimmunology specialist) for diagnosis confirmation, antibody interpretation, immunotherapy guidance, and long-term management plan",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuromuscular medicine for EMG/NCS to document continuous motor unit activity and confirm electrophysiologic diagnosis",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology or endocrinology for autoimmune comorbidity management (T1DM, thyroiditis, pernicious anemia, vitiligo)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oncology for paraneoplastic evaluation and tumor management if anti-amphiphysin positive or malignancy identified",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait training, flexibility, balance assessment, and fall prevention given rigidity and impaired mobility",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL adaptation, assistive device evaluation, and energy conservation given functional limitations from rigidity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pain management for refractory pain and spasms not responding to first-line agents",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for anxiety and depression management; high prevalence of task-specific phobias and agoraphobia in SPS due to fear of triggering spasms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology for respiratory function assessment if chest wall rigidity compromises ventilation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Anesthesiology consult for intrathecal baclofen pump trial and surgical planning if refractory to oral medications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability resources, home health services, and insurance navigation for IVIg coverage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology for visual assessment if anti-GAD associated optic neuropathy or cerebellar involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infusion center coordination for IVIg, rituximab, or cyclophosphamide outpatient infusions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation for intrathecal baclofen pump implantation if ITB trial successful",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for uncontrolled spasms, difficulty breathing, falls with injury, or inability to walk (may indicate status spasticus requiring ICU care)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "SPS is a chronic, treatable autoimmune condition -- improvement is expected with appropriate therapy but may take weeks to months; this is a lifelong condition requiring ongoing treatment",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop benzodiazepines abruptly as this may trigger life-threatening status spasticus (severe unrelenting spasms, respiratory failure); always taper under physician supervision",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid known triggers for spasms: sudden loud noises, unexpected touch, emotional stress, cold temperatures, sudden movements, and crowded environments",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Report signs of infection immediately (fever >100.4F, cough, dysuria, rash) as immunosuppressive therapy (IVIg, rituximab) increases infection risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until cleared by neurology due to risk of sudden spasms, impaired mobility, and medication sedation effects",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a spasm diary tracking frequency, severity, triggers, and medication effects to guide treatment optimization",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Monitor blood sugars regularly if diabetic or if starting corticosteroids (steroids significantly elevate blood glucose; SPS has high T1DM comorbidity)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid live vaccines while on immunosuppressive therapy including rituximab and mycophenolate; inform all physicians and pharmacists of immunosuppression status",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Carry medical alert identification (bracelet/card) indicating Stiff Person Syndrome, current medications (especially benzodiazepines and immunotherapy), and emergency contact information",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Attend all follow-up appointments -- SPS requires regular monitoring with labs, clinical assessments, and periodic antibody levels",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "In case of surgery or medical procedure, inform anesthesiologist about SPS (risk of exacerbated spasms with certain anesthetic agents; benzodiazepines must NOT be withheld perioperatively)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol as it potentiates benzodiazepine sedation and increases fall risk",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Gentle stretching and range-of-motion exercises daily to maintain flexibility and reduce rigidity; avoid high-impact or startling exercises",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Warm-water pool therapy (aquatic physical therapy) as tolerated -- warmth and buoyancy reduce spasm frequency and severity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures at home (remove loose rugs, adequate lighting, grab bars in bathroom, non-slip mats) given rigidity and balance impairment",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management techniques (meditation, deep breathing, progressive muscle relaxation, cognitive behavioral therapy) as emotional stress is a common spasm trigger",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate sleep (7-8 hours nightly); maintain regular sleep schedule; benzodiazepine dosing may need evening adjustment for nocturnal spasms",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-impact exercise program as tolerated (walking, stationary cycling, yoga with modifications) to prevent deconditioning from immobility",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Temperature regulation: avoid extreme cold which can trigger spasms; dress in layers; maintain comfortable ambient temperature",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Assistive device evaluation (cane, walker, wheelchair) based on functional status and fall risk to maintain independence and safety",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Vaccinations should be up to date before initiating immunosuppressive therapy (pneumococcal, influenza, hepatitis B, COVID-19); avoid live vaccines on immunosuppression",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Bone protection with calcium and vitamin D if on chronic corticosteroids; DEXA scan if steroid use >3 months",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to improve respiratory function and reduce infection risk during immunosuppression",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y",
+          "ICU": "-"
+        },
+        {
+          "item": "Support group referral: Stiff Person Syndrome Research Foundation (stiffperson.org) for peer support and disease education",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "Y",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Multiple sclerosis (MS)",
+      "features": "Relapsing-remitting course; white matter lesions on MRI; oligoclonal bands; optic neuritis; Lhermitte sign; spasticity from upper motor neuron damage (not rigidity)",
+      "tests": "MRI brain/spine (periventricular lesions, Dawson fingers); CSF oligoclonal bands; anti-GAD negative; no continuous motor unit activity on EMG"
+    },
+    {
+      "diagnosis": "Myelopathy (compressive or inflammatory)",
+      "features": "Upper motor neuron signs (hyperreflexia, Babinski, spasticity); sensory level; bowel/bladder dysfunction; structural cause on imaging",
+      "tests": "MRI spine (cord compression or signal change); normal EMG (no CMUA); anti-GAD negative"
+    },
+    {
+      "diagnosis": "Tetanus",
+      "features": "Acute onset; history of wound/infection; trismus (lockjaw); opisthotonus; risus sardonicus; no antibody elevation; self-limited with treatment",
+      "tests": "Wound culture; tetanus toxin assay; history of incomplete vaccination; anti-GAD negative; EMG may show CMUA but resolves with treatment"
+    },
+    {
+      "diagnosis": "Neuromyotonia (Isaacs syndrome)",
+      "features": "Peripheral nerve hyperexcitability; myokymia; fasciculations; sweating; muscle cramps; anti-CASPR2/anti-LGI1 antibodies; no axial rigidity predominance",
+      "tests": "EMG (neuromyotonic discharges, myokymic discharges); anti-CASPR2/LGI1 antibodies; anti-GAD negative; distinct EMG pattern from SPS"
+    },
+    {
+      "diagnosis": "Functional neurological disorder (FND)",
+      "features": "Inconsistent symptoms; entrainment; distractibility; positive Hoover sign; no continuous motor unit activity at rest; normal antibodies",
+      "tests": "EMG normal at rest; anti-GAD negative; positive functional neurological examination findings (Hoover, tremor entrainment); psychiatric comorbidity common"
+    },
+    {
+      "diagnosis": "Primary lateral sclerosis (PLS)",
+      "features": "Progressive spasticity; upper motor neuron signs; no sensory involvement; slow progression over years; no antibody positivity; no episodic spasms",
+      "tests": "EMG (no CMUA; upper motor neuron pattern); anti-GAD negative; MRI (motor cortex atrophy); slow progression"
+    },
+    {
+      "diagnosis": "Hereditary spastic paraplegia (HSP)",
+      "features": "Family history; progressive lower extremity spasticity; insidious onset; genetic mutations identified",
+      "tests": "Genetic testing (SPG genes); anti-GAD negative; EMG normal at rest; family history"
+    },
+    {
+      "diagnosis": "Ankylosing spondylitis",
+      "features": "Axial rigidity from joint/ligament pathology; inflammatory back pain; sacroiliac involvement; HLA-B27 positive",
+      "tests": "X-ray/MRI of sacroiliac joints; HLA-B27; ESR/CRP elevated; anti-GAD negative; EMG normal"
+    },
+    {
+      "diagnosis": "Parkinson disease",
+      "features": "Rigidity (lead-pipe, cogwheel); bradykinesia; resting tremor; asymmetric onset; dopamine-responsive",
+      "tests": "DAT scan; clinical features (bradykinesia required); anti-GAD negative; EMG shows no CMUA; L-dopa trial"
+    },
+    {
+      "diagnosis": "Dystonia (generalized or segmental)",
+      "features": "Sustained or intermittent muscle contractions causing abnormal postures; task-specific; patterned movements; may have sensory tricks",
+      "tests": "EMG (patterned co-contraction during movement, not continuous at rest); DYT gene testing; anti-GAD negative; different movement pattern"
+    },
+    {
+      "diagnosis": "Myotonia (myotonic dystrophy, channelopathies)",
+      "features": "Difficulty relaxing muscles; grip myotonia; percussion myotonia; genetic basis; no startle-induced spasms",
+      "tests": "EMG (myotonic discharges -- dive-bomber sound); genetic testing (DMPK, CNBP, SCN4A, CLCN1); anti-GAD negative"
+    },
+    {
+      "diagnosis": "Hyperekplexia (startle disease)",
+      "features": "Exaggerated startle response from birth/infancy; neonatal stiffness; genetic (GLRA1, GLRB); no progressive rigidity; responds to clonazepam",
+      "tests": "Genetic testing (glycine receptor mutations); onset in infancy; anti-GAD negative; EMG (startle reflex but no CMUA at rest)"
+    },
+    {
+      "diagnosis": "Neuroleptic malignant syndrome (NMS)",
+      "features": "Acute onset; recent neuroleptic use; hyperthermia; autonomic instability; CK markedly elevated; encephalopathy",
+      "tests": "Medication history (neuroleptic exposure); CK markedly elevated; hyperthermia; resolves with drug discontinuation"
+    },
+    {
+      "diagnosis": "Serotonin syndrome",
+      "features": "Acute onset; serotonergic drug exposure; clonus (especially lower extremity); hyperreflexia; hyperthermia; agitation",
+      "tests": "Medication history (serotonergic drugs); clonus (distinct from rigidity); resolves with drug discontinuation and cyproheptadine"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IVIg for SPS (Class I RCT -- gold standard evidence for SPS immunotherapy)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Dalakas MC et al. N Engl J Med 2001;345:1870-1876](https://pubmed.ncbi.nlm.nih.gov/11756577/)"
+    },
+    {
+      "recommendation": "Anti-GAD65 antibodies as primary diagnostic marker for SPS (~80% positive)",
+      "evidenceLevel": "Class II, Retrospective",
+      "source": "[Solimena M et al. N Engl J Med 1990;322:1555-1560](https://pubmed.ncbi.nlm.nih.gov/2135382/)"
+    },
+    {
+      "recommendation": "Clinical spectrum and natural history of SPS",
+      "evidenceLevel": "Class III, Retrospective",
+      "source": "[Dalakas MC. Curr Treat Options Neurol 2009;11:102-110](https://pubmed.ncbi.nlm.nih.gov/19210912/)"
+    },
+    {
+      "recommendation": "Comprehensive review of SPS spectrum disorders (classic, SLS, PERM)",
+      "evidenceLevel": "Expert Review",
+      "source": "[Dalakas MC. N Engl J Med 2024;390:1935-1948](https://pubmed.ncbi.nlm.nih.gov/38785218/)"
+    },
+    {
+      "recommendation": "EMG findings: continuous motor unit activity at rest in SPS",
+      "evidenceLevel": "Class II",
+      "source": "[Gordon EE et al. Am J Med 1967;42:582-599](https://pubmed.ncbi.nlm.nih.gov/6023006/)"
+    },
+    {
+      "recommendation": "Original description of stiff-man syndrome (Moersch and Woltman)",
+      "evidenceLevel": "Historical",
+      "source": "Moersch FP, Woltman HW. Proc Staff Meet Mayo Clin 1956;31:421-427"
+    },
+    {
+      "recommendation": "Anti-amphiphysin antibodies and paraneoplastic SPS",
+      "evidenceLevel": "Class III",
+      "source": "[De Camilli P et al. N Engl J Med 1993;328:546-551](https://pubmed.ncbi.nlm.nih.gov/8426622/)"
+    },
+    {
+      "recommendation": "Diazepam as first-line symptomatic treatment for SPS",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Dalakas MC. Curr Treat Options Neurol 2009;11:102-110](https://pubmed.ncbi.nlm.nih.gov/19210912/)"
+    },
+    {
+      "recommendation": "Baclofen as adjunctive therapy for rigidity and spasms in SPS",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Stayer C, Tronnier V. J Neurol 1997;244:244-245](https://pubmed.ncbi.nlm.nih.gov/9112593/)"
+    },
+    {
+      "recommendation": "Anti-glycine receptor antibodies in PERM variant",
+      "evidenceLevel": "Class III",
+      "source": "[Carvajal-Gonzalez A et al. JAMA Neurol 2014;71:1009-1016](https://pubmed.ncbi.nlm.nih.gov/24934144/)"
+    },
+    {
+      "recommendation": "Anti-DPPX antibodies and hyperexcitability syndrome including SPS spectrum",
+      "evidenceLevel": "Class III",
+      "source": "[Boronat A et al. Neurology 2013;80:1133-1139](https://pubmed.ncbi.nlm.nih.gov/23427326/)"
+    },
+    {
+      "recommendation": "Rituximab for SPS (case series showing benefit)",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "[Dalakas MC et al. Ann Neurol 2017;82:271-277](https://pubmed.ncbi.nlm.nih.gov/28749549/)"
+    },
+    {
+      "recommendation": "Plasmapheresis for acute SPS exacerbations",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Shariatmadar S, Noto TA. J Clin Apher 2001;16:55-59](https://pubmed.ncbi.nlm.nih.gov/11309831/)"
+    },
+    {
+      "recommendation": "Intrathecal baclofen for refractory SPS",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Stayer C et al. J Neurol 1997;244:244-245](https://pubmed.ncbi.nlm.nih.gov/9112593/)"
+    },
+    {
+      "recommendation": "Association of SPS with type 1 diabetes mellitus (30-60% comorbidity)",
+      "evidenceLevel": "Class II, Retrospective",
+      "source": "[Baizabal-Carvallo JF, Jankovic J. J Neurol 2015;262:2030-2040](https://pubmed.ncbi.nlm.nih.gov/25808503/)"
+    },
+    {
+      "recommendation": "Paraneoplastic SPS: cancer screening recommendations",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2008;79:1304-1306](https://pubmed.ncbi.nlm.nih.gov/18056744/)"
+    },
+    {
+      "recommendation": "High-titer anti-GAD (>2000 IU/mL) differentiates SPS from T1DM",
+      "evidenceLevel": "Class II",
+      "source": "[Saiz A et al. Arch Neurol 2008;65:889-894](https://pubmed.ncbi.nlm.nih.gov/18625855/)"
+    },
+    {
+      "recommendation": "SPS and autoimmune comorbidities (thyroiditis, pernicious anemia, vitiligo)",
+      "evidenceLevel": "Class III",
+      "source": "[Alexopoulos H, Dalakas MC. Neurol Neuroimmunol Neuroinflamm 2019;6:e571](https://pubmed.ncbi.nlm.nih.gov/31086802/)"
+    },
+    {
+      "recommendation": "Status spasticus as a medical emergency in SPS",
+      "evidenceLevel": "Class IV, Case Reports",
+      "source": "[Stiff-person syndrome and status spasticus. Neurology 2008;71:2093-2094](https://pubmed.ncbi.nlm.nih.gov/19092769/)"
+    },
+    {
+      "recommendation": "CSF anti-GAD antibodies and intrathecal synthesis in SPS",
+      "evidenceLevel": "Class III",
+      "source": "[Dalakas MC et al. Neurology 2001;57:780-784](https://pubmed.ncbi.nlm.nih.gov/11552004/)"
+    },
+    {
+      "recommendation": "Updated diagnostic criteria and classification of SPS spectrum",
+      "evidenceLevel": "Expert Review",
+      "source": "[Newsome SD, Johnson T. J Neuroimmunol 2022;369:577915](https://pubmed.ncbi.nlm.nih.gov/35738994/)"
+    },
+    {
+      "recommendation": "Mycophenolate as immunosuppressive agent in SPS",
+      "evidenceLevel": "Class IV, Case Series",
+      "source": "Expert consensus; limited published evidence; extrapolated from autoimmune neurology practice"
+    },
+    {
+      "recommendation": "GABAergic pathway dysfunction as pathophysiology of SPS",
+      "evidenceLevel": "Class II, Basic Science",
+      "source": "[Levy LM et al. N Engl J Med 1999;341:1511-1516](https://pubmed.ncbi.nlm.nih.gov/10559452/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Spasm frequency and severity assessment (clinical scoring)",
+      "frequency": "Q4h (floor); Q1-2h (ICU)",
+      "action": "Increase benzodiazepine dose; consider IV infusion or IVIg/PLEX; assess triggers",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Respiratory status (SpO2, respiratory rate, work of breathing)",
+      "frequency": "Continuous (ICU); Q4h (floor)",
+      "action": "If desaturation or increased work of breathing: ABG; consider ICU transfer; intubation if respiratory failure",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "CK (creatine kinase)",
+      "frequency": "Q6-12h if spasms severe",
+      "action": "If CK >5000: aggressive IV hydration; urine alkalinization; monitor for AKI; if >10,000: consider ICU",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Q12-24h; Q6h if rhabdomyolysis",
+      "action": "If rising: increase hydration; hold nephrotoxics; nephrology consult",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "If oliguric with elevated CK: aggressive hydration; bicarbonate infusion; nephrology consult",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6h if on steroids or T1DM comorbidity",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Sedation level (RASS or equivalent)",
+      "frequency": "Q2-4h if on high-dose benzodiazepines",
+      "action": "If over-sedated: reduce benzodiazepine dose; assess for respiratory compromise; hold dose and reassess",
+      "ED": "URGENT",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure and heart rate",
+      "frequency": "Q1h (ICU); Q4h (floor)",
+      "action": "Autonomic instability: consider ICU; treat HTN crisis; assess for PERM variant",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "Q4h; continuous in ICU",
+      "action": "If hyperthermia with spasms: aggressive cooling; dantrolene; rule out infection; NMS differential",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Electrolytes (Na, K, Ca, Mg, Phos)",
+      "frequency": "Q12-24h; Q6h if rhabdomyolysis",
+      "action": "Correct abnormalities; hypokalemia and hypocalcemia worsen spasms",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurological examination (rigidity, spasm frequency, gait, balance, functional status)",
+      "frequency": "Monthly x 6 months; then q3 months",
+      "action": "Treatment escalation; add immunotherapy; adjust symptomatic medications",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status assessment (modified Rankin Scale, timed walk, activities of daily living)",
+      "frequency": "Q3 months",
+      "action": "Physical therapy intensification; medication adjustment; consider intrathecal baclofen if deteriorating",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Anti-GAD65 antibody titer (serum)",
+      "frequency": "Q6-12 months",
+      "action": "Rising titers may precede clinical relapse; consider treatment intensification (note: titer does not always correlate with disease activity)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Monthly on immunosuppressants (mycophenolate, azathioprine); q2-4 months on rituximab",
+      "action": "Hold/reduce immunosuppression; growth factor if needed",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (ALT, AST, ALP, bilirubin)",
+      "frequency": "Monthly on azathioprine/mycophenolate; q3 months on other agents",
+      "action": "Dose reduction or switch agent",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN/Cr)",
+      "frequency": "Q3 months; before each IVIg cycle",
+      "action": "Dose adjustment; switch to sucrose-free IVIg product if renal function declining",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Quantitative immunoglobulins (IgG, IgA, IgM)",
+      "frequency": "Q6 months on rituximab; annually on other agents",
+      "action": "Immunoglobulin replacement if recurrent infections with hypogammaglobulinemia",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD19/CD20 B-cell counts",
+      "frequency": "Q3-6 months on rituximab",
+      "action": "Re-dose rituximab when B-cells reconstitute (>1% CD19) and clinical worsening",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose and HbA1c",
+      "frequency": "Q3-6 months (T1DM comorbidity); more frequently if on steroids",
+      "action": "Endocrine management; insulin adjustment; steroid dose reduction if possible",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Thyroid function (TSH)",
+      "frequency": "Annually",
+      "action": "Thyroid hormone replacement if hypothyroid; endocrine referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DEXA scan (bone density)",
+      "frequency": "Baseline if steroids >3 months; repeat q1-2 years",
+      "action": "Bisphosphonate therapy; calcium/vitamin D; endocrine referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Paraneoplastic cancer screening",
+      "frequency": "Annually for first 5 years if anti-amphiphysin positive; q2 years if anti-GAD only",
+      "action": "Oncology referral if abnormal; intensify screening",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs on tizanidine",
+      "frequency": "Baseline, 1, 3, 6 months, then periodically",
+      "action": "Discontinue tizanidine if significant hepatotoxicity",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall risk reassessment",
+      "frequency": "Q3-6 months",
+      "action": "Adjust PT program; assistive devices; medication review (benzodiazepine dose optimization)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Spasms controlled on oral medications; able to ambulate safely (with or without assistive device); ADLs independent or with available home support; no respiratory compromise; CK trending down; follow-up with neurology within 1-2 weeks; medication education completed; triggers identified and avoidance plan discussed; family/caregiver education completed"
+    },
+    {
+      "disposition": "**Admit to floor (neurology)**",
+      "criteria": "New-onset SPS requiring diagnostic workup (LP, EMG, antibodies, imaging); uncontrolled spasms requiring IV benzodiazepines or medication titration; need for IVIg initiation; elevated CK from spasm-related rhabdomyolysis; functional decline requiring inpatient rehabilitation evaluation; new paraneoplastic workup needed"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Status spasticus (severe unrelenting spasms); respiratory compromise from chest wall rigidity; need for mechanical ventilation; rhabdomyolysis with CK >10,000 or acute kidney injury; autonomic instability; need for continuous benzodiazepine or propofol infusion; PERM variant with encephalopathy and autonomic dysfunction"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neuroimmunology specialist not available; neuromuscular EMG expertise not available; IVIg/plasmapheresis not available; intrathecal baclofen pump services not available; ICU care required when not available at current facility"
+    },
+    {
+      "disposition": "**Inpatient rehabilitation**",
+      "criteria": "Significant functional impairment from rigidity and spasms; medically stable; expected to benefit from intensive PT/OT; unable to safely return home; needs supervised medication titration and mobility training"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "All discharged patients: neurology follow-up within 1-2 weeks; labs per monitoring schedule; ongoing IVIg scheduling if initiated; physical therapy referral; paraneoplastic screening completion if not done inpatient"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "Uncontrolled spasms despite medication compliance; respiratory difficulty; falls with injury; status spasticus; suspected rhabdomyolysis (dark urine, severe muscle pain after spasms); infection on immunosuppression"
+    }
+  ]
+}

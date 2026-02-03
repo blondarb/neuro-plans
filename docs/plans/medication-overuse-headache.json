@@ -16,7 +16,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -25,7 +25,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP",
+          "item": "CMP (CPT 80053)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -34,7 +34,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -43,9 +43,9 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "LFTs",
+          "item": "LFTs (CPT 80076)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -54,7 +54,7 @@
           "target": "Normal"
         },
         {
-          "item": "BUN/Creatinine",
+          "item": "BUN/Creatinine (CPT 82565)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -63,7 +63,7 @@
           "target": "Normal"
         },
         {
-          "item": "ESR/CRP",
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -72,7 +72,7 @@
           "target": "Normal"
         },
         {
-          "item": "Urine drug screen",
+          "item": "Urine drug screen (CPT 80307)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -96,7 +96,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "MRI brain without contrast",
+          "item": "MRI brain without contrast (CPT 70551)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -108,7 +108,7 @@
       ],
       "Extended": [
         {
-          "item": "MRI brain with contrast",
+          "item": "MRI brain with contrast (CPT 70552)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -298,19 +298,19 @@
       ],
       "Inpatient Withdrawal (Severe Cases)": [
         {
-          "item": "IV DHE protocol",
+          "item": "IV DHE protocol (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.5-1 mg",
-                "orderSentence": "IV DHE protocol 0.5-1 mg IV"
+                "orderSentence": "IV DHE protocol (CPT 96365) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "DHE 0.5-1 mg IV q8h × 3-5 days (with metoclopramide 10 mg IV pretreatment)",
-            "orderSentence": "IV DHE protocol 0.5-1 mg IV"
+            "orderSentence": "IV DHE protocol (CPT 96365) 0.5-1 mg IV"
           },
           "contraindications": "CAD, CVA, uncontrolled HTN, pregnancy, triptans <24h",
           "monitoring": "BP, nausea, EKG",
@@ -342,19 +342,19 @@
           "ICU": "-"
         },
         {
-          "item": "IV ketorolac",
+          "item": "IV ketorolac (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "15-30 mg",
-                "orderSentence": "IV ketorolac 15-30 mg IV"
+                "orderSentence": "IV ketorolac (CPT 96374) 15-30 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "15-30 mg IV q6h × 2-3 days (max 5 days)",
-            "orderSentence": "IV ketorolac 15-30 mg IV"
+            "orderSentence": "IV ketorolac (CPT 96374) 15-30 mg IV"
           },
           "contraindications": "Renal disease, GI bleeding",
           "monitoring": "Renal function",
@@ -532,19 +532,19 @@
           "ICU": "-"
         },
         {
-          "item": "OnabotulinumtoxinA",
+          "item": "OnabotulinumtoxinA (CPT J0585)",
           "route": "IM",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "155-195 units",
-                "orderSentence": "OnabotulinumtoxinA 155-195 units IM"
+                "orderSentence": "OnabotulinumtoxinA (CPT J0585) 155-195 units IM"
               }
             ],
             "route": "IM",
             "instructions": "155-195 units IM q12 weeks (if chronic migraine criteria met)",
-            "orderSentence": "OnabotulinumtoxinA 155-195 units IM"
+            "orderSentence": "OnabotulinumtoxinA (CPT J0585) 155-195 units IM"
           },
           "pretreatment": "-",
           "contraindications": "Infection at site, myasthenia",
@@ -707,7 +707,7 @@
           "indication": "Non-pharmacologic headache management"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "MOH is caused by frequent use of pain medications; stopping them is essential for improvement",
           "ED": "ROUTINE",

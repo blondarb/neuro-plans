@@ -1,0 +1,1681 @@
+{
+  "id": "pres",
+  "title": "Posterior Reversible Encephalopathy Syndrome (PRES)",
+  "version": "1.1",
+  "icd10": [
+    "** I67.83 (Posterior reversible encephalopathy syndrome)",
+    "I67.4 (Hypertensive encephalopathy)",
+    "O15.0 (Eclampsia in pregnancy)",
+    "O15.1 (Eclampsia in labor)",
+    "O15.2 (Eclampsia in the puerperium)",
+    "O15.9 (Eclampsia",
+    "unspecified as to time period)",
+    "I16.1 (Hypertensive emergency)",
+    "G40.901 (Epilepsy",
+    "unspecified",
+    "not intractable",
+    "with status epilepticus)",
+    "R56.9 (Unspecified convulsions)",
+    "G93.49 (Other encephalopathy",
+    "not elsewhere classified)"
+  ],
+  "scope": "** Diagnosis and management of posterior reversible encephalopathy syndrome (PRES) in adults across all care settings. Covers hypertensive emergency management, seizure treatment, identification and removal of causative agents (immunosuppressants, chemotherapy), eclampsia-specific management, MRI interpretation, hemorrhagic PRES complications, and recovery monitoring. Excludes pediatric PRES, chronic hypertensive encephalopathy without neuroimaging features, and isolated eclampsia management without PRES features (see obstetric protocols).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; thrombocytopenia (TTP/HUS, HELLP, DIC); leukocytosis; hemolysis screen",
+          "target": "Normal; platelets >100,000; no schistocytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Electrolytes; renal function (renal failure is major cause); hepatic function (HELLP syndrome, drug toxicity)",
+          "target": "Normal; Cr <1.2; LFTs normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Hypomagnesemia lowers seizure threshold; critical in eclampsia management; magnesium sulfate dosing",
+          "target": ">2.0 mg/dL (maintain 4-7 mEq/L if on magnesium drip for eclampsia)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urinalysis with protein (CPT 81001)",
+          "rationale": "Proteinuria suggests preeclampsia/eclampsia; renal involvement",
+          "target": "No proteinuria (>300 mg/24h or protein/Cr ratio >0.3 = preeclampsia)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "LDH (CPT 83615)",
+          "rationale": "Hemolysis marker; HELLP syndrome; TTP/HUS",
+          "target": "Normal (<250 IU/L); elevated suggests microangiopathic hemolysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Uric acid (CPT 84550)",
+          "rationale": "Elevated in preeclampsia/eclampsia; marker of disease severity",
+          "target": "Normal (<6 mg/dL); elevated in preeclampsia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR (CPT 85610), aPTT (CPT 85730)",
+          "rationale": "Coagulopathy screen; DIC assessment; HELLP syndrome",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hyperglycemia worsens cerebral edema; hypoglycemia mimics encephalopathy",
+          "target": "140-180 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Peripheral blood smear (CPT 85060)",
+          "rationale": "Schistocytes indicating TMA (TTP/HUS, HELLP); microangiopathic hemolytic anemia",
+          "target": "No schistocytes; normal morphology",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG) (CPT 84703)",
+          "rationale": "Eclampsia is leading cause of PRES in young women; affects treatment decisions",
+          "target": "Document result",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Hypertensive cardiac injury; neurogenic cardiac injury; concurrent ACS",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "End-organ perfusion assessment in hypertensive emergency",
+          "target": "<2 mmol/L",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Tacrolimus trough level",
+          "rationale": "Calcineurin inhibitor toxicity is major cause of PRES in transplant patients; guides dose adjustment",
+          "target": "Therapeutic range varies by organ (renal: 5-15 ng/mL; liver: 5-20 ng/mL); supratherapeutic level confirms cause",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cyclosporine trough level",
+          "rationale": "Cyclosporine neurotoxicity causes PRES; dose reduction or discontinuation required",
+          "target": "Therapeutic 100-400 ng/mL depending on transplant type; supratherapeutic confirms cause",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Haptoglobin (CPT 83010)",
+          "rationale": "Hemolysis evaluation; low haptoglobin confirms intravascular hemolysis (HELLP, TTP/HUS)",
+          "target": "Normal (>30 mg/dL); low suggests hemolysis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Direct Coombs test (CPT 86880)",
+          "rationale": "Differentiate autoimmune hemolysis from TMA-related hemolysis",
+          "target": "Negative (positive = autoimmune hemolysis, not TMA)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ADAMTS13 activity",
+          "rationale": "TTP evaluation if schistocytes and thrombocytopenia present",
+          "target": ">10% activity (severely reduced <10% = TTP)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "rationale": "DIC assessment; HELLP syndrome",
+          "target": ">200 mg/dL; low fibrinogen suggests DIC",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "DIC screen; coagulopathy assessment",
+          "target": "Normal; elevated in DIC",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein/creatinine ratio (spot urine) (CPT 84156)",
+          "rationale": "Preeclampsia assessment; quantify proteinuria",
+          "target": "<0.3 (>0.3 supports preeclampsia diagnosis)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction screen; hypothyroidism may contribute to hypertension",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
+          "rationale": "Vasculitis screening; autoimmune etiology",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-seizure medication levels (if applicable)",
+          "rationale": "Subtherapeutic levels if on home ASM; guide dosing",
+          "target": "Therapeutic range",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "ANA (CPT 86235), anti-dsDNA",
+          "rationale": "SLE-associated PRES; lupus nephritis with hypertension",
+          "target": "Negative; positive suggests autoimmune etiology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement levels (C3, C4) (CPT 86160, 86161)",
+          "rationale": "Low complement in active SLE; atypical HUS",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (CPT 86235)",
+          "rationale": "Vasculitis-associated PRES (granulomatosis with polyangiitis, microscopic polyangiitis)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum cortisol / ACTH stimulation test",
+          "rationale": "Adrenal crisis, Cushing syndrome causing hypertension",
+          "target": "Normal cortisol response",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine catecholamines / metanephrines",
+          "rationale": "Pheochromocytoma as cause of hypertensive crisis leading to PRES",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Renal artery Doppler or CTA renal arteries",
+          "rationale": "Renovascular hypertension (renal artery stenosis) as underlying cause of recurrent hypertensive emergencies",
+          "target": "No significant stenosis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV testing (CPT 86689)",
+          "rationale": "HIV-associated nephropathy causing hypertension; opportunistic infections causing encephalopathy",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Bevacizumab/VEGF inhibitor level",
+          "rationale": "VEGF inhibitor-associated PRES; no standardized assay but document recent administration",
+          "target": "Document exposure timing",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP may be present in PRES; rule out idiopathic intracranial hypertension",
+          "target": "10-20 cm H2O (may be elevated in PRES)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Rule out meningitis/encephalitis",
+          "target": "WBC <5, RBC 0",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Mild elevation may occur in PRES; significantly elevated suggests infection or CNS vasculitis",
+          "target": "15-45 mg/dL (mildly elevated in PRES, up to 100)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Rule out infectious meningitis",
+          "target": ">60% of serum glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and culture",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HSV PCR (CPT 87529)",
+          "rationale": "Rule out HSV encephalitis if temporal lobe involvement or clinical suspicion",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain without contrast (CPT 70551) with FLAIR, DWI, ADC, SWI/GRE sequences",
+          "timing": "STAT (within 24h of presentation); MRI is diagnostic gold standard for PRES",
+          "target": "Bilateral symmetric vasogenic edema predominantly in posterior parietal-occipital regions on FLAIR; DWI normal or mildly restricted; ADC elevated (confirms vasogenic, not cytotoxic edema); SWI/GRE for hemorrhagic component",
+          "contraindications": "Pacemaker/defibrillator (non-MRI conditional); hemodynamic instability (stabilize BP first)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediately on presentation; rule out hemorrhage, mass, hydrocephalus while awaiting MRI",
+          "target": "May show posterior white matter hypodensities; rule out hemorrhagic PRES, mass lesion, or stroke; CT has low sensitivity for PRES (only ~50%)",
+          "contraindications": "Pregnancy (benefit outweighs risk)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT angiography (CTA) head and neck (CPT 70496, 70498)",
+          "timing": "STAT if concern for stroke, cerebral venous thrombosis, or vasculitis",
+          "target": "Rule out large vessel occlusion, cerebral venous thrombosis, vasculitis (beading); may show vasospasm/vasoconstriction in RCVS",
+          "contraindications": "Contrast allergy; severe renal impairment (benefit outweighs risk in emergency)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "STAT on presentation",
+          "target": "Baseline; hypertensive cardiac strain; LVH; arrhythmia; QTc assessment for medications",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "URGENT if dyspnea, pulmonary edema, or intubated",
+          "target": "Pulmonary edema from hypertensive crisis; aspiration; cardiomegaly",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "timing": "Within 24-72h if atypical features or concern for alternative diagnosis",
+          "target": "Enhancement may indicate blood-brain barrier breakdown; rule out tumor, abscess, meningitis; leptomeningeal enhancement suggests alternative diagnosis",
+          "contraindications": "Renal impairment (GFR <30 for gadolinium); pregnancy (relative)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Follow-up MRI brain without contrast (CPT 70551)",
+          "timing": "2-4 weeks after initial presentation (or sooner if not improving)",
+          "target": "Resolution or significant improvement of vasogenic edema confirms PRES diagnosis; persistent restricted diffusion suggests infarction (irreversible injury)",
+          "contraindications": "Same as initial MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "MR venography (MRV) (CPT 70547)",
+          "timing": "If cerebral venous thrombosis suspected (headache, seizures, papilledema, postpartum)",
+          "target": "Patent venous sinuses; thrombosis indicates alternative/concurrent diagnosis",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "timing": "STAT if altered consciousness disproportionate to imaging or after clinical seizure",
+          "target": "Non-convulsive seizures (common in PRES); non-convulsive status epilepticus (NCSE); guide ASM management",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "timing": "Within 24-48h",
+          "target": "LV hypertrophy from chronic hypertension; stress cardiomyopathy; endocarditis (if febrile); ejection fraction for prognosis",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Renal ultrasound with Doppler (CPT 76775)",
+          "timing": "Within 48h if renal failure or suspected renovascular hypertension",
+          "target": "Renal artery stenosis; renal parenchymal disease; hydronephrosis",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "timing": "If vasculitis or RCVS suspected and CTA/MRA inconclusive",
+          "target": "Vasculitis (irregular segmental narrowing); RCVS (segmental vasoconstriction resolving on follow-up); differentiate from primary CNS vasculitis",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Fundoscopic examination / Ocular coherence tomography (OCT)",
+          "timing": "Within 24h; urgent if visual symptoms",
+          "target": "Papilledema (elevated ICP); hypertensive retinopathy (grade III-IV: hemorrhages, exudates, papilledema); serous retinal detachment (eclampsia)",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Blood pressure reduction: Nicardipine IV (CPT 96365)",
+          "route": "IV",
+          "indication": "First-line IV antihypertensive for hypertensive emergency with PRES; smooth titratable BP reduction without cerebral vasoconstriction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Blood pressure reduction: Nicardipine IV (CPT 96365) 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV infusion; increase by 2.5 mg/h every 5-15 min; max 15 mg/h; target 25% reduction in MAP in first hour then SBP 140-160 over next 2-6h",
+            "orderSentence": "Blood pressure reduction: Nicardipine IV (CPT 96365) 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis; decompensated heart failure; advanced hepatic failure",
+          "monitoring": "Continuous arterial line BP monitoring; neuro checks q15min during titration; avoid SBP <120 (risk of watershed ischemia)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure reduction: Labetalol IV (CPT 96374)",
+          "route": "IV",
+          "indication": "Alternative first-line IV antihypertensive; preferred if tachycardia present; safe in pregnancy/eclampsia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Blood pressure reduction: Labetalol IV (CPT 96374) 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV bolus over 1-2 min; may repeat or double dose q10-20 min; max 300 mg total; can also infuse at 0.5-2 mg/min",
+            "orderSentence": "Blood pressure reduction: Labetalol IV (CPT 96374) 10-20 mg IV"
+          },
+          "contraindications": "Second/third-degree heart block; severe bradycardia (<50 bpm); decompensated heart failure; severe asthma/COPD; cardiogenic shock",
+          "monitoring": "Heart rate; blood pressure continuous; bronchospasm",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure reduction: Clevidipine IV (CPT 96365)",
+          "route": "IV",
+          "indication": "Ultra-short acting IV calcium channel blocker for rapid BP control; useful when precise titration needed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/h",
+                "orderSentence": "Blood pressure reduction: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg/h IV; titrate by doubling dose every 90 seconds initially; usual maintenance 4-6 mg/h; max 32 mg/h; max 21 mg/h average over 24h",
+            "orderSentence": "Blood pressure reduction: Clevidipine IV (CPT 96365) 1-2 mg/h IV"
+          },
+          "contraindications": "Soy/egg allergy (lipid emulsion); severe lipid metabolism disorders; acute pancreatitis with hyperlipidemia",
+          "monitoring": "Blood pressure continuous; triglycerides if prolonged use (>72h); lipid load calculation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure reduction: Hydralazine IV",
+          "route": "IV",
+          "indication": "Second-line antihypertensive; commonly used in pregnancy/eclampsia when nicardipine unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Blood pressure reduction: Hydralazine IV 5-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-10 mg IV q20-30 min PRN; max 20 mg total; less predictable response than nicardipine",
+            "orderSentence": "Blood pressure reduction: Hydralazine IV 5-10 mg IV"
+          },
+          "contraindications": "Severe coronary artery disease; aortic dissection; tachycardia (reflex)",
+          "monitoring": "Heart rate; blood pressure q5min after each dose; reflex tachycardia common",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Eclampsia: Magnesium sulfate (CPT 96365)",
+          "route": "IV",
+          "indication": "FIRST-LINE for eclampsia-associated PRES; prevents recurrent seizures; superior to phenytoin and diazepam for eclampsia seizures (Magpie Trial, Eclampsia Trial Collaborative Group)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-6 g IV load over 15-20 min",
+                "orderSentence": "Eclampsia: Magnesium sulfate (CPT 96365) 4-6 g IV load over 15-20 min IV"
+              },
+              {
+                "text": "1-2 g/h maintenance",
+                "orderSentence": "Eclampsia: Magnesium sulfate (CPT 96365) 1-2 g/h maintenance IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-6 g IV loading dose over 15-20 min, then 1-2 g/h continuous infusion; maintain serum Mg 4-7 mEq/L; continue 24-48h postpartum; reduce dose if Cr >1.0",
+            "orderSentence": "Eclampsia: Magnesium sulfate (CPT 96365) 4-6 g IV load over 15-20 min IV"
+          },
+          "contraindications": "Myasthenia gravis; heart block; respiratory depression; renal failure (dose adjust)",
+          "monitoring": "Serum Mg q4-6h (target 4-7 mEq/L); deep tendon reflexes q1h (loss of patellar reflex = toxicity); respiratory rate (hold if <12); urine output (>25 mL/h); calcium gluconate at bedside as antidote",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Seizure management: Levetiracetam (CPT 96374)",
+          "route": "IV",
+          "indication": "First-line ASM for PRES-associated seizures (non-eclampsia); broad-spectrum; no hepatic metabolism; no drug interactions with immunosuppressants",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg IV load",
+                "orderSentence": "Seizure management: Levetiracetam (CPT 96374) 1000-1500 mg IV load IV"
+              },
+              {
+                "text": "500-1000 mg IV/PO BID",
+                "orderSentence": "Seizure management: Levetiracetam (CPT 96374) 500-1000 mg IV/PO BID IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV loading dose over 15 min, then 500-1000 mg IV or PO BID; adjust for renal function (CrCl <50: reduce dose 50%)",
+            "orderSentence": "Seizure management: Levetiracetam (CPT 96374) 1000-1500 mg IV load IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust, do not contraindicate); known hypersensitivity",
+          "monitoring": "Seizure monitoring; renal function; behavioral side effects (agitation, psychosis in 1-2%)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Seizure management: Lorazepam IV",
+          "route": "IV",
+          "indication": "Rescue benzodiazepine for acute seizure termination; use while loading longer-acting ASM",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg IV push",
+                "orderSentence": "Seizure management: Lorazepam IV 4 mg IV push IV"
+              },
+              {
+                "text": "may repeat x1",
+                "orderSentence": "Seizure management: Lorazepam IV may repeat x1 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV push over 2 min; may repeat once in 5 min; max 8 mg; have airway equipment ready",
+            "orderSentence": "Seizure management: Lorazepam IV 4 mg IV push IV"
+          },
+          "contraindications": "Acute narrow-angle glaucoma; severe respiratory depression without ventilator support",
+          "monitoring": "Respiratory rate; oxygen saturation; sedation level; blood pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Immunosuppressant management: Hold tacrolimus",
+          "route": "-",
+          "indication": "Tacrolimus is common cause of PRES in transplant patients; must hold or significantly reduce dose until PRES resolves",
+          "dosing": {
+            "instructions": "Hold tacrolimus immediately; consult transplant team for alternative immunosuppression (switch to mycophenolate, sirolimus, or reduced-dose calcineurin inhibitor after resolution)",
+            "orderSentence": "Immunosuppressant management: Hold tacrolimus - - - see dosing"
+          },
+          "contraindications": "Acute rejection risk (must coordinate with transplant team before permanently discontinuing)",
+          "monitoring": "Tacrolimus trough levels; graft function monitoring; rejection surveillance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Immunosuppressant management: Hold cyclosporine",
+          "route": "-",
+          "indication": "Cyclosporine neurotoxicity causes PRES; must hold or reduce dose until neurological recovery",
+          "dosing": {
+            "instructions": "Hold cyclosporine immediately; consult transplant team for alternative immunosuppression; may cautiously rechallenge at lower dose after full resolution with close monitoring",
+            "orderSentence": "Immunosuppressant management: Hold cyclosporine - - - see dosing"
+          },
+          "contraindications": "Acute rejection risk (coordinate with transplant team)",
+          "monitoring": "Cyclosporine trough levels; renal function; graft function; rejection surveillance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chemotherapy-associated PRES: Hold offending agent",
+          "route": "-",
+          "indication": "VEGF inhibitors (bevacizumab, sunitinib), cisplatin, gemcitabine, and other chemotherapeutic agents can cause PRES; hold until resolution",
+          "dosing": {
+            "instructions": "Hold offending chemotherapy agent immediately; consult oncology for alternative regimen or cautious rechallenge after resolution",
+            "orderSentence": "Chemotherapy-associated PRES: Hold offending agent - - - see dosing"
+          },
+          "contraindications": "Cancer treatment interruption (coordinate with oncology)",
+          "monitoring": "Neurological status; follow-up MRI before considering rechallenge",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Intubation and airway protection",
+          "route": "-",
+          "indication": "Airway protection for GCS <=8, refractory seizures, inability to protect airway, or respiratory failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "RSI per protocol",
+                "orderSentence": "Intubation and airway protection RSI per protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "RSI with propofol or etomidate preferred (avoid ketamine if severe hypertension); avoid succinylcholine if hyperkalemia risk; head of bed 30 degrees post-intubation",
+            "orderSentence": "Intubation and airway protection RSI per protocol -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Ventilator settings; head of bed 30 degrees; sedation level; cuff pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Fever management (target normothermia <37.5 degrees C; fever worsens cerebral edema)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "650-1000 mg PO or IV q6h; max 4 g/day; use IV if NPO",
+            "orderSentence": "Acetaminophen 650-1000 mg PO/IV"
+          },
+          "contraindications": "Severe hepatic disease; chronic alcohol use (reduce max to 2 g/day)",
+          "monitoring": "Temperature q4h; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea and vomiting associated with hypertensive encephalopathy and elevated ICP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV q6h PRN nausea; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; congenital long QT syndrome",
+          "monitoring": "QTc on ECG",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin (regular)",
+          "route": "IV/SC",
+          "indication": "Hyperglycemia management (target 140-180 mg/dL; hyperglycemia worsens cerebral edema)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per institutional protocol",
+                "orderSentence": "Insulin (regular) Per institutional protocol IV/SC"
+              }
+            ],
+            "route": "IV/SC",
+            "instructions": "Insulin drip 0.5-1 unit/h IV for persistent BG >180; titrate to target 140-180 mg/dL; transition to SC sliding scale when stable and tolerating PO",
+            "orderSentence": "Insulin (regular) Per institutional protocol IV/SC"
+          },
+          "contraindications": "Hypoglycemia",
+          "monitoring": "Blood glucose q1h if drip; q6h if sliding scale",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV/PO",
+          "indication": "GI prophylaxis; stress ulcer prevention in ICU patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "40 mg IV or PO daily",
+            "orderSentence": "Pantoprazole 40 mg IV/PO"
+          },
+          "contraindications": "C. difficile risk with prolonged use",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "-",
+          "indication": "DVT prophylaxis; immobilized patients at high VTE risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bilateral SCDs",
+                "orderSentence": "Pneumatic compression devices Bilateral SCDs -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Apply bilateral SCDs on admission; use whenever patient is in bed; remove only for ambulation and skin checks",
+            "orderSentence": "Pneumatic compression devices Bilateral SCDs -"
+          },
+          "contraindications": "Acute DVT in lower extremities",
+          "monitoring": "Skin checks daily",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis (start when seizures controlled and no hemorrhagic PRES)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; adjust for renal function (CrCl <30: 30 mg daily); hold if hemorrhagic PRES",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active hemorrhagic PRES; platelet count <50,000; severe renal failure (dose adjust); recent LP (wait 12h)",
+          "monitoring": "Platelet count; renal function; bleeding signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Seizure: Valproic acid IV",
+          "route": "IV",
+          "indication": "Second-line ASM if levetiracetam insufficient for seizure control; broad-spectrum; avoid in pregnancy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg/kg IV load",
+                "orderSentence": "Seizure: Valproic acid IV 20-40 mg/kg IV load IV"
+              },
+              {
+                "text": "500 mg IV q12h",
+                "orderSentence": "Seizure: Valproic acid IV 500 mg IV q12h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20-40 mg/kg IV loading dose (max 3000 mg) over 30-60 min; then 500 mg IV q12h; target level 50-100 mcg/mL",
+            "orderSentence": "Seizure: Valproic acid IV 20-40 mg/kg IV load IV"
+          },
+          "contraindications": "Pregnancy (ABSOLUTE -- teratogenic); hepatic failure; urea cycle disorder; thrombocytopenia (<50,000); pancreatitis",
+          "monitoring": "Valproic acid level (target 50-100); LFTs; CBC with platelets; ammonia if altered mental status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Seizure: Lacosamide IV",
+          "route": "IV",
+          "indication": "Second-line ASM alternative; favorable drug interaction profile in transplant patients on immunosuppressants",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-400 mg IV load",
+                "orderSentence": "Seizure: Lacosamide IV 200-400 mg IV load IV"
+              },
+              {
+                "text": "100-200 mg IV q12h",
+                "orderSentence": "Seizure: Lacosamide IV 100-200 mg IV q12h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-400 mg IV loading dose over 15-30 min; then 100-200 mg IV or PO q12h; no renal adjustment needed",
+            "orderSentence": "Seizure: Lacosamide IV 200-400 mg IV load IV"
+          },
+          "contraindications": "Second/third-degree heart block; severe cardiac conduction disease; PR interval >200 ms",
+          "monitoring": "ECG (PR interval prolongation); cardiac rhythm; dizziness/ataxia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Refractory hypertension: Fenoldopam IV",
+          "route": "IV",
+          "indication": "Refractory hypertensive emergency not controlled by nicardipine/labetalol; selective dopamine-1 agonist that preserves renal perfusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mcg/kg/min",
+                "orderSentence": "Refractory hypertension: Fenoldopam IV 0.1-0.3 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.1 mcg/kg/min; titrate by 0.05-0.1 mcg/kg/min every 15 min; max 1.6 mcg/kg/min",
+            "orderSentence": "Refractory hypertension: Fenoldopam IV 0.1-0.3 mcg/kg/min IV"
+          },
+          "contraindications": "Glaucoma (increases intraocular pressure); sulfite allergy",
+          "monitoring": "Continuous BP; heart rate; intraocular pressure if glaucoma history; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Refractory hypertension: Nitroprusside IV",
+          "route": "IV",
+          "indication": "Last-resort IV antihypertensive for severe refractory hypertension; avoid if possible due to cerebral vasodilation and ICP elevation risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-0.5 mcg/kg/min",
+                "orderSentence": "Refractory hypertension: Nitroprusside IV 0.25-0.5 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.25 mcg/kg/min; titrate by 0.25 mcg/kg/min; max 10 mcg/kg/min; limit duration (<48h) due to cyanide toxicity",
+            "orderSentence": "Refractory hypertension: Nitroprusside IV 0.25-0.5 mcg/kg/min IV"
+          },
+          "contraindications": "Elevated ICP (relative -- may worsen); hepatic failure; vitamin B12 deficiency; Leber optic atrophy",
+          "monitoring": "Continuous arterial line BP; cyanide/thiocyanate levels if >48h or dose >3 mcg/kg/min; ICP monitoring; methemoglobin",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Mannitol 20%",
+          "route": "IV",
+          "indication": "Elevated ICP or impending herniation in hemorrhagic PRES or massive edema",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "ICP management: Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 20 min for acute herniation; then 0.25-0.5 g/kg q4-6h maintenance; hold if serum osm >320",
+            "orderSentence": "ICP management: Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; serum osmolality >320 mOsm/kg",
+          "monitoring": "Serum osmolality q4-6h; Na; Cr; I&O; neurological status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ICP management: Hypertonic saline 3%",
+          "route": "IV",
+          "indication": "Alternative to mannitol for elevated ICP; preferred if hypotensive or hypovolemic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150-500 mL",
+                "orderSentence": "ICP management: Hypertonic saline 3% 150-500 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "150-500 mL bolus or continuous infusion 0.5-1 mL/kg/h; target Na 145-155 mEq/L",
+            "orderSentence": "ICP management: Hypertonic saline 3% 150-500 mL IV"
+          },
+          "contraindications": "Hypernatremia >160; congestive heart failure (volume overload)",
+          "monitoring": "Serum Na q4-6h; osmolality; volume status",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Chronic Therapies/Transition (After Acute Phase)": [
+        {
+          "item": "Oral antihypertensive: Amlodipine",
+          "route": "PO",
+          "indication": "Long-term BP control to prevent PRES recurrence; calcium channel blocker provides smooth BP reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Oral antihypertensive: Amlodipine 5 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Oral antihypertensive: Amlodipine 10 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; increase to 10 mg if needed after 1-2 weeks; max 10 mg/day",
+            "orderSentence": "Oral antihypertensive: Amlodipine 5 mg daily PO"
+          },
+          "pretreatment": "Baseline BP, renal function, electrolytes",
+          "contraindications": "Severe aortic stenosis; cardiogenic shock",
+          "monitoring": "Home BP monitoring; pedal edema; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oral antihypertensive: Lisinopril",
+          "route": "PO",
+          "indication": "Long-term BP control; renoprotective; preferred if proteinuria present (preeclampsia history)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Oral antihypertensive: Lisinopril 5 mg daily PO"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Oral antihypertensive: Lisinopril 10 mg daily PO"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Oral antihypertensive: Lisinopril 20 mg daily PO"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Oral antihypertensive: Lisinopril 40 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg PO daily; titrate q1-2 weeks; max 40 mg/day",
+            "orderSentence": "Oral antihypertensive: Lisinopril 5 mg daily PO"
+          },
+          "pretreatment": "Baseline Cr, K+, BP",
+          "contraindications": "Pregnancy (ABSOLUTE -- teratogenic); bilateral renal artery stenosis; angioedema history; K >5.5",
+          "monitoring": "Cr and K+ at 1-2 weeks after initiation; BP; angioedema watch",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oral antihypertensive: Metoprolol succinate",
+          "route": "PO",
+          "indication": "Long-term BP control; preferred if concurrent tachycardia or coronary disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Oral antihypertensive: Metoprolol succinate 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Oral antihypertensive: Metoprolol succinate 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Oral antihypertensive: Metoprolol succinate 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Oral antihypertensive: Metoprolol succinate 200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg PO daily; titrate q1-2 weeks; max 200 mg/day",
+            "orderSentence": "Oral antihypertensive: Metoprolol succinate 25 mg daily PO"
+          },
+          "pretreatment": "Baseline heart rate, BP, ECG",
+          "contraindications": "Heart block (2nd/3rd degree); severe bradycardia (<50 bpm); decompensated heart failure; severe asthma",
+          "monitoring": "Heart rate; BP; signs of heart failure; bronchospasm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam (oral transition)",
+          "route": "PO",
+          "indication": "Continued seizure prophylaxis if seizures occurred during PRES; typically continue 3-6 months then taper if MRI normalized and EEG normal",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam (oral transition) 500 mg BID PO"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam (oral transition) 750 mg BID PO"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam (oral transition) 1000 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-1000 mg PO BID; dose based on acute loading; may taper at 3-6 months if PRES fully resolved on imaging",
+            "orderSentence": "Levetiracetam (oral transition) 500 mg BID PO"
+          },
+          "pretreatment": "Renal function (adjust if CrCl <50)",
+          "contraindications": "Known hypersensitivity",
+          "monitoring": "Renal function; behavioral side effects; seizure diary",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunosuppressant switch (transplant patients)",
+          "route": "PO",
+          "indication": "Switch to non-calcineurin inhibitor immunosuppression to prevent PRES recurrence; coordinate with transplant team",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per transplant team",
+                "orderSentence": "Immunosuppressant switch (transplant patients) Per transplant team PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Common switches: mycophenolate mofetil 500-1000 mg PO BID or sirolimus 2-5 mg PO daily; agent and dose per transplant team recommendation based on organ type and rejection risk",
+            "orderSentence": "Immunosuppressant switch (transplant patients) Per transplant team PO"
+          },
+          "pretreatment": "Transplant team approval; graft function assessment; rejection risk stratification",
+          "contraindications": "Agent-specific; varies by alternative chosen",
+          "monitoring": "Graft function; drug levels; rejection surveillance; CBC; LFTs; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology / Neurocritical care for PRES diagnosis confirmation, seizure management, and neuroimaging interpretation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nephrology for acute kidney injury management, dialysis evaluation, and hypertensive nephropathy assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Obstetrics/Maternal-Fetal Medicine STAT if eclampsia suspected for delivery planning and magnesium management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Transplant team (solid organ or bone marrow) for immunosuppressant adjustment and alternative regimen selection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hematology if TTP/HUS suspected (schistocytes, thrombocytopenia, renal failure) for plasma exchange evaluation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oncology for chemotherapy-associated PRES to discuss offending agent discontinuation and alternative regimen",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cardiology for hypertensive cardiomyopathy evaluation, stress cardiomyopathy management, or arrhythmia assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Ophthalmology for acute visual changes, cortical blindness evaluation, papilledema assessment, and hypertensive retinopathy grading",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for early mobilization and strength assessment once seizures controlled and BP stable",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, cognitive rehabilitation, and visual field adaptation",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Speech-language pathology for dysphagia screening before PO intake and cognitive-communication assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Social work for discharge planning, medication access, transplant support, and family counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pharmacy for medication reconciliation, immunosuppressant level optimization, and antihypertensive titration guidance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Patient / Family Instructions": [
+        {
+          "item": "PRES is typically reversible with prompt treatment; most patients recover fully with aggressive BP control and removal of the offending cause",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Call 911 immediately if new or worsening headache, seizure activity, vision changes, confusion, or difficulty speaking (may indicate PRES recurrence or complication)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all blood pressure medications as prescribed; do NOT skip doses or stop medications without physician guidance as this can trigger recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Monitor blood pressure at home daily; keep a BP log; report readings consistently above 140/90 to your physician",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If you had seizures with PRES, do NOT drive until cleared by neurology (typically after imaging resolution and seizure-free period per state law)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If PRES was caused by an immunosuppressant medication, do NOT resume the medication without explicit transplant team or oncology approval",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Visual changes from PRES usually improve over days to weeks; report any persistent vision problems at follow-up",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new headaches, confusion, or seizures immediately as these may indicate incomplete resolution or recurrence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy counseling: if eclampsia-related PRES, discuss future pregnancy risks and preeclampsia prevention (low-dose aspirin prophylaxis) with OB",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Blood pressure target <130/80 mmHg long-term to prevent PRES recurrence (most important modifiable risk factor)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Low-sodium diet (DASH diet: <2300 mg sodium/day, ideally <1500 mg) to improve blood pressure control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk and improve blood pressure control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol limitation (maximum 1 drink/day for women, 2 for men) as excess alcohol worsens hypertension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise (150 min/week moderate intensity) after medical clearance to improve cardiovascular health and BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight management (target BMI <30) as obesity independently worsens hypertension and cardiovascular risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medication adherence for all chronic medications including antihypertensives and immunosuppressants",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and adequate sleep (7-8 hours nightly) as contributors to blood pressure control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For transplant patients: strict adherence to immunosuppressant schedule and regular drug level monitoring to prevent toxicity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Preeclampsia prevention in future pregnancies: low-dose aspirin (81-162 mg daily starting at 12-16 weeks gestation) for women with eclampsia history",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Acute ischemic stroke",
+      "features": "Focal neurological deficit corresponding to vascular territory; DWI restriction on MRI; absence of bilateral posterior edema",
+      "tests": "MRI DWI (restricted diffusion in arterial territory); CTA (vessel occlusion); PRES shows vasogenic edema with elevated ADC"
+    },
+    {
+      "diagnosis": "Cerebral venous thrombosis (CVT)",
+      "features": "Headache, seizures, focal deficits; hemorrhagic venous infarct; does not respect arterial territories; postpartum",
+      "tests": "MRV or CT venography (thrombosed sinus); D-dimer; PRES has bilateral posterior edema without sinus thrombosis"
+    },
+    {
+      "diagnosis": "CNS vasculitis",
+      "features": "Multifocal lesions; vessel wall enhancement; progressive course; may have systemic vasculitis features",
+      "tests": "DSA (irregular segmental narrowing); vessel wall MRI; CSF (pleocytosis, elevated protein); biopsy"
+    },
+    {
+      "diagnosis": "HSV encephalitis",
+      "features": "Fever; temporal lobe involvement (mesial temporal, insular cortex); CSF pleocytosis; rapid deterioration",
+      "tests": "MRI (temporal lobe edema/hemorrhage); CSF HSV PCR; PRES involves parietal-occipital predominantly"
+    },
+    {
+      "diagnosis": "Reversible cerebral vasoconstriction syndrome (RCVS)",
+      "features": "Thunderclap headache; segmental vasoconstriction on CTA/DSA; resolves in 3 months; may coexist with PRES",
+      "tests": "CTA/DSA (multifocal segmental narrowing resolving on follow-up); RCVS and PRES can overlap"
+    },
+    {
+      "diagnosis": "Hypertensive encephalopathy without PRES features",
+      "features": "Headache, confusion, seizures with severe hypertension but NO characteristic posterior vasogenic edema on MRI",
+      "tests": "MRI (no posterior vasogenic edema pattern); clinical improvement with BP control is similar"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute onset; psychiatric symptoms; seizures; antibody-mediated",
+      "tests": "CSF (antibodies: NMDA-R, LGI1, CASPR2); MRI pattern different (mesial temporal); EEG (extreme delta brush in anti-NMDA-R)"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy (uremia, hepatic)",
+      "features": "Altered consciousness; asterixis; multiorgan dysfunction; no focal edema pattern on MRI",
+      "tests": "BMP (elevated BUN/Cr or ammonia); MRI (no posterior vasogenic edema); clinical context"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM)",
+      "features": "Post-infectious; multifocal demyelinating lesions; ring enhancement; may involve spinal cord",
+      "tests": "MRI (multifocal white matter lesions with enhancement; involves corpus callosum); CSF (pleocytosis)"
+    },
+    {
+      "diagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
+      "features": "Thrombocytopenia, microangiopathic hemolytic anemia, neurological symptoms, renal dysfunction, fever",
+      "tests": "ADAMTS13 activity (<10%); schistocytes; TTP can coexist with PRES"
+    },
+    {
+      "diagnosis": "Osmotic demyelination syndrome (ODS)",
+      "features": "Rapid sodium correction; central pontine or extrapontine myelinolysis; may occur in hyponatremia correction",
+      "tests": "MRI (central pons T2/FLAIR hyperintensity); sodium correction history; location differs from PRES"
+    },
+    {
+      "diagnosis": "Posterior circulation stroke",
+      "features": "Acute onset; brainstem/cerebellar signs; unilateral or asymmetric; DWI restriction",
+      "tests": "MRI DWI (restricted diffusion in PCA territory); CTA (basilar/PCA occlusion); PRES is bilateral and vasogenic"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "PRES is characterized by vasogenic edema predominantly in posterior cerebral regions, diagnosed by MRI FLAIR and DWI/ADC",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Fugate & Rabinstein. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/25629745/) -- Comprehensive review of PRES"
+    },
+    {
+      "recommendation": "Blood pressure reduction should target 25% MAP reduction in first hour with gradual lowering to 160/100 over next 2-6 hours",
+      "evidenceLevel": "Class I, Level C",
+      "source": "AHA/ACC 2017 Hypertension Guidelines; [Whelton et al. JACC 2018](https://pubmed.ncbi.nlm.nih.gov/29146535/)"
+    },
+    {
+      "recommendation": "Nicardipine IV is preferred first-line agent for hypertensive emergency management in PRES",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Peacock et al. J Clin Hypertens 2011](https://pubmed.ncbi.nlm.nih.gov/21545393/); AHA/ACC Guidelines"
+    },
+    {
+      "recommendation": "Magnesium sulfate is superior to phenytoin and diazepam for prevention of recurrent eclamptic seizures",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Eclampsia Trial Collaborative Group. Lancet 1995](https://pubmed.ncbi.nlm.nih.gov/7776345/); [Magpie Trial. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12076174/)"
+    },
+    {
+      "recommendation": "Calcineurin inhibitor (tacrolimus, cyclosporine) toxicity is a leading cause of PRES in transplant patients; drug should be held or dose reduced",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Bartynski et al. AJNR 2008](https://pubmed.ncbi.nlm.nih.gov/18238840/)"
+    },
+    {
+      "recommendation": "DWI/ADC mapping distinguishes vasogenic edema (PRES) from cytotoxic edema (infarction); ADC values are elevated in vasogenic edema",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Covarrubias et al. AJNR 2002](https://pubmed.ncbi.nlm.nih.gov/12169476/)"
+    },
+    {
+      "recommendation": "PRES can occur at normal or mildly elevated blood pressures, particularly in immunosuppressed and eclamptic patients",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Legriel et al. Crit Care Med 2012](https://pubmed.ncbi.nlm.nih.gov/22584758/)"
+    },
+    {
+      "recommendation": "Hemorrhagic PRES occurs in 15-25% of cases and is associated with worse outcomes; anticoagulation should be avoided",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Hefzy et al. AJNR 2009](https://pubmed.ncbi.nlm.nih.gov/18842759/)"
+    },
+    {
+      "recommendation": "PRES typically resolves within 2 weeks with appropriate treatment; persistent imaging abnormalities warrant reconsideration of diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Fugate et al. Mayo Clin Proc 2010](https://pubmed.ncbi.nlm.nih.gov/20194144/) -- 120-patient case series"
+    },
+    {
+      "recommendation": "Levetiracetam is preferred ASM for PRES-associated seizures due to lack of hepatic metabolism and drug interactions",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; favorable pharmacokinetic profile in transplant and chemotherapy populations"
+    },
+    {
+      "recommendation": "VEGF inhibitors (bevacizumab, sunitinib) cause PRES through endothelial dysfunction; hold and rechallenge cautiously if needed",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Tlemsani et al. Medicine 2014](https://pubmed.ncbi.nlm.nih.gov/25501074/)"
+    },
+    {
+      "recommendation": "Low-dose aspirin (81-162 mg daily from 12-16 weeks) reduces preeclampsia risk by 17% in high-risk pregnancies",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[USPSTF 2021](https://pubmed.ncbi.nlm.nih.gov/34524390/); [Rolnik et al. NEJM 2017 (ASPRE Trial)](https://pubmed.ncbi.nlm.nih.gov/28657417/)"
+    },
+    {
+      "recommendation": "RCVS and PRES may coexist and share pathophysiological mechanisms involving endothelial dysfunction",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Singhal et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22529203/)"
+    },
+    {
+      "recommendation": "Seizure prophylaxis duration after PRES-associated seizures is typically 3-6 months with taper if imaging normalized and EEG normal",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; no randomized trial data on optimal duration"
+    },
+    {
+      "recommendation": "Non-convulsive status epilepticus occurs in up to 15% of PRES patients with altered consciousness; continuous EEG monitoring recommended",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Kozak et al. Epilepsia 2014](https://pubmed.ncbi.nlm.nih.gov/24417388/)"
+    },
+    {
+      "recommendation": "Posterior fossa involvement in PRES (brainstem, cerebellum) carries risk of obstructive hydrocephalus and brainstem herniation",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Liman et al. Eur J Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22035051/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Blood pressure (arterial line in ICU, cuff elsewhere)",
+      "frequency": "q5min during acute IV titration; q15min x 6h; q1h x 24h; then q4h",
+      "action": "Titrate IV antihypertensives; if SBP <120 reduce drip rate; reassess if >180 despite max dosing",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurological exam (GCS, pupils, motor, speech, vision)",
+      "frequency": "q1h x 24h; then q2h x 24h; then q4h",
+      "action": "If declining: STAT CT; reassess BP; check for hemorrhagic conversion; assess for NCSE; neurosurgery if hemorrhagic",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure monitoring (clinical and EEG)",
+      "frequency": "Continuous if on cEEG; clinical observation q1h",
+      "action": "Load additional ASM; upgrade to cEEG if subclinical seizures suspected; escalate to RSE protocol if refractory",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity and visual field assessment",
+      "frequency": "q8h during acute phase; daily; then at follow-up",
+      "action": "If worsening: repeat MRI; ophthalmology consultation; reassess BP control",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Serum magnesium (if on Mg sulfate drip)",
+      "frequency": "q4-6h during infusion",
+      "action": "If >8: hold infusion, check DTRs/respiratory rate; if <4: increase rate; calcium gluconate 1 g IV for toxicity",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Deep tendon reflexes (if on Mg sulfate)",
+      "frequency": "q1h during magnesium infusion",
+      "action": "Loss of DTRs = magnesium toxicity approaching; hold infusion; check level; calcium gluconate 1 g IV at bedside",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN, Cr, electrolytes)",
+      "frequency": "q12h x 48h; then daily",
+      "action": "Adjust medications for renal function; nephrology consult if worsening; dialysis if severe AKI",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Tacrolimus/cyclosporine trough (if applicable)",
+      "frequency": "q24h until stable; then per transplant protocol",
+      "action": "Coordinate with transplant team; do not increase to target levels until PRES resolved; monitor for rejection",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h (q1h if on insulin drip)",
+      "action": "Insulin drip or sliding scale adjustment; avoid hypoglycemia (<70)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h; q1h if febrile",
+      "action": "Antipyretics; cooling if refractory; infection workup if persistent fever",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Follow-up MRI brain",
+      "frequency": "At 2-4 weeks; repeat at 3 months if abnormalities persist",
+      "action": "If persistent: reconsider diagnosis; assess for ongoing cause; consider cerebral biopsy if atypical",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Urine output",
+      "frequency": "Continuous (Foley) or q4h measurement",
+      "action": "Volume assessment; adjust fluids; consider nephrology if oliguria; dialysis for anuria",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "BP controlled on oral medications; seizure-free >24h on oral ASMs; neurological exam at or near baseline; improving vision; follow-up MRI and neurology scheduled within 2-4 weeks; underlying cause identified and addressed; reliable social support and medication access"
+    },
+    {
+      "disposition": "Admit to monitored floor (stepdown)",
+      "criteria": "Mild PRES with BP controlled on IV medications with planned oral transition; seizures controlled; GCS 14-15; stable imaging without hemorrhage; oral intake tolerated; no ICU-level monitoring needs"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Severe hypertensive emergency requiring arterial line and IV antihypertensive titration; hemorrhagic PRES; recurrent seizures or status epilepticus; GCS <13 or declining; respiratory compromise requiring intubation; eclampsia requiring magnesium drip with continuous monitoring; posterior fossa edema with brainstem compression risk"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for neurocritical care not available at current facility; need for emergent delivery (eclampsia) with inadequate OB/NICU support; need for neurosurgery (hemorrhagic PRES with mass effect); need for dialysis not available"
+    },
+    {
+      "disposition": "Outpatient follow-up",
+      "criteria": "Neurology in 2-4 weeks for clinical assessment and follow-up MRI review; ophthalmology if persistent visual symptoms; nephrology for ongoing renal issues; transplant clinic within 1-2 weeks if immunosuppressant adjustment made; OB for postpartum eclampsia follow-up; PCP for long-term BP management"
+    }
+  ]
+}

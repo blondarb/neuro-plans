@@ -1,0 +1,1732 @@
+{
+  "id": "brain-abscess",
+  "title": "Brain Abscess",
+  "version": "1.1",
+  "icd10": [
+    "** G06.0 (Intracranial abscess)",
+    "G06.2 (Extradural and subdural abscess",
+    "unspecified)",
+    "B43.1 (Phaeomycotic brain abscess)",
+    "A06.6 (Amebic brain abscess)"
+  ],
+  "scope": "** Diagnosis, antimicrobial treatment, surgical management, and follow-up of brain abscess in adults. Covers empiric antibiotic selection based on suspected source, indications for surgical drainage (stereotactic aspiration vs. craniotomy with excision), management of associated complications (seizures, elevated ICP, cerebral edema), prolonged IV antibiotic course monitoring, serial imaging for resolution, and source control. Includes special populations (immunocompromised: Toxoplasma, Nocardia, fungi). Excludes epidural abscess (separate template), subdural empyema, and pediatric brain abscess.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Blood cultures x2 (different sites) (CPT 87040)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Draw BEFORE antibiotics; positive in 25-50% of brain abscess cases; identifies organism for targeted therapy; higher yield if hematogenous source",
+          "target": "Organism identification and sensitivities; Streptococci most common overall"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Leukocytosis present in only 40-60%; left shift; baseline for monitoring antibiotic toxicity; thrombocytopenia may indicate DIC",
+          "target": "WBC elevated in 40-60%; normal WBC does NOT exclude brain abscess; neutrophilia"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function for antibiotic dosing (metronidazole, vancomycin); electrolytes; hepatic function for metronidazole clearance; glucose (diabetes risk factor)",
+          "target": "Normal; monitor renal and hepatic function during prolonged antibiotic course"
+        },
+        {
+          "item": "CRP (C-reactive protein) (CPT 86140)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in >80% of brain abscess; useful for monitoring treatment response; correlates with abscess activity",
+          "target": "Elevated; declining trend indicates treatment response"
+        },
+        {
+          "item": "ESR (erythrocyte sedimentation rate) (CPT 85652)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in 60-80% of brain abscess; less responsive to acute changes than CRP; useful for longitudinal monitoring",
+          "target": "Elevated (typically 40-80 mm/hr); declining trend with successful treatment"
+        },
+        {
+          "item": "Procalcitonin (CPT 84145)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Helps distinguish bacterial from non-infectious etiology; may be normal in well-encapsulated abscess without systemic infection",
+          "target": "Variable; elevated if systemic sepsis present; may be normal with contained abscess"
+        },
+        {
+          "item": "PT/INR, aPTT (CPT 85610+85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment before surgical intervention; DIC screening; baseline before anticoagulation decisions",
+          "target": "Normal; correct if abnormal before surgery"
+        },
+        {
+          "item": "Blood glucose / HbA1c (CPT 82947+83036)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Diabetes is risk factor for brain abscess; uncontrolled glucose impairs immune response and wound healing",
+          "target": "HbA1c <6.5% (normal); glucose <180 mg/dL target"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; blood product availability for craniotomy or stereotactic aspiration",
+          "target": "On file"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis assessment in patients with systemic toxicity",
+          "target": "<2 mmol/L; elevated suggests sepsis requiring aggressive resuscitation"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Immunocompromise expands differential (Toxoplasma, Nocardia, fungi); affects empiric coverage and prognosis",
+          "target": "Negative; if positive: CD4 count, viral load; consider opportunistic organisms"
+        },
+        {
+          "item": "CD4 count (if HIV positive)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CD4 <200: Toxoplasma, Nocardia, Aspergillus, Mucor, Cryptococcus; affects empiric coverage",
+          "target": ">200 cells/mm3; if <200: broaden empiric coverage"
+        },
+        {
+          "item": "Toxoplasma IgG antibody (serum) (CPT 86777)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "If HIV/immunocompromised with ring-enhancing lesion; IgG positive in >95% of toxoplasma brain abscess",
+          "target": "Negative in immunocompetent; positive IgG + HIV + ring-enhancing lesions = empiric treatment for Toxoplasma"
+        },
+        {
+          "item": "Hepatitis B/C serologies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "IVDU population (risk factor); affects long-term antibiotic selection; hepatotoxicity monitoring",
+          "target": "Negative; if positive: affects drug selection"
+        },
+        {
+          "item": "Serum galactomannan (CPT 87305)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Aspergillus in immunocompromised (transplant, neutropenia, chronic steroid use); supports fungal abscess diagnosis",
+          "target": "Negative (<0.5 index); positive suggests invasive aspergillosis"
+        },
+        {
+          "item": "Beta-D-glucan (serum) (CPT 87449)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Broad fungal screening in immunocompromised patients; positive in Aspergillus, Candida, Pneumocystis",
+          "target": "Negative (<60 pg/mL); elevated suggests invasive fungal infection"
+        },
+        {
+          "item": "Nocardia culture (modified acid-fast stain)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Immunocompromised; chronic steroid use; transplant; may require prolonged culture (2-3 weeks)",
+          "target": "Negative; positive: branching gram-positive filamentous rods"
+        },
+        {
+          "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypogammaglobulinemia predisposes to recurrent infections; consider if recurrent or atypical abscess",
+          "target": "Normal range"
+        },
+        {
+          "item": "Complement levels (CH50, C3, C4)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Complement deficiency predisposes to infections; consider if recurrent or unusual organisms",
+          "target": "Normal"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "SIADH assessment (common complication with intracranial pathology)",
+          "target": "280-295 mOsm/kg"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Abscess aspirate culture (aerobic + anaerobic + fungal + AFB)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**Gold standard** for organism identification; sensitivity 70-90% from surgical specimens; send for Gram stain, aerobic, anaerobic, fungal, and mycobacterial culture",
+          "target": "Organism identification; polymicrobial in 20-30%; anaerobes in 30-40%"
+        },
+        {
+          "item": "16S rRNA PCR (on abscess tissue)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Culture-negative abscess; prior antibiotic exposure; fastidious or slow-growing organisms",
+          "target": "Identifies organism even when cultures negative due to prior antibiotics"
+        },
+        {
+          "item": "Metagenomic next-generation sequencing (mNGS) of abscess fluid",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Culture-negative abscess; atypical organisms; prior prolonged antibiotic therapy",
+          "target": "Comprehensive pathogen detection"
+        },
+        {
+          "item": "Histopathology (abscess wall)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Distinguish abscess from necrotic tumor (GBM, metastasis); granulomatous inflammation (TB, fungal); demyelination (tumefactive MS)",
+          "target": "Purulent material, neutrophilic infiltrate, necrosis with surrounding gliosis; no malignant cells"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Tuberculoma in endemic areas; immunocompromised; granulomatous abscess; chronic presentation",
+          "target": "Negative; positive: TB requires different treatment (anti-TB regimen 9-12 months)"
+        },
+        {
+          "item": "Fungal cultures (CPT 87102)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Immunocompromised; transplant; endemic fungi (Coccidioides, Histoplasma, Blastomyces); Aspergillus, Mucor",
+          "target": "Negative; positive: prolonged antifungal therapy (6-12+ months)"
+        },
+        {
+          "item": "QuantiFERON-TB Gold",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "TB abscess (tuberculoma) in high-risk patients; endemic areas; immunocompromised",
+          "target": "Negative"
+        },
+        {
+          "item": "Actinomyces culture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Dental source; cervicofacial disease; sulfur granules on histology; requires prolonged anaerobic culture (14 days)",
+          "target": "Negative; positive: prolonged penicillin/amoxicillin therapy (6-12 months)"
+        },
+        {
+          "item": "Cryptococcal antigen (serum + CSF) (CPT 87327)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "HIV/immunocompromised; cryptococcoma (solid form of cryptococcal infection)",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Elevated ICP assessment (expected elevated with mass lesion)",
+          "target": "Elevated (often >200 mm H2O); markedly elevated is common"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Mixed pleocytosis; may be normal if abscess well-encapsulated and not ruptured into ventricles",
+          "target": "Variable: WBC 10-500 with mixed neutrophils and lymphocytes; may be normal"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Typically mildly to moderately elevated",
+          "target": "Elevated (50-200 mg/dL)"
+        },
+        {
+          "item": "Glucose with paired serum (CPT 82945)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Usually normal unless abscess has ruptured into ventricle (ventriculitis)",
+          "target": "Normal or mildly low; markedly low suggests ventriculitis or concurrent meningitis"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "Low yield in brain abscess (positive in <25%); may be positive if ventriculitis",
+          "target": "Usually negative; positive with intraventricular rupture"
+        },
+        {
+          "item": "Fungal culture (CPT 87102)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If immunocompromised or fungal abscess suspected",
+          "target": "Negative"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "rationale": "If tuberculoma suspected",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head with contrast (CPT 70460)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate. First-line in ED for any patient presenting with headache + fever + focal deficits",
+          "target": "**Ring-enhancing lesion** with central hypodensity (necrosis) and surrounding vasogenic edema; thin smooth enhancing wall; may show mass effect, midline shift, hydrocephalus",
+          "contraindications": "Contrast allergy (pre-medicate or use MRI); renal impairment (hydrate)"
+        },
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Within 24h if CT suspicious; STAT if available. **Gold standard imaging** for brain abscess",
+          "target": "**DWI restriction** (bright on DWI, dark on ADC) = abscess (distinguishes from necrotic tumor); ring enhancement; T2/FLAIR hyperintensity of surrounding edema; thin smooth wall; multiloculated collections",
+          "contraindications": "Pacemaker, metallic implants; claustrophobia (sedate)"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate if concern for herniation before contrast; follow-up imaging to assess mass effect",
+          "target": "Mass effect, midline shift, hydrocephalus, hemorrhage",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within first hours",
+          "target": "Lung abscess, pneumonia (hematogenous source); AVM (hereditary hemorrhagic telangiectasia); endocarditis-related septic emboli",
+          "contraindications": "None significant"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MR spectroscopy (MRS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "When diagnosis uncertain (abscess vs. tumor)",
+          "target": "Amino acid peaks (valine, leucine, isoleucine), succinate, acetate, lactate = abscess; choline elevation = tumor; helps differentiate when DWI equivocal",
+          "contraindications": "Same as MRI"
+        },
+        {
+          "item": "CT chest/abdomen/pelvis (CPT 74177)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Source identification; within 48-72h",
+          "target": "Lung abscess, pulmonary AVM, endocarditis, abdominal abscess, dental pathology source",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Dental panoramic radiograph (Panorex)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Source identification; odontogenic source is common (25-30% of brain abscesses)",
+          "target": "Dental abscess, apical pathology, periodontal disease",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "CT sinuses (CPT 70486)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If sinogenic source suspected (frontal lobe abscess)",
+          "target": "Sinusitis; Pott puffy tumor; mucocele; osteomyelitis of frontal bone",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "item": "CT temporal bones (CPT 70480)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If otogenic source suspected (temporal lobe or cerebellar abscess)",
+          "target": "Mastoiditis, cholesteatoma, middle ear disease, tegmen defect",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "Source identification; endocarditis screen; especially with S. aureus or multiple abscesses",
+          "target": "Vegetations, patent foramen ovale (paradoxical embolism), septal defects",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "TEE (transesophageal echo)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If TTE non-diagnostic and high clinical suspicion for endocarditis or intracardiac shunt",
+          "target": "Vegetations, PFO, ASD; TEE sensitivity 90-95% vs. TTE 65%",
+          "contraindications": "Esophageal pathology"
+        },
+        {
+          "item": "CT angiography head (CTA) (CPT 70496)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If mycotic aneurysm suspected (endocarditis-related); vascular malformation",
+          "target": "Mycotic aneurysm; AVM",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (CPT 95700)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If altered mental status persists or unexplained neurological decline; seizure detection",
+          "target": "Seizure activity, non-convulsive status epilepticus",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Baseline; endocarditis screen; QTc for medication interactions",
+          "target": "Normal; arrhythmia; conduction abnormality",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT-guided stereotactic biopsy/aspiration",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "Diagnostic and therapeutic; within 24-48h for accessible lesions",
+          "target": "Purulent material; organism identification on culture; decompression of abscess",
+          "contraindications": "Coagulopathy (correct first); inaccessible location"
+        },
+        {
+          "item": "PET-CT brain (CPT 78816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If abscess vs. high-grade tumor remains unclear after MRI with DWI and MRS",
+          "target": "Abscess: peripheral FDG uptake (ring pattern); tumor: diffuse uptake",
+          "contraindications": "Pregnancy; uncontrolled diabetes"
+        },
+        {
+          "item": "Bubble echocardiogram",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If multiple abscesses with no clear source; evaluate for right-to-left cardiac shunt (PFO)",
+          "target": "Positive bubble study = right-to-left shunt (paradoxical embolism from venous to arterial)",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "Pulmonary angiography / CT chest with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If pulmonary AVM suspected (hereditary hemorrhagic telangiectasia); multiple brain abscesses",
+          "target": "Pulmonary AVM (bypasses pulmonary capillary filter)",
+          "contraindications": "Contrast allergy"
+        },
+        {
+          "item": "ICP monitoring (EVD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "If clinical signs of elevated ICP; declining GCS despite medical management",
+          "target": "ICP <22 mmHg; CPP >60",
+          "contraindications": "Coagulopathy (correct first)"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Ceftriaxone (CPT 96374)",
+          "route": "IV",
+          "indication": "Empiric broad-spectrum coverage for Streptococci, gram-negatives, H. influenzae; penetrates blood-brain barrier well",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone (CPT 96374) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q12h; duration 6-8 weeks total IV therapy; adjust based on culture results",
+            "orderSentence": "Ceftriaxone (CPT 96374) 2 g IV"
+          },
+          "contraindications": "Cephalosporin anaphylaxis (use meropenem as alternative); biliary sludge with prolonged use",
+          "monitoring": "CBC weekly; LFTs biweekly; renal function weekly; biliary symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metronidazole (CPT 96374)",
+          "route": "IV",
+          "indication": "Empiric anaerobic coverage (Bacteroides, Fusobacterium, Prevotella); excellent CNS penetration; essential for abscess from dental, sinus, or otogenic source",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Metronidazole (CPT 96374) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV q8h; then transition to 500 mg PO q8h when clinically stable; duration 6-8 weeks total; excellent oral bioavailability allows early PO switch",
+            "orderSentence": "Metronidazole (CPT 96374) 500 mg IV"
+          },
+          "contraindications": "Disulfiram-like reaction with alcohol; first-trimester pregnancy; severe hepatic impairment",
+          "monitoring": "Peripheral neuropathy with prolonged use (>4 weeks: reassess); LFTs; metallic taste; seizure threshold",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vancomycin (CPT 96365)",
+          "route": "IV",
+          "indication": "ADD if: post-surgical/post-traumatic abscess, MRSA risk, penetrating trauma, or unknown source; covers MRSA and penicillin-resistant Streptococci",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-20 mg/kg",
+                "orderSentence": "Vancomycin (CPT 96365) 15-20 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-20 mg/kg IV q8-12h; target trough 15-20 ug/mL or AUC/MIC 400-600; loading dose 25-30 mg/kg for severe cases",
+            "orderSentence": "Vancomycin (CPT 96365) 15-20 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (dose adjust); red man syndrome (infuse over >=1h)",
+          "monitoring": "Trough levels before 4th dose then q48-72h; renal function daily initially then twice weekly; ototoxicity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (CPT 96374)",
+          "route": "IV",
+          "indication": "Significant mass effect, cerebral edema, impending herniation, or declining neurologic status; NOT routine for all brain abscesses; may reduce antibiotic penetration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone (CPT 96374) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV q6h (0.15 mg/kg q6h) for 48-72h then rapid taper over 5-7 days; use ONLY for significant edema/mass effect; taper as soon as clinically feasible",
+            "orderSentence": "Dexamethasone (CPT 96374) 10 mg IV"
+          },
+          "contraindications": "Active untreated infection (relative; benefit of edema reduction may outweigh risk); may impair abscess encapsulation",
+          "monitoring": "Glucose q6h; GI prophylaxis; blood pressure; taper schedule; do NOT use prolonged course",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (seizure prophylaxis) (CPT 96374)",
+          "route": "IV",
+          "indication": "Seizure prophylaxis in brain abscess (seizure incidence 25-50%); recommended for all supratentorial abscesses, especially frontal and temporal locations",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (seizure prophylaxis) (CPT 96374) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV load; then 500-1000 mg IV/PO BID; titrate to 1500 mg BID if needed; max 3000 mg/day; continue for at least 3-6 months after resolution",
+            "orderSentence": "Levetiracetam (seizure prophylaxis) (CPT 96374) 1000 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust CrCl <30)",
+          "monitoring": "Renal function; behavioral/mood changes; CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Elevated ICP management; acute cerebral herniation; bridge to surgical decompression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "Mannitol 20% 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320",
+            "orderSentence": "Mannitol 20% 1 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration; active intracranial bleeding",
+          "monitoring": "Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation syndrome; more sustained ICP reduction than mannitol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL via central line over 10-20 min; target Na 145-155 mEq/L; may repeat PRN",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access (peripheral administration causes tissue necrosis)",
+          "monitoring": "Serum Na q4-6h; osmolality; central line access confirmed",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Maintenance fluids; avoid hypotonic solutions which worsen cerebral edema",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.9% NaCl",
+                "orderSentence": "IV normal saline 0.9% NaCl IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Isotonic fluids only; avoid D5W and half-normal saline; maintain euvolemia",
+            "orderSentence": "IV normal saline 0.9% NaCl IV"
+          },
+          "contraindications": "Volume overload; CHF",
+          "monitoring": "I/O; electrolytes daily; serum Na",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Lorazepam (seizure rescue)",
+          "route": "IV",
+          "indication": "Active seizure; breakthrough seizure on prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam (seizure rescue) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min; max 8 mg total",
+            "orderSentence": "Lorazepam (seizure rescue) 4 mg IV"
+          },
+          "contraindications": "Respiratory depression; severe hypotension",
+          "monitoring": "Respiratory rate; SpO2; blood pressure; airway equipment at bedside",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Fever management; headache; temperature goal <38C to reduce cerebral metabolic demand",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic disease; metronidazole concurrent use (monitor LFTs closely)",
+          "monitoring": "Temperature; LFTs (especially with concurrent metronidazole)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea and vomiting (common with elevated ICP and metronidazole use)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN nausea; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if risk factors; hepatic function",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "IV",
+          "indication": "GI prophylaxis with steroids and critical illness; stress ulcer prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "40 mg IV/PO daily; discontinue when steroids stopped and no longer in ICU",
+            "orderSentence": "Pantoprazole 40 mg IV"
+          },
+          "contraindications": "Long-term use risks (C. diff, hypomagnesemia); only while on steroids or in ICU",
+          "monitoring": "GI symptoms; consider discontinuation when steroids stopped",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Enoxaparin",
+          "route": "SC",
+          "indication": "DVT prophylaxis; prolonged immobilization and hospitalization are significant VTE risk factors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start 24-48h post-surgery if no active bleeding; hold if upcoming surgery",
+            "orderSentence": "Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active intracranial bleeding; recent craniotomy (<24h); coagulopathy; platelets <50K",
+          "monitoring": "Platelets q3 days (HIT monitoring); coagulation panel; clinical DVT signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "Mechanical",
+          "indication": "DVT prophylaxis; apply on admission; use in conjunction with pharmacologic prophylaxis when safe",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Bilateral",
+                "orderSentence": "Pneumatic compression devices Bilateral Mechanical"
+              }
+            ],
+            "route": "Mechanical",
+            "instructions": "Bilateral sequential compression devices; apply on admission; use from admission through ambulation",
+            "orderSentence": "Pneumatic compression devices Bilateral Mechanical"
+          },
+          "contraindications": "Acute DVT in lower extremity; severe peripheral vascular disease",
+          "monitoring": "Skin integrity; proper fit; compliance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fosphenytoin (seizure rescue second-line)",
+          "route": "IV",
+          "indication": "Refractory seizure not responding to levetiracetam; status epilepticus protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg",
+                "orderSentence": "Fosphenytoin (seizure rescue second-line) 20 mg PE/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Fosphenytoin 20 mg PE/kg IV at 150 mg PE/min; maintenance 100 mg PE q8h; target free phenytoin level 1-2 ug/mL (total 10-20 ug/mL)",
+            "orderSentence": "Fosphenytoin (seizure rescue second-line) 20 mg PE/kg IV"
+          },
+          "contraindications": "Bradycardia; second/third-degree heart block; hypotension",
+          "monitoring": "Continuous telemetry during load; free phenytoin level; LFTs; CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Second-line/Refractory — Targeted Therapy by Source and Organism": [
+        {
+          "item": "Penicillin G",
+          "route": "IV",
+          "indication": "Targeted therapy for penicillin-sensitive Streptococci (most common brain abscess isolate); adjust based on culture sensitivities",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 million units",
+                "orderSentence": "Penicillin G 4 million units IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 million units IV q4h (24 million units/day); duration 6-8 weeks total; excellent CNS penetration",
+            "orderSentence": "Penicillin G 4 million units IV"
+          },
+          "contraindications": "Penicillin anaphylaxis; use ceftriaxone or meropenem alternative",
+          "monitoring": "Renal function; CBC; rash; interstitial nephritis with prolonged use",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Meropenem",
+          "route": "IV",
+          "indication": "Broad-spectrum alternative if cephalosporin allergy; ESBL gram-negative organisms; polymicrobial abscess; Nocardia (some species)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Meropenem 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV q8h (meningitic dosing for CNS penetration); duration 6-8 weeks",
+            "orderSentence": "Meropenem 2 g IV"
+          },
+          "contraindications": "Carbapenem allergy; lowers seizure threshold (less than imipenem)",
+          "monitoring": "Renal function; CBC; seizure monitoring; LFTs",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TMP-SMX (Trimethoprim-Sulfamethoxazole)",
+          "route": "IV/PO",
+          "indication": "Nocardia brain abscess (first-line); Toxoplasma alternative; Stenotrophomonas",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg TMP",
+                "orderSentence": "TMP-SMX (Trimethoprim-Sulfamethoxazole) 5 mg/kg TMP IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV q6-8h based on TMP component; transition to PO when stable; Nocardia: treat 6-12 months total",
+            "orderSentence": "TMP-SMX (Trimethoprim-Sulfamethoxazole) 5 mg/kg TMP IV"
+          },
+          "contraindications": "Sulfa allergy; G6PD deficiency; severe renal impairment; megaloblastic anemia from folate deficiency",
+          "monitoring": "Renal function; CBC weekly (cytopenias); potassium (hyperkalemia); LFTs; rash (Stevens-Johnson risk)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pyrimethamine",
+          "route": "PO",
+          "indication": "Toxoplasma brain abscess (first-line); HIV/AIDS with CD4 <100 and ring-enhancing lesions; MUST co-administer with sulfadiazine and leucovorin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Pyrimethamine 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Pyrimethamine 200 mg PO load x1, then 50-75 mg PO daily; treat 6 weeks minimum then maintenance; always co-administer with sulfadiazine and leucovorin",
+            "orderSentence": "Pyrimethamine 200 mg PO"
+          },
+          "contraindications": "Bone marrow suppression; megaloblastic anemia; must give leucovorin concurrently",
+          "monitoring": "CBC twice weekly x 2 weeks then weekly; LFTs; renal function; leucovorin compliance essential",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sulfadiazine",
+          "route": "PO",
+          "indication": "Toxoplasma brain abscess (first-line); used in combination with pyrimethamine and leucovorin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g",
+                "orderSentence": "Sulfadiazine 1-1.5 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1-1.5 g PO q6h; treat 6 weeks minimum then maintenance; maintain adequate hydration to prevent crystalluria",
+            "orderSentence": "Sulfadiazine 1-1.5 g PO"
+          },
+          "contraindications": "Sulfa allergy (use clindamycin as alternative); severe renal impairment; crystalluria risk",
+          "monitoring": "Renal function; urinalysis for crystalluria; hydration status; CBC; rash (Stevens-Johnson risk)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Leucovorin (folinic acid)",
+          "route": "PO",
+          "indication": "Prevent pyrimethamine-induced bone marrow suppression; MUST co-administer with pyrimethamine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25 mg",
+                "orderSentence": "Leucovorin (folinic acid) 10-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-25 mg PO daily; continue throughout pyrimethamine therapy and 1 week after discontinuation",
+            "orderSentence": "Leucovorin (folinic acid) 10-25 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "CBC; signs of myelosuppression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Voriconazole",
+          "route": "IV/PO",
+          "indication": "Aspergillus brain abscess (first-line); other mold infections in immunocompromised",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6 mg/kg",
+                "orderSentence": "Voriconazole 6 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "6 mg/kg IV q12h x 2 loading doses, then 4 mg/kg IV q12h; transition to 200-300 mg PO BID when stable; duration 6-12 months minimum",
+            "orderSentence": "Voriconazole 6 mg/kg IV"
+          },
+          "contraindications": "Hepatic impairment; concurrent strong CYP3A4 inducers (rifampin, carbamazepine); QT prolongation; visual disturbances; IV form contraindicated if CrCl <50 (cyclodextrin accumulation)",
+          "monitoring": "Voriconazole trough levels (target 2-5 ug/mL); LFTs weekly initially then biweekly; visual changes; QTc; drug interactions (CYP2C19 polymorphisms)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Amphotericin B (liposomal)",
+          "route": "IV",
+          "indication": "Mucormycosis brain abscess; severe/refractory fungal abscess; amphotericin-sensitive fungi when azoles inadequate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg",
+                "orderSentence": "Amphotericin B (liposomal) 5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV daily; infuse over 2h; duration based on clinical response (typically 4-6 weeks IV then transition to oral azole); pre-medicate with acetaminophen and diphenhydramine",
+            "orderSentence": "Amphotericin B (liposomal) 5 mg/kg IV"
+          },
+          "contraindications": "Renal impairment (liposomal less nephrotoxic than conventional); infusion reactions",
+          "monitoring": "Renal function daily; electrolytes daily (K, Mg -- wasting common); CBC; infusion reactions; pre-medicate",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Linezolid",
+          "route": "IV/PO",
+          "indication": "MRSA brain abscess alternative to vancomycin; excellent CNS penetration; useful when vancomycin levels difficult to maintain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Linezolid 600 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "600 mg IV/PO q12h; 100% oral bioavailability; duration limited to 4 weeks ideally due to toxicity (use vancomycin for remainder)",
+            "orderSentence": "Linezolid 600 mg IV"
+          },
+          "contraindications": "Concurrent MAOIs; serotonergic agents; thrombocytopenia; duration >4 weeks increases toxicity risk",
+          "monitoring": "CBC weekly (thrombocytopenia, anemia); peripheral neuropathy; lactic acidosis; optic neuritis (rare but serious with prolonged use >28 days); serotonin syndrome risk",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Fluconazole",
+          "route": "IV/PO",
+          "indication": "Candida brain abscess (uncommon); Cryptococcus consolidation therapy after amphotericin induction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "800 mg",
+                "orderSentence": "Fluconazole 800 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "800 mg IV/PO daily x 2 weeks induction (with amphotericin for Crypto), then 400 mg PO daily consolidation x 8 weeks; maintenance 200 mg PO daily for Crypto in HIV",
+            "orderSentence": "Fluconazole 800 mg IV"
+          },
+          "contraindications": "Hepatic impairment; QT prolongation; concurrent terfenadine/cisapride",
+          "monitoring": "LFTs biweekly; QTc; drug interactions (CYP2C9/3A4 inhibitor)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Surgical Management (Disease-Modifying)": [
+        {
+          "item": "Stereotactic aspiration (CT or MRI-guided)",
+          "route": "Surgical",
+          "indication": "Brain abscess >2.5 cm; deep-seated abscess not amenable to open excision; diagnostic aspiration for culture; therapeutic decompression",
+          "dosing": {
+            "instructions": "Single aspiration; may be repeated if re-accumulation occurs; performed under stereotactic guidance",
+            "orderSentence": "Stereotactic aspiration (CT or MRI-guided) - Surgical - see dosing"
+          },
+          "pretreatment": "CT/MRI navigation imaging; coagulation panel (INR <1.5, platelets >100K); type and screen; neurosurgery consultation; anesthesia clearance",
+          "contraindications": "Coagulopathy (correct first); inaccessible brainstem location (relative)",
+          "monitoring": "Post-procedure CT within 24h; neurologic exam q1h x 6h then q2h; wound site; new deficits; fever; signs of hemorrhage",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Craniotomy with excision",
+          "route": "Surgical",
+          "indication": "Multiloculated abscess; posterior fossa abscess causing hydrocephalus; fungal abscess (poor antibiotic penetration); traumatic abscess with foreign body; failed aspiration (re-accumulation); abscess wall thicker than 5 mm with mature capsule",
+          "dosing": {
+            "instructions": "Complete excision via craniotomy; definitive treatment with lower recurrence rate than aspiration",
+            "orderSentence": "Craniotomy with excision - Surgical - see dosing"
+          },
+          "pretreatment": "CT/MRI navigation; coagulation panel; type and crossmatch; neurosurgery and anesthesia; medical optimization",
+          "contraindications": "Multiple deep abscesses; eloquent cortex location (relative; stereotactic aspiration preferred); severe medical comorbidities precluding general anesthesia",
+          "monitoring": "Post-operative neurologic exam q1h x 12h then q2h; CT at 24h; wound care; drain output; ICP if EVD placed; seizure monitoring",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "External ventricular drain (EVD)",
+          "route": "Surgical",
+          "indication": "Intraventricular rupture of abscess (ventriculitis); obstructive hydrocephalus from mass effect; ICP monitoring and CSF drainage",
+          "dosing": {
+            "instructions": "Continuous or intermittent CSF drainage; target ICP <22 mmHg; target CPP >60 mmHg",
+            "orderSentence": "External ventricular drain (EVD) - Surgical - see dosing"
+          },
+          "pretreatment": "Coagulation panel; type and screen; neurosurgery; CT confirmation of hydrocephalus",
+          "contraindications": "Severe coagulopathy (correct first)",
+          "monitoring": "ICP continuous; CSF output hourly; CSF Gram stain and culture daily; EVD site care; neurologic exam q1h",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery consultation for all brain abscesses for surgical planning (aspiration vs. excision vs. medical management decision)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Infectious disease consultation for antimicrobial optimization, targeted therapy selection, and duration guidance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for seizure management, EEG interpretation, and antiepileptic drug optimization",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ENT/Otolaryngology consultation for source control if otogenic or sinogenic origin suspected (mastoiditis, cholesteatoma, sinusitis)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dental/Oral surgery consultation for source control if odontogenic origin suspected (dental abscess, periodontal disease)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology consultation for echocardiography and endocarditis evaluation if hematogenous source or S. aureus bacteremia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pulmonology consultation if pulmonary AVM suspected (hereditary hemorrhagic telangiectasia) or concurrent lung abscess",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Critical care/ICU team for hemodynamic instability, ICP management, respiratory failure, or post-operative monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PICC line/vascular access team for long-term IV access (6-8 week antibiotic course requiring reliable central venous access)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Outpatient parenteral antibiotic therapy (OPAT) service for discharge planning and home IV antibiotic administration",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for early mobilization, deconditioning prevention, and focal deficit rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and cognitive rehabilitation if frontal or parietal lobe involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for swallow evaluation and language assessment if temporal lobe or dominant hemisphere involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for discharge planning, home IV antibiotic coordination, and community resources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Immunology referral for recurrent or atypical brain abscess to evaluate for immunodeficiency syndromes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately if worsening headache, new confusion, seizure, fever recurrence, new weakness, vision changes, or vomiting (may indicate abscess enlargement, re-accumulation, or ventriculitis)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complete the full 6-8 week IV antibiotic course without interruption (premature discontinuation risks relapse and treatment failure)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any signs of PICC line infection: redness, swelling, drainage at line site, or new fever during home IV therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report numbness, tingling, or pain in hands/feet which may indicate metronidazole-induced peripheral neuropathy requiring medication change",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT consume alcohol during and for 48 hours after metronidazole therapy due to severe disulfiram-like reaction (nausea, vomiting, flushing, tachycardia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up MRI scans are essential to confirm abscess resolution (typically at 2, 4, and 8 weeks during treatment, then every 2-3 months until resolved)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology due to seizure risk (seizures occur in 25-50% of brain abscess; state laws typically require 3-12 months seizure-free)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take antiepileptic medications as prescribed; do NOT stop abruptly (risk of breakthrough seizure)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up with neurosurgery in 2-4 weeks for post-operative evaluation and imaging review",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up with infectious disease in 1-2 weeks after discharge for antibiotic response assessment and lab monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Notify healthcare team immediately if PICC line becomes occluded, dislodged, or if unable to infuse medications (line malfunction delays critical antibiotic doses)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a daily symptom diary including temperature, headache severity, and any new neurologic symptoms to share with medical team at follow-up visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Dental evaluation and treatment of all dental pathology to prevent odontogenic brain abscess recurrence (dental source accounts for 25-30% of cases)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce sinusitis and upper respiratory infection risk which predispose to CNS infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol cessation during antibiotic therapy (metronidazole interaction) and to support immune function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IV drug use cessation counseling and harm reduction (IVDU is major risk factor for hematogenous brain abscess especially right-to-left shunt)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycemic control optimization (HbA1c target <7%) to reduce infection risk and improve immune response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Seizure safety precautions: avoid heights, swimming alone, unsupervised bathing, and operating heavy machinery until seizure-free period established",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate nutrition and hydration to support immune function and wound healing during prolonged antibiotic course",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive rehabilitation if residual deficits present; memory strategies and organizational tools for frontal/temporal lobe involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Screen for hereditary hemorrhagic telangiectasia (HHT) if pulmonary AVM identified as source (autosomal dominant; genetic testing and family screening)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular dental hygiene and preventive care to reduce odontogenic infection risk (professional cleaning every 6 months; treat cavities promptly)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid immunosuppressive medications unless medically necessary; discuss risks with prescribing physician if immunosuppression required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual return to work and daily activities with accommodations as needed; fatigue is common during prolonged antibiotic treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mental health support for depression and anxiety which are common during prolonged treatment and recovery from brain abscess",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "High-grade glioma (GBM)",
+      "features": "Irregular thick ring enhancement; no DWI restriction centrally (tumor necrosis shows facilitated diffusion); older age; no fever; progressive over weeks",
+      "tests": "MRI DWI/ADC (key differentiator: tumor = no restriction; abscess = restricted diffusion); MR spectroscopy (choline peak in tumor); biopsy if uncertain"
+    },
+    {
+      "diagnosis": "Brain metastasis",
+      "features": "Multiple lesions at gray-white junction; known primary malignancy; ring-enhancing; no DWI restriction; no fever",
+      "tests": "MRI DWI (no restriction); CT chest/abdomen/pelvis for primary; biopsy"
+    },
+    {
+      "diagnosis": "Cerebral toxoplasmosis",
+      "features": "HIV/AIDS with CD4 <100; multiple ring-enhancing lesions in basal ganglia; positive Toxoplasma IgG; responds to empiric therapy",
+      "tests": "Toxoplasma IgG (>95% positive); CD4 count; empiric treatment trial (clinical and radiographic improvement in 2 weeks); biopsy if no response"
+    },
+    {
+      "diagnosis": "Primary CNS lymphoma",
+      "features": "Immunocompromised or immunocompetent; periventricular enhancing mass; homogeneous enhancement (vs. ring); restricted DWI",
+      "tests": "MRI (homogeneous enhancement pattern); CSF cytology; EBV PCR in CSF (HIV-related); stereotactic biopsy (definitive); avoid steroids before biopsy"
+    },
+    {
+      "diagnosis": "Subdural empyema",
+      "features": "Extra-axial collection; post-sinusitis/otitis; crescent-shaped enhancement; rapid clinical deterioration; seizures common",
+      "tests": "MRI with contrast (extra-axial crescentic collection with DWI restriction); CT with contrast"
+    },
+    {
+      "diagnosis": "Tumefactive MS",
+      "features": "Young patient; large demyelinating lesion with incomplete ring enhancement (open ring sign); less mass effect for size; white matter location",
+      "tests": "MRI (open ring enhancement; leading edge enhancement); CSF oligoclonal bands; MS-specific antibodies; biopsy if uncertain"
+    },
+    {
+      "diagnosis": "Cerebral infarction with hemorrhagic transformation",
+      "features": "Acute onset; vascular territory distribution; no fever initially; peripheral enhancement 1-2 weeks post-stroke can mimic abscess",
+      "tests": "Clinical history; MRI DWI pattern (vascular territory); CTA/MRA; timing of enhancement"
+    },
+    {
+      "diagnosis": "Radiation necrosis",
+      "features": "History of prior cranial radiation; ring-enhancing lesion in radiation field; months to years post-treatment",
+      "tests": "MR spectroscopy (lipid/lactate without choline); PET-CT (hypometabolic vs. hypermetabolic in tumor); perfusion MRI (low rCBV); biopsy"
+    },
+    {
+      "diagnosis": "Neurocysticercosis",
+      "features": "Endemic area exposure; ring-enhancing lesions with scolex (eccentric dot); seizures; calcified lesions; minimal edema relative to size",
+      "tests": "MRI (scolex visible as dot within cyst); serum/CSF cysticercosis antibodies; CT (calcifications); travel history"
+    },
+    {
+      "diagnosis": "Tuberculoma",
+      "features": "Endemic area; immunocompromised; ring-enhancing or solid nodular lesion; conglomerate lesions; basilar meningeal enhancement",
+      "tests": "AFB culture; TB PCR; QuantiFERON; chest imaging; biopsy with granulomatous inflammation; response to anti-TB therapy"
+    },
+    {
+      "diagnosis": "Fungal granuloma (Aspergillus, Mucor)",
+      "features": "Immunocompromised; transplant; neutropenic; angioinvasive pattern with hemorrhage; rapid progression",
+      "tests": "Galactomannan; beta-D-glucan; tissue biopsy with septate vs. non-septate hyphae; culture"
+    },
+    {
+      "diagnosis": "Resolving hematoma (subacute-chronic)",
+      "features": "History of trauma or anticoagulation; ring enhancement on subacute hematoma can mimic abscess; no DWI restriction; evolving signal characteristics on MRI",
+      "tests": "MRI signal evolution (T1 bright subacute blood); no DWI restriction; clinical history of trauma/anticoagulation; follow-up imaging"
+    },
+    {
+      "diagnosis": "Demyelinating disease (tumefactive MS, ADEM)",
+      "features": "Young patient; open ring enhancement (incomplete ring); less mass effect for lesion size; white matter location; may have other MS lesions",
+      "tests": "MRI (incomplete ring enhancement); CSF oligoclonal bands; prior episodes; brain biopsy if uncertain"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Empiric ceftriaxone + metronidazole +/- vancomycin for brain abscess",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278571/) — comprehensive review of brain abscess management"
+    },
+    {
+      "recommendation": "MRI with DWI to distinguish abscess from tumor (restricted diffusion = abscess)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Reddy et al. AJNR 2006](https://pubmed.ncbi.nlm.nih.gov/16551990/) — DWI specificity ~95% for abscess vs. necrotic tumor"
+    },
+    {
+      "recommendation": "Stereotactic aspiration for abscesses >2.5 cm",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Mamelak et al. Neurosurgery 1995](https://pubmed.ncbi.nlm.nih.gov/8559293/) — CT-guided aspiration outcomes and indications"
+    },
+    {
+      "recommendation": "Total duration of IV antibiotics 6-8 weeks",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278571/); [Helweg-Larsen et al. Clin Microbiol Infect 2012](https://pubmed.ncbi.nlm.nih.gov/22524597/)"
+    },
+    {
+      "recommendation": "Seizure prophylaxis for supratentorial brain abscess",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Lv et al. World Neurosurg 2019](https://pubmed.ncbi.nlm.nih.gov/31252145/) — seizure incidence 25-50% in brain abscess; prophylaxis widely practiced"
+    },
+    {
+      "recommendation": "Dexamethasone only for significant mass effect (not routine)",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278571/) — steroids may impair capsule formation and reduce antibiotic penetration; use only when necessary"
+    },
+    {
+      "recommendation": "Surgical excision for posterior fossa abscess",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Muzumdar et al. J Neurosurg 2011](https://pubmed.ncbi.nlm.nih.gov/21529128/) — posterior fossa abscesses have higher morbidity due to brainstem compression and hydrocephalus"
+    },
+    {
+      "recommendation": "Pyrimethamine + sulfadiazine for Toxoplasma abscess",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[IDSA Guidelines — Kaplan et al. MMWR 2009](https://pubmed.ncbi.nlm.nih.gov/19357635/) — standard treatment for CNS toxoplasmosis in HIV"
+    },
+    {
+      "recommendation": "Voriconazole first-line for Aspergillus brain abscess",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[IDSA Aspergillosis Guidelines — Patterson et al. CID 2016](https://pubmed.ncbi.nlm.nih.gov/27365388/)"
+    },
+    {
+      "recommendation": "MR spectroscopy to differentiate abscess vs. tumor",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Lai et al. AJNR 2002](https://pubmed.ncbi.nlm.nih.gov/12223375/) — amino acid peaks and succinate specific for abscess"
+    },
+    {
+      "recommendation": "Serial imaging to monitor treatment response",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Expert consensus; imaging at 1-2 week intervals during treatment; abscess should decrease in size by 2-4 weeks"
+    },
+    {
+      "recommendation": "Source identification and control (dental, otogenic, sinus)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278571/) — source control essential to prevent recurrence; dental source in 25-30%"
+    },
+    {
+      "recommendation": "Metronidazole for anaerobic coverage with excellent CNS penetration",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Ingham et al. J Antimicrob Chemother 1977](https://pubmed.ncbi.nlm.nih.gov/413718/); virtually 100% oral bioavailability allows early PO switch"
+    },
+    {
+      "recommendation": "Endocarditis screening in brain abscess with S. aureus bacteremia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[AHA Endocarditis Guidelines — Baddour et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/26373316/)"
+    },
+    {
+      "recommendation": "LP generally contraindicated in brain abscess due to herniation risk",
+      "evidenceLevel": "Class I, Level B",
+      "source": "Expert consensus; mass effect from abscess creates herniation risk with CSF drainage"
+    },
+    {
+      "recommendation": "Craniotomy for multiloculated, posterior fossa, or fungal abscesses",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Menon et al. J Clin Neurosci 2008](https://pubmed.ncbi.nlm.nih.gov/18396408/) — excision preferred when aspiration unlikely to be curative"
+    },
+    {
+      "recommendation": "EVD for intraventricular rupture with ventriculitis",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278571/) — intraventricular rupture carries 80-100% mortality without intervention"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, pupils, motor, speech)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h x 24h post-op or post-diagnosis, then q2-4h; OPD: each visit",
+      "action": "If declining: STAT CT; neurosurgery reassessment; ICP management; repeat aspiration if re-accumulation"
+    },
+    {
+      "item": "Temperature",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q4h (q1h if febrile)",
+      "action": "If persistent fever >2 weeks: repeat imaging; reassess antibiotics; evaluate for new source; consider aspiration failure"
+    },
+    {
+      "item": "CBC with differential",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily x 3 then twice weekly inpatient; weekly outpatient during IV antibiotics",
+      "action": "If new leukocytosis: repeat imaging; blood cultures; reassess antibiotic coverage"
+    },
+    {
+      "item": "CRP",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Twice weekly inpatient; weekly outpatient",
+      "action": "If rising: treatment failure; repeat imaging; reassess"
+    },
+    {
+      "item": "ESR",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Weekly inpatient; every 2 weeks outpatient",
+      "action": "If not declining by week 3-4: reassess treatment; repeat imaging"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Daily if on vancomycin; twice weekly otherwise; weekly outpatient",
+      "action": "If rising: adjust vancomycin dose; increase hydration; consider alternative agents"
+    },
+    {
+      "item": "Vancomycin trough/AUC (if applicable)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Before 4th dose then q48-72h until stable; weekly outpatient",
+      "action": "Adjust dosing; pharmacy consult"
+    },
+    {
+      "item": "LFTs (if on metronidazole)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Weekly during treatment; biweekly outpatient",
+      "action": "If elevated >3x ULN: reassess metronidazole; consider dose reduction or discontinuation"
+    },
+    {
+      "item": "Serial MRI brain with contrast",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "At 1-2 weeks, 4 weeks, 6-8 weeks during treatment; then q2-3 months until complete resolution",
+      "action": "If enlarging: surgical re-intervention; reassess antibiotic regimen; consider aspiration/excision"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6-12h x 48h then daily; especially if on mannitol or hypertonic saline",
+      "action": "If <130: SIADH evaluation; fluid restriction; if <120: 3% saline"
+    },
+    {
+      "item": "Seizure monitoring (clinical + EEG)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Clinical: continuous in ICU; EEG if altered consciousness; OPD: seizure diary",
+      "action": "If seizures: optimize AED levels; add second agent; continuous EEG monitoring"
+    },
+    {
+      "item": "PICC line site (outpatient)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Daily patient self-check; weekly nursing assessment",
+      "action": "Redness/drainage: blood cultures; line removal if infected; swelling: DVT ultrasound"
+    },
+    {
+      "item": "ICP (if EVD in place)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous",
+      "action": "Tiered ICP management: CSF drainage, osmotherapy, sedation, surgical decompression"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home (with OPAT)",
+      "criteria": "Clinically improving; afebrile >=48h; neurologically stable; abscess decreasing on serial imaging; oral intake adequate; reliable IV access (PICC) in place; OPAT service arranged; able to self-administer or has caregiver for home IV antibiotics; follow-up with ID and neurosurgery confirmed; seizure-free on AEDs"
+    },
+    {
+      "disposition": "Admit to floor (monitored)",
+      "criteria": "Stable neurologic exam (GCS >=13); no respiratory compromise; no signs of elevated ICP; abscess <2.5 cm being treated medically; post-aspiration with stable imaging; seizures controlled on medication"
+    },
+    {
+      "disposition": "Admit to ICU / Neuro-ICU",
+      "criteria": "GCS <13 or declining; significant mass effect or midline shift; post-craniotomy (first 24h); signs of elevated ICP; herniation syndrome; multiple abscesses with significant edema; refractory seizures or status epilepticus; intraventricular rupture (ventriculitis); hemodynamic instability; need for ICP monitoring (EVD)"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for neurosurgery not available at current facility; need for stereotactic aspiration capability; need for neuro-ICU expertise; need for continuous EEG not available"
+    },
+    {
+      "disposition": "Inpatient rehabilitation",
+      "criteria": "Moderate-severe focal deficits (hemiparesis, aphasia, cognitive impairment) after abscess treatment; able to participate in 3h/day therapy"
+    }
+  ]
+}

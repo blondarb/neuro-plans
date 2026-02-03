@@ -1,0 +1,1476 @@
+{
+  "id": "neurosyphilis",
+  "title": "Neurosyphilis",
+  "version": "1.1",
+  "icd10": [
+    "** A52.2 (Asymptomatic neurosyphilis)",
+    "A52.3 (Neurosyphilis",
+    "unspecified)",
+    "A52.13 (Late syphilitic meningitis)",
+    "A52.14 (Late syphilitic encephalitis)"
+  ],
+  "scope": "** Evaluation and management of neurosyphilis including early neurosyphilis (meningeal, meningovascular), late neurosyphilis (general paresis, tabes dorsalis), and ocular/otic syphilis. Includes diagnosis, treatment with IV penicillin G, management of Jarisch-Herxheimer reaction, penicillin desensitization for allergic patients, and post-treatment monitoring with serial CSF analysis. Excludes primary/secondary syphilis without CNS involvement, congenital syphilis, and HIV-specific antiretroviral management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "RPR (serum) (CPT 86592)",
+          "rationale": "Non-treponemal screening test; quantitative titer used for treatment response monitoring; sensitivity ~70-80% in late syphilis (prozone effect possible)",
+          "target": "Reactive with titer (document titer for follow-up comparison)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "VDRL (serum) (CPT 86592)",
+          "rationale": "Alternative non-treponemal screening; quantitative titer; VDRL is the only validated non-treponemal test for CSF",
+          "target": "Reactive with titer",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "FTA-ABS (serum) (CPT 86780)",
+          "rationale": "Treponemal confirmatory test; remains positive for life after infection; high sensitivity and specificity",
+          "target": "Reactive (confirms treponemal exposure)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TP-PA (serum) (CPT 86780)",
+          "rationale": "Treponemal confirmatory test; alternative to FTA-ABS; high specificity",
+          "target": "Reactive",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Treponemal IgG/IgM EIA or CIA (serum)",
+          "rationale": "Many labs now use reverse screening algorithm (treponemal test first); automated, high throughput",
+          "target": "Reactive",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HIV 1/2 antigen/antibody (4th generation) (CPT 87389)",
+          "rationale": "High co-infection rate (syphilis-HIV co-infection in 25-70% in some populations); HIV affects neurosyphilis presentation, treatment response, and monitoring schedule",
+          "target": "Document result; if positive, obtain CD4 and viral load",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; infection markers; lymphocytosis may be present",
+          "target": "Normal or mild lymphocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Renal function for penicillin dosing; hepatic function; electrolytes",
+          "target": "Normal; document baseline Cr",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ESR (CPT 85651)",
+          "rationale": "Elevated in active syphilis; non-specific inflammatory marker",
+          "target": "Often elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; baseline",
+          "target": "May be mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "CD4 count and HIV viral load (CPT 86360)",
+          "rationale": "If HIV positive; CD4 <350 increases risk of neurosyphilis; affects monitoring frequency",
+          "target": "Document baseline; CD4 <350 = higher risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis B surface antigen, surface antibody, core antibody (CPT 87340)",
+          "rationale": "Co-infection screening (shared risk factors); hepatitis may complicate treatment",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hepatitis C antibody (CPT 86803)",
+          "rationale": "Co-infection screening",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gonorrhea/Chlamydia NAAT (CPT 87591)",
+          "rationale": "STI co-infection screening; shared risk factors",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, aPTT) (CPT 85610+85730)",
+          "rationale": "Before lumbar puncture; coagulopathy workup",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (paired with CSF) (CPT 82947)",
+          "rationale": "CSF:serum glucose ratio interpretation",
+          "target": "Document paired with LP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum B12 level (CPT 82607)",
+          "rationale": "Subacute combined degeneration in differential (posterior column dysfunction like tabes dorsalis)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction in differential of cognitive decline",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA, dsDNA (CPT 86235)",
+          "rationale": "SLE meningitis/cerebritis in differential; biological false-positive RPR seen in SLE",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Treponemal PCR (CSF) (CPT 87798)",
+          "rationale": "Limited availability; lower sensitivity than serology; may be useful in early infection before antibody response",
+          "target": "Negative (positive confirms T. pallidum DNA)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibodies (CPT 86146)",
+          "rationale": "Syphilis can cause biological false-positive; meningovascular syphilis with stroke differential includes antiphospholipid syndrome",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (serum + CSF) (CPT 86255)",
+          "rationale": "General paresis may mimic autoimmune encephalitis (psychiatric symptoms, cognitive decline)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel (serum) (CPT 86255)",
+          "rationale": "Rapidly progressive dementia differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (serum) (CPT 82164)",
+          "rationale": "Neurosarcoidosis in differential (cranial neuropathies, meningitis)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Whipple PCR (CSF or tissue)",
+          "rationale": "Whipple disease in differential (dementia, ophthalmoplegia, ataxia)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated in syphilitic meningitis",
+          "target": "Normal or mildly elevated (10-20 cm H2O); elevated in acute meningitis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4) (CPT 89051)",
+          "rationale": "CSF pleocytosis is the hallmark of active neurosyphilis; lymphocytic predominant; most sensitive CSF marker",
+          "target": "WBC >5 cells/uL (lymphocyte predominant); typically 10-400 cells/uL; elevated WBC is the most sensitive indicator of active CNS infection",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein (CPT 84157)",
+          "rationale": "Elevated in neurosyphilis (45-200 mg/dL)",
+          "target": "Elevated (>45 mg/dL); typically 50-200 mg/dL",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with paired serum glucose (CPT 82945)",
+          "rationale": "May be mildly decreased; helps distinguish from other causes of meningitis",
+          "target": "Normal or mildly low (>60% serum glucose ratio); markedly low glucose suggests bacterial or TB meningitis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF VDRL (CPT 86592)",
+          "rationale": "GOLD STANDARD for neurosyphilis diagnosis; highly SPECIFIC (99%) but sensitivity only 30-70%. A REACTIVE CSF VDRL confirms neurosyphilis. A NON-REACTIVE CSF VDRL does NOT exclude neurosyphilis",
+          "target": "Reactive = diagnostic of neurosyphilis. Non-reactive does NOT rule out neurosyphilis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF FTA-ABS (CPT 86780)",
+          "rationale": "More SENSITIVE than CSF VDRL (>95%) but LESS SPECIFIC (false positives from blood contamination). A NEGATIVE CSF FTA-ABS essentially rules out neurosyphilis. Used mainly to EXCLUDE the diagnosis",
+          "target": "Non-reactive = neurosyphilis unlikely. Reactive = possible neurosyphilis (but not confirmatory due to lower specificity)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF RPR",
+          "rationale": "NOT validated for CSF; some labs offer it but CSF VDRL is the standard non-treponemal test for CSF",
+          "target": "CSF VDRL preferred; CSF RPR has uncertain performance characteristics",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and bacterial culture (CPT 87205+87070)",
+          "rationale": "Exclude bacterial meningitis if acute presentation",
+          "target": "No organisms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "BioFire FilmArray ME Panel (CPT 87483)",
+          "rationale": "Rapid multiplex PCR to exclude bacterial/viral meningitis if acute presentation",
+          "target": "Negative (no bacterial or viral pathogen identified)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands, IgG index (CPT 83916)",
+          "rationale": "Intrathecal antibody production; elevated in neurosyphilis; also elevated in MS (differential)",
+          "target": "Often positive (intrathecal IgG synthesis); not specific to syphilis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AFB smear and culture (CPT 87116)",
+          "rationale": "TB meningitis in differential (chronic lymphocytic meningitis)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology (CPT 88104)",
+          "rationale": "Leptomeningeal malignancy in differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cryptococcal antigen (CSF) (CPT 87327)",
+          "rationale": "HIV co-infection; chronic meningitis differential",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 24-48h; STAT if acute stroke symptoms or altered consciousness",
+          "target": "Meningovascular: cerebral infarction (especially MCA territory in young patient), meningeal enhancement, gummatous lesions. General paresis: frontotemporal atrophy, mesial temporal T2 hyperintensity. Tabes dorsalis: spinal cord atrophy. May be NORMAL in early/asymptomatic neurosyphilis",
+          "contraindications": "Pacemaker, metallic implants",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate in ED if acute presentation (stroke, altered consciousness, seizure)",
+          "target": "Infarction (meningovascular), hydrocephalus, calcified gumma; may be normal",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "On admission; before penicillin infusion",
+          "target": "Baseline; syphilitic aortitis (conduction abnormalities); QTc for concurrent medications",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI spine (cervical/thoracic) with contrast (CPT 72156)",
+          "timing": "If myelopathy symptoms (tabes dorsalis, syphilitic myelitis)",
+          "target": "Spinal cord atrophy (tabes dorsalis: posterior columns), meningeal enhancement, myelitis signal change",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRA head and neck (CPT 70544+70547)",
+          "timing": "If meningovascular syphilis with stroke suspected",
+          "target": "Arteritis; vessel wall enhancement; stenosis (medium and large vessels); aneurysm",
+          "contraindications": "Same as MRI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT angiography head and neck (CPT 70496)",
+          "timing": "If MRA not available and stroke suspected",
+          "target": "Same as MRA",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Echocardiogram (TTE) (CPT 93306)",
+          "timing": "If cardiovascular syphilis suspected (aortitis); concurrent evaluation",
+          "target": "Aortic regurgitation; ascending aortic aneurysm; aortitis",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "Admission; cardiovascular syphilis screening",
+          "target": "Ascending aortic calcification (eggshell pattern); aortic dilatation",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Vessel wall MRI (high-resolution)",
+          "timing": "If meningovascular syphilis with negative standard MRA",
+          "target": "Concentric vessel wall enhancement (vasculitis pattern); distinguishes from atherosclerotic disease",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78816)",
+          "timing": "Atypical cognitive decline; general paresis with unclear diagnosis",
+          "target": "Frontotemporal hypometabolism (general paresis pattern)",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (routine or continuous) (CPT 95816)",
+          "timing": "If seizures or altered mental status",
+          "target": "Focal slowing; generalized slowing (general paresis); epileptiform discharges",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT/MRI aorta with contrast",
+          "timing": "If cardiovascular syphilis suspected (aortitis, aneurysm)",
+          "target": "Ascending aortic aneurysm; aortitis",
+          "contraindications": "Contrast allergy; renal impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nerve conduction studies / EMG (CPT 95907+95861)",
+          "timing": "Peripheral neuropathy evaluation; tabes dorsalis differential",
+          "target": "Sensory neuropathy pattern; dorsal root ganglionopathy",
+          "contraindications": "Anticoagulation (relative for EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Penicillin G (aqueous crystalline) (CPT 96365)",
+          "route": "IV",
+          "indication": "First-line treatment for ALL forms of neurosyphilis (meningeal, meningovascular, general paresis, tabes dorsalis, ocular syphilis, otic syphilis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-4 million units q4h",
+                "orderSentence": "Penicillin G (aqueous crystalline) (CPT 96365) 3-4 million units q4h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "18-24 million units/day IV, given as 3-4 million units IV q4h continuously for 10-14 days. Infuse each dose over 30-60 min. Alternative: continuous IV infusion 18-24 million units/day. Duration: minimum 10-14 days",
+            "orderSentence": "Penicillin G (aqueous crystalline) (CPT 96365) 3-4 million units q4h IV"
+          },
+          "contraindications": "Penicillin anaphylaxis (perform desensitization -- see below); dose adjust for severe renal impairment (CrCl <10: 2-3 million units q4h)",
+          "monitoring": "Renal function (BUN, Cr) daily; serum potassium (high-dose penicillin contains potassium); CBC; monitor for Jarisch-Herxheimer reaction in first 24h; monitor for seizures at very high doses",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline (hydration)",
+          "route": "IV",
+          "indication": "Maintain hydration during IV penicillin therapy; prevent volume depletion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75-125 mL/h",
+                "orderSentence": "IV normal saline (hydration) 75-125 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "75-125 mL/h IV maintenance; bolus 500-1000 mL if dehydrated",
+            "orderSentence": "IV normal saline (hydration) 75-125 mL/h IV"
+          },
+          "contraindications": "Volume overload, CHF",
+          "monitoring": "I/O; electrolytes daily",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Acetaminophen (Jarisch-Herxheimer prophylaxis/treatment)",
+          "route": "PO/IV",
+          "indication": "Prophylaxis and treatment of Jarisch-Herxheimer reaction (fever, rigors, headache, myalgia occurring 2-8h after first penicillin dose; occurs in up to 50% of neurosyphilis patients)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg q6h",
+                "orderSentence": "Acetaminophen (Jarisch-Herxheimer prophylaxis/treatment) 650-1000 mg q6h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO/IV q6h for first 24-48h of treatment; premedicate before first penicillin dose",
+            "orderSentence": "Acetaminophen (Jarisch-Herxheimer prophylaxis/treatment) 650-1000 mg q6h PO"
+          },
+          "contraindications": "Severe hepatic disease",
+          "monitoring": "Temperature; LFTs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylprednisolone (severe Jarisch-Herxheimer prevention)",
+          "route": "IV",
+          "indication": "Prevention of severe Jarisch-Herxheimer reaction in patients at high risk (high RPR titer, HIV co-infection, ocular/otic syphilis with risk of permanent vision/hearing loss, meningovascular syphilis with stroke risk)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-125 mg",
+                "orderSentence": "Methylprednisolone (severe Jarisch-Herxheimer prevention) 60-125 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "60-125 mg IV 30 min before first penicillin dose to attenuate Jarisch-Herxheimer reaction",
+            "orderSentence": "Methylprednisolone (severe Jarisch-Herxheimer prevention) 60-125 mg IV"
+          },
+          "contraindications": "Active untreated infection (relative); uncontrolled diabetes",
+          "monitoring": "Glucose; blood pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Probenecid (with IM penicillin alternative)",
+          "route": "PO",
+          "indication": "Used ONLY with procaine penicillin G IM regimen (alternative to IV penicillin when IV access impossible); blocks renal excretion of penicillin to maintain treponemicidal CSF levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg QID",
+                "orderSentence": "Probenecid (with IM penicillin alternative) 500 mg QID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500 mg PO QID for 10-14 days (must be given with each IM penicillin dose); ensure adequate hydration",
+            "orderSentence": "Probenecid (with IM penicillin alternative) 500 mg QID PO"
+          },
+          "contraindications": "Uric acid nephrolithiasis; blood dyscrasias; sulfonamide allergy",
+          "monitoring": "Uric acid; renal function; ensure compliance (QID dosing)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Procaine penicillin G IM (alternative ONLY if IV not feasible)",
+          "route": "IM",
+          "indication": "Alternative to IV penicillin G ONLY when IV access is impossible. MUST be combined with probenecid. CDC considers this acceptable but less preferred than IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.4 million units daily",
+                "orderSentence": "Procaine penicillin G IM (alternative ONLY if IV not feasible) 2.4 million units daily IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "2.4 million units IM daily for 10-14 days PLUS probenecid 500 mg PO QID. This regimen REQUIRES strict compliance with probenecid; any missed doses compromise CSF levels",
+            "orderSentence": "Procaine penicillin G IM (alternative ONLY if IV not feasible) 2.4 million units daily IM"
+          },
+          "contraindications": "Procaine allergy; injection site concerns",
+          "monitoring": "Injection sites; compliance with probenecid; clinical response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (lightning pains of tabes dorsalis; lancinating pain)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d to 300-900 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust: CrCl <60)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain (tabes dorsalis; alternative to gabapentin)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase to 150-300 mg BID q1wk; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history",
+          "monitoring": "Sedation; weight gain; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Lancinating/lightning pain of tabes dorsalis (particularly effective for paroxysmal neuropathic pain)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 200 mg/day q1wk; target 400-800 mg/day; max 1200 mg/day",
+            "orderSentence": "Carbamazepine 100 mg PO"
+          },
+          "contraindications": "AV block; history of bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent -- screen before starting)",
+          "monitoring": "CBC with differential q2wk x 2 months then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 ug/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain (tabes dorsalis); concurrent depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 wk; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "LFTs; blood pressure; serotonin syndrome symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV/PO",
+          "indication": "Seizures (neurosyphilis-related seizures; meningovascular with cortical involvement)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg BID",
+                "orderSentence": "Levetiracetam 1000-1500 mg BID IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 1000-1500 mg BID IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Renal function; mood/behavioral changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Active seizure rescue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg IV push",
+                "orderSentence": "Lorazepam 0.1 mg/kg IV push IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg); may repeat x1 in 5 min",
+            "orderSentence": "Lorazepam 0.1 mg/kg IV push IV"
+          },
+          "contraindications": "Respiratory depression; severe hepatic failure",
+          "monitoring": "RR, SpO2; airway equipment ready",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression (common with general paresis and chronic neurosyphilis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 50 mg q2-4wk; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "Suicidality monitoring (first 4 weeks); serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Psychotic symptoms (general paresis with psychosis, paranoid delusions, grandiosity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Quetiapine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg BID; titrate slowly to 50-100 mg BID; target 150-300 mg/day for psychosis",
+            "orderSentence": "Quetiapine 25 mg PO"
+          },
+          "contraindications": "QT prolongation; dementia-related psychosis (black box)",
+          "monitoring": "Metabolic panel q3 months; fasting glucose; lipids; QTc; tardive dyskinesia monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Haloperidol",
+          "route": "IV/IM",
+          "indication": "Acute agitation with psychosis (general paresis with severe agitation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-5 mg q4-6h PRN",
+                "orderSentence": "Haloperidol 2-5 mg q4-6h PRN IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-5 mg IV/IM q4-6h PRN; max 20 mg/day",
+            "orderSentence": "Haloperidol 2-5 mg q4-6h PRN IV"
+          },
+          "contraindications": "QT prolongation; Parkinson disease; dementia (black box)",
+          "monitoring": "QTc monitoring; EPS; vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "PO",
+          "indication": "Gastroparesis (visceral autonomic neuropathy in tabes dorsalis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Metoclopramide 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg PO 30 min before meals and at bedtime; max 40 mg/day; limit to 12 weeks",
+            "orderSentence": "Metoclopramide 10 mg TID PO"
+          },
+          "contraindications": "Parkinson disease; tardive dyskinesia; bowel obstruction",
+          "monitoring": "Tardive dyskinesia; EPS (limit duration)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Bladder dysfunction (neurogenic bladder in tabes dorsalis; urgency/incontinence)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; may increase to 5 mg TID; max 15 mg/day",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Urinary retention; uncontrolled narrow-angle glaucoma; GI obstruction",
+          "monitoring": "Post-void residual; anticholinergic effects (cognition in elderly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Ceftriaxone IV (alternative to penicillin G)",
+          "route": "IV",
+          "indication": "Alternative for neurosyphilis when penicillin desensitization is not feasible; CDC-recommended alternative. Evidence supports adequate CSF penetration and treponemicidal activity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g daily",
+                "orderSentence": "Ceftriaxone IV (alternative to penicillin G) 2 g daily IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV daily for 10-14 days. Some experts recommend 14 days. Limited clinical trial data but supported by observational studies and CDC guidelines",
+            "orderSentence": "Ceftriaxone IV (alternative to penicillin G) 2 g daily IV"
+          },
+          "contraindications": "Cephalosporin anaphylaxis; severe penicillin allergy with cephalosporin cross-reactivity (low risk, ~1-2%)",
+          "monitoring": "Renal function; CBC; LFTs; biliary sludge with prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Penicillin desensitization protocol (for penicillin-allergic patients)",
+          "route": "PO then IV",
+          "indication": "Penicillin allergy with no acceptable alternative; allows safe IV penicillin G administration. Desensitization takes 4-6 hours and must be done in monitored setting (ICU or equivalent)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "See Appendix A",
+                "orderSentence": "Penicillin desensitization protocol (for penicillin-allergic patients) See Appendix A PO then IV"
+              }
+            ],
+            "route": "PO then IV",
+            "instructions": "Oral desensitization protocol over 4-6h (see Appendix A); begin IV penicillin G immediately after desensitization complete; patient must remain on continuous penicillin (no gaps >8h or desensitization is lost)",
+            "orderSentence": "Penicillin desensitization protocol (for penicillin-allergic patients) See Appendix A PO then IV"
+          },
+          "contraindications": "Anaphylaxis to penicillin (proceed with extreme caution in ICU); unstable cardiac/respiratory status",
+          "monitoring": "Continuous cardiac monitoring; SpO2; BP q15min during protocol; epinephrine at bedside; IV access x2; crash cart available",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Doxycycline (third-line alternative)",
+          "route": "PO",
+          "indication": "Third-line alternative ONLY when both IV penicillin and ceftriaxone are contraindicated; limited evidence for neurosyphilis; better studied for early syphilis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Doxycycline (third-line alternative) 200 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg PO BID for 28 days. Some experts recommend 30 days. LOWER confidence in CNS penetration; use only if no other option. Close CSF monitoring mandatory",
+            "orderSentence": "Doxycycline (third-line alternative) 200 mg BID PO"
+          },
+          "contraindications": "Pregnancy; children <8 years; concurrent retinoids",
+          "monitoring": "LFTs; sun protection counseling; GI tolerance; photosensitivity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Corticosteroids (adjunctive for ocular/otic syphilis)",
+          "route": "PO/IV",
+          "indication": "Adjunctive anti-inflammatory therapy for ocular syphilis (uveitis, optic neuritis, retinal vasculitis) or otic syphilis to prevent permanent vision/hearing loss; used in addition to IV penicillin, not as standalone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg daily",
+                "orderSentence": "Corticosteroids (adjunctive for ocular/otic syphilis) 1 mg/kg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Prednisone 1 mg/kg/day PO (max 60 mg) with IV penicillin; taper over 2-4 weeks based on ophthalmology/ENT guidance; or IV methylprednisolone 250 mg q6h x 3 days then oral taper for severe cases",
+            "orderSentence": "Corticosteroids (adjunctive for ocular/otic syphilis) 1 mg/kg daily PO"
+          },
+          "contraindications": "Uncontrolled diabetes; active GI bleed; psychosis (relative)",
+          "monitoring": "Glucose; BP; GI prophylaxis; ophtho/ENT follow-up",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Infectious disease consultation for treatment optimization, duration guidance, penicillin desensitization planning, and HIV co-management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurology consultation for diagnosis confirmation, CSF interpretation, differentiation of neurosyphilis subtypes, and management of neurologic complications",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ophthalmology STAT evaluation for ALL patients with ocular symptoms (vision loss, floaters, photophobia) as ocular syphilis can cause permanent blindness without prompt treatment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Audiology evaluation for ALL patients with hearing loss or tinnitus (otic syphilis) for baseline audiometry and monitoring",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ENT consultation for otic syphilis evaluation and management of sensorineural hearing loss",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry consultation for behavioral/psychiatric symptoms in general paresis (psychosis, personality change, cognitive decline, depression)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Allergy/Immunology consultation for penicillin desensitization if patient reports penicillin allergy",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive testing in suspected general paresis (dementia evaluation, treatment response monitoring)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, balance rehabilitation, and fall prevention in tabes dorsalis (sensory ataxia, proprioceptive loss)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and adaptive strategies given proprioceptive and fine motor deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for STI partner notification coordination, housing stability, substance use resources, and discharge planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Public health department notification (syphilis is a reportable disease in all US states)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sexual health/STI clinic referral for partner notification, ongoing STI screening, and prevention counseling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED if: new vision loss, worsening headache, new weakness, seizure, confusion, hearing loss, or high fever after starting treatment (Jarisch-Herxheimer reaction may worsen in first 24h)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Complete the FULL course of IV penicillin (10-14 days); do NOT stop treatment early even if symptoms improve, as incomplete treatment leads to relapse and progressive CNS damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Expect possible fever, chills, headache, and muscle aches within 2-12 hours of first penicillin dose (Jarisch-Herxheimer reaction); this is a normal inflammatory response and NOT an allergic reaction; notify nursing staff but do NOT stop antibiotics",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Abstain from sexual contact until treatment is complete and RPR titers decline to confirm cure; use condoms consistently after treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "All sexual partners from the past 90 days (primary), 6 months (secondary), or 1 year (latent) must be notified and tested for syphilis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up blood tests (RPR titers) required at 3, 6, 12, and 24 months after treatment to confirm cure; failure of titers to decline by 4-fold at 6-12 months may indicate treatment failure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up lumbar puncture required at 6 months (and possibly 3, 12, and 24 months) after treatment to confirm CSF normalization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new neurologic symptoms (vision changes, hearing changes, numbness, balance problems, cognitive changes) between follow-up visits as they may indicate treatment failure or reinfection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If HIV positive: ensure adherence to antiretroviral therapy as HIV co-infection increases risk of treatment failure and neurosyphilis relapse",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving restrictions if cognitive impairment, seizures, or significant visual deficit until cleared by neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Safer sex practices: consistent condom use reduces but does not eliminate syphilis transmission risk; regular STI screening for sexually active individuals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol cessation as alcohol worsens cognitive impairment and neuropathy, and complicates medication adherence and follow-up",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV pre-exposure prophylaxis (PrEP) discussion for patients at ongoing risk who are HIV-negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures including assistive devices, home safety evaluation, and nightlight use for patients with sensory ataxia (tabes dorsalis), as proprioceptive loss worsens in darkness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive rehabilitation strategies including memory aids, structured routines, and supervised medication management for patients with general paresis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular exercise appropriate to functional level for cardiovascular health and prevention of deconditioning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce vascular risk (especially important in meningovascular syphilis with stroke risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "HIV-associated neurocognitive disorder (HAND)",
+      "features": "Progressive cognitive decline in HIV; may coexist with neurosyphilis; no CSF pleocytosis unless opportunistic infection",
+      "tests": "HIV viral load (CSF and serum); CD4 count; syphilis serologies negative; MRI: diffuse atrophy"
+    },
+    {
+      "diagnosis": "Tuberculous meningitis",
+      "features": "Subacute/chronic meningitis; basilar predominance; cranial neuropathies; CSF: lymphocytic, very low glucose, very high protein",
+      "tests": "AFB culture; TB PCR (GeneXpert); ADA; chest X-ray (miliary pattern); PPD/IGRA"
+    },
+    {
+      "diagnosis": "Cryptococcal meningitis",
+      "features": "HIV/immunocompromised; chronic headache; elevated opening pressure; minimal pleocytosis",
+      "tests": "CSF cryptococcal antigen; India ink; fungal culture; serum CrAg"
+    },
+    {
+      "diagnosis": "CNS vasculitis (primary or secondary)",
+      "features": "Multifocal strokes in young patient; headache; cognitive decline; CSF pleocytosis",
+      "tests": "Brain biopsy (gold standard); vessel wall MRI; CTA/MRA; ESR/CRP; ANA; ANCA; syphilis serologies to exclude"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Relapsing-remitting neurologic deficits; optic neuritis; myelopathy; white matter lesions",
+      "tests": "MRI (periventricular/juxtacortical lesions; Dawson fingers); CSF oligoclonal bands; syphilis screen (should be done in all MS workups)"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR, LGI1)",
+      "features": "Psychiatric symptoms; seizures; movement disorders; subacute onset",
+      "tests": "Autoimmune encephalitis antibody panel (serum + CSF); MRI; EEG"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies (especially CN VII); chronic meningitis; granulomatous inflammation",
+      "tests": "Chest CT (hilar adenopathy); serum/CSF ACE; biopsy; CSF lymphocytic; syphilis serologies negative"
+    },
+    {
+      "diagnosis": "CNS lymphoma",
+      "features": "Progressive cognitive decline in immunocompromised; periventricular enhancing lesion",
+      "tests": "MRI with contrast; CSF cytology; EBV PCR (CSF); stereotactic biopsy"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus",
+      "features": "Triad: gait apraxia, urinary incontinence, dementia; ventriculomegaly out of proportion to atrophy",
+      "tests": "Large volume LP (improvement after 30-40 mL removal); MRI (ventriculomegaly, DESH); gait assessment pre/post LP"
+    },
+    {
+      "diagnosis": "Vitamin B12 deficiency myelopathy",
+      "features": "Posterior column dysfunction (like tabes dorsalis); peripheral neuropathy; megaloblastic anemia",
+      "tests": "Serum B12; methylmalonic acid; homocysteine; MRI spine (dorsal column signal)"
+    },
+    {
+      "diagnosis": "Lyme neuroborreliosis",
+      "features": "Cranial neuropathies (CN VII); radiculopathy; meningitis; endemic area exposure; erythema migrans history",
+      "tests": "Lyme serologies (ELISA + Western blot); CSF Lyme antibody index; CSF pleocytosis"
+    },
+    {
+      "diagnosis": "Whipple disease",
+      "features": "Oculomasticatory myorhythmia (pathognomonic); dementia; GI symptoms; arthritis",
+      "tests": "Whipple PCR (CSF/tissue); small bowel biopsy; PAS-positive macrophages"
+    },
+    {
+      "diagnosis": "Behcet disease",
+      "features": "Oral/genital ulcers; uveitis; CNS involvement; young adults; Mediterranean/Asian descent",
+      "tests": "Clinical criteria (recurrent ulcers); pathergy test; HLA-B51; CSF pleocytosis"
+    },
+    {
+      "diagnosis": "Chronic meningitis (other causes)",
+      "features": "Persistent headache, cranial neuropathies, CSF pleocytosis >4 weeks",
+      "tests": "Full chronic meningitis workup: syphilis, TB, fungal, Lyme, sarcoid, malignancy"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IV penicillin G 18-24 million units/day x 10-14 days for neurosyphilis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/); [Workowski et al. MMWR 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/)"
+    },
+    {
+      "recommendation": "CSF VDRL is the standard diagnostic test for neurosyphilis (highly specific but insensitive)",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15095214/)"
+    },
+    {
+      "recommendation": "CSF FTA-ABS has high negative predictive value (negative result essentially excludes neurosyphilis)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Marra et al. JID 2004](https://pubmed.ncbi.nlm.nih.gov/15286823/)"
+    },
+    {
+      "recommendation": "CSF pleocytosis (WBC >5) is the most sensitive marker of active neurosyphilis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Marra et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18391155/)"
+    },
+    {
+      "recommendation": "Ceftriaxone 2g IV daily x 10-14 days as alternative to penicillin",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Marra et al. CID 2000](https://pubmed.ncbi.nlm.nih.gov/10770726/); CDC STI Guidelines 2021"
+    },
+    {
+      "recommendation": "Serial CSF monitoring at 6-month intervals post-treatment",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Marra et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15365124/)"
+    },
+    {
+      "recommendation": "HIV co-infection increases risk of neurosyphilis and treatment failure",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Ghanem et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/18444831/)"
+    },
+    {
+      "recommendation": "LP recommended for all HIV-positive patients with syphilis (especially CD4 <350 or RPR >=1:32)",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Ghanem et al. STD 2009](https://pubmed.ncbi.nlm.nih.gov/19617871/); CDC STI Guidelines 2021"
+    },
+    {
+      "recommendation": "Ocular syphilis requires neurosyphilis treatment (IV penicillin) regardless of CSF findings",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Oliver et al. STD 2016](https://pubmed.ncbi.nlm.nih.gov/27309072/); CDC Clinical Advisory 2015"
+    },
+    {
+      "recommendation": "Otic syphilis requires neurosyphilis treatment (IV penicillin) regardless of CSF findings",
+      "evidenceLevel": "Class I, Level B",
+      "source": "CDC STI Treatment Guidelines 2021"
+    },
+    {
+      "recommendation": "Jarisch-Herxheimer reaction occurs in up to 50% of neurosyphilis patients",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "Expert consensus; [Belum et al. Am J Med 2013](https://pubmed.ncbi.nlm.nih.gov/23452820/)"
+    },
+    {
+      "recommendation": "Penicillin desensitization is safe and effective for penicillin-allergic patients requiring treatment",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Wendel et al. NEJM 1985](https://pubmed.ncbi.nlm.nih.gov/4000199/)"
+    },
+    {
+      "recommendation": "Four-fold decline in serum RPR by 6-12 months defines adequate treatment response",
+      "evidenceLevel": "Class I, Level B",
+      "source": "CDC STI Treatment Guidelines 2021"
+    },
+    {
+      "recommendation": "CSF WBC should normalize within 6 months of successful treatment",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Marra et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15365124/)"
+    },
+    {
+      "recommendation": "Retreatment indicated if CSF WBC has not declined at 6 months",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "CDC STI Guidelines 2021; [Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15095214/)"
+    },
+    {
+      "recommendation": "Doxycycline 200 mg BID x 28 days as third-line alternative (limited evidence)",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; limited data for CNS penetration"
+    },
+    {
+      "recommendation": "All patients with syphilis should be tested for HIV",
+      "evidenceLevel": "Class I, Level A",
+      "source": "CDC STI Treatment Guidelines 2021; WHO Guidelines"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (mental status, cranial nerves, motor, sensory, gait)",
+      "frequency": "q4-8h inpatient; each outpatient visit",
+      "action": "If declining: reassess treatment; repeat imaging; repeat LP",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature (Jarisch-Herxheimer monitoring)",
+      "frequency": "q2h for first 24h of treatment, then q4h",
+      "action": "Acetaminophen; IV fluids; if severe: corticosteroids; do NOT stop penicillin",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum RPR/VDRL titer",
+      "frequency": "Baseline, then at 3, 6, 12, and 24 months post-treatment",
+      "action": "If no 4-fold decline by 6-12 months: consider treatment failure; repeat LP; retreat",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CSF analysis (cell count, protein, VDRL) -- follow-up LP",
+      "frequency": "At 6 months post-treatment; repeat q6 months until normal; some experts also check at 3, 12, 24 months",
+      "action": "If CSF WBC not declining at 6 months: retreat with IV penicillin 10-14 days; if HIV+, check at 3 months",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum potassium",
+      "frequency": "Daily during IV penicillin (high-dose penicillin contains 1.7 mEq K+ per million units)",
+      "action": "If hyperkalemic: reduce potassium intake; cardiac monitoring; if hypokalemic: supplement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "frequency": "Daily during IV penicillin; each outpatient visit",
+      "action": "Dose adjust penicillin if renal impairment develops",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Visual acuity and fundoscopic exam",
+      "frequency": "Each visit if ocular syphilis",
+      "action": "Urgent ophthalmology re-evaluation if worsening; reassess corticosteroid dose",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Audiometry",
+      "frequency": "Baseline, then at 1, 3, 6, 12 months if otic syphilis",
+      "action": "ENT re-evaluation; consider corticosteroid adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HIV viral load and CD4 (if co-infected)",
+      "frequency": "At syphilis diagnosis, then per HIV monitoring schedule",
+      "action": "If unsuppressed HIV: higher risk of neurosyphilis treatment failure; optimize ART",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Clinical observation inpatient; EEG if seizures",
+      "action": "Adjust AED; if status epilepticus: follow SE protocol",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "q4h inpatient; each outpatient visit",
+      "action": "If hypertensive crisis during JH reaction: treat symptomatically",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home (with OPAT -- outpatient parenteral antibiotic therapy)",
+      "criteria": "Neurologically stable; no active seizures; mild symptoms; reliable outpatient IV access (PICC line); home infusion services arranged; reliable patient with follow-up arranged; no significant comorbidities requiring monitoring"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Confirmed or highly suspected neurosyphilis requiring IV penicillin initiation; need for Jarisch-Herxheimer monitoring; moderate neurologic deficits; seizure monitoring; ocular or otic syphilis requiring urgent subspecialty evaluation"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Severe meningovascular syphilis with acute stroke; status epilepticus; acute vision loss requiring emergent management; penicillin desensitization protocol (requires continuous monitoring); severe Jarisch-Herxheimer reaction with hemodynamic instability; altered consciousness (GCS <13)"
+    },
+    {
+      "disposition": "Transfer to higher level",
+      "criteria": "Need for penicillin desensitization not available at current facility; need for neuro-ophthalmology not available; need for neurosurgery if hydrocephalus or mass lesion"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Asymptomatic neurosyphilis with mild CSF abnormalities; stable patient who can receive IV penicillin via OPAT or complete procaine penicillin IM + probenecid regimen; established diagnosis with completed inpatient treatment transitioning to monitoring"
+    }
+  ]
+}

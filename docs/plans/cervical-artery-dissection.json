@@ -1,0 +1,1639 @@
+{
+  "id": "cervical-artery-dissection",
+  "title": "Cervical Artery Dissection",
+  "version": "1.1",
+  "icd10": [
+    "** I77.71 (Dissection of carotid artery)",
+    "I77.74 (Dissection of vertebral artery)",
+    "I67.0 (Dissection of cerebral arteries",
+    "nonruptured)",
+    "I63.00 (Cerebral infarction due to thrombosis of unspecified precerebral artery)",
+    "I63.20 (Cerebral infarction due to unspecified occlusion or stenosis of unspecified precerebral arteries)",
+    "I63.139 (Cerebral infarction due to embolism of unspecified carotid artery)",
+    "G43.909 (Migraine",
+    "unspecified — sentinel headache misdiagnosis code)"
+  ],
+  "scope": "** Acute and subacute cervical artery dissection (carotid and vertebral) in adults — covers spontaneous and traumatic etiologies, initial evaluation, imaging diagnosis (CTA, MRA with fat saturation, conventional angiography), antithrombotic therapy (anticoagulation vs. antiplatelet), stroke prevention, pseudoaneurysm monitoring, and long-term follow-up. Excludes intracranial dissection with subarachnoid hemorrhage (see SAH template), aortic dissection, and management of completed large territory ischemic stroke (see Acute Ischemic Stroke template for thrombolysis/thrombectomy protocols).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline hematologic assessment; thrombocytopenia affects antithrombotic choice; anemia evaluation",
+          "target": "Normal platelets (>100,000); normal hemoglobin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BMP (Na, K, Cr, glucose, BUN) (CPT 80048)",
+          "rationale": "Electrolyte assessment; renal function for contrast imaging and medication dosing",
+          "target": "Normal electrolytes; eGFR adequate for contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR (CPT 85610)",
+          "rationale": "Baseline coagulation; INR required before initiating anticoagulation; affects tPA eligibility if stroke present",
+          "target": "INR <1.7 for tPA eligibility; baseline before anticoagulation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "aPTT (CPT 85730)",
+          "rationale": "Baseline coagulation; required before heparin initiation",
+          "target": "Normal range",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Point-of-care glucose (CPT 82962)",
+          "rationale": "Hypoglycemia mimics stroke; required before tPA if stroke symptoms present",
+          "target": ">60 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Troponin (CPT 84484)",
+          "rationale": "Cardiac ischemia evaluation; stress cardiomyopathy with acute stroke",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lipid panel (fasting or non-fasting) (CPT 80061)",
+          "rationale": "Vascular risk assessment; statin decision-making for secondary prevention",
+          "target": "Baseline for treatment decisions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Diabetes screening; vascular risk stratification",
+          "target": "<7.0% (individualized)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory or vasculitic etiology; fibromuscular dysplasia workup",
+          "target": "Normal (<20 mm/h)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory marker; vasculitis screen in young stroke workup",
+          "target": "Normal (<3 mg/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Hepatic function panel (AST, ALT, albumin) (CPT 80076)",
+          "rationale": "Liver function affects anticoagulant metabolism and dosing",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Thyroid dysfunction as cardiovascular risk factor",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregnancy test (beta-hCG) (CPT 84703)",
+          "rationale": "Affects imaging choices (gadolinium contrast) and antithrombotic selection; pregnancy-associated dissection recognized etiology",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Sympathomimetic use (cocaine, amphetamines) as dissection trigger",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Fibrinogen (CPT 85384)",
+          "rationale": "Coagulopathy evaluation; DIC screening if multi-organ involvement",
+          "target": "Normal (200-400 mg/dL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "D-dimer (CPT 85379)",
+          "rationale": "Elevated in acute dissection; may support diagnosis when imaging equivocal; not diagnostic alone",
+          "target": "Normal (though often elevated in acute dissection)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Type and screen (CPT 86900)",
+          "rationale": "Blood products availability if interventional procedure or hemorrhagic complication",
+          "target": "On file",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Homocysteine (CPT 83090)",
+          "rationale": "Hyperhomocysteinemia as connective tissue and vascular risk factor in young dissection",
+          "target": "Normal (<15 micromol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Connective tissue disorder panel (COL3A1 gene testing for vascular Ehlers-Danlos)",
+          "rationale": "Recurrent dissections, family history of dissection, vascular fragility, easy bruising, thin translucent skin",
+          "target": "Negative for pathogenic variants",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "rationale": "Autoimmune vasculopathy screen in young stroke or recurrent dissection",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibody panel (lupus anticoagulant, anticardiolipin, beta2-glycoprotein I)",
+          "rationale": "Thrombophilia screening in young stroke with dissection; recurrent events",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hypercoagulable panel (protein C, protein S, antithrombin III, Factor V Leiden, prothrombin gene mutation)",
+          "rationale": "Young stroke workup; recurrent dissection or thrombosis history; family history of thrombophilia",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-1 antitrypsin level and phenotype",
+          "rationale": "Alpha-1 antitrypsin deficiency associated with cervical artery dissection and connective tissue fragility",
+          "target": "Normal level and MM phenotype",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy with electron microscopy",
+          "rationale": "Suspected vascular Ehlers-Danlos syndrome; evaluates collagen structure",
+          "target": "Normal collagen architecture",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL (CPT 86592)",
+          "rationale": "Syphilitic arteritis in young stroke workup",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "Immediate (door-to-CT <25 min if stroke symptoms)",
+          "target": "Exclude hemorrhage; identify early ischemic changes; rule out SAH from intracranial extension",
+          "contraindications": "Pregnancy (relative)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT angiography head and neck (CTA) (CPT 70496, 70498)",
+          "timing": "Immediate with CT head; first-line for dissection diagnosis",
+          "target": "Intimal flap, double lumen sign, tapered stenosis (\"flame-shaped\" occlusion), mural thickening, pseudoaneurysm, string sign",
+          "contraindications": "Contrast allergy (premedicate); eGFR <30 (benefit outweighs risk in acute setting)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with DWI (CPT 70553)",
+          "timing": "Within 24h if stroke symptoms; STAT if diagnosis uncertain",
+          "target": "Acute ischemic infarct on DWI (restricted diffusion); infarct pattern suggesting artery-to-artery embolism; watershed vs embolic pattern",
+          "contraindications": "Pacemaker, metallic implants, severe claustrophobia",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "ECG (12-lead) (CPT 93000)",
+          "timing": "Immediate",
+          "target": "Rule out atrial fibrillation as alternative cardioembolic source; acute MI",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRA neck with fat saturation (CPT 70547, 70549)",
+          "timing": "Within 24-48h; gold standard for intramural hematoma",
+          "target": "Crescent sign (intramural hematoma on axial T1 fat-sat); vessel wall expansion; dissection flap; pseudoaneurysm",
+          "contraindications": "Same as MRI",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRA head (intracranial) (CPT 70544)",
+          "timing": "Within 24-48h",
+          "target": "Intracranial extension of dissection; tandem lesion; distal embolism",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CT perfusion (CTP) (CPT 0042T)",
+          "timing": "With CTA if extended stroke window (6-24h) or wake-up stroke",
+          "target": "Ischemic penumbra assessment; mismatch between core infarct and hypoperfused tissue for thrombectomy decision",
+          "contraindications": "Same as CTA",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Carotid duplex ultrasound (CPT 93880)",
+          "timing": "Within 24-48h; follow-up imaging at 3-6 months",
+          "target": "High-resistance flow pattern; absent or reduced flow; intimal flap; vessel wall hematoma (less sensitive than CTA/MRA)",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transcranial Doppler (TCD) (CPT 93886)",
+          "timing": "Within 24-48h",
+          "target": "Intracranial stenosis; distal flow changes; microembolic signals (HITS) on monitoring suggesting active embolization",
+          "contraindications": "Absent temporal bone window (~10% of patients)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Transthoracic echocardiogram (TTE) (CPT 93306)",
+          "timing": "Within 48h",
+          "target": "Rule out cardioembolism as alternative or concurrent etiology; PFO; valvular disease",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Continuous cardiac telemetry (CPT 93228)",
+          "timing": "Minimum 24-48h",
+          "target": "Rule out atrial fibrillation as alternative stroke mechanism",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CTA or MRA neck follow-up (3-6 months)",
+          "timing": "3-6 months after diagnosis",
+          "target": "Recanalization (complete or partial), pseudoaneurysm stability or resolution, residual stenosis",
+          "contraindications": "Same as initial study",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Conventional cerebral angiography (DSA) (CPT 36224)",
+          "timing": "If CTA/MRA equivocal; planned endovascular intervention",
+          "target": "Definitive vessel lumen assessment; intimal flap; double lumen; string-of-beads (FMD); pseudoaneurysm; stent planning",
+          "contraindications": "Contrast allergy; severe renal impairment; coagulopathy; vessel fragility (vascular Ehlers-Danlos — relative contraindication)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "MRI vessel wall imaging (high-resolution)",
+          "timing": "If intracranial dissection vs. atherosclerosis vs. vasculitis unclear",
+          "target": "Vessel wall enhancement pattern; intramural hematoma; eccentric wall thickening distinguishes dissection from atherosclerosis",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CTA/MRA full aorta",
+          "timing": "If connective tissue disorder suspected; multi-vessel dissection",
+          "target": "Additional dissections; aneurysms of aorta, renal, iliac arteries suggesting systemic arteriopathy",
+          "contraindications": "Same as CTA/MRA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Renal artery duplex or CTA abdomen",
+          "timing": "If fibromuscular dysplasia suspected (especially young women)",
+          "target": "Renal artery FMD (string-of-beads pattern); renal artery aneurysm",
+          "contraindications": "Same as CTA",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV alteplase (tPA)",
+          "route": "IV",
+          "indication": "Acute ischemic stroke within 4.5h of last known well due to dissection-related embolism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.9 mg/kg",
+                "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.9 mg/kg IV (max 90 mg); 10% as bolus over 1 min, remaining 90% infused over 60 min. Dissection is NOT a contraindication to IV tPA if within window",
+            "orderSentence": "IV alteplase (tPA) 0.9 mg/kg IV"
+          },
+          "contraindications": "Standard tPA exclusions: >4.5h from last known well; BP >185/110 despite treatment; platelets <100K; INR >1.7; active bleeding; intracranial hemorrhage; intracranial dissection with SAH",
+          "monitoring": "Neuro checks q15min during infusion, q30min x 6h, then q1h x 18h; BP q15min x 2h, q30min x 6h; hold anticoagulants/antiplatelets 24h post-tPA",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Tenecteplase IV",
+          "route": "IV",
+          "indication": "Acute ischemic stroke with LVO from dissection; preferred if thrombectomy planned",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg/kg",
+                "orderSentence": "Tenecteplase IV 0.25 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.25 mg/kg IV single bolus (max 25 mg); preferred over alteplase if LVO planned for thrombectomy",
+            "orderSentence": "Tenecteplase IV 0.25 mg/kg IV"
+          },
+          "contraindications": "Same as alteplase",
+          "monitoring": "Same as alteplase",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Endovascular thrombectomy",
+          "route": "Endovascular",
+          "indication": "Large vessel occlusion from dissection-related embolism or in-situ thrombosis; within 24h if eligible per DAWN/DEFUSE-3 criteria",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Endovascular thrombectomy N/A Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "Mechanical thrombectomy for LVO (ICA, M1, basilar); stenting of dissection considered on case-by-case basis",
+            "orderSentence": "Endovascular thrombectomy N/A Endovascular"
+          },
+          "contraindications": "Large established infarct (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2)",
+          "monitoring": "Continuous neuro-ICU monitoring post-procedure; groin check; BP per post-thrombectomy protocol",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Heparin IV infusion (therapeutic)",
+          "route": "IV",
+          "indication": "Acute dissection with high embolic risk: free-floating thrombus, crescendo TIA, recurrent embolic events despite antiplatelet, critical flow-limiting stenosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60-80 units/kg",
+                "orderSentence": "Heparin IV infusion (therapeutic) 60-80 units/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Bolus 60-80 units/kg (max 5000 units); then infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control (typically 60-80 sec)",
+            "orderSentence": "Heparin IV infusion (therapeutic) 60-80 units/kg IV"
+          },
+          "contraindications": "Active hemorrhagic infarct; intracranial dissection with SAH; large completed infarct (hemorrhagic transformation risk); uncontrolled BP; active bleeding",
+          "monitoring": "aPTT q6h until stable, then q12-24h; platelets q3 days (HIT surveillance); daily neuro checks; signs of bleeding",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin loading dose",
+          "route": "PO",
+          "indication": "Acute dissection without stroke or with minor ischemic stroke; first-line antiplatelet per CADISS trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg",
+                "orderSentence": "Aspirin loading dose 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg PO/PR loading dose; if tPA was given, wait 24h and obtain CT head before starting. Transition to maintenance 81-325 mg daily",
+            "orderSentence": "Aspirin loading dose 325 mg PO"
+          },
+          "contraindications": "Active GI bleeding; true aspirin allergy; within 24h of tPA (wait for post-tPA CT)",
+          "monitoring": "GI symptoms; bleeding signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol IV",
+          "route": "IV",
+          "indication": "BP control in acute dissection with stroke; target BP <185/110 if tPA candidate; permissive hypertension if no tPA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Labetalol IV 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg IV over 1-2 min; may repeat q10-20min; max 300 mg. Target: <185/110 pre-tPA; <180/105 post-tPA; <220/120 if no tPA",
+            "orderSentence": "Labetalol IV 10-20 mg IV"
+          },
+          "contraindications": "Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma/severe COPD",
+          "monitoring": "Heart rate; BP continuous monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nicardipine IV",
+          "route": "IV",
+          "indication": "Continuous BP control in acute dissection with stroke or severe hypertension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/h",
+                "orderSentence": "Nicardipine IV 5 mg/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h",
+            "orderSentence": "Nicardipine IV 5 mg/h IV"
+          },
+          "contraindications": "Severe aortic stenosis",
+          "monitoring": "BP continuous monitoring; headache and flushing common",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Isotonic fluid resuscitation and maintenance in acute dissection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125-150 mL/h",
+                "orderSentence": "IV normal saline 125-150 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Isotonic fluids; avoid hypotonic solutions (cerebral edema risk); avoid dextrose-containing fluids (hyperglycemia worsens ischemic outcomes)",
+            "orderSentence": "IV normal saline 125-150 mL/h IV"
+          },
+          "contraindications": "Volume overload",
+          "monitoring": "I/O; electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Supplemental oxygen",
+          "route": "INH",
+          "indication": "Maintain oxygenation in acute stroke from dissection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 L/min",
+                "orderSentence": "Supplemental oxygen 2-4 L/min INH"
+              }
+            ],
+            "route": "INH",
+            "instructions": "Only if SpO2 <94%; nasal cannula or mask as needed; target SpO2 >=94%",
+            "orderSentence": "Supplemental oxygen 2-4 L/min INH"
+          },
+          "contraindications": "Not applicable",
+          "monitoring": "SpO2 continuous monitoring; avoid routine supplemental O2 if normoxic",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Headache and neck pain from dissection; fever management (temperature >38C worsens ischemic outcomes)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6h PRN; max 4g/day (2g if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe hepatic disease",
+          "monitoring": "Temperature; LFTs if prolonged use; pain assessment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ibuprofen",
+          "route": "PO",
+          "indication": "Headache and neck pain from dissection if not on anticoagulation; short-term use only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-600 mg PO q6-8h PRN with food; max 2400 mg/day; limit to <7 days",
+            "orderSentence": "Ibuprofen 400-600 mg PO"
+          },
+          "contraindications": "Concurrent anticoagulation (increased bleeding risk); GI bleeding history; renal impairment; concurrent aspirin (may reduce antiplatelet efficacy)",
+          "monitoring": "GI symptoms; renal function; bleeding signs",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (Horner syndrome-associated pain, persistent neck/face pain)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg PO qHS; titrate by 300 mg q1-3 days; target 900-1800 mg/day divided TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose for CrCl <60)",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV",
+          "indication": "Nausea and vomiting (vertebral dissection with posterior circulation symptoms)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN nausea",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QT prolongation; serotonin syndrome risk",
+          "monitoring": "QTc if risk factors",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Vertigo from vertebral artery dissection with posterior circulation ischemia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Meclizine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg PO q6-8h PRN vertigo; short-term use only (may mask central symptoms)",
+            "orderSentence": "Meclizine 25 mg PO"
+          },
+          "contraindications": "Glaucoma; urinary retention",
+          "monitoring": "Sedation; anticholinergic effects; monitor for central vertigo signs",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enoxaparin (prophylactic)",
+          "route": "SC",
+          "indication": "DVT prophylaxis if not on therapeutic anticoagulation and limited mobility",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin (prophylactic) 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "40 mg SC daily; start within 24-48h; hold if on therapeutic anticoagulation",
+            "orderSentence": "Enoxaparin (prophylactic) 40 mg SC"
+          },
+          "contraindications": "Active bleeding; platelets <50K; CrCl <30 (use UFH 5000 units SC q8-12h instead)",
+          "monitoring": "Platelets q3 days; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pneumatic compression devices",
+          "route": "Mechanical",
+          "indication": "DVT prophylaxis (non-pharmacologic); use in addition to or instead of pharmacologic prophylaxis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Pneumatic compression devices N/A Mechanical"
+              }
+            ],
+            "route": "Mechanical",
+            "instructions": "Apply to both lower extremities immediately on admission",
+            "orderSentence": "Pneumatic compression devices N/A Mechanical"
+          },
+          "contraindications": "Acute DVT in lower extremity; severe peripheral vascular disease",
+          "monitoring": "Skin checks daily",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pantoprazole",
+          "route": "PO",
+          "indication": "GI prophylaxis for patients on antithrombotic therapy; stress ulcer prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg IV/PO daily",
+            "orderSentence": "Pantoprazole 40 mg PO"
+          },
+          "contraindications": "C. difficile risk with prolonged use",
+          "monitoring": "GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Aspirin + Clopidogrel (DAPT)",
+          "route": "PO",
+          "indication": "High-risk dissection with minor stroke (NIHSS <=3) or recurrent TIA on single antiplatelet; short-term use (21-90 days)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg + 75 mg",
+                "orderSentence": "Aspirin + Clopidogrel (DAPT) 81 mg + 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21-90 days; load clopidogrel 300 mg if not previously on it; then transition to single antiplatelet",
+            "orderSentence": "Aspirin + Clopidogrel (DAPT) 81 mg + 75 mg PO"
+          },
+          "contraindications": "Major stroke (NIHSS >3); high bleeding risk; planned surgery",
+          "monitoring": "Bleeding signs; CBC monthly",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Enoxaparin (therapeutic)",
+          "route": "SC",
+          "indication": "Bridge from IV heparin to oral anticoagulation; alternative to IV heparin in stable dissection with embolic risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Enoxaparin (therapeutic) 1 mg/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "1 mg/kg SC q12h; adjust for renal function (1 mg/kg daily if CrCl 15-30); bridge to warfarin if needed",
+            "orderSentence": "Enoxaparin (therapeutic) 1 mg/kg SC"
+          },
+          "contraindications": "Active bleeding; CrCl <15; HIT; large hemorrhagic infarct",
+          "monitoring": "Anti-Xa levels (target 0.5-1.0 IU/mL); platelets q3 days; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Warfarin",
+          "route": "PO",
+          "indication": "Dissection with high embolic risk when anticoagulation chosen over antiplatelet; CADISS trial showed equivalent outcomes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Warfarin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily (2-3 mg if elderly, low weight, or drug interactions); target INR 2.0-3.0; overlap with heparin bridge until INR therapeutic x 2 consecutive days",
+            "orderSentence": "Warfarin 5 mg PO"
+          },
+          "contraindications": "Active bleeding; pregnancy (teratogenic); severe hepatic disease; inability to monitor INR",
+          "monitoring": "INR daily until stable, then weekly, then monthly; diet counseling (vitamin K consistency); bleeding signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid/vertebral artery stenting",
+          "route": "Endovascular",
+          "indication": "Refractory ischemia despite optimal antithrombotic therapy; symptomatic recurrent stenosis; expanding pseudoaneurysm with embolic events",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Carotid/vertebral artery stenting N/A Endovascular"
+              }
+            ],
+            "route": "Endovascular",
+            "instructions": "Endovascular stenting of dissected segment; case-by-case basis; dual antiplatelet pre- and post-procedure",
+            "orderSentence": "Carotid/vertebral artery stenting N/A Endovascular"
+          },
+          "contraindications": "Active hemorrhage; vascular Ehlers-Danlos (extreme caution — vessel fragility); vessel too tortuous for access",
+          "monitoring": "Post-procedure: continuous neuro monitoring x 24h; dual antiplatelet compliance; follow-up imaging at 1, 3, 6 months",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "Acute cerebral edema from large territory infarct due to dissection-related stroke",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-1.5 g/kg",
+                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-1.5 g/kg IV bolus for acute herniation; then 0.25-0.5 g/kg q4-6h maintenance",
+            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+          },
+          "contraindications": "Anuria; severe dehydration",
+          "monitoring": "Serum osmolality (hold if >320 mOsm/kg); osmolar gap; renal function; I/O",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV",
+          "indication": "Acute herniation from massive stroke due to dissection-related occlusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mL IV bolus via central line over 10-20 min for acute herniation",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "No central access for 23.4%; hypokalemia",
+          "monitoring": "Serum sodium (target 145-155 mEq/L); osmolality; central line integrity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Decompressive craniectomy",
+          "route": "Surgical",
+          "indication": "Malignant MCA infarction from carotid dissection with complete ICA occlusion and poor collaterals",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Decompressive craniectomy N/A Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Surgery within 48h of onset; age <60 preferred; >50% MCA territory infarct; reduces mortality from 70-80% to ~20%",
+            "orderSentence": "Decompressive craniectomy N/A Surgical"
+          },
+          "contraindications": "Bilateral infarcts; hemorrhagic transformation; age >60 (relative)",
+          "monitoring": "Post-operative neuro checks; ICP monitoring; wound care",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Disease-Modifying / Chronic Therapies": [
+        {
+          "item": "Aspirin (maintenance)",
+          "route": "PO",
+          "indication": "Long-term secondary stroke prevention post-dissection; first-line per CADISS trial equivalence data",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Aspirin (maintenance) 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily preferred for long-term use; 325 mg daily acceptable; duration minimum 3-6 months; many neurologists continue indefinitely if vascular risk factors present",
+            "orderSentence": "Aspirin (maintenance) 81 mg PO"
+          },
+          "pretreatment": "Baseline CBC; renal function",
+          "contraindications": "Active GI bleeding; true aspirin allergy",
+          "monitoring": "GI symptoms; annual CBC; bleeding assessment at follow-up",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clopidogrel (maintenance)",
+          "route": "PO",
+          "indication": "Alternative antiplatelet for aspirin-intolerant patients; long-term secondary prevention post-dissection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Clopidogrel (maintenance) 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "75 mg PO daily; duration minimum 3-6 months; if aspirin intolerant, may use long-term",
+            "orderSentence": "Clopidogrel (maintenance) 75 mg PO"
+          },
+          "pretreatment": "Baseline CBC",
+          "contraindications": "Active pathologic bleeding; hypersensitivity to clopidogrel",
+          "monitoring": "CBC; bleeding assessment; bruising",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Apixaban",
+          "route": "PO",
+          "indication": "Dissection with concurrent atrial fibrillation; alternative anticoagulant if warfarin not preferred",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Apixaban 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mg PO BID standard dose; 2.5 mg BID if >=2 of: age >=80, weight <=60 kg, Cr >=1.5; for concurrent AF or physician preference for anticoagulation strategy",
+            "orderSentence": "Apixaban 5 mg PO"
+          },
+          "pretreatment": "Renal function; hepatic function; CBC",
+          "contraindications": "Active pathologic bleeding; prosthetic heart valve",
+          "monitoring": "Renal function q6-12 months; bleeding signs; CBC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "Vascular risk reduction; secondary stroke prevention in dissection patients with atherosclerotic risk factors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40-80 mg",
+                "orderSentence": "Atorvastatin 40-80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40-80 mg PO daily; high-intensity statin therapy for secondary stroke prevention",
+            "orderSentence": "Atorvastatin 40-80 mg PO"
+          },
+          "pretreatment": "Baseline LFTs; lipid panel",
+          "contraindications": "Active liver disease; pregnancy; breastfeeding",
+          "monitoring": "LFTs at 12 weeks then annually; lipid panel at 4-12 weeks; CK if myalgia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lisinopril",
+          "route": "PO",
+          "indication": "Blood pressure management for secondary stroke prevention; target BP <130/80 after acute phase",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Lisinopril 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80",
+            "orderSentence": "Lisinopril 5-10 mg PO"
+          },
+          "pretreatment": "Baseline Cr; K+",
+          "contraindications": "Bilateral renal artery stenosis; angioedema history; pregnancy",
+          "monitoring": "Cr and K+ at 1-2 weeks; BP at follow-up visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amlodipine",
+          "route": "PO",
+          "indication": "Alternative or adjunctive antihypertensive for secondary stroke prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Amlodipine 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO daily; max 10 mg daily",
+            "orderSentence": "Amlodipine 5 mg PO"
+          },
+          "pretreatment": "None required",
+          "contraindications": "Severe aortic stenosis (relative)",
+          "monitoring": "BP; peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation (stroke team) for dissection confirmation, antithrombotic strategy, and stroke workup coordination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurointerventional/endovascular consultation for large vessel occlusion thrombectomy or stenting consideration in refractory dissection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neurosurgery consultation for malignant cerebral edema, posterior fossa stroke with hydrocephalus, or expanding pseudoaneurysm requiring surgical management",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vascular neurology follow-up in 2-4 weeks for antithrombotic reassessment and follow-up imaging planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetics consultation if suspected connective tissue disorder (vascular Ehlers-Danlos, Marfan, Loeys-Dietz) given recurrent dissections, family history, or clinical features",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology consultation if vasculitis or autoimmune arteriopathy suspected based on lab findings or imaging",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology consultation for newly detected atrial fibrillation or PFO evaluation if concurrent cardioembolic source suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology (SLP) for dysphagia screening before PO intake if stroke present; also evaluate for lower cranial nerve palsy (vagus, hypoglossal) from carotid dissection",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for early mobilization (24-48h), gait training, and balance assessment if stroke-related deficits present",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, upper extremity function, and adaptive strategies if stroke-related deficits present",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ophthalmology or neuro-ophthalmology referral if persistent Horner syndrome for ptosis evaluation and baseline assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for refractory neck/head pain not responding to standard analgesics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for discharge planning, insurance coordination, DME, and caregiver support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Call 911 immediately if new or worsening symptoms: sudden weakness, numbness, vision changes, speech difficulty, severe headache, loss of balance (may indicate stroke from dissection)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT drive until cleared by neurology (minimum 2 weeks; Horner syndrome may affect vision)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all antithrombotic medications exactly as prescribed; do NOT stop aspirin, clopidogrel, or anticoagulant without medical advice (stopping increases stroke risk)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid high-risk neck activities: vigorous chiropractic manipulation, extreme cervical extension/rotation, contact sports, roller coasters, heavy lifting with Valsalva (may worsen dissection or cause recurrence)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new neck pain, headache (especially pulsatile), drooping eyelid, double vision, or pulsatile tinnitus as these may indicate dissection extension or new dissection",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If on warfarin: maintain consistent vitamin K intake; attend all INR monitoring appointments; report any signs of bleeding (bruising, blood in stool/urine, gum bleeding)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up imaging (CTA or MRA neck) scheduled at 3-6 months to assess vessel healing; do NOT skip this appointment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up appointment with neurology in 2-4 weeks for treatment reassessment; primary care in 4 weeks for vascular risk factor management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid straining and heavy lifting (>20 lbs) for 4-6 weeks to reduce risk of dissection propagation",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gradual return to light exercise after 2-4 weeks with physician clearance; avoid high-impact sports for 3-6 months minimum",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Avoid chiropractic cervical manipulation permanently given dissection history (recurrence risk)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood pressure target <130/80 mmHg for secondary stroke prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation (absolute) as smoking impairs vascular healing and increases recurrence risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Moderate alcohol use only (<=1 drink/day women, <=2 drinks/day men); excess alcohol increases bleeding risk on antithrombotics",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mediterranean or DASH diet for vascular risk reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular moderate-intensity aerobic exercise (30-40 min, 3-5 days/week) after medical clearance; avoid contact sports and extreme neck positions",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight management (BMI 18.5-24.9) for vascular risk reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Glycemic control (HbA1c <7%) if diabetic to reduce vascular risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid oral contraceptives or hormone replacement therapy without neurology input given vascular event history",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home blood pressure monitoring with log for physician review at follow-up visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and emotional support; anxiety and depression common after young stroke diagnosis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Atherosclerotic carotid/vertebral stenosis",
+      "features": "Older patient; vascular risk factors (HTN, DM, hyperlipidemia, smoking); calcified plaque on imaging; gradual onset; no neck pain",
+      "tests": "CTA/MRA (calcified plaque vs. intimal flap/hematoma); MRI fat-sat (no intramural hematoma)"
+    },
+    {
+      "diagnosis": "Fibromuscular dysplasia (FMD)",
+      "features": "Young-middle aged women; \"string-of-beads\" appearance on angiography; may coexist with dissection; renal artery involvement",
+      "tests": "CTA/MRA (string-of-beads vs. smooth tapering); renal artery imaging; FMD can cause dissection"
+    },
+    {
+      "diagnosis": "Carotid web (atypical FMD)",
+      "features": "Shelf-like projection in posterior carotid bulb; recurrent stroke in young patients; no neck pain or Horner syndrome",
+      "tests": "CTA sagittal reformats (shelf lesion); DSA"
+    },
+    {
+      "diagnosis": "Vasculitis (CNS or systemic)",
+      "features": "Multifocal stenoses; constitutional symptoms (fever, weight loss, arthralgias); elevated ESR/CRP; multi-territory strokes",
+      "tests": "ESR, CRP, ANA, ANCA; vessel wall MRI (concentric enhancement vs. eccentric in dissection); possible brain/meningeal biopsy"
+    },
+    {
+      "diagnosis": "Reversible cerebral vasoconstriction syndrome (RCVS)",
+      "features": "Thunderclap headache; multifocal segmental vasoconstriction; triggered by vasoactive drugs, postpartum; spontaneous resolution",
+      "tests": "CTA/MRA (diffuse segmental narrowing vs. focal dissection); serial imaging showing resolution at 12 weeks"
+    },
+    {
+      "diagnosis": "Intracranial aneurysm (unruptured or ruptured)",
+      "features": "Acute headache (worst headache if rupture); focal mass effect; SAH on CT",
+      "tests": "CT head (SAH); CTA (saccular aneurysm vs. dissecting pseudoaneurysm); LP"
+    },
+    {
+      "diagnosis": "Migraine with aura",
+      "features": "Episodic; visual or sensory aura preceding headache; family history; stereotyped attacks; young patient",
+      "tests": "Clinical history (recurrent stereotyped episodes); normal MRI DWI (no infarct); dissection can mimic migraine"
+    },
+    {
+      "diagnosis": "Cluster headache",
+      "features": "Periorbital pain with autonomic features (tearing, conjunctival injection, rhinorrhea, partial Horner); episodic pattern",
+      "tests": "Clinical pattern (brief attacks in clusters); Horner syndrome in cluster is transient; CTA/MRA to exclude dissection if first presentation"
+    },
+    {
+      "diagnosis": "Cardioembolic stroke (atrial fibrillation, PFO)",
+      "features": "Irregular rhythm; multiple vascular territory infarcts; no neck pain or local signs",
+      "tests": "ECG/telemetry (AF); TTE/TEE (PFO, thrombus); CTA neck (normal vessels, no dissection)"
+    },
+    {
+      "diagnosis": "Venous sinus thrombosis",
+      "features": "Headache, papilledema, seizures; may have focal deficits; hypercoagulable state; postpartum",
+      "tests": "CT/MR venography (venous thrombosis); CTA arterial phase normal"
+    },
+    {
+      "diagnosis": "Carotidynia (TIPIC syndrome)",
+      "features": "Self-limited neck pain and tenderness over carotid; no neurologic deficits; perivascular inflammation on imaging",
+      "tests": "Ultrasound/CTA (perivascular inflammation without intimal flap or intramural hematoma); self-resolves in 2 weeks"
+    },
+    {
+      "diagnosis": "Neck musculoskeletal strain",
+      "features": "Neck pain after trauma/exertion; no neurologic deficits; no Horner syndrome; normal vascular imaging",
+      "tests": "Clinical exam (muscular tenderness, full neuro exam normal); CTA/MRA if dissection concern"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Antiplatelet vs. anticoagulation equivalent for stroke prevention in cervical dissection",
+      "evidenceLevel": "Class I, Level B-R",
+      "source": "CADISS trial (Markus et al. Lancet Neurology 2015)"
+    },
+    {
+      "recommendation": "CADISS extended follow-up: no difference in recurrent stroke or death at 1 year",
+      "evidenceLevel": "Class II, Level B-R",
+      "source": "CADISS investigators (J Neurol Neurosurg Psychiatry 2019)"
+    },
+    {
+      "recommendation": "IV tPA safe and effective in dissection-related stroke; cervical dissection is NOT a contraindication",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "AHA/ASA 2019 Guidelines (Powers et al.); observational data"
+    },
+    {
+      "recommendation": "Antithrombotic therapy recommended for at least 3-6 months post-dissection",
+      "evidenceLevel": "Class I, Level C",
+      "source": "AHA/ASA 2014 Stroke Prevention Guidelines; Expert consensus"
+    },
+    {
+      "recommendation": "CTA and MRA with fat saturation are first-line imaging for cervical dissection diagnosis",
+      "evidenceLevel": "Class I, Level B-NR",
+      "source": "Debette et al. Lancet Neurology 2015 (review); Provenzale and Sarikaya Radiology 2009"
+    },
+    {
+      "recommendation": "Intramural hematoma best seen on T1 fat-saturated MRI (crescent sign)",
+      "evidenceLevel": "Class IIa, Level B-NR",
+      "source": "Debette and Leys NEJM 2009"
+    },
+    {
+      "recommendation": "Fibromuscular dysplasia is the most common arteriopathy associated with cervical dissection",
+      "evidenceLevel": "Class II, Level B-NR",
+      "source": "Olin et al. Circulation 2011; Debette et al. Lancet Neurology 2015"
+    },
+    {
+      "recommendation": "Vascular Ehlers-Danlos syndrome (COL3A1 mutations) increases dissection risk; avoid catheter angiography if possible",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Pepin et al. NEJM 2000; Byers Ehlers-Danlos Syndrome Vascular Type (GeneReviews)"
+    },
+    {
+      "recommendation": "Thrombectomy for LVO from dissection follows standard acute stroke criteria",
+      "evidenceLevel": "Class I, Level A",
+      "source": "AHA/ASA 2019 Guidelines; MR CLEAN, DAWN, DEFUSE-3 trials (dissection etiology subgroup data)"
+    },
+    {
+      "recommendation": "Dual antiplatelet therapy (aspirin + clopidogrel) for minor stroke/high-risk TIA applicable to dissection-related minor stroke",
+      "evidenceLevel": "Class I, Level A",
+      "source": "CHANCE trial (Wang et al. NEJM 2013); POINT trial"
+    },
+    {
+      "recommendation": "Cervical dissection accounts for 10-25% of ischemic strokes in young adults (<50 years)",
+      "evidenceLevel": "Observational",
+      "source": "Debette and Leys NEJM 2009; Schievink NEJM 2001"
+    },
+    {
+      "recommendation": "Annual recurrence rate of cervical dissection is approximately 1% per year",
+      "evidenceLevel": "Observational",
+      "source": "Schievink et al. Neurology 1994; Debette et al. Stroke 2011"
+    },
+    {
+      "recommendation": "Chiropractic cervical manipulation associated with increased cervical dissection risk",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Cassidy et al. Spine 2008; Rothwell et al. Stroke 2001 (association debated but avoidance recommended)"
+    },
+    {
+      "recommendation": "Pseudoaneurysm monitoring with serial imaging; most stabilize; intervention for symptomatic expansion",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "Expert consensus; Touze et al. Stroke 2001"
+    },
+    {
+      "recommendation": "Follow-up vascular imaging at 3-6 months to assess recanalization and guide antithrombotic duration",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "AHA/ASA guidelines; expert consensus"
+    },
+    {
+      "recommendation": "Permissive hypertension (up to 220/120 if no tPA) in dissection-related stroke without thrombolysis",
+      "evidenceLevel": "Class I, Level B-R",
+      "source": "AHA/ASA 2019 Guidelines"
+    },
+    {
+      "recommendation": "Horner syndrome (miosis, ptosis, anhidrosis) is a classic presentation of carotid dissection; present in ~50% of carotid dissections",
+      "evidenceLevel": "Observational",
+      "source": "Mokri et al. Ann Neurol 1986; Debette and Leys NEJM 2009"
+    },
+    {
+      "recommendation": "Decompressive craniectomy for malignant MCA edema from dissection-related ICA occlusion follows standard protocols",
+      "evidenceLevel": "Class I, Level A (age <60)",
+      "source": "DESTINY, DECIMAL, HAMLET pooled analysis"
+    },
+    {
+      "recommendation": "Pregnancy and postpartum period are recognized risk factors for cervical artery dissection",
+      "evidenceLevel": "Observational",
+      "source": "Kelly et al. Neurology 2014; Arnold et al. Neurology 2006"
+    },
+    {
+      "recommendation": "High-intensity statin therapy for secondary stroke prevention in patients with atherosclerotic risk factors post-dissection",
+      "evidenceLevel": "Class I, Level A",
+      "source": "SPARCL trial (Amarenco et al. NEJM 2006); AHA/ASA 2021"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (NIHSS, cranial nerves, Horner syndrome)",
+      "frequency": "q1h x 24h acutely, then q4h x 48h, then q shift; outpatient at each visit",
+      "action": "If NIHSS increases >=4: STAT CT head; call stroke team; reassess antithrombotic strategy",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "q1h x 24h, then q4h; outpatient at each visit",
+      "action": "Titrate antihypertensives; avoid SBP <100 (hypoperfusion risk in stenosed vessel)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Heart rate and rhythm (telemetry)",
+      "frequency": "Continuous x 48-72h minimum",
+      "action": "Cardiology consult; anticoagulation if AF detected",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "aPTT (if on IV heparin)",
+      "frequency": "q6h until stable, then q12-24h",
+      "action": "Adjust heparin infusion rate per protocol",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "INR (if on warfarin)",
+      "frequency": "Daily until stable, then weekly, then monthly",
+      "action": "Adjust warfarin dose; bridge with heparin if subtherapeutic and high risk",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Platelet count (HIT surveillance if on heparin)",
+      "frequency": "q3 days while on heparin",
+      "action": "HIT screen (PF4 antibody); switch to argatroban or bivalirudin if positive",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Follow-up vascular imaging (CTA or MRA neck)",
+      "frequency": "3-6 months post-diagnosis; then 12 months if residual abnormality",
+      "action": "If worsening: neurovascular conference; consider intervention; adjust antithrombotic",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (Cr, BUN)",
+      "frequency": "q24-48h if contrast given; q3-6 months if on DOAC",
+      "action": "Hydration; adjust medication dosing; hold nephrotoxic agents",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h x 48h (q1h if insulin drip) if stroke present",
+      "action": "Insulin adjustment; D50W for hypoglycemia",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Swallowing screen",
+      "frequency": "Before any PO intake",
+      "action": "NPO until formal SLP evaluation; consider NG tube",
+      "ED": "URGENT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Lipid panel",
+      "frequency": "Fasting within 24-48h; repeat at 4-12 weeks on statin",
+      "action": "Intensify statin; add ezetimibe",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Depression and anxiety screening (PHQ-9, GAD-7)",
+      "frequency": "At 1 month, 3 months, then annually",
+      "action": "SSRI initiation; psychology/psychiatry referral; peer support",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Dissection without stroke or with minor stroke (NIHSS 0-3); stable exam over 24h observation; antithrombotic therapy initiated and tolerated; adequate home support; reliable outpatient follow-up arranged; imaging follow-up scheduled; prescriptions filled; patient education complete"
+    },
+    {
+      "disposition": "Admit to stroke unit/floor",
+      "criteria": "Dissection with moderate stroke (NIHSS 4-15); dissection requiring IV heparin initiation and aPTT monitoring; new dissection requiring observation for stroke development; incomplete workup; dysphagia requiring NPO or modified diet; pain requiring IV medications"
+    },
+    {
+      "disposition": "Admit to ICU/neuro-ICU",
+      "criteria": "Post-tPA monitoring (first 24h); post-thrombectomy; large territory infarct with edema risk; bilateral dissections with hemodynamic compromise; posterior fossa stroke with herniation risk; unstable BP requiring IV antihypertensive infusion; declining neurologic exam; respiratory compromise"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "LVO requiring thrombectomy not available at current facility (transfer to comprehensive stroke center); need for neurointerventional stenting; need for neurosurgical decompression not available; suspected vascular Ehlers-Danlos requiring specialized genetics and vascular care"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Incidental dissection found on imaging without symptoms; chronic dissection with complete healing on follow-up; stable pseudoaneurysm on long-term monitoring"
+    }
+  ]
+}

@@ -5,10 +5,13 @@
   "icd10": [
     "** G00.9 (Bacterial meningitis",
     "unspecified)",
-    "G00.1 (Pneumococcal meningitis)",
     "G00.0 (Hemophilus meningitis)",
-    "A39.0 (Meningococcal meningitis)",
-    "G00.3 (Staphylococcal meningitis)"
+    "G00.1 (Pneumococcal meningitis)",
+    "G00.2 (Streptococcal meningitis)",
+    "G00.3 (Staphylococcal meningitis)",
+    "G00.8 (Other bacterial meningitis)",
+    "G01 (Meningitis in bacterial diseases classified elsewhere)",
+    "A39.0 (Meningococcal meningitis)"
   ],
   "scope": "** Acute community-acquired bacterial meningitis in adults. Covers emergency empiric antibiotics, dexamethasone adjunctive therapy, LP and CSF analysis, targeted therapy by organism, and complications management. Excludes viral meningitis, fungal meningitis, TB meningitis, healthcare-associated/post-surgical meningitis, and pediatric meningitis.",
   "notes": [],
@@ -16,7 +19,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "Blood cultures x2 (different sites)",
+          "item": "Blood cultures x2 (different sites) (CPT 87040)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -25,7 +28,7 @@
           "target": "Organism identification and sensitivities"
         },
         {
-          "item": "CBC with differential",
+          "item": "CBC with differential (CPT 85025)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -34,7 +37,7 @@
           "target": "WBC elevated; neutrophilia"
         },
         {
-          "item": "CMP (BMP + LFTs)",
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -43,7 +46,7 @@
           "target": "Normal; watch Na"
         },
         {
-          "item": "Procalcitonin",
+          "item": "Procalcitonin (CPT 84145)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -52,7 +55,7 @@
           "target": "Elevated (>0.5 ng/mL bacterial; typically >2.0)"
         },
         {
-          "item": "CRP",
+          "item": "CRP (CPT 86140)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -61,7 +64,7 @@
           "target": "Elevated"
         },
         {
-          "item": "Lactate",
+          "item": "Lactate (CPT 83605)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -70,7 +73,7 @@
           "target": "<2 mmol/L (elevated suggests sepsis)"
         },
         {
-          "item": "Coagulation panel (PT/INR, aPTT, fibrinogen)",
+          "item": "Coagulation panel (PT/INR, aPTT, fibrinogen) (CPT 85610+85730+85384)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -79,7 +82,7 @@
           "target": "Normal; DIC: elevated PT/aPTT, low fibrinogen, elevated D-dimer"
         },
         {
-          "item": "D-dimer",
+          "item": "D-dimer (CPT 85379)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -88,7 +91,7 @@
           "target": "Normal"
         },
         {
-          "item": "Blood glucose (concurrent with LP)",
+          "item": "Blood glucose (concurrent with LP) (CPT 82947)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -97,7 +100,7 @@
           "target": "Paired with CSF glucose"
         },
         {
-          "item": "Type and screen",
+          "item": "Type and screen (CPT 86900)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -106,7 +109,7 @@
           "target": "On file"
         },
         {
-          "item": "Point-of-care glucose",
+          "item": "Point-of-care glucose (CPT 82962)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -115,9 +118,9 @@
           "target": ">60 mg/dL"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "Serum osmolality",
+          "item": "Serum osmolality (CPT 83930)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -135,7 +138,7 @@
           "target": "Urine osm >100, urine Na >40 in SIADH"
         },
         {
-          "item": "Serum cortisol (random or AM)",
+          "item": "Serum cortisol (random or AM) (CPT 82533)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -144,7 +147,7 @@
           "target": ">18 µg/dL (random stress level)"
         },
         {
-          "item": "HIV 1/2 antigen/antibody",
+          "item": "HIV 1/2 antigen/antibody (CPT 87389)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -171,7 +174,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -180,7 +183,7 @@
           "target": "Normal"
         },
         {
-          "item": "Troponin",
+          "item": "Troponin (CPT 84484)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -189,7 +192,7 @@
           "target": "Normal"
         }
       ],
-      "Rare/Specialized": [
+      "Rare/Specialized (Refractory or Atypical)": [
         {
           "item": "Metagenomic next-generation sequencing (mNGS) of CSF",
           "ED": "-",
@@ -218,7 +221,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cryptococcal antigen (serum)",
+          "item": "Cryptococcal antigen (serum) (CPT 87327)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -227,7 +230,7 @@
           "target": "Negative"
         },
         {
-          "item": "RPR/VDRL (serum)",
+          "item": "RPR/VDRL (serum) (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -264,7 +267,7 @@
           "target": "Typically 200-500 mm H2O (normal <200); markedly elevated suggests edema/hydrocephalus"
         },
         {
-          "item": "Cell count with differential (tubes 1 AND 4)",
+          "item": "Cell count with differential (tubes 1 AND 4) (CPT 89051)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -272,7 +275,7 @@
           "target": "WBC >1000 cells/µL with >80% neutrophils (bacterial); WBC 100-10,000 typical"
         },
         {
-          "item": "Protein",
+          "item": "Protein (CPT 84157)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -280,7 +283,7 @@
           "target": "Elevated (>100 mg/dL typical; often 100-500)"
         },
         {
-          "item": "Glucose with paired serum glucose",
+          "item": "Glucose with paired serum glucose (CPT 82945)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -288,7 +291,7 @@
           "target": "Low (<40 mg/dL; CSF:serum ratio <0.4)"
         },
         {
-          "item": "Gram stain",
+          "item": "Gram stain (CPT 87205)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -296,7 +299,7 @@
           "target": "Organisms identified (gram-positive diplococci = pneumococcus; gram-negative diplococci = meningococcus; gram-positive rods = Listeria; gram-negative rods = E. coli/Haemophilus)"
         },
         {
-          "item": "Bacterial culture and sensitivity",
+          "item": "Bacterial culture and sensitivity (CPT 87070)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -304,7 +307,7 @@
           "target": "Organism identified with sensitivities"
         },
         {
-          "item": "BioFire FilmArray Meningitis/Encephalitis Panel",
+          "item": "BioFire FilmArray Meningitis/Encephalitis Panel (CPT 87483)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -320,7 +323,7 @@
           "target": "<3.5 mmol/L (bacterial typically >4.0)"
         },
         {
-          "item": "HSV 1/2 PCR",
+          "item": "HSV 1/2 PCR (CPT 87529)",
           "ED": "STAT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -328,7 +331,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cryptococcal antigen (CSF)",
+          "item": "Cryptococcal antigen (CSF) (CPT 87327)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -336,7 +339,7 @@
           "target": "Negative"
         },
         {
-          "item": "AFB smear and culture",
+          "item": "AFB smear and culture (CPT 87116)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -344,7 +347,7 @@
           "target": "Negative"
         },
         {
-          "item": "VDRL (CSF)",
+          "item": "VDRL (CSF) (CPT 86592)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -352,7 +355,7 @@
           "target": "Negative"
         },
         {
-          "item": "Cytology",
+          "item": "Cytology (CPT 88104)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -364,7 +367,7 @@
     "Imaging & Studies": {
       "Essential/First-line": [
         {
-          "item": "CT head without contrast",
+          "item": "CT head without contrast (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -374,7 +377,7 @@
           "contraindications": "Pregnancy (relative)"
         },
         {
-          "item": "Chest X-ray",
+          "item": "Chest X-ray (CPT 71046)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -386,7 +389,7 @@
       ],
       "Extended": [
         {
-          "item": "MRI brain with and without contrast",
+          "item": "MRI brain with and without contrast (CPT 70553)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -396,7 +399,7 @@
           "contraindications": "Pacemaker, metallic implants"
         },
         {
-          "item": "CT head with contrast",
+          "item": "CT head with contrast (CPT 70460)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -426,7 +429,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Echocardiogram",
+          "item": "Echocardiogram (CPT 93306)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "-",
@@ -436,7 +439,7 @@
           "contraindications": "None significant"
         },
         {
-          "item": "Continuous EEG",
+          "item": "Continuous EEG (CPT 95700)",
           "ED": "-",
           "HOSP": "URGENT",
           "OPD": "-",
@@ -492,19 +495,19 @@
     "Treatment": {
       "Acute/Emergent — Empiric Therapy": [
         {
-          "item": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose)",
+          "item": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.15 mg/kg",
-                "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+                "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) (CPT 96374) 0.15 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.15 mg/kg IV q6h x 4 days (typically 10 mg IV q6h). MUST be given BEFORE or simultaneously with first antibiotic dose. Greatest benefit for S. pneumoniae (reduces mortality and hearing loss). Discontinue if organism is NOT S. pneumoniae (some centers continue regardless)",
-            "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) 0.15 mg/kg IV"
+            "orderSentence": "Dexamethasone (adjunctive — give BEFORE or WITH first antibiotic dose) (CPT 96374) 0.15 mg/kg IV"
           },
           "contraindications": "Not proven beneficial if antibiotics already started >1h prior",
           "monitoring": "Glucose q6h; GI prophylaxis; BP",
@@ -514,19 +517,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Vancomycin IV",
+          "item": "Vancomycin IV (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "15-20 mg/kg",
-                "orderSentence": "Vancomycin IV 15-20 mg/kg IV"
+                "orderSentence": "Vancomycin IV (CPT 96365) 15-20 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "15-20 mg/kg IV q8-12h (target trough 15-20 µg/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe. Covers penicillin-resistant S. pneumoniae, MRSA",
-            "orderSentence": "Vancomycin IV 15-20 mg/kg IV"
+            "orderSentence": "Vancomycin IV (CPT 96365) 15-20 mg/kg IV"
           },
           "contraindications": "Red man syndrome (infuse over ≥1h); renal impairment (dose adjust)",
           "monitoring": "Trough levels before 4th dose; renal function daily; watch for nephrotoxicity and ototoxicity",
@@ -536,19 +539,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Ceftriaxone IV",
+          "item": "Ceftriaxone IV (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "2 g",
-                "orderSentence": "Ceftriaxone IV 2 g IV"
+                "orderSentence": "Ceftriaxone IV (CPT 96374) 2 g IV"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms",
-            "orderSentence": "Ceftriaxone IV 2 g IV"
+            "orderSentence": "Ceftriaxone IV (CPT 96374) 2 g IV"
           },
           "contraindications": "Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia",
           "monitoring": "CBC; LFTs; biliary sludge with prolonged use",
@@ -558,19 +561,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Ampicillin IV (add if Listeria risk)",
+          "item": "Ampicillin IV (add if Listeria risk) (CPT 96374)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "2 g",
-                "orderSentence": "Ampicillin IV (add if Listeria risk) 2 g IV"
+                "orderSentence": "Ampicillin IV (add if Listeria risk) (CPT 96374) 2 g IV"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins)",
-            "orderSentence": "Ampicillin IV (add if Listeria risk) 2 g IV"
+            "orderSentence": "Ampicillin IV (add if Listeria risk) (CPT 96374) 2 g IV"
           },
           "contraindications": "Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria)",
           "monitoring": "Rash; renal function",
@@ -580,19 +583,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Acyclovir IV (empiric — until HSV excluded)",
+          "item": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "10 mg/kg",
-                "orderSentence": "Acyclovir IV (empiric — until HSV excluded) 10 mg/kg IV"
+                "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative",
-            "orderSentence": "Acyclovir IV (empiric — until HSV excluded) 10 mg/kg IV"
+            "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
           },
           "contraindications": "Renal impairment (dose adjust); ensure adequate hydration",
           "monitoring": "Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention",

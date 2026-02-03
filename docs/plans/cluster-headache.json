@@ -13,7 +13,16 @@
     "not intractable)",
     "G44.011 (Episodic cluster headache",
     "intractable)",
-    "G44.009 (Chronic cluster headache)"
+    "G44.021 (Chronic cluster headache",
+    "not intractable)",
+    "G44.029 (Chronic cluster headache",
+    "not intractable",
+    "unspecified)",
+    "G44.031 (Chronic cluster headache",
+    "intractable)",
+    "G44.039 (Chronic cluster headache",
+    "intractable",
+    "unspecified)"
   ],
   "scope": "** Diagnosis and management of episodic and chronic cluster headache in adults. Covers acute abortive treatment, transitional therapy, and preventive medication. Excludes other trigeminal autonomic cephalalgias (paroxysmal hemicrania, SUNCT/SUNA, hemicrania continua), migraine, and secondary causes of headache.",
   "notes": [],
@@ -21,7 +30,7 @@
     "Laboratory Workup": {
       "Essential/Core Labs": [
         {
-          "item": "CBC",
+          "item": "CBC (CPT 85025)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -30,7 +39,7 @@
           "target": "Normal"
         },
         {
-          "item": "CMP",
+          "item": "CMP (CPT 80053)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -39,7 +48,7 @@
           "target": "Normal"
         },
         {
-          "item": "TSH",
+          "item": "TSH (CPT 84443)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -48,9 +57,9 @@
           "target": "Normal"
         }
       ],
-      "Extended Workup": [
+      "Extended Workup (Second-line)": [
         {
-          "item": "ESR/CRP",
+          "item": "ESR (CPT 85652) / CRP (CPT 86140)",
           "ED": "URGENT",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -93,7 +102,7 @@
           "contraindications": "Pacemaker, metal"
         },
         {
-          "item": "MRA head",
+          "item": "MRA head (CPT 70544)",
           "ED": "-",
           "HOSP": "ROUTINE",
           "OPD": "ROUTINE",
@@ -105,7 +114,7 @@
       ],
       "Extended": [
         {
-          "item": "CT head",
+          "item": "CT head (CPT 70450)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
@@ -115,7 +124,7 @@
           "contraindications": "None"
         },
         {
-          "item": "ECG",
+          "item": "ECG (CPT 93000)",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -344,19 +353,19 @@
           "ICU": "-"
         },
         {
-          "item": "DHE protocol (inpatient)",
+          "item": "DHE protocol (inpatient) (CPT 96365)",
           "route": "IV",
           "indication": "-",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.5-1 mg",
-                "orderSentence": "DHE protocol (inpatient) 0.5-1 mg IV"
+                "orderSentence": "DHE protocol (inpatient) (CPT 96365) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment)",
-            "orderSentence": "DHE protocol (inpatient) 0.5-1 mg IV"
+            "orderSentence": "DHE protocol (inpatient) (CPT 96365) 0.5-1 mg IV"
           },
           "contraindications": "CAD, CVA, uncontrolled HTN, triptans <24h",
           "monitoring": "BP, nausea, peripheral vasoconstriction",
@@ -681,7 +690,7 @@
           "indication": "Depression, suicide risk (cluster headache has high depression rate)"
         }
       ],
-      "Patient Instructions": [
+      "Patient/Family Instructions": [
         {
           "item": "Oxygen therapy is FIRST-LINE for acute attacks - keep tank accessible",
           "ED": "ROUTINE",
