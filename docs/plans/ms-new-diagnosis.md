@@ -3,6 +3,7 @@ title: "Multiple Sclerosis - New Diagnosis"
 description: "Clinical decision support for multiple sclerosis - new diagnosis diagnosis and management"
 version: "2.2"
 setting: "HOSP, OPD, ICU"
+status: approved
 ---
 
 # Multiple Sclerosis - New Diagnosis

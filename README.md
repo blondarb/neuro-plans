@@ -108,7 +108,8 @@ neuro-clinical-plans/
 │   └── neuro-comment-review-SKILL.md
 ├── references/                 # Reference materials
 ├── scripts/                    # Build scripts
-│   └── generate_json.py        # Markdown → JSON converter with validation
+│   ├── generate_json.py        # Markdown → JSON converter with validation
+│   └── verify_citations.py     # PubMed citation verifier and PMID repair
 └── mkdocs.yml                  # MkDocs configuration
 ```
 
@@ -185,10 +186,10 @@ Output goes to `site/` directory.
 
 | Metric | Count |
 |--------|-------|
-| Completed Plans | 4 |
-| Planned | 130 |
+| Approved Plans | 124 |
+| Draft Queue | 0 |
 
-See [Template Tracker](docs/references/tracker.md) for full roadmap.
+See [Plan Queue](docs/drafts/queue.md) for tracking and approval history.
 
 ## Quality Standards
 
@@ -198,7 +199,7 @@ See [Template Tracker](docs/references/tracker.md) for full roadmap.
 
 ## Contributing
 
-1. Check the [Template Tracker](docs/references/tracker.md) for needed plans
+1. Check the [Plan Queue](docs/drafts/queue.md) for needed plans
 2. Submit a plan request or claim an existing issue
 3. Follow the [Style Guide](docs/skills/style-guide.md)
 4. Submit a PR for review
@@ -208,6 +209,21 @@ See [Template Tracker](docs/references/tracker.md) for full roadmap.
 These templates are decision support tools, not clinical guidelines. They require physician review and adaptation to individual patient circumstances. Always apply clinical judgment.
 
 ## Changelog
+
+### February 2026
+
+**PMID Correction & Citation Verification**
+- Built automated PubMed verification pipeline (`scripts/verify_citations.py`)
+- Corrected ~493 hallucinated PMIDs across 64 plans (accuracy 32.5% → 85.0%)
+- Multi-strategy PubMed search: author+journal+year, author+year, author+journal, author-only fallback
+- Unicode normalization for author name matching (diacritics handling)
+- Guideline/trial citation detection to reduce false positives
+
+**Content Milestone: 124 Approved Plans**
+- All 124 clinical decision support plans approved and deployed
+- CPT/synonym enrichment completed across all plans
+- JSON regenerated for all plans; all pass parity checks
+- Plans span 19 categories (Seizures, Stroke, Neuromuscular, Infections, etc.)
 
 ### January 2026
 

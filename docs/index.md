@@ -50,11 +50,11 @@ All plans target **90%+ validation score** across six domains: completeness, acc
 
 | Metric | Count |
 |--------|-------|
-| Completed Plans | 4 |
-| In Development | 0 |
-| Planned | 130 |
+| Approved Plans | 124 |
+| Categories | 19 |
+| Draft Queue | 0 |
 
-See the [Template Tracker](references/tracker.md) for the full roadmap.
+See the [Plans Index](plans/index.md) for the full list or the [Plan Queue](drafts/queue.md) for approval history.
 
 ## Disclaimer
 

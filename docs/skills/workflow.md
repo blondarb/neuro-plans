@@ -120,12 +120,31 @@ This workflow produces validated, citation-verified, billing-ready clinical deci
 
 **Quality Gate:** All HIGH priority citations verified or corrected
 
+### Automated PubMed Verification
+
+In addition to the manual citation verifier skill, the repository includes `scripts/verify_citations.py` which automates PMID verification against the PubMed API:
+
+```bash
+# Verify citations for a single plan
+python -X utf8 scripts/verify_citations.py docs/plans/plan-name.md --verify
+
+# Verify all plans
+python -X utf8 scripts/verify_citations.py --all --verify
+
+# Find correct PMIDs for mismatches and apply fixes
+python -X utf8 scripts/verify_citations.py docs/plans/plan-name.md --verify --repair --apply
+
+# Output JSON report
+python -X utf8 scripts/verify_citations.py --all --verify --quiet --json report.json
+```
+
 ### If Citations Need Correction:
 
-1. Generate correction list for Rebuilder
-2. Physician reviews flagged citations
-3. Implement corrections
-4. Re-verify changed citations
+1. Run `verify_citations.py --verify --repair --apply` to auto-fix PMIDs
+2. Generate correction list for Rebuilder (manual fixes)
+3. Physician reviews flagged citations
+4. Implement corrections
+5. Re-verify changed citations
 
 ---
 
@@ -218,6 +237,7 @@ This workflow produces validated, citation-verified, billing-ready clinical deci
 | Validate existing template | neuro-checker |
 | Implement revisions from checker | neuro-rebuilder |
 | Verify citations are accurate | neuro-citation-verifier |
+| Auto-verify/fix PMIDs | `scripts/verify_citations.py` |
 | Add CPT codes and synonyms | neuro-cpt-synonym-enricher |
 
 ---

@@ -3,6 +3,7 @@ title: "Status Epilepticus"
 description: "Clinical decision support for status epilepticus diagnosis and management"
 version: "1.2"
 setting: "HOSP, OPD, ICU"
+status: approved
 ---
 
 # Status Epilepticus

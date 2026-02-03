@@ -3,6 +3,7 @@ title: "Acute Ischemic Stroke"
 description: "Clinical decision support for acute ischemic stroke diagnosis and management"
 version: "1.0"
 setting: "HOSP, OPD, ICU"
+status: approved
 ---
 
 # Acute Ischemic Stroke

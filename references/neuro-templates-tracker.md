@@ -1,11 +1,13 @@
 # Neuro Clinical Decision Support Templates
 
+> **Note:** This tracker is superseded by [docs/drafts/queue.md](../docs/drafts/queue.md), which is the canonical source of truth for plan status. This file is retained for historical reference only.
+
 ## Project Tracker
 
-**Created:** January 15, 2026  
-**Last Updated:** January 15, 2026  
-**Target:** 50+ validated templates  
-**Current Status:** 7 templates completed
+**Created:** January 15, 2026
+**Last Updated:** February 3, 2026
+**Target:** 50+ validated templates
+**Current Status:** 124 plans approved (target exceeded)
 
 ---
 
@@ -288,24 +290,13 @@
 
 ## STATISTICS
 
-| Category | Completed | In Progress | Not Started | Total |
-|----------|-----------|-------------|-------------|-------|
-| Seizure/Epilepsy | 2 | 0 | 5 | 7 |
-| Stroke/Cerebrovascular | 0 | 0 | 11 | 11 |
-| Headache | 2 | 0 | 9 | 11 |
-| Demyelinating | 1 | 0 | 8 | 9 |
-| Neuromuscular | 1 | 0 | 13 | 14 |
-| Neuropathy | 1 | 0 | 10 | 11 |
-| Movement Disorders | 0 | 0 | 14 | 14 |
-| Dementia/Cognitive | 0 | 0 | 12 | 12 |
-| CNS Infections | 0 | 0 | 12 | 12 |
-| Neuro-oncology | 0 | 0 | 8 | 8 |
-| Spinal Cord | 0 | 0 | 8 | 8 |
-| Autoimmune/Inflammatory | 0 | 0 | 7 | 7 |
-| Functional/Psychiatric | 0 | 0 | 4 | 4 |
-| Neurocritical Care | 1 | 0 | 5 | 6 |
-| Other/Miscellaneous | 0 | 0 | 10 | 10 |
-| **TOTAL** | **7** | **0** | **127** | **134** |
+> **As of February 3, 2026:** 124 plans are approved and deployed. See [docs/drafts/queue.md](../docs/drafts/queue.md) and [docs/plans/index.md](../docs/plans/index.md) for the current breakdown by category.
+
+| Metric | Count |
+|--------|-------|
+| Approved Plans | 124 |
+| Categories | 19 |
+| Draft Queue | 0 |
 
 ---
 

@@ -3,6 +3,7 @@ title: "Peripheral Neuropathy - New Diagnosis/Evaluation"
 description: "Clinical decision support for peripheral neuropathy - new diagnosis/evaluation diagnosis and management"
 version: "1.2"
 setting: "HOSP, OPD, ICU"
+status: approved
 ---
 
 # Peripheral Neuropathy - New Diagnosis/Evaluation

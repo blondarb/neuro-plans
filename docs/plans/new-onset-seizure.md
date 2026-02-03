@@ -3,6 +3,7 @@ title: "New Onset Seizure"
 description: "Clinical decision support for new onset seizure diagnosis and management"
 version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
+status: approved
 ---
 
 # New Onset Seizure
