@@ -36,11 +36,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Susac Syndrome | H35.89 | `susac-syndrome.md` | `completed` | Claude | 2026-02-02 |
 | Neuro-Behcet's Disease | M35.2 | `neuro-behcets-disease.md` | `completed` | Claude | 2026-02-02 |
 | Hashimoto's Encephalopathy | E06.3 | `hashimotos-encephalopathy.md` | `completed` | Claude | 2026-02-02 |
-| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
-| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
-| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `in_progress` | Claude | 2026-02-02 |
-| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `in_progress` | Claude | 2026-02-02 |
-| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `in_progress` | Claude | 2026-02-02 |
+| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `completed` | Claude | 2026-02-02 |
+| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `completed` | Claude | 2026-02-02 |
+| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `completed` | Claude | 2026-02-02 |
+| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `completed` | Claude | 2026-02-02 |
+| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `completed` | Claude | 2026-02-02 |
 
 ---
 
