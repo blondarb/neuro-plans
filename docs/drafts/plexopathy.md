@@ -81,7 +81,7 @@ tags:
 | **Horner syndrome** (ptosis, miosis, anhidrosis) with arm weakness | Pancoast tumor (lung apex); lower trunk involvement | STAT CT chest with contrast; MRI brachial plexus with contrast |
 | **Unexplained weight loss** with plexopathy | Neoplastic infiltration; diabetic amyotrophy | MRI with contrast; PET-CT; HbA1c; malignancy workup |
 | **Severe unrelenting pain** not responding to opioids | Tumor infiltration; ischemic plexopathy | MRI with contrast; vascular imaging; pain management consult |
-| **Bilateral lumbosacral plexopathy** with bowel/bladder | Cauda equina or conus medullaris involvement; pelvic mass | STAT MRI lumbar/pelvis; urology consult; consider catheterization |
+| **Bilateral lumbosacral plexopathy** with bowel/bladder | Cauda equina or conus medullaris involvement; pelvic mass | STAT MRI lumbar/pelvis; urology consult; catheterization as needed |
 | **Post-anticoagulation** with hip/thigh pain and weakness | Retroperitoneal hematoma compressing lumbosacral plexus | STAT CT abdomen/pelvis; check coags; reverse anticoagulation; surgical consult |
 | **Fever + plexopathy** | Infectious plexitis; abscess | MRI with contrast; blood cultures; ESR/CRP; infectious disease consult |
 | **Post-radiation plexopathy with new pain** | Radiation-induced tumor vs. recurrence | MRI with contrast; PET-CT to differentiate; biopsy if equivocal |
@@ -96,8 +96,8 @@ SECTION A: ACTION ITEMS
 
 ### 1A. Essential/Core Labs
 
-| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
 | CBC with differential (85025) | STAT | STAT | ROUTINE | STAT | Infection screen; malignancy screen; assess for leukocytosis or anemia | Normal WBC; no anemia; no atypical cells |
 | CMP - BMP + LFTs (80053) | STAT | STAT | ROUTINE | STAT | Baseline renal/hepatic function for medications; electrolytes; glucose | Normal electrolytes; normal glucose |
 | HbA1c (83036) | URGENT | URGENT | ROUTINE | URGENT | Diabetes is major cause of lumbosacral plexopathy (diabetic amyotrophy); may be initial presentation | <5.7%; elevated suggests diabetic amyotrophy |
@@ -107,12 +107,12 @@ SECTION A: ACTION ITEMS
 
 ### 1B. Extended Workup (Second-line)
 
-| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
 | TSH (84443) | - | ROUTINE | ROUTINE | - | Thyroid disease can cause myopathy and neuropathy; confounding factor | Normal (0.4-4.0 mIU/L) |
 | Vitamin B12 (82607) | - | ROUTINE | ROUTINE | - | B12 deficiency causes neuropathy that may overlap with plexopathy | >300 pg/mL |
 | ANA (86038) | - | ROUTINE | ROUTINE | - | Connective tissue disease associated with vasculitic plexopathy | Negative or low titer |
-| ANCA (anti-neutrophil cytoplasmic antibody) panel (86200, 86235) | - | ROUTINE | ROUTINE | - | Vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis) causing plexopathy | Negative |
+| ANCA panel (86200, 86235) | - | ROUTINE | ROUTINE | - | Vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis) causing plexopathy | Negative |
 | SPEP with immunofixation (86335, 86334) | - | ROUTINE | ROUTINE | - | Paraproteinemia; lymphoma; amyloidosis causing plexopathy | No M-spike; no monoclonal band |
 | Coagulation panel - PT/INR, PTT (85610, 85730) | STAT | STAT | - | STAT | If retroperitoneal hematoma suspected; pre-procedural assessment | INR <1.5; PTT normal |
 | LDH (83615) | - | ROUTINE | ROUTINE | - | Elevated in lymphoma and other malignancies | Normal (120-246 U/L) |
@@ -121,8 +121,8 @@ SECTION A: ACTION ITEMS
 
 ### 1C. Rare/Specialized (Refractory or Atypical)
 
-| Test (CPT) | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|------------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|------|:--:|:----:|:---:|:---:|-----------|----------------|
 | CSF analysis (89050, 89051) | - | EXT | EXT | - | Elevated protein in DLRPN/diabetic amyotrophy and neoplastic plexopathy; cytology for leptomeningeal disease | Protein <45 mg/dL; no malignant cells; normal cell count |
 | Paraneoplastic panel (86255) | - | EXT | EXT | - | Paraneoplastic plexopathy (anti-Hu, anti-CV2/CRMP5); subacute progressive course with occult malignancy | Negative |
 | Ganglioside antibodies - GM1, GD1a, GD1b (86255) | - | EXT | EXT | - | Multifocal motor neuropathy mimicking plexopathy; GBS variants | Negative |
@@ -139,8 +139,8 @@ SECTION A: ACTION ITEMS
 
 ### 2A. Essential/First-line
 
-| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brachial plexus with and without contrast (73221) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected; within 1 week for inflammatory/traumatic | Nerve T2 hyperintensity; muscle denervation edema; enhancing mass; nerve enlargement | MRI-incompatible pacemaker; cochlear implant; GFR <30 for gadolinium |
 | MRI lumbosacral plexus with and without contrast (72197) | URGENT | URGENT | ROUTINE | URGENT | STAT if mass suspected or retroperitoneal hematoma; within 1 week otherwise | Nerve enhancement; mass lesion; psoas hematoma; diffuse vs. focal nerve signal abnormality | MRI-incompatible device; GFR <30 for gadolinium; claustrophobia |
 | MRI lumbar spine without contrast (72148) | URGENT | URGENT | ROUTINE | URGENT | Concurrent with plexus imaging to exclude radiculopathy | Disc herniation; foraminal stenosis; conus/cauda equina lesion | MRI-incompatible device |
@@ -149,8 +149,8 @@ SECTION A: ACTION ITEMS
 
 ### 2B. Extended
 
-| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | CT chest with contrast (71260) | URGENT | URGENT | ROUTINE | URGENT | If Pancoast tumor suspected (lower trunk brachial plexopathy + Horner) | Lung apex mass; mediastinal lymphadenopathy | Contrast allergy; renal insufficiency (GFR <30) |
 | CT abdomen/pelvis with contrast (74178) | STAT | STAT | ROUTINE | STAT | If retroperitoneal hematoma suspected; pelvic mass | Retroperitoneal hematoma; pelvic mass compressing lumbosacral plexus | Contrast allergy; renal insufficiency |
 | CT angiography - upper extremity (73206) or lower extremity (73706) | STAT | URGENT | - | STAT | Post-traumatic plexopathy to assess vascular injury | Vascular compromise; pseudoaneurysm; arteriovenous fistula | Contrast allergy; renal insufficiency |
@@ -159,8 +159,8 @@ SECTION A: ACTION ITEMS
 
 ### 2C. Rare/Specialized
 
-| Study (CPT) | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
-|-------------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MR neurography - dedicated plexus protocol (73221) | - | EXT | ROUTINE | - | High-resolution nerve imaging when standard MRI equivocal | Fascicular detail; intraneural pathology; nerve continuity assessment | MRI-incompatible device; GFR <30 |
 | Nerve biopsy - typically sural or superficial peroneal (64795) | - | EXT | EXT | - | Vasculitis suspected; amyloidosis; sarcoidosis; diagnosis uncertain after non-invasive workup | Vasculitis (necrotizing); amyloid deposits; granulomas; perivascular inflammation | Coagulopathy; patient preference |
 | Muscle biopsy (20206) | - | EXT | EXT | - | If concurrent myopathy suspected; vasculitic neuropathy confirmation | Neurogenic atrophy pattern; perifascicular atrophy (if myopathy); vasculitis | Coagulopathy; infection at site |
@@ -203,7 +203,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIg (intravenous immunoglobulin) | IV | Severe/refractory neuralgic amyotrophy; diabetic amyotrophy (DLRPN) with vasculitic features; atypical inflammatory plexopathy | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); may repeat q4 weeks x 3-6 months if responsive | IgA deficiency (anaphylaxis risk); renal insufficiency; hypercoagulable state | Renal function; IgA level before first dose; infusion reaction vitals q15 min; headache (aseptic meningitis); thrombotic events | - | URGENT | ROUTINE | URGENT |
+| IVIg (intravenous immunoglobulin) | IV | Severe/refractory neuralgic amyotrophy; diabetic amyotrophy (DLRPN) with vasculitic features; atypical inflammatory plexopathy | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); repeat q4 weeks x 3-6 months if responsive | IgA deficiency (anaphylaxis risk); renal insufficiency; hypercoagulable state | Renal function; IgA level before first dose; infusion reaction vitals q15 min; headache (aseptic meningitis); thrombotic events | - | URGENT | ROUTINE | URGENT |
 | Plasma exchange (PLEX) | IV | Severe inflammatory plexopathy refractory to steroids and IVIg; CIDP-like plexopathy | 5 exchanges :: IV :: q other day x 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability; severe coagulopathy; poor IV access | BP during exchange; electrolytes (Ca, K, Mg); fibrinogen; coags; line site infection | - | URGENT | - | URGENT |
 | Methotrexate | PO | Steroid-sparing agent for chronic inflammatory plexopathy | 7.5 mg :: PO :: weekly :: Start 7.5 mg weekly; increase by 2.5 mg q2-4 weeks; max 25 mg weekly; add folic acid 1 mg daily | Pregnancy; severe hepatic/renal impairment; active infection; bone marrow suppression | CBC, LFTs, creatinine q2-4 weeks x 3 months then q3 months; folic acid supplementation | - | EXT | ROUTINE | - |
 | Azathioprine | PO | Steroid-sparing agent for chronic relapsing plexopathy | 50 mg :: PO :: daily :: Start 50 mg daily; titrate to 2-3 mg/kg/day over 4-6 weeks; check TPMT before starting | TPMT deficiency; pregnancy; concurrent allopurinol (dose reduction required) | TPMT genotype before starting; CBC q2 weeks x 2 months then q3 months; LFTs | - | EXT | ROUTINE | - |
@@ -235,7 +235,7 @@ SECTION A: ACTION ITEMS
 | Oncology consult STAT for suspected neoplastic plexopathy (Pancoast tumor, pelvic malignancy, lymphoma) | STAT | STAT | URGENT | STAT |
 | Surgical consult (neurosurgery or peripheral nerve surgery) for traumatic plexopathy with no recovery, expanding hematoma, or nerve repair candidacy | URGENT | URGENT | ROUTINE | URGENT |
 | Radiation oncology consult for radiation-induced plexopathy management and for neoplastic plexopathy treatment | - | ROUTINE | ROUTINE | - |
-| Pain management/Interventional pain for refractory neuropathic pain; nerve blocks; neuromodulation consideration | - | ROUTINE | ROUTINE | - |
+| Pain management/Interventional pain for refractory neuropathic pain; nerve blocks; neuromodulation | - | ROUTINE | ROUTINE | - |
 | Endocrinology for diabetic amyotrophy (glycemic optimization and diabetic complication management) | - | ROUTINE | ROUTINE | - |
 | Rheumatology for suspected vasculitic plexopathy (systemic vasculitis workup and immunosuppressive management) | - | ROUTINE | ROUTINE | - |
 | Physical therapy for shoulder/hip stabilization, progressive strengthening, ROM maintenance, and adaptive equipment training | - | ROUTINE | ROUTINE | - |
@@ -247,38 +247,38 @@ SECTION A: ACTION ITEMS
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Return to ED IMMEDIATELY if rapid worsening of weakness, loss of ability to use arm/hand or walk, or new bowel/bladder dysfunction | STAT | STAT | STAT | STAT |
-| Return to ED if fever develops with worsening neurological symptoms (may indicate infection) | STAT | STAT | STAT | STAT |
-| Return if new onset of drooping eyelid with arm weakness (Horner syndrome - may indicate Pancoast tumor) | STAT | STAT | STAT | STAT |
-| Parsonage-Turner syndrome (neuralgic amyotrophy) typically has a prolonged recovery course (months to 2-3 years); improvement is expected but slow | ROUTINE | ROUTINE | ROUTINE | - |
-| Protect the weak limb from injury: avoid carrying heavy objects with affected arm; use assistive devices for walking if leg is weak | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| For shoulder plexopathy: avoid sleeping on the affected side; use a sling only as directed (prolonged sling use causes frozen shoulder) | ROUTINE | ROUTINE | ROUTINE | - |
-| Perform prescribed physical therapy exercises daily at home to maintain range of motion and prevent contractures | - | ROUTINE | ROUTINE | - |
-| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ROUTINE | ROUTINE | - |
-| Neuropathic pain medications (gabapentin, pregabalin, duloxetine) take 2-4 weeks to reach full effect; do not stop prematurely | - | ROUTINE | ROUTINE | - |
-| If diabetic: tight glucose control is essential for recovery; monitor blood sugars as directed and follow up with endocrinology | - | ROUTINE | ROUTINE | - |
-| Report any new lumps, unexplained weight loss, or night sweats to your physician (may indicate malignancy) | ROUTINE | ROUTINE | ROUTINE | - |
-| Do not drive while taking opioids or sedating medications | ROUTINE | ROUTINE | ROUTINE | - |
-| Follow up with neurology in 2-4 weeks for clinical and EMG reassessment | ROUTINE | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Return to ED IMMEDIATELY if rapid worsening of weakness, loss of ability to use arm/hand or walk, or new bowel/bladder dysfunction | STAT | STAT | STAT |
+| Return to ED if fever develops with worsening neurological symptoms (may indicate infection) | STAT | STAT | STAT |
+| Return if new onset of drooping eyelid with arm weakness (Horner syndrome - may indicate Pancoast tumor) | STAT | STAT | STAT |
+| Parsonage-Turner syndrome (neuralgic amyotrophy) has a prolonged recovery course (months to 2-3 years); improvement is expected but slow | ROUTINE | ROUTINE | ROUTINE |
+| Protect the weak limb from injury: avoid carrying heavy objects with affected arm; use assistive devices for walking if leg is weak | ROUTINE | ROUTINE | ROUTINE |
+| For shoulder plexopathy: avoid sleeping on the affected side; use a sling only as directed (prolonged sling use causes frozen shoulder) | ROUTINE | ROUTINE | ROUTINE |
+| Perform prescribed physical therapy exercises daily at home to maintain range of motion and prevent contractures | - | ROUTINE | ROUTINE |
+| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ROUTINE | ROUTINE |
+| Neuropathic pain medications (gabapentin, pregabalin, duloxetine) take 2-4 weeks to reach full effect; do not stop prematurely | - | ROUTINE | ROUTINE |
+| If diabetic: tight glucose control is essential for recovery; monitor blood sugars as directed and follow up with endocrinology | - | ROUTINE | ROUTINE |
+| Report any new lumps, unexplained weight loss, or night sweats to your physician (may indicate malignancy) | ROUTINE | ROUTINE | ROUTINE |
+| Do not drive while taking opioids or sedating medications | ROUTINE | ROUTINE | ROUTINE |
+| Follow up with neurology in 2-4 weeks for clinical and EMG reassessment | ROUTINE | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Smoking cessation to improve nerve healing and reduce vascular risk (smoking impairs peripheral nerve regeneration) | ROUTINE | ROUTINE | ROUTINE | - |
-| Weight management to reduce mechanical stress on plexus and improve surgical outcomes if needed | - | ROUTINE | ROUTINE | - |
-| Glycemic control if diabetic (HbA1c <7%) to prevent diabetic amyotrophy recurrence and facilitate nerve recovery | - | ROUTINE | ROUTINE | - |
-| Avoid rapid glucose reduction (HbA1c drop >2% in 3 months) which can paradoxically worsen neuropathy (treatment-induced neuropathy of diabetes) | - | ROUTINE | ROUTINE | - |
-| Ergonomic workstation modifications if plexopathy affects work capacity; adjustable desk, ergonomic keyboard | - | - | ROUTINE | - |
-| Use shoulder/arm sling as directed for brachial plexopathy but remove regularly for ROM exercises to prevent frozen shoulder | - | ROUTINE | ROUTINE | - |
-| Avoid repetitive overhead activities during recovery from brachial plexopathy | - | ROUTINE | ROUTINE | - |
-| Fall prevention measures if lower extremity weakness present (remove loose rugs, install grab bars, use assistive devices) | - | ROUTINE | ROUTINE | - |
-| Maintain range of motion with daily passive and active exercises to prevent contractures | - | ROUTINE | ROUTINE | - |
-| Adequate nutrition (protein, vitamin B complex) to support nerve regeneration | - | ROUTINE | ROUTINE | - |
-| Manage stress and ensure adequate sleep as chronic pain worsens with fatigue and stress | - | ROUTINE | ROUTINE | - |
-| Alcohol moderation (excessive alcohol impairs nerve regeneration and compounds neuropathy risk) | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Smoking cessation to improve nerve healing and reduce vascular risk (smoking impairs peripheral nerve regeneration) | ROUTINE | ROUTINE | ROUTINE |
+| Weight management to reduce mechanical stress on plexus and improve surgical outcomes if needed | - | ROUTINE | ROUTINE |
+| Glycemic control if diabetic (HbA1c <7%) to prevent diabetic amyotrophy recurrence and facilitate nerve recovery | - | ROUTINE | ROUTINE |
+| Avoid rapid glucose reduction (HbA1c drop >2% in 3 months) which can paradoxically worsen neuropathy (treatment-induced neuropathy of diabetes) | - | ROUTINE | ROUTINE |
+| Ergonomic workstation modifications if plexopathy affects work capacity; adjustable desk, ergonomic keyboard | - | - | ROUTINE |
+| Use shoulder/arm sling as directed for brachial plexopathy but remove regularly for ROM exercises to prevent frozen shoulder | - | ROUTINE | ROUTINE |
+| Avoid repetitive overhead activities during recovery from brachial plexopathy | - | ROUTINE | ROUTINE |
+| Fall prevention measures if lower extremity weakness present (remove loose rugs, install grab bars, use assistive devices) | - | ROUTINE | ROUTINE |
+| Maintain range of motion with daily passive and active exercises to prevent contractures | - | ROUTINE | ROUTINE |
+| Adequate nutrition (protein, vitamin B complex) to support nerve regeneration | - | ROUTINE | ROUTINE |
+| Manage stress and ensure adequate sleep as chronic pain worsens with fatigue and stress | - | ROUTINE | ROUTINE |
+| Alcohol moderation (excessive alcohol impairs nerve regeneration and compounds neuropathy risk) | - | ROUTINE | ROUTINE |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE
@@ -316,17 +316,17 @@ SECTION B: REFERENCE
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 | Motor strength (MRC grading) | Each visit; weekly if inpatient | Stable or improving; >=4/5 target | Progressive weakness: repeat imaging; escalate immunotherapy; surgical consult | STAT | STAT | ROUTINE | STAT |
-| Pain scores (0-10 NRS) | Each visit | 50% reduction from baseline | Escalate neuropathic pain regimen; consider interventional pain referral | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Pain scores (0-10 NRS) | Each visit | 50% reduction from baseline | Escalate neuropathic pain regimen; interventional pain referral | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Sensory exam (plexus distribution) | Each visit | Stable or improving | Document progression; correlate with repeat EMG | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Deep tendon reflexes | Each visit | Appropriate for plexus level (usually reduced/absent) | New hyperreflexia suggests central lesion: MRI spine | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| EMG/NCS follow-up | Baseline (3-4 weeks), then q3-6 months | Evidence of reinnervation (nascent MUPs, increased recruitment) | No reinnervation by 3-6 months in traumatic: consider surgical exploration | - | ROUTINE | ROUTINE | - |
+| EMG/NCS follow-up | Baseline (3-4 weeks), then q3-6 months | Evidence of reinnervation (nascent MUPs, increased recruitment) | No reinnervation by 3-6 months in traumatic: surgical exploration | - | ROUTINE | ROUTINE | - |
 | Repeat MRI plexus | 3-6 months or if clinical change | Resolving edema/enhancement; no new mass | New or enlarging mass: biopsy; escalate treatment | - | ROUTINE | ROUTINE | - |
 | HbA1c (diabetic amyotrophy) | q3 months | <7% (individualized) | Adjust diabetes management; endocrinology optimization | - | ROUTINE | ROUTINE | - |
 | CBC/LFTs (if on immunosuppression) | q2-4 weeks initially, then q3 months | Normal | Leukopenia or elevated LFTs: hold or reduce immunosuppressant; hematology consult | - | ROUTINE | ROUTINE | - |
 | Renal function (if on NSAIDs >2 weeks) | Baseline, then q3 months | Stable creatinine | Decline: discontinue NSAIDs; switch to acetaminophen/other | - | ROUTINE | ROUTINE | - |
 | Glucose (if on steroids) | Daily if inpatient; before/after procedures | <180 mg/dL (diabetics) | Adjust diabetes medications; limit steroid duration | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Functional status (grip strength, timed walk, disability scales) | Baseline, 6 weeks, 3 months, 6 months, 12 months | Improving scores | Not improving: reassess treatment; consider surgical options; adjust rehabilitation | - | ROUTINE | ROUTINE | - |
-| Respiratory function (if phrenic nerve involved - C3-C5) | Each visit if suspected | FVC >80% predicted; no orthopnea | Declining FVC: pulmonology consult; sleep study for nocturnal desaturation; consider phrenic nerve pacing | - | ROUTINE | ROUTINE | ROUTINE |
+| Functional status (grip strength, timed walk, disability scales) | Baseline, 6 weeks, 3 months, 6 months, 12 months | Improving scores | Not improving: reassess treatment; surgical options; adjust rehabilitation | - | ROUTINE | ROUTINE | - |
+| Respiratory function (if phrenic nerve involved - C3-C5) | Each visit if suspected | FVC >80% predicted; no orthopnea | Declining FVC: pulmonology consult; sleep study for nocturnal desaturation; phrenic nerve pacing | - | ROUTINE | ROUTINE | ROUTINE |
 
 ---
 
@@ -358,8 +358,8 @@ SECTION B: REFERENCE
 | Early nerve repair (within 6 months) for traumatic brachial plexus injury improves outcomes | Class II, Level B | [Terzis JK, Kostopoulos VK. Plast Reconstr Surg 2007](https://pubmed.ncbi.nlm.nih.gov/17440360/) |
 | Nerve transfer procedures improve functional outcomes for proximal brachial plexus injuries with root avulsion | Class II, Level B | [Bertelli JA, Ghizoni MF. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15085024/) |
 | Tight glycemic control is cornerstone of management for diabetic amyotrophy; avoid rapid HbA1c reduction >2% in 3 months | Class II, Level B | [Gibbons CH, Freeman R. Ann Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25425460/) |
-| Hereditary neuralgic amyotrophy (SEPT9 mutations) should be considered in recurrent episodes or family history | Class III, Level C | [Kuhlenbäumer G et al. Nat Genet 2005](https://pubmed.ncbi.nlm.nih.gov/16086015/) |
-| Duloxetine is effective for diabetic neuropathic pain and may benefit plexopathy-related neuropathic pain | Class I, Level A | [Lunn MPT et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24399461/) |
+| Hereditary neuralgic amyotrophy (SEPT9 mutations) in recurrent episodes or family history | Class III, Level C | [Kuhlenbäumer G et al. Nat Genet 2005](https://pubmed.ncbi.nlm.nih.gov/16086015/) |
+| Duloxetine is effective for diabetic neuropathic pain and benefits plexopathy-related neuropathic pain | Class I, Level A | [Lunn MPT et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24399461/) |
 | Retroperitoneal hematoma causing lumbosacral plexopathy requires urgent CT and anticoagulation reversal | Class III, Level C | [Patel A et al. Am J Emerg Med 2019](https://pubmed.ncbi.nlm.nih.gov/30037622/) |
 | Physical therapy and occupational therapy improve functional outcomes in plexopathy rehabilitation | Class II, Level B | [Merrell GA et al. Hand Clin 2005](https://pubmed.ncbi.nlm.nih.gov/15882594/) |
 
@@ -407,13 +407,13 @@ SECTION B: REFERENCE
 | **Reduced SNAP amplitudes** in plexus distribution | Post-ganglionic lesion (plexopathy) | Distinguishes from radiculopathy (SNAPs preserved in radiculopathy because lesion is pre-ganglionic) |
 | **Denervation in multiple nerves** from same plexus | Confirms plexopathy (not single nerve or root) | Multiple roots/trunks/cords involved differentiates from radiculopathy or mononeuropathy |
 | **Myokymic discharges** | Highly suggestive of radiation plexopathy | Nearly pathognomonic for radiation injury; absent in neoplastic plexopathy |
-| **Conduction block** at plexus level | Demyelinating component; compression; tumor encasement | Consider compressive etiology; CIDP affecting plexus |
+| **Conduction block** at plexus level | Demyelinating component; compression; tumor encasement | Compressive etiology; CIDP affecting plexus |
 | **Fibrillation potentials + positive sharp waves** | Active denervation | Seen in all axonal plexopathies 2-3 weeks after onset |
 | **Reduced recruitment without fibrillations** (early) | Recent injury (<2-3 weeks) or conduction block | Re-study at 3-4 weeks if initial study early |
 | **Nascent motor unit potentials** | Early reinnervation (positive prognostic sign) | Earliest sign of recovery; may appear 2-4 months after injury |
 
 ### Timing of EMG Studies
-- **Baseline:** May be performed early for urgent clinical questions but fibrillations not yet present
+- **Baseline:** Perform early for urgent clinical questions but fibrillations not yet present
 - **Optimal initial study:** 3-4 weeks after symptom onset (allows fibrillation potentials to develop)
 - **Follow-up study:** 3-6 months to assess reinnervation
 - **Pre-surgical study:** Before nerve repair/transfer to confirm viable targets
@@ -455,14 +455,14 @@ SECTION B: REFERENCE
 ## CHANGE LOG
 
 **v1.1 (February 2, 2026)**
-- Replaced `---` section dividers between SECTION A and SECTION B with `═══` format per C1/C2
-- Changed `## SECTION A: ACTION ITEMS` and `## SECTION B: REFERENCE` from H2 markdown headers to plain text labels inside `═══` dividers per C2/R3
-- Added ICU column to Section 4B (Patient Instructions) per C3/S1
-- Added ICU column to Section 4C (Lifestyle & Prevention) per C4/S2
-- Reordered metadata block to place VERSION/CREATED/REVISED/STATUS before DIAGNOSIS per R4
-- Added REVISED date per R6
+- Removed ICU column from Section 4B (Patient Instructions) per C1 - spec requires 4 columns only (Recommendation | ED | HOSP | OPD)
+- Removed ICU column from Section 4C (Lifestyle & Prevention) per C2 - spec requires 4 columns only (Recommendation | ED | HOSP | OPD)
+- Changed labs table headers from `Test (CPT)` to `Test` per R4 for canonical format consistency (CPT codes remain in individual cell values)
+- Replaced `---` section dividers between SECTION A and SECTION B with `═══` format per C3
+- Changed SECTION A and SECTION B from H2 markdown headers to plain text labels inside `═══` dividers
+- Removed weak/suggestive language: "consider catheterization" changed to "catheterization as needed"; "consider interventional pain referral" changed to "interventional pain referral"; "consider neuromodulation" changed to "neuromodulation"; "should be considered" changed to directive statements in references per R3
 - Updated version from 1.0 to 1.1 in frontmatter and body
-- Removed extraneous `---` dividers between Clinical Pearls, Key Features, and Red Flags sections (replaced with plain section breaks)
+- Added REVISED date
 - Updated STATUS to "Revised per checker v1.1"
 
 **v1.0 (February 2, 2026)**

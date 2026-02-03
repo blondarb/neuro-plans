@@ -32,15 +32,15 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Plexopathy | G54.0 | `plexopathy.md` | `completed` | Claude | 2026-02-02 |
 | Tics / Tourette Syndrome | F95.2 | `tics-tourette-syndrome.md` | `completed` | Claude | 2026-02-02 |
 | Neurocysticercosis | B69.0 | `neurocysticercosis.md` | `completed` | Claude | 2026-02-02 |
-| HIV-Associated Neurocognitive Disorder | B20 | `hiv-associated-neurocognitive-disorder.md` | `pending` | — | 2026-02-01 |
-| Susac Syndrome | H35.89 | `susac-syndrome.md` | `pending` | — | 2026-02-01 |
-| Neuro-Behcet's Disease | M35.2 | `neuro-behcets-disease.md` | `pending` | — | 2026-02-01 |
-| Hashimoto's Encephalopathy | E06.3 | `hashimotos-encephalopathy.md` | `pending` | — | 2026-02-01 |
-| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `pending` | — | 2026-02-01 |
-| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `pending` | — | 2026-02-01 |
-| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `pending` | — | 2026-02-01 |
-| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `pending` | — | 2026-02-01 |
-| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `pending` | — | 2026-02-01 |
+| HIV-Associated Neurocognitive Disorder | B20 | `hiv-associated-neurocognitive-disorder.md` | `completed` | Claude | 2026-02-02 |
+| Susac Syndrome | H35.89 | `susac-syndrome.md` | `completed` | Claude | 2026-02-02 |
+| Neuro-Behcet's Disease | M35.2 | `neuro-behcets-disease.md` | `completed` | Claude | 2026-02-02 |
+| Hashimoto's Encephalopathy | E06.3 | `hashimotos-encephalopathy.md` | `completed` | Claude | 2026-02-02 |
+| Nystagmus Evaluation | H55.00 | `nystagmus-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
+| Tinnitus Evaluation | H93.19 | `tinnitus-evaluation.md` | `in_progress` | Claude | 2026-02-02 |
+| Paresthesia / Numbness / Tingling | R20.2 | `paresthesia-numbness-tingling.md` | `in_progress` | Claude | 2026-02-02 |
+| Headache, Unspecified | R51.9 | `headache-unspecified.md` | `in_progress` | Claude | 2026-02-02 |
+| Tremor, Unspecified | R25.1 | `tremor-unspecified.md` | `in_progress` | Claude | 2026-02-02 |
 
 ---
 

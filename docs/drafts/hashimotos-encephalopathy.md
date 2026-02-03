@@ -1,7 +1,7 @@
 ---
 title: "Hashimoto's Encephalopathy"
 description: "Clinical decision support for Hashimoto's encephalopathy (SREAT) diagnosis and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,9 +22,10 @@ tags:
 
 # Hashimoto's Encephalopathy
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 2, 2026
-**STATUS:** Initial build
+**REVISED:** February 2, 2026
+**STATUS:** Revised per checker/rebuilder pipeline (v1.1)
 
 ---
 
@@ -116,7 +117,7 @@ SECTION A: ACTION ITEMS
 | CSF oligoclonal bands with paired serum (CPT 83916) | - | ROUTINE | ROUTINE | - | Intrathecal IgG synthesis; elevated in ~25% of HE | May show CSF-specific bands |
 | CSF IgG index | - | ROUTINE | ROUTINE | - | Intrathecal antibody synthesis | May be elevated |
 | Anti-alpha-enolase antibodies (NAE) | - | EXT | EXT | - | Proposed biomarker in HE subset (attacks neuronal surface); research test | Positive may support HE |
-| CSF anti-TPO antibodies | - | EXT | EXT | - | Intrathecal production of anti-TPO may support diagnosis; not widely validated | Positive may support intrathecal production |
+| CSF anti-TPO antibodies | - | EXT | EXT | - | Intrathecal production of anti-TPO; not widely validated | Positive may support intrathecal production |
 | Next-generation sequencing (CSF metagenomics) | - | EXT | EXT | - | Occult infection exclusion when standard testing negative | No pathogens detected |
 | Brain biopsy (last resort) | - | EXT | - | - | Perivascular lymphocytic infiltration; exclusion of other pathology | Lymphocytic perivascular cuffing, no vasculitis |
 
@@ -142,7 +143,7 @@ SECTION A: ACTION ITEMS
 | MRI brain with epilepsy protocol | - | ROUTINE | ROUTINE | - | If seizures recurrent | Subtle cortical lesions; hippocampal sclerosis; exclude structural cause | Gadolinium contraindications |
 | MRA head and neck | - | ROUTINE | ROUTINE | - | Within 48-72h if vasculitis suspected | Rule out CNS vasculitis; large vessel disease | Gadolinium contraindications |
 | CT chest/abdomen/pelvis with contrast (CPT 71260+74178) | - | ROUTINE | ROUTINE | - | Within 48-72h | Occult malignancy screen (paraneoplastic mimic); thyroid pathology | Contrast allergy, renal insufficiency |
-| FDG-PET brain (CPT 78816) | - | EXT | EXT | - | Within 1-2 weeks | Cortical hypometabolism; may help differentiate from other encephalopathies | Uncontrolled diabetes, pregnancy |
+| FDG-PET brain (CPT 78816) | - | EXT | EXT | - | Within 1-2 weeks | Cortical hypometabolism; differentiate from other encephalopathies | Uncontrolled diabetes, pregnancy |
 | Video-EEG monitoring (prolonged) | - | ROUTINE | ROUTINE | STAT | As needed | Characterize seizure semiology; detect subclinical seizures; distinguish epileptic from non-epileptic events | None |
 | Cerebral angiography (conventional) | - | EXT | - | - | If CNS vasculitis strongly suspected | Rule out primary CNS vasculitis (beading pattern) | Contrast allergy, renal insufficiency, coagulopathy |
 
@@ -151,7 +152,7 @@ SECTION A: ACTION ITEMS
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI spine (cervical and thoracic) with and without contrast | - | ROUTINE | ROUTINE | - | If myelopathic signs present | Concurrent myelitis; overlap syndromes (NMOSD, MOGAD) | GFR <30, gadolinium allergy |
-| SPECT brain | - | EXT | EXT | - | If PET unavailable | Regional hypoperfusion; may show frontal or temporal abnormalities | None significant |
+| SPECT brain | - | EXT | EXT | - | If PET unavailable | Regional hypoperfusion; frontal or temporal abnormalities | None significant |
 | Brain biopsy | - | EXT | - | - | Last resort; diagnosis uncertain despite full workup | Perivascular lymphocytic infiltration without vasculitis; exclusion of other pathology | Coagulopathy, inaccessible location |
 
 ### LUMBAR PUNCTURE
@@ -162,26 +163,26 @@ SECTION A: ACTION ITEMS
 
 **Volume Required:** 20-30 mL (large volume for comprehensive antibody and infectious testing)
 
-| Study | ED | HOSP | OPD | Rationale | Target Finding |
-|-------|:--:|:----:|:---:|-----------|----------------|
-| Opening pressure | URGENT | ROUTINE | ROUTINE | Elevated ICP assessment | 10-20 cm H2O (usually normal) |
-| Cell count with differential (tubes 1 and 4) (CPT 89051) | STAT | STAT | ROUTINE | Mild pleocytosis in ~25% of HE | WBC usually <50 (lymphocyte-predominant); many cases normal; RBC 0 |
-| Protein (CPT 84157) | STAT | STAT | ROUTINE | Elevated in ~75-80% of HE (most common CSF finding) | Mildly to moderately elevated (typically 50-150 mg/dL) |
-| Glucose with paired serum glucose (CPT 82945) | STAT | STAT | ROUTINE | Low in infection; typically normal in HE | Normal (>60% of serum) |
-| Gram stain and bacterial culture (CPT 87205+87070) | STAT | STAT | ROUTINE | Rule out bacterial meningitis | No organisms |
-| HSV 1/2 PCR (CPT 87529) | STAT | STAT | ROUTINE | Rule out HSV encephalitis (critical mimic) | Negative |
-| VZV PCR | URGENT | URGENT | ROUTINE | Varicella encephalitis | Negative |
-| EBV PCR | - | ROUTINE | ROUTINE | Viral encephalitis screen | Negative |
-| Enterovirus PCR | URGENT | URGENT | - | Viral meningitis/encephalitis | Negative |
-| West Nile virus IgM/IgG | - | ROUTINE | - | Endemic areas | Negative |
-| Cryptococcal antigen (CPT 87327) | URGENT | ROUTINE | - | Immunocompromised; chronic meningitis | Negative |
-| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | Neurosyphilis | Negative |
-| Oligoclonal bands (CSF AND paired serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | Intrathecal IgG synthesis; present in ~25% of HE | May show CSF-specific bands |
-| IgG index | URGENT | ROUTINE | ROUTINE | Intrathecal antibody synthesis | May be mildly elevated |
-| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | Carcinomatous/lymphomatous meningitis exclusion | Negative |
-| Flow cytometry | - | ROUTINE | ROUTINE | CNS lymphoma exclusion | Normal |
-| **Autoimmune encephalitis antibody panel (CSF)** | URGENT | URGENT | ROUTINE | NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX -- to EXCLUDE defined autoimmune encephalitides | All negative (REQUIRED for HE diagnosis) |
-| AFB culture and smear (CPT 87116) | - | ROUTINE | - | TB meningitis if risk factors | Negative |
+| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+|-------|:--:|:----:|:---:|:---:|-----------|----------------|
+| Opening pressure | URGENT | ROUTINE | ROUTINE | URGENT | Elevated ICP assessment | 10-20 cm H2O (usually normal) |
+| Cell count with differential (tubes 1 and 4) (CPT 89051) | STAT | STAT | ROUTINE | STAT | Mild pleocytosis in ~25% of HE | WBC usually <50 (lymphocyte-predominant); many cases normal; RBC 0 |
+| Protein (CPT 84157) | STAT | STAT | ROUTINE | STAT | Elevated in ~75-80% of HE (most common CSF finding) | Mildly to moderately elevated (typically 50-150 mg/dL) |
+| Glucose with paired serum glucose (CPT 82945) | STAT | STAT | ROUTINE | STAT | Low in infection; typically normal in HE | Normal (>60% of serum) |
+| Gram stain and bacterial culture (CPT 87205+87070) | STAT | STAT | ROUTINE | STAT | Rule out bacterial meningitis | No organisms |
+| HSV 1/2 PCR (CPT 87529) | STAT | STAT | ROUTINE | STAT | Rule out HSV encephalitis (critical mimic) | Negative |
+| VZV PCR | URGENT | URGENT | ROUTINE | URGENT | Varicella encephalitis | Negative |
+| EBV PCR | - | ROUTINE | ROUTINE | - | Viral encephalitis screen | Negative |
+| Enterovirus PCR | URGENT | URGENT | - | URGENT | Viral meningitis/encephalitis | Negative |
+| West Nile virus IgM/IgG | - | ROUTINE | - | - | Endemic areas | Negative |
+| Cryptococcal antigen (CPT 87327) | URGENT | ROUTINE | - | URGENT | Immunocompromised; chronic meningitis | Negative |
+| VDRL (CSF) (CPT 86592) | - | ROUTINE | ROUTINE | - | Neurosyphilis | Negative |
+| Oligoclonal bands (CSF AND paired serum) (CPT 83916) | URGENT | ROUTINE | ROUTINE | URGENT | Intrathecal IgG synthesis; present in ~25% of HE | May show CSF-specific bands |
+| IgG index | URGENT | ROUTINE | ROUTINE | URGENT | Intrathecal antibody synthesis | May be mildly elevated |
+| Cytology (CPT 88104) | - | ROUTINE | ROUTINE | - | Carcinomatous/lymphomatous meningitis exclusion | Negative |
+| Flow cytometry | - | ROUTINE | ROUTINE | - | CNS lymphoma exclusion | Normal |
+| **Autoimmune encephalitis antibody panel (CSF)** | URGENT | URGENT | ROUTINE | URGENT | NMDAR, LGI1, CASPR2, GABA-B, AMPA, DPPX -- to EXCLUDE defined autoimmune encephalitides | All negative (REQUIRED for HE diagnosis) |
+| AFB culture and smear (CPT 87116) | - | ROUTINE | - | - | TB meningitis if risk factors | Negative |
 
 **Special Handling:** Send minimum 2 mL CSF to each reference lab. CSF anti-TPO can be sent but is not widely validated. Autoimmune encephalitis panel on CSF is MANDATORY to exclude defined antibody-mediated etiologies before diagnosing HE. Store extra CSF (frozen at -20C) for future testing. CSF protein elevation is the most common finding in HE (75-80%).
 
@@ -194,30 +195,32 @@ SECTION A: ACTION ITEMS
 ### 3A. Acute/Emergent
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Empiric acyclovir IV (until HSV ruled out) | IV | Encephalopathy of unknown etiology pending HSV PCR | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR negative x2 (48h apart) or alternative diagnosis confirmed | Renal impairment (adjust dose); adequate hydration required | Renal function daily; hydration status; crystal nephropathy prevention | STAT | STAT | - | STAT |
-| Empiric antibiotics (if bacterial meningitis not excluded) | IV | Pending CSF culture results | 2g :: IV :: q12h :: Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone 0.15 mg/kg q6h x 4 days | Per individual drug allergies | Cultures; clinical response; renal function; vancomycin troughs | STAT | STAT | - | STAT |
-| Lorazepam (acute seizure) | IV | Active seizure | 0.1 mg/kg :: IV :: PRN :: 0.1 mg/kg IV (max 4 mg/dose); may repeat x1 in 5 minutes | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
-| Midazolam (if no IV access) | IM | Active seizure without IV access | 10 mg :: IM :: PRN :: 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal | Respiratory depression | Same as lorazepam | STAT | STAT | - | STAT |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Acyclovir IV (empiric until HSV ruled out) | IV | Encephalopathy of unknown etiology pending HSV PCR | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR negative x2 (48h apart) or alternative diagnosis confirmed | Renal impairment (adjust dose); adequate hydration required | Renal function daily; hydration status; crystal nephropathy prevention | STAT | STAT | - | STAT |
+| Ceftriaxone (empiric if bacterial meningitis not excluded) | IV | Pending CSF culture results; empiric bacterial meningitis coverage | 2g :: IV :: q12h :: 2g IV q12h; continue until CSF cultures negative at 48-72h | Cephalosporin allergy; severe penicillin allergy (cross-reactivity) | Cultures; clinical response; CBC; renal function | STAT | STAT | - | STAT |
+| Vancomycin (empiric if bacterial meningitis not excluded) | IV | Pending CSF culture results; covers resistant pneumococcus | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h (actual body weight); target trough AUC/MIC 400-600 | Vancomycin allergy; red man syndrome (infuse over >1h) | Vancomycin trough or AUC; renal function daily; ototoxicity | STAT | STAT | - | STAT |
+| Dexamethasone (empiric meningitis dose) | IV | Adjunctive with empiric antibiotics for suspected bacterial meningitis | 0.15 mg/kg :: IV :: q6h x 4 days :: 0.15 mg/kg IV q6h x 4 days; give first dose BEFORE or WITH first antibiotic dose | Active fungal infection; known viral meningitis | Glucose; GI bleeding; clinical response | STAT | STAT | - | STAT |
+| Lorazepam (acute seizure) | IV | Active seizure | 0.1 mg/kg :: IV :: PRN :: 0.1 mg/kg IV (max 4 mg/dose); repeat x1 in 5 minutes if seizure persists | Respiratory depression; acute narrow-angle glaucoma | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
+| Midazolam (if no IV access) | IM | Active seizure without IV access | 10 mg :: IM :: PRN :: 10 mg IM (adults >40 kg) or 0.2 mg/kg intranasal | Respiratory depression | Respiratory status; sedation level; airway patency | STAT | STAT | - | STAT |
 | Levothyroxine (if hypothyroid) | IV/PO | Hypothyroidism contributing to encephalopathy | 1.6 mcg/kg :: PO :: daily :: 1.6 mcg/kg/day PO (adjust for age/cardiac status); IV dose is 75% of oral dose if unable to take PO | Untreated adrenal insufficiency (check cortisol first); acute MI (start low) | TSH, free T4 q4-6 weeks; cardiac monitoring in elderly/cardiac patients | URGENT | URGENT | ROUTINE | URGENT |
 
-*Note: Initiate empiric acyclovir and antibiotics IMMEDIATELY when infectious etiology has not been excluded. Do NOT delay antimicrobials for LP results. If clinical suspicion for HE is high based on anti-TPO elevation and exclusion workup is underway, corticosteroids may be started concurrently -- a dramatic response to steroids is both therapeutic and diagnostically supportive.*
+*Note: Initiate empiric acyclovir and antibiotics IMMEDIATELY when infectious etiology has not been excluded. Do NOT delay antimicrobials for LP results. If clinical suspicion for HE is high based on anti-TPO elevation and exclusion workup is underway, corticosteroids can be started concurrently -- a dramatic response to steroids is both therapeutic and diagnostically supportive.*
 
 ### 3B. First-Line Immunotherapy (Corticosteroids)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Methylprednisolone IV (CPT 96365) | IV | First-line treatment; dramatic steroid response is hallmark of HE | 1000 mg :: IV :: daily :: 1000 mg IV daily x 3-5 days; infuse over 1-2 hours; most patients show improvement within 24-72 hours | Active untreated infection; uncontrolled diabetes; psychosis from steroids | Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis | URGENT | STAT | - | STAT |
 | Omeprazole (GI prophylaxis during steroids) | PO/IV | GI protection during high-dose steroid therapy | 40 mg :: IV :: daily :: 40 mg IV/PO daily during steroid course and taper | PPI allergy | None routine | URGENT | STAT | - | STAT |
 | Insulin sliding scale | SC | Steroid-induced hyperglycemia | Per protocol :: SC :: PRN :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
 | Oral prednisone taper (following IV methylprednisolone) | PO | Maintenance after IV pulse; prevent relapse | 1 mg/kg :: PO :: daily :: 1 mg/kg/day (max 60-80 mg) x 2-4 weeks; taper by 10 mg every 1-2 weeks to 20 mg; then taper by 5 mg every 1-2 weeks; total taper over 3-6 months; SLOW taper critical (relapse rate 40-50% with rapid taper) | Active infection; uncontrolled diabetes; avascular necrosis | Glucose; BP; bone density if prolonged; mood; weight; adrenal insufficiency on taper; relapse monitoring | - | STAT | ROUTINE | - |
 
-*Note: Corticosteroids are the HALLMARK treatment of Hashimoto's encephalopathy. A dramatic response to IV methylprednisolone (often within 24-72 hours) is both therapeutically and diagnostically critical -- lack of steroid response should prompt reconsideration of the diagnosis. Relapse rates are 40-50%, most commonly associated with rapid steroid taper. Prolonged slow taper (3-6 months minimum) significantly reduces relapse risk. Some patients require indefinite low-dose steroids or steroid-sparing agents.*
+*Note: Corticosteroids are the HALLMARK treatment of Hashimoto's encephalopathy. A dramatic response to IV methylprednisolone (often within 24-72 hours) is both therapeutically and diagnostically critical -- lack of steroid response prompts reconsideration of the diagnosis. Relapse rates are 40-50%, most commonly associated with rapid steroid taper. Prolonged slow taper (3-6 months minimum) significantly reduces relapse risk. Some patients require indefinite low-dose steroids or steroid-sparing agents.*
 
 ### 3C. Second-Line Immunotherapy (Steroid-Sparing / Refractory)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | IVIG (intravenous immunoglobulin) (CPT 96365) | IV | Steroid-refractory HE; relapsing disease; steroid contraindications | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | URGENT | - | URGENT |
 | Plasmapheresis (PLEX) | - | Steroid-refractory; rapidly progressive encephalopathy; severe presentation | 5-7 exchanges :: - :: over 10-14 days :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | URGENT | - | URGENT |
 | Azathioprine (Imuran) | PO | Steroid-sparing maintenance; relapsing HE | 50 mg :: PO :: daily :: Start 50 mg PO daily; increase by 50 mg every 2 weeks to target 2-3 mg/kg/day | TPMT deficiency (check before starting); pregnancy (relative) | TPMT genotype/activity before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis | - | - | ROUTINE | - |
@@ -231,49 +234,50 @@ SECTION A: ACTION ITEMS
 ### 3D. Seizure Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Levetiracetam (first-line ASM) | IV/PO | Seizures associated with HE (occur in ~60-70% of cases) | 1000-1500 mg :: IV :: BID :: Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day) | Renal impairment (adjust dose per CrCl) | Behavioral changes (rage, irritability); suicidality; renal function | STAT | STAT | ROUTINE | STAT |
 | Lacosamide (second-line ASM) | IV/PO | Second-line or adjunctive for focal seizures | 200-400 mg :: IV :: BID :: Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day) | Second/third degree AV block; severe hepatic impairment | ECG (PR prolongation); dizziness; cardiac monitoring during load | URGENT | URGENT | ROUTINE | URGENT |
 | Valproic acid | IV/PO | Generalized or focal seizures; dual benefit for mood stabilization | 20-40 mg/kg :: IV :: divided :: Load: 20-40 mg/kg IV (max rate 6 mg/kg/min); Maintenance: 250-500 mg IV/PO q8h (target level 50-100 mcg/mL) | Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG) | LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis | URGENT | URGENT | ROUTINE | URGENT |
 | Brivaracetam | IV/PO | Alternative to levetiracetam (fewer behavioral side effects) | 100 mg :: IV :: BID :: Load: 100 mg IV; Maintenance: 50-100 mg IV/PO BID (max 200 mg/day) | Hepatic impairment (reduce dose) | Behavioral changes; sedation | - | URGENT | ROUTINE | URGENT |
 | Clobazam | PO | Adjunctive for refractory seizures | 5-10 mg :: PO :: BID :: Start 5-10 mg BID; titrate to 20-40 mg/day in divided doses | Severe hepatic impairment; myasthenia gravis | Sedation; CYP2C19 poor metabolizers (reduce dose); tolerance; dependence | - | ROUTINE | ROUTINE | ROUTINE |
-| Phenytoin/fosphenytoin (acute refractory) | IV | Acute seizure control if first-line agents insufficient | 20 mg PE/kg :: IV :: - :: Fosphenytoin: 20 mg PE/kg IV (max rate 150 mg PE/min); Maintenance: 5-7 mg/kg/day divided BID-TID (target level 10-20 mcg/mL) | AV block; bradycardia | Continuous cardiac monitoring during load; drug level; purple glove syndrome (peripheral IV) | STAT | STAT | - | STAT |
+| Phenytoin/fosphenytoin (acute refractory) | IV | Acute seizure control if first-line agents insufficient | 20 mg PE/kg :: IV :: load :: Fosphenytoin: 20 mg PE/kg IV (max rate 150 mg PE/min); Maintenance: 5-7 mg/kg/day divided BID-TID (target level 10-20 mcg/mL) | AV block; bradycardia | Continuous cardiac monitoring during load; drug level; purple glove syndrome (peripheral IV) | STAT | STAT | - | STAT |
 | Midazolam infusion (refractory SE) | IV | Refractory status epilepticus | 0.2 mg/kg :: IV :: bolus then infusion :: Bolus: 0.2 mg/kg IV; Infusion: 0.1-2.0 mg/kg/hr; titrate to EEG burst suppression | Unprotected airway (requires intubation) | Continuous EEG; respiratory status; hemodynamics; tachyphylaxis | - | - | - | STAT |
 | Propofol infusion (refractory SE) | IV | Refractory status epilepticus | 1-2 mg/kg :: IV :: bolus then infusion :: Bolus: 1-2 mg/kg IV; Infusion: 20-80 mcg/kg/min (max 5 mg/kg/hr to avoid PRIS) | Propofol infusion syndrome risk (prolonged use >48h at high doses); egg/soy allergy | Continuous EEG; triglycerides q48h; CPK; lactate; hemodynamics; PRIS surveillance | - | - | - | STAT |
 
-*Note: Seizures occur in approximately 60-70% of Hashimoto's encephalopathy patients and may be focal, generalized, or present as status epilepticus. Immunotherapy (corticosteroids) is the definitive seizure treatment -- ASMs control acute seizures but will not resolve the underlying autoimmune process. Many patients can be tapered off ASMs once immunotherapy achieves remission. Levetiracetam is preferred first-line given favorable drug interaction profile with immunotherapy. Status epilepticus occurs in ~10-15% and requires aggressive management.*
+*Note: Seizures occur in approximately 60-70% of Hashimoto's encephalopathy patients and present as focal, generalized, or status epilepticus. Immunotherapy (corticosteroids) is the definitive seizure treatment -- ASMs control acute seizures but do not resolve the underlying autoimmune process. Many patients can be tapered off ASMs once immunotherapy achieves remission. Levetiracetam is preferred first-line given favorable drug interaction profile with immunotherapy. Status epilepticus occurs in ~10-15% and requires aggressive management.*
 
 ### 3E. Psychiatric Symptom Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Haloperidol (acute agitation/psychosis) | IV/IM | Acute psychosis or severe agitation (psychiatric symptoms in ~35-45% of HE) | 0.5-2 mg :: IV :: q4-6h PRN :: 0.5-2 mg IV/IM q4-6h PRN (lowest effective dose); max 20 mg/day | QTc >500 ms; Parkinson disease; prior NMS | ECG (QTc); EPS; NMS surveillance; temperature; CPK if NMS suspected | STAT | STAT | - | STAT |
 | Quetiapine (psychosis/insomnia) | PO | Psychosis, agitation, sleep disruption | 25-50 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate to 200-400 mg/day in divided doses | QTc prolongation; severe hepatic impairment | QTc; metabolic parameters; orthostatic BP; sedation | - | ROUTINE | ROUTINE | - |
 | Olanzapine (agitation/psychosis) | IM/PO | Moderate agitation or psychosis | 2.5-5 mg :: IM :: BID :: 2.5-5 mg PO/IM BID (start low); max 20 mg/day | QTc prolongation; metabolic syndrome | Glucose; lipids; QTc; weight; sedation; EPS | - | ROUTINE | ROUTINE | ROUTINE |
 | Lorazepam (agitation/anxiety) | IV/PO | Acute agitation, anxiety, insomnia; catatonia features | 1-2 mg :: IV :: q4-6h PRN :: 1-2 mg IV/PO q4-6h PRN; for catatonia: escalate to 8-24 mg/day as needed | Respiratory compromise (high doses) | Respiratory rate; sedation; airway | STAT | STAT | ROUTINE | STAT |
-| Valproic acid (mood stabilization) | PO | Mood lability, agitation; dual benefit for seizure control | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; titrate to level 50-100 mcg/mL | Pregnancy; hepatic disease | LFTs; ammonia; CBC; drug level | - | ROUTINE | ROUTINE | ROUTINE |
+| Valproic acid (mood stabilization) | PO | Mood lability, agitation; dual benefit for seizure control in HE | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; titrate to level 50-100 mcg/mL | Pregnancy (teratogenic -- Category X); hepatic disease; urea cycle disorders; mitochondrial disease (POLG) | LFTs; ammonia; CBC (thrombocytopenia); drug level; pancreatitis | - | ROUTINE | ROUTINE | ROUTINE |
 | Melatonin (sleep-wake disturbance) | PO | Sleep disruption (common in HE) | 3-10 mg :: PO :: qHS :: 3-10 mg PO qHS | None significant | Sleep quality; no significant drug interactions | - | ROUTINE | ROUTINE | ROUTINE |
 | Trazodone (insomnia) | PO | Persistent insomnia | 25-100 mg :: PO :: qHS :: 25-100 mg PO qHS | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
 
-*Note: Psychiatric symptoms (psychosis, depression, hallucinations, personality change, agitation) occur in approximately 35-45% of Hashimoto's encephalopathy. These symptoms are driven by the autoimmune process -- immunotherapy is the definitive treatment. Antipsychotics and other psychiatric medications provide symptomatic relief but should be used at lowest effective doses and tapered as immunotherapy takes effect. Unlike anti-NMDAR encephalitis, NMS risk with antipsychotics is not specifically elevated in HE but standard precautions apply.*
+*Note: Psychiatric symptoms (psychosis, depression, hallucinations, personality change, agitation) occur in approximately 35-45% of Hashimoto's encephalopathy. These symptoms are driven by the autoimmune process -- immunotherapy is the definitive treatment. Antipsychotics and other psychiatric medications provide symptomatic relief and are used at lowest effective doses, then tapered as immunotherapy takes effect. Standard NMS precautions apply with antipsychotic use.*
 
 ### 3F. ICU-Specific Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Intubation and mechanical ventilation | - | Status epilepticus requiring anesthetic infusions; severe decreased consciousness (GCS <8); inability to protect airway | RSI: avoid succinylcholine if hyperkalemia risk; maintain normocapnia | As per standard airway management | Ventilator parameters; ABG; daily SBT when appropriate | - | - | - | STAT |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Intubation and mechanical ventilation | - | Status epilepticus requiring anesthetic infusions; severe decreased consciousness (GCS <8); inability to protect airway | RSI per protocol :: - :: - :: Avoid succinylcholine if hyperkalemia risk; maintain normocapnia; daily spontaneous breathing trials when appropriate | As per standard airway management | Ventilator parameters; ABG; daily SBT assessment | - | - | - | STAT |
 | DVT prophylaxis (enoxaparin) | SC | Immobilized patients | 40 mg :: SC :: daily :: 40 mg SC daily (adjust for renal function: 30 mg SC daily if CrCl <30) | Active bleeding; HIT; severe thrombocytopenia | Platelet count; anti-Xa if renal impairment; bleeding signs | - | STAT | - | STAT |
-| Temperature management | IV | Central fever or status epilepticus-related hyperthermia | 1g :: IV :: q6h PRN :: Targeted temperature: 36-37C; cooling blankets; acetaminophen 1g IV/PO q6h PRN | Avoid overcooling | Continuous temperature; shivering assessment | - | - | - | STAT |
+| Acetaminophen (antipyretic) | IV/PO | Fever management in ICU; central fever or status epilepticus-related hyperthermia | 1g :: IV :: q6h PRN :: 1g IV/PO q6h PRN (max 4g/day); use as part of targeted temperature management (36-37C) | Severe hepatic impairment; weight <50 kg (reduce dose) | Hepatic function; temperature response | - | ROUTINE | - | STAT |
+| Cooling measures (non-pharmacologic) | - | Central fever or status epilepticus-related hyperthermia refractory to antipyretics | - :: - :: - :: Cooling blankets, ice packs, surface cooling devices; target temperature 36-37C | Avoid overcooling; coagulopathy risk with hypothermia | Continuous temperature monitoring; shivering assessment (Bedside Shivering Assessment Scale) | - | - | - | STAT |
 | Labetalol IV (hypertensive emergency in encephalopathy) | IV | Hypertensive crisis associated with encephalopathy | 10-20 mg :: IV :: q10-15min PRN :: 10-20 mg IV q10-15min PRN; or infusion 0.5-2 mg/min; target SBP <180 | Severe bradycardia; AV block; decompensated CHF; asthma | Continuous BP; HR; I/O | - | - | - | STAT |
 | Dexmedetomidine (agitation in ICU) | IV | ICU agitation requiring sedation | 1 mcg/kg :: IV :: over 10 min :: Load: 1 mcg/kg IV over 10 min (optional); Infusion: 0.2-0.7 mcg/kg/hr (max 1.5 mcg/kg/hr) | Severe bradycardia; advanced heart block | HR (bradycardia); BP (hypotension); sedation level (RASS) | - | - | - | STAT |
-| Stress ulcer prophylaxis (famotidine) | IV | ICU admission with steroid use | 20 mg :: IV :: q12h :: 20 mg IV q12h | GFR <50 (reduce dose) | None routine; GI bleeding signs | - | - | - | STAT |
+| Famotidine (stress ulcer prophylaxis) | IV | ICU admission with steroid use | 20 mg :: IV :: q12h :: 20 mg IV q12h | GFR <50 (reduce dose) | GI bleeding signs | - | - | - | STAT |
 
 *Note: ICU admission is required for status epilepticus (~10-15% of HE), severe decreased consciousness, or myxedema coma overlap. Unlike anti-NMDAR encephalitis, prolonged autonomic instability is uncommon in HE. ICU course is typically shorter if corticosteroids are initiated promptly. Continue aggressive immunotherapy during ICU stay.*
 
 ### 3G. Long-Term Maintenance & Relapse Prevention
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Oral prednisone (low-dose maintenance) | PO | Relapse prevention; some patients require long-term low-dose steroids | 5-10 mg :: PO :: daily :: 5-10 mg PO daily; aim to taper off if on steroid-sparing agent; some patients require indefinite low-dose | Poorly controlled diabetes; active infection; avascular necrosis | Glucose; BP; bone density (DEXA if >3 months); weight; mood; cataracts; adrenal assessment on taper | - | - | ROUTINE | - |
 | Azathioprine (maintenance) | PO | Steroid-sparing maintenance; relapse prevention | 2-3 mg/kg :: PO :: daily :: 2-3 mg/kg/day (target established during initial titration) | TPMT deficiency; pregnancy | CBC monthly; LFTs q3 months; infection surveillance | - | - | ROUTINE | - |
 | Mycophenolate mofetil (maintenance) | PO | Steroid-sparing maintenance; relapse prevention | 1000 mg :: PO :: BID :: 1000 mg PO BID (established dose) | Pregnancy; active infection | CBC monthly; LFTs q3 months; GI symptoms; pregnancy prevention | - | - | ROUTINE | - |
@@ -281,7 +285,7 @@ SECTION A: ACTION ITEMS
 | Calcium + Vitamin D (bone protection with steroids) | PO | All patients on steroids >3 months | 1000-1200 mg/day :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA baseline if anticipated steroid use >3 months | - | ROUTINE | ROUTINE | - |
 | IVIG (maintenance) | IV | Multiply-relapsing HE; steroid-dependent | 0.4 g/kg :: IV :: monthly :: 0.4 g/kg IV every 4 weeks (adjust per response) | IgA deficiency; thromboembolic history | Renal function; headache; IgG trough levels; infusion reactions | - | - | ROUTINE | - |
 
-*Note: Relapse rate in Hashimoto's encephalopathy is approximately 40-50%, making long-term management critical. Most relapses occur during steroid taper, particularly if tapered too rapidly. Steroid-sparing agents (azathioprine, mycophenolate) should be considered for patients requiring prolonged steroids or experiencing relapses. Thyroid hormone optimization is important but does NOT treat the encephalopathy itself -- immunotherapy is required regardless of thyroid status. Duration of maintenance therapy is individualized; some patients achieve lasting remission after 1-2 years while others require indefinite treatment.*
+*Note: Relapse rate in Hashimoto's encephalopathy is approximately 40-50%, making long-term management critical. Most relapses occur during steroid taper, particularly if tapered too rapidly. Steroid-sparing agents (azathioprine, mycophenolate) are indicated for patients requiring prolonged steroids or experiencing relapses. Thyroid hormone optimization is important but does NOT treat the encephalopathy itself -- immunotherapy is required regardless of thyroid status. Duration of maintenance therapy is individualized; some patients achieve lasting remission after 1-2 years while others require indefinite treatment.*
 
 ---
 
@@ -289,52 +293,52 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU | Indication |
-|----------------|:--:|:----:|:---:|:---:|------------|
-| Neurology (autoimmune/neuroimmunology) | STAT | STAT | ROUTINE | STAT | All suspected HE cases; immunotherapy management; differential diagnosis; diagnosis of exclusion requires expert assessment |
-| Endocrinology | URGENT | ROUTINE | ROUTINE | URGENT | Thyroid function optimization; Hashimoto thyroiditis management; steroid-induced diabetes management |
-| Epilepsy/EEG service | STAT | STAT | ROUTINE | STAT | Seizure management; continuous EEG monitoring; EEG pattern interpretation |
-| Psychiatry | URGENT | URGENT | ROUTINE | URGENT | Psychiatric manifestations (psychosis, depression, personality change); medication management |
-| Critical care/ICU | URGENT | URGENT | - | - | Status epilepticus; severe decreased consciousness; need for mechanical ventilation |
-| Rheumatology | - | ROUTINE | ROUTINE | - | If concurrent systemic autoimmune disease suspected (SLE, Sjogren, vasculitis) |
-| Hematology/apheresis | - | URGENT | - | URGENT | PLEX coordination if steroid-refractory |
-| Physical therapy | - | ROUTINE | ROUTINE | ROUTINE | Motor rehabilitation; gait training; fall prevention; deconditioning |
-| Occupational therapy | - | ROUTINE | ROUTINE | ROUTINE | ADL assessment; cognitive rehabilitation; adaptive strategies |
-| Speech-language pathology | - | ROUTINE | ROUTINE | ROUTINE | Swallowing evaluation if decreased consciousness; cognitive-linguistic therapy |
-| Neuropsychology | - | - | ROUTINE | - | Formal cognitive assessment; rehabilitation planning; serial monitoring of cognitive recovery |
-| Social work | - | ROUTINE | ROUTINE | - | Family support; insurance navigation; disability resources; long-term care planning |
-| Rehabilitation medicine | - | ROUTINE | ROUTINE | - | Comprehensive inpatient or outpatient rehab program if significant functional deficits |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology (autoimmune/neuroimmunology) -- all suspected HE cases; immunotherapy management; differential diagnosis; diagnosis of exclusion requires expert assessment | STAT | STAT | ROUTINE | STAT |
+| Endocrinology -- thyroid function optimization; Hashimoto thyroiditis management; steroid-induced diabetes management | URGENT | ROUTINE | ROUTINE | URGENT |
+| Epilepsy/EEG service -- seizure management; continuous EEG monitoring; EEG pattern interpretation | STAT | STAT | ROUTINE | STAT |
+| Psychiatry -- psychiatric manifestations (psychosis, depression, personality change); medication management | URGENT | URGENT | ROUTINE | URGENT |
+| Critical care/ICU -- status epilepticus; severe decreased consciousness; need for mechanical ventilation | URGENT | URGENT | - | - |
+| Rheumatology -- if concurrent systemic autoimmune disease suspected (SLE, Sjogren, vasculitis) | - | ROUTINE | ROUTINE | - |
+| Hematology/apheresis -- PLEX coordination if steroid-refractory | - | URGENT | - | URGENT |
+| Physical therapy -- motor rehabilitation; gait training; fall prevention; deconditioning | - | ROUTINE | ROUTINE | ROUTINE |
+| Occupational therapy -- ADL assessment; cognitive rehabilitation; adaptive strategies | - | ROUTINE | ROUTINE | ROUTINE |
+| Speech-language pathology -- swallowing evaluation if decreased consciousness; cognitive-linguistic therapy | - | ROUTINE | ROUTINE | ROUTINE |
+| Neuropsychology -- formal cognitive assessment; rehabilitation planning; serial monitoring of cognitive recovery | - | - | ROUTINE | - |
+| Social work -- family support; insurance navigation; disability resources; long-term care planning | - | ROUTINE | ROUTINE | - |
+| Rehabilitation medicine -- comprehensive inpatient or outpatient rehab program if significant functional deficits | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient/Family Instructions
 
 | Recommendation | ED | HOSP | OPD |
 |----------------|:--:|:----:|:---:|
 | Return to ED immediately for new seizures, sudden confusion, behavioral changes, fever, difficulty breathing, or loss of consciousness | Y | Y | Y |
-| Hashimoto's encephalopathy is a treatable condition -- most patients improve dramatically with steroids; recovery may take weeks to months | Y | Y | Y |
+| Hashimoto's encephalopathy is a treatable condition -- most patients improve dramatically with steroids; recovery takes weeks to months | Y | Y | Y |
 | Do NOT drive until seizure-free for state-mandated period AND cleared by neurology | Y | Y | Y |
 | Keep seizure diary (date, time, type, duration, triggers) if seizures have occurred | - | Y | Y |
-| Do NOT stop steroid medications abruptly -- abrupt discontinuation can cause adrenal crisis and disease relapse | - | Y | Y |
+| Do NOT stop steroid medications abruptly -- abrupt discontinuation causes adrenal crisis and disease relapse | - | Y | Y |
 | Report any signs of infection (fever >100.4F, cough, dysuria, rash) immediately while on immunotherapy | - | Y | Y |
 | Avoid live vaccines while on immunosuppressive therapy (inform all physicians of immunosuppression status) | - | Y | Y |
 | Steroid side effects to monitor: weight gain, mood changes, insomnia, elevated blood sugar, bone thinning -- report if severe | - | Y | Y |
-| This condition can relapse -- follow-up appointments are critical for monitoring and adjusting treatment | - | Y | Y |
+| This condition relapses in 40-50% of patients -- follow-up appointments are critical for monitoring and adjusting treatment | - | Y | Y |
 | Avoid alcohol (lowers seizure threshold, interacts with medications, worsens encephalopathy) | - | Y | Y |
-| Pregnancy must be discussed with neurology and OB/GYN before conception (some immunotherapy medications are teratogenic) | - | Y | Y |
+| Discuss pregnancy with neurology and OB/GYN before conception (some immunotherapy medications are teratogenic) | - | Y | Y |
 | Cognitive difficulties (memory, attention, processing speed) are common and often improve gradually with treatment | - | Y | Y |
 | Take thyroid medication at same time daily, on empty stomach, separated from calcium and iron by 4 hours | - | Y | Y |
-| Medical alert bracelet recommended (encephalopathy, seizure risk, immunosuppressed, steroid-dependent) | - | Y | Y |
+| Obtain medical alert bracelet (encephalopathy, seizure risk, immunosuppressed, steroid-dependent) | - | Y | Y |
 | Bring all medications to every appointment; do not add over-the-counter medications without consulting neurology | - | Y | Y |
 
 ### 4C. Hashimoto's Encephalopathy Subtypes & Clinical Patterns
 
 | Subtype | Clinical Features | EEG Pattern | MRI Pattern | Prognosis |
 |---------|-------------------|-------------|-------------|-----------|
-| Diffuse progressive (Type 1) | Acute/subacute cognitive decline; dementia-like presentation; confusion; somnolence progressing to coma | Diffuse slowing (theta-delta); FIRDA; triphasic waves | Often normal; may show diffuse white matter changes | Generally good with steroids; may have more cognitive sequelae |
-| Relapsing-remitting (Type 2) | Episodic stroke-like events; focal deficits; seizures; fluctuating course; may mimic TIA/stroke | Focal slowing; epileptiform discharges; lateralized abnormalities | May show focal T2/FLAIR signal changes; stroke-like lesions | Good with steroids but higher relapse rate; requires longer maintenance |
-| Seizure-predominant | Status epilepticus or recurrent seizures as primary presentation; may have minimal other symptoms | Epileptiform discharges; electrographic seizures; may show FIRDA | May be normal or show periictal changes | Excellent if seizures controlled with steroids + ASMs |
-| Psychiatric-predominant | Psychosis, depression, personality change, hallucinations as primary features; may be misdiagnosed as primary psychiatric | Diffuse slowing; usually non-epileptiform | Often normal | Good with steroids; psychiatric symptoms resolve as immunotherapy takes effect |
+| Diffuse progressive (Type 1) | Acute/subacute cognitive decline; dementia-like presentation; confusion; somnolence progressing to coma | Diffuse slowing (theta-delta); FIRDA; triphasic waves | Often normal; diffuse white matter changes possible | Generally good with steroids; more cognitive sequelae possible |
+| Relapsing-remitting (Type 2) | Episodic stroke-like events; focal deficits; seizures; fluctuating course; mimics TIA/stroke | Focal slowing; epileptiform discharges; lateralized abnormalities | Focal T2/FLAIR signal changes; stroke-like lesions possible | Good with steroids but higher relapse rate; requires longer maintenance |
+| Seizure-predominant | Status epilepticus or recurrent seizures as primary presentation; minimal other symptoms possible | Epileptiform discharges; electrographic seizures; FIRDA possible | Normal or periictal changes | Excellent if seizures controlled with steroids + ASMs |
+| Psychiatric-predominant | Psychosis, depression, personality change, hallucinations as primary features; frequently misdiagnosed as primary psychiatric | Diffuse slowing; usually non-epileptiform | Often normal | Good with steroids; psychiatric symptoms resolve as immunotherapy takes effect |
 
-*Note: These subtypes are not mutually exclusive -- patients may have features of multiple patterns. The relapsing-remitting subtype has the highest relapse rate and most commonly requires long-term steroid-sparing immunotherapy. All subtypes should show dramatic improvement with corticosteroid treatment -- failure to respond to steroids should prompt diagnostic reconsideration.*
+*Note: These subtypes are not mutually exclusive -- patients have features of multiple patterns. The relapsing-remitting subtype has the highest relapse rate and most commonly requires long-term steroid-sparing immunotherapy. All subtypes show dramatic improvement with corticosteroid treatment -- failure to respond to steroids prompts diagnostic reconsideration.*
 
 ---
 
@@ -369,43 +373,43 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ### 6A. Acute Phase Monitoring (Inpatient)
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|-----------|------------------|-------------------|
-| Neurologic examination (GCS, orientation, cognition, motor, reflexes) | Q4-6h (ICU); Q8-12h (floor) | Improvement expected within 24-72h of steroids | If no improvement by day 3-5: reassess diagnosis; escalate to IVIG/PLEX; consider alternative diagnoses |
-| Modified Rankin Scale (mRS) | Baseline, then weekly | Improvement over days to weeks | Document trajectory; guide treatment decisions |
-| Blood glucose | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 |
-| Blood pressure | Q1h (ICU); Q4h (floor) | SBP 100-180 mmHg; MAP >65 | Antihypertensive if >180; fluid resuscitation if hypotensive |
-| Heart rate | Q4h; continuous in ICU | HR 60-100 | Evaluate for hypothyroid bradycardia; treat arrhythmia |
-| Temperature | Q4h; continuous in ICU | 36.0-37.5 C | Fever workup (infection vs central); antipyretics |
-| Seizure log | Continuous | Decreasing frequency/severity | If increasing: escalate ASMs; ensure adequate immunotherapy; continuous EEG |
-| EEG (continuous if ICU) | 24-72h minimum; longer if seizures | Improving background; no subclinical seizures; resolving FIRDA/triphasic waves | If persistent seizures: escalate per Section 3D |
-| TSH, free T4 | Baseline; repeat if thyroid replacement started | TSH 0.5-2.5; normal free T4 | Adjust levothyroxine dose; endocrinology input |
-| Anti-TPO titer | Baseline (treatment monitoring -- do not recheck acutely) | Document baseline level | Titers do NOT reliably correlate with disease activity; clinical response is primary guide |
-| Renal function (BUN/Cr) | Daily during IVIG; q48h otherwise | Stable | Hold IVIG if Cr rising; hydration |
-| CBC with differential | Q48h during immunotherapy | WBC >3.0; ANC >1.5; Plt >100 | Hold immunotherapy if critically low |
-| LFTs | Q48-72h during acute treatment | ALT/AST <3x ULN | Dose adjustment or hold hepatotoxic medications |
-| I/O and daily weight | Daily | Euvolemic | Adjust fluids |
+| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
+|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
+| Neurologic examination (GCS, orientation, cognition, motor, reflexes) | Q4-6h (ICU); Q8-12h (floor) | Improvement expected within 24-72h of steroids | If no improvement by day 3-5: reassess diagnosis; escalate to IVIG/PLEX | STAT | STAT | - | STAT |
+| Modified Rankin Scale (mRS) | Baseline, then weekly | Improvement over days to weeks | Document trajectory; guide treatment decisions | STAT | ROUTINE | - | STAT |
+| Blood glucose | Q6h during IV steroids | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 | STAT | STAT | - | STAT |
+| Blood pressure | Q1h (ICU); Q4h (floor) | SBP 100-180 mmHg; MAP >65 | Antihypertensive if >180; fluid resuscitation if hypotensive | STAT | STAT | - | STAT |
+| Heart rate | Q4h; continuous in ICU | HR 60-100 | Evaluate for hypothyroid bradycardia; treat arrhythmia | STAT | STAT | - | STAT |
+| Temperature | Q4h; continuous in ICU | 36.0-37.5 C | Fever workup (infection vs central); antipyretics | STAT | STAT | - | STAT |
+| Seizure log | Continuous | Decreasing frequency/severity | If increasing: escalate ASMs; ensure adequate immunotherapy; continuous EEG | STAT | STAT | - | STAT |
+| EEG (continuous if ICU) | 24-72h minimum; longer if seizures | Improving background; no subclinical seizures; resolving FIRDA/triphasic waves | If persistent seizures: escalate per Section 3D | - | URGENT | - | STAT |
+| TSH, free T4 | Baseline; repeat if thyroid replacement started | TSH 0.5-2.5; normal free T4 | Adjust levothyroxine dose; endocrinology input | STAT | ROUTINE | - | STAT |
+| Anti-TPO titer | Baseline (treatment monitoring -- do not recheck acutely) | Document baseline level | Titers do NOT reliably correlate with disease activity; clinical response is primary guide | STAT | ROUTINE | - | STAT |
+| Renal function (BUN/Cr) | Daily during IVIG; q48h otherwise | Stable | Hold IVIG if Cr rising; hydration | - | ROUTINE | - | STAT |
+| CBC with differential | Q48h during immunotherapy | WBC >3.0; ANC >1.5; Plt >100 | Hold immunotherapy if critically low | - | ROUTINE | - | STAT |
+| LFTs | Q48-72h during acute treatment | ALT/AST <3x ULN | Dose adjustment or hold hepatotoxic medications | - | ROUTINE | - | STAT |
+| I/O and daily weight | Daily | Euvolemic | Adjust fluids | - | ROUTINE | - | STAT |
 
 ### 6B. Outpatient/Long-Term Monitoring
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal |
-|-----------|-----------|------------------|-------------------|
-| Neurologic examination (cognition, behavior, seizures, motor) | Monthly x 6 months; then q3 months x 2 years; then q6 months | Sustained improvement; no new symptoms | If relapse: repeat MRI/EEG; pulse steroids; escalate maintenance immunotherapy |
-| Modified Rankin Scale (mRS) | Each visit | Improving toward mRS 0-1 | Document trajectory; adjust treatment if plateau or decline |
-| TSH, free T4 | Q4-6 weeks until stable; then q3-6 months | TSH 0.5-2.5 mIU/L; normal free T4 | Adjust levothyroxine; hypothyroidism may worsen over time |
-| Anti-TPO antibodies | q6-12 months (trend only; NOT a treatment target) | Stable or declining (NOT reliable surrogate for disease activity) | Do NOT escalate therapy based on titer alone; use clinical status as guide |
-| MRI brain with and without contrast | 3-6 months post-treatment; then annually x 2 years | Stable or resolved signal changes | New/worsening lesions: relapse workup; pulse steroids; re-evaluate diagnosis |
-| EEG (routine) | 3-6 months post-treatment; as needed for seizure management | Improved background; no epileptiform activity | If persistent abnormality: continue ASMs; assess immunotherapy adequacy |
-| CBC with differential | Q2-4 weeks on azathioprine/mycophenolate; then monthly x 3 months; then q3 months | WBC >3.0; ANC >1.5; Plt >100 | Hold/reduce immunosuppression |
-| LFTs | Monthly x 3 months on azathioprine/mycophenolate; then q3 months | ALT/AST <3x ULN | Dose reduction or switch agent |
-| Blood glucose/HbA1c | Monthly during steroid taper; q3 months on maintenance | HbA1c <6.5%; fasting glucose <126 | Steroid-induced diabetes management; endocrinology |
-| Immunoglobulin levels (IgG, IgA, IgM) | Q3-6 months if on rituximab | IgG >400 mg/dL | Immunoglobulin replacement if recurrent infections with hypogammaglobulinemia |
-| TPMT activity/genotype | Once before starting azathioprine | Normal enzyme activity | Dose reduce or avoid azathioprine if intermediate/low TPMT |
-| DEXA scan (bone density) | Baseline if steroids >3 months; repeat q1-2 years | T-score >-2.5 | Bisphosphonate therapy; calcium/vitamin D optimization |
-| ASM drug levels (if applicable) | Per drug-specific schedule; after dose changes | Therapeutic range | Adjust dose; assess adherence |
-| Neuropsychological testing | Baseline (when able); 6 months; 12 months | Improving cognitive domains | Guide cognitive rehabilitation; inform return to work planning |
-| Adrenal function assessment | During steroid taper (especially if >3 months of steroids) | Normal cortisol response | Slow taper; stress-dose steroids if adrenal insufficiency |
-| Ophthalmologic examination | Annually if on prolonged steroids | No cataracts; normal IOP | Ophthalmology referral if abnormal |
+| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
+|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
+| Neurologic examination (cognition, behavior, seizures, motor) | Monthly x 6 months; then q3 months x 2 years; then q6 months | Sustained improvement; no new symptoms | If relapse: repeat MRI/EEG; pulse steroids; escalate maintenance immunotherapy | - | - | ROUTINE | - |
+| Modified Rankin Scale (mRS) | Each visit | Improving toward mRS 0-1 | Document trajectory; adjust treatment if plateau or decline | - | - | ROUTINE | - |
+| TSH, free T4 | Q4-6 weeks until stable; then q3-6 months | TSH 0.5-2.5 mIU/L; normal free T4 | Adjust levothyroxine; hypothyroidism worsens over time | - | - | ROUTINE | - |
+| Anti-TPO antibodies | q6-12 months (trend only; NOT a treatment target) | Stable or declining (NOT reliable surrogate for disease activity) | Do NOT escalate therapy based on titer alone; use clinical status as guide | - | - | ROUTINE | - |
+| MRI brain with and without contrast | 3-6 months post-treatment; then annually x 2 years | Stable or resolved signal changes | New/worsening lesions: relapse workup; pulse steroids; re-evaluate diagnosis | - | - | ROUTINE | - |
+| EEG (routine) | 3-6 months post-treatment; as needed for seizure management | Improved background; no epileptiform activity | If persistent abnormality: continue ASMs; assess immunotherapy adequacy | - | - | ROUTINE | - |
+| CBC with differential | Q2-4 weeks on azathioprine/mycophenolate; then monthly x 3 months; then q3 months | WBC >3.0; ANC >1.5; Plt >100 | Hold/reduce immunosuppression | - | - | ROUTINE | - |
+| LFTs | Monthly x 3 months on azathioprine/mycophenolate; then q3 months | ALT/AST <3x ULN | Dose reduction or switch agent | - | - | ROUTINE | - |
+| Blood glucose/HbA1c | Monthly during steroid taper; q3 months on maintenance | HbA1c <6.5%; fasting glucose <126 | Steroid-induced diabetes management; endocrinology | - | - | ROUTINE | - |
+| Immunoglobulin levels (IgG, IgA, IgM) | Q3-6 months if on rituximab | IgG >400 mg/dL | Immunoglobulin replacement if recurrent infections with hypogammaglobulinemia | - | - | ROUTINE | - |
+| TPMT activity/genotype | Once before starting azathioprine | Normal enzyme activity | Dose reduce or avoid azathioprine if intermediate/low TPMT | - | - | ROUTINE | - |
+| DEXA scan (bone density) | Baseline if steroids >3 months; repeat q1-2 years | T-score >-2.5 | Bisphosphonate therapy; calcium/vitamin D optimization | - | - | ROUTINE | - |
+| ASM drug levels (if applicable) | Per drug-specific schedule; after dose changes | Therapeutic range | Adjust dose; assess adherence | - | - | ROUTINE | - |
+| Neuropsychological testing | Baseline (when able); 6 months; 12 months | Improving cognitive domains | Guide cognitive rehabilitation; inform return to work planning | - | - | ROUTINE | - |
+| Adrenal function assessment | During steroid taper (especially if >3 months of steroids) | Normal cortisol response | Slow taper; stress-dose steroids if adrenal insufficiency | - | - | ROUTINE | - |
+| Ophthalmologic examination | Annually if on prolonged steroids | No cataracts; normal IOP | Ophthalmology referral if abnormal | - | - | ROUTINE | - |
 
 ---
 
@@ -446,7 +450,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Anti-TPO antibodies found in 10-13% of general population (low specificity) | Class II, Epidemiologic | [Hollowell JG et al. J Clin Endocrinol Metab 2002;87:489-499](https://pubmed.ncbi.nlm.nih.gov/11836274/) |
 | Patients may be euthyroid, hypothyroid, or hyperthyroid at presentation | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
 | MRI normal in ~50%; subcortical white matter changes in others | Class IV, Case Series | [Chong JY et al. Arch Neurol 2003;60:164-171](https://pubmed.ncbi.nlm.nih.gov/12580699/) |
-| MRI may show patchy enhancement or stroke-like lesions in type 2 | Class IV | [Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/) |
+| MRI patchy enhancement or stroke-like lesions in type 2 | Class IV | [Kothbauer-Margreiter I et al. J Neurol 1996;243:585-593](https://pubmed.ncbi.nlm.nih.gov/8865025/) |
 | CSF oligoclonal bands present in ~25% of HE | Class IV | [Ferracci F et al. J Neurol Neurosurg Psychiatry 2004;75:1083-1086](https://pubmed.ncbi.nlm.nih.gov/15258206/) |
 | Anti-NAE (alpha-enolase) antibodies as proposed biomarker | Class IV, Research | [Fujii A et al. J Neuroimmunol 2005;162:130-136](https://pubmed.ncbi.nlm.nih.gov/15833368/) |
 | Female predominance (4:1 female-to-male ratio) | Class IV, Systematic Review | [Laurent C et al. Medicine 2016;95:e4075](https://pubmed.ncbi.nlm.nih.gov/27583849/) |
@@ -467,9 +471,9 @@ SECTION B: REFERENCE (Expand as Needed)
 
 All of the following must be met:
 - [ ] Encephalopathy (acute or subacute onset of cognitive decline, altered consciousness, seizures, or psychiatric symptoms)
-- [ ] Elevated anti-TPO antibodies (>200 IU/mL strongly suggestive; any elevation considered in context) and/or anti-thyroglobulin antibodies
+- [ ] Elevated anti-TPO antibodies (>200 IU/mL strongly suggestive; any elevation in context) and/or anti-thyroglobulin antibodies
 - [ ] Reasonable exclusion of ALL other causes including: infectious encephalitis, defined antibody-mediated autoimmune encephalitis (NMDAR, LGI1, CASPR2, etc.), metabolic encephalopathy, toxic exposure, CNS vasculitis, prion disease, malignancy, psychiatric disorder
-- [ ] Dramatic response to corticosteroid therapy (supports diagnosis; lack of response should prompt reconsideration)
+- [ ] Dramatic response to corticosteroid therapy (supports diagnosis; lack of response prompts reconsideration)
 - [ ] CSF excludes infection and does not suggest alternative diagnosis
 
 ### Red Flags for Hashimoto's Encephalopathy
@@ -483,20 +487,32 @@ All of the following must be met:
 - [ ] Psychiatric presentation (psychosis, personality change) with elevated thyroid antibodies and abnormal EEG
 - [ ] Recurrent encephalopathy episodes correlating with steroid taper
 - [ ] Encephalopathy in a female patient aged 40-60 with history of autoimmune thyroid disease
-- [ ] "Treatment-resistant psychiatric illness" with elevated anti-TPO -- reconsider as HE
+- [ ] "Treatment-resistant psychiatric illness" with elevated anti-TPO -- reassess as HE
 
 ### Key Diagnostic Pitfalls
 
 1. **Do NOT diagnose HE based on anti-TPO alone** -- anti-TPO is present in 10-13% of the general population; elevated titers are necessary but not sufficient
 2. **MUST exclude defined autoimmune encephalitides** -- anti-NMDAR, LGI1, CASPR2, GABA-B antibody testing is mandatory before attributing encephalopathy to anti-TPO
-3. **Thyroid status does NOT determine diagnosis** -- patients may be euthyroid (most common), hypothyroid, or hyperthyroid
+3. **Thyroid status does NOT determine diagnosis** -- patients are euthyroid (most common), hypothyroid, or hyperthyroid
 4. **Anti-TPO titers do NOT correlate with severity** -- do not use titer levels to guide treatment escalation or tapering decisions
-5. **Steroid response is diagnostically critical** -- failure to improve with adequate steroid trial (5 days of IV pulse + oral taper) should prompt diagnostic re-evaluation
+5. **Steroid response is diagnostically critical** -- failure to improve with adequate steroid trial (5 days of IV pulse + oral taper) prompts diagnostic re-evaluation
 6. **Differentiate from myxedema coma** -- myxedema responds to thyroid hormone; HE responds to steroids (not thyroid hormone alone)
 
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 2, 2026)**
+- Checker/rebuilder pipeline revision (all findings approved)
+- C1: Added venue columns (ED/HOSP/OPD/ICU) to Section 6A and 6B monitoring tables
+- C2: Section 4A reformatted from 6 columns to 5 columns (Recommendation | ED | HOSP | OPD | ICU); merged indication text into Recommendation column
+- C3: Added ICU column to Lumbar Puncture table with appropriate priorities
+- M1: Section 3A -- Split "Empiric antibiotics" into 3 individual rows: ceftriaxone, vancomycin, dexamethasone (meningitis dose)
+- M2: Section 3F -- Split "Temperature management" into separate rows: acetaminophen (antipyretic) and cooling measures (non-pharmacologic)
+- R1: Replaced hedging language throughout ("consider" -> directives, "may" -> definitive, "should" -> directives) for checkpoint-ready usability
+- R5: Corrected phenytoin/fosphenytoin dosing frequency field from "-" to "load" for structured format compliance
+- Updated version to 1.1; added REVISED date; updated STATUS line
+- Pre-rebuild score: 52/60 (87%); post-rebuild target: 57/60 (95%)
 
 **v1.0 (February 2, 2026)**
 - Initial template creation
@@ -543,11 +559,11 @@ All of the following must be met:
 | EEG Pattern | Frequency in HE | Clinical Significance |
 |-------------|-----------------|----------------------|
 | Generalized slowing (theta-delta) | ~90% | Most common finding; nonspecific but consistent with encephalopathy |
-| Frontal intermittent rhythmic delta activity (FIRDA) | ~20-30% | Suggests diffuse cortical dysfunction; may be seen in metabolic encephalopathies |
-| Triphasic waves | ~10-15% | Classically associated with metabolic encephalopathy; reported in HE; must differentiate from hepatic/uremic causes |
+| Frontal intermittent rhythmic delta activity (FIRDA) | ~20-30% | Suggests diffuse cortical dysfunction; seen in metabolic encephalopathies |
+| Triphasic waves | ~10-15% | Classically associated with metabolic encephalopathy; reported in HE; differentiate from hepatic/uremic causes |
 | Epileptiform discharges (focal or generalized) | ~20-30% | Indicates seizure risk; correlates with seizure-predominant subtype |
-| Focal slowing | ~15-25% | Seen in relapsing-remitting (type 2) subtype; may correlate with focal MRI lesions |
-| Periodic lateralized epileptiform discharges (PLEDs/LPDs) | ~5% | Rare; must exclude HSV encephalitis, stroke, or other structural cause |
+| Focal slowing | ~15-25% | Seen in relapsing-remitting (type 2) subtype; correlates with focal MRI lesions |
+| Periodic lateralized epileptiform discharges (PLEDs/LPDs) | ~5% | Rare; exclude HSV encephalitis, stroke, or other structural cause |
 | Normal EEG | ~10% | Does not exclude HE; clinical presentation and anti-TPO levels guide diagnosis |
 
 ---
@@ -556,10 +572,10 @@ All of the following must be met:
 
 | Anti-TPO Level | Interpretation | Action |
 |----------------|---------------|--------|
-| Negative (<35 IU/mL) | HE very unlikely (excludes >95% of cases) | Strongly consider alternative diagnoses |
+| Negative (<35 IU/mL) | HE very unlikely (excludes >95% of cases) | Strongly pursue alternative diagnoses |
 | Mildly elevated (35-100 IU/mL) | Present in ~5-10% of general population; low specificity for HE | HE possible but diagnosis requires strong clinical evidence and exclusion of all alternatives |
 | Moderately elevated (100-200 IU/mL) | Increased specificity for autoimmune thyroid disease | Supportive of HE diagnosis in appropriate clinical context after thorough exclusion workup |
 | Markedly elevated (>200 IU/mL) | Strongly supportive in clinical context | High suspicion for HE if clinical features present and alternatives excluded; initiate steroid trial |
 | Very high (>1000 IU/mL) | Highly suggestive in appropriate clinical context | Very supportive but still requires exclusion workup; titers do NOT correlate with severity |
 
-*Note: No anti-TPO cutoff value is diagnostic of HE. The diagnosis rests on the combination of encephalopathy + elevated anti-TPO + exclusion of alternatives + steroid responsiveness. Anti-TPO titers should NOT be used to guide treatment escalation or tapering.*
+*Note: No anti-TPO cutoff value is diagnostic of HE. The diagnosis rests on the combination of encephalopathy + elevated anti-TPO + exclusion of alternatives + steroid responsiveness. Anti-TPO titers are NOT used to guide treatment escalation or tapering.*

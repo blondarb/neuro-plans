@@ -25,7 +25,7 @@ tags:
 **VERSION:** 1.1
 **CREATED:** February 2, 2026
 **REVISED:** February 2, 2026
-**STATUS:** Revised per checker validation (v1.1)
+**STATUS:** Revised per checker/rebuilder validation (v1.1)
 
 ---
 
@@ -119,10 +119,10 @@ SECTION A: ACTION ITEMS
 | MRI brain with/without contrast (CPT 70553) | URGENT | URGENT | URGENT | URGENT | Within 24h if CT negative and diagnosis uncertain. FLAIR detects subacute blood (SAH >12h); DWI detects ischemia (infarct, vasospasm); T1 with contrast for pituitary mass; SWI/GRE for microhemorrhages | FLAIR hyperintensity in sulci (subacute SAH); DWI restriction (stroke); pituitary mass with hemorrhage; cortical/convexity SAH (RCVS) | Pacemaker/ICD (conditional devices may be scanned); hemodynamic instability; agitation (sedation may be needed) |
 | MRA head (CPT 70544/70547) | URGENT | URGENT | URGENT | URGENT | With MRI; alternative to CTA if contrast contraindicated or for follow-up | Aneurysm; segmental vasoconstriction (RCVS — may be normal early in course); dissection | Standard MRI contraindications |
 | MRV head (MR venography) (CPT 70547) | URGENT | URGENT | URGENT | URGENT | If CVT suspected (headache + risk factors: OCP use, pregnancy/postpartum, thrombophilia, dehydration); or CT venogram unavailable | Absent flow signal in dural sinuses/cortical veins (thrombosis) | Standard MRI contraindications |
-| CT venography (CTV) (CPT 70496) | URGENT | URGENT | - | URGENT | Can be obtained with CTA using delayed-phase protocol; preferred in ED for speed if CVT suspected | Filling defect in dural sinus; "empty delta sign" (superior sagittal sinus thrombosis) | Contrast allergy; renal impairment (relative) |
+| CT venography (CTV) (CPT 70496) | URGENT | URGENT | - | URGENT | Obtained with CTA using delayed-phase protocol; preferred in ED for speed if CVT suspected | Filling defect in dural sinus; "empty delta sign" (superior sagittal sinus thrombosis) | Contrast allergy; renal impairment (relative) |
 | Conventional cerebral angiography (DSA) (CPT 36224) | - | URGENT | - | URGENT | GOLD STANDARD for aneurysm detection if CTA negative but clinical suspicion remains high; also detects RCVS vasoconstriction (may require repeat at 2-3 weeks if initially normal); diagnoses vasculitis | Aneurysm missed by CTA; segmental vasoconstriction (RCVS); vasculitis (irregular vessel narrowing); dissection | Contrast allergy; renal impairment; coagulopathy (correct first); hemodynamic instability |
 | Repeat DSA (if initial negative) | - | ROUTINE | - | ROUTINE | 7-14 days if initial DSA negative and non-perimesencephalic SAH pattern; also repeat at 2-4 weeks for suspected RCVS (vasoconstriction may develop delayed) | Previously missed aneurysm; interval development of vasoconstriction | Same as initial DSA |
-| Transcranial Doppler (TCD) (CPT 93886) | - | URGENT | - | URGENT | If SAH confirmed — begin daily from post-bleed day 3 through day 14 (vasospasm window); can also detect elevated flow velocities in RCVS | MCA mean velocity >120 cm/s concerning; >200 cm/s severe vasospasm; Lindegaard ratio >3 | Absent temporal bone window (~10%) |
+| Transcranial Doppler (TCD) (CPT 93886) | - | URGENT | - | URGENT | If SAH confirmed — begin daily from post-bleed day 3 through day 14 (vasospasm window); also detects elevated flow velocities in RCVS | MCA mean velocity >120 cm/s concerning; >200 cm/s severe vasospasm; Lindegaard ratio >3 | Absent temporal bone window (~10%) |
 | MRI sella (dedicated pituitary protocol) (CPT 70553) | - | URGENT | URGENT | URGENT | If pituitary apoplexy suspected (headache + visual field cut + ophthalmoplegia + known pituitary adenoma) | Hemorrhagic or necrotic pituitary mass; sellar expansion; optic chiasm compression | Standard MRI contraindications |
 | Chest X-ray (CPT 71046) | URGENT | ROUTINE | - | URGENT | On admission if SAH or meningitis; neurogenic pulmonary edema in SAH | Neurogenic pulmonary edema; aspiration; widened mediastinum (aortic dissection with headache) | None |
 | Echocardiogram (TTE) (CPT 93306) | - | ROUTINE | - | ROUTINE | If SAH confirmed — neurogenic stunned myocardium (20-30%); if embolic cause suspected | Takotsubo; regional wall motion abnormalities; valvular vegetation; PFO | None significant |
@@ -147,29 +147,30 @@ SECTION A: ACTION ITEMS
 - No evidence of mass lesion or midline shift on CT (herniation risk)
 - Document time of headache onset (essential for interpreting xanthochromia results)
 
-| Study | ED | HOSP | OPD | ICU | Rationale | Target Finding |
-|-------|:--:|:----:|:---:|:---:|-----------|----------------|
-| Opening pressure (CPT 89060) | URGENT | ROUTINE | ROUTINE | URGENT | Elevated in SAH, CVT, meningitis; low in spontaneous intracranial hypotension (SIH) | Normal: 6-20 cm H2O. Elevated: >20 cm H2O (SAH, CVT, meningitis). Low: <6 cm H2O (SIH — different mechanism) |
-| Cell count (tubes 1 AND 4) (CPT 89050) | URGENT | ROUTINE | ROUTINE | URGENT | Distinguish SAH from traumatic tap: SAH = RBC count does NOT clear significantly between tube 1 and tube 4 | SAH: RBCs in tube 4 ≥ tube 1 (no clearing). Traumatic tap: tube 4 << tube 1 (clearing >25%) |
-| Xanthochromia (visual and/or spectrophotometry) (CPT 89060) | URGENT | ROUTINE | ROUTINE | URGENT | Most reliable CSF test for SAH; develops >6h post-bleed from RBC breakdown (bilirubin); spectrophotometry more sensitive than visual inspection | Present = SAH (sensitivity >95% at 12h-2 weeks). Absent at >12h from onset = essentially excludes SAH |
-| Protein (CPT 89060) | URGENT | ROUTINE | ROUTINE | URGENT | Elevated in SAH, meningitis, CVT | Normal 15-45 mg/dL; elevated in SAH and infection |
-| Glucose (CPT 89060) | URGENT | ROUTINE | ROUTINE | URGENT | Low CSF:serum glucose ratio (<0.4) suggests bacterial meningitis; normal in SAH | Normal >60% of serum glucose |
-| Gram stain and culture (CPT 87070, 87040) | URGENT | ROUTINE | ROUTINE | URGENT | Exclude bacterial meningitis (meningeal signs overlap with SAH) | No organisms |
-| CSF WBC with differential | URGENT | ROUTINE | ROUTINE | URGENT | Neutrophilic pleocytosis (bacterial meningitis); lymphocytic (viral/fungal); mild pleocytosis in SAH (reactive) | SAH: mild pleocytosis (reactive). Meningitis: significant pleocytosis |
+| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
+|-------|-----------|----------------|:--:|:----:|:---:|:---:|
+| Opening pressure (CPT 89060) | Elevated in SAH, CVT, meningitis; low in spontaneous intracranial hypotension (SIH) | Normal: 6-20 cm H2O. Elevated: >20 cm H2O (SAH, CVT, meningitis). Low: <6 cm H2O (SIH — different mechanism) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Cell count (tubes 1 AND 4) (CPT 89050) | Distinguish SAH from traumatic tap: SAH = RBC count does NOT clear significantly between tube 1 and tube 4 | SAH: RBCs in tube 4 ≥ tube 1 (no clearing). Traumatic tap: tube 4 << tube 1 (clearing >25%) | URGENT | ROUTINE | ROUTINE | URGENT |
+| Xanthochromia (visual and/or spectrophotometry) (CPT 89060) | Most reliable CSF test for SAH; develops >6h post-bleed from RBC breakdown (bilirubin); spectrophotometry more sensitive than visual inspection | Present = SAH (sensitivity >95% at 12h-2 weeks). Absent at >12h from onset = essentially excludes SAH | URGENT | ROUTINE | ROUTINE | URGENT |
+| Protein (CPT 89060) | Elevated in SAH, meningitis, CVT | Normal 15-45 mg/dL; elevated in SAH and infection | URGENT | ROUTINE | ROUTINE | URGENT |
+| Glucose (CPT 89060) | Low CSF:serum glucose ratio (<0.4) suggests bacterial meningitis; normal in SAH | Normal >60% of serum glucose | URGENT | ROUTINE | ROUTINE | URGENT |
+| Gram stain and culture (CPT 87070, 87040) | Exclude bacterial meningitis (meningeal signs overlap with SAH) | No organisms | URGENT | ROUTINE | ROUTINE | URGENT |
+| CSF WBC with differential | Neutrophilic pleocytosis (bacterial meningitis); lymphocytic (viral/fungal); mild pleocytosis in SAH (reactive) | SAH: mild pleocytosis (reactive). Meningitis: significant pleocytosis | URGENT | ROUTINE | ROUTINE | URGENT |
 
 **Special Handling:** Xanthochromia sample must be protected from light (wrap tube in foil); centrifuge immediately; spectrophotometry if available (more sensitive than visual inspection). Label tube with exact time of LP and time of headache onset. In ICU patients, LP may require lateral decubitus positioning or fluoroscopic guidance if patient is intubated or sedated.
 
 **Key Interpretation:**
 - CT negative + LP negative (no xanthochromia, no excess RBCs at ≥12h) = SAH effectively excluded
 - CT negative + xanthochromia present = SAH until proven otherwise → proceed to CTA/DSA
-- CT negative + elevated opening pressure + normal CSF = consider CVT → proceed to MRV/CTV
-- CT negative + LP with pleocytosis and low glucose = meningitis workup
+- CT negative + elevated opening pressure + normal CSF = evaluate for CVT → proceed to MRV/CTV
+- CT negative + LP with pleocytosis and low glucose = initiate meningitis workup
+- CT negative + low opening pressure (<6 cm H2O) = evaluate for SIH → obtain MRI + CT myelography
 
 ---
 
 ## 3. TREATMENT
 
-### ⚠️ CRITICAL PRIORITIES — THUNDERCLAP HEADACHE ALGORITHM
+### CRITICAL PRIORITIES — THUNDERCLAP HEADACHE ALGORITHM
 1. **ABCs** — Secure airway if GCS ≤8; stabilize blood pressure
 2. **Immediate CT head** — Within 25 minutes of arrival (door-to-CT)
 3. **CT positive for blood?** → Activate SAH protocol; STAT CTA; neurosurgery consult
@@ -180,36 +181,39 @@ SECTION A: ACTION ITEMS
 ### 3A. Acute/Emergent — Stabilization & Symptom Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Blood pressure control: Nicardipine IV (CPT 96365) | IV | Hypertensive emergency (SBP >180); SAH with SBP >160; hypertensive crisis with thunderclap | 5 mg/h :: IV :: continuous :: 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 if SAH suspected (until aneurysm secured). For hypertensive emergency: reduce MAP by 20-25% in first hour | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h | STAT | STAT | - | STAT |
-| Blood pressure control: Labetalol IV (CPT 96374) | IV | Alternative to nicardipine for BP control | 10-20 mg :: IV :: q10-20min :: 10-20 mg IV q10-20min; max 300 mg. Alternative first-line for hypertensive emergency | Heart block; severe bradycardia; asthma; cocaine use (relative — unopposed alpha) | HR; BP continuous | STAT | STAT | - | STAT |
-| Analgesic: Acetaminophen IV (CPT 96374) | IV | First-line pain control for thunderclap headache during evaluation; avoid masking exam | 1000 mg :: IV :: q6h :: 1000 mg IV q6h; max 4g/day. Safe first-line — does not affect coagulation or mask pupillary exam | Hepatic impairment (reduce dose); <50 kg (weight-based dosing) | Pain score; hepatic function if repeat dosing | STAT | STAT | - | STAT |
-| Analgesic: Ketorolac IV (CPT 96374) | IV | Moderate-severe headache pain; use ONLY after SAH excluded or deemed unlikely (affects platelet function) | 15-30 mg :: IV :: once :: 15-30 mg IV once; max 120 mg/day. Do NOT use if SAH suspected (platelet inhibition increases re-bleed risk); do NOT use if LP planned within 24h (relative) | SAH suspected; active bleeding; renal impairment; coagulopathy; GI bleed | Renal function; GI symptoms | URGENT | URGENT | - | URGENT |
-| Antiemetic: Ondansetron (CPT 96374) | IV | Nausea/vomiting (common with thunderclap headache and elevated ICP) | 4 mg :: IV :: q6h PRN :: 4 mg IV q6h PRN | QT prolongation; severe hepatic impairment | QTc if repeated dosing | STAT | STAT | - | STAT |
-| Antiemetic: Metoclopramide (CPT 96374) | IV | Alternative antiemetic; also has analgesic properties for headache | 10 mg :: IV :: once :: 10 mg IV over 15 min; may repeat once. Avoid in patients with Parkinson's or dystonic reactions | Parkinson's disease; bowel obstruction; pheochromocytoma; seizure history (relative) | Dystonic reactions; akathisia | STAT | STAT | - | STAT |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Nicardipine IV (CPT 96365) | IV | Hypertensive emergency (SBP >180); SAH with SBP >160; hypertensive crisis with thunderclap | 5 mg/h :: IV :: continuous :: 5 mg/h IV; titrate by 2.5 mg/h q5-15min; max 15 mg/h. Target SBP <160 if SAH suspected (until aneurysm secured). For hypertensive emergency: reduce MAP by 20-25% in first hour | Severe aortic stenosis | Continuous arterial BP; neuro checks q1h | STAT | STAT | - | STAT |
+| Labetalol IV (CPT 96374) | IV | Alternative to nicardipine for BP control | 10-20 mg :: IV :: q10-20min :: 10-20 mg IV q10-20min; max 300 mg. Alternative first-line for hypertensive emergency | Heart block; severe bradycardia; asthma; cocaine use (relative — unopposed alpha) | HR; BP continuous | STAT | STAT | - | STAT |
+| Acetaminophen IV (CPT 96374) | IV | First-line pain control for thunderclap headache during evaluation; avoid masking exam | 1000 mg :: IV :: q6h :: 1000 mg IV q6h; max 4g/day. Safe first-line — does not affect coagulation or mask pupillary exam | Hepatic impairment (reduce dose); <50 kg (weight-based dosing) | Pain score; hepatic function if repeat dosing | STAT | STAT | - | STAT |
+| Ketorolac IV (CPT 96374) | IV | Moderate-severe headache pain; use ONLY after SAH excluded or deemed unlikely (affects platelet function) | 15-30 mg :: IV :: once :: 15-30 mg IV once; max 120 mg/day. Do NOT use if SAH suspected (platelet inhibition increases re-bleed risk); do NOT use if LP planned within 24h (relative) | SAH suspected; active bleeding; renal impairment; coagulopathy; GI bleed | Renal function; GI symptoms | URGENT | URGENT | - | URGENT |
+| Ondansetron (CPT 96374) | IV | Nausea/vomiting (common with thunderclap headache and elevated ICP) | 4 mg :: IV :: q6h PRN :: 4 mg IV q6h PRN | QT prolongation; severe hepatic impairment | QTc if repeated dosing | STAT | STAT | - | STAT |
+| Metoclopramide (CPT 96374) | IV | Alternative antiemetic; also has analgesic properties for headache | 10 mg :: IV :: once :: 10 mg IV over 15 min; may repeat once. Avoid in patients with Parkinson's or dystonic reactions | Parkinson's disease; bowel obstruction; pheochromocytoma; seizure history (relative) | Dystonic reactions; akathisia | STAT | STAT | - | STAT |
 | IV isotonic fluids (CPT 96360) | IV | Volume resuscitation and hydration; dehydration worsens headache and may worsen CVT | 1-1.5 mL/kg/h :: IV :: continuous :: NS at 1-1.5 mL/kg/h; goal euvolemia. Essential for pre-contrast hydration (CTA) and general resuscitation | Volume overload; CHF | I/O; serum Na | STAT | STAT | - | STAT |
-| Seizure prophylaxis: Levetiracetam (CPT 96374) | IV | ONLY if SAH confirmed or seizure occurs; not routine for undifferentiated thunderclap headache | 1000 mg :: IV :: once :: 1000 mg IV load; then 500-1000 mg IV/PO BID. Use short-term (3-7 days) in confirmed SAH per AHA guidelines | Renal impairment (dose adjust) | Seizure activity; renal function | STAT | STAT | - | STAT |
-| Intubation / Airway protection | - | GCS ≤8; inability to protect airway; respiratory failure; clinical herniation | Per RSI protocol :: - :: once :: Rapid sequence intubation per institutional protocol; use hemodynamically neutral agents; avoid succinylcholine if hyperkalemia risk | Difficult airway (prepare backup plan) | Avoid hypotension during RSI; maintain BP goals; continuous SpO2; ETCO2 | STAT | STAT | - | STAT |
+| Levetiracetam (CPT 96374) | IV | ONLY if SAH confirmed or seizure occurs; not routine for undifferentiated thunderclap headache | 1000 mg :: IV :: once :: 1000 mg IV load; then 500-1000 mg IV/PO BID. Use short-term (3-7 days) in confirmed SAH per AHA guidelines | Renal impairment (dose adjust) | Seizure activity; renal function | STAT | STAT | - | STAT |
+| Intubation / Airway protection | - | GCS ≤8; inability to protect airway; respiratory failure; clinical herniation | - :: - :: once :: Rapid sequence intubation per institutional protocol; use hemodynamically neutral agents; avoid succinylcholine if hyperkalemia risk | Difficult airway (prepare backup plan) | Avoid hypotension during RSI; maintain BP goals; continuous SpO2; ETCO2 | STAT | STAT | - | STAT |
 
 ### 3B. Cause-Specific Initial Treatment (Start While Awaiting Definitive Management)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Nimodipine (if SAH confirmed) | PO | SAH confirmed — vasospasm prevention (CORNERSTONE therapy) | 60 mg :: PO :: q4h :: 60 mg PO/NG q4h x 21 days. START within 96h of SAH. If hypotension: 30 mg q2h. Do NOT give IV — oral only | Hypotension (SBP <90 — reduce dose) | BP with each dose; ensure enteral route only | - | STAT | - | STAT |
-| Nimodipine (if RCVS confirmed) | PO | RCVS — empiric calcium channel blocker; off-label but widely used | 60 mg :: PO :: q4h :: 60 mg PO q4h OR verapamil 80-120 mg PO TID as alternative; duration 4-12 weeks until vasoconstriction resolves on follow-up imaging | Hypotension | BP with each dose | - | STAT | ROUTINE | STAT |
+| Nimodipine (if RCVS confirmed) | PO | RCVS — empiric calcium channel blocker; off-label but widely used | 60 mg :: PO :: q4h :: 60 mg PO q4h; duration 4-12 weeks until vasoconstriction resolves on follow-up imaging | Hypotension | BP with each dose | - | STAT | ROUTINE | STAT |
 | Heparin IV (if CVT confirmed) (CPT 96365) | IV | Cerebral venous thrombosis — anticoagulation is standard even with hemorrhagic venous infarct | 80 units/kg :: IV :: bolus :: 80 units/kg IV bolus; then 18 units/kg/h infusion. Target aPTT 1.5-2.5x control. Transition to LMWH or warfarin | Active major hemorrhage (ICH from CVT is NOT a contraindication per guidelines); HIT | aPTT q6h until therapeutic; platelets q3 days; neuro checks | STAT | STAT | - | STAT |
-| Antithrombotic (if dissection confirmed) | IV/PO | Cervical artery dissection — anticoagulation or antiplatelet (no difference per CADISS trial) | Aspirin 325 mg :: PO :: daily :: Aspirin 325 mg PO daily. OR heparin drip followed by warfarin (INR 2-3) x 3-6 months. Either approach acceptable | Active hemorrhagic stroke (anticoagulation); massive infarct | Neuro checks; INR if anticoagulated | STAT | STAT | ROUTINE | STAT |
+| Aspirin (if cervical artery dissection confirmed) | PO | Cervical artery dissection — antiplatelet therapy (equivalent to anticoagulation per CADISS trial) | 325 mg :: PO :: daily :: Aspirin 325 mg PO daily x 3-6 months. Preferred in patients with large infarct or hemorrhagic transformation | Active hemorrhagic stroke; allergy | Neuro checks; GI symptoms | STAT | STAT | ROUTINE | STAT |
+| Heparin then warfarin (if cervical artery dissection confirmed — anticoagulation option) | IV/PO | Cervical artery dissection — anticoagulation alternative (equivalent to antiplatelet per CADISS trial) | 80 units/kg :: IV :: bolus :: 80 units/kg IV bolus; then 18 units/kg/h infusion; transition to warfarin (INR 2-3) x 3-6 months. Preferred if recurrent ischemic events on antiplatelet | Active hemorrhagic stroke; massive infarct; HIT | INR; aPTT q6h until therapeutic; neuro checks | STAT | STAT | ROUTINE | STAT |
 | Hydrocortisone (if pituitary apoplexy with hemodynamic instability) | IV | Acute adrenal crisis in pituitary apoplexy | 100 mg :: IV :: bolus :: 100 mg IV bolus; then 50 mg IV q8h until endocrine evaluation complete. Life-saving — do not wait for cortisol results if clinical suspicion high | None in acute crisis | BP; glucose; electrolytes; cortisol levels | STAT | STAT | - | STAT |
-| Empiric meningitis coverage (if suspected) | IV | Febrile thunderclap headache with meningeal signs and suspicion for bacterial meningitis — do NOT delay antibiotics | Ceftriaxone 2g :: IV :: q12h :: Ceftriaxone 2g IV q12h + vancomycin 15-20 mg/kg IV q8-12h + dexamethasone 0.15 mg/kg IV q6h x 4 days (give dexamethasone 15-20 min before or with first antibiotic dose) | Allergy (use alternatives) | CSF culture results; clinical response | STAT | STAT | - | STAT |
-| Remove vasoconstrictor triggers (if RCVS suspected) | - | Immediately discontinue all potential triggers: triptans, ergotamines, SSRIs/SNRIs, cannabis, cocaine, amphetamines, nasal decongestants, nicotine patches | N/A :: - :: immediate :: Discontinue all vasoconstrictor agents immediately upon suspicion of RCVS; document all discontinued medications | None | Document all discontinued medications; headache frequency should decrease | STAT | STAT | ROUTINE | STAT |
+| Ceftriaxone (if bacterial meningitis suspected) | IV | Febrile thunderclap headache with meningeal signs — empiric gram-negative and pneumococcal coverage | 2 g :: IV :: q12h :: Ceftriaxone 2 g IV q12h. Do NOT delay antibiotics for LP or imaging | Cephalosporin allergy (use meropenem or chloramphenicol) | CSF culture results; clinical response; renal function | STAT | STAT | - | STAT |
+| Vancomycin (if bacterial meningitis suspected) | IV | Empiric MRSA and resistant pneumococcal coverage in meningitis | 15-20 mg/kg :: IV :: q8-12h :: 15-20 mg/kg IV q8-12h; target trough 15-20 mcg/mL. Administer with ceftriaxone for empiric coverage | Vancomycin allergy (use linezolid) | Vancomycin trough; renal function; ototoxicity | STAT | STAT | - | STAT |
+| Dexamethasone (if bacterial meningitis suspected) | IV | Reduce inflammation and improve outcomes in bacterial meningitis (especially pneumococcal) | 0.15 mg/kg :: IV :: q6h :: 0.15 mg/kg IV q6h x 4 days. Give 15-20 min before or with first antibiotic dose | GI bleeding (relative); immunocompromised (relative) | Blood glucose; GI symptoms | STAT | STAT | - | STAT |
+| Remove vasoconstrictor triggers (if RCVS suspected) | - | Immediately discontinue all potential triggers: triptans, ergotamines, SSRIs/SNRIs, cannabis, cocaine, amphetamines, nasal decongestants, nicotine patches | - :: - :: immediate :: Discontinue all vasoconstrictor agents immediately upon suspicion of RCVS; document all discontinued medications | None | Document all discontinued medications; headache frequency decreases after trigger removal | STAT | STAT | ROUTINE | STAT |
 
 ### 3C. Headache-Specific Red Flag Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| DVT prophylaxis: Pneumatic compression devices | External | All admitted thunderclap headache patients (immobilized during workup; many diagnoses carry VTE risk) | N/A :: External :: continuous :: Apply bilateral sequential compression devices on admission; maintain until patient is ambulatory | Acute DVT in affected limb | Skin checks; device compliance | STAT | STAT | - | STAT |
-| Stress ulcer prophylaxis: Pantoprazole | IV | If ICU admission or steroid use | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk (long-term) | GI symptoms | - | ROUTINE | - | ROUTINE |
-| Stool softener: Docusate | PO | Avoid Valsalva/straining (may increase ICP; re-bleed risk in SAH) | 100 mg :: PO :: BID :: 100 mg PO BID | Bowel obstruction | Bowel movements | - | ROUTINE | - | ROUTINE |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Pneumatic compression devices (DVT prophylaxis) | External | All admitted thunderclap headache patients (immobilized during workup; many diagnoses carry VTE risk) | - :: External :: continuous :: Apply bilateral sequential compression devices on admission; maintain until patient is ambulatory | Acute DVT in affected limb | Skin checks; device compliance | STAT | STAT | - | STAT |
+| Pantoprazole (stress ulcer prophylaxis) | IV | ICU admission or steroid use | 40 mg :: IV :: daily :: 40 mg IV/PO daily | C. diff risk (long-term) | GI symptoms | - | ROUTINE | - | ROUTINE |
+| Docusate (stool softener) | PO | Avoid Valsalva/straining (may increase ICP; re-bleed risk in SAH) | 100 mg :: PO :: BID :: 100 mg PO BID | Bowel obstruction | Bowel movements | - | ROUTINE | - | ROUTINE |
 
 ---
 
@@ -217,44 +221,44 @@ SECTION A: ACTION ITEMS
 
 ### 4A. Referrals & Consults
 
-| Recommendation | ED | HOSP | OPD | ICU | Indication |
-|----------------|:--:|:----:|:---:|:---:|------------|
-| Neurology / Vascular neurology | STAT | STAT | URGENT | STAT | ALL thunderclap headaches; diagnostic guidance; RCVS management; CVT management; dissection |
-| Neurosurgery | STAT | STAT | - | STAT | If SAH confirmed or suspected; aneurysm securing; EVD for hydrocephalus; pituitary apoplexy (transsphenoidal approach) |
-| Interventional neuroradiology / Neuroendovascular | STAT | STAT | - | STAT | Aneurysm coiling; intra-arterial vasospasm treatment; thrombectomy for CVT (refractory); stenting for dissection |
-| Neurocritical care / Neurointensivist | STAT | STAT | - | STAT | SAH ICU management; deteriorating patient; vasospasm monitoring |
-| Ophthalmology | URGENT | URGENT | URGENT | URGENT | Pituitary apoplexy (visual field assessment); papilledema evaluation; Terson syndrome (vitreous hemorrhage in SAH) |
-| Endocrinology | - | URGENT | ROUTINE | URGENT | Pituitary apoplexy — hormone replacement; long-term pituitary monitoring |
-| Hematology | - | ROUTINE | ROUTINE | - | CVT with thrombophilia; coagulopathy management |
-| Infectious disease | - | URGENT | - | URGENT | If meningitis confirmed or atypical CSF findings |
-| Headache specialist / Neurology outpatient | - | ROUTINE | ROUTINE | - | If workup negative — primary thunderclap headache; migraine variant; follow-up for recurrence |
-| Social work / Case management | - | ROUTINE | - | - | Family support; disposition planning |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Neurology / Vascular neurology — ALL thunderclap headaches; diagnostic guidance; RCVS management; CVT management; dissection | STAT | STAT | URGENT | STAT |
+| Neurosurgery — SAH confirmed or suspected; aneurysm securing; EVD for hydrocephalus; pituitary apoplexy (transsphenoidal approach) | STAT | STAT | - | STAT |
+| Interventional neuroradiology / Neuroendovascular — aneurysm coiling; intra-arterial vasospasm treatment; thrombectomy for CVT (refractory); stenting for dissection | STAT | STAT | - | STAT |
+| Neurocritical care / Neurointensivist — SAH ICU management; deteriorating patient; vasospasm monitoring | STAT | STAT | - | STAT |
+| Ophthalmology — pituitary apoplexy (visual field assessment); papilledema evaluation; Terson syndrome (vitreous hemorrhage in SAH) | URGENT | URGENT | URGENT | URGENT |
+| Endocrinology — pituitary apoplexy hormone replacement; long-term pituitary monitoring | - | URGENT | ROUTINE | URGENT |
+| Hematology — CVT with thrombophilia; coagulopathy management | - | ROUTINE | ROUTINE | - |
+| Infectious disease — meningitis confirmed or atypical CSF findings | - | URGENT | - | URGENT |
+| Headache specialist / Neurology outpatient — negative workup; primary thunderclap headache; migraine variant; follow-up for recurrence | - | ROUTINE | ROUTINE | - |
+| Social work / Case management — family support; disposition planning | - | ROUTINE | - | - |
 
 ### 4B. Patient / Family Instructions
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Thunderclap headache is a neurological emergency — every episode requires evaluation until a cause is identified or excluded | STAT | ROUTINE | ROUTINE | - |
-| Call 911 immediately if: sudden severe headache ("worst headache of life"), loss of consciousness, seizure, new weakness, vision changes, fever with stiff neck | STAT | ROUTINE | ROUTINE | - |
-| Do NOT take aspirin, ibuprofen, or blood thinners before evaluation is complete (may worsen bleeding if SAH) | STAT | ROUTINE | ROUTINE | - |
-| Avoid triggers: cocaine, amphetamines, triptans, heavy exertion, Valsalva until diagnosis is confirmed | STAT | ROUTINE | ROUTINE | - |
-| If discharged after negative workup: return immediately if headache recurs with same severity, if new symptoms develop (weakness, vision changes, confusion), or if fever develops | STAT | ROUTINE | ROUTINE | - |
-| Report any recurrent thunderclap headaches over days-to-weeks to the treating team immediately — recurrence may indicate RCVS and requires follow-up imaging even if initial workup is negative | - | ROUTINE | ROUTINE | - |
-| Follow up with neurology within 1-2 weeks after discharge; return sooner if symptoms recur | - | ROUTINE | ROUTINE | - |
-| First-degree relatives of SAH patients: undergo aneurysm screening if 2 or more family members are affected | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Thunderclap headache is a neurological emergency — every episode requires evaluation until a cause is identified or excluded | STAT | ROUTINE | ROUTINE |
+| Call 911 immediately if: sudden severe headache ("worst headache of life"), loss of consciousness, seizure, new weakness, vision changes, fever with stiff neck | STAT | ROUTINE | ROUTINE |
+| Do NOT take aspirin, ibuprofen, or blood thinners before evaluation is complete (may worsen bleeding if SAH) | STAT | ROUTINE | ROUTINE |
+| Avoid triggers: cocaine, amphetamines, triptans, heavy exertion, Valsalva until diagnosis is confirmed | STAT | ROUTINE | ROUTINE |
+| If discharged after negative workup: return immediately if headache recurs with same severity, if new symptoms develop (weakness, vision changes, confusion), or if fever develops | STAT | ROUTINE | ROUTINE |
+| Report any recurrent thunderclap headaches over days-to-weeks to the treating team immediately — recurrence indicates RCVS and requires follow-up imaging even if initial workup is negative | - | ROUTINE | ROUTINE |
+| Follow up with neurology within 1-2 weeks after discharge; return sooner if symptoms recur | - | ROUTINE | ROUTINE |
+| First-degree relatives of SAH patients: undergo aneurysm screening if 2 or more family members are affected | - | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Stop all cocaine and amphetamine use immediately (strongly associated with SAH, RCVS, and dissection) | STAT | ROUTINE | ROUTINE | - |
-| Stop smoking (strongest modifiable risk factor for aneurysm formation) | - | ROUTINE | ROUTINE | - |
-| Maintain blood pressure control (<130/80 mmHg long-term) | - | ROUTINE | ROUTINE | - |
-| Avoid vasoconstrictor medications (triptans, ergotamines, decongestants) until RCVS excluded | STAT | ROUTINE | ROUTINE | - |
-| Limit alcohol intake (heavy drinking increases SAH risk) | - | ROUTINE | ROUTINE | - |
-| Maintain adequate hydration (dehydration may contribute to CVT risk) | - | ROUTINE | ROUTINE | - |
-| Discontinue oral contraceptives if CVT diagnosed; use non-estrogen alternatives (oral contraceptives increase CVT risk) | - | ROUTINE | ROUTINE | - |
-| Avoid extreme exertion or Valsalva maneuvers during the acute evaluation period | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Stop all cocaine and amphetamine use immediately (strongly associated with SAH, RCVS, and dissection) | STAT | ROUTINE | ROUTINE |
+| Stop smoking (strongest modifiable risk factor for aneurysm formation) | - | ROUTINE | ROUTINE |
+| Maintain blood pressure control (<130/80 mmHg long-term) | - | ROUTINE | ROUTINE |
+| Avoid vasoconstrictor medications (triptans, ergotamines, decongestants) until RCVS excluded | STAT | ROUTINE | ROUTINE |
+| Limit alcohol intake (heavy drinking increases SAH risk) | - | ROUTINE | ROUTINE |
+| Maintain adequate hydration (dehydration may contribute to CVT risk) | - | ROUTINE | ROUTINE |
+| Discontinue oral contraceptives if CVT diagnosed; use non-estrogen alternatives (oral contraceptives increase CVT risk) | - | ROUTINE | ROUTINE |
+| Avoid extreme exertion or Valsalva maneuvers during the acute evaluation period | - | ROUTINE | ROUTINE |
 
 ═══════════════════════════════════════════════════════════════
 SECTION B: REFERENCE (Expand as Needed)
@@ -285,7 +289,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Blood pressure | STAT | STAT | ROUTINE | STAT | Continuous in ED and ICU. q1h on floor. SAH: SBP <160 until aneurysm secured. Hypertensive emergency: reduce MAP 20-25% in first hour | SBP <160 (if SAH); MAP reduction 20-25% (if hypertensive emergency); SBP <140 (CVT/RCVS) | Titrate antihypertensives; arterial line if labile |
 | GCS / Neurologic exam | STAT | STAT | ROUTINE | STAT | q1h x 12h; then q2h x 24h; then q4h. Document GCS, pupillary response, motor exam, speech | Stable or improving | If declining: STAT repeat CT; reassess diagnosis; escalate care |
 | Headache severity (pain scale 0-10) | STAT | STAT | ROUTINE | STAT | q2-4h; with each assessment | Improving trend | If worsening or new thunderclap recurrence: repeat imaging; RCVS likely if recurrent |
-| Temperature | STAT | STAT | - | STAT | q4h (q1h if febrile) | <37.5°C | If febrile: infection workup (blood cultures, UA, CXR); LP if not yet performed; antibiotics if meningitis suspected |
+| Temperature | STAT | STAT | - | STAT | q4h (q1h if febrile) | <37.5 C | If febrile: infection workup (blood cultures, UA, CXR); LP if not yet performed; antibiotics if meningitis suspected |
 | Serum sodium | STAT | STAT | - | STAT | q8h (q6h if SAH confirmed — hyponatremia common) | 135-145 mEq/L | If <135: differentiate CSW vs SIADH (if SAH); fluid/salt management |
 | Blood glucose | STAT | STAT | - | STAT | q6h | 140-180 mg/dL | Insulin if hyperglycemic; avoid <60 |
 | ICP (if EVD placed for SAH/hydrocephalus) | - | - | - | STAT | Continuous; record q1h | ICP <22 mmHg; CPP 60-70 mmHg | CSF drainage; osmotherapy; surgical decompression |
@@ -300,10 +304,10 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Disposition | Criteria |
 |-------------|----------|
-| Discharge home from ED (negative workup) | Complete negative evaluation: normal CT head, normal CTA head/neck, normal LP (performed ≥6h from onset with no xanthochromia, no excess RBCs, normal opening pressure). Stable neurologic exam. Patient understands return precautions. Neurology follow-up arranged within 1-2 weeks. Consider MRI/MRA outpatient if not performed in ED |
+| Discharge home from ED (negative workup) | Complete negative evaluation: normal CT head, normal CTA head/neck, normal LP (performed ≥6h from onset with no xanthochromia, no excess RBCs, normal opening pressure). Stable neurologic exam. Patient understands return precautions. Neurology follow-up arranged within 1-2 weeks. Obtain outpatient MRI/MRA if not performed in ED |
 | Admit to observation / inpatient neurology | Inconclusive workup (LP pending, CTA pending, awaiting MRI); persistent severe headache requiring IV analgesia; recurrent thunderclap headaches (RCVS likely); new neurologic deficit; abnormal labs requiring monitoring |
 | Admit to Neuro-ICU | Confirmed SAH (all cases — minimum 14-21 days ICU monitoring); CVT with hemorrhagic infarct or declining GCS; pituitary apoplexy with hemodynamic instability; large territorial stroke from dissection or RCVS; any thunderclap headache patient with GCS ≤12 or declining exam |
-| Transfer to comprehensive stroke center | If SAH confirmed and no neurosurgery or interventional neuroradiology available on-site — TRANSFER IMMEDIATELY; suspected CVT or dissection requiring endovascular intervention not available locally |
+| Transfer to comprehensive stroke center | SAH confirmed and no neurosurgery or interventional neuroradiology available on-site — TRANSFER IMMEDIATELY; suspected CVT or dissection requiring endovascular intervention not available locally |
 | Outpatient follow-up (after negative ED evaluation) | Neurology within 1-2 weeks; outpatient MRI/MRA if not done; repeat CTA/MRA at 4-6 weeks if RCVS suspected (vasoconstriction may develop delayed); aneurysm screening for family members if SAH |
 
 ## 8. EVIDENCE & REFERENCES
@@ -313,7 +317,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | CT head sensitivity ~98-100% within 6h for SAH | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/) — Prospective cohort; 3132 patients; sensitivity 100% (95% CI 97-100%) for CT within 6h |
 | LP mandatory if CT negative but clinical suspicion for SAH persists | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
 | Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [UK National SAH Guidelines (Edlow et al. Stroke 2016)](https://pubmed.ncbi.nlm.nih.gov/27217503/); sensitivity >95% at 12h-2 weeks |
-| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [Defined by Defined et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [Defined by Defined et al. (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) |
+| CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2003)](https://pubmed.ncbi.nlm.nih.gov/14500398/) — Meta-analysis of CTA for intracranial aneurysm detection; [Defined et al. (Stroke 2006)](https://pubmed.ncbi.nlm.nih.gov/16902176/) — requires full author verification |
 | Anticoagulation for CVT even with hemorrhagic infarct | Class I, Level A | [EFNS Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28128773/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | Nimodipine 60 mg PO q4h x 21 days for SAH vasospasm prevention | Class I, Level A | [Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/) |
 | RCVS: calcium channel blockers (nimodipine/verapamil) for headache and vasoconstriction | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/17468116/); [Singhal et al. (Neurology 2011)](https://pubmed.ncbi.nlm.nih.gov/21383328/) |
@@ -331,19 +335,19 @@ SECTION B: REFERENCE (Expand as Needed)
 
 ## CHANGE LOG
 
-**v1.1 (February 2, 2026)**
-- Added ICU column to Lumbar Puncture table with URGENT priorities for all CSF studies (C3/S1)
-- Added ICU column to Section 4B (Patient/Family Instructions) with "-" for ICU-only items (C1/S2)
-- Added ICU column to Section 4C (Lifestyle & Prevention) with "-" for ICU-only items (C2/S3)
-- Fixed placeholder "Defined et al." references in Evidence Section 8: corrected D-dimer citation to Kosinski et al. (Stroke 2004); noted CTA meta-analysis references need full author verification (C4/R5)
-- Updated Intubation/Airway protection row with structured dosing format and expanded contraindications/monitoring (M2)
-- Added Route column value ("External") and structured dosing to DVT prophylaxis row (M1)
-- Updated "Remove vasoconstrictor triggers" row with structured dosing format (M1)
-- Made Section 4B language more directive: replaced "should discuss" with direct instructions; reworded recurrent headache instruction (R1/R4)
-- Made Section 4C language more directive: replaced "OCP counseling" with direct discontinuation instruction; replaced "Stress management" with directive wording (R2/R3)
-- Added REVISED date to metadata block (R6)
-- Added ICU-specific LP guidance in Special Handling section (R7)
-- Updated version to 1.1; updated STATUS line
+**v1.1 (February 2, 2026) — Checker/Rebuilder Pipeline**
+- Fixed placeholder "Defined et al." reference: corrected first CTA citation to White PM et al. (Radiology 2003, PMID 14500398); flagged second CTA citation (PMID 16902176) as requiring full author verification (C1/R1)
+- Reordered LP table columns to place venue columns last per style guide: Study | Rationale | Target Finding | ED | HOSP | OPD | ICU (C2/R3)
+- Restructured Section 4A (Referrals) from 6-column to 5-column format (Recommendation | ED | HOSP | OPD | ICU); merged indication text into Recommendation column (C3/R2)
+- Split antithrombotic for dissection into two separate rows: Aspirin and Heparin/warfarin (M2/R4)
+- Split empiric meningitis coverage into three separate rows: Ceftriaxone, Vancomycin, Dexamethasone (M3/R5)
+- Fixed vasoconstrictor trigger row dosing field: changed "N/A" to "-" for consistency (M1)
+- Replaced non-directive language in LP Key Interpretation: "consider CVT" → "evaluate for CVT"; "Consider MRI/MRA" → "Obtain MRI/MRA"; added SIH interpretation line (R6)
+- Replaced non-directive language in Disposition: "Consider MRI/MRA outpatient" → "Obtain outpatient MRI/MRA" (R6)
+- Removed "⚠️" emoji from Critical Priorities heading for consistency (R7)
+- Updated treatment table column headers to match standardized format (Treatment | Route | Indication | Dosing | ...) (R7)
+- Removed redundant labels from Treatment column (e.g., "Blood pressure control:" prefix, "Analgesic:" prefix) (R7)
+- Updated version to 1.1; updated STATUS line to "Revised per checker/rebuilder validation (v1.1)" (R8)
 
 **v1.0 (February 2, 2026)**
 - Initial template creation
@@ -375,9 +379,9 @@ THUNDERCLAP HEADACHE (peak intensity <60 seconds)
 │       └── STEP 3: Lumbar Puncture (≥6h from onset if possible)
 │           ├── Xanthochromia PRESENT → SAH → DSA
 │           ├── RBCs non-clearing → SAH → DSA
-│           ├── Elevated OP + normal CSF → Consider CVT → MRV/CTV
+│           ├── Elevated OP + normal CSF → Evaluate for CVT → MRV/CTV
 │           ├── Pleocytosis + low glucose → Meningitis workup
-│           ├── Normal LP → Consider MRI/MRA (if not done)
+│           ├── Normal LP → Obtain MRI/MRA (if not done)
 │           │   ├── Vasoconstriction → RCVS
 │           │   ├── CVT → Anticoagulation
 │           │   ├── Pituitary mass → Apoplexy pathway
