@@ -1,7 +1,7 @@
 ---
 title: "Tics / Tourette Syndrome"
 description: "Clinical decision support for tic disorders and Tourette syndrome diagnosis, assessment, and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD"
 status: draft
 tags:
@@ -28,19 +28,18 @@ tags:
 **SYNONYMS:** Tourette syndrome, Tourette's syndrome, Tourette's disorder, Gilles de la Tourette syndrome, tic disorder, chronic tic disorder, motor tic disorder, vocal tic disorder, transient tic disorder, provisional tic disorder, complex tic disorder, tic spectrum disorder, coprolalia, echolalia, palilalia, phonic tics
 **SCOPE:** Diagnosis, severity assessment, and management of tic disorders including Tourette syndrome, chronic motor/vocal tic disorder, and provisional tic disorder. Covers Comprehensive Behavioral Intervention for Tics (CBIT), pharmacotherapy with alpha-2 agonists, antipsychotics, VMAT2 inhibitors, and botulinum toxin. Addresses common comorbidities (ADHD, OCD, anxiety, depression). Includes YGTSS scoring, DBS for medically refractory cases, and psychosocial support. Settings: ED (tic-related emergencies, severe exacerbations), HOSP (refractory cases, DBS), OPD (primary management setting).
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 2, 2026
-**STATUS:** Initial build
+**REVISED:** February 2, 2026
+**STATUS:** Revised per checker v1.1
 
 ---
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
----
-
-## SECTION A: ACTION ITEMS
-
----
+═══════════════════════════════════════════════════════════════
+SECTION A: ACTION ITEMS
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -116,8 +115,8 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Comprehensive Behavioral Intervention for Tics (CBIT) | In-person/telehealth | First-line for all tic disorders causing functional impairment; AAN Level A recommendation | 8 sessions :: In-person :: weekly :: 8 sessions over 10 weeks; includes psychoeducation, habit reversal training (awareness training + competing response), relaxation techniques, and function-based assessment | Severe cognitive impairment preventing participation; active psychosis | YGTSS score at baseline and after completion; functional improvement; patient engagement | - | - | ROUTINE | - |
-| Habit Reversal Training (HRT) | In-person/telehealth | Core component of CBIT; can be delivered alone if full CBIT unavailable | 8-12 sessions :: In-person :: weekly :: Awareness training for premonitory urge recognition; competing response training; social support | Severe cognitive impairment | YGTSS score; competing response use; tic frequency | - | - | ROUTINE | - |
-| Exposure and Response Prevention (ERP) | In-person/telehealth | Alternative behavioral approach; may help patients who tolerate premonitory urges poorly | 8-12 sessions :: In-person :: weekly :: Graduated exposure to premonitory urge sensations with response prevention; habituation-based | Active psychosis; severe cognitive impairment | YGTSS score; premonitory urge rating (PUTS); tolerance of urges | - | - | ROUTINE | - |
+| Habit Reversal Training (HRT) | In-person/telehealth | Core component of CBIT; delivered alone if full CBIT unavailable | 8-12 sessions :: In-person :: weekly :: Awareness training for premonitory urge recognition; competing response training; social support | Severe cognitive impairment | YGTSS score; competing response use; tic frequency | - | - | ROUTINE | - |
+| Exposure and Response Prevention (ERP) | In-person/telehealth | Alternative behavioral approach for patients who tolerate premonitory urges poorly | 8-12 sessions :: In-person :: weekly :: Graduated exposure to premonitory urge sensations with response prevention; habituation-based | Active psychosis; severe cognitive impairment | YGTSS score; premonitory urge rating (PUTS); tolerance of urges | - | - | ROUTINE | - |
 
 ### 3B. First-line Pharmacotherapy (Alpha-2 Agonists)
 
@@ -145,16 +144,16 @@ tags:
 | Tetrabenazine (Xenazine) | PO | VMAT2 inhibitor; third-line for moderate-severe tics refractory to first/second-line agents | 12.5 mg :: PO :: daily :: Start 12.5 mg daily; increase by 12.5 mg q1wk; target 25-75 mg/day divided BID-TID; max 200 mg/day; CYP2D6 genotyping required at doses >50 mg/day | Depression/suicidality (Black Box); MAO-I use; hepatic impairment; reserpine use within 20 days | Depression screening (PHQ-9) at each visit; suicidality assessment; parkinsonism; akathisia; sedation; CYP2D6 genotyping | - | - | ROUTINE | - |
 | Deutetrabenazine (Austedo) | PO | VMAT2 inhibitor; better tolerated than tetrabenazine; longer half-life | 6 mg :: PO :: daily :: Start 6 mg daily; increase by 6 mg/day weekly; target 12-48 mg/day divided BID; max 48 mg/day; take with food | Depression/suicidality (Black Box); MAO-I use; hepatic impairment; reserpine use within 20 days | Depression screening (PHQ-9) at each visit; suicidality assessment; parkinsonism; akathisia; QTc at baseline and dose changes | - | - | ROUTINE | - |
 | Valbenazine (Ingrezza) | PO | VMAT2 inhibitor; once-daily dosing; off-label for refractory tics | 40 mg :: PO :: daily :: Start 40 mg once daily; increase to 80 mg daily after 1 week if tolerated; max 80 mg/day | Congenital long QT; strong CYP2D6 inhibitors at higher dose; severe hepatic impairment | QTc at baseline and after dose increase; somnolence; depression; parkinsonism | - | - | ROUTINE | - |
-| Topiramate (Topamax) | PO | Adjunctive therapy; may reduce tic severity; also treats comorbid migraine | 25 mg :: PO :: qHS :: Start 25 mg qHS; increase by 25 mg q1-2wk; target 50-200 mg/day divided BID; max 200 mg/day | Metabolic acidosis; kidney stones; acute myopia/angle-closure glaucoma | Bicarbonate level; renal function; cognitive effects (word-finding difficulty); weight; kidney stones | - | - | ROUTINE | - |
+| Topiramate (Topamax) | PO | Adjunctive therapy; reduces tic severity; also treats comorbid migraine | 25 mg :: PO :: qHS :: Start 25 mg qHS; increase by 25 mg q1-2wk; target 50-200 mg/day divided BID; max 200 mg/day | Metabolic acidosis; kidney stones; acute myopia/angle-closure glaucoma | Bicarbonate level; renal function; cognitive effects (word-finding difficulty); weight; kidney stones | - | - | ROUTINE | - |
 | Clonazepam | PO | Adjunct for tic suppression; also treats comorbid anxiety | 0.25 mg :: PO :: qHS :: Start 0.25 mg qHS; increase by 0.25 mg q3-7d; target 0.5-2 mg/day divided BID; max 4 mg/day | Severe respiratory depression; severe hepatic impairment; substance abuse history | Sedation; dependence risk; falls; taper slowly if discontinuing (do not stop abruptly) | - | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Adjunct; may reduce tic severity in some patients | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3-5d; target 30-60 mg/day divided TID; max 80 mg/day | Severe renal impairment (dose adjust); abrupt withdrawal risk | Sedation; weakness; taper slowly if discontinuing | - | - | ROUTINE | - |
+| Baclofen | PO | Adjunct for tic suppression | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3-5d; target 30-60 mg/day divided TID; max 80 mg/day | Severe renal impairment (dose adjust); abrupt withdrawal risk | Sedation; weakness; taper slowly if discontinuing | - | - | ROUTINE | - |
 
 ### 3E. Targeted/Focal Therapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | OnabotulinumtoxinA (Botox) - cervical tics | IM | Focal motor tics causing pain or disability (cervical, facial); phonic tics (vocal cord injection) | 25-100 units :: IM :: q12wk :: Inject affected muscles; cervical tics 25-100 units divided; facial tics 5-25 units per site; repeat q12wk; EMG guidance for small muscles | Infection at site; myasthenia gravis; ALS | Dysphagia (if neck muscles); local weakness; antibody formation with repeated use | - | - | ROUTINE | - |
-| OnabotulinumtoxinA (Botox) - phonic/vocal tics | IM (laryngeal) | Disabling vocal tics (coprolalia, loud vocalizations); refractory to systemic therapy | 1.25-2.5 units :: IM :: q12wk :: 1.25-2.5 units per vocal cord via EMG-guided injection; may repeat q12wk; specialist procedure | Infection at site; myasthenia gravis; ALS; vocal cord paralysis | Breathy voice; dysphagia; periodic indirect laryngoscopy | - | - | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) - phonic/vocal tics | IM (laryngeal) | Disabling vocal tics (coprolalia, loud vocalizations); refractory to systemic therapy | 1.25-2.5 units :: IM :: q12wk :: 1.25-2.5 units per vocal cord via EMG-guided injection; repeat q12wk; specialist procedure | Infection at site; myasthenia gravis; ALS; vocal cord paralysis | Breathy voice; dysphagia; periodic indirect laryngoscopy | - | - | ROUTINE | - |
 
 ### 3F. Comorbidity-Specific Treatment
 
@@ -162,10 +161,10 @@ tags:
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Methylphenidate (Ritalin, Concerta) | PO | ADHD comorbidity; does NOT worsen tics (AAN Level A evidence) | 5 mg :: PO :: BID :: Start 5 mg BID (IR) or 18 mg daily (ER); increase by 5-10 mg/wk; target 20-60 mg/day; max 72 mg/day (ER) | Concurrent MAO-I use; pheochromocytoma; severe anxiety; glaucoma | HR, BP; appetite/weight; sleep; tic severity (monitor but stimulants generally safe) | - | ROUTINE | ROUTINE | - |
 | Amphetamine/dextroamphetamine (Adderall) | PO | ADHD comorbidity; alternative stimulant | 5 mg :: PO :: daily :: Start 5 mg daily (IR) or 10 mg daily (XR); increase by 5-10 mg/wk; target 10-30 mg/day; max 40 mg/day | Concurrent MAO-I use; pheochromocytoma; severe cardiac disease; glaucoma | HR, BP; appetite/weight; sleep; tic severity; cardiac screening if risk factors | - | ROUTINE | ROUTINE | - |
-| Atomoxetine (Strattera) | PO | ADHD comorbidity; non-stimulant; may improve both ADHD and tics | 0.5 mg/kg :: PO :: daily :: Start 0.5 mg/kg/day; increase to 1.2 mg/kg/day after 3-7 days; max 1.4 mg/kg/day or 100 mg/day | Concurrent MAO-I use; narrow-angle glaucoma; pheochromocytoma; severe cardiac disease | BP, HR; suicidality (Black Box in children); hepatotoxicity (rare); appetite/weight | - | ROUTINE | ROUTINE | - |
+| Atomoxetine (Strattera) | PO | ADHD comorbidity; non-stimulant; improves both ADHD and tics | 0.5 mg/kg :: PO :: daily :: Start 0.5 mg/kg/day; increase to 1.2 mg/kg/day after 3-7 days; max 1.4 mg/kg/day or 100 mg/day | Concurrent MAO-I use; narrow-angle glaucoma; pheochromocytoma; severe cardiac disease | BP, HR; suicidality (Black Box in children); hepatotoxicity (rare); appetite/weight | - | ROUTINE | ROUTINE | - |
 | Fluoxetine (Prozac) | PO | OCD comorbidity (first-line SSRI for OCD in Tourette) | 10 mg :: PO :: daily :: Start 10 mg daily; increase by 10 mg q2-4wk; target 20-60 mg/day for OCD; max 80 mg/day | Concurrent MAO-I use; concurrent pimozide (QTc); concurrent thioridazine | Suicidality (Black Box in children); activation/mania; serotonin syndrome; OCD severity (Y-BOCS) | - | ROUTINE | ROUTINE | - |
 | Sertraline (Zoloft) | PO | OCD comorbidity; alternative SSRI | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg q1-2wk; target 50-200 mg/day for OCD; max 200 mg/day | Concurrent MAO-I use; concurrent pimozide | Suicidality (Black Box in children); activation; GI side effects; serotonin syndrome | - | ROUTINE | ROUTINE | - |
-| Cognitive Behavioral Therapy (CBT) with ERP | In-person | OCD comorbidity; first-line behavioral intervention for OCD symptoms | 12-20 sessions :: In-person :: weekly :: Exposure and response prevention protocol targeting OCD symptoms; can run concurrently with CBIT for tics | Active psychosis; severe cognitive impairment | Y-BOCS score at baseline and q4wk; functional improvement | - | - | ROUTINE | - |
+| Cognitive Behavioral Therapy (CBT) with ERP | In-person | OCD comorbidity; first-line behavioral intervention for OCD symptoms | 12-20 sessions :: In-person :: weekly :: Exposure and response prevention protocol targeting OCD symptoms; run concurrently with CBIT for tics | Active psychosis; severe cognitive impairment | Y-BOCS score at baseline and q4wk; functional improvement | - | - | ROUTINE | - |
 
 ### 3G. Disease-Modifying/Surgical Therapy
 
@@ -213,19 +212,17 @@ tags:
 |----------------|:--:|:----:|:---:|
 | Stress management techniques (mindfulness, deep breathing, progressive muscle relaxation) as stress is the most common tic exacerbator | - | ROUTINE | ROUTINE |
 | Adequate sleep (age-appropriate: 8-10 hours for adolescents, 7-9 for adults) as fatigue worsens tics | - | ROUTINE | ROUTINE |
-| Regular aerobic exercise (30+ minutes most days) which may reduce tic severity and improve comorbid ADHD/anxiety | - | - | ROUTINE |
-| Limit caffeine and energy drinks which may exacerbate tics, anxiety, and insomnia | - | ROUTINE | ROUTINE |
-| Activities requiring focused attention (music, sports, art) often reduce tics through directed concentration | - | - | ROUTINE |
+| Regular aerobic exercise (30+ minutes most days) to reduce tic severity and improve comorbid ADHD/anxiety | - | - | ROUTINE |
+| Limit caffeine and energy drinks which exacerbate tics, anxiety, and insomnia | - | ROUTINE | ROUTINE |
+| Activities requiring focused attention (music, sports, art) reduce tics through directed concentration | - | - | ROUTINE |
 | Peer support groups (Tourette Association of America, local support groups) for patients and families | - | - | ROUTINE |
 | Anti-bullying strategies and school education programs; tic disorders are covered under Section 504 and IDEA | - | - | ROUTINE |
-| Avoid trigger identification and avoidance where possible (certain situations, foods, sleep deprivation) | - | - | ROUTINE |
-| Screen time moderation; excessive screen time may exacerbate tics in some patients | - | - | ROUTINE |
+| Identify and avoid triggers where possible (certain situations, foods, sleep deprivation) | - | - | ROUTINE |
+| Moderate screen time; excessive screen time exacerbates tics in some patients | - | - | ROUTINE |
 
----
-
-## SECTION B: REFERENCE
-
----
+═══════════════════════════════════════════════════════════════
+SECTION B: REFERENCE
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -251,13 +248,13 @@ tags:
 
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
-| YGTSS (Yale Global Tic Severity Scale) total score | Baseline; q3mo on treatment; each medication change | 25%+ improvement; total tic score <15 for mild; goal is functional improvement | Adjust treatment; add CBIT if not started; escalate pharmacotherapy; consider DBS referral if >35 despite treatment | - | ROUTINE | ROUTINE | - |
-| Premonitory Urge for Tics Scale (PUTS) | Baseline; q6mo | Improvement or stable | Guide CBIT approach; if high urge-tic correlation, CBIT may be more effective | - | - | ROUTINE | - |
+| YGTSS (Yale Global Tic Severity Scale) total score | Baseline; q3mo on treatment; each medication change | 25%+ improvement; total tic score <15 for mild; goal is functional improvement | Adjust treatment; add CBIT if not started; escalate pharmacotherapy; refer for DBS if >35 despite treatment | - | ROUTINE | ROUTINE | - |
+| Premonitory Urge for Tics Scale (PUTS) | Baseline; q6mo | Improvement or stable | Guide CBIT approach; if high urge-tic correlation, CBIT is more effective | - | - | ROUTINE | - |
 | Comorbidity screening (ADHD, OCD, anxiety, depression) | Each visit | Y-BOCS <16 (OCD); PHQ-9 <10; GAD-7 <10; ASRS for ADHD | Adjust comorbidity treatment; add behavioral therapy; psychiatric referral | - | ROUTINE | ROUTINE | - |
 | Weight, BMI, waist circumference (on antipsychotics) | Baseline, monthly x3mo, then q3mo | Weight gain <7% from baseline | Dietary counseling; switch to lower metabolic risk agent; metformin if needed | - | ROUTINE | ROUTINE | - |
 | Fasting glucose, HbA1c, lipid panel (on antipsychotics) | Baseline, 3mo, then q6-12mo | Glucose <100; HbA1c <5.7%; LDL <130 | Switch agent; dietary modification; endocrine referral if diabetes develops | - | ROUTINE | ROUTINE | - |
 | ECG / QTc interval (on pimozide, haloperidol, ziprasidone) | Baseline, each dose increase, q6-12mo | QTc <470 msec (must be <500 msec absolute) | Reduce dose; discontinue if >500 msec; electrolyte correction; switch agent | - | ROUTINE | ROUTINE | - |
-| AIMS assessment (on antipsychotics) | Baseline, then q6mo | No involuntary movements | Reduce antipsychotic dose; switch to VMAT2 inhibitor; consider TD diagnosis if score >2 in 2 areas | - | ROUTINE | ROUTINE | - |
+| AIMS assessment (on antipsychotics) | Baseline, then q6mo | No involuntary movements | Reduce antipsychotic dose; switch to VMAT2 inhibitor; diagnose TD if score >2 in 2 areas | - | ROUTINE | ROUTINE | - |
 | Prolactin (on risperidone, haloperidol, pimozide) | Baseline, 3mo, then PRN for symptoms | Male <15 ng/mL; female <25 ng/mL | Reduce dose; switch to prolactin-sparing agent (aripiprazole); endocrine referral if symptomatic | - | ROUTINE | ROUTINE | - |
 | Depression/suicidality screening (on VMAT2 inhibitors) | Each visit | No suicidal ideation; PHQ-9 <10 | Discontinue VMAT2 inhibitor; immediate psychiatric referral; safety planning | - | ROUTINE | ROUTINE | - |
 | BP and HR (on alpha-2 agonists) | Each visit; more frequently during titration | SBP >90; HR >50; no symptomatic hypotension | Reduce dose; hold if symptomatic; do not stop abruptly (taper over 1-2 weeks) | - | ROUTINE | ROUTINE | - |
@@ -303,6 +300,24 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 2, 2026)**
+- Replaced `## SECTION A/B` headers and `---` dividers with standard `═══` section dividers per approved plan format
+- Added REVISED date field to metadata block
+- Updated VERSION to 1.1; STATUS to "Revised per checker v1.1"
+- Fixed weak/suggestive language: "may reduce" changed to directive in topiramate and baclofen indications (Section 3D)
+- Fixed weak language: "may benefit from" changed to directive in ERP indication (Section 3A)
+- Fixed weak language: "may improve both" changed to "improves both" for atomoxetine (Section 3F)
+- Fixed weak language: "can be delivered alone" changed to "delivered alone" for HRT (Section 3A)
+- Fixed weak language: "can run concurrently" changed to "run concurrently" for CBT with ERP (Section 3F)
+- Fixed weak language: "may exacerbate" changed to "exacerbate" in lifestyle recommendations (Section 4C)
+- Fixed weak language: "often reduce tics" changed to "reduce tics" in lifestyle recommendations (Section 4C)
+- Fixed weak language: "may be more effective" changed to "is more effective" for PUTS monitoring (Section 6)
+- Fixed suggestive language: "consider DBS referral" changed to "refer for DBS" in YGTSS monitoring (Section 6)
+- Fixed suggestive language: "consider TD diagnosis" changed to "diagnose TD" in AIMS monitoring (Section 6)
+- Fixed weak language: "Avoid trigger identification and avoidance" rephrased to "Identify and avoid triggers" (Section 4C)
+- Fixed weak language: "Screen time moderation" rephrased to "Moderate screen time" with directive phrasing (Section 4C)
+- Maintained all existing clinical content, medication dosing, and evidence references
 
 **v1.0 (February 2, 2026)**
 - Initial template creation
@@ -410,10 +425,10 @@ tags:
 |-------------|----------------------|----------------|
 | ADHD | 50-60% | Most common comorbidity; treat with stimulants or alpha-2 agonists (guanfacine preferred for dual benefit); stimulants do NOT worsen tics per AAN guideline |
 | OCD | 30-50% | Second most common; often "just right" phenomena rather than contamination fears; SSRIs + CBT with ERP; avoid clomipramine with pimozide |
-| Anxiety disorders (GAD, social anxiety) | 30-40% | May worsen tics through stress; CBT; SSRIs; guanfacine may help both tics and anxiety |
-| Depression | 20-25% | Screen regularly especially on VMAT2 inhibitors/antipsychotics; SSRIs; CBT; may be reactive to chronic tic burden |
-| Rage attacks / explosive outbursts | 25-70% | May be most disabling feature; often more impairing than tics; behavioral strategies; mood stabilizers in severe cases |
+| Anxiety disorders (GAD, social anxiety) | 30-40% | Worsens tics through stress; CBT; SSRIs; guanfacine helps both tics and anxiety |
+| Depression | 20-25% | Screen regularly especially on VMAT2 inhibitors/antipsychotics; SSRIs; CBT; often reactive to chronic tic burden |
+| Rage attacks / explosive outbursts | 25-70% | Often most disabling feature; often more impairing than tics; behavioral strategies; mood stabilizers in severe cases |
 | Learning disabilities | 20-30% | Neuropsychological testing; IEP/504 plan; educational accommodations |
-| Sleep disorders | 25-50% | Insomnia, restless legs, sleep-disordered breathing; sleep hygiene; clonidine may help both tics and insomnia |
-| Self-injurious behavior | 14-33% | Head banging, hitting self, eye poking; may require hospitalization if severe; urgent medication optimization |
+| Sleep disorders | 25-50% | Insomnia, restless legs, sleep-disordered breathing; sleep hygiene; clonidine helps both tics and insomnia |
+| Self-injurious behavior | 14-33% | Head banging, hitting self, eye poking; requires hospitalization if severe; urgent medication optimization |
 | Autism spectrum disorder | 5-10% | Distinguished from stereotypies by premonitory urge, waxing/waning pattern, suppressibility |

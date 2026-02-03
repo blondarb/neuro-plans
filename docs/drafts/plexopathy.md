@@ -1,7 +1,7 @@
 ---
 title: "Plexopathy - Brachial and Lumbosacral"
 description: "Evaluation and management of brachial and lumbosacral plexopathy including idiopathic (Parsonage-Turner), traumatic, compressive, radiation-induced, diabetic, and neoplastic etiologies."
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,22 +22,23 @@ tags:
 
 # Plexopathy - Brachial and Lumbosacral
 
+**VERSION:** 1.1
+**CREATED:** February 2, 2026
+**REVISED:** February 2, 2026
+
+**STATUS:** Revised per checker v1.1
+
+---
+
 **DIAGNOSIS:** Plexopathy - Brachial and Lumbosacral
 **ICD-10:** G54.0 (Brachial plexus disorders); G54.1 (Lumbosacral plexus disorders); G54.5 (Neuralgic amyotrophy / Parsonage-Turner syndrome); G54.9 (Nerve root and plexus disorder, unspecified); G62.0 (Drug-induced polyneuropathy, radiation plexopathy); C47.1 (Malignant neoplasm of peripheral nerves of upper limb, including shoulder); C47.2 (Malignant neoplasm of peripheral nerves of lower limb, including hip); G63 (Polyneuropathy in diseases classified elsewhere); E11.44 (Type 2 diabetes with diabetic amyotrophy)
 **CPT CODES:** 95907-95913 (NCS 1-13 studies), 95885-95887 (needle EMG limited/complete/each additional), 72141 (MRI cervical spine without contrast), 72148 (MRI lumbar spine without contrast), 72196 (MRI pelvis without contrast), 72197 (MRI pelvis with and without contrast), 73218 (MRI upper extremity without contrast), 73221 (MRI upper extremity with and without contrast), 73720 (MRI lower extremity with and without contrast), 70553 (MRI brain with and without contrast), 95886 (needle EMG complete), 95909 (NCS 5-6 studies), 36415 (venipuncture), 86235 (nuclear antigen antibody), 86200 (CCP antibody), 86038 (ANA), 88305 (surgical pathology), 20206 (needle biopsy, muscle), 64708 (neuroplasty, major peripheral nerve arm), 64712 (neuroplasty, sciatic nerve), 64713 (neuroplasty, brachial plexus), 64856 (nerve repair, suture), 64910 (nerve graft)
 **SYNONYMS:** Plexopathy, brachial plexopathy, lumbosacral plexopathy, Parsonage-Turner syndrome, neuralgic amyotrophy, brachial neuritis, idiopathic brachial plexopathy, diabetic amyotrophy, diabetic lumbosacral radiculoplexus neuropathy, DLRPN, radiation plexopathy, neoplastic plexopathy, traumatic plexopathy, obstetric brachial plexus palsy, Erb palsy, Klumpke palsy, plexus neuropathy, plexitis
 **SCOPE:** Evaluation and management of brachial and lumbosacral plexopathy in adults. Covers idiopathic/inflammatory (Parsonage-Turner syndrome / neuralgic amyotrophy), traumatic, compressive, radiation-induced, diabetic (diabetic amyotrophy / DLRPN), and neoplastic etiologies. Includes diagnostic workup with MRI plexus imaging, EMG/NCS, and laboratory evaluation. Addresses acute pain management, immunotherapy for inflammatory etiologies, rehabilitation, and surgical considerations. Excludes isolated mononeuropathies (see Carpal Tunnel Syndrome, Peroneal Neuropathy templates), cervical/lumbar radiculopathy (see Radiculopathy template), and brachial plexus birth injuries.
 
-**VERSION:** 1.0
-**CREATED:** February 2, 2026
-
-**STATUS:** Initial build
-
 ---
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
-
----
 
 ## CLINICAL PEARLS: PLEXUS ANATOMY AND LOCALIZATION
 
@@ -61,8 +62,6 @@ tags:
 | **Sacral plexus** | L4-S3 | Hamstrings, ankle plantarflexion, foot intrinsics | Posterior thigh, lateral/posterior leg, sole of foot | Sciatic territory (peroneal + tibial) |
 | **Pudendal plexus** | S2-S4 | Pelvic floor, external sphincters | Perineum, genitalia | Bowel/bladder/sexual dysfunction |
 
----
-
 ## KEY DISTINGUISHING FEATURES BY ETIOLOGY
 
 | Etiology | Onset | Pain | Distribution | Key Features | Diagnostic Clues |
@@ -73,8 +72,6 @@ tags:
 | **Neoplastic** | Subacute-chronic (weeks-months) | Often severe, progressive | Lower trunk brachial (Pancoast); lumbosacral (pelvic tumors) | Weight loss; progressive course; Horner syndrome (lower trunk); palpable mass | MRI with contrast: enhancing mass; PET-CT; biopsy may be needed |
 | **Diabetic amyotrophy (DLRPN)** | Subacute (weeks) | Severe thigh/hip pain | Proximal > distal; often starts unilateral then bilateral | Weight loss; T2DM (may be well-controlled); CSF protein elevated | EMG: lumbosacral plexopathy; nerve biopsy: microvasculitis; MRI: nerve/muscle enhancement |
 | **Compressive/Entrapment** | Gradual or postoperative | Positional; may be painless | Relates to anatomic compression site | Post-surgical (lithotomy, retractors); hematoma; aneurysm | CT/MRI: structural lesion; EMG confirms localization |
-
----
 
 ## RED FLAGS REQUIRING URGENT EVALUATION
 
@@ -91,11 +88,9 @@ tags:
 | **Acute plexopathy after shoulder dislocation** | Traumatic brachial plexus injury; vascular injury | CT angiography; orthopedic/trauma consult; MR neurography |
 | **Rapidly progressive bilateral plexopathy** | Vasculitic neuropathy; CIDP; lymphoma | ESR/CRP; ANCA; SPEP; CSF analysis; nerve biopsy |
 
----
-
-## SECTION A: ACTION ITEMS
-
----
+═══════════════════════════════════════════════════════════════
+SECTION A: ACTION ITEMS
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -252,44 +247,42 @@ tags:
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Return to ED IMMEDIATELY if rapid worsening of weakness, loss of ability to use arm/hand or walk, or new bowel/bladder dysfunction | STAT | STAT | STAT |
-| Return to ED if fever develops with worsening neurological symptoms (may indicate infection) | STAT | STAT | STAT |
-| Return if new onset of drooping eyelid with arm weakness (Horner syndrome - may indicate Pancoast tumor) | STAT | STAT | STAT |
-| Parsonage-Turner syndrome (neuralgic amyotrophy) typically has a prolonged recovery course (months to 2-3 years); improvement is expected but slow | ROUTINE | ROUTINE | ROUTINE |
-| Protect the weak limb from injury: avoid carrying heavy objects with affected arm; use assistive devices for walking if leg is weak | ROUTINE | ROUTINE | ROUTINE |
-| For shoulder plexopathy: avoid sleeping on the affected side; use a sling only as directed (prolonged sling use causes frozen shoulder) | ROUTINE | ROUTINE | ROUTINE |
-| Perform prescribed physical therapy exercises daily at home to maintain range of motion and prevent contractures | - | ROUTINE | ROUTINE |
-| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ROUTINE | ROUTINE |
-| Neuropathic pain medications (gabapentin, pregabalin, duloxetine) take 2-4 weeks to reach full effect; do not stop prematurely | - | ROUTINE | ROUTINE |
-| If diabetic: tight glucose control is essential for recovery; monitor blood sugars as directed and follow up with endocrinology | - | ROUTINE | ROUTINE |
-| Report any new lumps, unexplained weight loss, or night sweats to your physician (may indicate malignancy) | ROUTINE | ROUTINE | ROUTINE |
-| Do not drive while taking opioids or sedating medications | ROUTINE | ROUTINE | ROUTINE |
-| Follow up with neurology in 2-4 weeks for clinical and EMG reassessment | ROUTINE | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Return to ED IMMEDIATELY if rapid worsening of weakness, loss of ability to use arm/hand or walk, or new bowel/bladder dysfunction | STAT | STAT | STAT | STAT |
+| Return to ED if fever develops with worsening neurological symptoms (may indicate infection) | STAT | STAT | STAT | STAT |
+| Return if new onset of drooping eyelid with arm weakness (Horner syndrome - may indicate Pancoast tumor) | STAT | STAT | STAT | STAT |
+| Parsonage-Turner syndrome (neuralgic amyotrophy) typically has a prolonged recovery course (months to 2-3 years); improvement is expected but slow | ROUTINE | ROUTINE | ROUTINE | - |
+| Protect the weak limb from injury: avoid carrying heavy objects with affected arm; use assistive devices for walking if leg is weak | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| For shoulder plexopathy: avoid sleeping on the affected side; use a sling only as directed (prolonged sling use causes frozen shoulder) | ROUTINE | ROUTINE | ROUTINE | - |
+| Perform prescribed physical therapy exercises daily at home to maintain range of motion and prevent contractures | - | ROUTINE | ROUTINE | - |
+| Do not stop gabapentin/pregabalin abruptly - taper under medical guidance to avoid withdrawal | - | ROUTINE | ROUTINE | - |
+| Neuropathic pain medications (gabapentin, pregabalin, duloxetine) take 2-4 weeks to reach full effect; do not stop prematurely | - | ROUTINE | ROUTINE | - |
+| If diabetic: tight glucose control is essential for recovery; monitor blood sugars as directed and follow up with endocrinology | - | ROUTINE | ROUTINE | - |
+| Report any new lumps, unexplained weight loss, or night sweats to your physician (may indicate malignancy) | ROUTINE | ROUTINE | ROUTINE | - |
+| Do not drive while taking opioids or sedating medications | ROUTINE | ROUTINE | ROUTINE | - |
+| Follow up with neurology in 2-4 weeks for clinical and EMG reassessment | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Smoking cessation to improve nerve healing and reduce vascular risk (smoking impairs peripheral nerve regeneration) | ROUTINE | ROUTINE | ROUTINE |
-| Weight management to reduce mechanical stress on plexus and improve surgical outcomes if needed | - | ROUTINE | ROUTINE |
-| Glycemic control if diabetic (HbA1c <7%) to prevent diabetic amyotrophy recurrence and facilitate nerve recovery | - | ROUTINE | ROUTINE |
-| Avoid rapid glucose reduction (HbA1c drop >2% in 3 months) which can paradoxically worsen neuropathy (treatment-induced neuropathy of diabetes) | - | ROUTINE | ROUTINE |
-| Ergonomic workstation modifications if plexopathy affects work capacity; consider adjustable desk, ergonomic keyboard | - | - | ROUTINE |
-| Use shoulder/arm sling as directed for brachial plexopathy but remove regularly for ROM exercises to prevent frozen shoulder | - | ROUTINE | ROUTINE |
-| Avoid repetitive overhead activities during recovery from brachial plexopathy | - | ROUTINE | ROUTINE |
-| Fall prevention measures if lower extremity weakness present (remove loose rugs, install grab bars, use assistive devices) | - | ROUTINE | ROUTINE |
-| Maintain range of motion with daily passive and active exercises to prevent contractures | - | ROUTINE | ROUTINE |
-| Adequate nutrition (protein, vitamin B complex) to support nerve regeneration | - | ROUTINE | ROUTINE |
-| Manage stress and ensure adequate sleep as chronic pain worsens with fatigue and stress | - | ROUTINE | ROUTINE |
-| Alcohol moderation (excessive alcohol impairs nerve regeneration and compounds neuropathy risk) | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Smoking cessation to improve nerve healing and reduce vascular risk (smoking impairs peripheral nerve regeneration) | ROUTINE | ROUTINE | ROUTINE | - |
+| Weight management to reduce mechanical stress on plexus and improve surgical outcomes if needed | - | ROUTINE | ROUTINE | - |
+| Glycemic control if diabetic (HbA1c <7%) to prevent diabetic amyotrophy recurrence and facilitate nerve recovery | - | ROUTINE | ROUTINE | - |
+| Avoid rapid glucose reduction (HbA1c drop >2% in 3 months) which can paradoxically worsen neuropathy (treatment-induced neuropathy of diabetes) | - | ROUTINE | ROUTINE | - |
+| Ergonomic workstation modifications if plexopathy affects work capacity; adjustable desk, ergonomic keyboard | - | - | ROUTINE | - |
+| Use shoulder/arm sling as directed for brachial plexopathy but remove regularly for ROM exercises to prevent frozen shoulder | - | ROUTINE | ROUTINE | - |
+| Avoid repetitive overhead activities during recovery from brachial plexopathy | - | ROUTINE | ROUTINE | - |
+| Fall prevention measures if lower extremity weakness present (remove loose rugs, install grab bars, use assistive devices) | - | ROUTINE | ROUTINE | - |
+| Maintain range of motion with daily passive and active exercises to prevent contractures | - | ROUTINE | ROUTINE | - |
+| Adequate nutrition (protein, vitamin B complex) to support nerve regeneration | - | ROUTINE | ROUTINE | - |
+| Manage stress and ensure adequate sleep as chronic pain worsens with fatigue and stress | - | ROUTINE | ROUTINE | - |
+| Alcohol moderation (excessive alcohol impairs nerve regeneration and compounds neuropathy risk) | - | ROUTINE | ROUTINE | - |
 
----
-
-## SECTION B: REFERENCE
-
----
+═══════════════════════════════════════════════════════════════
+SECTION B: REFERENCE
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -460,6 +453,17 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 2, 2026)**
+- Replaced `---` section dividers between SECTION A and SECTION B with `═══` format per C1/C2
+- Changed `## SECTION A: ACTION ITEMS` and `## SECTION B: REFERENCE` from H2 markdown headers to plain text labels inside `═══` dividers per C2/R3
+- Added ICU column to Section 4B (Patient Instructions) per C3/S1
+- Added ICU column to Section 4C (Lifestyle & Prevention) per C4/S2
+- Reordered metadata block to place VERSION/CREATED/REVISED/STATUS before DIAGNOSIS per R4
+- Added REVISED date per R6
+- Updated version from 1.0 to 1.1 in frontmatter and body
+- Removed extraneous `---` dividers between Clinical Pearls, Key Features, and Red Flags sections (replaced with plain section breaks)
+- Updated STATUS to "Revised per checker v1.1"
 
 **v1.0 (February 2, 2026)**
 - Initial creation
