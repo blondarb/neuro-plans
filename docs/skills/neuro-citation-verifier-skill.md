@@ -94,17 +94,27 @@ If the search doesn't return results confirming the paper matches your claim, th
 
 ### Use the Citation Verification Script
 
-Run `scripts/verify_citations.py` to extract all PMIDs from a plan:
+Run `scripts/verify_citations.py` to validate PMIDs at multiple levels:
 
 ```bash
-# Single plan
-python scripts/verify_citations.py docs/plans/migraine.md
+# STEP 1 — Offline lint (always run first, no API needed)
+# Catches format errors, out-of-range PMIDs, and year-vs-PMID mismatches
+python scripts/verify_citations.py --all --lint
 
-# All approved plans
-python scripts/verify_citations.py --all
+# STEP 2 — API verification (requires PubMed API access)
+# Checks each PMID exists and metadata matches claimed citation
+python scripts/verify_citations.py docs/plans/migraine.md --verify
+
+# STEP 3 — With caching (recommended: avoids re-verifying known-good PMIDs)
+python scripts/verify_citations.py --all --verify --cache
+
+# STEP 4 — Find correct PMIDs for mismatches
+python scripts/verify_citations.py --all --repair --apply --cache
 ```
 
-This outputs all citations with their claimed content, making it easy to verify each PMID systematically.
+**Mandatory gate:** The `--lint` check MUST pass (exit code 0) before a plan can be marked `completed` in the queue. This catches hallucinated PMIDs offline without needing API access.
+
+The `--verify` mode will now fail fast if the PubMed API is unreachable, instead of silently reporting 0% accuracy. Use `--cache` to store results from previous runs and avoid redundant API calls.
 
 ---
 

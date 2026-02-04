@@ -14,6 +14,8 @@ Usage:
     python scripts/verify_citations.py --all --verify --json report.json
     python scripts/verify_citations.py --all --repair --json repair-report.json
     python scripts/verify_citations.py --all --repair --apply
+    python scripts/verify_citations.py --all --lint          # offline format check
+    python scripts/verify_citations.py --all --verify --cache # use/update cache
 
 Modes:
     (default)   Extract and list citations with PMIDs
@@ -21,6 +23,8 @@ Modes:
     --fix       Auto-correct citation text to match PubMed metadata (implies --verify)
     --repair    Find correct PMIDs for mismatched citations via PubMed search (implies --verify)
     --apply     Apply found corrections to markdown files (implies --repair)
+    --lint      Offline PMID format/range validation (no API needed)
+    --cache     Use local cache for verified PMIDs (reads + writes cache file)
     --json FILE Write verification/repair results to JSON file
     --quiet     Suppress per-citation output, show only summary
 """
@@ -52,39 +56,360 @@ API_PARAMS = {
 # Seconds between API calls (3 req/sec without API key; use 0.5 for safety margin)
 RATE_LIMIT_DELAY = 0.5
 
+# Retry settings for transient API failures
+MAX_RETRIES = 3
+RETRY_BACKOFF_BASE = 2  # seconds — exponential: 2, 4, 8
+
+# Cache file for verified PMIDs
+CACHE_FILE = Path("docs/data/pmid-cache.json")
+
+
+# ---------------------------------------------------------------------------
+# PMID format/range validation (offline — no API needed)
+# ---------------------------------------------------------------------------
+
+# Valid PMID range as of early 2026. PubMed IDs are sequential integers.
+# First PMID: 1 (1946). As of Feb 2026, highest is ~41,700,000.
+PMID_MIN = 1
+PMID_MAX = 42_000_000  # generous upper bound; update periodically
+
+
+# Approximate mapping of publication year to expected PMID range.
+# Used for offline cross-reference validation.
+# Source: PubMed sequential numbering; values are approximate bounds.
+YEAR_TO_PMID_RANGE = {
+    1990: (1_000_000, 3_000_000),
+    1995: (3_000_000, 9_000_000),
+    2000: (9_000_000, 12_000_000),
+    2005: (14_000_000, 17_000_000),
+    2010: (19_000_000, 22_000_000),
+    2012: (21_000_000, 24_500_000),
+    2015: (24_500_000, 27_500_000),
+    2017: (27_000_000, 30_500_000),
+    2018: (28_500_000, 31_500_000),
+    2019: (30_000_000, 33_000_000),
+    2020: (31_500_000, 34_000_000),
+    2021: (33_000_000, 35_500_000),
+    2022: (34_500_000, 37_000_000),
+    2023: (36_000_000, 39_000_000),
+    2024: (37_500_000, 40_500_000),
+    2025: (39_500_000, 42_500_000),
+    2026: (41_000_000, 44_000_000),
+}
+
+
+def _expected_pmid_range_for_year(year_str: str) -> tuple:
+    """
+    Return (min_pmid, max_pmid) expected for a given publication year.
+    Returns None if year is not in our lookup table.
+    Uses generous margins (±3M) to avoid false positives.
+    """
+    try:
+        year = int(year_str)
+    except (ValueError, TypeError):
+        return None
+
+    # Direct lookup
+    if year in YEAR_TO_PMID_RANGE:
+        lo, hi = YEAR_TO_PMID_RANGE[year]
+        return (max(1, lo - 3_000_000), hi + 3_000_000)
+
+    # Interpolate for years between known points
+    years = sorted(YEAR_TO_PMID_RANGE.keys())
+    if year < years[0] or year > years[-1]:
+        return None
+
+    for i in range(len(years) - 1):
+        if years[i] <= year <= years[i + 1]:
+            lo_year, hi_year = years[i], years[i + 1]
+            lo_range = YEAR_TO_PMID_RANGE[lo_year]
+            hi_range = YEAR_TO_PMID_RANGE[hi_year]
+            frac = (year - lo_year) / (hi_year - lo_year)
+            est_min = int(lo_range[0] + frac * (hi_range[0] - lo_range[0]))
+            est_max = int(lo_range[1] + frac * (hi_range[1] - lo_range[1]))
+            return (max(1, est_min - 3_000_000), est_max + 3_000_000)
+
+    return None
+
+
+def validate_pmid_format(pmid: str, citation_text: str = "") -> list[str]:
+    """
+    Validate PMID format offline (no API call).
+    Returns list of issue strings; empty list = valid format.
+
+    If citation_text is provided, cross-references the claimed year
+    against the expected PMID range for that year.
+    """
+    issues = []
+
+    # Must be all digits
+    if not pmid.isdigit():
+        issues.append(f"PMID '{pmid}' contains non-digit characters")
+        return issues
+
+    pmid_int = int(pmid)
+
+    # Length check (valid PMIDs are 1-8 digits)
+    if len(pmid) > 8:
+        issues.append(f"PMID {pmid} has {len(pmid)} digits (max 8)")
+
+    # Range check
+    if pmid_int < PMID_MIN:
+        issues.append(f"PMID {pmid} is below minimum valid range")
+    elif pmid_int > PMID_MAX:
+        issues.append(f"PMID {pmid} exceeds known PubMed range (>{PMID_MAX})")
+
+    # Year-vs-PMID cross-reference: if the citation claims a specific year,
+    # the PMID should be in the expected range for that year.
+    # This catches the most common hallucination: a real paper title with a
+    # fabricated PMID that is wildly out of range for the publication year.
+    if citation_text:
+        year_match = re.search(r'\b((?:19|20)\d{2})\b', citation_text)
+        if year_match:
+            claimed_year = year_match.group(1)
+            expected = _expected_pmid_range_for_year(claimed_year)
+            if expected:
+                lo, hi = expected
+                if pmid_int < lo or pmid_int > hi:
+                    issues.append(
+                        f"PMID {pmid} is outside expected range for year "
+                        f"{claimed_year} (expected ~{lo:,}–{hi:,})"
+                    )
+
+    return issues
+
+
+def lint_pmids(plan_citations: dict) -> dict:
+    """
+    Run offline PMID format/range validation on all extracted citations.
+    Returns dict of {plan: [{"pmid": ..., "issues": [...], "citation": ...}]}.
+    """
+    results = {}
+    total_checked = 0
+    total_issues = 0
+
+    for plan in sorted(plan_citations.keys()):
+        plan_issues = []
+        for cit in plan_citations[plan]:
+            pmid = cit["pmid"]
+            total_checked += 1
+            issues = validate_pmid_format(pmid, cit["citation"])
+            if issues:
+                total_issues += len(issues)
+                plan_issues.append({
+                    "pmid": pmid,
+                    "citation": cit["citation"],
+                    "line": cit.get("line"),
+                    "issues": issues,
+                })
+
+        if plan_issues:
+            results[plan] = plan_issues
+
+    print(f"\n{'='*70}")
+    print(f"  PMID LINT RESULTS (offline format check)")
+    print(f"{'='*70}")
+    print(f"  PMIDs checked:  {total_checked}")
+    print(f"  Issues found:   {total_issues}")
+    print(f"  Plans affected: {len(results)}")
+    print(f"{'='*70}")
+
+    if results:
+        for plan, issues in results.items():
+            print(f"\n  {plan}:")
+            for item in issues:
+                for issue in item["issues"]:
+                    print(f"    ⚠  PMID {item['pmid']}: {issue}")
+                    print(f"       Citation: {item['citation'][:80]}")
+    else:
+        print("\n  ✅ All PMIDs pass format/range checks.")
+
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Verified PMID cache
+# ---------------------------------------------------------------------------
+
+def load_cache() -> dict:
+    """Load the verified PMID cache from disk."""
+    if CACHE_FILE.exists():
+        try:
+            data = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and "pmids" in data:
+                return data
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return {"version": 1, "pmids": {}}
+
+
+def save_cache(cache: dict):
+    """Save the verified PMID cache to disk."""
+    CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    cache["updated"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    CACHE_FILE.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def update_cache_from_metadata(cache: dict, metadata: dict) -> int:
+    """
+    Add verified PMIDs to cache. Only caches PMIDs confirmed to exist.
+    Returns number of new entries added.
+    """
+    added = 0
+    for pmid, meta in metadata.items():
+        if meta.get("exists") and pmid not in cache["pmids"]:
+            cache["pmids"][pmid] = {
+                "title": meta.get("title", ""),
+                "first_author": meta.get("first_author", ""),
+                "journal_abbrev": meta.get("journal_abbrev", ""),
+                "year": meta.get("year", ""),
+                "verified_date": time.strftime("%Y-%m-%d"),
+            }
+            added += 1
+    return added
+
+
+# ---------------------------------------------------------------------------
+# API connectivity and request handling
+# ---------------------------------------------------------------------------
+
+def check_api_connectivity() -> bool:
+    """
+    Quick connectivity check against NCBI E-utilities.
+    Tests with a single well-known PMID (NINDS rt-PA trial, PMID 7477192).
+    Returns True if API is reachable and responding correctly.
+    """
+    test_pmid = "7477192"
+    try:
+        params = {**API_PARAMS, "db": "pubmed", "id": test_pmid, "retmode": "json"}
+        query = "&".join(f"{k}={urllib.request.quote(str(v))}" for k, v in params.items())
+        url = f"{ESUMMARY_URL}?{query}"
+        req = urllib.request.Request(url, headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            # Verify we got a real response
+            result = data.get("result", {}).get(test_pmid, {})
+            if result and "error" not in result:
+                return True
+            print("  ⚠ API returned unexpected response format", file=sys.stderr)
+            return False
+    except urllib.error.HTTPError as e:
+        print(f"  ✖ PubMed API HTTP error: {e.code} {e.reason}", file=sys.stderr)
+        return False
+    except urllib.error.URLError as e:
+        print(f"  ✖ PubMed API unreachable: {e.reason}", file=sys.stderr)
+        return False
+    except Exception as e:
+        print(f"  ✖ PubMed API check failed: {e}", file=sys.stderr)
+        return False
+
+
+class APIError(Exception):
+    """Raised when the PubMed API is unreachable (distinct from PMID not found)."""
+    pass
+
 
 def _api_get(url: str, params: dict) -> dict:
-    """Make a GET request to NCBI E-utilities and return parsed JSON."""
+    """
+    Make a GET request to NCBI E-utilities and return parsed JSON.
+    Retries on transient failures with exponential backoff.
+    Raises APIError on persistent network failures.
+    """
     all_params = {**API_PARAMS, **params}
     query = "&".join(f"{k}={urllib.request.quote(str(v))}" for k, v in all_params.items())
     full_url = f"{url}?{query}"
 
-    req = urllib.request.Request(full_url, headers={"Accept": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        print(f"  API error: {e.code} {e.reason}", file=sys.stderr)
-        return {}
-    except urllib.error.URLError as e:
-        print(f"  Network error: {e.reason}", file=sys.stderr)
-        return {}
-    except Exception as e:
-        print(f"  Unexpected error: {e}", file=sys.stderr)
-        return {}
+    last_error = None
+    for attempt in range(MAX_RETRIES):
+        req = urllib.request.Request(full_url, headers={"Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                # Rate limited — wait longer and retry
+                wait = RETRY_BACKOFF_BASE ** (attempt + 1)
+                print(f"  Rate limited (429), retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+                last_error = e
+                continue
+            elif e.code >= 500:
+                # Server error — retry
+                wait = RETRY_BACKOFF_BASE ** (attempt + 1)
+                print(f"  Server error ({e.code}), retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+                last_error = e
+                continue
+            else:
+                # Client error (400, 403, etc.) — don't retry
+                last_error = e
+                break
+        except urllib.error.URLError as e:
+            wait = RETRY_BACKOFF_BASE ** (attempt + 1)
+            if attempt < MAX_RETRIES - 1:
+                print(f"  Network error, retrying in {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+            last_error = e
+            continue
+        except Exception as e:
+            last_error = e
+            break
+
+    # All retries exhausted — raise instead of silently returning {}
+    raise APIError(f"PubMed API request failed after {MAX_RETRIES} attempts: {last_error}")
 
 
-def fetch_pmid_metadata(pmids: list[str]) -> dict:
+def fetch_pmid_metadata(pmids: list[str], cache: dict = None) -> dict:
     """
     Batch-fetch metadata for a list of PMIDs via ESummary.
     Returns dict keyed by PMID with title, authors, journal, year, doi.
     Handles up to 200 PMIDs per request.
+
+    If cache is provided, returns cached results for known-good PMIDs
+    and only queries the API for uncached ones.
+
+    Raises APIError if the API is unreachable.
     """
     results = {}
+
+    # Phase 1: Serve from cache where possible
+    uncached_pmids = list(pmids)
+    if cache:
+        cached_pmids = cache.get("pmids", {})
+        uncached_pmids = []
+        for pmid in pmids:
+            if pmid in cached_pmids:
+                entry = cached_pmids[pmid]
+                results[pmid] = {
+                    "exists": True,
+                    "title": entry.get("title", ""),
+                    "authors": [],
+                    "first_author": entry.get("first_author", ""),
+                    "last_author": "",
+                    "journal": "",
+                    "journal_abbrev": entry.get("journal_abbrev", ""),
+                    "year": entry.get("year", ""),
+                    "volume": "",
+                    "issue": "",
+                    "pages": "",
+                    "doi": None,
+                    "from_cache": True,
+                }
+            else:
+                uncached_pmids.append(pmid)
+
+        if results:
+            print(f"  Cache: {len(results)} PMIDs from cache, "
+                  f"{len(uncached_pmids)} need API lookup")
+
+    if not uncached_pmids:
+        return results
+
+    # Phase 2: Fetch uncached PMIDs from API
     batch_size = 200
 
-    for i in range(0, len(pmids), batch_size):
-        batch = pmids[i:i + batch_size]
+    for i in range(0, len(uncached_pmids), batch_size):
+        batch = uncached_pmids[i:i + batch_size]
         data = _api_get(ESUMMARY_URL, {
             "db": "pubmed",
             "id": ",".join(batch),
@@ -123,7 +448,7 @@ def fetch_pmid_metadata(pmids: list[str]) -> dict:
                 }
 
         # Rate limit between batches
-        if i + batch_size < len(pmids):
+        if i + batch_size < len(uncached_pmids):
             time.sleep(RATE_LIMIT_DELAY)
 
     return results
@@ -131,7 +456,8 @@ def fetch_pmid_metadata(pmids: list[str]) -> dict:
 
 def search_pubmed(author: str = "", journal: str = "", year: str = "",
                   title_words: str = "", max_results: int = 5) -> list[str]:
-    """Search PubMed by author/journal/year/title. Returns list of PMIDs."""
+    """Search PubMed by author/journal/year/title. Returns list of PMIDs.
+    Raises APIError if the API is unreachable."""
     parts = []
     if author:
         parts.append(f"{author}[Author]")
@@ -1054,6 +1380,10 @@ def main():
                         help="Find correct PMIDs for mismatched citations (implies --verify)")
     parser.add_argument("--apply", action="store_true",
                         help="Apply PMID corrections to files (implies --repair)")
+    parser.add_argument("--lint", action="store_true",
+                        help="Offline PMID format/range validation (no API needed)")
+    parser.add_argument("--cache", action="store_true",
+                        help="Use local cache for verified PMIDs (reads + writes)")
     parser.add_argument("--confidence", choices=["high", "medium"],
                         default="high",
                         help="Minimum confidence for --apply (default: high)")
@@ -1109,6 +1439,17 @@ def main():
     if total_unlinked:
         print(f"Found {total_unlinked} unlinked citations (no PubMed URL)")
 
+    # --lint mode: offline format/range validation (no API needed)
+    if args.lint:
+        lint_results = lint_pmids(plan_citations)
+        if args.json:
+            with open(args.json, "w", encoding="utf-8") as f:
+                json.dump({"lint": lint_results}, indent=2, ensure_ascii=False, fp=f)
+            print(f"\nLint results written to {args.json}")
+        if lint_results:
+            sys.exit(1)  # Non-zero exit for CI gating
+        return
+
     if not args.verify:
         # Extract-only mode — just list what we found
         for plan, citations in sorted(plan_citations.items()):
@@ -1125,14 +1466,93 @@ def main():
         print(", ".join(pmids_sorted))
         return
 
-    # Phase 2: Batch-verify all PMIDs via PubMed API
-    print(f"\nVerifying {len(all_pmids)} unique PMIDs against PubMed API...")
-    pmid_list = sorted(all_pmids)
-    metadata = fetch_pmid_metadata(pmid_list)
+    # ---------------------------------------------------------------
+    # Connectivity pre-check (fail fast if API is unreachable)
+    # ---------------------------------------------------------------
+    print("\nChecking PubMed API connectivity...")
+    api_available = check_api_connectivity()
 
-    found = sum(1 for v in metadata.values() if v.get("exists"))
-    not_found = sum(1 for v in metadata.values() if not v.get("exists"))
-    print(f"  API results: {found} found, {not_found} not found\n")
+    if not api_available:
+        print("\n" + "=" * 70)
+        print("  ERROR: PubMed API is not reachable!")
+        print("=" * 70)
+        print("  Cannot verify PMIDs without API access.")
+        print("  Possible causes:")
+        print("    - Network/firewall/proxy blocking NCBI E-utilities")
+        print("    - NCBI servers temporarily down")
+        print("    - Rate limiting (too many recent requests)")
+        print()
+        print("  Available offline alternatives:")
+        print("    --lint     Run format/range validation (no API)")
+        print("    --cache    Use cached results from a previous run")
+        print()
+
+        # If cache is available, offer to use it
+        if args.cache:
+            cache = load_cache()
+            cached_count = len(cache.get("pmids", {}))
+            if cached_count > 0:
+                print(f"  Cache contains {cached_count} verified PMIDs "
+                      f"(last updated: {cache.get('updated', 'unknown')})")
+                print("  Proceeding with cached data only...\n")
+                # Build metadata from cache only
+                metadata = {}
+                for pmid in sorted(all_pmids):
+                    cached = cache["pmids"].get(pmid)
+                    if cached:
+                        metadata[pmid] = {
+                            "exists": True,
+                            "title": cached.get("title", ""),
+                            "authors": [],
+                            "first_author": cached.get("first_author", ""),
+                            "last_author": "",
+                            "journal": "",
+                            "journal_abbrev": cached.get("journal_abbrev", ""),
+                            "year": cached.get("year", ""),
+                            "from_cache": True,
+                        }
+                    else:
+                        metadata[pmid] = {"exists": False, "api_unavailable": True}
+
+                cached_hits = sum(1 for v in metadata.values() if v.get("exists"))
+                uncached = len(all_pmids) - cached_hits
+                print(f"  Cache hits: {cached_hits}/{len(all_pmids)} "
+                      f"({uncached} PMIDs not in cache — shown as NOT_FOUND)")
+            else:
+                print("  Cache is empty. Run with API access first to populate it.")
+                sys.exit(1)
+        else:
+            print("  Tip: Run with --cache to use/build a local cache,")
+            print("       or --lint for offline format checks.")
+            sys.exit(1)
+    else:
+        print("  ✓ PubMed API is reachable\n")
+
+        # Load cache if requested
+        cache = load_cache() if args.cache else None
+
+        # Phase 2: Batch-verify all PMIDs via PubMed API
+        print(f"Verifying {len(all_pmids)} unique PMIDs against PubMed API...")
+        pmid_list = sorted(all_pmids)
+
+        try:
+            metadata = fetch_pmid_metadata(pmid_list, cache=cache)
+        except APIError as e:
+            print(f"\n  ✖ API failed during verification: {e}", file=sys.stderr)
+            print("  Try again later, or use --lint for offline checks.")
+            sys.exit(1)
+
+        found = sum(1 for v in metadata.values() if v.get("exists"))
+        not_found = sum(1 for v in metadata.values() if not v.get("exists"))
+        print(f"  API results: {found} found, {not_found} not found\n")
+
+        # Update cache with new results
+        if args.cache and cache is not None:
+            added = update_cache_from_metadata(cache, metadata)
+            if added:
+                save_cache(cache)
+                print(f"  Cache updated: +{added} new PMIDs "
+                      f"({len(cache['pmids'])} total cached)\n")
 
     # Phase 3: Compare and report
     grand_totals = {"VERIFIED": 0, "PARTIAL": 0, "MISMATCH": 0, "NOT_FOUND": 0}
@@ -1211,7 +1631,12 @@ def main():
         print(f"  REPAIR PHASE — searching for correct PMIDs ({mismatch_count} mismatches)")
         print(f"{'='*70}\n")
 
-        repairs = repair_mismatches(plan_citations, metadata, quiet=args.quiet)
+        try:
+            repairs = repair_mismatches(plan_citations, metadata, quiet=args.quiet)
+        except APIError as e:
+            print(f"\n  ✖ API failed during repair phase: {e}", file=sys.stderr)
+            print("  Verification results above are still valid.")
+            repairs = {}
 
         # Apply corrections if requested
         if args.apply and repairs:

@@ -73,9 +73,13 @@ Use `::` not `|`. First field = starting dose only.
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --merge
 python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --check-parity
+python -X utf8 scripts/verify_citations.py --all --lint              # offline PMID check (mandatory)
+python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --cache  # API verification
 ```
 
 Always use `-X utf8` flag on Windows.
+
+**PMID verification:** Run `--lint` (offline) before marking any plan `completed`. Run `--verify --cache` when PubMed API is available to do full metadata checks.
 
 ## Quality Targets
 
