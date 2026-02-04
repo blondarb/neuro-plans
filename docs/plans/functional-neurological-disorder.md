@@ -166,7 +166,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gradual ASM taper (levetiracetam, lamotrigine, valproic acid, etc.) | PO | Confirmed functional seizures (PNES) on unnecessary ASMs; taper AFTER definitive vEEG diagnosis | Per drug-specific taper :: PO :: :: Taper each ASM by 25% every 2 weeks; single-drug taper at a time; monitor for breakthrough if comorbid epilepsy not excluded; complete taper over 2-3 months | Comorbid epilepsy (dual diagnosis: ~10-20% of PNES patients also have epilepsy -- do NOT taper in these patients without epilepsy specialist input) | Event frequency; anxiety (taper anxiety is common); confirm no epileptic events | - | - | ROUTINE | - |
+| Gradual ASM taper (levetiracetam, lamotrigine, valproic acid, etc.) | PO | Confirmed functional seizures (PNES) on unnecessary ASMs; taper AFTER definitive vEEG diagnosis | Per drug-specific taper :: PO :: q2wk taper :: Taper each ASM by 25% every 2 weeks; single-drug taper at a time; monitor for breakthrough if comorbid epilepsy not excluded; complete taper over 2-3 months | Comorbid epilepsy (dual diagnosis: ~10-20% of PNES patients also have epilepsy -- do NOT taper in these patients without epilepsy specialist input) | Event frequency; anxiety (taper anxiety is common); confirm no epileptic events | - | - | ROUTINE | - |
 
 ---
 
