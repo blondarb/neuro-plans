@@ -154,8 +154,8 @@ SECTION A: ACTION ITEMS
 | Midazolam intranasal (if no IV access) | IV | - | 5 mg :: - :: - :: 5 mg per nostril (total 10 mg) | Respiratory depression | RR, O2 sat | STAT | STAT | - | STAT |
 | Dextrose 50% IV | IV | - | 25-50 mL :: IV :: - :: 25-50 mL IV if hypoglycemia confirmed or suspected | Hyperglycemia | Glucose | STAT | STAT | - | STAT |
 | Thiamine IV | IV | - | 100-500 mg :: IV :: - :: 100-500 mg IV BEFORE glucose if alcohol use suspected | None significant | None | STAT | STAT | - | STAT |
-| Supplemental oxygen | INH | - | 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | - | STAT |
-| IV fluids (isotonic) | IV | - | NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | - | STAT |
+| Supplemental oxygen | INH | - | 2-4 L :: INH :: PRN :: 2-4 L NC or non-rebreather as needed | None | O2 sat >94% | STAT | STAT | - | STAT |
+| IV fluids (isotonic) | IV | - | N/A :: IV :: per protocol :: NS or LR bolus if hypotensive; maintenance if euvolemic | Fluid overload, severe hyponatremia | I/O, BP, Na | STAT | STAT | - | STAT |
 | Flumazenil (rescue only) | IV | - | 0.2 mg :: IV :: - :: 0.2 mg IV over 30 sec; may repeat 0.2 mg q1min to max 1 mg | Chronic benzodiazepine use; seizure history; tricyclic overdose | **CAUTION:** May lower seizure threshold and precipitate seizures; use only if severe respiratory depression unresponsive to supportive care | STAT | STAT | - | STAT |
 
 ### 3B. Anti-Seizure Medications (ASMs) - Acute Loading
@@ -205,10 +205,10 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Add second ASM | - | - | Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | - | ROUTINE | ROUTINE | ROUTINE |
-| Epilepsy surgery evaluation referral | - | - | For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | - | EXT | EXT | - |
-| Vagus nerve stimulator (VNS) | - | - | For drug-resistant epilepsy not surgical candidates | N/A | Device checks | - | - | EXT | - |
-| Dietary therapy (ketogenic diet, modified Atkins) | - | - | For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | - | - | EXT | - |
+| Add second ASM | - | - | N/A :: - :: per protocol :: Choose complementary mechanism; see maintenance options | Per specific agent | Per specific agent | - | ROUTINE | ROUTINE | ROUTINE |
+| Epilepsy surgery evaluation referral | - | - | N/A :: - :: once :: For drug-resistant epilepsy (failed 2+ appropriately chosen ASMs) | N/A | N/A | - | EXT | EXT | - |
+| Vagus nerve stimulator (VNS) | - | - | N/A :: - :: continuous :: For drug-resistant epilepsy not surgical candidates | N/A | Device checks | - | - | EXT | - |
+| Dietary therapy (ketogenic diet, modified Atkins) | - | - | N/A :: - :: daily :: For drug-resistant epilepsy | Fatty acid oxidation disorders; pyruvate carboxylase deficiency | Metabolic panels; lipids; kidney function | - | - | EXT | - |
 
 ---
 

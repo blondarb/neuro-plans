@@ -121,7 +121,7 @@ tags:
 | Ibuprofen | PO | - | 400-800 mg :: PO :: once :: 400-800 mg PO once | Renal disease, GI bleeding, aspirin allergy | Renal function | - | ROUTINE | ROUTINE | - |
 | Naproxen sodium | PO | - | 500-825 mg :: PO :: once :: 500-825 mg PO once | Same as ibuprofen | Renal function | - | ROUTINE | ROUTINE | - |
 | Aspirin | PO | - | 900-1000 mg :: PO :: once :: 900-1000 mg PO once | Bleeding disorder, aspirin allergy | Bleeding | - | ROUTINE | ROUTINE | - |
-| Excedrin (ASA/APAP/caffeine) | PO | - | 2 tablets PO once | Per components | Risk of MOH | - | - | ROUTINE | - |
+| Excedrin (ASA/APAP/caffeine) | PO | - | 2 tab :: PO :: once :: 2 tablets PO once | Per components | Risk of MOH | - | - | ROUTINE | - |
 
 ### 3B. Acute/Abortive Treatment - Moderate-Severe Attacks (Triptans)
 

@@ -112,9 +112,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Abrupt discontinuation (simple analgesics, triptans) | - | - | Stop all overused medications immediately; preferred for most patients | None | Headache diary; expect worsening days 2-10 | - | ROUTINE | ROUTINE | - |
+| Abrupt discontinuation (simple analgesics, triptans) | - | - | N/A :: - :: per protocol :: Stop all overused medications immediately; preferred for most patients | None | Headache diary; expect worsening days 2-10 | - | ROUTINE | ROUTINE | - |
 | Gradual taper (opioids, barbiturates) | - | - | 25% :: - :: - :: Reduce by 10-25% every 1-2 weeks; slower for long-term use | None | Withdrawal symptoms | - | ROUTINE | ROUTINE | - |
-| Bridge therapy during withdrawal | - | - | See below | Per agent | Support through withdrawal phase | - | ROUTINE | ROUTINE | - |
+| Bridge therapy during withdrawal | - | - | N/A :: - :: per protocol :: See below | Per agent | Support through withdrawal phase | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Bridge Therapy During Withdrawal
 
@@ -137,8 +137,8 @@ tags:
 | IV ketorolac (CPT 96374) | IV | - | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h × 2-3 days (max 5 days) | Renal disease, GI bleeding | Renal function | - | ROUTINE | - | - |
 | IV valproate | IV | - | 500-1000 mg :: IV :: BID :: 500-1000 mg IV BID × 3-5 days | Pregnancy, hepatic disease | Ammonia, LFTs | - | ROUTINE | - | - |
 | IV diphenhydramine | IV | - | 25-50 mg :: IV :: q6h :: 25-50 mg IV q6h with antiemetics | Glaucoma | Sedation | - | ROUTINE | - | - |
-| Opioid taper protocol | - | - | Structured taper with addiction medicine if significant dependence | N/A | Withdrawal symptoms | - | ROUTINE | - | - |
-| Barbiturate taper | - | - | Phenobarbital substitution and taper for butalbital dependence | N/A | Sedation, withdrawal | - | ROUTINE | - | - |
+| Opioid taper protocol | - | - | N/A :: - :: per protocol :: Structured taper with addiction medicine if significant dependence | N/A | Withdrawal symptoms | - | ROUTINE | - | - |
+| Barbiturate taper | - | - | N/A :: - :: per protocol :: Phenobarbital substitution and taper for butalbital dependence | N/A | Sedation, withdrawal | - | ROUTINE | - | - |
 
 ### 3D. Preventive Medication (Start During or After Withdrawal)
 
@@ -156,8 +156,8 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Triptan (limited) | - | - | Max 2 days/week; max 9 days/month | CV disease | Headache diary | - | - | ROUTINE | - |
-| NSAID (limited) | - | - | Max 2 days/week; max 14 days/month | Renal/GI disease | Headache diary | - | - | ROUTINE | - |
+| Triptan (limited) | - | - | N/A :: - :: per protocol :: Max 2 days/week; max 9 days/month | CV disease | Headache diary | - | - | ROUTINE | - |
+| NSAID (limited) | - | - | N/A :: - :: per protocol :: Max 2 days/week; max 14 days/month | Renal/GI disease | Headache diary | - | - | ROUTINE | - |
 | Gepants (preferred rescue) | PO | - | 50-100 mg :: PO :: - :: Ubrogepant 50-100 mg or Rimegepant 75 mg; may have lower MOH risk | Per agent | May be safer for frequent use | - | - | ROUTINE | - |
 
 ---

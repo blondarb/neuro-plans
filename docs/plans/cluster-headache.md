@@ -123,7 +123,7 @@ tags:
 | Prednisone | - | - | 60-80 mg :: - :: daily :: 60-80 mg daily × 5 days, then taper by 10 mg q3 days; OR 1 mg/kg × 5 days then rapid taper; total course ~2-3 weeks | Uncontrolled DM, active infection | Glucose, GI prophylaxis | - | STAT | ROUTINE | - |
 | Dexamethasone | PO | - | 4-8 mg :: PO :: BID :: 4-8 mg BID × 1-2 weeks, then taper | Same | Same | - | STAT | ROUTINE | - |
 | Greater occipital nerve block (GON block) | - | - | 2 mL :: - :: - :: Lidocaine 2% (2 mL) + triamcinolone 40 mg or methylprednisolone 40 mg; inject ipsilateral or bilateral | Anticoagulation, local infection | May provide 2-4 weeks relief | - | ROUTINE | ROUTINE | - |
-| Suboccipital steroid injection | - | - | Similar to GON block; ipsilateral | Same | Same | - | ROUTINE | ROUTINE | - |
+| Suboccipital steroid injection | - | - | N/A :: - :: once :: Similar to GON block; ipsilateral | Same | Same | - | ROUTINE | ROUTINE | - |
 | DHE protocol (inpatient) (CPT 96365) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with antiemetic pretreatment) | CAD, CVA, uncontrolled HTN, triptans <24h | BP, nausea, peripheral vasoconstriction | - | STAT | - | - |
 
 ### 3C. Preventive Therapy - First-Line
@@ -148,11 +148,11 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Combination verapamil + lithium | - | - | Use both at therapeutic doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
-| OnabotulinumtoxinA | - | - | Off-label; pericranial injections | Infection at site | Limited evidence | - | - | EXT | - |
-| Occipital nerve stimulation (ONS) | - | - | Implantable device; for refractory cases | Poor surgical candidate | Specialist decision | - | - | EXT | - |
-| Sphenopalatine ganglion stimulation | - | - | Implantable device (Pulsante) | Poor surgical candidate | Specialist decision | - | - | EXT | - |
-| Deep brain stimulation (hypothalamus) | - | - | Research settings; highly refractory | Multiple | Specialist decision | - | - | EXT | - |
+| Combination verapamil + lithium | - | - | N/A :: - :: per protocol :: Use both at therapeutic doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| OnabotulinumtoxinA | - | - | N/A :: - :: per protocol :: Off-label; pericranial injections | Infection at site | Limited evidence | - | - | EXT | - |
+| Occipital nerve stimulation (ONS) | - | - | N/A :: - :: continuous :: Implantable device; for refractory cases | Poor surgical candidate | Specialist decision | - | - | EXT | - |
+| Sphenopalatine ganglion stimulation | - | - | N/A :: - :: continuous :: Implantable device (Pulsante) | Poor surgical candidate | Specialist decision | - | - | EXT | - |
+| Deep brain stimulation (hypothalamus) | - | - | N/A :: - :: continuous :: Research settings; highly refractory | Multiple | Specialist decision | - | - | EXT | - |
 
 ---
 

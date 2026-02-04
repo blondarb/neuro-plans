@@ -160,10 +160,10 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Scheduled daytime naps | - | EDS management; adjunct to all pharmacotherapy | 15-20 minute naps 1-2 times daily; schedule at predictable times (mid-morning, early afternoon) | None | Symptom response | - | ROUTINE | ROUTINE | - |
-| Sleep hygiene optimization | - | Consolidate nocturnal sleep; reduce daytime sleepiness | Regular sleep-wake schedule; 7-9 hours nightly; cool dark room; limit screen time before bed | None | Adherence | - | ROUTINE | ROUTINE | - |
-| Avoid sedating substances | - | Prevent worsening of EDS | Avoid alcohol, sedating antihistamines, benzodiazepines; limit caffeine to morning only | None | Symptom response | ROUTINE | ROUTINE | ROUTINE | - |
-| Safety counseling | - | Prevent injury from sleepiness or cataplexy | Driving restrictions until EDS controlled; avoid heights, swimming alone, operating heavy machinery | None | Compliance | ROUTINE | ROUTINE | ROUTINE | - |
+| Scheduled daytime naps | - | EDS management; adjunct to all pharmacotherapy | N/A :: - :: daily :: 15-20 minute naps 1-2 times daily; schedule at predictable times (mid-morning, early afternoon) | None | Symptom response | - | ROUTINE | ROUTINE | - |
+| Sleep hygiene optimization | - | Consolidate nocturnal sleep; reduce daytime sleepiness | N/A :: - :: daily :: Regular sleep-wake schedule; 7-9 hours nightly; cool dark room; limit screen time before bed | None | Adherence | - | ROUTINE | ROUTINE | - |
+| Avoid sedating substances | - | Prevent worsening of EDS | N/A :: - :: N/A :: Avoid alcohol, sedating antihistamines, benzodiazepines; limit caffeine to morning only | None | Symptom response | ROUTINE | ROUTINE | ROUTINE | - |
+| Safety counseling | - | Prevent injury from sleepiness or cataplexy | N/A :: - :: once :: Driving restrictions until EDS controlled; avoid heights, swimming alone, operating heavy machinery | None | Compliance | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3B. First-Line Treatment - Excessive Daytime Sleepiness
 

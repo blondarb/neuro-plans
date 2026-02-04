@@ -127,13 +127,13 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Sleep hygiene | - | - | Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment | - | ROUTINE | ROUTINE | - |
-| Avoid triggers | - | - | Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical | - | ROUTINE | ROUTINE | - |
-| Moderate exercise | - | - | Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms | - | - | ROUTINE | - |
-| Leg massage/stretching | - | - | Gentle stretching, massage before bed | None | May provide relief | - | ROUTINE | ROUTINE | - |
-| Hot bath | - | - | Warm bath before bedtime | None | Relaxation | - | - | ROUTINE | - |
-| Mental alerting activities | - | - | Crosswords, video games can distract during symptoms | None | Useful for mild cases | - | - | ROUTINE | - |
-| Pneumatic compression devices | - | - | Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence | - | - | EXT | - |
+| Sleep hygiene | - | - | N/A :: - :: daily :: Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | - | N/A :: - :: N/A :: Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical | - | ROUTINE | ROUTINE | - |
+| Moderate exercise | - | - | N/A :: - :: QHS :: Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms | - | - | ROUTINE | - |
+| Leg massage/stretching | - | - | N/A :: - :: daily :: Gentle stretching, massage before bed | None | May provide relief | - | ROUTINE | ROUTINE | - |
+| Hot bath | - | - | N/A :: - :: QHS :: Warm bath before bedtime | None | Relaxation | - | - | ROUTINE | - |
+| Mental alerting activities | - | - | N/A :: - :: per protocol :: Crosswords, video games can distract during symptoms | None | Useful for mild cases | - | - | ROUTINE | - |
+| Pneumatic compression devices | - | - | N/A :: - :: continuous :: Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence | - | - | EXT | - |
 
 ### 3B. Iron Replacement (If Ferritin <75 ng/mL)
 

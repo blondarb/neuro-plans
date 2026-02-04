@@ -167,14 +167,14 @@ SECTION A: ACTION ITEMS
 | Ceftriaxone IV (CPT 96374) | IV | - | 2 g :: IV :: q12h :: 2 g IV q12h. Covers S. pneumoniae (penicillin-sensitive), N. meningitidis, H. influenzae, gram-negative organisms | Cephalosporin allergy (cross-reactivity low with penicillin allergy); neonatal hyperbilirubinemia | CBC; LFTs; biliary sludge with prolonged use | STAT | STAT | - | STAT |
 | Ampicillin IV (add if Listeria risk) (CPT 96374) | IV | - | 2 g :: IV :: q4h :: 2 g IV q4h. ADD to vancomycin + ceftriaxone if: age >50, immunocompromised, alcoholism, pregnancy. Covers Listeria monocytogenes (resistant to cephalosporins) | Penicillin anaphylaxis (use TMP-SMX as alternative for Listeria) | Rash; renal function | STAT | STAT | - | STAT |
 | Acyclovir IV (empiric — until HSV excluded) (CPT 96365) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h. Add empirically if ANY suspicion of encephalitis (confusion, focal signs, seizures, temporal lobe changes). Discontinue when HSV PCR negative | Renal impairment (dose adjust); ensure adequate hydration | Renal function daily; adequate IV hydration (1 mL/kg/h); crystal nephropathy prevention | STAT | STAT | - | STAT |
-| IV normal saline | IV | - | Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia | Volume overload | I/O; electrolytes q6-12h; watch for SIADH | STAT | STAT | - | STAT |
-| Vasopressors: Norepinephrine | IV | - | 0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation | Only via central line | MAP target ≥65 mmHg; continuous arterial monitoring | - | - | - | STAT |
+| IV normal saline | IV | - | N/A :: IV :: per protocol :: Isotonic fluid resuscitation for sepsis; maintenance fluids. Avoid hypo/hypernatremia | Volume overload | I/O; electrolytes q6-12h; watch for SIADH | STAT | STAT | - | STAT |
+| Vasopressors: Norepinephrine | IV | - | 0.1-0.5 µg/kg/min :: IV :: continuous :: 0.1-0.5 µg/kg/min IV; first-line for septic shock after fluid resuscitation | Only via central line | MAP target ≥65 mmHg; continuous arterial monitoring | - | - | - | STAT |
 
 ### 3B. Targeted Therapy by Organism (Once Identified)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06) | IV | S. pneumoniae (sensitive) | 4 million units IV q4h | - | Renal function; CBC | - | STAT | - | STAT |
+| Penicillin G (if penicillin-sensitive S. pneumoniae, MIC <0.06) | IV | S. pneumoniae (sensitive) | 4 million units :: IV :: q4h :: 4 million units IV q4h | - | Renal function; CBC | - | STAT | - | STAT |
 | Ceftriaxone (if intermediate or unknown sensitivity) | IV | S. pneumoniae (intermediate) | 2 g :: IV :: q12h :: 2 g IV q12h; continue vancomycin until sensitivities confirm | - | Same as empiric | - | STAT | - | STAT |
 | Penicillin G or ceftriaxone | IV | N. meningitidis | 2g :: IV :: q4h :: Penicillin G 4 MU IV q4h OR Ceftriaxone 2g IV q12h | - | Renal function | - | STAT | - | STAT |
 | Ampicillin | IV | L. monocytogenes | 2 g :: IV :: q4h :: 2 g IV q4h (+ gentamicin 5 mg/kg/day IV for synergy in first 7-10 days, if renal function allows) | - | Renal function (especially with gentamicin); gentamicin levels | - | STAT | - | STAT |

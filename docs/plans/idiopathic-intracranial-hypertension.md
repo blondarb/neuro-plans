@@ -122,8 +122,8 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Weight loss (diet/lifestyle) | - | - | 10% :: - :: - :: Target 5-10% body weight loss; improves ICP | None | Weight; symptoms; visual function | - | ROUTINE | ROUTINE | - |
-| Bariatric surgery referral | - | - | Consider if BMI >35 with comorbidities; effective for IIH | Per surgical criteria | Weight; ICP | - | - | ROUTINE | - |
-| Nutrition/dietitian referral | - | - | Structured weight loss program | None | Progress | - | ROUTINE | ROUTINE | - |
+| Bariatric surgery referral | - | - | N/A :: - :: once :: Consider if BMI >35 with comorbidities; effective for IIH | Per surgical criteria | Weight; ICP | - | - | ROUTINE | - |
+| Nutrition/dietitian referral | - | - | N/A :: - :: daily :: Structured weight loss program | None | Progress | - | ROUTINE | ROUTINE | - |
 
 ### 3B. First-Line Medical Therapy
 
@@ -143,32 +143,32 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Acetazolamide (treats underlying cause) | - | - | Per above | - | Per above | Per above | - | ROUTINE | ROUTINE | - |
-| Analgesics (acute) | - | - | NSAIDs, acetaminophen PRN; avoid opioids | - | NSAID: GI/renal issues | Limit use to prevent MOH | ROUTINE | ROUTINE | ROUTINE | - |
-| Migraine prophylaxis (if comorbid) | - | - | Topiramate (dual benefit); beta-blockers, amitriptyline | - | Per medication | Per medication | - | - | ROUTINE | - |
+| Acetazolamide (treats underlying cause) | - | - | N/A :: - :: per protocol :: Per above | - | Per above | Per above | - | ROUTINE | ROUTINE | - |
+| Analgesics (acute) | - | - | N/A :: - :: PRN :: NSAIDs, acetaminophen PRN; avoid opioids | - | NSAID: GI/renal issues | Limit use to prevent MOH | ROUTINE | ROUTINE | ROUTINE | - |
+| Migraine prophylaxis (if comorbid) | - | - | N/A :: - :: per protocol :: Topiramate (dual benefit); beta-blockers, amitriptyline | - | Per medication | Per medication | - | - | ROUTINE | - |
 
 ### 3E. Therapeutic Lumbar Puncture
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Large-volume LP (CPT 62272) | - | - | 20-40 mL :: - :: - :: Remove 20-40 mL CSF; immediate symptom relief | Mass lesion, coagulopathy, infection at site | Headache, symptoms; temporary benefit | URGENT | URGENT | ROUTINE | - |
-| Serial LPs (CPT 62272) | - | - | Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution | - | ROUTINE | ROUTINE | - |
+| Serial LPs (CPT 62272) | - | - | N/A :: - :: per protocol :: Bridge to surgery or when medical therapy insufficient | Same | Same; not long-term solution | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Surgical Interventions (Vision-Threatening or Refractory)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Optic nerve sheath fenestration (ONSF) | - | - | Incision in optic nerve sheath; protects vision; does not reduce ICP | Severe optic atrophy (relative) | Visual fields, acuity post-op | - | URGENT | ROUTINE | - |
-| CSF shunting (VP or LP shunt) | - | - | Ventriculoperitoneal or lumboperitoneal shunt; reduces ICP and headache | Infection, peritoneal pathology | Shunt function; revision rate high (50%+) | - | URGENT | ROUTINE | - |
-| Venous sinus stenting | - | - | Stent transverse sinus stenosis; emerging therapy | No significant stenosis; venous anatomy | ICP; stent patency; headache | - | ROUTINE | ROUTINE | - |
+| Optic nerve sheath fenestration (ONSF) | - | - | N/A :: - :: once :: Incision in optic nerve sheath; protects vision; does not reduce ICP | Severe optic atrophy (relative) | Visual fields, acuity post-op | - | URGENT | ROUTINE | - |
+| CSF shunting (VP or LP shunt) | - | - | N/A :: - :: once :: Ventriculoperitoneal or lumboperitoneal shunt; reduces ICP and headache | Infection, peritoneal pathology | Shunt function; revision rate high (50%+) | - | URGENT | ROUTINE | - |
+| Venous sinus stenting | - | - | N/A :: - :: per protocol :: Stent transverse sinus stenosis; emerging therapy | No significant stenosis; venous anatomy | ICP; stent patency; headache | - | ROUTINE | ROUTINE | - |
 
 ### 3G. Fulminant IIH (Urgent Vision Loss)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | High-dose IV acetazolamide (CPT 96374) | IV | - | 500 mg :: IV :: q6h :: 500 mg IV q6h initially | Per above | K+, bicarb | STAT | STAT | - | - |
-| Emergent therapeutic LP | - | - | Large-volume LP; may repeat daily | Mass lesion, coagulopathy | Symptoms, vision | STAT | STAT | - | - |
-| Urgent surgical referral | - | - | ONSF or shunt within days | Per procedure | Vision | STAT | STAT | - | - |
+| Emergent therapeutic LP | - | - | N/A :: - :: daily :: Large-volume LP; may repeat daily | Mass lesion, coagulopathy | Symptoms, vision | STAT | STAT | - | - |
+| Urgent surgical referral | - | - | N/A :: - :: once :: ONSF or shunt within days | Per procedure | Vision | STAT | STAT | - | - |
 | IV steroids (controversial) (CPT 96365) | IV | - | 250 mg :: IV :: q6h :: Methylprednisolone 250 mg IV q6h; short-term bridge only; can worsen IIH long-term | Contraindicated for maintenance | Glucose; short-term only | STAT | STAT | - | - |
 
 ---

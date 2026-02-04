@@ -190,9 +190,9 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Plasmapheresis (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection | - | URGENT | - | URGENT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | - | N/A :: - :: once :: 5-7 exchanges over 10-14 days | Hemodynamic instability, sepsis, line contraindication | BP, electrolytes, coags, fibrinogen, line infection | - | URGENT | - | URGENT |
 | IVIG (CPT 96365) | PO | - | 0.4 g/kg :: PO :: - :: 0.4 g/kg/day Ã— 5 days | IgA deficiency, renal failure, thrombosis risk | Renal function, headache, thrombosis | - | URGENT | - | URGENT |
-| Extended IV steroids | IV | - | Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above | - | ROUTINE | - | ROUTINE |
+| Extended IV steroids | IV | - | N/A :: IV :: per protocol :: Additional 2-5 days methylprednisolone (total 5-10 days) | As above | As above | - | ROUTINE | - | ROUTINE |
 | ACTH gel (H.P. Acthar) | IM | - | 80 units :: IM :: daily :: 80 units IM/SC daily Ã— 2-3 weeks | Similar to corticosteroids | Glucose, BP, electrolytes | - | EXT | EXT | - |
 
 ### 3D. Disease-Modifying Therapies (DMT) - OPD ONLY

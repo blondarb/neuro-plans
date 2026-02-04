@@ -193,13 +193,13 @@ SECTION A: ACTION ITEMS
 | IVIG | PO | - | 0.4 g/kg :: PO :: monthly :: 0.4 g/kg/day x 5 days; repeat monthly for maintenance | - | Renal function; IgG levels | - | - | - | - |
 | Rituximab (CPT 96365) | IV | - | 375 mg/m2 :: IV :: - :: 375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart) | - | CD19/20 counts; immunoglobulins; infection risk; PML risk | - | - | - | - |
 | Cyclophosphamide (CPT 96365) | IV | - | 750-1000 mg/m2 :: IV :: monthly :: 750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day | - | CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion | - | - | - | - |
-| Penicillin G IV (CPT 96365) | IV | - | 18-24 million units/day IV (3-4 MU q4h) x 14 days | - | RPR titer follow-up q3-6 months (4-fold decline expected) | - | - | - | - |
-| Tumor-directed therapy | - | - | Per oncology | - | Clinical response; antibody titers | - | - | - | - |
-| Teratoma resection | - | - | Surgical removal | - | Repeat imaging; antibody titers | - | - | - | - |
-| B12 replacement | IM | - | Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | - | B12 and MMA levels at 3 months | - | - | - | - |
+| Penicillin G IV (CPT 96365) | IV | - | 18-24 million units :: IV :: q4h :: 18-24 million units/day IV (3-4 MU q4h) x 14 days | - | RPR titer follow-up q3-6 months (4-fold decline expected) | - | - | - | - |
+| Tumor-directed therapy | - | - | N/A :: - :: per protocol :: Per oncology | - | Clinical response; antibody titers | - | - | - | - |
+| Teratoma resection | - | - | N/A :: - :: once :: Surgical removal | - | Repeat imaging; antibody titers | - | - | - | - |
+| B12 replacement | IM | - | N/A :: IM :: daily :: Cyanocobalamin 1000 µg IM daily x 7 days, then weekly x 4, then monthly long-term | - | B12 and MMA levels at 3 months | - | - | - | - |
 | Antifungals (amphotericin B + flucytosine) (CPT 96365) | IV | - | 0.7-1 mg/kg :: IV :: - :: Amphotericin B 0.7-1 mg/kg/day IV + flucytosine 100 mg/kg/day x 2 weeks (induction) | - | Renal function; electrolytes; LFTs | - | - | - | - |
-| Anti-TB regimen | - | - | RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | - | LFTs; visual acuity (ethambutol); drug interactions | - | - | - | - |
-| No disease-modifying treatment | - | - | Supportive care only; no effective treatment exists | - | Comfort care; goals of care discussion | - | - | - | - |
+| Anti-TB regimen | - | - | N/A :: - :: per protocol :: RIPE: rifampin + isoniazid + pyrazinamide + ethambutol | - | LFTs; visual acuity (ethambutol); drug interactions | - | - | - | - |
+| No disease-modifying treatment | - | - | N/A :: - :: per protocol :: Supportive care only; no effective treatment exists | - | Comfort care; goals of care discussion | - | - | - | - |
 
 ### 3C. Symptomatic Treatments
 

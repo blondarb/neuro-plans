@@ -145,9 +145,9 @@ tags:
 | Levothyroxine (hypothyroidism) | - | - | 25-50 mcg :: PO :: daily :: Start 25-50 mcg daily; titrate per TSH | CAD (start low) | TSH q6-8 weeks | - | ROUTINE | ROUTINE | - |
 | Thiamine (Wernicke-Korsakoff) (CPT 96374) | IV | - | 500 mg :: IV :: TID :: 500 mg IV TID × 3 days, then 250 mg IV daily × 5 days, then 100 mg PO daily | None | Clinical response | STAT | STAT | ROUTINE | STAT |
 | NPH treatment (large volume LP) | - | - | 30-50 mL :: - :: - :: Diagnostic LP removing 30-50 mL CSF; assess gait before/after | Per LP | Gait improvement suggests shunt candidacy | - | ROUTINE | - | - |
-| VP shunt (NPH) | - | - | Neurosurgical placement | Coagulopathy, infection | Shunt complications | - | - | EXT | - |
+| VP shunt (NPH) | - | - | N/A :: - :: once :: Neurosurgical placement | Coagulopathy, infection | Shunt complications | - | - | EXT | - |
 | Treat depression (pseudodementia) | PO | - | 25-50 mg :: PO :: - :: SSRI (sertraline 25-50 mg, escitalopram 5-10 mg) | Per agent | Mood, cognition | - | ROUTINE | ROUTINE | - |
-| Discontinue offending medications | - | - | Stop anticholinergics, sedatives, opioids | N/A | Cognitive reassessment | URGENT | URGENT | ROUTINE | URGENT |
+| Discontinue offending medications | - | - | N/A :: - :: per protocol :: Stop anticholinergics, sedatives, opioids | N/A | Cognitive reassessment | URGENT | URGENT | ROUTINE | URGENT |
 
 ### 3B. Alzheimer's Disease - Cholinesterase Inhibitors
 
@@ -183,7 +183,7 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Non-pharmacologic interventions | - | - | Music therapy, validation therapy, redirection, environmental modification | None | First-line for all BPSD | STAT | STAT | ROUTINE | - |
+| Non-pharmacologic interventions | - | - | N/A :: - :: per protocol :: Music therapy, validation therapy, redirection, environmental modification | None | First-line for all BPSD | STAT | STAT | ROUTINE | - |
 | Sertraline (depression, anxiety) | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; target 50-100 mg | Bleeding risk, QT prolongation | GI bleeding, hyponatremia | - | ROUTINE | ROUTINE | - |
 | Citalopram (agitation) | PO | - | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg (QT risk at higher doses) | QT prolongation | QTc, hyponatremia | - | ROUTINE | ROUTINE | - |
 | Trazodone (sleep, agitation) | PO | - | 25-100 mg :: PO :: QHS :: 25-100 mg QHS | Orthostasis | Sedation, falls | - | ROUTINE | ROUTINE | - |
@@ -191,7 +191,7 @@ tags:
 | Quetiapine (psychosis, agitation) | - | - | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; lowest effective dose | QT prolongation, metabolic syndrome | Black box: increased mortality in dementia | - | ROUTINE | ROUTINE | - |
 | Risperidone (psychosis, aggression) | - | - | 0.25-1 mg :: - :: BID :: 0.25-1 mg BID; lowest effective dose | Same; EPS | Same; EPS higher than quetiapine | - | ROUTINE | ROUTINE | - |
 | Pimavanserin (DLB psychosis) | PO | - | 34 mg :: PO :: daily :: 34 mg daily | QT prolongation | QTc | - | - | ROUTINE | - |
-| Dextromethorphan/Quinidine (Nuedexta) | - | - | 1 capsule daily × 7 days, then BID; for pseudobulbar affect | QT prolongation, CYP2D6 interactions | QTc | - | ROUTINE | ROUTINE | - |
+| Dextromethorphan/Quinidine (Nuedexta) | - | - | 1 caps :: - :: BID :: 1 capsule daily × 7 days, then BID; for pseudobulbar affect | QT prolongation, CYP2D6 interactions | QTc | - | ROUTINE | ROUTINE | - |
 | Carbamazepine (aggression) | PO | - | 100-400 mg :: PO :: BID :: 100-400 mg BID | Aplastic anemia risk, drug interactions | CBC, LFTs, drug levels | - | EXT | EXT | - |
 
 ### 3F. Other Dementia-Specific Treatments
@@ -199,11 +199,11 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Aspirin (vascular dementia) | PO | - | 81 mg :: PO :: daily :: 81 mg daily; secondary prevention | Bleeding | Bleeding | - | ROUTINE | ROUTINE | - |
-| Statin (vascular dementia) | - | - | Per cardiovascular guidelines | Hepatic disease | LFTs, myopathy | - | ROUTINE | ROUTINE | - |
-| BP control (vascular dementia) | - | - | Target <130/80 per guidelines | Per agent | BP | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa (DLB, PDD) | - | - | Start low 25/100 TID; titrate cautiously | May worsen psychosis | Hallucinations, dyskinesia | - | ROUTINE | ROUTINE | - |
-| Avoid anticholinergics (DLB) | - | - | Contraindicated in DLB due to severe sensitivity | N/A | N/A | STAT | STAT | ROUTINE | - |
-| Avoid antipsychotics (DLB) | - | - | Can cause severe parkinsonism, NMS-like reaction; if needed, quetiapine safest | Relative contraindication | Severe reactions | STAT | STAT | ROUTINE | - |
+| Statin (vascular dementia) | - | - | N/A :: - :: per protocol :: Per cardiovascular guidelines | Hepatic disease | LFTs, myopathy | - | ROUTINE | ROUTINE | - |
+| BP control (vascular dementia) | - | - | N/A :: - :: per protocol :: Target <130/80 per guidelines | Per agent | BP | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa (DLB, PDD) | - | - | N/A :: - :: TID :: Start low 25/100 TID; titrate cautiously | May worsen psychosis | Hallucinations, dyskinesia | - | ROUTINE | ROUTINE | - |
+| Avoid anticholinergics (DLB) | - | - | N/A :: - :: N/A :: Contraindicated in DLB due to severe sensitivity | N/A | N/A | STAT | STAT | ROUTINE | - |
+| Avoid antipsychotics (DLB) | - | - | N/A :: - :: N/A :: Can cause severe parkinsonism, NMS-like reaction; if needed, quetiapine safest | Relative contraindication | Severe reactions | STAT | STAT | ROUTINE | - |
 
 ---
 

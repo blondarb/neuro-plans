@@ -375,13 +375,13 @@ FULL TEMPLATE BEGINS BELOW
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Airway positioning/management | PO | - | Head-tilt chin-lift, oral airway, prepare for intubation | None | O2 sat, airway patency | STAT | STAT | - | STAT |
+| Airway positioning/management | PO | - | N/A :: PO :: per protocol :: Head-tilt chin-lift, oral airway, prepare for intubation | None | O2 sat, airway patency | STAT | STAT | - | STAT |
 | Supplemental oxygen | INH | - | 15 L/min :: INH :: - :: Non-rebreather 15 L/min or bag-valve-mask | None | O2 sat >94% | STAT | STAT | - | STAT |
-| IV access (two large-bore) | IV | - | 18G or larger x2 | None | IV patency | STAT | STAT | - | STAT |
-| Cardiac monitoring | - | - | Continuous telemetry | None | Rhythm, HR, BP | STAT | STAT | - | STAT |
+| IV access (two large-bore) | IV | - | N/A :: IV :: per protocol :: 18G or larger x2 | None | IV patency | STAT | STAT | - | STAT |
+| Cardiac monitoring | - | - | N/A :: - :: continuous :: Continuous telemetry | None | Rhythm, HR, BP | STAT | STAT | - | STAT |
 | Dextrose 50% IV | IV | - | 50 mL :: IV :: - :: 50 mL IV push (25g) if glucose <70 or unknown | Document hyperglycemia | Glucose | STAT | STAT | - | STAT |
 | Thiamine IV | IV | - | 100-500 mg :: IV :: - :: 100-500 mg IV BEFORE or WITH glucose | None | None | STAT | STAT | - | STAT |
-| Isotonic fluids | - | - | NS or LR wide open initially | Pulmonary edema | BP, I/O | STAT | STAT | - | STAT |
+| Isotonic fluids | - | - | N/A :: - :: per protocol :: NS or LR wide open initially | Pulmonary edema | BP, I/O | STAT | STAT | - | STAT |
 
 ### 3B. Emergent/First-Line - Benzodiazepines (Time 0-5 min)
 
@@ -449,16 +449,16 @@ FULL TEMPLATE BEGINS BELOW
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Add second anesthetic | - | - | Combine midazolam + propofol, or add ketamine to either | Per agent | cEEG, hemodynamics | - | - | - | STAT |
+| Add second anesthetic | - | - | N/A :: - :: per protocol :: Combine midazolam + propofol, or add ketamine to either | Per agent | cEEG, hemodynamics | - | - | - | STAT |
 | Topiramate (enteral) | PO | - | 300-400 mg :: PO :: BID :: Load 300-400 mg via NGT; then 200-400 mg BID; max 1600 mg/day | Metabolic acidosis, kidney stones | Bicarbonate, renal function | - | - | - | URGENT |
 | Lacosamide (if not tried) | IV | - | 400 mg :: IV :: BID :: 400 mg IV, then 200-400 mg BID | PR prolongation | ECG | - | - | - | URGENT |
 | Perampanel (enteral) | PO | - | 4-8 mg :: PO :: daily :: 4-8 mg via NGT daily; titrate to 12 mg daily | None absolute | Aggression, sedation | - | - | - | ROUTINE |
 | Magnesium sulfate infusion | IV | - | 4-6 g :: IV :: - :: 4-6 g IV over 20 min, then 1-2 g/hr infusion; target Mg 3.5-4 mg/dL | Renal failure (relative), myasthenia | Mg levels, reflexes, respiratory status | - | - | - | URGENT |
 | Pyridoxine (empiric trial) | IV | - | 100-500 mg :: IV :: once :: 100-500 mg IV; may try single dose empirically | None | Response to treatment | - | - | - | URGENT |
-| Ketogenic diet | - | - | Initiate within 7 days per NORSE consensus; requires nutrition support | Pyruvate carboxylase deficiency, fatty acid oxidation disorders | Ketones, glucose, lipids | - | - | - | URGENT |
-| Hypothermia (32-35°C) | - | - | Targeted temperature management x 24-48h | Coagulopathy, severe infection | Temperature, coagulation, infection | - | - | - | EXT |
-| Electroconvulsive therapy | - | - | If all else fails; requires anesthesia | Raised ICP, recent stroke | Per ECT protocol | - | - | - | EXT |
-| Epilepsy surgery (emergent) | - | - | Resection if focal lesion identified | Eloquent cortex, multifocal | Per surgical team | - | - | - | EXT |
+| Ketogenic diet | - | - | N/A :: - :: daily :: Initiate within 7 days per NORSE consensus; requires nutrition support | Pyruvate carboxylase deficiency, fatty acid oxidation disorders | Ketones, glucose, lipids | - | - | - | URGENT |
+| Hypothermia (32-35°C) | - | - | N/A :: - :: per protocol :: Targeted temperature management x 24-48h | Coagulopathy, severe infection | Temperature, coagulation, infection | - | - | - | EXT |
+| Electroconvulsive therapy | - | - | N/A :: - :: per protocol :: If all else fails; requires anesthesia | Raised ICP, recent stroke | Per ECT protocol | - | - | - | EXT |
+| Epilepsy surgery (emergent) | - | - | N/A :: - :: once :: Resection if focal lesion identified | Eloquent cortex, multifocal | Per surgical team | - | - | - | EXT |
 
 ### 3F. NORSE/FIRES Immunotherapy Protocol
 
@@ -481,7 +481,7 @@ FULL TEMPLATE BEGINS BELOW
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Methylprednisolone IV | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active untreated infection (relative) | Glucose q6h, BP, GI prophylaxis, infection signs | - | URGENT | - | STAT |
 | IVIG | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV × 5 days (total 2 g/kg); can give simultaneously with steroids | IgA deficiency (use IgA-depleted product), renal failure, thrombosis risk | Renal function, signs of aseptic meningitis, thrombosis | - | URGENT | - | STAT |
-| Plasmapheresis (PLEX) | - | - | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability, line access issues | Hemodynamics, electrolytes (Ca, Mg), coagulation, fibrinogen | - | ROUTINE | - | STAT |
+| Plasmapheresis (PLEX) | - | - | N/A :: - :: once :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Hemodynamic instability, line access issues | Hemodynamics, electrolytes (Ca, Mg), coagulation, fibrinogen | - | ROUTINE | - | STAT |
 
 **NOTES:**
 - Steroids preferred as initial agent; can combine with IVIG from start

@@ -117,9 +117,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Carbamazepine + Baclofen | - | - | If monotherapy inadequate; use lower doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
-| Carbamazepine + Lamotrigine | - | - | Additive efficacy; CBZ induces lamotrigine metabolism (need higher LTG dose) | Per individual agents | Drug interactions | - | ROUTINE | ROUTINE | - |
-| Oxcarbazepine + Gabapentin | - | - | If CBZ not tolerated | Per individual agents | Hyponatremia, sedation | - | ROUTINE | ROUTINE | - |
+| Carbamazepine + Baclofen | - | - | N/A :: - :: per protocol :: If monotherapy inadequate; use lower doses | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Carbamazepine + Lamotrigine | - | - | N/A :: - :: per protocol :: Additive efficacy; CBZ induces lamotrigine metabolism (need higher LTG dose) | Per individual agents | Drug interactions | - | ROUTINE | ROUTINE | - |
+| Oxcarbazepine + Gabapentin | - | - | N/A :: - :: per protocol :: If CBZ not tolerated | Per individual agents | Hyponatremia, sedation | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Acute Exacerbation Management
 
@@ -127,17 +127,17 @@ tags:
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Fosphenytoin (severe exacerbation) (CPT 96365) | IV | - | 15-20 mg :: IV :: TID :: 15-20 mg PE/kg IV at 100-150 mg/min; then phenytoin 100 mg TID | - | Sinus bradycardia, heart block, Adams-Stokes syndrome | ECG, BP during infusion; phenytoin levels | STAT | STAT | - | - |
 | IV lidocaine (CPT 96365) | IV | - | 1-3 mg/kg :: IV :: - :: 1-3 mg/kg IV over 20-30 min (monitored setting); for severe refractory pain | - | Cardiac conduction abnormalities | Continuous cardiac monitoring | - | STAT | - | - |
-| Peripheral nerve block (V2/V3) (CPT 64400) | - | - | Lidocaine/bupivacaine at foramen rotundum/ovale | - | Infection, coagulopathy | Short-term relief | ROUTINE | ROUTINE | ROUTINE | - |
+| Peripheral nerve block (V2/V3) (CPT 64400) | - | - | N/A :: - :: once :: Lidocaine/bupivacaine at foramen rotundum/ovale | - | Infection, coagulopathy | Short-term relief | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 3E. Interventional Procedures (Refractory to Medical Therapy)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Percutaneous balloon compression | - | - | Outpatient/short-stay; compresses gasserian ganglion | Coagulopathy | Facial numbness; recurrence 20-30% at 5 years | - | ROUTINE | - | - |
-| Percutaneous glycerol rhizolysis | - | - | Injection into Meckel's cave | Same | Same; less sensory loss | - | ROUTINE | - | - |
-| Percutaneous radiofrequency thermocoagulation | - | - | Thermal lesion of trigeminal ganglion | Same | Corneal anesthesia risk (V1); recurrence | - | ROUTINE | - | - |
-| Stereotactic radiosurgery (Gamma Knife) | - | - | Single high-dose radiation to trigeminal root; effect delayed 1-3 months | None absolute; prior radiation relative | Delayed response; facial numbness (10-30%) | - | - | ROUTINE | - |
-| Microvascular decompression (MVD) | - | - | Definitive surgery; move offending vessel; craniotomy | High surgical risk; no vascular compression | Hearing loss (1-2%), facial numbness (3%), stroke (<1%), recurrence 15-20% at 10 years | - | ROUTINE | - | - |
+| Percutaneous balloon compression | - | - | N/A :: - :: per protocol :: Outpatient/short-stay; compresses gasserian ganglion | Coagulopathy | Facial numbness; recurrence 20-30% at 5 years | - | ROUTINE | - | - |
+| Percutaneous glycerol rhizolysis | - | - | N/A :: - :: per protocol :: Injection into Meckel's cave | Same | Same; less sensory loss | - | ROUTINE | - | - |
+| Percutaneous radiofrequency thermocoagulation | - | - | N/A :: - :: per protocol :: Thermal lesion of trigeminal ganglion | Same | Corneal anesthesia risk (V1); recurrence | - | ROUTINE | - | - |
+| Stereotactic radiosurgery (Gamma Knife) | - | - | N/A :: - :: once :: Single high-dose radiation to trigeminal root; effect delayed 1-3 months | None absolute; prior radiation relative | Delayed response; facial numbness (10-30%) | - | - | ROUTINE | - |
+| Microvascular decompression (MVD) | - | - | N/A :: - :: once :: Definitive surgery; move offending vessel; craniotomy | High surgical risk; no vascular compression | Hearing loss (1-2%), facial numbness (3%), stroke (<1%), recurrence 15-20% at 10 years | - | ROUTINE | - | - |
 
 ### 3F. Treatment for Specific Subtypes
 

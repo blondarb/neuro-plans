@@ -133,14 +133,14 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Magnesium sulfate IV (CPT 96374) | IV | - | 1-2 g :: IV :: - :: 1-2 g IV over 1-2 hours; repeat as needed; target Mg >2.0 | Renal failure (adjust dose); heart block | Mg levels; reflexes | STAT | STAT | - | STAT |
-| Potassium replacement | - | - | Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels | STAT | STAT | - | STAT |
-| Phosphorus replacement | IV | - | If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels | STAT | STAT | - | STAT |
+| Potassium replacement | - | - | N/A :: - :: per protocol :: Per deficit; often needed with Mg | Renal failure; hyperkalemia | K+ levels | STAT | STAT | - | STAT |
+| Phosphorus replacement | IV | - | N/A :: IV :: per protocol :: If low (refeeding); K-Phos or Na-Phos IV/PO | Hypercalcite; renal failure | Phos levels | STAT | STAT | - | STAT |
 
 ### 3D. Glucose Administration
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| THIAMINE BEFORE GLUCOSE | - | - | ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | - | None | Give thiamine first | STAT | STAT | - | STAT |
+| THIAMINE BEFORE GLUCOSE | - | - | N/A :: - :: per protocol :: ALWAYS give thiamine before or with dextrose/carbohydrates; glucose metabolism depletes thiamine | - | None | Give thiamine first | STAT | STAT | - | STAT |
 | Dextrose (if hypoglycemic) | IV | - | 25-50 mL :: IV :: - :: D50 25-50 mL IV or D10 infusion; AFTER thiamine | - | Give thiamine first | Glucose levels | STAT | STAT | - | STAT |
 
 ### 3E. Alcohol Withdrawal Prevention/Treatment
@@ -149,14 +149,14 @@ tags:
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Benzodiazepines (symptom-triggered or scheduled) | IV | - | 1-4 mg :: IV :: PRN :: Lorazepam 1-4 mg IV q15min PRN (CIWA-guided); or scheduled dosing if severe | Respiratory depression; caution with hepatic impairment | CIWA score; sedation; respiratory status | STAT | STAT | - | STAT |
 | Folate | PO | - | 1 mg :: PO :: daily :: 1 mg daily | None | None | - | ROUTINE | ROUTINE | - |
-| Multivitamin | - | - | Daily | None | None | - | ROUTINE | ROUTINE | - |
+| Multivitamin | - | - | N/A :: - :: daily :: Daily | None | None | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Nutritional Support
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Nutrition consult | - | - | Refeeding protocol; caloric needs | None | Refeeding syndrome | - | ROUTINE | - | ROUTINE |
-| Gradual refeeding | - | - | Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose | - | ROUTINE | - | ROUTINE |
+| Nutrition consult | - | - | N/A :: - :: per protocol :: Refeeding protocol; caloric needs | None | Refeeding syndrome | - | ROUTINE | - | ROUTINE |
+| Gradual refeeding | - | - | N/A :: - :: per protocol :: Start low calorie (10-15 kcal/kg); advance slowly | None | Phosphorus, K+, Mg, glucose | - | ROUTINE | - | ROUTINE |
 
 ---
 

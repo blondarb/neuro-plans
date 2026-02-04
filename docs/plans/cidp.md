@@ -146,8 +146,8 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | IVIG (Intravenous Immunoglobulin) (CPT 96365) | IV | - | 2 g/kg :: PO :: - :: Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response) | IgA deficiency (use IgA-depleted product), renal failure, thrombosis history | Renal function, headache, aseptic meningitis, thrombosis | - | STAT | ROUTINE | - |
-| SCIG (Subcutaneous Immunoglobulin) | SC | - | Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions | - | - | ROUTINE | - |
-| Plasma exchange (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen | - | STAT | - | - |
+| SCIG (Subcutaneous Immunoglobulin) | SC | - | N/A :: SC :: weekly :: Convert from IVIG at equivalent weekly dose (total monthly IVIG dose ÷ 4); administer weekly | Same (fewer systemic reactions) | Local site reactions | - | - | ROUTINE | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | - | N/A :: - :: once :: 5-7 exchanges over 2-3 weeks; 1-1.5 plasma volumes/exchange | Hemodynamic instability, line access | Hemodynamics, electrolytes (Ca, Mg), fibrinogen | - | STAT | - | - |
 | Corticosteroids | IV | - | 60-80 mg :: IV :: daily :: Prednisone 60-80 mg daily or 1 mg/kg/day × 4-8 weeks, then slow taper over 6-12 months; OR pulsed methylprednisolone 1000 mg IV × 3 days monthly | Uncontrolled DM, active infection, osteoporosis (relative) | Glucose, BP, bone density, weight, infection | - | STAT | ROUTINE | - |
 
 ### 3B. Second-Line / Steroid-Sparing Agents

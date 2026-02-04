@@ -119,22 +119,22 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IV access | IV | - | Establish if unstable | None | Access | STAT | STAT | - | STAT |
+| IV access | IV | - | N/A :: IV :: per protocol :: Establish if unstable | None | Access | STAT | STAT | - | STAT |
 | IV fluid resuscitation | IV | - | 500-1000 mL :: - :: once :: NS 500-1000 mL bolus if hypovolemic/dehydrated | Heart failure | Volume status | STAT | ROUTINE | - | STAT |
-| Trendelenburg position | - | - | Legs elevated if hypotensive | None | BP | STAT | ROUTINE | - | STAT |
-| Telemetry monitoring | - | - | Continuous if high-risk | None | Arrhythmia | STAT | ROUTINE | - | ROUTINE |
-| Correct reversible causes | - | - | Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition | STAT | STAT | - | STAT |
+| Trendelenburg position | - | - | N/A :: - :: continuous :: Legs elevated if hypotensive | None | BP | STAT | ROUTINE | - | STAT |
+| Telemetry monitoring | - | - | N/A :: - :: continuous :: Continuous if high-risk | None | Arrhythmia | STAT | ROUTINE | - | ROUTINE |
+| Correct reversible causes | - | - | N/A :: - :: per protocol :: Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition | STAT | STAT | - | STAT |
 
 ### 3B. Vasovagal Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Education and reassurance | - | - | Benign prognosis; triggers; warning signs | None | None | ROUTINE | ROUTINE | ROUTINE | - |
-| Trigger avoidance | - | - | Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence | - | ROUTINE | ROUTINE | - |
-| Counter-pressure maneuvers | - | - | Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness | - | ROUTINE | ROUTINE | - |
+| Education and reassurance | - | - | N/A :: - :: once :: Benign prognosis; triggers; warning signs | None | None | ROUTINE | ROUTINE | ROUTINE | - |
+| Trigger avoidance | - | - | N/A :: - :: daily :: Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Counter-pressure maneuvers | - | - | N/A :: - :: per session :: Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness | - | ROUTINE | ROUTINE | - |
 | Increased fluid/salt intake | PO | - | 6-9 g :: PO :: - :: 2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF) | HTN, heart failure | BP | - | ROUTINE | ROUTINE | - |
-| Compression stockings | - | - | Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance | - | - | ROUTINE | - |
-| Tilt training | - | - | Progressive standing against wall; controversial efficacy | None | Tolerance | - | - | EXT | - |
+| Compression stockings | - | - | N/A :: - :: continuous :: Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance | - | - | ROUTINE | - |
+| Tilt training | - | - | N/A :: - :: daily :: Progressive standing against wall; controversial efficacy | None | Tolerance | - | - | EXT | - |
 | Fludrocortisone | PO | - | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily (refractory cases) | HTN, HF | K+, BP, edema | - | - | ROUTINE | - |
 | Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID (refractory cases) | Supine HTN, urinary retention | Supine HTN | - | - | ROUTINE | - |
 
@@ -142,11 +142,11 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Identify/discontinue offending meds | - | - | Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP | STAT | STAT | ROUTINE | STAT |
-| Volume repletion | IV | - | IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status | STAT | ROUTINE | ROUTINE | STAT |
+| Identify/discontinue offending meds | - | - | N/A :: - :: per protocol :: Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP | STAT | STAT | ROUTINE | STAT |
+| Volume repletion | IV | - | N/A :: IV :: per protocol :: IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status | STAT | ROUTINE | ROUTINE | STAT |
 | Salt supplementation | PO | - | 6-10 g/day :: PO :: - :: 6-10 g/day if no HTN/HF | HTN, HF | BP | - | ROUTINE | ROUTINE | - |
-| Compression garments | - | - | Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance | - | - | ROUTINE | - |
-| Elevate head of bed | - | - | 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance | - | ROUTINE | ROUTINE | - |
+| Compression garments | - | - | N/A :: - :: continuous :: Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance | - | - | ROUTINE | - |
+| Elevate head of bed | - | - | N/A :: - :: continuous :: 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance | - | ROUTINE | ROUTINE | - |
 | Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID; last dose before 6 PM | Supine HTN, urinary retention | Supine BP | - | ROUTINE | ROUTINE | - |
 | Fludrocortisone | PO | - | 0.1-0.3 mg :: PO :: daily :: 0.1-0.3 mg daily | HTN, HF, hypokalemia | K+, BP | - | ROUTINE | ROUTINE | - |
 | Droxidopa (Northera) | - | - | 100-600 mg :: - :: TID :: 100-600 mg TID; for neurogenic orthostatic hypotension | Supine HTN | Supine BP | - | - | ROUTINE | - |
@@ -156,18 +156,18 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Avoid tight collars, neck pressure | - | - | Patient education | - | None | Recurrence | - | ROUTINE | ROUTINE | - |
-| Dual-chamber pacemaker | - | - | If cardioinhibitory type (pause >3 sec) | - | None | Device checks | - | ROUTINE | ROUTINE | - |
+| Avoid tight collars, neck pressure | - | - | N/A :: - :: continuous :: Patient education | - | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Dual-chamber pacemaker | - | - | N/A :: - :: continuous :: If cardioinhibitory type (pause >3 sec) | - | None | Device checks | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Cardiac Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Treat underlying arrhythmia | - | - | Per arrhythmia type | Per treatment | ECG, telemetry | STAT | STAT | ROUTINE | STAT |
-| Pacemaker | - | - | Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks | - | ROUTINE | ROUTINE | - |
-| ICD (implantable cardioverter-defibrillator) | - | - | Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks | - | ROUTINE | ROUTINE | - |
-| Catheter ablation | - | - | Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence | - | ROUTINE | ROUTINE | - |
-| Treat structural heart disease | - | - | Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition | STAT | ROUTINE | ROUTINE | STAT |
+| Treat underlying arrhythmia | - | - | N/A :: - :: per protocol :: Per arrhythmia type | Per treatment | ECG, telemetry | STAT | STAT | ROUTINE | STAT |
+| Pacemaker | - | - | N/A :: - :: continuous :: Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks | - | ROUTINE | ROUTINE | - |
+| ICD (implantable cardioverter-defibrillator) | - | - | N/A :: - :: once :: Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks | - | ROUTINE | ROUTINE | - |
+| Catheter ablation | - | - | N/A :: - :: once :: Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence | - | ROUTINE | ROUTINE | - |
+| Treat structural heart disease | - | - | N/A :: - :: per protocol :: Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition | STAT | ROUTINE | ROUTINE | STAT |
 
 ---
 

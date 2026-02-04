@@ -131,9 +131,9 @@ tags:
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Carbidopa/Levodopa (Sinemet) | PO | - | 100 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day | Narrow-angle glaucoma; caution with MAOIs | Dyskinesia, nausea, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
 | Carbidopa/Levodopa CR | PO | - | 200 mg :: PO :: BID :: 25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR | Same | Same; less predictable absorption | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa ODT (Parcopa) | - | - | Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa ODT (Parcopa) | - | - | N/A :: - :: per protocol :: Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia | - | ROUTINE | ROUTINE | - |
 | Carbidopa/Levodopa ER (Rytary) | PO | - | 95 mg :: PO :: TID :: Start 23.75/95 mg TID; titrate per response | Same | Same; more sustained release | - | - | ROUTINE | - |
-| Carbidopa/Levodopa intestinal gel (Duopa) | IV | - | Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications | - | - | EXT | - |
+| Carbidopa/Levodopa intestinal gel (Duopa) | IV | - | N/A :: IV :: continuous :: Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications | - | - | EXT | - |
 
 ### 3B. Dopamine Agonists
 
@@ -160,7 +160,7 @@ tags:
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Entacapone (Comtan) | PO | - | 200 mg :: PO :: - :: 200 mg with each levodopa dose; max 8 doses/day | - | None absolute | Orange urine, diarrhea, dyskinesia | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa/Entacapone (Stalevo) | - | - | Various strengths; replace existing C/L with equivalent | - | Same | Same | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa/Entacapone (Stalevo) | - | - | N/A :: - :: per protocol :: Various strengths; replace existing C/L with equivalent | - | Same | Same | - | ROUTINE | ROUTINE | - |
 | Opicapone (Ongentys) | PO | - | 50 mg :: PO :: daily :: 50 mg daily at bedtime; separate from levodopa by 1 hour | - | None absolute | Dyskinesia, constipation | - | - | ROUTINE | - |
 | Tolcapone (Tasmar) | - | - | 100-200 mg :: - :: TID :: 100-200 mg TID; rarely used due to hepatotoxicity | - | Hepatic disease | LFTs q2-4 weeks x6mo, then periodically | - | - | EXT | - |
 

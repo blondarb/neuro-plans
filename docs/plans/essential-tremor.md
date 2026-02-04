@@ -148,7 +148,7 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Botulinum toxin (OnabotulinumtoxinA) | - | - | 50-100 units :: - :: - :: 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) | - | - | ROUTINE | - |
-| Propranolol + Primidone combination | - | - | Use lower doses of each; synergistic effect | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Propranolol + Primidone combination | - | - | N/A :: - :: per protocol :: Use lower doses of each; synergistic effect | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
 | Nimodipine | PO | - | 30 mg :: PO :: TID :: 30 mg TID; limited evidence | Hypotension | BP | - | - | EXT | - |
 | Zonisamide | PO | - | 100-200 mg :: PO :: daily :: 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive | - | - | EXT | - |
 
@@ -156,21 +156,21 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Deep brain stimulation (DBS) | - | - | VIM thalamus target; bilateral or unilateral | - | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function | - | - | EXT | - |
-| MRI-guided focused ultrasound (MRgFUS) | - | - | VIM thalamotomy; unilateral only | - | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes | - | - | EXT | - |
-| Gamma Knife thalamotomy | - | - | VIM target; unilateral; delayed effect | - | Per radiosurgery | Same as MRgFUS | - | - | EXT | - |
+| Deep brain stimulation (DBS) | - | - | N/A :: - :: continuous :: VIM thalamus target; bilateral or unilateral | - | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function | - | - | EXT | - |
+| MRI-guided focused ultrasound (MRgFUS) | - | - | N/A :: - :: per protocol :: VIM thalamotomy; unilateral only | - | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes | - | - | EXT | - |
+| Gamma Knife thalamotomy | - | - | N/A :: - :: per protocol :: VIM target; unilateral; delayed effect | - | Per radiosurgery | Same as MRgFUS | - | - | EXT | - |
 
 ### 3E. Non-Pharmacologic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Weighted utensils | - | - | Reduce tremor amplitude during eating | None | OT can assist with selection | - | - | ROUTINE | - |
-| Wrist weights | - | - | Dampen tremor during activities | None | May cause fatigue | - | - | ROUTINE | - |
-| Adaptive devices | - | - | Two-handled cups, rocker knives, button hooks | None | OT referral | - | - | ROUTINE | - |
-| Cala Trio device | - | - | FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device | - | - | ROUTINE | - |
-| Limit caffeine | - | - | Caffeine exacerbates tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
-| Avoid triggers | - | - | Stress, fatigue, stimulants worsen tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
-| Stress management | - | - | Relaxation techniques, biofeedback | None | Tremor worsens with anxiety | - | - | ROUTINE | - |
+| Weighted utensils | - | - | N/A :: - :: per protocol :: Reduce tremor amplitude during eating | None | OT can assist with selection | - | - | ROUTINE | - |
+| Wrist weights | - | - | N/A :: - :: per protocol :: Dampen tremor during activities | None | May cause fatigue | - | - | ROUTINE | - |
+| Adaptive devices | - | - | N/A :: - :: per protocol :: Two-handled cups, rocker knives, button hooks | None | OT referral | - | - | ROUTINE | - |
+| Cala Trio device | - | - | N/A :: - :: BID :: FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device | - | - | ROUTINE | - |
+| Limit caffeine | - | - | N/A :: - :: per protocol :: Caffeine exacerbates tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | - | N/A :: - :: N/A :: Stress, fatigue, stimulants worsen tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Stress management | - | - | N/A :: - :: per protocol :: Relaxation techniques, biofeedback | None | Tremor worsens with anxiety | - | - | ROUTINE | - |
 
 ---
 

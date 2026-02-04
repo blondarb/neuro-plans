@@ -215,7 +215,7 @@ SECTION A: ACTION ITEMS
 | Omeprazole (GI prophylaxis during steroids) | IV | - | 40 mg :: IV :: daily :: 40 mg IV/PO daily during steroid course | PPI allergy | None routine | URGENT | STAT | - | STAT |
 | Insulin sliding scale | - | - | 180 mg :: - :: - :: Per protocol if glucose >180 mg/dL | Hypoglycemia risk | Glucose q6h; adjust per response | URGENT | STAT | - | STAT |
 | IVIG (intravenous immunoglobulin) (CPT 96365) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol; premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure | Renal function daily; headache (aseptic meningitis); thrombosis; volume overload; check IgA level before first dose | - | STAT | - | STAT |
-| Plasmapheresis (PLEX) | - | - | 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) | - | - | N/A :: - :: once :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange; albumin replacement | Hemodynamic instability; sepsis; coagulopathy; poor vascular access | BP during exchanges; electrolytes (Ca, K, Mg); coagulation (fibrinogen); line site; citrate reactions | - | STAT | - | STAT |
 
 *Note: Methylprednisolone is typically started first (often in combination with IVIG or PLEX). IVIG and PLEX are considered equivalent first-line therapies and should be started concurrently or within days of steroids if clinical suspicion is high. For anti-NMDAR encephalitis, combination of all three first-line agents is common. PLEX may be preferred if rapid deterioration; IVIG may be preferred if hemodynamic instability or vascular access issues.*
 
@@ -261,7 +261,7 @@ SECTION A: ACTION ITEMS
 | Valproic acid (mood stabilization/agitation) | PO | - | 250-500 mg :: PO :: BID :: 250-500 mg PO BID; titrate to level 50-100 mcg/mL (dual benefit: mood + seizure) | Pregnancy; hepatic disease | LFTs; ammonia; CBC; drug level | - | ROUTINE | ROUTINE | ROUTINE |
 | Melatonin (sleep-wake disturbance) | PO | - | 3-10 mg :: PO :: qHS :: 3-10 mg PO qHS | None significant | Sleep quality; no significant drug interactions | - | ROUTINE | ROUTINE | ROUTINE |
 | Trazodone (insomnia) | PO | - | 25-100 mg :: PO :: qHS :: 25-100 mg PO qHS | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
-| Electroconvulsive therapy (ECT) (refractory catatonia) | - | - | Per psychiatry protocol; typically 3x/week | Pheochromocytoma; raised ICP (relative) | Anesthesia monitoring; cognitive function; post-procedure seizure threshold | - | EXT | EXT | EXT |
+| Electroconvulsive therapy (ECT) (refractory catatonia) | - | - | N/A :: - :: per protocol :: Per psychiatry protocol; typically 3x/week | Pheochromocytoma; raised ICP (relative) | Anesthesia monitoring; cognitive function; post-procedure seizure threshold | - | EXT | EXT | EXT |
 
 *Note: CAUTION with antipsychotics in autoimmune encephalitis -- patients (especially anti-NMDAR) are highly susceptible to neuroleptic malignant syndrome (NMS) and EPS. Use LOWEST effective doses. Benzodiazepines (lorazepam) are first-line for catatonia and agitation. Catatonia may be present in up to 40% of anti-NMDAR cases. If catatonia does not respond to lorazepam, consider ECT before escalating antipsychotics. Psychiatric symptoms in AE are driven by antibody-mediated mechanisms -- immunotherapy is the definitive treatment.*
 
@@ -269,18 +269,18 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Intubation and mechanical ventilation | - | - | RSI: avoid succinylcholine if hyperkalemia risk; maintain normocapnia | As per standard airway management | Ventilator parameters; ABG; daily SBT when appropriate | - | - | - | STAT |
+| Intubation and mechanical ventilation | - | - | N/A :: - :: once :: RSI: avoid succinylcholine if hyperkalemia risk; maintain normocapnia | As per standard airway management | Ventilator parameters; ABG; daily SBT when appropriate | - | - | - | STAT |
 | Labetalol IV (autonomic hypertensive crisis) | IV | - | 10-20 mg :: IV :: PRN :: 10-20 mg IV q10-15min PRN; or infusion 0.5-2 mg/min; target SBP <180 | Severe bradycardia; AV block; decompensated CHF; asthma | Continuous BP; HR; I/O | - | - | - | STAT |
 | Esmolol IV (autonomic tachycardia) | IV | - | 500 mcg/kg :: IV :: once :: Bolus: 500 mcg/kg over 1 min; Infusion: 50-200 mcg/kg/min | Severe bradycardia; decompensated CHF; cardiogenic shock | Continuous HR/BP; ECG | - | - | - | STAT |
 | Atropine (autonomic bradycardia) | IV | - | 0.5-1 mg :: IV :: - :: 0.5-1 mg IV q3-5min (max 3 mg total) | Tachycardia; thyrotoxicosis | HR; rhythm | - | - | - | STAT |
 | Isoproterenol drip (severe autonomic bradycardia) | IV | - | 2-10 mcg :: IV :: - :: 2-10 mcg/min IV infusion; titrate to HR >60 | Tachyarrhythmia; digoxin toxicity | Continuous ECG; HR; BP | - | - | - | STAT |
-| Temporary transvenous pacemaker | - | - | Per cardiology if pharmacologic measures fail | Active infection at insertion site | Capture; sensing; threshold checks | - | - | - | STAT |
+| Temporary transvenous pacemaker | - | - | N/A :: - :: continuous :: Per cardiology if pharmacologic measures fail | Active infection at insertion site | Capture; sensing; threshold checks | - | - | - | STAT |
 | Norepinephrine (autonomic hypotension) | IV | - | 0.1-0.5 mcg/kg :: IV :: - :: 0.1-0.5 mcg/kg/min IV; titrate to MAP >65 | Peripheral ischemia risk at high doses | Arterial line; MAP; lactate; urine output | - | - | - | STAT |
 | DVT prophylaxis (enoxaparin) | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily (adjust for renal function: 30 mg SC daily if CrCl <30) | Active bleeding; HIT; severe thrombocytopenia | Platelet count; anti-Xa if renal impairment; bleeding signs | - | STAT | - | STAT |
 | Temperature management (hyperthermia) | IV | - | 1g :: IV :: q6h :: Targeted temperature: 36-37C; cooling blankets; acetaminophen 1g IV/PO q6h PRN | Avoid overcooling; avoid shivering (increases metabolic demand) | Continuous temperature; shivering assessment (BSAS) | - | - | - | STAT |
 | Sodium correction (hyponatremia -- LGI1) | IV | - | 100-150 mL :: IV :: - :: If Na <125: 3% NaCl 100-150 mL IV over 10-20 min (repeat up to 3x); Target correction: 4-6 mEq/L in first 6h, max 8 mEq/L in 24h | Avoid overcorrection (osmotic demyelination risk) | Sodium q2-4h during correction; urine output; neurologic status | URGENT | URGENT | ROUTINE | URGENT |
 | Fludrocortisone (chronic hyponatremia -- LGI1) | PO | - | 0.05-0.2 mg :: PO :: daily :: 0.05-0.2 mg PO daily | CHF; hypertension | Sodium; potassium; BP; edema | - | ROUTINE | ROUTINE | - |
-| Fluid restriction (SIADH-related hyponatremia) | - | - | Restrict to 1-1.2 L/day if SIADH suspected (LGI1) | Dehydration risk | Sodium; I/O; daily weight; urine osmolality | - | ROUTINE | - | ROUTINE |
+| Fluid restriction (SIADH-related hyponatremia) | - | - | N/A :: - :: per protocol :: Restrict to 1-1.2 L/day if SIADH suspected (LGI1) | Dehydration risk | Sodium; I/O; daily weight; urine osmolality | - | ROUTINE | - | ROUTINE |
 
 *Note: Central hypoventilation occurs in anti-NMDAR encephalitis and may require prolonged mechanical ventilation (weeks to months). Autonomic instability (tachycardia/bradycardia alternating, blood pressure lability, central hyperthermia, cardiac dysrhythmias) is a hallmark of severe anti-NMDAR encephalitis. LGI1 encephalitis frequently causes SIADH-related hyponatremia. Do NOT over-correct sodium (risk of osmotic demyelination).*
 

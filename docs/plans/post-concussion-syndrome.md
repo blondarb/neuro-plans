@@ -148,11 +148,11 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Canalith repositioning (Epley maneuver) | - | BPPV (post-traumatic) | Perform in clinic; may need 2-3 sessions | Cervical spine injury (relative) | Resolution of positional nystagmus | URGENT | ROUTINE | ROUTINE | - |
+| Canalith repositioning (Epley maneuver) | - | BPPV (post-traumatic) | N/A :: - :: per session :: Perform in clinic; may need 2-3 sessions | Cervical spine injury (relative) | Resolution of positional nystagmus | URGENT | ROUTINE | ROUTINE | - |
 | Meclizine | PO | Acute vestibular symptoms (short-term only) | 25 mg :: PO :: q8h PRN :: 25 mg PO q8h PRN; short-term only (<1-2 weeks); avoid chronic use | Glaucoma, urinary retention | Sedation; may impair vestibular compensation if used chronically | URGENT | ROUTINE | ROUTINE | - |
 | Dimenhydrinate | PO | Acute vestibular symptoms (short-term only) | 50 mg :: PO :: q6h PRN :: 50 mg PO q6h PRN; short-term only (<1-2 weeks) | Same as meclizine | Sedation; avoid chronic use | URGENT | ROUTINE | ROUTINE | - |
 | Ondansetron | PO/IV | Nausea associated with vestibular dysfunction | 4-8 mg :: PO :: q8h PRN :: 4-8 mg PO/IV q8h PRN | QT prolongation | QTc if risk factors | URGENT | ROUTINE | ROUTINE | - |
-| Vestibular rehabilitation therapy (VRT) (CPT 97110, 97112) | - | Persistent dizziness, balance impairment, vestibular hypofunction | Specialized PT program; 1-2x/week for 6-12 weeks | Active vertigo crisis (defer until stable) | BESS score, DHI score, functional improvement | - | ROUTINE | ROUTINE | - |
+| Vestibular rehabilitation therapy (VRT) (CPT 97110, 97112) | - | Persistent dizziness, balance impairment, vestibular hypofunction | N/A :: - :: per protocol :: Specialized PT program; 1-2x/week for 6-12 weeks | Active vertigo crisis (defer until stable) | BESS score, DHI score, functional improvement | - | ROUTINE | ROUTINE | - |
 | Betahistine | PO | Persistent vestibular symptoms (off-label in US) | 16 mg :: PO :: TID :: 16 mg PO TID; not FDA-approved but used internationally | Peptic ulcer disease, pheochromocytoma | GI upset | - | - | EXT | - |
 
 ### 3C. Cognitive and Fatigue Management
@@ -162,8 +162,8 @@ SECTION A: ACTION ITEMS
 | Methylphenidate | PO | Cognitive fatigue, processing speed deficits, attention impairment | 5 mg :: PO :: BID :: Start 5 mg PO BID (morning and noon); increase by 5 mg/dose every 3-7 days; target 10-20 mg BID; max 60 mg/day; avoid afternoon dosing | Uncontrolled HTN, cardiac arrhythmia, glaucoma, anxiety disorder (relative), substance abuse history | HR, BP; appetite, weight, sleep; anxiety; potential for abuse | - | - | ROUTINE | - |
 | Amantadine | PO | Cognitive fatigue, processing speed, motivation | 100 mg :: PO :: BID :: Start 100 mg PO every morning; increase to 100 mg BID after 1 week; max 200 mg BID | Renal impairment (adjust dose), seizure history (relative) | Livedo reticularis, ankle edema, hallucinations, insomnia; renal function | - | - | ROUTINE | - |
 | Modafinil | PO | Excessive daytime sleepiness, fatigue (off-label for TBI) | 100 mg :: PO :: daily :: Start 100 mg PO every morning; may increase to 200 mg daily; max 400 mg/day | Cardiac arrhythmia, mitral valve prolapse, hepatic impairment | HR, BP; headache; Stevens-Johnson (rare); may reduce OCP efficacy | - | - | ROUTINE | - |
-| Cognitive rehabilitation therapy (CPT 97530) | - | Attention, memory, executive function deficits | Specialized OT/SLP program; 1-2x/week for 8-16 weeks | None significant | Neuropsychological re-testing at 3-6 months | - | ROUTINE | ROUTINE | - |
-| Speech-language pathology (cognitive-linguistic therapy) | - | Word-finding, processing speed, memory strategies | 1-2x/week for 8-12 weeks | None significant | Functional cognitive improvement | - | ROUTINE | ROUTINE | - |
+| Cognitive rehabilitation therapy (CPT 97530) | - | Attention, memory, executive function deficits | N/A :: - :: per protocol :: Specialized OT/SLP program; 1-2x/week for 8-16 weeks | None significant | Neuropsychological re-testing at 3-6 months | - | ROUTINE | ROUTINE | - |
+| Speech-language pathology (cognitive-linguistic therapy) | - | Word-finding, processing speed, memory strategies | N/A :: - :: per protocol :: 1-2x/week for 8-12 weeks | None significant | Functional cognitive improvement | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Sleep Disturbance Treatment
 
@@ -185,26 +185,26 @@ SECTION A: ACTION ITEMS
 | Duloxetine | PO | Depression with comorbid pain (headache, musculoskeletal) | 20-30 mg :: PO :: daily :: Start 20-30 mg PO daily; increase to 60 mg daily after 1-2 weeks; max 120 mg | Concurrent MAOIs, hepatic impairment, uncontrolled glaucoma | LFTs; BP; nausea (transient); discontinuation syndrome | - | - | ROUTINE | - |
 | Bupropion XL | PO | Depression with fatigue, low motivation; avoidance of sexual side effects | 150 mg :: PO :: daily :: Start 150 mg PO daily; may increase to 300 mg daily after 1-2 weeks; max 450 mg/day | Seizure disorder (lowers threshold), bulimia/anorexia, concurrent MAOIs | Seizure risk (dose-dependent); insomnia; agitation; avoid in patients with seizure history | - | - | ROUTINE | - |
 | Buspirone | PO | Anxiety (non-benzodiazepine) | 5 mg :: PO :: TID :: Start 5 mg PO TID; increase by 5 mg every 2-3 days; target 15-30 mg/day divided BID-TID; max 60 mg/day | Concurrent MAOIs | Dizziness, headache; takes 2-4 weeks for full effect; no abuse potential | - | - | ROUTINE | - |
-| Cognitive behavioral therapy (CBT) | - | Depression, anxiety, PTSD, adjustment disorder post-TBI | Weekly sessions for 12-16 weeks; evidence-based for PCS | None | Symptom questionnaires (PHQ-9, GAD-7); functional improvement | - | ROUTINE | ROUTINE | - |
-| EMDR (Eye Movement Desensitization and Reprocessing) | - | Post-traumatic stress disorder comorbid with PCS | Per therapist protocol; evidence-based for PTSD | Active psychosis, acute suicidality | PTSD symptom scores (PCL-5) | - | - | ROUTINE | - |
+| Cognitive behavioral therapy (CBT) | - | Depression, anxiety, PTSD, adjustment disorder post-TBI | N/A :: - :: weekly :: Weekly sessions for 12-16 weeks; evidence-based for PCS | None | Symptom questionnaires (PHQ-9, GAD-7); functional improvement | - | ROUTINE | ROUTINE | - |
+| EMDR (Eye Movement Desensitization and Reprocessing) | - | Post-traumatic stress disorder comorbid with PCS | N/A :: - :: per protocol :: Per therapist protocol; evidence-based for PTSD | Active psychosis, acute suicidality | PTSD symptom scores (PCL-5) | - | - | ROUTINE | - |
 
 ### 3F. Autonomic Dysfunction / Exertion Intolerance Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Graded aerobic exercise program (Buffalo Concussion Treadmill Test protocol) | - | Exercise intolerance, autonomic dysregulation post-concussion | Start at sub-symptom threshold HR; increase 5-10% per week; target 30 min moderate intensity | Uncontrolled cardiac disease; active vertigo | HR monitoring; symptom provocation tracking; stop if symptoms worsen >2 points | - | - | ROUTINE | - |
+| Graded aerobic exercise program (Buffalo Concussion Treadmill Test protocol) | - | Exercise intolerance, autonomic dysregulation post-concussion | N/A :: - :: daily :: Start at sub-symptom threshold HR; increase 5-10% per week; target 30 min moderate intensity | Uncontrolled cardiac disease; active vertigo | HR monitoring; symptom provocation tracking; stop if symptoms worsen >2 points | - | - | ROUTINE | - |
 | Fludrocortisone | PO | Orthostatic intolerance, post-concussion autonomic dysfunction | 0.1 mg :: PO :: daily :: Start 0.1 mg PO daily; max 0.2 mg daily | CHF, hypertension, renal failure | BP, potassium, edema; weight | - | - | EXT | - |
 | Midodrine | PO | Orthostatic hypotension contributing to dizziness | 2.5 mg :: PO :: TID :: Start 2.5 mg PO TID; increase to 5-10 mg TID; avoid evening dose | Supine HTN, urinary retention, pheochromocytoma | Supine BP; urinary symptoms | - | - | EXT | - |
-| Compression stockings | - | Orthostatic intolerance | 20-30 mmHg waist-high; wear during upright activity | Peripheral arterial disease | Comfort, compliance | - | - | ROUTINE | - |
+| Compression stockings | - | Orthostatic intolerance | N/A :: - :: continuous :: 20-30 mmHg waist-high; wear during upright activity | Peripheral arterial disease | Comfort, compliance | - | - | ROUTINE | - |
 | Salt supplementation | PO | Orthostatic intolerance (if no HTN) | 1-2 g :: PO :: daily :: 1-2 g additional sodium daily via salt tablets or dietary increase | Hypertension, CHF, renal disease | BP, edema | - | - | ROUTINE | - |
 
 ### 3G. Visual/Oculomotor Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Neuro-optometric rehabilitation | - | Convergence insufficiency, accommodative dysfunction, saccadic dysfunction | Specialized vision therapy; 1-2x/week for 8-12 weeks | None significant | Near point of convergence, symptom improvement | - | - | ROUTINE | - |
-| Prism glasses (temporary) | - | Binocular vision dysfunction, diplopia | Prescribed by neuro-optometrist or ophthalmologist | None | Visual comfort, symptom relief | - | - | ROUTINE | - |
-| FL-41 tinted lenses | - | Photophobia, light sensitivity | Worn as needed; indoor and outdoor versions | None | Subjective improvement | - | ROUTINE | ROUTINE | - |
+| Neuro-optometric rehabilitation | - | Convergence insufficiency, accommodative dysfunction, saccadic dysfunction | N/A :: - :: per protocol :: Specialized vision therapy; 1-2x/week for 8-12 weeks | None significant | Near point of convergence, symptom improvement | - | - | ROUTINE | - |
+| Prism glasses (temporary) | - | Binocular vision dysfunction, diplopia | N/A :: - :: continuous :: Prescribed by neuro-optometrist or ophthalmologist | None | Visual comfort, symptom relief | - | - | ROUTINE | - |
+| FL-41 tinted lenses | - | Photophobia, light sensitivity | N/A :: - :: PRN :: Worn as needed; indoor and outdoor versions | None | Subjective improvement | - | ROUTINE | ROUTINE | - |
 
 ---
 

@@ -154,11 +154,11 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Artificial tears (preservative-free) | - | - | 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Lubricating eye ointment (Lacri-Lube) | - | - | Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Eye patch or moisture chamber | Transdermal | - | At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Tape eyelid closed at night | - | - | If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Wraparound glasses/sunglasses | - | - | During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
+| Artificial tears (preservative-free) | - | - | 1-2 drops :: - :: q1-2h :: 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Lubricating eye ointment (Lacri-Lube) | - | - | N/A :: - :: TID :: Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Eye patch or moisture chamber | Transdermal | - | N/A :: Transdermal :: continuous :: At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Tape eyelid closed at night | - | - | N/A :: - :: continuous :: If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Wraparound glasses/sunglasses | - | - | N/A :: - :: continuous :: During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Pain Management
 
@@ -179,10 +179,10 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Facial exercises | - | - | Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
-| Facial massage | - | - | Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
-| Electrical stimulation | - | - | Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
-| Neuromuscular retraining | - | - | Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
+| Facial exercises | - | - | N/A :: - :: daily :: Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
+| Facial massage | - | - | N/A :: - :: daily :: Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
+| Electrical stimulation | - | - | N/A :: - :: continuous :: Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
+| Neuromuscular retraining | - | - | N/A :: - :: daily :: Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
 
 ### 3G. Surgical Options (Refractory Cases)
 

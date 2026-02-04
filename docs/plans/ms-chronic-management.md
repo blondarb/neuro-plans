@@ -140,7 +140,7 @@ tags:
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Ocrelizumab (PPMS) | PO | - | 300 mg :: PO :: - :: 300 mg × 2, then 600 mg q6 months | - | Per above | Per above; only approved for PPMS | - | - | ROUTINE | - |
-| Siponimod (active SPMS) | - | - | Per above | - | Per above | Per above | - | - | ROUTINE | - |
+| Siponimod (active SPMS) | - | - | N/A :: - :: per protocol :: Per above | - | Per above | Per above | - | - | ROUTINE | - |
 
 ### 3E. Acute Relapse Treatment
 
@@ -148,37 +148,37 @@ tags:
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
 | Prednisone oral (alternative) | IV | - | 1250 mg :: IV :: daily :: 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same | - | ROUTINE | ROUTINE | - |
-| Plasma exchange (PLEX) (CPT 36514) | - | - | 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | - | N/A :: - :: once :: 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
 | ACTH gel (Acthar) | IM | - | 80-120 units :: IM :: daily :: 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same | - | - | ROUTINE | - |
 
 ### 3F. Symptom Management
 
 | Symptom | Treatment | Dosing | Monitoring |
 |---------|-----------|--------|------------|
-| **Fatigue** | Amantadine | 100 mg BID | Livedo reticularis |
-| | Modafinil | 100-200 mg AM | BP, sleep |
-| | Armodafinil | 150-250 mg AM | Same |
-| **Spasticity** | Baclofen | 5 mg TID, titrate to 20 mg TID | Sedation, weakness |
-| | Tizanidine | 2-4 mg TID | LFTs, sedation, hypotension |
-| | OnabotulinumtoxinA | Injection for focal spasticity | Weakness |
-| | Intrathecal baclofen | Pump for severe spasticity | Pump complications |
-| **Walking** | Dalfampridine (Ampyra) | 10 mg BID | Seizures (discontinue if occurs) |
-| **Bladder (OAB)** | Oxybutynin | 5 mg BID-TID | Dry mouth, cognitive effects |
-| | Solifenacin | 5-10 mg daily | Same (less cognitive) |
-| | Mirabegron | 25-50 mg daily | HTN |
-| | OnabotulinumtoxinA (bladder) | 100-200 units injection | Retention |
-| | Intermittent catheterization | As needed | UTI |
-| **Bladder (retention)** | Clean intermittent cath | Schedule-based | UTI prevention |
-| **Neuropathic pain** | Gabapentin | 300-1200 mg TID | Sedation |
-| | Pregabalin | 75-300 mg BID | Same |
-| | Duloxetine | 30-60 mg daily | Nausea |
-| | Carbamazepine (trigeminal) | 200-400 mg BID | Rash, CBC, LFTs |
-| **Depression** | SSRIs (sertraline, escitalopram) | Standard dosing | Per SSRI |
-| **Cognitive dysfunction** | Cognitive rehabilitation | PT/OT/neuropsych referral | Progress |
-| **Tremor** | Propranolol | 40-160 mg/day | HR, BP |
-| | Clonazepam | 0.5-2 mg QHS | Sedation |
-| **Sexual dysfunction** | Sildenafil (male) | 25-100 mg PRN | BP with nitrates |
-| | Refer to specialist | Female; multifactorial | Per evaluation |
+| **Fatigue** | Amantadine | 100 mg :: - :: BID :: 100 mg BID | Livedo reticularis |
+| | Modafinil | 100-200 mg :: - :: daily :: 100-200 mg AM | BP, sleep |
+| | Armodafinil | 150-250 mg :: - :: daily :: 150-250 mg AM | Same |
+| **Spasticity** | Baclofen | 5 mg :: - :: TID :: 5 mg TID, titrate to 20 mg TID | Sedation, weakness |
+| | Tizanidine | 2-4 mg :: - :: TID :: 2-4 mg TID | LFTs, sedation, hypotension |
+| | OnabotulinumtoxinA | N/A :: - :: per protocol :: Injection for focal spasticity | Weakness |
+| | Intrathecal baclofen | N/A :: - :: per protocol :: Pump for severe spasticity | Pump complications |
+| **Walking** | Dalfampridine (Ampyra) | 10 mg :: - :: BID :: 10 mg BID | Seizures (discontinue if occurs) |
+| **Bladder (OAB)** | Oxybutynin | 5 mg :: - :: TID :: 5 mg BID-TID | Dry mouth, cognitive effects |
+| | Solifenacin | 5-10 mg :: - :: daily :: 5-10 mg daily | Same (less cognitive) |
+| | Mirabegron | 25-50 mg :: - :: daily :: 25-50 mg daily | HTN |
+| | OnabotulinumtoxinA (bladder) | 100-200 units :: - :: per protocol :: 100-200 units injection | Retention |
+| | Intermittent catheterization | N/A :: - :: PRN :: As needed | UTI |
+| **Bladder (retention)** | Clean intermittent cath | N/A :: - :: per protocol :: Schedule-based | UTI prevention |
+| **Neuropathic pain** | Gabapentin | 300-1200 mg :: - :: TID :: 300-1200 mg TID | Sedation |
+| | Pregabalin | 75-300 mg :: - :: BID :: 75-300 mg BID | Same |
+| | Duloxetine | 30-60 mg :: - :: daily :: 30-60 mg daily | Nausea |
+| | Carbamazepine (trigeminal) | 200-400 mg :: - :: BID :: 200-400 mg BID | Rash, CBC, LFTs |
+| **Depression** | SSRIs (sertraline, escitalopram) | N/A :: - :: per protocol :: Standard dosing | Per SSRI |
+| **Cognitive dysfunction** | Cognitive rehabilitation | N/A :: - :: daily :: PT/OT/neuropsych referral | Progress |
+| **Tremor** | Propranolol | 40-160 mg/day :: - :: daily :: 40-160 mg/day | HR, BP |
+| | Clonazepam | 0.5-2 mg :: - :: QHS :: 0.5-2 mg QHS | Sedation |
+| **Sexual dysfunction** | Sildenafil (male) | 25-100 mg :: - :: PRN :: 25-100 mg PRN | BP with nitrates |
+| | Refer to specialist | N/A :: - :: per protocol :: Female; multifactorial | Per evaluation |
 
 ---
 

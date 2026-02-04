@@ -147,11 +147,11 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | IVIG (intravenous immunoglobulin) (CPT 96365) | IV | - | 0.4 g/kg :: IV :: daily x 5 days :: 0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit | IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin | Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms) | - | STAT | - | STAT |
-| Plasmapheresis (PLEX) (CPT 36514) | - | - | 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection | - | STAT | - | STAT |
+| Plasmapheresis (PLEX) (CPT 36514) | - | - | N/A :: - :: once :: 5 exchanges over 7-14 days (typically every other day); each exchange 1-1.5 plasma volumes; use albumin replacement. Start within 4 weeks of symptom onset | Hemodynamic instability, severe sepsis, active bleeding, heparin allergy (for circuit anticoagulation), poor vascular access | BP and HR continuous during exchange; calcium (citrate toxicity: tingling, cramping); fibrinogen; CBC; electrolytes; line site infection | - | STAT | - | STAT |
 | Intubation and mechanical ventilation | - | - | 20 mL/kg :: - :: - :: Indications (20/30/40 rule): FVC <20 mL/kg, NIF weaker than -30 cmH2O, >30% decline in FVC from baseline, or clinical respiratory distress. Use non-depolarizing agents (avoid succinylcholine — hyperkalemia risk). RSI with rocuronium preferred | N/A (life-saving) | Ventilator settings per ICU protocol; sedation; daily spontaneous breathing trial when improving | STAT | STAT | - | STAT |
 | DVT prophylaxis: Enoxaparin | SC | - | 40 mg :: SC :: daily :: 40 mg SC daily; start on admission | Active bleeding, platelets <50K, CrCl <30 (use UFH) | Platelets q3 days; anti-Xa if renal impairment | - | ROUTINE | - | ROUTINE |
 | DVT prophylaxis: Heparin SC (alternative) | SC | - | 5000 units :: SC :: - :: 5000 units SC q8-12h | Active bleeding, HIT | Platelets q3 days | - | ROUTINE | - | ROUTINE |
-| Pneumatic compression devices | - | - | Apply bilaterally on admission; continue until ambulatory | Acute DVT, severe PVD | Skin checks daily | STAT | STAT | - | STAT |
+| Pneumatic compression devices | - | - | N/A :: - :: continuous :: Apply bilaterally on admission; continue until ambulatory | Acute DVT, severe PVD | Skin checks daily | STAT | STAT | - | STAT |
 
 ### 3B. Symptomatic Treatments
 
@@ -176,7 +176,7 @@ SECTION A: ACTION ITEMS
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Second course IVIG | PO | - | 0.4 g/kg :: PO :: daily x 5 days :: 0.4 g/kg/day x 5 days; consider if progressive deterioration after initial treatment or treatment-related fluctuation (TRF) | Same as initial IVIG | Same as initial IVIG | - | URGENT | - | URGENT |
-| PLEX after IVIG failure | - | - | 5 exchanges over 7-14 days; wait ≥2 weeks after IVIG to avoid washing out immunoglobulin | Same as initial PLEX | Same as initial PLEX | - | URGENT | - | URGENT |
+| PLEX after IVIG failure | - | - | N/A :: - :: per protocol :: 5 exchanges over 7-14 days; wait ≥2 weeks after IVIG to avoid washing out immunoglobulin | Same as initial PLEX | Same as initial PLEX | - | URGENT | - | URGENT |
 | IV methylprednisolone (NOT standard of care) (CPT 96365) | IV | - | 500 mg :: IV :: daily :: 500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases | Active infection, uncontrolled diabetes | Glucose, BP, GI prophylaxis | - | EXT | - | EXT |
 
 ### 3D. Disease-Modifying or Chronic Therapies

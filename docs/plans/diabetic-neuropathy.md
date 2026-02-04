@@ -126,7 +126,7 @@ tags:
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Intensive glycemic control | - | - | 7% :: - :: - :: Target HbA1c <7% (individualized); avoid hypoglycemia | Hypoglycemia unawareness with CAN | HbA1c q3 months until stable | - | ROUTINE | ROUTINE | - |
-| Continuous glucose monitoring | - | - | If hypoglycemia unawareness | None | Sensor accuracy | - | - | ROUTINE | - |
+| Continuous glucose monitoring | - | - | N/A :: - :: per protocol :: If hypoglycemia unawareness | None | Sensor accuracy | - | - | ROUTINE | - |
 
 ### 3B. Neuropathic Pain - First-Line Agents
 
@@ -148,9 +148,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Capsaicin 8% patch (Qutenza) | Transdermal | - | Apply to painful area × 30-60 min q3 months; in-office | - | Open wounds; capsaicin allergy | BP during application; pain | - | - | ROUTINE | - |
-| Lidocaine 5% patch | Transdermal | - | Up to 3 patches daily; 12h on/12h off | - | Allergy to local anesthetics | Local irritation | - | ROUTINE | ROUTINE | - |
-| Capsaicin cream 0.075% | - | - | Apply TID-QID; takes 2-4 weeks for effect | - | Open wounds | Initial burning (improves) | - | - | ROUTINE | - |
+| Capsaicin 8% patch (Qutenza) | Transdermal | - | N/A :: Transdermal :: per protocol :: Apply to painful area × 30-60 min q3 months; in-office | - | Open wounds; capsaicin allergy | BP during application; pain | - | - | ROUTINE | - |
+| Lidocaine 5% patch | Transdermal | - | N/A :: Transdermal :: daily :: Up to 3 patches daily; 12h on/12h off | - | Allergy to local anesthetics | Local irritation | - | ROUTINE | ROUTINE | - |
+| Capsaicin cream 0.075% | - | - | N/A :: - :: TID-QID :: Apply TID-QID; takes 2-4 weeks for effect | - | Open wounds | Initial burning (improves) | - | - | ROUTINE | - |
 
 ### 3E. Neuropathic Pain - Third-Line/Refractory
 
@@ -158,41 +158,41 @@ tags:
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Tramadol | PO | - | 50-100 mg :: PO :: PRN :: 50-100 mg q4-6h PRN; max 400 mg/day | Seizure disorder, opioid dependence, MAOIs | Seizures; serotonin syndrome; dependence | - | ROUTINE | ROUTINE | - |
 | Tapentadol ER | PO | - | 50 mg :: PO :: BID :: 50 mg BID; titrate by 50 mg q3 days; max 500 mg/day | Respiratory depression, severe hepatic impairment | Respiratory; GI effects | - | - | ROUTINE | - |
-| Spinal cord stimulation | - | - | Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications | - | - | EXT | - |
+| Spinal cord stimulation | - | - | N/A :: - :: continuous :: Referral to interventional pain for refractory cases | Infection, coagulopathy | Device complications | - | - | EXT | - |
 
 ### 3F. Combination Therapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Duloxetine + Pregabalin | - | - | If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
-| Gabapentinoid + TCA | - | - | If monotherapy inadequate | Per individual agents | Sedation; anticholinergic | - | ROUTINE | ROUTINE | - |
+| Duloxetine + Pregabalin | - | - | N/A :: - :: per protocol :: If monotherapy inadequate; use lower doses of each | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Gabapentinoid + TCA | - | - | N/A :: - :: per protocol :: If monotherapy inadequate | Per individual agents | Sedation; anticholinergic | - | ROUTINE | ROUTINE | - |
 
 ### 3G. Diabetic Autonomic Neuropathy Treatment
 
 | Symptom | Treatment | Dosing | Monitoring |
 |---------|-----------|--------|------------|
-| **Orthostatic hypotension** | Midodrine | 2.5-10 mg TID (last dose before 6 PM) | Supine HTN; avoid at night |
-| | Fludrocortisone | 0.1-0.3 mg daily | Edema, K+, supine HTN |
-| | Droxidopa (Northera) | 100-600 mg TID | Supine HTN |
-| | Compression stockings | Waist-high, 30-40 mmHg | Compliance |
-| **Gastroparesis** | Metoclopramide | 5-10 mg before meals; max 12 weeks | Tardive dyskinesia (black box) |
-| | Domperidone | 10 mg TID (not FDA-approved, requires access) | QTc prolongation |
-| | Erythromycin | 40-250 mg TID (tachyphylaxis common) | GI symptoms; QTc |
-| | Gastric electrical stimulator | Refractory cases; surgical | Device complications |
-| **Erectile dysfunction** | Sildenafil | 25-100 mg PRN | Nitrate contraindication |
-| | Tadalafil | 10-20 mg PRN or 2.5-5 mg daily | Same |
-| **Bladder dysfunction** | Timed voiding | q3-4 hour schedule | Residual volumes |
-| | Bethanechol | 10-50 mg TID-QID | Asthma, bradycardia |
-| | Intermittent catheterization | If high PVR | UTI |
-| **Sudomotor dysfunction** | Glycopyrrolate | 1-2 mg BID-TID | Anticholinergic effects |
+| **Orthostatic hypotension** | Midodrine | 2.5-10 mg :: - :: TID :: 2.5-10 mg TID (last dose before 6 PM) | Supine HTN; avoid at night |
+| | Fludrocortisone | 0.1-0.3 mg :: - :: daily :: 0.1-0.3 mg daily | Edema, K+, supine HTN |
+| | Droxidopa (Northera) | 100-600 mg :: - :: TID :: 100-600 mg TID | Supine HTN |
+| | Compression stockings | N/A :: - :: continuous :: Waist-high, 30-40 mmHg | Compliance |
+| **Gastroparesis** | Metoclopramide | 5-10 mg :: - :: TID :: 5-10 mg before meals; max 12 weeks | Tardive dyskinesia (black box) |
+| | Domperidone | 10 mg :: - :: TID :: 10 mg TID (not FDA-approved, requires access) | QTc prolongation |
+| | Erythromycin | 40-250 mg :: - :: TID :: 40-250 mg TID (tachyphylaxis common) | GI symptoms; QTc |
+| | Gastric electrical stimulator | N/A :: - :: continuous :: Refractory cases; surgical | Device complications |
+| **Erectile dysfunction** | Sildenafil | 25-100 mg :: - :: PRN :: 25-100 mg PRN | Nitrate contraindication |
+| | Tadalafil | 10-20 mg :: - :: daily :: 10-20 mg PRN or 2.5-5 mg daily | Same |
+| **Bladder dysfunction** | Timed voiding | N/A :: - :: per protocol :: q3-4 hour schedule | Residual volumes |
+| | Bethanechol | 10-50 mg :: - :: TID-QID :: 10-50 mg TID-QID | Asthma, bradycardia |
+| | Intermittent catheterization | N/A :: - :: per protocol :: If high PVR | UTI |
+| **Sudomotor dysfunction** | Glycopyrrolate | 1-2 mg :: - :: TID :: 1-2 mg BID-TID | Anticholinergic effects |
 
 ### 3H. Diabetic Amyotrophy (DLRPN) Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Glycemic control | - | - | Optimize; avoid rapid correction | Per diabetes management | HbA1c | - | ROUTINE | ROUTINE | - |
-| Physical therapy | - | - | Prevent contractures; strengthen | None | Function | - | ROUTINE | ROUTINE | - |
-| Pain management | - | - | Per neuropathic pain algorithm | Per agent | Per agent | - | ROUTINE | ROUTINE | - |
+| Glycemic control | - | - | N/A :: - :: per protocol :: Optimize; avoid rapid correction | Per diabetes management | HbA1c | - | ROUTINE | ROUTINE | - |
+| Physical therapy | - | - | N/A :: - :: daily :: Prevent contractures; strengthen | None | Function | - | ROUTINE | ROUTINE | - |
+| Pain management | - | - | N/A :: - :: per protocol :: Per neuropathic pain algorithm | Per agent | Per agent | - | ROUTINE | ROUTINE | - |
 | IVIG (severe/refractory) (CPT 96365) | PO | - | 2 g/kg :: PO :: - :: 2 g/kg over 2-5 days; may repeat | IgA deficiency | Renal function; infusion reactions | - | ROUTINE | EXT | - |
 | Methylprednisolone (CPT 96374) | IV | - | 1 g :: IV :: daily :: 1 g IV daily × 3-5 days; taper (may use if IVIG unavailable) | Uncontrolled DM (relative) | Glucose; infection | - | ROUTINE | EXT | - |
 
