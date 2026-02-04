@@ -285,14 +285,14 @@ SECTION B: REFERENCE (Expand as Needed)
 | IV metoclopramide 10-20 mg superior to placebo for acute migraine | Class I, Level A | [Friedman et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/25512978/) |
 | Single-dose IV dexamethasone reduces headache recurrence within 72 hours (NNT 9) | Class I, Level A | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/); [Colman et al. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18541610/) |
 | Ketorolac IV effective for acute migraine; comparable to opioids without sedation | Class I, Level B | [Friedman et al. Headache 2008](https://pubmed.ncbi.nlm.nih.gov/19489136/) |
-| IV magnesium sulfate effective for acute migraine, especially with aura | Class I, Level B | [Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/12482208/); [Chiu et al. Ann Emerg Med 2016](https://pubmed.ncbi.nlm.nih.gov/37210160/) |
+| IV magnesium sulfate effective for acute migraine, especially with aura | Class I, Level B | [Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/12482208/); [Chiu et al. Pain Physician 2016](https://pubmed.ncbi.nlm.nih.gov/26752497/) |
 | Subcutaneous sumatriptan 6 mg effective for acute migraine | Class I, Level A | [Ferrari et al. Lancet 2001](https://pubmed.ncbi.nlm.nih.gov/11728541/) |
 | Repetitive IV DHE effective for breaking status migrainosus | Class II, Level B | [Raskin. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/3520384/); [Nagy et al. Headache 1993](https://pubmed.ncbi.nlm.nih.gov/8246283/) |
 | Greater occipital nerve block effective for acute migraine and status migrainosus | Class II, Level B | [Afridi et al. Headache 2006](https://pubmed.ncbi.nlm.nih.gov/18778577/); [Inan et al. J Headache Pain 2015](https://pubmed.ncbi.nlm.nih.gov/27366513/) |
 | Valproate IV effective for acute migraine in ED | Class I, Level B | [Tanen et al. Ann Emerg Med 2003](https://pubmed.ncbi.nlm.nih.gov/12764341/) |
 | Chlorpromazine IV effective for acute migraine in ED | Class I, Level B | [Kelly et al. Ann Emerg Med 2017](https://pubmed.ncbi.nlm.nih.gov/30270920/) |
 | Sub-anesthetic ketamine infusion for refractory migraine | Class III, Level C | [Pomeroy et al. Headache 2017](https://pubmed.ncbi.nlm.nih.gov/28025837/); [Schwenk et al. Reg Anesth Pain Med 2018](https://pubmed.ncbi.nlm.nih.gov/29923953/) |
-| IV lidocaine for refractory migraine and status migrainosus | Class III, Level C | [Williams & Bhatt. Anesthesiology 2007](https://pubmed.ncbi.nlm.nih.gov/18073577/); [Rosen et al. Cephalalgia 2009](https://pubmed.ncbi.nlm.nih.gov/27288354/) |
+| IV lidocaine for refractory migraine and status migrainosus | Class III, Level C | [Williams & Bhatt. Anesthesiology 2007](https://pubmed.ncbi.nlm.nih.gov/18073577/); [Rosen et al. Headache 2009](https://pubmed.ncbi.nlm.nih.gov/19222600/) |
 | Diphenhydramine co-administration prevents akathisia from dopamine antagonists | Class II, Level B | [Vinson. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15226705/) |
 | ICHD-3 diagnostic criteria for status migrainosus | Consensus | [ICHD-3. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 | AHS consensus statement on migraine treatment in the ED | Consensus/Guidelines | [American Headache Society. Headache 2016](https://pubmed.ncbi.nlm.nih.gov/27300483/) |

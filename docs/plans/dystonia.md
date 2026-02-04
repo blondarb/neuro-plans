@@ -267,7 +267,7 @@ tags:
 | Dystonia classification consensus | Expert consensus | [Albanese A et al. Mov Disord 2013](https://pubmed.ncbi.nlm.nih.gov/23649720/) |
 | Wilson's disease diagnosis and treatment | Class I, Level A | [Roberts EA, Schilsky ML. Hepatology 2008 (AASLD Guideline)](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
 | D-penicillamine for Wilson's disease | Class I, Level A | [Roberts EA, Schilsky ML. Hepatology 2008](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
-| Intrathecal baclofen for severe dystonia | Class II, Level B | [Albright AL et al. J Neurosurg 2001](https://pubmed.ncbi.nlm.nih.gov/18428811/) |
+| Intrathecal baclofen for severe dystonia | Class II, Level B | [Albright AL et al. Dev Med Child Neurol 2001](https://pubmed.ncbi.nlm.nih.gov/11665821/) |
 | Benztropine/diphenhydramine for acute dystonic reaction | Class III, Level C | [van Harten PN et al. J Clin Psychiatry 1999](https://pubmed.ncbi.nlm.nih.gov/10626048/) |
 | Carbamazepine for paroxysmal kinesigenic dyskinesia | Class II, Level B | [Bruno MK et al. Brain 2004](https://pubmed.ncbi.nlm.nih.gov/15469950/) |
 | EFNS guidelines on dystonia diagnosis and treatment | Expert consensus | [Albanese A et al. Eur J Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/20482602/) |

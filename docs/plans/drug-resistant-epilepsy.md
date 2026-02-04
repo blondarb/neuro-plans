@@ -311,7 +311,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Temporal lobectomy superior to medical therapy for mesial TLE | Class I, Level A (RCT) | [Wiebe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11484687/) |
 | Delayed surgical referral worsens outcomes; early surgery recommended | Class II evidence | [Engel et al. JAMA 2012 (ERSET)](https://pubmed.ncbi.nlm.nih.gov/22399728/) |
 | VNS reduces seizure frequency ~50% in responders; efficacy improves over years | Class I evidence | [Morris & Mueller. Epilepsy Behav 2017](https://pubmed.ncbi.nlm.nih.gov/30356612/) |
-| RNS achieves median 53% seizure reduction at 2 years, improving over time (long-term data) | Class I evidence (pivotal trial) | [Nair et al. Epilepsia 2020](https://pubmed.ncbi.nlm.nih.gov/37900633/) |
+| RNS achieves median 53% seizure reduction at 2 years, improving over time (long-term data) | Class I evidence (pivotal trial) | [Nair et al. Neurology 2020](https://pubmed.ncbi.nlm.nih.gov/32690786/) |
 | DBS of anterior nucleus of thalamus: 69% median seizure reduction at 5 years (SANTE trial) | Class I evidence (RCT) | [Fisher et al. Epilepsia 2010 (SANTE)](https://pubmed.ncbi.nlm.nih.gov/20394643/) |
 | Cenobamate: high responder rate (21% seizure-free) in treatment-resistant focal epilepsy | Class I evidence (RCT) | [Krauss et al. Lancet Neurol 2020 (C017 study)](https://pubmed.ncbi.nlm.nih.gov/32199090/) |
 | Ketogenic diet effective in adult DRE; ~50% achieve >50% seizure reduction | Class II evidence (systematic review) | [Liu et al. Seizure 2018](https://pubmed.ncbi.nlm.nih.gov/30399461/) |

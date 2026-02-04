@@ -295,7 +295,7 @@ tags:
 | Extended lumbar drainage more sensitive than single tap test | Class II, Level B | [Walchenbach et al. J Neurol Neurosurg Psychiatry 2002](https://pubmed.ncbi.nlm.nih.gov/11909911/) |
 | VP shunt improves symptoms in selected iNPH patients | Class II, Level B | [Hebb et al. Can J Neurol Sci 2001](https://pubmed.ncbi.nlm.nih.gov/11846911/) |
 | Programmable valves reduce revision surgery rates | Class II, Level B | [Zemack et al. Eur J Neurol 2003](https://pubmed.ncbi.nlm.nih.gov/12650416/) |
-| Gait improvement most responsive to shunting | Class II, Level B | [Ishikawa et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/37857491/) |
+| Gait improvement most responsive to shunting | Class II, Level B | [Mori et al. Neurol Med Chir 2012](https://pubmed.ncbi.nlm.nih.gov/23183074/) |
 | Short symptom duration predicts better shunt outcome | Class II, Level B | [Relkin et al. Neurosurgery 2005](https://pubmed.ncbi.nlm.nih.gov/16160425/) |
 | CSF biomarkers help differentiate NPH from AD | Class III, Level C | [Tarnaris et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21411220/) |
 | Shunt infection rate 5-10%; requires shunt removal for treatment | Class III, Level C | [McGirt et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12816268/) |

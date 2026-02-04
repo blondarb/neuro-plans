@@ -303,7 +303,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Prophylactic pacemaker implantation in DM1 with conduction abnormalities | Class III, Level C | [Wahbi K et al. JAMA 2012](https://pubmed.ncbi.nlm.nih.gov/22453570/) |
 | Mexiletine for myotonia in DM1 and non-dystrophic myotonia | Class I, Level B | [Logigian EL et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20439846/) |
 | Mexiletine reduces myotonia in myotonic dystrophy: randomized controlled trial | Class I, Level B | [Stunnenberg BC et al. Brain 2018 (MYOMEX trial)](https://pubmed.ncbi.nlm.nih.gov/29438540/) |
-| Modafinil for excessive daytime somnolence in DM1 | Class II, Level B | [Talbot K et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/18629094/) |
+| Modafinil for excessive daytime somnolence in DM1 | Class II, Level B | [Talbot K et al. Neuromuscul Disord 2003](https://pubmed.ncbi.nlm.nih.gov/12798791/) |
 | Respiratory involvement in myotonic dystrophy: diaphragmatic weakness, restrictive pattern, sleep-disordered breathing | Class II, Level B | [Boussaid G et al. Neuromuscul Disord 2020](https://pubmed.ncbi.nlm.nih.gov/32817441/) |
 | Sleep-disordered breathing and central hypersomnia in DM1 | Class II, Level C | [Laberge L et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/24386418/) |
 | Insulin resistance and diabetes in DM1 | Class II, Level B | [Moxley RT et al. J Clin Invest 1984](https://pubmed.ncbi.nlm.nih.gov/6512266/) |
@@ -312,11 +312,11 @@ SECTION B: REFERENCE (Expand as Needed)
 | Posterior subcapsular cataracts in myotonic dystrophy: pathognomonic "Christmas tree" cataracts | Class II, Level B | [Baig KM et al. Saudi J Ophthalmol 2020](https://pubmed.ncbi.nlm.nih.gov/34317390/) |
 | Cognitive and behavioral involvement in DM1: executive dysfunction, apathy, social cognition deficits | Class II, Level B | [Minnerop M et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/22131273/) |
 | DM2 (PROMM): clinical features, proximal weakness predominance, milder phenotype than DM1 | Class II, Level B | [Day JW et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12601109/) |
-| Myotonic dystrophy multisystem management consensus recommendations | Expert consensus | [Bird TD. GeneReviews. University of Washington 2021](https://pubmed.ncbi.nlm.nih.gov/18429193/) |
+| Myotonic dystrophy multisystem management consensus recommendations | Expert consensus | [Bird TD. GeneReviews. University of Washington](https://pubmed.ncbi.nlm.nih.gov/20301344/) |
 | Natural history of DM1: functional decline and survival data | Class II, Level B | [Mathieu J et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10331695/) |
 | Exercise safety and modest benefit in myotonic dystrophy | Class II, Level C | [Orngreen MC et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15781829/) |
 | Hypogonadism in DM1 males: testicular atrophy, reduced testosterone, infertility | Class II, Level B | [Peric S et al. Acta Myol 2018](https://pubmed.ncbi.nlm.nih.gov/30944903/) |
-| Genetic counseling and anticipation in autosomal dominant myotonic dystrophy | Expert consensus | [Harper PS. Myotonic Dystrophy. 3rd ed. WB Saunders 2001](https://pubmed.ncbi.nlm.nih.gov/18429193/) |
+| Genetic counseling and anticipation in autosomal dominant myotonic dystrophy | Expert consensus | Harper PS. Myotonic Dystrophy. 3rd ed. WB Saunders 2001 |
 | Carbamazepine and phenytoin as second-line agents for myotonia | Class III, Level C | [Trip J et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16858569/) |
 
 ---

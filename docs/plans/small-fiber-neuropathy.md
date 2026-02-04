@@ -317,7 +317,7 @@ tags:
 | Pregabalin for neuropathic pain | Class I, Level A | [Derry et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/30673120/) |
 | TCAs for neuropathic pain | Class II, Level B | [Moore et al. Cochrane 2015](https://pubmed.ncbi.nlm.nih.gov/25879104/) |
 | Fludrocortisone for orthostatic hypotension | Class II, Level C | [Freeman et al. Neurology 2018 Consensus Statement](https://pubmed.ncbi.nlm.nih.gov/29666232/) |
-| Midodrine for orthostatic hypotension | Class I, Level A | [Wright et al. Am Heart J 1998](https://pubmed.ncbi.nlm.nih.gov/18301662/) |
+| Midodrine for orthostatic hypotension | Class I, Level A | [Wright et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9674789/) |
 | Droxidopa for neurogenic orthostatic hypotension | Class I, Level A | [Biaggioni et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25757803/) |
 | IVIG for autoimmune SFN | Class III, Level C | [Liu et al. J Periph Nerv Syst 2014](https://pubmed.ncbi.nlm.nih.gov/24750390/) |
 | Fabry disease as cause of SFN | Class II, Level B | [Biegstraaten et al. Orphanet J Rare Dis 2012](https://pubmed.ncbi.nlm.nih.gov/22497776/) |

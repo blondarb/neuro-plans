@@ -295,7 +295,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | IV penicillin G 18-24 million units/day x 10-14 days for neurosyphilis | Class I, Level A | [CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/); [Workowski et al. MMWR 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | CSF VDRL is the standard diagnostic test for neurosyphilis (highly specific but insensitive) | Class I, Level B | [Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15796090/) |
 | CSF FTA-ABS has high negative predictive value (negative result essentially excludes neurosyphilis) | Class IIa, Level B | [Marra et al. JID 2004](https://pubmed.ncbi.nlm.nih.gov/14745693/) |
-| CSF pleocytosis (WBC >5) is the most sensitive marker of active neurosyphilis | Class I, Level B | [Marra et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/29262996/) |
+| CSF pleocytosis (WBC >5) is the most sensitive marker of active neurosyphilis | Class I, Level B | [Marra et al. Clin Infect Dis 2008](https://pubmed.ncbi.nlm.nih.gov/18715153/) |
 | Ceftriaxone 2g IV daily x 10-14 days as alternative to penicillin | Class IIa, Level B | [Marra et al. CID 2000](https://pubmed.ncbi.nlm.nih.gov/11749352/); CDC STI Guidelines 2021 |
 | Serial CSF monitoring at 6-month intervals post-treatment | Class I, Level B | [Marra et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15249615/) |
 | HIV co-infection increases risk of neurosyphilis and treatment failure | Class I, Level B | [Ghanem et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/19308585/) |

@@ -278,7 +278,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | ICUAW defined as MRC sum score <48/60 in cooperative ICU patients | Class I, Level B | [Stevens et al. Crit Care Med 2009](https://pubmed.ncbi.nlm.nih.gov/20838559/) |
-| Sepsis and multi-organ failure are primary risk factors for ICUAW | Class I, Level A | [De Jonghe et al. JAMA 2002](https://pubmed.ncbi.nlm.nih.gov/17657056/) |
+| Sepsis and multi-organ failure are primary risk factors for ICUAW | Class I, Level A | [De Jonghe et al. JAMA 2002](https://pubmed.ncbi.nlm.nih.gov/12472328/) |
 | NCS/EMG differentiates CIM (myopathic, normal SNAPs) from CIP (axonal sensorimotor) | Class I, Level B | [Latronico & Bolton. Lancet Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21939902/) |
 | Direct muscle stimulation (DMS) differentiates CIM from CIP in uncooperative patients | Class IIa, Level B | [Rich et al. Muscle Nerve 1996](https://pubmed.ncbi.nlm.nih.gov/10155996/) |
 | Hyperglycemia is independent risk factor; glycemic control reduces ICUAW incidence | Class I, Level A | [Van den Berghe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11942631/); [Hermans et al. Lancet 2007](https://pubmed.ncbi.nlm.nih.gov/18064865/) |

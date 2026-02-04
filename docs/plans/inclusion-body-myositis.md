@@ -307,7 +307,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Natural history of IBM: slow progression, 10-15 years to wheelchair | Class II | [Benveniste O et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21994327/) |
 | IBM Functional Rating Scale (IBMFRS) | Class II | [Jackson CE et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18253100/) |
 | GNE myopathy (hereditary IBM) genetics and differentiation | Class II | [Nishino I et al. Science 2002](https://pubmed.ncbi.nlm.nih.gov/16290723/) |
-| Pathogenesis: combined degenerative and inflammatory mechanisms in IBM | Expert review | [Greenberg SA. Curr Opin Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/37317454/) |
+| Pathogenesis: combined degenerative and inflammatory mechanisms in IBM | Expert review | [Greenberg SA. Nat Rev Rheumatol 2019](https://pubmed.ncbi.nlm.nih.gov/30837708/) |
 | Fall prevention in neuromuscular disease | Class II, Level C | Expert consensus; standard of care for neuromuscular disorders |
 
 ---

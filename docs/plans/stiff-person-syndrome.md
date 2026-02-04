@@ -389,7 +389,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | SPS and autoimmune comorbidities (thyroiditis, pernicious anemia, vitiligo) | Class III | [Alexopoulos H, Dalakas MC. Neurol Neuroimmunol Neuroinflamm 2019;6:e571](https://pubmed.ncbi.nlm.nih.gov/31846700/) |
 | Status spasticus as a medical emergency in SPS | Class IV, Case Reports | [Stiff-person syndrome and status spasticus. Neurology 2008;71:2093-2094](https://pubmed.ncbi.nlm.nih.gov/19092769/) |
 | CSF anti-GAD antibodies and intrathecal synthesis in SPS | Class III | [Dalakas MC et al. Neurology 2001;57:780-784](https://pubmed.ncbi.nlm.nih.gov/11552003/) |
-| Updated diagnostic criteria and classification of SPS spectrum | Expert Review | [Newsome SD, Johnson T. J Neuroimmunol 2022;369:577915](https://pubmed.ncbi.nlm.nih.gov/41547558/) |
+| Updated diagnostic criteria and classification of SPS spectrum | Expert Review | [Newsome SD, Johnson T. J Neuroimmunol 2022;369:577915](https://pubmed.ncbi.nlm.nih.gov/35717735/) |
 | Mycophenolate as immunosuppressive agent in SPS | Class IV, Case Series | Expert consensus; limited published evidence; extrapolated from autoimmune neurology practice |
 | GABAergic pathway dysfunction as pathophysiology of SPS | Class II, Basic Science | [Levy LM et al. N Engl J Med 1999;341:1511-1516](https://pubmed.ncbi.nlm.nih.gov/10564686/) |
 
