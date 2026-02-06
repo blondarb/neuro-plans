@@ -1,0 +1,1156 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-02-06",
+    "description": "Central medication database for Neuro Plans - single source of truth for all medication data",
+    "safetyNotice": "This database is for clinical decision support only. Always verify dosing against current prescribing information and institutional protocols.",
+    "schema": {
+      "medication": {
+        "id": "Unique identifier (lowercase, hyphenated)",
+        "name": "Display name",
+        "genericName": "Generic/INN name",
+        "brandNames": ["Array of brand names"],
+        "drugClass": "Pharmacological class",
+        "mechanisms": ["Mechanism(s) of action"],
+        "routes": ["Available routes"],
+        "formulations": ["Available formulations"],
+        "contexts": {
+          "[indication-id]": {
+            "indication": "Specific use case",
+            "doseOptions": [{"text": "", "orderSentence": ""}],
+            "startingDose": "Recommended starting dose",
+            "maxDose": "Maximum dose for this indication",
+            "titration": "Titration schedule",
+            "notes": "Indication-specific notes"
+          }
+        },
+        "safety": {
+          "blackBoxWarnings": ["FDA black box warnings"],
+          "contraindications": ["Absolute contraindications"],
+          "precautions": ["Warnings and precautions"],
+          "drugInteractions": [{"drug": "", "severity": "", "effect": ""}],
+          "pregnancyCategory": "FDA pregnancy category",
+          "lactation": "Lactation safety"
+        },
+        "renalAdjustment": {
+          "required": true,
+          "tiers": [
+            {"gfr": "≥60", "adjustment": "No adjustment"},
+            {"gfr": "30-59", "adjustment": "Specific adjustment"},
+            {"gfr": "15-29", "adjustment": "Specific adjustment"},
+            {"gfr": "<15", "adjustment": "Specific adjustment"},
+            {"gfr": "HD", "adjustment": "Hemodialysis dosing"}
+          ]
+        },
+        "hepaticAdjustment": {
+          "required": false,
+          "notes": "Child-Pugh based adjustments if applicable"
+        },
+        "monitoring": {
+          "baseline": ["Required baseline labs/tests"],
+          "ongoing": ["Ongoing monitoring requirements"],
+          "frequency": "Monitoring frequency"
+        },
+        "patientCounseling": ["Key counseling points"]
+      }
+    }
+  },
+  "medications": {
+    "gabapentin": {
+      "id": "gabapentin",
+      "name": "Gabapentin",
+      "genericName": "gabapentin",
+      "brandNames": ["Neurontin", "Gralise", "Horizant"],
+      "drugClass": "Gabapentinoid / Anticonvulsant",
+      "mechanisms": ["Binds alpha-2-delta subunit of voltage-gated calcium channels", "Reduces excitatory neurotransmitter release"],
+      "routes": ["PO"],
+      "formulations": ["100 mg capsule", "300 mg capsule", "400 mg capsule", "600 mg tablet", "800 mg tablet", "250 mg/5mL solution"],
+      "contexts": {
+        "neuropathic-pain": {
+          "indication": "Neuropathic pain (diabetic neuropathy, post-herpetic neuralgia, small fiber neuropathy)",
+          "doseOptions": [
+            {"text": "100 mg TID", "orderSentence": "Gabapentin 100 mg PO TID"},
+            {"text": "300 mg TID", "orderSentence": "Gabapentin 300 mg PO TID"},
+            {"text": "600 mg TID", "orderSentence": "Gabapentin 600 mg PO TID"},
+            {"text": "900 mg TID", "orderSentence": "Gabapentin 900 mg PO TID"},
+            {"text": "1200 mg TID", "orderSentence": "Gabapentin 1200 mg PO TID"}
+          ],
+          "startingDose": "300 mg QHS or 100-300 mg TID",
+          "maxDose": "3600 mg/day",
+          "titration": "Increase by 300 mg every 1-3 days as tolerated",
+          "notes": "First-line for neuropathic pain; full effect may take 2-4 weeks"
+        },
+        "epilepsy": {
+          "indication": "Adjunctive therapy for partial seizures",
+          "doseOptions": [
+            {"text": "300 mg TID", "orderSentence": "Gabapentin 300 mg PO TID"},
+            {"text": "400 mg TID", "orderSentence": "Gabapentin 400 mg PO TID"},
+            {"text": "600 mg TID", "orderSentence": "Gabapentin 600 mg PO TID"},
+            {"text": "800 mg TID", "orderSentence": "Gabapentin 800 mg PO TID"},
+            {"text": "1200 mg TID", "orderSentence": "Gabapentin 1200 mg PO TID"}
+          ],
+          "startingDose": "300 mg TID",
+          "maxDose": "3600 mg/day",
+          "titration": "Increase by 300 mg every 1-3 days",
+          "notes": "Adjunctive only; monotherapy not FDA-approved for epilepsy"
+        },
+        "tremor": {
+          "indication": "Essential tremor",
+          "doseOptions": [
+            {"text": "300 mg TID", "orderSentence": "Gabapentin 300 mg PO TID"},
+            {"text": "400 mg TID", "orderSentence": "Gabapentin 400 mg PO TID"},
+            {"text": "600 mg TID", "orderSentence": "Gabapentin 600 mg PO TID"}
+          ],
+          "startingDose": "300 mg TID",
+          "maxDose": "1800 mg/day",
+          "titration": "Increase weekly as tolerated",
+          "notes": "Second-line after propranolol/primidone; limited evidence"
+        },
+        "migraine-prophylaxis": {
+          "indication": "Migraine prophylaxis",
+          "doseOptions": [
+            {"text": "300 mg QHS", "orderSentence": "Gabapentin 300 mg PO QHS"},
+            {"text": "300 mg BID", "orderSentence": "Gabapentin 300 mg PO BID"},
+            {"text": "400 mg TID", "orderSentence": "Gabapentin 400 mg PO TID"},
+            {"text": "600 mg TID", "orderSentence": "Gabapentin 600 mg PO TID"}
+          ],
+          "startingDose": "300 mg QHS",
+          "maxDose": "2400 mg/day",
+          "titration": "Increase every 1-2 weeks",
+          "notes": "Off-label; moderate evidence; may help with sleep"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": ["Known hypersensitivity to gabapentin"],
+        "precautions": [
+          "Respiratory depression risk when combined with CNS depressants or opioids",
+          "Suicidal ideation (class warning for antiepileptics)",
+          "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)",
+          "Dizziness and somnolence - fall risk in elderly",
+          "Abuse potential (Schedule V in some states)"
+        ],
+        "drugInteractions": [
+          {"drug": "Opioids", "severity": "high", "effect": "Increased respiratory depression risk"},
+          {"drug": "CNS depressants", "severity": "moderate", "effect": "Additive sedation"},
+          {"drug": "Antacids", "severity": "low", "effect": "Reduced gabapentin absorption - separate by 2 hours"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Compatible with breastfeeding (low levels in milk)"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥60", "adjustment": "No adjustment needed (max 3600 mg/day)"},
+          {"gfr": "30-59", "adjustment": "Max 900-1400 mg/day in divided doses"},
+          {"gfr": "15-29", "adjustment": "Max 300-600 mg/day"},
+          {"gfr": "<15", "adjustment": "Max 100-300 mg/day"},
+          {"gfr": "HD", "adjustment": "125-350 mg after each dialysis session"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment needed - not hepatically metabolized"
+      },
+      "monitoring": {
+        "baseline": ["Renal function (BMP/CrCl)"],
+        "ongoing": ["Renal function periodically", "Suicidal ideation", "Sedation/dizziness"],
+        "frequency": "Renal function annually or more often if changing"
+      },
+      "patientCounseling": [
+        "Do not stop abruptly - taper over 1 week minimum to avoid withdrawal/seizures",
+        "May cause drowsiness - avoid driving until effects known",
+        "Takes 2-4 weeks to reach full effect for pain",
+        "Take with or without food",
+        "Report mood changes, suicidal thoughts, or rash immediately"
+      ]
+    },
+    "pregabalin": {
+      "id": "pregabalin",
+      "name": "Pregabalin",
+      "genericName": "pregabalin",
+      "brandNames": ["Lyrica", "Lyrica CR"],
+      "drugClass": "Gabapentinoid / Anticonvulsant",
+      "mechanisms": ["Binds alpha-2-delta subunit of voltage-gated calcium channels", "Reduces excitatory neurotransmitter release"],
+      "routes": ["PO"],
+      "formulations": ["25 mg capsule", "50 mg capsule", "75 mg capsule", "100 mg capsule", "150 mg capsule", "200 mg capsule", "225 mg capsule", "300 mg capsule"],
+      "contexts": {
+        "neuropathic-pain": {
+          "indication": "Neuropathic pain (diabetic neuropathy, post-herpetic neuralgia, small fiber neuropathy)",
+          "doseOptions": [
+            {"text": "50 mg TID", "orderSentence": "Pregabalin 50 mg PO TID"},
+            {"text": "75 mg BID", "orderSentence": "Pregabalin 75 mg PO BID"},
+            {"text": "100 mg TID", "orderSentence": "Pregabalin 100 mg PO TID"},
+            {"text": "150 mg BID", "orderSentence": "Pregabalin 150 mg PO BID"},
+            {"text": "200 mg BID", "orderSentence": "Pregabalin 200 mg PO BID"},
+            {"text": "300 mg BID", "orderSentence": "Pregabalin 300 mg PO BID"}
+          ],
+          "startingDose": "75 mg BID or 50 mg TID",
+          "maxDose": "600 mg/day",
+          "titration": "May increase to 150 mg BID after 1 week, then to 300 mg BID after another week",
+          "notes": "First-line for neuropathic pain; faster onset than gabapentin"
+        },
+        "fibromyalgia": {
+          "indication": "Fibromyalgia",
+          "doseOptions": [
+            {"text": "75 mg BID", "orderSentence": "Pregabalin 75 mg PO BID"},
+            {"text": "150 mg BID", "orderSentence": "Pregabalin 150 mg PO BID"},
+            {"text": "225 mg BID", "orderSentence": "Pregabalin 225 mg PO BID"}
+          ],
+          "startingDose": "75 mg BID",
+          "maxDose": "450 mg/day",
+          "titration": "May increase to 150 mg BID within 1 week; max 225 mg BID",
+          "notes": "FDA-approved for fibromyalgia"
+        },
+        "epilepsy": {
+          "indication": "Adjunctive therapy for partial seizures",
+          "doseOptions": [
+            {"text": "50 mg TID", "orderSentence": "Pregabalin 50 mg PO TID"},
+            {"text": "100 mg TID", "orderSentence": "Pregabalin 100 mg PO TID"},
+            {"text": "150 mg BID", "orderSentence": "Pregabalin 150 mg PO BID"},
+            {"text": "200 mg BID", "orderSentence": "Pregabalin 200 mg BID"},
+            {"text": "300 mg BID", "orderSentence": "Pregabalin 300 mg PO BID"}
+          ],
+          "startingDose": "50 mg TID or 75 mg BID",
+          "maxDose": "600 mg/day",
+          "titration": "Increase based on response and tolerability",
+          "notes": "Adjunctive therapy only"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": ["Known hypersensitivity to pregabalin"],
+        "precautions": [
+          "Respiratory depression risk when combined with CNS depressants or opioids",
+          "Suicidal ideation (class warning for antiepileptics)",
+          "Angioedema (rare but serious)",
+          "Peripheral edema and weight gain",
+          "Schedule V controlled substance - abuse potential",
+          "Dizziness and somnolence - fall risk"
+        ],
+        "drugInteractions": [
+          {"drug": "Opioids", "severity": "high", "effect": "Increased respiratory depression risk"},
+          {"drug": "CNS depressants", "severity": "moderate", "effect": "Additive sedation"},
+          {"drug": "Thiazolidinediones (pioglitazone, rosiglitazone)", "severity": "moderate", "effect": "Increased peripheral edema and weight gain"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Likely compatible but limited data"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥60", "adjustment": "No adjustment needed"},
+          {"gfr": "30-59", "adjustment": "Reduce dose by 50% (max 300 mg/day)"},
+          {"gfr": "15-29", "adjustment": "Reduce dose by 75% (max 150 mg/day)"},
+          {"gfr": "<15", "adjustment": "Max 75 mg/day"},
+          {"gfr": "HD", "adjustment": "25-75 mg daily; supplemental dose after dialysis"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment needed - not hepatically metabolized"
+      },
+      "monitoring": {
+        "baseline": ["Renal function (BMP/CrCl)"],
+        "ongoing": ["Renal function periodically", "Weight", "Peripheral edema", "Suicidal ideation"],
+        "frequency": "Renal function annually or with changes"
+      },
+      "patientCounseling": [
+        "Do not stop abruptly - taper over 1 week minimum",
+        "Controlled substance - take only as prescribed",
+        "May cause drowsiness, weight gain, swelling",
+        "Report mood changes, swelling of face/tongue, or difficulty breathing immediately"
+      ]
+    },
+    "duloxetine": {
+      "id": "duloxetine",
+      "name": "Duloxetine",
+      "genericName": "duloxetine",
+      "brandNames": ["Cymbalta", "Drizalma"],
+      "drugClass": "SNRI (Serotonin-Norepinephrine Reuptake Inhibitor)",
+      "mechanisms": ["Inhibits reuptake of serotonin and norepinephrine", "Descending pain inhibition pathway modulation"],
+      "routes": ["PO"],
+      "formulations": ["20 mg capsule", "30 mg capsule", "40 mg capsule", "60 mg capsule"],
+      "contexts": {
+        "neuropathic-pain": {
+          "indication": "Diabetic peripheral neuropathy, neuropathic pain",
+          "doseOptions": [
+            {"text": "30 mg daily", "orderSentence": "Duloxetine 30 mg PO daily"},
+            {"text": "60 mg daily", "orderSentence": "Duloxetine 60 mg PO daily"},
+            {"text": "90 mg daily", "orderSentence": "Duloxetine 90 mg PO daily"},
+            {"text": "120 mg daily", "orderSentence": "Duloxetine 120 mg PO daily"}
+          ],
+          "startingDose": "30 mg daily (to minimize nausea)",
+          "maxDose": "120 mg/day",
+          "titration": "Start 30 mg daily x 1-2 weeks, then increase to 60 mg daily",
+          "notes": "FDA-approved for DPNP; first-line option"
+        },
+        "fibromyalgia": {
+          "indication": "Fibromyalgia",
+          "doseOptions": [
+            {"text": "30 mg daily", "orderSentence": "Duloxetine 30 mg PO daily"},
+            {"text": "60 mg daily", "orderSentence": "Duloxetine 60 mg PO daily"}
+          ],
+          "startingDose": "30 mg daily",
+          "maxDose": "60 mg/day",
+          "titration": "Start 30 mg daily x 1 week, then increase to 60 mg daily",
+          "notes": "FDA-approved; doses above 60 mg show no additional benefit for fibromyalgia"
+        },
+        "depression-anxiety": {
+          "indication": "Major depressive disorder, generalized anxiety disorder",
+          "doseOptions": [
+            {"text": "30 mg daily", "orderSentence": "Duloxetine 30 mg PO daily"},
+            {"text": "60 mg daily", "orderSentence": "Duloxetine 60 mg PO daily"},
+            {"text": "90 mg daily", "orderSentence": "Duloxetine 90 mg PO daily"},
+            {"text": "120 mg daily", "orderSentence": "Duloxetine 120 mg PO daily"}
+          ],
+          "startingDose": "30-60 mg daily",
+          "maxDose": "120 mg/day",
+          "titration": "May increase by 30 mg increments",
+          "notes": "Dual benefit when comorbid depression/anxiety with chronic pain"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [
+          "Suicidal thinking and behavior in children, adolescents, and young adults with MDD and other psychiatric disorders"
+        ],
+        "contraindications": [
+          "Use within 14 days of MAOIs",
+          "Concomitant use with linezolid or IV methylene blue",
+          "Uncontrolled narrow-angle glaucoma",
+          "Severe hepatic impairment"
+        ],
+        "precautions": [
+          "Serotonin syndrome risk with serotonergic drugs",
+          "Hepatotoxicity - monitor LFTs",
+          "Increased bleeding risk especially with anticoagulants/NSAIDs",
+          "Hyponatremia (SIADH) especially in elderly",
+          "Discontinuation syndrome - taper slowly",
+          "May elevate blood pressure - monitor"
+        ],
+        "drugInteractions": [
+          {"drug": "MAOIs", "severity": "contraindicated", "effect": "Risk of serotonin syndrome"},
+          {"drug": "Triptans", "severity": "high", "effect": "Serotonin syndrome risk"},
+          {"drug": "Tramadol", "severity": "high", "effect": "Serotonin syndrome risk, seizure threshold lowered"},
+          {"drug": "Warfarin", "severity": "moderate", "effect": "Increased bleeding risk"},
+          {"drug": "NSAIDs", "severity": "moderate", "effect": "Increased bleeding risk"},
+          {"drug": "CYP1A2 inhibitors (fluvoxamine, ciprofloxacin)", "severity": "high", "effect": "Increased duloxetine levels"},
+          {"drug": "CYP2D6 inhibitors (paroxetine, fluoxetine, quinidine)", "severity": "moderate", "effect": "Increased duloxetine levels"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Caution - present in breast milk"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥30", "adjustment": "No adjustment needed"},
+          {"gfr": "<30", "adjustment": "Not recommended (AUC increased 2-fold)"},
+          {"gfr": "HD", "adjustment": "Not recommended"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": true,
+        "notes": "Avoid in severe hepatic impairment (Child-Pugh C). Use caution in moderate impairment. Monitor LFTs."
+      },
+      "monitoring": {
+        "baseline": ["LFTs", "Renal function", "Blood pressure"],
+        "ongoing": ["Blood pressure", "LFTs if symptoms", "Suicidal ideation", "Signs of bleeding"],
+        "frequency": "Blood pressure at each visit initially; LFTs PRN"
+      },
+      "patientCounseling": [
+        "Do not stop abruptly - taper over 2+ weeks to avoid discontinuation syndrome",
+        "May take 2-4 weeks for full pain relief; 4-6 weeks for antidepressant effect",
+        "Take with food to minimize nausea",
+        "Avoid alcohol",
+        "Report unusual bleeding, mood changes, or allergic reactions",
+        "Swallow capsule whole - do not crush or chew"
+      ]
+    },
+    "amitriptyline": {
+      "id": "amitriptyline",
+      "name": "Amitriptyline",
+      "genericName": "amitriptyline",
+      "brandNames": ["Elavil"],
+      "drugClass": "Tricyclic Antidepressant (TCA)",
+      "mechanisms": ["Inhibits reuptake of serotonin and norepinephrine", "Anticholinergic effects", "Sodium channel blockade"],
+      "routes": ["PO"],
+      "formulations": ["10 mg tablet", "25 mg tablet", "50 mg tablet", "75 mg tablet", "100 mg tablet", "150 mg tablet"],
+      "contexts": {
+        "neuropathic-pain": {
+          "indication": "Neuropathic pain (diabetic neuropathy, post-herpetic neuralgia)",
+          "doseOptions": [
+            {"text": "10 mg QHS", "orderSentence": "Amitriptyline 10 mg PO QHS"},
+            {"text": "25 mg QHS", "orderSentence": "Amitriptyline 25 mg PO QHS"},
+            {"text": "50 mg QHS", "orderSentence": "Amitriptyline 50 mg PO QHS"},
+            {"text": "75 mg QHS", "orderSentence": "Amitriptyline 75 mg PO QHS"},
+            {"text": "100 mg QHS", "orderSentence": "Amitriptyline 100 mg PO QHS"}
+          ],
+          "startingDose": "10-25 mg QHS",
+          "maxDose": "150 mg/day (pain); lower in elderly",
+          "titration": "Increase by 10-25 mg every 1-2 weeks as tolerated",
+          "notes": "First-line TCA for neuropathic pain; sedation limits titration"
+        },
+        "migraine-prophylaxis": {
+          "indication": "Migraine prophylaxis",
+          "doseOptions": [
+            {"text": "10 mg QHS", "orderSentence": "Amitriptyline 10 mg PO QHS"},
+            {"text": "25 mg QHS", "orderSentence": "Amitriptyline 25 mg PO QHS"},
+            {"text": "50 mg QHS", "orderSentence": "Amitriptyline 50 mg PO QHS"},
+            {"text": "75 mg QHS", "orderSentence": "Amitriptyline 75 mg PO QHS"}
+          ],
+          "startingDose": "10 mg QHS",
+          "maxDose": "100 mg/day",
+          "titration": "Increase by 10 mg every 2 weeks",
+          "notes": "First-line for migraine prophylaxis; helps with comorbid insomnia"
+        },
+        "tension-headache": {
+          "indication": "Chronic tension-type headache prophylaxis",
+          "doseOptions": [
+            {"text": "10 mg QHS", "orderSentence": "Amitriptyline 10 mg PO QHS"},
+            {"text": "25 mg QHS", "orderSentence": "Amitriptyline 25 mg PO QHS"},
+            {"text": "50 mg QHS", "orderSentence": "Amitriptyline 50 mg PO QHS"},
+            {"text": "75 mg QHS", "orderSentence": "Amitriptyline 75 mg PO QHS"}
+          ],
+          "startingDose": "10 mg QHS",
+          "maxDose": "100 mg/day",
+          "titration": "Increase by 10-25 mg every 1-2 weeks",
+          "notes": "First-line for chronic tension headache"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [
+          "Suicidal thinking and behavior in children, adolescents, and young adults with MDD"
+        ],
+        "contraindications": [
+          "Use within 14 days of MAOIs",
+          "Acute recovery phase after myocardial infarction",
+          "Concomitant use with cisapride"
+        ],
+        "precautions": [
+          "Cardiac arrhythmias - ECG before starting in patients with cardiac history",
+          "Anticholinergic effects (dry mouth, constipation, urinary retention, blurred vision)",
+          "Orthostatic hypotension - fall risk in elderly",
+          "Sedation - take at bedtime",
+          "Lowered seizure threshold",
+          "Angle-closure glaucoma risk",
+          "QT prolongation at high doses",
+          "AVOID in elderly (Beers Criteria - highly anticholinergic)"
+        ],
+        "drugInteractions": [
+          {"drug": "MAOIs", "severity": "contraindicated", "effect": "Hypertensive crisis, serotonin syndrome"},
+          {"drug": "Anticholinergics", "severity": "high", "effect": "Additive anticholinergic toxicity"},
+          {"drug": "QT-prolonging drugs", "severity": "high", "effect": "Additive QT prolongation"},
+          {"drug": "Alcohol", "severity": "moderate", "effect": "Additive CNS depression"},
+          {"drug": "CYP2D6 inhibitors", "severity": "moderate", "effect": "Increased amitriptyline levels"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Caution - excreted in breast milk"
+      },
+      "renalAdjustment": {
+        "required": false,
+        "tiers": [
+          {"gfr": "≥15", "adjustment": "No adjustment typically needed"},
+          {"gfr": "<15", "adjustment": "Use with caution; active metabolites may accumulate"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": true,
+        "notes": "Use lower doses; hepatically metabolized. Avoid in severe impairment."
+      },
+      "monitoring": {
+        "baseline": ["ECG if cardiac history or age >50", "Consider baseline cognitive assessment in elderly"],
+        "ongoing": ["Anticholinergic side effects", "Orthostatic hypotension", "Suicidal ideation"],
+        "frequency": "Clinical assessment at each visit"
+      },
+      "patientCounseling": [
+        "Take at bedtime due to sedation",
+        "Do not stop abruptly - taper over 2+ weeks",
+        "Avoid alcohol",
+        "May cause dry mouth - sip water, sugar-free gum",
+        "Rise slowly to prevent dizziness",
+        "Full effect may take 4-6 weeks",
+        "Avoid in very hot weather (impaired sweating)"
+      ]
+    },
+    "carbamazepine": {
+      "id": "carbamazepine",
+      "name": "Carbamazepine",
+      "genericName": "carbamazepine",
+      "brandNames": ["Tegretol", "Tegretol XR", "Carbatrol", "Epitol"],
+      "drugClass": "Anticonvulsant / Sodium Channel Blocker",
+      "mechanisms": ["Blocks voltage-gated sodium channels", "Reduces repetitive neuronal firing"],
+      "routes": ["PO"],
+      "formulations": ["100 mg chewable tablet", "200 mg tablet", "100 mg/5mL suspension", "100 mg XR capsule", "200 mg XR tablet", "300 mg XR capsule", "400 mg XR tablet"],
+      "contexts": {
+        "trigeminal-neuralgia": {
+          "indication": "Trigeminal neuralgia (first-line)",
+          "doseOptions": [
+            {"text": "100 mg BID", "orderSentence": "Carbamazepine 100 mg PO BID"},
+            {"text": "200 mg BID", "orderSentence": "Carbamazepine 200 mg PO BID"},
+            {"text": "400 mg BID", "orderSentence": "Carbamazepine 400 mg PO BID"},
+            {"text": "600 mg BID", "orderSentence": "Carbamazepine 600 mg PO BID"}
+          ],
+          "startingDose": "100 mg BID",
+          "maxDose": "1200 mg/day",
+          "titration": "Increase by 100-200 mg every 1-2 weeks",
+          "notes": "First-line for trigeminal neuralgia; NNT ~1.7"
+        },
+        "epilepsy": {
+          "indication": "Partial seizures, generalized tonic-clonic seizures",
+          "doseOptions": [
+            {"text": "200 mg BID", "orderSentence": "Carbamazepine 200 mg PO BID"},
+            {"text": "400 mg BID", "orderSentence": "Carbamazepine 400 mg PO BID"},
+            {"text": "600 mg BID", "orderSentence": "Carbamazepine 600 mg PO BID"},
+            {"text": "800 mg BID", "orderSentence": "Carbamazepine 800 mg PO BID"}
+          ],
+          "startingDose": "200 mg BID",
+          "maxDose": "1600 mg/day (adults); adjust by level",
+          "titration": "Increase by 200 mg weekly",
+          "notes": "First-line for focal epilepsy; induces own metabolism (autoinduction)"
+        },
+        "neuropathic-pain": {
+          "indication": "Neuropathic pain (second-line)",
+          "doseOptions": [
+            {"text": "100 mg BID", "orderSentence": "Carbamazepine 100 mg PO BID"},
+            {"text": "200 mg BID", "orderSentence": "Carbamazepine 200 mg PO BID"},
+            {"text": "400 mg BID", "orderSentence": "Carbamazepine 400 mg PO BID"}
+          ],
+          "startingDose": "100 mg BID",
+          "maxDose": "1200 mg/day",
+          "titration": "Increase by 100-200 mg every 1-2 weeks",
+          "notes": "Consider for lancinating/shooting pain; many drug interactions"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [
+          "Serious dermatologic reactions (SJS/TEN) - HLA-B*1502 screening required in Asian populations",
+          "Aplastic anemia and agranulocytosis (rare but serious)"
+        ],
+        "contraindications": [
+          "Known HLA-B*1502 allele",
+          "Bone marrow depression",
+          "Use within 14 days of MAOIs",
+          "Concomitant use with nefazodone"
+        ],
+        "precautions": [
+          "Hyponatremia (SIADH)",
+          "Cardiac conduction abnormalities",
+          "Hepatotoxicity",
+          "Potent CYP3A4 inducer - many drug interactions",
+          "Autoinduction - levels decrease over first 2-4 weeks",
+          "May worsen absence, myoclonic seizures"
+        ],
+        "drugInteractions": [
+          {"drug": "Oral contraceptives", "severity": "high", "effect": "Reduced contraceptive efficacy - use backup method"},
+          {"drug": "Warfarin", "severity": "high", "effect": "Reduced warfarin effect - monitor INR"},
+          {"drug": "Valproate", "severity": "moderate", "effect": "Reduced valproate levels; increased carbamazepine epoxide"},
+          {"drug": "Lamotrigine", "severity": "moderate", "effect": "Reduced lamotrigine levels by 40%"},
+          {"drug": "CYP3A4 substrates (many)", "severity": "high", "effect": "Reduced levels of substrate drugs"}
+        ],
+        "pregnancyCategory": "D",
+        "lactation": "Compatible but monitor infant for sedation"
+      },
+      "renalAdjustment": {
+        "required": false,
+        "tiers": [
+          {"gfr": "≥10", "adjustment": "No adjustment typically needed"},
+          {"gfr": "<10", "adjustment": "75% of normal dose; use with caution"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": true,
+        "notes": "Reduce dose in hepatic impairment; hepatically metabolized. Avoid in severe impairment."
+      },
+      "monitoring": {
+        "baseline": ["CBC with differential", "LFTs", "BMP (sodium)", "HLA-B*1502 in at-risk populations"],
+        "ongoing": ["Sodium levels", "CBC", "LFTs", "Carbamazepine level (therapeutic: 4-12 mcg/mL)"],
+        "frequency": "CBC and sodium monthly x 3 months, then every 3-6 months"
+      },
+      "patientCounseling": [
+        "Take with food to reduce GI upset",
+        "Report any rash, fever, sore throat, mouth ulcers immediately (stop drug if rash)",
+        "Do not stop abruptly - seizure risk",
+        "Many drug interactions - inform all providers",
+        "May reduce effectiveness of birth control pills",
+        "Avoid grapefruit juice"
+      ]
+    },
+    "propranolol": {
+      "id": "propranolol",
+      "name": "Propranolol",
+      "genericName": "propranolol",
+      "brandNames": ["Inderal", "Inderal LA", "InnoPran XL"],
+      "drugClass": "Non-selective Beta-Blocker",
+      "mechanisms": ["Blocks beta-1 and beta-2 adrenergic receptors", "Reduces sympathetic nervous system activity"],
+      "routes": ["PO", "IV"],
+      "formulations": ["10 mg tablet", "20 mg tablet", "40 mg tablet", "60 mg tablet", "80 mg tablet", "60 mg LA capsule", "80 mg LA capsule", "120 mg LA capsule", "160 mg LA capsule", "1 mg/mL IV solution"],
+      "contexts": {
+        "essential-tremor": {
+          "indication": "Essential tremor (first-line)",
+          "doseOptions": [
+            {"text": "20 mg BID", "orderSentence": "Propranolol 20 mg PO BID"},
+            {"text": "40 mg BID", "orderSentence": "Propranolol 40 mg PO BID"},
+            {"text": "60 mg TID", "orderSentence": "Propranolol 60 mg PO TID"},
+            {"text": "80 mg TID", "orderSentence": "Propranolol 80 mg PO TID"}
+          ],
+          "startingDose": "20-40 mg BID",
+          "maxDose": "320 mg/day",
+          "titration": "Increase every 1-2 weeks as tolerated",
+          "notes": "First-line for essential tremor; 50-70% response rate"
+        },
+        "migraine-prophylaxis": {
+          "indication": "Migraine prophylaxis",
+          "doseOptions": [
+            {"text": "40 mg BID", "orderSentence": "Propranolol 40 mg PO BID"},
+            {"text": "60 mg BID", "orderSentence": "Propranolol 60 mg PO BID"},
+            {"text": "80 mg BID", "orderSentence": "Propranolol 80 mg PO BID"},
+            {"text": "80 mg LA daily", "orderSentence": "Propranolol LA 80 mg PO daily"},
+            {"text": "160 mg LA daily", "orderSentence": "Propranolol LA 160 mg PO daily"}
+          ],
+          "startingDose": "40 mg BID or 80 mg LA daily",
+          "maxDose": "240 mg/day",
+          "titration": "Increase every 2-4 weeks",
+          "notes": "First-line for migraine prophylaxis; Level A evidence"
+        },
+        "akathisia": {
+          "indication": "Drug-induced akathisia",
+          "doseOptions": [
+            {"text": "10 mg TID", "orderSentence": "Propranolol 10 mg PO TID"},
+            {"text": "20 mg TID", "orderSentence": "Propranolol 20 mg PO TID"},
+            {"text": "40 mg TID", "orderSentence": "Propranolol 40 mg PO TID"}
+          ],
+          "startingDose": "10-20 mg TID",
+          "maxDose": "120 mg/day",
+          "titration": "Increase as needed for symptom control",
+          "notes": "First-line for neuroleptic-induced akathisia"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [
+          "Do not discontinue abruptly - risk of exacerbation of angina, MI, or arrhythmia"
+        ],
+        "contraindications": [
+          "Cardiogenic shock",
+          "Sinus bradycardia, heart block greater than first degree",
+          "Bronchial asthma or severe COPD",
+          "Decompensated heart failure"
+        ],
+        "precautions": [
+          "May mask hypoglycemia symptoms in diabetics",
+          "May worsen peripheral vascular disease",
+          "Use with caution in hepatic impairment",
+          "May worsen psoriasis",
+          "Fatigue, exercise intolerance common",
+          "May cause depression"
+        ],
+        "drugInteractions": [
+          {"drug": "Calcium channel blockers (verapamil, diltiazem)", "severity": "high", "effect": "Risk of severe bradycardia and heart block"},
+          {"drug": "Clonidine", "severity": "high", "effect": "Rebound hypertension if clonidine stopped first"},
+          {"drug": "Antidiabetics", "severity": "moderate", "effect": "Masks hypoglycemia symptoms; prolongs hypoglycemia"},
+          {"drug": "CYP2D6 inhibitors", "severity": "moderate", "effect": "Increased propranolol levels"},
+          {"drug": "Epinephrine", "severity": "moderate", "effect": "Hypertensive response, bradycardia"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Compatible with breastfeeding"
+      },
+      "renalAdjustment": {
+        "required": false,
+        "tiers": [
+          {"gfr": "any", "adjustment": "No adjustment needed - hepatically metabolized"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": true,
+        "notes": "Reduce dose by 50% in hepatic impairment; extensive first-pass metabolism"
+      },
+      "monitoring": {
+        "baseline": ["Heart rate", "Blood pressure", "ECG if cardiac history"],
+        "ongoing": ["Heart rate", "Blood pressure", "Signs of heart failure"],
+        "frequency": "At each visit during titration"
+      },
+      "patientCounseling": [
+        "Do not stop abruptly - taper over 1-2 weeks",
+        "May cause fatigue, especially initially",
+        "Take pulse - notify if <50 bpm",
+        "Diabetics: may mask hypoglycemia symptoms",
+        "May worsen asthma - use with extreme caution"
+      ]
+    },
+    "levetiracetam": {
+      "id": "levetiracetam",
+      "name": "Levetiracetam",
+      "genericName": "levetiracetam",
+      "brandNames": ["Keppra", "Keppra XR", "Spritam", "Elepsia XR"],
+      "drugClass": "Anticonvulsant",
+      "mechanisms": ["Binds synaptic vesicle protein SV2A", "Modulates neurotransmitter release"],
+      "routes": ["PO", "IV"],
+      "formulations": ["250 mg tablet", "500 mg tablet", "750 mg tablet", "1000 mg tablet", "500 mg XR tablet", "750 mg XR tablet", "100 mg/mL oral solution", "100 mg/mL IV solution"],
+      "contexts": {
+        "epilepsy-partial": {
+          "indication": "Partial onset seizures (focal epilepsy)",
+          "doseOptions": [
+            {"text": "250 mg BID", "orderSentence": "Levetiracetam 250 mg PO BID"},
+            {"text": "500 mg BID", "orderSentence": "Levetiracetam 500 mg PO BID"},
+            {"text": "750 mg BID", "orderSentence": "Levetiracetam 750 mg PO BID"},
+            {"text": "1000 mg BID", "orderSentence": "Levetiracetam 1000 mg PO BID"},
+            {"text": "1500 mg BID", "orderSentence": "Levetiracetam 1500 mg PO BID"}
+          ],
+          "startingDose": "500 mg BID",
+          "maxDose": "3000 mg/day",
+          "titration": "May increase by 500 mg BID every 2 weeks",
+          "notes": "First-line for focal epilepsy; no titration required but may help tolerability"
+        },
+        "epilepsy-generalized": {
+          "indication": "Generalized tonic-clonic seizures, myoclonic seizures",
+          "doseOptions": [
+            {"text": "500 mg BID", "orderSentence": "Levetiracetam 500 mg PO BID"},
+            {"text": "750 mg BID", "orderSentence": "Levetiracetam 750 mg PO BID"},
+            {"text": "1000 mg BID", "orderSentence": "Levetiracetam 1000 mg PO BID"},
+            {"text": "1500 mg BID", "orderSentence": "Levetiracetam 1500 mg PO BID"}
+          ],
+          "startingDose": "500 mg BID",
+          "maxDose": "3000 mg/day",
+          "titration": "Increase by 500 mg BID every 2 weeks",
+          "notes": "Effective for JME; good for mixed seizure types"
+        },
+        "seizure-prophylaxis-acute": {
+          "indication": "Seizure prophylaxis (post-TBI, post-craniotomy, ICH)",
+          "doseOptions": [
+            {"text": "500 mg IV q12h", "orderSentence": "Levetiracetam 500 mg IV q12h"},
+            {"text": "1000 mg IV q12h", "orderSentence": "Levetiracetam 1000 mg IV q12h"},
+            {"text": "1500 mg IV load then 1000 mg IV q12h", "orderSentence": "Levetiracetam 1500 mg IV load then 1000 mg IV q12h"}
+          ],
+          "startingDose": "1000 mg IV q12h (or 20 mg/kg load)",
+          "maxDose": "3000 mg/day",
+          "titration": "N/A for acute prophylaxis",
+          "notes": "Duration typically 7 days post-TBI; IV=PO bioequivalent"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": ["Known hypersensitivity to levetiracetam"],
+        "precautions": [
+          "Behavioral/psychiatric adverse events (irritability, aggression, anxiety, depression)",
+          "Suicidal ideation (class warning)",
+          "Somnolence and fatigue",
+          "Coordination difficulties",
+          "Anaphylaxis and angioedema (rare)"
+        ],
+        "drugInteractions": [
+          {"drug": "CNS depressants", "severity": "low", "effect": "Additive sedation"},
+          {"drug": "No significant CYP interactions", "severity": "none", "effect": "Few drug interactions - major advantage"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Likely compatible"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥80", "adjustment": "No adjustment needed"},
+          {"gfr": "50-79", "adjustment": "500-1000 mg BID (max 2000 mg/day)"},
+          {"gfr": "30-49", "adjustment": "250-750 mg BID (max 1500 mg/day)"},
+          {"gfr": "<30", "adjustment": "250-500 mg BID (max 1000 mg/day)"},
+          {"gfr": "HD", "adjustment": "500-1000 mg daily + 250-500 mg supplement post-dialysis"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment needed - renally eliminated"
+      },
+      "monitoring": {
+        "baseline": ["Renal function"],
+        "ongoing": ["Behavioral changes", "Mood", "Suicidal ideation"],
+        "frequency": "Renal function annually; behavioral assessment at each visit"
+      },
+      "patientCounseling": [
+        "Report mood changes, irritability, aggression, depression, or suicidal thoughts immediately",
+        "May cause drowsiness - avoid driving until effects known",
+        "Do not stop abruptly - may precipitate seizures",
+        "Keppra Rage is real - discuss with provider if mood changes",
+        "Pyridoxine (B6) may help with irritability"
+      ]
+    },
+    "sumatriptan": {
+      "id": "sumatriptan",
+      "name": "Sumatriptan",
+      "genericName": "sumatriptan",
+      "brandNames": ["Imitrex", "Onzetra Xsail", "Tosymra", "Zembrace"],
+      "drugClass": "Triptan / 5-HT1B/1D Agonist",
+      "mechanisms": ["Selective serotonin 5-HT1B/1D receptor agonist", "Causes cranial vasoconstriction", "Inhibits trigeminal nerve activation"],
+      "routes": ["PO", "SC", "Nasal"],
+      "formulations": ["25 mg tablet", "50 mg tablet", "100 mg tablet", "6 mg/0.5mL SC injection", "4 mg/0.5mL SC injection", "5 mg nasal spray", "10 mg nasal spray", "20 mg nasal spray"],
+      "contexts": {
+        "migraine-acute": {
+          "indication": "Acute migraine treatment",
+          "doseOptions": [
+            {"text": "25 mg PO PRN", "orderSentence": "Sumatriptan 25 mg PO PRN migraine"},
+            {"text": "50 mg PO PRN", "orderSentence": "Sumatriptan 50 mg PO PRN migraine"},
+            {"text": "100 mg PO PRN", "orderSentence": "Sumatriptan 100 mg PO PRN migraine"},
+            {"text": "6 mg SC PRN", "orderSentence": "Sumatriptan 6 mg SC PRN migraine"},
+            {"text": "20 mg nasal PRN", "orderSentence": "Sumatriptan 20 mg nasal spray PRN migraine"}
+          ],
+          "startingDose": "50 mg PO (or 6 mg SC for faster relief)",
+          "maxDose": "200 mg PO/day; 12 mg SC/day; 40 mg nasal/day",
+          "titration": "N/A - use lowest effective dose",
+          "notes": "Take at onset of headache; may repeat in 2 hours if needed; SC fastest onset"
+        },
+        "cluster-headache-acute": {
+          "indication": "Acute cluster headache treatment",
+          "doseOptions": [
+            {"text": "6 mg SC PRN", "orderSentence": "Sumatriptan 6 mg SC PRN cluster headache"},
+            {"text": "20 mg nasal PRN", "orderSentence": "Sumatriptan 20 mg nasal spray PRN cluster headache"}
+          ],
+          "startingDose": "6 mg SC",
+          "maxDose": "12 mg SC/day (two injections)",
+          "titration": "N/A",
+          "notes": "SC or nasal preferred over oral for cluster headache due to faster onset"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": [
+          "History of coronary artery disease, MI, Prinzmetal angina",
+          "History of stroke or TIA",
+          "Peripheral vascular disease",
+          "Uncontrolled hypertension",
+          "Hemiplegic or basilar migraine",
+          "Use within 24 hours of another triptan or ergot",
+          "Use within 2 weeks of MAOIs",
+          "Severe hepatic impairment"
+        ],
+        "precautions": [
+          "Chest tightness/pressure (triptan sensations - usually benign)",
+          "Cardiovascular evaluation before use in patients with risk factors",
+          "Serotonin syndrome with SSRIs/SNRIs (rare but possible)",
+          "Medication overuse headache with frequent use (>10 days/month)"
+        ],
+        "drugInteractions": [
+          {"drug": "Ergots", "severity": "contraindicated", "effect": "Additive vasospasm - separate by 24 hours"},
+          {"drug": "Other triptans", "severity": "contraindicated", "effect": "Additive vasospasm - separate by 24 hours"},
+          {"drug": "MAOIs", "severity": "contraindicated", "effect": "Increased sumatriptan levels - avoid within 2 weeks"},
+          {"drug": "SSRIs/SNRIs", "severity": "moderate", "effect": "Risk of serotonin syndrome (rare)"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Compatible - express and discard milk for 12 hours if concerned"
+      },
+      "renalAdjustment": {
+        "required": false,
+        "tiers": [
+          {"gfr": "any", "adjustment": "No adjustment needed"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": true,
+        "notes": "Max 50 mg PO in mild-moderate impairment; contraindicated in severe impairment"
+      },
+      "monitoring": {
+        "baseline": ["Cardiovascular risk assessment", "Blood pressure"],
+        "ongoing": ["Headache frequency (watch for MOH)", "Cardiovascular symptoms"],
+        "frequency": "At each visit; limit to <10 days/month to prevent MOH"
+      },
+      "patientCounseling": [
+        "Take at first sign of migraine headache (not during aura)",
+        "May repeat in 2 hours if needed; max 2 doses/day",
+        "Do not use more than 10 days per month (medication overuse headache risk)",
+        "Chest tightness is common and usually benign - but report if severe or persistent",
+        "Do not use if you have heart disease or uncontrolled blood pressure",
+        "Store injectable away from light"
+      ]
+    },
+    "prednisone": {
+      "id": "prednisone",
+      "name": "Prednisone",
+      "genericName": "prednisone",
+      "brandNames": ["Deltasone", "Rayos"],
+      "drugClass": "Corticosteroid / Glucocorticoid",
+      "mechanisms": ["Binds glucocorticoid receptor", "Suppresses inflammatory and immune responses", "Reduces cytokine production"],
+      "routes": ["PO"],
+      "formulations": ["1 mg tablet", "2.5 mg tablet", "5 mg tablet", "10 mg tablet", "20 mg tablet", "50 mg tablet", "5 mg/mL solution"],
+      "contexts": {
+        "ms-acute-relapse": {
+          "indication": "Multiple sclerosis acute relapse",
+          "doseOptions": [
+            {"text": "1000 mg IV daily x3-5 days", "orderSentence": "Methylprednisolone 1000 mg IV daily x3-5 days"},
+            {"text": "1250 mg PO daily x3-5 days", "orderSentence": "Prednisone 1250 mg PO daily x3-5 days"}
+          ],
+          "startingDose": "1000 mg IV methylprednisolone (or 1250 mg PO prednisone equivalent)",
+          "maxDose": "1000-1250 mg/day x 3-5 days",
+          "titration": "No taper needed for short courses",
+          "notes": "High-dose steroids speed recovery from relapse but don't affect long-term disability"
+        },
+        "myasthenia-gravis": {
+          "indication": "Myasthenia gravis",
+          "doseOptions": [
+            {"text": "20 mg daily", "orderSentence": "Prednisone 20 mg PO daily"},
+            {"text": "40 mg daily", "orderSentence": "Prednisone 40 mg PO daily"},
+            {"text": "60 mg daily", "orderSentence": "Prednisone 60 mg PO daily"},
+            {"text": "1 mg/kg daily", "orderSentence": "Prednisone 1 mg/kg PO daily"}
+          ],
+          "startingDose": "10-20 mg daily (or low-dose escalation to avoid exacerbation)",
+          "maxDose": "1-1.5 mg/kg/day (usually 60-100 mg)",
+          "titration": "Increase by 10 mg every 3-5 days OR start high and taper; risk of transient worsening",
+          "notes": "May cause transient worsening in first 2-3 weeks; inpatient initiation may be safer"
+        },
+        "inflammatory-neuropathy": {
+          "indication": "CIDP, vasculitic neuropathy, inflammatory neuropathies",
+          "doseOptions": [
+            {"text": "60 mg daily", "orderSentence": "Prednisone 60 mg PO daily"},
+            {"text": "1 mg/kg daily", "orderSentence": "Prednisone 1 mg/kg PO daily"}
+          ],
+          "startingDose": "60 mg daily or 1 mg/kg/day",
+          "maxDose": "100 mg/day",
+          "titration": "Treat for 2-4 weeks then taper over months",
+          "notes": "For CIDP, IVIG often preferred first-line; steroids for refractory cases or vasculitis"
+        },
+        "bells-palsy": {
+          "indication": "Bell's palsy",
+          "doseOptions": [
+            {"text": "60 mg daily x7 days then taper", "orderSentence": "Prednisone 60 mg PO daily x7 days then taper"},
+            {"text": "50 mg daily x10 days", "orderSentence": "Prednisone 50 mg PO daily x10 days"}
+          ],
+          "startingDose": "60 mg daily",
+          "maxDose": "60 mg/day",
+          "titration": "7-10 day course; can taper over 5 days or stop",
+          "notes": "Start within 72 hours of onset for best effect"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": [
+          "Systemic fungal infections",
+          "Known hypersensitivity"
+        ],
+        "precautions": [
+          "Hyperglycemia - monitor blood glucose in diabetics",
+          "Immunosuppression - increased infection risk",
+          "Adrenal suppression with prolonged use - taper required",
+          "Osteoporosis with chronic use",
+          "GI bleeding risk - consider PPI if risk factors",
+          "Psychiatric effects (insomnia, mood changes, psychosis)",
+          "Hypertension, fluid retention",
+          "Cataracts and glaucoma with prolonged use",
+          "AVN of femoral head (rare)"
+        ],
+        "drugInteractions": [
+          {"drug": "NSAIDs", "severity": "moderate", "effect": "Increased GI bleeding risk"},
+          {"drug": "CYP3A4 inducers (phenytoin, rifampin)", "severity": "moderate", "effect": "Decreased prednisone effect"},
+          {"drug": "Warfarin", "severity": "moderate", "effect": "Variable effect on INR - monitor closely"},
+          {"drug": "Fluoroquinolones", "severity": "moderate", "effect": "Increased tendon rupture risk"},
+          {"drug": "Live vaccines", "severity": "high", "effect": "Avoid live vaccines during immunosuppression"}
+        ],
+        "pregnancyCategory": "C (D in first trimester at high doses)",
+        "lactation": "Compatible at low doses"
+      },
+      "renalAdjustment": {
+        "required": false,
+        "tiers": [
+          {"gfr": "any", "adjustment": "No adjustment needed"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment typically needed; prednisone is prodrug converted to prednisolone"
+      },
+      "monitoring": {
+        "baseline": ["Blood glucose", "Blood pressure", "BMD if chronic use anticipated"],
+        "ongoing": ["Blood glucose", "Blood pressure", "Weight", "Signs of infection", "Mood changes"],
+        "frequency": "Glucose frequently during high-dose; BP at each visit"
+      },
+      "patientCounseling": [
+        "Take with food to reduce stomach upset",
+        "Do not stop abruptly if on >7-10 days - must taper",
+        "May cause insomnia - take in morning",
+        "Monitor blood sugar if diabetic",
+        "Report signs of infection, GI bleeding, or mood changes",
+        "Consider calcium/vitamin D supplementation if prolonged use"
+      ]
+    },
+    "pyridostigmine": {
+      "id": "pyridostigmine",
+      "name": "Pyridostigmine",
+      "genericName": "pyridostigmine bromide",
+      "brandNames": ["Mestinon", "Mestinon Timespan", "Regonol"],
+      "drugClass": "Acetylcholinesterase Inhibitor",
+      "mechanisms": ["Inhibits acetylcholinesterase", "Increases acetylcholine at neuromuscular junction"],
+      "routes": ["PO", "IV", "IM"],
+      "formulations": ["60 mg tablet", "180 mg extended-release tablet", "60 mg/5mL syrup", "5 mg/mL injection"],
+      "contexts": {
+        "myasthenia-gravis": {
+          "indication": "Myasthenia gravis - symptomatic treatment",
+          "doseOptions": [
+            {"text": "30 mg TID", "orderSentence": "Pyridostigmine 30 mg PO TID"},
+            {"text": "60 mg TID", "orderSentence": "Pyridostigmine 60 mg PO TID"},
+            {"text": "60 mg QID", "orderSentence": "Pyridostigmine 60 mg PO QID"},
+            {"text": "90 mg TID", "orderSentence": "Pyridostigmine 90 mg PO TID"},
+            {"text": "120 mg TID", "orderSentence": "Pyridostigmine 120 mg PO TID"}
+          ],
+          "startingDose": "30-60 mg TID",
+          "maxDose": "120 mg q3h (rarely >600-720 mg/day needed)",
+          "titration": "Increase by 30-60 mg per dose every 3-7 days as needed",
+          "notes": "Symptomatic only - does not modify disease; use lowest effective dose"
+        },
+        "myasthenia-gravis-severe": {
+          "indication": "Myasthenia gravis - severe/crisis (NPO patients)",
+          "doseOptions": [
+            {"text": "2 mg IV q2-3h", "orderSentence": "Pyridostigmine 2 mg IV q2-3h"}
+          ],
+          "startingDose": "1-2 mg IV q2-3h",
+          "maxDose": "Titrate to effect",
+          "titration": "N/A - use for NPO patients only",
+          "notes": "IV dose is 1/30 of oral dose; use only when oral not possible"
+        },
+        "orthostatic-hypotension": {
+          "indication": "Neurogenic orthostatic hypotension",
+          "doseOptions": [
+            {"text": "30 mg TID", "orderSentence": "Pyridostigmine 30 mg PO TID"},
+            {"text": "60 mg TID", "orderSentence": "Pyridostigmine 60 mg PO TID"}
+          ],
+          "startingDose": "30 mg TID",
+          "maxDose": "60 mg TID",
+          "titration": "Increase as tolerated",
+          "notes": "Off-label; augments ganglionic transmission without supine hypertension"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [],
+        "contraindications": [
+          "Mechanical GI or urinary obstruction",
+          "Known hypersensitivity"
+        ],
+        "precautions": [
+          "Cholinergic crisis with overdose (excessive secretions, bradycardia, weakness)",
+          "Distinguish myasthenic crisis from cholinergic crisis",
+          "Bronchospasm in asthmatics",
+          "GI effects (cramping, diarrhea, nausea)",
+          "Bradycardia",
+          "Increased secretions"
+        ],
+        "drugInteractions": [
+          {"drug": "Anticholinergics", "severity": "high", "effect": "Antagonize pyridostigmine effect"},
+          {"drug": "Aminoglycosides", "severity": "moderate", "effect": "May worsen myasthenia"},
+          {"drug": "Beta-blockers", "severity": "moderate", "effect": "Additive bradycardia"},
+          {"drug": "Succinylcholine", "severity": "moderate", "effect": "Prolonged neuromuscular blockade"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Compatible - poorly excreted in milk"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥30", "adjustment": "No adjustment typically needed"},
+          {"gfr": "<30", "adjustment": "Reduce dose; renally excreted"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment needed"
+      },
+      "monitoring": {
+        "baseline": ["Clinical assessment of MG symptoms"],
+        "ongoing": ["Symptom control", "Signs of cholinergic excess (SLUDGE)", "Heart rate"],
+        "frequency": "Frequent initially to optimize dosing"
+      },
+      "patientCounseling": [
+        "Take 30-60 minutes before meals",
+        "Dose before activities requiring strength",
+        "Report excessive salivation, sweating, diarrhea, or worsening weakness",
+        "Carry medical ID indicating myasthenia gravis",
+        "Do not take more than prescribed - overdose can worsen weakness"
+      ]
+    },
+    "baclofen": {
+      "id": "baclofen",
+      "name": "Baclofen",
+      "genericName": "baclofen",
+      "brandNames": ["Lioresal", "Gablofen", "Ozobax"],
+      "drugClass": "GABA-B Agonist / Skeletal Muscle Relaxant",
+      "mechanisms": ["GABA-B receptor agonist", "Inhibits spinal cord reflex arcs", "Reduces muscle tone and spasms"],
+      "routes": ["PO", "IT"],
+      "formulations": ["5 mg tablet", "10 mg tablet", "20 mg tablet", "5 mg/5mL oral solution", "0.05 mg/mL IT", "0.5 mg/mL IT", "2 mg/mL IT"],
+      "contexts": {
+        "spasticity": {
+          "indication": "Spasticity (MS, spinal cord injury, cerebral palsy, stroke)",
+          "doseOptions": [
+            {"text": "5 mg TID", "orderSentence": "Baclofen 5 mg PO TID"},
+            {"text": "10 mg TID", "orderSentence": "Baclofen 10 mg PO TID"},
+            {"text": "20 mg TID", "orderSentence": "Baclofen 20 mg PO TID"},
+            {"text": "20 mg QID", "orderSentence": "Baclofen 20 mg PO QID"}
+          ],
+          "startingDose": "5 mg TID",
+          "maxDose": "80 mg/day (20 mg QID); rarely up to 120 mg in select patients",
+          "titration": "Increase by 5 mg TID every 3 days",
+          "notes": "First-line for spasticity; gradual titration reduces sedation"
+        },
+        "trigeminal-neuralgia": {
+          "indication": "Trigeminal neuralgia (adjunctive)",
+          "doseOptions": [
+            {"text": "10 mg TID", "orderSentence": "Baclofen 10 mg PO TID"},
+            {"text": "20 mg TID", "orderSentence": "Baclofen 20 mg PO TID"}
+          ],
+          "startingDose": "5-10 mg TID",
+          "maxDose": "60-80 mg/day",
+          "titration": "Increase by 5-10 mg every 3 days",
+          "notes": "Second-line; may be used with carbamazepine"
+        },
+        "hiccups": {
+          "indication": "Intractable hiccups",
+          "doseOptions": [
+            {"text": "5 mg TID", "orderSentence": "Baclofen 5 mg PO TID"},
+            {"text": "10 mg TID", "orderSentence": "Baclofen 10 mg PO TID"}
+          ],
+          "startingDose": "5 mg TID",
+          "maxDose": "30 mg/day",
+          "titration": "Increase as needed",
+          "notes": "Off-label; evidence limited but commonly used"
+        }
+      },
+      "safety": {
+        "blackBoxWarnings": [
+          "Abrupt discontinuation can cause serious withdrawal (hallucinations, seizures, hyperthermia, death)"
+        ],
+        "contraindications": [
+          "Known hypersensitivity"
+        ],
+        "precautions": [
+          "NEVER stop abruptly - life-threatening withdrawal",
+          "Sedation and drowsiness",
+          "Lowered seizure threshold",
+          "Use caution in renal impairment",
+          "May worsen psychiatric disorders",
+          "Weakness (may unmask when spasticity reduced)"
+        ],
+        "drugInteractions": [
+          {"drug": "CNS depressants", "severity": "moderate", "effect": "Additive sedation"},
+          {"drug": "Alcohol", "severity": "moderate", "effect": "Additive CNS depression"},
+          {"drug": "Antihypertensives", "severity": "low", "effect": "Additive hypotension"}
+        ],
+        "pregnancyCategory": "C",
+        "lactation": "Caution - excreted in milk"
+      },
+      "renalAdjustment": {
+        "required": true,
+        "tiers": [
+          {"gfr": "≥60", "adjustment": "No adjustment needed"},
+          {"gfr": "30-59", "adjustment": "Use with caution; may need dose reduction"},
+          {"gfr": "<30", "adjustment": "Reduce dose significantly; accumulates"}
+        ]
+      },
+      "hepaticAdjustment": {
+        "required": false,
+        "notes": "No adjustment needed - renally eliminated"
+      },
+      "monitoring": {
+        "baseline": ["Renal function"],
+        "ongoing": ["Spasticity control", "Sedation", "Signs of withdrawal if dose changed"],
+        "frequency": "Clinical assessment at each visit"
+      },
+      "patientCounseling": [
+        "NEVER stop taking suddenly - can cause seizures and hallucinations",
+        "Report increased weakness, sedation, or dizziness",
+        "May impair driving - avoid until effects known",
+        "Avoid alcohol",
+        "Always have a supply - do not run out"
+      ]
+    }
+  }
+}
