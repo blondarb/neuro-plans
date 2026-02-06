@@ -548,13 +548,25 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
                 "text": "1 mg/kg BID",
-                "orderSentence": "Enoxaparin (LMWH) 1 mg/kg BID SC"
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "1 mg/kg SC every 12 hours; adjust for CrCl <30 (1 mg/kg daily) or obesity",
-            "orderSentence": "Enoxaparin (LMWH) 1 mg/kg BID SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active uncontrolled bleeding; CrCl <15; HIT",
           "monitoring": "Anti-Xa levels (target 0.5-1.0 IU/mL) if extremes of weight or renal impairment; platelet count q2d; signs of bleeding",
@@ -570,13 +582,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg",
-                "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg IV"
+                "text": "250 mg BID",
+                "orderSentence": "Levetiracetam 250 mg IV BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam 500 mg IV BID"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam 750 mg IV BID"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam 1000 mg IV BID"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Levetiracetam 1500 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID (max 3000 mg/day)",
-            "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000 mg IV"
+            "orderSentence": "Levetiracetam 250 mg IV BID"
           },
           "contraindications": "Renal impairment (adjust dose per CrCl)",
           "monitoring": "Behavioral changes; suicidality; renal function",
@@ -658,13 +686,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg",
-                "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+                "text": "4 mg q6h",
+                "orderSentence": "Dexamethasone 4 mg IV q6h"
+              },
+              {
+                "text": "10 mg once then 4 mg q6h",
+                "orderSentence": "Dexamethasone 10 mg IV once then 4 mg q6h"
+              },
+              {
+                "text": "16 mg daily",
+                "orderSentence": "Dexamethasone 16 mg IV daily"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV loading dose, then 4 mg IV q6h; taper over 5-7 days",
-            "orderSentence": "Dexamethasone (vasogenic edema) 10 mg IV"
+            "orderSentence": "Dexamethasone 4 mg IV q6h"
           },
           "contraindications": "Active untreated infection; unclear role in CVT",
           "monitoring": "Glucose; BP; GI prophylaxis",
@@ -682,13 +718,25 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "2 mg daily",
+                "orderSentence": "Warfarin 2 mg PO daily"
+              },
+              {
                 "text": "5 mg daily",
-                "orderSentence": "Warfarin 5 mg daily PO"
+                "orderSentence": "Warfarin 5 mg PO daily"
+              },
+              {
+                "text": "7.5 mg daily",
+                "orderSentence": "Warfarin 7.5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Warfarin 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO daily (lower if elderly, hepatic impairment, CYP2C9 variant); overlap with heparin until INR 2-3 x 2 consecutive days; target INR 2.0-3.0",
-            "orderSentence": "Warfarin 5 mg daily PO"
+            "orderSentence": "Warfarin 2 mg PO daily"
           },
           "contraindications": "Pregnancy (teratogenic -- use LMWH instead); active bleeding; severe hepatic disease",
           "monitoring": "INR q1-3 days initially; then q1-2 weeks; then monthly; drug/diet interactions",
@@ -704,13 +752,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "75 mg BID",
+                "orderSentence": "Dabigatran 75 mg PO BID"
+              },
+              {
+                "text": "110 mg BID",
+                "orderSentence": "Dabigatran 110 mg PO BID"
+              },
+              {
                 "text": "150 mg BID",
-                "orderSentence": "Dabigatran 150 mg BID PO"
+                "orderSentence": "Dabigatran 150 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "150 mg PO BID; reduce to 110 mg BID if age >80, concurrent P-gp inhibitor, or CrCl 30-50",
-            "orderSentence": "Dabigatran 150 mg BID PO"
+            "orderSentence": "Dabigatran 75 mg PO BID"
           },
           "contraindications": "CrCl <30; mechanical heart valve; active bleeding",
           "monitoring": "Renal function q6-12 months; signs of bleeding; aPTT as qualitative screen",
@@ -726,13 +782,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "10 mg daily",
+                "orderSentence": "Rivaroxaban 10 mg PO daily"
+              },
+              {
+                "text": "15 mg daily",
+                "orderSentence": "Rivaroxaban 15 mg PO daily"
+              },
+              {
                 "text": "20 mg daily",
-                "orderSentence": "Rivaroxaban 20 mg daily PO"
+                "orderSentence": "Rivaroxaban 20 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "20 mg PO daily with food; reduce to 15 mg daily if CrCl 15-50",
-            "orderSentence": "Rivaroxaban 20 mg daily PO"
+            "orderSentence": "Rivaroxaban 10 mg PO daily"
           },
           "contraindications": "CrCl <15; hepatic impairment (Child-Pugh B/C); active bleeding",
           "monitoring": "Renal function q6-12 months; LFTs; signs of bleeding",
@@ -748,13 +812,17 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "2.5 mg BID",
+                "orderSentence": "Apixaban 2.5 mg PO BID"
+              },
+              {
                 "text": "5 mg BID",
-                "orderSentence": "Apixaban 5 mg BID PO"
+                "orderSentence": "Apixaban 5 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO BID; reduce to 2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, Cr ≥1.5",
-            "orderSentence": "Apixaban 5 mg BID PO"
+            "orderSentence": "Apixaban 2.5 mg PO BID"
           },
           "contraindications": "Active bleeding; hepatic impairment",
           "monitoring": "Renal function q6-12 months; LFTs; signs of bleeding",
@@ -906,13 +974,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4-8 mg IV/PO q6-8h PRN",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QTc prolongation",
           "monitoring": "QTc if risk factors",
@@ -928,13 +1000,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg",
-                "orderSentence": "Metoclopramide 10 mg IV"
+                "text": "5 mg TID",
+                "orderSentence": "Metoclopramide 5 mg IV TID"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Metoclopramide 10 mg IV TID"
+              },
+              {
+                "text": "10 mg QID",
+                "orderSentence": "Metoclopramide 10 mg IV QID"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV q6-8h PRN; max 40 mg/day; limit use to 5 days",
-            "orderSentence": "Metoclopramide 10 mg IV"
+            "orderSentence": "Metoclopramide 5 mg IV TID"
           },
           "contraindications": "Parkinson disease; seizure disorder; bowel obstruction",
           "monitoring": "EPS; tardive dyskinesia; QTc",
@@ -950,13 +1030,25 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "50 mg BID",
+                "orderSentence": "Lacosamide 50 mg IV BID"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Lacosamide 100 mg IV BID"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Lacosamide 150 mg IV BID"
+              },
+              {
                 "text": "200 mg BID",
-                "orderSentence": "Lacosamide (second-line ASM) 200 mg BID IV"
+                "orderSentence": "Lacosamide 200 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "Load: 200-400 mg IV; Maintenance: 100-200 mg IV/PO BID (max 400 mg/day)",
-            "orderSentence": "Lacosamide (second-line ASM) 200 mg BID IV"
+            "orderSentence": "Lacosamide 50 mg IV BID"
           },
           "contraindications": "Second/third degree AV block; severe hepatic impairment",
           "monitoring": "ECG (PR prolongation); dizziness",

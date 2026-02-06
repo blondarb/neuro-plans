@@ -439,13 +439,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg",
-                "orderSentence": "Riluzole (Rilutek) 50 mg PO"
+                "text": "50 mg BID",
+                "orderSentence": "Riluzole 50 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "50 mg PO BID; take 1 hour before or 2 hours after meals for best absorption",
-            "orderSentence": "Riluzole (Rilutek) 50 mg PO"
+            "orderSentence": "Riluzole 50 mg PO BID"
           },
           "pretreatment": "Baseline LFTs",
           "contraindications": "ALT >5x ULN; hepatic impairment",
@@ -462,13 +462,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "60 mg",
-                "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV"
+                "text": "60 mg daily x14 days then off 14 days",
+                "orderSentence": "Edaravone 60 mg IV daily x14 days then off 14 days"
               }
             ],
             "route": "IV",
             "instructions": "Initial cycle: 60 mg IV daily x 14 days, then 14 days off; subsequent cycles: 60 mg IV daily x 10 of 14 days, then 14 days off",
-            "orderSentence": "Edaravone (Radicava) - IV formulation 60 mg IV"
+            "orderSentence": "Edaravone 60 mg IV daily x14 days then off 14 days"
           },
           "pretreatment": "Baseline renal function, IV access established",
           "contraindications": "Hypersensitivity to edaravone or sodium bisulfite",
@@ -485,13 +485,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "105 mg",
-                "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg PO"
+                "text": "60 mg daily x14 days then off 14 days",
+                "orderSentence": "Edaravone 60 mg PO daily x14 days then off 14 days"
               }
             ],
             "route": "PO",
             "instructions": "Initial cycle: 105 mg PO daily x 14 days, then 14 days off; subsequent cycles: 105 mg PO daily x 10 of 14 days, then 14 days off",
-            "orderSentence": "Edaravone oral suspension (Radicava ORS) 105 mg PO"
+            "orderSentence": "Edaravone 60 mg PO daily x14 days then off 14 days"
           },
           "pretreatment": "Baseline renal function",
           "contraindications": "Hypersensitivity to edaravone or sodium bisulfite",
@@ -659,13 +659,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Baclofen 5 mg PO"
+                "text": "5 mg TID",
+                "orderSentence": "Baclofen 5 mg PO TID"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Baclofen 10 mg PO TID"
+              },
+              {
+                "text": "20 mg TID",
+                "orderSentence": "Baclofen 20 mg PO TID"
+              },
+              {
+                "text": "20 mg QID",
+                "orderSentence": "Baclofen 20 mg PO QID"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day in divided doses",
-            "orderSentence": "Baclofen 5 mg PO"
+            "orderSentence": "Baclofen 5 mg PO TID"
           },
           "contraindications": "Abrupt withdrawal (risk of seizures, hallucinations)",
           "monitoring": "Sedation, weakness (may unmask underlying weakness); taper to discontinue",
@@ -681,13 +693,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg",
-                "orderSentence": "Tizanidine 2 mg PO"
+                "text": "2 mg TID",
+                "orderSentence": "Tizanidine 2 mg PO TID"
+              },
+              {
+                "text": "4 mg TID",
+                "orderSentence": "Tizanidine 4 mg PO TID"
+              },
+              {
+                "text": "8 mg TID",
+                "orderSentence": "Tizanidine 8 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg qHS; may increase by 2-4 mg q6-8h; max 36 mg/day",
-            "orderSentence": "Tizanidine 2 mg PO"
+            "orderSentence": "Tizanidine 2 mg PO TID"
           },
           "contraindications": "Concurrent CYP1A2 inhibitors (ciprofloxacin, fluvoxamine); hepatic impairment",
           "monitoring": "LFTs at baseline, 1 month, 3 months; sedation, hypotension, dry mouth",
@@ -703,13 +723,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg",
-                "orderSentence": "Gabapentin 300 mg PO"
+                "text": "100 mg TID",
+                "orderSentence": "Gabapentin 100 mg PO TID"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg PO TID"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg PO TID"
+              },
+              {
+                "text": "900 mg TID",
+                "orderSentence": "Gabapentin 900 mg PO TID"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Gabapentin 1200 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg qHS; titrate by 300 mg/day q1-3 days; max 3600 mg/day divided TID",
-            "orderSentence": "Gabapentin 300 mg PO"
+            "orderSentence": "Gabapentin 100 mg PO TID"
           },
           "contraindications": "Severe renal impairment (adjust dose)",
           "monitoring": "Sedation, dizziness; reduce dose if CrCl <60",
@@ -725,13 +761,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg",
-                "orderSentence": "Mexiletine 150 mg PO"
+                "text": "150 mg TID",
+                "orderSentence": "Mexiletine 150 mg PO TID"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Mexiletine 200 mg PO TID"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Mexiletine 300 mg PO TID"
+              },
+              {
+                "text": "400 mg TID",
+                "orderSentence": "Mexiletine 400 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "Start 150 mg PO BID; may increase to 300 mg BID; max 1200 mg/day",
-            "orderSentence": "Mexiletine 150 mg PO"
+            "orderSentence": "Mexiletine 150 mg PO TID"
           },
           "contraindications": "Cardiogenic shock; 2nd/3rd degree AV block without pacemaker",
           "monitoring": "Baseline ECG; monitor for arrhythmia; GI upset",
@@ -769,13 +817,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg",
-                "orderSentence": "Lorazepam 0.5 mg PO/SL"
+                "text": "0.5 mg TID",
+                "orderSentence": "Lorazepam 0.5 mg PO/SL TID"
+              },
+              {
+                "text": "1 mg TID",
+                "orderSentence": "Lorazepam 1 mg PO/SL TID"
+              },
+              {
+                "text": "2 mg TID",
+                "orderSentence": "Lorazepam 2 mg PO/SL TID"
               }
             ],
             "route": "PO/SL",
             "instructions": "0.5-1 mg PO/SL q8h PRN for anxiety or dyspnea; use low doses due to respiratory depression risk",
-            "orderSentence": "Lorazepam 0.5 mg PO/SL"
+            "orderSentence": "Lorazepam 0.5 mg PO/SL TID"
           },
           "contraindications": "Severe respiratory insufficiency (relative); acute narrow-angle glaucoma",
           "monitoring": "Respiratory status, sedation; paradoxical agitation",
@@ -791,13 +847,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg",
-                "orderSentence": "Morphine 2.5 mg PO/SL"
+                "text": "15 mg q4h PRN",
+                "orderSentence": "Morphine 15 mg PO/SL q4h PRN"
+              },
+              {
+                "text": "30 mg q4h PRN",
+                "orderSentence": "Morphine 30 mg PO/SL q4h PRN"
+              },
+              {
+                "text": "2 mg q4h PRN",
+                "orderSentence": "Morphine 2 mg PO/SL q4h PRN"
+              },
+              {
+                "text": "4 mg q4h PRN",
+                "orderSentence": "Morphine 4 mg PO/SL q4h PRN"
               }
             ],
             "route": "PO/SL",
             "instructions": "Start 2.5-5 mg PO/SL q4h PRN for dyspnea; titrate to comfort; may reduce respiratory distress without significantly worsening ventilation",
-            "orderSentence": "Morphine 2.5 mg PO/SL"
+            "orderSentence": "Morphine 15 mg PO/SL q4h PRN"
           },
           "contraindications": "Active respiratory failure without comfort focus",
           "monitoring": "Respiratory rate, comfort, sedation",
@@ -835,13 +903,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg",
-                "orderSentence": "Amitriptyline 10 mg PO"
+                "text": "10 mg QHS",
+                "orderSentence": "Amitriptyline 10 mg PO QHS"
+              },
+              {
+                "text": "25 mg QHS",
+                "orderSentence": "Amitriptyline 25 mg PO QHS"
+              },
+              {
+                "text": "50 mg QHS",
+                "orderSentence": "Amitriptyline 50 mg PO QHS"
+              },
+              {
+                "text": "75 mg QHS",
+                "orderSentence": "Amitriptyline 75 mg PO QHS"
+              },
+              {
+                "text": "100 mg QHS",
+                "orderSentence": "Amitriptyline 100 mg PO QHS"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg PO qHS; increase by 10 mg weekly; max 75-100 mg qHS",
-            "orderSentence": "Amitriptyline 10 mg PO"
+            "orderSentence": "Amitriptyline 10 mg PO QHS"
           },
           "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention",
           "monitoring": "ECG if dose >50 mg; anticholinergic effects; sedation",

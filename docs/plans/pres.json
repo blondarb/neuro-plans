@@ -790,13 +790,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV q6h PRN nausea; max 16 mg/day",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QT prolongation; congenital long QT syndrome",
           "monitoring": "QTc on ECG",
@@ -878,13 +882,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Enoxaparin 40 mg SC"
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily; adjust for renal function (CrCl <30: 30 mg daily); hold if hemorrhagic PRES",
-            "orderSentence": "Enoxaparin 40 mg SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active hemorrhagic PRES; platelet count <50,000; severe renal failure (dose adjust); recent LP (wait 12h)",
           "monitoring": "Platelet count; renal function; bleeding signs",

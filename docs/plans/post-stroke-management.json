@@ -342,12 +342,16 @@
             "doseOptions": [
               {
                 "text": "81 mg daily",
-                "orderSentence": "Aspirin 81 mg daily PO"
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "81 mg PO daily (preferred); 325 mg for first 3 weeks with minor stroke/TIA per CHANCE/POINT then reduce to 81 mg; lifelong",
-            "orderSentence": "Aspirin 81 mg daily PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "contraindications": "Active GI bleeding; aspirin allergy; thrombocytopenia <50K",
           "monitoring": "GI symptoms; bleeding signs; annual CBC",
@@ -364,12 +368,16 @@
             "doseOptions": [
               {
                 "text": "75 mg daily",
-                "orderSentence": "Clopidogrel 75 mg daily PO"
+                "orderSentence": "Clopidogrel 75 mg PO daily"
+              },
+              {
+                "text": "300 mg loading dose",
+                "orderSentence": "Clopidogrel 300 mg PO loading dose"
               }
             ],
             "route": "PO",
             "instructions": "75 mg PO daily; 300 mg loading dose for acute minor stroke; DAPT: aspirin 81 mg + clopidogrel 75 mg x 21 days then clopidogrel monotherapy",
-            "orderSentence": "Clopidogrel 75 mg daily PO"
+            "orderSentence": "Clopidogrel 75 mg PO daily"
           },
           "contraindications": "Active bleeding; CYP2C19 poor metabolizer (reduced efficacy — consider ticagrelor); thrombocytopenia",
           "monitoring": "Bleeding signs; CYP2C19 genotyping if available; platelet function testing rarely needed",
@@ -385,13 +393,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg aspirin + 75 mg clopidogrel daily x 21 days",
-                "orderSentence": "Aspirin + Clopidogrel (DAPT — short-term) 81 mg aspirin + 75 mg clopidogrel daily x 21 days PO"
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Aspirin 81 mg + clopidogrel 75 mg (with 300 mg clopidogrel load) x 21 days from onset; then monotherapy (aspirin or clopidogrel); DO NOT continue DAPT beyond 21-90 days (increases bleeding without benefit)",
-            "orderSentence": "Aspirin + Clopidogrel (DAPT — short-term) 81 mg aspirin + 75 mg clopidogrel daily x 21 days PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "contraindications": "Major bleeding; planned surgery; thrombocytopenia",
           "monitoring": "Bleeding signs closely x 21 days; GI prophylaxis with PPI if high GI risk",
@@ -407,13 +419,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "90 mg BID ticagrelor + 81 mg aspirin daily x 30 days",
-                "orderSentence": "Ticagrelor + Aspirin (DAPT — alternative) 90 mg BID ticagrelor + 81 mg aspirin daily x 30 days PO"
+                "text": "90 mg BID",
+                "orderSentence": "Ticagrelor 90 mg PO BID"
+              },
+              {
+                "text": "180 mg loading dose",
+                "orderSentence": "Ticagrelor 180 mg PO loading dose"
               }
             ],
             "route": "PO",
             "instructions": "Ticagrelor 180 mg load then 90 mg BID + aspirin 81 mg x 30 days; then switch to monotherapy; alternative when clopidogrel resistance suspected",
-            "orderSentence": "Ticagrelor + Aspirin (DAPT — alternative) 90 mg BID ticagrelor + 81 mg aspirin daily x 30 days PO"
+            "orderSentence": "Ticagrelor 90 mg PO BID"
           },
           "contraindications": "Active bleeding; history of ICH; severe hepatic impairment; concurrent strong CYP3A4 inhibitors",
           "monitoring": "Bleeding; dyspnea (common, usually benign); bradycardia; liver function",
@@ -507,13 +523,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "Individualized per INR",
-                "orderSentence": "Warfarin Individualized per INR PO"
+                "text": "2 mg daily",
+                "orderSentence": "Warfarin 2 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Warfarin 5 mg PO daily"
+              },
+              {
+                "text": "7.5 mg daily",
+                "orderSentence": "Warfarin 7.5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Warfarin 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg daily (2.5 mg if elderly, low weight, liver disease); adjust to INR 2-3 (2.5-3.5 for mechanical valve); check INR 2-3 days after start, then weekly until stable, then monthly",
-            "orderSentence": "Warfarin Individualized per INR PO"
+            "orderSentence": "Warfarin 2 mg PO daily"
           },
           "contraindications": "Active major bleeding; pregnancy (teratogenic); severe hepatic failure; non-adherence (requires monitoring)",
           "monitoring": "INR q1-4 weeks (target 2-3); dietary vitamin K counseling; drug interactions; bridge plan for procedures",

@@ -555,13 +555,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg",
-                "orderSentence": "Aspirin 325 mg PO"
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "325 mg PO/PR load (give within 24-48h of onset); if tPA given, wait 24h and obtain CT before starting. Maintenance: 81-325 mg daily",
-            "orderSentence": "Aspirin 325 mg PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "contraindications": "Active GI bleed, true aspirin allergy, within 24h of tPA (wait for post-tPA CT)",
           "monitoring": "GI symptoms, bleeding signs",
@@ -777,13 +781,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV/PO q6h PRN",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QT prolongation, serotonin syndrome risk",
           "monitoring": "QTc if risk factors",
@@ -799,13 +807,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Enoxaparin 40 mg SC"
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily; start within 24-48h if not receiving therapeutic anticoagulation; after post-tPA imaging clears hemorrhage",
-            "orderSentence": "Enoxaparin 40 mg SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active bleeding, platelets <50K, CrCl <30 (use UFH 5000u SC q8-12h)",
           "monitoring": "Platelets q3 days; renal function",
@@ -821,13 +841,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units",
-                "orderSentence": "Heparin (unfractionated) SC 5000 units SC"
+                "text": "5000 units q8-12h",
+                "orderSentence": "Heparin 5000 units SC q8-12h"
+              },
+              {
+                "text": "80 units/kg bolus then 18 units/kg/hr",
+                "orderSentence": "Heparin 80 units/kg bolus SC then 18 units/kg/hr"
               }
             ],
             "route": "SC",
             "instructions": "5000 units SC q8-12h",
-            "orderSentence": "Heparin (unfractionated) SC 5000 units SC"
+            "orderSentence": "Heparin 5000 units SC q8-12h"
           },
           "contraindications": "Active bleeding, HIT",
           "monitoring": "Platelets q3 days",
@@ -933,13 +957,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "60-80 units/kg",
-                "orderSentence": "Heparin IV drip (therapeutic) 60-80 units/kg IV"
+                "text": "5000 units q8-12h",
+                "orderSentence": "Heparin 5000 units IV q8-12h"
+              },
+              {
+                "text": "80 units/kg bolus then 18 units/kg/hr",
+                "orderSentence": "Heparin 80 units/kg bolus IV then 18 units/kg/hr"
               }
             ],
             "route": "IV",
             "instructions": "Bolus 60-80 units/kg (max 5000u); infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control. Use for: cardiac source with high re-embolization risk, arterial dissection, crescendo TIA, free-floating thrombus",
-            "orderSentence": "Heparin IV drip (therapeutic) 60-80 units/kg IV"
+            "orderSentence": "Heparin 5000 units IV q8-12h"
           },
           "contraindications": "Large infarct (hemorrhagic transformation risk), uncontrolled BP, within 24h of tPA",
           "monitoring": "aPTT q6h until stable, then q12-24h; platelets q3 days; neuro checks",
@@ -1045,13 +1073,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "80 mg",
-                "orderSentence": "Atorvastatin 80 mg PO"
+                "text": "10 mg daily",
+                "orderSentence": "Atorvastatin 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Atorvastatin 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Atorvastatin 40 mg PO daily"
+              },
+              {
+                "text": "80 mg daily",
+                "orderSentence": "Atorvastatin 80 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "80 mg PO daily (high-intensity); start within 24-48h regardless of baseline LDL",
-            "orderSentence": "Atorvastatin 80 mg PO"
+            "orderSentence": "Atorvastatin 10 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "Active liver disease, pregnancy, breastfeeding",
@@ -1068,13 +1108,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20-40 mg",
-                "orderSentence": "Rosuvastatin 20-40 mg PO"
+                "text": "5 mg daily",
+                "orderSentence": "Rosuvastatin 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Rosuvastatin 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Rosuvastatin 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Rosuvastatin 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "20-40 mg PO daily (high-intensity alternative)",
-            "orderSentence": "Rosuvastatin 20-40 mg PO"
+            "orderSentence": "Rosuvastatin 5 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "Active liver disease, pregnancy, CrCl <30 for 40mg",
@@ -1091,13 +1143,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Apixaban 5 mg PO"
+                "text": "2.5 mg BID",
+                "orderSentence": "Apixaban 2.5 mg PO BID"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Apixaban 5 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60kg, Cr ≥1.5); start 4-14 days post-stroke for AF (timing based on infarct size). Preferred DOAC per guidelines",
-            "orderSentence": "Apixaban 5 mg PO"
+            "orderSentence": "Apixaban 2.5 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "Renal function; bleeding signs; CBC",
@@ -1114,13 +1170,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg",
-                "orderSentence": "Rivaroxaban 20 mg PO"
+                "text": "10 mg daily",
+                "orderSentence": "Rivaroxaban 10 mg PO daily"
+              },
+              {
+                "text": "15 mg daily",
+                "orderSentence": "Rivaroxaban 15 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Rivaroxaban 20 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "20 mg PO daily with evening meal (15 mg daily if CrCl 15-50); start 4-14 days post-stroke for AF",
-            "orderSentence": "Rivaroxaban 20 mg PO"
+            "orderSentence": "Rivaroxaban 10 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "Renal function q6-12 months; bleeding signs",
@@ -1137,13 +1201,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg",
-                "orderSentence": "Dabigatran 150 mg PO"
+                "text": "75 mg BID",
+                "orderSentence": "Dabigatran 75 mg PO BID"
+              },
+              {
+                "text": "110 mg BID",
+                "orderSentence": "Dabigatran 110 mg PO BID"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Dabigatran 150 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "150 mg PO BID (75 mg BID if CrCl 15-30); start 4-14 days post-stroke for AF",
-            "orderSentence": "Dabigatran 150 mg PO"
+            "orderSentence": "Dabigatran 75 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "Renal function q6-12 months; bleeding signs; GI side effects",
@@ -1160,13 +1232,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Warfarin 5 mg PO"
+                "text": "2 mg daily",
+                "orderSentence": "Warfarin 2 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Warfarin 5 mg PO daily"
+              },
+              {
+                "text": "7.5 mg daily",
+                "orderSentence": "Warfarin 7.5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Warfarin 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO daily initial (2-3 mg if elderly, low weight, or interacting drugs); target INR 2.0-3.0 for AF; 2.5-3.5 for mechanical valve. Bridge with heparin",
-            "orderSentence": "Warfarin 5 mg PO"
+            "orderSentence": "Warfarin 2 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "INR daily until stable, then weekly, then monthly; diet counseling (vitamin K)",
@@ -1183,13 +1267,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5-10 mg",
-                "orderSentence": "Lisinopril 5-10 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Lisinopril 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Lisinopril 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Lisinopril 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Lisinopril 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Lisinopril 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 after acute phase",
-            "orderSentence": "Lisinopril 5-10 mg PO"
+            "orderSentence": "Lisinopril 2.5 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "Cr and K+ at 1-2 weeks after initiation; BP",
@@ -1206,13 +1306,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Amlodipine 5 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Amlodipine 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Amlodipine 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Amlodipine 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO daily; max 10 mg daily",
-            "orderSentence": "Amlodipine 5 mg PO"
+            "orderSentence": "Amlodipine 2.5 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "BP, peripheral edema",
@@ -1252,13 +1360,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg",
-                "orderSentence": "Metoprolol succinate 25 mg PO"
+                "text": "25 mg BID",
+                "orderSentence": "Metoprolol 25 mg PO BID"
+              },
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Metoprolol 50 mg PO BID"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Metoprolol 100 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg PO daily; titrate to 200 mg daily",
-            "orderSentence": "Metoprolol succinate 25 mg PO"
+            "orderSentence": "Metoprolol 25 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "HR, BP",

@@ -492,13 +492,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "60-80 units/kg",
-                "orderSentence": "Heparin IV infusion (therapeutic) 60-80 units/kg IV"
+                "text": "5000 units q8-12h",
+                "orderSentence": "Heparin 5000 units IV q8-12h"
+              },
+              {
+                "text": "80 units/kg bolus then 18 units/kg/hr",
+                "orderSentence": "Heparin 80 units/kg bolus IV then 18 units/kg/hr"
               }
             ],
             "route": "IV",
             "instructions": "Bolus 60-80 units/kg (max 5000 units); then infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control (typically 60-80 sec)",
-            "orderSentence": "Heparin IV infusion (therapeutic) 60-80 units/kg IV"
+            "orderSentence": "Heparin 5000 units IV q8-12h"
           },
           "contraindications": "Active hemorrhagic infarct; intracranial dissection with SAH; large completed infarct (hemorrhagic transformation risk); uncontrolled BP; active bleeding",
           "monitoring": "aPTT q6h until stable, then q12-24h; platelets q3 days (HIT surveillance); daily neuro checks; signs of bleeding",
@@ -514,13 +518,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg",
-                "orderSentence": "Aspirin loading dose 325 mg PO"
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "325 mg PO/PR loading dose; if tPA was given, wait 24h and obtain CT head before starting. Transition to maintenance 81-325 mg daily",
-            "orderSentence": "Aspirin loading dose 325 mg PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "contraindications": "Active GI bleeding; true aspirin allergy; within 24h of tPA (wait for post-tPA CT)",
           "monitoring": "GI symptoms; bleeding signs",
@@ -536,13 +544,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10-20 mg",
-                "orderSentence": "Labetalol IV 10-20 mg IV"
+                "text": "100 mg BID",
+                "orderSentence": "Labetalol 100 mg IV BID"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Labetalol 200 mg IV BID"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Labetalol 300 mg IV BID"
+              },
+              {
+                "text": "10 mg q10min PRN",
+                "orderSentence": "Labetalol 10 mg IV q10min PRN"
+              },
+              {
+                "text": "20 mg q10min PRN",
+                "orderSentence": "Labetalol 20 mg IV q10min PRN"
               }
             ],
             "route": "IV",
             "instructions": "10-20 mg IV over 1-2 min; may repeat q10-20min; max 300 mg. Target: <185/110 pre-tPA; <180/105 post-tPA; <220/120 if no tPA",
-            "orderSentence": "Labetalol IV 10-20 mg IV"
+            "orderSentence": "Labetalol 100 mg IV BID"
           },
           "contraindications": "Heart block (2nd/3rd degree); severe bradycardia; decompensated HF; asthma/severe COPD",
           "monitoring": "Heart rate; BP continuous monitoring",
@@ -558,13 +582,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg/h",
-                "orderSentence": "Nicardipine IV 5 mg/h IV"
+                "text": "5 mg/hr infusion",
+                "orderSentence": "Nicardipine 5 mg/hr IV infusion"
+              },
+              {
+                "text": "15 mg/hr max infusion",
+                "orderSentence": "Nicardipine 15 mg/hr IV max infusion"
               }
             ],
             "route": "IV",
             "instructions": "5 mg/h IV infusion; increase by 2.5 mg/h q5-15min; max 15 mg/h",
-            "orderSentence": "Nicardipine IV 5 mg/h IV"
+            "orderSentence": "Nicardipine 5 mg/hr IV infusion"
           },
           "contraindications": "Severe aortic stenosis",
           "monitoring": "BP continuous monitoring; headache and flushing common",
@@ -670,13 +698,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg",
-                "orderSentence": "Gabapentin 300 mg PO"
+                "text": "100 mg TID",
+                "orderSentence": "Gabapentin 100 mg PO TID"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg PO TID"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg PO TID"
+              },
+              {
+                "text": "900 mg TID",
+                "orderSentence": "Gabapentin 900 mg PO TID"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Gabapentin 1200 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg PO qHS; titrate by 300 mg q1-3 days; target 900-1800 mg/day divided TID; max 3600 mg/day",
-            "orderSentence": "Gabapentin 300 mg PO"
+            "orderSentence": "Gabapentin 100 mg PO TID"
           },
           "contraindications": "Renal impairment (adjust dose for CrCl <60)",
           "monitoring": "Sedation; dizziness; peripheral edema; renal function",
@@ -692,13 +736,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV/PO q6h PRN nausea",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QT prolongation; serotonin syndrome risk",
           "monitoring": "QTc if risk factors",
@@ -736,13 +784,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Enoxaparin (prophylactic) 40 mg SC"
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily; start within 24-48h; hold if on therapeutic anticoagulation",
-            "orderSentence": "Enoxaparin (prophylactic) 40 mg SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active bleeding; platelets <50K; CrCl <30 (use UFH 5000 units SC q8-12h instead)",
           "monitoring": "Platelets q3 days; renal function",
@@ -804,13 +864,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg + 75 mg",
-                "orderSentence": "Aspirin + Clopidogrel (DAPT) 81 mg + 75 mg PO"
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Aspirin 81 mg daily + Clopidogrel 75 mg daily x 21-90 days; load clopidogrel 300 mg if not previously on it; then transition to single antiplatelet",
-            "orderSentence": "Aspirin + Clopidogrel (DAPT) 81 mg + 75 mg PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "contraindications": "Major stroke (NIHSS >3); high bleeding risk; planned surgery",
           "monitoring": "Bleeding signs; CBC monthly",
@@ -826,13 +890,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg/kg",
-                "orderSentence": "Enoxaparin (therapeutic) 1 mg/kg SC"
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "1 mg/kg SC q12h; adjust for renal function (1 mg/kg daily if CrCl 15-30); bridge to warfarin if needed",
-            "orderSentence": "Enoxaparin (therapeutic) 1 mg/kg SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active bleeding; CrCl <15; HIT; large hemorrhagic infarct",
           "monitoring": "Anti-Xa levels (target 0.5-1.0 IU/mL); platelets q3 days; renal function",
@@ -848,13 +924,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Warfarin 5 mg PO"
+                "text": "2 mg daily",
+                "orderSentence": "Warfarin 2 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Warfarin 5 mg PO daily"
+              },
+              {
+                "text": "7.5 mg daily",
+                "orderSentence": "Warfarin 7.5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Warfarin 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO daily (2-3 mg if elderly, low weight, or drug interactions); target INR 2.0-3.0; overlap with heparin bridge until INR therapeutic x 2 consecutive days",
-            "orderSentence": "Warfarin 5 mg PO"
+            "orderSentence": "Warfarin 2 mg PO daily"
           },
           "contraindications": "Active bleeding; pregnancy (teratogenic); severe hepatic disease; inability to monitor INR",
           "monitoring": "INR daily until stable, then weekly, then monthly; diet counseling (vitamin K consistency); bleeding signs",
@@ -960,13 +1048,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg",
-                "orderSentence": "Aspirin (maintenance) 81 mg PO"
+                "text": "81 mg daily",
+                "orderSentence": "Aspirin 81 mg PO daily"
+              },
+              {
+                "text": "325 mg daily",
+                "orderSentence": "Aspirin 325 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "81 mg PO daily preferred for long-term use; 325 mg daily acceptable; duration minimum 3-6 months; many neurologists continue indefinitely if vascular risk factors present",
-            "orderSentence": "Aspirin (maintenance) 81 mg PO"
+            "orderSentence": "Aspirin 81 mg PO daily"
           },
           "pretreatment": "Baseline CBC; renal function",
           "contraindications": "Active GI bleeding; true aspirin allergy",
@@ -983,13 +1075,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg",
-                "orderSentence": "Clopidogrel (maintenance) 75 mg PO"
+                "text": "75 mg daily",
+                "orderSentence": "Clopidogrel 75 mg PO daily"
+              },
+              {
+                "text": "300 mg loading dose",
+                "orderSentence": "Clopidogrel 300 mg PO loading dose"
               }
             ],
             "route": "PO",
             "instructions": "75 mg PO daily; duration minimum 3-6 months; if aspirin intolerant, may use long-term",
-            "orderSentence": "Clopidogrel (maintenance) 75 mg PO"
+            "orderSentence": "Clopidogrel 75 mg PO daily"
           },
           "pretreatment": "Baseline CBC",
           "contraindications": "Active pathologic bleeding; hypersensitivity to clopidogrel",
@@ -1006,13 +1102,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Apixaban 5 mg PO"
+                "text": "2.5 mg BID",
+                "orderSentence": "Apixaban 2.5 mg PO BID"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Apixaban 5 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO BID standard dose; 2.5 mg BID if >=2 of: age >=80, weight <=60 kg, Cr >=1.5; for concurrent AF or physician preference for anticoagulation strategy",
-            "orderSentence": "Apixaban 5 mg PO"
+            "orderSentence": "Apixaban 2.5 mg PO BID"
           },
           "pretreatment": "Renal function; hepatic function; CBC",
           "contraindications": "Active pathologic bleeding; prosthetic heart valve",
@@ -1029,13 +1129,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40-80 mg",
-                "orderSentence": "Atorvastatin 40-80 mg PO"
+                "text": "10 mg daily",
+                "orderSentence": "Atorvastatin 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Atorvastatin 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Atorvastatin 40 mg PO daily"
+              },
+              {
+                "text": "80 mg daily",
+                "orderSentence": "Atorvastatin 80 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "40-80 mg PO daily; high-intensity statin therapy for secondary stroke prevention",
-            "orderSentence": "Atorvastatin 40-80 mg PO"
+            "orderSentence": "Atorvastatin 10 mg PO daily"
           },
           "pretreatment": "Baseline LFTs; lipid panel",
           "contraindications": "Active liver disease; pregnancy; breastfeeding",
@@ -1052,13 +1164,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5-10 mg",
-                "orderSentence": "Lisinopril 5-10 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Lisinopril 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Lisinopril 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Lisinopril 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Lisinopril 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Lisinopril 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80",
-            "orderSentence": "Lisinopril 5-10 mg PO"
+            "orderSentence": "Lisinopril 2.5 mg PO daily"
           },
           "pretreatment": "Baseline Cr; K+",
           "contraindications": "Bilateral renal artery stenosis; angioedema history; pregnancy",
@@ -1075,13 +1203,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg",
-                "orderSentence": "Amlodipine 5 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Amlodipine 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Amlodipine 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Amlodipine 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO daily; max 10 mg daily",
-            "orderSentence": "Amlodipine 5 mg PO"
+            "orderSentence": "Amlodipine 2.5 mg PO daily"
           },
           "pretreatment": "None required",
           "contraindications": "Severe aortic stenosis (relative)",

@@ -359,13 +359,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg",
-                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+                "text": "0.4 g/kg daily x5 days",
+                "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
+              },
+              {
+                "text": "1 g/kg daily x2 days",
+                "orderSentence": "Ivig 1 g/kg IV daily x2 days"
+              },
+              {
+                "text": "2 g/kg divided over 2-5 days",
+                "orderSentence": "Ivig 2 g/kg IV divided over 2-5 days"
               }
             ],
             "route": "IV",
             "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg) OR 1 g/kg/day x 2 days (faster option). Start within 24h of crisis recognition",
-            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
+            "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
           },
           "contraindications": "IgA deficiency (anaphylaxis risk — use IgA-depleted product); renal failure; thrombotic risk",
           "monitoring": "Vital signs q15min first infusion; renal function daily; headache (aseptic meningitis); thrombotic events",
@@ -493,13 +501,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg",
-                "orderSentence": "Pyridostigmine (when stable/recovering) 30 mg PO"
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine 30 mg PO TID"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine 60 mg PO TID"
+              },
+              {
+                "text": "60 mg QID",
+                "orderSentence": "Pyridostigmine 60 mg PO QID"
+              },
+              {
+                "text": "90 mg TID",
+                "orderSentence": "Pyridostigmine 90 mg PO TID"
+              },
+              {
+                "text": "120 mg TID",
+                "orderSentence": "Pyridostigmine 120 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "Resume at 30 mg PO TID during recovery; titrate by 30 mg/dose q3-5 days to 60 mg PO q4-6h; max 120 mg q4h (rarely needed). Take 30-60 min before meals for dysphagia",
-            "orderSentence": "Pyridostigmine (when stable/recovering) 30 mg PO"
+            "orderSentence": "Pyridostigmine 30 mg PO TID"
           },
           "contraindications": "Cholinergic crisis (excessive dosing), mechanical bowel obstruction",
           "monitoring": "GI symptoms (diarrhea, cramping, salivation = cholinergic excess); reduce dose if muscarinic symptoms",
@@ -559,13 +583,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Ondansetron 4 mg IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV/PO q6h PRN",
-            "orderSentence": "Ondansetron 4 mg IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QT prolongation",
           "monitoring": "QTc monitoring",
@@ -603,13 +631,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Enoxaparin 40 mg SC"
+                "text": "30 mg BID",
+                "orderSentence": "Enoxaparin 30 mg SC BID"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Enoxaparin 40 mg SC daily"
+              },
+              {
+                "text": "1 mg/kg BID",
+                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
+              },
+              {
+                "text": "1.5 mg/kg daily",
+                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily",
-            "orderSentence": "Enoxaparin 40 mg SC"
+            "orderSentence": "Enoxaparin 30 mg SC BID"
           },
           "contraindications": "Active bleeding, CrCl <30 (use UFH)",
           "monitoring": "Platelets q3 days",
@@ -715,13 +755,33 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10-20 mg",
-                "orderSentence": "Prednisone (oral uptitration) 10-20 mg PO"
+                "text": "5 mg daily",
+                "orderSentence": "Prednisone 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Prednisone 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Prednisone 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Prednisone 40 mg PO daily"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Prednisone 60 mg PO daily"
+              },
+              {
+                "text": "1 mg/kg daily",
+                "orderSentence": "Prednisone 1 mg/kg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-20 mg PO daily; increase by 10 mg every 3-5 days to target 1 mg/kg/day (max 60-80 mg); maintain for 4-8 weeks, then slow taper over months",
-            "orderSentence": "Prednisone (oral uptitration) 10-20 mg PO"
+            "orderSentence": "Prednisone 5 mg PO daily"
           },
           "contraindications": "Active infection, uncontrolled DM (relative)",
           "monitoring": "Glucose, BP, weight, bone density, mood; GI prophylaxis; PJP prophylaxis if prolonged high-dose",
@@ -803,13 +863,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2",
-                "orderSentence": "Rituximab 375 mg/m2 IV"
+                "text": "375 mg/m2 weekly x4",
+                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
+              },
+              {
+                "text": "500 mg q6mo",
+                "orderSentence": "Rituximab 500 mg IV q6mo"
+              },
+              {
+                "text": "1000 mg q6mo",
+                "orderSentence": "Rituximab 1000 mg IV q6mo"
               }
             ],
             "route": "IV",
             "instructions": "375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses 2 weeks apart; especially effective in MuSK-positive MG",
-            "orderSentence": "Rituximab 375 mg/m2 IV"
+            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
           },
           "contraindications": "Active infection, hepatitis B (reactivation risk — screen first)",
           "monitoring": "CD20 count, immunoglobulins q3 months; hepatitis B screening; PML risk (rare)",
@@ -827,13 +895,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg",
-                "orderSentence": "Azathioprine 50 mg PO"
+                "text": "50 mg daily",
+                "orderSentence": "Azathioprine 50 mg PO daily"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Azathioprine 100 mg PO daily"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Azathioprine 150 mg PO daily"
+              },
+              {
+                "text": "2-3 mg/kg daily",
+                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg PO daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day; onset of effect 6-12 months",
-            "orderSentence": "Azathioprine 50 mg PO"
+            "orderSentence": "Azathioprine 50 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "TPMT deficiency; pregnancy; concurrent allopurinol (dose reduce by 75%)",
@@ -850,13 +930,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg",
-                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+                "text": "500 mg BID",
+                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg PO BID; increase to 1000 mg PO BID after 2 weeks; max 1500 mg BID; onset 6-12 months",
-            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "Pregnancy (Category D), breastfeeding",
@@ -873,13 +961,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "3 mg",
-                "orderSentence": "Tacrolimus 3 mg PO"
+                "text": "1 mg BID",
+                "orderSentence": "Tacrolimus 1 mg PO BID"
+              },
+              {
+                "text": "2 mg BID",
+                "orderSentence": "Tacrolimus 2 mg PO BID"
+              },
+              {
+                "text": "3 mg BID",
+                "orderSentence": "Tacrolimus 3 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "3 mg PO daily in 2 divided doses; target trough 5-10 ng/mL; onset 3-6 months",
-            "orderSentence": "Tacrolimus 3 mg PO"
+            "orderSentence": "Tacrolimus 1 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "Renal failure, uncontrolled hypertension",
@@ -896,13 +992,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2-3 mg/kg",
-                "orderSentence": "Cyclosporine 2-3 mg/kg PO"
+                "text": "100 mg BID",
+                "orderSentence": "Cyclosporine 100 mg PO BID"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Cyclosporine 150 mg PO BID"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Cyclosporine 200 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 2-3 mg/kg/day PO in 2 divided doses; target trough 100-200 ng/mL; onset 3-6 months",
-            "orderSentence": "Cyclosporine 2-3 mg/kg PO"
+            "orderSentence": "Cyclosporine 100 mg PO BID"
           },
           "pretreatment": "-",
           "contraindications": "Renal failure, uncontrolled HTN, malignancy",

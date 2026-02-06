@@ -839,13 +839,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg daily x 3-5 days",
-                "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg daily x 3-5 days IV"
+                "text": "500 mg daily",
+                "orderSentence": "Methylprednisolone 500 mg IV daily"
+              },
+              {
+                "text": "1000 mg daily",
+                "orderSentence": "Methylprednisolone 1000 mg IV daily"
+              },
+              {
+                "text": "1 g daily x3-5 days",
+                "orderSentence": "Methylprednisolone 1 g IV daily x3-5 days"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily for 3-5 days; infuse over 1-2 hours; begin upon strong clinical suspicion or biopsy-confirmed PACNS",
-            "orderSentence": "Methylprednisolone IV (CPT 96365) 1000 mg daily x 3-5 days IV"
+            "orderSentence": "Methylprednisolone 500 mg IV daily"
           },
           "contraindications": "Active untreated infection (especially VZV vasculopathy must be excluded); uncontrolled diabetes; active GI bleeding; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180 mg/dL); blood pressure; mood and sleep disturbance; GI prophylaxis; I/O",
@@ -905,13 +913,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8h",
-                "orderSentence": "Heparin (DVT prophylaxis) 5000 units q8h SC"
+                "text": "5000 units q8-12h",
+                "orderSentence": "Heparin 5000 units SC q8-12h"
+              },
+              {
+                "text": "80 units/kg bolus then 18 units/kg/hr",
+                "orderSentence": "Heparin 80 units/kg bolus SC then 18 units/kg/hr"
               }
             ],
             "route": "SC",
             "instructions": "5000 units SC q8h; use enoxaparin 40 mg SC daily if no contraindication",
-            "orderSentence": "Heparin (DVT prophylaxis) 5000 units q8h SC"
+            "orderSentence": "Heparin 5000 units SC q8-12h"
           },
           "contraindications": "Active hemorrhage; recent brain biopsy (hold 24-48h); hemorrhagic infarction; thrombocytopenia",
           "monitoring": "Platelet count; signs of bleeding",
@@ -953,13 +965,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000-1500 mg BID",
-                "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000-1500 mg BID IV"
+                "text": "250 mg BID",
+                "orderSentence": "Levetiracetam 250 mg IV BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam 500 mg IV BID"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam 750 mg IV BID"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam 1000 mg IV BID"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Levetiracetam 1500 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "Load: 1000-1500 mg IV; Maintenance: 500-1500 mg IV/PO BID; max 3000 mg/day",
-            "orderSentence": "Levetiracetam (seizure prophylaxis/treatment) 1000-1500 mg BID IV"
+            "orderSentence": "Levetiracetam 250 mg IV BID"
           },
           "contraindications": "Renal impairment (dose adjust per CrCl)",
           "monitoring": "Behavioral changes; renal function; suicidality",
@@ -1021,13 +1049,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg q6h PRN",
-                "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+                "text": "5 mg TID",
+                "orderSentence": "Metoclopramide 5 mg IV TID"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Metoclopramide 10 mg IV TID"
+              },
+              {
+                "text": "10 mg QID",
+                "orderSentence": "Metoclopramide 10 mg IV QID"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV q6-8h PRN; max 30 mg/day",
-            "orderSentence": "Metoclopramide 10 mg q6h PRN IV"
+            "orderSentence": "Metoclopramide 5 mg IV TID"
           },
           "contraindications": "Parkinsonian features; bowel obstruction; seizure history (relative)",
           "monitoring": "Extrapyramidal symptoms; tardive dyskinesia with prolonged use",
@@ -1043,13 +1079,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h PRN",
-                "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+                "text": "4 mg q8h PRN",
+                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+              },
+              {
+                "text": "8 mg q8h PRN",
+                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV q6-8h PRN; max 16 mg/day",
-            "orderSentence": "Ondansetron 4 mg q6h PRN IV"
+            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
           },
           "contraindications": "QTc >500 ms; congenital long QT syndrome",
           "monitoring": "QTc if risk factors",
@@ -1161,13 +1201,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "3-5 mg qHS",
-                "orderSentence": "Melatonin 3-5 mg qHS PO"
+                "text": "1 mg QHS",
+                "orderSentence": "Melatonin 1 mg PO QHS"
+              },
+              {
+                "text": "3 mg QHS",
+                "orderSentence": "Melatonin 3 mg PO QHS"
+              },
+              {
+                "text": "5 mg QHS",
+                "orderSentence": "Melatonin 5 mg PO QHS"
+              },
+              {
+                "text": "10 mg QHS",
+                "orderSentence": "Melatonin 10 mg PO QHS"
               }
             ],
             "route": "PO",
             "instructions": "3-5 mg PO at bedtime; up to 10 mg",
-            "orderSentence": "Melatonin 3-5 mg qHS PO"
+            "orderSentence": "Melatonin 1 mg PO QHS"
           },
           "contraindications": "None significant",
           "monitoring": "Sleep quality",
@@ -1241,13 +1293,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15-25 mg weekly",
-                "orderSentence": "Methotrexate 15-25 mg weekly PO"
+                "text": "7.5 mg weekly",
+                "orderSentence": "Methotrexate 7.5 mg PO weekly"
+              },
+              {
+                "text": "10 mg weekly",
+                "orderSentence": "Methotrexate 10 mg PO weekly"
+              },
+              {
+                "text": "15 mg weekly",
+                "orderSentence": "Methotrexate 15 mg PO weekly"
+              },
+              {
+                "text": "20 mg weekly",
+                "orderSentence": "Methotrexate 20 mg PO weekly"
+              },
+              {
+                "text": "25 mg weekly",
+                "orderSentence": "Methotrexate 25 mg PO weekly"
               }
             ],
             "route": "PO",
             "instructions": "Start 15 mg PO/SC weekly; increase by 5 mg q2-4 weeks to target 20-25 mg weekly; give folic acid 1 mg PO daily (except on methotrexate day)",
-            "orderSentence": "Methotrexate 15-25 mg weekly PO"
+            "orderSentence": "Methotrexate 7.5 mg PO weekly"
           },
           "contraindications": "Hepatic disease; renal impairment (GFR <30); pregnancy; active infection; interstitial lung disease",
           "monitoring": "CBC q2-4 weeks x 3 months, then monthly; LFTs; renal function; pulmonary symptoms (pneumonitis); mucositis",
@@ -1311,13 +1379,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x 5 days",
-                "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg daily x 5 days IV"
+                "text": "0.4 g/kg daily x5 days",
+                "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
+              },
+              {
+                "text": "1 g/kg daily x2 days",
+                "orderSentence": "Ivig 1 g/kg IV daily x2 days"
+              },
+              {
+                "text": "2 g/kg divided over 2-5 days",
+                "orderSentence": "Ivig 2 g/kg IV divided over 2-5 days"
               }
             ],
             "route": "IV",
             "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol",
-            "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg daily x 5 days IV"
+            "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
           },
           "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure",
           "monitoring": "Renal function daily; headache (aseptic meningitis); thrombosis risk; volume overload; check IgA level before first dose",
@@ -1335,13 +1411,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "750 mg/m2 monthly x 3-6 months",
-                "orderSentence": "Cyclophosphamide IV (induction) 750 mg/m2 monthly x 3-6 months IV"
+                "text": "500 mg/m2 monthly",
+                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
+              },
+              {
+                "text": "1000 mg/m2 monthly",
+                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
               }
             ],
             "route": "IV",
             "instructions": "750 mg/m2 IV monthly x 3-6 months (typical 6 cycles); pre-hydrate with 1L NS; administer with MESNA for uroprotection; reduce dose for age >65, renal impairment, leukopenia",
-            "orderSentence": "Cyclophosphamide IV (induction) 750 mg/m2 monthly x 3-6 months IV"
+            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
           },
           "pretreatment": "CBC (ANC >1500, Plt >100K); BMP (renal function); LFTs; urinalysis; hepatitis B/C screen; QuantiFERON-TB; pregnancy test; fertility counseling; sperm/oocyte banking discussion",
           "contraindications": "Pregnancy; active infection; bone marrow failure; bladder outlet obstruction; prior hemorrhagic cystitis; severe leukopenia",
@@ -1358,13 +1438,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg/kg daily",
-                "orderSentence": "Cyclophosphamide PO (alternative induction) 2 mg/kg daily PO"
+                "text": "500 mg/m2 monthly",
+                "orderSentence": "Cyclophosphamide 500 mg/m2 PO monthly"
+              },
+              {
+                "text": "1000 mg/m2 monthly",
+                "orderSentence": "Cyclophosphamide 1000 mg/m2 PO monthly"
               }
             ],
             "route": "PO",
             "instructions": "2 mg/kg/day PO (max 200 mg/day); round to nearest 25 mg; duration 3-6 months then transition to maintenance",
-            "orderSentence": "Cyclophosphamide PO (alternative induction) 2 mg/kg daily PO"
+            "orderSentence": "Cyclophosphamide 500 mg/m2 PO monthly"
           },
           "pretreatment": "Same as IV cyclophosphamide",
           "contraindications": "Same as IV cyclophosphamide; higher cumulative toxicity risk",
