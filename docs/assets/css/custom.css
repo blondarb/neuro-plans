@@ -1194,69 +1194,50 @@ h3:has(.inline-comment-btn) {
 
 /* ========================================
    VENUE COLUMNS (ED, HOSP, OPD, ICU)
-   Target by position depending on table type
+   JS adds data-venue-pos attribute:
+     "last4" = venue cols are last 4 (treatment tables + Layout 2 workup)
+     "mid"   = venue cols are positions 2-5 (Layout 1 workup/imaging)
    ======================================== */
 
-/* --- Treatment tables (10+ columns): venue cols are last 4 --- */
-.md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
-.md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4) {
+/* --- Venue columns at end of table (last 4) --- */
+.md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4),
+.md-typeset table[data-venue-pos="last4"] td:nth-last-child(-n+4) {
   text-align: center;
   white-space: nowrap;
-  min-width: 35px;
-  max-width: 55px;
+  min-width: 45px;
+  max-width: 65px;
   padding: 4px 5px;
   font-size: 0.65rem;
   font-weight: 600;
 }
 
-.md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4) {
+.md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4) {
   background: #ccfbf1;
   color: #0f766e;
 }
 
-[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4) {
+[data-md-color-scheme="slate"] .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4) {
   background: #475569;
 }
 
-/* --- Workup/imaging tables (7-9 columns): venue cols are positions 2-5 --- */
-.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
-.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5) {
+/* --- Venue columns in middle of table (positions 2-5) --- */
+.md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5),
+.md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5) {
   text-align: center;
   white-space: nowrap;
-  min-width: 55px;
-  max-width: 75px;
+  min-width: 45px;
+  max-width: 65px;
   padding: 4px 6px;
   font-size: 0.65rem;
   font-weight: 600;
 }
 
-.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5) {
+.md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5) {
   background: #ccfbf1;
   color: #0f766e;
 }
 
-[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5) {
-  background: #475569;
-}
-
-/* --- 6-column workup tables: venue cols are positions 2-4 --- */
-.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
-.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
-  text-align: center;
-  white-space: nowrap;
-  min-width: 55px;
-  max-width: 75px;
-  padding: 4px 6px;
-  font-size: 0.65rem;
-  font-weight: 600;
-}
-
-.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4) {
-  background: #ccfbf1;
-  color: #0f766e;
-}
-
-[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4) {
+[data-md-color-scheme="slate"] .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5) {
   background: #475569;
 }
 
@@ -1280,29 +1261,20 @@ h3:has(.inline-comment-btn) {
     padding: 1px 2px;
   }
 
-  /* Venue columns compact on medium screens - treatment tables (10+ cols) */
-  .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
-  .md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4) {
-    min-width: 30px;
-    max-width: 45px;
+  /* Venue columns compact on medium screens - last 4 */
+  .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4),
+  .md-typeset table[data-venue-pos="last4"] td:nth-last-child(-n+4) {
+    min-width: 35px;
+    max-width: 50px;
     padding: 3px 4px;
     font-size: 0.6rem;
   }
 
-  /* Venue columns compact on medium screens - workup/imaging tables (7-9 cols) */
-  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
-  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5) {
-    min-width: 50px;
-    max-width: 65px;
-    padding: 3px 5px;
-    font-size: 0.6rem;
-  }
-
-  /* Venue columns compact on medium screens - 6-column workup tables */
-  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
-  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
-    min-width: 50px;
-    max-width: 65px;
+  /* Venue columns compact on medium screens - mid positions */
+  .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5),
+  .md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5) {
+    min-width: 40px;
+    max-width: 55px;
     padding: 3px 5px;
     font-size: 0.6rem;
   }
@@ -1345,12 +1317,10 @@ h3:has(.inline-comment-btn) {
   }
 
   /* Relax venue column widths on mobile so wrapped text (ROUTINE etc.) fits */
-  .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
-  .md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4),
-  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
-  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5),
-  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
-  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
+  .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4),
+  .md-typeset table[data-venue-pos="last4"] td:nth-last-child(-n+4),
+  .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5),
+  .md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5) {
     min-width: 40px;
     max-width: 60px;
   }
