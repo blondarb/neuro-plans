@@ -28,5 +28,8 @@ jobs:
       - name: Lint citation PMIDs
         run: python scripts/verify_citations.py --all --lint
 
+      - name: Lint ICD-10 codes
+        run: python scripts/validate_icd10.py --all --lint --quiet
+
       - name: Validate build metadata
         run: python scripts/build.py --strict
