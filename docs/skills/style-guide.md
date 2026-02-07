@@ -34,27 +34,45 @@ All plans follow an 8-section format:
 
 ## Table Format
 
-Use the multi-column setting-priority format. **IMPORTANT:** Venue columns (ED, HOSP, OPD, ICU) must be the **last 4 columns** for CSS styling to work correctly.
+Use the multi-column setting-priority format. Venue columns (ED, HOSP, OPD, ICU) can appear in different positions depending on the table type. A JavaScript detection script (`table-layout.js`) reads the header text and applies the correct CSS styling automatically.
 
-### Labs/Studies Table
+### Supported Table Layouts
+
+**Layout 1 — Venue in middle (workup/imaging, 7-8 columns):**
+
+```markdown
+| Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
+```
+
+**Layout 2 — Venue at end (workup/imaging, 7-8 columns):**
 
 ```markdown
 | Test | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|------|-----------|----------------|:--:|:----:|:---:|:---:|
-| CBC  | Infection screen | Normal | STAT | STAT | ROUTINE | STAT |
 ```
+
+**Layout 3 — Venue at end (treatment tables, 10-11 columns):**
+
+```markdown
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+```
+
+**Layout 4 — 3 venues, no ICU (LP/specialized, 6 columns):**
+
+```markdown
+| Study | ED | HOSP | OPD | Rationale | Target Finding |
+```
+
+> ⚠️ **Column Order Matters:** Use one of the layouts above. The JS detects venue columns by header text (ED, HOSP, OPD, ICU) and applies compact styling. Non-standard column orders may cause rendering issues.
 
 ### Treatment Table
 
 Treatment tables should include an **Indication** column to explain why the treatment is used. This displays as a hover icon (💊) in the clinical tool.
 
 ```markdown
-| Treatment | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Drug Name | Symptom relief | 10 mg PO daily | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Drug Name | PO | Symptom relief | 10 mg :: PO :: daily :: Full instructions | Allergy | LFTs | STAT | STAT | ROUTINE | STAT |
 ```
-
-> ⚠️ **Column Order Matters:** The CSS applies narrow column widths to the last 4 columns, expecting them to be ED/HOSP/OPD/ICU. Incorrect column order will cause rendering issues.
 
 > 💡 **Indication Column:** The Indication field appears as a teal pill icon (💊) in the clinical tool. Hover to see why this treatment is used for this condition.
 
@@ -69,10 +87,10 @@ Treatment tables should include an **Indication** column to explain why the trea
 **Timing:** URGENT if [condition]; ROUTINE for [condition]
 **Volume Required:** 10-15 mL (standard diagnostic)
 
-| Study | Rationale | Target Finding | ED | HOSP | OPD | ICU |
-|-------|-----------|----------------|:--:|:----:|:---:|:---:|
-| Opening pressure | Rule out elevated ICP | 10-20 cm H2O | URGENT | ROUTINE | ROUTINE | - |
-| Cell count (tubes 1 and 4) | Inflammation, infection | WBC <5, RBC 0 | URGENT | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | Rationale | Target Finding |
+|-------|:--:|:----:|:---:|-----------|----------------|
+| Opening pressure | STAT | ROUTINE | - | Rule out elevated ICP | 10-20 cm H2O |
+| Cell count (tubes 1 and 4) | STAT | ROUTINE | - | Inflammation, infection | WBC <5, RBC 0 |
 
 **Special Handling:** [Notes about transport, timing]
 **Contraindications:** [List contraindications]

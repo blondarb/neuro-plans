@@ -75,6 +75,16 @@ All treatment tables use 10 columns:
 Structured dosing: `[dose] :: [route] :: [frequency] :: [full_instructions]`
 Use `::` not `|`. First field = starting dose only.
 
+## Table Layout Detection
+
+`docs/assets/js/table-layout.js` detects venue column positions by reading header text and adds `data-venue-pos` attributes. CSS targets these attributes instead of column count. Three patterns:
+
+- `last4` — venue cols are last 4 (treatment tables, some workup tables)
+- `mid` — 4 venue cols at positions 2-5 (workup/imaging with ICU)
+- `mid3` — 3 venue cols at positions 2-4 (LP/workup without ICU)
+
+See `docs/skills/style-guide.md` for supported column layouts.
+
 ## Commands
 
 ```bash
