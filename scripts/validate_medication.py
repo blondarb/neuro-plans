@@ -472,7 +472,7 @@ def validate_central_db(verbose: bool = True) -> dict:
         else:
             results["invalid"] += 1
 
-        if validation.get("openfda", {}).get("boxed_warning"):
+        if (validation.get("openfda") or {}).get("boxed_warning"):
             results["with_black_box"] += 1
 
     # Summary
@@ -599,7 +599,7 @@ def batch_validate(medications: list, verbose: bool = True) -> dict:
             results["invalid"] += 1
             results["invalid_list"].append(med_name)
 
-        if validation.get("openfda", {}).get("boxed_warning"):
+        if (validation.get("openfda") or {}).get("boxed_warning"):
             results["with_black_box"] += 1
 
     elapsed = time.time() - start_time
