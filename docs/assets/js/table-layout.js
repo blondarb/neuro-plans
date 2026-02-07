@@ -48,7 +48,7 @@
           return VENUE_HEADERS.indexOf(t) !== -1;
         });
         if (cols2to4AreVenue) {
-          table.setAttribute('data-venue-pos', 'mid');
+          table.setAttribute('data-venue-pos', 'mid3');
           return;
         }
       }
