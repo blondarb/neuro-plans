@@ -1204,8 +1204,10 @@ h3:has(.inline-comment-btn) {
 .md-typeset table[data-venue-pos="last4"] td:nth-last-child(-n+4) {
   text-align: center;
   white-space: nowrap;
-  min-width: 45px;
-  max-width: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 50px;
+  max-width: 70px;
   padding: 4px 5px;
   font-size: 0.65rem;
   font-weight: 600;
@@ -1225,8 +1227,10 @@ h3:has(.inline-comment-btn) {
 .md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5) {
   text-align: center;
   white-space: nowrap;
-  min-width: 45px;
-  max-width: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 50px;
+  max-width: 70px;
   padding: 4px 6px;
   font-size: 0.65rem;
   font-weight: 600;
@@ -1264,8 +1268,8 @@ h3:has(.inline-comment-btn) {
   /* Venue columns compact on medium screens - last 4 */
   .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4),
   .md-typeset table[data-venue-pos="last4"] td:nth-last-child(-n+4) {
-    min-width: 35px;
-    max-width: 50px;
+    min-width: 50px;
+    max-width: 70px;
     padding: 3px 4px;
     font-size: 0.6rem;
   }
@@ -1273,8 +1277,8 @@ h3:has(.inline-comment-btn) {
   /* Venue columns compact on medium screens - mid positions */
   .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5),
   .md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5) {
-    min-width: 40px;
-    max-width: 55px;
+    min-width: 50px;
+    max-width: 70px;
     padding: 3px 5px;
     font-size: 0.6rem;
   }
