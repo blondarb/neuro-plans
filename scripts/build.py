@@ -8,8 +8,10 @@ This script:
 3. Extracts metadata from YAML frontmatter
 """
 
+import argparse
 import os
 import re
+import sys
 import yaml
 from pathlib import Path
 from datetime import datetime
@@ -135,13 +137,43 @@ def categorize_plans(plans):
 
     return categories
 
+def validate_frontmatter(plans):
+    """Check that all plans have required frontmatter fields.
+
+    Returns a list of (filename, missing_fields) tuples for plans with issues.
+    """
+    required = ['title', 'version']
+    errors = []
+    for plan in plans:
+        missing = [f for f in required if not plan.get(f)]
+        if missing:
+            errors.append((plan['filename'], missing))
+    return errors
+
+
 def main():
     """Main build function."""
+    parser = argparse.ArgumentParser(description='Build neuro-clinical-plans site')
+    parser.add_argument('--strict', action='store_true',
+                        help='Exit non-zero if any plan is missing required frontmatter')
+    args = parser.parse_args()
+
     print("Building neuro-clinical-plans site...")
 
     # Generate plans data
     plans = generate_plans_index()
     print(f"Found {len(plans)} plans")
+
+    # Strict mode: validate required frontmatter
+    if args.strict:
+        errors = validate_frontmatter(plans)
+        if errors:
+            print(f"\nERROR: {len(errors)} plan(s) missing required frontmatter:")
+            for filename, missing in errors:
+                print(f"  {filename}.md — missing: {', '.join(missing)}")
+            sys.exit(1)
+        else:
+            print("Frontmatter validation passed")
 
     # Categorize plans
     categories = categorize_plans(plans)

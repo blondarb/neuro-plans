@@ -1,0 +1,41 @@
+name: API Validation (Scheduled)
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 6 AM UTC
+  workflow_dispatch:
+
+jobs:
+  api-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements-api.txt
+
+      - name: Verify citations against PubMed
+        continue-on-error: true
+        run: python scripts/verify_citations.py --all --verify --cache
+
+      - name: Validate medication database
+        continue-on-error: true
+        run: |
+          python scripts/validate_medication.py --validate-db \
+            --save-report medication-report.md
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-reports
+          path: |
+            medication-report.md
+            docs/data/pmid-cache.json
+          retention-days: 30

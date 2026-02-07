@@ -1,0 +1,32 @@
+name: Validate Plans
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate plan structure
+        run: python scripts/generate_json.py --all --validate-only --quiet
+
+      - name: Check markdown-JSON parity
+        run: python scripts/generate_json.py --all --check-parity --fail-on-parity --quiet
+
+      - name: Lint citation PMIDs
+        run: python scripts/verify_citations.py --all --lint
+
+      - name: Validate build metadata
+        run: python scripts/build.py --strict

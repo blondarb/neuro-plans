@@ -28,12 +28,19 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip install mkdocs-material
-          pip install pyyaml
+        run: pip install -r requirements.txt
+
+      - name: Validate plan structure
+        run: python scripts/generate_json.py --all --validate-only --quiet
+
+      - name: Check markdown-JSON parity
+        run: python scripts/generate_json.py --all --check-parity --fail-on-parity --quiet
+
+      - name: Lint citation PMIDs
+        run: python scripts/verify_citations.py --all --lint
 
       - name: Run build script
-        run: python scripts/build.py
+        run: python scripts/build.py --strict
 
       - name: Build MkDocs site
         run: mkdocs build
