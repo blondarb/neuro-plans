@@ -109,7 +109,7 @@
 }
 
 .comment-form button {
-  background: #4f46e5;
+  background: #0d9488;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -120,7 +120,7 @@
 }
 
 .comment-form button:hover {
-  background: #4338ca;
+  background: #0f766e;
 }
 
 .comment-form button:disabled {
@@ -184,8 +184,8 @@
 .comment-section-tag {
   display: inline-block;
   padding: 2px 8px;
-  background: #e0e7ff;
-  color: #3730a3;
+  background: #ccfbf1;
+  color: #115e59;
   border-radius: 4px;
   font-size: 0.75rem;
   margin-bottom: 8px;
@@ -253,14 +253,14 @@
 }
 
 .section-comment-btn:hover {
-  background: #f1f5f9;
-  color: #4f46e5;
-  border-color: #4f46e5;
+  background: #f0fdfa;
+  color: #0d9488;
+  border-color: #0d9488;
 }
 
 /* Review Mode Header */
 .review-mode-banner {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
   color: white;
   padding: 16px 20px;
   border-radius: 8px;
@@ -329,8 +329,9 @@
 }
 
 .md-typeset table:not([class]) th {
-  background: #f1f5f9;
+  background: #f0fdfa;
   font-weight: 600;
+  color: #115e59;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
@@ -344,7 +345,7 @@
   height: 20px;
   border: 2px solid #e2e8f0;
   border-radius: 50%;
-  border-top-color: #4f46e5;
+  border-top-color: #0d9488;
   animation: spin 0.8s linear infinite;
 }
 
@@ -370,7 +371,7 @@
 
 /* Highlight the Clinical Tool link in nav */
 .md-nav__link[href*="clinical"] {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
   color: white !important;
   padding: 8px 12px;
   border-radius: 6px;
@@ -379,7 +380,7 @@
 }
 
 .md-nav__link[href*="clinical"]:hover {
-  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
 }
 
 .md-nav__link[href*="clinical"]::before {
@@ -467,7 +468,7 @@
   min-width: 18px;
   height: 18px;
   padding: 0 5px;
-  background: #4f46e5;
+  background: #0d9488;
   color: white;
   border-radius: 10px;
   font-size: 0.7rem;
@@ -595,7 +596,7 @@ h3:has(.inline-comment-btn) {
 }
 
 .popup-submit {
-  background: #4f46e5;
+  background: #0d9488;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -607,7 +608,7 @@ h3:has(.inline-comment-btn) {
 }
 
 .popup-submit:hover {
-  background: #4338ca;
+  background: #0f766e;
 }
 
 .popup-submit:disabled {
@@ -662,7 +663,7 @@ h3:has(.inline-comment-btn) {
   margin-bottom: 16px;
   padding: 8px 12px;
   background: #f0f9ff;
-  border-left: 3px solid #4f46e5;
+  border-left: 3px solid #0d9488;
   border-radius: 4px;
 }
 
@@ -743,7 +744,7 @@ h3:has(.inline-comment-btn) {
   height: 18px;
   padding: 0 5px;
   margin-left: 8px;
-  background: #4f46e5;
+  background: #0d9488;
   color: white;
   border-radius: 10px;
   font-size: 0.65rem;
@@ -757,7 +758,7 @@ h3:has(.inline-comment-btn) {
 
 .toc-comment-badge:hover {
   transform: scale(1.15);
-  background: #4338ca;
+  background: #0f766e;
 }
 
 /* Tooltip for TOC badge */
@@ -804,11 +805,11 @@ h3:has(.inline-comment-btn) {
 }
 
 [data-md-color-scheme="slate"] .toc-comment-badge {
-  background: #6366f1;
+  background: #14b8a6;
 }
 
 [data-md-color-scheme="slate"] .toc-comment-badge:hover {
-  background: #818cf8;
+  background: #2dd4bf;
 }
 
 /* ========================================
@@ -1216,7 +1217,8 @@ h3:has(.inline-comment-btn) {
 /* Venue column headers - slightly smaller (only for tables with 5+ columns) */
 .md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4) {
   font-size: 0.65rem;
-  background: #e2e8f0;
+  background: #ccfbf1;
+  color: #0f766e;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4) {
@@ -1282,4 +1284,36 @@ h3:has(.inline-comment-btn) {
     min-width: auto;
     max-width: none;
   }
+}
+
+/* ========================================
+   VISUAL REFRESH - Teal Palette Additions
+   ======================================== */
+
+/* Table row striping */
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: #f0fdfa;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: #1e293b;
+}
+
+/* Active navigation item accent */
+.md-nav__item--active > .md-nav__link {
+  border-left: 3px solid #0d9488;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
+  border-left: 3px solid #14b8a6;
+}
+
+/* Nav hover refinement */
+.md-nav__item .md-nav__link:hover {
+  background: #f0fdfa;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link:hover {
+  background: #1e293b;
 }

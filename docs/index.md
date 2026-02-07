@@ -4,19 +4,29 @@ title: Home
 
 # Neuro Clinical Plans
 
-Evidence-based clinical decision support templates for neurological diagnoses.
+Evidence-based clinical decision support templates for neurological diagnoses — built for teleneurohospitalists.
 
-## What This Is
+<div class="grid cards" markdown>
 
-A library of structured clinical recommendations for neurologists and hospitalists, covering:
+- :material-stethoscope: **124 Approved Plans**
 
-- **Laboratory workup** - Essential and extended testing
-- **Imaging studies** - When and what to order
-- **Treatment protocols** - Acute, maintenance, and disease-modifying therapies
-- **Monitoring parameters** - What to track and when
-- **Disposition criteria** - Admission, discharge, and follow-up guidance
+    Covering 19 neurological categories with structured workup, treatment, and disposition guidance
 
-Each plan is organized by care setting (ED, Hospital, Outpatient, ICU) with priority levels (STAT, URGENT, ROUTINE).
+- :material-hospital-building: **4 Care Settings**
+
+    Every plan organized by ED, Hospital, Outpatient, and ICU with setting-appropriate priorities
+
+- :material-shield-check: **90%+ Validation**
+
+    Scored across completeness, accuracy, safety, objectivity, setting appropriateness, and usability
+
+</div>
+
+## Interactive Clinical Tool
+
+Build custom clinical plans by selecting items from evidence-based templates, filtered by care setting and priority level.
+
+[:material-tools: **Open the Clinical Plan Builder**](clinical/index.html){ .md-button .md-button--primary }
 
 ## Quick Links
 
@@ -46,22 +56,23 @@ Each plan is organized by care setting (ED, Hospital, Outpatient, ICU) with prio
 
 All plans target **90%+ validation score** across six domains: completeness, accuracy, safety, objectivity, setting appropriateness, and usability.
 
-## Current Status
+## Coverage at a Glance
 
-| Metric | Count |
-|--------|-------|
-| Approved Plans | 124 |
-| Categories | 19 |
-| Draft Queue | 0 |
+| Category | Examples |
+|----------|----------|
+| Cerebrovascular | Ischemic stroke, hemorrhagic stroke, TIA, SAH |
+| Seizure/Epilepsy | New-onset seizure, status epilepticus |
+| Neuromuscular | Myasthenia gravis, GBS, ALS |
+| Movement Disorders | Parkinson's, essential tremor, dystonia |
+| Demyelinating | Multiple sclerosis, NMOSD, ADEM |
+| Headache | Migraine, cluster, thunderclap |
+| Infections | Meningitis, encephalitis, brain abscess |
+| Neuro-Oncology | Brain tumors, leptomeningeal disease |
+| Autoimmune | Autoimmune encephalitis, CNS vasculitis |
+| Neurocritical Care | Raised ICP, brain death evaluation |
 
 See the [Plans Index](plans/index.md) for the full list or the [Plan Queue](drafts/queue.md) for approval history.
-
-## Disclaimer
 
 !!! warning "Clinical Use Notice"
 
     These templates are decision support tools, not clinical guidelines. They require physician review and adaptation to individual patient circumstances. Always apply clinical judgment.
-
----
-
-*Developed for teleneurohospitalist clinical decision support.*

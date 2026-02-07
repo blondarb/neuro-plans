@@ -343,6 +343,140 @@ class MedicationResolver:
 
         return enriched
 
+    def generate_treatment_row(self, name: str, context_id: Optional[str] = None,
+                               include_header: bool = False) -> Optional[str]:
+        """Generate a 10-column markdown treatment table row.
+
+        Format: | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+
+        Dosing uses structured format: dose_options :: route :: :: full_instructions
+
+        Args:
+            name: Medication name
+            context_id: Specific context/indication ID. If None, uses first available context.
+            include_header: If True, prepend the table header row.
+
+        Returns:
+            Markdown table row string, or None if medication not found.
+        """
+        self._load()
+        normalized = self._normalize_name(name)
+
+        if normalized not in self._medications:
+            return None
+
+        med = self._medications[normalized]
+        contexts = med.get('contexts', {})
+
+        if not contexts:
+            return None
+
+        # Select context
+        if context_id and context_id in contexts:
+            ctx = contexts[context_id]
+        elif context_id:
+            # Try fuzzy match on indication text
+            for cid, cdata in contexts.items():
+                if context_id.lower() in cdata.get('indication', '').lower():
+                    ctx = cdata
+                    context_id = cid
+                    break
+            else:
+                # Fall back to first context
+                context_id = list(contexts.keys())[0]
+                ctx = contexts[context_id]
+        else:
+            context_id = list(contexts.keys())[0]
+            ctx = contexts[context_id]
+
+        # Build display name
+        display_name = med.get('name', name)
+
+        # Build route
+        route = med.get('routes', ['-'])[0] if med.get('routes') else '-'
+        # If context has a dosing route, prefer that
+        dose_options = ctx.get('doseOptions', [])
+
+        # Build indication
+        indication = ctx.get('indication', '-')
+
+        # Build structured dosing string
+        dosing_str = self._build_dosing_string(dose_options, route, ctx)
+
+        # Build contraindications
+        contras = med.get('safety', {}).get('contraindications', [])
+        contras_str = '; '.join(contras[:5]) if contras else '-'  # Limit to 5 for table width
+
+        # Build monitoring
+        monitoring = med.get('monitoring', {}).get('ongoing', [])
+        monitoring_str = '; '.join(monitoring[:5]) if monitoring else '-'
+
+        # Build settings
+        settings = ctx.get('settings', {})
+        ed = settings.get('ED', '-')
+        hosp = settings.get('HOSP', '-')
+        opd = settings.get('OPD', '-')
+        icu = settings.get('ICU', '-')
+
+        # Assemble row
+        row = f"| {display_name} | {route} | {indication} | {dosing_str} | {contras_str} | {monitoring_str} | {ed} | {hosp} | {opd} | {icu} |"
+
+        if include_header:
+            header = "| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |"
+            separator = "| --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |"
+            return f"{header}\n{separator}\n{row}"
+
+        return row
+
+    def _build_dosing_string(self, dose_options: list, route: str, ctx: dict) -> str:
+        """Build the structured dosing string in :: format.
+
+        Format: dose_options :: route :: :: full_instructions
+        """
+        instructions = ctx.get('notes', '') or ctx.get('titration', '')
+        if not instructions:
+            # Build from startingDose + maxDose
+            parts = []
+            if ctx.get('startingDose'):
+                parts.append(f"Start {ctx['startingDose']}")
+            if ctx.get('titration'):
+                parts.append(ctx['titration'])
+            if ctx.get('maxDose'):
+                parts.append(f"max {ctx['maxDose']}")
+            instructions = '; '.join(parts) if parts else '-'
+
+        if dose_options:
+            # Join dose option texts with semicolons
+            dose_texts = [opt.get('text', '') for opt in dose_options if opt.get('text')]
+            dose_field = '; '.join(dose_texts) if dose_texts else '-'
+            return f"{dose_field} :: {route} :: :: {instructions}"
+        else:
+            return instructions
+
+    def generate_treatment_rows(self, name: str, include_header: bool = False) -> list:
+        """Generate treatment table rows for ALL contexts of a medication.
+
+        Returns:
+            List of markdown row strings, one per context.
+        """
+        self._load()
+        normalized = self._normalize_name(name)
+
+        if normalized not in self._medications:
+            return []
+
+        med = self._medications[normalized]
+        contexts = med.get('contexts', {})
+
+        rows = []
+        for i, ctx_id in enumerate(contexts):
+            row = self.generate_treatment_row(name, context_id=ctx_id,
+                                              include_header=(include_header and i == 0))
+            if row:
+                rows.append(row)
+
+        return rows
+
     def list_medications(self) -> list:
         """List all medication IDs in the database."""
         self._load()

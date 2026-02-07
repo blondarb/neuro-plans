@@ -67,9 +67,9 @@ CHANGELOG:
      * Centralized color and spacing definitions for consistent theming
      */
     :root {
-      --primary: #4f46e5;
-      --primary-dark: #4338ca;
-      --primary-light: #e0e7ff;
+      --primary: #0d9488;
+      --primary-dark: #0f766e;
+      --primary-light: #ccfbf1;
       --stat: #dc2626;
       --stat-bg: #fee2e2;
       --urgent: #ea580c;
@@ -110,11 +110,12 @@ CHANGELOG:
        ===================================================== */
     .header {
       background: var(--bg);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 3px solid var(--primary);
       padding: 16px 20px;
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
     .header-content {
       max-width: 1400px;
@@ -270,8 +271,8 @@ CHANGELOG:
       border: 2px solid transparent;
       transition: all 0.15s;
     }
-    .item:hover { background: #f0f0f5; }
-    .item.selected { background: var(--primary-light); border-color: #a5b4fc; }
+    .item:hover { background: #f0fdfa; }
+    .item.selected { background: var(--primary-light); border-color: #5eead4; }
     .item.custom { background: var(--custom-bg); border-color: var(--custom-border); }
     .item.custom.selected { background: #fde68a; border-color: #f59e0b; }
 

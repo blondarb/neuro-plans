@@ -15,7 +15,9 @@ Clinical decision support templates for neurological diagnoses.
 | `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation |
 | `scripts/medication_resolver.py` | Central medication DB lookup |
 | `scripts/extract_medications.py` | Extract medications from plan files |
-| `docs/data/medications.json` | Central medication database (11 validated meds) |
+| `scripts/harvest_medications.py` | Harvest meds from plans into central DB |
+| `scripts/generate_treatment_row.py` | Generate 10-column treatment table rows |
+| `docs/data/medications.json` | Central medication database (936 meds) |
 | `docs/ROADMAP.md` | Medication format & feature roadmap |
 | `docs/HANDOFF.md` | Developer handoff & support guide |
 
@@ -88,6 +90,16 @@ python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --repai
 # Medication validation (requires internet)
 python3 scripts/validate_medication.py --validate-db
 python3 scripts/validate_medication.py --batch-from-plans --save-report docs/data/full-validation-report.md
+
+# Medication harvest (expand central DB from plan data)
+python -X utf8 scripts/harvest_medications.py --stats
+python -X utf8 scripts/harvest_medications.py --preview
+python -X utf8 scripts/harvest_medications.py --merge
+
+# Treatment row generation (from central DB)
+python -X utf8 scripts/generate_treatment_row.py <med-name> --header
+python -X utf8 scripts/generate_treatment_row.py <med-name> --context <context-id>
+python -X utf8 scripts/generate_treatment_row.py --indication "neuropathic pain"
 ```
 
 Always use `-X utf8` flag on Windows.
