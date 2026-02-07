@@ -17,7 +17,12 @@ Clinical decision support templates for neurological diagnoses.
 | `scripts/extract_medications.py` | Extract medications from plan files |
 | `scripts/harvest_medications.py` | Harvest meds from plans into central DB |
 | `scripts/generate_treatment_row.py` | Generate 10-column treatment table rows |
+| `scripts/build.py` | Extracts plan metadata, generates index (runs during CI) |
+| `scripts/convert_to_structured_dosing.py` | Normalize dosing to `::` format |
+| `scripts/fix_dosing_frequency.py` | Fill missing frequency fields |
+| `scripts/expand_dose_options.py` | Generate dose option ranges for clinical tool |
 | `docs/data/medications.json` | Central medication database (936 meds) |
+| `docs/clinical/index.html` | Interactive clinical tool (consumes plans.json) |
 | `docs/ROADMAP.md` | Medication format & feature roadmap |
 | `docs/HANDOFF.md` | Developer handoff & support guide |
 
@@ -30,6 +35,7 @@ Clinical decision support templates for neurological diagnoses.
 | Rebuilder | `skills/neuro-rebuilder-SKILL.md` |
 | Citation Verifier | `docs/skills/neuro-citation-verifier-skill.md` |
 | CPT/Synonym Enricher | `docs/skills/neuro-cpt-synonym-enricher-skill.md` |
+| Comment Review | `skills/neuro-comment-review-SKILL.md` |
 | Style Guide | `docs/skills/style-guide.md` |
 
 ## Workflow
@@ -142,11 +148,18 @@ All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
 
 ## Git & Deploy
 
-- Site builds from `main` via GitHub Pages
+- Site auto-deploys from `main` via GitHub Actions (`.github/workflows/deploy.yml`)
+- CI pipeline: `scripts/build.py` (generates index) → `mkdocs build` → GitHub Pages
 - Always work on feature branches, merge via PR
 - Use `gh pr create` and `gh pr merge` for PRs
 - Provide `https://github.com/blondarb/neuro-plans/compare/main...<branch>` for mobile review
 - Use `-X utf8` for all Python commands on Windows
+
+## Clinical Tool & Comments
+
+- **Clinical tool** (`docs/clinical/index.html`): Interactive plan viewer consuming `docs/data/plans.json`
+- **Comment system** (`docs/assets/js/comments.js`): Firebase-backed inline comments for physician review
+- **Data directory** (`docs/data/`): Source files (plans.json, medications.json) + auto-generated artifacts (.medication_cache.json, validation reports)
 
 ## Manual Override
 
