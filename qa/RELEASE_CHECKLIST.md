@@ -1,6 +1,6 @@
 # Release Checklist
 
-**checklist_version:** 1.0
+**checklist_version:** 1.1
 
 Use this checklist before and after each deploy to main. Copy the relevant sections into your run log.
 
@@ -19,6 +19,9 @@ Use this checklist before and after each deploy to main. Copy the relevant secti
 - [ ] Frontmatter `status: approved` on all files in `docs/plans/`
 - [ ] PR created with descriptive title and summary
 - [ ] PR diff reviewed -- no accidental file inclusions (.env, credentials, etc.)
+- [ ] If medication data changed: `medications.json` regenerated (`harvest_medications.py --merge`)
+- [ ] If medication data changed: medication count verified (`--stats`)
+- [ ] Visual spot-check: teal palette renders correctly on homepage and 1 plan page
 
 ## Deploy
 
@@ -35,6 +38,11 @@ Use this checklist before and after each deploy to main. Copy the relevant secti
 - [ ] Spot-check 2-3 changed plans for correct content
 - [ ] If new plans added: verify they appear in nav and index
 - [ ] If JSON changed: verify clinical tool shows updated data
+- [ ] Homepage hero metrics visible (124 plans, 4 settings, 90%+)
+- [ ] Homepage CTA button links to clinical tool
+- [ ] Teal palette renders on nav, tables, and badges (not indigo)
+- [ ] If medication scripts changed: `generate_treatment_row.py gabapentin --header` produces valid output
+- [ ] Dark mode toggle: teal accents visible, tables render correctly
 
 ## Rollback Plan
 

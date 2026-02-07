@@ -1,11 +1,11 @@
 # Neuro Plans - Test Cases
-# test_cases_version: 1.0
-# Last updated: 2026-01-30
+# test_cases_version: 1.1
+# Last updated: 2026-02-07
 #
 # Usage: Reference test case IDs in mission briefs (qa/runs/).
 # Do not duplicate runbook prose here -- this is structured data only.
 
-test_cases_version: "1.0"
+test_cases_version: "1.1"
 
 # =============================================================================
 # SMOKE TESTS -- run every deploy
@@ -73,7 +73,7 @@ plan_content:
     steps:
       - Open an approved plan page
       - Check for STATUS line
-    expected: Shows "STATUS: Approved", no draft warning banner
+    expected: 'Shows "STATUS: Approved", no draft warning banner'
 
   - id: PC-02
     title: Draft plan has warning banner
@@ -106,7 +106,7 @@ plan_content:
     steps:
       - Navigate to Section 3 (Treatment)
       - Inspect Dosing column
-    expected: Dosing uses :: delimiter format (dose :: route :: freq :: instructions)
+    expected: "Dosing uses :: delimiter format (dose :: route :: freq :: instructions)"
 
   - id: PC-06
     title: Lab tables have CPT codes
@@ -121,7 +121,7 @@ plan_content:
     preconditions: Plan page loaded
     steps:
       - Navigate to Section 8 (Evidence & References)
-    expected: Citations include PubMed links (https://pubmed.ncbi.nlm.nih.gov/...)
+    expected: "Citations include PubMed links (https://pubmed.ncbi.nlm.nih.gov/...)"
 
 # =============================================================================
 # CLINICAL TOOL -- interactive plan builder
@@ -232,6 +232,22 @@ json:
       - Check for duplicates
     expected: All IDs unique
 
+  - id: JSON-05
+    title: medications.json medication entry schema
+    preconditions: medications.json is valid JSON
+    steps:
+      - For 3 validated medications (e.g. gabapentin, levetiracetam, lamotrigine), verify fields exist -- id, name, genericName, brandNames, drugClass, routes, contexts, safety
+      - For 3 harvested medications (e.g. riluzole, donepezil, amantadine), verify minimum fields -- id, name, routes, contexts
+    expected: Validated entries have all enrichment fields. Harvested entries have at minimum id, name, routes, contexts.
+
+  - id: JSON-06
+    title: medications.json context schema
+    preconditions: medications.json is valid JSON
+    steps:
+      - For 3 medications, check each context has -- indication, doseOptions (array), startingDose, maxDose
+      - Check doseOptions entries have text and orderSentence fields
+    expected: All required context fields present. doseOptions is an array of objects with text and orderSentence.
+
 # =============================================================================
 # NAVIGATION & STRUCTURE -- site configuration
 # =============================================================================
@@ -274,3 +290,174 @@ deploy:
     steps:
       - Open a page that was changed in the merge
     expected: New content visible (may need cache clear)
+
+# =============================================================================
+# VISUAL DESIGN -- teal palette, homepage, dark mode
+# =============================================================================
+visual:
+  - id: VIS-01
+    title: Teal palette renders on homepage
+    preconditions: Site deployed with commit 426ec58 or later
+    steps:
+      - Open https://blondarb.github.io/neuro-plans/
+      - Inspect the header/nav bar color
+    expected: Primary color is teal (#0d9488), not indigo. Nav bar, buttons, and accents all use teal.
+
+  - id: VIS-02
+    title: Homepage hero metrics display
+    preconditions: VIS-01 passed
+    steps:
+      - On the homepage, look for the grid cards section
+    expected: Three metric cards visible -- "124 Approved Plans", "4 Care Settings", "90%+ Validation" -- each with an icon
+
+  - id: VIS-03
+    title: Homepage CTA button links to clinical tool
+    preconditions: VIS-01 passed
+    steps:
+      - Click the "Open the Clinical Plan Builder" button on the homepage
+    expected: Navigates to clinical/index.html. Button styled as primary (teal) button.
+
+  - id: VIS-04
+    title: Coverage at a Glance table present
+    preconditions: VIS-01 passed
+    steps:
+      - Scroll to "Coverage at a Glance" section on homepage
+    expected: Table with 10 category rows (Cerebrovascular through Neurocritical Care) and example diagnoses
+
+  - id: VIS-05
+    title: Table row striping uses teal tint
+    preconditions: Any plan page loaded
+    steps:
+      - Open a plan with a large table (e.g. Status Epilepticus, Section 3)
+      - Observe alternating row colors
+    expected: Even rows have a light teal background (#f0fdfa in light mode), not white or gray
+
+  - id: VIS-06
+    title: Table header styling is teal
+    preconditions: Any plan page loaded
+    steps:
+      - Look at table header row (th elements)
+    expected: Header background is #f0fdfa with #115e59 text color. Venue column headers (ED/HOSP/OPD/ICU) use #ccfbf1 background.
+
+  - id: VIS-07
+    title: Active nav item has teal left border
+    preconditions: Any plan page loaded
+    steps:
+      - Check the active nav link in the sidebar
+    expected: Active item has a 3px solid teal (#0d9488) left border accent
+
+  - id: VIS-08
+    title: Clinical tool uses teal design tokens
+    preconditions: Clinical tool loaded
+    steps:
+      - Inspect the header border, logo text, and back button
+    expected: --primary is #0d9488, header has teal bottom border, logo text is teal, back button is teal
+
+  - id: VIS-09
+    title: Dark mode renders teal correctly
+    preconditions: Site loaded
+    steps:
+      - Click the light/dark mode toggle (palette icon in header)
+      - Check nav, tables, badges, and accents
+    expected: Teal accents visible in dark mode. Table row striping uses #1e293b. Active nav border uses #14b8a6. No white-on-white or invisible elements.
+
+  - id: VIS-10
+    title: Comment form button is teal
+    preconditions: Plan page loaded with comment section
+    steps:
+      - Scroll to comment section
+      - Inspect the submit button color
+    expected: Submit button background is #0d9488 (teal), hover state is #0f766e
+
+# =============================================================================
+# MEDICATION INFRASTRUCTURE -- central DB, scripts, schema
+# =============================================================================
+medication:
+  - id: MED-01
+    title: medications.json is valid JSON
+    preconditions: File exists at docs/data/medications.json
+    steps:
+      - "Run: python -c \"import json; json.load(open('docs/data/medications.json'))\""
+    expected: No parse errors. File loads successfully.
+
+  - id: MED-02
+    title: medications.json has correct top-level structure
+    preconditions: MED-01 passed
+    steps:
+      - Check for _metadata and medications keys at top level
+      - Verify _metadata has version, lastUpdated, description, safetyNotice, schema
+    expected: Both keys present. _metadata.version is "2.0.0". _metadata.lastUpdated is "2026-02-06".
+
+  - id: MED-03
+    title: Medication count is 936
+    preconditions: MED-01 passed
+    steps:
+      - "Run: python -c \"import json; d=json.load(open('docs/data/medications.json')); print(len(d['medications']))\""
+    expected: Output is 936
+
+  - id: MED-04
+    title: Validated medications preserved (11 originals intact)
+    preconditions: MED-01 passed
+    steps:
+      - Check that gabapentin, pregabalin, levetiracetam, carbamazepine, phenytoin, valproic-acid, lamotrigine, topiramate, oxcarbazepine, lacosamide, brivaracetam exist
+      - For each, verify _harvested is false or absent
+      - Verify they have populated safety.blackBoxWarnings, renalAdjustment, patientCounseling fields
+    expected: All 11 originals present with complete safety data. _harvested is false or absent.
+
+  - id: MED-05
+    title: Harvested entries have correct metadata flags
+    preconditions: MED-01 passed
+    steps:
+      - Pick 3 harvested medications (e.g. riluzole, donepezil, amantadine)
+      - Check for _harvested, _sourceCount, _sourcePlans fields
+    expected: _harvested is true. _sourceCount is a positive integer. _sourcePlans is a non-empty array of plan IDs.
+
+  - id: MED-06
+    title: Context settings field present on harvested entries
+    preconditions: MED-01 passed
+    steps:
+      - Pick 3 harvested medications
+      - Check contexts for settings objects
+    expected: Each context has a settings object with ED, HOSP, OPD, ICU keys. Values are "STAT", "URGENT", "ROUTINE", or "-".
+
+  - id: MED-07
+    title: harvest_medications.py --stats runs without errors
+    preconditions: Repository cloned, Python available
+    steps:
+      - "Run: python -X utf8 scripts/harvest_medications.py --stats"
+    expected: Outputs medication count, plan count, and coverage statistics. No errors.
+
+  - id: MED-08
+    title: harvest_medications.py --preview shows expected output
+    preconditions: MED-07 passed
+    steps:
+      - "Run: python -X utf8 scripts/harvest_medications.py --preview"
+    expected: Shows medications that would be harvested. Output includes medication names and source plans. No errors.
+
+  - id: MED-09
+    title: generate_treatment_row.py single medication
+    preconditions: Repository cloned, Python available
+    steps:
+      - "Run: python -X utf8 scripts/generate_treatment_row.py gabapentin --header"
+    expected: Outputs 10-column table header row followed by one or more data rows for gabapentin with all contexts
+
+  - id: MED-10
+    title: generate_treatment_row.py --indication search
+    preconditions: MED-09 passed
+    steps:
+      - "Run: python -X utf8 scripts/generate_treatment_row.py --indication \"neuropathic pain\""
+    expected: Outputs rows for multiple medications with neuropathic pain indication (e.g. gabapentin, pregabalin, duloxetine)
+
+  - id: MED-11
+    title: generate_treatment_row.py --list-contexts
+    preconditions: MED-09 passed
+    steps:
+      - "Run: python -X utf8 scripts/generate_treatment_row.py gabapentin --list-contexts"
+    expected: Lists all available contexts for gabapentin with indication, dose option count, and settings
+
+  - id: MED-12
+    title: medication_resolver.py lookup works
+    preconditions: Repository cloned, Python available
+    steps:
+      - "Run: python -c \"import sys; sys.path.insert(0,'scripts'); from medication_resolver import MedicationResolver; r=MedicationResolver(); print(r.has_medication('gabapentin'))\""
+    expected: Outputs True. No import errors.

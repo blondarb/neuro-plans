@@ -1,7 +1,7 @@
 # Test Runbook
 
-**runbook_version:** 1.0
-**Last updated:** 2026-01-30
+**runbook_version:** 1.1
+**Last updated:** 2026-02-07
 
 ---
 
@@ -69,6 +69,24 @@ Run after content or code changes. Grouped by feature area. Reference `TEST_CASE
 - `mkdocs.yml` nav entries match actual files in `docs/plans/`
 - `docs/plans/index.md` categories match nav categories
 - All nav links resolve (no 404s)
+
+### 2E. Visual Design
+
+- Homepage displays hero metrics (124 plans, 4 settings, 90%+ validation), CTA button, Coverage at a Glance table
+- Teal (#0d9488) palette used across site: nav bar, table headers, row striping, active nav accent, comment buttons
+- Clinical tool uses teal design tokens (--primary: #0d9488)
+- Dark mode: teal accents visible, table striping correct (#1e293b), no invisible elements
+- Comment system buttons and badges use teal colors
+
+### 2F. Medication Infrastructure
+
+- `medications.json` valid and contains 936 entries with correct _metadata
+- 11 validated entries preserved with full safety data (gabapentin, pregabalin, levetiracetam, etc.)
+- 925 harvested entries have _harvested, _sourceCount, _sourcePlans flags
+- Context settings (ED/HOSP/OPD/ICU) present on all contexts
+- `harvest_medications.py` runs in --stats, --preview modes without errors
+- `generate_treatment_row.py` produces valid 10-column markdown rows
+- `medication_resolver.py` resolves medication lookups correctly
 
 ---
 

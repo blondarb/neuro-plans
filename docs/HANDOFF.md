@@ -59,7 +59,7 @@ The site includes an **Interactive Clinical Plan Builder** that lets physicians 
 | `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation (~820 lines) |
 | `scripts/medication_resolver.py` | Central medication DB lookup and enrichment (~510 lines) |
 | `scripts/extract_medications.py` | Extract unique medications from plan files (~200 lines) |
-| `docs/data/medications.json` | Central medication database (11 validated medications) |
+| `docs/data/medications.json` | Central medication database (936 medications; 11 fully validated, 925 harvested) |
 | `docs/drafts/queue.md` | Canonical plan tracking (approval status, scores, dates) |
 | `docs/plans/index.md` | Public index of all approved plans |
 | `docs/ROADMAP.md` | Feature roadmap (medication format, clickable dosing) |
@@ -182,8 +182,8 @@ The site auto-deploys via GitHub Pages when changes are pushed to `main`. There 
 - CPT codes and synonyms enriched across all plans
 - Medication format v3.0: structured dosing across all plans (Roadmap Phases 1-3 complete)
 - Medication validation: 1,048 entries validated against RxNorm/OpenFDA (417 confirmed drugs, 137 with black box warnings)
-- Central medication database: 11 core medications with RxCUI provenance
-- QA framework in place with runbook, test cases, and release checklist
+- Central medication database: 936 medications (11 API-validated with RxCUI provenance, 925 harvested from plans)
+- QA framework v1.1 in place (56 test cases, 8 categories) with runbook, release checklist, and run logs
 
 ### Known Issues
 
@@ -270,7 +270,7 @@ Extracts unique medication names from all plan markdown files. Used by `validate
 ### Validating Medications
 
 ```bash
-# Validate central DB (11 core medications)
+# Validate central DB (936 medications)
 python3 scripts/validate_medication.py --validate-db
 
 # Batch validate all plan medications (~1,048 unique entries, ~10 min)
@@ -306,6 +306,7 @@ python3 scripts/validate_medication.py --batch-from-plans --save-report docs/dat
 | Medication validation handoff | `docs/data/MEDICATION_VALIDATION_HANDOFF.md` |
 | Medication migration plan | `docs/data/MEDICATION_MIGRATION_PLAN.md` |
 | Central medication DB | `docs/data/medications.json` |
+| Sync handoff (latest) | `docs/data/SYNC_HANDOFF_2026-02-06.md` |
 
 ---
 
