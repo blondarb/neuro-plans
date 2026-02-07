@@ -11,7 +11,13 @@ Clinical decision support templates for neurological diagnoses.
 | `docs/data/plans.json` | JSON data for clinical tool |
 | `mkdocs.yml` | Site navigation |
 | `scripts/generate_json.py` | Markdown-to-JSON converter |
+| `scripts/verify_citations.py` | PubMed citation verifier and PMID repair |
+| `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation |
+| `scripts/medication_resolver.py` | Central medication DB lookup |
+| `scripts/extract_medications.py` | Extract medications from plan files |
+| `docs/data/medications.json` | Central medication database (11 validated meds) |
 | `docs/ROADMAP.md` | Medication format & feature roadmap |
+| `docs/HANDOFF.md` | Developer handoff & support guide |
 
 ## Skills
 
@@ -70,16 +76,21 @@ Use `::` not `|`. First field = starting dose only.
 ## Commands
 
 ```bash
+# JSON generation & validation
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --merge
 python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --check-parity
-python -X utf8 scripts/verify_citations.py --all --lint              # offline PMID check (mandatory)
-python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --cache  # API verification
+
+# Citation verification (requires internet for --verify)
+python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify
+python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --repair --apply
+
+# Medication validation (requires internet)
+python3 scripts/validate_medication.py --validate-db
+python3 scripts/validate_medication.py --batch-from-plans --save-report docs/data/full-validation-report.md
 ```
 
 Always use `-X utf8` flag on Windows.
-
-**PMID verification:** Run `--lint` (offline) before marking any plan `completed`. Run `--verify --cache` when PubMed API is available to do full metadata checks.
 
 ## Quality Targets
 

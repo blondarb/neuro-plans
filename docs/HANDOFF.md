@@ -1,6 +1,6 @@
 # Developer Handoff & Support Guide
 
-**Last Updated:** February 3, 2026
+**Last Updated:** February 6, 2026
 **Repository:** [github.com/blondarb/neuro-plans](https://github.com/blondarb/neuro-plans)
 **Live Site:** [blondarb.github.io/neuro-plans](https://blondarb.github.io/neuro-plans/)
 
@@ -32,7 +32,7 @@ The site includes an **Interactive Clinical Plan Builder** that lets physicians 
 - **Static site:** MkDocs Material → GitHub Pages (auto-deploys from `main`)
 - **Clinical tool:** Vanilla HTML/JS (`docs/clinical/index.html`) reading `docs/data/plans.json`
 - **Comment system:** Firebase (section-specific inline comments)
-- **Data pipeline:** Python scripts for markdown → JSON conversion and citation verification
+- **Data pipeline:** Python scripts for markdown → JSON conversion, citation verification, and medication validation
 
 ### Key Directories
 
@@ -56,6 +56,10 @@ The site includes an **Interactive Clinical Plan Builder** that lets physicians 
 |------|---------|
 | `scripts/generate_json.py` | Markdown → JSON converter, validator, parity checker (~2,000 lines) |
 | `scripts/verify_citations.py` | PubMed citation verifier and PMID repair tool (~1,260 lines) |
+| `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation (~820 lines) |
+| `scripts/medication_resolver.py` | Central medication DB lookup and enrichment (~510 lines) |
+| `scripts/extract_medications.py` | Extract unique medications from plan files (~200 lines) |
+| `docs/data/medications.json` | Central medication database (11 validated medications) |
 | `docs/drafts/queue.md` | Canonical plan tracking (approval status, scores, dates) |
 | `docs/plans/index.md` | Public index of all approved plans |
 | `docs/ROADMAP.md` | Feature roadmap (medication format, clickable dosing) |
@@ -176,6 +180,9 @@ The site auto-deploys via GitHub Pages when changes are pushed to `main`. There 
 - Clinical Plan Builder functional with all plans
 - Citation accuracy at 85.0% (1,054 verified + 417 partial out of 1,730)
 - CPT codes and synonyms enriched across all plans
+- Medication format v3.0: structured dosing across all plans (Roadmap Phases 1-3 complete)
+- Medication validation: 1,048 entries validated against RxNorm/OpenFDA (417 confirmed drugs, 137 with black box warnings)
+- Central medication database: 11 core medications with RxCUI provenance
 - QA framework in place with runbook, test cases, and release checklist
 
 ### Known Issues
@@ -239,6 +246,37 @@ The verification compares citation text (author, journal, year) against PubMed E
 
 Rate limit: 0.5s between API calls (no API key). With an NCBI API key (set `NCBI_API_KEY` env var), throughput increases to 10 req/sec.
 
+### `scripts/validate_medication.py` (~820 lines)
+
+RxNorm/OpenFDA medication validation. Confirms drugs exist and checks for safety data.
+
+| Flag | Purpose |
+|------|---------|
+| `--validate-db` | Validate medications in `medications.json` |
+| `--batch-from-plans` | Validate all medications found in plan files |
+| `--save-report FILE` | Save results to markdown report |
+| `--quiet` | Suppress per-medication detail |
+
+Uses RxNorm API (no key required, 20 req/sec limit) and OpenFDA API (no key required, 240 req/min limit).
+
+### `scripts/medication_resolver.py` (~510 lines)
+
+Central medication database lookup and enrichment. Resolves plan medication references against `docs/data/medications.json`.
+
+### `scripts/extract_medications.py` (~200 lines)
+
+Extracts unique medication names from all plan markdown files. Used by `validate_medication.py` for batch processing.
+
+### Validating Medications
+
+```bash
+# Validate central DB (11 core medications)
+python3 scripts/validate_medication.py --validate-db
+
+# Batch validate all plan medications (~1,048 unique entries, ~10 min)
+python3 scripts/validate_medication.py --batch-from-plans --save-report docs/data/full-validation-report.md
+```
+
 ---
 
 ## Quality Standards
@@ -265,6 +303,9 @@ Rate limit: 0.5s between API calls (no API key). With an NCBI API key (set `NCBI
 | Claude Code config | `CLAUDE.md` |
 | Plan queue/tracking | `docs/drafts/queue.md` |
 | Plans index | `docs/plans/index.md` |
+| Medication validation handoff | `docs/data/MEDICATION_VALIDATION_HANDOFF.md` |
+| Medication migration plan | `docs/data/MEDICATION_MIGRATION_PLAN.md` |
+| Central medication DB | `docs/data/medications.json` |
 
 ---
 
