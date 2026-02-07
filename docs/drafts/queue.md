@@ -20,15 +20,15 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
-### SLEEP MEDICINE EXPANSION (Tier 12 — pending)
+### SLEEP MEDICINE EXPANSION (Tier 12 — approved)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| REM Sleep Behavior Disorder | G47.52 | `rem-sleep-behavior-disorder.md` | `pending` | — | 2026-02-07 |
-| Obstructive Sleep Apnea — Neurological Evaluation | G47.33 | `obstructive-sleep-apnea-neuro.md` | `pending` | — | 2026-02-07 |
-| Insomnia — Neurological Approach | G47.00, G47.01 | `insomnia-neurological.md` | `pending` | — | 2026-02-07 |
-| Idiopathic Hypersomnia | G47.11 | `idiopathic-hypersomnia.md` | `pending` | — | 2026-02-07 |
-| Non-REM Parasomnias | G47.50, G47.51, G47.53 | `non-rem-parasomnias.md` | `pending` | — | 2026-02-07 |
+| REM Sleep Behavior Disorder | G47.52 | `rem-sleep-behavior-disorder.md` | `approved` | — | 2026-02-07 |
+| Obstructive Sleep Apnea — Neurological Evaluation | G47.33 | `obstructive-sleep-apnea-neuro.md` | `approved` | — | 2026-02-07 |
+| Insomnia — Neurological Approach | G47.00, G47.01 | `insomnia-neurological.md` | `approved` | — | 2026-02-07 |
+| Idiopathic Hypersomnia | G47.11 | `idiopathic-hypersomnia.md` | `approved` | — | 2026-02-07 |
+| Non-REM Parasomnias | F51.3, F51.4, G47.50, G47.51 | `non-rem-parasomnias.md` | `approved` | — | 2026-02-07 |
 
 ---
 
@@ -168,6 +168,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 122 | Paresthesia / Numbness / Tingling | [`paresthesia-numbness-tingling.md`](../plans/paresthesia-numbness-tingling.md) | 2026-02-02 | 90%+ |
 | 123 | Headache, Unspecified | [`headache-unspecified.md`](../plans/headache-unspecified.md) | 2026-02-02 | 90%+ |
 | 124 | Tremor, Unspecified | [`tremor-unspecified.md`](../plans/tremor-unspecified.md) | 2026-02-02 | 90%+ |
+| 125 | REM Sleep Behavior Disorder | [`rem-sleep-behavior-disorder.md`](../plans/rem-sleep-behavior-disorder.md) | 2026-02-07 | — |
+| 126 | Obstructive Sleep Apnea — Neuro | [`obstructive-sleep-apnea-neuro.md`](../plans/obstructive-sleep-apnea-neuro.md) | 2026-02-07 | — |
+| 127 | Insomnia — Neurological Approach | [`insomnia-neurological.md`](../plans/insomnia-neurological.md) | 2026-02-07 | — |
+| 128 | Idiopathic Hypersomnia | [`idiopathic-hypersomnia.md`](../plans/idiopathic-hypersomnia.md) | 2026-02-07 | — |
+| 129 | Non-REM Parasomnias | [`non-rem-parasomnias.md`](../plans/non-rem-parasomnias.md) | 2026-02-07 | — |
 
 ---
 
@@ -184,7 +189,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-07. Total approved: 124 plans. 5 new sleep medicine drafts pending.
+- Queue updated 2026-02-07. Total approved: 129 plans. Sleep Medicine section created with 6 plans (5 new + Narcolepsy moved from Other).
 - **Sleep Medicine expansion** (2026-02-07): 5 new drafts added — REM Sleep Behavior Disorder, Obstructive Sleep Apnea (Neuro), Insomnia (Neurological), Idiopathic Hypersomnia, Non-REM Parasomnias. Complements existing Narcolepsy and RLS plans.
 - **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
 - **Tier 11 HIGH PRIORITY batch** (2026-02-01): 17 plans queued as physician-prioritized. Includes vascular (Carotid Stenosis), headache workups (Headache Evaluation, Thunderclap, Headache Unspecified), rare/infectious (Botulism, Neurocysticercosis, HIV-HAND), autoimmune/inflammatory (Susac, Neuro-Behcet's, Hashimoto's Encephalopathy), peripheral (Peroneal Neuropathy, Plexopathy, Paresthesia), movement (Tics/Tourette, Tremor Unspecified), and symptom evaluations (Nystagmus, Tinnitus). Note: "Headache Evaluation" and "Headache, Unspecified" may overlap — physician to clarify scope.

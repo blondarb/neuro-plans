@@ -1,0 +1,888 @@
+{
+  "id": "obstructive-sleep-apnea-neuro",
+  "title": "Obstructive Sleep Apnea — Neurological Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** G47.33 (Obstructive sleep apnea)"
+  ],
+  "scope": "** Neurological evaluation and management of obstructive sleep apnea in adults. Focuses on neurology-specific aspects: stroke risk assessment, cognitive impact, epilepsy interaction, headache relationship, and neuropathy/autonomic effects. Excludes primary pulmonary/ENT management, central sleep apnea (separate entity), and pediatric OSA. Complements pulmonology/sleep medicine primary management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "rationale": "Screen for polycythemia secondary to chronic intermittent hypoxia; anemia contributing to fatigue",
+          "target": "Normal; elevated Hgb/Hct suggests chronic hypoxemia",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Renal/hepatic function; electrolytes; pre-treatment baseline; assess metabolic syndrome components",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism causes weight gain, upper airway edema, and fatigue that exacerbates OSA",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Metabolic syndrome screening; OSA independently increases insulin resistance and type 2 diabetes risk",
+          "target": "<5.7%",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting lipid panel (CPT 80061)",
+          "rationale": "Dyslipidemia screening for cerebrovascular risk stratification; OSA promotes atherogenic lipid profile",
+          "target": "LDL <100 mg/dL (or <70 if high vascular risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR/CRP",
+          "rationale": "Systemic inflammation marker; OSA-related chronic inflammation contributes to atherosclerosis and neurological injury",
+          "target": "Normal; elevated suggests high inflammatory burden",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "BNP / NT-proBNP",
+          "rationale": "Cardiac strain assessment; OSA-related pulmonary hypertension and right heart dysfunction; screen for heart failure contributing to central apneas",
+          "target": "BNP <100 pg/mL; NT-proBNP <300 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Coagulation panel (PT/INR, PTT)",
+          "rationale": "Stroke risk assessment; baseline before anticoagulation if atrial fibrillation detected",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Homocysteine",
+          "rationale": "Elevated homocysteine is independent cerebrovascular risk factor; compounds OSA-related stroke risk",
+          "target": "<15 micromol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Morning cortisol (8 AM)",
+          "rationale": "Assess HPA axis dysfunction from chronic sleep fragmentation; cortisol dysregulation contributes to metabolic syndrome",
+          "target": "6-18 mcg/dL (AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "ABG (arterial blood gas)",
+          "rationale": "Obesity hypoventilation syndrome assessment when awake PaCO2 elevation suspected; chronic hypercapnia",
+          "target": "pH 7.35-7.45; PaCO2 35-45 mmHg; elevated PaCO2 suggests OHS",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypercoagulability panel (Factor V Leiden, prothrombin mutation, antiphospholipid antibodies, protein C/S, antithrombin III)",
+          "rationale": "Young stroke patient with OSA; evaluate for additional thrombophilic risk factors compounding OSA-related stroke risk",
+          "target": "Normal; positive results require hematology referral",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 / methylmalonic acid",
+          "rationale": "Screen for B12 deficiency contributing to cognitive impairment and neuropathy in OSA patients",
+          "target": "B12 >400 pg/mL; MMA <0.4 micromol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Polysomnography (PSG) (CPT 95810)",
+          "timing": "Gold standard diagnostic study; in-lab attended study with EEG, EMG, ECG, airflow, respiratory effort, oximetry",
+          "target": "AHI calculation; severity classification; oxygen desaturation nadir and duration; assessment of sleep architecture disruption",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home sleep apnea test (HSAT) (CPT 95800)",
+          "timing": "Alternative to PSG for uncomplicated patients without significant comorbidity; measures airflow, respiratory effort, oximetry",
+          "target": "AHI/REI ≥5 with symptoms or ≥15 without symptoms; may underestimate severity",
+          "contraindications": "Suspected central apnea, hypoventilation, significant cardiopulmonary disease, neuromuscular disease; not valid if negative in high-pretest-probability patient",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epworth Sleepiness Scale (ESS)",
+          "timing": "Administer at initial evaluation and each follow-up to track treatment response",
+          "target": "ESS ≤10 (normal); ≥11 indicates pathological sleepiness requiring intervention",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "STOP-BANG Questionnaire",
+          "timing": "Screening tool for undiagnosed OSA; administer to all patients with stroke, cognitive decline, refractory seizures, or morning headache",
+          "target": "Score ≥3 warrants formal sleep study; score ≥5 high probability of moderate-severe OSA",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "If stroke symptoms, cognitive decline, or white matter disease suspected; assess for silent cerebral infarcts and leukoaraiosis",
+          "target": "White matter hyperintensities (leukoaraiosis); silent infarcts; hippocampal atrophy; no acute stroke",
+          "contraindications": "Per MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carotid duplex ultrasound",
+          "timing": "Cerebrovascular risk assessment; OSA promotes carotid intima-media thickening and plaque formation through intermittent hypoxia",
+          "target": "Normal intima-media thickness (<1.0 mm); no significant stenosis",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (routine or prolonged)",
+          "timing": "If seizure concern; OSA lowers seizure threshold; evaluate for nocturnal seizures mimicking or coexisting with OSA",
+          "target": "Normal background; no epileptiform discharges; distinguish from OSA-related arousals",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurocognitive testing (CPT 96132)",
+          "timing": "Formal assessment of OSA-related cognitive impairment; evaluate attention, executive function, memory, processing speed",
+          "target": "Baseline performance; identify deficits in attention, executive function, visuospatial processing, and memory",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRA head and neck",
+          "timing": "Cerebrovascular assessment if stroke or TIA with OSA; evaluate for intracranial stenosis and vertebrobasilar disease",
+          "target": "Normal arterial anatomy; no significant stenosis or aneurysm",
+          "contraindications": "Per MRI contraindications; renal function if gadolinium",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Transthoracic echocardiography",
+          "timing": "If pulmonary hypertension, right heart failure, or atrial fibrillation suspected; OSA is leading cause of secondary pulmonary hypertension",
+          "target": "Normal RV size/function; RVSP <35 mmHg; no atrial enlargement; assess for patent foramen ovale (paradoxical embolism risk)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Autonomic function testing (tilt table, QSART, cardiovagal testing)",
+          "timing": "If autonomic neuropathy suspected; OSA causes sympathetic hyperactivation and parasympathetic withdrawal",
+          "target": "Normal autonomic reflexes; document sympathovagal imbalance severity",
+          "contraindications": "None; defer if unstable",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "CPAP Optimization for Neurological Benefit": [
+        {
+          "item": "CPAP therapy (continuous positive airway pressure)",
+          "route": "Nasal/oronasal mask",
+          "indication": "First-line OSA treatment with demonstrated neuroprotective benefit; reduces stroke risk 40-60% in compliant users; improves cognitive function; reduces seizure frequency in comorbid epilepsy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "CPAP therapy (continuous positive airway pressure) N/A nasal/oronasal"
+              }
+            ],
+            "route": "nasal/oronasal",
+            "instructions": "Titrated to eliminate obstructive events per PSG or auto-CPAP algorithm; target AHI <5 on therapy; minimum 4 hours/night for clinical benefit; optimal ≥6 hours/night",
+            "orderSentence": "CPAP therapy (continuous positive airway pressure) N/A nasal/oronasal"
+          },
+          "contraindications": "Inability to clear secretions; CSF leak; basilar skull fracture; severe bullous lung disease",
+          "monitoring": "CPAP compliance data download every 1-3 months; residual AHI on device; mask leak; ESS improvement; blood pressure response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Positional therapy (avoid supine sleep)",
+          "route": "Physical",
+          "indication": "Adjunct for position-dependent OSA where AHI is ≥2x worse supine; reduces neurological impact of positional desaturation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Positional therapy (avoid supine sleep) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Positional devices (tennis ball technique, commercial positional belts, or wedge pillows) to maintain lateral sleep position",
+            "orderSentence": "Positional therapy (avoid supine sleep) N/A -"
+          },
+          "contraindications": "Inability to tolerate lateral position; musculoskeletal limitations",
+          "monitoring": "Symptom response; repeat PSG or HSAT to confirm efficacy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep hygiene optimization",
+          "route": "-",
+          "indication": "Consolidate nocturnal sleep; reduce OSA severity; improve CPAP tolerance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Sleep hygiene optimization N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Regular sleep-wake schedule; 7-9 hours nightly; cool dark room; elevate head of bed 30 degrees; avoid supine position; limit screen time before bed",
+            "orderSentence": "Sleep hygiene optimization N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Adherence; symptom response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Neurological Comorbidity Management": [
+        {
+          "item": "Modafinil (Provigil)",
+          "route": "PO",
+          "indication": "Residual EDS despite compliant CPAP therapy (≥4 hours/night for ≥3 months); FDA-approved for residual sleepiness in OSA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil (Provigil) 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; increase to 200 mg daily after 1-2 weeks if needed; max 200 mg/day for OSA-related EDS; take upon awakening",
+            "orderSentence": "Modafinil (Provigil) 100 mg PO"
+          },
+          "contraindications": "Hypersensitivity; severe hepatic impairment; may reduce efficacy of hormonal contraceptives; verify CPAP compliance before prescribing",
+          "monitoring": "Blood pressure; rash (rare Stevens-Johnson); sleep quality; CPAP compliance verification; contraceptive efficacy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Central apnea component; altitude-related OSA exacerbation; reduces AHI by increasing ventilatory drive through metabolic acidosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; may increase to 500 mg BID; reduces AHI by 40-50% in mixed/central apnea component; also useful for idiopathic intracranial hypertension comorbidity",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Sulfonamide allergy; severe hepatic or renal insufficiency; hyponatremia; hypokalemia; metabolic acidosis",
+          "monitoring": "Electrolytes (K+, bicarb) at 1 week and monthly; renal function; paresthesias (common, benign); nephrolithiasis risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate (Topamax)",
+          "route": "PO",
+          "indication": "Weight reduction and migraine prophylaxis in obese OSA patients with comorbid migraine; dual benefit of weight loss (reduces AHI) and headache prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate (Topamax) 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg at bedtime; titrate by 25 mg/week to target 50-100 mg BID; weight loss benefit typically requires ≥100 mg/day; max 200 mg/day",
+            "orderSentence": "Topiramate (Topamax) 25 mg PO"
+          },
+          "contraindications": "Metabolic acidosis; nephrolithiasis history; pregnancy (teratogenic); acute narrow-angle glaucoma",
+          "monitoring": "Serum bicarbonate; renal function; cognitive effects (word-finding difficulty); weight; kidney stones; intraocular pressure if eye symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Stroke Prevention in OSA": [
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "Cardiovascular risk reduction in moderate-severe OSA with vascular risk factors (hypertension, diabetes, dyslipidemia, smoking); primary prevention when 10-year ASCVD risk ≥10%",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Aspirin 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg once daily; take with food; continue indefinitely unless contraindicated",
+            "orderSentence": "Aspirin 81 mg PO"
+          },
+          "contraindications": "Active GI bleeding; aspirin allergy; severe thrombocytopenia; concurrent anticoagulation (relative); last trimester pregnancy",
+          "monitoring": "GI symptoms; bleeding signs; platelet count if concern; concurrent NSAID use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Atorvastatin (Lipitor)",
+          "route": "PO",
+          "indication": "Dyslipidemia management with OSA-related vascular risk; statins provide pleiotropic anti-inflammatory benefit relevant to OSA-induced endothelial dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Atorvastatin (Lipitor) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20 mg daily; increase to 40 mg daily if LDL goal not met at 6 weeks; take in evening; high-intensity statin (40-80 mg) if ASCVD equivalent or prior stroke",
+            "orderSentence": "Atorvastatin (Lipitor) 20 mg PO"
+          },
+          "contraindications": "Active liver disease; pregnancy; breastfeeding; concurrent cyclosporine",
+          "monitoring": "LFTs at baseline and 12 weeks; lipid panel at 6 weeks; CK if myalgia; assess diabetes risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antihypertensive optimization",
+          "route": "PO",
+          "indication": "Resistant hypertension commonly driven by untreated OSA; OSA is leading identifiable cause of resistant hypertension; CPAP reduces BP 2-10 mmHg",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Antihypertensive optimization N/A PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Optimize existing antihypertensive regimen; target BP <130/80 mmHg; CPAP adherence is critical adjunct; consider aldosterone antagonist (spironolactone) for resistant hypertension with OSA",
+            "orderSentence": "Antihypertensive optimization N/A PO"
+          },
+          "contraindications": "Per individual agent",
+          "monitoring": "Blood pressure at each visit; home BP monitoring; electrolytes if on spironolactone; assess CPAP compliance as adjunct to pharmacotherapy",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Seizure Management with OSA": [
+        {
+          "item": "CPAP optimization for seizure control",
+          "route": "Nasal/oronasal mask",
+          "indication": "Comorbid epilepsy with OSA; untreated OSA increases seizure frequency through sleep fragmentation and intermittent hypoxia; CPAP reduces seizure frequency by up to 50%",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "CPAP optimization for seizure control N/A nasal/oronasal"
+              }
+            ],
+            "route": "nasal/oronasal",
+            "instructions": "Optimize CPAP compliance targeting ≥6 hours/night; seizure frequency reduction correlates with CPAP adherence; may allow AED dose reduction once OSA controlled",
+            "orderSentence": "CPAP optimization for seizure control N/A nasal/oronasal"
+          },
+          "contraindications": "Same as standard CPAP",
+          "monitoring": "Seizure diary; CPAP compliance; AED levels; EEG if breakthrough seizures",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "AED selection guidance in OSA",
+          "route": "PO",
+          "indication": "Avoid sedating AEDs that worsen OSA through respiratory depression, weight gain, and upper airway muscle relaxation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "AED selection guidance in OSA N/A PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "AVOID: phenobarbital, benzodiazepines (clonazepam, clorazepate), pregabalin (weight gain, sedation); PREFER: levetiracetam, lamotrigine, lacosamide (weight-neutral, non-sedating); CAUTION: topiramate (weight loss beneficial but cognitive effects); valproate (weight gain worsens OSA)",
+            "orderSentence": "AED selection guidance in OSA N/A PO"
+          },
+          "contraindications": "Per individual AED",
+          "monitoring": "Seizure frequency; weight; sedation level; CPAP compliance; sleep quality; AED levels",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Sleep medicine referral for PSG/HSAT, CPAP titration, and ongoing compliance management; essential for all patients with confirmed or suspected OSA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology follow-up every 3-6 months for cognitive monitoring, stroke risk assessment, seizure management, and headache evaluation in OSA patients with neurological comorbidity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology referral for formal neurocognitive testing if subjective cognitive decline, MoCA <26, or objective cognitive complaints affecting daily function; establishes baseline for CPAP treatment response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral if atrial fibrillation detected, pulmonary hypertension suspected, or resistant hypertension despite optimal medical therapy and CPAP; OSA-related AF requires anticoagulation decision",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Endocrinology referral if HbA1c ≥6.5%, uncontrolled metabolic syndrome, or morbid obesity (BMI ≥40) for comprehensive metabolic management that complements OSA treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bariatric surgery evaluation for patients with BMI ≥35 with OSA-related comorbidities or BMI ≥40; weight loss surgery produces sustained AHI reduction and may cure OSA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "OSA is a chronic neurological risk factor that significantly increases stroke risk (2-3 fold) and causes progressive cognitive decline if untreated; CPAP treatment reduces stroke risk by 40-60%",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use CPAP every night for the entire sleep period; minimum 4 hours/night required for cardiovascular benefit; optimal benefit at ≥6 hours/night; even partial use is better than no use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new neurological symptoms immediately: sudden weakness, speech difficulty, vision changes, severe headache, numbness, or new seizures (may indicate stroke or neurological complication of OSA)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive if excessively sleepy; untreated OSA increases motor vehicle accident risk 2-7 fold; resume driving only after EDS is controlled with CPAP (ESS <11)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol within 3 hours of bedtime; alcohol relaxes upper airway muscles, worsens apneas, and increases nocturnal hypoxemia independently of body position",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sedating medications (benzodiazepines, opioids, sedating antihistamines, muscle relaxants) unless prescribed by a physician aware of OSA diagnosis; these worsen respiratory depression during sleep",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bed partner observations are valuable; report witnessed apneas, gasping, choking, or unusual movements during sleep at each visit",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Weight management: 10% body weight loss produces approximately 26% AHI reduction; even modest weight loss (5-7%) improves oxygen desaturation and reduces cardiovascular risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise: 150 minutes/week moderate-intensity exercise reduces AHI by 25% independent of weight loss; improves endothelial function and reduces inflammatory markers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep position training: avoid supine sleeping; lateral and prone positions reduce AHI by 50% or more in position-dependent OSA; elevate head of bed 30 degrees",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation: smoking increases upper airway inflammation, edema, and OSA severity; smoking is an independent stroke risk factor compounding OSA risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine to morning hours only to preserve sleep architecture; avoid caffeine after noon; caffeine does not substitute for CPAP therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nasal congestion management with nasal saline rinse and intranasal corticosteroid to improve CPAP tolerance and reduce oral breathing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Central sleep apnea (CSA)",
+      "features": "Absent respiratory effort during apneic events; Cheyne-Stokes pattern in heart failure; no snoring during central events; may coexist with OSA (complex sleep apnea)",
+      "tests": "PSG showing central events >50% of total AHI; absent respiratory effort on chest/abdomen belts"
+    },
+    {
+      "diagnosis": "Narcolepsy",
+      "features": "Excessive daytime sleepiness with cataplexy; irresistible sleep attacks; sleep paralysis; hypnagogic hallucinations; no snoring or witnessed apneas as primary feature",
+      "tests": "MSLT showing mean sleep latency ≤8 min with ≥2 SOREMPs; CSF orexin ≤110 pg/mL for type 1"
+    },
+    {
+      "diagnosis": "Idiopathic hypersomnia",
+      "features": "Prolonged non-refreshing sleep; severe sleep inertia; excessive total sleep time (>11 hours); no respiratory events on PSG; no apneas",
+      "tests": "PSG showing normal AHI; MSLT with mean latency ≤8 min but <2 SOREMPs"
+    },
+    {
+      "diagnosis": "Medication-induced sedation",
+      "features": "Temporal relationship to sedating medication initiation; sleepiness without respiratory events; no snoring or witnessed apneas",
+      "tests": "Medication review; PSG showing normal AHI; resolution with dose reduction"
+    },
+    {
+      "diagnosis": "Nocturnal seizures",
+      "features": "Stereotyped motor events during sleep; postictal confusion; incontinence; tongue biting; may coexist with OSA",
+      "tests": "Video-EEG monitoring; PSG with expanded EEG montage; epileptiform discharges"
+    },
+    {
+      "diagnosis": "REM sleep behavior disorder (RBD)",
+      "features": "Dream enactment behavior; vocalizations; violent limb movements during REM sleep; associated with alpha-synucleinopathies; no respiratory events",
+      "tests": "PSG showing REM sleep without atonia; video documentation of dream enactment"
+    },
+    {
+      "diagnosis": "Restless legs syndrome (RLS)",
+      "features": "Urge to move legs with uncomfortable sensations; worse at rest and evening; relief with movement; may fragment sleep causing EDS",
+      "tests": "Clinical diagnosis (IRLSSG criteria); ferritin level; PSG may show periodic limb movements"
+    },
+    {
+      "diagnosis": "Periodic limb movement disorder (PLMD)",
+      "features": "Repetitive stereotyped limb movements during sleep causing arousals; EDS from sleep fragmentation; no respiratory events",
+      "tests": "PSG showing PLMS index >15/hour without OSA; distinguish from OSA-related arousals"
+    },
+    {
+      "diagnosis": "Obesity hypoventilation syndrome (OHS)",
+      "features": "Awake hypercapnia (PaCO2 >45 mmHg) in obese patient (BMI ≥30); daytime hypoxemia; often coexists with severe OSA",
+      "tests": "ABG showing awake hypercapnia; serum bicarbonate >27 mEq/L; PSG with prolonged hypoxemia"
+    },
+    {
+      "diagnosis": "Depression with hypersomnia",
+      "features": "Depressed mood; anhedonia; fatigue more than true sleepiness; psychomotor retardation; no respiratory events; may coexist with OSA",
+      "tests": "PHQ-9; psychiatric evaluation; PSG showing normal AHI; sleepiness does not improve with CPAP"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "OSA is an independent risk factor for ischemic stroke with 2-3 fold increased risk; dose-response relationship with AHI severity",
+      "evidenceLevel": "Class I, Prospective cohort (N=1022)",
+      "source": "[Yaggi et al. N Engl J Med 2005](https://pubmed.ncbi.nlm.nih.gov/16306520/)"
+    },
+    {
+      "recommendation": "OSA causes significant neurocognitive impairment including deficits in attention, executive function, visuospatial processing, and memory",
+      "evidenceLevel": "Systematic review",
+      "source": "[Lal et al. Chest 2012](https://pubmed.ncbi.nlm.nih.gov/22556319/)"
+    },
+    {
+      "recommendation": "CPAP treatment reduces fatal and non-fatal cardiovascular events in severe OSA; untreated severe OSA has significantly higher cardiovascular mortality",
+      "evidenceLevel": "Class I, Prospective cohort (N=1651, 10-year follow-up)",
+      "source": "[Marin et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15766999/)"
+    },
+    {
+      "recommendation": "Untreated OSA worsens seizure control; CPAP treatment reduces seizure frequency in patients with comorbid epilepsy",
+      "evidenceLevel": "Class II, Prospective study",
+      "source": "[Malow et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18316690/)"
+    },
+    {
+      "recommendation": "OSA-related cognitive deficits are partially reversible with CPAP treatment; attention and executive function show most improvement; memory deficits may persist",
+      "evidenceLevel": "Meta-analysis",
+      "source": "[Bucks et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/23904683/)"
+    },
+    {
+      "recommendation": "OSA prevalence has increased substantially; estimated 10-17% of adult men and 3-9% of adult women affected; prevalence increases with obesity epidemic",
+      "evidenceLevel": "Prospective population-based cohort (Wisconsin Sleep Cohort, 20-year follow-up)",
+      "source": "[Peppard et al. Am J Epidemiol 2013](https://pubmed.ncbi.nlm.nih.gov/23589584/)"
+    },
+    {
+      "recommendation": "10% body weight loss produces 26% reduction in AHI; weight management is critical adjunct to CPAP therapy",
+      "evidenceLevel": "Class I, Prospective cohort",
+      "source": "[Peppard et al. JAMA 2000](https://pubmed.ncbi.nlm.nih.gov/11126694/)"
+    },
+    {
+      "recommendation": "OSA is the most common identifiable cause of resistant hypertension; CPAP reduces blood pressure 2-10 mmHg in compliant users",
+      "evidenceLevel": "Meta-analysis, Level A",
+      "source": "[Bazzano et al. JAMA 2007](https://pubmed.ncbi.nlm.nih.gov/18073359/)"
+    },
+    {
+      "recommendation": "AASM clinical practice guideline for diagnostic testing of OSA; PSG is gold standard; HSAT acceptable for uncomplicated patients",
+      "evidenceLevel": "Clinical practice guideline",
+      "source": "[Kapur et al. J Clin Sleep Med 2017](https://pubmed.ncbi.nlm.nih.gov/28162150/)"
+    },
+    {
+      "recommendation": "Modafinil is effective for residual EDS in OSA patients adherent to CPAP; FDA-approved for this indication",
+      "evidenceLevel": "Class I, RCT",
+      "source": "[Black et al. Am J Respir Crit Care Med 2007](https://pubmed.ncbi.nlm.nih.gov/17962641/)"
+    },
+    {
+      "recommendation": "OSA is associated with increased prevalence of white matter hyperintensities and silent cerebral infarcts on MRI; severity correlates with AHI and hypoxemia burden",
+      "evidenceLevel": "Cross-sectional neuroimaging study",
+      "source": "[Kim et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/23729926/)"
+    },
+    {
+      "recommendation": "CPAP treatment for 3 months improves white matter integrity and neurocognitive function in severe OSA; structural brain changes are partially reversible",
+      "evidenceLevel": "Prospective treatment study with DTI",
+      "source": "[Castronovo et al. Am J Respir Crit Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25233138/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "CPAP compliance data (usage hours, AHI, mask leak)",
+      "frequency": "Every 1-3 months",
+      "action": "Address barriers (mask fit, pressure intolerance, claustrophobia); consider auto-CPAP, bilevel, or oral appliance if CPAP intolerant",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Epworth Sleepiness Scale (ESS)",
+      "frequency": "Each visit",
+      "action": "Verify CPAP compliance; consider modafinil for residual EDS; evaluate for comorbid sleep disorder",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive screening (MoCA)",
+      "frequency": "Annually; more frequently if decline suspected",
+      "action": "Formal neurocognitive testing; optimize CPAP; evaluate for concurrent neurodegenerative process",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Each visit; home monitoring",
+      "action": "Optimize CPAP compliance (reduces BP 2-10 mmHg); adjust antihypertensives; evaluate for resistant hypertension",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Stroke risk stratification (CHA2DS2-VASc if atrial fibrillation)",
+      "frequency": "At diagnosis; annually; with new AF",
+      "action": "Initiate anticoagulation per guidelines; cardiology referral; aggressive CPAP compliance",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Seizure frequency (if comorbid epilepsy)",
+      "frequency": "Each visit; seizure diary",
+      "action": "Optimize CPAP first before adjusting AEDs; ensure weight-neutral AED selection; repeat EEG",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Weight/BMI",
+      "frequency": "Every 3-6 months",
+      "action": "Dietary counseling; exercise prescription; evaluate for bariatric surgery if BMI ≥35; adjust CPAP pressure after significant weight change",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fasting lipid panel",
+      "frequency": "Annually",
+      "action": "Initiate or intensify statin therapy; dietary modification",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "Annually; every 3-6 months if diabetic",
+      "action": "Endocrinology referral; lifestyle modification; CPAP compliance improves insulin sensitivity",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC",
+      "frequency": "Annually",
+      "action": "Evaluate for persistent nocturnal hypoxemia if polycythemia; consider supplemental O2 with CPAP",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Majority of OSA patients; initial evaluation, CPAP initiation, cognitive monitoring, stroke risk management, and long-term follow-up"
+    },
+    {
+      "disposition": "Home sleep study (HSAT)",
+      "criteria": "Uncomplicated patients with high pretest probability; no significant cardiopulmonary, neuromuscular, or central apnea suspicion; moderate-to-high STOP-BANG score"
+    },
+    {
+      "disposition": "Admit for in-lab PSG",
+      "criteria": "Complex patients requiring attended study: suspected central apnea, concurrent seizure disorder requiring expanded EEG, neuromuscular disease, prior negative HSAT with high clinical suspicion"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Acute ischemic stroke with known or newly diagnosed OSA; severe hypoxemia (SpO2 <85%) with neurological symptoms; obesity hypoventilation syndrome with encephalopathy; status epilepticus in patient with known OSA-epilepsy interaction"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Acute respiratory failure with hypercapnic encephalopathy; massive stroke with airway compromise; refractory status epilepticus with OSA; severe obesity hypoventilation with respiratory acidosis"
+    },
+    {
+      "disposition": "Neurology referral",
+      "criteria": "Cognitive decline with OSA; new-onset seizures in OSA patient; stroke or TIA evaluation; headache evaluation (morning headache pattern); neuropathy/autonomic dysfunction assessment"
+    },
+    {
+      "disposition": "Sleep medicine referral",
+      "criteria": "All patients for CPAP titration, compliance management, and long-term follow-up; evaluate for residual sleepiness; assess for comorbid sleep disorders"
+    },
+    {
+      "disposition": "Follow-up frequency",
+      "criteria": "Every 2-4 weeks during CPAP initiation; every 1-3 months during first year; every 3-6 months once stable with annual neurocognitive screening"
+    }
+  ]
+}
