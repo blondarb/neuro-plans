@@ -30,6 +30,12 @@ jobs:
           python scripts/validate_medication.py --validate-db \
             --save-report medication-report.md
 
+      - name: Verify ICD-10 codes against NLM API
+        continue-on-error: true
+        run: |
+          python scripts/validate_icd10.py --all --verify --quiet \
+            --save-report icd10-report.md
+
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -37,5 +43,6 @@ jobs:
           name: validation-reports
           path: |
             medication-report.md
+            icd10-report.md
             docs/data/pmid-cache.json
           retention-days: 30

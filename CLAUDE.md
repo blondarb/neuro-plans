@@ -12,6 +12,7 @@ Clinical decision support templates for neurological diagnoses.
 | `mkdocs.yml` | Site navigation |
 | `scripts/generate_json.py` | Markdown-to-JSON converter |
 | `scripts/verify_citations.py` | PubMed citation verifier and PMID repair |
+| `scripts/validate_icd10.py` | ICD-10-CM code validation (lint + NLM API) |
 | `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation |
 | `scripts/medication_resolver.py` | Central medication DB lookup |
 | `scripts/extract_medications.py` | Extract medications from plan files |
@@ -102,6 +103,12 @@ python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --check-parity
 # Citation verification (requires internet for --verify)
 python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify
 python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --repair --apply
+
+# ICD-10 code validation
+python -X utf8 scripts/validate_icd10.py docs/drafts/<plan>.md --lint
+python -X utf8 scripts/validate_icd10.py docs/drafts/<plan>.md --verify
+python -X utf8 scripts/validate_icd10.py --all --lint --quiet
+python -X utf8 scripts/validate_icd10.py --all --verify --save-report docs/data/icd10-report.md
 
 # Medication validation (requires internet)
 python3 scripts/validate_medication.py --validate-db

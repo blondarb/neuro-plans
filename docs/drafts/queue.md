@@ -20,7 +20,19 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
-### HIGH PRIORITY — Tier 11 (pending)
+### SLEEP MEDICINE EXPANSION (Tier 12 — pending)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| REM Sleep Behavior Disorder | G47.52 | `rem-sleep-behavior-disorder.md` | `pending` | — | 2026-02-07 |
+| Obstructive Sleep Apnea — Neurological Evaluation | G47.33 | `obstructive-sleep-apnea-neuro.md` | `pending` | — | 2026-02-07 |
+| Insomnia — Neurological Approach | G47.00, G47.01 | `insomnia-neurological.md` | `pending` | — | 2026-02-07 |
+| Idiopathic Hypersomnia | G47.11 | `idiopathic-hypersomnia.md` | `pending` | — | 2026-02-07 |
+| Non-REM Parasomnias | G47.50, G47.51, G47.53 | `non-rem-parasomnias.md` | `pending` | — | 2026-02-07 |
+
+---
+
+### HIGH PRIORITY — Tier 11 (completed)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
@@ -172,7 +184,8 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-02. Total approved: 124 plans.
+- Queue updated 2026-02-07. Total approved: 124 plans. 5 new sleep medicine drafts pending.
+- **Sleep Medicine expansion** (2026-02-07): 5 new drafts added — REM Sleep Behavior Disorder, Obstructive Sleep Apnea (Neuro), Insomnia (Neurological), Idiopathic Hypersomnia, Non-REM Parasomnias. Complements existing Narcolepsy and RLS plans.
 - **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
 - **Tier 11 HIGH PRIORITY batch** (2026-02-01): 17 plans queued as physician-prioritized. Includes vascular (Carotid Stenosis), headache workups (Headache Evaluation, Thunderclap, Headache Unspecified), rare/infectious (Botulism, Neurocysticercosis, HIV-HAND), autoimmune/inflammatory (Susac, Neuro-Behcet's, Hashimoto's Encephalopathy), peripheral (Peroneal Neuropathy, Plexopathy, Paresthesia), movement (Tics/Tourette, Tremor Unspecified), and symptom evaluations (Nystagmus, Tinnitus). Note: "Headache Evaluation" and "Headache, Unspecified" may overlap — physician to clarify scope.
 
