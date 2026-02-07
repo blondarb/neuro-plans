@@ -1,0 +1,1158 @@
+{
+  "id": "non-rem-parasomnias",
+  "title": "Non-REM Parasomnias",
+  "version": "1.0",
+  "icd10": [
+    "** F51.3 (Sleepwalking [somnambulism])",
+    "F51.4 (Sleep terrors [night terrors])",
+    "G47.50 (Parasomnia",
+    "unspecified)",
+    "G47.51 (Confusional arousals)"
+  ],
+  "scope": "** Diagnosis and management of non-REM parasomnias (disorders of arousal) in adults. Covers sleepwalking (somnambulism), sleep terrors (pavor nocturnus), confusional arousals, and related variants including sleep-related eating disorder and sexsomnia. Critical focus on differentiating from nocturnal frontal lobe epilepsy. Includes diagnostic workup, safety interventions, trigger management, and pharmacotherapy. Excludes REM sleep behavior disorder (separate plan), nightmare disorder, and pediatric-specific management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "rationale": "Exclude anemia or infection contributing to sleep fragmentation",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "rationale": "Electrolytes, renal/hepatic function; pre-treatment baseline; exclude metabolic causes",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism increases slow-wave sleep and may precipitate NREM parasomnias",
+          "target": "Normal",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Serum ferritin (CPT 82728)",
+          "rationale": "Iron deficiency contributes to RLS/PLMD which increases NREM arousals and triggers parasomnias",
+          "target": ">30 ng/mL (>75 ng/mL optimal for RLS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Exclude substance use contributing to parasomnias; identify medication triggers (zolpidem, sedative-hypnotics)",
+          "target": "Negative or documented prescribed medications only",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood alcohol level",
+          "rationale": "Alcohol is a potent trigger for NREM parasomnias; document if acute presentation",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "Deficiency can cause neuropsychiatric symptoms and sleep disruption",
+          "target": ">400 pg/mL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "AM cortisol",
+          "rationale": "Adrenal insufficiency or Cushing syndrome can alter sleep architecture",
+          "target": "Normal (6-18 mcg/dL at 8 AM)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood glucose log / HbA1c",
+          "rationale": "Nocturnal hypoglycemia can mimic or trigger parasomnia episodes",
+          "target": "Fasting glucose 70-100 mg/dL; HbA1c <5.7%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medication review for parasomnia triggers",
+          "rationale": "Zolpidem, SSRIs, lithium, quetiapine, sodium oxybate, beta-blockers — all documented parasomnia triggers",
+          "target": "Identify and modify culprit agents",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urine pregnancy test",
+          "rationale": "Reproductive-age females before initiating benzodiazepines or other teratogenic medications",
+          "target": "Negative prior to pharmacotherapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-IgLON5 antibodies",
+          "rationale": "Autoimmune disorder associated with NREM parasomnia, sleep-disordered breathing, and neurodegeneration",
+          "target": "Negative; if positive, confirms anti-IgLON5 disease",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "rationale": "If subacute onset with other neurological symptoms suggesting autoimmune/paraneoplastic etiology",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "HLA typing (research)",
+          "rationale": "HLA-DQB1*05:01 association with sleepwalking under investigation; not yet clinically actionable",
+          "target": "Document for research",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "Video-polysomnography (PSG) with extended EEG montage (CPT 95810)",
+          "timing": "ROUTINE; schedule when events occurring at least monthly",
+          "target": "Capture NREM arousals from N3 sleep; exclude seizure activity; exclude OSA/PLMD as arousal triggers; extended EEG montage critical to distinguish from nocturnal seizures",
+          "contraindications": "None absolute",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep diary / sleep log (2+ weeks)",
+          "timing": "Before PSG; ongoing for monitoring",
+          "target": "Document sleep-wake patterns, sleep deprivation, event timing (first third of night typical), event frequency, potential triggers",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Epworth Sleepiness Scale (ESS)",
+          "timing": "Initial evaluation",
+          "target": "Identify comorbid excessive sleepiness suggesting additional sleep disorder (OSA, narcolepsy)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bed partner / witness interview",
+          "timing": "Initial evaluation; critical for characterization",
+          "target": "Detailed description of events: timing, duration, behaviors, responsiveness, stereotypy, recall; video recordings of events (smartphone) highly valuable",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "Routine EEG (CPT 95816)",
+          "timing": "If nocturnal epilepsy concern; interictal evaluation",
+          "target": "Interictal epileptiform discharges (spikes, sharp waves) suggesting epilepsy; normal interictal EEG does not exclude nocturnal seizures",
+          "contraindications": "None",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI brain without contrast (CPT 70553)",
+          "timing": "If frontal lobe epilepsy suspected; focal neurological signs; atypical features",
+          "target": "Exclude frontal lobe structural lesion (tumor, cortical dysplasia, gliosis)",
+          "contraindications": "Per standard MRI contraindications (pacemaker, metallic implants)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Extended video-EEG monitoring (CPT 95717)",
+          "timing": "If events frequent and PSG non-diagnostic; strong suspicion for epilepsy",
+          "target": "Capture ictal events to definitively classify as epileptic vs. non-epileptic",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Stereo-EEG / invasive monitoring",
+          "timing": "Refractory presumed epilepsy not captured on scalp EEG",
+          "target": "Identify epileptogenic focus for surgical planning",
+          "contraindications": "Coagulopathy; active infection",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Ambulatory EEG (home monitoring)",
+          "timing": "Events too infrequent for inpatient capture",
+          "target": "Document interictal or ictal findings in natural sleep environment",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "SPECT / PET during events",
+          "timing": "Research setting only; rarely clinically indicated",
+          "target": "Focal perfusion changes during events",
+          "contraindications": "Radiation exposure; pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Safety and Environmental Interventions (First Priority — All Patients)": [
+        {
+          "item": "Bedroom safety modifications",
+          "route": "-",
+          "indication": "Injury prevention during sleepwalking/sleep terror episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Bedroom safety modifications N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Lock windows and exterior doors; install door alarms or motion-sensor alarms; remove sharp objects and breakable items from bedroom; place mattress on floor or use bed rails; lock away weapons and car keys; install gates on stairways; secure glass doors and windows",
+            "orderSentence": "Bedroom safety modifications N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Compliance; injury log",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep partner safety plan",
+          "route": "-",
+          "indication": "Prevent injury to bed partner during violent episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Sleep partner safety plan N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Consider separate sleeping arrangements if episodes involve violent or sexual behaviors; educate partner not to forcefully restrain (may worsen agitation); gently redirect patient back to bed without attempting to wake",
+            "orderSentence": "Sleep partner safety plan N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Partner injury assessment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Floor-level sleeping arrangement",
+          "route": "-",
+          "indication": "Reduce fall risk during ambulatory parasomnias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Floor-level sleeping arrangement N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Place mattress directly on floor; remove bedframe; clear area around bed of obstacles and hard furniture",
+            "orderSentence": "Floor-level sleeping arrangement N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Adherence; fall history",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home video monitoring",
+          "route": "-",
+          "indication": "Capture events for diagnostic characterization; assess safety of environment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Home video monitoring N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Infrared/night-vision camera in bedroom; record events for clinical review; assists in differentiating from seizures (stereotypy vs. variable behavior)",
+            "orderSentence": "Home video monitoring N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Video review at follow-up",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Trigger Management — Non-Pharmacologic (All Patients)": [
+        {
+          "item": "Treat obstructive sleep apnea (CPAP)",
+          "route": "Device",
+          "indication": "OSA-triggered arousals precipitate parasomnia episodes; treating OSA reduces NREM arousal frequency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Treat obstructive sleep apnea (CPAP) N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Initiate CPAP per titration study; compliance target >=4 hours/night; resolution of arousal-triggered parasomnias documented in literature",
+            "orderSentence": "Treat obstructive sleep apnea (CPAP) N/A -"
+          },
+          "contraindications": "CPAP intolerance (consider alternatives)",
+          "monitoring": "CPAP compliance; AHI on therapy; parasomnia frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Treat restless legs syndrome / PLMD",
+          "route": "PO/device",
+          "indication": "RLS/PLMD increases NREM arousals which trigger parasomnia episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Treat restless legs syndrome / PLMD N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Iron supplementation if ferritin <75; dopamine agonists or alpha-2-delta ligands per RLS guidelines",
+            "orderSentence": "Treat restless legs syndrome / PLMD N/A -"
+          },
+          "contraindications": "Per individual RLS treatments",
+          "monitoring": "Ferritin; PLMS index; parasomnia frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep hygiene optimization",
+          "route": "-",
+          "indication": "Sleep deprivation is the single strongest trigger for NREM parasomnias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Sleep hygiene optimization N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Regular sleep-wake schedule 7 days/week; target 7-9 hours nightly; avoid sleep deprivation; cool, dark, quiet sleeping environment; limit screen time 1 hour before bed; avoid shift work if possible",
+            "orderSentence": "Sleep hygiene optimization N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Sleep diary; adherence",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Scheduled awakenings",
+          "route": "-",
+          "indication": "Preemptive disruption of N3 sleep before typical event timing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Scheduled awakenings N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Wake patient 15-30 minutes before typical event time; maintain wakefulness for 5 minutes; most effective when events are predictable in timing; typically used for 4-6 weeks",
+            "orderSentence": "Scheduled awakenings N/A -"
+          },
+          "contraindications": "None; may cause sleep deprivation if overused",
+          "monitoring": "Event log; timing adjustment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management / CBT",
+          "route": "-",
+          "indication": "Psychological stress increases NREM sleep instability and arousal frequency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stress management / CBT N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Cognitive behavioral therapy; relaxation training; mindfulness; progressive muscle relaxation; address underlying anxiety or trauma",
+            "orderSentence": "Stress management / CBT N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom response; stress inventory",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol avoidance",
+          "route": "-",
+          "indication": "Alcohol is a potent trigger that fragments NREM sleep and increases arousals",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Alcohol avoidance N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Avoid all alcohol within 3 hours of bedtime; counsel regarding complete avoidance if events correlate with alcohol use",
+            "orderSentence": "Alcohol avoidance N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Adherence; event correlation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Pharmacotherapy": [
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "First-line when parasomnia episodes pose safety risk; suppresses arousals from slow-wave sleep; most evidence for NREM parasomnias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg qHS",
+                "orderSentence": "Clonazepam 0.25 mg qHS PO"
+              },
+              {
+                "text": "0.5 mg qHS",
+                "orderSentence": "Clonazepam 0.5 mg qHS PO"
+              },
+              {
+                "text": "1 mg qHS",
+                "orderSentence": "Clonazepam 1 mg qHS PO"
+              },
+              {
+                "text": "2 mg qHS",
+                "orderSentence": "Clonazepam 2 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25 mg at bedtime; titrate by 0.25 mg every 1-2 weeks based on response; effective range 0.25-2 mg; max 2 mg qHS; taper slowly to discontinue (rebound parasomnias possible)",
+            "orderSentence": "Clonazepam 0.25 mg qHS PO"
+          },
+          "contraindications": "Severe hepatic impairment; untreated OSA (respiratory depression risk); pregnancy (teratogenic); concurrent opioids or heavy alcohol use; myasthenia gravis",
+          "monitoring": "Sedation; tolerance; daytime somnolence; falls risk (especially elderly); respiratory function; rebound parasomnias on discontinuation; abuse potential",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Safe first-line option; consolidates NREM sleep architecture; preferred in elderly or when benzodiazepines contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg qHS",
+                "orderSentence": "Melatonin 3 mg qHS PO"
+              },
+              {
+                "text": "6 mg qHS",
+                "orderSentence": "Melatonin 6 mg qHS PO"
+              },
+              {
+                "text": "9 mg qHS",
+                "orderSentence": "Melatonin 9 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 3 mg 30 minutes before bedtime; may increase by 3 mg every 1-2 weeks; max 9 mg; extended-release formulation may be more effective for maintaining consolidated sleep",
+            "orderSentence": "Melatonin 3 mg qHS PO"
+          },
+          "contraindications": "Autoimmune conditions (theoretical); may exacerbate depression (rare)",
+          "monitoring": "Daytime sedation; headache; vivid dreams; next-day grogginess at higher doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line Pharmacotherapy": [
+        {
+          "item": "Paroxetine",
+          "route": "PO",
+          "indication": "Sleep terrors specifically; SSRI may reduce NREM parasomnia frequency; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Paroxetine 10 mg qHS PO"
+              },
+              {
+                "text": "20 mg qHS",
+                "orderSentence": "Paroxetine 20 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg at bedtime; may increase to 20 mg after 2 weeks; evidence primarily for sleep terrors",
+            "orderSentence": "Paroxetine 10 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs; concurrent pimozide or thioridazine; first trimester pregnancy",
+          "monitoring": "Serotonin syndrome; sexual dysfunction; weight gain; discontinuation symptoms if stopped abruptly; suicidality monitoring in young adults; paradoxical worsening of parasomnias (rare)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Concurrent insomnia with parasomnia; reduces NREM arousals; sedating antidepressant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Trazodone 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Trazodone 50 mg qHS PO"
+              },
+              {
+                "text": "100 mg qHS",
+                "orderSentence": "Trazodone 100 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg at bedtime; titrate by 25 mg every 1-2 weeks; max 100 mg qHS for parasomnia indication",
+            "orderSentence": "Trazodone 25 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs; severe hepatic impairment; concurrent QT-prolonging drugs",
+          "monitoring": "Priapism (rare but serious); orthostatic hypotension; next-day sedation; cardiac arrhythmia at higher doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Imipramine",
+          "route": "PO",
+          "indication": "Refractory sleep terrors; tricyclic antidepressant with evidence for sleep terrors",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Imipramine 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Imipramine 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Imipramine 50 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg at bedtime; titrate by 10-25 mg every 1-2 weeks; max 50 mg qHS; avoid in elderly (anticholinergic burden, falls risk)",
+            "orderSentence": "Imipramine 10 mg qHS PO"
+          },
+          "contraindications": "Recent MI; concurrent MAOIs; cardiac conduction disease; narrow-angle glaucoma; urinary retention; elderly (relative)",
+          "monitoring": "ECG before starting and with dose increases; anticholinergic effects (dry mouth, constipation, urinary retention); orthostatic hypotension; weight gain; QTc prolongation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "Sleep-related eating disorder variant of NREM parasomnia; dual benefit if comorbid migraine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Topiramate 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Topiramate 50 mg qHS PO"
+              },
+              {
+                "text": "100 mg qHS",
+                "orderSentence": "Topiramate 100 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg at bedtime; titrate by 25 mg every 1-2 weeks; target 50-100 mg; max 100 mg qHS for SRED",
+            "orderSentence": "Topiramate 25 mg qHS PO"
+          },
+          "contraindications": "Metabolic acidosis; nephrolithiasis; pregnancy (teratogenic — cleft palate); hepatic failure",
+          "monitoring": "Metabolic acidosis (serum bicarbonate); kidney stones; cognitive effects (word-finding difficulty); weight loss; paresthesias; glaucoma symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Increases slow-wave sleep stability; useful if concurrent neuropathic pain or RLS; reduces NREM arousal frequency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "600 mg qHS",
+                "orderSentence": "Gabapentin 600 mg qHS PO"
+              },
+              {
+                "text": "900 mg qHS",
+                "orderSentence": "Gabapentin 900 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg at bedtime; titrate by 300 mg every 3-5 days; max 900 mg qHS; renal dose adjustment required",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); hypersensitivity",
+          "monitoring": "Sedation; dizziness; peripheral edema; weight gain; respiratory depression if combined with CNS depressants; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Sleep medicine specialist for video-PSG scheduling, diagnosis confirmation, identification of comorbid sleep disorders (OSA, RLS/PLMD), and long-term pharmacotherapy management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology / epilepsy specialist to differentiate from nocturnal frontal lobe epilepsy (sleep-related hypermotor epilepsy) when events are stereotyped, brief, frequent, or occur multiple times per night",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral if significant psychological stress, trauma, anxiety, or comorbid mood disorder is contributing to parasomnia frequency or severity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Forensic sleep medicine evaluation if parasomnia events have medicolegal implications (violence during sleep, sexsomnia, injury to others, sleep-driving)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ENT / pulmonology if obstructive sleep apnea identified as arousal trigger requiring CPAP titration or surgical evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "NREM parasomnias are a neurological condition caused by incomplete arousals from deep sleep; they are not a psychiatric disorder or sign of emotional disturbance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Safety-proof the sleeping environment immediately: lock doors and windows, install alarms, remove sharp objects, place mattress on floor, secure weapons and car keys",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT forcefully restrain or attempt to aggressively wake someone during an episode; this may worsen agitation and risk injury; instead, gently guide the person back to bed and speak calmly",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any injuries to self or others occurring during episodes; escalating frequency, increasing violence, or new behaviors require urgent medical reassessment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sleep deprivation — this is the single strongest trigger; maintain a consistent sleep schedule even on weekends and holidays",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol within 3 hours of bedtime; alcohol is a potent trigger for NREM parasomnias",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Bed partners should sleep in a separate room if episodes involve violent or sexual behaviors until treatment is effective",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Record events on video (smartphone with night vision or infrared camera) whenever safely possible; video recordings are extremely valuable for diagnosis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain strict consistent sleep-wake schedule 7 days per week; sleep deprivation is the most potent and modifiable trigger for NREM parasomnias",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress reduction techniques including mindfulness, progressive muscle relaxation, or cognitive behavioral therapy; psychological stress increases NREM sleep instability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol within 3 hours of bedtime; alcohol fragments NREM sleep and lowers the arousal threshold",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular moderate exercise (30 minutes daily) promotes consolidated sleep; avoid vigorous exercise within 2 hours of bedtime",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid heavy meals within 2 hours of bedtime; large meals may disrupt sleep architecture and increase arousals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Review all medications with provider; common triggers include zolpidem, SSRIs, lithium, quetiapine, sodium oxybate, and beta-blockers",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid shift work when possible; irregular sleep schedules are a significant trigger for disorders of arousal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Treat comorbid sleep disorders (OSA with CPAP, RLS with appropriate therapy) as these increase the arousal burden that triggers parasomnia events",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Nocturnal frontal lobe epilepsy (NFLE) / Sleep-related hypermotor epilepsy (SHE)",
+      "features": "KEY DIFFERENTIAL: highly stereotyped events; brief duration (typically <2 min); multiple events per night possible; hypermotor semiology (kicking, pedaling, thrashing); may retain awareness; can occur at any time of night; events cluster in NREM stage 2",
+      "tests": "Video-PSG with extended EEG montage; routine EEG (may show frontal spikes/sharp waves); MRI brain (frontal cortical dysplasia); trial of carbamazepine (positive response supports epilepsy)"
+    },
+    {
+      "diagnosis": "REM sleep behavior disorder (RBD)",
+      "features": "Occurs during REM sleep (second half of night); dream enactment with recall of vivid/violent dreams; typically older males >50; REM without atonia on PSG; associated with alpha-synucleinopathies (Parkinson, DLB, MSA)",
+      "tests": "Video-PSG showing REM without atonia; clinical history of dream recall and REM-timing events"
+    },
+    {
+      "diagnosis": "Obstructive sleep apnea with confusional arousals",
+      "features": "Pseudo-parasomnia triggered by respiratory arousals; snoring, witnessed apneas, obesity; events resolve with CPAP treatment",
+      "tests": "PSG with respiratory scoring (AHI >5); trial of CPAP with resolution of events"
+    },
+    {
+      "diagnosis": "Nocturnal panic attacks",
+      "features": "Full awakening with complete recall; subjective terror with palpitations, dyspnea, chest pain; daytime panic attacks also present; occurs from NREM stage 2-3 but patient is fully alert after",
+      "tests": "Psychiatric evaluation; presence of daytime panic disorder; full recall of event (vs. amnesia in parasomnias)"
+    },
+    {
+      "diagnosis": "PTSD nightmares",
+      "features": "Dream recall present; REM-associated; history of trauma; nightmares with thematic content related to traumatic experiences; full arousal with emotional recall",
+      "tests": "Psychiatric evaluation; trauma history; PSG shows events arise from REM; dream content recall"
+    },
+    {
+      "diagnosis": "Dissociative disorder (nocturnal dissociative episodes)",
+      "features": "Events arise from established wakefulness (not from sleep); normal EEG during events; prolonged episodes; history of trauma/abuse; events may occur with eyes open during wakefulness in bed",
+      "tests": "Video-PSG showing events arise from documented wakefulness (alpha EEG rhythm); psychiatric evaluation"
+    },
+    {
+      "diagnosis": "Medication-induced parasomnia",
+      "features": "Temporal relationship to medication initiation or dose change; common culprits: zolpidem (sleepwalking, sleep-driving), SSRIs, lithium, quetiapine, sodium oxybate",
+      "tests": "Medication review; temporal correlation; resolution with dose reduction or discontinuation"
+    },
+    {
+      "diagnosis": "Nocturnal hypoglycemia",
+      "features": "Diaphoresis, confusion, tremor; occurs in diabetic patients on insulin or sulfonylureas; blood glucose <70 mg/dL during events",
+      "tests": "Continuous glucose monitoring; fingerstick glucose during or immediately after event"
+    },
+    {
+      "diagnosis": "Epileptic wandering (nonconvulsive status)",
+      "features": "Prolonged confusional wandering; may have subtle ictal features (automatisms, lip smacking); postictal confusion",
+      "tests": "EEG during event showing seizure activity; response to antiseizure medications"
+    },
+    {
+      "diagnosis": "Timing in sleep cycle",
+      "features": "First third of night (N3/slow-wave sleep predominance)",
+      "tests": "Any time of night; often second half; NREM stage 2"
+    },
+    {
+      "diagnosis": "Episode duration",
+      "features": "1-30 minutes (often prolonged)",
+      "tests": "Usually <2 minutes (brief)"
+    },
+    {
+      "diagnosis": "Frequency",
+      "features": "Weekly to monthly; sporadic",
+      "tests": "Multiple episodes per night possible; often nightly"
+    },
+    {
+      "diagnosis": "Stereotypy",
+      "features": "Variable behavior episode to episode",
+      "tests": "Highly stereotyped (same movements each event)"
+    },
+    {
+      "diagnosis": "Semiology",
+      "features": "Complex behaviors: walking, talking, eating, exploring",
+      "tests": "Hypermotor: kicking, pedaling, thrashing, dystonic posturing"
+    },
+    {
+      "diagnosis": "Amnesia",
+      "features": "Yes — complete or near-complete",
+      "tests": "Variable; may retain some awareness"
+    },
+    {
+      "diagnosis": "Responsiveness during event",
+      "features": "Unresponsive; difficult to arouse",
+      "tests": "May be partially responsive"
+    },
+    {
+      "diagnosis": "Interictal EEG",
+      "features": "Normal",
+      "tests": "May show frontal epileptiform discharges (often normal)"
+    },
+    {
+      "diagnosis": "Family history",
+      "features": "Strong genetic predisposition (~45-60%)",
+      "tests": "May have family history of epilepsy"
+    },
+    {
+      "diagnosis": "Provocation by sleep deprivation",
+      "features": "Yes — strongest trigger",
+      "tests": "Yes — but events occur regardless"
+    },
+    {
+      "diagnosis": "Response to carbamazepine",
+      "features": "No",
+      "tests": "Yes — often excellent"
+    },
+    {
+      "diagnosis": "Age of onset",
+      "features": "Childhood (may persist into adulthood)",
+      "tests": "Any age; adolescence to adulthood"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ICSD-3 diagnostic criteria for disorders of arousal (sleepwalking, sleep terrors, confusional arousals)",
+      "evidenceLevel": "Consensus guidelines",
+      "source": "[American Academy of Sleep Medicine. ICSD-3-TR 2023](https://aasm.org/clinical-resources/international-classification-sleep-disorders/)"
+    },
+    {
+      "recommendation": "NREM parasomnias pathophysiology: local slow-wave dissociation during arousals from N3 sleep",
+      "evidenceLevel": "Class II",
+      "source": "[Castelnovo et al. Sleep Med Rev 2018](https://pubmed.ncbi.nlm.nih.gov/28363449/)"
+    },
+    {
+      "recommendation": "Comprehensive review of NREM parasomnias: epidemiology, genetics, clinical features, and management",
+      "evidenceLevel": "Expert review",
+      "source": "[Arnulf et al. Sleep Med Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22024172/)"
+    },
+    {
+      "recommendation": "Distinguishing nocturnal frontal lobe epilepsy from NREM parasomnias: clinical and video-PSG features",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Derry et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16513659/)"
+    },
+    {
+      "recommendation": "Nocturnal frontal lobe epilepsy: clinical and polysomnographic features distinguishing from parasomnias",
+      "evidenceLevel": "Class II",
+      "source": "[Provini et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10468515/)"
+    },
+    {
+      "recommendation": "Treatment of parasomnias: pharmacologic and non-pharmacologic approaches including clonazepam and scheduled awakenings",
+      "evidenceLevel": "Expert review",
+      "source": "[Attarian & Zhu. Curr Treat Options Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23609781/)"
+    },
+    {
+      "recommendation": "Parasomnias clinical guidelines: diagnosis, safety management, and evidence-based treatment",
+      "evidenceLevel": "Clinical guidelines",
+      "source": "[Fleetham & Fleming. CMAJ 2014](https://pubmed.ncbi.nlm.nih.gov/25349007/)"
+    },
+    {
+      "recommendation": "Clonazepam efficacy for NREM parasomnias; suppression of slow-wave sleep arousals",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Schenck & Mahowald. Sleep 1996](https://pubmed.ncbi.nlm.nih.gov/8855039/)"
+    },
+    {
+      "recommendation": "OSA as trigger for NREM parasomnias: resolution of sleepwalking and sleep terrors with CPAP",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Guilleminault et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15897165/)"
+    },
+    {
+      "recommendation": "Sleep deprivation as primary trigger for disorders of arousal; experimental provocation studies",
+      "evidenceLevel": "Class II",
+      "source": "[Zadra et al. Ann Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18571773/)"
+    },
+    {
+      "recommendation": "Anti-IgLON5 disease: autoimmune disorder with prominent NREM parasomnia features",
+      "evidenceLevel": "Class III",
+      "source": "[Sabater et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24703753/)"
+    },
+    {
+      "recommendation": "Genetic predisposition to sleepwalking: family and twin studies showing strong heritability",
+      "evidenceLevel": "Class II",
+      "source": "[Licis et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21242494/)"
+    },
+    {
+      "recommendation": "Melatonin for NREM parasomnias: consolidation of sleep architecture and reduction of arousals",
+      "evidenceLevel": "Class III, Level C",
+      "source": "Expert consensus; case series"
+    },
+    {
+      "recommendation": "Topiramate for sleep-related eating disorder",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Winkelman. Sleep Med 2003](https://pubmed.ncbi.nlm.nih.gov/14592363/)"
+    },
+    {
+      "recommendation": "European Sleep Research Society guideline on parasomnias",
+      "evidenceLevel": "Guideline, expert consensus",
+      "source": "[Galbiati et al. J Sleep Res 2019](https://pubmed.ncbi.nlm.nih.gov/30710407/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Episode frequency (sleep diary)",
+      "frequency": "Each visit; ongoing patient tracking",
+      "action": "Optimize trigger management; adjust pharmacotherapy; reassess diagnosis if events change character",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Safety incident / injury log",
+      "frequency": "Each visit",
+      "action": "Escalate environmental safety measures; consider separate sleeping; increase medication dose; reassess",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Trigger identification log",
+      "frequency": "Each visit",
+      "action": "Targeted intervention for identified triggers",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Medication response and side effects",
+      "frequency": "Each visit during titration; every 3-6 months when stable",
+      "action": "Dose adjustment; switch therapy; address specific adverse effects",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bed partner assessment",
+      "frequency": "Each visit",
+      "action": "Separate sleeping; increase treatment intensity; partner counseling",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Clonazepam-specific: sedation and falls",
+      "frequency": "Each visit if on clonazepam",
+      "action": "Reduce dose; switch to melatonin; evaluate respiratory function (especially if comorbid OSA)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Clonazepam-specific: tolerance assessment",
+      "frequency": "Every 3-6 months",
+      "action": "Gradual dose increase (max 2 mg); consider drug holiday with safety precautions; switch to alternative",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep study follow-up",
+      "frequency": "6-12 months after initial PSG if comorbid sleep disorders treated",
+      "action": "Adjust CPAP; treat persistent PLMD; reassess parasomnia diagnosis",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Annual diagnostic reassessment",
+      "frequency": "Annually",
+      "action": "If events become stereotyped, occur in REM, or include new features: repeat video-PSG; consider RBD (may evolve) or epilepsy (may unmask)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home with safety plan",
+      "criteria": "Majority of patients; established parasomnia with no acute injury; safety modifications and trigger counseling provided; outpatient sleep medicine follow-up arranged"
+    },
+    {
+      "disposition": "Outpatient management",
+      "criteria": "Newly suspected or established NREM parasomnia for diagnostic workup, trigger management, and chronic medication management"
+    },
+    {
+      "disposition": "Admit for diagnostic video-PSG/EEG",
+      "criteria": "Patients requiring in-lab video-polysomnography with extended EEG montage to differentiate parasomnia from nocturnal seizures; frequent events amenable to capture"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Serious injury sustained during parasomnia episode (falls, lacerations, fractures); unclear diagnosis requiring extended video-EEG monitoring; initiation of treatment requiring observation"
+    },
+    {
+      "disposition": "Admit for extended video-EEG monitoring",
+      "criteria": "Diagnostic uncertainty between parasomnia and epilepsy; events not captured on initial PSG; stereotyped events raising epilepsy concern"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Not typically applicable for parasomnias; consider only if significant trauma-related injury (head injury, internal injury from falls or sleepwalking through windows)"
+    },
+    {
+      "disposition": "Sleep medicine referral",
+      "criteria": "All patients with suspected NREM parasomnia for diagnostic confirmation, comorbid sleep disorder identification, and treatment optimization"
+    },
+    {
+      "disposition": "Neurology / epilepsy referral",
+      "criteria": "Any patient with stereotyped events, events multiple times per night, brief duration events, retained awareness during events, or failure to respond to standard parasomnia treatment"
+    },
+    {
+      "disposition": "Follow-up frequency",
+      "criteria": "Every 2-4 weeks during initial treatment titration; every 3-6 months once stable; sooner if new safety concerns arise"
+    }
+  ]
+}

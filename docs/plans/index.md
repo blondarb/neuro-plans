@@ -254,13 +254,25 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 
 ---
 
+## Sleep Medicine
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [Narcolepsy](narcolepsy.md) | ED, HOSP, OPD | G47.411, G47.419 |
+| [REM Sleep Behavior Disorder](rem-sleep-behavior-disorder.md) | ED, HOSP, OPD | G47.52 |
+| [Obstructive Sleep Apnea — Neurological Evaluation](obstructive-sleep-apnea-neuro.md) | ED, HOSP, OPD | G47.33 |
+| [Insomnia — Neurological Approach](insomnia-neurological.md) | ED, HOSP, OPD | G47.00, G47.01, F51.01 |
+| [Idiopathic Hypersomnia](idiopathic-hypersomnia.md) | ED, HOSP, OPD | G47.11, G47.12 |
+| [Non-REM Parasomnias](non-rem-parasomnias.md) | ED, HOSP, OPD | F51.3, F51.4, G47.50, G47.51 |
+
+---
+
 ## Other
 
 | Plan | Setting Coverage | ICD-10 |
 |------|------------------|--------|
 | [Vertigo / Dizziness](vertigo-dizziness-evaluation.md) | ED, HOSP, OPD | R42, H81.10 |
 | [Post-Concussion Syndrome](post-concussion-syndrome.md) | ED, HOSP, OPD | F07.81, S06.0X0A |
-| [Narcolepsy](narcolepsy.md) | ED, HOSP, OPD | G47.411, G47.419 |
 | [Nystagmus Evaluation](nystagmus-evaluation.md) | ED, HOSP, OPD, ICU | H55.00 |
 | [Tinnitus Evaluation](tinnitus-evaluation.md) | ED, HOSP, OPD, ICU | H93.19 |
 | [Paresthesia / Numbness / Tingling](paresthesia-numbness-tingling.md) | ED, HOSP, OPD, ICU | R20.2 |
