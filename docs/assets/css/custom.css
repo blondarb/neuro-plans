@@ -1152,12 +1152,7 @@ h3:has(.inline-comment-btn) {
   padding: 6px 8px;
 }
 
-/* Tables with 5+ columns: nowrap for data columns, wrap for first column */
-.md-typeset table:not([class]):has(th:nth-child(5)) th,
-.md-typeset table:not([class]):has(th:nth-child(5)) td {
-  white-space: nowrap;
-}
-
+/* Tables with 5+ columns: first column gets constrained width with wrapping */
 .md-typeset table:not([class]):has(th:nth-child(5)) td:first-child,
 .md-typeset table:not([class]):has(th:nth-child(5)) th:first-child {
   white-space: normal;
@@ -1199,14 +1194,14 @@ h3:has(.inline-comment-btn) {
 
 /* ========================================
    VENUE COLUMNS (ED, HOSP, OPD, ICU)
-   Positioned as last 4 columns in tables
+   Target by position depending on table type
    ======================================== */
 
-/* Venue columns - center-aligned, narrow, compact
-   Only apply to tables with MORE than 4 columns (using :has() to detect 5th column) */
-.md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4),
-.md-typeset table:not([class]):has(td:nth-child(5)) td:nth-last-child(-n+4) {
+/* --- Treatment tables (10+ columns): venue cols are last 4 --- */
+.md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
+.md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4) {
   text-align: center;
+  white-space: nowrap;
   min-width: 35px;
   max-width: 55px;
   padding: 4px 5px;
@@ -1214,14 +1209,54 @@ h3:has(.inline-comment-btn) {
   font-weight: 600;
 }
 
-/* Venue column headers - slightly smaller (only for tables with 5+ columns) */
-.md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4) {
-  font-size: 0.65rem;
+.md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4) {
   background: #ccfbf1;
   color: #0f766e;
 }
 
-[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4) {
+[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4) {
+  background: #475569;
+}
+
+/* --- Workup/imaging tables (7-9 columns): venue cols are positions 2-5 --- */
+.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
+.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5) {
+  text-align: center;
+  white-space: nowrap;
+  min-width: 55px;
+  max-width: 75px;
+  padding: 4px 6px;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5) {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5) {
+  background: #475569;
+}
+
+/* --- 6-column workup tables: venue cols are positions 2-4 --- */
+.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
+.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
+  text-align: center;
+  white-space: nowrap;
+  min-width: 55px;
+  max-width: 75px;
+  padding: 4px 6px;
+  font-size: 0.65rem;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4) {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4) {
   background: #475569;
 }
 
@@ -1245,12 +1280,30 @@ h3:has(.inline-comment-btn) {
     padding: 1px 2px;
   }
 
-  /* Venue columns even more compact on medium screens (only for tables with 5+ columns) */
-  .md-typeset table:not([class]):has(th:nth-child(5)) th:nth-last-child(-n+4),
-  .md-typeset table:not([class]):has(td:nth-child(5)) td:nth-last-child(-n+4) {
+  /* Venue columns compact on medium screens - treatment tables (10+ cols) */
+  .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
+  .md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4) {
     min-width: 30px;
     max-width: 45px;
     padding: 3px 4px;
+    font-size: 0.6rem;
+  }
+
+  /* Venue columns compact on medium screens - workup/imaging tables (7-9 cols) */
+  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
+  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5) {
+    min-width: 50px;
+    max-width: 65px;
+    padding: 3px 5px;
+    font-size: 0.6rem;
+  }
+
+  /* Venue columns compact on medium screens - 6-column workup tables */
+  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
+  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
+    min-width: 50px;
+    max-width: 65px;
+    padding: 3px 5px;
     font-size: 0.6rem;
   }
 
@@ -1285,10 +1338,21 @@ h3:has(.inline-comment-btn) {
     max-width: none;
   }
 
-  /* Allow data columns to wrap on mobile for better readability */
+  /* Allow all columns to wrap on mobile for readability */
   .md-typeset table:not([class]):has(th:nth-child(5)) th,
   .md-typeset table:not([class]):has(th:nth-child(5)) td {
     white-space: normal;
+  }
+
+  /* Relax venue column widths on mobile so wrapped text (ROUTINE etc.) fits */
+  .md-typeset table:not([class]):has(th:nth-child(10)) th:nth-last-child(-n+4),
+  .md-typeset table:not([class]):has(th:nth-child(10)) td:nth-last-child(-n+4),
+  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) th:nth-child(n+2):nth-child(-n+5),
+  .md-typeset table:not([class]):has(th:nth-child(7)):not(:has(th:nth-child(10))) td:nth-child(n+2):nth-child(-n+5),
+  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) th:nth-child(n+2):nth-child(-n+4),
+  .md-typeset table:not([class]):has(th:nth-child(6)):not(:has(th:nth-child(7))) td:nth-child(n+2):nth-child(-n+4) {
+    min-width: 40px;
+    max-width: 60px;
   }
 }
 
