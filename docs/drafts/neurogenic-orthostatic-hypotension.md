@@ -1,7 +1,7 @@
 ---
 title: "Neurogenic Orthostatic Hypotension"
 description: "Clinical decision support for neurogenic orthostatic hypotension evaluation and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -19,7 +19,7 @@ tags:
 
 # Neurogenic Orthostatic Hypotension
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 8, 2026
 **REVISED:** February 8, 2026
 **STATUS:** Draft
@@ -30,9 +30,9 @@ tags:
 
 **ICD-10:** I95.1 (Orthostatic hypotension), G90.09 (Other idiopathic peripheral autonomic neuropathy)
 
-**CPT CODES:** 85025 (CBC), 80048 (BMP), 83036 (HbA1c), 84100 (Phosphorus — used for BMP panel context), 84443 (TSH), 82533 (Cortisol), 82607 (Vitamin B12), 86235 (Nuclear antigen antibody), 95921 (Autonomic function test — cardiovagal), 95922 (Autonomic function test — adrenergic), 95923 (QSART — sudomotor), 95924 (Tilt table test), 93000 (12-lead ECG), 70553 (MRI brain with and without contrast), 78451 (Cardiac MIBG scintigraphy), 95907-95913 (Nerve conduction studies)
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 84443 (TSH), 82607 (Vitamin B12), 82382 (Catecholamines, fractionated), 82384 (Catecholamines, 24-hour urine), 95924 (Tilt table test / autonomic testing), 95923 (QSART / sudomotor testing), 95922 (Autonomic function test — adrenergic), 95921 (Autonomic function test — cardiovagal), 93000 (12-lead ECG), 93306 (Echocardiogram), 70553 (MRI brain with and without contrast), 88305 (Skin biopsy pathology), 86235 (ANA), 83516 (Ganglionic AChR Ab), 83036 (HbA1c), 82533 (Cortisol), 78451 (Cardiac MIBG scintigraphy), 95907-95913 (Nerve conduction studies)
 
-**SYNONYMS:** Neurogenic orthostatic hypotension, nOH, autonomic orthostatic hypotension, neurogenic OH, orthostatic hypotension due to autonomic failure, sympathetic vasomotor failure, neurogenic syncope, adrenergic failure, autonomic insufficiency with orthostatic hypotension
+**SYNONYMS:** nOH, neurogenic orthostatic hypotension, orthostatic hypotension, postural hypotension, autonomic failure, orthostatic syncope, autonomic neuropathy with OH, sympathetic vasoconstrictor failure, neurogenic OH, autonomic orthostatic hypotension, orthostatic hypotension due to autonomic failure, adrenergic failure, autonomic insufficiency with orthostatic hypotension
 
 **SCOPE:** Evaluation and management of neurogenic orthostatic hypotension (nOH) in adults. Includes differentiation from non-neurogenic OH, etiologic workup (alpha-synucleinopathies, diabetic autonomic neuropathy, amyloid neuropathy, autoimmune autonomic ganglionopathy, pure autonomic failure), autonomic testing, pharmacologic and non-pharmacologic management, supine hypertension management, and falls prevention. Covers ED, hospital, and outpatient settings. Excludes non-neurogenic causes of OH (dehydration, hemorrhage, medication-induced) unless as differential.
 
@@ -131,47 +131,47 @@ tags:
 | IV normal saline | IV | Acute symptomatic nOH with hemodynamic compromise | 500-1000 mL :: IV :: once :: NS 500-1000 mL bolus; repeat if needed based on response | Heart failure, volume overload | Volume status, BP, HR | STAT | STAT | - | STAT |
 | Medication review and discontinuation of offending agents | - | All patients with new or worsening OH | N/A :: - :: per protocol :: Review and reduce/discontinue diuretics, alpha-blockers, vasodilators, tricyclics, dopamine agonists | Clinical judgment | BP, symptoms | STAT | STAT | ROUTINE | STAT |
 | Supine positioning with legs elevated | - | Acute symptomatic hypotension | N/A :: - :: continuous :: Trendelenburg or leg elevation to improve venous return | None | BP | STAT | STAT | - | STAT |
-| Bolus water drinking | PO | Acute symptomatic OH; pressor effect within 5-15 min | 480 mL (16 oz) :: PO :: once :: Rapid ingestion of 480 mL cold water; raises SBP 20-30 mmHg within 5-15 min via osmopressor reflex | Fluid restriction | BP | STAT | STAT | ROUTINE | - |
+| Bolus water drinking | PO | Acute symptomatic OH; pressor effect within 5-15 min | 480 mL (16 oz) :: PO :: once :: Rapid ingestion of 480 mL cold water; raises SBP 20-30 mmHg within 5-15 min via osmopressor reflex | Fluid restriction, NPO status | BP | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. Non-Pharmacologic Therapies
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Increased dietary salt intake | PO | Chronic nOH management; volume expansion | 6-10 g/day :: PO :: daily :: 6-10 g sodium per day via dietary supplementation or salt tablets (1 g tabs, 2-3 TID with meals) | Heart failure, severe supine HTN, renal failure | BP, edema, renal function | - | ROUTINE | ROUTINE | - |
-| Increased fluid intake | PO | Chronic nOH; volume expansion | 2-3 L/day :: PO :: daily :: Target 2-3 L fluid per day; distribute throughout the day | Heart failure, fluid restriction | Volume status | - | ROUTINE | ROUTINE | - |
+| Increased dietary salt intake | PO | Chronic nOH management; volume expansion | 6-10 g/day :: PO :: daily :: 6-10 g sodium per day via dietary supplementation or salt tablets (1 g tabs, 2-3 TID with meals) | Heart failure, severe supine HTN, renal failure | BP, edema, renal function | EXT | ROUTINE | ROUTINE | - |
+| Increased fluid intake | PO | Chronic nOH; volume expansion | 2-3 L/day :: PO :: daily :: Target 2-3 L fluid per day; distribute throughout the day | Heart failure, fluid restriction | Volume status | EXT | ROUTINE | ROUTINE | - |
 | Compression garments — abdominal binder | - | Chronic nOH; venous pooling reduction | N/A :: - :: continuous :: Abdominal binder (20-40 mmHg); more effective than leg stockings alone | Abdominal wound, skin breakdown | Compliance, comfort | - | ROUTINE | ROUTINE | - |
 | Compression garments — waist-high stockings | - | Chronic nOH; venous pooling reduction | N/A :: - :: continuous :: Waist-high compression stockings 30-40 mmHg; thigh-high less effective | Peripheral vascular disease, skin ulcers | Compliance | - | ROUTINE | ROUTINE | - |
-| Head-of-bed elevation | - | Supine hypertension mitigation; reduce nocturnal diuresis | N/A :: - :: nightly :: Elevate head of bed 10-20 degrees (6-9 inch blocks under head posts); reduces nocturnal natriuresis and expands daytime plasma volume | None | Supine BP, symptoms | - | ROUTINE | ROUTINE | - |
-| Counter-pressure maneuvers | - | Acute or chronic nOH; during prodromal symptoms | N/A :: - :: per episode :: Leg crossing with muscle tensing, squatting, bending forward; raises BP 20-30 mmHg acutely | Severe arthritis limiting maneuvers | Symptom relief | ROUTINE | ROUTINE | ROUTINE | - |
+| Head-of-bed elevation | - | Supine hypertension mitigation; reduce nocturnal diuresis | N/A :: - :: nightly :: Elevate head of bed 10-20 degrees (6-9 inch blocks under head posts); reduces nocturnal natriuresis and expands daytime plasma volume | None | Supine BP, symptoms | - | ROUTINE | ROUTINE | ROUTINE |
+| Counter-pressure maneuvers | - | Acute or chronic nOH; during prodromal symptoms | N/A :: - :: per episode :: Leg crossing with muscle tensing, squatting, bending forward; raises BP 20-30 mmHg acutely | Severe arthritis limiting maneuvers | Symptom relief | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 | Small frequent meals; reduce carbohydrate load | PO | Post-prandial hypotension component | N/A :: PO :: daily :: 5-6 small meals per day; limit carbohydrate intake per meal; avoid alcohol | None | Post-prandial BP | - | ROUTINE | ROUTINE | - |
 
 ### 3C. First-Line Pharmacotherapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Midodrine | PO | nOH with persistent symptoms despite non-pharmacologic measures | 2.5 mg TID; 5 mg TID; 10 mg TID :: PO :: TID :: Start 2.5 mg TID; titrate by 2.5 mg q1-2 weeks; max 10 mg TID; last dose no later than 4 PM to avoid supine HTN; onset 30-45 min, duration 3-4 hr | Supine hypertension (SBP >180), urinary retention, pheochromocytoma, severe organic heart disease, thyrotoxicosis | Supine BP (especially at night), urinary retention, scalp tingling, piloerection | - | ROUTINE | ROUTINE | - |
-| Droxidopa (Northera) | PO | Symptomatic nOH specifically due to autonomic failure (PD, MSA, PAF, dopamine beta-hydroxylase deficiency) | 100 mg TID; 200 mg TID; 300 mg TID; 600 mg TID :: PO :: TID :: Start 100 mg TID; titrate by 100 mg TID q24-48 hr; max 600 mg TID; FDA-approved for symptomatic nOH | Supine hypertension | Supine BP (measure before next dose and at bedtime); must re-evaluate efficacy after 2 weeks per FDA requirement | - | ROUTINE | ROUTINE | - |
-| Fludrocortisone | PO | nOH with volume depletion component; plasma volume expansion | 0.05 mg daily; 0.1 mg daily; 0.2 mg daily :: PO :: daily :: Start 0.05-0.1 mg daily; titrate q1-2 weeks; max 0.2 mg daily; monitor for hypokalemia and supine HTN; off-label for nOH | Heart failure, severe supine HTN, hypokalemia | K+, Mg2+, supine BP, weight, edema | - | ROUTINE | ROUTINE | - |
+| Midodrine | PO | nOH with persistent symptoms despite non-pharmacologic measures | 2.5 mg TID; 5 mg TID; 10 mg TID :: PO :: TID :: Start 2.5 mg TID; titrate by 2.5 mg q1-2 weeks; max 10 mg TID; last dose no later than 4 PM to avoid supine HTN; onset 30-45 min, duration 3-4 hr | Supine hypertension (SBP >180), urinary retention, pheochromocytoma, severe organic heart disease, thyrotoxicosis | Supine BP (especially at night), urinary retention, scalp tingling, piloerection | EXT | ROUTINE | ROUTINE | EXT |
+| Droxidopa (Northera) | PO | Symptomatic nOH specifically due to autonomic failure (PD, MSA, PAF, dopamine beta-hydroxylase deficiency) | 100 mg TID; 200 mg TID; 300 mg TID; 600 mg TID :: PO :: TID :: Start 100 mg TID; titrate by 100 mg TID q24-48 hr; max 600 mg TID; FDA-approved for symptomatic nOH | Supine hypertension | Supine BP (measure before next dose and at bedtime); must re-evaluate efficacy after 2 weeks per FDA requirement | EXT | ROUTINE | ROUTINE | EXT |
+| Fludrocortisone | PO | nOH with volume depletion component; plasma volume expansion | 0.05 mg daily; 0.1 mg daily; 0.2 mg daily :: PO :: daily :: Start 0.05-0.1 mg daily; titrate q1-2 weeks; max 0.2 mg daily; monitor for hypokalemia and supine HTN; off-label for nOH | Heart failure, severe supine HTN, hypokalemia | K+, Mg2+, supine BP, weight, edema | EXT | ROUTINE | ROUTINE | EXT |
 
 ### 3D. Second-Line/Refractory Therapies
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
 | Pyridostigmine | PO | Mild-moderate nOH; augments ganglionic neurotransmission; less supine HTN risk | 30 mg TID; 60 mg TID :: PO :: TID :: Start 30 mg TID; may increase to 60 mg TID; best for mild OH; may combine with midodrine 5 mg for added benefit | Asthma, mechanical GI/urinary obstruction, bradycardia | Cholinergic side effects (GI cramping, diarrhea), HR | - | ROUTINE | ROUTINE | - |
-| Atomoxetine | PO | nOH refractory to first-line; norepinephrine reuptake inhibitor; may benefit central autonomic lesions (MSA) | 10 mg daily; 18 mg daily :: PO :: daily-BID :: Start 10-18 mg daily or BID; enhances residual sympathetic tone; evidence from small trials | Narrow-angle glaucoma, pheochromocytoma, concurrent MAOIs | HR, BP (standing and supine), mood | - | - | EXT | - |
-| Yohimbine | PO | Refractory nOH; alpha-2 adrenergic antagonist; enhances norepinephrine release | 2 mg TID; 5.4 mg TID :: PO :: TID :: Start 2 mg TID; may increase to 5.4 mg TID; limited evidence | Renal/hepatic disease, concurrent antidepressants | BP, anxiety, palpitations | - | - | EXT | - |
-| Erythropoietin (EPO) | SC | nOH with concurrent anemia (Hgb <11); expands red cell mass and blood volume | 25 units/kg; 50 units/kg :: SC :: 3x/week :: 25-50 units/kg SC 3x/week; target Hgb 11-12 g/dL; slow response over weeks | Uncontrolled HTN, thrombotic risk, pure red cell aplasia history | Hgb, Hct, iron studies, BP, thrombotic events | - | - | EXT | - |
-| Octreotide | SC | Refractory post-prandial hypotension in nOH | 12.5 mcg; 25 mcg; 50 mcg :: SC :: pre-meal :: 12.5-50 mcg SC 30 min before meals; reduces splanchnic blood pooling | Cholelithiasis | Blood glucose, GI symptoms, gallbladder US q6-12 months | - | - | EXT | - |
-| Desmopressin (DDAVP) | PO/IN | Nocturnal polyuria contributing to morning OH; reduces nighttime urine output | 0.1 mg; 0.2 mg :: PO :: nightly :: 0.1-0.2 mg PO at bedtime (or 10-20 mcg intranasal); must hold fluids after dosing to avoid hyponatremia | Hyponatremia, HF, polydipsia | Serum Na+ (check within 1 week of initiation and regularly), weight | - | - | EXT | - |
+| Atomoxetine | PO | nOH refractory to first-line; norepinephrine reuptake inhibitor; benefits central autonomic lesions (MSA) | 10 mg daily; 18 mg daily :: PO :: daily-BID :: Start 10-18 mg daily or BID; enhances residual sympathetic tone; evidence from small trials | Narrow-angle glaucoma, pheochromocytoma, concurrent MAOIs | HR, BP (standing and supine), mood | - | EXT | EXT | - |
+| Yohimbine | PO | Refractory nOH; alpha-2 adrenergic antagonist; enhances norepinephrine release | 2 mg TID; 5.4 mg TID :: PO :: TID :: Start 2 mg TID; increase to 5.4 mg TID; limited evidence | Renal/hepatic disease, concurrent antidepressants | BP, anxiety, palpitations | - | - | EXT | - |
+| Erythropoietin (EPO) | SC | nOH with concurrent anemia (Hgb <11); expands red cell mass and blood volume | 25 units/kg; 50 units/kg :: SC :: 3x/week :: 25-50 units/kg SC 3x/week; target Hgb 11-12 g/dL; slow response over weeks | Uncontrolled HTN, thrombotic risk, pure red cell aplasia history | Hgb, Hct, iron studies, BP, thrombotic events | - | EXT | EXT | - |
+| Octreotide | SC | Refractory post-prandial hypotension in nOH | 12.5 mcg; 25 mcg; 50 mcg :: SC :: pre-meal :: 12.5-50 mcg SC 30 min before meals; reduces splanchnic blood pooling | Cholelithiasis | Blood glucose, GI symptoms, gallbladder US q6-12 months | - | EXT | EXT | - |
+| Desmopressin (DDAVP) | PO/IN | Nocturnal polyuria contributing to morning OH; reduces nighttime urine output | 0.1 mg; 0.2 mg :: PO :: nightly :: 0.1-0.2 mg PO at bedtime (or 10-20 mcg intranasal); must hold fluids after dosing to avoid hyponatremia | Hyponatremia, HF, polydipsia | Serum Na+ (check within 1 week of initiation and regularly), weight | - | EXT | EXT | - |
 | Acarbose | PO | Post-prandial hypotension refractory to meal modifications | 50 mg; 100 mg :: PO :: pre-meal :: 50-100 mg with first bite of carbohydrate-containing meals; reduces post-prandial glucose spike and splanchnic vasodilation | Inflammatory bowel disease, bowel obstruction, cirrhosis | GI symptoms (flatulence, diarrhea), liver function | - | - | EXT | - |
 
 ### 3E. Supine Hypertension Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Nitroglycerin transdermal patch | Transdermal | Supine HTN (SBP ≥150 mmHg at bedtime); removed upon waking | 0.1 mg/hr; 0.2 mg/hr :: Transdermal :: nightly :: Apply 0.1-0.2 mg/hr patch at bedtime; remove in the morning before rising; short-acting to minimize morning orthostatic worsening | Severe aortic stenosis, concurrent PDE-5 inhibitors, hypovolemia | Supine BP at bedtime and morning standing BP | - | ROUTINE | ROUTINE | - |
-| Losartan | PO | Supine HTN at bedtime; ARB with moderate duration | 25 mg; 50 mg :: PO :: nightly :: 25-50 mg at bedtime only; assess morning standing BP to ensure no worsening of OH | Hyperkalemia, bilateral renal artery stenosis, pregnancy | K+, creatinine, morning standing BP | - | ROUTINE | ROUTINE | - |
-| Hydralazine | PO | Supine HTN at bedtime; direct vasodilator | 10 mg; 25 mg :: PO :: nightly :: 10-25 mg at bedtime; short-acting; useful for isolated nocturnal HTN | Lupus, tachycardia, coronary artery disease | HR, BP, lupus-like symptoms with chronic use | - | - | EXT | - |
+| Nitroglycerin transdermal patch | Transdermal | Supine HTN (SBP ≥150 mmHg at bedtime); removed upon waking | 0.1 mg/hr; 0.2 mg/hr :: Transdermal :: nightly :: Apply 0.1-0.2 mg/hr patch at bedtime; remove in the morning before rising; short-acting to minimize morning orthostatic worsening | Severe aortic stenosis, concurrent PDE-5 inhibitors, hypovolemia | Supine BP at bedtime and morning standing BP | - | ROUTINE | ROUTINE | ROUTINE |
+| Losartan | PO | Supine HTN at bedtime; ARB with moderate duration | 25 mg; 50 mg :: PO :: nightly :: 25-50 mg at bedtime only; assess morning standing BP to ensure no worsening of OH | Hyperkalemia, bilateral renal artery stenosis, pregnancy | K+, creatinine, morning standing BP | - | ROUTINE | ROUTINE | ROUTINE |
+| Hydralazine | PO | Supine HTN at bedtime; direct vasodilator | 10 mg; 25 mg :: PO :: nightly :: 10-25 mg at bedtime; short-acting; useful for isolated nocturnal HTN | Lupus, tachycardia, coronary artery disease | HR, BP, lupus-like symptoms with chronic use | - | EXT | EXT | EXT |
 | Sildenafil | PO | Supine HTN at bedtime; vasodilatory effect | 25 mg :: PO :: nightly :: 25 mg at bedtime; reduces supine BP without excessive morning orthostatic worsening; off-label use | Concurrent nitrates, severe hepatic impairment | BP, headache, visual symptoms | - | - | EXT | - |
 
 ---
@@ -184,34 +184,34 @@ tags:
 |----------------|:--:|:----:|:---:|:---:|------------|
 | Autonomic disorders specialist / dysautonomia clinic | - | ROUTINE | ROUTINE | - | Formal autonomic testing; tailored management; etiologic diagnosis; monitoring for phenoconversion in PAF |
 | Neurology | URGENT | ROUTINE | ROUTINE | URGENT | Evaluation for underlying neurodegenerative cause (PD, MSA, DLB); neuropathy workup |
-| Cardiology | - | ROUTINE | EXT | ROUTINE | Exclude cardiac causes of OH; evaluate cardiac amyloidosis if suspected; assess supine HTN burden |
+| Cardiology | URGENT | ROUTINE | EXT | ROUTINE | Exclude cardiac causes of OH; evaluate cardiac amyloidosis if suspected; assess supine HTN burden |
 | Physical therapy / falls prevention | - | ROUTINE | ROUTINE | - | Gait training; counter-pressure maneuver education; fall risk assessment and mitigation |
 | Endocrinology | - | - | EXT | - | If adrenal insufficiency, refractory diabetes, or endocrine cause suspected |
 | Hematology/Oncology | - | EXT | EXT | - | If amyloidosis confirmed (AL type); paraneoplastic evaluation |
 
 ### 4B. Patient/Family Instructions
 
-| Recommendation | ED | HOSP | OPD | Rationale |
-|----------------|:--:|:----:|:---:|-----------|
-| Rise slowly from lying to sitting to standing; sit on edge of bed 1-2 minutes before standing | ROUTINE | ROUTINE | ROUTINE | Prevents rapid BP drop and reduces fall risk |
-| Recognize warning symptoms (lightheadedness, visual graying, neck/shoulder pain "coat hanger" distribution) and sit or lie down immediately | ROUTINE | ROUTINE | ROUTINE | Early symptom recognition prevents syncope and injury |
-| Perform counter-pressure maneuvers (leg crossing, squatting, bending) when symptomatic | - | ROUTINE | ROUTINE | Raises BP 20-30 mmHg acutely; non-pharmacologic first-line |
-| Avoid large carbohydrate-heavy meals; eat small frequent meals | - | ROUTINE | ROUTINE | Reduces post-prandial hypotension |
-| Avoid prolonged standing, hot environments, hot baths/showers, and alcohol | - | ROUTINE | ROUTINE | All worsen venous pooling and orthostatic BP drop |
-| Maintain adequate fluid intake (2-3 L/day) and salt intake (per physician guidance) | - | ROUTINE | ROUTINE | Plasma volume expansion is foundation of nOH management |
-| Drink 480 mL (16 oz) of water rapidly when symptomatic (osmopressor effect) | ROUTINE | ROUTINE | ROUTINE | Raises SBP 20-30 mmHg within 5-15 min |
-| Report all falls, near-falls, and new symptoms to care team | ROUTINE | ROUTINE | ROUTINE | Falls are primary source of morbidity in nOH; guides treatment titration |
+| Recommendation | ED | HOSP | OPD | ICU | Rationale |
+|----------------|:--:|:----:|:---:|:---:|-----------|
+| Rise slowly from lying to sitting to standing; sit on edge of bed 1-2 minutes before standing | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Prevents rapid BP drop and reduces fall risk |
+| Recognize warning symptoms (lightheadedness, visual graying, neck/shoulder pain "coat hanger" distribution) and sit or lie down immediately | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Early symptom recognition prevents syncope and injury |
+| Perform counter-pressure maneuvers (leg crossing, squatting, bending) when symptomatic | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Raises BP 20-30 mmHg acutely; non-pharmacologic first-line |
+| Avoid large carbohydrate-heavy meals; eat small frequent meals | ROUTINE | ROUTINE | ROUTINE | - | Reduces post-prandial hypotension |
+| Avoid prolonged standing, hot environments, hot baths/showers, and alcohol | ROUTINE | ROUTINE | ROUTINE | - | All worsen venous pooling and orthostatic BP drop |
+| Maintain adequate fluid intake (2-3 L/day) and salt intake (per physician guidance) | ROUTINE | ROUTINE | ROUTINE | - | Plasma volume expansion is foundation of nOH management |
+| Drink 480 mL (16 oz) of water rapidly when symptomatic (osmopressor effect) | ROUTINE | ROUTINE | ROUTINE | - | Raises SBP 20-30 mmHg within 5-15 min |
+| Report all falls, near-falls, and new symptoms to care team | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Falls are primary source of morbidity in nOH; guides treatment titration |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD | Rationale |
-|----------------|:--:|:----:|:---:|-----------|
-| Avoid offending medications when possible (alpha-blockers, diuretics, long-acting antihypertensives, tricyclics, dopamine agonists at high doses) | ROUTINE | ROUTINE | ROUTINE | Medication-related orthostatic worsening is the most modifiable risk factor |
-| Elevate head of bed 10-20 degrees nightly | - | ROUTINE | ROUTINE | Reduces nocturnal supine hypertension and natriuresis; improves morning orthostatic tolerance |
-| Home fall safety assessment (remove trip hazards, install grab bars, adequate lighting) | - | - | ROUTINE | nOH patients have 2-3× increased fall risk; home modifications are evidence-based prevention |
-| Wear waist-high compression garments during the day; remove at bedtime | - | ROUTINE | ROUTINE | Reduces venous pooling; must remove at night to avoid worsening supine HTN |
-| Avoid straining (Valsalva); manage constipation proactively | - | ROUTINE | ROUTINE | Valsalva maneuvers can precipitate syncope in autonomic failure |
-| Driving restrictions: counsel per local regulations until symptoms stabilized | - | ROUTINE | ROUTINE | Syncope or near-syncope while driving is a safety risk; individualized per severity |
+| Recommendation | ED | HOSP | OPD | ICU | Rationale |
+|----------------|:--:|:----:|:---:|:---:|-----------|
+| Avoid offending medications when possible (alpha-blockers, diuretics, long-acting antihypertensives, tricyclics, dopamine agonists at high doses) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Medication-related orthostatic worsening is the most modifiable risk factor |
+| Elevate head of bed 10-20 degrees nightly | - | ROUTINE | ROUTINE | ROUTINE | Reduces nocturnal supine hypertension and natriuresis; improves morning orthostatic tolerance |
+| Home fall safety assessment (remove trip hazards, install grab bars, adequate lighting) | - | - | ROUTINE | - | nOH patients have 2-3x increased fall risk; home modifications are evidence-based prevention |
+| Wear waist-high compression garments during the day; remove at bedtime | - | ROUTINE | ROUTINE | - | Reduces venous pooling; must remove at night to avoid worsening supine HTN |
+| Avoid straining (Valsalva); manage constipation proactively | - | ROUTINE | ROUTINE | ROUTINE | Valsalva maneuvers can precipitate syncope in autonomic failure |
+| Driving restrictions: counsel per local regulations until symptoms stabilized | - | ROUTINE | ROUTINE | - | Syncope or near-syncope while driving is a safety risk; individualized per severity |
 
 ---
 
@@ -242,7 +242,7 @@ tags:
 | Serum sodium | At baseline, 1 week after DDAVP initiation, then monthly | 135-145 mEq/L | Hold DDAVP if Na <135; restrict fluids after DDAVP | - | ROUTINE | Monthly if on DDAVP | Daily |
 | Renal function (BMP) | Baseline, then q6-12 months | Normal creatinine and eGFR | Adjust medications; nephrology referral | - | ROUTINE | q6-12 months | ROUTINE |
 | Falls/near-falls | Every encounter | Zero falls | Reassess treatment; PT referral; home safety evaluation | Every visit | Daily | Every visit | Every visit |
-| Symptom burden (OH symptom scales — OHQ or similar) | Every visit | Improving or stable | Escalate pharmacotherapy; add agents | - | - | Every visit | - |
+| Symptom burden (OH symptom scales — OHQ or similar) | Every visit | Improving or stable | Escalate pharmacotherapy; add agents | - | ROUTINE | Every visit | - |
 | Weight | Weekly (inpatient); monthly (outpatient) | Stable; no excessive edema | Reassess fludrocortisone dose; diuretic if HF develops | - | Weekly | Monthly | Weekly |
 
 ## 7. DISPOSITION CRITERIA
@@ -261,17 +261,18 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Consensus diagnostic criteria for OH (SBP drop ≥20 or DBP drop ≥10 within 3 min) | Consensus Statement | [Freeman et al. Clin Auton Res 2011](https://pubmed.ncbi.nlm.nih.gov/21431947/) |
-| Droxidopa for symptomatic nOH in autonomic failure (FDA-approved; short-term efficacy) | Class I, RCT (Phase III) | [Kaufmann et al. Clin Auton Res 2014](https://pubmed.ncbi.nlm.nih.gov/25427685/) |
-| Midodrine for orthostatic hypotension (FDA-approved; raises standing BP) | Class I, RCTs | [Low et al. JAMA 1997](https://pubmed.ncbi.nlm.nih.gov/9343467/) |
-| Comprehensive review of nOH pathophysiology and management in alpha-synucleinopathies | Expert Review | [Gibbons et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28159885/) |
-| Management of supine hypertension in autonomic failure: a balancing act | Expert Consensus | [Biaggioni. Hypertension 2017](https://pubmed.ncbi.nlm.nih.gov/28893895/) |
-| AAN Practice Parameter: treatment of nOH and supine hypertension | Practice Guideline | [Rizzo et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/25006405/) |
-| Autoimmune autonomic ganglionopathy: clinical features and response to immunotherapy | Case Series | [Vernino et al. Arch Neurol 2000](https://pubmed.ncbi.nlm.nih.gov/10714674/) |
-| Non-pharmacologic management of OH (compression garments, counter-pressure maneuvers, fluid/salt) | Consensus/Review | [Fanciulli & Wenning. Clin Auton Res 2015](https://pubmed.ncbi.nlm.nih.gov/25739473/) |
-| Cardiac MIBG differentiates Lewy body disorders from MSA | Diagnostic Study | [Goldstein et al. Ann Neurol 2000](https://pubmed.ncbi.nlm.nih.gov/10686066/) |
-| Pyridostigmine for nOH: augments ganglionic transmission with minimal supine HTN | RCT | [Singer et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16505318/) |
-| Water drinking as pressor response in autonomic failure | Mechanistic/Clinical | [Jordan et al. Circulation 2000](https://pubmed.ncbi.nlm.nih.gov/10684928/) |
+| Droxidopa for symptomatic nOH in autonomic failure (FDA-approved; short-term efficacy) | Class I, RCT (Phase III) | [Kaufmann et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24944260/) |
+| Midodrine for orthostatic hypotension (FDA-approved; raises standing BP) | Class I, RCTs | [Low et al. JAMA 1997](https://pubmed.ncbi.nlm.nih.gov/9091692/) |
+| Comprehensive review of nOH pathophysiology and management in alpha-synucleinopathies | Expert Review | Gibbons et al. Neurology 2017 |
+| Management of supine hypertension in autonomic failure: a balancing act | Expert Consensus | [Biaggioni. Pharmacol Rev 2017](https://pubmed.ncbi.nlm.nih.gov/28011746/) |
+| AAN Practice Parameter: treatment of nOH and supine hypertension | Practice Guideline | Rizzo et al. Neurology 2014 |
+| Autoimmune autonomic ganglionopathy: clinical features and response to immunotherapy | Case Series | [Vernino et al. N Engl J Med 2000](https://pubmed.ncbi.nlm.nih.gov/10995864/) |
+| Non-pharmacologic management of OH (compression garments, counter-pressure maneuvers, fluid/salt) | Consensus/Review | [Fanciulli & Wenning. N Engl J Med 2015](https://pubmed.ncbi.nlm.nih.gov/25587949/) |
+| Cardiac MIBG differentiates Lewy body disorders from MSA | Diagnostic Study | [Goldstein et al. Ann Intern Med 2000](https://pubmed.ncbi.nlm.nih.gov/10979878/) |
+| Pyridostigmine for nOH: augments ganglionic transmission with minimal supine HTN | RCT | [Singer et al. Arch Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16476804/) |
+| Water drinking as pressor response in autonomic failure | Mechanistic/Clinical | [Jordan et al. Circulation 2000](https://pubmed.ncbi.nlm.nih.gov/10662747/) |
 | Consensus definition of neurogenic supine hypertension in autonomic failure | Consensus Statement | [Biaggioni et al. Clin Auton Res 2018](https://pubmed.ncbi.nlm.nih.gov/29766366/) |
+| Expert consensus on nOH screening, diagnosis, and treatment algorithm | Expert Consensus | [Gibbons et al. J Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28050656/) |
 
 ---
 
@@ -291,6 +292,22 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 8, 2026)**
+- Added ICU column to Section 4B (Patient Instructions) and 4C (Lifestyle) for structural consistency across all venue-tagged tables
+- Expanded ED coverage in Section 4B: counter-pressure maneuvers, dietary guidance, environmental avoidance, fluid/salt intake, and water bolus now tagged ROUTINE for ED discharge teaching
+- Added EXT coverage in ED and ICU for Section 3C first-line pharmacotherapy (midodrine, droxidopa, fludrocortisone) for patients already on these medications presenting acutely
+- Added ICU coverage (ROUTINE) for Section 3E supine HTN management (nitroglycerin patch, losartan) and EXT for hydralazine; ICU patients with nOH commonly require supine HTN treatment
+- Added HOSP EXT coverage for select Section 3D second-line agents (atomoxetine, EPO, octreotide, DDAVP) for refractory inpatient nOH
+- Added HOSP ROUTINE coverage for Section 6 symptom burden monitoring (OHQ scale)
+- Added ICU STAT coverage for bolus water drinking in Section 3A (patients able to take PO); added NPO status as contraindication
+- Added ICU ROUTINE coverage for head-of-bed elevation in Section 3B and Section 4C
+- Added ICU ROUTINE coverage for counter-pressure maneuvers in Section 3B
+- Added URGENT ED coverage for cardiology referral in Section 4A (exclude cardiac etiology in acute presentations)
+- Added ICU coverage for medication avoidance and constipation management in Section 4C
+- Strengthened directive language in Section 3D atomoxetine row (removed "may benefit")
+- Added 13th evidence reference (Gibbons et al. 2017 nOH screening/treatment algorithm)
+- Updated version to 1.1
 
 **v1.0 (February 8, 2026)**
 - Initial template creation

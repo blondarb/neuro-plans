@@ -1,7 +1,7 @@
 ---
 title: "Neuropathic Pain Management"
 description: "Clinical decision support for neuropathic pain treatment across care settings"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -23,20 +23,20 @@ tags:
 
 # Neuropathic Pain Management
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 8, 2026
 **REVISED:** February 8, 2026
-**STATUS:** Draft
+**STATUS:** Draft - Revised per checker/rebuilder pipeline
 
 ---
 
 **DIAGNOSIS:** Neuropathic Pain
 
-**ICD-10:** G89.29 (Other chronic pain), G89.4 (Chronic pain syndrome), G89.0 (Central pain syndrome)
+**ICD-10:** G89.29 (Other chronic pain), G89.4 (Chronic pain syndrome), G89.0 (Central pain syndrome), G60.9 (Hereditary and idiopathic neuropathy, unspecified), G62.9 (Polyneuropathy, unspecified), M79.2 (Neuralgia and neuritis, unspecified), B02.22 (Postherpetic trigeminal neuralgia), B02.29 (Other postherpetic nervous system involvement), G50.0 (Trigeminal neuralgia), E11.42 (Type 2 diabetes with diabetic polyneuropathy), G63 (Polyneuropathy in diseases classified elsewhere)
 
-**CPT CODES:** 99213-99215 (Office visit), 99281-99285 (ED visit), 64450 (Peripheral nerve block), 64555 (Peripheral nerve stimulator implant), 63650 (Spinal cord stimulator implant), 62350 (Intrathecal drug delivery implant), 64633-64636 (Radiofrequency ablation), 96372 (Therapeutic injection), 20553 (Trigger point injection), 95907-95913 (Nerve conduction studies), 36000 (IV access for infusion)
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 80076 (Hepatic function panel), 82947 (Glucose), 83036 (HbA1c), 93000 (ECG), 80195 (Phenytoin level), 80156 (Carbamazepine level), 95907-95913 (Nerve conduction studies, 1-13+ studies), 95886 (Needle EMG, complete), 99213-99215 (Office visit), 99281-99285 (ED visit), 64450 (Peripheral nerve block), 64555 (Peripheral nerve stimulator implant), 63650 (Spinal cord stimulator trial), 63685 (Spinal cord stimulator permanent implant), 62350 (Intrathecal drug delivery implant), 64633-64636 (Radiofrequency ablation), 96365 (IV infusion, initial hour — lidocaine/ketamine), 96374 (IV push), 96372 (Therapeutic injection), 20553 (Trigger point injection), 36000 (IV access for infusion)
 
-**SYNONYMS:** Neuropathic pain, nerve pain, neuralgia, central pain syndrome, thalamic pain, post-stroke pain, central post-stroke pain, diabetic neuropathic pain, painful diabetic neuropathy, post-herpetic neuralgia, PHN, chemotherapy-induced neuropathic pain, CIPN, spinal cord injury pain, SCI pain, MS-related pain, trigeminal neuralgia, painful polyneuropathy, neuropathic pain syndrome, chronic neuropathic pain
+**SYNONYMS:** neuropathic pain, nerve pain, neurogenic pain, neuralgia, painful neuropathy, diabetic neuropathic pain, painful diabetic neuropathy, post-herpetic neuralgia, PHN, central pain syndrome, thalamic pain, post-stroke pain, central post-stroke pain, spinal cord injury pain, SCI pain, chemotherapy-induced neuropathic pain, CIPN, painful polyneuropathy, allodynia, hyperalgesia, dysesthesia, trigeminal neuralgia, MS-related pain, neuropathic pain syndrome, chronic neuropathic pain
 
 **SCOPE:** Treatment-focused plan for neuropathic pain management in adults. Covers peripheral neuropathic pain (diabetic, post-herpetic, traumatic, chemotherapy-induced) and central neuropathic pain (post-stroke, spinal cord injury, MS-related). Includes pain screening tools (DN4, LANSS), step therapy per AAN/EFNS/NeuPSIG guidelines, combination therapy strategies, opioid risk assessment, interventional options, and deprescribing guidance. Covers ED acute exacerbation, inpatient management, and outpatient chronic care. Excludes diagnostic workup for neuropathy etiology (covered in neuropathy-specific plans).
 
@@ -67,8 +67,8 @@ tags:
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | BMP (CPT 80048) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Renal function for dose adjustment (gabapentinoids, tramadol); electrolytes | Normal eGFR; normal electrolytes |
 | CBC (CPT 85025) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Baseline before carbamazepine/oxcarbazepine (agranulocytosis risk) | Normal WBC, platelets |
-| Hepatic panel (CPT 80076) | - | ROUTINE | ROUTINE | - | Baseline before duloxetine, TCAs; hepatotoxicity monitoring | Normal ALT/AST/bilirubin |
-| HbA1c (CPT 83036) | - | ROUTINE | ROUTINE | - | Glycemic control in diabetic neuropathic pain; treatment target | < 7.0% |
+| Hepatic panel (CPT 80076) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Baseline before duloxetine, TCAs; hepatotoxicity monitoring | Normal ALT/AST/bilirubin |
+| HbA1c (CPT 83036) | ROUTINE | ROUTINE | ROUTINE | - | Glycemic control in diabetic neuropathic pain; treatment target | < 7.0% |
 | Urine drug screen (CPT 80307) | ROUTINE | ROUTINE | ROUTINE | - | Opioid risk assessment; compliance monitoring; identify unreported substances | Consistent with prescribed medications |
 
 ### 1B. Extended Labs (Based on Treatment Selection)
@@ -165,7 +165,7 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Lidocaine 5% patch (Lidoderm) | Topical | Localized peripheral neuropathic pain; first-line topical; see also 3E | 1-3 patches :: topical :: 12h on/12h off :: Apply up to 3 patches for 12h on/12h off; may cut to fit | Allergy to local anesthetics | Local skin irritation; minimal systemic absorption | - | ROUTINE | ROUTINE | - |
+| Lidocaine 5% patch (Lidoderm) | Topical | Localized peripheral neuropathic pain; first-line topical; safe in elderly and polypharmacy | 1-3 patches :: topical :: 12h on/12h off :: Apply up to 3 patches to painful area; 12 hours on, 12 hours off; may cut to fit; avoid on broken skin | Allergy to local anesthetics; broken skin at application site | Local skin irritation; minimal systemic absorption; safe in elderly; no significant drug interactions | - | ROUTINE | ROUTINE | - |
 | Capsaicin 0.075% cream | Topical | Localized neuropathic pain; OTC option; depletes substance P | Apply QID :: topical :: QID :: Apply thin layer to painful area 3-4 times daily; burning sensation decreases with regular use over 1-2 weeks; wash hands after application | Allergy to capsaicin; open wounds | Application-site burning (expected first 1-2 weeks); avoid mucous membranes and eyes; use gloves | - | ROUTINE | ROUTINE | - |
 | Compounding cream (gabapentin/ketamine/lidocaine) | Topical | Localized neuropathic pain refractory to single-agent topicals; limited evidence | Apply BID-TID :: topical :: BID-TID :: Apply to affected area BID-TID; formulation varies by compounding pharmacy; typical: gabapentin 6%/ketamine 10%/lidocaine 5% | Allergy to components | Local irritation; limited systemic absorption; insurance coverage often denied; evidence base limited | - | - | EXT | - |
 
@@ -183,10 +183,10 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Lamotrigine (central pain) | PO | Central post-stroke pain (first-line); SCI pain; NNT 5.9 for central pain | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily :: PO :: daily-BID :: Start 25 mg daily; titrate by 25 mg q2 weeks; target 200 mg/day; see 3F for full titration | SJS/TEN risk; hepatic impairment | Rash surveillance; very slow titration mandatory | - | ROUTINE | ROUTINE | - |
-| Amitriptyline (central pain) | PO | Central post-stroke pain; SCI pain; first-line TCA for central pain | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2 weeks; target 50-75 mg/day; see 3D for full details | See 3D | ECG; anticholinergic effects; see 3D | - | ROUTINE | ROUTINE | - |
-| Pregabalin (SCI pain) | PO | Spinal cord injury pain (Level A evidence); central neuropathic pain | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: BID :: Start 75 mg BID; titrate to 150-300 mg BID; max 600 mg/day; see 3B for full details | See 3B | Sedation, edema, weight gain; see 3B | - | ROUTINE | ROUTINE | - |
-| Gabapentin (SCI pain) | PO | Spinal cord injury pain; central neuropathic pain; alternative to pregabalin | 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q3-7 days; target 1800-3600 mg/day; see 3B for full details | See 3B | See 3B | - | ROUTINE | ROUTINE | - |
+| Lamotrigine (central pain) | PO | Central post-stroke pain (first-line); SCI pain; NNT 5.9 for central pain | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily; 400 mg daily :: PO :: daily-BID :: Start 25 mg daily x 2 weeks; then 50 mg daily x 2 weeks; then 100 mg daily; titrate slowly to 200-400 mg/day; halve titration rate with valproate | SJS/TEN risk (slow titration mandatory); hepatic impairment | Rash (discontinue immediately if suspected SJS); very slow titration mandatory; therapeutic range 3-14 mcg/mL for seizures (pain target uncertain) | - | ROUTINE | ROUTINE | - |
+| Amitriptyline (central pain) | PO | Central post-stroke pain; SCI pain; first-line TCA for central pain | 10 mg qHS; 25 mg qHS; 50 mg qHS; 75 mg qHS :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2 weeks; target 50-75 mg qHS; max 150 mg/day; give at bedtime | Cardiac conduction defects, recent MI, concurrent MAOIs, urinary retention, narrow-angle glaucoma, age >65 (use nortriptyline instead) | ECG before and after dose changes (QTc); anticholinergic effects (dry mouth, constipation, urinary retention); weight gain; sedation; fall risk in elderly | - | ROUTINE | ROUTINE | - |
+| Pregabalin (SCI pain) | PO | Spinal cord injury pain (Level A evidence); central neuropathic pain | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: BID :: Start 75 mg BID; titrate to 150 mg BID at week 1; max 300 mg BID (600 mg/day); reduce if CrCl <60 | Severe renal impairment (adjust dose); schedule V controlled substance | Sedation, dizziness, weight gain, peripheral edema; suicidal ideation (FDA warning); renal function | - | ROUTINE | ROUTINE | - |
+| Gabapentin (SCI pain) | PO | Spinal cord injury pain; central neuropathic pain; alternative to pregabalin | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID; 1200 mg TID :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q3-7 days; target 1800-3600 mg/day in 3 divided doses; reduce dose if CrCl <60 | Severe renal impairment (adjust dose); history of substance use (abuse potential) | Sedation, dizziness, peripheral edema, renal function; suicidal ideation (FDA warning) | - | ROUTINE | ROUTINE | - |
 | Nabiximols (Sativex) or medical cannabis (where legal) | PO/Spray | MS-related central neuropathic pain; refractory SCI pain; jurisdiction-dependent | Varies :: oromucosal spray or PO :: BID-TID :: Nabiximols: start 1 spray BID; titrate by 1 spray/day; max 12 sprays/day; or oral cannabis per state protocol | Psychosis, unstable cardiac disease, pregnancy, age <25 (brain development) | Psychiatric symptoms, cognitive function, dizziness; legal status varies; limited evidence base; not FDA-approved for pain in US | - | - | EXT | - |
 
 ---
@@ -197,13 +197,13 @@ tags:
 
 | Recommendation | ED | HOSP | OPD | ICU | Clinical Rationale |
 |----------------|:--:|:----:|:---:|:---:|-------------------|
-| Pain medicine specialist | - | ROUTINE | ROUTINE | - | Refractory pain failing >=2 first-line agents; interventional procedure candidacy; opioid management |
+| Pain medicine specialist | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Refractory pain failing >=2 first-line agents; interventional procedure candidacy; opioid management; ED consult for pain crisis |
 | Neurology | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Neuropathy characterization; central pain workup; treatment optimization |
-| Psychiatry/Psychology | - | ROUTINE | ROUTINE | - | Comorbid depression/anxiety (present in >50% of chronic pain patients); CBT for pain; opioid risk assessment |
-| Physical therapy | - | ROUTINE | ROUTINE | - | Desensitization therapy; TENS; graded motor imagery; functional restoration |
-| Addiction medicine | - | ROUTINE | ROUTINE | - | Substance use disorder identified; opioid use disorder risk; buprenorphine transition |
+| Psychiatry/Psychology | - | ROUTINE | ROUTINE | ROUTINE | Comorbid depression/anxiety (present in >50% of chronic pain patients); CBT for pain; opioid risk assessment; ICU: suicidal ideation in pain crisis |
+| Physical therapy | ROUTINE | ROUTINE | ROUTINE | - | Desensitization therapy; TENS; graded motor imagery; functional restoration; ED: arrange outpatient PT at discharge |
+| Addiction medicine | ROUTINE | ROUTINE | ROUTINE | - | Substance use disorder identified; opioid use disorder risk; buprenorphine transition; ED: identify and refer for opioid use disorder |
 | Palliative care | - | ROUTINE | ROUTINE | - | Cancer-related neuropathic pain; refractory pain with functional decline; goals of care |
-| Interventional pain specialist | - | - | ROUTINE | - | SCS/DRG candidacy; intrathecal pump evaluation; nerve block procedures |
+| Interventional pain specialist | - | ROUTINE | ROUTINE | - | SCS/DRG candidacy; intrathecal pump evaluation; nerve block procedures; inpatient evaluation for refractory pain |
 
 ### 4B. Patient Instructions
 
@@ -300,16 +300,16 @@ tags:
 | NeuPSIG pharmacotherapy guidelines: gabapentinoids, SNRIs, TCAs as first-line | Strong recommendation; Level A | [Finnerup NB et al. Lancet Neurol 2015;14(2):162-173](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | EFNS guidelines on neuropathic pain pharmacotherapy | Class I-II evidence | [Attal N et al. Eur J Neurol 2010;17(9):1113-e88](https://pubmed.ncbi.nlm.nih.gov/20402746/) |
 | AAN guidelines for painful diabetic neuropathy treatment | Level A-B recommendations | [Bril V et al. Neurology 2011;76(20):1758-1765](https://pubmed.ncbi.nlm.nih.gov/21482920/) |
-| Combination pharmacotherapy for neuropathic pain | Level A for gabapentinoid + SNRI | [Gilron I et al. CMAJ 2006;174(10):1411-1414](https://pubmed.ncbi.nlm.nih.gov/16682708/) |
+| Combination pharmacotherapy for neuropathic pain | Level A for gabapentinoid + SNRI | [Gilron I et al. N Engl J Med 2005;352(13):1324-1334](https://pubmed.ncbi.nlm.nih.gov/15800228/) |
 | Canadian guidelines for neuropathic pain management | Consensus guidelines | [Moulin DE et al. Pain Res Manag 2014;19(6):328-335](https://pubmed.ncbi.nlm.nih.gov/25479151/) |
 | Gabapentin for neuropathic pain in adults (Cochrane) | NNT 6.3 for >=50% pain relief | [Wiffen PJ et al. Cochrane Database Syst Rev 2017;6:CD007938](https://pubmed.ncbi.nlm.nih.gov/28597471/) |
 | Duloxetine for painful neuropathy (Cochrane) | NNT 6.4 for >=50% pain relief | [Lunn MP et al. Cochrane Database Syst Rev 2014;1:CD007115](https://pubmed.ncbi.nlm.nih.gov/24385423/) |
 | Pregabalin for neuropathic pain (Cochrane) | NNT 7.7 for diabetic neuropathy | [Derry S et al. Cochrane Database Syst Rev 2019;1:CD007076](https://pubmed.ncbi.nlm.nih.gov/30673120/) |
 | Lamotrigine for central post-stroke pain | Moderate evidence | [Vestergaard K et al. Neurology 2001;56(2):184-190](https://pubmed.ncbi.nlm.nih.gov/11160953/) |
-| Spinal cord stimulation for diabetic neuropathic pain | RCT evidence; superior to best medical therapy | [de Vos CC et al. BMJ 2014;348:g1799](https://pubmed.ncbi.nlm.nih.gov/24803311/) |
+| Spinal cord stimulation for diabetic neuropathic pain | RCT evidence; superior to best medical therapy | [de Vos CC et al. Pain 2014;155(11):2426-2431](https://pubmed.ncbi.nlm.nih.gov/25180016/) |
 | Capsaicin 8% patch for neuropathic pain (Cochrane) | NNT 10.6 for PHN | [Derry S et al. Cochrane Database Syst Rev 2017;1:CD007393](https://pubmed.ncbi.nlm.nih.gov/28085183/) |
 | Opioid guidelines for chronic non-cancer pain (CDC 2022) | Guideline recommendation | [Dowell D et al. MMWR Recomm Rep 2022;71(3):1-95](https://pubmed.ncbi.nlm.nih.gov/36327391/) |
-| IV lidocaine for neuropathic pain | Moderate evidence | [Moulin DE et al. Can J Anaesth 2021;68(2):178-188](https://pubmed.ncbi.nlm.nih.gov/33108635/) |
+| IV lidocaine for neuropathic pain | Moderate evidence | [Moulin DE et al. Can J Anaesth 2019;66(7):820-827](https://pubmed.ncbi.nlm.nih.gov/31098961/) |
 
 ---
 
@@ -331,6 +331,18 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 8, 2026)**
+- [C1] Eliminated all cross-references in Section 3I: Lamotrigine (central pain), Amitriptyline (central pain), Pregabalin (SCI pain), Gabapentin (SCI pain) now fully self-contained with complete dosing, contraindications, and monitoring
+- [M2] Removed "see also 3E" cross-reference from Section 3G Lidocaine 5% patch; expanded indication, contraindications, and monitoring to be standalone
+- [S1] Added ED and ICU coverage for Hepatic panel in Section 1A (needed when initiating TCAs or duloxetine)
+- [S2] Added ED coverage for HbA1c in Section 1A (relevant for diabetic neuropathic pain assessment)
+- [S3] Added ED and ICU coverage for Pain medicine specialist in Section 4A (pain crisis consult)
+- [S4] Added HOSP coverage for Interventional pain specialist in Section 4A (inpatient refractory pain evaluation)
+- [S5] Added ICU coverage for Psychiatry/Psychology in Section 4A (suicidal ideation in pain crisis)
+- [S6] Added ED coverage for Addiction medicine in Section 4A (opioid use disorder identification)
+- [S7] Added ED coverage for Physical therapy in Section 4A (arrange outpatient PT at discharge)
+- [R1] Expanded ICD-10 codes to include neuropathy-specific codes: G60.9, G62.9, M79.2, B02.22, B02.29, G50.0, E11.42, G63
 
 **v1.0 (February 8, 2026)**
 - Initial plan creation

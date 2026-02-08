@@ -1,7 +1,7 @@
 ---
 title: "Postural Orthostatic Tachycardia Syndrome (POTS)"
 description: "Clinical decision support for POTS diagnosis, subtype classification, and management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -23,7 +23,7 @@ tags:
 
 # POTS (Postural Orthostatic Tachycardia Syndrome)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 8, 2026
 **REVISED:** February 8, 2026
 **STATUS:** Draft - Pending Review
@@ -34,9 +34,9 @@ tags:
 
 **ICD-10:** G90.A (Postural orthostatic tachycardia syndrome)
 
-**CPT CODES:** 95924 (Autonomic function testing, including tilt table), 95923 (QSART, quantitative sudomotor axon reflex test), 95922 (Valsalva maneuver with HR/BP monitoring), 93000 (12-lead ECG), 85025 (CBC), 80048 (BMP), 84443 (TSH), 83540 (Iron, serum), 83550 (Ferritin), 82533 (Cortisol), 86235 (ANA), 86364 (Tissue transglutaminase IgA), 82785 (Tryptase), 93306 (Transthoracic echocardiogram), 70553 (MRI brain with/without contrast), 95816 (EEG)
+**CPT CODES:** 85025 (CBC), 80048 (BMP), 84443 (TSH), 83540 (Iron, serum), 83550 (Iron binding capacity/TIBC), 82728 (Ferritin), 82382 (Catecholamines, fractionated), 84681 (C-peptide), 86235 (ANA), 86364 (Anti-nuclear antibody/tissue transglutaminase IgA), 83516 (Immunoassay — ganglionic AChR Ab), 95924 (Autonomic function testing, including tilt table), 95923 (QSART, quantitative sudomotor axon reflex test), 95922 (Valsalva maneuver with HR/BP monitoring), 93000 (12-lead ECG), 93306 (Transthoracic echocardiogram), 95816 (EEG), 70553 (MRI brain with/without contrast), 72156 (MRI cervical spine), 88305 (Skin biopsy pathology — IENFD), 82533 (Cortisol), 82785 (Tryptase)
 
-**SYNONYMS:** POTS, postural tachycardia syndrome, orthostatic tachycardia, chronic orthostatic intolerance, dysautonomia, postural orthostatic tachycardia, hyperadrenergic POTS, neuropathic POTS, hypovolemic POTS, orthostatic intolerance syndrome
+**SYNONYMS:** POTS, postural tachycardia syndrome, postural orthostatic tachycardia, orthostatic intolerance, chronic orthostatic intolerance, dysautonomia, hyperadrenergic POTS, neuropathic POTS, hypovolemic POTS, deconditioning POTS, orthostatic tachycardia
 
 **SCOPE:** Evaluation and management of POTS in adolescents and adults. Includes diagnostic criteria, autonomic testing, subtype classification (hyperadrenergic, neuropathic, hypovolemic/deconditioning), and pharmacologic/non-pharmacologic treatment. Covers ED presentation for acute decompensation, inpatient management, and outpatient chronic management. Excludes other causes of orthostatic intolerance unless part of differential.
 
@@ -65,7 +65,7 @@ tags:
 | CBC (CPT 85025) | STAT | STAT | ROUTINE | STAT | Rule out anemia contributing to tachycardia and orthostatic symptoms | Normal Hgb (>12 g/dL F, >13 g/dL M); no leukocytosis |
 | BMP (CPT 80048) (electrolytes, creatinine, glucose) | STAT | STAT | ROUTINE | STAT | Electrolyte abnormalities causing tachycardia; dehydration; renal function | Normal Na, K, Mg, glucose, creatinine |
 | TSH (CPT 84443) | ROUTINE | ROUTINE | ROUTINE | ROUTINE | Hyperthyroidism as cause of tachycardia and orthostatic symptoms | Normal (0.4-4.0 mIU/L) |
-| Iron studies (CPT 83540, 83550) (serum iron, ferritin, TIBC) | - | ROUTINE | ROUTINE | - | Iron deficiency common comorbidity in POTS; contributes to tachycardia | Ferritin >30 ng/mL; serum iron normal |
+| Iron studies (CPT 83540, 83550) (serum iron, ferritin, TIBC) | ROUTINE | ROUTINE | ROUTINE | - | Iron deficiency common comorbidity in POTS; contributes to tachycardia | Ferritin >30 ng/mL; serum iron normal |
 | Orthostatic vital signs (active stand test) | STAT | STAT | ROUTINE | - | Diagnostic criterion: HR increment >=30 bpm (>=40 bpm ages 12-19) within 10 min without orthostatic hypotension | HR rise <30 bpm; no SBP drop >=20 mmHg |
 | 12-lead ECG (CPT 93000) | STAT | STAT | ROUTINE | STAT | Exclude cardiac arrhythmia, structural disease, pre-excitation, long QT | Normal sinus rhythm; normal intervals; sinus tachycardia expected upright |
 | Urinalysis | ROUTINE | ROUTINE | ROUTINE | - | Screen for UTI, proteinuria, dehydration markers | Normal; specific gravity indicating hydration |
@@ -77,12 +77,12 @@ tags:
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
 | AM cortisol (CPT 82533) | - | ROUTINE | ROUTINE | - | Adrenal insufficiency as cause of orthostatic intolerance | >10 mcg/dL (AM); ACTH stim if borderline |
 | ANA (CPT 86235) | - | ROUTINE | ROUTINE | - | Autoimmune disease screening (Sjogren, lupus associated with autonomic neuropathy) | Negative |
-| Celiac panel (CPT 86364) (tissue transglutaminase IgA) | - | - | ROUTINE | - | Celiac disease associated with autonomic neuropathy; common comorbidity | Negative |
+| Celiac panel (CPT 86364) (tissue transglutaminase IgA) | - | ROUTINE | ROUTINE | - | Celiac disease associated with autonomic neuropathy; common comorbidity | Negative |
 | Serum tryptase (CPT 82785) | - | ROUTINE | ROUTINE | - | Mast cell activation syndrome comorbidity; flushing episodes | Normal (<11.5 ng/mL) |
 | ESR / CRP | - | ROUTINE | ROUTINE | - | Inflammatory or autoimmune process contributing to autonomic dysfunction | Normal |
-| 24-hour urine sodium | - | - | ROUTINE | - | Assess salt intake adequacy; <170 mEq/day suggests inadequate sodium intake for POTS management | >170 mEq/24hr on therapeutic salt intake |
+| 24-hour urine sodium | - | ROUTINE | ROUTINE | - | Assess salt intake adequacy; <170 mEq/day suggests inadequate sodium intake for POTS management | >170 mEq/24hr on therapeutic salt intake |
 | Free T4 | - | ROUTINE | ROUTINE | - | Confirm thyroid status if TSH abnormal; thyrotoxicosis workup | Normal (0.8-1.8 ng/dL) |
-| Vitamin B12 | - | - | ROUTINE | - | B12 deficiency as cause of autonomic neuropathy | >300 pg/mL |
+| Vitamin B12 | - | ROUTINE | ROUTINE | - | B12 deficiency as cause of autonomic neuropathy | >300 pg/mL |
 
 ### 1C. Rare/Specialized (Subtype Classification)
 
@@ -136,11 +136,11 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IV Normal Saline | IV | Acute POTS decompensation; severe presyncope; dehydration; inability to tolerate oral fluids | 500 mL IV bolus; 1000 mL IV bolus; 1000 mL over 1-2 hr :: IV :: :: 1-2 L NS bolus over 1-2 hours; reassess and repeat if needed; avoid >3 L unless severely dehydrated | Heart failure; volume overload; severe renal failure | Intake/output; HR response; orthostatic vitals post-infusion; signs of overload | STAT | STAT | - | STAT |
-| IV Lactated Ringer | IV | Alternative to NS for volume resuscitation; POTS flare with dehydration | 500 mL IV bolus; 1000 mL IV bolus :: IV :: :: 1-2 L over 1-2 hours; may be better tolerated than NS for repeated infusions | Hyperkalemia; hepatic failure | Intake/output; HR response; electrolytes | STAT | STAT | - | STAT |
-| Trendelenburg position / leg elevation | Physical | Immediate management of acute presyncope or near-syncope | Supine with legs elevated 30-45 degrees :: Physical :: :: Elevate legs immediately; maintain until symptoms resolve; transition to sitting slowly | Respiratory distress; increased ICP | Mental status; HR; BP recovery | STAT | STAT | - | STAT |
-| Telemetry monitoring | - | Tachycardia evaluation; rule out arrhythmia | N/A :: - :: continuous :: Continuous monitoring until sinus tachycardia confirmed and alternative arrhythmias excluded | None | HR; rhythm; arrhythmia detection | STAT | ROUTINE | - | ROUTINE |
-| Oral rehydration (rapid bolus) | PO | Mild-moderate decompensation; oral intake tolerated | 500 mL water with electrolytes :: PO :: :: Rapid oral hydration with 500 mL electrolyte-containing fluid; repeat as tolerated | Vomiting; inability to swallow | Tolerance; HR response; urine output | STAT | ROUTINE | ROUTINE | - |
+| IV Normal Saline | IV | Acute POTS decompensation; severe presyncope; dehydration; inability to tolerate oral fluids | 1000 mL :: IV :: over 1-2 hr :: 1-2 L NS bolus over 1-2 hours; reassess and repeat if needed; avoid >3 L unless severely dehydrated | Heart failure; volume overload; severe renal failure | Intake/output; HR response; orthostatic vitals post-infusion; signs of overload | STAT | STAT | - | STAT |
+| IV Lactated Ringer | IV | Alternative to NS for volume resuscitation; POTS flare with dehydration | 1000 mL :: IV :: over 1-2 hr :: 1-2 L over 1-2 hours; may be better tolerated than NS for repeated infusions | Hyperkalemia; hepatic failure | Intake/output; HR response; electrolytes | STAT | STAT | - | STAT |
+| Trendelenburg position / leg elevation | Physical | Immediate management of acute presyncope or near-syncope | Supine with legs elevated :: Physical :: immediate :: Elevate legs 30-45 degrees immediately; maintain until symptoms resolve; transition to sitting slowly | Respiratory distress; increased ICP | Mental status; HR; BP recovery | STAT | STAT | - | STAT |
+| Telemetry monitoring | Monitoring | Tachycardia evaluation; rule out arrhythmia | Continuous :: Monitoring :: continuous :: Continuous monitoring until sinus tachycardia confirmed and alternative arrhythmias excluded | None | HR; rhythm; arrhythmia detection | STAT | ROUTINE | - | ROUTINE |
+| Oral rehydration (rapid bolus) | PO | Mild-moderate decompensation; oral intake tolerated | 500 mL :: PO :: immediate :: Rapid oral hydration with 500 mL electrolyte-containing fluid; repeat as tolerated | Vomiting; inability to swallow | Tolerance; HR response; urine output | STAT | ROUTINE | ROUTINE | - |
 
 ### 3B. Non-Pharmacologic Therapies (Foundation of POTS Management)
 
@@ -149,8 +149,8 @@ tags:
 | Increased fluid intake | Dietary | All POTS patients; volume expansion | 2-3 L/day :: Dietary :: daily :: Minimum 2-3 L daily fluid intake including water and electrolyte-containing beverages; bolus 500 mL water 15-30 min before prolonged standing | Heart failure; renal failure requiring fluid restriction | Urine output; daily weight; symptom frequency; urine specific gravity | URGENT | ROUTINE | ROUTINE | - |
 | Increased salt intake | Dietary | All POTS patients without contraindication; volume expansion | 6-10 g Na/day :: Dietary :: daily :: 6-10 g sodium daily via dietary salt or salt tablets (1 g NaCl tablets, 3-5 tablets TID with meals); titrate to 24-hr urine Na >170 mEq | Uncontrolled HTN; heart failure; severe renal disease | BP; edema; 24-hr urine sodium; syncope frequency | - | ROUTINE | ROUTINE | - |
 | Compression garments | Physical | Venous pooling; orthostatic symptoms; all POTS patients | 30-40 mmHg waist-high :: Physical :: daily :: Waist-high compression stockings (30-40 mmHg) preferred over knee-high; abdominal binder (20-40 mmHg) as alternative or adjunct | Peripheral arterial disease; skin breakdown | Skin integrity; compliance; symptom improvement | - | ROUTINE | ROUTINE | - |
-| Graduated exercise program (Levine/CHOP protocol) | Physical | All POTS patients; deconditioning reversal; cornerstone of long-term management | Structured protocol :: Physical :: daily :: Start recumbent exercise (rowing, swimming, recumbent bike) 30 min 3-4x/week; increase gradually over 3-6 months to upright aerobic exercise; avoid sudden upright exercise initially | Acute decompensation; unstable cardiac disease | Exercise tolerance; resting HR trend; orthostatic symptoms; functional capacity | - | - | ROUTINE | - |
-| Counter-pressure maneuvers | Physical | Prodromal symptoms; prevention of presyncope | Perform at onset of prodrome :: Physical :: :: Leg crossing with muscle tensing; squatting; handgrip; lower body muscle pumping; can abort ~40% of presyncopal episodes | None | Symptom diary; effectiveness | URGENT | ROUTINE | ROUTINE | - |
+| Graduated exercise program (Levine/CHOP protocol) | Physical | All POTS patients; deconditioning reversal; cornerstone of long-term management | 30 min 3-4x/week :: Physical :: 3-4x/week :: Start recumbent exercise (rowing, swimming, recumbent bike) 30 min 3-4x/week; increase gradually over 3-6 months to upright aerobic exercise; avoid sudden upright exercise initially | Acute decompensation; unstable cardiac disease | Exercise tolerance; resting HR trend; orthostatic symptoms; functional capacity | - | - | ROUTINE | - |
+| Counter-pressure maneuvers | Physical | Prodromal symptoms; prevention of presyncope | Perform at onset of prodrome :: Physical :: PRN :: Leg crossing with muscle tensing; squatting; handgrip; lower body muscle pumping; can abort ~40% of presyncopal episodes | None | Symptom diary; effectiveness | URGENT | ROUTINE | ROUTINE | - |
 | Head-of-bed elevation | Physical | Nocturnal polyuria reduction; improve morning orthostatic tolerance | 10-20 degree elevation :: Physical :: nightly :: Elevate head of bed 4-6 inches (blocks or wedge); reduces nocturnal natriuresis and supine hypertension | None | Morning symptoms; nocturia frequency | - | ROUTINE | ROUTINE | - |
 
 ### 3C. First-Line Pharmacotherapy
@@ -167,14 +167,14 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Clonidine | PO | Hyperadrenergic POTS with elevated standing NE; refractory tachycardia with hypertension | 0.05 mg BID; 0.1 mg BID; 0.1 mg TID :: PO :: BID-TID :: Start 0.05 mg BID; titrate by 0.05 mg q1 week; max 0.3 mg/day divided; central alpha-2 agonist reduces sympathetic outflow | Severe bradycardia; hypotension; do NOT discontinue abruptly (rebound hypertension) | BP; HR; sedation; dry mouth; rebound HTN with abrupt discontinuation | - | - | ROUTINE | - |
+| Clonidine | PO | Hyperadrenergic POTS with elevated standing NE; refractory tachycardia with hypertension | 0.05 mg BID; 0.1 mg BID; 0.1 mg TID :: PO :: BID-TID :: Start 0.05 mg BID; titrate by 0.05 mg q1 week; max 0.3 mg/day divided; central alpha-2 agonist reduces sympathetic outflow; do NOT discontinue abruptly (rebound hypertension) | Severe bradycardia; hypotension | BP; HR; sedation; dry mouth; rebound HTN with abrupt discontinuation | - | - | ROUTINE | - |
 | Methyldopa | PO | Hyperadrenergic POTS refractory to clonidine; standing hypertension with tachycardia | 125 mg BID; 250 mg BID :: PO :: BID :: Start 125 mg BID; titrate slowly; max 500 mg BID; false neurotransmitter reduces sympathetic tone | Hepatic disease; active liver disease; history of methyldopa-associated hepatitis; MAOIs | LFTs at baseline and 6-12 weeks; CBC (hemolytic anemia); BP; sedation; Coombs test if anemia | - | - | EXT | - |
 | Desmopressin (DDAVP) | PO/Intranasal | Hypovolemic POTS with nocturnal polyuria; acute volume expansion | 0.1 mg PO qHS; 0.2 mg PO qHS :: PO :: qHS :: Start 0.1 mg PO at bedtime; may increase to 0.2 mg; alternative: 10 mcg intranasal qHS; retain free water overnight | Hyponatremia; primary polydipsia; HF; habitual/psychogenic polydipsia | Serum sodium (check within 1 week of initiation then monthly); fluid balance; morning weight; headache | - | - | EXT | - |
 | Droxidopa (Northera) | PO | Neurogenic orthostatic component; neuropathic POTS with norepinephrine deficiency | 100 mg TID; 200 mg TID; 300 mg TID; 600 mg TID :: PO :: TID :: Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID; norepinephrine prodrug | Supine hypertension; concurrent catecholamine drugs (MAOIs, SNRIs at high dose) | Supine BP (avoid >180/110); HR; syncope frequency; headache | - | - | ROUTINE | - |
 | Octreotide | SQ | Refractory POTS with splanchnic vasodilation; postprandial worsening | 25 mcg SQ BID; 50 mcg SQ BID; 100 mcg SQ TID :: SQ :: BID-TID :: Start 25 mcg SQ BID pre-meals; titrate to 50-100 mcg TID; reduces splanchnic blood pooling | Gallstones (relative); diabetes (alters glucose); hypersensitivity | Blood glucose; GI symptoms (nausea, diarrhea, abdominal pain); gallbladder ultrasound q12 months | - | - | EXT | - |
 | Modafinil | PO | POTS-associated fatigue and cognitive dysfunction ("brain fog") refractory to other measures | 100 mg daily; 200 mg daily :: PO :: daily :: Start 100 mg daily in AM; may increase to 200 mg daily; wakefulness-promoting agent | Severe hepatic impairment; history of left ventricular hypertrophy; mitral valve prolapse with prior CNS stimulant use | BP; HR; sleep quality; psychiatric symptoms; headache | - | - | EXT | - |
 | Erythropoietin (EPO) | SQ | Severe hypovolemic POTS with documented low red cell mass and low EPO level | 10,000 units SQ weekly; 20,000 units SQ weekly :: SQ :: weekly :: 10,000-20,000 units SQ weekly; titrate to Hgb 12-14 g/dL; requires documented low EPO level and low blood volume | Uncontrolled HTN; history of thromboembolic events; polycythemia | Hgb/Hct q2-4 weeks; BP; iron studies; thrombotic events; reticulocyte count | - | - | EXT | - |
-| IV saline infusions (scheduled outpatient) | IV | Refractory POTS with recurrent severe decompensation unresponsive to oral volume expansion and pharmacotherapy | 1000 mL NS over 1-2 hr :: IV :: weekly-biweekly :: 1 L NS infusion weekly or biweekly in infusion center; last resort; evidence limited | Heart failure; renal failure; adequate response to oral measures (not first-line) | Electrolytes; BP; HR; volume status; infection risk at access site | - | - | EXT | - |
+| IV saline infusions (scheduled outpatient) | IV | Refractory POTS with recurrent severe decompensation unresponsive to oral volume expansion and pharmacotherapy | 1000 mL NS :: IV :: weekly-biweekly :: 1 L NS infusion weekly or biweekly in infusion center; last resort; evidence limited | Heart failure; renal failure; adequate response to oral measures (not first-line) | Electrolytes; BP; HR; volume status; infection risk at access site | - | - | EXT | - |
 
 ---
 
@@ -195,29 +195,29 @@ tags:
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Drink at least 2-3 liters of fluid daily including water and electrolyte-containing beverages; rapid bolus of 500 mL water before prolonged standing (acutely raises BP via osmopressor reflex) | STAT | ROUTINE | ROUTINE |
-| Increase dietary sodium to 6-10 grams daily using salt tablets or dietary salt (unless contraindicated by hypertension or heart failure) to expand plasma volume | - | ROUTINE | ROUTINE |
-| Wear waist-high compression stockings (30-40 mmHg) during all upright activity; abdominal binder as alternative or adjunct to reduce splanchnic pooling | - | ROUTINE | ROUTINE |
-| Avoid prolonged standing; if standing is required, shift weight, cross legs, and tense muscles to promote venous return | URGENT | ROUTINE | ROUTINE |
-| Rise slowly from lying to sitting to standing with 1-2 minutes at each position to allow hemodynamic adjustment | URGENT | ROUTINE | ROUTINE |
-| Recognize warning symptoms (lightheadedness, tunnel vision, palpitations) and immediately sit or lie down to prevent syncope and injury | STAT | ROUTINE | ROUTINE |
-| Avoid triggers: hot environments, large carbohydrate-heavy meals, alcohol, prolonged hot showers/baths, rapid positional changes | - | ROUTINE | ROUTINE |
-| Return to ED if syncopal episode occurs, chest pain develops, new neurological symptoms appear, or symptoms acutely worsen despite home measures | STAT | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Drink at least 2-3 liters of fluid daily including water and electrolyte-containing beverages; rapid bolus of 500 mL water before prolonged standing (acutely raises BP via osmopressor reflex) | STAT | ROUTINE | ROUTINE | - |
+| Increase dietary sodium to 6-10 grams daily using salt tablets or dietary salt (unless contraindicated by hypertension or heart failure) to expand plasma volume | - | ROUTINE | ROUTINE | - |
+| Wear waist-high compression stockings (30-40 mmHg) during all upright activity; use abdominal binder as alternative or adjunct to reduce splanchnic pooling | - | ROUTINE | ROUTINE | - |
+| Avoid prolonged standing; if standing is required, shift weight, cross legs, and tense muscles to promote venous return | URGENT | ROUTINE | ROUTINE | - |
+| Rise slowly from lying to sitting to standing with 1-2 minutes at each position to allow hemodynamic adjustment | URGENT | ROUTINE | ROUTINE | - |
+| Recognize warning symptoms (lightheadedness, tunnel vision, palpitations) and immediately sit or lie down to prevent syncope and injury | STAT | ROUTINE | ROUTINE | - |
+| Avoid triggers: hot environments, large carbohydrate-heavy meals, alcohol, prolonged hot showers/baths, rapid positional changes | - | ROUTINE | ROUTINE | - |
+| Return to ED if syncopal episode occurs, chest pain develops, new neurological symptoms appear, or symptoms acutely worsen despite home measures | STAT | - | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Begin structured graduated exercise program (Levine/CHOP protocol): start with recumbent exercise 30 min 3-4x/week, progress to upright over 3-6 months; exercise is the single most effective long-term intervention for POTS | - | ROUTINE | ROUTINE |
-| Eat small, frequent meals rather than large meals to reduce postprandial blood pooling in the splanchnic circulation | - | ROUTINE | ROUTINE |
-| Avoid excessive alcohol which causes vasodilation and worsens orthostatic intolerance | - | ROUTINE | ROUTINE |
-| Maintain consistent sleep schedule with 7-9 hours nightly; sleep with head of bed elevated 4-6 inches to reduce nocturnal natriuresis | - | ROUTINE | ROUTINE |
-| Avoid medications that worsen POTS: diuretics, vasodilators, tricyclic antidepressants (orthostatic effect), stimulants at high dose; review all medications with prescriber | - | ROUTINE | ROUTINE |
-| Cooling strategies for heat sensitivity: cooling vest, cold water intake, portable fan, avoiding prolonged heat exposure | - | ROUTINE | ROUTINE |
-| Consider medical alert identification for patients with frequent presyncope/syncope to inform first responders of POTS diagnosis | - | - | ROUTINE |
-| Mental health self-care: POTS is a chronic condition; pacing activities, stress management, and support group engagement improve quality of life | - | - | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Begin structured graduated exercise program (Levine/CHOP protocol): start with recumbent exercise 30 min 3-4x/week, progress to upright over 3-6 months; exercise is the single most effective long-term intervention for POTS | - | ROUTINE | ROUTINE | - |
+| Eat small, frequent meals rather than large meals to reduce postprandial blood pooling in the splanchnic circulation | - | ROUTINE | ROUTINE | - |
+| Avoid excessive alcohol which causes vasodilation and worsens orthostatic intolerance | - | ROUTINE | ROUTINE | - |
+| Maintain consistent sleep schedule with 7-9 hours nightly; sleep with head of bed elevated 4-6 inches to reduce nocturnal natriuresis | - | ROUTINE | ROUTINE | - |
+| Avoid medications that worsen POTS: diuretics, vasodilators, tricyclic antidepressants (orthostatic effect), stimulants at high dose; review all medications with prescriber | - | ROUTINE | ROUTINE | - |
+| Use cooling strategies for heat sensitivity: cooling vest, cold water intake, portable fan, avoiding prolonged heat exposure | - | ROUTINE | ROUTINE | - |
+| Obtain medical alert identification for patients with frequent presyncope/syncope to inform first responders of POTS diagnosis | - | - | ROUTINE | - |
+| Prioritize mental health self-care: POTS is a chronic condition; pace activities, practice stress management, and engage support groups to improve quality of life | - | - | ROUTINE | - |
 
 ---
 
@@ -246,13 +246,13 @@ tags:
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
 | Orthostatic vital signs (HR and BP at 1, 3, 5, 10 min standing) | Each encounter; q8h if admitted | Standing HR increment <30 bpm; no OH | Optimize volume/salt; adjust medications; reassess subtype | STAT | ROUTINE | ROUTINE | - |
 | Resting heart rate | Each encounter | 60-90 bpm supine | Adjust beta-blocker or ivabradine dose; evaluate for over-treatment if <55 bpm | STAT | ROUTINE | ROUTINE | STAT |
-| Serum potassium | Baseline; q2-4 weeks during fludrocortisone titration; then q3-6 months | K+ 3.5-5.0 mEq/L | Supplement potassium if <3.5; consider reducing fludrocortisone dose | - | ROUTINE | ROUTINE | - |
-| Supine blood pressure | Each encounter; home monitoring | SBP <160 mmHg supine | Reduce midodrine dose; time last dose >=4 hr before bed; consider clonidine qHS | - | ROUTINE | ROUTINE | - |
+| Serum potassium | Baseline; q2-4 weeks during fludrocortisone titration; then q3-6 months | K+ 3.5-5.0 mEq/L | Supplement potassium if <3.5; reduce fludrocortisone dose | - | ROUTINE | ROUTINE | - |
+| Supine blood pressure | Each encounter; home monitoring | SBP <160 mmHg supine | Reduce midodrine dose; time last dose >=4 hr before bed; add clonidine qHS if persistent | - | ROUTINE | ROUTINE | - |
 | Serum sodium | Baseline; within 1 week of desmopressin initiation; monthly on desmopressin | Na 135-145 mEq/L | Hold desmopressin if Na <135; restrict free water; recheck in 48 hours | - | ROUTINE | ROUTINE | STAT |
 | 24-hour urine sodium | Baseline then q3-6 months | >170 mEq/24hr on therapeutic salt intake | Increase salt supplementation; dietary counseling; reassess compliance | - | - | ROUTINE | - |
-| Syncope/presyncope frequency | Each visit; patient diary | Decreasing trend; target <1 episode/month | Reassess treatment; consider medication change; evaluate compliance | STAT | ROUTINE | ROUTINE | - |
+| Syncope/presyncope frequency | Each visit; patient diary | Decreasing trend; target <1 episode/month | Reassess treatment; change medication; evaluate compliance | STAT | ROUTINE | ROUTINE | - |
 | Exercise tolerance (functional capacity) | Q3-6 months | Improving exercise duration and intensity | Modify exercise program; reassess medications; evaluate deconditioning | - | - | ROUTINE | - |
-| Weight and volume status | Each encounter | Stable weight; no edema | Adjust fludrocortisone; fluid intake; diuretic if needed for edema | - | ROUTINE | ROUTINE | - |
+| Weight and volume status | Each encounter | Stable weight; no edema | Adjust fludrocortisone; fluid intake; add diuretic if needed for edema | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -273,18 +273,18 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Diagnostic criteria: HR increment >=30 bpm within 10 min of standing without orthostatic hypotension | Consensus, Level C | [Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23439512/) |
-| Tilt table testing as diagnostic standard for POTS | Class IIa, Level B | [Sheldon RS et al. Heart Rhythm 2015](https://pubmed.ncbi.nlm.nih.gov/25981148/) |
-| Graduated exercise training (Levine protocol) improves POTS symptoms and cardiovascular fitness | Class I, Level B | [Fu Q et al. J Am Coll Cardiol 2010](https://pubmed.ncbi.nlm.nih.gov/21029866/) |
-| Fludrocortisone for volume expansion in POTS | Class IIa, Level C | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/16275884/) |
-| Midodrine reduces orthostatic tachycardia and improves standing tolerance | Class IIa, Level B | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/16275884/) |
-| Ivabradine reduces heart rate and improves symptoms in POTS | Class IIa, Level B | [Taub PR et al. J Am Coll Cardiol 2021](https://pubmed.ncbi.nlm.nih.gov/33446311/) |
-| Pyridostigmine improves symptoms with minimal supine hypertension | Class IIa, Level B | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/16275884/) |
-| ACC Expert Consensus Statement on POTS and autonomic disorders | Consensus | [Vernino S et al. J Am Coll Cardiol 2021](https://pubmed.ncbi.nlm.nih.gov/33752804/) |
-| Hyperadrenergic subtype classification by standing norepinephrine | Class IIa, Level C | [Goldstein DS et al. Circulation 2002](https://pubmed.ncbi.nlm.nih.gov/12186790/) |
-| Compression garments reduce venous pooling and improve orthostatic tolerance | Class IIa, Level B | [Figueroa JJ et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/26503616/) |
-| Small fiber neuropathy in neuropathic POTS subtype | Class IIa, Level C | [Gibbons CH, Freeman R. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19451529/) |
-| Salt and fluid intake of 2-3 L/day and 6-10 g Na/day as first-line nonpharmacologic therapy | Consensus, Level C | [Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23439512/) |
+| Diagnostic criteria: HR increment >=30 bpm within 10 min of standing without orthostatic hypotension | Consensus, Level C | [Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23753844/) |
+| Tilt table testing as diagnostic standard for POTS | Class IIa, Level B | [Sheldon RS et al. Heart Rhythm 2015](https://pubmed.ncbi.nlm.nih.gov/25980576/) |
+| Graduated exercise training (Levine protocol) improves POTS symptoms and cardiovascular fitness | Class I, Level B | [Fu Q et al. J Am Coll Cardiol 2010](https://pubmed.ncbi.nlm.nih.gov/20579544/) |
+| Fludrocortisone for volume expansion in POTS | Class IIa, Level C | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/) |
+| Midodrine reduces orthostatic tachycardia and improves standing tolerance | Class IIa, Level B | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/) |
+| Ivabradine reduces heart rate and improves symptoms in POTS | Class IIa, Level B | [Taub PR et al. J Am Coll Cardiol 2021](https://pubmed.ncbi.nlm.nih.gov/33602468/) |
+| Pyridostigmine improves symptoms with minimal supine hypertension | Class IIa, Level B | [Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/) |
+| ACC Expert Consensus Statement on POTS and autonomic disorders | Consensus | [Vernino S et al. Auton Neurosci 2021](https://pubmed.ncbi.nlm.nih.gov/34144933/) |
+| Hyperadrenergic subtype classification by standing norepinephrine | Class IIa, Level C | [Goldstein DS et al. Circulation 2002](https://pubmed.ncbi.nlm.nih.gov/12403667/) |
+| Compression garments reduce venous pooling and improve orthostatic tolerance | Class IIa, Level B | [Figueroa JJ et al. Arch Phys Med Rehabil 2015](https://pubmed.ncbi.nlm.nih.gov/25448247/) |
+| Small fiber neuropathy in neuropathic POTS subtype | Class IIa, Level C | [Gibbons CH, Freeman R. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19398703/) |
+| Salt and fluid intake of 2-3 L/day and 6-10 g Na/day as first-line nonpharmacologic therapy | Consensus, Level C | [Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23753844/) |
 
 ---
 
@@ -305,6 +305,22 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 8, 2026)**
+- Structured dosing: populated frequency field (3rd `::` field) across all treatment rows in 3A, 3B, 3C, 3D
+- Setting coverage: upgraded Iron studies from "-" to ROUTINE in ED (relevant to tachycardia workup)
+- Setting coverage: upgraded Celiac panel from "-" to ROUTINE in HOSP
+- Setting coverage: upgraded 24-hour urine sodium from "-" to ROUTINE in HOSP
+- Setting coverage: upgraded Vitamin B12 from "-" to ROUTINE in HOSP
+- Added ICU column to Sections 4B and 4C for format consistency with 4A
+- Fixed Telemetry route column from "-" to "Monitoring" (appropriate descriptor)
+- Standardized IV fluid dosing format in 3A (consolidated dose options into structured format)
+- Directive language: changed "Consider medical alert identification" to "Obtain medical alert identification"
+- Directive language: changed "Cooling strategies for heat sensitivity" to "Use cooling strategies"
+- Directive language: changed "Mental health self-care" to "Prioritize mental health self-care"
+- Directive language: removed "consider" from monitoring actions (Section 6)
+- Cleaned up Clonidine contraindications to include abrupt discontinuation warning in dosing field
+- Updated version to 1.1
 
 **v1.0 (February 8, 2026)**
 - Initial template creation
