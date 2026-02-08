@@ -20,6 +20,18 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
+### AUTONOMIC & PAIN EXPANSION (Tier 13 — pending)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| POTS (Postural Orthostatic Tachycardia Syndrome) | G90.A | `pots.md` | `pending` | — | 2026-02-08 |
+| Neurogenic Orthostatic Hypotension | I95.1, G90.09 | `neurogenic-orthostatic-hypotension.md` | `pending` | — | 2026-02-08 |
+| Occipital Neuralgia | M54.81 | `occipital-neuralgia.md` | `pending` | — | 2026-02-08 |
+| Complex Regional Pain Syndrome (CRPS) | G90.50 | `crps.md` | `pending` | — | 2026-02-08 |
+| Neuropathic Pain Management | G89.29, G89.4, G89.0 | `neuropathic-pain-management.md` | `pending` | — | 2026-02-08 |
+
+---
+
 ### SLEEP MEDICINE EXPANSION (Tier 12 — approved)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
