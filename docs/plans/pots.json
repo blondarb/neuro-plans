@@ -1,0 +1,1393 @@
+{
+  "id": "pots",
+  "title": "Postural Orthostatic Tachycardia Syndrome (POTS)",
+  "version": "1.1",
+  "icd10": [
+    "** G90.A (Postural orthostatic tachycardia syndrome)"
+  ],
+  "scope": "** Evaluation and management of POTS in adolescents and adults. Includes diagnostic criteria, autonomic testing, subtype classification (hyperadrenergic, neuropathic, hypovolemic/deconditioning), and pharmacologic/non-pharmacologic treatment. Covers ED presentation for acute decompensation, inpatient management, and outpatient chronic management. Excludes other causes of orthostatic intolerance unless part of differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Rule out anemia contributing to tachycardia and orthostatic symptoms",
+          "target": "Normal Hgb (>12 g/dL F, >13 g/dL M); no leukocytosis"
+        },
+        {
+          "item": "BMP (CPT 80048) (electrolytes, creatinine, glucose)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities causing tachycardia; dehydration; renal function",
+          "target": "Normal Na, K, Mg, glucose, creatinine"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Hyperthyroidism as cause of tachycardia and orthostatic symptoms",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Iron studies (CPT 83540, 83550) (serum iron, ferritin, TIBC)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency common comorbidity in POTS; contributes to tachycardia",
+          "target": "Ferritin >30 ng/mL; serum iron normal"
+        },
+        {
+          "item": "Orthostatic vital signs (active stand test)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diagnostic criterion: HR increment >=30 bpm (>=40 bpm ages 12-19) within 10 min without orthostatic hypotension",
+          "target": "HR rise <30 bpm; no SBP drop >=20 mmHg"
+        },
+        {
+          "item": "12-lead ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Exclude cardiac arrhythmia, structural disease, pre-excitation, long QT",
+          "target": "Normal sinus rhythm; normal intervals; sinus tachycardia expected upright"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for UTI, proteinuria, dehydration markers",
+          "target": "Normal; specific gravity indicating hydration"
+        },
+        {
+          "item": "Pregnancy test (reproductive-age women)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pregnancy as cause of hemodynamic changes",
+          "target": "Negative"
+        }
+      ],
+      "Extended Labs (Based on Clinical Suspicion)": [
+        {
+          "item": "AM cortisol (CPT 82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency as cause of orthostatic intolerance",
+          "target": ">10 mcg/dL (AM); ACTH stim if borderline"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune disease screening (Sjogren, lupus associated with autonomic neuropathy)",
+          "target": "Negative"
+        },
+        {
+          "item": "Celiac panel (CPT 86364) (tissue transglutaminase IgA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Celiac disease associated with autonomic neuropathy; common comorbidity",
+          "target": "Negative"
+        },
+        {
+          "item": "Serum tryptase (CPT 82785)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Mast cell activation syndrome comorbidity; flushing episodes",
+          "target": "Normal (<11.5 ng/mL)"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory or autoimmune process contributing to autonomic dysfunction",
+          "target": "Normal"
+        },
+        {
+          "item": "24-hour urine sodium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Assess salt intake adequacy; <170 mEq/day suggests inadequate sodium intake for POTS management",
+          "target": ">170 mEq/24hr on therapeutic salt intake"
+        },
+        {
+          "item": "Free T4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Confirm thyroid status if TSH abnormal; thyrotoxicosis workup",
+          "target": "Normal (0.8-1.8 ng/dL)"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency as cause of autonomic neuropathy",
+          "target": ">300 pg/mL"
+        }
+      ],
+      "Rare/Specialized (Subtype Classification)": [
+        {
+          "item": "Plasma catecholamines (supine and standing) (norepinephrine, epinephrine)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hyperadrenergic subtype: standing NE >600 pg/mL; ratio standing/supine NE helps classify",
+          "target": "Supine NE <400 pg/mL; standing NE <600 pg/mL (hyperadrenergic if standing >600)"
+        },
+        {
+          "item": "Ganglionic acetylcholine receptor antibody (gAChR Ab)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune autonomic ganglionopathy; autoimmune POTS",
+          "target": "Negative"
+        },
+        {
+          "item": "Skin biopsy (IENFD, intraepidermal nerve fiber density)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Neuropathic subtype confirmation; small fiber neuropathy documentation",
+          "target": "Normal IENFD for age/sex/site (reduced = neuropathic POTS)"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes as cause of autonomic neuropathy contributing to POTS",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Plasma renin activity / aldosterone",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Hyperadrenergic subtype workup; assess renin-aldosterone axis",
+          "target": "Normal for posture"
+        },
+        {
+          "item": "Erythropoietin level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Low erythropoietin associated with hypovolemic POTS",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies (All Patients)": [
+        {
+          "item": "Active stand test (10-minute)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Immediate; all patients with suspected POTS",
+          "target": "HR increment >=30 bpm (>=40 bpm ages 12-19) within 10 min without OH",
+          "contraindications": "Acute hemodynamic instability"
+        },
+        {
+          "item": "12-lead ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; all patients",
+          "target": "Normal sinus rhythm; exclude arrhythmia, pre-excitation, long QT",
+          "contraindications": "None"
+        },
+        {
+          "item": "Continuous cardiac monitoring (telemetry)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If admitted; acute tachycardia evaluation",
+          "target": "Sinus tachycardia only; no pathologic arrhythmia",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "Head-up tilt table test (CPT 95924)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient; gold standard for POTS diagnosis if active stand equivocal",
+          "target": "HR increment >=30 bpm within 10 min without SBP drop >=20 mmHg; classify response type",
+          "contraindications": "Recent MI, severe aortic stenosis, severe CAD"
+        },
+        {
+          "item": "Transthoracic echocardiogram (CPT 93306)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If structural heart disease suspected; palpitations with murmur",
+          "target": "Normal LV function; no structural abnormality; normal valves",
+          "contraindications": "None"
+        },
+        {
+          "item": "QSART (quantitative sudomotor axon reflex test) (CPT 95923)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient autonomic lab; neuropathic subtype evaluation",
+          "target": "Normal sudomotor response at all 4 sites; abnormal suggests neuropathic POTS",
+          "contraindications": "Skin lesions at test sites"
+        },
+        {
+          "item": "Autonomic reflex screen (Valsalva, deep breathing, tilt) (CPT 95922)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Comprehensive autonomic testing; subtype classification",
+          "target": "Normal heart rate variability; normal Valsalva ratio; intact baroreflex",
+          "contraindications": "Recent MI, uncontrolled HTN"
+        },
+        {
+          "item": "Holter monitor (24-48 hour) (CPT 93224)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If paroxysmal arrhythmia suspected beyond sinus tachycardia",
+          "target": "Sinus tachycardia only; no SVT, VT, or high-grade conduction disease",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Thermoregulatory sweat test (TST)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Specialized autonomic lab; suspected widespread autonomic failure",
+          "target": "Normal sweat distribution; abnormal pattern suggests autonomic neuropathy",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If central autonomic cause suspected (Chiari, brainstem lesion, MS)",
+          "target": "Normal; no Chiari malformation, demyelination, or brainstem pathology",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MRI cervical spine",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If cervical myelopathy or Chiari malformation suspected",
+          "target": "Normal; no Chiari, syrinx, or cord compression",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "Blood volume measurement (DAXOR or similar)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Quantify hypovolemia in suspected hypovolemic subtype",
+          "target": "Normal total blood volume; low = hypovolemic POTS",
+          "contraindications": "None"
+        },
+        {
+          "item": "Exercise stress test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Assess exercise capacity; differentiate deconditioning from cardiac limitation",
+          "target": "Normal cardiac response; often low peak VO2 in POTS",
+          "contraindications": "Acute cardiac disease"
+        },
+        {
+          "item": "Sleep study (polysomnography)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If comorbid sleep disorder suspected (insomnia, OSA contributing to fatigue)",
+          "target": "Normal; no significant sleep-disordered breathing",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (ED and Acute Decompensation)": [
+        {
+          "item": "IV Normal Saline",
+          "route": "IV",
+          "indication": "Acute POTS decompensation; severe presyncope; dehydration; inability to tolerate oral fluids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL",
+                "orderSentence": "IV Normal Saline 1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 L NS bolus over 1-2 hours; reassess and repeat if needed; avoid >3 L unless severely dehydrated",
+            "orderSentence": "IV Normal Saline 1000 mL IV"
+          },
+          "contraindications": "Heart failure; volume overload; severe renal failure",
+          "monitoring": "Intake/output; HR response; orthostatic vitals post-infusion; signs of overload",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Lactated Ringer",
+          "route": "IV",
+          "indication": "Alternative to NS for volume resuscitation; POTS flare with dehydration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL",
+                "orderSentence": "IV Lactated Ringer 1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 L over 1-2 hours; may be better tolerated than NS for repeated infusions",
+            "orderSentence": "IV Lactated Ringer 1000 mL IV"
+          },
+          "contraindications": "Hyperkalemia; hepatic failure",
+          "monitoring": "Intake/output; HR response; electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Trendelenburg position / leg elevation",
+          "route": "Physical",
+          "indication": "Immediate management of acute presyncope or near-syncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Supine with legs elevated",
+                "orderSentence": "Trendelenburg position / leg elevation Supine with legs elevated Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Elevate legs 30-45 degrees immediately; maintain until symptoms resolve; transition to sitting slowly",
+            "orderSentence": "Trendelenburg position / leg elevation Supine with legs elevated Physical"
+          },
+          "contraindications": "Respiratory distress; increased ICP",
+          "monitoring": "Mental status; HR; BP recovery",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Telemetry monitoring",
+          "route": "Monitoring",
+          "indication": "Tachycardia evaluation; rule out arrhythmia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous",
+                "orderSentence": "Telemetry monitoring Continuous Monitoring"
+              }
+            ],
+            "route": "Monitoring",
+            "instructions": "Continuous monitoring until sinus tachycardia confirmed and alternative arrhythmias excluded",
+            "orderSentence": "Telemetry monitoring Continuous Monitoring"
+          },
+          "contraindications": "None",
+          "monitoring": "HR; rhythm; arrhythmia detection",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Oral rehydration (rapid bolus)",
+          "route": "PO",
+          "indication": "Mild-moderate decompensation; oral intake tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mL",
+                "orderSentence": "Oral rehydration (rapid bolus) 500 mL PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Rapid oral hydration with 500 mL electrolyte-containing fluid; repeat as tolerated",
+            "orderSentence": "Oral rehydration (rapid bolus) 500 mL PO"
+          },
+          "contraindications": "Vomiting; inability to swallow",
+          "monitoring": "Tolerance; HR response; urine output",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Non-Pharmacologic Therapies (Foundation of POTS Management)": [
+        {
+          "item": "Increased fluid intake",
+          "route": "Dietary",
+          "indication": "All POTS patients; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 L/day",
+                "orderSentence": "Increased fluid intake 2-3 L/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Minimum 2-3 L daily fluid intake including water and electrolyte-containing beverages; bolus 500 mL water 15-30 min before prolonged standing",
+            "orderSentence": "Increased fluid intake 2-3 L/day Dietary"
+          },
+          "contraindications": "Heart failure; renal failure requiring fluid restriction",
+          "monitoring": "Urine output; daily weight; symptom frequency; urine specific gravity",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increased salt intake",
+          "route": "Dietary",
+          "indication": "All POTS patients without contraindication; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-10 g Na/day",
+                "orderSentence": "Increased salt intake 6-10 g Na/day Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "6-10 g sodium daily via dietary salt or salt tablets (1 g NaCl tablets, 3-5 tablets TID with meals); titrate to 24-hr urine Na >170 mEq",
+            "orderSentence": "Increased salt intake 6-10 g Na/day Dietary"
+          },
+          "contraindications": "Uncontrolled HTN; heart failure; severe renal disease",
+          "monitoring": "BP; edema; 24-hr urine sodium; syncope frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression garments",
+          "route": "Physical",
+          "indication": "Venous pooling; orthostatic symptoms; all POTS patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30-40 mmHg waist-high",
+                "orderSentence": "Compression garments 30-40 mmHg waist-high Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Waist-high compression stockings (30-40 mmHg) preferred over knee-high; abdominal binder (20-40 mmHg) as alternative or adjunct",
+            "orderSentence": "Compression garments 30-40 mmHg waist-high Physical"
+          },
+          "contraindications": "Peripheral arterial disease; skin breakdown",
+          "monitoring": "Skin integrity; compliance; symptom improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Graduated exercise program (Levine/CHOP protocol)",
+          "route": "Physical",
+          "indication": "All POTS patients; deconditioning reversal; cornerstone of long-term management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 min 3-4x/week",
+                "orderSentence": "Graduated exercise program (Levine/CHOP protocol) 30 min 3-4x/week Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Start recumbent exercise (rowing, swimming, recumbent bike) 30 min 3-4x/week; increase gradually over 3-6 months to upright aerobic exercise; avoid sudden upright exercise initially",
+            "orderSentence": "Graduated exercise program (Levine/CHOP protocol) 30 min 3-4x/week Physical"
+          },
+          "contraindications": "Acute decompensation; unstable cardiac disease",
+          "monitoring": "Exercise tolerance; resting HR trend; orthostatic symptoms; functional capacity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Counter-pressure maneuvers",
+          "route": "Physical",
+          "indication": "Prodromal symptoms; prevention of presyncope",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Perform at onset of prodrome",
+                "orderSentence": "Counter-pressure maneuvers Perform at onset of prodrome Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Leg crossing with muscle tensing; squatting; handgrip; lower body muscle pumping; can abort ~40% of presyncopal episodes",
+            "orderSentence": "Counter-pressure maneuvers Perform at onset of prodrome Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom diary; effectiveness",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Head-of-bed elevation",
+          "route": "Physical",
+          "indication": "Nocturnal polyuria reduction; improve morning orthostatic tolerance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 degree elevation",
+                "orderSentence": "Head-of-bed elevation 10-20 degree elevation Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Elevate head of bed 4-6 inches (blocks or wedge); reduces nocturnal natriuresis and supine hypertension",
+            "orderSentence": "Head-of-bed elevation 10-20 degree elevation Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Morning symptoms; nocturia frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Pharmacotherapy": [
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "Volume expansion; first-line for hypovolemic/general POTS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05 mg daily",
+                "orderSentence": "Fludrocortisone 0.05 mg daily PO"
+              },
+              {
+                "text": "0.1 mg daily",
+                "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+              },
+              {
+                "text": "0.2 mg daily",
+                "orderSentence": "Fludrocortisone 0.2 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.05-0.1 mg daily; titrate by 0.05 mg q1-2 weeks; max 0.2 mg daily; takes 1-2 weeks for full effect",
+            "orderSentence": "Fludrocortisone 0.05 mg daily PO"
+          },
+          "contraindications": "Heart failure; uncontrolled HTN; hypokalemia",
+          "monitoring": "K+ q2-4 weeks during titration then q3-6 months; supine BP; weight; edema; headache",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "Peripheral vasoconstriction; orthostatic symptoms refractory to non-pharmacologic measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg TID",
+                "orderSentence": "Midodrine 2.5 mg TID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Midodrine 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Midodrine 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID (upon waking, midday, mid-afternoon); titrate by 2.5 mg q1 week; max 10 mg TID; last dose >=4 hours before bedtime",
+            "orderSentence": "Midodrine 2.5 mg TID PO"
+          },
+          "contraindications": "Supine hypertension (SBP >180); urinary retention; pheochromocytoma; severe cardiac disease; thyrotoxicosis",
+          "monitoring": "Supine BP (avoid >160/90); urinary symptoms; piloerection (scalp tingling); HR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol (low-dose)",
+          "route": "PO",
+          "indication": "Heart rate control; hyperadrenergic symptoms (palpitations, tremor, anxiety)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Propranolol (low-dose) 10 mg BID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Propranolol (low-dose) 10 mg TID PO"
+              },
+              {
+                "text": "20 mg TID",
+                "orderSentence": "Propranolol (low-dose) 20 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg BID-TID; titrate slowly; max 20 mg TID; low doses preferred in POTS (high doses worsen fatigue/exercise intolerance)",
+            "orderSentence": "Propranolol (low-dose) 10 mg BID PO"
+          },
+          "contraindications": "Asthma; severe bradycardia; 2nd/3rd degree AV block; decompensated HF; severe hypotension",
+          "monitoring": "HR (target standing HR <100, avoid resting <60); BP; fatigue; exercise tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ivabradine (Corlanor)",
+          "route": "PO",
+          "indication": "Heart rate reduction without BP lowering; POTS with inappropriate sinus tachycardia; beta-blocker intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg BID",
+                "orderSentence": "Ivabradine (Corlanor) 2.5 mg BID PO"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Ivabradine (Corlanor) 5 mg BID PO"
+              },
+              {
+                "text": "7.5 mg BID",
+                "orderSentence": "Ivabradine (Corlanor) 7.5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg BID with meals; titrate by 2.5 mg q2 weeks; max 7.5 mg BID; selective If-channel blocker",
+            "orderSentence": "Ivabradine (Corlanor) 2.5 mg BID PO"
+          },
+          "contraindications": "Severe hepatic impairment; sick sinus syndrome (without pacemaker); SA block; 3rd degree AV block; resting HR <60 bpm; concurrent strong CYP3A4 inhibitors",
+          "monitoring": "HR (target resting 60-80); visual phenomena (phosphenes); BP; atrial fibrillation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pyridostigmine (Mestinon)",
+          "route": "PO",
+          "indication": "Augment ganglionic neurotransmission; milder POTS; avoid BP effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine (Mestinon) 30 mg TID PO"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine (Mestinon) 60 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg TID; may increase to 60 mg TID; enhances autonomic ganglionic transmission without significant supine hypertension",
+            "orderSentence": "Pyridostigmine (Mestinon) 30 mg TID PO"
+          },
+          "contraindications": "Mechanical bowel or urinary obstruction; bradycardia; asthma (relative)",
+          "monitoring": "GI side effects (nausea, diarrhea, cramping); HR; cholinergic symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Refractory Therapies": [
+        {
+          "item": "Clonidine",
+          "route": "PO",
+          "indication": "Hyperadrenergic POTS with elevated standing NE; refractory tachycardia with hypertension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05 mg BID",
+                "orderSentence": "Clonidine 0.05 mg BID PO"
+              },
+              {
+                "text": "0.1 mg BID",
+                "orderSentence": "Clonidine 0.1 mg BID PO"
+              },
+              {
+                "text": "0.1 mg TID",
+                "orderSentence": "Clonidine 0.1 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.05 mg BID; titrate by 0.05 mg q1 week; max 0.3 mg/day divided; central alpha-2 agonist reduces sympathetic outflow; do NOT discontinue abruptly (rebound hypertension)",
+            "orderSentence": "Clonidine 0.05 mg BID PO"
+          },
+          "contraindications": "Severe bradycardia; hypotension",
+          "monitoring": "BP; HR; sedation; dry mouth; rebound HTN with abrupt discontinuation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methyldopa",
+          "route": "PO",
+          "indication": "Hyperadrenergic POTS refractory to clonidine; standing hypertension with tachycardia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "125 mg BID",
+                "orderSentence": "Methyldopa 125 mg BID PO"
+              },
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Methyldopa 250 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 125 mg BID; titrate slowly; max 500 mg BID; false neurotransmitter reduces sympathetic tone",
+            "orderSentence": "Methyldopa 125 mg BID PO"
+          },
+          "contraindications": "Hepatic disease; active liver disease; history of methyldopa-associated hepatitis; MAOIs",
+          "monitoring": "LFTs at baseline and 6-12 weeks; CBC (hemolytic anemia); BP; sedation; Coombs test if anemia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Desmopressin (DDAVP)",
+          "route": "PO/Intranasal",
+          "indication": "Hypovolemic POTS with nocturnal polyuria; acute volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg PO qHS",
+                "orderSentence": "Desmopressin (DDAVP) 0.1 mg PO qHS PO"
+              },
+              {
+                "text": "0.2 mg PO qHS",
+                "orderSentence": "Desmopressin (DDAVP) 0.2 mg PO qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.1 mg PO at bedtime; may increase to 0.2 mg; alternative: 10 mcg intranasal qHS; retain free water overnight",
+            "orderSentence": "Desmopressin (DDAVP) 0.1 mg PO qHS PO"
+          },
+          "contraindications": "Hyponatremia; primary polydipsia; HF; habitual/psychogenic polydipsia",
+          "monitoring": "Serum sodium (check within 1 week of initiation then monthly); fluid balance; morning weight; headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Neurogenic orthostatic component; neuropathic POTS with norepinephrine deficiency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Droxidopa (Northera) 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Droxidopa (Northera) 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Droxidopa (Northera) 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID; norepinephrine prodrug",
+            "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+          },
+          "contraindications": "Supine hypertension; concurrent catecholamine drugs (MAOIs, SNRIs at high dose)",
+          "monitoring": "Supine BP (avoid >180/110); HR; syncope frequency; headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Octreotide",
+          "route": "SQ",
+          "indication": "Refractory POTS with splanchnic vasodilation; postprandial worsening",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mcg SQ BID",
+                "orderSentence": "Octreotide 25 mcg SQ BID SQ"
+              },
+              {
+                "text": "50 mcg SQ BID",
+                "orderSentence": "Octreotide 50 mcg SQ BID SQ"
+              },
+              {
+                "text": "100 mcg SQ TID",
+                "orderSentence": "Octreotide 100 mcg SQ TID SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "Start 25 mcg SQ BID pre-meals; titrate to 50-100 mcg TID; reduces splanchnic blood pooling",
+            "orderSentence": "Octreotide 25 mcg SQ BID SQ"
+          },
+          "contraindications": "Gallstones (relative); diabetes (alters glucose); hypersensitivity",
+          "monitoring": "Blood glucose; GI symptoms (nausea, diarrhea, abdominal pain); gallbladder ultrasound q12 months",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "POTS-associated fatigue and cognitive dysfunction (\"brain fog\") refractory to other measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Modafinil 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Modafinil 200 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily in AM; may increase to 200 mg daily; wakefulness-promoting agent",
+            "orderSentence": "Modafinil 100 mg daily PO"
+          },
+          "contraindications": "Severe hepatic impairment; history of left ventricular hypertrophy; mitral valve prolapse with prior CNS stimulant use",
+          "monitoring": "BP; HR; sleep quality; psychiatric symptoms; headache",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Erythropoietin (EPO)",
+          "route": "SQ",
+          "indication": "Severe hypovolemic POTS with documented low red cell mass and low EPO level",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10,000 units SQ weekly",
+                "orderSentence": "Erythropoietin (EPO) 10,000 units SQ weekly SQ"
+              },
+              {
+                "text": "20,000 units SQ weekly",
+                "orderSentence": "Erythropoietin (EPO) 20,000 units SQ weekly SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "10,000-20,000 units SQ weekly; titrate to Hgb 12-14 g/dL; requires documented low EPO level and low blood volume",
+            "orderSentence": "Erythropoietin (EPO) 10,000 units SQ weekly SQ"
+          },
+          "contraindications": "Uncontrolled HTN; history of thromboembolic events; polycythemia",
+          "monitoring": "Hgb/Hct q2-4 weeks; BP; iron studies; thrombotic events; reticulocyte count",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "IV saline infusions (scheduled outpatient)",
+          "route": "IV",
+          "indication": "Refractory POTS with recurrent severe decompensation unresponsive to oral volume expansion and pharmacotherapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mL NS",
+                "orderSentence": "IV saline infusions (scheduled outpatient) 1000 mL NS IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 L NS infusion weekly or biweekly in infusion center; last resort; evidence limited",
+            "orderSentence": "IV saline infusions (scheduled outpatient) 1000 mL NS IV"
+          },
+          "contraindications": "Heart failure; renal failure; adequate response to oral measures (not first-line)",
+          "monitoring": "Electrolytes; BP; HR; volume status; infection risk at access site",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Autonomic disorders specialist/neurologist for formal autonomic testing (tilt table, QSART, Valsalva), subtype classification, and chronic management guidance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology consultation to exclude structural heart disease, arrhythmia, or inappropriate sinus tachycardia as alternative diagnosis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy/exercise physiology referral for structured graduated exercise program (Levine or CHOP protocol) tailored to POTS patients starting with recumbent exercise",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rheumatology if joint hypermobility spectrum disorder or Ehlers-Danlos syndrome suspected, given high comorbidity with POTS",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Allergy/Immunology if mast cell activation syndrome suspected (flushing, urticaria, anaphylaxis, elevated tryptase with POTS symptoms)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology if significant GI dysmotility (gastroparesis, nausea, constipation) contributing to dehydration and nutritional compromise",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/Psychology for comorbid anxiety, depression, or functional overlay; cognitive behavioral therapy for symptom coping strategies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine referral if comorbid insomnia or sleep-disordered breathing contributing to fatigue and autonomic dysfunction",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Drink at least 2-3 liters of fluid daily including water and electrolyte-containing beverages; rapid bolus of 500 mL water before prolonged standing (acutely raises BP via osmopressor reflex)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increase dietary sodium to 6-10 grams daily using salt tablets or dietary salt (unless contraindicated by hypertension or heart failure) to expand plasma volume",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear waist-high compression stockings (30-40 mmHg) during all upright activity; use abdominal binder as alternative or adjunct to reduce splanchnic pooling",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid prolonged standing; if standing is required, shift weight, cross legs, and tense muscles to promote venous return",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rise slowly from lying to sitting to standing with 1-2 minutes at each position to allow hemodynamic adjustment",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Recognize warning symptoms (lightheadedness, tunnel vision, palpitations) and immediately sit or lie down to prevent syncope and injury",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid triggers: hot environments, large carbohydrate-heavy meals, alcohol, prolonged hot showers/baths, rapid positional changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if syncopal episode occurs, chest pain develops, new neurological symptoms appear, or symptoms acutely worsen despite home measures",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Begin structured graduated exercise program (Levine/CHOP protocol): start with recumbent exercise 30 min 3-4x/week, progress to upright over 3-6 months; exercise is the single most effective long-term intervention for POTS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Eat small, frequent meals rather than large meals to reduce postprandial blood pooling in the splanchnic circulation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid excessive alcohol which causes vasodilation and worsens orthostatic intolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain consistent sleep schedule with 7-9 hours nightly; sleep with head of bed elevated 4-6 inches to reduce nocturnal natriuresis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medications that worsen POTS: diuretics, vasodilators, tricyclic antidepressants (orthostatic effect), stimulants at high dose; review all medications with prescriber",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use cooling strategies for heat sensitivity: cooling vest, cold water intake, portable fan, avoiding prolonged heat exposure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Obtain medical alert identification for patients with frequent presyncope/syncope to inform first responders of POTS diagnosis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prioritize mental health self-care: POTS is a chronic condition; pace activities, practice stress management, and engage support groups to improve quality of life",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Inappropriate sinus tachycardia (IST)",
+      "features": "Elevated resting HR (>100 bpm) in supine AND upright; not posturally triggered; no orthostatic symptoms",
+      "tests": "24-hour Holter showing elevated HR at rest; HR does not normalize when supine"
+    },
+    {
+      "diagnosis": "Orthostatic hypotension (neurogenic)",
+      "features": "SBP drop >=20 mmHg or DBP drop >=10 mmHg within 3 min of standing; HR may rise but BP falls significantly",
+      "tests": "Active stand test or tilt table showing BP drop meeting OH criteria"
+    },
+    {
+      "diagnosis": "Pheochromocytoma / paraganglioma",
+      "features": "Episodic hypertension, diaphoresis, headache, tachycardia; not postural-dependent",
+      "tests": "24-hour urine catecholamines/metanephrines; plasma free metanephrines; adrenal imaging"
+    },
+    {
+      "diagnosis": "Hyperthyroidism",
+      "features": "Resting tachycardia; heat intolerance; weight loss; tremor; not position-dependent",
+      "tests": "TSH (suppressed); free T4 (elevated); thyroid antibodies"
+    },
+    {
+      "diagnosis": "Anemia (moderate-severe)",
+      "features": "Tachycardia and orthostatic symptoms that resolve with correction; pallor; dyspnea",
+      "tests": "CBC showing Hgb <10 g/dL; symptoms resolve with transfusion/iron"
+    },
+    {
+      "diagnosis": "Anxiety/panic disorder",
+      "features": "Tachycardia with situational triggers (not postural); chest tightness; hyperventilation; paresthesias",
+      "tests": "Normal active stand test; symptoms reproduce with hyperventilation but not posture alone"
+    },
+    {
+      "diagnosis": "Cardiac arrhythmia (SVT, atrial fibrillation)",
+      "features": "Sudden onset tachycardia not related to posture; irregular rhythm; very rapid rates (>150 bpm)",
+      "tests": "ECG showing non-sinus rhythm; Holter or event recorder capturing arrhythmia"
+    },
+    {
+      "diagnosis": "Dehydration / hypovolemia (acute)",
+      "features": "Tachycardia and orthostatic symptoms that fully resolve with volume repletion; identifiable cause",
+      "tests": "History (GI illness, poor intake); labs showing hemoconcentration; resolution with IV fluids"
+    },
+    {
+      "diagnosis": "Addison disease (adrenal insufficiency)",
+      "features": "Orthostatic hypotension (not just tachycardia); hyperpigmentation; hyponatremia; hyperkalemia; fatigue",
+      "tests": "AM cortisol <3 mcg/dL; ACTH stimulation test; ACTH level"
+    },
+    {
+      "diagnosis": "Mast cell activation syndrome (MCAS)",
+      "features": "Flushing, urticaria, GI symptoms, tachycardia; may coexist with POTS; episodic",
+      "tests": "Serum tryptase during episode; 24-hr urine histamine metabolites; prostaglandin D2"
+    },
+    {
+      "diagnosis": "Ehlers-Danlos syndrome (hypermobile type)",
+      "features": "Joint hypermobility; soft/stretchy skin; easy bruising; frequently comorbid with POTS rather than differential",
+      "tests": "Beighton score >=5; clinical criteria (2017 EDS classification); genetic testing for vascular type"
+    },
+    {
+      "diagnosis": "Medication-induced tachycardia",
+      "features": "Temporal relationship to medication initiation; common offenders: stimulants, decongestants, bronchodilators, thyroid supplements",
+      "tests": "Medication reconciliation; improvement with dose reduction or discontinuation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Diagnostic criteria: HR increment >=30 bpm within 10 min of standing without orthostatic hypotension",
+      "evidenceLevel": "Consensus, Level C",
+      "source": "[Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23753844/)"
+    },
+    {
+      "recommendation": "Tilt table testing as diagnostic standard for POTS",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sheldon RS et al. Heart Rhythm 2015](https://pubmed.ncbi.nlm.nih.gov/25980576/)"
+    },
+    {
+      "recommendation": "Graduated exercise training (Levine protocol) improves POTS symptoms and cardiovascular fitness",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Fu Q et al. J Am Coll Cardiol 2010](https://pubmed.ncbi.nlm.nih.gov/20579544/)"
+    },
+    {
+      "recommendation": "Fludrocortisone for volume expansion in POTS",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/)"
+    },
+    {
+      "recommendation": "Midodrine reduces orthostatic tachycardia and improves standing tolerance",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/)"
+    },
+    {
+      "recommendation": "Ivabradine reduces heart rate and improves symptoms in POTS",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Taub PR et al. J Am Coll Cardiol 2021](https://pubmed.ncbi.nlm.nih.gov/33602468/)"
+    },
+    {
+      "recommendation": "Pyridostigmine improves symptoms with minimal supine hypertension",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Raj SR et al. Circulation 2005](https://pubmed.ncbi.nlm.nih.gov/15911704/)"
+    },
+    {
+      "recommendation": "ACC Expert Consensus Statement on POTS and autonomic disorders",
+      "evidenceLevel": "Consensus",
+      "source": "[Vernino S et al. Auton Neurosci 2021](https://pubmed.ncbi.nlm.nih.gov/34144933/)"
+    },
+    {
+      "recommendation": "Hyperadrenergic subtype classification by standing norepinephrine",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Goldstein DS et al. Circulation 2002](https://pubmed.ncbi.nlm.nih.gov/12403667/)"
+    },
+    {
+      "recommendation": "Compression garments reduce venous pooling and improve orthostatic tolerance",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Figueroa JJ et al. Arch Phys Med Rehabil 2015](https://pubmed.ncbi.nlm.nih.gov/25448247/)"
+    },
+    {
+      "recommendation": "Small fiber neuropathy in neuropathic POTS subtype",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Gibbons CH, Freeman R. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19398703/)"
+    },
+    {
+      "recommendation": "Salt and fluid intake of 2-3 L/day and 6-10 g Na/day as first-line nonpharmacologic therapy",
+      "evidenceLevel": "Consensus, Level C",
+      "source": "[Raj SR. Circulation 2013](https://pubmed.ncbi.nlm.nih.gov/23753844/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Orthostatic vital signs (HR and BP at 1, 3, 5, 10 min standing)",
+      "frequency": "Each encounter; q8h if admitted",
+      "action": "Optimize volume/salt; adjust medications; reassess subtype",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Resting heart rate",
+      "frequency": "Each encounter",
+      "action": "Adjust beta-blocker or ivabradine dose; evaluate for over-treatment if <55 bpm",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serum potassium",
+      "frequency": "Baseline; q2-4 weeks during fludrocortisone titration; then q3-6 months",
+      "action": "Supplement potassium if <3.5; reduce fludrocortisone dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Supine blood pressure",
+      "frequency": "Each encounter; home monitoring",
+      "action": "Reduce midodrine dose; time last dose >=4 hr before bed; add clonidine qHS if persistent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "Baseline; within 1 week of desmopressin initiation; monthly on desmopressin",
+      "action": "Hold desmopressin if Na <135; restrict free water; recheck in 48 hours",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "24-hour urine sodium",
+      "frequency": "Baseline then q3-6 months",
+      "action": "Increase salt supplementation; dietary counseling; reassess compliance",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Syncope/presyncope frequency",
+      "frequency": "Each visit; patient diary",
+      "action": "Reassess treatment; change medication; evaluate compliance",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Exercise tolerance (functional capacity)",
+      "frequency": "Q3-6 months",
+      "action": "Modify exercise program; reassess medications; evaluate deconditioning",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight and volume status",
+      "frequency": "Each encounter",
+      "action": "Adjust fludrocortisone; fluid intake; add diuretic if needed for edema",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Confirmed POTS exacerbation with HR response to IV fluids; stable orthostatic vitals post-hydration; no syncope in ED; cardiac arrhythmia excluded; tolerating oral fluids; reliable outpatient follow-up arranged"
+    },
+    {
+      "disposition": "Observation (ED short stay)",
+      "criteria": "POTS flare requiring IV hydration with incomplete symptom resolution; awaiting initial cardiac workup (ECG, troponin, echo); first-time presentation requiring diagnostic evaluation"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe decompensation with recurrent presyncope/syncope despite IV fluids; unable to tolerate oral intake; need for telemetry to exclude arrhythmia; new-onset POTS requiring inpatient autonomic workup; comorbid condition requiring inpatient management"
+    },
+    {
+      "disposition": "Admit to ICU/monitored bed",
+      "criteria": "Hemodynamic instability not responding to volume resuscitation; sustained HR >150 bpm with concern for arrhythmia; syncope with injury requiring monitoring; concurrent critical illness triggering POTS decompensation"
+    },
+    {
+      "disposition": "Outpatient follow-up (autonomic specialist)",
+      "criteria": "All newly diagnosed POTS: autonomic neurology within 2-4 weeks; established POTS with stable management: q3-6 months; post-medication titration: 2-4 weeks"
+    },
+    {
+      "disposition": "Outpatient follow-up (PCP/cardiology)",
+      "criteria": "Medication monitoring q2-4 weeks during titration; stable patients q3-6 months; annual echocardiogram if structural concern; exercise program reassessment q3 months"
+    }
+  ]
+}

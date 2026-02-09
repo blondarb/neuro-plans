@@ -1,0 +1,1346 @@
+{
+  "id": "neurogenic-orthostatic-hypotension",
+  "title": "Neurogenic Orthostatic Hypotension",
+  "version": "1.1",
+  "icd10": [
+    "** I95.1 (Orthostatic hypotension)",
+    "G90.09 (Other idiopathic peripheral autonomic neuropathy)"
+  ],
+  "scope": "** Evaluation and management of neurogenic orthostatic hypotension (nOH) in adults. Includes differentiation from non-neurogenic OH, etiologic workup (alpha-synucleinopathies, diabetic autonomic neuropathy, amyloid neuropathy, autoimmune autonomic ganglionopathy, pure autonomic failure), autonomic testing, pharmacologic and non-pharmacologic management, supine hypertension management, and falls prevention. Covers ED, hospital, and outpatient settings. Excludes non-neurogenic causes of OH (dehydration, hemorrhage, medication-induced) unless as differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Anemia contributing to orthostatic symptoms",
+          "target": "Normal hemoglobin"
+        },
+        {
+          "item": "BMP (CPT 80048) (electrolytes, creatinine, glucose)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Dehydration, renal insufficiency, electrolyte abnormalities",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetic autonomic neuropathy screening",
+          "target": "<5.7% (normal); ≥6.5% suggests diabetes"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction contributing to autonomic symptoms",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency neuropathy with autonomic component",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "AM cortisol (CPT 82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency as cause of orthostatic hypotension",
+          "target": ">10 mcg/dL (AM)"
+        },
+        {
+          "item": "Orthostatic vital signs (lying → standing at 1 and 3 min)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Confirm OH; assess HR response to differentiate nOH vs non-neurogenic",
+          "target": "SBP drop <20, DBP drop <10; HR rise ≥15 bpm"
+        },
+        {
+          "item": "12-lead ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Exclude cardiac arrhythmia or structural cause",
+          "target": "Normal sinus rhythm"
+        }
+      ],
+      "Extended Labs (Based on Clinical Suspicion)": [
+        {
+          "item": "Supine and standing plasma norepinephrine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Differentiates preganglionic vs postganglionic autonomic failure; PAF shows low supine NE without standing rise",
+          "target": "Supine NE >200 pg/mL with ≥2× rise on standing"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP) with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for AL amyloidosis",
+          "target": "No monoclonal protein"
+        },
+        {
+          "item": "Serum free light chains",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Amyloidosis evaluation (AL type)",
+          "target": "Normal kappa/lambda ratio"
+        },
+        {
+          "item": "Anti-ganglionic AChR antibodies (anti-gAChR Ab)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune autonomic ganglionopathy (AAG); treatable cause",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (anti-Hu, CRMP-5, others)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic autonomic neuropathy",
+          "target": "Negative"
+        },
+        {
+          "item": "24-hour urine catecholamines and metanephrines",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Exclude pheochromocytoma as rare cause",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized Labs": [
+        {
+          "item": "Transthyretin (TTR) gene sequencing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Hereditary ATTR amyloidosis (hATTR)",
+          "target": "No pathogenic variant"
+        },
+        {
+          "item": "Fat pad or tissue biopsy with Congo red staining",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Tissue confirmation of amyloidosis",
+          "target": "No amyloid deposits"
+        },
+        {
+          "item": "Skin punch biopsy (epidermal nerve fiber density)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Small fiber neuropathy with autonomic involvement",
+          "target": "Normal ENFD (age/site adjusted)"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If autoimmune or inflammatory etiology suspected",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Autonomic Testing": [
+        {
+          "item": "Orthostatic vital signs (bedside)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; ALL patients",
+          "target": "No sustained SBP drop ≥20 or DBP drop ≥10 within 3 min",
+          "contraindications": "None"
+        },
+        {
+          "item": "Head-up tilt table test (CPT 95924)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient or inpatient autonomic lab",
+          "target": "Quantify BP and HR response to passive tilt; confirm nOH",
+          "contraindications": "Severe aortic stenosis, critical carotid stenosis"
+        },
+        {
+          "item": "Valsalva maneuver with beat-to-beat BP monitoring (CPT 95922)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Autonomic lab",
+          "target": "Normal 4-phase response; absent phase IV overshoot in nOH",
+          "contraindications": "Recent eye surgery, aortic aneurysm"
+        },
+        {
+          "item": "Cardiovagal testing — deep breathing, Valsalva ratio (CPT 95921)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Autonomic lab",
+          "target": "Normal HR variability with deep breathing",
+          "contraindications": "Atrial fibrillation (may limit interpretation)"
+        }
+      ],
+      "Extended Autonomic and Diagnostic Studies": [
+        {
+          "item": "QSART — quantitative sudomotor axon reflex test (CPT 95923)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Autonomic lab",
+          "target": "Normal sweat volumes at standard sites",
+          "contraindications": "Skin lesions at test sites"
+        },
+        {
+          "item": "Thermoregulatory sweat test (TST)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Specialized center",
+          "target": "Normal sweat distribution; identifies pattern of postganglionic vs preganglionic sudomotor failure",
+          "contraindications": "Acute illness, cardiovascular instability"
+        },
+        {
+          "item": "Cardiac MIBG scintigraphy (CPT 78451)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Nuclear medicine",
+          "target": "Normal myocardial uptake; decreased uptake in postganglionic lesions (PD, PAF, DLB) vs preserved in MSA",
+          "contraindications": "Medications affecting NE uptake (TCAs, labetalol)"
+        },
+        {
+          "item": "Nerve conduction studies / EMG (CPT 95907-95913)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "EMG lab",
+          "target": "Evaluate for peripheral neuropathy causing autonomic dysfunction",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI brain (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Radiology",
+          "target": "Evaluate for MSA (hot cross bun sign, cerebellar/pontine atrophy), PD, DLB",
+          "contraindications": "Pacemaker, metal implants"
+        }
+      ],
+      "Rare/Specialized Studies": [
+        {
+          "item": "DaTscan (Ioflupane I-123)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Nuclear medicine",
+          "target": "Differentiates PD/DLB (abnormal) from MSA (often abnormal) or non-synucleinopathy",
+          "contraindications": "None significant"
+        },
+        {
+          "item": "24-hour ambulatory blood pressure monitoring (ABPM)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient",
+          "target": "Characterize circadian BP pattern; identify nocturnal hypertension, post-prandial hypotension",
+          "contraindications": "None"
+        },
+        {
+          "item": "Cardiac echo",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "ROUTINE",
+          "timing": "If cardiac cause suspected",
+          "target": "Normal structure and function",
+          "contraindications": "None"
+        },
+        {
+          "item": "Echocardiogram with strain imaging",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If cardiac amyloidosis suspected",
+          "target": "Normal; or identify restrictive cardiomyopathy pattern",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Management": [
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Acute symptomatic nOH with hemodynamic compromise",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV normal saline 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS 500-1000 mL bolus; repeat if needed based on response",
+            "orderSentence": "IV normal saline 500-1000 mL IV"
+          },
+          "contraindications": "Heart failure, volume overload",
+          "monitoring": "Volume status, BP, HR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Medication review and discontinuation of offending agents",
+          "route": "-",
+          "indication": "All patients with new or worsening OH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Medication review and discontinuation of offending agents N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Review and reduce/discontinue diuretics, alpha-blockers, vasodilators, tricyclics, dopamine agonists",
+            "orderSentence": "Medication review and discontinuation of offending agents N/A -"
+          },
+          "contraindications": "Clinical judgment",
+          "monitoring": "BP, symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Supine positioning with legs elevated",
+          "route": "-",
+          "indication": "Acute symptomatic hypotension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Supine positioning with legs elevated N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Trendelenburg or leg elevation to improve venous return",
+            "orderSentence": "Supine positioning with legs elevated N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Bolus water drinking",
+          "route": "PO",
+          "indication": "Acute symptomatic OH; pressor effect within 5-15 min",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "480 mL (16 oz)",
+                "orderSentence": "Bolus water drinking 480 mL (16 oz) PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Rapid ingestion of 480 mL cold water; raises SBP 20-30 mmHg within 5-15 min via osmopressor reflex",
+            "orderSentence": "Bolus water drinking 480 mL (16 oz) PO"
+          },
+          "contraindications": "Fluid restriction, NPO status",
+          "monitoring": "BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Non-Pharmacologic Therapies": [
+        {
+          "item": "Increased dietary salt intake",
+          "route": "PO",
+          "indication": "Chronic nOH management; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-10 g/day",
+                "orderSentence": "Increased dietary salt intake 6-10 g/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "6-10 g sodium per day via dietary supplementation or salt tablets (1 g tabs, 2-3 TID with meals)",
+            "orderSentence": "Increased dietary salt intake 6-10 g/day PO"
+          },
+          "contraindications": "Heart failure, severe supine HTN, renal failure",
+          "monitoring": "BP, edema, renal function",
+          "ED": "EXT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Increased fluid intake",
+          "route": "PO",
+          "indication": "Chronic nOH; volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3 L/day",
+                "orderSentence": "Increased fluid intake 2-3 L/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Target 2-3 L fluid per day; distribute throughout the day",
+            "orderSentence": "Increased fluid intake 2-3 L/day PO"
+          },
+          "contraindications": "Heart failure, fluid restriction",
+          "monitoring": "Volume status",
+          "ED": "EXT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression garments — abdominal binder",
+          "route": "-",
+          "indication": "Chronic nOH; venous pooling reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Compression garments — abdominal binder N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Abdominal binder (20-40 mmHg); more effective than leg stockings alone",
+            "orderSentence": "Compression garments — abdominal binder N/A -"
+          },
+          "contraindications": "Abdominal wound, skin breakdown",
+          "monitoring": "Compliance, comfort",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compression garments — waist-high stockings",
+          "route": "-",
+          "indication": "Chronic nOH; venous pooling reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Compression garments — waist-high stockings N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Waist-high compression stockings 30-40 mmHg; thigh-high less effective",
+            "orderSentence": "Compression garments — waist-high stockings N/A -"
+          },
+          "contraindications": "Peripheral vascular disease, skin ulcers",
+          "monitoring": "Compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Head-of-bed elevation",
+          "route": "-",
+          "indication": "Supine hypertension mitigation; reduce nocturnal diuresis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Head-of-bed elevation N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Elevate head of bed 10-20 degrees (6-9 inch blocks under head posts); reduces nocturnal natriuresis and expands daytime plasma volume",
+            "orderSentence": "Head-of-bed elevation N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Supine BP, symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Counter-pressure maneuvers",
+          "route": "-",
+          "indication": "Acute or chronic nOH; during prodromal symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Counter-pressure maneuvers N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Leg crossing with muscle tensing, squatting, bending forward; raises BP 20-30 mmHg acutely",
+            "orderSentence": "Counter-pressure maneuvers N/A -"
+          },
+          "contraindications": "Severe arthritis limiting maneuvers",
+          "monitoring": "Symptom relief",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Small frequent meals; reduce carbohydrate load",
+          "route": "PO",
+          "indication": "Post-prandial hypotension component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Small frequent meals; reduce carbohydrate load N/A PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5-6 small meals per day; limit carbohydrate intake per meal; avoid alcohol",
+            "orderSentence": "Small frequent meals; reduce carbohydrate load N/A PO"
+          },
+          "contraindications": "None",
+          "monitoring": "Post-prandial BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Pharmacotherapy": [
+        {
+          "item": "Midodrine",
+          "route": "PO",
+          "indication": "nOH with persistent symptoms despite non-pharmacologic measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg TID",
+                "orderSentence": "Midodrine 2.5 mg TID PO"
+              },
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Midodrine 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Midodrine 10 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg TID; titrate by 2.5 mg q1-2 weeks; max 10 mg TID; last dose no later than 4 PM to avoid supine HTN; onset 30-45 min, duration 3-4 hr",
+            "orderSentence": "Midodrine 2.5 mg TID PO"
+          },
+          "contraindications": "Supine hypertension (SBP >180), urinary retention, pheochromocytoma, severe organic heart disease, thyrotoxicosis",
+          "monitoring": "Supine BP (especially at night), urinary retention, scalp tingling, piloerection",
+          "ED": "EXT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Droxidopa (Northera)",
+          "route": "PO",
+          "indication": "Symptomatic nOH specifically due to autonomic failure (PD, MSA, PAF, dopamine beta-hydroxylase deficiency)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg TID",
+                "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Droxidopa (Northera) 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Droxidopa (Northera) 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Droxidopa (Northera) 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg TID; titrate by 100 mg TID q24-48 hr; max 600 mg TID; FDA-approved for symptomatic nOH",
+            "orderSentence": "Droxidopa (Northera) 100 mg TID PO"
+          },
+          "contraindications": "Supine hypertension",
+          "monitoring": "Supine BP (measure before next dose and at bedtime); must re-evaluate efficacy after 2 weeks per FDA requirement",
+          "ED": "EXT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Fludrocortisone",
+          "route": "PO",
+          "indication": "nOH with volume depletion component; plasma volume expansion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.05 mg daily",
+                "orderSentence": "Fludrocortisone 0.05 mg daily PO"
+              },
+              {
+                "text": "0.1 mg daily",
+                "orderSentence": "Fludrocortisone 0.1 mg daily PO"
+              },
+              {
+                "text": "0.2 mg daily",
+                "orderSentence": "Fludrocortisone 0.2 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.05-0.1 mg daily; titrate q1-2 weeks; max 0.2 mg daily; monitor for hypokalemia and supine HTN; off-label for nOH",
+            "orderSentence": "Fludrocortisone 0.05 mg daily PO"
+          },
+          "contraindications": "Heart failure, severe supine HTN, hypokalemia",
+          "monitoring": "K+, Mg2+, supine BP, weight, edema",
+          "ED": "EXT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "EXT"
+        }
+      ],
+      "Second-Line/Refractory Therapies": [
+        {
+          "item": "Pyridostigmine",
+          "route": "PO",
+          "indication": "Mild-moderate nOH; augments ganglionic neurotransmission; less supine HTN risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg TID",
+                "orderSentence": "Pyridostigmine 30 mg TID PO"
+              },
+              {
+                "text": "60 mg TID",
+                "orderSentence": "Pyridostigmine 60 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg TID; may increase to 60 mg TID; best for mild OH; may combine with midodrine 5 mg for added benefit",
+            "orderSentence": "Pyridostigmine 30 mg TID PO"
+          },
+          "contraindications": "Asthma, mechanical GI/urinary obstruction, bradycardia",
+          "monitoring": "Cholinergic side effects (GI cramping, diarrhea), HR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atomoxetine",
+          "route": "PO",
+          "indication": "nOH refractory to first-line; norepinephrine reuptake inhibitor; benefits central autonomic lesions (MSA)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Atomoxetine 10 mg daily PO"
+              },
+              {
+                "text": "18 mg daily",
+                "orderSentence": "Atomoxetine 18 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-18 mg daily or BID; enhances residual sympathetic tone; evidence from small trials",
+            "orderSentence": "Atomoxetine 10 mg daily PO"
+          },
+          "contraindications": "Narrow-angle glaucoma, pheochromocytoma, concurrent MAOIs",
+          "monitoring": "HR, BP (standing and supine), mood",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Yohimbine",
+          "route": "PO",
+          "indication": "Refractory nOH; alpha-2 adrenergic antagonist; enhances norepinephrine release",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg TID",
+                "orderSentence": "Yohimbine 2 mg TID PO"
+              },
+              {
+                "text": "5.4 mg TID",
+                "orderSentence": "Yohimbine 5.4 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg TID; increase to 5.4 mg TID; limited evidence",
+            "orderSentence": "Yohimbine 2 mg TID PO"
+          },
+          "contraindications": "Renal/hepatic disease, concurrent antidepressants",
+          "monitoring": "BP, anxiety, palpitations",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Erythropoietin (EPO)",
+          "route": "SC",
+          "indication": "nOH with concurrent anemia (Hgb <11); expands red cell mass and blood volume",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 units/kg",
+                "orderSentence": "Erythropoietin (EPO) 25 units/kg SC"
+              },
+              {
+                "text": "50 units/kg",
+                "orderSentence": "Erythropoietin (EPO) 50 units/kg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "25-50 units/kg SC 3x/week; target Hgb 11-12 g/dL; slow response over weeks",
+            "orderSentence": "Erythropoietin (EPO) 25 units/kg SC"
+          },
+          "contraindications": "Uncontrolled HTN, thrombotic risk, pure red cell aplasia history",
+          "monitoring": "Hgb, Hct, iron studies, BP, thrombotic events",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Octreotide",
+          "route": "SC",
+          "indication": "Refractory post-prandial hypotension in nOH",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mcg",
+                "orderSentence": "Octreotide 12.5 mcg SC"
+              },
+              {
+                "text": "25 mcg",
+                "orderSentence": "Octreotide 25 mcg SC"
+              },
+              {
+                "text": "50 mcg",
+                "orderSentence": "Octreotide 50 mcg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "12.5-50 mcg SC 30 min before meals; reduces splanchnic blood pooling",
+            "orderSentence": "Octreotide 12.5 mcg SC"
+          },
+          "contraindications": "Cholelithiasis",
+          "monitoring": "Blood glucose, GI symptoms, gallbladder US q6-12 months",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Desmopressin (DDAVP)",
+          "route": "PO/IN",
+          "indication": "Nocturnal polyuria contributing to morning OH; reduces nighttime urine output",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg",
+                "orderSentence": "Desmopressin (DDAVP) 0.1 mg PO"
+              },
+              {
+                "text": "0.2 mg",
+                "orderSentence": "Desmopressin (DDAVP) 0.2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.2 mg PO at bedtime (or 10-20 mcg intranasal); must hold fluids after dosing to avoid hyponatremia",
+            "orderSentence": "Desmopressin (DDAVP) 0.1 mg PO"
+          },
+          "contraindications": "Hyponatremia, HF, polydipsia",
+          "monitoring": "Serum Na+ (check within 1 week of initiation and regularly), weight",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acarbose",
+          "route": "PO",
+          "indication": "Post-prandial hypotension refractory to meal modifications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Acarbose 50 mg PO"
+              },
+              {
+                "text": "100 mg",
+                "orderSentence": "Acarbose 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg with first bite of carbohydrate-containing meals; reduces post-prandial glucose spike and splanchnic vasodilation",
+            "orderSentence": "Acarbose 50 mg PO"
+          },
+          "contraindications": "Inflammatory bowel disease, bowel obstruction, cirrhosis",
+          "monitoring": "GI symptoms (flatulence, diarrhea), liver function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Supine Hypertension Management": [
+        {
+          "item": "Nitroglycerin transdermal patch",
+          "route": "Transdermal",
+          "indication": "Supine HTN (SBP ≥150 mmHg at bedtime); removed upon waking",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/hr",
+                "orderSentence": "Nitroglycerin transdermal patch 0.1 mg/hr Transdermal"
+              },
+              {
+                "text": "0.2 mg/hr",
+                "orderSentence": "Nitroglycerin transdermal patch 0.2 mg/hr Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Apply 0.1-0.2 mg/hr patch at bedtime; remove in the morning before rising; short-acting to minimize morning orthostatic worsening",
+            "orderSentence": "Nitroglycerin transdermal patch 0.1 mg/hr Transdermal"
+          },
+          "contraindications": "Severe aortic stenosis, concurrent PDE-5 inhibitors, hypovolemia",
+          "monitoring": "Supine BP at bedtime and morning standing BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Losartan",
+          "route": "PO",
+          "indication": "Supine HTN at bedtime; ARB with moderate duration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Losartan 25 mg PO"
+              },
+              {
+                "text": "50 mg",
+                "orderSentence": "Losartan 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg at bedtime only; assess morning standing BP to ensure no worsening of OH",
+            "orderSentence": "Losartan 25 mg PO"
+          },
+          "contraindications": "Hyperkalemia, bilateral renal artery stenosis, pregnancy",
+          "monitoring": "K+, creatinine, morning standing BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Hydralazine",
+          "route": "PO",
+          "indication": "Supine HTN at bedtime; direct vasodilator",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Hydralazine 10 mg PO"
+              },
+              {
+                "text": "25 mg",
+                "orderSentence": "Hydralazine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-25 mg at bedtime; short-acting; useful for isolated nocturnal HTN",
+            "orderSentence": "Hydralazine 10 mg PO"
+          },
+          "contraindications": "Lupus, tachycardia, coronary artery disease",
+          "monitoring": "HR, BP, lupus-like symptoms with chronic use",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Sildenafil",
+          "route": "PO",
+          "indication": "Supine HTN at bedtime; vasodilatory effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sildenafil 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25 mg at bedtime; reduces supine BP without excessive morning orthostatic worsening; off-label use",
+            "orderSentence": "Sildenafil 25 mg PO"
+          },
+          "contraindications": "Concurrent nitrates, severe hepatic impairment",
+          "monitoring": "BP, headache, visual symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Autonomic disorders specialist / dysautonomia clinic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cardiology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy / falls prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology/Oncology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Rise slowly from lying to sitting to standing; sit on edge of bed 1-2 minutes before standing",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Prevents rapid BP drop and reduces fall risk"
+        },
+        {
+          "item": "Recognize warning symptoms (lightheadedness, visual graying, neck/shoulder pain \"coat hanger\" distribution) and sit or lie down immediately",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Early symptom recognition prevents syncope and injury"
+        },
+        {
+          "item": "Perform counter-pressure maneuvers (leg crossing, squatting, bending) when symptomatic",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Raises BP 20-30 mmHg acutely; non-pharmacologic first-line"
+        },
+        {
+          "item": "Avoid large carbohydrate-heavy meals; eat small frequent meals",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Reduces post-prandial hypotension"
+        },
+        {
+          "item": "Avoid prolonged standing, hot environments, hot baths/showers, and alcohol",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "All worsen venous pooling and orthostatic BP drop"
+        },
+        {
+          "item": "Maintain adequate fluid intake (2-3 L/day) and salt intake (per physician guidance)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Plasma volume expansion is foundation of nOH management"
+        },
+        {
+          "item": "Drink 480 mL (16 oz) of water rapidly when symptomatic (osmopressor effect)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Raises SBP 20-30 mmHg within 5-15 min"
+        },
+        {
+          "item": "Report all falls, near-falls, and new symptoms to care team",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Falls are primary source of morbidity in nOH; guides treatment titration"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Avoid offending medications when possible (alpha-blockers, diuretics, long-acting antihypertensives, tricyclics, dopamine agonists at high doses)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Medication-related orthostatic worsening is the most modifiable risk factor"
+        },
+        {
+          "item": "Elevate head of bed 10-20 degrees nightly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Reduces nocturnal supine hypertension and natriuresis; improves morning orthostatic tolerance"
+        },
+        {
+          "item": "Home fall safety assessment (remove trip hazards, install grab bars, adequate lighting)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "nOH patients have 2-3x increased fall risk; home modifications are evidence-based prevention"
+        },
+        {
+          "item": "Wear waist-high compression garments during the day; remove at bedtime",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Reduces venous pooling; must remove at night to avoid worsening supine HTN"
+        },
+        {
+          "item": "Avoid straining (Valsalva); manage constipation proactively",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Valsalva maneuvers can precipitate syncope in autonomic failure"
+        },
+        {
+          "item": "Driving restrictions: counsel per local regulations until symptoms stabilized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Syncope or near-syncope while driving is a safety risk; individualized per severity"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Non-neurogenic OH (hypovolemia, medication-induced)",
+      "features": "Preserved HR response (≥15 bpm rise); identifiable cause (dehydration, hemorrhage, diuretics); resolves with volume or medication change",
+      "tests": "Orthostatic vitals with HR assessment; clinical history; medication review"
+    },
+    {
+      "diagnosis": "Vasovagal syncope",
+      "features": "Triggered by emotional stress, pain, prolonged standing; prodromal nausea/warmth; bradycardia during episode; typically younger patients",
+      "tests": "Tilt table test (vasodepressor or cardioinhibitory pattern); clinical history"
+    },
+    {
+      "diagnosis": "Cardiac syncope (arrhythmia, structural)",
+      "features": "Sudden onset without prodrome; exertional; palpitations; abnormal ECG; structural heart disease",
+      "tests": "ECG, telemetry, echo, Holter, EP study"
+    },
+    {
+      "diagnosis": "Postural tachycardia syndrome (POTS)",
+      "features": "HR rise ≥30 bpm (or HR ≥120) on standing without significant BP drop; predominantly young females; lightheadedness, palpitations",
+      "tests": "Tilt table test or active stand showing HR criteria without OH"
+    },
+    {
+      "diagnosis": "Multiple system atrophy (MSA)",
+      "features": "Cerebellar ataxia or parkinsonism + severe autonomic failure; poor levodopa response; early prominent OH; hot cross bun sign on MRI",
+      "tests": "MRI brain, autonomic testing, cardiac MIBG (preserved uptake)"
+    },
+    {
+      "diagnosis": "Parkinson disease with autonomic failure",
+      "features": "Motor symptoms preceding or accompanying OH; levodopa responsive; tremor predominant",
+      "tests": "Clinical exam, DaTscan, cardiac MIBG (decreased uptake)"
+    },
+    {
+      "diagnosis": "Lewy body dementia",
+      "features": "Cognitive fluctuations, visual hallucinations, parkinsonism, REM sleep behavior disorder + OH",
+      "tests": "Clinical criteria, DaTscan, cardiac MIBG"
+    },
+    {
+      "diagnosis": "Diabetic autonomic neuropathy",
+      "features": "Known diabetes with poor glycemic control; concurrent peripheral neuropathy; gradual onset",
+      "tests": "HbA1c, NCS/EMG, autonomic testing, QSART"
+    },
+    {
+      "diagnosis": "Amyloid neuropathy (AL or ATTR)",
+      "features": "Length-dependent neuropathy with autonomic features; cardiac involvement; weight loss; proteinuria",
+      "tests": "SPEP/UFLC, fat pad biopsy, TTR gene testing, cardiac imaging"
+    },
+    {
+      "diagnosis": "Autoimmune autonomic ganglionopathy (AAG)",
+      "features": "Subacute onset; diffuse autonomic failure (OH, GI dysmotility, sicca, pupil abnormalities); may follow infection",
+      "tests": "Anti-ganglionic AChR antibodies"
+    },
+    {
+      "diagnosis": "Adrenal insufficiency",
+      "features": "Fatigue, weight loss, hyperpigmentation, hyponatremia, hyperkalemia",
+      "tests": "AM cortisol, ACTH stimulation test"
+    },
+    {
+      "diagnosis": "Deconditioning / prolonged bed rest",
+      "features": "Occurs after immobilization; preserved autonomic reflexes; improves with reconditioning",
+      "tests": "Clinical history; autonomic testing normal"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Consensus diagnostic criteria for OH (SBP drop ≥20 or DBP drop ≥10 within 3 min)",
+      "evidenceLevel": "Consensus Statement",
+      "source": "[Freeman et al. Clin Auton Res 2011](https://pubmed.ncbi.nlm.nih.gov/21431947/)"
+    },
+    {
+      "recommendation": "Droxidopa for symptomatic nOH in autonomic failure (FDA-approved; short-term efficacy)",
+      "evidenceLevel": "Class I, RCT (Phase III)",
+      "source": "[Kaufmann et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24944260/)"
+    },
+    {
+      "recommendation": "Midodrine for orthostatic hypotension (FDA-approved; raises standing BP)",
+      "evidenceLevel": "Class I, RCTs",
+      "source": "[Low et al. JAMA 1997](https://pubmed.ncbi.nlm.nih.gov/9091692/)"
+    },
+    {
+      "recommendation": "Comprehensive review of nOH pathophysiology and management in alpha-synucleinopathies",
+      "evidenceLevel": "Expert Review",
+      "source": "Gibbons et al. Neurology 2017"
+    },
+    {
+      "recommendation": "Management of supine hypertension in autonomic failure: a balancing act",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Biaggioni. Pharmacol Rev 2017](https://pubmed.ncbi.nlm.nih.gov/28011746/)"
+    },
+    {
+      "recommendation": "AAN Practice Parameter: treatment of nOH and supine hypertension",
+      "evidenceLevel": "Practice Guideline",
+      "source": "Rizzo et al. Neurology 2014"
+    },
+    {
+      "recommendation": "Autoimmune autonomic ganglionopathy: clinical features and response to immunotherapy",
+      "evidenceLevel": "Case Series",
+      "source": "[Vernino et al. N Engl J Med 2000](https://pubmed.ncbi.nlm.nih.gov/10995864/)"
+    },
+    {
+      "recommendation": "Non-pharmacologic management of OH (compression garments, counter-pressure maneuvers, fluid/salt)",
+      "evidenceLevel": "Consensus/Review",
+      "source": "[Fanciulli & Wenning. N Engl J Med 2015](https://pubmed.ncbi.nlm.nih.gov/25587949/)"
+    },
+    {
+      "recommendation": "Cardiac MIBG differentiates Lewy body disorders from MSA",
+      "evidenceLevel": "Diagnostic Study",
+      "source": "[Goldstein et al. Ann Intern Med 2000](https://pubmed.ncbi.nlm.nih.gov/10979878/)"
+    },
+    {
+      "recommendation": "Pyridostigmine for nOH: augments ganglionic transmission with minimal supine HTN",
+      "evidenceLevel": "RCT",
+      "source": "[Singer et al. Arch Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16476804/)"
+    },
+    {
+      "recommendation": "Water drinking as pressor response in autonomic failure",
+      "evidenceLevel": "Mechanistic/Clinical",
+      "source": "[Jordan et al. Circulation 2000](https://pubmed.ncbi.nlm.nih.gov/10662747/)"
+    },
+    {
+      "recommendation": "Consensus definition of neurogenic supine hypertension in autonomic failure",
+      "evidenceLevel": "Consensus Statement",
+      "source": "[Biaggioni et al. Clin Auton Res 2018](https://pubmed.ncbi.nlm.nih.gov/29766366/)"
+    },
+    {
+      "recommendation": "Expert consensus on nOH screening, diagnosis, and treatment algorithm",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Gibbons et al. J Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28050656/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Orthostatic vital signs (supine, 1 min, 3 min standing)",
+      "frequency": "Per encounter; BID if inpatient",
+      "action": "Adjust medications; increase non-pharmacologic measures",
+      "ED": "STAT",
+      "HOSP": "q shift",
+      "OPD": "Every visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Supine blood pressure",
+      "frequency": "Daily (inpatient); every visit (outpatient)",
+      "action": "Add/adjust bedtime short-acting antihypertensive",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "q4h"
+    },
+    {
+      "item": "Serum potassium",
+      "frequency": "At baseline, 1 week after fludrocortisone initiation, then q3 months",
+      "action": "Supplement K+; reduce fludrocortisone dose",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q3 months",
+      "ICU": "Daily"
+    },
+    {
+      "item": "Serum sodium",
+      "frequency": "At baseline, 1 week after DDAVP initiation, then monthly",
+      "action": "Hold DDAVP if Na <135; restrict fluids after DDAVP",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "Monthly if on DDAVP",
+      "ICU": "Daily"
+    },
+    {
+      "item": "Renal function (BMP)",
+      "frequency": "Baseline, then q6-12 months",
+      "action": "Adjust medications; nephrology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q6-12 months",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Falls/near-falls",
+      "frequency": "Every encounter",
+      "action": "Reassess treatment; PT referral; home safety evaluation",
+      "ED": "Every visit",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "Every visit"
+    },
+    {
+      "item": "Symptom burden (OH symptom scales — OHQ or similar)",
+      "frequency": "Every visit",
+      "action": "Escalate pharmacotherapy; add agents",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "Every visit",
+      "ICU": "-"
+    },
+    {
+      "item": "Weight",
+      "frequency": "Weekly (inpatient); monthly (outpatient)",
+      "action": "Reassess fludrocortisone dose; diuretic if HF develops",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Monthly",
+      "ICU": "Weekly"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Mild OH responsive to fluids; no syncope or injury; known nOH on stable regimen with mild exacerbation; reliable outpatient follow-up arranged"
+    },
+    {
+      "disposition": "Admit to telemetry/medicine",
+      "criteria": "Syncope with injury; recurrent falls; new diagnosis of severe nOH requiring inpatient workup; supine SBP >200 mmHg; significant cardiac arrhythmia on workup"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Hemodynamic instability refractory to initial measures; syncope with significant traumatic injury; concurrent cardiac emergency"
+    },
+    {
+      "disposition": "Outpatient autonomic clinic referral",
+      "criteria": "Confirmed or suspected nOH requiring formal autonomic testing; etiologic workup for alpha-synucleinopathy or amyloidosis; titration of nOH medications"
+    },
+    {
+      "disposition": "Neurology follow-up",
+      "criteria": "New diagnosis nOH; monitoring for phenoconversion (PAF to PD/MSA/DLB); co-management of neurodegenerative disease"
+    },
+    {
+      "disposition": "Primary care follow-up",
+      "criteria": "Stable nOH on medication; routine lab monitoring; medication reconciliation; BP management"
+    }
+  ]
+}

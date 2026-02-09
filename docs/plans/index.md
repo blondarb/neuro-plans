@@ -267,6 +267,18 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 
 ---
 
+## Autonomic & Pain Disorders
+
+| Plan | Setting Coverage | ICD-10 |
+|------|------------------|--------|
+| [POTS (Postural Orthostatic Tachycardia Syndrome)](pots.md) | ED, HOSP, OPD, ICU | G90.A |
+| [Neurogenic Orthostatic Hypotension](neurogenic-orthostatic-hypotension.md) | ED, HOSP, OPD, ICU | I95.1, G90.09 |
+| [Occipital Neuralgia](occipital-neuralgia.md) | ED, HOSP, OPD, ICU | M54.81 |
+| [Complex Regional Pain Syndrome (CRPS)](crps.md) | ED, HOSP, OPD, ICU | G90.50, G90.51, G90.52, G56.40, G57.70 |
+| [Neuropathic Pain Management](neuropathic-pain-management.md) | ED, HOSP, OPD, ICU | G89.29, G89.4, G89.0 |
+
+---
+
 ## Other
 
 | Plan | Setting Coverage | ICD-10 |
