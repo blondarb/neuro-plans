@@ -1,0 +1,849 @@
+{
+  "id": "new-daily-persistent-headache",
+  "title": "New Daily Persistent Headache (NDPH)",
+  "version": "1.0",
+  "icd10": [
+    "** G44.52 (New daily persistent headache)",
+    "G44.1 (Vascular headache",
+    "not elsewhere classified)",
+    "R51.9 (Headache",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of new daily persistent headache (NDPH) as defined by ICHD-3 criteria. Includes comprehensive secondary headache exclusion, subtype characterization (migraine-like vs tension-like), and treatment approaches. Covers ED evaluation for secondary headache mimics, inpatient bridge therapy for severe cases, and outpatient chronic management. NDPH is one of the most treatment-refractory primary headache disorders and requires systematic evaluation.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Exclude Secondary Causes)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection; anemia; leukemia as secondary cause",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Metabolic causes of chronic headache; renal/hepatic function",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR (CPT 85651)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Giant cell arteritis (if age >50); inflammatory process; vasculitis",
+          "target": "<20 mm/hr (men), <30 mm/hr (women); elevated → GCA workup"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory markers; complement ESR in GCA screening",
+          "target": "<5 mg/L"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism contributing to chronic headache",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        }
+      ],
+      "Extended Labs (Guided by Clinical Suspicion)": [
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune/connective tissue disease with secondary headache (SLE, vasculitis)",
+          "target": "Negative"
+        },
+        {
+          "item": "D-dimer",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If CVT suspected (combined with imaging); sensitivity aid",
+          "target": "Normal; elevated → MRV for CVT"
+        },
+        {
+          "item": "Lyme antibody (if endemic area)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lyme meningitis causing chronic headache",
+          "target": "Negative"
+        },
+        {
+          "item": "ACE level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis with chronic headache; pachymeningeal disease",
+          "target": "Normal"
+        },
+        {
+          "item": "Procalcitonin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Differentiate bacterial infection from viral/inflammatory if fever present",
+          "target": "<0.1 ng/mL"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "EBV/CMV titers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Post-viral NDPH onset (common trigger); document temporal association",
+          "target": "IgM negative (past infection); IgG positive supports post-viral trigger"
+        },
+        {
+          "item": "CSF analysis (opening pressure, cells, protein, glucose, cytology, cultures)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Rule out elevated/low ICP, infection, inflammation, carcinomatous meningitis; opening pressure is critical",
+          "target": "OP 10-25 cm H2O; normal cells, protein, glucose; negative cultures and cytology"
+        },
+        {
+          "item": "CSF viral PCR panel",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If chronic meningitis suspected (low-grade CSF pleocytosis)",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All NDPH patients; essential to exclude secondary causes",
+          "target": "No mass, pachymeningeal enhancement (low CSF pressure or sarcoid), leptomeningeal enhancement (infection/carcinomatous), pituitary pathology, Chiari malformation",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MRV head (MR venography) (CPT 70547)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "All NDPH patients; cerebral venous thrombosis mimics NDPH",
+          "target": "Patent dural sinuses; no thrombosis; no stenosis",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "MRA head and neck (CPT 70547, 70549)",
+          "ED": "URGENT",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If NDPH onset with neck pain; exclude cervical artery dissection and intracranial vascular abnormality",
+          "target": "No dissection; no aneurysm; normal vascular anatomy",
+          "contraindications": "MRI contraindications"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "Lumbar puncture with opening pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If MRI is normal; measure opening pressure to exclude IIH or low-pressure headache; CSF analysis",
+          "target": "Opening pressure 10-25 cm H2O; normal CSF constituents",
+          "contraindications": "Coagulopathy; mass lesion with shift"
+        },
+        {
+          "item": "MRI cervical spine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If cervicogenic headache component suspected; Chiari malformation evaluation",
+          "target": "No Chiari; no cervical disc disease causing headache referral pattern",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "ED first-line if MRI not immediately available; rule out hemorrhage, hydrocephalus",
+          "target": "No hemorrhage; no hydrocephalus; no mass with shift",
+          "contraindications": "Pregnancy (relative)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CTA head and neck",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If dissection or CVT suspected and MRI/MRA not immediately available",
+          "target": "No dissection; no CVT; normal vasculature",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Catheter angiography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If RCVS or vasculitis suspected on non-invasive imaging; vasospasm evaluation",
+          "target": "Normal vasculature; no beading (vasculitis) or multifocal stenosis (RCVS)",
+          "contraindications": "Contrast allergy; coagulopathy; renal disease"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If seizure component to headache suspected; migraine aura differential",
+          "target": "Normal; no epileptiform discharges",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Treatment / Bridge Therapy": [
+        {
+          "item": "DHE (dihydroergotamine) IV protocol",
+          "route": "IV",
+          "indication": "Severe refractory NDPH; inpatient bridge therapy; Raskin protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "DHE (dihydroergotamine) IV protocol 0.5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pre-treat with ondansetron 4 mg IV; then DHE 0.5 mg IV q8h for 3-5 days (Raskin protocol); hold if nausea/vomiting despite antiemetics; max 5 days",
+            "orderSentence": "DHE (dihydroergotamine) IV protocol 0.5 mg IV"
+          },
+          "contraindications": "Coronary artery disease; peripheral vascular disease; uncontrolled HTN; pregnancy; concurrent triptans (24h washout); hepatic/renal failure; hemiplegic or basilar migraine",
+          "monitoring": "BP; HR; chest pain; nausea; extremity perfusion; liver function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Nerve blocks (greater occipital nerve block)",
+          "route": "Injection",
+          "indication": "Acute pain relief; occipital predominant pain; bridge to preventive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mL 0.5% bupivacaine + 40 mg methylprednisolone",
+                "orderSentence": "Nerve blocks (greater occipital nerve block) 2.5 mL 0.5% bupivacaine + 40 mg methylprednisolone Injection"
+              }
+            ],
+            "route": "Injection",
+            "instructions": "Bilateral GON blocks; onset within 30 min; duration days to weeks; can repeat q4-8 weeks",
+            "orderSentence": "Nerve blocks (greater occipital nerve block) 2.5 mL 0.5% bupivacaine + 40 mg methylprednisolone Injection"
+          },
+          "contraindications": "Allergy to local anesthetic; infection at injection site; anticoagulation (relative)",
+          "monitoring": "Pain scores; duration of relief; injection site",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylprednisolone IV pulse",
+          "route": "IV",
+          "indication": "Severe inflammatory NDPH; post-viral onset with inflammatory features; short course for bridge",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250-500 mg",
+                "orderSentence": "Methylprednisolone IV pulse 250-500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "250-500 mg IV daily for 3 days; then oral taper (prednisone 60 mg x3 days, 40 mg x3 days, 20 mg x3 days); one-time pulse, not ongoing",
+            "orderSentence": "Methylprednisolone IV pulse 250-500 mg IV"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; GI bleeding; psychosis history",
+          "monitoring": "Blood glucose; BP; GI symptoms; mood; sleep",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV",
+          "indication": "Acute pain in ED; short course only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV/IM q6h; max 5 days; reduce to 15 mg in elderly",
+            "orderSentence": "Ketorolac 30 mg IV"
+          },
+          "contraindications": "GFR <30; GI bleeding; concurrent anticoagulation",
+          "monitoring": "Renal function; GI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Preventive Treatment — First-Line": [
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "NDPH prevention (migraine-like subtype); good evidence for chronic daily headache reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg qHS; increase by 25 mg/week; target 50-100 mg BID; max 200 mg BID; slow titration reduces paresthesia and cognitive side effects",
+            "orderSentence": "Topiramate 25 mg PO"
+          },
+          "contraindications": "Kidney stones; metabolic acidosis; pregnancy (teratogenic); narrow-angle glaucoma",
+          "monitoring": "Cognitive effects (word-finding difficulty); paresthesias; weight loss; kidney stones; bicarbonate level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "NDPH prevention (tension-like subtype); concurrent insomnia or depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10 mg q1-2 weeks; target 50-75 mg qHS; max 150 mg; takes 4-6 weeks for headache prevention effect",
+            "orderSentence": "Nortriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; recent MI; concurrent MAOIs; urinary retention; narrow-angle glaucoma",
+          "monitoring": "ECG (if dose >100 mg or cardiac risk); anticholinergic effects; weight gain; sedation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "NDPH prevention; dual serotonin-norepinephrine mechanism; concurrent depression or anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily for 1 week; increase to 75 mg daily; target 150-225 mg daily; extended-release formulation",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "contraindications": "Uncontrolled HTN; concurrent MAOIs; severe hepatic impairment",
+          "monitoring": "BP (dose-dependent HTN); serotonin syndrome risk; withdrawal syndrome if stopped abruptly",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "NDPH with neuropathic pain features; coexisting anxiety; first-line alternative",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg q3-5 days; target 300-600 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation; dizziness; peripheral edema",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Doxepin (low-dose)",
+          "route": "PO",
+          "indication": "NDPH with insomnia; tension-like subtype; medication-sensitive patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Doxepin (low-dose) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; increase by 10 mg q2 weeks; target 25-50 mg qHS; low-dose for headache prevention",
+            "orderSentence": "Doxepin (low-dose) 10 mg PO"
+          },
+          "contraindications": "Same as nortriptyline",
+          "monitoring": "Sedation; weight gain; anticholinergic effects; ECG",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Preventive Treatment — Second-Line/Refractory": [
+        {
+          "item": "CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab)",
+          "route": "SQ",
+          "indication": "NDPH with migraine-like features refractory to oral preventives; emerging use in NDPH (off-label)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "140 mg",
+                "orderSentence": "CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab) 140 mg SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "Erenumab 70-140 mg SQ monthly; fremanezumab 225 mg SQ monthly or 675 mg quarterly; galcanezumab 240 mg loading then 120 mg monthly; trial 3-6 months",
+            "orderSentence": "CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab) 140 mg SQ"
+          },
+          "contraindications": "Hypersensitivity; constipation (erenumab); hypertension (erenumab — monitor)",
+          "monitoring": "Headache diary; injection site reactions; constipation (erenumab); BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "Refractory NDPH; some case series evidence; Na channel blocker",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Mexiletine 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg daily; increase by 150 mg q3 days; target 150 mg TID; max 300 mg TID; obtain baseline ECG",
+            "orderSentence": "Mexiletine 150 mg PO"
+          },
+          "contraindications": "Cardiac conduction disease; 2nd/3rd degree AV block; hepatic disease",
+          "monitoring": "ECG (QRS widening, QTc); tremor; GI symptoms; hepatic function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Doxycycline",
+          "route": "PO",
+          "indication": "NDPH with post-infectious onset; anti-inflammatory mechanism; case series evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Doxycycline 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg BID for 3-6 months; anti-inflammatory and possible anti-CGRP properties; well tolerated",
+            "orderSentence": "Doxycycline 100 mg PO"
+          },
+          "contraindications": "Pregnancy; children <8; severe hepatic disease",
+          "monitoring": "GI symptoms; photosensitivity; esophagitis (take upright with water)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin A (OnabotulinumtoxinA)",
+          "route": "Injection",
+          "indication": "NDPH with migraine-like features; chronic migraine paradigm (>=15 headache days/month)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "155-195 units",
+                "orderSentence": "Botulinum toxin A (OnabotulinumtoxinA) 155-195 units Injection"
+              }
+            ],
+            "route": "Injection",
+            "instructions": "PREEMPT protocol: 31 injection sites across 7 head/neck areas; 5 units per site; follow-up sites at pain areas; trial of at least 2-3 cycles",
+            "orderSentence": "Botulinum toxin A (OnabotulinumtoxinA) 155-195 units Injection"
+          },
+          "contraindications": "Hypersensitivity to botulinum toxin; infection at injection sites; neuromuscular disorder (MG, LEMS)",
+          "monitoring": "Neck weakness; injection site pain; headache worsening initially; ptosis; response assessment at each cycle",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketamine infusion",
+          "route": "IV",
+          "indication": "Severely refractory NDPH; inpatient pain protocol; growing evidence as bridge therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.5 mg/kg/hr",
+                "orderSentence": "Ketamine infusion 0.1-0.5 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1-0.5 mg/kg/hr continuous infusion over 3-5 days; NMDA receptor antagonist; requires cardiac monitoring; perform in specialized headache center or infusion unit",
+            "orderSentence": "Ketamine infusion 0.1-0.5 mg/kg/hr IV"
+          },
+          "contraindications": "Uncontrolled HTN; psychosis; elevated ICP; pregnancy; liver failure",
+          "monitoring": "BP; HR; dissociative symptoms; nausea; liver enzymes; psychomimetic effects; continuous monitoring",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Headache specialist/neurologist for comprehensive NDPH evaluation, secondary cause exclusion, and treatment planning — NDPH is among the most challenging headache disorders and benefits from specialist management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain psychology/behavioral medicine for cognitive behavioral therapy (CBT), biofeedback, relaxation training, and acceptance and commitment therapy (ACT) — psychological approaches are important given refractory nature of NDPH",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for cervicogenic component assessment, myofascial trigger point therapy, posture correction, and aerobic exercise program",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry if significant comorbid depression or anxiety; NDPH is psychologically devastating and requires mental health support",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "NDPH is a recognized medical condition — the headache is real, it has a name, and research is ongoing; validation is an important part of treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a detailed headache diary recording daily pain intensity (0-10), headache character (pulsating, pressing), associated symptoms, medications taken, and functional impact",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medication overuse (taking acute pain medications >10-15 days/month) — this can cause medication overuse headache superimposed on NDPH, making it even harder to treat",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain regular sleep schedule (consistent bed and wake times), eat regular meals, exercise 30 minutes daily, and stay well hydrated — lifestyle regularity improves headache management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Understand that NDPH is often treatment-resistant and may require trials of multiple medications and combinations before finding effective treatment; set realistic expectations",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "A subset of NDPH patients (15-20%) experience spontaneous resolution within months to a few years; this possibility provides hope even during refractory periods",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise 30-45 minutes, 5 days/week — evidence supports exercise as beneficial for chronic headache reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management: CBT, mindfulness-based stress reduction (MBSR), biofeedback, relaxation techniques — psychological approaches are essential given the chronic nature",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid known migraine triggers if migraine-like subtype: alcohol, processed foods, irregular meals, sleep deprivation, excessive caffeine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Limit caffeine to <=200 mg/day (2 cups coffee) and keep intake consistent; avoid abrupt caffeine withdrawal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain healthy weight — obesity is a risk factor for headache chronification",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Chronic migraine (transformed from episodic)",
+      "features": "History of pre-existing episodic migraine that gradually increased in frequency; no clear-cut onset date; unlike NDPH which starts de novo at high frequency",
+      "tests": "Headache history documenting prior episodic migraine; ICHD-3 criteria for chronic migraine (>=15 days/month, >=8 with migrainous features)"
+    },
+    {
+      "diagnosis": "Medication overuse headache (MOH)",
+      "features": "Daily headache in setting of frequent acute medication use (>=10-15 days/month); headache improves with withdrawal of overused medication; may coexist with NDPH",
+      "tests": "Medication diary showing overuse; 2-month washout trial; headache improvement after withdrawal"
+    },
+    {
+      "diagnosis": "Idiopathic intracranial hypertension (IIH)",
+      "features": "Headache with papilledema; pulsatile tinnitus; visual obscurations; worse with Valsalva; typically overweight women of childbearing age",
+      "tests": "Fundoscopy (papilledema); LP opening pressure >25 cm H2O; MRI (empty sella, transverse sinus stenosis, optic nerve sheath distention)"
+    },
+    {
+      "diagnosis": "Spontaneous intracranial hypotension (SIH)",
+      "features": "Orthostatic headache (dramatically worse upright, better lying down); subdural collections; may have history of LP, epidural, or connective tissue disease",
+      "tests": "MRI with contrast (pachymeningeal enhancement, subdural collections, brain sagging); LP opening pressure <6 cm H2O; CT myelogram to find CSF leak"
+    },
+    {
+      "diagnosis": "Cerebral venous sinus thrombosis (CVT)",
+      "features": "Headache with papilledema, seizures, or focal deficit; risk factors (OCP, pregnancy, thrombophilia, infection)",
+      "tests": "MRV showing thrombosis; D-dimer (sensitivity but not specificity); hypercoagulable workup"
+    },
+    {
+      "diagnosis": "Chronic meningitis",
+      "features": "Headache with low-grade fever, cranial neuropathy, cognitive change; CSF pleocytosis",
+      "tests": "LP: elevated protein, lymphocytic pleocytosis; cultures (TB, fungal, bacterial); cytology; MRI enhancement"
+    },
+    {
+      "diagnosis": "Cervicogenic headache",
+      "features": "Unilateral headache provoked by neck movement or sustained posture; ipsilateral neck/shoulder pain; reduced cervical ROM",
+      "tests": "Clinical exam (provoked by neck maneuvers); diagnostic cervical medial branch block; MRI cervical spine"
+    },
+    {
+      "diagnosis": "Hemicrania continua",
+      "features": "Strictly unilateral continuous headache with cranial autonomic features (tearing, rhinorrhea, ptosis) and absolute response to indomethacin",
+      "tests": "Indomethacin trial (75-225 mg/day): COMPLETE response is diagnostic; partial response → not HC"
+    },
+    {
+      "diagnosis": "Post-traumatic headache",
+      "features": "Daily headache developing within 7 days of head trauma or regaining consciousness after trauma; similar phenotype to NDPH but temporal relationship to injury",
+      "tests": "History of head trauma; onset within 7 days; may resolve within 3-12 months or persist"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "ICHD-3 diagnostic criteria for new daily persistent headache (4.10)",
+      "evidenceLevel": "Consensus",
+      "source": "[IHS Classification Committee. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/)"
+    },
+    {
+      "recommendation": "NDPH is a primary headache disorder defined by daily and unremitting headache from onset, distinctly remembered",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Rozen TD. Curr Pain Headache Rep 2014](https://pubmed.ncbi.nlm.nih.gov/24820732/)"
+    },
+    {
+      "recommendation": "Post-infectious trigger is common; EBV and other viral infections identified in many NDPH series",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Li D, Rozen TD. Cephalalgia 2004](https://pubmed.ncbi.nlm.nih.gov/15154855/)"
+    },
+    {
+      "recommendation": "Topiramate has best available evidence among preventives for chronic daily headache",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Silberstein SD et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17301339/)"
+    },
+    {
+      "recommendation": "CGRP monoclonal antibodies show promise for treatment-refractory NDPH (case series)",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Rozen TD. Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31490552/)"
+    },
+    {
+      "recommendation": "IV DHE (Raskin protocol) is effective bridge therapy for refractory chronic daily headache",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Raskin NH. Headache 1986](https://pubmed.ncbi.nlm.nih.gov/3519528/)"
+    },
+    {
+      "recommendation": "Mexiletine has shown benefit in refractory NDPH in small series",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Marmura MJ. Cephalalgia 2013](https://pubmed.ncbi.nlm.nih.gov/23263899/)"
+    },
+    {
+      "recommendation": "OnabotulinumtoxinA (PREEMPT protocol) for chronic migraine; extrapolated to NDPH with migrainous features",
+      "evidenceLevel": "Class I, Level A (for CM); Class IIb for NDPH",
+      "source": "[Aurora SK et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/28071935/)"
+    },
+    {
+      "recommendation": "Self-limiting subtype resolves in approximately 15-20% of cases",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Vanast WJ. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/10899069/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Headache frequency and severity diary",
+      "frequency": "Continuous; review at each visit",
+      "action": "Medication adjustment; change preventive class; consider advanced therapies; psychological support",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Medication use diary (acute medications)",
+      "frequency": "Continuous; review at each visit",
+      "action": "Counsel on medication overuse; set strict limits; consider detoxification if overusing",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional disability (MIDAS or HIT-6)",
+      "frequency": "Each visit",
+      "action": "Intensify treatment if worsening disability; behavioral health referral; employment/disability support",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Side effects of preventive medications",
+      "frequency": "Each visit; 2-4 weeks after dose change",
+      "action": "Dose adjustment; switch medication class; maximize tolerability",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fundoscopic exam",
+      "frequency": "Baseline; with any headache character change",
+      "action": "If papilledema develops: urgent LP, ophthalmology, evaluate for IIH or secondary cause",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Metabolic panel (if on topiramate)",
+      "frequency": "Baseline; q3-6 months",
+      "action": "Supplement with bicarbonate; discontinue topiramate if persistent acidosis or stones",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on doxycycline long-term)",
+      "frequency": "Baseline; q6 months",
+      "action": "Dose reduction; consider alternative",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Secondary causes excluded by imaging and labs; pain managed; outpatient neurology/headache specialist follow-up arranged within 1-2 weeks; medication overuse counseling"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Awaiting MRI/MRV; LP planned for opening pressure; IV pain management needed"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "DHE IV protocol (Raskin protocol, 3-5 days); ketamine infusion for refractory NDPH; LP showing abnormality requiring inpatient treatment; steroid pulse therapy; severe acute worsening with new red flags"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rare; only if concurrent CVT with hemorrhagic infarction, severe cerebral edema, or critical illness"
+    },
+    {
+      "disposition": "Outpatient follow-up (headache specialist)",
+      "criteria": "Initial evaluation: 2-4 weeks; medication titration: q4-6 weeks; stable on preventive: q3 months; injection therapies (nerve blocks, Botox): per schedule"
+    }
+  ]
+}

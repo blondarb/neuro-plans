@@ -1,0 +1,963 @@
+{
+  "id": "parkinsons-motor-fluctuations",
+  "title": "Parkinson's Disease — Motor Fluctuations and Dyskinesia",
+  "version": "1.0",
+  "icd10": [
+    "** G20.A2 (Parkinson's disease without dyskinesia",
+    "with fluctuations)",
+    "G20.B2 (Parkinson's disease with dyskinesia",
+    "with fluctuations)",
+    "G20.A1 (Parkinson's disease without dyskinesia",
+    "without fluctuations)",
+    "G20.B1 (Parkinson's disease with dyskinesia",
+    "without fluctuations)",
+    "G24.02 (Drug-induced acute dystonia)",
+    "G25.1 (Drug-induced tremor)"
+  ],
+  "scope": "** Management of motor fluctuations (wearing off, on-off fluctuations, delayed on, dose failures) and dyskinesia (peak-dose, diphasic, off-period dystonia) in established Parkinson's disease patients on dopaminergic therapy. Includes pharmacologic optimization, advanced therapies (DBS, pump therapies), and management of acute off-state emergencies. Excludes initial diagnosis and early management of PD (see Parkinson's Disease — New Diagnosis template), PD dementia, and PD psychosis (separate templates).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Baseline Assessment)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; anemia exacerbating fatigue; COMT inhibitor monitoring (hepatic effects)",
+          "target": "Normal; no anemia"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes; renal function (dopamine agonist dose adjustment); dehydration in off states",
+          "target": "Normal creatinine; normal electrolytes"
+        },
+        {
+          "item": "LFTs (AST, ALT, alkaline phosphatase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before COMT inhibitors (entacapone, opicapone); tolcapone requires regular monitoring",
+          "target": "Normal; ALT/AST <2x ULN"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism mimicking bradykinesia and fatigue; hyperthyroidism causing tremor",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency (common in elderly PD patients); exacerbates neuropathy and cognitive issues",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency extremely common in PD (fall risk, bone health for DBS candidates)",
+          "target": ">30 ng/mL"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "Iron studies (serum iron, ferritin, TIBC)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Iron deficiency (restless legs overlap); ferritin <75 may warrant supplementation in PD patients with sleep-related motor symptoms",
+          "target": "Ferritin >75 ng/mL"
+        },
+        {
+          "item": "Homocysteine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Levodopa metabolism produces homocysteine; elevated levels associated with cognitive decline and vascular risk in PD",
+          "target": "<15 mcmol/L; supplement B12/folate if elevated"
+        },
+        {
+          "item": "Folate",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Co-factor in homocysteine metabolism; supplement if homocysteine elevated",
+          "target": ">5.9 ng/mL"
+        },
+        {
+          "item": "ECG",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before initiating dopamine agonists (QTc assessment); domperidone QTc monitoring; cardiac arrhythmia evaluation",
+          "target": "Normal sinus rhythm; QTc <470 ms (women) or <450 ms (men)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Levodopa plasma level (research)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research or complex fluctuations only; correlate plasma levels with clinical state",
+          "target": "Document therapeutic window; identify absorption issues"
+        },
+        {
+          "item": "Gastric emptying study",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If dose failures/delayed on suspected from gastroparesis (common in PD)",
+          "target": "Normal emptying time; delayed = gastroparesis contributing to dose failures"
+        },
+        {
+          "item": "DaTscan (SPECT) (CPT 78607)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Only if diagnosis uncertain (atypical features, drug-induced parkinsonism query); NOT needed for typical PD motor fluctuations",
+          "target": "Reduced striatal uptake confirms presynaptic dopaminergic deficit"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "Motor diary (patient-completed \"on/off\" diary)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Daily for 1-2 weeks before each clinic visit; gold standard for quantifying motor fluctuations",
+          "target": "Hours of on time, off time, on with troublesome dyskinesia; identify patterns relative to dosing",
+          "contraindications": "Cognitive impairment limiting diary accuracy (use caregiver-assisted)"
+        },
+        {
+          "item": "Unified PD Rating Scale Part III (MDS-UPDRS)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Each clinic visit; in on-state and off-state if possible",
+          "target": "Score trend; treatment response; guide medication adjustments",
+          "contraindications": "None; requires trained examiner"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Pre-DBS planning; atypical features evaluation; rule out structural pathology",
+          "target": "No vascular parkinsonism; no NPH; no structural lesion; adequate brain volume for DBS targeting",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "Levodopa challenge test",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Pre-DBS evaluation; quantify levodopa responsiveness; dose optimization",
+          "target": ">30% improvement in MDS-UPDRS Part III = good DBS candidate; documents best \"on\" state",
+          "contraindications": "Severe dyskinesia risk during supraphysiologic dosing"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Pre-DBS evaluation; cognitive baseline; assess for PD dementia (relative DBS contraindication)",
+          "target": "MoCA >=26 preferred for DBS; no significant dementia",
+          "contraindications": "None; requires cognitive cooperation"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Wearable sensor monitoring (accelerometer/gyroscope)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Objective motor fluctuation quantification; supplement patient diary; research settings",
+          "target": "Continuous objective on/off/dyskinesia tracking; correlate with dosing times",
+          "contraindications": "Device intolerance"
+        },
+        {
+          "item": "Gastric emptying scintigraphy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Chronic delayed on / dose failures not explained by dietary protein; suspected gastroparesis",
+          "target": "Delayed gastric emptying confirming gastroparesis",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Off-State Emergency)": [
+        {
+          "item": "Apomorphine subcutaneous injection (Apokyn)",
+          "route": "SQ",
+          "indication": "Acute rescue for severe off episodes; akinetic crisis; inability to take oral medications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Apomorphine subcutaneous injection (Apokyn) 2 mg SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "Test dose 2 mg SQ; usual rescue dose 2-6 mg SQ; onset 10-20 min; can repeat after 2 hours; pretreat with trimethobenzamide 300 mg PO TID starting 3 days before first dose to prevent nausea",
+            "orderSentence": "Apomorphine subcutaneous injection (Apokyn) 2 mg SQ"
+          },
+          "contraindications": "Concurrent use of 5-HT3 antagonists (ondansetron); severe hepatic or renal impairment; hypersensitivity",
+          "monitoring": "BP (orthostatic); nausea; QTc (obtain baseline ECG); injection site reactions; somnolence",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levodopa/carbidopa oral dissolution (Parcopa or generic ODT)",
+          "route": "PO (sublingual)",
+          "indication": "Off episode with difficulty swallowing; faster onset than standard tablet",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100/25 mg",
+                "orderSentence": "Levodopa/carbidopa oral dissolution (Parcopa or generic ODT) 100/25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100/25 mg orally disintegrating tablet; dissolves on tongue; absorption may be slightly faster than standard tablet; place on tongue without water",
+            "orderSentence": "Levodopa/carbidopa oral dissolution (Parcopa or generic ODT) 100/25 mg PO"
+          },
+          "contraindications": "Narrow-angle glaucoma; concurrent non-selective MAOIs",
+          "monitoring": "Dyskinesia; nausea; orthostatic BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa/carbidopa inhalation powder (Inbrija)",
+          "route": "Inhaled",
+          "indication": "Rescue for off episodes in patients already on levodopa; rapid onset (10-15 min)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "84 mg",
+                "orderSentence": "Levodopa/carbidopa inhalation powder (Inbrija) 84 mg Inhaled"
+              }
+            ],
+            "route": "Inhaled",
+            "instructions": "84 mg levodopa inhalation powder; max 5 doses/day (420 mg); onset within 10-15 minutes; intended as adjunct rescue, not replacement for oral levodopa",
+            "orderSentence": "Levodopa/carbidopa inhalation powder (Inbrija) 84 mg Inhaled"
+          },
+          "contraindications": "Concurrent non-selective MAOIs; asthma/COPD (bronchospasm risk); hypersensitivity",
+          "monitoring": "FEV1 (baseline pulmonary function); dyskinesia; nausea; cough; URI symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Resume home PD medications (do NOT hold levodopa in hospital)",
+          "route": "PO/NG",
+          "indication": "All hospitalized PD patients; medication must be given on time",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Home dose",
+                "orderSentence": "Resume home PD medications (do NOT hold levodopa in hospital) Home dose PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Critical: administer levodopa at EXACT home times, not on standard medication pass schedule; late doses cause severe off states; use NG tube if NPO; PD medications should NEVER be abruptly stopped",
+            "orderSentence": "Resume home PD medications (do NOT hold levodopa in hospital) Home dose PO"
+          },
+          "contraindications": "Active psychosis (relative for dopamine agonists); post-operative nausea (use domperidone, NOT metoclopramide or prochlorperazine)",
+          "monitoring": "Motor state; NPO patients — arrange alternative route; monitor for NMS if medications inadvertently held",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Wearing-Off Management (First-Line Adjustments)": [
+        {
+          "item": "Levodopa/carbidopa — increase frequency (shorter intervals)",
+          "route": "PO",
+          "indication": "Wearing off with predictable end-of-dose deterioration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Same total daily dose",
+                "orderSentence": "Levodopa/carbidopa — increase frequency (shorter intervals) Same total daily dose PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Decrease interval from TID to QID or Q3h; keep individual doses the same or slightly reduce each dose; goal: more continuous dopaminergic stimulation without increasing total daily levodopa",
+            "orderSentence": "Levodopa/carbidopa — increase frequency (shorter intervals) Same total daily dose PO"
+          },
+          "contraindications": "Dyskinesia (if increasing total dose); psychosis",
+          "monitoring": "Dyskinesia; off time; motor diary; nausea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa/carbidopa extended-release (Sinemet CR or Rytary)",
+          "route": "PO",
+          "indication": "Wearing off; overnight/early morning off periods; smoother plasma levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "CR: 200/50 mg",
+                "orderSentence": "Levodopa/carbidopa extended-release (Sinemet CR or Rytary) CR: 200/50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Sinemet CR 200/50 TID-QID (bioavailability ~70% of IR, adjust dose upward); Rytary 95/23.75-390/97.5 mg TID-QID (ER capsule with beads); longer duration per dose but less predictable peak",
+            "orderSentence": "Levodopa/carbidopa extended-release (Sinemet CR or Rytary) CR: 200/50 mg PO"
+          },
+          "contraindications": "Same as IR levodopa; do not crush CR formulations",
+          "monitoring": "Off time; dyskinesia; unpredictable response (CR can have variable absorption)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Entacapone (Comtan)",
+          "route": "PO",
+          "indication": "Wearing off; extend levodopa duration by blocking peripheral COMT metabolism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Entacapone (Comtan) 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200 mg with each levodopa dose; max 8 doses/day (1600 mg); extends levodopa half-life by ~30%; combination tablet Stalevo available",
+            "orderSentence": "Entacapone (Comtan) 200 mg PO"
+          },
+          "contraindications": "Hepatic impairment; pheochromocytoma; concurrent non-selective MAOIs",
+          "monitoring": "Dyskinesia (may need to reduce levodopa 10-30%); diarrhea; urine discoloration (orange-brown); LFTs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Opicapone (Ongentys)",
+          "route": "PO",
+          "indication": "Wearing off; once-daily COMT inhibitor; more convenient than entacapone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Opicapone (Ongentys) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg once daily at bedtime; take at least 1 hour before or after levodopa; long-acting peripheral COMT inhibitor",
+            "orderSentence": "Opicapone (Ongentys) 50 mg PO"
+          },
+          "contraindications": "Hepatic impairment; pheochromocytoma; concurrent non-selective MAOIs",
+          "monitoring": "Dyskinesia (reduce levodopa if needed); diarrhea; hallucinations; orthostatic hypotension",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rasagiline (Azilect)",
+          "route": "PO",
+          "indication": "Wearing off; adjunct to levodopa; MAO-B inhibitor extends dopamine availability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Rasagiline (Azilect) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5-1 mg daily; can use as monotherapy in early PD or adjunct to levodopa; irreversible selective MAO-B inhibitor",
+            "orderSentence": "Rasagiline (Azilect) 0.5 mg PO"
+          },
+          "contraindications": "Concurrent meperidine, tramadol, methadone, MAOIs, cyclobenzaprine; St. John's wort",
+          "monitoring": "Serotonin syndrome (with concurrent serotonergic drugs); orthostatic hypotension; dyskinesia; impulse control disorders",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Safinamide (Xadago)",
+          "route": "PO",
+          "indication": "Wearing off; dual mechanism (MAO-B inhibition + glutamate release modulation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Safinamide (Xadago) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase to 100 mg daily after 2 weeks if needed; adjunct to levodopa; additional anti-dyskinetic effect via glutamate modulation",
+            "orderSentence": "Safinamide (Xadago) 50 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent opioids (meperidine, tramadol), MAOIs, dextromethorphan, cyclobenzaprine",
+          "monitoring": "Dyskinesia; nausea; insomnia; serotonin syndrome risk with serotonergic drugs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Istradefylline (Nourianz)",
+          "route": "PO",
+          "indication": "Wearing off; adenosine A2A receptor antagonist; adjunct to levodopa; non-dopaminergic mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Istradefylline (Nourianz) 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20 mg daily; increase to 40 mg daily if needed; first-in-class adenosine receptor antagonist; reduces off time via non-dopaminergic pathway",
+            "orderSentence": "Istradefylline (Nourianz) 20 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent strong CYP3A4 inhibitors",
+          "monitoring": "Dyskinesia; nausea; constipation; hallucinations; insomnia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Dyskinesia Management": [
+        {
+          "item": "Reduce individual levodopa dose",
+          "route": "PO",
+          "indication": "Peak-dose dyskinesia; reduce peak dopamine levels while maintaining frequency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Reduce by 25-50 mg per dose",
+                "orderSentence": "Reduce individual levodopa dose Reduce by 25-50 mg per dose PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Lower each levodopa dose by 25-50 mg while maintaining or increasing frequency; trade: may increase off time",
+            "orderSentence": "Reduce individual levodopa dose Reduce by 25-50 mg per dose PO"
+          },
+          "contraindications": "Severe off states (balance needed)",
+          "monitoring": "Off time vs dyskinesia diary; functional impact",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine extended-release (Gocovri)",
+          "route": "PO",
+          "indication": "Moderate-severe peak-dose dyskinesia; only FDA-approved treatment for levodopa-induced dyskinesia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "137 mg",
+                "orderSentence": "Amantadine extended-release (Gocovri) 137 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 137 mg qHS; increase to 274 mg qHS after 1 week; extended-release formulation specifically for dyskinesia; take at bedtime",
+            "orderSentence": "Amantadine extended-release (Gocovri) 137 mg PO"
+          },
+          "contraindications": "GFR <15; concurrent live vaccines; end-stage renal disease",
+          "monitoring": "Hallucinations; livedo reticularis; peripheral edema; renal function (dose adjust GFR 15-60); falls; corneal edema (ophthalmologic monitoring)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine IR",
+          "route": "PO",
+          "indication": "Dyskinesia; alternative when ER unavailable; also treats off-period akinesia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine IR 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg daily; titrate to 100 mg BID-TID; max 400 mg/day; renal dose adjustment required",
+            "orderSentence": "Amantadine IR 100 mg PO"
+          },
+          "contraindications": "Same as amantadine ER; dose adjust for renal impairment",
+          "monitoring": "Same as ER; taper gradually (do not stop abruptly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clozapine (low-dose)",
+          "route": "PO",
+          "indication": "Severe refractory dyskinesia not responsive to amantadine or levodopa adjustment; also treats PD psychosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6.25-12.5 mg",
+                "orderSentence": "Clozapine (low-dose) 6.25-12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 6.25 mg qHS; increase slowly by 6.25 mg q1-2 weeks; max 50 mg/day for dyskinesia; REMS program required (weekly CBC first 6 months)",
+            "orderSentence": "Clozapine (low-dose) 6.25-12.5 mg PO"
+          },
+          "contraindications": "Seizure disorder; agranulocytosis history; concurrent myelosuppressive agents",
+          "monitoring": "ANC weekly x6 months, then biweekly x6 months, then monthly; metabolic syndrome; sedation; sialorrhea",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Advanced Therapies": [
+        {
+          "item": "Deep brain stimulation (DBS) — STN or GPi (CPT 61863)",
+          "route": "Surgical",
+          "indication": "Motor fluctuations and/or dyskinesia refractory to optimal medical management; good levodopa responsiveness (>30% UPDRS improvement); adequate cognition (MoCA >=26); disease duration typically >=4 years",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Surgical implantation",
+                "orderSentence": "Deep brain stimulation (DBS) — STN or GPi (CPT 61863) Surgical implantation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "STN-DBS (bilateral) or GPi-DBS; programming begins 2-4 weeks post-implant; medication adjustment concurrent with programming; STN-DBS allows greater medication reduction; GPi-DBS has more direct anti-dyskinetic effect",
+            "orderSentence": "Deep brain stimulation (DBS) — STN or GPi (CPT 61863) Surgical implantation Surgical"
+          },
+          "contraindications": "Dementia (MoCA <21); active psychiatric illness; atypical parkinsonism (MSA, PSP, CBD); coagulopathy; medical instability for surgery; unrealistic expectations",
+          "monitoring": "Post-op imaging; device programming (multiple sessions); medication adjustment; neuropsychological monitoring; device battery life; infection",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levodopa/carbidopa intestinal gel (Duopa/Duodopa)",
+          "route": "Enteral",
+          "indication": "Severe motor fluctuations in advanced PD not candidates for DBS or who prefer non-surgical brain approach",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous infusion",
+                "orderSentence": "Levodopa/carbidopa intestinal gel (Duopa/Duodopa) Continuous infusion Enteral"
+              }
+            ],
+            "route": "Enteral",
+            "instructions": "Delivered via PEG-J tube to jejunum; continuous daytime infusion over 16 hours; provides steady levodopa levels; bypasses gastric emptying; requires permanent PEG-J tube",
+            "orderSentence": "Levodopa/carbidopa intestinal gel (Duopa/Duodopa) Continuous infusion Enteral"
+          },
+          "contraindications": "Same as levodopa; unable to manage pump; severe dementia; anatomic contraindication to PEG",
+          "monitoring": "Tube complications (obstruction, migration, infection); dyskinesia; neuropathy (monitor B12/folate/homocysteine); device malfunction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Subcutaneous apomorphine continuous infusion (Kynmobi pump or foslevodopa/foscarbidopa)",
+          "route": "SQ",
+          "indication": "Severe motor fluctuations; DBS not appropriate; alternative to Duopa",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous",
+                "orderSentence": "Subcutaneous apomorphine continuous infusion (Kynmobi pump or foslevodopa/foscarbidopa) Continuous SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "Subcutaneous apomorphine pump: start 1 mg/hr, titrate to effect (2-6 mg/hr); foslevodopa/foscarbidopa (Produodopa): continuous SQ infusion via pump; provides continuous dopaminergic stimulation",
+            "orderSentence": "Subcutaneous apomorphine continuous infusion (Kynmobi pump or foslevodopa/foscarbidopa) Continuous SQ"
+          },
+          "contraindications": "Concurrent 5-HT3 antagonists (for apomorphine); injection site reactions",
+          "monitoring": "BP; injection site nodules; somnolence; QTc; psychiatric symptoms; hemolytic anemia (apomorphine)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Movement disorders specialist for optimization of fluctuations and dyskinesia; advanced therapy evaluation (DBS, pump therapies); complex medication management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DBS surgical team evaluation (neurosurgeon + movement disorders neurologist) if motor fluctuations or dyskinesia are refractory to optimized medical management and patient meets candidacy criteria",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait and balance training, fall prevention, exercise prescription (PD-specific programs: LSVT BIG, PWR! Moves, boxing, dance)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy (LSVT LOUD) for hypophonia and speech clarity — common in advancing PD",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL strategies during off periods, adaptive equipment, and home safety assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry/psychology for depression, anxiety, impulse control disorders (associated with dopamine agonists), and adjustment to disease progression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/dietitian for protein redistribution diet (protein competes with levodopa for absorption); ensure adequate hydration and fiber for constipation management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Take levodopa on time, every time — even small delays can trigger off episodes; set multiple alarms; bring medications to all appointments and hospital stays",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Take levodopa 30-60 minutes before meals or 1-2 hours after meals for best absorption — protein (amino acids) competes with levodopa for intestinal absorption; consider a protein redistribution diet (low protein during the day, larger protein serving at dinner)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Never stop PD medications abruptly — sudden discontinuation can cause neuroleptic malignant-like syndrome (hyperthermia, rigidity, autonomic instability, altered consciousness) which is life-threatening",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Keep an on/off motor diary for 1-2 weeks before each clinic visit — record time of each medication dose, hours of good mobility (on), hours of poor mobility (off), and hours of involuntary movements (dyskinesia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid medications that block dopamine: metoclopramide (Reglan), prochlorperazine (Compazine), promethazine (Phenergan), haloperidol, droperidol — these will dramatically worsen PD symptoms; use ondansetron for nausea (unless on apomorphine) or domperidone if available",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Exercise regularly (walking, cycling, boxing, dance, swimming) — exercise is neuroprotective and improves motor function, balance, and quality of life in PD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new involuntary movements (dyskinesia), hallucinations, gambling/spending/sexual urges (impulse control disorders), or excessive daytime sleepiness to your movement disorders team",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Exercise 30-60 minutes daily, 5 days/week: PD-specific programs (LSVT BIG, Rock Steady Boxing, PD Warrior, dance for PD) provide greatest benefit; exercise is the most evidence-based lifestyle intervention for PD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein redistribution diet: keep daytime protein intake low (20-30 g) to optimize levodopa absorption; consume remaining protein at evening meal when motor function is less critical",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Prevent falls: remove throw rugs; install grab bars; use nightlights; avoid carrying objects while walking; use assistive devices (cane, walker) when needed; address freezing of gait with cues (counting, laser pointer, metronome)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain social engagement and cognitive stimulation — social isolation accelerates cognitive decline in PD; support groups, hobbies, and structured activities are beneficial",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Manage constipation proactively: high fiber diet (25-30 g/day), adequate hydration (2L/day), polyethylene glycol (Miralax) 17 g daily — constipation delays gastric emptying and worsens levodopa absorption",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Optimize sleep hygiene: consistent sleep/wake times; melatonin 3-5 mg for insomnia; treat REM sleep behavior disorder if present; good sleep improves daytime motor function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Atypical parkinsonism (MSA, PSP, CBD)",
+      "features": "Poor or waning levodopa response; atypical features (early falls in PSP, autonomic failure in MSA, asymmetric apraxia in CBD); faster progression; do NOT develop typical wearing-off pattern",
+      "tests": "Clinical diagnostic criteria; MRI (hot cross bun in MSA, hummingbird in PSP); DaTscan (does not distinguish PD from atypical)"
+    },
+    {
+      "diagnosis": "Drug-induced parkinsonism",
+      "features": "Temporal relationship to dopamine-blocking medications (antipsychotics, antiemetics); bilateral symmetric onset; no levodopa response or motor fluctuations",
+      "tests": "Medication reconciliation; DaTscan (normal in drug-induced); symptoms resolve with drug withdrawal (weeks-months)"
+    },
+    {
+      "diagnosis": "Parkinson disease psychosis",
+      "features": "Hallucinations, delusions, agitation — may be confused with \"off\" state psychiatric symptoms; medication-related vs disease-related",
+      "tests": "Temporal relationship to dopamine agonist dose changes; visual hallucinations (VH); clear sensorium (PD psychosis) vs confusion (delirium)"
+    },
+    {
+      "diagnosis": "Depression in PD",
+      "features": "Apathy, psychomotor retardation, and withdrawal may mimic off-state akinesia; should be evaluated as comorbidity, not just motor fluctuation",
+      "tests": "Depression screening (GDS, PHQ-9); symptoms present regardless of on/off state; trial of antidepressant"
+    },
+    {
+      "diagnosis": "Orthostatic hypotension",
+      "features": "Weakness, light-headedness, near-syncope when standing may be confused with off-state motor decline; PD and medications both cause OH",
+      "tests": "Orthostatic vital signs; symptoms correlate with BP drop, not motor state; treatment: fludrocortisone, midodrine, droxidopa"
+    },
+    {
+      "diagnosis": "Gastroparesis (PD-related)",
+      "features": "Delayed gastric emptying causes erratic levodopa absorption → dose failures and unpredictable on/off; common in PD",
+      "tests": "Gastric emptying study; trial of domperidone or liquid levodopa preparations"
+    },
+    {
+      "diagnosis": "Freezing of gait",
+      "features": "Sudden transient inability to initiate or continue walking; may be on-state freezing (medication-resistant) or off-state freezing; distinct from motor fluctuation per se",
+      "tests": "Motor diary documenting freezing timing relative to medication doses; observe gait"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MDS Evidence-Based Medicine Review of Treatments for Motor Symptoms in PD",
+      "evidenceLevel": "Guideline",
+      "source": "[Fox SH et al. Mov Disord 2018](https://pubmed.ncbi.nlm.nih.gov/29570866/)"
+    },
+    {
+      "recommendation": "Levodopa fractionation (shorter intervals) is first approach to wearing off",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Fox SH et al. Mov Disord 2018](https://pubmed.ncbi.nlm.nih.gov/29570866/)"
+    },
+    {
+      "recommendation": "Entacapone as adjunct to levodopa reduces off time by ~1 hour/day",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Stocchi F et al. Mov Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15372588/)"
+    },
+    {
+      "recommendation": "Amantadine extended-release (Gocovri) reduces levodopa-induced dyskinesia",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Pahwa R et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29114728/)"
+    },
+    {
+      "recommendation": "STN-DBS improves motor fluctuations, off time, and quality of life in advanced PD",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Deuschl G et al. NEJM 2006](https://pubmed.ncbi.nlm.nih.gov/16943402/)"
+    },
+    {
+      "recommendation": "Apomorphine SC injection provides rapid rescue from off episodes (onset 10-20 min)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Olanow CW et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19938101/)"
+    },
+    {
+      "recommendation": "Inhaled levodopa (Inbrija) provides rapid rescue for off episodes",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[LeWitt PA et al. Lancet Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30663606/)"
+    },
+    {
+      "recommendation": "Safinamide provides additional off-time reduction and anti-dyskinetic benefit via dual mechanism",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Borgohain R et al. Mov Disord 2014](https://pubmed.ncbi.nlm.nih.gov/25044402/)"
+    },
+    {
+      "recommendation": "Istradefylline (adenosine A2A antagonist) reduces off time as adjunct to levodopa",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Mizuno Y et al. Mov Disord 2010](https://pubmed.ncbi.nlm.nih.gov/20629136/)"
+    },
+    {
+      "recommendation": "Protein redistribution diet improves levodopa absorption and reduces off time",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Pincus JH, Barry K. Neurology 1987](https://pubmed.ncbi.nlm.nih.gov/3501169/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Motor diary (on/off/dyskinesia hours per day)",
+      "frequency": "Continuously between visits; review at each visit",
+      "action": "Adjust levodopa timing/dose; add adjunct (COMT-I, MAO-B-I); consider advanced therapies if refractory",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MDS-UPDRS Part III (motor exam) in defined on-state",
+      "frequency": "Each visit",
+      "action": "Medication adjustment; consider DBS referral if significantly worsening despite optimization",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MDS-UPDRS Part IV (motor complications)",
+      "frequency": "Each visit",
+      "action": "Adjust strategy; escalate to advanced therapies",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Orthostatic vital signs",
+      "frequency": "Each visit",
+      "action": "Optimize hydration/salt; reduce dopamine agonist if contributor; add fludrocortisone/midodrine",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on COMT inhibitors)",
+      "frequency": "Baseline; q2-4 weeks for tolcapone; q6-12 months for entacapone/opicapone",
+      "action": "Reduce dose; discontinue if >3x ULN or symptoms; tolcapone: mandatory monitoring",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Impulse control screening (QUIP-RS)",
+      "frequency": "Each visit; especially on dopamine agonists",
+      "action": "Reduce or discontinue dopamine agonist; behavioral counseling; consider amantadine",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive assessment (MoCA)",
+      "frequency": "Annual; more frequently if concern",
+      "action": "Evaluate for PDD; adjust medications (reduce anticholinergics, cautious with amantadine); neuropsychological testing",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "DBS device parameters and battery",
+      "frequency": "Q3-6 months post-implant; annual once stable",
+      "action": "Reprogram; battery replacement (non-rechargeable q3-5 years; rechargeable q15-25 years)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Off episode resolved with rescue medication; able to resume home medication schedule; no aspiration or fall-related injury; follow-up with movement disorders specialist within 1-2 weeks"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Prolonged off state not responding to home medications; unable to take oral medications (need for NG tube or SQ apomorphine); fall requiring monitoring; dehydration"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Akinetic crisis (inability to move, swallow, or protect airway); NMS-like syndrome from medication interruption; elective DBS surgery; Duopa pump placement; severe dehydration or aspiration pneumonia in off state"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Neuroleptic malignant-like syndrome (abrupt PD medication discontinuation: hyperthermia >38.5°C, severe rigidity, autonomic instability); aspiration with respiratory failure; akinetic crisis with airway compromise"
+    },
+    {
+      "disposition": "Outpatient follow-up (movement disorders)",
+      "criteria": "Motor fluctuations: q2-4 weeks during active adjustment; stable: q3-6 months; DBS programming: weekly-biweekly initially, then q3 months; advanced therapy titration: q2-4 weeks"
+    }
+  ]
+}

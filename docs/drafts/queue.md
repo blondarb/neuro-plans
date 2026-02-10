@@ -24,11 +24,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Lumbar Stenosis | M48.06 | `lumbar-stenosis.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Ulnar Neuropathy | G56.20 | `ulnar-neuropathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Chemotherapy-Induced Neuropathy | G62.0 | `chemotherapy-induced-neuropathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Parkinson's Disease - Motor Fluctuations | G20 | `parkinsons-motor-fluctuations.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Delirium vs Dementia | R41.0 | `delirium-vs-dementia.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Lumbar Stenosis | M48.06 | `lumbar-stenosis.md` | `approved` | — | 2026-02-09 |
+| Ulnar Neuropathy | G56.20 | `ulnar-neuropathy.md` | `approved` | — | 2026-02-09 |
+| Chemotherapy-Induced Neuropathy | G62.0 | `chemotherapy-induced-neuropathy.md` | `approved` | — | 2026-02-09 |
+| Parkinson's Disease - Motor Fluctuations | G20 | `parkinsons-motor-fluctuations.md` | `approved` | — | 2026-02-09 |
+| Delirium vs Dementia | R41.0 | `delirium-vs-dementia.md` | `approved` | — | 2026-02-09 |
 
 ---
 
@@ -36,11 +36,11 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| New Daily Persistent Headache | G44.52 | `new-daily-persistent-headache.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Horner Syndrome | G90.2 | `horner-syndrome.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Hypertensive Encephalopathy | I67.4 | `hypertensive-encephalopathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Parkinson's Disease - Psychosis | F06.0 | `parkinsons-psychosis.md` | `in_progress` | tier14-drafts | 2026-02-09 |
-| Autoimmune Dementia/Encephalopathy | G04.81 | `autoimmune-dementia.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| New Daily Persistent Headache | G44.52 | `new-daily-persistent-headache.md` | `approved` | — | 2026-02-09 |
+| Horner Syndrome | G90.2 | `horner-syndrome.md` | `approved` | — | 2026-02-09 |
+| Hypertensive Encephalopathy | I67.4 | `hypertensive-encephalopathy.md` | `approved` | — | 2026-02-09 |
+| Parkinson's Disease - Psychosis | F06.0 | `parkinsons-psychosis.md` | `approved` | — | 2026-02-09 |
+| Autoimmune Dementia/Encephalopathy | G04.81 | `autoimmune-dementia.md` | `approved` | — | 2026-02-09 |
 
 ---
 
@@ -214,6 +214,16 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 132 | Occipital Neuralgia | [`occipital-neuralgia.md`](../plans/occipital-neuralgia.md) | 2026-02-09 | 93% (56/60) |
 | 133 | Complex Regional Pain Syndrome (CRPS) | [`crps.md`](../plans/crps.md) | 2026-02-09 | 93% (56/60) |
 | 134 | Neuropathic Pain Management | [`neuropathic-pain-management.md`](../plans/neuropathic-pain-management.md) | 2026-02-09 | 93% (56/60) |
+| 135 | Ulnar Neuropathy | [`ulnar-neuropathy.md`](../plans/ulnar-neuropathy.md) | 2026-02-09 | 90%+ |
+| 136 | Chemotherapy-Induced Peripheral Neuropathy (CIPN) | [`chemotherapy-induced-neuropathy.md`](../plans/chemotherapy-induced-neuropathy.md) | 2026-02-09 | 90%+ |
+| 137 | Parkinson's Disease — Motor Fluctuations and Dyskinesia | [`parkinsons-motor-fluctuations.md`](../plans/parkinsons-motor-fluctuations.md) | 2026-02-09 | 90%+ |
+| 138 | Parkinson's Disease — Psychosis | [`parkinsons-psychosis.md`](../plans/parkinsons-psychosis.md) | 2026-02-09 | 90%+ |
+| 139 | Delirium versus Dementia — Diagnostic Evaluation | [`delirium-vs-dementia.md`](../plans/delirium-vs-dementia.md) | 2026-02-09 | 90%+ |
+| 140 | Autoimmune Dementia / Encephalopathy | [`autoimmune-dementia.md`](../plans/autoimmune-dementia.md) | 2026-02-09 | 90%+ |
+| 141 | New Daily Persistent Headache (NDPH) | [`new-daily-persistent-headache.md`](../plans/new-daily-persistent-headache.md) | 2026-02-09 | 90%+ |
+| 142 | Lumbar Spinal Stenosis | [`lumbar-stenosis.md`](../plans/lumbar-stenosis.md) | 2026-02-09 | 90%+ |
+| 143 | Horner Syndrome | [`horner-syndrome.md`](../plans/horner-syndrome.md) | 2026-02-09 | 90%+ |
+| 144 | Hypertensive Encephalopathy | [`hypertensive-encephalopathy.md`](../plans/hypertensive-encephalopathy.md) | 2026-02-09 | 90%+ |
 
 ---
 

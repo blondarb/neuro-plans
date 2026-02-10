@@ -40,6 +40,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Moyamoya Disease](moyamoya-disease.md) | ED, HOSP, OPD, ICU | I67.5, I63.9, I61.9 |
 | [Post-Stroke Management](post-stroke-management.md) | ED, HOSP, OPD | I69.30, I69.398, Z86.73 |
 | [Carotid Stenosis](carotid-stenosis.md) | ED, HOSP, OPD, ICU | I65.29 |
+| [Hypertensive Encephalopathy](hypertensive-encephalopathy.md) | ED, HOSP, ICU | ** I67.4 (Hypertensive encephalopathy), I16.1 (Hypertensive emergency), I67.83 (Posterior reversible encephalopathy syndrome — PRES), I10 (Essential hypertension) |
 
 ---
 
@@ -66,6 +67,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Myotonic Dystrophy](myotonic-dystrophy.md) | ED, HOSP, OPD | G71.11, G71.12, G71.19 |
 | [Peroneal Neuropathy](peroneal-neuropathy.md) | ED, HOSP, OPD, ICU | G57.30 |
 | [Plexopathy](plexopathy.md) | ED, HOSP, OPD, ICU | G54.0 |
+| [Ulnar Neuropathy](ulnar-neuropathy.md) | ED, HOSP, OPD, ICU | ** G56.20 (Ulnar nerve lesion, unspecified upper limb), G56.21 (Ulnar nerve lesion, right upper limb), G56.22 (Ulnar nerve lesion, left upper limb), G56.23 (Ulnar nerve lesion, bilateral upper limbs) |
+| [Chemotherapy-Induced Peripheral Neuropathy (CIPN)](chemotherapy-induced-neuropathy.md) | ED, HOSP, OPD, ICU | ** G62.0 (Drug-induced polyneuropathy), T45.1X5A (Adverse effect of antineoplastic and immunosuppressive drugs, initial encounter), G62.9 (Polyneuropathy, unspecified) |
 
 ---
 
@@ -97,6 +100,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Cauda Equina Syndrome](cauda-equina-syndrome.md) | ED, HOSP | G83.4 |
 | [Epidural Abscess](epidural-abscess.md) | ED, HOSP, ICU | G06.1 |
 | [Cervical Spondylotic Myelopathy](cervical-myelopathy.md) | ED, HOSP, OPD, ICU | M47.12, M47.22, M50.00 |
+| [Lumbar Spinal Stenosis](lumbar-stenosis.md) | ED, HOSP, OPD, ICU | ** M48.061 (Spinal stenosis, lumbar region without neurogenic claudication), M48.062 (Spinal stenosis, lumbar region with neurogenic claudication), M99.23 (Subluxation stenosis of neural canal of lumbar region) |
 
 ---
 
@@ -150,6 +154,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Headache Evaluation](headache-evaluation.md) | ED, HOSP, OPD, ICU | R51.9 |
 | [Thunderclap Headache Evaluation](thunderclap-headache-evaluation.md) | ED, HOSP, OPD, ICU | R51.9 |
 | [Headache, Unspecified](headache-unspecified.md) | ED, HOSP, OPD | R51.9 |
+| [New Daily Persistent Headache (NDPH)](new-daily-persistent-headache.md) | ED, HOSP, OPD, ICU | ** G44.52 (New daily persistent headache), G44.1 (Vascular headache, not elsewhere classified), R51.9 (Headache, unspecified) |
 
 ---
 
@@ -171,6 +176,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Ataxia Evaluation](ataxia-evaluation.md) | ED, HOSP, OPD | R27.0, G11.9 |
 | [Tics / Tourette Syndrome](tics-tourette-syndrome.md) | ED, HOSP, OPD | F95.2 |
 | [Tremor, Unspecified](tremor-unspecified.md) | ED, HOSP, OPD, ICU | R25.1 |
+| [Parkinson's Disease — Motor Fluctuations and Dyskinesia](parkinsons-motor-fluctuations.md) | ED, HOSP, OPD, ICU | ** G20.A2 (Parkinson's disease without dyskinesia, with fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with fluctuations), G20.A1 (Parkinson's disease without dyskinesia, without fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without fluctuations), G24.02 (Drug-induced acute dystonia), G25.1 (Drug-induced tremor) |
+| [Parkinson's Disease — Psychosis](parkinsons-psychosis.md) | ED, HOSP, OPD | ** F06.0 (Psychotic disorder due to known physiological condition with hallucinations), F06.2 (Psychotic disorder due to known physiological condition with delusions), G20.A1 (Parkinson's disease without dyskinesia, without fluctuations), G20.C (Parkinsonism, unspecified), F03.90 (Dementia, unspecified, without behavioral disturbance) |
 
 ---
 
@@ -187,6 +194,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Mild Cognitive Impairment](mild-cognitive-impairment.md) | OPD, HOSP | G31.84, F06.7, R41.81 |
 | [Normal Pressure Hydrocephalus](normal-pressure-hydrocephalus.md) | ED, HOSP, OPD | G91.2, G91.0 |
 | [Creutzfeldt-Jakob Disease](creutzfeldt-jakob-disease.md) | ED, HOSP, OPD, ICU | A81.00, A81.01, A81.09 |
+| [Delirium versus Dementia — Diagnostic Evaluation](delirium-vs-dementia.md) | ED, HOSP, OPD, ICU | ** R41.0 (Disorientation, unspecified), F05 (Delirium due to known physiological condition), R41.3 (Other amnesia), F03.90 (Unspecified dementia without behavioral disturbance), R41.82 (Altered mental status, unspecified), F01.50 (Vascular dementia without behavioral disturbance), G30.9 (Alzheimer disease, unspecified) |
+| [Autoimmune Dementia / Encephalopathy](autoimmune-dementia.md) | ED, HOSP, OPD, ICU | ** G04.81 (Other autoimmune encephalitis), G31.09 (Other frontotemporal dementia), G04.90 (Encephalitis and encephalomyelitis, unspecified), R41.3 (Other amnesia), G13.1 (Other systemic atrophy primarily affecting CNS in neoplastic disease — paraneoplastic limbic encephalitis) |
 
 ---
 
@@ -196,6 +205,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Bell's Palsy](bells-palsy.md) | ED, HOSP, OPD | G51.0 |
 | [Trigeminal Neuralgia](trigeminal-neuralgia.md) | ED, HOSP, OPD | G50.0 |
+| [Horner Syndrome](horner-syndrome.md) | ED, HOSP, OPD, ICU | ** G90.2 (Horner syndrome), H57.00 (Unspecified anomaly of pupillary function), S15.001A (Injury of carotid artery, initial encounter) |
 
 ---
 
