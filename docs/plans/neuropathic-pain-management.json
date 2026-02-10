@@ -1,0 +1,1705 @@
+{
+  "id": "neuropathic-pain-management",
+  "title": "Neuropathic Pain Management",
+  "version": "1.1",
+  "icd10": [
+    "** G89.29 (Other chronic pain)",
+    "G89.4 (Chronic pain syndrome)",
+    "G89.0 (Central pain syndrome)",
+    "G60.9 (Hereditary and idiopathic neuropathy",
+    "unspecified)",
+    "G62.9 (Polyneuropathy",
+    "unspecified)",
+    "M79.2 (Neuralgia and neuritis",
+    "unspecified)",
+    "B02.22 (Postherpetic trigeminal neuralgia)",
+    "B02.29 (Other postherpetic nervous system involvement)",
+    "G50.0 (Trigeminal neuralgia)",
+    "E11.42 (Type 2 diabetes with diabetic polyneuropathy)",
+    "G63 (Polyneuropathy in diseases classified elsewhere)"
+  ],
+  "scope": "** Treatment-focused plan for neuropathic pain management in adults. Covers peripheral neuropathic pain (diabetic, post-herpetic, traumatic, chemotherapy-induced) and central neuropathic pain (post-stroke, spinal cord injury, MS-related). Includes pain screening tools (DN4, LANSS), step therapy per AAN/EFNS/NeuPSIG guidelines, combination therapy strategies, opioid risk assessment, interventional options, and deprescribing guidance. Covers ED acute exacerbation, inpatient management, and outpatient chronic care. Excludes diagnostic workup for neuropathy etiology (covered in neuropathy-specific plans).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Monitoring for Treatment)": [
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Renal function for dose adjustment (gabapentinoids, tramadol); electrolytes",
+          "target": "Normal eGFR; normal electrolytes"
+        },
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Baseline before carbamazepine/oxcarbazepine (agranulocytosis risk)",
+          "target": "Normal WBC, platelets"
+        },
+        {
+          "item": "Hepatic panel (CPT 80076)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Baseline before duloxetine, TCAs; hepatotoxicity monitoring",
+          "target": "Normal ALT/AST/bilirubin"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Glycemic control in diabetic neuropathic pain; treatment target",
+          "target": "< 7.0%"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Opioid risk assessment; compliance monitoring; identify unreported substances",
+          "target": "Consistent with prescribed medications"
+        }
+      ],
+      "Extended Labs (Based on Treatment Selection)": [
+        {
+          "item": "ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline before TCAs (QTc prolongation risk); cardiac monitoring",
+          "target": "QTc < 500 ms; no conduction abnormality"
+        },
+        {
+          "item": "Sodium level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Monitor for hyponatremia with carbamazepine, oxcarbazepine, SNRIs",
+          "target": "Na > 130 mEq/L"
+        },
+        {
+          "item": "Carbamazepine level (CPT 80156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Therapeutic drug monitoring for trigeminal neuralgia treatment",
+          "target": "4-12 mcg/mL"
+        },
+        {
+          "item": "HLA-B*1502 genotype",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Pre-carbamazepine/oxcarbazepine in patients of Southeast Asian descent (SJS/TEN risk)",
+          "target": "Negative"
+        },
+        {
+          "item": "Lipid panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic monitoring with pregabalin (weight gain); cardiovascular risk",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Pain Assessment Tools (Essential)": [
+        {
+          "item": "Numeric Rating Scale (NRS 0-10)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Every encounter; q4h inpatient",
+          "target": "Document baseline and response; target >=30% reduction",
+          "contraindications": "None"
+        },
+        {
+          "item": "DN4 Questionnaire",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Initial assessment; confirm neuropathic mechanism",
+          "target": "Score >=4/10 = neuropathic pain",
+          "contraindications": "None"
+        },
+        {
+          "item": "LANSS Pain Scale",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Initial assessment if DN4 equivocal",
+          "target": "Score >=12/24 = neuropathic pain",
+          "contraindications": "None"
+        },
+        {
+          "item": "Brief Pain Inventory (BPI)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline and follow-up; functional impact",
+          "target": "Document interference with ADLs",
+          "contraindications": "None"
+        },
+        {
+          "item": "Opioid Risk Tool (ORT)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Before any opioid prescribing",
+          "target": "Low (0-3), moderate (4-7), high (>=8)",
+          "contraindications": "None"
+        },
+        {
+          "item": "PDMP check (Prescription Drug Monitoring Program)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Before prescribing controlled substances",
+          "target": "No concerning patterns",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies (Select Cases)": [
+        {
+          "item": "MRI brain/spinal cord",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If central pain suspected (post-stroke, MS, SCI)",
+          "target": "Identify CNS lesion correlating with pain",
+          "contraindications": "Pacemaker, metal"
+        },
+        {
+          "item": "EMG/NCS (CPT 95907-95913)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If neuropathy type uncertain; guide treatment selection",
+          "target": "Characterize nerve injury pattern",
+          "contraindications": "None (relative: anticoagulation for needle EMG)"
+        },
+        {
+          "item": "Quantitative sensory testing (QST)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research; difficult-to-characterize pain",
+          "target": "Small fiber dysfunction",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Pain Exacerbation": [
+        {
+          "item": "IV lidocaine infusion",
+          "route": "IV",
+          "indication": "Severe refractory neuropathic pain crisis; inpatient only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 mg/kg",
+                "orderSentence": "IV lidocaine infusion 1-3 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Infuse 1-3 mg/kg over 30-60 min; may repeat once in 24h; cardiac monitoring required",
+            "orderSentence": "IV lidocaine infusion 1-3 mg/kg IV"
+          },
+          "contraindications": "Cardiac arrhythmia, heart block, hepatic failure, seizure disorder",
+          "monitoring": "Continuous cardiac monitoring; BP q15min during infusion; lidocaine level if repeated",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Acute exacerbation with inflammatory component; short-course only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg",
+                "orderSentence": "Ketorolac 15 mg IV"
+              },
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-30 mg IV/IM q6h; max 5 days; use lowest effective dose",
+            "orderSentence": "Ketorolac 15 mg IV"
+          },
+          "contraindications": "Renal impairment, GI bleeding, coagulopathy, age >65 (use 15 mg)",
+          "monitoring": "Renal function; GI symptoms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketamine (subanesthetic)",
+          "route": "IV",
+          "indication": "Severe refractory neuropathic pain; opioid-resistant pain crisis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mg/kg/hr",
+                "orderSentence": "Ketamine (subanesthetic) 0.1-0.3 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1-0.3 mg/kg/hr infusion; max 72h; monitor for dissociative symptoms",
+            "orderSentence": "Ketamine (subanesthetic) 0.1-0.3 mg/kg/hr IV"
+          },
+          "contraindications": "Uncontrolled HTN, raised ICP, psychosis, pregnancy",
+          "monitoring": "BP, HR, dissociative symptoms, hepatic function if >24h",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Morphine (short-course crisis)",
+          "route": "IV",
+          "indication": "Severe acute exacerbation unresponsive to non-opioid measures; bridge only",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Morphine (short-course crisis) 2 mg IV"
+              },
+              {
+                "text": "4 mg",
+                "orderSentence": "Morphine (short-course crisis) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV q3-4h PRN; max 48-72h; document exit plan",
+            "orderSentence": "Morphine (short-course crisis) 2 mg IV"
+          },
+          "contraindications": "Respiratory depression, concurrent benzodiazepines, substance use disorder, untreated sleep apnea",
+          "monitoring": "Respiratory rate, sedation scale, SpO2",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (acute nerve compression)",
+          "route": "IV",
+          "indication": "Acute nerve compression or inflammation contributing to pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-10 mg",
+                "orderSentence": "Dexamethasone (acute nerve compression) 4-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-10 mg IV daily x 3-5 days; taper if >5 days",
+            "orderSentence": "Dexamethasone (acute nerve compression) 4-10 mg IV"
+          },
+          "contraindications": "Active infection, uncontrolled diabetes",
+          "monitoring": "Blood glucose; GI symptoms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "First-Line Agents --- Gabapentinoids": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Peripheral neuropathic pain (diabetic, PHN); first-line; NNT 6.3",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg TID PO"
+              },
+              {
+                "text": "900 mg TID",
+                "orderSentence": "Gabapentin 900 mg TID PO"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Gabapentin 1200 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-7 days; target 1800-3600 mg/day in 3 divided doses; reduce dose if CrCl <60",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose); history of substance use (abuse potential)",
+          "monitoring": "Sedation, dizziness, peripheral edema, renal function; suicidal ideation (FDA warning)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Peripheral neuropathic pain (diabetic, PHN, SCI); first-line; NNT 7.7 for diabetic neuropathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin 150 mg BID PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Pregabalin 300 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; titrate to 150 mg BID at week 1; max 300 mg BID (600 mg/day); reduce if CrCl <60",
+            "orderSentence": "Pregabalin 75 mg BID PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose); schedule V controlled substance",
+          "monitoring": "Sedation, dizziness, weight gain, peripheral edema; suicidal ideation (FDA warning)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Agents --- SNRIs": [
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Diabetic neuropathic pain (FDA approved); also effective for other peripheral neuropathic pain; NNT 6.4",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Duloxetine 60 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day; take with food",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Hepatic impairment, CrCl <30, concurrent MAOIs, uncontrolled narrow-angle glaucoma",
+          "monitoring": "BP, hepatic function, sodium, nausea, sexual dysfunction; serotonin syndrome risk with other serotonergic agents; taper over 2 weeks to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Neuropathic pain (various types); effective at higher doses (>=150 mg); NNT 6.4",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Venlafaxine XR 75 mg daily PO"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Venlafaxine XR 150 mg daily PO"
+              },
+              {
+                "text": "225 mg daily",
+                "orderSentence": "Venlafaxine XR 225 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily x 1 week; titrate by 37.5-75 mg weekly; target 150-225 mg/day; analgesic effect requires >=150 mg",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "contraindications": "Uncontrolled HTN, concurrent MAOIs, severe hepatic/renal impairment",
+          "monitoring": "BP (dose-dependent HTN), sodium, serotonin syndrome risk; taper over 2-4 weeks to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Agents --- TCAs": [
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (all types); first-line; NNT 3.6; also effective for central pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Amitriptyline 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Amitriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; titrate by 10-25 mg q1-2 weeks; target 50-75 mg qHS; max 150 mg/day; give at bedtime",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction defects, recent MI, concurrent MAOIs, urinary retention, narrow-angle glaucoma, age >65 (use nortriptyline instead)",
+          "monitoring": "ECG before and after dose changes (QTc); anticholinergic effects (dry mouth, constipation, urinary retention); weight gain; sedation; fall risk in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain; preferred TCA in elderly (less anticholinergic); NNT 3.6 (class)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Nortriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Nortriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Nortriptyline 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Nortriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg q1-2 weeks; target 50-75 mg qHS; max 150 mg/day",
+            "orderSentence": "Nortriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction defects, recent MI, concurrent MAOIs, urinary retention",
+          "monitoring": "ECG before and after dose changes; fewer anticholinergic effects than amitriptyline; therapeutic drug level available (target 50-150 ng/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Desipramine",
+          "route": "PO",
+          "indication": "Neuropathic pain; least sedating TCA; preferred when daytime alertness required",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Desipramine 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Desipramine 50 mg daily PO"
+              },
+              {
+                "text": "75 mg daily",
+                "orderSentence": "Desipramine 75 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Desipramine 100 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; titrate by 25 mg q1-2 weeks; target 75-100 mg/day; max 150 mg/day; may give in AM",
+            "orderSentence": "Desipramine 25 mg daily PO"
+          },
+          "contraindications": "Cardiac conduction defects, recent MI, concurrent MAOIs",
+          "monitoring": "ECG before and after dose changes; least anticholinergic of TCAs; may cause insomnia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line Agents": [
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Neuropathic pain when first-line agents fail or as add-on; NNT 4.7",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg q6h",
+                "orderSentence": "Tramadol 50 mg q6h PO"
+              },
+              {
+                "text": "100 mg q6h",
+                "orderSentence": "Tramadol 100 mg q6h PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg q4-6h PRN; may increase to 50-100 mg q6h; max 400 mg/day; reduce to max 200 mg/day if age >75 or CrCl <30",
+            "orderSentence": "Tramadol 50 mg q6h PO"
+          },
+          "contraindications": "Seizure disorder (lowers threshold), concurrent MAOIs/SSRIs/SNRIs (serotonin syndrome), substance use disorder",
+          "monitoring": "Serotonin syndrome symptoms, seizure risk, constipation; schedule IV controlled substance; PDMP check required; naloxone co-prescription if risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lidocaine 5% patch (Lidoderm)",
+          "route": "Topical",
+          "indication": "Localized peripheral neuropathic pain (PHN, focal neuropathy); NNT 4.4 for PHN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches",
+                "orderSentence": "Lidocaine 5% patch (Lidoderm) 1-3 patches topical"
+              }
+            ],
+            "route": "topical",
+            "instructions": "Apply up to 3 patches to painful area; 12 hours on, 12 hours off; may cut to size",
+            "orderSentence": "Lidocaine 5% patch (Lidoderm) 1-3 patches topical"
+          },
+          "contraindications": "Allergy to local anesthetics; avoid on broken skin",
+          "monitoring": "Skin irritation; minimal systemic absorption; safe in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Capsaicin 8% patch (Qutenza)",
+          "route": "Topical",
+          "indication": "Post-herpetic neuralgia (FDA approved); localized peripheral neuropathic pain; NNT 10.6",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-4 patches",
+                "orderSentence": "Capsaicin 8% patch (Qutenza) 1-4 patches topical"
+              }
+            ],
+            "route": "topical",
+            "instructions": "Apply to painful area for 60 min (feet: 30 min); in-clinic procedure; pretreat with topical anesthetic; repeat q3 months",
+            "orderSentence": "Capsaicin 8% patch (Qutenza) 1-4 patches topical"
+          },
+          "contraindications": "Allergy to capsaicin; avoid on face; avoid broken skin",
+          "monitoring": "Application-site pain/erythema (expected); BP monitoring during application; transient pain flare; use nitrile gloves",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carbamazepine",
+          "route": "PO",
+          "indication": "Trigeminal neuralgia (first-line for TN); NNT 1.7 for TN",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Carbamazepine 100 mg BID PO"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Carbamazepine 200 mg BID PO"
+              },
+              {
+                "text": "400 mg BID",
+                "orderSentence": "Carbamazepine 400 mg BID PO"
+              },
+              {
+                "text": "600 mg BID",
+                "orderSentence": "Carbamazepine 600 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg BID; titrate by 100-200 mg q3-7 days; target 400-1200 mg/day; use controlled-release formulation when available",
+            "orderSentence": "Carbamazepine 100 mg BID PO"
+          },
+          "contraindications": "HLA-B*1502 positive, bone marrow suppression, hepatic porphyria, concurrent MAOIs",
+          "monitoring": "CBC q2 weeks x 2 months then q3 months (agranulocytosis); sodium (hyponatremia); LFTs; drug level (4-12 mcg/mL); drug interactions (CYP3A4 inducer)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxcarbazepine",
+          "route": "PO",
+          "indication": "Trigeminal neuralgia (alternative to carbamazepine); fewer drug interactions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Oxcarbazepine 150 mg BID PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Oxcarbazepine 300 mg BID PO"
+              },
+              {
+                "text": "600 mg BID",
+                "orderSentence": "Oxcarbazepine 600 mg BID PO"
+              },
+              {
+                "text": "900 mg BID",
+                "orderSentence": "Oxcarbazepine 900 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg BID; titrate by 150-300 mg weekly; target 600-1800 mg/day",
+            "orderSentence": "Oxcarbazepine 150 mg BID PO"
+          },
+          "contraindications": "HLA-B*1502 positive, severe hyponatremia",
+          "monitoring": "Sodium q2 weeks initially then q3 months (higher hyponatremia risk than carbamazepine); fewer drug interactions than carbamazepine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Third-Line/Refractory Agents": [
+        {
+          "item": "Tapentadol ER",
+          "route": "PO",
+          "indication": "Refractory neuropathic pain; dual mechanism (mu-opioid agonist + NRI); NNT 10.2",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Tapentadol ER 50 mg BID PO"
+              },
+              {
+                "text": "100 mg BID",
+                "orderSentence": "Tapentadol ER 100 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Tapentadol ER 150 mg BID PO"
+              },
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Tapentadol ER 250 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; titrate by 50 mg BID q3 days; max 500 mg/day; do not crush ER tablets",
+            "orderSentence": "Tapentadol ER 50 mg BID PO"
+          },
+          "contraindications": "Severe respiratory depression, concurrent MAOIs, GI obstruction, substance use disorder",
+          "monitoring": "Respiratory rate, sedation, constipation; schedule II controlled; PDMP check; naloxone co-prescription",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buprenorphine transdermal (Butrans)",
+          "route": "Transdermal",
+          "indication": "Refractory neuropathic pain; partial mu-agonist; lower abuse potential; safer respiratory profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mcg/hr",
+                "orderSentence": "Buprenorphine transdermal (Butrans) 5 mcg/hr transdermal"
+              },
+              {
+                "text": "10 mcg/hr",
+                "orderSentence": "Buprenorphine transdermal (Butrans) 10 mcg/hr transdermal"
+              },
+              {
+                "text": "20 mcg/hr",
+                "orderSentence": "Buprenorphine transdermal (Butrans) 20 mcg/hr transdermal"
+              }
+            ],
+            "route": "transdermal",
+            "instructions": "Start 5 mcg/hr patch; apply q7 days; titrate q72h by one patch strength; max 20 mcg/hr",
+            "orderSentence": "Buprenorphine transdermal (Butrans) 5 mcg/hr transdermal"
+          },
+          "contraindications": "Severe respiratory depression, long QT, concurrent full opioid agonists (block effect)",
+          "monitoring": "Respiratory rate, QTc, sedation; ceiling effect on respiratory depression; partial agonist (precipitate withdrawal if on full agonist)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lamotrigine",
+          "route": "PO",
+          "indication": "Central neuropathic pain (post-stroke, SCI, HIV neuropathy); third-line for peripheral neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Lamotrigine 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Lamotrigine 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Lamotrigine 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Lamotrigine 200 mg daily PO"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Lamotrigine 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily x 2 weeks; then 50 mg daily x 2 weeks; then 100 mg daily; titrate slowly to 200-400 mg/day; halve titration rate with valproate",
+            "orderSentence": "Lamotrigine 25 mg daily PO"
+          },
+          "contraindications": "SJS/TEN risk (slow titration mandatory), hepatic impairment",
+          "monitoring": "Rash (discontinue immediately if suspected SJS); very slow titration mandatory; therapeutic range 3-14 mcg/mL for seizures (pain target uncertain)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "Refractory peripheral neuropathic pain; oral sodium channel blocker; evidence limited",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg TID",
+                "orderSentence": "Mexiletine 150 mg TID PO"
+              },
+              {
+                "text": "200 mg TID",
+                "orderSentence": "Mexiletine 200 mg TID PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Mexiletine 300 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg daily with food; titrate by 150 mg q3 days; target 150-300 mg TID; max 1200 mg/day",
+            "orderSentence": "Mexiletine 150 mg TID PO"
+          },
+          "contraindications": "Cardiac arrhythmia, second/third-degree heart block, cardiogenic shock",
+          "monitoring": "ECG before initiation and with dose changes; GI side effects common; hepatic function; drug interactions with CYP1A2 inhibitors",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Methadone",
+          "route": "PO",
+          "indication": "Refractory neuropathic pain; NMDA antagonist properties; long-acting; low cost",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg BID",
+                "orderSentence": "Methadone 2.5 mg BID PO"
+              },
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Methadone 5 mg BID PO"
+              },
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Methadone 10 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5 mg BID-TID; titrate slowly q5-7 days; highly variable pharmacokinetics; specialist prescribing recommended",
+            "orderSentence": "Methadone 2.5 mg BID PO"
+          },
+          "contraindications": "QTc >500 ms, severe respiratory depression, concurrent benzodiazepines (relative), substance use disorder",
+          "monitoring": "ECG at baseline, 30 days, annually (QTc); respiratory rate; variable half-life (8-59h) requires careful titration; deaths from accumulation; PDMP check",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxycodone CR (last resort)",
+          "route": "PO",
+          "indication": "Severe refractory neuropathic pain failing all other options; documented risk assessment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Oxycodone CR (last resort) 10 mg BID PO"
+              },
+              {
+                "text": "20 mg BID",
+                "orderSentence": "Oxycodone CR (last resort) 20 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg BID; lowest effective dose; re-evaluate q1-3 months; mandatory opioid agreement; combine with non-opioid regimen",
+            "orderSentence": "Oxycodone CR (last resort) 10 mg BID PO"
+          },
+          "contraindications": "Active substance use disorder, concurrent benzodiazepines, untreated sleep apnea",
+          "monitoring": "PDMP check q3 months; UDS q3-6 months; functional assessment; naloxone co-prescription mandatory; opioid agreement mandatory; document risk-benefit at each visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Topical Agents": [
+        {
+          "item": "Lidocaine 5% patch (Lidoderm)",
+          "route": "Topical",
+          "indication": "Localized peripheral neuropathic pain; first-line topical; safe in elderly and polypharmacy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches",
+                "orderSentence": "Lidocaine 5% patch (Lidoderm) 1-3 patches topical"
+              }
+            ],
+            "route": "topical",
+            "instructions": "Apply up to 3 patches to painful area; 12 hours on, 12 hours off; may cut to fit; avoid on broken skin",
+            "orderSentence": "Lidocaine 5% patch (Lidoderm) 1-3 patches topical"
+          },
+          "contraindications": "Allergy to local anesthetics; broken skin at application site",
+          "monitoring": "Local skin irritation; minimal systemic absorption; safe in elderly; no significant drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Capsaicin 0.075% cream",
+          "route": "Topical",
+          "indication": "Localized neuropathic pain; OTC option; depletes substance P",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply QID",
+                "orderSentence": "Capsaicin 0.075% cream Apply QID topical"
+              }
+            ],
+            "route": "topical",
+            "instructions": "Apply thin layer to painful area 3-4 times daily; burning sensation decreases with regular use over 1-2 weeks; wash hands after application",
+            "orderSentence": "Capsaicin 0.075% cream Apply QID topical"
+          },
+          "contraindications": "Allergy to capsaicin; open wounds",
+          "monitoring": "Application-site burning (expected first 1-2 weeks); avoid mucous membranes and eyes; use gloves",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Compounding cream (gabapentin/ketamine/lidocaine)",
+          "route": "Topical",
+          "indication": "Localized neuropathic pain refractory to single-agent topicals; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Apply BID-TID",
+                "orderSentence": "Compounding cream (gabapentin/ketamine/lidocaine) Apply BID-TID topical"
+              }
+            ],
+            "route": "topical",
+            "instructions": "Apply to affected area BID-TID; formulation varies by compounding pharmacy; typical: gabapentin 6%/ketamine 10%/lidocaine 5%",
+            "orderSentence": "Compounding cream (gabapentin/ketamine/lidocaine) Apply BID-TID topical"
+          },
+          "contraindications": "Allergy to components",
+          "monitoring": "Local irritation; limited systemic absorption; insurance coverage often denied; evidence base limited",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Interventional Therapies": [
+        {
+          "item": "Spinal cord stimulation (SCS)",
+          "route": "Implant",
+          "indication": "CRPS, failed back surgery syndrome, painful diabetic neuropathy (FDA approved); refractory to >=2 pharmacologic agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Spinal cord stimulation (SCS) N/A implant"
+              }
+            ],
+            "route": "implant",
+            "instructions": "Trial period (5-7 days) followed by permanent implant if >=50% pain relief; multiple waveform options (tonic, burst, HF10, DTM)",
+            "orderSentence": "Spinal cord stimulation (SCS) N/A implant"
+          },
+          "contraindications": "Active infection, coagulopathy, psychiatric instability, patient unable to manage device",
+          "monitoring": "Pain relief (NRS), functional status, device interrogation q6-12 months; trial success defined as >=50% pain reduction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dorsal root ganglion (DRG) stimulation",
+          "route": "Implant",
+          "indication": "CRPS type I/II, focal neuropathic pain (groin, foot, knee); superior to SCS for focal pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Dorsal root ganglion (DRG) stimulation N/A implant"
+              }
+            ],
+            "route": "implant",
+            "instructions": "Trial period followed by permanent implant; targets specific DRG levels",
+            "orderSentence": "Dorsal root ganglion (DRG) stimulation N/A implant"
+          },
+          "contraindications": "Active infection, coagulopathy; not MRI conditional for all systems",
+          "monitoring": "Pain scores, functional assessment, device checks; higher precision for focal pain vs. traditional SCS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peripheral nerve stimulation (PNS)",
+          "route": "Implant",
+          "indication": "Focal peripheral nerve injury pain; post-surgical neuropathic pain; occipital neuralgia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Peripheral nerve stimulation (PNS) N/A implant"
+              }
+            ],
+            "route": "implant",
+            "instructions": "Percutaneous or surgical lead placement; trial then permanent; 60-day temporary PNS systems available",
+            "orderSentence": "Peripheral nerve stimulation (PNS) N/A implant"
+          },
+          "contraindications": "Active infection, coagulopathy",
+          "monitoring": "Pain relief, functional status; newer percutaneous systems allow office-based trials",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal drug delivery (ITDD)",
+          "route": "Implant",
+          "indication": "Severe refractory neuropathic pain; failed SCS or not a candidate; cancer-related neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Intrathecal drug delivery (ITDD) N/A implant"
+              }
+            ],
+            "route": "implant",
+            "instructions": "Intrathecal trial (bolus or catheter) before permanent pump; ziconotide (first-line intrathecal for neuropathic pain); morphine/hydromorphone (second-line); baclofen for spasticity-related pain",
+            "orderSentence": "Intrathecal drug delivery (ITDD) N/A implant"
+          },
+          "contraindications": "Active infection, coagulopathy, CSF obstruction, psychosis (ziconotide)",
+          "monitoring": "Pump refills q1-6 months; drug levels; infection surveillance; catheter integrity; ziconotide: CK levels, psychiatric symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peripheral nerve block (diagnostic/therapeutic)",
+          "route": "Injection",
+          "indication": "Focal peripheral neuropathic pain; diagnostic localization; bridge during medication titration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Peripheral nerve block (diagnostic/therapeutic) N/A injection"
+              }
+            ],
+            "route": "injection",
+            "instructions": "Ultrasound-guided; bupivacaine 0.25-0.5% with or without dexamethasone; repeat q2-4 weeks if effective",
+            "orderSentence": "Peripheral nerve block (diagnostic/therapeutic) N/A injection"
+          },
+          "contraindications": "Allergy to local anesthetics, infection at site, coagulopathy",
+          "monitoring": "Pain relief duration; infection signs; motor block (transient); nerve injury (rare)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Central Pain Syndrome Treatments": [
+        {
+          "item": "Lamotrigine (central pain)",
+          "route": "PO",
+          "indication": "Central post-stroke pain (first-line); SCI pain; NNT 5.9 for central pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Lamotrigine (central pain) 25 mg daily PO"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Lamotrigine (central pain) 50 mg daily PO"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Lamotrigine (central pain) 100 mg daily PO"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Lamotrigine (central pain) 200 mg daily PO"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Lamotrigine (central pain) 400 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily x 2 weeks; then 50 mg daily x 2 weeks; then 100 mg daily; titrate slowly to 200-400 mg/day; halve titration rate with valproate",
+            "orderSentence": "Lamotrigine (central pain) 25 mg daily PO"
+          },
+          "contraindications": "SJS/TEN risk (slow titration mandatory); hepatic impairment",
+          "monitoring": "Rash (discontinue immediately if suspected SJS); very slow titration mandatory; therapeutic range 3-14 mcg/mL for seizures (pain target uncertain)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline (central pain)",
+          "route": "PO",
+          "indication": "Central post-stroke pain; SCI pain; first-line TCA for central pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline (central pain) 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline (central pain) 25 mg qHS PO"
+              },
+              {
+                "text": "50 mg qHS",
+                "orderSentence": "Amitriptyline (central pain) 50 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Amitriptyline (central pain) 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; titrate by 10-25 mg q1-2 weeks; target 50-75 mg qHS; max 150 mg/day; give at bedtime",
+            "orderSentence": "Amitriptyline (central pain) 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction defects, recent MI, concurrent MAOIs, urinary retention, narrow-angle glaucoma, age >65 (use nortriptyline instead)",
+          "monitoring": "ECG before and after dose changes (QTc); anticholinergic effects (dry mouth, constipation, urinary retention); weight gain; sedation; fall risk in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin (SCI pain)",
+          "route": "PO",
+          "indication": "Spinal cord injury pain (Level A evidence); central neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin (SCI pain) 75 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin (SCI pain) 150 mg BID PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Pregabalin (SCI pain) 300 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; titrate to 150 mg BID at week 1; max 300 mg BID (600 mg/day); reduce if CrCl <60",
+            "orderSentence": "Pregabalin (SCI pain) 75 mg BID PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose); schedule V controlled substance",
+          "monitoring": "Sedation, dizziness, weight gain, peripheral edema; suicidal ideation (FDA warning); renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin (SCI pain)",
+          "route": "PO",
+          "indication": "Spinal cord injury pain; central neuropathic pain; alternative to pregabalin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin (SCI pain) 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin (SCI pain) 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin (SCI pain) 600 mg TID PO"
+              },
+              {
+                "text": "900 mg TID",
+                "orderSentence": "Gabapentin (SCI pain) 900 mg TID PO"
+              },
+              {
+                "text": "1200 mg TID",
+                "orderSentence": "Gabapentin (SCI pain) 1200 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-7 days; target 1800-3600 mg/day in 3 divided doses; reduce dose if CrCl <60",
+            "orderSentence": "Gabapentin (SCI pain) 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (adjust dose); history of substance use (abuse potential)",
+          "monitoring": "Sedation, dizziness, peripheral edema, renal function; suicidal ideation (FDA warning)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nabiximols (Sativex) or medical cannabis (where legal)",
+          "route": "PO/Spray",
+          "indication": "MS-related central neuropathic pain; refractory SCI pain; jurisdiction-dependent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Varies",
+                "orderSentence": "Nabiximols (Sativex) or medical cannabis (where legal) Varies oromucosal spray or PO"
+              }
+            ],
+            "route": "oromucosal spray or PO",
+            "instructions": "Nabiximols: start 1 spray BID; titrate by 1 spray/day; max 12 sprays/day; or oral cannabis per state protocol",
+            "orderSentence": "Nabiximols (Sativex) or medical cannabis (where legal) Varies oromucosal spray or PO"
+          },
+          "contraindications": "Psychosis, unstable cardiac disease, pregnancy, age <25 (brain development)",
+          "monitoring": "Psychiatric symptoms, cognitive function, dizziness; legal status varies; limited evidence base; not FDA-approved for pain in US",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Pain medicine specialist",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neurology",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Psychiatry/Psychology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Physical therapy",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Addiction medicine",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Interventional pain specialist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Pain diary (NRS, triggers, functional impact)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Tracks treatment response; identifies patterns; guides medication adjustment"
+        },
+        {
+          "item": "Set realistic expectations: goal is >=30% pain reduction and improved function, not zero pain",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Prevents treatment frustration; aligns goals with achievable outcomes"
+        },
+        {
+          "item": "Medication adherence: take scheduled medications regularly even when pain is low",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Preventive effect requires steady-state levels; PRN use alone is less effective"
+        },
+        {
+          "item": "Do not abruptly stop gabapentinoids, SNRIs, or TCAs (taper required)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Withdrawal seizures (gabapentinoids); discontinuation syndrome (SNRIs); cardiac risk (TCAs)"
+        },
+        {
+          "item": "Opioid safety counseling: store securely, no sharing, disposal of unused medication, naloxone training",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Prevent diversion, accidental ingestion, overdose death; mandatory for opioid prescriptions"
+        },
+        {
+          "item": "Naloxone (Narcan) co-prescription: obtain and keep accessible if receiving any opioid",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Reverses opioid overdose; FDA recommends co-prescribing with all opioid prescriptions"
+        },
+        {
+          "item": "Avoid alcohol and sedatives with CNS-depressant medications",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Additive CNS depression with gabapentinoids, opioids, TCAs; respiratory depression risk"
+        },
+        {
+          "item": "Return to ED for sudden severe pain escalation, new weakness, bowel/bladder dysfunction",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "May indicate new neurologic emergency (cord compression, cauda equina)"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (walking, swimming, cycling) 30 min x 5 days/week",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "rationale": "Level A evidence for pain reduction; improves endogenous pain modulation; reduces comorbid depression"
+        },
+        {
+          "item": "Cognitive behavioral therapy (CBT) for chronic pain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "rationale": "Level A evidence as adjunct; reduces pain catastrophizing; improves coping and function"
+        },
+        {
+          "item": "Sleep hygiene optimization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Poor sleep amplifies pain perception; sleep disorders common in chronic pain; may reduce medication needs"
+        },
+        {
+          "item": "Glycemic control optimization (diabetic neuropathic pain)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Prevents neuropathy progression; HbA1c <7% associated with reduced pain severity"
+        },
+        {
+          "item": "Smoking cessation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "rationale": "Smoking worsens neuropathy and pain perception; impairs microvascular circulation"
+        },
+        {
+          "item": "Weight management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "rationale": "Reduces mechanical nerve compression; improves metabolic syndrome; enhances mobility"
+        },
+        {
+          "item": "Mindfulness-based stress reduction (MBSR)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "rationale": "Moderate evidence for chronic pain; reduces pain unpleasantness; complements pharmacotherapy"
+        }
+      ],
+      "Combination Therapy Strategies": [
+        {
+          "item": "Gabapentinoid + SNRI (e.g., gabapentin + duloxetine)",
+          "evidence": "Level A; superior to monotherapy in COMBO-DN trial",
+          "monitoring notes": "Additive sedation; monitor for dizziness, falls"
+        },
+        {
+          "item": "Gabapentinoid + TCA (e.g., pregabalin + nortriptyline)",
+          "evidence": "Level B; effective but requires cardiac monitoring",
+          "monitoring notes": "ECG at baseline and with TCA dose changes; additive sedation and anticholinergic effects"
+        },
+        {
+          "item": "TCA + topical (e.g., amitriptyline + lidocaine patch)",
+          "evidence": "Level C; reasonable for localized pain with sleep disruption",
+          "monitoring notes": "Minimal systemic interaction; monitor anticholinergic burden"
+        },
+        {
+          "item": "SNRI + topical (e.g., duloxetine + capsaicin 8% patch)",
+          "evidence": "Level C; practical combination for localized + diffuse pain",
+          "monitoring notes": "Minimal interaction; SNRI provides systemic coverage"
+        },
+        {
+          "item": "Gabapentinoid + tramadol",
+          "evidence": "Level B; short-term combination data",
+          "monitoring notes": "Seizure threshold lowering (additive); sedation; limit tramadol duration"
+        },
+        {
+          "item": "Do NOT combine: TCA + SNRI",
+          "evidence": "Contraindicated; serotonin syndrome risk; excessive norepinephrine effect",
+          "monitoring notes": "If switching, allow adequate washout period"
+        }
+      ],
+      "Deprescribing Guidance": [
+        {
+          "item": "Ineffective medication (no response after adequate trial at therapeutic dose)",
+          "strategy": "Taper and discontinue; document lack of efficacy",
+          "timeline": "Gabapentinoids: taper over 1-2 weeks; SNRIs: taper over 2-4 weeks; TCAs: taper over 2-4 weeks"
+        },
+        {
+          "item": "Opioid reduction for stable chronic neuropathic pain",
+          "strategy": "Optimize non-opioid regimen first; reduce opioid by 10% of total daily dose q2-4 weeks",
+          "timeline": "10% reduction q2-4 weeks; slower if withdrawal symptoms; pause taper if pain significantly worsens"
+        },
+        {
+          "item": "Opioid rotation (inadequate relief or intolerable side effects)",
+          "strategy": "Calculate morphine milligram equivalents (MME); convert at 50-75% of equianalgesic dose; cross-tolerance incomplete",
+          "timeline": "Complete transition over 3-7 days; close monitoring during rotation"
+        },
+        {
+          "item": "Polypharmacy reduction (patient on >3 pain medications)",
+          "strategy": "Eliminate least effective agent first; maintain agents with dual benefit (e.g., SNRI for pain + depression)",
+          "timeline": "One change at a time; reassess in 2-4 weeks before next change"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Nociceptive pain (inflammatory, mechanical)",
+      "features": "Aching/throbbing quality; localized to joint/tissue; responds to NSAIDs; no burning/electric quality",
+      "tests": "DN4 <4; responds to anti-inflammatory agents; normal nerve exam"
+    },
+    {
+      "diagnosis": "Fibromyalgia",
+      "features": "Widespread pain (not dermatomal); fatigue; cognitive dysfunction; tender points; no nerve distribution",
+      "tests": "ACR criteria; DN4 often <4; normal NCS/EMG; normal neurologic exam"
+    },
+    {
+      "diagnosis": "Vascular pain (ischemic)",
+      "features": "Claudication pattern; pallor/cyanosis; diminished pulses; worsens with exertion",
+      "tests": "ABI (ankle-brachial index); vascular duplex; angiography"
+    },
+    {
+      "diagnosis": "Radiculopathy",
+      "features": "Dermatomal distribution; worsens with Valsalva; positive straight leg raise; motor/reflex changes",
+      "tests": "MRI spine; EMG/NCS; dermatomal pain pattern"
+    },
+    {
+      "diagnosis": "Complex regional pain syndrome (CRPS)",
+      "features": "Limb edema, color/temperature changes, trophic changes; disproportionate to inciting event; Budapest criteria",
+      "tests": "Budapest diagnostic criteria; bone scan (early); no specific lab test"
+    },
+    {
+      "diagnosis": "Psychogenic pain / somatic symptom disorder",
+      "features": "Non-anatomical distribution; inconsistent exam; significant psychosocial stressors; does not follow neurologic patterns",
+      "tests": "Psychiatric evaluation; normal investigations; DN4 <4; diagnosis of exclusion"
+    },
+    {
+      "diagnosis": "Myofascial pain",
+      "features": "Trigger points; taut bands; referred pain patterns; responds to trigger point injection",
+      "tests": "Physical examination; trigger point identification; normal NCS/EMG"
+    },
+    {
+      "diagnosis": "Phantom limb pain",
+      "features": "Post-amputation; pain felt in absent limb; burning/cramping quality",
+      "tests": "History of amputation; clinical diagnosis"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "NeuPSIG pharmacotherapy guidelines: gabapentinoids, SNRIs, TCAs as first-line",
+      "evidenceLevel": "Strong recommendation; Level A",
+      "source": "[Finnerup NB et al. Lancet Neurol 2015;14(2):162-173](https://pubmed.ncbi.nlm.nih.gov/25575710/)"
+    },
+    {
+      "recommendation": "EFNS guidelines on neuropathic pain pharmacotherapy",
+      "evidenceLevel": "Class I-II evidence",
+      "source": "[Attal N et al. Eur J Neurol 2010;17(9):1113-e88](https://pubmed.ncbi.nlm.nih.gov/20402746/)"
+    },
+    {
+      "recommendation": "AAN guidelines for painful diabetic neuropathy treatment",
+      "evidenceLevel": "Level A-B recommendations",
+      "source": "[Bril V et al. Neurology 2011;76(20):1758-1765](https://pubmed.ncbi.nlm.nih.gov/21482920/)"
+    },
+    {
+      "recommendation": "Combination pharmacotherapy for neuropathic pain",
+      "evidenceLevel": "Level A for gabapentinoid + SNRI",
+      "source": "[Gilron I et al. N Engl J Med 2005;352(13):1324-1334](https://pubmed.ncbi.nlm.nih.gov/15800228/)"
+    },
+    {
+      "recommendation": "Canadian guidelines for neuropathic pain management",
+      "evidenceLevel": "Consensus guidelines",
+      "source": "[Moulin DE et al. Pain Res Manag 2014;19(6):328-335](https://pubmed.ncbi.nlm.nih.gov/25479151/)"
+    },
+    {
+      "recommendation": "Gabapentin for neuropathic pain in adults (Cochrane)",
+      "evidenceLevel": "NNT 6.3 for >=50% pain relief",
+      "source": "[Wiffen PJ et al. Cochrane Database Syst Rev 2017;6:CD007938](https://pubmed.ncbi.nlm.nih.gov/28597471/)"
+    },
+    {
+      "recommendation": "Duloxetine for painful neuropathy (Cochrane)",
+      "evidenceLevel": "NNT 6.4 for >=50% pain relief",
+      "source": "[Lunn MP et al. Cochrane Database Syst Rev 2014;1:CD007115](https://pubmed.ncbi.nlm.nih.gov/24385423/)"
+    },
+    {
+      "recommendation": "Pregabalin for neuropathic pain (Cochrane)",
+      "evidenceLevel": "NNT 7.7 for diabetic neuropathy",
+      "source": "[Derry S et al. Cochrane Database Syst Rev 2019;1:CD007076](https://pubmed.ncbi.nlm.nih.gov/30673120/)"
+    },
+    {
+      "recommendation": "Lamotrigine for central post-stroke pain",
+      "evidenceLevel": "Moderate evidence",
+      "source": "[Vestergaard K et al. Neurology 2001;56(2):184-190](https://pubmed.ncbi.nlm.nih.gov/11160953/)"
+    },
+    {
+      "recommendation": "Spinal cord stimulation for diabetic neuropathic pain",
+      "evidenceLevel": "RCT evidence; superior to best medical therapy",
+      "source": "[de Vos CC et al. Pain 2014;155(11):2426-2431](https://pubmed.ncbi.nlm.nih.gov/25180016/)"
+    },
+    {
+      "recommendation": "Capsaicin 8% patch for neuropathic pain (Cochrane)",
+      "evidenceLevel": "NNT 10.6 for PHN",
+      "source": "[Derry S et al. Cochrane Database Syst Rev 2017;1:CD007393](https://pubmed.ncbi.nlm.nih.gov/28085183/)"
+    },
+    {
+      "recommendation": "Opioid guidelines for chronic non-cancer pain (CDC 2022)",
+      "evidenceLevel": "Guideline recommendation",
+      "source": "[Dowell D et al. MMWR Recomm Rep 2022;71(3):1-95](https://pubmed.ncbi.nlm.nih.gov/36327391/)"
+    },
+    {
+      "recommendation": "IV lidocaine for neuropathic pain",
+      "evidenceLevel": "Moderate evidence",
+      "source": "[Moulin DE et al. Can J Anaesth 2019;66(7):820-827](https://pubmed.ncbi.nlm.nih.gov/31098961/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain intensity (NRS 0-10)",
+      "ED": "STAT",
+      "HOSP": "q4-8h",
+      "OPD": "Every visit",
+      "ICU": "q4h",
+      "frequency": "Per setting",
+      "action": "Adjust regimen; consider escalation or combination therapy"
+    },
+    {
+      "item": "Functional assessment (BPI interference, ADL status)",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Every visit",
+      "ICU": "-",
+      "frequency": "q1-3 months",
+      "action": "Reassess treatment goals; consider rehabilitation referral"
+    },
+    {
+      "item": "PDMP check",
+      "ED": "ROUTINE",
+      "HOSP": "At admission",
+      "OPD": "Every visit with controlled substance",
+      "ICU": "ROUTINE",
+      "frequency": "Before each controlled substance prescription",
+      "action": "Address directly; consider addiction medicine referral"
+    },
+    {
+      "item": "Urine drug screen",
+      "ED": "ROUTINE",
+      "HOSP": "At admission if on opioids",
+      "OPD": "q3-6 months if on opioids",
+      "ICU": "ROUTINE",
+      "frequency": "q3-6 months for opioid patients",
+      "action": "Discuss discrepancies; adjust treatment plan; consider taper"
+    },
+    {
+      "item": "Sedation assessment (Pasero scale or similar)",
+      "ED": "STAT",
+      "HOSP": "q4h if on opioids",
+      "OPD": "Every visit",
+      "ICU": "q2h",
+      "frequency": "Per setting",
+      "action": "Hold opioid dose; reduce; naloxone if severe"
+    },
+    {
+      "item": "Renal function (eGFR)",
+      "ED": "ROUTINE",
+      "HOSP": "Weekly",
+      "OPD": "q6-12 months",
+      "ICU": "ROUTINE",
+      "frequency": "Based on agent",
+      "action": "Adjust doses per renal dosing guidelines"
+    },
+    {
+      "item": "ECG (QTc)",
+      "ED": "STAT",
+      "HOSP": "After TCA dose change",
+      "OPD": "At TCA initiation and dose changes; q6-12 months on methadone",
+      "ICU": "STAT",
+      "frequency": "Per agent",
+      "action": "Reduce dose or switch agent if QTc prolonged"
+    },
+    {
+      "item": "CBC (if on carbamazepine/oxcarbazepine)",
+      "ED": "-",
+      "HOSP": "Weekly x 2 months",
+      "OPD": "q3 months",
+      "ICU": "-",
+      "frequency": "q3 months after initial period",
+      "action": "Hold and consult hematology if WBC <3000 or ANC <1500"
+    },
+    {
+      "item": "Sodium (if on carbamazepine, oxcarbazepine, or SNRIs)",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "q3 months",
+      "ICU": "-",
+      "frequency": "q3 months",
+      "action": "Reduce dose or switch agent; fluid restriction if mild"
+    },
+    {
+      "item": "Weight and metabolic parameters (pregabalin, TCAs)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "q3-6 months",
+      "ICU": "-",
+      "frequency": "q3-6 months",
+      "action": "Dietary counseling; consider switch if >7% weight gain"
+    },
+    {
+      "item": "Suicidal ideation screening (PHQ-9 item 9)",
+      "ED": "ROUTINE",
+      "HOSP": "Weekly",
+      "OPD": "Every visit",
+      "ICU": "ROUTINE",
+      "frequency": "Every encounter",
+      "action": "Psychiatric referral; safety plan; adjust medications"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Acute exacerbation managed; pain at tolerable level; no new neurologic deficits; oral medications effective; reliable follow-up within 1-2 weeks"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Pain crisis unresponsive to oral medications; IV infusion required (lidocaine, ketamine); new neurologic deficits requiring workup; suicidal ideation related to pain; opioid complications"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "IV ketamine infusion requiring close monitoring; hemodynamic instability; respiratory depression from opioids; severe autonomic instability"
+    },
+    {
+      "disposition": "Pain clinic referral",
+      "criteria": "Chronic neuropathic pain failing >=2 first-line agents; interventional procedure candidate; complex medication management; opioid taper guidance"
+    },
+    {
+      "disposition": "Outpatient neurology follow-up",
+      "criteria": "New neuropathic pain diagnosis; treatment optimization; neuropathy characterization needed; central pain syndrome management"
+    },
+    {
+      "disposition": "Addiction medicine referral",
+      "criteria": "Opioid use disorder identified; aberrant drug behaviors; PDMP or UDS concerns; buprenorphine transition candidacy"
+    },
+    {
+      "disposition": "Physical therapy/rehabilitation",
+      "criteria": "Functional limitation from pain; desensitization therapy; TENS trial; graded exercise program"
+    }
+  ]
+}

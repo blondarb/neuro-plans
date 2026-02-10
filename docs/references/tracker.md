@@ -7,9 +7,9 @@ title: Template Tracker
 ## Project Tracker
 
 **Created:** January 15, 2026
-**Last Updated:** January 30, 2026
+**Last Updated:** February 9, 2026
 **Target:** 150+ validated templates
-**Current Status:** 102 templates approved
+**Current Status:** 134 templates approved
 
 ---
 
@@ -35,9 +35,9 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Breakthrough Seizure (Known Epilepsy) | G40.909 | 🎯 OPD | Approved |
 | ✅ | Non-Convulsive Status Epilepticus (NCSE) | G41.0 | 🎯 OPD | Approved |
 | ✅ | Alcohol Withdrawal Seizure | G40.509 | 🎯 OPD | Approved |
-| ⬜ | Eclampsia/Seizure in Pregnancy | O15.9 | 🎯 OPD | Special ASM considerations |
-| ⬜ | Drug-Resistant Epilepsy | G40.919 | 🎯 OPD | Subspecialty referral focus |
-| ⬜ | Epilepsy Evaluation | G40.909 | 🎯 OPD | General workup |
+| ✅ | Eclampsia/Seizure in Pregnancy | O15.9 | 🎯 OPD | Approved |
+| ✅ | Drug-Resistant Epilepsy | G40.919 | 🎯 OPD | Approved |
+| ✅ | Epilepsy Chronic Management | G40.909 | 🎯 OPD | Approved |
 
 ### Stroke & Cerebrovascular
 
@@ -52,15 +52,16 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Posterior Reversible Encephalopathy (PRES) | F93.49 | 🎯 OPD | Approved |
 | ✅ | Reversible Cerebral Vasoconstriction (RCVS) | I67.841 | 🎯 OPD | Thunderclap headache DDx |
 | ✅ | CNS Vasculitis | I67.7 | 🎯 OPD | Rare, comprehensive workup |
-| ⬜ | Moyamoya Disease | I67.5 | 🎯 OPD | Rare |
-| ⬜ | Post-Stroke Management | I69.30 | 🎯 OPD | Secondary prevention |
-| ⬜ | Carotid Stenosis | SI65.29 | 🎯 OPD | Surgical evaluation |
+| ✅ | Moyamoya Disease | I67.5 | 🎯 OPD | Approved |
+| ✅ | Post-Stroke Management | I69.30 | 🎯 OPD | Approved |
+| ✅ | Carotid Stenosis | I65.29 | 🎯 OPD | Approved |
 
 ### Headache
 
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
-| ⬜ | Headache - Cluster Evaluation | R51.9 | 🎯 OPD | Broad DDx approach |
+| ✅ | Headache Evaluation | R51.9 | 🎯 OPD | Approved |
+| ✅ | Headache, Unspecified | R51.9 | 🎯 OPD | Approved |
 | ✅ | Migraine (without Aura) | G43.909 | 🎯 OPD | Approved |
 | ✅ | Migraine with Aura | G43.109 | 🎯 OPD | Approved |
 | ✅ | Chronic Migraine | G43.709 | 🎯 OPD | Approved |
@@ -72,7 +73,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Low Pressure Headache / SIH | G96.00 | 🎯 OPD | Approved |
 | ✅ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Approved |
 | ⬜ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Refractory cases |
-| ⬜ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | SAH, RCVS, other emergencies |
+| ✅ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | Approved |
 | ✅ | Giant Cell Arteritis (GCA) | M31.6 | 🎯 OPD | Approved |
 
 ### Demyelinating Diseases
@@ -111,16 +112,16 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
 | ✅ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Approved |
 | ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
-| ⬜ | Botulism | A05.1 | 🎯 OPD | Rare but critical |
+| ✅ | Botulism | A05.1 | 🎯 OPD | Approved |
 | ✅ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Approved |
 | ⬜ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Growing population |
 | ⬜ | Ulnar Neuropathy | G56.20 | 🎯 OPD | Entrapment |
-| ⬜ | Peroneal Neuropathy | F57.30 | 🎯 OPD | Foot drop |
+| ✅ | Peroneal Neuropathy | G57.30 | 🎯 OPD | Approved |
 | ⬜ | Multifocal Motor Neuropathy (MMN) | G61.82 | 🎯 OPD | GBS mimic |
 | ⬜ | Hereditary Neuropathy (CMT) | G60.0 | 🎯 OPD | Genetic |
 | ⬜ | Vasculitic Neuropathy | G63 | 🎯 OPD | Mononeuritis multiplex |
 | ⬜ | Autonomic Neuropathy | G90.09 | 🎯 OPD | Orthostatic, GI, cardiac |
-| ⬜ | Plexopathy | G54.0 | 🎯 OPD | Brachial/lumbosacral |
+| ✅ | Plexopathy | G54.0 | 🎯 OPD | Approved |
 
 ### Movement Disorders
 
@@ -140,7 +141,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Approved |
 | ✅ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Approved |
 | ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
-| ⬜ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Tic disorders |
+| ✅ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Approved |
 | ✅ | Ataxia Evaluation | R27.0 | 🎯 OPD | Approved |
 | ⬜ | Chorea Evaluation | G25.5 | 🎯 OPD | DDx approach |
 | ⬜ | Gait Disorder Evaluation | R26.9 | 🎯 OPD | Multifactorial |
@@ -173,9 +174,9 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Viral Meningitis | A87.9 | 🎯 OPD | Supportive care focus |
 | ✅ | Fungal Meningitis | G02 | 🎯 OPD | Approved |
 | ✅ | TB Meningitis | A17.0 | 🎯 OPD | Approved |
-| ⬜ | Neurocysticercosis | B69.0 | 🎯 OPD | Endemic areas |
+| ✅ | Neurocysticercosis | B69.0 | 🎯 OPD | Approved |
 | ✅ | Brain Abscess | G06.0 | 🎯 OPD | Neurosurgery consult |
-| ⬜ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | AIDS dementia complex |
+| ✅ | HIV-Associated Neurocognitive Disorder | B20 | 🎯 OPD | Approved |
 | ✅ | Neurosyphilis | A52.2 | 🎯 OPD | Approved |
 | ✅ | Lyme Neuroborreliosis | A69.22 | 🎯 OPD | Approved |
 
@@ -208,10 +209,10 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Status | Diagnosis | ICD-10 | Priority | Notes |
 |--------|-----------|--------|----------|-------|
 | ✅ | Neurosarcoidosis | D86.82 | 🎯 OPD | Approved |
-| ⬜ | Susac Syndrome | H35.89 | 🎯 OPD | Rare |
-| ⬜ | Neuro-Behcet's | M35.2 | 🎯 OPD | Rare |
+| ✅ | Susac Syndrome | H35.89 | 🎯 OPD | Approved |
+| ✅ | Neuro-Behcet's | M35.2 | 🎯 OPD | Approved |
 | ✅ | Stiff Person Syndrome | G25.82 | 🎯 OPD | Approved |
-| ⬜ | Hashimoto's Encephalopathy (SREAT) | E06.3 | 🎯 OPD | Diagnosis of exclusion |
+| ✅ | Hashimoto's Encephalopathy (SREAT) | E06.3 | 🎯 OPD | Approved |
 
 ### Functional & Psychiatric
 
@@ -241,16 +242,29 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Bell's Palsy | G51.0 | 🎯 OPD | Approved |
 | ✅ | Wernicke Encephalopathy | E51.2 | 🎯 OPD | Approved |
 | ⬜ | Horner Syndrome | G90.2 | 🎯 OPD | Localization |
-| ⬜ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Central vs peripheral |
+| ✅ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Approved |
 | ✅ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Approved |
 | ⬜ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | ED evaluation |
 | ⬜ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Emerging area |
-| ⬜ | Sleep Apnea (Neurologic Aspects) | G47.33 | 🎯 OPD | Usually sleep medicine |
+| ✅ | Obstructive Sleep Apnea (Neurologic) | G47.33 | 🎯 OPD | Approved |
+| ✅ | Idiopathic Hypersomnia | G47.11 | 🎯 OPD | Approved |
 | ✅ | Narcolepsy | G47.419 | 🎯 OPD | Approved |
-| ⬜ | Insomnia (Neurologic) | G47.00 | 🎯 OPD | Sleep medicine |
-| ⬜ | REM Sleep Behavior Disorder | G47.52 | 🎯 OPD | Often precedes PD |
-| ⬜ | Parasomnia | G47.50 | 🎯 OPD | Sleep medicine |
-| ⬜ | Tinnitus Evaluation | H93.19 | 🎯 OPD | Neuro perspective |
+| ✅ | Insomnia (Neurologic) | G47.00 | 🎯 OPD | Approved |
+| ✅ | REM Sleep Behavior Disorder | G47.52 | 🎯 OPD | Approved |
+| ✅ | Non-REM Parasomnias | G47.50 | 🎯 OPD | Approved |
+| ✅ | Tinnitus Evaluation | H93.19 | 🎯 OPD | Approved |
+| ✅ | Paresthesia / Numbness / Tingling | R20.2 | 🎯 OPD | Approved |
+| ✅ | Tremor, Unspecified | R25.1 | 🎯 OPD | Approved |
+
+### Autonomic & Pain Disorders
+
+| Status | Diagnosis | ICD-10 | Priority | Notes |
+|--------|-----------|--------|----------|-------|
+| ✅ | POTS (Postural Orthostatic Tachycardia Syndrome) | G90.A | 🎯 OPD | Approved |
+| ✅ | Neurogenic Orthostatic Hypotension | I95.1, G90.09 | 🎯 OPD | Approved |
+| ✅ | Occipital Neuralgia | M54.81 | 🎯 OPD | Approved |
+| ✅ | Complex Regional Pain Syndrome (CRPS) | G90.50 | 🎯 OPD | Approved |
+| ✅ | Neuropathic Pain Management | G89.29 | 🎯 OPD | Approved |
 
 ---
 
@@ -258,23 +272,24 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 
 | Category | Approved | To Build | Total |
 |----------|----------|----------|-------|
-| Seizure/Epilepsy | 5 | 3 | 8 |
-| Stroke/Cerebrovascular | 9 | 3 | 12 |
-| Headache | 12 | 2 | 14 |
+| Seizure/Epilepsy | 8 | 0 | 8 |
+| Stroke/Cerebrovascular | 12 | 0 | 12 |
+| Headache | 15 | 1 | 16 |
 | Demyelinating | 6 | 3 | 9 |
-| Neuromuscular | 17 | 11 | 28 |
-| Movement Disorders | 12 | 6 | 18 |
+| Neuromuscular | 20 | 7 | 27 |
+| Movement Disorders | 13 | 5 | 18 |
 | Dementia/Cognitive | 9 | 3 | 12 |
-| CNS Infections | 10 | 2 | 12 |
+| CNS Infections | 12 | 0 | 12 |
 | Neuro-oncology | 7 | 2 | 9 |
 | Spinal Cord | 2 | 3 | 5 |
-| Autoimmune/Inflammatory | 2 | 3 | 5 |
+| Autoimmune/Inflammatory | 4 | 0 | 4 |
 | Functional/Psychiatric | 2 | 2 | 4 |
 | Neurocritical Care | 4 | 1 | 5 |
-| Other/Miscellaneous | 6 | 9 | 15 |
-| **TOTAL** | **103** | **53** | **156** |
+| Other/Miscellaneous | 14 | 3 | 17 |
+| Autonomic & Pain | 5 | 0 | 5 |
+| **TOTAL** | **133** | **30** | **163** |
 
-**Note:** 103 approved diagnoses map to 102 unique plan files (Parkinson's Disease has separate Management and New Diagnosis plans in a single file pair).
+**Note:** 133 approved diagnoses plus Parkinson's Disease (separate Management and New Diagnosis plans) = 134 unique approved plan files.
 
 ---
 
@@ -384,36 +399,72 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 100 | Ataxia Evaluation | v1.1 | Jan 31, 2026 |
 | 101 | Primary CNS Lymphoma | v1.1 | Jan 31, 2026 |
 | 102 | Cervical Spondylotic Myelopathy | v1.1 | Jan 31, 2026 |
+| 103 | Drug-Resistant Epilepsy | v1.1 | Feb 2, 2026 |
+| 104 | Epilepsy Chronic Management | v1.1 | Feb 2, 2026 |
+| 105 | Eclampsia / Seizure in Pregnancy | v1.1 | Feb 2, 2026 |
+| 106 | Moyamoya Disease | v1.1 | Feb 2, 2026 |
+| 107 | Post-Stroke Management | v1.1 | Feb 2, 2026 |
+| 108 | Carotid Stenosis | v1.1 | Feb 2, 2026 |
+| 109 | Headache Evaluation | v1.1 | Feb 2, 2026 |
+| 110 | Thunderclap Headache Evaluation | v1.1 | Feb 2, 2026 |
+| 111 | Botulism | v1.1 | Feb 2, 2026 |
+| 112 | Peroneal Neuropathy | v1.1 | Feb 2, 2026 |
+| 113 | Plexopathy | v1.1 | Feb 2, 2026 |
+| 114 | Tics / Tourette Syndrome | v1.1 | Feb 2, 2026 |
+| 115 | Neurocysticercosis | v1.1 | Feb 2, 2026 |
+| 116 | HIV-Associated Neurocognitive Disorder | v1.1 | Feb 2, 2026 |
+| 117 | Susac Syndrome | v1.1 | Feb 2, 2026 |
+| 118 | Neuro-Behcet's Disease | v1.1 | Feb 2, 2026 |
+| 119 | Hashimoto's Encephalopathy | v1.1 | Feb 2, 2026 |
+| 120 | Nystagmus Evaluation | v1.1 | Feb 2, 2026 |
+| 121 | Tinnitus Evaluation | v1.1 | Feb 2, 2026 |
+| 122 | Paresthesia / Numbness / Tingling | v1.1 | Feb 2, 2026 |
+| 123 | Headache, Unspecified | v1.1 | Feb 2, 2026 |
+| 124 | Tremor, Unspecified | v1.1 | Feb 2, 2026 |
+| 125 | REM Sleep Behavior Disorder | v1.1 | Feb 7, 2026 |
+| 126 | Obstructive Sleep Apnea (Neurologic) | v1.1 | Feb 7, 2026 |
+| 127 | Insomnia (Neurological) | v1.1 | Feb 7, 2026 |
+| 128 | Idiopathic Hypersomnia | v1.1 | Feb 7, 2026 |
+| 129 | Non-REM Parasomnias | v1.1 | Feb 7, 2026 |
+| 130 | POTS | v1.1 | Feb 9, 2026 |
+| 131 | Neurogenic Orthostatic Hypotension | v1.1 | Feb 9, 2026 |
+| 132 | Occipital Neuralgia | v1.1 | Feb 9, 2026 |
+| 133 | Complex Regional Pain Syndrome (CRPS) | v1.1 | Feb 9, 2026 |
+| 134 | Neuropathic Pain Management | v1.1 | Feb 9, 2026 |
 
 ---
 
 ## NEXT PRIORITIES (Recommended Build Order)
 
-All Tier 1 and Tier 2 items from the original roadmap are now complete. Updated priorities:
+All original Tiers 1-13 are complete. 30 conditions remain. Updated priorities:
 
-### Tier 1: High-Impact Gaps
+### Tier 14A: High-Value Outpatient Gaps
 
-1. NMOSD (Neuromyelitis Optica) - distinct from MS, high-impact treatment decisions
-2. Cerebral Venous Thrombosis (CVT) - often missed, time-sensitive
-3. Giant Cell Arteritis (GCA) - vision-threatening emergency
-4. Functional Neurological Disorder (FND) - high-volume, growing area
-5. Non-Convulsive Status Epilepticus (NCSE) - often missed diagnosis
+1. Lumbar Stenosis — very common outpatient
+2. Ulnar Neuropathy — common entrapment
+3. Chemotherapy-Induced Neuropathy — growing population
+4. Parkinson's Disease - Motor Fluctuations — common management issue
+5. Delirium vs Dementia — high-volume ED/inpatient DDx
 
-### Tier 2: Common Outpatient
+### Tier 14B: Important Subspecialty Gaps
 
-6. Chronic Migraine - preventive therapy, CGRP agents
-7. Low Pressure Headache / SIH - post-LP, spontaneous
-8. Post-Concussion Syndrome - common
-9. Drug-Induced Parkinsonism - reversible, common
-10. Wilson's Disease - must-not-miss in young movement disorder
+6. New Daily Persistent Headache — refractory, unmet need
+7. Horner Syndrome — critical localization
+8. Hypertensive Encephalopathy — acute management
+9. Parkinson's Disease - Psychosis — common complication
+10. Autoimmune Dementia/Encephalopathy — treatable, must-not-miss
 
-### Tier 3: Subspecialty / Rare
+### Tier 14C: Moderate Priority
 
-11. Progressive Supranuclear Palsy (PSP)
-12. Multiple System Atrophy (MSA)
-13. Lambert-Eaton Myasthenic Syndrome (LEMS)
-14. Neurosarcoidosis
-15. Glioblastoma (GBM)
+11. Autonomic Neuropathy
+12. Vasculitic Neuropathy
+13. Multifocal Motor Neuropathy (MMN)
+14. Corticobasal Degeneration (CBD)
+15. Chorea Evaluation
+
+### Tier 14D: Lower Priority / Rare
+
+16-30: ADEM, PML, Diffuse White Matter Disease, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation, Wernicke-Korsakoff Syndrome, Radiation-Induced Neurologic Injury, Myelopathy (General), Subacute Combined Degeneration, Syringomyelia, Functional Movement Disorder, Functional Cognitive Disorder, Traumatic Brain Injury, CTE
 
 ---
 
@@ -425,10 +476,21 @@ All Tier 1 and Tier 2 items from the original roadmap are now complete. Updated 
 - Outpatient product prioritizes conditions with OPD setting coverage
 - ICD-10 codes from outpatient priority list included for billing integration
 - TIA duplicate resolved Jan 30: canonical file is `transient-ischemic-attack.md`
+- Sleep Medicine section (Tier 12): REM Sleep Behavior Disorder, OSA (Neuro), Insomnia, Idiopathic Hypersomnia, Non-REM Parasomnias — complements existing Narcolepsy and RLS plans
+- Autonomic & Pain section (Tier 13): POTS, Neurogenic OH, Occipital Neuralgia, CRPS, Neuropathic Pain Management
 
 ---
 
 ## CHANGE LOG
+
+**February 9, 2026**
+- Major tracker sync: corrected from 103 → 134 approved plans
+- Flipped 19 false ⬜ to ✅ (plans existed but tracker was stale)
+- Added 15+ missing plans to tracker (Headache Evaluation, symptom plans, Sleep Medicine, Autonomic & Pain)
+- Added new Autonomic & Pain Disorders section (5 plans, Tier 13)
+- Recalculated statistics: 133 approved diagnoses (134 files), 30 to build, 163 total
+- Updated next priorities: all original Tiers 1-13 complete, defined Tier 14A-D
+- Fixed typos: SI65.29 → I65.29, F57.30 → G57.30
 
 **January 30, 2026**
 - Major update: 57 approved plans (was 9)

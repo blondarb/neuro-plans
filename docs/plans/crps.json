@@ -1,0 +1,1547 @@
+{
+  "id": "crps",
+  "title": "Complex Regional Pain Syndrome (CRPS)",
+  "version": "1.1",
+  "icd10": [
+    "** G90.50 (Complex regional pain syndrome I",
+    "unspecified)",
+    "G90.51 (CRPS I of upper limb)",
+    "G90.52 (CRPS I of lower limb)",
+    "G90.59 (CRPS I",
+    "other specified site)",
+    "G56.40 (Causalgia of unspecified upper limb — CRPS II)",
+    "G57.70 (Causalgia of unspecified lower limb — CRPS II)"
+  ],
+  "scope": "** Evaluation and management of Complex Regional Pain Syndrome (CRPS) Types I and II in adults. Includes Budapest diagnostic criteria, staging, etiologic workup, pharmacologic management (neuropathic pain agents, bisphosphonates, corticosteroids), interventional procedures (sympathetic blocks, spinal cord stimulation), and rehabilitation (graded motor imagery, mirror therapy). Covers ED acute pain management, inpatient evaluation, outpatient chronic management, and ICU-level ketamine infusion protocols. Excludes other chronic pain syndromes unless part of differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; exclude infection or hematologic cause of pain",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes, renal function; baseline before bisphosphonate or NSAID use; required before ketamine infusion",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude inflammatory or infectious etiology",
+          "target": "<20 mm/hr"
+        },
+        {
+          "item": "CRP (CPT 86200)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude infection, inflammatory arthritis, or osteomyelitis",
+          "target": "<0.5 mg/dL"
+        },
+        {
+          "item": "Calcium, phosphorus, vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before bisphosphonate therapy; exclude metabolic bone disease",
+          "target": "Normal calcium; vitamin D >30 ng/mL"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid dysfunction can mimic or exacerbate pain/autonomic symptoms",
+          "target": "0.4-4.0 mIU/L"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline for ketamine infusion; hypomagnesemia exacerbates pain",
+          "target": "1.7-2.2 mg/dL"
+        }
+      ],
+      "Extended Labs (Based on Clinical Suspicion)": [
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude autoimmune/connective tissue disease as cause of pain and vasomotor changes",
+          "target": "Negative"
+        },
+        {
+          "item": "Uric acid",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Exclude gout if joint involvement suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c / fasting glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes as risk factor for CRPS-II (neuropathic component)",
+          "target": "HbA1c <5.7%; fasting glucose <100 mg/dL"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Exclude paraproteinemia if atypical neuropathy suspected",
+          "target": "No monoclonal protein"
+        },
+        {
+          "item": "Hepatic function panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before chronic analgesic or bisphosphonate therapy",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized Labs": [
+        {
+          "item": "Complement C3/C4",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If vasculitis or autoimmune etiology suspected",
+          "target": "Normal"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If atypical presentation raises concern for paraneoplastic syndrome",
+          "target": "Negative"
+        },
+        {
+          "item": "Catecholamines (plasma or urine)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If pheochromocytoma or sympathetic hyperactivity considered",
+          "target": "Normal"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Imaging (First-Line)": [
+        {
+          "item": "Plain radiographs of affected limb (CPT 73000/73590)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Initial evaluation",
+          "target": "Patchy osteopenia (Sudeck atrophy) in established CRPS; exclude fracture",
+          "contraindications": "None"
+        },
+        {
+          "item": "Triple-phase bone scan (CPT 78300)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within first 6 months for highest sensitivity",
+          "target": "Increased periarticular uptake in delayed phase; sensitivity 80-96% in early CRPS",
+          "contraindications": "Pregnancy"
+        },
+        {
+          "item": "MRI of affected extremity (CPT 73221/73721)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "When diagnosis uncertain or to exclude alternate pathology",
+          "target": "Bone marrow edema, soft tissue edema, skin thickening; exclude tumor, infection, AVN",
+          "contraindications": "MRI-incompatible implants"
+        }
+      ],
+      "Extended Imaging & Diagnostic Studies": [
+        {
+          "item": "Nerve conduction studies / EMG (CPT 95903/95904/95860)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If CRPS-II suspected or to differentiate from peripheral neuropathy",
+          "target": "Define nerve lesion for CRPS-II; normal in CRPS-I",
+          "contraindications": "Anticoagulation (relative for needle EMG)"
+        },
+        {
+          "item": "Infrared thermography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Supportive; temperature asymmetry >1°C",
+          "target": "Temperature difference >1°C between affected and unaffected limb",
+          "contraindications": "None"
+        },
+        {
+          "item": "Diagnostic sympathetic nerve block (stellate ganglion or lumbar sympathetic) (CPT 64510/64520)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "To determine sympathetically maintained vs independent pain",
+          "target": ">50% pain relief supports SMP component",
+          "contraindications": "Coagulopathy, local infection, patient refusal"
+        }
+      ],
+      "Rare/Specialized Studies": [
+        {
+          "item": "Quantitative sensory testing (QST) (CPT 96000)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient; quantify sensory thresholds",
+          "target": "Altered thermal and vibratory thresholds in affected limb",
+          "contraindications": "Requires patient cooperation"
+        },
+        {
+          "item": "Sudomotor function testing (QSART) (CPT 95836)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Outpatient; assess autonomic (sudomotor) dysfunction",
+          "target": "Asymmetric sweat output in affected limb",
+          "contraindications": "None"
+        },
+        {
+          "item": "Skin biopsy for intraepidermal nerve fiber density (IENFD) (CPT 88305)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If CRPS-II suspected or small fiber neuropathy overlap",
+          "target": "Reduced IENFD in affected limb",
+          "contraindications": "Anticoagulation (relative), local infection"
+        },
+        {
+          "item": "Laser Doppler flowmetry",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research/specialized centers; assess microvascular flow",
+          "target": "Asymmetric blood flow",
+          "contraindications": "None"
+        },
+        {
+          "item": "DEXA scan",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If bisphosphonate considered; evaluate bone density",
+          "target": "Document osteopenia/osteoporosis",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Management (Pain Crisis)": [
+        {
+          "item": "IV ketamine (subanesthetic)",
+          "route": "IV",
+          "indication": "Acute CRPS pain crisis; refractory severe pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mg/kg/hr",
+                "orderSentence": "IV ketamine (subanesthetic) 0.1-0.3 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.1 mg/kg/hr; titrate by 0.05 mg/kg/hr q30min; max 0.3 mg/kg/hr; infusion duration 4-8 hours",
+            "orderSentence": "IV ketamine (subanesthetic) 0.1-0.3 mg/kg/hr IV"
+          },
+          "contraindications": "Uncontrolled HTN, psychosis, raised ICP, pregnancy",
+          "monitoring": "BP, HR, SpO2, dissociative symptoms q15-30min during infusion",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Prednisone (corticosteroid burst)",
+          "route": "PO",
+          "indication": "Early CRPS (<3 months); acute inflammatory phase",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg/day",
+                "orderSentence": "Prednisone (corticosteroid burst) 40 mg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg/day x 2 weeks, then taper by 10 mg/week over 2 weeks; total 4-week course",
+            "orderSentence": "Prednisone (corticosteroid burst) 40 mg/day PO"
+          },
+          "contraindications": "Active infection, uncontrolled diabetes, GI ulcer",
+          "monitoring": "Blood glucose, BP, mood, GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ketorolac",
+          "route": "IV/IM",
+          "indication": "Acute pain management; short-term use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15-30 mg",
+                "orderSentence": "Ketorolac 15-30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "15-30 mg IV q6h; max 5 days",
+            "orderSentence": "Ketorolac 15-30 mg IV"
+          },
+          "contraindications": "Renal impairment, GI bleeding, coagulopathy",
+          "monitoring": "Renal function, GI symptoms",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lidocaine IV infusion",
+          "route": "IV",
+          "indication": "Refractory acute CRPS pain; neuropathic pain crisis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-5 mg/kg",
+                "orderSentence": "Lidocaine IV infusion 1-5 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-5 mg/kg over 30-60 minutes; cardiac monitoring required",
+            "orderSentence": "Lidocaine IV infusion 1-5 mg/kg IV"
+          },
+          "contraindications": "Cardiac arrhythmia, heart block, hepatic failure, allergy to amides",
+          "monitoring": "Continuous ECG, BP, neurologic status for toxicity (perioral numbness, tinnitus)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Morphine",
+          "route": "IV",
+          "indication": "Severe acute pain crisis unresponsive to non-opioid measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Morphine 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2-4 mg IV q2-4h PRN; titrate to pain control; avoid long-term opioid use in CRPS",
+            "orderSentence": "Morphine 2-4 mg IV"
+          },
+          "contraindications": "Respiratory depression, paralytic ileus, known opioid allergy",
+          "monitoring": "Respiratory rate, sedation, pain scores; naloxone at bedside",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "First-Line Pharmacotherapy": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; first-line for CRPS pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              },
+              {
+                "text": "300 mg TID",
+                "orderSentence": "Gabapentin 300 mg TID PO"
+              },
+              {
+                "text": "600 mg TID",
+                "orderSentence": "Gabapentin 600 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q3-7d; target 1800-3600 mg/day in 3 divided doses",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation, dizziness, peripheral edema; adjust dose for CrCl <60",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              },
+              {
+                "text": "150 mg BID",
+                "orderSentence": "Pregabalin 150 mg BID PO"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Pregabalin 300 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; titrate by 75 mg q3-7d; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg BID PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation, dizziness, weight gain, peripheral edema",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain; sleep disruption from pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Amitriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Amitriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg q1-2 weeks; max 75-150 mg/day",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac arrhythmia, recent MI, MAOIs, urinary retention, narrow-angle glaucoma",
+          "monitoring": "ECG at baseline if >40 yo or cardiac risk; anticholinergic effects; sedation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain; better tolerated than amitriptyline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Nortriptyline 10 mg qHS PO"
+              },
+              {
+                "text": "25 mg qHS",
+                "orderSentence": "Nortriptyline 25 mg qHS PO"
+              },
+              {
+                "text": "75 mg qHS",
+                "orderSentence": "Nortriptyline 75 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10-25 mg q1-2 weeks; max 150 mg/day",
+            "orderSentence": "Nortriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac arrhythmia, recent MI, MAOIs, urinary retention, narrow-angle glaucoma",
+          "monitoring": "ECG at baseline if >40 yo or cardiac risk; anticholinergic effects (less than amitriptyline); sedation",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain; comorbid depression or anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              },
+              {
+                "text": "60 mg daily",
+                "orderSentence": "Duloxetine 60 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Severe hepatic impairment, MAOIs, uncontrolled narrow-angle glaucoma",
+          "monitoring": "Hepatic function, BP, serotonergic effects; taper when discontinuing",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical lidocaine 5% patch",
+          "route": "Topical",
+          "indication": "Localized allodynia; adjunctive pain relief",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches",
+                "orderSentence": "Topical lidocaine 5% patch 1-3 patches Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Apply up to 3 patches to affected area; 12 hours on / 12 hours off",
+            "orderSentence": "Topical lidocaine 5% patch 1-3 patches Topical"
+          },
+          "contraindications": "Allergy to amide anesthetics",
+          "monitoring": "Skin irritation at application site",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical capsaicin 8% patch",
+          "route": "Topical",
+          "indication": "Localized CRPS pain; desensitization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 patch",
+                "orderSentence": "Topical capsaicin 8% patch 1 patch Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Single 60-minute application to affected area; may repeat q3 months; apply in clinic setting with pretreatment",
+            "orderSentence": "Topical capsaicin 8% patch 1 patch Topical"
+          },
+          "contraindications": "Open wounds, broken skin",
+          "monitoring": "Pain during application (pretreat with topical anesthetic); skin erythema",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Refractory Pharmacotherapy": [
+        {
+          "item": "Alendronate",
+          "route": "PO",
+          "indication": "CRPS with bone pain, osteopenia; strong evidence for pain reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg/day",
+                "orderSentence": "Alendronate 40 mg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg/day x 8 weeks; take on empty stomach with full glass of water; remain upright 30 min",
+            "orderSentence": "Alendronate 40 mg/day PO"
+          },
+          "contraindications": "Esophageal disorders, hypocalcemia, CrCl <35",
+          "monitoring": "Calcium, vitamin D levels; GI symptoms; renal function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pamidronate (IV bisphosphonate)",
+          "route": "IV",
+          "indication": "CRPS with significant bone involvement; oral bisphosphonate intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Pamidronate (IV bisphosphonate) 60 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "60 mg IV infusion over 2-4 hours q4 weeks x 3 doses",
+            "orderSentence": "Pamidronate (IV bisphosphonate) 60 mg IV"
+          },
+          "contraindications": "Hypocalcemia, severe renal impairment (CrCl <30)",
+          "monitoring": "Calcium, creatinine, phosphorus; flu-like symptoms post-infusion; osteonecrosis of jaw (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zoledronic acid (IV bisphosphonate)",
+          "route": "IV",
+          "indication": "CRPS; alternative IV bisphosphonate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Zoledronic acid (IV bisphosphonate) 5 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg IV over 15 minutes; single dose",
+            "orderSentence": "Zoledronic acid (IV bisphosphonate) 5 mg IV"
+          },
+          "contraindications": "Hypocalcemia, CrCl <35",
+          "monitoring": "Calcium, creatinine; flu-like symptoms 1-3 days post-infusion; dental evaluation before treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "CRPS-related dystonia or muscle spasm",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Baclofen 5 mg TID PO"
+              },
+              {
+                "text": "10 mg TID",
+                "orderSentence": "Baclofen 10 mg TID PO"
+              },
+              {
+                "text": "20 mg TID",
+                "orderSentence": "Baclofen 20 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3-5d; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg TID PO"
+          },
+          "contraindications": "Withdrawal seizures if abrupt discontinuation",
+          "monitoring": "Sedation, weakness; taper gradually when discontinuing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clonidine transdermal patch",
+          "route": "Transdermal",
+          "indication": "Sympathetically maintained pain component; adjunctive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/day",
+                "orderSentence": "Clonidine transdermal patch 0.1 mg/day Transdermal"
+              },
+              {
+                "text": "0.2 mg/day",
+                "orderSentence": "Clonidine transdermal patch 0.2 mg/day Transdermal"
+              }
+            ],
+            "route": "Transdermal",
+            "instructions": "Start 0.1 mg/day patch; titrate to 0.2 mg/day after 1-2 weeks",
+            "orderSentence": "Clonidine transdermal patch 0.1 mg/day Transdermal"
+          },
+          "contraindications": "Bradycardia, hypotension",
+          "monitoring": "BP, HR; rebound hypertension if abruptly removed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcitonin (nasal)",
+          "route": "Intranasal",
+          "indication": "CRPS pain; bone-related pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 IU",
+                "orderSentence": "Calcitonin (nasal) 200 IU Intranasal"
+              }
+            ],
+            "route": "Intranasal",
+            "instructions": "200 IU intranasal daily; alternate nostrils",
+            "orderSentence": "Calcitonin (nasal) 200 IU Intranasal"
+          },
+          "contraindications": "Hypersensitivity to salmon calcitonin",
+          "monitoring": "Rhinitis, nasal irritation; limited long-term efficacy data",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IV ketamine infusion (multi-day)",
+          "route": "IV",
+          "indication": "Refractory CRPS; inpatient protocol",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.35 mg/kg/hr",
+                "orderSentence": "IV ketamine infusion (multi-day) 0.1-0.35 mg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1-0.35 mg/kg/hr continuous infusion over 4-14 days; requires dedicated pain or ICU setting",
+            "orderSentence": "IV ketamine infusion (multi-day) 0.1-0.35 mg/kg/hr IV"
+          },
+          "contraindications": "Uncontrolled HTN, psychosis, raised ICP, pregnancy, hepatic failure",
+          "monitoring": "Continuous cardiac monitoring, BP, SpO2, hepatic function, dissociative symptoms, bladder function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Memantine",
+          "route": "PO",
+          "indication": "NMDA antagonist; adjunctive for refractory neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Memantine 5 mg daily PO"
+              },
+              {
+                "text": "10 mg BID",
+                "orderSentence": "Memantine 10 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg/week; target 10 mg BID; max 20 mg/day",
+            "orderSentence": "Memantine 5 mg daily PO"
+          },
+          "contraindications": "Severe renal impairment",
+          "monitoring": "Dizziness, headache, confusion; adjust dose for renal function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Naproxen",
+          "route": "PO",
+          "indication": "Mild-moderate CRPS pain; anti-inflammatory adjunct",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Naproxen 250 mg BID PO"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Naproxen 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; increase to 500 mg BID if tolerated; max 1000 mg/day",
+            "orderSentence": "Naproxen 250 mg BID PO"
+          },
+          "contraindications": "GI bleeding, renal impairment, aspirin-exacerbated respiratory disease",
+          "monitoring": "GI symptoms, renal function, BP; avoid long-term use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Interventional/Procedural Therapies": [
+        {
+          "item": "Stellate ganglion block (CPT 64510)",
+          "route": "Injection",
+          "indication": "Upper extremity CRPS; diagnostic and therapeutic sympathetic blockade",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stellate ganglion block (CPT 64510) N/A Injection"
+              }
+            ],
+            "route": "Injection",
+            "instructions": "Fluoroscopic or ultrasound-guided; series of 3-6 blocks at 1-2 week intervals",
+            "orderSentence": "Stellate ganglion block (CPT 64510) N/A Injection"
+          },
+          "contraindications": "Coagulopathy, local infection, contralateral pneumothorax, contralateral vocal cord paralysis",
+          "monitoring": "Horner syndrome (expected); BP, respiratory status; hoarseness; pneumothorax risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lumbar sympathetic block (CPT 64520)",
+          "route": "Injection",
+          "indication": "Lower extremity CRPS; diagnostic and therapeutic sympathetic blockade",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Lumbar sympathetic block (CPT 64520) N/A Injection"
+              }
+            ],
+            "route": "Injection",
+            "instructions": "Fluoroscopic-guided; series of 3-6 blocks at 1-2 week intervals",
+            "orderSentence": "Lumbar sympathetic block (CPT 64520) N/A Injection"
+          },
+          "contraindications": "Coagulopathy, local infection",
+          "monitoring": "BP, temperature change in affected limb (expected warmth); back pain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Spinal cord stimulation (SCS) — trial (CPT 63650)",
+          "route": "Implant",
+          "indication": "CRPS refractory to conservative management >=6 months; >50% pain relief with trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Spinal cord stimulation (SCS) — trial (CPT 63650) N/A Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Percutaneous trial lead placement; 5-7 day trial period; success = >=50% pain relief and functional improvement",
+            "orderSentence": "Spinal cord stimulation (SCS) — trial (CPT 63650) N/A Implant"
+          },
+          "contraindications": "Active infection, coagulopathy, inability to undergo MRI (varies by device), psychiatric instability",
+          "monitoring": "Pain scores, functional assessment during trial; wound site",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Spinal cord stimulation (SCS) — permanent implant (CPT 63685)",
+          "route": "Implant",
+          "indication": "Successful SCS trial (>=50% pain relief)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Spinal cord stimulation (SCS) — permanent implant (CPT 63685) N/A Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Permanent pulse generator and lead placement; programming optimization over weeks",
+            "orderSentence": "Spinal cord stimulation (SCS) — permanent implant (CPT 63685) N/A Implant"
+          },
+          "contraindications": "Active infection, failed trial, psychiatric instability, unrealistic expectations",
+          "monitoring": "Device function, pain scores, wound healing; ongoing reprogramming",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dorsal root ganglion (DRG) stimulation",
+          "route": "Implant",
+          "indication": "CRPS especially involving foot or focal distribution; alternative to traditional SCS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Dorsal root ganglion (DRG) stimulation N/A Implant"
+              }
+            ],
+            "route": "Implant",
+            "instructions": "Trial followed by permanent implant if successful; targets specific DRG level",
+            "orderSentence": "Dorsal root ganglion (DRG) stimulation N/A Implant"
+          },
+          "contraindications": "Active infection, coagulopathy, inability to undergo MRI (varies by device), psychiatric instability",
+          "monitoring": "Pain scores, paresthesia coverage of affected area, wound site",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal baclofen pump",
+          "route": "Implant",
+          "indication": "CRPS-related dystonia refractory to oral baclofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Intrathecal baclofen pump N/A Intrathecal"
+              }
+            ],
+            "route": "Intrathecal",
+            "instructions": "Trial with intrathecal bolus; if successful, pump implantation; typical dose 50-800 mcg/day",
+            "orderSentence": "Intrathecal baclofen pump N/A Intrathecal"
+          },
+          "contraindications": "Active infection, CSF obstruction",
+          "monitoring": "Baclofen withdrawal (life-threatening if pump malfunction); dystonia response; pump refills q1-3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin)",
+          "route": "IV",
+          "indication": "CRPS with suspected autoimmune/inflammatory component; refractory cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 g/kg/day",
+                "orderSentence": "IVIG (intravenous immunoglobulin) 0.5 g/kg/day IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.5 g/kg/day x 5 days; may repeat monthly based on response",
+            "orderSentence": "IVIG (intravenous immunoglobulin) 0.5 g/kg/day IV"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies, severe renal impairment",
+          "monitoring": "Renal function, headache (aseptic meningitis), thrombotic events, infusion reactions; premedicate with acetaminophen and diphenhydramine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Rehabilitation Therapies": [
+        {
+          "item": "Graded motor imagery (GMI)",
+          "route": "PT/OT",
+          "indication": "All CRPS patients; central desensitization program",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Graded motor imagery (GMI) N/A PT/OT"
+              }
+            ],
+            "route": "PT/OT",
+            "instructions": "Three-stage protocol: (1) laterality recognition, (2) imagined movements, (3) mirror therapy; 10-15 min/session progressing over weeks",
+            "orderSentence": "Graded motor imagery (GMI) N/A PT/OT"
+          },
+          "contraindications": "None",
+          "monitoring": "Pain levels during sessions; functional progress",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirror therapy",
+          "route": "PT/OT",
+          "indication": "CRPS of extremity; cortical reorganization",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Mirror therapy N/A PT/OT"
+              }
+            ],
+            "route": "PT/OT",
+            "instructions": "15-30 min daily; move unaffected limb while watching mirror reflection; brain perceives affected limb moving",
+            "orderSentence": "Mirror therapy N/A PT/OT"
+          },
+          "contraindications": "None (may increase pain initially — titrate)",
+          "monitoring": "Pain response; functional improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Desensitization program",
+          "route": "PT/OT",
+          "indication": "Allodynia; tactile hypersensitivity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Desensitization program N/A PT/OT"
+              }
+            ],
+            "route": "PT/OT",
+            "instructions": "Progressive exposure to textures (silk, cotton, terry cloth, denim); graded from least to most stimulating",
+            "orderSentence": "Desensitization program N/A PT/OT"
+          },
+          "contraindications": "Severe open wounds",
+          "monitoring": "Allodynia severity; tolerance progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress loading (scrubbing and carrying)",
+          "route": "PT/OT",
+          "indication": "Upper extremity CRPS; active loading without joint movement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stress loading (scrubbing and carrying) N/A PT/OT"
+              }
+            ],
+            "route": "PT/OT",
+            "instructions": "Scrubbing: affected hand on brush, body weight through arm; Carrying: weighted bag 1-5 lbs progressing; 3 sessions/day, 3 min each",
+            "orderSentence": "Stress loading (scrubbing and carrying) N/A PT/OT"
+          },
+          "contraindications": "Fracture, open wound",
+          "monitoring": "Pain levels; edema; functional ROM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquatic therapy",
+          "route": "PT",
+          "indication": "CRPS; weight-bearing difficulty; edema management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Aquatic therapy N/A PT"
+              }
+            ],
+            "route": "PT",
+            "instructions": "Warm water pool (92-96F); active ROM, progressive weight bearing, desensitization in water; 30-45 min sessions",
+            "orderSentence": "Aquatic therapy N/A PT"
+          },
+          "contraindications": "Open wounds, active infection, cardiac instability",
+          "monitoring": "Pain levels, edema, ROM, functional progress",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy — functional retraining",
+          "route": "OT",
+          "indication": "CRPS; ADL restoration and limb reintegration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Occupational therapy — functional retraining N/A OT"
+              }
+            ],
+            "route": "OT",
+            "instructions": "Task-specific training; splinting as needed; activity pacing; ergonomic adaptation",
+            "orderSentence": "Occupational therapy — functional retraining N/A OT"
+          },
+          "contraindications": "None",
+          "monitoring": "Functional milestones; pain-contingent vs time-contingent activity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Pain medicine / Pain management",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "All CRPS patients; coordinate multimodal therapy and interventional procedures"
+        },
+        {
+          "item": "Physical therapy (CRPS-experienced)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "All CRPS patients; graded motor imagery, desensitization, functional restoration"
+        },
+        {
+          "item": "Occupational therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Upper extremity CRPS; ADL retraining, splinting, functional adaptation"
+        },
+        {
+          "item": "Psychology / Psychiatry (pain-focused CBT)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Cognitive behavioral therapy for pain; anxiety/depression management; catastrophizing reduction"
+        },
+        {
+          "item": "Neurology",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "CRPS-II evaluation; nerve lesion localization; atypical presentations; diagnostic confirmation"
+        },
+        {
+          "item": "Orthopedic surgery",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "If underlying fracture/contracture management needed; avoid unnecessary surgery on affected limb"
+        },
+        {
+          "item": "Vascular surgery",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "indication": "If vascular insufficiency must be excluded"
+        },
+        {
+          "item": "Interventional radiology / Anesthesia (pain procedures)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Sympathetic blocks, SCS trial/implant, intrathecal pump"
+        },
+        {
+          "item": "Sleep medicine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Persistent sleep disruption despite analgesic optimization; comorbid insomnia assessment"
+        },
+        {
+          "item": "Physiatry / Rehabilitation medicine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Comprehensive rehabilitation coordination; functional restoration program design"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Educate on CRPS as a real, treatable neurological condition",
+          "rationale": "Combat stigma; improve treatment engagement; reduce catastrophizing",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Active use of affected limb encouraged within pain tolerance",
+          "rationale": "Disuse leads to worsening dystrophy, contracture, and central sensitization",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Home mirror therapy and GMI exercises daily",
+          "rationale": "Cortical reorganization requires consistent daily practice for efficacy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid immobilization of affected limb (no slings, casts unless fracture)",
+          "rationale": "Immobilization worsens CRPS; evidence for harm from prolonged rest",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Apply warm or cool packs per patient preference to affected area",
+          "rationale": "Symptom relief; patient-directed (some prefer warmth, others cold)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Report new weakness, spreading pain to other limbs, color changes, skin breakdown, or worsening pain promptly",
+          "rationale": "Early detection of disease progression, spread, or complications",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Avoid surgical procedures on the affected limb unless absolutely necessary",
+          "rationale": "Surgery on CRPS-affected limb can cause flare or spread; preoperative sympathetic block recommended if surgery unavoidable",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Keep a pain diary tracking daily pain levels, triggers, sleep, and functional activities",
+          "rationale": "Facilitates treatment titration and objective progress monitoring at follow-up visits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Vitamin C 500 mg daily after fracture or surgery",
+          "rationale": "Evidence supports prophylactic vitamin C (500 mg/day x 50 days) to reduce CRPS incidence after wrist fracture",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Early mobilization after fracture or surgery",
+          "rationale": "Prolonged immobilization is a known risk factor for CRPS development",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Stress management and relaxation techniques (mindfulness, paced breathing, progressive muscle relaxation)",
+          "rationale": "Psychological stress exacerbates CRPS symptoms and central sensitization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Sleep hygiene optimization",
+          "rationale": "Poor sleep amplifies central sensitization and pain perception",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation counseling",
+          "rationale": "Smoking impairs microvascular flow and wound healing; worsens CRPS outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Regular low-impact aerobic exercise (walking, cycling, swimming)",
+          "rationale": "General conditioning, mood improvement, pain modulation via endorphin release",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "Ergonomic workplace and home adaptations",
+          "rationale": "Reduce repetitive strain on affected limb; activity modification to promote function without overload",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Peripheral neuropathy (diabetic, idiopathic)",
+      "features": "Symmetric stocking-glove distribution; no vasomotor or sudomotor signs; no edema; gradual onset",
+      "tests": "NCS/EMG (abnormal); HbA1c; no temperature asymmetry"
+    },
+    {
+      "diagnosis": "Deep vein thrombosis (DVT)",
+      "features": "Unilateral limb swelling and pain; risk factors (immobility, surgery, malignancy); no allodynia or trophic changes",
+      "tests": "D-dimer; compression ultrasound; no vasomotor color changes"
+    },
+    {
+      "diagnosis": "Cellulitis / Soft tissue infection",
+      "features": "Erythema, warmth, fever; WBC elevated; responds to antibiotics; no allodynia or motor/trophic signs",
+      "tests": "CBC with left shift; blood cultures; imaging if abscess suspected"
+    },
+    {
+      "diagnosis": "Raynaud phenomenon",
+      "features": "Episodic digital color changes (white-blue-red); triggered by cold or stress; bilateral; no pain disproportionate to findings",
+      "tests": "History of triphasic color changes; cold provocation; nailfold capillaroscopy; ANA"
+    },
+    {
+      "diagnosis": "Peripheral vascular disease / Arterial insufficiency",
+      "features": "Claudication; diminished pulses; ABI <0.9; trophic changes in vascular distribution; no allodynia",
+      "tests": "ABI; arterial duplex ultrasound; CTA/MRA"
+    },
+    {
+      "diagnosis": "Fracture (occult)",
+      "features": "Localized pain and swelling after trauma; point tenderness; no vasomotor asymmetry or sudomotor changes",
+      "tests": "Plain radiographs; CT or MRI if radiographs negative; bone scan"
+    },
+    {
+      "diagnosis": "Tendinopathy / Overuse injury",
+      "features": "Pain localized to tendon; worsened by specific motion; no vasomotor, sudomotor, or trophic changes",
+      "tests": "Examination; ultrasound or MRI of tendon; no diffuse limb changes"
+    },
+    {
+      "diagnosis": "Inflammatory arthritis (RA, gout, psoriatic)",
+      "features": "Joint-focused swelling and pain; systemic inflammatory markers elevated; polyarticular in RA",
+      "tests": "RF, anti-CCP, uric acid; joint aspiration; radiographs showing erosions"
+    },
+    {
+      "diagnosis": "Malingering / Factitious disorder",
+      "features": "Inconsistent examination findings; secondary gain; symptom magnification without objective autonomic signs",
+      "tests": "Objective autonomic testing (thermography, QSART) shows no asymmetry; psychological evaluation"
+    },
+    {
+      "diagnosis": "Erythromelalgia",
+      "features": "Episodic burning pain, erythema, warmth in distal extremities; bilateral; relieved by cooling; no edema or trophic changes",
+      "tests": "History of episodic symptoms; relief with cooling; genetic testing (SCN9A); no bone scan changes"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Budapest criteria for clinical diagnosis of CRPS",
+      "evidenceLevel": "Validated diagnostic criteria; sensitivity 0.99, specificity 0.68",
+      "source": "[Harden et al. Pain 2010](https://pubmed.ncbi.nlm.nih.gov/20493633/)"
+    },
+    {
+      "recommendation": "Comprehensive CRPS pathophysiology and management review",
+      "evidenceLevel": "Expert review",
+      "source": "[Bruehl S. BMJ 2015](https://pubmed.ncbi.nlm.nih.gov/26224572/)"
+    },
+    {
+      "recommendation": "CRPS pathophysiology, diagnosis, and treatment overview",
+      "evidenceLevel": "Expert review",
+      "source": "[Birklein et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25471395/)"
+    },
+    {
+      "recommendation": "Bisphosphonates (alendronate 40 mg/day x 8 weeks) for CRPS pain",
+      "evidenceLevel": "Level I (RCT); significant pain reduction vs placebo",
+      "source": "[Varenna et al. Rheumatology 2013](https://pubmed.ncbi.nlm.nih.gov/23204550/)"
+    },
+    {
+      "recommendation": "IV pamidronate for CRPS pain",
+      "evidenceLevel": "Level I (RCT)",
+      "source": "[Robinson et al. Pain Medicine 2004](https://pubmed.ncbi.nlm.nih.gov/15367305/)"
+    },
+    {
+      "recommendation": "Spinal cord stimulation for CRPS; long-term outcomes",
+      "evidenceLevel": "Level I-II; significant pain reduction; practice guidelines",
+      "source": "[Deer et al. Neuromodulation 2017](https://pubmed.ncbi.nlm.nih.gov/28042918/)"
+    },
+    {
+      "recommendation": "DRG stimulation superior to traditional SCS for CRPS (ACCURATE trial)",
+      "evidenceLevel": "Level I (RCT)",
+      "source": "[Deer et al. Pain 2017](https://pubmed.ncbi.nlm.nih.gov/28030470/)"
+    },
+    {
+      "recommendation": "IV ketamine for CRPS pain (subanesthetic infusion)",
+      "evidenceLevel": "Level I (RCT); significant short-term pain reduction",
+      "source": "[Sigtermans et al. Pain 2009](https://pubmed.ncbi.nlm.nih.gov/19604642/)"
+    },
+    {
+      "recommendation": "Corticosteroids for early CRPS",
+      "evidenceLevel": "Level II; moderate evidence for acute phase",
+      "source": "[Kalita et al. Pain Physician 2016](https://pubmed.ncbi.nlm.nih.gov/27906935/)"
+    },
+    {
+      "recommendation": "Vitamin C 500 mg/day for CRPS prophylaxis after wrist fracture",
+      "evidenceLevel": "Level I (RCT); reduced CRPS incidence",
+      "source": "[Zollinger et al. J Bone Joint Surg Am 2007](https://pubmed.ncbi.nlm.nih.gov/17606778/)"
+    },
+    {
+      "recommendation": "Mirror therapy and graded motor imagery for CRPS",
+      "evidenceLevel": "Level II; RCTs support efficacy",
+      "source": "[Moseley GL. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/17082465/)"
+    },
+    {
+      "recommendation": "Guidelines for CRPS interventional management",
+      "evidenceLevel": "Evidence-based consensus guidelines",
+      "source": "[Harden et al. Pain Medicine 2013](https://pubmed.ncbi.nlm.nih.gov/23331950/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Pain scores (NRS 0-10)",
+      "frequency": "Every encounter",
+      "action": "Adjust analgesic regimen; consider interventional therapy",
+      "ED": "STAT",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Limb temperature measurement (infrared)",
+      "frequency": "Every encounter",
+      "action": "Vasomotor changes worsening: escalate treatment",
+      "ED": "-",
+      "HOSP": "Daily",
+      "OPD": "Every visit",
+      "ICU": "-"
+    },
+    {
+      "item": "Edema measurement (circumference)",
+      "frequency": "Weekly to monthly",
+      "action": "Compression therapy; elevation; medication adjustment",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Monthly",
+      "ICU": "-"
+    },
+    {
+      "item": "Range of motion (goniometry)",
+      "frequency": "Monthly",
+      "action": "Intensify PT/OT; evaluate for contracture",
+      "ED": "-",
+      "HOSP": "Weekly",
+      "OPD": "Monthly",
+      "ICU": "-"
+    },
+    {
+      "item": "Bone density (DEXA or radiographs)",
+      "frequency": "Every 6-12 months",
+      "action": "Initiate bisphosphonate if progressive osteopenia",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "Every 6-12 months",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (creatinine, eGFR)",
+      "frequency": "Before and during bisphosphonate therapy",
+      "action": "Hold bisphosphonate if renal function declines",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q3-6 months",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Calcium, vitamin D",
+      "frequency": "Before and during bisphosphonate therapy",
+      "action": "Supplement calcium and vitamin D before bisphosphonate initiation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q3-6 months",
+      "ICU": "-"
+    },
+    {
+      "item": "Hepatic function",
+      "frequency": "Baseline and q6 months if on chronic medications",
+      "action": "Dose adjust or discontinue hepatotoxic medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q6 months",
+      "ICU": "-"
+    },
+    {
+      "item": "ECG",
+      "frequency": "Baseline for tricyclic antidepressants",
+      "action": "Do not initiate or discontinue TCA if QTc prolonged",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "Baseline",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "SCS device function",
+      "frequency": "Post-implant ongoing",
+      "action": "Reprogram device; evaluate for lead migration",
+      "ED": "-",
+      "HOSP": "Post-op",
+      "OPD": "q3-6 months",
+      "ICU": "-"
+    },
+    {
+      "item": "Psychological assessment (depression, anxiety, catastrophizing)",
+      "frequency": "Baseline and q3-6 months",
+      "action": "Psychology referral; medication adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "q3-6 months",
+      "ICU": "-"
+    },
+    {
+      "item": "Ketamine infusion monitoring (BP, HR, SpO2, dissociation)",
+      "frequency": "Continuous during infusion",
+      "action": "Reduce infusion rate or discontinue; administer midazolam for severe dissociation",
+      "ED": "STAT",
+      "HOSP": "Continuous",
+      "OPD": "-",
+      "ICU": "Continuous"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Mild-moderate pain controlled with oral analgesics; no acute compartment syndrome; follow-up with pain medicine or neurology arranged within 1-2 weeks; able to perform basic self-care"
+    },
+    {
+      "disposition": "Admit to hospital",
+      "criteria": "Severe pain crisis unresponsive to outpatient management; need for IV ketamine infusion; need for IV bisphosphonate infusion; new-onset CRPS with diagnostic uncertainty requiring expedited workup; acute functional decline"
+    },
+    {
+      "disposition": "ICU admission",
+      "criteria": "Ketamine infusion requiring continuous cardiac monitoring; hemodynamic instability; respiratory concerns during ketamine infusion; multi-day high-dose ketamine protocol"
+    },
+    {
+      "disposition": "Transfer to pain center",
+      "criteria": "Refractory CRPS requiring multidisciplinary inpatient pain rehabilitation; SCS trial/implant evaluation; intrathecal pump evaluation"
+    },
+    {
+      "disposition": "Outpatient follow-up — Pain medicine",
+      "criteria": "All CRPS patients for ongoing multimodal management; interventional procedure scheduling; every 2-4 weeks during active treatment, then q1-3 months when stable"
+    },
+    {
+      "disposition": "Outpatient follow-up — Neurology",
+      "criteria": "CRPS-II patients; nerve lesion characterization and management; atypical presentations"
+    },
+    {
+      "disposition": "Outpatient follow-up — PT/OT",
+      "criteria": "All CRPS patients; 2-3x/week initially for GMI, mirror therapy, desensitization, functional restoration"
+    },
+    {
+      "disposition": "Outpatient follow-up — Psychology",
+      "criteria": "All CRPS patients; pain coping, CBT, catastrophizing reduction; q1-2 weeks initially"
+    }
+  ]
+}
