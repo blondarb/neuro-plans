@@ -1,3 +1,130 @@
+/* ========================================
+   DESIGN TOKENS (CSS Custom Properties)
+   See docs/DESIGN_SYSTEM.md for full spec
+   ======================================== */
+:root {
+  /* Primary / Teal scale */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+
+  /* Neutral / Slate scale */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+
+  /* Priority: STAT */
+  --priority-stat-bg: #fee2e2;
+  --priority-stat-text: #991b1b;
+  --priority-stat-border: #fca5a5;
+
+  /* Priority: URGENT */
+  --priority-urgent-bg: #ffedd5;
+  --priority-urgent-text: #9a3412;
+  --priority-urgent-border: #fdba74;
+
+  /* Priority: ROUTINE */
+  --priority-routine-bg: #dbeafe;
+  --priority-routine-text: #1e40af;
+  --priority-routine-border: #93c5fd;
+
+  /* Priority: EXT */
+  --priority-ext-bg: #f3e8ff;
+  --priority-ext-text: #6b21a8;
+  --priority-ext-border: #d8b4fe;
+
+  /* Priority: N/A */
+  --priority-na-bg: #f3f4f6;
+  --priority-na-text: #6b7280;
+  --priority-na-border: #d1d5db;
+
+  /* Semantic tokens */
+  --surface-primary: var(--color-slate-50);
+  --surface-secondary: #ffffff;
+  --text-primary: var(--color-slate-800);
+  --text-secondary: var(--color-slate-500);
+  --border-default: var(--color-slate-200);
+  --interactive-primary: var(--color-teal-600);
+  --interactive-primary-hover: var(--color-teal-700);
+  --interactive-primary-subtle: var(--color-teal-50);
+
+  /* Status */
+  --status-draft: #f59e0b;
+  --status-approved: #10b981;
+  --status-danger: #dc2626;
+}
+
+/* Dark mode token overrides */
+[data-md-color-scheme="slate"] {
+  --surface-primary: var(--color-slate-800);
+  --surface-secondary: var(--color-slate-700);
+  --text-primary: var(--color-slate-100);
+  --text-secondary: var(--color-slate-400);
+  --border-default: var(--color-slate-700);
+  --interactive-primary: var(--color-teal-400);
+  --interactive-primary-hover: var(--color-teal-500);
+  --interactive-primary-subtle: var(--color-slate-800);
+
+  /* Dark mode priority badges — softened for readability */
+  --priority-stat-bg: rgba(239, 68, 68, 0.15);
+  --priority-stat-text: #fca5a5;
+  --priority-stat-border: rgba(239, 68, 68, 0.3);
+
+  --priority-urgent-bg: rgba(249, 115, 22, 0.15);
+  --priority-urgent-text: #fdba74;
+  --priority-urgent-border: rgba(249, 115, 22, 0.3);
+
+  --priority-routine-bg: rgba(59, 130, 246, 0.15);
+  --priority-routine-text: #93c5fd;
+  --priority-routine-border: rgba(59, 130, 246, 0.3);
+
+  --priority-ext-bg: rgba(168, 85, 247, 0.15);
+  --priority-ext-text: #d8b4fe;
+  --priority-ext-border: rgba(168, 85, 247, 0.3);
+
+  --priority-na-bg: rgba(148, 163, 184, 0.1);
+  --priority-na-text: var(--color-slate-400);
+  --priority-na-border: rgba(148, 163, 184, 0.2);
+}
+
+/* ========================================
+   ACCESSIBILITY — Focus & Motion
+   ======================================== */
+
+/* Visible focus indicators for keyboard navigation */
+.comment-form textarea:focus-visible,
+.comment-form button:focus-visible,
+.vote-btn:focus-visible,
+.section-comment-btn:focus-visible,
+.inline-comment-submit:focus-visible,
+.md-nav__link:focus-visible {
+  outline: 2px solid var(--interactive-primary);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   PRIORITY BADGES
+   ======================================== */
+
 /* Priority Badges */
 .priority-stat {
   display: inline-block;
@@ -5,9 +132,9 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #fee2e2;
-  color: #991b1b;
-  border: 1px solid #fca5a5;
+  background-color: var(--priority-stat-bg);
+  color: var(--priority-stat-text);
+  border: 1px solid var(--priority-stat-border);
 }
 
 .priority-urgent {
@@ -16,9 +143,9 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #ffedd5;
-  color: #9a3412;
-  border: 1px solid #fdba74;
+  background-color: var(--priority-urgent-bg);
+  color: var(--priority-urgent-text);
+  border: 1px solid var(--priority-urgent-border);
 }
 
 .priority-routine {
@@ -27,9 +154,9 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #dbeafe;
-  color: #1e40af;
-  border: 1px solid #93c5fd;
+  background-color: var(--priority-routine-bg);
+  color: var(--priority-routine-text);
+  border: 1px solid var(--priority-routine-border);
 }
 
 .priority-ext {
@@ -38,9 +165,9 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #f3e8ff;
-  color: #6b21a8;
-  border: 1px solid #d8b4fe;
+  background-color: var(--priority-ext-bg);
+  color: var(--priority-ext-text);
+  border: 1px solid var(--priority-ext-border);
 }
 
 .priority-na {
@@ -49,9 +176,9 @@
   border-radius: 4px;
   font-weight: 600;
   font-size: 0.75rem;
-  background-color: #f3f4f6;
-  color: #6b7280;
-  border: 1px solid #d1d5db;
+  background-color: var(--priority-na-bg);
+  color: var(--priority-na-text);
+  border: 1px solid var(--priority-na-border);
 }
 
 /* Priority Legend Box */
@@ -747,7 +874,7 @@ h3:has(.inline-comment-btn) {
   background: #0d9488;
   color: white;
   border-radius: 10px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
   line-height: 1;
   vertical-align: middle;
@@ -1140,7 +1267,7 @@ h3:has(.inline-comment-btn) {
 
 /* Base table styling - compact font and horizontal scroll */
 .md-typeset table:not([class]) {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1150,6 +1277,29 @@ h3:has(.inline-comment-btn) {
 .md-typeset table:not([class]) th,
 .md-typeset table:not([class]) td {
   padding: 6px 8px;
+}
+
+/* Sticky table headers */
+.md-typeset table:not([class]) thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-teal-50);
+  color: var(--color-teal-800);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) thead th {
+  background: var(--color-slate-700);
+  color: var(--color-slate-100);
+}
+
+/* Row hover highlight for better tracking */
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--color-teal-100) !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: var(--color-slate-700) !important;
 }
 
 /* Tables with 5+ columns: first column gets constrained width with wrapping */
@@ -1173,7 +1323,7 @@ h3:has(.inline-comment-btn) {
   }
 
   .md-sidebar--secondary .md-nav {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
 
   .md-sidebar--secondary .md-nav__link {
@@ -1181,15 +1331,15 @@ h3:has(.inline-comment-btn) {
   }
 }
 
-/* Priority badges - compact for venue columns */
+/* Priority badges - compact for venue columns (min 0.6875rem / 11px) */
 .priority-stat,
 .priority-urgent,
 .priority-routine,
 .priority-ext,
 .priority-na {
-  font-size: 0.55rem;
-  padding: 1px 3px;
-  letter-spacing: -0.3px;
+  font-size: 0.6875rem;
+  padding: 2px 4px;
+  letter-spacing: -0.2px;
 }
 
 /* ========================================
@@ -1209,17 +1359,18 @@ h3:has(.inline-comment-btn) {
   min-width: 50px;
   max-width: 70px;
   padding: 4px 5px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4) {
-  background: #ccfbf1;
-  color: #0f766e;
+  background: var(--color-teal-100);
+  color: var(--color-teal-700);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table[data-venue-pos="last4"] th:nth-last-child(-n+4) {
-  background: #475569;
+  background: var(--color-slate-600);
+  color: var(--color-slate-100);
 }
 
 /* --- Venue columns in middle of table (positions 2-5) --- */
@@ -1232,17 +1383,18 @@ h3:has(.inline-comment-btn) {
   min-width: 50px;
   max-width: 70px;
   padding: 4px 6px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5) {
-  background: #ccfbf1;
-  color: #0f766e;
+  background: var(--color-teal-100);
+  color: var(--color-teal-700);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table[data-venue-pos="mid"] th:nth-child(n+2):nth-child(-n+5) {
-  background: #475569;
+  background: var(--color-slate-600);
+  color: var(--color-slate-100);
 }
 
 /* --- Venue columns in middle of table (positions 2-4, 3 venues no ICU) --- */
@@ -1255,17 +1407,18 @@ h3:has(.inline-comment-btn) {
   min-width: 50px;
   max-width: 70px;
   padding: 4px 6px;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .md-typeset table[data-venue-pos="mid3"] th:nth-child(n+2):nth-child(-n+4) {
-  background: #ccfbf1;
-  color: #0f766e;
+  background: var(--color-teal-100);
+  color: var(--color-teal-700);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table[data-venue-pos="mid3"] th:nth-child(n+2):nth-child(-n+4) {
-  background: #475569;
+  background: var(--color-slate-600);
+  color: var(--color-slate-100);
 }
 
 /* Medium screens */
@@ -1284,8 +1437,8 @@ h3:has(.inline-comment-btn) {
   .priority-routine,
   .priority-ext,
   .priority-na {
-    font-size: 0.5rem;
-    padding: 1px 2px;
+    font-size: 0.625rem;
+    padding: 1px 3px;
   }
 
   /* Venue columns compact on medium screens - last 4 */
@@ -1294,7 +1447,7 @@ h3:has(.inline-comment-btn) {
     min-width: 50px;
     max-width: 70px;
     padding: 3px 4px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   /* Venue columns compact on medium screens - mid positions (4 venues) */
@@ -1303,7 +1456,7 @@ h3:has(.inline-comment-btn) {
     min-width: 50px;
     max-width: 70px;
     padding: 3px 5px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   /* Venue columns compact on medium screens - mid positions (3 venues) */
@@ -1312,7 +1465,7 @@ h3:has(.inline-comment-btn) {
     min-width: 50px;
     max-width: 70px;
     padding: 3px 5px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   /* Reduce legend size */
@@ -1368,30 +1521,71 @@ h3:has(.inline-comment-btn) {
    VISUAL REFRESH - Teal Palette Additions
    ======================================== */
 
-/* Table row striping */
+/* Table row striping — slightly stronger contrast */
 .md-typeset table:not([class]) tbody tr:nth-child(even) {
-  background: #f0fdfa;
+  background: #ecfdf5;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
-  background: #1e293b;
+  background: var(--color-slate-800);
 }
 
-/* Active navigation item accent */
+/* Active navigation item accent — stronger indicator */
 .md-nav__item--active > .md-nav__link {
-  border-left: 3px solid #0d9488;
+  border-left: 3px solid var(--interactive-primary);
+  background: var(--interactive-primary-subtle);
   font-weight: 600;
+  color: var(--interactive-primary);
 }
 
 [data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
-  border-left: 3px solid #14b8a6;
+  border-left: 3px solid var(--interactive-primary);
+  background: rgba(45, 212, 191, 0.08);
+  color: var(--interactive-primary);
 }
 
 /* Nav hover refinement */
 .md-nav__item .md-nav__link:hover {
-  background: #f0fdfa;
+  background: var(--interactive-primary-subtle);
 }
 
 [data-md-color-scheme="slate"] .md-nav__item .md-nav__link:hover {
-  background: #1e293b;
+  background: rgba(45, 212, 191, 0.05);
+}
+
+/* ========================================
+   SMALL PHONE BREAKPOINT (375px)
+   ======================================== */
+@media screen and (max-width: 375px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.8125rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 4px 6px;
+  }
+
+  /* Stack priority badges if needed */
+  .priority-stat,
+  .priority-urgent,
+  .priority-routine,
+  .priority-ext,
+  .priority-na {
+    font-size: 0.5625rem;
+    padding: 1px 2px;
+  }
+
+  /* Ensure touch targets are adequate */
+  .vote-btn,
+  .section-comment-btn,
+  .inline-comment-submit {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .comment-form button {
+    min-height: 44px;
+    padding: 10px 16px;
+  }
 }
