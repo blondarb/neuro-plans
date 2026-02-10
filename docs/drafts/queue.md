@@ -20,6 +20,30 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
+### HIGH-VALUE GAPS (Tier 14A — pending)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| Lumbar Stenosis | M48.06 | `lumbar-stenosis.md` | `pending` | — | 2026-02-09 |
+| Ulnar Neuropathy | G56.20 | `ulnar-neuropathy.md` | `pending` | — | 2026-02-09 |
+| Chemotherapy-Induced Neuropathy | G62.0 | `chemotherapy-induced-neuropathy.md` | `pending` | — | 2026-02-09 |
+| Parkinson's Disease - Motor Fluctuations | G20 | `parkinsons-motor-fluctuations.md` | `pending` | — | 2026-02-09 |
+| Delirium vs Dementia | R41.0 | `delirium-vs-dementia.md` | `pending` | — | 2026-02-09 |
+
+---
+
+### SUBSPECIALTY GAPS (Tier 14B — pending)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| New Daily Persistent Headache | G44.52 | `new-daily-persistent-headache.md` | `pending` | — | 2026-02-09 |
+| Horner Syndrome | G90.2 | `horner-syndrome.md` | `pending` | — | 2026-02-09 |
+| Hypertensive Encephalopathy | I67.4 | `hypertensive-encephalopathy.md` | `pending` | — | 2026-02-09 |
+| Parkinson's Disease - Psychosis | F06.0 | `parkinsons-psychosis.md` | `pending` | — | 2026-02-09 |
+| Autoimmune Dementia/Encephalopathy | G04.81 | `autoimmune-dementia.md` | `pending` | — | 2026-02-09 |
+
+---
+
 ### AUTONOMIC & PAIN EXPANSION (Tier 13 — approved)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
@@ -206,7 +230,8 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-09. Total approved: 134 plans. Autonomic & Pain Disorders section created with 5 plans.
+- Queue updated 2026-02-09. Total approved: 134 plans. Tier 14 queued: 10 plans (5 high-value gaps + 5 subspecialty gaps).
+- **Tier 14 queued** (2026-02-09): 10 plans across Tier 14A (Lumbar Stenosis, Ulnar Neuropathy, Chemo-Induced Neuropathy, PD Motor Fluctuations, Delirium vs Dementia) and Tier 14B (NDPH, Horner Syndrome, Hypertensive Encephalopathy, PD Psychosis, Autoimmune Dementia). 20 more conditions remain in Tier 14C-D (see tracker).
 - **Autonomic & Pain expansion** (2026-02-09): 5 Tier 13 drafts approved — POTS, Neurogenic Orthostatic Hypotension, Occipital Neuralgia, CRPS, Neuropathic Pain Management. New "Autonomic & Pain Disorders" nav section created.
 - **Sleep Medicine expansion** (2026-02-07): 5 new drafts added — REM Sleep Behavior Disorder, Obstructive Sleep Apnea (Neuro), Insomnia (Neurological), Idiopathic Hypersomnia, Non-REM Parasomnias. Complements existing Narcolepsy and RLS plans.
 - **Tier 10 batch** (2026-01-31): 5 new drafts added — Drug-Resistant Epilepsy, Epilepsy Chronic Management, Eclampsia/Seizure in Pregnancy, Moyamoya Disease, Post-Stroke Management. Awaiting physician approval.
