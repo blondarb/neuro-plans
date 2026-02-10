@@ -20,27 +20,27 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 ## Queue
 
-### HIGH-VALUE GAPS (Tier 14A — pending)
+### HIGH-VALUE GAPS (Tier 14A — drafts built, validation in progress)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Lumbar Stenosis | M48.06 | `lumbar-stenosis.md` | `pending` | — | 2026-02-09 |
-| Ulnar Neuropathy | G56.20 | `ulnar-neuropathy.md` | `pending` | — | 2026-02-09 |
-| Chemotherapy-Induced Neuropathy | G62.0 | `chemotherapy-induced-neuropathy.md` | `pending` | — | 2026-02-09 |
-| Parkinson's Disease - Motor Fluctuations | G20 | `parkinsons-motor-fluctuations.md` | `pending` | — | 2026-02-09 |
-| Delirium vs Dementia | R41.0 | `delirium-vs-dementia.md` | `pending` | — | 2026-02-09 |
+| Lumbar Stenosis | M48.06 | `lumbar-stenosis.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Ulnar Neuropathy | G56.20 | `ulnar-neuropathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Chemotherapy-Induced Neuropathy | G62.0 | `chemotherapy-induced-neuropathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Parkinson's Disease - Motor Fluctuations | G20 | `parkinsons-motor-fluctuations.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Delirium vs Dementia | R41.0 | `delirium-vs-dementia.md` | `in_progress` | tier14-drafts | 2026-02-09 |
 
 ---
 
-### SUBSPECIALTY GAPS (Tier 14B — pending)
+### SUBSPECIALTY GAPS (Tier 14B — drafts built, validation in progress)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| New Daily Persistent Headache | G44.52 | `new-daily-persistent-headache.md` | `pending` | — | 2026-02-09 |
-| Horner Syndrome | G90.2 | `horner-syndrome.md` | `pending` | — | 2026-02-09 |
-| Hypertensive Encephalopathy | I67.4 | `hypertensive-encephalopathy.md` | `pending` | — | 2026-02-09 |
-| Parkinson's Disease - Psychosis | F06.0 | `parkinsons-psychosis.md` | `pending` | — | 2026-02-09 |
-| Autoimmune Dementia/Encephalopathy | G04.81 | `autoimmune-dementia.md` | `pending` | — | 2026-02-09 |
+| New Daily Persistent Headache | G44.52 | `new-daily-persistent-headache.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Horner Syndrome | G90.2 | `horner-syndrome.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Hypertensive Encephalopathy | I67.4 | `hypertensive-encephalopathy.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Parkinson's Disease - Psychosis | F06.0 | `parkinsons-psychosis.md` | `in_progress` | tier14-drafts | 2026-02-09 |
+| Autoimmune Dementia/Encephalopathy | G04.81 | `autoimmune-dementia.md` | `in_progress` | tier14-drafts | 2026-02-09 |
 
 ---
 
