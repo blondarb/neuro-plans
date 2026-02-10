@@ -1,0 +1,719 @@
+{
+  "id": "hypertensive-encephalopathy",
+  "title": "Hypertensive Encephalopathy",
+  "version": "1.0",
+  "icd10": [
+    "** I67.4 (Hypertensive encephalopathy)",
+    "I16.1 (Hypertensive emergency)",
+    "I67.83 (Posterior reversible encephalopathy syndrome — PRES)",
+    "I10 (Essential hypertension)"
+  ],
+  "scope": "** Acute evaluation and management of hypertensive encephalopathy in the ED, hospital, and ICU settings. Includes differentiation from other causes of acute encephalopathy with hypertension, recognition of PRES overlap, blood pressure management protocols, and identification of underlying etiologies. Not primarily an outpatient template — focuses on the acute presentation.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "— Core Labs (Order for All Patients)": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Evaluate for MAHA (schistocytes), thrombocytopenia, infection"
+        },
+        {
+          "item": "BMP (Na, K, Cl, CO₂, BUN, Cr, glucose)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Renal function (hypertensive nephropathy), electrolyte derangements"
+        },
+        {
+          "item": "Urinalysis with microscopy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Proteinuria, hematuria, RBC casts (glomerulonephritis)"
+        },
+        {
+          "item": "Troponin",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Cardiac target organ damage (acute coronary syndrome)"
+        },
+        {
+          "item": "PT/INR, aPTT",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Coagulation status; DIC screen if MAHA present"
+        },
+        {
+          "item": "LDH",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hemolysis marker (MAHA, TTP-HUS)"
+        },
+        {
+          "item": "Peripheral blood smear",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Schistocytes — microangiopathic hemolytic anemia"
+        },
+        {
+          "item": "BNP or NT-proBNP",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Heart failure assessment"
+        },
+        {
+          "item": "Urine drug screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sympathomimetics (cocaine, amphetamines) as precipitant"
+        },
+        {
+          "item": "Pregnancy test (females of childbearing age)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Eclampsia — alters management entirely"
+        }
+      ],
+      "— Extended Labs (Order When Clinically Indicated)": [
+        {
+          "item": "CMP (full hepatic panel)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic damage; HELLP syndrome if pregnant"
+        },
+        {
+          "item": "Haptoglobin",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Low in MAHA — confirms hemolysis"
+        },
+        {
+          "item": "Reticulocyte count",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Elevated in hemolytic anemia"
+        },
+        {
+          "item": "D-dimer, fibrinogen",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "DIC screen if schistocytes present"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Chronic glycemic control — underlying diabetes"
+        },
+        {
+          "item": "TSH, free T4",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Thyrotoxicosis as precipitant"
+        },
+        {
+          "item": "Urine protein/creatinine ratio",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Quantify proteinuria — renal target organ damage"
+        },
+        {
+          "item": "Toxicology — specific levels",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Cocaine metabolites, amphetamine levels if UDS positive"
+        }
+      ],
+      "— Rare/Specialized Labs": [
+        {
+          "item": "Plasma renin activity, aldosterone",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Secondary hypertension workup (Conn syndrome, renal artery stenosis)"
+        },
+        {
+          "item": "Plasma metanephrines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Pheochromocytoma — paroxysmal hypertension"
+        },
+        {
+          "item": "24-hour urine catecholamines",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Pheochromocytoma confirmation"
+        },
+        {
+          "item": "Cortisol (AM or ACTH stim)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Cushing syndrome"
+        },
+        {
+          "item": "Complement C3, C4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Lupus, post-infectious GN if renal involvement"
+        },
+        {
+          "item": "ANA, anti-dsDNA, ANCA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Autoimmune etiologies (lupus cerebritis, vasculitis)"
+        },
+        {
+          "item": "ADAMTS13 activity",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "TTP if schistocytes + thrombocytopenia + neurologic symptoms"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "— Essential Imaging": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "First-line: rule out hemorrhagic stroke, large mass, hydrocephalus — fast availability in ED"
+        },
+        {
+          "item": "MRI brain with/without contrast (DWI + FLAIR)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**Gold standard for PRES** — FLAIR hyperintensity in posterior parietal-occipital regions; DWI distinguishes vasogenic (PRES) from cytotoxic (infarct) edema; 15-20% have atypical distribution"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "LVH, ischemia, arrhythmia — cardiac target organ damage"
+        },
+        {
+          "item": "Chest X-ray (PA/lateral)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Pulmonary edema, cardiomegaly, aortic widening (dissection)"
+        },
+        {
+          "item": "Fundoscopic examination",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "**Critical** — papilledema, flame hemorrhages, cotton-wool spots, hard exudates = malignant hypertension; grade III-IV retinopathy"
+        }
+      ],
+      "— Extended Imaging": [
+        {
+          "item": "CTA head and neck",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If stroke is on differential — evaluate for large vessel occlusion or dissection"
+        },
+        {
+          "item": "TTE (transthoracic echocardiography)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "LV function, wall motion abnormalities, LVH quantification"
+        },
+        {
+          "item": "Renal ultrasound with Doppler",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Renal artery stenosis, asymmetric kidney size, chronic kidney disease"
+        },
+        {
+          "item": "CTA/MRA renal arteries",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Fibromuscular dysplasia, renal artery stenosis — secondary cause"
+        },
+        {
+          "item": "EEG (continuous)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If seizures or persistent altered consciousness — nonconvulsive status is common in PRES"
+        }
+      ],
+      "— Rare/Specialized Studies": [
+        {
+          "item": "MR venography",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "If PRES-like presentation with headache — exclude cerebral venous thrombosis"
+        },
+        {
+          "item": "Catheter angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If vasculitis or vasospasm suspected (e.g., RCVS overlap)"
+        },
+        {
+          "item": "CT/CTA aorta",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If chest/back pain — aortic dissection with hypertensive emergency"
+        },
+        {
+          "item": "Adrenal CT/MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Pheochromocytoma, adrenal adenoma (Conn syndrome)"
+        },
+        {
+          "item": "Lumbar puncture",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Only if meningitis/encephalitis suspected and safe to perform — not typically needed for hypertensive encephalopathy"
+        }
+      ]
+    },
+    "Treatment": {
+      "— Acute / Emergency Treatment (ED and ICU)": [
+        {
+          "item": "Nicardipine IV infusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/hr",
+                "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "start 5 mg/hr, titrate by 2.5 mg/hr every 5-15 min, max 15 mg/hr",
+            "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
+          }
+        },
+        {
+          "item": "Labetalol IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Labetalol IV 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "may repeat 40-80 mg every 10 min (max 300 mg total); or infusion 0.5-2 mg/min",
+            "orderSentence": "Labetalol IV 20 mg IV"
+          }
+        },
+        {
+          "item": "Clevidipine IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg/hr",
+                "orderSentence": "Clevidipine IV 1-2 mg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "titrate by doubling dose every 90 sec initially, then increase by 1-2 mg/hr; max 32 mg/hr",
+            "orderSentence": "Clevidipine IV 1-2 mg/hr IV"
+          }
+        },
+        {
+          "item": "Sodium nitroprusside IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-0.5 mcg/kg/min",
+                "orderSentence": "Sodium nitroprusside IV 0.25-0.5 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "titrate every 5 min; max 10 mcg/kg/min",
+            "orderSentence": "Sodium nitroprusside IV 0.25-0.5 mcg/kg/min IV"
+          }
+        },
+        {
+          "item": "Fenoldopam IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mcg/kg/min",
+                "orderSentence": "Fenoldopam IV 0.1 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "titrate by 0.05-0.1 mcg/kg/min every 15 min",
+            "orderSentence": "Fenoldopam IV 0.1 mcg/kg/min IV"
+          }
+        },
+        {
+          "item": "Hydralazine IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Hydralazine IV 10-20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10-20 mg :: IV :: bolus every 4-6 hours",
+            "orderSentence": "Hydralazine IV 10-20 mg IV"
+          }
+        },
+        {
+          "item": "Lorazepam IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Lorazepam IV 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "may repeat x1 after 5 min",
+            "orderSentence": "Lorazepam IV 4 mg IV"
+          }
+        },
+        {
+          "item": "Levetiracetam IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 500-1000 mg BID",
+            "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+          }
+        },
+        {
+          "item": "Fosphenytoin IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg",
+                "orderSentence": "Fosphenytoin IV 20 mg PE/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 5 mg PE/kg/day",
+            "orderSentence": "Fosphenytoin IV 20 mg PE/kg IV"
+          }
+        },
+        {
+          "item": "Magnesium sulfate IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-6 g",
+                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 1-2 g/hr",
+            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+          }
+        }
+      ],
+      "— First-Line Maintenance Treatment (Hospital/Transition)": [
+        {
+          "item": "Amlodipine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Amlodipine PO 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 5 mg, titrate to 10 mg",
+            "orderSentence": "Amlodipine PO 5-10 mg PO"
+          }
+        },
+        {
+          "item": "Lisinopril PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-40 mg",
+                "orderSentence": "Lisinopril PO 10-40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 10 mg",
+            "orderSentence": "Lisinopril PO 10-40 mg PO"
+          }
+        },
+        {
+          "item": "Losartan PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mg",
+                "orderSentence": "Losartan PO 50-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 50 mg",
+            "orderSentence": "Losartan PO 50-100 mg PO"
+          }
+        },
+        {
+          "item": "Labetalol PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-800 mg",
+                "orderSentence": "Labetalol PO 200-800 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 200 mg BID",
+            "orderSentence": "Labetalol PO 200-800 mg PO"
+          }
+        },
+        {
+          "item": "Chlorthalidone PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-25 mg",
+                "orderSentence": "Chlorthalidone PO 12.5-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "12.5-25 mg :: PO :: once daily",
+            "orderSentence": "Chlorthalidone PO 12.5-25 mg PO"
+          }
+        }
+      ],
+      "— Second-Line / Adjunctive Treatment": [
+        {
+          "item": "Hydralazine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Hydralazine PO 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg :: PO :: TID-QID",
+            "orderSentence": "Hydralazine PO 25-50 mg PO"
+          }
+        },
+        {
+          "item": "Clonidine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1-0.3 mg",
+                "orderSentence": "Clonidine PO 0.1-0.3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.1-0.3 mg :: PO :: BID-TID",
+            "orderSentence": "Clonidine PO 0.1-0.3 mg PO"
+          }
+        },
+        {
+          "item": "Minoxidil PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Minoxidil PO 5-10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 5 mg",
+            "orderSentence": "Minoxidil PO 5-10 mg PO"
+          }
+        },
+        {
+          "item": "Spironolactone PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Spironolactone PO 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg :: PO :: once daily",
+            "orderSentence": "Spironolactone PO 25-50 mg PO"
+          }
+        },
+        {
+          "item": "Dexamethasone IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg",
+                "orderSentence": "Dexamethasone IV 4-8 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg :: IV :: every 6 hours",
+            "orderSentence": "Dexamethasone IV 4-8 mg IV"
+          }
+        }
+      ],
+      "— Eclampsia-Specific Treatment": [
+        {
+          "item": "Magnesium sulfate IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-6 g",
+                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 1-2 g/hr",
+            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+          }
+        },
+        {
+          "item": "Labetalol IV (pregnancy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 40-80 mg every 10-20 min (max 300 mg)",
+            "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
+          }
+        },
+        {
+          "item": "Hydralazine IV (pregnancy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5-10 mg :: IV :: every 20-30 min",
+            "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
+          }
+        },
+        {
+          "item": "Nifedipine PO (pregnancy)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mg",
+                "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-20 mg :: PO :: every 30 min (immediate release for acute)",
+            "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
+          }
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "— Referrals": [
+        {
+          "rationale": "Hypertensive nephropathy, acute kidney injury, secondary hypertension workup"
+        },
+        {
+          "rationale": "Acute coronary syndrome, heart failure, aortic dissection, malignant hypertension with cardiac involvement"
+        },
+        {
+          "rationale": "Seizure management, PRES diagnosis, differentiation from stroke, altered mental status workup"
+        },
+        {
+          "rationale": "All cases of eclampsia/preeclampsia — co-management mandatory"
+        },
+        {
+          "rationale": "Formal fundoscopy — grade retinopathy, assess for papilledema"
+        },
+        {
+          "rationale": "Secondary hypertension workup (pheochromocytoma, Cushing, Conn syndrome, renovascular HTN)"
+        }
+      ]
+    }
+  }
+}

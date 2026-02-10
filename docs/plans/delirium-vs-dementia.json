@@ -1,0 +1,985 @@
+{
+  "id": "delirium-vs-dementia",
+  "title": "Delirium versus Dementia — Diagnostic Evaluation",
+  "version": "1.0",
+  "icd10": [
+    "** R41.0 (Disorientation",
+    "unspecified)",
+    "F05 (Delirium due to known physiological condition)",
+    "R41.3 (Other amnesia)",
+    "F03.90 (Unspecified dementia without behavioral disturbance)",
+    "R41.82 (Altered mental status",
+    "unspecified)",
+    "F01.50 (Vascular dementia without behavioral disturbance)",
+    "G30.9 (Alzheimer disease",
+    "unspecified)"
+  ],
+  "scope": "** Systematic evaluation to differentiate delirium from dementia and identify reversible causes of acute confusion. Covers ED evaluation of altered mental status, inpatient delirium prevention and management, outpatient evaluation of cognitive complaints with possible delirium superimposed on dementia. Excludes detailed management of specific dementia subtypes (see Alzheimer's, Vascular Dementia, and other dementia-specific templates). Focuses on the diagnostic differentiation and acute management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (ALL Patients with Acute Confusion)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection (leukocytosis/bandemia); anemia; thrombocytopenia (DIC/TTP)",
+          "target": "Normal WBC; Hgb >10; platelets normal"
+        },
+        {
+          "item": "CMP (CPT 80053) (BMP + LFTs, albumin, total protein)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte derangement (Na, Ca, glucose); renal failure (uremia); hepatic failure (encephalopathy); dehydration",
+          "target": "Normal electrolytes; normal creatinine; normal LFTs; glucose 70-180"
+        },
+        {
+          "item": "Urinalysis with culture (CPT 81001, 87086)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "UTI is the most common precipitant of delirium in elderly",
+          "target": "Negative; positive → treat only if symptomatic (asymptomatic bacteriuria common in elderly and should not be treated to \"fix\" delirium)"
+        },
+        {
+          "item": "Fingerstick glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypoglycemia or hyperglycemia as immediate reversible cause",
+          "target": "70-180 mg/dL"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Hypothyroid encephalopathy (myxedema); hyperthyroid agitation",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Ammonia (CPT 82785)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hepatic encephalopathy (if liver disease history or stigmata)",
+          "target": "<35 mcmol/L"
+        },
+        {
+          "item": "Drug/toxicology screen (urine and serum)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Intoxication, overdose, or drug-induced delirium; anticholinergic burden",
+          "target": "Negative; identify offending substances"
+        },
+        {
+          "item": "Blood cultures (x2 sets)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Sepsis as cause of delirium; especially if febrile or hemodynamically unstable",
+          "target": "No growth"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Pneumonia (common delirium precipitant in elderly); CHF",
+          "target": "No infiltrate; no effusion"
+        }
+      ],
+      "Extended Labs (Guided by Clinical Suspicion)": [
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causing reversible cognitive impairment; common in elderly",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency contributing to cognitive dysfunction",
+          "target": ">5.9 ng/mL"
+        },
+        {
+          "item": "Serum magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia causing confusion; common with diuretics, alcohol, and malnutrition",
+          "target": ">1.8 mg/dL"
+        },
+        {
+          "item": "Serum phosphate",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Hypophosphatemia causing encephalopathy (refeeding, alcoholism)",
+          "target": "2.5-4.5 mg/dL"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal crisis causing confusion and hemodynamic instability",
+          "target": ">10 mcg/dL (AM); ACTH stim test if suspicious"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis (treatable cause of dementia); screen in all new dementia evaluations",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "HIV antibody",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neurocognitive disorder; screen in appropriate risk groups",
+          "target": "Negative"
+        },
+        {
+          "item": "Thiamine level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Wernicke encephalopathy (confusion, ataxia, ophthalmoplegia) — give thiamine empirically BEFORE glucose",
+          "target": "Normal; low confirms Wernicke (but do NOT wait for result — treat empirically)"
+        },
+        {
+          "item": "Alcohol level / osmolar gap",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Alcohol intoxication/withdrawal; toxic alcohol ingestion",
+          "target": "Negative alcohol; normal osmolar gap"
+        },
+        {
+          "item": "Medication reconciliation (anticholinergic burden calculation)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Medications are the most common modifiable cause of delirium; calculate anticholinergic cognitive burden (ACB) score",
+          "target": "ACB score <3; identify high-risk drugs (diphenhydramine, oxybutynin, TCA, benzodiazepines)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF analysis (cells, protein, glucose, cultures, HSV PCR)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "If meningitis/encephalitis suspected (fever, nuchal rigidity, rapid decline, seizures); autoimmune encephalitis",
+          "target": "Normal cell count; protein <45; glucose >40; negative cultures and PCR"
+        },
+        {
+          "item": "Autoimmune encephalitis panel (NMDA-R, LGI1, CASPR2, GABA-B)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "URGENT",
+          "rationale": "Subacute confusion with psychiatric features, seizures, or movement disorder in young/middle-aged; rapidly progressive dementia",
+          "target": "Negative; positive → specific autoimmune encephalitis"
+        },
+        {
+          "item": "Prion disease markers (CSF RT-QuIC, 14-3-3, tau)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rapidly progressive dementia over weeks-months; CJD evaluation",
+          "target": "Negative; positive RT-QuIC = probable CJD"
+        },
+        {
+          "item": "Heavy metals (lead, mercury, arsenic)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Occupational or environmental exposure history; chronic encephalopathy",
+          "target": "Normal levels"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Subacute confusion with cancer history or unexplained weight loss; limbic encephalitis",
+          "target": "Negative"
+        },
+        {
+          "item": "Porphobilinogen and aminolevulinic acid (urine)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "rationale": "Acute intermittent porphyria causing confusion, abdominal pain, neuropathy",
+          "target": "Normal; elevated = porphyria"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Immediate in ED for acute confusion; rule out acute structural cause",
+          "target": "No acute hemorrhage; no mass effect; no acute stroke; chronic atrophy (expected in elderly/dementia)",
+          "contraindications": "Pregnancy (relative; obtain if clinically necessary)"
+        },
+        {
+          "item": "CAM (Confusion Assessment Method) or 3D-CAM",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Administer at time of evaluation; validated delirium screening tool",
+          "target": "Positive = delirium; negative with low suspicion = consider dementia evaluation",
+          "contraindications": "None; validated bedside tool"
+        },
+        {
+          "item": "bCAM or CAM-ICU (for ICU patients)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Richmond Agitation-Sedation Scale (RASS) first; then CAM-ICU if RASS >=  -3",
+          "target": "Positive = delirium; RASS -4 or -5 = too sedated to assess (delirium cannot be assessed in coma)",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "MRI brain without contrast (CPT 70551)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If dementia workup indicated; subacute presentation; focal neurologic findings; age <65; atypical features",
+          "target": "Atrophy pattern (temporal = AD; frontotemporal = FTD); white matter disease; NPH (ventriculomegaly); structural lesion; stroke",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "URGENT",
+          "timing": "If non-convulsive status epilepticus (NCSE) suspected; differentiating delirium vs psychiatric; refractory encephalopathy",
+          "target": "Delirium: diffuse theta/delta slowing; NCSE: epileptiform discharges; psychiatric: normal alpha background; CJD: periodic sharp wave complexes",
+          "contraindications": "None; requires cooperation (may need sedation for application)"
+        },
+        {
+          "item": "Lumbar puncture / CSF analysis",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "timing": "Fever with confusion; meningismus; immunocompromised; rapidly progressive dementia; autoimmune encephalitis suspected",
+          "target": "Cell count, protein, glucose, gram stain, cultures, HSV PCR, VDRL; AD biomarkers (A-beta 42, p-tau, t-tau) if dementia evaluation",
+          "contraindications": "Coagulopathy (INR >1.5, platelets <50K); mass lesion with shift on CT"
+        }
+      ],
+      "Rare/Specialized (Dementia Evaluation — Outpatient)": [
+        {
+          "item": "Neuropsychological testing (CPT 96116)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "After delirium resolves; characterize cognitive domains; differentiate dementia subtypes; establish baseline",
+          "target": "Pattern of cognitive deficits: amnestic (AD), executive/attention (vascular/FTD), visuospatial (LBD)",
+          "contraindications": "Acute delirium (invalid during delirium); severe language barrier"
+        },
+        {
+          "item": "FDG-PET brain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Differentiate AD from FTD; atypical presentations",
+          "target": "Temporoparietal hypometabolism (AD); frontal/temporal hypometabolism (FTD)",
+          "contraindications": "Pregnancy; uncontrolled diabetes (affects uptake)"
+        },
+        {
+          "item": "Amyloid PET (florbetapir, florbetaben, flutemetamol)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Diagnostic uncertainty between AD and non-AD dementia; research settings",
+          "target": "Positive = amyloid deposition (supports AD); negative = unlikely AD",
+          "contraindications": "Pregnancy"
+        },
+        {
+          "item": "CSF AD biomarkers (A-beta 42, p-tau, t-tau)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Support AD diagnosis; differentiate AD from other dementias",
+          "target": "Low A-beta 42 + elevated p-tau = AD pattern",
+          "contraindications": "LP contraindications"
+        }
+      ]
+    },
+    "Treatment": {
+      "Delirium Management — Non-Pharmacologic (First-Line)": [
+        {
+          "item": "Reorientation and environmental modification",
+          "route": "Environmental",
+          "indication": "All delirium patients; cornerstone of delirium management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous",
+                "orderSentence": "Reorientation and environmental modification Continuous Environmental"
+              }
+            ],
+            "route": "Environmental",
+            "instructions": "Provide clock, calendar, and familiar objects; ensure glasses and hearing aids are in place; maintain day-night lighting cycle; minimize room changes; use orientation cues (\"It is [day/date], you are in [hospital]\")",
+            "orderSentence": "Reorientation and environmental modification Continuous Environmental"
+          },
+          "contraindications": "None",
+          "monitoring": "CAM score; agitation level; orientation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sleep-wake cycle preservation",
+          "route": "Environmental",
+          "indication": "All hospitalized patients at delirium risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous",
+                "orderSentence": "Sleep-wake cycle preservation Continuous Environmental"
+              }
+            ],
+            "route": "Environmental",
+            "instructions": "Cluster care activities to avoid nocturnal interruptions; minimize nighttime vitals/blood draws; maintain dark, quiet environment at night; bright light during day; avoid sedating medications at inappropriate times",
+            "orderSentence": "Sleep-wake cycle preservation Continuous Environmental"
+          },
+          "contraindications": "None",
+          "monitoring": "Sleep quality; nocturnal agitation; CAM",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Early mobilization",
+          "route": "Physical",
+          "indication": "All hospitalized patients with delirium or delirium risk; single most effective prevention strategy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Daily",
+                "orderSentence": "Early mobilization Daily Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Out of bed to chair for meals; ambulate in hallway 2-3x/day with assistance; PT/OT involvement; avoid unnecessary restraints and tethers (Foley, telemetry, lines)",
+            "orderSentence": "Early mobilization Daily Physical"
+          },
+          "contraindications": "Hemodynamic instability; acute fracture; airway compromise",
+          "monitoring": "Functional status; fall risk; tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Treat underlying cause",
+          "route": "Medical",
+          "indication": "ALL delirium patients; delirium is a medical emergency indicating an underlying condition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Immediate",
+                "orderSentence": "Treat underlying cause Immediate Medical"
+              }
+            ],
+            "route": "Medical",
+            "instructions": "Systematically identify and treat: infection (antibiotics), metabolic (correct Na, glucose, Ca, Mg), medication toxicity (discontinue offending agents), urinary retention (catheterize), fecal impaction (disimpact), pain (treat), dehydration (IV fluids), hypoxia (supplemental O2)",
+            "orderSentence": "Treat underlying cause Immediate Medical"
+          },
+          "contraindications": "None",
+          "monitoring": "Serial CAM; vital signs; labs trending; mental status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Medication review and deprescribing",
+          "route": "Medical",
+          "indication": "All delirious patients; medications are the most common modifiable cause",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Immediate",
+                "orderSentence": "Medication review and deprescribing Immediate Medical"
+              }
+            ],
+            "route": "Medical",
+            "instructions": "Review all medications; calculate ACB (Anticholinergic Cognitive Burden) score; discontinue or reduce: benzodiazepines, anticholinergics (diphenhydramine, oxybutynin, TCA), opioids (minimize to lowest effective), sedative-hypnotics, steroids",
+            "orderSentence": "Medication review and deprescribing Immediate Medical"
+          },
+          "contraindications": "Balance against untreated conditions (pain, seizure, psychiatric)",
+          "monitoring": "ACB score <3; delirium severity; withdrawal symptoms if tapering",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Thiamine supplementation (empiric)",
+          "route": "IV/IM",
+          "indication": "All patients with delirium + suspected alcohol use, malnutrition, or unknown history",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine supplementation (empiric) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Thiamine 500 mg IV TID for 3 days (Wernicke dosing); then 250 mg IV daily for 3-5 days; then 100 mg PO daily; give BEFORE glucose administration",
+            "orderSentence": "Thiamine supplementation (empiric) 500 mg IV"
+          },
+          "contraindications": "Rare anaphylaxis (IV)",
+          "monitoring": "Clinical response; ocular exam; gait",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Delirium Management — Pharmacologic (Second-Line, for Safety)": [
+        {
+          "item": "Haloperidol (low-dose)",
+          "route": "PO/IM/IV",
+          "indication": "Hyperactive delirium with agitation threatening safety (pulling lines, falling, violence); NOT for hypoactive delirium; NOT for sedation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Haloperidol (low-dose) 0.5-1 mg PO/IM"
+              }
+            ],
+            "route": "PO/IM",
+            "instructions": "Start 0.5 mg PO/IM (elderly); 1-2 mg in younger adults; q4-6h PRN; max 5 mg/day in elderly; lowest dose for shortest duration; IV only in ICU with telemetry",
+            "orderSentence": "Haloperidol (low-dose) 0.5-1 mg PO/IM"
+          },
+          "contraindications": "Parkinson disease; Lewy body dementia; QTc >500 ms; torsades risk; NMS history",
+          "monitoring": "QTc (obtain ECG before and during treatment); EPS/akathisia; sedation; NMS; vital signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Agitation in delirium; preferred in Parkinson disease or Lewy body dementia over haloperidol (lower EPS risk)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-25 mg",
+                "orderSentence": "Quetiapine 12.5-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg PO qHS or BID; max 100 mg/day; lowest effective dose; short course only",
+            "orderSentence": "Quetiapine 12.5-25 mg PO"
+          },
+          "contraindications": "QTc >500 ms; severe hepatic impairment",
+          "monitoring": "QTc; sedation; orthostatic BP; metabolic (glucose); EPS (low risk but possible)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Delirium prevention and sleep-wake cycle restoration; adjunct to non-pharmacologic measures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg at bedtime; may aid sleep-wake cycle restoration; evidence mixed but favorable safety profile",
+            "orderSentence": "Melatonin 3-5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sedation; next-day grogginess",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Dexmedetomidine (Precedex)",
+          "route": "IV",
+          "indication": "ICU delirium with agitation requiring sedation; preferred over benzodiazepines for delirium in ventilated patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.2-0.7 mcg/kg/hr",
+                "orderSentence": "Dexmedetomidine (Precedex) 0.2-0.7 mcg/kg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 0.2 mcg/kg/hr; titrate to target RASS; max 1.5 mcg/kg/hr; alpha-2 agonist; maintains arousability; may reduce delirium duration vs benzodiazepines",
+            "orderSentence": "Dexmedetomidine (Precedex) 0.2-0.7 mcg/kg/hr IV"
+          },
+          "contraindications": "Severe bradycardia; advanced heart block; severe hypotension",
+          "monitoring": "HR (bradycardia); BP (hypotension); RASS; CAM-ICU",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid benzodiazepines",
+          "route": "—",
+          "indication": "Benzodiazepines WORSEN delirium except in alcohol/benzo withdrawal and seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Do not use",
+                "orderSentence": "Avoid benzodiazepines Do not use —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Benzodiazepines are a major risk factor for delirium; avoid lorazepam, diazepam, midazolam for agitation in delirious patients; EXCEPTION: alcohol withdrawal (use benzodiazepine protocol) and seizures",
+            "orderSentence": "Avoid benzodiazepines Do not use —"
+          },
+          "contraindications": "Exception: alcohol/benzo withdrawal; seizure",
+          "monitoring": "—",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Dementia Evaluation — Outpatient Treatment Initiation": [
+        {
+          "item": "Donepezil (Aricept)",
+          "route": "PO",
+          "indication": "Mild-moderate Alzheimer dementia; consider after delirium resolves and dementia is confirmed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil (Aricept) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg qHS; increase to 10 mg qHS after 4-6 weeks if tolerated; max 23 mg/day (moderate-severe AD)",
+            "orderSentence": "Donepezil (Aricept) 5 mg PO"
+          },
+          "contraindications": "Sick sinus syndrome; AV block; active peptic ulcer; severe asthma/COPD",
+          "monitoring": "GI effects (nausea, diarrhea, anorexia); bradycardia; syncope; nightmares; muscle cramps",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine (Namenda)",
+          "route": "PO",
+          "indication": "Moderate-severe Alzheimer dementia; may add to cholinesterase inhibitor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine (Namenda) 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg weekly; target 10 mg BID; XR formulation: start 7 mg daily, increase weekly to 28 mg daily",
+            "orderSentence": "Memantine (Namenda) 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); seizure history (lowers threshold modestly)",
+          "monitoring": "Dizziness; headache; constipation; renal function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for atypical delirium (young patient, no identifiable cause, focal signs, rapidly progressive), suspected autoimmune encephalitis, or NCSE evaluation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Geriatrics or hospital medicine for delirium prevention program implementation (HELP program — Hospital Elder Life Program) and complex geriatric care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology/neuropsychology for outpatient dementia evaluation after delirium resolves: formal cognitive testing, dementia subtype characterization, and treatment planning",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for behavioral management if severe agitation not responding to low-dose antipsychotics, or concurrent major psychiatric disorder complicating delirium management",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Social work and case management for discharge planning, caregiver support, safety assessment, and community resources for patients with newly identified dementia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care if advanced dementia with delirium; goals of care discussion; comfort-focused management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Delirium is a medical emergency indicating an underlying medical problem — it is not \"normal aging\" or \"just confusion\" and requires thorough medical evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Family members are the most valuable resource for detecting delirium: inform the medical team if your loved one is \"not themselves,\" more confused than usual, seeing things, or unusually agitated or withdrawn",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Bring glasses, hearing aids, and familiar objects from home to the hospital — sensory deprivation and unfamiliar environments worsen delirium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Stay with the patient during hospitalization if possible — familiar faces and voices provide reorientation and reduce agitation more effectively than medications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Do not use physical restraints unless absolutely necessary for immediate safety — restraints increase delirium severity, duration, and risk of injury",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "After discharge, a new dementia evaluation may be recommended — delirium can unmask underlying cognitive decline that was not previously recognized",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any worsening confusion, fever, falls, or inability to take medications after discharge — delirium can recur, and underlying causes may not fully resolve at discharge",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Delirium Prevention (HELP Program Components)": [
+        {
+          "item": "Implement Hospital Elder Life Program (HELP) protocols: orienting communication, early mobilization, sleep protocol, hydration assistance, vision/hearing optimization, and cognitive stimulation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Avoid prescribing high-risk medications in elderly patients: benzodiazepines, anticholinergics, opioids (minimize), sedative-hypnotics (no zolpidem, no diphenhydramine for sleep)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Minimize urinary catheter use (remove within 24h if possible); each day with a catheter increases delirium and infection risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Target light sedation (RASS 0 to -1) in ICU; daily sedation interruption; avoid benzodiazepine-based sedation protocols (prefer dexmedetomidine or propofol)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Ensure adequate pain management — undertreated pain precipitates delirium; use scheduled acetaminophen (not PRN); minimize opioids; use multimodal analgesia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Delirium (toxic/metabolic encephalopathy)",
+      "features": "Acute onset; fluctuating attention; identifiable precipitant (infection, medication, metabolic); reversible",
+      "tests": "CAM positive; labs identifying cause; EEG: diffuse slowing; resolves with treatment of cause"
+    },
+    {
+      "diagnosis": "Alzheimer dementia",
+      "features": "Insidious onset over years; progressive memory loss; preserved attention initially; no fluctuation",
+      "tests": "MoCA/MMSE declining; MRI (temporal atrophy); amyloid PET; CSF AD biomarkers; neuropsych testing"
+    },
+    {
+      "diagnosis": "Vascular dementia",
+      "features": "Stepwise cognitive decline; executive dysfunction prominent; history of strokes/TIA; vascular risk factors",
+      "tests": "MRI showing strategic infarcts or extensive white matter disease; history of cerebrovascular events"
+    },
+    {
+      "diagnosis": "Lewy body dementia (DLB)",
+      "features": "Visual hallucinations (early); fluctuating cognition (can mimic delirium); parkinsonism; REM sleep behavior disorder; severe neuroleptic sensitivity",
+      "tests": "Clinical criteria (McKeith); DaTscan (reduced uptake); AVOID haloperidol — use quetiapine if needed; fluctuations with consistent hallucinations"
+    },
+    {
+      "diagnosis": "Frontotemporal dementia (FTD)",
+      "features": "Behavioral/personality changes (disinhibition, apathy); language changes; younger onset (45-65); preserved memory initially",
+      "tests": "Neuropsych (executive/behavioral profile); MRI (frontal/temporal atrophy); FDG-PET"
+    },
+    {
+      "diagnosis": "Non-convulsive status epilepticus (NCSE)",
+      "features": "Prolonged confusion without clear seizure activity; may have subtle motor signs (eye twitching, automatisms); prolonged post-ictal confusion",
+      "tests": "EEG showing continuous or frequent epileptiform discharges; trial of IV benzodiazepine"
+    },
+    {
+      "diagnosis": "Psychiatric disorder (depression, psychosis, catatonia)",
+      "features": "Depression: psychomotor retardation, flat affect, coherent when engaged; psychosis: organized delusions, auditory hallucinations, clear sensorium; catatonia: immobility, posturing, waxy flexibility",
+      "tests": "Psychiatric evaluation; EEG (normal alpha rhythm in psychiatric); CAM negative; bush-Francis catatonia rating scale; lorazepam challenge for catatonia"
+    },
+    {
+      "diagnosis": "Wernicke encephalopathy",
+      "features": "Confusion + ophthalmoplegia + ataxia (classic triad in <33%); alcohol use or malnutrition; RESPOND to thiamine",
+      "tests": "Low thiamine level (but treat empirically); MRI (mammillary body and periaqueductal enhancement); clinical response to IV thiamine"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Gait apraxia (magnetic gait) + urinary incontinence + dementia; triad develops over months",
+      "tests": "MRI (ventriculomegaly disproportionate to sulcal atrophy); Evans index >0.3; high-volume LP tap test (gait improves)"
+    },
+    {
+      "diagnosis": "Medication-induced cognitive impairment",
+      "features": "Temporal relationship to medication changes; common offenders: anticholinergics, benzodiazepines, opioids, steroids, anticonvulsants",
+      "tests": "Medication reconciliation; ACB score; improvement with deprescribing"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CAM has sensitivity 94-100% and specificity 90-95% for delirium diagnosis",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Inouye SK et al. Ann Intern Med 1990](https://pubmed.ncbi.nlm.nih.gov/2240918/)"
+    },
+    {
+      "recommendation": "Hospital Elder Life Program (HELP) reduces delirium incidence by 33-40%",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Inouye SK et al. NEJM 1999](https://pubmed.ncbi.nlm.nih.gov/10053175/)"
+    },
+    {
+      "recommendation": "Multicomponent non-pharmacologic interventions are first-line for delirium prevention and management",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Hshieh TT et al. JAMA Intern Med 2015](https://pubmed.ncbi.nlm.nih.gov/25643002/)"
+    },
+    {
+      "recommendation": "Antipsychotics do not reduce delirium duration or severity; use only for safety (agitation threatening patient/staff)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Nikooie R et al. JAMA Intern Med 2019](https://pubmed.ncbi.nlm.nih.gov/31476770/)"
+    },
+    {
+      "recommendation": "Benzodiazepines are a major risk factor for delirium and should be avoided except for alcohol withdrawal",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Clegg A, Young JB. Age Ageing 2011](https://pubmed.ncbi.nlm.nih.gov/21169280/)"
+    },
+    {
+      "recommendation": "Dexmedetomidine reduces delirium incidence in ICU compared to benzodiazepine sedation",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Riker RR et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19188334/)"
+    },
+    {
+      "recommendation": "Delirium superimposed on dementia occurs in up to 65% of hospitalized dementia patients",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Fick DM et al. J Am Geriatr Soc 2002](https://pubmed.ncbi.nlm.nih.gov/12366629/)"
+    },
+    {
+      "recommendation": "APA Practice Guidelines for Delirium",
+      "evidenceLevel": "Guideline",
+      "source": "[American Psychiatric Association 1999 (updated 2010)](https://pubmed.ncbi.nlm.nih.gov/10627500/)"
+    },
+    {
+      "recommendation": "Thiamine 500 mg IV TID for suspected Wernicke encephalopathy",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Galvin R et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642790/)"
+    },
+    {
+      "recommendation": "MoCA is preferred over MMSE for cognitive screening; more sensitive for MCI and vascular cognitive impairment",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Nasreddine ZS et al. J Am Geriatr Soc 2005](https://pubmed.ncbi.nlm.nih.gov/15817019/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "CAM (Confusion Assessment Method)",
+      "frequency": "Q8-12h in hospital; each nursing shift; every ED reassessment",
+      "action": "Intensify non-pharmacologic interventions; identify and treat precipitant; consider pharmacologic management for safety",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "CAM-ICU / RASS",
+      "frequency": "Q4h in ICU; with each sedation assessment",
+      "action": "Reduce sedation; identify delirium cause; switch from benzos to dexmedetomidine; early mobilization",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Vital signs including oxygen saturation",
+      "frequency": "Q4-8h; more frequent if unstable",
+      "action": "Identify infection, hemodynamic instability, hypoxia as delirium precipitant",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Medication list review (ACB score)",
+      "frequency": "Daily; at admission; at each care transition",
+      "action": "Deprescribe high-ACB medications; substitute safer alternatives",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Fluid balance and nutrition",
+      "frequency": "Daily",
+      "action": "IV fluids for dehydration; nasogastric feeding if needed; ensure meals/snacks provided",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Cognitive assessment (MoCA)",
+      "frequency": "After delirium resolves (wait 1-3 months); baseline for dementia evaluation",
+      "action": "Formal neuropsychological testing; dementia workup if persistent cognitive impairment after delirium resolves",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (ADLs)",
+      "frequency": "At admission and discharge; at each OPD visit",
+      "action": "Rehab referral if not returning to baseline; home safety assessment; caregiver support",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Reversible cause identified and treated (e.g., UTI, medication-related, dehydration); delirium resolving; safe home environment; caregiver capable of monitoring; PCP/neurology follow-up within 1 week"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Mild delirium with treatable cause; awaiting lab/imaging results; IV medications or hydration needed for <24 hours; no acute safety concern"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Delirium with unclear etiology requiring workup; delirium with no safe discharge disposition; unable to take medications or maintain hydration orally; new or worsening neurologic deficit; severe agitation requiring monitoring and medication titration"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Delirium with hemodynamic instability; requiring intubation (airway compromise from aspiration, severe agitation); suspected NCSE needing continuous EEG; severe metabolic derangement (DKA, hyponatremia); Wernicke encephalopathy with hemodynamic instability"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology/geriatrics)",
+      "criteria": "Post-delirium cognitive assessment in 1-3 months (delirium can unmask dementia); new MoCA <26 warrants formal dementia evaluation; outpatient MRI, neuropsych testing, labs for dementia workup"
+    },
+    {
+      "disposition": "Outpatient follow-up (PCP)",
+      "criteria": "1 week post-discharge: medication reconciliation, delirium resolution confirmation, caregiver check-in; ongoing: medication deprescribing, fall prevention, advance care planning"
+    }
+  ]
+}

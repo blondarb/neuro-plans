@@ -1,0 +1,762 @@
+{
+  "id": "ulnar-neuropathy",
+  "title": "Ulnar Neuropathy",
+  "version": "1.0",
+  "icd10": [
+    "** G56.20 (Ulnar nerve lesion",
+    "unspecified upper limb)",
+    "G56.21 (Ulnar nerve lesion",
+    "right upper limb)",
+    "G56.22 (Ulnar nerve lesion",
+    "left upper limb)",
+    "G56.23 (Ulnar nerve lesion",
+    "bilateral upper limbs)"
+  ],
+  "scope": "** Evaluation and management of ulnar neuropathy from entrapment (cubital tunnel, Guyon canal) and other etiologies in adults. Includes electrodiagnostic workup, conservative management, surgical decision-making, and post-operative care. Covers ED evaluation for acute ulnar injury, inpatient perioperative management, and outpatient chronic management. Excludes brachial plexus injuries and cervical radiculopathy as primary diagnoses (addressed in differential).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Identify Contributing Factors)": [
+        {
+          "item": "Fasting glucose or HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes predisposes to entrapment neuropathy (double crush); identify metabolic contributor",
+          "target": "Fasting glucose <126 mg/dL; HbA1c <6.5%"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism predisposes to entrapment neuropathy through connective tissue edema",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function (uremic neuropathy); electrolytes; preoperative baseline",
+          "target": "Normal creatinine and electrolytes"
+        },
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline for surgical planning; rule out infection in acute presentations",
+          "target": "Normal WBC; adequate Hgb"
+        }
+      ],
+      "Extended Labs (Selected Patients)": [
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency as contributor to neuropathy (double crush or concurrent polyneuropathy)",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "ESR/CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory process (rheumatoid arthritis, vasculitis) contributing to nerve compression",
+          "target": "Normal; elevated suggests inflammatory etiology"
+        },
+        {
+          "item": "Rheumatoid factor / Anti-CCP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Rheumatoid arthritis causing elbow synovitis and ulnar nerve compression",
+          "target": "Negative"
+        },
+        {
+          "item": "Uric acid",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Gout causing olecranon bursitis or tophaceous deposits compressing ulnar nerve",
+          "target": "Normal (<7.0 mg/dL)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Ganglioside antibodies (anti-GM1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Multifocal motor neuropathy mimicking ulnar neuropathy; conduction block pattern",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If rapidly progressive or multifocal neuropathy with unexplained weight loss",
+          "target": "Negative"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "EMG/NCS — ulnar nerve study (CPT 95907-95909, 95886)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Standard workup; at least 3-4 weeks after symptom onset for axonal changes to develop",
+          "target": "Slowing of ulnar NCV across the elbow (<50 m/s or >10 m/s drop); conduction block at elbow; reduced CMAP amplitude (axonal loss); abnormal sensory NAP; denervation in ulnar-innervated hand intrinsics on EMG",
+          "contraindications": "None (relative: anticoagulation for needle EMG)"
+        },
+        {
+          "item": "X-ray elbow (AP, lateral)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If trauma suspected; evaluate for fracture, arthritis, cubitus valgus, osteophytes",
+          "target": "No fracture; evaluate for cubitus valgus deformity, osteophytes in cubital tunnel, olecranon spur",
+          "contraindications": "Pregnancy (shield)"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "Ultrasound of ulnar nerve at elbow (CPT 76882)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Complement to EMG; assess nerve swelling, subluxation, and surrounding pathology",
+          "target": "Increased cross-sectional area >10 mm² at cubital tunnel (swollen nerve); ulnar nerve subluxation with elbow flexion; space-occupying lesion",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI elbow without contrast (CPT 73218)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If mass lesion suspected; preoperative planning; evaluate for ganglion cyst, lipoma, or anomalous muscle",
+          "target": "Nerve signal change (T2 hyperintensity indicates edema); space-occupying lesion; anconeus epitrochlearis muscle (anomalous)",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MRI wrist (if Guyon canal syndrome suspected)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Evaluate for mass (ganglion cyst) or hook of hamate fracture compressing ulnar nerve at wrist",
+          "target": "Ganglion cyst, lipoma, or hook of hamate fracture in Guyon canal",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "X-ray wrist (carpal tunnel view)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If hook of hamate fracture suspected (Guyon canal syndrome); common in racquet sports/cycling",
+          "target": "Hook of hamate fracture; carpal bone abnormality",
+          "contraindications": "Pregnancy (shield)"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "MRI cervical spine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If double crush suspected; C8-T1 radiculopathy in differential",
+          "target": "No cervical disc herniation or foraminal stenosis at C8-T1",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "MR neurography (high-resolution)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Precise nerve imaging when standard MRI inconclusive; pre-revision surgery",
+          "target": "Detailed nerve morphology; fascicular pattern; entrapment site localization",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "CT elbow",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Superior bony detail for osteophyte characterization or fracture assessment if MRI contraindicated",
+          "target": "Bony canal dimensions; osteophytes; heterotopic ossification",
+          "contraindications": "Pregnancy (relative)"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Elbow splint (extension)",
+          "route": "Physical",
+          "indication": "Acute ulnar neuropathy; post-trauma; prevent flexion during sleep",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Splint at 30-45 degrees of flexion",
+                "orderSentence": "Elbow splint (extension) Splint at 30-45 degrees of flexion Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Apply padded elbow splint or towel wrap in 30-45 degrees of flexion; prevents sustained elbow flexion >90 degrees during sleep",
+            "orderSentence": "Elbow splint (extension) Splint at 30-45 degrees of flexion Physical"
+          },
+          "contraindications": "Compartment syndrome; skin breakdown",
+          "monitoring": "Skin integrity; compliance; sensory checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "NSAIDs (ibuprofen or naproxen)",
+          "route": "PO",
+          "indication": "Pain and inflammation at entrapment site",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-600 mg",
+                "orderSentence": "NSAIDs (ibuprofen or naproxen) 400-600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Ibuprofen 400-600 mg TID with food; or naproxen 250-500 mg BID; trial 2-4 weeks",
+            "orderSentence": "NSAIDs (ibuprofen or naproxen) 400-600 mg PO"
+          },
+          "contraindications": "GI bleeding; renal impairment; aspirin-sensitive asthma",
+          "monitoring": "GI symptoms; renal function",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Conservative Management": [
+        {
+          "item": "Activity modification / nerve gliding exercises",
+          "route": "Physical",
+          "indication": "All patients with cubital tunnel syndrome; mild-moderate symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Daily",
+                "orderSentence": "Activity modification / nerve gliding exercises Daily Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Avoid prolonged elbow flexion >90 degrees; avoid leaning on elbow; use telephone headset; position elbow extended during computer use; perform ulnar nerve gliding exercises 3x/day (10 reps each)",
+            "orderSentence": "Activity modification / nerve gliding exercises Daily Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Symptom diary; adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Night splinting (elbow extension)",
+          "route": "Physical",
+          "indication": "Nocturnal symptoms; paresthesias waking patient; all cubital tunnel patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30-45 degrees flexion",
+                "orderSentence": "Night splinting (elbow extension) 30-45 degrees flexion Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Padded elbow splint or towel wrap maintaining 30-45 degrees flexion during sleep; use nightly for at least 3 months",
+            "orderSentence": "Night splinting (elbow extension) 30-45 degrees flexion Physical"
+          },
+          "contraindications": "Skin breakdown; compartment syndrome history",
+          "monitoring": "Compliance; symptom improvement; skin integrity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Elbow pad (cushion over cubital tunnel)",
+          "route": "Physical",
+          "indication": "Reduce direct pressure on ulnar nerve at elbow; occupational exposure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous during waking",
+                "orderSentence": "Elbow pad (cushion over cubital tunnel) Continuous during waking Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Wear padded elbow sleeve or attach foam pad over medial epicondyle during activities; prevents direct nerve compression",
+            "orderSentence": "Elbow pad (cushion over cubital tunnel) Continuous during waking Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Skin integrity; compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; paresthesias; failed activity modification alone",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg qHS; titrate by 300 mg q3-7 days; target 300-600 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation; dizziness; renal function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50-75 mg BID; titrate to 150 mg BID; max 300 mg BID",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); angioedema",
+          "monitoring": "Sedation; weight gain; edema",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Treatment": [
+        {
+          "item": "In situ decompression (simple release) (CPT 64719)",
+          "route": "Surgical",
+          "indication": "Cubital tunnel syndrome with stable nerve (no subluxation); mild-moderate compression on EMG; failed 3 months conservative treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "In situ decompression (simple release) (CPT 64719) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Release of Osborne ligament and fascial constriction at cubital tunnel; preserves nerve in native position; outpatient procedure",
+            "orderSentence": "In situ decompression (simple release) (CPT 64719) Elective Surgical"
+          },
+          "contraindications": "Ulnar nerve subluxation (relative — may need transposition); medically unfit for surgery",
+          "monitoring": "Post-op neurologic exam; wound healing; splint for 1-2 weeks; ROM at 2 weeks",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ulnar nerve transposition (anterior subcutaneous) (CPT 64718)",
+          "route": "Surgical",
+          "indication": "Cubital tunnel with nerve subluxation; revision after failed decompression; severe compression with significant axonal loss on EMG",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Ulnar nerve transposition (anterior subcutaneous) (CPT 64718) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Anterior transposition of ulnar nerve to subcutaneous position anterior to medial epicondyle; stabilize with fascial sling",
+            "orderSentence": "Ulnar nerve transposition (anterior subcutaneous) (CPT 64718) Elective Surgical"
+          },
+          "contraindications": "Medically unfit; mild symptoms not warranting surgery",
+          "monitoring": "Post-op neurologic exam; wound; elbow ROM; splint 2-3 weeks; PT at 3-4 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ulnar nerve transposition (submuscular)",
+          "route": "Surgical",
+          "indication": "Revision surgery; ulnar nerve subluxation with thin subcutaneous tissue; high-demand athletes; severe compression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Ulnar nerve transposition (submuscular) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Transposition beneath flexor-pronator muscle mass; provides deeper, more protected position; longer recovery than subcutaneous",
+            "orderSentence": "Ulnar nerve transposition (submuscular) Elective Surgical"
+          },
+          "contraindications": "Same as subcutaneous transposition",
+          "monitoring": "Same; longer immobilization (3-4 weeks); slower return to activity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medial epicondylectomy",
+          "route": "Surgical",
+          "indication": "Alternative to transposition; remove bony prominence causing compression; less tissue disruption than transposition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Medial epicondylectomy Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Partial removal of medial epicondyle to relieve compression without nerve mobilization; preserves nerve blood supply",
+            "orderSentence": "Medial epicondylectomy Elective Surgical"
+          },
+          "contraindications": "Elbow instability; MCL insufficiency",
+          "monitoring": "Post-op elbow stability; nerve function; wound",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Guyon canal release",
+          "route": "Surgical",
+          "indication": "Guyon canal syndrome (ulnar neuropathy at wrist) with identifiable compression (ganglion, hook of hamate fracture); failed conservative treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Guyon canal release Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Surgical release of Guyon canal; excision of ganglion cyst if present; hook of hamate excision if fractured",
+            "orderSentence": "Guyon canal release Elective Surgical"
+          },
+          "contraindications": "Medically unfit; mild symptoms responding to conservative measures",
+          "monitoring": "Post-op grip strength; sensory exam; wound healing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology referral for electrodiagnostic testing (EMG/NCS) to confirm diagnosis, localize lesion, and quantify severity — essential before surgical decision-making",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hand surgery or peripheral nerve surgery referral if moderate-severe ulnar neuropathy on EMG, progressive weakness, or failed 3 months conservative treatment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for nerve gliding exercises, ergonomic assessment, custom splinting, and workplace modification",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthopedics if concurrent elbow pathology (arthritis, prior fracture malunion, cubitus valgus) contributing to nerve compression",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Avoid prolonged elbow flexion: do not rest chin on hand, hold phone to ear with affected arm, or sleep with elbows bent tightly — these positions stretch and compress the ulnar nerve",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear a night splint or wrap a towel around the elbow at bedtime to keep the elbow in a slightly extended position and prevent nocturnal compression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid direct pressure on the inner elbow (funny bone area): do not lean on desks, armrests, or car door; use padded elbow sleeve if unavoidable",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Perform nerve gliding exercises 3 times daily as instructed by therapist to maintain nerve mobility and reduce adhesion at the entrapment site",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report worsening hand weakness (dropping objects, difficulty turning keys, or loss of grip strength) — progressive motor loss may require surgical intervention",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "After surgery, follow splinting and range-of-motion protocols strictly; nerve recovery is slow (1 mm/day or ~1 inch/month) and full recovery may take 6-12 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Ergonomic workstation setup: keep elbows at 90 degrees or less when typing; use padded armrests; position keyboard so elbows are not fully flexed",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclists: use padded gloves and change hand positions frequently to avoid Guyon canal compression (handlebar palsy)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Manage contributing conditions: optimize diabetes control (HbA1c <7%), treat hypothyroidism, maintain healthy weight to reduce systemic nerve vulnerability",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid repetitive elbow flexion/extension activities or sustained gripping if they provoke symptoms; modify occupational tasks with OT guidance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Post-surgical rehabilitation: follow graduated activity protocol; avoid heavy lifting (>10 lbs) for 6 weeks post-transposition; gradual return to full activity by 3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "C8-T1 radiculopathy (cervical)",
+      "features": "Neck pain radiating to arm; dermatomal pattern including medial forearm (medial antebrachial cutaneous); weakness in non-ulnar C8-T1 muscles (FPL, APB)",
+      "tests": "MRI cervical spine; EMG showing C8/T1 denervation in non-ulnar muscles; cervical foraminal stenosis"
+    },
+    {
+      "diagnosis": "Thoracic outlet syndrome (TOS)",
+      "features": "Medial arm/forearm symptoms; positional with overhead activities; vascular symptoms possible; Roos test positive",
+      "tests": "Chest X-ray (cervical rib); NCS typically normal; MRA/CTA if vascular TOS suspected"
+    },
+    {
+      "diagnosis": "Carpal tunnel syndrome (median neuropathy)",
+      "features": "Numbness in thumb, index, middle fingers (median distribution); Phalen test positive; different distribution than ulnar",
+      "tests": "EMG/NCS showing median nerve slowing at wrist; normal ulnar studies"
+    },
+    {
+      "diagnosis": "Pancoast tumor (superior sulcus)",
+      "features": "Lower trunk brachial plexopathy; Horner syndrome; shoulder/arm pain; progressive course; chest imaging abnormal",
+      "tests": "Chest X-ray or CT chest showing apical mass; MRI brachial plexus"
+    },
+    {
+      "diagnosis": "Multifocal motor neuropathy (MMN)",
+      "features": "Asymmetric distal weakness without sensory loss; conduction block on NCS outside entrapment sites; may mimic ulnar motor neuropathy",
+      "tests": "NCS showing conduction block in non-entrapment sites; anti-GM1 antibodies; responds to IVIg"
+    },
+    {
+      "diagnosis": "ALS (motor neuron disease)",
+      "features": "Progressive weakness without sensory loss; upper and lower motor neuron signs; fasciculations; tongue involvement",
+      "tests": "EMG showing widespread active denervation; normal sensory NCS; UMN signs on exam"
+    },
+    {
+      "diagnosis": "Medial epicondylitis (golfer's elbow)",
+      "features": "Medial elbow pain with gripping/wrist flexion; tenderness at medial epicondyle; no numbness or weakness in ulnar distribution",
+      "tests": "Clinical exam; normal EMG/NCS; MRI showing epicondylar tendinopathy"
+    },
+    {
+      "diagnosis": "Leprous neuropathy",
+      "features": "Thickened, palpable ulnar nerve; skin patches; endemic areas; sensory loss before motor",
+      "tests": "Skin biopsy (acid-fast bacilli); nerve biopsy; clinical context"
+    },
+    {
+      "diagnosis": "Elbow fracture/dislocation (acute)",
+      "features": "Trauma history; deformity; acute onset; ulnar nerve stretched or contused during fracture",
+      "tests": "X-ray elbow showing fracture; clinical history of trauma"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "EMG/NCS is the gold standard for confirming ulnar neuropathy and localizing the site of entrapment",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[AANEM Practice Parameter: electrodiagnosis of ulnar neuropathy at the elbow](https://pubmed.ncbi.nlm.nih.gov/10234589/)"
+    },
+    {
+      "recommendation": "Conservative management with activity modification and night splinting is effective for mild cubital tunnel syndrome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Svernlov B et al. Scand J Plast Reconstr Surg Hand Surg 2009](https://pubmed.ncbi.nlm.nih.gov/19282413/)"
+    },
+    {
+      "recommendation": "Simple decompression and anterior transposition have similar outcomes for primary cubital tunnel surgery",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Zlowodzki M et al. J Bone Joint Surg Am 2007 (meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/18056489/)"
+    },
+    {
+      "recommendation": "Ultrasound cross-sectional area >10 mm² at the elbow is a reliable diagnostic marker for cubital tunnel syndrome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Beekman R et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15534254/)"
+    },
+    {
+      "recommendation": "Night splinting reduces nocturnal elbow flexion and improves symptoms in mild cubital tunnel syndrome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Shah CM et al. J Hand Surg Am 2013](https://pubmed.ncbi.nlm.nih.gov/23455407/)"
+    },
+    {
+      "recommendation": "Nerve recovery after transposition proceeds at ~1 mm/day; complete recovery may take 6-18 months depending on severity",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Mackinnon SE, Novak CB. Clin Orthop Relat Res 1996](https://pubmed.ncbi.nlm.nih.gov/8958578/)"
+    },
+    {
+      "recommendation": "AAOS Clinical Practice Guideline on cubital tunnel syndrome treatment",
+      "evidenceLevel": "Guideline",
+      "source": "[Goldfarb CA et al. J Am Acad Orthop Surg 2009](https://pubmed.ncbi.nlm.nih.gov/19810811/)"
+    },
+    {
+      "recommendation": "Surgical treatment is recommended when EMG shows axonal loss or motor weakness is present",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Caliandro P et al. Cochrane Database Syst Rev 2016](https://pubmed.ncbi.nlm.nih.gov/27845501/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Hand grip and pinch strength (dynamometer)",
+      "frequency": "Baseline, q3 months",
+      "action": "Escalate to surgical referral if progressive decline; EMG reassessment",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sensory exam (two-point discrimination, Semmes-Weinstein monofilaments — digits 4-5)",
+      "frequency": "Each visit",
+      "action": "Consider surgery if progressive sensory loss; reassess conservative measures",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Motor exam (interossei, adductor pollicis, FDI — MRC grading)",
+      "frequency": "Each visit",
+      "action": "Urgent surgical referral if new or worsening weakness <=3/5; repeat EMG",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "EMG/NCS (repeat)",
+      "frequency": "3-6 months after initial if conservative treatment; 6-12 months post-surgery",
+      "action": "Surgical referral if worsening; consider revision if post-operative worsening",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-surgical wound and nerve recovery",
+      "frequency": "2 weeks, 6 weeks, 3 months, 6 months, 12 months",
+      "action": "Re-exploration if acute post-operative decline; extended recovery (up to 12 months) expected",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Stable neurologic exam; no acute motor deficit requiring emergent intervention; splint applied; pain controlled; neurology/hand surgery follow-up within 2-4 weeks"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Acute onset after trauma with significant motor deficit; awaiting EMG or surgical consultation"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Scheduled surgical decompression/transposition; post-operative monitoring; acute trauma with compartment concern"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rare; only if polytrauma with compartment syndrome or vascular injury affecting upper extremity"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology)",
+      "criteria": "EMG/NCS within 2-4 weeks of initial evaluation; repeat EMG at 3-6 months if conservative treatment; post-surgical EMG at 6-12 months"
+    },
+    {
+      "disposition": "Outpatient follow-up (hand surgery)",
+      "criteria": "If moderate-severe on EMG: evaluation within 2-4 weeks; post-operative: 2 weeks (wound), 6 weeks (ROM), 3 months, 6 months, 12 months"
+    }
+  ]
+}

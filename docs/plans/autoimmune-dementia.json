@@ -1,0 +1,620 @@
+{
+  "id": "autoimmune-dementia",
+  "title": "Autoimmune Dementia / Encephalopathy",
+  "version": "1.0",
+  "icd10": [
+    "** G04.81 (Other autoimmune encephalitis)",
+    "G31.09 (Other frontotemporal dementia)",
+    "G04.90 (Encephalitis and encephalomyelitis",
+    "unspecified)",
+    "R41.3 (Other amnesia)",
+    "G13.1 (Other systemic atrophy primarily affecting CNS in neoplastic disease — paraneoplastic limbic encephalitis)"
+  ],
+  "scope": "** Evaluation and management of autoimmune-mediated cognitive decline and encephalopathy. This is a \"must-not-miss\" diagnosis — autoimmune dementia is one of the few truly treatable and potentially reversible causes of dementia and rapidly progressive cognitive decline. Covers antibody-mediated encephalitis (NMDAR, LGI1, CASPR2, AMPAR, GABA-B, DPPX), paraneoplastic limbic encephalitis, and seronegative autoimmune encephalopathy. Includes rapid diagnostic workup, empiric immunotherapy, cancer screening, and long-term maintenance. Applies to all clinical settings.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "— Core Labs (Order for All Patients)": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection, lymphoma, paraneoplastic hematologic markers"
+        },
+        {
+          "item": "CMP (comprehensive metabolic panel)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hepatic, renal, electrolyte, glucose — exclude metabolic encephalopathy"
+        },
+        {
+          "item": "TSH, free T4",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Thyroid disease; also needed for SREAT workup"
+        },
+        {
+          "item": "Anti-TPO antibodies",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "SREAT/Hashimoto encephalopathy — elevated in ~85% of cases; but also elevated in ~10% of general population (low specificity)"
+        },
+        {
+          "item": "Anti-thyroglobulin antibodies",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Second thyroid antibody for SREAT — increases sensitivity"
+        },
+        {
+          "item": "ESR",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker; elevated in vasculitis, systemic autoimmune, infection"
+        },
+        {
+          "item": "CRP",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Inflammatory marker"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Exclude B12 deficiency — treatable cause of cognitive decline"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Neurosyphilis — must rule out in RPD workup"
+        },
+        {
+          "item": "HIV 1/2",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "HIV-associated neurocognitive disorder"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Exclude UTI (delirium), proteinuria (systemic autoimmune)"
+        }
+      ],
+      "— Extended Labs — Autoimmune and Paraneoplastic Panel": [
+        {
+          "item": "**Serum autoimmune encephalitis panel**",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "**Critical** — NMDA-R Ab, LGI1 Ab, CASPR2 Ab, AMPA-R Ab, GABA-B Ab, DPPX Ab; send to reference lab (Mayo, Quest Autoimmune); results take 1-3 weeks — **do NOT wait for results to start empiric immunotherapy if clinical suspicion is high**"
+        },
+        {
+          "item": "**CSF autoimmune encephalitis panel**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "**Essential — more sensitive than serum for NMDAR antibodies** (serum can be negative with positive CSF in up to 14%); CSF should be sent simultaneously with serum; also include GABA-A, IgLON5"
+        },
+        {
+          "item": "**CSF cell count, protein, glucose**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Lymphocytic pleocytosis (WBC 5-100, predominantly lymphocytes) supports autoimmune encephalitis; elevated protein common; glucose usually normal (vs infectious meningitis)"
+        },
+        {
+          "item": "**CSF oligoclonal bands and IgG index**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Intrathecal IgG synthesis — supports CNS autoimmune process; also evaluate for MS"
+        },
+        {
+          "item": "**CSF cytology**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "Lymphomatous meningitis, carcinomatous meningitis — on RPD differential"
+        },
+        {
+          "item": "**CSF 14-3-3, RT-QuIC, tau**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT",
+          "rationale": "**Prion disease exclusion** — 14-3-3 sensitivity ~85% for CJD; RT-QuIC sensitivity >90%, specificity >99%; total tau >1150 pg/mL highly suggestive of CJD"
+        },
+        {
+          "item": "**Paraneoplastic antibody panel (serum)**",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "ANNA-1 (Hu), ANNA-2, PCA-1 (Yo), PCA-2, PCA-Tr (DNER), CV2/CRMP5, Ma2/Ta, amphiphysin, GAD65 (high titer >20 nmol/L)"
+        },
+        {
+          "item": "ANA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Systemic lupus, Sjogren's — CNS involvement"
+        },
+        {
+          "item": "dsDNA, SSA/SSB, complement C3/C4",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Lupus cerebritis, neurosarcoidosis, Sjogren's"
+        },
+        {
+          "item": "ANCA (c-ANCA, p-ANCA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "CNS vasculitis"
+        },
+        {
+          "item": "ACE level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Neurosarcoidosis"
+        },
+        {
+          "item": "Quantitative immunoglobulins",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "IgG subclass deficiency; immunodeficiency evaluation"
+        }
+      ],
+      "— Rare/Specialized Labs": [
+        {
+          "item": "CSF flow cytometry",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "CNS lymphoma — in RPD differential"
+        },
+        {
+          "item": "CSF beta-amyloid and phospho-tau",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "AD biomarkers — low Aβ42/high p-tau suggests neurodegenerative, not autoimmune; useful to differentiate"
+        },
+        {
+          "item": "CSF VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "rationale": "Neurosyphilis confirmation"
+        },
+        {
+          "item": "Serum/CSF Whipple PCR",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT",
+          "rationale": "Whipple disease — rare but treatable cause of RPD"
+        },
+        {
+          "item": "Heavy metals (lead, mercury, arsenic)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Toxic encephalopathy — if exposure history"
+        },
+        {
+          "item": "Copper, ceruloplasmin",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Wilson disease (if age <50)"
+        },
+        {
+          "item": "IgLON5 antibody (CSF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "ROUTINE",
+          "rationale": "IgLON5 disease — sleep disorder, cognitive decline, brainstem dysfunction; unique tauopathy"
+        },
+        {
+          "item": "GFAP antibody (CSF/serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "ROUTINE",
+          "rationale": "Autoimmune GFAP astrocytopathy — meningoencephalitis, often with perivascular pattern on MRI"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "— Essential Imaging": [
+        {
+          "item": "MRI brain with/without contrast (thin-cut temporal, FLAIR, DWI, T2, post-gad)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "URGENT",
+          "ICU": "STAT",
+          "rationale": "**First-line and most important imaging** — T2/FLAIR hyperintensity in mesial temporal lobes (hippocampus, amygdala) is classic for limbic encephalitis; DWI cortical ribboning suggests CJD; enhancement patterns vary by antibody type; may be normal in up to 30% of autoimmune encephalitis"
+        },
+        {
+          "item": "EEG (routine or continuous)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Seizures (often subclinical), extreme delta brush (pathognomonic for anti-NMDAR encephalitis), periodic discharges (CJD), diffuse slowing (encephalopathy); continuous EEG in ICU patients"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Rapid screening in ED to exclude mass, hemorrhage, hydrocephalus; MRI is ultimately needed"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Malignancy screening (lung cancer — Hu, CRMP5); infection"
+        }
+      ],
+      "— Extended Imaging — Cancer Screening": [
+        {
+          "item": "CT chest/abdomen/pelvis with contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "Comprehensive cancer screening — lung (SCLC → Hu, CRMP5, AMPAR), ovarian teratoma (NMDAR), thymoma (CASPR2, LGI1), lymphoma, renal"
+        },
+        {
+          "item": "Pelvic/transvaginal ultrasound (females)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "Ovarian teratoma screening — **mandatory in anti-NMDAR encephalitis** in women; teratoma removal is therapeutic; may require MRI pelvis if US inconclusive"
+        },
+        {
+          "item": "Testicular ultrasound (males <50)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "Testicular tumor screening in young males with anti-NMDAR or Ma2 antibodies"
+        },
+        {
+          "item": "PET/CT (whole body)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Most sensitive for occult malignancy when CT is negative; particularly useful for paraneoplastic antibodies with intracellular targets (Hu, Yo, Ma2)"
+        },
+        {
+          "item": "MRI pelvis",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If ovarian teratoma suspected but US inconclusive"
+        },
+        {
+          "item": "Mammography / breast MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If amphiphysin antibody positive — associated with breast cancer"
+        }
+      ],
+      "— Rare/Specialized Studies": [
+        {
+          "item": "FDG-PET brain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypermetabolism in medial temporal lobes (limbic encephalitis) vs hypometabolism (neurodegenerative); can be positive when MRI is normal"
+        },
+        {
+          "item": "Brain biopsy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "Last resort — only if all other investigations negative and progressive decline; rule out CNS vasculitis, lymphoma, CJD; high morbidity; should target area of abnormality on MRI"
+        },
+        {
+          "item": "Conventional cerebral angiography",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT",
+          "rationale": "If primary CNS vasculitis suspected (beading pattern); can be normal in small vessel vasculitis"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Document cognitive profile, track treatment response, differentiate from neurodegenerative patterns; LGI1 typically limbic (amnesia); NMDAR often frontal-subcortical"
+        }
+      ]
+    },
+    "Treatment": {
+      "— Acute / First-Line Immunotherapy": [
+        {
+          "item": "Methylprednisolone IV (pulse)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (pulse) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "infuse over 1 hour",
+            "orderSentence": "Methylprednisolone IV (pulse) 1000 mg IV"
+          }
+        },
+        {
+          "item": "IVIG (intravenous immunoglobulin)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg/day",
+                "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg/day IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "infuse per protocol (total 2 g/kg divided over 5 days)",
+            "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg/day IV"
+          }
+        },
+        {
+          "item": "Plasma exchange (PLEX)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 sessions",
+                "orderSentence": "Plasma exchange (PLEX) 5-7 sessions every other day"
+              }
+            ],
+            "route": "every other day",
+            "instructions": "5-7 sessions :: every other day :: total 1-1.5 plasma volumes per session",
+            "orderSentence": "Plasma exchange (PLEX) 5-7 sessions every other day"
+          }
+        }
+      ],
+      "— Second-Line Immunotherapy (If First-Line Fails)": [
+        {
+          "item": "Rituximab IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m²",
+                "orderSentence": "Rituximab IV 375 mg/m² IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "or 1000 mg IV x 2 doses 2 weeks apart",
+            "orderSentence": "Rituximab IV 375 mg/m² IV"
+          }
+        },
+        {
+          "item": "Cyclophosphamide IV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750-1000 mg/m²",
+                "orderSentence": "Cyclophosphamide IV 750-1000 mg/m² IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "with MESNA and aggressive hydration",
+            "orderSentence": "Cyclophosphamide IV 750-1000 mg/m² IV"
+          }
+        }
+      ],
+      "— Maintenance Immunotherapy (Relapse Prevention)": [
+        {
+          "item": "Prednisone PO (taper)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "60 mg",
+                "orderSentence": "Prednisone PO (taper) 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "taper by 10 mg/week to 20 mg, then 5 mg/week to off; or maintain 10-20 mg daily long-term if relapse-prone",
+            "orderSentence": "Prednisone PO (taper) 60 mg PO"
+          }
+        },
+        {
+          "item": "Mycophenolate mofetil PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Mycophenolate mofetil PO 500-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 500 mg BID, increase to 1000 mg BID over 2-4 weeks",
+            "orderSentence": "Mycophenolate mofetil PO 500-1000 mg PO"
+          }
+        },
+        {
+          "item": "Azathioprine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 mg/kg/day",
+                "orderSentence": "Azathioprine PO 1-3 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 50 mg daily, titrate up over 4-6 weeks",
+            "orderSentence": "Azathioprine PO 1-3 mg/kg/day PO"
+          }
+        },
+        {
+          "item": "Rituximab IV (maintenance)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Rituximab IV (maintenance) 500-1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "or guided by CD19/CD20 B-cell reconstitution",
+            "orderSentence": "Rituximab IV (maintenance) 500-1000 mg IV"
+          }
+        }
+      ],
+      "— Tumor Treatment (Paraneoplastic Cases)": [
+        {
+          "item": "**Tumor resection/treatment**",
+          "details": "**Essential in all paraneoplastic cases** — neurologic improvement is unlikely without tumor treatment; ovarian teratoma removal in anti-NMDAR encephalitis often leads to dramatic improvement; SCLC treatment (chemo/radiation); thymectomy for thymoma-associated cases"
+        },
+        {
+          "item": "**Repeat cancer screening**",
+          "details": "If initial screening negative but paraneoplastic antibodies are confirmed — repeat imaging at 3-6 month intervals for up to 5 years; occult tumors may emerge later"
+        }
+      ],
+      "— Seizure Management": [
+        {
+          "item": "Levetiracetam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1500 mg",
+                "orderSentence": "Levetiracetam 500-1500 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "start 500 mg BID, titrate to effect",
+            "orderSentence": "Levetiracetam 500-1500 mg PO/IV"
+          }
+        },
+        {
+          "item": "Lacosamide",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-200 mg",
+                "orderSentence": "Lacosamide 50-200 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "start 50 mg BID, titrate by 50 mg/week",
+            "orderSentence": "Lacosamide 50-200 mg PO/IV"
+          }
+        },
+        {
+          "item": "Brivaracetam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 mg",
+                "orderSentence": "Brivaracetam 25-100 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "25-100 mg :: PO/IV :: BID",
+            "orderSentence": "Brivaracetam 25-100 mg PO/IV"
+          }
+        }
+      ],
+      "— Symptomatic and Supportive Treatment": [
+        {
+          "item": "Quetiapine 25-100 mg PO qhs; or olanzapine 2.5-5 mg PO/IM"
+        },
+        {
+          "item": "Melatonin 3-6 mg PO qhs; trazodone 25-50 mg PO qhs"
+        },
+        {
+          "item": "ICU monitoring; avoid sympathomimetics; labetalol for hypertension; atropine for bradycardia"
+        },
+        {
+          "item": "Benzodiazepines (lorazepam, midazolam); consider propofol for severe cases"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "— Referrals": [
+        {
+          "rationale": "Specialized management of autoimmune encephalitis; immunotherapy selection and monitoring; long-term relapse prevention"
+        },
+        {
+          "rationale": "All paraneoplastic cases — tumor staging, treatment planning; gynecologic oncology for teratoma"
+        },
+        {
+          "rationale": "Refractory seizures, continuous EEG interpretation, ASM optimization"
+        },
+        {
+          "rationale": "Psychiatric manifestations (especially NMDAR encephalitis — frequently misdiagnosed as primary psychiatric illness); capacity evaluation"
+        },
+        {
+          "rationale": "Baseline and follow-up cognitive testing to document treatment response"
+        },
+        {
+          "rationale": "Cognitive rehabilitation, motor recovery, speech/swallowing if affected"
+        },
+        {
+          "rationale": "Insurance navigation (IVIG/rituximab are expensive — prior authorization), disability applications, caregiver support"
+        }
+      ]
+    }
+  }
+}

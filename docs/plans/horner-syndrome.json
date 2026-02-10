@@ -1,0 +1,672 @@
+{
+  "id": "horner-syndrome",
+  "title": "Horner Syndrome",
+  "version": "1.0",
+  "icd10": [
+    "** G90.2 (Horner syndrome)",
+    "H57.00 (Unspecified anomaly of pupillary function)",
+    "S15.001A (Injury of carotid artery",
+    "initial encounter)"
+  ],
+  "scope": "** Evaluation and localization of Horner syndrome in adults and children. Includes pharmacologic confirmation, three-neuron localization (first-order central, second-order preganglionic, third-order postganglionic), and etiology-specific workup. Covers ED evaluation of acute Horner syndrome (emergent — dissection until proven otherwise), inpatient evaluation, and outpatient evaluation of chronic or incidental Horner. This is fundamentally a localization and diagnostic template — treatment depends on the underlying etiology.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; if malignancy suspected (Pancoast tumor, lymphoma); infection",
+          "target": "Normal"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; preoperative if surgery needed; general assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "ESR (CPT 85651)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory cause (GCA in elderly with Horner; vasculitis)",
+          "target": "Normal; elevated → consider vasculitis/GCA"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory process evaluation",
+          "target": "Normal"
+        }
+      ],
+      "Extended Labs (Based on Suspected Etiology)": [
+        {
+          "item": "Urine catecholamines/metanephrines (24-hour)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neuroblastoma in children; pheochromocytoma in adults (rare)",
+          "target": "Normal; elevated = tumor workup"
+        },
+        {
+          "item": "Urine VMA/HVA (children)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neuroblastoma screening in pediatric Horner syndrome (important cause in children)",
+          "target": "Normal; elevated → CT chest/abdomen; MIBG scan"
+        },
+        {
+          "item": "Coagulation studies (PT/INR, aPTT)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If dissection confirmed — assess for anticoagulation safety",
+          "target": "Normal; guide anticoagulation dosing"
+        },
+        {
+          "item": "Lipid panel, HbA1c",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vascular risk factor assessment if dissection or stroke found",
+          "target": "Optimize; secondary prevention"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-Hu antibodies (ANNA-1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic autonomic neuropathy with Horner; associated with lung cancer",
+          "target": "Negative"
+        },
+        {
+          "item": "CSF analysis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If central Horner with suspected meningeal carcinomatosis or infection",
+          "target": "Normal; abnormal suggests carcinomatous meningitis, infection, or inflammation"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies (ALL Acute Horner Syndrome)": [
+        {
+          "item": "CTA head and neck (CPT 70496, 70498)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Emergent — within 1 hour for acute painful Horner; fastest modality for dissection detection",
+          "target": "No carotid/vertebral dissection; no aneurysm; no mass compressing sympathetic chain",
+          "contraindications": "Contrast allergy; renal impairment (hydrate; weigh risk/benefit — dissection is life-threatening)"
+        },
+        {
+          "item": "MRI brain with/without contrast + MRA head and neck (CPT 70553, 70547, 70549)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "If CTA not immediately available or as follow-up; includes fat-sat sequences for dissection",
+          "target": "No brainstem/hypothalamic lesion (first-order); no dissection (third-order); no mass",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "All Horner syndrome patients; screen for Pancoast tumor (apical lung mass); mediastinal mass",
+          "target": "Clear lung apices; no apical mass; no mediastinal widening",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies (Localization-Specific)": [
+        {
+          "item": "Pharmacologic testing — apraclonidine 0.5% (preferred) or cocaine 4-10%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Confirms diagnosis of Horner syndrome; can be done at bedside",
+          "target": "Apraclonidine: Horner pupil dilates (reversal sign due to denervation supersensitivity), normal pupil constricts or unchanged; Cocaine: Horner pupil fails to dilate, normal pupil dilates",
+          "contraindications": "Active anterior chamber inflammation; closed-angle glaucoma risk; avoid in infants <6 months (apraclonidine can cause CNS depression)"
+        },
+        {
+          "item": "Pharmacologic testing — hydroxyamphetamine 1% (if available)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Localize lesion: 1st/2nd order (pupil dilates) vs 3rd order (pupil fails to dilate); must wait 48h after cocaine/apraclonidine",
+          "target": "Dilation = intact postganglionic neuron (1st or 2nd order); no dilation = postganglionic lesion (3rd order)",
+          "contraindications": "Same as above; limited availability"
+        },
+        {
+          "item": "CT chest with contrast (CPT 71260)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If Pancoast tumor suspected on CXR or clinical suspicion (2nd-order lesion with arm pain, T1 distribution weakness/numbness)",
+          "target": "No apical mass; characterize mass if present",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "MRI cervical/thoracic spine (CPT 72141, 72156)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "First-order or second-order Horner; evaluate for syringomyelia, demyelination, spinal cord tumor, disc herniation",
+          "target": "No cord lesion; no syrinx; no mass",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MRI brain with contrast (specifically including cavernous sinus protocol)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Third-order (postganglionic) Horner; cavernous sinus pathology; parasellar mass",
+          "target": "No cavernous sinus mass; no skull base tumor; no cavernous ICA aneurysm",
+          "contraindications": "MRI contraindications"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT chest/abdomen/pelvis (oncology staging)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "timing": "If Pancoast tumor or other malignancy confirmed; staging evaluation",
+          "target": "Staging information",
+          "contraindications": "Contrast allergy; renal impairment"
+        },
+        {
+          "item": "Catheter angiography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If dissection suspected but CTA/MRA inconclusive; consider for intervention (stenting if needed)",
+          "target": "Confirm or rule out dissection; assess for pseudoaneurysm",
+          "contraindications": "Contrast allergy; coagulopathy; vascular access site risk"
+        },
+        {
+          "item": "MIBG scan (children)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Neuroblastoma localization in pediatric Horner syndrome",
+          "target": "No MIBG-avid tumor",
+          "contraindications": "Concurrent medications affecting MIBG uptake"
+        }
+      ]
+    },
+    "Treatment": {
+      "Emergent Treatment (Carotid/Vertebral Dissection)": [
+        {
+          "item": "Anticoagulation (heparin → warfarin or DOAC)",
+          "route": "IV then PO",
+          "indication": "Carotid or vertebral dissection confirmed on imaging; prevent thromboembolic stroke from dissection",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Heparin",
+                "orderSentence": "Anticoagulation (heparin → warfarin or DOAC) Heparin IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Heparin 80 units/kg bolus then 18 units/kg/hr; target aPTT 60-80 sec; transition to warfarin (INR 2-3) or DOAC (apixaban 5 mg BID or rivaroxaban 20 mg daily) for 3-6 months",
+            "orderSentence": "Anticoagulation (heparin → warfarin or DOAC) Heparin IV"
+          },
+          "contraindications": "Active intracranial hemorrhage; large completed stroke (hemorrhagic conversion risk); severe uncontrolled HTN; coagulopathy",
+          "monitoring": "aPTT q6h on heparin; INR if warfarin; renal function if DOAC; serial neurologic exams; head imaging if any decline",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Antiplatelet therapy (alternative to anticoagulation)",
+          "route": "PO",
+          "indication": "Carotid/vertebral dissection — antiplatelet is non-inferior to anticoagulation for stroke prevention per CADISS trial; preferred if anticoagulation contraindicated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Aspirin 325 mg",
+                "orderSentence": "Antiplatelet therapy (alternative to anticoagulation) Aspirin 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 325 mg daily for 3-6 months; or aspirin 81 mg + clopidogrel 75 mg DAPT for 21 days then aspirin monotherapy (per CHANCE/POINT paradigm)",
+            "orderSentence": "Antiplatelet therapy (alternative to anticoagulation) Aspirin 325 mg PO"
+          },
+          "contraindications": "Aspirin allergy; active GI bleeding",
+          "monitoring": "GI bleeding; platelet count; stool guaiac",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV thrombolysis (tPA)",
+          "route": "IV",
+          "indication": "If dissection presents with acute ischemic stroke within treatment window",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per acute stroke protocol",
+                "orderSentence": "IV thrombolysis (tPA) Per acute stroke protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Alteplase 0.9 mg/kg (max 90 mg); 10% bolus, remainder over 60 minutes; only if acute ischemic stroke criteria met and within treatment window",
+            "orderSentence": "IV thrombolysis (tPA) Per acute stroke protocol IV"
+          },
+          "contraindications": "Same as standard stroke tPA criteria; hemorrhagic stroke; recent surgery; coagulopathy",
+          "monitoring": "Neurologic exam q15min during infusion; BP management; hemorrhage monitoring",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BP management",
+          "route": "IV/PO",
+          "indication": "Dissection: permissive hypertension initially (maintain perfusion); if subarachnoid extension or severe: careful reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per stroke protocol",
+                "orderSentence": "BP management Per stroke protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Target SBP <220 if no tPA; <180 if tPA given; nicardipine or labetalol drip for titration",
+            "orderSentence": "BP management Per stroke protocol IV"
+          },
+          "contraindications": "Avoid precipitous drops",
+          "monitoring": "Continuous BP monitoring; neurologic exam",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Treatment by Etiology": [
+        {
+          "item": "Pancoast tumor — oncology referral",
+          "route": "Multidisciplinary",
+          "indication": "Lung apex tumor causing 2nd-order Horner; oncology-directed therapy (surgery, radiation, chemo)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per oncology protocol",
+                "orderSentence": "Pancoast tumor — oncology referral Per oncology protocol Multidisciplinary"
+              }
+            ],
+            "route": "Multidisciplinary",
+            "instructions": "Refer urgently to thoracic surgery and oncology for staging and treatment planning",
+            "orderSentence": "Pancoast tumor — oncology referral Per oncology protocol Multidisciplinary"
+          },
+          "contraindications": "Per specific treatment plan",
+          "monitoring": "Tumor response; neurologic status; Horner may or may not resolve depending on nerve damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cluster headache treatment",
+          "route": "Multiple",
+          "indication": "If 3rd-order Horner is secondary to cluster headache (autonomic activation during cluster attack)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per cluster headache protocol",
+                "orderSentence": "Cluster headache treatment Per cluster headache protocol Multiple"
+              }
+            ],
+            "route": "Multiple",
+            "instructions": "High-flow O2 100% at 12-15 L/min via non-rebreather for 15 min; sumatriptan 6 mg SQ; verapamil for prevention",
+            "orderSentence": "Cluster headache treatment Per cluster headache protocol Multiple"
+          },
+          "contraindications": "See cluster headache template",
+          "monitoring": "Headache response; Horner resolves between cluster periods",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stroke treatment",
+          "route": "Multiple",
+          "indication": "If 1st-order Horner is due to lateral medullary stroke (Wallenberg) or other brainstem stroke",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per acute stroke protocol",
+                "orderSentence": "Stroke treatment Per acute stroke protocol Multiple"
+              }
+            ],
+            "route": "Multiple",
+            "instructions": "Antiplatelets; statin; acute reperfusion if within window; secondary prevention",
+            "orderSentence": "Stroke treatment Per acute stroke protocol Multiple"
+          },
+          "contraindications": "See stroke templates",
+          "monitoring": "Neurologic exam; swallowing assessment (Wallenberg); BP management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Observation + monitoring (benign/idiopathic)",
+          "route": "—",
+          "indication": "Chronic isolated Horner syndrome with negative comprehensive workup; presumed congenital or benign",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Observation",
+                "orderSentence": "Observation + monitoring (benign/idiopathic) Observation —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Monitor for development of additional symptoms; re-image if new symptoms develop",
+            "orderSentence": "Observation + monitoring (benign/idiopathic) Observation —"
+          },
+          "contraindications": "None",
+          "monitoring": "Annual ophthalmologic exam; neurologic exam",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (emergent) for acute painful Horner syndrome — evaluate for dissection, stroke, and initiate acute management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuro-ophthalmology for pharmacologic confirmation (apraclonidine/hydroxyamphetamine testing), pupil assessment, and chronic Horner evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vascular surgery/interventional neurology if carotid dissection with pseudoaneurysm or flow-limiting stenosis requiring intervention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Thoracic surgery/oncology if Pancoast tumor identified; staging and treatment planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology for children with congenital Horner — evaluate for iris heterochromia and amblyopia; monitor for neuroblastoma",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pediatrics/pediatric oncology if Horner in child <2 years — neuroblastoma must be excluded (chest/abdomen imaging, urine catecholamines)",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Seek immediate emergency care if you develop sudden severe headache, neck pain, face pain, weakness or numbness on one side, trouble speaking, or vision loss — these could indicate stroke from carotid dissection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "The droopy eyelid and small pupil are caused by nerve damage to the sympathetic chain — in most cases the cosmetic effect is mild and does not affect vision",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If the underlying cause is treated (e.g., dissection resolves), the Horner syndrome may partially or fully resolve over weeks to months, though permanent mild ptosis/miosis may persist",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Attend all follow-up imaging appointments — dissections require repeat imaging at 3-6 months to confirm healing; tumors require staging and monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not take blood thinners or aspirin without medical guidance — if you are on anticoagulation for dissection, follow dosing instructions precisely and report any bleeding immediately",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "If cervical artery dissection: avoid neck manipulation (chiropractic), extreme neck extension/rotation, and contact sports until dissection is confirmed healed on repeat imaging (typically 3-6 months)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Optimize cardiovascular risk factors if dissection-related (BP control, cholesterol management, smoking cessation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Protect the eye on the affected side: ptosis may reduce natural eye protection; use lubricating drops if dryness develops; annual ophthalmologic exam",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Physiologic anisocoria",
+      "features": "Difference in pupil size is <1 mm and constant in light and dark; no ptosis; no anhidrosis; present since birth in ~20% of population",
+      "tests": "Pupil difference constant in all lighting conditions; no dilation lag; pharmacologic testing negative"
+    },
+    {
+      "diagnosis": "Third nerve palsy (partial)",
+      "features": "Ptosis (more severe, often >2 mm); pupil DILATED (not constricted); extraocular movement deficit (especially adduction, elevation, depression)",
+      "tests": "Complete neuro-ophthalmologic exam; pupil is large (not small); MRI/MRA for aneurysm"
+    },
+    {
+      "diagnosis": "Adie tonic pupil",
+      "features": "Large (dilated) tonic pupil, not miotic; sluggish light reaction with vermiform movements; may have absent DTRs",
+      "tests": "Dilute pilocarpine 0.1% (supersensitive constriction); slit lamp showing vermiform movements; pupil is larger, not smaller"
+    },
+    {
+      "diagnosis": "Mechanical ptosis (dermatochalasis, myasthenia)",
+      "features": "Ptosis without miosis or anhidrosis; may be bilateral; fluctuating in myasthenia; dermatochalasis is redundant skin",
+      "tests": "Normal pupils; ice pack test or acetylcholine receptor antibodies for MG; dermatochalasis — skin exam"
+    },
+    {
+      "diagnosis": "Cluster headache (during attack)",
+      "features": "Horner syndrome occurs during cluster attacks (ipsilateral ptosis, miosis); autonomic features (tearing, rhinorrhea, conjunctival injection); resolves between attacks",
+      "tests": "Clinical history; Horner resolves between cluster periods; MRI normal"
+    },
+    {
+      "diagnosis": "Carotid artery dissection",
+      "features": "Most important cause to exclude; acute Horner + ipsilateral head/neck/face pain; may have partial Horner",
+      "tests": "CTA/MRA neck showing dissection; fat-suppressed MRI showing intramural hematoma"
+    },
+    {
+      "diagnosis": "Pancoast tumor",
+      "features": "Second-order Horner; arm pain (C8-T1 distribution); hand weakness/wasting; may have shoulder pain",
+      "tests": "Chest X-ray (apical mass); CT chest with contrast; tissue biopsy"
+    },
+    {
+      "diagnosis": "Wallenberg syndrome (lateral medullary stroke)",
+      "features": "First-order Horner; ipsilateral facial pain/numbness; contralateral body pain/temperature loss; ataxia; dysphagia; vertigo",
+      "tests": "MRI brain (DWI showing lateral medullary infarct); MRA showing PICA or vertebral occlusion"
+    },
+    {
+      "diagnosis": "Congenital Horner syndrome",
+      "features": "Present since birth; iris heterochromia (affected iris lighter); no new symptoms",
+      "tests": "Birth history; iris color difference; old photographs; workup to exclude neuroblastoma in children"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Acute painful Horner syndrome requires emergent vascular imaging to exclude carotid/vertebral dissection",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Biousse V et al. Neurology 1998](https://pubmed.ncbi.nlm.nih.gov/9818887/)"
+    },
+    {
+      "recommendation": "Apraclonidine 0.5-1% has replaced cocaine as the preferred pharmacologic test for confirming Horner syndrome",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Koc F et al. Neuro-Ophthalmology 2005](https://pubmed.ncbi.nlm.nih.gov/16361186/)"
+    },
+    {
+      "recommendation": "CADISS trial: antiplatelet vs anticoagulation for cervical artery dissection showed no significant difference in stroke prevention",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[CADISS trial investigators. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25987284/)"
+    },
+    {
+      "recommendation": "Pediatric Horner syndrome requires neuroblastoma screening (urine catecholamines, chest/abdomen imaging) in children <2 years",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Smith SJ et al. Arch Ophthalmol 2010](https://pubmed.ncbi.nlm.nih.gov/20212203/)"
+    },
+    {
+      "recommendation": "Hydroxyamphetamine test localizes postganglionic (3rd-order) lesions with high specificity",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Maloney WF et al. Am J Ophthalmol 1980](https://pubmed.ncbi.nlm.nih.gov/7425056/)"
+    },
+    {
+      "recommendation": "Wallenberg syndrome is the most common central (1st-order) cause of Horner syndrome",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Kim JS et al. Stroke 2003](https://pubmed.ncbi.nlm.nih.gov/14605320/)"
+    },
+    {
+      "recommendation": "Three-neuron anatomic pathway of oculosympathetic system and clinical localization",
+      "evidenceLevel": "Review",
+      "source": "[Martin TJ. Curr Neurol Neurosci Rep 2007](https://pubmed.ncbi.nlm.nih.gov/17764630/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (pupil, ptosis, facial sweating, motor/sensory exam)",
+      "frequency": "Each encounter; q4h if acute dissection",
+      "action": "Emergent re-imaging if new deficits; adjust anticoagulation; neurosurgical consultation",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Serial imaging (dissection follow-up)",
+      "frequency": "3-6 months after initial diagnosis; then as clinically indicated",
+      "action": "Continue anticoagulation if persistent; vascular surgery referral for expanding pseudoaneurysm",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ophthalmologic exam (pediatric Horner)",
+      "frequency": "Initial; q6-12 months",
+      "action": "Amblyopia treatment if detected; continued neuroblastoma surveillance in young children",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Tumor surveillance (if etiology is Pancoast or other malignancy)",
+      "frequency": "Per oncology schedule",
+      "action": "Oncology-directed management adjustment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Ptosis and cosmesis assessment",
+      "frequency": "Each visit",
+      "action": "Ptosis repair surgery (Muller muscle-conjunctival resection) for cosmetic or functional concern if stable and desired",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Acute Horner with NEGATIVE vascular imaging (no dissection); no stroke; benign etiology suspected; neurology/neuro-ophthalmology follow-up within 1-2 weeks; outpatient MRI if not yet obtained"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Awaiting MRI/MRA results; borderline imaging findings requiring vascular surgery input; new Horner without pain — may warrant brief observation while imaging completed"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Confirmed carotid/vertebral dissection (anticoagulation initiation, serial neuro exams); stroke associated with dissection; Pancoast tumor workup; new neurologic deficits with Horner"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Acute dissection with large stroke; dissection with progressive neurologic deficit; hemorrhagic conversion of dissection-related stroke; hemodynamic instability"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology/neuro-ophthalmology)",
+      "criteria": "Chronic/incidental Horner: within 2-4 weeks for pharmacologic testing and localization; post-dissection: 2 weeks (clinical), 3-6 months (repeat imaging); pediatric: urgent if <2 years (neuroblastoma exclusion)"
+    }
+  ]
+}

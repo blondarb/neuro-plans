@@ -1,0 +1,948 @@
+{
+  "id": "chemotherapy-induced-neuropathy",
+  "title": "Chemotherapy-Induced Peripheral Neuropathy (CIPN)",
+  "version": "1.0",
+  "icd10": [
+    "** G62.0 (Drug-induced polyneuropathy)",
+    "T45.1X5A (Adverse effect of antineoplastic and immunosuppressive drugs",
+    "initial encounter)",
+    "G62.9 (Polyneuropathy",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of peripheral neuropathy caused by or attributed to chemotherapy agents in adults. Includes identification of causative agents, grading severity, dose modification guidance, symptomatic treatment, and long-term monitoring. Covers outpatient screening and management during active chemotherapy, inpatient evaluation for acute neurotoxicity, and post-treatment chronic neuropathy. Excludes radiation-induced neuropathy and paraneoplastic neuropathy as separate entities (addressed in differential).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Exclude Concurrent Neuropathy Etiologies)": [
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes is most common concurrent cause of neuropathy in cancer patients; must exclude as contributor",
+          "target": "<6.5%; if elevated, concurrent diabetic neuropathy likely contributing"
+        },
+        {
+          "item": "Fasting glucose (CPT 82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Screen for diabetes; steroid-induced hyperglycemia common in chemo regimens",
+          "target": "<126 mg/dL fasting"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency common in cancer patients (poor nutrition, metformin use); worsens neuropathy",
+          "target": ">300 pg/mL; if 200-400, check methylmalonic acid"
+        },
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; macrocytosis (B12/folate deficiency); chemotherapy-related cytopenias",
+          "target": "Normal indices; adequate counts"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal function (cisplatin nephrotoxicity); electrolytes (hypomagnesemia, hypokalemia worsening neuropathy)",
+          "target": "Normal creatinine; Mg >1.8 mg/dL; K >3.5 mEq/L"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism causes neuropathy and is common in cancer patients (checkpoint inhibitor thyroiditis)",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Cisplatin and cetuximab cause renal magnesium wasting; hypomagnesemia exacerbates neuropathy and neurotoxicity",
+          "target": ">1.8 mg/dL"
+        }
+      ],
+      "Extended Labs (When CIPN Diagnosis Uncertain)": [
+        {
+          "item": "SPEP/UPEP with immunofixation (CPT 82784)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Screen for paraproteinemia (myeloma patients on bortezomib may have paraprotein-associated neuropathy as well)",
+          "target": "No M-spike; normal free light chains"
+        },
+        {
+          "item": "Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency in cancer patients with poor nutrition; contributes to neuropathy and macrocytosis",
+          "target": ">5.9 ng/mL"
+        },
+        {
+          "item": "Methylmalonic acid",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Confirm B12 deficiency if borderline B12 level (200-400 pg/mL)",
+          "target": "Normal (<0.4 nmol/L)"
+        },
+        {
+          "item": "Copper, serum",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Copper deficiency neuropathy from zinc supplementation or malabsorption in cancer patients",
+          "target": "Normal (70-140 mcg/dL)"
+        },
+        {
+          "item": "ESR/CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory process; vasculitic neuropathy in differential",
+          "target": "Normal"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune neuropathy; checkpoint inhibitor-induced autoimmunity",
+          "target": "Negative"
+        },
+        {
+          "item": "Hepatitis B/C",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Hepatitis-associated neuropathy; reactivation during immunosuppression",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Anti-neuronal antibodies (Hu, CV2/CRMP5, amphiphysin)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic neuropathy mimicking CIPN; especially if neuropathy precedes or is disproportionate to chemotherapy exposure",
+          "target": "Negative; positive suggests paraneoplastic etiology"
+        },
+        {
+          "item": "Ganglioside antibodies (anti-MAG, anti-GM1)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune neuropathy; especially if demyelinating features on EMG not expected from chemotherapy type",
+          "target": "Negative"
+        },
+        {
+          "item": "Platinum levels (urine or serum)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Document platinum accumulation in refractory cases; research tool primarily",
+          "target": "Correlate with cumulative dose and symptom severity"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "EMG/NCS (CPT 95907-95913, 95886)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline before chemotherapy (ideal); at onset of symptoms; monitor serially during treatment",
+          "target": "Reduced SNAP amplitudes (axonal sensory neuropathy); normal or mildly reduced NCV; denervation if motor involvement; pattern consistent with agent type",
+          "contraindications": "None significant (relative: thrombocytopenia for needle EMG — platelet count >20K)"
+        },
+        {
+          "item": "CIPN screening questionnaire (EORTC QLQ-CIPN20 or FACT/GOG-Ntx)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Each chemotherapy cycle; standardized patient-reported outcome measure",
+          "target": "Score trending; identify grade >=2 symptoms early for dose modification",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "Skin biopsy (IENFD — intraepidermal nerve fiber density) (CPT 88305)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If small fiber neuropathy suspected (normal EMG/NCS with symptoms); quantify small fiber damage",
+          "target": "Reduced IENFD below age/sex-specific norms at distal leg (confirms small fiber neuropathy)",
+          "contraindications": "Coagulopathy (platelets <50K); infection at biopsy site"
+        },
+        {
+          "item": "Quantitative sensory testing (QST)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Research and clinical quantification of thermal and vibration thresholds; serial monitoring",
+          "target": "Elevated thermal/vibration detection thresholds; correlate with clinical severity",
+          "contraindications": "Cognitive impairment limiting cooperation"
+        },
+        {
+          "item": "MRI spine (cervical/lumbar)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If myelopathy or radiculopathy suspected; metastatic disease as alternative cause of neurologic symptoms",
+          "target": "No cord compression, metastatic disease, or radiation-induced changes",
+          "contraindications": "MRI contraindications"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Sural nerve biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Rarely indicated; vasculitic neuropathy suspected; atypical presentation not explained by chemotherapy",
+          "target": "Axonal degeneration pattern; vasculitis on biopsy if present",
+          "contraindications": "Permanent sensory loss at biopsy site; coagulopathy"
+        },
+        {
+          "item": "Corneal confocal microscopy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Non-invasive small fiber assessment; research tool for CIPN monitoring",
+          "target": "Reduced corneal nerve fiber density and length correlating with CIPN severity",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute Management": [
+        {
+          "item": "Dose reduction of offending chemotherapy",
+          "route": "Protocol",
+          "indication": "Grade 2 CIPN (moderate symptoms limiting instrumental ADLs)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Dose reduction of offending chemotherapy Per protocol Protocol"
+              }
+            ],
+            "route": "Protocol",
+            "instructions": "Reduce offending agent dose by 25-50% per institutional guidelines; specific agent protocols vary (e.g., oxaliplatin: 25% reduction for grade 2, discontinue for grade 3)",
+            "orderSentence": "Dose reduction of offending chemotherapy Per protocol Protocol"
+          },
+          "contraindications": "Oncology team decision balancing neuropathy risk vs cancer treatment efficacy",
+          "monitoring": "CTCAE grading each cycle; symptom questionnaire; functional assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Discontinuation of offending chemotherapy",
+          "route": "Protocol",
+          "indication": "Grade 3 CIPN (severe symptoms limiting self-care ADLs); persistent grade 2 despite dose reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Discontinue",
+                "orderSentence": "Discontinuation of offending chemotherapy Discontinue Protocol"
+              }
+            ],
+            "route": "Protocol",
+            "instructions": "Stop offending agent; consider alternative non-neurotoxic regimen; oncology decision weighing risk-benefit",
+            "orderSentence": "Discontinuation of offending chemotherapy Discontinue Protocol"
+          },
+          "contraindications": "None (oncology team decision)",
+          "monitoring": "Symptom monitoring for coasting phenomenon (platinum agents); cancer treatment response",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium/magnesium infusion (for oxaliplatin acute neuropathy)",
+          "route": "IV",
+          "indication": "Acute cold-triggered paresthesias during/after oxaliplatin infusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g calcium gluconate + 1 g magnesium sulfate",
+                "orderSentence": "Calcium/magnesium infusion (for oxaliplatin acute neuropathy) 1 g calcium gluconate + 1 g magnesium sulfate IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 g calcium gluconate + 1 g MgSO4 in 100 mL NS IV over 30 min before and after oxaliplatin infusion; reduces acute neurotoxicity",
+            "orderSentence": "Calcium/magnesium infusion (for oxaliplatin acute neuropathy) 1 g calcium gluconate + 1 g magnesium sulfate IV"
+          },
+          "contraindications": "Hypercalcemia; hypermagnesemia; renal failure (dose adjust Mg)",
+          "monitoring": "Calcium level; magnesium level; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Warming measures (oxaliplatin)",
+          "route": "Physical",
+          "indication": "Acute cold-triggered dysesthesia during oxaliplatin infusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Avoid cold",
+                "orderSentence": "Warming measures (oxaliplatin) Avoid cold Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Avoid cold drinks, cold foods, and cold air exposure for 3-5 days after infusion; wear gloves for refrigerator; warm beverages only",
+            "orderSentence": "Warming measures (oxaliplatin) Avoid cold Physical"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient education compliance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium supplementation",
+          "route": "IV/PO",
+          "indication": "Cisplatin or cetuximab-induced hypomagnesemia exacerbating neuropathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400-800 mg",
+                "orderSentence": "Magnesium supplementation 400-800 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Magnesium oxide 400-800 mg daily PO; or MgSO4 2 g IV over 1 hour for severe deficiency (<1.2 mg/dL)",
+            "orderSentence": "Magnesium supplementation 400-800 mg PO"
+          },
+          "contraindications": "Renal failure (dose adjust); heart block",
+          "monitoring": "Serum Mg q1-4 weeks; renal function; bowel habits (diarrhea)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatment (First-Line)": [
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain from CIPN; only agent with RCT evidence specifically for CIPN (ASCO recommended)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily for 1 week; increase to 60 mg daily; trial 4-8 weeks at therapeutic dose; max 120 mg/day; taper when discontinuing",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma; CrCl <30",
+          "monitoring": "BP (hypertension risk); hepatic function; serotonin syndrome; discontinuation syndrome; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; burning/tingling; first-line alternative to duloxetine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg qHS; titrate by 300 mg q3-7 days; target 300-600 mg TID; max 3600 mg/day; dose adjust for renal impairment",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); concurrent opioid use increases respiratory depression risk",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function for dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin with more predictable pharmacokinetics",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50-75 mg BID; titrate to 150-300 mg BID; max 600 mg/day; dose adjust for renal impairment",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); angioedema history",
+          "monitoring": "Weight gain; peripheral edema; sedation; renal dosing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical capsaicin 8% patch (Qutenza)",
+          "route": "Topical",
+          "indication": "Localized neuropathic pain; feet predominantly; patients intolerant of systemic medications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 patch",
+                "orderSentence": "Topical capsaicin 8% patch (Qutenza) 1 patch Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Applied by healthcare professional to affected area for 30-60 minutes; may repeat q3 months; pre-treat with topical lidocaine",
+            "orderSentence": "Topical capsaicin 8% patch (Qutenza) 1 patch Topical"
+          },
+          "contraindications": "Open wounds; mucosal surfaces",
+          "monitoring": "Skin reaction at application site (burning, erythema); BP monitoring during application (transient increase)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Refractory": [
+        {
+          "item": "Venlafaxine",
+          "route": "PO",
+          "indication": "CIPN pain refractory to duloxetine; some evidence for acute oxaliplatin neuropathy prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; titrate to 75-150 mg daily; extended release preferred; taper when discontinuing",
+            "orderSentence": "Venlafaxine 37.5 mg PO"
+          },
+          "contraindications": "Same as duloxetine",
+          "monitoring": "BP; serotonin syndrome; discontinuation syndrome; QTc if high dose",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline (low-dose)",
+          "route": "PO",
+          "indication": "Neuropathic pain; sleep disruption from neuropathy; adjunct therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline (low-dose) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg qHS; titrate by 10 mg q1-2 weeks; max 50 mg qHS for neuropathic pain; avoid in elderly",
+            "orderSentence": "Amitriptyline (low-dose) 10 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; recent MI; concurrent MAOIs; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden)",
+          "monitoring": "ECG if dose >50 mg or cardiac risk; anticholinergic effects; sedation; orthostatic BP",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Topical lidocaine 5% patch",
+          "route": "Topical",
+          "indication": "Localized neuropathic pain; allodynia on feet; adjunct therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-3 patches",
+                "orderSentence": "Topical lidocaine 5% patch 1-3 patches Topical"
+              }
+            ],
+            "route": "Topical",
+            "instructions": "Apply to affected area 12 hours on, 12 hours off; max 3 patches simultaneously",
+            "orderSentence": "Topical lidocaine 5% patch 1-3 patches Topical"
+          },
+          "contraindications": "Allergy to amide local anesthetics; severe hepatic disease",
+          "monitoring": "Skin reaction; systemic absorption unlikely with topical use",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Scrambler therapy (MC5-A)",
+          "route": "Physical",
+          "indication": "Refractory CIPN pain; emerging evidence; non-pharmacologic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Daily for 10 sessions",
+                "orderSentence": "Scrambler therapy (MC5-A) Daily for 10 sessions Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Cutaneous electrostimulation device applied to pain area; 10 consecutive daily sessions of 30-45 minutes each",
+            "orderSentence": "Scrambler therapy (MC5-A) Daily for 10 sessions Physical"
+          },
+          "contraindications": "Implanted cardiac devices (pacemaker, defibrillator); epilepsy; skin lesions at electrode site",
+          "monitoring": "Pain scores pre/post treatment; functional measures",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acupuncture",
+          "route": "Physical",
+          "indication": "Adjunctive treatment for CIPN pain; moderate evidence for symptom improvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2x/week for 8 weeks",
+                "orderSentence": "Acupuncture 2x/week for 8 weeks Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Electroacupuncture or manual acupuncture; 8-12 week course; standardized point selection protocols available",
+            "orderSentence": "Acupuncture 2x/week for 8 weeks Physical"
+          },
+          "contraindications": "Coagulopathy (platelets <20K); neutropenia (<500); infection at needle sites",
+          "monitoring": "Pain scores; functional measures; adverse events (rare)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Neuroprotective Agents (Limited Evidence)": [
+        {
+          "item": "Exercise therapy (aerobic and resistance)",
+          "route": "Physical",
+          "indication": "All CIPN patients; emerging evidence for neuroprotection and symptom improvement; improves balance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 min 3-5x/week",
+                "orderSentence": "Exercise therapy (aerobic and resistance) 30 min 3-5x/week Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Moderate-intensity aerobic exercise (walking, cycling) plus balance and resistance training; supervised initially; improves nerve function and reduces fall risk",
+            "orderSentence": "Exercise therapy (aerobic and resistance) 30 min 3-5x/week Physical"
+          },
+          "contraindications": "Bone metastases (modify loading); severe cytopenias; hemodynamic instability",
+          "monitoring": "Functional capacity; fall risk; compliance; pain levels",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-lipoic acid",
+          "route": "PO",
+          "indication": "Antioxidant; limited evidence for CIPN; may reduce oxidative nerve damage",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg",
+                "orderSentence": "Alpha-lipoic acid 600 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "600 mg daily; trial 8-12 weeks; evidence from diabetic neuropathy trials; CIPN-specific evidence mixed",
+            "orderSentence": "Alpha-lipoic acid 600 mg PO"
+          },
+          "contraindications": "GI intolerance (nausea)",
+          "monitoring": "Blood glucose (may lower glucose); GI tolerance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for electrodiagnostic testing (EMG/NCS), CIPN confirmation, and to rule out concurrent neuropathy etiologies (diabetic, B12, paraneoplastic)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for balance training, fall prevention, gait assessment, and exercise program — fall risk is elevated in CIPN patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for hand function assessment, adaptive devices, and fine motor rehabilitation if hand involvement affects ADLs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management specialist for refractory CIPN pain not responding to duloxetine/gabapentin; multimodal approach",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oncology discussion regarding dose modification, alternative regimens, and treatment goals when CIPN reaches grade 2 or higher",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Podiatry referral for foot care, custom orthotics, and fall prevention assessment — sensory loss increases foot injury risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Report numbness, tingling, or burning in hands or feet to the oncology team before each chemotherapy cycle — early detection allows dose adjustment to prevent irreversible damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For oxaliplatin patients: avoid cold drinks, cold food, cold air, and touching cold surfaces for 3-5 days after each infusion; use gloves when opening the refrigerator or freezer",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use fall prevention measures: wear well-fitting shoes with non-slip soles; use nightlights; remove loose rugs; install grab bars in bathroom; use handrails on stairs",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inspect feet daily for cuts, blisters, or injuries — reduced sensation means you may not feel foot injuries; diabetic-type foot care reduces complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid alcohol which has its own neurotoxic effects and can worsen chemotherapy-induced neuropathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Understand that some neuropathy symptoms may worsen (\"coasting\") for weeks to months after stopping chemotherapy (especially platinum drugs) before stabilizing — this is expected and not a sign of cancer progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Exercise regularly (walking, cycling, swimming) as tolerated — exercise has been shown to improve nerve function, balance, and quality of life in CIPN patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Maintain adequate nutrition: balanced diet with B vitamins, folate, and protein to support nerve health during chemotherapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Optimize glucose control if diabetic (HbA1c <7%) — uncontrolled diabetes significantly worsens CIPN severity and recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Replace magnesium and electrolyte deficiencies promptly — cisplatin and cetuximab deplete magnesium which exacerbates neurotoxicity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Engage in regular moderate exercise (30 min, 3-5x/week) during and after chemotherapy — emerging evidence supports exercise as both neuroprotective and therapeutic for CIPN",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation — smoking impairs nerve repair and worsens neuropathy outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use assistive devices as needed (buttoning aids, grip enhancers, adapted utensils) to maintain independence during hand neuropathy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Diabetic peripheral neuropathy",
+      "features": "Pre-existing diabetes; symptoms may predate chemotherapy; symmetric length-dependent; HbA1c elevated",
+      "tests": "HbA1c; glucose tolerance test; pre-chemo EMG baseline (if available)"
+    },
+    {
+      "diagnosis": "B12 deficiency neuropathy",
+      "features": "Macrocytosis; subacute combined degeneration if severe; may coexist with CIPN",
+      "tests": "Serum B12; methylmalonic acid; MRI spine if myelopathy"
+    },
+    {
+      "diagnosis": "Paraneoplastic neuropathy (anti-Hu, anti-CV2)",
+      "features": "Subacute onset; may precede cancer diagnosis; asymmetric or sensory ganglionopathy pattern; ataxia prominent",
+      "tests": "Paraneoplastic antibody panel; CSF analysis; pattern may not be length-dependent"
+    },
+    {
+      "diagnosis": "Radiation-induced neuropathy/plexopathy",
+      "features": "History of radiation field involving nerves/plexus; delayed onset (months-years post-radiation); myokymia on EMG",
+      "tests": "EMG showing myokymia (suggests radiation); MRI of affected plexus; temporal relationship to radiation field"
+    },
+    {
+      "diagnosis": "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+      "features": "Demyelinating pattern on EMG (prolonged distal latencies, conduction block); proximal and distal weakness; CSF protein elevated",
+      "tests": "EMG/NCS showing demyelinating features; CSF protein; response to IVIg/steroids"
+    },
+    {
+      "diagnosis": "Vasculitic neuropathy",
+      "features": "Asymmetric (mononeuritis multiplex); painful; elevated ESR/CRP; systemic vasculitis features",
+      "tests": "ESR/CRP; ANCA; nerve biopsy showing vasculitis; skin/renal involvement"
+    },
+    {
+      "diagnosis": "Hereditary neuropathy (CMT)",
+      "features": "Family history; pes cavus; high arched feet; slowly progressive; very slow NCV; present before chemotherapy",
+      "tests": "Genetic testing; family history; EMG showing very slow uniform NCV"
+    },
+    {
+      "diagnosis": "Medication-induced neuropathy (non-chemo)",
+      "features": "Temporal relationship to other medications: metformin, statins, colchicine, isoniazid, linezolid",
+      "tests": "Medication reconciliation; improvement with drug withdrawal"
+    },
+    {
+      "diagnosis": "Alcohol-related neuropathy",
+      "features": "History of chronic alcohol use; nutritional deficiency; may coexist",
+      "tests": "Alcohol use history; nutritional labs (thiamine, B12, folate); liver function"
+    },
+    {
+      "diagnosis": "Lumbosacral or cervical radiculopathy",
+      "features": "Dermatomal pattern; unilateral; spine pain; motor and sensory deficit in specific root distribution",
+      "tests": "MRI spine; EMG showing radicular pattern (not length-dependent)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Duloxetine is the only agent with RCT evidence for CIPN pain treatment (ASCO recommended)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Smith EML et al. JAMA 2013](https://pubmed.ncbi.nlm.nih.gov/23549581/)"
+    },
+    {
+      "recommendation": "ASCO Clinical Practice Guideline on Prevention and Management of CIPN",
+      "evidenceLevel": "Guideline",
+      "source": "[Loprinzi CL et al. J Clin Oncol 2020 (update)](https://pubmed.ncbi.nlm.nih.gov/32663120/)"
+    },
+    {
+      "recommendation": "No agent has proven efficacy for CIPN prevention (ASCO 2020 guideline conclusion)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Loprinzi CL et al. J Clin Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/32663120/)"
+    },
+    {
+      "recommendation": "Exercise during chemotherapy may reduce CIPN incidence and severity",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Kleckner IR et al. Support Care Cancer 2018](https://pubmed.ncbi.nlm.nih.gov/29243164/)"
+    },
+    {
+      "recommendation": "Calcium/magnesium infusions may reduce oxaliplatin acute neurotoxicity",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Grothey A et al. J Clin Oncol 2011](https://pubmed.ncbi.nlm.nih.gov/21189381/)"
+    },
+    {
+      "recommendation": "Coasting phenomenon in platinum compounds (worsening after discontinuation)",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Cavaletti G, Marmiroli P. Nat Rev Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/21060341/)"
+    },
+    {
+      "recommendation": "Skin biopsy (IENFD) detects small fiber damage in early CIPN when EMG/NCS normal",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Lauria G et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642627/)"
+    },
+    {
+      "recommendation": "Taxane CIPN: predominantly sensory, axonal, dose-dependent",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Argyriou AA et al. Eur J Cancer 2012](https://pubmed.ncbi.nlm.nih.gov/23304163/)"
+    },
+    {
+      "recommendation": "Capsaicin 8% patch shows benefit for localized CIPN pain",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Anand P, Bley K. Br J Anaesth 2011](https://pubmed.ncbi.nlm.nih.gov/21903638/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "CIPN screening questionnaire (EORTC QLQ-CIPN20 or FACT/GOG-Ntx)",
+      "frequency": "Before each chemo cycle",
+      "action": "Dose reduce or discontinue chemotherapy per protocol; intensify symptom management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CTCAE neuropathy grading",
+      "frequency": "Before each chemo cycle",
+      "action": "Grade 2: dose reduce 25-50%; Grade 3: hold or discontinue; discuss with oncology",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurologic exam (strength, sensation, reflexes, gait, Romberg)",
+      "frequency": "Each oncology visit; each neurology visit",
+      "action": "Adjust chemotherapy; add symptomatic treatment; PT referral for balance",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "EMG/NCS (serial)",
+      "frequency": "Baseline (pre-chemo ideal); at onset of symptoms; q6-12 months during treatment",
+      "action": "SNAP amplitude drop >50% → consider dose modification; new denervation → urgent oncology discussion",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall risk assessment",
+      "frequency": "Each visit during active CIPN",
+      "action": "PT referral; home safety evaluation; assistive device assessment; reduce sedating medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum magnesium (cisplatin/cetuximab patients)",
+      "frequency": "Each chemo cycle; weekly during cisplatin",
+      "action": "Replace IV MgSO4 if <1.2; oral supplementation if 1.2-1.8; dose may need to be held",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (cisplatin patients)",
+      "frequency": "Each chemo cycle",
+      "action": "Cisplatin dose adjustment per renal function; hold if significant decline",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Acute CIPN exacerbation with stable neurologic exam; pain controlled with oral medications; no fall-related injuries requiring admission; neurology/oncology follow-up arranged"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Acute neurologic decline requiring serial exams; fall with injury needing workup; severe electrolyte derangement (hypomagnesemia, hypokalemia) requiring IV replacement"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Severe (grade 3) CIPN with inability to perform self-care; cisplatin nephrotoxicity with electrolyte crisis; fall with injury requiring inpatient management; acute chemotherapy reaction requiring monitoring"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Rare; only if concurrent chemotherapy toxicity (severe nephrotoxicity, sepsis in neutropenic patient); respiratory compromise from vinca alkaloid-induced autonomic/motor neuropathy"
+    },
+    {
+      "disposition": "Outpatient follow-up (oncology)",
+      "criteria": "Before each chemotherapy cycle: CIPN screening; dose modification decisions; ongoing monitoring during active treatment"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology)",
+      "criteria": "Initial evaluation: 2-4 weeks after symptom onset; EMG/NCS baseline; follow-up q3-6 months during treatment; post-treatment monitoring for coasting q3 months for 1 year"
+    }
+  ]
+}

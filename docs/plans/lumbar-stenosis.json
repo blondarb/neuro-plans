@@ -1,0 +1,1036 @@
+{
+  "id": "lumbar-stenosis",
+  "title": "Lumbar Spinal Stenosis",
+  "version": "1.0",
+  "icd10": [
+    "** M48.061 (Spinal stenosis",
+    "lumbar region without neurogenic claudication)",
+    "M48.062 (Spinal stenosis",
+    "lumbar region with neurogenic claudication)",
+    "M99.23 (Subluxation stenosis of neural canal of lumbar region)"
+  ],
+  "scope": "** Evaluation and management of degenerative lumbar spinal stenosis in adults. Includes diagnostic workup, conservative management, interventional procedures, and surgical referral criteria. Covers ED presentation with acute neurological decline, inpatient perioperative management, and outpatient chronic management. Excludes congenital stenosis, cervical/thoracic stenosis, and cauda equina syndrome as separate entities (though cauda equina is addressed as a red flag).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Preoperative and Baseline)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Preoperative baseline; rule out infection if acute presentation; anemia assessment",
+          "target": "Normal WBC, Hgb >10 g/dL for surgical planning"
+        },
+        {
+          "item": "BMP (CPT 80048)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes, renal function; preoperative assessment; NSAID safety",
+          "target": "Normal creatinine; normal electrolytes"
+        },
+        {
+          "item": "ESR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in infection, malignancy, or inflammatory spondyloarthropathy",
+          "target": "Normal (<20 mm/hr men, <30 mm/hr women); elevated suggests alternative diagnosis"
+        },
+        {
+          "item": "CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory marker; infection screening in acute presentations",
+          "target": "Normal (<5 mg/L)"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Evaluate urinary retention; rule out UTI in patients with bladder complaints",
+          "target": "Normal; post-void residual if retention suspected"
+        },
+        {
+          "item": "HbA1c",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetes as comorbidity affecting surgical outcomes and neuropathy overlap",
+          "target": "<7.0% for optimal surgical healing"
+        }
+      ],
+      "Extended Labs (Selected Patients)": [
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causing myelopathy or neuropathy mimicking stenosis symptoms",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism causing myopathy or fatigue mimicking claudication",
+          "target": "Normal (0.4-4.0 mIU/L)"
+        },
+        {
+          "item": "Serum protein electrophoresis (SPEP)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Screen for myeloma or amyloidosis in atypical presentations or pathologic fractures",
+          "target": "Normal pattern; no M-spike"
+        },
+        {
+          "item": "PT/INR",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Preoperative coagulation assessment; anticoagulant management",
+          "target": "INR <1.5 for surgery"
+        },
+        {
+          "item": "Type and screen",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Preoperative blood bank preparation for surgical patients",
+          "target": "Available for crossmatch"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Vitamin D (25-OH)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency common in chronic back pain; affects bone health and surgical fusion outcomes",
+          "target": ">30 ng/mL"
+        },
+        {
+          "item": "Copper, serum",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Copper deficiency myelopathy mimicking stenosis (especially post-gastric bypass)",
+          "target": "Normal (70-140 mcg/dL)"
+        },
+        {
+          "item": "Methylmalonic acid",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Confirm functional B12 deficiency if B12 borderline (200-400 pg/mL)",
+          "target": "Normal (<0.4 nmol/L)"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "MRI lumbar spine without contrast (CPT 72148)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Within 24h if acute deficit; routine for chronic symptoms",
+          "target": "Central canal diameter, lateral recess narrowing, foraminal stenosis, disc herniation, ligamentum flavum hypertrophy; grade stenosis severity",
+          "contraindications": "MRI-incompatible implants; claustrophobia (consider open MRI)"
+        },
+        {
+          "item": "X-ray lumbar spine (AP, lateral, flexion-extension) (CPT 72100)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Initial imaging in ED; assess alignment and instability",
+          "target": "Disc space narrowing, osteophytes, spondylolisthesis, alignment; flexion-extension views for dynamic instability",
+          "contraindications": "Pregnancy (shield or defer)"
+        },
+        {
+          "item": "Post-void residual (bladder scan)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "If bladder dysfunction suspected; cauda equina screening",
+          "target": "<100 mL normal; >200 mL suggests neurogenic bladder",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "CT lumbar spine without contrast (CPT 72131)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If MRI contraindicated; superior bony detail for surgical planning",
+          "target": "Facet hypertrophy, osteophyte dimensions, bony canal diameter; complements MRI for surgical planning",
+          "contraindications": "Pregnancy (relative)"
+        },
+        {
+          "item": "MRI lumbar spine with contrast (CPT 72149)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If concern for infection, tumor, post-surgical recurrence, or arachnoiditis",
+          "target": "Enhancement suggesting tumor, infection, or inflammation; post-operative scar vs recurrent herniation",
+          "contraindications": "Gadolinium allergy; GFR <30 (NSF risk)"
+        },
+        {
+          "item": "EMG/NCS (CPT 95907, 95913, 95886)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "If radiculopathy localization needed; differentiate from peripheral neuropathy; quantify nerve injury severity",
+          "target": "Active denervation in specific myotomal distribution; normal NCS (rules out peripheral neuropathy)",
+          "contraindications": "Anticoagulation (relative for needle EMG); skin infection at electrode sites"
+        },
+        {
+          "item": "CT myelogram",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If MRI contraindicated and MRI-quality detail needed; dynamic evaluation of stenosis",
+          "target": "Contrast filling defects corresponding to stenosis levels; thecal sac compression",
+          "contraindications": "Contrast allergy; active infection; coagulopathy"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "DEXA scan (bone density)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Pre-surgical assessment in patients >65 or osteoporosis risk; affects fusion strategy",
+          "target": "T-score > -2.5; osteoporosis affects screw purchase and fusion rates",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI with kinematic/upright imaging",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Dynamic stenosis evaluation; symptoms worse with standing but MRI supine is borderline",
+          "target": "Worsening stenosis with axial loading or upright positioning",
+          "contraindications": "MRI contraindications"
+        },
+        {
+          "item": "Diagnostic selective nerve root block",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Identify symptomatic level when multilevel stenosis present and clinical-imaging correlation unclear",
+          "target": "Pain relief >75% confirms symptomatic level",
+          "contraindications": "Coagulopathy; infection; allergy to local anesthetic"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Dexamethasone",
+          "route": "IV",
+          "indication": "Acute neurologic deficit; suspected cauda equina syndrome pending surgery; severe radiculopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV bolus; then 4 mg IV q6h for 24-48h pending neurosurgical evaluation",
+            "orderSentence": "Dexamethasone 10 mg IV"
+          },
+          "contraindications": "Active GI bleeding; uncontrolled diabetes (relative); systemic infection",
+          "monitoring": "Blood glucose q6h; GI symptoms; neurologic exam q4h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ketorolac (Toradol)",
+          "route": "IV/IM",
+          "indication": "Acute pain in ED; anti-inflammatory effect; NSAID for radicular pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Ketorolac (Toradol) 30 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "30 mg IV/IM q6h; max 5 days; reduce to 15 mg in elderly or renal impairment",
+            "orderSentence": "Ketorolac (Toradol) 30 mg IV"
+          },
+          "contraindications": "GFR <30; active GI bleeding; bleeding disorder; concurrent anticoagulation; CABG within 14 days",
+          "monitoring": "Renal function; GI symptoms; bleeding signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Morphine or hydromorphone",
+          "route": "IV",
+          "indication": "Severe acute pain unresponsive to NSAIDs; acute cauda equina pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-4 mg",
+                "orderSentence": "Morphine or hydromorphone 2-4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Morphine 2-4 mg IV q3-4h PRN or hydromorphone 0.5-1 mg IV q3-4h PRN; titrate to pain relief; short-term use only",
+            "orderSentence": "Morphine or hydromorphone 2-4 mg IV"
+          },
+          "contraindications": "Respiratory depression; ileus; severe COPD; concurrent CNS depressants",
+          "monitoring": "Pain score; sedation; respiratory rate; bowel function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Emergent surgical decompression (laminectomy)",
+          "route": "Surgical",
+          "indication": "Cauda equina syndrome; rapidly progressive motor deficit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Emergent",
+                "orderSentence": "Emergent surgical decompression (laminectomy) Emergent Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Emergent decompressive laminectomy within 24-48h of CES onset; outcomes correlate with time to decompression",
+            "orderSentence": "Emergent surgical decompression (laminectomy) Emergent Surgical"
+          },
+          "contraindications": "Medically unstable for anesthesia",
+          "monitoring": "Post-operative neurologic exam; urodynamics; wound checks",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "First-Line Conservative Management": [
+        {
+          "item": "Naproxen",
+          "route": "PO",
+          "indication": "Mild-moderate pain; neurogenic claudication; anti-inflammatory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Naproxen 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250-500 mg BID with food; max 1000 mg/day; trial 4-6 weeks",
+            "orderSentence": "Naproxen 500 mg PO"
+          },
+          "contraindications": "GI bleeding; renal impairment (GFR <30); aspirin-sensitive asthma; concurrent anticoagulation",
+          "monitoring": "GI symptoms; renal function; BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Meloxicam",
+          "route": "PO",
+          "indication": "Anti-inflammatory; better GI tolerability than non-selective NSAIDs; chronic stenosis pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Meloxicam 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5 mg daily; increase to 15 mg daily if needed; max 15 mg/day",
+            "orderSentence": "Meloxicam 7.5 mg PO"
+          },
+          "contraindications": "Same as naproxen; cardiovascular risk assessment for chronic use",
+          "monitoring": "GI symptoms; renal function; cardiovascular events",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic component; radicular pain; neurogenic claudication with neuropathic features",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100-300 mg qHS; titrate by 300 mg q3-7 days; target 300-600 mg TID; max 3600 mg/day divided TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); myasthenia gravis",
+          "monitoring": "Sedation; dizziness; peripheral edema; renal function for dose adjustment; suicidality (FDA warning)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin with more predictable absorption",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50-75 mg BID; titrate by 75 mg q3-7 days; target 150-300 mg BID; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); angioedema history",
+          "monitoring": "Sedation; dizziness; weight gain; peripheral edema; renal dosing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Mild pain; adjunct to NSAIDs; patients with NSAID contraindications",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Acetaminophen 500-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-1000 mg q6-8h; max 3000 mg/day (2000 mg/day in elderly or liver disease)",
+            "orderSentence": "Acetaminophen 500-1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; active liver disease",
+          "monitoring": "LFTs if chronic use >2 weeks; hepatic symptoms",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy (flexion-based program) (CPT 97110)",
+          "route": "Physical",
+          "indication": "All patients as first-line; neurogenic claudication; deconditioning",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-3x/week for 6-12 weeks",
+                "orderSentence": "Physical therapy (flexion-based program) (CPT 97110) 2-3x/week for 6-12 weeks Physical"
+              }
+            ],
+            "route": "Physical",
+            "instructions": "Flexion-based exercises (Williams flexion exercises); core stabilization; aerobic conditioning (stationary cycling preferred); aquatic therapy if weight-bearing limited",
+            "orderSentence": "Physical therapy (flexion-based program) (CPT 97110) 2-3x/week for 6-12 weeks Physical"
+          },
+          "contraindications": "Acute cauda equina syndrome; unstable spondylolisthesis (extension exercises contraindicated)",
+          "monitoring": "Pain levels; walking distance; functional capacity; adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lumbar epidural steroid injection (ESI) (CPT 62322)",
+          "route": "Injection",
+          "indication": "Moderate-severe neurogenic claudication or radiculopathy; failed 6 weeks conservative treatment; bridge to surgery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg methylprednisolone",
+                "orderSentence": "Lumbar epidural steroid injection (ESI) (CPT 62322) 80 mg methylprednisolone Injection"
+              }
+            ],
+            "route": "Injection",
+            "instructions": "Interlaminar or transforaminal approach under fluoroscopic guidance; 80 mg methylprednisolone or 6 mg betamethasone; max 3-4 injections per year; effect lasts 2 weeks to 6 months",
+            "orderSentence": "Lumbar epidural steroid injection (ESI) (CPT 62322) 80 mg methylprednisolone Injection"
+          },
+          "contraindications": "Active infection; bleeding disorder; INR >1.5; uncontrolled diabetes; allergy to injectate",
+          "monitoring": "Blood glucose (diabetics) for 1-2 weeks post-injection; neurologic exam; infection signs",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Refractory": [
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Chronic pain with neuropathic component; concurrent depression; NSAID-intolerant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily for 1 week; increase to 60 mg daily; max 120 mg/day; taper when discontinuing (do not stop abruptly)",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "BP; hepatic function; serotonin syndrome symptoms; discontinuation syndrome",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyclobenzaprine",
+          "route": "PO",
+          "indication": "Muscle spasm component; short-term use for acute exacerbation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Cyclobenzaprine 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; max 10 mg TID; limit to 2-3 weeks; primarily for muscle spasm relief",
+            "orderSentence": "Cyclobenzaprine 5 mg PO"
+          },
+          "contraindications": "Arrhythmia; heart block; CHF; concurrent MAOIs; hyperthyroidism",
+          "monitoring": "Sedation; anticholinergic effects; cardiac monitoring in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcitonin (salmon)",
+          "route": "Intranasal",
+          "indication": "Neurogenic claudication refractory to standard treatment; some evidence for walking distance improvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 IU",
+                "orderSentence": "Calcitonin (salmon) 200 IU Intranasal"
+              }
+            ],
+            "route": "Intranasal",
+            "instructions": "200 IU intranasal daily; alternate nostrils; trial 8-12 weeks; discontinue if no improvement",
+            "orderSentence": "Calcitonin (salmon) 200 IU Intranasal"
+          },
+          "contraindications": "Hypersensitivity to salmon calcitonin",
+          "monitoring": "Nasal irritation; rhinitis; flushing; calcium levels",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Prostaglandin E1 (limaprost)",
+          "route": "PO",
+          "indication": "Refractory neurogenic claudication; improve blood flow to cauda equina; available in some countries",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mcg",
+                "orderSentence": "Prostaglandin E1 (limaprost) 5 mcg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "5 mcg TID; trial 8-12 weeks; used more commonly in Japan; limited US availability",
+            "orderSentence": "Prostaglandin E1 (limaprost) 5 mcg PO"
+          },
+          "contraindications": "Bleeding disorders; pregnancy; concurrent anticoagulation",
+          "monitoring": "GI symptoms; bleeding; liver function",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Treatment": [
+        {
+          "item": "Decompressive laminectomy (CPT 63047)",
+          "route": "Surgical",
+          "indication": "Moderate-severe stenosis with neurogenic claudication or radiculopathy refractory to 3-6 months conservative treatment; progressive neurologic deficit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Decompressive laminectomy (CPT 63047) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Standard posterior decompressive laminectomy; single or multilevel; preserves facet joints when possible",
+            "orderSentence": "Decompressive laminectomy (CPT 63047) Elective Surgical"
+          },
+          "contraindications": "Medically unfit for surgery; minimal clinical symptoms despite imaging findings",
+          "monitoring": "Post-op neurologic exam; wound healing; DVT prophylaxis; pain management; mobilization",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Laminectomy with instrumented fusion (CPT 22630)",
+          "route": "Surgical",
+          "indication": "Stenosis with spondylolisthesis (grade >=2); stenosis with significant instability; recurrent stenosis post-prior decompression; scoliosis correction needed",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Laminectomy with instrumented fusion (CPT 22630) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Decompression plus posterolateral or interbody fusion with pedicle screw fixation; single or multilevel",
+            "orderSentence": "Laminectomy with instrumented fusion (CPT 22630) Elective Surgical"
+          },
+          "contraindications": "Same as laminectomy; osteoporosis (relative — may need cement-augmented screws)",
+          "monitoring": "Same as laminectomy plus fusion assessment (CT at 6-12 months); hardware position; pseudarthrosis screening",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Interspinous process device (Superion/X-STOP)",
+          "route": "Surgical",
+          "indication": "Mild-moderate neurogenic claudication; patients who may not tolerate open surgery; indirect decompression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Interspinous process device (Superion/X-STOP) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Minimally invasive insertion; limits extension and indirectly opens spinal canal; ambulatory surgery center eligible",
+            "orderSentence": "Interspinous process device (Superion/X-STOP) Elective Surgical"
+          },
+          "contraindications": "Severe stenosis (AP diameter <7 mm); spondylolisthesis >grade 1; fixed kyphosis; osteoporosis; spinous process fracture",
+          "monitoring": "Post-procedure imaging; symptom assessment; device position",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Minimally invasive decompression (tubular retractor laminotomy)",
+          "route": "Surgical",
+          "indication": "Moderate stenosis; patients preferring less invasive approach; unilateral or bilateral decompression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Elective",
+                "orderSentence": "Minimally invasive decompression (tubular retractor laminotomy) Elective Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Unilateral approach for bilateral decompression; tubular retractor technique; shorter hospitalization; less tissue disruption",
+            "orderSentence": "Minimally invasive decompression (tubular retractor laminotomy) Elective Surgical"
+          },
+          "contraindications": "Same as open laminectomy; severe bilateral stenosis may require open approach",
+          "monitoring": "Same as laminectomy; shorter expected recovery (2-4 weeks vs 4-6 weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurosurgery or spine surgery consultation for cauda equina syndrome (emergent), progressive neurologic deficit, or failure of 3-6 months conservative management",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Physical therapy referral for flexion-based exercise program, core stabilization, and aerobic conditioning (stationary cycling, aquatic therapy) — first-line treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management/interventional spine referral for epidural steroid injections, diagnostic nerve blocks, or multimodal pain management",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "PMR (physiatrist) for comprehensive non-operative management plan including activity modification, assistive devices, and rehabilitation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurology consultation if peripheral neuropathy overlap suspected or if electrodiagnostic testing needed for localization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for ADL modification, ergonomic assessment, and adaptive equipment (rolling walker, seated work station)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Lumbar flexion relieves symptoms: lean forward, push a shopping cart, use a rolling walker, or ride a stationary bicycle to open the spinal canal and reduce nerve compression",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid prolonged standing and walking downhill (extension aggravates stenosis); take sitting breaks every 15-30 minutes during walking",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use a rolling walker or shopping cart for longer walks — leaning forward on a support device increases walking distance by reducing spinal canal narrowing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report immediately to ED if loss of bladder or bowel control, numbness in the groin/perineal area (saddle anesthesia), or sudden onset bilateral leg weakness — these indicate cauda equina syndrome requiring emergency surgery",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take NSAIDs with food to reduce stomach irritation; report any dark stools, stomach pain, or blood in stool immediately",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Attend physical therapy consistently; flexion-based exercises and aerobic conditioning are the foundation of treatment and improve walking distance significantly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Understand that imaging findings (MRI stenosis) do not always correlate with symptoms — many people have stenosis on MRI without symptoms; treatment targets symptoms, not pictures",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Weight loss (if overweight) reduces spinal loading and may improve symptoms; maintain BMI <30 as a goal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Perform daily flexion-based exercises: pelvic tilts, knee-to-chest stretches, partial sit-ups, stationary cycling 20-30 minutes; these open the spinal canal and reduce neurogenic claudication",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain healthy weight to reduce axial loading on the lumbar spine; target BMI <30",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid high-impact activities (running, jumping) and heavy lifting (>25 lbs) which increase disc and facet loading and may worsen stenosis symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use proper body mechanics: bend at the knees (not waist), avoid twisting while lifting, and maintain neutral spine alignment during activities",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquatic therapy or pool walking provides exercise with buoyancy support, reducing spinal loading while maintaining cardiovascular fitness",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation: smoking impairs blood flow to spinal structures, accelerates disc degeneration, and significantly worsens surgical fusion outcomes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Optimize bone health: calcium 1000-1200 mg/day, vitamin D 1000-2000 IU/day, and DEXA screening if age >65 or osteoporosis risk factors present",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Vascular claudication (peripheral arterial disease)",
+      "features": "Calf-predominant pain relieved by standing still (not flexion); diminished pedal pulses; reproducible at same walking distance; does NOT improve with spinal flexion",
+      "tests": "ABI (ankle-brachial index) <0.9; arterial Doppler ultrasound; CTA of lower extremities"
+    },
+    {
+      "diagnosis": "Lumbar disc herniation (radiculopathy)",
+      "features": "Usually unilateral dermatomal pain; positive SLR; worse with flexion/sitting (opposite of stenosis); younger patients",
+      "tests": "MRI showing disc herniation compressing nerve root; EMG/NCS showing radiculopathy"
+    },
+    {
+      "diagnosis": "Peripheral neuropathy (diabetic or other)",
+      "features": "Symmetric stocking-glove sensory loss; burning/tingling; not positional; present at rest; no claudication pattern",
+      "tests": "EMG/NCS showing length-dependent polyneuropathy; HbA1c; B12 level"
+    },
+    {
+      "diagnosis": "Hip osteoarthritis",
+      "features": "Groin/lateral hip pain with walking; limited hip ROM (internal rotation); pain with hip flexion-internal rotation; not relieved by spinal flexion",
+      "tests": "X-ray pelvis/hip showing joint space narrowing, osteophytes; hip ROM exam"
+    },
+    {
+      "diagnosis": "Trochanteric bursitis",
+      "features": "Lateral hip/thigh pain; point tenderness over greater trochanter; pain with side-lying; not neurogenic claudication pattern",
+      "tests": "Clinical exam (tenderness over trochanter); normal imaging; ultrasound if needed"
+    },
+    {
+      "diagnosis": "Cauda equina syndrome",
+      "features": "Acute bilateral leg weakness, saddle anesthesia, urinary retention/incontinence; bowel dysfunction; requires emergent evaluation",
+      "tests": "Emergent MRI; post-void residual >200 mL; rectal exam (decreased tone)"
+    },
+    {
+      "diagnosis": "Conus medullaris syndrome",
+      "features": "Similar to CES but upper motor neuron signs may be present; symmetric; earlier bladder involvement",
+      "tests": "MRI showing compression above L1-L2 level; UMN signs (hyperreflexia, Babinski)"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus",
+      "features": "Gait apraxia (magnetic gait), urinary incontinence, cognitive decline; does not have neurogenic claudication pattern",
+      "tests": "MRI brain showing ventriculomegaly out of proportion to atrophy; lumbar tap test"
+    },
+    {
+      "diagnosis": "Spinal cord tumor or metastasis",
+      "features": "Progressive symptoms; night pain; constitutional symptoms; not positional relief pattern; may have upper or lower motor neuron signs",
+      "tests": "MRI with contrast showing enhancing lesion; labs (SPEP, PSA, etc.)"
+    },
+    {
+      "diagnosis": "Fibromyalgia",
+      "features": "Widespread pain; fatigue; tender points; no neurologic deficit; not position-dependent",
+      "tests": "Clinical diagnosis (2016 criteria); normal MRI; normal EMG/NCS"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "MRI is the imaging modality of choice for lumbar spinal stenosis",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Defined MRI grading improves correlation with clinical severity](https://pubmed.ncbi.nlm.nih.gov/20881510/)"
+    },
+    {
+      "recommendation": "Physical therapy with flexion-based exercises improves walking distance and function",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Delitto A et al. Ann Intern Med 2015](https://pubmed.ncbi.nlm.nih.gov/25844995/)"
+    },
+    {
+      "recommendation": "Epidural steroid injections provide short-term (2-6 week) pain relief for neurogenic claudication",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Friedly JL et al. NEJM 2014](https://pubmed.ncbi.nlm.nih.gov/24988555/)"
+    },
+    {
+      "recommendation": "Surgical decompression is superior to continued conservative treatment for moderate-severe stenosis after 6+ months",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Weinstein JN et al. NEJM 2008 (SPORT trial)](https://pubmed.ncbi.nlm.nih.gov/18287602/)"
+    },
+    {
+      "recommendation": "Gabapentin reduces radicular pain in spinal stenosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Yaksi A et al. Spine 2007](https://pubmed.ncbi.nlm.nih.gov/17450066/)"
+    },
+    {
+      "recommendation": "Walking capacity measured by self-paced walking test is a valid outcome measure for lumbar stenosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Tomkins-Lane C et al. Spine 2012](https://pubmed.ncbi.nlm.nih.gov/22405613/)"
+    },
+    {
+      "recommendation": "Fusion is recommended when spondylolisthesis accompanies stenosis requiring decompression",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Ghogawala Z et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27074067/)"
+    },
+    {
+      "recommendation": "NASS Clinical Guidelines for Lumbar Spinal Stenosis",
+      "evidenceLevel": "Guideline",
+      "source": "[NASS Evidence-Based Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/21488246/)"
+    },
+    {
+      "recommendation": "Cauda equina syndrome requires surgical decompression within 24-48 hours for optimal outcomes",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Ahn UM et al. Spine 2000](https://pubmed.ncbi.nlm.nih.gov/10851107/)"
+    },
+    {
+      "recommendation": "Interspinous spacer devices provide non-inferior results to laminectomy for mild-moderate stenosis",
+      "evidenceLevel": "Class IIb, Level B",
+      "source": "[Patel VV et al. Spine 2015](https://pubmed.ncbi.nlm.nih.gov/26630435/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Walking distance (symptom-limited)",
+      "frequency": "Each visit",
+      "action": "Escalate treatment; consider ESI or surgical referral if declining",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurologic exam (strength, sensation, reflexes L1-S1)",
+      "frequency": "Each encounter",
+      "action": "Urgent MRI and surgical consultation if new or progressive deficit",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Pain scores (NRS 0-10)",
+      "frequency": "Each visit",
+      "action": "Adjust medications; consider interventional or surgical options",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Post-void residual (if bladder symptoms)",
+      "frequency": "Baseline; PRN",
+      "action": "Emergent MRI for cauda equina; Foley catheter if >500 mL",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (if on chronic NSAIDs)",
+      "frequency": "Q3-6 months",
+      "action": "Discontinue NSAIDs; switch to acetaminophen or gabapentin",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose (post-ESI in diabetics)",
+      "frequency": "Daily for 1-2 weeks post-injection",
+      "action": "Adjust diabetic medications; close endocrine follow-up",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Surgical outcome assessment (ODI, SF-36)",
+      "frequency": "6 weeks, 3 months, 6 months, 12 months post-op",
+      "action": "Evaluate for adjacent segment disease, hardware failure, pseudarthrosis",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "No cauda equina syndrome; stable neurologic exam; pain controlled with oral medications; able to ambulate safely; outpatient MRI and follow-up arranged within 1-2 weeks"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Acute neurologic decline requiring serial exams; pain requiring IV medications; MRI obtained showing severe stenosis awaiting neurosurgical evaluation"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Cauda equina syndrome for emergent surgical decompression; progressive motor deficit requiring inpatient workup; elective surgical admission for scheduled decompression/fusion; pain crisis unresponsive to outpatient management"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Post-operative complication (epidural hematoma, severe neurologic decline); hemodynamic instability; respiratory compromise in patients with significant comorbidities"
+    },
+    {
+      "disposition": "Outpatient follow-up (spine specialist)",
+      "criteria": "New diagnosis: spine surgery or physiatry within 2-4 weeks; post-ESI: 2-4 weeks; post-operative: 2 weeks (wound check), 6 weeks, 3 months, 6 months, 12 months"
+    },
+    {
+      "disposition": "Outpatient follow-up (PCP)",
+      "criteria": "Chronic management: q3-6 months; medication monitoring (NSAIDs, gabapentin); physical therapy progress; weight management"
+    }
+  ]
+}

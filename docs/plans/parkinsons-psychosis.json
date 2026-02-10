@@ -1,0 +1,377 @@
+{
+  "id": "parkinsons-psychosis",
+  "title": "Parkinson's Disease — Psychosis",
+  "version": "1.0",
+  "icd10": [
+    "** F06.0 (Psychotic disorder due to known physiological condition with hallucinations)",
+    "F06.2 (Psychotic disorder due to known physiological condition with delusions)",
+    "G20.A1 (Parkinson's disease without dyskinesia",
+    "without fluctuations)",
+    "G20.C (Parkinsonism",
+    "unspecified)",
+    "F03.90 (Dementia",
+    "unspecified",
+    "without behavioral disturbance)"
+  ],
+  "scope": "** Evaluation and management of psychosis in the setting of Parkinson's disease. Covers the full spectrum from minor visual hallucinations (passage hallucinations, presence hallucinations) to formed visual hallucinations, delusions (paranoid, jealousy), and delirium. Includes medication-induced psychosis, PD dementia-related psychosis, and intercurrent medical causes. Addresses the critical tension between treating psychosis (requires dopamine reduction) and maintaining motor function (requires dopamine). Applies to ED (acute psychosis), inpatient (severe, disruptive), and outpatient (chronic management) settings.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "— Core Labs (Order for All Patients)": [
+        {
+          "item": "CBC with differential",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Infection screen (UTI, pneumonia — most common delirium triggers)"
+        },
+        {
+          "item": "BMP (Na, K, Cl, CO₂, BUN, Cr, glucose)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic derangements (hyponatremia, uremia, hypoglycemia) as cause of altered mental status"
+        },
+        {
+          "item": "Urinalysis with culture",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "UTI — most common precipitant of delirium and acute psychotic worsening in elderly PD patients"
+        },
+        {
+          "item": "TSH",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism or hyperthyroidism — exacerbates cognitive symptoms"
+        },
+        {
+          "item": "Vitamin B12",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Deficiency contributes to cognitive decline and psychiatric symptoms"
+        },
+        {
+          "item": "Liver function tests (CMP)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hepatic encephalopathy; drug metabolism assessment (many PD meds hepatically cleared)"
+        },
+        {
+          "item": "Blood cultures (if febrile)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Sepsis — common cause of acute psychosis in elderly"
+        }
+      ],
+      "— Extended Labs (Order When Clinically Indicated)": [
+        {
+          "item": "Urine drug screen",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "If substance use suspected; may detect unexpected medications"
+        },
+        {
+          "item": "Medication levels (if applicable)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Amantadine, lithium, anticonvulsant levels — toxicity can cause psychosis"
+        },
+        {
+          "item": "Ammonia level",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Hepatic encephalopathy if liver disease suspected"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis — treatable cause of psychosis in appropriate clinical context"
+        },
+        {
+          "item": "HIV testing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "If risk factors present — HIV-associated neurocognitive disorder"
+        },
+        {
+          "item": "Cortisol (AM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Adrenal insufficiency — especially if on chronic steroids"
+        }
+      ],
+      "— Rare/Specialized Labs": [
+        {
+          "item": "Autoimmune encephalitis panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If atypical course, rapid onset, or young patient — anti-NMDAR, LGI1, CASPR2 antibodies"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If subacute onset, associated neurologic findings suggesting paraneoplastic process"
+        },
+        {
+          "item": "CSF analysis (cell count, protein, glucose, cytology)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Only if infection or autoimmune encephalitis is on differential — not routine for PDP"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "— Essential Imaging": [
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Acute change in mental status — rule out stroke, subdural hematoma, hydrocephalus; first-line imaging"
+        },
+        {
+          "item": "Chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-",
+          "rationale": "Pneumonia screen (common delirium trigger in elderly PD patients)"
+        },
+        {
+          "item": "ECG (12-lead)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "QTc assessment **before starting pimavanserin** (prolongs QTc); baseline for antipsychotic monitoring"
+        }
+      ],
+      "— Extended Imaging": [
+        {
+          "item": "MRI brain with/without contrast",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Structural lesion, stroke, NPH, Lewy body pattern atrophy; indicated if new or atypical psychosis, rapid cognitive decline, or focal neurologic signs"
+        },
+        {
+          "item": "EEG (routine or continuous)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If concern for nonconvulsive seizures or Creutzfeldt-Jakob disease; periodic discharges in CJD"
+        }
+      ],
+      "— Rare/Specialized Studies": [
+        {
+          "item": "DaTscan (I-123 ioflupane SPECT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Only if PD diagnosis is uncertain and DLB vs AD vs PD-D needs clarification; not routinely needed if PD diagnosis established"
+        },
+        {
+          "item": "FDG-PET brain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research/atypical cases — posterior cortical hypometabolism supports DLB/PDD"
+        },
+        {
+          "item": "Neuropsychological testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Quantify cognitive deficits; distinguish PD-MCI from PDD; track progression; help predict psychosis risk"
+        },
+        {
+          "item": "Polysomnography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "If RBD evaluation needed or if sleep fragmentation contributing to psychotic symptoms"
+        }
+      ]
+    },
+    "Treatment": {
+      "— Acute / Emergency Treatment": [
+        {
+          "item": "**Rule out delirium**",
+          "details": "UTI, pneumonia, constipation/fecal impaction, medication changes, hospitalization itself — treat the underlying cause; psychosis may resolve entirely"
+        },
+        {
+          "item": "**Medication review — eliminate offending agents**",
+          "details": "Systematic deprescribing in order of cognitive risk (stop first → stop last): **anticholinergics** (benztropine, trihexyphenidyl) → **amantadine** → **MAO-B inhibitors** (selegiline, rasagiline) → **dopamine agonists** (pramipexole, ropinirole, rotigotine) → **COMT inhibitors** (entacapone) → **reduce levodopa dose** (last resort — maintain motor function)"
+        },
+        {
+          "item": "**Environmental measures**",
+          "details": "Adequate lighting (reduce visual hallucinations), familiar objects, reorientation, sleep hygiene, minimize polypharmacy"
+        },
+        {
+          "item": "Quetiapine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-25 mg",
+                "orderSentence": "Quetiapine PO 12.5-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 12.5 mg, may repeat in 2 hours",
+            "orderSentence": "Quetiapine PO 12.5-25 mg PO"
+          }
+        },
+        {
+          "item": "Lorazepam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam 0.5-1 mg PO/IV/IM"
+              }
+            ],
+            "route": "PO/IV/IM",
+            "instructions": "0.5-1 mg :: PO/IV/IM :: as needed",
+            "orderSentence": "Lorazepam 0.5-1 mg PO/IV/IM"
+          }
+        }
+      ],
+      "— First-Line Chronic Treatment": [
+        {
+          "item": "Pimavanserin (Nuplazid)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "34 mg",
+                "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "no titration needed",
+            "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
+          }
+        },
+        {
+          "item": "Quetiapine PO (chronic)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5-150 mg",
+                "orderSentence": "Quetiapine PO (chronic) 12.5-150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 12.5 mg, titrate by 12.5-25 mg every 3-5 days; target lowest effective dose",
+            "orderSentence": "Quetiapine PO (chronic) 12.5-150 mg PO"
+          }
+        }
+      ],
+      "— Second-Line Treatment": [
+        {
+          "item": "Clozapine PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6.25-50 mg",
+                "orderSentence": "Clozapine PO 6.25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 6.25 mg (1/4 of 25 mg tablet), titrate by 6.25 mg every 3-7 days; target 12.5-50 mg/day",
+            "orderSentence": "Clozapine PO 6.25-50 mg PO"
+          }
+        },
+        {
+          "item": "Cholinesterase inhibitors (rivastigmine, donepezil)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Rivastigmine",
+                "orderSentence": "Cholinesterase inhibitors (rivastigmine, donepezil) Rivastigmine 1.5 mg"
+              }
+            ],
+            "route": "1.5 mg",
+            "instructions": "BID",
+            "orderSentence": "Cholinesterase inhibitors (rivastigmine, donepezil) Rivastigmine 1.5 mg"
+          }
+        }
+      ],
+      "— Refractory Psychosis Management": [
+        {
+          "item": "**Combination therapy**",
+          "details": "Pimavanserin + quetiapine (or + clozapine) — limited evidence but used in practice for severe cases"
+        },
+        {
+          "item": "**Electroconvulsive therapy (ECT)**",
+          "details": "Case reports/small series show benefit for severe PDP refractory to medications; also improves motor symptoms temporarily; logistic and access barriers"
+        },
+        {
+          "item": "**Reduce levodopa**",
+          "details": "If all else fails, gradually reduce levodopa — accept some motor worsening to control psychosis; family discussion about trade-offs essential"
+        },
+        {
+          "item": "**Structured care environment**",
+          "details": "If psychosis is persistent and dangerous — consider memory care or psychiatric facility with movement disorder expertise"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "— Referrals": [
+        {
+          "rationale": "PDP medication optimization — balance motor and psychiatric symptoms; pimavanserin initiation; clozapine program enrollment"
+        },
+        {
+          "rationale": "Severe psychosis, medication-refractory symptoms, ECT evaluation, capacity assessment"
+        },
+        {
+          "rationale": "Cognitive testing — PD-MCI vs PDD staging; psychosis risk stratification; capacity evaluation"
+        },
+        {
+          "rationale": "Caregiver support, home safety evaluation, placement assistance if needed"
+        },
+        {
+          "rationale": "Goals of care discussion if advanced PDD with refractory psychosis — quality of life focus"
+        }
+      ]
+    }
+  }
+}
