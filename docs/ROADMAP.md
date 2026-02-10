@@ -1,256 +1,172 @@
 # Neuro Plans - Development Roadmap
 
-**Version:** 1.1
+**Version:** 2.0
 **Created:** January 24, 2026
-**Last Updated:** February 6, 2026
-**Status:** Phases 1-3 Complete
+**Last Updated:** February 2026
+**Status:** Phases 1-3 Complete, UI/UX Improvement Phases Defined
 
 ---
 
 ## Overview
 
-This roadmap outlines planned improvements to the clinical plan generation system, with a focus on medication handling, clickable dosing, and overall standardization before scaling to additional neurological topics.
+This roadmap covers two workstreams:
+1. **Clinical Content Pipeline** (Phases 1-4) — Medication handling, clickable dosing, and standardization
+2. **UI/UX Improvements** (Phases 5-8) — Design system, mobile experience, and app transition
 
 ---
 
-## Phase 1: Medication Format Standardization (Foundation) -- COMPLETE
+## Clinical Content Pipeline
 
-**Goal:** Create a consistent, parseable medication format across all treatment sections.
+### Phase 1: Medication Format Standardization — ✅ COMPLETE
 
-**Priority:** HIGH - Must complete before building new topics
+**Completed:** January 24 – January 30, 2026
 
-**Status:** ✅ COMPLETE (January 24 - January 30, 2026)
+Standardized all treatment sections to consistent 10-column format with structured dosing (`dose :: route :: frequency :: instructions`). Updated builder, checker, and rebuilder skills.
 
-### 1.1 Standardize Treatment Table Columns
+### Phase 2: Clickable Dosing — ✅ COMPLETE
 
-| Current Problem | Solution |
-|-----------------|----------|
-| Section 3A/3B/3C have inconsistent columns | Standardize ALL treatment sections to same column order |
-| Route only in Section 3D (DMTs) | Add Route column to ALL treatment sections |
-| Column order varies | Fixed order: Treatment → Route → Indication → Dosing → Contraindications → Monitoring → ED → HOSP → OPD → ICU |
+**Completed:** January 31, 2026
 
-**New Standard Treatment Table Format (All Sections):**
-```markdown
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-```
+Made medication dosing interactive in the Clinical Tool. Dosing badge click copies order sentence to clipboard. Hover shows full instructions.
 
-### 1.2 Structured Dosing Format
+### Phase 3: Multiple Dose Options — ✅ COMPLETE
 
-**Current Problem:** Dosing is unstructured text that can't be parsed into order sentences.
+**Completed:** February 5, 2026
 
-**Example of current format:**
-```
-Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day
-```
+Expanded 1,321 medications to 2-6 clinically appropriate dose options. Dropdown selection in Clinical Tool for each medication.
 
-**New structured dosing format (double-colon delimited fields within dosing cell):**
+### Phase 4: Future Clinical Enhancements — 🔮 PLANNED
 
-**Single dose format:**
-```
-5 mg :: PO :: TID :: Start 5 mg TID, titrate by 5 mg q3d, max 80 mg/day
-```
-
-**Multi-dose format (semicolon-separated dose options):**
-```
-300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day
-```
-
-**Format:** `dose_options :: route :: [frequency] :: full_instructions`
-
-- `dose_options`: Single dose+freq OR multiple semicolon-separated options
-- `route`: Administration route (PO, IV, IM, etc.)
-- `frequency`: Optional if included in dose_options
-- `full_instructions`: Complete dosing guidance
-
-**Note:** We use `::` instead of `|` because `|` conflicts with markdown table syntax.
-
-This allows the clinical tool to:
-1. Generate multiple order sentences for different dose options
-2. Display dropdown to select desired dose
-3. Copy selected order sentence to clipboard
-4. Show full dosing guidance on hover
-
-### 1.3 Files to Update
-
-| File | Changes |
-|------|---------|
-| `skills/neuro-builder-SKILL.md` | New table format, structured dosing spec |
-| `skills/neuro-checker-SKILL.md` | Validation rules for new format |
-| `skills/neuro-rebuilder-SKILL.md` | Update pattern matching for new columns |
-| `scripts/generate_json.py` | Parse structured dosing into separate JSON fields |
+| Feature | Priority | Effort |
+|---------|----------|--------|
+| Medication interaction checking | Medium | High |
+| Weight-based dosing calculator | Medium | Medium |
+| Renal/hepatic dose adjustments | Medium | High |
 
 ---
 
-## Phase 2: Clickable Dosing (Clinical Tool Enhancement) -- COMPLETE
+## UI/UX Improvement Roadmap
 
-**Goal:** Make medication dosing interactive with copy-ready order sentences.
+Based on comprehensive audit (see [UX Audit](UX_AUDIT.md), [UI Audit](UI_AUDIT.md), [Benchmark Comparison](BENCHMARK_COMPARISON.md), [Design System](DESIGN_SYSTEM.md), [App Strategy](APP_STRATEGY.md)).
 
-**Priority:** HIGH - Key UX improvement
+### Phase 5: Quick Wins (CSS & Token Foundation) — 🔧 NEXT
 
-**Status:** ✅ COMPLETE (January 31, 2026)
+**Effort:** 1-2 days
+**Branch:** `ui-ux-improvements`
+**Impact:** High — addresses multiple audit findings with low risk
 
-### 2.1 JSON Schema Enhancement
+| Item | Audit ID | Description |
+|------|----------|-------------|
+| CSS custom properties | UI-C1 | Add design tokens to top of `custom.css`, replace hardcoded hex values |
+| Dark mode priority badges | UI-DM1 | Add `[data-md-color-scheme="slate"]` overrides for all priority badges |
+| Sticky table headers | UI-TAB1 | Add `position: sticky; top: 0` to plan table headers |
+| Row hover highlight | UI-TAB2 | Add hover state to table rows for better tracking |
+| Row stripe contrast | UI-TAB4 | Increase stripe visibility from `#f0fdfa` to slightly more distinct shade |
+| Minimum font sizes | UI-T1 | Increase table body minimum from `0.8rem` → `0.875rem`, venue columns from `0.65rem` → `0.75rem` |
+| Badge minimum sizes | UI-B1 | Ensure priority badges never go below `0.6875rem` with `4px 8px` padding |
+| Active nav visibility | UI-N1 | Strengthen active page indicator (background color + left border) |
+| Home page stats | IA-6 | Update "124 Approved Plans" → "144 Approved Plans" |
+| Hyperlink references | US-4 | Add PMID → PubMed URL auto-linking (CSS or JS) |
+| Focus indicators | A11Y-2 | Add `:focus-visible` styles to all interactive custom elements |
+| Reduced motion | A11Y-7 | Add `@media (prefers-reduced-motion: reduce)` to disable animations |
+| Touch targets | Mobile | Ensure all interactive elements ≥44px touch target on mobile |
+| 375px breakpoint | UI-L1 | Add small phone responsive styles |
 
-Add structured dosing fields to medication items:
+### Phase 6: Mobile & Responsive — 📱 MEDIUM EFFORT
 
-**Single dose example:**
-```json
-{
-  "item": "Baclofen",
-  "route": "PO",
-  "indication": "Spasticity",
-  "dosing": {
-    "doseOptions": [
-      { "dose": "5 mg", "frequency": "TID", "orderSentence": "Baclofen 5 mg PO TID" }
-    ],
-    "route": "PO",
-    "instructions": "Start 5 mg TID, titrate by 5 mg/dose q3d, max 80 mg/day",
-    "orderSentence": "Baclofen 5 mg PO TID"
-  }
-}
-```
+**Effort:** 1-2 weeks
+**Depends on:** Phase 5 (tokens must be in place)
 
-**Multi-dose example:**
-```json
-{
-  "item": "Gabapentin",
-  "route": "PO",
-  "indication": "Neuropathic pain (first-line)",
-  "dosing": {
-    "doseOptions": [
-      { "dose": "300 mg", "frequency": "qHS", "orderSentence": "Gabapentin 300 mg PO qHS" },
-      { "dose": "300 mg", "frequency": "TID", "orderSentence": "Gabapentin 300 mg PO TID" },
-      { "dose": "600 mg", "frequency": "TID", "orderSentence": "Gabapentin 600 mg PO TID" },
-      { "dose": "900 mg", "frequency": "TID", "orderSentence": "Gabapentin 900 mg PO TID" }
-    ],
-    "route": "PO",
-    "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day",
-    "orderSentence": "Gabapentin 300 mg PO qHS"
-  }
-}
-```
+| Item | Audit ID | Description |
+|------|----------|-------------|
+| Responsive table strategy | UI-TAB3 | Card-based layout for tables on mobile (<768px) |
+| Clinical Tool dark mode | UI-DM2 | Add dark mode support using shared design tokens |
+| Clinical Tool integration | CT-1 | Add back-to-plan link, match site navigation |
+| Comment ARIA attributes | A11Y-1 | Add roles, labels, and live regions to comment components |
+| Clinical Tool ARIA | A11Y-2 | Add ARIA to venue tabs, checkboxes, sidebar, export |
+| Collapsible plan sections | US-2 | Progressive disclosure for table sections (click to expand) |
+| Quick summary box | Gap #1 | Add "Key Actions" summary at top of each plan page |
+| Comment system lazy load | Perf | Defer Firebase SDK until user scrolls to comments |
 
-**Note:** `orderSentence` at the dosing level is the default (first) option for backwards compatibility.
+### Phase 7: PWA & Offline — 📲 MEDIUM EFFORT
 
-### 2.2 Clinical Tool UI Changes
+**Effort:** 1-2 weeks
+**Depends on:** Phase 6 (mobile layout must be solid)
 
-| Feature | Behavior |
-|---------|----------|
-| Dosing badge click | Copies order sentence to clipboard with visual feedback |
-| Dosing badge tooltip | Shows full dosing instructions on hover |
-| Selected items sidebar | Displays order sentence format for medications |
-| Copy all selected | Includes order sentences (not full instructions) |
+| Item | Audit ID | Description |
+|------|----------|-------------|
+| Service worker | App Strategy | Cache-first for plan pages, stale-while-revalidate |
+| Web app manifest | App Strategy | Icons, theme color, standalone display mode |
+| Offline fallback page | App Strategy | Graceful offline experience |
+| Add to home screen | App Strategy | Install prompt for mobile users |
+| JSON data splitting | Perf | Split plans.json by category for faster Clinical Tool load |
 
-### 2.3 Order Sentence Format
+### Phase 8: Feature Parity & Polish — ✨ LARGER EFFORT
 
-Standard order sentence pattern:
-```
-[Drug Name] [Dose] [Route] [Frequency] [Duration if applicable] [PRN indication if applicable]
-```
+**Effort:** 2-4 weeks
+**Depends on:** Phase 7
 
-**Examples:**
-- `Baclofen 5 mg PO TID`
-- `Methylprednisolone 1000 mg IV daily x 5 days`
-- `Lorazepam 4 mg IV push PRN seizure`
-- `Levetiracetam 1000 mg IV load, then 500 mg IV q12h`
-
----
-
-## Phase 3: Multiple Dose Options -- COMPLETE
-
-**Goal:** Provide multiple standard dose options per medication for flexible ordering.
-
-**Priority:** HIGH
-
-**Status:** ✅ COMPLETE (February 5, 2026) - 1,321 medications expanded to 2-6 clinically appropriate dose options
-
-### 3.1 Multi-Dose in Structured Format
-
-Multiple doses are specified using semicolons in the first field:
-
-```markdown
-| Gabapentin | PO | Neuropathic pain | 300 mg qHS; 300 mg TID; 600 mg TID; 900 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day | ... |
-```
-
-### 3.2 UI for Dose Selection
-
-| Feature | Behavior |
-|---------|----------|
-| Dosing badge click | Opens dropdown with all dose options |
-| Each option | Shows order sentence (e.g., "Gabapentin 300 mg PO TID") |
-| Click option | Copies that specific order sentence to clipboard |
-| Hover on badge | Shows full instructions tooltip |
-
-### 3.3 Common Dose Patterns
-
-| Pattern | Example |
-|---------|---------|
-| Starting + maintenance | `300 mg qHS; 300 mg TID` |
-| Titration range | `300 mg TID; 600 mg TID; 900 mg TID` |
-| PRN options | `4 mg IV; 2 mg IV PRN` |
-| Load + maintenance | `1000 mg IV load; 500 mg IV q12h` |
+| Item | Audit ID | Description |
+|------|----------|-------------|
+| Favorites / recent plans | IA-5 | localStorage-based bookmarks and history |
+| Cross-referencing | IA-2 | "Related Plans" links on each plan page |
+| Search in Clinical Tool | SD-1 | Type-ahead search to replace dropdown |
+| Multi-plan Clinical Tool | CT-5 | Combine items from multiple plans |
+| Save/resume in Clinical Tool | CT-3 | Persist selected items in localStorage |
+| Print styles | US-5 | `@media print` optimized layout |
+| Comment moderation | CM-1 | Basic spam filtering, report button |
+| Setting filter on index | SD-2 | Filter plans by care setting on the index page |
+| Clinical Tool keyboard nav | CT-2 | Full keyboard support for power users |
 
 ---
 
-## Phase 4: Other Improvements
+## Priority Matrix
 
-### 4.1 Medication Interaction Checking (Future)
-
-- Flag potential interactions when multiple medications selected
-- Use structured drug data to identify concerns
-- Display warning icon in sidebar
-
-### 4.2 Weight-Based Dosing Calculator (Future)
-
-- For medications with mg/kg dosing
-- Input patient weight → calculate dose
-- Update order sentence automatically
-
-### 4.3 Renal/Hepatic Dose Adjustments (Future)
-
-- Flag medications needing adjustment
-- Show alternative dosing for impaired organ function
+| Phase | Effort | Impact | Risk | Timeline |
+|-------|--------|--------|------|----------|
+| 5: Quick Wins | Low (1-2 days) | High | Very Low | Immediate |
+| 6: Mobile & Responsive | Medium (1-2 wk) | Very High | Low | Next sprint |
+| 7: PWA & Offline | Medium (1-2 wk) | High | Low | Month 2 |
+| 8: Feature Parity | High (2-4 wk) | Medium | Medium | Month 2-3 |
 
 ---
 
-## Implementation Priority
+## Quality Gates
 
-| Phase | Items | Priority | Estimated Effort |
-|-------|-------|----------|------------------|
-| 1.1 | Standardize columns | HIGH | Medium |
-| 1.2 | Structured dosing format | HIGH | Medium |
-| 1.3 | Update skills | HIGH | Medium |
-| 2.1 | JSON schema | HIGH | Low |
-| 2.2 | Clinical tool UI | HIGH | Medium |
-| 2.3 | Order sentence logic | HIGH | Low |
-| 3.x | Regimen templates | MEDIUM | High |
-| 4.x | Future enhancements | LOW | High |
+### Before Phase 1-3 (Clinical Content) — ✅ ALL PASSED
+- [x] Standardized medication format
+- [x] Clickable dosing in Clinical Tool
+- [x] 1,321 medications expanded to multi-dose
+- [x] All 144 approved plans in new format
+- [x] generate_json.py handles structured dosing
 
----
+### Before Phase 5-6 (UI/UX) — TO VERIFY
+- [ ] Design tokens defined in DESIGN_SYSTEM.md ✅
+- [ ] UX Audit completed ✅
+- [ ] UI Audit completed ✅
+- [ ] Benchmark comparison completed ✅
+- [ ] App strategy decided ✅
 
-## Quality Gates Before Topic Generation
-
-Before generating new clinical topics at scale, ensure:
-
-- [x] Phase 1 complete (standardized format) -- Jan 30, 2026
-- [x] Phase 2 complete (clickable dosing works) -- Jan 31, 2026
-- [x] Existing approved plans updated to new format -- All 124 plans
-- [x] generate_json.py handles new format -- Structured dosing parsed
-- [x] Checker validates new format requirements
-- [x] At least one plan tested end-to-end with new format
+### Before Phase 7 (PWA)
+- [ ] Mobile responsive tables working
+- [ ] Dark mode complete across all surfaces
+- [ ] ARIA attributes on all custom components
+- [ ] Lighthouse PWA score ≥80
 
 ---
 
 ## Change Log
 
+**v2.0 (February 2026)**
+- Added UI/UX Improvement Roadmap (Phases 5-8)
+- Linked to audit documents (UX_AUDIT, UI_AUDIT, DESIGN_SYSTEM, BENCHMARK_COMPARISON, APP_STRATEGY)
+- Added priority matrix and quality gates for new phases
+- Updated plan count to 144 (from 124)
+
 **v1.1 (February 6, 2026)**
 - Marked Phases 1-3 as COMPLETE with dates
 - Updated quality gates (all passed)
-- Added medication validation milestone
 
 **v1.0 (January 24, 2026)**
 - Initial roadmap creation
 - Defined Phase 1-4 improvements
-- Specified structured dosing format
-- Outlined clinical tool enhancements
