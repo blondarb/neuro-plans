@@ -1,7 +1,7 @@
 ---
 title: Radiation-Induced Neurologic Injury
 description: Comprehensive clinical decision support for radiation-induced CNS injury including acute, early-delayed, and late-delayed radiation injury (radiation necrosis), radiation myelopathy, cranial neuropathies, cognitive decline, and radiation-induced leukoencephalopathy.
-version: "1.0"
+version: "1.1"
 setting: ED, HOSP, OPD, ICU
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Radiation-Induced Neurologic Injury
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
 **STATUS:** Draft
@@ -184,14 +184,14 @@ SECTION A: ACTION ITEMS
 | Hyperbaric oxygen (HBO) therapy | Inhalation | Radiation necrosis or radiation myelopathy refractory to other treatments; promotes angiogenesis and tissue repair; Class III evidence; limited availability | 2.0-2.4 ATA :: Inhalation :: 5 sessions/week x 20-40 sessions :: 2.0-2.4 ATA for 90-120 min per session; typically 20-40 sessions; 5 sessions/week; benefits may be delayed weeks to months after completion | Untreated pneumothorax; severe COPD with air trapping; claustrophobia; active seizure disorder (relative); concurrent bleomycin use | Barotrauma assessment (ears, sinuses); oxygen toxicity symptoms; vision changes (myopic shift common, usually reversible); blood glucose (hypoglycemia risk) | - | - | EXT | - |
 | Laser interstitial thermal therapy (LITT) | Surgical | Minimally invasive alternative to open craniotomy for radiation necrosis; stereotactic laser ablation of necrotic tissue; for deep or eloquent lesions not amenable to open resection | Per LITT protocol :: Surgical :: single session :: MRI-guided stereotactic laser ablation; real-time thermal monitoring; can treat deep or surgically inaccessible lesions; typically single session; post-procedure MRI within 24-48h | Uncorrectable coagulopathy; lesion too large (>3 cm diameter typically); critical location precluding safe trajectory | Post-procedure MRI; neurologic examination; may require ICU monitoring for 24h; edema may temporarily worsen (increase steroids peri-procedurally) | - | URGENT | - | - |
 | Baclofen (radiation myelopathy spasticity) | PO | Spasticity from radiation myelopathy; first-line antispastic agent | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day; taper slowly to discontinue (withdrawal seizures risk) | Severe renal impairment (accumulation risk); concurrent CNS depressants (additive sedation) | Sedation; weakness (may worsen functional mobility); hepatic function; abrupt withdrawal can cause seizures and hallucinations | - | ROUTINE | ROUTINE | - |
-| Tizanidine (radiation myelopathy spasticity) | PO | Alternative antispastic for radiation myelopathy-related spasticity; alpha-2 agonist | 2 mg qHS; 2 mg TID; 4 mg TID :: PO :: :: Start 2 mg qHS; titrate by 2 mg q3-7 days; max 36 mg/day divided TID; take consistently with or without food | Concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin); hepatic impairment | LFTs at baseline, 1, 3, 6 months, then periodically; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
+| Tizanidine (radiation myelopathy spasticity) | PO | Alternative antispastic for radiation myelopathy-related spasticity; alpha-2 agonist | 2 mg :: PO :: TID :: Start 2 mg qHS; titrate by 2 mg q3-7 days; max 36 mg/day divided TID; take consistently with or without food | Concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin); hepatic impairment | LFTs at baseline, 1, 3, 6 months, then periodically; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Disease-Modifying Therapies (Neuroprotection / Hormonal Replacement)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Hydrocortisone (adrenal insufficiency replacement) | PO | Radiation-induced secondary adrenal insufficiency from hypothalamic-pituitary axis damage; physiologic replacement (not anti-inflammatory dosing) | 15-25 mg :: PO :: divided (AM/PM) :: 15-25 mg/day in divided doses (e.g., 15 mg AM + 5 mg PM or 10 mg AM + 5 mg noon + 5 mg PM); stress dose: double or triple during illness or procedures; medical alert bracelet required | AM cortisol level; cosyntropin stimulation test if equivocal; rule out concurrent hypothyroidism (correct thyroid before starting cortisol to avoid adrenal crisis) | Active systemic fungal infection (at supraphysiologic doses) | Symptoms of adrenal insufficiency (fatigue, nausea, hypotension); electrolytes; glucose; stress dosing education | STAT | STAT | ROUTINE | STAT |
-| Testosterone replacement (hypogonadism) | IM/TOP | Radiation-induced hypogonadotropic hypogonadism from pituitary/hypothalamic damage; fatigue, cognitive complaints, decreased libido, osteoporosis risk | Testosterone cypionate 200 mg :: IM :: q2 weeks :: Testosterone cypionate 200 mg IM q2 weeks OR topical testosterone gel 1% (50-100 mg daily); titrate to mid-normal range; gel preferred for stable levels | Baseline PSA; digital rectal exam; hematocrit; lipid panel; confirmed low testosterone on two AM samples; LH/FSH to distinguish primary vs. secondary | Prostate cancer; breast cancer; polycythemia (Hct >54%); untreated OSA; desire for fertility (suppresses spermatogenesis) | Hematocrit q3-6 months (target <54%); PSA annually; lipid panel; testosterone trough level; liver function; mood and energy assessment | - | - | ROUTINE | - |
+| Testosterone replacement (hypogonadism) | IM/TOP | Radiation-induced hypogonadotropic hypogonadism from pituitary/hypothalamic damage; fatigue, cognitive complaints, decreased libido, osteoporosis risk | 200 mg :: IM :: q2 weeks :: Testosterone cypionate 200 mg IM q2 weeks OR topical testosterone gel 1% (50-100 mg daily); titrate to mid-normal range; gel preferred for stable levels | Baseline PSA; digital rectal exam; hematocrit; lipid panel; confirmed low testosterone on two AM samples; LH/FSH to distinguish primary vs. secondary | Prostate cancer; breast cancer; polycythemia (Hct >54%); untreated OSA; desire for fertility (suppresses spermatogenesis) | Hematocrit q3-6 months (target <54%); PSA annually; lipid panel; testosterone trough level; liver function; mood and energy assessment | - | - | ROUTINE | - |
 | Growth hormone replacement | SC | Radiation-induced growth hormone deficiency (most common anterior pituitary deficit after radiation >18 Gy); improves body composition, fatigue, quality of life, and bone density | 0.2 mg :: SC :: daily :: Start 0.2-0.3 mg SC daily; titrate by 0.1-0.2 mg q4-8 weeks based on IGF-1 levels; target IGF-1 mid-normal range for age; lower starting dose in elderly | GH stimulation test confirming deficiency; IGF-1 level; assess all other pituitary axes first; glucose tolerance; no active malignancy for 5+ years (generally) | Active malignancy or residual tumor (relative; endocrinology decision); diabetic retinopathy; uncontrolled diabetes | IGF-1 q4-8 weeks during titration, then q6 months; glucose; symptoms of fluid retention (edema, arthralgias, carpal tunnel); MRI surveillance of primary tumor per oncology | - | - | ROUTINE | - |
 
 ---
@@ -323,6 +323,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Standardized all treatment dosing to structured format: `dose :: route :: frequency :: instructions` across sections 3A-3D
+- Fixed empty frequency fields in gabapentin, pregabalin, pentoxifylline, baclofen, tizanidine
+- Cleaned up dose field to contain only starting dose (removed dose option lists from first field)
+- Assigned proper Route values for surgical/procedural treatments (surgical resection, LITT, HBO)
 
 **v1.0 (February 11, 2026)**
 - Initial template creation

@@ -163,7 +163,7 @@ SECTION A: ACTION ITEMS
 | Carbamazepine | PO | Lancinating neuropathic pain; paroxysmal shooting pain from syrinx involvement of dorsal horn | 100 mg BID :: PO :: BID :: Start 100 mg PO BID; increase by 200 mg/day q1 week; max 1200 mg/day; use extended-release formulation | AV block; bone marrow suppression; concurrent MAOIs; HLA-B*1502 positive (Asian descent — SJS risk) | CBC with differential at baseline, 2 weeks, 4 weeks, then q3 months; LFTs; sodium (SIADH); drug level (target 4-12 mcg/mL); HLA-B*1502 testing before starting in at-risk populations | - | ROUTINE | ROUTINE | - |
 | Capsaicin 8% patch (Qutenza) | TOP | Localized neuropathic pain in areas with preserved sensation; dermatomal pain distribution from syrinx | 1-4 patches :: TOP :: q3 months :: Apply to painful area for 60 minutes; may repeat q3 months; pre-treat with topical lidocaine | Open wounds; broken skin; mucous membranes | Transient burning at application; blood pressure during application | - | - | ROUTINE | - |
 | Lidocaine 5% patch | TOP | Localized neuropathic pain; adjunctive for dysesthetic pain from syrinx | 1-3 patches daily :: TOP :: daily (12h on/12h off) :: Apply up to 3 patches to painful area for 12 hours on, 12 hours off | Severe hepatic disease; known lidocaine hypersensitivity | Local skin reaction; cardiac arrhythmia (minimal systemic absorption) | - | ROUTINE | ROUTINE | - |
-| Diazepam | PO | Severe acute spasticity and painful muscle spasms with anxiety component; short-term use only | 2 mg BID; 5 mg BID :: PO :: :: Start 2 mg PO BID; max 10 mg TID; short-term use only (2-4 weeks); taper to discontinue | Acute narrow-angle glaucoma; severe respiratory depression; myasthenia gravis; severe hepatic impairment | Sedation; respiratory depression; falls (especially in myelopathy patients); dependence; cognitive impairment | - | ROUTINE | EXT | - |
+| Diazepam | PO | Severe acute spasticity and painful muscle spasms with anxiety component; short-term use only | 2 mg BID :: PO :: BID :: Start 2 mg PO BID; max 10 mg TID; short-term use only (2-4 weeks); taper to discontinue | Acute narrow-angle glaucoma; severe respiratory depression; myasthenia gravis; severe hepatic impairment | Sedation; respiratory depression; falls (especially in myelopathy patients); dependence; cognitive impairment | - | ROUTINE | EXT | - |
 
 ### 3D. Surgical Interventions (Disease-Modifying)
 
@@ -292,6 +292,12 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Added CPT CODES and SYNONYMS metadata fields
+- Fixed structured dosing format across all treatment sections: added missing frequency fields for gabapentin, pregabalin, duloxetine, amitriptyline, baclofen, tizanidine, acetaminophen, naproxen, oxybutynin, mirabegron, tamsulosin, docusate, senna, PEG 3350, sertraline, trazodone, melatonin, dantrolene, tramadol, carbamazepine, capsaicin, lidocaine patch, diazepam
+- Standardized dose option fields to starting dose only per v3.0 structured dosing format
+- Fixed VERSION/CREATED/REVISED metadata order for consistency
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
