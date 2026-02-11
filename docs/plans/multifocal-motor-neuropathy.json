@@ -1,0 +1,936 @@
+{
+  "id": "multifocal-motor-neuropathy",
+  "title": "Multifocal Motor Neuropathy (MMN)",
+  "version": "1.1",
+  "icd10": [
+    "** G61.82 (Multifocal motor neuropathy)"
+  ],
+  "scope": "** Diagnosis and management of multifocal motor neuropathy (MMN) in adults. Includes diagnostic criteria (EFNS/PNS), electrodiagnostic findings including motor conduction block, anti-GM1 antibody testing, and IVIg therapy. Covers differential diagnosis with ALS (critical mimic), CIDP, and other motor neuron/neuropathy disorders. Excludes Lewis-Sumner syndrome (multifocal acquired demyelinating sensory and motor neuropathy — MADSAM) as separate entity but includes in differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; exclude hematologic disorders",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function baseline before IVIg; electrolytes",
+          "target": "Normal"
+        },
+        {
+          "item": "Anti-GM1 IgM antibodies (CPT 86255)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Present in ~50% of MMN; supports diagnosis; high titers more specific",
+          "target": "Negative (positive supports MMN but negative does not exclude)"
+        },
+        {
+          "item": "Quantitative immunoglobulins (IgG, IgA, IgM) (CPT 82784)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "IgA deficiency before IVIg (risk of anaphylaxis); IgM often elevated in MMN",
+          "target": "Normal; check IgA before IVIg"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude inflammatory/vasculitic neuropathy",
+          "target": "Normal (typically normal in MMN)"
+        },
+        {
+          "item": "CK (creatine kinase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "May be mildly elevated in MMN (usually 1-3x ULN); markedly elevated suggests myopathy",
+          "target": "Normal or mildly elevated"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid disease associated with neuropathy",
+          "target": "Normal"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "Anti-GM1 IgG antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "IgG subtype less specific but may be positive; helps differentiate from ALS if present",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GD1a, anti-GD1b, anti-GalNAc-GD1a antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Other ganglioside antibodies found in some MMN patients",
+          "target": "Negative"
+        },
+        {
+          "item": "SPEP / UPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Monoclonal gammopathy associated with neuropathy; IgM paraprotein may be seen in MMN",
+          "target": "No monoclonal protein (IgM paraprotein sometimes present)"
+        },
+        {
+          "item": "Hepatitis B and C panel",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Required before IVIg therapy; cryoglobulinemia evaluation",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neuropathy in differential",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune disease screening",
+          "target": "Negative"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF analysis (protein, cell count, oligoclonal bands)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "CSF protein typically normal in MMN (unlike CIDP where elevated); helps differentiate",
+          "target": "Normal protein (<45 mg/dL); normal cell count; no OCBs"
+        },
+        {
+          "item": "Genetic testing for hereditary motor neuropathies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "dHMN, SMA mimics if atypical presentation or family history",
+          "target": "No pathogenic variant"
+        },
+        {
+          "item": "SOD1 and C9orf72 testing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "ALS-related genes if conduction block absent and ALS remains in differential",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "rationale": "Exclude inflammatory process",
+          "target": "WBC <5; no pleocytosis",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Protein",
+          "rationale": "MMN typically has NORMAL protein (unlike CIDP)",
+          "target": "Normal (15-45 mg/dL); elevated protein favors CIDP",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Baseline",
+          "target": "Normal (>60% serum)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Oligoclonal bands",
+          "rationale": "Exclude MS or inflammatory CNS process",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "NCS/EMG with motor conduction block studies (CPT 95907-95913, 95860-95870)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Priority study; must include proximal stimulation sites to detect conduction block; test multiple nerves bilaterally",
+          "target": "Definite motor conduction block (≥50% CMAP amplitude/area reduction) in ≥2 nerves at non-entrapment sites; no sensory abnormalities",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI cervical spine without contrast",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Exclude structural lesion if cervical radiculopathy in differential; root enhancement rarely seen in MMN",
+          "target": "Normal; no cord compression or root enhancement",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "MRI brachial plexus with contrast",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Nerve enlargement or T2 hyperintensity in affected nerves; supports immune-mediated neuropathy",
+          "target": "Normal; increased T2 signal or enlargement in affected nerves supports MMN",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "Ultrasound of peripheral nerves",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Nerve enlargement at sites of conduction block; non-invasive alternative to MRI",
+          "target": "Normal nerve caliber; enlargement at conduction block sites supports MMN",
+          "contraindications": "None"
+        },
+        {
+          "item": "Pulmonary function tests (FVC, NIF)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Baseline respiratory assessment; respiratory failure rare but reported in advanced MMN",
+          "target": "Normal FVC (>80% predicted); NIF more negative than -60 cmH2O",
+          "contraindications": "None"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Nerve biopsy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Rarely needed; only if diagnosis uncertain after NCS/EMG and serologic workup; may show demyelination/remyelination at conduction block sites",
+          "target": "No vasculitis; onion bulb formation or demyelination/remyelination at block sites",
+          "contraindications": "Coagulopathy"
+        },
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Only if upper motor neuron signs present to exclude structural CNS pathology",
+          "target": "Normal",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/First-Line": [
+        {
+          "item": "IVIg (Intravenous Immunoglobulin) — induction",
+          "route": "IV",
+          "indication": "First-line and ONLY proven effective therapy for MMN; initiates treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g/kg",
+                "orderSentence": "IVIg (Intravenous Immunoglobulin) — induction 2 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day x 5 days); infuse slowly; premedicate with acetaminophen and diphenhydramine if history of reactions",
+            "orderSentence": "IVIg (Intravenous Immunoglobulin) — induction 2 g/kg IV"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies; recent thromboembolic event (within 3 months); uncompensated HF; severe renal insufficiency",
+          "monitoring": "Renal function (Cr before and 48h after); headache; BP; HR; infusion reactions; CBC",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (mild pain may occur in some MMN patients despite \"pure motor\" designation)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg/day divided TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation; dizziness; weight gain; edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain; SNRI alternative for patients with comorbid depression or anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase to 60 mg daily after 1-2 weeks; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; MAOI use (within 14 days); uncontrolled narrow-angle glaucoma; CrCl <30",
+          "monitoring": "BP; nausea; serotonin syndrome if combined with other serotonergic agents; LFTs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain; insomnia associated with chronic neuropathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline 10-25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; increase by 10-25 mg q1-2 weeks; max 150 mg/day",
+            "orderSentence": "Amitriptyline 10-25 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; recent MI; urinary retention; angle-closure glaucoma; concurrent MAOI",
+          "monitoring": "ECG if dose >100 mg/day or cardiac risk; anticholinergic side effects; QTc monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Musculoskeletal pain from compensatory overuse; mild discomfort; IVIg premedication",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "650-1000 mg PO q6-8h PRN; max 4 g/day (2 g/day if hepatic impairment)",
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
+          },
+          "contraindications": "Severe liver disease; hepatic failure",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue associated with chronic illness and IVIg therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg qAM; may increase to 200 mg qAM; take early morning to avoid insomnia",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; history of left ventricular hypertrophy; mitral valve prolapse with stimulant use",
+          "monitoring": "BP; HR; sleep quality; psychiatric symptoms",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "Muscle cramps and fasciculations in affected limbs",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Mexiletine 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg BID; may increase to 200 mg TID; max 900 mg/day; take with food",
+            "orderSentence": "Mexiletine 150 mg PO"
+          },
+          "contraindications": "Second- or third-degree AV block; hepatic failure",
+          "monitoring": "ECG at baseline and dose changes; LFTs; GI tolerance",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium oxide",
+          "route": "PO",
+          "indication": "Muscle cramps; adjunctive for cramp reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Magnesium oxide 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400 mg PO daily to BID; may increase to 400 mg BID",
+            "orderSentence": "Magnesium oxide 400 mg PO"
+          },
+          "contraindications": "Renal insufficiency (use with caution; monitor Mg level); GI obstruction",
+          "monitoring": "Serum magnesium if renal impairment; GI tolerance (loose stools)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Maintenance/Chronic": [
+        {
+          "item": "IVIg — maintenance",
+          "route": "IV",
+          "indication": "Ongoing treatment; most patients require chronic maintenance IVIg; titrate to lowest effective dose and longest interval",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/kg",
+                "orderSentence": "IVIg — maintenance 1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Maintenance 1 g/kg every 2-4 weeks OR 2 g/kg every 4-8 weeks; titrate to minimum dose/frequency that maintains strength; many patients need lifelong therapy",
+            "orderSentence": "IVIg — maintenance 1 g/kg IV"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF; severe renal insufficiency",
+          "monitoring": "Renal function before each infusion; grip strength and clinical exam q3mo; headache; thrombotic events; hemolysis (DAT, LDH, haptoglobin)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "SCIg (Subcutaneous Immunoglobulin) — maintenance",
+          "route": "SQ",
+          "indication": "Alternative to IVIg for maintenance; same total monthly dose; improved convenience; fewer systemic side effects",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Weekly equivalent",
+                "orderSentence": "SCIg (Subcutaneous Immunoglobulin) — maintenance Weekly equivalent SQ"
+              }
+            ],
+            "route": "SQ",
+            "instructions": "Convert monthly IVIg dose to weekly SQ (divide monthly dose by 4; increase total by 20% for bioavailability); self-administered at home; multiple infusion sites; max 50 mL/site",
+            "orderSentence": "SCIg (Subcutaneous Immunoglobulin) — maintenance Weekly equivalent SQ"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies; thrombocytopenia; coagulation disorders",
+          "monitoring": "Local injection site reactions; serum IgG trough levels; clinical response q3mo",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-Line/Disease-Modifying (Refractory)": [
+        {
+          "item": "Cyclophosphamide",
+          "route": "IV/PO",
+          "indication": "Refractory MMN not responding to IVIg; last resort given toxicity; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g/m²",
+                "orderSentence": "Cyclophosphamide 1 g/m² IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "IV: 1 g/m² monthly x 6 months with MESNA; PO: 1-2 mg/kg daily; very limited evidence; reserve for severe refractory cases",
+            "orderSentence": "Cyclophosphamide 1 g/m² IV"
+          },
+          "pretreatment": "CBC, LFTs, BUN/Cr, urinalysis at baseline; fertility counseling; pregnancy test",
+          "contraindications": "Active infection; pregnancy; severe leukopenia (WBC <4000)",
+          "monitoring": "CBC q1-2wk; urinalysis for hematuria; BUN/Cr; LFTs; cumulative dose",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory MMN; case reports/series suggest possible benefit in some patients; not well-established",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m²",
+                "orderSentence": "Rituximab 375 mg/m² IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m² IV weekly x 4 weeks; OR 1000 mg IV days 1 and 15; limited evidence in MMN",
+            "orderSentence": "Rituximab 375 mg/m² IV"
+          },
+          "pretreatment": "Hepatitis B/C screening; quantitative immunoglobulins; CD19/CD20 counts; vaccination update",
+          "contraindications": "Active hepatitis B; severe active infection",
+          "monitoring": "CD19/CD20 counts q3mo; immunoglobulins q3mo; infection surveillance",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil",
+          "route": "PO",
+          "indication": "IVIg-sparing agent; limited evidence; may allow reduction in IVIg dose",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate to 1000 mg BID; trial of 6 months to assess IVIg-sparing effect",
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
+          },
+          "pretreatment": "CBC, LFTs at baseline; pregnancy test; contraception counseling",
+          "contraindications": "Pregnancy (teratogenic); severe GI disease",
+          "monitoring": "CBC monthly; LFTs; GI symptoms; pregnancy prevention",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Eculizumab",
+          "route": "IV",
+          "indication": "Investigational for MMN; complement-mediated mechanism targeted; limited data",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Eculizumab Per protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Investigational use only; complement inhibitor; must vaccinate against meningococcus ≥2 weeks before starting",
+            "orderSentence": "Eculizumab Per protocol IV"
+          },
+          "pretreatment": "Meningococcal vaccination ≥2 weeks prior; CBC; complement levels",
+          "contraindications": "Unresolved Neisseria meningitidis infection",
+          "monitoring": "Meningococcal vaccination status; signs of meningitis; CBC; LDH",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular specialist/neurologist for electrodiagnostic testing with conduction block studies, anti-GM1 antibody interpretation, and IVIg management",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Infusion center referral for outpatient IVIg or SCIg administration and long-term maintenance therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for hand and upper extremity strengthening; grip strength optimization; adaptive strategies for weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for hand function, adaptive equipment, and workplace modifications given predominant upper limb involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pulmonology if respiratory symptoms develop (rare phrenic nerve involvement)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Social work / case management for insurance authorization of IVIg (costly therapy); disability documentation; home infusion coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral if neuropathic pain is refractory to first-line agents",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED or call 911 if: sudden severe weakness, difficulty breathing, or inability to use hands for daily tasks — these may indicate acute deterioration requiring urgent IVIg",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new weakness in arms or legs, increased difficulty with grip, or worsening of existing weakness promptly, as this may indicate need for IVIg dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IVIg infusions are lifelong in most patients; do not skip or delay scheduled infusions, as strength will decline without regular treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report headache, fever, chest pain, leg swelling, or shortness of breath after IVIg infusion (may indicate aseptic meningitis, thrombotic event, or hemolysis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT take corticosteroids (prednisone, methylprednisolone) unless specifically directed by your neurologist — steroids can worsen MMN",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain grip strength diary or functional assessments to help guide IVIg dosing adjustments at each visit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inform all healthcare providers that you have MMN and that corticosteroids and plasma exchange are contraindicated for your condition",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular upper extremity and hand exercises to maintain and improve grip strength alongside IVIg therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ergonomic workplace modifications to compensate for hand weakness: adaptive grip tools, voice-to-text software, modified keyboards",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate hydration before and during IVIg infusions to reduce risk of headache and renal complications",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Annual influenza vaccination; pneumococcal vaccination; avoid live vaccines during immunosuppression if on cyclophosphamide or rituximab",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention measures: remove tripping hazards at home; use assistive devices if lower limb weakness develops; non-slip mats in bathroom",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "ALS (amyotrophic lateral sclerosis)",
+      "features": "CRITICAL mimic; upper AND lower motor neuron signs; fasciculations prominent; bulbar involvement; progressive; no conduction block on NCS; normal sensory exams",
+      "tests": "NCS (no conduction block in ALS); EMG (widespread denervation/reinnervation in non-myotomal distribution); anti-GM1 negative; upper motor neuron signs on exam"
+    },
+    {
+      "diagnosis": "CIDP (chronic inflammatory demyelinating polyneuropathy)",
+      "features": "Symmetric, proximal and distal weakness; SENSORY loss present; elevated CSF protein; diffuse demyelination on NCS without focal conduction block; responds to steroids AND PLEX",
+      "tests": "NCS (diffuse demyelinating pattern vs focal conduction block); sensory loss on exam; CSF protein elevated; response to steroids (CIDP yes, MMN NO)"
+    },
+    {
+      "diagnosis": "Lewis-Sumner syndrome (MADSAM)",
+      "features": "Multifocal demyelinating neuropathy but WITH sensory involvement; conduction block present; responds to IVIg AND steroids",
+      "tests": "NCS (conduction block with sensory abnormalities); clinical exam shows sensory loss; steroid-responsive"
+    },
+    {
+      "diagnosis": "Inclusion body myositis (IBM)",
+      "features": "Finger flexor and quadriceps weakness may mimic MMN; but weakness is proximal pattern; CK more elevated; muscle biopsy diagnostic",
+      "tests": "CK (more elevated in IBM); NCS (myopathic not neuropathic); EMG (myopathic units); muscle biopsy (rimmed vacuoles, inclusion bodies)"
+    },
+    {
+      "diagnosis": "Hereditary motor neuropathy (dHMN)",
+      "features": "Slowly progressive distal motor neuropathy; family history; no conduction block; onset typically younger",
+      "tests": "Genetic testing (HSPB1, HSPB8, GARS, DYNC1H1); NCS (axonal without conduction block); family history"
+    },
+    {
+      "diagnosis": "Spinal muscular atrophy (SMA)",
+      "features": "Progressive symmetric proximal weakness; lower motor neuron; no conduction block; genetic diagnosis",
+      "tests": "SMN1 gene deletion testing; NCS (no conduction block); EMG (chronic neurogenic pattern); symmetric weakness"
+    },
+    {
+      "diagnosis": "Cervical radiculopathy (multilevel)",
+      "features": "Asymmetric upper limb weakness; but follows root distribution; sensory loss in dermatomes; neck pain; imaging abnormalities",
+      "tests": "MRI cervical spine (disc herniation, foraminal stenosis); NCS/EMG (root distribution not individual nerve territories)"
+    },
+    {
+      "diagnosis": "Monomelic amyotrophy (Hirayama disease)",
+      "features": "Unilateral distal upper limb wasting; young males; non-progressive after initial phase; no conduction block",
+      "tests": "MRI cervical spine (forward displacement of posterior dura in flexion); NCS/EMG (limited to one limb); clinical stabilization"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IVIg is the only proven effective treatment for MMN (randomized controlled trials)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Azulay JP et al. Neurology 1994](https://pubmed.ncbi.nlm.nih.gov/7969237/)"
+    },
+    {
+      "recommendation": "EFNS/PNS guideline on MMN diagnosis and treatment",
+      "evidenceLevel": "Guideline",
+      "source": "[Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199098/)"
+    },
+    {
+      "recommendation": "Anti-GM1 IgM antibodies present in ~30-80% of MMN patients; supports diagnosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Pestronk A et al. Ann Neurol 1988](https://pubmed.ncbi.nlm.nih.gov/2455377/)"
+    },
+    {
+      "recommendation": "Corticosteroids and plasma exchange are ineffective and may worsen MMN",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199098/)"
+    },
+    {
+      "recommendation": "SCIg non-inferior to IVIg for maintenance in MMN",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Harbo T et al. Eur J Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19236462/)"
+    },
+    {
+      "recommendation": "Conduction block is the electrodiagnostic hallmark; must test proximal segments",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Olney RK et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12629247/)"
+    },
+    {
+      "recommendation": "Long-term IVIg prevents progressive axonal loss; early treatment improves outcomes",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Van den Berg-Vos RM et al. Brain 2002](https://pubmed.ncbi.nlm.nih.gov/11912111/)"
+    },
+    {
+      "recommendation": "Cyclophosphamide has limited evidence for IVIg-refractory MMN",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Piepers S et al. J Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17357802/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Grip strength (dynamometry)",
+      "frequency": "Each visit; before and 2-4 weeks after IVIg dose changes",
+      "action": "Increase IVIg dose or frequency; shorten interval; evaluate for disease progression",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRC muscle strength grading (affected muscles)",
+      "frequency": "Each visit",
+      "action": "Adjust IVIg; evaluate compliance; consider second-line if IVIg-refractory",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BUN, Cr)",
+      "frequency": "Before each IVIg infusion; 48h after infusion if risk factors",
+      "action": "Slow infusion rate; increase hydration; consider SCIg if recurrent renal issues",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with differential",
+      "frequency": "Q3-6 months; before each IVIg",
+      "action": "Evaluate for hemolytic anemia (IVIg-related); check DAT, LDH, haptoglobin if Hgb drops",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Serum IgG trough level",
+      "frequency": "Q6-12 months",
+      "action": "Adjust IVIg dose/frequency",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "NCS/EMG",
+      "frequency": "Q12 months or if clinical change",
+      "action": "Adjust treatment; re-evaluate diagnosis if NCS pattern changes",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "FVC / respiratory function",
+      "frequency": "Baseline; annually; more often if symptoms",
+      "action": "Pulmonology referral if declining; rare but possible phrenic involvement",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Stable weakness without acute progression; no respiratory compromise; outpatient neurology follow-up arranged for diagnostic workup"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "New diagnosis with significant weakness requiring expedited workup; IVIg induction; concern for ALS requiring urgent differentiation; respiratory assessment"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Respiratory failure (rare in MMN); aspiration risk; hemodynamic instability"
+    },
+    {
+      "disposition": "Outpatient follow-up (neuromuscular neurology)",
+      "criteria": "All patients: q1-3 months during IVIg optimization; q3-6 months once stable; IVIg dose/interval titration"
+    },
+    {
+      "disposition": "Infusion center",
+      "criteria": "Established patients: regular IVIg infusions per schedule (typically q2-8 weeks); transition to SCIg at home if appropriate"
+    }
+  ]
+}

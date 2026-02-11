@@ -1,0 +1,1538 @@
+{
+  "id": "gait-disorder-evaluation",
+  "title": "Gait Disorder Evaluation",
+  "version": "1.2",
+  "icd10": [
+    "** R26.9 (Unspecified abnormalities of gait and mobility)",
+    "R26.0 (Ataxic gait)",
+    "R26.1 (Paralytic gait)",
+    "R26.89 (Other abnormalities of gait and mobility)",
+    "R26.2 (Difficulty in walking",
+    "not elsewhere classified)",
+    "R29.6 (Repeated falls)"
+  ],
+  "scope": "** Systematic evaluation of gait disorders in adults presenting with new or progressive difficulty walking. Covers neurological gait patterns: spastic (UMN), ataxic (cerebellar and sensory), parkinsonian/festinating, neuropathic/steppage, myopathic/waddling, frontal/apraxic (NPH), and functional gait disorders. Includes laboratory, imaging, and electrodiagnostic evaluation to identify etiology. Covers treatment of reversible causes (B12 deficiency, NPH, compressive myelopathy, inflammatory conditions). Excludes orthopedic/mechanical gait disorders as primary diagnosis but includes in differential. Excludes isolated vertigo/dizziness evaluation (see separate plan if available).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Anemia (B12, folate); macrocytosis (B12 deficiency); infection",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolyte abnormalities (hyponatremia, hypocalcemia); renal/hepatic dysfunction; glucose",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypothyroidism causing cerebellar ataxia, neuropathy, or myopathy; hyperthyroidism causing myopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency causing subacute combined degeneration (dorsal column + corticospinal tract); sensory ataxia; TREATABLE",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "Methylmalonic acid (MMA)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in functional B12 deficiency even when B12 borderline normal (200-400 pg/mL)",
+          "target": "Normal (<0.4 µmol/L)"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Diabetic neuropathy (sensory ataxic gait); diabetic foot complications",
+          "target": "<5.7%"
+        },
+        {
+          "item": "Folate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Folate deficiency contributing to myelopathy or neuropathy",
+          "target": "Normal (>5.9 ng/mL)"
+        },
+        {
+          "item": "Magnesium",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Hypomagnesemia causing ataxia, weakness; often missed",
+          "target": "Normal (1.7-2.2 mg/dL)"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory process (vasculitis, sarcoidosis, infection)",
+          "target": "Normal"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis (tabes dorsalis): sensory ataxic gait, Argyll Robertson pupils, lightning pains",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "Vitamin E level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Vitamin E deficiency causing spinocerebellar syndrome with ataxia and neuropathy; fat malabsorption",
+          "target": "Normal (5.5-17 mg/L)"
+        }
+      ],
+      "Extended Labs (Based on Gait Pattern and Clinical Suspicion)": [
+        {
+          "item": "Copper level (CPT 80320)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Copper deficiency myelopathy mimics B12 deficiency (subacute combined degeneration); zinc excess, bariatric surgery",
+          "target": "Normal (70-175 µg/dL)"
+        },
+        {
+          "item": "Ceruloplasmin (CPT 83519)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease (if age <50): dystonic or parkinsonian gait, hepatic disease",
+          "target": "Normal (20-35 mg/dL)"
+        },
+        {
+          "item": "24-hour urine copper",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Elevated in Wilson disease; >100 µg/24h suggestive",
+          "target": "Normal (<40 µg/24h)"
+        },
+        {
+          "item": "HIV antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated vacuolar myelopathy; HIV neuropathy; cerebellar ataxia",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (anti-Yo, anti-Hu, anti-Tr/DNER, anti-mGluR1, anti-VGCC)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic cerebellar degeneration: subacute progressive cerebellar ataxia; anti-Yo (ovarian, breast), anti-Hu (SCLC)",
+          "target": "Negative"
+        },
+        {
+          "item": "Anti-GAD65 antibodies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "GAD65-associated cerebellar ataxia; stiff-person spectrum; autoimmune",
+          "target": "Negative or low titer"
+        },
+        {
+          "item": "Anti-gliadin antibodies (IgA/IgG) / tTG-IgA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Gluten ataxia: progressive cerebellar ataxia; may occur without GI symptoms; TREATABLE with gluten-free diet",
+          "target": "Negative"
+        },
+        {
+          "item": "Alcohol biomarkers (GGT, MCV, CDT, PEth)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Alcoholic cerebellar degeneration (vermis); peripheral neuropathy; Wernicke encephalopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Thiamine (vitamin B1) level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Wernicke encephalopathy: acute ataxia, ophthalmoplegia, encephalopathy; TREAT EMPIRICALLY before results",
+          "target": "Normal (70-180 nmol/L)"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune conditions (SLE, Sjögren) causing myelopathy, neuropathy, or CNS vasculitis",
+          "target": "Negative"
+        },
+        {
+          "item": "SPEP / UPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraproteinemic neuropathy; myeloma causing cord compression; anti-MAG neuropathy",
+          "target": "No monoclonal protein"
+        },
+        {
+          "item": "Genetic testing (SCA panel, Friedreich ataxia)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Hereditary ataxias if progressive cerebellar syndrome without acquired cause; FXN GAA repeats for Friedreich; SCA1/2/3/6/7 repeat expansions",
+          "target": "Normal repeat lengths"
+        }
+      ],
+      "Lumbar Puncture (Selected Cases)": [
+        {
+          "item": "Opening pressure",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated in NPH (though often normal on single LP); intracranial hypertension",
+          "target": "10-20 cm H₂O"
+        },
+        {
+          "item": "CSF protein, cell count, glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Elevated protein: inflammation, infection, GBS; pleocytosis: infection, carcinomatous meningitis",
+          "target": "Normal protein (<45 mg/dL); <5 WBC; normal glucose"
+        },
+        {
+          "item": "CSF VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Neurosyphilis (tabes dorsalis); specific but not sensitive",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "CSF cytology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Carcinomatous/lymphomatous meningitis causing polyradiculopathy or myelopathy",
+          "target": "No malignant cells"
+        },
+        {
+          "item": "CSF oligoclonal bands / IgG index",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MS; neuromyelitis optica; inflammatory myelopathy",
+          "target": "Absent OCBs; normal IgG index"
+        },
+        {
+          "item": "CSF 14-3-3 protein / RT-QuIC",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Prion disease (CJD): rapidly progressive ataxia with dementia and myoclonus",
+          "target": "Negative"
+        },
+        {
+          "item": "Large-volume CSF drainage (30-50 mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Therapeutic/diagnostic trial for NPH: assess gait improvement pre and post drainage (timed up-and-go, 10-meter walk); positive response predicts shunt responsiveness",
+          "target": "Gait improvement within 24-72 hours of drainage supports NPH"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Core Imaging": [
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Cerebellar lesion (stroke, tumor, abscess, MS plaque); NPH (ventriculomegaly out of proportion to atrophy); white matter disease (vascular, demyelinating); basal ganglia pathology",
+          "target": "Normal; no structural lesion"
+        },
+        {
+          "item": "MRI cervical spine with contrast",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "rationale": "Cervical myelopathy (spondylotic, tumor, demyelinating): most common treatable cause of spastic gait; cord compression, signal change",
+          "target": "No cord compression or signal abnormality"
+        },
+        {
+          "item": "MRI thoracic spine with contrast",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thoracic myelopathy (tumor, transverse myelitis, vascular malformation, epidural abscess); B12 deficiency (dorsal column T2 signal)",
+          "target": "No cord compression or signal abnormality"
+        },
+        {
+          "item": "MRI lumbar spine",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Lumbar stenosis (neurogenic claudication); cauda equina syndrome; polyradiculopathy",
+          "target": "No significant canal stenosis"
+        },
+        {
+          "item": "CT head (non-contrast)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Acute presentation: stroke, hemorrhage, mass; also screens for hydrocephalus (NPH) before LP",
+          "target": "No acute intracranial pathology"
+        }
+      ],
+      "Advanced Imaging": [
+        {
+          "item": "CT cisternography / radionuclide cisternography",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "NPH: assess CSF dynamics when diagnosis uncertain; delayed clearance and ventricular reflux support NPH",
+          "target": "Normal CSF flow pattern"
+        },
+        {
+          "item": "MRI brain volumetrics / DTI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research/advanced: quantify cerebellar atrophy (MSA-C, SCA); white matter tract integrity; distinguish NPH from atrophy",
+          "target": "Normal volumes and tract integrity"
+        },
+        {
+          "item": "DaTscan (ioflupane SPECT)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Distinguish parkinsonian gait (reduced dopamine transporter uptake) from vascular parkinsonism, NPH, or drug-induced parkinsonism (normal DaTscan)",
+          "target": "Normal symmetric uptake"
+        },
+        {
+          "item": "PET-CT (whole body)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Paraneoplastic cerebellar degeneration: identify occult malignancy (ovarian, breast, lung, lymphoma)",
+          "target": "No occult neoplasm"
+        },
+        {
+          "item": "Cerebral angiography / MRA",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Vertebrobasilar insufficiency causing episodic ataxia; dural AV fistula causing myelopathy",
+          "target": "Normal vascular anatomy"
+        },
+        {
+          "item": "Spinal angiography",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Spinal dural arteriovenous fistula (dAVF): progressive myelopathy; MRI may show flow voids, cord edema",
+          "target": "No AV fistula"
+        }
+      ],
+      "Electrodiagnostic and Functional Studies": [
+        {
+          "item": "NCS / EMG (CPT 95907-95913, 95860-95870)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Peripheral neuropathy (sensory ataxic, steppage gait); polyradiculopathy; motor neuron disease; myopathy",
+          "target": "Normal; or identifies specific pattern"
+        },
+        {
+          "item": "Somatosensory evoked potentials (SSEPs)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Dorsal column dysfunction (sensory ataxic gait); subclinical myelopathy; complement MRI findings",
+          "target": "Normal latencies"
+        },
+        {
+          "item": "Visual evoked potentials (VEPs)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "MS evaluation if demyelinating myelopathy suspected; subclinical optic nerve involvement",
+          "target": "Normal P100 latency"
+        },
+        {
+          "item": "Quantitative gait analysis (instrumented walkway)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Objective gait parameters (velocity, cadence, stride length, variability); research/specialized centers; useful for NPH pre/post shunt assessment",
+          "target": "Normal gait parameters for age"
+        },
+        {
+          "item": "Tilt table / autonomic testing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Orthostatic hypotension contributing to gait instability/falls; MSA (cerebellar ataxia + autonomic failure)",
+          "target": "Normal orthostatic response"
+        },
+        {
+          "item": "EEG (CPT 95812-95813)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Epileptic gait disorder (drop attacks, tonic seizures); CJD (periodic sharp wave complexes with rapid ataxia)",
+          "target": "Normal background; no epileptiform activity"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Reversible Causes": [
+        {
+          "item": "Thiamine (vitamin B1)",
+          "route": "IV/IM then PO",
+          "indication": "Wernicke encephalopathy (acute ataxia, ophthalmoplegia, confusion); treat EMPIRICALLY if suspected — do NOT wait for levels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Thiamine (vitamin B1) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV TID for 3-5 days, then 250 mg IV daily for 3-5 days, then 100 mg PO daily indefinitely",
+            "orderSentence": "Thiamine (vitamin B1) 500 mg IV"
+          },
+          "contraindications": "None (treat empirically)",
+          "monitoring": "Clinical response (ataxia, ophthalmoplegia improve first); administer BEFORE glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cyanocobalamin (vitamin B12)",
+          "route": "IM then PO",
+          "indication": "B12 deficiency with myelopathy or neuropathy (subacute combined degeneration)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg",
+                "orderSentence": "Cyanocobalamin (vitamin B12) 1000 mcg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1000 mcg IM daily for 7 days, then weekly for 4 weeks, then monthly indefinitely; alternatively high-dose oral 1000-2000 mcg daily for mild cases",
+            "orderSentence": "Cyanocobalamin (vitamin B12) 1000 mcg IM"
+          },
+          "contraindications": "None",
+          "monitoring": "B12 levels at 2-3 months; MMA normalization; clinical improvement (sensory may improve; motor/spastic deficits less reversible)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VP shunt / ETV (ventriculoperitoneal shunt / endoscopic third ventriculostomy)",
+          "route": "Surgical",
+          "indication": "Normal pressure hydrocephalus (NPH) with positive large-volume LP trial or consistent clinical/radiographic features (Hakim triad, Evans index >0.3, DESH)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Neurosurgical evaluation",
+                "orderSentence": "VP shunt / ETV (ventriculoperitoneal shunt / endoscopic third ventriculostomy) Neurosurgical evaluation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Programmable valve preferred; gait improvement is best predictor of shunt response; earlier shunting associated with better outcomes",
+            "orderSentence": "VP shunt / ETV (ventriculoperitoneal shunt / endoscopic third ventriculostomy) Neurosurgical evaluation Surgical"
+          },
+          "contraindications": "Coagulopathy; active infection; CSF infection",
+          "monitoring": "Post-shunt: serial imaging; valve adjustments; monitor for over-drainage (subdural collections), infection, obstruction; gait reassessment at 3 and 6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Surgical decompression (cervical/thoracic)",
+          "route": "Surgical",
+          "indication": "Compressive myelopathy (cervical spondylotic myelopathy, tumor, epidural abscess)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Neurosurgical/orthopedic spine evaluation",
+                "orderSentence": "Surgical decompression (cervical/thoracic) Neurosurgical/orthopedic spine evaluation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Anterior cervical discectomy/fusion (ACDF), laminoplasty, or laminectomy based on pathology and alignment",
+            "orderSentence": "Surgical decompression (cervical/thoracic) Neurosurgical/orthopedic spine evaluation Surgical"
+          },
+          "contraindications": "Medical instability; minimal symptoms",
+          "monitoring": "Post-operative neurological exam; MRI at 3-6 months; rehabilitation",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "IV methylprednisolone",
+          "route": "IV",
+          "indication": "Acute inflammatory myelopathy (MS relapse, NMOSD, transverse myelitis, neurosarcoidosis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; followed by oral prednisone taper if indicated",
+            "orderSentence": "IV methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; GI bleeding",
+          "monitoring": "Blood glucose Q6H on steroids; GI prophylaxis; blood pressure; infection surveillance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gluten-free diet",
+          "route": "Dietary",
+          "indication": "Gluten ataxia (positive anti-gliadin antibodies with cerebellar ataxia and no alternative cause)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Strict gluten-free diet",
+                "orderSentence": "Gluten-free diet Strict gluten-free diet Dietary"
+              }
+            ],
+            "route": "Dietary",
+            "instructions": "Lifelong gluten elimination; may take 6-12 months for maximal improvement; refer to dietitian",
+            "orderSentence": "Gluten-free diet Strict gluten-free diet Dietary"
+          },
+          "contraindications": "None",
+          "monitoring": "Anti-gliadin antibody titers (should decline); clinical ataxia assessment every 3-6 months; cerebellar MRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "D-penicillamine or trientine",
+          "route": "PO",
+          "indication": "Wilson disease with neurological manifestations",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Trientine 250 mg",
+                "orderSentence": "D-penicillamine or trientine Trientine 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Trientine preferred for neurological Wilson (less risk of paradoxical worsening vs D-penicillamine); zinc maintenance after de-coppering",
+            "orderSentence": "D-penicillamine or trientine Trientine 250 mg PO"
+          },
+          "contraindications": "Pregnancy (teratogenic); renal failure",
+          "monitoring": "24-hour urine copper; free copper levels; LFTs; CBC; neurological status (watch for paradoxical worsening)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Penicillin G",
+          "route": "IV",
+          "indication": "Neurosyphilis (tabes dorsalis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "18-24 million units",
+                "orderSentence": "Penicillin G 18-24 million units IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "18-24 million units/day IV for 10-14 days",
+            "orderSentence": "Penicillin G 18-24 million units IV"
+          },
+          "contraindications": "Penicillin allergy (desensitize if needed)",
+          "monitoring": "CSF VDRL and cell count at 6-month intervals post-treatment until normalized; serum RPR decline",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatment — Parkinsonian & Spasticity": [
+        {
+          "item": "Carbidopa-levodopa",
+          "route": "PO",
+          "indication": "Parkinsonian gait (Parkinson disease); diagnostic/therapeutic trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/100 mg",
+                "orderSentence": "Carbidopa-levodopa 25/100 mg PO"
+              },
+              {
+                "text": "25/250 mg",
+                "orderSentence": "Carbidopa-levodopa 25/250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25/100 mg TID with meals; titrate by 25/100 mg increments every 3-7 days to clinical effect; robust response supports PD diagnosis",
+            "orderSentence": "Carbidopa-levodopa 25/100 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs (non-selective); narrow-angle glaucoma",
+          "monitoring": "Dyskinesias; motor fluctuations (wearing off); orthostatic hypotension; impulse control; nausea",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amantadine",
+          "route": "PO",
+          "indication": "Parkinsonian gait (adjunctive); gait freezing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Amantadine 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg BID; may increase to 100 mg TID; also treats levodopa-induced dyskinesias",
+            "orderSentence": "Amantadine 100 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); seizure history; livedo reticularis",
+          "monitoring": "Renal function; hallucinations; livedo reticularis; peripheral edema; confusion in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spastic gait (myelopathy, MS, stroke, HSP)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              },
+              {
+                "text": "10 mg",
+                "orderSentence": "Baclofen 10 mg PO"
+              },
+              {
+                "text": "20 mg",
+                "orderSentence": "Baclofen 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID, increase by 5 mg every 3 days; max 80 mg/day; caution in elderly",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Withdrawal seizures if abruptly discontinued; sedation",
+          "monitoring": "Sedation; weakness (excess dose reduces functional spasticity that aids standing/walking); withdrawal risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spastic gait (alternative or adjunct to baclofen)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              },
+              {
+                "text": "4 mg",
+                "orderSentence": "Tizanidine 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg at bedtime, increase by 2 mg every 3-4 days; max 36 mg/day divided TID",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin, fluvoxamine)",
+          "monitoring": "LFTs at baseline and 1, 3, 6 months; sedation; hypotension; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal baclofen pump",
+          "route": "Intrathecal",
+          "indication": "Severe spasticity refractory to oral agents; functional impairment despite maximal oral therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "ITB trial first",
+                "orderSentence": "Intrathecal baclofen pump ITB trial first Intrathecal"
+              }
+            ],
+            "route": "Intrathecal",
+            "instructions": "Baclofen trial via LP (50-100 mcg bolus); if positive response, surgical pump placement; dose titrated by programmer",
+            "orderSentence": "Intrathecal baclofen pump ITB trial first Intrathecal"
+          },
+          "contraindications": "Infection at pump site; unable to maintain follow-up for refills",
+          "monitoring": "Pump refills every 1-6 months; alarm for low volume; withdrawal is medical emergency (hyperthermia, rhabdomyolysis, death)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin A (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal spasticity (ankle plantar flexor spasticity causing equinovarus foot; hip adductor spasticity)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-400 units",
+                "orderSentence": "Botulinum toxin A (onabotulinumtoxinA) 50-400 units IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose depends on muscle group; gastrocnemius/soleus 200-400 units; posterior tibialis 100-200 units; adductors 200-400 units; repeat every 12 weeks",
+            "orderSentence": "Botulinum toxin A (onabotulinumtoxinA) 50-400 units IM"
+          },
+          "contraindications": "Myasthenia gravis; infection at injection site",
+          "monitoring": "Effect onset 3-7 days; peak 2-4 weeks; duration 12 weeks; monitor for excessive weakness; functional gait assessment pre/post",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Treatment — Cerebellar Ataxia": [
+        {
+          "item": "4-aminopyridine (dalfampridine)",
+          "route": "PO",
+          "indication": "Gait impairment in MS (FDA-approved); cerebellar ataxia (off-label, limited evidence)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "4-aminopyridine (dalfampridine) 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10 mg BID (12 hours apart); extended-release formulation",
+            "orderSentence": "4-aminopyridine (dalfampridine) 10 mg PO"
+          },
+          "contraindications": "Seizure history (lowers threshold); renal impairment (CrCl <50 — contraindicated); concurrent 4-AP compounded formulations",
+          "monitoring": "Seizure risk; renal function; timed 25-foot walk (assess response); discontinue if no benefit by 2 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Riluzole",
+          "route": "PO",
+          "indication": "Cerebellar ataxia (SCA, off-label); limited evidence from RCT showing modest benefit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Riluzole 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50 mg BID; based on Ristori et al 2010 RCT showing SARA score improvement in mixed cerebellar ataxias",
+            "orderSentence": "Riluzole 50 mg PO"
+          },
+          "contraindications": "Hepatic impairment; baseline LFTs required",
+          "monitoring": "LFTs at baseline, monthly for 3 months, then periodically; SARA score; clinical response",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Episodic ataxia type 2 (EA2, CACNA1A mutation); effective prophylaxis for ataxic episodes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
+              },
+              {
+                "text": "500 mg",
+                "orderSentence": "Acetazolamide 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; increase to 500 mg BID as tolerated",
+            "orderSentence": "Acetazolamide 250 mg PO"
+          },
+          "contraindications": "Sulfa allergy; severe renal/hepatic disease; hypokalemia",
+          "monitoring": "BMP (metabolic acidosis, hypokalemia); renal stones; paresthesias; fatigue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy (balance/gait training)",
+          "route": "Rehab",
+          "indication": "ALL gait disorders — cornerstone of management regardless of etiology",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PT evaluation and gait training",
+                "orderSentence": "Physical therapy (balance/gait training) PT evaluation and gait training Rehab"
+              }
+            ],
+            "route": "Rehab",
+            "instructions": "Balance exercises, gait retraining, compensatory strategies, assistive device training; vestibular rehabilitation if vestibular component",
+            "orderSentence": "Physical therapy (balance/gait training) PT evaluation and gait training Rehab"
+          },
+          "contraindications": "None",
+          "monitoring": "Timed up-and-go; Berg Balance Scale; 10-meter walk test; fall frequency",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Supportive Measures & Fall Prevention": [
+        {
+          "item": "Assistive devices (cane, walker, rollator, wheelchair)",
+          "route": "Device",
+          "indication": "Gait instability with fall risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PT assessment for appropriate device",
+                "orderSentence": "Assistive devices (cane, walker, rollator, wheelchair) PT assessment for appropriate device Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "Single-point cane for mild instability; rollator walker for moderate; wheelchair for severe or fatigable gait; properly fitted",
+            "orderSentence": "Assistive devices (cane, walker, rollator, wheelchair) PT assessment for appropriate device Device"
+          },
+          "contraindications": "None",
+          "monitoring": "Reassess need as condition progresses or improves; ensure proper fitting and training",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety evaluation (OT)",
+          "route": "Rehab",
+          "indication": "Fall prevention in all gait disorders",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "OT home safety assessment",
+                "orderSentence": "Home safety evaluation (OT) OT home safety assessment Rehab"
+              }
+            ],
+            "route": "Rehab",
+            "instructions": "Remove trip hazards; install grab bars, handrails; adequate lighting; shower bench; medical alert device",
+            "orderSentence": "Home safety evaluation (OT) OT home safety assessment Rehab"
+          },
+          "contraindications": "None",
+          "monitoring": "Fall diary; reassess home modifications as function changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ankle-foot orthoses (AFOs)",
+          "route": "Device",
+          "indication": "Foot drop (steppage gait); ankle instability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Custom or off-the-shelf AFOs",
+                "orderSentence": "Ankle-foot orthoses (AFOs) Custom or off-the-shelf AFOs Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "Fitted by orthotist; articulated preferred if ankle dorsiflexion present",
+            "orderSentence": "Ankle-foot orthoses (AFOs) Custom or off-the-shelf AFOs Device"
+          },
+          "contraindications": "Skin breakdown; edema",
+          "monitoring": "Skin checks; functional benefit; replace as needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D supplementation",
+          "route": "PO",
+          "indication": "Fall prevention (if deficient); bone health in patients at fall risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-2000 IU",
+                "orderSentence": "Vitamin D supplementation 1000-2000 IU PO"
+              },
+              {
+                "text": "50000 IU",
+                "orderSentence": "Vitamin D supplementation 50000 IU PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000-2000 IU daily maintenance; 50000 IU weekly for 8-12 weeks if deficient (<20 ng/mL)",
+            "orderSentence": "Vitamin D supplementation 1000-2000 IU PO"
+          },
+          "contraindications": "Hypercalcemia; sarcoidosis (monitor calcium)",
+          "monitoring": "25-OH vitamin D level; calcium",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DEXA scan / osteoporosis management",
+          "route": "Imaging",
+          "indication": "Fall risk assessment — fracture prevention; especially in chronic gait disorders with recurrent falls",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "DEXA scan",
+                "orderSentence": "DEXA scan / osteoporosis management DEXA scan Imaging"
+              }
+            ],
+            "route": "Imaging",
+            "instructions": "Treat osteoporosis per guidelines; bisphosphonates, denosumab as indicated",
+            "orderSentence": "DEXA scan / osteoporosis management DEXA scan Imaging"
+          },
+          "contraindications": "Per individual agent",
+          "monitoring": "T-score; fracture risk (FRAX); calcium and vitamin D adequacy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medication review (deprescribing)",
+          "route": "Clinical",
+          "indication": "ALL gait disorders — review and minimize medications contributing to gait impairment or falls",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Systematic medication review",
+                "orderSentence": "Medication review (deprescribing) Systematic medication review Clinical"
+              }
+            ],
+            "route": "Clinical",
+            "instructions": "Taper/discontinue: benzodiazepines, anticholinergics, sedating antihistamines, opioids, alpha-blockers, centrally acting antihypertensives",
+            "orderSentence": "Medication review (deprescribing) Systematic medication review Clinical"
+          },
+          "contraindications": "Per individual medication",
+          "monitoring": "Fall frequency; orthostatic vitals; cognitive function; balance assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for gait disorder localization (spastic vs ataxic vs parkinsonian vs neuropathic vs functional) and directed workup",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurosurgery referral for NPH (positive large-volume LP trial), cervical myelopathy with cord compression, spinal tumor, or spinal dural AV fistula",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait retraining, balance exercises (vestibular and proprioceptive), fall prevention program, and assistive device fitting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for home safety evaluation, ADL modification, adaptive equipment, and fall hazard assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy for dysphagia evaluation if cerebellar ataxia with dysarthria or brainstem involvement affecting swallow",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Movement disorders specialist referral for parkinsonian gait not responding to levodopa, suspected MSA or PSP, or tremor-predominant presentations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthopedic spine surgery consultation for lumbar stenosis with neurogenic claudication or cervical spondylotic myelopathy requiring surgical decision",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Orthotics referral for ankle-foot orthoses (foot drop/steppage gait), shoe modifications, or custom bracing",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling for suspected hereditary ataxia (SCA, Friedreich, HSP), hereditary neuropathy (CMT), or Wilson disease — discuss family implications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry referral for functional gait disorder (multidisciplinary approach: CBT, physical rehabilitation, psychoeducation)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oncology referral for paraneoplastic cerebellar degeneration with positive antibodies or identified malignancy on PET-CT",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "-"
+        },
+        {
+          "item": "Dietitian referral for gluten-free diet implementation (gluten ataxia), nutritional optimization (B12/thiamine/folate deficiency), or weight management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability resources, home care services, adaptive equipment funding, and caregiver support in progressive gait disorders",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care referral for advanced progressive gait disorders (MSA-C, advanced SCA, ALS) for symptom management and goals of care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately for sudden inability to walk, new leg weakness, or loss of bladder/bowel control (may indicate cord compression or stroke requiring emergency treatment)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return immediately for acute onset of ataxia with headache, vomiting, or altered consciousness (may indicate cerebellar stroke or hemorrhage)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return immediately for new double vision, facial weakness, slurred speech, or numbness (may indicate brainstem or posterior circulation stroke)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use prescribed assistive device (cane, walker, rollator) at all times when walking; do not walk unsupported until cleared by physical therapy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Remove tripping hazards at home (loose rugs, clutter, cords); install grab bars in bathroom and handrails on all stairs; ensure adequate lighting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not drive until formally cleared by neurology — gait disorder may indicate broader neurological impairment affecting driving safety",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Keep a fall diary recording date, time, circumstances, and any injuries from each fall to guide treatment decisions at follow-up visits",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all medications as prescribed; do not stop Parkinson medications, spasticity medications, or supplements (B12, thiamine) without physician guidance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "For gluten ataxia: strictly avoid all wheat, barley, rye, and cross-contaminated products; improvement may take 6-12 months of strict adherence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Wear non-slip footwear at all times; avoid walking in socks, slippers, or bare feet on smooth surfaces",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If prescribed AFOs (ankle braces), wear them during all walking activities and check skin daily for redness or breakdown",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Alcohol cessation — alcohol worsens cerebellar function, causes cerebellar degeneration (vermian atrophy), and increases fall risk",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular exercise program adapted to balance limitations (swimming, stationary cycling, seated exercises, tai chi) to maintain strength and reduce fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention strategies: adequate home lighting, non-skid footwear, remove loose rugs, install handrails on both sides of stairs, shower bench",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin D supplementation (1000-2000 IU daily) and calcium for bone health given chronic fall risk; treat deficiency aggressively",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maintain healthy weight to reduce joint stress, improve mobility, and lower cardiovascular risk contributing to vascular gait disorders",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Strict glycemic control (HbA1c <7%) if diabetic neuropathy contributing to sensory ataxic gait or fall risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mediterranean or balanced diet rich in B12 (meat, fish, dairy), folate (leafy greens), and thiamine to support nerve health",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Adequate sleep (7-9 hours nightly) — fatigue worsens gait instability and increases fall risk in all neurological gait disorders",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Medical alert bracelet recommended for patients with episodic ataxia (may appear intoxicated during episodes) or conditions causing sudden falls",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Cervical spondylotic myelopathy",
+      "features": "Spastic gait; upper motor neuron signs (hyperreflexia, Babinski, Hoffmann); neck pain/stiffness; hand clumsiness; most common cause of myelopathy in adults >55",
+      "tests": "MRI cervical spine (cord compression, T2 signal change)"
+    },
+    {
+      "diagnosis": "Normal pressure hydrocephalus (NPH)",
+      "features": "Hakim triad: gait apraxia (magnetic gait) + urinary incontinence + dementia; wide-based short steps; ventriculomegaly disproportionate to atrophy",
+      "tests": "MRI brain (Evans index >0.3, DESH); large-volume LP trial (gait improvement)"
+    },
+    {
+      "diagnosis": "Parkinson disease",
+      "features": "Shuffling, festinating gait; decreased arm swing (often asymmetric); rest tremor; rigidity; bradykinesia; excellent levodopa response",
+      "tests": "Clinical (MDS criteria); DaTscan (reduced uptake); levodopa response"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Spastic and/or ataxic gait; relapsing-remitting history; young adults; optic neuritis, internuclear ophthalmoplegia",
+      "tests": "MRI brain/spine (demyelinating lesions); CSF OCBs; VEPs"
+    },
+    {
+      "diagnosis": "B12 deficiency (subacute combined degeneration)",
+      "features": "Sensory ataxic gait; positive Romberg; loss of vibration/proprioception; dorsal column + corticospinal tract involvement; macrocytic anemia",
+      "tests": "B12 level (<200 pg/mL); MMA (elevated); MRI spine (dorsal column T2 signal)"
+    },
+    {
+      "diagnosis": "Cerebellar stroke / hemorrhage",
+      "features": "Acute ataxic gait; headache, vertigo, nausea; ipsilateral cerebellar signs; may progress to brainstem compression",
+      "tests": "CT head (hemorrhage); MRI brain (infarction); CTA/MRA (vascular)"
+    },
+    {
+      "diagnosis": "Hereditary spastic paraplegia (HSP)",
+      "features": "Progressive spastic gait; family history; onset childhood-to-adult; \"pure\" vs \"complex\" forms; slowly progressive",
+      "tests": "Genetic testing (SPG4/spastin most common); MRI (thoracic cord atrophy); NCS normal; clinical diagnosis"
+    },
+    {
+      "diagnosis": "Spinocerebellar ataxia (SCA)",
+      "features": "Progressive cerebellar ataxia; family history (AD); additional features vary by subtype (SCA1: brainstem, SCA3: peripheral neuropathy, SCA6: pure cerebellar)",
+      "tests": "Genetic testing (trinucleotide repeat expansion panel: SCA1/2/3/6/7/17); MRI (cerebellar +/- brainstem atrophy)"
+    },
+    {
+      "diagnosis": "Paraneoplastic cerebellar degeneration",
+      "features": "Subacute progressive cerebellar ataxia; may precede cancer diagnosis by months-years; anti-Yo (gynecological), anti-Hu (SCLC), anti-Tr (Hodgkin)",
+      "tests": "Paraneoplastic antibody panel; PET-CT (occult malignancy); CSF (pleocytosis, OCBs)"
+    },
+    {
+      "diagnosis": "Functional (psychogenic) gait disorder",
+      "features": "Inconsistent gait pattern; distractibility; knee buckling without falling; astasia-abasia; Hoover sign positive; entrainment",
+      "tests": "Clinical examination (inconsistency, distractibility); normal investigations; positive signs (Hoover, entrainment)"
+    },
+    {
+      "diagnosis": "Lumbar spinal stenosis (neurogenic claudication)",
+      "features": "Gait worsens with walking (claudication) and extension; improves with flexion (shopping cart sign); leg pain, numbness, weakness with ambulation",
+      "tests": "MRI lumbar spine (central canal stenosis); clinical history (positional symptoms)"
+    },
+    {
+      "diagnosis": "Peripheral neuropathy (sensory ataxia or steppage)",
+      "features": "Stocking-glove sensory loss; areflexia; steppage gait (foot drop) or sensory ataxic gait; length-dependent pattern",
+      "tests": "NCS/EMG; B12, HbA1c, SPEP; directed testing per neuropathy evaluation"
+    },
+    {
+      "diagnosis": "Multiple system atrophy — cerebellar type (MSA-C)",
+      "features": "Progressive cerebellar ataxia + autonomic failure (orthostatic hypotension, urinary dysfunction); poor levodopa response; rapid progression",
+      "tests": "MRI brain (cerebellar/pontine atrophy, \"hot cross bun\" sign); autonomic testing; DaTscan (may be abnormal)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "#",
+      "evidenceLevel": "Citation",
+      "source": "Key Finding"
+    },
+    {
+      "recommendation": "1",
+      "evidenceLevel": "Pirker W, Katzenschlager R. Gait disorders in adults and the elderly: A clinical guide. Wien Klin Wochenschr. 2017;129(3-4):81-95.",
+      "source": "Comprehensive review of gait disorder classification, clinical features, and diagnostic approach in adults"
+    },
+    {
+      "recommendation": "2",
+      "evidenceLevel": "Snijders AH, van de Warrenburg BP, Giladi N, Bloem BR. Neurological gait disorders in elderly people: clinical approach and classification. Lancet Neurol. 2007;6(1):63-74.",
+      "source": "Systematic classification of neurological gait disorders; diagnostic algorithm based on gait pattern recognition"
+    },
+    {
+      "recommendation": "3",
+      "evidenceLevel": "Williams DR, Watt HC, Lees AJ. Predictors of falls and fractures in bradykinetic rigid syndromes: a retrospective study. J Neurol Neurosurg Psychiatry. 2006;77(4):468-473.",
+      "source": "Falls in parkinsonian disorders; gait freezing and postural instability are strongest predictors of falls"
+    },
+    {
+      "recommendation": "4",
+      "evidenceLevel": "Relkin N, Marmarou A, Klinge P, et al. Diagnosing idiopathic normal-pressure hydrocephalus. Neurosurgery. 2005;57(3 Suppl):S4-16.",
+      "source": "International NPH guidelines: diagnostic criteria, CSF tap test, supplementary tests; gait improvement best predicts shunt response"
+    },
+    {
+      "recommendation": "5",
+      "evidenceLevel": "Healton EB, Savage DG, Brust JC, et al. Neurologic aspects of cobalamin deficiency. Medicine (Baltimore). 1991;70(4):229-245.",
+      "source": "Classic series on B12 deficiency neurological manifestations; gait ataxia in 18% at presentation; treatment prevents progression"
+    },
+    {
+      "recommendation": "6",
+      "evidenceLevel": "Hadjivassiliou M, et al. Gluten ataxia in perspective: epidemiology, genetic susceptibility and clinical characteristics. Brain. 2003;126(Pt 3):685-691.",
+      "source": "Gluten ataxia accounts for ~15% of sporadic cerebellar ataxias; anti-gliadin antibody testing recommended in all idiopathic ataxias"
+    },
+    {
+      "recommendation": "7",
+      "evidenceLevel": "Goodman AD, et al. Sustained-release oral fampridine in multiple sclerosis: a randomised, double-blind, controlled trial. Lancet. 2009;373(9665):732-738.",
+      "source": "Dalfampridine (4-AP) improved walking speed in MS (timed 25-foot walk responder analysis); first FDA-approved treatment for walking impairment in MS"
+    },
+    {
+      "recommendation": "8",
+      "evidenceLevel": "Ristori G, et al. Riluzole in cerebellar ataxia: a randomized, double-blind, placebo-controlled pilot trial. Neurology. 2010;74(10):839-845.",
+      "source": "Riluzole improved SARA score in mixed cerebellar ataxias (hereditary and sporadic) over 8 weeks vs placebo"
+    },
+    {
+      "recommendation": "9",
+      "evidenceLevel": "Montero-Odasso M, et al. World guidelines for falls prevention and management for older adults: a global initiative. Age Ageing. 2022;51(9):afac205.",
+      "source": "Evidence-based guidelines for fall risk assessment and multifactorial fall prevention; exercise and medication review most effective interventions"
+    },
+    {
+      "recommendation": "10",
+      "evidenceLevel": "Nonnekes J, et al. Functional gait disorders: A sign-based approach. Neurology. 2020;94(24):1093-1099.",
+      "source": "Diagnostic signs for functional gait disorders; positive clinical signs (inconsistency, distractibility, Hoover) enable confident diagnosis"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Timed up-and-go (TUG)",
+      "frequency": "Every visit",
+      "action": "Fall prevention program; assistive device; PT intensification",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "10-meter walk test (gait speed)",
+      "frequency": "Every 3-6 months",
+      "action": "PT referral; investigate worsening; assistive device",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Berg Balance Scale",
+      "frequency": "Every 3-6 months",
+      "action": "<45: moderate risk; <36: high risk → intensify fall prevention",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall frequency (fall diary)",
+      "frequency": "Every visit",
+      "action": "Medication review; PT; home safety; assistive device; investigate new etiology",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Timed 25-foot walk (MS patients)",
+      "frequency": "Every 3-6 months",
+      "action": ">20% worsening: reassess MS therapy; consider dalfampridine trial",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "SARA score (cerebellar ataxia)",
+      "frequency": "Every 6-12 months",
+      "action": "Investigate new etiologies; adjust treatment; PT modification",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "FVC (if respiratory concern — GBS, myelopathy)",
+      "frequency": "Every 6-12 months; q4-6h if acute",
+      "action": "Refer pulmonary if <80%; consider NIV if <50%; intubate if <20 mL/kg or declining rapidly",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "B12 / nutritional levels (B12, MMA, folate, copper, thiamine)",
+      "frequency": "At baseline; repeat at 3 months if supplementing",
+      "action": "Continue supplementation; dose adjustment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "MRI brain/spine",
+      "frequency": "Baseline; repeat based on etiology (6-12 months for active disease)",
+      "action": "Adjust treatment per etiology",
+      "ED": "URGENT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT"
+    },
+    {
+      "item": "Orthostatic vitals",
+      "frequency": "Every visit if orthostatic component",
+      "action": "Medication adjustment; compression stockings; fludrocortisone/midodrine",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose (on high-dose IV steroids)",
+      "frequency": "q6h during IV steroids; QID during oral taper",
+      "action": ">200 → sliding scale insulin; endocrinology if persistent",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "LFTs (on tizanidine, riluzole, D-penicillamine/trientine)",
+      "frequency": "Baseline, then 1, 3, 6 months; then periodically",
+      "action": "Elevated >3x → reduce dose; >5x → discontinue agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (on dalfampridine, medications cleared renally)",
+      "frequency": "At baseline, then q3-6 months",
+      "action": "CrCl <50 → discontinue dalfampridine; adjust renally-cleared medications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "ED discharge",
+      "criteria": "Stable chronic gait disorder with no acute change; no cord compression; no acute cerebellar stroke; falls without serious injury and adequate home support"
+    },
+    {
+      "disposition": "Admission",
+      "criteria": "Acute gait deterioration (new inability to walk); cord compression requiring urgent surgery; acute cerebellar stroke/hemorrhage; Wernicke encephalopathy; GBS; new-onset myelopathy; falls with serious injury; unsafe discharge (unable to ambulate safely at home)"
+    },
+    {
+      "disposition": "Observation",
+      "criteria": "Subacute gait worsening requiring expedited workup (MRI, LP); falls in elderly requiring multifactorial assessment; NPH large-volume LP trial"
+    },
+    {
+      "disposition": "Outpatient neurology",
+      "criteria": "All new gait disorders for systematic evaluation; chronic gait disorders for longitudinal monitoring"
+    },
+    {
+      "disposition": "Neurosurgery referral",
+      "criteria": "NPH (positive LP trial); cervical myelopathy with cord compression; tumor; spinal dural AV fistula"
+    },
+    {
+      "disposition": "Rehabilitation (inpatient or outpatient)",
+      "criteria": "Significant gait impairment requiring intensive multidisciplinary rehabilitation"
+    },
+    {
+      "disposition": "Driving assessment",
+      "criteria": "Any gait disorder suggesting broader neurological impairment affecting driving safety"
+    }
+  ]
+}

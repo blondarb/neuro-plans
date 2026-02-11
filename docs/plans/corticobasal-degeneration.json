@@ -1,0 +1,1014 @@
+{
+  "id": "corticobasal-degeneration",
+  "title": "Corticobasal Degeneration (CBD) / Corticobasal Syndrome (CBS)",
+  "version": "1.1",
+  "icd10": [
+    "** G31.85 (Corticobasal degeneration)"
+  ],
+  "scope": "** Evaluation and symptomatic management of corticobasal syndrome (CBS) and pathologically confirmed corticobasal degeneration (CBD). Covers diagnostic criteria (Armstrong 2013), distinguishing CBS from other underlying pathologies presenting as CBS (AD, PSP, FTD), and symptomatic treatment of rigidity, myoclonus, dystonia, limb apraxia, and behavioral/cognitive symptoms. Excludes other parkinsonian syndromes as primary diagnosis but includes them in differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline; exclude hematologic disorders; pre-medication",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes, renal/hepatic function; metabolic causes of encephalopathy",
+          "target": "Normal"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Thyroid disease as treatable contributor to cognitive/motor symptoms",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "B12 deficiency as treatable cause of cognitive impairment and myelopathy",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "RPR/VDRL",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosyphilis as treatable cause of progressive dementia with movement disorder",
+          "target": "Nonreactive"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Metabolic comorbidity affecting cognition",
+          "target": "<5.7%"
+        }
+      ],
+      "Extended Labs (Rule Out Treatable Mimics)": [
+        {
+          "item": "Ceruloplasmin / serum copper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Wilson disease if age <50 with dystonia and cognitive decline",
+          "target": "Normal ceruloplasmin (20-40 mg/dL)"
+        },
+        {
+          "item": "HIV antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated neurocognitive disorder",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA / ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis; CNS vasculitis; systemic inflammatory disease",
+          "target": "Negative; normal inflammatory markers"
+        },
+        {
+          "item": "Paraneoplastic antibody panel (CASPR2, LGI1, NMDAR, CRMP5)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Autoimmune encephalitis presenting as CBS; especially if subacute onset or younger age",
+          "target": "Negative"
+        },
+        {
+          "item": "Prion protein gene (PRNP) sequencing",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Genetic prion disease (GSS, FFI) presenting as CBS",
+          "target": "No pathogenic variant"
+        },
+        {
+          "item": "CSF 14-3-3 protein, RT-QuIC",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Creutzfeldt-Jakob disease in rapidly progressive CBS",
+          "target": "Negative 14-3-3; negative RT-QuIC"
+        }
+      ],
+      "Rare/Specialized (Research/Emerging Biomarkers)": [
+        {
+          "item": "CSF tau, p-tau, amyloid-beta 42",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Differentiate AD pathology presenting as CBS (high p-tau/Aβ42 ratio) from non-AD CBS",
+          "target": "AD pattern: low Aβ42, high p-tau; non-AD: normal Aβ42"
+        },
+        {
+          "item": "CSF neurofilament light chain (NfL)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Marker of neurodegeneration severity; prognostic value",
+          "target": "Elevated in active neurodegeneration"
+        },
+        {
+          "item": "Amyloid PET (Florbetapir, Florbetaben)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Distinguish AD-CBS (amyloid positive) from true CBD (amyloid negative)",
+          "target": "Negative amyloid PET supports CBD; positive suggests AD-CBS"
+        },
+        {
+          "item": "Tau PET (Flortaucipir)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research biomarker; 4R tauopathies may show asymmetric cortical uptake",
+          "target": "Asymmetric cortical uptake pattern"
+        },
+        {
+          "item": "Genetic testing (MAPT, GRN, C9orf72)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "FTD-related genes if family history or young onset",
+          "target": "No pathogenic variant"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "timing": "All patients; early in evaluation",
+          "target": "Asymmetric cortical atrophy (parietal, frontal) contralateral to more affected limb; may be normal early",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CT head without contrast",
+          "timing": "ED acute presentation; exclude stroke, hemorrhage, mass",
+          "target": "No acute lesion; may show asymmetric atrophy",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "Outpatient; supports diagnosis; high diagnostic value",
+          "target": "Asymmetric frontoparietal hypometabolism contralateral to most-affected side; basal ganglia hypometabolism",
+          "contraindications": "Pregnancy; uncontrolled diabetes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "DaTscan (I-123 ioflupane SPECT)",
+          "timing": "Differentiate CBS from essential tremor or functional movement disorder",
+          "target": "Asymmetrically reduced dopamine transporter uptake contralateral to more affected side",
+          "contraindications": "Hypersensitivity to iodine",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96116)",
+          "timing": "Characterize cognitive profile; quantify apraxia, executive dysfunction, visuospatial deficits",
+          "target": "Asymmetric cortical deficits (apraxia, visuospatial > memory); executive dysfunction",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "timing": "Myoclonus characterization; exclude seizures; CJD evaluation (periodic complexes)",
+          "target": "Normal background or asymmetric slowing; no periodic sharp wave complexes (which suggest CJD)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Videofluoroscopic swallow study (VFSS)",
+          "timing": "If dysphagia present; baseline and serial assessment",
+          "target": "Assess aspiration risk, pharyngeal residue",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Amyloid PET",
+          "timing": "Differentiate AD-CBS from CBD-CBS; important for clinical trial eligibility",
+          "target": "Negative in CBD; positive in AD-CBS",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tau PET (Flortaucipir)",
+          "timing": "Research; asymmetric cortical tau deposition supports 4R tauopathy",
+          "target": "Asymmetric cortical binding",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MRI volumetrics",
+          "timing": "Quantify asymmetric atrophy; track progression",
+          "target": "Asymmetric parietal/frontal atrophy",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EMG/NCS (CPT 95907-95913, 95860-95870)",
+          "timing": "Only if peripheral neuropathy suspected as confounding factor",
+          "target": "Normal (no peripheral neuropathy expected in CBD)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent Treatment": [
+        {
+          "item": "Carbidopa-Levodopa",
+          "route": "PO",
+          "indication": "Therapeutic trial for parkinsonism/rigidity; most CBS patients have poor or absent levodopa response but trial is recommended for diagnosis and potential modest benefit",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25/100 mg",
+                "orderSentence": "Carbidopa-Levodopa 25/100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start carbidopa-levodopa 25/100 mg TID; titrate to 25/250 mg TID over 4-6 weeks; adequate trial = 1000 mg levodopa daily for ≥2 months; most CBS patients show minimal response",
+            "orderSentence": "Carbidopa-Levodopa 25/100 mg PO"
+          },
+          "contraindications": "Concurrent non-selective MAOIs; narrow-angle glaucoma; melanoma (historical, debated)",
+          "monitoring": "Orthostatic BP; nausea; dyskinesias; hallucinations; impulse control behaviors",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO",
+          "indication": "Musculoskeletal pain from dystonia and rigidity; safer than NSAIDs in elderly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Acetaminophen 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "500-1000 mg PO q6h as needed; max 3000 mg/day in elderly; max 4000 mg/day in younger adults",
+            "orderSentence": "Acetaminophen 500 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; active liver disease",
+          "monitoring": "Hepatic function; total daily dose including combination products",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Symptomatic/Maintenance Treatment": [
+        {
+          "item": "Clonazepam",
+          "route": "PO",
+          "indication": "Cortical myoclonus; often prominent and disabling in CBS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25 mg",
+                "orderSentence": "Clonazepam 0.25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 0.25-0.5 mg BID; titrate by 0.5 mg q3-7d; max 4 mg/day; use lowest effective dose to avoid sedation",
+            "orderSentence": "Clonazepam 0.25 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; acute narrow-angle glaucoma; severe respiratory insufficiency",
+          "monitoring": "Sedation; fall risk; respiratory depression (especially with opioids); cognitive worsening; dependence",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "PO",
+          "indication": "Cortical myoclonus; fewer sedation effects than clonazepam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Levetiracetam 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250-500 mg BID; titrate by 250-500 mg q1-2wk; max 3000 mg/day",
+            "orderSentence": "Levetiracetam 250 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust); suicidal ideation",
+          "monitoring": "Mood changes (irritability, depression); sedation; renal function for dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO",
+          "indication": "Cortical myoclonus refractory to clonazepam and levetiracetam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg",
+                "orderSentence": "Valproic acid 250 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate to 500-750 mg BID; therapeutic level 50-100 mcg/mL; max 60 mg/kg/day",
+            "orderSentence": "Valproic acid 250 mg PO"
+          },
+          "contraindications": "Hepatic disease; pregnancy (teratogenic); urea cycle disorders; mitochondrial disease (POLG mutations)",
+          "monitoring": "LFTs; CBC; ammonia level; drug levels; weight; tremor; thrombocytopenia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin type A (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal dystonia; painful limb dystonia; especially hand/arm dystonia which is common in CBS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-50 units per muscle",
+                "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) 10-50 units per muscle IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose varies by muscle; hand/finger extensors 10-20 units per muscle; biceps 50-100 units; effect onset 3-7 days; repeat q12 weeks; EMG guidance recommended",
+            "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) 10-50 units per muscle IM"
+          },
+          "contraindications": "Myasthenia gravis; Lambert-Eaton; infection at injection site",
+          "monitoring": "Excessive weakness at injection site; dysphagia if neck muscles injected; antibody formation reducing efficacy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Rigidity and spasticity; muscle spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3-5d; max 80 mg/day; do NOT discontinue abruptly (withdrawal seizures)",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment; epilepsy (relative — lower seizure threshold)",
+          "monitoring": "Sedation; weakness; dizziness; GI symptoms; withdrawal risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Rigidity and spasticity; alternative to baclofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg at bedtime; titrate by 2-4 mg q3-7d; max 36 mg/day divided TID",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Concurrent use of fluvoxamine or ciprofloxacin (potent CYP1A2 inhibitors); severe hepatic impairment",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months then periodically; sedation; hypotension; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic or musculoskeletal pain from dystonia and rigidity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression; anxiety; apathy (may partially respond); behavioral symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg daily; titrate by 25-50 mg q2-4wk; max 200 mg daily",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; concurrent pimozide",
+          "monitoring": "Suicidality in first weeks; serotonin syndrome; bleeding risk; QTc at higher doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; alternative to sertraline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Escitalopram 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; max 20 mg daily",
+            "orderSentence": "Escitalopram 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation; concurrent pimozide",
+          "monitoring": "QTc (especially >10 mg or with other QT-prolonging drugs); suicidality; serotonin syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia; agitation; sleep disturbance common in CBS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg qHS; titrate to 100-150 mg qHS; lower doses for sleep, higher for behavioral symptoms",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "Orthostatic hypotension; sedation; priapism (rare); QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Donepezil",
+          "route": "PO",
+          "indication": "Cognitive impairment; especially if AD pathology suspected (AD-CBS)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily at bedtime; increase to 10 mg daily after 4-6 weeks; limited evidence in pure CBD; more helpful if underlying AD",
+            "orderSentence": "Donepezil 5 mg PO"
+          },
+          "contraindications": "Severe bradycardia; active peptic ulcer; COPD (relative)",
+          "monitoring": "GI symptoms (nausea, diarrhea); bradycardia; insomnia; weight loss; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Hallucinations; psychosis; severe agitation; behavioral disturbance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12.5 mg",
+                "orderSentence": "Quetiapine 12.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 12.5-25 mg qHS; titrate slowly by 12.5-25 mg q3-7d; max 200 mg/day; lowest effective dose",
+            "orderSentence": "Quetiapine 12.5 mg PO"
+          },
+          "contraindications": "Dementia-related psychosis (FDA black box); severe hepatic impairment; QT prolongation",
+          "monitoring": "Metabolic (glucose, lipids, weight); EPS (though lowest risk among antipsychotics); QTc; sedation; orthostatic BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Prophylactic/Preventive Treatment": [
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Osteoporosis prevention given high fall risk and limited mobility",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "600 mg calcium + 1000 IU D3",
+                "orderSentence": "Calcium + Vitamin D 600 mg calcium + 1000 IU D3 PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium carbonate 600 mg BID with meals + Vitamin D3 1000-2000 IU daily; total 1200 mg calcium/day",
+            "orderSentence": "Calcium + Vitamin D 600 mg calcium + 1000 IU D3 PO"
+          },
+          "contraindications": "Hypercalcemia; renal stones (relative)",
+          "monitoring": "Calcium level, Vitamin D level annually; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thickened liquids",
+          "route": "PO",
+          "indication": "Dysphagia with thin liquid aspiration on swallow study",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per SLP recommendation",
+                "orderSentence": "Thickened liquids Per SLP recommendation PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Nectar-thick, honey-thick, or pudding-thick per swallow study results; reassess as disease progresses",
+            "orderSentence": "Thickened liquids Per SLP recommendation PO"
+          },
+          "contraindications": "Patient refusal (goals of care discussion)",
+          "monitoring": "Weight, hydration status, aspiration events; serial swallow evaluations",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for acute presentations; movement disorders specialist/behavioral neurologist for diagnostic confirmation, levodopa trial, and long-term symptomatic management",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychological testing to characterize cognitive profile (apraxia, executive, visuospatial) and differentiate from AD or FTD",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for mobility, fall prevention, gait training, and range of motion exercises for dystonic limbs",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for adaptive equipment, hand function strategies, and activities of daily living assistance given limb apraxia and alien limb",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech-language pathology for evaluation of dysarthria, dysphagia screening (VFSS or FEES), and communication strategies as disease progresses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Psychiatry for management of depression, anxiety, apathy, and behavioral symptoms common in CBS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care consultation for goals of care discussion, advance care planning, and symptom management as disease progresses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Social work for caregiver support, home health services, disability applications, and community resource coordination",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/Dietitian for caloric optimization, texture-modified diet guidance, and nutritional support planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic counseling if family history suggests hereditary frontotemporal dementia (MAPT, GRN, C9orf72 mutations)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "Use fall precautions at all times including grab bars, non-slip mats, and removing tripping hazards given asymmetric weakness, rigidity, and impaired balance",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report worsening swallowing difficulty, choking episodes, or recurrent coughing during meals (aspiration risk increases with disease progression)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Engage in advance care planning discussions early while decision-making capacity is preserved, including healthcare proxy and living will",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED if sudden worsening of symptoms, new fever, fall with head injury, or inability to swallow (may indicate stroke, infection, aspiration, or medication side effect rather than disease progression)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not expect dramatic improvement from levodopa — CBS typically shows poor response, but trial is important for diagnosis and modest benefit is possible",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop clonazepam, baclofen, or other prescribed medications abruptly without physician guidance (risk of withdrawal symptoms)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alien limb movements are part of the disease and are not dangerous; strategies to manage include placing the affected hand in a pocket or holding an object",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Contact CurePSP (curepsp.org) and AFTD (theaftd.org) for patient and caregiver support resources specific to atypical parkinsonian syndromes",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular physical activity including assisted exercises to maintain joint mobility and prevent contractures in dystonic limbs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety evaluation to remove fall hazards and install adaptive equipment (grab bars, raised toilet seat, shower chair)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aspiration precautions including texture-modified diet as recommended by speech therapy; upright positioning during meals; small bites and adequate time for meals",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Caregiver education about disease trajectory, behavioral symptoms, and available support resources to prevent caregiver burnout",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mental health support for patient and caregivers; support groups for atypical parkinsonian disorders (CurePSP, AFTD)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid sedating medications (anticholinergics, antihistamines, benzodiazepines beyond prescribed) that increase fall risk and cognitive impairment",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Driving cessation: discuss early given asymmetric motor impairment, cognitive changes, and apraxia affecting reaction time and vehicle control",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Progressive supranuclear palsy (PSP)",
+      "features": "Vertical gaze palsy; symmetric parkinsonism; early postural instability and falls; axial > limb rigidity",
+      "tests": "MRI (midbrain atrophy — \"hummingbird sign\"); clinical features (vertical gaze palsy, falls); symmetric presentation"
+    },
+    {
+      "diagnosis": "Alzheimer disease presenting as CBS (AD-CBS)",
+      "features": "CBS presentation but underlying AD pathology (~25% of CBS cases); may be more symmetric; memory impairment may be more prominent",
+      "tests": "Amyloid PET (positive in AD-CBS); CSF biomarkers (low Aβ42, high p-tau); clinical course"
+    },
+    {
+      "diagnosis": "Frontotemporal dementia (behavioral variant)",
+      "features": "Personality change; disinhibition; apathy; compulsive behaviors; may overlap with CBS; GRN mutations can cause CBS",
+      "tests": "Neuropsychological testing (behavioral profile); MRI (frontal/temporal atrophy); genetic testing (GRN, MAPT, C9orf72)"
+    },
+    {
+      "diagnosis": "Creutzfeldt-Jakob disease (CJD)",
+      "features": "Rapidly progressive (weeks to months); myoclonus; periodic sharp waves on EEG; DWI restriction on MRI; CBS is a rare CJD presentation",
+      "tests": "MRI DWI (cortical ribboning); EEG (periodic complexes); CSF 14-3-3, RT-QuIC; rapid progression distinguishes"
+    },
+    {
+      "diagnosis": "Parkinson disease",
+      "features": "Asymmetric but resting tremor prominent; good levodopa response; no cortical signs (apraxia, alien limb); slower progression",
+      "tests": "DaTscan (both abnormal); levodopa trial (PD responds well, CBS poorly); clinical features (tremor vs rigidity/apraxia)"
+    },
+    {
+      "diagnosis": "Multiple system atrophy (MSA)",
+      "features": "Cerebellar ataxia (MSA-C) or parkinsonism (MSA-P); autonomic failure; symmetric; no alien limb or apraxia",
+      "tests": "MRI (hot cross bun, putaminal changes); autonomic testing; symmetric presentation"
+    },
+    {
+      "diagnosis": "Lewy body dementia",
+      "features": "Fluctuating cognition; visual hallucinations; REM sleep behavior disorder; parkinsonism; levodopa-responsive",
+      "tests": "Clinical features (hallucinations, fluctuations, RBD); DaTscan; levodopa response"
+    },
+    {
+      "diagnosis": "Functional movement disorder",
+      "features": "May mimic CBS; inconsistent; distractible; positive functional signs (Hoover); onset may be abrupt",
+      "tests": "Clinical exam (inconsistency, distractibility, positive functional signs); normal imaging; psychiatric comorbidity"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Armstrong criteria for corticobasal degeneration and corticobasal syndrome diagnosis",
+      "evidenceLevel": "Consensus",
+      "source": "[Armstrong MJ et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23359374/)"
+    },
+    {
+      "recommendation": "CBS may be caused by multiple pathologies; ~25% have AD pathology",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Ling H et al. Brain 2010](https://pubmed.ncbi.nlm.nih.gov/20805098/)"
+    },
+    {
+      "recommendation": "Levodopa trial recommended; poor response expected but partial benefit possible",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Kompoliti K et al. Mov Disord 1998](https://pubmed.ncbi.nlm.nih.gov/9539350/)"
+    },
+    {
+      "recommendation": "Clonazepam effective for cortical myoclonus in CBS",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Caviness JN. Mov Disord 2003](https://pubmed.ncbi.nlm.nih.gov/14639666/)"
+    },
+    {
+      "recommendation": "Botulinum toxin for focal dystonia in CBS",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Vanek ZF, Jankovic J. Mov Disord 2001](https://pubmed.ncbi.nlm.nih.gov/11748736/)"
+    },
+    {
+      "recommendation": "FDG-PET shows asymmetric frontoparietal hypometabolism in CBS",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Pardini M et al. Eur J Nucl Med Mol Imaging 2019](https://pubmed.ncbi.nlm.nih.gov/30456496/)"
+    },
+    {
+      "recommendation": "Amyloid PET differentiates AD-CBS from non-AD CBS",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Sha SJ et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25568296/)"
+    },
+    {
+      "recommendation": "Multidisciplinary care improves quality of life in atypical parkinsonian syndromes",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; CurePSP guidelines"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Motor function (rigidity, dystonia, myoclonus severity)",
+      "frequency": "Each visit",
+      "action": "Adjust medications; botulinum toxin for focal dystonia; reassess myoclonus treatment",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive function (screening: MoCA or MMSE)",
+      "frequency": "Q6-12 months",
+      "action": "Adjust cholinesterase inhibitor if applicable; neuropsychological reassessment; advance care planning",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Swallowing function",
+      "frequency": "Q6 months or if symptoms change",
+      "action": "Speech therapy re-evaluation; diet modification; consider PEG tube if severe",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Fall frequency",
+      "frequency": "Each visit",
+      "action": "PT reassessment; adaptive equipment; consider assistive devices; medication review for sedation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Mood and behavioral symptoms",
+      "frequency": "Each visit",
+      "action": "Adjust antidepressant or behavioral medication; psychiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Caregiver burden assessment",
+      "frequency": "Q6 months",
+      "action": "Increase home health support; respite care; social work referral",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Hepatic function (if on valproic acid)",
+      "frequency": "Q3-6 months",
+      "action": "Reduce dose or switch to alternative antimyoclonic agent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Nutritional status / weight",
+      "frequency": "Q3-6 months",
+      "action": "Dietary supplementation; assess swallowing; dietitian referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge from ED",
+      "criteria": "Stable; no acute change requiring inpatient workup; no acute safety concern; outpatient neurology follow-up arranged"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "New presentation of rapidly progressive CBS requiring urgent workup (CJD exclusion); acute functional decline; aspiration pneumonia; inability to perform ADLs safely; caregiver crisis"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Aspiration pneumonia with respiratory failure; status epilepticus from myoclonus (rare); acute medical complication"
+    },
+    {
+      "disposition": "Outpatient follow-up (movement disorders/behavioral neurology)",
+      "criteria": "All patients: q3-6 months; more frequently during medication titration; advance care planning discussions at each visit"
+    },
+    {
+      "disposition": "Outpatient follow-up (rehabilitation)",
+      "criteria": "PT/OT/Speech: ongoing per functional needs; increase frequency as disease progresses"
+    }
+  ]
+}
