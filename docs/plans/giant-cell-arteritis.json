@@ -398,21 +398,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "250 mg daily",
+                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+              },
+              {
                 "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone 500 mg IV daily"
+                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
               },
               {
-                "text": "1000 mg daily",
-                "orderSentence": "Methylprednisolone 1000 mg IV daily"
-              },
-              {
-                "text": "1 g daily x3-5 days",
-                "orderSentence": "Methylprednisolone 1 g IV daily x3-5 days"
+                "text": "1000 mg daily x3-5 days",
+                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily for 3 days (some protocols use 500 mg-1000 mg); infuse over 1-2 hours; then transition to oral prednisone 1 mg/kg/day",
-            "orderSentence": "Methylprednisolone 500 mg IV daily"
+            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180); BP; mood; electrolytes; GI prophylaxis",
@@ -454,13 +454,17 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg PO daily"
+              },
+              {
                 "text": "40 mg daily",
-                "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily PO"
+                "orderSentence": "Omeprazole 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "40 mg PO/IV daily while on steroids",
-            "orderSentence": "Omeprazole (GI prophylaxis) 40 mg daily PO"
+            "orderSentence": "Omeprazole 20 mg PO daily"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -646,13 +650,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg Ca + 2000 IU Vit D",
-                "orderSentence": "Calcium + Vitamin D (bone protection) 1000 mg Ca + 2000 IU Vit D PO"
+                "text": "500 mg Ca + 400 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
+              },
+              {
+                "text": "500 mg Ca + 1000 IU D BID",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 1000 IU D PO BID"
+              },
+              {
+                "text": "1000 mg Ca + 2000 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 2000 IU D PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Calcium 1000-1200 mg/day + Vitamin D 2000-4000 IU/day (target 25-OH >30 ng/mL)",
-            "orderSentence": "Calcium + Vitamin D (bone protection) 1000 mg Ca + 2000 IU Vit D PO"
+            "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
           },
           "contraindications": "Hypercalcemia; kidney stones",
           "monitoring": "25-OH Vitamin D level; calcium; DEXA at baseline and annually",
@@ -668,13 +680,17 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "35 mg weekly",
+                "orderSentence": "Alendronate 35 mg PO weekly"
+              },
+              {
                 "text": "70 mg weekly",
-                "orderSentence": "Alendronate (bisphosphonate for osteoporosis prevention) 70 mg weekly PO"
+                "orderSentence": "Alendronate 70 mg PO weekly"
               }
             ],
             "route": "PO",
             "instructions": "70 mg PO weekly; take on empty stomach with 8 oz water; remain upright 30 min",
-            "orderSentence": "Alendronate (bisphosphonate for osteoporosis prevention) 70 mg weekly PO"
+            "orderSentence": "Alendronate 35 mg PO weekly"
           },
           "contraindications": "Esophageal disorders; CrCl <35; hypocalcemia",
           "monitoring": "DEXA q1-2 years; dental health (osteonecrosis of jaw); esophageal symptoms",
@@ -692,13 +708,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "162 mg",
-                "orderSentence": "**Tocilizumab (Actemra)** 162 mg SC"
+                "text": "4 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 4 mg/kg SC q4wk"
+              },
+              {
+                "text": "8 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 8 mg/kg SC q4wk"
               }
             ],
             "route": "SC",
             "instructions": "162 mg SC weekly (preferred) or every 2 weeks; self-injectable; can also use 8 mg/kg IV q4wk",
-            "orderSentence": "**Tocilizumab (Actemra)** 162 mg SC"
+            "orderSentence": "Tocilizumab 4 mg/kg SC q4wk"
           },
           "contraindications": "Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines; ANC <2000; platelets <100K",
           "monitoring": "CBC q4-8 weeks; LFTs q4-8 weeks; lipid panel q3 months; infection surveillance; GI perforation risk; neutropenia; NOTE: tocilizumab suppresses ESR/CRP -- cannot use these for disease monitoring (use IL-6 or clinical assessment instead)",
@@ -798,13 +818,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg",
-                "orderSentence": "Acetaminophen 1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "1000 mg PO q6h PRN; max 3g/day",
-            "orderSentence": "Acetaminophen 1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Hepatic impairment",
           "monitoring": "LFTs if chronic use",

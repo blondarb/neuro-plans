@@ -482,13 +482,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 g",
-                "orderSentence": "Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) 2 g IV"
+                "text": "2 g q12h",
+                "orderSentence": "Ceftriaxone 2 g IV q12h"
+              },
+              {
+                "text": "2 g daily",
+                "orderSentence": "Ceftriaxone 2 g IV daily"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q12h; start within 30 minutes of presentation; discontinue when bacterial meningitis excluded (negative Gram stain + negative BioFire + CSF consistent with viral + cultures negative at 48-72h)",
-            "orderSentence": "Ceftriaxone IV (empiric — until bacterial meningitis excluded) (CPT 96374) 2 g IV"
+            "orderSentence": "Ceftriaxone 2 g IV q12h"
           },
           "contraindications": "Cephalosporin allergy (true anaphylaxis — use chloramphenicol or meropenem as alternative)",
           "monitoring": "CBC; LFTs; biliary sludge with prolonged use",
@@ -504,13 +508,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15-20 mg/kg",
-                "orderSentence": "Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) 15-20 mg/kg IV"
+                "text": "15-20 mg/kg q8-12h",
+                "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h"
+              },
+              {
+                "text": "25-30 mg/kg loading dose",
+                "orderSentence": "Vancomycin 25-30 mg/kg IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "15-20 mg/kg IV q8-12h (target trough 15-20 ug/mL or AUC/MIC 400-600); loading dose 25-30 mg/kg if severe; discontinue when bacterial meningitis excluded",
-            "orderSentence": "Vancomycin IV (empiric — until bacterial meningitis excluded) (CPT 96365) 15-20 mg/kg IV"
+            "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h"
           },
           "contraindications": "Red man syndrome (infuse over 1h minimum); renal impairment (dose adjust)",
           "monitoring": "Trough levels before 4th dose; renal function daily; watch nephrotoxicity and ototoxicity",
@@ -526,13 +534,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 g",
-                "orderSentence": "Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) 2 g IV"
+                "text": "2 g q4h",
+                "orderSentence": "Ampicillin 2 g IV q4h"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q4h; discontinue when bacterial meningitis excluded and Listeria not identified",
-            "orderSentence": "Ampicillin IV (add if age >50, immunocompromised, or alcoholism) (CPT 96374) 2 g IV"
+            "orderSentence": "Ampicillin 2 g IV q4h"
           },
           "contraindications": "Penicillin anaphylaxis (use TMP-SMX as Listeria alternative)",
           "monitoring": "Rash; renal function",
@@ -548,13 +556,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg/kg",
-                "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
+                "text": "10 mg/kg q8h",
+                "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
+              },
+              {
+                "text": "15 mg/kg q8h",
+                "orderSentence": "Acyclovir Iv 15 mg/kg IV q8h"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV q8h (based on ideal body weight); infuse over 1h; discontinue when HSV PCR negative AND no encephalitic features (confusion, focal deficits, seizures, temporal lobe MRI changes). CrCl 25-50: q12h; CrCl 10-25: q24h",
-            "orderSentence": "Acyclovir IV (empiric — until HSV excluded) (CPT 96365) 10 mg/kg IV"
+            "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
           },
           "contraindications": "Renal impairment (dose adjust; do NOT withhold)",
           "monitoring": "Renal function (BUN, Cr) daily; ensure adequate hydration (1 mL/kg/h); urine output; acyclovir crystal nephropathy risk",
@@ -624,13 +636,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "650-1000 mg",
-                "orderSentence": "Acetaminophen 650-1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV formulation for patients unable to take PO",
-            "orderSentence": "Acetaminophen 650-1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Severe hepatic disease (Child-Pugh C); acetaminophen allergy",
           "monitoring": "Temperature; LFTs if prolonged use; total daily dose",
@@ -646,13 +670,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400-600 mg",
-                "orderSentence": "Ibuprofen 400-600 mg PO"
+                "text": "200 mg q6h PRN",
+                "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
+              },
+              {
+                "text": "400 mg q6h PRN",
+                "orderSentence": "Ibuprofen 400 mg PO q6h PRN"
+              },
+              {
+                "text": "600 mg q8h",
+                "orderSentence": "Ibuprofen 600 mg PO q8h"
+              },
+              {
+                "text": "800 mg q8h",
+                "orderSentence": "Ibuprofen 800 mg PO q8h"
               }
             ],
             "route": "PO",
             "instructions": "400-600 mg PO q6h with food; max 2400 mg/day; use in combination with acetaminophen for refractory headache",
-            "orderSentence": "Ibuprofen 400-600 mg PO"
+            "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
           },
           "contraindications": "Renal impairment; GI bleed risk; coagulopathy; allergy; dehydration",
           "monitoring": "Renal function; GI symptoms; avoid if not adequately hydrated",
@@ -668,13 +704,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15-30 mg",
-                "orderSentence": "Ketorolac 15-30 mg IV"
+                "text": "15 mg q6h",
+                "orderSentence": "Ketorolac 15 mg IV q6h"
+              },
+              {
+                "text": "30 mg q6h",
+                "orderSentence": "Ketorolac 30 mg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "15-30 mg IV q6h (15 mg if age >65, renal impairment, or weight <50 kg); max 5 days; transition to oral NSAID",
-            "orderSentence": "Ketorolac 15-30 mg IV"
+            "orderSentence": "Ketorolac 15 mg IV q6h"
           },
           "contraindications": "Renal impairment; GI bleed; coagulopathy; age >65 (dose reduce); concurrent anticoagulants",
           "monitoring": "Renal function daily; GI symptoms; limit to 5 days maximum",
@@ -798,13 +838,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Pantoprazole 40 mg IV"
+                "text": "20 mg daily",
+                "orderSentence": "Pantoprazole 20 mg IV daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Pantoprazole 40 mg IV daily"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Pantoprazole 40 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily; discontinue when dexamethasone stopped",
-            "orderSentence": "Pantoprazole 40 mg IV"
+            "orderSentence": "Pantoprazole 20 mg IV daily"
           },
           "contraindications": "C. diff risk with prolonged use",
           "monitoring": "GI symptoms",
@@ -856,13 +904,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg",
-                "orderSentence": "Valacyclovir (for HSV-2 Mollaret meningitis) 500 mg PO"
+                "text": "500 mg BID",
+                "orderSentence": "Valacyclovir 500 mg PO BID"
+              },
+              {
+                "text": "1000 mg TID",
+                "orderSentence": "Valacyclovir 1000 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "500 mg PO BID or 1000 mg PO daily for suppressive therapy; duration individualized (months to years); discuss risk/benefit with patient",
-            "orderSentence": "Valacyclovir (for HSV-2 Mollaret meningitis) 500 mg PO"
+            "orderSentence": "Valacyclovir 500 mg PO BID"
           },
           "contraindications": "Renal impairment (dose adjust); thrombotic thrombocytopenic purpura (rare, high dose)",
           "monitoring": "Renal function at baseline and periodically; CBC if prolonged use",
@@ -878,13 +930,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg/kg",
-                "orderSentence": "Acyclovir IV (for confirmed VZV meningitis) 10 mg/kg IV"
+                "text": "10 mg/kg q8h",
+                "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
+              },
+              {
+                "text": "15 mg/kg q8h",
+                "orderSentence": "Acyclovir Iv 15 mg/kg IV q8h"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV q8h (based on ideal body weight) x 10-14 days; transition to oral valacyclovir 1000 mg PO TID when clinically improving",
-            "orderSentence": "Acyclovir IV (for confirmed VZV meningitis) 10 mg/kg IV"
+            "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
           },
           "contraindications": "Renal impairment (dose adjust)",
           "monitoring": "Renal function daily; adequate hydration; urine output",
@@ -900,13 +956,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg",
-                "orderSentence": "Valacyclovir (for VZV meningitis — oral step-down) 1000 mg PO"
+                "text": "500 mg BID",
+                "orderSentence": "Valacyclovir 500 mg PO BID"
+              },
+              {
+                "text": "1000 mg TID",
+                "orderSentence": "Valacyclovir 1000 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "1000 mg PO TID; complete total 10-14 day course (combined IV + PO)",
-            "orderSentence": "Valacyclovir (for VZV meningitis — oral step-down) 1000 mg PO"
+            "orderSentence": "Valacyclovir 500 mg PO BID"
           },
           "contraindications": "Renal impairment (dose adjust)",
           "monitoring": "Renal function",
@@ -990,13 +1050,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-1.5 g/kg",
-                "orderSentence": "Mannitol 20% (if elevated ICP) 1-1.5 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h",
-            "orderSentence": "Mannitol 20% (if elevated ICP) 1-1.5 g/kg IV"
+            "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
           },
           "contraindications": "Anuria; severe dehydration",
           "monitoring": "Serum osmolality (<320); osmolar gap; renal function; I/O",
@@ -1014,13 +1082,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg",
-                "orderSentence": "Valacyclovir (chronic suppression for Mollaret meningitis) 500 mg PO"
+                "text": "500 mg BID",
+                "orderSentence": "Valacyclovir 500 mg PO BID"
+              },
+              {
+                "text": "1000 mg TID",
+                "orderSentence": "Valacyclovir 1000 mg PO TID"
               }
             ],
             "route": "PO",
             "instructions": "500 mg PO BID or 1000 mg PO daily; continue for 6-12 months then reassess; some patients require indefinite suppression",
-            "orderSentence": "Valacyclovir (chronic suppression for Mollaret meningitis) 500 mg PO"
+            "orderSentence": "Valacyclovir 500 mg PO BID"
           },
           "pretreatment": "Confirm HSV-2 by CSF PCR during acute episode; baseline renal function; educate patient on adherence and expected benefit",
           "contraindications": "Renal impairment (dose adjust CrCl <30: 500 mg daily); TTP/HUS (rare, high-dose)",

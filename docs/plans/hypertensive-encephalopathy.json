@@ -354,13 +354,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg/hr",
-                "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
+                "text": "5 mg/hr infusion",
+                "orderSentence": "Nicardipine 5 mg/hr IV infusion"
+              },
+              {
+                "text": "15 mg/hr max infusion",
+                "orderSentence": "Nicardipine 15 mg/hr IV max infusion"
               }
             ],
             "route": "IV",
             "instructions": "start 5 mg/hr, titrate by 2.5 mg/hr every 5-15 min, max 15 mg/hr",
-            "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
+            "orderSentence": "Nicardipine 5 mg/hr IV infusion"
           }
         },
         {
@@ -368,13 +372,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg",
-                "orderSentence": "Labetalol IV 20 mg IV"
+                "text": "100 mg BID",
+                "orderSentence": "Labetalol 100 mg IV BID"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Labetalol 200 mg IV BID"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Labetalol 300 mg IV BID"
+              },
+              {
+                "text": "10 mg q10min PRN",
+                "orderSentence": "Labetalol 10 mg IV q10min PRN"
+              },
+              {
+                "text": "20 mg q10min PRN",
+                "orderSentence": "Labetalol 20 mg IV q10min PRN"
               }
             ],
             "route": "IV",
             "instructions": "may repeat 40-80 mg every 10 min (max 300 mg total); or infusion 0.5-2 mg/min",
-            "orderSentence": "Labetalol IV 20 mg IV"
+            "orderSentence": "Labetalol 100 mg IV BID"
           }
         },
         {
@@ -424,13 +444,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10-20 mg",
-                "orderSentence": "Hydralazine IV 10-20 mg IV"
+                "text": "10 mg QID",
+                "orderSentence": "Hydralazine 10 mg IV QID"
+              },
+              {
+                "text": "25 mg QID",
+                "orderSentence": "Hydralazine 25 mg IV QID"
+              },
+              {
+                "text": "50 mg QID",
+                "orderSentence": "Hydralazine 50 mg IV QID"
               }
             ],
             "route": "IV",
             "instructions": "10-20 mg :: IV :: bolus every 4-6 hours",
-            "orderSentence": "Hydralazine IV 10-20 mg IV"
+            "orderSentence": "Hydralazine 10 mg IV QID"
           }
         },
         {
@@ -438,13 +466,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg",
-                "orderSentence": "Lorazepam IV 4 mg IV"
+                "text": "0.5 mg TID",
+                "orderSentence": "Lorazepam 0.5 mg IV TID"
+              },
+              {
+                "text": "1 mg TID",
+                "orderSentence": "Lorazepam 1 mg IV TID"
+              },
+              {
+                "text": "2 mg TID",
+                "orderSentence": "Lorazepam 2 mg IV TID"
               }
             ],
             "route": "IV",
             "instructions": "may repeat x1 after 5 min",
-            "orderSentence": "Lorazepam IV 4 mg IV"
+            "orderSentence": "Lorazepam 0.5 mg IV TID"
           }
         },
         {
@@ -452,13 +488,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000-1500 mg",
-                "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+                "text": "250 mg BID",
+                "orderSentence": "Levetiracetam 250 mg IV BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam 500 mg IV BID"
+              },
+              {
+                "text": "750 mg BID",
+                "orderSentence": "Levetiracetam 750 mg IV BID"
+              },
+              {
+                "text": "1000 mg BID",
+                "orderSentence": "Levetiracetam 1000 mg IV BID"
+              },
+              {
+                "text": "1500 mg BID",
+                "orderSentence": "Levetiracetam 1500 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "then 500-1000 mg BID",
-            "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+            "orderSentence": "Levetiracetam 250 mg IV BID"
           }
         },
         {
@@ -480,13 +532,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4-6 g",
-                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+                "text": "1 g bolus",
+                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
+              },
+              {
+                "text": "2 g bolus",
+                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
+              },
+              {
+                "text": "4 g loading dose",
+                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "then 1-2 g/hr",
-            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
           }
         }
       ],
@@ -496,13 +556,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5-10 mg",
-                "orderSentence": "Amlodipine PO 5-10 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Amlodipine 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Amlodipine 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Amlodipine 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "start 5 mg, titrate to 10 mg",
-            "orderSentence": "Amlodipine PO 5-10 mg PO"
+            "orderSentence": "Amlodipine 2.5 mg PO daily"
           }
         },
         {
@@ -510,13 +578,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10-40 mg",
-                "orderSentence": "Lisinopril PO 10-40 mg PO"
+                "text": "2.5 mg daily",
+                "orderSentence": "Lisinopril 2.5 mg PO daily"
+              },
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Lisinopril 5 mg PO daily"
+              },
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Lisinopril 10 mg PO daily"
+              },
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Lisinopril 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Lisinopril 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "start 10 mg",
-            "orderSentence": "Lisinopril PO 10-40 mg PO"
+            "orderSentence": "Lisinopril 2.5 mg PO daily"
           }
         },
         {
@@ -538,13 +622,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200-800 mg",
-                "orderSentence": "Labetalol PO 200-800 mg PO"
+                "text": "100 mg BID",
+                "orderSentence": "Labetalol 100 mg PO BID"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Labetalol 200 mg PO BID"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Labetalol 300 mg PO BID"
+              },
+              {
+                "text": "10 mg q10min PRN",
+                "orderSentence": "Labetalol 10 mg PO q10min PRN"
+              },
+              {
+                "text": "20 mg q10min PRN",
+                "orderSentence": "Labetalol 20 mg PO q10min PRN"
               }
             ],
             "route": "PO",
             "instructions": "start 200 mg BID",
-            "orderSentence": "Labetalol PO 200-800 mg PO"
+            "orderSentence": "Labetalol 100 mg PO BID"
           }
         },
         {
@@ -568,13 +668,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25-50 mg",
-                "orderSentence": "Hydralazine PO 25-50 mg PO"
+                "text": "10 mg QID",
+                "orderSentence": "Hydralazine 10 mg PO QID"
+              },
+              {
+                "text": "25 mg QID",
+                "orderSentence": "Hydralazine 25 mg PO QID"
+              },
+              {
+                "text": "50 mg QID",
+                "orderSentence": "Hydralazine 50 mg PO QID"
               }
             ],
             "route": "PO",
             "instructions": "25-50 mg :: PO :: TID-QID",
-            "orderSentence": "Hydralazine PO 25-50 mg PO"
+            "orderSentence": "Hydralazine 10 mg PO QID"
           }
         },
         {
@@ -624,13 +732,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4-8 mg",
-                "orderSentence": "Dexamethasone IV 4-8 mg IV"
+                "text": "4 mg q6h",
+                "orderSentence": "Dexamethasone 4 mg IV q6h"
+              },
+              {
+                "text": "10 mg once then 4 mg q6h",
+                "orderSentence": "Dexamethasone 10 mg IV once then 4 mg q6h"
+              },
+              {
+                "text": "16 mg daily",
+                "orderSentence": "Dexamethasone 16 mg IV daily"
               }
             ],
             "route": "IV",
             "instructions": "4-8 mg :: IV :: every 6 hours",
-            "orderSentence": "Dexamethasone IV 4-8 mg IV"
+            "orderSentence": "Dexamethasone 4 mg IV q6h"
           }
         }
       ],
@@ -640,13 +756,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4-6 g",
-                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+                "text": "1 g bolus",
+                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
+              },
+              {
+                "text": "2 g bolus",
+                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
+              },
+              {
+                "text": "4 g loading dose",
+                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "then 1-2 g/hr",
-            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
           }
         },
         {
@@ -654,13 +778,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg",
-                "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
+                "text": "100 mg BID",
+                "orderSentence": "Labetalol 100 mg IV BID"
+              },
+              {
+                "text": "200 mg BID",
+                "orderSentence": "Labetalol 200 mg IV BID"
+              },
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Labetalol 300 mg IV BID"
+              },
+              {
+                "text": "10 mg q10min PRN",
+                "orderSentence": "Labetalol 10 mg IV q10min PRN"
+              },
+              {
+                "text": "20 mg q10min PRN",
+                "orderSentence": "Labetalol 20 mg IV q10min PRN"
               }
             ],
             "route": "IV",
             "instructions": "then 40-80 mg every 10-20 min (max 300 mg)",
-            "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
+            "orderSentence": "Labetalol 100 mg IV BID"
           }
         },
         {
@@ -668,13 +808,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5-10 mg",
-                "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
+                "text": "10 mg QID",
+                "orderSentence": "Hydralazine 10 mg IV QID"
+              },
+              {
+                "text": "25 mg QID",
+                "orderSentence": "Hydralazine 25 mg IV QID"
+              },
+              {
+                "text": "50 mg QID",
+                "orderSentence": "Hydralazine 50 mg IV QID"
               }
             ],
             "route": "IV",
             "instructions": "5-10 mg :: IV :: every 20-30 min",
-            "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
+            "orderSentence": "Hydralazine 10 mg IV QID"
           }
         },
         {
@@ -682,13 +830,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10-20 mg",
-                "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
+                "text": "10 mg PO",
+                "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
+              },
+              {
+                "text": "20 mg PO",
+                "orderSentence": "Nifedipine (immediate-release) 20 mg PO PO"
               }
             ],
             "route": "PO",
             "instructions": "10-20 mg :: PO :: every 30 min (immediate release for acute)",
-            "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
+            "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
           }
         }
       ]

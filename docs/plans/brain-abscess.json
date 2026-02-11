@@ -546,13 +546,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 g",
-                "orderSentence": "Ceftriaxone (CPT 96374) 2 g IV"
+                "text": "2 g q12h",
+                "orderSentence": "Ceftriaxone 2 g IV q12h"
+              },
+              {
+                "text": "2 g daily",
+                "orderSentence": "Ceftriaxone 2 g IV daily"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV q12h; duration 6-8 weeks total IV therapy; adjust based on culture results",
-            "orderSentence": "Ceftriaxone (CPT 96374) 2 g IV"
+            "orderSentence": "Ceftriaxone 2 g IV q12h"
           },
           "contraindications": "Cephalosporin anaphylaxis (use meropenem as alternative); biliary sludge with prolonged use",
           "monitoring": "CBC weekly; LFTs biweekly; renal function weekly; biliary symptoms",
@@ -590,13 +594,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15-20 mg/kg",
-                "orderSentence": "Vancomycin (CPT 96365) 15-20 mg/kg IV"
+                "text": "15-20 mg/kg q8-12h",
+                "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h"
+              },
+              {
+                "text": "25-30 mg/kg loading dose",
+                "orderSentence": "Vancomycin 25-30 mg/kg IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "15-20 mg/kg IV q8-12h; target trough 15-20 ug/mL or AUC/MIC 400-600; loading dose 25-30 mg/kg for severe cases",
-            "orderSentence": "Vancomycin (CPT 96365) 15-20 mg/kg IV"
+            "orderSentence": "Vancomycin 15-20 mg/kg IV q8-12h"
           },
           "contraindications": "Renal impairment (dose adjust); red man syndrome (infuse over >=1h)",
           "monitoring": "Trough levels before 4th dose then q48-72h; renal function daily initially then twice weekly; ototoxicity",
@@ -680,13 +688,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g/kg",
-                "orderSentence": "Mannitol 20% 1 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320",
-            "orderSentence": "Mannitol 20% 1 g/kg IV"
+            "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
           },
           "contraindications": "Anuria; severe dehydration; active intracranial bleeding",
           "monitoring": "Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O",
@@ -702,13 +718,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mL",
-                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+                "text": "30 mL bolus over 15 min",
+                "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
               }
             ],
             "route": "IV",
             "instructions": "30 mL via central line over 10-20 min; target Na 145-155 mEq/L; may repeat PRN",
-            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+            "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
           },
           "contraindications": "No central access (peripheral administration causes tissue necrosis)",
           "monitoring": "Serum Na q4-6h; osmolality; central line access confirmed",
@@ -778,13 +794,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg",
-                "orderSentence": "Acetaminophen 1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO",
-            "orderSentence": "Acetaminophen 1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Severe hepatic disease; metronidazole concurrent use (monitor LFTs closely)",
           "monitoring": "Temperature; LFTs (especially with concurrent metronidazole)",
@@ -826,13 +854,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Pantoprazole 40 mg IV"
+                "text": "20 mg daily",
+                "orderSentence": "Pantoprazole 20 mg IV daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Pantoprazole 40 mg IV daily"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Pantoprazole 40 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily; discontinue when steroids stopped and no longer in ICU",
-            "orderSentence": "Pantoprazole 40 mg IV"
+            "orderSentence": "Pantoprazole 20 mg IV daily"
           },
           "contraindications": "Long-term use risks (C. diff, hypomagnesemia); only while on steroids or in ICU",
           "monitoring": "GI symptoms; consider discontinuation when steroids stopped",
@@ -1060,13 +1096,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "6 mg/kg",
-                "orderSentence": "Voriconazole 6 mg/kg IV"
+                "text": "6 mg/kg IV q12h x2 doses (load)",
+                "orderSentence": "Voriconazole 6 mg/kg IV q12h x2 doses (load) IV"
+              },
+              {
+                "text": "4 mg/kg IV q12h",
+                "orderSentence": "Voriconazole 4 mg/kg IV q12h IV"
               }
             ],
             "route": "IV",
             "instructions": "6 mg/kg IV q12h x 2 loading doses, then 4 mg/kg IV q12h; transition to 200-300 mg PO BID when stable; duration 6-12 months minimum",
-            "orderSentence": "Voriconazole 6 mg/kg IV"
+            "orderSentence": "Voriconazole 6 mg/kg IV q12h x2 doses (load) IV"
           },
           "contraindications": "Hepatic impairment; concurrent strong CYP3A4 inducers (rifampin, carbamazepine); QT prolongation; visual disturbances; IV form contraindicated if CrCl <50 (cyclodextrin accumulation)",
           "monitoring": "Voriconazole trough levels (target 2-5 ug/mL); LFTs weekly initially then biweekly; visual changes; QTc; drug interactions (CYP2C19 polymorphisms)",
@@ -1126,13 +1166,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "800 mg",
-                "orderSentence": "Fluconazole 800 mg IV"
+                "text": "400 mg daily",
+                "orderSentence": "Fluconazole 400 mg IV daily"
+              },
+              {
+                "text": "800 mg daily",
+                "orderSentence": "Fluconazole 800 mg IV daily"
+              },
+              {
+                "text": "1200 mg daily",
+                "orderSentence": "Fluconazole 1200 mg IV daily"
               }
             ],
             "route": "IV",
             "instructions": "800 mg IV/PO daily x 2 weeks induction (with amphotericin for Crypto), then 400 mg PO daily consolidation x 8 weeks; maintenance 200 mg PO daily for Crypto in HIV",
-            "orderSentence": "Fluconazole 800 mg IV"
+            "orderSentence": "Fluconazole 400 mg IV daily"
           },
           "contraindications": "Hepatic impairment; QT prolongation; concurrent terfenadine/cisapride",
           "monitoring": "LFTs biweekly; QTc; drug interactions (CYP2C9/3A4 inhibitor)",

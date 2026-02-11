@@ -512,13 +512,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g/kg",
-                "orderSentence": "**Mannitol (acute herniation)** 1 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1-1.5 g/kg IV bolus over 15-20 min; may repeat 0.25-0.5 g/kg q4-6h; bridge to emergent CSF diversion or radiation",
-            "orderSentence": "**Mannitol (acute herniation)** 1 g/kg IV"
+            "orderSentence": "Mannitol 0.5 g/kg IV q6h"
           },
           "contraindications": "CHF; severe renal failure; anuria; severe dehydration",
           "monitoring": "Serum osmolality (keep <320 mOsm/kg); BMP q6h; urine output; ICP if monitored; renal function",
@@ -534,13 +542,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mL",
-                "orderSentence": "**Hypertonic saline 23.4% (acute herniation)** 30 mL IV"
+                "text": "30 mL bolus over 15 min",
+                "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
               }
             ],
             "route": "IV",
             "instructions": "23.4% NaCl 30 mL via central line over 15 min (MUST be central line); alternative: 3% NaCl 250 mL over 30 min (can be peripheral); bridge to emergent CSF diversion",
-            "orderSentence": "**Hypertonic saline 23.4% (acute herniation)** 30 mL IV"
+            "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
           },
           "contraindications": "Hypernatremia (Na >160); central pontine myelinolysis risk; 23.4% requires central line",
           "monitoring": "Sodium q2-4h; serum osmolality; neurologic exam; target Na 145-155 mEq/L",
@@ -638,13 +646,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg",
-                "orderSentence": "**Omeprazole (stress ulcer prophylaxis)** 20 mg PO"
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Omeprazole 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Omeprazole 20 mg PO daily or pantoprazole 40 mg IV daily if NPO; continue throughout steroid course",
-            "orderSentence": "**Omeprazole (stress ulcer prophylaxis)** 20 mg PO"
+            "orderSentence": "Omeprazole 20 mg PO daily"
           },
           "contraindications": "Known hypersensitivity; consider C. difficile risk with prolonged PPI use",
           "monitoring": "GI symptoms; consider H. pylori testing if prolonged use",
@@ -1040,13 +1052,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg",
-                "orderSentence": "**Acetazolamide** 250 mg PO"
+                "text": "125 mg BID",
+                "orderSentence": "Acetazolamide 125 mg PO BID"
+              },
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Acetazolamide 250 mg PO BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Acetazolamide 500 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg PO BID; may increase to 250 mg TID or 500 mg BID; max 2 g/day; reduces CSF production by 50%",
-            "orderSentence": "**Acetazolamide** 250 mg PO"
+            "orderSentence": "Acetazolamide 125 mg PO BID"
           },
           "contraindications": "Severe hepatic insufficiency; sulfonamide allergy; severe metabolic acidosis; hyponatremia; hypokalemia",
           "monitoring": "BMP (metabolic acidosis, hypokalemia); renal function; symptoms of ICP (headache, vision); tingling in extremities (common, benign)",
@@ -1132,13 +1152,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg + 800 IU",
-                "orderSentence": "**Calcium + Vitamin D** 1000 mg + 800 IU PO"
+                "text": "500 mg Ca + 400 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
+              },
+              {
+                "text": "500 mg Ca + 1000 IU D BID",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 1000 IU D PO BID"
+              },
+              {
+                "text": "1000 mg Ca + 2000 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 2000 IU D PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Calcium 1000-1200 mg/day + Vitamin D3 800-1000 IU/day; divided dosing improves absorption; take with meals",
-            "orderSentence": "**Calcium + Vitamin D** 1000 mg + 800 IU PO"
+            "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
           },
           "contraindications": "Hypercalcemia; calcium-containing renal stones; sarcoidosis",
           "monitoring": "Serum calcium; 25-OH Vitamin D level; renal function",
@@ -1154,13 +1182,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "650-1000 mg",
-                "orderSentence": "**Acetaminophen (headache/pain)** 650-1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "Acetaminophen 650-1000 mg PO q6h; max 4 g/day (2 g/day if hepatic impairment); dexamethasone often most effective for LMD headache; avoid NSAIDs if concurrent methotrexate (impairs clearance) or thrombocytopenia",
-            "orderSentence": "**Acetaminophen (headache/pain)** 650-1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Hepatic impairment (max 2 g/day); severe hepatic failure",
           "monitoring": "Pain scores q4h; hepatic function if prolonged use",

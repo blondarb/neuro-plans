@@ -20,6 +20,15 @@ import re
 import sys
 from pathlib import Path
 
+# Import the central medication resolver for fallback dose lookups
+try:
+    from medication_resolver import MedicationResolver
+    _resolver = MedicationResolver()
+    _resolver_available = True
+except ImportError:
+    _resolver = None
+    _resolver_available = False
+
 # ---------------------------------------------------------------------------
 # Comprehensive Medication Dose Database
 # Key: normalized medication name (lowercase)
@@ -978,6 +987,258 @@ MEDICATION_DOSES = {
     "inotersen": [
         ("284 mg", "SC", "weekly"),
     ],
+
+    # ===== Common Analgesics / NSAIDs =====
+    "acetaminophen": [
+        ("325 mg", "PO", "q6h PRN"),
+        ("500 mg", "PO", "q6h PRN"),
+        ("650 mg", "PO", "q6h PRN"),
+        ("1000 mg", "PO", "q6h PRN"),
+    ],
+    "ibuprofen": [
+        ("200 mg", "PO", "q6h PRN"),
+        ("400 mg", "PO", "q6h PRN"),
+        ("600 mg", "PO", "q8h"),
+        ("800 mg", "PO", "q8h"),
+    ],
+    "naproxen": [
+        ("250 mg", "PO", "BID"),
+        ("500 mg", "PO", "BID"),
+    ],
+    "naproxen sodium": [
+        ("220 mg", "PO", "BID"),
+        ("550 mg", "PO", "BID"),
+    ],
+    "ketorolac": [
+        ("15 mg", "IV", "q6h"),
+        ("30 mg", "IV", "q6h"),
+    ],
+    "meclizine": [
+        ("12.5 mg", "PO", "q8h PRN"),
+        ("25 mg", "PO", "q8h PRN"),
+        ("50 mg", "PO", "q8h PRN"),
+    ],
+    "diphenhydramine": [
+        ("25 mg", "IV/PO", "q6h PRN"),
+        ("50 mg", "IV/PO", "q6h PRN"),
+    ],
+
+    # ===== SSRIs (not already in dict) =====
+    "sertraline": [
+        ("25 mg", "PO", "daily"),
+        ("50 mg", "PO", "daily"),
+        ("100 mg", "PO", "daily"),
+        ("150 mg", "PO", "daily"),
+        ("200 mg", "PO", "daily"),
+    ],
+    "escitalopram": [
+        ("5 mg", "PO", "daily"),
+        ("10 mg", "PO", "daily"),
+        ("20 mg", "PO", "daily"),
+    ],
+    "citalopram": [
+        ("10 mg", "PO", "daily"),
+        ("20 mg", "PO", "daily"),
+        ("40 mg", "PO", "daily"),
+    ],
+    "fluoxetine": [
+        ("10 mg", "PO", "daily"),
+        ("20 mg", "PO", "daily"),
+        ("40 mg", "PO", "daily"),
+        ("60 mg", "PO", "daily"),
+    ],
+    "paroxetine": [
+        ("10 mg", "PO", "daily"),
+        ("20 mg", "PO", "daily"),
+        ("40 mg", "PO", "daily"),
+    ],
+
+    # ===== Stimulants / Wakefulness =====
+    "modafinil": [
+        ("100 mg", "PO", "daily"),
+        ("200 mg", "PO", "daily"),
+        ("400 mg", "PO", "daily"),
+    ],
+    "methylphenidate": [
+        ("2.5 mg", "PO", "BID"),
+        ("5 mg", "PO", "BID"),
+        ("10 mg", "PO", "BID"),
+        ("20 mg", "PO", "BID"),
+    ],
+    "armodafinil": [
+        ("150 mg", "PO", "daily"),
+        ("250 mg", "PO", "daily"),
+    ],
+
+    # ===== GI / Antiemetics (not already in dict) =====
+    "pantoprazole": [
+        ("20 mg", "IV/PO", "daily"),
+        ("40 mg", "IV/PO", "daily"),
+        ("40 mg", "IV/PO", "BID"),
+    ],
+    "omeprazole": [
+        ("20 mg", "PO", "daily"),
+        ("40 mg", "PO", "daily"),
+    ],
+    "docusate sodium": [
+        ("100 mg", "PO", "daily"),
+        ("100 mg", "PO", "BID"),
+    ],
+    "polyethylene glycol": [
+        ("17 g", "PO", "daily"),
+    ],
+    "senna": [
+        ("8.6 mg", "PO", "daily"),
+        ("17.2 mg", "PO", "daily"),
+    ],
+    "buspirone": [
+        ("5 mg", "PO", "BID"),
+        ("10 mg", "PO", "BID"),
+        ("15 mg", "PO", "BID"),
+        ("20 mg", "PO", "BID"),
+    ],
+
+    # ===== Carbonic Anhydrase Inhibitors =====
+    "acetazolamide": [
+        ("125 mg", "PO", "BID"),
+        ("250 mg", "PO", "BID"),
+        ("500 mg", "PO", "BID"),
+    ],
+
+    # ===== Anticoagulation / DVT Prophylaxis =====
+    "dvt prophylaxis: enoxaparin": [
+        ("30 mg", "SC", "BID"),
+        ("40 mg", "SC", "daily"),
+    ],
+    "dvt prophylaxis: heparin sc": [
+        ("5000 units", "SC", "q8h"),
+        ("5000 units", "SC", "q12h"),
+    ],
+
+    # ===== IV Steroids =====
+    "methylprednisolone iv": [
+        ("250 mg", "IV", "daily"),
+        ("500 mg", "IV", "daily"),
+        ("1000 mg", "IV", "daily x3-5 days"),
+    ],
+    "iv methylprednisolone": [
+        ("250 mg", "IV", "daily"),
+        ("500 mg", "IV", "daily"),
+        ("1000 mg", "IV", "daily x3-5 days"),
+    ],
+
+    # ===== Antibiotics / Antivirals =====
+    "acyclovir iv": [
+        ("10 mg/kg", "IV", "q8h"),
+        ("15 mg/kg", "IV", "q8h"),
+    ],
+    "acyclovir": [
+        ("10 mg/kg", "IV", "q8h"),
+        ("800 mg", "PO", "5x daily"),
+    ],
+    "valacyclovir": [
+        ("500 mg", "PO", "BID"),
+        ("1000 mg", "PO", "TID"),
+    ],
+    "ceftriaxone": [
+        ("2 g", "IV", "q12h"),
+        ("2 g", "IV", "daily"),
+    ],
+    "vancomycin": [
+        ("15-20 mg/kg", "IV", "q8-12h"),
+        ("25-30 mg/kg", "IV", "loading dose"),
+    ],
+    "ampicillin": [
+        ("2 g", "IV", "q4h"),
+    ],
+    "fluconazole": [
+        ("400 mg", "PO/IV", "daily"),
+        ("800 mg", "PO/IV", "daily"),
+        ("1200 mg", "PO/IV", "daily"),
+    ],
+
+    # ===== Osmotic Therapy =====
+    "mannitol": [
+        ("0.5 g/kg", "IV", "q6h"),
+        ("1 g/kg", "IV", "q6h"),
+        ("1.5 g/kg", "IV", "q6h"),
+    ],
+    "mannitol 20%": [
+        ("0.5 g/kg", "IV", "q6h"),
+        ("1 g/kg", "IV", "q6h"),
+        ("1.5 g/kg", "IV", "q6h"),
+    ],
+    "hypertonic saline 23.4%": [
+        ("30 mL", "IV", "bolus over 15 min"),
+    ],
+    "hypertonic saline 3%": [
+        ("150 mL", "IV", "bolus over 20 min"),
+        ("250 mL", "IV", "over 30 min"),
+    ],
+
+    # ===== Biologics / Monoclonal Antibodies =====
+    "tocilizumab": [
+        ("4 mg/kg", "IV", "q4wk"),
+        ("8 mg/kg", "IV", "q4wk"),
+    ],
+    "eculizumab": [
+        ("900 mg", "IV", "weekly x4 then 1200 mg q2wk"),
+    ],
+
+    # ===== Other Common Neuro Medications =====
+    "glycopyrrolate": [
+        ("1 mg", "PO", "BID"),
+        ("1 mg", "PO", "TID"),
+        ("2 mg", "PO", "TID"),
+    ],
+    "tamsulosin": [
+        ("0.4 mg", "PO", "daily"),
+        ("0.8 mg", "PO", "daily"),
+    ],
+    "4-aminopyridine": [
+        ("5 mg", "PO", "BID"),
+        ("10 mg", "PO", "BID"),
+    ],
+    "dalfampridine": [
+        ("10 mg", "PO", "BID"),
+    ],
+    "capsaicin 8% patch": [
+        ("1 patch", "Topical", "q3mo"),
+        ("2 patches", "Topical", "q3mo"),
+    ],
+    "lidocaine 5% patch": [
+        ("1 patch", "Topical", "12h on/12h off"),
+        ("2 patches", "Topical", "12h on/12h off"),
+        ("3 patches", "Topical", "12h on/12h off"),
+    ],
+    "alendronate": [
+        ("35 mg", "PO", "weekly"),
+        ("70 mg", "PO", "weekly"),
+    ],
+    "levothyroxine": [
+        ("25 mcg", "PO", "daily"),
+        ("50 mcg", "PO", "daily"),
+        ("75 mcg", "PO", "daily"),
+        ("100 mcg", "PO", "daily"),
+    ],
+    "ezetimibe": [
+        ("10 mg", "PO", "daily"),
+    ],
+    "magnesium sulfate": [
+        ("1 g", "IV", "bolus"),
+        ("2 g", "IV", "bolus"),
+        ("4 g", "IV", "loading dose"),
+    ],
+    "calcium + vitamin d": [
+        ("500 mg Ca + 400 IU D", "PO", "daily"),
+        ("500 mg Ca + 1000 IU D", "PO", "BID"),
+        ("1000 mg Ca + 2000 IU D", "PO", "daily"),
+    ],
+    "onabotulinumtoxina": [
+        ("100 units", "IM", "q3mo"),
+        ("155 units", "IM", "q3mo"),
+        ("200 units", "IM", "q3mo"),
+    ],
 }
 
 
@@ -1028,10 +1289,46 @@ def generate_order_sentence(med_name, dose, route, frequency):
 
 
 # ---------------------------------------------------------------------------
+# Medication database fallback lookup
+# ---------------------------------------------------------------------------
+def lookup_dose_options_from_db(item_name):
+    """Look up dose options from the central medications.json database.
+
+    Returns a list of doseOption dicts (with 'text' and 'orderSentence')
+    or None if not found or only 1 option available.
+    """
+    if not _resolver_available:
+        return None
+
+    # Normalize the name the same way the resolver does
+    norm = normalize_med_name(item_name)
+
+    # Try direct lookup
+    options = _resolver.get_dose_options(norm)
+    if options and len(options) > 1:
+        return options
+
+    # Try progressively shorter prefixes (same strategy as extract_med_base_name)
+    words = norm.split()
+    for i in range(len(words), 0, -1):
+        partial = ' '.join(words[:i])
+        options = _resolver.get_dose_options(partial)
+        if options and len(options) > 1:
+            return options
+
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Dose options expansion
 # ---------------------------------------------------------------------------
 def expand_dose_options(item, med_name):
-    """Expand doseOptions for a medication item."""
+    """Expand doseOptions for a medication item.
+
+    Uses two-tier lookup:
+      1. Hardcoded MEDICATION_DOSES dict (176 manually curated medications)
+      2. Central medications.json database via MedicationResolver (936 medications)
+    """
     dosing = item.get('dosing', {})
     if not isinstance(dosing, dict):
         return None
@@ -1040,37 +1337,33 @@ def expand_dose_options(item, med_name):
     if not current_options:
         return None
 
-    # Find medication in database
-    base_name = extract_med_base_name(med_name)
-    if not base_name:
-        return None
-
-    dose_list = MEDICATION_DOSES.get(base_name)
-    if not dose_list:
-        return None
-
     # Already has multiple options
     if len(current_options) > 1:
         return None
 
-    # Get the item's route from dosing object
-    item_route = dosing.get('route', item.get('route', 'PO'))
+    # --- Tier 1: Try hardcoded MEDICATION_DOSES dict ---
+    base_name = extract_med_base_name(med_name)
+    if base_name:
+        dose_list = MEDICATION_DOSES.get(base_name)
+        if dose_list:
+            item_route = dosing.get('route', item.get('route', 'PO'))
+            new_options = []
+            for dose, route, freq in dose_list:
+                use_route = item_route if item_route and item_route != '-' else route
+                text = f"{dose} {freq}"
+                order_sentence = generate_order_sentence(base_name, dose, use_route, freq)
+                new_options.append({
+                    "text": text,
+                    "orderSentence": order_sentence
+                })
+            return new_options
 
-    # Generate new dose options
-    new_options = []
-    for dose, route, freq in dose_list:
-        # Use item's route if it differs from default
-        use_route = item_route if item_route and item_route != '-' else route
+    # --- Tier 2: Fall back to medications.json database ---
+    db_options = lookup_dose_options_from_db(med_name)
+    if db_options and len(db_options) > 1:
+        return db_options
 
-        text = f"{dose} {freq}"
-        order_sentence = generate_order_sentence(base_name, dose, use_route, freq)
-
-        new_options.append({
-            "text": text,
-            "orderSentence": order_sentence
-        })
-
-    return new_options
+    return None
 
 
 # ---------------------------------------------------------------------------

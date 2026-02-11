@@ -838,21 +838,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "250 mg daily",
+                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+              },
+              {
                 "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone 500 mg IV daily"
+                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
               },
               {
-                "text": "1000 mg daily",
-                "orderSentence": "Methylprednisolone 1000 mg IV daily"
-              },
-              {
-                "text": "1 g daily x3-5 days",
-                "orderSentence": "Methylprednisolone 1 g IV daily x3-5 days"
+                "text": "1000 mg daily x3-5 days",
+                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily for 3-5 days; infuse over 1-2 hours",
-            "orderSentence": "Methylprednisolone 500 mg IV daily"
+            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180); BP; mood/sleep; I/O; GI prophylaxis",
@@ -868,13 +868,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg IV/PO"
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg IV/PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Omeprazole 40 mg IV/PO daily"
               }
             ],
             "route": "IV/PO",
             "instructions": "40 mg IV/PO daily during steroid course and taper",
-            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg IV/PO"
+            "orderSentence": "Omeprazole 20 mg IV/PO daily"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -1216,13 +1220,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg",
-                "orderSentence": "Meclizine 25 mg PO"
+                "text": "12.5 mg q8h PRN",
+                "orderSentence": "Meclizine 12.5 mg PO q8h PRN"
+              },
+              {
+                "text": "25 mg q8h PRN",
+                "orderSentence": "Meclizine 25 mg PO q8h PRN"
+              },
+              {
+                "text": "50 mg q8h PRN",
+                "orderSentence": "Meclizine 50 mg PO q8h PRN"
               }
             ],
             "route": "PO",
             "instructions": "25 mg PO q8h PRN vertigo; max 75 mg/day",
-            "orderSentence": "Meclizine 25 mg PO"
+            "orderSentence": "Meclizine 12.5 mg PO q8h PRN"
           },
           "contraindications": "Concurrent anticholinergic use; urinary retention; glaucoma",
           "monitoring": "Sedation; anticholinergic effects",
@@ -1400,13 +1412,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg",
-                "orderSentence": "Sertraline 25 mg PO"
+                "text": "25 mg daily",
+                "orderSentence": "Sertraline 25 mg PO daily"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg PO daily"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline 100 mg PO daily"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Sertraline 150 mg PO daily"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Sertraline 200 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mg daily; increase by 25-50 mg q1-2wk; max 200 mg/day",
-            "orderSentence": "Sertraline 25 mg PO"
+            "orderSentence": "Sertraline 25 mg PO daily"
           },
           "contraindications": "Concurrent MAOIs; QT prolongation (rare)",
           "monitoring": "Suicidality monitoring; hyponatremia (SIADH); GI side effects",
@@ -1546,13 +1574,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "8 mg/kg",
-                "orderSentence": "Tocilizumab 8 mg/kg IV"
+                "text": "4 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
+              },
+              {
+                "text": "8 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 8 mg/kg IV q4wk"
               }
             ],
             "route": "IV",
             "instructions": "8 mg/kg IV every 4 weeks (max 800 mg/dose)",
-            "orderSentence": "Tocilizumab 8 mg/kg IV"
+            "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
           },
           "contraindications": "Active infection; hepatic impairment (ALT >5x ULN); diverticulitis; concurrent live vaccines",
           "monitoring": "CBC, LFTs, lipids q4-8 weeks; infection surveillance; GI perforation risk; neutropenia",
@@ -1721,13 +1753,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000-1200 mg calcium + 1000-2000 IU vitamin D",
-                "orderSentence": "Calcium + Vitamin D (bone protection) 1000-1200 mg calcium + 1000-2000 IU vitamin D PO"
+                "text": "500 mg Ca + 400 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
+              },
+              {
+                "text": "500 mg Ca + 1000 IU D BID",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 1000 IU D PO BID"
+              },
+              {
+                "text": "1000 mg Ca + 2000 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 2000 IU D PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day",
-            "orderSentence": "Calcium + Vitamin D (bone protection) 1000-1200 mg calcium + 1000-2000 IU vitamin D PO"
+            "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
           },
           "pretreatment": "25-OH Vitamin D level; calcium level; DEXA baseline if steroid use >3 months",
           "contraindications": "Hypercalcemia; kidney stones; hypervitaminosis D",

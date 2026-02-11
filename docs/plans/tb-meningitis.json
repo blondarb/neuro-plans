@@ -712,13 +712,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "650-1000 mg",
-                "orderSentence": "Acetaminophen 650-1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/IV q6h; max 3g/day (reduced from 4g due to concurrent hepatotoxic medications)",
-            "orderSentence": "Acetaminophen 650-1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Severe hepatic disease; concurrent RIPE therapy warrants reduced max dose (3g/day)",
           "monitoring": "Temperature; LFTs",
@@ -828,13 +840,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Pantoprazole 40 mg PO"
+                "text": "20 mg daily",
+                "orderSentence": "Pantoprazole 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Pantoprazole 40 mg PO daily"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Pantoprazole 40 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "40 mg IV/PO daily",
-            "orderSentence": "Pantoprazole 40 mg PO"
+            "orderSentence": "Pantoprazole 20 mg PO daily"
           },
           "contraindications": "Prolonged use C. diff risk",
           "monitoring": "GI symptoms",
@@ -850,13 +870,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-1.5 g/kg",
-                "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1-1.5 g/kg IV bolus; then 0.25-0.5 g/kg q4-6h; maintain serum osm <320",
-            "orderSentence": "Mannitol 20% 1-1.5 g/kg IV"
+            "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
           },
           "contraindications": "Anuria; renal failure",
           "monitoring": "Serum osmolality (<320); electrolytes; renal function; I/O",
@@ -872,13 +900,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mL",
-                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+                "text": "30 mL bolus over 15 min",
+                "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
               }
             ],
             "route": "IV",
             "instructions": "30 mL IV via central line over 10-20 min for acute herniation",
-            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+            "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
           },
           "contraindications": "No central access; hypernatremia (Na >160)",
           "monitoring": "Na (target 145-155); osmolality; neurologic exam",

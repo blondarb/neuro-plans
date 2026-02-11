@@ -737,13 +737,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "650-1000 mg",
-                "orderSentence": "Acetaminophen 650-1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/PR q6h; max 4g/day (2g if hepatic impairment)",
-            "orderSentence": "Acetaminophen 650-1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Severe hepatic disease",
           "monitoring": "Temperature q4h; LFTs if prolonged use",
@@ -889,13 +901,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Pantoprazole 40 mg IV"
+                "text": "20 mg daily",
+                "orderSentence": "Pantoprazole 20 mg IV daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Pantoprazole 40 mg IV daily"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Pantoprazole 40 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily",
-            "orderSentence": "Pantoprazole 40 mg IV"
+            "orderSentence": "Pantoprazole 20 mg IV daily"
           },
           "contraindications": "C. difficile risk with prolonged use",
           "monitoring": "GI symptoms",
@@ -1049,13 +1069,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150-500 mL",
-                "orderSentence": "Hypertonic saline 3% infusion 150-500 mL IV"
+                "text": "150 mL bolus over 20 min",
+                "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
+              },
+              {
+                "text": "250 mL over 30 min",
+                "orderSentence": "Hypertonic Saline 3% 250 mL IV over 30 min"
               }
             ],
             "route": "IV",
             "instructions": "150-500 mL IV bolus or continuous infusion 0.5-1 mL/kg/h; target Na 145-155",
-            "orderSentence": "Hypertonic saline 3% infusion 150-500 mL IV"
+            "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
           },
           "contraindications": "Hypernatremia, volume overload",
           "monitoring": "Serum sodium q4-6h, osmolality",
@@ -1391,13 +1415,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg",
-                "orderSentence": "Ezetimibe 10 mg PO"
+                "text": "10 mg daily",
+                "orderSentence": "Ezetimibe 10 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "10 mg PO daily; add if LDL not at goal on max statin",
-            "orderSentence": "Ezetimibe 10 mg PO"
+            "orderSentence": "Ezetimibe 10 mg PO daily"
           },
           "pretreatment": "-",
           "contraindications": "LFTs, lipid panel",

@@ -958,13 +958,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Omeprazole 40 mg PO"
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg PO daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Omeprazole 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "40 mg PO daily during steroid course and oral taper; IV if NPO",
-            "orderSentence": "Omeprazole 40 mg PO"
+            "orderSentence": "Omeprazole 20 mg PO daily"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -1084,13 +1088,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g/kg",
-                "orderSentence": "Mannitol 1 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1 g/kg IV bolus over 15-20 minutes; may repeat 0.5 g/kg q6h; maintain serum osmolality <320 mOsm/kg",
-            "orderSentence": "Mannitol 1 g/kg IV"
+            "orderSentence": "Mannitol 0.5 g/kg IV q6h"
           },
           "contraindications": "Anuria; severe dehydration; active intracranial hemorrhage",
           "monitoring": "Serum osmolality q6h; electrolytes; renal function; I/O",
@@ -1106,13 +1118,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mL",
-                "orderSentence": "Hypertonic saline 3% 250 mL IV"
+                "text": "150 mL bolus over 20 min",
+                "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
+              },
+              {
+                "text": "250 mL over 30 min",
+                "orderSentence": "Hypertonic Saline 3% 250 mL IV over 30 min"
               }
             ],
             "route": "IV",
             "instructions": "250 mL 3% NaCl IV over 15-30 minutes; may repeat; target sodium 145-155 mEq/L",
-            "orderSentence": "Hypertonic saline 3% 250 mL IV"
+            "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
           },
           "contraindications": "Hypernatremia >155 mEq/L; severe CHF",
           "monitoring": "Sodium q2-4h; serum osmolality; central line preferred for concentrations >3%",
@@ -1350,13 +1366,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mcg",
-                "orderSentence": "Levothyroxine 25 mcg PO"
+                "text": "25 mcg daily",
+                "orderSentence": "Levothyroxine 25 mcg PO daily"
+              },
+              {
+                "text": "50 mcg daily",
+                "orderSentence": "Levothyroxine 50 mcg PO daily"
+              },
+              {
+                "text": "75 mcg daily",
+                "orderSentence": "Levothyroxine 75 mcg PO daily"
+              },
+              {
+                "text": "100 mcg daily",
+                "orderSentence": "Levothyroxine 100 mcg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 25-50 mcg daily (lower in elderly/cardiac disease); titrate q6-8 weeks by 12.5-25 mcg; target free T4 in upper half of normal range (NOT TSH-guided for central hypothyroidism)",
-            "orderSentence": "Levothyroxine 25 mcg PO"
+            "orderSentence": "Levothyroxine 25 mcg PO daily"
           },
           "contraindications": "Adrenal insufficiency (must correct cortisol FIRST); acute MI",
           "monitoring": "Free T4 (NOT TSH) q6-8 weeks; monitor for adrenal crisis if cortisol not replaced",
@@ -1438,13 +1466,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg",
-                "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+                "text": "500 mg Ca + 400 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
+              },
+              {
+                "text": "500 mg Ca + 1000 IU D BID",
+                "orderSentence": "Calcium + Vitamin D 500 mg Ca + 1000 IU D PO BID"
+              },
+              {
+                "text": "1000 mg Ca + 2000 IU D daily",
+                "orderSentence": "Calcium + Vitamin D 1000 mg Ca + 2000 IU D PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Calcium 500-600 mg PO BID + Vitamin D 800-1000 IU daily; HOLD vitamin D if serum calcium elevated",
-            "orderSentence": "Calcium + Vitamin D (bone protection) 500 mg PO"
+            "orderSentence": "Calcium + Vitamin D 500 mg Ca + 400 IU D PO daily"
           },
           "contraindications": "Hypercalcemia; hypercalciuria; nephrolithiasis (avoid vitamin D in active sarcoid hypercalcemia)",
           "monitoring": "Serum calcium; 25-OH vitamin D; 24h urine calcium; DEXA if steroids >3 months",
@@ -1460,13 +1496,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg",
-                "orderSentence": "Acetazolamide 250 mg PO"
+                "text": "125 mg BID",
+                "orderSentence": "Acetazolamide 125 mg PO BID"
+              },
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Acetazolamide 250 mg PO BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Acetazolamide 500 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg BID; may increase to 500 mg BID; max 2000 mg/day",
-            "orderSentence": "Acetazolamide 250 mg PO"
+            "orderSentence": "Acetazolamide 125 mg PO BID"
           },
           "contraindications": "Sulfa allergy; severe renal/hepatic failure; hypokalemia; metabolic acidosis",
           "monitoring": "BMP (potassium, bicarbonate); renal function; paresthesias; kidney stones",

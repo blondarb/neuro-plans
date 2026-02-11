@@ -699,21 +699,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "250 mg daily",
+                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+              },
+              {
                 "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone 500 mg IV daily"
+                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
               },
               {
-                "text": "1000 mg daily",
-                "orderSentence": "Methylprednisolone 1000 mg IV daily"
-              },
-              {
-                "text": "1 g daily x3-5 days",
-                "orderSentence": "Methylprednisolone 1 g IV daily x3-5 days"
+                "text": "1000 mg daily x3-5 days",
+                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 3-5 days",
-            "orderSentence": "Methylprednisolone 500 mg IV daily"
+            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
           },
           "contraindications": "Active untreated infection, uncontrolled diabetes",
           "monitoring": "Glucose monitoring Q6h; BP; GI prophylaxis; insomnia management",
@@ -815,21 +815,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200 mg daily",
-                "orderSentence": "Magnesium 200 mg IV daily"
+                "text": "1 g bolus",
+                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
               },
               {
-                "text": "400 mg daily",
-                "orderSentence": "Magnesium 400 mg IV daily"
+                "text": "2 g bolus",
+                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
               },
               {
-                "text": "600 mg daily",
-                "orderSentence": "Magnesium 600 mg IV daily"
+                "text": "4 g loading dose",
+                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV over 15-30 min; follow with 4-8 g over 24h",
-            "orderSentence": "Magnesium 200 mg IV daily"
+            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
           },
           "contraindications": "Myasthenia gravis; severe renal impairment",
           "monitoring": "Cardiac monitor; deep tendon reflexes; magnesium level q6-8h; respiratory status",
@@ -1115,13 +1115,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 patch",
-                "orderSentence": "Capsaicin 8% patch (Qutenza) 1 patch Transdermal"
+                "text": "1 patch q3mo",
+                "orderSentence": "Capsaicin 8% Patch 1 patch Transdermal q3mo"
+              },
+              {
+                "text": "2 patches q3mo",
+                "orderSentence": "Capsaicin 8% Patch 2 patches Transdermal q3mo"
               }
             ],
             "route": "Transdermal",
             "instructions": "Applied by healthcare provider for 30-60 minutes; repeat every 3 months",
-            "orderSentence": "Capsaicin 8% patch (Qutenza) 1 patch Transdermal"
+            "orderSentence": "Capsaicin 8% Patch 1 patch Transdermal q3mo"
           },
           "contraindications": "Open wounds; avoid mucous membranes",
           "monitoring": "Apply in clinic; pretreat area with topical lidocaine",
@@ -1137,13 +1141,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1-3 patches",
-                "orderSentence": "Lidocaine 5% patch 1-3 patches Transdermal"
+                "text": "1 patch 12h on/12h off",
+                "orderSentence": "Lidocaine 5% Patch 1 patch Transdermal 12h on/12h off"
+              },
+              {
+                "text": "2 patches 12h on/12h off",
+                "orderSentence": "Lidocaine 5% Patch 2 patches Transdermal 12h on/12h off"
+              },
+              {
+                "text": "3 patches 12h on/12h off",
+                "orderSentence": "Lidocaine 5% Patch 3 patches Transdermal 12h on/12h off"
               }
             ],
             "route": "Transdermal",
             "instructions": "Apply 1-3 patches to painful area for 12 hours on, 12 hours off",
-            "orderSentence": "Lidocaine 5% patch 1-3 patches Transdermal"
+            "orderSentence": "Lidocaine 5% Patch 1 patch Transdermal 12h on/12h off"
           },
           "contraindications": "Severe hepatic impairment; application to broken skin",
           "monitoring": "Minimal systemic absorption; local irritation",
@@ -1315,13 +1327,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400 mg",
-                "orderSentence": "Ibuprofen 400 mg PO"
+                "text": "200 mg q6h PRN",
+                "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
+              },
+              {
+                "text": "400 mg q6h PRN",
+                "orderSentence": "Ibuprofen 400 mg PO q6h PRN"
+              },
+              {
+                "text": "600 mg q8h",
+                "orderSentence": "Ibuprofen 600 mg PO q8h"
+              },
+              {
+                "text": "800 mg q8h",
+                "orderSentence": "Ibuprofen 800 mg PO q8h"
               }
             ],
             "route": "PO",
             "instructions": "400-600 mg q6-8h PRN; max 2400 mg/day; limit duration",
-            "orderSentence": "Ibuprofen 400 mg PO"
+            "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
           },
           "contraindications": "GI bleeding, renal impairment, concurrent anticoagulation, cardiovascular disease",
           "monitoring": "Renal function, GI symptoms",

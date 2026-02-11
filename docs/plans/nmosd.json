@@ -635,21 +635,21 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "250 mg daily",
+                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+              },
+              {
                 "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone 500 mg IV daily"
+                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
               },
               {
-                "text": "1000 mg daily",
-                "orderSentence": "Methylprednisolone 1000 mg IV daily"
-              },
-              {
-                "text": "1 g daily x3-5 days",
-                "orderSentence": "Methylprednisolone 1 g IV daily x3-5 days"
+                "text": "1000 mg daily x3-5 days",
+                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily for 5 days; infuse over 1-2 hours; follow with oral prednisone taper",
-            "orderSentence": "Methylprednisolone 500 mg IV daily"
+            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180); BP; mood/sleep; GI prophylaxis",
@@ -665,13 +665,17 @@
           "dosing": {
             "doseOptions": [
               {
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg PO daily"
+              },
+              {
                 "text": "40 mg daily",
-                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg daily PO"
+                "orderSentence": "Omeprazole 40 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "40 mg PO/IV daily during steroid course and taper",
-            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg daily PO"
+            "orderSentence": "Omeprazole 20 mg PO daily"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -998,12 +1002,16 @@
             "doseOptions": [
               {
                 "text": "0.4 mg daily",
-                "orderSentence": "Tamsulosin 0.4 mg daily PO"
+                "orderSentence": "Tamsulosin 0.4 mg PO daily"
+              },
+              {
+                "text": "0.8 mg daily",
+                "orderSentence": "Tamsulosin 0.8 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "0.4 mg PO daily; may increase to 0.8 mg if needed",
-            "orderSentence": "Tamsulosin 0.4 mg daily PO"
+            "orderSentence": "Tamsulosin 0.4 mg PO daily"
           },
           "contraindications": "Orthostatic hypotension",
           "monitoring": "BP; dizziness; intraoperative floppy iris (inform ophthalmology)",
@@ -1019,13 +1027,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg",
-                "orderSentence": "Modafinil 100 mg PO"
+                "text": "100 mg daily",
+                "orderSentence": "Modafinil 100 mg PO daily"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Modafinil 200 mg PO daily"
+              },
+              {
+                "text": "400 mg daily",
+                "orderSentence": "Modafinil 400 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg qAM; may increase to 200 mg; avoid afternoon dosing",
-            "orderSentence": "Modafinil 100 mg PO"
+            "orderSentence": "Modafinil 100 mg PO daily"
           },
           "contraindications": "Cardiac arrhythmia; hepatic impairment",
           "monitoring": "BP; HR; insomnia; headache",
@@ -1041,13 +1057,29 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg",
-                "orderSentence": "Sertraline 50 mg PO"
+                "text": "25 mg daily",
+                "orderSentence": "Sertraline 25 mg PO daily"
+              },
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg PO daily"
+              },
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Sertraline 100 mg PO daily"
+              },
+              {
+                "text": "150 mg daily",
+                "orderSentence": "Sertraline 150 mg PO daily"
+              },
+              {
+                "text": "200 mg daily",
+                "orderSentence": "Sertraline 200 mg PO daily"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg daily; titrate q2-4wk; max 200 mg/day",
-            "orderSentence": "Sertraline 50 mg PO"
+            "orderSentence": "Sertraline 25 mg PO daily"
           },
           "contraindications": "Concurrent MAOIs; QTc prolongation",
           "monitoring": "Suicidality monitoring (first 8 weeks); serotonin syndrome; QTc",
@@ -1219,13 +1251,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "900 mg",
-                "orderSentence": "**Eculizumab (Soliris)** 900 mg IV"
+                "text": "900 mg weekly x4 then 1200 mg q2wk",
+                "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
               }
             ],
             "route": "IV",
             "instructions": "Induction: 900 mg IV weekly x 4 weeks; then 1200 mg IV at week 5; maintenance: 1200 mg IV every 2 weeks",
-            "orderSentence": "**Eculizumab (Soliris)** 900 mg IV"
+            "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
           },
           "pretreatment": "Meningococcal vaccination (ACWY + serogroup B) ≥2 weeks before first dose; CBC; hepatitis B/C screen; quantitative Ig",
           "contraindications": "Unresolved Neisseria meningitidis infection; not vaccinated against meningococcal disease",
@@ -1406,13 +1438,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "8 mg/kg",
-                "orderSentence": "Tocilizumab (off-label) 8 mg/kg IV"
+                "text": "4 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
+              },
+              {
+                "text": "8 mg/kg q4wk",
+                "orderSentence": "Tocilizumab 8 mg/kg IV q4wk"
               }
             ],
             "route": "IV",
             "instructions": "8 mg/kg IV every 4 weeks (max 800 mg) or 162 mg SC weekly",
-            "orderSentence": "Tocilizumab (off-label) 8 mg/kg IV"
+            "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
           },
           "pretreatment": "Active infection; hepatic impairment; diverticulitis",
           "contraindications": "CBC, LFTs, lipids q4-8 weeks; infection; GI perforation risk; neutropenia",

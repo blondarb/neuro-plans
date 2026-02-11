@@ -628,13 +628,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g/kg",
-                "orderSentence": "Mannitol 20% (CPT 96365) 1 g/kg IV"
+                "text": "0.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
+              },
+              {
+                "text": "1 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1 g/kg IV q6h"
+              },
+              {
+                "text": "1.5 g/kg q6h",
+                "orderSentence": "Mannitol 20% 1.5 g/kg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "1-1.5 g/kg IV bolus over 20 min; then 0.25-0.5 g/kg q4-6h PRN for ICP >22; hold if serum osm >320",
-            "orderSentence": "Mannitol 20% (CPT 96365) 1 g/kg IV"
+            "orderSentence": "Mannitol 20% 0.5 g/kg IV q6h"
           },
           "contraindications": "Anuria; severe dehydration; active intracranial bleeding",
           "monitoring": "Serum osmolality (<320 mOsm/kg); osmolar gap; renal function; serum Na; I/O",
@@ -650,13 +658,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mL",
-                "orderSentence": "Hypertonic saline 23.4% (CPT 96365) 30 mL IV"
+                "text": "30 mL bolus over 15 min",
+                "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
               }
             ],
             "route": "IV",
             "instructions": "30 mL via central line over 10-20 min; target Na 145-155 mEq/L; repeat PRN",
-            "orderSentence": "Hypertonic saline 23.4% (CPT 96365) 30 mL IV"
+            "orderSentence": "Hypertonic Saline 23.4% 30 mL IV bolus over 15 min"
           },
           "contraindications": "No central access (causes tissue necrosis peripherally)",
           "monitoring": "Serum Na q4-6h; osmolality; central line access confirmed",
@@ -726,13 +734,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1000 mg",
-                "orderSentence": "Acetaminophen 1000 mg PO"
+                "text": "325 mg q6h PRN",
+                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+              },
+              {
+                "text": "500 mg q6h PRN",
+                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
+              },
+              {
+                "text": "650 mg q6h PRN",
+                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
+              },
+              {
+                "text": "1000 mg q6h PRN",
+                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/IV q6h; max 4 g/day; IV route if unable to take PO",
-            "orderSentence": "Acetaminophen 1000 mg PO"
+            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
           },
           "contraindications": "Severe hepatic disease (caution with concurrent albendazole hepatotoxicity)",
           "monitoring": "Temperature; LFTs (especially with concurrent albendazole)",
@@ -774,13 +794,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "40 mg",
-                "orderSentence": "Pantoprazole (CPT 96374) 40 mg IV"
+                "text": "20 mg daily",
+                "orderSentence": "Pantoprazole 20 mg IV daily"
+              },
+              {
+                "text": "40 mg daily",
+                "orderSentence": "Pantoprazole 40 mg IV daily"
+              },
+              {
+                "text": "40 mg BID",
+                "orderSentence": "Pantoprazole 40 mg IV BID"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily; discontinue when steroids stopped and no longer in ICU",
-            "orderSentence": "Pantoprazole (CPT 96374) 40 mg IV"
+            "orderSentence": "Pantoprazole 20 mg IV daily"
           },
           "contraindications": "Long-term use risks (C. diff, hypomagnesemia); only while on steroids",
           "monitoring": "GI symptoms; discontinue when steroids tapered",

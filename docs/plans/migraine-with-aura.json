@@ -316,13 +316,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg",
-                "orderSentence": "Ketorolac 30 mg IV"
+                "text": "15 mg q6h",
+                "orderSentence": "Ketorolac 15 mg IV q6h"
+              },
+              {
+                "text": "30 mg q6h",
+                "orderSentence": "Ketorolac 30 mg IV q6h"
               }
             ],
             "route": "IV",
             "instructions": "30 mg IV (15 mg if >65y, renal impairment, or <50 kg); max 5 days NSAIDs",
-            "orderSentence": "Ketorolac 30 mg IV"
+            "orderSentence": "Ketorolac 15 mg IV q6h"
           },
           "contraindications": "Renal impairment (CrCl <30); active GI bleed; aspirin/NSAID allergy; third trimester",
           "monitoring": "Renal function if repeated dosing",
@@ -398,13 +402,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg",
-                "orderSentence": "Diphenhydramine 25 mg IV"
+                "text": "25 mg q6h PRN",
+                "orderSentence": "Diphenhydramine 25 mg IV q6h PRN"
+              },
+              {
+                "text": "50 mg q6h PRN",
+                "orderSentence": "Diphenhydramine 50 mg IV q6h PRN"
               }
             ],
             "route": "IV",
             "instructions": "25-50 mg IV given concurrently with dopamine antagonist",
-            "orderSentence": "Diphenhydramine 25 mg IV"
+            "orderSentence": "Diphenhydramine 25 mg IV q6h PRN"
           },
           "contraindications": "Narrow-angle glaucoma; urinary retention; severe prostatic hypertrophy",
           "monitoring": "Sedation; anticholinergic effects",
@@ -420,21 +428,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200 mg daily",
-                "orderSentence": "Magnesium 200 mg IV daily"
+                "text": "1 g bolus",
+                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
               },
               {
-                "text": "400 mg daily",
-                "orderSentence": "Magnesium 400 mg IV daily"
+                "text": "2 g bolus",
+                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
               },
               {
-                "text": "600 mg daily",
-                "orderSentence": "Magnesium 600 mg IV daily"
+                "text": "4 g loading dose",
+                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
               }
             ],
             "route": "IV",
             "instructions": "2 g IV in 50 mL NS over 20-30 min; may repeat x1 after 2 hr",
-            "orderSentence": "Magnesium 200 mg IV daily"
+            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
           },
           "contraindications": "Heart block; severe hypermagnesemia; myasthenia gravis; severe renal impairment",
           "monitoring": "BP, HR during infusion; flushing is common and benign",
@@ -706,13 +714,25 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "400 mg",
-                "orderSentence": "Ibuprofen 400 mg PO"
+                "text": "200 mg q6h PRN",
+                "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
+              },
+              {
+                "text": "400 mg q6h PRN",
+                "orderSentence": "Ibuprofen 400 mg PO q6h PRN"
+              },
+              {
+                "text": "600 mg q8h",
+                "orderSentence": "Ibuprofen 600 mg PO q8h"
+              },
+              {
+                "text": "800 mg q8h",
+                "orderSentence": "Ibuprofen 800 mg PO q8h"
               }
             ],
             "route": "PO",
             "instructions": "400-800 mg PO at onset; max 2400 mg/day",
-            "orderSentence": "Ibuprofen 400 mg PO"
+            "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
           },
           "contraindications": "Renal impairment; active GI bleed; aspirin/NSAID allergy; third trimester",
           "monitoring": "GI symptoms; renal function if prolonged use",
@@ -728,13 +748,17 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "550 mg",
-                "orderSentence": "Naproxen sodium 550 mg PO"
+                "text": "220 mg BID",
+                "orderSentence": "Naproxen Sodium 220 mg PO BID"
+              },
+              {
+                "text": "550 mg BID",
+                "orderSentence": "Naproxen Sodium 550 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "550 mg PO at onset; may add 275 mg in 12 hr; max 1375 mg day 1, then 1100 mg/day",
-            "orderSentence": "Naproxen sodium 550 mg PO"
+            "orderSentence": "Naproxen Sodium 220 mg PO BID"
           },
           "contraindications": "Renal impairment; active GI bleed; aspirin/NSAID allergy",
           "monitoring": "GI symptoms",
@@ -1381,13 +1405,21 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg",
-                "orderSentence": "Acetazolamide 250 mg PO"
+                "text": "125 mg BID",
+                "orderSentence": "Acetazolamide 125 mg PO BID"
+              },
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Acetazolamide 250 mg PO BID"
+              },
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Acetazolamide 500 mg PO BID"
               }
             ],
             "route": "PO",
             "instructions": "Start 250 mg BID; may increase to 500 mg BID",
-            "orderSentence": "Acetazolamide 250 mg PO"
+            "orderSentence": "Acetazolamide 125 mg PO BID"
           },
           "pretreatment": "None",
           "contraindications": "Sulfa allergy; severe hepatic/renal disease; hypokalemia; acidosis",
