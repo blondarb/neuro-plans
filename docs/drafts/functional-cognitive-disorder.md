@@ -1,7 +1,7 @@
 ---
 title: "Functional Cognitive Disorder (FCD)"
 description: "Clinical decision support for evaluation and management of functional cognitive disorder"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,8 +21,9 @@ tags:
 
 # Functional Cognitive Disorder (FCD)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
+**REVISED:** February 11, 2026
 **STATUS:** Draft
 
 ---
@@ -125,7 +126,7 @@ SECTION A: ACTION ITEMS
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Reassurance and de-escalation | - | Acute cognitive complaint presentation in ED; patient distress about memory loss | N/A :: - :: - :: Use calm, validating language; "I can see how distressing these symptoms are"; avoid dismissive statements; do not say "there's nothing wrong"; provide clear plan for outpatient workup | None | Patient anxiety level; understanding of plan | STAT | STAT | ROUTINE | STAT |
 | Exclude delirium/acute organic cause | - | Acute confusion or cognitive change in ED/inpatient setting; must differentiate FCD exacerbation from delirium | N/A :: - :: - :: Complete metabolic workup; medication review; assess for infection, intoxication, metabolic derangement; CAM score for delirium; if negative for organic cause and consistent with known FCD pattern, reassure | None | Mental status; vital signs; CAM score | STAT | STAT | - | STAT |
-| Lorazepam (ONLY if severe panic/acute anxiety with cognitive symptoms) | IV/PO | Severe acute anxiety with functional cognitive decompensation; NOT for routine FCD | 0.5 mg PRN; 1 mg PRN :: PO :: PRN :: 0.5-1 mg PO or IV x1 PRN for severe anxiety only; do NOT use routinely; avoid repeated dosing; transition to non-benzodiazepine anxiolytic | Respiratory depression; acute alcohol intoxication; myasthenia gravis | Respiratory status; sedation level; do not continue beyond acute episode | URGENT | URGENT | - | URGENT |
+| Lorazepam (ONLY if severe panic/acute anxiety with cognitive symptoms) | IV/PO | Severe acute anxiety with functional cognitive decompensation; NOT for routine FCD | 0.5 mg :: PO :: PRN :: 0.5-1 mg PO or IV x1 PRN for severe anxiety only; do NOT use routinely; avoid repeated dosing; transition to non-benzodiazepine anxiolytic | Respiratory depression; acute alcohol intoxication; myasthenia gravis | Respiratory status; sedation level; do not continue beyond acute episode | URGENT | URGENT | - | URGENT |
 
 *Note: FCD rarely presents as an acute emergency. Most ED presentations involve patients concerned about "sudden memory loss" or family concerned about cognitive decline. The key acute intervention is: (1) exclude delirium and organic causes, (2) provide reassurance, and (3) arrange appropriate outpatient evaluation. Avoid excessive acute testing that reinforces illness anxiety.*
 
@@ -157,12 +158,12 @@ SECTION A: ACTION ITEMS
 | Escitalopram | PO | Comorbid depression and/or anxiety; better tolerated in elderly | 10 mg daily :: PO :: daily :: Start 5 mg daily x 1 week in elderly; then 10 mg daily; max 20 mg/day (10 mg if >65 years) | Concurrent MAOIs; QTc prolongation (dose-dependent) | QTc if >65 years or cardiac risk; suicidality; hyponatremia in elderly | - | ROUTINE | ROUTINE | - |
 | Duloxetine | PO | Comorbid depression + chronic pain (fibromyalgia, chronic fatigue -- common FCD comorbidities) | 30 mg daily :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma | BP; LFTs; serotonin syndrome; discontinuation syndrome (taper slowly) | - | ROUTINE | ROUTINE | - |
 | Venlafaxine XR | PO | Comorbid depression + anxiety refractory to SSRI; somatic symptom burden | 37.5 mg daily :: PO :: daily :: Start 37.5 mg daily x 1 week; titrate q1wk by 37.5 mg; target 75-150 mg/day; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP; HR; discontinuation syndrome (taper very slowly -- long taper schedule) | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Comorbid depression + insomnia + poor appetite (common in anxious FCD patients) | 7.5 mg qHS; 15 mg qHS :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30 mg qHS; paradoxically more sedating at lower doses; max 45 mg/day | None significant | Weight gain; sedation; lipid profile; CBC (rare agranulocytosis) | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia (common perpetuating factor in FCD; poor sleep worsens cognition) | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: qHS :: Start 25-50 mg PO qHS; titrate q3-5d; max 100 mg qHS for insomnia | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation; QTc | - | ROUTINE | ROUTINE | - |
-| Melatonin | PO | Insomnia; circadian rhythm disruption contributing to daytime cognitive fog | 3 mg qHS; 5 mg qHS :: PO :: qHS :: 3-5 mg PO 30-60 min before desired bedtime; use immediate-release formulation | None significant | Sleep quality; daytime alertness | - | ROUTINE | ROUTINE | - |
-| Hydroxyzine | PO | Acute situational anxiety; PRN anxiolytic without benzodiazepine risk | 25 mg q6h PRN; 50 mg q6h PRN :: PO :: q6h PRN :: 25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation; anticholinergic effects (caution in elderly) | URGENT | URGENT | ROUTINE | - |
-| Propranolol | PO | Somatic anxiety symptoms (palpitations, tremor) contributing to cognitive performance anxiety | 10 mg BID; 20 mg BID :: PO :: BID :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID; helpful before cognitively demanding situations | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm | - | ROUTINE | ROUTINE | - |
-| Buspirone | PO | Generalized anxiety disorder comorbidity; alternative to benzodiazepines for chronic anxiety | 5 mg TID; 10 mg TID :: PO :: TID :: Start 5 mg PO TID; titrate q2-3d by 5 mg/day; max 60 mg/day; takes 2-4 weeks for full effect | Concurrent MAOIs | Dizziness; headache; serotonin syndrome if combined with SSRI/SNRI | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Comorbid depression + insomnia + poor appetite (common in anxious FCD patients) | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg qHS; may increase to 30 mg qHS; paradoxically more sedating at lower doses; max 45 mg/day | None significant | Weight gain; sedation; lipid profile; CBC (rare agranulocytosis) | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia (common perpetuating factor in FCD; poor sleep worsens cognition) | 25 mg :: PO :: qHS :: Start 25-50 mg PO qHS; titrate q3-5d; max 100 mg qHS for insomnia | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation; QTc | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Insomnia; circadian rhythm disruption contributing to daytime cognitive fog | 3 mg :: PO :: qHS :: 3-5 mg PO 30-60 min before desired bedtime; use immediate-release formulation; max 5 mg/day | None significant | Sleep quality; daytime alertness | - | ROUTINE | ROUTINE | - |
+| Hydroxyzine | PO | Acute situational anxiety; PRN anxiolytic without benzodiazepine risk | 25 mg :: PO :: q6h PRN :: 25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation; anticholinergic effects (caution in elderly) | URGENT | URGENT | ROUTINE | - |
+| Propranolol | PO | Somatic anxiety symptoms (palpitations, tremor) contributing to cognitive performance anxiety | 10 mg :: PO :: BID :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID; helpful before cognitively demanding situations | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm | - | ROUTINE | ROUTINE | - |
+| Buspirone | PO | Generalized anxiety disorder comorbidity; alternative to benzodiazepines for chronic anxiety | 5 mg :: PO :: TID :: Start 5 mg PO TID; titrate q2-3d by 5 mg/day; max 60 mg/day; takes 2-4 weeks for full effect | Concurrent MAOIs | Dizziness; headache; serotonin syndrome if combined with SSRI/SNRI | - | ROUTINE | ROUTINE | - |
 
 *Note: There is NO medication that directly treats FCD. Pharmacotherapy targets COMORBIDITIES (depression, anxiety, insomnia, pain) that PERPETUATE cognitive complaints. CRITICAL: Do NOT prescribe cholinesterase inhibitors (donepezil, rivastigmine, galantamine) or memantine for FCD -- these are ineffective, cause unnecessary side effects, and reinforce the false belief that the patient has dementia. If a patient with FCD is already on a cholinesterase inhibitor, taper and discontinue with clear explanation.*
 
@@ -355,6 +356,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Fixed structured dosing format across pharmacologic sections (3A, 3D) to use `[dose] :: [route] :: [frequency] :: [instructions]` 4-field format
+- Normalized first dose field to single starting dose (removed dose ranges from first field) for lorazepam, mirtazapine, trazodone, melatonin, hydroxyzine, propranolol, buspirone
+- Added max dose to melatonin full instructions
 
 **v1.0 (February 11, 2026)**
 - Initial creation
