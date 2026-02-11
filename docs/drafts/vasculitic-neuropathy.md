@@ -1,7 +1,7 @@
 ---
 title: "Vasculitic Neuropathy"
 description: "Clinical decision support for evaluation and management of vasculitic neuropathy"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Vasculitic Neuropathy
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Revised per checker feedback
+**STATUS:** Revised — stress-dose steroids, ANCA HOSP coverage, minor setting gaps fixed
 
 ---
 
@@ -172,6 +172,7 @@ tags:
 | Senna | PO | Constipation | 8.6-17.2 mg :: PO :: qHS :: 8.6-17.2 mg qHS; max 34.4 mg/day | Intestinal obstruction; acute abdominal pain | Cramping; bowel function | - | ROUTINE | ROUTINE | - |
 | Trazodone | PO | Insomnia with chronic pain | 25-50 mg :: PO :: qHS :: Start 25-50 mg qHS; increase to 100-150 mg; max 200 mg qHS | Concurrent MAOIs; QT prolongation | QTc; priapism (rare); sedation | - | ROUTINE | ROUTINE | - |
 | Melatonin | PO | Insomnia (adjunct; non-pharmacologic preferred) | 3-5 mg :: PO :: qHS :: 3-5 mg qHS 30 minutes before bed | None significant | Generally well-tolerated | - | ROUTINE | ROUTINE | - |
+| Hydrocortisone (stress-dose) | IV | Adrenal crisis prevention in patients on chronic corticosteroids presenting with acute illness, surgery, or hemodynamic instability | 100 mg :: IV :: q8h :: 100 mg IV q8h; taper over 1-3 days as acute stressor resolves; resume home corticosteroid dose once stable | Active adrenal insufficiency already being treated at higher doses | BP; blood glucose; electrolytes; clinical response; taper to home steroid dose | STAT | STAT | - | STAT |
 
 ### 3C. Maintenance/Chronic Immunosuppression
 
@@ -206,7 +207,7 @@ tags:
 | Surgery/pathology for combined nerve and muscle biopsy (sural + gastrocnemius preferred) to confirm vasculitic neuropathy diagnosis | - | ROUTINE | ROUTINE | - |
 | Physical therapy for strengthening, gait training, and fall prevention given motor weakness from nerve infarction | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for hand function optimization and adaptive equipment given frequent upper extremity involvement | - | ROUTINE | ROUTINE | - |
-| Pain management referral for refractory neuropathic pain not responding to first-line agents | - | - | ROUTINE | - |
+| Pain management referral for refractory neuropathic pain not responding to first-line agents | - | ROUTINE | ROUTINE | - |
 | Infectious disease consultation before initiating immunosuppression if hepatitis B/C positive or other active infection | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient Instructions
@@ -225,7 +226,7 @@ tags:
 |----------------|:--:|:----:|:---:|:---:|
 | Bone density protection: calcium 1200 mg + vitamin D 1000 IU daily while on chronic corticosteroids; consider bisphosphonate if prednisone ≥7.5 mg daily for >3 months | - | ROUTINE | ROUTINE | - |
 | Pneumocystis prophylaxis with trimethoprim-sulfamethoxazole while on cyclophosphamide or high-dose steroids combined with other immunosuppression | - | ROUTINE | ROUTINE | - |
-| Annual influenza and pneumococcal vaccination; avoid live vaccines while immunosuppressed; COVID-19 vaccination per current guidelines | - | - | ROUTINE | - |
+| Annual influenza and pneumococcal vaccination; avoid live vaccines while immunosuppressed; COVID-19 vaccination per current guidelines; assess vaccination status during admission | - | ROUTINE | ROUTINE | - |
 | Smoking cessation to reduce vascular inflammation and improve overall cardiovascular health | - | ROUTINE | ROUTINE | - |
 | Hepatitis B reactivation monitoring if HBcAb positive and receiving rituximab or other immunosuppression; antiviral prophylaxis as indicated | - | ROUTINE | ROUTINE | - |
 
@@ -254,7 +255,7 @@ tags:
 | CBC with differential | Q1-2wk during induction; monthly during maintenance | WBC >4000; ANC >1500; platelets >100K | Hold cytotoxic agent if WBC <4000 or ANC <1500; G-CSF if severe neutropenia | STAT | ROUTINE | ROUTINE | STAT |
 | ESR / CRP | Each visit | Normalizing trend | If rising, assess for disease flare vs infection | - | ROUTINE | ROUTINE | - |
 | Renal function (BUN, Cr, UA) | Q2wk during induction; monthly maintenance | Stable or improving creatinine; no active sediment | Nephrology reassessment; adjust immunosuppression; evaluate for renal flare | STAT | ROUTINE | ROUTINE | STAT |
-| ANCA titers (PR3 or MPO) | Q3-6 months if AAV | Declining or negative | Rising titers may precede clinical flare; intensify monitoring | - | - | ROUTINE | - |
+| ANCA titers (PR3 or MPO) | Q3-6 months if AAV; baseline at diagnosis | Declining or negative | Rising titers may precede clinical flare; intensify monitoring; obtain baseline in newly diagnosed inpatients | - | ROUTINE | ROUTINE | - |
 | Hepatic function (LFTs) | Monthly during immunosuppression | Normal transaminases | Dose-reduce or hold hepatotoxic agent; evaluate for drug-induced liver injury | - | ROUTINE | ROUTINE | - |
 | Urinalysis with microscopy | Q1-2wk during induction; monthly maintenance | No hematuria, proteinuria, or casts | Urgent nephrology evaluation for new active sediment | STAT | ROUTINE | ROUTINE | STAT |
 | Blood glucose / HbA1c | Q3 months on steroids | Fasting glucose <126; HbA1c <7% | Add or intensify glucose-lowering therapy | - | ROUTINE | ROUTINE | - |
@@ -307,6 +308,12 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 11, 2026)**
+- Added stress-dose hydrocortisone (100 mg IV q8h) to 3B Autonomic/GI/Other Symptoms for adrenal crisis prevention in patients on chronic corticosteroids presenting with acute illness or surgery (ED/ICU coverage)
+- Added HOSP coverage for ANCA titers (Section 6 Monitoring) for baseline in newly diagnosed inpatients
+- Added HOSP coverage for pain management referral (Section 4A)
+- Added HOSP coverage for vaccination assessment during admission (Section 4C)
 
 **v1.1 (February 11, 2026)**
 - Restructured Section 3 to standard 3A-3D format: 3A=Acute/Emergent, 3B=Symptomatic, 3C=Maintenance/Chronic, 3D=Disease-Modifying Therapy
