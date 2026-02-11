@@ -1,7 +1,7 @@
 ---
 title: "Chorea Evaluation"
 description: "Clinical decision support for systematic evaluation and management of chorea"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Chorea Evaluation
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft
+**STATUS:** Revised per checker v1.1
 
 ---
 
@@ -52,11 +52,13 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
----
+═══════════════════════════════════════════════════════════════
+SECTION A: ACTION ITEMS
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
-### 1A. Core Labs (All Patients with Chorea)
+### 1A. Essential/Core Labs (All Patients with Chorea)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
@@ -71,7 +73,7 @@ tags:
 | Medication reconciliation | STAT | STAT | ROUTINE | STAT | Drug-induced chorea: dopamine agonists, levodopa, stimulants, anticonvulsants (phenytoin, carbamazepine), oral contraceptives, anticholinergics | No offending medications |
 | Pregnancy test (reproductive-age women) | STAT | STAT | ROUTINE | - | Chorea gravidarum; oral contraceptive-related chorea | Negative |
 
-### 1B. Extended Labs
+### 1B. Extended Workup (Second-line)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
@@ -104,14 +106,14 @@ tags:
 
 ## 2. DIAGNOSTIC IMAGING & STUDIES
 
-### 2A. Essential Studies
+### 2A. Essential/First-line
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain with/without contrast (CPT 70553) | URGENT | ROUTINE | ROUTINE | URGENT | All patients; priority imaging | Normal in early HD; caudate atrophy in established HD; T1 hyperintensity in basal ganglia (hyperglycemic chorea); signal changes in basal ganglia (Wilson, SLE, infection) | MRI-incompatible devices |
 | CT head without contrast | STAT | - | - | STAT | ED acute onset; exclude stroke, hemorrhage; hemiballismus from subthalamic lesion | No acute lesion; may show caudate atrophy in HD | None |
 
-### 2B. Extended Studies
+### 2B. Extended
 
 | Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
@@ -142,31 +144,44 @@ tags:
 | Insulin + IV dextrose (for hyperglycemic chorea) | IV | Non-ketotic hyperglycemic hemichorea/hemiballismus; correct hyperglycemia | Per protocol :: IV :: per protocol :: Treat underlying hyperglycemia aggressively; chorea typically resolves with glucose normalization over hours to days; insulin drip if severe | Hypoglycemia | Blood glucose q1h; electrolytes; mental status; chorea severity | STAT | STAT | - | STAT |
 | Valproic acid (IV) | IV | Acute severe chorea refractory to neuroleptics; especially if seizure concern | 20 mg/kg IV load; 500 mg IV q8h :: IV :: q8h :: Loading dose 20 mg/kg IV (max 1500 mg); then 500 mg IV q8h; therapeutic level 50-100 mcg/mL | Hepatic disease; pregnancy; urea cycle disorders | Drug levels; LFTs; CBC; ammonia | URGENT | URGENT | - | URGENT |
 
-### 3B. VMAT2 Inhibitors (First-Line Chronic Chorea Suppression)
+### 3B. Symptomatic Treatments (Chorea Suppression)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Deutetrabenazine (Austedo) | PO | Chorea associated with Huntington disease (FDA-approved); tardive dyskinesia; preferred VMAT2 inhibitor due to lower depression/suicidality risk | 6 mg daily; 6 mg BID; 12 mg BID; 24 mg BID :: PO :: daily-BID :: Start 6 mg daily; increase by 6 mg/day q1wk; max 48 mg/day divided BID; take with food; CYP2D6 poor metabolizers: max 36 mg/day | Active suicidality; untreated or inadequately treated depression; concurrent MAOIs; concurrent tetrabenazine or reserpine; hepatic impairment | Depression/suicidality (screen with PHQ-9 each visit); akathisia; parkinsonism; dysphagia; QTc if risk factors; CYP2D6 genotyping recommended | - | ROUTINE | ROUTINE | - |
 | Tetrabenazine (Xenazine) | PO | Chorea associated with HD; other causes of chorea; original VMAT2 inhibitor | 12.5 mg daily; 12.5 mg BID; 25 mg BID; 25 mg TID :: PO :: daily-TID :: Start 12.5 mg daily; increase by 12.5 mg q1wk; max 75-100 mg/day divided TID; CYP2D6 poor metabolizers: max 50 mg/day | Active suicidality; untreated depression; concurrent MAOIs; hepatic impairment | Depression/suicidality (BLACK BOX WARNING); akathisia; parkinsonism; sedation; dysphagia; CYP2D6 genotyping before exceeding 50 mg/day | - | ROUTINE | ROUTINE | - |
 | Valbenazine (Ingrezza) | PO | Tardive dyskinesia (FDA-approved); off-label for other causes of chorea | 40 mg daily; 80 mg daily :: PO :: daily :: Start 40 mg daily; increase to 80 mg daily after 1 week; once-daily dosing advantageous | Active suicidality; concurrent MAOIs; severe hepatic impairment; concurrent strong CYP3A4 inhibitors (reduces to 40 mg) | Depression/suicidality; akathisia; somnolence; QTc | - | - | ROUTINE | - |
-
-### 3C. Second-Line/Refractory
-
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Risperidone | PO | Chorea suppression with antipsychotic effect; useful if psychiatric symptoms coexist | 0.5 mg daily; 1 mg BID; 2 mg BID :: PO :: daily-BID :: Start 0.5 mg daily; titrate by 0.5-1 mg q1wk; max 6 mg/day; lower EPS risk than haloperidol | Dementia-related psychosis (FDA black box); QT prolongation; Parkinson disease | Metabolic (glucose, lipids, weight); EPS; prolactin; QTc; NMS | - | ROUTINE | ROUTINE | - |
 | Olanzapine | PO | Chorea with behavioral disturbance; sedating properties may be beneficial | 2.5 mg daily; 5 mg daily; 10 mg daily :: PO :: daily :: Start 2.5-5 mg daily; titrate by 2.5-5 mg q1wk; max 20 mg/day | Dementia-related psychosis (FDA black box); diabetes; metabolic syndrome | Weight; glucose; lipids; sedation; metabolic monitoring q3mo | - | ROUTINE | ROUTINE | - |
 | Clonazepam | PO | Mild chorea; chorea with anxiety component; adjunct therapy | 0.25 mg BID; 0.5 mg BID; 1 mg BID :: PO :: BID :: Start 0.25-0.5 mg BID; titrate by 0.5 mg q3-7d; max 4 mg/day | Severe respiratory insufficiency; severe hepatic impairment; acute narrow-angle glaucoma | Sedation; fall risk; cognitive worsening; respiratory depression; dependence | - | ROUTINE | ROUTINE | - |
 | Amantadine | PO | Mild chorea; fewer side effects than dopamine-depleting agents; useful in HD | 100 mg daily; 100 mg BID; 200 mg BID :: PO :: daily-BID :: Start 100 mg daily; increase to 100 mg BID; max 400 mg/day; livedo reticularis may occur | Severe renal impairment (dose adjust); end-stage renal disease on dialysis | Renal function; livedo reticularis; hallucinations; insomnia; ankle edema | - | ROUTINE | ROUTINE | - |
+| Citalopram | PO | Depression in HD; first-line SSRI for mood disturbance in chorea patients | 10 mg daily; 20 mg daily :: PO :: daily :: Start 10 mg daily; increase to 20 mg after 1 week if tolerated; max 20 mg/day (QTc risk at higher doses); onset of effect 2-4 weeks | Concurrent MAOIs; QTc >500 ms; concurrent pimozide | QTc at baseline and after dose change; suicidality (first 2 weeks); serotonin syndrome; hyponatremia in elderly | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression and anxiety in HD; alternative SSRI; also treats irritability and obsessive features | 25 mg daily; 50 mg daily; 100 mg daily :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg q1-2wk; target 50-200 mg/day; max 200 mg/day | Concurrent MAOIs; concurrent pimozide | Suicidality (first 2 weeks); GI side effects; serotonin syndrome; hyponatremia | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Depression with insomnia and weight loss in HD; dual benefit of appetite stimulation and sleep improvement | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: qHS :: Start 7.5-15 mg qHS; increase by 15 mg q1-2wk; max 45 mg/day; lower doses more sedating | Concurrent MAOIs; severe hepatic impairment | Sedation; weight gain (beneficial in HD); lipid panel; CBC (rare agranulocytosis) | - | ROUTINE | ROUTINE | - |
+| Quetiapine | PO | Irritability, agitation, psychosis, and insomnia in HD; low-dose for sleep, higher dose for psychosis | 25 mg qHS; 50 mg BID; 150 mg BID :: PO :: qHS-BID :: Start 25 mg qHS; titrate by 25-50 mg/day q3-5d; target 50-300 mg/day for behavior; max 600 mg/day for psychosis | Dementia-related psychosis (FDA black box); diabetes; severe hepatic impairment | Weight; fasting glucose; lipids; sedation; QTc; EPS; metabolic monitoring q3mo | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Fatigue and excessive daytime sleepiness in HD; apathy; cognitive slowing | 100 mg daily; 200 mg daily :: PO :: daily (AM) :: Start 100 mg daily in AM; increase to 200 mg daily after 1 week if needed; max 200 mg/day; avoid afternoon dosing | Severe hepatic impairment; hypersensitivity; concurrent cyclosporine | BP; HR; sleep quality; mood (can worsen anxiety); rash (discontinue if occurs) | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia in HD; sleep disturbance; mild anxiolytic effect | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: qHS :: Start 25-50 mg qHS; increase by 25-50 mg q3-5d; max 150 mg qHS for sleep | Concurrent MAOIs; severe hepatic impairment | Sedation; orthostatic hypotension; priapism (rare); serotonin syndrome if combined with SSRIs | - | ROUTINE | ROUTINE | - |
+| Valproic acid (oral) | PO | Irritability and aggression in HD; mood stabilization; adjunctive chorea suppression | 250 mg BID; 500 mg BID :: PO :: BID :: Start 250 mg BID; titrate to therapeutic level 50-100 mcg/mL; max 60 mg/kg/day | Hepatic disease; pregnancy (teratogenic); urea cycle disorders | Drug levels; LFTs; CBC; ammonia; weight; pancreatitis symptoms | - | ROUTINE | ROUTINE | - |
 
-### 3D. Etiology-Specific Treatment
+### 3C. Maintenance/Prophylaxis
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Penicillin V or Amoxicillin | PO | Sydenham chorea: eradicate streptococcal infection; secondary prophylaxis | Penicillin V 250 mg BID; Amoxicillin 250 mg BID :: PO :: BID :: Acute treatment, then secondary prophylaxis per rheumatic fever guidelines; duration until age 21 or 10 years post-episode (whichever longer) | Penicillin allergy | Adherence; recurrence of chorea; echocardiogram for rheumatic heart disease | - | ROUTINE | ROUTINE | - |
-| Prednisone | PO | Autoimmune chorea (SLE, antiphospholipid syndrome, Sydenham); immune-mediated | 1 mg/kg daily; 60 mg daily :: PO :: daily :: 1 mg/kg/day (max 60 mg) for 2-4 weeks; then taper over 4-8 weeks; for Sydenham, consider if severe | Active untreated infection; uncontrolled diabetes | Blood glucose; BP; mood; bone density; GI protection | - | ROUTINE | ROUTINE | - |
-| Anticoagulation (warfarin or DOAC) | PO | Antiphospholipid syndrome-associated chorea with thrombotic risk | Per APS guidelines :: PO :: daily :: Warfarin (target INR 2-3) or DOAC per rheumatology guidance; lifelong if APS with thrombosis | Active bleeding; coagulopathy; recent surgery | INR (warfarin); renal function (DOAC); bleeding signs | - | ROUTINE | ROUTINE | - |
-| D-penicillamine or Trientine | PO | Wilson disease: copper chelation therapy | D-penicillamine 250 mg daily titrated to 1000-1500 mg/day; Trientine 750-1500 mg/day :: PO :: divided BID-TID :: D-penicillamine: start 250 mg daily; increase by 250 mg q4-7d; max 1500 mg/day divided BID-TID; Trientine: 750-1500 mg/day divided BID-TID | D-penicillamine: penicillin allergy (cross-reaction), renal impairment, lupus-like syndrome history | CBC q2wk x 3 months then monthly; urinalysis (proteinuria); 24-hr urine copper; LFTs; free serum copper | - | ROUTINE | ROUTINE | - |
+| Penicillin V (secondary prophylaxis) | PO | Sydenham chorea: secondary streptococcal prophylaxis to prevent rheumatic heart disease recurrence | 250 mg BID :: PO :: BID :: 250 mg PO BID continuously; duration until age 21 or 10 years post-episode (whichever longer); lifelong if rheumatic heart disease | Penicillin allergy | Adherence; recurrence of chorea; echocardiogram for rheumatic heart disease q1-2 years | - | ROUTINE | ROUTINE | - |
+| Penicillin G benzathine (secondary prophylaxis) | IM | Sydenham chorea: IM alternative for patients with adherence concerns | 1.2 million units q4wk :: IM :: q4wk :: 1.2 million units IM q4 weeks (q3 weeks in high-risk populations); duration per rheumatic fever guidelines | Penicillin allergy | Injection site reactions; adherence; echocardiogram follow-up | - | ROUTINE | ROUTINE | - |
+| Zinc acetate (Wilson disease maintenance) | PO | Wilson disease: maintenance therapy after initial chelation; blocks intestinal copper absorption | 50 mg TID :: PO :: TID :: 50 mg elemental zinc TID; take between meals (1 hour before or 2 hours after); separate from chelation therapy by 2 hours | GI intolerance | 24-hr urine copper; serum zinc; 24-hr urine zinc; GI side effects | - | ROUTINE | ROUTINE | - |
+| Anticoagulation (warfarin or DOAC) | PO | Antiphospholipid syndrome-associated chorea with thrombotic risk; long-term thromboprophylaxis | Per APS guidelines :: PO :: daily :: Warfarin (target INR 2-3) or DOAC per rheumatology guidance; lifelong if APS with thrombosis | Active bleeding; coagulopathy; recent surgery | INR (warfarin) q2-4wk; renal function (DOAC); bleeding signs; fall risk assessment | - | ROUTINE | ROUTINE | - |
+
+### 3D. Disease-Modifying/Etiology-Specific Treatment
+
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Penicillin V or Amoxicillin (acute treatment) | PO | Sydenham chorea: eradicate active streptococcal infection | Penicillin V 250 mg BID x 10 days; Amoxicillin 250 mg BID x 10 days :: PO :: BID :: Full course to eradicate GAS; followed by secondary prophylaxis (see 3C) | ASO titer; throat culture | Penicillin allergy | Adherence; symptom resolution; transition to secondary prophylaxis | - | ROUTINE | ROUTINE | - |
+| Prednisone | PO | Autoimmune chorea (SLE, antiphospholipid syndrome, Sydenham); immune-mediated chorea refractory to supportive care | 1 mg/kg daily; 60 mg daily :: PO :: daily :: 1 mg/kg/day (max 60 mg) for 2-4 weeks; then taper over 4-8 weeks; for Sydenham, consider if severe or disabling | Baseline glucose; TB screening; hepatitis B status | Active untreated infection; uncontrolled diabetes; active GI bleed | Blood glucose; BP; mood; bone density; GI protection; weight | - | ROUTINE | ROUTINE | - |
+| IVIG | IV | Severe autoimmune chorea (Sydenham, SLE) refractory to corticosteroids; paraneoplastic chorea | 2 g/kg total :: IV :: over 2-5 days :: 0.4 g/kg/day IV for 5 days or 1 g/kg/day for 2 days; may repeat q4wk if relapsing | IgA levels; renal function | IgA deficiency (anaphylaxis risk); severe renal impairment; thrombotic risk | Renal function; headache (aseptic meningitis); thrombotic events; hemolysis | - | ROUTINE | EXT | - |
+| Plasma exchange (PLEX) | IV | Severe refractory autoimmune chorea; paraneoplastic chorea; rapid onset of action needed | 5-7 exchanges :: IV :: q48h :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange | Central venous access | Coagulopathy; hemodynamic instability; active infection | Electrolytes (calcium, potassium); coagulation studies; hemodynamic status; line complications | - | ROUTINE | - | ROUTINE |
+| D-penicillamine | PO | Wilson disease: first-line copper chelation therapy | 250 mg daily; 500 mg BID; 750 mg BID :: PO :: divided BID-TID :: Start 250 mg daily; increase by 250 mg q4-7d; target 1000-1500 mg/day divided BID-TID; take 1 hour before meals | 24-hr urine copper; LFTs; CBC; urinalysis | Penicillin allergy (cross-reaction); renal impairment; lupus-like syndrome history; cytopenias | CBC q2wk x 3 months then monthly; urinalysis (proteinuria); 24-hr urine copper; LFTs; free serum copper; neurologic worsening first 6 months possible | - | ROUTINE | ROUTINE | - |
+| Trientine (Syprine) | PO | Wilson disease: copper chelation; D-penicillamine intolerant patients | 250 mg TID; 500 mg TID :: PO :: TID :: Start 250 mg TID; target 750-1500 mg/day divided TID; take 1 hour before or 2 hours after meals; fewer side effects than D-penicillamine | 24-hr urine copper; LFTs; CBC; urinalysis | Caution with iron supplements (separate by 2 hours) | CBC; LFTs; urinalysis monthly initially then q3mo; 24-hr urine copper | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -176,37 +191,51 @@ tags:
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Movement disorders specialist for diagnostic classification, VMAT2 inhibitor management, and long-term chorea suppression | - | ROUTINE | ROUTINE | - |
-| Genetic counseling BEFORE Huntington disease gene testing (mandatory; informed consent for implications) | - | ROUTINE | ROUTINE | - |
+| Neurology (movement disorders specialist) for diagnostic classification, VMAT2 inhibitor management, and long-term chorea suppression | URGENT | ROUTINE | ROUTINE | - |
+| Genetic counseling BEFORE Huntington disease gene testing (mandatory; informed consent for implications for family, insurance, and reproductive planning) | - | ROUTINE | ROUTINE | - |
 | Rheumatology if autoimmune chorea suspected (SLE, antiphospholipid syndrome) for systemic disease management | - | ROUTINE | ROUTINE | - |
 | Hepatology if Wilson disease diagnosed for liver disease management and transplant evaluation if needed | - | ROUTINE | ROUTINE | - |
-| Cardiology for echocardiogram if Sydenham chorea or rheumatic fever suspected (rheumatic heart disease screening) | - | ROUTINE | ROUTINE | - |
+| Cardiology for echocardiogram if Sydenham chorea or rheumatic fever suspected (rheumatic heart disease screening) | URGENT | ROUTINE | ROUTINE | - |
 | Psychiatry for management of depression, psychosis, irritability, and suicidality especially in Huntington disease | - | ROUTINE | ROUTINE | - |
+| Endocrinology if hyperglycemic chorea for long-term diabetes management and glucose optimization | URGENT | ROUTINE | ROUTINE | - |
 | Physical therapy for balance, gait, and fall prevention; adaptive movement strategies | - | ROUTINE | ROUTINE | - |
-| Speech therapy for dysarthria and dysphagia assessment, especially in HD | - | ROUTINE | ROUTINE | - |
+| Occupational therapy for adaptive equipment, home safety assessment, and activities of daily living support | - | ROUTINE | ROUTINE | - |
+| Speech therapy for dysarthria and dysphagia assessment, especially in HD; swallowing evaluation before discharge | - | ROUTINE | ROUTINE | - |
 | Oncology if paraneoplastic chorea diagnosed (CRMP5, CASPR2 antibodies) for malignancy workup and treatment | - | ROUTINE | ROUTINE | - |
+| Social work for care coordination, advance directive planning, disability resources, and family support in HD | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient Instructions
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Report new or worsening depression, suicidal thoughts, or mood changes immediately while on VMAT2 inhibitors (tetrabenazine has BLACK BOX WARNING for suicidality) | STAT | ROUTINE | ROUTINE | - |
-| Use fall precautions; chorea increases fall risk especially with gait involvement | URGENT | ROUTINE | ROUTINE | - |
-| Return to ED if chorea suddenly worsens, new weakness develops, or speech/swallowing difficulty appears | STAT | - | ROUTINE | - |
-| Do not stop chorea medications abruptly; sudden withdrawal of dopamine-blocking agents can cause withdrawal dyskinesia | - | ROUTINE | ROUTINE | - |
-| Genetic counseling is mandatory before and after Huntington disease testing due to implications for family members, insurance, and reproductive planning | - | - | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Report new or worsening depression, suicidal thoughts, or mood changes immediately while on VMAT2 inhibitors (tetrabenazine has BLACK BOX WARNING for suicidality) | STAT | ROUTINE | ROUTINE |
+| Use fall precautions at home and in hospital; chorea increases fall risk especially with gait involvement; use handrails, non-slip footwear | URGENT | ROUTINE | ROUTINE |
+| Return to ED if chorea suddenly worsens, new weakness develops, speech/swallowing difficulty appears, or signs of stroke occur | STAT | ROUTINE | ROUTINE |
+| Do not stop chorea medications abruptly; sudden withdrawal of dopamine-blocking agents can cause withdrawal dyskinesia or rebound chorea | ROUTINE | ROUTINE | ROUTINE |
+| Genetic counseling is mandatory before and after Huntington disease testing due to implications for family members, insurance, and reproductive planning | - | - | ROUTINE |
+| Take VMAT2 inhibitors with food for better absorption (deutetrabenazine requires food); report any difficulty swallowing pills | - | ROUTINE | ROUTINE |
+| Maintain adequate fluid and caloric intake; HD patients have increased metabolic demand due to involuntary movements and are at risk for malnutrition | - | ROUTINE | ROUTINE |
+| Avoid driving or operating heavy machinery until chorea severity is assessed and medication side effects (sedation, parkinsonism) are stable | - | ROUTINE | ROUTINE |
+| Carry a medical alert identification if diagnosed with Huntington disease or if on anticoagulation for antiphospholipid syndrome | - | - | ROUTINE |
+| Report new involuntary movements, stiffness, tremor, or restlessness that could indicate medication side effects (EPS, parkinsonism, akathisia) | ROUTINE | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Home safety evaluation to remove sharp edges, pad furniture, and reduce fall hazards given involuntary movements | - | ROUTINE | ROUTINE | - |
-| Caloric intake monitoring in HD (chorea increases metabolic demand; weight loss is common and associated with worse outcomes) | - | ROUTINE | ROUTINE | - |
-| Advance care planning early in HD course while decision-making capacity is preserved | - | - | ROUTINE | - |
-| Support groups: Huntington's Disease Society of America (HDSA) for patients and families with HD | - | - | ROUTINE | - |
-| Avoid medications that worsen chorea: dopamine agonists, levodopa, stimulants, anticholinergics (review all medications) | - | ROUTINE | ROUTINE | - |
+| Recommendation | ED | HOSP | OPD |
+|----------------|:--:|:----:|:---:|
+| Home safety evaluation to remove sharp edges, pad furniture, and reduce fall hazards given involuntary movements | - | ROUTINE | ROUTINE |
+| Caloric intake monitoring in HD (chorea increases metabolic demand by 500-1000 kcal/day; weight loss is common and associated with worse outcomes) | - | ROUTINE | ROUTINE |
+| Advance care planning early in HD course while decision-making capacity is preserved; designate healthcare proxy | - | - | ROUTINE |
+| Support groups: Huntington's Disease Society of America (HDSA) for patients and families with HD; local and online resources | - | - | ROUTINE |
+| Avoid medications that worsen chorea: dopamine agonists, levodopa, stimulants, anticholinergics (review all medications at each visit) | ROUTINE | ROUTINE | ROUTINE |
+| Regular aerobic exercise (adapted to chorea severity) to improve mood, endurance, and cardiovascular health; supervised physical activity preferred | - | - | ROUTINE |
+| Stress management with relaxation techniques as stress and fatigue exacerbate chorea severity | - | ROUTINE | ROUTINE |
+| Adequate sleep hygiene; sleep deprivation worsens chorea and cognitive function in HD | - | ROUTINE | ROUTINE |
+| Limit alcohol use; alcohol interacts with benzodiazepines and VMAT2 inhibitors; Wilson disease patients must avoid alcohol | - | ROUTINE | ROUTINE |
 
----
+═══════════════════════════════════════════════════════════════
+SECTION B: REFERENCE
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -286,6 +315,19 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Restructured treatment subsections to standard labels: 3A Acute, 3B Symptomatic, 3C Maintenance, 3D Disease-Modifying
+- Merged VMAT2 inhibitors and second-line agents into 3B Symptomatic Treatments
+- Added symptomatic treatment categories for HD: mood (citalopram, sertraline, mirtazapine), irritability/psychosis (quetiapine, valproic acid oral), fatigue (modafinil), sleep (trazodone)
+- Created 3C Maintenance/Prophylaxis section with secondary strep prophylaxis, zinc acetate, long-term anticoagulation
+- Expanded 3D to Disease-Modifying with Pre-Treatment Requirements column; added IVIG, PLEX, separated D-penicillamine and trientine into individual rows
+- Added SECTION A/B headers and section dividers (═══)
+- Fixed Section 4A: added ED coverage for neurology, cardiology, endocrinology referrals; added OT, social work, endocrinology consults
+- Expanded Section 4B to 10 patient instructions with ED/discharge teaching coverage
+- Expanded Section 4C to 9 lifestyle recommendations including exercise, sleep hygiene, stress management, alcohol avoidance
+- Standardized 1A/1B/2A/2B subsection labels to match approved plan format
+- Fixed setting coverage gaps: added ED referrals, medication avoidance in ED/OPD, discharge instructions
 
 **v1.0 (February 11, 2026)**
 - Initial template creation

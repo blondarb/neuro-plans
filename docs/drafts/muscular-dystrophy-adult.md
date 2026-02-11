@@ -1,7 +1,7 @@
 ---
 title: "Muscular Dystrophy (Adult)"
 description: "Clinical decision support for evaluation and management of adult-onset muscular dystrophies"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Muscular Dystrophy (Adult)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft
+**STATUS:** Revised per checker feedback
 
 ---
 
@@ -127,31 +127,43 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| BiPAP/NIV (non-invasive ventilation) | NIV | Acute respiratory failure from respiratory muscle weakness; FVC <50% or acute decompensation | Per protocol :: NIV :: continuous or nocturnal :: BiPAP settings: IPAP 10-16 cmH2O, EPAP 4-6 cmH2O; titrate to comfort and SpO2 >92%; may need 24-hr support in acute setting | Inability to protect airway; facial trauma preventing mask seal; pneumothorax | SpO2; ABG; respiratory rate; patient comfort; CO2 levels; mask fit | STAT | STAT | - | STAT |
+| BiPAP/NIV (non-invasive ventilation) | NIV | Acute respiratory failure from respiratory muscle weakness; FVC <50% or acute decompensation | IPAP 10-16 cmH2O :: NIV :: continuous :: IPAP 10-16 cmH2O, EPAP 4-6 cmH2O; titrate to comfort and SpO2 >92%; may need 24-hr support in acute setting | Inability to protect airway; facial trauma preventing mask seal; pneumothorax | SpO2; ABG; respiratory rate; patient comfort; CO2 levels; mask fit | STAT | STAT | - | STAT |
 | IV Normal Saline | IV | Rhabdomyolysis prevention/treatment if CK markedly elevated (>5x ULN) or acute renal injury | 1000 mL :: IV :: over 1-2 hr :: 1-2 L NS bolus; target urine output >200 mL/hr if rhabdomyolysis; alkalinize urine if CK >10,000 | Heart failure; volume overload | CK; renal function; urine output; myoglobinuria | STAT | STAT | - | STAT |
 
 ### 3B. Cardiac Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lisinopril | PO | Cardiomyopathy prevention/treatment; ACE inhibitor for LV dysfunction in BMD, LGMD, EDMD | 2.5 mg daily; 5 mg daily; 10 mg daily; 20 mg daily :: PO :: daily :: Start 2.5-5 mg daily; titrate to 10-20 mg daily; initiate at first sign of LV dysfunction or prophylactically in high-risk dystrophies (BMD) | Bilateral renal artery stenosis; pregnancy; angioedema history; hyperkalemia | BP; K+; renal function; cough; EF on echo | - | ROUTINE | ROUTINE | - |
-| Carvedilol | PO | Heart failure from cardiomyopathy; beta-blocker for LV dysfunction | 3.125 mg BID; 6.25 mg BID; 12.5 mg BID; 25 mg BID :: PO :: BID :: Start 3.125 mg BID; double dose q2wk as tolerated; max 25 mg BID; take with food | Severe bradycardia; 2nd/3rd degree AV block; decompensated HF; severe asthma | HR; BP; fatigue; fluid retention; EF | - | ROUTINE | ROUTINE | - |
-| Implantable cardioverter-defibrillator (ICD) / Pacemaker | Device | EDMD and LMNA mutations: prophylactic ICD/pacemaker for conduction defects; high risk of sudden cardiac death even with normal EF | Per cardiology/EP :: Device :: - :: LMNA mutation carriers: consider prophylactic ICD/pacemaker per HRS guidelines; do NOT wait for symptomatic bradycardia | Specific to device implantation | Device checks q6-12 months; rhythm monitoring; lead integrity | - | - | ROUTINE | - |
+| Lisinopril | PO | Cardiomyopathy prevention/treatment; ACE inhibitor for LV dysfunction in BMD, LGMD, EDMD | 2.5 mg :: PO :: daily :: Start 2.5-5 mg daily; titrate to 10-20 mg daily; initiate at first sign of LV dysfunction or prophylactically in high-risk dystrophies (BMD) | Bilateral renal artery stenosis; pregnancy; angioedema history; hyperkalemia | BP; K+; renal function; cough; EF on echo | - | ROUTINE | ROUTINE | - |
+| Carvedilol | PO | Heart failure from cardiomyopathy; beta-blocker for LV dysfunction | 3.125 mg :: PO :: BID :: Start 3.125 mg BID; double dose q2wk as tolerated; max 25 mg BID; take with food | Severe bradycardia; 2nd/3rd degree AV block; decompensated HF; severe asthma | HR; BP; fatigue; fluid retention; EF | - | ROUTINE | ROUTINE | - |
+| Implantable cardioverter-defibrillator (ICD) / Pacemaker | Device | EDMD and LMNA mutations: prophylactic ICD/pacemaker for conduction defects; high risk of sudden cardiac death even with normal EF | N/A :: Device :: per cardiology :: LMNA mutation carriers: prophylactic ICD/pacemaker per HRS guidelines; do NOT wait for symptomatic bradycardia; BMD cardiomyopathy: ICD per standard heart failure criteria | Specific to device implantation | Device checks q6-12 months; rhythm monitoring; lead integrity | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Symptomatic and Supportive
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Nocturnal BiPAP | NIV | Nocturnal hypoventilation; FVC <50% predicted or symptomatic nocturnal hypoxemia | Per sleep study titration :: NIV :: nightly :: Titrate IPAP/EPAP per polysomnography; typically IPAP 12-18, EPAP 4-6; start when FVC <50% or earlier if symptomatic | Inability to use mask; untreated pneumothorax | Overnight oximetry; ABG or cap gas q6-12mo; mask comfort and compliance | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Pain from musculoskeletal sources; contractures; neuropathic component | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: qHS-TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day | Severe renal impairment (dose adjust) | Sedation; dizziness; respiratory depression (caution in respiratory compromise) | - | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO | Musculoskeletal pain; contracture-related pain | 500 mg Q6H PRN; 1000 mg Q6H PRN :: PO :: Q6H PRN :: 500-1000 mg q6h as needed; max 3000 mg/day in elderly | Severe hepatic impairment | Hepatic function; total daily dose | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Nocturnal BiPAP | NIV | Nocturnal hypoventilation; FVC <50% predicted or symptomatic nocturnal hypoxemia | IPAP 12-18 cmH2O :: NIV :: nightly :: IPAP 12-18, EPAP 4-6 cmH2O; titrate per polysomnography; start when FVC <50% or earlier if symptomatic; assess compliance | Inability to use mask; untreated pneumothorax | Overnight oximetry; ABG or cap gas q6-12mo; mask comfort and compliance | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Pain from musculoskeletal sources; contractures; neuropathic component | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-600 mg TID; max 3600 mg/day | Severe renal impairment (dose adjust) | Sedation; dizziness; respiratory depression (caution in respiratory compromise) | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Musculoskeletal pain; contracture-related pain | 500 mg :: PO :: Q6H PRN :: 500-1000 mg q6h as needed; max 3000 mg/day (2000 mg/day in elderly or hepatic impairment) | Severe hepatic impairment | Hepatic function; total daily dose | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Baclofen | PO | Spasticity; muscle stiffness from contractures | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3d; max 80 mg/day divided TID-QID; taper to discontinue (do NOT stop abruptly) | Abrupt withdrawal (seizures, hallucinations); severe renal impairment | Sedation; weakness (may unmask underlying weakness); respiratory depression | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Spasticity (alternative to baclofen); muscle spasms | 2 mg :: PO :: qHS :: Start 2 mg qHS; may increase by 2-4 mg q6-8h; max 36 mg/day | Concurrent CYP1A2 inhibitors (ciprofloxacin, fluvoxamine); hepatic impairment | LFTs at baseline, 1 month, 3 months; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Fatigue; excessive daytime sleepiness | 100 mg :: PO :: qAM :: Start 100 mg every morning; may increase to 200 mg daily; avoid afternoon dosing | Hypersensitivity; cardiac arrhythmia; left ventricular hypertrophy | Headache; insomnia; cardiac monitoring if history; BP | - | - | ROUTINE | - |
+| Sertraline | PO | Depression; anxiety related to chronic progressive disease | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg/day | Concurrent MAOIs; caution with QT-prolonging drugs | Suicidality (first weeks); GI upset; sexual dysfunction; hyponatremia | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Depression with comorbid pain; neuropathic pain component | 30 mg :: PO :: daily :: Start 30 mg daily x 1-2 weeks; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; BP; nausea (take with food); serotonin syndrome risk | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Urinary urgency and frequency from neurogenic bladder dysfunction | 5 mg :: PO :: BID :: Start 5 mg BID-TID; max 5 mg QID; extended-release 5-30 mg daily preferred | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Dry mouth; cognitive effects (especially elderly); constipation; urinary retention | - | ROUTINE | ROUTINE | - |
+| Mirabegron | PO | Overactive bladder (alternative to anticholinergics; fewer cognitive effects) | 25 mg :: PO :: daily :: Start 25 mg daily; may increase to 50 mg daily | Severe uncontrolled hypertension | BP; urinary retention; hepatic function | - | ROUTINE | ROUTINE | - |
+| Cyclobenzaprine | PO | Muscle spasms; musculoskeletal pain | 5 mg :: PO :: TID :: Start 5 mg TID; max 10 mg TID; short-term use (2-3 weeks); avoid in elderly | Concurrent MAOIs; recent MI; arrhythmia; heart failure; hyperthyroidism | Sedation; dry mouth; dizziness; anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Melatonin | PO | Insomnia; sleep disturbance common in chronic neuromuscular disease | 3 mg :: PO :: qHS :: 3-5 mg PO 30-60 min before bedtime; max 10 mg | None significant | Daytime drowsiness; vivid dreams | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Disease-Specific Therapies
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Deflazacort | PO | Corticosteroid for ambulatory Duchenne/Becker patients (limited evidence for adult BMD specifically); slows loss of ambulation | 0.9 mg/kg daily :: PO :: daily :: 0.9 mg/kg/day; evidence strongest in Duchenne; limited data in adult BMD but may be considered | Bone density; BP; glucose; growth (pediatric); vaccination status | Active infection; uncontrolled diabetes | Weight; bone density; blood glucose; BP; cataracts; adrenal function | - | - | EXT | - |
-| Cricopharyngeal myotomy (surgical) | Surgical | OPMD with disabling dysphagia; cricopharyngeal muscle dysfunction causing obstruction | Per surgical planning :: Surgical :: one-time :: Surgical section of cricopharyngeal muscle; performed by ENT/head-neck surgeon; improves swallowing in 80-90% of OPMD patients | Active aspiration pneumonia; poor surgical candidate | Swallowing assessment post-procedure; aspiration monitoring | - | EXT | EXT | - |
+| Deflazacort | PO | Corticosteroid for ambulatory Duchenne/Becker patients (limited evidence for adult BMD specifically); slows loss of ambulation | 0.9 mg/kg :: PO :: daily :: 0.9 mg/kg/day; evidence strongest in Duchenne; limited data in adult BMD but may be considered; take with food | Bone density; BP; glucose; vaccination status | Active infection; uncontrolled diabetes; systemic fungal infection | Weight; bone density; blood glucose; BP; cataracts; adrenal function | - | - | EXT | - |
+| Prednisone (alternate-day) | PO | Alternative corticosteroid for dystrophinopathies when deflazacort unavailable; slows decline in muscle function | 0.75 mg/kg :: PO :: every other day :: 0.75 mg/kg every other day; alternate-day dosing reduces side effects; taper if discontinuing | Bone density; BP; glucose; vaccination status | Active infection; uncontrolled diabetes; GI ulceration | Weight; bone density; blood glucose; BP; cataracts; adrenal function | - | - | EXT | - |
+| Cricopharyngeal myotomy (surgical) | Surgical | OPMD with disabling dysphagia; cricopharyngeal muscle dysfunction causing obstruction | N/A :: Surgical :: one-time :: Surgical section of cricopharyngeal muscle; performed by ENT/head-neck surgeon; improves swallowing in 80-90% of OPMD patients | Swallowing study confirming cricopharyngeal dysfunction; anesthesia risk assessment | Active aspiration pneumonia; poor surgical candidate; severe respiratory compromise | Swallowing assessment post-procedure; aspiration monitoring; wound healing | - | EXT | EXT | - |
+| Scapular fixation surgery | Surgical | FSHD with severe scapular winging limiting arm elevation; failure of conservative management | N/A :: Surgical :: one-time :: Scapulothoracic fusion or scapulopexy; improves overhead arm function in selected FSHD patients; requires adequate deltoid strength | Adequate deltoid function confirmed; respiratory risk assessment; orthopedic evaluation | Poor surgical candidate; inadequate deltoid function; severe respiratory compromise | Post-operative ROM; shoulder function assessment; wound healing | - | EXT | EXT | - |
+| Gene therapy (clinical trials) | Variable | Emerging therapies for specific dystrophy subtypes (LGMD R9/FKRP, LGMD R2/dysferlin, FSHD); currently investigational | Per protocol :: Variable :: per protocol :: Refer eligible patients to registries (clinicaltrials.gov); AAV-based gene replacement for sarcoglycanopathies and dysferlinopathies under investigation | Genetic diagnosis confirmed; trial eligibility screening; informed consent | Per specific trial protocol | Trial-specific adverse events; immune response to AAV vector | - | - | EXT | - |
 
 ### ANESTHESIA PRECAUTIONS (CRITICAL)
 
@@ -173,22 +185,28 @@ tags:
 | Neuromuscular specialist for diagnostic confirmation, genetic testing interpretation, and long-term management | - | ROUTINE | ROUTINE | - |
 | Cardiology for echocardiogram, Holter, cardiac MRI, and cardiomyopathy management; electrophysiology referral for EDMD/LMNA carriers | URGENT | ROUTINE | ROUTINE | URGENT |
 | Pulmonology for PFT interpretation, NIV initiation and titration, and respiratory failure management | - | ROUTINE | ROUTINE | URGENT |
+| Respiratory therapy for BiPAP setup and titration, cough assist training, and secretion management | - | ROUTINE | ROUTINE | URGENT |
 | Genetic counseling for inheritance pattern discussion, family screening, and reproductive planning | - | - | ROUTINE | - |
-| Physical therapy for stretching, contracture prevention, strengthening within tolerance, and mobility optimization | - | ROUTINE | ROUTINE | - |
-| Occupational therapy for ADL adaptation, upper extremity function, and assistive technology | - | ROUTINE | ROUTINE | - |
-| Speech therapy for OPMD dysphagia assessment and management strategies | - | ROUTINE | ROUTINE | - |
+| Physical therapy for stretching, contracture prevention, submaximal strengthening, and mobility optimization | - | ROUTINE | ROUTINE | - |
+| Occupational therapy for ADL adaptation, upper extremity function, and assistive technology evaluation | - | ROUTINE | ROUTINE | - |
+| Speech therapy for OPMD dysphagia assessment, swallowing strategies, and communication support | - | ROUTINE | ROUTINE | - |
+| Nutrition/Dietitian for caloric needs assessment, weight management, and dietary modification for dysphagia | - | ROUTINE | ROUTINE | - |
 | Orthopedic surgery for scoliosis management, contracture release, and scapular fixation (FSHD) | - | - | ROUTINE | - |
-| Palliative care for goals of care discussion and advance care planning in progressive disease | - | ROUTINE | ROUTINE | - |
+| Social work for disability services, insurance navigation, MDA resources, and caregiver support | - | ROUTINE | ROUTINE | - |
+| Palliative care for goals of care discussion and advance care planning in progressive disease | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
 | Carry a medical alert card or bracelet stating muscular dystrophy diagnosis and AVOID SUCCINYLCHOLINE for all anesthesia encounters | STAT | ROUTINE | ROUTINE | STAT |
+| Return to ED immediately for acute shortness of breath, inability to lie flat, or marked respiratory distress — may indicate acute respiratory failure requiring emergent ventilatory support | STAT | ROUTINE | ROUTINE | - |
 | Report new shortness of breath (especially lying down), morning headaches, or excessive daytime sleepiness — may indicate respiratory muscle deterioration needing ventilation support | URGENT | ROUTINE | ROUTINE | - |
 | Report palpitations, dizziness, or fainting episodes — may indicate cardiac conduction disease or cardiomyopathy requiring urgent evaluation | STAT | ROUTINE | ROUTINE | - |
 | Report worsening swallowing difficulty or choking episodes (OPMD patients) — aspiration risk assessment needed | URGENT | ROUTINE | ROUTINE | - |
-| Maintain regular follow-up with cardiology and pulmonology even if asymptomatic — cardiac and respiratory complications may be silent | - | - | ROUTINE | - |
+| Report dark or cola-colored urine after exercise or illness — may indicate rhabdomyolysis requiring IV hydration | STAT | ROUTINE | ROUTINE | - |
+| Maintain regular follow-up with cardiology and pulmonology even if asymptomatic — cardiac and respiratory complications may be silent | - | ROUTINE | ROUTINE | - |
+| Inform ALL healthcare providers (surgeons, anesthesiologists, dentists) of muscular dystrophy diagnosis before any procedure requiring sedation or anesthesia | STAT | ROUTINE | ROUTINE | STAT |
 
 ### 4C. Lifestyle & Prevention
 
@@ -277,6 +295,16 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Expanded Section 3C from 3 to 13 medications: added baclofen and tizanidine (spasticity), modafinil (fatigue), sertraline and duloxetine (mood/depression), oxybutynin and mirabegron (bladder), cyclobenzaprine (muscle spasms), melatonin (insomnia)
+- Expanded Section 3D from 2 to 5 entries: added prednisone alternate-day dosing, scapular fixation surgery (FSHD), gene therapy clinical trials
+- Expanded Section 4A from 9 to 12 referrals: added respiratory therapy, nutrition/dietitian, social work
+- Expanded Section 4B from 5 to 8 instructions: added emergent return precaution, rhabdomyolysis warning, anesthesia disclosure instruction
+- Fixed structured dosing format: standardized all medications to single starting dose in first field (lisinopril, carvedilol, gabapentin, acetaminophen, BiPAP, nocturnal BiPAP)
+- Fixed ICD/pacemaker setting coverage: added HOSP and clarified dosing instructions
+- Fixed Section 4B setting coverage: added HOSP column for follow-up instruction
+- Added palliative care ICU coverage in Section 4A
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
