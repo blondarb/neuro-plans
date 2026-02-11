@@ -1,0 +1,1403 @@
+{
+  "id": "metabolic-encephalopathy",
+  "title": "Metabolic Encephalopathy",
+  "version": "1.0",
+  "icd10": [
+    "** G93.41 (Metabolic encephalopathy)",
+    "K72.90 (Hepatic failure",
+    "unspecified without coma)",
+    "K72.91 (Hepatic failure",
+    "unspecified with coma)",
+    "N18.6 (End-stage renal disease)",
+    "E87.0 (Hyperosmolality and hypernatremia)",
+    "E87.1 (Hypo-osmolality and hyponatremia)",
+    "E16.2 (Hypoglycemia",
+    "unspecified)",
+    "E03.5 (Myxedema coma)",
+    "E87.2 (Acidosis)",
+    "E87.5 (Hyperkalemia)",
+    "E83.52 (Hypercalcemia)"
+  ],
+  "scope": "** Evaluation and management of encephalopathy due to metabolic derangements in adults. Covers four major etiologies: (1) Hepatic encephalopathy, (2) Uremic encephalopathy, (3) Electrolyte-related encephalopathy (hyponatremia, hypercalcemia, hypernatremia), and (4) Endocrine/glucose-related encephalopathy (hypoglycemia, myxedema coma). Applies to ED, hospital, outpatient, and ICU settings. Excludes Wernicke encephalopathy (separate plan — nutritional/thiamine deficiency), hypertensive encephalopathy (separate plan — vascular mechanism), and drug-induced neurotoxicity (separate plan).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Infection workup (precipitant of HE); anemia; thrombocytopenia (cirrhosis, DIC)",
+          "target": "Normal WBC; platelets >50,000; no left shift",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "THE key lab — renal function, hepatic function, electrolytes, glucose, calcium simultaneously; identifies hepatic, uremic, electrolyte, and glucose-related etiologies",
+          "target": "Identify specific derangement(s)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ammonia (venous) (CPT 82140)",
+          "rationale": "Hepatic encephalopathy; collect on ice, analyze within 30 min; elevated >35 micromol/L suggestive of HE",
+          "target": "<35 micromol/L (normal); note: correlates poorly with severity",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemic encephalopathy; rapid bedside check followed by lab confirmation",
+          "target": ">60 mg/dL (normal); <60 mg/dL = hypoglycemia requiring treatment",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum sodium (CPT 84295)",
+          "rationale": "Hyponatremic or hypernatremic encephalopathy; note rate of change matters more than absolute value",
+          "target": "136-145 mEq/L; <120 mEq/L = severe hyponatremia; >160 mEq/L = severe hypernatremia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "BUN/Creatinine (CPT 84520, 82565)",
+          "rationale": "Uremic encephalopathy; BUN >60-100 mg/dL correlates with neurologic symptoms",
+          "target": "BUN <20; Cr <1.2",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum osmolality (CPT 83930)",
+          "rationale": "Osmolar gap; osmotic demyelination risk assessment; hyperosmolar states",
+          "target": "280-295 mOsm/kg",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactate (CPT 83605)",
+          "rationale": "Tissue perfusion assessment; metabolic acidosis; sepsis screening",
+          "target": "<2 mmol/L",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "ABG/VBG (CPT 82803)",
+          "rationale": "Acid-base status; respiratory compensation; identify metabolic acidosis/alkalosis",
+          "target": "Normal pH 7.35-7.45; identify specific acid-base disorder",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcium, ionized (CPT 82330)",
+          "rationale": "Hypercalcemic encephalopathy; adjusted calcium >14 mg/dL causes severe neurologic symptoms",
+          "target": "Ionized Ca 4.6-5.3 mg/dL; total Ca 8.5-10.5 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Workup (Second-line)": [
+        {
+          "item": "TSH (CPT 84443), Free T4 (CPT 84439)",
+          "rationale": "Myxedema coma; severe hypothyroidism causing encephalopathy",
+          "target": "TSH normal (0.5-4.5 mIU/L); very elevated TSH with low free T4 = myxedema",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cortisol, AM (CPT 82533)",
+          "rationale": "Adrenal crisis; adrenal insufficiency can cause encephalopathy and mimic metabolic causes",
+          "target": ">18 mcg/dL (normal stress response); <3 mcg/dL = adrenal insufficiency",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Magnesium (CPT 83735)",
+          "rationale": "Correct cofactor deficiencies; hypomagnesemia lowers seizure threshold; common in alcoholics and cirrhosis",
+          "target": ">2.0 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phosphorus (CPT 84100)",
+          "rationale": "Hypophosphatemia (refeeding, alcoholism); hyperphosphatemia (renal failure)",
+          "target": "2.5-4.5 mg/dL",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "PT/INR (CPT 85610)",
+          "rationale": "Hepatic synthetic function; coagulopathy assessment; pre-LP safety",
+          "target": "INR <1.5",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Serum albumin (CPT 82784)",
+          "rationale": "Correct calcium for hypoalbuminemia (adjusted Ca = total Ca + 0.8 x (4.0 - albumin)); nutritional status",
+          "target": ">3.5 g/dL",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Thiamine level (CPT 84255)",
+          "rationale": "Exclude Wernicke encephalopathy; Wernicke often coexists with hepatic encephalopathy in alcoholics",
+          "target": ">70 nmol/L (normal)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Exclude intoxication; drug-induced encephalopathy in differential",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood cultures (CPT 87040) x 2 sets",
+          "rationale": "Infection is common precipitant of hepatic encephalopathy; septic encephalopathy in differential",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Urine sodium, urine osmolality (CPT 84300, 83935)",
+          "rationale": "SIADH vs cerebral salt wasting; guide hyponatremia management",
+          "target": "SIADH: urine Na >40, urine osm >100; CSW: urine Na >40, volume depleted",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Ammonia (serial, q12-24h) (CPT 82140)",
+          "rationale": "Track response to lactulose/rifaximin therapy; trend more useful than single value",
+          "target": "Declining trend with treatment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "24h urine copper (CPT 82525), Ceruloplasmin (CPT 82390)",
+          "rationale": "Wilson disease in young patients (<40) with unexplained hepatic encephalopathy",
+          "target": "Ceruloplasmin >20 mg/dL; 24h urine Cu <40 mcg/day",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Serum protein electrophoresis (CPT 86235)",
+          "rationale": "Paraproteinemia; myeloma-related renal failure",
+          "target": "Normal pattern",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-thyroid peroxidase (TPO) antibodies",
+          "rationale": "Hashimoto encephalopathy (SREAT) differential",
+          "target": "Negative; if positive, consider steroid-responsive encephalopathy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Serum manganese level",
+          "rationale": "Chronic hepatic encephalopathy; manganese deposition in basal ganglia",
+          "target": "Elevated in chronic liver disease",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure (CPT 89050)",
+          "rationale": "Elevated ICP assessment; pseudotumor in differential",
+          "target": "10-20 cm H2O (normal or mildly elevated in metabolic encephalopathy)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4) (CPT 89050)",
+          "rationale": "Rule out meningitis/encephalitis",
+          "target": "WBC <5; RBC 0",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein (CPT 89051)",
+          "rationale": "Mild elevation may occur; significantly elevated suggests infection or inflammation",
+          "target": "15-45 mg/dL (normal or mildly elevated in metabolic encephalopathy)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with serum glucose (CPT 89051)",
+          "rationale": "Rule out infectious meningitis",
+          "target": ">60% of serum glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and culture (CPT 87070)",
+          "rationale": "Rule out bacterial meningitis",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HSV PCR (CPT 87529)",
+          "rationale": "Rule out HSV encephalitis if clinical suspicion",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (CPT 70450)",
+          "timing": "STAT on presentation",
+          "target": "Exclude structural cause (hemorrhage, mass, hydrocephalus, herniation); CT has low sensitivity for metabolic encephalopathy",
+          "contraindications": "Pregnancy (benefit outweighs risk if clinically indicated)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with FLAIR/DWI (CPT 70553)",
+          "timing": "Within 24-48h",
+          "target": "**Hepatic:** bilateral globus pallidus T1 hyperintensity (manganese deposition); **Uremic:** cortical/subcortical T2/FLAIR edema; **Hyponatremic:** diffuse cerebral edema; **ODS:** central pontine and/or extrapontine T2/FLAIR hyperintensity; **Hypoglycemic:** bilateral hippocampal, basal ganglia DWI restriction",
+          "contraindications": "Hemodynamic instability; non-MRI-conditional devices",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "EEG (routine or continuous) (CPT 95819, 95950)",
+          "timing": "STAT if seizure suspected; URGENT otherwise",
+          "target": "**Hepatic:** triphasic waves (bilateral, frontally predominant); **Uremic:** triphasic waves, diffuse slowing; **All metabolic:** diffuse theta/delta slowing; exclude NCSE",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "CT abdomen/pelvis with contrast (CPT 74178)",
+          "timing": "URGENT if hepatic etiology undetermined",
+          "target": "Cirrhosis; portal hypertension; hepatocellular carcinoma; ascites; splenomegaly",
+          "contraindications": "Contrast allergy; renal impairment (benefit outweighs risk)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Liver ultrasound with Doppler (CPT 76700)",
+          "timing": "Within 24-48h for hepatic etiology",
+          "target": "Portal hypertension; portal vein thrombosis; hepatic parenchymal disease; ascites",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Renal ultrasound (CPT 76775)",
+          "timing": "Within 48h for uremic etiology",
+          "target": "Renal size (small = chronic kidney disease); hydronephrosis; obstruction",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Chest X-ray (CPT 71046)",
+          "timing": "URGENT if respiratory compromise or aspiration risk",
+          "target": "Aspiration pneumonia; pulmonary edema; pleural effusion (hepatic hydrothorax)",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Immediate Stabilization": [
+        {
+          "item": "Airway management / Intubation",
+          "route": "-",
+          "indication": "GCS <=8 or inability to protect airway; respiratory failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "RSI per institutional protocol",
+                "orderSentence": "Airway management / Intubation RSI per institutional protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Intubate if GCS <=8, declining mental status with aspiration risk, or respiratory failure; head of bed 30 degrees post-intubation",
+            "orderSentence": "Airway management / Intubation RSI per institutional protocol -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Ventilator settings; continuous SpO2; ETCO2; neuro checks",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Thiamine (CPT 96374)",
+          "route": "IV",
+          "indication": "Give BEFORE dextrose in suspected nutritional deficiency (alcoholism, malnutrition, chronic liver disease); prevents Wernicke encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "IV Thiamine (CPT 96374) 500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "500 mg IV over 30 min; give BEFORE glucose administration; may continue 500 mg IV q8h x 3 days if Wernicke suspected",
+            "orderSentence": "IV Thiamine (CPT 96374) 500 mg IV"
+          },
+          "contraindications": "Known hypersensitivity (rare)",
+          "monitoring": "Anaphylaxis (rare); vital signs during infusion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Dextrose (D50W) (CPT 96374)",
+          "route": "IV",
+          "indication": "Hypoglycemic encephalopathy (glucose <60 mg/dL); give AFTER thiamine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mL",
+                "orderSentence": "IV Dextrose (D50W) (CPT 96374) 25-50 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "25-50 mL D50W (12.5-25 g dextrose) IV push; recheck glucose in 15 min; repeat if still <60 mg/dL; start D10W drip if recurrent hypoglycemia",
+            "orderSentence": "IV Dextrose (D50W) (CPT 96374) 25-50 mL IV"
+          },
+          "contraindications": "Hyperglycemia; adequate glucose",
+          "monitoring": "Bedside glucose q15 min until >100 mg/dL; then q1-2h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Normal saline (0.9% NaCl) (CPT 96360)",
+          "route": "IV",
+          "indication": "Volume resuscitation for dehydration; hepatic encephalopathy precipitated by dehydration; uremic encephalopathy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Rate per clinical status",
+                "orderSentence": "IV Normal saline (0.9% NaCl) (CPT 96360) Rate per clinical status IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Bolus 500-1000 mL if dehydrated; maintenance per clinical assessment; avoid hypotonic fluids in hyponatremia unless directed",
+            "orderSentence": "IV Normal saline (0.9% NaCl) (CPT 96360) Rate per clinical status IV"
+          },
+          "contraindications": "Volume overload; decompensated heart failure; severe hyponatremia (use hypertonic saline instead)",
+          "monitoring": "Fluid balance; electrolytes q4-6h; urine output",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Naloxone (CPT 96374)",
+          "route": "IV",
+          "indication": "Suspected opioid intoxication contributing to altered mental status",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4-2 mg",
+                "orderSentence": "Naloxone (CPT 96374) 0.4-2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4-2 mg IV; may repeat every 2-3 min up to 10 mg total; consider infusion if recurrent sedation",
+            "orderSentence": "Naloxone (CPT 96374) 0.4-2 mg IV"
+          },
+          "contraindications": "Known hypersensitivity",
+          "monitoring": "Respiratory status; sedation level; withdrawal symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Hepatic Encephalopathy -- Specific Treatment": [
+        {
+          "item": "Lactulose (CPT 96374 if IV route needed)",
+          "route": "PO/NG",
+          "indication": "First-line treatment for acute hepatic encephalopathy; osmotic laxative reduces ammonia absorption; titrate to 2-3 bowel movements per day",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Lactulose (CPT 96374 if IV route needed) 30 mL PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "30 mL (20 g) PO q1-2h until first bowel movement, then titrate to 2-3 bowel movements per day; maintenance 15-30 mL PO BID-TID",
+            "orderSentence": "Lactulose (CPT 96374 if IV route needed) 30 mL PO"
+          },
+          "contraindications": "Galactosemia; bowel obstruction",
+          "monitoring": "Bowel movement count; stool consistency; electrolytes (dehydration risk); abdominal distension; mental status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lactulose enema",
+          "route": "PR",
+          "indication": "Unable to take PO; obtunded patient; ileus with rectal access",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mL in 700 mL NS",
+                "orderSentence": "Lactulose enema 300 mL in 700 mL NS PR"
+              }
+            ],
+            "route": "PR",
+            "instructions": "300 mL lactulose mixed in 700 mL normal saline as retention enema; retain 30-60 min; repeat q6-8h PRN",
+            "orderSentence": "Lactulose enema 300 mL in 700 mL NS PR"
+          },
+          "contraindications": "Rectal perforation risk; rectal surgery",
+          "monitoring": "Bowel output; electrolytes; abdominal exam",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Rifaximin (CPT 96374)",
+          "route": "PO",
+          "indication": "Add to lactulose for secondary prophylaxis of recurrent hepatic encephalopathy; first-line for prevention of HE recurrence (Bass 2010)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "550 mg",
+                "orderSentence": "Rifaximin (CPT 96374) 550 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "550 mg PO BID; continue indefinitely for secondary prophylaxis; use in combination with lactulose",
+            "orderSentence": "Rifaximin (CPT 96374) 550 mg PO"
+          },
+          "contraindications": "C. difficile infection (use with caution); known hypersensitivity",
+          "monitoring": "Hepatic function; C. difficile symptoms; mental status",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Identify and treat HE precipitants",
+          "route": "-",
+          "indication": "Precipitant correction is essential; most common: infection/SBP, GI bleeding, constipation, electrolyte abnormalities, dehydration, medication noncompliance, sedative use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Treat specific precipitant",
+                "orderSentence": "Identify and treat HE precipitants Treat specific precipitant -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Screen for: infection (blood/urine cultures, diagnostic paracentesis for SBP); GI bleeding (CBC, stool guaiac); constipation; electrolyte abnormalities; dehydration; medication noncompliance; sedative/opioid use",
+            "orderSentence": "Identify and treat HE precipitants Treat specific precipitant -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Per precipitant identified",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "L-ornithine L-aspartate (LOLA)",
+          "route": "IV",
+          "indication": "Alternative/adjunct for hepatic encephalopathy; reduces ammonia via urea cycle activation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 g",
+                "orderSentence": "L-ornithine L-aspartate (LOLA) 20 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 g IV infusion daily x 3-5 days; alternative to or adjunct with lactulose",
+            "orderSentence": "L-ornithine L-aspartate (LOLA) 20 g IV"
+          },
+          "contraindications": "Known hypersensitivity; severe renal failure",
+          "monitoring": "Ammonia levels; mental status; nausea/vomiting",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Zinc sulfate",
+          "route": "PO",
+          "indication": "Adjunct therapy; zinc deficiency is common in cirrhosis and impairs urea cycle function",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "220 mg",
+                "orderSentence": "Zinc sulfate 220 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "220 mg PO BID (50 mg elemental zinc per dose); long-term supplementation",
+            "orderSentence": "Zinc sulfate 220 mg PO"
+          },
+          "contraindications": "GI intolerance",
+          "monitoring": "Zinc levels; copper levels (chronic use may cause copper deficiency); GI side effects",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Albumin infusion (CPT 96365)",
+          "route": "IV",
+          "indication": "If spontaneous bacterial peritonitis (SBP) is the precipitant of HE; reduces mortality in SBP",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1.5 g/kg Day 1, then 1 g/kg Day 3",
+                "orderSentence": "Albumin infusion (CPT 96365) 1.5 g/kg Day 1, then 1 g/kg Day 3 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1.5 g/kg (max 150 g) on Day 1 of SBP diagnosis, then 1 g/kg (max 100 g) on Day 3",
+            "orderSentence": "Albumin infusion (CPT 96365) 1.5 g/kg Day 1, then 1 g/kg Day 3 IV"
+          },
+          "contraindications": "Volume overload; decompensated heart failure",
+          "monitoring": "Volume status; renal function; respiratory status",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Liver transplant evaluation referral",
+          "route": "-",
+          "indication": "Recurrent or refractory hepatic encephalopathy despite maximal medical therapy; MELD score assessment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Hepatology referral",
+                "orderSentence": "Liver transplant evaluation referral Hepatology referral -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Refer to hepatology/transplant center for evaluation if recurrent Grade 3-4 HE despite lactulose + rifaximin compliance",
+            "orderSentence": "Liver transplant evaluation referral Hepatology referral -"
+          },
+          "contraindications": "Active substance abuse (per center criteria); advanced malignancy; severe cardiopulmonary disease",
+          "monitoring": "MELD score; transplant candidacy assessment",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Uremic Encephalopathy -- Specific Treatment": [
+        {
+          "item": "Urgent hemodialysis (CPT 90935)",
+          "route": "-",
+          "indication": "Definitive treatment for uremic encephalopathy; improvement expected within 24-48h of initiation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per nephrology",
+                "orderSentence": "Urgent hemodialysis (CPT 90935) Per nephrology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Urgent hemodialysis; initial session may be shorter duration (2-3h) to avoid dialysis disequilibrium syndrome; standard sessions 3-4h thereafter",
+            "orderSentence": "Urgent hemodialysis (CPT 90935) Per nephrology -"
+          },
+          "contraindications": "Hemodynamic instability (consider CRRT); severe coagulopathy; lack of vascular access",
+          "monitoring": "BUN, Cr, electrolytes pre/post dialysis; neurologic status; hemodynamics; dialysis adequacy (Kt/V)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Continuous renal replacement therapy (CRRT) (CPT 90945)",
+          "route": "-",
+          "indication": "Uremic encephalopathy with hemodynamic instability; cannot tolerate intermittent hemodialysis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per nephrology",
+                "orderSentence": "Continuous renal replacement therapy (CRRT) (CPT 90945) Per nephrology -"
+              }
+            ],
+            "route": "-",
+            "instructions": "CRRT (CVVHD or CVVHDF) for hemodynamically unstable patients; slower solute clearance reduces risk of dialysis disequilibrium",
+            "orderSentence": "Continuous renal replacement therapy (CRRT) (CPT 90945) Per nephrology -"
+          },
+          "contraindications": "Severe coagulopathy (citrate anticoagulation option); lack of central venous access",
+          "monitoring": "Electrolytes q4-6h; fluid balance; hemodynamics; filter patency; anticoagulation",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Correct electrolyte abnormalities",
+          "route": "IV/PO",
+          "indication": "Potassium, calcium, magnesium, phosphorus derangements in renal failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per specific abnormality",
+                "orderSentence": "Correct electrolyte abnormalities Per specific abnormality IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Correct hyperkalemia urgently (calcium gluconate, insulin/dextrose, kayexalate); correct hypocalcemia, hypomagnesemia, hyperphosphatemia per standard protocols",
+            "orderSentence": "Correct electrolyte abnormalities Per specific abnormality IV/PO"
+          },
+          "contraindications": "Per specific correction",
+          "monitoring": "Electrolytes q4-6h; ECG for hyperkalemia; cardiac monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (CPT 96374)",
+          "route": "IV/PO",
+          "indication": "Seizure management in uremic encephalopathy; renally cleared — dose adjust for renal function; preferred ASM in renal failure",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mg",
+                "orderSentence": "Levetiracetam (CPT 96374) 500-1000 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "500-1000 mg IV or PO BID; reduce dose 50% if CrCl <30 mL/min; supplemental dose after hemodialysis (250-500 mg)",
+            "orderSentence": "Levetiracetam (CPT 96374) 500-1000 mg IV/PO"
+          },
+          "contraindications": "Known hypersensitivity",
+          "monitoring": "Seizure monitoring; renal function; behavioral side effects; post-dialysis supplemental dosing",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid nephrotoxic medications",
+          "route": "-",
+          "indication": "Medication review to discontinue or adjust nephrotoxins",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Review and discontinue",
+                "orderSentence": "Avoid nephrotoxic medications Review and discontinue -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Discontinue or dose-adjust: NSAIDs, aminoglycosides, contrast dye, ACE inhibitors/ARBs (in acute setting), metformin, lithium; pharmacy consult for renal dosing of all medications",
+            "orderSentence": "Avoid nephrotoxic medications Review and discontinue -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Renal function; medication levels where applicable",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Electrolyte Encephalopathy -- Specific Treatment": [
+        {
+          "item": "Hypertonic saline (3% NaCl) (CPT 96365)",
+          "route": "IV",
+          "indication": "Acute (<48h) or symptomatic hyponatremia with neurologic symptoms (seizures, altered consciousness, cerebral edema)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100-150 mL",
+                "orderSentence": "Hypertonic saline (3% NaCl) (CPT 96365) 100-150 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "100-150 mL 3% NaCl IV over 20 min; may repeat x2 if persistent severe symptoms (seizures); MAXIMUM correction 8 mEq/L in first 24 hours",
+            "orderSentence": "Hypertonic saline (3% NaCl) (CPT 96365) 100-150 mL IV"
+          },
+          "contraindications": "Hypervolemic hyponatremia with volume overload (relative — benefit outweighs risk if symptomatic)",
+          "monitoring": "Serum Na q2h during active correction; neurologic exam; urine output; watch for overcorrection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Chronic hyponatremia management (>48h)",
+          "route": "PO/IV",
+          "indication": "Chronic hyponatremia (>48h or unknown duration) — correct slowly to avoid ODS",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Correct at <=0.5 mEq/L per hour",
+                "orderSentence": "Chronic hyponatremia management (>48h) Correct at <=0.5 mEq/L per hour IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Fluid restriction (1-1.5 L/day) first-line; salt tablets 1-3 g PO TID if needed; isotonic saline if hypovolemic; MAXIMUM 8 mEq/L correction in 24h",
+            "orderSentence": "Chronic hyponatremia management (>48h) Correct at <=0.5 mEq/L per hour IV/PO"
+          },
+          "contraindications": "Overcorrection (causes ODS)",
+          "monitoring": "Serum Na q2-4h; strict I&O; neuro checks q4h; daily weight",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Tolvaptan (CPT 96374)",
+          "route": "PO",
+          "indication": "SIADH-associated hyponatremia; euvolemic hyponatremia refractory to fluid restriction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg",
+                "orderSentence": "Tolvaptan (CPT 96374) 15 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "15 mg PO daily; initiate in hospital only; titrate to 30 mg then 60 mg at >=24h intervals if Na not rising; discontinue fluid restriction when starting; max 30 days per FDA label",
+            "orderSentence": "Tolvaptan (CPT 96374) 15 mg PO"
+          },
+          "contraindications": "Hypovolemic hyponatremia; inability to sense or respond to thirst; anuria; concomitant strong CYP3A4 inhibitors; liver disease",
+          "monitoring": "Serum Na q6h for first 24h; strict I&O; hepatic function (risk of hepatotoxicity); limit treatment to 30 days",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Desmopressin rescue (CPT 96374)",
+          "route": "IV",
+          "indication": "Overcorrection of hyponatremia (Na rising >8 mEq/L in 24h) — prevents osmotic demyelination syndrome",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mcg",
+                "orderSentence": "Desmopressin rescue (CPT 96374) 2 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 mcg IV if sodium correction exceeds 8 mEq/L in 24h; re-lower sodium to safe correction rate; may give D5W 3-6 mL/kg/h concurrently",
+            "orderSentence": "Desmopressin rescue (CPT 96374) 2 mcg IV"
+          },
+          "contraindications": "Fluid overload (use with caution)",
+          "monitoring": "Serum Na q1-2h; urine output; fluid balance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Normal saline aggressive hydration (CPT 96360)",
+          "route": "IV",
+          "indication": "First-line treatment for hypercalcemic encephalopathy; volume expansion promotes calciuresis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-300 mL/h",
+                "orderSentence": "IV Normal saline aggressive hydration (CPT 96360) 200-300 mL/h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-300 mL/h NS initially; adjust for volume status and cardiac function; target urine output 200-300 mL/h",
+            "orderSentence": "IV Normal saline aggressive hydration (CPT 96360) 200-300 mL/h IV"
+          },
+          "contraindications": "Decompensated heart failure; severe volume overload",
+          "monitoring": "Fluid balance; urine output q1h; electrolytes q4-6h; calcium q6h; cardiac monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Calcitonin (CPT 96372)",
+          "route": "SC/IM",
+          "indication": "Rapid onset (hours) but temporary effect; bridge therapy while awaiting bisphosphonate onset",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 IU/kg",
+                "orderSentence": "Calcitonin (CPT 96372) 4 IU/kg SC/IM"
+              }
+            ],
+            "route": "SC/IM",
+            "instructions": "4 IU/kg SC or IM q12h; onset 4-6h; tachyphylaxis develops within 48h; use as bridge to bisphosphonate effect",
+            "orderSentence": "Calcitonin (CPT 96372) 4 IU/kg SC/IM"
+          },
+          "contraindications": "Known hypersensitivity; prior anaphylaxis",
+          "monitoring": "Calcium q6-12h; allergic reaction monitoring; effect wanes after 48h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Zoledronic acid (CPT 96365)",
+          "route": "IV",
+          "indication": "Definitive treatment for moderate-severe hypercalcemia; onset 2-4 days, duration weeks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Zoledronic acid (CPT 96365) 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV over 15 min; onset 2-4 days; may repeat in 7 days if inadequate response; renal dose adjustment if CrCl <30",
+            "orderSentence": "Zoledronic acid (CPT 96365) 4 mg IV"
+          },
+          "contraindications": "Severe renal impairment (CrCl <35 mL/min — use with caution); pregnancy",
+          "monitoring": "Renal function (Cr at 48h and 1 week); calcium q24h; phosphorus; magnesium",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Loop diuretics (Furosemide)",
+          "route": "IV",
+          "indication": "ONLY after adequate hydration; promotes calciuresis; avoid if dehydrated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20-40 mg",
+                "orderSentence": "Loop diuretics (Furosemide) 20-40 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20-40 mg IV q6-12h ONLY after adequate IV hydration established; avoid if volume depleted; monitor for electrolyte wasting",
+            "orderSentence": "Loop diuretics (Furosemide) 20-40 mg IV"
+          },
+          "contraindications": "Volume depletion; hypokalemia; hypomagnesemia",
+          "monitoring": "Electrolytes q4-6h; urine output; fluid balance; potassium and magnesium replacement",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Endocrine Encephalopathy -- Specific Treatment": [
+        {
+          "item": "Levothyroxine IV loading (CPT 96374)",
+          "route": "IV",
+          "indication": "First-line thyroid hormone replacement for myxedema coma; IV route mandatory (PO absorption unreliable in myxedema)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-400 mcg",
+                "orderSentence": "Levothyroxine IV loading (CPT 96374) 200-400 mcg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-400 mcg IV loading dose, then 50-100 mcg IV daily until able to take PO; lower loading dose (200 mcg) in elderly or coronary artery disease; transition to PO when clinically improved",
+            "orderSentence": "Levothyroxine IV loading (CPT 96374) 200-400 mcg IV"
+          },
+          "contraindications": "Uncorrected adrenal insufficiency (give hydrocortisone FIRST); acute MI; severe tachyarrhythmia",
+          "monitoring": "Heart rate; ECG; TSH and free T4 q24-48h; clinical response; watch for arrhythmia and myocardial ischemia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hydrocortisone IV (CPT 96374)",
+          "route": "IV",
+          "indication": "Empiric stress-dose steroids until adrenal insufficiency excluded; coexistent adrenal insufficiency common in myxedema; give BEFORE levothyroxine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Hydrocortisone IV (CPT 96374) 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "100 mg IV q8h; give BEFORE or concurrent with levothyroxine loading; continue until ACTH stimulation test excludes adrenal insufficiency; taper when stable",
+            "orderSentence": "Hydrocortisone IV (CPT 96374) 100 mg IV"
+          },
+          "contraindications": "Active untreated infection (relative — benefit outweighs risk); GI hemorrhage (relative)",
+          "monitoring": "Blood glucose q6h; electrolytes; cortisol levels; signs of infection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Supportive care: Passive rewarming",
+          "route": "-",
+          "indication": "Hypothermia management in myxedema coma; avoid active rewarming (causes vasodilation and cardiovascular collapse)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Passive rewarming only",
+                "orderSentence": "Supportive care: Passive rewarming Passive rewarming only -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Warm blankets, warm IV fluids, warm humidified oxygen; avoid active external rewarming (heating blankets, warm bath) as it causes peripheral vasodilation and cardiovascular collapse",
+            "orderSentence": "Supportive care: Passive rewarming Passive rewarming only -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Core temperature q1-2h; hemodynamics; expect slow rise over 24-48h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Mechanical ventilation",
+          "route": "-",
+          "indication": "Respiratory failure from hypoventilation; CO2 narcosis; inability to protect airway",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per institutional protocol",
+                "orderSentence": "Mechanical ventilation Per institutional protocol -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Intubate for respiratory failure (common in myxedema coma — hypoventilation, hypercapnia); avoid sedatives if possible",
+            "orderSentence": "Mechanical ventilation Per institutional protocol -"
+          },
+          "contraindications": "N/A",
+          "monitoring": "Ventilator settings; ABG q4-6h; ETCO2; weaning readiness",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Hepatology/Gastroenterology for hepatic encephalopathy management, transplant evaluation, portal hypertension management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nephrology for uremic encephalopathy, dialysis initiation, renal replacement therapy planning",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Endocrinology for myxedema coma, adrenal crisis, complex endocrine derangements",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurology for EEG interpretation, seizure management, differential diagnosis of encephalopathy, NCSE exclusion",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Critical Care / ICU for Grade 3-4 hepatic encephalopathy, myxedema coma, severe electrolyte emergencies requiring ICU-level monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pharmacy for medication reconciliation, renal dosing adjustments, drug interaction review, lactulose/rifaximin optimization",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nutrition/Dietetics for hepatic encephalopathy dietary planning (1.2-1.5 g/kg/day protein — NOT restricted); renal diet in uremia; fluid management",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Social work for discharge planning, medication access, substance abuse resources (if alcohol-related cirrhosis), dialysis transition support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for refractory hepatic encephalopathy with advanced cirrhosis not transplant-eligible; goals of care discussion",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Wernicke encephalopathy",
+      "features": "Classic triad: confusion, ophthalmoplegia, ataxia; thiamine deficiency; often coexists with hepatic encephalopathy in alcoholics",
+      "tests": "Thiamine level; MRI (medial thalamic, mammillary body, periaqueductal changes); response to IV thiamine"
+    },
+    {
+      "diagnosis": "Drug-induced neurotoxicity",
+      "features": "Temporal relationship with medication initiation or dose change; medication history critical; serotonin syndrome, NMS, lithium toxicity",
+      "tests": "Drug levels; urine drug screen; medication reconciliation; specific drug levels (lithium, valproate, etc.)"
+    },
+    {
+      "diagnosis": "Septic encephalopathy",
+      "features": "Fever; hemodynamic instability; positive cultures; procalcitonin elevation; altered mental status with infection",
+      "tests": "Blood cultures; procalcitonin; lactate; CRP; imaging for infection source"
+    },
+    {
+      "diagnosis": "CNS infection (meningitis/encephalitis)",
+      "features": "Fever; meningismus; headache; focal neurologic signs; CSF pleocytosis",
+      "tests": "Lumbar puncture (elevated WBC, low glucose, elevated protein); CSF cultures; HSV PCR; MRI"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis",
+      "features": "Subacute onset; psychiatric symptoms; seizures; movement disorders; CSF antibodies",
+      "tests": "Autoimmune encephalitis panel (serum + CSF); MRI (temporal lobe FLAIR changes); EEG"
+    },
+    {
+      "diagnosis": "Non-convulsive status epilepticus (NCSE)",
+      "features": "Fluctuating altered consciousness; subtle motor signs (eye deviation, nystagmus, automatisms); may coexist with metabolic encephalopathy",
+      "tests": "Continuous EEG (definitive); trial of benzodiazepine with clinical and electrographic improvement"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Severe hypertension; seizures; visual changes; posterior predominant vasogenic edema on MRI",
+      "tests": "MRI (posterior white matter vasogenic edema); blood pressure assessment"
+    },
+    {
+      "diagnosis": "Hepatic + Uremic combined",
+      "features": "Hepatorenal syndrome patients may have combined metabolic causes",
+      "tests": "CMP; ammonia; BUN/Cr; address both liver and renal failure"
+    },
+    {
+      "diagnosis": "Hypoxic-ischemic encephalopathy",
+      "features": "History of cardiac arrest, respiratory failure, severe hypotension; DWI restriction on MRI",
+      "tests": "Clinical history; ABG; MRI brain (cortical ribbon, basal ganglia DWI restriction); EEG"
+    },
+    {
+      "diagnosis": "Delirium (multifactorial)",
+      "features": "Fluctuating attention; inattention as cardinal feature; often multifactorial in hospitalized elderly patients",
+      "tests": "CAM assessment; comprehensive metabolic workup; medication review; infection screen; environmental assessment"
+    },
+    {
+      "diagnosis": "Structural lesion (stroke, tumor, SDH)",
+      "features": "Focal neurologic deficits; asymmetric findings; acute onset (stroke) or progressive (tumor); unilateral imaging findings",
+      "tests": "CT head (hemorrhage, mass); MRI brain (stroke, tumor); CT angiography (large vessel occlusion)"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Lactulose is first-line treatment for overt hepatic encephalopathy",
+      "evidenceLevel": "Level I (Meta-analysis)",
+      "source": "Gluud LL et al. Lactulose, rifaximin or branched chain amino acids for hepatic encephalopathy. Cochrane Database Syst Rev 2017 (PMID 28493663)"
+    },
+    {
+      "recommendation": "Rifaximin added to lactulose reduces HE recurrence by 58%",
+      "evidenceLevel": "Level I (RCT)",
+      "source": "Bass NM et al. Rifaximin treatment in hepatic encephalopathy. N Engl J Med 2010;362:1071-81 (PMID 20197548)"
+    },
+    {
+      "recommendation": "EASL/AASLD Practice Guidelines for hepatic encephalopathy management",
+      "evidenceLevel": "Level I (Guideline)",
+      "source": "Vilstrup H et al. Hepatic encephalopathy in chronic liver disease: 2014 Practice Guideline by EASL and AASLD. Hepatology 2014;60:715-35 (PMID 25042402)"
+    },
+    {
+      "recommendation": "Protein restriction is NOT recommended in hepatic encephalopathy; maintain 1.2-1.5 g/kg/day",
+      "evidenceLevel": "Level II (Guideline)",
+      "source": "EASL/AASLD 2014 Guidelines; European Society for Clinical Nutrition (ESPEN) Guidelines on nutrition in liver disease 2019 (PMID 30170790)"
+    },
+    {
+      "recommendation": "Hyponatremia correction rate should not exceed 8 mEq/L in 24 hours to prevent ODS",
+      "evidenceLevel": "Level II (Expert consensus/retrospective studies)",
+      "source": "Sterns RH. Disorders of plasma sodium — causes, consequences, and correction. N Engl J Med 2015;372:55-65 (PMID 25551526); Sterns RH et al. Osmotic demyelination syndrome following correction of hyponatremia. N Engl J Med 1986"
+    },
+    {
+      "recommendation": "European clinical practice guideline on diagnosis and treatment of hyponatremia",
+      "evidenceLevel": "Level I (Guideline)",
+      "source": "Spasovski G et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170:G1-47 (PMID 24569125)"
+    },
+    {
+      "recommendation": "Tolvaptan for SIADH-associated hyponatremia (SALT trials)",
+      "evidenceLevel": "Level I (RCT)",
+      "source": "Schrier RW et al. Tolvaptan, a selective oral vasopressin V2-receptor antagonist, for hyponatremia. N Engl J Med 2006;355:2099-112 (PMID 17105757)"
+    },
+    {
+      "recommendation": "Desmopressin rescue for overcorrection of hyponatremia prevents ODS",
+      "evidenceLevel": "Level III (Case series/expert opinion)",
+      "source": "Sterns RH et al. Therapeutic relowering of the serum sodium in a patient after excessive correction of hyponatremia. Clin Nephrol 2009 (PMID 26444023)"
+    },
+    {
+      "recommendation": "Uremic encephalopathy is reversible with dialysis; pathophysiology review",
+      "evidenceLevel": "Level III (Review)",
+      "source": "Burn DJ, Bates D. Neurology and the kidney. J Neurol Neurosurg Psychiatry 1998;65:810-21 (PMID 9854954); Seifter JL, Samuels MA. Uremic encephalopathy and other brain disorders associated with renal failure. Semin Neurol 2011 (PMID 21590621)"
+    },
+    {
+      "recommendation": "Myxedema coma management: IV levothyroxine loading with stress-dose steroids",
+      "evidenceLevel": "Level III (Expert consensus/case series)",
+      "source": "Wall CR. Myxedema coma: diagnosis and treatment. Am Fam Physician 2000;62:2485-90 (PMID 10695693); Jonklaas J et al. ATA Guidelines for Hypothyroidism 2014 (PMID 25266247)"
+    },
+    {
+      "recommendation": "L-ornithine L-aspartate (LOLA) for hepatic encephalopathy",
+      "evidenceLevel": "Level I (Meta-analysis)",
+      "source": "Butterworth RF et al. L-ornithine L-aspartate for the treatment of hepatic encephalopathy in cirrhosis: meta-analysis. Dig Dis 2018 (PMID 30625503); Goh ET et al. L-ornithine L-aspartate for prevention and treatment of hepatic encephalopathy. Cochrane Database Syst Rev 2018 (PMID 29762873)"
+    },
+    {
+      "recommendation": "ODS prevention: slow correction and desmopressin rescue strategy",
+      "evidenceLevel": "Level II (Retrospective cohort/expert consensus)",
+      "source": "Sterns RH. Treatment of severe hyponatremia. Clin J Am Soc Nephrol 2018;13:641-49 (PMID 29444771)"
+    },
+    {
+      "recommendation": "Continuous EEG monitoring for NCSE detection in encephalopathy",
+      "evidenceLevel": "Level II (Guideline/observational)",
+      "source": "Claassen J et al. Recommendations on the use of EEG monitoring in critically ill patients. Crit Care Med 2013 (PMID 23979365)"
+    },
+    {
+      "recommendation": "Zinc supplementation as adjunct in hepatic encephalopathy",
+      "evidenceLevel": "Level II (RCTs)",
+      "source": "Chavez-Tapia NC et al. A systematic review and meta-analysis of the use of oral zinc in the treatment of hepatic encephalopathy. Nutr J 2013 (PMID 23742732)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurologic exam (GCS, orientation, asterixis)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2-4h (acute); q shift (stable)",
+      "action": "Escalate treatment; consider ICU if declining; repeat imaging"
+    },
+    {
+      "item": "Ammonia (venous)",
+      "ED": "STAT",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q12-24h during acute HE treatment",
+      "action": "Optimize lactulose; check for precipitants; rifaximin if not already on"
+    },
+    {
+      "item": "Serum sodium",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q2h during active correction; q4-6h when stable",
+      "action": "Slow or stop correction if rate excessive; desmopressin rescue if overcorrection"
+    },
+    {
+      "item": "BUN/Creatinine",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q12-24h; pre/post dialysis",
+      "action": "Adjust dialysis frequency; nephrology reassessment"
+    },
+    {
+      "item": "Blood glucose",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q1h if on insulin drip; q4-6h otherwise",
+      "action": "Adjust insulin; D10W drip for recurrent hypoglycemia"
+    },
+    {
+      "item": "Serum osmolality",
+      "ED": "STAT",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q6-12h during electrolyte correction",
+      "action": "Adjust correction rate; watch for ODS risk"
+    },
+    {
+      "item": "EEG monitoring",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "Continuous in ICU; spot check on floor",
+      "action": "Treat NCSE; adjust ASM; reassess metabolic cause"
+    },
+    {
+      "item": "Bowel movement count (hepatic)",
+      "ED": "-",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Per BM (record every stool)",
+      "action": "Increase lactulose if <2 BMs/day; decrease if >4 BMs/day or diarrhea"
+    },
+    {
+      "item": "Dialysis adequacy (Kt/V)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Per dialysis session",
+      "action": "Adjust dialysis prescription; increase duration or frequency"
+    },
+    {
+      "item": "Fluid balance (I&O)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1h ICU; q4h floor",
+      "action": "Adjust IV rate; diuretics if overloaded; bolus if depleted"
+    },
+    {
+      "item": "Calcium (ionized)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "q6-12h during correction",
+      "action": "Continue hydration and bisphosphonate; adjust calcitonin"
+    },
+    {
+      "item": "TSH/Free T4 (myxedema)",
+      "ED": "-",
+      "HOSP": "URGENT",
+      "OPD": "ROUTINE",
+      "ICU": "URGENT",
+      "frequency": "q24-48h during treatment",
+      "action": "Adjust levothyroxine dose; assess clinical response"
+    },
+    {
+      "item": "Core temperature (myxedema)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "-",
+      "ICU": "STAT",
+      "frequency": "q1-2h",
+      "action": "Continue passive rewarming; assess for infection if not improving"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**ICU Admission**",
+      "criteria": "Grade 3-4 hepatic encephalopathy (somnolence, coma); acute symptomatic hyponatremia with seizures or obtundation; myxedema coma; need for continuous EEG monitoring; hemodynamic instability requiring vasopressors; need for CRRT; GCS <=8 requiring intubation; active hypertonic saline infusion requiring q1-2h sodium monitoring"
+    },
+    {
+      "disposition": "**Step-down / Telemetry**",
+      "criteria": "Grade 2 hepatic encephalopathy improving on lactulose; sodium correction requiring q4-6h monitoring; uremic encephalopathy initiating intermittent hemodialysis with improving mental status; post-ICU stabilization with ongoing IV medication needs"
+    },
+    {
+      "disposition": "**General Medical Floor**",
+      "criteria": "Grade 1-2 hepatic encephalopathy on stable lactulose regimen; mild-moderate chronic hyponatremia under fluid restriction; uremic encephalopathy with established dialysis schedule and improving cognition; stable electrolyte abnormalities being corrected"
+    },
+    {
+      "disposition": "**Discharge Home**",
+      "criteria": "Mental status returned to baseline; underlying metabolic derangement corrected or stable on outpatient regimen; reliable outpatient follow-up arranged; patient/family education completed; medications reconciled and available; for HE: lactulose and rifaximin prescribed, bowel regimen established; for uremia: dialysis schedule confirmed; for hyponatremia: sodium stable >=125 mEq/L and improving, fluid restriction understood"
+    },
+    {
+      "disposition": "**Transfer to Higher Level of Care**",
+      "criteria": "Need for liver transplant evaluation at transplant center; need for emergent dialysis at facility without nephrology; refractory encephalopathy not responding to standard treatment; need for specialized neurological evaluation not available at current facility"
+    },
+    {
+      "disposition": "**Outpatient Follow-up**",
+      "criteria": "Hepatology within 1-2 weeks (hepatic encephalopathy); Nephrology within 1 week (uremic encephalopathy); Endocrinology within 1-2 weeks (myxedema); Neurology within 2-4 weeks (EEG follow-up, seizure management); PCP within 1 week for all; repeat labs (sodium, BUN/Cr, ammonia, LFTs) within 3-7 days per etiology"
+    }
+  ]
+}

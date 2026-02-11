@@ -1,0 +1,1115 @@
+{
+  "id": "neurotoxicology",
+  "title": "Neurotoxicology",
+  "version": "1.0",
+  "icd10": [
+    "** G92.8 (Other toxic encephalopathy)",
+    "G92.9 (Toxic encephalopathy",
+    "unspecified)",
+    "T43.8X5A (Adverse effect of other psychotropic drugs — lithium)",
+    "T36.1X5A (Adverse effect of cephalosporins — cefepime)",
+    "T45.1X5A (Adverse effect of antineoplastic/immunosuppressive drugs — checkpoint inhibitors)",
+    "G04.81 (Other encephalitis — checkpoint inhibitor encephalitis)"
+  ],
+  "scope": "** Evaluation and management of drug-induced neurotoxicity syndromes in adults. Covers three high-yield syndromes: (1) Lithium neurotoxicity, (2) Cefepime neurotoxicity/encephalopathy, and (3) Checkpoint inhibitor (immune checkpoint inhibitor) encephalitis. Includes recognition, diagnostic workup, acute treatment, and monitoring. Excludes chemotherapy-induced peripheral neuropathy (separate plan), neuroleptic malignant syndrome, and serotonin syndrome (addressed in other contexts).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Immediate)": [
+        {
+          "item": "CBC with differential (85025)",
+          "rationale": "Baseline; infection screen; immunotherapy complication",
+          "target": "Normal; leukocytosis suggests infection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP — BMP + LFTs (80053)",
+          "rationale": "Renal function (cefepime/lithium clearance), hepatic function, electrolytes",
+          "target": "Cr elevated = impaired clearance; electrolyte derangement",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lithium level, serum (80178)",
+          "rationale": "If lithium exposure; therapeutic 0.6-1.2 mEq/L; toxic >1.5; severe >2.5",
+          "target": "Therapeutic vs toxic range; correlate with symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cefepime trough level (80299)",
+          "rationale": "If on cefepime; toxic typically >20 mcg/mL; renal adjustment needed",
+          "target": "Trough >20 mcg/mL correlates with neurotoxicity",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ammonia (82140)",
+          "rationale": "Rule out hepatic encephalopathy; can coexist with drug toxicity",
+          "target": "Normal (<35 mcmol/L)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood glucose (82947)",
+          "rationale": "Exclude metabolic cause of encephalopathy",
+          "target": "Normal (70-100 mg/dL)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH, free T4 (84443, 84439)",
+          "rationale": "Lithium-induced thyroid dysfunction; hypothyroid encephalopathy",
+          "target": "TSH elevated suggests lithium-induced hypothyroidism",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Serum osmolality (83930)",
+          "rationale": "Osmolar gap; hydration status; lithium toxicity correlation",
+          "target": "Normal 275-295 mOsm/kg; elevated in dehydration",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "Autoimmune encephalitis panel, serum (83519)",
+          "rationale": "Checkpoint inhibitor cases; NMDAR, LGI1, CASPR2, GAD65 antibodies",
+          "target": "Identify neuronal antibody suggesting irAE encephalitis",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (86141), ESR (85652)",
+          "rationale": "Inflammatory markers; checkpoint inhibitor irAE activity",
+          "target": "Elevated suggests active inflammation in irAE",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cortisol, AM (82533)",
+          "rationale": "Checkpoint inhibitors can cause adrenal insufficiency (hypophysitis)",
+          "target": "Low cortisol = adrenal crisis; requires replacement",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Drug/toxicology screen (80307)",
+          "rationale": "Exclude co-intoxicants or other drug-induced encephalopathy",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vitamin B12 (82607), folate (82746), thiamine (84425)",
+          "rationale": "Nutritional deficiency confounders",
+          "target": "Normal",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Blood cultures (87040)",
+          "rationale": "Exclude infection if febrile; immunosuppressed patients",
+          "target": "No growth",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        }
+      ],
+      "Specialized Labs": [
+        {
+          "item": "CSF analysis — cell count, protein, glucose, cytology, autoimmune panel (89050, 89051, 84157, 82945, 83519)",
+          "rationale": "Checkpoint inhibitor cases; lymphocytic pleocytosis suggests irAE encephalitis",
+          "target": "WBC 10-100 (lymphocyte predominant), elevated protein",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "RBC transketolase / thiamine level (84425)",
+          "rationale": "If Wernicke encephalopathy differential",
+          "target": "Normal excludes thiamine deficiency",
+          "ED": "—",
+          "HOSP": "EXT",
+          "OPD": "—",
+          "ICU": "EXT"
+        },
+        {
+          "item": "Cefepime CSF level, if available (80299)",
+          "rationale": "Elevated CSF cefepime in neurotoxicity",
+          "target": "Elevated correlates with CNS toxicity",
+          "ED": "—",
+          "HOSP": "EXT",
+          "OPD": "—",
+          "ICU": "EXT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "CT head without contrast (70450)",
+          "timing": "STAT",
+          "target": "Exclude structural cause (hemorrhage, mass, hydrocephalus)",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRI brain with FLAIR/DWI (70551, 70553)",
+          "timing": "URGENT",
+          "target": "Checkpoint inhibitor: limbic/cortical T2 hyperintensity; lithium: cerebellar/brainstem changes; cefepime: usually normal",
+          "contraindications": "Pacemaker, hemodynamic instability",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "EEG — routine or continuous (95816, 95950)",
+          "timing": "STAT/URGENT",
+          "target": "Cefepime: triphasic waves, NCSE patterns; lithium: diffuse slowing; checkpoint: seizure activity possible",
+          "contraindications": "None",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with contrast (70553)",
+          "timing": "URGENT for checkpoint inhibitor",
+          "target": "Meningeal or cortical enhancement suggests inflammation",
+          "contraindications": "Contrast allergy, renal impairment",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "PET-CT (78816)",
+          "timing": "EXT",
+          "target": "Tumor staging in checkpoint inhibitor patients",
+          "contraindications": "Hemodynamic instability",
+          "ED": "—",
+          "HOSP": "EXT",
+          "OPD": "—",
+          "ICU": "EXT"
+        },
+        {
+          "item": "EMG/NCS (95907, 95913)",
+          "timing": "ROUTINE OPD",
+          "target": "If peripheral neuropathy component suspected",
+          "contraindications": "None",
+          "ED": "—",
+          "HOSP": "—",
+          "OPD": "ROUTINE",
+          "ICU": "—"
+        },
+        {
+          "item": "Continuous EEG (cEEG) (95950)",
+          "timing": "STAT/URGENT",
+          "target": "Cefepime NCSE monitoring; ongoing seizure detection",
+          "contraindications": "None",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Treatment": {
+      "Immediate Stabilization (All Etiologies)": [
+        {
+          "item": "Airway management",
+          "route": "—",
+          "indication": "GCS <8 or active seizures with respiratory compromise",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Airway management N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Intubation for airway protection if GCS <8 or recurrent seizures with aspiration risk",
+            "orderSentence": "Airway management N/A —"
+          },
+          "contraindications": "—",
+          "monitoring": "ETT placement, ventilator settings",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline",
+          "route": "IV",
+          "indication": "Volume resuscitation; enhance renal clearance (lithium)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-300 mL/hr",
+                "orderSentence": "IV normal saline 200-300 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-300 mL/hr initially; adjust for cardiac status and urine output",
+            "orderSentence": "IV normal saline 200-300 mL/hr IV"
+          },
+          "contraindications": "Fluid overload, decompensated CHF",
+          "monitoring": "I/O, weight, electrolytes, creatinine",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Seizure termination — first-line benzodiazepine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg IV (max 4 mg)",
+                "orderSentence": "Lorazepam 0.1 mg/kg IV (max 4 mg) IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg per dose); may repeat x1 in 5 minutes",
+            "orderSentence": "Lorazepam 0.1 mg/kg IV (max 4 mg) IV"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "RR, O2 saturation, sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Discontinue offending agent",
+          "route": "—",
+          "indication": "CRITICAL first step for all three syndromes",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Discontinue offending agent N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Immediately stop lithium, cefepime, or checkpoint inhibitor depending on suspected etiology",
+            "orderSentence": "Discontinue offending agent N/A —"
+          },
+          "contraindications": "—",
+          "monitoring": "Symptom trajectory after discontinuation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        }
+      ],
+      "Lithium Neurotoxicity — Specific Treatment": [
+        {
+          "item": "Stop lithium",
+          "route": "—",
+          "indication": "All suspected lithium neurotoxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stop lithium N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Immediately discontinue lithium; do not resume until neurology clearance",
+            "orderSentence": "Stop lithium N/A —"
+          },
+          "contraindications": "—",
+          "monitoring": "Lithium level q6h until <1.0 mEq/L",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV normal saline (aggressive hydration)",
+          "route": "IV",
+          "indication": "Enhance renal lithium clearance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200-300 mL/hr",
+                "orderSentence": "IV normal saline (aggressive hydration) 200-300 mL/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "200-300 mL/hr; adjust for cardiac status; target UOP >100 mL/hr",
+            "orderSentence": "IV normal saline (aggressive hydration) 200-300 mL/hr IV"
+          },
+          "contraindications": "Decompensated CHF, fluid overload, severe renal failure",
+          "monitoring": "I/O, weight, electrolytes, Cr q12h",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hemodialysis",
+          "route": "—",
+          "indication": "Severe lithium toxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Hemodialysis N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Indications: level >4.0 mEq/L; severe symptoms (seizures, coma, cardiovascular instability); impaired renal function; level >2.5 mEq/L with symptoms; run until level <1.0 mEq/L; recheck 6-8h post-dialysis (rebound)",
+            "orderSentence": "Hemodialysis N/A —"
+          },
+          "contraindications": "Hemodynamic instability (relative); vascular access",
+          "monitoring": "Lithium level q2h during and q6h post; electrolytes; rebound levels 6-8h post",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Whole bowel irrigation (GoLYTELY)",
+          "route": "PO/NG",
+          "indication": "Acute lithium ingestion within 1-2 hours, sustained-release preparations",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 L/hr",
+                "orderSentence": "Whole bowel irrigation (GoLYTELY) 1-2 L/hr PO/NG"
+              }
+            ],
+            "route": "PO/NG",
+            "instructions": "1-2 L/hr PO or via NG tube until rectal effluent clear; for acute ingestion of sustained-release lithium",
+            "orderSentence": "Whole bowel irrigation (GoLYTELY) 1-2 L/hr PO/NG"
+          },
+          "contraindications": "Ileus, bowel obstruction, perforation, unprotected airway",
+          "monitoring": "Abdominal exam, electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Avoid nephrotoxic agents",
+          "route": "—",
+          "indication": "Prevent further lithium accumulation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Avoid nephrotoxic agents N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Discontinue NSAIDs, ACE inhibitors, ARBs, and diuretics (all increase lithium levels); hold until lithium cleared",
+            "orderSentence": "Avoid nephrotoxic agents N/A —"
+          },
+          "contraindications": "—",
+          "monitoring": "Lithium level, renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        }
+      ],
+      "Cefepime Neurotoxicity — Specific Treatment": [
+        {
+          "item": "Stop cefepime",
+          "route": "—",
+          "indication": "All suspected cefepime neurotoxicity",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stop cefepime N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Immediately discontinue cefepime; switch to alternative antibiotic class; resolution expected 24-72 hours",
+            "orderSentence": "Stop cefepime N/A —"
+          },
+          "contraindications": "Active infection requiring cephalosporin (use alternative)",
+          "monitoring": "Neurologic exam q4-6h; EEG if seizures",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Alternative antibiotic selection",
+          "route": "IV",
+          "indication": "Continued infection treatment after cefepime stopped",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per susceptibilities",
+                "orderSentence": "Alternative antibiotic selection Per susceptibilities IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Meropenem (if not cross-reactive); piperacillin-tazobactam; ceftriaxone (lower neurotoxicity risk); consult ID",
+            "orderSentence": "Alternative antibiotic selection Per susceptibilities IV"
+          },
+          "contraindications": "Drug allergies, cross-reactivity",
+          "monitoring": "Infection markers, cultures",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam",
+          "route": "IV/PO",
+          "indication": "NCSE confirmed on EEG or clinical seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Load 1000-1500 mg IV, then 1000-1500 mg BID; adjust for renal function",
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
+          },
+          "contraindications": "Severe renal impairment (adjust dose)",
+          "monitoring": "Seizure frequency, EEG, renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Acute seizure termination",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg (max 4 mg)",
+                "orderSentence": "Lorazepam 0.1 mg/kg (max 4 mg) IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg); may repeat x1; for acute seizure or NCSE",
+            "orderSentence": "Lorazepam 0.1 mg/kg (max 4 mg) IV"
+          },
+          "contraindications": "Respiratory depression",
+          "monitoring": "RR, O2 sat, sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Renal dose adjustment (if cefepime cannot be stopped)",
+          "route": "—",
+          "indication": "Continued cefepime required with dose adjustment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per CrCl",
+                "orderSentence": "Renal dose adjustment (if cefepime cannot be stopped) Per CrCl IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "CrCl 30-60: 2g q12h; CrCl 11-29: 2g q24h; CrCl <11: 1g q24h; HD: 1g q24h (give after HD); monitor trough levels",
+            "orderSentence": "Renal dose adjustment (if cefepime cannot be stopped) Per CrCl IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Cefepime trough, renal function",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        }
+      ],
+      "Checkpoint Inhibitor Encephalitis — Specific Treatment": [
+        {
+          "item": "Hold immunotherapy",
+          "route": "—",
+          "indication": "Grade 2+ checkpoint inhibitor encephalitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Hold immunotherapy N/A —"
+              }
+            ],
+            "route": "—",
+            "instructions": "Hold all checkpoint inhibitor therapy (anti-PD-1/PD-L1/CTLA-4); permanent discontinuation for Grade 3-4",
+            "orderSentence": "Hold immunotherapy N/A —"
+          },
+          "contraindications": "—",
+          "monitoring": "Neurologic exam, tumor response",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylprednisolone (high-dose pulse)",
+          "route": "IV",
+          "indication": "Grade 3-4 checkpoint inhibitor encephalitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg daily x 3-5 days",
+                "orderSentence": "Methylprednisolone (high-dose pulse) 1000 mg daily x 3-5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 1 hour; then transition to oral prednisone 1 mg/kg with slow taper over 4-8 weeks",
+            "orderSentence": "Methylprednisolone (high-dose pulse) 1000 mg daily x 3-5 days IV"
+          },
+          "contraindications": "Active untreated infection, uncontrolled diabetes (relative)",
+          "monitoring": "Glucose, BP, psychiatric symptoms, GI prophylaxis",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prednisone (oral)",
+          "route": "PO",
+          "indication": "Grade 2 encephalitis; oral taper after IV pulse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-1 mg/kg/day",
+                "orderSentence": "Prednisone (oral) 0.5-1 mg/kg/day PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Grade 2: 0.5-1 mg/kg/day; post-pulse taper: start at 1 mg/kg/day, taper by 10 mg/week over 4-8 weeks minimum",
+            "orderSentence": "Prednisone (oral) 0.5-1 mg/kg/day PO"
+          },
+          "contraindications": "Active infection, poorly controlled diabetes",
+          "monitoring": "Glucose, BP, bone density, infection signs",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IVIg",
+          "route": "IV",
+          "indication": "Steroid-refractory or concurrent with steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg/day x 5 days",
+                "orderSentence": "IVIg 0.4 g/kg/day x 5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.4 g/kg/day IV for 5 days (total 2 g/kg); pre-medicate with acetaminophen/diphenhydramine; slow initial rate",
+            "orderSentence": "IVIg 0.4 g/kg/day x 5 days IV"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies; severe renal impairment",
+          "monitoring": "Renal function, headache, infusion reactions, thrombotic events",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Plasma exchange (PLEX)",
+          "route": "—",
+          "indication": "Steroid + IVIg refractory",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 exchanges",
+                "orderSentence": "Plasma exchange (PLEX) 5-7 exchanges —"
+              }
+            ],
+            "route": "—",
+            "instructions": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per exchange",
+            "orderSentence": "Plasma exchange (PLEX) 5-7 exchanges —"
+          },
+          "contraindications": "Hemodynamic instability, severe sepsis, coagulopathy",
+          "monitoring": "BP, electrolytes, coagulation, fibrinogen",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rituximab",
+          "route": "IV",
+          "indication": "Refractory cases (failed steroids, IVIg, PLEX)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "375 mg/m2 weekly x 4",
+                "orderSentence": "Rituximab 375 mg/m2 weekly x 4 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "375 mg/m2 IV weekly for 4 weeks; pre-medicate; screen for HBV before starting",
+            "orderSentence": "Rituximab 375 mg/m2 weekly x 4 IV"
+          },
+          "contraindications": "Active HBV, active infection, live vaccines",
+          "monitoring": "B-cell counts, immunoglobulins, infusion reactions",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**Grade 1**",
+          "severity": "Mild symptoms",
+          "immunotherapy": "Hold immunotherapy, monitor",
+          "corticosteroid": "None or low-dose prednisone",
+          "escalation": "Neurology consult if worsening"
+        },
+        {
+          "item": "**Grade 2**",
+          "severity": "Moderate symptoms",
+          "immunotherapy": "Hold immunotherapy",
+          "corticosteroid": "Prednisone 0.5-1 mg/kg/day",
+          "escalation": "Consider IV steroids if no improvement in 3-5 days"
+        },
+        {
+          "item": "**Grade 3**",
+          "severity": "Severe symptoms",
+          "immunotherapy": "Hold immunotherapy; likely permanent discontinuation",
+          "corticosteroid": "Methylprednisolone 1-2 mg/kg IV daily",
+          "escalation": "Add IVIg or PLEX if refractory; ICU consult"
+        },
+        {
+          "item": "**Grade 4**",
+          "severity": "Life-threatening",
+          "immunotherapy": "Permanent discontinuation",
+          "corticosteroid": "Methylprednisolone 1000 mg IV daily x 3-5 days",
+          "escalation": "IVIg/PLEX if refractory; rituximab for resistant cases; ICU mandatory"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Nephrology consult for lithium toxicity hemodialysis decisions and renal dosing guidance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Toxicology consult for lithium toxicity dosing guidance, hemodialysis timing, and co-intoxicant management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Infectious disease consult for cefepime neurotoxicity antibiotic alternatives and susceptibility-guided selection",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "—",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oncology consult for checkpoint inhibitor encephalitis treatment decisions and immunotherapy rechallenge guidance",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neurology consult for all etiologies: EEG interpretation, seizure management, NCSE detection, and SILENT syndrome evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Critical care consult for ICU admission if GCS <12, refractory seizures, autonomic instability, or need for hemodialysis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "—",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Psychiatry consult for lithium neurotoxicity patients requiring mood stabilizer alternatives and psychiatric medication management",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Pharmacy consult for renal dose adjustments (cefepime), drug interaction review (lithium), and alternative antibiotic selection",
+          "ED": "—",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Patient/Family Instructions": [
+        {
+          "item": "**Lithium:** Educate on drug interactions (NSAIDs, ACEi, diuretics), hydration importance, and regular level monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Lithium:** Teach sick day rules — hold lithium during dehydration, vomiting, diarrhea, or febrile illness; seek medical attention",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Lithium:** Explain signs of toxicity (tremor, ataxia, confusion, slurred speech) requiring immediate medical evaluation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Cefepime:** Reassure on reversibility — symptoms typically resolve 24-72 hours after drug discontinuation in most patients",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—"
+        },
+        {
+          "item": "**Cefepime:** Educate on importance of renal function monitoring and dose adjustment for any future cephalosporin use",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Checkpoint inhibitor:** Educate on irAE recognition — any new neurological symptoms (confusion, seizures, weakness) require emergency evaluation",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Checkpoint inhibitor:** Provide steroid taper education — emphasize completing the full taper and not stopping abruptly",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Checkpoint inhibitor:** Explain that neurological irAEs may occur weeks to months after starting immunotherapy",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "**Lithium:** Maintain adequate hydration (2-3 L/day); avoid dehydration from exercise, heat, or illness",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Lithium:** Regular lithium level monitoring (q3-6 months when stable; more frequently with dose changes or illness)",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Lithium:** Avoid NSAIDs, ACE inhibitors, ARBs, and thiazide diuretics or use only with increased monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT"
+        },
+        {
+          "item": "**Cefepime:** Renal-dosed prescribing — always adjust cefepime dose for renal function before initiating",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—"
+        },
+        {
+          "item": "**Cefepime:** Trough level monitoring in patients with renal impairment (CrCl <60 mL/min) or age >65",
+          "ED": "—",
+          "HOSP": "STAT",
+          "OPD": "—"
+        },
+        {
+          "item": "**Checkpoint inhibitor:** Baseline neurological assessment before starting immunotherapy to detect new deficits early",
+          "ED": "—",
+          "HOSP": "—",
+          "OPD": "ROUTINE"
+        },
+        {
+          "item": "**Checkpoint inhibitor:** Prompt reporting of any new neurological symptoms to oncology team throughout treatment course",
+          "ED": "—",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Metabolic encephalopathy (hepatic)",
+      "features": "Asterixis, elevated ammonia, liver disease history",
+      "tests": "Ammonia, LFTs, liver imaging"
+    },
+    {
+      "diagnosis": "Metabolic encephalopathy (uremic)",
+      "features": "Elevated BUN/Cr, uremic frost, history of CKD",
+      "tests": "BMP, renal function panel"
+    },
+    {
+      "diagnosis": "Wernicke encephalopathy",
+      "features": "Alcoholism or malnutrition, classic triad (confusion, ataxia, ophthalmoplegia)",
+      "tests": "Thiamine level, MRI (mammillary bodies), thiamine trial"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (non-drug-induced)",
+      "features": "Subacute onset, no temporal drug relationship, may have tumor association",
+      "tests": "Autoimmune encephalitis panel (serum/CSF), MRI, tumor workup"
+    },
+    {
+      "diagnosis": "CNS infection (meningitis/encephalitis)",
+      "features": "Fever, meningismus, CSF pleocytosis, acute onset",
+      "tests": "CSF analysis, cultures, viral PCRs, BioFire ME panel"
+    },
+    {
+      "diagnosis": "Nonconvulsive status epilepticus (other causes)",
+      "features": "No temporal drug relationship; may have epilepsy history",
+      "tests": "Continuous EEG, medication history review"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Hypertension, visual disturbance, posterior white matter edema on MRI",
+      "tests": "MRI (posterior predominant vasogenic edema), BP history"
+    },
+    {
+      "diagnosis": "Serotonin syndrome",
+      "features": "Serotonergic drug exposure, clonus, hyperthermia, autonomic instability",
+      "tests": "Medication review (Hunter criteria), temperature, CK"
+    },
+    {
+      "diagnosis": "Neuroleptic malignant syndrome",
+      "features": "Dopamine antagonist exposure, lead-pipe rigidity, hyperthermia, elevated CK",
+      "tests": "Medication review, CK, temperature, rigidity exam"
+    },
+    {
+      "diagnosis": "Paraneoplastic encephalitis",
+      "features": "Cancer history, insidious onset, not temporally linked to specific drug initiation",
+      "tests": "Paraneoplastic panel, PET-CT, tumor markers"
+    },
+    {
+      "diagnosis": "Delirium (multifactorial)",
+      "features": "Multiple contributors (infection, metabolic, polypharmacy), fluctuating course",
+      "tests": "Comprehensive metabolic workup, infection screen, medication review"
+    },
+    {
+      "diagnosis": "CNS metastases",
+      "features": "Focal deficits, known primary cancer, ring-enhancing lesions",
+      "tests": "MRI brain with contrast, oncology staging"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Cefepime neurotoxicity — systematic review of risk factors and outcomes",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Payne et al. Crit Care 2017](https://pubmed.ncbi.nlm.nih.gov/28511182/) PMID: 28511182"
+    },
+    {
+      "recommendation": "Cefepime neurotoxicity — meta-analysis of incidence and EEG patterns",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Appa et al. J Antimicrob Chemother 2017](https://pubmed.ncbi.nlm.nih.gov/28402085/) PMID: 28402085"
+    },
+    {
+      "recommendation": "Checkpoint inhibitor encephalitis — ASCO management guidelines for irAEs",
+      "evidenceLevel": "Consensus Guidelines",
+      "source": "[Brahmer et al. J Clin Oncol 2018](https://pubmed.ncbi.nlm.nih.gov/29442540/) PMID: 29442540"
+    },
+    {
+      "recommendation": "SILENT syndrome — irreversible lithium neurotoxicity review",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Adityanjee et al. Clin Neuropharmacol 2005](https://pubmed.ncbi.nlm.nih.gov/15580632/) PMID: 15580632"
+    },
+    {
+      "recommendation": "Hemodialysis indications for lithium toxicity — EXTRIP workgroup recommendations",
+      "evidenceLevel": "Consensus Guidelines",
+      "source": "[Decker et al. Clin J Am Soc Nephrol 2015](https://pubmed.ncbi.nlm.nih.gov/26045248/) PMID: 26045248"
+    },
+    {
+      "recommendation": "Lithium toxicity management — NKF/KDOQI clinical practice guidelines",
+      "evidenceLevel": "Consensus Guidelines",
+      "source": "[National Kidney Foundation — KDOQI Guidelines](https://www.kidney.org/professionals/kdoqi-guidelines)"
+    },
+    {
+      "recommendation": "EEG patterns in cefepime neurotoxicity — triphasic waves and NCSE",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Fugate et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/24089386/) PMID: 24089386"
+    },
+    {
+      "recommendation": "Checkpoint inhibitor neurological irAEs — NCCN management consensus",
+      "evidenceLevel": "Consensus Guidelines",
+      "source": "[Thompson et al. JAMA Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/31895407/) PMID: 31895407"
+    },
+    {
+      "recommendation": "Cefepime-induced NCSE — case series and risk factor analysis",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Grill and Maganti. Neurocrit Care 2011](https://pubmed.ncbi.nlm.nih.gov/21547502/) PMID: 21547502"
+    },
+    {
+      "recommendation": "Lithium pharmacokinetics and toxicity — comprehensive review",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Timmer and Sands. Clin Pharmacokinet 1999](https://pubmed.ncbi.nlm.nih.gov/10496302/) PMID: 10496302"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Lithium level (serum)",
+      "frequency": "q6h acute; q12h stable; q3-6mo OPD",
+      "action": "If rising: increase fluids, consider hemodialysis",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Cefepime trough level",
+      "frequency": "Daily while on cefepime",
+      "action": "If elevated: dose-reduce or discontinue",
+      "ED": "—",
+      "HOSP": "STAT",
+      "OPD": "—",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Neurologic exam (GCS, orientation, cerebellar signs)",
+      "frequency": "q4-6h acute; q shift stable",
+      "action": "If declining: re-image, escalate treatment, neurology",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "EEG monitoring",
+      "frequency": "Continuous in ICU for cefepime NCSE; daily routine otherwise",
+      "action": "If NCSE: AEDs; if worsening: escalate care",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "—",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Renal function (BUN, Cr, CrCl)",
+      "frequency": "q12-24h acute; q weekly stable",
+      "action": "If declining: adjust drug dosing, nephrology consult",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Electrolytes (Na, K, Ca, Mg)",
+      "frequency": "q6-12h acute; q24h stable",
+      "action": "Correct derangements; Na affects lithium handling",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "GCS",
+      "frequency": "q1-2h if altered; q4h if stable",
+      "action": "If declining: re-image, EEG, escalate care, ICU if <12",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "—",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Temperature",
+      "frequency": "q4h",
+      "action": "If febrile: blood cultures, infection workup (especially immunosuppressed)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "—",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Cardiac telemetry",
+      "frequency": "Continuous for lithium",
+      "action": "If arrhythmia or QTc prolongation: cardiology, electrolyte correction",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "—",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "q6h if on steroids",
+      "action": "If elevated: insulin per protocol",
+      "ED": "—",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**ICU admission**",
+      "criteria": "GCS <12; refractory seizures or NCSE; need for hemodialysis (lithium); severe autonomic instability; need for intubation; Grade 3-4 checkpoint inhibitor encephalitis; lithium level >4.0 mEq/L"
+    },
+    {
+      "disposition": "**Step-down/telemetry**",
+      "criteria": "GCS 12-14 and improving; controlled seizures on AEDs; lithium level decreasing and <2.5 mEq/L; stable after hemodialysis; on continuous EEG monitoring"
+    },
+    {
+      "disposition": "**General floor**",
+      "criteria": "GCS 15; no seizures; lithium level <1.5 mEq/L and trending down; cefepime discontinued with symptoms improving; Grade 1-2 checkpoint inhibitor encephalitis on oral steroids"
+    },
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Neurologically at baseline; lithium level normalized; cefepime neurotoxicity fully resolved (24-72h); checkpoint inhibitor encephalitis: stable on oral steroid taper; follow-up arranged; caregiver education completed"
+    },
+    {
+      "disposition": "**Transfer to tertiary center**",
+      "criteria": "Need for hemodialysis unavailable at current facility; refractory checkpoint inhibitor encephalitis requiring plasma exchange or rituximab; neurocritical care expertise needed"
+    }
+  ]
+}

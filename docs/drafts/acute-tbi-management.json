@@ -1,0 +1,840 @@
+{
+  "id": "acute-tbi-management",
+  "title": "Acute Traumatic Brain Injury Management",
+  "version": "1.0",
+  "icd10": [
+    "** S06.9X0A (Unspecified intracranial injury without loss of consciousness",
+    "initial)",
+    "S06.2X0A (Diffuse TBI without LOC",
+    "initial)",
+    "S06.5X0A (Traumatic subdural hemorrhage without LOC",
+    "initial)",
+    "S06.4X0A (Epidural hemorrhage without LOC",
+    "initial)",
+    "S06.6X0A (Traumatic subarachnoid hemorrhage without LOC",
+    "initial)",
+    "S06.1X0A (Traumatic cerebral edema without LOC",
+    "initial)",
+    "S06.300A (Unspecified focal TBI without LOC",
+    "initial)"
+  ],
+  "scope": "** Acute evaluation and management of traumatic brain injury in adults within the first 72 hours. Covers initial assessment (GCS, primary/secondary survey), neuroimaging decision rules, medical management of elevated ICP, seizure prophylaxis, coagulopathy reversal, non-surgical subdural/epidural management, and neurosurgical consultation criteria. Applies to ED, hospital, and ICU settings (acute phase — no outpatient). Excludes post-concussion syndrome (separate plan — chronic recovery phase), penetrating brain injury, pediatric TBI, and chronic subdural hematoma management.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (Immediate)": [
+        {
+          "item": "CBC with differential (85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Baseline hemoglobin/hematocrit; thrombocytopenia increases hemorrhage risk; leukocytosis may indicate stress response or infection",
+          "target": "Platelets >100,000 for ICP monitor placement; Hgb >7 (>10 if active hemorrhage)"
+        },
+        {
+          "item": "CMP — BMP + LFTs (80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Electrolytes (sodium critical for osmotherapy), glucose, renal function (mannitol safety), hepatic function (drug metabolism)",
+          "target": "Na 135-145 baseline; BUN/Cr for mannitol clearance; glucose 140-180"
+        },
+        {
+          "item": "PT/INR, aPTT (85610, 85730)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Coagulopathy assessment; anticoagulant reversal decisions; procedural safety",
+          "target": "INR <1.4 for ICP monitor/EVD placement; aPTT <40 sec"
+        },
+        {
+          "item": "Fibrinogen (85384)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "DIC assessment in severe TBI; coagulopathy from tissue factor release",
+          "target": "Target >150 mg/dL; replace if <200 in active hemorrhage"
+        },
+        {
+          "item": "Blood glucose (82947)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Both hypoglycemia and hyperglycemia worsen outcomes in TBI; secondary injury prevention",
+          "target": "Target 140-180 mg/dL; avoid <70 and >200"
+        },
+        {
+          "item": "Type and screen (86900)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Surgical candidacy; blood product availability; transfusion readiness",
+          "target": "Blood available within 30 min if needed"
+        },
+        {
+          "item": "Serum osmolality (83930)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Baseline before osmotherapy; guides mannitol and hypertonic saline dosing",
+          "target": "Target 300-320 during osmotherapy; do NOT exceed 320"
+        },
+        {
+          "item": "Sodium (84295)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Baseline; critical for hypertonic saline therapy; osmolar gap calculation",
+          "target": "Target 145-155 mEq/L during ICP crisis; avoid >160"
+        },
+        {
+          "item": "ABG/VBG (82803)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT",
+          "rationale": "Ventilation status; PaCO2 critical for ICP management; oxygenation assessment",
+          "target": "PaCO2 35-40 (normocapnia); PaO2 >60; pH 7.35-7.45"
+        },
+        {
+          "item": "Lactate (83605)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Tissue perfusion marker; polytrauma assessment; occult shock detection",
+          "target": "<2 mmol/L; elevated suggests inadequate perfusion"
+        },
+        {
+          "item": "Blood alcohol level (80320)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "-",
+          "rationale": "Confounds neurological exam; present in 30-50% of TBI patients; may explain altered mental status",
+          "target": "Document level; reassess GCS when metabolized"
+        },
+        {
+          "item": "Troponin (84484)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "rationale": "Neurogenic cardiac injury; stress cardiomyopathy in severe TBI; catecholamine surge",
+          "target": "Elevated troponin → echocardiogram; rule out neurogenic stunned myocardium"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "Serum osmolality — serial (83930)",
+          "ED": "-",
+          "HOSP": "URGENT q4-6h",
+          "ICU": "URGENT q4-6h",
+          "rationale": "Monitor during osmotherapy to prevent renal injury and rebound cerebral edema",
+          "target": "Maintain <320 mOsm/kg; hold mannitol if ≥320"
+        },
+        {
+          "item": "Sodium — serial (84295)",
+          "ED": "-",
+          "HOSP": "URGENT q2-6h",
+          "ICU": "URGENT q2-6h",
+          "rationale": "Track sodium correction during hypertonic saline; avoid overcorrection",
+          "target": "Target 145-155 during ICP crisis; do not exceed 160; correct no faster than 8-10 mEq/24h when weaning"
+        },
+        {
+          "item": "Cortisol, AM (82533)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Pituitary injury screening; trauma-related hypopituitarism occurs in 30-40% severe TBI; adrenal insufficiency",
+          "target": "AM cortisol <10 mcg/dL suggests adrenal insufficiency → stimulation testing"
+        },
+        {
+          "item": "TSH, free T4 (84443, 84439)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Pituitary injury screening; central hypothyroidism from hypothalamic-pituitary trauma",
+          "target": "Low free T4 with low/normal TSH suggests central hypothyroidism"
+        },
+        {
+          "item": "D-dimer (85379)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "ICU": "URGENT",
+          "rationale": "DIC screening in severe TBI; traumatic coagulopathy common",
+          "target": "Elevated → check fibrinogen, peripheral smear; trend with serial labs"
+        },
+        {
+          "item": "Blood cultures (87040)",
+          "ED": "STAT if febrile",
+          "HOSP": "STAT if febrile",
+          "ICU": "STAT if febrile",
+          "rationale": "Infection surveillance; VAP, line infection, aspiration pneumonia common in ICU TBI patients",
+          "target": "Positive → targeted antibiotic therapy; assess for VAP if intubated"
+        },
+        {
+          "item": "Phenytoin level (80185)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Therapeutic drug monitoring if on phenytoin for seizure prophylaxis; narrow therapeutic index",
+          "target": "Target total 10-20 mcg/mL or free 1-2 mcg/mL; levetiracetam does NOT require monitoring"
+        }
+      ],
+      "Specialized Labs": [
+        {
+          "item": "Thromboelastography (TEG) / ROTEM",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "URGENT",
+          "rationale": "Functional coagulation assessment; identifies specific coagulation deficits; guides targeted blood product use in severe TBI",
+          "target": "Guides platelet, FFP, cryoprecipitate, TXA use; more informative than standard coag panel"
+        },
+        {
+          "item": "GFAP, UCH-L1 serum biomarkers (if available) (0306U)",
+          "ED": "URGENT",
+          "HOSP": "-",
+          "ICU": "-",
+          "rationale": "FDA-approved biomarkers to rule out CT-visible intracranial lesion in mild TBI (GCS 13-15); may reduce unnecessary CT",
+          "target": "Negative predictive value >99% for CT-visible lesion; does NOT replace CT if clinically indicated"
+        },
+        {
+          "item": "CSF analysis — if EVD placed (89050, 89051, 87070)",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "STAT",
+          "rationale": "Culture, cell count, glucose, protein for infection surveillance; ventriculitis risk with EVD is 5-10%",
+          "target": "WBC >5, low glucose, positive culture → ventriculitis; daily CSF sampling per protocol"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential / First-line": [
+        {
+          "item": "CT head without contrast (70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "timing": "IMMEDIATE — within 30 minutes of arrival; any GCS <15, LOC, amnesia, vomiting, age >65, coagulopathy, dangerous mechanism (Canadian CT Head Rule / New Orleans Criteria)",
+          "target": "Hemorrhage (SDH, EDH, SAH, contusion), midline shift (>5 mm = significant), cerebral edema, skull fracture, pneumocephalus",
+          "contraindications": "None in acute trauma — benefit always outweighs radiation risk"
+        },
+        {
+          "item": "CT cervical spine (72125)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT",
+          "timing": "IMMEDIATE — assume concomitant c-spine injury until cleared; NEXUS or Canadian C-Spine Rule to determine need",
+          "target": "Fracture, subluxation, ligamentous injury, prevertebral soft tissue swelling",
+          "contraindications": "None in acute trauma"
+        },
+        {
+          "item": "CT angiography head/neck (70496, 70498)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT",
+          "timing": "Within 1 hour if vascular injury suspected — Denver screening criteria: skull base fracture, cervical spine fracture, Horner syndrome, Le Fort II/III, neck soft tissue injury",
+          "target": "Dissection, traumatic pseudoaneurysm, arteriovenous fistula, vessel occlusion",
+          "contraindications": "Contrast allergy (premedicate if critical); renal insufficiency (benefit > risk in acute setting)"
+        },
+        {
+          "item": "Chest X-ray (71046)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "timing": "Within 30 minutes — polytrauma assessment; confirm ETT position if intubated",
+          "target": "Pneumothorax, hemothorax, rib fractures, aspiration, mediastinal widening, ETT placement verification",
+          "contraindications": "None"
+        }
+      ],
+      "Extended (After Stabilization)": [
+        {
+          "item": "MRI brain with DWI/SWI (70553)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "ICU": "URGENT",
+          "timing": "When hemodynamically stable — typically 24-72h; superior for DAI (SWI sequences), brainstem injury, petechial hemorrhages",
+          "target": "Diffuse axonal injury (microhemorrhages on SWI), brainstem lesions, cerebral edema extent, prognostic information",
+          "contraindications": "Unstable patient, non-MRI-compatible ICP monitor/EVD, ferromagnetic implants, hemodynamic instability"
+        },
+        {
+          "item": "Repeat CT head (70450)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT",
+          "timing": "6-8 hours after initial CT or immediately with any neurological change; 30% of traumatic SDH/EDH expand on repeat imaging",
+          "target": "Hemorrhage expansion, new hemorrhage, increased edema, evolving midline shift",
+          "contraindications": "None"
+        },
+        {
+          "item": "CT angiography head (70496)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "ICU": "URGENT",
+          "timing": "If expanding hemorrhage, delayed neurological decline, or concern for vascular injury not previously assessed",
+          "target": "Vascular injury, pseudoaneurysm, active extravasation, vasospasm (traumatic SAH)",
+          "contraindications": "Contrast allergy; renal insufficiency (benefit > risk if clinically indicated)"
+        }
+      ],
+      "Specialized": [
+        {
+          "item": "ICP monitor — intraparenchymal or EVD (61107, 61210)",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "STAT",
+          "timing": "Severe TBI (GCS ≤8) with abnormal CT; OR GCS ≤8 with normal CT if age >40, motor posturing, or SBP <90 (BTF guidelines)",
+          "target": "ICP >22 mmHg (BTF 4th edition threshold); guides osmotherapy, sedation, surgical decompression; EVD allows therapeutic CSF drainage",
+          "contraindications": "Coagulopathy (INR >1.4, platelets <100K — correct first); scalp infection at insertion site"
+        },
+        {
+          "item": "Continuous EEG (95816, 95950)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "ICU": "STAT",
+          "timing": "If unexplained neurological decline, witnessed or suspected seizure, GCS does not improve as expected; subclinical seizures occur in 10-20% of severe TBI",
+          "target": "Non-convulsive seizures, non-convulsive status epilepticus, epileptiform discharges; guides antiepileptic therapy",
+          "contraindications": "None; critical for unexplained decline in TBI"
+        },
+        {
+          "item": "Transcranial Doppler (93886)",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "ICU": "URGENT",
+          "timing": "Non-invasive ICP estimation; assess for cerebral vasospasm in traumatic SAH; serial monitoring",
+          "target": "Elevated mean flow velocities (vasospasm); pulsatility index correlates with ICP; loss of diastolic flow (critically elevated ICP)",
+          "contraindications": "Inadequate temporal bone window (10-15% of patients); operator dependent"
+        }
+      ]
+    },
+    "Treatment": {
+      "Immediate Stabilization (All TBI)": [
+        {
+          "item": "Airway management / Intubation",
+          "route": "ETT",
+          "indication": "GCS ≤8; inability to protect airway; respiratory failure; impending herniation",
+          "dosing": {
+            "instructions": "RSI: Etomidate 0.3 mg/kg IV or Ketamine 1-2 mg/kg IV (ketamine does NOT raise ICP per modern evidence) + Succinylcholine 1.5 mg/kg IV or Rocuronium 1.2 mg/kg IV",
+            "orderSentence": "Airway management / Intubation - ETT - see dosing"
+          },
+          "contraindications": "Ketamine: none (safe in TBI); Succinylcholine: hyperkalemia, burns, denervation injury",
+          "monitoring": "EtCO2, SpO2, PaCO2 on ABG",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "C-spine immobilization",
+          "route": "Cervical collar",
+          "indication": "ALL TBI patients until c-spine cleared clinically or by imaging",
+          "dosing": {
+            "instructions": "Rigid cervical collar; maintain in-line stabilization during intubation",
+            "orderSentence": "C-spine immobilization - Cervical collar - see dosing"
+          },
+          "contraindications": "None",
+          "monitoring": "Clinical exam, imaging clearance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV fluids — Normal Saline preferred",
+          "route": "IV",
+          "indication": "Maintain euvolemia; prevent hypotension (SBP <90 doubles mortality in severe TBI)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "NS bolus 500-1000 mL",
+                "orderSentence": "IV fluids — Normal Saline preferred NS bolus 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "target euvolemia; avoid hypotonic fluids (worsen cerebral edema)",
+            "orderSentence": "IV fluids — Normal Saline preferred NS bolus 500-1000 mL IV"
+          },
+          "contraindications": "Avoid LR (slightly hypotonic); avoid D5W (hypotonic, worsens edema)",
+          "monitoring": "MAP, urine output, CVP if available",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Head of bed elevation",
+          "route": "Positioning",
+          "indication": "ALL TBI patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 degrees",
+                "orderSentence": "Head of bed elevation 30 degrees head of bed"
+              }
+            ],
+            "route": "head of bed",
+            "instructions": "promotes venous drainage, reduces ICP",
+            "orderSentence": "Head of bed elevation 30 degrees head of bed"
+          },
+          "contraindications": "Contraindicated if unstable spinal fracture until cleared",
+          "monitoring": "ICP trend if monitored",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Blood pressure target",
+          "route": "IV vasopressors PRN",
+          "indication": "Prevent secondary brain injury from hypotension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "SBP >100 mmHg (age 50-69)",
+                "orderSentence": "Blood pressure target SBP >100 mmHg (age 50-69) SBP >110 mmHg (age 15-49)"
+              }
+            ],
+            "route": "SBP >110 mmHg (age 15-49)",
+            "instructions": "BTF guidelines; use norepinephrine or phenylephrine if needed",
+            "orderSentence": "Blood pressure target SBP >100 mmHg (age 50-69) SBP >110 mmHg (age 15-49)"
+          },
+          "contraindications": "Avoid excessive hypertension if uncontrolled hemorrhage elsewhere",
+          "monitoring": "Arterial line (preferred in ICU), continuous BP monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Temperature management",
+          "route": "Cooling measures PRN",
+          "indication": "Fever worsens secondary brain injury; increases ICP and metabolic demand",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target normothermia 36-37.5°C",
+                "orderSentence": "Temperature management Target normothermia 36-37.5°C surface cooling, acetaminophen 1g IV/PO q6h"
+              }
+            ],
+            "route": "surface cooling, acetaminophen 1g IV/PO q6h",
+            "instructions": "Target normothermia 36-37.5°C :: surface cooling, acetaminophen 1g IV/PO q6h :: treat fever aggressively",
+            "orderSentence": "Temperature management Target normothermia 36-37.5°C surface cooling, acetaminophen 1g IV/PO q6h"
+          },
+          "contraindications": "Avoid therapeutic hypothermia (EUROTHERM, POLAR trials showed no benefit or harm)",
+          "monitoring": "Continuous core temperature (esophageal, bladder, or rectal probe)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Glucose management",
+          "route": "IV insulin PRN",
+          "indication": "Hyperglycemia and hypoglycemia both worsen TBI outcomes; secondary injury prevention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target 140-180 mg/dL",
+                "orderSentence": "Glucose management Target 140-180 mg/dL IV insulin drip if >180"
+              }
+            ],
+            "route": "IV insulin drip if >180",
+            "instructions": "avoid tight glucose control (<110) per NICE-SUGAR",
+            "orderSentence": "Glucose management Target 140-180 mg/dL IV insulin drip if >180"
+          },
+          "contraindications": "Avoid hypoglycemia (<70 mg/dL) — causes additional neuronal injury",
+          "monitoring": "Point-of-care glucose q1-2h during insulin infusion",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        }
+      ],
+      "ICP Management (Elevated ICP or Severe TBI)": [
+        {
+          "item": "Mannitol 20%",
+          "route": "IV",
+          "indication": "First-line osmotherapy for elevated ICP (>22 mmHg); acute herniation signs (pupil dilation, posturing)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.25-1 g/kg",
+                "orderSentence": "Mannitol 20% 0.25-1 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "q4-6h PRN",
+            "orderSentence": "Mannitol 20% 0.25-1 g/kg IV"
+          },
+          "contraindications": "SBP <90 (mannitol causes diuresis → hypotension); serum osmolality >320; renal failure; hypovolemia",
+          "monitoring": "Serum osmolality q4-6h; I&O; sodium; renal function; ICP response",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 23.4%",
+          "route": "IV central line ONLY",
+          "indication": "Acute ICP crisis; alternative to mannitol; preferred if hypotensive (does not cause diuresis)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mL",
+                "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "via central line only",
+            "orderSentence": "Hypertonic saline 23.4% 30 mL IV"
+          },
+          "contraindications": "Hypernatremia >160; CHF (volume expansion); must have central venous access",
+          "monitoring": "Sodium q2-4h; serum osmolality; ICP response; cardiac monitoring",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hypertonic saline 3%",
+          "route": "IV peripheral or central",
+          "indication": "ICP elevation; moderate osmotherapy; can be continuous infusion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mL",
+                "orderSentence": "Hypertonic saline 3% 250 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "via peripheral or central",
+            "orderSentence": "Hypertonic saline 3% 250 mL IV"
+          },
+          "contraindications": "Hypernatremia >160; CHF; monitor closely",
+          "monitoring": "Sodium q4-6h; serum osmolality; ICP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hyperventilation (controlled)",
+          "route": "Mechanical ventilation",
+          "indication": "TEMPORARY measure ONLY for acute ICP crisis or impending herniation (max 30 min)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Target PaCO2 30-35 mmHg",
+                "orderSentence": "Hyperventilation (controlled) Target PaCO2 30-35 mmHg adjust ventilator RR"
+              }
+            ],
+            "route": "adjust ventilator RR",
+            "instructions": "causes cerebral vasoconstriction → reduced CBF",
+            "orderSentence": "Hyperventilation (controlled) Target PaCO2 30-35 mmHg adjust ventilator RR"
+          },
+          "contraindications": "Prolonged use (>30 min) → cerebral ischemia; rebound ICP elevation worse than baseline",
+          "monitoring": "Continuous EtCO2; ABG q15-30 min during hyperventilation; ICP",
+          "ED": "STAT",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Sedation/analgesia",
+          "route": "IV continuous infusion",
+          "indication": "Reduces metabolic demand and ICP; prevents agitation-related ICP spikes; ventilator synchrony",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Propofol 20-75 mcg/kg/min",
+                "orderSentence": "Sedation/analgesia Propofol 20-75 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "(check triglycerides q24-48h); Fentanyl 25-100 mcg/hr",
+            "orderSentence": "Sedation/analgesia Propofol 20-75 mcg/kg/min IV"
+          },
+          "contraindications": "Propofol: hemodynamic instability, propofol infusion syndrome (>5 mg/kg/hr or >48h); egg/soy allergy",
+          "monitoring": "Daily sedation vacation for neurological exam; ICP during exam; triglycerides (propofol)",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuromuscular blockade",
+          "route": "IV continuous infusion",
+          "indication": "Last resort for refractory ICP elevation; prevents coughing, straining, ventilator dyssynchrony",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Cisatracurium 1-3 mcg/kg/min",
+                "orderSentence": "Neuromuscular blockade Cisatracurium 1-3 mcg/kg/min IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "dose to train-of-four 1-2/4",
+            "orderSentence": "Neuromuscular blockade Cisatracurium 1-3 mcg/kg/min IV"
+          },
+          "contraindications": "Cannot perform neurological exam during paralysis; requires continuous EEG; ICU only",
+          "monitoring": "Train-of-four monitoring; continuous EEG mandatory; ICP trend",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CSF drainage via EVD",
+          "route": "External ventricular drain",
+          "indication": "Most effective single ICP reduction intervention; if EVD in place",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Drain 5-10 mL",
+                "orderSentence": "CSF drainage via EVD Drain 5-10 mL increments"
+              }
+            ],
+            "route": "increments",
+            "instructions": "clamp and recheck; or continuous drainage at prescribed level",
+            "orderSentence": "CSF drainage via EVD Drain 5-10 mL increments"
+          },
+          "contraindications": "EVD not placed; ventriculitis; system malfunction",
+          "monitoring": "CSF output; ICP waveform; CSF appearance (infection surveillance); daily CSF cell count/culture",
+          "ED": "-",
+          "HOSP": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Seizure Prophylaxis": [
+        {
+          "item": "Levetiracetam (Keppra) — first-line",
+          "route": "IV then PO",
+          "indication": "Early seizure prophylaxis for all moderate-severe TBI; cortical contusions; SDH; depressed skull fracture",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (Keppra) — first-line 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 500-1000 mg IV/PO q12h x 7 days",
+            "orderSentence": "Levetiracetam (Keppra) — first-line 1000 mg IV"
+          },
+          "contraindications": "Renal dosing required if CrCl <50; behavioral side effects (agitation — common in TBI population)",
+          "monitoring": "Clinical seizure activity; continuous EEG if available; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Phenytoin / Fosphenytoin — alternative",
+          "route": "IV",
+          "indication": "Alternative to levetiracetam; historical standard per Temkin 1990",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg PE/kg",
+                "orderSentence": "Phenytoin / Fosphenytoin — alternative 20 mg PE/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 5 mg/kg/day divided q8h",
+            "orderSentence": "Phenytoin / Fosphenytoin — alternative 20 mg PE/kg IV"
+          },
+          "contraindications": "Cardiac conduction disease; hepatic impairment; numerous drug interactions",
+          "monitoring": "Free phenytoin level at 24h then q48-72h; cardiac monitoring during load; hepatic function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        }
+      ],
+      "Coagulopathy Reversal": [
+        {
+          "item": "4-factor PCC (Kcentra) + Vitamin K",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PCC 25-50 IU/kg",
+                "orderSentence": "4-factor PCC (Kcentra) + Vitamin K PCC 25-50 IU/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "IV",
+            "orderSentence": "4-factor PCC (Kcentra) + Vitamin K PCC 25-50 IU/kg IV"
+          },
+          "target": "INR <1.4 within 30 minutes",
+          "timing": "STAT — do NOT delay CT; reverse simultaneously"
+        },
+        {
+          "item": "Idarucizumab (Praxbind)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 g",
+                "orderSentence": "Idarucizumab (Praxbind) 5 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "no more than 15 min apart",
+            "orderSentence": "Idarucizumab (Praxbind) 5 g IV"
+          },
+          "target": "Immediate reversal of dabigatran effect",
+          "timing": "STAT — within 30 min of arrival"
+        },
+        {
+          "item": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor)",
+                "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor) IV"
+              },
+              {
+                "text": "PCC 50 IU/kg",
+                "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable PCC 50 IU/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor); PCC 50 IU/kg :: IV :: if andexanet unavailable",
+            "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor) IV"
+          },
+          "target": "Factor Xa inhibitor reversal",
+          "timing": "STAT — within 30 min of arrival"
+        },
+        {
+          "item": "Platelet transfusion — controversial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 apheresis unit",
+                "orderSentence": "Platelet transfusion — controversial 1 apheresis unit IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1 apheresis unit :: IV :: if neurosurgical intervention needed; routine transfusion NOT recommended (PATCH trial)",
+            "orderSentence": "Platelet transfusion — controversial 1 apheresis unit IV"
+          },
+          "target": "Functional platelet activity; neurosurgical clearance",
+          "timing": "URGENT — based on surgical need"
+        },
+        {
+          "item": "Tranexamic acid (TXA) — CRASH-3 trial",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 g",
+                "orderSentence": "Tranexamic acid (TXA) — CRASH-3 trial 1 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "then 1 g",
+            "orderSentence": "Tranexamic acid (TXA) — CRASH-3 trial 1 g IV"
+          },
+          "target": "Reduce hemorrhage progression",
+          "timing": "STAT — benefit ONLY if given within 3 hours of injury"
+        }
+      ],
+      "Non-Surgical Subdural Hematoma Management": [
+        {
+          "item": "Observation criteria"
+        },
+        {
+          "item": "Serial CT imaging schedule"
+        },
+        {
+          "item": "Anticoagulated patients"
+        },
+        {
+          "item": "Neurosurgical consult"
+        },
+        {
+          "item": "Surgical indications (refer to neurosurgery)"
+        }
+      ],
+      "DVT Prophylaxis": [
+        {
+          "item": "Mechanical prophylaxis — SCDs",
+          "route": "Bilateral lower extremity",
+          "indication": "ALL TBI patients; start immediately on admission",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Sequential compression devices",
+                "orderSentence": "Mechanical prophylaxis — SCDs Sequential compression devices bilateral"
+              }
+            ],
+            "route": "bilateral",
+            "instructions": "remove only for ambulation or skin checks",
+            "orderSentence": "Mechanical prophylaxis — SCDs Sequential compression devices bilateral"
+          },
+          "contraindications": "Active DVT in lower extremity (consult vascular surgery); severe peripheral vascular disease",
+          "monitoring": "Daily skin assessment; compliance monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Pharmacological prophylaxis — Enoxaparin",
+          "route": "Subcutaneous",
+          "indication": "All TBI patients after hemorrhage stability confirmed on repeat imaging",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Pharmacological prophylaxis — Enoxaparin 40 mg SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "start 24-72h post-injury IF hemorrhage stable on repeat imaging; consult neurosurgery before initiating",
+            "orderSentence": "Pharmacological prophylaxis — Enoxaparin 40 mg SC"
+          },
+          "contraindications": "Active intracranial hemorrhage expansion; planned neurosurgical procedure within 24h; platelet count <50K; active bleeding elsewhere",
+          "monitoring": "Repeat CT confirming hemorrhage stability; anti-Xa levels if renal impairment; platelet count",
+          "ED": "-",
+          "HOSP": "STAT",
+          "ICU": "STAT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals": [
+        {
+          "indication": "ALL moderate-severe TBI; any subdural hematoma, epidural hematoma, depressed skull fracture; ICP monitoring candidacy; surgical decompression evaluation",
+          "timing": "STAT"
+        },
+        {
+          "indication": "Polytrauma; concomitant thoracic, abdominal, or orthopedic injuries",
+          "timing": "STAT"
+        },
+        {
+          "indication": "Orbital fractures; visual changes; fundoscopic exam for papilledema; retinal hemorrhages (non-accidental trauma screening)",
+          "timing": "URGENT"
+        },
+        {
+          "indication": "Early rehabilitation consultation for moderate-severe TBI; functional prognosis assessment; discharge planning",
+          "timing": "ROUTINE — within 48-72h of admission"
+        },
+        {
+          "indication": "Falls in elderly (home safety evaluation); assault (law enforcement, protective orders); domestic violence screening; substance abuse",
+          "timing": "ROUTINE — within 24h of admission"
+        }
+      ],
+      "Patient / Family Instructions": [
+        {
+          "item": "Mild TBI return precautions",
+          "instructions": "Return to ED immediately for: worsening headache not relieved by acetaminophen, repeated vomiting, increasing confusion or difficulty waking, seizure, unequal pupils, weakness on one side, clear fluid from nose or ears, slurred speech"
+        },
+        {
+          "item": "Concussion discharge",
+          "instructions": "Cognitive rest for 24-48 hours (limit screen time, reading, mental exertion); gradual return to activity as tolerated; no driving until symptom-free; follow-up with PCP or neurology in 1-2 weeks"
+        },
+        {
+          "item": "Family education (moderate-severe)",
+          "instructions": "Expect behavioral changes (irritability, impulsivity, emotional lability), sleep disturbance, headache, cognitive difficulties (memory, attention); recovery trajectory varies — most improvement in first 6-12 months; family support resources"
+        },
+        {
+          "item": "Second impact syndrome prevention",
+          "instructions": "Do NOT return to contact sports or activities with fall risk until completely symptom-free AND cleared by physician; second impact before recovery can cause fatal cerebral edema"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Fall prevention"
+        },
+        {
+          "item": "Helmet use"
+        },
+        {
+          "item": "Seatbelt use"
+        },
+        {
+          "item": "Alcohol moderation"
+        }
+      ]
+    }
+  }
+}

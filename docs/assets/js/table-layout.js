@@ -55,17 +55,50 @@
     });
   }
 
+  // Detect scrollable tables and add affordance hints
+  function markScrollableTables() {
+    document.querySelectorAll('.md-typeset table:not([class])').forEach(function(table) {
+      if (table.scrollWidth > table.clientWidth + 2) {
+        table.setAttribute('data-scrollable', 'true');
+
+        // Add swipe hint if not already present and no previous scroll
+        if (!table.previousElementSibling || !table.previousElementSibling.classList.contains('table-scroll-hint')) {
+          var hint = document.createElement('div');
+          hint.className = 'table-scroll-hint';
+          table.parentNode.insertBefore(hint, table);
+        }
+
+        // Hide hint on first scroll
+        table.addEventListener('scroll', function handler() {
+          var hint = table.previousElementSibling;
+          if (hint && hint.classList.contains('table-scroll-hint')) {
+            hint.classList.add('hidden');
+          }
+          table.removeEventListener('scroll', handler);
+        });
+      } else {
+        table.removeAttribute('data-scrollable');
+      }
+    });
+  }
+
+  function initAll() {
+    classifyTables();
+    // Delay scroll detection so layout is settled
+    setTimeout(markScrollableTables, 200);
+  }
+
   // Run on initial load
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', classifyTables);
+    document.addEventListener('DOMContentLoaded', initAll);
   } else {
-    classifyTables();
+    initAll();
   }
 
   // Re-run on MkDocs Material instant navigation
   if (typeof document$ !== 'undefined') {
     document$.subscribe(function() {
-      setTimeout(classifyTables, 100);
+      setTimeout(initAll, 100);
     });
   }
 
@@ -76,4 +109,11 @@
       classifyTables();
     }).observe(content, { childList: true, subtree: true });
   }
+
+  // Re-check on window resize (orientation change)
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(markScrollableTables, 250);
+  });
 })();

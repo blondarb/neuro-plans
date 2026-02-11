@@ -1512,8 +1512,56 @@ h3:has(.inline-comment-btn) {
   .md-typeset table[data-venue-pos="mid"] td:nth-child(n+2):nth-child(-n+5),
   .md-typeset table[data-venue-pos="mid3"] th:nth-child(n+2):nth-child(-n+4),
   .md-typeset table[data-venue-pos="mid3"] td:nth-child(n+2):nth-child(-n+4) {
-    min-width: 40px;
-    max-width: 60px;
+    min-width: 48px;
+    max-width: 72px;
+  }
+
+  /* Scroll affordance: right-edge fade gradient on scrollable tables */
+  .md-typeset table[data-scrollable="true"] {
+    position: relative;
+  }
+
+  .md-typeset table[data-scrollable="true"]::after {
+    content: "";
+    position: sticky;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 32px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.85));
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  [data-md-color-scheme="slate"] .md-typeset table[data-scrollable="true"]::after {
+    background: linear-gradient(to right, transparent, rgba(43,48,59,0.85));
+  }
+
+  /* Scroll hint indicator for untouched tables */
+  .table-scroll-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    color: var(--md-default-fg-color--light, #666);
+    padding: 4px 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .table-scroll-hint.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .table-scroll-hint::before {
+    content: "← swipe →";
+    font-style: italic;
   }
 }
 

@@ -1239,6 +1239,38 @@ MEDICATION_DOSES = {
         ("155 units", "IM", "q3mo"),
         ("200 units", "IM", "q3mo"),
     ],
+
+    # ===== Hepatic Encephalopathy =====
+    "lactulose": [
+        ("15 mL", "PO", "BID"),
+        ("30 mL", "PO", "BID"),
+        ("30 mL", "PO", "TID"),
+        ("30 mL", "PO", "q1-2h titrate to 2-3 BMs/day"),
+        ("300 mL in 700 mL NS", "PR", "retention enema"),
+    ],
+    "rifaximin": [
+        ("550 mg", "PO", "BID"),
+    ],
+
+    # ===== Neurotoxicology Reference =====
+    "lithium": [
+        ("300 mg", "PO", "BID"),
+        ("300 mg", "PO", "TID"),
+        ("450 mg", "PO", "BID"),
+        ("600 mg", "PO", "BID"),
+    ],
+    "cefepime": [
+        ("1 g", "IV", "q8h"),
+        ("1 g", "IV", "q12h"),
+        ("2 g", "IV", "q8h"),
+        ("2 g", "IV", "q12h"),
+    ],
+
+    # ===== TBI / Trauma =====
+    "tranexamic acid": [
+        ("1 g", "IV", "over 10 min (loading)"),
+        ("1 g", "IV", "over 8h (maintenance)"),
+    ],
 }
 
 
