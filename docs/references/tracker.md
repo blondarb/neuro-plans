@@ -72,7 +72,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Idiopathic Intracranial Hypertension (IIH) | G93.2 | 🎯 OPD | Approved |
 | ✅ | Low Pressure Headache / SIH | G96.00 | 🎯 OPD | Approved |
 | ✅ | Trigeminal Neuralgia | G50.0 | 🎯 OPD | Approved |
-| ⬜ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Refractory cases |
+| ✅ | New Daily Persistent Headache | G44.52 | 🎯 OPD | Approved |
 | ✅ | Thunderclap Headache Evaluation | R51.9 | 🎯 OPD | Approved |
 | ✅ | Giant Cell Arteritis (GCA) | M31.6 | 🎯 OPD | Approved |
 
@@ -86,8 +86,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Acute Myelopathy | G95.9 | 🎯 OPD | Approved (covers transverse myelitis) |
 | ✅ | Neuromyelitis Optica (NMOSD) | G36.0 | 🎯 OPD | Approved |
 | ✅ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Approved |
-| ⬜ | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | More common in pediatrics |
-| ⬜ | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | JCV, immunocompromised |
+| 🔄 | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | Draft built 2026-02-11 |
+| 🔄 | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | Draft built 2026-02-11 |
 | ⬜ | Diffuse White Matter Disease | R53.1 | 🎯 OPD | Differential diagnosis |
 
 ### Neuromuscular Disorders
@@ -109,18 +109,18 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Lambert-Eaton Myasthenic Syndrome (LEMS) | G73.1 | 🎯 OPD | Approved |
 | ✅ | Inflammatory Myopathy (Dermatomyositis/PM) | G72.41 | 🎯 OPD | Approved |
 | ✅ | Inclusion Body Myositis (IBM) | G72.41 | 🎯 OPD | Approved |
-| ⬜ | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Rare adult presentations |
+| 🔄 | Muscular Dystrophy (Adult) | G71.0 | 🎯 OPD | Draft built 2026-02-11 |
 | ✅ | Myotonic Dystrophy | G71.11 | 🎯 OPD | Approved |
 | ✅ | Critical Illness Myopathy/Neuropathy | G72.81 | 🎯 OPD | Approved |
 | ✅ | Botulism | A05.1 | 🎯 OPD | Approved |
 | ✅ | B12 Deficiency Neuropathy | E53.8 | 🎯 OPD | Approved |
-| ⬜ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Growing population |
-| ⬜ | Ulnar Neuropathy | G56.20 | 🎯 OPD | Entrapment |
+| ✅ | Chemotherapy-Induced Neuropathy | G62.0 | 🎯 OPD | Approved |
+| ✅ | Ulnar Neuropathy | G56.20 | 🎯 OPD | Approved |
 | ✅ | Peroneal Neuropathy | G57.30 | 🎯 OPD | Approved |
-| ⬜ | Multifocal Motor Neuropathy (MMN) | G61.82 | 🎯 OPD | GBS mimic |
-| ⬜ | Hereditary Neuropathy (CMT) | G60.0 | 🎯 OPD | Genetic |
-| ⬜ | Vasculitic Neuropathy | G63 | 🎯 OPD | Mononeuritis multiplex |
-| ⬜ | Autonomic Neuropathy | G90.09 | 🎯 OPD | Orthostatic, GI, cardiac |
+| 🔄 | Multifocal Motor Neuropathy (MMN) | G61.82 | 🎯 OPD | Draft built 2026-02-11 |
+| 🔄 | Hereditary Neuropathy (CMT) | G60.0 | 🎯 OPD | Draft built 2026-02-11 |
+| 🔄 | Vasculitic Neuropathy | G63 | 🎯 OPD | Draft built 2026-02-11 |
+| 🔄 | Autonomic Neuropathy | G90.09 | 🎯 OPD | Draft built 2026-02-11 |
 | ✅ | Plexopathy | G54.0 | 🎯 OPD | Approved |
 
 ### Movement Disorders
@@ -129,8 +129,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | Parkinson's Disease - New Diagnosis | G20 | 🎯 OPD | Approved |
 | ✅ | Parkinson's Disease - Management | G20 | 🎯 OPD | Approved |
-| ⬜ | Parkinson's Disease - Motor Fluctuations | G20 | 🎯 OPD | On/off, dyskinesia |
-| ⬜ | Parkinson's Disease - Psychosis | F06.0 | 🎯 OPD | Common, management |
+| ✅ | Parkinson's Disease - Motor Fluctuations | G20 | 🎯 OPD | Approved |
+| ✅ | Parkinson's Disease - Psychosis | F06.0 | 🎯 OPD | Approved |
 | ✅ | Essential Tremor | G25.0 | 🎯 OPD | Approved |
 | ✅ | Dystonia | G24.9 | 🎯 OPD | Approved |
 | ✅ | Huntington's Disease | G10 | 🎯 OPD | Approved |
@@ -140,11 +140,11 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Wilson's Disease | E83.01 | 🎯 OPD | Approved |
 | ✅ | Progressive Supranuclear Palsy (PSP) | G23.1 | 🎯 OPD | Approved |
 | ✅ | Multiple System Atrophy (MSA) | G90.3 | 🎯 OPD | Approved |
-| ⬜ | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Rare |
+| 🔄 | Corticobasal Degeneration (CBD) | G31.85 | 🎯 OPD | Draft built 2026-02-11 |
 | ✅ | Tics / Tourette Syndrome | F95.2 | 🎯 OPD | Approved |
 | ✅ | Ataxia Evaluation | R27.0 | 🎯 OPD | Approved |
-| ⬜ | Chorea Evaluation | G25.5 | 🎯 OPD | DDx approach |
-| ⬜ | Gait Disorder Evaluation | R26.9 | 🎯 OPD | Multifactorial |
+| 🔄 | Chorea Evaluation | G25.5 | 🎯 OPD | Draft built 2026-02-11 |
+| 🔄 | Gait Disorder Evaluation | R26.9 | 🎯 OPD | Draft built 2026-02-11 |
 
 ### Dementia & Cognitive Disorders
 
@@ -159,8 +159,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Normal Pressure Hydrocephalus (NPH) | G91.2 | 🎯 OPD | Approved |
 | ✅ | Mild Cognitive Impairment (MCI) | G31.84 | 🎯 OPD | Approved |
 | ✅ | Creutzfeldt-Jakob Disease (CJD) | A81.00 | 🎯 OPD | Approved |
-| ⬜ | Autoimmune Dementia/Encephalopathy | G04.81 | 🎯 OPD | Treatable |
-| ⬜ | Delirium vs Dementia | R41.0 | 🎯 OPD | Acute confusion workup |
+| ✅ | Autoimmune Dementia/Encephalopathy | G04.81 | 🎯 OPD | Approved |
+| ✅ | Delirium vs Dementia | R41.0 | 🎯 OPD | Approved |
 | ⬜ | Wernicke-Korsakoff Syndrome | F10.96 | 🎯 OPD | Thiamine deficiency |
 
 ### CNS Infections
@@ -200,7 +200,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | Cauda Equina Syndrome | G83.4 | 🎯 OPD | Approved |
 | ✅ | Cervical Myelopathy (Degenerative) | M47.22 | 🎯 OPD | Approved |
-| ⬜ | Lumbar Stenosis | M48.06 | 🎯 OPD | Common outpatient |
+| ✅ | Lumbar Stenosis | M48.06 | 🎯 OPD | Approved |
 | ⬜ | Syringomyelia | G95.0 | 🎯 OPD | Rare |
 | ⬜ | Subacute Combined Degeneration | E53.8 | 🎯 OPD | B12 deficiency |
 
@@ -241,7 +241,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Vertigo / Dizziness Evaluation | R42 | 🎯 OPD | Approved |
 | ✅ | Bell's Palsy | G51.0 | 🎯 OPD | Approved |
 | ✅ | Wernicke Encephalopathy | E51.2 | 🎯 OPD | Approved |
-| ⬜ | Horner Syndrome | G90.2 | 🎯 OPD | Localization |
+| ✅ | Horner Syndrome | G90.2 | 🎯 OPD | Approved |
 | ✅ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Approved |
 | ✅ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Approved |
 | ✅ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | Approved |
@@ -274,22 +274,22 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |----------|----------|----------|-------|
 | Seizure/Epilepsy | 8 | 0 | 8 |
 | Stroke/Cerebrovascular | 12 | 0 | 12 |
-| Headache | 15 | 1 | 16 |
+| Headache | 16 | 0 | 16 |
 | Demyelinating | 6 | 3 | 9 |
-| Neuromuscular | 20 | 7 | 27 |
-| Movement Disorders | 13 | 5 | 18 |
-| Dementia/Cognitive | 9 | 3 | 12 |
+| Neuromuscular | 22 | 5 | 27 |
+| Movement Disorders | 15 | 3 | 18 |
+| Dementia/Cognitive | 11 | 1 | 12 |
 | CNS Infections | 12 | 0 | 12 |
 | Neuro-oncology | 7 | 2 | 9 |
-| Spinal Cord | 2 | 3 | 5 |
+| Spinal Cord | 3 | 2 | 5 |
 | Autoimmune/Inflammatory | 4 | 0 | 4 |
 | Functional/Psychiatric | 2 | 2 | 4 |
 | Neurocritical Care | 5 | 0 | 5 |
-| Other/Miscellaneous | 17 | 2 | 19 |
+| Other/Miscellaneous | 18 | 1 | 19 |
 | Autonomic & Pain | 5 | 0 | 5 |
-| **TOTAL** | **146** | **17** | **163** |
+| **TOTAL** | **155** | **8** | **163** |
 
-**Note:** 146 approved diagnoses plus Parkinson's Disease (separate Management and New Diagnosis plans) = 147 unique approved plan files.
+**Note:** 155 approved/in-progress diagnoses. 10 new drafts built 2026-02-11 (shown as 🔄 in tracker). 8 conditions remain to build. Plus Parkinson's Disease has separate Management and New Diagnosis plans.
 
 ---
 
@@ -497,10 +497,11 @@ All original Tiers 1-13 are complete. 30 conditions remain. Updated priorities:
 ## CHANGE LOG
 
 **February 11, 2026**
+- Built 10 new Tier 14C-D drafts: Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation
+- Flipped 9 stale ⬜ to ✅ for already-approved plans (NDPH, Lumbar Stenosis, Ulnar Neuropathy, CIPN, PD Motor Fluctuations, PD Psychosis, Autoimmune Dementia, Delirium vs Dementia, Horner Syndrome)
 - Added 3 new Tier 15 plans: Neurotoxicology, Metabolic Encephalopathy, Acute TBI Management
-- Updated approved count: 134 → 147 (includes backfill of 10 plans from Tier 14)
-- Moved TBI from Tier 14D to-build to approved
-- Updated statistics: 146 approved diagnoses (147 plan files), 17 to build
+- Updated statistics: 155 approved/in-progress, 8 remaining to build
+- Only 8 conditions remain: Diffuse White Matter Disease, Wernicke-Korsakoff, Radiation-Induced Neurologic Injury, Myelopathy (General), Subacute Combined Degeneration, Syringomyelia, Functional Movement Disorder, Functional Cognitive Disorder, CTE
 
 **February 9, 2026**
 - Major tracker sync: corrected from 103 → 134 approved plans

@@ -84,6 +84,21 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 |------|--------|------|--------|---------|--------------|
 | *(empty — all Tier 11 plans approved)* | — | — | — | — | — |
 
+### TIER 14C-D EXPANSION (New drafts — pending validation)
+
+| Plan | ICD-10 | File | Status | Session | Last Updated |
+|------|--------|------|--------|---------|--------------|
+| Autonomic Neuropathy | G90.09, G90.3, G99.0 | `autonomic-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Vasculitic Neuropathy | G63, M31.7, M30.0 | `vasculitic-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Multifocal Motor Neuropathy (MMN) | G61.82 | `multifocal-motor-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Corticobasal Degeneration (CBD) | G31.85 | `corticobasal-degeneration.md` | `pending` | — | 2026-02-11 |
+| Chorea Evaluation | G25.5, G25.4, G10 | `chorea-evaluation.md` | `pending` | — | 2026-02-11 |
+| ADEM | G04.81, G04.00 | `adem.md` | `pending` | — | 2026-02-11 |
+| PML | A81.2 | `pml.md` | `pending` | — | 2026-02-11 |
+| Muscular Dystrophy (Adult) | G71.0, G71.01, G71.02 | `muscular-dystrophy-adult.md` | `pending` | — | 2026-02-11 |
+| Hereditary Neuropathy / CMT | G60.0, G60.1, G60.8 | `hereditary-neuropathy-cmt.md` | `pending` | — | 2026-02-11 |
+| Gait Disorder Evaluation | R26.9, R26.0, R26.1 | `gait-disorder-evaluation.md` | `pending` | — | 2026-02-11 |
+
 ---
 
 ## Approved (Moved to `docs/plans/`)
@@ -251,6 +266,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
 - Queue updated 2026-02-09. Total approved: 134 plans. Tier 14 queued: 10 plans (5 high-value gaps + 5 subspecialty gaps).
+- **Tier 14C-D expansion** (2026-02-11): 10 new drafts built — Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation. Pending validation pipeline.
 - **Tier 14 queued** (2026-02-09): 10 plans across Tier 14A (Lumbar Stenosis, Ulnar Neuropathy, Chemo-Induced Neuropathy, PD Motor Fluctuations, Delirium vs Dementia) and Tier 14B (NDPH, Horner Syndrome, Hypertensive Encephalopathy, PD Psychosis, Autoimmune Dementia). 20 more conditions remain in Tier 14C-D (see tracker).
 - **Autonomic & Pain expansion** (2026-02-09): 5 Tier 13 drafts approved — POTS, Neurogenic Orthostatic Hypotension, Occipital Neuralgia, CRPS, Neuropathic Pain Management. New "Autonomic & Pain Disorders" nav section created.
 - **Sleep Medicine expansion** (2026-02-07): 5 new drafts added — REM Sleep Behavior Disorder, Obstructive Sleep Apnea (Neuro), Insomnia (Neurological), Idiopathic Hypersomnia, Non-REM Parasomnias. Complements existing Narcolepsy and RLS plans.
