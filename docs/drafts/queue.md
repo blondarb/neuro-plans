@@ -84,34 +84,20 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 |------|--------|------|--------|---------|--------------|
 | *(empty — all Tier 11 plans approved)* | — | — | — | — | — |
 
-### TIER 14C-D EXPANSION (approved)
+### TIER 14C-D EXPANSION (New drafts — pending validation)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Autonomic Neuropathy | G90.09, G90.3, G99.0 | `autonomic-neuropathy.md` | `approved` | — | 2026-02-11 |
-| Vasculitic Neuropathy | G63, M31.7, M30.0 | `vasculitic-neuropathy.md` | `approved` | — | 2026-02-11 |
-| Multifocal Motor Neuropathy (MMN) | G61.82 | `multifocal-motor-neuropathy.md` | `approved` | — | 2026-02-11 |
-| Corticobasal Degeneration (CBD) | G31.85 | `corticobasal-degeneration.md` | `approved` | — | 2026-02-11 |
-| Chorea Evaluation | G25.5, G25.4, G10 | `chorea-evaluation.md` | `approved` | — | 2026-02-11 |
-| ADEM | G04.81, G04.00 | `adem.md` | `approved` | — | 2026-02-11 |
-| PML | A81.2 | `pml.md` | `approved` | — | 2026-02-11 |
-| Muscular Dystrophy (Adult) | G71.0, G71.01, G71.02 | `muscular-dystrophy-adult.md` | `approved` | — | 2026-02-11 |
-| Hereditary Neuropathy / CMT | G60.0, G60.1, G60.8 | `hereditary-neuropathy-cmt.md` | `approved` | — | 2026-02-11 |
-| Gait Disorder Evaluation | R26.9, R26.0, R26.1 | `gait-disorder-evaluation.md` | `approved` | — | 2026-02-11 |
-
-### FINAL BATCH — Tier 15 (All approved)
-
-| Plan | ICD-10 | File | Status | Session | Last Updated |
-|------|--------|------|--------|---------|--------------|
-| Diffuse White Matter Disease | R53.1, G93.49 | `diffuse-white-matter-disease.md` | `approved` | — | 2026-02-12 |
-| Wernicke-Korsakoff Syndrome | F10.96, E51.2 | `wernicke-korsakoff-syndrome.md` | `approved` | — | 2026-02-12 |
-| Radiation-Induced Neurologic Injury | G93.89, T66.XXXA | `radiation-neurologic-injury.md` | `approved` | — | 2026-02-12 |
-| Myelopathy — General Evaluation | G99.2, G95.9 | `myelopathy-general.md` | `approved` | — | 2026-02-12 |
-| Subacute Combined Degeneration | E53.8, G32.0 | `subacute-combined-degeneration.md` | `approved` | — | 2026-02-12 |
-| Syringomyelia | G95.0 | `syringomyelia.md` | `approved` | — | 2026-02-12 |
-| Functional Movement Disorder | F44.4 | `functional-movement-disorder.md` | `approved` | — | 2026-02-12 |
-| Functional Cognitive Disorder | F44.89, R41.3 | `functional-cognitive-disorder.md` | `approved` | — | 2026-02-12 |
-| Chronic Traumatic Encephalopathy (CTE) | G31.89 | `chronic-traumatic-encephalopathy.md` | `approved` | — | 2026-02-12 |
+| Autonomic Neuropathy | G90.09, G90.3, G99.0 | `autonomic-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Vasculitic Neuropathy | G63, M31.7, M30.0 | `vasculitic-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Multifocal Motor Neuropathy (MMN) | G61.82 | `multifocal-motor-neuropathy.md` | `pending` | — | 2026-02-11 |
+| Corticobasal Degeneration (CBD) | G31.85 | `corticobasal-degeneration.md` | `pending` | — | 2026-02-11 |
+| Chorea Evaluation | G25.5, G25.4, G10 | `chorea-evaluation.md` | `pending` | — | 2026-02-11 |
+| ADEM | G04.81, G04.00 | `adem.md` | `pending` | — | 2026-02-11 |
+| PML | A81.2 | `pml.md` | `pending` | — | 2026-02-11 |
+| Muscular Dystrophy (Adult) | G71.0, G71.01, G71.02 | `muscular-dystrophy-adult.md` | `pending` | — | 2026-02-11 |
+| Hereditary Neuropathy / CMT | G60.0, G60.1, G60.8 | `hereditary-neuropathy-cmt.md` | `pending` | — | 2026-02-11 |
+| Gait Disorder Evaluation | R26.9, R26.0, R26.1 | `gait-disorder-evaluation.md` | `pending` | — | 2026-02-11 |
 
 ---
 
@@ -263,25 +249,6 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 142 | Lumbar Spinal Stenosis | [`lumbar-stenosis.md`](../plans/lumbar-stenosis.md) | 2026-02-09 | 90%+ |
 | 143 | Horner Syndrome | [`horner-syndrome.md`](../plans/horner-syndrome.md) | 2026-02-09 | 90%+ |
 | 144 | Hypertensive Encephalopathy | [`hypertensive-encephalopathy.md`](../plans/hypertensive-encephalopathy.md) | 2026-02-09 | 90%+ |
-| 145 | Autonomic Neuropathy | [`autonomic-neuropathy.md`](../plans/autonomic-neuropathy.md) | 2026-02-11 | 90% (54/60) |
-| 146 | Vasculitic Neuropathy | [`vasculitic-neuropathy.md`](../plans/vasculitic-neuropathy.md) | 2026-02-11 | 90% (54/60) |
-| 147 | Multifocal Motor Neuropathy (MMN) | [`multifocal-motor-neuropathy.md`](../plans/multifocal-motor-neuropathy.md) | 2026-02-11 | 90% (54/60) |
-| 148 | Corticobasal Degeneration (CBD) | [`corticobasal-degeneration.md`](../plans/corticobasal-degeneration.md) | 2026-02-11 | 90% (54/60) |
-| 149 | Chorea Evaluation | [`chorea-evaluation.md`](../plans/chorea-evaluation.md) | 2026-02-11 | 90% (54/60) |
-| 150 | ADEM | [`adem.md`](../plans/adem.md) | 2026-02-11 | 90% (54/60) |
-| 151 | PML | [`pml.md`](../plans/pml.md) | 2026-02-11 | 92% (55/60) |
-| 152 | Muscular Dystrophy (Adult) | [`muscular-dystrophy-adult.md`](../plans/muscular-dystrophy-adult.md) | 2026-02-11 | 90% (54/60) |
-| 153 | Hereditary Neuropathy / CMT | [`hereditary-neuropathy-cmt.md`](../plans/hereditary-neuropathy-cmt.md) | 2026-02-11 | 92% (55/60) |
-| 154 | Gait Disorder Evaluation | [`gait-disorder-evaluation.md`](../plans/gait-disorder-evaluation.md) | 2026-02-11 | 90% (54/60) |
-| 155 | Diffuse White Matter Disease | [`diffuse-white-matter-disease.md`](../plans/diffuse-white-matter-disease.md) | 2026-02-12 | 90%+ |
-| 156 | Wernicke-Korsakoff Syndrome | [`wernicke-korsakoff-syndrome.md`](../plans/wernicke-korsakoff-syndrome.md) | 2026-02-12 | 90%+ |
-| 157 | Radiation-Induced Neurologic Injury | [`radiation-neurologic-injury.md`](../plans/radiation-neurologic-injury.md) | 2026-02-12 | 90%+ |
-| 158 | Myelopathy — General Evaluation | [`myelopathy-general.md`](../plans/myelopathy-general.md) | 2026-02-12 | 90%+ |
-| 159 | Subacute Combined Degeneration | [`subacute-combined-degeneration.md`](../plans/subacute-combined-degeneration.md) | 2026-02-12 | 90%+ |
-| 160 | Syringomyelia | [`syringomyelia.md`](../plans/syringomyelia.md) | 2026-02-12 | 90%+ |
-| 161 | Functional Movement Disorder | [`functional-movement-disorder.md`](../plans/functional-movement-disorder.md) | 2026-02-12 | 90%+ |
-| 162 | Functional Cognitive Disorder | [`functional-cognitive-disorder.md`](../plans/functional-cognitive-disorder.md) | 2026-02-12 | 90%+ |
-| 163 | Chronic Traumatic Encephalopathy (CTE) | [`chronic-traumatic-encephalopathy.md`](../plans/chronic-traumatic-encephalopathy.md) | 2026-02-12 | 90%+ |
 
 ---
 
@@ -289,7 +256,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| *(all plans approved — queue empty)* | — | — | — |
+| *(none)* | — | — | — |
 
 ---
 
@@ -298,8 +265,8 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-12. Total approved: 163 plans. All conditions built and approved. Backlog fully cleared.
-- **Tier 14C-D expansion** (2026-02-11): 10 new drafts built, rebuilt, and validated — Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation. All 10 scored 90%+ (54-55/60). Awaiting physician approval.
+- Queue updated 2026-02-09. Total approved: 134 plans. Tier 14 queued: 10 plans (5 high-value gaps + 5 subspecialty gaps).
+- **Tier 14C-D expansion** (2026-02-11): 10 new drafts built — Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation. Pending validation pipeline.
 - **Tier 14 queued** (2026-02-09): 10 plans across Tier 14A (Lumbar Stenosis, Ulnar Neuropathy, Chemo-Induced Neuropathy, PD Motor Fluctuations, Delirium vs Dementia) and Tier 14B (NDPH, Horner Syndrome, Hypertensive Encephalopathy, PD Psychosis, Autoimmune Dementia). 20 more conditions remain in Tier 14C-D (see tracker).
 - **Autonomic & Pain expansion** (2026-02-09): 5 Tier 13 drafts approved — POTS, Neurogenic Orthostatic Hypotension, Occipital Neuralgia, CRPS, Neuropathic Pain Management. New "Autonomic & Pain Disorders" nav section created.
 - **Sleep Medicine expansion** (2026-02-07): 5 new drafts added — REM Sleep Behavior Disorder, Obstructive Sleep Apnea (Neuro), Insomnia (Neurological), Idiopathic Hypersomnia, Non-REM Parasomnias. Complements existing Narcolepsy and RLS plans.

@@ -1,7 +1,7 @@
 ---
 title: "Progressive Multifocal Leukoencephalopathy (PML)"
 description: "Clinical decision support for diagnosis and management of PML"
-version: "1.1"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Progressive Multifocal Leukoencephalopathy (PML)
 
-**VERSION:** 1.1
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft — Revised per checker feedback
+**STATUS:** Draft
 
 ---
 
@@ -74,7 +74,7 @@ tags:
 | Absolute lymphocyte subsets (CD4, CD8, CD19, NK cells) | - | ROUTINE | ROUTINE | - | Characterize immune deficiency; guide immune reconstitution strategy | Normal ranges for all subsets |
 | Quantitative immunoglobulins | - | ROUTINE | ROUTINE | - | Hypogammaglobulinemia from rituximab or other B-cell depleting therapy | Normal IgG >600 mg/dL |
 | ESR / CRP | - | ROUTINE | ROUTINE | - | Inflammatory markers; elevated in PML-IRIS | Normal in PML; elevated in IRIS |
-| LDH | - | ROUTINE | ROUTINE | - | Prognostic marker; elevated associated with worse outcomes | Normal |
+| LDH | - | ROUTINE | - | - | Prognostic marker; elevated associated with worse outcomes | Normal |
 | Liver function tests | - | ROUTINE | ROUTINE | - | Baseline before any hepatotoxic treatment; hepatic disease contributing to immunodeficiency | Normal |
 
 ### 1C. Rare/Specialized
@@ -102,7 +102,7 @@ tags:
 |-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
 | MRI brain follow-up (q4-8 weeks) | - | - | ROUTINE | - | Serial monitoring for progression or IRIS; every 4-8 weeks initially | Stabilization or improvement of lesions; new enhancement suggests PML-IRIS | MRI-incompatible devices |
 | MR spectroscopy | - | EXT | EXT | - | Differentiate PML from other white matter diseases | Reduced NAA (neuronal loss); elevated choline (demyelination); elevated myo-inositol | MRI-incompatible devices |
-| EEG (CPT 95816) | - | ROUTINE | ROUTINE | ROUTINE | If seizures occur; encephalopathy assessment; outpatient monitoring for subclinical seizures | Focal or diffuse slowing; epileptiform activity at lesion borders | None |
+| EEG (CPT 95816) | - | ROUTINE | - | ROUTINE | If seizures occur; encephalopathy assessment | Focal or diffuse slowing; epileptiform activity at lesion borders | None |
 
 ### LUMBAR PUNCTURE
 
@@ -126,57 +126,36 @@ tags:
 
 ## 3. TREATMENT
 
-### 3A. Acute/Emergent
+### 3A. Immune Reconstitution (Primary Strategy)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Antiretroviral therapy (ART) initiation (HIV-PML) | PO | HIV-associated PML; ART is the ONLY proven effective treatment; immune reconstitution allows immune clearance of JCV | Per HIV guidelines :: PO :: daily :: Initiate ART as soon as possible; integrase inhibitor-based regimen preferred (dolutegravir + tenofovir/emtricitabine); rapid ART start; coordinate with HIV specialist | None (benefit outweighs all risks in PML) | CD4 count q4-8wk; HIV viral load q4wk until undetectable; hepatic/renal function; IRIS monitoring | STAT | STAT | ROUTINE | STAT |
 | Natalizumab cessation + PLEX (natalizumab-PML) | Apheresis | Natalizumab-associated PML; remove drug to allow immune reconstitution; PLEX accelerates natalizumab clearance | 5 exchanges :: Apheresis :: every other day :: Discontinue natalizumab immediately; 5 plasma exchanges over 10 days to accelerate drug clearance (natalizumab half-life ~16 days; PLEX reduces to days) | Hemodynamic instability; coagulopathy | IRIS monitoring (typically occurs 1-5 weeks after PLEX); MRI q2-4wk; clinical exam q1-2 days | - | STAT | - | STAT |
 | Discontinue causative immunosuppression (other-PML) | - | PML from rituximab, mycophenolate, fludarabine, or other immunosuppressants | Discontinue immediately :: - :: - :: Stop the causative immunosuppressant; no PLEX equivalent for most drugs; immune reconstitution occurs over weeks-months depending on drug | Balance with underlying disease management | CD4 and lymphocyte counts q2-4wk; MRI q4-8wk; clinical monitoring for IRIS | - | STAT | ROUTINE | STAT |
+
+### 3B. PML-IRIS Management
+
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Dexamethasone (PML-IRIS) | IV/PO | Moderate-severe PML-IRIS with significant edema, mass effect, or clinical deterioration from inflammation | 4 mg IV/PO q6h; 8 mg IV/PO q6h :: IV/PO :: q6h :: Start 4-8 mg IV q6h for severe IRIS; taper over 2-6 weeks based on clinical response; shortest effective course to avoid further immunosuppression | Active untreated infection (relative); recognize that steroids also suppress beneficial immune response against JCV | Clinical exam; MRI q2-4wk for edema/enhancement resolution; steroid side effects; balance IRIS suppression vs JCV clearance | - | URGENT | ROUTINE | URGENT |
 | Methylprednisolone (PML-IRIS) | IV | Fulminant PML-IRIS with severe cerebral edema and herniation risk | 1000 mg daily x 3-5 days :: IV :: daily x 3-5 days :: 1000 mg IV daily for 3-5 days for life-threatening IRIS; follow with oral steroid taper | Mass effect with herniation (may need neurosurgical intervention first) | ICP; neurological exam; MRI; blood glucose; BP | - | STAT | - | STAT |
-| Dexamethasone (PML-IRIS) | IV/PO | Moderate-severe PML-IRIS with significant edema, mass effect, or clinical deterioration from inflammation | 4-8 mg q6h :: IV/PO :: q6h :: Start 4-8 mg IV q6h for severe IRIS; taper over 2-6 weeks based on clinical response; shortest effective course to avoid further immunosuppression | Active untreated infection (relative); recognize that steroids also suppress beneficial immune response against JCV | Clinical exam; MRI q2-4wk for edema/enhancement resolution; steroid side effects; balance IRIS suppression vs JCV clearance | - | URGENT | - | URGENT |
-| Dexamethasone (cerebral edema) | IV | Cerebral edema from PML lesions or IRIS causing mass effect | 10 mg load then 4 mg q6h :: IV :: q6h :: 10 mg IV load, then 4 mg q6h; taper as edema resolves; use shortest effective course | Active untreated infection | Blood glucose; BP; GI protection; clinical response | URGENT | URGENT | - | URGENT |
-| Levetiracetam (acute seizures) | IV/PO | Acute seizure management in PML (seizures common with cortical lesions) | 1000 mg load :: IV :: load then BID :: 1000 mg IV load, then 500 mg IV/PO BID; titrate to 1000-1500 mg BID; adjust for renal function | Severe renal impairment (dose adjust) | Mood changes; sedation; renal function | STAT | STAT | - | STAT |
+| Maraviroc | PO | Adjunctive PML-IRIS treatment; CCR5 antagonist may reduce inflammatory infiltrate; limited evidence | 300 mg BID :: PO :: BID :: 300 mg PO BID; used as adjunct to steroids for IRIS; limited evidence; case reports/series suggest benefit | Severe hepatic impairment; concurrent strong CYP3A4 inhibitors (dose adjust) | LFTs; clinical response; hepatotoxicity; postural hypotension | - | EXT | EXT | - |
 
-### 3B. Symptomatic Treatments
+### 3C. Investigational/Adjunctive Therapies (Limited Evidence)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam (maintenance) | PO | Ongoing seizure prophylaxis/treatment (seizures common in PML, especially with cortical lesions) | 500 mg BID :: PO :: BID :: Start 500 mg BID; titrate to 1000-1500 mg BID; adjust for renal function; continue indefinitely if seizures occurred | Severe renal impairment (dose adjust) | Mood changes; irritability; sedation; renal function | - | ROUTINE | ROUTINE | ROUTINE |
-| Lacosamide | PO/IV | Seizure management; alternative or adjunct to levetiracetam; favorable side effect profile | 50 mg BID :: PO :: BID :: Start 50 mg BID; increase by 50 mg/dose weekly; target 100-200 mg BID; max 400 mg/day | PR prolongation; 2nd/3rd degree AV block; severe hepatic impairment | ECG at baseline; PR interval; dizziness; diplopia | - | ROUTINE | ROUTINE | ROUTINE |
-| Valproic acid | PO/IV | Seizure management; broad-spectrum option for focal or generalized seizures in PML | 250 mg BID :: PO :: BID :: Start 250 mg BID; titrate to 500-750 mg BID; target level 50-100 mcg/mL; adjust for hepatic function | Hepatic disease; urea cycle disorders; pregnancy (teratogenic); mitochondrial disease (POLG mutation) | LFTs baseline and periodically; CBC; ammonia if encephalopathy; drug level; pancreatitis risk | - | ROUTINE | ROUTINE | ROUTINE |
-| Gabapentin | PO | Neuropathic pain; paresthesias from white matter lesions | 300 mg qHS :: PO :: qHS :: Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; peripheral edema | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain; alternative to gabapentin | 75 mg BID :: PO :: BID :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID | Renal impairment (adjust dose per CrCl) | Sedation; weight gain; peripheral edema | - | ROUTINE | ROUTINE | - |
-| Baclofen | PO | Spasticity from white matter and corticospinal tract involvement | 5 mg TID :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses | Renal impairment (reduce dose) | Sedation; weakness; do NOT stop abruptly (withdrawal risk) | - | ROUTINE | ROUTINE | ROUTINE |
-| Tizanidine | PO | Spasticity; alternative to baclofen | 2 mg qHS :: PO :: qHS :: Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses | Hepatic impairment; concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors) | LFTs at baseline, 1, 3, 6 months; sedation; hypotension | - | ROUTINE | ROUTINE | ROUTINE |
-| Sertraline | PO | Depression; anxiety; mood disturbance related to PML diagnosis and disability | 50 mg daily :: PO :: daily :: Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily | Concurrent MAOIs; pimozide | Suicidality monitoring (especially weeks 1-4); serotonin syndrome; QTc at high doses | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression; anxiety; alternative to sertraline | 10 mg daily :: PO :: daily :: Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily | Concurrent MAOIs; pimozide; QT prolongation | QTc if risk factors or dose >10 mg; suicidality monitoring | - | ROUTINE | ROUTINE | - |
-| Mirtazapine (symptomatic) | PO | Depression with insomnia; appetite stimulation in wasting; also theoretical anti-JCV activity via 5-HT2A antagonism | 15 mg qHS :: PO :: qHS :: Start 15 mg qHS; titrate to 30-45 mg qHS; dual benefit as antidepressant and possible anti-JCV agent | Concurrent MAOIs | Sedation; weight gain (may be beneficial in cachectic patients); dry mouth; agranulocytosis (rare) | - | ROUTINE | ROUTINE | - |
-| Modafinil | PO | Fatigue; cognitive slowing; excessive daytime somnolence | 100 mg daily :: PO :: daily :: Start 100 mg every morning; may increase to 200 mg; max 400 mg/day | Cardiac arrhythmia; LV hypertrophy; hepatic impairment | BP; HR; may reduce efficacy of hormonal contraception; Schedule IV | - | - | ROUTINE | - |
-| Methylphenidate | PO | Fatigue; cognitive slowing; apathy; adjunct for attention deficits | 5 mg BID :: PO :: BID :: Start 5 mg BID (morning and noon); increase by 5-10 mg weekly; max 60 mg/day | Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs | BP; HR; mood; appetite; weight; Schedule II | - | - | ROUTINE | - |
-| Donepezil | PO | Cognitive impairment; memory deficits from white matter injury | 5 mg daily :: PO :: daily :: Start 5 mg daily; may increase to 10 mg daily after 4-6 weeks; take in evening | Bradycardia; sick sinus syndrome; GI obstruction | HR; GI symptoms (nausea, diarrhea); vivid dreams; weight loss | - | - | ROUTINE | - |
-| Memantine | PO | Cognitive impairment; moderate-severe cognitive deficits; may be combined with donepezil | 5 mg daily :: PO :: daily :: Start 5 mg daily; increase by 5 mg weekly; target 10 mg BID; max 20 mg/day | Severe renal impairment (dose adjust if CrCl <30) | Dizziness; headache; constipation; confusion | - | - | ROUTINE | - |
-| Omeprazole | PO | GI prophylaxis during corticosteroid therapy | 20 mg daily :: PO :: daily :: 20-40 mg daily during steroid treatment | PPI allergy | None routine; long-term: magnesium, B12, bone density | - | ROUTINE | ROUTINE | ROUTINE |
+| Mirtazapine | PO | 5-HT2A receptor antagonist; may block JCV entry into glial cells; in vitro evidence; unproven clinically but commonly used given favorable safety profile | 15 mg qHS; 30 mg qHS; 45 mg qHS :: PO :: qHS :: Start 15 mg qHS; titrate to 30-45 mg qHS; 5-HT2A receptor used by JCV for cell entry; theoretical benefit; limited clinical evidence | Concurrent MAOIs | Sedation; weight gain; dry mouth | - | ROUTINE | ROUTINE | - |
+| Cidofovir | IV | Antiviral with in vitro activity against JCV; clinical trials have NOT shown clear benefit; not recommended routinely | 5 mg/kg q1-2wk :: IV :: q1-2wk :: 5 mg/kg IV weekly x 2 then every 2 weeks; must give with probenecid and IV hydration; nephrotoxic; CLINICAL TRIALS HAVE NOT SHOWN BENEFIT | Renal insufficiency (Cr >1.5); concurrent nephrotoxins | Renal function (Cr before each dose); proteinuria; neutrophil count; limited evidence of efficacy | - | EXT | - | - |
+| Pembrolizumab | IV | PD-1 checkpoint inhibitor; immune reconstitution approach; emerging evidence in non-HIV PML; restores T-cell function against JCV | 2 mg/kg q4-6wk :: IV :: q4-6wk :: 2 mg/kg IV every 4-6 weeks; limited case series; risk of autoimmune complications and severe IRIS; informed consent essential | Autoimmune disease; organ transplant recipients (rejection risk); severe IRIS already present | Immune-related adverse events (thyroid, hepatic, colitis, pneumonitis); IRIS; clinical response; JCV PCR | - | EXT | EXT | - |
 
-### 3C. Maintenance/Chronic Therapies
+### 3D. Supportive/Symptomatic
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Antiretroviral therapy (ongoing, HIV-PML) | PO | Lifelong ART for HIV-associated PML; continuous immune reconstitution required for JCV clearance and prevention of relapse | Per HIV guidelines :: PO :: daily :: Continue integrase inhibitor-based regimen (dolutegravir + tenofovir/emtricitabine or equivalent); do NOT interrupt ART; optimize regimen with HIV specialist | None (benefit always outweighs risk in HIV-PML) | CD4 count q3 months; HIV viral load q3 months; renal function; LFTs; metabolic panel annually | - | ROUTINE | ROUTINE | ROUTINE |
-| Mirtazapine (adjunctive anti-JCV) | PO | Long-term adjunctive therapy; 5-HT2A receptor antagonist may block JCV entry into glial cells; commonly used despite limited clinical evidence given favorable safety profile | 30-45 mg qHS :: PO :: qHS :: Continue 30-45 mg qHS long-term; theoretical benefit from 5-HT2A blockade preventing JCV cell entry | Concurrent MAOIs | Sedation; weight gain; dry mouth; metabolic monitoring annually | - | ROUTINE | ROUTINE | - |
-| Maraviroc (IRIS adjunct) | PO | Adjunctive PML-IRIS treatment during taper period; CCR5 antagonist may reduce inflammatory infiltrate; limited evidence | 300 mg BID :: PO :: BID :: 300 mg PO BID; used as adjunct to steroids for IRIS; continue through IRIS resolution; case reports/series suggest benefit | Severe hepatic impairment; concurrent strong CYP3A4 inhibitors (dose adjust) | LFTs; clinical response; hepatotoxicity; postural hypotension | - | ROUTINE | ROUTINE | - |
-| Dexamethasone taper (chronic IRIS) | PO | Prolonged IRIS requiring slow steroid taper over weeks to months | Variable taper :: PO :: daily :: Taper from 4-8 mg/day by 1-2 mg every 1-2 weeks guided by clinical response and MRI; may require months; balance IRIS suppression vs JCV clearance | Concurrent active infection; brittle diabetes | Blood glucose; BP; bone density if prolonged; weight; mood; adrenal insufficiency during taper | - | ROUTINE | ROUTINE | - |
-
-### 3D. Investigational/Immune Reconstitution Therapies (Limited Evidence)
-
-*These therapies function as disease-modifying approaches for PML. All require specialist supervision and informed consent given limited evidence.*
-
-| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Pembrolizumab | IV | PD-1 checkpoint inhibitor; immune reconstitution approach; emerging evidence in non-HIV PML; restores T-cell function against JCV | 2 mg/kg q4-6wk :: IV :: q4-6wk :: 2 mg/kg IV every 4-6 weeks; limited case series; risk of autoimmune complications and severe IRIS; informed consent essential | Baseline thyroid function; LFTs; renal function; chest imaging; confirm not organ transplant recipient | Autoimmune disease; organ transplant recipients (rejection risk); severe IRIS already present; active autoimmune condition | Immune-related adverse events (thyroid q6wk, LFTs q2-4wk, colitis symptoms, pneumonitis); IRIS monitoring; clinical response; JCV PCR q4-8wk | - | EXT | EXT | - |
-| Cidofovir | IV | Antiviral with in vitro activity against JCV; clinical trials have NOT shown clear benefit; not recommended routinely; consider only when no other options | 5 mg/kg q1-2wk :: IV :: q1-2wk :: 5 mg/kg IV weekly x 2 then every 2 weeks; must give with probenecid and IV hydration; nephrotoxic; CLINICAL TRIALS HAVE NOT SHOWN BENEFIT | Baseline renal function; urinalysis; CBC; adequate hydration protocol | Renal insufficiency (Cr >1.5); concurrent nephrotoxins; dehydration | Renal function (Cr before each dose); proteinuria; neutrophil count; limited evidence of efficacy; ocular toxicity | - | EXT | - | - |
-| Nivolumab | IV | PD-1 checkpoint inhibitor; alternative to pembrolizumab for non-HIV PML; similar mechanism of immune reconstitution | 3 mg/kg q2wk :: IV :: q2wk :: 3 mg/kg IV every 2 weeks; case reports of benefit; risk of IRIS and autoimmune adverse events | Baseline thyroid function; LFTs; renal function; chest imaging; confirm not organ transplant recipient | Autoimmune disease; organ transplant recipients (rejection risk); severe IRIS already present; active autoimmune condition | Immune-related adverse events (thyroid q6wk, LFTs q2-4wk, colitis symptoms, pneumonitis); IRIS monitoring; clinical response; JCV PCR q4-8wk | - | EXT | EXT | - |
-| Interleukin-7 (IL-7) | SC | Investigational; promotes T-cell expansion and immune reconstitution; early-phase clinical data | 10-20 mcg/kg weekly :: SC :: weekly :: 10-20 mcg/kg SC weekly for 3 weeks; investigational; limited availability; clinical trial enrollment preferred | Baseline lymphocyte subsets; exclude active autoimmune disease | Active autoimmune disease; concurrent immunosuppression (relative) | CD4/CD8 counts q1-2wk; clinical response; IRIS monitoring; cytokine levels | - | EXT | EXT | - |
+| Levetiracetam | IV/PO | Seizure prophylaxis/treatment (seizures common in PML, especially with cortical lesions) | 500 mg BID; 1000 mg BID; 1500 mg BID :: PO :: BID :: Start 500 mg BID; titrate to 1000-1500 mg BID; adjust for renal function | Severe renal impairment (dose adjust) | Mood changes; sedation; renal function | STAT | ROUTINE | ROUTINE | STAT |
+| Dexamethasone (cerebral edema) | IV | Cerebral edema from PML lesions or IRIS causing mass effect | 4 mg q6h; 10 mg load then 4 mg q6h :: IV :: q6h :: 10 mg IV load, then 4 mg q6h; taper as edema resolves; use shortest effective course | Active untreated infection | Blood glucose; BP; GI protection; clinical response | URGENT | URGENT | - | URGENT |
 
 ---
 
@@ -188,39 +167,31 @@ tags:
 |----------------|:--:|:----:|:---:|:---:|
 | Neurology consultation for PML diagnosis confirmation, IRIS management, and serial monitoring | STAT | STAT | ROUTINE | STAT |
 | Infectious disease consultation for HIV-PML (ART optimization) and non-HIV immunosuppression management | STAT | STAT | ROUTINE | STAT |
-| Neuroradiology review for MRI pattern characterization and serial imaging comparison | URGENT | ROUTINE | ROUTINE | URGENT |
-| Physical therapy for motor rehabilitation, mobility assessment, and adaptive equipment | - | ROUTINE | ROUTINE | ROUTINE |
+| Neuroradiology review for MRI pattern characterization and serial imaging comparison | - | ROUTINE | ROUTINE | - |
+| Physical therapy for motor rehabilitation, mobility assessment, and adaptive equipment | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for ADL assessment, adaptive strategies for visual and motor deficits | - | ROUTINE | ROUTINE | - |
 | Speech therapy for aphasia, dysarthria, and dysphagia assessment | - | ROUTINE | ROUTINE | - |
-| Neuropsychology referral for formal cognitive assessment and rehabilitation planning | - | ROUTINE | ROUTINE | - |
-| Palliative care for goals of care discussion, symptom management, and advance care planning given poor prognosis in many cases | - | ROUTINE | ROUTINE | ROUTINE |
-| Social work consult for insurance navigation, disability resources, home care coordination, and support services | - | ROUTINE | ROUTINE | - |
-| Neurosurgery consultation only if brain biopsy needed for diagnosis (CSF JCV PCR negative with high clinical suspicion) | - | EXT | - | EXT |
+| Palliative care for goals of care discussion, symptom management, and advance care planning given poor prognosis in many cases | - | ROUTINE | ROUTINE | - |
+| Neurosurgery consultation only if brain biopsy needed for diagnosis (CSF JCV PCR negative with high clinical suspicion) | - | EXT | - | - |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Return to ED immediately for rapid neurological decline (new weakness, vision loss, speech difficulty, sudden confusion, seizures), as PML can progress rapidly and treatment adjustments may be needed | STAT | ROUTINE | ROUTINE | - |
-| Do NOT stop antiretroviral therapy (if HIV-positive) under any circumstances; ART is the single most important treatment for HIV-PML; missed doses reduce effectiveness | STAT | ROUTINE | ROUTINE | - |
-| Understand that worsening after starting ART (HIV) or stopping natalizumab may represent IRIS — a paradoxical inflammatory response that is expected and treatable; do not stop ART if this occurs | - | ROUTINE | ROUTINE | - |
-| Seizure precautions: avoid driving until seizure risk assessed by neurology; do not swim or bathe alone; remove sharp/hard hazards from home; fall precautions | ROUTINE | ROUTINE | ROUTINE | - |
-| Take all anti-seizure medications as prescribed; do not skip doses or stop abruptly; missed doses increase seizure risk | - | ROUTINE | ROUTINE | - |
-| Follow-up appointments and MRIs are critical — do not miss scheduled imaging, as PML requires close monitoring for progression and IRIS | - | ROUTINE | ROUTINE | - |
-| Report any new fever, headache, or worsening symptoms during steroid taper, as this may indicate IRIS flare requiring dose adjustment | - | ROUTINE | ROUTINE | - |
-| Carry a medical identification card or bracelet listing PML diagnosis, current medications, and emergency contact for neurology | - | ROUTINE | ROUTINE | - |
+| Report any new neurological symptoms (weakness, vision changes, speech difficulty, confusion) immediately, as PML can progress rapidly and treatment adjustments may be needed | STAT | ROUTINE | ROUTINE | - |
+| Do NOT stop antiretroviral therapy (if HIV-positive) under any circumstances; ART is the single most important treatment for HIV-PML | - | ROUTINE | ROUTINE | - |
+| Understand that worsening after starting ART (HIV) or stopping natalizumab may represent IRIS — a paradoxical inflammatory response that is expected and treatable | - | ROUTINE | ROUTINE | - |
+| Seizure precautions: avoid driving until seizure risk assessed; do not swim or bathe alone; fall precautions at home | - | ROUTINE | ROUTINE | - |
+| Follow-up appointments and MRIs are critical — do not miss scheduled imaging, as PML requires close monitoring | - | - | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| For patients on natalizumab: JCV antibody index monitoring q6 months; discuss treatment switch with MS specialist if JCV index >1.5 and treatment duration >24 months | - | ROUTINE | ROUTINE | - |
-| Maximize antiretroviral adherence to maintain immune function and prevent PML recurrence/progression; use pill organizers, alarms, or directly observed therapy if needed | - | ROUTINE | ROUTINE | - |
-| Home safety modifications for visual field deficits, weakness, and cognitive impairment: remove trip hazards, improve lighting, install grab bars, consider stair gates | - | ROUTINE | ROUTINE | - |
-| Advance care planning discussions early given variable but often poor prognosis; designate healthcare proxy; document code status and treatment preferences | - | ROUTINE | ROUTINE | - |
-| Infection avoidance: hand hygiene, avoid sick contacts, avoid raw/undercooked foods; immunocompromised patients at higher risk for opportunistic infections | - | ROUTINE | ROUTINE | - |
-| Nutrition optimization: adequate protein and caloric intake; consult dietitian if weight loss or poor appetite; address swallowing difficulties if present | - | ROUTINE | ROUTINE | - |
-| Caregiver education: teach recognition of seizures, IRIS symptoms, and neurological decline; ensure caregiver knows when to call 911 vs. neurology clinic | - | ROUTINE | ROUTINE | - |
+| For patients on natalizumab: JCV antibody monitoring q6 months; consider treatment switch if JCV index >1.5 and treatment duration >24 months | - | - | ROUTINE | - |
+| Maximize antiretroviral adherence to maintain immune function and prevent PML recurrence/progression | - | ROUTINE | ROUTINE | - |
+| Home safety modifications for visual field deficits, weakness, and cognitive impairment | - | ROUTINE | ROUTINE | - |
+| Advance care planning discussions early given variable but often poor prognosis | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -244,18 +215,13 @@ tags:
 
 | Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
 |-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI brain with/without contrast | Q4-8 weeks during active disease; then q3 months | Stabilization or improvement of lesions; no new lesions; resolution of IRIS enhancement | Adjust immune reconstitution strategy; treat IRIS if new enhancement with edema; consider biopsy if atypical | - | ROUTINE | ROUTINE | - |
+| MRI brain with/without contrast | Q4-8 weeks during active disease; then q3 months | Stabilization → improvement of lesions; no new lesions; resolution of IRIS enhancement | Adjust immune reconstitution strategy; treat IRIS if new enhancement with edema; consider biopsy if atypical | - | ROUTINE | ROUTINE | - |
 | CSF JCV PCR (quantitative) | Repeat at 2-4 weeks if initially negative with high suspicion; q3 months if positive | Declining or undetectable JCV copies | If rising, assess immune reconstitution adequacy; consider more aggressive approach | - | ROUTINE | ROUTINE | - |
 | CD4 count (HIV patients) | Q4-8 weeks after ART initiation; then q3 months | Rising CD4; target >200 | Optimize ART; check resistance; ID consultation | - | ROUTINE | ROUTINE | - |
 | HIV viral load | Q4 weeks until undetectable; then q3 months | Undetectable (<50 copies/mL) | Assess adherence; resistance testing; regimen change | - | ROUTINE | ROUTINE | - |
 | Neurological examination | Q1-2 days inpatient; each outpatient visit | Stable or improving | Treat IRIS if worsening with inflammation; reassess management if worsening without IRIS (progressive PML) | STAT | ROUTINE | ROUTINE | STAT |
-| Blood glucose (during steroids) | Q6h during IV steroids; daily during oral taper | <180 mg/dL | Insulin sliding scale; endocrine consult if persistent >250 | STAT | ROUTINE | ROUTINE | STAT |
-| Blood pressure | Q shift during steroids; each outpatient visit | <160/100 mmHg | Antihypertensives PRN; dose adjustment if sustained hypertension | STAT | ROUTINE | ROUTINE | STAT |
-| Seizure monitoring | Daily inpatient; each outpatient visit | No seizures | Adjust anticonvulsant dosing; obtain EEG; neurology reassessment | STAT | ROUTINE | ROUTINE | STAT |
-| Cognitive function (formal) | Each visit; formal neuropsychological testing q3-6 months | Stable or improving on serial assessments | Neuropsychological referral; cognitive rehabilitation; consider donepezil/memantine | - | ROUTINE | ROUTINE | - |
-| Lymphocyte subsets (CD4, CD8) | Q2-4 weeks during active IRIS; then q3 months | Normalizing counts; CD4 >200 in HIV | Adjust immune reconstitution; reassess immunosuppression discontinuation timeline | - | ROUTINE | ROUTINE | - |
-| LFTs (if on maraviroc, mirtazapine, or ART) | Baseline; q2-4 weeks initially; then q3 months | Normal ALT/AST | Hold hepatotoxic medications; dose adjust; hepatology consultation if severe | - | ROUTINE | ROUTINE | - |
-| Renal function (if on cidofovir or tenofovir) | Before each cidofovir dose; q3 months on ART | Cr <1.5; stable GFR | Hold cidofovir if Cr >1.5; adjust tenofovir; nephrology referral | - | ROUTINE | ROUTINE | - |
+| Seizure monitoring | Daily inpatient; each outpatient visit | No seizures | Adjust anticonvulsant; EEG monitoring | - | ROUTINE | ROUTINE | ROUTINE |
+| Cognitive function | Each visit; formal testing q3-6 months | Stable or improving | Neuropsychological referral; rehabilitation | - | - | ROUTINE | - |
 
 ---
 
@@ -303,19 +269,6 @@ tags:
 ---
 
 ## CHANGE LOG
-
-**v1.1 (February 11, 2026)**
-- Restructured Section 3 to standard subsection format: 3A Acute/Emergent, 3B Symptomatic, 3C Maintenance/Chronic, 3D Investigational/Immune Reconstitution
-- Expanded 3B Symptomatic from 2 meds to 16 meds covering seizures (levetiracetam, lacosamide, valproic acid), neuropathic pain (gabapentin, pregabalin), spasticity (baclofen, tizanidine), mood (sertraline, escitalopram, mirtazapine), fatigue (modafinil, methylphenidate), cognitive (donepezil, memantine), GI prophylaxis (omeprazole)
-- Added 3C Maintenance/Chronic section with ongoing ART, mirtazapine adjunctive, maraviroc, dexamethasone taper
-- Restructured 3D as Investigational/Immune Reconstitution with Pre-Treatment Requirements column; added nivolumab and IL-7
-- Moved PML-IRIS steroids and cerebral edema management into 3A Acute
-- Added acute levetiracetam loading to 3A
-- Enhanced 4A Referrals: added neuropsychology, social work; improved ED/ICU coverage for neuroradiology, palliative care, neurosurgery
-- Enhanced 4B Patient Instructions from 5 to 8 items: added medication adherence, IRIS flare warning, medical ID recommendation
-- Enhanced 4C Lifestyle from 4 to 7 items: added infection avoidance, nutrition optimization, caregiver education
-- Expanded Section 6 Monitoring from 7 to 13 parameters: added blood glucose, BP, lymphocyte subsets, LFTs, renal function monitoring
-- Fixed setting coverage gaps: added ED tags for neuroradiology, added ICU tags for palliative care and physical therapy
 
 **v1.0 (February 11, 2026)**
 - Initial template creation

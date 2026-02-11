@@ -1,7 +1,7 @@
 ---
 title: "Gait Disorder Evaluation"
 description: "Clinical decision support for systematic evaluation of neurological gait disorders"
-version: "1.2"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -24,10 +24,10 @@ tags:
 
 # Gait Disorder Evaluation
 
-**VERSION:** 1.2
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Revised per checker feedback (v1.2 — C1/C2 fixes)
+**STATUS:** Draft
 
 ---
 
@@ -146,7 +146,7 @@ tags:
 
 ## 3. TREATMENT
 
-### 3A. Acute/Reversible Causes
+### 3A. Treatable/Reversible Causes (Urgent)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
@@ -157,18 +157,16 @@ tags:
 | IV methylprednisolone | IV | Acute inflammatory myelopathy (MS relapse, NMOSD, transverse myelitis, neurosarcoidosis) | 1000 mg :: IV :: daily :: 1000 mg IV daily for 3-5 days; followed by oral prednisone taper if indicated | Active untreated infection; uncontrolled diabetes; GI bleeding | Blood glucose Q6H on steroids; GI prophylaxis; blood pressure; infection surveillance | STAT | STAT | - | STAT |
 | Gluten-free diet | Dietary | Gluten ataxia (positive anti-gliadin antibodies with cerebellar ataxia and no alternative cause) | Strict gluten-free diet :: Dietary :: continuous :: Lifelong gluten elimination; may take 6-12 months for maximal improvement; refer to dietitian | None | Anti-gliadin antibody titers (should decline); clinical ataxia assessment every 3-6 months; cerebellar MRI | - | ROUTINE | ROUTINE | - |
 | D-penicillamine or trientine | PO | Wilson disease with neurological manifestations | Trientine 250 mg :: PO :: TID :: Trientine preferred for neurological Wilson (less risk of paradoxical worsening vs D-penicillamine); zinc maintenance after de-coppering | Pregnancy (teratogenic); renal failure | 24-hour urine copper; free copper levels; LFTs; CBC; neurological status (watch for paradoxical worsening) | - | ROUTINE | ROUTINE | - |
-| Penicillin G | IV | Neurosyphilis (tabes dorsalis) | 18-24 million units :: IV :: continuous or divided Q4H :: 18-24 million units/day IV for 10-14 days | Penicillin allergy (desensitize if needed) | CSF VDRL and cell count at 6-month intervals post-treatment until normalized; serum RPR decline | - | STAT | ROUTINE | - |
+| Penicillin G | IV | Neurosyphilis (tabes dorsalis) | 18-24 million units :: IV :: continuous or divided Q4H :: 18-24 million units/day IV for 10-14 days | Penicillin allergy (desensitize if needed) | CSF VDRL and cell count at 6-month intervals post-treatment until normalized; serum RPR decline | - | STAT | - | - |
 
-### 3B. Symptomatic Treatment — Parkinsonian & Spasticity
-
-**Parkinsonian Gait:**
+### 3B. Parkinsonian Gait
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Carbidopa-levodopa | PO | Parkinsonian gait (Parkinson disease); diagnostic/therapeutic trial | 25/100 mg; 25/250 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg increments every 3-7 days to clinical effect; robust response supports PD diagnosis | Concurrent MAOIs (non-selective); narrow-angle glaucoma | Dyskinesias; motor fluctuations (wearing off); orthostatic hypotension; impulse control; nausea | - | ROUTINE | ROUTINE | - |
 | Amantadine | PO | Parkinsonian gait (adjunctive); gait freezing | 100 mg :: PO :: BID :: 100 mg BID; may increase to 100 mg TID; also treats levodopa-induced dyskinesias | Renal impairment (dose adjust); seizure history; livedo reticularis | Renal function; hallucinations; livedo reticularis; peripheral edema; confusion in elderly | - | ROUTINE | ROUTINE | - |
 
-**Spasticity Management:**
+### 3C. Spasticity Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
@@ -177,7 +175,7 @@ tags:
 | Intrathecal baclofen pump | Intrathecal | Severe spasticity refractory to oral agents; functional impairment despite maximal oral therapy | ITB trial first :: Intrathecal :: continuous :: Baclofen trial via LP (50-100 mcg bolus); if positive response, surgical pump placement; dose titrated by programmer | Infection at pump site; unable to maintain follow-up for refills | Pump refills every 1-6 months; alarm for low volume; withdrawal is medical emergency (hyperthermia, rhabdomyolysis, death) | - | ROUTINE | EXT | - |
 | Botulinum toxin A (onabotulinumtoxinA) | IM | Focal spasticity (ankle plantar flexor spasticity causing equinovarus foot; hip adductor spasticity) | 50-400 units :: IM :: per session :: Dose depends on muscle group; gastrocnemius/soleus 200-400 units; posterior tibialis 100-200 units; adductors 200-400 units; repeat every 12 weeks | Myasthenia gravis; infection at injection site | Effect onset 3-7 days; peak 2-4 weeks; duration 12 weeks; monitor for excessive weakness; functional gait assessment pre/post | - | ROUTINE | ROUTINE | - |
 
-### 3C. Symptomatic Treatment — Cerebellar Ataxia
+### 3D. Cerebellar Ataxia Management (Symptomatic)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
@@ -186,7 +184,7 @@ tags:
 | Acetazolamide | PO | Episodic ataxia type 2 (EA2, CACNA1A mutation); effective prophylaxis for ataxic episodes | 250 mg; 500 mg :: PO :: BID :: Start 250 mg BID; increase to 500 mg BID as tolerated | Sulfa allergy; severe renal/hepatic disease; hypokalemia | BMP (metabolic acidosis, hypokalemia); renal stones; paresthesias; fatigue | - | ROUTINE | ROUTINE | - |
 | Physical therapy (balance/gait training) | Rehab | ALL gait disorders — cornerstone of management regardless of etiology | PT evaluation and gait training :: Rehab :: 2-3x/week :: Balance exercises, gait retraining, compensatory strategies, assistive device training; vestibular rehabilitation if vestibular component | None | Timed up-and-go; Berg Balance Scale; 10-meter walk test; fall frequency | - | ROUTINE | ROUTINE | - |
 
-### 3D. Supportive Measures & Fall Prevention
+### 3E. Fall Prevention and Supportive Measures
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
@@ -199,58 +197,25 @@ tags:
 
 ---
 
-## 4. OTHER RECOMMENDATIONS
+## 4. RECOMMENDATIONS
 
-### 4A. Referrals & Consults
+### 4A. General Recommendations (All Patients)
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Neurology consultation for gait disorder localization (spastic vs ataxic vs parkinsonian vs neuropathic vs functional) and directed workup | URGENT | URGENT | ROUTINE | URGENT |
-| Neurosurgery referral for NPH (positive large-volume LP trial), cervical myelopathy with cord compression, spinal tumor, or spinal dural AV fistula | - | URGENT | ROUTINE | URGENT |
-| Physical therapy for gait retraining, balance exercises (vestibular and proprioceptive), fall prevention program, and assistive device fitting | - | ROUTINE | ROUTINE | - |
-| Occupational therapy for home safety evaluation, ADL modification, adaptive equipment, and fall hazard assessment | - | ROUTINE | ROUTINE | - |
-| Speech therapy for dysphagia evaluation if cerebellar ataxia with dysarthria or brainstem involvement affecting swallow | - | ROUTINE | ROUTINE | - |
-| Movement disorders specialist referral for parkinsonian gait not responding to levodopa, suspected MSA or PSP, or tremor-predominant presentations | - | ROUTINE | ROUTINE | - |
-| Orthopedic spine surgery consultation for lumbar stenosis with neurogenic claudication or cervical spondylotic myelopathy requiring surgical decision | - | ROUTINE | ROUTINE | - |
-| Orthotics referral for ankle-foot orthoses (foot drop/steppage gait), shoe modifications, or custom bracing | - | ROUTINE | ROUTINE | - |
-| Genetic counseling for suspected hereditary ataxia (SCA, Friedreich, HSP), hereditary neuropathy (CMT), or Wilson disease — discuss family implications | - | - | ROUTINE | - |
-| Psychiatry referral for functional gait disorder (multidisciplinary approach: CBT, physical rehabilitation, psychoeducation) | - | ROUTINE | ROUTINE | - |
-| Oncology referral for paraneoplastic cerebellar degeneration with positive antibodies or identified malignancy on PET-CT | - | URGENT | URGENT | - |
-| Dietitian referral for gluten-free diet implementation (gluten ataxia), nutritional optimization (B12/thiamine/folate deficiency), or weight management | - | ROUTINE | ROUTINE | - |
-| Social work for disability resources, home care services, adaptive equipment funding, and caregiver support in progressive gait disorders | - | ROUTINE | ROUTINE | - |
-| Palliative care referral for advanced progressive gait disorders (MSA-C, advanced SCA, ALS) for symptom management and goals of care | - | ROUTINE | ROUTINE | - |
+- Systematic gait examination: observe gait pattern, tandem gait, Romberg test, heel/toe walking, pull test; characterize gait pattern before ordering investigations
+- Gait disorders in elderly are often multifactorial — address all contributing factors (sensory, vestibular, musculoskeletal, neurological, medication-related)
+- Fall risk assessment at every visit: ask about falls in past 12 months; use timed up-and-go (>12 seconds = fall risk); Berg Balance Scale
+- Medication review at every visit: identify and minimize medications contributing to falls (sedatives, anticholinergics, antihypertensives causing orthostatic hypotension)
+- Physical therapy is beneficial for virtually ALL neurological gait disorders — refer early
+- Consider multiple concurrent etiologies especially in elderly (e.g., cervical myelopathy + peripheral neuropathy + orthostatic hypotension)
 
-### 4B. Patient Instructions
+### 4B. Setting-Specific Recommendations
 
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Return immediately for sudden inability to walk, new leg weakness, or loss of bladder/bowel control (may indicate cord compression or stroke requiring emergency treatment) | STAT | STAT | ROUTINE | - |
-| Return immediately for acute onset of ataxia with headache, vomiting, or altered consciousness (may indicate cerebellar stroke or hemorrhage) | STAT | STAT | ROUTINE | - |
-| Return immediately for new double vision, facial weakness, slurred speech, or numbness (may indicate brainstem or posterior circulation stroke) | STAT | STAT | ROUTINE | - |
-| Use prescribed assistive device (cane, walker, rollator) at all times when walking; do not walk unsupported until cleared by physical therapy | - | ROUTINE | ROUTINE | - |
-| Remove tripping hazards at home (loose rugs, clutter, cords); install grab bars in bathroom and handrails on all stairs; ensure adequate lighting | - | ROUTINE | ROUTINE | - |
-| Do not drive until formally cleared by neurology — gait disorder may indicate broader neurological impairment affecting driving safety | ROUTINE | ROUTINE | ROUTINE | - |
-| Keep a fall diary recording date, time, circumstances, and any injuries from each fall to guide treatment decisions at follow-up visits | - | - | ROUTINE | - |
-| Take all medications as prescribed; do not stop Parkinson medications, spasticity medications, or supplements (B12, thiamine) without physician guidance | ROUTINE | ROUTINE | ROUTINE | - |
-| For gluten ataxia: strictly avoid all wheat, barley, rye, and cross-contaminated products; improvement may take 6-12 months of strict adherence | - | ROUTINE | ROUTINE | - |
-| Wear non-slip footwear at all times; avoid walking in socks, slippers, or bare feet on smooth surfaces | - | ROUTINE | ROUTINE | - |
-| If prescribed AFOs (ankle braces), wear them during all walking activities and check skin daily for redness or breakdown | - | ROUTINE | ROUTINE | - |
+- **ED:** Acute gait disorder: consider stroke (posterior circulation), Wernicke encephalopathy (give thiamine empirically before glucose), cord compression (MRI spine urgently), GBS (ascending weakness); CT head for acute onset; fall-related injuries (hip fracture, subdural hematoma)
+- **Inpatient:** Fall precautions (yellow wristband, bed alarm, non-slip footwear, low bed); daily gait assessment; PT/OT evaluation within 24 hours; medication reconciliation; NPH workup if magnetic gait with ventriculomegaly; nutritional assessment (B12, thiamine, folate, copper)
+- **Outpatient:** Longitudinal gait assessment with standardized measures (timed up-and-go, 10-meter walk, 6-minute walk test); coordinate multidisciplinary care (neurology, PT, OT, orthotics, neurosurgery if NPH); driving assessment if gait disorder reflects broader neurological impairment; home safety evaluation
+- **ICU:** Acute myelopathy (cord compression, transverse myelitis); Wernicke encephalopathy; GBS with respiratory compromise; status epilepticus presenting as drop attacks; critical illness myopathy/neuropathy (ICU-acquired weakness affecting gait post-recovery)
 
-### 4C. Lifestyle & Prevention
-
-| Recommendation | ED | HOSP | OPD | ICU |
-|----------------|:--:|:----:|:---:|:---:|
-| Alcohol cessation — alcohol worsens cerebellar function, causes cerebellar degeneration (vermian atrophy), and increases fall risk | ROUTINE | ROUTINE | ROUTINE | - |
-| Regular exercise program adapted to balance limitations (swimming, stationary cycling, seated exercises, tai chi) to maintain strength and reduce fall risk | - | ROUTINE | ROUTINE | - |
-| Fall prevention strategies: adequate home lighting, non-skid footwear, remove loose rugs, install handrails on both sides of stairs, shower bench | - | ROUTINE | ROUTINE | - |
-| Vitamin D supplementation (1000-2000 IU daily) and calcium for bone health given chronic fall risk; treat deficiency aggressively | - | ROUTINE | ROUTINE | - |
-| Maintain healthy weight to reduce joint stress, improve mobility, and lower cardiovascular risk contributing to vascular gait disorders | - | - | ROUTINE | - |
-| Strict glycemic control (HbA1c <7%) if diabetic neuropathy contributing to sensory ataxic gait or fall risk | - | ROUTINE | ROUTINE | - |
-| Mediterranean or balanced diet rich in B12 (meat, fish, dairy), folate (leafy greens), and thiamine to support nerve health | - | ROUTINE | ROUTINE | - |
-| Adequate sleep (7-9 hours nightly) — fatigue worsens gait instability and increases fall risk in all neurological gait disorders | - | - | ROUTINE | - |
-| Medical alert bracelet recommended for patients with episodic ataxia (may appear intoxicated during episodes) or conditions causing sudden falls | - | - | ROUTINE | - |
-
-### 4D. Pattern-Based Evaluation Guide
+### 4C. Pattern-Based Evaluation Guide
 
 - **Spastic gait** → MRI cervical/thoracic spine (myelopathy), MRI brain (stroke, MS, tumor); B12, copper, HIV; SSEPs
 - **Cerebellar ataxic gait** → MRI brain (cerebellar lesion); paraneoplastic antibodies, anti-GAD65, anti-gliadin; thiamine, vitamin E; alcohol history; genetic testing (SCA) if progressive without acquired cause
@@ -282,23 +247,20 @@ tags:
 
 ---
 
-## 6. MONITORING PARAMETERS
+## 6. MONITORING
 
-| Parameter | Frequency | Target/Threshold | Action if Abnormal | ED | HOSP | OPD | ICU |
-|-----------|-----------|------------------|-------------------|:--:|:----:|:---:|:---:|
-| Timed up-and-go (TUG) | Every visit | <12 seconds (age-adjusted) | Fall prevention program; assistive device; PT intensification | STAT | ROUTINE | ROUTINE | - |
-| 10-meter walk test (gait speed) | Every 3-6 months | >1.0 m/s (normal); <0.8 m/s = fall risk | PT referral; investigate worsening; assistive device | - | ROUTINE | ROUTINE | - |
-| Berg Balance Scale | Every 3-6 months | >45/56 (low fall risk) | <45: moderate risk; <36: high risk → intensify fall prevention | - | ROUTINE | ROUTINE | - |
-| Fall frequency (fall diary) | Every visit | Zero falls | Medication review; PT; home safety; assistive device; investigate new etiology | ROUTINE | ROUTINE | ROUTINE | - |
-| Timed 25-foot walk (MS patients) | Every 3-6 months | Stable | >20% worsening: reassess MS therapy; consider dalfampridine trial | - | ROUTINE | ROUTINE | - |
-| SARA score (cerebellar ataxia) | Every 6-12 months | Stable or improving | Investigate new etiologies; adjust treatment; PT modification | - | ROUTINE | ROUTINE | - |
-| FVC (if respiratory concern — GBS, myelopathy) | Every 6-12 months; q4-6h if acute | >80% predicted | Refer pulmonary if <80%; consider NIV if <50%; intubate if <20 mL/kg or declining rapidly | - | ROUTINE | ROUTINE | STAT |
-| B12 / nutritional levels (B12, MMA, folate, copper, thiamine) | At baseline; repeat at 3 months if supplementing | B12 >300 pg/mL; normal MMA | Continue supplementation; dose adjustment | STAT | ROUTINE | ROUTINE | STAT |
-| MRI brain/spine | Baseline; repeat based on etiology (6-12 months for active disease) | No new lesions; stable | Adjust treatment per etiology | URGENT | ROUTINE | ROUTINE | URGENT |
-| Orthostatic vitals | Every visit if orthostatic component | SBP drop <20 mmHg on standing | Medication adjustment; compression stockings; fludrocortisone/midodrine | STAT | ROUTINE | ROUTINE | STAT |
-| Blood glucose (on high-dose IV steroids) | q6h during IV steroids; QID during oral taper | 140-180 mg/dL inpatient | >200 → sliding scale insulin; endocrinology if persistent | STAT | ROUTINE | - | STAT |
-| LFTs (on tizanidine, riluzole, D-penicillamine/trientine) | Baseline, then 1, 3, 6 months; then periodically | ALT/AST <3x ULN | Elevated >3x → reduce dose; >5x → discontinue agent | - | ROUTINE | ROUTINE | - |
-| Renal function (on dalfampridine, medications cleared renally) | At baseline, then q3-6 months | CrCl >50 mL/min for dalfampridine | CrCl <50 → discontinue dalfampridine; adjust renally-cleared medications | - | ROUTINE | ROUTINE | - |
+| Parameter | Frequency | Target | Action if Abnormal |
+|-----------|-----------|--------|-------------------|
+| Timed up-and-go (TUG) | Every visit | <12 seconds (age-adjusted) | Fall prevention program; assistive device; PT intensification |
+| 10-meter walk test (gait speed) | Every 3-6 months | >1.0 m/s (normal); <0.8 m/s = fall risk | PT referral; investigate worsening; assistive device |
+| Berg Balance Scale | Every 3-6 months | >45/56 (low fall risk) | <45: moderate risk; <36: high risk → intensify fall prevention |
+| Fall frequency (fall diary) | Every visit | Zero falls | Medication review; PT; home safety; assistive device; investigate new etiology |
+| Timed 25-foot walk (MS patients) | Every 3-6 months | Stable | >20% worsening: reassess MS therapy; consider dalfampridine trial |
+| SARA score (cerebellar ataxia) | Every 6-12 months | Stable or improving | Investigate new etiologies; adjust treatment; PT modification |
+| FVC (if respiratory concern) | Every 6-12 months | >80% predicted | Refer pulmonary if <80%; consider NIV if <50% |
+| B12 / nutritional levels | At baseline; repeat at 3 months if supplementing | B12 >300 pg/mL; normal MMA | Continue supplementation; dose adjustment |
+| MRI brain/spine | Baseline; repeat based on etiology (6-12 months for active disease) | No new lesions; stable | Adjust treatment per etiology |
+| Orthostatic vitals | Every visit if orthostatic component | No orthostatic drop | Medication adjustment; compression stockings; fludrocortisone/midodrine |
 
 ---
 
@@ -342,7 +304,6 @@ tags:
 - Elderly gait disorders are often MULTIFACTORIAL — cervical myelopathy + peripheral neuropathy + medication effects + orthostatic hypotension may all coexist; address all contributing factors
 - Medication review is one of the highest-yield interventions: benzodiazepines, anticholinergics, sedating medications, and polypharmacy are major modifiable fall risk factors
 - Functional gait disorder is a positive diagnosis made by characteristic clinical signs (inconsistency, distractibility, entrainment, Hoover sign) — NOT a diagnosis of exclusion
-- Neurosyphilis (tabes dorsalis): IV penicillin G is given inpatient, but OUTPATIENT follow-up is essential — serial CSF VDRL and cell count every 6 months until normalized; repeat LP if CSF not improved at 6 months; serum RPR should decline 4-fold by 12 months
 - Physical therapy is beneficial for virtually ALL neurological gait disorders — refer early regardless of etiology
 - Fall risk has a cascade effect: fear of falling → activity restriction → deconditioning → increased fall risk; early intervention with PT and assistive devices breaks this cycle
 
@@ -352,6 +313,4 @@ tags:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.1 | 2026-02-11 | Rebuilt Section 4: replaced non-standard 4A General/4B Setting-Specific/4C Pattern-Based with standard 4A Referrals & Consults (14 referrals with venue columns), 4B Patient Instructions (11 instructions with venue columns), 4C Lifestyle & Prevention (9 recommendations with venue columns); retained Pattern-Based Evaluation Guide as 4D. Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring (13 parameters). Restructured Treatment from 5 subsections (3A-3E) to standard 4-subsection format (3A-3D): merged Parkinsonian and Spasticity into 3B Symptomatic, Cerebellar Ataxia to 3C, Fall Prevention to 3D. Added glucose monitoring, LFT monitoring, and renal function monitoring rows to Section 6. |
-| 1.2 | 2026-02-11 | Fixed Penicillin G row: added OPD=ROUTINE for outpatient neurosyphilis follow-up pathway (serial CSF VDRL monitoring). Added neurosyphilis follow-up note to NOTES section. |
 | 1.0 | 2026-02-11 | Initial draft — Gait Disorder Evaluation plan |

@@ -1,7 +1,7 @@
 ---
 title: "Corticobasal Degeneration (CBD) / Corticobasal Syndrome (CBS)"
 description: "Clinical decision support for evaluation and symptomatic management of corticobasal degeneration"
-version: "1.1"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Corticobasal Degeneration (CBD) / Corticobasal Syndrome (CBS)
 
-**VERSION:** 1.1
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Revised per checker feedback
+**STATUS:** Draft
 
 ---
 
@@ -55,13 +55,9 @@ tags:
 
 ---
 
-═══════════════════════════════════════════════════════════════
-SECTION A: ACTION ITEMS
-═══════════════════════════════════════════════════════════════
-
 ## 1. LABORATORY WORKUP
 
-### 1A. Essential/Core Labs
+### 1A. Core Labs (All Patients)
 
 | Test | ED | HOSP | OPD | ICU | Rationale | Target Finding |
 |------|:--:|:----:|:---:|:---:|-----------|----------------|
@@ -97,74 +93,73 @@ SECTION A: ACTION ITEMS
 
 ## 2. DIAGNOSTIC IMAGING & STUDIES
 
-### 2A. Essential/First-line
+### 2A. Essential Studies
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| MRI brain with/without contrast (CPT 70553) | All patients; early in evaluation | Asymmetric cortical atrophy (parietal, frontal) contralateral to more affected limb; may be normal early | MRI-incompatible devices | URGENT | ROUTINE | ROUTINE | - |
-| CT head without contrast | ED acute presentation; exclude stroke, hemorrhage, mass | No acute lesion; may show asymmetric atrophy | None | STAT | STAT | - | STAT |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| MRI brain with/without contrast (CPT 70553) | URGENT | ROUTINE | ROUTINE | - | All patients; early in evaluation | Asymmetric cortical atrophy (parietal, frontal) contralateral to more affected limb; may be normal early | MRI-incompatible devices |
+| CT head without contrast | STAT | - | - | STAT | ED acute presentation; exclude stroke, hemorrhage, mass | No acute lesion; may show asymmetric atrophy | None |
 
-### 2B. Extended
+### 2B. Extended Studies
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| FDG-PET brain (CPT 78608) | Outpatient; supports diagnosis; high diagnostic value | Asymmetric frontoparietal hypometabolism contralateral to most-affected side; basal ganglia hypometabolism | Pregnancy; uncontrolled diabetes | - | - | ROUTINE | - |
-| DaTscan (I-123 ioflupane SPECT) | Differentiate CBS from essential tremor or functional movement disorder | Asymmetrically reduced dopamine transporter uptake contralateral to more affected side | Hypersensitivity to iodine | - | - | ROUTINE | - |
-| Neuropsychological testing (CPT 96116) | Characterize cognitive profile; quantify apraxia, executive dysfunction, visuospatial deficits | Asymmetric cortical deficits (apraxia, visuospatial > memory); executive dysfunction | None | - | - | ROUTINE | - |
-| EEG (CPT 95816) | Myoclonus characterization; exclude seizures; CJD evaluation (periodic complexes) | Normal background or asymmetric slowing; no periodic sharp wave complexes (which suggest CJD) | None | - | ROUTINE | EXT | - |
-| Videofluoroscopic swallow study (VFSS) | If dysphagia present; baseline and serial assessment | Assess aspiration risk, pharyngeal residue | None | - | ROUTINE | ROUTINE | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| FDG-PET brain (CPT 78608) | - | - | ROUTINE | - | Outpatient; supports diagnosis; high diagnostic value | Asymmetric frontoparietal hypometabolism contralateral to most-affected side; basal ganglia hypometabolism | Pregnancy; uncontrolled diabetes |
+| DaTscan (I-123 ioflupane SPECT) | - | - | ROUTINE | - | Differentiate CBS from essential tremor or functional movement disorder; demonstrates nigrostriatal dopaminergic deficit | Asymmetrically reduced dopamine transporter uptake contralateral to more affected side | Hypersensitivity to iodine |
+| Neuropsychological testing (CPT 96116) | - | - | ROUTINE | - | Characterize cognitive profile; quantify apraxia, executive dysfunction, visuospatial deficits | Asymmetric cortical deficits (apraxia, visuospatial > memory); executive dysfunction |  None |
+| EEG (CPT 95816) | - | ROUTINE | EXT | - | Myoclonus characterization; exclude seizures; CJD evaluation (periodic complexes) | Normal background or asymmetric slowing; no periodic sharp wave complexes (which suggest CJD) | None |
 
 ### 2C. Rare/Specialized
 
-| Study | Timing | Target Finding | Contraindications | ED | HOSP | OPD | ICU |
-|-------|--------|----------------|-------------------|:--:|:----:|:---:|:---:|
-| Amyloid PET | Differentiate AD-CBS from CBD-CBS; important for clinical trial eligibility | Negative in CBD; positive in AD-CBS | Pregnancy | - | - | EXT | - |
-| Tau PET (Flortaucipir) | Research; asymmetric cortical tau deposition supports 4R tauopathy | Asymmetric cortical binding | Pregnancy | - | - | EXT | - |
-| MRI volumetrics | Quantify asymmetric atrophy; track progression | Asymmetric parietal/frontal atrophy | MRI-incompatible devices | - | - | EXT | - |
-| EMG/NCS (CPT 95907-95913, 95860-95870) | Only if peripheral neuropathy suspected as confounding factor | Normal (no peripheral neuropathy expected in CBD) | None | - | - | EXT | - |
+| Study | ED | HOSP | OPD | ICU | Timing | Target Finding | Contraindications |
+|-------|:--:|:----:|:---:|:---:|--------|----------------|-------------------|
+| Amyloid PET | - | - | EXT | - | Differentiate AD-CBS from CBD-CBS; important for clinical trial eligibility | Negative in CBD; positive in AD-CBS | Pregnancy |
+| Tau PET (Flortaucipir) | - | - | EXT | - | Research; asymmetric cortical tau deposition supports 4R tauopathy | Asymmetric cortical binding | Pregnancy |
+| MRI volumetrics | - | - | EXT | - | Quantify asymmetric atrophy; track progression | Asymmetric parietal/frontal atrophy | MRI-incompatible devices |
+| EMG/NCS (CPT 95907-95913, 95860-95870) | - | - | EXT | - | Only if peripheral neuropathy suspected as confounding factor | Normal (no peripheral neuropathy expected in CBD) | None |
 
 ---
 
 ## 3. TREATMENT
 
-!!! warning "NO DISEASE-MODIFYING THERAPY EXISTS FOR CBD"
-    All current treatments are symptomatic. Levodopa trial is recommended but benefit is usually poor (<25% of CBS patients respond). Treatment focuses on managing myoclonus, dystonia, rigidity, pain, and behavioral/cognitive symptoms.
-
-### 3A. Acute/Emergent Treatment
+### 3A. Levodopa Trial (Diagnostic and Therapeutic)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Carbidopa-Levodopa | PO | Therapeutic trial for parkinsonism/rigidity; most CBS patients have poor or absent levodopa response but trial is recommended for diagnosis and potential modest benefit | 25/100 mg :: PO :: TID :: Start carbidopa-levodopa 25/100 mg TID; titrate to 25/250 mg TID over 4-6 weeks; adequate trial = 1000 mg levodopa daily for ≥2 months; most CBS patients show minimal response | Concurrent non-selective MAOIs; narrow-angle glaucoma; melanoma (historical, debated) | Orthostatic BP; nausea; dyskinesias; hallucinations; impulse control behaviors | ROUTINE | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO | Musculoskeletal pain from dystonia and rigidity; safer than NSAIDs in elderly | 500 mg :: PO :: Q6H PRN :: 500-1000 mg PO q6h as needed; max 3000 mg/day in elderly; max 4000 mg/day in younger adults | Severe hepatic impairment; active liver disease | Hepatic function; total daily dose including combination products | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Carbidopa-Levodopa | PO | Therapeutic trial for parkinsonism/rigidity; most CBS patients have poor or absent levodopa response but trial is recommended | 25/100 mg TID; 25/250 mg TID :: PO :: TID :: Start carbidopa-levodopa 25/100 mg TID; titrate to 25/250 mg TID over 4-6 weeks; adequate trial = 1000 mg levodopa daily for ≥2 months; most CBS patients show minimal response | Concurrent non-selective MAOIs; narrow-angle glaucoma; melanoma (historical, debated) | Orthostatic BP; nausea; dyskinesias; hallucinations; impulse control behaviors | - | ROUTINE | ROUTINE | - |
 
-### 3B. Symptomatic/Maintenance Treatment
+### 3B. Symptomatic Treatments — Myoclonus
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Clonazepam | PO | Cortical myoclonus; often prominent and disabling in CBS | 0.25 mg :: PO :: BID :: Start 0.25-0.5 mg BID; titrate by 0.5 mg q3-7d; max 4 mg/day; use lowest effective dose to avoid sedation | Severe hepatic impairment; acute narrow-angle glaucoma; severe respiratory insufficiency | Sedation; fall risk; respiratory depression (especially with opioids); cognitive worsening; dependence | - | ROUTINE | ROUTINE | - |
-| Levetiracetam | PO | Cortical myoclonus; fewer sedation effects than clonazepam | 250 mg :: PO :: BID :: Start 250-500 mg BID; titrate by 250-500 mg q1-2wk; max 3000 mg/day | Severe renal impairment (dose adjust); suicidal ideation | Mood changes (irritability, depression); sedation; renal function for dose adjustment | - | ROUTINE | ROUTINE | - |
-| Valproic acid | PO | Cortical myoclonus refractory to clonazepam and levetiracetam | 250 mg :: PO :: BID :: Start 250 mg BID; titrate to 500-750 mg BID; therapeutic level 50-100 mcg/mL; max 60 mg/kg/day | Hepatic disease; pregnancy (teratogenic); urea cycle disorders; mitochondrial disease (POLG mutations) | LFTs; CBC; ammonia level; drug levels; weight; tremor; thrombocytopenia | - | ROUTINE | ROUTINE | - |
+| Clonazepam | PO | Cortical myoclonus; often prominent and disabling in CBS | 0.25 mg BID; 0.5 mg BID; 1 mg BID; 2 mg BID :: PO :: BID :: Start 0.25-0.5 mg BID; titrate by 0.5 mg q3-7d; max 4 mg/day; use lowest effective dose to avoid sedation | Severe hepatic impairment; acute narrow-angle glaucoma; severe respiratory insufficiency | Sedation; fall risk; respiratory depression (especially with opioids); cognitive worsening; dependence | - | ROUTINE | ROUTINE | - |
+| Levetiracetam | PO | Cortical myoclonus; fewer sedation effects than clonazepam | 250 mg BID; 500 mg BID; 750 mg BID; 1000 mg BID :: PO :: BID :: Start 250-500 mg BID; titrate by 250-500 mg q1-2wk; max 3000 mg/day | Severe renal impairment (dose adjust); suicidal ideation | Mood changes (irritability, depression); sedation; renal function for dose adjustment | - | ROUTINE | ROUTINE | - |
+| Valproic acid | PO | Cortical myoclonus refractory to clonazepam and levetiracetam | 250 mg BID; 500 mg BID; 750 mg BID :: PO :: BID :: Start 250 mg BID; titrate to 500-750 mg BID; therapeutic level 50-100 mcg/mL; max 60 mg/kg/day | Hepatic disease; pregnancy (teratogenic); urea cycle disorders; mitochondrial disease (POLG mutations) | LFTs; CBC; ammonia level; drug levels; weight; tremor; thrombocytopenia | - | ROUTINE | ROUTINE | - |
+
+### 3C. Symptomatic Treatments — Dystonia and Rigidity
+
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
 | Botulinum toxin type A (onabotulinumtoxinA) | IM | Focal dystonia; painful limb dystonia; especially hand/arm dystonia which is common in CBS | 10-50 units per muscle :: IM :: q12wk :: Dose varies by muscle; hand/finger extensors 10-20 units per muscle; biceps 50-100 units; effect onset 3-7 days; repeat q12 weeks; EMG guidance recommended | Myasthenia gravis; Lambert-Eaton; infection at injection site | Excessive weakness at injection site; dysphagia if neck muscles injected; antibody formation reducing efficacy | - | - | ROUTINE | - |
-| Baclofen | PO | Rigidity and spasticity; muscle spasms | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3-5d; max 80 mg/day; do NOT discontinue abruptly (withdrawal seizures) | Severe renal impairment; epilepsy (relative — lower seizure threshold) | Sedation; weakness; dizziness; GI symptoms; withdrawal risk | - | ROUTINE | ROUTINE | - |
-| Tizanidine | PO | Rigidity and spasticity; alternative to baclofen | 2 mg :: PO :: BID-TID :: Start 2 mg at bedtime; titrate by 2-4 mg q3-7d; max 36 mg/day divided TID | Concurrent use of fluvoxamine or ciprofloxacin (potent CYP1A2 inhibitors); severe hepatic impairment | LFTs at baseline, 1, 3, 6 months then periodically; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Neuropathic or musculoskeletal pain from dystonia and rigidity | 300 mg :: PO :: qHS-TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Severe renal impairment (dose adjust) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Sertraline | PO | Depression; anxiety; apathy (may partially respond); behavioral symptoms | 25 mg :: PO :: daily :: Start 25-50 mg daily; titrate by 25-50 mg q2-4wk; max 200 mg daily | Concurrent MAOIs; concurrent pimozide | Suicidality in first weeks; serotonin syndrome; bleeding risk; QTc at higher doses | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Depression; anxiety; alternative to sertraline | 5 mg :: PO :: daily :: Start 5-10 mg daily; max 20 mg daily | Concurrent MAOIs; QT prolongation; concurrent pimozide | QTc (especially >10 mg or with other QT-prolonging drugs); suicidality; serotonin syndrome | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia; agitation; sleep disturbance common in CBS | 25 mg :: PO :: qHS :: Start 25-50 mg qHS; titrate to 100-150 mg qHS; lower doses for sleep, higher for behavioral symptoms | Concurrent MAOIs; QT prolongation | Orthostatic hypotension; sedation; priapism (rare); QTc | - | ROUTINE | ROUTINE | - |
-| Donepezil | PO | Cognitive impairment; especially if AD pathology suspected (AD-CBS) | 5 mg :: PO :: daily :: Start 5 mg daily at bedtime; increase to 10 mg daily after 4-6 weeks; limited evidence in pure CBD; more helpful if underlying AD | Severe bradycardia; active peptic ulcer; COPD (relative) | GI symptoms (nausea, diarrhea); bradycardia; insomnia; weight loss; heart rate | - | ROUTINE | ROUTINE | - |
-| Quetiapine | PO | Hallucinations; psychosis; severe agitation; behavioral disturbance | 12.5 mg :: PO :: qHS-BID :: Start 12.5-25 mg qHS; titrate slowly by 12.5-25 mg q3-7d; max 200 mg/day; lowest effective dose | Dementia-related psychosis (FDA black box); severe hepatic impairment; QT prolongation | Metabolic (glucose, lipids, weight); EPS (though lowest risk among antipsychotics); QTc; sedation; orthostatic BP | - | ROUTINE | ROUTINE | - |
+| Baclofen | PO | Rigidity and spasticity; muscle spasms | 5 mg TID; 10 mg TID; 20 mg TID :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3-5d; max 80 mg/day; do NOT discontinue abruptly (withdrawal seizures) | Severe renal impairment; epilepsy (relative — lower seizure threshold) | Sedation; weakness; dizziness; GI symptoms; withdrawal risk | - | ROUTINE | ROUTINE | - |
+| Tizanidine | PO | Rigidity and spasticity; alternative to baclofen | 2 mg BID; 4 mg TID; 8 mg TID :: PO :: BID-TID :: Start 2 mg at bedtime; titrate by 2-4 mg q3-7d; max 36 mg/day divided TID | Concurrent use of fluvoxamine or ciprofloxacin (potent CYP1A2 inhibitors); severe hepatic impairment | LFTs at baseline, 1, 3, 6 months then periodically; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
 
-### 3C. Prophylactic/Preventive Treatment
+### 3D. Symptomatic Treatments — Behavioral and Cognitive
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Calcium + Vitamin D | PO | Osteoporosis prevention given high fall risk and limited mobility | 600 mg calcium + 1000 IU D3 :: PO :: BID :: Calcium carbonate 600 mg BID with meals + Vitamin D3 1000-2000 IU daily; total 1200 mg calcium/day | Hypercalcemia; renal stones (relative) | Calcium level, Vitamin D level annually; renal function | - | ROUTINE | ROUTINE | - |
-| Thickened liquids | PO | Dysphagia with thin liquid aspiration on swallow study | Per SLP recommendation :: PO :: per meal :: Nectar-thick, honey-thick, or pudding-thick per swallow study results; reassess as disease progresses | Patient refusal (goals of care discussion) | Weight, hydration status, aspiration events; serial swallow evaluations | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Sertraline | PO | Depression; anxiety; apathy (may partially respond); behavioral symptoms | 25 mg daily; 50 mg daily; 100 mg daily; 200 mg daily :: PO :: daily :: Start 25-50 mg daily; titrate by 25-50 mg q2-4wk; max 200 mg daily | Concurrent MAOIs; concurrent pimozide | Suicidality in first weeks; serotonin syndrome; bleeding risk; QTc at higher doses | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Depression; anxiety; alternative to sertraline | 5 mg daily; 10 mg daily; 20 mg daily :: PO :: daily :: Start 5-10 mg daily; max 20 mg daily | Concurrent MAOIs; QT prolongation; concurrent pimozide | QTc (especially >10 mg or with other QT-prolonging drugs); suicidality; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia; agitation; sleep disturbance common in CBS | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: qHS :: Start 25-50 mg qHS; titrate to 100-150 mg qHS; lower doses for sleep, higher for behavioral symptoms | Concurrent MAOIs; QT prolongation | Orthostatic hypotension; sedation; priapism (rare); QTc | - | ROUTINE | ROUTINE | - |
+| Donepezil | PO | Cognitive impairment; especially if AD pathology suspected (AD-CBS) | 5 mg daily; 10 mg daily :: PO :: daily :: Start 5 mg daily at bedtime; increase to 10 mg daily after 4-6 weeks; limited evidence in pure CBD; more helpful if underlying AD | Severe bradycardia; active peptic ulcer; COPD (relative) | GI symptoms (nausea, diarrhea); bradycardia; insomnia; weight loss | - | - | ROUTINE | - |
+| Quetiapine | PO | Hallucinations; psychosis; severe agitation; behavioral disturbance | 12.5 mg qHS; 25 mg qHS; 50 mg BID :: PO :: qHS-BID :: Start 12.5-25 mg qHS; titrate slowly by 12.5-25 mg q3-7d; max 200 mg/day; lowest effective dose | Dementia-related psychosis (FDA black box); severe hepatic impairment; QT prolongation | Metabolic (glucose, lipids, weight); EPS (though lowest risk among antipsychotics); QTc; sedation; orthostatic BP | - | ROUTINE | ROUTINE | - |
 
-### 3D. Disease-Modifying Therapies
+### 3E. Pain Management
 
-!!! info "NO APPROVED DISEASE-MODIFYING THERAPIES"
-    No disease-modifying therapy is currently approved for CBD/CBS. Treatment is entirely symptomatic and supportive. Clinical trials targeting tau pathology (antisense oligonucleotides, tau immunotherapy) are ongoing and patients may be referred for clinical trial enrollment.
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Gabapentin | PO | Neuropathic or musculoskeletal pain from dystonia and rigidity | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: qHS-TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Severe renal impairment (dose adjust) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Musculoskeletal pain; safer than NSAIDs in elderly | 500 mg Q6H PRN; 1000 mg Q6H PRN :: PO :: Q6H PRN :: 500-1000 mg PO q6h as needed; max 3000 mg/day in elderly; max 4000 mg/day in younger adults | Severe hepatic impairment; active liver disease | Hepatic function; total daily dose including combination products | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
 
 ---
 
@@ -174,29 +169,25 @@ SECTION A: ACTION ITEMS
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Neurology consultation for acute presentations; movement disorders specialist/behavioral neurologist for diagnostic confirmation, levodopa trial, and long-term symptomatic management | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Movement disorders specialist/behavioral neurologist for diagnostic confirmation, levodopa trial, and long-term symptomatic management | - | ROUTINE | ROUTINE | - |
 | Neuropsychological testing to characterize cognitive profile (apraxia, executive, visuospatial) and differentiate from AD or FTD | - | - | ROUTINE | - |
-| Physical therapy for mobility, fall prevention, gait training, and range of motion exercises for dystonic limbs | ROUTINE | ROUTINE | ROUTINE | - |
+| Physical therapy for mobility, fall prevention, gait training, and range of motion exercises for dystonic limbs | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for adaptive equipment, hand function strategies, and activities of daily living assistance given limb apraxia and alien limb | - | ROUTINE | ROUTINE | - |
-| Speech-language pathology for evaluation of dysarthria, dysphagia screening (VFSS or FEES), and communication strategies as disease progresses | - | ROUTINE | ROUTINE | ROUTINE |
-| Psychiatry for management of depression, anxiety, apathy, and behavioral symptoms common in CBS | - | ROUTINE | ROUTINE | - |
-| Palliative care consultation for goals of care discussion, advance care planning, and symptom management as disease progresses | - | ROUTINE | ROUTINE | ROUTINE |
+| Speech therapy for evaluation of dysarthria, dysphagia screening, and communication strategies as disease progresses | - | ROUTINE | ROUTINE | - |
+| Psychiatry for management of depression, anxiety, apathy, and behavioral symptoms common in CBS | - | - | ROUTINE | - |
+| Palliative care consultation for goals of care discussion, advance care planning, and symptom management as disease progresses | - | ROUTINE | ROUTINE | - |
 | Social work for caregiver support, home health services, disability applications, and community resource coordination | - | ROUTINE | ROUTINE | - |
-| Nutrition/Dietitian for caloric optimization, texture-modified diet guidance, and nutritional support planning | - | ROUTINE | ROUTINE | - |
 | Genetic counseling if family history suggests hereditary frontotemporal dementia (MAPT, GRN, C9orf72 mutations) | - | - | EXT | - |
 
-### 4B. Patient/Family Instructions
+### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Use fall precautions at all times including grab bars, non-slip mats, and removing tripping hazards given asymmetric weakness, rigidity, and impaired balance | ROUTINE | ROUTINE | ROUTINE | - |
-| Report worsening swallowing difficulty, choking episodes, or recurrent coughing during meals (aspiration risk increases with disease progression) | ROUTINE | ROUTINE | ROUTINE | - |
+| Use fall precautions at all times including grab bars, non-slip mats, and removing tripping hazards given asymmetric weakness, rigidity, and impaired balance | URGENT | ROUTINE | ROUTINE | - |
+| Report worsening swallowing difficulty, choking episodes, or recurrent coughing during meals (aspiration risk increases with disease progression) | URGENT | ROUTINE | ROUTINE | - |
 | Engage in advance care planning discussions early while decision-making capacity is preserved, including healthcare proxy and living will | - | ROUTINE | ROUTINE | - |
-| Return to ED if sudden worsening of symptoms, new fever, fall with head injury, or inability to swallow (may indicate stroke, infection, aspiration, or medication side effect rather than disease progression) | ROUTINE | ROUTINE | ROUTINE | - |
+| Return to ED if sudden worsening of symptoms (may indicate stroke, infection, or medication side effect rather than disease progression) | STAT | - | ROUTINE | - |
 | Do not expect dramatic improvement from levodopa — CBS typically shows poor response, but trial is important for diagnosis and modest benefit is possible | - | ROUTINE | ROUTINE | - |
-| Do NOT stop clonazepam, baclofen, or other prescribed medications abruptly without physician guidance (risk of withdrawal symptoms) | ROUTINE | ROUTINE | ROUTINE | - |
-| Alien limb movements are part of the disease and are not dangerous; strategies to manage include placing the affected hand in a pocket or holding an object | - | ROUTINE | ROUTINE | - |
-| Contact CurePSP (curepsp.org) and AFTD (theaftd.org) for patient and caregiver support resources specific to atypical parkinsonian syndromes | - | - | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
@@ -204,17 +195,11 @@ SECTION A: ACTION ITEMS
 |----------------|:--:|:----:|:---:|:---:|
 | Regular physical activity including assisted exercises to maintain joint mobility and prevent contractures in dystonic limbs | - | ROUTINE | ROUTINE | - |
 | Home safety evaluation to remove fall hazards and install adaptive equipment (grab bars, raised toilet seat, shower chair) | - | ROUTINE | ROUTINE | - |
-| Aspiration precautions including texture-modified diet as recommended by speech therapy; upright positioning during meals; small bites and adequate time for meals | - | ROUTINE | ROUTINE | ROUTINE |
+| Aspiration precautions including texture-modified diet as recommended by speech therapy; upright positioning during meals | - | ROUTINE | ROUTINE | - |
 | Caregiver education about disease trajectory, behavioral symptoms, and available support resources to prevent caregiver burnout | - | ROUTINE | ROUTINE | - |
 | Mental health support for patient and caregivers; support groups for atypical parkinsonian disorders (CurePSP, AFTD) | - | - | ROUTINE | - |
-| Avoid sedating medications (anticholinergics, antihistamines, benzodiazepines beyond prescribed) that increase fall risk and cognitive impairment | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Driving cessation: discuss early given asymmetric motor impairment, cognitive changes, and apraxia affecting reaction time and vehicle control | - | ROUTINE | ROUTINE | - |
 
 ---
-
-═══════════════════════════════════════════════════════════════
-SECTION B: REFERENCE (Expand as Needed)
-═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -290,22 +275,6 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
-
-**v1.1 (February 11, 2026)**
-- Restructured treatment subsections from 3A-3E to standard 3A-3D format (Acute, Symptomatic/Maintenance, Prophylactic, Disease-Modifying)
-- Merged myoclonus, dystonia/rigidity, behavioral/cognitive, and pain treatments into unified 3B Symptomatic/Maintenance
-- Added 3C Prophylactic/Preventive (Calcium + Vitamin D, thickened liquids)
-- Added 3D Disease-Modifying note (no approved DMTs)
-- Added warning admonition about no disease-modifying therapy
-- Added Section A/B structural dividers
-- Fixed structured dosing format: single starting dose in first field per standard
-- Standardized imaging table layout (venue columns at end)
-- Added CT head HOSP coverage; added VFSS to extended imaging studies
-- Improved Section 4A: added neurology ED coverage, SLP ICU coverage, palliative care ICU, nutrition/dietitian referral
-- Expanded Section 4B from 5 to 8 patient instructions including medication safety, alien limb strategies, support resources
-- Expanded Section 4C from 5 to 7 items including sedation avoidance, driving cessation, aspiration precautions with ICU coverage
-- Added levodopa ED coverage in 3A (may initiate in ED for known CBS patients)
-- Standardized subsection naming (1A Essential/Core Labs, 2A Essential/First-line)
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
