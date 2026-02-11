@@ -105,8 +105,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Cauda Equina Syndrome](cauda-equina-syndrome.md) | ED, HOSP | G83.4 |
 | [Epidural Abscess](epidural-abscess.md) | ED, HOSP, ICU | G06.1 |
 | [Cervical Spondylotic Myelopathy](cervical-myelopathy.md) | ED, HOSP, OPD, ICU | M47.12, M47.22, M50.00 |
-| [Myelopathy — General Evaluation](myelopathy-general.md) | ED, HOSP, OPD, ICU | G99.2, G95.9, G95.89 |
-| [Syringomyelia](syringomyelia.md) | ED, HOSP, OPD, ICU | G95.0 |
 | [Lumbar Spinal Stenosis](lumbar-stenosis.md) | ED, HOSP, OPD, ICU | ** M48.061 (Spinal stenosis, lumbar region without neurogenic claudication), M48.062 (Spinal stenosis, lumbar region with neurogenic claudication), M99.23 (Subluxation stenosis of neural canal of lumbar region) |
 
 ---
@@ -121,7 +119,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Paraneoplastic Neurological Syndrome](paraneoplastic-neurological-syndrome.md) | ED, HOSP, OPD, ICU | G13.0, G13.1 |
 | [Meningioma](meningioma.md) | ED, HOSP, OPD, ICU | D32.9 |
 | [Primary CNS Lymphoma](primary-cns-lymphoma.md) | ED, HOSP, OPD, ICU | C85.19, C83.30 |
-| [Radiation-Induced Neurologic Injury](radiation-neurologic-injury.md) | ED, HOSP, OPD, ICU | G93.89, T66.XXXA, G95.89 |
 
 ---
 
@@ -146,7 +143,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [NMOSD](nmosd.md) | ED, HOSP, OPD, ICU | G36.0, G36.9 |
 | [MOGAD](mogad.md) | ED, HOSP, OPD, ICU | G36.9, G36.0 |
 | [ADEM](adem.md) | ED, HOSP, OPD, ICU | G04.81, G04.00 |
-| [Diffuse White Matter Disease](diffuse-white-matter-disease.md) | ED, HOSP, OPD, ICU | R53.1, G93.49, G31.9 |
 
 ---
 
@@ -208,7 +204,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Normal Pressure Hydrocephalus](normal-pressure-hydrocephalus.md) | ED, HOSP, OPD | G91.2, G91.0 |
 | [Creutzfeldt-Jakob Disease](creutzfeldt-jakob-disease.md) | ED, HOSP, OPD, ICU | A81.00, A81.01, A81.09 |
 | [Delirium versus Dementia — Diagnostic Evaluation](delirium-vs-dementia.md) | ED, HOSP, OPD, ICU | ** R41.0 (Disorientation, unspecified), F05 (Delirium due to known physiological condition), R41.3 (Other amnesia), F03.90 (Unspecified dementia without behavioral disturbance), R41.82 (Altered mental status, unspecified), F01.50 (Vascular dementia without behavioral disturbance), G30.9 (Alzheimer disease, unspecified) |
-| [Chronic Traumatic Encephalopathy (CTE)](chronic-traumatic-encephalopathy.md) | ED, HOSP, OPD, ICU | G31.89 |
 | [Autoimmune Dementia / Encephalopathy](autoimmune-dementia.md) | ED, HOSP, OPD, ICU | ** G04.81 (Other autoimmune encephalitis), G31.09 (Other frontotemporal dementia), G04.90 (Encephalitis and encephalomyelitis, unspecified), R41.3 (Other amnesia), G13.1 (Other systemic atrophy primarily affecting CNS in neoplastic disease — paraneoplastic limbic encephalitis) |
 
 ---
@@ -238,8 +233,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Wernicke Encephalopathy](wernicke-encephalopathy.md) | ED, HOSP, ICU | E51.2 |
 | [B12 Deficiency Neuropathy](b12-deficiency-neuropathy.md) | ED, HOSP, OPD, ICU | E53.8, G63.4, G32.0 |
 | [Metabolic Encephalopathy](metabolic-encephalopathy.md) | ED, HOSP, OPD, ICU | G93.41, K72.90, K72.91, N18.6, E87.0, E87.1, E16.2, E03.5, E87.2, E87.5, E83.52 |
-| [Wernicke-Korsakoff Syndrome](wernicke-korsakoff-syndrome.md) | ED, HOSP, OPD, ICU | F10.96, F10.26, E51.2 |
-| [Subacute Combined Degeneration](subacute-combined-degeneration.md) | ED, HOSP, OPD, ICU | E53.8, G32.0, D51.9 |
 | [Neurotoxicology](neurotoxicology.md) | ED, HOSP, OPD, ICU | G92.8, G92.9, T43.8X5A, T36.1X5A, T45.1X5A, G04.81 |
 
 ---
@@ -279,8 +272,6 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Functional Neurological Disorder](functional-neurological-disorder.md) | ED, HOSP, OPD, ICU | F44.4, F44.5, F44.6, F44.7 |
 | [Psychogenic Non-Epileptic Spells (PNES)](pnes.md) | ED, HOSP, OPD | F44.5 |
-| [Functional Movement Disorder](functional-movement-disorder.md) | ED, HOSP, OPD, ICU | F44.4 |
-| [Functional Cognitive Disorder](functional-cognitive-disorder.md) | ED, HOSP, OPD, ICU | F44.89, R41.3, R41.89 |
 
 ---
 

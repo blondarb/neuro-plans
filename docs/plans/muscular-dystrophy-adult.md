@@ -12,6 +12,12 @@ tags:
   - cardiac
 ---
 
+<div class="content">
+    <div class="title">DRAFT - Pending Review</div>
+    <div class="description">This plan requires physician review before clinical use.</div>
+  </div>
+</div>
+
 # Muscular Dystrophy (Adult)
 
 **VERSION:** 1.2
