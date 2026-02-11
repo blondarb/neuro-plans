@@ -1,7 +1,7 @@
 ---
 title: "Autonomic Neuropathy"
 description: "Clinical decision support for evaluation and management of autonomic neuropathy"
-version: "1.2"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -23,16 +23,16 @@ tags:
 
 # Autonomic Neuropathy
 
-**VERSION:** 1.2
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Revised — setting coverage gaps addressed for Domain 5
+**STATUS:** Draft
 
 ---
 
 **DIAGNOSIS:** Autonomic Neuropathy
 
-**ICD-10:** G90.09 (Other idiopathic peripheral autonomic neuropathy), G90.3 (Multi-system degeneration of the autonomic nervous system), G99.0 (Autonomic neuropathy in diseases classified elsewhere), G90.01 (Carotid sinus syncope)
+**ICD-10:** G90.09 (Other idiopathic peripheral autonomic neuropathy), G90.3 (Multi-system degeneration of the autonomic nervous system), G99.0 (Autonomic neuropathy in diseases classified elsewhere), G90.01 (Carotid sinus syncope), G90.09 (Other idiopathic peripheral autonomic neuropathy)
 
 **CPT CODES:** 85025 (CBC), 80053 (CMP), 84443 (TSH), 82728 (Ferritin), 83036 (HbA1c), 82607 (Vitamin B12), 86235 (ANA), 82382 (Catecholamines, fractionated), 82533 (Cortisol), 83516 (Ganglionic AChR Ab), 95924 (Autonomic function testing/tilt table), 95923 (QSART), 95922 (Valsalva maneuver), 93000 (12-lead ECG), 95907-95913 (NCS), 95860-95870 (EMG), 88305 (Skin biopsy — IENFD), 84681 (C-peptide), 70553 (MRI brain), 82784 (Immunoglobulins quantitative), 86255 (Antibody screen)
 
@@ -145,53 +145,52 @@ tags:
 | Trendelenburg position / leg elevation | Physical | Acute symptomatic OH with presyncope or syncope | Supine with legs elevated :: Physical :: immediate :: Elevate legs 30-45 degrees; maintain until symptoms resolve; transition slowly to sitting | Respiratory distress; increased ICP | Mental status; BP recovery; HR | STAT | STAT | - | STAT |
 | Midodrine (acute) | PO | Acute symptomatic neurogenic OH not responding to fluids alone | 5 mg :: PO :: once :: 5-10 mg PO for acute symptomatic OH; onset 30-60 min; do not give within 4 hours of bedtime | Supine hypertension (SBP >180); urinary retention; pheochromocytoma; severe cardiac disease | Supine BP; urinary symptoms; HR | URGENT | URGENT | - | URGENT |
 
-### 3B. Symptomatic Treatments - Neuropathic Pain
+### 3B. Orthostatic Hypotension Management (Chronic)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | First-line for neuropathic pain in autonomic neuropathy; concurrent small fiber involvement | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg q3-7d; target 1800-3600 mg/day divided TID; reduce if CrCl <60 | Severe renal impairment (dose adjust required) | Sedation, dizziness, ataxia, peripheral edema; taper to discontinue | EXT | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | First-line for neuropathic pain; FDA-approved for diabetic peripheral neuropathy | 50 mg :: PO :: TID :: Start 50 mg TID or 75 mg BID; titrate q3-7d; max 300 mg/day; reduce if CrCl <60 | Angioedema to pregabalin/gabapentin | Dizziness, somnolence, weight gain, peripheral edema | EXT | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | First-line for neuropathic pain; FDA-approved for diabetic neuropathy; also treats comorbid depression/anxiety | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day | MAOIs; uncontrolled narrow-angle glaucoma; severe renal impairment (CrCl <30); severe hepatic impairment | Hepatic function; BP; suicidal ideation; nausea (usually transient) | EXT | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Neuropathic pain; helps insomnia; inexpensive | 10 mg :: PO :: qHS :: Start 10-25 mg qHS; titrate by 10-25 mg q1-2wk; typical 25-75 mg qHS; max 150 mg | Cardiac conduction disease; recent MI; urinary retention; narrow-angle glaucoma; elderly (high anticholinergic burden) | ECG if age >40 or cardiac history; anticholinergic side effects; may worsen orthostatic hypotension | EXT | ROUTINE | ROUTINE | - |
-
-**Note:** Many patients with autonomic neuropathy have concurrent painful small fiber neuropathy. Autonomic neuropathy commonly coexists with somatic neuropathy, particularly in diabetic and autoimmune etiologies. Use caution with TCAs as they may worsen orthostatic hypotension.
-
-### 3C. Symptomatic Management (Orthostatic, GI, Urogenital, Sudomotor)
-
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Midodrine | PO | First-line for neurogenic OH; peripheral alpha-1 agonist | 2.5 mg :: PO :: TID :: Start 2.5 mg TID (upon waking, midday, mid-afternoon); titrate by 2.5 mg q1wk; max 10 mg TID; last dose ≥4 hr before bedtime | Supine hypertension (SBP >180); urinary retention; pheochromocytoma; severe cardiac disease; thyrotoxicosis | Supine BP (avoid >160/90); urinary symptoms; piloerection; HR | URGENT | ROUTINE | ROUTINE | - |
-| Droxidopa (Northera) | PO | Neurogenic OH; norepinephrine prodrug; FDA-approved for neurogenic OH | 100 mg :: PO :: TID :: Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID; take consistently with/without food | Supine hypertension; concurrent catecholamine drugs (MAOIs) | Supine BP (avoid >180/110); HR; syncope frequency; headache | URGENT | ROUTINE | ROUTINE | - |
-| Fludrocortisone | PO | Volume expansion; mineralocorticoid for OH | 0.05 mg :: PO :: daily :: Start 0.05-0.1 mg daily; titrate by 0.05 mg q1-2wk; max 0.2 mg daily; takes 1-2 weeks for full effect | Heart failure; uncontrolled HTN; hypokalemia | K+ q2-4wk during titration then q3-6mo; supine BP; weight; edema | URGENT | ROUTINE | ROUTINE | - |
-| Pyridostigmine (Mestinon) | PO | Mild-moderate neurogenic OH; augments ganglionic neurotransmission without significant supine hypertension | 30 mg :: PO :: TID :: Start 30 mg TID; may increase to 60 mg TID; enhances autonomic ganglionic transmission | Mechanical bowel/urinary obstruction; bradycardia; asthma (relative) | GI side effects (nausea, diarrhea, cramping); HR; cholinergic symptoms | EXT | ROUTINE | ROUTINE | - |
-| Atomoxetine | PO | OH with concurrent attentional deficits; norepinephrine reuptake inhibitor augments sympathetic tone | 10 mg :: PO :: daily :: Start 10-18 mg daily; titrate to 25-40 mg BID; max 80 mg/day | Severe cardiovascular disease; pheochromocytoma; concurrent MAOIs; narrow-angle glaucoma | BP (standing and supine); HR; mood changes; insomnia; hepatic function | EXT | ROUTINE | ROUTINE | - |
+| Midodrine | PO | First-line for neurogenic OH; peripheral alpha-1 agonist | 2.5 mg TID; 5 mg TID; 10 mg TID :: PO :: TID :: Start 2.5 mg TID (upon waking, midday, mid-afternoon); titrate by 2.5 mg q1wk; max 10 mg TID; last dose ≥4 hr before bedtime | Supine hypertension (SBP >180); urinary retention; pheochromocytoma; severe cardiac disease; thyrotoxicosis | Supine BP (avoid >160/90); urinary symptoms; piloerection; HR | - | ROUTINE | ROUTINE | - |
+| Droxidopa (Northera) | PO | Neurogenic OH; norepinephrine prodrug; FDA-approved for neurogenic OH | 100 mg TID; 200 mg TID; 300 mg TID; 600 mg TID :: PO :: TID :: Start 100 mg TID; titrate by 100 mg TID q24-48h; max 600 mg TID; take consistently with/without food | Supine hypertension; concurrent catecholamine drugs (MAOIs) | Supine BP (avoid >180/110); HR; syncope frequency; headache | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone | PO | Volume expansion; mineralocorticoid for OH | 0.05 mg daily; 0.1 mg daily; 0.2 mg daily :: PO :: daily :: Start 0.05-0.1 mg daily; titrate by 0.05 mg q1-2wk; max 0.2 mg daily; takes 1-2 weeks for full effect | Heart failure; uncontrolled HTN; hypokalemia | K+ q2-4wk during titration then q3-6mo; supine BP; weight; edema | - | ROUTINE | ROUTINE | - |
+| Pyridostigmine (Mestinon) | PO | Mild-moderate neurogenic OH; augments ganglionic neurotransmission without significant supine hypertension | 30 mg TID; 60 mg TID :: PO :: TID :: Start 30 mg TID; may increase to 60 mg TID; enhances autonomic ganglionic transmission | Mechanical bowel/urinary obstruction; bradycardia; asthma (relative) | GI side effects (nausea, diarrhea, cramping); HR; cholinergic symptoms | - | - | ROUTINE | - |
+| Atomoxetine | PO | OH with concurrent attentional deficits; norepinephrine reuptake inhibitor augments sympathetic tone | 10 mg daily; 18 mg daily; 25 mg BID; 40 mg BID :: PO :: daily-BID :: Start 10-18 mg daily; titrate to 25-40 mg BID; max 80 mg/day | Severe cardiovascular disease; pheochromocytoma; concurrent MAOIs; narrow-angle glaucoma | BP (standing and supine); HR; mood changes; insomnia; hepatic function | - | - | ROUTINE | - |
 | Increased fluid intake | Dietary | All patients with neurogenic OH; volume expansion | 2-3 L/day :: Dietary :: daily :: Minimum 2-3 L daily; bolus 500 mL water 15-30 min before prolonged standing (osmopressor reflex) | HF; renal failure requiring fluid restriction | Urine output; symptom frequency | URGENT | ROUTINE | ROUTINE | - |
-| Increased salt intake | Dietary | All patients with neurogenic OH without contraindication | 6-10 g Na/day :: Dietary :: daily :: 6-10 g sodium daily via dietary salt or salt tablets (1 g NaCl tablets, 3-5 TID with meals) | Uncontrolled HTN; HF; severe renal disease | BP; edema; 24-hr urine sodium; symptom frequency | URGENT | ROUTINE | ROUTINE | - |
-| Compression garments | Physical | Venous pooling with orthostatic symptoms | 30-40 mmHg waist-high :: Physical :: daily :: Waist-high compression stockings (30-40 mmHg) preferred; abdominal binder as adjunct | Peripheral arterial disease; skin breakdown | Skin integrity; compliance; symptom improvement | ROUTINE | ROUTINE | ROUTINE | - |
+| Increased salt intake | Dietary | All patients with neurogenic OH without contraindication | 6-10 g Na/day :: Dietary :: daily :: 6-10 g sodium daily via dietary salt or salt tablets (1 g NaCl tablets, 3-5 TID with meals) | Uncontrolled HTN; HF; severe renal disease | BP; edema; 24-hr urine sodium; symptom frequency | - | ROUTINE | ROUTINE | - |
+| Compression garments | Physical | Venous pooling with orthostatic symptoms | 30-40 mmHg waist-high :: Physical :: daily :: Waist-high compression stockings (30-40 mmHg) preferred; abdominal binder as adjunct | Peripheral arterial disease; skin breakdown | Skin integrity; compliance; symptom improvement | - | ROUTINE | ROUTINE | - |
 | Head-of-bed elevation (6-10 inches) | Physical | Reduce supine hypertension and nocturnal natriuresis | 10-20 degree elevation :: Physical :: nightly :: Elevate head of bed 6-10 inches with blocks or wedge; reduces nocturnal natriuresis and supine hypertension | None | Morning symptoms; nocturia frequency; supine BP | - | ROUTINE | ROUTINE | - |
-| Metoclopramide | PO/IV | Gastroparesis; prokinetic agent | 5 mg :: PO :: TID :: 5-10 mg PO 30 min before meals and at bedtime; max 40 mg/day; limit use to <12 weeks due to tardive dyskinesia risk | Bowel obstruction; pheochromocytoma; seizure disorder; concurrent dopamine agonists; Parkinson disease | Extrapyramidal symptoms; tardive dyskinesia (limit duration); QTc prolongation | URGENT | ROUTINE | ROUTINE | URGENT |
-| Domperidone | PO | Gastroparesis; prokinetic with less CNS penetration than metoclopramide | 10 mg :: PO :: TID :: 10 mg PO TID before meals; max 30 mg/day; available via FDA compassionate use | QT prolongation; severe hepatic impairment; concurrent QT-prolonging drugs; prolactinoma | ECG at baseline and periodically; QTc; galactorrhea | - | EXT | ROUTINE | - |
-| Erythromycin | PO/IV | Gastroparesis; motilin receptor agonist; short-term use | 125 mg :: PO :: TID :: 125-250 mg PO TID before meals; tachyphylaxis develops within weeks; use intermittently | QT prolongation; hepatic impairment; concurrent CYP3A4 inhibitors | QTc; GI symptoms; LFTs; tachyphylaxis | URGENT | ROUTINE | EXT | URGENT |
-| Polyethylene glycol (MiraLAX) | PO | Constipation from colonic dysmotility | 17 g :: PO :: daily :: 17 g dissolved in 8 oz liquid daily; titrate to 1-2 soft stools daily | Bowel obstruction; known GI perforation | Stool frequency; electrolytes with chronic use | EXT | ROUTINE | ROUTINE | - |
-| Senna | PO | Constipation refractory to osmotic laxatives | 8.6 mg :: PO :: daily :: 8.6-17.2 mg PO daily at bedtime; stimulant laxative | Bowel obstruction; acute abdominal pain | Stool frequency; abdominal cramping; electrolytes | EXT | ROUTINE | ROUTINE | - |
-| Linaclotide (Linzess) | PO | Chronic constipation from colonic autonomic dysfunction | 72 mcg :: PO :: daily :: 72-145 mcg PO daily on empty stomach 30 min before first meal | Mechanical bowel obstruction; pediatric patients <2 years | Diarrhea (dose-limiting); dehydration | - | EXT | ROUTINE | - |
-| Tamsulosin | PO | Urinary retention from detrusor underactivity; alpha-1 blocker relaxes bladder outlet | 0.4 mg :: PO :: daily :: Start 0.4 mg daily 30 min after same meal each day; may increase to 0.8 mg daily | Severe hepatic impairment; concurrent PDE5 inhibitors with hypotension risk | Orthostatic BP (may worsen OH); ejaculatory dysfunction | - | ROUTINE | ROUTINE | - |
-| Bethanechol | PO | Neurogenic bladder with urinary retention; cholinergic agonist stimulates detrusor | 10 mg :: PO :: TID :: Start 10-25 mg TID-QID; titrate to 50 mg TID; take on empty stomach | Asthma; bradycardia; GI obstruction; peptic ulcer; hyperthyroidism | GI symptoms; bronchospasm; HR; bladder response; PVR | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Neurogenic bladder with detrusor overactivity; urinary urgency/frequency | 5 mg :: PO :: BID :: Start 5 mg BID-TID; extended release 5-10 mg daily preferred for fewer anticholinergic effects; max 20 mg/day | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction; myasthenia gravis | PVR (may worsen retention); dry mouth; constipation; cognitive effects (especially elderly) | - | ROUTINE | ROUTINE | - |
-| Intermittent self-catheterization | Device | Urinary retention with PVR >200 mL not responding to pharmacotherapy | Per schedule :: Device :: Q4-6h :: Clean intermittent catheterization every 4-6 hours based on PVR volumes; target PVR <200 mL | Urethral stricture (relative); inability to perform | PVR volumes; UTI frequency; patient compliance | - | ROUTINE | ROUTINE | - |
-| Sildenafil | PO | Erectile dysfunction from autonomic neuropathy | 25 mg :: PO :: PRN :: Start 25-50 mg PO 1 hour before sexual activity; max 100 mg/dose; max once daily | Concurrent nitrates; severe cardiovascular disease; recent stroke/MI; concurrent alpha-blockers with hypotension risk | BP (may worsen OH); priapism; visual changes; hearing changes | - | - | ROUTINE | - |
-| Glycopyrrolate | PO | Gustatory sweating; hyperhidrosis from compensatory sweating | 1 mg :: PO :: BID :: Start 1 mg BID; titrate to 2 mg BID; anticholinergic reduces sweating | Glaucoma; urinary retention; myasthenia gravis; severe GI disease | Dry mouth; urinary retention; constipation; tachycardia; heat intolerance | - | EXT | ROUTINE | - |
 
-### 3D. Disease-Modifying Therapy (Autoimmune/Treatable Etiologies)
+### 3C. Gastrointestinal Autonomic Dysfunction
+
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Metoclopramide | PO/IV | Gastroparesis; prokinetic agent | 5 mg TID; 10 mg TID :: PO :: TID :: 5-10 mg PO 30 min before meals and at bedtime; max 40 mg/day; limit use to <12 weeks due to tardive dyskinesia risk | Bowel obstruction; pheochromocytoma; seizure disorder; concurrent dopamine agonists; Parkinson disease | Extrapyramidal symptoms; tardive dyskinesia (limit duration); QTc prolongation | URGENT | ROUTINE | ROUTINE | URGENT |
+| Domperidone | PO | Gastroparesis; prokinetic with less CNS penetration than metoclopramide | 10 mg TID; 20 mg TID :: PO :: TID :: 10 mg PO TID before meals; max 30 mg/day; available via FDA compassionate use | QT prolongation; severe hepatic impairment; concurrent QT-prolonging drugs; prolactinoma | ECG at baseline and periodically; QTc; galactorrhea | - | - | ROUTINE | - |
+| Erythromycin | PO/IV | Gastroparesis; motilin receptor agonist; short-term use | 125 mg TID; 250 mg TID :: PO :: TID :: 125-250 mg PO TID before meals; tachyphylaxis develops within weeks; use intermittently | QT prolongation; hepatic impairment; concurrent CYP3A4 inhibitors | QTc; GI symptoms; LFTs; tachyphylaxis | URGENT | ROUTINE | EXT | URGENT |
+| Polyethylene glycol (MiraLAX) | PO | Constipation from colonic dysmotility | 17 g daily :: PO :: daily :: 17 g dissolved in 8 oz liquid daily; titrate to 1-2 soft stools daily | Bowel obstruction; known GI perforation | Stool frequency; electrolytes with chronic use | - | ROUTINE | ROUTINE | - |
+| Senna | PO | Constipation refractory to osmotic laxatives | 8.6 mg daily; 17.2 mg daily :: PO :: daily-BID :: 8.6-17.2 mg PO daily at bedtime; stimulant laxative | Bowel obstruction; acute abdominal pain | Stool frequency; abdominal cramping; electrolytes | - | ROUTINE | ROUTINE | - |
+| Linaclotide (Linzess) | PO | Chronic constipation from colonic autonomic dysfunction | 72 mcg daily; 145 mcg daily :: PO :: daily :: 72-145 mcg PO daily on empty stomach 30 min before first meal | Mechanical bowel obstruction; pediatric patients <2 years | Diarrhea (dose-limiting); dehydration | - | - | ROUTINE | - |
+
+### 3D. Urogenital and Sudomotor Dysfunction
+
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Tamsulosin | PO | Urinary retention from detrusor underactivity; alpha-1 blocker relaxes bladder outlet | 0.4 mg daily; 0.8 mg daily :: PO :: daily :: Start 0.4 mg daily 30 min after same meal each day; may increase to 0.8 mg daily | Severe hepatic impairment; concurrent PDE5 inhibitors with hypotension risk | Orthostatic BP (may worsen OH); ejaculatory dysfunction | - | ROUTINE | ROUTINE | - |
+| Bethanechol | PO | Neurogenic bladder with urinary retention; cholinergic agonist stimulates detrusor | 10 mg TID; 25 mg TID; 50 mg TID :: PO :: TID :: Start 10-25 mg TID-QID; titrate to 50 mg TID; take on empty stomach | Asthma; bradycardia; GI obstruction; peptic ulcer; hyperthyroidism | GI symptoms; bronchospasm; HR; bladder response; PVR | - | ROUTINE | ROUTINE | - |
+| Oxybutynin | PO | Neurogenic bladder with detrusor overactivity; urinary urgency/frequency | 5 mg BID; 5 mg TID :: PO :: BID-TID :: Start 5 mg BID-TID; extended release 5-10 mg daily preferred for fewer anticholinergic effects; max 20 mg/day | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction; myasthenia gravis | PVR (may worsen retention); dry mouth; constipation; cognitive effects (especially elderly) | - | ROUTINE | ROUTINE | - |
+| Intermittent self-catheterization | Device | Urinary retention with PVR >200 mL not responding to pharmacotherapy | Per schedule :: Device :: Q4-6h :: Clean intermittent catheterization every 4-6 hours based on PVR volumes; target PVR <200 mL | Urethral stricture (relative); inability to perform | PVR volumes; UTI frequency; patient compliance | - | ROUTINE | ROUTINE | - |
+| Sildenafil | PO | Erectile dysfunction from autonomic neuropathy | 25 mg PRN; 50 mg PRN; 100 mg PRN :: PO :: PRN :: Start 25-50 mg PO 1 hour before sexual activity; max 100 mg/dose; max once daily | Concurrent nitrates; severe cardiovascular disease; recent stroke/MI; concurrent alpha-blockers with hypotension risk | BP (may worsen OH); priapism; visual changes; hearing changes | - | - | ROUTINE | - |
+| Glycopyrrolate | PO | Gustatory sweating; hyperhidrosis from compensatory sweating | 1 mg BID; 2 mg BID :: PO :: BID :: Start 1 mg BID; titrate to 2 mg BID; anticholinergic reduces sweating | Glaucoma; urinary retention; myasthenia gravis; severe GI disease | Dry mouth; urinary retention; constipation; tachycardia; heat intolerance | - | - | ROUTINE | - |
+
+### 3E. Disease-Modifying Therapy (Autoimmune/Treatable Etiologies)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
 | IV Methylprednisolone | IV | Acute autoimmune autonomic ganglionopathy (AAG); severe autoimmune autonomic neuropathy | 1000 mg daily x 5 days :: IV :: daily x 5 days :: 1000 mg IV daily for 3-5 days; infuse over 1 hour; followed by oral prednisone taper | Blood glucose; BP; hepatitis B screening | Active untreated infection; uncontrolled diabetes; GI bleed | Blood glucose QID during infusion; BP; mood changes; insomnia; GI symptoms | - | STAT | - | STAT |
-| Prednisone (oral taper) | PO | Post-IV steroid taper for AAG; chronic autoimmune autonomic neuropathy | 60 mg :: PO :: daily :: Start 60 mg daily (1 mg/kg); taper by 10 mg q1-2wk to lowest effective dose; target off steroids within 3-6 months with steroid-sparing agent | Bone density assessment if >3 months anticipated | Active untreated infection; uncontrolled diabetes; GI bleed | Blood glucose; BP; bone density; mood; weight; HbA1c | - | ROUTINE | ROUTINE | - |
+| Prednisone (oral taper) | PO | Post-IV steroid taper for AAG; chronic autoimmune autonomic neuropathy | 60 mg daily; 40 mg daily; 20 mg daily :: PO :: daily :: Start 60 mg daily (1 mg/kg); taper by 10 mg q1-2wk to lowest effective dose; target off steroids within 3-6 months with steroid-sparing agent | Bone density assessment if >3 months anticipated | Active untreated infection; uncontrolled diabetes; GI bleed | Blood glucose; BP; bone density; mood; weight; HbA1c | - | ROUTINE | ROUTINE | - |
 | IVIg (Intravenous Immunoglobulin) | IV | AAG; autoimmune autonomic neuropathy refractory to steroids | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (e.g., 0.4 g/kg daily x 5 days); maintenance 1 g/kg q4wk if responsive | IgA level; renal function; CBC | IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF | Renal function; CBC; headache; thrombotic events; infusion reactions | - | ROUTINE | ROUTINE | - |
 | Rituximab | IV | Refractory AAG; severe autoimmune autonomic neuropathy not responding to steroids/IVIg | 375 mg/m² weekly x 4 :: IV :: weekly x 4 :: 375 mg/m² IV weekly x 4 weeks; or 1000 mg IV days 1 and 15; premedicate with acetaminophen, diphenhydramine, methylprednisolone | Hepatitis B/C screening; quantitative immunoglobulins; CBC; LFTs; chest X-ray | Active hepatitis B; severe active infection; PML risk; severe immunodeficiency | CD19/CD20 counts q3mo; immunoglobulins q3mo; infection surveillance | - | EXT | EXT | - |
-| Tafamidis (Vyndaqel/Vyndamax) | PO | Hereditary transthyretin amyloidosis (hATTR) with autonomic neuropathy and cardiomyopathy | 80 mg :: PO :: daily :: Tafamidis meglumine 80 mg daily or tafamidis 61 mg daily; TTR stabilizer | Genetic confirmation of TTR mutation; cardiac evaluation | None absolute; limited data in advanced disease | Echocardiogram q6-12mo; LFTs; clinical response | - | ROUTINE | ROUTINE | - |
-| Patisiran (Onpattro) | IV | hATTR polyneuropathy including autonomic involvement; RNA interference therapy | 0.3 mg/kg :: IV :: q3wk :: 0.3 mg/kg IV infusion over ~80 min every 3 weeks; premedicate with dexamethasone, acetaminophen, diphenhydramine, ranitidine | Genetic confirmation of TTR mutation; baseline vitamin A level | Severe hepatic impairment | Vitamin A supplementation (2500 IU/day); LFTs; platelet count; infusion reactions | - | EXT | ROUTINE | - |
+| Tafamidis (Vyndaqel/Vyndamax) | PO | Hereditary transthyretin amyloidosis (hATTR) with autonomic neuropathy and cardiomyopathy | 80 mg daily; 61 mg daily :: PO :: daily :: Tafamidis meglumine 80 mg daily or tafamidis 61 mg daily; TTR stabilizer | Genetic confirmation of TTR mutation; cardiac evaluation | None absolute; limited data in advanced disease | Echocardiogram q6-12mo; LFTs; clinical response | - | - | ROUTINE | - |
+| Patisiran (Onpattro) | IV | hATTR polyneuropathy including autonomic involvement; RNA interference therapy | 0.3 mg/kg q3wk :: IV :: q3wk :: 0.3 mg/kg IV infusion over ~80 min every 3 weeks; premedicate with dexamethasone, acetaminophen, diphenhydramine, ranitidine | Genetic confirmation of TTR mutation; baseline vitamin A level | Severe hepatic impairment | Vitamin A supplementation (2500 IU/day); LFTs; platelet count; infusion reactions | - | - | ROUTINE | - |
 
 ---
 
@@ -317,21 +316,6 @@ tags:
 ---
 
 ## CHANGE LOG
-
-**v1.2 (February 11, 2026)**
-- Domain 5 setting coverage fixes: added EXT for ED in 3B neuropathic pain meds (gabapentin, pregabalin, duloxetine, amitriptyline) for continuation/discharge initiation
-- 3C: Added EXT for ED for pyridostigmine, atomoxetine, polyethylene glycol, senna (continuation in ED setting)
-- 3C: Added ROUTINE for ED for compression garments (applicable as discharge recommendation)
-- 3C: Added EXT for HOSP for domperidone, linaclotide, glycopyrrolate (continuation for admitted patients)
-- 3D: Added ROUTINE for HOSP for tafamidis (oral continuation during admission); added EXT for HOSP for patisiran (infusion may be administered inpatient)
-
-**v1.1 (February 11, 2026)**
-- C1: Restructured treatment from 3A-3E to standard 3A-3D format; merged OH, GI, urogenital/sudomotor into unified 3C "Symptomatic Management"; disease-modifying therapy moved from 3E to 3D
-- C2: Removed duplicate ICD-10 code G90.09 from frontmatter
-- Added new Section 3B "Symptomatic Treatments - Neuropathic Pain" with gabapentin, pregabalin, duloxetine, amitriptyline (4 medications with individual rows and structured dosing)
-- Fixed setting coverage gaps: added HOSP to pyridostigmine; added ED coverage (URGENT) for midodrine, droxidopa, fludrocortisone, increased fluid intake, and increased salt intake in chronic OH management
-- Added ED coverage (URGENT) for atomoxetine (changed from OPD-only to HOSP+OPD)
-- Added clinical note regarding TCA caution with orthostatic hypotension in neuropathic pain section
 
 **v1.0 (February 11, 2026)**
 - Initial template creation

@@ -1,7 +1,7 @@
 ---
 title: "Acute Disseminated Encephalomyelitis (ADEM)"
 description: "Clinical decision support for diagnosis and management of ADEM"
-version: "1.1"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Acute Disseminated Encephalomyelitis (ADEM)
 
-**VERSION:** 1.1
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft — Revised per checker feedback
+**STATUS:** Draft
 
 ---
 
@@ -52,9 +52,7 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
-═══════════════════════════════════════════════════════════
-SECTION A: ACTION ITEMS
-═══════════════════════════════════════════════════════════
+---
 
 ## 1. LABORATORY WORKUP
 
@@ -138,44 +136,34 @@ SECTION A: ACTION ITEMS
 
 ## 3. TREATMENT
 
-### 3A. Acute/Emergent
+### 3A. First-Line Immunotherapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IV Methylprednisolone | IV | First-line for ADEM; begin as soon as CNS infection reasonably excluded; do NOT delay for LP results if clinical suspicion high | 1000 mg :: IV :: daily x 3-5 days :: Pediatric: 30 mg/kg/day (max 1000 mg) IV daily x 3-5 days; Adult: 1000 mg IV daily x 3-5 days; infuse over 1 hour | Active untreated bacterial/fungal infection; uncontrolled diabetes (relative) | Blood glucose Q6H; BP; mood/sleep; GI symptoms; electrolytes | STAT | STAT | - | STAT |
-| Oral Prednisone taper | PO | Following IV methylprednisolone; prevents rebound; do NOT taper faster than 4 weeks | 1 mg/kg :: PO :: daily with taper :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 5-10 mg q3-5d over 4-6 weeks; do NOT taper faster than 4 weeks (risk of relapse) | Active untreated infection | Blood glucose; BP; mood; weight; GI protection (PPI) | - | ROUTINE | ROUTINE | - |
-| Acyclovir (empiric) | IV | Empiric coverage for HSV encephalitis until PCR results return; ADEM and HSV can present similarly | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR confirmed negative (typically 48-72h); ensure adequate hydration | Hypersensitivity | Renal function (Cr); adequate hydration (prevent crystalluria); CBC | STAT | STAT | - | STAT |
-| Lorazepam | IV | Acute seizure termination in ADEM | 0.1 mg/kg :: IV :: PRN seizure :: 0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min; max 8 mg | Severe respiratory depression without ventilator support | Respiratory status; sedation; BP | STAT | STAT | - | STAT |
-| Omeprazole | PO/IV | GI ulcer prophylaxis during high-dose steroid therapy | 40 mg :: PO :: daily :: 40 mg PO/IV daily during IV steroid course and oral taper | PPI allergy | None routine | URGENT | STAT | ROUTINE | STAT |
-| Insulin sliding scale | SC | Steroid-induced hyperglycemia management | Per protocol :: SC :: PRN :: Per institutional protocol if glucose >200 mg/dL; sliding scale insulin per hospital protocol | Hypoglycemia risk | Blood glucose Q6H; transition to scheduled insulin if persistent hyperglycemia | - | ROUTINE | - | ROUTINE |
+| IV Methylprednisolone | IV | First-line for ADEM; begin as soon as CNS infection reasonably excluded; do NOT delay for LP results if clinical suspicion high | 30 mg/kg/day (peds, max 1000 mg); 1000 mg daily (adults) x 3-5 days :: IV :: daily x 3-5 days :: Pediatric: 30 mg/kg/day (max 1000 mg) IV daily x 3-5 days; Adult: 1000 mg IV daily x 3-5 days; infuse over 1 hour | Active untreated bacterial/fungal infection; uncontrolled diabetes (relative) | Blood glucose Q6H; BP; mood/sleep; GI symptoms; electrolytes | STAT | STAT | - | STAT |
+| Oral Prednisone taper | PO | Following IV methylprednisolone; prevents rebound | 1 mg/kg daily (max 60 mg); taper over 4-6 weeks :: PO :: daily with taper :: Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 5-10 mg q3-5d over 4-6 weeks; do NOT taper faster than 4 weeks (risk of relapse) | Active untreated infection | Blood glucose; BP; mood; weight; GI protection (PPI) | - | ROUTINE | ROUTINE | - |
+| Acyclovir (empiric) | IV | Empiric coverage for HSV encephalitis until PCR results return; ADEM and HSV can present similarly | 10 mg/kg q8h :: IV :: q8h :: 10 mg/kg IV q8h; continue until HSV PCR confirmed negative (typically 48-72h); ensure adequate hydration | Hypersensitivity | Renal function (Cr); adequate hydration (prevent crystalluria); CBC | STAT | STAT | - | STAT |
 
-*Note: Empiric acyclovir should be started alongside steroids until HSV PCR returns negative. Do not delay steroids waiting for all results. If seizures occur, levetiracetam is preferred first-line anticonvulsant (see 3B).*
-
-### 3B. Symptomatic Treatments
+### 3B. Second-Line Immunotherapy (Steroid-Refractory)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Levetiracetam | IV/PO | Seizures in ADEM; preferred first-line anticonvulsant due to fewer drug interactions and no hepatic metabolism | 500 mg :: IV/PO :: BID :: Loading dose 20-30 mg/kg IV (max 3000 mg); then 500-1000 mg BID; adjust for renal function; may taper after 3-6 months if seizure-free and EEG normalized | Severe renal impairment (dose adjust) | Mood changes (rage, irritability); sedation; suicidality screening; renal function | STAT | STAT | ROUTINE | STAT |
-| Gabapentin | PO | Neuropathic pain from myelitis component; painful paresthesias | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-900 mg TID; max 3600 mg/day divided TID | Renal impairment (adjust dose per CrCl) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Acetaminophen | PO/IV | Pain control; headache from steroids or acute illness; fever management | 1000 mg :: PO :: q6h PRN :: 1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg/day if liver disease); pediatric: 15 mg/kg q6h (max 75 mg/kg/day) | Severe hepatic impairment; allergy | LFTs if prolonged use | STAT | STAT | ROUTINE | STAT |
-| Famotidine | PO/IV | GI prophylaxis during high-dose steroid therapy (alternative to PPI) | 20 mg :: PO :: BID :: 20 mg PO BID during steroid therapy and taper; IV 20 mg q12h if NPO | Severe renal impairment (dose adjust) | GI symptoms | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
-| Baclofen | PO | Spasticity from myelitis component; painful tonic spasms | 5 mg :: PO :: TID :: Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day; do NOT discontinue abruptly (risk of seizures, hallucinations) | Seizure disorder (lower threshold); renal impairment | Sedation; weakness; abrupt withdrawal causes seizures/hallucinations | - | ROUTINE | ROUTINE | - |
-| Oxybutynin | PO | Neurogenic bladder urgency/frequency from myelitis component | 5 mg :: PO :: BID :: Start 5 mg BID; max 5 mg TID | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Anticholinergic effects; cognitive effects (especially elderly and children); dry mouth | - | ROUTINE | ROUTINE | - |
-| Docusate sodium | PO | Constipation prevention during immobility or opioid use | 100 mg :: PO :: BID :: 100 mg PO BID | Intestinal obstruction | Bowel function | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol 3350 (MiraLAX) | PO | Constipation from neurogenic bowel or immobility | 17 g :: PO :: daily :: 17 g (1 capful) dissolved in 8 oz water daily | Intestinal obstruction; bowel perforation | Bowel function; electrolytes if prolonged | - | ROUTINE | ROUTINE | - |
-| Ondansetron | IV/PO | Nausea and vomiting during acute illness or steroid therapy | 4 mg :: IV :: q6h PRN :: 4 mg IV/PO q6h PRN; max 16 mg/day | QTc prolongation; severe hepatic impairment (max 8 mg/day) | QTc if repeated dosing; LFTs | STAT | ROUTINE | ROUTINE | STAT |
-| Melatonin | PO | Insomnia and sleep disruption from high-dose steroid therapy | 3 mg :: PO :: qHS :: 3-5 mg PO qHS; use during steroid pulse and taper; non-habit-forming | None significant | Sedation; next-day drowsiness | - | ROUTINE | ROUTINE | - |
-| Calcium + Vitamin D | PO | Bone protection during prolonged corticosteroid therapy (taper >4 weeks) | 1000 mg calcium + 2000 IU vitamin D :: PO :: daily :: Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day; start with steroid taper; continue for duration of steroid use | Hypercalcemia; kidney stones | 25-OH Vitamin D level; calcium; DEXA if steroid use >3 months | - | ROUTINE | ROUTINE | - |
+| IVIg (Intravenous Immunoglobulin) | IV | Steroid-refractory ADEM (no improvement after 3-5 days of IV steroids); contraindication to steroids | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (0.4 g/kg/day x 5 days); premedicate with acetaminophen and diphenhydramine | IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF | Renal function; headache; infusion reactions; BP; HR; thrombotic events | - | URGENT | - | URGENT |
+| Plasma Exchange (PLEX) | Apheresis | Steroid-refractory and IVIg-refractory ADEM; severe fulminant ADEM | 5-7 exchanges :: Apheresis :: every other day :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per session; albumin replacement | Hemodynamic instability; severe coagulopathy; poor vascular access | Coagulation studies; electrolytes (calcium, potassium); fibrinogen; BP; hemodynamic monitoring | - | URGENT | - | URGENT |
 
-### 3C. Second-line/Refractory (Steroid-Refractory)
+### 3C. Acute Seizure Management
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIg (Intravenous Immunoglobulin) | IV | Steroid-refractory ADEM (no improvement after 3-5 days of IV steroids); contraindication to steroids | 0.4 g/kg :: IV :: daily x 5 days :: 2 g/kg total divided over 2-5 days (0.4 g/kg/day x 5 days); premedicate with acetaminophen and diphenhydramine; check IgA level before first dose | IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF; renal failure | Renal function; headache (aseptic meningitis); infusion reactions; BP; HR; thrombotic events | - | URGENT | - | URGENT |
-| Plasma Exchange (PLEX) | Extracorporeal | Steroid-refractory and IVIg-refractory ADEM; severe fulminant ADEM (AHLE variant) | 5-7 exchanges :: Extracorporeal :: every other day :: 5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per session; albumin replacement | Hemodynamic instability; severe coagulopathy; poor vascular access; sepsis | Coagulation studies (fibrinogen); electrolytes (calcium, potassium, magnesium); BP; hemodynamic monitoring; line site | - | URGENT | - | URGENT |
-| Repeat IV Methylprednisolone (extended course) | IV | Incomplete response to initial 3-5 day course; may extend to 7-10 days in severe cases | 1000 mg :: IV :: daily :: 1000 mg IV daily; extend course to 7-10 days total if partial response after initial 3-5 days | Active untreated infection; uncontrolled diabetes; steroid psychosis | Glucose q6h; BP; mood; infection surveillance; electrolytes | - | URGENT | - | URGENT |
+| Levetiracetam | IV/PO | Seizures in ADEM; preferred first-line due to fewer drug interactions | 20 mg/kg IV load; 500 mg BID; 1000 mg BID :: IV/PO :: BID :: Loading dose 20-30 mg/kg IV (max 3000 mg); then 500-1000 mg BID; adjust for renal function | Severe renal impairment (dose adjust) | Mood changes; sedation; renal function | STAT | STAT | ROUTINE | STAT |
+| Lorazepam | IV | Acute seizure termination | 0.1 mg/kg IV (max 4 mg); 4 mg IV :: IV :: PRN :: 0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min | Severe respiratory depression without ventilator support | Respiratory status; sedation; BP | STAT | STAT | - | STAT |
 
-*Note: For steroid-refractory ADEM, IVIg is typically first escalation. PLEX is reserved for IVIg-refractory or fulminant cases (AHLE). If using sequential PLEX followed by IVIg, begin IVIg at least 24 hours after last PLEX exchange. ADEM is typically monophasic -- long-term DMTs are NOT indicated unless reclassified as MOGAD or MS.*
+### 3D. Symptomatic/Supportive
+
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Famotidine | IV/PO | GI prophylaxis during high-dose steroid therapy | 20 mg BID :: PO :: BID :: 20 mg PO BID during steroid therapy and taper | Severe renal impairment (dose adjust) | GI symptoms | - | ROUTINE | ROUTINE | - |
+| Insulin sliding scale | SQ | Steroid-induced hyperglycemia | Per protocol :: SQ :: per protocol :: Monitor blood glucose Q6H during IV steroid pulse; sliding scale insulin per hospital protocol | Hypoglycemia | Blood glucose Q6H; transition to scheduled insulin if persistent hyperglycemia | - | ROUTINE | - | ROUTINE |
 
 ---
 
@@ -186,29 +174,23 @@ SECTION A: ACTION ITEMS
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
 | Neurology consultation for ADEM diagnosis confirmation, immunotherapy management, and MS/MOGAD/NMOSD differentiation | STAT | STAT | ROUTINE | STAT |
-| Neuroradiology review of MRI for ADEM vs MS lesion pattern characterization | URGENT | ROUTINE | ROUTINE | URGENT |
+| Neuroradiology review of MRI for ADEM vs MS lesion pattern characterization | - | ROUTINE | ROUTINE | - |
 | Infectious disease consultation if infection cannot be confidently excluded or if unusual pathogen suspected | URGENT | ROUTINE | - | URGENT |
-| Physical therapy for motor recovery, gait training, and rehabilitation planning | - | ROUTINE | ROUTINE | ROUTINE |
-| Occupational therapy for ADL assessment and adaptive strategies during recovery | - | ROUTINE | ROUTINE | ROUTINE |
-| Speech-language pathology for dysphagia assessment and communication if brainstem/cerebellar involvement | - | ROUTINE | ROUTINE | ROUTINE |
+| Physical therapy for motor recovery, gait training, and rehabilitation planning | - | ROUTINE | ROUTINE | - |
+| Occupational therapy for ADL assessment and adaptive strategies during recovery | - | ROUTINE | ROUTINE | - |
+| Speech therapy for dysphagia assessment and communication if brainstem/cerebellar involvement | - | ROUTINE | - | ROUTINE |
 | Neuropsychology follow-up for cognitive assessment (cognitive deficits may persist especially in children) | - | - | ROUTINE | - |
-| Ophthalmology if optic neuritis component present for visual acuity monitoring and OCT baseline | - | ROUTINE | ROUTINE | - |
-| Rehabilitation medicine for comprehensive inpatient rehabilitation if significant residual motor or cognitive deficits | - | ROUTINE | ROUTINE | - |
-| Social work for family support, insurance navigation, school/work accommodations, and discharge planning | - | ROUTINE | ROUTINE | - |
-| Pediatric neurology referral if pediatric patient (ADEM most common in children ages 5-8) | URGENT | URGENT | ROUTINE | URGENT |
+| Ophthalmology if optic neuritis component present for visual acuity monitoring | - | ROUTINE | ROUTINE | - |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| ADEM is usually a monophasic illness with good recovery expected over weeks to months; most patients (>70%) recover fully or near-fully | ROUTINE | ROUTINE | ROUTINE | - |
-| Return to ED immediately if new neurological symptoms develop after discharge (new weakness, vision changes, confusion, seizures) as this may indicate relapse or alternative diagnosis (MS, MOGAD) | STAT | ROUTINE | ROUTINE | - |
+| ADEM is usually a monophasic illness with good recovery expected over weeks to months; most patients recover fully or near-fully | - | ROUTINE | ROUTINE | - |
+| Return immediately if new neurological symptoms develop (weakness, vision changes, confusion, seizures) after discharge, as this may indicate relapse or alternative diagnosis | STAT | - | ROUTINE | - |
 | Complete the full oral steroid taper as prescribed; do NOT stop abruptly (risk of disease rebound and adrenal crisis) | - | ROUTINE | ROUTINE | - |
-| Follow-up MRI at 3-6 months is essential to confirm lesion resolution and rule out MS (new lesions on follow-up MRI would suggest MS rather than ADEM) | - | ROUTINE | ROUTINE | - |
-| Report any new visual symptoms, limb weakness, numbness, or balance problems even after recovery, as these may indicate a second attack (MDEM or MS transition) | ROUTINE | ROUTINE | ROUTINE | - |
-| Report any signs of infection (fever >100.4F, cough, dysuria) while on steroid therapy, as steroids suppress immune function | - | ROUTINE | ROUTINE | - |
-| Avoid driving and operating heavy machinery while on sedating medications (levetiracetam, gabapentin) until tolerance established | - | ROUTINE | ROUTINE | - |
-| Children: inform school of diagnosis and potential cognitive recovery needs; request neuropsychological testing before return | - | ROUTINE | ROUTINE | - |
+| Follow-up MRI at 3-6 months is essential to confirm lesion resolution and rule out MS (new lesions on follow-up MRI would suggest MS rather than ADEM) | - | - | ROUTINE | - |
+| Report any new visual symptoms, limb weakness, numbness, or balance problems even after recovery, as these may indicate a second attack (MDEM or MS transition) | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
@@ -216,16 +198,9 @@ SECTION A: ACTION ITEMS
 |----------------|:--:|:----:|:---:|:---:|
 | Adequate rest during acute recovery; gradual return to school/work activities as neurological function improves | - | ROUTINE | ROUTINE | - |
 | Vaccination review: ADEM can rarely be triggered by vaccines; this does NOT contraindicate future vaccination in most cases; discuss with neurologist and immunologist on case-by-case basis | - | - | ROUTINE | - |
-| Seizure precautions if seizures occurred during acute phase; anticonvulsant taper guided by neurology (usually can be discontinued if EEG normalizes and seizure-free for 3-6 months) | - | ROUTINE | ROUTINE | - |
-| Balanced diet with adequate calcium and vitamin D intake during steroid therapy; monitor weight | - | ROUTINE | ROUTINE | - |
-| Avoid contact sports and high-risk activities until neurological recovery is complete and cleared by neurology | - | ROUTINE | ROUTINE | - |
-| Stress management and psychological support; ADEM diagnosis can be distressing for patients and families; consider counseling if adjustment difficulties | - | - | ROUTINE | - |
+| Seizure precautions if seizures occurred during acute phase; anticonvulsant taper guided by neurology (usually can be discontinued if EEG normalizes) | - | ROUTINE | ROUTINE | - |
 
 ---
-
-═══════════════════════════════════════════════════════════
-SECTION B: REFERENCE (Expand as Needed)
-═══════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -301,18 +276,6 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
-
-**v1.1 (February 11, 2026)**
-- Restructured Section 3 to standard numbering: 3A Acute/Emergent, 3B Symptomatic, 3C Second-line/Refractory
-- Moved lorazepam and omeprazole/insulin to 3A (acute); moved IVIg/PLEX to 3C (refractory)
-- Added symptomatic medications: gabapentin (neuropathic pain), baclofen (spasticity), oxybutynin (neurogenic bladder), acetaminophen (pain/fever), docusate/MiraLAX (constipation), ondansetron (nausea), melatonin (steroid-induced insomnia), calcium/vitamin D (bone protection)
-- Fixed structured dosing format across all treatment rows to consistent `dose :: route :: frequency :: instructions`
-- Added Section A/B dividers (═══)
-- Updated 4A Referrals: added rehabilitation medicine, social work, pediatric neurology; expanded ICU coverage for PT/OT/SLP
-- Updated 4B Patient Instructions: added infection reporting, driving precautions, school accommodations; improved ED coverage
-- Updated 4C Lifestyle: added diet/calcium, contact sports avoidance, stress management
-- Fixed setting coverage gaps: added neuroradiology ED/ICU coverage; expanded PT/OT/SLP ICU coverage; added omeprazole ED coverage
-- Upgraded levetiracetam monitoring (suicidality screening, behavioral changes)
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
