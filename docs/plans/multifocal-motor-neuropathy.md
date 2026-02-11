@@ -12,6 +12,12 @@ tags:
   - immunotherapy
 ---
 
+<div class="content">
+    <div class="title">DRAFT - Pending Review</div>
+    <div class="description">This plan requires physician review before clinical use.</div>
+  </div>
+</div>
+
 # Multifocal Motor Neuropathy (MMN)
 
 **VERSION:** 1.1
