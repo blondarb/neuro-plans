@@ -1,7 +1,7 @@
 ---
 title: "Functional Movement Disorder (FMD)"
 description: "Clinical decision support for evaluation and management of functional (psychogenic) movement disorders"
-version: "1.1"
+version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,9 +21,8 @@ tags:
 
 # Functional Movement Disorder (FMD)
 
-**VERSION:** 1.1
+**VERSION:** 1.0
 **CREATED:** February 11, 2026
-**REVISED:** February 11, 2026
 **STATUS:** Draft
 
 ---
@@ -131,7 +130,7 @@ SECTION A: ACTION ITEMS
 | Verbal de-escalation and reassurance (first-line acute management) | - | Acute functional movement event (severe tremor, dystonic episode, functional gait failure, functional jerks) in ED or inpatient | N/A :: - :: - :: Use calm, reassuring voice; "I can see your body is doing something involuntary -- I'm going to help you"; grounding techniques (5-4-3-2-1 sensory grounding); do NOT restrain; do NOT use forceful commands | None | Event duration; response to verbal cues; vital signs; injury assessment | STAT | STAT | ROUTINE | STAT |
 | Distraction-based movement normalization | - | Functional tremor, dystonia, or gait failure during acute presentation; can rapidly demonstrate diagnosis | N/A :: - :: - :: Ask patient to perform contralateral rhythmic tapping (tremor entrainment test); ask patient to walk backward (gait improvement = positive sign); use cognitive loading (serial 7s, word generation) during movement testing | None | Observe for movement normalization with distraction; document positive signs | STAT | STAT | ROUTINE | STAT |
 | Avoid unnecessary sedation | - | Do NOT sedate patients with functional movement events; sedation delays diagnosis and causes iatrogenic harm | N/A :: - :: - :: Withhold IV benzodiazepines, haloperidol, or propofol for functional movement events unless diagnostic uncertainty requires emergent treatment of possible organic movement disorder emergency (e.g., status dystonicus) | If organic movement disorder emergency cannot be excluded, treat as organic | Respiratory status; mental status; document clinical features | STAT | STAT | - | STAT |
-| Lorazepam (ONLY if organic movement disorder emergency cannot be excluded) | IV | Status dystonicus or acute dystonic reaction cannot be excluded; diagnostic uncertainty | 1 mg :: IV :: PRN :: 1-2 mg IV push; may repeat x1 in 10 min; max 4 mg; ONLY if organic dystonic emergency suspected; discontinue once functional diagnosis confirmed | Respiratory depression; severe COPD without ventilatory support | Respiratory status; sedation level; response | URGENT | URGENT | - | URGENT |
+| Lorazepam (ONLY if organic movement disorder emergency cannot be excluded) | IV | Status dystonicus or acute dystonic reaction cannot be excluded; diagnostic uncertainty | 1 mg; 2 mg :: IV :: PRN :: 1-2 mg IV push; may repeat x1 in 10 min; max 4 mg; ONLY if organic dystonic emergency suspected; discontinue once functional diagnosis confirmed | Respiratory depression; severe COPD without ventilatory support | Respiratory status; sedation level; response | URGENT | URGENT | - | URGENT |
 | Diphenhydramine (ONLY if acute dystonic reaction suspected) | IV/IM | Acute dystonic reaction from neuroleptic cannot be excluded as cause | 50 mg :: IV :: single dose :: 50 mg IV/IM x1; response within 15-30 min confirms drug-induced dystonic reaction; if no response, reassess diagnosis | Narrow-angle glaucoma; urinary retention | Response to treatment; anticholinergic effects; sedation | URGENT | URGENT | - | URGENT |
 
 *Note: CRITICAL -- Most functional movement episodes do NOT require pharmacologic treatment. The most effective acute intervention is recognizing the functional nature of the movement disorder and using distraction/grounding techniques. Unnecessary sedation or antipsychotic administration causes iatrogenic harm and delays appropriate treatment. Only use pharmacotherapy when organic movement disorder emergency (status dystonicus, neuroleptic malignant syndrome, acute dystonic reaction) cannot be excluded.*
@@ -171,17 +170,17 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Sertraline | PO | Comorbid depression (present in ~50% FMD patients); generalized anxiety | 50 mg :: PO :: daily :: Start 50 mg daily; titrate q2-4wk by 50 mg; max 200 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); serotonin syndrome; QTc if risk factors | - | ROUTINE | ROUTINE | - |
-| Escitalopram | PO | Comorbid depression; anxiety; well-tolerated first-line SSRI | 10 mg :: PO :: daily :: Start 10 mg daily; may increase to 20 mg daily after 4 weeks; max 20 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); QTc; serotonin syndrome | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Comorbid depression with chronic pain (dual SNRI benefit); fibromyalgia comorbidity | 30 mg :: PO :: daily :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day for pain | Hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | BP; LFTs; serotonin syndrome; discontinuation syndrome (taper slowly) | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | Comorbid depression with anxiety; chronic pain; inadequate SSRI response | 37.5 mg :: PO :: daily :: Start 37.5 mg daily x 1 week; titrate by 75 mg q1wk; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP; HR; serotonin syndrome; discontinuation syndrome (taper very slowly) | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | PO | Chronic pain comorbidity; insomnia; migraine prophylaxis (common FMD comorbidities) | 10 mg :: PO :: qHS :: Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic risk) | ECG if dose >50 mg; anticholinergic effects; sedation; orthostatic hypotension; weight gain | - | ROUTINE | ROUTINE | - |
-| Gabapentin | PO | Chronic pain comorbidity; anxiety (off-label); neuropathic pain component | 300 mg :: PO :: TID :: Start 300 mg qHS; titrate by 300 mg q3-5d; max 3600 mg/day divided TID; adjust for renal function | Severe renal impairment (reduce dose) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Chronic pain comorbidity; fibromyalgia; anxiety (off-label); inadequate gabapentin response | 75 mg :: PO :: BID :: Start 75 mg BID; may increase q1wk; max 600 mg/day; adjust for renal function | Severe renal impairment (reduce dose) | Sedation; dizziness; weight gain; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
-| Propranolol | PO | Anxiety with prominent somatic symptoms (palpitations, tremor sensation); migraine prophylaxis comorbidity | 10 mg :: PO :: BID :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm; fatigue | - | ROUTINE | ROUTINE | - |
-| Hydroxyzine | PO | Acute anxiety; agitation in ED/inpatient; PRN anxiolysis without benzodiazepine risk | 25 mg :: PO :: q6h PRN :: 25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation; anticholinergic effects | URGENT | URGENT | ROUTINE | - |
-| Melatonin | PO | Insomnia (common FMD comorbidity); circadian rhythm dysfunction | 3 mg :: PO :: qHS :: 3-10 mg PO 30 min before bedtime; max 10 mg/day | None significant | Sleep quality; next-day sedation | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia with comorbid depression; sleep maintenance difficulty | 25 mg :: PO :: qHS :: Start 25 mg PO qHS; titrate q1wk; max 100 mg qHS for insomnia | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation; QTc | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Comorbid depression (present in ~50% FMD patients); generalized anxiety | 50 mg daily :: PO :: :: Start 50 mg daily; titrate q2-4wk by 50 mg; max 200 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); serotonin syndrome; QTc if risk factors | - | ROUTINE | ROUTINE | - |
+| Escitalopram | PO | Comorbid depression; anxiety; well-tolerated first-line SSRI | 10 mg daily :: PO :: :: Start 10 mg daily; may increase to 20 mg daily after 4 weeks; max 20 mg/day | Concurrent MAOIs; QTc prolongation | Suicidality (first 8 weeks); QTc; serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Comorbid depression with chronic pain (dual SNRI benefit); fibromyalgia comorbidity | 30 mg daily; 60 mg daily :: PO :: :: Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day for pain | Hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | BP; LFTs; serotonin syndrome; discontinuation syndrome (taper slowly) | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Comorbid depression with anxiety; chronic pain; inadequate SSRI response | 37.5 mg daily; 75 mg daily; 150 mg daily :: PO :: :: Start 37.5 mg daily x 1 week; titrate by 75 mg q1wk; max 225 mg/day | Uncontrolled hypertension; concurrent MAOIs | BP; HR; serotonin syndrome; discontinuation syndrome (taper very slowly) | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Chronic pain comorbidity; insomnia; migraine prophylaxis (common FMD comorbidities) | 10 mg qHS; 25 mg qHS; 50 mg qHS :: PO :: :: Start 10 mg PO qHS; titrate by 10 mg q1-2wk; max 75 mg qHS for pain/insomnia | Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic risk) | ECG if dose >50 mg; anticholinergic effects; sedation; orthostatic hypotension; weight gain | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | Chronic pain comorbidity; anxiety (off-label); neuropathic pain component | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg qHS; titrate by 300 mg q3-5d; max 3600 mg/day divided TID; adjust for renal function | Severe renal impairment (reduce dose) | Sedation; dizziness; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Chronic pain comorbidity; fibromyalgia; anxiety (off-label); inadequate gabapentin response | 75 mg BID; 150 mg BID; 300 mg BID :: PO :: :: Start 75 mg BID; may increase q1wk; max 600 mg/day; adjust for renal function | Severe renal impairment (reduce dose) | Sedation; dizziness; weight gain; peripheral edema; renal function | - | ROUTINE | ROUTINE | - |
+| Propranolol | PO | Anxiety with prominent somatic symptoms (palpitations, tremor sensation); migraine prophylaxis comorbidity | 10 mg BID; 20 mg BID; 40 mg BID :: PO :: :: Start 10 mg PO BID; titrate q1wk; max 80 mg BID | Asthma; AV block; bradycardia; decompensated CHF | HR; BP; bronchospasm; fatigue | - | ROUTINE | ROUTINE | - |
+| Hydroxyzine | PO | Acute anxiety; agitation in ED/inpatient; PRN anxiolysis without benzodiazepine risk | 25 mg q6h PRN; 50 mg q6h PRN :: PO :: :: 25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose | QTc prolongation; severe hepatic impairment | QTc; sedation; anticholinergic effects | URGENT | URGENT | ROUTINE | - |
+| Melatonin | PO | Insomnia (common FMD comorbidity); circadian rhythm dysfunction | 3 mg qHS; 5 mg qHS; 10 mg qHS :: PO :: :: 3-10 mg PO 30 min before bedtime | None significant | Sleep quality; next-day sedation | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia with comorbid depression; sleep maintenance difficulty | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25 mg PO qHS; titrate q1wk; max 100 mg qHS for insomnia | Concurrent MAOIs; QTc prolongation | Orthostatic hypotension; priapism (rare); sedation; QTc | - | ROUTINE | ROUTINE | - |
 
 *Note: There is NO medication that directly treats functional movement disorder. Pharmacotherapy targets COMORBIDITIES (depression, anxiety, chronic pain, insomnia) which are present in the majority of FMD patients and perpetuate the disorder. CRITICAL: Avoid benzodiazepines for ongoing FMD management -- they do not improve functional movements, risk dependence, and may worsen functional neurological symptoms through cognitive/sedative effects. Do NOT prescribe dopaminergic agents, anticholinergics, or botulinum toxin for functional movement disorders (they are ineffective and reinforce an incorrect disease model).*
 
@@ -189,7 +188,7 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Botulinum toxin (generally NOT recommended for FMD) | IM | NOT first-line for functional dystonia; consider ONLY if severe fixed functional dystonia causing contracture risk AND failing rehabilitation AND concomitant organic dystonia cannot be excluded | Per muscle group :: IM :: q12 weeks :: Specialist decision only; if used, target specific muscles causing contracture risk; limited evidence in functional dystonia; may reinforce biomedical illness model; discuss as adjunct to rehab, not primary treatment | Myasthenia gravis; ALS; pregnancy; infection at injection site | Muscle weakness; dysphagia (cervical injection); functional outcome; treatment engagement with rehabilitation | - | - | EXT | - |
+| Botulinum toxin (generally NOT recommended for FMD) | IM | NOT first-line for functional dystonia; consider ONLY if severe fixed functional dystonia causing contracture risk AND failing rehabilitation AND concomitant organic dystonia cannot be excluded | Per muscle-specific dosing :: IM :: q3 months :: Specialist decision only; if used, target specific muscles causing contracture risk; limited evidence in functional dystonia; may reinforce biomedical illness model; discuss as adjunct to rehab, not primary treatment | Myasthenia gravis; ALS; pregnancy; infection at injection site | Muscle weakness; dysphagia (cervical injection); functional outcome; treatment engagement with rehabilitation | - | - | EXT | - |
 
 *Note: Botulinum toxin is generally NOT recommended for functional dystonia as it reinforces an incorrect disease model and has limited evidence. Consider ONLY in rare cases where fixed dystonia threatens contracture formation despite maximal rehabilitation, or where organic dystonia cannot be fully excluded. Always as adjunct to, never replacement for, physiotherapy and psychological treatment.*
 
@@ -402,12 +401,6 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
-
-**v1.1 (February 11, 2026)**
-- Fixed structured dosing format across all pharmacologic treatment sections (3A, 3E, 3F) to use `[dose] :: [route] :: [frequency] :: [instructions]` 4-field format
-- Normalized lorazepam (3A) dosing to single starting dose in first field
-- Updated botulinum toxin (3F) dosing frequency field to `q12 weeks`
-- Added max dose to melatonin full instructions
 
 **v1.0 (February 11, 2026)**
 - Initial creation
