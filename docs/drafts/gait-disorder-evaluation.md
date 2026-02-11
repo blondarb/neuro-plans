@@ -1,7 +1,7 @@
 ---
 title: "Gait Disorder Evaluation"
 description: "Clinical decision support for systematic evaluation of neurological gait disorders"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -24,10 +24,10 @@ tags:
 
 # Gait Disorder Evaluation
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Revised per checker feedback
+**STATUS:** Revised per checker feedback (v1.2 — C1/C2 fixes)
 
 ---
 
@@ -157,7 +157,7 @@ tags:
 | IV methylprednisolone | IV | Acute inflammatory myelopathy (MS relapse, NMOSD, transverse myelitis, neurosarcoidosis) | 1000 mg :: IV :: daily :: 1000 mg IV daily for 3-5 days; followed by oral prednisone taper if indicated | Active untreated infection; uncontrolled diabetes; GI bleeding | Blood glucose Q6H on steroids; GI prophylaxis; blood pressure; infection surveillance | STAT | STAT | - | STAT |
 | Gluten-free diet | Dietary | Gluten ataxia (positive anti-gliadin antibodies with cerebellar ataxia and no alternative cause) | Strict gluten-free diet :: Dietary :: continuous :: Lifelong gluten elimination; may take 6-12 months for maximal improvement; refer to dietitian | None | Anti-gliadin antibody titers (should decline); clinical ataxia assessment every 3-6 months; cerebellar MRI | - | ROUTINE | ROUTINE | - |
 | D-penicillamine or trientine | PO | Wilson disease with neurological manifestations | Trientine 250 mg :: PO :: TID :: Trientine preferred for neurological Wilson (less risk of paradoxical worsening vs D-penicillamine); zinc maintenance after de-coppering | Pregnancy (teratogenic); renal failure | 24-hour urine copper; free copper levels; LFTs; CBC; neurological status (watch for paradoxical worsening) | - | ROUTINE | ROUTINE | - |
-| Penicillin G | IV | Neurosyphilis (tabes dorsalis) | 18-24 million units :: IV :: continuous or divided Q4H :: 18-24 million units/day IV for 10-14 days | Penicillin allergy (desensitize if needed) | CSF VDRL and cell count at 6-month intervals post-treatment until normalized; serum RPR decline | - | STAT | - | - |
+| Penicillin G | IV | Neurosyphilis (tabes dorsalis) | 18-24 million units :: IV :: continuous or divided Q4H :: 18-24 million units/day IV for 10-14 days | Penicillin allergy (desensitize if needed) | CSF VDRL and cell count at 6-month intervals post-treatment until normalized; serum RPR decline | - | STAT | ROUTINE | - |
 
 ### 3B. Symptomatic Treatment — Parkinsonian & Spasticity
 
@@ -342,6 +342,7 @@ tags:
 - Elderly gait disorders are often MULTIFACTORIAL — cervical myelopathy + peripheral neuropathy + medication effects + orthostatic hypotension may all coexist; address all contributing factors
 - Medication review is one of the highest-yield interventions: benzodiazepines, anticholinergics, sedating medications, and polypharmacy are major modifiable fall risk factors
 - Functional gait disorder is a positive diagnosis made by characteristic clinical signs (inconsistency, distractibility, entrainment, Hoover sign) — NOT a diagnosis of exclusion
+- Neurosyphilis (tabes dorsalis): IV penicillin G is given inpatient, but OUTPATIENT follow-up is essential — serial CSF VDRL and cell count every 6 months until normalized; repeat LP if CSF not improved at 6 months; serum RPR should decline 4-fold by 12 months
 - Physical therapy is beneficial for virtually ALL neurological gait disorders — refer early regardless of etiology
 - Fall risk has a cascade effect: fear of falling → activity restriction → deconditioning → increased fall risk; early intervention with PT and assistive devices breaks this cycle
 
@@ -352,4 +353,5 @@ tags:
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.1 | 2026-02-11 | Rebuilt Section 4: replaced non-standard 4A General/4B Setting-Specific/4C Pattern-Based with standard 4A Referrals & Consults (14 referrals with venue columns), 4B Patient Instructions (11 instructions with venue columns), 4C Lifestyle & Prevention (9 recommendations with venue columns); retained Pattern-Based Evaluation Guide as 4D. Added venue columns (ED, HOSP, OPD, ICU) to Section 6 Monitoring (13 parameters). Restructured Treatment from 5 subsections (3A-3E) to standard 4-subsection format (3A-3D): merged Parkinsonian and Spasticity into 3B Symptomatic, Cerebellar Ataxia to 3C, Fall Prevention to 3D. Added glucose monitoring, LFT monitoring, and renal function monitoring rows to Section 6. |
+| 1.2 | 2026-02-11 | Fixed Penicillin G row: added OPD=ROUTINE for outpatient neurosyphilis follow-up pathway (serial CSF VDRL monitoring). Added neurosyphilis follow-up note to NOTES section. |
 | 1.0 | 2026-02-11 | Initial draft — Gait Disorder Evaluation plan |

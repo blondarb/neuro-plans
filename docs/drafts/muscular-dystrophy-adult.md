@@ -1,7 +1,7 @@
 ---
 title: "Muscular Dystrophy (Adult)"
 description: "Clinical decision support for evaluation and management of adult-onset muscular dystrophies"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,7 +22,7 @@ tags:
 
 # Muscular Dystrophy (Adult)
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
 **STATUS:** Revised per checker feedback
@@ -64,7 +64,6 @@ tags:
 | CMP (CPT 80053) | STAT | STAT | ROUTINE | STAT | Renal function (rhabdomyolysis risk); electrolytes; LFTs (may be elevated from muscle source, not hepatic) | Normal; note ALT/AST may be elevated from muscle |
 | CBC (CPT 85025) | STAT | STAT | ROUTINE | STAT | Baseline | Normal |
 | TSH (CPT 84443) | - | ROUTINE | ROUTINE | - | Thyroid myopathy in differential | Normal |
-| 12-lead ECG (CPT 93000) | STAT | STAT | ROUTINE | STAT | Cardiac conduction abnormalities (EDMD, LGMD, BMD); cardiomyopathy screen | Normal sinus rhythm; no conduction disease; no LVH |
 | Aldolase | - | ROUTINE | ROUTINE | - | Elevated in inflammatory and dystrophic myopathies; may be more sensitive than CK in some dystrophies | Normal |
 
 ### 1B. Extended Labs
@@ -134,9 +133,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lisinopril | PO | Cardiomyopathy prevention/treatment; ACE inhibitor for LV dysfunction in BMD, LGMD, EDMD | 2.5 mg :: PO :: daily :: Start 2.5-5 mg daily; titrate to 10-20 mg daily; initiate at first sign of LV dysfunction or prophylactically in high-risk dystrophies (BMD) | Bilateral renal artery stenosis; pregnancy; angioedema history; hyperkalemia | BP; K+; renal function; cough; EF on echo | - | ROUTINE | ROUTINE | - |
-| Carvedilol | PO | Heart failure from cardiomyopathy; beta-blocker for LV dysfunction | 3.125 mg :: PO :: BID :: Start 3.125 mg BID; double dose q2wk as tolerated; max 25 mg BID; take with food | Severe bradycardia; 2nd/3rd degree AV block; decompensated HF; severe asthma | HR; BP; fatigue; fluid retention; EF | - | ROUTINE | ROUTINE | - |
-| Implantable cardioverter-defibrillator (ICD) / Pacemaker | Device | EDMD and LMNA mutations: prophylactic ICD/pacemaker for conduction defects; high risk of sudden cardiac death even with normal EF | N/A :: Device :: per cardiology :: LMNA mutation carriers: prophylactic ICD/pacemaker per HRS guidelines; do NOT wait for symptomatic bradycardia; BMD cardiomyopathy: ICD per standard heart failure criteria | Specific to device implantation | Device checks q6-12 months; rhythm monitoring; lead integrity | - | ROUTINE | ROUTINE | - |
+| Lisinopril | PO | Cardiomyopathy prevention/treatment; ACE inhibitor for LV dysfunction in BMD, LGMD, EDMD | 2.5 mg :: PO :: daily :: Start 2.5-5 mg daily; titrate to 10-20 mg daily; initiate at first sign of LV dysfunction or prophylactically in high-risk dystrophies (BMD) | Bilateral renal artery stenosis; pregnancy; angioedema history; hyperkalemia | BP; K+; renal function; cough; EF on echo | - | ROUTINE | ROUTINE | ROUTINE |
+| Carvedilol | PO | Heart failure from cardiomyopathy; beta-blocker for LV dysfunction | 3.125 mg :: PO :: BID :: Start 3.125 mg BID; double dose q2wk as tolerated; max 25 mg BID; take with food | Severe bradycardia; 2nd/3rd degree AV block; decompensated HF; severe asthma | HR; BP; fatigue; fluid retention; EF | - | ROUTINE | ROUTINE | ROUTINE |
+| Implantable cardioverter-defibrillator (ICD) / Pacemaker | Device | EDMD and LMNA mutations: prophylactic ICD/pacemaker for conduction defects; high risk of sudden cardiac death even with normal EF | N/A :: Device :: per cardiology :: LMNA mutation carriers: prophylactic ICD/pacemaker per HRS guidelines; do NOT wait for symptomatic bradycardia; BMD cardiomyopathy: ICD per standard heart failure criteria | Specific to device implantation | Device checks q6-12 months; rhythm monitoring; lead integrity | - | ROUTINE | ROUTINE | ROUTINE |
 
 ### 3C. Symptomatic and Supportive
 
@@ -148,8 +147,8 @@ tags:
 | Baclofen | PO | Spasticity; muscle stiffness from contractures | 5 mg :: PO :: TID :: Start 5 mg TID; increase by 5 mg/dose q3d; max 80 mg/day divided TID-QID; taper to discontinue (do NOT stop abruptly) | Abrupt withdrawal (seizures, hallucinations); severe renal impairment | Sedation; weakness (may unmask underlying weakness); respiratory depression | - | ROUTINE | ROUTINE | - |
 | Tizanidine | PO | Spasticity (alternative to baclofen); muscle spasms | 2 mg :: PO :: qHS :: Start 2 mg qHS; may increase by 2-4 mg q6-8h; max 36 mg/day | Concurrent CYP1A2 inhibitors (ciprofloxacin, fluvoxamine); hepatic impairment | LFTs at baseline, 1 month, 3 months; sedation; hypotension; dry mouth | - | ROUTINE | ROUTINE | - |
 | Modafinil | PO | Fatigue; excessive daytime sleepiness | 100 mg :: PO :: qAM :: Start 100 mg every morning; may increase to 200 mg daily; avoid afternoon dosing | Hypersensitivity; cardiac arrhythmia; left ventricular hypertrophy | Headache; insomnia; cardiac monitoring if history; BP | - | - | ROUTINE | - |
-| Sertraline | PO | Depression; anxiety related to chronic progressive disease | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg/day | Concurrent MAOIs; caution with QT-prolonging drugs | Suicidality (first weeks); GI upset; sexual dysfunction; hyponatremia | - | ROUTINE | ROUTINE | - |
-| Duloxetine | PO | Depression with comorbid pain; neuropathic pain component | 30 mg :: PO :: daily :: Start 30 mg daily x 1-2 weeks; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; uncontrolled narrow-angle glaucoma | LFTs; BP; nausea (take with food); serotonin syndrome risk | - | ROUTINE | ROUTINE | - |
+| Sertraline | PO | Depression; anxiety related to chronic progressive disease (ALTERNATIVE to duloxetine — do NOT combine; serotonin syndrome risk) | 25 mg :: PO :: daily :: Start 25 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg/day | Concurrent MAOIs; concurrent duloxetine (serotonin syndrome); caution with QT-prolonging drugs | Suicidality (first weeks); GI upset; sexual dysfunction; hyponatremia; serotonin syndrome if combined with other serotonergic agents | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Depression with comorbid pain; neuropathic pain component (ALTERNATIVE to sertraline — do NOT combine; serotonin syndrome risk) | 30 mg :: PO :: daily :: Start 30 mg daily x 1-2 weeks; increase to 60 mg daily; max 120 mg/day | Severe hepatic impairment; concurrent MAOIs; concurrent sertraline (serotonin syndrome); uncontrolled narrow-angle glaucoma | LFTs; BP; nausea (take with food); serotonin syndrome if combined with other serotonergic agents | - | ROUTINE | ROUTINE | - |
 | Oxybutynin | PO | Urinary urgency and frequency from neurogenic bladder dysfunction | 5 mg :: PO :: BID :: Start 5 mg BID-TID; max 5 mg QID; extended-release 5-30 mg daily preferred | Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction | Dry mouth; cognitive effects (especially elderly); constipation; urinary retention | - | ROUTINE | ROUTINE | - |
 | Mirabegron | PO | Overactive bladder (alternative to anticholinergics; fewer cognitive effects) | 25 mg :: PO :: daily :: Start 25 mg daily; may increase to 50 mg daily | Severe uncontrolled hypertension | BP; urinary retention; hepatic function | - | ROUTINE | ROUTINE | - |
 | Cyclobenzaprine | PO | Muscle spasms; musculoskeletal pain | 5 mg :: PO :: TID :: Start 5 mg TID; max 10 mg TID; short-term use (2-3 weeks); avoid in elderly | Concurrent MAOIs; recent MI; arrhythmia; heart failure; hyperthyroidism | Sedation; dry mouth; dizziness; anticholinergic effects | - | ROUTINE | ROUTINE | - |
@@ -216,7 +215,7 @@ tags:
 | Stretching program to prevent and manage contractures; daily range-of-motion exercises for all joints | - | ROUTINE | ROUTINE | - |
 | Maintain healthy weight: obesity worsens mobility and respiratory function; underweight/sarcopenia worsens weakness | - | ROUTINE | ROUTINE | - |
 | Fall prevention measures: grab bars, non-slip surfaces, assistive devices; home safety evaluation | - | ROUTINE | ROUTINE | - |
-| Annual influenza and pneumococcal vaccination; COVID-19 vaccination per guidelines to prevent respiratory infections | - | - | ROUTINE | - |
+| Annual influenza and pneumococcal vaccination; COVID-19 vaccination per guidelines to prevent respiratory infections | - | ROUTINE | ROUTINE | - |
 | Aspiration precautions for OPMD patients: upright positioning during meals; thickened liquids as recommended by speech therapy | - | ROUTINE | ROUTINE | - |
 
 ---
@@ -295,6 +294,12 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 11, 2026)**
+- Removed duplicate 12-lead ECG from Section 1A Core Labs (retained in Section 2A Essential Studies)
+- Added serotonin syndrome warning to sertraline and duloxetine in Section 3C; marked as alternatives, not for concurrent use
+- Added ICU coverage for Section 3B cardiac medications (lisinopril, carvedilol, ICD/pacemaker) — ICU patients with cardiomyopathy need continuation
+- Added HOSP coverage for vaccination counseling in Section 4C
 
 **v1.1 (February 11, 2026)**
 - Expanded Section 3C from 3 to 13 medications: added baclofen and tizanidine (spasticity), modafinil (fatigue), sertraline and duloxetine (mood/depression), oxybutynin and mirabegron (bladder), cyclobenzaprine (muscle spasms), melatonin (insomnia)
