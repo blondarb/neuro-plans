@@ -1,7 +1,7 @@
 ---
 title: "Wernicke-Korsakoff Syndrome"
 description: "Clinical decision support for Wernicke-Korsakoff syndrome including chronic Korsakoff amnestic component, cognitive rehabilitation, and long-term nutritional management"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -21,7 +21,7 @@ tags:
 
 # Wernicke-Korsakoff Syndrome
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
 **STATUS:** Draft
@@ -47,7 +47,9 @@ tags:
 
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
----
+═══════════════════════════════════════════════════════════════
+SECTION A: ACTION ITEMS
+═══════════════════════════════════════════════════════════════
 
 ## 1. LABORATORY WORKUP
 
@@ -122,48 +124,48 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Thiamine IV (high-dose) | IV | Acute Wernicke encephalopathy treatment or acute decompensation of WKS | 500 mg TID :: IV :: :: 500 mg IV TID in 100 mL NS over 30 min x 3-5 days; then 250 mg IV daily x 3-5 days; then transition to oral | Rare anaphylaxis (administer slowly; have epinephrine available) | Anaphylaxis monitoring during infusion; clinical response (mental status, oculomotor function, gait) | STAT | STAT | - | STAT |
-| Thiamine IV (prophylactic - at-risk re-presentation) | IV | Prophylaxis in known WKS patients presenting with acute illness, poor oral intake, or suspected relapse | 200-500 mg TID :: IV :: :: 200-500 mg IV TID x 3 days; reassess and transition to oral when tolerating | Rare anaphylaxis | Anaphylaxis monitoring; clinical response | STAT | STAT | - | STAT |
-| Magnesium sulfate IV | IV | Magnesium replacement as essential cofactor for thiamine-dependent enzymes | 1-2 g :: IV :: :: 1-2 g IV over 1-2 hours; repeat as needed to maintain Mg >2.0 mg/dL | Renal failure (dose adjust); heart block; myasthenia gravis | Magnesium levels; deep tendon reflexes; renal function | STAT | STAT | - | STAT |
+| Thiamine IV (high-dose) | IV | Acute Wernicke encephalopathy treatment or acute decompensation of WKS | 500 mg :: IV :: TID x 3-5 days :: 500 mg IV TID in 100 mL NS over 30 min x 3-5 days; then 250 mg IV daily x 3-5 days; then transition to oral | Rare anaphylaxis (administer slowly; have epinephrine available) | Anaphylaxis monitoring during infusion; clinical response (mental status, oculomotor function, gait) | STAT | STAT | - | STAT |
+| Thiamine IV (prophylactic - at-risk re-presentation) | IV | Prophylaxis in known WKS patients presenting with acute illness, poor oral intake, or suspected relapse | 200-500 mg :: IV :: TID x 3 days :: 200-500 mg IV TID x 3 days; reassess and transition to oral when tolerating | Rare anaphylaxis | Anaphylaxis monitoring; clinical response | STAT | STAT | - | STAT |
+| Magnesium sulfate IV | IV | Magnesium replacement as essential cofactor for thiamine-dependent enzymes | 1-2 g :: IV :: PRN per level :: 1-2 g IV over 1-2 hours; repeat as needed to maintain Mg >2.0 mg/dL | Renal failure (dose adjust); heart block; myasthenia gravis | Magnesium levels; deep tendon reflexes; renal function | STAT | STAT | - | STAT |
 
 ### 3B. Chronic Thiamine and Nutritional Supplementation
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Thiamine oral (maintenance) | PO | Long-term thiamine supplementation to prevent further neuronal damage and support residual thiamine-dependent function | 100 mg TID; 100 mg BID; 100 mg daily :: PO :: :: Start 100 mg TID for 3-6 months after acute treatment; may reduce to 100 mg daily for indefinite maintenance if ongoing risk factors | None significant | Compliance assessment at each visit; thiamine levels if concern for non-adherence | - | ROUTINE | ROUTINE | - |
-| Thiamine IM | IM | Alternative when oral absorption unreliable (active alcohol use, GI malabsorption, non-compliance with oral) | 250 mg daily; 250 mg 3x/week :: IM :: :: 250 mg IM daily x 5 days then 250 mg IM 3x/week if oral not feasible | Coagulopathy (relative); anticoagulation | Injection site; clinical response; compliance | - | ROUTINE | ROUTINE | - |
-| Folate | PO | Folate deficiency commonly co-occurs in alcohol use disorder; required for DNA synthesis and neuronal health | 1 mg daily :: PO :: :: 1 mg PO daily; indefinite in patients with ongoing alcohol use or poor nutrition | None | Folate levels annually | - | ROUTINE | ROUTINE | - |
-| Multivitamin with minerals | PO | Broad nutritional repletion in chronically malnourished patients | 1 tablet daily :: PO :: :: 1 tablet PO daily; indefinite | None | General nutritional assessment | - | ROUTINE | ROUTINE | - |
-| Vitamin B12 (cyanocobalamin) | PO/IM | B12 deficiency frequently co-occurs; contributes to peripheral neuropathy and cognitive impairment | 1000 mcg daily :: PO :: :: 1000 mcg PO daily if B12 low; or 1000 mcg IM monthly if malabsorption | None | B12 levels; MMA if uncertain | - | ROUTINE | ROUTINE | - |
-| Vitamin D3 (cholecalciferol) | PO | Deficiency common in alcohol use and malnutrition; bone health and potential cognitive benefit | 2000 IU daily; 5000 IU daily :: PO :: :: 2000-5000 IU PO daily based on level; recheck in 3 months | Hypercalcemia; sarcoidosis | 25-OH vitamin D level; calcium | - | ROUTINE | ROUTINE | - |
+| Thiamine oral (maintenance) | PO | Long-term thiamine supplementation to prevent further neuronal damage and support residual thiamine-dependent function | 100 mg :: PO :: TID :: Start 100 mg TID for 3-6 months after acute treatment; may reduce to 100 mg daily for indefinite maintenance if ongoing risk factors | None significant | Compliance assessment at each visit; thiamine levels if concern for non-adherence | - | ROUTINE | ROUTINE | - |
+| Thiamine IM | IM | Alternative when oral absorption unreliable (active alcohol use, GI malabsorption, non-compliance with oral) | 250 mg :: IM :: daily x 5 days, then 3x/week :: 250 mg IM daily x 5 days then 250 mg IM 3x/week if oral not feasible | Coagulopathy (relative); anticoagulation | Injection site; clinical response; compliance | - | ROUTINE | ROUTINE | - |
+| Folate | PO | Folate deficiency commonly co-occurs in alcohol use disorder; required for DNA synthesis and neuronal health | 1 mg :: PO :: daily :: 1 mg PO daily; indefinite in patients with ongoing alcohol use or poor nutrition | None | Folate levels annually | - | ROUTINE | ROUTINE | - |
+| Multivitamin with minerals | PO | Broad nutritional repletion in chronically malnourished patients | 1 tablet :: PO :: daily :: 1 tablet PO daily; indefinite | None | General nutritional assessment | - | ROUTINE | ROUTINE | - |
+| Vitamin B12 (cyanocobalamin) | PO/IM | B12 deficiency frequently co-occurs; contributes to peripheral neuropathy and cognitive impairment | 1000 mcg :: PO :: daily :: 1000 mcg PO daily if B12 low; or 1000 mcg IM monthly if malabsorption | None | B12 levels; MMA if uncertain | - | ROUTINE | ROUTINE | - |
+| Vitamin D3 (cholecalciferol) | PO | Deficiency common in alcohol use and malnutrition; bone health and potential cognitive benefit | 2000 IU :: PO :: daily :: 2000-5000 IU PO daily based on level; recheck in 3 months | Hypercalcemia; sarcoidosis | 25-OH vitamin D level; calcium | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Cognitive and Behavioral Pharmacotherapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Donepezil | PO | Cholinergic augmentation for memory impairment in Korsakoff syndrome; limited but suggestive evidence of benefit in alcohol-related cognitive impairment | 5 mg daily; 10 mg daily :: PO :: :: Start 5 mg PO daily x 4-6 weeks; increase to 10 mg daily if tolerated; assess cognitive response at 3 months | Sick sinus syndrome; AV block; active GI bleeding; severe COPD/asthma | Heart rate (bradycardia); GI symptoms (nausea, diarrhea); weight; MMSE or MoCA at baseline and q3-6 months | - | - | ROUTINE | - |
-| Memantine | PO | NMDA receptor antagonist for moderate-severe cognitive impairment; may reduce excitotoxicity in alcohol-related brain damage | 5 mg daily; 5 mg BID; 10 mg BID :: PO :: :: Start 5 mg PO daily; increase by 5 mg/week; target 10 mg BID; max 20 mg/day | Severe renal impairment (CrCl <30); concurrent use of other NMDA antagonists | Renal function; confusion; dizziness; cognitive assessment q3-6 months | - | - | ROUTINE | - |
-| Sertraline | PO | Depression and apathy commonly comorbid in Korsakoff syndrome; SSRI with evidence in alcohol-related depression | 25 mg daily; 50 mg daily; 100 mg daily; 150 mg daily :: PO :: :: Start 25 mg PO daily; increase by 25-50 mg q1-2 weeks; target 50-150 mg daily; max 200 mg/day | Concurrent MAOIs; uncontrolled narrow-angle glaucoma | Suicidality in first weeks; sodium (SIADH risk); GI bleeding risk with concurrent NSAIDs; mood and function assessment | - | ROUTINE | ROUTINE | - |
-| Mirtazapine | PO | Depression with insomnia, poor appetite, and weight loss in Korsakoff syndrome; promotes appetite and sleep | 7.5 mg qHS; 15 mg qHS; 30 mg qHS :: PO :: :: Start 7.5-15 mg PO qHS; increase by 15 mg q1-2 weeks; max 45 mg qHS; more sedating at lower doses | Concurrent MAOIs; severe hepatic impairment | Weight; metabolic panel; sedation; mood assessment | - | ROUTINE | ROUTINE | - |
-| Trazodone | PO | Insomnia and sleep-wake cycle disruption common in Korsakoff syndrome; avoids benzodiazepine dependence risk | 25 mg qHS; 50 mg qHS; 100 mg qHS :: PO :: :: Start 25-50 mg PO qHS; titrate by 25-50 mg q3-5 days; max 200 mg qHS for insomnia | Priapism risk (rare); concurrent MAOIs; severe hepatic impairment | Orthostatic hypotension; excessive sedation; priapism (counsel patient) | - | ROUTINE | ROUTINE | - |
-| Quetiapine (low-dose) | PO | Agitation, psychosis, or severe behavioral disturbance in Korsakoff syndrome not responsive to non-pharmacologic measures | 12.5 mg BID; 25 mg BID; 50 mg BID :: PO :: :: Start 12.5-25 mg PO BID; titrate slowly by 25 mg q3-5 days; max 200 mg/day; use lowest effective dose | Parkinsonism; QTc prolongation; dementia-related psychosis (FDA black box); uncontrolled diabetes | Metabolic panel; HbA1c; QTc; extrapyramidal symptoms; falls; sedation; annual movement disorder screening | - | ROUTINE | ROUTINE | - |
-| Haloperidol | IV/IM/PO | Acute severe agitation or psychosis in hospitalized WKS patients when immediate control needed | 0.5 mg; 1 mg; 2 mg :: IV/IM :: :: 0.5-2 mg IV/IM q4-6h PRN agitation; max 10 mg/day; switch to oral/atypical ASAP | QTc prolongation; Parkinsonism; dementia-related psychosis (FDA black box); neuroleptic malignant syndrome | QTc monitoring; extrapyramidal symptoms; sedation level; vital signs | URGENT | URGENT | - | URGENT |
+| Donepezil | PO | Cholinergic augmentation for memory impairment in Korsakoff syndrome; limited but suggestive evidence of benefit in alcohol-related cognitive impairment | 5 mg :: PO :: daily :: Start 5 mg PO daily x 4-6 weeks; increase to 10 mg daily if tolerated; assess cognitive response at 3 months | Sick sinus syndrome; AV block; active GI bleeding; severe COPD/asthma | Heart rate (bradycardia); GI symptoms (nausea, diarrhea); weight; MMSE or MoCA at baseline and q3-6 months | - | - | ROUTINE | - |
+| Memantine | PO | NMDA receptor antagonist for moderate-severe cognitive impairment; may reduce excitotoxicity in alcohol-related brain damage | 5 mg :: PO :: daily, titrate to BID :: Start 5 mg PO daily; increase by 5 mg/week; target 10 mg BID; max 20 mg/day | Severe renal impairment (CrCl <30); concurrent use of other NMDA antagonists | Renal function; confusion; dizziness; cognitive assessment q3-6 months | - | - | ROUTINE | - |
+| Sertraline | PO | Depression and apathy commonly comorbid in Korsakoff syndrome; SSRI with evidence in alcohol-related depression | 25 mg :: PO :: daily :: Start 25 mg PO daily; increase by 25-50 mg q1-2 weeks; target 50-150 mg daily; max 200 mg/day | Concurrent MAOIs; uncontrolled narrow-angle glaucoma | Suicidality in first weeks; sodium (SIADH risk); GI bleeding risk with concurrent NSAIDs; mood and function assessment | - | ROUTINE | ROUTINE | - |
+| Mirtazapine | PO | Depression with insomnia, poor appetite, and weight loss in Korsakoff syndrome; promotes appetite and sleep | 7.5 mg :: PO :: qHS :: Start 7.5-15 mg PO qHS; increase by 15 mg q1-2 weeks; max 45 mg qHS; more sedating at lower doses | Concurrent MAOIs; severe hepatic impairment | Weight; metabolic panel; sedation; mood assessment | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia and sleep-wake cycle disruption common in Korsakoff syndrome; avoids benzodiazepine dependence risk | 25 mg :: PO :: qHS :: Start 25-50 mg PO qHS; titrate by 25-50 mg q3-5 days; max 200 mg qHS for insomnia | Priapism risk (rare); concurrent MAOIs; severe hepatic impairment | Orthostatic hypotension; excessive sedation; priapism (counsel patient) | - | ROUTINE | ROUTINE | - |
+| Quetiapine (low-dose) | PO | Agitation, psychosis, or severe behavioral disturbance in Korsakoff syndrome not responsive to non-pharmacologic measures | 12.5 mg :: PO :: BID :: Start 12.5-25 mg PO BID; titrate slowly by 25 mg q3-5 days; max 200 mg/day; use lowest effective dose | Parkinsonism; QTc prolongation; dementia-related psychosis (FDA black box); uncontrolled diabetes | Metabolic panel; HbA1c; QTc; extrapyramidal symptoms; falls; sedation; annual movement disorder screening | - | ROUTINE | ROUTINE | - |
+| Haloperidol | IV/IM/PO | Acute severe agitation or psychosis in hospitalized WKS patients when immediate control needed | 0.5 mg :: IV/IM :: PRN q4-6h :: 0.5-2 mg IV/IM q4-6h PRN agitation; max 10 mg/day; switch to oral/atypical ASAP | QTc prolongation; Parkinsonism; dementia-related psychosis (FDA black box); neuroleptic malignant syndrome | QTc monitoring; extrapyramidal symptoms; sedation level; vital signs | URGENT | URGENT | - | URGENT |
 
 ### 3D. Alcohol Use Disorder Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Naltrexone | PO | Reduction of alcohol craving and relapse prevention in patients with Korsakoff syndrome and ongoing alcohol use disorder | 25 mg daily; 50 mg daily :: PO :: :: Start 25 mg PO daily x 3 days; then 50 mg PO daily; assess tolerability and compliance | Acute hepatitis or hepatic failure (LFTs >3x ULN); concurrent opioid use; opioid dependence | LFTs at baseline and monthly x 3 months then q3 months; compliance; craving assessment | - | - | ROUTINE | - |
-| Naltrexone IM (Vivitrol) | IM | Extended-release formulation for alcohol relapse prevention when oral compliance is poor (common in Korsakoff syndrome due to memory impairment) | 380 mg monthly :: IM :: :: 380 mg IM gluteal injection every 4 weeks; requires opioid-free x 7-10 days | Acute hepatitis; hepatic failure; opioid use/dependence | LFTs at baseline and periodically; injection site reactions; compliance with monthly visits | - | - | ROUTINE | - |
-| Acamprosate | PO | Reduces alcohol craving by modulating glutamate/GABA balance; safe in hepatic impairment (renally cleared) | 666 mg TID :: PO :: :: 666 mg PO TID; reduce to 333 mg TID if CrCl 30-50; contraindicated if CrCl <30 | Severe renal impairment (CrCl <30) | Renal function; diarrhea (common); compliance; craving assessment | - | - | ROUTINE | - |
-| Gabapentin (off-label for alcohol use disorder) | PO | Adjunctive treatment for alcohol craving and insomnia; reduces alcohol consumption; also treats concurrent neuropathic pain | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: :: Start 300 mg PO qHS; titrate by 300 mg q3-5 days; target 600-1800 mg/day divided TID; max 1800 mg/day for AUD | Renal impairment (dose adjust); respiratory depression risk with opioids | Sedation; dizziness; renal function; edema; suicidal ideation | - | ROUTINE | ROUTINE | - |
+| Naltrexone | PO | Reduction of alcohol craving and relapse prevention in patients with Korsakoff syndrome and ongoing alcohol use disorder | 25 mg :: PO :: daily :: Start 25 mg PO daily x 3 days; then 50 mg PO daily; assess tolerability and compliance | Acute hepatitis or hepatic failure (LFTs >3x ULN); concurrent opioid use; opioid dependence | LFTs at baseline and monthly x 3 months then q3 months; compliance; craving assessment | - | - | ROUTINE | - |
+| Naltrexone IM (Vivitrol) | IM | Extended-release formulation for alcohol relapse prevention when oral compliance is poor (common in Korsakoff syndrome due to memory impairment) | 380 mg :: IM :: q4 weeks :: 380 mg IM gluteal injection every 4 weeks; requires opioid-free x 7-10 days | Acute hepatitis; hepatic failure; opioid use/dependence | LFTs at baseline and periodically; injection site reactions; compliance with monthly visits | - | - | ROUTINE | - |
+| Acamprosate | PO | Reduces alcohol craving by modulating glutamate/GABA balance; safe in hepatic impairment (renally cleared) | 666 mg :: PO :: TID :: 666 mg PO TID; reduce to 333 mg TID if CrCl 30-50; contraindicated if CrCl <30 | Severe renal impairment (CrCl <30) | Renal function; diarrhea (common); compliance; craving assessment | - | - | ROUTINE | - |
+| Gabapentin (off-label for alcohol use disorder) | PO | Adjunctive treatment for alcohol craving and insomnia; reduces alcohol consumption; also treats concurrent neuropathic pain | 300 mg :: PO :: TID :: Start 300 mg PO qHS; titrate by 300 mg q3-5 days; target 600-1800 mg/day divided TID; max 1800 mg/day for AUD | Renal impairment (dose adjust); respiratory depression risk with opioids | Sedation; dizziness; renal function; edema; suicidal ideation | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Alcohol Withdrawal Management (If Presenting with Active Withdrawal)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Lorazepam (symptom-triggered) | IV/PO | Alcohol withdrawal prevention and treatment in WKS patients; preferred in hepatic impairment due to no active metabolites | 1 mg; 2 mg; 4 mg :: IV :: :: 1-4 mg IV q15-30 min PRN based on CIWA score (CIWA >10); or 1-2 mg PO q4-6h PRN; max guided by clinical response | Severe respiratory depression without ventilator support; acute narrow-angle glaucoma | CIWA score q4-8h; respiratory status; sedation level; hemodynamics | STAT | STAT | - | STAT |
-| Chlordiazepoxide (scheduled taper) | PO | Alcohol withdrawal prophylaxis when patient is hemodynamically stable and tolerating oral medications | 25 mg QID; 25 mg TID; 25 mg BID; 25 mg daily :: PO :: :: 25-50 mg PO QID day 1-2; taper by 25% daily over 4-7 days; hold for oversedation | Severe hepatic impairment (use lorazepam instead); respiratory depression | CIWA score; sedation level; hepatic function; respiratory status | - | ROUTINE | - | - |
+| Lorazepam (symptom-triggered) | IV/PO | Alcohol withdrawal prevention and treatment in WKS patients; preferred in hepatic impairment due to no active metabolites | 1-2 mg :: IV :: PRN q15-30 min per CIWA :: 1-4 mg IV q15-30 min PRN based on CIWA score (CIWA >10); or 1-2 mg PO q4-6h PRN; max guided by clinical response | Severe respiratory depression without ventilator support; acute narrow-angle glaucoma | CIWA score q4-8h; respiratory status; sedation level; hemodynamics | STAT | STAT | - | STAT |
+| Chlordiazepoxide (scheduled taper) | PO | Alcohol withdrawal prophylaxis when patient is hemodynamically stable and tolerating oral medications | 25 mg :: PO :: QID, then taper :: 25-50 mg PO QID day 1-2; taper by 25% daily over 4-7 days; hold for oversedation | Severe hepatic impairment (use lorazepam instead); respiratory depression | CIWA score; sedation level; hepatic function; respiratory status | - | ROUTINE | - | - |
 
 ---
 
@@ -186,35 +188,37 @@ tags:
 
 ### 4B. Patient and Family Instructions
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Wernicke-Korsakoff syndrome causes brain damage from thiamine (vitamin B1) deficiency, usually related to alcohol use; the memory problems may be permanent but can stabilize with treatment | - | ROUTINE | ROUTINE |
-| Take thiamine supplements exactly as prescribed every day; missing doses can worsen brain damage | - | ROUTINE | ROUTINE |
-| Complete abstinence from alcohol is essential to prevent further brain injury and allow maximum recovery | ROUTINE | ROUTINE | ROUTINE |
-| Memory problems may make it difficult to remember medications; use pill organizers, phone alarms, and caregiver reminders | - | ROUTINE | ROUTINE |
-| Return to the emergency department immediately if confusion worsens, new vision problems develop, or walking becomes significantly more unsteady (may indicate acute decompensation) | ROUTINE | ROUTINE | ROUTINE |
-| Do not drive or operate heavy machinery until formally evaluated by neurology and neuropsychology due to cognitive impairment and impaired judgment | - | ROUTINE | ROUTINE |
-| Eat regular balanced meals including foods high in thiamine (whole grains, legumes, pork, nuts); malnutrition worsens symptoms | - | ROUTINE | ROUTINE |
-| The confabulation (making up stories without realizing it) is part of the illness and is not intentional lying; families should gently redirect rather than confront | - | ROUTINE | ROUTINE |
-| SAMHSA National Helpline 1-800-662-4357 for free alcohol treatment referrals and information | - | - | ROUTINE |
-| Caregivers should attend follow-up appointments to provide collateral history and receive education on disease management | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Wernicke-Korsakoff syndrome causes brain damage from thiamine (vitamin B1) deficiency, usually related to alcohol use; the memory problems may be permanent but can stabilize with treatment | - | ROUTINE | ROUTINE | - |
+| Take thiamine supplements exactly as prescribed every day; missing doses can worsen brain damage | - | ROUTINE | ROUTINE | - |
+| Complete abstinence from alcohol is essential to prevent further brain injury and allow maximum recovery | ROUTINE | ROUTINE | ROUTINE | - |
+| Memory problems may make it difficult to remember medications; use pill organizers, phone alarms, and caregiver reminders | - | ROUTINE | ROUTINE | - |
+| Return to the emergency department immediately if confusion worsens, new vision problems develop, or walking becomes significantly more unsteady (may indicate acute decompensation) | ROUTINE | ROUTINE | ROUTINE | - |
+| Do not drive or operate heavy machinery until formally evaluated by neurology and neuropsychology due to cognitive impairment and impaired judgment | - | ROUTINE | ROUTINE | - |
+| Eat regular balanced meals including foods high in thiamine (whole grains, legumes, pork, nuts); malnutrition worsens symptoms | - | ROUTINE | ROUTINE | - |
+| The confabulation (making up stories without realizing it) is part of the illness and is not intentional lying; families should gently redirect rather than confront | - | ROUTINE | ROUTINE | - |
+| SAMHSA National Helpline 1-800-662-4357 for free alcohol treatment referrals and information | - | - | ROUTINE | - |
+| Caregivers should attend follow-up appointments to provide collateral history and receive education on disease management | - | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle and Rehabilitation
 
-| Recommendation | ED | HOSP | OPD |
-|----------------|:--:|:----:|:---:|
-| Absolute alcohol abstinence to prevent further thiamine depletion and progressive neuronal damage | ROUTINE | ROUTINE | ROUTINE |
-| Structured daily routine with consistent mealtimes, medication times, and activities to support residual memory function through procedural learning | - | ROUTINE | ROUTINE |
-| Environmental modifications including written schedules posted in visible locations, labeled rooms and drawers, and simplified living space to reduce cognitive demand | - | ROUTINE | ROUTINE |
-| Fall prevention measures including non-skid footwear, removal of home hazards, grab bars in bathroom, and assistive device use given persistent gait ataxia | - | ROUTINE | ROUTINE |
-| Supervised medication administration by caregiver or structured program given inability to reliably self-administer due to anterograde amnesia | - | ROUTINE | ROUTINE |
-| Cognitive stimulation through structured activities (puzzles, music therapy, reminiscence therapy) to promote engagement and maintain existing cognitive function | - | ROUTINE | ROUTINE |
-| Nutritional counseling with high-thiamine diet including whole grains, enriched cereals, legumes, lean pork, nuts, and seeds | - | ROUTINE | ROUTINE |
-| Supervised community living or structured residential placement if unable to live independently due to cognitive impairment and safety concerns | - | ROUTINE | ROUTINE |
-| Caregiver respite resources and support groups to prevent caregiver burnout given high care burden of chronic amnestic syndrome | - | - | ROUTINE |
-| Regular exercise program adapted to functional level to improve cardiovascular health, mood, and maintain mobility | - | ROUTINE | ROUTINE |
+| Recommendation | ED | HOSP | OPD | ICU |
+|----------------|:--:|:----:|:---:|:---:|
+| Absolute alcohol abstinence to prevent further thiamine depletion and progressive neuronal damage | ROUTINE | ROUTINE | ROUTINE | - |
+| Structured daily routine with consistent mealtimes, medication times, and activities to support residual memory function through procedural learning | - | ROUTINE | ROUTINE | - |
+| Environmental modifications including written schedules posted in visible locations, labeled rooms and drawers, and simplified living space to reduce cognitive demand | - | ROUTINE | ROUTINE | - |
+| Fall prevention measures including non-skid footwear, removal of home hazards, grab bars in bathroom, and assistive device use given persistent gait ataxia | - | ROUTINE | ROUTINE | - |
+| Supervised medication administration by caregiver or structured program given inability to reliably self-administer due to anterograde amnesia | - | ROUTINE | ROUTINE | - |
+| Cognitive stimulation through structured activities (puzzles, music therapy, reminiscence therapy) to promote engagement and maintain existing cognitive function | - | ROUTINE | ROUTINE | - |
+| Nutritional counseling with high-thiamine diet including whole grains, enriched cereals, legumes, lean pork, nuts, and seeds | - | ROUTINE | ROUTINE | - |
+| Supervised community living or structured residential placement if unable to live independently due to cognitive impairment and safety concerns | - | ROUTINE | ROUTINE | - |
+| Caregiver respite resources and support groups to prevent caregiver burnout given high care burden of chronic amnestic syndrome | - | - | ROUTINE | - |
+| Regular exercise program adapted to functional level to improve cardiovascular health, mood, and maintain mobility | - | ROUTINE | ROUTINE | - |
 
----
+═══════════════════════════════════════════════════════════════
+SECTION B: REFERENCE (Expand as Needed)
+═══════════════════════════════════════════════════════════════
 
 ## 5. DIFFERENTIAL DIAGNOSIS
 
@@ -341,6 +345,12 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Standardized all treatment dosing to structured format: `dose :: route :: frequency :: instructions` across sections 3A-3E
+- Added ICU column to 4B (Patient Instructions) and 4C (Lifestyle) tables for consistent 4-venue coverage
+- Added section dividers (═══) for Section A/B separation
+- Cleaned up dose field to contain only starting dose (removed dose option lists from first field)
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
