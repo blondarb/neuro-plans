@@ -8,7 +8,7 @@ Evidence-based clinical decision support templates for neurological diagnoses â€
 
 <div class="grid cards" markdown>
 
-- :material-stethoscope: **144 Approved Plans**
+- :material-stethoscope: **147 Approved Plans**
 
     Covering 21 neurological categories with structured workup, treatment, and disposition guidance
 

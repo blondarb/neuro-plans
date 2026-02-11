@@ -124,6 +124,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Elevated ICP Management](elevated-icp-management.md) | HOSP, ICU | G93.2, G93.5 |
 | [Brain Death Evaluation](brain-death-evaluation.md) | ED, HOSP, ICU | G93.82 |
 | [Anoxic Brain Injury](anoxic-brain-injury.md) | ED, HOSP, ICU | G93.1, G93.82 |
+| [Acute TBI Management](acute-tbi-management.md) | ED, HOSP, ICU | S06.9X0A, S06.2X0A, S06.5X0A, S06.4X0A, S06.6X0A, S06.1X0A, S06.300A |
 
 ---
 
@@ -223,6 +224,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 |------|------------------|--------|
 | [Wernicke Encephalopathy](wernicke-encephalopathy.md) | ED, HOSP, ICU | E51.2 |
 | [B12 Deficiency Neuropathy](b12-deficiency-neuropathy.md) | ED, HOSP, OPD, ICU | E53.8, G63.4, G32.0 |
+| [Metabolic Encephalopathy](metabolic-encephalopathy.md) | ED, HOSP, OPD, ICU | G93.41, K72.90, K72.91, N18.6, E87.0, E87.1, E16.2, E03.5, E87.2, E87.5, E83.52 |
+| [Neurotoxicology](neurotoxicology.md) | ED, HOSP, OPD, ICU | G92.8, G92.9, T43.8X5A, T36.1X5A, T45.1X5A, G04.81 |
 
 ---
 

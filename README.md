@@ -186,7 +186,7 @@ Output goes to `site/` directory.
 
 | Metric | Count |
 |--------|-------|
-| Approved Plans | 124 |
+| Approved Plans | 147 |
 | Draft Queue | 0 |
 
 See [Plan Queue](docs/drafts/queue.md) for tracking and approval history.
@@ -219,8 +219,8 @@ These templates are decision support tools, not clinical guidelines. They requir
 - Unicode normalization for author name matching (diacritics handling)
 - Guideline/trial citation detection to reduce false positives
 
-**Content Milestone: 124 Approved Plans**
-- All 124 clinical decision support plans approved and deployed
+**Content Milestone: 147 Approved Plans**
+- All 147 clinical decision support plans approved and deployed
 - CPT/synonym enrichment completed across all plans
 - JSON regenerated for all plans; all pass parity checks
 - Plans span 19 categories (Seizures, Stroke, Neuromuscular, Infections, etc.)

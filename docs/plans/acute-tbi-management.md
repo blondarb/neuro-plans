@@ -3,7 +3,7 @@ title: "Acute Traumatic Brain Injury Management"
 description: "Clinical decision support for acute traumatic brain injury diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, ICU"
-status: draft
+status: approved
 tags:
   - traumatic-brain-injury
   - tbi
@@ -17,7 +17,7 @@ tags:
 **VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft
+**STATUS:** Approved
 
 ---
 

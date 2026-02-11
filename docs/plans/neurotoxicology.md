@@ -3,7 +3,7 @@ title: "Neurotoxicology"
 description: "Clinical decision support for drug-induced neurotoxicity diagnosis and management"
 version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
-status: draft
+status: approved
 tags:
   - neurotoxicology
   - toxic-encephalopathy
@@ -11,20 +11,12 @@ tags:
   - critical-care
 ---
 
-<div class="draft-warning-banner">
-  <div class="icon">⚠️</div>
-  <div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
-
 # Neurotoxicology
 
 **VERSION:** 1.0
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft - Pending Review
+**STATUS:** Approved
 
 ---
 

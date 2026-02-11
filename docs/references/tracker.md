@@ -7,9 +7,9 @@ title: Template Tracker
 ## Project Tracker
 
 **Created:** January 15, 2026
-**Last Updated:** February 9, 2026
+**Last Updated:** February 11, 2026
 **Target:** 150+ validated templates
-**Current Status:** 134 templates approved
+**Current Status:** 147 templates approved
 
 ---
 
@@ -231,7 +231,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Neuromuscular Respiratory Failure | J96.00 | 🎯 OPD | Approved |
 | ✅ | Brain Death Evaluation | G93.82 | 🎯 OPD | Approved |
 | ✅ | Anoxic Brain Injury / Prognostication | G93.1 | 🎯 OPD | Approved |
-| ⬜ | Hypertensive Encephalopathy | I67.4 | 🎯 OPD | BP management |
+| ✅ | Hypertensive Encephalopathy | I67.4 | 🎯 OPD | Approved |
 
 ### Other / Miscellaneous
 
@@ -244,7 +244,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ⬜ | Horner Syndrome | G90.2 | 🎯 OPD | Localization |
 | ✅ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Approved |
 | ✅ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Approved |
-| ⬜ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | ED evaluation |
+| ✅ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | Approved |
 | ⬜ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Emerging area |
 | ✅ | Obstructive Sleep Apnea (Neurologic) | G47.33 | 🎯 OPD | Approved |
 | ✅ | Idiopathic Hypersomnia | G47.11 | 🎯 OPD | Approved |
@@ -284,12 +284,12 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Spinal Cord | 2 | 3 | 5 |
 | Autoimmune/Inflammatory | 4 | 0 | 4 |
 | Functional/Psychiatric | 2 | 2 | 4 |
-| Neurocritical Care | 4 | 1 | 5 |
-| Other/Miscellaneous | 14 | 3 | 17 |
+| Neurocritical Care | 5 | 0 | 5 |
+| Other/Miscellaneous | 17 | 2 | 19 |
 | Autonomic & Pain | 5 | 0 | 5 |
-| **TOTAL** | **133** | **30** | **163** |
+| **TOTAL** | **146** | **17** | **163** |
 
-**Note:** 133 approved diagnoses plus Parkinson's Disease (separate Management and New Diagnosis plans) = 134 unique approved plan files.
+**Note:** 146 approved diagnoses plus Parkinson's Disease (separate Management and New Diagnosis plans) = 147 unique approved plan files.
 
 ---
 
@@ -431,6 +431,19 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 132 | Occipital Neuralgia | v1.1 | Feb 9, 2026 |
 | 133 | Complex Regional Pain Syndrome (CRPS) | v1.1 | Feb 9, 2026 |
 | 134 | Neuropathic Pain Management | v1.1 | Feb 9, 2026 |
+| 135 | Hypertensive Encephalopathy | v1.0 | Feb 9, 2026 |
+| 136 | Ulnar Neuropathy | v1.0 | Feb 9, 2026 |
+| 137 | Chemotherapy-Induced Peripheral Neuropathy | v1.0 | Feb 9, 2026 |
+| 138 | Lumbar Spinal Stenosis | v1.0 | Feb 9, 2026 |
+| 139 | New Daily Persistent Headache | v1.0 | Feb 9, 2026 |
+| 140 | Horner Syndrome | v1.0 | Feb 9, 2026 |
+| 141 | Parkinson's Disease — Motor Fluctuations | v1.0 | Feb 9, 2026 |
+| 142 | Parkinson's Disease — Psychosis | v1.0 | Feb 9, 2026 |
+| 143 | Delirium vs Dementia | v1.0 | Feb 9, 2026 |
+| 144 | Autoimmune Dementia / Encephalopathy | v1.0 | Feb 9, 2026 |
+| 145 | Neurotoxicology | v1.0 | Feb 11, 2026 |
+| 146 | Metabolic Encephalopathy | v1.0 | Feb 11, 2026 |
+| 147 | Acute TBI Management | v1.0 | Feb 11, 2026 |
 
 ---
 
@@ -464,7 +477,7 @@ All original Tiers 1-13 are complete. 30 conditions remain. Updated priorities:
 
 ### Tier 14D: Lower Priority / Rare
 
-16-30: ADEM, PML, Diffuse White Matter Disease, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation, Wernicke-Korsakoff Syndrome, Radiation-Induced Neurologic Injury, Myelopathy (General), Subacute Combined Degeneration, Syringomyelia, Functional Movement Disorder, Functional Cognitive Disorder, Traumatic Brain Injury, CTE
+16-29: ADEM, PML, Diffuse White Matter Disease, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation, Wernicke-Korsakoff Syndrome, Radiation-Induced Neurologic Injury, Myelopathy (General), Subacute Combined Degeneration, Syringomyelia, Functional Movement Disorder, Functional Cognitive Disorder, CTE
 
 ---
 
@@ -482,6 +495,12 @@ All original Tiers 1-13 are complete. 30 conditions remain. Updated priorities:
 ---
 
 ## CHANGE LOG
+
+**February 11, 2026**
+- Added 3 new Tier 15 plans: Neurotoxicology, Metabolic Encephalopathy, Acute TBI Management
+- Updated approved count: 134 → 147 (includes backfill of 10 plans from Tier 14)
+- Moved TBI from Tier 14D to-build to approved
+- Updated statistics: 146 approved diagnoses (147 plan files), 17 to build
 
 **February 9, 2026**
 - Major tracker sync: corrected from 103 → 134 approved plans

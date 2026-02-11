@@ -24,9 +24,9 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Neurotoxicology | G92.8, G92.9, T43.8X5A, T36.1X5A, T45.1X5A | `neurotoxicology.md` | `completed` | — | 2026-02-11 |
-| Metabolic Encephalopathy | G93.41, K72.90, K72.91, N18.6, E87.0, E87.1 | `metabolic-encephalopathy.md` | `completed` | — | 2026-02-11 |
-| Acute TBI Management | S06.9X0A, S06.2X0A, S06.5X0A, S06.4X0A, S06.6X0A | `acute-tbi-management.md` | `completed` | — | 2026-02-11 |
+| Neurotoxicology | G92.8, G92.9, T43.8X5A, T36.1X5A, T45.1X5A | `neurotoxicology.md` | `approved` | — | 2026-02-11 |
+| Metabolic Encephalopathy | G93.41, K72.90, K72.91, N18.6, E87.0, E87.1 | `metabolic-encephalopathy.md` | `approved` | — | 2026-02-11 |
+| Acute TBI Management | S06.9X0A, S06.2X0A, S06.5X0A, S06.4X0A, S06.6X0A | `acute-tbi-management.md` | `approved` | — | 2026-02-11 |
 
 ---
 
