@@ -13,12 +13,6 @@ tags:
   - CMT
 ---
 
-<div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
-
 # Hereditary Neuropathy / Charcot-Marie-Tooth Disease (CMT)
 
 **VERSION:** 1.1
@@ -302,7 +296,7 @@ tags:
 |---|----------|-------------|------|
 | 1 | Pareyson D, Marchesi C. Diagnosis, natural history, and management of Charcot-Marie-Tooth disease. Lancet Neurol. 2009;8(7):654-667. | Comprehensive review of CMT classification, diagnosis, and management | [PubMed](https://pubmed.ncbi.nlm.nih.gov/19539236/) |
 | 2 | Shy ME, et al. CMT1 neuropathies: diagnosis and management. Neurology. 2005;64(12):2220-2226. | AAN practice parameter for CMT1 diagnosis and management; genetic testing algorithm | [PubMed](https://pubmed.ncbi.nlm.nih.gov/15668420/) |
-| 3 | Reilly MM, Murphy SM, Laurá M. Charcot-Marie-Tooth disease. J Peripher Nerv Syst. 2011;16(1):1-14. | Updated review of CMT genetics, phenotypes, and emerging therapies | [PubMed](https://pubmed.ncbi.nlm.nih.gov/21504497/) |
+| 3 | Reilly MM, Murphy SM, Laura M. Charcot-Marie-Tooth disease. J Peripher Nerv Syst. 2011;16(1):1-14. | Updated review of CMT genetics, phenotypes, and emerging therapies | [PubMed](https://pubmed.ncbi.nlm.nih.gov/21504497/) |
 | 4 | Pareyson D, et al. Ascorbic acid in Charcot-Marie-Tooth disease type 1A (CMT-TRIAAL and CMT-TRAUK): a double-blind randomised trial. Lancet Neurol. 2011;10(4):320-328. | High-dose ascorbic acid showed NO benefit in CMT1A; large multicenter RCT | [PubMed](https://pubmed.ncbi.nlm.nih.gov/21393063/) |
 | 5 | Attarian S, et al. An exploratory randomised double-blind and placebo-controlled phase 2 study of a combination of baclofen, naltrexone and sorbitol (PXT3003) in patients with Charcot-Marie-Tooth disease type 1A. Orphanet J Rare Dis. 2014;9:199. | PXT3003 showed dose-dependent improvement in ONLS score in CMT1A; phase 3 trial ongoing | [PubMed](https://pubmed.ncbi.nlm.nih.gov/25519680/) |
 | 6 | Corrado B, et al. Evidence-based practice in rehabilitation of Charcot-Marie-Tooth disease: a systematic review. J Exerc Rehabil. 2019;15(4):467-477. | Moderate exercise is safe and beneficial in CMT; avoid high-intensity eccentric exercise; AFOs improve gait | [PubMed](https://pubmed.ncbi.nlm.nih.gov/31523667/) |

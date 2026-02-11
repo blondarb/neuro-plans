@@ -12,12 +12,6 @@ tags:
   - parkinsonism
 ---
 
-<div class="content">
-    <div class="title">DRAFT - Pending Review</div>
-    <div class="description">This plan requires physician review before clinical use.</div>
-  </div>
-</div>
-
 # Corticobasal Degeneration (CBD) / Corticobasal Syndrome (CBS)
 
 **VERSION:** 1.1
