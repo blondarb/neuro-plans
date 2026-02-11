@@ -1,7 +1,7 @@
 ---
 title: "Multifocal Motor Neuropathy (MMN)"
 description: "Clinical decision support for diagnosis and management of multifocal motor neuropathy"
-version: "1.0"
+version: "1.1"
 setting: "ED, HOSP, OPD, ICU"
 status: draft
 tags:
@@ -22,10 +22,10 @@ tags:
 
 # Multifocal Motor Neuropathy (MMN)
 
-**VERSION:** 1.0
+**VERSION:** 1.1
 **CREATED:** February 11, 2026
 **REVISED:** February 11, 2026
-**STATUS:** Draft
+**STATUS:** Revised per checker validation
 
 ---
 
@@ -131,34 +131,40 @@ tags:
 
 ## 3. TREATMENT
 
-### 3A. First-Line Therapy
+### 3A. Acute/First-Line
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| IVIg (Intravenous Immunoglobulin) — induction | IV | First-line and ONLY proven effective therapy for MMN; initiates treatment | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day x 5 days); infuse slowly; premedicate with acetaminophen and diphenhydramine if history of reactions | IgA deficiency with anti-IgA antibodies; recent thromboembolic event (within 3 months); uncompensated HF; severe renal insufficiency | Renal function (Cr before and 48h after); headache; BP; HR; infusion reactions; CBC | - | ROUTINE | ROUTINE | - |
-| IVIg — maintenance | IV | Ongoing treatment; most patients require chronic maintenance IVIg; titrate to lowest effective dose and longest interval | 1 g/kg q2-4wk; 2 g/kg q4-8wk :: IV :: q2-8wk :: Maintenance 1 g/kg every 2-4 weeks OR 2 g/kg every 4-8 weeks; titrate to minimum dose/frequency that maintains strength; many patients need lifelong therapy | IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF; severe renal insufficiency | Renal function before each infusion; grip strength and clinical exam q3mo; headache; thrombotic events; hemolysis (DAT, LDH, haptoglobin) | - | ROUTINE | ROUTINE | - |
+| IVIg (Intravenous Immunoglobulin) — induction | IV | First-line and ONLY proven effective therapy for MMN; initiates treatment | 2 g/kg :: IV :: over 2-5 days :: 2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day x 5 days); infuse slowly; premedicate with acetaminophen and diphenhydramine if history of reactions | IgA deficiency with anti-IgA antibodies; recent thromboembolic event (within 3 months); uncompensated HF; severe renal insufficiency | Renal function (Cr before and 48h after); headache; BP; HR; infusion reactions; CBC | - | STAT | ROUTINE | - |
 
-### 3B. Alternative First-Line
-
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| SCIg (Subcutaneous Immunoglobulin) — maintenance | SQ | Alternative to IVIg for maintenance; same total monthly dose; improved convenience; fewer systemic side effects | Weekly equivalent of monthly IVIg dose :: SQ :: weekly :: Convert monthly IVIg dose to weekly SQ (divide monthly dose by 4; increase total by 20% for bioavailability); self-administered at home; multiple infusion sites; max 50 mL/site | IgA deficiency with anti-IgA antibodies; thrombocytopenia; coagulation disorders | Local injection site reactions; serum IgG trough levels; clinical response q3mo | - | - | ROUTINE | - |
-
-### 3C. Second-Line/Refractory
+### 3B. Symptomatic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Cyclophosphamide | IV/PO | Refractory MMN not responding to IVIg; last resort given toxicity; limited evidence | 1 g/m² IV monthly x 6; or 1-2 mg/kg PO daily :: IV/PO :: monthly or daily :: IV: 1 g/m² monthly x 6 months with MESNA; PO: 1-2 mg/kg daily; very limited evidence; reserve for severe refractory cases | Active infection; pregnancy; severe leukopenia (WBC <4000) | CBC q1-2wk; urinalysis for hematuria; BUN/Cr; LFTs; cumulative dose; fertility counseling | - | EXT | EXT | - |
-| Rituximab | IV | Refractory MMN; case reports/series suggest possible benefit in some patients; not well-established | 375 mg/m² weekly x 4; 1000 mg days 1 and 15 :: IV :: weekly x 4 or days 1+15 :: 375 mg/m² IV weekly x 4 weeks; OR 1000 mg IV days 1 and 15; limited evidence in MMN | Active hepatitis B; severe active infection | CD19/CD20 counts q3mo; immunoglobulins q3mo; infection surveillance | - | EXT | EXT | - |
-| Mycophenolate mofetil | PO | IVIg-sparing agent; limited evidence; may allow reduction in IVIg dose | 500 mg BID; 1000 mg BID :: PO :: BID :: Start 500 mg BID; titrate to 1000 mg BID; trial of 6 months to assess IVIg-sparing effect | Pregnancy (teratogenic); severe GI disease | CBC monthly; LFTs; GI symptoms; pregnancy prevention | - | - | EXT | - |
-| Eculizumab | IV | Investigational for MMN; complement-mediated mechanism targeted; limited data | Per protocol :: IV :: per protocol :: Investigational use only; complement inhibitor; must vaccinate against meningococcus ≥2 weeks before starting | Unresolved Neisseria meningitidis infection | Meningococcal vaccination status; signs of meningitis; CBC; LDH | - | - | EXT | - |
+| Gabapentin | PO | Neuropathic pain (mild pain may occur in some MMN patients despite "pure motor" designation) | 300 mg :: PO :: qHS :: Start 300 mg qHS; titrate by 300 mg q1-3d; target 900-1800 mg/day divided TID; max 3600 mg/day | Severe renal impairment (dose adjust) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
+| Pregabalin | PO | Neuropathic pain; alternative to gabapentin | 75 mg :: PO :: BID :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 600 mg/day | Severe renal impairment (dose adjust) | Sedation; dizziness; weight gain; edema | - | ROUTINE | ROUTINE | - |
+| Duloxetine | PO | Neuropathic pain; SNRI alternative for patients with comorbid depression or anxiety | 30 mg :: PO :: daily :: Start 30 mg daily; increase to 60 mg daily after 1-2 weeks; max 120 mg/day | Severe hepatic impairment; MAOI use (within 14 days); uncontrolled narrow-angle glaucoma; CrCl <30 | BP; nausea; serotonin syndrome if combined with other serotonergic agents; LFTs | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Neuropathic pain; insomnia associated with chronic neuropathy | 10-25 mg :: PO :: qHS :: Start 10-25 mg qHS; increase by 10-25 mg q1-2 weeks; max 150 mg/day | Cardiac arrhythmia; recent MI; urinary retention; angle-closure glaucoma; concurrent MAOI | ECG if dose >100 mg/day or cardiac risk; anticholinergic side effects; QTc monitoring | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | Musculoskeletal pain from compensatory overuse; mild discomfort; IVIg premedication | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6-8h PRN; max 4 g/day (2 g/day if hepatic impairment) | Severe liver disease; hepatic failure | LFTs if prolonged use | ROUTINE | ROUTINE | ROUTINE | ROUTINE |
+| Modafinil | PO | Fatigue associated with chronic illness and IVIg therapy | 100 mg :: PO :: qAM :: Start 100 mg qAM; may increase to 200 mg qAM; take early morning to avoid insomnia | Severe hepatic impairment; history of left ventricular hypertrophy; mitral valve prolapse with stimulant use | BP; HR; sleep quality; psychiatric symptoms | - | - | ROUTINE | - |
+| Mexiletine | PO | Muscle cramps and fasciculations in affected limbs | 150 mg :: PO :: BID :: Start 150 mg BID; may increase to 200 mg TID; max 900 mg/day; take with food | Second- or third-degree AV block; hepatic failure | ECG at baseline and dose changes; LFTs; GI tolerance | - | - | ROUTINE | - |
+| Magnesium oxide | PO | Muscle cramps; adjunctive for cramp reduction | 400 mg :: PO :: daily :: 400 mg PO daily to BID; may increase to 400 mg BID | Renal insufficiency (use with caution; monitor Mg level); GI obstruction | Serum magnesium if renal impairment; GI tolerance (loose stools) | - | ROUTINE | ROUTINE | - |
 
-### 3D. Symptomatic Treatments
+### 3C. Maintenance/Chronic
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 |-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
-| Gabapentin | PO | Neuropathic pain (mild pain may occur in some MMN patients despite "pure motor" designation) | 300 mg qHS; 300 mg TID; 600 mg TID :: PO :: qHS-TID :: Start 300 mg qHS; titrate by 300 mg q1-3d; max 3600 mg/day divided TID | Severe renal impairment (dose adjust) | Sedation; dizziness; edema; renal function | - | ROUTINE | ROUTINE | - |
-| Pregabalin | PO | Neuropathic pain; alternative to gabapentin | 75 mg BID; 150 mg BID :: PO :: BID :: Start 75 mg BID; increase to 150 mg BID after 1 week; max 600 mg/day | Severe renal impairment (dose adjust) | Sedation; dizziness; weight gain; edema | - | ROUTINE | ROUTINE | - |
+| IVIg — maintenance | IV | Ongoing treatment; most patients require chronic maintenance IVIg; titrate to lowest effective dose and longest interval | 1 g/kg :: IV :: q2-4wk :: Maintenance 1 g/kg every 2-4 weeks OR 2 g/kg every 4-8 weeks; titrate to minimum dose/frequency that maintains strength; many patients need lifelong therapy | IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF; severe renal insufficiency | Renal function before each infusion; grip strength and clinical exam q3mo; headache; thrombotic events; hemolysis (DAT, LDH, haptoglobin) | - | ROUTINE | ROUTINE | - |
+| SCIg (Subcutaneous Immunoglobulin) — maintenance | SQ | Alternative to IVIg for maintenance; same total monthly dose; improved convenience; fewer systemic side effects | Weekly equivalent :: SQ :: weekly :: Convert monthly IVIg dose to weekly SQ (divide monthly dose by 4; increase total by 20% for bioavailability); self-administered at home; multiple infusion sites; max 50 mL/site | IgA deficiency with anti-IgA antibodies; thrombocytopenia; coagulation disorders | Local injection site reactions; serum IgG trough levels; clinical response q3mo | - | - | ROUTINE | - |
+
+### 3D. Second-Line/Disease-Modifying (Refractory)
+
+| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Cyclophosphamide | IV/PO | Refractory MMN not responding to IVIg; last resort given toxicity; limited evidence | 1 g/m² :: IV :: monthly x 6 :: IV: 1 g/m² monthly x 6 months with MESNA; PO: 1-2 mg/kg daily; very limited evidence; reserve for severe refractory cases | CBC, LFTs, BUN/Cr, urinalysis at baseline; fertility counseling; pregnancy test | Active infection; pregnancy; severe leukopenia (WBC <4000) | CBC q1-2wk; urinalysis for hematuria; BUN/Cr; LFTs; cumulative dose | - | EXT | EXT | - |
+| Rituximab | IV | Refractory MMN; case reports/series suggest possible benefit in some patients; not well-established | 375 mg/m² :: IV :: weekly x 4 :: 375 mg/m² IV weekly x 4 weeks; OR 1000 mg IV days 1 and 15; limited evidence in MMN | Hepatitis B/C screening; quantitative immunoglobulins; CD19/CD20 counts; vaccination update | Active hepatitis B; severe active infection | CD19/CD20 counts q3mo; immunoglobulins q3mo; infection surveillance | - | EXT | EXT | - |
+| Mycophenolate mofetil | PO | IVIg-sparing agent; limited evidence; may allow reduction in IVIg dose | 500 mg :: PO :: BID :: Start 500 mg BID; titrate to 1000 mg BID; trial of 6 months to assess IVIg-sparing effect | CBC, LFTs at baseline; pregnancy test; contraception counseling | Pregnancy (teratogenic); severe GI disease | CBC monthly; LFTs; GI symptoms; pregnancy prevention | - | - | EXT | - |
+| Eculizumab | IV | Investigational for MMN; complement-mediated mechanism targeted; limited data | Per protocol :: IV :: per protocol :: Investigational use only; complement inhibitor; must vaccinate against meningococcus ≥2 weeks before starting | Meningococcal vaccination ≥2 weeks prior; CBC; complement levels | Unresolved Neisseria meningitidis infection | Meningococcal vaccination status; signs of meningitis; CBC; LDH | - | - | EXT | - |
 
 ### CRITICAL CONTRAINDICATIONS
 
@@ -174,21 +180,25 @@ tags:
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
-| Neuromuscular specialist/neurologist for electrodiagnostic testing with conduction block studies, anti-GM1 antibody interpretation, and IVIg management | - | ROUTINE | ROUTINE | - |
-| Infusion center referral for outpatient IVIg or SCIg administration and long-term maintenance therapy | - | - | ROUTINE | - |
+| Neuromuscular specialist/neurologist for electrodiagnostic testing with conduction block studies, anti-GM1 antibody interpretation, and IVIg management | URGENT | ROUTINE | ROUTINE | URGENT |
+| Infusion center referral for outpatient IVIg or SCIg administration and long-term maintenance therapy | - | ROUTINE | ROUTINE | - |
 | Physical therapy for hand and upper extremity strengthening; grip strength optimization; adaptive strategies for weakness | - | ROUTINE | ROUTINE | - |
 | Occupational therapy for hand function, adaptive equipment, and workplace modifications given predominant upper limb involvement | - | ROUTINE | ROUTINE | - |
-| Pulmonology if respiratory symptoms develop (rare phrenic nerve involvement) | - | EXT | EXT | - |
+| Pulmonology if respiratory symptoms develop (rare phrenic nerve involvement) | - | EXT | EXT | EXT |
+| Social work / case management for insurance authorization of IVIg (costly therapy); disability documentation; home infusion coordination | - | ROUTINE | ROUTINE | - |
+| Pain management referral if neuropathic pain is refractory to first-line agents | - | - | EXT | - |
 
 ### 4B. Patient Instructions
 
 | Recommendation | ED | HOSP | OPD | ICU |
 |----------------|:--:|:----:|:---:|:---:|
+| Return to ED or call 911 if: sudden severe weakness, difficulty breathing, or inability to use hands for daily tasks — these may indicate acute deterioration requiring urgent IVIg | ROUTINE | ROUTINE | ROUTINE | - |
 | Report any new weakness in arms or legs, increased difficulty with grip, or worsening of existing weakness promptly, as this may indicate need for IVIg dose adjustment | - | ROUTINE | ROUTINE | - |
-| IVIg infusions are lifelong in most patients; do not skip or delay scheduled infusions, as strength will decline without regular treatment | - | - | ROUTINE | - |
+| IVIg infusions are lifelong in most patients; do not skip or delay scheduled infusions, as strength will decline without regular treatment | - | ROUTINE | ROUTINE | - |
 | Report headache, fever, chest pain, leg swelling, or shortness of breath after IVIg infusion (may indicate aseptic meningitis, thrombotic event, or hemolysis) | - | ROUTINE | ROUTINE | - |
-| Do NOT take corticosteroids (prednisone, methylprednisolone) unless specifically directed by your neurologist — steroids can worsen MMN | - | ROUTINE | ROUTINE | - |
+| Do NOT take corticosteroids (prednisone, methylprednisolone) unless specifically directed by your neurologist — steroids can worsen MMN | ROUTINE | ROUTINE | ROUTINE | - |
 | Maintain grip strength diary or functional assessments to help guide IVIg dosing adjustments at each visit | - | - | ROUTINE | - |
+| Inform all healthcare providers that you have MMN and that corticosteroids and plasma exchange are contraindicated for your condition | ROUTINE | ROUTINE | ROUTINE | - |
 
 ### 4C. Lifestyle & Prevention
 
@@ -197,7 +207,8 @@ tags:
 | Regular upper extremity and hand exercises to maintain and improve grip strength alongside IVIg therapy | - | ROUTINE | ROUTINE | - |
 | Ergonomic workplace modifications to compensate for hand weakness: adaptive grip tools, voice-to-text software, modified keyboards | - | - | ROUTINE | - |
 | Adequate hydration before and during IVIg infusions to reduce risk of headache and renal complications | - | ROUTINE | ROUTINE | - |
-| Annual influenza vaccination; pneumococcal vaccination; avoid live vaccines during immunosuppression if on cyclophosphamide or rituximab | - | - | ROUTINE | - |
+| Annual influenza vaccination; pneumococcal vaccination; avoid live vaccines during immunosuppression if on cyclophosphamide or rituximab | - | ROUTINE | ROUTINE | - |
+| Fall prevention measures: remove tripping hazards at home; use assistive devices if lower limb weakness develops; non-slip mats in bathroom | - | ROUTINE | ROUTINE | - |
 
 ---
 
@@ -274,6 +285,19 @@ tags:
 ---
 
 ## CHANGE LOG
+
+**v1.1 (February 11, 2026)**
+- Restructured treatment subsections to standard labeling: 3A Acute/First-Line, 3B Symptomatic, 3C Maintenance/Chronic, 3D Second-Line/Disease-Modifying (Refractory)
+- Separated IVIg induction (3A) from IVIg maintenance + SCIg (3C) for clinical clarity
+- Expanded symptomatic treatments (3B) from 2 to 8 drugs: added duloxetine, amitriptyline, acetaminophen, modafinil (fatigue), mexiletine (cramps), magnesium oxide (cramps)
+- Added Pre-Treatment Requirements column to Section 3D per standard DMT format
+- Upgraded IVIg induction priority from ROUTINE to STAT in HOSP setting
+- Fixed structured dosing format for gabapentin and pregabalin (standardized first field)
+- Added neurology referral ED/ICU coverage (URGENT) in Section 4A
+- Added social work/case management and pain management referrals to 4A (now 7 items)
+- Added return precautions and provider notification instructions to 4B (now 7 items)
+- Added fall prevention measures to 4C (now 5 items)
+- Improved setting coverage: added ED entries for corticosteroid warning and return precautions in 4B
 
 **v1.0 (February 11, 2026)**
 - Initial template creation
