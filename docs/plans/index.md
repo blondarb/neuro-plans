@@ -69,6 +69,10 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Plexopathy](plexopathy.md) | ED, HOSP, OPD, ICU | G54.0 |
 | [Ulnar Neuropathy](ulnar-neuropathy.md) | ED, HOSP, OPD, ICU | ** G56.20 (Ulnar nerve lesion, unspecified upper limb), G56.21 (Ulnar nerve lesion, right upper limb), G56.22 (Ulnar nerve lesion, left upper limb), G56.23 (Ulnar nerve lesion, bilateral upper limbs) |
 | [Chemotherapy-Induced Peripheral Neuropathy (CIPN)](chemotherapy-induced-neuropathy.md) | ED, HOSP, OPD, ICU | ** G62.0 (Drug-induced polyneuropathy), T45.1X5A (Adverse effect of antineoplastic and immunosuppressive drugs, initial encounter), G62.9 (Polyneuropathy, unspecified) |
+| [Vasculitic Neuropathy](vasculitic-neuropathy.md) | ED, HOSP, OPD, ICU | G63, M31.7, M30.0 |
+| [Multifocal Motor Neuropathy (MMN)](multifocal-motor-neuropathy.md) | ED, HOSP, OPD, ICU | G61.82 |
+| [Muscular Dystrophy (Adult)](muscular-dystrophy-adult.md) | ED, HOSP, OPD, ICU | G71.0, G71.01, G71.02 |
+| [Hereditary Neuropathy / CMT](hereditary-neuropathy-cmt.md) | ED, HOSP, OPD | G60.0, G60.1, G60.8 |
 
 ---
 
@@ -88,6 +92,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Botulism](botulism.md) | ED, HOSP, OPD, ICU | A05.1 |
 | [Neurocysticercosis](neurocysticercosis.md) | ED, HOSP, OPD, ICU | B69.0 |
 | [HIV-Associated Neurocognitive Disorder](hiv-associated-neurocognitive-disorder.md) | ED, HOSP, OPD | B20 |
+| [PML (Progressive Multifocal Leukoencephalopathy)](pml.md) | ED, HOSP, OPD, ICU | A81.2 |
 
 ---
 
@@ -137,6 +142,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Optic Neuritis](optic-neuritis.md) | ED, HOSP, OPD | H46.9, H46.00, G36.0 |
 | [NMOSD](nmosd.md) | ED, HOSP, OPD, ICU | G36.0, G36.9 |
 | [MOGAD](mogad.md) | ED, HOSP, OPD, ICU | G36.9, G36.0 |
+| [ADEM](adem.md) | ED, HOSP, OPD, ICU | G04.81, G04.00 |
 
 ---
 
@@ -177,6 +183,8 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Ataxia Evaluation](ataxia-evaluation.md) | ED, HOSP, OPD | R27.0, G11.9 |
 | [Tics / Tourette Syndrome](tics-tourette-syndrome.md) | ED, HOSP, OPD | F95.2 |
 | [Tremor, Unspecified](tremor-unspecified.md) | ED, HOSP, OPD, ICU | R25.1 |
+| [Corticobasal Degeneration (CBD)](corticobasal-degeneration.md) | ED, HOSP, OPD, ICU | G31.85 |
+| [Chorea Evaluation](chorea-evaluation.md) | ED, HOSP, OPD, ICU | G25.5, G25.4, G10 |
 | [Parkinson's Disease — Motor Fluctuations and Dyskinesia](parkinsons-motor-fluctuations.md) | ED, HOSP, OPD, ICU | ** G20.A2 (Parkinson's disease without dyskinesia, with fluctuations), G20.B2 (Parkinson's disease with dyskinesia, with fluctuations), G20.A1 (Parkinson's disease without dyskinesia, without fluctuations), G20.B1 (Parkinson's disease with dyskinesia, without fluctuations), G24.02 (Drug-induced acute dystonia), G25.1 (Drug-induced tremor) |
 | [Parkinson's Disease — Psychosis](parkinsons-psychosis.md) | ED, HOSP, OPD | ** F06.0 (Psychotic disorder due to known physiological condition with hallucinations), F06.2 (Psychotic disorder due to known physiological condition with delusions), G20.A1 (Parkinson's disease without dyskinesia, without fluctuations), G20.C (Parkinsonism, unspecified), F03.90 (Dementia, unspecified, without behavioral disturbance) |
 
@@ -289,6 +297,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Occipital Neuralgia](occipital-neuralgia.md) | ED, HOSP, OPD, ICU | M54.81 |
 | [Complex Regional Pain Syndrome (CRPS)](crps.md) | ED, HOSP, OPD, ICU | G90.50, G90.51, G90.52, G56.40, G57.70 |
 | [Neuropathic Pain Management](neuropathic-pain-management.md) | ED, HOSP, OPD, ICU | G89.29, G89.4, G89.0 |
+| [Autonomic Neuropathy](autonomic-neuropathy.md) | ED, HOSP, OPD, ICU | G90.09, G90.3, G99.0 |
 
 ---
 
@@ -301,6 +310,7 @@ Evidence-based clinical decision support templates for neurological diagnoses. A
 | [Nystagmus Evaluation](nystagmus-evaluation.md) | ED, HOSP, OPD, ICU | H55.00 |
 | [Tinnitus Evaluation](tinnitus-evaluation.md) | ED, HOSP, OPD, ICU | H93.19 |
 | [Paresthesia / Numbness / Tingling](paresthesia-numbness-tingling.md) | ED, HOSP, OPD, ICU | R20.2 |
+| [Gait Disorder Evaluation](gait-disorder-evaluation.md) | ED, HOSP, OPD, ICU | R26.9, R26.0, R26.1 |
 
 ---
 
