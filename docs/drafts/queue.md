@@ -99,19 +99,19 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | Hereditary Neuropathy / CMT | G60.0, G60.1, G60.8 | `hereditary-neuropathy-cmt.md` | `approved` | — | 2026-02-11 |
 | Gait Disorder Evaluation | R26.9, R26.0, R26.1 | `gait-disorder-evaluation.md` | `approved` | — | 2026-02-11 |
 
-### FINAL BATCH — Tier 15 (New drafts — pending validation)
+### FINAL BATCH — Tier 15 (All approved)
 
 | Plan | ICD-10 | File | Status | Session | Last Updated |
 |------|--------|------|--------|---------|--------------|
-| Diffuse White Matter Disease | R53.1, G93.49 | `diffuse-white-matter-disease.md` | `completed` | — | 2026-02-11 |
-| Wernicke-Korsakoff Syndrome | F10.96, E51.2 | `wernicke-korsakoff-syndrome.md` | `completed` | — | 2026-02-11 |
-| Radiation-Induced Neurologic Injury | G93.89, T66.XXXA | `radiation-neurologic-injury.md` | `completed` | — | 2026-02-11 |
-| Myelopathy — General Evaluation | G99.2, G95.9 | `myelopathy-general.md` | `completed` | — | 2026-02-11 |
-| Subacute Combined Degeneration | E53.8, G32.0 | `subacute-combined-degeneration.md` | `completed` | — | 2026-02-11 |
-| Syringomyelia | G95.0 | `syringomyelia.md` | `completed` | — | 2026-02-11 |
-| Functional Movement Disorder | F44.4 | `functional-movement-disorder.md` | `completed` | — | 2026-02-11 |
-| Functional Cognitive Disorder | F44.89, R41.3 | `functional-cognitive-disorder.md` | `completed` | — | 2026-02-11 |
-| Chronic Traumatic Encephalopathy (CTE) | G31.89 | `chronic-traumatic-encephalopathy.md` | `completed` | — | 2026-02-11 |
+| Diffuse White Matter Disease | R53.1, G93.49 | `diffuse-white-matter-disease.md` | `approved` | — | 2026-02-12 |
+| Wernicke-Korsakoff Syndrome | F10.96, E51.2 | `wernicke-korsakoff-syndrome.md` | `approved` | — | 2026-02-12 |
+| Radiation-Induced Neurologic Injury | G93.89, T66.XXXA | `radiation-neurologic-injury.md` | `approved` | — | 2026-02-12 |
+| Myelopathy — General Evaluation | G99.2, G95.9 | `myelopathy-general.md` | `approved` | — | 2026-02-12 |
+| Subacute Combined Degeneration | E53.8, G32.0 | `subacute-combined-degeneration.md` | `approved` | — | 2026-02-12 |
+| Syringomyelia | G95.0 | `syringomyelia.md` | `approved` | — | 2026-02-12 |
+| Functional Movement Disorder | F44.4 | `functional-movement-disorder.md` | `approved` | — | 2026-02-12 |
+| Functional Cognitive Disorder | F44.89, R41.3 | `functional-cognitive-disorder.md` | `approved` | — | 2026-02-12 |
+| Chronic Traumatic Encephalopathy (CTE) | G31.89 | `chronic-traumatic-encephalopathy.md` | `approved` | — | 2026-02-12 |
 
 ---
 
@@ -273,6 +273,15 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 | 152 | Muscular Dystrophy (Adult) | [`muscular-dystrophy-adult.md`](../plans/muscular-dystrophy-adult.md) | 2026-02-11 | 90% (54/60) |
 | 153 | Hereditary Neuropathy / CMT | [`hereditary-neuropathy-cmt.md`](../plans/hereditary-neuropathy-cmt.md) | 2026-02-11 | 92% (55/60) |
 | 154 | Gait Disorder Evaluation | [`gait-disorder-evaluation.md`](../plans/gait-disorder-evaluation.md) | 2026-02-11 | 90% (54/60) |
+| 155 | Diffuse White Matter Disease | [`diffuse-white-matter-disease.md`](../plans/diffuse-white-matter-disease.md) | 2026-02-12 | 90%+ |
+| 156 | Wernicke-Korsakoff Syndrome | [`wernicke-korsakoff-syndrome.md`](../plans/wernicke-korsakoff-syndrome.md) | 2026-02-12 | 90%+ |
+| 157 | Radiation-Induced Neurologic Injury | [`radiation-neurologic-injury.md`](../plans/radiation-neurologic-injury.md) | 2026-02-12 | 90%+ |
+| 158 | Myelopathy — General Evaluation | [`myelopathy-general.md`](../plans/myelopathy-general.md) | 2026-02-12 | 90%+ |
+| 159 | Subacute Combined Degeneration | [`subacute-combined-degeneration.md`](../plans/subacute-combined-degeneration.md) | 2026-02-12 | 90%+ |
+| 160 | Syringomyelia | [`syringomyelia.md`](../plans/syringomyelia.md) | 2026-02-12 | 90%+ |
+| 161 | Functional Movement Disorder | [`functional-movement-disorder.md`](../plans/functional-movement-disorder.md) | 2026-02-12 | 90%+ |
+| 162 | Functional Cognitive Disorder | [`functional-cognitive-disorder.md`](../plans/functional-cognitive-disorder.md) | 2026-02-12 | 90%+ |
+| 163 | Chronic Traumatic Encephalopathy (CTE) | [`chronic-traumatic-encephalopathy.md`](../plans/chronic-traumatic-encephalopathy.md) | 2026-02-12 | 90%+ |
 
 ---
 
@@ -280,15 +289,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 
 | Plan | File | Completed Date | Final Score |
 |------|------|----------------|-------------|
-| Diffuse White Matter Disease | `diffuse-white-matter-disease.md` | 2026-02-11 | 90%+ |
-| Wernicke-Korsakoff Syndrome | `wernicke-korsakoff-syndrome.md` | 2026-02-11 | 90%+ |
-| Radiation-Induced Neurologic Injury | `radiation-neurologic-injury.md` | 2026-02-11 | 90%+ |
-| Myelopathy — General Evaluation | `myelopathy-general.md` | 2026-02-11 | 90%+ |
-| Subacute Combined Degeneration | `subacute-combined-degeneration.md` | 2026-02-11 | 90%+ |
-| Syringomyelia | `syringomyelia.md` | 2026-02-11 | 90%+ |
-| Functional Movement Disorder | `functional-movement-disorder.md` | 2026-02-11 | 90%+ |
-| Functional Cognitive Disorder | `functional-cognitive-disorder.md` | 2026-02-11 | 90%+ |
-| Chronic Traumatic Encephalopathy (CTE) | `chronic-traumatic-encephalopathy.md` | 2026-02-11 | 90%+ |
+| *(all plans approved — queue empty)* | — | — | — |
 
 ---
 
@@ -297,7 +298,7 @@ Plans in this queue need to go through the skills pipeline (checker → rebuilde
 - **TIA duplicate resolved** (2026-01-30): `tia.md` removed, canonical file is `transient-ischemic-attack.md`.
 - **Parkinson's Disease** and **Parkinson's Disease - New Diagnosis** are separate plans (general vs. new diagnosis workup).
 - **Myasthenia Gravis** has three variants: Crisis (approved), New Diagnosis (approved), and Outpatient (approved).
-- Queue updated 2026-02-11. Total approved: 154 plans. 9 final drafts completed, awaiting physician approval. Backlog cleared.
+- Queue updated 2026-02-12. Total approved: 163 plans. All conditions built and approved. Backlog fully cleared.
 - **Tier 14C-D expansion** (2026-02-11): 10 new drafts built, rebuilt, and validated — Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation. All 10 scored 90%+ (54-55/60). Awaiting physician approval.
 - **Tier 14 queued** (2026-02-09): 10 plans across Tier 14A (Lumbar Stenosis, Ulnar Neuropathy, Chemo-Induced Neuropathy, PD Motor Fluctuations, Delirium vs Dementia) and Tier 14B (NDPH, Horner Syndrome, Hypertensive Encephalopathy, PD Psychosis, Autoimmune Dementia). 20 more conditions remain in Tier 14C-D (see tracker).
 - **Autonomic & Pain expansion** (2026-02-09): 5 Tier 13 drafts approved — POTS, Neurogenic Orthostatic Hypotension, Occipital Neuralgia, CRPS, Neuropathic Pain Management. New "Autonomic & Pain Disorders" nav section created.
