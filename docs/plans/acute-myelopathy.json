@@ -622,25 +622,17 @@
         {
           "item": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Empiric treatment of suspected inflammatory myelitis with non-compressive cord lesion",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Iv Methylprednisolone 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Iv Methylprednisolone 1000 mg IV daily x3-5 days"
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 3-5 days (infuse over 1-2h). Start empirically if inflammatory myelitis suspected (non-compressive cord lesion on MRI). Do NOT wait for antibody results",
-            "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
+            "orderSentence": "IV methylprednisolone (empiric — inflammatory myelitis) (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active untreated infection (relative — treat infection concurrently if needed); uncontrolled diabetes",
           "monitoring": "Glucose q6h; BP; GI prophylaxis (PPI); insomnia; psychosis (rare); weight; taper plan",
@@ -652,7 +644,7 @@
         {
           "item": "Emergent surgical decompression",
           "route": "-",
-          "indication": "-",
+          "indication": "Compressive myelopathy from abscess, tumor, disc herniation, or hematoma",
           "dosing": {
             "doseOptions": [
               {
@@ -674,7 +666,7 @@
         {
           "item": "Empiric IV antibiotics (if epidural abscess suspected)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Empiric coverage for suspected epidural abscess targeting S. aureus",
           "dosing": {
             "doseOptions": [
               {
@@ -696,21 +688,17 @@
         {
           "item": "DVT prophylaxis: Enoxaparin",
           "route": "SC",
-          "indication": "-",
+          "indication": "Venous thromboembolism prophylaxis in immobilized myelopathy patients",
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg BID",
-                "orderSentence": "Dvt Prophylaxis: Enoxaparin 30 mg SC BID"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Dvt Prophylaxis: Enoxaparin 40 mg SC daily"
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily (start post-operatively or when not bleeding; within 24-48h)",
-            "orderSentence": "Dvt Prophylaxis: Enoxaparin 30 mg SC BID"
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
           },
           "contraindications": "Active bleeding; post-surgical (timing per surgeon); coagulopathy",
           "monitoring": "Platelets q3 days",
@@ -722,7 +710,7 @@
         {
           "item": "Pneumatic compression devices",
           "route": "-",
-          "indication": "-",
+          "indication": "DVT/PE prevention in high-risk spinal cord injury patients",
           "dosing": {
             "doseOptions": [
               {
@@ -744,7 +732,7 @@
         {
           "item": "Bladder management",
           "route": "-",
-          "indication": "-",
+          "indication": "Urinary retention management in acute myelopathy",
           "dosing": {
             "doseOptions": [
               {
@@ -766,7 +754,7 @@
         {
           "item": "Bowel management",
           "route": "-",
-          "indication": "-",
+          "indication": "Neurogenic bowel care and constipation prevention in myelopathy",
           "dosing": {
             "doseOptions": [
               {
@@ -811,7 +799,7 @@
         },
         {
           "item": "IVIG (CPT 96365)",
-          "route": "-",
+          "route": "IV",
           "indication": "Alternative to PLEX if PLEX unavailable; MOGAD (may be preferred); steroid-refractory",
           "dosing": {
             "doseOptions": [
@@ -833,7 +821,7 @@
         },
         {
           "item": "Oral prednisone taper (after IV pulse)",
-          "route": "IV",
+          "route": "PO",
           "indication": "Inflammatory myelitis; NMOSD",
           "dosing": {
             "doseOptions": [
@@ -860,29 +848,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "300 mg PO qHS → titrate to 900-1800 mg TID",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Severe renal impairment",
           "monitoring": "Sedation; dizziness",
@@ -898,25 +870,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Baclofen 5 mg PO TID"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Baclofen 10 mg PO TID"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Baclofen 20 mg PO TID"
-              },
-              {
-                "text": "20 mg QID",
-                "orderSentence": "Baclofen 20 mg PO QID"
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO TID; increase by 5 mg/dose q3 days; max 80 mg/day",
-            "orderSentence": "Baclofen 5 mg PO TID"
+            "orderSentence": "Baclofen 5 mg PO"
           },
           "contraindications": "Seizure history (lowers threshold); abrupt withdrawal causes seizures",
           "monitoring": "Sedation; falls; do NOT stop abruptly",
@@ -932,21 +892,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg TID",
-                "orderSentence": "Tizanidine 2 mg PO TID"
-              },
-              {
-                "text": "4 mg TID",
-                "orderSentence": "Tizanidine 4 mg PO TID"
-              },
-              {
-                "text": "8 mg TID",
-                "orderSentence": "Tizanidine 8 mg PO TID"
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "2 mg PO TID; max 36 mg/day",
-            "orderSentence": "Tizanidine 2 mg PO TID"
+            "orderSentence": "Tizanidine 2 mg PO"
           },
           "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (ciprofloxacin)",
           "monitoring": "LFTs; sedation; hypotension",
@@ -962,25 +914,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Oxybutynin 5 mg PO BID"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Oxybutynin 5 mg PO TID"
-              },
-              {
-                "text": "10 mg daily XL",
-                "orderSentence": "Oxybutynin 10 mg PO daily XL"
-              },
-              {
-                "text": "15 mg daily XL",
-                "orderSentence": "Oxybutynin 15 mg PO daily XL"
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO BID-TID",
-            "orderSentence": "Oxybutynin 5 mg PO BID"
+            "orderSentence": "Oxybutynin 5 mg PO"
           },
           "contraindications": "Urinary retention; angle-closure glaucoma",
           "monitoring": "Anticholinergic side effects; PVR",
@@ -996,25 +936,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg q6h PRN",
-                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
-              },
-              {
-                "text": "500 mg q6h PRN",
-                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
-              },
-              {
-                "text": "650 mg q6h PRN",
-                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
-              },
-              {
-                "text": "1000 mg q6h PRN",
-                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO q6h; max 4g/day",
-            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
           },
           "contraindications": "Hepatic disease",
           "monitoring": "LFTs",
@@ -1028,7 +956,7 @@
         {
           "item": "MS disease-modifying therapy",
           "route": "-",
-          "indication": "-",
+          "indication": "Relapse prevention in confirmed multiple sclerosis with myelitis",
           "dosing": {
             "doseOptions": [
               {
@@ -1050,26 +978,18 @@
         },
         {
           "item": "Rituximab",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "NMOSD or MOGAD relapse prevention via B-cell depletion",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 PO weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg PO q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg PO q6mo"
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab 375 mg/m2 IV"
               }
             ],
-            "route": "PO",
+            "route": "IV",
             "instructions": "375 mg/m2 weekly x 4 weeks OR 1000 mg x 2 (14 days apart); maintenance q6 months",
-            "orderSentence": "Rituximab 375 mg/m2 PO weekly x4"
+            "orderSentence": "Rituximab 375 mg/m2 IV"
           },
           "pretreatment": "-",
           "contraindications": "-",
@@ -1082,17 +1002,17 @@
         {
           "item": "Eculizumab",
           "route": "IV",
-          "indication": "-",
+          "indication": "AQP4-IgG-positive NMOSD relapse prevention via complement inhibition",
           "dosing": {
             "doseOptions": [
               {
-                "text": "900 mg weekly x4 then 1200 mg q2wk",
-                "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+                "text": "900 mg",
+                "orderSentence": "Eculizumab 900 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "900 mg IV weekly x 4 → 1200 mg q2 weeks",
-            "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+            "orderSentence": "Eculizumab 900 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "-",
@@ -1105,7 +1025,7 @@
         {
           "item": "Inebilizumab",
           "route": "IV",
-          "indication": "-",
+          "indication": "AQP4-IgG-positive NMOSD relapse prevention via CD19 B-cell depletion",
           "dosing": {
             "doseOptions": [
               {
@@ -1128,7 +1048,7 @@
         {
           "item": "Satralizumab",
           "route": "SC",
-          "indication": "-",
+          "indication": "AQP4-IgG-positive NMOSD relapse prevention via IL-6 receptor inhibition",
           "dosing": {
             "doseOptions": [
               {
@@ -1151,29 +1071,17 @@
         {
           "item": "Azathioprine",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-sparing maintenance immunosuppression for NMOSD or autoimmune myelitis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Azathioprine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Azathioprine 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Azathioprine 150 mg PO daily"
-              },
-              {
-                "text": "2-3 mg/kg daily",
-                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
+                "text": "2-3 mg/kg",
+                "orderSentence": "Azathioprine 2-3 mg/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "2-3 mg/kg/day PO",
-            "orderSentence": "Azathioprine 50 mg PO daily"
+            "orderSentence": "Azathioprine 2-3 mg/kg PO"
           },
           "pretreatment": "-",
           "contraindications": "-",
@@ -1186,25 +1094,17 @@
         {
           "item": "Mycophenolate mofetil",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-sparing maintenance immunosuppression for NMOSD or autoimmune myelitis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
+                "text": "1000-1500 mg",
+                "orderSentence": "Mycophenolate mofetil 1000-1500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "1000-1500 mg PO BID",
-            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
+            "orderSentence": "Mycophenolate mofetil 1000-1500 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "-",
@@ -1217,7 +1117,7 @@
         {
           "item": "Anti-TB therapy",
           "route": "-",
-          "indication": "-",
+          "indication": "Spinal tuberculosis or TB myelitis treatment",
           "dosing": {
             "doseOptions": [
               {
@@ -1240,7 +1140,7 @@
         {
           "item": "IV penicillin G",
           "route": "IV",
-          "indication": "-",
+          "indication": "Neurosyphilis treatment for syphilitic myelitis",
           "dosing": {
             "doseOptions": [
               {
@@ -1263,7 +1163,7 @@
         {
           "item": "Radiation + surgery + steroids",
           "route": "IV",
-          "indication": "-",
+          "indication": "Metastatic epidural cord compression with neurologic deficit",
           "dosing": {
             "doseOptions": [
               {

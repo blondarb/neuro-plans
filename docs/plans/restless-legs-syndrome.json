@@ -214,7 +214,7 @@
         {
           "item": "Sleep hygiene",
           "route": "-",
-          "indication": "-",
+          "indication": "Baseline behavioral intervention for all RLS patients",
           "dosing": {
             "doseOptions": [
               {
@@ -236,7 +236,7 @@
         {
           "item": "Avoid triggers",
           "route": "-",
-          "indication": "-",
+          "indication": "Reduce symptom exacerbation from known RLS triggers",
           "dosing": {
             "doseOptions": [
               {
@@ -258,7 +258,7 @@
         {
           "item": "Moderate exercise",
           "route": "-",
-          "indication": "-",
+          "indication": "Symptom reduction through regular physical activity",
           "dosing": {
             "doseOptions": [
               {
@@ -280,7 +280,7 @@
         {
           "item": "Leg massage/stretching",
           "route": "-",
-          "indication": "-",
+          "indication": "Relieve RLS leg discomfort and urge to move",
           "dosing": {
             "doseOptions": [
               {
@@ -302,7 +302,7 @@
         {
           "item": "Hot bath",
           "route": "-",
-          "indication": "-",
+          "indication": "Promote relaxation and reduce evening RLS symptoms",
           "dosing": {
             "doseOptions": [
               {
@@ -324,7 +324,7 @@
         {
           "item": "Mental alerting activities",
           "route": "-",
-          "indication": "-",
+          "indication": "Cognitive distraction for mild RLS symptom relief",
           "dosing": {
             "doseOptions": [
               {
@@ -346,7 +346,7 @@
         {
           "item": "Pneumatic compression devices",
           "route": "-",
-          "indication": "-",
+          "indication": "Adjunctive therapy for refractory RLS leg symptoms",
           "dosing": {
             "doseOptions": [
               {
@@ -369,18 +369,18 @@
       "Iron Replacement (If Ferritin <75 ng/mL)": [
         {
           "item": "Ferrous sulfate",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Oral iron repletion for RLS with ferritin below 75 ng/mL",
           "dosing": {
             "doseOptions": [
               {
                 "text": "325 mg",
-                "orderSentence": "Ferrous sulfate 325 mg -"
+                "orderSentence": "Ferrous sulfate 325 mg PO"
               }
             ],
-            "route": "-",
+            "route": "PO",
             "instructions": "325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day",
-            "orderSentence": "Ferrous sulfate 325 mg -"
+            "orderSentence": "Ferrous sulfate 325 mg PO"
           },
           "contraindications": "Iron overload, hemochromatosis",
           "monitoring": "Ferritin q3 months; GI side effects",
@@ -392,7 +392,7 @@
         {
           "item": "Ferrous gluconate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Oral iron repletion when ferrous sulfate not tolerated",
           "dosing": {
             "doseOptions": [
               {
@@ -414,7 +414,7 @@
         {
           "item": "IV iron (ferric carboxymaltose) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Rapid iron repletion for oral-intolerant or severe iron deficiency RLS",
           "dosing": {
             "doseOptions": [
               {
@@ -436,7 +436,7 @@
         {
           "item": "IV iron sucrose (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "IV iron alternative for iron-deficient RLS patients",
           "dosing": {
             "doseOptions": [
               {
@@ -460,33 +460,17 @@
         {
           "item": "Gabapentin",
           "route": "PO",
-          "indication": "-",
+          "indication": "First-line treatment for moderate-to-severe RLS symptoms",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg QHS; titrate by 300 mg every few days to 900-1800 mg QHS",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Renal impairment (adjust)",
           "monitoring": "Sedation, dizziness, edema",
@@ -498,33 +482,17 @@
         {
           "item": "Gabapentin enacarbil (Horizant)",
           "route": "PO",
-          "indication": "-",
+          "indication": "FDA-approved first-line gabapentin prodrug for RLS",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "600 mg",
+                "orderSentence": "Gabapentin enacarbil (Horizant) 600 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "600 mg daily at ~5 PM; FDA approved for RLS",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin enacarbil (Horizant) 600 mg PO"
           },
           "contraindications": "Renal impairment (adjust)",
           "monitoring": "Sedation, dizziness",
@@ -536,37 +504,17 @@
         {
           "item": "Pregabalin",
           "route": "PO",
-          "indication": "-",
+          "indication": "First-line alpha-2-delta ligand for RLS with low augmentation risk",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg TID",
-                "orderSentence": "Pregabalin 50 mg PO TID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Pregabalin 75 mg PO BID"
-              },
-              {
-                "text": "100 mg TID",
-                "orderSentence": "Pregabalin 100 mg PO TID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Pregabalin 200 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Pregabalin 300 mg PO BID"
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 75 mg QHS; titrate to 150-300 mg QHS",
-            "orderSentence": "Pregabalin 50 mg PO TID"
+            "orderSentence": "Pregabalin 75 mg PO"
           },
           "contraindications": "Renal impairment (adjust)",
           "monitoring": "Sedation, dizziness, weight gain",
@@ -580,33 +528,17 @@
         {
           "item": "Pramipexole (Mirapex)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Second-line dopamine agonist for RLS unresponsive to gabapentinoids",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.125 mg TID",
-                "orderSentence": "Pramipexole 0.125 mg PO TID"
-              },
-              {
-                "text": "0.25 mg TID",
-                "orderSentence": "Pramipexole 0.25 mg PO TID"
-              },
-              {
-                "text": "0.5 mg TID",
-                "orderSentence": "Pramipexole 0.5 mg PO TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Pramipexole 1 mg PO TID"
-              },
-              {
-                "text": "1.5 mg TID",
-                "orderSentence": "Pramipexole 1.5 mg PO TID"
+                "text": "0.125 mg",
+                "orderSentence": "Pramipexole (Mirapex) 0.125 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.125 mg 2-3h before bedtime; titrate by 0.125 mg q4-7 days; max 0.5 mg (keep dose LOW)",
-            "orderSentence": "Pramipexole 0.125 mg PO TID"
+            "orderSentence": "Pramipexole (Mirapex) 0.125 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Severe renal impairment",
@@ -619,33 +551,17 @@
         {
           "item": "Ropinirole (Requip)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Second-line dopamine agonist alternative for moderate-to-severe RLS",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.25 mg TID",
-                "orderSentence": "Ropinirole 0.25 mg PO TID"
-              },
-              {
-                "text": "0.5 mg TID",
-                "orderSentence": "Ropinirole 0.5 mg PO TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Ropinirole 1 mg PO TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Ropinirole 2 mg PO TID"
-              },
-              {
-                "text": "3 mg TID",
-                "orderSentence": "Ropinirole 3 mg PO TID"
+                "text": "0.25 mg",
+                "orderSentence": "Ropinirole (Requip) 0.25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 0.25 mg 1-3h before bedtime; titrate by 0.25 mg q4-7 days; max 4 mg (keep dose LOW)",
-            "orderSentence": "Ropinirole 0.25 mg PO TID"
+            "orderSentence": "Ropinirole (Requip) 0.25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Severe hepatic impairment",
@@ -658,29 +574,17 @@
         {
           "item": "Rotigotine patch (Neupro)",
           "route": "Transdermal",
-          "indication": "-",
+          "indication": "Transdermal dopamine agonist for RLS with continuous delivery",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg/24h daily",
-                "orderSentence": "Rotigotine 2 mg/24h PO daily"
-              },
-              {
-                "text": "4 mg/24h daily",
-                "orderSentence": "Rotigotine 4 mg/24h PO daily"
-              },
-              {
-                "text": "6 mg/24h daily",
-                "orderSentence": "Rotigotine 6 mg/24h PO daily"
-              },
-              {
-                "text": "8 mg/24h daily",
-                "orderSentence": "Rotigotine 8 mg/24h PO daily"
+                "text": "1 mg",
+                "orderSentence": "Rotigotine patch (Neupro) 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1 mg/24h patch; titrate by 1 mg/week; max 3 mg/24h",
-            "orderSentence": "Rotigotine 2 mg/24h PO daily"
+            "orderSentence": "Rotigotine patch (Neupro) 1 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Sulfite allergy",
@@ -695,7 +599,7 @@
         {
           "item": "Low-dose opioids",
           "route": "PO",
-          "indication": "-",
+          "indication": "Refractory RLS unresponsive to first- and second-line agents",
           "dosing": {
             "doseOptions": [
               {
@@ -717,7 +621,7 @@
         {
           "item": "Extended-release oxycodone",
           "route": "PO",
-          "indication": "-",
+          "indication": "Severe refractory RLS requiring sustained opioid coverage",
           "dosing": {
             "doseOptions": [
               {
@@ -739,7 +643,7 @@
         {
           "item": "Methadone (specialist use)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Specialist-managed opioid for severe refractory RLS",
           "dosing": {
             "doseOptions": [
               {
@@ -760,8 +664,8 @@
         },
         {
           "item": "Buprenorphine (specialist use)",
-          "route": "-",
-          "indication": "-",
+          "route": "SL",
+          "indication": "Sublingual opioid alternative with lower abuse potential for refractory RLS",
           "dosing": {
             "doseOptions": [
               {
@@ -785,7 +689,7 @@
         {
           "item": "Recognize augmentation",
           "route": "-",
-          "indication": "-",
+          "indication": "Identify dopamine agonist-induced worsening of RLS symptoms",
           "dosing": {
             "instructions": "-",
             "orderSentence": "Recognize augmentation - - - see dosing"
@@ -800,7 +704,7 @@
         {
           "item": "Discontinue dopamine agonist",
           "route": "-",
-          "indication": "-",
+          "indication": "Remove causative agent in confirmed augmentation",
           "dosing": {
             "instructions": "-",
             "orderSentence": "Discontinue dopamine agonist - - - see dosing"
@@ -815,7 +719,7 @@
         {
           "item": "Bridge with opioid",
           "route": "-",
-          "indication": "-",
+          "indication": "Temporary symptom control during dopamine agonist washout",
           "dosing": {
             "instructions": "-",
             "orderSentence": "Bridge with opioid - - - see dosing"
@@ -830,7 +734,7 @@
         {
           "item": "Switch to alpha-2-delta ligand",
           "route": "-",
-          "indication": "-",
+          "indication": "Transition to gabapentinoid after dopamine agonist augmentation",
           "dosing": {
             "instructions": "-",
             "orderSentence": "Switch to alpha-2-delta ligand - - - see dosing"
@@ -845,7 +749,7 @@
         {
           "item": "IV iron",
           "route": "IV",
-          "indication": "-",
+          "indication": "Optimize iron stores during augmentation management transition",
           "dosing": {
             "instructions": "-",
             "orderSentence": "IV iron - IV - see dosing"

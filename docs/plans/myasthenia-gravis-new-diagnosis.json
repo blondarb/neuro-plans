@@ -598,8 +598,8 @@
       "Cholinesterase Inhibitors (Symptomatic)": [
         {
           "item": "Pyridostigmine (Mestinon) IR",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Symptomatic MG; first-line for fatigable weakness",
           "dosing": {
             "doseOptions": [
               {
@@ -620,8 +620,8 @@
         },
         {
           "item": "Pyridostigmine (Mestinon) SR (Timespan)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Nocturnal/morning MG weakness; sustained release",
           "dosing": {
             "doseOptions": [
               {
@@ -642,8 +642,8 @@
         },
         {
           "item": "Pyridostigmine liquid (60 mg/5 mL)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "MG with dysphagia; unable to swallow tablets",
           "dosing": {
             "doseOptions": [
               {
@@ -665,25 +665,17 @@
         {
           "item": "Neostigmine IV (if NPO or intubated)",
           "route": "IV",
-          "indication": "-",
+          "indication": "MG; NPO or intubated; parenteral cholinesterase inhibitor",
           "dosing": {
             "doseOptions": [
               {
-                "text": "15 mg q3-4h",
-                "orderSentence": "Neostigmine 15 mg IV q3-4h"
-              },
-              {
-                "text": "0.5 mg once",
-                "orderSentence": "Neostigmine 0.5 mg IV once"
-              },
-              {
-                "text": "1 mg once",
-                "orderSentence": "Neostigmine 1 mg IV once"
+                "text": "0.5-2.5 mg",
+                "orderSentence": "Neostigmine IV (if NPO or intubated) 0.5-2.5 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-2.5 mg IV/IM q1-3h; 1 mg IV neostigmine ≈ 30 mg oral pyridostigmine",
-            "orderSentence": "Neostigmine 15 mg IV q3-4h"
+            "orderSentence": "Neostigmine IV (if NPO or intubated) 0.5-2.5 mg IV"
           },
           "contraindications": "Same; cardiac monitoring required",
           "monitoring": "Continuous cardiac monitoring; have atropine at bedside for bradycardia",
@@ -695,25 +687,17 @@
         {
           "item": "Glycopyrrolate (for cholinergic side effects)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Cholinergic side effects from pyridostigmine (diarrhea, salivation)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg BID",
-                "orderSentence": "Glycopyrrolate 1 mg IV BID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Glycopyrrolate 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Glycopyrrolate 2 mg IV TID"
+                "text": "1-2 mg",
+                "orderSentence": "Glycopyrrolate (for cholinergic side effects) 1-2 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1-2 mg PO BID-TID or 0.1-0.2 mg IV PRN",
-            "orderSentence": "Glycopyrrolate 1 mg IV BID"
+            "orderSentence": "Glycopyrrolate (for cholinergic side effects) 1-2 mg IV"
           },
           "contraindications": "Narrow-angle glaucoma; obstructive uropathy",
           "monitoring": "Does NOT cross BBB (preferred over atropine for peripheral muscarinic side effects)",
@@ -725,7 +709,7 @@
         {
           "item": "Atropine (for cholinergic side effects/emergency)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Symptomatic bradycardia from pyridostigmine; cholinergic emergency",
           "dosing": {
             "doseOptions": [
               {
@@ -747,7 +731,7 @@
         {
           "item": "Pyridostigmine dose reduction/hold",
           "route": "-",
-          "indication": "-",
+          "indication": "Suspected cholinergic crisis; excessive secretions with worsening weakness",
           "dosing": {
             "doseOptions": [
               {
@@ -771,37 +755,17 @@
         {
           "item": "Prednisone (gradual escalation - PREFERRED for outpatient)",
           "route": "PO",
-          "indication": "-",
+          "indication": "MG immunosuppression; outpatient gradual escalation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Prednisone 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Prednisone 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Prednisone 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Prednisone 40 mg PO daily"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Prednisone 60 mg PO daily"
-              },
-              {
-                "text": "1 mg/kg daily",
-                "orderSentence": "Prednisone 1 mg/kg PO daily"
+                "text": "10-20 mg",
+                "orderSentence": "Prednisone (gradual escalation - PREFERRED for outpatient) 10-20 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-20 mg daily; increase by 5-10 mg every 3-5 days to target 0.5-1 mg/kg/day (typically 40-60 mg daily); maintain 4-8 weeks then taper by 5-10 mg/month",
-            "orderSentence": "Prednisone 5 mg PO daily"
+            "orderSentence": "Prednisone (gradual escalation - PREFERRED for outpatient) 10-20 mg PO"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis history",
           "monitoring": "Glucose (q6h inpatient, weekly outpatient); BP; mood/sleep; weight; bone density at baseline; GI prophylaxis",
@@ -813,37 +777,17 @@
         {
           "item": "Prednisone (rapid escalation - INPATIENT preferred)",
           "route": "PO",
-          "indication": "-",
+          "indication": "MG immunosuppression; inpatient rapid escalation with monitoring",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Prednisone 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Prednisone 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Prednisone 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Prednisone 40 mg PO daily"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Prednisone 60 mg PO daily"
-              },
-              {
-                "text": "1 mg/kg daily",
-                "orderSentence": "Prednisone 1 mg/kg PO daily"
+                "text": "40-60 mg",
+                "orderSentence": "Prednisone (rapid escalation - INPATIENT preferred) 40-60 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 40-60 mg daily (0.75-1 mg/kg/day); CAUTION: may cause initial transient worsening in first 1-2 weeks",
-            "orderSentence": "Prednisone 5 mg PO daily"
+            "orderSentence": "Prednisone (rapid escalation - INPATIENT preferred) 40-60 mg PO"
           },
           "contraindications": "Same as above",
           "monitoring": "Same; MONITOR CLOSELY for steroid-induced exacerbation; consider concurrent IVIG/PLEX for protection",
@@ -855,25 +799,17 @@
         {
           "item": "Methylprednisolone IV (pulse therapy) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Severe MG; IV steroid pulse before oral transition",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (pulse therapy) (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily × 3-5 days; transition to oral prednisone taper",
-            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+            "orderSentence": "Methylprednisolone IV (pulse therapy) (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis",
           "monitoring": "Glucose q6h (target <180); BP; mood; cardiac monitoring; GI prophylaxis",
@@ -885,21 +821,17 @@
         {
           "item": "Omeprazole (GI prophylaxis during steroids)",
           "route": "PO",
-          "indication": "-",
+          "indication": "GI prophylaxis during high-dose steroids",
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg daily",
-                "orderSentence": "Omeprazole 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Omeprazole 40 mg PO daily"
+                "text": "20-40 mg",
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "20-40 mg daily while on steroids",
-            "orderSentence": "Omeprazole 20 mg PO daily"
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 20-40 mg PO"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -910,8 +842,8 @@
         },
         {
           "item": "Insulin sliding scale (steroid-induced hyperglycemia)",
-          "route": "-",
-          "indication": "-",
+          "route": "SC/IV",
+          "indication": "Steroid-induced hyperglycemia >180 mg/dL",
           "dosing": {
             "doseOptions": [
               {
@@ -932,8 +864,8 @@
         },
         {
           "item": "Calcium carbonate + Vitamin D (bone protection)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Bone protection during chronic steroid therapy",
           "dosing": {
             "doseOptions": [
               {
@@ -955,7 +887,7 @@
         {
           "item": "Bisphosphonate (bone protection if chronic steroids)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Osteoporosis prevention if steroids expected >3 months",
           "dosing": {
             "doseOptions": [
               {
@@ -977,7 +909,7 @@
         {
           "item": "Trimethoprim-sulfamethoxazole (PCP prophylaxis)",
           "route": "PO",
-          "indication": "-",
+          "indication": "PCP prophylaxis if prednisone >=20 mg for >=4 weeks",
           "dosing": {
             "doseOptions": [
               {
@@ -998,8 +930,8 @@
         },
         {
           "item": "Prednisone taper",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Gradual steroid reduction once stable on target dose",
           "dosing": {
             "doseOptions": [
               {
@@ -1022,26 +954,18 @@
       "Steroid-Sparing Immunosuppressive Agents": [
         {
           "item": "Mycophenolate mofetil (CellCept)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "MG steroid-sparing; long-term immunosuppression",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg BID; increase to 1000 mg BID after 2 weeks; target 2000-3000 mg/day in divided doses; onset 6-12 months",
-            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
+            "orderSentence": "Mycophenolate mofetil (CellCept) 500 mg PO"
           },
           "contraindications": "Pregnancy (Category D - teratogenic); concurrent azathioprine",
           "monitoring": "CBC q2 weeks × 3 months, then monthly; LFTs; GI side effects (diarrhea, nausea); lymphopenia; REMS pregnancy prevention",
@@ -1053,29 +977,17 @@
         {
           "item": "Azathioprine (Imuran)",
           "route": "PO",
-          "indication": "-",
+          "indication": "MG steroid-sparing; long-term immunosuppression",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Azathioprine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Azathioprine 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Azathioprine 150 mg PO daily"
-              },
-              {
-                "text": "2-3 mg/kg daily",
-                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (Imuran) 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg daily; increase by 50 mg every 1-2 weeks to target 2-3 mg/kg/day (typically 150-250 mg/day); onset 6-18 months",
-            "orderSentence": "Azathioprine 50 mg PO daily"
+            "orderSentence": "Azathioprine (Imuran) 50 mg PO"
           },
           "contraindications": "TPMT deficiency (check before starting); concurrent allopurinol (reduce dose by 75%); pregnancy (relative)",
           "monitoring": "TPMT genotype/activity BEFORE starting; CBC q1-2 weeks during titration, then monthly; LFTs; amylase/lipase if abdominal pain; lymphocyte count target 600-1000",
@@ -1087,25 +999,17 @@
         {
           "item": "Tacrolimus (Prograf)",
           "route": "PO",
-          "indication": "-",
+          "indication": "MG steroid-sparing; faster onset than MMF/AZA",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg BID",
-                "orderSentence": "Tacrolimus 1 mg PO BID"
-              },
-              {
-                "text": "2 mg BID",
-                "orderSentence": "Tacrolimus 2 mg PO BID"
-              },
-              {
-                "text": "3 mg BID",
-                "orderSentence": "Tacrolimus 3 mg PO BID"
+                "text": "1 mg",
+                "orderSentence": "Tacrolimus (Prograf) 1 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 1 mg BID; titrate to trough level 5-10 ng/mL; onset 3-6 months (faster than MMF/AZA)",
-            "orderSentence": "Tacrolimus 1 mg PO BID"
+            "orderSentence": "Tacrolimus (Prograf) 1 mg PO"
           },
           "contraindications": "Uncontrolled hypertension; renal impairment",
           "monitoring": "Trough levels; renal function q2 weeks then monthly; electrolytes (K, Mg); glucose; BP; tremor; nephrotoxicity",
@@ -1117,25 +1021,17 @@
         {
           "item": "Cyclosporine (Sandimmune/Neoral)",
           "route": "PO",
-          "indication": "-",
+          "indication": "MG steroid-sparing; calcineurin inhibitor alternative",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Cyclosporine 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Cyclosporine 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Cyclosporine 200 mg PO BID"
+                "text": "2-3 mg/kg",
+                "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2-3 mg/kg/day in 2 divided doses; target trough 100-150 ng/mL; onset 2-6 months",
-            "orderSentence": "Cyclosporine 100 mg PO BID"
+            "orderSentence": "Cyclosporine (Sandimmune/Neoral) 2-3 mg/kg PO"
           },
           "contraindications": "Uncontrolled hypertension; renal impairment; concurrent nephrotoxic drugs",
           "monitoring": "Trough levels; renal function; BP; electrolytes (K, Mg); lipids; gingival hyperplasia; hirsutism",
@@ -1147,33 +1043,17 @@
         {
           "item": "Methotrexate",
           "route": "SC",
-          "indication": "-",
+          "indication": "Refractory MG; steroid-sparing (limited evidence)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "7.5 mg weekly",
-                "orderSentence": "Methotrexate 7.5 mg SC weekly"
-              },
-              {
-                "text": "10 mg weekly",
-                "orderSentence": "Methotrexate 10 mg SC weekly"
-              },
-              {
-                "text": "15 mg weekly",
-                "orderSentence": "Methotrexate 15 mg SC weekly"
-              },
-              {
-                "text": "20 mg weekly",
-                "orderSentence": "Methotrexate 20 mg SC weekly"
-              },
-              {
-                "text": "25 mg weekly",
-                "orderSentence": "Methotrexate 25 mg SC weekly"
+                "text": "10-20 mg",
+                "orderSentence": "Methotrexate 10-20 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "10-20 mg PO or SC once weekly with folic acid 1 mg daily (except methotrexate day); onset 6-12 months",
-            "orderSentence": "Methotrexate 7.5 mg SC weekly"
+            "orderSentence": "Methotrexate 10-20 mg SC"
           },
           "contraindications": "Pregnancy (Category X); hepatic disease; renal impairment (CrCl <30); concurrent trimethoprim",
           "monitoring": "CBC q4 weeks; LFTs q8-12 weeks; renal function; pulmonary toxicity screen; folic acid supplementation mandatory",
@@ -1185,21 +1065,17 @@
         {
           "item": "Cyclophosphamide (refractory/severe)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Severe refractory MG; reserved for treatment failure",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-              },
-              {
-                "text": "1000 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
+                "text": "500-1000 mg",
+                "orderSentence": "Cyclophosphamide (refractory/severe) 500-1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Pulse IV: 500-1000 mg/m² monthly × 6 months; OR oral 1-2 mg/kg/day; reserved for refractory MG",
-            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
+            "orderSentence": "Cyclophosphamide (refractory/severe) 500-1000 mg IV"
           },
           "contraindications": "Pregnancy; active infection; bone marrow suppression",
           "monitoring": "CBC weekly during treatment; urinalysis (hemorrhagic cystitis - MESNA with IV dosing); fertility counseling; malignancy risk",
@@ -1210,26 +1086,18 @@
         },
         {
           "item": "IVIG (maintenance immunomodulation)",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "MG maintenance immunomodulation; ongoing flare prevention",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg PO daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg PO divided over 2-5 days"
+                "text": "1-2 g/kg",
+                "orderSentence": "IVIG (maintenance immunomodulation) 1-2 g/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "1-2 g/kg divided over 2-5 days, then 0.4-1 g/kg every 4 weeks as maintenance",
-            "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
+            "orderSentence": "IVIG (maintenance immunomodulation) 1-2 g/kg PO"
           },
           "contraindications": "IgA deficiency (check IgA level first); recent thrombotic event; renal failure",
           "monitoring": "Pre-infusion: IgA level, renal function, CBC; during: vital signs q15 min first hour; headache; aseptic meningitis; thrombosis risk; renal function",
@@ -1243,25 +1111,17 @@
         {
           "item": "Rituximab (Rituxan) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory MG; MuSK-positive MG (first-line); anti-CD20 B-cell depletion",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "375 mg",
+                "orderSentence": "Rituximab (Rituxan) (CPT 96365) 375 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "375 mg/m² IV weekly × 4 weeks; OR 1000 mg IV × 2 doses 14 days apart; re-dose when CD19/CD20 recover or clinical worsening; onset 3-6 months",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
+            "orderSentence": "Rituximab (Rituxan) (CPT 96365) 375 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Active Hepatitis B; active infection; severe immunodeficiency",
@@ -1274,17 +1134,17 @@
         {
           "item": "Eculizumab (Soliris) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory AChR-positive generalized MG; complement C5 inhibitor",
           "dosing": {
             "doseOptions": [
               {
-                "text": "900 mg weekly x4 then 1200 mg q2wk",
-                "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+                "text": "900 mg",
+                "orderSentence": "Eculizumab (Soliris) (CPT 96365) 900 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "900 mg IV weekly × 4 weeks, then 1200 mg IV at week 5, then 1200 mg IV every 2 weeks; for AChR-positive generalized MG",
-            "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+            "orderSentence": "Eculizumab (Soliris) (CPT 96365) 900 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Unresolved Neisseria meningitidis infection; unvaccinated against meningococcus",
@@ -1297,7 +1157,7 @@
         {
           "item": "Ravulizumab (Ultomiris)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory AChR-positive generalized MG; long-acting C5 inhibitor",
           "dosing": {
             "doseOptions": [
               {
@@ -1320,7 +1180,7 @@
         {
           "item": "Zilucoplan (Zilbrysq)",
           "route": "SC",
-          "indication": "-",
+          "indication": "Refractory AChR-positive generalized MG; SC complement inhibitor",
           "dosing": {
             "doseOptions": [
               {
@@ -1343,7 +1203,7 @@
         {
           "item": "Efgartigimod (Vyvgart) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "AChR-positive generalized MG; FcRn inhibitor (IgG reduction)",
           "dosing": {
             "doseOptions": [
               {
@@ -1366,7 +1226,7 @@
         {
           "item": "Efgartigimod/hyaluronidase SC (Vyvgart Hytrulo)",
           "route": "SC",
-          "indication": "-",
+          "indication": "AChR-positive generalized MG; self-administered FcRn inhibitor",
           "dosing": {
             "doseOptions": [
               {
@@ -1389,7 +1249,7 @@
         {
           "item": "Rozanolixizumab (Rystiggo)",
           "route": "SC",
-          "indication": "-",
+          "indication": "AChR-positive generalized MG; FcRn inhibitor",
           "dosing": {
             "doseOptions": [
               {
@@ -1412,7 +1272,7 @@
         {
           "item": "Plasmapheresis (PLEX) - rescue (CPT 36514)",
           "route": "-",
-          "indication": "-",
+          "indication": "Myasthenic crisis or pre-operative optimization; rapid antibody removal",
           "dosing": {
             "doseOptions": [
               {
@@ -1434,26 +1294,18 @@
         },
         {
           "item": "IVIG (rescue therapy)",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Myasthenic crisis; acute exacerbation; rapid immunomodulation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg PO daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg PO divided over 2-5 days"
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (rescue therapy) 2 g/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "2 g/kg divided over 2-5 days (e.g., 0.4 g/kg/day × 5 days)",
-            "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
+            "orderSentence": "IVIG (rescue therapy) 2 g/kg PO"
           },
           "pretreatment": "-",
           "contraindications": "IgA deficiency; renal failure; recent thrombotic event",

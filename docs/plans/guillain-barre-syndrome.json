@@ -474,25 +474,17 @@
         {
           "item": "IVIG (intravenous immunoglobulin) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "First-line immunotherapy for acute GBS within 2 weeks of onset",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg IV daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg IV divided over 2-5 days"
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse over 4-8h per dose; slow initial rate and increase per protocol. Start within 2 weeks of symptom onset for maximum benefit",
-            "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
+            "orderSentence": "IVIG (intravenous immunoglobulin) (CPT 96365) 0.4 g/kg IV"
           },
           "contraindications": "IgA deficiency (use IgA-depleted product); acute renal failure; anaphylaxis to immunoglobulin",
           "monitoring": "Vital signs q15min during first infusion, then q30min; renal function (BUN, Cr) before and during; headache (aseptic meningitis); thrombotic events; hemolysis (haptoglobin, LDH, direct Coombs if symptoms)",
@@ -504,7 +496,7 @@
         {
           "item": "Plasmapheresis (PLEX) (CPT 36514)",
           "route": "-",
-          "indication": "-",
+          "indication": "First-line immunotherapy alternative to IVIG for acute GBS",
           "dosing": {
             "doseOptions": [
               {
@@ -526,7 +518,7 @@
         {
           "item": "Intubation and mechanical ventilation",
           "route": "-",
-          "indication": "-",
+          "indication": "Respiratory failure due to progressive neuromuscular weakness",
           "dosing": {
             "doseOptions": [
               {
@@ -548,21 +540,17 @@
         {
           "item": "DVT prophylaxis: Enoxaparin",
           "route": "SC",
-          "indication": "-",
+          "indication": "VTE prophylaxis in immobilized GBS patients",
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg BID",
-                "orderSentence": "Dvt Prophylaxis: Enoxaparin 30 mg SC BID"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Dvt Prophylaxis: Enoxaparin 40 mg SC daily"
+                "text": "40 mg",
+                "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily; start on admission",
-            "orderSentence": "Dvt Prophylaxis: Enoxaparin 30 mg SC BID"
+            "orderSentence": "DVT prophylaxis: Enoxaparin 40 mg SC"
           },
           "contraindications": "Active bleeding, platelets <50K, CrCl <30 (use UFH)",
           "monitoring": "Platelets q3 days; anti-Xa if renal impairment",
@@ -574,21 +562,17 @@
         {
           "item": "DVT prophylaxis: Heparin SC (alternative)",
           "route": "SC",
-          "indication": "-",
+          "indication": "VTE prophylaxis alternative when enoxaparin contraindicated",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8h",
-                "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q8h"
-              },
-              {
-                "text": "5000 units q12h",
-                "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q12h"
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
               }
             ],
             "route": "SC",
             "instructions": "5000 units SC q8-12h",
-            "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q8h"
+            "orderSentence": "DVT prophylaxis: Heparin SC (alternative) 5000 units SC"
           },
           "contraindications": "Active bleeding, HIT",
           "monitoring": "Platelets q3 days",
@@ -600,7 +584,7 @@
         {
           "item": "Pneumatic compression devices",
           "route": "-",
-          "indication": "-",
+          "indication": "Mechanical VTE prophylaxis for immobilized patients",
           "dosing": {
             "doseOptions": [
               {
@@ -628,29 +612,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg PO qHS; increase by 300 mg/day every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Severe renal impairment (dose adjust); oversedation",
           "monitoring": "Sedation, dizziness; adjust for renal function",
@@ -666,33 +634,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg TID",
-                "orderSentence": "Pregabalin 50 mg PO TID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Pregabalin 75 mg PO BID"
-              },
-              {
-                "text": "100 mg TID",
-                "orderSentence": "Pregabalin 100 mg PO TID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Pregabalin 200 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Pregabalin 300 mg PO BID"
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 75 mg PO BID; increase to 150 mg BID after 3-7 days; max 300 mg BID",
-            "orderSentence": "Pregabalin 50 mg PO TID"
+            "orderSentence": "Pregabalin 75 mg PO"
           },
           "contraindications": "Renal impairment (dose adjust)",
           "monitoring": "Sedation, weight gain, peripheral edema",
@@ -708,25 +656,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Carbamazepine 100 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Carbamazepine 200 mg PO BID"
-              },
-              {
-                "text": "400 mg BID",
-                "orderSentence": "Carbamazepine 400 mg PO BID"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Carbamazepine 600 mg PO BID"
+                "text": "100 mg",
+                "orderSentence": "Carbamazepine 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg PO BID; increase by 100 mg/day q3-7 days; target 400-800 mg/day in divided doses; max 1200 mg/day",
-            "orderSentence": "Carbamazepine 100 mg PO BID"
+            "orderSentence": "Carbamazepine 100 mg PO"
           },
           "contraindications": "AV block, bone marrow suppression, HLA-B*1502 (Asian descent — screen before starting)",
           "monitoring": "CBC, LFTs, sodium at baseline and 2-4 weeks; drug level",
@@ -742,29 +678,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QHS",
-                "orderSentence": "Amitriptyline 10 mg PO QHS"
-              },
-              {
-                "text": "25 mg QHS",
-                "orderSentence": "Amitriptyline 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Amitriptyline 50 mg PO QHS"
-              },
-              {
-                "text": "75 mg QHS",
-                "orderSentence": "Amitriptyline 75 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Amitriptyline 100 mg PO QHS"
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline 10-25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-25 mg PO qHS; increase by 10-25 mg q1-2 weeks; max 150 mg/day",
-            "orderSentence": "Amitriptyline 10 mg PO QHS"
+            "orderSentence": "Amitriptyline 10-25 mg PO"
           },
           "contraindications": "Arrhythmia, urinary retention, angle-closure glaucoma, recent MI",
           "monitoring": "ECG if cardiac risk; anticholinergic side effects",
@@ -780,25 +700,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg q6h PRN",
-                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
-              },
-              {
-                "text": "500 mg q6h PRN",
-                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
-              },
-              {
-                "text": "650 mg q6h PRN",
-                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
-              },
-              {
-                "text": "1000 mg q6h PRN",
-                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO q6h; max 4g/day (2g hepatic impairment)",
-            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
           },
           "contraindications": "Severe liver disease",
           "monitoring": "LFTs if prolonged",
@@ -814,25 +722,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "15 mg q4h PRN",
-                "orderSentence": "Morphine 15 mg IV q4h PRN"
-              },
-              {
-                "text": "30 mg q4h PRN",
-                "orderSentence": "Morphine 30 mg IV q4h PRN"
-              },
-              {
-                "text": "2 mg q4h PRN",
-                "orderSentence": "Morphine 2 mg IV q4h PRN"
-              },
-              {
-                "text": "4 mg q4h PRN",
-                "orderSentence": "Morphine 4 mg IV q4h PRN"
+                "text": "2-4 mg",
+                "orderSentence": "Morphine IV 2-4 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "2-4 mg IV q3-4h PRN; use with caution — respiratory depression risk especially with respiratory compromise",
-            "orderSentence": "Morphine 15 mg IV q4h PRN"
+            "orderSentence": "Morphine IV 2-4 mg IV"
           },
           "contraindications": "Respiratory failure (relative — monitor closely), ileus",
           "monitoring": "RR, SpO2, sedation scale; bowel function",
@@ -848,21 +744,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg q4-6h PRN",
-                "orderSentence": "Oxycodone 5 mg PO q4-6h PRN"
-              },
-              {
-                "text": "10 mg q4-6h PRN",
-                "orderSentence": "Oxycodone 10 mg PO q4-6h PRN"
-              },
-              {
-                "text": "15 mg q4-6h PRN",
-                "orderSentence": "Oxycodone 15 mg PO q4-6h PRN"
+                "text": "5-10 mg",
+                "orderSentence": "Oxycodone 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5-10 mg PO q4-6h PRN",
-            "orderSentence": "Oxycodone 5 mg PO q4-6h PRN"
+            "orderSentence": "Oxycodone 5-10 mg PO"
           },
           "contraindications": "Same as morphine",
           "monitoring": "Same as morphine",
@@ -878,21 +766,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Metoclopramide 5 mg IV TID"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Metoclopramide 10 mg IV TID"
-              },
-              {
-                "text": "10 mg QID",
-                "orderSentence": "Metoclopramide 10 mg IV QID"
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV/PO q6h PRN; max 40 mg/day; limit duration to <12 weeks",
-            "orderSentence": "Metoclopramide 5 mg IV TID"
+            "orderSentence": "Metoclopramide 10 mg IV"
           },
           "contraindications": "Seizure history, Parkinson disease, GI obstruction",
           "monitoring": "Tardive dyskinesia with prolonged use",
@@ -908,17 +788,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Docusate Sodium 100 mg PO daily"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Docusate Sodium 100 mg PO BID"
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "100 mg PO BID",
-            "orderSentence": "Docusate Sodium 100 mg PO daily"
+            "orderSentence": "Docusate sodium 100 mg PO"
           },
           "contraindications": "GI obstruction",
           "monitoring": "Bowel function",
@@ -934,17 +810,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "8.6 mg daily",
-                "orderSentence": "Senna 8.6 mg PO daily"
-              },
-              {
-                "text": "17.2 mg daily",
-                "orderSentence": "Senna 17.2 mg PO daily"
+                "text": "8.6-17.2 mg",
+                "orderSentence": "Senna 8.6-17.2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "8.6-17.2 mg PO qHS",
-            "orderSentence": "Senna 8.6 mg PO daily"
+            "orderSentence": "Senna 8.6-17.2 mg PO"
           },
           "contraindications": "GI obstruction",
           "monitoring": "Bowel function",
@@ -960,13 +832,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "17 g daily",
-                "orderSentence": "Polyethylene Glycol 17 g PO daily"
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
               }
             ],
             "route": "PO",
             "instructions": "17 g PO daily in 8 oz water",
-            "orderSentence": "Polyethylene Glycol 17 g PO daily"
+            "orderSentence": "Polyethylene glycol (MiraLAX) 17 g PO"
           },
           "contraindications": "GI obstruction",
           "monitoring": "Bowel function",
@@ -982,25 +854,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg QHS",
-                "orderSentence": "Melatonin 1 mg PO QHS"
-              },
-              {
-                "text": "3 mg QHS",
-                "orderSentence": "Melatonin 3 mg PO QHS"
-              },
-              {
-                "text": "5 mg QHS",
-                "orderSentence": "Melatonin 5 mg PO QHS"
-              },
-              {
-                "text": "10 mg QHS",
-                "orderSentence": "Melatonin 10 mg PO QHS"
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "3-5 mg PO qHS",
-            "orderSentence": "Melatonin 1 mg PO QHS"
+            "orderSentence": "Melatonin 3-5 mg PO"
           },
           "contraindications": "None significant",
           "monitoring": "Sleep quality",
@@ -1016,21 +876,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg IV TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg IV TID"
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-1 mg IV/PO q6-8h PRN",
-            "orderSentence": "Lorazepam 0.5 mg IV TID"
+            "orderSentence": "Lorazepam 0.5-1 mg IV"
           },
           "contraindications": "Respiratory compromise (use with extreme caution)",
           "monitoring": "RR, sedation",
@@ -1043,8 +895,8 @@
       "Second-line/Refractory": [
         {
           "item": "Second course IVIG",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Refractory GBS with progressive deterioration after initial IVIG",
           "dosing": {
             "doseOptions": [
               {
@@ -1066,7 +918,7 @@
         {
           "item": "PLEX after IVIG failure",
           "route": "-",
-          "indication": "-",
+          "indication": "Rescue immunotherapy for GBS unresponsive to IVIG",
           "dosing": {
             "doseOptions": [
               {
@@ -1088,25 +940,17 @@
         {
           "item": "IV methylprednisolone (NOT standard of care) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Adjunctive therapy with IVIG for refractory GBS (weak evidence)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Iv Methylprednisolone 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Iv Methylprednisolone 1000 mg IV daily x3-5 days"
+                "text": "500 mg",
+                "orderSentence": "IV methylprednisolone (NOT standard of care) (CPT 96365) 500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500 mg IV daily x 5 days; evidence does NOT support steroids alone; may be considered in combination with IVIG per some centers for refractory cases",
-            "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
+            "orderSentence": "IV methylprednisolone (NOT standard of care) (CPT 96365) 500 mg IV"
           },
           "contraindications": "Active infection, uncontrolled diabetes",
           "monitoring": "Glucose, BP, GI prophylaxis",

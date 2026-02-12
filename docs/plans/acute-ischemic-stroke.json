@@ -485,7 +485,7 @@
         {
           "item": "IV alteplase (tPA) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute ischemic stroke within 4.5h of last known well",
           "dosing": {
             "doseOptions": [
               {
@@ -507,7 +507,7 @@
         {
           "item": "Tenecteplase IV (CPT 96374) (if available)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute ischemic stroke; single-bolus thrombolytic (LVO planned for thrombectomy)",
           "dosing": {
             "doseOptions": [
               {
@@ -529,7 +529,7 @@
         {
           "item": "Endovascular thrombectomy",
           "route": "-",
-          "indication": "-",
+          "indication": "Large vessel occlusion (ICA, M1, basilar); within 24h if eligible",
           "dosing": {
             "doseOptions": [
               {
@@ -551,21 +551,17 @@
         {
           "item": "Aspirin",
           "route": "PO",
-          "indication": "-",
+          "indication": "Acute ischemic stroke; antiplatelet (after tPA: wait 24h + CT)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg daily",
-                "orderSentence": "Aspirin 81 mg PO daily"
-              },
-              {
-                "text": "325 mg daily",
-                "orderSentence": "Aspirin 325 mg PO daily"
+                "text": "325 mg",
+                "orderSentence": "Aspirin 325 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "325 mg PO/PR load (give within 24-48h of onset); if tPA given, wait 24h and obtain CT before starting. Maintenance: 81-325 mg daily",
-            "orderSentence": "Aspirin 81 mg PO daily"
+            "orderSentence": "Aspirin 325 mg PO"
           },
           "contraindications": "Active GI bleed, true aspirin allergy, within 24h of tPA (wait for post-tPA CT)",
           "monitoring": "GI symptoms, bleeding signs",
@@ -577,7 +573,7 @@
         {
           "item": "Blood pressure management PRE-tPA: Labetalol IV (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Pre-tPA BP reduction; target <185/110",
           "dosing": {
             "doseOptions": [
               {
@@ -599,7 +595,7 @@
         {
           "item": "Blood pressure management PRE-tPA: Nicardipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Pre-tPA BP reduction; sustained infusion option",
           "dosing": {
             "doseOptions": [
               {
@@ -621,7 +617,7 @@
         {
           "item": "Blood pressure management PRE-tPA: Clevidipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Pre-tPA BP reduction; ultra-short-acting alternative",
           "dosing": {
             "doseOptions": [
               {
@@ -643,7 +639,7 @@
         {
           "item": "Blood pressure management POST-tPA (24h)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Post-tPA BP control; target <180/105 for 24h",
           "dosing": {
             "doseOptions": [
               {
@@ -665,7 +661,7 @@
         {
           "item": "Permissive hypertension (no tPA given)",
           "route": "-",
-          "indication": "-",
+          "indication": "Non-tPA acute stroke; maintain cerebral perfusion",
           "dosing": {
             "doseOptions": [
               {
@@ -687,7 +683,7 @@
         {
           "item": "IV normal saline",
           "route": "IV",
-          "indication": "-",
+          "indication": "Volume resuscitation; euvolemia maintenance in acute stroke",
           "dosing": {
             "doseOptions": [
               {
@@ -709,7 +705,7 @@
         {
           "item": "Supplemental oxygen",
           "route": "-",
-          "indication": "-",
+          "indication": "Hypoxemia (SpO2 <94%); avoid routine O2 if normoxic",
           "dosing": {
             "doseOptions": [
               {
@@ -737,25 +733,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg q6h PRN",
-                "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
-              },
-              {
-                "text": "500 mg q6h PRN",
-                "orderSentence": "Acetaminophen 500 mg PO q6h PRN"
-              },
-              {
-                "text": "650 mg q6h PRN",
-                "orderSentence": "Acetaminophen 650 mg PO q6h PRN"
-              },
-              {
-                "text": "1000 mg q6h PRN",
-                "orderSentence": "Acetaminophen 1000 mg PO q6h PRN"
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "650-1000 mg PO/PR q6h; max 4g/day (2g if hepatic impairment)",
-            "orderSentence": "Acetaminophen 325 mg PO q6h PRN"
+            "orderSentence": "Acetaminophen 650-1000 mg PO"
           },
           "contraindications": "Severe hepatic disease",
           "monitoring": "Temperature q4h; LFTs if prolonged use",
@@ -793,17 +777,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q8h PRN",
-                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
-              },
-              {
-                "text": "8 mg q8h PRN",
-                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV/PO q6h PRN",
-            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+            "orderSentence": "Ondansetron 4 mg IV"
           },
           "contraindications": "QT prolongation, serotonin syndrome risk",
           "monitoring": "QTc if risk factors",
@@ -819,25 +799,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg BID",
-                "orderSentence": "Enoxaparin 30 mg SC BID"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Enoxaparin 40 mg SC daily"
-              },
-              {
-                "text": "1 mg/kg BID",
-                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
-              },
-              {
-                "text": "1.5 mg/kg daily",
-                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily; start within 24-48h if not receiving therapeutic anticoagulation; after post-tPA imaging clears hemorrhage",
-            "orderSentence": "Enoxaparin 30 mg SC BID"
+            "orderSentence": "Enoxaparin 40 mg SC"
           },
           "contraindications": "Active bleeding, platelets <50K, CrCl <30 (use UFH 5000u SC q8-12h)",
           "monitoring": "Platelets q3 days; renal function",
@@ -853,17 +821,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8-12h",
-                "orderSentence": "Heparin 5000 units SC q8-12h"
-              },
-              {
-                "text": "80 units/kg bolus then 18 units/kg/hr",
-                "orderSentence": "Heparin 80 units/kg bolus SC then 18 units/kg/hr"
+                "text": "5000 units",
+                "orderSentence": "Heparin (unfractionated) SC 5000 units SC"
               }
             ],
             "route": "SC",
             "instructions": "5000 units SC q8-12h",
-            "orderSentence": "Heparin 5000 units SC q8-12h"
+            "orderSentence": "Heparin (unfractionated) SC 5000 units SC"
           },
           "contraindications": "Active bleeding, HIT",
           "monitoring": "Platelets q3 days",
@@ -901,21 +865,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg daily",
-                "orderSentence": "Pantoprazole 20 mg IV daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Pantoprazole 40 mg IV daily"
-              },
-              {
-                "text": "40 mg BID",
-                "orderSentence": "Pantoprazole 40 mg IV BID"
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily",
-            "orderSentence": "Pantoprazole 20 mg IV daily"
+            "orderSentence": "Pantoprazole 40 mg IV"
           },
           "contraindications": "C. difficile risk with prolonged use",
           "monitoring": "GI symptoms",
@@ -928,8 +884,8 @@
       "Second-line/Refractory": [
         {
           "item": "Dual antiplatelet therapy (DAPT): Aspirin + Clopidogrel",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Minor stroke (NIHSS ≤3) or high-risk TIA; 21-day course",
           "dosing": {
             "doseOptions": [
               {
@@ -951,7 +907,7 @@
         {
           "item": "Dual antiplatelet therapy: Aspirin + Ticagrelor",
           "route": "PO",
-          "indication": "-",
+          "indication": "Minor stroke (NIHSS ≤5); 30-day course (THALES trial)",
           "dosing": {
             "doseOptions": [
               {
@@ -973,21 +929,17 @@
         {
           "item": "Heparin IV drip (therapeutic)",
           "route": "IV",
-          "indication": "-",
+          "indication": "High re-embolization risk; arterial dissection; crescendo TIA",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8-12h",
-                "orderSentence": "Heparin 5000 units IV q8-12h"
-              },
-              {
-                "text": "80 units/kg bolus then 18 units/kg/hr",
-                "orderSentence": "Heparin 80 units/kg bolus IV then 18 units/kg/hr"
+                "text": "60-80 units/kg",
+                "orderSentence": "Heparin IV drip (therapeutic) 60-80 units/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "Bolus 60-80 units/kg (max 5000u); infusion 12-18 units/kg/h; target aPTT 1.5-2.5x control. Use for: cardiac source with high re-embolization risk, arterial dissection, crescendo TIA, free-floating thrombus",
-            "orderSentence": "Heparin 5000 units IV q8-12h"
+            "orderSentence": "Heparin IV drip (therapeutic) 60-80 units/kg IV"
           },
           "contraindications": "Large infarct (hemorrhagic transformation risk), uncontrolled BP, within 24h of tPA",
           "monitoring": "aPTT q6h until stable, then q12-24h; platelets q3 days; neuro checks",
@@ -999,7 +951,7 @@
         {
           "item": "Decompressive craniectomy (malignant MCA infarct)",
           "route": "-",
-          "indication": "-",
+          "indication": "Malignant MCA infarct with >50% territory; age <60 preferred",
           "dosing": {
             "doseOptions": [
               {
@@ -1021,7 +973,7 @@
         {
           "item": "Osmotherapy: Mannitol 20%",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute cerebral herniation from malignant edema",
           "dosing": {
             "doseOptions": [
               {
@@ -1043,7 +995,7 @@
         {
           "item": "Osmotherapy: Hypertonic saline 23.4%",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute cerebral herniation; via central line",
           "dosing": {
             "doseOptions": [
               {
@@ -1065,21 +1017,17 @@
         {
           "item": "Hypertonic saline 3% infusion",
           "route": "IV",
-          "indication": "-",
+          "indication": "Cerebral edema management; target Na 145-155",
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mL bolus over 20 min",
-                "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
-              },
-              {
-                "text": "250 mL over 30 min",
-                "orderSentence": "Hypertonic Saline 3% 250 mL IV over 30 min"
+                "text": "150-500 mL",
+                "orderSentence": "Hypertonic saline 3% infusion 150-500 mL IV"
               }
             ],
             "route": "IV",
             "instructions": "150-500 mL IV bolus or continuous infusion 0.5-1 mL/kg/h; target Na 145-155",
-            "orderSentence": "Hypertonic Saline 3% 150 mL IV bolus over 20 min"
+            "orderSentence": "Hypertonic saline 3% infusion 150-500 mL IV"
           },
           "contraindications": "Hypernatremia, volume overload",
           "monitoring": "Serum sodium q4-6h, osmolality",
@@ -1093,29 +1041,17 @@
         {
           "item": "Atorvastatin",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; high-intensity statin (SPARCL trial)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Atorvastatin 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Atorvastatin 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Atorvastatin 40 mg PO daily"
-              },
-              {
-                "text": "80 mg daily",
-                "orderSentence": "Atorvastatin 80 mg PO daily"
+                "text": "80 mg",
+                "orderSentence": "Atorvastatin 80 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "80 mg PO daily (high-intensity); start within 24-48h regardless of baseline LDL",
-            "orderSentence": "Atorvastatin 10 mg PO daily"
+            "orderSentence": "Atorvastatin 80 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Active liver disease, pregnancy, breastfeeding",
@@ -1128,29 +1064,17 @@
         {
           "item": "Rosuvastatin",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; high-intensity statin alternative",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Rosuvastatin 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Rosuvastatin 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Rosuvastatin 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Rosuvastatin 40 mg PO daily"
+                "text": "20-40 mg",
+                "orderSentence": "Rosuvastatin 20-40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "20-40 mg PO daily (high-intensity alternative)",
-            "orderSentence": "Rosuvastatin 5 mg PO daily"
+            "orderSentence": "Rosuvastatin 20-40 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Active liver disease, pregnancy, CrCl <30 for 40mg",
@@ -1163,21 +1087,17 @@
         {
           "item": "Apixaban",
           "route": "PO",
-          "indication": "-",
+          "indication": "AF-related stroke; DOAC anticoagulation (preferred)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg BID",
-                "orderSentence": "Apixaban 2.5 mg PO BID"
-              },
-              {
-                "text": "5 mg BID",
-                "orderSentence": "Apixaban 5 mg PO BID"
+                "text": "5 mg",
+                "orderSentence": "Apixaban 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO BID (2.5 mg BID if ≥2 of: age ≥80, weight ≤60kg, Cr ≥1.5); start 4-14 days post-stroke for AF (timing based on infarct size). Preferred DOAC per guidelines",
-            "orderSentence": "Apixaban 2.5 mg PO BID"
+            "orderSentence": "Apixaban 5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal function; bleeding signs; CBC",
@@ -1190,25 +1110,17 @@
         {
           "item": "Rivaroxaban",
           "route": "PO",
-          "indication": "-",
+          "indication": "AF-related stroke; once-daily DOAC",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Rivaroxaban 10 mg PO daily"
-              },
-              {
-                "text": "15 mg daily",
-                "orderSentence": "Rivaroxaban 15 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Rivaroxaban 20 mg PO daily"
+                "text": "20 mg",
+                "orderSentence": "Rivaroxaban 20 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "20 mg PO daily with evening meal (15 mg daily if CrCl 15-50); start 4-14 days post-stroke for AF",
-            "orderSentence": "Rivaroxaban 10 mg PO daily"
+            "orderSentence": "Rivaroxaban 20 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal function q6-12 months; bleeding signs",
@@ -1221,25 +1133,17 @@
         {
           "item": "Dabigatran",
           "route": "PO",
-          "indication": "-",
+          "indication": "AF-related stroke; DOAC with reversal agent (idarucizumab)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg BID",
-                "orderSentence": "Dabigatran 75 mg PO BID"
-              },
-              {
-                "text": "110 mg BID",
-                "orderSentence": "Dabigatran 110 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Dabigatran 150 mg PO BID"
+                "text": "150 mg",
+                "orderSentence": "Dabigatran 150 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "150 mg PO BID (75 mg BID if CrCl 15-30); start 4-14 days post-stroke for AF",
-            "orderSentence": "Dabigatran 75 mg PO BID"
+            "orderSentence": "Dabigatran 150 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal function q6-12 months; bleeding signs; GI side effects",
@@ -1252,29 +1156,17 @@
         {
           "item": "Warfarin",
           "route": "PO",
-          "indication": "-",
+          "indication": "AF-related stroke; mechanical valve (INR 2.5-3.5); DOAC unavailable",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg daily",
-                "orderSentence": "Warfarin 2 mg PO daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Warfarin 5 mg PO daily"
-              },
-              {
-                "text": "7.5 mg daily",
-                "orderSentence": "Warfarin 7.5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Warfarin 10 mg PO daily"
+                "text": "5 mg",
+                "orderSentence": "Warfarin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "5 mg PO daily initial (2-3 mg if elderly, low weight, or interacting drugs); target INR 2.0-3.0 for AF; 2.5-3.5 for mechanical valve. Bridge with heparin",
-            "orderSentence": "Warfarin 2 mg PO daily"
+            "orderSentence": "Warfarin 5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "INR daily until stable, then weekly, then monthly; diet counseling (vitamin K)",
@@ -1287,33 +1179,17 @@
         {
           "item": "Lisinopril",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; BP target <130/80",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg daily",
-                "orderSentence": "Lisinopril 2.5 mg PO daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Lisinopril 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Lisinopril 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Lisinopril 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Lisinopril 40 mg PO daily"
+                "text": "5-10 mg",
+                "orderSentence": "Lisinopril 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg PO daily; titrate to 20-40 mg daily; target BP <130/80 after acute phase",
-            "orderSentence": "Lisinopril 2.5 mg PO daily"
+            "orderSentence": "Lisinopril 5-10 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Cr and K+ at 1-2 weeks after initiation; BP",
@@ -1326,25 +1202,17 @@
         {
           "item": "Amlodipine",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; antihypertensive",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg daily",
-                "orderSentence": "Amlodipine 2.5 mg PO daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Amlodipine 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Amlodipine 10 mg PO daily"
+                "text": "5 mg",
+                "orderSentence": "Amlodipine 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg PO daily; max 10 mg daily",
-            "orderSentence": "Amlodipine 2.5 mg PO daily"
+            "orderSentence": "Amlodipine 5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "BP, peripheral edema",
@@ -1357,7 +1225,7 @@
         {
           "item": "Losartan",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; ACE-I intolerant",
           "dosing": {
             "doseOptions": [
               {
@@ -1380,25 +1248,17 @@
         {
           "item": "Metoprolol succinate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Secondary stroke prevention; rate control if concurrent AF",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Metoprolol 25 mg PO BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Metoprolol 50 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Metoprolol 100 mg PO BID"
+                "text": "25 mg",
+                "orderSentence": "Metoprolol succinate 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg PO daily; titrate to 200 mg daily",
-            "orderSentence": "Metoprolol 25 mg PO BID"
+            "orderSentence": "Metoprolol succinate 25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "HR, BP",
@@ -1411,17 +1271,17 @@
         {
           "item": "Ezetimibe",
           "route": "PO",
-          "indication": "-",
+          "indication": "LDL not at goal on max statin; add-on lipid lowering",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Ezetimibe 10 mg PO daily"
+                "text": "10 mg",
+                "orderSentence": "Ezetimibe 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "10 mg PO daily; add if LDL not at goal on max statin",
-            "orderSentence": "Ezetimibe 10 mg PO daily"
+            "orderSentence": "Ezetimibe 10 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "LFTs, lipid panel",
@@ -1434,7 +1294,7 @@
         {
           "item": "PCSK9 inhibitor (evolocumab)",
           "route": "SC",
-          "indication": "-",
+          "indication": "LDL not at goal on max statin + ezetimibe",
           "dosing": {
             "doseOptions": [
               {

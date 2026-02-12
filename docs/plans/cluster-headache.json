@@ -140,7 +140,7 @@
         {
           "item": "High-flow oxygen",
           "route": "INH",
-          "indication": "-",
+          "indication": "First-line abortive therapy for acute cluster headache attack",
           "dosing": {
             "doseOptions": [
               {
@@ -162,29 +162,17 @@
         {
           "item": "Sumatriptan SC",
           "route": "SC",
-          "indication": "-",
+          "indication": "Acute abortive treatment of cluster headache attack",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg PRN",
-                "orderSentence": "Sumatriptan 25 mg SC PRN"
-              },
-              {
-                "text": "50 mg PRN",
-                "orderSentence": "Sumatriptan 50 mg SC PRN"
-              },
-              {
-                "text": "100 mg PRN",
-                "orderSentence": "Sumatriptan 100 mg SC PRN"
-              },
-              {
-                "text": "6 mg PRN",
-                "orderSentence": "Sumatriptan 6 mg SC PRN"
+                "text": "6 mg",
+                "orderSentence": "Sumatriptan SC 6 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "6 mg SC; may use up to 2 doses/24h (minimum 1h apart); max 12 mg/24h",
-            "orderSentence": "Sumatriptan 25 mg SC PRN"
+            "orderSentence": "Sumatriptan SC 6 mg SC"
           },
           "contraindications": "CAD, uncontrolled HTN, recent stroke/TIA, hemiplegic migraine",
           "monitoring": "Chest tightness, BP",
@@ -196,29 +184,17 @@
         {
           "item": "Sumatriptan nasal",
           "route": "IN",
-          "indication": "-",
+          "indication": "Acute cluster headache attack when SC not available",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg PRN",
-                "orderSentence": "Sumatriptan 25 mg SC PRN"
-              },
-              {
-                "text": "50 mg PRN",
-                "orderSentence": "Sumatriptan 50 mg SC PRN"
-              },
-              {
-                "text": "100 mg PRN",
-                "orderSentence": "Sumatriptan 100 mg SC PRN"
-              },
-              {
-                "text": "6 mg PRN",
-                "orderSentence": "Sumatriptan 6 mg SC PRN"
+                "text": "20 mg",
+                "orderSentence": "Sumatriptan nasal 20 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "20 mg intranasal; less effective than SC",
-            "orderSentence": "Sumatriptan 25 mg SC PRN"
+            "orderSentence": "Sumatriptan nasal 20 mg SC"
           },
           "contraindications": "Same as SC",
           "monitoring": "Same",
@@ -230,21 +206,17 @@
         {
           "item": "Zolmitriptan nasal",
           "route": "IN",
-          "indication": "-",
+          "indication": "Acute cluster headache attack; alternative triptan option",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg PRN",
-                "orderSentence": "Zolmitriptan 2.5 mg IN PRN"
-              },
-              {
-                "text": "5 mg PRN",
-                "orderSentence": "Zolmitriptan 5 mg IN PRN"
+                "text": "5 mg",
+                "orderSentence": "Zolmitriptan nasal 5 mg IN"
               }
             ],
             "route": "IN",
             "instructions": "5 mg intranasal; may repeat in 2h; max 10 mg/24h",
-            "orderSentence": "Zolmitriptan 2.5 mg IN PRN"
+            "orderSentence": "Zolmitriptan nasal 5 mg IN"
           },
           "contraindications": "Same as sumatriptan",
           "monitoring": "Same",
@@ -256,7 +228,7 @@
         {
           "item": "Lidocaine intranasal",
           "route": "IN",
-          "indication": "-",
+          "indication": "Adjunctive acute relief for cluster headache attack",
           "dosing": {
             "doseOptions": [
               {
@@ -278,21 +250,17 @@
         {
           "item": "Octreotide SC",
           "route": "SC",
-          "indication": "-",
+          "indication": "Second-line acute cluster abortive when triptans contraindicated",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mcg before meals",
-                "orderSentence": "Octreotide 25 mcg before meals SC"
-              },
-              {
-                "text": "50 mcg before meals",
-                "orderSentence": "Octreotide 50 mcg before meals SC"
+                "text": "100 mcg",
+                "orderSentence": "Octreotide SC 100 mcg SC"
               }
             ],
             "route": "SC",
             "instructions": "100 mcg SC; second-line if triptans contraindicated",
-            "orderSentence": "Octreotide 25 mcg before meals SC"
+            "orderSentence": "Octreotide SC 100 mcg SC"
           },
           "contraindications": "None significant",
           "monitoring": "GI upset",
@@ -305,8 +273,8 @@
       "Transitional (Bridge) Therapy": [
         {
           "item": "Prednisone",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Transitional suppression of cluster attacks while preventive takes effect",
           "dosing": {
             "doseOptions": [
               {
@@ -328,25 +296,17 @@
         {
           "item": "Dexamethasone",
           "route": "PO",
-          "indication": "-",
+          "indication": "Bridge therapy for rapid cluster attack suppression",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h",
-                "orderSentence": "Dexamethasone 4 mg PO q6h"
-              },
-              {
-                "text": "10 mg once then 4 mg q6h",
-                "orderSentence": "Dexamethasone 10 mg PO once then 4 mg q6h"
-              },
-              {
-                "text": "16 mg daily",
-                "orderSentence": "Dexamethasone 16 mg PO daily"
+                "text": "4-8 mg",
+                "orderSentence": "Dexamethasone 4-8 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "4-8 mg BID × 1-2 weeks, then taper",
-            "orderSentence": "Dexamethasone 4 mg PO q6h"
+            "orderSentence": "Dexamethasone 4-8 mg PO"
           },
           "contraindications": "Same",
           "monitoring": "Same",
@@ -358,7 +318,7 @@
         {
           "item": "Greater occipital nerve block (GON block)",
           "route": "-",
-          "indication": "-",
+          "indication": "Transitional bridge therapy; rapid cluster attack relief",
           "dosing": {
             "doseOptions": [
               {
@@ -380,7 +340,7 @@
         {
           "item": "Suboccipital steroid injection",
           "route": "-",
-          "indication": "-",
+          "indication": "Transitional bridge therapy for cluster headache",
           "dosing": {
             "doseOptions": [
               {
@@ -402,7 +362,7 @@
         {
           "item": "DHE protocol (inpatient) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Inpatient bridge for refractory cluster attacks",
           "dosing": {
             "doseOptions": [
               {
@@ -426,33 +386,17 @@
         {
           "item": "Verapamil",
           "route": "PO",
-          "indication": "-",
+          "indication": "First-line preventive therapy for cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "80 mg TID",
-                "orderSentence": "Verapamil 80 mg PO TID"
-              },
-              {
-                "text": "120 mg TID",
-                "orderSentence": "Verapamil 120 mg PO TID"
-              },
-              {
-                "text": "240 mg daily",
-                "orderSentence": "Verapamil 240 mg PO daily"
-              },
-              {
-                "text": "360 mg daily",
-                "orderSentence": "Verapamil 360 mg PO daily"
-              },
-              {
-                "text": "480 mg daily",
-                "orderSentence": "Verapamil 480 mg PO daily"
+                "text": "80 mg",
+                "orderSentence": "Verapamil 80 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 80 mg TID; increase by 80 mg q1-2 weeks to 240-960 mg/day in divided doses (some patients need >480 mg/day)",
-            "orderSentence": "Verapamil 80 mg PO TID"
+            "orderSentence": "Verapamil 80 mg PO"
           },
           "contraindications": "Heart block (2nd/3rd degree), sick sinus, severe LV dysfunction, WPW",
           "monitoring": "ECG at baseline, after each dose increase; PR interval (hold if >280 ms)",
@@ -464,29 +408,17 @@
         {
           "item": "Lithium",
           "route": "PO",
-          "indication": "-",
+          "indication": "First-line preventive for chronic cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "300 mg BID",
-                "orderSentence": "Lithium 300 mg PO BID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Lithium 300 mg PO TID"
-              },
-              {
-                "text": "450 mg BID",
-                "orderSentence": "Lithium 450 mg PO BID"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Lithium 600 mg PO BID"
+                "text": "300 mg",
+                "orderSentence": "Lithium 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg BID-TID; target serum level 0.6-1.0 mEq/L; usual dose 600-1200 mg/day",
-            "orderSentence": "Lithium 300 mg PO BID"
+            "orderSentence": "Lithium 300 mg PO"
           },
           "contraindications": "Renal impairment, thyroid disease, dehydration, sodium depletion",
           "monitoring": "Lithium level, renal function, TSH q3-6 months",
@@ -500,33 +432,17 @@
         {
           "item": "Topiramate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Second-line preventive for cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Topiramate 25 mg PO BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Topiramate 50 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Topiramate 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Topiramate 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Topiramate 200 mg PO BID"
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily; titrate to 100-200 mg/day",
-            "orderSentence": "Topiramate 25 mg PO BID"
+            "orderSentence": "Topiramate 25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Kidney stones, glaucoma, pregnancy",
@@ -539,29 +455,17 @@
         {
           "item": "Melatonin",
           "route": "PO",
-          "indication": "-",
+          "indication": "Adjunctive preventive for cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg QHS",
-                "orderSentence": "Melatonin 1 mg PO QHS"
-              },
-              {
-                "text": "3 mg QHS",
-                "orderSentence": "Melatonin 3 mg PO QHS"
-              },
-              {
-                "text": "5 mg QHS",
-                "orderSentence": "Melatonin 5 mg PO QHS"
-              },
-              {
-                "text": "10 mg QHS",
-                "orderSentence": "Melatonin 10 mg PO QHS"
+                "text": "9-10 mg",
+                "orderSentence": "Melatonin 9-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "9-10 mg QHS (higher than sleep doses)",
-            "orderSentence": "Melatonin 1 mg PO QHS"
+            "orderSentence": "Melatonin 9-10 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "None significant",
@@ -574,21 +478,17 @@
         {
           "item": "Galcanezumab (CGRP mAb)",
           "route": "SC",
-          "indication": "-",
+          "indication": "FDA-approved preventive for episodic cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "120 mg monthly",
-                "orderSentence": "Galcanezumab 120 mg SC monthly"
-              },
-              {
-                "text": "240 mg loading dose",
-                "orderSentence": "Galcanezumab 240 mg SC loading dose"
+                "text": "300 mg",
+                "orderSentence": "Galcanezumab (CGRP mAb) 300 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "300 mg SC monthly (FDA approved for episodic CH)",
-            "orderSentence": "Galcanezumab 120 mg SC monthly"
+            "orderSentence": "Galcanezumab (CGRP mAb) 300 mg SC"
           },
           "pretreatment": "-",
           "contraindications": "Hypersensitivity",
@@ -601,29 +501,17 @@
         {
           "item": "Valproate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Second-line preventive for cluster headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Valproate 250 mg PO BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Valproate 500 mg PO BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Valproate 750 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Valproate 1000 mg PO BID"
+                "text": "500-2000 mg/day",
+                "orderSentence": "Valproate 500-2000 mg/day PO"
               }
             ],
             "route": "PO",
             "instructions": "500-2000 mg/day in divided doses",
-            "orderSentence": "Valproate 250 mg PO BID"
+            "orderSentence": "Valproate 500-2000 mg/day PO"
           },
           "pretreatment": "-",
           "contraindications": "Pregnancy, hepatic disease",
@@ -636,33 +524,17 @@
         {
           "item": "Gabapentin",
           "route": "PO",
-          "indication": "-",
+          "indication": "Second-line preventive for cluster headache; limited evidence",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "900-3600 mg/day",
+                "orderSentence": "Gabapentin 900-3600 mg/day PO"
               }
             ],
             "route": "PO",
             "instructions": "900-3600 mg/day; limited evidence",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin 900-3600 mg/day PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal impairment",
@@ -674,8 +546,8 @@
         },
         {
           "item": "Ergotamine (prophylactic)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Prophylactic for nocturnal cluster headache attacks",
           "dosing": {
             "doseOptions": [
               {
@@ -700,7 +572,7 @@
         {
           "item": "Combination verapamil + lithium",
           "route": "-",
-          "indication": "-",
+          "indication": "Refractory chronic cluster headache unresponsive to monotherapy",
           "dosing": {
             "doseOptions": [
               {
@@ -722,7 +594,7 @@
         {
           "item": "OnabotulinumtoxinA",
           "route": "-",
-          "indication": "-",
+          "indication": "Off-label for refractory chronic cluster headache",
           "dosing": {
             "doseOptions": [
               {
@@ -744,7 +616,7 @@
         {
           "item": "Occipital nerve stimulation (ONS)",
           "route": "-",
-          "indication": "-",
+          "indication": "Neuromodulation for medically refractory chronic cluster headache",
           "dosing": {
             "doseOptions": [
               {
@@ -766,7 +638,7 @@
         {
           "item": "Sphenopalatine ganglion stimulation",
           "route": "-",
-          "indication": "-",
+          "indication": "Neuromodulation for refractory chronic cluster headache",
           "dosing": {
             "doseOptions": [
               {
@@ -788,7 +660,7 @@
         {
           "item": "Deep brain stimulation (hypothalamus)",
           "route": "-",
-          "indication": "-",
+          "indication": "Experimental; highly refractory chronic cluster headache",
           "dosing": {
             "doseOptions": [
               {

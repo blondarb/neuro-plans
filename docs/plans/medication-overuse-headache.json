@@ -134,7 +134,7 @@
         {
           "item": "Abrupt discontinuation (simple analgesics, triptans)",
           "route": "-",
-          "indication": "-",
+          "indication": "Withdrawal of overused simple analgesics or triptans causing MOH",
           "dosing": {
             "doseOptions": [
               {
@@ -156,7 +156,7 @@
         {
           "item": "Gradual taper (opioids, barbiturates)",
           "route": "-",
-          "indication": "-",
+          "indication": "Controlled withdrawal of opioids or barbiturates causing MOH",
           "dosing": {
             "doseOptions": [
               {
@@ -178,7 +178,7 @@
         {
           "item": "Bridge therapy during withdrawal",
           "route": "-",
-          "indication": "-",
+          "indication": "Symptomatic relief during acute medication withdrawal period",
           "dosing": {
             "doseOptions": [
               {
@@ -201,8 +201,8 @@
       "Bridge Therapy During Withdrawal": [
         {
           "item": "Naproxen sodium (scheduled)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Scheduled bridge analgesia during MOH withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -223,8 +223,8 @@
         },
         {
           "item": "Prednisone (short course)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Short-course steroid bridge to reduce withdrawal headache severity",
           "dosing": {
             "doseOptions": [
               {
@@ -246,25 +246,17 @@
         {
           "item": "Dexamethasone",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid bridge alternative for MOH withdrawal headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h",
-                "orderSentence": "Dexamethasone 4 mg PO q6h"
-              },
-              {
-                "text": "10 mg once then 4 mg q6h",
-                "orderSentence": "Dexamethasone 10 mg PO once then 4 mg q6h"
-              },
-              {
-                "text": "16 mg daily",
-                "orderSentence": "Dexamethasone 16 mg PO daily"
+                "text": "4-8 mg",
+                "orderSentence": "Dexamethasone 4-8 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "4-8 mg daily × 5-7 days",
-            "orderSentence": "Dexamethasone 4 mg PO q6h"
+            "orderSentence": "Dexamethasone 4-8 mg PO"
           },
           "contraindications": "Same",
           "monitoring": "Same",
@@ -276,7 +268,7 @@
         {
           "item": "Nerve block (GON)",
           "route": "-",
-          "indication": "-",
+          "indication": "Greater occipital nerve block to reduce withdrawal headache",
           "dosing": {
             "doseOptions": [
               {
@@ -298,7 +290,7 @@
         {
           "item": "Antiemetics PRN",
           "route": "PO",
-          "indication": "-",
+          "indication": "Nausea and vomiting associated with medication withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -322,7 +314,7 @@
         {
           "item": "IV DHE protocol (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Inpatient abortive therapy for severe refractory MOH withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -344,7 +336,7 @@
         {
           "item": "IV magnesium",
           "route": "IV",
-          "indication": "-",
+          "indication": "Adjunctive therapy for headache during inpatient withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -366,7 +358,7 @@
         {
           "item": "IV ketorolac (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Non-opioid analgesic bridge for inpatient MOH withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -388,7 +380,7 @@
         {
           "item": "IV valproate",
           "route": "IV",
-          "indication": "-",
+          "indication": "Inpatient headache suppression during acute withdrawal",
           "dosing": {
             "doseOptions": [
               {
@@ -410,7 +402,7 @@
         {
           "item": "IV diphenhydramine",
           "route": "IV",
-          "indication": "-",
+          "indication": "Adjunct for nausea and akathisia with antiemetic therapy",
           "dosing": {
             "doseOptions": [
               {
@@ -432,7 +424,7 @@
         {
           "item": "Opioid taper protocol",
           "route": "-",
-          "indication": "-",
+          "indication": "Structured opioid taper for opioid-overuse headache with dependence",
           "dosing": {
             "doseOptions": [
               {
@@ -454,7 +446,7 @@
         {
           "item": "Barbiturate taper",
           "route": "-",
-          "indication": "-",
+          "indication": "Structured barbiturate taper for butalbital-overuse headache with dependence",
           "dosing": {
             "doseOptions": [
               {
@@ -478,33 +470,17 @@
         {
           "item": "Topiramate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Migraine prevention and MOH relapse prophylaxis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Topiramate 25 mg PO BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Topiramate 50 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Topiramate 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Topiramate 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Topiramate 200 mg PO BID"
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily; titrate to 50-100 mg BID",
-            "orderSentence": "Topiramate 25 mg PO BID"
+            "orderSentence": "Topiramate 25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Kidney stones, glaucoma, pregnancy",
@@ -516,34 +492,18 @@
         },
         {
           "item": "Amitriptyline",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Preventive therapy for MOH with tension-type or mixed headache",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QHS",
-                "orderSentence": "Amitriptyline 10 mg PO QHS"
-              },
-              {
-                "text": "25 mg QHS",
-                "orderSentence": "Amitriptyline 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Amitriptyline 50 mg PO QHS"
-              },
-              {
-                "text": "75 mg QHS",
-                "orderSentence": "Amitriptyline 75 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Amitriptyline 100 mg PO QHS"
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline 10-25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-25 mg QHS; titrate to 50-100 mg QHS",
-            "orderSentence": "Amitriptyline 10 mg PO QHS"
+            "orderSentence": "Amitriptyline 10-25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Cardiac arrhythmia, glaucoma",
@@ -556,29 +516,17 @@
         {
           "item": "Propranolol",
           "route": "PO",
-          "indication": "-",
+          "indication": "Migraine prophylaxis to prevent headache recurrence after withdrawal",
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg BID",
-                "orderSentence": "Propranolol 20 mg PO BID"
-              },
-              {
-                "text": "40 mg BID",
-                "orderSentence": "Propranolol 40 mg PO BID"
-              },
-              {
-                "text": "60 mg TID",
-                "orderSentence": "Propranolol 60 mg PO TID"
-              },
-              {
-                "text": "80 mg TID",
-                "orderSentence": "Propranolol 80 mg PO TID"
+                "text": "40 mg",
+                "orderSentence": "Propranolol 40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 40 mg BID; titrate to 80-160 mg/day",
-            "orderSentence": "Propranolol 20 mg PO BID"
+            "orderSentence": "Propranolol 40 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Asthma, heart block, bradycardia",
@@ -591,29 +539,17 @@
         {
           "item": "Venlafaxine XR",
           "route": "PO",
-          "indication": "-",
+          "indication": "Migraine prevention, especially with comorbid depression or anxiety",
           "dosing": {
             "doseOptions": [
               {
-                "text": "37.5 mg daily",
-                "orderSentence": "Venlafaxine Xr 37.5 mg PO daily"
-              },
-              {
-                "text": "75 mg daily",
-                "orderSentence": "Venlafaxine Xr 75 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Venlafaxine Xr 150 mg PO daily"
-              },
-              {
-                "text": "225 mg daily",
-                "orderSentence": "Venlafaxine Xr 225 mg PO daily"
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 37.5 mg daily; titrate to 75-150 mg daily",
-            "orderSentence": "Venlafaxine Xr 37.5 mg PO daily"
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Uncontrolled HTN, MAOIs",
@@ -626,25 +562,17 @@
         {
           "item": "OnabotulinumtoxinA (CPT J0585)",
           "route": "IM",
-          "indication": "-",
+          "indication": "Chronic migraine prevention in patients meeting PREEMPT criteria",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 units q3mo",
-                "orderSentence": "Onabotulinumtoxina 100 units IM q3mo"
-              },
-              {
-                "text": "155 units q3mo",
-                "orderSentence": "Onabotulinumtoxina 155 units IM q3mo"
-              },
-              {
-                "text": "200 units q3mo",
-                "orderSentence": "Onabotulinumtoxina 200 units IM q3mo"
+                "text": "155-195 units",
+                "orderSentence": "OnabotulinumtoxinA (CPT J0585) 155-195 units IM"
               }
             ],
             "route": "IM",
             "instructions": "155-195 units IM q12 weeks (if chronic migraine criteria met)",
-            "orderSentence": "Onabotulinumtoxina 100 units IM q3mo"
+            "orderSentence": "OnabotulinumtoxinA (CPT J0585) 155-195 units IM"
           },
           "pretreatment": "-",
           "contraindications": "Infection at site, myasthenia",
@@ -657,7 +585,7 @@
         {
           "item": "CGRP monoclonal antibodies",
           "route": "SC",
-          "indication": "-",
+          "indication": "Migraine prevention with potentially lower MOH recurrence risk",
           "dosing": {
             "doseOptions": [
               {
@@ -680,29 +608,17 @@
         {
           "item": "Valproate",
           "route": "PO",
-          "indication": "-",
+          "indication": "Migraine prophylaxis as alternative preventive agent",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Valproate 250 mg PO BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Valproate 500 mg PO BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Valproate 750 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Valproate 1000 mg PO BID"
+                "text": "250-500 mg",
+                "orderSentence": "Valproate 250-500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 250-500 mg BID; titrate to 500-1000 mg BID",
-            "orderSentence": "Valproate 250 mg PO BID"
+            "orderSentence": "Valproate 250-500 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Pregnancy, hepatic disease",
@@ -716,8 +632,8 @@
       "Rescue Medications (Limited Use After Withdrawal)": [
         {
           "item": "Triptan (limited)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Acute migraine rescue with strict frequency limits to prevent relapse",
           "dosing": {
             "doseOptions": [
               {
@@ -738,8 +654,8 @@
         },
         {
           "item": "NSAID (limited)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Acute headache rescue with strict frequency limits to prevent relapse",
           "dosing": {
             "doseOptions": [
               {
@@ -761,7 +677,7 @@
         {
           "item": "Gepants (preferred rescue)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Preferred acute rescue with potentially lower MOH recurrence risk",
           "dosing": {
             "doseOptions": [
               {
