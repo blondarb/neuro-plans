@@ -1,0 +1,1257 @@
+{
+  "id": "functional-cognitive-disorder",
+  "title": "Functional Cognitive Disorder (FCD)",
+  "version": "1.1",
+  "icd10": [
+    "** F44.89 (Other dissociative and conversion disorders)",
+    "R41.3 (Other amnesia)",
+    "R41.89 (Other symptoms and signs involving cognitive functions and awareness)"
+  ],
+  "scope": "** Evaluation and management of functional cognitive disorder -- subjective cognitive complaints (memory, attention, word-finding, concentration) with normal or near-normal objective neuropsychological testing. Differentiation from neurodegenerative dementias (Alzheimer disease, frontotemporal dementia, Lewy body dementia), mild cognitive impairment (MCI), and other organic causes of cognitive decline. Cognitive behavioral approaches, psychoeducation, and management of perpetuating comorbidities (depression, anxiety, sleep disorders, chronic pain). Complements existing FND and Dementia Evaluation plans. For broader FND management, see \"Functional Neurological Disorder\" template. For neurodegenerative dementia workup, see \"Dementia Evaluation\" template.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "rationale": "Baseline; rule out anemia, infection as contributor to cognitive symptoms",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (BMP + LFTs) (CPT 80053)",
+          "rationale": "Metabolic encephalopathy screen; hepatic/renal dysfunction causing cognitive impairment",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "rationale": "Hypothyroidism is a common, reversible cause of cognitive complaints",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "rationale": "B12 deficiency causes reversible cognitive impairment and must be excluded",
+          "target": "Normal (>300 pg/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate (CPT 82746)",
+          "rationale": "Folate deficiency associated with cognitive impairment",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Blood glucose (CPT 82947)",
+          "rationale": "Hypoglycemia/hyperglycemia as contributor to cognitive symptoms",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Vitamin D 25-OH (CPT 82306)",
+          "rationale": "Deficiency associated with cognitive complaints, fatigue, and mood disorders",
+          "target": "Normal (>30 ng/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR (CPT 85652)",
+          "rationale": "Inflammatory/autoimmune screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CRP (CPT 86140)",
+          "rationale": "Inflammatory screen",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Context-Dependent)": [
+        {
+          "item": "RPR/VDRL (CPT 86593)",
+          "rationale": "Neurosyphilis screen if risk factors or atypical presentation",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV screen (CPT 87389)",
+          "rationale": "HIV-associated neurocognitive disorder in at-risk populations",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "rationale": "Chronic glucose dysregulation contributing to cognitive symptoms",
+          "target": "Normal (<5.7%)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urinalysis (CPT 81003)",
+          "rationale": "UTI as contributor to acute cognitive change (especially elderly)",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen (CPT 80307)",
+          "rationale": "Substance use contributing to cognitive complaints",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Anti-TPO antibodies (CPT 86376)",
+          "rationale": "Hashimoto encephalopathy if autoimmune features present",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylmalonic acid (CPT 83921)",
+          "rationale": "Functional B12 deficiency when serum B12 borderline (200-400 pg/mL)",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cortisol (AM) (CPT 82533)",
+          "rationale": "Adrenal insufficiency causing fatigue and cognitive symptoms",
+          "target": "Normal (6-18 mcg/dL morning)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Autoimmune encephalitis antibody panel (serum and CSF)",
+          "rationale": "If subacute onset cognitive decline with psychiatric features; rule out anti-NMDAR or anti-LGI1 encephalitis",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel",
+          "rationale": "If atypical features, cancer history, or rapidly progressive cognitive decline",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Heavy metal panel (lead, mercury, arsenic) (CPT 83015+83825)",
+          "rationale": "If occupational/environmental exposure history",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Lyme serology (CPT 86618)",
+          "rationale": "If endemic area with compatible history",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF biomarkers (amyloid-beta 42, phospho-tau, total tau)",
+          "rationale": "If genuine concern for early Alzheimer disease vs FCD -- normal biomarkers strongly support FCD",
+          "target": "Normal (high amyloid-beta 42, low phospho-tau)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI brain with and without contrast (CPT 70553)",
+          "timing": "Within 2-4 weeks; not urgent unless red flags",
+          "target": "Normal (no atrophy, no white matter disease, no mass); provides reassurance and excludes structural pathology",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuropsychological testing (CPT 96132, 96133)",
+          "timing": "Outpatient; schedule within 1-3 months",
+          "target": "Normal or near-normal performance with internal inconsistency; effort testing normal; pattern inconsistent with neurodegenerative profile (see Clinical Notes)",
+          "contraindications": "Active psychiatric crisis; severe pain",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MoCA or MMSE (bedside cognitive screen) (CPT 96116)",
+          "timing": "At presentation; serial assessments",
+          "target": "Score typically normal (>26/30 MoCA) or mildly reduced due to inattention; stability over time supports FCD",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "FDG-PET brain (CPT 78608)",
+          "timing": "If clinical uncertainty between FCD and early neurodegeneration",
+          "target": "Normal metabolism (no temporoparietal or frontal hypometabolism); confirms absence of neurodegenerative pattern",
+          "contraindications": "Uncontrolled diabetes; pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Amyloid PET (Florbetapir/Florbetaben) (CPT 78811)",
+          "timing": "If diagnostic uncertainty for early Alzheimer disease vs FCD in patients 50-85 years",
+          "target": "Amyloid-negative supports FCD diagnosis; amyloid-positive raises concern for AD pathology",
+          "contraindications": "Pregnancy; severe renal impairment",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG (routine) (CPT 95816)",
+          "timing": "If seizure-related cognitive complaints or transient amnestic episodes",
+          "target": "Normal",
+          "contraindications": "None significant",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Volumetric MRI (hippocampal volume)",
+          "timing": "If longitudinal concern for progression",
+          "target": "Normal hippocampal volume (no atrophy)",
+          "contraindications": "Standard MRI contraindications",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF AD biomarkers (via lumbar puncture)",
+          "timing": "If amyloid PET unavailable and high diagnostic uncertainty",
+          "target": "Normal CSF amyloid/tau ratio (excludes AD)",
+          "contraindications": "Coagulopathy; raised ICP",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Tau PET (Flortaucipir)",
+          "timing": "Research or refractory diagnostic uncertainty",
+          "target": "Negative tau deposition",
+          "contraindications": "Pregnancy",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Polysomnography (CPT 95810)",
+          "timing": "If sleep disorder suspected as primary contributor (obstructive sleep apnea)",
+          "target": "Diagnose/exclude OSA",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent (Cognitive Crisis Presentations)": [
+        {
+          "item": "Reassurance and de-escalation",
+          "route": "-",
+          "indication": "Acute cognitive complaint presentation in ED; patient distress about memory loss",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Reassurance and de-escalation N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Use calm, validating language; \"I can see how distressing these symptoms are\"; avoid dismissive statements; do not say \"there's nothing wrong\"; provide clear plan for outpatient workup",
+            "orderSentence": "Reassurance and de-escalation N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient anxiety level; understanding of plan",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Exclude delirium/acute organic cause",
+          "route": "-",
+          "indication": "Acute confusion or cognitive change in ED/inpatient setting; must differentiate FCD exacerbation from delirium",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Exclude delirium/acute organic cause N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Complete metabolic workup; medication review; assess for infection, intoxication, metabolic derangement; CAM score for delirium; if negative for organic cause and consistent with known FCD pattern, reassure",
+            "orderSentence": "Exclude delirium/acute organic cause N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Mental status; vital signs; CAM score",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam (ONLY if severe panic/acute anxiety with cognitive symptoms)",
+          "route": "IV/PO",
+          "indication": "Severe acute anxiety with functional cognitive decompensation; NOT for routine FCD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5 mg",
+                "orderSentence": "Lorazepam (ONLY if severe panic/acute anxiety with cognitive symptoms) 0.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.5-1 mg PO or IV x1 PRN for severe anxiety only; do NOT use routinely; avoid repeated dosing; transition to non-benzodiazepine anxiolytic",
+            "orderSentence": "Lorazepam (ONLY if severe panic/acute anxiety with cognitive symptoms) 0.5 mg PO"
+          },
+          "contraindications": "Respiratory depression; acute alcohol intoxication; myasthenia gravis",
+          "monitoring": "Respiratory status; sedation level; do not continue beyond acute episode",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Diagnosis Communication and Psychoeducation (Core Treatment)": [
+        {
+          "item": "Structured diagnosis delivery session",
+          "route": "-",
+          "indication": "All FCD patients; the single most important therapeutic intervention",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Structured diagnosis delivery session N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Explain FCD as a real condition where the brain's \"filing system\" works correctly but the \"search function\" is disrupted; memory is encoded but retrieval is inefficient due to attention/anxiety interference; show patient their NORMAL test results as evidence that memory hardware is intact; contrast with dementia pattern; validate symptoms; express confidence in diagnosis and treatability",
+            "orderSentence": "Structured diagnosis delivery session N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient understanding; acceptance; emotional response; therapeutic alliance",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cognitive psychoeducation",
+          "route": "-",
+          "indication": "All FCD patients; understanding the mechanism of cognitive symptoms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Cognitive psychoeducation N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Teach the attention-memory model: anxiety and poor sleep hijack attentional resources needed for memory encoding and retrieval; demonstrate with divided attention tasks; explain that memory improves when attention improves; provide written materials and neurosymptoms.org/cognitive-symptoms",
+            "orderSentence": "Cognitive psychoeducation N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Patient engagement; comprehension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Family/caregiver education session",
+          "route": "-",
+          "indication": "Family members concerned about dementia; caregiver burden; family reinforcing illness behavior",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Family/caregiver education session N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Educate family that FCD is NOT dementia and will NOT progress to dementia; teach family to avoid \"testing\" the patient's memory (harmful); encourage normal activities and independence; reduce accommodation of avoidance behaviors",
+            "orderSentence": "Family/caregiver education session N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Family understanding; reduction in accommodation behaviors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Psychological Treatment (Primary Treatment)": [
+        {
+          "item": "Cognitive Behavioral Therapy (CBT) -- FCD-focused",
+          "route": "-",
+          "indication": "All FCD patients; addresses cognitive illness beliefs, attentional bias to errors, avoidance, catastrophizing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "12-16 sessions",
+                "orderSentence": "Cognitive Behavioral Therapy (CBT) -- FCD-focused 12-16 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Weekly 50-min sessions; FCD-specific CBT targeting: (1) unhelpful illness beliefs (\"I'm getting dementia\"), (2) attentional monitoring of cognitive errors, (3) avoidance of cognitively demanding activities, (4) safety behaviors (excessive list-making, reliance on reminders); includes behavioral experiments and graded cognitive challenges",
+            "orderSentence": "Cognitive Behavioral Therapy (CBT) -- FCD-focused 12-16 sessions -"
+          },
+          "contraindications": "Active psychosis; severe cognitive impairment (true dementia)",
+          "monitoring": "Cognitive complaint severity (self-report); PHQ-9; GAD-7; functional measures; return to activities",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Metacognitive therapy (MCT)",
+          "route": "-",
+          "indication": "FCD with prominent worry and rumination about cognitive symptoms; health anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "Metacognitive therapy (MCT) 8-12 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Weekly 50-min sessions; targets metacognitive beliefs (\"worrying about my memory helps me catch problems\"); reduces cognitive self-monitoring; attention training technique (ATT); detached mindfulness for intrusive thoughts about cognitive failure",
+            "orderSentence": "Metacognitive therapy (MCT) 8-12 sessions -"
+          },
+          "contraindications": "Active psychosis",
+          "monitoring": "Metacognitive beliefs questionnaire; worry frequency; cognitive complaint severity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acceptance and Commitment Therapy (ACT)",
+          "route": "-",
+          "indication": "FCD with avoidance of valued activities due to cognitive symptoms; fusion with thoughts about cognitive decline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-12 sessions",
+                "orderSentence": "Acceptance and Commitment Therapy (ACT) 8-12 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Weekly 50-min sessions; cognitive defusion from \"I'm losing my mind\" thoughts; values-based engagement in activities despite cognitive concerns; mindfulness of cognitive experiences without judgment",
+            "orderSentence": "Acceptance and Commitment Therapy (ACT) 8-12 sessions -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Valued activity engagement; cognitive complaint severity; acceptance measures",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mindfulness-Based Cognitive Therapy (MBCT)",
+          "route": "-",
+          "indication": "FCD with comorbid depression; recurrent worry cycles about cognition",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "8-week group program",
+                "orderSentence": "Mindfulness-Based Cognitive Therapy (MBCT) 8-week group program -"
+              }
+            ],
+            "route": "-",
+            "instructions": "8-week group (2 hours/week) plus home practice; adapted for FCD: mindful attention to present experience rather than monitoring for cognitive errors; body scan; sitting meditation; 3-minute breathing space",
+            "orderSentence": "Mindfulness-Based Cognitive Therapy (MBCT) 8-week group program -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "PHQ-9; GAD-7; cognitive complaint frequency; mindfulness practice adherence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychoeducational group therapy",
+          "route": "-",
+          "indication": "All FCD patients; reduces isolation; normalizes experience; peer support",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "6-8 sessions",
+                "orderSentence": "Psychoeducational group therapy 6-8 sessions -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Structured group (6-10 patients) covering FCD education, attention-memory model, stress management, graded cognitive activity, relapse prevention",
+            "orderSentence": "Psychoeducational group therapy 6-8 sessions -"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Attendance; patient satisfaction; cognitive complaint severity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Pharmacologic Management of Comorbidities": [
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Comorbid depression (present in >60% FCD patients); generalized anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; titrate q2-4wk by 25-50 mg; max 200 mg/day; takes 4-6 weeks for full effect",
+            "orderSentence": "Sertraline 50 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Suicidality (first 8 weeks); serotonin syndrome; QTc if risk factors; assess cognitive complaint trajectory at 8 weeks",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Comorbid depression and/or anxiety; better tolerated in elderly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Escitalopram 10 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily x 1 week in elderly; then 10 mg daily; max 20 mg/day (10 mg if >65 years)",
+            "orderSentence": "Escitalopram 10 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation (dose-dependent)",
+          "monitoring": "QTc if >65 years or cardiac risk; suicidality; hyponatremia in elderly",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Comorbid depression + chronic pain (fibromyalgia, chronic fatigue -- common FCD comorbidities)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma",
+          "monitoring": "BP; LFTs; serotonin syndrome; discontinuation syndrome (taper slowly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Comorbid depression + anxiety refractory to SSRI; somatic symptom burden",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily x 1 week; titrate q1wk by 37.5 mg; target 75-150 mg/day; max 225 mg/day",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
+          "monitoring": "BP; HR; discontinuation syndrome (taper very slowly -- long taper schedule)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine",
+          "route": "PO",
+          "indication": "Comorbid depression + insomnia + poor appetite (common in anxious FCD patients)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "7.5 mg",
+                "orderSentence": "Mirtazapine 7.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 7.5-15 mg qHS; may increase to 30 mg qHS; paradoxically more sedating at lower doses; max 45 mg/day",
+            "orderSentence": "Mirtazapine 7.5 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Weight gain; sedation; lipid profile; CBC (rare agranulocytosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia (common perpetuating factor in FCD; poor sleep worsens cognition)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg PO qHS; titrate q3-5d; max 100 mg qHS for insomnia",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QTc prolongation",
+          "monitoring": "Orthostatic hypotension; priapism (rare); sedation; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia; circadian rhythm disruption contributing to daytime cognitive fog",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO 30-60 min before desired bedtime; use immediate-release formulation; max 5 mg/day",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sleep quality; daytime alertness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydroxyzine",
+          "route": "PO",
+          "indication": "Acute situational anxiety; PRN anxiolytic without benzodiazepine risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Hydroxyzine 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg PO q6-8h PRN anxiety; max 100 mg/dose",
+            "orderSentence": "Hydroxyzine 25 mg PO"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment",
+          "monitoring": "QTc; sedation; anticholinergic effects (caution in elderly)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Somatic anxiety symptoms (palpitations, tremor) contributing to cognitive performance anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Propranolol 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg PO BID; titrate q1wk; max 80 mg BID; helpful before cognitively demanding situations",
+            "orderSentence": "Propranolol 10 mg PO"
+          },
+          "contraindications": "Asthma; AV block; bradycardia; decompensated CHF",
+          "monitoring": "HR; BP; bronchospasm",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Buspirone",
+          "route": "PO",
+          "indication": "Generalized anxiety disorder comorbidity; alternative to benzodiazepines for chronic anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Buspirone 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg PO TID; titrate q2-3d by 5 mg/day; max 60 mg/day; takes 2-4 weeks for full effect",
+            "orderSentence": "Buspirone 5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Dizziness; headache; serotonin syndrome if combined with SSRI/SNRI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Cholinesterase Inhibitor Taper (If Inappropriately Prescribed)": [
+        {
+          "item": "Gradual donepezil taper",
+          "route": "PO",
+          "indication": "Patient with confirmed FCD who was inappropriately started on donepezil; discontinuation to avoid side effects and illness reinforcement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per taper schedule",
+                "orderSentence": "Gradual donepezil taper Per taper schedule PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "If on 10 mg, reduce to 5 mg x 2-4 weeks, then discontinue; reassure patient this medication was for a different condition; explain FCD does not require this treatment",
+            "orderSentence": "Gradual donepezil taper Per taper schedule PO"
+          },
+          "contraindications": "True comorbid Alzheimer disease (confirm with biomarkers before discontinuing)",
+          "monitoring": "Cognitive complaint trajectory; reassurance; no withdrawal syndrome expected",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology (cognitive-behavioral specialist if available) for FCD diagnosis confirmation, neuropsychological test interpretation, and structured diagnosis delivery",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Neuropsychology for formal cognitive testing to differentiate FCD from neurodegenerative MCI/dementia and identify specific cognitive profile",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Clinical psychology (CBT-trained) for cognitive-behavioral therapy targeting illness beliefs, attentional bias, and avoidance behaviors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Psychiatry for medication management of comorbid depression/anxiety if refractory to primary care treatment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep medicine if suspected obstructive sleep apnea or primary sleep disorder contributing to daytime cognitive dysfunction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy for cognitive strategy training and return-to-work/school support",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for disability support, workplace accommodation, and psychosocial stressors contributing to FCD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Primary care follow-up for chronic disease management, medication reconciliation, and longitudinal cognitive monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management if chronic pain comorbidity (fibromyalgia, chronic headache) contributing to cognitive complaints",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Peer support group for functional neurological disorders (FND Hope, FND Action) for normalization and shared experience",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Your cognitive symptoms are REAL -- Functional Cognitive Disorder means your brain's \"search engine\" is working inefficiently, but your memory storage is intact (this is NOT dementia)",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Visit www.neurosymptoms.org/cognitive-symptoms for reliable, expert-written information about functional cognitive symptoms",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "FCD does NOT progress to dementia -- your brain structure is healthy; cognitive efficiency improves with treatment of underlying anxiety, depression, and sleep problems",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stop monitoring your memory for errors -- constantly checking whether you remembered something correctly WORSENS cognitive performance by diverting attention (like a computer running too many background programs)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Reduce reliance on excessive compensatory strategies (constant list-making, asking others to confirm memories, avoiding new information) -- these safety behaviors maintain the problem",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Prioritize sleep -- poor sleep is one of the strongest drivers of cognitive inefficiency; aim for 7-9 hours of consistent, quality sleep",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Engage with recommended psychological therapy (CBT, MCT) -- these are the evidence-based treatments for FCD and have demonstrated improvement in studies",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Limit internet searches about dementia -- health anxiety and \"Dr. Google\" reinforce catastrophic beliefs and worsen cognitive symptoms",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Return to activities you have been avoiding due to cognitive concerns -- gradual re-engagement improves cognitive confidence and function",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Return to ED for NEW symptoms clearly different from your usual cognitive complaints, such as sudden severe headache, sudden confusion with fever, one-sided weakness, or seizures",
+          "ED": "Y",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Regular aerobic exercise (30 min, 5x/week) to improve mood, sleep quality, and cognitive function through increased cerebral blood flow and neuroplasticity",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Sleep hygiene optimization: consistent bed/wake times, avoid screens 1 hour before bed, limit caffeine after noon, dark/cool bedroom -- poor sleep is the #1 modifiable perpetuating factor for FCD",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Stress management through mindfulness, breathing exercises, progressive muscle relaxation, or yoga -- chronic stress impairs attentional resources needed for memory",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Limit alcohol intake (alcohol directly impairs cognitive function and sleep architecture, worsening FCD symptoms)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Maintain social engagement and intellectually stimulating activities -- isolation and cognitive inactivity worsen subjective cognitive complaints",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Pacing activities to avoid cognitive overload -- schedule demanding tasks during peak alertness (typically morning); take breaks to prevent attention fatigue",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Balanced diet with emphasis on Mediterranean-style eating pattern for brain health (fruits, vegetables, whole grains, omega-3 fatty acids)",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        },
+        {
+          "item": "Reduce multitasking -- single-task focus improves cognitive performance; multitasking divides attention and increases subjective memory failures",
+          "ED": "-",
+          "HOSP": "Y",
+          "OPD": "Y"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Alzheimer disease (early/prodromal)",
+      "features": "Progressive episodic memory loss with encoding failure; hippocampal atrophy; abnormal biomarkers; insidious onset over years; loss of recent memories with preservation of remote",
+      "tests": "Neuropsychological testing (encoding deficit with poor cuing); MRI (hippocampal atrophy); amyloid PET or CSF biomarkers (abnormal amyloid/tau); FDG-PET (temporoparietal hypometabolism)"
+    },
+    {
+      "diagnosis": "Mild Cognitive Impairment (amnestic MCI)",
+      "features": "Objective memory impairment (1-1.5 SD below norms) with preserved daily function; gradual progression; may convert to dementia",
+      "tests": "Neuropsychological testing (objective deficit on delayed recall); serial testing (progressive decline); biomarkers if available"
+    },
+    {
+      "diagnosis": "Frontotemporal dementia (behavioral variant)",
+      "features": "Personality change; disinhibition; apathy; executive dysfunction; relatively preserved memory; frontal atrophy",
+      "tests": "Neuropsychological testing (executive > memory deficit); MRI (frontal/temporal atrophy); FDG-PET (frontal hypometabolism)"
+    },
+    {
+      "diagnosis": "Lewy body dementia",
+      "features": "Visual hallucinations; fluctuating cognition; parkinsonism; REM sleep behavior disorder; visuospatial deficits",
+      "tests": "DaTscan (abnormal); polysomnography (RBD); neuropsychological testing (visuospatial + attention > memory); MRI (less atrophy than AD)"
+    },
+    {
+      "diagnosis": "Depression with cognitive symptoms (pseudodementia)",
+      "features": "Prominent mood symptoms preceding cognitive complaints; effort-related poor performance; improves with antidepressant treatment; \"I don't know\" responses",
+      "tests": "PHQ-9; neuropsychological testing (effort-dependent, inconsistent performance); treatment response to antidepressants"
+    },
+    {
+      "diagnosis": "Anxiety disorder with cognitive complaints",
+      "features": "Prominent anxiety; attentional deficits secondary to worry; catastrophizing about normal memory lapses; hypervigilance to cognitive errors",
+      "tests": "GAD-7; neuropsychological testing (attention/processing speed deficits with intact memory encoding); treatment response"
+    },
+    {
+      "diagnosis": "Obstructive sleep apnea",
+      "features": "Excessive daytime sleepiness; snoring; witnessed apneas; morning headaches; cognitive fog improves after CPAP treatment",
+      "tests": "Polysomnography (AHI); CPAP trial with cognitive reassessment"
+    },
+    {
+      "diagnosis": "Medication-induced cognitive impairment",
+      "features": "Temporal correlation with medication initiation; anticholinergic burden; benzodiazepines; opioids; anticonvulsants",
+      "tests": "Medication review (Beers criteria, anticholinergic burden score); trial medication reduction; cognitive reassessment"
+    },
+    {
+      "diagnosis": "Chronic fatigue syndrome / fibromyalgia",
+      "features": "Prominent fatigue and \"brain fog\"; widespread pain; sleep disruption; overlaps significantly with FCD",
+      "tests": "Clinical criteria for CFS/fibromyalgia; neuropsychological testing shows attention/processing speed deficits"
+    },
+    {
+      "diagnosis": "Normal aging",
+      "features": "Mild subjective cognitive slowing; tip-of-the-tongue phenomena; normal neuropsychological performance; not functionally impairing",
+      "tests": "Age-adjusted neuropsychological norms (performance within normal range); stable over time"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-LGI1, anti-NMDAR)",
+      "features": "Subacute onset; seizures; psychiatric symptoms; movement disorder; MRI/EEG abnormalities",
+      "tests": "Autoimmune encephalitis antibody panel (serum and CSF); MRI; EEG"
+    },
+    {
+      "diagnosis": "Delirium",
+      "features": "Acute onset; fluctuating attention; altered consciousness; identifiable medical cause",
+      "tests": "CAM score; metabolic workup; medication review; resolves with treatment of underlying cause"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "FCD diagnostic criteria and clinical features",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Ball HA et al. Brain 2020;143:2895-2903](https://pubmed.ncbi.nlm.nih.gov/33011770/)"
+    },
+    {
+      "recommendation": "FCD prevalence and clinical characterization in memory clinics",
+      "evidenceLevel": "Class II",
+      "source": "[Pennington C et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272](https://pubmed.ncbi.nlm.nih.gov/25511789/)"
+    },
+    {
+      "recommendation": "Neuropsychological profile differentiation: FCD vs MCI vs early AD",
+      "evidenceLevel": "Class II",
+      "source": "[Stone J et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272](https://pubmed.ncbi.nlm.nih.gov/25511789/)"
+    },
+    {
+      "recommendation": "CBT for health anxiety and functional somatic symptoms (applicable to FCD)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Tyrer P et al. Lancet 2014;383:219-225](https://pubmed.ncbi.nlm.nih.gov/24139977/)"
+    },
+    {
+      "recommendation": "Attention-memory model of functional cognitive symptoms",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Teodoro T et al. Neurol Clin 2023;41:703-717](https://pubmed.ncbi.nlm.nih.gov/37775206/)"
+    },
+    {
+      "recommendation": "FND including functional cognitive symptoms -- comprehensive review",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Perez DL et al. Lancet Neurol 2021;20:973-985](https://pubmed.ncbi.nlm.nih.gov/34687636/)"
+    },
+    {
+      "recommendation": "Subjective cognitive decline framework and biomarker differentiation",
+      "evidenceLevel": "Class II",
+      "source": "[Jessen F et al. Alzheimers Dement 2014;10:844-852](https://pubmed.ncbi.nlm.nih.gov/24798886/)"
+    },
+    {
+      "recommendation": "CSF and amyloid PET biomarkers to exclude Alzheimer pathology",
+      "evidenceLevel": "Class I",
+      "source": "[Jack CR et al. Alzheimers Dement 2018;14:535-562](https://pubmed.ncbi.nlm.nih.gov/29653606/)"
+    },
+    {
+      "recommendation": "Metacognitive therapy for health anxiety and worry (applicable to FCD)",
+      "evidenceLevel": "Class I (RCT)",
+      "source": "[Wells A et al. J Consult Clin Psychol 2015;83:629-639](https://pubmed.ncbi.nlm.nih.gov/25495361/)"
+    },
+    {
+      "recommendation": "Sleep disruption and cognitive performance in healthy adults",
+      "evidenceLevel": "Class II",
+      "source": "[Lim J, Dinges DF. Ann NY Acad Sci 2008;1129:305-322](https://pubmed.ncbi.nlm.nih.gov/18591490/)"
+    },
+    {
+      "recommendation": "Cholinesterase inhibitors not indicated for subjective cognitive complaints without objective impairment",
+      "evidenceLevel": "Expert Consensus",
+      "source": "[Petersen RC et al. Neurology 2018;90:126-135](https://pubmed.ncbi.nlm.nih.gov/29282327/)"
+    },
+    {
+      "recommendation": "FND diagnosis communication -- best practices",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621"
+    },
+    {
+      "recommendation": "neurosymptoms.org validated patient resource",
+      "evidenceLevel": "Expert Consensus",
+      "source": "Stone J. Practical Neurology 2014;14:368-379"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Cognitive complaint severity (self-report visual analog scale or Cognitive Failures Questionnaire)",
+      "frequency": "Each visit",
+      "action": "Reassess treatment plan; address perpetuating factors; consider alternative psychological therapy modality",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "PHQ-9 (depression screening)",
+      "frequency": "Each visit",
+      "action": "Adjust antidepressant; intensify psychological treatment; psychiatric referral if refractory",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "GAD-7 (anxiety screening)",
+      "frequency": "Each visit",
+      "action": "Adjust anxiolytic therapy; psychological treatment intensification",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MoCA or brief cognitive screen",
+      "frequency": "Baseline; q6-12 months",
+      "action": "If declining: repeat neuropsychological testing to exclude emerging neurodegenerative process",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Sleep quality (Pittsburgh Sleep Quality Index or Insomnia Severity Index)",
+      "frequency": "Each visit",
+      "action": "Sleep hygiene review; consider pharmacologic sleep aid; sleep medicine referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neuropsychological testing (formal)",
+      "frequency": "Baseline; repeat at 12-18 months if diagnostic uncertainty",
+      "action": "If progressive decline on serial formal testing: reconsider diagnosis; biomarker workup for neurodegeneration",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Functional status (return to work/school/activities)",
+      "frequency": "Each visit",
+      "action": "Address avoidance behaviors; occupational therapy; graded activity plan",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Treatment engagement (attendance at therapy sessions)",
+      "frequency": "Each visit",
+      "action": "Explore barriers; motivational interviewing; adjust treatment modality",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Medication side effects",
+      "frequency": "Each visit (if on psychotropics)",
+      "action": "Dose adjustment; medication switch; reassess need",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Safety behaviors and avoidance (self-monitoring, list dependence, activity avoidance)",
+      "frequency": "Each visit",
+      "action": "Behavioral activation; CBT focus on safety behavior reduction",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Acute organic cause excluded; FCD suspected or confirmed; patient reassured; outpatient neurology/neuropsychology referral arranged; return precautions provided; primary care follow-up scheduled"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Diagnostic uncertainty requiring expedited workup (subacute onset raising concern for autoimmune encephalitis or rapidly progressive dementia); acute psychiatric comorbidity (suicidality, severe depression); unable to care for self due to functional disability"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Generally NOT indicated for FCD; consider only if: iatrogenic complications (e.g., medication toxicity); concurrent acute medical condition requiring ICU care"
+    },
+    {
+      "disposition": "**Transfer to higher level of care**",
+      "criteria": "Neuropsychology not available locally; specialized FND/FCD clinic referral; inpatient psychiatric care if severe comorbid psychiatric illness"
+    },
+    {
+      "disposition": "**Outpatient follow-up**",
+      "criteria": "ALL patients: neurology follow-up within 2-4 weeks for diagnosis delivery and education; neuropsychological testing within 1-3 months; psychology referral (CBT) within 1 month; PCP for comorbidity management"
+    },
+    {
+      "disposition": "**Readmission criteria**",
+      "criteria": "Acute cognitive change DIFFERENT from baseline FCD pattern (new confusion, fever, focal deficits -- evaluate for new organic pathology); acute psychiatric emergency; failure of outpatient treatment with severe functional decline"
+    }
+  ]
+}

@@ -7,9 +7,9 @@ title: Template Tracker
 ## Project Tracker
 
 **Created:** January 15, 2026
-**Last Updated:** February 11, 2026
+**Last Updated:** February 12, 2026
 **Target:** 150+ validated templates
-**Current Status:** 154 templates approved
+**Current Status:** 163 templates approved — BACKLOG COMPLETE
 
 ---
 
@@ -88,7 +88,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | MOG Antibody Disease (MOGAD) | G36.9 | 🎯 OPD | Approved |
 | ✅ | Acute Disseminated Encephalomyelitis (ADEM) | G04.81 | 🎯 OPD | Approved 2026-02-11 |
 | ✅ | Progressive Multifocal Leukoencephalopathy (PML) | A81.2 | 🎯 OPD | Approved 2026-02-11 |
-| ⬜ | Diffuse White Matter Disease | R53.1 | 🎯 OPD | Differential diagnosis |
+| ✅ | Diffuse White Matter Disease | R53.1 | 🎯 OPD | Approved 2026-02-12 |
 
 ### Neuromuscular Disorders
 
@@ -161,7 +161,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Creutzfeldt-Jakob Disease (CJD) | A81.00 | 🎯 OPD | Approved |
 | ✅ | Autoimmune Dementia/Encephalopathy | G04.81 | 🎯 OPD | Approved |
 | ✅ | Delirium vs Dementia | R41.0 | 🎯 OPD | Approved |
-| ⬜ | Wernicke-Korsakoff Syndrome | F10.96 | 🎯 OPD | Thiamine deficiency |
+| ✅ | Wernicke-Korsakoff Syndrome | F10.96 | 🎯 OPD | Approved 2026-02-12 |
 
 ### CNS Infections
 
@@ -191,8 +191,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Paraneoplastic Neurological Syndrome | G13.0 | 🎯 OPD | Antibody panels |
 | ✅ | Meningioma | D32.9 | 🎯 OPD | Approved |
 | ✅ | Primary CNS Lymphoma | C85.19 | 🎯 OPD | Approved |
-| ⬜ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Delayed complications |
-| ⬜ | Myelopathy (General) | G99.2 | 🎯 OPD | DDx approach |
+| ✅ | Radiation-Induced Neurologic Injury | G93.89 | 🎯 OPD | Approved 2026-02-12 |
+| ✅ | Myelopathy (General) | G99.2 | 🎯 OPD | Approved 2026-02-12 |
 
 ### Spinal Cord Disorders
 
@@ -201,8 +201,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Cauda Equina Syndrome | G83.4 | 🎯 OPD | Approved |
 | ✅ | Cervical Myelopathy (Degenerative) | M47.22 | 🎯 OPD | Approved |
 | ✅ | Lumbar Stenosis | M48.06 | 🎯 OPD | Approved |
-| ⬜ | Syringomyelia | G95.0 | 🎯 OPD | Rare |
-| ⬜ | Subacute Combined Degeneration | E53.8 | 🎯 OPD | B12 deficiency |
+| ✅ | Syringomyelia | G95.0 | 🎯 OPD | Approved 2026-02-12 |
+| ✅ | Subacute Combined Degeneration | E53.8 | 🎯 OPD | Approved 2026-02-12 |
 
 ### Autoimmune & Inflammatory
 
@@ -220,8 +220,8 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 |--------|-----------|--------|----------|-------|
 | ✅ | Functional Neurological Disorder (FND) | F44.9 | 🎯 OPD | Approved |
 | ✅ | Psychogenic Non-Epileptic Spells (PNES) | F44.4 | 🎯 OPD | Approved |
-| ⬜ | Functional Movement Disorder | F44.4 | 🎯 OPD | Clinical signs |
-| ⬜ | Functional Cognitive Disorder | F44.4 | 🎯 OPD | DDx with dementia |
+| ✅ | Functional Movement Disorder | F44.4 | 🎯 OPD | Approved 2026-02-12 |
+| ✅ | Functional Cognitive Disorder | F44.4 | 🎯 OPD | Approved 2026-02-12 |
 
 ### Neurocritical Care
 
@@ -245,7 +245,7 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | ✅ | Nystagmus Evaluation | H55.00 | 🎯 OPD | Approved |
 | ✅ | Post-Concussion Syndrome | F07.81 | 🎯 OPD | Approved |
 | ✅ | Traumatic Brain Injury (TBI) | S06.9 | 🎯 OPD | Approved |
-| ⬜ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Emerging area |
+| ✅ | Chronic Traumatic Encephalopathy (CTE) | G31.89 | 🎯 OPD | Approved 2026-02-12 |
 | ✅ | Obstructive Sleep Apnea (Neurologic) | G47.33 | 🎯 OPD | Approved |
 | ✅ | Idiopathic Hypersomnia | G47.11 | 🎯 OPD | Approved |
 | ✅ | Narcolepsy | G47.419 | 🎯 OPD | Approved |
@@ -275,21 +275,21 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | Seizure/Epilepsy | 8 | 0 | 8 |
 | Stroke/Cerebrovascular | 12 | 0 | 12 |
 | Headache | 16 | 0 | 16 |
-| Demyelinating | 8 | 1 | 9 |
+| Demyelinating | 9 | 0 | 9 |
 | Neuromuscular | 27 | 0 | 27 |
 | Movement Disorders | 18 | 0 | 18 |
-| Dementia/Cognitive | 11 | 1 | 12 |
+| Dementia/Cognitive | 12 | 0 | 12 |
 | CNS Infections | 12 | 0 | 12 |
-| Neuro-oncology | 7 | 2 | 9 |
-| Spinal Cord | 3 | 2 | 5 |
+| Neuro-oncology | 9 | 0 | 9 |
+| Spinal Cord | 5 | 0 | 5 |
 | Autoimmune/Inflammatory | 4 | 0 | 4 |
-| Functional/Psychiatric | 2 | 2 | 4 |
+| Functional/Psychiatric | 4 | 0 | 4 |
 | Neurocritical Care | 5 | 0 | 5 |
-| Other/Miscellaneous | 18 | 2 | 20 |
+| Other/Miscellaneous | 20 | 0 | 20 |
 | Autonomic & Pain | 5 | 0 | 5 |
-| **TOTAL** | **154** | **9** | **163** |
+| **TOTAL** | **163** | **0** | **163** |
 
-**Note:** 154 approved plans. 9 conditions remain to build (final batch in progress). Plus Parkinson's Disease has separate Management and New Diagnosis plans.
+**Note:** 163 approved plans. All conditions built and approved — backlog fully cleared. Plus Parkinson's Disease has separate Management and New Diagnosis plans.
 
 ---
 
@@ -454,6 +454,15 @@ These diagnoses are prioritized for the outpatient clinical tool. Items marked w
 | 155 | Muscular Dystrophy (Adult) | v1.1 | Feb 11, 2026 |
 | 156 | Hereditary Neuropathy / CMT | v1.1 | Feb 11, 2026 |
 | 157 | Gait Disorder Evaluation | v1.1 | Feb 11, 2026 |
+| 158 | Diffuse White Matter Disease | v1.1 | Feb 12, 2026 |
+| 159 | Wernicke-Korsakoff Syndrome | v1.1 | Feb 12, 2026 |
+| 160 | Radiation-Induced Neurologic Injury | v1.1 | Feb 12, 2026 |
+| 161 | Myelopathy — General Evaluation | v1.1 | Feb 12, 2026 |
+| 162 | Subacute Combined Degeneration | v1.1 | Feb 12, 2026 |
+| 163 | Syringomyelia | v1.1 | Feb 12, 2026 |
+| 164 | Functional Movement Disorder | v1.1 | Feb 12, 2026 |
+| 165 | Functional Cognitive Disorder | v1.1 | Feb 12, 2026 |
+| 166 | Chronic Traumatic Encephalopathy (CTE) | v1.1 | Feb 12, 2026 |
 
 ---
 
@@ -505,6 +514,10 @@ All original Tiers 1-13 are complete. 30 conditions remain. Updated priorities:
 ---
 
 ## CHANGE LOG
+
+**February 12, 2026**
+- BACKLOG COMPLETE: Approved final 9 plans (#155-163): Diffuse White Matter Disease, Wernicke-Korsakoff Syndrome, Radiation-Induced Neurologic Injury, Myelopathy (General), Subacute Combined Degeneration, Syringomyelia, Functional Movement Disorder, Functional Cognitive Disorder, CTE
+- All 163 conditions now approved. Zero remaining to build.
 
 **February 11, 2026**
 - Approved 10 Tier 14C-D plans (#148-157): Autonomic Neuropathy, Vasculitic Neuropathy, MMN, CBD, Chorea Evaluation, ADEM, PML, Muscular Dystrophy (Adult), Hereditary Neuropathy (CMT), Gait Disorder Evaluation

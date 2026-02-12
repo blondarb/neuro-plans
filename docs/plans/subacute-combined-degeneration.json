@@ -1,0 +1,1560 @@
+{
+  "id": "subacute-combined-degeneration",
+  "title": "Subacute Combined Degeneration",
+  "version": "1.1",
+  "icd10": [
+    "** E53.8 (Other specified vitamin B deficiencies)",
+    "G32.0 (Subacute combined degeneration of spinal cord in diseases classified elsewhere)",
+    "D51.9 (Vitamin B12 deficiency anemia",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of subacute combined degeneration (SCD) of the spinal cord, focusing on myelopathy from posterior column and lateral corticospinal tract demyelination. Covers B12 deficiency as the primary etiology, with additional coverage of copper deficiency and nitrous oxide toxicity as alternative/contributory causes. Includes diagnostic workup with emphasis on MRI findings, B12 replacement protocols, spasticity management, rehabilitation, and long-term monitoring. Complements the existing B12 Deficiency Neuropathy plan (which focuses on peripheral nerve involvement). Excludes pure peripheral neuropathy without myelopathy and pure hematologic B12 deficiency without neurological involvement.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Essential/Core Labs": [
+        {
+          "item": "Serum vitamin B12",
+          "rationale": "Confirm B12 deficiency; <200 pg/mL diagnostic; 200-400 pg/mL borderline; SCD can occur with borderline levels",
+          "target": ">400 pg/mL (normal)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylmalonic acid (MMA)",
+          "rationale": "Most sensitive marker of tissue B12 deficiency; elevated even when serum B12 borderline; essential for diagnosis when B12 is 200-400 pg/mL",
+          "target": "Normal (<0.4 umol/L)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Homocysteine",
+          "rationale": "Elevated in both B12 and folate deficiency; supports metabolic B12 deficiency when MMA elevated",
+          "target": "Normal (<15 umol/L)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CBC with differential",
+          "rationale": "Macrocytic anemia (MCV >100) supports B12 deficiency; however 25-30% of SCD patients have normal MCV; hypersegmented neutrophils; pancytopenia possible",
+          "target": "Normal; no macrocytosis",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Peripheral blood smear",
+          "rationale": "Macro-ovalocytes, hypersegmented neutrophils (>=5 lobes); megaloblastic changes; absence does not exclude SCD",
+          "target": "Normal morphology",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CMP (BMP + LFTs)",
+          "rationale": "Renal dysfunction affects MMA interpretation; LDH elevated in megaloblastic anemia; electrolytes for potassium monitoring during replacement",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Folate (serum and RBC)",
+          "rationale": "Rule out concurrent folate deficiency; folate replacement alone may worsen SCD neurological damage by correcting anemia while masking B12 deficiency",
+          "target": "Normal (serum >4 ng/mL; RBC folate >280 ng/mL)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "LDH",
+          "rationale": "Markedly elevated in megaloblastic anemia due to intramedullary hemolysis and ineffective erythropoiesis",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Reticulocyte count",
+          "rationale": "Low in megaloblastic anemia; reticulocyte crisis at day 5-7 of treatment confirms response",
+          "target": "Normal; monitor for treatment response",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Copper level",
+          "rationale": "Copper deficiency produces myelopathy identical to B12 SCD; must be excluded in all cases; may co-occur with B12 deficiency post-bariatric surgery",
+          "target": "Normal (70-155 mcg/dL)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Zinc level",
+          "rationale": "Excess zinc supplementation causes copper depletion; common cause of copper-deficient myelopathy",
+          "target": "Normal",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Workup (Etiology)": [
+        {
+          "item": "Intrinsic factor antibodies",
+          "rationale": "Highly specific (>95%) for pernicious anemia; sensitivity ~50-70%; positive result confirms autoimmune etiology",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-parietal cell antibodies",
+          "rationale": "Sensitive (~80-90%) but less specific for pernicious anemia; positive in other autoimmune conditions",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastrin level (fasting)",
+          "rationale": "Elevated in pernicious anemia due to achlorhydria; helps confirm autoimmune atrophic gastritis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ceruloplasmin",
+          "rationale": "Low in copper deficiency; aids in confirming copper-deficient myelopathy when copper level low",
+          "target": "Normal (20-40 mg/dL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Autoimmune thyroid disease co-occurs with pernicious anemia (autoimmune polyglandular syndrome)",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tissue transglutaminase IgA (tTG-IgA)",
+          "rationale": "Celiac disease screening; celiac causes malabsorption of B12 and copper at terminal ileum",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Total IgA",
+          "rationale": "IgA deficiency causes false-negative celiac serologies; must order with tTG-IgA",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Iron studies (ferritin, TIBC)",
+          "rationale": "Co-existing iron deficiency may mask macrocytosis; combined deficiency common in pernicious anemia",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Holotranscobalamin (active B12)",
+          "rationale": "Biologically active B12 fraction; may detect early deficiency before total B12 falls",
+          "target": "Normal (>35 pmol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin E level",
+          "rationale": "Vitamin E deficiency causes spinocerebellar ataxia and posterior column dysfunction mimicking SCD",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "HIV antibody",
+          "rationale": "HIV-associated vacuolar myelopathy mimics SCD; may coexist with B12 deficiency",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Nitrous oxide exposure history (urine or serum)",
+          "rationale": "N2O irreversibly oxidizes B12; recreational use or occupational exposure causes acute SCD; B12 may be normal with elevated MMA",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Rare/Specialized (Refractory or Atypical)": [
+        {
+          "item": "Methylmalonic acid (urine)",
+          "rationale": "Urine MMA may be more reliable in renal insufficiency than serum MMA",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing (TCN2, MMACHC, MTHFR)",
+          "rationale": "Inborn errors of cobalamin metabolism; young patients with B12-resistant myelopathy and no dietary/malabsorptive cause",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Transcobalamin II level",
+          "rationale": "Rare genetic deficiency causing functional B12 deficiency with normal serum B12; consider in pediatric SCD",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Paraneoplastic panel (anti-Hu, CV2, amphiphysin)",
+          "rationale": "Paraneoplastic myelopathy mimics SCD; subacute onset, weight loss, smoking history",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "SPEP/immunofixation",
+          "rationale": "Monoclonal gammopathy can cause myelopathy mimicking SCD",
+          "target": "No M-spike",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquaporin-4 (NMO-IgG) and MOG antibodies",
+          "rationale": "Longitudinally extensive transverse myelitis (NMOSD, MOGAD) in differential of long-segment spinal cord T2 lesions",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF oligoclonal bands and IgG index",
+          "rationale": "Multiple sclerosis in differential when MRI shows spinal cord demyelination",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "RPR/VDRL and FTA-ABS",
+          "rationale": "Neurosyphilis (tabes dorsalis) causes posterior column dysfunction; mimics SCD",
+          "target": "Non-reactive",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential/First-line": [
+        {
+          "item": "MRI cervical spine with and without contrast",
+          "timing": "URGENT if myelopathy symptoms (gait ataxia, spasticity, Lhermitte sign, bladder symptoms)",
+          "target": "Bilateral symmetric T2 hyperintensity in posterior columns (\"inverted V sign\" on axial images); may extend into lateral columns; typically cervical and upper thoracic; no enhancement in classic SCD; enhancement suggests active demyelination or alternative diagnosis",
+          "contraindications": "GFR <30 for gadolinium; pacemaker; metal implants",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "MRI thoracic spine with and without contrast",
+          "timing": "URGENT if cervical MRI does not fully explain symptoms; SCD often involves both cervical and thoracic segments",
+          "target": "Bilateral symmetric posterior column T2 hyperintensity; similar pattern to cervical spine; may be the primary or only segment involved",
+          "contraindications": "GFR <30 for gadolinium; pacemaker; metal implants",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Nerve conduction studies (NCS) and EMG",
+          "timing": "Baseline evaluation; optimal 3-4 weeks after symptom onset",
+          "target": "Axonal sensorimotor polyneuropathy; reduced sensory amplitudes (especially sural nerve); superimposed peripheral neuropathy common in SCD; helps quantify peripheral nerve involvement",
+          "contraindications": "Pacemaker (relative); anticoagulation for needle EMG (relative)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Extended": [
+        {
+          "item": "MRI brain with and without contrast",
+          "timing": "If cognitive impairment, encephalopathy, or optic neuropathy; to exclude MS or other central demyelination",
+          "target": "White matter changes; exclude MS plaques (periventricular, corpus callosum); cerebral atrophy (chronic B12 deficiency)",
+          "contraindications": "GFR <30; pacemaker; metal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Somatosensory evoked potentials (SSEP)",
+          "timing": "If clinical myelopathy suspected but MRI equivocal or normal; quantifies posterior column function",
+          "target": "Prolonged central conduction time confirming dorsal column dysfunction; may be abnormal before MRI shows changes",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Visual evoked potentials (VEP)",
+          "timing": "If visual symptoms or optic neuropathy suspected; B12 deficiency can cause optic neuropathy",
+          "target": "Prolonged P100 latency",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EGD with gastric biopsy",
+          "timing": "If pernicious anemia confirmed; screen for atrophic gastritis and gastric carcinoid (3-fold increased risk)",
+          "target": "Atrophic gastritis; intestinal metaplasia; rule out gastric carcinoid/adenocarcinoma",
+          "contraindications": "Coagulopathy; recent MI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urodynamic studies",
+          "timing": "If bladder dysfunction present (urinary urgency, retention, incontinence from lateral column involvement)",
+          "target": "Neurogenic bladder pattern (detrusor overactivity or underactivity)",
+          "contraindications": "Active UTI",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CT enterography or capsule endoscopy",
+          "timing": "If small bowel malabsorption suspected (celiac, Crohn, bacterial overgrowth)",
+          "target": "Small bowel pathology causing malabsorption",
+          "contraindications": "Bowel obstruction (capsule); contrast allergy (CT)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Hydrogen breath test (lactulose or glucose)",
+          "timing": "If small intestinal bacterial overgrowth (SIBO) suspected as cause of B12 malabsorption",
+          "target": "Positive for SIBO",
+          "contraindications": "None significant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "MR spectroscopy of spinal cord",
+          "timing": "Research setting; if conventional MRI equivocal; may show reduced NAA/Cr ratio in affected segments",
+          "target": "Reduced N-acetylaspartate (neuronal loss marker)",
+          "contraindications": "Same as MRI",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent - B12 Replacement and Etiology-Specific Treatment": [
+        {
+          "item": "Cyanocobalamin IM",
+          "route": "IM",
+          "indication": "Confirmed or suspected B12 deficiency with myelopathy; initiate immediately while awaiting confirmatory labs; do not delay treatment for SCD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg daily x 7 days",
+                "orderSentence": "Cyanocobalamin IM 1000 mcg daily x 7 days IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1000 mcg IM daily x 7 days, then 1000 mcg IM weekly x 4 weeks, then 1000 mcg IM monthly indefinitely; neurological SCD requires aggressive initial dosing",
+            "orderSentence": "Cyanocobalamin IM 1000 mcg daily x 7 days IM"
+          },
+          "contraindications": "Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative)",
+          "monitoring": "Reticulocyte count at day 5-7 (reticulocyte crisis confirms response); B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis); neurological exam serial",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Hydroxocobalamin IM",
+          "route": "IM",
+          "indication": "Alternative to cyanocobalamin; longer-acting; preferred when N2O toxicity is the cause (directly replaces oxidized B12); also used for cyanide poisoning",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg daily x 7 days",
+                "orderSentence": "Hydroxocobalamin IM 1000 mcg daily x 7 days IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1000 mcg IM daily x 7 days, then 1000 mcg IM every other day x 2 weeks, then 1000 mcg IM monthly indefinitely; preferred for N2O-induced SCD",
+            "orderSentence": "Hydroxocobalamin IM 1000 mcg daily x 7 days IM"
+          },
+          "contraindications": "Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative)",
+          "monitoring": "Reticulocyte count at day 5-7; B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis); chromaturia (red urine) expected",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cyanocobalamin SC",
+          "route": "SC",
+          "indication": "If IM injection contraindicated (anticoagulation, severe thrombocytopenia) or patient preference; slightly lower bioavailability than IM",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg daily x 7 days",
+                "orderSentence": "Cyanocobalamin SC 1000 mcg daily x 7 days SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "1000 mcg SC daily x 7 days, then 1000 mcg SC weekly x 4 weeks, then 1000 mcg SC monthly indefinitely",
+            "orderSentence": "Cyanocobalamin SC 1000 mcg daily x 7 days SC"
+          },
+          "contraindications": "Cobalt or cobalamin hypersensitivity (rare); Leber hereditary optic neuropathy (relative)",
+          "monitoring": "Reticulocyte count at day 5-7; B12 and MMA at 1-2 months; CBC at 1-2 months; potassium during first 48 hours (hypokalemia from erythropoiesis)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Copper gluconate (for copper-deficient SCD)",
+          "route": "PO",
+          "indication": "Copper deficiency myelopathy confirmed (low serum copper and ceruloplasmin); oral replacement for mild-moderate deficiency",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg TID",
+                "orderSentence": "Copper gluconate (for copper-deficient SCD) 2 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2 mg elemental copper PO TID for 1 week, then 2 mg PO daily for maintenance; recheck copper at 4-8 weeks",
+            "orderSentence": "Copper gluconate (for copper-deficient SCD) 2 mg TID PO"
+          },
+          "contraindications": "Wilson disease (absolute); hemochromatosis (relative)",
+          "monitoring": "Serum copper and ceruloplasmin at 4-8 weeks and every 3-6 months; zinc level (discontinue excess zinc); CBC for neutropenia recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper chloride IV (for severe copper deficiency)",
+          "route": "IV",
+          "indication": "Severe symptomatic copper deficiency with progressive myelopathy or unable to absorb oral copper",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg daily x 5 days",
+                "orderSentence": "Copper chloride IV (for severe copper deficiency) 2 mg daily x 5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 mg elemental copper IV daily for 5 days, then transition to oral copper 2 mg PO daily",
+            "orderSentence": "Copper chloride IV (for severe copper deficiency) 2 mg daily x 5 days IV"
+          },
+          "contraindications": "Wilson disease (absolute); hemochromatosis (relative)",
+          "monitoring": "Serum copper at 1 week post-IV; LFTs; cardiac monitoring during infusion",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Potassium supplementation",
+          "route": "IV/PO",
+          "indication": "Prevent hypokalemia during B12 replacement; rapid erythropoiesis consumes potassium; risk of cardiac arrhythmia",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mEq daily PRN",
+                "orderSentence": "Potassium supplementation 20 mEq daily PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mEq PO daily; monitor potassium q12-24h during first 48 hours of B12 replacement; supplement if K <3.5 mEq/L; IV KCl 10-20 mEq/hr for severe hypokalemia",
+            "orderSentence": "Potassium supplementation 20 mEq daily PRN PO"
+          },
+          "contraindications": "Hyperkalemia; renal failure (use cautiously); K >5.0 mEq/L",
+          "monitoring": "Potassium levels q12-24h during initial treatment; ECG if K <3.0 mEq/L",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Folic acid",
+          "route": "PO",
+          "indication": "Correct concurrent folate deficiency; MUST administer with B12 to avoid masking deficiency; folate alone worsens SCD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg daily",
+                "orderSentence": "Folic acid 1 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1 mg PO daily; NEVER give folate without concurrent B12 in suspected B12 deficiency (corrects anemia while neurological damage progresses silently)",
+            "orderSentence": "Folic acid 1 mg daily PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Ensure B12 is being co-administered; reticulocyte count",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Methylprednisolone IV (for N2O-induced SCD with severe acute myelopathy)",
+          "route": "IV",
+          "indication": "Acute severe N2O-induced myelopathy with rapidly progressive weakness; reduces inflammatory demyelination; used in select cases with significant cord edema",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg daily x 3-5 days",
+                "orderSentence": "Methylprednisolone IV (for N2O-induced SCD with severe acute myelopathy) 1000 mg daily x 3-5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; concurrent with B12 replacement; consider if MRI shows cord edema or enhancement; evidence limited to case series",
+            "orderSentence": "Methylprednisolone IV (for N2O-induced SCD with severe acute myelopathy) 1000 mg daily x 3-5 days IV"
+          },
+          "contraindications": "Active infection; uncontrolled diabetes; GI bleeding; psychosis",
+          "monitoring": "Blood glucose q6h; BP monitoring; GI prophylaxis with PPI; infection screening; psychiatric monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity from lateral corticospinal tract involvement; lower extremity stiffness and spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Baclofen 5 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose every 3 days; target 30-80 mg/day divided TID; max 80 mg/day; taper to discontinue (do not stop abruptly - risk of withdrawal seizures)",
+            "orderSentence": "Baclofen 5 mg TID PO"
+          },
+          "contraindications": "Renal impairment (dose reduce); epilepsy (lowers seizure threshold)",
+          "monitoring": "Sedation, weakness, dizziness; taper gradually to discontinue; monitor for urinary retention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity (alternative to baclofen); especially if baclofen causes excessive weakness",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg qHS",
+                "orderSentence": "Tizanidine 2 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS; titrate by 2 mg every 3-4 days; max 36 mg/day divided TID; significant sedation limits daytime use",
+            "orderSentence": "Tizanidine 2 mg qHS PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin - contraindicated)",
+          "monitoring": "LFTs at baseline, 1, 3, and 6 months; sedation, dry mouth, hypotension; hepatotoxicity rare but serious",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (burning, tingling, shooting pain); first-line for SCD-associated neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg every 1-3 days to TID dosing; target 900-1800 mg/day divided TID; max 3600 mg/day; adjust for renal function (CrCl 30-59: max 1400 mg/day; CrCl 15-29: max 700 mg/day; CrCl <15: max 300 mg/day)",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust required); respiratory depression with concurrent opioids",
+          "monitoring": "Sedation, dizziness, peripheral edema; taper to discontinue (do not stop abruptly)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain (first-line alternative to gabapentin); useful when gabapentin ineffective or poorly tolerated",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase to 150 mg BID after 1 week; max 300 mg BID (600 mg/day); adjust for renal function (CrCl <60: reduce dose); Schedule V controlled substance",
+            "orderSentence": "Pregabalin 75 mg BID PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust required); history of substance abuse (relative)",
+          "monitoring": "Sedation, weight gain, peripheral edema; dizziness; taper to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain (first-line); particularly effective for painful neuropathy with comorbid depression or anxiety",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg daily",
+                "orderSentence": "Duloxetine 30 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
+            "orderSentence": "Duloxetine 30 mg daily PO"
+          },
+          "contraindications": "Hepatic impairment; CrCl <30; concurrent MAOIs; uncontrolled narrow-angle glaucoma",
+          "monitoring": "Nausea (usually transient); BP monitoring; discontinuation syndrome (taper over 2+ weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line); useful for concurrent insomnia and neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Amitriptyline 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+            "orderSentence": "Amitriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly (anticholinergic burden)",
+          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects; sedation; weight gain",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Neurogenic bladder with detrusor overactivity (urgency, frequency, urge incontinence) from lateral column involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Oxybutynin 5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; may increase to 5 mg TID; max 5 mg QID (20 mg/day); extended-release formulation 5-30 mg daily preferred for fewer side effects",
+            "orderSentence": "Oxybutynin 5 mg BID PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction; myasthenia gravis",
+          "monitoring": "Anticholinergic effects (dry mouth, constipation, cognitive impairment in elderly); post-void residual if retention suspected",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tamsulosin",
+          "route": "PO",
+          "indication": "Neurogenic bladder with urinary retention from sacral cord involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 mg daily",
+                "orderSentence": "Tamsulosin 0.4 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "0.4 mg PO daily; may increase to 0.8 mg daily if inadequate response; take 30 minutes after same meal daily",
+            "orderSentence": "Tamsulosin 0.4 mg daily PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent strong CYP3A4 inhibitors",
+          "monitoring": "Orthostatic hypotension (especially first dose); dizziness; retrograde ejaculation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol 3350 (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation from autonomic dysfunction or immobility; common in SCD patients",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g daily",
+                "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz liquid daily; adjust frequency for bowel regularity",
+            "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g daily PO"
+          },
+          "contraindications": "Bowel obstruction; known or suspected GI perforation",
+          "monitoring": "Diarrhea if excessive dosing; electrolytes if prolonged use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression comorbid with chronic myelopathy; reactive depression from functional decline and disability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg/day",
+            "orderSentence": "Sertraline 50 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; concurrent pimozide",
+          "monitoring": "Suicidality monitoring (first 4 weeks); serotonin syndrome if combined with other serotonergic agents; sexual dysfunction",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Neuropathic pain refractory to gabapentinoids; particularly if comorbid depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg daily",
+                "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily; increase by 75 mg every 4-7 days; target 150 mg daily; max 225 mg/day",
+            "orderSentence": "Venlafaxine XR 37.5 mg daily PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAOIs",
+          "monitoring": "BP monitoring (dose-dependent hypertension); serotonin syndrome; discontinuation syndrome (taper over 2+ weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line TCA); fewer anticholinergic effects than amitriptyline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg qHS",
+                "orderSentence": "Nortriptyline 10 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-25 mg qHS; increase by 10-25 mg weekly; max 150 mg qHS",
+            "orderSentence": "Nortriptyline 10 mg qHS PO"
+          },
+          "contraindications": "Cardiac conduction abnormality; recent MI; urinary retention; narrow-angle glaucoma; elderly",
+          "monitoring": "ECG if dose >100 mg/day; anticholinergic effects (fewer than amitriptyline); sedation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dantrolene",
+          "route": "PO",
+          "indication": "Severe spasticity refractory to baclofen and tizanidine; acts peripherally on skeletal muscle",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg daily",
+                "orderSentence": "Dantrolene 25 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; increase by 25 mg every 4-7 days to TID; target 75-100 mg TID; max 400 mg/day",
+            "orderSentence": "Dantrolene 25 mg daily PO"
+          },
+          "contraindications": "Active hepatic disease; concurrent hepatotoxic medications",
+          "monitoring": "LFTs at baseline, then monthly for 6 months; hepatotoxicity risk (idiosyncratic, potentially fatal); weakness (reduces muscle contractility)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "High-dose oral B12 (if parenteral refused or contraindicated)",
+          "route": "PO",
+          "indication": "B12 replacement when IM/SC injections refused or contraindicated; ~1% absorbed passively independent of intrinsic factor",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2000 mcg daily",
+                "orderSentence": "High-dose oral B12 (if parenteral refused or contraindicated) 2000 mcg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "2000 mcg PO daily; higher dose recommended for myelopathy than for neuropathy alone; monitor closely; switch to parenteral if MMA does not normalize within 2-3 months",
+            "orderSentence": "High-dose oral B12 (if parenteral refused or contraindicated) 2000 mcg daily PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "B12 and MMA levels at 2-3 months to confirm adequate absorption; if MMA remains elevated, switch to parenteral; neurological examination",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylcobalamin SL",
+          "route": "SL",
+          "indication": "Alternative oral B12 formulation; may have improved bioavailability; patient preference for non-injection route",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5000 mcg daily",
+                "orderSentence": "Methylcobalamin SL 5000 mcg daily SL"
+              }
+            ],
+            "route": "SL",
+            "instructions": "5000 mcg sublingual daily; dissolve under tongue; efficacy data limited compared to IM; not preferred as first-line for myelopathy",
+            "orderSentence": "Methylcobalamin SL 5000 mcg daily SL"
+          },
+          "contraindications": "None significant",
+          "monitoring": "B12 and MMA levels at 2-3 months; switch to parenteral if inadequate response or MMA remains elevated",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Moderate neuropathic pain refractory to first-line agents",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg q6h PRN",
+                "orderSentence": "Tramadol 50 mg q6h PRN PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg q6h PRN; may increase to 100 mg q6h; max 400 mg/day; ER formulation 100-300 mg daily",
+            "orderSentence": "Tramadol 50 mg q6h PRN PO"
+          },
+          "contraindications": "Seizure disorder; concurrent MAOIs; concurrent SSRIs/SNRIs (serotonin syndrome risk)",
+          "monitoring": "Seizure risk; serotonin syndrome; dependence (Schedule IV); constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Botulinum toxin type A (onabotulinumtoxinA)",
+          "route": "IM",
+          "indication": "Focal spasticity refractory to oral medications; targeted treatment for specific muscle groups (gastrocnemius, hamstrings, hip adductors)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per muscle group",
+                "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) Per muscle group IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "Dose varies by muscle: gastrocnemius 75-200 units per leg; hamstrings 50-200 units; hip adductors 75-200 units; onset 3-7 days; peak 2-6 weeks; repeat every 12 weeks",
+            "orderSentence": "Botulinum toxin type A (onabotulinumtoxinA) Per muscle group IM"
+          },
+          "contraindications": "Infection at injection site; myasthenia gravis; aminoglycoside use (potentiates blockade)",
+          "monitoring": "Weakness beyond target muscles; dysphagia (if cervical muscles treated); antibody formation with repeated use",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for confirmation of SCD diagnosis, differentiation from compressive myelopathy or MS, and monitoring of neurological recovery",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for gait training, balance exercises, proprioceptive rehabilitation, and fall prevention given posterior column dysfunction and sensory ataxia",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for upper extremity fine motor rehabilitation and adaptive equipment for impaired hand dexterity from posterior column involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Hematology referral for evaluation of persistent macrocytic anemia, pancytopenia, or unexplained cytopenias not responding to B12 replacement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gastroenterology referral for EGD and evaluation of pernicious anemia, atrophic gastritis, malabsorption etiology, or gastric carcinoid surveillance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Urology referral for evaluation and management of neurogenic bladder (urgency, retention, incontinence) from lateral column involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rehabilitation medicine (physiatry) consultation for comprehensive inpatient rehabilitation program if significant functional impairment from myelopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Endocrinology referral for evaluation of concurrent autoimmune thyroid disease in patients with confirmed pernicious anemia (autoimmune polyglandular syndrome)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition/Dietitian referral for dietary counseling regarding B12-rich and copper-rich foods, especially for vegans, vegetarians, and post-bariatric patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pain management referral for refractory neuropathic pain and spasticity not responding to first- and second-line pharmacotherapy after adequate B12 normalization",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychological testing for cognitive assessment if persistent cognitive impairment despite B12 normalization, to differentiate from comorbid dementia",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consult for assistance with self-injection training, disability resources, home care coordination, and durable medical equipment procurement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Addiction medicine or psychiatry referral if nitrous oxide abuse is the underlying cause of SCD for substance use disorder treatment and relapse prevention",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return immediately if worsening leg weakness, new difficulty walking, or new bladder/bowel dysfunction develops (may indicate progressive myelopathy requiring urgent evaluation and treatment adjustment)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "B12 injections are lifelong if pernicious anemia is the cause; stopping injections will cause myelopathy to recur and worsen, potentially with irreversible damage",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurological recovery from SCD is slow and may take 6-18 months; posterior column symptoms (balance, proprioception) may improve incompletely, especially if treatment was delayed more than 6 months from symptom onset",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not take folate supplements without B12 as folate alone may correct anemia while allowing neurological damage from SCD to continue progressing silently",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inform all healthcare providers and anesthesia teams of B12 deficiency before any surgical procedure; nitrous oxide (N2O) used in anesthesia irreversibly oxidizes B12 and can precipitate acute catastrophic neurological deterioration",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "If self-administering B12 injections, use proper IM technique and rotate injection sites (outer thigh or deltoid); attend injection training with nursing before discharge",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Use assistive devices (walker, cane) as recommended by physical therapy for safety during ambulation given impaired proprioception and balance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Inspect feet daily for cuts, blisters, or wounds using a mirror for soles; impaired sensation from posterior column dysfunction increases injury risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new numbness, tingling, increasing stiffness, or changes in bladder function to your neurologist as this may indicate inadequate treatment or disease progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop baclofen or other antispasticity medications abruptly as this may cause withdrawal symptoms including seizures and rebound spasticity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If nitrous oxide (whippets, laughing gas) was the cause, complete cessation is mandatory as any re-exposure will cause further irreversible spinal cord damage",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Complete alcohol cessation as alcohol independently causes neuropathy, worsens B12 malabsorption, and impairs neurological recovery",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complete cessation of nitrous oxide use (recreational or occupational) as any exposure causes further irreversible oxidation of B12 and spinal cord damage",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Smoking cessation to improve vascular health, support neural recovery, and reduce risk of gastric malignancy in pernicious anemia patients",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention: remove throw rugs, ensure adequate lighting, install grab bars in bathroom, use assistive devices (walker, cane) for sensory ataxia and impaired proprioception",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dietary sources of B12: meat, fish, eggs, dairy, fortified cereals; copper-rich foods: shellfish, nuts, seeds, organ meats, dark chocolate; supplement if dietary intake insufficient",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "If vegan or vegetarian, lifelong B12 supplementation is required as plant-based diets contain no natural B12 sources",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular supervised exercise as tolerated (swimming, stationary bike, seated exercises) to maintain strength and cardiovascular health; avoid exercises requiring intact proprioception without supervision or assistive devices",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid excessive zinc supplementation (>40 mg/day) as zinc competes with copper absorption and can cause copper-deficient myelopathy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid excessive vitamin B6 supplementation (>100 mg/day) which independently causes peripheral neuropathy and may worsen symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Annual screening for gastric carcinoid/adenocarcinoma if pernicious anemia confirmed (3-fold increased risk of gastric cancer)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Review medications for B12-lowering agents: proton pump inhibitors, H2 blockers, metformin, colchicine; dose adjustment or monitoring may be needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Metformin users: annual B12 and MMA screening as metformin reduces B12 absorption by 10-30% and may precipitate or worsen SCD",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety evaluation by occupational therapy to identify and eliminate fall hazards given sensory ataxia and proprioceptive loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Test bath water temperature with elbow before entering as impaired sensation from posterior column dysfunction increases burn risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Copper deficiency myeloneuropathy",
+      "features": "Clinically identical to B12-related SCD; often post-bariatric surgery, zinc excess, or malabsorption; may co-occur with B12 deficiency; neutropenia and anemia without macrocytosis more common",
+      "tests": "Serum copper, ceruloplasmin; zinc level; B12 and MMA may be normal; neutropenia with normal MCV suggests copper over B12"
+    },
+    {
+      "diagnosis": "Multiple sclerosis",
+      "features": "Demyelinating lesions; relapsing-remitting course; dissemination in time and space; younger females; optic neuritis common; asymmetric deficits",
+      "tests": "MRI brain shows periventricular, juxtacortical, and infratentorial lesions; CSF oligoclonal bands; normal B12 and MMA; contrast-enhancing lesions common"
+    },
+    {
+      "diagnosis": "Cervical spondylotic myelopathy",
+      "features": "Compressive myelopathy; neck pain; progressive upper motor neuron signs; age-related degenerative disease; may coexist with SCD",
+      "tests": "MRI cervical spine shows structural cord compression from disc/osteophyte; B12 and MMA normal; focal rather than diffuse posterior column signal"
+    },
+    {
+      "diagnosis": "HIV-associated vacuolar myelopathy",
+      "features": "Similar posterior column involvement; occurs with advanced AIDS (CD4 <200); may coexist with B12 deficiency; progressive spastic paraparesis",
+      "tests": "HIV testing; CD4 count; may coexist with B12 deficiency; CSF HIV viral load"
+    },
+    {
+      "diagnosis": "Neurosyphilis (tabes dorsalis)",
+      "features": "Posterior column dysfunction; lightning pains; Argyll Robertson pupils; progressive sensory ataxia; decades after primary infection",
+      "tests": "RPR/VDRL; FTA-ABS; CSF VDRL; lymphocytic pleocytosis in CSF"
+    },
+    {
+      "diagnosis": "Neuromyelitis optica spectrum disorder (NMOSD)",
+      "features": "Longitudinally extensive transverse myelitis (>3 segments); severe attacks; optic neuritis; may involve posterior columns",
+      "tests": "Aquaporin-4 (NMO-IgG) antibodies; MRI shows longitudinally extensive lesion; contrast enhancement; CSF pleocytosis"
+    },
+    {
+      "diagnosis": "Nitrous oxide toxicity (without B12 deficiency)",
+      "features": "Acute/subacute SCD-like syndrome; recreational N2O use (whippets); occupational exposure; B12 may be normal but MMA elevated; rapid onset days to weeks",
+      "tests": "History of N2O exposure; B12 may be normal or low; MMA elevated; rapid onset distinguishes from insidious B12 deficiency"
+    },
+    {
+      "diagnosis": "Friedreich ataxia",
+      "features": "Progressive sensory ataxia; cardiomyopathy; onset in youth (<25); autosomal recessive; scoliosis; pes cavus",
+      "tests": "Genetic testing (GAA trinucleotide repeat in FXN gene); normal B12; ECG/echo for cardiomyopathy"
+    },
+    {
+      "diagnosis": "Vitamin E deficiency",
+      "features": "Spinocerebellar ataxia; proprioceptive loss; may mimic posterior column disease; fat malabsorption states",
+      "tests": "Serum vitamin E level; fat-soluble vitamin panel; associated with fat malabsorption syndromes"
+    },
+    {
+      "diagnosis": "Hereditary spastic paraplegia",
+      "features": "Slowly progressive spastic paraparesis; family history; no sensory loss typically; pure vs complicated forms",
+      "tests": "Genetic testing; no posterior column T2 signal; B12 and copper normal; family history"
+    },
+    {
+      "diagnosis": "Paraneoplastic myelopathy",
+      "features": "Subacute progressive myelopathy; weight loss; smoking history; may involve posterior or lateral columns",
+      "tests": "Paraneoplastic antibodies (anti-Hu, CV2, amphiphysin); CT chest/abdomen/pelvis; PET scan"
+    },
+    {
+      "diagnosis": "Adrenomyeloneuropathy (X-linked ALD)",
+      "features": "Progressive spastic paraparesis with adrenal insufficiency; onset in young men; family history of ALD",
+      "tests": "Very long chain fatty acids (VLCFA) elevated; adrenal function tests; genetic testing (ABCD1 gene)"
+    },
+    {
+      "diagnosis": "Primary lateral sclerosis",
+      "features": "Pure upper motor neuron disease; spasticity without sensory findings; no posterior column involvement",
+      "tests": "Normal B12 and MMA; no sensory loss; no posterior column signal on MRI; EMG without denervation"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Subacute combined degeneration: clinical features, pathology, and outcomes in 153 patients",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/)"
+    },
+    {
+      "recommendation": "MRI posterior column T2 hyperintensity (\"inverted V sign\") characteristic of SCD",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Timms SR et al. Neuroradiology 1993](https://pubmed.ncbi.nlm.nih.gov/8274505/)"
+    },
+    {
+      "recommendation": "Serum B12 <200 pg/mL diagnostic; MMA and homocysteine for borderline levels; functional B12 markers",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Stabler SP. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23697526/)"
+    },
+    {
+      "recommendation": "British guidelines for parenteral B12 replacement in neurological B12 deficiency",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Devalia V et al. Br J Haematol 2014](https://pubmed.ncbi.nlm.nih.gov/24942828/)"
+    },
+    {
+      "recommendation": "Neurological damage may be irreversible if treatment delayed >6 months from symptom onset",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/)"
+    },
+    {
+      "recommendation": "Copper deficiency myeloneuropathy mimics B12 SCD; must be excluded in all cases",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Kumar N et al. Mayo Clin Proc 2006](https://pubmed.ncbi.nlm.nih.gov/17036563/)"
+    },
+    {
+      "recommendation": "Nitrous oxide precipitates acute SCD by irreversibly oxidizing B12; can occur with normal serum B12",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Flippo TS, Holder WD Jr. South Med J 1993](https://pubmed.ncbi.nlm.nih.gov/8250714/)"
+    },
+    {
+      "recommendation": "Nitrous oxide-induced myelopathy: clinical and MRI features; series of 25 patients",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Garakani A et al. J Clin Neuromuscul Dis 2016](https://pubmed.ncbi.nlm.nih.gov/27552406/)"
+    },
+    {
+      "recommendation": "Gabapentin, pregabalin, duloxetine first-line for neuropathic pain (NeuPSIG guidelines)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/)"
+    },
+    {
+      "recommendation": "Folate supplementation without B12 may worsen neurological manifestations by masking hematologic markers",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Reynolds EH. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/17052662/)"
+    },
+    {
+      "recommendation": "High-dose oral B12 (1000-2000 mcg/day) may be as effective as IM for maintenance in selected patients",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Vidal-Alaball J et al. Cochrane Database Syst Rev 2005](https://pubmed.ncbi.nlm.nih.gov/16034940/)"
+    },
+    {
+      "recommendation": "Pernicious anemia associated with 3-fold increased risk of gastric carcinoid and adenocarcinoma",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Hsing AW et al. JNCI 1993](https://pubmed.ncbi.nlm.nih.gov/8431855/)"
+    },
+    {
+      "recommendation": "Baclofen and tizanidine for spasticity management in spinal cord disease",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Taricco M et al. Cochrane Database Syst Rev 2000](https://pubmed.ncbi.nlm.nih.gov/10908530/)"
+    },
+    {
+      "recommendation": "SCD can occur with normal CBC and MCV; absence of macrocytosis does not exclude diagnosis",
+      "evidenceLevel": "Class II, Level B",
+      "source": "[Lindenbaum J et al. NEJM 1988](https://pubmed.ncbi.nlm.nih.gov/3374544/)"
+    },
+    {
+      "recommendation": "MRI resolution of posterior column signal changes with B12 treatment correlates with clinical improvement",
+      "evidenceLevel": "Class III, Level C",
+      "source": "[Gupta PK et al. J Neurol Sci 2014](https://pubmed.ncbi.nlm.nih.gov/24411092/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Serum B12 level",
+      "frequency": "1-2 months after starting treatment, then every 6-12 months",
+      "action": "If persistently low on oral, switch to parenteral; increase dose; assess compliance",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Methylmalonic acid (MMA)",
+      "frequency": "2-3 months after starting treatment, then annually",
+      "action": "If elevated despite supplementation, evaluate compliance and absorption; switch to parenteral if on oral; reassess diagnosis",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Homocysteine",
+      "frequency": "2-3 months after starting treatment",
+      "action": "If elevated, check folate; assess compliance; consider alternative etiology",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC with reticulocyte count",
+      "frequency": "Day 5-7 (reticulocyte crisis); 1-2 months; then every 6-12 months",
+      "action": "If no reticulocyte response, reconsider diagnosis; check folate, iron, copper",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "Potassium",
+      "frequency": "Q12-24h during first 48 hours of B12 replacement",
+      "action": "Supplement potassium; severe hypokalemia can cause cardiac arrhythmia; IV replacement for K <3.0 mEq/L",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Copper level (if copper-deficient SCD)",
+      "frequency": "4-8 weeks after starting copper supplementation, then every 3-6 months",
+      "action": "Increase copper dose; investigate ongoing losses; reassess zinc intake",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurological examination (motor, sensory, proprioception, Romberg, gait, reflexes, Babinski, tone)",
+      "frequency": "Each visit; formal assessment at 3, 6, 12 months",
+      "action": "If worsening, re-evaluate diagnosis; check B12/MMA/copper; consider additional causes; reassess compliance",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MRI spine (cervical and thoracic)",
+      "frequency": "6-12 months after treatment initiation; then PRN for clinical change",
+      "action": "If worsening or new lesions despite treatment, reconsider diagnosis (MS, NMOSD); check compliance; evaluate for concurrent copper deficiency",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Gait and fall risk assessment",
+      "frequency": "Each visit; standardized tools (Timed Up and Go, Berg Balance Scale)",
+      "action": "PT referral or intensification; assistive devices; home safety evaluation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Spasticity assessment (Modified Ashworth Scale)",
+      "frequency": "Each visit",
+      "action": "Adjust antispasticity medications; consider botulinum toxin; physiatry referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Bladder function assessment",
+      "frequency": "Each visit if bladder symptoms present",
+      "action": "Urology referral; adjust bladder medications; urodynamic studies if worsening",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Pain scores (NRS 0-10)",
+      "frequency": "Each visit",
+      "action": "Titrate pain medications; consider combination therapy or referral to pain management",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "NCS/EMG follow-up",
+      "frequency": "6-12 months after treatment; then PRN for symptom change",
+      "action": "If progressive despite treatment, reconsider diagnosis or look for additional etiology",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Iron studies",
+      "frequency": "1-2 months after treatment initiation",
+      "action": "Iron supplementation if deficient (combined deficiency common in pernicious anemia)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Gastric surveillance (if pernicious anemia)",
+      "frequency": "EGD with biopsy every 3-5 years",
+      "action": "Gastroenterology referral for management of premalignant lesions",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose (if on IV methylprednisolone)",
+      "frequency": "Q6h during steroid administration",
+      "action": "Insulin sliding scale or infusion; endocrinology consult if persistent hyperglycemia",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "**Discharge home**",
+      "criteria": "Stable neurological examination; able to ambulate safely (with assistive device if needed); reliable follow-up arranged with neurology; B12 injection initiated and plan established; caregiver available for injection administration or self-injection training completed; no severe hypokalemia or electrolyte abnormality; bladder function adequate; fall risk acceptably managed"
+    },
+    {
+      "disposition": "**Admit to floor**",
+      "criteria": "Acute or subacute myelopathy with gait impairment (unable to ambulate safely); progressive neurological deficits requiring serial examinations; severe spasticity or spasms requiring medication titration; need for frequent electrolyte monitoring during initial B12 replacement; new bladder/bowel dysfunction requiring evaluation; falls requiring inpatient rehabilitation assessment; severe pancytopenia requiring monitoring"
+    },
+    {
+      "disposition": "**Admit to ICU**",
+      "criteria": "Severe symptomatic anemia with hemodynamic instability requiring transfusion; high-output cardiac failure from severe anemia; severe hypokalemia with cardiac monitoring need during B12 replacement; respiratory compromise from severe weakness; rapidly progressive myelopathy from N2O toxicity requiring close neurological monitoring; steroid-related complications (severe hyperglycemia, psychosis)"
+    },
+    {
+      "disposition": "**Transfer to higher level**",
+      "criteria": "Neurology consultation not available for myelopathy evaluation; MRI not available for urgent spinal cord imaging; EMG/NCS not available for diagnostic workup; inpatient rehabilitation facility needed but not available locally; neurosurgery evaluation needed to exclude compressive myelopathy"
+    }
+  ]
+}

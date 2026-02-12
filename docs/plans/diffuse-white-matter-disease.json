@@ -1,0 +1,1940 @@
+{
+  "id": "diffuse-white-matter-disease",
+  "title": "Diffuse White Matter Disease",
+  "version": "1.1",
+  "icd10": [
+    "** R53.1 (Weakness)",
+    "G93.49 (Other encephalopathy",
+    "not elsewhere classified)",
+    "G31.9 (Degenerative disease of nervous system",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of diffuse white matter changes found on neuroimaging, including systematic differential diagnosis approach (vascular, inflammatory, infectious, metabolic, genetic, toxic), workup prioritization by clinical context, and management across care settings. Excludes focal single-lesion pathology and acute stroke as primary diagnosis but includes in differential. Covers both incidental findings and symptomatic presentations.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC with differential",
+          "rationale": "Infection screening; anemia as contributor to cognitive symptoms; leukocytosis suggesting inflammatory or infectious etiology",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CMP (comprehensive metabolic panel)",
+          "rationale": "Renal function (uremic leukoencephalopathy); hepatic function (hepatic leukoencephalopathy); electrolytes; glucose",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "HbA1c",
+          "rationale": "Diabetes is leading vascular risk factor for CSVD and white matter disease; assess glycemic control",
+          "target": "<7.0%",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fasting lipid panel",
+          "rationale": "Dyslipidemia contributes to cerebral small vessel disease and accelerates white matter injury",
+          "target": "LDL <70 in high-risk; <100 moderate risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "TSH",
+          "rationale": "Hypothyroidism causes reversible white matter changes and cognitive impairment",
+          "target": "Normal (0.4-4.0 mIU/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vitamin B12 level",
+          "rationale": "B12 deficiency causes white matter disease (subacute combined degeneration) and is treatable",
+          "target": ">400 pg/mL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Methylmalonic acid (MMA)",
+          "rationale": "Elevated in B12 deficiency even when serum B12 borderline normal; more sensitive than B12 alone",
+          "target": "Normal (<0.4 μmol/L)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Folate level",
+          "rationale": "Folate deficiency contributes to hyperhomocysteinemia and white matter injury",
+          "target": "Normal (>5 ng/mL)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Homocysteine",
+          "rationale": "Elevated homocysteine associated with accelerated white matter disease and cognitive decline; treatable with B vitamins",
+          "target": "<15 μmol/L",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ESR / CRP",
+          "rationale": "Inflammatory markers; elevated in vasculitis, CNS infection, autoimmune conditions; baseline for inflammatory etiologies",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "RPR or VDRL",
+          "rationale": "Neurosyphilis causes diffuse white matter changes; treatable; must screen in all unexplained leukoencephalopathy",
+          "target": "Nonreactive",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HIV antibody/antigen (4th gen)",
+          "rationale": "HIV-associated leukoencephalopathy; PML risk; treatable; screen all patients with unexplained WMD",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Urinalysis",
+          "rationale": "Renal disease screening; proteinuria associated with CSVD; drug screening context",
+          "target": "Normal",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "ANA",
+          "rationale": "Systemic lupus erythematosus (SLE) causes CNS vasculitis and white matter disease",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anti-dsDNA antibodies",
+          "rationale": "Specific for SLE; elevated in lupus cerebritis/CNS lupus",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complement levels (C3, C4)",
+          "rationale": "Low complement supports active SLE or other complement-consuming processes",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Antiphospholipid antibodies (anticardiolipin, anti-beta-2 glycoprotein, lupus anticoagulant)",
+          "rationale": "Antiphospholipid syndrome causes thrombotic vasculopathy and white matter disease; treatable with anticoagulation",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ANCA (c-ANCA, p-ANCA)",
+          "rationale": "Primary CNS vasculitis and systemic vasculitis (granulomatosis with polyangiitis, microscopic polyangiitis)",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Angiotensin-converting enzyme (ACE) level",
+          "rationale": "Neurosarcoidosis causes white matter lesions; elevated ACE supportive but not diagnostic",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Aquaporin-4 antibody (NMO-IgG)",
+          "rationale": "Neuromyelitis optica spectrum disorder can present with extensive white matter changes",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MOG antibody",
+          "rationale": "MOG antibody-associated disease with diffuse white matter involvement; distinct from MS and NMOSD",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Copper and ceruloplasmin",
+          "rationale": "Wilson disease (low copper/ceruloplasmin) causes white matter injury; copper deficiency myelopathy mimics B12 deficiency",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Zinc level",
+          "rationale": "Zinc excess causes copper deficiency and myelopathy/leukoencephalopathy",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Very long chain fatty acids (VLCFA)",
+          "rationale": "Adrenoleukodystrophy/adrenomyeloneuropathy (X-linked); elevated C26:0 and C26:0/C22:0 ratio",
+          "target": "Normal ratios",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Arylsulfatase A activity",
+          "rationale": "Metachromatic leukodystrophy (MLD); deficient enzyme activity; adult-onset form presents with behavioral/cognitive changes and white matter disease",
+          "target": "Normal activity",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Galactocerebrosidase activity",
+          "rationale": "Krabbe disease (globoid cell leukodystrophy); rare adult-onset form",
+          "target": "Normal activity",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lactate (serum)",
+          "rationale": "Mitochondrial disease causes white matter injury with elevated lactate; MELAS, Leigh syndrome",
+          "target": "Normal (<2.0 mmol/L)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Urine drug screen",
+          "rationale": "Toxic leukoencephalopathy from heroin inhalation (\"chasing the dragon\"), toluene, methanol, carbon monoxide",
+          "target": "Negative",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Carboxyhemoglobin level",
+          "rationale": "Carbon monoxide poisoning causes delayed white matter injury; must check if any exposure concern",
+          "target": "<3% (non-smoker)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "CSF JCV PCR",
+          "rationale": "Progressive multifocal leukoencephalopathy (PML) if immunocompromised; see LP section",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for CADASIL (NOTCH3 gene)",
+          "rationale": "Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy; young onset, migraine, mood changes, lacunar strokes",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Genetic testing for CARASIL (HTRA1 gene)",
+          "rationale": "Cerebral autosomal recessive arteriopathy with subcortical infarcts and leukoencephalopathy; alopecia, spondylosis in young adults",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Mitochondrial DNA testing",
+          "rationale": "Mitochondrial leukoencephalopathy (MELAS, Leigh syndrome, Kearns-Sayre); maternal inheritance pattern",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "ABCD1 gene testing",
+          "rationale": "Confirmatory for X-linked adrenoleukodystrophy if VLCFA elevated",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Leukocyte lysosomal enzyme panel",
+          "rationale": "Screening for lysosomal storage disorders (Fabry, MLD, Krabbe) in young-onset unexplained leukoencephalopathy",
+          "target": "Normal enzyme activities",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Alpha-galactosidase A activity",
+          "rationale": "Fabry disease; small vessel disease, white matter changes, stroke in young adults; X-linked",
+          "target": "Normal activity",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CSF lactate",
+          "rationale": "Elevated in mitochondrial disease and some infections; complement serum lactate",
+          "target": "Normal (<2.4 mmol/L)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Whole exome/genome sequencing",
+          "rationale": "Undiagnosed genetic leukoencephalopathy after targeted testing negative; emerging standard for adult-onset leukodystrophies",
+          "target": "No pathogenic variant",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Brain biopsy",
+          "rationale": "Last resort for undiagnosed progressive white matter disease after non-invasive workup exhausted",
+          "target": "Definitive histopathology",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated in venous sinus thrombosis, idiopathic intracranial hypertension, meningitis",
+          "target": "10-20 cm H2O",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4)",
+          "rationale": "Pleocytosis indicates inflammatory/infectious process; lymphocytic predominance in MS, viral, sarcoid; neutrophilic in bacterial",
+          "target": "WBC <5/μL; RBC 0",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Elevated in MS, GBS, vasculitis, infection, malignancy",
+          "target": "15-45 mg/dL",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with paired serum glucose",
+          "rationale": "Low CSF/serum ratio in bacterial infection, carcinomatous meningitis, fungal infection, sarcoidosis",
+          "target": ">60% serum glucose",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF and serum)",
+          "rationale": "Positive in MS (present in CSF but not serum); also positive in neurosyphilis, SSPE, sarcoidosis",
+          "target": "Negative or matched",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IgG index and synthesis rate",
+          "rationale": "Intrathecal IgG synthesis supports MS; elevated in other inflammatory conditions",
+          "target": "Normal IgG index <0.7",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "CNS lymphoma; carcinomatous meningitis; may mimic diffuse white matter disease",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Flow cytometry",
+          "rationale": "B-cell lymphoma; lymphoproliferative disorders; complement cytology",
+          "target": "No clonal population",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "JCV PCR (quantitative)",
+          "rationale": "PML if immunocompromised; JCV reactivation in white matter",
+          "target": "Negative",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "VDRL (CSF)",
+          "rationale": "Neurosyphilis; treatable cause of white matter disease",
+          "target": "Nonreactive",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "ACE level (CSF)",
+          "rationale": "Neurosarcoidosis; elevated in granulomatous meningitis",
+          "target": "Normal",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Gram stain and culture",
+          "rationale": "Bacterial meningitis if acute presentation with fever",
+          "target": "No organisms",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "MRI brain with/without contrast (including FLAIR, DWI, T1, T2, SWI/GRE)",
+          "timing": "Immediate if acute presentation; within 1-2 weeks outpatient",
+          "target": "Characterize distribution (periventricular, subcortical, confluent, posterior fossa), symmetry, enhancement pattern, restricted diffusion, microbleeds; Fazekas grading for CSVD",
+          "contraindications": "MRI-incompatible devices; severe claustrophobia; renal impairment (gadolinium concern)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "CT head without contrast",
+          "timing": "Only if MRI not immediately available or contraindicated",
+          "target": "Hypodense white matter; rule out hemorrhage, mass effect, hydrocephalus; less sensitive than MRI for white matter disease",
+          "contraindications": "Pregnancy (relative); contrast allergy (if contrast used)",
+          "ED": "STAT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "MRA head and neck (or CTA)",
+          "timing": "If vascular etiology suspected; young patient with CSVD pattern",
+          "target": "Intracranial stenosis; vasculitis (beading/irregularity); dissection; moyamoya pattern",
+          "contraindications": "MRI-incompatible devices; renal impairment (gadolinium/iodinated contrast)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "MRI spine (cervical and thoracic)",
+          "timing": "Within 1-2 weeks; if spinal cord symptoms present",
+          "target": "Spinal cord lesions (MS, NMOSD, B12 deficiency); dorsal column signal in B12 deficiency; longitudinally extensive transverse myelitis in NMOSD",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "MR spectroscopy (brain)",
+          "timing": "If metabolic or mitochondrial etiology suspected",
+          "target": "Elevated lactate (mitochondrial); elevated choline (active demyelination); reduced NAA (neuronal loss); specific metabolite patterns for leukodystrophies",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Conventional cerebral angiography",
+          "timing": "If vasculitis suspected and non-invasive imaging inconclusive",
+          "target": "Beading, irregularity of medium/small vessels; vessel wall thickening; confirms CNS vasculitis",
+          "contraindications": "Contrast allergy; renal impairment; coagulopathy; arterial access complications",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Vessel wall MRI",
+          "timing": "If vasculitis or intracranial atherosclerosis suspected",
+          "target": "Concentric vessel wall enhancement (vasculitis) vs eccentric (atherosclerosis); inflammatory changes",
+          "contraindications": "MRI-incompatible devices",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "EEG",
+          "timing": "If seizures, encephalopathy, or subclinical status suspected",
+          "target": "Focal or generalized slowing; epileptiform activity; subclinical seizures",
+          "contraindications": "None",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Visual evoked potentials (VEP)",
+          "timing": "If MS suspected; subclinical optic nerve involvement",
+          "target": "Prolonged P100 latency suggesting prior optic neuritis (supports MS diagnosis)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nerve conduction studies/EMG",
+          "timing": "If peripheral neuropathy coexists; leukodystrophy with PNS involvement",
+          "target": "Peripheral demyelination supports leukodystrophy (MLD, Krabbe, AMN); combined central and peripheral demyelination",
+          "contraindications": "Severe coagulopathy (for needle EMG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "PET-CT brain (FDG)",
+          "timing": "If CNS lymphoma, neurosarcoidosis, or vasculitis suspected",
+          "target": "Hypermetabolic lesions (lymphoma); inflammatory foci; helps guide biopsy",
+          "contraindications": "Pregnancy; uncontrolled diabetes affecting FDG uptake",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "CT chest (for sarcoidosis workup)",
+          "timing": "If neurosarcoidosis suspected",
+          "target": "Bilateral hilar lymphadenopathy; pulmonary infiltrates supporting systemic sarcoidosis",
+          "contraindications": "Pregnancy (relative); contrast allergy",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Skin biopsy (NOTCH3 staining)",
+          "timing": "If CADASIL suspected clinically; less invasive than genetic testing",
+          "target": "Granular osmiophilic material (GOM) deposits in arteriolar walls; NOTCH3 extracellular domain accumulation",
+          "contraindications": "Coagulopathy; skin infection at biopsy site",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmologic examination with OCT",
+          "timing": "MS evaluation (optic nerve involvement); Fabry (cornea verticillata); Susac syndrome (branch retinal artery occlusions)",
+          "target": "RNFL thinning (MS); cornea verticillata (Fabry); branch retinal artery occlusions (Susac)",
+          "contraindications": "None",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Methylprednisolone (acute demyelination)",
+          "route": "IV",
+          "indication": "Acute inflammatory demyelinating episode (MS exacerbation, ADEM, NMOSD); reduces inflammation and accelerates recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone (acute demyelination) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days; infuse over 1 hour; follow with oral prednisone taper if needed (60 mg x 5 days then taper over 2 weeks)",
+            "orderSentence": "Methylprednisolone (acute demyelination) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis; GI bleed",
+          "monitoring": "Blood glucose q6h; BP; mood; GI symptoms; sleep disturbance; infection signs",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Penicillin G (neurosyphilis)",
+          "route": "IV",
+          "indication": "Confirmed or probable neurosyphilis causing white matter disease; treatable and potentially reversible",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-4 million units",
+                "orderSentence": "Penicillin G (neurosyphilis) 3-4 million units IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3-4 million units IV q4h (18-24 million units/day total) or continuous infusion x 10-14 days; desensitize if penicillin allergy",
+            "orderSentence": "Penicillin G (neurosyphilis) 3-4 million units IV"
+          },
+          "contraindications": "Penicillin allergy (desensitize if needed; penicillin is preferred)",
+          "monitoring": "Renal function; Jarisch-Herxheimer reaction (fever, tachycardia within 24h); CSF follow-up at 6 months",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Ceftriaxone (neurosyphilis alternative)",
+          "route": "IV",
+          "indication": "Neurosyphilis in patients where continuous penicillin infusion not feasible; alternative regimen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 g",
+                "orderSentence": "Ceftriaxone (neurosyphilis alternative) 2 g IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g IV daily for 10-14 days; less evidence than penicillin but acceptable alternative",
+            "orderSentence": "Ceftriaxone (neurosyphilis alternative) 2 g IV"
+          },
+          "contraindications": "Cephalosporin allergy; severe penicillin allergy with cross-reactivity concern",
+          "monitoring": "Renal function; CBC; CSF follow-up at 6 months",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Levetiracetam (acute seizures)",
+          "route": "IV/PO",
+          "indication": "Acute seizure management in patients with cortical or juxtacortical white matter disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Levetiracetam (acute seizures) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV load, then 500-1000 mg IV/PO BID; titrate to 1500 mg BID as needed; max 3000 mg/day; adjust for renal function",
+            "orderSentence": "Levetiracetam (acute seizures) 1000 mg IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Mood changes; sedation; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Labetalol (hypertensive emergency with WMD)",
+          "route": "IV",
+          "indication": "Acute hypertensive emergency contributing to or worsening white matter injury; target BP reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Labetalol (hypertensive emergency with WMD) 20 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "20 mg IV over 2 min; may double dose q10min (40, 80 mg); max 300 mg total; transition to oral when stable",
+            "orderSentence": "Labetalol (hypertensive emergency with WMD) 20 mg IV"
+          },
+          "contraindications": "Severe bradycardia; 2nd/3rd degree heart block; decompensated heart failure; asthma (relative)",
+          "monitoring": "BP q5min during titration; HR; cardiac monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Nicardipine (hypertensive emergency)",
+          "route": "IV",
+          "indication": "Hypertensive emergency with white matter disease; continuous infusion allows precise BP titration",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/hr",
+                "orderSentence": "Nicardipine (hypertensive emergency) 5 mg/hr IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Start 5 mg/hr; increase by 2.5 mg/hr q5-15min; max 15 mg/hr; target 25% reduction in MAP over first hour",
+            "orderSentence": "Nicardipine (hypertensive emergency) 5 mg/hr IV"
+          },
+          "contraindications": "Severe aortic stenosis; acute heart failure",
+          "monitoring": "BP continuous monitoring; HR; hepatic function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Cyanocobalamin (severe B12 deficiency)",
+          "route": "IM/IV",
+          "indication": "Acute severe B12 deficiency with neurological manifestations (leukoencephalopathy, myelopathy, cognitive decline)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg",
+                "orderSentence": "Cyanocobalamin (severe B12 deficiency) 1000 mcg IM"
+              }
+            ],
+            "route": "IM",
+            "instructions": "1000 mcg IM daily for 7 days, then weekly x 4 weeks, then monthly indefinitely",
+            "orderSentence": "Cyanocobalamin (severe B12 deficiency) 1000 mcg IM"
+          },
+          "contraindications": "None",
+          "monitoring": "Potassium (hypokalemia during repletion); reticulocyte count; B12 level at 1-2 months",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dexamethasone (cerebral edema)",
+          "route": "IV",
+          "indication": "Significant cerebral edema from inflammatory or neoplastic white matter disease causing mass effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Dexamethasone (cerebral edema) 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV load, then 4 mg q6h; taper as edema resolves over 1-2 weeks",
+            "orderSentence": "Dexamethasone (cerebral edema) 10 mg IV"
+          },
+          "contraindications": "Active untreated infection (relative); GI bleed",
+          "monitoring": "Blood glucose; BP; GI protection with PPI; mood; infection signs",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam (maintenance)",
+          "route": "PO",
+          "indication": "Ongoing seizure prophylaxis/treatment for patients with cortical/juxtacortical white matter lesions and seizures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate by 500 mg/day every 1-2 weeks; target 1000-1500 mg BID; max 3000 mg/day; adjust for renal function",
+            "orderSentence": "Levetiracetam (maintenance) 500 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Mood changes; irritability; sedation; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Seizure management; alternative or adjunct to levetiracetam; favorable side effect profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Lacosamide 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase by 50 mg/dose weekly; target 100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg PO"
+          },
+          "contraindications": "PR prolongation; 2nd/3rd degree AV block; severe hepatic impairment",
+          "monitoring": "ECG at baseline; PR interval; dizziness; diplopia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Donepezil",
+          "route": "PO",
+          "indication": "Cognitive impairment from white matter disease; vascular cognitive impairment; executive dysfunction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Donepezil 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily at bedtime; may increase to 10 mg daily after 4-6 weeks; take in evening",
+            "orderSentence": "Donepezil 5 mg PO"
+          },
+          "contraindications": "Bradycardia; sick sinus syndrome; GI obstruction; active peptic ulcer",
+          "monitoring": "HR; GI symptoms (nausea, diarrhea); vivid dreams; weight loss",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine",
+          "route": "PO",
+          "indication": "Moderate-severe cognitive impairment; vascular dementia; white matter disease with significant cognitive decline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Memantine 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg weekly; target 10 mg BID; max 20 mg/day",
+            "orderSentence": "Memantine 5 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust if CrCl <30)",
+          "monitoring": "Dizziness; headache; constipation; confusion at higher doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; paresthesias; central neuropathic pain from white matter lesions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg/day divided TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; peripheral edema; respiratory depression with opioids",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin; may have better bioavailability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; may increase to 150 mg BID after 1 week; max 600 mg/day",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; weight gain; peripheral edema; dizziness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain; coexisting depression; dual mechanism (SNRI) beneficial for pain and mood",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily; increase to 60 mg after 1-2 weeks; max 120 mg/day for pain",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; uncontrolled narrow-angle glaucoma; severe hepatic impairment; CrCl <30",
+          "monitoring": "BP; hepatic function; serotonin syndrome signs; suicidality (first 4 weeks)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity from corticospinal tract white matter involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses; do NOT stop abruptly (withdrawal risk including seizures)",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment (reduce dose)",
+          "monitoring": "Sedation; weakness; withdrawal symptoms if abruptly discontinued",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity; alternative to baclofen; alpha-2 agonist mechanism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors)",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension; dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression; anxiety; mood disturbance common in chronic white matter disease and vascular cognitive impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily",
+            "orderSentence": "Sertraline 50 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; pimozide",
+          "monitoring": "Suicidality monitoring (weeks 1-4); serotonin syndrome; QTc at high doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; alternative to sertraline with favorable side effect profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Escitalopram 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily",
+            "orderSentence": "Escitalopram 10 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; pimozide; QT prolongation",
+          "monitoring": "QTc if risk factors or dose >10 mg; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue; excessive daytime somnolence; cognitive slowing from white matter disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day; avoid afternoon dosing",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
+          "monitoring": "BP; HR; may reduce efficacy of hormonal contraception; Schedule IV",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Fatigue; apathy; processing speed deficits; attention impairment in white matter disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Methylphenidate 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID (morning and noon); increase by 5-10 mg weekly; max 60 mg/day; avoid afternoon dosing",
+            "orderSentence": "Methylphenidate 5 mg PO"
+          },
+          "contraindications": "Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs; uncontrolled hypertension",
+          "monitoring": "BP; HR; mood; appetite; weight; Schedule II",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia; sleep disturbance common with white matter disease and cognitive impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Trazodone 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg qHS; may increase to 100 mg; max 200 mg qHS for sleep",
+            "orderSentence": "Trazodone 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation",
+          "monitoring": "Orthostatic hypotension; priapism (rare); sedation; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia; circadian rhythm disruption; favorable safety profile for sleep in elderly/cognitively impaired",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg qHS, 30-60 min before bedtime; max 5 mg; extended-release formulation for sleep maintenance",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "Autoimmune disease (theoretical; immunomodulatory effects)",
+          "monitoring": "Daytime drowsiness; vivid dreams; minimal drug interactions",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Urinary urgency/incontinence from white matter disease affecting micturition pathways",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; may increase to 5 mg TID; max 20 mg/day; extended-release preferred to reduce anticholinergic side effects",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction; dementia (avoid in significant cognitive impairment due to anticholinergic effects)",
+          "monitoring": "Cognitive function (may worsen); urinary retention; dry mouth; constipation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirabegron",
+          "route": "PO",
+          "indication": "Urinary urgency/incontinence; preferred over anticholinergics in patients with cognitive impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Mirabegron 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25 mg daily; may increase to 50 mg after 4-8 weeks; max 50 mg daily",
+            "orderSentence": "Mirabegron 25 mg PO"
+          },
+          "contraindications": "Severe uncontrolled hypertension; end-stage renal disease",
+          "monitoring": "BP; urinary retention; UTI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory": [
+        {
+          "item": "Cyclophosphamide (CNS vasculitis)",
+          "route": "IV",
+          "indication": "Primary CNS vasculitis confirmed by biopsy or angiography; induction therapy for severe disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide (CNS vasculitis) 750 mg/m2 IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "750 mg/m2 IV monthly for 6 months as induction; pre-medicate with ondansetron; IV hydration with mesna for bladder protection",
+            "orderSentence": "Cyclophosphamide (CNS vasculitis) 750 mg/m2 IV"
+          },
+          "contraindications": "Active infection; pregnancy; severe cytopenias; bladder dysfunction",
+          "monitoring": "CBC weekly x 4 then before each dose; urinalysis; BMP; hemorrhagic cystitis; infection; malignancy risk",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rituximab (CNS vasculitis/NMOSD)",
+          "route": "IV",
+          "indication": "CNS vasculitis maintenance or NMOSD-associated white matter disease; B-cell depleting therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Rituximab (CNS vasculitis/NMOSD) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV days 1 and 15; premedicate with methylprednisolone 100 mg IV, acetaminophen, diphenhydramine; re-dose q6 months or based on CD19 count",
+            "orderSentence": "Rituximab (CNS vasculitis/NMOSD) 1000 mg IV"
+          },
+          "contraindications": "Active hepatitis B; severe active infection; hypogammaglobulinemia (IgG <400)",
+          "monitoring": "Hepatitis B screening before initiation; immunoglobulin levels q3-6 months; CD19/CD20 counts; infection signs; PML risk (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Azathioprine (maintenance immunosuppression)",
+          "route": "PO",
+          "indication": "Maintenance therapy for CNS vasculitis after cyclophosphamide induction; steroid-sparing agent",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (maintenance immunosuppression) 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 50 mg every 2 weeks; target 2-3 mg/kg/day; check TPMT before initiation",
+            "orderSentence": "Azathioprine (maintenance immunosuppression) 50 mg PO"
+          },
+          "contraindications": "TPMT deficiency (increased myelosuppression); concurrent allopurinol (dose reduce by 75%); pregnancy",
+          "monitoring": "CBC q1-2 weeks initially then monthly; LFTs monthly; TPMT genotype before starting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mycophenolate mofetil (steroid-sparing)",
+          "route": "PO",
+          "indication": "Maintenance immunosuppression for CNS vasculitis or autoimmune leukoencephalopathy; alternative to azathioprine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (steroid-sparing) 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; increase by 500 mg every 2 weeks; target 1000-1500 mg BID; max 3000 mg/day",
+            "orderSentence": "Mycophenolate mofetil (steroid-sparing) 500 mg PO"
+          },
+          "contraindications": "Pregnancy (teratogenic); concurrent live vaccines",
+          "monitoring": "CBC q2 weeks x 2 months then monthly; LFTs; renal function; GI symptoms",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Intrathecal baclofen (severe spasticity)",
+          "route": "IT",
+          "indication": "Severe refractory spasticity not responsive to oral agents; requires pump implantation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50-100 mcg",
+                "orderSentence": "Intrathecal baclofen (severe spasticity) 50-100 mcg IT"
+              }
+            ],
+            "route": "IT",
+            "instructions": "IT baclofen trial with 50-100 mcg bolus; if >50% spasticity reduction, proceed to pump implantation; maintenance 100-900 mcg/day",
+            "orderSentence": "Intrathecal baclofen (severe spasticity) 50-100 mcg IT"
+          },
+          "contraindications": "Local infection; coagulopathy at pump site; insufficient response to trial",
+          "monitoring": "Pump function; refill schedule; abrupt withdrawal (life-threatening); infection at pump site",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ],
+      "Disease-Modifying or Chronic Therapies (Vascular Risk Factor Management)": [
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "Secondary stroke prevention in cerebral small vessel disease; antiplatelet for vascular white matter disease",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "81 mg",
+                "orderSentence": "Aspirin 81 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "81 mg PO daily; for patients with evidence of cerebrovascular disease or lacunar infarcts",
+            "orderSentence": "Aspirin 81 mg PO"
+          },
+          "pretreatment": "None required",
+          "contraindications": "Active bleeding; aspirin allergy; severe thrombocytopenia; concurrent anticoagulation (relative)",
+          "monitoring": "GI symptoms; bleeding signs; CBC annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "Dyslipidemia management; vascular risk reduction; may have anti-inflammatory effects on cerebral small vessels",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Atorvastatin 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 20-40 mg daily; target based on risk stratification (LDL <70 if high-risk, <100 if moderate-risk); max 80 mg daily",
+            "orderSentence": "Atorvastatin 20 mg PO"
+          },
+          "pretreatment": "Baseline lipid panel; LFTs",
+          "contraindications": "Active liver disease; pregnancy; concurrent strong CYP3A4 inhibitors at high doses",
+          "monitoring": "LFTs at baseline and 3 months; lipid panel q3-6 months; myalgia; CK if symptomatic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rosuvastatin",
+          "route": "PO",
+          "indication": "Dyslipidemia management; alternative to atorvastatin; more potent LDL reduction per mg",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Rosuvastatin 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10-20 mg daily; target LDL based on risk; max 40 mg daily",
+            "orderSentence": "Rosuvastatin 10 mg PO"
+          },
+          "pretreatment": "Baseline lipid panel; LFTs",
+          "contraindications": "Active liver disease; pregnancy; severe renal impairment at high doses",
+          "monitoring": "LFTs at baseline and 3 months; lipid panel q3-6 months; myalgia; CK if symptomatic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Lisinopril",
+          "route": "PO",
+          "indication": "Hypertension management; ACE inhibitor; target BP <130/80 to slow white matter disease progression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Lisinopril 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5-10 mg daily; titrate q1-2 weeks; target BP <130/80; max 40 mg daily",
+            "orderSentence": "Lisinopril 5 mg PO"
+          },
+          "pretreatment": "Baseline BMP; renal function",
+          "contraindications": "Angioedema history; bilateral renal artery stenosis; pregnancy; potassium >5.5",
+          "monitoring": "BMP at 1-2 weeks after initiation; renal function; potassium; cough (switch to ARB if intolerable)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amlodipine",
+          "route": "PO",
+          "indication": "Hypertension management; calcium channel blocker; smooth BP control important for CSVD",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5 mg",
+                "orderSentence": "Amlodipine 2.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2.5-5 mg daily; titrate q1-2 weeks; max 10 mg daily",
+            "orderSentence": "Amlodipine 2.5 mg PO"
+          },
+          "pretreatment": "Baseline BP",
+          "contraindications": "Severe aortic stenosis; decompensated heart failure",
+          "monitoring": "BP; peripheral edema; HR",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Metformin",
+          "route": "PO",
+          "indication": "Type 2 diabetes management; first-line agent; glycemic control to slow CSVD progression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Metformin 500 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg daily with evening meal; increase by 500 mg every 1-2 weeks; target 1000 mg BID; max 2550 mg/day",
+            "orderSentence": "Metformin 500 mg PO"
+          },
+          "pretreatment": "Baseline HbA1c; renal function",
+          "contraindications": "eGFR <30 (contraindicated); lactic acidosis risk; hold before contrast procedures",
+          "monitoring": "HbA1c q3 months; renal function q6 months; B12 level annually (metformin reduces B12 absorption)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cyanocobalamin (chronic supplementation)",
+          "route": "PO/IM",
+          "indication": "B12 deficiency or insufficiency contributing to white matter disease; long-term repletion",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mcg",
+                "orderSentence": "Cyanocobalamin (chronic supplementation) 1000 mcg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mcg PO daily for maintenance; IM route if malabsorption (1000 mcg IM monthly)",
+            "orderSentence": "Cyanocobalamin (chronic supplementation) 1000 mcg PO"
+          },
+          "pretreatment": "Baseline B12 and MMA",
+          "contraindications": "None",
+          "monitoring": "B12 level q6 months; MMA to confirm adequacy; neurological exam for improvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for white matter disease characterization, differential diagnosis, and longitudinal management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuroradiology review for MRI pattern interpretation (distribution, symmetry, enhancement, microbleed pattern) to guide differential diagnosis",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Rheumatology consultation if autoimmune etiology suspected (SLE, vasculitis, antiphospholipid syndrome, sarcoidosis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infectious disease consultation if infectious etiology suspected (HIV, syphilis, PML, other CNS infections)",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Genetics consultation for suspected hereditary leukoencephalopathy (CADASIL, leukodystrophy, mitochondrial disease, Fabry disease) in young patients without vascular risk factors",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy for gait training, balance assessment, and fall prevention given white matter disease affecting motor pathways",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, adaptive strategies for cognitive and motor deficits, and home safety evaluation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy for cognitive-linguistic assessment and swallowing evaluation if bulbar/subcortical white matter involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology referral for formal cognitive assessment, baseline documentation, and rehabilitation planning in vascular cognitive impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work consult for caregiver support, community resources, insurance navigation, and long-term care planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cardiology referral for cardiac source evaluation if embolic pattern suspected (echocardiogram, Holter monitor, cardiac MRI)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for sudden new weakness, numbness, speech difficulty, vision loss, or severe headache, as these may indicate acute stroke or disease progression requiring urgent intervention",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED for new seizure, prolonged confusion, or loss of consciousness, as white matter disease may lower seizure threshold",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all blood pressure medications as prescribed; uncontrolled hypertension is the strongest modifiable risk factor for worsening white matter disease",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all diabetes and cholesterol medications as prescribed; vascular risk factor control is essential to prevent progression of white matter changes",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do not stop anti-seizure medications abruptly, as this may provoke seizures; discuss any changes with neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up MRI scans are essential to monitor for progression; do not miss scheduled imaging appointments",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report new cognitive difficulties (memory, word-finding, planning), mood changes, or urinary symptoms to neurology, as these may indicate disease progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Driving restriction if significant cognitive impairment, seizures, or visual field deficits present; require neurology clearance before resuming driving",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Blood pressure target <130/80 mmHg to slow progression of cerebral small vessel disease and white matter injury; home BP monitoring recommended",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Strict glycemic control (HbA1c <7.0%) to reduce microvascular damage contributing to white matter disease progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Smoking cessation to reduce cerebrovascular risk; provide counseling and pharmacotherapy (nicotine replacement, varenicline, bupropion)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Alcohol limitation to <1 drink/day for women and <2 drinks/day for men; excessive alcohol is neurotoxic and worsens white matter disease",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Regular aerobic exercise (150 min/week moderate intensity) to improve cerebrovascular health and reduce vascular risk factors; adapt to physical limitations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mediterranean or MIND diet to reduce cardiovascular risk and support brain health; emphasize fruits, vegetables, whole grains, fish, olive oil",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sleep hygiene and evaluation for obstructive sleep apnea (OSA); untreated OSA contributes to white matter disease through intermittent hypoxia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Cognitive engagement: reading, puzzles, social interaction, and learning new skills to support cognitive reserve and potentially slow cognitive decline",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Fall prevention: home safety evaluation, remove trip hazards, adequate lighting, grab bars in bathroom, assistive devices as needed for gait impairment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caregiver education on recognizing acute neurological changes, medication management, and when to seek emergency care",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "Cerebral small vessel disease (CSVD) / leukoaraiosis",
+      "features": "Most common cause in adults >50; periventricular and deep white matter; symmetric; associated with hypertension, diabetes, aging; Fazekas scale 1-3; lacunar infarcts; microbleeds in basal ganglia/thalamus",
+      "tests": "MRI (Fazekas grading, microbleed pattern on SWI); vascular risk factor assessment; clinical context; no enhancement"
+    },
+    {
+      "diagnosis": "Multiple sclerosis (MS)",
+      "features": "Younger onset (20-40); periventricular, juxtacortical, infratentorial, and spinal cord lesions; Dawson fingers; enhancing lesions indicate activity; relapsing-remitting course",
+      "tests": "MRI (Dawson fingers, ovoid periventricular lesions, spinal cord lesions); CSF oligoclonal bands; VEP; McDonald criteria; age of onset"
+    },
+    {
+      "diagnosis": "Neuromyelitis optica spectrum disorder (NMOSD)",
+      "features": "Longitudinally extensive transverse myelitis; area postrema syndrome; periependymal brain lesions; aquaporin-4 antibody positive",
+      "tests": "Aquaporin-4 antibody; MOG antibody; MRI spine (LETM); brain lesion pattern (periependymal)"
+    },
+    {
+      "diagnosis": "Progressive multifocal leukoencephalopathy (PML)",
+      "features": "Immunocompromised host; asymmetric, multifocal subcortical lesions; involves U-fibers; no enhancement (unless IRIS); progressive",
+      "tests": "CSF JCV PCR; immune status (HIV, immunosuppression history); MRI pattern (subcortical U-fibers, no enhancement)"
+    },
+    {
+      "diagnosis": "CADASIL",
+      "features": "Young-onset (30-50); migraine with aura; mood disturbance; lacunar strokes; anterior temporal pole and external capsule involvement; family history",
+      "tests": "MRI (anterior temporal pole, external capsule); NOTCH3 gene testing; skin biopsy (GOM deposits); family history"
+    },
+    {
+      "diagnosis": "CNS vasculitis (primary or secondary)",
+      "features": "Headache; encephalopathy; multifocal strokes and white matter lesions; enhancement may be present; younger age without typical vascular risk factors",
+      "tests": "MRA/CTA (vessel irregularity); conventional angiography; vessel wall MRI; brain biopsy; ESR/CRP; autoimmune labs"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Cranial neuropathies (especially facial nerve); leptomeningeal enhancement; hypothalamic involvement; systemic sarcoid findings",
+      "tests": "Chest CT (hilar lymphadenopathy); serum/CSF ACE; gallium scan or PET; tissue biopsy (non-caseating granulomas)"
+    },
+    {
+      "diagnosis": "HIV encephalopathy",
+      "features": "Diffuse symmetric white matter changes; progressive cognitive decline; HIV-positive; no focal lesions typically",
+      "tests": "HIV testing; CD4 count; MRI (diffuse, symmetric); CSF JCV PCR negative; clinical context"
+    },
+    {
+      "diagnosis": "Toxic leukoencephalopathy",
+      "features": "History of toxic exposure (heroin inhalation, toluene, chemotherapy, radiation); posterior predominant in some toxins; often symmetric",
+      "tests": "Exposure history; urine drug screen; carboxyhemoglobin; specific toxin levels; MRI pattern (posterior fossa, cerebellar); clinical history"
+    },
+    {
+      "diagnosis": "Radiation leukoencephalopathy",
+      "features": "History of cranial radiation; white matter changes in radiation field; may develop months to years after treatment",
+      "tests": "Radiation treatment history; MRI changes confined to radiation field; timing post-treatment"
+    },
+    {
+      "diagnosis": "Metachromatic leukodystrophy (MLD)",
+      "features": "Adult-onset: behavioral/psychiatric changes followed by motor decline; symmetric periventricular white matter disease; peripheral neuropathy",
+      "tests": "Arylsulfatase A activity; urine sulfatides; NCV/EMG (demyelinating neuropathy); genetic testing"
+    },
+    {
+      "diagnosis": "Adrenoleukodystrophy (ALD/AMN)",
+      "features": "X-linked; posterior predominant (cerebral ALD) or spinal cord (AMN); adrenal insufficiency; young men",
+      "tests": "VLCFA (elevated C26:0); ABCD1 gene testing; adrenal function testing; MRI pattern (posterior predominant)"
+    },
+    {
+      "diagnosis": "Susac syndrome",
+      "features": "Branch retinal artery occlusions; sensorineural hearing loss; encephalopathy; corpus callosum \"snowball\" lesions",
+      "tests": "Fluorescein angiography (BRAO); audiometry; MRI (corpus callosum central lesions); clinical triad"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Acute onset; hypertension; seizures; posterior-predominant vasogenic edema; reversible",
+      "tests": "MRI (posterior vasogenic edema, elevated ADC); clinical context (hypertension, eclampsia, immunosuppression); reversibility with treatment"
+    },
+    {
+      "diagnosis": "Osmotic demyelination syndrome (central pontine myelinolysis)",
+      "features": "Rapid sodium correction history; central pontine and/or extrapontine involvement; acute onset",
+      "tests": "Sodium correction history; MRI (central pons, basal ganglia); clinical context; timeline"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "Cerebral small vessel disease is the most common cause of white matter hyperintensities; Fazekas scale grades severity and correlates with cognitive decline",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Debette S, Markus HS. BMJ 2010](https://pubmed.ncbi.nlm.nih.gov/20660506/)"
+    },
+    {
+      "recommendation": "Blood pressure control reduces white matter hyperintensity progression; SPRINT-MIND showed intensive BP control (<120 systolic) reduced WMH volume",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[SPRINT MIND Investigators. JAMA 2019](https://pubmed.ncbi.nlm.nih.gov/30688979/)"
+    },
+    {
+      "recommendation": "White matter hyperintensities independently predict stroke, dementia, and death; Rotterdam Scan Study",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[Vernooij MW et al. Radiology 2009](https://pubmed.ncbi.nlm.nih.gov/19789227/)"
+    },
+    {
+      "recommendation": "MRI with FLAIR is the gold standard for detecting white matter disease; DWI and SWI provide additional diagnostic information for acuity and microbleeds",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Defined by AAN Practice Parameters; Defined by STandards for ReportIng Vascular changes on nEuroimaging (STRIVE)](https://pubmed.ncbi.nlm.nih.gov/23396163/)"
+    },
+    {
+      "recommendation": "CADASIL is the most common genetic cause of white matter disease; anterior temporal pole and external capsule involvement are characteristic",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Chabriat H et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19539236/)"
+    },
+    {
+      "recommendation": "Donepezil provides modest benefit in vascular cognitive impairment; evidence from randomized controlled trials",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Erkinjuntti T et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/11943260/)"
+    },
+    {
+      "recommendation": "Primary CNS vasculitis requires tissue diagnosis; angiography alone has limited sensitivity and specificity",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Salvarani C et al. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237904/)"
+    },
+    {
+      "recommendation": "Adult-onset leukodystrophies are increasingly recognized; systematic diagnostic approach yields diagnosis in 50% of cases",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Lynch DS et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28877014/)"
+    },
+    {
+      "recommendation": "Mediterranean diet associated with reduced white matter hyperintensity burden and slower cognitive decline",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Gardener H et al. Arch Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22431837/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "MRI brain with/without contrast",
+      "frequency": "Baseline; 3-6 months for acute/subacute; annually for chronic CSVD; per disease-specific protocol",
+      "action": "Reassess differential; adjust treatment; escalate immunosuppression if inflammatory; optimize vascular risk factors if CSVD",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Each visit; home monitoring recommended for CSVD",
+      "action": "Adjust antihypertensive therapy; address adherence; consider secondary hypertension workup if refractory",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "HbA1c",
+      "frequency": "Q3 months if diabetic; annually if not",
+      "action": "Adjust diabetes management; endocrine referral if refractory; reinforce lifestyle modifications",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Lipid panel",
+      "frequency": "Q3-6 months until at goal; then annually",
+      "action": "Adjust statin dose; add second agent; reinforce diet",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurological examination",
+      "frequency": "Each visit; q1-2 days if inpatient",
+      "action": "Reassess differential if progressive; advance workup; adjust treatment; consider rehabilitation",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Cognitive screening (MoCA or MMSE)",
+      "frequency": "Each outpatient visit; baseline and q6-12 months",
+      "action": "Formal neuropsychological testing if decline; adjust cognitive medications; occupational therapy referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CBC (if on immunosuppression)",
+      "frequency": "Q1-2 weeks initially; then monthly; then q3 months",
+      "action": "Hold immunosuppressant; dose adjust; infectious disease precautions",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on statin, azathioprine, or hepatotoxic medications)",
+      "frequency": "Baseline; 3 months; then q6 months",
+      "action": "Hold hepatotoxic medication; dose adjust; hepatology referral if persistent elevation >3x ULN",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (BMP or CMP)",
+      "frequency": "Baseline; q3-6 months on ACE inhibitor or metformin",
+      "action": "Adjust medications cleared renally; nephrology referral if declining",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Blood glucose (during IV steroids)",
+      "frequency": "Q6h during IV steroids; daily during oral taper",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Each visit; daily if inpatient with seizure history",
+      "action": "Adjust anticonvulsant dosing; obtain EEG; neurology reassessment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Mood assessment (PHQ-9)",
+      "frequency": "Each outpatient visit",
+      "action": "Initiate or adjust antidepressant; psychiatry referral if severe or suicidal ideation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Gait and fall risk assessment",
+      "frequency": "Each outpatient visit; each hospitalization",
+      "action": "Physical therapy; assistive devices; home safety evaluation; fall prevention program",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Discharge home",
+      "criteria": "Stable neurological exam; no acute etiology requiring inpatient treatment; workup can be completed outpatient; outpatient neurology follow-up arranged within 2-4 weeks; home safe for current functional status"
+    },
+    {
+      "disposition": "Admit to floor",
+      "criteria": "Acute or subacute neurological decline with white matter disease; new diagnosis requiring urgent workup (LP, serial imaging, IV treatments); new seizure requiring monitoring; need for IV steroid therapy or IV antibiotics (neurosyphilis); progressive symptoms with unclear etiology"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Severe cerebral edema with herniation risk; status epilepticus; fulminant CNS vasculitis with rapidly declining consciousness; hypertensive emergency with acute end-organ damage; respiratory compromise from brainstem white matter involvement"
+    },
+    {
+      "disposition": "Transfer to higher level of care",
+      "criteria": "Need for brain biopsy (transfer to center with stereotactic neurosurgery capability); need for conventional cerebral angiography not available at current facility; suspected genetic leukoencephalopathy requiring specialized testing"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology)",
+      "criteria": "All patients: initial follow-up 2-4 weeks; repeat MRI per disease-specific protocol; cognitive monitoring q6-12 months; vascular risk factor reassessment at each visit"
+    }
+  ]
+}
