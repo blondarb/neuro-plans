@@ -24,11 +24,15 @@ enum AppTheme {
     static let cardPadding: CGFloat = 16
     static let sectionSpacing: CGFloat = 20
     static let itemSpacing: CGFloat = 12
-    static let cornerRadius: CGFloat = 16
-    static let smallCornerRadius: CGFloat = 10
+    static let cornerRadius: CGFloat = 20
+    static let smallCornerRadius: CGFloat = 14
 
     // Glass effect
     static let glassOpacity: CGFloat = 0.15
+    
+    // Shadows
+    static let cardShadowRadius: CGFloat = 12
+    static let cardShadowY: CGFloat = 4
 }
 
 // MARK: - Priority Color
@@ -91,11 +95,12 @@ extension View {
 // MARK: - Gradient Backgrounds
 
 extension LinearGradient {
+    /// Adaptive background that works in both light and dark modes
     static var appBackground: LinearGradient {
         LinearGradient(
             colors: [
-                Color(red: 0.05, green: 0.10, blue: 0.15),
-                Color(red: 0.02, green: 0.06, blue: 0.12)
+                Color(.systemBackground),
+                Color(.systemBackground).opacity(0.95)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
@@ -107,6 +112,76 @@ extension LinearGradient {
             colors: [AppTheme.teal, AppTheme.tealDark],
             startPoint: .topLeading,
             endPoint: .bottomTrailing
+        )
+    }
+}
+
+// MARK: - Adaptive Background View
+
+struct AdaptiveBackground: View {
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        Group {
+            if colorScheme == .dark {
+                // Rich dark gradient with subtle teal tint
+                LinearGradient(
+                    colors: [
+                        Color(red: 0.06, green: 0.09, blue: 0.12),
+                        Color(red: 0.03, green: 0.05, blue: 0.08)
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .overlay {
+                    // Subtle teal glow at top
+                    RadialGradient(
+                        colors: [
+                            AppTheme.teal.opacity(0.08),
+                            Color.clear
+                        ],
+                        center: .topTrailing,
+                        startRadius: 0,
+                        endRadius: 400
+                    )
+                }
+            } else {
+                // Clean light gradient with subtle warmth
+                LinearGradient(
+                    colors: [
+                        Color(red: 0.98, green: 0.98, blue: 0.99),
+                        Color(red: 0.95, green: 0.96, blue: 0.97)
+                    ],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+                .overlay {
+                    // Subtle teal accent at top
+                    RadialGradient(
+                        colors: [
+                            AppTheme.teal.opacity(0.05),
+                            Color.clear
+                        ],
+                        center: .topTrailing,
+                        startRadius: 0,
+                        endRadius: 300
+                    )
+                }
+            }
+        }
+        .ignoresSafeArea()
+    }
+}
+
+// MARK: - Modern Card Shadow
+
+extension View {
+    func modernCardShadow() -> some View {
+        self.shadow(
+            color: Color.black.opacity(0.08),
+            radius: AppTheme.cardShadowRadius,
+            x: 0,
+            y: AppTheme.cardShadowY
         )
     }
 }

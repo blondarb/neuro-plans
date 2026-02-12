@@ -5,7 +5,9 @@ struct PlanDetailView: View {
 
     @Environment(PlanStore.self) private var store
     @Environment(PlanBuilder.self) private var builder
+    @Environment(ClinicalErrorService.self) private var errorService
     @State private var showScope = false
+    @State private var showErrorReport = false
 
     var body: some View {
         @Bindable var store = store
@@ -135,7 +137,7 @@ struct PlanDetailView: View {
             }
             .padding(.top, 8)
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -165,10 +167,31 @@ struct PlanDetailView: View {
                     }
                 }
             }
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Button {
+                        showErrorReport = true
+                    } label: {
+                        Label("Report Clinical Error", systemImage: "exclamationmark.bubble.fill")
+                    }
+                } label: {
+                    Image(systemName: "ellipsis.circle")
+                }
+            }
         }
         .onAppear {
             store.markViewed(plan.id)
             builder.activePlanTitle = plan.title
+            errorService.recordPlanView()
+        }
+        .sheet(isPresented: $showErrorReport) {
+            ClinicalErrorReportView(
+                planId: plan.id,
+                planTitle: plan.title,
+                section: nil,
+                itemText: nil
+            )
         }
     }
 
@@ -444,4 +467,5 @@ private struct EvidenceSection: View {
     }
     .environment(PlanStore())
     .environment(PlanBuilder())
+    .environment(ClinicalErrorService())
 }

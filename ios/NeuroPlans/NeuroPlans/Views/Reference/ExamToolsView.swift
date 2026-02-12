@@ -1,4 +1,5 @@
 import SwiftUI
+import AVFoundation
 
 // MARK: - Exam Tools Grid View
 
@@ -22,7 +23,7 @@ struct ExamToolsGridView: View {
             }
             .padding()
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
         .navigationTitle("Exam Tools")
     }
 }
@@ -144,6 +145,8 @@ struct PenlightToolView: View {
     @State private var isOn = false
     @State private var isRed = false
     @State private var brightness: Double = 1.0
+    @State private var useCameraFlash = true
+    @State private var hasFlash = false
     
     private var lightColor: Color {
         isOn ? (isRed ? Color.red : Color.white) : Color.black
@@ -157,7 +160,7 @@ struct PenlightToolView: View {
                 .ignoresSafeArea()
                 .contentShape(Rectangle())
                 .onTapGesture {
-                    isOn.toggle()
+                    toggleLight()
                 }
             
             // Controls when off
@@ -172,29 +175,113 @@ struct PenlightToolView: View {
                         .foregroundStyle(.white)
                     
                     VStack(spacing: 16) {
+                        // Camera flash toggle (only show if device has flash)
+                        if hasFlash {
+                            Toggle("Use Camera Flash", isOn: $useCameraFlash)
+                                .tint(.yellow)
+                            
+                            if useCameraFlash {
+                                Text("Uses the bright LED flash for pupil examination")
+                                    .font(.caption2)
+                                    .foregroundStyle(.secondary)
+                            }
+                            
+                            Divider()
+                                .opacity(0.3)
+                        }
+                        
                         Toggle("Red Light (dark adaptation)", isOn: $isRed)
                             .tint(.red)
+                            .disabled(useCameraFlash && hasFlash)
+                            .opacity(useCameraFlash && hasFlash ? 0.5 : 1.0)
                         
-                        HStack {
-                            Text("Brightness")
-                            Slider(value: $brightness, in: 0.3...1.0)
-                                .tint(isRed ? .red : .yellow)
+                        if !useCameraFlash || !hasFlash {
+                            HStack {
+                                Text("Brightness")
+                                Slider(value: $brightness, in: 0.3...1.0)
+                                    .tint(isRed ? .red : .yellow)
+                            }
                         }
                     }
                     .padding()
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
                     .padding(.horizontal, 32)
                     
-                    Text("White: pupil reflex testing\nRed: preserves dark adaptation")
+                    if useCameraFlash && hasFlash {
+                        Text("Camera flash: bright white light for pupil reflex testing")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                    } else {
+                        Text("White: pupil reflex testing\nRed: preserves dark adaptation")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                    }
+                }
+            } else if useCameraFlash && hasFlash && !isRed {
+                // Show tap hint when flash is on
+                VStack {
+                    Spacer()
+                    Text("Tap to turn off")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal)
+                        .foregroundStyle(.white.opacity(0.6))
+                        .padding(8)
+                        .background(.black.opacity(0.3), in: RoundedRectangle(cornerRadius: 8))
+                        .padding(.bottom, 60)
                 }
             }
         }
         .navigationBarHidden(isOn)
         .statusBarHidden(isOn)
+        .onAppear {
+            checkForFlash()
+        }
+        .onDisappear {
+            // Make sure to turn off flash when leaving
+            if isOn && useCameraFlash {
+                setCameraFlash(on: false)
+            }
+        }
+    }
+    
+    private func checkForFlash() {
+        guard let device = AVCaptureDevice.default(for: .video) else {
+            hasFlash = false
+            return
+        }
+        hasFlash = device.hasTorch
+    }
+    
+    private func toggleLight() {
+        isOn.toggle()
+        
+        if useCameraFlash && hasFlash && !isRed {
+            setCameraFlash(on: isOn)
+        }
+    }
+    
+    private func setCameraFlash(on: Bool) {
+        guard let device = AVCaptureDevice.default(for: .video),
+              device.hasTorch else {
+            return
+        }
+        
+        do {
+            try device.lockForConfiguration()
+            
+            if on {
+                try device.setTorchModeOn(level: Float(brightness))
+            } else {
+                device.torchMode = .off
+            }
+            
+            device.unlockForConfiguration()
+        } catch {
+            print("Flash error: \(error)")
+        }
     }
 }
 
@@ -488,7 +575,7 @@ struct VisualAcuityToolView: View {
             }
             .padding(.top)
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
     }
 }
 
@@ -614,15 +701,12 @@ struct AmslerGridToolView: View {
 // MARK: - Stopwatch Tool
 
 struct StopwatchToolView: View {
-    @State private var elapsedTime: TimeInterval = 0
-    @State private var isRunning = false
-    @State private var timer: Timer?
-    @State private var laps: [TimeInterval] = []
+    @Environment(StopwatchService.self) private var stopwatch
     
     var body: some View {
         VStack(spacing: 24) {
             // Timer display
-            Text(formatTime(elapsedTime))
+            Text(stopwatch.formattedTime())
                 .font(.system(size: 64, weight: .light, design: .monospaced))
                 .foregroundStyle(.primary)
             
@@ -633,9 +717,9 @@ struct StopwatchToolView: View {
                     .foregroundStyle(.secondary)
                 
                 HStack(spacing: 12) {
-                    presetButton("60s Upgaze", duration: 60)
-                    presetButton("30s Hold", duration: 30)
-                    presetButton("10m Walk", duration: nil)
+                    presetButton("60s Upgaze")
+                    presetButton("30s Hold")
+                    presetButton("10m Walk")
                 }
             }
             
@@ -643,14 +727,13 @@ struct StopwatchToolView: View {
             HStack(spacing: 32) {
                 // Reset/Lap button
                 Button {
-                    if isRunning {
-                        laps.insert(elapsedTime, at: 0)
+                    if stopwatch.isRunning {
+                        stopwatch.lap()
                     } else {
-                        elapsedTime = 0
-                        laps.removeAll()
+                        stopwatch.reset()
                     }
                 } label: {
-                    Text(isRunning ? "Lap" : "Reset")
+                    Text(stopwatch.isRunning ? "Lap" : "Reset")
                         .font(.system(.headline, design: .rounded))
                         .frame(width: 80, height: 80)
                         .background(.ultraThinMaterial, in: Circle())
@@ -658,29 +741,37 @@ struct StopwatchToolView: View {
                 
                 // Start/Stop button
                 Button {
-                    toggleTimer()
+                    stopwatch.toggle()
                 } label: {
-                    Text(isRunning ? "Stop" : "Start")
+                    Text(stopwatch.isRunning ? "Stop" : "Start")
                         .font(.system(.headline, design: .rounded, weight: .semibold))
                         .foregroundStyle(.white)
                         .frame(width: 80, height: 80)
-                        .background(isRunning ? .red : .green, in: Circle())
+                        .background(stopwatch.isRunning ? .red : .green, in: Circle())
                 }
             }
             
+            // Minimize hint
+            if stopwatch.isRunning {
+                Text("Navigate away to use floating timer")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .padding(.top, 8)
+            }
+            
             // Laps
-            if !laps.isEmpty {
+            if !stopwatch.laps.isEmpty {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Laps")
                         .font(.system(.subheadline, design: .rounded, weight: .semibold))
                     
-                    ForEach(Array(laps.enumerated()), id: \.offset) { index, lap in
+                    ForEach(Array(stopwatch.laps.enumerated()), id: \.offset) { index, lap in
                         HStack {
-                            Text("Lap \(laps.count - index)")
+                            Text("Lap \(stopwatch.laps.count - index)")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                             Spacer()
-                            Text(formatTime(lap))
+                            Text(stopwatch.formattedTime(lap))
                                 .font(.system(.body, design: .monospaced))
                         }
                     }
@@ -693,19 +784,21 @@ struct StopwatchToolView: View {
             Spacer()
         }
         .padding(.top, 40)
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
+        .onAppear {
+            // Hide floating timer when viewing full stopwatch
+            stopwatch.isViewingFullScreen = true
+        }
         .onDisappear {
-            timer?.invalidate()
+            // Show floating timer when leaving stopwatch view
+            stopwatch.isViewingFullScreen = false
         }
     }
     
-    private func presetButton(_ title: String, duration: TimeInterval?) -> some View {
+    private func presetButton(_ title: String) -> some View {
         Button {
-            elapsedTime = 0
-            laps.removeAll()
-            if !isRunning {
-                toggleTimer()
-            }
+            stopwatch.reset()
+            stopwatch.start()
         } label: {
             Text(title)
                 .font(.system(.caption, design: .rounded, weight: .medium))
@@ -713,25 +806,6 @@ struct StopwatchToolView: View {
                 .padding(.vertical, 8)
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 8))
         }
-    }
-    
-    private func toggleTimer() {
-        if isRunning {
-            timer?.invalidate()
-            timer = nil
-        } else {
-            timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
-                elapsedTime += 0.01
-            }
-        }
-        isRunning.toggle()
-    }
-    
-    private func formatTime(_ time: TimeInterval) -> String {
-        let minutes = Int(time) / 60
-        let seconds = Int(time) % 60
-        let hundredths = Int((time.truncatingRemainder(dividingBy: 1)) * 100)
-        return String(format: "%02d:%02d.%02d", minutes, seconds, hundredths)
     }
 }
 
@@ -808,7 +882,7 @@ struct PupilGaugeToolView: View {
             }
             .padding(.top)
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
     }
     
     private func referenceRow(_ condition: String, _ size: String, _ causes: String) -> some View {
@@ -912,7 +986,7 @@ struct ReflexHammerToolView: View {
             
             Spacer()
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
     }
 }
 

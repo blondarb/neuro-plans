@@ -14,7 +14,7 @@ struct BuilderView: View {
                     builderContent
                 }
             }
-            .background(LinearGradient.appBackground.ignoresSafeArea())
+            .background { AdaptiveBackground() }
             .navigationTitle("Plan Builder")
             .toolbar {
                 if !builder.isEmpty {

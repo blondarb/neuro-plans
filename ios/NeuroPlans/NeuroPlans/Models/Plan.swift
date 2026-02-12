@@ -90,7 +90,7 @@ enum Priority: String, Comparable {
 
 // MARK: - Lab Item
 
-struct LabItem: Codable, Identifiable {
+struct LabItem: Codable, Identifiable, SettingFilterable {
     let item: String?
     let rationale: String?
     let target: String?
@@ -121,11 +121,15 @@ struct LabItem: Codable, Identifiable {
         }
         return Priority(rawValue: raw ?? "-") ?? .na
     }
+    
+    func isVisible(for setting: ClinicalSetting) -> Bool {
+        !displayText.isEmpty && (priority(for: setting).isApplicable || isReferenceItem)
+    }
 }
 
 // MARK: - Imaging Item
 
-struct ImagingItem: Codable, Identifiable {
+struct ImagingItem: Codable, Identifiable, SettingFilterable {
     let item: String?
     let timing: String?
     let target: String?
@@ -158,11 +162,15 @@ struct ImagingItem: Codable, Identifiable {
         }
         return Priority(rawValue: raw ?? "-") ?? .na
     }
+    
+    func isVisible(for setting: ClinicalSetting) -> Bool {
+        !displayText.isEmpty && (priority(for: setting).isApplicable || isReferenceItem)
+    }
 }
 
 // MARK: - Treatment Item
 
-struct TreatmentItem: Codable, Identifiable {
+struct TreatmentItem: Codable, Identifiable, SettingFilterable {
     let item: String?
     let route: String?
     let indication: String?
@@ -201,6 +209,10 @@ struct TreatmentItem: Codable, Identifiable {
         case .icu: raw = ICU
         }
         return Priority(rawValue: raw ?? "-") ?? .na
+    }
+    
+    func isVisible(for setting: ClinicalSetting) -> Bool {
+        !displayText.isEmpty && (priority(for: setting).isApplicable || isReferenceItem)
     }
 
     enum CodingKeys: String, CodingKey {
@@ -257,7 +269,7 @@ struct DoseOption: Codable, Identifiable, Hashable {
 
 // MARK: - Other Recommendations
 
-struct OtherRecItem: Codable, Identifiable {
+struct OtherRecItem: Codable, Identifiable, SettingFilterable {
     let item: String?
     let rationale: String?
     let timing: String?
@@ -287,6 +299,10 @@ struct OtherRecItem: Codable, Identifiable {
         case .icu: raw = ICU
         }
         return Priority(rawValue: raw ?? "-") ?? .na
+    }
+    
+    func isVisible(for setting: ClinicalSetting) -> Bool {
+        !displayText.isEmpty && (priority(for: setting).isApplicable || isReferenceItem)
     }
 }
 

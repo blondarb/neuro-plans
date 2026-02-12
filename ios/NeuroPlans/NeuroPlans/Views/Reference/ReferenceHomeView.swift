@@ -2,212 +2,107 @@ import SwiftUI
 
 struct ReferenceHomeView: View {
     @Environment(ReferenceStore.self) private var store
+    @Environment(UserPreferences.self) private var prefs
     @State private var searchText = ""
 
     var body: some View {
         @Bindable var store = store
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: AppTheme.sectionSpacing) {
-
-                    // Quick Stats - Tappable navigation
-                    HStack(spacing: 12) {
-                        NavigationLink {
-                            ScaleListView(title: "All Scales", scales: store.allScales)
-                        } label: {
-                            RefStatCard(
-                                value: "\(store.scales.count)",
-                                label: "Scales",
-                                icon: "chart.bar.fill",
-                                color: .blue
-                            )
-                        }
-                        .buttonStyle(.plain)
-                        
-                        NavigationLink {
-                            ExamListView(title: "All Exams", exams: store.allExams)
-                        } label: {
-                            RefStatCard(
-                                value: "\(store.exams.count)",
-                                label: "Exams",
-                                icon: "stethoscope",
-                                color: AppTheme.teal
-                            )
-                        }
-                        .buttonStyle(.plain)
-                        
-                        NavigationLink {
-                            ToolListView(title: "All Tools", tools: store.allTools)
-                        } label: {
-                            RefStatCard(
-                                value: "\(store.tools.count)",
-                                label: "Tools",
-                                icon: "wrench.and.screwdriver.fill",
-                                color: .purple
-                            )
-                        }
-                        .buttonStyle(.plain)
-                    }
-                    .padding(.horizontal)
+                VStack(alignment: .leading, spacing: 16) {
                     
-                    // Exam Tools - Interactive bedside tools
-                    NavigationLink {
-                        ExamToolsGridView()
-                    } label: {
-                        GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
-                            HStack(spacing: 16) {
-                                ZStack {
-                                    Circle()
-                                        .fill(LinearGradient(
-                                            colors: [.yellow.opacity(0.3), .orange.opacity(0.3)],
-                                            startPoint: .topLeading,
-                                            endPoint: .bottomTrailing
-                                        ))
-                                        .frame(width: 50, height: 50)
-                                    Image(systemName: "flashlight.on.fill")
-                                        .font(.system(size: 24))
-                                        .foregroundStyle(.yellow)
-                                }
-                                
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text("Exam Tools")
-                                        .font(.system(.headline, design: .rounded, weight: .semibold))
-                                    Text("Penlight, OKN stripes, visual acuity, Amsler grid, stopwatch")
-                                        .font(.caption)
-                                        .foregroundStyle(.secondary)
-                                        .lineLimit(1)
-                                }
-                                
-                                Spacer()
-                                
-                                Image(systemName: "chevron.right")
-                                    .foregroundStyle(.secondary)
-                            }
-                        }
-                    }
-                    .buttonStyle(.plain)
-                    .padding(.horizontal)
-
-                    // Scales Section
-                    VStack(alignment: .leading, spacing: 10) {
-                        GlassSectionHeader(
-                            title: "Clinical Scores & Scales",
-                            icon: "chart.bar.fill",
-                            count: store.scales.count
-                        )
-                        .padding(.horizontal)
-
-                        LazyVGrid(
-                            columns: [
-                                GridItem(.flexible(), spacing: 10),
-                                GridItem(.flexible(), spacing: 10)
-                            ],
-                            spacing: 10
-                        ) {
-                            ForEach(store.scaleCategories) { cat in
-                                NavigationLink(value: cat) {
-                                    RefCategoryCard(
+                    // Render sections in user's preferred order
+                    ForEach(prefs.referenceSectionOrder, id: \.self) { sectionId in
+                        switch sectionId {
+                        case "examTools":
+                            ExamToolsSection(sectionId: "examTools")
+                        case "scales":
+                            ReferenceSection(
+                                sectionId: "scales",
+                                title: "Clinical Scales",
+                                icon: "chart.bar.fill",
+                                color: .blue,
+                                items: store.scaleCategories.map { cat in
+                                    ReferenceSectionItem(
+                                        id: cat.id,
                                         name: cat.name,
                                         icon: cat.icon,
-                                        color: cat.color,
-                                        count: store.scales(for: cat).count
+                                        color: colorFromString(cat.color),
+                                        count: store.scales(for: cat).count,
+                                        destination: cat
                                     )
-                                }
-                                .buttonStyle(.plain)
-                            }
-                        }
-                        .padding(.horizontal)
-
-                        NavigationLink {
-                            ScaleListView(title: "All Scales", scales: store.allScales)
-                        } label: {
-                            GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
-                                HStack {
-                                    Image(systemName: "chart.bar.fill")
-                                        .foregroundStyle(.blue)
-                                    Text("Browse All \(store.scales.count) Scales")
-                                        .font(AppTheme.headlineFont)
-                                    Spacer()
-                                    Image(systemName: "chevron.right")
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
-                        }
-                        .buttonStyle(.plain)
-                        .padding(.horizontal)
-                    }
-
-                    // Exams Section
-                    VStack(alignment: .leading, spacing: 10) {
-                        GlassSectionHeader(
-                            title: "Standard Examinations",
-                            icon: "stethoscope",
-                            count: store.exams.count
-                        )
-                        .padding(.horizontal)
-
-                        LazyVGrid(
-                            columns: [
-                                GridItem(.flexible(), spacing: 10),
-                                GridItem(.flexible(), spacing: 10)
-                            ],
-                            spacing: 10
-                        ) {
-                            ForEach(store.examCategories) { cat in
-                                NavigationLink(value: cat) {
-                                    RefCategoryCard(
+                                },
+                                browseAllCount: store.scales.count,
+                                browseAllDestination: "allScales"
+                            )
+                        case "exams":
+                            ReferenceSection(
+                                sectionId: "exams",
+                                title: "Examinations",
+                                icon: "stethoscope",
+                                color: .teal,
+                                items: store.examCategories.map { cat in
+                                    ReferenceSectionItem(
+                                        id: cat.id,
                                         name: cat.name,
                                         icon: cat.icon,
-                                        color: cat.color,
-                                        count: store.exams(for: cat).count
+                                        color: colorFromString(cat.color),
+                                        count: store.exams(for: cat).count,
+                                        destination: cat
                                     )
-                                }
-                                .buttonStyle(.plain)
-                            }
-                        }
-                        .padding(.horizontal)
-                    }
-
-                    // Tools Section
-                    VStack(alignment: .leading, spacing: 10) {
-                        GlassSectionHeader(
-                            title: "Tools & References",
-                            icon: "wrench.and.screwdriver.fill",
-                            count: store.tools.count
-                        )
-                        .padding(.horizontal)
-
-                        LazyVGrid(
-                            columns: [
-                                GridItem(.flexible(), spacing: 10),
-                                GridItem(.flexible(), spacing: 10)
-                            ],
-                            spacing: 10
-                        ) {
-                            ForEach(store.toolCategories) { cat in
-                                NavigationLink(value: cat) {
-                                    RefCategoryCard(
+                                },
+                                browseAllCount: store.exams.count,
+                                browseAllDestination: "allExams"
+                            )
+                        case "tools":
+                            ReferenceSection(
+                                sectionId: "tools",
+                                title: "Tools & Calculators",
+                                icon: "function",
+                                color: .purple,
+                                items: store.toolCategories.map { cat in
+                                    ReferenceSectionItem(
+                                        id: cat.id,
                                         name: cat.name,
                                         icon: cat.icon,
-                                        color: cat.color,
-                                        count: store.tools(for: cat).count
+                                        color: colorFromString(cat.color),
+                                        count: store.tools(for: cat).count,
+                                        destination: cat
                                     )
-                                }
-                                .buttonStyle(.plain)
-                            }
+                                },
+                                browseAllCount: store.tools.count,
+                                browseAllDestination: "allTools"
+                            )
+                        default:
+                            EmptyView()
                         }
-                        .padding(.horizontal)
                     }
 
                     Spacer(minLength: 40)
                 }
                 .padding(.top, 8)
             }
-            .background(LinearGradient.appBackground.ignoresSafeArea())
+            .background { AdaptiveBackground() }
             .navigationTitle("Reference")
             .searchable(text: $searchText, prompt: "Search scales, exams, tools...")
             .onChange(of: searchText) { _, newValue in
                 store.searchText = newValue
+            }
+            // Navigation destinations
+            .navigationDestination(for: String.self) { value in
+                switch value {
+                case "allScales":
+                    ScaleListView(title: "All Scales", scales: store.allScales)
+                case "allExams":
+                    ExamListView(title: "All Exams", exams: store.allExams)
+                case "allTools":
+                    ToolListView(title: "All Tools", tools: store.allTools)
+                default:
+                    EmptyView()
+                }
+            }
+            .navigationDestination(for: ExamToolType.self) { tool in
+                ExamToolDetailView(toolType: tool)
             }
             .navigationDestination(for: ReferenceScaleCategory.self) { cat in
                 ScaleListView(
@@ -250,42 +145,8 @@ struct ReferenceHomeView: View {
             }
         }
     }
-}
-
-// MARK: - Stat Card
-
-private struct RefStatCard: View {
-    let value: String
-    let label: String
-    let icon: String
-    let color: Color
-
-    var body: some View {
-        GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
-            VStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.system(size: 18))
-                    .foregroundStyle(color)
-                Text(value)
-                    .font(.system(.title2, design: .rounded, weight: .bold))
-                Text(label)
-                    .font(AppTheme.captionFont)
-                    .foregroundStyle(.secondary)
-            }
-            .frame(maxWidth: .infinity)
-        }
-    }
-}
-
-// MARK: - Category Card
-
-struct RefCategoryCard: View {
-    let name: String
-    let icon: String
-    let color: String
-    let count: Int
-
-    private var swiftUIColor: Color {
+    
+    private func colorFromString(_ color: String) -> Color {
         switch color {
         case "red": .red
         case "orange": .orange
@@ -299,31 +160,305 @@ struct RefCategoryCard: View {
         default: .teal
         }
     }
+}
 
+// MARK: - Exam Tools Section
+
+private struct ExamToolsSection: View {
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(UserPreferences.self) private var prefs
+    let sectionId: String
+    
+    private let tools = ExamToolType.allCases
+    
+    private var isExpanded: Bool {
+        prefs.isExpanded(sectionId, in: .reference)
+    }
+    
     var body: some View {
-        GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack {
-                    Image(systemName: icon)
-                        .font(.system(size: 22, weight: .semibold))
-                        .foregroundStyle(swiftUIColor)
-                        .frame(width: 36, height: 36)
-                        .background(swiftUIColor.opacity(0.15))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-
+        VStack(alignment: .leading, spacing: 0) {
+            // Section Header
+            Button {
+                withAnimation(.snappy(duration: 0.25)) {
+                    prefs.toggleExpanded(sectionId, in: .reference)
+                }
+            } label: {
+                HStack(spacing: 10) {
+                    ZStack {
+                        Circle()
+                            .fill(Color.orange.opacity(0.15))
+                            .frame(width: 32, height: 32)
+                        Image(systemName: "hand.point.up.left.fill")
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(.orange)
+                    }
+                    
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Exam Tools")
+                            .font(.system(.headline, design: .rounded, weight: .semibold))
+                        Text("Interactive bedside tools")
+                            .font(.system(size: 11))
+                            .foregroundStyle(.secondary)
+                    }
+                    
                     Spacer()
-
-                    Text("\(count)")
+                    
+                    Text("\(tools.count)")
                         .font(.system(.caption, design: .rounded, weight: .bold))
                         .foregroundStyle(.secondary)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(.quaternary, in: Capsule())
+                    
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(.secondary)
                 }
-
-                Text(name)
-                    .font(.system(.subheadline, design: .rounded, weight: .semibold))
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+            }
+            .buttonStyle(.plain)
+            
+            if isExpanded {
+                VStack(spacing: 1) {
+                    ForEach(tools, id: \.self) { tool in
+                        NavigationLink(value: tool) {
+                            ExamToolSectionRow(tool: tool)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .padding(.horizontal, 16)
+                .padding(.bottom, 8)
+                .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
+        .background {
+            if colorScheme == .dark {
+                RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                    .fill(.ultraThinMaterial)
+            } else {
+                RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                    .fill(Color(.systemBackground))
+                    .shadow(color: Color.black.opacity(0.04), radius: 6, x: 0, y: 2)
+            }
+        }
+        .overlay {
+            RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                .strokeBorder(
+                    colorScheme == .dark ? Color.white.opacity(0.06) : Color.black.opacity(0.03),
+                    lineWidth: 0.5
+                )
+        }
+        .padding(.horizontal)
+    }
+}
+
+private struct ExamToolSectionRow: View {
+    @Environment(\.colorScheme) var colorScheme
+    let tool: ExamToolType
+    
+    var body: some View {
+        HStack(spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(tool.color.opacity(0.12))
+                    .frame(width: 36, height: 36)
+                Image(systemName: tool.icon)
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(tool.color)
+            }
+            
+            VStack(alignment: .leading, spacing: 2) {
+                Text(tool.rawValue)
+                    .font(.system(.subheadline, design: .rounded, weight: .medium))
+                Text(tool.description)
+                    .font(.system(size: 10))
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+            
+            Spacer()
+            
+            Image(systemName: "chevron.right")
+                .font(.system(size: 11))
+                .foregroundStyle(.tertiary)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        .background(colorScheme == .dark ? Color.white.opacity(0.02) : Color.black.opacity(0.01))
+    }
+}
+
+// MARK: - Reference Section
+
+private struct ReferenceSectionItem<Destination: Hashable>: Identifiable {
+    let id: String
+    let name: String
+    let icon: String
+    let color: Color
+    let count: Int
+    let destination: Destination
+}
+
+private struct ReferenceSection<Destination: Hashable>: View {
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(UserPreferences.self) private var prefs
+    let sectionId: String
+    let title: String
+    let icon: String
+    let color: Color
+    let items: [ReferenceSectionItem<Destination>]
+    let browseAllCount: Int
+    let browseAllDestination: String
+    
+    private var isExpanded: Bool {
+        prefs.isExpanded(sectionId, in: .reference)
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            // Section Header
+            Button {
+                withAnimation(.snappy(duration: 0.25)) {
+                    prefs.toggleExpanded(sectionId, in: .reference)
+                }
+            } label: {
+                HStack(spacing: 10) {
+                    ZStack {
+                        Circle()
+                            .fill(color.opacity(0.15))
+                            .frame(width: 32, height: 32)
+                        Image(systemName: icon)
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(color)
+                    }
+                    
+                    Text(title)
+                        .font(.system(.headline, design: .rounded, weight: .semibold))
+                    
+                    Spacer()
+                    
+                    Text("\(browseAllCount)")
+                        .font(.system(.caption, design: .rounded, weight: .bold))
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(.quaternary, in: Capsule())
+                    
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+            }
+            .buttonStyle(.plain)
+            
+            if isExpanded {
+                VStack(spacing: 1) {
+                    ForEach(items) { item in
+                        NavigationLink(value: item.destination) {
+                            ReferenceSectionRow(
+                                name: item.name,
+                                icon: item.icon,
+                                color: item.color,
+                                count: item.count
+                            )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    
+                    // Browse All row
+                    NavigationLink(value: browseAllDestination) {
+                        HStack(spacing: 12) {
+                            ZStack {
+                                Circle()
+                                    .fill(color.opacity(0.1))
+                                    .frame(width: 36, height: 36)
+                                Image(systemName: "list.bullet")
+                                    .font(.system(size: 14))
+                                    .foregroundStyle(color)
+                            }
+                            
+                            Text("Browse All \(browseAllCount)")
+                                .font(.system(.subheadline, design: .rounded, weight: .medium))
+                                .foregroundStyle(color)
+                            
+                            Spacer()
+                            
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 12))
+                                .foregroundStyle(.tertiary)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 10)
+                        .background(colorScheme == .dark ? Color.white.opacity(0.02) : Color.black.opacity(0.01))
+                    }
+                    .buttonStyle(.plain)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .padding(.horizontal, 16)
+                .padding(.bottom, 8)
+                .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+        .background {
+            if colorScheme == .dark {
+                RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                    .fill(.ultraThinMaterial)
+            } else {
+                RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                    .fill(Color(.systemBackground))
+                    .shadow(color: Color.black.opacity(0.04), radius: 6, x: 0, y: 2)
+            }
+        }
+        .overlay {
+            RoundedRectangle(cornerRadius: AppTheme.cornerRadius)
+                .strokeBorder(
+                    colorScheme == .dark ? Color.white.opacity(0.06) : Color.black.opacity(0.03),
+                    lineWidth: 0.5
+                )
+        }
+        .padding(.horizontal)
+    }
+}
+
+private struct ReferenceSectionRow: View {
+    @Environment(\.colorScheme) var colorScheme
+    let name: String
+    let icon: String
+    let color: Color
+    let count: Int
+    
+    var body: some View {
+        HStack(spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(color.opacity(0.12))
+                    .frame(width: 36, height: 36)
+                Image(systemName: icon)
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(color)
+            }
+            
+            Text(name)
+                .font(.system(.subheadline, design: .rounded, weight: .medium))
+            
+            Spacer()
+            
+            Text("\(count)")
+                .font(.system(.caption2, design: .rounded, weight: .semibold))
+                .foregroundStyle(.secondary)
+            
+            Image(systemName: "chevron.right")
+                .font(.system(size: 11))
+                .foregroundStyle(.tertiary)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        .background(colorScheme == .dark ? Color.white.opacity(0.02) : Color.black.opacity(0.01))
     }
 }
 
@@ -353,6 +488,7 @@ private struct ReferenceSearchOverlay: View {
                                     .foregroundStyle(.blue)
                             }
                         }
+                        .listRowBackground(Color(.systemBackground))
                     }
                 }
             }
@@ -369,6 +505,7 @@ private struct ReferenceSearchOverlay: View {
                                     .foregroundStyle(.teal)
                             }
                         }
+                        .listRowBackground(Color(.systemBackground))
                     }
                 }
             }
@@ -385,11 +522,13 @@ private struct ReferenceSearchOverlay: View {
                                     .foregroundStyle(.purple)
                             }
                         }
+                        .listRowBackground(Color(.systemBackground))
                     }
                 }
             }
         }
-        .listStyle(.plain)
+        .scrollContentBackground(.visible)
+        .background(Color(.systemBackground))
     }
 
     private func toolIcon(_ category: String) -> String {
@@ -406,4 +545,5 @@ private struct ReferenceSearchOverlay: View {
 #Preview {
     ReferenceHomeView()
         .environment(ReferenceStore())
+        .environment(UserPreferences())
 }

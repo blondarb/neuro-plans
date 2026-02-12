@@ -48,6 +48,9 @@ struct ScaleListView: View {
         .listStyle(.plain)
         .navigationTitle(title)
         .searchable(text: $searchText, prompt: "Search scales...")
+        .navigationDestination(for: ClinicalScale.self) { scale in
+            ScaleDetailView(scale: scale)
+        }
     }
 }
 

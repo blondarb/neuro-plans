@@ -130,7 +130,7 @@ struct ScaleDetailView: View {
             }
             .padding(.top, 8)
         }
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .background { AdaptiveBackground() }
         .navigationBarTitleDisplayMode(.inline)
     }
 

@@ -47,6 +47,9 @@ struct ExamListView: View {
         .listStyle(.plain)
         .navigationTitle(title)
         .searchable(text: $searchText, prompt: "Search exams...")
+        .navigationDestination(for: NeurologyExam.self) { exam in
+            ExamDetailView(exam: exam)
+        }
     }
 
     private func examCategoryIcon(_ cat: String) -> String {
