@@ -798,21 +798,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Thiamine 100 mg IV daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Thiamine 100 mg IV daily"
-              },
-              {
-                "text": "500 mg TID",
-                "orderSentence": "Thiamine 500 mg IV TID"
+                "text": "500 mg",
+                "orderSentence": "Thiamine (B1) IV (CPT 96374) 500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500 mg IV TID x 3-5 days, then 250 mg IV daily x 3-5 days, then 100 mg PO daily ongoing",
-            "orderSentence": "Thiamine 100 mg IV daily"
+            "orderSentence": "Thiamine (B1) IV (CPT 96374) 500 mg IV"
           },
           "contraindications": "None significant",
           "monitoring": "Clinical response (confusion, ataxia, ophthalmoplegia should improve)",
@@ -828,21 +820,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Iv Methylprednisolone 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Iv Methylprednisolone 1000 mg IV daily x3-5 days"
+                "text": "1000 mg",
+                "orderSentence": "IV methylprednisolone (CPT 96365) 1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily x 3-5 days. Consider when autoimmune etiology suspected and workup pending. Document pre-treatment baseline exam.",
-            "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
+            "orderSentence": "IV methylprednisolone (CPT 96365) 1000 mg IV"
           },
           "contraindications": "Active infection (rule out first); uncertain prion disease (steroids do not help CJD and may mask diagnosis)",
           "monitoring": "Glucose q6h; BP; GI prophylaxis; response assessment",
@@ -880,17 +864,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg/kg q8h",
-                "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
-              },
-              {
-                "text": "15 mg/kg q8h",
-                "orderSentence": "Acyclovir Iv 15 mg/kg IV q8h"
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir IV (CPT 96365) 10 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg/kg IV q8h. Continue until HSV PCR confirmed negative",
-            "orderSentence": "Acyclovir Iv 10 mg/kg IV q8h"
+            "orderSentence": "Acyclovir IV (CPT 96365) 10 mg/kg IV"
           },
           "contraindications": "Renal impairment (dose adjust)",
           "monitoring": "Cr daily; hydration",
@@ -904,25 +884,17 @@
         {
           "item": "IV methylprednisolone (CPT 96365) → oral prednisone taper",
           "route": "IV",
-          "indication": "-",
+          "indication": "Autoimmune encephalitis; Hashimoto encephalopathy (SREAT); CNS vasculitis; neurosarcoidosis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Iv Methylprednisolone 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Iv Methylprednisolone 1000 mg IV daily x3-5 days"
+                "text": "1g",
+                "orderSentence": "IV methylprednisolone (CPT 96365) → oral prednisone taper 1g IV"
               }
             ],
             "route": "IV",
             "instructions": "1g IV x 5d → prednisone 1 mg/kg/day with slow taper over 3-6 months",
-            "orderSentence": "Iv Methylprednisolone 250 mg IV daily"
+            "orderSentence": "IV methylprednisolone (CPT 96365) → oral prednisone taper 1g IV"
           },
           "contraindications": "-",
           "monitoring": "Glucose, BP, bone density, weight, mood",
@@ -933,26 +905,18 @@
         },
         {
           "item": "IVIG",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Autoimmune encephalitis; steroid-refractory autoimmune disease",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg PO daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg PO divided over 2-5 days"
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG 0.4 g/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "0.4 g/kg/day x 5 days; repeat monthly for maintenance",
-            "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
+            "orderSentence": "IVIG 0.4 g/kg PO"
           },
           "contraindications": "-",
           "monitoring": "Renal function; IgG levels",
@@ -964,25 +928,17 @@
         {
           "item": "Rituximab (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory autoimmune encephalitis (NMDAR, LGI1); B-cell depletion",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab (CPT 96365) 375 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "375 mg/m2 IV weekly x 4 weeks OR 1000 mg IV x 2 doses (2 weeks apart)",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
+            "orderSentence": "Rituximab (CPT 96365) 375 mg/m2 IV"
           },
           "contraindications": "-",
           "monitoring": "CD19/20 counts; immunoglobulins; infection risk; PML risk",
@@ -994,21 +950,17 @@
         {
           "item": "Cyclophosphamide (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "CNS vasculitis; refractory autoimmune encephalitis; PCNSL induction",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-              },
-              {
-                "text": "1000 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
+                "text": "750-1000 mg/m2",
+                "orderSentence": "Cyclophosphamide (CPT 96365) 750-1000 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "750-1000 mg/m2 IV monthly x 6 months (pulse) OR oral 1-2 mg/kg/day",
-            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
+            "orderSentence": "Cyclophosphamide (CPT 96365) 750-1000 mg/m2 IV"
           },
           "contraindications": "-",
           "monitoring": "CBC (nadir at 10-14 days); urinalysis (hemorrhagic cystitis — give MESNA); fertility preservation discussion",
@@ -1020,7 +972,7 @@
         {
           "item": "Penicillin G IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Neurosyphilis (positive CSF VDRL or high clinical suspicion)",
           "dosing": {
             "doseOptions": [
               {
@@ -1042,7 +994,7 @@
         {
           "item": "Tumor-directed therapy",
           "route": "-",
-          "indication": "-",
+          "indication": "Paraneoplastic syndrome with identified primary tumor",
           "dosing": {
             "doseOptions": [
               {
@@ -1064,7 +1016,7 @@
         {
           "item": "Teratoma resection",
           "route": "-",
-          "indication": "-",
+          "indication": "Anti-NMDAR encephalitis with ovarian teratoma (50% of young women)",
           "dosing": {
             "doseOptions": [
               {
@@ -1086,7 +1038,7 @@
         {
           "item": "B12 replacement",
           "route": "IM",
-          "indication": "-",
+          "indication": "B12 deficiency (<200 pg/mL) with cognitive decline; subacute combined degeneration",
           "dosing": {
             "doseOptions": [
               {
@@ -1108,7 +1060,7 @@
         {
           "item": "Antifungals (amphotericin B + flucytosine) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Cryptococcal meningitis; CNS fungal infection (immunocompromised)",
           "dosing": {
             "doseOptions": [
               {
@@ -1129,8 +1081,8 @@
         },
         {
           "item": "Anti-TB regimen",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "TB meningitis (AFB positive or high clinical suspicion)",
           "dosing": {
             "doseOptions": [
               {
@@ -1152,7 +1104,7 @@
         {
           "item": "No disease-modifying treatment",
           "route": "-",
-          "indication": "-",
+          "indication": "Prion disease (CJD confirmed); no effective treatment exists",
           "dosing": {
             "doseOptions": [
               {
@@ -1180,29 +1132,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "500-1500 mg",
+                "orderSentence": "Levetiracetam (CPT 96374) 500-1500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500-1500 mg PO/IV BID; max 3000 mg/day",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
+            "orderSentence": "Levetiracetam (CPT 96374) 500-1500 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Severe renal impairment (dose adjust)",
@@ -1219,21 +1155,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg IV TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg IV TID"
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-1 mg PO/IV q6-8h PRN",
-            "orderSentence": "Lorazepam 0.5 mg IV TID"
+            "orderSentence": "Lorazepam (CPT 96374) 0.5-1 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Respiratory depression",
@@ -1250,25 +1178,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.25 mg BID",
-                "orderSentence": "Clonazepam 0.25 mg PO BID"
-              },
-              {
-                "text": "0.5 mg BID",
-                "orderSentence": "Clonazepam 0.5 mg PO BID"
-              },
-              {
-                "text": "1 mg BID",
-                "orderSentence": "Clonazepam 1 mg PO BID"
-              },
-              {
-                "text": "2 mg BID",
-                "orderSentence": "Clonazepam 2 mg PO BID"
+                "text": "0.5 mg",
+                "orderSentence": "Clonazepam 0.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "0.5 mg PO BID; increase to 1-2 mg TID",
-            "orderSentence": "Clonazepam 0.25 mg PO BID"
+            "orderSentence": "Clonazepam 0.5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Respiratory depression; fall risk",
@@ -1285,25 +1201,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Valproic Acid 250 mg PO BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Valproic Acid 500 mg PO BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Valproic Acid 750 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Valproic Acid 1000 mg PO BID"
+                "text": "250-500 mg",
+                "orderSentence": "Valproic acid 250-500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "250-500 mg PO BID; target level 50-100 µg/mL",
-            "orderSentence": "Valproic Acid 250 mg PO BID"
+            "orderSentence": "Valproic acid 250-500 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Hepatic disease; pancreatitis; pregnancy",
@@ -1320,25 +1224,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg QHS",
-                "orderSentence": "Quetiapine 12.5 mg PO QHS"
-              },
-              {
-                "text": "25 mg QHS",
-                "orderSentence": "Quetiapine 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Quetiapine 50 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Quetiapine 100 mg PO QHS"
+                "text": "25-50 mg",
+                "orderSentence": "Quetiapine 25-50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "25-50 mg PO qHS; increase by 25 mg/day; max 200-400 mg/day",
-            "orderSentence": "Quetiapine 12.5 mg PO QHS"
+            "orderSentence": "Quetiapine 25-50 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "QT prolongation; Parkinson disease (avoid all antipsychotics in Lewy body)",
@@ -1355,25 +1247,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg QHS",
-                "orderSentence": "Trazodone 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Trazodone 50 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Trazodone 100 mg PO QHS"
-              },
-              {
-                "text": "150 mg QHS",
-                "orderSentence": "Trazodone 150 mg PO QHS"
+                "text": "25-50 mg",
+                "orderSentence": "Trazodone 25-50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "25-50 mg PO qHS; max 150 mg",
-            "orderSentence": "Trazodone 25 mg PO QHS"
+            "orderSentence": "Trazodone 25-50 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Priapism (rare); orthostatic hypotension",
@@ -1390,25 +1270,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg QHS",
-                "orderSentence": "Melatonin 1 mg PO QHS"
-              },
-              {
-                "text": "3 mg QHS",
-                "orderSentence": "Melatonin 3 mg PO QHS"
-              },
-              {
-                "text": "5 mg QHS",
-                "orderSentence": "Melatonin 5 mg PO QHS"
-              },
-              {
-                "text": "10 mg QHS",
-                "orderSentence": "Melatonin 10 mg PO QHS"
+                "text": "3-10 mg",
+                "orderSentence": "Melatonin 3-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "3-10 mg PO qHS",
-            "orderSentence": "Melatonin 1 mg PO QHS"
+            "orderSentence": "Melatonin 3-10 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "None significant",

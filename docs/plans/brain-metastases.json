@@ -393,25 +393,17 @@
         {
           "item": "**Dexamethasone (vasogenic edema)** (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Symptomatic vasogenic edema from brain metastases",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h",
-                "orderSentence": "Dexamethasone 4 mg IV q6h"
-              },
-              {
-                "text": "10 mg once then 4 mg q6h",
-                "orderSentence": "Dexamethasone 10 mg IV once then 4 mg q6h"
-              },
-              {
-                "text": "16 mg daily",
-                "orderSentence": "Dexamethasone 16 mg IV daily"
+                "text": "10 mg",
+                "orderSentence": "**Dexamethasone (vasogenic edema)** (CPT 96374) 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "**Symptomatic edema:** 10 mg IV loading dose, then 4 mg IV/PO q6h; **Moderate symptoms:** 4-8 mg/day; **Severe/impending herniation:** 10 mg IV bolus then 4-8 mg IV q6h (up to 16-24 mg/day); Taper as soon as clinically feasible over 2-4 weeks; GI prophylaxis with PPI (omeprazole 20 mg daily) while on steroids; Monitor glucose q6h initially",
-            "orderSentence": "Dexamethasone 4 mg IV q6h"
+            "orderSentence": "**Dexamethasone (vasogenic edema)** (CPT 96374) 10 mg IV"
           },
           "contraindications": "-",
           "monitoring": "Dexamethasone is preferred corticosteroid (minimal mineralocorticoid effect, long half-life); symptomatic improvement in 24-72h; reduces vasogenic edema via BBB stabilization; no benefit in asymptomatic patients without edema (AVOID routine prophylactic use)",
@@ -423,7 +415,7 @@
         {
           "item": "**Seizure management (acute)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Active seizure in brain metastases patient",
           "dosing": {
             "doseOptions": [
               {
@@ -445,7 +437,7 @@
         {
           "item": "**No prophylactic anticonvulsants**",
           "route": "-",
-          "indication": "-",
+          "indication": "AAN: no evidence for prophylactic AEDs in brain tumors without seizures",
           "dosing": {
             "doseOptions": [
               {
@@ -467,7 +459,7 @@
         {
           "item": "**Airway/ICP management (obtunded patient)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "GCS ≤8; acute herniation from mass effect; obtunded patient",
           "dosing": {
             "doseOptions": [
               {
@@ -489,7 +481,7 @@
         {
           "item": "**DVT prophylaxis**",
           "route": "SC",
-          "indication": "-",
+          "indication": "Brain tumor patients (20-30% VTE risk); immobility",
           "dosing": {
             "doseOptions": [
               {
@@ -511,7 +503,7 @@
         {
           "item": "**Stress ulcer prophylaxis**",
           "route": "PO",
-          "indication": "-",
+          "indication": "GI prophylaxis while on dexamethasone",
           "dosing": {
             "doseOptions": [
               {
@@ -535,7 +527,7 @@
         {
           "item": "**Surgical resection**",
           "route": "-",
-          "indication": "-",
+          "indication": "Single/limited accessible metastasis; symptomatic mass effect; tissue diagnosis needed",
           "dosing": {
             "doseOptions": [
               {
@@ -557,7 +549,7 @@
         {
           "item": "**Stereotactic radiosurgery (SRS)**",
           "route": "-",
-          "indication": "-",
+          "indication": "1-10 metastases; ≤3-4 cm; cognitive preservation",
           "dosing": {
             "doseOptions": [
               {
@@ -579,7 +571,7 @@
         {
           "item": "**Whole-brain radiation therapy (WBRT)**",
           "route": "-",
-          "indication": "-",
+          "indication": ">10-15 metastases; leptomeningeal disease; diffuse/miliary pattern",
           "dosing": {
             "doseOptions": [
               {
@@ -600,8 +592,8 @@
         },
         {
           "item": "**Systemic therapy with CNS activity**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO/IV",
+          "indication": "Actionable mutation (EGFR, ALK, HER2, BRAF); CNS-penetrant agent available",
           "dosing": {
             "doseOptions": [
               {
@@ -622,8 +614,8 @@
         },
         {
           "item": "**Corticosteroid taper**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "After definitive treatment initiated; symptoms improving",
           "dosing": {
             "doseOptions": [
               {
@@ -646,34 +638,18 @@
       "Adjunctive Treatment": [
         {
           "item": "**Levetiracetam (post-seizure maintenance)**",
-          "route": "IV",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "Brain metastases patient with seizure; no CYP enzyme induction",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "500-1500 mg",
+                "orderSentence": "**Levetiracetam (post-seizure maintenance)** 500-1500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "500-1500 mg PO/IV BID (start 500 mg BID, titrate to seizure control); Renal dosing if GFR <50; No drug interactions with chemotherapy, targeted therapy, or steroids",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
+            "orderSentence": "**Levetiracetam (post-seizure maintenance)** 500-1500 mg IV"
           },
           "contraindications": "-",
           "monitoring": "Preferred AED in brain tumor patients due to no CYP enzyme induction; does not reduce efficacy of dexamethasone, temozolomide, or targeted agents",
@@ -685,7 +661,7 @@
         {
           "item": "**PJP prophylaxis**",
           "route": "PO",
-          "indication": "-",
+          "indication": "Dexamethasone >20 mg/week + temozolomide or immunosuppression",
           "dosing": {
             "doseOptions": [
               {
@@ -706,8 +682,8 @@
         },
         {
           "item": "**Glucose management (steroid-induced)**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/SC",
+          "indication": "Dexamethasone-induced hyperglycemia (50-60% of patients)",
           "dosing": {
             "doseOptions": [
               {
@@ -729,7 +705,7 @@
         {
           "item": "**Calcium/Vitamin D**",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-induced osteoporosis prevention (>2 weeks steroids)",
           "dosing": {
             "doseOptions": [
               {
@@ -750,8 +726,8 @@
         },
         {
           "item": "**Anti-emetics (for radiation/chemotherapy)**",
-          "route": "IV",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "Nausea from elevated ICP or radiation/chemotherapy",
           "dosing": {
             "doseOptions": [
               {
@@ -772,8 +748,8 @@
         },
         {
           "item": "**Memantine (with WBRT)**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Cognitive protection during WBRT (NRG-CC001)",
           "dosing": {
             "doseOptions": [
               {
@@ -796,115 +772,157 @@
       "Medications to AVOID or Use with Caution": [
         {
           "item": "Prophylactic anticonvulsants (in patients without seizures)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "AAN: no evidence of benefit; side effects outweigh risks",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Prophylactic anticonvulsants (in patients without seizures) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Prophylactic anticonvulsants (in patients without seizures) Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Only start AEDs after confirmed seizure",
+            "orderSentence": "Prophylactic anticonvulsants (in patients without seizures) Avoid PO"
           },
           "pretreatment": "-",
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO/IV",
+          "indication": "CYP enzyme induction reduces efficacy of steroids, chemotherapy, targeted agents",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs) Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Use levetiracetam or lacosamide instead",
+            "orderSentence": "Phenytoin / Carbamazepine / Phenobarbital (enzyme-inducing AEDs) Avoid PO"
           },
           "pretreatment": "-",
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Drug levels; chemotherapy efficacy",
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Bevacizumab (concurrent with surgery)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Impairs wound healing; intracranial hemorrhage risk peri-operatively",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Bevacizumab (concurrent with surgery) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Bevacizumab (concurrent with surgery) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Hold ≥28 days before craniotomy; ≥28 days post-op",
+            "orderSentence": "Bevacizumab (concurrent with surgery) Avoid IV"
           },
           "pretreatment": "-",
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Wound healing; hemorrhage",
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Anticoagulation (full-dose, peri-operative)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/SC",
+          "indication": "Intracranial hemorrhage risk peri-operatively; especially hemorrhagic metastases",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Anticoagulation (full-dose, peri-operative) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Anticoagulation (full-dose, peri-operative) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Hold pre-op; restart per neurosurgery guidance",
+            "orderSentence": "Anticoagulation (full-dose, peri-operative) Avoid -"
           },
           "pretreatment": "-",
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
+          "contraindications": "Coagulation studies",
+          "monitoring": "AVOID",
+          "ED": "AVOID",
           "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "OPD": "AVOID"
         },
         {
           "item": "Methotrexate (high-dose, with brain radiation)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Severe leukoencephalopathy risk with concurrent radiation",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Methotrexate (high-dose, with brain radiation) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Methotrexate (high-dose, with brain radiation) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Do not give concurrently with brain radiation; sequence carefully",
+            "orderSentence": "Methotrexate (high-dose, with brain radiation) Avoid IV"
           },
           "pretreatment": "-",
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "CBC; neurologic status",
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Live vaccines (while on dexamethasone or chemotherapy)",
-          "route": "-",
-          "indication": "-",
+          "route": "IM/SC",
+          "indication": "Risk of disseminated infection from live organisms in immunosuppressed patients",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Live vaccines (while on dexamethasone or chemotherapy) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Live vaccines (while on dexamethasone or chemotherapy) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Inactivated vaccines OK; hold live vaccines until immunosuppression resolved",
+            "orderSentence": "Live vaccines (while on dexamethasone or chemotherapy) Avoid -"
           },
           "pretreatment": "-",
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Lumbar puncture (with large posterior fossa lesion / significant mass effect)",
           "route": "-",
-          "indication": "-",
+          "indication": "Herniation risk with significant mass effect or posterior fossa lesion",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Lumbar puncture (with large posterior fossa lesion / significant mass effect) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Lumbar puncture (with large posterior fossa lesion / significant mass effect) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Get imaging first; LP only if safe (no mass effect/hydrocephalus)",
+            "orderSentence": "Lumbar puncture (with large posterior fossa lesion / significant mass effect) Avoid -"
           },
-          "pretreatment": "-",
+          "pretreatment": "MRI pre-LP",
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         }
       ]
     },

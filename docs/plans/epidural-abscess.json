@@ -415,7 +415,7 @@
         {
           "item": "**Empiric IV antibiotics (STAT)** (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Suspected or confirmed SEA; start immediately after blood cultures",
           "dosing": {
             "doseOptions": [
               {
@@ -437,7 +437,7 @@
         {
           "item": "**Emergent surgical decompression + drainage**",
           "route": "-",
-          "indication": "-",
+          "indication": "Neurologic deficit; sepsis not improving; significant cord compression; failed medical therapy",
           "dosing": {
             "doseOptions": [
               {
@@ -459,7 +459,7 @@
         {
           "item": "**DVT prophylaxis**",
           "route": "SC",
-          "indication": "-",
+          "indication": "Immobility + infection + inflammatory state (very high VTE risk)",
           "dosing": {
             "doseOptions": [
               {
@@ -481,7 +481,7 @@
         {
           "item": "**Pain management**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Severe back pain (hallmark of SEA); radicular pain",
           "dosing": {
             "doseOptions": [
               {
@@ -503,7 +503,7 @@
         {
           "item": "**Sepsis resuscitation (if septic)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Sepsis/septic shock from SEA; hypotension; lactate ≥4 mmol/L",
           "dosing": {
             "doseOptions": [
               {
@@ -525,7 +525,7 @@
         {
           "item": "**Glucose control**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Diabetes (major risk factor 30-50%); hyperglycemia impairs immune function",
           "dosing": {
             "doseOptions": [
               {
@@ -549,7 +549,7 @@
         {
           "item": "**Targeted IV antibiotic therapy (based on culture results)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Culture-confirmed organism; de-escalation from empiric therapy",
           "dosing": {
             "doseOptions": [
               {
@@ -571,7 +571,7 @@
         {
           "item": "**Duration of antibiotics**",
           "route": "IV",
-          "indication": "-",
+          "indication": "SEA ± osteomyelitis; duration based on extent and response",
           "dosing": {
             "doseOptions": [
               {
@@ -592,8 +592,8 @@
         },
         {
           "item": "**Oral antibiotic transition (selected cases)**",
-          "route": "IV",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Clinically improving after ≥2 weeks IV; afebrile; CRP trending down (OVIVA trial)",
           "dosing": {
             "doseOptions": [
               {
@@ -615,7 +615,7 @@
         {
           "item": "**Surgical drainage (if not done emergently)**",
           "route": "-",
-          "indication": "-",
+          "indication": "Failed medical management at 48-72h; neurologic deterioration; enlarging abscess",
           "dosing": {
             "doseOptions": [
               {
@@ -637,7 +637,7 @@
         {
           "item": "**Medical management alone (selected cases)**",
           "route": "-",
-          "indication": "-",
+          "indication": "No neurologic deficit; organism identified; small abscess (<3 cm); poor surgical candidate",
           "dosing": {
             "doseOptions": [
               {
@@ -661,7 +661,7 @@
         {
           "item": "**PICC line placement**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Prolonged IV antibiotics (6-8 weeks); OPAT preparation",
           "dosing": {
             "doseOptions": [
               {
@@ -682,8 +682,8 @@
         },
         {
           "item": "**Outpatient parenteral antibiotic therapy (OPAT)**",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Clinically stable; afebrile; PICC in place; safe home environment",
           "dosing": {
             "doseOptions": [
               {
@@ -705,7 +705,7 @@
         {
           "item": "**Rifampin (adjunctive)**",
           "route": "PO",
-          "indication": "-",
+          "indication": "Staphylococcal vertebral osteomyelitis; biofilm penetration",
           "dosing": {
             "doseOptions": [
               {
@@ -727,7 +727,7 @@
         {
           "item": "**Bracing / spinal orthosis**",
           "route": "-",
-          "indication": "-",
+          "indication": "Spinal instability from vertebral body destruction; pain relief",
           "dosing": {
             "doseOptions": [
               {
@@ -748,8 +748,8 @@
         },
         {
           "item": "**Nutritional optimization**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Malnutrition; wound healing support; immune function optimization",
           "dosing": {
             "doseOptions": [
               {
@@ -770,8 +770,8 @@
         },
         {
           "item": "**Diabetes optimization**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO/IV",
+          "indication": "Diabetes (risk factor in 30-50%); glucose <180 for immune function",
           "dosing": {
             "doseOptions": [
               {
@@ -793,7 +793,7 @@
         {
           "item": "**Substance abuse counseling (if applicable)**",
           "route": "-",
-          "indication": "-",
+          "indication": "IVDU (risk factor in 20-30%); reduce recurrence risk",
           "dosing": {
             "doseOptions": [
               {
@@ -816,131 +816,185 @@
       "Medications to AVOID or Use with Caution": [
         {
           "item": "Daptomycin (with pneumonia)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Inactivated by pulmonary surfactant; ineffective for pneumonia",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Daptomycin (with pneumonia) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Daptomycin (with pneumonia) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Use vancomycin or linezolid for concurrent pneumonia",
+            "orderSentence": "Daptomycin (with pneumonia) Avoid IV"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "Concurrent pulmonary infection",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "AVOID"
         },
         {
           "item": "Rifampin monotherapy",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Rapid resistance development within days if used alone",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Rifampin monotherapy - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Rifampin monotherapy Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "ONLY as adjunctive therapy with primary antibiotic",
+            "orderSentence": "Rifampin monotherapy Avoid PO"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "Resistance emergence",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Linezolid >2-4 weeks",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "Myelosuppression (thrombocytopenia, anemia); peripheral neuropathy; lactic acidosis",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Linezolid >2-4 weeks - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Linezolid >2-4 weeks Avoid IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Monitor CBC weekly; consider switch if >2 weeks needed",
+            "orderSentence": "Linezolid >2-4 weeks Avoid IV/PO"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "CBC weekly; neuropathy symptoms",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Aminoglycosides (prolonged use)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Nephrotoxicity and ototoxicity with prolonged use (>5-7 days)",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Aminoglycosides (prolonged use) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Aminoglycosides (prolonged use) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Short-course synergy dosing only; monitor levels and renal function",
+            "orderSentence": "Aminoglycosides (prolonged use) Avoid IV"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "Drug levels; renal function; audiometry",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "AVOID"
         },
         {
           "item": "Corticosteroids (routine use)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "Immunosuppression; impairs infection clearance; may mask fever",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Corticosteroids (routine use) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Corticosteroids (routine use) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Only if severe cord compression with impending paralysis (risk-benefit)",
+            "orderSentence": "Corticosteroids (routine use) Avoid -"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "Infection progression; glucose",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "NSAIDs (prolonged, peri-operative)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Renal impairment; surgical bleeding risk; may impair bone healing",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "NSAIDs (prolonged, peri-operative) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "NSAIDs (prolonged, peri-operative) Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Short-term use only; avoid peri-operatively",
+            "orderSentence": "NSAIDs (prolonged, peri-operative) Avoid PO"
           },
           "pretreatment": "-",
-          "contraindications": "-",
+          "contraindications": "Renal function; GI symptoms",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "LP (in suspected SEA)",
           "route": "-",
-          "indication": "-",
+          "indication": "Risk of seeding infection into subarachnoid space → meningitis",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "LP (in suspected SEA) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "LP (in suspected SEA) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "MRI is diagnostic modality; LP may spread infection intradurally",
+            "orderSentence": "LP (in suspected SEA) Avoid -"
           },
           "pretreatment": "-",
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         },
         {
           "item": "Epidural steroid injection (as treatment or in area of abscess)",
           "route": "-",
-          "indication": "-",
+          "indication": "Worsens infection; immunosuppression at site of active infection",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Epidural steroid injection (as treatment or in area of abscess) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Epidural steroid injection (as treatment or in area of abscess) Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Contraindicated in area of known or suspected spinal infection",
+            "orderSentence": "Epidural steroid injection (as treatment or in area of abscess) Avoid -"
           },
           "pretreatment": "-",
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "AVOID",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID"
         }
       ]
     },

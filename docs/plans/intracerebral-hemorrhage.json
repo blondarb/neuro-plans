@@ -390,7 +390,7 @@
         {
           "item": "Blood pressure reduction: Nicardipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "SBP >150-220; target <140 per INTERACT2/AHA 2022",
           "dosing": {
             "doseOptions": [
               {
@@ -412,7 +412,7 @@
         {
           "item": "Blood pressure reduction: Labetalol IV (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Alternative to nicardipine for BP reduction",
           "dosing": {
             "doseOptions": [
               {
@@ -434,7 +434,7 @@
         {
           "item": "Blood pressure reduction: Clevidipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Ultra-short-acting alternative for BP control",
           "dosing": {
             "doseOptions": [
               {
@@ -456,7 +456,7 @@
         {
           "item": "Intubation and airway protection",
           "route": "-",
-          "indication": "-",
+          "indication": "GCS ≤8; airway protection; respiratory failure; impending herniation",
           "dosing": {
             "doseOptions": [
               {
@@ -478,29 +478,17 @@
         {
           "item": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Warfarin-associated ICH; INR >1.4; emergent reversal",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg daily",
-                "orderSentence": "Warfarin 2 mg IV daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Warfarin 5 mg IV daily"
-              },
-              {
-                "text": "7.5 mg daily",
-                "orderSentence": "Warfarin 7.5 mg IV daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Warfarin 10 mg IV daily"
+                "text": "25-50 units/kg",
+                "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374) 25-50 units/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "25-50 units/kg IV (dose based on INR: INR 2-4: 25 u/kg; INR 4-6: 35 u/kg; INR >6: 50 u/kg); infuse over 10-15 min. Reverses INR within 15-30 min. PREFERRED over FFP (faster, smaller volume)",
-            "orderSentence": "Warfarin 2 mg IV daily"
+            "orderSentence": "Warfarin reversal: 4-factor PCC (Kcentra) (CPT 96374) 25-50 units/kg IV"
           },
           "contraindications": "Active DIC (relative); HIT (contains heparin traces)",
           "monitoring": "INR 15 min after infusion; repeat if INR >1.4; thrombotic risk",
@@ -512,29 +500,17 @@
         {
           "item": "Warfarin reversal: Vitamin K (phytonadione)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Sustain INR correction after PCC (PCC is temporary)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg daily",
-                "orderSentence": "Warfarin 2 mg IV daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Warfarin 5 mg IV daily"
-              },
-              {
-                "text": "7.5 mg daily",
-                "orderSentence": "Warfarin 7.5 mg IV daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Warfarin 10 mg IV daily"
+                "text": "10 mg",
+                "orderSentence": "Warfarin reversal: Vitamin K (phytonadione) 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10 mg IV slow push (over 10 min) to sustain INR correction (PCC is temporary). ALWAYS give WITH PCC",
-            "orderSentence": "Warfarin 2 mg IV daily"
+            "orderSentence": "Warfarin reversal: Vitamin K (phytonadione) 10 mg IV"
           },
           "contraindications": "Known severe allergic reaction (rare)",
           "monitoring": "INR at 6h and 24h; anaphylaxis risk (rare with slow IV)",
@@ -546,29 +522,17 @@
         {
           "item": "Warfarin reversal: FFP (if PCC unavailable)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Warfarin reversal when PCC unavailable; slower alternative",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg daily",
-                "orderSentence": "Warfarin 2 mg IV daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Warfarin 5 mg IV daily"
-              },
-              {
-                "text": "7.5 mg daily",
-                "orderSentence": "Warfarin 7.5 mg IV daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Warfarin 10 mg IV daily"
+                "text": "10-15 mL/kg",
+                "orderSentence": "Warfarin reversal: FFP (if PCC unavailable) 10-15 mL/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "10-15 mL/kg IV (typically 2-4 units). Slower than PCC; requires thawing and larger volume",
-            "orderSentence": "Warfarin 2 mg IV daily"
+            "orderSentence": "Warfarin reversal: FFP (if PCC unavailable) 10-15 mL/kg IV"
           },
           "contraindications": "Volume overload; transfusion reactions",
           "monitoring": "INR; volume status",
@@ -580,25 +544,17 @@
         {
           "item": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Dabigatran-associated ICH; specific reversal agent",
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg BID",
-                "orderSentence": "Dabigatran 75 mg IV BID"
-              },
-              {
-                "text": "110 mg BID",
-                "orderSentence": "Dabigatran 110 mg IV BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Dabigatran 150 mg IV BID"
+                "text": "5 g",
+                "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374) 5 g IV"
               }
             ],
             "route": "IV",
             "instructions": "5 g IV (two 2.5g boluses or infusions). Specific reversal agent for dabigatran. Reversal within minutes",
-            "orderSentence": "Dabigatran 75 mg IV BID"
+            "orderSentence": "Dabigatran reversal: Idarucizumab (Praxbind) (CPT 96374) 5 g IV"
           },
           "contraindications": "None absolute",
           "monitoring": "Thrombin time (TT), aPTT; clinical hemostasis",
@@ -610,7 +566,7 @@
         {
           "item": "Factor Xa inhibitor reversal: Andexanet alfa (Andexxa) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Rivaroxaban/apixaban-associated ICH; specific reversal agent",
           "dosing": {
             "doseOptions": [
               {
@@ -632,7 +588,7 @@
         {
           "item": "Factor Xa inhibitor reversal: 4-factor PCC (if andexanet unavailable)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Factor Xa inhibitor reversal when andexanet unavailable",
           "dosing": {
             "doseOptions": [
               {
@@ -654,21 +610,17 @@
         {
           "item": "Heparin reversal: Protamine sulfate",
           "route": "IV",
-          "indication": "-",
+          "indication": "Heparin-associated ICH; 1 mg per 100 units heparin given",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8-12h",
-                "orderSentence": "Heparin 5000 units IV q8-12h"
-              },
-              {
-                "text": "80 units/kg bolus then 18 units/kg/hr",
-                "orderSentence": "Heparin 80 units/kg bolus IV then 18 units/kg/hr"
+                "text": "1 mg",
+                "orderSentence": "Heparin reversal: Protamine sulfate 1 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1 mg per 100 units of heparin given in last 2-3h; max 50 mg; give slow IV over 10 min",
-            "orderSentence": "Heparin 5000 units IV q8-12h"
+            "orderSentence": "Heparin reversal: Protamine sulfate 1 mg IV"
           },
           "contraindications": "Fish/protamine allergy",
           "monitoring": "aPTT; BP (hypotension with rapid infusion); anaphylaxis",
@@ -679,8 +631,8 @@
         },
         {
           "item": "Platelet transfusion",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Platelets <100K + active bleeding or pre-surgical; NOT routine per PATCH trial",
           "dosing": {
             "doseOptions": [
               {
@@ -702,21 +654,17 @@
         {
           "item": "Tranexamic acid (TXA)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Hematoma expansion; spot sign positive or early presentation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g over 10 min (loading)",
-                "orderSentence": "Tranexamic Acid 1 g IV over 10 min (loading)"
-              },
-              {
-                "text": "1 g over 8h (maintenance)",
-                "orderSentence": "Tranexamic Acid 1 g IV over 8h (maintenance)"
+                "text": "1 g",
+                "orderSentence": "Tranexamic acid (TXA) 1 g IV"
               }
             ],
             "route": "IV",
             "instructions": "1 g IV over 10 min then 1 g IV over 8h. TICH-2 trial: did NOT reduce mortality but reduced hematoma expansion. Not routine; consider if spot sign positive or early presentation with active expansion",
-            "orderSentence": "Tranexamic Acid 1 g IV over 10 min (loading)"
+            "orderSentence": "Tranexamic acid (TXA) 1 g IV"
           },
           "contraindications": "Active DVT/PE; hypercoagulable state",
           "monitoring": "Thrombotic events; clinical hemostasis",
@@ -728,7 +676,7 @@
         {
           "item": "ICP management: Head of bed elevation",
           "route": "-",
-          "indication": "-",
+          "indication": "All ICH patients; optimize venous drainage; reduce ICP",
           "dosing": {
             "doseOptions": [
               {
@@ -750,7 +698,7 @@
         {
           "item": "ICP management: Mannitol 20%",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute herniation; elevated ICP >22 mmHg",
           "dosing": {
             "doseOptions": [
               {
@@ -772,7 +720,7 @@
         {
           "item": "ICP management: Hypertonic saline 23.4%",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute herniation; requires central line",
           "dosing": {
             "doseOptions": [
               {
@@ -794,7 +742,7 @@
         {
           "item": "ICP management: Hypertonic saline 3%",
           "route": "IV",
-          "indication": "-",
+          "indication": "ICP reduction; target Na 145-155 mEq/L",
           "dosing": {
             "doseOptions": [
               {
@@ -822,29 +770,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam 1000-1500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "1000-1500 mg IV load; then 500-1000 mg IV/PO BID",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
+            "orderSentence": "Levetiracetam 1000-1500 mg IV"
           },
           "contraindications": "Severe renal impairment (dose adjust)",
           "monitoring": "Seizure monitoring; cEEG; renal function",
@@ -860,25 +792,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg q6h PRN",
-                "orderSentence": "Acetaminophen 325 mg IV q6h PRN"
-              },
-              {
-                "text": "500 mg q6h PRN",
-                "orderSentence": "Acetaminophen 500 mg IV q6h PRN"
-              },
-              {
-                "text": "650 mg q6h PRN",
-                "orderSentence": "Acetaminophen 650 mg IV q6h PRN"
-              },
-              {
-                "text": "1000 mg q6h PRN",
-                "orderSentence": "Acetaminophen 1000 mg IV q6h PRN"
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "650-1000 mg PO/IV q6h; max 4g/day",
-            "orderSentence": "Acetaminophen 325 mg IV q6h PRN"
+            "orderSentence": "Acetaminophen 650-1000 mg IV"
           },
           "contraindications": "Severe hepatic disease",
           "monitoring": "Temperature q4h; LFTs",
@@ -938,21 +858,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg daily",
-                "orderSentence": "Pantoprazole 20 mg IV daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Pantoprazole 40 mg IV daily"
-              },
-              {
-                "text": "40 mg BID",
-                "orderSentence": "Pantoprazole 40 mg IV BID"
+                "text": "40 mg",
+                "orderSentence": "Pantoprazole 40 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "40 mg IV/PO daily",
-            "orderSentence": "Pantoprazole 20 mg IV daily"
+            "orderSentence": "Pantoprazole 40 mg IV"
           },
           "contraindications": "C. diff risk",
           "monitoring": "GI symptoms",
@@ -968,25 +880,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg BID",
-                "orderSentence": "Enoxaparin 30 mg SC BID"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Enoxaparin 40 mg SC daily"
-              },
-              {
-                "text": "1 mg/kg BID",
-                "orderSentence": "Enoxaparin 1 mg/kg SC BID"
-              },
-              {
-                "text": "1.5 mg/kg daily",
-                "orderSentence": "Enoxaparin 1.5 mg/kg SC daily"
+                "text": "40 mg",
+                "orderSentence": "Enoxaparin 40 mg SC"
               }
             ],
             "route": "SC",
             "instructions": "40 mg SC daily. AHA 2022: intermittent pneumatic compression devices on admission; pharmacologic prophylaxis after hemorrhage stable on repeat imaging",
-            "orderSentence": "Enoxaparin 30 mg SC BID"
+            "orderSentence": "Enoxaparin 40 mg SC"
           },
           "contraindications": "Active hemorrhagic expansion; within 24h of ICH onset; pre-surgical",
           "monitoring": "Platelet count; repeat CT before starting",
@@ -1024,17 +924,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q8h PRN",
-                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
-              },
-              {
-                "text": "8 mg q8h PRN",
-                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "4 mg IV q6h PRN",
-            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+            "orderSentence": "Ondansetron 4 mg IV"
           },
           "contraindications": "QT prolongation",
           "monitoring": "QTc",
