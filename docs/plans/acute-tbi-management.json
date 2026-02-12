@@ -317,6 +317,7 @@
           "monitoring": "EtCO2, SpO2, PaCO2 on ABG",
           "ED": "STAT",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -331,6 +332,7 @@
           "monitoring": "Clinical exam, imaging clearance",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -352,6 +354,7 @@
           "monitoring": "MAP, urine output, CVP if available",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -373,6 +376,7 @@
           "monitoring": "ICP trend if monitored",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -394,6 +398,7 @@
           "monitoring": "Arterial line (preferred in ICU), continuous BP monitoring",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -415,6 +420,7 @@
           "monitoring": "Continuous core temperature (esophageal, bladder, or rectal probe)",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -436,6 +442,7 @@
           "monitoring": "Point-of-care glucose q1-2h during insulin infusion",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         }
       ],
@@ -459,6 +466,7 @@
           "monitoring": "Serum osmolality q4-6h; I&O; sodium; renal function; ICP response",
           "ED": "STAT",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -480,6 +488,7 @@
           "monitoring": "Sodium q2-4h; serum osmolality; ICP response; cardiac monitoring",
           "ED": "STAT",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -501,6 +510,7 @@
           "monitoring": "Sodium q4-6h; serum osmolality; ICP",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -522,6 +532,7 @@
           "monitoring": "Continuous EtCO2; ABG q15-30 min during hyperventilation; ICP",
           "ED": "STAT",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -543,6 +554,7 @@
           "monitoring": "Daily sedation vacation for neurological exam; ICP during exam; triglycerides (propofol)",
           "ED": "-",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -564,6 +576,7 @@
           "monitoring": "Train-of-four monitoring; continuous EEG mandatory; ICP trend",
           "ED": "-",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -585,6 +598,7 @@
           "monitoring": "CSF output; ICP waveform; CSF appearance (infection surveillance); daily CSF cell count/culture",
           "ED": "-",
           "HOSP": "-",
+          "OPD": "-",
           "ICU": "STAT"
         }
       ],
@@ -608,6 +622,7 @@
           "monitoring": "Clinical seizure activity; continuous EEG if available; renal function",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -629,12 +644,15 @@
           "monitoring": "Free phenytoin level at 24h then q48-72h; cardiac monitoring during load; hepatic function",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         }
       ],
       "Coagulopathy Reversal": [
         {
           "item": "4-factor PCC (Kcentra) + Vitamin K",
+          "route": "IV",
+          "indication": "Warfarin reversal (elevated INR) in TBI with intracranial hemorrhage",
           "dosing": {
             "doseOptions": [
               {
@@ -643,14 +661,20 @@
               }
             ],
             "route": "IV",
-            "instructions": "IV",
+            "instructions": "STAT + Vitamin K 10 mg",
             "orderSentence": "4-factor PCC (Kcentra) + Vitamin K PCC 25-50 IU/kg IV"
           },
-          "target": "INR <1.4 within 30 minutes",
-          "timing": "STAT — do NOT delay CT; reverse simultaneously"
+          "contraindications": "Active DIC (relative); heparin-induced thrombocytopenia (caution)",
+          "monitoring": "INR <1.4 within 30 minutes; repeat INR at 30 min and 6h; monitor for thrombotic events",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Idarucizumab (Praxbind)",
+          "route": "IV",
+          "indication": "Dabigatran (Pradaxa) reversal in TBI with intracranial hemorrhage",
           "dosing": {
             "doseOptions": [
               {
@@ -662,77 +686,190 @@
             "instructions": "no more than 15 min apart",
             "orderSentence": "Idarucizumab (Praxbind) 5 g IV"
           },
-          "target": "Immediate reversal of dabigatran effect",
-          "timing": "STAT — within 30 min of arrival"
+          "contraindications": "None absolute; hereditary fructose intolerance (contains sorbitol)",
+          "monitoring": "Immediate reversal of dabigatran effect; dTT or ECT if available; clinical hemostasis assessment",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable",
+          "item": "Andexanet alfa (Andexxa)",
+          "route": "IV",
+          "indication": "Rivaroxaban / Apixaban reversal in TBI with intracranial hemorrhage (preferred); 4-factor PCC 50 IU/kg IV if andexanet unavailable",
           "dosing": {
             "doseOptions": [
               {
-                "text": "Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor)",
-                "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor) IV"
-              },
-              {
-                "text": "PCC 50 IU/kg",
-                "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable PCC 50 IU/kg IV"
+                "text": "Andexxa",
+                "orderSentence": "Andexanet alfa (Andexxa) Andexxa IV"
               }
             ],
             "route": "IV",
-            "instructions": "Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor); PCC 50 IU/kg :: IV :: if andexanet unavailable",
-            "orderSentence": "Andexanet alfa (Andexxa) — preferred; or 4-factor PCC if unavailable Andexxa: per package insert (bolus + infusion based on dose/timing of last Xa inhibitor) IV"
+            "instructions": "bolus + infusion based on dose/timing of last Xa inhibitor",
+            "orderSentence": "Andexanet alfa (Andexxa) Andexxa IV"
           },
-          "target": "Factor Xa inhibitor reversal",
-          "timing": "STAT — within 30 min of arrival"
+          "contraindications": "History of thrombotic events (relative — high thrombotic risk); monitor closely",
+          "monitoring": "Anti-Xa levels if available; clinical hemostasis; monitor for thrombotic complications",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Platelet transfusion — controversial",
+          "item": "Platelet transfusion",
+          "route": "IV",
+          "indication": "Antiplatelet agents (aspirin, clopidogrel) in TBI requiring neurosurgical intervention; routine transfusion NOT recommended (PATCH trial)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1 apheresis unit",
-                "orderSentence": "Platelet transfusion — controversial 1 apheresis unit IV"
+                "orderSentence": "Platelet transfusion 1 apheresis unit IV"
               }
             ],
             "route": "IV",
-            "instructions": "1 apheresis unit :: IV :: if neurosurgical intervention needed; routine transfusion NOT recommended (PATCH trial)",
-            "orderSentence": "Platelet transfusion — controversial 1 apheresis unit IV"
+            "instructions": "if neurosurgical intervention needed",
+            "orderSentence": "Platelet transfusion 1 apheresis unit IV"
           },
-          "target": "Functional platelet activity; neurosurgical clearance",
-          "timing": "URGENT — based on surgical need"
+          "contraindications": "Heparin-induced thrombocytopenia; TTP (relative)",
+          "monitoring": "Functional platelet activity; platelet count post-transfusion; neurosurgical clearance",
+          "ED": "URGENT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "URGENT"
         },
         {
-          "item": "Tranexamic acid (TXA) — CRASH-3 trial",
+          "item": "Tranexamic acid (TXA)",
+          "route": "IV",
+          "indication": "Active intracranial bleeding in mild-moderate TBI (CRASH-3 trial); benefit ONLY if given within 3 hours of injury",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1 g",
-                "orderSentence": "Tranexamic acid (TXA) — CRASH-3 trial 1 g IV"
+                "orderSentence": "Tranexamic acid (TXA) 1 g IV"
               }
             ],
             "route": "IV",
             "instructions": "then 1 g",
-            "orderSentence": "Tranexamic acid (TXA) — CRASH-3 trial 1 g IV"
+            "orderSentence": "Tranexamic acid (TXA) 1 g IV"
           },
-          "target": "Reduce hemorrhage progression",
-          "timing": "STAT — benefit ONLY if given within 3 hours of injury"
+          "contraindications": "Severe TBI (GCS <9 — no benefit per CRASH-3); >3 hours from injury; active thromboembolic disease; seizure history (relative)",
+          "monitoring": "Hemorrhage progression on repeat CT; coagulation panel; clinical neurological status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ],
       "Non-Surgical Subdural Hematoma Management": [
         {
-          "item": "Observation criteria"
+          "item": "Non-surgical observation",
+          "route": "-",
+          "indication": "SDH <10 mm thickness, midline shift <5 mm, GCS ≥9, no neurological deterioration, no anticoagulation (or successfully reversed)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Continuous neuro monitoring",
+                "orderSentence": "Non-surgical observation Continuous neuro monitoring -"
+              }
+            ],
+            "route": "-",
+            "instructions": "admit to ICU or step-down for serial neuro exams",
+            "orderSentence": "Non-surgical observation Continuous neuro monitoring -"
+          },
+          "contraindications": "Thickness >10 mm; midline shift >5 mm; GCS decline ≥2 points; neurological deterioration (→ surgical referral)",
+          "monitoring": "GCS q1h; pupil checks q1h; vital signs continuous; ICP if monitored",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Serial CT imaging schedule"
+          "item": "Serial CT imaging",
+          "route": "-",
+          "indication": "All non-surgical SDH patients; hemorrhage surveillance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "CT head without contrast",
+                "orderSentence": "Serial CT imaging CT head without contrast -"
+              }
+            ],
+            "route": "-",
+            "instructions": "sooner with ANY neurological change",
+            "orderSentence": "Serial CT imaging CT head without contrast -"
+          },
+          "contraindications": "None",
+          "monitoring": "Hemorrhage expansion; midline shift progression; new hemorrhage",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Anticoagulated patients"
+          "item": "Anticoagulation reversal (if applicable)",
+          "route": "-",
+          "indication": "Anticoagulated patients with SDH (see 3D for specific agents)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Reverse anticoagulation immediately per Section 3D",
+                "orderSentence": "Anticoagulation reversal (if applicable) Reverse anticoagulation immediately per Section 3D -"
+              }
+            ],
+            "route": "-",
+            "instructions": "lower threshold for surgical consultation",
+            "orderSentence": "Anticoagulation reversal (if applicable) Reverse anticoagulation immediately per Section 3D -"
+          },
+          "contraindications": "See Section 3D for agent-specific contraindications",
+          "monitoring": "Repeat CT at 6 hours post-reversal; coagulation panel; clinical neuro status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Neurosurgical consult"
+          "item": "Neurosurgical consultation",
+          "route": "-",
+          "indication": "Required for ALL subdural hematomas regardless of size",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Consult neurosurgery",
+                "orderSentence": "Neurosurgical consultation Consult neurosurgery -"
+              }
+            ],
+            "route": "-",
+            "instructions": "regardless of SDH size or clinical appearance",
+            "orderSentence": "Neurosurgical consultation Consult neurosurgery -"
+          },
+          "contraindications": "None",
+          "monitoring": "Neurosurgical assessment; surgical candidacy evaluation; ICP monitor candidacy",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
-          "item": "Surgical indications (refer to neurosurgery)"
+          "item": "Surgical referral criteria",
+          "route": "-",
+          "indication": "SDH meeting operative thresholds; failure of medical management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Refer to neurosurgery",
+                "orderSentence": "Surgical referral criteria Refer to neurosurgery -"
+              }
+            ],
+            "route": "-",
+            "instructions": "if thickness >10 mm, midline shift >5 mm, GCS decline ≥2 points, ICP >20 mmHg despite maximal medical management, or neurological deterioration",
+            "orderSentence": "Surgical referral criteria Refer to neurosurgery -"
+          },
+          "contraindications": "None — surgical evaluation is mandatory when criteria met",
+          "monitoring": "GCS trend; ICP trend; imaging progression; neurological exam",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ],
       "DVT Prophylaxis": [
@@ -755,6 +892,7 @@
           "monitoring": "Daily skin assessment; compliance monitoring",
           "ED": "STAT",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         },
         {
@@ -776,6 +914,7 @@
           "monitoring": "Repeat CT confirming hemorrhage stability; anti-Xa levels if renal impairment; platelet count",
           "ED": "-",
           "HOSP": "STAT",
+          "OPD": "-",
           "ICU": "STAT"
         }
       ]

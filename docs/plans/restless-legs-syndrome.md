@@ -127,22 +127,22 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Sleep hygiene | - | - | N/A :: - :: daily :: Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment | - | ROUTINE | ROUTINE | - |
-| Avoid triggers | - | - | N/A :: - :: N/A :: Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical | - | ROUTINE | ROUTINE | - |
-| Moderate exercise | - | - | N/A :: - :: QHS :: Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms | - | - | ROUTINE | - |
-| Leg massage/stretching | - | - | N/A :: - :: daily :: Gentle stretching, massage before bed | None | May provide relief | - | ROUTINE | ROUTINE | - |
-| Hot bath | - | - | N/A :: - :: QHS :: Warm bath before bedtime | None | Relaxation | - | - | ROUTINE | - |
-| Mental alerting activities | - | - | N/A :: - :: per protocol :: Crosswords, video games can distract during symptoms | None | Useful for mild cases | - | - | ROUTINE | - |
-| Pneumatic compression devices | - | - | N/A :: - :: continuous :: Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence | - | - | EXT | - |
+| Sleep hygiene | - | Baseline behavioral intervention for all RLS patients | N/A :: - :: daily :: Regular sleep schedule, cool room, limit screen time | None | Foundation of treatment | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | Reduce symptom exacerbation from known RLS triggers | N/A :: - :: N/A :: Avoid alcohol, caffeine, nicotine (especially evening) | None | Critical | - | ROUTINE | ROUTINE | - |
+| Moderate exercise | - | Symptom reduction through regular physical activity | N/A :: - :: QHS :: Regular exercise, but avoid intense exercise close to bedtime | None | Helps symptoms | - | - | ROUTINE | - |
+| Leg massage/stretching | - | Relieve RLS leg discomfort and urge to move | N/A :: - :: daily :: Gentle stretching, massage before bed | None | May provide relief | - | ROUTINE | ROUTINE | - |
+| Hot bath | - | Promote relaxation and reduce evening RLS symptoms | N/A :: - :: QHS :: Warm bath before bedtime | None | Relaxation | - | - | ROUTINE | - |
+| Mental alerting activities | - | Cognitive distraction for mild RLS symptom relief | N/A :: - :: per protocol :: Crosswords, video games can distract during symptoms | None | Useful for mild cases | - | - | ROUTINE | - |
+| Pneumatic compression devices | - | Adjunctive therapy for refractory RLS leg symptoms | N/A :: - :: continuous :: Sequential compression 1 hour before bed | DVT, arterial disease | Limited evidence | - | - | EXT | - |
 
 ### 3B. Iron Replacement (If Ferritin <75 ng/mL)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Ferrous sulfate | - | - | 325 mg :: - :: daily :: 325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day | Iron overload, hemochromatosis | Ferritin q3 months; GI side effects | - | ROUTINE | ROUTINE | - |
-| Ferrous gluconate | PO | - | 324 mg :: PO :: daily :: 324 mg (36 mg elemental iron) daily; better tolerated | Same | Same | - | ROUTINE | ROUTINE | - |
-| IV iron (ferric carboxymaltose) (CPT 96365) | IV | - | 1000 mg :: IV :: once :: 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response | - | ROUTINE | ROUTINE | - |
-| IV iron sucrose (CPT 96365) | IV | - | 200 mg :: IV :: - :: 200 mg IV × 5 doses over 2 weeks | Same | Same | - | ROUTINE | ROUTINE | - |
+| Ferrous sulfate | PO | Oral iron repletion for RLS with ferritin below 75 ng/mL | 325 mg :: PO :: daily :: 325 mg (65 mg elemental iron) with vitamin C 100 mg, on empty stomach, daily or every other day | Iron overload, hemochromatosis | Ferritin q3 months; GI side effects | - | ROUTINE | ROUTINE | - |
+| Ferrous gluconate | PO | Oral iron repletion when ferrous sulfate not tolerated | 324 mg :: PO :: daily :: 324 mg (36 mg elemental iron) daily; better tolerated | Same | Same | - | ROUTINE | ROUTINE | - |
+| IV iron (ferric carboxymaltose) (CPT 96365) | IV | Rapid iron repletion for oral-intolerant or severe iron deficiency RLS | 1000 mg :: IV :: once :: 1000 mg IV once (if oral intolerant or severe deficiency); may repeat | Iron overload, infection | Ferritin in 8 weeks; faster response | - | ROUTINE | ROUTINE | - |
+| IV iron sucrose (CPT 96365) | IV | IV iron alternative for iron-deficient RLS patients | 200 mg :: IV :: - :: 200 mg IV × 5 doses over 2 weeks | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3C. First-Line Pharmacologic Treatment - Alpha-2-Delta Ligands (PREFERRED)
 
@@ -150,9 +150,9 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Gabapentin | PO | - | 300 mg :: PO :: QHS :: Start 300 mg QHS; titrate by 300 mg every few days to 900-1800 mg QHS | Renal impairment (adjust) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
-| Gabapentin enacarbil (Horizant) | PO | - | 600 mg :: PO :: daily :: 600 mg daily at ~5 PM; FDA approved for RLS | Renal impairment (adjust) | Sedation, dizziness | - | - | ROUTINE | - |
-| Pregabalin | PO | - | 75 mg :: PO :: QHS :: Start 75 mg QHS; titrate to 150-300 mg QHS | Renal impairment (adjust) | Sedation, dizziness, weight gain | - | ROUTINE | ROUTINE | - |
+| Gabapentin | PO | First-line treatment for moderate-to-severe RLS symptoms | 300 mg :: PO :: QHS :: Start 300 mg QHS; titrate by 300 mg every few days to 900-1800 mg QHS | Renal impairment (adjust) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
+| Gabapentin enacarbil (Horizant) | PO | FDA-approved first-line gabapentin prodrug for RLS | 600 mg :: PO :: daily :: 600 mg daily at ~5 PM; FDA approved for RLS | Renal impairment (adjust) | Sedation, dizziness | - | - | ROUTINE | - |
+| Pregabalin | PO | First-line alpha-2-delta ligand for RLS with low augmentation risk | 75 mg :: PO :: QHS :: Start 75 mg QHS; titrate to 150-300 mg QHS | Renal impairment (adjust) | Sedation, dizziness, weight gain | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Second-Line Pharmacologic Treatment - Dopamine Agonists
 
@@ -160,28 +160,28 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Pramipexole (Mirapex) | PO | - | 0.125 mg :: PO :: - :: Start 0.125 mg 2-3h before bedtime; titrate by 0.125 mg q4-7 days; max 0.5 mg (keep dose LOW) | - | Severe renal impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
-| Ropinirole (Requip) | PO | - | 0.25 mg :: PO :: - :: Start 0.25 mg 1-3h before bedtime; titrate by 0.25 mg q4-7 days; max 4 mg (keep dose LOW) | - | Severe hepatic impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
-| Rotigotine patch (Neupro) | Transdermal | - | 1 mg :: PO :: - :: Start 1 mg/24h patch; titrate by 1 mg/week; max 3 mg/24h | - | Sulfite allergy | AUGMENTATION, ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
+| Pramipexole (Mirapex) | PO | Second-line dopamine agonist for RLS unresponsive to gabapentinoids | 0.125 mg :: PO :: - :: Start 0.125 mg 2-3h before bedtime; titrate by 0.125 mg q4-7 days; max 0.5 mg (keep dose LOW) | - | Severe renal impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
+| Ropinirole (Requip) | PO | Second-line dopamine agonist alternative for moderate-to-severe RLS | 0.25 mg :: PO :: - :: Start 0.25 mg 1-3h before bedtime; titrate by 0.25 mg q4-7 days; max 4 mg (keep dose LOW) | - | Severe hepatic impairment | AUGMENTATION, ICDs, sleepiness | - | ROUTINE | ROUTINE | - |
+| Rotigotine patch (Neupro) | Transdermal | Transdermal dopamine agonist for RLS with continuous delivery | 1 mg :: PO :: - :: Start 1 mg/24h patch; titrate by 1 mg/week; max 3 mg/24h | - | Sulfite allergy | AUGMENTATION, ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Third-Line / Refractory Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Low-dose opioids | PO | - | 5-15 mg :: PO :: QHS :: Oxycodone 5-15 mg QHS or tramadol 50-100 mg QHS; RESERVE for refractory cases | Addiction risk, respiratory depression, apnea | Dependence, respiratory | - | - | EXT | - |
-| Extended-release oxycodone | PO | - | 10-20 mg :: PO :: QHS :: 10-20 mg QHS; for severe refractory RLS | Same | Same | - | - | EXT | - |
-| Methadone (specialist use) | PO | - | 5-10 mg :: PO :: QHS :: 5-10 mg QHS; specialist prescribing only | Same; QT prolongation | QTc, respiratory | - | - | EXT | - |
-| Buprenorphine (specialist use) | - | - | 0.2-0.8 mg :: - :: QHS :: 0.2-0.8 mg SL QHS; may have lower abuse potential | Same | Same | - | - | EXT | - |
+| Low-dose opioids | PO | Refractory RLS unresponsive to first- and second-line agents | 5-15 mg :: PO :: QHS :: Oxycodone 5-15 mg QHS or tramadol 50-100 mg QHS; RESERVE for refractory cases | Addiction risk, respiratory depression, apnea | Dependence, respiratory | - | - | EXT | - |
+| Extended-release oxycodone | PO | Severe refractory RLS requiring sustained opioid coverage | 10-20 mg :: PO :: QHS :: 10-20 mg QHS; for severe refractory RLS | Same | Same | - | - | EXT | - |
+| Methadone (specialist use) | PO | Specialist-managed opioid for severe refractory RLS | 5-10 mg :: PO :: QHS :: 5-10 mg QHS; specialist prescribing only | Same; QT prolongation | QTc, respiratory | - | - | EXT | - |
+| Buprenorphine (specialist use) | SL | Sublingual opioid alternative with lower abuse potential for refractory RLS | 0.2-0.8 mg :: - :: QHS :: 0.2-0.8 mg SL QHS; may have lower abuse potential | Same | Same | - | - | EXT | - |
 
 ### 3F. Managing Augmentation
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Recognize augmentation | - | - | - | - | Key to management | - | ROUTINE | ROUTINE | - |
-| Discontinue dopamine agonist | - | - | - | - | "Washout" period difficult | - | ROUTINE | ROUTINE | - |
-| Bridge with opioid | - | - | - | - | Temporary use | - | ROUTINE | ROUTINE | - |
-| Switch to alpha-2-delta ligand | - | - | - | - | New first-line | - | ROUTINE | ROUTINE | - |
-| IV iron | IV | - | - | - | Helpful during transition | - | ROUTINE | ROUTINE | - |
+| Recognize augmentation | - | Identify dopamine agonist-induced worsening of RLS symptoms | - | - | Key to management | - | ROUTINE | ROUTINE | - |
+| Discontinue dopamine agonist | - | Remove causative agent in confirmed augmentation | - | - | "Washout" period difficult | - | ROUTINE | ROUTINE | - |
+| Bridge with opioid | - | Temporary symptom control during dopamine agonist washout | - | - | Temporary use | - | ROUTINE | ROUTINE | - |
+| Switch to alpha-2-delta ligand | - | Transition to gabapentinoid after dopamine agonist augmentation | - | - | New first-line | - | ROUTINE | ROUTINE | - |
+| IV iron | IV | Optimize iron stores during augmentation management transition | - | - | Helpful during transition | - | ROUTINE | ROUTINE | - |
 
 ---
 

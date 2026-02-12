@@ -112,19 +112,19 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Abrupt discontinuation (simple analgesics, triptans) | - | - | N/A :: - :: per protocol :: Stop all overused medications immediately; preferred for most patients | None | Headache diary; expect worsening days 2-10 | - | ROUTINE | ROUTINE | - |
-| Gradual taper (opioids, barbiturates) | - | - | 25% :: - :: - :: Reduce by 10-25% every 1-2 weeks; slower for long-term use | None | Withdrawal symptoms | - | ROUTINE | ROUTINE | - |
-| Bridge therapy during withdrawal | - | - | N/A :: - :: per protocol :: See below | Per agent | Support through withdrawal phase | - | ROUTINE | ROUTINE | - |
+| Abrupt discontinuation (simple analgesics, triptans) | - | Withdrawal of overused simple analgesics or triptans causing MOH | N/A :: - :: per protocol :: Stop all overused medications immediately; preferred for most patients | None | Headache diary; expect worsening days 2-10 | - | ROUTINE | ROUTINE | - |
+| Gradual taper (opioids, barbiturates) | - | Controlled withdrawal of opioids or barbiturates causing MOH | 25% :: - :: - :: Reduce by 10-25% every 1-2 weeks; slower for long-term use | None | Withdrawal symptoms | - | ROUTINE | ROUTINE | - |
+| Bridge therapy during withdrawal | - | Symptomatic relief during acute medication withdrawal period | N/A :: - :: per protocol :: See below | Per agent | Support through withdrawal phase | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Bridge Therapy During Withdrawal
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Naproxen sodium (scheduled) | - | - | 500 mg :: - :: BID :: 500 mg BID × 2-4 weeks (not PRN - scheduled dosing to prevent rebound) | Renal disease, GI bleeding | Limited to 2-4 weeks | - | ROUTINE | ROUTINE | - |
-| Prednisone (short course) | - | - | 60 mg :: - :: daily x 3 days :: 60 mg × 3 days, 40 mg × 3 days, 20 mg × 3 days (total 9 days) | Uncontrolled DM, infection | Glucose | - | ROUTINE | ROUTINE | - |
-| Dexamethasone | PO | - | 4-8 mg :: PO :: daily :: 4-8 mg daily × 5-7 days | Same | Same | - | ROUTINE | ROUTINE | - |
-| Nerve block (GON) | - | - | 2% :: - :: - :: Lidocaine 2% + steroid, bilateral | Anticoagulation, local infection | May reduce withdrawal severity | - | ROUTINE | ROUTINE | - |
-| Antiemetics PRN | PO | - | 10 mg :: PO :: q8h :: Metoclopramide 10 mg q8h PRN or ondansetron 4-8 mg q8h PRN | Per agent | For nausea during withdrawal | - | ROUTINE | ROUTINE | - |
+| Naproxen sodium (scheduled) | PO | Scheduled bridge analgesia during MOH withdrawal | 500 mg :: - :: BID :: 500 mg BID × 2-4 weeks (not PRN - scheduled dosing to prevent rebound) | Renal disease, GI bleeding | Limited to 2-4 weeks | - | ROUTINE | ROUTINE | - |
+| Prednisone (short course) | PO | Short-course steroid bridge to reduce withdrawal headache severity | 60 mg :: - :: daily x 3 days :: 60 mg × 3 days, 40 mg × 3 days, 20 mg × 3 days (total 9 days) | Uncontrolled DM, infection | Glucose | - | ROUTINE | ROUTINE | - |
+| Dexamethasone | PO | Steroid bridge alternative for MOH withdrawal headache | 4-8 mg :: PO :: daily :: 4-8 mg daily × 5-7 days | Same | Same | - | ROUTINE | ROUTINE | - |
+| Nerve block (GON) | - | Greater occipital nerve block to reduce withdrawal headache | 2% :: - :: - :: Lidocaine 2% + steroid, bilateral | Anticoagulation, local infection | May reduce withdrawal severity | - | ROUTINE | ROUTINE | - |
+| Antiemetics PRN | PO | Nausea and vomiting associated with medication withdrawal | 10 mg :: PO :: q8h :: Metoclopramide 10 mg q8h PRN or ondansetron 4-8 mg q8h PRN | Per agent | For nausea during withdrawal | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Inpatient Withdrawal (Severe Cases)
 
@@ -132,33 +132,33 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IV DHE protocol (CPT 96365) | IV | - | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with metoclopramide 10 mg IV pretreatment) | CAD, CVA, uncontrolled HTN, pregnancy, triptans <24h | BP, nausea, EKG | - | STAT | - | - |
-| IV magnesium | IV | - | 1-2 g :: IV :: daily :: 1-2 g IV daily × 3-5 days | Renal failure | Mg levels | - | ROUTINE | - | - |
-| IV ketorolac (CPT 96374) | IV | - | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h × 2-3 days (max 5 days) | Renal disease, GI bleeding | Renal function | - | ROUTINE | - | - |
-| IV valproate | IV | - | 500-1000 mg :: IV :: BID :: 500-1000 mg IV BID × 3-5 days | Pregnancy, hepatic disease | Ammonia, LFTs | - | ROUTINE | - | - |
-| IV diphenhydramine | IV | - | 25-50 mg :: IV :: q6h :: 25-50 mg IV q6h with antiemetics | Glaucoma | Sedation | - | ROUTINE | - | - |
-| Opioid taper protocol | - | - | N/A :: - :: per protocol :: Structured taper with addiction medicine if significant dependence | N/A | Withdrawal symptoms | - | ROUTINE | - | - |
-| Barbiturate taper | - | - | N/A :: - :: per protocol :: Phenobarbital substitution and taper for butalbital dependence | N/A | Sedation, withdrawal | - | ROUTINE | - | - |
+| IV DHE protocol (CPT 96365) | IV | Inpatient abortive therapy for severe refractory MOH withdrawal | 0.5-1 mg :: IV :: q8h :: DHE 0.5-1 mg IV q8h × 3-5 days (with metoclopramide 10 mg IV pretreatment) | CAD, CVA, uncontrolled HTN, pregnancy, triptans <24h | BP, nausea, EKG | - | STAT | - | - |
+| IV magnesium | IV | Adjunctive therapy for headache during inpatient withdrawal | 1-2 g :: IV :: daily :: 1-2 g IV daily × 3-5 days | Renal failure | Mg levels | - | ROUTINE | - | - |
+| IV ketorolac (CPT 96374) | IV | Non-opioid analgesic bridge for inpatient MOH withdrawal | 15-30 mg :: IV :: q6h :: 15-30 mg IV q6h × 2-3 days (max 5 days) | Renal disease, GI bleeding | Renal function | - | ROUTINE | - | - |
+| IV valproate | IV | Inpatient headache suppression during acute withdrawal | 500-1000 mg :: IV :: BID :: 500-1000 mg IV BID × 3-5 days | Pregnancy, hepatic disease | Ammonia, LFTs | - | ROUTINE | - | - |
+| IV diphenhydramine | IV | Adjunct for nausea and akathisia with antiemetic therapy | 25-50 mg :: IV :: q6h :: 25-50 mg IV q6h with antiemetics | Glaucoma | Sedation | - | ROUTINE | - | - |
+| Opioid taper protocol | - | Structured opioid taper for opioid-overuse headache with dependence | N/A :: - :: per protocol :: Structured taper with addiction medicine if significant dependence | N/A | Withdrawal symptoms | - | ROUTINE | - | - |
+| Barbiturate taper | - | Structured barbiturate taper for butalbital-overuse headache with dependence | N/A :: - :: per protocol :: Phenobarbital substitution and taper for butalbital dependence | N/A | Sedation, withdrawal | - | ROUTINE | - | - |
 
 ### 3D. Preventive Medication (Start During or After Withdrawal)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Topiramate | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; titrate to 50-100 mg BID | - | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | - | - | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; titrate to 50-100 mg QHS | - | Cardiac arrhythmia, glaucoma | QTc, sedation | - | ROUTINE | ROUTINE | - |
-| Propranolol | PO | - | 40 mg :: PO :: BID :: Start 40 mg BID; titrate to 80-160 mg/day | - | Asthma, heart block, bradycardia | HR, BP | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | - | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; titrate to 75-150 mg daily | - | Uncontrolled HTN, MAOIs | BP | - | ROUTINE | ROUTINE | - |
-| OnabotulinumtoxinA (CPT J0585) | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (if chronic migraine criteria met) | - | Infection at site, myasthenia | Spread of effect | - | - | ROUTINE | - |
-| CGRP monoclonal antibodies | SC | - | 70-140 mg :: SC :: monthly :: Erenumab 70-140 mg SC monthly; Fremanezumab 225 mg monthly or 675 mg quarterly; Galcanezumab 240 mg load then 120 mg monthly | - | Hypersensitivity | Constipation (erenumab), injection reactions | - | - | ROUTINE | - |
-| Valproate | PO | - | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; titrate to 500-1000 mg BID | - | Pregnancy, hepatic disease | LFTs, ammonia, weight | - | ROUTINE | ROUTINE | - |
+| Topiramate | PO | Migraine prevention and MOH relapse prophylaxis | 25 mg :: PO :: daily :: Start 25 mg daily; titrate to 50-100 mg BID | - | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Preventive therapy for MOH with tension-type or mixed headache | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; titrate to 50-100 mg QHS | - | Cardiac arrhythmia, glaucoma | QTc, sedation | - | ROUTINE | ROUTINE | - |
+| Propranolol | PO | Migraine prophylaxis to prevent headache recurrence after withdrawal | 40 mg :: PO :: BID :: Start 40 mg BID; titrate to 80-160 mg/day | - | Asthma, heart block, bradycardia | HR, BP | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Migraine prevention, especially with comorbid depression or anxiety | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; titrate to 75-150 mg daily | - | Uncontrolled HTN, MAOIs | BP | - | ROUTINE | ROUTINE | - |
+| OnabotulinumtoxinA (CPT J0585) | IM | Chronic migraine prevention in patients meeting PREEMPT criteria | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (if chronic migraine criteria met) | - | Infection at site, myasthenia | Spread of effect | - | - | ROUTINE | - |
+| CGRP monoclonal antibodies | SC | Migraine prevention with potentially lower MOH recurrence risk | 70-140 mg :: SC :: monthly :: Erenumab 70-140 mg SC monthly; Fremanezumab 225 mg monthly or 675 mg quarterly; Galcanezumab 240 mg load then 120 mg monthly | - | Hypersensitivity | Constipation (erenumab), injection reactions | - | - | ROUTINE | - |
+| Valproate | PO | Migraine prophylaxis as alternative preventive agent | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; titrate to 500-1000 mg BID | - | Pregnancy, hepatic disease | LFTs, ammonia, weight | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Rescue Medications (Limited Use After Withdrawal)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Triptan (limited) | - | - | N/A :: - :: per protocol :: Max 2 days/week; max 9 days/month | CV disease | Headache diary | - | - | ROUTINE | - |
-| NSAID (limited) | - | - | N/A :: - :: per protocol :: Max 2 days/week; max 14 days/month | Renal/GI disease | Headache diary | - | - | ROUTINE | - |
-| Gepants (preferred rescue) | PO | - | 50-100 mg :: PO :: - :: Ubrogepant 50-100 mg or Rimegepant 75 mg; may have lower MOH risk | Per agent | May be safer for frequent use | - | - | ROUTINE | - |
+| Triptan (limited) | PO | Acute migraine rescue with strict frequency limits to prevent relapse | N/A :: - :: per protocol :: Max 2 days/week; max 9 days/month | CV disease | Headache diary | - | - | ROUTINE | - |
+| NSAID (limited) | PO | Acute headache rescue with strict frequency limits to prevent relapse | N/A :: - :: per protocol :: Max 2 days/week; max 14 days/month | Renal/GI disease | Headache diary | - | - | ROUTINE | - |
+| Gepants (preferred rescue) | PO | Preferred acute rescue with potentially lower MOH recurrence risk | 50-100 mg :: PO :: - :: Ubrogepant 50-100 mg or Rimegepant 75 mg; may have lower MOH risk | Per agent | May be safer for frequent use | - | - | ROUTINE | - |
 
 ---
 

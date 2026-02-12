@@ -124,12 +124,12 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Benzodiazepine (if actively seizing)** (CPT 96374) | IV | - | 0.1 mg/kg :: IV :: - :: **Lorazepam** 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **OR Midazolam** 10 mg IM (if no IV access); **OR Diazepam** 0.2 mg/kg IV (max 10 mg); **Intranasal midazolam** 5-10 mg if no IV; **Rectal diazepam** 0.2-0.5 mg/kg (home rescue) | - | First-line for acute seizure termination; lorazepam preferred IV (longer CNS duration); follow status epilepticus protocol if seizure continues >5 min | STAT | STAT | - | STAT |
-| **Protect patient during seizure** | - | - | N/A :: - :: per protocol :: Clear environment of hazards; DO NOT restrain or put anything in mouth; turn on side (recovery position) when safe; suction secretions; monitor airway; time the seizure | - | Prevent injury; prepare for airway management if prolonged | STAT | STAT | - | STAT |
-| **Post-ictal care** | - | - | 92% :: - :: - :: Recovery position; monitor airway (aspiration risk); supplemental O2 if SpO2 <92%; assess for injuries (tongue laceration, shoulder dislocation, vertebral fracture); reassurance; reorientation | - | Post-ictal period is self-limited (typically 5-30 min); prolonged alteration → consider NCSE, repeat seizure, or alternative diagnosis | STAT | STAT | - | STAT |
-| **Administer home ASM (if missed)** | - | - | N/A :: - :: per protocol :: If patient missed doses → give maintenance ASM immediately; if patient does not have medication with them → administer from ED/hospital supply | - | Non-adherence is most common cause of breakthrough seizure; restoring therapeutic levels is priority | STAT | STAT | - | STAT |
-| **Loading dose (if significantly subtherapeutic)** | IV | - | 15-20 mg :: IV :: - :: **Phenytoin/Fosphenytoin:** 15-20 mg PE/kg IV (if level very low); **Valproate:** 20-30 mg/kg IV (if level very low); **Levetiracetam:** 1000-1500 mg IV (if not on levetiracetam — can be added); **Note:** Loading the same drug patient is already taking risks toxicity → use cautiously | - | For significantly subtherapeutic levels or if need rapid therapeutic concentration; adjust for partial levels | STAT | STAT | - | STAT |
-| **Treat precipitant** | - | - | N/A :: - :: per protocol :: **Infection:** Antibiotics for UTI, pneumonia; **Electrolyte abnormality:** Correct (hyponatremia slowly); **Drug/alcohol withdrawal:** Appropriate protocol; **Sleep deprivation:** Education, sleep hygiene | - | Treating the precipitant may be more important than adjusting ASMs | STAT | STAT | ROUTINE | STAT |
+| **Benzodiazepine (if actively seizing)** (CPT 96374) | IV | Active seizure; first-line for acute seizure termination | 0.1 mg/kg :: IV :: - :: **Lorazepam** 0.1 mg/kg IV (max 4 mg), may repeat x1 in 5 min; **OR Midazolam** 10 mg IM (if no IV access); **OR Diazepam** 0.2 mg/kg IV (max 10 mg); **Intranasal midazolam** 5-10 mg if no IV; **Rectal diazepam** 0.2-0.5 mg/kg (home rescue) | - | First-line for acute seizure termination; lorazepam preferred IV (longer CNS duration); follow status epilepticus protocol if seizure continues >5 min | STAT | STAT | - | STAT |
+| **Protect patient during seizure** | - | Active seizure; injury prevention | N/A :: - :: per protocol :: Clear environment of hazards; DO NOT restrain or put anything in mouth; turn on side (recovery position) when safe; suction secretions; monitor airway; time the seizure | - | Prevent injury; prepare for airway management if prolonged | STAT | STAT | - | STAT |
+| **Post-ictal care** | - | Post-ictal state; airway protection; injury assessment | 92% :: - :: - :: Recovery position; monitor airway (aspiration risk); supplemental O2 if SpO2 <92%; assess for injuries (tongue laceration, shoulder dislocation, vertebral fracture); reassurance; reorientation | - | Post-ictal period is self-limited (typically 5-30 min); prolonged alteration → consider NCSE, repeat seizure, or alternative diagnosis | STAT | STAT | - | STAT |
+| **Administer home ASM (if missed)** | PO/IV | Non-adherence (most common cause of breakthrough seizure) | N/A :: - :: per protocol :: If patient missed doses → give maintenance ASM immediately; if patient does not have medication with them → administer from ED/hospital supply | - | Non-adherence is most common cause of breakthrough seizure; restoring therapeutic levels is priority | STAT | STAT | - | STAT |
+| **Loading dose (if significantly subtherapeutic)** | IV | Significantly subtherapeutic ASM level; need rapid therapeutic concentration | 15-20 mg :: IV :: - :: **Phenytoin/Fosphenytoin:** 15-20 mg PE/kg IV (if level very low); **Valproate:** 20-30 mg/kg IV (if level very low); **Levetiracetam:** 1000-1500 mg IV (if not on levetiracetam — can be added); **Note:** Loading the same drug patient is already taking risks toxicity → use cautiously | - | For significantly subtherapeutic levels or if need rapid therapeutic concentration; adjust for partial levels | STAT | STAT | - | STAT |
+| **Treat precipitant** | - | Identified seizure precipitant (infection, electrolyte, withdrawal) | N/A :: - :: per protocol :: **Infection:** Antibiotics for UTI, pneumonia; **Electrolyte abnormality:** Correct (hyponatremia slowly); **Drug/alcohol withdrawal:** Appropriate protocol; **Sleep deprivation:** Education, sleep hygiene | - | Treating the precipitant may be more important than adjusting ASMs | STAT | STAT | ROUTINE | STAT |
 
 ### 3B. ASM Adjustment Strategies
 
@@ -176,17 +176,17 @@ SECTION A: ACTION ITEMS
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| **Tramadol** | - | - | - | - | - | - | - | - | - |
-| **Meperidine (Demerol)** | - | - | - | - | - | - | - | - | - |
-| **Bupropion** | - | - | - | - | - | - | - | - | - |
-| **Clozapine** | - | - | - | - | - | - | - | - | - |
-| **Fluoroquinolones** | - | - | - | - | - | - | - | - | - |
-| **Carbapenems (imipenem > meropenem)** | - | - | - | - | - | - | - | - | - |
-| **Isoniazid** | - | - | - | - | - | - | - | - | - |
-| **Theophylline / Aminophylline** | - | - | - | - | - | - | - | - | - |
-| **Stimulants (amphetamines, methylphenidate)** | - | - | - | - | - | - | - | - | - |
-| **Alcohol (acute intoxication and withdrawal)** | - | - | - | - | - | - | - | - | - |
-| **Illicit drugs (cocaine, amphetamines, synthetic cathinones)** | - | - | - | - | - | - | - | - | - |
+| **Tramadol** | PO | Lowers seizure threshold; serotonergic and noradrenergic effects | Avoid :: PO :: - :: Use alternative analgesics; dose-dependent seizure risk | Epilepsy patients | - | AVOID | AVOID | AVOID | AVOID |
+| **Meperidine (Demerol)** | IV/IM | Normeperidine metabolite is proconvulsant; accumulates in renal impairment | Avoid :: IV :: - :: Use morphine or hydromorphone instead | Seizure history | - | AVOID | AVOID | AVOID | AVOID |
+| **Bupropion** | PO | Dose-dependent seizure risk (0.4% at ≤450 mg/day); lowers threshold | Avoid :: PO :: - :: Contraindicated in seizure disorder; use SSRI/SNRI instead | Seizure disorder | - | AVOID | AVOID | AVOID | AVOID |
+| **Clozapine** | PO | Highest seizure risk of all antipsychotics (3-5% dose-dependent) | Avoid :: PO :: - :: If required, use lowest dose with AED coverage | Epilepsy | EEG if used | AVOID | AVOID | AVOID | AVOID |
+| **Fluoroquinolones** | IV/PO | GABA-A antagonism lowers seizure threshold | Avoid :: IV/PO :: - :: Use alternative antibiotics; risk increases with renal impairment | Seizure history | - | AVOID | AVOID | AVOID | AVOID |
+| **Carbapenems (imipenem > meropenem)** | IV | Imipenem: highest seizure risk (3-33%); also reduces valproate levels 60-100% | Avoid :: IV :: - :: Meropenem safer than imipenem; avoid all carbapenems with valproate | Epilepsy on valproate | Valproate levels if used | AVOID | AVOID | AVOID | AVOID |
+| **Isoniazid** | PO | Depletes pyridoxine (vitamin B6) → lowers seizure threshold; overdose causes refractory seizures | Avoid :: PO :: - :: If required, co-administer pyridoxine 50 mg daily; treat INH seizures with IV pyridoxine | TB patients with epilepsy | B6 levels | AVOID | AVOID | AVOID | AVOID |
+| **Theophylline / Aminophylline** | IV/PO | Adenosine antagonism lowers seizure threshold; dose-dependent risk | Avoid :: IV/PO :: - :: Use alternative bronchodilators if possible | Epilepsy; asthma/COPD overlap | Drug levels | AVOID | AVOID | AVOID | AVOID |
+| **Stimulants (amphetamines, methylphenidate)** | PO | Lower seizure threshold via catecholamine release | Avoid :: PO :: - :: Use with caution if ADHD comorbidity; ensure ASM therapeutic | ADHD with epilepsy | Seizure frequency | AVOID | AVOID | AVOID | AVOID |
+| **Alcohol (acute intoxication and withdrawal)** | PO | Withdrawal lowers seizure threshold; intoxication may mask seizures | Avoid :: PO :: - :: Counsel on abstinence; treat withdrawal with benzodiazepines | All epilepsy patients | - | AVOID | AVOID | AVOID | AVOID |
+| **Illicit drugs (cocaine, amphetamines, synthetic cathinones)** | - | Potent seizure provokers via multiple mechanisms | Avoid :: - :: - :: Substance abuse counseling; toxicology screening | All epilepsy patients | Toxicology screen | AVOID | AVOID | AVOID | AVOID |
 
 ---
 

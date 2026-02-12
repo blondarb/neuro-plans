@@ -345,25 +345,17 @@
         {
           "item": "IVIG (Intravenous Immunoglobulin) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "First-line immunotherapy for CIDP induction and maintenance",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg PO daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg PO divided over 2-5 days"
+                "text": "2 g/kg",
+                "orderSentence": "IVIG (Intravenous Immunoglobulin) (CPT 96365) 2 g/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "Induction: 2 g/kg divided over 2-5 days; Maintenance: 0.4-1 g/kg q3-4 weeks (adjust based on response)",
-            "orderSentence": "Ivig 0.4 g/kg PO daily x5 days"
+            "orderSentence": "IVIG (Intravenous Immunoglobulin) (CPT 96365) 2 g/kg PO"
           },
           "contraindications": "IgA deficiency (use IgA-depleted product), renal failure, thrombosis history",
           "monitoring": "Renal function, headache, aseptic meningitis, thrombosis",
@@ -375,7 +367,7 @@
         {
           "item": "SCIG (Subcutaneous Immunoglobulin)",
           "route": "SC",
-          "indication": "-",
+          "indication": "Maintenance immunoglobulin therapy as alternative to IVIG",
           "dosing": {
             "doseOptions": [
               {
@@ -397,7 +389,7 @@
         {
           "item": "Plasma exchange (PLEX) (CPT 36514)",
           "route": "-",
-          "indication": "-",
+          "indication": "First-line therapy for acute CIDP relapse or induction",
           "dosing": {
             "doseOptions": [
               {
@@ -419,7 +411,7 @@
         {
           "item": "Corticosteroids",
           "route": "IV",
-          "indication": "-",
+          "indication": "First-line immunosuppression for CIDP induction and taper",
           "dosing": {
             "doseOptions": [
               {
@@ -443,29 +435,17 @@
         {
           "item": "Azathioprine",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-sparing agent for long-term CIDP immunosuppression",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Azathioprine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Azathioprine 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Azathioprine 150 mg PO daily"
-              },
-              {
-                "text": "2-3 mg/kg daily",
-                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
+                "text": "50 mg",
+                "orderSentence": "Azathioprine 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg daily; increase by 50 mg q2 weeks to 2-3 mg/kg/day",
-            "orderSentence": "Azathioprine 50 mg PO daily"
+            "orderSentence": "Azathioprine 50 mg PO"
           },
           "contraindications": "TPMT deficiency (check before starting), pregnancy",
           "monitoring": "CBC, LFTs, TPMT level",
@@ -477,25 +457,17 @@
         {
           "item": "Mycophenolate mofetil",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-sparing immunosuppressant for refractory CIDP",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg BID; increase to 1000-1500 mg BID",
-            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
+            "orderSentence": "Mycophenolate mofetil 500 mg PO"
           },
           "contraindications": "Pregnancy, severe GI disease",
           "monitoring": "CBC, LFTs",
@@ -507,25 +479,17 @@
         {
           "item": "Rituximab",
           "route": "IV",
-          "indication": "-",
+          "indication": "Second-line B-cell depletion therapy for refractory CIDP",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "375 mg",
+                "orderSentence": "Rituximab 375 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "375 mg/m² IV weekly × 4 OR 1000 mg IV × 2 doses (days 1 and 15); repeat q6 months PRN",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
+            "orderSentence": "Rituximab 375 mg IV"
           },
           "contraindications": "Active infection, hepatitis B (screen)",
           "monitoring": "Infusion reactions, infection, B-cell counts",
@@ -537,21 +501,17 @@
         {
           "item": "Cyclophosphamide",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory CIDP unresponsive to first- and second-line agents",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-              },
-              {
-                "text": "1000 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
+                "text": "500-1000 mg",
+                "orderSentence": "Cyclophosphamide 500-1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Pulse: 500-1000 mg/m² IV monthly × 6; rarely used due to toxicity",
-            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
+            "orderSentence": "Cyclophosphamide 500-1000 mg IV"
           },
           "contraindications": "Severe cytopenias, active infection",
           "monitoring": "CBC, renal function, bladder toxicity",
@@ -563,25 +523,17 @@
         {
           "item": "Cyclosporine",
           "route": "PO",
-          "indication": "-",
+          "indication": "Steroid-sparing calcineurin inhibitor for refractory CIDP",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Cyclosporine 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Cyclosporine 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Cyclosporine 200 mg PO BID"
+                "text": "3-5 mg/kg",
+                "orderSentence": "Cyclosporine 3-5 mg/kg PO"
               }
             ],
             "route": "PO",
             "instructions": "3-5 mg/kg/day in 2 divided doses; target trough 100-200 ng/mL",
-            "orderSentence": "Cyclosporine 100 mg PO BID"
+            "orderSentence": "Cyclosporine 3-5 mg/kg PO"
           },
           "contraindications": "Renal impairment, uncontrolled HTN",
           "monitoring": "Renal function, BP, drug levels",
@@ -594,26 +546,18 @@
       "Anti-Nodal Antibody-Positive CIDP (Special Population)": [
         {
           "item": "Rituximab (first-line for anti-nodal CIDP)",
-          "route": "PO",
-          "indication": "-",
+          "route": "IV",
+          "indication": "First-line B-cell depletion for anti-nodal antibody-positive CIDP",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 PO weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg PO q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg PO q6mo"
+                "text": "375 mg",
+                "orderSentence": "Rituximab (first-line for anti-nodal CIDP) 375 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "375 mg/m² weekly × 4 OR 1000 mg × 2 doses",
-            "orderSentence": "Rituximab 375 mg/m2 PO weekly x4"
+            "orderSentence": "Rituximab (first-line for anti-nodal CIDP) 375 mg PO"
           },
           "contraindications": "Per above",
           "monitoring": "Poor response to IVIG expected; rituximab preferred",
@@ -627,33 +571,17 @@
         {
           "item": "Gabapentin (neuropathic pain)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Neuropathic pain from CIDP-related nerve damage",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "100-300 mg",
+                "orderSentence": "Gabapentin (neuropathic pain) 100-300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100-300 mg TID; titrate to 900-3600 mg/day",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin (neuropathic pain) 100-300 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal impairment (adjust)",
@@ -666,37 +594,17 @@
         {
           "item": "Pregabalin (neuropathic pain)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Neuropathic pain from CIDP-related nerve damage",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg TID",
-                "orderSentence": "Pregabalin 50 mg PO TID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Pregabalin 75 mg PO BID"
-              },
-              {
-                "text": "100 mg TID",
-                "orderSentence": "Pregabalin 100 mg PO TID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Pregabalin 200 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Pregabalin 300 mg PO BID"
+                "text": "75 mg",
+                "orderSentence": "Pregabalin (neuropathic pain) 75 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 75 mg BID; titrate to 150-300 mg BID",
-            "orderSentence": "Pregabalin 50 mg PO TID"
+            "orderSentence": "Pregabalin (neuropathic pain) 75 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal impairment (adjust)",
@@ -709,29 +617,17 @@
         {
           "item": "Duloxetine (neuropathic pain)",
           "route": "PO",
-          "indication": "-",
+          "indication": "SNRI for CIDP-associated neuropathic pain",
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg daily",
-                "orderSentence": "Duloxetine 30 mg PO daily"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Duloxetine 60 mg PO daily"
-              },
-              {
-                "text": "90 mg daily",
-                "orderSentence": "Duloxetine 90 mg PO daily"
-              },
-              {
-                "text": "120 mg daily",
-                "orderSentence": "Duloxetine 120 mg PO daily"
+                "text": "30 mg",
+                "orderSentence": "Duloxetine (neuropathic pain) 30 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 30 mg daily; increase to 60 mg daily",
-            "orderSentence": "Duloxetine 30 mg PO daily"
+            "orderSentence": "Duloxetine (neuropathic pain) 30 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Severe hepatic/renal impairment, MAOIs",
@@ -743,34 +639,18 @@
         },
         {
           "item": "Amitriptyline (neuropathic pain)",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "TCA for CIDP-associated neuropathic pain",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QHS",
-                "orderSentence": "Amitriptyline 10 mg PO QHS"
-              },
-              {
-                "text": "25 mg QHS",
-                "orderSentence": "Amitriptyline 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Amitriptyline 50 mg PO QHS"
-              },
-              {
-                "text": "75 mg QHS",
-                "orderSentence": "Amitriptyline 75 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Amitriptyline 100 mg PO QHS"
+                "text": "10-25 mg",
+                "orderSentence": "Amitriptyline (neuropathic pain) 10-25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10-25 mg QHS; titrate to 50-100 mg QHS",
-            "orderSentence": "Amitriptyline 10 mg PO QHS"
+            "orderSentence": "Amitriptyline (neuropathic pain) 10-25 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Cardiac arrhythmia, glaucoma",

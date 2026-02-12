@@ -117,43 +117,43 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Acetaminophen | PO | - | 1000 mg :: PO :: once :: 1000 mg PO once, max 3000 mg/day | Hepatic disease, chronic alcohol use | LFTs if frequent use | - | ROUTINE | ROUTINE | - |
-| Ibuprofen | PO | - | 400-800 mg :: PO :: once :: 400-800 mg PO once | Renal disease, GI bleeding, aspirin allergy | Renal function | - | ROUTINE | ROUTINE | - |
-| Naproxen sodium | PO | - | 500-825 mg :: PO :: once :: 500-825 mg PO once | Same as ibuprofen | Renal function | - | ROUTINE | ROUTINE | - |
-| Aspirin | PO | - | 900-1000 mg :: PO :: once :: 900-1000 mg PO once | Bleeding disorder, aspirin allergy | Bleeding | - | ROUTINE | ROUTINE | - |
-| Excedrin (ASA/APAP/caffeine) | PO | - | 2 tab :: PO :: once :: 2 tablets PO once | Per components | Risk of MOH | - | - | ROUTINE | - |
+| Acetaminophen | PO | Mild-moderate migraine; first-line analgesic | 1000 mg :: PO :: once :: 1000 mg PO once, max 3000 mg/day | Hepatic disease, chronic alcohol use | LFTs if frequent use | - | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | Mild-moderate migraine; NSAID-responsive headache | 400-800 mg :: PO :: once :: 400-800 mg PO once | Renal disease, GI bleeding, aspirin allergy | Renal function | - | ROUTINE | ROUTINE | - |
+| Naproxen sodium | PO | Mild-moderate migraine; longer-acting NSAID | 500-825 mg :: PO :: once :: 500-825 mg PO once | Same as ibuprofen | Renal function | - | ROUTINE | ROUTINE | - |
+| Aspirin | PO | Mild-moderate migraine; NSAID alternative | 900-1000 mg :: PO :: once :: 900-1000 mg PO once | Bleeding disorder, aspirin allergy | Bleeding | - | ROUTINE | ROUTINE | - |
+| Excedrin (ASA/APAP/caffeine) | PO | Mild-moderate migraine; combination analgesic | 2 tab :: PO :: once :: 2 tablets PO once | Per components | Risk of MOH | - | - | ROUTINE | - |
 
 ### 3B. Acute/Abortive Treatment - Moderate-Severe Attacks (Triptans)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Sumatriptan SC | SC | - | 6 mg :: SC :: once :: 6 mg SC once; may repeat in 2h; max 12 mg/24h | CAD, stroke/TIA, uncontrolled HTN, hemiplegic/basilar migraine, pregnancy | Chest tightness, BP | STAT | STAT | - | - |
-| Sumatriptan PO | PO | - | 50-100 mg :: PO :: once :: 50-100 mg PO once; may repeat in 2h; max 200 mg/24h | Same as SC | Same | - | ROUTINE | ROUTINE | - |
-| Sumatriptan nasal | IN | - | 20 mg :: IN :: - :: 20 mg intranasal; may repeat in 2h; max 40 mg/24h | Same as SC | Same | URGENT | ROUTINE | ROUTINE | - |
-| Rizatriptan | PO | - | 5-10 mg :: PO :: - :: 5-10 mg PO (ODT available); may repeat in 2h; max 30 mg/24h | Same; 5 mg if on propranolol | Same | - | ROUTINE | ROUTINE | - |
-| Eletriptan | PO | - | 40 mg :: PO :: - :: 40 mg PO; may repeat in 2h; max 80 mg/24h | Same; severe hepatic impairment | Same | - | ROUTINE | ROUTINE | - |
-| Zolmitriptan | PO | - | 2.5-5 mg :: PO :: - :: 2.5-5 mg PO or nasal; may repeat in 2h; max 10 mg/24h | Same | Same | - | ROUTINE | ROUTINE | - |
+| Sumatriptan SC | SC | Moderate-severe migraine; fastest triptan onset | 6 mg :: SC :: once :: 6 mg SC once; may repeat in 2h; max 12 mg/24h | CAD, stroke/TIA, uncontrolled HTN, hemiplegic/basilar migraine, pregnancy | Chest tightness, BP | STAT | STAT | - | - |
+| Sumatriptan PO | PO | Moderate-severe migraine; oral triptan | 50-100 mg :: PO :: once :: 50-100 mg PO once; may repeat in 2h; max 200 mg/24h | Same as SC | Same | - | ROUTINE | ROUTINE | - |
+| Sumatriptan nasal | IN | Moderate-severe migraine; nausea limits oral route | 20 mg :: IN :: - :: 20 mg intranasal; may repeat in 2h; max 40 mg/24h | Same as SC | Same | URGENT | ROUTINE | ROUTINE | - |
+| Rizatriptan | PO | Moderate-severe migraine; rapid-dissolve option | 5-10 mg :: PO :: - :: 5-10 mg PO (ODT available); may repeat in 2h; max 30 mg/24h | Same; 5 mg if on propranolol | Same | - | ROUTINE | ROUTINE | - |
+| Eletriptan | PO | Moderate-severe migraine; highest sustained response | 40 mg :: PO :: - :: 40 mg PO; may repeat in 2h; max 80 mg/24h | Same; severe hepatic impairment | Same | - | ROUTINE | ROUTINE | - |
+| Zolmitriptan | PO | Moderate-severe migraine; PO or nasal options | 2.5-5 mg :: PO :: - :: 2.5-5 mg PO or nasal; may repeat in 2h; max 10 mg/24h | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Acute/Abortive Treatment - CGRP Antagonists (Gepants)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Ubrogepant | PO | - | 50-100 mg :: PO :: - :: 50-100 mg PO; may repeat in 2h; max 200 mg/24h | CYP3A4 inhibitors; no cardiovascular contraindications | LFTs periodically | - | ROUTINE | ROUTINE | - |
-| Rimegepant | PO | - | 75 mg :: PO :: once daily :: 75 mg PO once daily; ODT formulation | CYP3A4 inhibitors | LFTs periodically | - | ROUTINE | ROUTINE | - |
-| Zavegepant nasal | IN | - | 10 mg :: IN :: once daily :: 10 mg intranasal once daily | None significant | Local irritation | - | ROUTINE | ROUTINE | - |
+| Ubrogepant | PO | Moderate-severe migraine; no cardiovascular contraindications | 50-100 mg :: PO :: - :: 50-100 mg PO; may repeat in 2h; max 200 mg/24h | CYP3A4 inhibitors; no cardiovascular contraindications | LFTs periodically | - | ROUTINE | ROUTINE | - |
+| Rimegepant | PO | Moderate-severe migraine; dual acute + preventive role | 75 mg :: PO :: once daily :: 75 mg PO once daily; ODT formulation | CYP3A4 inhibitors | LFTs periodically | - | ROUTINE | ROUTINE | - |
+| Zavegepant nasal | IN | Moderate-severe migraine; non-oral option without CV risk | 10 mg :: IN :: once daily :: 10 mg intranasal once daily | None significant | Local irritation | - | ROUTINE | ROUTINE | - |
 
 ### 3D. ED/Inpatient Treatment - Status Migrainosus ("Headache Cocktail")
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IV fluids | IV | - | 75-125 mL/hr :: - :: once :: NS or LR 1L bolus, then 75-125 mL/hr | - | Heart failure, volume overload | I/O | STAT | STAT | - | - |
-| Prochlorperazine IV (CPT 96374) | IV | - | 10 mg :: IV :: - :: 10 mg IV slow push over 5-10 min; may repeat in 30 min | - | QT prolongation, Parkinson's | QTc, akathisia, dystonia | STAT | STAT | - | - |
-| Metoclopramide IV | IV | - | 10-20 mg :: IV :: - :: 10-20 mg IV over 15-30 min; may repeat in 30 min | - | QT prolongation, Parkinson's, seizures | QTc, akathisia, dystonia | STAT | STAT | - | - |
-| Diphenhydramine IV | IV | - | 25-50 mg :: IV :: - :: 25-50 mg IV to prevent akathisia (give with antiemetic) | - | Glaucoma, urinary retention | Sedation | STAT | STAT | - | - |
-| Ketorolac IV | IV | - | 30 mg :: IV :: - :: 30 mg IV (15 mg if >65y or CrCl <50); max 2 doses | - | Renal disease, GI bleeding, anticoagulation | Renal function | STAT | STAT | - | - |
-| Dexamethasone IV | IV | - | 10 mg :: IV :: once :: 10 mg IV once (reduces recurrence) | - | Active infection, uncontrolled DM | Glucose | URGENT | URGENT | - | - |
-| Magnesium sulfate IV (CPT 96365) | IV | - | 2 g :: IV :: - :: 2 g IV over 20-30 min | - | Renal failure, myasthenia | Mg levels, reflexes | URGENT | URGENT | - | - |
-| Valproate sodium IV | IV | - | 500-1000 mg :: IV :: - :: 500-1000 mg IV over 15-30 min | - | Pregnancy, hepatic disease, mitochondrial disease | Ammonia, LFTs | URGENT | URGENT | - | - |
+| IV fluids | IV | Dehydration; migraine-associated nausea/vomiting | 75-125 mL/hr :: - :: once :: NS or LR 1L bolus, then 75-125 mL/hr | - | Heart failure, volume overload | I/O | STAT | STAT | - | - |
+| Prochlorperazine IV (CPT 96374) | IV | Status migrainosus; first-line ED antiemetic/abortive | 10 mg :: IV :: - :: 10 mg IV slow push over 5-10 min; may repeat in 30 min | - | QT prolongation, Parkinson's | QTc, akathisia, dystonia | STAT | STAT | - | - |
+| Metoclopramide IV | IV | Status migrainosus; alternative to prochlorperazine | 10-20 mg :: IV :: - :: 10-20 mg IV over 15-30 min; may repeat in 30 min | - | QT prolongation, Parkinson's, seizures | QTc, akathisia, dystonia | STAT | STAT | - | - |
+| Diphenhydramine IV | IV | Akathisia prevention with dopamine antagonist | 25-50 mg :: IV :: - :: 25-50 mg IV to prevent akathisia (give with antiemetic) | - | Glaucoma, urinary retention | Sedation | STAT | STAT | - | - |
+| Ketorolac IV | IV | Status migrainosus; parenteral NSAID | 30 mg :: IV :: - :: 30 mg IV (15 mg if >65y or CrCl <50); max 2 doses | - | Renal disease, GI bleeding, anticoagulation | Renal function | STAT | STAT | - | - |
+| Dexamethasone IV | IV | Status migrainosus; headache recurrence prevention | 10 mg :: IV :: once :: 10 mg IV once (reduces recurrence) | - | Active infection, uncontrolled DM | Glucose | URGENT | URGENT | - | - |
+| Magnesium sulfate IV (CPT 96365) | IV | Status migrainosus; migraine with aura | 2 g :: IV :: - :: 2 g IV over 20-30 min | - | Renal failure, myasthenia | Mg levels, reflexes | URGENT | URGENT | - | - |
+| Valproate sodium IV | IV | Refractory status migrainosus | 500-1000 mg :: IV :: - :: 500-1000 mg IV over 15-30 min | - | Pregnancy, hepatic disease, mitochondrial disease | Ammonia, LFTs | URGENT | URGENT | - | - |
 
 ### 3E. ED/Inpatient - Refractory/Second-Line Therapy (DHE Protocol)
 
@@ -161,50 +161,50 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Dihydroergotamine (DHE) | IV | - | 10 mg :: IV :: q8h :: Premedicate: metoclopramide 10 mg IV + diphenhydramine 25 mg IV; Test dose: 0.5 mg IV over 1 min; If tolerated: 0.5-1 mg IV q8h | Pregnancy, CAD, CVA, uncontrolled HTN, triptan <24h, ergot allergy | BP, chest pain, nausea | URGENT | STAT | - | - |
-| DHE nasal | IN | - | 0.5 mg :: - :: once :: 0.5 mg per nostril (1 mg total); may repeat once in 15 min; max 3 mg/24h | Same as IV | Same | - | ROUTINE | ROUTINE | - |
+| Dihydroergotamine (DHE) | IV | Refractory status migrainosus; failed standard ED treatment | 10 mg :: IV :: q8h :: Premedicate: metoclopramide 10 mg IV + diphenhydramine 25 mg IV; Test dose: 0.5 mg IV over 1 min; If tolerated: 0.5-1 mg IV q8h | Pregnancy, CAD, CVA, uncontrolled HTN, triptan <24h, ergot allergy | BP, chest pain, nausea | URGENT | STAT | - | - |
+| DHE nasal | IN | Refractory migraine; outpatient DHE option | 0.5 mg :: - :: once :: 0.5 mg per nostril (1 mg total); may repeat once in 15 min; max 3 mg/24h | Same as IV | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Pregnancy-Safe Options
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Acetaminophen | IV | - | 1000 mg :: IV :: q8h :: 1000 mg PO/IV q8h; max 3000 mg/day | Hepatic disease | LFTs | STAT | STAT | ROUTINE | - |
-| Metoclopramide | IV | - | 10 mg :: IV :: q8h :: 10 mg IV/PO q8h | Parkinson's | Akathisia | STAT | STAT | ROUTINE | - |
-| Ondansetron | IV | - | 4-8 mg :: IV :: q8h :: 4-8 mg IV/PO q8h | QT prolongation (caution 1st trimester) | QTc | URGENT | ROUTINE | ROUTINE | - |
-| Magnesium sulfate | IV | - | 2 g :: IV :: once :: 2 g IV once | Renal failure | Reflexes, respiratory | URGENT | URGENT | - | - |
-| Nerve block (occipital) | - | - | 2-3 mL :: - :: - :: Lidocaine 1% or bupivacaine 0.25%, 2-3 mL per side | Local anesthetic allergy | Local reaction | - | ROUTINE | ROUTINE | - |
-| Sumatriptan (if refractory) | SC | - | 6 mg :: SC :: - :: 6 mg SC x1 (pregnancy registry data reassuring) | Per triptan list; discuss risks | Standard | - | EXT | EXT | - |
+| Acetaminophen | IV | Migraine in pregnancy; first-line safe analgesic | 1000 mg :: IV :: q8h :: 1000 mg PO/IV q8h; max 3000 mg/day | Hepatic disease | LFTs | STAT | STAT | ROUTINE | - |
+| Metoclopramide | IV | Migraine in pregnancy; antiemetic/abortive | 10 mg :: IV :: q8h :: 10 mg IV/PO q8h | Parkinson's | Akathisia | STAT | STAT | ROUTINE | - |
+| Ondansetron | IV | Nausea/vomiting in pregnancy with migraine | 4-8 mg :: IV :: q8h :: 4-8 mg IV/PO q8h | QT prolongation (caution 1st trimester) | QTc | URGENT | ROUTINE | ROUTINE | - |
+| Magnesium sulfate | IV | Migraine in pregnancy; acute treatment | 2 g :: IV :: once :: 2 g IV once | Renal failure | Reflexes, respiratory | URGENT | URGENT | - | - |
+| Nerve block (occipital) | SC | Refractory migraine in pregnancy; non-systemic option | 2-3 mL :: - :: - :: Lidocaine 1% or bupivacaine 0.25%, 2-3 mL per side | Local anesthetic allergy | Local reaction | - | ROUTINE | ROUTINE | - |
+| Sumatriptan (if refractory) | SC | Refractory migraine in pregnancy (registry data reassuring) | 6 mg :: SC :: - :: 6 mg SC x1 (pregnancy registry data reassuring) | Per triptan list; discuss risks | Standard | - | EXT | EXT | - |
 
 ### 3G. Preventive Medications - First-Line
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Propranolol | PO | - | 40-80 mg/day :: PO :: - :: Start 40-80 mg/day in divided doses; target 80-240 mg/day | Asthma, heart block, bradycardia, depression | HR, BP | - | ROUTINE | ROUTINE | - |
-| Metoprolol | PO | - | 25-50 mg :: PO :: BID :: Start 25-50 mg BID; target 100-200 mg/day | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
-| Topiramate | PO | - | 25 mg :: PO :: QHS :: Start 25 mg QHS; increase by 25 mg/week to 50-100 mg BID | Kidney stones, pregnancy (teratogenic), glaucoma | Bicarbonate, cognitive effects | - | ROUTINE | ROUTINE | - |
-| Amitriptyline | - | - | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; target 50-150 mg QHS | Glaucoma, urinary retention, cardiac arrhythmia | QTc, anticholinergic effects | - | ROUTINE | ROUTINE | - |
-| Venlafaxine XR | PO | - | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; target 75-150 mg daily | Uncontrolled HTN, MAOI use | BP, serotonin syndrome | - | ROUTINE | ROUTINE | - |
+| Propranolol | PO | Migraine prevention; ≥4 migraine days/month | 40-80 mg/day :: PO :: - :: Start 40-80 mg/day in divided doses; target 80-240 mg/day | Asthma, heart block, bradycardia, depression | HR, BP | - | ROUTINE | ROUTINE | - |
+| Metoprolol | PO | Migraine prevention; beta-blocker alternative | 25-50 mg :: PO :: BID :: Start 25-50 mg BID; target 100-200 mg/day | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
+| Topiramate | PO | Migraine prevention; weight loss co-benefit | 25 mg :: PO :: QHS :: Start 25 mg QHS; increase by 25 mg/week to 50-100 mg BID | Kidney stones, pregnancy (teratogenic), glaucoma | Bicarbonate, cognitive effects | - | ROUTINE | ROUTINE | - |
+| Amitriptyline | PO | Migraine prevention; concurrent insomnia or tension-type | 10-25 mg :: PO :: QHS :: Start 10-25 mg QHS; target 50-150 mg QHS | Glaucoma, urinary retention, cardiac arrhythmia | QTc, anticholinergic effects | - | ROUTINE | ROUTINE | - |
+| Venlafaxine XR | PO | Migraine prevention; concurrent depression or anxiety | 37.5 mg :: PO :: daily :: Start 37.5 mg daily; target 75-150 mg daily | Uncontrolled HTN, MAOI use | BP, serotonin syndrome | - | ROUTINE | ROUTINE | - |
 
 ### 3H. Preventive Medications - CGRP Monoclonal Antibodies
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Erenumab (Aimovig) | SC | - | 70-140 mg :: SC :: monthly :: 70-140 mg SC monthly | Hypersensitivity; caution with constipation, HTN | BP, constipation | - | - | ROUTINE | - |
-| Fremanezumab (Ajovy) | SC | - | 225 mg :: SC :: monthly :: 225 mg SC monthly OR 675 mg SC quarterly | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
-| Galcanezumab (Emgality) | SC | - | 240 mg :: SC :: monthly :: 240 mg SC loading, then 120 mg SC monthly | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
-| Eptinezumab (Vyepti) | IV | - | 100-300 mg :: IV :: - :: 100-300 mg IV q3 months | Hypersensitivity | Infusion reactions | - | ROUTINE | ROUTINE | - |
+| Erenumab (Aimovig) | SC | Chronic or episodic migraine prevention; ≥4 migraine days/month | 70-140 mg :: SC :: monthly :: 70-140 mg SC monthly | Hypersensitivity; caution with constipation, HTN | BP, constipation | - | - | ROUTINE | - |
+| Fremanezumab (Ajovy) | SC | Chronic or episodic migraine prevention | 225 mg :: SC :: monthly :: 225 mg SC monthly OR 675 mg SC quarterly | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
+| Galcanezumab (Emgality) | SC | Chronic or episodic migraine prevention | 240 mg :: SC :: monthly :: 240 mg SC loading, then 120 mg SC monthly | Hypersensitivity | Injection site reactions | - | - | ROUTINE | - |
+| Eptinezumab (Vyepti) | IV | Chronic or episodic migraine prevention; IV option | 100-300 mg :: IV :: - :: 100-300 mg IV q3 months | Hypersensitivity | Infusion reactions | - | ROUTINE | ROUTINE | - |
 
 ### 3I. Preventive Medications - Other
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Valproate | PO | - | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; target 500-1500 mg/day | Pregnancy, hepatic disease | LFTs, ammonia | - | ROUTINE | ROUTINE | - |
-| OnabotulinumtoxinA (Botox) (CPT J0585) | IM | - | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (chronic migraine only) | Infection at injection sites, myasthenia | Spread of toxin effect | - | - | ROUTINE | - |
-| Atogepant (Qulipta) | PO | - | 10-60 mg :: PO :: daily :: 10-60 mg PO daily | Severe hepatic impairment | LFTs | - | - | ROUTINE | - |
-| Rimegepant (preventive) | - | - | 75 mg :: - :: - :: 75 mg every other day | CYP3A4 inhibitors | LFTs | - | - | ROUTINE | - |
-| Magnesium oxide | PO | - | 400-600 mg :: PO :: daily :: 400-600 mg PO daily | Renal failure | Diarrhea | - | ROUTINE | ROUTINE | - |
-| Riboflavin (Vitamin B2) | PO | - | 400 mg :: PO :: daily :: 400 mg PO daily | None significant | None | - | - | ROUTINE | - |
-| CoQ10 | PO | - | 100 mg :: PO :: TID :: 100 mg TID | None significant | None | - | - | ROUTINE | - |
+| Valproate | PO | Migraine prevention; broad-spectrum | 250-500 mg :: PO :: BID :: Start 250-500 mg BID; target 500-1500 mg/day | Pregnancy, hepatic disease | LFTs, ammonia | - | ROUTINE | ROUTINE | - |
+| OnabotulinumtoxinA (Botox) (CPT J0585) | IM | Chronic migraine prevention (≥15 headache days/month) | 155-195 units :: IM :: - :: 155-195 units IM q12 weeks (chronic migraine only) | Infection at injection sites, myasthenia | Spread of toxin effect | - | - | ROUTINE | - |
+| Atogepant (Qulipta) | PO | Episodic or chronic migraine prevention; oral gepant | 10-60 mg :: PO :: daily :: 10-60 mg PO daily | Severe hepatic impairment | LFTs | - | - | ROUTINE | - |
+| Rimegepant (preventive) | PO | Episodic migraine prevention; dual acute/preventive | 75 mg :: - :: - :: 75 mg every other day | CYP3A4 inhibitors | LFTs | - | - | ROUTINE | - |
+| Magnesium oxide | PO | Migraine prevention; nutraceutical | 400-600 mg :: PO :: daily :: 400-600 mg PO daily | Renal failure | Diarrhea | - | ROUTINE | ROUTINE | - |
+| Riboflavin (Vitamin B2) | PO | Migraine prevention; nutraceutical | 400 mg :: PO :: daily :: 400 mg PO daily | None significant | None | - | - | ROUTINE | - |
+| CoQ10 | PO | Migraine prevention; nutraceutical | 100 mg :: PO :: TID :: 100 mg TID | None significant | None | - | - | ROUTINE | - |
 
 ---
 

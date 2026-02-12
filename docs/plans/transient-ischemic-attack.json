@@ -390,21 +390,17 @@
         {
           "item": "Aspirin (loading dose)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Immediate antiplatelet therapy for acute TIA",
           "dosing": {
             "doseOptions": [
               {
-                "text": "81 mg daily",
-                "orderSentence": "Aspirin 81 mg PO daily"
-              },
-              {
-                "text": "325 mg daily",
-                "orderSentence": "Aspirin 325 mg PO daily"
+                "text": "325 mg",
+                "orderSentence": "Aspirin (loading dose) 325 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "325 mg PO loading dose immediately upon TIA diagnosis (give in ED). Do NOT delay antiplatelet therapy",
-            "orderSentence": "Aspirin 81 mg PO daily"
+            "orderSentence": "Aspirin (loading dose) 325 mg PO"
           },
           "contraindications": "Active GI bleed; true aspirin allergy; thrombocytopenia <50K",
           "monitoring": "GI symptoms; bleeding",
@@ -416,21 +412,17 @@
         {
           "item": "Clopidogrel (loading dose for DAPT)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Dual antiplatelet loading for high-risk TIA (ABCD2 ≥4)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "75 mg daily",
-                "orderSentence": "Clopidogrel 75 mg PO daily"
-              },
-              {
-                "text": "300 mg loading dose",
-                "orderSentence": "Clopidogrel 300 mg PO loading dose"
+                "text": "300 mg",
+                "orderSentence": "Clopidogrel (loading dose for DAPT) 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "300 mg PO loading dose (give with aspirin for DAPT). DAPT is standard for high-risk TIA (ABCD2 ≥4) or minor stroke per CHANCE and POINT trials",
-            "orderSentence": "Clopidogrel 75 mg PO daily"
+            "orderSentence": "Clopidogrel (loading dose for DAPT) 300 mg PO"
           },
           "contraindications": "Active bleeding; severe hepatic impairment",
           "monitoring": "Bleeding; CBC",
@@ -441,8 +433,8 @@
         },
         {
           "item": "Dual antiplatelet therapy (DAPT maintenance): Aspirin + Clopidogrel",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Maintenance DAPT for secondary stroke prevention after TIA",
           "dosing": {
             "doseOptions": [
               {
@@ -464,7 +456,7 @@
         {
           "item": "Dual antiplatelet therapy (alternative): Aspirin + Ticagrelor",
           "route": "PO",
-          "indication": "-",
+          "indication": "Alternative DAPT for minor stroke (NIHSS ≤5) or high-risk TIA",
           "dosing": {
             "doseOptions": [
               {
@@ -486,7 +478,7 @@
         {
           "item": "High-intensity statin",
           "route": "PO",
-          "indication": "-",
+          "indication": "LDL reduction for secondary stroke prevention (target <70 mg/dL)",
           "dosing": {
             "doseOptions": [
               {
@@ -508,7 +500,7 @@
         {
           "item": "Blood pressure management (acute)",
           "route": "-",
-          "indication": "-",
+          "indication": "Acute BP control for severe hypertension in TIA setting",
           "dosing": {
             "doseOptions": [
               {
@@ -532,7 +524,7 @@
         {
           "item": "Antihypertensive therapy (chronic)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Chronic BP control for secondary stroke prevention (target <130/80)",
           "dosing": {
             "doseOptions": [
               {
@@ -554,7 +546,7 @@
         {
           "item": "Anticoagulation (if atrial fibrillation detected)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Stroke prevention in TIA with newly detected atrial fibrillation",
           "dosing": {
             "doseOptions": [
               {
@@ -575,8 +567,8 @@
         },
         {
           "item": "Carotid endarterectomy (CEA)",
-          "route": "Surgery",
-          "indication": "-",
+          "route": "-",
+          "indication": "Revascularization for symptomatic carotid stenosis ≥50% (NASCET)",
           "dosing": {
             "doseOptions": [
               {
@@ -597,8 +589,8 @@
         },
         {
           "item": "Carotid artery stenting (CAS)",
-          "route": "Endovascular",
-          "indication": "-",
+          "route": "-",
+          "indication": "Alternative revascularization for carotid stenosis if high surgical risk",
           "dosing": {
             "doseOptions": [
               {
@@ -619,8 +611,8 @@
         },
         {
           "item": "PFO closure",
-          "route": "Procedure",
-          "indication": "-",
+          "route": "-",
+          "indication": "Cryptogenic TIA/stroke with PFO and right-to-left shunt (age 18-60)",
           "dosing": {
             "doseOptions": [
               {
@@ -642,17 +634,17 @@
         {
           "item": "Ezetimibe",
           "route": "PO",
-          "indication": "-",
+          "indication": "Add-on lipid lowering if LDL not at goal on max statin",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg daily",
-                "orderSentence": "Ezetimibe 10 mg PO daily"
+                "text": "10 mg",
+                "orderSentence": "Ezetimibe 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "10 mg PO daily; add if LDL not at goal on max statin",
-            "orderSentence": "Ezetimibe 10 mg PO daily"
+            "orderSentence": "Ezetimibe 10 mg PO"
           },
           "contraindications": "LFTs; lipid panel",
           "monitoring": "-",
@@ -664,7 +656,7 @@
         {
           "item": "PCSK9 inhibitor (evolocumab or alirocumab)",
           "route": "SC",
-          "indication": "-",
+          "indication": "Refractory hyperlipidemia despite max statin and ezetimibe",
           "dosing": {
             "doseOptions": [
               {
@@ -686,7 +678,7 @@
         {
           "item": "Diabetes management (optimize)",
           "route": "PO/SC",
-          "indication": "-",
+          "indication": "Glycemic optimization for cardiovascular risk reduction post-TIA",
           "dosing": {
             "doseOptions": [
               {
@@ -709,7 +701,7 @@
       "Medications for Specific Etiologies": [
         {
           "item": "Anticoagulation (warfarin)",
-          "route": "-",
+          "route": "PO",
           "indication": "Mechanical heart valve + TIA",
           "dosing": {
             "doseOptions": [
@@ -731,7 +723,7 @@
         },
         {
           "item": "DAPT long-term (aspirin + clopidogrel)",
-          "route": "-",
+          "route": "PO",
           "indication": "Intracranial stenosis 70-99% (SAMMPRIS trial: medical > stenting)",
           "dosing": {
             "doseOptions": [
@@ -753,7 +745,7 @@
         },
         {
           "item": "Anticoagulation",
-          "route": "-",
+          "route": "PO",
           "indication": "Cervical artery dissection",
           "dosing": {
             "doseOptions": [

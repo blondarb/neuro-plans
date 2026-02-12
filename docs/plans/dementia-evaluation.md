@@ -141,38 +141,38 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Vitamin B12 replacement | IM | - | 1000 mcg :: IM :: daily :: 1000 mcg IM daily × 7 days, then weekly × 4, then monthly; OR oral 1000-2000 mcg daily | None | B12 levels | URGENT | STAT | ROUTINE | - |
-| Levothyroxine (hypothyroidism) | - | - | 25-50 mcg :: PO :: daily :: Start 25-50 mcg daily; titrate per TSH | CAD (start low) | TSH q6-8 weeks | - | ROUTINE | ROUTINE | - |
-| Thiamine (Wernicke-Korsakoff) (CPT 96374) | IV | - | 500 mg :: IV :: TID :: 500 mg IV TID × 3 days, then 250 mg IV daily × 5 days, then 100 mg PO daily | None | Clinical response | STAT | STAT | ROUTINE | STAT |
-| NPH treatment (large volume LP) | - | - | 30-50 mL :: - :: - :: Diagnostic LP removing 30-50 mL CSF; assess gait before/after | Per LP | Gait improvement suggests shunt candidacy | - | ROUTINE | - | - |
-| VP shunt (NPH) | - | - | N/A :: - :: once :: Neurosurgical placement | Coagulopathy, infection | Shunt complications | - | - | EXT | - |
-| Treat depression (pseudodementia) | PO | - | 25-50 mg :: PO :: - :: SSRI (sertraline 25-50 mg, escitalopram 5-10 mg) | Per agent | Mood, cognition | - | ROUTINE | ROUTINE | - |
-| Discontinue offending medications | - | - | N/A :: - :: per protocol :: Stop anticholinergics, sedatives, opioids | N/A | Cognitive reassessment | URGENT | URGENT | ROUTINE | URGENT |
+| Vitamin B12 replacement | IM | B12 deficiency with cognitive impairment; reversible dementia | 1000 mcg :: IM :: daily :: 1000 mcg IM daily × 7 days, then weekly × 4, then monthly; OR oral 1000-2000 mcg daily | None | B12 levels | URGENT | STAT | ROUTINE | - |
+| Levothyroxine (hypothyroidism) | PO | Hypothyroidism causing cognitive impairment | 25-50 mcg :: PO :: daily :: Start 25-50 mcg daily; titrate per TSH | CAD (start low) | TSH q6-8 weeks | - | ROUTINE | ROUTINE | - |
+| Thiamine (Wernicke-Korsakoff) (CPT 96374) | IV | Wernicke-Korsakoff syndrome; alcohol-related cognitive decline | 500 mg :: IV :: TID :: 500 mg IV TID × 3 days, then 250 mg IV daily × 5 days, then 100 mg PO daily | None | Clinical response | STAT | STAT | ROUTINE | STAT |
+| NPH treatment (large volume LP) | - | Suspected normal pressure hydrocephalus; diagnostic trial | 30-50 mL :: - :: - :: Diagnostic LP removing 30-50 mL CSF; assess gait before/after | Per LP | Gait improvement suggests shunt candidacy | - | ROUTINE | - | - |
+| VP shunt (NPH) | - | Confirmed NPH responsive to large-volume LP | N/A :: - :: once :: Neurosurgical placement | Coagulopathy, infection | Shunt complications | - | - | EXT | - |
+| Treat depression (pseudodementia) | PO | Pseudodementia; depression-related cognitive impairment | 25-50 mg :: PO :: - :: SSRI (sertraline 25-50 mg, escitalopram 5-10 mg) | Per agent | Mood, cognition | - | ROUTINE | ROUTINE | - |
+| Discontinue offending medications | - | Medication-induced cognitive impairment (anticholinergics, sedatives) | N/A :: - :: per protocol :: Stop anticholinergics, sedatives, opioids | N/A | Cognitive reassessment | URGENT | URGENT | ROUTINE | URGENT |
 
 ### 3B. Alzheimer's Disease - Cholinesterase Inhibitors
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Donepezil (Aricept) | - | - | 5 mg :: PO :: QHS :: Start 5 mg QHS × 4-6 weeks, then increase to 10 mg QHS; 23 mg available for moderate-severe | Bradycardia, sick sinus, GI bleeding | Bradycardia, GI upset, nightmares | - | ROUTINE | ROUTINE | - |
-| Rivastigmine patch (Exelon) | Transdermal | - | 4.6 mg :: PO :: monthly :: Start 4.6 mg/24h patch; increase monthly to 9.5-13.3 mg/24h | Same; skin reactions | Skin irritation, GI, bradycardia | - | ROUTINE | ROUTINE | - |
-| Rivastigmine oral | PO | - | 1.5 mg :: PO :: BID :: Start 1.5 mg BID with food; titrate to 6 mg BID | Same | GI side effects more common than patch | - | ROUTINE | ROUTINE | - |
-| Galantamine (Razadyne) | PO | - | 4 mg :: PO :: BID :: Start 4 mg BID with food × 4 weeks; titrate to 8-12 mg BID; ER: 8 mg daily to 24 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
+| Donepezil (Aricept) | PO | Mild-to-moderate Alzheimer disease; symptomatic treatment | 5 mg :: PO :: QHS :: Start 5 mg QHS × 4-6 weeks, then increase to 10 mg QHS; 23 mg available for moderate-severe | Bradycardia, sick sinus, GI bleeding | Bradycardia, GI upset, nightmares | - | ROUTINE | ROUTINE | - |
+| Rivastigmine patch (Exelon) | Transdermal | Mild-to-moderate AD; better GI tolerability than oral | 4.6 mg :: PO :: monthly :: Start 4.6 mg/24h patch; increase monthly to 9.5-13.3 mg/24h | Same; skin reactions | Skin irritation, GI, bradycardia | - | ROUTINE | ROUTINE | - |
+| Rivastigmine oral | PO | Mild-to-moderate AD; cholinesterase inhibitor | 1.5 mg :: PO :: BID :: Start 1.5 mg BID with food; titrate to 6 mg BID | Same | GI side effects more common than patch | - | ROUTINE | ROUTINE | - |
+| Galantamine (Razadyne) | PO | Mild-to-moderate AD; cholinesterase inhibitor | 4 mg :: PO :: BID :: Start 4 mg BID with food × 4 weeks; titrate to 8-12 mg BID; ER: 8 mg daily to 24 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Alzheimer's Disease - NMDA Antagonist
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Memantine (Namenda) | PO | - | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID | Severe renal impairment | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
-| Memantine XR (Namenda XR) | PO | - | 7 mg :: PO :: daily :: Start 7 mg daily; increase weekly to 28 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
-| Donepezil/Memantine XR (Namzaric) | - | - | 10 mg :: - :: daily :: For patients on both; 7/10 mg to 28/10 mg daily | Per components | Per components | - | - | ROUTINE | - |
+| Memantine (Namenda) | PO | Moderate-to-severe AD; add to cholinesterase inhibitor | 5 mg :: PO :: daily :: Start 5 mg daily; increase by 5 mg/week to 10 mg BID | Severe renal impairment | Confusion, dizziness, constipation | - | ROUTINE | ROUTINE | - |
+| Memantine XR (Namenda XR) | PO | Moderate-to-severe AD; once-daily extended release | 7 mg :: PO :: daily :: Start 7 mg daily; increase weekly to 28 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
+| Donepezil/Memantine XR (Namzaric) | PO | Moderate-to-severe AD; combination therapy | 10 mg :: - :: daily :: For patients on both; 7/10 mg to 28/10 mg daily | Per components | Per components | - | - | ROUTINE | - |
 
 ### 3D. Alzheimer's Disease - Disease-Modifying Therapy (Amyloid-Targeted)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Lecanemab (Leqembi) (CPT 96365) | IV | - | 10 mg/kg :: IV :: - :: 10 mg/kg IV q2 weeks; confirm amyloid-positive before starting | - | Anticoagulation (relative), ARIA risk factors | MRI at baseline, week 6, 12; ARIA monitoring | - | - | ROUTINE | - |
-| Donanemab (Kisunla) (CPT 96365) | IV | - | 700 mg :: IV :: - :: 700 mg IV q4 weeks × 3, then 1400 mg q4 weeks until amyloid clearance; discontinue when cleared | - | Same | Same; discontinue at clearance | - | - | ROUTINE | - |
-| Aducanumab (Aduhelm) (CPT 96365) | IV | - | 1-10 mg/kg :: IV :: - :: Titration from 1-10 mg/kg IV q4 weeks; limited use | - | Same | MRI monitoring for ARIA | - | - | EXT | - |
+| Lecanemab (Leqembi) (CPT 96365) | IV | Early symptomatic AD; amyloid-positive; disease modification | 10 mg/kg :: IV :: - :: 10 mg/kg IV q2 weeks; confirm amyloid-positive before starting | - | Anticoagulation (relative), ARIA risk factors | MRI at baseline, week 6, 12; ARIA monitoring | - | - | ROUTINE | - |
+| Donanemab (Kisunla) (CPT 96365) | IV | Early symptomatic AD; amyloid-positive; disease modification | 700 mg :: IV :: - :: 700 mg IV q4 weeks × 3, then 1400 mg q4 weeks until amyloid clearance; discontinue when cleared | - | Same | Same; discontinue at clearance | - | - | ROUTINE | - |
+| Aducanumab (Aduhelm) (CPT 96365) | IV | Early AD; amyloid-positive (limited clinical use) | 1-10 mg/kg :: IV :: - :: Titration from 1-10 mg/kg IV q4 weeks; limited use | - | Same | MRI monitoring for ARIA | - | - | EXT | - |
 
 **ARIA (Amyloid-Related Imaging Abnormalities) Management:**
 - ARIA-E (edema): Usually asymptomatic; hold treatment, repeat MRI in 4-8 weeks
@@ -183,27 +183,27 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Non-pharmacologic interventions | - | - | N/A :: - :: per protocol :: Music therapy, validation therapy, redirection, environmental modification | None | First-line for all BPSD | STAT | STAT | ROUTINE | - |
-| Sertraline (depression, anxiety) | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; target 50-100 mg | Bleeding risk, QT prolongation | GI bleeding, hyponatremia | - | ROUTINE | ROUTINE | - |
-| Citalopram (agitation) | PO | - | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg (QT risk at higher doses) | QT prolongation | QTc, hyponatremia | - | ROUTINE | ROUTINE | - |
-| Trazodone (sleep, agitation) | PO | - | 25-100 mg :: PO :: QHS :: 25-100 mg QHS | Orthostasis | Sedation, falls | - | ROUTINE | ROUTINE | - |
-| Mirtazapine (sleep, appetite, mood) | PO | - | 7.5-15 mg :: PO :: QHS :: 7.5-15 mg QHS | None significant | Weight gain, sedation | - | ROUTINE | ROUTINE | - |
-| Quetiapine (psychosis, agitation) | - | - | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; lowest effective dose | QT prolongation, metabolic syndrome | Black box: increased mortality in dementia | - | ROUTINE | ROUTINE | - |
-| Risperidone (psychosis, aggression) | - | - | 0.25-1 mg :: - :: BID :: 0.25-1 mg BID; lowest effective dose | Same; EPS | Same; EPS higher than quetiapine | - | ROUTINE | ROUTINE | - |
-| Pimavanserin (DLB psychosis) | PO | - | 34 mg :: PO :: daily :: 34 mg daily | QT prolongation | QTc | - | - | ROUTINE | - |
-| Dextromethorphan/Quinidine (Nuedexta) | - | - | 1 caps :: - :: BID :: 1 capsule daily × 7 days, then BID; for pseudobulbar affect | QT prolongation, CYP2D6 interactions | QTc | - | ROUTINE | ROUTINE | - |
-| Carbamazepine (aggression) | PO | - | 100-400 mg :: PO :: BID :: 100-400 mg BID | Aplastic anemia risk, drug interactions | CBC, LFTs, drug levels | - | EXT | EXT | - |
+| Non-pharmacologic interventions | - | First-line for all BPSD (agitation, aggression, psychosis) | N/A :: - :: per protocol :: Music therapy, validation therapy, redirection, environmental modification | None | First-line for all BPSD | STAT | STAT | ROUTINE | - |
+| Sertraline (depression, anxiety) | PO | Dementia-related depression and anxiety | 25 mg :: PO :: daily :: Start 25 mg daily; target 50-100 mg | Bleeding risk, QT prolongation | GI bleeding, hyponatremia | - | ROUTINE | ROUTINE | - |
+| Citalopram (agitation) | PO | Dementia-related agitation (CitAD trial evidence) | 10 mg :: PO :: daily :: Start 10 mg daily; max 20 mg (QT risk at higher doses) | QT prolongation | QTc, hyponatremia | - | ROUTINE | ROUTINE | - |
+| Trazodone (sleep, agitation) | PO | Dementia-related sleep disturbance and agitation | 25-100 mg :: PO :: QHS :: 25-100 mg QHS | Orthostasis | Sedation, falls | - | ROUTINE | ROUTINE | - |
+| Mirtazapine (sleep, appetite, mood) | PO | Dementia-related insomnia, poor appetite, depression | 7.5-15 mg :: PO :: QHS :: 7.5-15 mg QHS | None significant | Weight gain, sedation | - | ROUTINE | ROUTINE | - |
+| Quetiapine (psychosis, agitation) | PO | Dementia-related psychosis/agitation (lowest effective dose) | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; lowest effective dose | QT prolongation, metabolic syndrome | Black box: increased mortality in dementia | - | ROUTINE | ROUTINE | - |
+| Risperidone (psychosis, aggression) | PO | Dementia-related psychosis/aggression (short-term use) | 0.25-1 mg :: - :: BID :: 0.25-1 mg BID; lowest effective dose | Same; EPS | Same; EPS higher than quetiapine | - | ROUTINE | ROUTINE | - |
+| Pimavanserin (DLB psychosis) | PO | DLB-associated psychosis; selective 5-HT2A inverse agonist | 34 mg :: PO :: daily :: 34 mg daily | QT prolongation | QTc | - | - | ROUTINE | - |
+| Dextromethorphan/Quinidine (Nuedexta) | PO | Pseudobulbar affect in dementia | 1 caps :: - :: BID :: 1 capsule daily × 7 days, then BID; for pseudobulbar affect | QT prolongation, CYP2D6 interactions | QTc | - | ROUTINE | ROUTINE | - |
+| Carbamazepine (aggression) | PO | Refractory dementia-related aggression | 100-400 mg :: PO :: BID :: 100-400 mg BID | Aplastic anemia risk, drug interactions | CBC, LFTs, drug levels | - | EXT | EXT | - |
 
 ### 3F. Other Dementia-Specific Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Aspirin (vascular dementia) | PO | - | 81 mg :: PO :: daily :: 81 mg daily; secondary prevention | Bleeding | Bleeding | - | ROUTINE | ROUTINE | - |
-| Statin (vascular dementia) | - | - | N/A :: - :: per protocol :: Per cardiovascular guidelines | Hepatic disease | LFTs, myopathy | - | ROUTINE | ROUTINE | - |
-| BP control (vascular dementia) | - | - | N/A :: - :: per protocol :: Target <130/80 per guidelines | Per agent | BP | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa (DLB, PDD) | - | - | N/A :: - :: TID :: Start low 25/100 TID; titrate cautiously | May worsen psychosis | Hallucinations, dyskinesia | - | ROUTINE | ROUTINE | - |
-| Avoid anticholinergics (DLB) | - | - | N/A :: - :: N/A :: Contraindicated in DLB due to severe sensitivity | N/A | N/A | STAT | STAT | ROUTINE | - |
-| Avoid antipsychotics (DLB) | - | - | N/A :: - :: N/A :: Can cause severe parkinsonism, NMS-like reaction; if needed, quetiapine safest | Relative contraindication | Severe reactions | STAT | STAT | ROUTINE | - |
+| Aspirin (vascular dementia) | PO | Vascular dementia; secondary stroke prevention | 81 mg :: PO :: daily :: 81 mg daily; secondary prevention | Bleeding | Bleeding | - | ROUTINE | ROUTINE | - |
+| Statin (vascular dementia) | PO | Vascular dementia; cardiovascular risk reduction | N/A :: - :: per protocol :: Per cardiovascular guidelines | Hepatic disease | LFTs, myopathy | - | ROUTINE | ROUTINE | - |
+| BP control (vascular dementia) | - | Vascular dementia; target <130/80 | N/A :: - :: per protocol :: Target <130/80 per guidelines | Per agent | BP | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa (DLB, PDD) | PO | DLB or PDD with parkinsonism; cautious titration | N/A :: - :: TID :: Start low 25/100 TID; titrate cautiously | May worsen psychosis | Hallucinations, dyskinesia | - | ROUTINE | ROUTINE | - |
+| Avoid anticholinergics (DLB) | - | DLB; severe anticholinergic sensitivity | N/A :: - :: N/A :: Contraindicated in DLB due to severe sensitivity | N/A | N/A | STAT | STAT | ROUTINE | - |
+| Avoid antipsychotics (DLB) | - | DLB; severe neuroleptic sensitivity (NMS-like risk) | N/A :: - :: N/A :: Can cause severe parkinsonism, NMS-like reaction; if needed, quetiapine safest | Relative contraindication | Severe reactions | STAT | STAT | ROUTINE | - |
 
 ---
 

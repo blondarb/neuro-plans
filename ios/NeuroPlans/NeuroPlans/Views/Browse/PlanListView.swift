@@ -26,7 +26,8 @@ struct PlanListView: View {
             .listRowBackground(Color.clear)
         }
         .listStyle(.plain)
-        .background(LinearGradient.appBackground.ignoresSafeArea())
+        .scrollContentBackground(.hidden)
+        .background { AdaptiveBackground() }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.large)
         .searchable(text: $searchText, prompt: "Filter plans...")

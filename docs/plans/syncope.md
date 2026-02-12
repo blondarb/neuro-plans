@@ -119,55 +119,55 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| IV access | IV | - | N/A :: IV :: per protocol :: Establish if unstable | None | Access | STAT | STAT | - | STAT |
-| IV fluid resuscitation | IV | - | 500-1000 mL :: - :: once :: NS 500-1000 mL bolus if hypovolemic/dehydrated | Heart failure | Volume status | STAT | ROUTINE | - | STAT |
-| Trendelenburg position | - | - | N/A :: - :: continuous :: Legs elevated if hypotensive | None | BP | STAT | ROUTINE | - | STAT |
-| Telemetry monitoring | - | - | N/A :: - :: continuous :: Continuous if high-risk | None | Arrhythmia | STAT | ROUTINE | - | ROUTINE |
-| Correct reversible causes | - | - | N/A :: - :: per protocol :: Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition | STAT | STAT | - | STAT |
+| IV access | IV | Vascular access for hemodynamically unstable syncope patients | N/A :: IV :: per protocol :: Establish if unstable | None | Access | STAT | STAT | - | STAT |
+| IV fluid resuscitation | IV | Volume repletion for syncope with hypovolemia or dehydration | 500-1000 mL :: - :: once :: NS 500-1000 mL bolus if hypovolemic/dehydrated | Heart failure | Volume status | STAT | ROUTINE | - | STAT |
+| Trendelenburg position | - | Immediate blood pressure support in hypotensive syncope | N/A :: - :: continuous :: Legs elevated if hypotensive | None | BP | STAT | ROUTINE | - | STAT |
+| Telemetry monitoring | - | Continuous cardiac rhythm monitoring for high-risk syncope | N/A :: - :: continuous :: Continuous if high-risk | None | Arrhythmia | STAT | ROUTINE | - | ROUTINE |
+| Correct reversible causes | - | Treat underlying reversible etiologies causing syncope | N/A :: - :: per protocol :: Treat hemorrhage, dehydration, arrhythmia, MI | Per condition | Per condition | STAT | STAT | - | STAT |
 
 ### 3B. Vasovagal Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Education and reassurance | - | - | N/A :: - :: once :: Benign prognosis; triggers; warning signs | None | None | ROUTINE | ROUTINE | ROUTINE | - |
-| Trigger avoidance | - | - | N/A :: - :: daily :: Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence | - | ROUTINE | ROUTINE | - |
-| Counter-pressure maneuvers | - | - | N/A :: - :: per session :: Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness | - | ROUTINE | ROUTINE | - |
-| Increased fluid/salt intake | PO | - | 6-9 g :: PO :: - :: 2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF) | HTN, heart failure | BP | - | ROUTINE | ROUTINE | - |
-| Compression stockings | - | - | N/A :: - :: continuous :: Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance | - | - | ROUTINE | - |
-| Tilt training | - | - | N/A :: - :: daily :: Progressive standing against wall; controversial efficacy | None | Tolerance | - | - | EXT | - |
-| Fludrocortisone | PO | - | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily (refractory cases) | HTN, HF | K+, BP, edema | - | - | ROUTINE | - |
-| Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID (refractory cases) | Supine HTN, urinary retention | Supine HTN | - | - | ROUTINE | - |
+| Education and reassurance | - | Patient counseling on benign vasovagal syncope prognosis | N/A :: - :: once :: Benign prognosis; triggers; warning signs | None | None | ROUTINE | ROUTINE | ROUTINE | - |
+| Trigger avoidance | - | Prevent recurrent vasovagal syncope by avoiding known triggers | N/A :: - :: daily :: Identify and avoid (prolonged standing, heat, dehydration) | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Counter-pressure maneuvers | - | Abort vasovagal episode during prodromal symptoms | N/A :: - :: per session :: Leg crossing, hand grip, arm tensing when prodrome felt | None | Effectiveness | - | ROUTINE | ROUTINE | - |
+| Increased fluid/salt intake | PO | Volume expansion to prevent recurrent vasovagal syncope | 6-9 g :: PO :: - :: 2-3 L fluid/day; 6-9 g salt/day (if no HTN/HF) | HTN, heart failure | BP | - | ROUTINE | ROUTINE | - |
+| Compression stockings | - | Reduce venous pooling in recurrent vasovagal syncope | N/A :: - :: continuous :: Waist-high, 30-40 mmHg | Peripheral vascular disease | Compliance | - | - | ROUTINE | - |
+| Tilt training | - | Desensitization for recurrent vasovagal syncope refractory to conservative measures | N/A :: - :: daily :: Progressive standing against wall; controversial efficacy | None | Tolerance | - | - | EXT | - |
+| Fludrocortisone | PO | Refractory vasovagal syncope with volume expansion | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily (refractory cases) | HTN, HF | K+, BP, edema | - | - | ROUTINE | - |
+| Midodrine | PO | Refractory vasovagal syncope with alpha-agonist vasopressor support | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID (refractory cases) | Supine HTN, urinary retention | Supine HTN | - | - | ROUTINE | - |
 
 ### 3C. Orthostatic Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Identify/discontinue offending meds | - | - | N/A :: - :: per protocol :: Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP | STAT | STAT | ROUTINE | STAT |
-| Volume repletion | IV | - | N/A :: IV :: per protocol :: IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status | STAT | ROUTINE | ROUTINE | STAT |
-| Salt supplementation | PO | - | 6-10 g/day :: PO :: - :: 6-10 g/day if no HTN/HF | HTN, HF | BP | - | ROUTINE | ROUTINE | - |
-| Compression garments | - | - | N/A :: - :: continuous :: Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance | - | - | ROUTINE | - |
-| Elevate head of bed | - | - | N/A :: - :: continuous :: 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance | - | ROUTINE | ROUTINE | - |
-| Midodrine | PO | - | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID; last dose before 6 PM | Supine HTN, urinary retention | Supine BP | - | ROUTINE | ROUTINE | - |
-| Fludrocortisone | PO | - | 0.1-0.3 mg :: PO :: daily :: 0.1-0.3 mg daily | HTN, HF, hypokalemia | K+, BP | - | ROUTINE | ROUTINE | - |
-| Droxidopa (Northera) | - | - | 100-600 mg :: - :: TID :: 100-600 mg TID; for neurogenic orthostatic hypotension | Supine HTN | Supine BP | - | - | ROUTINE | - |
-| Pyridostigmine | PO | - | 30-60 mg :: PO :: TID :: 30-60 mg TID; augments ganglionic transmission | Asthma, GI obstruction | Cholinergic effects | - | - | EXT | - |
+| Identify/discontinue offending meds | - | Medication-induced orthostatic hypotension causing syncope | N/A :: - :: per protocol :: Review diuretics, vasodilators, antihypertensives | Clinical judgment | BP | STAT | STAT | ROUTINE | STAT |
+| Volume repletion | IV | Restore intravascular volume in orthostatic syncope | N/A :: IV :: per protocol :: IV fluids acutely; oral fluids long-term (2-3 L/day) | Heart failure | Volume status | STAT | ROUTINE | ROUTINE | STAT |
+| Salt supplementation | PO | Volume expansion for orthostatic hypotension management | 6-10 g/day :: PO :: - :: 6-10 g/day if no HTN/HF | HTN, HF | BP | - | ROUTINE | ROUTINE | - |
+| Compression garments | - | Reduce venous pooling in orthostatic hypotension | N/A :: - :: continuous :: Waist-high stockings 30-40 mmHg; abdominal binder | PVD | Compliance | - | - | ROUTINE | - |
+| Elevate head of bed | - | Reduce nocturnal diuresis in orthostatic hypotension | N/A :: - :: continuous :: 10-20 degrees at night (reduces nocturnal diuresis) | None | Tolerance | - | ROUTINE | ROUTINE | - |
+| Midodrine | PO | Alpha-agonist vasopressor for orthostatic hypotension | 2.5-10 mg :: PO :: TID :: 2.5-10 mg TID; last dose before 6 PM | Supine HTN, urinary retention | Supine BP | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone | PO | Mineralocorticoid volume expansion for orthostatic hypotension | 0.1-0.3 mg :: PO :: daily :: 0.1-0.3 mg daily | HTN, HF, hypokalemia | K+, BP | - | ROUTINE | ROUTINE | - |
+| Droxidopa (Northera) | PO | Neurogenic orthostatic hypotension with sympathetic failure | 100-600 mg :: PO :: TID :: 100-600 mg TID; for neurogenic orthostatic hypotension | Supine HTN | Supine BP | - | - | ROUTINE | - |
+| Pyridostigmine | PO | Augment ganglionic transmission in mild orthostatic hypotension | 30-60 mg :: PO :: TID :: 30-60 mg TID; augments ganglionic transmission | Asthma, GI obstruction | Cholinergic effects | - | - | EXT | - |
 
 ### 3D. Carotid Sinus Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Avoid tight collars, neck pressure | - | - | N/A :: - :: continuous :: Patient education | - | None | Recurrence | - | ROUTINE | ROUTINE | - |
-| Dual-chamber pacemaker | - | - | N/A :: - :: continuous :: If cardioinhibitory type (pause >3 sec) | - | None | Device checks | - | ROUTINE | ROUTINE | - |
+| Avoid tight collars, neck pressure | - | Prevent carotid sinus stimulation triggering syncope | N/A :: - :: continuous :: Patient education | - | None | Recurrence | - | ROUTINE | ROUTINE | - |
+| Dual-chamber pacemaker | - | Cardioinhibitory carotid sinus syncope with pause >3 seconds | N/A :: - :: continuous :: If cardioinhibitory type (pause >3 sec) | - | None | Device checks | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Cardiac Syncope Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Treat underlying arrhythmia | - | - | N/A :: - :: per protocol :: Per arrhythmia type | Per treatment | ECG, telemetry | STAT | STAT | ROUTINE | STAT |
-| Pacemaker | - | - | N/A :: - :: continuous :: Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks | - | ROUTINE | ROUTINE | - |
-| ICD (implantable cardioverter-defibrillator) | - | - | N/A :: - :: once :: Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks | - | ROUTINE | ROUTINE | - |
-| Catheter ablation | - | - | N/A :: - :: once :: Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence | - | ROUTINE | ROUTINE | - |
-| Treat structural heart disease | - | - | N/A :: - :: per protocol :: Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition | STAT | ROUTINE | ROUTINE | STAT |
+| Treat underlying arrhythmia | - | Cardiac syncope due to identified arrhythmia | N/A :: - :: per protocol :: Per arrhythmia type | Per treatment | ECG, telemetry | STAT | STAT | ROUTINE | STAT |
+| Pacemaker | - | Bradycardia-induced syncope from sick sinus or AV block | N/A :: - :: continuous :: Sick sinus syndrome, high-grade AV block, bradycardia-induced syncope | None | Device checks | - | ROUTINE | ROUTINE | - |
+| ICD (implantable cardioverter-defibrillator) | - | Ventricular arrhythmia or high-risk cardiomyopathy with syncope | N/A :: - :: once :: Ventricular arrhythmias; high-risk cardiomyopathy | Terminal illness | Device checks | - | ROUTINE | ROUTINE | - |
+| Catheter ablation | - | Syncope from SVT or VT amenable to ablation | N/A :: - :: once :: Arrhythmia amenable to ablation (SVT, VT) | Extensive comorbidity | Recurrence | - | ROUTINE | ROUTINE | - |
+| Treat structural heart disease | - | Syncope from aortic stenosis, ischemia, or structural pathology | N/A :: - :: per protocol :: Aortic valve replacement for AS; revascularization for ischemia | Per condition | Per condition | STAT | ROUTINE | ROUTINE | STAT |
 
 ---
 

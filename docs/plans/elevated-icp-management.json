@@ -413,7 +413,7 @@
         {
           "item": "**Airway management / Intubation**",
           "route": "IV",
-          "indication": "-",
+          "indication": "GCS ≤8; airway protection; impending herniation",
           "dosing": {
             "doseOptions": [
               {
@@ -435,7 +435,7 @@
         {
           "item": "**Head of bed elevation**",
           "route": "-",
-          "indication": "-",
+          "indication": "All patients with suspected/confirmed elevated ICP",
           "dosing": {
             "doseOptions": [
               {
@@ -457,7 +457,7 @@
         {
           "item": "**Hyperventilation (temporary)**",
           "route": "-",
-          "indication": "-",
+          "indication": "Acute herniation signs (bridging therapy only)",
           "dosing": {
             "doseOptions": [
               {
@@ -479,7 +479,7 @@
         {
           "item": "**Osmotherapy — Mannitol**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Elevated ICP >22 mmHg; acute herniation",
           "dosing": {
             "doseOptions": [
               {
@@ -501,7 +501,7 @@
         {
           "item": "**Osmotherapy — Hypertonic Saline**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Elevated ICP >22 mmHg; cerebral edema",
           "dosing": {
             "doseOptions": [
               {
@@ -522,8 +522,8 @@
         },
         {
           "item": "**Sedation and analgesia**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Agitation; pain; ICP spikes from coughing/posturing",
           "dosing": {
             "doseOptions": [
               {
@@ -545,7 +545,7 @@
         {
           "item": "**Neuromuscular blockade**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory ICP spikes; ventilator dyssynchrony; posturing",
           "dosing": {
             "doseOptions": [
               {
@@ -567,7 +567,7 @@
         {
           "item": "**Seizure prophylaxis / treatment**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Severe TBI prophylaxis; active seizure; status epilepticus",
           "dosing": {
             "doseOptions": [
               {
@@ -588,8 +588,8 @@
         },
         {
           "item": "**Temperature control**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO/IV",
+          "indication": "Fever; target normothermia 36-37°C",
           "dosing": {
             "doseOptions": [
               {
@@ -611,7 +611,7 @@
         {
           "item": "**Blood pressure / CPP management**",
           "route": "IV",
-          "indication": "-",
+          "indication": "CPP <60 mmHg; hypotension; ICP-directed CPP optimization",
           "dosing": {
             "doseOptions": [
               {
@@ -635,7 +635,7 @@
         {
           "item": "**ICP monitor / EVD placement**",
           "route": "-",
-          "indication": "-",
+          "indication": "GCS ≤8 + abnormal CT; GCS ≤8 + normal CT + ≥2 risk factors",
           "dosing": {
             "doseOptions": [
               {
@@ -657,7 +657,7 @@
         {
           "item": "**CSF drainage (via EVD)**",
           "route": "-",
-          "indication": "-",
+          "indication": "ICP >22 mmHg with EVD in place; hydrocephalus",
           "dosing": {
             "doseOptions": [
               {
@@ -678,8 +678,8 @@
         },
         {
           "item": "**Repeat osmotherapy dosing**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Sustained ICP >22 mmHg despite initial osmotherapy",
           "dosing": {
             "doseOptions": [
               {
@@ -701,7 +701,7 @@
         {
           "item": "**Decompressive craniectomy**",
           "route": "-",
-          "indication": "-",
+          "indication": "Refractory ICP despite maximal medical therapy; malignant MCA stroke",
           "dosing": {
             "doseOptions": [
               {
@@ -723,25 +723,17 @@
         {
           "item": "**Dexamethasone (tumor/vasogenic edema)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Vasogenic edema from tumor or abscess ONLY; NOT for TBI/stroke",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h",
-                "orderSentence": "Dexamethasone 4 mg IV q6h"
-              },
-              {
-                "text": "10 mg once then 4 mg q6h",
-                "orderSentence": "Dexamethasone 10 mg IV once then 4 mg q6h"
-              },
-              {
-                "text": "16 mg daily",
-                "orderSentence": "Dexamethasone 16 mg IV daily"
+                "text": "10 mg",
+                "orderSentence": "**Dexamethasone (tumor/vasogenic edema)** 10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "**ONLY for vasogenic edema from tumor or abscess**; **NOT for TBI, stroke, or cytotoxic edema** (steroids worsen outcomes in TBI — CRASH trial); **Dose:** 10 mg IV load → 4 mg IV q6h; **Duration:** Until definitive tumor treatment; taper over 1-2 weeks after radiation/surgery; GI prophylaxis with PPI",
-            "orderSentence": "Dexamethasone 4 mg IV q6h"
+            "orderSentence": "**Dexamethasone (tumor/vasogenic edema)** 10 mg IV"
           },
           "contraindications": "-",
           "monitoring": "Reduces vasogenic edema around tumors; inhibits VEGF; dramatic effect within 24-48h; CRASH trial: steroids HARMFUL in TBI — avoid; no benefit in stroke",
@@ -753,7 +745,7 @@
         {
           "item": "**Surgical evacuation of mass lesion**",
           "route": "-",
-          "indication": "-",
+          "indication": "Epidural hematoma >30 mL; subdural >10 mm; lobar ICH >30 mL; cerebellar >3 cm",
           "dosing": {
             "doseOptions": [
               {
@@ -777,7 +769,7 @@
         {
           "item": "**Pentobarbital coma**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory ICP despite maximal Tier 1-2 therapy (last resort)",
           "dosing": {
             "doseOptions": [
               {
@@ -799,7 +791,7 @@
         {
           "item": "**Therapeutic hypothermia (rescue)**",
           "route": "-",
-          "indication": "-",
+          "indication": "Refractory ICP only (NOT prophylactic)",
           "dosing": {
             "doseOptions": [
               {
@@ -821,7 +813,7 @@
         {
           "item": "**Lumbar CSF drainage**",
           "route": "-",
-          "indication": "-",
+          "indication": "Communicating hydrocephalus; refractory to EVD drainage",
           "dosing": {
             "doseOptions": [
               {
@@ -843,7 +835,7 @@
         {
           "item": "**High-dose hypertonic saline (23.4%)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Refractory ICP crisis; failure of standard osmotherapy",
           "dosing": {
             "doseOptions": [
               {
@@ -865,7 +857,7 @@
         {
           "item": "**Decompressive craniectomy (rescue)**",
           "route": "-",
-          "indication": "-",
+          "indication": "Refractory ICP after failure of all medical therapies",
           "dosing": {
             "doseOptions": [
               {
@@ -934,108 +926,157 @@
       "Medications to AVOID": [
         {
           "item": "Corticosteroids in TBI",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "CRASH trial: increased mortality in TBI (RR 1.15)",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Corticosteroids in TBI - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Corticosteroids in TBI Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Absolutely contraindicated; worsens cytotoxic edema",
+            "orderSentence": "Corticosteroids in TBI Avoid -"
           },
-          "contraindications": "-",
+          "contraindications": "TBI with elevated ICP",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Corticosteroids in ischemic stroke",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "No benefit; may worsen outcomes in ischemic stroke",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Corticosteroids in ischemic stroke - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Corticosteroids in ischemic stroke Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "No proven benefit; risk of hyperglycemia and infection",
+            "orderSentence": "Corticosteroids in ischemic stroke Avoid -"
           },
-          "contraindications": "-",
+          "contraindications": "Ischemic stroke",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Hypotonic fluids (D5W, 0.45% NaCl)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Worsens cerebral edema; shifts free water into brain parenchyma",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Hypotonic fluids (D5W, 0.45% NaCl) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Hypotonic fluids (D5W, 0.45% NaCl) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Use isotonic or hypertonic fluids only",
+            "orderSentence": "Hypotonic fluids (D5W, 0.45% NaCl) Avoid IV"
           },
-          "contraindications": "-",
+          "contraindications": "All elevated ICP patients",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Prolonged aggressive hyperventilation",
           "route": "-",
-          "indication": "-",
+          "indication": "Causes cerebral ischemia and rebound vasodilation",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Prolonged aggressive hyperventilation - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Prolonged aggressive hyperventilation Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Limit to <30 min for acute herniation only; never PaCO2 <25",
+            "orderSentence": "Prolonged aggressive hyperventilation Avoid -"
           },
-          "contraindications": "-",
+          "contraindications": "Prophylactic or prolonged use",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Ketamine (traditionally)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Traditionally avoided; may raise ICP (emerging data suggest may be safe)",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Ketamine (traditionally) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Ketamine (traditionally) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Avoid in severe uncontrolled ICP; controversial",
+            "orderSentence": "Ketamine (traditionally) Avoid IV"
           },
-          "contraindications": "-",
+          "contraindications": "Severe TBI with uncontrolled ICP",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Nitroprusside",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Causes cerebral vasodilation and raises ICP",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Nitroprusside - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Nitroprusside Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Use alternative antihypertensives (labetalol, nicardipine)",
+            "orderSentence": "Nitroprusside Avoid IV"
           },
-          "contraindications": "-",
+          "contraindications": "Elevated ICP with hypertension",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "Propofol infusion syndrome (prolonged high-dose propofol)",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "PRIS risk with >48-72h at high doses (>80 mcg/kg/min)",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "Propofol infusion syndrome (prolonged high-dose propofol) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "Propofol infusion syndrome (prolonged high-dose propofol) Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Limit duration and dose; monitor for metabolic acidosis, rhabdomyolysis",
+            "orderSentence": "Propofol infusion syndrome (prolonged high-dose propofol) Avoid IV"
           },
-          "contraindications": "-",
-          "monitoring": "-",
+          "contraindications": "Prolonged high-dose propofol infusion",
+          "monitoring": "CK, lactate, triglycerides q24h if >48h use",
           "ED": "-",
           "HOSP": "-",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "AVOID"
         }
       ]
     },

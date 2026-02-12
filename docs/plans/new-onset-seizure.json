@@ -544,26 +544,18 @@
       "Acute/Emergent": [
         {
           "item": "Lorazepam IV/IM (if actively seizing) (CPT 96374)",
-          "route": "IM",
-          "indication": "-",
+          "route": "IV",
+          "indication": "First-line benzodiazepine for active seizure termination",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg IV TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg IV TID"
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam IV/IM (if actively seizing) (CPT 96374) 0.1 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.1 mg/kg IV (max 4 mg); may repeat once in 5 min",
-            "orderSentence": "Lorazepam 0.5 mg IV TID"
+            "orderSentence": "Lorazepam IV/IM (if actively seizing) (CPT 96374) 0.1 mg/kg IV"
           },
           "contraindications": "Respiratory depression, severe hypotension",
           "monitoring": "RR, O2 sat, BP; have airway equipment ready",
@@ -575,25 +567,17 @@
         {
           "item": "Midazolam IM (if no IV access)",
           "route": "IM",
-          "indication": "-",
+          "indication": "Acute seizure termination when IV access unavailable",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg once",
-                "orderSentence": "Midazolam 2 mg IM once"
-              },
-              {
-                "text": "5 mg once",
-                "orderSentence": "Midazolam 5 mg IM once"
-              },
-              {
-                "text": "10 mg once",
-                "orderSentence": "Midazolam 10 mg IM once"
+                "text": "10 mg",
+                "orderSentence": "Midazolam IM (if no IV access) 10 mg IM"
               }
             ],
             "route": "IM",
             "instructions": "10 mg IM (if >40 kg) or 0.2 mg/kg IM",
-            "orderSentence": "Midazolam 2 mg IM once"
+            "orderSentence": "Midazolam IM (if no IV access) 10 mg IM"
           },
           "contraindications": "Respiratory depression",
           "monitoring": "RR, O2 sat; have airway equipment ready",
@@ -604,18 +588,18 @@
         },
         {
           "item": "Midazolam intranasal (if no IV access)",
-          "route": "IV",
-          "indication": "-",
+          "route": "IN",
+          "indication": "Acute seizure termination via intranasal route when IV access unavailable",
           "dosing": {
             "doseOptions": [
               {
                 "text": "5 mg",
-                "orderSentence": "Midazolam intranasal (if no IV access) 5 mg -"
+                "orderSentence": "Midazolam intranasal (if no IV access) 5 mg IN"
               }
             ],
-            "route": "-",
+            "route": "IN",
             "instructions": "5 mg per nostril (total 10 mg)",
-            "orderSentence": "Midazolam intranasal (if no IV access) 5 mg -"
+            "orderSentence": "Midazolam intranasal (if no IV access) 5 mg IN"
           },
           "contraindications": "Respiratory depression",
           "monitoring": "RR, O2 sat",
@@ -627,7 +611,7 @@
         {
           "item": "Dextrose 50% IV",
           "route": "IV",
-          "indication": "-",
+          "indication": "Rapid correction of hypoglycemia-induced seizure",
           "dosing": {
             "doseOptions": [
               {
@@ -649,25 +633,17 @@
         {
           "item": "Thiamine IV",
           "route": "IV",
-          "indication": "-",
+          "indication": "Prevent Wernicke encephalopathy in suspected alcohol-related seizure",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Thiamine 100 mg IV daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Thiamine 100 mg IV daily"
-              },
-              {
-                "text": "500 mg TID",
-                "orderSentence": "Thiamine 500 mg IV TID"
+                "text": "100-500 mg",
+                "orderSentence": "Thiamine IV 100-500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "100-500 mg IV BEFORE glucose if alcohol use suspected",
-            "orderSentence": "Thiamine 100 mg IV daily"
+            "orderSentence": "Thiamine IV 100-500 mg IV"
           },
           "contraindications": "None significant",
           "monitoring": "None",
@@ -679,7 +655,7 @@
         {
           "item": "Supplemental oxygen",
           "route": "INH",
-          "indication": "-",
+          "indication": "Maintain oxygenation during and after active seizure",
           "dosing": {
             "doseOptions": [
               {
@@ -701,7 +677,7 @@
         {
           "item": "IV fluids (isotonic)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Volume resuscitation and IV access for seizure management",
           "dosing": {
             "doseOptions": [
               {
@@ -723,7 +699,7 @@
         {
           "item": "Flumazenil (rescue only)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Reversal of benzodiazepine-induced respiratory depression",
           "dosing": {
             "doseOptions": [
               {
@@ -751,29 +727,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "40-60 mg/kg",
+                "orderSentence": "Levetiracetam IV (CPT 96365) 40-60 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "40-60 mg/kg IV (max 4500 mg) over 15 min; OR 1500-3000 mg IV",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
+            "orderSentence": "Levetiracetam IV (CPT 96365) 40-60 mg/kg IV"
           },
           "contraindications": "None significant; reduce dose if CrCl <50",
           "monitoring": "Somnolence, agitation (rare)",
@@ -789,29 +749,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg PO BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg PO BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg PO BID"
+                "text": "1500-3000 mg",
+                "orderSentence": "Levetiracetam PO 1500-3000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "1500-3000 mg PO Ã— 1, then start maintenance",
-            "orderSentence": "Levetiracetam 250 mg PO BID"
+            "orderSentence": "Levetiracetam PO 1500-3000 mg PO"
           },
           "contraindications": "Same",
           "monitoring": "Same",
@@ -849,25 +793,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Phenytoin 100 mg IV TID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Phenytoin 200 mg IV BID"
-              },
-              {
-                "text": "300 mg daily",
-                "orderSentence": "Phenytoin 300 mg IV daily"
-              },
-              {
-                "text": "400 mg daily",
-                "orderSentence": "Phenytoin 400 mg IV daily"
+                "text": "20 mg/kg",
+                "orderSentence": "Phenytoin IV 20 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "20 mg/kg IV at max 50 mg/min",
-            "orderSentence": "Phenytoin 100 mg IV TID"
+            "orderSentence": "Phenytoin IV 20 mg/kg IV"
           },
           "contraindications": "AV block, sinus bradycardia, pregnancy",
           "monitoring": "Cardiac monitor, BP; give via large vein (tissue necrosis risk)",
@@ -883,25 +815,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Valproate 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Valproate 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Valproate 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Valproate 1000 mg IV BID"
+                "text": "40 mg/kg",
+                "orderSentence": "Valproate IV 40 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "40 mg/kg IV over 10 min (max 3000 mg)",
-            "orderSentence": "Valproate 250 mg IV BID"
+            "orderSentence": "Valproate IV 40 mg/kg IV"
           },
           "contraindications": "Pregnancy (teratogenic - neural tube defects), hepatic disease, mitochondrial disease, urea cycle disorders",
           "monitoring": "LFTs, ammonia, platelets; pancreatitis risk",
@@ -917,25 +837,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg BID",
-                "orderSentence": "Lacosamide 50 mg IV BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Lacosamide 100 mg IV BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Lacosamide 150 mg IV BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Lacosamide 200 mg IV BID"
+                "text": "200-400 mg",
+                "orderSentence": "Lacosamide IV 200-400 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "200-400 mg IV over 15-30 min",
-            "orderSentence": "Lacosamide 50 mg IV BID"
+            "orderSentence": "Lacosamide IV 200-400 mg IV"
           },
           "contraindications": "PR prolongation >200 ms, 2nd/3rd degree AV block",
           "monitoring": "ECG for PR interval; dizziness",
@@ -948,34 +856,18 @@
       "Anti-Seizure Medications (ASMs) - Maintenance Therapy": [
         {
           "item": "Levetiracetam",
-          "route": "IV",
+          "route": "PO",
           "indication": "First-line maintenance",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "500-1500 mg",
+                "orderSentence": "Levetiracetam 500-1500 mg PO"
               }
             ],
-            "route": "IV",
+            "route": "PO",
             "instructions": "500-1500 mg PO/IV BID; start 500 mg BID, may increase by 500 mg/dose weekly; max 3000 mg/day",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
+            "orderSentence": "Levetiracetam 500-1500 mg PO"
           },
           "contraindications": "Renal impairment (adjust per CrCl)",
           "monitoring": "Behavioral changes (irritability, depression - \"Keppra rage\"); renal function",
@@ -986,34 +878,18 @@
         },
         {
           "item": "Lamotrigine",
-          "route": "-",
+          "route": "PO",
           "indication": "First-line (especially women of childbearing potential)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Lamotrigine 25 mg PO daily"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Lamotrigine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Lamotrigine 100 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Lamotrigine 200 mg PO daily"
-              },
-              {
-                "text": "400 mg daily",
-                "orderSentence": "Lamotrigine 400 mg PO daily"
+                "text": "25 mg",
+                "orderSentence": "Lamotrigine 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg daily Ã— 2 weeks; then 50 mg daily Ã— 2 weeks; then 100 mg daily; target 200-400 mg/day in divided doses",
-            "orderSentence": "Lamotrigine 25 mg PO daily"
+            "orderSentence": "Lamotrigine 25 mg PO"
           },
           "contraindications": "Slow titration required (SJS/TEN risk)",
           "monitoring": "Rash (stop if any rash; SJS/TEN risk higher with fast titration or valproate co-therapy)",
@@ -1029,25 +905,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg BID",
-                "orderSentence": "Lacosamide 50 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Lacosamide 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Lacosamide 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Lacosamide 200 mg PO BID"
+                "text": "100 mg",
+                "orderSentence": "Lacosamide 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg PO BID; increase by 100 mg/day weekly; target 200-400 mg BID; max 400 mg BID",
-            "orderSentence": "Lacosamide 50 mg PO BID"
+            "orderSentence": "Lacosamide 100 mg PO"
           },
           "contraindications": "PR prolongation, 2nd/3rd degree AV block, severe hepatic impairment",
           "monitoring": "ECG at baseline and dose changes; dizziness, diplopia",
@@ -1063,29 +927,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "150 mg BID",
-                "orderSentence": "Oxcarbazepine 150 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Oxcarbazepine 300 mg PO BID"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Oxcarbazepine 600 mg PO BID"
-              },
-              {
-                "text": "900 mg BID",
-                "orderSentence": "Oxcarbazepine 900 mg PO BID"
-              },
-              {
-                "text": "1200 mg BID",
-                "orderSentence": "Oxcarbazepine 1200 mg PO BID"
+                "text": "300 mg",
+                "orderSentence": "Oxcarbazepine 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg PO BID; increase by 300-600 mg/day every week; target 1200-2400 mg/day in divided doses",
-            "orderSentence": "Oxcarbazepine 150 mg PO BID"
+            "orderSentence": "Oxcarbazepine 300 mg PO"
           },
           "contraindications": "Hypersensitivity to carbamazepine",
           "monitoring": "Sodium (hyponatremia in 2-3%); HLA-B*1502 screening in at-risk populations",
@@ -1101,25 +949,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Carbamazepine 100 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Carbamazepine 200 mg PO BID"
-              },
-              {
-                "text": "400 mg BID",
-                "orderSentence": "Carbamazepine 400 mg PO BID"
-              },
-              {
-                "text": "600 mg BID",
-                "orderSentence": "Carbamazepine 600 mg PO BID"
+                "text": "200 mg",
+                "orderSentence": "Carbamazepine 200 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 200 mg PO BID; increase by 200 mg/day weekly; target 800-1200 mg/day; max 1600 mg/day",
-            "orderSentence": "Carbamazepine 100 mg PO BID"
+            "orderSentence": "Carbamazepine 200 mg PO"
           },
           "contraindications": "AV block; bone marrow suppression; concurrent MAOIs",
           "monitoring": "CBC, LFTs, sodium at baseline and periodically; HLA-B*1502 screening",
@@ -1157,25 +993,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Phenytoin 100 mg PO TID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Phenytoin 200 mg PO BID"
-              },
-              {
-                "text": "300 mg daily",
-                "orderSentence": "Phenytoin 300 mg PO daily"
-              },
-              {
-                "text": "400 mg daily",
-                "orderSentence": "Phenytoin 400 mg PO daily"
+                "text": "300-400 mg",
+                "orderSentence": "Phenytoin 300-400 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "300-400 mg daily (extended release) or divided TID (immediate release); adjust by level",
-            "orderSentence": "Phenytoin 100 mg PO TID"
+            "orderSentence": "Phenytoin 300-400 mg PO"
           },
           "contraindications": "Pregnancy (relative - fetal hydantoin syndrome); AV block",
           "monitoring": "Free phenytoin level (target 1-2 Î¼g/mL); total level 10-20 Î¼g/mL; CBC, LFTs; gingival hyperplasia, hirsutism",
@@ -1191,25 +1015,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Brivaracetam 25 mg PO BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Brivaracetam 50 mg PO BID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Brivaracetam 75 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Brivaracetam 100 mg PO BID"
+                "text": "50 mg",
+                "orderSentence": "Brivaracetam 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg PO BID; may increase to 100 mg BID; max 200 mg/day",
-            "orderSentence": "Brivaracetam 25 mg PO BID"
+            "orderSentence": "Brivaracetam 50 mg PO"
           },
           "contraindications": "Hepatic impairment (reduce dose)",
           "monitoring": "Less behavioral side effects than levetiracetam; somnolence",
@@ -1225,25 +1037,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Zonisamide 100 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Zonisamide 200 mg PO daily"
-              },
-              {
-                "text": "300 mg daily",
-                "orderSentence": "Zonisamide 300 mg PO daily"
-              },
-              {
-                "text": "400 mg daily",
-                "orderSentence": "Zonisamide 400 mg PO daily"
+                "text": "100 mg",
+                "orderSentence": "Zonisamide 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg daily; increase by 100 mg every 2 weeks; target 300-400 mg daily; max 600 mg/day",
-            "orderSentence": "Zonisamide 100 mg PO daily"
+            "orderSentence": "Zonisamide 100 mg PO"
           },
           "contraindications": "Sulfonamide allergy; kidney stones",
           "monitoring": "Kidney stones (carbonic anhydrase inhibitor); oligohidrosis (pediatric); metabolic acidosis",
@@ -1259,29 +1059,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Topiramate 25 mg PO BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Topiramate 50 mg PO BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Topiramate 100 mg PO BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Topiramate 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Topiramate 200 mg PO BID"
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 25 mg BID; increase by 50 mg/day weekly; target 200-400 mg/day in divided doses; max 400 mg/day",
-            "orderSentence": "Topiramate 25 mg PO BID"
+            "orderSentence": "Topiramate 25 mg PO"
           },
           "contraindications": "Kidney stones; metabolic acidosis; glaucoma",
           "monitoring": "Cognitive impairment (\"dopamax\"); paresthesias; kidney stones; weight loss",
@@ -1297,21 +1081,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Clobazam 5 mg PO BID"
-              },
-              {
-                "text": "10 mg BID",
-                "orderSentence": "Clobazam 10 mg PO BID"
-              },
-              {
-                "text": "20 mg BID",
-                "orderSentence": "Clobazam 20 mg PO BID"
+                "text": "5-10 mg",
+                "orderSentence": "Clobazam 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5-10 mg daily; increase by 5-10 mg weekly; max 40 mg/day in divided doses",
-            "orderSentence": "Clobazam 5 mg PO BID"
+            "orderSentence": "Clobazam 5-10 mg PO"
           },
           "contraindications": "Severe hepatic impairment; sleep apnea (untreated)",
           "monitoring": "Sedation; tolerance may develop; CYP2C19 poor metabolizers need lower dose",
@@ -1327,25 +1103,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg QHS",
-                "orderSentence": "Perampanel 2 mg PO QHS"
-              },
-              {
-                "text": "4 mg QHS",
-                "orderSentence": "Perampanel 4 mg PO QHS"
-              },
-              {
-                "text": "8 mg QHS",
-                "orderSentence": "Perampanel 8 mg PO QHS"
-              },
-              {
-                "text": "12 mg QHS",
-                "orderSentence": "Perampanel 12 mg PO QHS"
+                "text": "2 mg",
+                "orderSentence": "Perampanel 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg qHS; increase by 2 mg weekly; target 8-12 mg qHS; max 12 mg/day",
-            "orderSentence": "Perampanel 2 mg PO QHS"
+            "orderSentence": "Perampanel 2 mg PO"
           },
           "contraindications": "None absolute",
           "monitoring": "Psychiatric effects (aggression, hostility); dizziness; take at bedtime; Schedule III",
@@ -1361,29 +1125,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg daily",
-                "orderSentence": "Cenobamate 12.5 mg PO daily"
-              },
-              {
-                "text": "25 mg daily",
-                "orderSentence": "Cenobamate 25 mg PO daily"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Cenobamate 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Cenobamate 100 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Cenobamate 200 mg PO daily"
+                "text": "12.5 mg",
+                "orderSentence": "Cenobamate 12.5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 12.5 mg daily Ã— 2 weeks; titrate slowly per package insert; target 200-400 mg daily",
-            "orderSentence": "Cenobamate 12.5 mg PO daily"
+            "orderSentence": "Cenobamate 12.5 mg PO"
           },
           "contraindications": "Familial short QT syndrome",
           "monitoring": "Very slow titration required (DRESS risk); QT shortening; titration pack available",
@@ -1394,7 +1142,7 @@
         },
         {
           "item": "Phenobarbital",
-          "route": "IV",
+          "route": "PO",
           "indication": "Refractory or resource-limited",
           "dosing": {
             "doseOptions": [
@@ -1423,25 +1171,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "325 mg q6h PRN",
-                "orderSentence": "Acetaminophen 325 mg IV q6h PRN"
-              },
-              {
-                "text": "500 mg q6h PRN",
-                "orderSentence": "Acetaminophen 500 mg IV q6h PRN"
-              },
-              {
-                "text": "650 mg q6h PRN",
-                "orderSentence": "Acetaminophen 650 mg IV q6h PRN"
-              },
-              {
-                "text": "1000 mg q6h PRN",
-                "orderSentence": "Acetaminophen 1000 mg IV q6h PRN"
+                "text": "650-1000 mg",
+                "orderSentence": "Acetaminophen 650-1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "650-1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg if liver disease)",
-            "orderSentence": "Acetaminophen 325 mg IV q6h PRN"
+            "orderSentence": "Acetaminophen 650-1000 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Severe hepatic impairment",
@@ -1458,25 +1194,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "200 mg q6h PRN",
-                "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
-              },
-              {
-                "text": "400 mg q6h PRN",
-                "orderSentence": "Ibuprofen 400 mg PO q6h PRN"
-              },
-              {
-                "text": "600 mg q8h",
-                "orderSentence": "Ibuprofen 600 mg PO q8h"
-              },
-              {
-                "text": "800 mg q8h",
-                "orderSentence": "Ibuprofen 800 mg PO q8h"
+                "text": "400-600 mg",
+                "orderSentence": "Ibuprofen 400-600 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "400-600 mg PO q6-8h PRN; max 2400 mg/day",
-            "orderSentence": "Ibuprofen 200 mg PO q6h PRN"
+            "orderSentence": "Ibuprofen 400-600 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Renal impairment; GI bleed; post-CABG",
@@ -1493,17 +1217,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q8h PRN",
-                "orderSentence": "Ondansetron 4 mg IV q8h PRN"
-              },
-              {
-                "text": "8 mg q8h PRN",
-                "orderSentence": "Ondansetron 8 mg IV q8h PRN"
+                "text": "4-8 mg",
+                "orderSentence": "Ondansetron 4-8 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "4-8 mg IV/PO q8h PRN",
-            "orderSentence": "Ondansetron 4 mg IV q8h PRN"
+            "orderSentence": "Ondansetron 4-8 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "QT prolongation; severe hepatic impairment",
@@ -1520,21 +1240,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg IV TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg IV TID"
+                "text": "0.5-2 mg",
+                "orderSentence": "Lorazepam 0.5-2 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.5-2 mg IV/PO PRN; use with caution",
-            "orderSentence": "Lorazepam 0.5 mg IV TID"
+            "orderSentence": "Lorazepam 0.5-2 mg IV"
           },
           "pretreatment": "-",
           "contraindications": "Respiratory depression; altered mental status",
@@ -1551,29 +1263,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Sertraline 25 mg PO daily"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Sertraline 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Sertraline 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Sertraline 150 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Sertraline 200 mg PO daily"
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg daily; increase by 25-50 mg q1-2 weeks; max 200 mg daily",
-            "orderSentence": "Sertraline 25 mg PO daily"
+            "orderSentence": "Sertraline 50 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Concurrent MAOIs",
@@ -1590,21 +1286,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Escitalopram 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Escitalopram 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Escitalopram 20 mg PO daily"
+                "text": "10 mg",
+                "orderSentence": "Escitalopram 10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 10 mg daily; max 20 mg daily",
-            "orderSentence": "Escitalopram 5 mg PO daily"
+            "orderSentence": "Escitalopram 10 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Concurrent MAOIs; QT prolongation",
@@ -1621,25 +1309,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg QHS",
-                "orderSentence": "Melatonin 1 mg PO QHS"
-              },
-              {
-                "text": "3 mg QHS",
-                "orderSentence": "Melatonin 3 mg PO QHS"
-              },
-              {
-                "text": "5 mg QHS",
-                "orderSentence": "Melatonin 5 mg PO QHS"
-              },
-              {
-                "text": "10 mg QHS",
-                "orderSentence": "Melatonin 10 mg PO QHS"
+                "text": "3-5 mg",
+                "orderSentence": "Melatonin 3-5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "3-5 mg PO qHS",
-            "orderSentence": "Melatonin 1 mg PO QHS"
+            "orderSentence": "Melatonin 3-5 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "None significant",
@@ -1656,25 +1332,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg QHS",
-                "orderSentence": "Trazodone 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Trazodone 50 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Trazodone 100 mg PO QHS"
-              },
-              {
-                "text": "150 mg QHS",
-                "orderSentence": "Trazodone 150 mg PO QHS"
+                "text": "25-100 mg",
+                "orderSentence": "Trazodone 25-100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "25-100 mg PO qHS",
-            "orderSentence": "Trazodone 25 mg PO QHS"
+            "orderSentence": "Trazodone 25-100 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "Concurrent MAOIs",
@@ -1689,7 +1353,7 @@
         {
           "item": "Add second ASM",
           "route": "-",
-          "indication": "-",
+          "indication": "Inadequate seizure control on maximized first-line ASM monotherapy",
           "dosing": {
             "doseOptions": [
               {
@@ -1711,7 +1375,7 @@
         {
           "item": "Epilepsy surgery evaluation referral",
           "route": "-",
-          "indication": "-",
+          "indication": "Drug-resistant epilepsy after failure of two or more appropriate ASMs",
           "dosing": {
             "doseOptions": [
               {
@@ -1733,7 +1397,7 @@
         {
           "item": "Vagus nerve stimulator (VNS)",
           "route": "-",
-          "indication": "-",
+          "indication": "Drug-resistant epilepsy in patients who are not surgical candidates",
           "dosing": {
             "doseOptions": [
               {
@@ -1755,7 +1419,7 @@
         {
           "item": "Dietary therapy (ketogenic diet, modified Atkins)",
           "route": "-",
-          "indication": "-",
+          "indication": "Adjunctive treatment for drug-resistant epilepsy",
           "dosing": {
             "doseOptions": [
               {

@@ -25,7 +25,8 @@ struct FavoritesView: View {
                     .listStyle(.plain)
                 }
             }
-            .background(LinearGradient.appBackground.ignoresSafeArea())
+            .scrollContentBackground(.hidden)
+            .background { AdaptiveBackground() }
             .navigationTitle("Favorites")
             .navigationDestination(for: Plan.self) { plan in
                 PlanDetailView(plan: plan)

@@ -105,51 +105,51 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Glatiramer acetate (Copaxone) | SC | - | 20 mg :: SC :: daily :: 20 mg SC daily or 40 mg SC 3×/week | - | Hypersensitivity | Injection site reactions; lipoatrophy | - | - | ROUTINE | - |
-| Interferon beta-1a (Avonex) | IM | - | 30 mcg :: IM :: - :: 30 mcg IM weekly | - | Depression, hepatic disease | CBC, LFTs q6 months; flu-like symptoms | - | - | ROUTINE | - |
-| Interferon beta-1a (Rebif) | SC | - | 44 mcg :: SC :: - :: 22 or 44 mcg SC 3×/week (titrate) | - | Same | Same | - | - | ROUTINE | - |
-| Interferon beta-1b (Betaseron, Extavia) | SC | - | 250 mcg :: SC :: - :: 250 mcg SC every other day | - | Same | Same | - | - | ROUTINE | - |
-| Peginterferon beta-1a (Plegridy) | SC | - | 125 mcg :: SC :: - :: 125 mcg SC q2 weeks | - | Same | Same | - | - | ROUTINE | - |
+| Glatiramer acetate (Copaxone) | SC | First-line DMT for RRMS; immunomodulatory injectable therapy | 20 mg :: SC :: daily :: 20 mg SC daily or 40 mg SC 3×/week | - | Hypersensitivity | Injection site reactions; lipoatrophy | - | - | ROUTINE | - |
+| Interferon beta-1a (Avonex) | IM | First-line DMT for RRMS; reduces relapse rate | 30 mcg :: IM :: - :: 30 mcg IM weekly | - | Depression, hepatic disease | CBC, LFTs q6 months; flu-like symptoms | - | - | ROUTINE | - |
+| Interferon beta-1a (Rebif) | SC | First-line DMT for RRMS; higher-dose interferon option | 44 mcg :: SC :: - :: 22 or 44 mcg SC 3×/week (titrate) | - | Same | Same | - | - | ROUTINE | - |
+| Interferon beta-1b (Betaseron, Extavia) | SC | First-line DMT for RRMS; alternate-day injectable interferon | 250 mcg :: SC :: - :: 250 mcg SC every other day | - | Same | Same | - | - | ROUTINE | - |
+| Peginterferon beta-1a (Plegridy) | SC | First-line DMT for RRMS; extended-interval injectable interferon | 125 mcg :: SC :: - :: 125 mcg SC q2 weeks | - | Same | Same | - | - | ROUTINE | - |
 
 ### 3B. Disease-Modifying Therapies - Oral (Moderate-High Efficacy)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Dimethyl fumarate (Tecfidera) | PO | - | 120 mg :: PO :: BID :: 120 mg BID × 7 days, then 240 mg BID | - | Lymphopenia (<500), PML risk | CBC q6 months; LFTs; GI symptoms, flushing | - | - | ROUTINE | - |
-| Diroximel fumarate (Vumerity) | PO | - | 231 mg :: PO :: BID :: 231 mg BID × 7 days, then 462 mg BID | - | Same | Same; less GI effects | - | - | ROUTINE | - |
-| Monomethyl fumarate (Bafiertam) | PO | - | 95 mg :: PO :: BID :: 95 mg BID × 7 days, then 190 mg BID | - | Same | Same | - | - | ROUTINE | - |
-| Teriflunomide (Aubagio) | PO | - | 14 mg :: PO :: daily :: 14 mg daily | - | Pregnancy (teratogenic), hepatic disease | LFTs monthly × 6mo; CBC; BP; pregnancy test; accelerated elimination available | - | - | ROUTINE | - |
-| Fingolimod (Gilenya) | PO | - | 0.5 mg :: PO :: daily :: 0.5 mg daily; first dose observation 6h | - | Recent MI, unstable angina, heart block, bradycardia | First-dose cardiac monitoring (6h); ophtho exam (macular edema); LFTs; varicella status; lymphocyte count | - | - | ROUTINE | - |
-| Siponimod (Mayzent) | PO | - | 2 mg :: PO :: daily :: Titration pack, then 2 mg daily (1 mg if CYP2C9 *2/*3); approved for active SPMS | - | Same as fingolimod; CYP2C9 testing required | Same as fingolimod; CYP2C9 genotype | - | - | ROUTINE | - |
-| Ozanimod (Zeposia) | PO | - | 0.23 mg :: PO :: daily :: Titration: 0.23 mg × 4d, 0.46 mg × 3d, then 0.92 mg daily | - | Same as fingolimod | Same; less first-dose effect | - | - | ROUTINE | - |
-| Ponesimod (Ponvory) | PO | - | 20 mg :: PO :: daily :: Titration over 14 days to 20 mg daily | - | Same as fingolimod | Same | - | - | ROUTINE | - |
-| Cladribine (Mavenclad) | - | - | 3.5 mg/kg :: - :: - :: 3.5 mg/kg total over 2 years (Year 1: 1.75 mg/kg in 2 cycles; Year 2: same); highly active RRMS | - | Pregnancy, HIV, active infection, malignancy | CBC q2 months Year 1, then q6 months; lymphocyte >500-800 to start | - | - | ROUTINE | - |
+| Dimethyl fumarate (Tecfidera) | PO | Oral DMT for RRMS; moderate-efficacy immunomodulator | 120 mg :: PO :: BID :: 120 mg BID × 7 days, then 240 mg BID | - | Lymphopenia (<500), PML risk | CBC q6 months; LFTs; GI symptoms, flushing | - | - | ROUTINE | - |
+| Diroximel fumarate (Vumerity) | PO | Oral DMT for RRMS; fumarate with improved GI tolerability | 231 mg :: PO :: BID :: 231 mg BID × 7 days, then 462 mg BID | - | Same | Same; less GI effects | - | - | ROUTINE | - |
+| Monomethyl fumarate (Bafiertam) | PO | Oral DMT for RRMS; bioequivalent fumarate alternative | 95 mg :: PO :: BID :: 95 mg BID × 7 days, then 190 mg BID | - | Same | Same | - | - | ROUTINE | - |
+| Teriflunomide (Aubagio) | PO | Oral DMT for RRMS; once-daily pyrimidine synthesis inhibitor | 14 mg :: PO :: daily :: 14 mg daily | - | Pregnancy (teratogenic), hepatic disease | LFTs monthly × 6mo; CBC; BP; pregnancy test; accelerated elimination available | - | - | ROUTINE | - |
+| Fingolimod (Gilenya) | PO | Oral DMT for RRMS; S1P receptor modulator, high efficacy | 0.5 mg :: PO :: daily :: 0.5 mg daily; first dose observation 6h | - | Recent MI, unstable angina, heart block, bradycardia | First-dose cardiac monitoring (6h); ophtho exam (macular edema); LFTs; varicella status; lymphocyte count | - | - | ROUTINE | - |
+| Siponimod (Mayzent) | PO | DMT for active SPMS; S1P receptor modulator with CYP2C9 dosing | 2 mg :: PO :: daily :: Titration pack, then 2 mg daily (1 mg if CYP2C9 *2/*3); approved for active SPMS | - | Same as fingolimod; CYP2C9 testing required | Same as fingolimod; CYP2C9 genotype | - | - | ROUTINE | - |
+| Ozanimod (Zeposia) | PO | Oral DMT for RRMS; S1P modulator with reduced cardiac risk | 0.23 mg :: PO :: daily :: Titration: 0.23 mg × 4d, 0.46 mg × 3d, then 0.92 mg daily | - | Same as fingolimod | Same; less first-dose effect | - | - | ROUTINE | - |
+| Ponesimod (Ponvory) | PO | Oral DMT for RRMS; selective S1P1 receptor modulator | 20 mg :: PO :: daily :: Titration over 14 days to 20 mg daily | - | Same as fingolimod | Same | - | - | ROUTINE | - |
+| Cladribine (Mavenclad) | PO | Oral DMT for highly active RRMS; pulsed lymphocyte-depleting therapy | 3.5 mg/kg :: PO :: - :: 3.5 mg/kg total over 2 years (Year 1: 1.75 mg/kg in 2 cycles; Year 2: same); highly active RRMS | - | Pregnancy, HIV, active infection, malignancy | CBC q2 months Year 1, then q6 months; lymphocyte >500-800 to start | - | - | ROUTINE | - |
 
 ### 3C. Disease-Modifying Therapies - Infusion (High Efficacy)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Natalizumab (Tysabri) | IV | - | 300 mg :: IV :: - :: 300 mg IV q4 weeks | - | PML risk (JCV+, prior immunosuppression, duration >2y) | JCV antibody q6 months; MRI q6-12 months; infusion reactions | - | - | ROUTINE | - |
-| Ocrelizumab (Ocrevus) | IV | - | 300 mg :: IV :: - :: 300 mg IV × 2 doses (2 weeks apart), then 600 mg IV q6 months | - | Active Hep B, active infection | Pre-infusion CBC, LFTs; HBV screening; infection monitoring; malignancy screening | - | - | ROUTINE | - |
-| Ofatumumab (Kesimpta) | SC | - | 20 mg :: SC :: monthly :: 20 mg SC weeks 0, 1, 2, then 20 mg SC monthly | - | Same as ocrelizumab | Same; self-administered SC | - | - | ROUTINE | - |
-| Ublituximab (Briumvi) | IV | - | 150 mg :: IV :: - :: 150 mg IV day 1, 450 mg IV day 15, then 450 mg IV q6 months | - | Same as ocrelizumab | Same | - | - | ROUTINE | - |
-| Alemtuzumab (Lemtrada) | IV | - | 12 mg :: IV :: daily :: Year 1: 12 mg IV daily × 5 days; Year 2: 12 mg IV daily × 3 days; highly active MS, REMS | - | Active infection, HIV, immunocompromised | CBC, LFTs, creatinine, urinalysis, TSH monthly × 48 months after last dose; REMS program | - | - | ROUTINE | - |
+| Natalizumab (Tysabri) | IV | High-efficacy DMT for RRMS; anti-integrin monoclonal antibody | 300 mg :: IV :: - :: 300 mg IV q4 weeks | - | PML risk (JCV+, prior immunosuppression, duration >2y) | JCV antibody q6 months; MRI q6-12 months; infusion reactions | - | - | ROUTINE | - |
+| Ocrelizumab (Ocrevus) | IV | High-efficacy DMT for RRMS and PPMS; anti-CD20 B-cell therapy | 300 mg :: IV :: - :: 300 mg IV × 2 doses (2 weeks apart), then 600 mg IV q6 months | - | Active Hep B, active infection | Pre-infusion CBC, LFTs; HBV screening; infection monitoring; malignancy screening | - | - | ROUTINE | - |
+| Ofatumumab (Kesimpta) | SC | High-efficacy DMT for RRMS; self-administered anti-CD20 therapy | 20 mg :: SC :: monthly :: 20 mg SC weeks 0, 1, 2, then 20 mg SC monthly | - | Same as ocrelizumab | Same; self-administered SC | - | - | ROUTINE | - |
+| Ublituximab (Briumvi) | IV | High-efficacy DMT for RRMS; glycoengineered anti-CD20 antibody | 150 mg :: IV :: - :: 150 mg IV day 1, 450 mg IV day 15, then 450 mg IV q6 months | - | Same as ocrelizumab | Same | - | - | ROUTINE | - |
+| Alemtuzumab (Lemtrada) | IV | DMT for highly active RRMS; anti-CD52 lymphocyte-depleting therapy | 12 mg :: IV :: daily :: Year 1: 12 mg IV daily × 5 days; Year 2: 12 mg IV daily × 3 days; highly active MS, REMS | - | Active infection, HIV, immunocompromised | CBC, LFTs, creatinine, urinalysis, TSH monthly × 48 months after last dose; REMS program | - | - | ROUTINE | - |
 
 ### 3D. Treatment for Progressive MS
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Ocrelizumab (PPMS) | PO | - | 300 mg :: PO :: - :: 300 mg × 2, then 600 mg q6 months | - | Per above | Per above; only approved for PPMS | - | - | ROUTINE | - |
-| Siponimod (active SPMS) | - | - | N/A :: - :: per protocol :: Per above | - | Per above | Per above | - | - | ROUTINE | - |
+| Ocrelizumab (PPMS) | IV | Only approved DMT for primary progressive MS; anti-CD20 therapy | 300 mg :: IV :: - :: 300 mg × 2, then 600 mg q6 months | - | Per above | Per above; only approved for PPMS | - | - | ROUTINE | - |
+| Siponimod (active SPMS) | PO | DMT for active secondary progressive MS; slows disability progression | N/A :: PO :: per protocol :: Per above | - | Per above | Per above | - | - | ROUTINE | - |
 
 ### 3E. Acute Relapse Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Methylprednisolone IV (CPT 96365) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
-| Prednisone oral (alternative) | IV | - | 1250 mg :: IV :: daily :: 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same | - | ROUTINE | ROUTINE | - |
-| Plasma exchange (PLEX) (CPT 36514) | - | - | N/A :: - :: once :: 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
-| ACTH gel (Acthar) | IM | - | 80-120 units :: IM :: daily :: 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same | - | - | ROUTINE | - |
+| Methylprednisolone IV (CPT 96365) | IV | First-line treatment for acute MS relapse; high-dose corticosteroid | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days | Active infection (relative), uncontrolled DM | Glucose, BP, sleep, psychiatric | STAT | STAT | ROUTINE | - |
+| Prednisone oral (alternative) | PO | Oral alternative for acute MS relapse; bioequivalent to IV steroids | 1250 mg :: PO :: daily :: 1250 mg PO daily × 3-5 days (bioequivalent to IV) | Same | Same | - | ROUTINE | ROUTINE | - |
+| Plasma exchange (PLEX) (CPT 36514) | - | Steroid-refractory severe MS relapse; removes circulating antibodies | N/A :: - :: once :: 5-7 exchanges over 2 weeks; severe relapse not responding to steroids | Hemodynamic instability | Electrolytes, coagulation | - | STAT | - | - |
+| ACTH gel (Acthar) | IM | Alternative to steroids for acute MS relapse; adrenocorticotropic hormone | 80-120 units :: IM :: daily :: 80-120 units IM daily × 2-3 weeks; alternative to steroids | Same as steroids | Same | - | - | ROUTINE | - |
 
 ### 3F. Symptom Management
 

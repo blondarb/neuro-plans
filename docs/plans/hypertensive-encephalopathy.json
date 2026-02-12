@@ -351,54 +351,52 @@
       "— Acute / Emergency Treatment (ED and ICU)": [
         {
           "item": "Nicardipine IV infusion",
+          "route": "IV",
+          "indication": "First-line IV antihypertensive for hypertensive emergency including PRES",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg/hr infusion",
-                "orderSentence": "Nicardipine 5 mg/hr IV infusion"
-              },
-              {
-                "text": "15 mg/hr max infusion",
-                "orderSentence": "Nicardipine 15 mg/hr IV max infusion"
+                "text": "5 mg/hr",
+                "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
               }
             ],
             "route": "IV",
             "instructions": "start 5 mg/hr, titrate by 2.5 mg/hr every 5-15 min, max 15 mg/hr",
-            "orderSentence": "Nicardipine 5 mg/hr IV infusion"
-          }
+            "orderSentence": "Nicardipine IV infusion 5 mg/hr IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Continuous arterial BP monitoring; MAP trend; neurological status",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Labetalol IV",
+          "route": "IV",
+          "indication": "First-line alternative IV antihypertensive; combined alpha/beta blockade",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Labetalol 100 mg IV BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Labetalol 200 mg IV BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Labetalol 300 mg IV BID"
-              },
-              {
-                "text": "10 mg q10min PRN",
-                "orderSentence": "Labetalol 10 mg IV q10min PRN"
-              },
-              {
-                "text": "20 mg q10min PRN",
-                "orderSentence": "Labetalol 20 mg IV q10min PRN"
+                "text": "20 mg",
+                "orderSentence": "Labetalol IV 20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "may repeat 40-80 mg every 10 min (max 300 mg total); or infusion 0.5-2 mg/min",
-            "orderSentence": "Labetalol 100 mg IV BID"
-          }
+            "orderSentence": "Labetalol IV 20 mg IV"
+          },
+          "contraindications": "Severe bradycardia; heart block; decompensated HF; cocaine-induced hypertension (use nicardipine instead)",
+          "monitoring": "Heart rate; BP; cardiac rhythm",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Clevidipine IV",
+          "route": "IV",
+          "indication": "Ultra-short acting CCB for precise BP control",
           "dosing": {
             "doseOptions": [
               {
@@ -409,10 +407,18 @@
             "route": "IV",
             "instructions": "titrate by doubling dose every 90 sec initially, then increase by 1-2 mg/hr; max 32 mg/hr",
             "orderSentence": "Clevidipine IV 1-2 mg/hr IV"
-          }
+          },
+          "contraindications": "Soy/egg allergy; pancreatitis",
+          "monitoring": "Continuous BP monitoring; triglycerides (lipid emulsion)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Sodium nitroprusside IV",
+          "route": "IV",
+          "indication": "Last-resort IV antihypertensive when other agents unavailable",
           "dosing": {
             "doseOptions": [
               {
@@ -423,10 +429,18 @@
             "route": "IV",
             "instructions": "titrate every 5 min; max 10 mcg/kg/min",
             "orderSentence": "Sodium nitroprusside IV 0.25-0.5 mcg/kg/min IV"
-          }
+          },
+          "contraindications": "Risk of cyanide toxicity; theoretical concern about increasing ICP",
+          "monitoring": "Thiocyanate levels if >48h; requires arterial line; continuous BP monitoring",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Fenoldopam IV",
+          "route": "IV",
+          "indication": "Dopamine-1 agonist; hypertensive emergency with renal insufficiency",
           "dosing": {
             "doseOptions": [
               {
@@ -437,84 +451,84 @@
             "route": "IV",
             "instructions": "titrate by 0.05-0.1 mcg/kg/min every 15 min",
             "orderSentence": "Fenoldopam IV 0.1 mcg/kg/min IV"
-          }
+          },
+          "contraindications": "—",
+          "monitoring": "BP monitoring; renal function; urine output",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Hydralazine IV",
+          "route": "IV",
+          "indication": "Backup IV antihypertensive when other agents unavailable; eclampsia (with magnesium)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QID",
-                "orderSentence": "Hydralazine 10 mg IV QID"
-              },
-              {
-                "text": "25 mg QID",
-                "orderSentence": "Hydralazine 25 mg IV QID"
-              },
-              {
-                "text": "50 mg QID",
-                "orderSentence": "Hydralazine 50 mg IV QID"
+                "text": "10-20 mg",
+                "orderSentence": "Hydralazine IV 10-20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "10-20 mg :: IV :: bolus every 4-6 hours",
-            "orderSentence": "Hydralazine 10 mg IV QID"
-          }
+            "orderSentence": "Hydralazine IV 10-20 mg IV"
+          },
+          "contraindications": "NOT recommended first-line (unpredictable response, long duration)",
+          "monitoring": "BP monitoring; heart rate (reflex tachycardia)",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Lorazepam IV",
+          "route": "IV",
+          "indication": "First-line for acute seizures",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg IV TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg IV TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg IV TID"
+                "text": "4 mg",
+                "orderSentence": "Lorazepam IV 4 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "may repeat x1 after 5 min",
-            "orderSentence": "Lorazepam 0.5 mg IV TID"
-          }
+            "orderSentence": "Lorazepam IV 4 mg IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Airway; respiratory status; sedation level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Levetiracetam IV",
+          "route": "IV",
+          "indication": "Preferred maintenance ASM; safe in pregnancy",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg IV BID"
+                "text": "1000-1500 mg",
+                "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "then 500-1000 mg BID",
-            "orderSentence": "Levetiracetam 250 mg IV BID"
-          }
+            "orderSentence": "Levetiracetam IV 1000-1500 mg IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Renal function (dose adjust); behavioral changes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Fosphenytoin IV",
+          "route": "IV",
+          "indication": "Alternative ASM load if seizures persist",
           "dosing": {
             "doseOptions": [
               {
@@ -525,86 +539,86 @@
             "route": "IV",
             "instructions": "then 5 mg PE/kg/day",
             "orderSentence": "Fosphenytoin IV 20 mg PE/kg IV"
-          }
+          },
+          "contraindications": "—",
+          "monitoring": "BP and cardiac rhythm during infusion (risk of hypotension and arrhythmia); free phenytoin level",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Magnesium sulfate IV",
+          "route": "IV",
+          "indication": "First-line for eclampsia-related seizures; superior to phenytoin and diazepam (MAGPIE trial)",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g bolus",
-                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
-              },
-              {
-                "text": "2 g bolus",
-                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
-              },
-              {
-                "text": "4 g loading dose",
-                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
+                "text": "4-6 g",
+                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
               }
             ],
             "route": "IV",
             "instructions": "then 1-2 g/hr",
-            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
-          }
+            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Reflexes; urine output; magnesium levels; respiratory rate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ],
       "— First-Line Maintenance Treatment (Hospital/Transition)": [
         {
           "item": "Amlodipine PO",
+          "route": "PO",
+          "indication": "Long-acting CCB; first-line oral agent for BP transition",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg daily",
-                "orderSentence": "Amlodipine 2.5 mg PO daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Amlodipine 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Amlodipine 10 mg PO daily"
+                "text": "5-10 mg",
+                "orderSentence": "Amlodipine PO 5-10 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 5 mg, titrate to 10 mg",
-            "orderSentence": "Amlodipine 2.5 mg PO daily"
-          }
+            "orderSentence": "Amlodipine PO 5-10 mg PO"
+          },
+          "contraindications": "—",
+          "monitoring": "BP; peripheral edema; heart rate",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Lisinopril PO",
+          "route": "PO",
+          "indication": "ACE inhibitor for maintenance BP control",
           "dosing": {
             "doseOptions": [
               {
-                "text": "2.5 mg daily",
-                "orderSentence": "Lisinopril 2.5 mg PO daily"
-              },
-              {
-                "text": "5 mg daily",
-                "orderSentence": "Lisinopril 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Lisinopril 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Lisinopril 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Lisinopril 40 mg PO daily"
+                "text": "10-40 mg",
+                "orderSentence": "Lisinopril PO 10-40 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 10 mg",
-            "orderSentence": "Lisinopril 2.5 mg PO daily"
-          }
+            "orderSentence": "Lisinopril PO 10-40 mg PO"
+          },
+          "contraindications": "Bilateral renal artery stenosis; pregnancy; hyperkalemia",
+          "monitoring": "Potassium; creatinine; BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Losartan PO",
+          "route": "PO",
+          "indication": "ARB; alternative to ACE-I (cough, angioedema)",
           "dosing": {
             "doseOptions": [
               {
@@ -615,40 +629,40 @@
             "route": "PO",
             "instructions": "start 50 mg",
             "orderSentence": "Losartan PO 50-100 mg PO"
-          }
+          },
+          "contraindications": "Pregnancy",
+          "monitoring": "Potassium; creatinine; BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Labetalol PO",
+          "route": "PO",
+          "indication": "Oral continuation if IV labetalol was effective",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Labetalol 100 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Labetalol 200 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Labetalol 300 mg PO BID"
-              },
-              {
-                "text": "10 mg q10min PRN",
-                "orderSentence": "Labetalol 10 mg PO q10min PRN"
-              },
-              {
-                "text": "20 mg q10min PRN",
-                "orderSentence": "Labetalol 20 mg PO q10min PRN"
+                "text": "200-800 mg",
+                "orderSentence": "Labetalol PO 200-800 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 200 mg BID",
-            "orderSentence": "Labetalol 100 mg PO BID"
-          }
+            "orderSentence": "Labetalol PO 200-800 mg PO"
+          },
+          "contraindications": "—",
+          "monitoring": "Heart rate; BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Chlorthalidone PO",
+          "route": "PO",
+          "indication": "Thiazide-like diuretic; add-on for resistant hypertension",
           "dosing": {
             "doseOptions": [
               {
@@ -659,34 +673,42 @@
             "route": "PO",
             "instructions": "12.5-25 mg :: PO :: once daily",
             "orderSentence": "Chlorthalidone PO 12.5-25 mg PO"
-          }
+          },
+          "contraindications": "—",
+          "monitoring": "Electrolytes (potassium, sodium, magnesium); creatinine; uric acid",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "— Second-Line / Adjunctive Treatment": [
         {
           "item": "Hydralazine PO",
+          "route": "PO",
+          "indication": "Direct vasodilator; often combined with nitrate",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QID",
-                "orderSentence": "Hydralazine 10 mg PO QID"
-              },
-              {
-                "text": "25 mg QID",
-                "orderSentence": "Hydralazine 25 mg PO QID"
-              },
-              {
-                "text": "50 mg QID",
-                "orderSentence": "Hydralazine 50 mg PO QID"
+                "text": "25-50 mg",
+                "orderSentence": "Hydralazine PO 25-50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "25-50 mg :: PO :: TID-QID",
-            "orderSentence": "Hydralazine 10 mg PO QID"
-          }
+            "orderSentence": "Hydralazine PO 25-50 mg PO"
+          },
+          "contraindications": "—",
+          "monitoring": "BP; heart rate (reflex tachycardia)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Clonidine PO",
+          "route": "PO",
+          "indication": "Central alpha-2 agonist; add-on for BP control",
           "dosing": {
             "doseOptions": [
               {
@@ -697,10 +719,18 @@
             "route": "PO",
             "instructions": "0.1-0.3 mg :: PO :: BID-TID",
             "orderSentence": "Clonidine PO 0.1-0.3 mg PO"
-          }
+          },
+          "contraindications": "Avoid abrupt discontinuation (rebound hypertension)",
+          "monitoring": "BP; sedation; rebound hypertension on withdrawal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Minoxidil PO",
+          "route": "PO",
+          "indication": "Potent vasodilator for truly resistant hypertension",
           "dosing": {
             "doseOptions": [
               {
@@ -711,10 +741,18 @@
             "route": "PO",
             "instructions": "start 5 mg",
             "orderSentence": "Minoxidil PO 5-10 mg PO"
-          }
+          },
+          "contraindications": "—",
+          "monitoring": "BP; fluid retention; weight; ECG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Spironolactone PO",
+          "route": "PO",
+          "indication": "Aldosterone antagonist for resistant hypertension",
           "dosing": {
             "doseOptions": [
               {
@@ -725,123 +763,125 @@
             "route": "PO",
             "instructions": "25-50 mg :: PO :: once daily",
             "orderSentence": "Spironolactone PO 25-50 mg PO"
-          }
+          },
+          "contraindications": "—",
+          "monitoring": "Potassium; creatinine; BP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Dexamethasone IV",
+          "route": "IV",
+          "indication": "PRES with significant mass effect only (role controversial); reducing vasogenic edema",
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q6h",
-                "orderSentence": "Dexamethasone 4 mg IV q6h"
-              },
-              {
-                "text": "10 mg once then 4 mg q6h",
-                "orderSentence": "Dexamethasone 10 mg IV once then 4 mg q6h"
-              },
-              {
-                "text": "16 mg daily",
-                "orderSentence": "Dexamethasone 16 mg IV daily"
+                "text": "4-8 mg",
+                "orderSentence": "Dexamethasone IV 4-8 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "4-8 mg :: IV :: every 6 hours",
-            "orderSentence": "Dexamethasone 4 mg IV q6h"
-          }
+            "orderSentence": "Dexamethasone IV 4-8 mg IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Blood glucose; GI prophylaxis; infection signs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
         }
       ],
       "— Eclampsia-Specific Treatment": [
         {
           "item": "Magnesium sulfate IV",
+          "route": "IV",
+          "indication": "Definitive seizure treatment and prophylaxis in eclampsia; superior to all other agents",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g bolus",
-                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
-              },
-              {
-                "text": "2 g bolus",
-                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
-              },
-              {
-                "text": "4 g loading dose",
-                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
+                "text": "4-6 g",
+                "orderSentence": "Magnesium sulfate IV 4-6 g IV"
               }
             ],
             "route": "IV",
             "instructions": "then 1-2 g/hr",
-            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
-          }
+            "orderSentence": "Magnesium sulfate IV 4-6 g IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Reflexes; urine output; magnesium levels; respiratory rate",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Labetalol IV (pregnancy)",
+          "route": "IV",
+          "indication": "First-line antihypertensive in pregnancy-related hypertensive emergency",
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg BID",
-                "orderSentence": "Labetalol 100 mg IV BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Labetalol 200 mg IV BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Labetalol 300 mg IV BID"
-              },
-              {
-                "text": "10 mg q10min PRN",
-                "orderSentence": "Labetalol 10 mg IV q10min PRN"
-              },
-              {
-                "text": "20 mg q10min PRN",
-                "orderSentence": "Labetalol 20 mg IV q10min PRN"
+                "text": "20 mg",
+                "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "then 40-80 mg every 10-20 min (max 300 mg)",
-            "orderSentence": "Labetalol 100 mg IV BID"
-          }
+            "orderSentence": "Labetalol IV (pregnancy) 20 mg IV"
+          },
+          "contraindications": "—",
+          "monitoring": "Heart rate; BP; fetal heart rate monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Hydralazine IV (pregnancy)",
+          "route": "IV",
+          "indication": "Traditional agent for eclampsia/preeclampsia; less predictable than labetalol",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg QID",
-                "orderSentence": "Hydralazine 10 mg IV QID"
-              },
-              {
-                "text": "25 mg QID",
-                "orderSentence": "Hydralazine 25 mg IV QID"
-              },
-              {
-                "text": "50 mg QID",
-                "orderSentence": "Hydralazine 50 mg IV QID"
+                "text": "5-10 mg",
+                "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "5-10 mg :: IV :: every 20-30 min",
-            "orderSentence": "Hydralazine 10 mg IV QID"
-          }
+            "orderSentence": "Hydralazine IV (pregnancy) 5-10 mg IV"
+          },
+          "contraindications": "—",
+          "monitoring": "BP; heart rate; fetal heart rate monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Nifedipine PO (pregnancy)",
+          "route": "PO",
+          "indication": "Oral option for acute BP control in preeclampsia",
           "dosing": {
             "doseOptions": [
               {
-                "text": "10 mg PO",
-                "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
-              },
-              {
-                "text": "20 mg PO",
-                "orderSentence": "Nifedipine (immediate-release) 20 mg PO PO"
+                "text": "10-20 mg",
+                "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "10-20 mg :: PO :: every 30 min (immediate release for acute)",
-            "orderSentence": "Nifedipine (immediate-release) 10 mg PO PO"
-          }
+            "orderSentence": "Nifedipine PO (pregnancy) 10-20 mg PO"
+          },
+          "contraindications": "Avoid sublingual route",
+          "monitoring": "BP; heart rate; fetal heart rate monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ]
     },

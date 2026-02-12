@@ -1,5 +1,10 @@
 import SwiftUI
 
+/// Protocol for items that can report their visibility for a clinical setting
+protocol SettingFilterable {
+    func isVisible(for setting: ClinicalSetting) -> Bool
+}
+
 /// Generic section container that displays subsections with collapsible headers.
 /// Works with any item type (labs, imaging, treatment, other recs).
 struct SectionGroup<Item: Identifiable, ItemView: View>: View {
@@ -70,6 +75,45 @@ struct SectionGroup<Item: Identifiable, ItemView: View>: View {
     private var totalItemCount: Int {
         subsections.values.reduce(0) { $0 + $1.count }
     }
+    
+    /// Count of items visible in the current setting (for filterable items)
+    private var visibleItemCount: Int {
+        var count = 0
+        for items in subsections.values {
+            for item in items {
+                if let filterable = item as? SettingFilterable {
+                    if filterable.isVisible(for: setting) {
+                        count += 1
+                    }
+                } else {
+                    // Non-filterable items are always visible
+                    count += 1
+                }
+            }
+        }
+        return count
+    }
+    
+    /// Check if any items are hidden due to the current setting filter
+    private var hasHiddenItems: Bool {
+        visibleItemCount < totalItemCount
+    }
+    
+    /// Settings that have visible items for this section
+    private var settingsWithItems: [ClinicalSetting] {
+        ClinicalSetting.allCases.filter { testSetting in
+            for items in subsections.values {
+                for item in items {
+                    if let filterable = item as? SettingFilterable {
+                        if filterable.isVisible(for: testSetting) {
+                            return true
+                        }
+                    }
+                }
+            }
+            return false
+        }
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -105,7 +149,13 @@ struct SectionGroup<Item: Identifiable, ItemView: View>: View {
 
             if expanded {
                 ForEach(sortedSubsections, id: \.key) { subsection, items in
-                    let filteredItems = items
+                    // Filter items based on visibility for current setting
+                    let filteredItems = items.filter { item in
+                        if let filterable = item as? SettingFilterable {
+                            return filterable.isVisible(for: setting)
+                        }
+                        return true // Non-filterable items are always visible
+                    }
                     if !filteredItems.isEmpty {
                         VStack(alignment: .leading, spacing: 4) {
                             // Subsection header
@@ -142,8 +192,64 @@ struct SectionGroup<Item: Identifiable, ItemView: View>: View {
                         }
                     }
                 }
+                
+                // Show hint when no items are visible in current setting
+                if visibleItemCount == 0 && totalItemCount > 0 {
+                    NoItemsHintView(
+                        totalCount: totalItemCount,
+                        currentSetting: setting,
+                        availableSettings: settingsWithItems
+                    )
+                    .padding(.horizontal)
+                }
             }
         }
         
+    }
+}
+
+// MARK: - No Items Hint View
+
+struct NoItemsHintView: View {
+    let totalCount: Int
+    let currentSetting: ClinicalSetting
+    let availableSettings: [ClinicalSetting]
+    
+    var body: some View {
+        GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
+            VStack(alignment: .leading, spacing: 8) {
+                HStack(spacing: 6) {
+                    Image(systemName: "info.circle.fill")
+                        .foregroundStyle(.orange)
+                    Text("No items for \(currentSetting.label)")
+                        .font(.system(.subheadline, design: .rounded, weight: .medium))
+                }
+                
+                if !availableSettings.isEmpty {
+                    Text("\(totalCount) item\(totalCount == 1 ? "" : "s") available in:")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    
+                    HStack(spacing: 8) {
+                        ForEach(availableSettings) { setting in
+                            HStack(spacing: 4) {
+                                Image(systemName: setting.icon)
+                                    .font(.system(size: 10))
+                                Text(setting.label)
+                                    .font(.system(.caption2, design: .rounded, weight: .medium))
+                            }
+                            .foregroundStyle(.teal)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(.teal.opacity(0.1), in: Capsule())
+                        }
+                    }
+                } else {
+                    Text("This section has \(totalCount) reference item\(totalCount == 1 ? "" : "s").")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
     }
 }

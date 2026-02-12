@@ -399,7 +399,7 @@
         {
           "item": "**Benzodiazepine (if actively seizing)** (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Active seizure; first-line for acute seizure termination",
           "dosing": {
             "doseOptions": [
               {
@@ -421,7 +421,7 @@
         {
           "item": "**Protect patient during seizure**",
           "route": "-",
-          "indication": "-",
+          "indication": "Active seizure; injury prevention",
           "dosing": {
             "doseOptions": [
               {
@@ -443,7 +443,7 @@
         {
           "item": "**Post-ictal care**",
           "route": "-",
-          "indication": "-",
+          "indication": "Post-ictal state; airway protection; injury assessment",
           "dosing": {
             "doseOptions": [
               {
@@ -464,8 +464,8 @@
         },
         {
           "item": "**Administer home ASM (if missed)**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO/IV",
+          "indication": "Non-adherence (most common cause of breakthrough seizure)",
           "dosing": {
             "doseOptions": [
               {
@@ -487,7 +487,7 @@
         {
           "item": "**Loading dose (if significantly subtherapeutic)**",
           "route": "IV",
-          "indication": "-",
+          "indication": "Significantly subtherapeutic ASM level; need rapid therapeutic concentration",
           "dosing": {
             "doseOptions": [
               {
@@ -509,7 +509,7 @@
         {
           "item": "**Treat precipitant**",
           "route": "-",
-          "indication": "-",
+          "indication": "Identified seizure precipitant (infection, electrolyte, withdrawal)",
           "dosing": {
             "doseOptions": [
               {
@@ -662,168 +662,245 @@
       "Medications to AVOID or Use with Caution": [
         {
           "item": "**Tramadol**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Lowers seizure threshold; serotonergic and noradrenergic effects",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Tramadol** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Tramadol** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Use alternative analgesics; dose-dependent seizure risk",
+            "orderSentence": "**Tramadol** Avoid PO"
           },
-          "contraindications": "-",
+          "contraindications": "Epilepsy patients",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Meperidine (Demerol)**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/IM",
+          "indication": "Normeperidine metabolite is proconvulsant; accumulates in renal impairment",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Meperidine (Demerol)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Meperidine (Demerol)** Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Use morphine or hydromorphone instead",
+            "orderSentence": "**Meperidine (Demerol)** Avoid IV"
           },
-          "contraindications": "-",
+          "contraindications": "Seizure history",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Bupropion**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Dose-dependent seizure risk (0.4% at ≤450 mg/day); lowers threshold",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Bupropion** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Bupropion** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Contraindicated in seizure disorder; use SSRI/SNRI instead",
+            "orderSentence": "**Bupropion** Avoid PO"
           },
-          "contraindications": "-",
+          "contraindications": "Seizure disorder",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Clozapine**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Highest seizure risk of all antipsychotics (3-5% dose-dependent)",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Clozapine** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Clozapine** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "If required, use lowest dose with AED coverage",
+            "orderSentence": "**Clozapine** Avoid PO"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Epilepsy",
+          "monitoring": "EEG if used",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Fluoroquinolones**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "GABA-A antagonism lowers seizure threshold",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Fluoroquinolones** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Fluoroquinolones** Avoid IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Use alternative antibiotics; risk increases with renal impairment",
+            "orderSentence": "**Fluoroquinolones** Avoid IV/PO"
           },
-          "contraindications": "-",
+          "contraindications": "Seizure history",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Carbapenems (imipenem > meropenem)**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV",
+          "indication": "Imipenem: highest seizure risk (3-33%); also reduces valproate levels 60-100%",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Carbapenems (imipenem > meropenem)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Carbapenems (imipenem > meropenem)** Avoid IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Meropenem safer than imipenem; avoid all carbapenems with valproate",
+            "orderSentence": "**Carbapenems (imipenem > meropenem)** Avoid IV"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Epilepsy on valproate",
+          "monitoring": "Valproate levels if used",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Isoniazid**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Depletes pyridoxine (vitamin B6) → lowers seizure threshold; overdose causes refractory seizures",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Isoniazid** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Isoniazid** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "If required, co-administer pyridoxine 50 mg daily; treat INH seizures with IV pyridoxine",
+            "orderSentence": "**Isoniazid** Avoid PO"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "TB patients with epilepsy",
+          "monitoring": "B6 levels",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Theophylline / Aminophylline**",
-          "route": "-",
-          "indication": "-",
+          "route": "IV/PO",
+          "indication": "Adenosine antagonism lowers seizure threshold; dose-dependent risk",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Theophylline / Aminophylline** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Theophylline / Aminophylline** Avoid IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Use alternative bronchodilators if possible",
+            "orderSentence": "**Theophylline / Aminophylline** Avoid IV/PO"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Epilepsy; asthma/COPD overlap",
+          "monitoring": "Drug levels",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Stimulants (amphetamines, methylphenidate)**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Lower seizure threshold via catecholamine release",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Stimulants (amphetamines, methylphenidate)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Stimulants (amphetamines, methylphenidate)** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Use with caution if ADHD comorbidity; ensure ASM therapeutic",
+            "orderSentence": "**Stimulants (amphetamines, methylphenidate)** Avoid PO"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "ADHD with epilepsy",
+          "monitoring": "Seizure frequency",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Alcohol (acute intoxication and withdrawal)**",
-          "route": "-",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Withdrawal lowers seizure threshold; intoxication may mask seizures",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Alcohol (acute intoxication and withdrawal)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Alcohol (acute intoxication and withdrawal)** Avoid PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Counsel on abstinence; treat withdrawal with benzodiazepines",
+            "orderSentence": "**Alcohol (acute intoxication and withdrawal)** Avoid PO"
           },
-          "contraindications": "-",
+          "contraindications": "All epilepsy patients",
           "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         },
         {
           "item": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)**",
           "route": "-",
-          "indication": "-",
+          "indication": "Potent seizure provokers via multiple mechanisms",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "Avoid",
+                "orderSentence": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)** Avoid -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Substance abuse counseling; toxicology screening",
+            "orderSentence": "**Illicit drugs (cocaine, amphetamines, synthetic cathinones)** Avoid -"
           },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "All epilepsy patients",
+          "monitoring": "Toxicology screen",
+          "ED": "AVOID",
+          "HOSP": "AVOID",
+          "OPD": "AVOID",
+          "ICU": "AVOID"
         }
       ]
     },

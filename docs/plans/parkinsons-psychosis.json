@@ -235,166 +235,296 @@
     "Treatment": {
       "— Acute / Emergency Treatment": [
         {
-          "item": "**Rule out delirium**",
-          "details": "UTI, pneumonia, constipation/fecal impaction, medication changes, hospitalization itself — treat the underlying cause; psychosis may resolve entirely"
-        },
-        {
-          "item": "**Medication review — eliminate offending agents**",
-          "details": "Systematic deprescribing in order of cognitive risk (stop first → stop last): **anticholinergics** (benztropine, trihexyphenidyl) → **amantadine** → **MAO-B inhibitors** (selegiline, rasagiline) → **dopamine agonists** (pramipexole, ropinirole, rotigotine) → **COMT inhibitors** (entacapone) → **reduce levodopa dose** (last resort — maintain motor function)"
-        },
-        {
-          "item": "**Environmental measures**",
-          "details": "Adequate lighting (reduce visual hallucinations), familiar objects, reorientation, sleep hygiene, minimize polypharmacy"
-        },
-        {
-          "item": "Quetiapine PO",
+          "item": "Rule out delirium",
+          "route": "-",
+          "indication": "Identify treatable precipitants of psychosis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg QHS",
-                "orderSentence": "Quetiapine 12.5 mg PO QHS"
-              },
+                "text": "-",
+                "orderSentence": "Rule out delirium - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "UTI, pneumonia, constipation/fecal impaction, medication changes, hospitalization itself — treat the underlying cause; psychosis may resolve entirely",
+            "orderSentence": "Rule out delirium - -"
+          },
+          "contraindications": "-",
+          "monitoring": "Vital signs, urinalysis, CBC, CMP, chest X-ray",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Medication review — eliminate offending agents",
+          "route": "-",
+          "indication": "Deprescribe medications contributing to psychosis",
+          "dosing": {
+            "doseOptions": [
               {
-                "text": "25 mg QHS",
-                "orderSentence": "Quetiapine 25 mg PO QHS"
-              },
+                "text": "-",
+                "orderSentence": "Medication review — eliminate offending agents - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Systematic deprescribing in order of cognitive risk (stop first → stop last): **anticholinergics** (benztropine, trihexyphenidyl) → **amantadine** → **MAO-B inhibitors** (selegiline, rasagiline) → **dopamine agonists** (pramipexole, ropinirole, rotigotine) → **COMT inhibitors** (entacapone) → **reduce levodopa dose** (last resort — maintain motor function)",
+            "orderSentence": "Medication review — eliminate offending agents - -"
+          },
+          "contraindications": "Do not abruptly discontinue dopaminergic agents — risk of neuroleptic malignant-like syndrome",
+          "monitoring": "Motor function (UPDRS); symptom re-assessment after each change",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Environmental measures",
+          "route": "-",
+          "indication": "Non-pharmacologic psychosis management",
+          "dosing": {
+            "doseOptions": [
               {
-                "text": "50 mg QHS",
-                "orderSentence": "Quetiapine 50 mg PO QHS"
-              },
+                "text": "-",
+                "orderSentence": "Environmental measures - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Adequate lighting (reduce visual hallucinations), familiar objects, reorientation, sleep hygiene, minimize polypharmacy",
+            "orderSentence": "Environmental measures - -"
+          },
+          "contraindications": "-",
+          "monitoring": "Psychosis symptom frequency; sleep quality",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Acute agitation in PDP — first-line; lowest D2 affinity among available agents",
+          "dosing": {
+            "doseOptions": [
               {
-                "text": "100 mg QHS",
-                "orderSentence": "Quetiapine 100 mg PO QHS"
+                "text": "12.5-25 mg",
+                "orderSentence": "Quetiapine 12.5-25 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 12.5 mg, may repeat in 2 hours",
-            "orderSentence": "Quetiapine 12.5 mg PO QHS"
-          }
+            "orderSentence": "Quetiapine 12.5-25 mg PO"
+          },
+          "contraindications": "Avoid IM formulation; avoid if QTc >500 ms",
+          "monitoring": "Sedation level; QTc; metabolic panel; glucose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Lorazepam",
+          "route": "PO/IV/IM",
+          "indication": "Severe agitation in PDP — benzodiazepine safer than typical antipsychotic",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.5 mg TID",
-                "orderSentence": "Lorazepam 0.5 mg PO/IV/IM TID"
-              },
-              {
-                "text": "1 mg TID",
-                "orderSentence": "Lorazepam 1 mg PO/IV/IM TID"
-              },
-              {
-                "text": "2 mg TID",
-                "orderSentence": "Lorazepam 2 mg PO/IV/IM TID"
+                "text": "0.5-1 mg",
+                "orderSentence": "Lorazepam 0.5-1 mg PO/IV/IM"
               }
             ],
             "route": "PO/IV/IM",
-            "instructions": "0.5-1 mg :: PO/IV/IM :: as needed",
-            "orderSentence": "Lorazepam 0.5 mg PO/IV/IM TID"
-          }
+            "instructions": "use lowest effective dose",
+            "orderSentence": "Lorazepam 0.5-1 mg PO/IV/IM"
+          },
+          "contraindications": "Respiratory depression; avoid in severe hepatic impairment",
+          "monitoring": "Sedation level; respiratory rate; fall risk",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ],
       "— First-Line Chronic Treatment": [
         {
           "item": "Pimavanserin (Nuplazid)",
+          "route": "PO",
+          "indication": "PDP — only FDA-approved medication (2016); selective 5-HT2A inverse agonist; no D2 blockade",
           "dosing": {
             "doseOptions": [
               {
-                "text": "34 mg daily",
-                "orderSentence": "Pimavanserin 34 mg PO daily"
+                "text": "34 mg",
+                "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "no titration needed",
-            "orderSentence": "Pimavanserin 34 mg PO daily"
-          }
+            "instructions": "no titration needed; onset of effect 4-6 weeks",
+            "orderSentence": "Pimavanserin (Nuplazid) 34 mg PO"
+          },
+          "contraindications": "Avoid if QTc >500 ms; avoid with strong CYP3A4 inhibitors",
+          "monitoring": "Baseline ECG and periodic QTc monitoring; no dose adjustment in renal impairment; prior authorization usually required",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "Quetiapine PO (chronic)",
+          "item": "Quetiapine (chronic)",
+          "route": "PO",
+          "indication": "PDP — best-studied alternative to pimavanserin; very low D2 affinity at low doses",
           "dosing": {
             "doseOptions": [
               {
-                "text": "12.5 mg QHS",
-                "orderSentence": "Quetiapine 12.5 mg PO QHS"
-              },
-              {
-                "text": "25 mg QHS",
-                "orderSentence": "Quetiapine 25 mg PO QHS"
-              },
-              {
-                "text": "50 mg QHS",
-                "orderSentence": "Quetiapine 50 mg PO QHS"
-              },
-              {
-                "text": "100 mg QHS",
-                "orderSentence": "Quetiapine 100 mg PO QHS"
+                "text": "12.5-150 mg",
+                "orderSentence": "Quetiapine (chronic) 12.5-150 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "start 12.5 mg, titrate by 12.5-25 mg every 3-5 days; target lowest effective dose",
-            "orderSentence": "Quetiapine 12.5 mg PO QHS"
-          }
+            "instructions": "start 12.5 mg, titrate by 12.5-25 mg every 3-5 days; target lowest effective dose; typical effective range 25-100 mg qhs",
+            "orderSentence": "Quetiapine (chronic) 12.5-150 mg PO"
+          },
+          "contraindications": "Orthostatic hypotension risk (already a PD issue)",
+          "monitoring": "Metabolic panel; fasting glucose and lipids; weight; orthostatic blood pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "— Second-Line Treatment": [
         {
-          "item": "Clozapine PO",
+          "item": "Clozapine",
+          "route": "PO",
+          "indication": "PDP — best evidence for efficacy (Level B, AAN); low D2 affinity; effective at very low doses",
           "dosing": {
             "doseOptions": [
               {
-                "text": "6.25 mg QHS",
-                "orderSentence": "Clozapine 6.25 mg PO QHS"
-              },
-              {
-                "text": "12.5 mg QHS",
-                "orderSentence": "Clozapine 12.5 mg PO QHS"
-              },
-              {
-                "text": "25 mg daily",
-                "orderSentence": "Clozapine 25 mg PO daily"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Clozapine 50 mg PO daily"
+                "text": "6.25-50 mg",
+                "orderSentence": "Clozapine 6.25-50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 6.25 mg (1/4 of 25 mg tablet), titrate by 6.25 mg every 3-7 days; target 12.5-50 mg/day",
-            "orderSentence": "Clozapine 6.25 mg PO QHS"
-          }
+            "orderSentence": "Clozapine 6.25-50 mg PO"
+          },
+          "contraindications": "Requires REMS program enrollment; contraindicated if unable to comply with ANC monitoring; risk of agranulocytosis (~1%); risk of myocarditis (rare)",
+          "monitoring": "Mandatory ANC monitoring (weekly x6 months, then biweekly x6 months, then monthly); metabolic panel; fasting glucose and lipids; weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "Cholinesterase inhibitors (rivastigmine, donepezil)",
+          "item": "Rivastigmine",
+          "route": "PO/transdermal",
+          "indication": "PD dementia with psychosis — addresses cholinergic deficit; may reduce hallucinations (EXPRESS trial)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "Rivastigmine",
-                "orderSentence": "Cholinesterase inhibitors (rivastigmine, donepezil) Rivastigmine 1.5 mg"
+                "orderSentence": "Rivastigmine Rivastigmine 1.5 mg"
               }
             ],
             "route": "1.5 mg",
             "instructions": "BID",
-            "orderSentence": "Cholinesterase inhibitors (rivastigmine, donepezil) Rivastigmine 1.5 mg"
-          }
+            "orderSentence": "Rivastigmine Rivastigmine 1.5 mg"
+          },
+          "contraindications": "GI side effects common with oral; tremor may transiently worsen",
+          "monitoring": "GI tolerability; cognitive testing (MMSE/MoCA); tremor severity",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "— Refractory Psychosis Management": [
         {
-          "item": "**Combination therapy**",
-          "details": "Pimavanserin + quetiapine (or + clozapine) — limited evidence but used in practice for severe cases"
+          "item": "Combination therapy (pimavanserin + quetiapine or + clozapine)",
+          "route": "PO",
+          "indication": "Severe refractory PDP — limited evidence but used in practice",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Combination therapy (pimavanserin + quetiapine or + clozapine) - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Use pimavanserin + quetiapine (or + clozapine) per individual dosing guidelines above",
+            "orderSentence": "Combination therapy (pimavanserin + quetiapine or + clozapine) - -"
+          },
+          "contraindications": "Additive QTc prolongation risk with pimavanserin + quetiapine; additive sedation",
+          "monitoring": "QTc (combined agents); ANC if clozapine included; metabolic panel; sedation level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "**Electroconvulsive therapy (ECT)**",
-          "details": "Case reports/small series show benefit for severe PDP refractory to medications; also improves motor symptoms temporarily; logistic and access barriers"
+          "item": "Electroconvulsive therapy (ECT)",
+          "route": "-",
+          "indication": "Severe PDP refractory to all medications; also improves motor symptoms temporarily",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Electroconvulsive therapy (ECT) - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Case reports/small series show benefit; logistic and access barriers",
+            "orderSentence": "Electroconvulsive therapy (ECT) - -"
+          },
+          "contraindications": "Standard ECT contraindications (raised ICP, pheochromocytoma, unstable aneurysm)",
+          "monitoring": "Post-procedure cognitive assessment; motor function (UPDRS); seizure duration",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "-"
         },
         {
-          "item": "**Reduce levodopa**",
-          "details": "If all else fails, gradually reduce levodopa — accept some motor worsening to control psychosis; family discussion about trade-offs essential"
+          "item": "Reduce levodopa",
+          "route": "PO",
+          "indication": "Refractory psychosis — last resort; accept some motor worsening to control psychosis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Reduce levodopa - PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "If all else fails, gradually reduce levodopa; family discussion about trade-offs essential",
+            "orderSentence": "Reduce levodopa - PO"
+          },
+          "contraindications": "Never abruptly discontinue — risk of neuroleptic malignant-like syndrome",
+          "monitoring": "Motor function (UPDRS); psychosis severity; ADL function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "**Structured care environment**",
-          "details": "If psychosis is persistent and dangerous — consider memory care or psychiatric facility with movement disorder expertise"
+          "item": "Structured care environment",
+          "route": "-",
+          "indication": "Persistent and dangerous psychosis unresponsive to treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "-",
+                "orderSentence": "Structured care environment - -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Consider memory care or psychiatric facility with movement disorder expertise",
+            "orderSentence": "Structured care environment - -"
+          },
+          "contraindications": "-",
+          "monitoring": "Safety assessments; psychosis severity; caregiver burden",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ]
     },

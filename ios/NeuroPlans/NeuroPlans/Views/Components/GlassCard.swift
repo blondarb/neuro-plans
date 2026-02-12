@@ -1,16 +1,36 @@
 import SwiftUI
 
 struct GlassCard<Content: View>: View {
+    @Environment(\.colorScheme) var colorScheme
     var cornerRadius: CGFloat = AppTheme.cornerRadius
     @ViewBuilder var content: () -> Content
 
     var body: some View {
         content()
             .padding(AppTheme.cardPadding)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius))
+            .background {
+                if colorScheme == .dark {
+                    RoundedRectangle(cornerRadius: cornerRadius)
+                        .fill(.ultraThinMaterial)
+                } else {
+                    RoundedRectangle(cornerRadius: cornerRadius)
+                        .fill(Color(.systemBackground))
+                        .shadow(
+                            color: Color.black.opacity(0.06),
+                            radius: 8,
+                            x: 0,
+                            y: 2
+                        )
+                }
+            }
             .overlay {
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .strokeBorder(.white.opacity(0.1), lineWidth: 0.5)
+                    .strokeBorder(
+                        colorScheme == .dark 
+                            ? Color.white.opacity(0.08) 
+                            : Color.black.opacity(0.04),
+                        lineWidth: 0.5
+                    )
             }
     }
 }

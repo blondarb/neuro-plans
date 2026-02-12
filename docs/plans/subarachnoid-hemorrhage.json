@@ -457,7 +457,7 @@
         {
           "item": "Blood pressure control: Nicardipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "SBP >160 with unsecured aneurysm; re-bleed prevention",
           "dosing": {
             "doseOptions": [
               {
@@ -479,7 +479,7 @@
         {
           "item": "Blood pressure control: Labetalol IV (CPT 96374)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Alternative to nicardipine for SBP >160",
           "dosing": {
             "doseOptions": [
               {
@@ -501,7 +501,7 @@
         {
           "item": "Blood pressure control: Clevidipine IV (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Ultra-short-acting alternative for BP control",
           "dosing": {
             "doseOptions": [
               {
@@ -522,22 +522,18 @@
         },
         {
           "item": "Nimodipine (CORNERSTONE of vasospasm prevention)",
-          "route": "IV",
-          "indication": "-",
+          "route": "PO",
+          "indication": "Vasospasm prevention; start within 96h of SAH onset x 21 days",
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg q4h",
-                "orderSentence": "Nimodipine 30 mg IV q4h"
-              },
-              {
-                "text": "60 mg q4h",
-                "orderSentence": "Nimodipine 60 mg IV q4h"
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (CORNERSTONE of vasospasm prevention) 60 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm",
-            "orderSentence": "Nimodipine 30 mg IV q4h"
+            "orderSentence": "Nimodipine (CORNERSTONE of vasospasm prevention) 60 mg IV"
           },
           "contraindications": "Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG",
           "monitoring": "BP with each dose; do NOT give IV; ensure enteral route only",
@@ -549,7 +545,7 @@
         {
           "item": "External ventricular drain (EVD)",
           "route": "-",
-          "indication": "-",
+          "indication": "Acute hydrocephalus; GCS declining; ICP monitoring needed",
           "dosing": {
             "doseOptions": [
               {
@@ -571,7 +567,7 @@
         {
           "item": "Seizure prophylaxis (short-term)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Short-term (3-7 days) seizure prophylaxis per AHA 2012",
           "dosing": {
             "doseOptions": [
               {
@@ -593,7 +589,7 @@
         {
           "item": "Intubation / Airway protection",
           "route": "-",
-          "indication": "-",
+          "indication": "GCS ≤8; airway protection; respiratory failure; impending herniation",
           "dosing": {
             "doseOptions": [
               {
@@ -615,7 +611,7 @@
         {
           "item": "Aminocaproic acid (antifibrinolytic) (CPT 96365)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Short-term (<72h) if aneurysm securing delayed; reduces re-bleeding",
           "dosing": {
             "doseOptions": [
               {
@@ -637,7 +633,7 @@
         {
           "item": "IV isotonic fluids (euvolemia)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Euvolemia maintenance; hypovolemia worsens vasospasm",
           "dosing": {
             "doseOptions": [
               {
@@ -659,7 +655,7 @@
         {
           "item": "Stress ulcer prophylaxis: Pantoprazole",
           "route": "IV",
-          "indication": "-",
+          "indication": "GI prophylaxis in critically ill SAH patient",
           "dosing": {
             "doseOptions": [
               {
@@ -681,7 +677,7 @@
         {
           "item": "DVT prophylaxis: Pneumatic compression devices",
           "route": "-",
-          "indication": "-",
+          "indication": "SAH patients are HIGH VTE risk; start immediately",
           "dosing": {
             "doseOptions": [
               {
@@ -703,21 +699,17 @@
         {
           "item": "DVT prophylaxis: Heparin SC (after aneurysm secured)",
           "route": "SC",
-          "indication": "-",
+          "indication": "Pharmacologic DVT prophylaxis; start 24h after aneurysm secured",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5000 units q8h",
-                "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q8h"
-              },
-              {
-                "text": "5000 units q12h",
-                "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q12h"
+                "text": "5000 units",
+                "orderSentence": "DVT prophylaxis: Heparin SC (after aneurysm secured) 5000 units SC"
               }
             ],
             "route": "SC",
             "instructions": "5000 units SC q8h; start 24h after aneurysm is secured (clipping or coiling); some centers start earlier",
-            "orderSentence": "Dvt Prophylaxis: Heparin Sc 5000 units SC q8h"
+            "orderSentence": "DVT prophylaxis: Heparin SC (after aneurysm secured) 5000 units SC"
           },
           "contraindications": "Active bleeding; within 24h of craniotomy (per surgeon)",
           "monitoring": "Platelets q3 days",
@@ -731,7 +723,7 @@
         {
           "item": "Endovascular coiling",
           "route": "-",
-          "indication": "-",
+          "indication": "Preferred per ISAT for posterior circulation and many anterior aneurysms",
           "dosing": {
             "doseOptions": [
               {
@@ -753,7 +745,7 @@
         {
           "item": "Surgical clipping (craniotomy)",
           "route": "-",
-          "indication": "-",
+          "indication": "MCA aneurysms; wide-neck aneurysms not amenable to coiling",
           "dosing": {
             "doseOptions": [
               {
@@ -775,7 +767,7 @@
         {
           "item": "Flow diverter (Pipeline, FRED)",
           "route": "-",
-          "indication": "-",
+          "indication": "Large/giant or wide-necked aneurysms not amenable to standard coiling",
           "dosing": {
             "doseOptions": [
               {
@@ -799,21 +791,17 @@
         {
           "item": "Nimodipine (continued)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Vasospasm prevention; continue 60 mg q4h x 21 days total",
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg q4h",
-                "orderSentence": "Nimodipine 30 mg PO q4h"
-              },
-              {
-                "text": "60 mg q4h",
-                "orderSentence": "Nimodipine 60 mg PO q4h"
+                "text": "60 mg",
+                "orderSentence": "Nimodipine (continued) 60 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Continue 60 mg PO q4h x 21 days total",
-            "orderSentence": "Nimodipine 30 mg PO q4h"
+            "orderSentence": "Nimodipine (continued) 60 mg PO"
           },
           "contraindications": "Hypotension",
           "monitoring": "BP with each dose",
@@ -825,7 +813,7 @@
         {
           "item": "Induced hypertension",
           "route": "IV",
-          "indication": "-",
+          "indication": "Clinical vasospasm (new deficit days 4-14); aneurysm MUST be secured first",
           "dosing": {
             "doseOptions": [
               {
@@ -847,7 +835,7 @@
         {
           "item": "IV fluid bolus (euvolemia maintenance)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Hypovolemia in vasospasm window; maintain euvolemia",
           "dosing": {
             "doseOptions": [
               {
@@ -869,7 +857,7 @@
         {
           "item": "Milrinone IV (alternative vasospasm treatment)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Rescue for vasospasm not responding to induced hypertension",
           "dosing": {
             "doseOptions": [
               {
@@ -890,8 +878,8 @@
         },
         {
           "item": "Intra-arterial vasodilator therapy (endovascular rescue)",
-          "route": "PO",
-          "indication": "-",
+          "route": "IA",
+          "indication": "Medically refractory vasospasm; intra-arterial verapamil/nicardipine",
           "dosing": {
             "doseOptions": [
               {
@@ -913,7 +901,7 @@
         {
           "item": "Angioplasty (balloon)",
           "route": "-",
-          "indication": "-",
+          "indication": "Focal proximal vasospasm refractory to medical treatment",
           "dosing": {
             "doseOptions": [
               {
@@ -935,25 +923,17 @@
         {
           "item": "Magnesium sulfate (supplemental)",
           "route": "IV",
-          "indication": "-",
+          "indication": "Maintain serum Mg >2.0 mg/dL; standard supplementation in SAH",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 g bolus",
-                "orderSentence": "Magnesium Sulfate 1 g IV bolus"
-              },
-              {
-                "text": "2 g bolus",
-                "orderSentence": "Magnesium Sulfate 2 g IV bolus"
-              },
-              {
-                "text": "4 g loading dose",
-                "orderSentence": "Magnesium Sulfate 4 g IV loading dose"
+                "text": "2.0 mg",
+                "orderSentence": "Magnesium sulfate (supplemental) 2.0 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Target serum Mg >2.0 mg/dL; replete with MgSO4 2-4 g IV over 1-2h PRN. MASH-2 trial: IV magnesium infusion did NOT improve outcomes, but maintaining normal-high Mg is standard",
-            "orderSentence": "Magnesium Sulfate 1 g IV bolus"
+            "orderSentence": "Magnesium sulfate (supplemental) 2.0 mg IV"
           },
           "contraindications": "Renal failure; hypermagnesemia",
           "monitoring": "Serum Mg q12-24h; deep tendon reflexes",
@@ -994,21 +974,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.1 mg daily",
-                "orderSentence": "Fludrocortisone 0.1 mg PO daily"
-              },
-              {
-                "text": "0.2 mg daily",
-                "orderSentence": "Fludrocortisone 0.2 mg PO daily"
-              },
-              {
-                "text": "0.3 mg daily",
-                "orderSentence": "Fludrocortisone 0.3 mg PO daily"
+                "text": "0.1-0.2 mg",
+                "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "0.1-0.2 mg PO BID",
-            "orderSentence": "Fludrocortisone 0.1 mg PO daily"
+            "orderSentence": "Fludrocortisone 0.1-0.2 mg PO"
           },
           "pretreatment": "-",
           "contraindications": "-",

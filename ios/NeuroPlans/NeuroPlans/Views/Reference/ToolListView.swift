@@ -47,6 +47,9 @@ struct ToolListView: View {
         .listStyle(.plain)
         .navigationTitle(title)
         .searchable(text: $searchText, prompt: "Search tools...")
+        .navigationDestination(for: NeurologyTool.self) { tool in
+            ToolDetailView(tool: tool)
+        }
     }
 
     private func categoryIcon(_ cat: String) -> String {

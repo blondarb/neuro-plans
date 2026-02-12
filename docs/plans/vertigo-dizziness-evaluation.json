@@ -382,110 +382,220 @@
     "Treatment": {
       "Acute/Emergent Treatment": [
         {
-          "item": "**Symptomatic relief (vestibular suppressants)**",
-          "route": "IV",
-          "indication": "-",
+          "item": "Meclizine",
+          "route": "PO",
+          "indication": "Acute vestibular suppression; first-line for symptomatic vertigo relief",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25-50 mg",
-                "orderSentence": "**Symptomatic relief (vestibular suppressants)** 25-50 mg IV"
+                "text": "25 mg",
+                "orderSentence": "Meclizine 25 mg PO"
               }
             ],
-            "route": "IV",
-            "instructions": "**Acute severe vertigo:** Meclizine 25-50 mg PO q6-8h; OR Dimenhydrinate (Dramamine) 50 mg PO/IV q6h; OR Promethazine 25 mg PO/IM/IV q6h; OR Ondansetron 4-8 mg IV/PO q8h (for nausea); **IV fluids** for dehydration from vomiting; **Diazepam** 2-5 mg IV/PO for severe acute vertigo (benzodiazepines are potent vestibular suppressants)",
-            "orderSentence": "**Symptomatic relief (vestibular suppressants)** 25-50 mg IV"
+            "route": "PO",
+            "instructions": "start 25 mg PO q8h; may increase to 50 mg q8h for severe vertigo; maximum 72 hours then taper — prolonged use delays vestibular compensation",
+            "orderSentence": "Meclizine 25 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Short-term use only (24-72h); vestibular suppressants interfere with central compensation if used chronically; avoid in suspected central cause until stroke ruled out",
+          "contraindications": "Glaucoma; urinary retention; hepatic impairment",
+          "monitoring": "Sedation level; limit to 24-72h — chronic use impairs central compensation; reassess if symptoms persist beyond 72h",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
-          "item": "**IV fluids**",
-          "route": "IV",
-          "indication": "-",
+          "item": "Dimenhydrinate (Dramamine)",
+          "route": "PO/IV",
+          "indication": "Acute vertigo and nausea; alternative vestibular suppressant",
           "dosing": {
             "doseOptions": [
               {
-                "text": "N/A",
-                "orderSentence": "**IV fluids** N/A IV"
+                "text": "50 mg",
+                "orderSentence": "Dimenhydrinate (Dramamine) 50 mg PO/IV"
               }
             ],
-            "route": "IV",
-            "instructions": "If dehydrated from vomiting; NS or LR bolus then maintenance; assess orthostatic hypotension",
-            "orderSentence": "**IV fluids** N/A IV"
+            "route": "PO/IV",
+            "instructions": "50 mg PO or IV every 6 hours; maximum 72 hours then discontinue",
+            "orderSentence": "Dimenhydrinate (Dramamine) 50 mg PO/IV"
           },
-          "contraindications": "-",
-          "monitoring": "Supportive care; correct volume depletion",
-          "ED": "STAT",
-          "HOSP": "STAT",
-          "OPD": "-",
-          "ICU": "STAT"
-        },
-        {
-          "item": "**Antiemetics**",
-          "route": "IV",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "4-8 mg",
-                "orderSentence": "**Antiemetics** 4-8 mg IV"
-              }
-            ],
-            "route": "IV",
-            "instructions": "Ondansetron 4-8 mg IV/PO; metoclopramide 10 mg IV (avoid in elderly — EPS); prochlorperazine 5-10 mg IV/IM",
-            "orderSentence": "**Antiemetics** 4-8 mg IV"
-          },
-          "contraindications": "-",
-          "monitoring": "Nausea is often the most debilitating symptom",
+          "contraindications": "Glaucoma; urinary retention; concurrent anticholinergics",
+          "monitoring": "Sedation level; limit to 72h; monitor for anticholinergic effects in elderly",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
           "ICU": "STAT"
         },
         {
-          "item": "**Rule out stroke**",
-          "route": "-",
-          "indication": "-",
+          "item": "Promethazine",
+          "route": "PO/IM/IV",
+          "indication": "Acute severe vertigo with nausea; vestibular suppressant with strong antiemetic effect",
           "dosing": {
             "doseOptions": [
               {
-                "text": "N/A",
-                "orderSentence": "**Rule out stroke** N/A -"
+                "text": "25 mg",
+                "orderSentence": "Promethazine 25 mg PO/IM/IV"
               }
             ],
-            "route": "-",
-            "instructions": "**If ANY central features on HINTS:** STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; **Central features:** Normal/negative head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance (cannot walk), hearing loss + vertigo without Meniere's history",
-            "orderSentence": "**Rule out stroke** N/A -"
+            "route": "PO/IM/IV",
+            "instructions": "25 mg every 6 hours; IM preferred over IV (extravasation risk); avoid >72h",
+            "orderSentence": "Promethazine 25 mg PO/IM/IV"
           },
-          "contraindications": "-",
-          "monitoring": "HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT rely on negative CT to exclude stroke",
+          "contraindications": "IV extravasation risk (tissue necrosis); age <2; avoid in elderly (strong anticholinergic)",
+          "monitoring": "Sedation; blood pressure (hypotension risk with IV); limit to 72h",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "-",
           "ICU": "STAT"
         },
         {
-          "item": "**Epley maneuver (canalith repositioning) (CPT 95992)**",
-          "route": "-",
-          "indication": "-",
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting from acute vertigo; first-line antiemetic",
           "dosing": {
             "doseOptions": [
               {
-                "text": "90%",
-                "orderSentence": "**Epley maneuver (canalith repositioning) (CPT 95992)** 90% -"
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4-8 mg IV/PO every 8 hours; does not suppress vestibular system — safe for ongoing use",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QTc prolongation >500 ms; concurrent QT-prolonging drugs; serotonin syndrome risk with SSRIs",
+          "monitoring": "QTc interval; serotonin syndrome symptoms if on serotonergic medications",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Metoclopramide",
+          "route": "IV",
+          "indication": "Nausea and vomiting from acute vertigo; prokinetic antiemetic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Metoclopramide 10 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV every 6-8 hours; limit to 5 days maximum",
+            "orderSentence": "Metoclopramide 10 mg IV"
+          },
+          "contraindications": "Parkinsonism; tardive dyskinesia risk; GI obstruction; pheochromocytoma; avoid in elderly (EPS risk)",
+          "monitoring": "Extrapyramidal symptoms; limit duration to 5 days; avoid in elderly",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Prochlorperazine",
+          "route": "IV/IM",
+          "indication": "Nausea and vomiting from acute severe vertigo; rescue antiemetic",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-10 mg",
+                "orderSentence": "Prochlorperazine 5-10 mg IV/IM"
+              }
+            ],
+            "route": "IV/IM",
+            "instructions": "5-10 mg IV or IM every 6-8 hours; rectal 25 mg suppository alternative",
+            "orderSentence": "Prochlorperazine 5-10 mg IV/IM"
+          },
+          "contraindications": "Parkinsonism; tardive dyskinesia risk; QTc prolongation; dementia (increased mortality)",
+          "monitoring": "Extrapyramidal symptoms; QTc; sedation; blood pressure (hypotension)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Diazepam",
+          "route": "PO/IV",
+          "indication": "Severe acute vertigo refractory to antihistamines; potent vestibular suppressant",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2-5 mg",
+                "orderSentence": "Diazepam 2-5 mg PO/IV"
+              }
+            ],
+            "route": "PO/IV",
+            "instructions": "2-5 mg PO or IV every 8-12 hours; maximum 72 hours — benzodiazepines strongly delay vestibular compensation",
+            "orderSentence": "Diazepam 2-5 mg PO/IV"
+          },
+          "contraindications": "Respiratory depression; acute angle-closure glaucoma; severe hepatic insufficiency; myasthenia gravis",
+          "monitoring": "Sedation; respiratory status; fall risk; limit to 72h — strongly impairs central vestibular compensation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "IV Normal Saline",
+          "route": "IV",
+          "indication": "Dehydration from vomiting; volume repletion; orthostatic hypotension",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500-1000 mL",
+                "orderSentence": "IV Normal Saline 500-1000 mL IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "NS or LR bolus 500-1000 mL; then maintenance as needed; reassess orthostatic vital signs after bolus",
+            "orderSentence": "IV Normal Saline 500-1000 mL IV"
+          },
+          "contraindications": "Volume overload; decompensated heart failure",
+          "monitoring": "Urine output; orthostatic vital signs; fluid balance",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Stroke evaluation (HINTS exam + imaging)",
+          "route": "-",
+          "indication": "Rule out posterior circulation stroke in acute vestibular syndrome",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Stroke evaluation (HINTS exam + imaging) N/A -"
               }
             ],
             "route": "-",
-            "instructions": "**For BPPV (positive Dix-Hallpike):** Immediately perform Epley maneuver; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises",
-            "orderSentence": "**Epley maneuver (canalith repositioning) (CPT 95992)** 90% -"
+            "instructions": "If ANY central features on HINTS: STAT MRI with DWI; vascular imaging (MRA or CTA); neurology/stroke consultation; central features = normal head impulse test, vertical or direction-changing nystagmus, skew deviation, focal neurologic signs, severe imbalance",
+            "orderSentence": "Stroke evaluation (HINTS exam + imaging) N/A -"
           },
-          "contraindications": "-",
-          "monitoring": "Epley is definitive treatment for posterior canal BPPV; medications are NOT indicated for BPPV — repositioning maneuvers are the treatment",
+          "contraindications": "Do not rely on negative CT to exclude posterior fossa stroke",
+          "monitoring": "HINTS is more sensitive than early CT or MRI for posterior circulation stroke; do NOT discharge if central features present",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Epley maneuver (canalith repositioning) (CPT 95992)",
+          "route": "Positioning",
+          "indication": "BPPV confirmed by positive Dix-Hallpike; definitive treatment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Epley maneuver (canalith repositioning) (CPT 95992) N/A positioning"
+              }
+            ],
+            "route": "positioning",
+            "instructions": "For positive Dix-Hallpike: perform Epley immediately; highly effective (80-90% single treatment); may repeat if symptoms persist; send home with instructions for home Epley or Brandt-Daroff exercises",
+            "orderSentence": "Epley maneuver (canalith repositioning) (CPT 95992) N/A positioning"
+          },
+          "contraindications": "Severe cervical spine disease or instability (modify technique); medications are NOT indicated for BPPV",
+          "monitoring": "Symptom resolution; nystagmus resolution; may repeat same session or next visit",
           "ED": "STAT",
           "HOSP": "STAT",
           "OPD": "ROUTINE",
@@ -494,646 +604,776 @@
       ],
       "Disease-Specific Treatment": [
         {
-          "item": "**Epley maneuver (posterior canal)**",
-          "route": "-",
-          "indication": "-",
+          "item": "Epley maneuver (posterior canal)",
+          "route": "Positioning",
+          "indication": "First-line treatment for posterior canal BPPV; confirmed by positive Dix-Hallpike",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Epley maneuver (posterior canal)** N/A -"
+                "orderSentence": "Epley maneuver (posterior canal) N/A positioning"
               }
             ],
-            "route": "-",
-            "instructions": "Standard canalith repositioning; patient starts seated, Dix-Hallpike position for 30 sec, rotate head 90° toward opposite side (30 sec), roll body to face down with head still turned (30 sec), sit up; NNT = 2-3 for resolution",
-            "orderSentence": "**Epley maneuver (posterior canal)** N/A -"
+            "route": "positioning",
+            "instructions": "Patient starts seated → Dix-Hallpike position (30 sec) → rotate head 90° toward opposite side (30 sec) → roll body face down with head still turned (30 sec) → sit up; NNT = 2-3 for resolution",
+            "orderSentence": "Epley maneuver (posterior canal) N/A positioning"
           },
-          "contraindications": "-",
-          "monitoring": "First-line treatment for posterior canal BPPV; highly effective; may repeat same day or next visit",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "contraindications": "Severe cervical spine disease or instability; carotid stenosis (theoretical)",
+          "monitoring": "Symptom and nystagmus resolution; may repeat same day or next visit",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Semont maneuver (alternative)**",
-          "route": "-",
-          "indication": "-",
+          "item": "Semont maneuver (alternative)",
+          "route": "Positioning",
+          "indication": "Posterior canal BPPV; alternative to Epley",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Semont maneuver (alternative)** N/A -"
+                "orderSentence": "Semont maneuver (alternative) N/A positioning"
               }
             ],
-            "route": "-",
-            "instructions": "Alternative to Epley; patient moved rapidly from side to side; less commonly used but effective",
-            "orderSentence": "**Semont maneuver (alternative)** N/A -"
+            "route": "positioning",
+            "instructions": "Patient moved rapidly from side to side; less commonly used but effective for posterior canal BPPV",
+            "orderSentence": "Semont maneuver (alternative) N/A positioning"
           },
-          "contraindications": "-",
-          "monitoring": "Alternative if Epley difficult or ineffective",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "contraindications": "Same as Epley",
+          "monitoring": "Symptom resolution; use if Epley difficult or ineffective",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**BBQ roll (Lempert maneuver) — horizontal canal**",
-          "route": "-",
-          "indication": "-",
+          "item": "BBQ roll (Lempert maneuver) — horizontal canal",
+          "route": "Positioning",
+          "indication": "Horizontal canal BPPV; geotropic variant",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**BBQ roll (Lempert maneuver) — horizontal canal** N/A -"
+                "orderSentence": "BBQ roll (Lempert maneuver) — horizontal canal N/A positioning"
               }
             ],
-            "route": "-",
-            "instructions": "For horizontal canal BPPV; patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses",
-            "orderSentence": "**BBQ roll (Lempert maneuver) — horizontal canal** N/A -"
+            "route": "positioning",
+            "instructions": "Patient rotates 360° along long axis of body (log roll) toward unaffected side; 90° increments with 30 sec pauses between each position",
+            "orderSentence": "BBQ roll (Lempert maneuver) — horizontal canal N/A positioning"
           },
-          "contraindications": "-",
-          "monitoring": "Treatment for horizontal canal BPPV; geotropic variant",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "contraindications": "Cervical spine disease or instability",
+          "monitoring": "Symptom resolution; horizontal nystagmus resolution",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Brandt-Daroff exercises (home)**",
-          "route": "-",
-          "indication": "-",
+          "item": "Brandt-Daroff exercises (home)",
+          "route": "Positioning",
+          "indication": "Adjunctive home therapy for residual BPPV symptoms",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Brandt-Daroff exercises (home)** N/A -"
+                "orderSentence": "Brandt-Daroff exercises (home) N/A positioning"
               }
             ],
-            "route": "-",
-            "instructions": "Patient alternates lying on each side x 30 sec, 10-20 repetitions, 3x daily; habituates symptoms; less effective than Epley for posterior canal",
-            "orderSentence": "**Brandt-Daroff exercises (home)** N/A -"
+            "route": "positioning",
+            "instructions": "Alternate lying on each side x 30 sec, 10-20 repetitions, 3 times daily; habituates symptoms; less effective than Epley for posterior canal",
+            "orderSentence": "Brandt-Daroff exercises (home) N/A positioning"
           },
-          "contraindications": "-",
-          "monitoring": "Adjunctive home therapy; may help with residual symptoms; promotes compensation",
+          "contraindications": "None",
+          "monitoring": "Symptom improvement; promotes vestibular compensation",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Avoid vestibular suppressants for BPPV**",
+          "item": "Post-treatment positioning precautions",
           "route": "-",
-          "indication": "-",
+          "indication": "After canalith repositioning maneuver",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Avoid vestibular suppressants for BPPV** N/A -"
-              }
-            ],
-            "route": "-",
-            "instructions": "Do NOT prescribe meclizine for ongoing BPPV treatment; medications delay compensation and do not address the mechanical problem",
-            "orderSentence": "**Avoid vestibular suppressants for BPPV** N/A -"
-          },
-          "contraindications": "-",
-          "monitoring": "BPPV is a mechanical problem (otoliths); repositioning is definitive treatment",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Post-treatment instructions**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "N/A",
-                "orderSentence": "**Post-treatment instructions** N/A -"
+                "orderSentence": "Post-treatment positioning precautions N/A -"
               }
             ],
             "route": "-",
             "instructions": "Avoid lying flat for 1-2 nights (sleep propped up); avoid rapid head movements for 24-48h; avoid affected side lying for 1 week (controversial but commonly recommended)",
-            "orderSentence": "**Post-treatment instructions** N/A -"
+            "orderSentence": "Post-treatment positioning precautions N/A -"
           },
-          "contraindications": "-",
-          "monitoring": "Reduces immediate recurrence; evidence is mixed",
+          "contraindications": "None",
+          "monitoring": "Recurrence of positional symptoms; reduces immediate recurrence",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Corticosteroids**",
-          "route": "-",
-          "indication": "-",
+          "item": "Prednisone",
+          "route": "PO",
+          "indication": "Vestibular neuritis; start within 72h of symptom onset for best benefit",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg/kg",
-                "orderSentence": "**Corticosteroids** 1 mg/kg -"
+                "text": "60 mg",
+                "orderSentence": "Prednisone 60 mg PO"
               }
             ],
-            "route": "-",
-            "instructions": "**Prednisone 1 mg/kg/day (max 60 mg) x 10 days with taper** OR methylprednisolone 100 mg x 3 days then taper; start within 72 hours of symptom onset for best benefit",
-            "orderSentence": "**Corticosteroids** 1 mg/kg -"
+            "route": "PO",
+            "instructions": "1 mg/kg/day (max 60 mg) x 10 days then taper over 5 days; [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/) — NNT ~4 for complete vestibular recovery",
+            "orderSentence": "Prednisone 60 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "[Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/): Steroids improve vestibular function recovery in vestibular neuritis; start early; NNT ~4 for complete recovery",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "contraindications": "Active infection (relative); uncontrolled diabetes; GI bleeding",
+          "monitoring": "Glucose (hyperglycemia); blood pressure; GI symptoms; psychiatric side effects; insomnia",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         },
         {
-          "item": "**Antivirals (controversial)**",
+          "item": "Methylprednisolone IV (alternative)",
+          "route": "IV",
+          "indication": "Vestibular neuritis; severe cases or unable to take PO",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Methylprednisolone IV (alternative) 100 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "100 mg IV daily x 3 days then transition to oral prednisone taper",
+            "orderSentence": "Methylprednisolone IV (alternative) 100 mg IV"
+          },
+          "contraindications": "Same as prednisone",
+          "monitoring": "Glucose; blood pressure; psychiatric side effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Valacyclovir (controversial)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Vestibular neuritis; empiric antiviral if early presentation",
           "dosing": {
             "doseOptions": [
               {
                 "text": "1000 mg",
-                "orderSentence": "**Antivirals (controversial)** 1000 mg PO"
+                "orderSentence": "Valacyclovir (controversial) 1000 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Valacyclovir 1000 mg TID x 7 days; evidence is WEAK; some use empirically if early presentation; thought to be HSV reactivation (like Bell's palsy)",
-            "orderSentence": "**Antivirals (controversial)** 1000 mg PO"
+            "instructions": "Evidence is WEAK; Cochrane review shows no clear benefit; some clinicians use empirically, especially if labyrinthitis with hearing loss (HSV reactivation theory)",
+            "orderSentence": "Valacyclovir (controversial) 1000 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Cochrane review: No clear benefit; some clinicians still use empirically, especially if labyrinthitis with hearing loss",
+          "contraindications": "Renal impairment (dose adjust)",
+          "monitoring": "Renal function; limited evidence of benefit",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Vestibular suppressants (short-term only)**",
+          "item": "Meclizine (short-term only)",
           "route": "PO",
-          "indication": "-",
+          "indication": "Vestibular neuritis/labyrinthitis; short-term symptom relief",
           "dosing": {
             "doseOptions": [
               {
                 "text": "25 mg",
-                "orderSentence": "**Vestibular suppressants (short-term only)** 25 mg PO"
+                "orderSentence": "Meclizine (short-term only) 25 mg PO"
               }
             ],
             "route": "PO",
-            "instructions": "Meclizine 25 mg q8h OR dimenhydrinate 50 mg q6h OR diazepam 5 mg BID x 1-3 days ONLY; taper off as soon as tolerated",
-            "orderSentence": "**Vestibular suppressants (short-term only)** 25 mg PO"
+            "instructions": "25 mg q8h; taper off as soon as tolerated; STOP after 72 hours maximum — prolonged use delays vestibular compensation",
+            "orderSentence": "Meclizine (short-term only) 25 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Short-term symptom relief; STOP after 72 hours maximum — prolonged use delays compensation",
-          "ED": "-",
-          "HOSP": "-",
+          "contraindications": "Glaucoma; urinary retention",
+          "monitoring": "Sedation; MUST discontinue by 72h to allow central compensation",
+          "ED": "STAT",
+          "HOSP": "STAT",
           "OPD": "-",
-          "ICU": "-"
+          "ICU": "STAT"
         },
         {
-          "item": "**Early vestibular rehabilitation**",
-          "route": "-",
-          "indication": "-",
+          "item": "Vestibular rehabilitation therapy",
+          "route": "Positioning",
+          "indication": "Vestibular neuritis/labyrinthitis; START EARLY after acute symptoms controlled",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Early vestibular rehabilitation** N/A -"
+                "orderSentence": "Vestibular rehabilitation therapy N/A -"
               }
             ],
             "route": "-",
-            "instructions": "Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; **START EARLY** (as soon as acute symptoms controlled)",
-            "orderSentence": "**Early vestibular rehabilitation** N/A -"
+            "instructions": "Refer to vestibular physical therapy; gaze stabilization exercises; balance training; habituation exercises; Cochrane review confirms efficacy for unilateral vestibular hypofunction",
+            "orderSentence": "Vestibular rehabilitation therapy N/A -"
           },
-          "contraindications": "-",
-          "monitoring": "Cochrane review: Vestibular rehabilitation is effective for unilateral vestibular hypofunction; early initiation improves outcomes",
+          "contraindications": "None",
+          "monitoring": "Functional improvement; balance assessment; early initiation improves outcomes",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Education**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "N/A",
-                "orderSentence": "**Education** N/A -"
-              }
-            ],
-            "route": "-",
-            "instructions": "Explain natural history (acute symptoms resolve over days to weeks; full compensation may take weeks to months); reassurance; avoid prolonged bed rest",
-            "orderSentence": "**Education** N/A -"
-          },
-          "contraindications": "-",
-          "monitoring": "Reduce anxiety; promote activity and compensation",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Dietary modification**",
+          "item": "Low sodium diet",
           "route": "PO",
-          "indication": "-",
+          "indication": "First-line lifestyle modification for Meniere's; reduces endolymphatic hydrops",
           "dosing": {
             "doseOptions": [
               {
-                "text": "1500-2000 mg/day",
-                "orderSentence": "**Dietary modification** 1500-2000 mg/day PO"
+                "text": "N/A",
+                "orderSentence": "Low sodium diet N/A PO"
               }
             ],
             "route": "PO",
-            "instructions": "Low sodium diet (<1500-2000 mg/day); limit caffeine and alcohol; regular meals; avoid MSG",
-            "orderSentence": "**Dietary modification** 1500-2000 mg/day PO"
+            "instructions": "Sodium <1500-2000 mg/day; limit caffeine and alcohol; regular meals; avoid MSG",
+            "orderSentence": "Low sodium diet N/A PO"
           },
-          "contraindications": "-",
-          "monitoring": "First-line lifestyle modification; reduces endolymphatic hydrops; evidence is limited but widely recommended",
+          "contraindications": "None",
+          "monitoring": "Attack frequency; dietary compliance; evidence limited but widely recommended",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Diuretics**",
-          "route": "-",
-          "indication": "-",
+          "item": "Hydrochlorothiazide",
+          "route": "PO",
+          "indication": "Meniere's disease; reduces endolymph volume",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25-50 mg",
-                "orderSentence": "**Diuretics** 25-50 mg -"
+                "text": "25 mg",
+                "orderSentence": "Hydrochlorothiazide 25 mg PO"
               }
             ],
-            "route": "-",
-            "instructions": "Hydrochlorothiazide 25-50 mg daily OR hydrochlorothiazide/triamterene (Dyazide, Maxzide); acetazolamide 250 mg BID as alternative",
-            "orderSentence": "**Diuretics** 25-50 mg -"
+            "route": "PO",
+            "instructions": "25-50 mg daily; alternative: HCTZ/triamterene (Dyazide) to reduce potassium wasting",
+            "orderSentence": "Hydrochlorothiazide 25 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Reduces endolymph volume; widely used despite limited RCT evidence",
+          "contraindications": "Sulfa allergy; severe renal impairment; hypokalemia",
+          "monitoring": "Potassium; renal function; blood pressure; widely used despite limited RCT evidence",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Betahistine**",
-          "route": "-",
-          "indication": "-",
+          "item": "Acetazolamide",
+          "route": "PO",
+          "indication": "Meniere's disease; alternative diuretic",
           "dosing": {
             "doseOptions": [
               {
-                "text": "16-24 mg",
-                "orderSentence": "**Betahistine** 16-24 mg -"
+                "text": "250 mg",
+                "orderSentence": "Acetazolamide 250 mg PO"
               }
             ],
-            "route": "-",
-            "instructions": "16-24 mg TID (not available in US; available in Europe, Canada); H1 agonist/H3 antagonist; improves cochlear blood flow",
-            "orderSentence": "**Betahistine** 16-24 mg -"
+            "route": "PO",
+            "instructions": "250 mg BID; carbonic anhydrase inhibitor",
+            "orderSentence": "Acetazolamide 250 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Commonly used in Europe; evidence mixed; may reduce attack frequency",
+          "contraindications": "Sulfa allergy; severe hepatic disease; hyponatremia",
+          "monitoring": "Electrolytes (metabolic acidosis); renal function; paresthesias",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Intratympanic gentamicin**",
-          "route": "-",
-          "indication": "-",
+          "item": "Betahistine",
+          "route": "PO",
+          "indication": "Meniere's disease; H1 agonist/H3 antagonist improving cochlear blood flow",
           "dosing": {
             "doseOptions": [
               {
-                "text": "N/A",
-                "orderSentence": "**Intratympanic gentamicin** N/A -"
+                "text": "16 mg",
+                "orderSentence": "Betahistine 16 mg PO"
               }
             ],
-            "route": "-",
-            "instructions": "Chemical vestibular ablation; destroys vestibular hair cells; reduces vertigo attacks but risks hearing loss; for refractory unilateral disease",
-            "orderSentence": "**Intratympanic gentamicin** N/A -"
+            "route": "PO",
+            "instructions": "16-24 mg TID; not available in US; available in Europe and Canada; evidence mixed; may reduce attack frequency",
+            "orderSentence": "Betahistine 16 mg PO"
           },
-          "contraindications": "-",
-          "monitoring": "Effective for vertigo control (>80%); risk of hearing loss (10-30%); used for refractory cases",
+          "contraindications": "Active peptic ulcer; pheochromocytoma; asthma (relative)",
+          "monitoring": "Attack frequency; hearing; GI symptoms",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Intratympanic steroids**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "N/A",
-                "orderSentence": "**Intratympanic steroids** N/A -"
-              }
-            ],
-            "route": "-",
-            "instructions": "Dexamethasone intratympanic injection; may reduce attacks; less destructive than gentamicin",
-            "orderSentence": "**Intratympanic steroids** N/A -"
-          },
-          "contraindications": "-",
-          "monitoring": "Alternative to gentamicin; preserves hearing; less consistent efficacy",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Endolymphatic sac surgery**",
-          "route": "-",
-          "indication": "-",
+          "item": "Intratympanic dexamethasone",
+          "route": "Intratympanic",
+          "indication": "Refractory Meniere's disease; less destructive than gentamicin",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Endolymphatic sac surgery** N/A -"
+                "orderSentence": "Intratympanic dexamethasone N/A intratympanic"
               }
             ],
-            "route": "-",
-            "instructions": "Surgical decompression of endolymphatic sac; evidence is debated; some benefit in select patients",
-            "orderSentence": "**Endolymphatic sac surgery** N/A -"
+            "route": "intratympanic",
+            "instructions": "Dexamethasone intratympanic injection; preserves hearing; less consistent efficacy than gentamicin",
+            "orderSentence": "Intratympanic dexamethasone N/A intratympanic"
           },
-          "contraindications": "-",
-          "monitoring": "Controversial; Cochrane review shows limited evidence; considered for refractory cases",
+          "contraindications": "Middle ear infection; tympanic membrane perforation",
+          "monitoring": "Hearing (audiometry); vertigo frequency; alternative to gentamicin",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Vestibular nerve section / Labyrinthectomy**",
-          "route": "-",
-          "indication": "-",
+          "item": "Intratympanic gentamicin",
+          "route": "Intratympanic",
+          "indication": "Refractory unilateral Meniere's disease; chemical vestibular ablation",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Vestibular nerve section / Labyrinthectomy** N/A -"
+                "orderSentence": "Intratympanic gentamicin N/A intratympanic"
               }
             ],
-            "route": "-",
-            "instructions": "Surgical destruction of vestibular nerve (preserves hearing) or entire labyrinth (destroys hearing); for refractory unilateral disease",
-            "orderSentence": "**Vestibular nerve section / Labyrinthectomy** N/A -"
+            "route": "intratympanic",
+            "instructions": "Destroys vestibular hair cells; reduces vertigo attacks; effective >80%; risk of hearing loss 10-30%",
+            "orderSentence": "Intratympanic gentamicin N/A intratympanic"
           },
-          "contraindications": "-",
-          "monitoring": "Last resort; highly effective for vertigo; significant surgery",
+          "contraindications": "Bilateral Meniere's (risk of bilateral vestibular loss); only hearing ear",
+          "monitoring": "Hearing (audiometry before and after); balance function; reserved for refractory cases",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "EXT",
           "ICU": "-"
         },
         {
-          "item": "**Migraine lifestyle modifications**",
-          "route": "-",
-          "indication": "-",
+          "item": "Endolymphatic sac surgery",
+          "route": "Surgical",
+          "indication": "Refractory Meniere's disease; surgical option",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Migraine lifestyle modifications** N/A -"
+                "orderSentence": "Endolymphatic sac surgery N/A surgical"
               }
             ],
-            "route": "-",
-            "instructions": "Regular sleep; hydration; avoid triggers (specific to patient); regular meals; stress management",
-            "orderSentence": "**Migraine lifestyle modifications** N/A -"
+            "route": "surgical",
+            "instructions": "Surgical decompression of endolymphatic sac; Cochrane review shows limited evidence; considered for refractory cases",
+            "orderSentence": "Endolymphatic sac surgery N/A surgical"
           },
-          "contraindications": "-",
-          "monitoring": "Baseline management for all migraine",
+          "contraindications": "Standard surgical contraindications",
+          "monitoring": "Hearing; vertigo frequency; controversial efficacy",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "EXT",
           "ICU": "-"
         },
         {
-          "item": "**Acute treatment**",
-          "route": "SC",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "50-100 mg",
-                "orderSentence": "**Acute treatment** 50-100 mg SC"
-              }
-            ],
-            "route": "SC",
-            "instructions": "Triptans (sumatriptan 50-100 mg PO, 6 mg SQ); NSAIDs; antiemetics (ondansetron, metoclopramide); vestibular suppressants for vertigo component",
-            "orderSentence": "**Acute treatment** 50-100 mg SC"
-          },
-          "contraindications": "-",
-          "monitoring": "Standard migraine abortive therapy; triptans can help vestibular symptoms",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Preventive therapy**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "40-160 mg",
-                "orderSentence": "**Preventive therapy** 40-160 mg -"
-              }
-            ],
-            "route": "-",
-            "instructions": "**Beta-blockers:** Propranolol 40-160 mg daily; metoprolol 50-200 mg daily; **TCAs:** Amitriptyline 10-75 mg HS; nortriptyline; **Anticonvulsants:** Topiramate 25-100 mg BID; valproate; **SNRIs:** Venlafaxine 37.5-150 mg daily; **Other:** CGRP antagonists (emerging); verapamil",
-            "orderSentence": "**Preventive therapy** 40-160 mg -"
-          },
-          "contraindications": "-",
-          "monitoring": "Same preventive agents as migraine; choose based on comorbidities (e.g., depression → amitriptyline; hypertension → beta-blocker)",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Vestibular rehabilitation**",
-          "route": "-",
-          "indication": "-",
+          "item": "Vestibular nerve section / Labyrinthectomy",
+          "route": "Surgical",
+          "indication": "Refractory unilateral Meniere's disease; last resort",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Vestibular rehabilitation** N/A -"
+                "orderSentence": "Vestibular nerve section / Labyrinthectomy N/A surgical"
               }
             ],
-            "route": "-",
-            "instructions": "Helpful for chronic vestibular symptoms between attacks; balance training; habituation",
-            "orderSentence": "**Vestibular rehabilitation** N/A -"
+            "route": "surgical",
+            "instructions": "Nerve section preserves hearing; labyrinthectomy destroys hearing; both highly effective for vertigo control",
+            "orderSentence": "Vestibular nerve section / Labyrinthectomy N/A surgical"
           },
-          "contraindications": "-",
-          "monitoring": "May improve chronic symptoms and disability",
+          "contraindications": "Bilateral disease; only hearing ear (labyrinthectomy)",
+          "monitoring": "Hearing; balance; vestibular rehabilitation post-op; significant surgery — last resort",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "EXT",
           "ICU": "-"
         },
         {
-          "item": "**Stroke protocol**",
+          "item": "Sumatriptan",
+          "route": "PO/SC",
+          "indication": "Acute vestibular migraine attack; abortive therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Sumatriptan 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg PO; or 6 mg SC for severe attacks; may repeat x1 after 2 hours (PO)",
+            "orderSentence": "Sumatriptan 50 mg PO"
+          },
+          "contraindications": "Coronary artery disease; uncontrolled hypertension; hemiplegic migraine; basilar migraine; concurrent ergots or MAO-Is",
+          "monitoring": "Chest symptoms; cardiovascular risk; headache frequency (limit to <10 days/month to avoid MOH)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Propranolol",
+          "route": "PO",
+          "indication": "Vestibular migraine prophylaxis; first-line preventive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Propranolol 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40-160 mg daily; titrate over 2-4 weeks; preferred if concurrent hypertension",
+            "orderSentence": "Propranolol 40 mg PO"
+          },
+          "contraindications": "Asthma; severe bradycardia; heart block; decompensated HF; diabetes (masks hypoglycemia)",
+          "monitoring": "Heart rate; blood pressure; depression symptoms; exercise tolerance",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Vestibular migraine prophylaxis; preferred if concurrent insomnia or depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "10-75 mg at bedtime; titrate by 10 mg every 1-2 weeks; anticholinergic effects limit use in elderly",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Glaucoma; urinary retention; recent MI; concurrent MAO-Is; QTc prolongation",
+          "monitoring": "Weight; anticholinergic side effects; ECG if dose >50 mg; somnolence",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Topiramate",
+          "route": "PO",
+          "indication": "Vestibular migraine prophylaxis; alternative preventive",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Topiramate 25 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "start 25 mg daily, titrate to 50-100 mg BID over 4-8 weeks; weight-neutral to weight-loss effect",
+            "orderSentence": "Topiramate 25 mg PO"
+          },
+          "contraindications": "Nephrolithiasis; metabolic acidosis; glaucoma; pregnancy (teratogenic)",
+          "monitoring": "Bicarbonate (metabolic acidosis); renal function; cognitive side effects; weight",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine",
+          "route": "PO",
+          "indication": "Vestibular migraine prophylaxis; preferred if concurrent anxiety or depression",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine 37.5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "37.5-150 mg daily; titrate by 37.5 mg every 1-2 weeks",
+            "orderSentence": "Venlafaxine 37.5 mg PO"
+          },
+          "contraindications": "Uncontrolled hypertension; concurrent MAO-Is; abrupt discontinuation (withdrawal)",
+          "monitoring": "Blood pressure (dose-dependent hypertension); mood; discontinuation must be gradual",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vestibular rehabilitation therapy",
+          "route": "Positioning",
+          "indication": "Chronic vestibular symptoms between migraine attacks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "Vestibular rehabilitation therapy N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Balance training; habituation exercises; helpful for interictal vestibular symptoms and disability",
+            "orderSentence": "Vestibular rehabilitation therapy N/A -"
+          },
+          "contraindications": "None",
+          "monitoring": "Functional improvement; symptom frequency",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "IV alteplase (tPA) or tenecteplase",
           "route": "IV",
-          "indication": "-",
+          "indication": "Acute posterior circulation stroke within thrombolysis window",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Stroke protocol** N/A IV"
+                "orderSentence": "IV alteplase (tPA) or tenecteplase N/A IV"
               }
             ],
             "route": "IV",
-            "instructions": "If central cause suspected or identified: acute stroke protocol; consider IV thrombolysis (tPA/tenecteplase) if within window; endovascular therapy for basilar artery occlusion; aspirin if not tPA candidate; admit to stroke unit",
-            "orderSentence": "**Stroke protocol** N/A IV"
+            "instructions": "Per acute ischemic stroke protocol; consider IV thrombolysis if within window; endovascular therapy for basilar artery occlusion",
+            "orderSentence": "IV alteplase (tPA) or tenecteplase N/A IV"
           },
-          "contraindications": "-",
-          "monitoring": "Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated",
-          "ED": "-",
-          "HOSP": "-",
+          "contraindications": "Standard tPA contraindications (see acute ischemic stroke plan)",
+          "monitoring": "Posterior circulation stroke is life-threatening; basilar artery occlusion has >80% mortality if untreated; neuro checks q15 min",
+          "ED": "STAT",
+          "HOSP": "STAT",
           "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Aspirin",
+          "route": "PO",
+          "indication": "Acute posterior circulation stroke; if not tPA candidate",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325 mg",
+                "orderSentence": "Aspirin 325 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "325 mg loading dose within 24-48h (if not receiving tPA); then dual antiplatelet per CHANCE/POINT trial",
+            "orderSentence": "Aspirin 325 mg PO"
+          },
+          "contraindications": "Active GI bleeding; aspirin allergy; within 24h of tPA",
+          "monitoring": "GI bleeding; platelet function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dual antiplatelet therapy (aspirin + clopidogrel)",
+          "route": "PO",
+          "indication": "Secondary stroke prevention; minor stroke or TIA",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "325/75 mg",
+                "orderSentence": "Dual antiplatelet therapy (aspirin + clopidogrel) 325/75 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Aspirin 325 mg + clopidogrel 75 mg x 21 days per CHANCE/POINT trial; then single agent",
+            "orderSentence": "Dual antiplatelet therapy (aspirin + clopidogrel) 325/75 mg PO"
+          },
+          "contraindications": "Active bleeding; planned surgery",
+          "monitoring": "Bleeding; platelet function; duration 21 days then reassess",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Secondary stroke prevention**",
-          "route": "-",
-          "indication": "-",
+          "item": "Atorvastatin",
+          "route": "PO",
+          "indication": "Secondary stroke prevention; vascular risk reduction",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "80 mg",
+                "orderSentence": "Atorvastatin 80 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "High-intensity statin per guidelines",
+            "orderSentence": "Atorvastatin 80 mg PO"
+          },
+          "contraindications": "Active liver disease; pregnancy; concurrent strong CYP3A4 inhibitors",
+          "monitoring": "LFTs at baseline and PRN; CK if myalgia; LDL target <70",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Anticoagulation (if indicated)",
+          "route": "PO/IV",
+          "indication": "Vertebral artery dissection; atrial fibrillation; PFO with high-risk features",
           "dosing": {
             "doseOptions": [
               {
                 "text": "N/A",
-                "orderSentence": "**Secondary stroke prevention** N/A -"
+                "orderSentence": "Anticoagulation (if indicated) N/A PO/IV"
               }
             ],
-            "route": "-",
-            "instructions": "Dual antiplatelet therapy (aspirin + clopidogrel x 21 days per CHANCE/POINT); statin; BP control; diabetes management; address vascular risk factors",
-            "orderSentence": "**Secondary stroke prevention** N/A -"
+            "route": "PO/IV",
+            "instructions": "Agent selection based on stroke etiology: heparin bridge to warfarin or DOAC for AF; anticoagulation vs. antiplatelet for dissection per clinical judgment",
+            "orderSentence": "Anticoagulation (if indicated) N/A PO/IV"
           },
-          "contraindications": "-",
-          "monitoring": "Per acute ischemic stroke guidelines",
+          "contraindications": "Active intracranial hemorrhage; large infarct (hemorrhagic conversion risk)",
+          "monitoring": "INR (warfarin); renal function (DOACs); bleeding signs; stroke etiology determines agent",
           "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Anticoagulation (if indicated)**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "doseOptions": [
-              {
-                "text": "N/A",
-                "orderSentence": "**Anticoagulation (if indicated)** N/A -"
-              }
-            ],
-            "route": "-",
-            "instructions": "If vertebral artery dissection or cardiac source (atrial fibrillation, PFO with high-risk features)",
-            "orderSentence": "**Anticoagulation (if indicated)** N/A -"
-          },
-          "contraindications": "-",
-          "monitoring": "Per stroke etiology",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         }
       ],
       "Medications to AVOID or Use with Caution": [
         {
-          "item": "**Vestibular suppressants (prolonged use)**",
-          "route": "-",
-          "indication": "-",
+          "item": "**AVOID: Vestibular suppressants >72h**",
+          "route": "PO",
+          "indication": "Meclizine, dimenhydrinate, promethazine, scopolamine — chronic use",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Vestibular suppressants (prolonged use)** - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**AVOID: Vestibular suppressants >72h** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Vestibular suppressants delay central compensation; limit to 72h maximum in acute vertigo; do NOT prescribe chronically; NEVER for BPPV",
+            "orderSentence": "**AVOID: Vestibular suppressants >72h** N/A -"
           },
           "contraindications": "-",
-          "monitoring": "-",
+          "monitoring": "Prolonged use leads to chronic imbalance and delayed recovery; taper and discontinue by day 3",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**AVOID: Chronic benzodiazepines for vertigo**",
+          "route": "PO",
+          "indication": "Diazepam, lorazepam, clonazepam — chronic vestibular use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**AVOID: Chronic benzodiazepines for vertigo** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Benzodiazepines strongly suppress vestibular compensation; acceptable for 24-72h acute use only; chronic use causes dependence, cognitive impairment, fall risk",
+            "orderSentence": "**AVOID: Chronic benzodiazepines for vertigo** N/A -"
+          },
+          "contraindications": "-",
+          "monitoring": "Taper if already on chronic benzodiazepines; refer to vestibular rehabilitation instead",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**CAUTION: Ototoxic medications**",
+          "route": "Various",
+          "indication": "Aminoglycosides (gentamicin, tobramycin); loop diuretics (furosemide); high-dose salicylates; cisplatin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**CAUTION: Ototoxic medications** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Can cause or worsen vestibular dysfunction and hearing loss; if must use, monitor levels closely; aminoglycosides preferentially damage vestibular apparatus",
+            "orderSentence": "**CAUTION: Ototoxic medications** N/A -"
+          },
+          "contraindications": "Use alternative antibiotics when possible; monitor drug levels",
+          "monitoring": "Audiometry; vestibular function; drug levels (aminoglycosides); hearing symptoms",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**CAUTION: Medications causing orthostatic hypotension**",
+          "route": "Various",
+          "indication": "Antihypertensives, alpha-blockers, diuretics, tricyclics, phenothiazines",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**CAUTION: Medications causing orthostatic hypotension** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Orthostatic dizziness mimics vestibular vertigo; review all medications that lower blood pressure; dose-adjust or change timing",
+            "orderSentence": "**CAUTION: Medications causing orthostatic hypotension** N/A -"
+          },
+          "contraindications": "-",
+          "monitoring": "Orthostatic vital signs; medication reconciliation; consider dose reduction",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**CAUTION: Alcohol**",
+          "route": "PO",
+          "indication": "Alcohol consumption during vestibular recovery",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**CAUTION: Alcohol** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Alcohol is directly vestibulotoxic (positional alcohol nystagmus); impairs vestibular compensation; exacerbates Meniere's disease",
+            "orderSentence": "**CAUTION: Alcohol** N/A -"
+          },
+          "contraindications": "-",
+          "monitoring": "Counsel abstinence during acute vestibular recovery; limit in Meniere's disease",
           "ED": "-",
           "HOSP": "-",
-          "OPD": "-",
+          "OPD": "ROUTINE",
           "ICU": "-"
         },
         {
-          "item": "**Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin)",
-          "route": "-",
-          "indication": "-",
+          "item": "**CAUTION: CNS depressants**",
+          "route": "Various",
+          "indication": "Opioids, sedative-hypnotics, muscle relaxants, first-generation antihistamines",
           "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Ototoxic medications** (aminoglycosides, loop diuretics, salicylates, cisplatin) - - - see dosing"
+            "doseOptions": [
+              {
+                "text": "N/A",
+                "orderSentence": "**CAUTION: CNS depressants** N/A -"
+              }
+            ],
+            "route": "-",
+            "instructions": "CNS depressants impair vestibular compensation; increase fall risk; can worsen dizziness symptoms; minimize use during vestibular recovery",
+            "orderSentence": "**CAUTION: CNS depressants** N/A -"
           },
           "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Alcohol**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Alcohol** - - - see dosing"
-          },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Benzodiazepines (chronic use)**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Benzodiazepines (chronic use)** - - - see dosing"
-          },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**CNS depressants**",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "instructions": "-",
-            "orderSentence": "**CNS depressants** - - - see dosing"
-          },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
-        },
-        {
-          "item": "**Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics)",
-          "route": "-",
-          "indication": "-",
-          "dosing": {
-            "instructions": "-",
-            "orderSentence": "**Medications causing orthostatic hypotension** (antihypertensives, alpha-blockers, diuretics) - - - see dosing"
-          },
-          "contraindications": "-",
-          "monitoring": "-",
-          "ED": "-",
-          "HOSP": "-",
-          "OPD": "-",
-          "ICU": "-"
+          "monitoring": "Fall risk assessment; minimize concurrent CNS depressant use; prefer non-sedating alternatives",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         }
       ]
     },
