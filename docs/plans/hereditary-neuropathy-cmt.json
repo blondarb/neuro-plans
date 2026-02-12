@@ -1,0 +1,1551 @@
+{
+  "id": "hereditary-neuropathy-cmt",
+  "title": "Hereditary Neuropathy / Charcot-Marie-Tooth Disease (CMT)",
+  "version": "1.1",
+  "icd10": [
+    "** G60.0 (Hereditary motor and sensory neuropathy)",
+    "G60.1 (Refsum disease)",
+    "G60.8 (Other hereditary and idiopathic neuropathies)",
+    "G60.9 (Hereditary and idiopathic neuropathy",
+    "unspecified)"
+  ],
+  "scope": "** Evaluation and management of hereditary motor and sensory neuropathies (Charcot-Marie-Tooth disease and related disorders) in adults. Covers CMT1 (demyelinating), CMT2 (axonal), CMTX (X-linked), CMT4 (autosomal recessive), HNPP, and Dejerine-Sottas disease. Includes genetic testing strategy, electrodiagnostic classification, neurotoxic medication avoidance, supportive management, and surgical considerations. Excludes hereditary sensory and autonomic neuropathies (HSAN) as primary diagnosis but includes in differential. Excludes pediatric-onset evaluation (but most CMT presents in childhood/adolescence with adult follow-up).",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Baseline hematologic assessment",
+          "target": "Normal"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function; electrolytes; glucose",
+          "target": "Normal"
+        },
+        {
+          "item": "HbA1c (CPT 83036)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude diabetic neuropathy as comorbid or alternative diagnosis",
+          "target": "<5.7%"
+        },
+        {
+          "item": "TSH (CPT 84443)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude thyroid-related neuropathy",
+          "target": "Normal"
+        },
+        {
+          "item": "Vitamin B12 (CPT 82607)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude B12 deficiency neuropathy (treatable cause)",
+          "target": ">300 pg/mL"
+        },
+        {
+          "item": "CK (creatine kinase)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Mildly elevated in some CMT2 subtypes; markedly elevated suggests myopathy",
+          "target": "Normal or mildly elevated"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude inflammatory/acquired neuropathy",
+          "target": "Normal"
+        }
+      ],
+      "Genetic Testing (Stepwise Approach)": [
+        {
+          "item": "PMP22 duplication/deletion (CPT 81324)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "First-line test: PMP22 duplication = CMT1A (~60% of CMT1); PMP22 deletion = HNPP; order if demyelinating NCS pattern (median motor NCV <38 m/s)",
+          "target": "Identifies CMT1A or HNPP"
+        },
+        {
+          "item": "GJB1/Connexin 32 sequencing (CPT 81406)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Second-line if PMP22 negative; CMTX1 is second most common CMT; order especially if intermediate NCV (25-40 m/s) or X-linked pattern",
+          "target": "Identifies CMTX1"
+        },
+        {
+          "item": "MPZ (P0) sequencing (CPT 81406)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CMT1B; order if PMP22 and GJB1 negative with demyelinating pattern; late-onset axonal phenotype also possible",
+          "target": "Identifies CMT1B"
+        },
+        {
+          "item": "MFN2 sequencing (CPT 81406)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CMT2A; most common axonal CMT subtype; order if axonal NCS pattern (median motor NCV >38 m/s)",
+          "target": "Identifies CMT2A"
+        },
+        {
+          "item": "CMT multigene panel (NGS) (CPT 81479)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Comprehensive panel (>80 genes) if targeted testing negative; includes CMT1, CMT2, CMT4, CMTX, dHMN genes; higher yield than sequential single-gene testing in atypical cases",
+          "target": "Identifies causative mutation"
+        },
+        {
+          "item": "Whole exome sequencing (WES)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Consider if multigene panel negative in strong hereditary phenotype; may identify novel mutations",
+          "target": "Identifies causative variant"
+        }
+      ],
+      "Extended Labs (Exclude Acquired Mimics)": [
+        {
+          "item": "SPEP / UPEP with immunofixation",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude paraproteinemic neuropathy (anti-MAG IgM neuropathy mimics CMT1)",
+          "target": "No monoclonal protein"
+        },
+        {
+          "item": "Anti-MAG antibodies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Anti-MAG neuropathy causes uniform demyelination mimicking CMT1; treatable",
+          "target": "Negative"
+        },
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune neuropathy screen",
+          "target": "Negative"
+        },
+        {
+          "item": "Quantitative immunoglobulins (CPT 82784)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude CIDP (elevated CSF protein); IgM gammopathy evaluation",
+          "target": "Normal"
+        },
+        {
+          "item": "Phytanic acid level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Refsum disease (G60.1): elevated phytanic acid, demyelinating neuropathy, retinitis pigmentosa, ichthyosis; treatable with dietary restriction",
+          "target": "Normal (<0.3 mg/dL)"
+        },
+        {
+          "item": "Very long chain fatty acids (VLCFA)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Adrenomyeloneuropathy (adult AMN): axonal neuropathy with myelopathy; X-linked",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "CSF protein",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "rationale": "CMT has normal or mildly elevated protein; CIDP typically >45 mg/dL; Dejerine-Sottas may have markedly elevated protein",
+          "target": "Normal (<45 mg/dL)"
+        },
+        {
+          "item": "Cell count (tubes 1 and 4)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "rationale": "Rule out inflammatory process; normal in CMT",
+          "target": "WBC <5; RBC 0"
+        },
+        {
+          "item": "CSF glucose",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "rationale": "Normal in CMT; low in infectious/inflammatory meningitis",
+          "target": "Normal"
+        },
+        {
+          "item": "CSF oligoclonal bands",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "rationale": "Absent in CMT; present in inflammatory conditions (MS, CIDP variant)",
+          "target": "Absent"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Core Imaging": [
+        {
+          "item": "MRI brain with contrast (CPT 70553)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "CMTX1: transient white matter lesions during metabolic stress; CMT4 subtypes with CNS involvement; exclude structural causes",
+          "target": "Normal in most CMT; CMTX1 may show reversible white matter changes"
+        },
+        {
+          "item": "MRI spine (cervical/lumbar)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Exclude compressive myelopathy/radiculopathy as contributing factor; hypertrophic nerves in Dejerine-Sottas",
+          "target": "No cord compression; may show nerve root hypertrophy in demyelinating CMT"
+        }
+      ],
+      "Advanced Imaging": [
+        {
+          "item": "MR neurography (brachial plexus / lumbosacral plexus)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Assess nerve hypertrophy pattern; differentiate from CIDP or neoplastic infiltration; research use in CMT",
+          "target": "Uniform nerve enlargement (CMT1); CIDP tends to be patchy/multifocal"
+        },
+        {
+          "item": "Nerve ultrasound (high-resolution)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Non-invasive assessment of nerve cross-sectional area; diffusely enlarged nerves in CMT1A; focal enlargement suggests acquired neuropathy or HNPP",
+          "target": "Diffusely enlarged nerves (CMT1); normal caliber (CMT2)"
+        },
+        {
+          "item": "Chest X-ray / CT chest",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "STAT",
+          "rationale": "Screen for diaphragmatic elevation (phrenic nerve involvement in CMT2C/TRPV4); scoliosis assessment; ED/ICU if respiratory distress",
+          "target": "Normal; no diaphragm elevation"
+        }
+      ],
+      "Pulmonary Function Assessment": [
+        {
+          "item": "Spirometry (FVC upright and supine) (CPT 94010)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Assess respiratory muscle weakness; FVC <80% predicted or >10% drop supine indicates diaphragm weakness; relevant in severe CMT, CMT2C, CMT4; ED/ICU if respiratory distress",
+          "target": "FVC >80% predicted; <10% supine drop"
+        },
+        {
+          "item": "Echocardiogram (CPT 93306)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "rationale": "Screen for cardiomyopathy in LMNA-related CMT2; arrhythmias in selected subtypes; ICU if cardiac concerns",
+          "target": "Normal LVEF; no structural abnormalities"
+        },
+        {
+          "item": "ECG (CPT 93000)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Screen for conduction abnormalities; LMNA mutations associated with cardiac conduction disease; baseline before starting TCAs",
+          "target": "Normal sinus rhythm; no conduction block"
+        }
+      ]
+    },
+    "Treatment": {
+      "Neurotoxic Medication Avoidance (CRITICAL)": [
+        {
+          "item": "**AVOID vincristine**",
+          "route": "-",
+          "indication": "ABSOLUTE CONTRAINDICATION in CMT",
+          "dosing": {
+            "instructions": "Vincristine causes severe, potentially fatal neuropathy in CMT patients even at standard doses",
+            "orderSentence": "**AVOID vincristine** - - - see dosing"
+          },
+          "contraindications": "ABSOLUTE CONTRAINDICATION — do NOT administer",
+          "monitoring": "Alert oncology; document allergy/contraindication prominently in chart",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "STAT",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**AVOID high-dose/prolonged nitrofurantoin**",
+          "route": "-",
+          "indication": "DEFINITE HIGH RISK",
+          "dosing": {
+            "instructions": "Can cause severe worsening of neuropathy",
+            "orderSentence": "**AVOID high-dose/prolonged nitrofurantoin** - - - see dosing"
+          },
+          "contraindications": "Avoid in CMT",
+          "monitoring": "Monitor for worsening neuropathy if inadvertently given",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**AVOID cisplatin/oxaliplatin**",
+          "route": "-",
+          "indication": "DEFINITE HIGH RISK",
+          "dosing": {
+            "instructions": "Platinum agents cause dose-dependent neurotoxicity; accelerated in CMT",
+            "orderSentence": "**AVOID cisplatin/oxaliplatin** - - - see dosing"
+          },
+          "contraindications": "Use alternative chemotherapy agents",
+          "monitoring": "Oncology co-management if chemotherapy needed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**AVOID taxanes (paclitaxel, docetaxel)**",
+          "route": "-",
+          "indication": "DEFINITE HIGH RISK",
+          "dosing": {
+            "instructions": "Microtubule-disrupting agents worsen neuropathy",
+            "orderSentence": "**AVOID taxanes (paclitaxel, docetaxel)** - - - see dosing"
+          },
+          "contraindications": "Use alternatives when possible",
+          "monitoring": "Discuss risk/benefit with oncology if no alternative",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "**Use caution: metronidazole (prolonged courses)**",
+          "route": "-",
+          "indication": "MODERATE RISK",
+          "dosing": {
+            "instructions": "Prolonged courses (>2 weeks) can worsen neuropathy",
+            "orderSentence": "**Use caution: metronidazole (prolonged courses)** - - - see dosing"
+          },
+          "contraindications": "Limit duration; use alternatives when possible",
+          "monitoring": "Monitor for worsening symptoms",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**Use caution: fluoroquinolones**",
+          "route": "-",
+          "indication": "MODERATE RISK",
+          "dosing": {
+            "instructions": "Associated with peripheral neuropathy; risk additive in CMT",
+            "orderSentence": "**Use caution: fluoroquinolones** - - - see dosing"
+          },
+          "contraindications": "Use alternatives when possible",
+          "monitoring": "Monitor for new or worsening symptoms",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**Use caution: amiodarone**",
+          "route": "-",
+          "indication": "MODERATE RISK",
+          "dosing": {
+            "instructions": "Can cause demyelinating neuropathy with prolonged use",
+            "orderSentence": "**Use caution: amiodarone** - - - see dosing"
+          },
+          "contraindications": "Minimize dose and duration; use alternatives",
+          "monitoring": "Periodic NCS if prolonged use required",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "**Use caution: statins**",
+          "route": "-",
+          "indication": "LOW-MODERATE RISK",
+          "dosing": {
+            "instructions": "May worsen neuropathy symptoms in some patients",
+            "orderSentence": "**Use caution: statins** - - - see dosing"
+          },
+          "contraindications": "Not absolute contraindication; weigh cardiovascular benefit",
+          "monitoring": "Monitor symptoms; discontinue if worsening",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Symptomatic Management": [
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain (first-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              },
+              {
+                "text": "600 mg",
+                "orderSentence": "Gabapentin 600 mg PO"
+              },
+              {
+                "text": "900 mg",
+                "orderSentence": "Gabapentin 900 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg nightly, increase by 300 mg every 3-5 days to 300-1200 mg TID as tolerated",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); sedation risk",
+          "monitoring": "Sedation, dizziness, edema; renal dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain (first-line alternative)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
+              },
+              {
+                "text": "150 mg",
+                "orderSentence": "Pregabalin 150 mg PO"
+              },
+              {
+                "text": "300 mg",
+                "orderSentence": "Pregabalin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID, increase to 150-300 mg BID over 1-2 weeks",
+            "orderSentence": "Pregabalin 75 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); sedation risk",
+          "monitoring": "Sedation, weight gain, edema; renal dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Duloxetine",
+          "route": "PO",
+          "indication": "Neuropathic pain (first-line alternative); also treats comorbid depression and fatigue",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
+              },
+              {
+                "text": "60 mg",
+                "orderSentence": "Duloxetine 60 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 30 mg daily for 1 week, then increase to 60 mg daily",
+            "orderSentence": "Duloxetine 30 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma",
+          "monitoring": "LFTs; serotonin syndrome risk; blood pressure",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Amitriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line); aids sleep",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Amitriptyline 10 mg PO"
+              },
+              {
+                "text": "25 mg",
+                "orderSentence": "Amitriptyline 25 mg PO"
+              },
+              {
+                "text": "50 mg",
+                "orderSentence": "Amitriptyline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg nightly, increase by 10 mg weekly to 25-75 mg nightly",
+            "orderSentence": "Amitriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction disease; urinary retention; glaucoma; elderly (fall risk)",
+          "monitoring": "ECG if >50 mg/day; anticholinergic effects; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nortriptyline",
+          "route": "PO",
+          "indication": "Neuropathic pain (second-line; better tolerated than amitriptyline in elderly)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg",
+                "orderSentence": "Nortriptyline 10 mg PO"
+              },
+              {
+                "text": "25 mg",
+                "orderSentence": "Nortriptyline 25 mg PO"
+              },
+              {
+                "text": "50 mg",
+                "orderSentence": "Nortriptyline 50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg nightly, increase by 10 mg weekly to 25-75 mg nightly",
+            "orderSentence": "Nortriptyline 10 mg PO"
+          },
+          "contraindications": "Cardiac conduction disease; recent MI; urinary retention; glaucoma",
+          "monitoring": "ECG if >50 mg/day; anticholinergic effects; QTc",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tramadol",
+          "route": "PO",
+          "indication": "Moderate-severe neuropathic pain (third-line)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg",
+                "orderSentence": "Tramadol 50 mg PO"
+              },
+              {
+                "text": "100 mg",
+                "orderSentence": "Tramadol 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "50-100 mg every 6 hours as needed; max 400 mg/day",
+            "orderSentence": "Tramadol 50 mg PO"
+          },
+          "contraindications": "Seizure disorder; concurrent serotonergic drugs; respiratory depression risk",
+          "monitoring": "Seizure risk; serotonin syndrome; dependence risk",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mexiletine",
+          "route": "PO",
+          "indication": "Neuropathic pain in CMT (third-line); some evidence in CMT-related pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "150 mg",
+                "orderSentence": "Mexiletine 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 150 mg daily, increase to 150 mg TID over 1-2 weeks; max 300 mg TID",
+            "orderSentence": "Mexiletine 150 mg PO"
+          },
+          "contraindications": "Second/third-degree heart block; hepatic impairment",
+          "monitoring": "ECG at baseline and with dose changes; LFTs; GI side effects",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Quinine sulfate",
+          "route": "PO",
+          "indication": "Muscle cramps (off-label; use with caution)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "200 mg",
+                "orderSentence": "Quinine sulfate 200 mg PO"
+              },
+              {
+                "text": "324 mg",
+                "orderSentence": "Quinine sulfate 324 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "200-324 mg at bedtime; limit duration",
+            "orderSentence": "Quinine sulfate 200 mg PO"
+          },
+          "contraindications": "Thrombocytopenia; G6PD deficiency; QT prolongation; pregnancy",
+          "monitoring": "CBC; QTc monitoring; FDA warning re: serious adverse effects; use only if cramps are disabling",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Magnesium oxide",
+          "route": "PO",
+          "indication": "Muscle cramps (first-line, safer alternative)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "400 mg",
+                "orderSentence": "Magnesium oxide 400 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "400-800 mg daily in divided doses",
+            "orderSentence": "Magnesium oxide 400 mg PO"
+          },
+          "contraindications": "Renal impairment (accumulation risk)",
+          "monitoring": "Renal function; diarrhea is dose-limiting",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue (off-label; CMT-related fatigue is underrecognized)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
+              },
+              {
+                "text": "200 mg",
+                "orderSentence": "Modafinil 200 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg each morning; increase to 200 mg daily if needed; max 200 mg/day",
+            "orderSentence": "Modafinil 100 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; cardiac arrhythmias",
+          "monitoring": "Blood pressure; insomnia; headache; Stevens-Johnson syndrome (rare)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression/anxiety (common comorbidity in CMT)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25 mg",
+                "orderSentence": "Sertraline 25 mg PO"
+              },
+              {
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
+              },
+              {
+                "text": "100 mg",
+                "orderSentence": "Sertraline 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 25-50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg/day",
+            "orderSentence": "Sertraline 25 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; QT prolongation risk",
+          "monitoring": "Serotonin syndrome; GI effects; sexual dysfunction; suicidality monitoring in young adults",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Venlafaxine XR",
+          "route": "PO",
+          "indication": "Depression with comorbid neuropathic pain",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "37.5 mg",
+                "orderSentence": "Venlafaxine XR 37.5 mg PO"
+              },
+              {
+                "text": "75 mg",
+                "orderSentence": "Venlafaxine XR 75 mg PO"
+              },
+              {
+                "text": "150 mg",
+                "orderSentence": "Venlafaxine XR 150 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 37.5 mg daily for 1 week, then 75 mg daily; may increase to 150-225 mg daily",
+            "orderSentence": "Venlafaxine XR 37.5 mg PO"
+          },
+          "contraindications": "Concurrent MAOIs; uncontrolled hypertension",
+          "monitoring": "Blood pressure; serotonin syndrome; taper slowly to avoid discontinuation syndrome",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Muscle spasticity and cramps",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              },
+              {
+                "text": "10 mg",
+                "orderSentence": "Baclofen 10 mg PO"
+              },
+              {
+                "text": "20 mg",
+                "orderSentence": "Baclofen 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID, increase by 5 mg/dose every 3 days; max 80 mg/day",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Renal impairment (dose adjust); abrupt withdrawal risk (seizures)",
+          "monitoring": "Sedation; dizziness; taper slowly to discontinue",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Muscle spasticity (alternative to baclofen)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
+              },
+              {
+                "text": "4 mg",
+                "orderSentence": "Tizanidine 4 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg at bedtime, increase by 2 mg every 3-4 days; max 36 mg/day in divided doses",
+            "orderSentence": "Tizanidine 2 mg PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent fluvoxamine or ciprofloxacin (CYP1A2 inhibitors)",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months, then periodically; sedation; hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Orthotic and Rehabilitative Management": [
+        {
+          "item": "Ankle-foot orthoses (AFOs)",
+          "route": "Device",
+          "indication": "Foot drop, ankle instability, gait impairment",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Custom-molded AFOs preferred",
+                "orderSentence": "Ankle-foot orthoses (AFOs) Custom-molded AFOs preferred Device"
+              },
+              {
+                "text": "articulated AFOs allow ankle motion",
+                "orderSentence": "Ankle-foot orthoses (AFOs) articulated AFOs allow ankle motion Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "Custom fitting by orthotist; reassess annually or with functional decline",
+            "orderSentence": "Ankle-foot orthoses (AFOs) Custom-molded AFOs preferred Device"
+          },
+          "contraindications": "Skin breakdown; poor fitting",
+          "monitoring": "Assess fit, skin integrity, functional benefit every 6-12 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Physical therapy (PT)",
+          "route": "Rehab",
+          "indication": "Maintain strength, flexibility, balance; prevent contractures",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "PT evaluation and program",
+                "orderSentence": "Physical therapy (PT) PT evaluation and program Rehab"
+              }
+            ],
+            "route": "Rehab",
+            "instructions": "Moderate-intensity strengthening (avoid eccentric overload); stretching; balance training; aquatic therapy",
+            "orderSentence": "Physical therapy (PT) PT evaluation and program Rehab"
+          },
+          "contraindications": "Overexertion (avoid high-resistance eccentric exercise)",
+          "monitoring": "Functional assessments (6MWT, timed up-and-go); adjust program to avoid overwork weakness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Occupational therapy (OT)",
+          "route": "Rehab",
+          "indication": "Hand weakness, fine motor impairment, ADL adaptation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "OT evaluation and program",
+                "orderSentence": "Occupational therapy (OT) OT evaluation and program Rehab"
+              }
+            ],
+            "route": "Rehab",
+            "instructions": "Adaptive equipment, hand strengthening, splinting for intrinsic weakness",
+            "orderSentence": "Occupational therapy (OT) OT evaluation and program Rehab"
+          },
+          "contraindications": "None",
+          "monitoring": "Functional hand assessments; adaptive equipment needs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Thumb opposition splint / hand splints",
+          "route": "Device",
+          "indication": "Thenar weakness, difficulty with pinch grip",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Custom or prefabricated splints",
+                "orderSentence": "Thumb opposition splint / hand splints Custom or prefabricated splints Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "Fitted by OT/orthotist",
+            "orderSentence": "Thumb opposition splint / hand splints Custom or prefabricated splints Device"
+          },
+          "contraindications": "Skin breakdown",
+          "monitoring": "Assess fit and functional benefit",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Assistive devices (cane, walker, wheelchair)",
+          "route": "Device",
+          "indication": "Progressive gait impairment, fall risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Appropriate assistive device",
+                "orderSentence": "Assistive devices (cane, walker, wheelchair) Appropriate assistive device Device"
+              }
+            ],
+            "route": "Device",
+            "instructions": "PT assessment for device selection; powered wheelchair for severe cases",
+            "orderSentence": "Assistive devices (cane, walker, wheelchair) Appropriate assistive device Device"
+          },
+          "contraindications": "None",
+          "monitoring": "Reassess mobility needs with disease progression",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Surgical Management & Emerging Therapies": [
+        {
+          "item": "Foot/ankle reconstructive surgery",
+          "route": "Surgical",
+          "indication": "Fixed pes cavus, hammertoes, ankle instability unresponsive to orthoses",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Orthopedic evaluation",
+                "orderSentence": "Foot/ankle reconstructive surgery Orthopedic evaluation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Procedures include plantar fascia release, posterior tibial tendon transfer, calcaneal osteotomy, triple arthrodesis; staged procedures preferred",
+            "orderSentence": "Foot/ankle reconstructive surgery Orthopedic evaluation Surgical"
+          },
+          "contraindications": "Active infection; poor healing potential; minimal functional impairment",
+          "monitoring": "Post-operative rehabilitation; monitor for recurrence; long-term orthotic use may still be needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carpal tunnel release",
+          "route": "Surgical",
+          "indication": "Median neuropathy at wrist (common comorbidity in CMT; also HNPP)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Standard carpal tunnel release",
+                "orderSentence": "Carpal tunnel release Standard carpal tunnel release Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Lower success rate in CMT than idiopathic CTS; discuss expectations",
+            "orderSentence": "Carpal tunnel release Standard carpal tunnel release Surgical"
+          },
+          "contraindications": "Asymptomatic; mild symptoms manageable with splinting",
+          "monitoring": "Symptom relief; NCS may remain abnormal",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Scapular fixation (scapulothoracic fusion)",
+          "route": "Surgical",
+          "indication": "Severe scapular winging (CMT1 with serratus anterior weakness)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Orthopedic evaluation",
+                "orderSentence": "Scapular fixation (scapulothoracic fusion) Orthopedic evaluation Surgical"
+              }
+            ],
+            "route": "Surgical",
+            "instructions": "Scapulothoracic fusion improves shoulder function and cosmesis",
+            "orderSentence": "Scapular fixation (scapulothoracic fusion) Orthopedic evaluation Surgical"
+          },
+          "contraindications": "Mild winging without functional impairment",
+          "monitoring": "Post-operative shoulder ROM; functional improvement",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "PXT3003 (baclofen-naltrexone-sorbitol)",
+          "route": "PO",
+          "indication": "CMT1A (investigational)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Clinical trial dosing",
+                "orderSentence": "PXT3003 (baclofen-naltrexone-sorbitol) Clinical trial dosing PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Phase III PLEO-CMT-3 trial; targets PMP22 overexpression",
+            "orderSentence": "PXT3003 (baclofen-naltrexone-sorbitol) Clinical trial dosing PO"
+          },
+          "contraindications": "Investigational; not yet FDA-approved",
+          "monitoring": "Trial endpoints: CMTNS, 10-meter walk test",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Ascorbic acid (high-dose vitamin C)",
+          "route": "PO",
+          "indication": "CMT1A — NOT RECOMMENDED",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Not recommended",
+                "orderSentence": "Ascorbic acid (high-dose vitamin C) Not recommended PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Multiple RCTs (TREAT-CMT, Pareyson 2011) showed NO benefit in CMT1A despite preclinical promise",
+            "orderSentence": "Ascorbic acid (high-dose vitamin C) Not recommended PO"
+          },
+          "contraindications": "Not effective; do not prescribe for CMT",
+          "monitoring": "N/A — no proven benefit",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neuromuscular neurology referral",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "indication": "All suspected or confirmed CMT for diagnosis, genetic testing strategy, and longitudinal management"
+        },
+        {
+          "item": "Genetic counseling referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "All confirmed CMT; discuss inheritance pattern (AD, AR, X-linked), family planning, predictive testing for at-risk relatives"
+        },
+        {
+          "item": "Physical therapy (PT) consult",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "Strength maintenance, balance training, fall prevention, exercise prescription; avoid eccentric overload"
+        },
+        {
+          "item": "Occupational therapy (OT) consult",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Hand weakness, fine motor impairment, adaptive equipment, splinting, ADL adaptation"
+        },
+        {
+          "item": "Orthotist / Prosthetics referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Custom AFO fitting for foot drop/ankle instability; hand splints for thenar weakness"
+        },
+        {
+          "item": "Podiatry referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Annual foot examination; early deformity intervention; pes cavus and hammertoe management"
+        },
+        {
+          "item": "Orthopedic surgery referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Progressive foot/ankle deformity unresponsive to orthoses; scapular winging; carpal tunnel"
+        },
+        {
+          "item": "Pulmonology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "indication": "FVC <80% predicted or respiratory symptoms; diaphragm weakness assessment (CMT2C, CMT4, severe CMT)"
+        },
+        {
+          "item": "Cardiology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "LMNA-related CMT2 (conduction disease, cardiomyopathy); screening ECG/echo abnormalities"
+        },
+        {
+          "item": "Pain management referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Refractory neuropathic pain not responding to first- and second-line agents"
+        },
+        {
+          "item": "Psychiatry / Psychology referral",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Depression, anxiety, chronic pain coping, adjustment to progressive disability"
+        },
+        {
+          "item": "Vocational rehabilitation referral",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Progressive hand weakness or mobility impairment affecting employment"
+        },
+        {
+          "item": "Social work consult",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "indication": "Disability resources, DME assistance, insurance navigation, support group referral"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Carry neurotoxic medication alert card or wear medical alert bracelet listing CMT diagnosis and vincristine contraindication",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Return to ED if sudden severe weakness, difficulty breathing, or rapid symptom progression (may indicate superimposed GBS/CIDP)",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Inform all healthcare providers (including dentists, surgeons, anesthesiologists) of CMT diagnosis before any procedure",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Inspect feet daily for blisters, cuts, or pressure sores; wear well-fitting protective footwear at all times",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Use AFOs and assistive devices as prescribed; do not discontinue without PT/physician guidance",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Exercise regularly at moderate intensity (walking, swimming, cycling); avoid high-resistance eccentric exercise and overexertion",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Do not stop gabapentin or pregabalin abruptly — taper under medical guidance to avoid withdrawal",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Report new or worsening numbness, weakness, pain, breathing difficulty, or balance problems promptly",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Neuropathic pain medications take 2-4 weeks to reach full effect; report side effects before discontinuing",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Genetic counseling is recommended before family planning; inheritance pattern depends on CMT subtype",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "✓"
+        },
+        {
+          "item": "Contact CMT Foundation (cmtausa.org) for educational materials, support groups, and clinical trial information",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Neurotoxic medication avoidance is the single most important actionable step — document prominently in chart and allergy list",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Moderate aerobic exercise (walking, swimming, cycling) improves fitness and quality of life without worsening neuropathy",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Weight management — excess weight increases functional burden on weakened muscles and accelerates deformity",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Fall prevention: remove throw rugs, install handrails, ensure adequate lighting, use assistive devices as needed",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Energy conservation and pacing strategies for CMT-related fatigue; plan activities with rest periods",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Avoid prolonged pressure on nerves (especially HNPP): do not cross legs, use padded armrests, reposition frequently during sleep and prolonged procedures",
+          "ED": "✓",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Annual comprehensive foot and orthotic reassessment; early intervention prevents progressive deformity",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "✓"
+        },
+        {
+          "item": "Smoking cessation (microvascular disease worsens neuropathy)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        },
+        {
+          "item": "Alcohol moderation (alcohol is directly neurotoxic and worsens peripheral neuropathy)",
+          "ED": "-",
+          "HOSP": "✓",
+          "OPD": "✓"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "CIDP (chronic inflammatory demyelinating polyneuropathy)",
+      "features": "Acquired; progressive or relapsing; proximal AND distal weakness; elevated CSF protein (>45 mg/dL); nerve ultrasound shows patchy enlargement; responds to IVIg/steroids",
+      "tests": "NCS (non-uniform slowing, temporal dispersion in CIDP vs uniform slowing in CMT1); CSF protein; treatment response"
+    },
+    {
+      "diagnosis": "Anti-MAG neuropathy",
+      "features": "Acquired; distal predominant; IgM paraprotein with anti-MAG antibodies; slowly progressive; tremor common; uniform demyelination mimics CMT1",
+      "tests": "SPEP/immunofixation; anti-MAG antibody titer"
+    },
+    {
+      "diagnosis": "Hereditary sensory and autonomic neuropathy (HSAN)",
+      "features": "Prominent sensory loss including pain insensitivity; autonomic dysfunction; painless injuries and ulceration; less motor involvement",
+      "tests": "Clinical phenotype (sensory predominant); genetic testing (SPTLC1, WNK1, IKBKAP, NTRK1)"
+    },
+    {
+      "diagnosis": "Distal myopathy",
+      "features": "Distal weakness mimicking CMT; normal or mildly abnormal NCS; myopathic EMG pattern; elevated CK",
+      "tests": "EMG (myopathic MUPs); CK; muscle biopsy; genetic testing (dysferlin, GNE, myotilin)"
+    },
+    {
+      "diagnosis": "Spinal muscular atrophy (SMA type III/IV)",
+      "features": "Proximal > distal weakness; fasciculations; no sensory loss; childhood onset typical",
+      "tests": "SMN1 deletion testing; EMG (anterior horn cell pattern)"
+    },
+    {
+      "diagnosis": "Friedreich ataxia",
+      "features": "Ataxia, areflexia, sensory neuropathy, cardiomyopathy, scoliosis; progressive ataxia is dominant feature",
+      "tests": "FXN GAA repeat expansion; echocardiogram"
+    },
+    {
+      "diagnosis": "Adrenomyeloneuropathy (AMN)",
+      "features": "Axonal neuropathy with progressive myelopathy (spastic paraparesis); X-linked; adrenal insufficiency",
+      "tests": "VLCFA levels (elevated); ABCD1 gene testing"
+    },
+    {
+      "diagnosis": "Refsum disease",
+      "features": "Demyelinating neuropathy with retinitis pigmentosa, cerebellar ataxia, ichthyosis, elevated CSF protein",
+      "tests": "Phytanic acid level (markedly elevated)"
+    },
+    {
+      "diagnosis": "Hereditary transthyretin amyloidosis (hATTR)",
+      "features": "Progressive axonal sensorimotor and autonomic neuropathy; cardiomyopathy; family history; late onset",
+      "tests": "TTR gene sequencing; tissue biopsy with Congo red stain"
+    },
+    {
+      "diagnosis": "Multifocal acquired demyelinating sensory and motor neuropathy (MADSAM/Lewis-Sumner)",
+      "features": "Asymmetric, multifocal; sensory AND motor involvement; conduction block; responds to IVIg/steroids",
+      "tests": "NCS (asymmetric, multifocal conduction block); treatment response"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "#",
+      "evidenceLevel": "Citation",
+      "source": "Key Finding"
+    },
+    {
+      "recommendation": "1",
+      "evidenceLevel": "Pareyson D, Marchesi C. Diagnosis, natural history, and management of Charcot-Marie-Tooth disease. Lancet Neurol. 2009;8(7):654-667.",
+      "source": "Comprehensive review of CMT classification, diagnosis, and management"
+    },
+    {
+      "recommendation": "2",
+      "evidenceLevel": "Shy ME, et al. CMT1 neuropathies: diagnosis and management. Neurology. 2005;64(12):2220-2226.",
+      "source": "AAN practice parameter for CMT1 diagnosis and management; genetic testing algorithm"
+    },
+    {
+      "recommendation": "3",
+      "evidenceLevel": "Reilly MM, Murphy SM, Laurá M. Charcot-Marie-Tooth disease. J Peripher Nerv Syst. 2011;16(1):1-14.",
+      "source": "Updated review of CMT genetics, phenotypes, and emerging therapies"
+    },
+    {
+      "recommendation": "4",
+      "evidenceLevel": "Pareyson D, et al. Ascorbic acid in Charcot-Marie-Tooth disease type 1A (CMT-TRIAAL and CMT-TRAUK): a double-blind randomised trial. Lancet Neurol. 2011;10(4):320-328.",
+      "source": "High-dose ascorbic acid showed NO benefit in CMT1A; large multicenter RCT"
+    },
+    {
+      "recommendation": "5",
+      "evidenceLevel": "Attarian S, et al. An exploratory randomised double-blind and placebo-controlled phase 2 study of a combination of baclofen, naltrexone and sorbitol (PXT3003) in patients with Charcot-Marie-Tooth disease type 1A. Orphanet J Rare Dis. 2014;9:199.",
+      "source": "PXT3003 showed dose-dependent improvement in ONLS score in CMT1A; phase 3 trial ongoing"
+    },
+    {
+      "recommendation": "6",
+      "evidenceLevel": "Corrado B, et al. Evidence-based practice in rehabilitation of Charcot-Marie-Tooth disease: a systematic review. J Exerc Rehabil. 2019;15(4):467-477.",
+      "source": "Moderate exercise is safe and beneficial in CMT; avoid high-intensity eccentric exercise; AFOs improve gait"
+    },
+    {
+      "recommendation": "7",
+      "evidenceLevel": "Weimer LH, Podwall D. Medication-induced exacerbation of neuropathy in Charcot-Marie-Tooth disease. J Neurol Sci. 2006;242(1-2):47-54.",
+      "source": "Comprehensive review of neurotoxic medications in CMT; vincristine is highest risk; provides risk categorization"
+    },
+    {
+      "recommendation": "8",
+      "evidenceLevel": "Murphy SM, et al. Reliability of the CMT neuropathy score (second version) in Charcot-Marie-Tooth disease. J Peripher Nerv Syst. 2011;16(3):191-198.",
+      "source": "CMTNSv2 is reliable outcome measure for CMT clinical trials and longitudinal monitoring"
+    },
+    {
+      "recommendation": "9",
+      "evidenceLevel": "Padua L, et al. Natural history of Charcot-Marie-Tooth 2: 2-year follow-up of muscle strength, walking ability and quality of life. Neurol Sci. 2010;31(2):175-178.",
+      "source": "CMT2 shows slower progression than CMT1 in longitudinal follow-up; CMTNS useful for monitoring"
+    },
+    {
+      "recommendation": "10",
+      "evidenceLevel": "Mannil M, et al. Nerve ultrasound in hereditary motor and sensory neuropathies. Eur J Neurol. 2014;21(3):400-407.",
+      "source": "Nerve ultrasound shows diffuse enlargement in CMT1A; distinguishes from CIDP (patchy enlargement)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "CMT Neuropathy Score (CMTNS/CMTNSv2)",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every 6-12 months",
+      "action": "Document progression rate; adjust supportive care; consider clinical trial enrollment"
+    },
+    {
+      "item": "Manual muscle testing (MRC grading)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Every 6-12 months; each admission",
+      "action": "Adjust PT/OT program; orthotic reassessment; functional adaptation"
+    },
+    {
+      "item": "Spirometry (FVC upright and supine)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Annually if FVC <80% or respiratory symptoms; baseline then as indicated",
+      "action": "Refer pulmonology; consider NIV/BiPAP if FVC <50% or symptomatic; sleep study if nocturnal hypoventilation"
+    },
+    {
+      "item": "Foot examination",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every 6-12 months",
+      "action": "Orthotic adjustment; podiatry referral; surgical consultation for progressive deformity"
+    },
+    {
+      "item": "ECG",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Annually if LMNA or cardiac-associated CMT subtype; baseline for all",
+      "action": "Cardiology referral; consider ICD for conduction disease"
+    },
+    {
+      "item": "Echocardiogram",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually if LMNA or cardiac-associated CMT subtype",
+      "action": "Cardiology referral; heart failure management"
+    },
+    {
+      "item": "Pain assessment (NRS, DN4)",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE",
+      "frequency": "Every visit",
+      "action": "Adjust analgesic regimen; add or switch neuropathic pain agents"
+    },
+    {
+      "item": "Fall risk assessment",
+      "ED": "ROUTINE",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every visit",
+      "action": "PT reassessment; environmental modifications; assistive device upgrade"
+    },
+    {
+      "item": "Renal function (CrCl)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Baseline; with gabapentinoid use; every 6-12 months",
+      "action": "Adjust gabapentin/pregabalin dose per CrCl"
+    },
+    {
+      "item": "LFTs",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Baseline if starting duloxetine or tizanidine; then periodically",
+      "action": "Dose adjustment or switch medication if hepatic impairment"
+    },
+    {
+      "item": "Genetic counseling follow-up",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At diagnosis; pre-conception; at family request",
+      "action": "Referral to genetics; update testing with new gene discoveries"
+    },
+    {
+      "item": "10-meter walk test / 6-minute walk test",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Every 6-12 months",
+      "action": "Adjust rehabilitation; adaptive equipment; consider clinical trial"
+    },
+    {
+      "item": "Depression/anxiety screening (PHQ-9, GAD-7)",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "Annually or with symptom concern",
+      "action": "Psychiatry referral; pharmacotherapy; adjust pain management"
+    },
+    {
+      "item": "NCS/EMG follow-up",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-",
+      "frequency": "At diagnosis; PRN for symptom change; q2-3 years for monitoring",
+      "action": "If progressive beyond expected, evaluate for superimposed acquired neuropathy (CIDP)"
+    },
+    {
+      "item": "Respiratory function (severe CMT/CMT2C/CMT4)",
+      "ED": "STAT",
+      "HOSP": "STAT",
+      "OPD": "ROUTINE",
+      "ICU": "STAT",
+      "frequency": "Q4h if concern; FVC and NIF",
+      "action": "ICU transfer if FVC <20 mL/kg or NIF >-30 cmH2O; intubation if declining"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "ED discharge",
+      "criteria": "HNPP with acute compression neuropathy and stable neurological exam; known CMT with non-neurological chief complaint"
+    },
+    {
+      "disposition": "Admission",
+      "criteria": "Severe respiratory compromise (FVC <50% or declining); perioperative monitoring for complex surgeries; acute severe worsening (consider superimposed GBS/CIDP)"
+    },
+    {
+      "disposition": "Outpatient neuromuscular clinic",
+      "criteria": "All newly diagnosed or suspected CMT; established CMT for longitudinal monitoring"
+    },
+    {
+      "disposition": "Genetic counseling",
+      "criteria": "All confirmed CMT; suspected hereditary neuropathy; family members requesting predictive testing"
+    },
+    {
+      "disposition": "Rehabilitation services",
+      "criteria": "All CMT patients benefit from PT/OT; orthotics"
+    },
+    {
+      "disposition": "Palliative care",
+      "criteria": "Severe CMT with significant functional impairment, chronic pain, respiratory insufficiency"
+    }
+  ]
+}

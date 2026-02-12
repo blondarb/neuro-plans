@@ -1,0 +1,1345 @@
+{
+  "id": "pml",
+  "title": "Progressive Multifocal Leukoencephalopathy (PML)",
+  "version": "1.1",
+  "icd10": [
+    "** A81.2 (Progressive multifocal leukoencephalopathy)"
+  ],
+  "scope": "** Diagnosis and management of PML in all clinical contexts: HIV-associated, natalizumab-associated, other immunosuppression-associated, and rare immunocompetent PML. Covers CSF JCV PCR testing, MRI features, immune reconstitution strategies, PML-IRIS management, and supportive care. Excludes other causes of leukoencephalopathy as primary diagnosis but includes in differential.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Lymphopenia assessment; immunosuppression degree; baseline",
+          "target": "Lymphocyte count >1000/μL"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Renal/hepatic function; metabolic baseline",
+          "target": "Normal"
+        },
+        {
+          "item": "HIV antibody/antigen (4th gen) (CPT 86703)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "HIV is most common cause of PML; must test all patients",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV viral load (CPT 87536)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "If HIV positive: quantify viral burden; guide ART initiation",
+          "target": "Undetectable if on ART"
+        },
+        {
+          "item": "CD4 count (CPT 86360)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Degree of immunosuppression; PML typically occurs with CD4 <200 in HIV; also useful in non-HIV immunosuppression",
+          "target": "CD4 >500 (PML risk highest <200 in HIV)"
+        },
+        {
+          "item": "JCV antibody index (serum)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Risk stratification; high index (>1.5) associated with greater PML risk in natalizumab patients; documents JCV exposure",
+          "target": "Negative or low index (<0.9 lower risk)"
+        },
+        {
+          "item": "Immunoglobulin levels (IgG, IgA, IgM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypogammaglobulinemia as contributing immunodeficiency",
+          "target": "Normal"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "Absolute lymphocyte subsets (CD4, CD8, CD19, NK cells)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Characterize immune deficiency; guide immune reconstitution strategy",
+          "target": "Normal ranges for all subsets"
+        },
+        {
+          "item": "Quantitative immunoglobulins",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Hypogammaglobulinemia from rituximab or other B-cell depleting therapy",
+          "target": "Normal IgG >600 mg/dL"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Inflammatory markers; elevated in PML-IRIS",
+          "target": "Normal in PML; elevated in IRIS"
+        },
+        {
+          "item": "LDH",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Prognostic marker; elevated associated with worse outcomes",
+          "target": "Normal"
+        },
+        {
+          "item": "Liver function tests",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Baseline before any hepatotoxic treatment; hepatic disease contributing to immunodeficiency",
+          "target": "Normal"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Serum JCV viral load (quantitative PCR)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Research use; viremia may precede PML; limited clinical utility currently",
+          "target": "Negative"
+        },
+        {
+          "item": "Flow cytometry for lymphocyte activation markers",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Assess immune reconstitution; guide treatment in PML-IRIS",
+          "target": "Normal activation markers"
+        },
+        {
+          "item": "BK virus PCR (urine)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Related polyomavirus; BK viruria suggests polyomavirus reactivation context",
+          "target": "Negative"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "JCV PCR (quantitative) (CPT 87798)",
+          "rationale": "DEFINITIVE diagnostic test; sensitivity 72-92%; specificity ~99%; quantitative load correlates with disease severity",
+          "target": "Negative (positive confirms PML in appropriate clinical/imaging context); higher copy numbers = worse prognosis",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count with differential",
+          "rationale": "Typically normal in PML; elevated WBC suggests IRIS or alternative diagnosis",
+          "target": "Normal (<5 WBC); elevated with lymphocytic predominance suggests PML-IRIS",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Mildly elevated or normal",
+          "target": "Normal or mildly elevated (typically <100 mg/dL); markedly elevated suggests alternative",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Exclude infection",
+          "target": "Normal (>60% serum)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands",
+          "rationale": "MS evaluation if natalizumab patient; baseline",
+          "target": "Variable; may be present from underlying MS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "Exclude lymphoma (may mimic PML on imaging)",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; critical for diagnosis",
+          "target": "Multifocal, bilateral, asymmetric subcortical/juxtacortical white matter T2/FLAIR hyperintensities; typically NO enhancement and NO mass effect (distinguishes from tumors); involves subcortical U-fibers; posterior fossa common",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Only if MRI not immediately available",
+          "target": "Hypodense white matter lesions; less sensitive than MRI",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "MRI brain follow-up (q4-8 weeks)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Serial monitoring for progression or IRIS; every 4-8 weeks initially",
+          "target": "Stabilization or improvement of lesions; new enhancement suggests PML-IRIS",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MR spectroscopy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Differentiate PML from other white matter diseases",
+          "target": "Reduced NAA (neuronal loss); elevated choline (demyelination); elevated myo-inositol",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE",
+          "timing": "If seizures occur; encephalopathy assessment; outpatient monitoring for subclinical seizures",
+          "target": "Focal or diffuse slowing; epileptiform activity at lesion borders",
+          "contraindications": "None"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "Antiretroviral therapy (ART) initiation (HIV-PML)",
+          "route": "PO",
+          "indication": "HIV-associated PML; ART is the ONLY proven effective treatment; immune reconstitution allows immune clearance of JCV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per HIV guidelines",
+                "orderSentence": "Antiretroviral therapy (ART) initiation (HIV-PML) Per HIV guidelines PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Initiate ART as soon as possible; integrase inhibitor-based regimen preferred (dolutegravir + tenofovir/emtricitabine); rapid ART start; coordinate with HIV specialist",
+            "orderSentence": "Antiretroviral therapy (ART) initiation (HIV-PML) Per HIV guidelines PO"
+          },
+          "contraindications": "None (benefit outweighs all risks in PML)",
+          "monitoring": "CD4 count q4-8wk; HIV viral load q4wk until undetectable; hepatic/renal function; IRIS monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Natalizumab cessation + PLEX (natalizumab-PML)",
+          "route": "Apheresis",
+          "indication": "Natalizumab-associated PML; remove drug to allow immune reconstitution; PLEX accelerates natalizumab clearance",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 exchanges",
+                "orderSentence": "Natalizumab cessation + PLEX (natalizumab-PML) 5 exchanges Apheresis"
+              }
+            ],
+            "route": "Apheresis",
+            "instructions": "Discontinue natalizumab immediately; 5 plasma exchanges over 10 days to accelerate drug clearance (natalizumab half-life ~16 days; PLEX reduces to days)",
+            "orderSentence": "Natalizumab cessation + PLEX (natalizumab-PML) 5 exchanges Apheresis"
+          },
+          "contraindications": "Hemodynamic instability; coagulopathy",
+          "monitoring": "IRIS monitoring (typically occurs 1-5 weeks after PLEX); MRI q2-4wk; clinical exam q1-2 days",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Discontinue causative immunosuppression (other-PML)",
+          "route": "-",
+          "indication": "PML from rituximab, mycophenolate, fludarabine, or other immunosuppressants",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Discontinue immediately",
+                "orderSentence": "Discontinue causative immunosuppression (other-PML) Discontinue immediately -"
+              }
+            ],
+            "route": "-",
+            "instructions": "Stop the causative immunosuppressant; no PLEX equivalent for most drugs; immune reconstitution occurs over weeks-months depending on drug",
+            "orderSentence": "Discontinue causative immunosuppression (other-PML) Discontinue immediately -"
+          },
+          "contraindications": "Balance with underlying disease management",
+          "monitoring": "CD4 and lymphocyte counts q2-4wk; MRI q4-8wk; clinical monitoring for IRIS",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Methylprednisolone (PML-IRIS)",
+          "route": "IV",
+          "indication": "Fulminant PML-IRIS with severe cerebral edema and herniation risk",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg daily x 3-5 days",
+                "orderSentence": "Methylprednisolone (PML-IRIS) 1000 mg daily x 3-5 days IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily for 3-5 days for life-threatening IRIS; follow with oral steroid taper",
+            "orderSentence": "Methylprednisolone (PML-IRIS) 1000 mg daily x 3-5 days IV"
+          },
+          "contraindications": "Mass effect with herniation (may need neurosurgical intervention first)",
+          "monitoring": "ICP; neurological exam; MRI; blood glucose; BP",
+          "ED": "-",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Dexamethasone (PML-IRIS)",
+          "route": "IV/PO",
+          "indication": "Moderate-severe PML-IRIS with significant edema, mass effect, or clinical deterioration from inflammation",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4-8 mg q6h",
+                "orderSentence": "Dexamethasone (PML-IRIS) 4-8 mg q6h IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Start 4-8 mg IV q6h for severe IRIS; taper over 2-6 weeks based on clinical response; shortest effective course to avoid further immunosuppression",
+            "orderSentence": "Dexamethasone (PML-IRIS) 4-8 mg q6h IV/PO"
+          },
+          "contraindications": "Active untreated infection (relative); recognize that steroids also suppress beneficial immune response against JCV",
+          "monitoring": "Clinical exam; MRI q2-4wk for edema/enhancement resolution; steroid side effects; balance IRIS suppression vs JCV clearance",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Dexamethasone (cerebral edema)",
+          "route": "IV",
+          "indication": "Cerebral edema from PML lesions or IRIS causing mass effect",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg load then 4 mg q6h",
+                "orderSentence": "Dexamethasone (cerebral edema) 10 mg load then 4 mg q6h IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg IV load, then 4 mg q6h; taper as edema resolves; use shortest effective course",
+            "orderSentence": "Dexamethasone (cerebral edema) 10 mg load then 4 mg q6h IV"
+          },
+          "contraindications": "Active untreated infection",
+          "monitoring": "Blood glucose; BP; GI protection; clinical response",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Levetiracetam (acute seizures)",
+          "route": "IV/PO",
+          "indication": "Acute seizure management in PML (seizures common with cortical lesions)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg load",
+                "orderSentence": "Levetiracetam (acute seizures) 1000 mg load IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV load, then 500 mg IV/PO BID; titrate to 1000-1500 mg BID; adjust for renal function",
+            "orderSentence": "Levetiracetam (acute seizures) 1000 mg load IV"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Mood changes; sedation; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam (maintenance)",
+          "route": "PO",
+          "indication": "Ongoing seizure prophylaxis/treatment (seizures common in PML, especially with cortical lesions)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg BID",
+                "orderSentence": "Levetiracetam (maintenance) 500 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 500 mg BID; titrate to 1000-1500 mg BID; adjust for renal function; continue indefinitely if seizures occurred",
+            "orderSentence": "Levetiracetam (maintenance) 500 mg BID PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Mood changes; irritability; sedation; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Seizure management; alternative or adjunct to levetiracetam; favorable side effect profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg BID",
+                "orderSentence": "Lacosamide 50 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg BID; increase by 50 mg/dose weekly; target 100-200 mg BID; max 400 mg/day",
+            "orderSentence": "Lacosamide 50 mg BID PO"
+          },
+          "contraindications": "PR prolongation; 2nd/3rd degree AV block; severe hepatic impairment",
+          "monitoring": "ECG at baseline; PR interval; dizziness; diplopia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Valproic acid",
+          "route": "PO/IV",
+          "indication": "Seizure management; broad-spectrum option for focal or generalized seizures in PML",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "250 mg BID",
+                "orderSentence": "Valproic acid 250 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 250 mg BID; titrate to 500-750 mg BID; target level 50-100 mcg/mL; adjust for hepatic function",
+            "orderSentence": "Valproic acid 250 mg BID PO"
+          },
+          "contraindications": "Hepatic disease; urea cycle disorders; pregnancy (teratogenic); mitochondrial disease (POLG mutation)",
+          "monitoring": "LFTs baseline and periodically; CBC; ammonia if encephalopathy; drug level; pancreatitis risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain; paresthesias from white matter lesions",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg qHS",
+                "orderSentence": "Gabapentin 300 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; increase by 300 mg every 1-3 days; target 900-1800 mg TID; max 3600 mg/day",
+            "orderSentence": "Gabapentin 300 mg qHS PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pregabalin",
+          "route": "PO",
+          "indication": "Neuropathic pain; alternative to gabapentin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "75 mg BID",
+                "orderSentence": "Pregabalin 75 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 75 mg BID; increase to 150 mg BID after 1 week; max 300 mg BID",
+            "orderSentence": "Pregabalin 75 mg BID PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; weight gain; peripheral edema",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity from white matter and corticospinal tract involvement",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg TID",
+                "orderSentence": "Baclofen 5 mg TID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; increase by 5 mg/dose every 3 days; max 80 mg/day in divided doses",
+            "orderSentence": "Baclofen 5 mg TID PO"
+          },
+          "contraindications": "Renal impairment (reduce dose)",
+          "monitoring": "Sedation; weakness; do NOT stop abruptly (withdrawal risk)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Tizanidine",
+          "route": "PO",
+          "indication": "Spasticity; alternative to baclofen",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg qHS",
+                "orderSentence": "Tizanidine 2 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 2 mg qHS or TID; increase by 2-4 mg every 3-4 days; max 36 mg/day in 3 divided doses",
+            "orderSentence": "Tizanidine 2 mg qHS PO"
+          },
+          "contraindications": "Hepatic impairment; concurrent ciprofloxacin or fluvoxamine (CYP1A2 inhibitors)",
+          "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Sertraline",
+          "route": "PO",
+          "indication": "Depression; anxiety; mood disturbance related to PML diagnosis and disability",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "50 mg daily",
+                "orderSentence": "Sertraline 50 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 50 mg daily; increase by 25-50 mg every 1-2 weeks; max 200 mg daily",
+            "orderSentence": "Sertraline 50 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; pimozide",
+          "monitoring": "Suicidality monitoring (especially weeks 1-4); serotonin syndrome; QTc at high doses",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Escitalopram",
+          "route": "PO",
+          "indication": "Depression; anxiety; alternative to sertraline",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg daily",
+                "orderSentence": "Escitalopram 10 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 10 mg daily; may increase to 20 mg after 1 week; max 20 mg daily",
+            "orderSentence": "Escitalopram 10 mg daily PO"
+          },
+          "contraindications": "Concurrent MAOIs; pimozide; QT prolongation",
+          "monitoring": "QTc if risk factors or dose >10 mg; suicidality monitoring",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Mirtazapine (symptomatic)",
+          "route": "PO",
+          "indication": "Depression with insomnia; appetite stimulation in wasting; also theoretical anti-JCV activity via 5-HT2A antagonism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "15 mg qHS",
+                "orderSentence": "Mirtazapine (symptomatic) 15 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 15 mg qHS; titrate to 30-45 mg qHS; dual benefit as antidepressant and possible anti-JCV agent",
+            "orderSentence": "Mirtazapine (symptomatic) 15 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Sedation; weight gain (may be beneficial in cachectic patients); dry mouth; agranulocytosis (rare)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Modafinil",
+          "route": "PO",
+          "indication": "Fatigue; cognitive slowing; excessive daytime somnolence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg daily",
+                "orderSentence": "Modafinil 100 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 100 mg every morning; may increase to 200 mg; max 400 mg/day",
+            "orderSentence": "Modafinil 100 mg daily PO"
+          },
+          "contraindications": "Cardiac arrhythmia; LV hypertrophy; hepatic impairment",
+          "monitoring": "BP; HR; may reduce efficacy of hormonal contraception; Schedule IV",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Methylphenidate",
+          "route": "PO",
+          "indication": "Fatigue; cognitive slowing; apathy; adjunct for attention deficits",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg BID",
+                "orderSentence": "Methylphenidate 5 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID (morning and noon); increase by 5-10 mg weekly; max 60 mg/day",
+            "orderSentence": "Methylphenidate 5 mg BID PO"
+          },
+          "contraindications": "Marked anxiety; glaucoma; tics/Tourette; concurrent MAOIs",
+          "monitoring": "BP; HR; mood; appetite; weight; Schedule II",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Donepezil",
+          "route": "PO",
+          "indication": "Cognitive impairment; memory deficits from white matter injury",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Donepezil 5 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; may increase to 10 mg daily after 4-6 weeks; take in evening",
+            "orderSentence": "Donepezil 5 mg daily PO"
+          },
+          "contraindications": "Bradycardia; sick sinus syndrome; GI obstruction",
+          "monitoring": "HR; GI symptoms (nausea, diarrhea); vivid dreams; weight loss",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Memantine",
+          "route": "PO",
+          "indication": "Cognitive impairment; moderate-severe cognitive deficits; may be combined with donepezil",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg daily",
+                "orderSentence": "Memantine 5 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg daily; increase by 5 mg weekly; target 10 mg BID; max 20 mg/day",
+            "orderSentence": "Memantine 5 mg daily PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust if CrCl <30)",
+          "monitoring": "Dizziness; headache; constipation; confusion",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO",
+          "indication": "GI prophylaxis during corticosteroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg daily",
+                "orderSentence": "Omeprazole 20 mg daily PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20-40 mg daily during steroid treatment",
+            "orderSentence": "Omeprazole 20 mg daily PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine; long-term: magnesium, B12, bone density",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Maintenance/Chronic Therapies": [
+        {
+          "item": "Antiretroviral therapy (ongoing, HIV-PML)",
+          "route": "PO",
+          "indication": "Lifelong ART for HIV-associated PML; continuous immune reconstitution required for JCV clearance and prevention of relapse",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per HIV guidelines",
+                "orderSentence": "Antiretroviral therapy (ongoing, HIV-PML) Per HIV guidelines PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Continue integrase inhibitor-based regimen (dolutegravir + tenofovir/emtricitabine or equivalent); do NOT interrupt ART; optimize regimen with HIV specialist",
+            "orderSentence": "Antiretroviral therapy (ongoing, HIV-PML) Per HIV guidelines PO"
+          },
+          "contraindications": "None (benefit always outweighs risk in HIV-PML)",
+          "monitoring": "CD4 count q3 months; HIV viral load q3 months; renal function; LFTs; metabolic panel annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Mirtazapine (adjunctive anti-JCV)",
+          "route": "PO",
+          "indication": "Long-term adjunctive therapy; 5-HT2A receptor antagonist may block JCV entry into glial cells; commonly used despite limited clinical evidence given favorable safety profile",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "30-45 mg qHS",
+                "orderSentence": "Mirtazapine (adjunctive anti-JCV) 30-45 mg qHS PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Continue 30-45 mg qHS long-term; theoretical benefit from 5-HT2A blockade preventing JCV cell entry",
+            "orderSentence": "Mirtazapine (adjunctive anti-JCV) 30-45 mg qHS PO"
+          },
+          "contraindications": "Concurrent MAOIs",
+          "monitoring": "Sedation; weight gain; dry mouth; metabolic monitoring annually",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maraviroc (IRIS adjunct)",
+          "route": "PO",
+          "indication": "Adjunctive PML-IRIS treatment during taper period; CCR5 antagonist may reduce inflammatory infiltrate; limited evidence",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg BID",
+                "orderSentence": "Maraviroc (IRIS adjunct) 300 mg BID PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "300 mg PO BID; used as adjunct to steroids for IRIS; continue through IRIS resolution; case reports/series suggest benefit",
+            "orderSentence": "Maraviroc (IRIS adjunct) 300 mg BID PO"
+          },
+          "contraindications": "Severe hepatic impairment; concurrent strong CYP3A4 inhibitors (dose adjust)",
+          "monitoring": "LFTs; clinical response; hepatotoxicity; postural hypotension",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Dexamethasone taper (chronic IRIS)",
+          "route": "PO",
+          "indication": "Prolonged IRIS requiring slow steroid taper over weeks to months",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Variable taper",
+                "orderSentence": "Dexamethasone taper (chronic IRIS) Variable taper PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Taper from 4-8 mg/day by 1-2 mg every 1-2 weeks guided by clinical response and MRI; may require months; balance IRIS suppression vs JCV clearance",
+            "orderSentence": "Dexamethasone taper (chronic IRIS) Variable taper PO"
+          },
+          "contraindications": "Concurrent active infection; brittle diabetes",
+          "monitoring": "Blood glucose; BP; bone density if prolonged; weight; mood; adrenal insufficiency during taper",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Investigational/Immune Reconstitution Therapies (Limited Evidence)": [
+        {
+          "item": "Pembrolizumab",
+          "route": "IV",
+          "indication": "PD-1 checkpoint inhibitor; immune reconstitution approach; emerging evidence in non-HIV PML; restores T-cell function against JCV",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2 mg/kg q4-6wk",
+                "orderSentence": "Pembrolizumab 2 mg/kg q4-6wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 mg/kg IV every 4-6 weeks; limited case series; risk of autoimmune complications and severe IRIS; informed consent essential",
+            "orderSentence": "Pembrolizumab 2 mg/kg q4-6wk IV"
+          },
+          "pretreatment": "Baseline thyroid function; LFTs; renal function; chest imaging; confirm not organ transplant recipient",
+          "contraindications": "Autoimmune disease; organ transplant recipients (rejection risk); severe IRIS already present; active autoimmune condition",
+          "monitoring": "Immune-related adverse events (thyroid q6wk, LFTs q2-4wk, colitis symptoms, pneumonitis); IRIS monitoring; clinical response; JCV PCR q4-8wk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Cidofovir",
+          "route": "IV",
+          "indication": "Antiviral with in vitro activity against JCV; clinical trials have NOT shown clear benefit; not recommended routinely; consider only when no other options",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg/kg q1-2wk",
+                "orderSentence": "Cidofovir 5 mg/kg q1-2wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "5 mg/kg IV weekly x 2 then every 2 weeks; must give with probenecid and IV hydration; nephrotoxic; CLINICAL TRIALS HAVE NOT SHOWN BENEFIT",
+            "orderSentence": "Cidofovir 5 mg/kg q1-2wk IV"
+          },
+          "pretreatment": "Baseline renal function; urinalysis; CBC; adequate hydration protocol",
+          "contraindications": "Renal insufficiency (Cr >1.5); concurrent nephrotoxins; dehydration",
+          "monitoring": "Renal function (Cr before each dose); proteinuria; neutrophil count; limited evidence of efficacy; ocular toxicity",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Nivolumab",
+          "route": "IV",
+          "indication": "PD-1 checkpoint inhibitor; alternative to pembrolizumab for non-HIV PML; similar mechanism of immune reconstitution",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg/kg q2wk",
+                "orderSentence": "Nivolumab 3 mg/kg q2wk IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "3 mg/kg IV every 2 weeks; case reports of benefit; risk of IRIS and autoimmune adverse events",
+            "orderSentence": "Nivolumab 3 mg/kg q2wk IV"
+          },
+          "pretreatment": "Baseline thyroid function; LFTs; renal function; chest imaging; confirm not organ transplant recipient",
+          "contraindications": "Autoimmune disease; organ transplant recipients (rejection risk); severe IRIS already present; active autoimmune condition",
+          "monitoring": "Immune-related adverse events (thyroid q6wk, LFTs q2-4wk, colitis symptoms, pneumonitis); IRIS monitoring; clinical response; JCV PCR q4-8wk",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        },
+        {
+          "item": "Interleukin-7 (IL-7)",
+          "route": "SC",
+          "indication": "Investigational; promotes T-cell expansion and immune reconstitution; early-phase clinical data",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10-20 mcg/kg weekly",
+                "orderSentence": "Interleukin-7 (IL-7) 10-20 mcg/kg weekly SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "10-20 mcg/kg SC weekly for 3 weeks; investigational; limited availability; clinical trial enrollment preferred",
+            "orderSentence": "Interleukin-7 (IL-7) 10-20 mcg/kg weekly SC"
+          },
+          "pretreatment": "Baseline lymphocyte subsets; exclude active autoimmune disease",
+          "contraindications": "Active autoimmune disease; concurrent immunosuppression (relative)",
+          "monitoring": "CD4/CD8 counts q1-2wk; clinical response; IRIS monitoring; cytokine levels",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for PML diagnosis confirmation, IRIS management, and serial monitoring",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Infectious disease consultation for HIV-PML (ART optimization) and non-HIV immunosuppression management",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuroradiology review for MRI pattern characterization and serial imaging comparison",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for motor rehabilitation, mobility assessment, and adaptive equipment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment, adaptive strategies for visual and motor deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Speech therapy for aphasia, dysarthria, and dysphagia assessment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neuropsychology referral for formal cognitive assessment and rehabilitation planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Palliative care for goals of care discussion, symptom management, and advance care planning given poor prognosis in many cases",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Social work consult for insurance navigation, disability resources, home care coordination, and support services",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Neurosurgery consultation only if brain biopsy needed for diagnosis (CSF JCV PCR negative with high clinical suspicion)",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "EXT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "Return to ED immediately for rapid neurological decline (new weakness, vision loss, speech difficulty, sudden confusion, seizures), as PML can progress rapidly and treatment adjustments may be needed",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Do NOT stop antiretroviral therapy (if HIV-positive) under any circumstances; ART is the single most important treatment for HIV-PML; missed doses reduce effectiveness",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Understand that worsening after starting ART (HIV) or stopping natalizumab may represent IRIS — a paradoxical inflammatory response that is expected and treatable; do not stop ART if this occurs",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Seizure precautions: avoid driving until seizure risk assessed by neurology; do not swim or bathe alone; remove sharp/hard hazards from home; fall precautions",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Take all anti-seizure medications as prescribed; do not skip doses or stop abruptly; missed doses increase seizure risk",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up appointments and MRIs are critical — do not miss scheduled imaging, as PML requires close monitoring for progression and IRIS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new fever, headache, or worsening symptoms during steroid taper, as this may indicate IRIS flare requiring dose adjustment",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Carry a medical identification card or bracelet listing PML diagnosis, current medications, and emergency contact for neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "For patients on natalizumab: JCV antibody index monitoring q6 months; discuss treatment switch with MS specialist if JCV index >1.5 and treatment duration >24 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Maximize antiretroviral adherence to maintain immune function and prevent PML recurrence/progression; use pill organizers, alarms, or directly observed therapy if needed",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Home safety modifications for visual field deficits, weakness, and cognitive impairment: remove trip hazards, improve lighting, install grab bars, consider stair gates",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Advance care planning discussions early given variable but often poor prognosis; designate healthcare proxy; document code status and treatment preferences",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Infection avoidance: hand hygiene, avoid sick contacts, avoid raw/undercooked foods; immunocompromised patients at higher risk for opportunistic infections",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Nutrition optimization: adequate protein and caloric intake; consult dietitian if weight loss or poor appetite; address swallowing difficulties if present",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Caregiver education: teach recognition of seizures, IRIS symptoms, and neurological decline; ensure caregiver knows when to call 911 vs. neurology clinic",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "CNS lymphoma (primary)",
+      "features": "Periventricular enhancing lesions; homogeneous enhancement; may be multifocal; immunocompromised patients at risk for both",
+      "tests": "MRI (PML: no enhancement; lymphoma: enhancing); CSF cytology/flow cytometry; brain biopsy"
+    },
+    {
+      "diagnosis": "HIV encephalopathy",
+      "features": "Diffuse white matter changes; symmetric; no focal lesions; more gradual cognitive decline",
+      "tests": "MRI (diffuse vs multifocal); CSF JCV PCR negative; clinical course (slower); HIV viral load correlation"
+    },
+    {
+      "diagnosis": "MS (new or breakthrough)",
+      "features": "In natalizumab patients; new MS lesions vs PML; MS lesions typically periventricular, smaller, enhance",
+      "tests": "MRI pattern (MS: periventricular, enhancing; PML: subcortical U-fibers, no enhancement); CSF JCV PCR"
+    },
+    {
+      "diagnosis": "Posterior reversible encephalopathy syndrome (PRES)",
+      "features": "Posterior-predominant vasogenic edema; hypertension; seizures; reversible",
+      "tests": "MRI (posterior vasogenic edema on ADC; PML: restricted diffusion); clinical context; BP"
+    },
+    {
+      "diagnosis": "Acute disseminated encephalomyelitis (ADEM)",
+      "features": "Post-infectious; encephalopathy; large lesions; enhancing; monophasic; responds to steroids",
+      "tests": "CSF JCV PCR negative; clinical context (post-infectious); MRI (enhancing lesions); steroid-responsive"
+    },
+    {
+      "diagnosis": "Natalizumab-associated IRIS without PML",
+      "features": "Inflammatory MRI changes on natalizumab cessation without true PML; JCV PCR negative",
+      "tests": "CSF JCV PCR negative; MRI may show enhancement but no typical PML lesion pattern"
+    },
+    {
+      "diagnosis": "Toxoplasmosis (CNS)",
+      "features": "Ring-enhancing lesions; mass effect; CD4 usually <100; anti-Toxoplasma IgG positive",
+      "tests": "MRI (ring enhancement, mass effect — not typical of PML); Toxoplasma IgG; response to empiric treatment"
+    },
+    {
+      "diagnosis": "CMV encephalitis",
+      "features": "Periventricular enhancement; cranial neuropathies; polyradiculopathy; CD4 <50",
+      "tests": "CSF CMV PCR; periventricular enhancement pattern; ependymal involvement"
+    },
+    {
+      "diagnosis": "Cerebral small vessel disease",
+      "features": "Chronic symmetric white matter hyperintensities; vascular risk factors; non-progressive or slowly progressive",
+      "tests": "MRI (symmetric, chronic-appearing); clinical context (vascular risk factors); no JCV in CSF"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "CSF JCV PCR is the definitive diagnostic test for PML; sensitivity 72-92%",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Berger JR et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23526723/)"
+    },
+    {
+      "recommendation": "ART is the primary treatment for HIV-PML; immune reconstitution improves survival",
+      "evidenceLevel": "Class I, Level B",
+      "source": "[Marzocchetti A et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19564582/)"
+    },
+    {
+      "recommendation": "Natalizumab-associated PML: PLEX accelerates drug clearance and immune reconstitution",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Clifford DB et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20975054/)"
+    },
+    {
+      "recommendation": "PML-IRIS occurs in ~15-25% of HIV-PML patients starting ART; corticosteroids are standard treatment",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Tan K et al. J Neurovirol 2009](https://pubmed.ncbi.nlm.nih.gov/19370545/)"
+    },
+    {
+      "recommendation": "Mirtazapine as adjunctive therapy (5-HT2A antagonism blocks JCV entry): limited clinical evidence",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Elphick GF et al. Science 2004](https://pubmed.ncbi.nlm.nih.gov/15528448/)"
+    },
+    {
+      "recommendation": "Pembrolizumab (anti-PD-1) for non-HIV PML: case series showing potential benefit",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Cortese I et al. N Engl J Med 2019](https://pubmed.ncbi.nlm.nih.gov/31050378/)"
+    },
+    {
+      "recommendation": "JCV antibody index stratifies natalizumab-PML risk",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Plavina T et al. Ann Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25164539/)"
+    },
+    {
+      "recommendation": "AAN practice guideline on PML risk stratification with natalizumab",
+      "evidenceLevel": "Guideline",
+      "source": "[McGuigan C et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/26764028/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "MRI brain with/without contrast",
+      "frequency": "Q4-8 weeks during active disease; then q3 months",
+      "action": "Adjust immune reconstitution strategy; treat IRIS if new enhancement with edema; consider biopsy if atypical",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CSF JCV PCR (quantitative)",
+      "frequency": "Repeat at 2-4 weeks if initially negative with high suspicion; q3 months if positive",
+      "action": "If rising, assess immune reconstitution adequacy; consider more aggressive approach",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "CD4 count (HIV patients)",
+      "frequency": "Q4-8 weeks after ART initiation; then q3 months",
+      "action": "Optimize ART; check resistance; ID consultation",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "HIV viral load",
+      "frequency": "Q4 weeks until undetectable; then q3 months",
+      "action": "Assess adherence; resistance testing; regimen change",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Neurological examination",
+      "frequency": "Q1-2 days inpatient; each outpatient visit",
+      "action": "Treat IRIS if worsening with inflammation; reassess management if worsening without IRIS (progressive PML)",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose (during steroids)",
+      "frequency": "Q6h during IV steroids; daily during oral taper",
+      "action": "Insulin sliding scale; endocrine consult if persistent >250",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood pressure",
+      "frequency": "Q shift during steroids; each outpatient visit",
+      "action": "Antihypertensives PRN; dose adjustment if sustained hypertension",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "Daily inpatient; each outpatient visit",
+      "action": "Adjust anticonvulsant dosing; obtain EEG; neurology reassessment",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Cognitive function (formal)",
+      "frequency": "Each visit; formal neuropsychological testing q3-6 months",
+      "action": "Neuropsychological referral; cognitive rehabilitation; consider donepezil/memantine",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Lymphocyte subsets (CD4, CD8)",
+      "frequency": "Q2-4 weeks during active IRIS; then q3 months",
+      "action": "Adjust immune reconstitution; reassess immunosuppression discontinuation timeline",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "LFTs (if on maraviroc, mirtazapine, or ART)",
+      "frequency": "Baseline; q2-4 weeks initially; then q3 months",
+      "action": "Hold hepatotoxic medications; dose adjust; hepatology consultation if severe",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Renal function (if on cidofovir or tenofovir)",
+      "frequency": "Before each cidofovir dose; q3 months on ART",
+      "action": "Hold cidofovir if Cr >1.5; adjust tenofovir; nephrology referral",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to floor",
+      "criteria": "All new PML diagnoses; ART initiation/optimization; natalizumab cessation with PLEX; serial neurological monitoring; IRIS management"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Severe cerebral edema with herniation risk; status epilepticus; severe IRIS with mass effect; respiratory compromise"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Neurologically stable or improving; on appropriate immune reconstitution therapy; seizures controlled; safe home environment; close outpatient follow-up arranged (neurology q2-4 weeks; ID for HIV)"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology)",
+      "criteria": "All patients: q2-4 weeks during active disease; MRI q4-8 weeks; transition to q3 months when stable"
+    },
+    {
+      "disposition": "Outpatient follow-up (ID/HIV)",
+      "criteria": "HIV patients: q2-4 weeks for ART optimization; viral load and CD4 monitoring"
+    }
+  ]
+}

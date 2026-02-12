@@ -1,0 +1,1160 @@
+{
+  "id": "adem",
+  "title": "Acute Disseminated Encephalomyelitis (ADEM)",
+  "version": "1.1",
+  "icd10": [
+    "** G04.81 (Other encephalitis and encephalomyelitis)",
+    "G04.00 (Acute disseminated encephalitis and encephalomyelitis",
+    "unspecified)"
+  ],
+  "scope": "** Diagnosis and acute management of ADEM in children and adults. Covers IPMSSG diagnostic criteria, distinction from first MS attack, MOGAD-associated ADEM, CSF analysis, immunotherapy (high-dose steroids, IVIg, PLEX), and monitoring for recurrence. Includes multiphasic ADEM (MDEM) considerations. Excludes other causes of acute encephalitis unless as differential diagnosis.",
+  "notes": [],
+  "sections": {
+    "Laboratory Workup": {
+      "Core Labs (All Patients)": [
+        {
+          "item": "CBC with differential (CPT 85025)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Infection screen; leukocytosis; baseline before immunotherapy",
+          "target": "Normal; mild leukocytosis may be present"
+        },
+        {
+          "item": "CMP (CPT 80053)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Electrolytes, renal/hepatic function; metabolic encephalopathy exclusion",
+          "target": "Normal"
+        },
+        {
+          "item": "Blood cultures (x2)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Exclude bacteremia/sepsis before empiric steroids",
+          "target": "No growth"
+        },
+        {
+          "item": "ESR / CRP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Inflammatory marker; may be elevated in ADEM",
+          "target": "Variable; mild elevation expected"
+        },
+        {
+          "item": "MOG-IgG antibody (cell-based assay) (CPT 86255)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "MOG-associated ADEM; positive in 30-60% of ADEM cases (especially children); prognostic implications",
+          "target": "Negative (positive = MOG-associated ADEM; better prognosis but relapse risk)"
+        },
+        {
+          "item": "AQP4-IgG (NMO-IgG) antibody (CPT 86021)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "rationale": "Exclude NMOSD which may present like ADEM; treatment implications",
+          "target": "Negative (positive = NMOSD, not ADEM)"
+        },
+        {
+          "item": "Urinalysis",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Infection screen",
+          "target": "Normal"
+        }
+      ],
+      "Extended Labs": [
+        {
+          "item": "ANA (CPT 86235)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Autoimmune disease screening (SLE cerebritis, neurosarcoidosis)",
+          "target": "Negative"
+        },
+        {
+          "item": "HIV antibody",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "HIV-associated CNS disease",
+          "target": "Negative"
+        },
+        {
+          "item": "Mycoplasma IgM/IgG",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Mycoplasma pneumoniae-associated ADEM (common trigger)",
+          "target": "Negative"
+        },
+        {
+          "item": "EBV panel (VCA IgM, EBNA IgG)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "EBV-triggered ADEM",
+          "target": "Negative for acute infection"
+        },
+        {
+          "item": "Respiratory viral panel",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "STAT",
+          "rationale": "Identify triggering infection",
+          "target": "Identifies trigger but does not change ADEM management"
+        },
+        {
+          "item": "ACE level",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "Neurosarcoidosis in differential",
+          "target": "Normal"
+        },
+        {
+          "item": "Quantitative immunoglobulins",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "rationale": "IgA deficiency before IVIg; baseline immunoglobulin levels",
+          "target": "Normal; check IgA"
+        }
+      ],
+      "Rare/Specialized": [
+        {
+          "item": "Serum anti-NMDAR antibodies",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Anti-NMDA receptor encephalitis may mimic ADEM (especially with psychiatric symptoms and seizures)",
+          "target": "Negative"
+        },
+        {
+          "item": "Paraneoplastic antibody panel",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Paraneoplastic encephalitis in adults; especially if atypical age or course",
+          "target": "Negative"
+        },
+        {
+          "item": "Mitochondrial DNA studies",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Mitochondrial leukoencephalopathy (MELAS) if atypical presentation",
+          "target": "No pathogenic variant"
+        },
+        {
+          "item": "Biotinidase level",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "rationale": "Biotinidase deficiency causing leukoencephalopathy (treatable)",
+          "target": "Normal"
+        }
+      ],
+      "Lumbar Puncture": [
+        {
+          "item": "Opening pressure",
+          "rationale": "Elevated ICP assessment",
+          "target": "Normal (10-20 cm H2O); may be mildly elevated",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Cell count with differential (tubes 1 and 4)",
+          "rationale": "Infection vs inflammation; ADEM often has mild pleocytosis",
+          "target": "Mild-moderate pleocytosis (typically <100 WBC, lymphocytic); high WBC or neutrophilic predominance suggests infection",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Protein",
+          "rationale": "Elevated in inflammatory/infectious conditions",
+          "target": "Normal to mildly elevated (often 50-100 mg/dL in ADEM); markedly elevated suggests GBS or infection",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Glucose with serum glucose",
+          "rationale": "Low CSF glucose suggests bacterial/TB/fungal infection",
+          "target": "Normal (>60% serum glucose)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Gram stain and bacterial culture",
+          "rationale": "Exclude bacterial meningitis",
+          "target": "No organisms; no growth",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "HSV PCR",
+          "rationale": "Exclude HSV encephalitis (critical mimic)",
+          "target": "Negative",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "CSF meningitis/encephalitis PCR panel (BioFire or equivalent)",
+          "rationale": "Broad viral/bacterial screen; exclude treatable infections",
+          "target": "Negative for all pathogens",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Oligoclonal bands (CSF and serum)",
+          "rationale": "Absent in most ADEM (present in MS); important for MS differentiation",
+          "target": "Absent in ADEM (present in >90% of MS); if positive, raises concern for MS",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "MOG-IgG (CSF)",
+          "rationale": "MOG-associated ADEM; CSF MOG-IgG may be positive even if serum is negative",
+          "target": "Negative (positive supports MOG-ADEM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "-"
+        },
+        {
+          "item": "Cytology",
+          "rationale": "Exclude leptomeningeal malignancy/lymphoma",
+          "target": "Negative for malignant cells",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "-",
+          "ICU": "-"
+        }
+      ]
+    },
+    "Imaging & Studies": {
+      "Essential Studies": [
+        {
+          "item": "MRI brain with/without contrast (CPT 70553)",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT",
+          "timing": "Immediate; critical for diagnosis",
+          "target": "Large (>1-2 cm), poorly demarcated, bilateral, asymmetric white matter lesions; deep gray matter (thalami, basal ganglia) involvement common in ADEM; may enhance with contrast",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "MRI total spine with/without contrast (CPT 72156, 72158)",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT",
+          "timing": "Within 24 hours; assess for concurrent myelitis",
+          "target": "Large, longitudinally extensive, intramedullary T2 lesions (often ≥3 segments); may enhance",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "CT head without contrast",
+          "ED": "STAT",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT",
+          "timing": "Only if MRI not immediately available; exclude mass, hemorrhage, hydrocephalus",
+          "target": "No acute hemorrhage or mass; may show subtle white matter hypodensity",
+          "contraindications": "None"
+        }
+      ],
+      "Extended Studies": [
+        {
+          "item": "EEG (CPT 95816)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE",
+          "timing": "If seizures suspected; encephalopathy assessment",
+          "target": "Diffuse or focal slowing without epileptiform activity; epileptiform discharges if seizures",
+          "contraindications": "None"
+        },
+        {
+          "item": "MRI brain follow-up (3-6 months)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-",
+          "timing": "Document lesion resolution (ADEM lesions should partially or fully resolve); new lesions suggest MS or MOGAD relapse",
+          "target": "Resolution or significant improvement of lesions; no new lesions",
+          "contraindications": "MRI-incompatible devices"
+        },
+        {
+          "item": "Visual evoked potentials (VEP)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "If optic neuritis component suspected",
+          "target": "Normal or prolonged P100 latency",
+          "contraindications": "None"
+        },
+        {
+          "item": "MR spectroscopy",
+          "ED": "-",
+          "HOSP": "EXT",
+          "OPD": "EXT",
+          "ICU": "-",
+          "timing": "Differentiate demyelination from tumor (choline/NAA ratios)",
+          "target": "Elevated choline, reduced NAA in acute lesion; no mass-like spectral pattern",
+          "contraindications": "MRI-incompatible devices"
+        }
+      ]
+    },
+    "Treatment": {
+      "Acute/Emergent": [
+        {
+          "item": "IV Methylprednisolone",
+          "route": "IV",
+          "indication": "First-line for ADEM; begin as soon as CNS infection reasonably excluded; do NOT delay for LP results if clinical suspicion high",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "IV Methylprednisolone 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Pediatric: 30 mg/kg/day (max 1000 mg) IV daily x 3-5 days; Adult: 1000 mg IV daily x 3-5 days; infuse over 1 hour",
+            "orderSentence": "IV Methylprednisolone 1000 mg IV"
+          },
+          "contraindications": "Active untreated bacterial/fungal infection; uncontrolled diabetes (relative)",
+          "monitoring": "Blood glucose Q6H; BP; mood/sleep; GI symptoms; electrolytes",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Oral Prednisone taper",
+          "route": "PO",
+          "indication": "Following IV methylprednisolone; prevents rebound; do NOT taper faster than 4 weeks",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1 mg/kg",
+                "orderSentence": "Oral Prednisone taper 1 mg/kg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 1 mg/kg/day (max 60 mg) after IV pulse; taper by 5-10 mg q3-5d over 4-6 weeks; do NOT taper faster than 4 weeks (risk of relapse)",
+            "orderSentence": "Oral Prednisone taper 1 mg/kg PO"
+          },
+          "contraindications": "Active untreated infection",
+          "monitoring": "Blood glucose; BP; mood; weight; GI protection (PPI)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acyclovir (empiric)",
+          "route": "IV",
+          "indication": "Empiric coverage for HSV encephalitis until PCR results return; ADEM and HSV can present similarly",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "10 mg/kg",
+                "orderSentence": "Acyclovir (empiric) 10 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "10 mg/kg IV q8h; continue until HSV PCR confirmed negative (typically 48-72h); ensure adequate hydration",
+            "orderSentence": "Acyclovir (empiric) 10 mg/kg IV"
+          },
+          "contraindications": "Hypersensitivity",
+          "monitoring": "Renal function (Cr); adequate hydration (prevent crystalluria); CBC",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV",
+          "indication": "Acute seizure termination in ADEM",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.1 mg/kg",
+                "orderSentence": "Lorazepam 0.1 mg/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "0.1 mg/kg IV (max 4 mg) over 2 min; may repeat x1 in 5 min; max 8 mg",
+            "orderSentence": "Lorazepam 0.1 mg/kg IV"
+          },
+          "contraindications": "Severe respiratory depression without ventilator support",
+          "monitoring": "Respiratory status; sedation; BP",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Omeprazole",
+          "route": "PO/IV",
+          "indication": "GI ulcer prophylaxis during high-dose steroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "40 mg",
+                "orderSentence": "Omeprazole 40 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "40 mg PO/IV daily during IV steroid course and oral taper",
+            "orderSentence": "Omeprazole 40 mg PO"
+          },
+          "contraindications": "PPI allergy",
+          "monitoring": "None routine",
+          "ED": "URGENT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Insulin sliding scale",
+          "route": "SC",
+          "indication": "Steroid-induced hyperglycemia management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per protocol",
+                "orderSentence": "Insulin sliding scale Per protocol SC"
+              }
+            ],
+            "route": "SC",
+            "instructions": "Per institutional protocol if glucose >200 mg/dL; sliding scale insulin per hospital protocol",
+            "orderSentence": "Insulin sliding scale Per protocol SC"
+          },
+          "contraindications": "Hypoglycemia risk",
+          "monitoring": "Blood glucose Q6H; transition to scheduled insulin if persistent hyperglycemia",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "ROUTINE"
+        }
+      ],
+      "Symptomatic Treatments": [
+        {
+          "item": "Levetiracetam",
+          "route": "IV/PO",
+          "indication": "Seizures in ADEM; preferred first-line anticonvulsant due to fewer drug interactions and no hepatic metabolism",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "500 mg",
+                "orderSentence": "Levetiracetam 500 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Loading dose 20-30 mg/kg IV (max 3000 mg); then 500-1000 mg BID; adjust for renal function; may taper after 3-6 months if seizure-free and EEG normalized",
+            "orderSentence": "Levetiracetam 500 mg IV/PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "Mood changes (rage, irritability); sedation; suicidality screening; renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Gabapentin",
+          "route": "PO",
+          "indication": "Neuropathic pain from myelitis component; painful paresthesias",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 300 mg qHS; titrate by 300 mg q1-3d; target 300-900 mg TID; max 3600 mg/day divided TID",
+            "orderSentence": "Gabapentin 300 mg PO"
+          },
+          "contraindications": "Renal impairment (adjust dose per CrCl)",
+          "monitoring": "Sedation; dizziness; edema; renal function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Acetaminophen",
+          "route": "PO/IV",
+          "indication": "Pain control; headache from steroids or acute illness; fever management",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Acetaminophen 1000 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "1000 mg PO/IV q6h PRN; max 3000 mg/day (2000 mg/day if liver disease); pediatric: 15 mg/kg q6h (max 75 mg/kg/day)",
+            "orderSentence": "Acetaminophen 1000 mg PO"
+          },
+          "contraindications": "Severe hepatic impairment; allergy",
+          "monitoring": "LFTs if prolonged use",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Famotidine",
+          "route": "PO/IV",
+          "indication": "GI prophylaxis during high-dose steroid therapy (alternative to PPI)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "20 mg",
+                "orderSentence": "Famotidine 20 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "20 mg PO BID during steroid therapy and taper; IV 20 mg q12h if NPO",
+            "orderSentence": "Famotidine 20 mg PO"
+          },
+          "contraindications": "Severe renal impairment (dose adjust)",
+          "monitoring": "GI symptoms",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Baclofen",
+          "route": "PO",
+          "indication": "Spasticity from myelitis component; painful tonic spasms",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day; do NOT discontinue abruptly (risk of seizures, hallucinations)",
+            "orderSentence": "Baclofen 5 mg PO"
+          },
+          "contraindications": "Seizure disorder (lower threshold); renal impairment",
+          "monitoring": "Sedation; weakness; abrupt withdrawal causes seizures/hallucinations",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Oxybutynin",
+          "route": "PO",
+          "indication": "Neurogenic bladder urgency/frequency from myelitis component",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Start 5 mg BID; max 5 mg TID",
+            "orderSentence": "Oxybutynin 5 mg PO"
+          },
+          "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction",
+          "monitoring": "Anticholinergic effects; cognitive effects (especially elderly and children); dry mouth",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Docusate sodium",
+          "route": "PO",
+          "indication": "Constipation prevention during immobility or opioid use",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "100 mg",
+                "orderSentence": "Docusate sodium 100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "100 mg PO BID",
+            "orderSentence": "Docusate sodium 100 mg PO"
+          },
+          "contraindications": "Intestinal obstruction",
+          "monitoring": "Bowel function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Polyethylene glycol 3350 (MiraLAX)",
+          "route": "PO",
+          "indication": "Constipation from neurogenic bowel or immobility",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "17 g",
+                "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "17 g (1 capful) dissolved in 8 oz water daily",
+            "orderSentence": "Polyethylene glycol 3350 (MiraLAX) 17 g PO"
+          },
+          "contraindications": "Intestinal obstruction; bowel perforation",
+          "monitoring": "Bowel function; electrolytes if prolonged",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ondansetron",
+          "route": "IV/PO",
+          "indication": "Nausea and vomiting during acute illness or steroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "4 mg IV/PO q6h PRN; max 16 mg/day",
+            "orderSentence": "Ondansetron 4 mg IV"
+          },
+          "contraindications": "QTc prolongation; severe hepatic impairment (max 8 mg/day)",
+          "monitoring": "QTc if repeated dosing; LFTs",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia and sleep disruption from high-dose steroid therapy",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3 mg",
+                "orderSentence": "Melatonin 3 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-5 mg PO qHS; use during steroid pulse and taper; non-habit-forming",
+            "orderSentence": "Melatonin 3 mg PO"
+          },
+          "contraindications": "None significant",
+          "monitoring": "Sedation; next-day drowsiness",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Calcium + Vitamin D",
+          "route": "PO",
+          "indication": "Bone protection during prolonged corticosteroid therapy (taper >4 weeks)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg calcium + 2000 IU vitamin D",
+                "orderSentence": "Calcium + Vitamin D 1000 mg calcium + 2000 IU vitamin D PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "Calcium 1000-1200 mg/day + Vitamin D 1000-2000 IU/day; start with steroid taper; continue for duration of steroid use",
+            "orderSentence": "Calcium + Vitamin D 1000 mg calcium + 2000 IU vitamin D PO"
+          },
+          "contraindications": "Hypercalcemia; kidney stones",
+          "monitoring": "25-OH Vitamin D level; calcium; DEXA if steroid use >3 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Second-line/Refractory (Steroid-Refractory)": [
+        {
+          "item": "IVIg (Intravenous Immunoglobulin)",
+          "route": "IV",
+          "indication": "Steroid-refractory ADEM (no improvement after 3-5 days of IV steroids); contraindication to steroids",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIg (Intravenous Immunoglobulin) 0.4 g/kg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "2 g/kg total divided over 2-5 days (0.4 g/kg/day x 5 days); premedicate with acetaminophen and diphenhydramine; check IgA level before first dose",
+            "orderSentence": "IVIg (Intravenous Immunoglobulin) 0.4 g/kg IV"
+          },
+          "contraindications": "IgA deficiency with anti-IgA antibodies; recent thromboembolic event; uncompensated HF; renal failure",
+          "monitoring": "Renal function; headache (aseptic meningitis); infusion reactions; BP; HR; thrombotic events",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Plasma Exchange (PLEX)",
+          "route": "Extracorporeal",
+          "indication": "Steroid-refractory and IVIg-refractory ADEM; severe fulminant ADEM (AHLE variant)",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "5-7 exchanges",
+                "orderSentence": "Plasma Exchange (PLEX) 5-7 exchanges Extracorporeal"
+              }
+            ],
+            "route": "Extracorporeal",
+            "instructions": "5-7 exchanges over 10-14 days; 1-1.5 plasma volumes per session; albumin replacement",
+            "orderSentence": "Plasma Exchange (PLEX) 5-7 exchanges Extracorporeal"
+          },
+          "contraindications": "Hemodynamic instability; severe coagulopathy; poor vascular access; sepsis",
+          "monitoring": "Coagulation studies (fibrinogen); electrolytes (calcium, potassium, magnesium); BP; hemodynamic monitoring; line site",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Repeat IV Methylprednisolone (extended course)",
+          "route": "IV",
+          "indication": "Incomplete response to initial 3-5 day course; may extend to 7-10 days in severe cases",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1000 mg",
+                "orderSentence": "Repeat IV Methylprednisolone (extended course) 1000 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1000 mg IV daily; extend course to 7-10 days total if partial response after initial 3-5 days",
+            "orderSentence": "Repeat IV Methylprednisolone (extended course) 1000 mg IV"
+          },
+          "contraindications": "Active untreated infection; uncontrolled diabetes; steroid psychosis",
+          "monitoring": "Glucose q6h; BP; mood; infection surveillance; electrolytes",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "-",
+          "ICU": "URGENT"
+        }
+      ]
+    },
+    "Other Recommendations": {
+      "Referrals & Consults": [
+        {
+          "item": "Neurology consultation for ADEM diagnosis confirmation, immunotherapy management, and MS/MOGAD/NMOSD differentiation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Neuroradiology review of MRI for ADEM vs MS lesion pattern characterization",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Infectious disease consultation if infection cannot be confidently excluded or if unusual pathogen suspected",
+          "ED": "URGENT",
+          "HOSP": "ROUTINE",
+          "OPD": "-",
+          "ICU": "URGENT"
+        },
+        {
+          "item": "Physical therapy for motor recovery, gait training, and rehabilitation planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Occupational therapy for ADL assessment and adaptive strategies during recovery",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Speech-language pathology for dysphagia assessment and communication if brainstem/cerebellar involvement",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "ROUTINE"
+        },
+        {
+          "item": "Neuropsychology follow-up for cognitive assessment (cognitive deficits may persist especially in children)",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Ophthalmology if optic neuritis component present for visual acuity monitoring and OCT baseline",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Rehabilitation medicine for comprehensive inpatient rehabilitation if significant residual motor or cognitive deficits",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Social work for family support, insurance navigation, school/work accommodations, and discharge planning",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Pediatric neurology referral if pediatric patient (ADEM most common in children ages 5-8)",
+          "ED": "URGENT",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
+        }
+      ],
+      "Patient Instructions": [
+        {
+          "item": "ADEM is usually a monophasic illness with good recovery expected over weeks to months; most patients (>70%) recover fully or near-fully",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Return to ED immediately if new neurological symptoms develop after discharge (new weakness, vision changes, confusion, seizures) as this may indicate relapse or alternative diagnosis (MS, MOGAD)",
+          "ED": "STAT",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Complete the full oral steroid taper as prescribed; do NOT stop abruptly (risk of disease rebound and adrenal crisis)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Follow-up MRI at 3-6 months is essential to confirm lesion resolution and rule out MS (new lesions on follow-up MRI would suggest MS rather than ADEM)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any new visual symptoms, limb weakness, numbness, or balance problems even after recovery, as these may indicate a second attack (MDEM or MS transition)",
+          "ED": "ROUTINE",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Report any signs of infection (fever >100.4F, cough, dysuria) while on steroid therapy, as steroids suppress immune function",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid driving and operating heavy machinery while on sedating medications (levetiracetam, gabapentin) until tolerance established",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Children: inform school of diagnosis and potential cognitive recovery needs; request neuropsychological testing before return",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ],
+      "Lifestyle & Prevention": [
+        {
+          "item": "Adequate rest during acute recovery; gradual return to school/work activities as neurological function improves",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Vaccination review: ADEM can rarely be triggered by vaccines; this does NOT contraindicate future vaccination in most cases; discuss with neurologist and immunologist on case-by-case basis",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Seizure precautions if seizures occurred during acute phase; anticonvulsant taper guided by neurology (usually can be discontinued if EEG normalizes and seizure-free for 3-6 months)",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Balanced diet with adequate calcium and vitamin D intake during steroid therapy; monitor weight",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Avoid contact sports and high-risk activities until neurological recovery is complete and cleared by neurology",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Stress management and psychological support; ADEM diagnosis can be distressing for patients and families; consider counseling if adjustment difficulties",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        }
+      ]
+    }
+  },
+  "differential": [
+    {
+      "diagnosis": "First attack of multiple sclerosis",
+      "features": "No encephalopathy (key distinction); well-demarcated periventricular lesions; Dawson fingers; OCBs positive; lesions disseminated in time and space",
+      "tests": "MRI (periventricular, juxtacortical, Dawson fingers); CSF OCBs (positive in >90% MS); follow-up MRI showing new lesions at 3-6 months"
+    },
+    {
+      "diagnosis": "MOGAD (MOG antibody disease)",
+      "features": "Overlap with ADEM especially in children; MOG-IgG positive; may relapse (unlike monophasic ADEM); optic neuritis and myelitis common",
+      "tests": "MOG-IgG (cell-based assay); clinical course (relapses suggest MOGAD vs monophasic ADEM)"
+    },
+    {
+      "diagnosis": "NMOSD (neuromyelitis optica spectrum disorder)",
+      "features": "AQP4-IgG positive; area postrema syndrome; longitudinally extensive TM; optic neuritis; less commonly encephalopathy",
+      "tests": "AQP4-IgG antibody; MRI pattern (LETM, area postrema); clinical features"
+    },
+    {
+      "diagnosis": "HSV encephalitis",
+      "features": "Temporal lobe predilection; hemorrhagic lesions; rapid deterioration; CSF lymphocytic pleocytosis with RBCs",
+      "tests": "CSF HSV PCR (positive); MRI (temporal lobe T2 hyperintensity with hemorrhagic changes); EEG (PLEDs)"
+    },
+    {
+      "diagnosis": "Autoimmune encephalitis (anti-NMDAR, anti-LGI1)",
+      "features": "Psychiatric symptoms; seizures; movement disorder (faciobrachial dystonic seizures in LGI1); ovarian teratoma (NMDAR)",
+      "tests": "Autoimmune antibody panel (serum and CSF); MRI (may be normal or limbic involvement)"
+    },
+    {
+      "diagnosis": "Acute viral encephalitis (non-HSV)",
+      "features": "Direct viral invasion; more pronounced meningeal signs; CSF viral PCR positive; no demyelinating lesion pattern on MRI",
+      "tests": "CSF viral PCR panel; MRI pattern (cortical > white matter); clinical course"
+    },
+    {
+      "diagnosis": "CNS vasculitis",
+      "features": "Multifocal lesions but with vascular territory pattern; vessel wall enhancement on MRI; CSF pleocytosis",
+      "tests": "MR angiography; vessel wall MRI; conventional angiography; brain biopsy"
+    },
+    {
+      "diagnosis": "CNS lymphoma",
+      "features": "Periventricular enhancing mass(es); older adults; immunocompromised; homogeneous enhancement",
+      "tests": "MRI (homogeneous enhancement); CSF cytology and flow cytometry; brain biopsy"
+    },
+    {
+      "diagnosis": "Acute hemorrhagic leukoencephalitis (AHLE/Weston Hurst)",
+      "features": "Hyperacute fulminant variant of ADEM; hemorrhagic white matter necrosis; very high mortality",
+      "tests": "MRI (hemorrhagic component); brain biopsy (if diagnostic uncertainty); clinical course (fulminant)"
+    },
+    {
+      "diagnosis": "Neurosarcoidosis",
+      "features": "Leptomeningeal enhancement; cranial neuropathies; hilar lymphadenopathy; elevated ACE",
+      "tests": "ACE level; chest CT (hilar adenopathy); CSF (ACE, cell count); brain biopsy if needed"
+    }
+  ],
+  "evidence": [
+    {
+      "recommendation": "IPMSSG diagnostic criteria for ADEM (2013 revision)",
+      "evidenceLevel": "Consensus",
+      "source": "[Krupp LB et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23530151/)"
+    },
+    {
+      "recommendation": "High-dose IV methylprednisolone as first-line treatment for ADEM",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "[Tenembaum S et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17898335/)"
+    },
+    {
+      "recommendation": "IVIg for steroid-refractory ADEM",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Pohl D et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15596748/)"
+    },
+    {
+      "recommendation": "PLEX for fulminant steroid-refractory ADEM",
+      "evidenceLevel": "Class IIb, Level C",
+      "source": "[Keegan M et al. Neurology 2002](https://pubmed.ncbi.nlm.nih.gov/11865132/)"
+    },
+    {
+      "recommendation": "MOG-IgG associated ADEM: clinical features and prognosis",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Hacohen Y et al. Brain 2015](https://pubmed.ncbi.nlm.nih.gov/26209313/)"
+    },
+    {
+      "recommendation": "ADEM vs MS differentiation: MRI and CSF features",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Callen DJ et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19221297/)"
+    },
+    {
+      "recommendation": "Oral steroid taper of 4-6 weeks reduces relapse risk",
+      "evidenceLevel": "Class IIa, Level C",
+      "source": "Expert consensus; IPMSSG recommendations"
+    },
+    {
+      "recommendation": "Persistent MOG-IgG positivity associated with higher relapse risk",
+      "evidenceLevel": "Class IIa, Level B",
+      "source": "[Waters PJ et al. Lancet Neurol 2020](https://pubmed.ncbi.nlm.nih.gov/31708357/)"
+    }
+  ],
+  "monitoring": [
+    {
+      "item": "Neurological examination (motor, sensory, cerebellar, mental status)",
+      "frequency": "Q4-8h inpatient; each outpatient visit",
+      "action": "Escalate to IVIg or PLEX if no improvement after 3-5 days of IV steroids",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "STAT"
+    },
+    {
+      "item": "GCS / level of consciousness",
+      "frequency": "Q4h inpatient; Q1h if ICU",
+      "action": "Escalate treatment; consider intubation if GCS declining; ICU transfer",
+      "ED": "STAT",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "STAT"
+    },
+    {
+      "item": "Blood glucose",
+      "frequency": "Q6H during IV steroid pulse",
+      "action": "Sliding scale insulin; scheduled insulin if persistent",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "-",
+      "ICU": "ROUTINE"
+    },
+    {
+      "item": "MRI brain (follow-up)",
+      "frequency": "3-6 months after acute event",
+      "action": "New lesions suggest MS or MOGAD relapse; refer for long-term DMT consideration",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "MOG-IgG titer (follow-up)",
+      "frequency": "3-6 months; 12 months",
+      "action": "Persistent positivity increases relapse risk; consider longer steroid taper or maintenance therapy",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Cognitive assessment",
+      "frequency": "3-6 months; 12 months post-event",
+      "action": "Neuropsychological referral; educational support for children",
+      "ED": "-",
+      "HOSP": "-",
+      "OPD": "ROUTINE",
+      "ICU": "-"
+    },
+    {
+      "item": "Seizure monitoring",
+      "frequency": "During hospitalization; follow-up EEG if seizures occurred",
+      "action": "Continue anticonvulsant; EEG monitoring; consider tapering anticonvulsant at 3-6 months if seizure-free",
+      "ED": "-",
+      "HOSP": "ROUTINE",
+      "OPD": "ROUTINE",
+      "ICU": "ROUTINE"
+    }
+  ],
+  "disposition": [
+    {
+      "disposition": "Admit to floor",
+      "criteria": "All patients with confirmed or suspected ADEM; need for IV methylprednisolone; neurological monitoring; infection exclusion"
+    },
+    {
+      "disposition": "Admit to ICU",
+      "criteria": "Severe encephalopathy (GCS ≤12); respiratory compromise; status epilepticus; rapidly deteriorating neurological exam; AHLE variant"
+    },
+    {
+      "disposition": "Discharge from hospital",
+      "criteria": "Neurologically improving; tolerating oral prednisone taper; no seizures; adequate oral intake; safe for home environment; follow-up MRI and neurology appointments scheduled"
+    },
+    {
+      "disposition": "Outpatient follow-up (neurology)",
+      "criteria": "All patients: 2-4 weeks post-discharge; 3-month follow-up MRI; 6-month and 12-month visits to monitor for relapse; longer follow-up if MOG-IgG positive"
+    }
+  ]
+}

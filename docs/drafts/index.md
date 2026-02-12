@@ -38,6 +38,16 @@ These clinical plans are pending physician review and approval. Please review ea
 | [Optic Neuritis](optic-neuritis.md) | Demyelinating/Neuro-Ophthalmology | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Alzheimer's Disease](alzheimers-disease.md) | Cognitive/Dementia | :material-file-document-edit: Needs Review | 2026-01-27 |
 | [Frontotemporal Dementia](frontotemporal-dementia.md) | Cognitive/Dementia | :material-file-document-edit: Needs Review | 2026-01-27 |
+| [Autonomic Neuropathy](autonomic-neuropathy.md) | Neuromuscular/Autonomic | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Vasculitic Neuropathy](vasculitic-neuropathy.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Multifocal Motor Neuropathy (MMN)](multifocal-motor-neuropathy.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Corticobasal Degeneration (CBD)](corticobasal-degeneration.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Chorea Evaluation](chorea-evaluation.md) | Movement Disorders | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [ADEM](adem.md) | Demyelinating | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [PML](pml.md) | Demyelinating/Infectious | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Muscular Dystrophy (Adult)](muscular-dystrophy-adult.md) | Neuromuscular | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Hereditary Neuropathy / CMT](hereditary-neuropathy-cmt.md) | Neuromuscular/Genetic | :material-file-document-edit: Needs Review | 2026-02-11 |
+| [Gait Disorder Evaluation](gait-disorder-evaluation.md) | Movement/Evaluation | :material-file-document-edit: Needs Review | 2026-02-11 |
 
 ---
 
