@@ -5,6 +5,8 @@ struct ExamDetailView: View {
 
     @State private var completedSteps: Set<String> = []
     @State private var expandedStep: String? = nil
+    @State private var copied = false
+    @State private var showShareSheet = false
 
     private var progress: Double {
         guard !exam.steps.isEmpty else { return 0 }
@@ -62,22 +64,56 @@ struct ExamDetailView: View {
                     pearlsSection
                 }
 
-                // Reset
-                Button {
-                    withAnimation(.snappy) {
-                        completedSteps = []
-                        expandedStep = nil
+                // Actions
+                VStack(spacing: 10) {
+                    HStack(spacing: 12) {
+                        Button {
+                            copyExamResults()
+                        } label: {
+                            Label(
+                                copied ? "Copied!" : "Copy",
+                                systemImage: copied ? "checkmark.circle.fill" : "doc.on.doc"
+                            )
+                            .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(copied ? .green.opacity(0.2) : AppTheme.teal.opacity(0.2))
+                            .foregroundStyle(copied ? .green : AppTheme.teal)
+                            .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
+
+                        Button {
+                            showShareSheet = true
+                        } label: {
+                            Label("Share", systemImage: "square.and.arrow.up")
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(.blue.opacity(0.2))
+                                .foregroundStyle(.blue)
+                                .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
+
+                        Button {
+                            withAnimation(.snappy) {
+                                completedSteps = []
+                                expandedStep = nil
+                            }
+                        } label: {
+                            Label("Reset", systemImage: "arrow.counterclockwise")
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(.quaternary)
+                                .foregroundStyle(.secondary)
+                                .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
                     }
-                } label: {
-                    Label("Reset Exam", systemImage: "arrow.counterclockwise")
-                        .font(.system(.subheadline, design: .rounded, weight: .semibold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .background(.quaternary)
-                        .foregroundStyle(.secondary)
-                        .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
                 }
                 .padding(.horizontal)
+                .sheet(isPresented: $showShareSheet) {
+                    ShareSheet(text: generateExamShareText())
+                }
 
                 Spacer(minLength: 100)
             }
@@ -205,8 +241,8 @@ struct ExamDetailView: View {
                         .font(.system(.caption, design: .rounded, weight: .semibold))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 8)
-                        .background(isComplete ? .quaternary : .green.opacity(0.15))
-                        .foregroundStyle(isComplete ? .secondary : .green)
+                        .background(isComplete ? Color.gray.opacity(0.15) : Color.green.opacity(0.15))
+                        .foregroundStyle(isComplete ? Color.secondary : Color.green)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
                     .sensoryFeedback(.impact(flexibility: .soft), trigger: isComplete)
@@ -238,6 +274,35 @@ struct ExamDetailView: View {
     }
 
     // MARK: - Pearls
+
+    private func generateExamShareText() -> String {
+        var text = "\(exam.title)\n"
+        text += "Progress: \(completedSteps.count)/\(exam.steps.count) steps (\(Int(progress * 100))%)\n"
+        text += "\nCompleted Steps:"
+        
+        for step in exam.steps {
+            let status = completedSteps.contains(step.id) ? "✓" : "○"
+            text += "\n\(status) \(step.title)"
+        }
+        
+        if !exam.clinicalPearls.isEmpty {
+            text += "\n\nClinical Pearls:"
+            for pearl in exam.clinicalPearls {
+                text += "\n• \(pearl)"
+            }
+        }
+        
+        text += "\n\n— Generated by Neuro Plans"
+        return text
+    }
+
+    private func copyExamResults() {
+        UIPasteboard.general.string = generateExamShareText()
+        withAnimation { copied = true }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            withAnimation { copied = false }
+        }
+    }
 
     private var pearlsSection: some View {
         VStack(alignment: .leading, spacing: 8) {

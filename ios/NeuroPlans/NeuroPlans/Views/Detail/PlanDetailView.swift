@@ -112,23 +112,23 @@ struct PlanDetailView: View {
                 sectionHeader("Reference", icon: "book.fill")
 
                 // 5. Differential
-                if !plan.differential.isEmpty {
-                    DifferentialSection(items: plan.differential)
+                if let differential = plan.differential, !differential.isEmpty {
+                    DifferentialSection(items: differential)
                 }
 
                 // 6. Monitoring
-                if !plan.monitoring.isEmpty {
-                    MonitoringSection(items: plan.monitoring)
+                if let monitoring = plan.monitoring, !monitoring.isEmpty {
+                    MonitoringSection(items: monitoring)
                 }
 
                 // 7. Disposition
-                if !plan.disposition.isEmpty {
-                    DispositionSection(items: plan.disposition)
+                if let disposition = plan.disposition, !disposition.isEmpty {
+                    DispositionSection(items: disposition)
                 }
 
                 // 8. Evidence
-                if !plan.evidence.isEmpty {
-                    EvidenceSection(items: plan.evidence)
+                if let evidence = plan.evidence, !evidence.isEmpty {
+                    EvidenceSection(items: evidence)
                 }
 
                 Spacer(minLength: 100)

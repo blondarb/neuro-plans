@@ -60,11 +60,14 @@
     "tableData": null,
     "clinicalPearls": [
       "The Winter-Tozer equation is only valid for patients with hypoalbuminemia; it is not needed when albumin is normal (3.5-5.0 g/dL).",
-      "For dialysis patients, use the modified formula: measured / ((0.1 × albumin) + 0.1).",
+      "For dialysis patients, use the modified formula: measured / ((0.1 \u00d7 albumin) + 0.1).",
       "Free phenytoin level (1-2 mcg/mL therapeutic) is more reliable than corrected total in critically ill patients.",
-      "Phenytoin exhibits saturation (Michaelis-Menten) kinetics — small dose changes can cause large level changes."
+      "Phenytoin exhibits saturation (Michaelis-Menten) kinetics \u2014 small dose changes can cause large level changes."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "creatinine-clearance",
@@ -83,10 +86,21 @@
       {
         "id": "weight",
         "label": "Weight",
-        "unit": "kg",
+        "unit": null,
         "type": "number",
         "placeholder": "e.g. 70",
         "options": null
+      },
+      {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
       },
       {
         "id": "creatinine",
@@ -102,7 +116,10 @@
         "unit": null,
         "type": "select",
         "placeholder": "Select sex",
-        "options": ["Male", "Female"]
+        "options": [
+          "Male",
+          "Female"
+        ]
       }
     ],
     "formula": "((140 - age) * weight) / (72 * creatinine) * (sex == 'Female' ? 0.85 : 1.0)",
@@ -152,9 +169,12 @@
       "Cockcroft-Gault uses actual body weight; consider using adjusted body weight in obese patients.",
       "Levetiracetam, gabapentin, and pregabalin are primarily renally cleared and require dose adjustment.",
       "Phenytoin, carbamazepine, and valproate are hepatically metabolized and generally do not require renal dose adjustment.",
-      "This formula estimates CrCl, not GFR — values are generally higher than eGFR calculations."
+      "This formula estimates CrCl, not GFR \u2014 values are generally higher than eGFR calculations."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "corrected-sodium",
@@ -235,7 +255,10 @@
       "Rapid sodium correction (>8 mEq/L in 24h) risks osmotic demyelination syndrome (central pontine myelinolysis).",
       "Seizure threshold is typically around sodium <120 mEq/L."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "corrected-calcium",
@@ -306,10 +329,13 @@
     "clinicalPearls": [
       "Ionized calcium is more accurate than corrected calcium in critically ill patients.",
       "Hypocalcemia can cause seizures, Chvostek sign, Trousseau sign, and QT prolongation.",
-      "Always check magnesium — hypomagnesemia causes refractory hypocalcemia.",
+      "Always check magnesium \u2014 hypomagnesemia causes refractory hypocalcemia.",
       "Phenytoin and phenobarbital increase vitamin D metabolism and can contribute to hypocalcemia."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "serum-osmolality",
@@ -384,7 +410,10 @@
       "Mannitol target serum osmolality is typically 300-320 mOsm/kg; hold mannitol if >320.",
       "BUN contributes to osmolality but is an ineffective osmole (freely crosses cell membranes)."
     ],
-    "relatedPlans": ["elevated-icp-management", "status-epilepticus"]
+    "relatedPlans": [
+      "elevated-icp-management",
+      "status-epilepticus"
+    ]
   },
   {
     "id": "anion-gap",
@@ -454,12 +483,15 @@
     "stages": null,
     "tableData": null,
     "clinicalPearls": [
-      "Correct the anion gap for albumin: corrected AG = AG + 2.5 × (4.0 - albumin).",
+      "Correct the anion gap for albumin: corrected AG = AG + 2.5 \u00d7 (4.0 - albumin).",
       "Delta-delta ratio: (AG - 12) / (24 - HCO3). Ratio >2 = concurrent metabolic alkalosis; <1 = concurrent non-AG metabolic acidosis.",
       "Valproic acid toxicity can cause an elevated anion gap metabolic acidosis.",
       "Topiramate can cause a non-anion gap metabolic acidosis via carbonic anhydrase inhibition."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "bmi-calculator",
@@ -470,24 +502,46 @@
       {
         "id": "weight",
         "label": "Weight",
-        "unit": "kg",
+        "unit": null,
         "type": "number",
         "placeholder": "e.g. 70",
         "options": null
       },
       {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
+      },
+      {
         "id": "height",
         "label": "Height",
-        "unit": "cm",
+        "unit": null,
         "type": "number",
         "placeholder": "e.g. 170",
         "options": null
+      },
+      {
+        "id": "height-unit",
+        "label": "Height Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "cm",
+          "in"
+        ]
       }
     ],
     "formula": "weight / ((height / 100) * (height / 100))",
     "resultLabel": "Body Mass Index",
-    "resultUnit": "kg/m²",
-    "normalRange": "18.5-24.9 kg/m²",
+    "resultUnit": "kg/m\u00b2",
+    "normalRange": "18.5-24.9 kg/m\u00b2",
     "interpretation": [
       {
         "min": 0,
@@ -528,12 +582,14 @@
     "stages": null,
     "tableData": null,
     "clinicalPearls": [
-      "IVIg dosing in obese patients: consider using adjusted body weight = IBW + 0.4 × (actual - IBW).",
+      "IVIg dosing in obese patients: consider using adjusted body weight = IBW + 0.4 \u00d7 (actual - IBW).",
       "Obesity is the strongest modifiable risk factor for idiopathic intracranial hypertension (IIH).",
       "Weight gain is a common side effect of valproic acid, pregabalin, and gabapentin.",
       "Topiramate and zonisamide are associated with weight loss."
     ],
-    "relatedPlans": ["myasthenia-gravis"]
+    "relatedPlans": [
+      "myasthenia-gravis"
+    ]
   },
   {
     "id": "steroid-equivalence",
@@ -547,7 +603,12 @@
         "unit": null,
         "type": "select",
         "placeholder": "Select steroid",
-        "options": ["Prednisone", "Methylprednisolone", "Dexamethasone", "Hydrocortisone"]
+        "options": [
+          "Prednisone",
+          "Methylprednisolone",
+          "Dexamethasone",
+          "Hydrocortisone"
+        ]
       },
       {
         "id": "dose",
@@ -566,14 +627,18 @@
     "stages": null,
     "tableData": null,
     "clinicalPearls": [
-      "Dexamethasone has the longest half-life (36-72h) and highest potency — preferred for vasogenic edema and ICP management.",
-      "Methylprednisolone 1g IV daily × 3-5 days is standard for MS relapses and NMOSD attacks.",
+      "Dexamethasone has the longest half-life (36-72h) and highest potency \u2014 preferred for vasogenic edema and ICP management.",
+      "Methylprednisolone 1g IV daily \u00d7 3-5 days is standard for MS relapses and NMOSD attacks.",
       "Hydrocortisone is the preferred steroid for adrenal crisis due to its mineralocorticoid activity.",
-      "Prednisone requires hepatic conversion to prednisolone (active form) — use prednisolone in severe liver disease.",
+      "Prednisone requires hepatic conversion to prednisolone (active form) \u2014 use prednisolone in severe liver disease.",
       "Prolonged steroid use (>2 weeks) requires a taper to avoid adrenal crisis.",
       "PJP prophylaxis (TMP-SMX) recommended when prednisone >=20 mg/day for >=4 weeks."
     ],
-    "relatedPlans": ["myasthenia-gravis", "status-epilepticus", "elevated-icp-management"]
+    "relatedPlans": [
+      "myasthenia-gravis",
+      "status-epilepticus",
+      "elevated-icp-management"
+    ]
   },
   {
     "id": "ivig-dose",
@@ -584,10 +649,21 @@
       {
         "id": "weight",
         "label": "Patient Weight",
-        "unit": "kg",
+        "unit": null,
         "type": "number",
         "placeholder": "e.g. 70",
         "options": null
+      },
+      {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
       },
       {
         "id": "regimen",
@@ -595,7 +671,10 @@
         "unit": null,
         "type": "select",
         "placeholder": "Select regimen",
-        "options": ["Standard 5-day", "2-day rapid"]
+        "options": [
+          "Standard 5-day",
+          "2-day rapid"
+        ]
       }
     ],
     "formula": "Standard 5-day: daily_dose = weight * 0.4, total = weight * 2.0; 2-day rapid: daily_dose = weight * 1.0, total = weight * 2.0",
@@ -608,13 +687,15 @@
     "clinicalPearls": [
       "Total dose is 2 g/kg regardless of regimen; only the daily distribution differs.",
       "Standard 5-day regimen (0.4 g/kg/day) is better tolerated and preferred in patients with renal impairment or heart failure.",
-      "2-day rapid regimen (1 g/kg/day × 2 days) may be used when rapid onset is needed, but higher daily doses increase risk of adverse effects.",
+      "2-day rapid regimen (1 g/kg/day \u00d7 2 days) may be used when rapid onset is needed, but higher daily doses increase risk of adverse effects.",
       "Pre-medicate with acetaminophen and diphenhydramine. Consider slowing infusion rate for headache.",
       "Monitor for aseptic meningitis, thromboembolic events, and acute kidney injury.",
-      "Check IgA level before first infusion — IgA-deficient patients are at risk for anaphylaxis.",
+      "Check IgA level before first infusion \u2014 IgA-deficient patients are at risk for anaphylaxis.",
       "Use adjusted body weight in obese patients to avoid excessive dosing."
     ],
-    "relatedPlans": ["myasthenia-gravis"]
+    "relatedPlans": [
+      "myasthenia-gravis"
+    ]
   },
   {
     "id": "status-epilepticus-protocol",
@@ -635,11 +716,11 @@
         "steps": [
           "ABCs: Secure airway, apply oxygen, position patient safely",
           "Establish IV access (2 large-bore IVs)",
-          "Check fingerstick glucose — if <60 mg/dL, give D50W 50 mL IV + thiamine 100 mg IV (before glucose if malnourished/alcoholic)",
+          "Check fingerstick glucose \u2014 if <60 mg/dL, give D50W 50 mL IV + thiamine 100 mg IV (before glucose if malnourished/alcoholic)",
           "Place patient on continuous pulse oximetry and cardiac monitoring",
           "Obtain stat labs: BMP, CBC, LFTs, AED levels, magnesium, calcium, phosphorus, VBG/ABG",
           "Obtain urine drug screen and pregnancy test",
-          "Note time of seizure onset — time is critical for treatment decisions"
+          "Note time of seizure onset \u2014 time is critical for treatment decisions"
         ]
       },
       {
@@ -650,7 +731,7 @@
           "IV access available: Lorazepam 0.1 mg/kg IV (max 4 mg per dose), may repeat once in 5 min",
           "No IV access: Midazolam 10 mg IM (>40 kg), or diazepam 20 mg PR",
           "Alternative: Midazolam 10 mg intranasal or buccal",
-          "Monitor for respiratory depression — have bag-valve mask and intubation equipment ready",
+          "Monitor for respiratory depression \u2014 have bag-valve mask and intubation equipment ready",
           "If seizure stops, load with a second-line agent for sustained control",
           "Time limit: If seizures persist after 2 doses of benzodiazepine, proceed to second-line"
         ]
@@ -661,11 +742,11 @@
         "title": "Second-Line: Urgent Control",
         "steps": [
           "Fosphenytoin 20 mg PE/kg IV at max 150 mg PE/min (avoid in known epilepsy syndrome with sodium channel contraindication)",
-          "OR Levetiracetam 60 mg/kg IV (max 4500 mg) over 15 min — preferred if hepatic impairment or cardiac conduction disease",
-          "OR Valproic acid 40 mg/kg IV (max 3000 mg) over 10 min — avoid in pregnancy, hepatic failure, mitochondrial disease, pancreatitis",
+          "OR Levetiracetam 60 mg/kg IV (max 4500 mg) over 15 min \u2014 preferred if hepatic impairment or cardiac conduction disease",
+          "OR Valproic acid 40 mg/kg IV (max 3000 mg) over 10 min \u2014 avoid in pregnancy, hepatic failure, mitochondrial disease, pancreatitis",
           "Continuous EEG monitoring should be initiated as soon as available",
           "If still seizing, may try a second agent from this tier before moving to refractory protocol",
-          "Reassess airway continuously — intubate if unable to protect airway"
+          "Reassess airway continuously \u2014 intubate if unable to protect airway"
         ]
       },
       {
@@ -673,7 +754,7 @@
         "time": ">40 min",
         "title": "Refractory Status Epilepticus",
         "steps": [
-          "Intubate if not already done — RSI with propofol or midazolam preferred",
+          "Intubate if not already done \u2014 RSI with propofol or midazolam preferred",
           "Continuous IV midazolam: bolus 0.2 mg/kg, then infusion 0.1-2 mg/kg/hr",
           "OR Continuous IV propofol: bolus 2 mg/kg, then infusion 20-80 mcg/kg/min (monitor for propofol infusion syndrome if >48h or >80 mcg/kg/min)",
           "OR Pentobarbital: bolus 5 mg/kg, then 1-5 mg/kg/hr (titrate to burst suppression on cEEG)",
@@ -682,7 +763,7 @@
           "Maintain infusion for 24-48h, then slowly wean while monitoring cEEG",
           "Consider ketamine 1-5 mg/kg/hr if refractory to above agents",
           "Consider pyridoxine 5 g IV if unknown etiology (possible INH toxicity)",
-          "ICU admission required — arterial line, vasopressors as needed"
+          "ICU admission required \u2014 arterial line, vasopressors as needed"
         ]
       }
     ],
@@ -690,11 +771,14 @@
     "clinicalPearls": [
       "Status epilepticus is defined as continuous seizure activity >=5 minutes or >=2 seizures without return to baseline.",
       "Every minute of delayed treatment reduces the likelihood of seizure termination.",
-      "Do not delay benzodiazepines while waiting for IV access — give IM midazolam.",
+      "Do not delay benzodiazepines while waiting for IV access \u2014 give IM midazolam.",
       "Always check for and treat reversible causes: hypoglycemia, hyponatremia, hypocalcemia, medication non-compliance.",
-      "Non-convulsive status epilepticus (NCSE) should be suspected in any patient with unexplained altered mental status — requires EEG for diagnosis."
+      "Non-convulsive status epilepticus (NCSE) should be suspected in any patient with unexplained altered mental status \u2014 requires EEG for diagnosis."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "code-stroke-protocol",
@@ -713,13 +797,13 @@
         "time": "0-10 min",
         "title": "Initial Assessment",
         "steps": [
-          "ABC assessment — stabilize vitals, apply oxygen if SpO2 <94%",
+          "ABC assessment \u2014 stabilize vitals, apply oxygen if SpO2 <94%",
           "Establish large-bore IV access (2 IVs preferred)",
-          "Determine LAST KNOWN WELL time (not time found) — critical for treatment eligibility",
-          "Obtain fingerstick glucose — treat hypoglycemia, note hyperglycemia (target <180 mg/dL)",
+          "Determine LAST KNOWN WELL time (not time found) \u2014 critical for treatment eligibility",
+          "Obtain fingerstick glucose \u2014 treat hypoglycemia, note hyperglycemia (target <180 mg/dL)",
           "Activate stroke team and notify CT/radiology",
-          "NPO status — aspiration risk until swallow screen completed",
-          "Obtain weight (for tPA dosing) — ask patient/family or estimate"
+          "NPO status \u2014 aspiration risk until swallow screen completed",
+          "Obtain weight (for tPA dosing) \u2014 ask patient/family or estimate"
         ]
       },
       {
@@ -727,11 +811,11 @@
         "time": "10-20 min",
         "title": "Neurological Assessment",
         "steps": [
-          "Perform NIH Stroke Scale (NIHSS) — document score and individual components",
+          "Perform NIH Stroke Scale (NIHSS) \u2014 document score and individual components",
           "Brief focused neurological exam: consciousness, gaze, visual fields, facial palsy, motor, sensory, ataxia, language, dysarthria, neglect",
           "Assess for signs of large vessel occlusion (LVO): NIHSS >=6, gaze deviation, hemiplegia, aphasia",
           "Obtain stat labs: CBC, BMP, coagulation studies (PT/INR, PTT), troponin, type and screen",
-          "Do NOT delay CT for lab results — only glucose is needed before tPA"
+          "Do NOT delay CT for lab results \u2014 only glucose is needed before tPA"
         ]
       },
       {
@@ -739,10 +823,10 @@
         "time": "20-30 min",
         "title": "Emergent Imaging",
         "steps": [
-          "Non-contrast CT head — rule out hemorrhage (must be completed before tPA)",
-          "CT angiography (head and neck) — identify large vessel occlusion for EVT candidacy",
-          "CT perfusion — assess core infarct vs. penumbra if within 6-24 hour window (DAWN/DEFUSE 3 criteria)",
-          "Evaluate ASPECTS score (Alberta Stroke Program Early CT Score) — score <6 suggests large core infarct",
+          "Non-contrast CT head \u2014 rule out hemorrhage (must be completed before tPA)",
+          "CT angiography (head and neck) \u2014 identify large vessel occlusion for EVT candidacy",
+          "CT perfusion \u2014 assess core infarct vs. penumbra if within 6-24 hour window (DAWN/DEFUSE 3 criteria)",
+          "Evaluate ASPECTS score (Alberta Stroke Program Early CT Score) \u2014 score <6 suggests large core infarct",
           "Notify interventional neuroradiology if LVO identified"
         ]
       },
@@ -768,7 +852,7 @@
           "Eligible if: LVO (ICA, M1, or proximal M2), NIHSS >=6, ASPECTS >=6, pre-stroke mRS 0-1",
           "Standard window: within 6 hours of last known well",
           "Extended window (6-24h): meet DAWN criteria (clinical-core mismatch) or DEFUSE 3 criteria (perfusion mismatch)",
-          "Do NOT delay EVT for tPA effect — both can proceed simultaneously",
+          "Do NOT delay EVT for tPA effect \u2014 both can proceed simultaneously",
           "Door-to-groin puncture target: <90 minutes",
           "Post-procedure: admit to neuro ICU, BP management, repeat imaging at 24h"
         ]
@@ -792,12 +876,14 @@
     "tableData": null,
     "clinicalPearls": [
       "Time is brain: approximately 1.9 million neurons die per minute during a stroke.",
-      "Only fingerstick glucose is needed before tPA — do not wait for full lab results.",
+      "Only fingerstick glucose is needed before tPA \u2014 do not wait for full lab results.",
       "Blood pressure must be <185/110 before tPA administration.",
       "Tenecteplase is emerging as an alternative to alteplase due to single-bolus dosing convenience.",
       "Wake-up strokes and unknown onset strokes may still qualify for EVT using perfusion imaging (DAWN/DEFUSE 3)."
     ],
-    "relatedPlans": ["acute-ischemic-stroke"]
+    "relatedPlans": [
+      "acute-ischemic-stroke"
+    ]
   },
   {
     "id": "brain-death-protocol",
@@ -817,13 +903,13 @@
         "title": "Prerequisites",
         "steps": [
           "Establish proximate cause of brain injury sufficient to cause brain death (neuroimaging, clinical history)",
-          "Exclude confounders: core temperature must be >=36°C (96.8°F)",
+          "Exclude confounders: core temperature must be >=36\u00b0C (96.8\u00b0F)",
           "Systolic BP >=100 mmHg (use vasopressors if needed)",
           "No CNS depressant drug effects: check drug levels if any sedatives/narcotics given in past 24-72h",
           "No residual neuromuscular blockade (confirm with train-of-four >= 4/4 twitches)",
           "No severe electrolyte, acid-base, or endocrine derangement",
           "Ensure no untreated medical conditions that could confound the examination",
-          "Identify qualified examiner(s) — institutional policy may require attending physician or neurologist/neurosurgeon"
+          "Identify qualified examiner(s) \u2014 institutional policy may require attending physician or neurologist/neurosurgeon"
         ]
       },
       {
@@ -838,7 +924,7 @@
           "Oculovestibular reflex (Cold calorics): No eye deviation after 50 mL ice water instilled into each ear (wait 5 min between sides, confirm intact TM)",
           "Gag reflex: No response to posterior pharyngeal stimulation",
           "Cough reflex: No cough response to deep tracheal suctioning",
-          "No motor response: Only spinal reflexes (if present) are permissible — no motor response above the foramen magnum",
+          "No motor response: Only spinal reflexes (if present) are permissible \u2014 no motor response above the foramen magnum",
           "Document presence or absence of each reflex systematically"
         ]
       },
@@ -847,12 +933,12 @@
         "time": "After Clinical Exam",
         "title": "Apnea Test",
         "steps": [
-          "Pre-oxygenate with 100% FiO2 for 10 minutes — target PaO2 >200 mmHg",
+          "Pre-oxygenate with 100% FiO2 for 10 minutes \u2014 target PaO2 >200 mmHg",
           "Obtain baseline ABG (PaCO2 should be 35-45 mmHg and pH 7.35-7.45)",
           "Disconnect ventilator; deliver O2 at 6 L/min via tracheal catheter (passive oxygenation)",
           "Observe for any respiratory effort for 8-10 minutes",
-          "Obtain ABG at 8-10 minutes — test is positive if PaCO2 >=60 mmHg OR PaCO2 rise >=20 mmHg above baseline",
-          "Abort test if: SBP <90 mmHg, SpO2 <85%, or cardiac arrhythmia — reconnect ventilator immediately",
+          "Obtain ABG at 8-10 minutes \u2014 test is positive if PaCO2 >=60 mmHg OR PaCO2 rise >=20 mmHg above baseline",
+          "Abort test if: SBP <90 mmHg, SpO2 <85%, or cardiac arrhythmia \u2014 reconnect ventilator immediately",
           "If aborted, consider ancillary confirmatory test instead",
           "A positive apnea test (no respiratory effort + adequate PaCO2 rise) confirms brainstem dysfunction"
         ]
@@ -863,11 +949,11 @@
         "title": "Ancillary/Confirmatory Tests",
         "steps": [
           "Ancillary tests are required only if: clinical exam cannot be completed, apnea test is aborted, or institutional/state policy mandates",
-          "Cerebral angiography: Gold standard — demonstrates absence of intracranial blood flow",
+          "Cerebral angiography: Gold standard \u2014 demonstrates absence of intracranial blood flow",
           "Radionuclide cerebral perfusion scan (Tc-99m HMPAO): Shows no uptake ('hollow skull' sign)",
           "Electroencephalography (EEG): Electrocerebral silence (no activity >2 microvolts for 30 min)",
           "Transcranial Doppler (TCD): Reverberating flow, small systolic peaks, or absent diastolic flow",
-          "CT angiography: Emerging alternative — absence of intracranial opacification",
+          "CT angiography: Emerging alternative \u2014 absence of intracranial opacification",
           "One ancillary test confirming absent brain function is sufficient"
         ]
       },
@@ -887,13 +973,15 @@
     ],
     "tableData": null,
     "clinicalPearls": [
-      "Brain death is legal death in all 50 US states — the Uniform Determination of Death Act (UDDA).",
+      "Brain death is legal death in all 50 US states \u2014 the Uniform Determination of Death Act (UDDA).",
       "Spinal reflexes (triple flexion, Lazarus sign) may persist and do not preclude brain death diagnosis.",
-      "The apnea test is the single most important component — it tests medullary respiratory center function.",
+      "The apnea test is the single most important component \u2014 it tests medullary respiratory center function.",
       "Therapeutic hypothermia or barbiturate coma requires adequate washout time before brain death testing.",
-      "State laws vary on number of examiners, observation periods, and ancillary test requirements — always check local policy."
+      "State laws vary on number of examiners, observation periods, and ancillary test requirements \u2014 always check local policy."
     ],
-    "relatedPlans": ["brain-death-evaluation"]
+    "relatedPlans": [
+      "brain-death-evaluation"
+    ]
   },
   {
     "id": "icp-management-protocol",
@@ -912,9 +1000,9 @@
         "time": "Baseline",
         "title": "General Measures (Tier 0)",
         "steps": [
-          "Elevate head of bed to 30° with head in midline position (avoid jugular venous compression)",
+          "Elevate head of bed to 30\u00b0 with head in midline position (avoid jugular venous compression)",
           "Ensure adequate sedation and analgesia (propofol or midazolam + fentanyl)",
-          "Maintain normothermia — treat fever aggressively (acetaminophen, cooling blanket) as each 1°C rise increases ICP",
+          "Maintain normothermia \u2014 treat fever aggressively (acetaminophen, cooling blanket) as each 1\u00b0C rise increases ICP",
           "Avoid hypotension: target CPP 60-70 mmHg (CPP = MAP - ICP)",
           "Avoid hypoxia: PaO2 >60 mmHg, SpO2 >94%",
           "Avoid hypercarbia: target PaCO2 35-40 mmHg (normoventilation)",
@@ -930,8 +1018,8 @@
         "steps": [
           "CSF drainage via EVD: drain 5-10 mL as needed if external ventricular drain is in place",
           "Mannitol 20%: 0.25-1 g/kg IV bolus over 15-20 min (max single dose 100g)",
-          "Monitor serum osmolality q6h — hold mannitol if serum osmolality >320 mOsm/kg",
-          "Monitor for mannitol nephrotoxicity — maintain euvolemia",
+          "Monitor serum osmolality q6h \u2014 hold mannitol if serum osmolality >320 mOsm/kg",
+          "Monitor for mannitol nephrotoxicity \u2014 maintain euvolemia",
           "OR Hypertonic saline 23.4%: 30 mL IV bolus via central line over 15-20 min",
           "OR Hypertonic saline 3%: 150-250 mL IV bolus or continuous infusion 0.5-2 mL/kg/hr",
           "Target serum sodium 145-155 mEq/L for hypertonic saline therapy",
@@ -943,7 +1031,7 @@
         "time": "Refractory ICP >20 mmHg",
         "title": "Second-Tier Interventions",
         "steps": [
-          "Mild hyperventilation: target PaCO2 30-35 mmHg (temporary measure only — rebound ICP can occur)",
+          "Mild hyperventilation: target PaCO2 30-35 mmHg (temporary measure only \u2014 rebound ICP can occur)",
           "Increase sedation: propofol bolus then increase infusion (monitor for propofol infusion syndrome)",
           "Neuromuscular blockade (cisatracurium) if ventilator dyssynchrony is contributing to ICP elevation",
           "Repeat bolus osmotherapy if serum osmolality allows",
@@ -956,11 +1044,11 @@
         "time": "Refractory to Tiers 1-2",
         "title": "Third-Tier Interventions",
         "steps": [
-          "Barbiturate coma: pentobarbital 5-10 mg/kg loading dose, then 1-3 mg/kg/hr — titrate to burst suppression on cEEG",
+          "Barbiturate coma: pentobarbital 5-10 mg/kg loading dose, then 1-3 mg/kg/hr \u2014 titrate to burst suppression on cEEG",
           "Requires arterial line, vasopressor support typically needed (myocardial depression)",
-          "Therapeutic hypothermia: target 33-35°C — evidence is mixed, consider on case-by-case basis",
-          "Aggressive hyperventilation: PaCO2 <30 mmHg (risk of cerebral ischemia — use only with brain tissue oxygen or jugular venous monitoring)",
-          "Decompressive craniectomy: consider for refractory ICP elevation — consult neurosurgery",
+          "Therapeutic hypothermia: target 33-35\u00b0C \u2014 evidence is mixed, consider on case-by-case basis",
+          "Aggressive hyperventilation: PaCO2 <30 mmHg (risk of cerebral ischemia \u2014 use only with brain tissue oxygen or jugular venous monitoring)",
+          "Decompressive craniectomy: consider for refractory ICP elevation \u2014 consult neurosurgery",
           "DECRA and RESCUEicp trials support decompressive craniectomy in specific TBI populations",
           "Lumbar drain if communicating hydrocephalus and no significant mass effect"
         ]
@@ -971,10 +1059,14 @@
       "Target: ICP <22 mmHg and CPP 60-70 mmHg (Brain Trauma Foundation, 4th Edition).",
       "Mannitol works via osmotic gradient AND rheological effects (decreased blood viscosity); hypertonic saline works purely via osmotic gradient.",
       "Hypertonic saline 23.4% requires a central line; 3% can be given peripherally.",
-      "Prophylactic hyperventilation is harmful — only use briefly as a bridge to definitive intervention.",
-      "Always obtain repeat imaging before escalating therapy — a surgically evacuable lesion may have developed."
+      "Prophylactic hyperventilation is harmful \u2014 only use briefly as a bridge to definitive intervention.",
+      "Always obtain repeat imaging before escalating therapy \u2014 a surgically evacuable lesion may have developed."
     ],
-    "relatedPlans": ["elevated-icp-management", "intracerebral-hemorrhage", "subarachnoid-hemorrhage"]
+    "relatedPlans": [
+      "elevated-icp-management",
+      "intracerebral-hemorrhage",
+      "subarachnoid-hemorrhage"
+    ]
   },
   {
     "id": "myasthenic-crisis-protocol",
@@ -995,7 +1087,7 @@
         "steps": [
           "Serial bedside pulmonary function tests: Forced Vital Capacity (FVC) and Negative Inspiratory Force (NIF) q2-4h",
           "20/30/40 rule for intubation: FVC <20 mL/kg, NIF weaker than -30 cmH2O, or >30% decline from baseline",
-          "Intubate early — do NOT wait for ABG deterioration or respiratory arrest",
+          "Intubate early \u2014 do NOT wait for ABG deterioration or respiratory arrest",
           "Avoid succinylcholine (unpredictable response in MG; use rocuronium at reduced dose ~0.3-0.5 mg/kg)",
           "Sugammadex available for reversal if rocuronium used",
           "BiPAP may be used as bridge in patients with FVC 15-20 mL/kg if mentating well and protecting airway"
@@ -1006,11 +1098,11 @@
         "time": "On Admission",
         "title": "Medication Management",
         "steps": [
-          "HOLD cholinesterase inhibitors (pyridostigmine) during crisis — excess secretions worsen respiratory status and obscure assessment",
+          "HOLD cholinesterase inhibitors (pyridostigmine) during crisis \u2014 excess secretions worsen respiratory status and obscure assessment",
           "May restart pyridostigmine at low dose (30 mg q8h) once extubated and stable",
           "Avoid medications that worsen MG: aminoglycosides, fluoroquinolones, macrolides, beta-blockers, magnesium, telithromycin, botulinum toxin",
           "Use caution with: phenytoin, lithium, procainamide, D-penicillamine, statins (rare)",
-          "If on chronic steroids, do NOT abruptly discontinue — provide stress dose steroids",
+          "If on chronic steroids, do NOT abruptly discontinue \u2014 provide stress dose steroids",
           "Review all medications including ophthalmologic drops (timolol) and over-the-counter agents"
         ]
       },
@@ -1019,9 +1111,9 @@
         "time": "Within 24h",
         "title": "Immunotherapy: IVIg or PLEX",
         "steps": [
-          "IVIg 0.4 g/kg/day × 5 days (total 2 g/kg) — onset of benefit in 4-5 days, peak at 2-3 weeks",
+          "IVIg 0.4 g/kg/day \u00d7 5 days (total 2 g/kg) \u2014 onset of benefit in 4-5 days, peak at 2-3 weeks",
           "OR Plasma exchange (PLEX): 5 exchanges over 10-14 days (1-1.5 plasma volumes per exchange)",
-          "IVIg and PLEX are equally effective — choice depends on availability and patient factors",
+          "IVIg and PLEX are equally effective \u2014 choice depends on availability and patient factors",
           "PLEX preferred if: rapid onset needed, IgA deficiency, or prior IVIg reaction",
           "IVIg preferred if: poor vascular access, hemodynamic instability, or concurrent infection",
           "Do not combine IVIg and PLEX simultaneously (PLEX removes IVIg)",
@@ -1033,9 +1125,9 @@
         "time": "After Stabilization",
         "title": "Corticosteroid and Long-term Immunosuppression",
         "steps": [
-          "WARNING: High-dose steroids can transiently worsen MG in the first 7-10 days — start only after respiratory stabilization",
+          "WARNING: High-dose steroids can transiently worsen MG in the first 7-10 days \u2014 start only after respiratory stabilization",
           "Start prednisone at low dose (10-20 mg/day) and escalate slowly over 2-4 weeks to target (1 mg/kg/day, max 80-100 mg)",
-          "OR if patient already intubated with secure airway: IV methylprednisolone 1g daily × 3-5 days may be used",
+          "OR if patient already intubated with secure airway: IV methylprednisolone 1g daily \u00d7 3-5 days may be used",
           "Consider concurrent steroid-sparing agent: mycophenolate 1g BID or azathioprine 2-3 mg/kg/day",
           "PJP prophylaxis (TMP-SMX) if prednisone >=20 mg/day for >=4 weeks",
           "Consider thymectomy referral once stabilized (if thymoma on imaging, or generalized AChR-Ab+ MG)"
@@ -1046,10 +1138,10 @@
         "time": "Concurrent",
         "title": "Identify and Treat Triggers",
         "steps": [
-          "Infection is the #1 trigger for myasthenic crisis — obtain cultures (blood, urine, sputum, CXR)",
-          "Start empiric antibiotics if infection suspected — AVOID fluoroquinolones and aminoglycosides",
+          "Infection is the #1 trigger for myasthenic crisis \u2014 obtain cultures (blood, urine, sputum, CXR)",
+          "Start empiric antibiotics if infection suspected \u2014 AVOID fluoroquinolones and aminoglycosides",
           "Safe antibiotics in MG: penicillins, cephalosporins, carbapenems, trimethoprim-sulfamethoxazole",
-          "Medication changes or non-compliance — review medication reconciliation",
+          "Medication changes or non-compliance \u2014 review medication reconciliation",
           "Surgery, trauma, or emotional stress",
           "Taper of immunosuppression",
           "Distinguish myasthenic crisis from cholinergic crisis: cholinergic crisis has excessive secretions, diarrhea, miosis, bradycardia from pyridostigmine overdose"
@@ -1059,12 +1151,14 @@
     "tableData": null,
     "clinicalPearls": [
       "Myasthenic crisis occurs in ~15-20% of MG patients, usually within the first 2 years of diagnosis.",
-      "FVC is more reliable than NIF for monitoring — trend is more important than single values.",
-      "ABG is a LATE finding in myasthenic crisis — do not wait for hypercapnia to intubate.",
-      "Cholinergic crisis (from pyridostigmine excess) mimics myasthenic crisis — differentiated by muscarinic symptoms (SLUDGE: salivation, lacrimation, urination, diarrhea, GI cramping, emesis).",
+      "FVC is more reliable than NIF for monitoring \u2014 trend is more important than single values.",
+      "ABG is a LATE finding in myasthenic crisis \u2014 do not wait for hypercapnia to intubate.",
+      "Cholinergic crisis (from pyridostigmine excess) mimics myasthenic crisis \u2014 differentiated by muscarinic symptoms (SLUDGE: salivation, lacrimation, urination, diarrhea, GI cramping, emesis).",
       "MuSK-Ab+ MG patients may respond less well to IVIg; PLEX is preferred in MuSK-positive disease."
     ],
-    "relatedPlans": ["myasthenia-gravis"]
+    "relatedPlans": [
+      "myasthenia-gravis"
+    ]
   },
   {
     "id": "csf-analysis",
@@ -1079,25 +1173,92 @@
     "interpretation": null,
     "stages": null,
     "tableData": {
-      "columns": ["Parameter", "Normal", "Bacterial Meningitis", "Viral Meningitis", "TB/Fungal", "MS", "SAH"],
+      "columns": [
+        "Parameter",
+        "Normal",
+        "Bacterial Meningitis",
+        "Viral Meningitis",
+        "TB/Fungal",
+        "MS",
+        "SAH"
+      ],
       "rows": [
-        ["Opening Pressure", "6-20 cmH2O", "Elevated (>30 cmH2O)", "Normal to mildly elevated", "Elevated (often >30 cmH2O)", "Normal (may be mildly elevated)", "Elevated"],
-        ["WBC Count", "0-5 cells/µL", "1,000-10,000+ (neutrophil predominant >80%)", "10-500 (lymphocyte predominant)", "100-500 (lymphocyte predominant, may be mixed early)", "0-50 (lymphocyte predominant)", "RBCs in all tubes; WBCs proportional to blood"],
-        ["Protein", "15-45 mg/dL", "Elevated (>250 mg/dL)", "Mildly elevated (50-100 mg/dL)", "Elevated (100-500 mg/dL)", "Mildly elevated (50-100 mg/dL)", "Elevated (due to blood)"],
-        ["Glucose", "50-80 mg/dL (>60% serum)", "Very low (<40 mg/dL, <40% serum)", "Normal (>60% serum)", "Low (<45 mg/dL)", "Normal", "Normal (may be low if meningitis coexists)"],
-        ["Gram Stain", "No organisms", "Positive in 60-90% (varies by organism)", "Negative", "AFB smear positive <20%; India ink positive in 50-70% for Crypto", "Negative", "N/A"],
-        ["Culture", "No growth", "Positive in 70-85%", "Viral PCR preferred (enterovirus, HSV)", "AFB culture positive ~80% (takes 2-8 weeks); Fungal culture 50-70%", "Negative", "N/A"],
-        ["Other", "None", "Lactate >3.5 mmol/L supports bacterial; Procalcitonin elevated in serum", "HSV PCR (sensitivity >95%); Consider arboviral panel, VZV PCR", "Cryptococcal Ag (sensitivity >95%); Adenosine deaminase (ADA) elevated in TB (>8 IU/L)", "Oligoclonal bands (2+ CSF-specific); Elevated IgG index (>0.7); Myelin basic protein", "Xanthochromia (>12h); RBC count does not clear tube 1→4; D-dimer elevated"]
+        [
+          "Opening Pressure",
+          "6-20 cmH2O",
+          "Elevated (>30 cmH2O)",
+          "Normal to mildly elevated",
+          "Elevated (often >30 cmH2O)",
+          "Normal (may be mildly elevated)",
+          "Elevated"
+        ],
+        [
+          "WBC Count",
+          "0-5 cells/\u00b5L",
+          "1,000-10,000+ (neutrophil predominant >80%)",
+          "10-500 (lymphocyte predominant)",
+          "100-500 (lymphocyte predominant, may be mixed early)",
+          "0-50 (lymphocyte predominant)",
+          "RBCs in all tubes; WBCs proportional to blood"
+        ],
+        [
+          "Protein",
+          "15-45 mg/dL",
+          "Elevated (>250 mg/dL)",
+          "Mildly elevated (50-100 mg/dL)",
+          "Elevated (100-500 mg/dL)",
+          "Mildly elevated (50-100 mg/dL)",
+          "Elevated (due to blood)"
+        ],
+        [
+          "Glucose",
+          "50-80 mg/dL (>60% serum)",
+          "Very low (<40 mg/dL, <40% serum)",
+          "Normal (>60% serum)",
+          "Low (<45 mg/dL)",
+          "Normal",
+          "Normal (may be low if meningitis coexists)"
+        ],
+        [
+          "Gram Stain",
+          "No organisms",
+          "Positive in 60-90% (varies by organism)",
+          "Negative",
+          "AFB smear positive <20%; India ink positive in 50-70% for Crypto",
+          "Negative",
+          "N/A"
+        ],
+        [
+          "Culture",
+          "No growth",
+          "Positive in 70-85%",
+          "Viral PCR preferred (enterovirus, HSV)",
+          "AFB culture positive ~80% (takes 2-8 weeks); Fungal culture 50-70%",
+          "Negative",
+          "N/A"
+        ],
+        [
+          "Other",
+          "None",
+          "Lactate >3.5 mmol/L supports bacterial; Procalcitonin elevated in serum",
+          "HSV PCR (sensitivity >95%); Consider arboviral panel, VZV PCR",
+          "Cryptococcal Ag (sensitivity >95%); Adenosine deaminase (ADA) elevated in TB (>8 IU/L)",
+          "Oligoclonal bands (2+ CSF-specific); Elevated IgG index (>0.7); Myelin basic protein",
+          "Xanthochromia (>12h); RBC count does not clear tube 1\u21924; D-dimer elevated"
+        ]
       ]
     },
     "clinicalPearls": [
       "Always send opening pressure, cell count with differential, protein, glucose (with simultaneous serum glucose), Gram stain, and culture as a minimum.",
       "Traumatic tap: expect ~1 WBC per 700 RBCs. If WBC:RBC ratio exceeds this, suspect true pleocytosis.",
-      "HSV encephalitis may show RBCs in CSF due to hemorrhagic necrosis of temporal lobes — check HSV PCR and start acyclovir empirically.",
-      "Partially treated bacterial meningitis may show lymphocytic predominance — always check Gram stain and culture.",
+      "HSV encephalitis may show RBCs in CSF due to hemorrhagic necrosis of temporal lobes \u2014 check HSV PCR and start acyclovir empirically.",
+      "Partially treated bacterial meningitis may show lymphocytic predominance \u2014 always check Gram stain and culture.",
       "Hold LP and obtain CT first if: papilledema, focal neurological deficit, altered consciousness, seizure, or immunocompromised patient."
     ],
-    "relatedPlans": ["bacterial-meningitis", "subarachnoid-hemorrhage"]
+    "relatedPlans": [
+      "bacterial-meningitis",
+      "subarachnoid-hemorrhage"
+    ]
   },
   {
     "id": "aed-levels",
@@ -1112,27 +1273,84 @@
     "interpretation": null,
     "stages": null,
     "tableData": {
-      "columns": ["Drug", "Therapeutic Range", "Toxic Level", "Half-life", "Protein Binding"],
+      "columns": [
+        "Drug",
+        "Therapeutic Range",
+        "Toxic Level",
+        "Half-life",
+        "Protein Binding"
+      ],
       "rows": [
-        ["Phenytoin", "10-20 mcg/mL (total); 1-2 mcg/mL (free)", ">30 mcg/mL (nystagmus >20, ataxia >30, lethargy >40)", "12-36 hours (saturation kinetics — increases with dose)", "90%"],
-        ["Carbamazepine", "4-12 mcg/mL", ">15 mcg/mL (diplopia, ataxia, nystagmus)", "12-17 hours (autoinduction over 2-4 weeks shortens half-life)", "75-80%"],
-        ["Valproic Acid", "50-100 mcg/mL", ">120 mcg/mL (tremor, sedation, encephalopathy, hyperammonemia)", "9-16 hours", "80-90% (saturable — free fraction increases at higher levels)"],
-        ["Levetiracetam", "12-46 mcg/mL", "Not well defined; generally well tolerated at high levels", "6-8 hours", "<10%"],
-        ["Lamotrigine", "3-14 mcg/mL", ">20 mcg/mL (dizziness, diplopia, ataxia)", "25-33 hours (12-15h with enzyme inducers; up to 60h with valproate)", "<55%"],
-        ["Lacosamide", "10-20 mcg/mL", ">20 mcg/mL (dizziness, diplopia, PR prolongation)", "13 hours", "<15%"],
-        ["Oxcarbazepine (MHD)", "12-35 mcg/mL (active metabolite: 10-monohydroxy derivative)", ">35 mcg/mL (hyponatremia, diplopia, sedation)", "8-10 hours (MHD)", "40%"],
-        ["Phenobarbital", "15-40 mcg/mL", ">60 mcg/mL (sedation, respiratory depression)", "53-118 hours (longest half-life of common AEDs)", "45-60%"]
+        [
+          "Phenytoin",
+          "10-20 mcg/mL (total); 1-2 mcg/mL (free)",
+          ">30 mcg/mL (nystagmus >20, ataxia >30, lethargy >40)",
+          "12-36 hours (saturation kinetics \u2014 increases with dose)",
+          "90%"
+        ],
+        [
+          "Carbamazepine",
+          "4-12 mcg/mL",
+          ">15 mcg/mL (diplopia, ataxia, nystagmus)",
+          "12-17 hours (autoinduction over 2-4 weeks shortens half-life)",
+          "75-80%"
+        ],
+        [
+          "Valproic Acid",
+          "50-100 mcg/mL",
+          ">120 mcg/mL (tremor, sedation, encephalopathy, hyperammonemia)",
+          "9-16 hours",
+          "80-90% (saturable \u2014 free fraction increases at higher levels)"
+        ],
+        [
+          "Levetiracetam",
+          "12-46 mcg/mL",
+          "Not well defined; generally well tolerated at high levels",
+          "6-8 hours",
+          "<10%"
+        ],
+        [
+          "Lamotrigine",
+          "3-14 mcg/mL",
+          ">20 mcg/mL (dizziness, diplopia, ataxia)",
+          "25-33 hours (12-15h with enzyme inducers; up to 60h with valproate)",
+          "<55%"
+        ],
+        [
+          "Lacosamide",
+          "10-20 mcg/mL",
+          ">20 mcg/mL (dizziness, diplopia, PR prolongation)",
+          "13 hours",
+          "<15%"
+        ],
+        [
+          "Oxcarbazepine (MHD)",
+          "12-35 mcg/mL (active metabolite: 10-monohydroxy derivative)",
+          ">35 mcg/mL (hyponatremia, diplopia, sedation)",
+          "8-10 hours (MHD)",
+          "40%"
+        ],
+        [
+          "Phenobarbital",
+          "15-40 mcg/mL",
+          ">60 mcg/mL (sedation, respiratory depression)",
+          "53-118 hours (longest half-life of common AEDs)",
+          "45-60%"
+        ]
       ]
     },
     "clinicalPearls": [
-      "Phenytoin exhibits saturation (zero-order) kinetics — small dose changes cause disproportionately large level changes.",
-      "Valproic acid protein binding is saturable — at levels >75 mcg/mL, free fraction increases significantly. Check free valproic acid in ICU patients.",
+      "Phenytoin exhibits saturation (zero-order) kinetics \u2014 small dose changes cause disproportionately large level changes.",
+      "Valproic acid protein binding is saturable \u2014 at levels >75 mcg/mL, free fraction increases significantly. Check free valproic acid in ICU patients.",
       "Lamotrigine levels are significantly affected by enzyme inducers (carbamazepine, phenytoin, phenobarbital halve the level) and inhibitors (valproate doubles the level).",
-      "Levetiracetam and lacosamide have minimal protein binding and no significant drug interactions — advantageous in critically ill patients.",
-      "Oxcarbazepine causes hyponatremia more frequently than carbamazepine — check sodium within 1-2 weeks of initiation.",
-      "Phenobarbital has an extremely long half-life — steady state takes 2-3 weeks; dose adjustments should be infrequent."
+      "Levetiracetam and lacosamide have minimal protein binding and no significant drug interactions \u2014 advantageous in critically ill patients.",
+      "Oxcarbazepine causes hyponatremia more frequently than carbamazepine \u2014 check sodium within 1-2 weeks of initiation.",
+      "Phenobarbital has an extremely long half-life \u2014 steady state takes 2-3 weeks; dose adjustments should be infrequent."
     ],
-    "relatedPlans": ["status-epilepticus", "new-onset-seizure"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
   },
   {
     "id": "dermatome-map",
@@ -1147,35 +1365,104 @@
     "interpretation": null,
     "stages": null,
     "tableData": {
-      "columns": ["Level", "Landmark"],
+      "columns": [
+        "Level",
+        "Landmark"
+      ],
       "rows": [
-        ["C2", "Occiput / posterior scalp"],
-        ["C3", "Supraclavicular fossa / posterior neck"],
-        ["C4", "Top of acromioclavicular joint / upper shoulder"],
-        ["C5", "Lateral antecubital fossa (lateral elbow crease)"],
-        ["C6", "Thumb and radial forearm"],
-        ["C7", "Middle finger"],
-        ["C8", "Little finger and ulnar hand"],
-        ["T1", "Medial antecubital fossa (medial elbow crease)"],
-        ["T2", "Apex of axilla"],
-        ["T4", "Nipple line"],
-        ["T6", "Xiphoid process"],
-        ["T10", "Umbilicus"],
-        ["T12", "Inguinal ligament / pubic symphysis"],
-        ["L1", "Inguinal region / upper anterior thigh"],
-        ["L2", "Anterior mid-thigh"],
-        ["L3", "Medial femoral condyle (medial knee)"],
-        ["L4", "Medial malleolus (medial ankle)"],
-        ["L5", "Dorsum of foot / great toe web space"],
-        ["S1", "Lateral heel / lateral foot"],
-        ["S2", "Popliteal fossa (posterior knee)"],
-        ["S3", "Ischial tuberosity / medial buttock"],
-        ["S4-S5", "Perianal region"]
+        [
+          "C2",
+          "Occiput / posterior scalp"
+        ],
+        [
+          "C3",
+          "Supraclavicular fossa / posterior neck"
+        ],
+        [
+          "C4",
+          "Top of acromioclavicular joint / upper shoulder"
+        ],
+        [
+          "C5",
+          "Lateral antecubital fossa (lateral elbow crease)"
+        ],
+        [
+          "C6",
+          "Thumb and radial forearm"
+        ],
+        [
+          "C7",
+          "Middle finger"
+        ],
+        [
+          "C8",
+          "Little finger and ulnar hand"
+        ],
+        [
+          "T1",
+          "Medial antecubital fossa (medial elbow crease)"
+        ],
+        [
+          "T2",
+          "Apex of axilla"
+        ],
+        [
+          "T4",
+          "Nipple line"
+        ],
+        [
+          "T6",
+          "Xiphoid process"
+        ],
+        [
+          "T10",
+          "Umbilicus"
+        ],
+        [
+          "T12",
+          "Inguinal ligament / pubic symphysis"
+        ],
+        [
+          "L1",
+          "Inguinal region / upper anterior thigh"
+        ],
+        [
+          "L2",
+          "Anterior mid-thigh"
+        ],
+        [
+          "L3",
+          "Medial femoral condyle (medial knee)"
+        ],
+        [
+          "L4",
+          "Medial malleolus (medial ankle)"
+        ],
+        [
+          "L5",
+          "Dorsum of foot / great toe web space"
+        ],
+        [
+          "S1",
+          "Lateral heel / lateral foot"
+        ],
+        [
+          "S2",
+          "Popliteal fossa (posterior knee)"
+        ],
+        [
+          "S3",
+          "Ischial tuberosity / medial buttock"
+        ],
+        [
+          "S4-S5",
+          "Perianal region"
+        ]
       ]
     },
     "clinicalPearls": [
       "T4 (nipple), T10 (umbilicus), and L1 (inguinal) are the most commonly tested landmarks.",
-      "A sensory level on the trunk suggests spinal cord pathology — this is a neurological emergency requiring urgent MRI.",
+      "A sensory level on the trunk suggests spinal cord pathology \u2014 this is a neurological emergency requiring urgent MRI.",
       "Sacral sparing (preserved perianal sensation S4-S5) in spinal cord injury indicates incomplete injury with better prognosis.",
       "Dermatomal overlap means that a single root lesion may not produce complete sensory loss in the expected distribution.",
       "The C6-C7-C8 distinction (thumb-middle finger-pinky) is critical for cervical radiculopathy localization."
@@ -1195,20 +1482,85 @@
     "interpretation": null,
     "stages": null,
     "tableData": {
-      "columns": ["Reflex", "Root", "Nerve", "Muscle"],
+      "columns": [
+        "Reflex",
+        "Root",
+        "Nerve",
+        "Muscle"
+      ],
       "rows": [
-        ["Biceps", "C5-C6", "Musculocutaneous nerve", "Biceps brachii"],
-        ["Brachioradialis", "C5-C6", "Radial nerve", "Brachioradialis"],
-        ["Triceps", "C7-C8", "Radial nerve", "Triceps brachii"],
-        ["Finger flexor (Hoffmann)", "C8-T1", "Median nerve", "Flexor digitorum superficialis"],
-        ["Patellar (Knee jerk)", "L3-L4", "Femoral nerve", "Quadriceps femoris"],
-        ["Achilles (Ankle jerk)", "S1-S2", "Tibial nerve", "Gastrocnemius / Soleus"],
-        ["Abdominal (upper)", "T8-T10", "Intercostal nerves", "Abdominal obliques / Rectus abdominis"],
-        ["Abdominal (lower)", "T10-T12", "Intercostal / Iliohypogastric nerves", "Abdominal obliques / Rectus abdominis"],
-        ["Cremasteric", "L1-L2", "Genitofemoral nerve", "Cremaster"],
-        ["Plantar (Babinski)", "S1-S2", "Tibial nerve", "Flexor hallucis longus (normal: flexion; UMN lesion: extension)"],
-        ["Bulbocavernosus", "S3-S4", "Pudendal nerve", "Bulbospongiosus"],
-        ["Anal wink", "S4-S5", "Inferior rectal nerve (pudendal branch)", "External anal sphincter"]
+        [
+          "Biceps",
+          "C5-C6",
+          "Musculocutaneous nerve",
+          "Biceps brachii"
+        ],
+        [
+          "Brachioradialis",
+          "C5-C6",
+          "Radial nerve",
+          "Brachioradialis"
+        ],
+        [
+          "Triceps",
+          "C7-C8",
+          "Radial nerve",
+          "Triceps brachii"
+        ],
+        [
+          "Finger flexor (Hoffmann)",
+          "C8-T1",
+          "Median nerve",
+          "Flexor digitorum superficialis"
+        ],
+        [
+          "Patellar (Knee jerk)",
+          "L3-L4",
+          "Femoral nerve",
+          "Quadriceps femoris"
+        ],
+        [
+          "Achilles (Ankle jerk)",
+          "S1-S2",
+          "Tibial nerve",
+          "Gastrocnemius / Soleus"
+        ],
+        [
+          "Abdominal (upper)",
+          "T8-T10",
+          "Intercostal nerves",
+          "Abdominal obliques / Rectus abdominis"
+        ],
+        [
+          "Abdominal (lower)",
+          "T10-T12",
+          "Intercostal / Iliohypogastric nerves",
+          "Abdominal obliques / Rectus abdominis"
+        ],
+        [
+          "Cremasteric",
+          "L1-L2",
+          "Genitofemoral nerve",
+          "Cremaster"
+        ],
+        [
+          "Plantar (Babinski)",
+          "S1-S2",
+          "Tibial nerve",
+          "Flexor hallucis longus (normal: flexion; UMN lesion: extension)"
+        ],
+        [
+          "Bulbocavernosus",
+          "S3-S4",
+          "Pudendal nerve",
+          "Bulbospongiosus"
+        ],
+        [
+          "Anal wink",
+          "S4-S5",
+          "Inferior rectal nerve (pudendal branch)",
+          "External anal sphincter"
+        ]
       ]
     },
     "clinicalPearls": [
@@ -1217,7 +1569,7 @@
       "Hyporeflexia/areflexia = lower motor neuron (LMN) lesion or peripheral neuropathy.",
       "Inverted radial reflex (finger flexion with brachioradialis tap) suggests C5-C6 cord lesion with C7 hyperreflexia.",
       "Absent bulbocavernosus reflex in acute spinal cord injury suggests spinal shock; return of this reflex marks end of spinal shock.",
-      "Jendrassik maneuver (patient hooks fingers and pulls apart) can augment diminished reflexes — ensures patient relaxation is not the cause."
+      "Jendrassik maneuver (patient hooks fingers and pulls apart) can augment diminished reflexes \u2014 ensures patient relaxation is not the cause."
     ],
     "relatedPlans": []
   },
@@ -1234,30 +1586,111 @@
     "interpretation": null,
     "stages": null,
     "tableData": {
-      "columns": ["CN", "Name", "Function", "Test", "Common Lesions"],
+      "columns": [
+        "CN",
+        "Name",
+        "Function",
+        "Test",
+        "Common Lesions"
+      ],
       "rows": [
-        ["I", "Olfactory", "Smell", "Test each nostril with coffee, peppermint, or vanilla (avoid noxious stimuli which test CN V)", "Anosmia: head trauma (cribriform plate fracture), Parkinson disease, COVID-19, anterior fossa meningioma"],
-        ["II", "Optic", "Vision, afferent pupillary reflex", "Visual acuity (Snellen), visual fields (confrontation), fundoscopy (papilledema, pallor), RAPD (swinging flashlight test)", "Optic neuritis (MS), papilledema (elevated ICP), glaucoma, compressive lesion (pituitary adenoma — bitemporal hemianopia)"],
-        ["III", "Oculomotor", "Eye movement (SR, IR, MR, IO), eyelid elevation, pupil constriction (parasympathetic)", "Pupil reactivity, eyelid ptosis, eye movements (adduction, elevation, depression), look for 'down and out' deviation", "PCA aneurysm (CN III palsy with pupil involvement), diabetic mononeuropathy (pupil-sparing), uncal herniation (ipsilateral blown pupil)"],
-        ["IV", "Trochlear", "Superior oblique (intorsion and depression in adduction)", "Vertical diplopia worse on downgaze and contralateral head tilt; Bielschowsky head tilt test positive", "Head trauma (longest intracranial course, most vulnerable to injury), decompensated congenital CN IV palsy"],
-        ["V", "Trigeminal", "Facial sensation (V1 ophthalmic, V2 maxillary, V3 mandibular); muscles of mastication", "Light touch and pinprick in V1/V2/V3; corneal reflex (afferent); jaw jerk reflex; masseter/temporalis bulk and jaw opening", "Trigeminal neuralgia, acoustic neuroma (CPA lesion), cavernous sinus lesion, herpes zoster ophthalmicus (V1)"],
-        ["VI", "Abducens", "Lateral rectus (eye abduction)", "Horizontal eye movement — inability to abduct (look laterally); esotropia (inward deviation)", "Elevated ICP (false localizing sign due to long intracranial course), Wernicke encephalopathy, pontine stroke, cavernous sinus thrombosis"],
-        ["VII", "Facial", "Facial expression, taste (anterior 2/3 tongue), lacrimation, stapedius", "Raise eyebrows, close eyes tightly, smile/show teeth, puff cheeks; distinguish UMN (forehead spared) vs LMN (entire hemiface)", "Bell palsy (LMN — entire hemiface), stroke (UMN — forehead spared), Ramsay Hunt syndrome (VZV), parotid tumor, Lyme disease (bilateral facial palsy)"],
-        ["VIII", "Vestibulocochlear", "Hearing (cochlear); balance/vestibular function", "Weber test (lateralizes?), Rinne test (air vs bone conduction), finger rub, Dix-Hallpike (BPPV), head impulse test (vestibular hypofunction)", "Acoustic neuroma (CPA tumor), Meniere disease, vestibular neuritis, aminoglycoside toxicity, sudden sensorineural hearing loss"],
-        ["IX", "Glossopharyngeal", "Taste (posterior 1/3 tongue), pharyngeal sensation, carotid body/sinus", "Gag reflex (afferent), palatal sensation", "Glossopharyngeal neuralgia, jugular foramen syndrome (CN IX, X, XI)"],
-        ["X", "Vagus", "Swallowing, phonation, parasympathetic to thoracoabdominal viscera", "Gag reflex (efferent), palate elevation ('say aah' — uvula deviates AWAY from lesion), hoarseness, cough strength", "Vocal cord paralysis (recurrent laryngeal nerve), vagal neuropathy, jugular foramen syndrome, brainstem stroke (lateral medullary/Wallenberg)"],
-        ["XI", "Spinal Accessory", "Sternocleidomastoid (contralateral head turn), trapezius (shoulder shrug)", "Shoulder shrug against resistance (trapezius); turn head against resistance (SCM — tests ipsilateral SCM for contralateral head turn)", "Surgical injury (posterior triangle neck dissection), jugular foramen syndrome, skull base tumors"],
-        ["XII", "Hypoglossal", "Tongue movement", "Tongue protrusion (deviates TOWARD the lesion/weak side), tongue strength (push against cheek), look for fasciculations/atrophy", "Medial medullary stroke, hypoglossal canal tumor, ALS (fasciculations + atrophy), carotid endarterectomy injury"]
+        [
+          "I",
+          "Olfactory",
+          "Smell",
+          "Test each nostril with coffee, peppermint, or vanilla (avoid noxious stimuli which test CN V)",
+          "Anosmia: head trauma (cribriform plate fracture), Parkinson disease, COVID-19, anterior fossa meningioma"
+        ],
+        [
+          "II",
+          "Optic",
+          "Vision, afferent pupillary reflex",
+          "Visual acuity (Snellen), visual fields (confrontation), fundoscopy (papilledema, pallor), RAPD (swinging flashlight test)",
+          "Optic neuritis (MS), papilledema (elevated ICP), glaucoma, compressive lesion (pituitary adenoma \u2014 bitemporal hemianopia)"
+        ],
+        [
+          "III",
+          "Oculomotor",
+          "Eye movement (SR, IR, MR, IO), eyelid elevation, pupil constriction (parasympathetic)",
+          "Pupil reactivity, eyelid ptosis, eye movements (adduction, elevation, depression), look for 'down and out' deviation",
+          "PCA aneurysm (CN III palsy with pupil involvement), diabetic mononeuropathy (pupil-sparing), uncal herniation (ipsilateral blown pupil)"
+        ],
+        [
+          "IV",
+          "Trochlear",
+          "Superior oblique (intorsion and depression in adduction)",
+          "Vertical diplopia worse on downgaze and contralateral head tilt; Bielschowsky head tilt test positive",
+          "Head trauma (longest intracranial course, most vulnerable to injury), decompensated congenital CN IV palsy"
+        ],
+        [
+          "V",
+          "Trigeminal",
+          "Facial sensation (V1 ophthalmic, V2 maxillary, V3 mandibular); muscles of mastication",
+          "Light touch and pinprick in V1/V2/V3; corneal reflex (afferent); jaw jerk reflex; masseter/temporalis bulk and jaw opening",
+          "Trigeminal neuralgia, acoustic neuroma (CPA lesion), cavernous sinus lesion, herpes zoster ophthalmicus (V1)"
+        ],
+        [
+          "VI",
+          "Abducens",
+          "Lateral rectus (eye abduction)",
+          "Horizontal eye movement \u2014 inability to abduct (look laterally); esotropia (inward deviation)",
+          "Elevated ICP (false localizing sign due to long intracranial course), Wernicke encephalopathy, pontine stroke, cavernous sinus thrombosis"
+        ],
+        [
+          "VII",
+          "Facial",
+          "Facial expression, taste (anterior 2/3 tongue), lacrimation, stapedius",
+          "Raise eyebrows, close eyes tightly, smile/show teeth, puff cheeks; distinguish UMN (forehead spared) vs LMN (entire hemiface)",
+          "Bell palsy (LMN \u2014 entire hemiface), stroke (UMN \u2014 forehead spared), Ramsay Hunt syndrome (VZV), parotid tumor, Lyme disease (bilateral facial palsy)"
+        ],
+        [
+          "VIII",
+          "Vestibulocochlear",
+          "Hearing (cochlear); balance/vestibular function",
+          "Weber test (lateralizes?), Rinne test (air vs bone conduction), finger rub, Dix-Hallpike (BPPV), head impulse test (vestibular hypofunction)",
+          "Acoustic neuroma (CPA tumor), Meniere disease, vestibular neuritis, aminoglycoside toxicity, sudden sensorineural hearing loss"
+        ],
+        [
+          "IX",
+          "Glossopharyngeal",
+          "Taste (posterior 1/3 tongue), pharyngeal sensation, carotid body/sinus",
+          "Gag reflex (afferent), palatal sensation",
+          "Glossopharyngeal neuralgia, jugular foramen syndrome (CN IX, X, XI)"
+        ],
+        [
+          "X",
+          "Vagus",
+          "Swallowing, phonation, parasympathetic to thoracoabdominal viscera",
+          "Gag reflex (efferent), palate elevation ('say aah' \u2014 uvula deviates AWAY from lesion), hoarseness, cough strength",
+          "Vocal cord paralysis (recurrent laryngeal nerve), vagal neuropathy, jugular foramen syndrome, brainstem stroke (lateral medullary/Wallenberg)"
+        ],
+        [
+          "XI",
+          "Spinal Accessory",
+          "Sternocleidomastoid (contralateral head turn), trapezius (shoulder shrug)",
+          "Shoulder shrug against resistance (trapezius); turn head against resistance (SCM \u2014 tests ipsilateral SCM for contralateral head turn)",
+          "Surgical injury (posterior triangle neck dissection), jugular foramen syndrome, skull base tumors"
+        ],
+        [
+          "XII",
+          "Hypoglossal",
+          "Tongue movement",
+          "Tongue protrusion (deviates TOWARD the lesion/weak side), tongue strength (push against cheek), look for fasciculations/atrophy",
+          "Medial medullary stroke, hypoglossal canal tumor, ALS (fasciculations + atrophy), carotid endarterectomy injury"
+        ]
       ]
     },
     "clinicalPearls": [
-      "CN VII (facial nerve): UMN lesion spares the forehead (bilateral cortical innervation) while LMN lesion affects the entire hemiface — this distinction is critical.",
+      "CN VII (facial nerve): UMN lesion spares the forehead (bilateral cortical innervation) while LMN lesion affects the entire hemiface \u2014 this distinction is critical.",
       "CN III palsy with pupil involvement (blown pupil) = surgical emergency until PCA aneurysm is ruled out. Pupil-sparing CN III palsy is more likely ischemic/diabetic.",
-      "CN VI palsy is a false localizing sign of elevated ICP — the long intracranial course makes it vulnerable to stretching.",
+      "CN VI palsy is a false localizing sign of elevated ICP \u2014 the long intracranial course makes it vulnerable to stretching.",
       "Tongue deviates TOWARD the lesion (CN XII), uvula deviates AWAY from the lesion (CN X).",
       "Bilateral facial nerve palsy differential: Lyme disease, GBS, sarcoidosis, HIV, bilateral Bell palsy (rare)."
     ],
-    "relatedPlans": ["acute-ischemic-stroke", "bacterial-meningitis"]
+    "relatedPlans": [
+      "acute-ischemic-stroke",
+      "bacterial-meningitis"
+    ]
   },
   {
     "id": "temp-converter",
@@ -1270,22 +1703,25 @@
         "label": "Temperature",
         "unit": null,
         "type": "number",
-        "placeholder": "e.g. 101.3",
+        "placeholder": "e.g. 98.6",
         "options": null
       },
       {
-        "id": "input-unit",
-        "label": "Input Unit",
+        "id": "unit",
+        "label": "Convert",
         "unit": null,
         "type": "select",
-        "placeholder": "Select unit",
-        "options": ["°F", "°C"]
+        "placeholder": "Select conversion",
+        "options": [
+          "\u00b0F \u2192 \u00b0C",
+          "\u00b0C \u2192 \u00b0F"
+        ]
       }
     ],
-    "formula": "If input is °F: C = (F - 32) * 5/9; If input is °C: F = (C * 9/5) + 32",
+    "formula": "If input is \u00b0F: C = (F - 32) * 5/9; If input is \u00b0C: F = (C * 9/5) + 32",
     "resultLabel": "Converted Temperature",
     "resultUnit": null,
-    "normalRange": "36.1-37.2°C (97.0-99.0°F)",
+    "normalRange": "36.1-37.2\u00b0C (97.0-99.0\u00b0F)",
     "interpretation": [
       {
         "min": 28,
@@ -1299,7 +1735,7 @@
         "max": 35,
         "label": "Moderate Hypothermia / Therapeutic Target",
         "color": "yellow",
-        "action": "33-35°C is the therapeutic hypothermia target range for neuroprotection."
+        "action": "33-35\u00b0C is the therapeutic hypothermia target range for neuroprotection."
       },
       {
         "min": 35,
@@ -1327,7 +1763,7 @@
         "max": 40,
         "label": "Fever",
         "color": "orange",
-        "action": "Treat with acetaminophen and cooling measures. Each 1°C above 37°C worsens neurological outcomes."
+        "action": "Treat with acetaminophen and cooling measures. Each 1\u00b0C above 37\u00b0C worsens neurological outcomes."
       },
       {
         "min": 40,
@@ -1340,12 +1776,16 @@
     "stages": null,
     "tableData": null,
     "clinicalPearls": [
-      "Fever (>38°C) is independently associated with worse outcomes in stroke, TBI, and SAH.",
-      "Target normothermia (36-37°C) in all neurocritical care patients.",
-      "Therapeutic hypothermia (33-36°C) is used post-cardiac arrest; 33°C vs 36°C target had similar outcomes (TTM2 trial).",
+      "Fever (>38\u00b0C) is independently associated with worse outcomes in stroke, TBI, and SAH.",
+      "Target normothermia (36-37\u00b0C) in all neurocritical care patients.",
+      "Therapeutic hypothermia (33-36\u00b0C) is used post-cardiac arrest; 33\u00b0C vs 36\u00b0C target had similar outcomes (TTM2 trial).",
       "Fever in a neurology patient: always consider CNS infection, central fever (hypothalamic), drug fever, DVT/PE, and UTI."
     ],
-    "relatedPlans": ["status-epilepticus", "elevated-icp-management", "bacterial-meningitis"]
+    "relatedPlans": [
+      "status-epilepticus",
+      "elevated-icp-management",
+      "bacterial-meningitis"
+    ]
   },
   {
     "id": "weight-converter",
@@ -1354,20 +1794,23 @@
     "description": "Converts between pounds and kilograms. Critical for accurate weight-based dosing of tPA, AEDs, IVIg, and other neurological medications.",
     "inputs": [
       {
-        "id": "weight",
+        "id": "weight-input",
         "label": "Weight",
         "unit": null,
         "type": "number",
-        "placeholder": "e.g. 154",
+        "placeholder": "e.g. 150",
         "options": null
       },
       {
-        "id": "input-unit",
-        "label": "Input Unit",
+        "id": "unit",
+        "label": "Convert",
         "unit": null,
         "type": "select",
-        "placeholder": "Select unit",
-        "options": ["lb", "kg"]
+        "placeholder": "Select conversion",
+        "options": [
+          "lb \u2192 kg",
+          "kg \u2192 lb"
+        ]
       }
     ],
     "formula": "If input is lb: kg = lb / 2.205; If input is kg: lb = kg * 2.205",
@@ -1378,11 +1821,1639 @@
     "stages": null,
     "tableData": null,
     "clinicalPearls": [
-      "tPA (alteplase) dose is 0.9 mg/kg (max 90 mg) — an incorrect weight can lead to under- or over-dosing.",
-      "Quick mental math: 1 kg ≈ 2.2 lb. Divide pounds by 2 and subtract 10% for a rough kg estimate.",
-      "Many emergency weight-based calculations (tPA, SE medications) do not have time for precise measurements — use patient-reported or estimated weight.",
+      "tPA (alteplase) dose is 0.9 mg/kg (max 90 mg) \u2014 an incorrect weight can lead to under- or over-dosing.",
+      "Quick mental math: 1 kg \u2248 2.2 lb. Divide pounds by 2 and subtract 10% for a rough kg estimate.",
+      "Many emergency weight-based calculations (tPA, SE medications) do not have time for precise measurements \u2014 use patient-reported or estimated weight.",
       "IVIg (2 g/kg total), status epilepticus meds (lorazepam 0.1 mg/kg, levetiracetam 60 mg/kg, fosphenytoin 20 PE/kg) all require kg weight."
     ],
-    "relatedPlans": ["acute-ischemic-stroke", "status-epilepticus", "myasthenia-gravis"]
+    "relatedPlans": [
+      "acute-ischemic-stroke",
+      "status-epilepticus",
+      "myasthenia-gravis"
+    ]
+  },
+  {
+    "id": "mean-arterial-pressure",
+    "title": "Mean Arterial Pressure (MAP)",
+    "category": "calculator",
+    "description": "Calculates mean arterial pressure from systolic and diastolic blood pressure. Essential for cerebral perfusion pressure calculation and blood pressure targets in stroke and neurocritical care.",
+    "inputs": [
+      {
+        "id": "sbp",
+        "label": "Systolic BP",
+        "unit": "mmHg",
+        "type": "number",
+        "placeholder": "e.g. 120",
+        "options": null
+      },
+      {
+        "id": "dbp",
+        "label": "Diastolic BP",
+        "unit": "mmHg",
+        "type": "number",
+        "placeholder": "e.g. 80",
+        "options": null
+      }
+    ],
+    "formula": "MAP = DBP + (1/3 \u00d7 (SBP - DBP)) = (SBP + 2\u00d7DBP) / 3",
+    "resultLabel": "Mean Arterial Pressure",
+    "resultUnit": "mmHg",
+    "normalRange": "70-100 mmHg",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 60,
+        "label": "Severe Hypotension",
+        "color": "red",
+        "action": "Inadequate cerebral perfusion likely. Urgent fluid resuscitation and vasopressors. End-organ ischemia risk."
+      },
+      {
+        "min": 60,
+        "max": 70,
+        "label": "Hypotension",
+        "color": "orange",
+        "action": "Marginal cerebral perfusion. Consider IV fluids. Vasopressors if unresponsive to fluids or CPP target not met."
+      },
+      {
+        "min": 70,
+        "max": 100,
+        "label": "Normal",
+        "color": "green",
+        "action": "Adequate perfusion pressure for most patients."
+      },
+      {
+        "min": 100,
+        "max": 130,
+        "label": "Elevated",
+        "color": "yellow",
+        "action": "Permissive hypertension may be appropriate in acute stroke. Treat if >185/110 before tPA."
+      },
+      {
+        "min": 130,
+        "max": 200,
+        "label": "Hypertensive Emergency",
+        "color": "red",
+        "action": "Risk of hemorrhagic transformation, hypertensive encephalopathy. IV antihypertensives indicated."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "MAP = DBP + 1/3(SBP - DBP) reflects that 2/3 of the cardiac cycle is diastole.",
+      "Target MAP \u226565 mmHg for general perfusion; higher targets (80-100 mmHg) may be needed for cerebral autoregulation.",
+      "In acute ischemic stroke without tPA, permissive hypertension up to 220/120 is acceptable in the first 24-48 hours.",
+      "After tPA, target BP <180/105 for 24 hours to reduce hemorrhagic transformation risk.",
+      "MAP is used to calculate CPP: CPP = MAP - ICP. Target CPP 60-70 mmHg in TBI."
+    ],
+    "relatedPlans": [
+      "acute-ischemic-stroke",
+      "intracerebral-hemorrhage",
+      "elevated-icp-management"
+    ]
+  },
+  {
+    "id": "cerebral-perfusion-pressure",
+    "title": "Cerebral Perfusion Pressure (CPP)",
+    "category": "calculator",
+    "description": "Calculates cerebral perfusion pressure from MAP and ICP. Critical for monitoring and managing elevated intracranial pressure in TBI, SAH, and other neurocritical care conditions.",
+    "inputs": [
+      {
+        "id": "map",
+        "label": "Mean Arterial Pressure",
+        "unit": "mmHg",
+        "type": "number",
+        "placeholder": "e.g. 90",
+        "options": null
+      },
+      {
+        "id": "icp",
+        "label": "Intracranial Pressure",
+        "unit": "mmHg",
+        "type": "number",
+        "placeholder": "e.g. 15",
+        "options": null
+      }
+    ],
+    "formula": "CPP = MAP - ICP",
+    "resultLabel": "Cerebral Perfusion Pressure",
+    "resultUnit": "mmHg",
+    "normalRange": "60-70 mmHg (target in TBI)",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Critically Low",
+        "color": "red",
+        "action": "Severe cerebral hypoperfusion. Urgent intervention: treat elevated ICP, vasopressors to raise MAP. Risk of cerebral ischemia and herniation."
+      },
+      {
+        "min": 50,
+        "max": 60,
+        "label": "Low",
+        "color": "orange",
+        "action": "Suboptimal cerebral perfusion. Optimize MAP (fluids, vasopressors) and treat elevated ICP. Target CPP \u226560 mmHg."
+      },
+      {
+        "min": 60,
+        "max": 70,
+        "label": "Target Range",
+        "color": "green",
+        "action": "Optimal CPP per Brain Trauma Foundation guidelines. Maintain in this range."
+      },
+      {
+        "min": 70,
+        "max": 90,
+        "label": "Elevated",
+        "color": "yellow",
+        "action": "Acceptable if ICP is controlled. Avoid CPP >70 mmHg with aggressive pressors (ARDS risk from fluid/vasopressor use)."
+      },
+      {
+        "min": 90,
+        "max": 150,
+        "label": "High",
+        "color": "orange",
+        "action": "Excessively high CPP does not improve outcomes and increases risk of ARDS and pulmonary edema from aggressive MAP augmentation."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Brain Trauma Foundation (4th ed): Target CPP 60-70 mmHg; ICP <22 mmHg.",
+      "CPP <50 mmHg is associated with increased mortality and poor neurological outcomes.",
+      "Targeting CPP >70 mmHg with aggressive vasopressor use increases risk of ARDS (BTF Level II evidence).",
+      "In SAH, CPP optimization may help prevent delayed cerebral ischemia (DCI) from vasospasm.",
+      "Always transducer at the level of the tragus (external auditory meatus) for accurate ICP and MAP readings."
+    ],
+    "relatedPlans": [
+      "elevated-icp-management",
+      "intracerebral-hemorrhage",
+      "subarachnoid-hemorrhage"
+    ]
+  },
+  {
+    "id": "ich-volume-abc2",
+    "title": "ICH Volume (ABC/2)",
+    "category": "calculator",
+    "description": "Estimates intracerebral hemorrhage volume using the ABC/2 ellipsoid method. Used for prognosis (ICH Score) and surgical decision-making.",
+    "inputs": [
+      {
+        "id": "a",
+        "label": "A - Largest Diameter",
+        "unit": "cm",
+        "type": "number",
+        "placeholder": "e.g. 5.0",
+        "options": null
+      },
+      {
+        "id": "b",
+        "label": "B - Perpendicular to A",
+        "unit": "cm",
+        "type": "number",
+        "placeholder": "e.g. 3.0",
+        "options": null
+      },
+      {
+        "id": "c",
+        "label": "C - Number of Slices \u00d7 Slice Thickness",
+        "unit": "cm",
+        "type": "number",
+        "placeholder": "e.g. 4.5",
+        "options": null
+      }
+    ],
+    "formula": "Volume = (A \u00d7 B \u00d7 C) / 2",
+    "resultLabel": "Estimated ICH Volume",
+    "resultUnit": "mL",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 30,
+        "label": "Small-Medium ICH",
+        "color": "yellow",
+        "action": "Medical management typically appropriate. ICU monitoring. Serial imaging to assess for expansion."
+      },
+      {
+        "min": 30,
+        "max": 60,
+        "label": "Large ICH",
+        "color": "orange",
+        "action": "Consider surgical evacuation in selected cases (cerebellar ICH >3 cm, lobar ICH with deterioration). High mortality risk."
+      },
+      {
+        "min": 60,
+        "max": 200,
+        "label": "Massive ICH",
+        "color": "red",
+        "action": "Very high mortality. Goals of care discussion. Surgery rarely beneficial except for cerebellar hemorrhage with brainstem compression."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "A = largest diameter of hemorrhage on CT (axial slice with largest area).",
+      "B = largest diameter perpendicular to A (on same slice).",
+      "C = number of CT slices with hemorrhage \u00d7 slice thickness (count slices where hemorrhage is >75% of largest slice as 1, 25-75% as 0.5).",
+      "ICH Score components: GCS (2 pts if 3-4, 1 pt if 5-12), age \u226580 (1 pt), infratentorial (1 pt), volume \u226530 mL (1 pt), IVH (1 pt). Higher score = higher mortality.",
+      "Hematoma expansion (>33% or >6 mL increase) is associated with worse outcomes. Target SBP <140 mmHg (INTERACT2, ATACH-2)."
+    ],
+    "relatedPlans": [
+      "intracerebral-hemorrhage"
+    ]
+  },
+  {
+    "id": "corrected-qtc",
+    "title": "Corrected QT Interval (QTc)",
+    "category": "calculator",
+    "description": "Corrects QT interval for heart rate using Bazett, Fridericia, and Framingham formulas. Important for monitoring AED and antipsychotic drug safety.",
+    "inputs": [
+      {
+        "id": "qt",
+        "label": "QT Interval",
+        "unit": "ms",
+        "type": "number",
+        "placeholder": "e.g. 400",
+        "options": null
+      },
+      {
+        "id": "rr",
+        "label": "RR Interval (or Heart Rate)",
+        "unit": "ms or bpm",
+        "type": "number",
+        "placeholder": "e.g. 800 ms or 75 bpm",
+        "options": null
+      },
+      {
+        "id": "input-type",
+        "label": "RR Input Type",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select input type",
+        "options": [
+          "RR interval (ms)",
+          "Heart rate (bpm)"
+        ]
+      }
+    ],
+    "formula": "Bazett: QTc = QT / \u221a(RR in seconds); Fridericia: QTc = QT / \u221b(RR in seconds)",
+    "resultLabel": "Corrected QT Interval",
+    "resultUnit": "ms",
+    "normalRange": "QTc <450 ms (men), <460 ms (women)",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 440,
+        "label": "Normal",
+        "color": "green",
+        "action": "Normal QTc. No intervention needed."
+      },
+      {
+        "min": 440,
+        "max": 470,
+        "label": "Borderline Prolonged",
+        "color": "yellow",
+        "action": "Monitor closely. Review medications for QT-prolonging drugs. Check electrolytes (K+, Mg2+, Ca2+)."
+      },
+      {
+        "min": 470,
+        "max": 500,
+        "label": "Prolonged",
+        "color": "orange",
+        "action": "Discontinue or reduce offending medications. Replete K+ to >4.0 mEq/L and Mg2+ to >2.0 mg/dL. Consider cardiology consult."
+      },
+      {
+        "min": 500,
+        "max": 700,
+        "label": "Markedly Prolonged",
+        "color": "red",
+        "action": "High risk of Torsades de Pointes. Discontinue all QT-prolonging drugs immediately. IV magnesium 2g. Continuous telemetry. Cardiology consult."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Bazett formula overcorrects at high HR and undercorrects at low HR. Fridericia is more accurate at extreme heart rates.",
+      "Common QT-prolonging neurological drugs: haloperidol, droperidol, ondansetron, metoclopramide, some AEDs (carbamazepine controversial).",
+      "Hypokalemia, hypomagnesemia, and hypocalcemia all prolong QT \u2014 always check and correct electrolytes.",
+      "QTc >500 ms or increase >60 ms from baseline warrants immediate drug review and cardiology consultation.",
+      "IV haloperidol requires telemetry monitoring due to QT prolongation risk."
+    ],
+    "relatedPlans": [
+      "status-epilepticus"
+    ]
+  },
+  {
+    "id": "wells-score-dvt",
+    "title": "Wells Score for DVT",
+    "category": "calculator",
+    "description": "Calculates pre-test probability of deep vein thrombosis. Guides decision to order D-dimer vs. ultrasound. Important for immobilized neurology patients.",
+    "inputs": [
+      {
+        "id": "active-cancer",
+        "label": "Active cancer (treatment within 6 months or palliative)",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "paralysis-paresis",
+        "label": "Paralysis, paresis, or recent cast immobilization of leg",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "bedridden",
+        "label": "Bedridden >3 days or major surgery within 12 weeks",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "tenderness",
+        "label": "Localized tenderness along deep venous system",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "leg-swelling",
+        "label": "Entire leg swollen",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "calf-swelling",
+        "label": "Calf swelling >3 cm compared to asymptomatic leg",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "pitting-edema",
+        "label": "Pitting edema confined to symptomatic leg",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "collateral-veins",
+        "label": "Collateral superficial veins (non-varicose)",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "prior-dvt",
+        "label": "Previously documented DVT",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "alternative-diagnosis",
+        "label": "Alternative diagnosis at least as likely as DVT",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (-2 points)"
+        ]
+      }
+    ],
+    "formula": "Sum of all points. Maximum score = 9, minimum = -2.",
+    "resultLabel": "Wells Score for DVT",
+    "resultUnit": "points",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": -2,
+        "max": 0,
+        "label": "Low Probability",
+        "color": "green",
+        "action": "DVT unlikely (3% prevalence). Check D-dimer. If negative, DVT ruled out. If positive, proceed to ultrasound."
+      },
+      {
+        "min": 1,
+        "max": 2,
+        "label": "Moderate Probability",
+        "color": "yellow",
+        "action": "DVT possible (17% prevalence). Check D-dimer. If negative, DVT ruled out. If positive, proceed to ultrasound."
+      },
+      {
+        "min": 3,
+        "max": 10,
+        "label": "High Probability",
+        "color": "orange",
+        "action": "DVT likely (75% prevalence). Proceed directly to lower extremity venous ultrasound. D-dimer not useful (high false negative rate)."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Neurology patients with stroke, GBS, or SCI are at very high DVT risk due to immobility and paralysis.",
+      "D-dimer has high sensitivity but low specificity \u2014 negative D-dimer effectively rules out DVT in low/moderate probability patients.",
+      "In high probability patients, proceed directly to ultrasound \u2014 D-dimer may be falsely negative.",
+      "Chemical DVT prophylaxis should be started within 24-48 hours in most stroke patients (unless hemorrhagic).",
+      "Consider upper extremity DVT in patients with central lines \u2014 Wells score is designed for lower extremity only."
+    ],
+    "relatedPlans": [
+      "acute-ischemic-stroke"
+    ]
+  },
+  {
+    "id": "wells-score-pe",
+    "title": "Wells Score for PE",
+    "category": "calculator",
+    "description": "Calculates pre-test probability of pulmonary embolism. Guides decision for D-dimer, CT angiography, or empiric anticoagulation.",
+    "inputs": [
+      {
+        "id": "clinical-dvt",
+        "label": "Clinical signs/symptoms of DVT",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+3 points)"
+        ]
+      },
+      {
+        "id": "pe-likely",
+        "label": "PE is #1 diagnosis or equally likely",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+3 points)"
+        ]
+      },
+      {
+        "id": "hr-over-100",
+        "label": "Heart rate >100 bpm",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1.5 points)"
+        ]
+      },
+      {
+        "id": "immobilization-surgery",
+        "label": "Immobilization \u22653 days or surgery in past 4 weeks",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1.5 points)"
+        ]
+      },
+      {
+        "id": "prior-dvt-pe",
+        "label": "Previous DVT or PE",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1.5 points)"
+        ]
+      },
+      {
+        "id": "hemoptysis",
+        "label": "Hemoptysis",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      },
+      {
+        "id": "malignancy",
+        "label": "Malignancy (treatment within 6 months or palliative)",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No (0 points)",
+          "Yes (+1 point)"
+        ]
+      }
+    ],
+    "formula": "Sum of all points. Maximum score = 12.5.",
+    "resultLabel": "Wells Score for PE",
+    "resultUnit": "points",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 4,
+        "label": "PE Unlikely",
+        "color": "green",
+        "action": "PE unlikely. Check D-dimer. If negative, PE ruled out. If positive, proceed to CT pulmonary angiography (CTPA)."
+      },
+      {
+        "min": 4,
+        "max": 15,
+        "label": "PE Likely",
+        "color": "orange",
+        "action": "PE likely. Proceed directly to CTPA. Consider empiric anticoagulation while awaiting imaging if high clinical suspicion and no contraindications."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Using the simplified two-tier model: \u22644 points = PE unlikely, >4 points = PE likely.",
+      "PERC (Pulmonary Embolism Rule-out Criteria) can be used first in low-risk patients to avoid D-dimer testing.",
+      "Age-adjusted D-dimer (age \u00d7 10 for patients >50) improves specificity without losing sensitivity.",
+      "In massive PE with hemodynamic instability, consider systemic thrombolysis or catheter-directed therapy.",
+      "Neurology patients post-stroke are at high PE risk but also high bleeding risk \u2014 balance anticoagulation decisions carefully."
+    ],
+    "relatedPlans": [
+      "acute-ischemic-stroke"
+    ]
+  },
+  {
+    "id": "4ts-score-hit",
+    "title": "4Ts Score for HIT",
+    "category": "calculator",
+    "description": "Evaluates pre-test probability of heparin-induced thrombocytopenia (HIT). Guides decision for confirmatory testing and alternative anticoagulation.",
+    "inputs": [
+      {
+        "id": "thrombocytopenia",
+        "label": "Thrombocytopenia",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select platelet fall",
+        "options": [
+          "Fall <30% or nadir <10K (0 points)",
+          "Fall 30-50% or nadir 10-19K (1 point)",
+          "Fall >50% and nadir \u226520K (2 points)"
+        ]
+      },
+      {
+        "id": "timing",
+        "label": "Timing of platelet fall",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select timing",
+        "options": [
+          "Fall \u22644 days without recent heparin (0 points)",
+          "Consistent with fall day 5-10, but unclear; or fall \u22641 day with heparin 30-100 days ago (1 point)",
+          "Clear fall day 5-10; or \u22641 day with heparin <30 days ago (2 points)"
+        ]
+      },
+      {
+        "id": "thrombosis",
+        "label": "Thrombosis or other sequelae",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "None (0 points)",
+          "Progressive, recurrent, or silent thrombosis; erythematous skin lesions (1 point)",
+          "New thrombosis, skin necrosis, or acute systemic reaction after heparin bolus (2 points)"
+        ]
+      },
+      {
+        "id": "other-causes",
+        "label": "Other causes of thrombocytopenia",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "Definite other cause present (0 points)",
+          "Possible other cause present (1 point)",
+          "No other apparent cause (2 points)"
+        ]
+      }
+    ],
+    "formula": "Sum of all points (0-8).",
+    "resultLabel": "4Ts Score",
+    "resultUnit": "points",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 3,
+        "label": "Low Probability",
+        "color": "green",
+        "action": "HIT unlikely (<5% probability). Consider other causes of thrombocytopenia. Heparin can usually be continued. HIT antibody testing optional."
+      },
+      {
+        "min": 4,
+        "max": 5,
+        "label": "Intermediate Probability",
+        "color": "yellow",
+        "action": "HIT possible (~14% probability). Discontinue heparin. Start alternative anticoagulant (argatroban, bivalirudin, fondaparinux). Send HIT antibody testing (ELISA + serotonin release assay if ELISA positive)."
+      },
+      {
+        "min": 6,
+        "max": 8,
+        "label": "High Probability",
+        "color": "red",
+        "action": "HIT likely (~64% probability). Immediately discontinue all heparin (including flushes, heparin-coated catheters). Start alternative anticoagulant. Send HIT antibody testing. Consult hematology."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "HIT typically occurs 5-10 days after starting heparin, but can occur within 24 hours if prior heparin exposure in the last 100 days.",
+      "Type I HIT (non-immune, mild, transient) is distinct from Type II HIT (immune-mediated, clinically significant).",
+      "DO NOT give warfarin until platelet count recovers (>150K) \u2014 risk of warfarin-induced venous limb gangrene in acute HIT.",
+      "ELISA has high sensitivity (>95%) but moderate specificity. Serotonin release assay (SRA) is the gold standard confirmatory test.",
+      "Argatroban requires hepatic adjustment; bivalirudin preferred in liver dysfunction. Fondaparinux is an off-label option for intermediate/low probability cases."
+    ],
+    "relatedPlans": []
+  },
+  {
+    "id": "free-water-deficit",
+    "title": "Free Water Deficit",
+    "category": "calculator",
+    "description": "Calculates free water deficit for hypernatremia correction. Guides fluid replacement in diabetes insipidus and other causes of hypernatremia in neurocritical care.",
+    "inputs": [
+      {
+        "id": "weight",
+        "label": "Weight",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 70",
+        "options": null
+      },
+      {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
+      },
+      {
+        "id": "sex",
+        "label": "Sex",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select sex",
+        "options": [
+          "Male",
+          "Female"
+        ]
+      },
+      {
+        "id": "sodium",
+        "label": "Serum Sodium",
+        "unit": "mEq/L",
+        "type": "number",
+        "placeholder": "e.g. 155",
+        "options": null
+      }
+    ],
+    "formula": "Free Water Deficit = TBW \u00d7 ((Na / 140) - 1); TBW = weight \u00d7 0.6 (males) or 0.5 (females)",
+    "resultLabel": "Free Water Deficit",
+    "resultUnit": "L",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 3,
+        "label": "Mild Deficit",
+        "color": "yellow",
+        "action": "Oral free water intake if patient can drink. Otherwise, D5W or 0.45% NS IV."
+      },
+      {
+        "min": 3,
+        "max": 6,
+        "label": "Moderate Deficit",
+        "color": "orange",
+        "action": "IV free water replacement with D5W or hypotonic saline. Correct no faster than 10 mEq/L per 24 hours."
+      },
+      {
+        "min": 6,
+        "max": 20,
+        "label": "Severe Deficit",
+        "color": "red",
+        "action": "Significant free water deficit. Replace gradually over 48-72 hours. Rapid correction risks cerebral edema."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Total body water (TBW) is approximately 60% of body weight in males, 50% in females, and lower in elderly or obese patients.",
+      "Correct hypernatremia slowly: no faster than 10-12 mEq/L per 24 hours to avoid cerebral edema.",
+      "Central diabetes insipidus (post-neurosurgery, TBI) causes rapid free water loss \u2014 give DDAVP + free water.",
+      "Nephrogenic DI may occur with lithium use or chronic kidney disease \u2014 does not respond to DDAVP.",
+      "Formula gives deficit only \u2014 must also replace ongoing losses (insensible, urine output) in the replacement plan."
+    ],
+    "relatedPlans": [
+      "elevated-icp-management"
+    ]
+  },
+  {
+    "id": "sodium-correction-rate",
+    "title": "Sodium Correction Rate",
+    "category": "calculator",
+    "description": "Calculates safe sodium correction rate to prevent osmotic demyelination syndrome in hyponatremia and cerebral edema in hypernatremia.",
+    "inputs": [
+      {
+        "id": "initial-sodium",
+        "label": "Initial Serum Sodium",
+        "unit": "mEq/L",
+        "type": "number",
+        "placeholder": "e.g. 118",
+        "options": null
+      },
+      {
+        "id": "current-sodium",
+        "label": "Current Serum Sodium",
+        "unit": "mEq/L",
+        "type": "number",
+        "placeholder": "e.g. 125",
+        "options": null
+      },
+      {
+        "id": "time-elapsed",
+        "label": "Time Elapsed",
+        "unit": "hours",
+        "type": "number",
+        "placeholder": "e.g. 12",
+        "options": null
+      }
+    ],
+    "formula": "Correction Rate = (Current Na - Initial Na) / Time Elapsed (hours)",
+    "resultLabel": "Sodium Correction Rate",
+    "resultUnit": "mEq/L per hour",
+    "normalRange": "Target: 4-8 mEq/L per 24 hours for hyponatremia",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 0.33,
+        "label": "Safe Rate (Hyponatremia)",
+        "color": "green",
+        "action": "Within safe correction rate (<8 mEq/L per 24 hours). Continue current management."
+      },
+      {
+        "min": 0.33,
+        "max": 0.5,
+        "label": "Upper Safe Limit",
+        "color": "yellow",
+        "action": "Approaching 8-12 mEq/L per 24 hours. Monitor closely. May need to slow correction with D5W or DDAVP."
+      },
+      {
+        "min": 0.5,
+        "max": 2,
+        "label": "Rapid Correction",
+        "color": "red",
+        "action": "Exceeds safe rate (>12 mEq/L per 24 hours). Risk of osmotic demyelination syndrome (ODS). Consider DDAVP 2 mcg IV q8h + D5W to re-lower sodium."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Target correction for chronic hyponatremia: 4-8 mEq/L in 24 hours, max 10-12 mEq/L. Lower targets (6 mEq/L) for high-risk patients.",
+      "Osmotic demyelination syndrome (ODS/CPM) risk factors: Na <105, hypokalemia, alcoholism, malnutrition, liver disease.",
+      "If overcorrection occurs: Give DDAVP 2 mcg IV + D5W to re-lower sodium by 1-2 mEq/L per hour until back within safe range.",
+      "For hypernatremia, correct no faster than 10-12 mEq/L per 24 hours to avoid cerebral edema.",
+      "Check sodium every 2-4 hours during active correction."
+    ],
+    "relatedPlans": [
+      "status-epilepticus"
+    ]
+  },
+  {
+    "id": "body-surface-area",
+    "title": "Body Surface Area (BSA)",
+    "category": "calculator",
+    "description": "Calculates body surface area using the Mosteller formula. Used for chemotherapy dosing, plasmapheresis volume calculations, and cardiac output indexing.",
+    "inputs": [
+      {
+        "id": "weight",
+        "label": "Weight",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 70",
+        "options": null
+      },
+      {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
+      },
+      {
+        "id": "height",
+        "label": "Height",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 170",
+        "options": null
+      },
+      {
+        "id": "height-unit",
+        "label": "Height Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "cm",
+          "in"
+        ]
+      }
+    ],
+    "formula": "BSA = \u221a((height \u00d7 weight) / 3600) [Mosteller formula]",
+    "resultLabel": "Body Surface Area",
+    "resultUnit": "m\u00b2",
+    "normalRange": "Average adult: 1.7-2.0 m\u00b2",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 1.5,
+        "label": "Below Average",
+        "color": "yellow",
+        "action": "Small BSA. May need dose adjustments for BSA-based medications."
+      },
+      {
+        "min": 1.5,
+        "max": 2.2,
+        "label": "Average",
+        "color": "green",
+        "action": "Typical adult range."
+      },
+      {
+        "min": 2.2,
+        "max": 3.5,
+        "label": "Above Average",
+        "color": "yellow",
+        "action": "Large BSA. Verify doses for BSA-based medications do not exceed recommended caps."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Mosteller formula: BSA (m\u00b2) = \u221a((height (cm) \u00d7 weight (kg)) / 3600).",
+      "Alternative Du Bois formula: BSA = 0.007184 \u00d7 height^0.725 \u00d7 weight^0.425.",
+      "Plasmapheresis typically exchanges 1-1.5 plasma volumes per session; plasma volume \u2248 (1 - Hct) \u00d7 70 mL/kg or use BSA-based calculation.",
+      "Cyclophosphamide, rituximab, and other chemotherapy agents used in neuroimmunology are often dosed by BSA.",
+      "Cardiac index = Cardiac output / BSA (normal 2.5-4.0 L/min/m\u00b2)."
+    ],
+    "relatedPlans": [
+      "myasthenia-gravis"
+    ]
+  },
+  {
+    "id": "ideal-body-weight",
+    "title": "Ideal Body Weight (IBW)",
+    "category": "calculator",
+    "description": "Calculates ideal body weight using the Devine formula. Used for tidal volume calculations in mechanical ventilation and adjusted body weight for medication dosing in obese patients.",
+    "inputs": [
+      {
+        "id": "height",
+        "label": "Height",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 70",
+        "options": null
+      },
+      {
+        "id": "height-unit",
+        "label": "Height Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "in",
+          "cm"
+        ]
+      },
+      {
+        "id": "sex",
+        "label": "Sex",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select sex",
+        "options": [
+          "Male",
+          "Female"
+        ]
+      }
+    ],
+    "formula": "Male: IBW = 50 + 2.3 \u00d7 (height in inches - 60); Female: IBW = 45.5 + 2.3 \u00d7 (height in inches - 60)",
+    "resultLabel": "Ideal Body Weight",
+    "resultUnit": "kg",
+    "normalRange": null,
+    "interpretation": null,
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Devine formula (1974) is the most widely used IBW calculation.",
+      "Tidal volume in mechanical ventilation should be based on IBW (6-8 mL/kg IBW for lung-protective ventilation).",
+      "Adjusted body weight = IBW + 0.4 \u00d7 (actual weight - IBW) \u2014 used for IVIg and some antibiotic dosing in obese patients.",
+      "For patients shorter than 5 feet, IBW formula may underestimate; clinical judgment is required.",
+      "Aminoglycoside dosing in obese patients uses adjusted body weight to avoid toxicity."
+    ],
+    "relatedPlans": [
+      "myasthenia-gravis"
+    ]
+  },
+  {
+    "id": "meld-score",
+    "title": "MELD Score",
+    "category": "calculator",
+    "description": "Calculates Model for End-Stage Liver Disease score. Relevant for AED selection (avoid hepatically-metabolized drugs) and prognosis in hepatic encephalopathy.",
+    "inputs": [
+      {
+        "id": "creatinine",
+        "label": "Serum Creatinine",
+        "unit": "mg/dL",
+        "type": "number",
+        "placeholder": "e.g. 1.2",
+        "options": null
+      },
+      {
+        "id": "bilirubin",
+        "label": "Total Bilirubin",
+        "unit": "mg/dL",
+        "type": "number",
+        "placeholder": "e.g. 2.0",
+        "options": null
+      },
+      {
+        "id": "inr",
+        "label": "INR",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 1.5",
+        "options": null
+      },
+      {
+        "id": "dialysis",
+        "label": "Dialysis twice in the past week",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No",
+          "Yes (Cr set to 4.0)"
+        ]
+      }
+    ],
+    "formula": "MELD = 10 \u00d7 (0.957 \u00d7 ln(Cr) + 0.378 \u00d7 ln(Bilirubin) + 1.120 \u00d7 ln(INR) + 0.643)",
+    "resultLabel": "MELD Score",
+    "resultUnit": "points",
+    "normalRange": "6-9 (minimal liver disease)",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 10,
+        "label": "Low (Minimal Disease)",
+        "color": "green",
+        "action": "3-month mortality ~2%. Most hepatically-metabolized AEDs can be used with monitoring."
+      },
+      {
+        "min": 10,
+        "max": 20,
+        "label": "Moderate",
+        "color": "yellow",
+        "action": "3-month mortality ~6%. Avoid or reduce doses of phenytoin, carbamazepine, valproate. Consider levetiracetam, lacosamide."
+      },
+      {
+        "min": 20,
+        "max": 30,
+        "label": "Severe",
+        "color": "orange",
+        "action": "3-month mortality ~20%. Avoid hepatically-metabolized AEDs. Prefer levetiracetam, lacosamide, gabapentin (renal dose adjustment may be needed)."
+      },
+      {
+        "min": 30,
+        "max": 50,
+        "label": "Very Severe",
+        "color": "red",
+        "action": "3-month mortality ~50-70%. Liver transplant evaluation indicated. Use only renally-cleared medications."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "MELD was designed to predict 3-month mortality in cirrhosis and is used for liver transplant allocation.",
+      "Values below 1.0 are set to 1.0 for calculation (Cr, bilirubin, INR).",
+      "Valproate is contraindicated in severe liver disease \u2014 risk of hepatotoxicity and hyperammonemia.",
+      "Phenytoin has high protein binding and is hepatically metabolized \u2014 levels unpredictable in liver disease. Check free phenytoin.",
+      "Hepatic encephalopathy is treated with lactulose and rifaximin, not AEDs (unless seizures are present)."
+    ],
+    "relatedPlans": [
+      "status-epilepticus"
+    ]
+  },
+  {
+    "id": "levodopa-equivalent-dose",
+    "title": "Levodopa Equivalent Dose (LED)",
+    "category": "calculator",
+    "description": "Calculates total levodopa equivalent daily dose from various Parkinson's disease medications. Used for dosing comparisons, impulse control disorder risk assessment, and medication adjustments.",
+    "inputs": [
+      {
+        "id": "carbidopa-levodopa-ir",
+        "label": "Carbidopa-Levodopa IR (levodopa mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 600",
+        "options": null
+      },
+      {
+        "id": "carbidopa-levodopa-cr",
+        "label": "Carbidopa-Levodopa CR (levodopa mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 400",
+        "options": null
+      },
+      {
+        "id": "pramipexole",
+        "label": "Pramipexole (mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 3",
+        "options": null
+      },
+      {
+        "id": "ropinirole",
+        "label": "Ropinirole (mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 12",
+        "options": null
+      },
+      {
+        "id": "rotigotine",
+        "label": "Rotigotine Patch (mg/24hr)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 6",
+        "options": null
+      },
+      {
+        "id": "entacapone",
+        "label": "Entacapone (use with levodopa)",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select",
+        "options": [
+          "No",
+          "Yes (multiplies levodopa by 1.33)"
+        ]
+      },
+      {
+        "id": "rasagiline",
+        "label": "Rasagiline (mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 1",
+        "options": null
+      },
+      {
+        "id": "selegiline",
+        "label": "Selegiline (mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 10",
+        "options": null
+      },
+      {
+        "id": "amantadine",
+        "label": "Amantadine (mg/day)",
+        "unit": "mg",
+        "type": "number",
+        "placeholder": "e.g. 300",
+        "options": null
+      }
+    ],
+    "formula": "LED = (Levodopa IR \u00d7 1.0) + (Levodopa CR \u00d7 0.75) + (Pramipexole \u00d7 100) + (Ropinirole \u00d7 20) + (Rotigotine \u00d7 30) + (Rasagiline \u00d7 100) + (Selegiline \u00d7 10) + (Amantadine \u00d7 1); If entacapone: multiply levodopa contribution by 1.33",
+    "resultLabel": "Levodopa Equivalent Daily Dose",
+    "resultUnit": "mg",
+    "normalRange": null,
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 400,
+        "label": "Low Dose",
+        "color": "green",
+        "action": "Early Parkinson's or mild symptoms. Low risk of motor fluctuations and impulse control disorders."
+      },
+      {
+        "min": 400,
+        "max": 800,
+        "label": "Moderate Dose",
+        "color": "yellow",
+        "action": "Moderate disease. Monitor for wearing-off and dyskinesias. Assess for impulse control disorders if on dopamine agonist."
+      },
+      {
+        "min": 800,
+        "max": 1500,
+        "label": "High Dose",
+        "color": "orange",
+        "action": "Advanced disease. High risk of motor complications. Consider device-aided therapies (DBS, Duopa) if motor fluctuations are disabling."
+      },
+      {
+        "min": 1500,
+        "max": 3000,
+        "label": "Very High Dose",
+        "color": "red",
+        "action": "Very advanced disease. Evaluate for device-aided therapies. Screen for dopamine dysregulation syndrome if escalating doses."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "LED conversion factors vary by source; these are commonly used estimates from Movement Disorders literature.",
+      "Dopamine agonists (pramipexole, ropinirole) have higher risk of impulse control disorders \u2014 screen at each visit.",
+      "LED >400 mg/day from dopamine agonists is associated with increased impulse control disorder risk.",
+      "CR formulations have ~75% bioavailability compared to IR \u2014 factor this into LED calculations.",
+      "Sudden discontinuation of dopaminergic medications can precipitate neuroleptic malignant-like syndrome (parkinsonism-hyperpyrexia syndrome)."
+    ],
+    "relatedPlans": [
+      "parkinsons-disease"
+    ]
+  },
+  {
+    "id": "aed-renal-adjustment",
+    "title": "AED Renal Dose Adjustment",
+    "category": "reference_table",
+    "description": "Renal dose adjustment guidelines for commonly used antiepileptic drugs based on creatinine clearance. Critical for avoiding toxicity in patients with kidney disease.",
+    "inputs": null,
+    "formula": null,
+    "resultLabel": null,
+    "resultUnit": null,
+    "normalRange": null,
+    "interpretation": null,
+    "stages": null,
+    "tableData": {
+      "columns": [
+        "Drug",
+        "CrCl >50 mL/min",
+        "CrCl 30-50 mL/min",
+        "CrCl 10-30 mL/min",
+        "CrCl <10 mL/min / Dialysis"
+      ],
+      "rows": [
+        [
+          "Levetiracetam",
+          "500-1500 mg BID",
+          "250-750 mg BID",
+          "250-500 mg BID",
+          "250-500 mg daily; give supplemental dose after HD"
+        ],
+        [
+          "Gabapentin",
+          "300-1200 mg TID",
+          "200-700 mg BID",
+          "200-700 mg daily",
+          "100-300 mg daily; give dose after HD"
+        ],
+        [
+          "Pregabalin",
+          "150-300 mg BID",
+          "75-150 mg BID or daily",
+          "25-75 mg daily",
+          "25-75 mg daily; supplemental dose after HD"
+        ],
+        [
+          "Lacosamide",
+          "No adjustment needed",
+          "No adjustment; caution in severe CKD",
+          "Max 300 mg/day",
+          "Max 300 mg/day; supplemental dose after HD"
+        ],
+        [
+          "Brivaracetam",
+          "No adjustment needed",
+          "No adjustment needed",
+          "No adjustment needed",
+          "No adjustment; consider supplemental dose after HD"
+        ],
+        [
+          "Topiramate",
+          "No adjustment",
+          "50% dose reduction",
+          "50% dose reduction",
+          "50% reduction; supplemental dose after HD"
+        ],
+        [
+          "Lamotrigine",
+          "No adjustment",
+          "No adjustment",
+          "Reduce by 25%",
+          "Reduce by 50%"
+        ],
+        [
+          "Phenytoin",
+          "No adjustment (hepatic metabolism)",
+          "No adjustment",
+          "No adjustment",
+          "No adjustment; not removed by HD"
+        ],
+        [
+          "Valproic Acid",
+          "No adjustment (hepatic metabolism)",
+          "No adjustment",
+          "No adjustment",
+          "Free level may increase; monitor closely"
+        ],
+        [
+          "Carbamazepine",
+          "No adjustment (hepatic metabolism)",
+          "No adjustment",
+          "No adjustment",
+          "No adjustment; not significantly removed by HD"
+        ]
+      ]
+    },
+    "clinicalPearls": [
+      "Levetiracetam, gabapentin, and pregabalin are primarily renally excreted and require significant dose adjustments.",
+      "Phenytoin, carbamazepine, and valproate are hepatically metabolized \u2014 no renal dose adjustment needed.",
+      "In dialysis patients, give supplemental doses of water-soluble AEDs (levetiracetam, gabapentin) after hemodialysis.",
+      "Lacosamide and brivaracetam have dual elimination (renal + hepatic) and require less aggressive renal adjustment.",
+      "Always check free phenytoin and free valproic acid levels in patients with renal failure (altered protein binding)."
+    ],
+    "relatedPlans": [
+      "status-epilepticus",
+      "new-onset-seizure"
+    ]
+  },
+  {
+    "id": "plasmapheresis-volume",
+    "title": "Plasmapheresis Volume Calculator",
+    "category": "calculator",
+    "description": "Calculates plasma volume and exchange volumes for therapeutic plasma exchange (TPE/PLEX). Used in GBS, myasthenic crisis, CIDP, NMOSD, and other neuroimmune conditions.",
+    "inputs": [
+      {
+        "id": "weight",
+        "label": "Weight",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 70",
+        "options": null
+      },
+      {
+        "id": "weight-unit",
+        "label": "Weight Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "kg",
+          "lb"
+        ]
+      },
+      {
+        "id": "hematocrit",
+        "label": "Hematocrit",
+        "unit": "%",
+        "type": "number",
+        "placeholder": "e.g. 40",
+        "options": null
+      },
+      {
+        "id": "exchange-volumes",
+        "label": "Exchange Volumes",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select exchange",
+        "options": [
+          "1.0 plasma volume",
+          "1.5 plasma volumes",
+          "2.0 plasma volumes"
+        ]
+      }
+    ],
+    "formula": "Plasma Volume = Weight \u00d7 70 mL/kg \u00d7 (1 - Hematocrit/100); Exchange Volume = Plasma Volume \u00d7 exchange ratio",
+    "resultLabel": "Plasma Volume / Exchange Volume",
+    "resultUnit": "mL",
+    "normalRange": null,
+    "interpretation": null,
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Standard PLEX protocol: 5 exchanges over 10-14 days, exchanging 1-1.5 plasma volumes per session.",
+      "Replacement fluid is typically 5% albumin; FFP used if coagulopathy or TTP.",
+      "One plasma volume exchange removes ~63% of intravascular substance; 1.5 volumes removes ~78%.",
+      "GBS: 5 exchanges over 2 weeks; benefit diminishes after 4 weeks from symptom onset.",
+      "Myasthenic crisis: 5-6 exchanges or until clinical improvement; bridge to IVIg or immunosuppression.",
+      "PLEX removes IVIg \u2014 if both are planned, give IVIg AFTER completing PLEX series."
+    ],
+    "relatedPlans": [
+      "myasthenia-gravis",
+      "guillain-barre-syndrome"
+    ]
+  },
+  {
+    "id": "predicted-fvc",
+    "title": "Predicted FVC Calculator",
+    "category": "calculator",
+    "description": "Calculates predicted Forced Vital Capacity based on age, height, and sex. Essential for monitoring respiratory function in myasthenia gravis, GBS, and ALS.",
+    "inputs": [
+      {
+        "id": "age",
+        "label": "Age",
+        "unit": "years",
+        "type": "number",
+        "placeholder": "e.g. 50",
+        "options": null
+      },
+      {
+        "id": "height",
+        "label": "Height",
+        "unit": null,
+        "type": "number",
+        "placeholder": "e.g. 170",
+        "options": null
+      },
+      {
+        "id": "height-unit",
+        "label": "Height Unit",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select unit",
+        "options": [
+          "cm",
+          "in"
+        ]
+      },
+      {
+        "id": "sex",
+        "label": "Sex",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select sex",
+        "options": [
+          "Male",
+          "Female"
+        ]
+      }
+    ],
+    "formula": "Males: FVC = (0.0576 \u00d7 height) - (0.026 \u00d7 age) - 4.34; Females: FVC = (0.0443 \u00d7 height) - (0.026 \u00d7 age) - 2.89 [Hankinson 1999 NHANES III]",
+    "resultLabel": "Predicted FVC",
+    "resultUnit": "L",
+    "normalRange": "Normal: \u226580% predicted",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 1.5,
+        "label": "Critical",
+        "color": "red",
+        "action": "Severe respiratory compromise. In neuromuscular disease, FVC <15-20 mL/kg indicates impending respiratory failure. Prepare for intubation."
+      },
+      {
+        "min": 1.5,
+        "max": 2.5,
+        "label": "Moderate Restriction",
+        "color": "orange",
+        "action": "Significant respiratory impairment. Serial monitoring q2-4h in acute setting. Consider BiPAP for hypercapnia."
+      },
+      {
+        "min": 2.5,
+        "max": 3.5,
+        "label": "Mild Restriction",
+        "color": "yellow",
+        "action": "Mild impairment. Continue serial monitoring. May represent early decline in progressive conditions."
+      },
+      {
+        "min": 3.5,
+        "max": 7,
+        "label": "Normal",
+        "color": "green",
+        "action": "Within normal limits for most adults."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "The 20/30/40 rule for intubation in myasthenia/GBS: FVC <20 mL/kg, NIF weaker than -30 cmH2O, or >30% decline from baseline.",
+      "Supine FVC that drops >25% compared to upright suggests significant diaphragm weakness.",
+      "FVC is more reliable than NIF for trending respiratory function in neuromuscular disease.",
+      "ABG is a LATE indicator of respiratory failure \u2014 do not wait for hypercapnia to intubate.",
+      "ALS patients should have FVC monitored every 3 months; FVC <50% predicted indicates need for non-invasive ventilation discussion."
+    ],
+    "relatedPlans": [
+      "myasthenia-gravis",
+      "guillain-barre-syndrome",
+      "als"
+    ]
+  },
+  {
+    "id": "osmol-gap",
+    "title": "Osmol Gap",
+    "category": "calculator",
+    "description": "Calculates the difference between measured and calculated serum osmolality. Elevated osmol gap suggests presence of unmeasured osmoles such as toxic alcohols (methanol, ethylene glycol).",
+    "inputs": [
+      {
+        "id": "measured-osm",
+        "label": "Measured Serum Osmolality",
+        "unit": "mOsm/kg",
+        "type": "number",
+        "placeholder": "e.g. 320",
+        "options": null
+      },
+      {
+        "id": "sodium",
+        "label": "Serum Sodium",
+        "unit": "mEq/L",
+        "type": "number",
+        "placeholder": "e.g. 140",
+        "options": null
+      },
+      {
+        "id": "glucose",
+        "label": "Serum Glucose",
+        "unit": "mg/dL",
+        "type": "number",
+        "placeholder": "e.g. 100",
+        "options": null
+      },
+      {
+        "id": "bun",
+        "label": "BUN",
+        "unit": "mg/dL",
+        "type": "number",
+        "placeholder": "e.g. 15",
+        "options": null
+      },
+      {
+        "id": "ethanol",
+        "label": "Ethanol Level (if known)",
+        "unit": "mg/dL",
+        "type": "number",
+        "placeholder": "e.g. 100 (optional)",
+        "options": null
+      }
+    ],
+    "formula": "Calculated Osm = (2 \u00d7 Na) + (Glucose/18) + (BUN/2.8) + (Ethanol/4.6 if present); Osmol Gap = Measured Osm - Calculated Osm",
+    "resultLabel": "Osmol Gap",
+    "resultUnit": "mOsm/kg",
+    "normalRange": "<10 mOsm/kg",
+    "interpretation": [
+      {
+        "min": -10,
+        "max": 10,
+        "label": "Normal",
+        "color": "green",
+        "action": "Normal osmol gap. Toxic alcohol ingestion unlikely (though late presentations may have low gap after metabolism)."
+      },
+      {
+        "min": 10,
+        "max": 20,
+        "label": "Mildly Elevated",
+        "color": "yellow",
+        "action": "Mildly elevated. Consider early toxic alcohol ingestion, propylene glycol, mannitol, contrast dye, or lab error."
+      },
+      {
+        "min": 20,
+        "max": 100,
+        "label": "Significantly Elevated",
+        "color": "red",
+        "action": "Concerning for toxic alcohol ingestion (methanol, ethylene glycol, isopropanol). Check specific levels. Consider fomepizole and nephrology/toxicology consult."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Classic triad of toxic alcohol poisoning: elevated osmol gap (early) \u2192 anion gap metabolic acidosis (late) \u2192 end-organ damage.",
+      "Methanol \u2192 formic acid \u2192 blindness, basal ganglia necrosis. Ethylene glycol \u2192 oxalate \u2192 renal failure, calcium oxalate crystals.",
+      "Isopropanol causes elevated osmol gap WITHOUT anion gap acidosis (metabolized to acetone, not acid).",
+      "As toxic alcohol is metabolized, osmol gap normalizes but anion gap increases \u2014 both can be elevated simultaneously in intermediate phase.",
+      "Fomepizole (alcohol dehydrogenase inhibitor) is first-line treatment; hemodialysis for severe poisoning or renal failure."
+    ],
+    "relatedPlans": [
+      "status-epilepticus"
+    ]
+  },
+  {
+    "id": "lp-opening-pressure-correction",
+    "title": "LP Opening Pressure Position Correction",
+    "category": "calculator",
+    "description": "Estimates opening pressure correction between lateral decubitus and upright (sitting) positions. Opening pressure measured sitting is significantly higher than lateral decubitus due to hydrostatic effects.",
+    "inputs": [
+      {
+        "id": "measured-pressure",
+        "label": "Measured Opening Pressure",
+        "unit": "cmH2O",
+        "type": "number",
+        "placeholder": "e.g. 28",
+        "options": null
+      },
+      {
+        "id": "position",
+        "label": "Patient Position During LP",
+        "unit": null,
+        "type": "select",
+        "placeholder": "Select position",
+        "options": [
+          "Lateral Decubitus",
+          "Sitting Upright"
+        ]
+      }
+    ],
+    "formula": "Sitting OP \u2248 Lateral Decubitus OP + 10-20 cmH2O (due to hydrostatic column effect). Correction: Estimated Lateral OP = Sitting OP - 15 cmH2O (approximate midpoint).",
+    "resultLabel": "Estimated Lateral Decubitus Opening Pressure",
+    "resultUnit": "cmH2O",
+    "normalRange": "6-20 cmH2O (lateral decubitus, legs extended)",
+    "interpretation": [
+      {
+        "min": 0,
+        "max": 6,
+        "label": "Low",
+        "color": "yellow",
+        "action": "Consider intracranial hypotension, CSF leak, or post-LP headache risk."
+      },
+      {
+        "min": 6,
+        "max": 20,
+        "label": "Normal",
+        "color": "green",
+        "action": "Normal opening pressure (lateral decubitus reference range)."
+      },
+      {
+        "min": 20,
+        "max": 25,
+        "label": "Upper Normal / Borderline",
+        "color": "yellow",
+        "action": "Upper limit of normal. May be elevated in obese patients. Correlate with clinical presentation."
+      },
+      {
+        "min": 25,
+        "max": 60,
+        "label": "Elevated",
+        "color": "orange",
+        "action": "Elevated ICP. Consider idiopathic intracranial hypertension (IIH), venous sinus thrombosis, meningitis, or mass lesion. IIH diagnostic criterion: OP >25 cmH2O in adults."
+      },
+      {
+        "min": 60,
+        "max": 100,
+        "label": "Severely Elevated",
+        "color": "red",
+        "action": "Markedly elevated. Urgent evaluation for etiology. Consider therapeutic drainage and acetazolamide for IIH."
+      }
+    ],
+    "stages": null,
+    "tableData": null,
+    "clinicalPearls": [
+      "Gold standard position for OP measurement is lateral decubitus with legs extended and patient relaxed.",
+      "Sitting position increases OP by approximately 10-20 cmH2O due to hydrostatic pressure from the CSF column.",
+      "Obese patients may have falsely elevated OP in both positions; use clinical judgment.",
+      "IIH (pseudotumor cerebri) diagnostic criteria include OP >25 cmH2O in adults, >28 cmH2O in children.",
+      "Have patient straighten legs and relax before measuring \u2014 flexed hips increase intra-abdominal and CSF pressure.",
+      "Struggling, crying (in children), or Valsalva during measurement will falsely elevate OP."
+    ],
+    "relatedPlans": [
+      "idiopathic-intracranial-hypertension"
+    ]
   }
 ]

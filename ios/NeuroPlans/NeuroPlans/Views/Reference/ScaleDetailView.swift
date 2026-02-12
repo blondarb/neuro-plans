@@ -5,13 +5,14 @@ struct ScaleDetailView: View {
 
     @State private var selections: [String: Int] = [:]
     @State private var copied = false
+    @State private var showShareSheet = false
 
     private var totalScore: Int {
         selections.values.reduce(0, +)
     }
 
     private var currentInterpretation: ScoreInterpretation? {
-        scale.interpretation.first { totalScore >= $0.min && totalScore <= $0.max }
+        scale.interpretation.first { Double(totalScore) >= $0.min && Double(totalScore) <= $0.max }
     }
 
     private var interpretationColor: Color {
@@ -76,37 +77,54 @@ struct ScaleDetailView: View {
                 }
 
                 // Actions
-                HStack(spacing: 12) {
-                    Button {
-                        copyScore()
-                    } label: {
-                        Label(
-                            copied ? "Copied!" : "Copy Score",
-                            systemImage: copied ? "checkmark.circle.fill" : "doc.on.doc"
-                        )
-                        .font(.system(.subheadline, design: .rounded, weight: .semibold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .background(copied ? .green.opacity(0.2) : AppTheme.teal.opacity(0.2))
-                        .foregroundStyle(copied ? .green : AppTheme.teal)
-                        .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
-                    }
-
-                    Button {
-                        withAnimation(.snappy) {
-                            selections = [:]
-                        }
-                    } label: {
-                        Label("Reset", systemImage: "arrow.counterclockwise")
+                VStack(spacing: 10) {
+                    HStack(spacing: 12) {
+                        Button {
+                            copyScore()
+                        } label: {
+                            Label(
+                                copied ? "Copied!" : "Copy",
+                                systemImage: copied ? "checkmark.circle.fill" : "doc.on.doc"
+                            )
                             .font(.system(.subheadline, design: .rounded, weight: .semibold))
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 12)
-                            .background(.quaternary)
-                            .foregroundStyle(.secondary)
+                            .background(copied ? .green.opacity(0.2) : AppTheme.teal.opacity(0.2))
+                            .foregroundStyle(copied ? .green : AppTheme.teal)
                             .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
+
+                        Button {
+                            showShareSheet = true
+                        } label: {
+                            Label("Share", systemImage: "square.and.arrow.up")
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(.blue.opacity(0.2))
+                                .foregroundStyle(.blue)
+                                .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
+
+                        Button {
+                            withAnimation(.snappy) {
+                                selections = [:]
+                            }
+                        } label: {
+                            Label("Reset", systemImage: "arrow.counterclockwise")
+                                .font(.system(.subheadline, design: .rounded, weight: .semibold))
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 12)
+                                .background(.quaternary)
+                                .foregroundStyle(.secondary)
+                                .clipShape(RoundedRectangle(cornerRadius: AppTheme.smallCornerRadius))
+                        }
                     }
                 }
                 .padding(.horizontal)
+                .sheet(isPresented: $showShareSheet) {
+                    ShareSheet(text: generateShareText())
+                }
 
                 Spacer(minLength: 100)
             }
@@ -203,7 +221,7 @@ struct ScaleDetailView: View {
 
                             Text("\(option.value)")
                                 .font(.system(.caption, design: .rounded, weight: .bold))
-                                .foregroundStyle(isSelected ? .blue : .tertiary)
+                                .foregroundStyle(isSelected ? Color.blue : Color.gray)
                                 .frame(width: 24)
                         }
                         .padding(.horizontal, AppTheme.cardPadding)
@@ -265,19 +283,30 @@ struct ScaleDetailView: View {
         }
     }
 
-    private func copyScore() {
-        var text = "\(scale.abbreviation): \(totalScore)"
+    private func generateShareText() -> String {
+        var text = "\(scale.title) (\(scale.abbreviation))\n"
+        text += "Score: \(totalScore)"
         if let interp = currentInterpretation {
             text += " — \(interp.label)"
+            if let action = interp.action, !action.isEmpty {
+                text += "\nRecommendation: \(action)"
+            }
         }
-        // Detail per component
+        text += "\n\nComponents:"
         for component in scale.components {
             if let val = selections[component.id],
                let option = component.options.first(where: { $0.value == val }) {
-                text += "\n  \(component.name): \(option.label) (\(val))"
+                text += "\n• \(component.name): \(option.label) (\(val))"
+            } else {
+                text += "\n• \(component.name): Not scored"
             }
         }
-        UIPasteboard.general.string = text
+        text += "\n\n— Generated by Neuro Plans"
+        return text
+    }
+
+    private func copyScore() {
+        UIPasteboard.general.string = generateShareText()
         withAnimation { copied = true }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             withAnimation { copied = false }

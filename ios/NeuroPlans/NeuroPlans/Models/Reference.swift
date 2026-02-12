@@ -32,8 +32,8 @@ struct ScoreOption: Codable, Identifiable {
 }
 
 struct ScoreInterpretation: Codable {
-    let min: Int
-    let max: Int
+    let min: Double
+    let max: Double
     let label: String
     let color: String
     let action: String?
@@ -113,7 +113,7 @@ struct TableContent: Codable {
 
 // MARK: - Reference Categories
 
-struct ReferenceScaleCategory: Identifiable {
+struct ReferenceScaleCategory: Identifiable, Hashable {
     let id: String
     let name: String
     let icon: String
@@ -121,6 +121,9 @@ struct ReferenceScaleCategory: Identifiable {
     let scaleIds: [String]
 
     var count: Int { scaleIds.count }
+
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
+    static func == (lhs: ReferenceScaleCategory, rhs: ReferenceScaleCategory) -> Bool { lhs.id == rhs.id }
 }
 
 extension ReferenceScaleCategory {
@@ -200,7 +203,7 @@ extension ReferenceScaleCategory {
     }
 }
 
-struct ReferenceExamCategory: Identifiable {
+struct ReferenceExamCategory: Identifiable, Hashable {
     let id: String
     let name: String
     let icon: String
@@ -208,6 +211,9 @@ struct ReferenceExamCategory: Identifiable {
     let examIds: [String]
 
     var count: Int { examIds.count }
+
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
+    static func == (lhs: ReferenceExamCategory, rhs: ReferenceExamCategory) -> Bool { lhs.id == rhs.id }
 }
 
 extension ReferenceExamCategory {
@@ -218,9 +224,10 @@ extension ReferenceExamCategory {
             icon: "stethoscope",
             color: "teal",
             examIds: [
-                "mental-status", "cranial-nerve-exam", "motor-exam",
+                "mental-status-exam", "cranial-nerve-exam", "motor-exam",
                 "sensory-exam", "deep-tendon-reflexes", "cerebellar-exam",
-                "gait-exam", "fundoscopic-exam", "meningeal-signs"
+                "gait-exam", "fundoscopic-exam", "meningeal-signs",
+                "speech-language-exam"
             ]
         ),
         ReferenceExamCategory(
@@ -229,8 +236,10 @@ extension ReferenceExamCategory {
             icon: "magnifyingglass",
             color: "blue",
             examIds: [
-                "coma-exam", "vestibular-exam", "neuromuscular-exam",
-                "movement-disorder-exam", "spine-root-exam"
+                "coma-exam", "vestibular-exam", "myasthenia-exam",
+                "peripheral-neuropathy-exam", "radiculopathy-exam",
+                "myelopathy-exam", "movement-disorder-exam",
+                "nerve-entrapment-exam"
             ]
         ),
         ReferenceExamCategory(
@@ -239,13 +248,22 @@ extension ReferenceExamCategory {
             icon: "bolt.fill",
             color: "orange",
             examIds: [
-                "neuro-screen-5min", "stroke-rapid", "icu-neuro-check"
+                "neuro-screen-5min", "icu-neuro-check"
+            ]
+        ),
+        ReferenceExamCategory(
+            id: "special-tests",
+            name: "Special Tests & Reflexes",
+            icon: "hand.tap.fill",
+            color: "purple",
+            examIds: [
+                "pathological-reflexes"
             ]
         ),
     ]
 }
 
-struct ReferenceToolCategory: Identifiable {
+struct ReferenceToolCategory: Identifiable, Hashable {
     let id: String
     let name: String
     let icon: String
@@ -253,6 +271,9 @@ struct ReferenceToolCategory: Identifiable {
     let toolIds: [String]
 
     var count: Int { toolIds.count }
+
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
+    static func == (lhs: ReferenceToolCategory, rhs: ReferenceToolCategory) -> Bool { lhs.id == rhs.id }
 }
 
 extension ReferenceToolCategory {
@@ -265,7 +286,12 @@ extension ReferenceToolCategory {
             toolIds: [
                 "corrected-phenytoin", "creatinine-clearance", "corrected-sodium",
                 "corrected-calcium", "serum-osmolality", "anion-gap",
-                "bmi-calculator", "steroid-equivalence", "ivig-dose"
+                "bmi-calculator", "steroid-equivalence", "ivig-dose",
+                "mean-arterial-pressure", "cerebral-perfusion-pressure", "ich-volume-abc2",
+                "corrected-qtc", "wells-score-dvt", "wells-score-pe", "4ts-score-hit",
+                "free-water-deficit", "sodium-correction-rate", "body-surface-area",
+                "ideal-body-weight", "meld-score", "levodopa-equivalent-dose",
+                "plasmapheresis-volume", "predicted-fvc", "osmol-gap", "lp-opening-pressure-correction"
             ]
         ),
         ReferenceToolCategory(

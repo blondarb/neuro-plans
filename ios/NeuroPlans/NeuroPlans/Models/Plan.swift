@@ -10,10 +10,10 @@ struct Plan: Codable, Identifiable, Hashable {
     let scope: String
     let notes: [String]
     let sections: PlanSections
-    let differential: [DifferentialItem]
-    let evidence: [EvidenceItem]
-    let monitoring: [MonitoringItem]
-    let disposition: [DispositionItem]
+    let differential: [DifferentialItem]?
+    let evidence: [EvidenceItem]?
+    let monitoring: [MonitoringItem]?
+    let disposition: [DispositionItem]?
 
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
     static func == (lhs: Plan, rhs: Plan) -> Bool { lhs.id == rhs.id }
@@ -91,7 +91,7 @@ enum Priority: String, Comparable {
 // MARK: - Lab Item
 
 struct LabItem: Codable, Identifiable {
-    let item: String
+    let item: String?
     let rationale: String?
     let target: String?
     let ED: String?
@@ -99,7 +99,17 @@ struct LabItem: Codable, Identifiable {
     let OPD: String?
     let ICU: String?
 
-    var id: String { item }
+    var id: String { item ?? rationale ?? UUID().uuidString }
+    var displayText: String { item ?? rationale ?? "" }
+
+    /// True if this item has no applicable venue-specific priorities (reference/guidance item)
+    var isReferenceItem: Bool {
+        let edNA = ED == nil || ED == "-"
+        let hospNA = HOSP == nil || HOSP == "-"
+        let opdNA = OPD == nil || OPD == "-"
+        let icuNA = ICU == nil || ICU == "-"
+        return edNA && hospNA && opdNA && icuNA
+    }
 
     func priority(for setting: ClinicalSetting) -> Priority {
         let raw: String?
@@ -116,16 +126,27 @@ struct LabItem: Codable, Identifiable {
 // MARK: - Imaging Item
 
 struct ImagingItem: Codable, Identifiable {
-    let item: String
+    let item: String?
     let timing: String?
     let target: String?
     let contraindications: String?
+    let rationale: String?
     let ED: String?
     let HOSP: String?
     let OPD: String?
     let ICU: String?
 
-    var id: String { item }
+    var id: String { item ?? timing ?? UUID().uuidString }
+    var displayText: String { item ?? "" }
+
+    /// True if this item has no applicable venue-specific priorities (reference/guidance item)
+    var isReferenceItem: Bool {
+        let edNA = ED == nil || ED == "-"
+        let hospNA = HOSP == nil || HOSP == "-"
+        let opdNA = OPD == nil || OPD == "-"
+        let icuNA = ICU == nil || ICU == "-"
+        return edNA && hospNA && opdNA && icuNA
+    }
 
     func priority(for setting: ClinicalSetting) -> Priority {
         let raw: String?
@@ -142,18 +163,34 @@ struct ImagingItem: Codable, Identifiable {
 // MARK: - Treatment Item
 
 struct TreatmentItem: Codable, Identifiable {
-    let item: String
+    let item: String?
     let route: String?
     let indication: String?
     let dosing: Dosing?
+    let dosingString: String?
     let contraindications: String?
     let monitoring: String?
     let ED: String?
     let HOSP: String?
     let OPD: String?
     let ICU: String?
+    // Additional fields for reference-style items (like ASM adjustment strategies)
+    let rationale: String?
+    let therapeuticRange: String?
+    let adjustmentNotes: String?
 
-    var id: String { item }
+    var id: String { item ?? indication ?? dosingString ?? UUID().uuidString }
+    var displayText: String { item ?? indication ?? dosingString ?? "" }
+
+    /// True if this item has no applicable venue-specific priorities (reference/guidance item)
+    /// This includes items where all venue columns are nil OR all are "-"
+    var isReferenceItem: Bool {
+        let edNA = ED == nil || ED == "-"
+        let hospNA = HOSP == nil || HOSP == "-"
+        let opdNA = OPD == nil || OPD == "-"
+        let icuNA = ICU == nil || ICU == "-"
+        return edNA && hospNA && opdNA && icuNA
+    }
 
     func priority(for setting: ClinicalSetting) -> Priority {
         let raw: String?
@@ -165,6 +202,42 @@ struct TreatmentItem: Codable, Identifiable {
         }
         return Priority(rawValue: raw ?? "-") ?? .na
     }
+
+    enum CodingKeys: String, CodingKey {
+        case item, route, indication, dosing, contraindications, monitoring
+        case ED, HOSP, OPD, ICU
+        case rationale
+        case therapeuticRange = "therapeutic range"
+        case adjustmentNotes = "adjustment notes"
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        item = try container.decodeIfPresent(String.self, forKey: .item)
+        route = try container.decodeIfPresent(String.self, forKey: .route)
+        indication = try container.decodeIfPresent(String.self, forKey: .indication)
+        contraindications = try container.decodeIfPresent(String.self, forKey: .contraindications)
+        monitoring = try container.decodeIfPresent(String.self, forKey: .monitoring)
+        ED = try container.decodeIfPresent(String.self, forKey: .ED)
+        HOSP = try container.decodeIfPresent(String.self, forKey: .HOSP)
+        OPD = try container.decodeIfPresent(String.self, forKey: .OPD)
+        ICU = try container.decodeIfPresent(String.self, forKey: .ICU)
+        rationale = try container.decodeIfPresent(String.self, forKey: .rationale)
+        therapeuticRange = try container.decodeIfPresent(String.self, forKey: .therapeuticRange)
+        adjustmentNotes = try container.decodeIfPresent(String.self, forKey: .adjustmentNotes)
+
+        // Handle dosing as either a Dosing object or a plain string
+        if let dosingObj = try? container.decodeIfPresent(Dosing.self, forKey: .dosing) {
+            dosing = dosingObj
+            dosingString = nil
+        } else if let dosingStr = try? container.decodeIfPresent(String.self, forKey: .dosing) {
+            dosing = nil
+            dosingString = dosingStr
+        } else {
+            dosing = nil
+            dosingString = nil
+        }
+    }
 }
 
 struct Dosing: Codable {
@@ -175,7 +248,7 @@ struct Dosing: Codable {
     let orderSentence: String?
 }
 
-struct DoseOption: Codable, Identifiable {
+struct DoseOption: Codable, Identifiable, Hashable {
     let text: String
     let orderSentence: String?
 
@@ -185,7 +258,7 @@ struct DoseOption: Codable, Identifiable {
 // MARK: - Other Recommendations
 
 struct OtherRecItem: Codable, Identifiable {
-    let item: String
+    let item: String?
     let rationale: String?
     let timing: String?
     let ED: String?
@@ -193,7 +266,17 @@ struct OtherRecItem: Codable, Identifiable {
     let OPD: String?
     let ICU: String?
 
-    var id: String { item }
+    var id: String { item ?? rationale ?? UUID().uuidString }
+    var displayText: String { item ?? rationale ?? "" }
+
+    /// True if this item has no applicable venue-specific priorities (reference/guidance item)
+    var isReferenceItem: Bool {
+        let edNA = ED == nil || ED == "-"
+        let hospNA = HOSP == nil || HOSP == "-"
+        let opdNA = OPD == nil || OPD == "-"
+        let icuNA = ICU == nil || ICU == "-"
+        return edNA && hospNA && opdNA && icuNA
+    }
 
     func priority(for setting: ClinicalSetting) -> Priority {
         let raw: String?
@@ -252,8 +335,31 @@ struct SelectedItem: Identifiable, Hashable {
     let subsection: String
     let itemText: String
     var customText: String?
+    var customNote: String?  // User-added note/comment for this item
     let priority: Priority
     let orderSentence: String?
+    
+    // Dose options for treatments with multiple dosing choices
+    let doseOptions: [DoseOption]?
+    var selectedDoseIndex: Int?
 
     var displayText: String { customText ?? itemText }
+    var hasCustomNote: Bool { customNote != nil && !(customNote?.isEmpty ?? true) }
+    var hasDoseOptions: Bool { doseOptions != nil && !(doseOptions?.isEmpty ?? true) }
+    
+    /// Returns the currently selected order sentence (from dose picker or default)
+    var currentOrderSentence: String? {
+        if let options = doseOptions, let idx = selectedDoseIndex, idx < options.count {
+            return options[idx].orderSentence
+        }
+        return orderSentence
+    }
+    
+    /// Returns the currently selected dose text for display
+    var selectedDoseText: String? {
+        if let options = doseOptions, let idx = selectedDoseIndex, idx < options.count {
+            return options[idx].text
+        }
+        return nil
+    }
 }

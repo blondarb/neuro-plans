@@ -890,7 +890,7 @@
         "abnormalResults": [
           {
             "finding": "Upbeat-torsional nystagmus with latency",
-            "significance": "Nystagmus with 2-10 second latency, upbeat with torsional component toward the lower ear, lasting less than 60 seconds, and fatiguing on repeat testing is classic for posterior canal BPPV. The affected ear is the one that is downward when nystagmus occurs."
+            "significance": "Nystagmus with 2-10 second latency, upbeat with torsional component toward the lower ear, lasting <60 seconds, and fatiguing on repeat is classic for posterior canal BPPV. Sensitivity ~79% (range 48-88%), specificity ~75% for BPPV. The affected ear is downward when nystagmus occurs."
           },
           {
             "finding": "Downbeat nystagmus without latency or fatigue",
@@ -912,6 +912,23 @@
           {
             "finding": "Normal HIT in acute vertigo",
             "significance": "A negative (normal) HIT in a patient with acute continuous vertigo and nystagmus is concerning for a central cause such as cerebellar or brainstem stroke. This is a key component of the HINTS exam."
+          }
+        ]
+      },
+      {
+        "id": "hints-exam",
+        "title": "HINTS Exam (Head Impulse, Nystagmus, Test of Skew)",
+        "instruction": "Perform the complete HINTS battery in acute vestibular syndrome to distinguish peripheral from central causes.",
+        "technique": "HINTS is only valid in patients with acute vestibular syndrome (continuous vertigo, nystagmus, nausea, gait instability). Three components: (1) Head Impulse Test - normal HIT is concerning for central; (2) Nystagmus - direction-changing nystagmus with gaze is central; (3) Test of Skew - cover-uncover test looking for vertical realignment indicates central. A 'dangerous' HINTS has: normal HIT, direction-changing nystagmus, OR skew deviation.",
+        "normalResult": "Peripheral pattern: abnormal HIT (corrective saccade), unidirectional nystagmus, no skew deviation.",
+        "abnormalResults": [
+          {
+            "finding": "Central HINTS pattern (any one component)",
+            "significance": "Landmark study (Kattah 2009): HINTS sensitivity 96-100%, specificity 96% for stroke in acute vestibular syndrome—more sensitive than MRI in first 48 hours. Central signs: normal HIT, direction-changing nystagmus, or skew deviation. Any single central sign warrants stroke workup."
+          },
+          {
+            "finding": "HINTS-Plus: hearing loss",
+            "significance": "Adding acute unilateral hearing loss to HINTS increases sensitivity for AICA stroke. Labyrinthine artery is an AICA branch; infarction causes combined vestibular and cochlear symptoms."
           }
         ]
       },
@@ -1065,6 +1082,1651 @@
       "elevated-icp-management",
       "guillain-barre-syndrome",
       "acute-myelopathy"
+    ]
+  },
+  {
+    "id": "mental-status-exam",
+    "title": "Mental Status Examination",
+    "category": "core",
+    "description": "Comprehensive bedside assessment of cognitive function including attention, memory, language, executive function, and visuospatial abilities.",
+    "steps": [
+      {
+        "id": "alertness",
+        "title": "Level of Consciousness",
+        "instruction": "Assess the patient's alertness and responsiveness before proceeding with cognitive testing.",
+        "technique": "Observe spontaneous eye opening and responsiveness. Note if the patient is alert, drowsy, lethargic (arousable with verbal stimuli), stuporous (arousable only with noxious stimuli), or comatose (unarousable).",
+        "normalResult": "Alert, awake, and responsive to verbal interaction.",
+        "abnormalResults": [
+          {
+            "finding": "Fluctuating alertness",
+            "significance": "Suggests delirium or toxic-metabolic encephalopathy. Look for underlying infection, medication effects, or metabolic derangement."
+          },
+          {
+            "finding": "Progressive decline in alertness",
+            "significance": "May indicate increasing intracranial pressure, expanding mass lesion, or worsening metabolic state. Requires urgent evaluation."
+          }
+        ]
+      },
+      {
+        "id": "orientation",
+        "title": "Orientation",
+        "instruction": "Test orientation to person, place, time, and situation.",
+        "technique": "Ask: 'What is your name?', 'Where are we right now?', 'What is today's date (day, month, year)?', 'Why are you here?' Document as oriented x4, x3, etc.",
+        "normalResult": "Oriented to person, place, time, and situation (oriented x4).",
+        "abnormalResults": [
+          {
+            "finding": "Disorientation to time only",
+            "significance": "Often the first sign of cognitive impairment. Temporal orientation is most sensitive to early dementia or delirium."
+          },
+          {
+            "finding": "Disorientation to place and person",
+            "significance": "Indicates more severe encephalopathy or advanced dementia. Person orientation is typically preserved until late stages."
+          }
+        ]
+      },
+      {
+        "id": "attention",
+        "title": "Attention and Concentration",
+        "instruction": "Test the ability to focus and maintain attention using digit span or serial subtraction.",
+        "technique": "Digit span forward: Read a series of numbers at 1/second and ask the patient to repeat them (normal ≥5). Serial 7s: Ask patient to subtract 7 from 100 repeatedly (stop after 5 subtractions). Alternative: spell WORLD backwards.",
+        "normalResult": "Digit span forward ≥5 digits. Serial 7s completed with ≤2 errors. WORLD spelled correctly backwards (DLROW).",
+        "abnormalResults": [
+          {
+            "finding": "Impaired attention with preserved memory",
+            "significance": "Highly suggestive of delirium rather than dementia. Delirium is characterized primarily by inattention."
+          },
+          {
+            "finding": "Severely impaired digit span (<3)",
+            "significance": "Indicates severe attentional impairment. Patient may not be able to participate in further cognitive testing reliably."
+          }
+        ]
+      },
+      {
+        "id": "memory-registration",
+        "title": "Memory - Registration",
+        "instruction": "Assess immediate memory by having the patient register three words.",
+        "technique": "Say: 'I will say three words. Please repeat them after me and try to remember them: APPLE, TABLE, PENNY.' Have patient repeat all three words. If unable, repeat up to 3 times until registered.",
+        "normalResult": "Patient repeats all three words correctly on first trial.",
+        "abnormalResults": [
+          {
+            "finding": "Cannot register words after multiple trials",
+            "significance": "Suggests severe attentional impairment or aphasia rather than pure memory deficit. Cannot assess recall if registration fails."
+          }
+        ]
+      },
+      {
+        "id": "memory-recall",
+        "title": "Memory - Delayed Recall",
+        "instruction": "After 3-5 minutes of intervening tasks, test recall of the three words.",
+        "technique": "Ask: 'What were the three words I asked you to remember?' Score 0-3 for spontaneous recall. If impaired, provide category cues ('one was a fruit') then multiple choice if still unable.",
+        "normalResult": "Recalls all three words spontaneously or with minimal cueing.",
+        "abnormalResults": [
+          {
+            "finding": "Poor spontaneous recall, improves with cues",
+            "significance": "Suggests retrieval deficit rather than encoding problem. More consistent with subcortical dementia, depression, or normal aging."
+          },
+          {
+            "finding": "Poor recall even with cues/recognition",
+            "significance": "Indicates true encoding deficit. Characteristic of Alzheimer disease and medial temporal lobe pathology (hippocampal dysfunction)."
+          }
+        ]
+      },
+      {
+        "id": "language-fluency",
+        "title": "Language - Fluency",
+        "instruction": "Assess spontaneous speech output during conversation.",
+        "technique": "Listen to the patient's speech during history-taking. Note phrase length, prosody, effort of production, and presence of paraphasic errors (word substitutions). Ask the patient to describe a picture or their typical day.",
+        "normalResult": "Fluent speech with normal phrase length (>5 words), appropriate prosody, and no paraphasic errors.",
+        "abnormalResults": [
+          {
+            "finding": "Non-fluent speech with short phrases and effortful production",
+            "significance": "Suggests Broca (expressive) aphasia from left frontal lesion. Often associated with right hemiparesis."
+          },
+          {
+            "finding": "Fluent speech with paraphasic errors and empty content",
+            "significance": "Suggests Wernicke (receptive) aphasia from left temporoparietal lesion. Patient may be unaware of errors."
+          }
+        ]
+      },
+      {
+        "id": "language-comprehension",
+        "title": "Language - Comprehension",
+        "instruction": "Test auditory comprehension at multiple levels of complexity.",
+        "technique": "Single step: 'Close your eyes.' Two-step: 'Point to the ceiling, then point to the floor.' Three-step: 'Take this paper in your right hand, fold it in half, and put it on the floor.' Also test yes/no questions: 'Do you put on your shoes before your socks?'",
+        "normalResult": "Follows all commands correctly including three-step commands. Answers yes/no questions appropriately.",
+        "abnormalResults": [
+          {
+            "finding": "Impaired comprehension with fluent speech",
+            "significance": "Classic pattern of Wernicke aphasia. Patient produces fluent but often nonsensical speech and doesn't understand they have a deficit."
+          },
+          {
+            "finding": "Follows one-step but not multi-step commands",
+            "significance": "May indicate working memory impairment, attention deficit, or mild comprehension deficit. Test each component separately."
+          }
+        ]
+      },
+      {
+        "id": "language-naming",
+        "title": "Language - Naming",
+        "instruction": "Test confrontation naming of objects at varying levels of difficulty.",
+        "technique": "Point to common objects (pen, watch, button) and ask 'What is this called?' Include low-frequency words (watch stem = 'crown', pen clip). Note circumlocutory responses ('thing you write with' for pen).",
+        "normalResult": "Correctly names all common objects and most low-frequency items.",
+        "abnormalResults": [
+          {
+            "finding": "Anomia with circumlocution",
+            "significance": "Word-finding difficulty is common in many aphasias and also in Alzheimer disease. Circumlocution (talking around the word) suggests the concept is intact."
+          },
+          {
+            "finding": "Semantic errors (calling a pen a 'pencil')",
+            "significance": "Suggests semantic dementia or left temporal pathology affecting semantic knowledge."
+          }
+        ]
+      },
+      {
+        "id": "language-repetition",
+        "title": "Language - Repetition",
+        "instruction": "Test the ability to repeat words and phrases of increasing complexity.",
+        "technique": "Single words: 'president', 'catastrophe'. Phrases: 'No ifs, ands, or buts.' Sentences: 'The orchestra played and the audience applauded.'",
+        "normalResult": "Accurately repeats all words and phrases without errors.",
+        "abnormalResults": [
+          {
+            "finding": "Impaired repetition with preserved comprehension",
+            "significance": "Suggests conduction aphasia from lesion in the arcuate fasciculus connecting Wernicke and Broca areas."
+          },
+          {
+            "finding": "Preserved repetition with impaired fluency/comprehension",
+            "significance": "Suggests transcortical aphasia (motor or sensory type). The perisylvian language areas are intact but disconnected from other regions."
+          }
+        ]
+      },
+      {
+        "id": "executive-function",
+        "title": "Executive Function",
+        "instruction": "Assess planning, abstraction, and cognitive flexibility.",
+        "technique": "Similarities: 'How are an apple and orange alike?' (both fruit = abstract; both round = concrete). Proverb interpretation: 'What does \"don't cry over spilled milk\" mean?' Luria hand sequences: Demonstrate fist-edge-palm sequence and have patient imitate.",
+        "normalResult": "Abstract similarities (category responses), appropriate proverb interpretation, and smooth performance of motor sequences.",
+        "abnormalResults": [
+          {
+            "finding": "Concrete interpretation of proverbs and similarities",
+            "significance": "Suggests frontal lobe dysfunction. Also seen in lower educational attainment or intellectual disability."
+          },
+          {
+            "finding": "Perseveration on motor sequences",
+            "significance": "Inability to switch between movements suggests frontal lobe pathology, particularly supplementary motor area or prefrontal dysfunction."
+          }
+        ]
+      },
+      {
+        "id": "visuospatial",
+        "title": "Visuospatial Function",
+        "instruction": "Test visuospatial abilities and constructional praxis.",
+        "technique": "Clock drawing: Ask patient to draw a clock face with all numbers and set hands to '10 after 11' (11:10). Intersecting pentagons: Have patient copy two overlapping five-sided figures. Observe for neglect by noting if one side of drawings is incomplete.",
+        "normalResult": "Clock is circular with all 12 numbers correctly placed and hands pointing to 11 and 2. Pentagons are five-sided with clear intersection.",
+        "abnormalResults": [
+          {
+            "finding": "Numbers clustered on one side of clock",
+            "significance": "Suggests hemispatial neglect, typically from right parietal lesion. Patient may also neglect the left side of drawings."
+          },
+          {
+            "finding": "Disorganized clock with poor planning",
+            "significance": "Suggests executive dysfunction (frontal) rather than pure visuospatial deficit. Numbers may be present but poorly organized."
+          },
+          {
+            "finding": "Unable to copy pentagons despite understanding task",
+            "significance": "Constructional apraxia suggests parietal lobe dysfunction. Right parietal lesions cause more severe constructional deficits."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "Always assess attention first. If attention is severely impaired (as in delirium), other cognitive domains cannot be reliably tested.",
+      "The pattern of deficits helps localize: Memory encoding = medial temporal; Executive = frontal; Visuospatial = parietal; Language = dominant (usually left) hemisphere.",
+      "Depression can cause 'pseudodementia' with poor effort and 'I don't know' responses. True dementia patients typically attempt answers even if wrong.",
+      "For bedside screening, the MoCA (Montreal Cognitive Assessment) is more sensitive than the MMSE for detecting mild cognitive impairment."
+    ],
+    "relatedPlans": [
+      "dementia-evaluation",
+      "alzheimers-disease",
+      "delirium"
+    ]
+  },
+  {
+    "id": "fundoscopic-exam",
+    "title": "Fundoscopic Examination",
+    "category": "core",
+    "description": "Direct visualization of the optic disc and retinal vessels to assess for papilledema, optic neuropathy, and vascular pathology.",
+    "steps": [
+      {
+        "id": "preparation",
+        "title": "Preparation and Approach",
+        "instruction": "Dim the room lights and explain the procedure to the patient.",
+        "technique": "Set the ophthalmoscope to 0 diopters for an emmetropic examiner. Use your right eye to examine the patient's right eye, left eye for left eye. Ask the patient to fixate on a distant target. Approach at about 15 degrees temporal to the patient's line of sight.",
+        "normalResult": "Red reflex visible from approximately 30 cm away.",
+        "abnormalResults": [
+          {
+            "finding": "Absent red reflex",
+            "significance": "Suggests media opacity (cataract, vitreous hemorrhage) or retinal detachment. Requires ophthalmology referral."
+          }
+        ]
+      },
+      {
+        "id": "optic-disc",
+        "title": "Optic Disc Evaluation",
+        "instruction": "Identify and carefully examine the optic disc margins, color, and cup-to-disc ratio.",
+        "technique": "Follow a retinal vessel centrally until you reach the disc. Note the disc margins (sharp vs blurred), color (pink/orange normally), cup size relative to disc diameter (normal C:D ratio <0.5), and presence of spontaneous venous pulsations.",
+        "normalResult": "Sharp disc margins, pink-orange disc with small central cup (C:D <0.5). Spontaneous venous pulsations may be visible (indicates ICP <180 mmH2O).",
+        "abnormalResults": [
+          {
+            "finding": "Blurred disc margins with elevation",
+            "significance": "Papilledema indicates elevated intracranial pressure. True papilledema is bilateral. Urgent neuroimaging required; do NOT perform lumbar puncture until mass lesion is excluded."
+          },
+          {
+            "finding": "Pale optic disc",
+            "significance": "Optic atrophy from prior optic nerve damage. Causes include prior optic neuritis, ischemic optic neuropathy, compressive lesion, or end-stage papilledema."
+          },
+          {
+            "finding": "Disc swelling with hemorrhages (unilateral)",
+            "significance": "Suggests anterior ischemic optic neuropathy (AION) if acute vision loss. In patients >50, check ESR/CRP urgently to rule out giant cell arteritis."
+          },
+          {
+            "finding": "Enlarged cup (C:D >0.5)",
+            "significance": "Suggests glaucomatous optic neuropathy. Refer to ophthalmology for intraocular pressure measurement and visual field testing."
+          }
+        ]
+      },
+      {
+        "id": "vessels",
+        "title": "Retinal Vessels",
+        "instruction": "Examine the retinal arteries and veins for abnormalities.",
+        "technique": "Follow vessels from the disc outward in all four quadrants. Compare artery-to-vein diameter ratio (normally 2:3). Look for arteriovenous nicking, copper/silver wiring, hemorrhages, and exudates.",
+        "normalResult": "Normal artery:vein ratio (2:3), smooth vessel walls, no hemorrhages or exudates.",
+        "abnormalResults": [
+          {
+            "finding": "Arteriovenous nicking and copper wiring",
+            "significance": "Signs of chronic hypertensive retinopathy. Indicates need for blood pressure optimization."
+          },
+          {
+            "finding": "Flame hemorrhages and cotton wool spots",
+            "significance": "Acute hypertensive retinopathy or diabetic retinopathy. In the setting of severe hypertension, indicates end-organ damage."
+          },
+          {
+            "finding": "Roth spots (hemorrhages with pale centers)",
+            "significance": "Classic but not specific for infective endocarditis. Also seen in leukemia, severe anemia, and other conditions."
+          },
+          {
+            "finding": "Box-car segmentation of veins",
+            "significance": "Sign of central retinal artery occlusion. Ophthalmologic emergency with very limited treatment window."
+          }
+        ]
+      },
+      {
+        "id": "macula",
+        "title": "Macula Examination",
+        "instruction": "Ask the patient to look directly at the light to visualize the macula.",
+        "technique": "The macula is located 2 disc diameters temporal to the optic disc. It appears darker than surrounding retina with a central light reflex (fovea). Warn the patient this will be bright and brief.",
+        "normalResult": "Macula appears darker than surrounding retina with visible foveal light reflex. No drusen, hemorrhage, or edema.",
+        "abnormalResults": [
+          {
+            "finding": "Cherry red spot at macula",
+            "significance": "Classic sign of central retinal artery occlusion (CRAO). Also seen in storage diseases (Tay-Sachs, Niemann-Pick). CRAO is an emergency."
+          },
+          {
+            "finding": "Drusen (yellow deposits)",
+            "significance": "Sign of age-related macular degeneration. Soft drusen carry higher risk of progression to wet AMD."
+          },
+          {
+            "finding": "Macular hemorrhage or edema",
+            "significance": "May indicate wet AMD, diabetic macular edema, or vascular occlusion. Requires urgent ophthalmology referral."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "Absence of spontaneous venous pulsations (SVP) does not necessarily indicate elevated ICP—20% of normal individuals lack visible SVP. However, presence of SVP reliably indicates ICP <180 mmH2O.",
+      "Papilledema takes hours to days to develop after ICP elevation. Acute ICP elevation (e.g., acute hemorrhage) may not show papilledema initially.",
+      "In suspected giant cell arteritis with acute vision loss, do not wait for biopsy results—start high-dose steroids immediately to prevent fellow eye involvement.",
+      "Dilating drops (tropicamide) greatly improve fundoscopic visualization but should be avoided in patients with narrow angles or when pupillary exam is being monitored (e.g., head trauma, ICU patients)."
+    ],
+    "relatedPlans": [
+      "elevated-icp-management",
+      "idiopathic-intracranial-hypertension",
+      "optic-neuritis",
+      "giant-cell-arteritis"
+    ]
+  },
+  {
+    "id": "speech-language-exam",
+    "title": "Speech and Language Assessment",
+    "category": "core",
+    "description": "Systematic bedside evaluation of language function to classify aphasia type and localize lesions in the dominant hemisphere language network.",
+    "steps": [
+      {
+        "id": "spontaneous-speech",
+        "title": "Spontaneous Speech Assessment",
+        "instruction": "Listen to the patient's conversational speech during history-taking.",
+        "technique": "Note: (1) Fluency - phrase length, prosody, effort; (2) Content - meaningful vs empty words; (3) Paraphasias - phonemic (sound errors: 'spork' for 'fork') or semantic (word errors: 'knife' for 'fork'). Ask open-ended questions like 'Tell me about why you came to the hospital today.'",
+        "normalResult": "Fluent speech with phrase length >5-6 words, normal prosody, meaningful content, no paraphasic errors.",
+        "abnormalResults": [
+          {
+            "finding": "Non-fluent, effortful speech with short phrases",
+            "significance": "Indicates anterior (Broca's) aphasia from left inferior frontal lesion. Patient often has right hemiparesis and is frustrated by their deficit."
+          },
+          {
+            "finding": "Fluent speech with frequent paraphasias and poor content",
+            "significance": "Indicates posterior (Wernicke's) aphasia from left superior temporal lesion. Patient may be unaware of errors (anosognosia for deficit)."
+          },
+          {
+            "finding": "Halting speech searching for words but grammatically correct",
+            "significance": "Anomic aphasia - the mildest and most common aphasia type. Can be seen with many lesion locations or as recovery phase from other aphasias."
+          }
+        ]
+      },
+      {
+        "id": "comprehension",
+        "title": "Auditory Comprehension",
+        "instruction": "Test understanding of spoken language at progressively complex levels.",
+        "technique": "Yes/No questions: 'Are you in a hospital?' 'Do you put your shoes on before your socks?' Single commands: 'Close your eyes.' Multi-step: 'Point to the ceiling, then to the door.' Token test (if available): 'Touch the small blue circle after touching the large red square.'",
+        "normalResult": "Correctly follows complex multi-step commands and answers all yes/no questions appropriately.",
+        "abnormalResults": [
+          {
+            "finding": "Poor comprehension with fluent output",
+            "significance": "Wernicke's aphasia - the most functionally impairing aphasia because patients cannot understand speech and don't recognize their own errors."
+          },
+          {
+            "finding": "Comprehension intact for single commands, fails multi-step",
+            "significance": "May reflect working memory deficit rather than true comprehension impairment. Also seen in transcortical sensory aphasia."
+          }
+        ]
+      },
+      {
+        "id": "repetition",
+        "title": "Repetition",
+        "instruction": "Test the ability to repeat spoken phrases exactly.",
+        "technique": "Start simple: 'cat', 'president'. Progress to: 'No ifs, ands, or buts' (tests function words). Then: 'The spy fled to Greece' (tests content). Note phonemic errors, omissions, or substitutions.",
+        "normalResult": "Accurately repeats all words and phrases including 'No ifs, ands, or buts.'",
+        "abnormalResults": [
+          {
+            "finding": "Cannot repeat despite relatively preserved comprehension and fluency",
+            "significance": "Conduction aphasia from lesion in arcuate fasciculus (white matter tract connecting Wernicke's and Broca's areas). Phonemic paraphasias are common."
+          },
+          {
+            "finding": "Preserved repetition with impaired other language functions",
+            "significance": "Transcortical aphasia (motor or sensory depending on fluency). Perisylvian language core is intact but disconnected from other regions."
+          }
+        ]
+      },
+      {
+        "id": "naming",
+        "title": "Confrontation Naming",
+        "instruction": "Test word retrieval by asking the patient to name objects.",
+        "technique": "Point to objects: watch, pen, button, watch band, pen clip (tests high and low frequency words). Body parts: thumb, knuckle, palm. Note if patient can describe function but not name ('thing you write with').",
+        "normalResult": "Names common and less common objects correctly without delay or circumlocution.",
+        "abnormalResults": [
+          {
+            "finding": "Anomia with semantic paraphasias",
+            "significance": "Semantic errors (calling a 'pen' a 'pencil') suggest breakdown in semantic knowledge, seen in semantic dementia and Alzheimer disease."
+          },
+          {
+            "finding": "Anomia with phonemic paraphasias",
+            "significance": "Sound-based errors ('pem' for 'pen') suggest phonological retrieval deficit, common in Broca's and conduction aphasia."
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "instruction": "Test oral reading and reading comprehension.",
+        "technique": "Oral reading: Have patient read aloud a sentence or paragraph. Include irregular words ('colonel', 'yacht') to test lexical reading. Reading comprehension: Have patient read a command and follow it ('Close your eyes') or match written words to pictures.",
+        "normalResult": "Reads aloud fluently including irregular words. Demonstrates comprehension of written material.",
+        "abnormalResults": [
+          {
+            "finding": "Cannot read aloud but comprehends written text",
+            "significance": "Pure alexia (alexia without agraphia) - a disconnection syndrome from left occipital lesion with splenium involvement."
+          },
+          {
+            "finding": "Regularization errors ('colonel' read as 'colonell')",
+            "significance": "Surface dyslexia - impaired lexical route with preserved phonological reading. Seen in semantic dementia."
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "instruction": "Test spontaneous writing and writing to dictation.",
+        "technique": "Spontaneous: 'Write a sentence about the weather.' Dictation: Dictate words including irregularly spelled words ('yacht', 'choir'). Note spelling errors, letter formation, and content.",
+        "normalResult": "Writes grammatically correct sentences with proper spelling.",
+        "abnormalResults": [
+          {
+            "finding": "Agraphia with preserved reading",
+            "significance": "Pure agraphia is rare and localizes to the dominant superior parietal lobule or second frontal gyrus."
+          },
+          {
+            "finding": "Phonetically plausible spelling errors",
+            "significance": "Surface dysgraphia ('yot' for 'yacht') indicates impaired lexical spelling route, often accompanying semantic deficits."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "The three key parameters for aphasia classification are: Fluency, Comprehension, and Repetition. These determine the eight classic aphasia syndromes.",
+      "Fluent + Poor comprehension + Poor repetition = Wernicke's. Non-fluent + Good comprehension + Poor repetition = Broca's. Poor repetition localizes to the perisylvian region.",
+      "Crossed aphasia (aphasia from right hemisphere lesion in a right-handed person) occurs in <1% of cases and suggests atypical language dominance.",
+      "Global aphasia (non-fluent, poor comprehension, poor repetition) results from large left MCA territory infarction and carries poor prognosis for language recovery.",
+      "In acute stroke, aphasia severity can guide treatment decisions—patients with severe aphasia often have large vessel occlusions amenable to thrombectomy."
+    ],
+    "relatedPlans": [
+      "acute-ischemic-stroke",
+      "primary-progressive-aphasia",
+      "dementia-evaluation"
+    ]
+  },
+  {
+    "id": "peripheral-neuropathy-exam",
+    "title": "Peripheral Neuropathy Examination",
+    "category": "specialized",
+    "description": "Focused examination to characterize the pattern, modalities affected, and severity of peripheral nerve dysfunction.",
+    "steps": [
+      {
+        "id": "inspection",
+        "title": "Inspection for Trophic Changes",
+        "instruction": "Examine the feet and hands for signs of chronic denervation and autonomic dysfunction.",
+        "technique": "Look for muscle wasting (especially foot intrinsics, thenar/hypothenar eminences), skin changes (shiny, hairless, thin skin), nail dystrophy, and foot deformities (pes cavus, hammer toes). Note any ulcers, calluses, or signs of Charcot arthropathy.",
+        "normalResult": "No muscle atrophy, normal skin texture, hair distribution, and nail appearance. No foot deformities or ulcers.",
+        "abnormalResults": [
+          {
+            "finding": "Foot ulcers with intact pulses",
+            "significance": "Neuropathic ulcers occur due to sensory loss and repeated trauma. High risk for infection and amputation. Indicates severe sensory neuropathy."
+          },
+          {
+            "finding": "Pes cavus with hammer toes",
+            "significance": "Classic foot deformity of hereditary sensorimotor neuropathies (CMT). Results from imbalance between intrinsic and extrinsic foot muscles."
+          },
+          {
+            "finding": "Charcot joint (warm, swollen, deformed joint)",
+            "significance": "Neuropathic arthropathy from loss of protective sensation. Most common in diabetes. Requires immobilization to prevent progressive destruction."
+          }
+        ]
+      },
+      {
+        "id": "sensory-light-touch",
+        "title": "Light Touch Sensation",
+        "instruction": "Map the distribution of light touch sensory loss.",
+        "technique": "Using a cotton wisp or 10g monofilament, test sensation starting distally at the toes and moving proximally. Ask 'Can you feel this?' with eyes closed. Map the upper border of sensory loss on the legs. Test hands if leg involvement is significant.",
+        "normalResult": "Intact light touch sensation to toes bilaterally. 10g monofilament detected at all plantar sites.",
+        "abnormalResults": [
+          {
+            "finding": "Length-dependent stocking-glove pattern",
+            "significance": "Classic pattern of distal symmetric polyneuropathy. Most commonly diabetic, also seen with alcohol, B12 deficiency, and many other causes."
+          },
+          {
+            "finding": "Non-length-dependent or patchy sensory loss",
+            "significance": "Suggests mononeuropathy multiplex (vasculitis, diabetes, sarcoid) or sensory neuronopathy (ganglionopathy). Different workup than length-dependent neuropathy."
+          },
+          {
+            "finding": "Monofilament detected at ankle but not toes",
+            "significance": "Mild-moderate neuropathy. The level of sensory loss correlates with fall risk and ulcer risk."
+          }
+        ]
+      },
+      {
+        "id": "sensory-pinprick",
+        "title": "Pinprick and Temperature",
+        "instruction": "Test small fiber (Aδ and C fiber) function with pinprick.",
+        "technique": "Using a disposable pin or broken wooden applicator, test pinprick distally to proximally. Ask 'Is this sharp or dull?' Compare right to left. Map the upper border of loss. Temperature testing with a cold tuning fork can substitute.",
+        "normalResult": "Pinprick perceived as sharp bilaterally and symmetrically to toes.",
+        "abnormalResults": [
+          {
+            "finding": "Loss of pinprick with preserved vibration",
+            "significance": "Small fiber neuropathy. Common causes include diabetes (even prediabetes), amyloidosis, Fabry disease, and idiopathic. Standard EMG/NCS will be normal."
+          },
+          {
+            "finding": "Dissociated sensory loss (pain/temp vs position/vibration)",
+            "significance": "If pinprick/temperature affected more than proprioception, suggests small fiber predominant process. Reverse pattern suggests large fiber disease."
+          }
+        ]
+      },
+      {
+        "id": "sensory-vibration",
+        "title": "Vibration Sense",
+        "instruction": "Test large fiber function using a 128 Hz tuning fork.",
+        "technique": "Strike the tuning fork and place firmly on the bony prominence of the great toe IP joint. Ask 'Can you feel buzzing?' and 'Tell me when it stops.' Compare the duration you feel it to when patient reports cessation. Progress proximally (medial malleolus, tibial tuberosity) if impaired distally.",
+        "normalResult": "Vibration sensed at the great toe for ≥10 seconds or similar duration to the examiner.",
+        "abnormalResults": [
+          {
+            "finding": "Absent vibration at toes, present at ankle",
+            "significance": "Mild-moderate large fiber neuropathy. Common in diabetic polyneuropathy, B12 deficiency, and alcohol-related neuropathy."
+          },
+          {
+            "finding": "Absent vibration to knees or beyond",
+            "significance": "Severe large fiber neuropathy. Also consider dorsal column/posterior column myelopathy if proprioception equally affected without distal weakness."
+          }
+        ]
+      },
+      {
+        "id": "sensory-proprioception",
+        "title": "Proprioception (Joint Position Sense)",
+        "instruction": "Test ability to detect joint movement.",
+        "technique": "Hold the great toe by its sides (not top and bottom) and move it up or down through a small arc. Ask 'Is your toe moving up or down?' with eyes closed. Normal subjects detect 2-3mm movements. Test more proximal joints if impaired distally.",
+        "normalResult": "Correctly identifies direction of small toe movements bilaterally.",
+        "abnormalResults": [
+          {
+            "finding": "Impaired proprioception with preserved pain/temperature",
+            "significance": "Large fiber sensory neuropathy or ganglionopathy. Also consider B12 deficiency, which preferentially affects posterior columns."
+          },
+          {
+            "finding": "Sensory ataxia with positive Romberg",
+            "significance": "Severe proprioceptive loss causing balance impairment that worsens with eyes closed. Falls risk is very high."
+          }
+        ]
+      },
+      {
+        "id": "motor-strength",
+        "title": "Distal Motor Examination",
+        "instruction": "Test strength in muscles innervated by the longest axons.",
+        "technique": "Toe extension (EHL - L5), toe flexion (FDL/FHL - S1), ankle dorsiflexion (TA - L4/5), ankle plantarflexion (gastrocnemius - S1). For hands: finger abduction (ulnar), thumb abduction (median). Grade using MRC scale (0-5).",
+        "normalResult": "Full strength (MRC 5/5) in all tested muscle groups bilaterally.",
+        "abnormalResults": [
+          {
+            "finding": "Weakness of toe extensors > ankle dorsiflexors",
+            "significance": "Distal > proximal weakness pattern typical of length-dependent polyneuropathy. EHL weakness may precede ankle weakness."
+          },
+          {
+            "finding": "Foot drop (ankle dorsiflexion weakness)",
+            "significance": "Can be due to polyneuropathy, peroneal neuropathy, or L5 radiculopathy. Examine peroneal nerve at fibular head; check for low back symptoms."
+          },
+          {
+            "finding": "Hand intrinsic weakness",
+            "significance": "Indicates more severe or upper limb predominant neuropathy. Rule out compressive neuropathies (ulnar at elbow, median at wrist)."
+          }
+        ]
+      },
+      {
+        "id": "reflexes",
+        "title": "Deep Tendon Reflexes",
+        "instruction": "Test ankle reflexes which are most sensitive for neuropathy.",
+        "technique": "With patient seated, dorsiflex the foot slightly and tap the Achilles tendon. If absent, try reinforcement (Jendrassik maneuver - have patient hook fingers and pull while you tap). Also test knee jerks for comparison.",
+        "normalResult": "Ankle jerks 1-2+ bilaterally, equal and symmetric.",
+        "abnormalResults": [
+          {
+            "finding": "Absent ankle jerks with normal knee jerks",
+            "significance": "Classic pattern in polyneuropathy—reflexes are lost distally first. Also lost early in S1 radiculopathy."
+          },
+          {
+            "finding": "Diffusely absent reflexes",
+            "significance": "Consider severe polyneuropathy, Guillain-Barré syndrome (if acute), or CIDP. Also seen in diabetes and alcoholic neuropathy."
+          },
+          {
+            "finding": "Hyperreflexia with sensory loss",
+            "significance": "Mixed picture suggests concurrent myelopathy (B12 deficiency causes both subacute combined degeneration and neuropathy)."
+          }
+        ]
+      },
+      {
+        "id": "gait-romberg",
+        "title": "Gait and Romberg Test",
+        "instruction": "Assess functional impact of neuropathy on ambulation.",
+        "technique": "Observe gait for foot slapping (indicates foot drop), wide base (sensory ataxia), or steppage gait. Perform Romberg test: patient stands with feet together, eyes open then closed. Be ready to catch. Positive if significant sway or fall with eyes closed.",
+        "normalResult": "Normal gait pattern. Romberg negative (stable with eyes closed).",
+        "abnormalResults": [
+          {
+            "finding": "Positive Romberg",
+            "significance": "Indicates proprioceptive loss severe enough to affect balance when visual compensation is removed. High fall risk—needs assistive device and home safety evaluation."
+          },
+          {
+            "finding": "Steppage gait with bilateral foot drop",
+            "significance": "Patient lifts knees high to clear drooping feet. Indicates significant distal weakness. May need ankle-foot orthoses (AFOs)."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "The 10g monofilament is a validated screening tool for diabetic neuropathy and loss of protective sensation—inability to feel it at plantar sites indicates high ulcer risk.",
+      "Burning pain, allodynia, and nocturnal symptoms suggest small fiber involvement. Standard EMG/NCS tests only large fibers—order skin biopsy for intraepidermal nerve fiber density if small fiber neuropathy suspected.",
+      "Diabetes can cause multiple neuropathy patterns: distal symmetric polyneuropathy (most common), autonomic neuropathy, diabetic amyotrophy (proximal), and cranial neuropathies.",
+      "The ankle reflex is served by S1 and is absent in up to 30% of elderly individuals without neuropathy—always use reinforcement before declaring it absent."
+    ],
+    "relatedPlans": [
+      "diabetic-neuropathy",
+      "guillain-barre-syndrome",
+      "cidp",
+      "vitamin-deficiency-neuropathy"
+    ]
+  },
+  {
+    "id": "radiculopathy-exam",
+    "title": "Radiculopathy Examination",
+    "category": "specialized",
+    "description": "Focused assessment for cervical and lumbar nerve root dysfunction including root tension signs and dermatomal/myotomal testing.",
+    "steps": [
+      {
+        "id": "history-localization",
+        "title": "Pain Distribution Assessment",
+        "instruction": "Map the distribution of pain and paresthesias to identify the affected root level.",
+        "technique": "Ask patient to trace the path of their pain/numbness. Key patterns: C5 = lateral shoulder/arm; C6 = lateral forearm to thumb/index; C7 = posterior arm to middle finger; C8 = medial forearm to ring/small fingers; L4 = anterior thigh to medial leg; L5 = lateral leg to dorsum of foot/great toe; S1 = posterior leg to lateral foot.",
+        "normalResult": "No radicular pain pattern.",
+        "abnormalResults": [
+          {
+            "finding": "Dermatomal pain distribution",
+            "significance": "Pain following a specific dermatome strongly suggests nerve root irritation at that level. Correlate with imaging findings."
+          },
+          {
+            "finding": "Non-dermatomal widespread pain",
+            "significance": "May indicate central sensitization, fibromyalgia, or non-organic etiology. Also consider myelopathy or plexopathy."
+          }
+        ]
+      },
+      {
+        "id": "spurling",
+        "title": "Spurling Test (Cervical)",
+        "instruction": "Perform foraminal compression test to reproduce cervical radicular symptoms.",
+        "technique": "Have patient extend and rotate the neck toward the symptomatic side. Apply gentle axial compression to the head. Positive if this reproduces the patient's radicular arm pain (not just neck pain).",
+        "normalResult": "No radicular pain reproduction with cervical extension/rotation and compression.",
+        "abnormalResults": [
+          {
+            "finding": "Positive Spurling (reproduces arm pain)",
+            "significance": "2025 meta-analysis: sensitivity 53%, specificity 92%. Low sensitivity means negative test doesn't rule out radiculopathy, but positive test strongly supports diagnosis. Mechanism: foraminal narrowing compresses the exiting nerve root."
+          },
+          {
+            "finding": "Neck pain only",
+            "significance": "Not a positive test—must reproduce radicular arm symptoms to be considered positive. Neck pain alone may indicate facet arthropathy or muscular strain."
+          }
+        ]
+      },
+      {
+        "id": "shoulder-abduction",
+        "title": "Shoulder Abduction Relief Sign",
+        "instruction": "Test for relief of symptoms with arm positioning.",
+        "technique": "Have the patient place their hand on top of their head (shoulder abduction). Ask if this relieves or worsens the arm pain/paresthesias.",
+        "normalResult": "No change in symptoms with arm position.",
+        "abnormalResults": [
+          {
+            "finding": "Pain relief with shoulder abduction",
+            "significance": "Suggests cervical radiculopathy—this position reduces tension on the nerve root. Patients may spontaneously adopt this position."
+          },
+          {
+            "finding": "Pain worsens with abduction",
+            "significance": "Consider thoracic outlet syndrome or brachial plexopathy rather than cervical radiculopathy."
+          }
+        ]
+      },
+      {
+        "id": "straight-leg-raise",
+        "title": "Straight Leg Raise (Lasègue Test)",
+        "instruction": "Perform SLR to detect lower lumbar (L5-S1) nerve root tension.",
+        "technique": "Patient supine and relaxed. Keep knee fully extended and slowly raise the leg by the heel. Positive if this reproduces the patient's radicular leg pain (sciatica) at 30-70 degrees. Note the angle at which pain begins. Dorsiflexing the ankle at the point of pain (Braggard sign) should worsen symptoms.",
+        "normalResult": "Leg raises to 70-90 degrees without reproducing radicular symptoms. May feel hamstring tightness (not a positive test).",
+        "abnormalResults": [
+          {
+            "finding": "Positive SLR at 30-70 degrees",
+            "significance": "Cochrane meta-analysis: sensitivity 92% (pooled), specificity 28% for disc herniation. High sensitivity but low specificity—useful to rule out (negative test makes disc herniation unlikely) but many false positives. Pain must radiate below the knee."
+          },
+          {
+            "finding": "Positive crossed SLR (contralateral leg raise causes ipsilateral pain)",
+            "significance": "Cochrane meta-analysis: sensitivity 28%, specificity 90%. Low sensitivity but high specificity—a positive crossed SLR strongly supports disc herniation. Suggests large central or paracentral disc."
+          },
+          {
+            "finding": "Back pain only without leg radiation",
+            "significance": "Not a positive test for radiculopathy. May indicate mechanical low back pain or discogenic pain."
+          }
+        ]
+      },
+      {
+        "id": "femoral-stretch",
+        "title": "Femoral Nerve Stretch Test",
+        "instruction": "Test for upper lumbar (L2-L4) nerve root tension.",
+        "technique": "Patient prone or in lateral position with affected side up. Flex the knee and extend the hip by lifting the thigh off the table. Positive if this reproduces anterior thigh pain (not just quadriceps stretch).",
+        "normalResult": "Hip extension with knee flexion tolerated without reproduction of radicular symptoms.",
+        "abnormalResults": [
+          {
+            "finding": "Positive femoral stretch (anterior thigh pain)",
+            "significance": "Suggests L2, L3, or L4 radiculopathy. Much less common than lower lumbar radiculopathy."
+          }
+        ]
+      },
+      {
+        "id": "myotome-cervical",
+        "title": "Cervical Myotome Testing",
+        "instruction": "Test strength in muscles corresponding to each cervical root.",
+        "technique": "C5: Shoulder abduction (deltoid), elbow flexion (biceps). C6: Wrist extension (ECRL/B), elbow flexion (brachioradialis). C7: Elbow extension (triceps), wrist flexion. C8: Finger flexion (FDP), finger abduction (interossei). T1: Finger abduction (interossei).",
+        "normalResult": "Full strength (5/5) in all cervical myotomes bilaterally.",
+        "abnormalResults": [
+          {
+            "finding": "Weakness in single myotome pattern",
+            "significance": "Isolated weakness in a myotomal distribution localizes the radiculopathy level. Example: triceps weakness (C7), wrist drop (C7), deltoid weakness (C5)."
+          },
+          {
+            "finding": "Multi-level weakness",
+            "significance": "Consider multi-level disease, brachial plexopathy, mononeuropathy multiplex, or motor neuron disease. Single root lesions typically produce limited weakness."
+          }
+        ]
+      },
+      {
+        "id": "myotome-lumbar",
+        "title": "Lumbar Myotome Testing",
+        "instruction": "Test strength in muscles corresponding to each lumbar root.",
+        "technique": "L2: Hip flexion (iliopsoas). L3: Knee extension (quadriceps). L4: Knee extension, ankle dorsiflexion (tibialis anterior). L5: Great toe extension (EHL), ankle dorsiflexion, hip abduction. S1: Ankle plantarflexion (gastrocnemius), ankle eversion, hip extension.",
+        "normalResult": "Full strength (5/5) in all lumbar myotomes bilaterally.",
+        "abnormalResults": [
+          {
+            "finding": "Foot drop (L5)",
+            "significance": "Weakness of ankle dorsiflexion and great toe extension suggests L5 radiculopathy. Also consider peroneal neuropathy—check peroneal nerve at fibular head and hip abduction (L5 myotome, not peroneal)."
+          },
+          {
+            "finding": "Weak plantarflexion (S1)",
+            "significance": "S1 radiculopathy affects gastrocnemius. Patient may have difficulty with single-leg heel raise. Also check ankle jerk (S1)."
+          }
+        ]
+      },
+      {
+        "id": "reflexes-radicular",
+        "title": "Root-Specific Reflexes",
+        "instruction": "Test reflexes that localize to specific nerve roots.",
+        "technique": "Biceps (C5-C6), Brachioradialis (C5-C6), Triceps (C7), Patellar (L3-L4), Achilles (S1). Compare side to side. Use reinforcement if initially absent.",
+        "normalResult": "Symmetric reflexes bilaterally, graded 1-2+.",
+        "abnormalResults": [
+          {
+            "finding": "Unilaterally diminished reflex",
+            "significance": "Reflex diminution localizes the root level: depressed biceps = C5-6, depressed triceps = C7, depressed patellar = L3-4, depressed ankle = S1."
+          },
+          {
+            "finding": "Hyperreflexia below the level of a cervical lesion",
+            "significance": "Suggests cervical myelopathy in addition to radiculopathy (myeloradiculopathy). Check for Hoffmann sign and gait abnormality."
+          }
+        ]
+      },
+      {
+        "id": "sensory-dermatomal",
+        "title": "Dermatomal Sensory Testing",
+        "instruction": "Map sensory changes to confirm root level.",
+        "technique": "Test light touch and pinprick in dermatomal distributions. Key areas: C6 = thumb; C7 = middle finger; C8 = small finger; L4 = medial leg; L5 = dorsum of foot/great toe; S1 = lateral foot. Compare to the contralateral side.",
+        "normalResult": "Symmetric sensation in all dermatomes.",
+        "abnormalResults": [
+          {
+            "finding": "Decreased sensation in single dermatome",
+            "significance": "Sensory changes often less prominent than motor or reflex findings in radiculopathy. When present, helps confirm the level."
+          },
+          {
+            "finding": "Cape distribution sensory loss",
+            "significance": "Suggests syringomyelia rather than radiculopathy. Look for suspended sensory level and dissociated sensory loss."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "The most common cervical radiculopathy is C7, followed by C6. The most common lumbar radiculopathy is L5, followed by S1.",
+      "Red flags requiring urgent imaging: progressive motor weakness, bilateral symptoms, bowel/bladder dysfunction, saddle anesthesia (suggest cauda equina), or myelopathic signs.",
+      "Hip abduction tests L5 but NOT the peroneal nerve—use this to differentiate L5 radiculopathy from peroneal neuropathy in patients with foot drop.",
+      "Ankle reflex can be absent bilaterally in elderly patients without pathology. Unilateral loss or asymmetry is more significant."
+    ],
+    "relatedPlans": [
+      "cervical-radiculopathy",
+      "lumbar-radiculopathy",
+      "cauda-equina-syndrome",
+      "cervical-myelopathy"
+    ]
+  },
+  {
+    "id": "myelopathy-exam",
+    "title": "Myelopathy Examination",
+    "category": "specialized",
+    "description": "Systematic assessment for spinal cord dysfunction including upper motor neuron signs, sensory level determination, and gait evaluation.",
+    "steps": [
+      {
+        "id": "motor-umn",
+        "title": "Upper Motor Neuron Signs",
+        "instruction": "Test for signs of corticospinal tract dysfunction.",
+        "technique": "Check for spasticity (velocity-dependent increase in tone with passive movement), weakness in UMN pattern (extensors weaker than flexors in arms, flexors weaker than extensors in legs), hyperreflexia, and clonus (sustained rhythmic contractions with quick dorsiflexion of ankle or wrist).",
+        "normalResult": "Normal tone, no clonus, reflexes 1-2+ and symmetric.",
+        "abnormalResults": [
+          {
+            "finding": "Spasticity with hyperreflexia and clonus",
+            "significance": "Upper motor neuron syndrome indicating corticospinal tract involvement. Localizes the lesion above the anterior horn cells at that level."
+          },
+          {
+            "finding": "UMN signs in legs, LMN signs in arms",
+            "significance": "Suggests cervical myelopathy with combined cord compression and root involvement. Classic pattern in cervical spondylotic myelopathy."
+          }
+        ]
+      },
+      {
+        "id": "hoffmann",
+        "title": "Hoffmann Sign",
+        "instruction": "Test for upper motor neuron dysfunction in the cervical cord.",
+        "technique": "Hold the patient's relaxed middle finger and quickly flick/snap the fingernail downward. Positive if this causes involuntary flexion of the thumb and index finger.",
+        "normalResult": "No thumb or finger flexion with fingernail flicking.",
+        "abnormalResults": [
+          {
+            "finding": "Positive Hoffmann sign (unilateral or bilateral)",
+            "significance": "Indicates cervical cord dysfunction when present in appropriate clinical context. Can be normal in hyperreflexic individuals—correlate with other findings."
+          },
+          {
+            "finding": "Asymmetric Hoffmann signs",
+            "significance": "Unilateral positivity may indicate lateralized cord compression. More significant than bilateral findings."
+          }
+        ]
+      },
+      {
+        "id": "babinski",
+        "title": "Plantar Response (Babinski Sign)",
+        "instruction": "Test for corticospinal tract dysfunction.",
+        "technique": "Stroke the lateral plantar surface from heel toward the small toe, then curve medially across the metatarsal heads. Use a firm but not painful stimulus (tongue depressor, key, reflex hammer handle). Watch the great toe response.",
+        "normalResult": "Plantar flexion of the great toe (downgoing) or no response.",
+        "abnormalResults": [
+          {
+            "finding": "Upgoing great toe with fanning of other toes",
+            "significance": "Babinski sign positive - indicates corticospinal tract dysfunction above the L5-S1 level. One of the most reliable signs of UMN lesion."
+          },
+          {
+            "finding": "Withdrawal response",
+            "significance": "Must distinguish true Babinski (dorsiflexion of great toe at MTP joint) from withdrawal (hip/knee flexion, ankle dorsiflexion). True Babinski requires isolated great toe extension."
+          }
+        ]
+      },
+      {
+        "id": "sensory-level",
+        "title": "Sensory Level Determination",
+        "instruction": "Identify the level of spinal cord dysfunction by mapping sensory loss.",
+        "technique": "Test pinprick starting from the toes and moving proximally. Ask 'Does this feel sharp?' Compare each level to above. Key landmarks: T4 = nipple, T10 = umbilicus, L1 = inguinal ligament. The sensory level is typically 1-2 segments below the anatomic lesion.",
+        "normalResult": "Symmetric sensation throughout with no sensory level.",
+        "abnormalResults": [
+          {
+            "finding": "Clear horizontal sensory level",
+            "significance": "Strongly suggests spinal cord lesion. The pathologic level is typically 1-2 segments above the sensory level due to lamination of the spinothalamic tract."
+          },
+          {
+            "finding": "Suspended sensory level (cape distribution)",
+            "significance": "Sensory loss over shoulders/arms with normal sensation above and below suggests central cord pathology such as syringomyelia."
+          }
+        ]
+      },
+      {
+        "id": "posterior-columns",
+        "title": "Posterior Column Function",
+        "instruction": "Test vibration and proprioception which travel in the dorsal columns.",
+        "technique": "Test vibration with 128 Hz tuning fork at great toe, medial malleolus, and progressively proximal. Test proprioception by moving the great toe up or down with eyes closed. Also test Romberg sign.",
+        "normalResult": "Intact vibration to toes, accurate proprioception, Romberg negative.",
+        "abnormalResults": [
+          {
+            "finding": "Loss of vibration/proprioception with preserved pain/temperature",
+            "significance": "Posterior column dysfunction. Consider B12 deficiency, tabes dorsalis, or posterior spinal artery syndrome if acute."
+          },
+          {
+            "finding": "Positive Romberg with sensory ataxia",
+            "significance": "Severe proprioceptive loss. The classic 'sensory ataxia' gait is wide-based with high-stepping and looking at the feet."
+          }
+        ]
+      },
+      {
+        "id": "brown-sequard",
+        "title": "Brown-Séquard Pattern Assessment",
+        "instruction": "Look for the pattern of hemisection of the cord.",
+        "technique": "Compare motor function, proprioception/vibration, and pain/temperature between sides. Brown-Séquard: ipsilateral weakness and proprioceptive loss with contralateral pain/temperature loss below the lesion.",
+        "normalResult": "Symmetric motor and sensory function.",
+        "abnormalResults": [
+          {
+            "finding": "Classic Brown-Séquard syndrome",
+            "significance": "Cord hemisection, often from trauma, tumor, or MS. Relatively good prognosis—ambulatory function often preserved."
+          },
+          {
+            "finding": "Partial Brown-Séquard",
+            "significance": "Incomplete hemisection more common than complete syndrome. Still localizes to a lateral cord lesion."
+          }
+        ]
+      },
+      {
+        "id": "gait-myelopathic",
+        "title": "Myelopathic Gait",
+        "instruction": "Assess gait for signs of spastic paraparesis.",
+        "technique": "Observe the patient walking. Look for stiff-legged gait, circumduction (swinging leg outward), scissoring (legs crossing), and difficulty with initiation. Test tandem gait (heel-to-toe walking).",
+        "normalResult": "Smooth gait with normal arm swing, able to tandem walk.",
+        "abnormalResults": [
+          {
+            "finding": "Spastic gait with scissoring",
+            "significance": "Classic myelopathic gait due to bilateral corticospinal tract involvement. Often early sign of cervical myelopathy."
+          },
+          {
+            "finding": "Spastic-ataxic gait",
+            "significance": "Combination of corticospinal (stiffness) and posterior column (ataxia) dysfunction. Seen in B12 deficiency, MS, and compressive myelopathy."
+          }
+        ]
+      },
+      {
+        "id": "bladder-function",
+        "title": "Bladder Function Assessment",
+        "instruction": "Assess for neurogenic bladder which indicates severe cord involvement.",
+        "technique": "Ask about urinary urgency, frequency, hesitancy, incontinence, and retention. Perform post-void residual if available. Check perineal sensation (S2-S4) and anal tone/voluntary contraction.",
+        "normalResult": "Normal urinary control, intact perineal sensation, normal rectal tone and voluntary squeeze.",
+        "abnormalResults": [
+          {
+            "finding": "Urinary retention with overflow incontinence",
+            "significance": "Indicates severe myelopathy or cauda equina syndrome. Constitutes a neurological emergency requiring urgent imaging and often surgical decompression."
+          },
+          {
+            "finding": "Urinary urgency and frequency",
+            "significance": "Common in cervical myelopathy. Represents loss of descending inhibition on the micturition reflex (upper motor neuron bladder)."
+          },
+          {
+            "finding": "Absent anal wink or bulbocavernosus reflex",
+            "significance": "Suggests sacral cord or conus involvement. In trauma, absence beyond 24 hours indicates complete injury with poor prognosis."
+          }
+        ]
+      },
+      {
+        "id": "lhermitte-sign",
+        "title": "Lhermitte Sign",
+        "instruction": "Test for electric shock sensation with neck flexion indicating cervical cord pathology.",
+        "technique": "Ask patient if they experience an electric shock or tingling sensation down the spine or into the limbs when bending the neck forward. If history is unclear, have patient flex chin to chest while you observe for symptoms.",
+        "normalResult": "No electric shock sensation with neck flexion.",
+        "abnormalResults": [
+          {
+            "finding": "Positive Lhermitte sign (electric shock down spine/limbs)",
+            "significance": "Sensitivity ~16%, specificity 97% for myelopathy. Low sensitivity means absence doesn't rule out cord disease, but presence strongly suggests cervical cord pathology. Causes: MS (9-41% of patients), cervical spondylotic myelopathy, B12 deficiency, radiation myelopathy."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "Cervical myelopathy is a clinical diagnosis—MRI may show cord compression but clinical correlation is essential. Asymptomatic cord compression is common in the elderly.",
+      "Lhermitte sign (electric shock down the spine with neck flexion) suggests posterior column involvement in the cervical cord. Classic in MS but also seen in B12 deficiency and cervical spondylosis.",
+      "Acute myelopathy with back pain and sensory level is a neurological emergency—obtain urgent MRI to evaluate for cord compression, transverse myelitis, or spinal cord infarction.",
+      "Hand clumsiness and difficulty with fine motor tasks (buttoning, writing) is often an early sign of cervical myelopathy before significant weakness develops."
+    ],
+    "relatedPlans": [
+      "cervical-myelopathy",
+      "acute-myelopathy",
+      "transverse-myelitis",
+      "b12-deficiency"
+    ]
+  },
+  {
+    "id": "movement-disorder-exam",
+    "title": "Movement Disorder Examination",
+    "category": "specialized",
+    "description": "Systematic assessment of tremor, bradykinesia, rigidity, and abnormal movements to characterize movement disorders.",
+    "steps": [
+      {
+        "id": "observation",
+        "title": "Observation at Rest",
+        "instruction": "Observe the patient at rest for involuntary movements before any active testing.",
+        "technique": "Have the patient sit quietly with hands resting in their lap. Observe for 30-60 seconds for tremor, chorea, dystonic posturing, myoclonus, or tics. Note the distribution, frequency, and amplitude of any movements.",
+        "normalResult": "No involuntary movements at rest. Hands still and relaxed.",
+        "abnormalResults": [
+          {
+            "finding": "Rest tremor in hands",
+            "significance": "Pill-rolling rest tremor at 4-6 Hz is highly characteristic of Parkinson disease. Asymmetric onset is typical. Tremor decreases with movement."
+          },
+          {
+            "finding": "Choreiform movements",
+            "significance": "Random, flowing, dance-like involuntary movements suggest Huntington disease, Sydenham chorea, or medication-induced (tardive) chorea."
+          },
+          {
+            "finding": "Dystonic posturing",
+            "significance": "Sustained abnormal postures (e.g., torticollis, writer's cramp) indicate dystonia. Note if task-specific or present at rest."
+          }
+        ]
+      },
+      {
+        "id": "tremor-characterization",
+        "title": "Tremor Characterization",
+        "instruction": "Determine if tremor is present at rest, with posture, or with action.",
+        "technique": "Rest: hands in lap. Postural: arms outstretched with fingers spread. Kinetic: finger-nose testing. Intention: observe for worsening as finger approaches target. Note frequency (count cycles per second) and amplitude.",
+        "normalResult": "No tremor, or minimal physiologic tremor with posture (8-12 Hz, low amplitude).",
+        "abnormalResults": [
+          {
+            "finding": "Postural tremor 6-12 Hz",
+            "significance": "Essential tremor is the most common movement disorder. Usually symmetric, often improves with alcohol, may have family history."
+          },
+          {
+            "finding": "Intention tremor",
+            "significance": "Worsening tremor as the finger approaches target indicates cerebellar dysfunction. Look for other cerebellar signs (dysarthria, nystagmus, gait ataxia)."
+          },
+          {
+            "finding": "Wing-beating tremor",
+            "significance": "Large amplitude, low frequency proximal tremor with arms outstretched suggests Wilson disease. Check for Kayser-Fleischer rings and liver disease."
+          }
+        ]
+      },
+      {
+        "id": "bradykinesia",
+        "title": "Bradykinesia Assessment",
+        "instruction": "Test for slowness and decrement in repetitive movements.",
+        "technique": "Finger tapping: Have patient tap index finger and thumb together as fast and big as possible, 10-15 times. Observe for amplitude, speed, and decrement. Also test hand opening/closing and foot tapping. Test each side separately.",
+        "normalResult": "Rapid, full-amplitude repetitive movements without decrement or hesitation.",
+        "abnormalResults": [
+          {
+            "finding": "Progressive decrement in amplitude and speed",
+            "significance": "Bradykinesia with decrement is the defining feature of Parkinson disease. Movement starts reasonably then progressively becomes smaller and slower."
+          },
+          {
+            "finding": "Slow without decrement",
+            "significance": "Slowness without the characteristic decrement may indicate drug-induced parkinsonism, PSP, or other atypical parkinsonism."
+          }
+        ]
+      },
+      {
+        "id": "rigidity",
+        "title": "Rigidity Assessment",
+        "instruction": "Test for increased resistance to passive movement.",
+        "technique": "With patient relaxed, passively move the wrist and elbow through full range of flexion/extension. Feel for resistance that is: uniform throughout range (lead-pipe) or ratchety (cogwheel—lead-pipe plus tremor). Use activation maneuver: have patient clench opposite fist while you test to bring out subtle rigidity.",
+        "normalResult": "No resistance to passive movement. Joints move freely.",
+        "abnormalResults": [
+          {
+            "finding": "Cogwheel rigidity",
+            "significance": "Lead-pipe rigidity with superimposed tremor creates a ratchety feel. Characteristic of Parkinson disease and drug-induced parkinsonism."
+          },
+          {
+            "finding": "Rigidity brought out only with activation",
+            "significance": "Subtle early parkinsonism. The contralateral activation maneuver increases sensitivity for detecting mild rigidity."
+          },
+          {
+            "finding": "Velocity-dependent increase in tone",
+            "significance": "This is spasticity, not rigidity. Suggests upper motor neuron lesion rather than extrapyramidal disorder."
+          }
+        ]
+      },
+      {
+        "id": "postural-stability",
+        "title": "Postural Stability (Pull Test)",
+        "instruction": "Assess postural reflexes to detect balance impairment.",
+        "technique": "Stand behind the patient and explain you will pull them backward. Ask them to catch themselves. Give a firm, quick pull on the shoulders. Be ready to catch them. Normal: catches self in 1-2 steps. Abnormal: retropulsion (multiple steps back) or would fall without catching.",
+        "normalResult": "Patient recovers balance with 1-2 steps.",
+        "abnormalResults": [
+          {
+            "finding": "Retropulsion (multiple steps or would fall)",
+            "significance": "Postural instability indicates later-stage Parkinson disease (H&Y stage 3+) and significantly increases fall risk. Also prominent in PSP."
+          },
+          {
+            "finding": "Falls like a log without attempting to catch self",
+            "significance": "Absent postural reflexes suggest progressive supranuclear palsy (PSP). These patients often have frequent backward falls with injuries."
+          }
+        ]
+      },
+      {
+        "id": "gait-pd",
+        "title": "Parkinsonian Gait Assessment",
+        "instruction": "Observe gait for features of parkinsonism.",
+        "technique": "Watch patient walk at least 20 feet, turn, and return. Note: start hesitation, step length, arm swing, trunk posture, turning (en bloc vs normal), freezing. Ask patient to walk quickly and observe if gait improves or worsens.",
+        "normalResult": "Normal stride length, symmetric arm swing, upright posture, smooth turning.",
+        "abnormalResults": [
+          {
+            "finding": "Shuffling gait with reduced arm swing",
+            "significance": "Classic parkinsonian gait: short, shuffling steps, stooped posture, reduced arm swing (often asymmetric early in disease)."
+          },
+          {
+            "finding": "Festination",
+            "significance": "Progressively faster, shorter steps as if chasing center of gravity forward. Patient may have difficulty stopping. Falls risk."
+          },
+          {
+            "finding": "Freezing of gait",
+            "significance": "Sudden inability to initiate or continue walking, especially at doorways or when turning. Later-stage feature, often medication-resistant."
+          }
+        ]
+      },
+      {
+        "id": "facial-expression",
+        "title": "Facial Expression (Hypomimia)",
+        "instruction": "Assess facial expression and blinking.",
+        "technique": "Observe the patient's face during conversation. Note the range of facial expression, presence of spontaneous smiling, and blink rate. Ask patient to smile and note if spontaneous facial expression returns.",
+        "normalResult": "Animated facial expressions, normal blink rate (15-20/min).",
+        "abnormalResults": [
+          {
+            "finding": "Masked facies with reduced blinking",
+            "significance": "Hypomimia ('masked face') is a classic sign of Parkinson disease. Reduced blink rate is common. Can be mistaken for depression."
+          },
+          {
+            "finding": "Surprised facies with infrequent blinking",
+            "significance": "Characteristic of progressive supranuclear palsy. Frontalis muscle overactivity combined with reduced blinking creates a staring appearance."
+          }
+        ]
+      },
+      {
+        "id": "dystonia-exam",
+        "title": "Dystonia Assessment",
+        "instruction": "Evaluate for sustained abnormal postures and task-specific movements.",
+        "technique": "Observe for abnormal posturing at rest. Test for task-specific dystonia: have patient write (writer's cramp), play instrument if musician, or perform their symptomatic task. Note if sensory tricks (geste antagoniste) relieve symptoms—e.g., touching chin relieves cervical dystonia.",
+        "normalResult": "Normal posture, no involuntary muscle contractions with tasks.",
+        "abnormalResults": [
+          {
+            "finding": "Cervical dystonia (torticollis)",
+            "significance": "Head turning or tilting due to involuntary neck muscle contraction. Most common adult-onset focal dystonia. Treat with botulinum toxin."
+          },
+          {
+            "finding": "Task-specific dystonia",
+            "significance": "Abnormal posturing only during specific tasks (writing, playing instrument). Occupational significance. May respond to retraining and botulinum toxin."
+          },
+          {
+            "finding": "Sensory trick present (geste antagoniste)",
+            "significance": "Light touch to affected area relieves dystonia—highly specific for dystonia. Not present in other movement disorders."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "The cardinal features of parkinsonism are TRAP: Tremor (rest), Rigidity, Akinesia/bradykinesia, Postural instability. At least 2 are required for diagnosis, with bradykinesia being essential.",
+      "Asymmetric onset and excellent levodopa response favor idiopathic Parkinson disease. Symmetric onset, early falls, and poor levodopa response suggest atypical parkinsonism.",
+      "Drug-induced parkinsonism (from dopamine blockers) is the second most common cause of parkinsonism. It is usually symmetric and reversible.",
+      "Essential tremor is distinguished from Parkinson disease by: postural/kinetic > rest tremor, usually symmetric, often improves with alcohol, no bradykinesia/rigidity, and positive family history in 50%."
+    ],
+    "relatedPlans": [
+      "parkinsons-disease",
+      "essential-tremor",
+      "dystonia",
+      "huntingtons-disease"
+    ]
+  },
+  {
+    "id": "myasthenia-exam",
+    "title": "Myasthenia Gravis Examination",
+    "category": "specialized",
+    "description": "Focused assessment for fatigable weakness characteristic of neuromuscular junction disorders.",
+    "steps": [
+      {
+        "id": "ptosis-assessment",
+        "title": "Ptosis Assessment",
+        "instruction": "Evaluate for eyelid drooping and fatigability.",
+        "technique": "Observe for asymmetric ptosis at rest. Measure palpebral fissure width (margin-reflex distance). Perform sustained upgaze test: have patient look up at your finger for 60-120 seconds. Observe for increasing ptosis. Positive if ptosis worsens or develops with sustained upgaze.",
+        "normalResult": "Symmetric eyelids, no ptosis. Can maintain upgaze for 2 minutes without ptosis developing.",
+        "abnormalResults": [
+          {
+            "finding": "Fatigable ptosis",
+            "significance": "Ptosis that worsens with sustained upgaze is highly suggestive of myasthenia gravis. Unilateral or asymmetric ptosis is common."
+          },
+          {
+            "finding": "Cogan lid twitch",
+            "significance": "Brief upward overshoot of the lid when looking from down to straight ahead. Specific for myasthenia gravis."
+          },
+          {
+            "finding": "Enhanced ptosis",
+            "significance": "When ptotic lid is manually elevated, the other lid droops more. Indicates bilateral involvement with compensation."
+          }
+        ]
+      },
+      {
+        "id": "ice-pack-test",
+        "title": "Ice Pack Test",
+        "instruction": "Perform bedside test to support MG diagnosis.",
+        "technique": "If ptosis is present, apply an ice pack or cold compress to the closed eyelids for 2 minutes. Remeasure ptosis immediately after removal. Improvement of ≥2mm is positive.",
+        "normalResult": "No change in ptosis with ice application.",
+        "abnormalResults": [
+          {
+            "finding": "Improvement of ptosis ≥2mm after ice",
+            "significance": "Systematic review (2023): sensitivity 76-92%, specificity 79-98% for MG with ptosis. Cold improves neuromuscular transmission by slowing acetylcholinesterase activity. Most useful when ptosis is present; less validated for diplopia alone."
+          }
+        ]
+      },
+      {
+        "id": "diplopia-exam",
+        "title": "Diplopia and Eye Movement Assessment",
+        "instruction": "Evaluate for fatigable ophthalmoparesis.",
+        "technique": "Test extraocular movements in all directions of gaze. Have patient perform sustained lateral gaze for 30-60 seconds. Look for nystagmus that develops with sustained gaze (gaze-evoked nystagmus) or worsening diplopia. Note any pattern of muscle weakness.",
+        "normalResult": "Full extraocular movements in all directions. No diplopia with sustained gaze.",
+        "abnormalResults": [
+          {
+            "finding": "Fatigable diplopia with sustained gaze",
+            "significance": "Classic for myasthenia gravis. Any pattern of eye muscle weakness can occur, often mimicking cranial nerve palsies."
+          },
+          {
+            "finding": "Pseudo-internuclear ophthalmoplegia",
+            "significance": "Adduction weakness resembling INO but due to medial rectus fatigue in MG. Pupil sparing distinguishes from true INO."
+          }
+        ]
+      },
+      {
+        "id": "facial-weakness",
+        "title": "Facial and Bulbar Weakness",
+        "instruction": "Assess facial strength and fatigability.",
+        "technique": "Have patient squeeze eyes shut tightly against your attempt to open them. Observe for 'peek sign' (sclera becoming visible). Test orbicularis oris: have patient puff out cheeks against your compression. Note any facial weakness pattern.",
+        "normalResult": "Strong eye closure, cannot pry open lids. Strong cheek puff.",
+        "abnormalResults": [
+          {
+            "finding": "Peek sign",
+            "significance": "Sclera becomes visible despite patient's attempt to keep eyes closed. Indicates orbicularis oculi weakness. Relatively specific for MG."
+          },
+          {
+            "finding": "Myasthenic snarl",
+            "significance": "Attempted smile produces a snarling appearance due to lateral lip weakness with relative sparing of medial smile. Characteristic of MG."
+          }
+        ]
+      },
+      {
+        "id": "speech-swallow",
+        "title": "Speech and Swallowing Assessment",
+        "instruction": "Evaluate for bulbar symptoms and fatigability.",
+        "technique": "Have patient count to 50 or read aloud for 60 seconds. Listen for hypernasality, dysarthria that worsens (fatigable), or voice that fades. Ask about dysphagia, choking, nasal regurgitation.",
+        "normalResult": "Clear speech that maintains quality throughout counting. No swallowing complaints.",
+        "abnormalResults": [
+          {
+            "finding": "Fatigable dysarthria",
+            "significance": "Speech becomes increasingly nasal or slurred with prolonged talking. Indicates bulbar involvement—consider aspiration risk."
+          },
+          {
+            "finding": "Nasal speech and nasal regurgitation",
+            "significance": "Palatal weakness allows nasal escape of air (hypernasality) and liquids (regurgitation). Significant bulbar involvement with aspiration risk."
+          }
+        ]
+      },
+      {
+        "id": "neck-weakness",
+        "title": "Neck Flexion Strength",
+        "instruction": "Test neck flexor strength and fatigability.",
+        "technique": "Have patient lie supine and lift head off the pillow against gravity. Time how long they can maintain this position (normally >60 seconds). Then test against resistance: place hand on forehead and have patient flex neck against it.",
+        "normalResult": "Holds head up >60 seconds without difficulty. Strong neck flexion against resistance.",
+        "abnormalResults": [
+          {
+            "finding": "Fatigable neck flexion weakness",
+            "significance": "Cannot hold head up for 60 seconds. Neck flexors are commonly affected in MG. Correlates with respiratory muscle weakness."
+          },
+          {
+            "finding": "Dropped head syndrome",
+            "significance": "Severe neck extensor weakness. While can be seen in MG, also consider other conditions (ALS, inflammatory myopathy)."
+          }
+        ]
+      },
+      {
+        "id": "limb-fatigue",
+        "title": "Limb Weakness and Fatigability",
+        "instruction": "Test for proximal weakness and fatigability in limbs.",
+        "technique": "Test shoulder abduction and hip flexion. Have patient hold arms abducted to 90° for 60-120 seconds. Observe for progressive arm drift or inability to maintain position. Repeat strength testing after fatigue maneuver.",
+        "normalResult": "Maintains arm abduction for >2 minutes. No change in strength with repeated testing.",
+        "abnormalResults": [
+          {
+            "finding": "Fatigable proximal weakness",
+            "significance": "Arm abduction strength decreases with sustained effort. Pattern is proximal > distal, similar to myopathy but distinguished by fatigability."
+          },
+          {
+            "finding": "Weakness that improves with repeated testing",
+            "significance": "Consider Lambert-Eaton myasthenic syndrome (LEMS). In LEMS, strength may briefly improve with repeated effort (facilitation)."
+          }
+        ]
+      },
+      {
+        "id": "respiratory-assessment",
+        "title": "Respiratory Function",
+        "instruction": "Assess for respiratory muscle involvement.",
+        "technique": "Observe respiratory pattern for use of accessory muscles, abdominal paradox. Have patient count to 20 in one breath (normally possible). If available, measure forced vital capacity (FVC) and negative inspiratory force (NIF).",
+        "normalResult": "Counts to 20 in one breath easily. No accessory muscle use. FVC >80% predicted.",
+        "abnormalResults": [
+          {
+            "finding": "Cannot count to 10-15 in one breath",
+            "significance": "Suggests reduced vital capacity. Monitor closely—FVC <1L or NIF weaker than -20 cmH2O may require intubation."
+          },
+          {
+            "finding": "Abdominal paradox",
+            "significance": "Abdomen moves inward during inspiration (opposite of normal). Indicates diaphragm weakness—impending respiratory failure. ICU admission warranted."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "MG has a bimodal age distribution: young women (20-30s) and older men (60-70s). Thymoma is associated with older-onset MG.",
+      "The ice pack test is useful in ED or clinic when edrophonium testing is not available. It has comparable sensitivity and specificity.",
+      "FVC and NIF should be monitored serially in admitted patients—a declining trend is more important than absolute values. The '20-30-40 rule': FVC <20 mL/kg, NIF > -30 cmH2O, or >30% decline in either predicts need for intubation.",
+      "Crisis triggers include infection, surgery, medications (aminoglycosides, beta-blockers, magnesium), and medication non-compliance. Always ask about triggers.",
+      "Patients with pure ocular MG for >2 years have <15% chance of generalizing. Generalized MG typically develops within 2 years of ocular onset."
+    ],
+    "relatedPlans": [
+      "myasthenia-gravis",
+      "myasthenic-crisis",
+      "lambert-eaton-syndrome"
+    ]
+  },
+  {
+    "id": "icu-neuro-check",
+    "title": "ICU Neurological Check",
+    "category": "rapid",
+    "description": "Rapid, standardized bedside assessment for monitoring neurological status in critically ill patients.",
+    "steps": [
+      {
+        "id": "consciousness",
+        "title": "Level of Consciousness",
+        "instruction": "Assess alertness and responsiveness using a standardized scale.",
+        "technique": "Call the patient's name. If no response, apply a trapezius squeeze or nailbed pressure. Document response using GCS (Eye, Verbal, Motor) or FOUR score. Note any change from previous assessment.",
+        "normalResult": "Alert, oriented, follows commands (GCS 15, FOUR 16).",
+        "abnormalResults": [
+          {
+            "finding": "Decrease of ≥2 GCS points",
+            "significance": "Significant neurological decline requiring immediate evaluation. Consider repeat imaging, check for metabolic/infectious causes."
+          },
+          {
+            "finding": "No eye opening to pain",
+            "significance": "GCS eye score of 1 indicates severe impairment. Evaluate for brainstem function and consider prognostic implications."
+          }
+        ]
+      },
+      {
+        "id": "pupils",
+        "title": "Pupil Examination",
+        "instruction": "Assess pupil size, symmetry, and reactivity.",
+        "technique": "Dim room lights. Note pupil size in mm for each eye. Shine bright light directly into each eye and observe for constriction (direct response) and constriction in the opposite eye (consensual response). Document briskness: brisk, sluggish, or fixed.",
+        "normalResult": "Pupils equal, round, reactive to light (PERRL), 2-4mm.",
+        "abnormalResults": [
+          {
+            "finding": "New unilateral fixed dilated pupil",
+            "significance": "Possible uncal herniation with CN III compression—neurosurgical emergency. Confirm with other signs of herniation and obtain immediate imaging."
+          },
+          {
+            "finding": "Bilateral fixed dilated pupils",
+            "significance": "May indicate severe bilateral herniation, anticholinergic toxicity, or hypothermia. In the setting of cardiac arrest, poor prognostic sign."
+          },
+          {
+            "finding": "Bilateral pinpoint pupils",
+            "significance": "Consider pontine lesion (hemorrhage) or opioid effect. Pontine hemorrhage also causes hyperthermia and abnormal respirations."
+          }
+        ]
+      },
+      {
+        "id": "brainstem-reflexes",
+        "title": "Brainstem Reflexes",
+        "instruction": "Test corneal reflex and cough/gag in intubated patients.",
+        "technique": "Corneal: Touch cornea (not sclera) with saline-moistened cotton and observe for blink bilaterally. Cough: Suction through ETT and observe for cough response. Gag: Touch posterior pharynx with tongue depressor if accessible.",
+        "normalResult": "Brisk bilateral corneal reflexes. Strong cough with suctioning.",
+        "abnormalResults": [
+          {
+            "finding": "Absent corneal reflex",
+            "significance": "Indicates CN V (afferent) or CN VII (efferent) dysfunction, or brainstem depression. Document which side(s) affected."
+          },
+          {
+            "finding": "Absent cough with deep suctioning",
+            "significance": "Suggests severe brainstem dysfunction. Important for brain death evaluation but must be interpreted in context."
+          }
+        ]
+      },
+      {
+        "id": "motor-response",
+        "title": "Motor Response",
+        "instruction": "Assess motor function in all four extremities.",
+        "technique": "If patient follows commands: 'Squeeze my fingers', 'Lift your legs', 'Give thumbs up'. If not following commands, apply nailbed pressure to each extremity and observe response: localizes, withdraws, flexion posturing, extension posturing, or none.",
+        "normalResult": "Follows commands symmetrically in all extremities.",
+        "abnormalResults": [
+          {
+            "finding": "New asymmetric motor response",
+            "significance": "Possible new stroke, worsening edema, or hemorrhage expansion. Compare to baseline and consider repeat imaging."
+          },
+          {
+            "finding": "Decorticate posturing (flexion)",
+            "significance": "Arms flexed, legs extended indicates lesion above the red nucleus. Poor prognosis but better than decerebrate."
+          },
+          {
+            "finding": "Decerebrate posturing (extension)",
+            "significance": "Arms and legs extended indicates lesion at or below the red nucleus (midbrain/pons). Very poor prognosis."
+          }
+        ]
+      },
+      {
+        "id": "respiratory-pattern",
+        "title": "Respiratory Pattern",
+        "instruction": "Observe breathing pattern in non-intubated patients or respiratory drive in intubated patients.",
+        "technique": "Observe respiratory rate, depth, and pattern. Classic abnormal patterns: Cheyne-Stokes (crescendo-decrescendo), central hyperventilation, apneustic (prolonged inspiration), ataxic (irregular). In intubated patients, note if breathing over the ventilator rate.",
+        "normalResult": "Regular respiratory pattern, 12-20 breaths/min. Breathing above ventilator rate if intubated.",
+        "abnormalResults": [
+          {
+            "finding": "Cheyne-Stokes respiration",
+            "significance": "Crescendo-decrescendo pattern indicates bilateral hemispheric or diencephalic dysfunction. May also be seen with heart failure."
+          },
+          {
+            "finding": "Ataxic breathing",
+            "significance": "Completely irregular pattern indicates medullary dysfunction—often preterminal. Prepare for possible respiratory arrest."
+          },
+          {
+            "finding": "No respiratory drive over ventilator",
+            "significance": "Absent ventilatory drive above set rate may indicate brainstem depression. Important data point for brain death evaluation."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "Standardize your neuro check to perform elements in the same order every time. This helps detect subtle changes on serial exams.",
+      "The most important aspect of ICU neuro checks is detecting CHANGE from baseline. Document detailed findings to enable comparison.",
+      "Sedation profoundly affects the neurological exam. Document sedation medications, recent doses, and time since last dose with each neuro check.",
+      "When in doubt about a change, repeat the exam in 30 minutes. Consult neurology if persistent decline or concern for acute event."
+    ],
+    "relatedPlans": [
+      "elevated-icp-management",
+      "brain-death-evaluation",
+      "status-epilepticus"
+    ]
+  },
+  {
+    "id": "pathological-reflexes",
+    "title": "Pathological Reflexes Examination",
+    "category": "specialized",
+    "description": "Assessment of abnormal reflexes indicating upper motor neuron dysfunction or frontal lobe pathology.",
+    "steps": [
+      {
+        "id": "babinski",
+        "title": "Babinski Sign (Plantar Response)",
+        "instruction": "Elicit the plantar reflex to assess corticospinal tract integrity.",
+        "technique": "With a blunt object (key, tongue depressor), stroke the lateral sole from heel toward the toes, then curve medially across the metatarsal heads. Use firm pressure but avoid pain. Watch the great toe and other toes.",
+        "normalResult": "Plantar flexion (downward movement) of the great toe, or no response.",
+        "abnormalResults": [
+          {
+            "finding": "Upgoing (extensor) great toe with fanning of other toes",
+            "significance": "Babinski sign positive. Sensitivity ~90%, specificity ~100% for corticospinal tract lesions (Van Gijn 1978). Few false positives; occasionally absent despite pyramidal disease due to coexisting LMN lesion or spinal shock."
+          },
+          {
+            "finding": "Withdrawal (triple flexion response)",
+            "significance": "Hip flexion, knee flexion, and ankle dorsiflexion is a withdrawal, not a true Babinski. Indicates intact reflex arc but must be distinguished from upgoing toe."
+          }
+        ]
+      },
+      {
+        "id": "babinski-variants",
+        "title": "Babinski Sign Variants",
+        "instruction": "Use alternative methods when standard plantar response is difficult to interpret.",
+        "technique": "Chaddock: Stroke lateral foot from ankle toward small toe. Oppenheim: Firm downward stroke along tibial shin. Gordon: Squeeze the calf. Schaefer: Squeeze the Achilles tendon. All should produce upgoing toe if Babinski positive.",
+        "normalResult": "Downgoing or no toe response with all maneuvers.",
+        "abnormalResults": [
+          {
+            "finding": "Upgoing toe with any variant",
+            "significance": "Same significance as positive Babinski sign. Variants are useful when the sole is calloused, hypersensitive, or the standard response is equivocal."
+          }
+        ]
+      },
+      {
+        "id": "hoffmann",
+        "title": "Hoffmann Sign",
+        "instruction": "Test for cervical cord dysfunction.",
+        "technique": "Hold the patient's middle finger relaxed between your thumb and index finger. Flick/snap the distal phalanx (fingernail) downward. Watch for involuntary flexion of the thumb and index finger.",
+        "normalResult": "No finger flexion response.",
+        "abnormalResults": [
+          {
+            "finding": "Brisk thumb and index finger flexion",
+            "significance": "Systematic review (2018): sensitivity 8-59%, specificity 49-85% for cervical myelopathy. High variability limits diagnostic utility in isolation. Positive LR only 2.2—insufficient alone to confirm or exclude myelopathy. Best interpreted with other UMN signs."
+          },
+          {
+            "finding": "Asymmetric Hoffmann signs",
+            "significance": "Asymmetry is more significant than bilateral presence. Suggests lateralized cervical cord pathology."
+          }
+        ]
+      },
+      {
+        "id": "clonus",
+        "title": "Clonus",
+        "instruction": "Test for sustained rhythmic contractions indicating hyperreflexia.",
+        "technique": "Ankle clonus: With knee slightly flexed, rapidly dorsiflex the foot and maintain pressure. Sustained rhythmic beats indicate clonus. Patellar clonus: Push patella sharply downward while knee extended. Count the number of beats.",
+        "normalResult": "No clonus, or 1-2 unsustained beats.",
+        "abnormalResults": [
+          {
+            "finding": "Sustained clonus (>3 beats)",
+            "significance": "Indicates UMN dysfunction with hyperreflexia. Sustained clonus (>10 beats or inexhaustible) indicates significant corticospinal tract pathology."
+          }
+        ]
+      },
+      {
+        "id": "frontal-release",
+        "title": "Frontal Release Signs (Primitive Reflexes)",
+        "instruction": "Test for reflexes that are normal in infants but pathological in adults.",
+        "technique": "Grasp: Stroke the patient's palm—grasp response is involuntary gripping. Palmomental: Stroke thenar eminence—watch for ipsilateral chin muscle contraction. Snout: Tap upper lip—watch for lip pursing. Glabellar: Repeatedly tap glabella—normally habituation occurs after 3-5 taps.",
+        "normalResult": "No grasp, palmomental, or snout response. Glabellar tap habituates.",
+        "abnormalResults": [
+          {
+            "finding": "Present grasp reflex",
+            "significance": "Involuntary gripping indicates contralateral frontal lobe dysfunction (supplementary motor area). Highly localizing when unilateral."
+          },
+          {
+            "finding": "Positive palmomental reflex",
+            "significance": "Least specific frontal release sign—may be present in normal elderly. More significant when brisk and easily elicited."
+          },
+          {
+            "finding": "Failure to habituate to glabellar tap (Myerson sign)",
+            "significance": "Continued blinking despite repeated taps suggests frontal dysfunction. Classic in Parkinson disease and other frontal pathology."
+          },
+          {
+            "finding": "Multiple frontal release signs",
+            "significance": "Presence of multiple primitive reflexes suggests significant bifrontal dysfunction. Common in advanced dementia, normal pressure hydrocephalus, and diffuse frontal damage."
+          }
+        ]
+      },
+      {
+        "id": "jaw-jerk",
+        "title": "Jaw Jerk Reflex",
+        "instruction": "Assess for UMN dysfunction above the pons.",
+        "technique": "With the patient's mouth slightly open and relaxed, place your finger on the chin. Tap your finger with a reflex hammer. Watch for jaw closure. A brisk response or clonus is abnormal.",
+        "normalResult": "Absent or minimal jaw closure.",
+        "abnormalResults": [
+          {
+            "finding": "Brisk jaw jerk",
+            "significance": "Indicates bilateral UMN dysfunction above the mid-pons. Helpful in differentiating UMN (brisk) from LMN (absent) causes of dysarthria/dysphagia."
+          },
+          {
+            "finding": "Jaw jerk clonus",
+            "significance": "Strongly suggests bilateral corticobulbar dysfunction as seen in pseudobulbar palsy, ALS, or bilateral hemispheric disease."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "The Babinski sign is the most reliable pathological reflex. It is always abnormal in adults (except briefly after seizures or during sleep).",
+      "Frontal release signs exist on a spectrum—a single palmomental reflex may be normal in elderly. Multiple strong primitive reflexes indicate significant pathology.",
+      "Hoffman sign can be normal in hyperreflexic individuals. Asymmetry is more significant than bilateral presence. Always correlate with other UMN signs.",
+      "A brisk jaw jerk helps distinguish pseudobulbar (UMN) from bulbar (LMN) palsy in patients with dysarthria and dysphagia."
+    ],
+    "relatedPlans": [
+      "cervical-myelopathy",
+      "acute-ischemic-stroke",
+      "als-motor-neuron-disease",
+      "normal-pressure-hydrocephalus"
+    ]
+  },
+  {
+    "id": "nerve-entrapment-exam",
+    "title": "Peripheral Nerve Entrapment Examination",
+    "category": "specialized",
+    "description": "Bedside tests for common nerve entrapment syndromes including carpal tunnel, cubital tunnel, and other compression neuropathies.",
+    "steps": [
+      {
+        "id": "phalen-test",
+        "title": "Phalen Test (Wrist Flexion)",
+        "instruction": "Test for median nerve compression at the carpal tunnel.",
+        "technique": "Have patient hold both wrists in maximal flexion (backs of hands pressed together) for 60 seconds. Positive if paresthesias occur in the median nerve distribution (thumb, index, middle, radial half of ring finger).",
+        "normalResult": "No paresthesias with 60 seconds of sustained wrist flexion.",
+        "abnormalResults": [
+          {
+            "finding": "Paresthesias in median nerve distribution",
+            "significance": "Sensitivity 67-85%, specificity 89-93% for carpal tunnel syndrome. More specific than sensitive—positive test supports diagnosis. Time to symptom onset correlates with severity (shorter = more severe)."
+          }
+        ]
+      },
+      {
+        "id": "reverse-phalen",
+        "title": "Reverse Phalen Test (Prayer Sign)",
+        "instruction": "Alternative carpal tunnel test using wrist extension.",
+        "technique": "Have patient hold wrists in maximal dorsiflexion (palms pressed together, prayer position) for 60 seconds. Positive if median nerve paresthesias occur.",
+        "normalResult": "No paresthesias with sustained wrist extension.",
+        "abnormalResults": [
+          {
+            "finding": "Paresthesias in median nerve distribution",
+            "significance": "May be positive when standard Phalen is negative. Both positions increase carpal tunnel pressure, but through different mechanisms."
+          }
+        ]
+      },
+      {
+        "id": "tinel-wrist",
+        "title": "Tinel Sign at Wrist",
+        "instruction": "Percuss over the median nerve at the carpal tunnel.",
+        "technique": "Tap firmly over the volar wrist at the carpal tunnel (between the tendons of palmaris longus and flexor carpi radialis). Positive if electric shock or tingling radiates into the thumb, index, or middle fingers.",
+        "normalResult": "No paresthesias with percussion over carpal tunnel.",
+        "abnormalResults": [
+          {
+            "finding": "Tingling radiating into median nerve distribution",
+            "significance": "Meta-analysis: median sensitivity 51%, specificity 90%. Low sensitivity but high specificity—positive test supports CTS diagnosis but negative test doesn't exclude it. Less useful than Phalen."
+          }
+        ]
+      },
+      {
+        "id": "durkan-test",
+        "title": "Durkan Test (Carpal Compression)",
+        "instruction": "Apply direct pressure over the carpal tunnel.",
+        "technique": "Apply firm pressure with both thumbs directly over the carpal tunnel for 30 seconds. Positive if this reproduces median nerve paresthesias.",
+        "normalResult": "No paresthesias with carpal tunnel compression.",
+        "abnormalResults": [
+          {
+            "finding": "Paresthesias in median nerve distribution",
+            "significance": "May have higher sensitivity than Tinel (up to 87%) with similar specificity. Directly compresses the median nerve in the carpal tunnel."
+          }
+        ]
+      },
+      {
+        "id": "tinel-elbow",
+        "title": "Tinel Sign at Elbow (Cubital Tunnel)",
+        "instruction": "Test for ulnar nerve compression at the elbow.",
+        "technique": "Tap over the ulnar nerve in the cubital tunnel (groove between medial epicondyle and olecranon). Positive if electric shock or tingling radiates into the ring and small fingers.",
+        "normalResult": "No paresthesias or mild local sensation only.",
+        "abnormalResults": [
+          {
+            "finding": "Tingling radiating to ring and small fingers",
+            "significance": "Suggests ulnar neuropathy at the elbow (cubital tunnel syndrome). Sensitivity and specificity variable. Should be combined with elbow flexion test and motor/sensory exam."
+          }
+        ]
+      },
+      {
+        "id": "elbow-flexion-test",
+        "title": "Elbow Flexion Test",
+        "instruction": "Provocative test for cubital tunnel syndrome.",
+        "technique": "Have patient maximally flex the elbow with wrist extended for 60 seconds, or combine with direct pressure over the cubital tunnel. Positive if ulnar nerve symptoms (paresthesias in ring/small fingers) occur.",
+        "normalResult": "No paresthesias with sustained elbow flexion.",
+        "abnormalResults": [
+          {
+            "finding": "Paresthesias in ulnar nerve distribution",
+            "significance": "Elbow flexion increases pressure in the cubital tunnel and stretches the ulnar nerve. Combined elbow flexion + direct pressure has sensitivity ~91%."
+          }
+        ]
+      },
+      {
+        "id": "froment-sign",
+        "title": "Froment Sign",
+        "instruction": "Test for ulnar nerve motor weakness (adductor pollicis).",
+        "technique": "Ask patient to pinch a piece of paper between thumb and index finger (key grip) while you try to pull it away. Watch the thumb IP joint. Positive if the thumb IP joint flexes (compensatory FPL activation).",
+        "normalResult": "Thumb remains straight at IP joint during pinch grip.",
+        "abnormalResults": [
+          {
+            "finding": "Thumb IP flexion during key pinch (Froment positive)",
+            "significance": "Indicates adductor pollicis weakness from ulnar neuropathy. The flexor pollicis longus (median nerve) compensates for weak adductor pollicis (ulnar nerve)."
+          }
+        ]
+      },
+      {
+        "id": "wartenberg-sign",
+        "title": "Wartenberg Sign",
+        "instruction": "Test for ulnar nerve weakness affecting finger adduction.",
+        "technique": "Ask patient to hold fingers tightly together with hand flat. Observe the small finger. Positive if the small finger drifts into abduction and cannot be brought back to other fingers.",
+        "normalResult": "Small finger adducts normally with other fingers.",
+        "abnormalResults": [
+          {
+            "finding": "Small finger abduction (Wartenberg positive)",
+            "significance": "Indicates weakness of the third palmar interosseous (ulnar nerve). The unopposed extensor digiti minimi causes small finger abduction."
+          }
+        ]
+      }
+    ],
+    "clinicalPearls": [
+      "For carpal tunnel syndrome: Phalen test is more sensitive (67-85%) than Tinel (51%). Durkan (carpal compression) may be most sensitive (up to 87%). Combine multiple tests for better accuracy.",
+      "In cubital tunnel syndrome, the elbow flexion test combined with direct pressure over the nerve has the highest sensitivity. Always assess motor function (Froment, Wartenberg) alongside sensory tests.",
+      "No single provocative test is sufficient for diagnosis—electrodiagnostic studies remain the gold standard when clinical diagnosis is uncertain."
+    ],
+    "relatedPlans": [
+      "peripheral-neuropathy",
+      "carpal-tunnel-syndrome"
     ]
   }
 ]

@@ -9,22 +9,61 @@ struct SectionGroup<Item: Identifiable, ItemView: View>: View {
     let setting: ClinicalSetting
     @ViewBuilder let itemView: (_ subsection: String, _ items: [Item]) -> ItemView
 
-    @State private var expandedSubsections: Set<String> = []
+    @State private var expandedSubsections: Set<String>
     @State private var expanded = true
+    @State private var hasInitialized = false
+
+    /// Check if a subsection name indicates first-line/essential items
+    private static func isFirstLineSubsection(_ name: String) -> Bool {
+        let keywords = ["essential", "core", "first-line", "first line", "primary", "acute", "emergent", "stat"]
+        let lower = name.lowercased()
+        return keywords.contains { lower.contains($0) }
+    }
+
+    init(title: String, icon: String, subsections: [String: [Item]], setting: ClinicalSetting, @ViewBuilder itemView: @escaping (_ subsection: String, _ items: [Item]) -> ItemView) {
+        self.title = title
+        self.icon = icon
+        self.subsections = subsections
+        self.setting = setting
+        self.itemView = itemView
+
+        // Pre-compute which subsections should be expanded
+        // Only expand subsections that have items AND are first-line
+        var initialExpanded = Set<String>()
+        for (key, items) in subsections {
+            if !items.isEmpty && Self.isFirstLineSubsection(key) {
+                initialExpanded.insert(key)
+            }
+        }
+        // If none found, expand first non-empty subsection alphabetically
+        if initialExpanded.isEmpty {
+            let nonEmptyKeys = subsections.filter { !$0.value.isEmpty }.keys.sorted()
+            if let first = nonEmptyKeys.first {
+                initialExpanded.insert(first)
+            }
+        }
+        self._expandedSubsections = State(initialValue: initialExpanded)
+    }
 
     private var sortedSubsections: [(key: String, value: [Item])] {
-        // Sort subsections by expected order
-        let order = [
-            "Essential/Core Labs", "Extended Workup", "Rare/Specialized",
-            "Essential/First-line", "Extended/Second-line", "Specialized",
-            "Acute/Emergent", "Symptomatic Treatments",
-            "Second-line/Refractory", "Disease-Modifying / Chronic Therapies",
-            "Referrals", "Patient Education", "Lifestyle/Supportive"
-        ]
+        // Sort subsections: first-line items first, then by priority keywords
         return subsections.sorted { a, b in
-            let ai = order.firstIndex(of: a.key) ?? 999
-            let bi = order.firstIndex(of: b.key) ?? 999
-            return ai < bi
+            let aIsFirst = Self.isFirstLineSubsection(a.key)
+            let bIsFirst = Self.isFirstLineSubsection(b.key)
+
+            // First-line subsections come first
+            if aIsFirst && !bIsFirst { return true }
+            if !aIsFirst && bIsFirst { return false }
+
+            // Secondary sort by keywords
+            let secondaryOrder = ["extended", "second", "rare", "specialized", "referral", "education", "lifestyle"]
+            let aSecondary = secondaryOrder.firstIndex { a.key.lowercased().contains($0) } ?? 999
+            let bSecondary = secondaryOrder.firstIndex { b.key.lowercased().contains($0) } ?? 999
+
+            if aSecondary != bSecondary { return aSecondary < bSecondary }
+
+            // Finally, alphabetical
+            return a.key < b.key
         }
     }
 
@@ -105,11 +144,6 @@ struct SectionGroup<Item: Identifiable, ItemView: View>: View {
                 }
             }
         }
-        .onAppear {
-            // Auto-expand first subsection
-            if let first = sortedSubsections.first {
-                expandedSubsections.insert(first.key)
-            }
-        }
+        
     }
 }

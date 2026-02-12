@@ -71,5 +71,8 @@ struct ExamListView: View {
 #Preview {
     NavigationStack {
         ExamListView(title: "Core Exams", exams: [])
+            .navigationDestination(for: NeurologyExam.self) { exam in
+                ExamDetailView(exam: exam)
+            }
     }
 }

@@ -10,27 +10,82 @@ struct ReferenceHomeView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: AppTheme.sectionSpacing) {
 
-                    // Quick Stats
+                    // Quick Stats - Tappable navigation
                     HStack(spacing: 12) {
-                        RefStatCard(
-                            value: "\(store.scales.count)",
-                            label: "Scales",
-                            icon: "chart.bar.fill",
-                            color: .blue
-                        )
-                        RefStatCard(
-                            value: "\(store.exams.count)",
-                            label: "Exams",
-                            icon: "stethoscope",
-                            color: AppTheme.teal
-                        )
-                        RefStatCard(
-                            value: "\(store.tools.count)",
-                            label: "Tools",
-                            icon: "wrench.and.screwdriver.fill",
-                            color: .purple
-                        )
+                        NavigationLink {
+                            ScaleListView(title: "All Scales", scales: store.allScales)
+                        } label: {
+                            RefStatCard(
+                                value: "\(store.scales.count)",
+                                label: "Scales",
+                                icon: "chart.bar.fill",
+                                color: .blue
+                            )
+                        }
+                        .buttonStyle(.plain)
+                        
+                        NavigationLink {
+                            ExamListView(title: "All Exams", exams: store.allExams)
+                        } label: {
+                            RefStatCard(
+                                value: "\(store.exams.count)",
+                                label: "Exams",
+                                icon: "stethoscope",
+                                color: AppTheme.teal
+                            )
+                        }
+                        .buttonStyle(.plain)
+                        
+                        NavigationLink {
+                            ToolListView(title: "All Tools", tools: store.allTools)
+                        } label: {
+                            RefStatCard(
+                                value: "\(store.tools.count)",
+                                label: "Tools",
+                                icon: "wrench.and.screwdriver.fill",
+                                color: .purple
+                            )
+                        }
+                        .buttonStyle(.plain)
                     }
+                    .padding(.horizontal)
+                    
+                    // Exam Tools - Interactive bedside tools
+                    NavigationLink {
+                        ExamToolsGridView()
+                    } label: {
+                        GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
+                            HStack(spacing: 16) {
+                                ZStack {
+                                    Circle()
+                                        .fill(LinearGradient(
+                                            colors: [.yellow.opacity(0.3), .orange.opacity(0.3)],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ))
+                                        .frame(width: 50, height: 50)
+                                    Image(systemName: "flashlight.on.fill")
+                                        .font(.system(size: 24))
+                                        .foregroundStyle(.yellow)
+                                }
+                                
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text("Exam Tools")
+                                        .font(.system(.headline, design: .rounded, weight: .semibold))
+                                    Text("Penlight, OKN stripes, visual acuity, Amsler grid, stopwatch")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(1)
+                                }
+                                
+                                Spacer()
+                                
+                                Image(systemName: "chevron.right")
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                    .buttonStyle(.plain)
                     .padding(.horizontal)
 
                     // Scales Section

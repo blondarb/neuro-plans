@@ -38,7 +38,7 @@ struct PlanRow: View {
                         let available = planHasSetting(plan, setting: s)
                         Text(s.rawValue)
                             .font(.system(size: 9, weight: .medium, design: .rounded))
-                            .foregroundStyle(available ? (s == setting ? .white : .secondary) : .quaternary)
+                            .foregroundStyle(available ? (s == setting ? Color.white : Color.secondary) : Color.gray.opacity(0.5))
                             .padding(.horizontal, 5)
                             .padding(.vertical, 2)
                             .background {

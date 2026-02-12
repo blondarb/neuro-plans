@@ -5,26 +5,31 @@ struct MainTabView: View {
 
     var body: some View {
         TabView {
-            Tab("Plans", systemImage: "list.bullet.clipboard") {
-                HomeView()
-            }
+            HomeView()
+                .tabItem {
+                    Label("Plans", systemImage: "list.bullet.clipboard")
+                }
 
-            Tab("Reference", systemImage: "book.fill") {
-                ReferenceHomeView()
-            }
+            ReferenceHomeView()
+                .tabItem {
+                    Label("Reference", systemImage: "book.fill")
+                }
 
-            Tab("Favorites", systemImage: "star.fill") {
-                FavoritesView()
-            }
+            FavoritesView()
+                .tabItem {
+                    Label("Favorites", systemImage: "star.fill")
+                }
 
-            Tab("Builder", systemImage: "square.and.pencil") {
-                BuilderView()
-            }
-            .badge(builder.itemCount)
+            BuilderView()
+                .tabItem {
+                    Label("Builder", systemImage: "square.and.pencil")
+                }
+                .badge(builder.itemCount)
 
-            Tab("Settings", systemImage: "gearshape.fill") {
-                SettingsView()
-            }
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape.fill")
+                }
         }
         .tint(AppTheme.teal)
     }

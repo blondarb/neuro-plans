@@ -8,6 +8,7 @@ final class PlanStore {
 
     var plans: [String: Plan] = [:]
     var favorites: Set<String> = []
+    var favoriteItems: Set<String> = []  // "planId::itemText" format for favorite actions
     var selectedSetting: ClinicalSetting = .opd
     var searchText: String = ""
     var isLoaded = false
@@ -43,6 +44,7 @@ final class PlanStore {
 
     init() {
         loadFavorites()
+        loadFavoriteItems()
     }
 
     // MARK: - Data Loading
@@ -98,6 +100,36 @@ final class PlanStore {
     private func loadFavorites() {
         if let saved = UserDefaults.standard.stringArray(forKey: "favorites") {
             favorites = Set(saved)
+        }
+    }
+
+    // MARK: - Favorite Items (Actions)
+
+    private func itemKey(_ planId: String, _ itemText: String) -> String {
+        "\(planId)::\(itemText)"
+    }
+
+    func toggleFavoriteItem(_ planId: String, itemText: String) {
+        let key = itemKey(planId, itemText)
+        if favoriteItems.contains(key) {
+            favoriteItems.remove(key)
+        } else {
+            favoriteItems.insert(key)
+        }
+        saveFavoriteItems()
+    }
+
+    func isFavoriteItem(_ planId: String, itemText: String) -> Bool {
+        favoriteItems.contains(itemKey(planId, itemText))
+    }
+
+    private func saveFavoriteItems() {
+        UserDefaults.standard.set(Array(favoriteItems), forKey: "favoriteItems")
+    }
+
+    private func loadFavoriteItems() {
+        if let saved = UserDefaults.standard.stringArray(forKey: "favoriteItems") {
+            favoriteItems = Set(saved)
         }
     }
 
