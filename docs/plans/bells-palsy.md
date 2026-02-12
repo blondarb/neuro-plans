@@ -134,10 +134,10 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Prednisone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis | STAT | STAT | ROUTINE | - |
-| Prednisolone | PO | - | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same | STAT | STAT | ROUTINE | - |
-| Methylprednisolone IV (CPT 96374) | IV | - | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same | STAT | STAT | - | - |
-| Dexamethasone (CPT 96374) | IV | - | 10 mg :: IV :: daily :: 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same | STAT | STAT | - | - |
+| Prednisone | PO | First-line corticosteroid for acute Bell's palsy | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (can taper over days 8-10 or stop); START WITHIN 72 HOURS of onset | Active infection (relative), uncontrolled DM (relative) | Glucose (especially diabetics), GI prophylaxis | STAT | STAT | ROUTINE | - |
+| Prednisolone | PO | Alternative oral corticosteroid for acute facial palsy | 60-80 mg :: PO :: daily :: 60-80 mg PO daily × 7 days (equivalent alternative) | Same | Same | STAT | STAT | ROUTINE | - |
+| Methylprednisolone IV (CPT 96374) | IV | IV corticosteroid for severe palsy or inability to take oral | 1000 mg :: IV :: daily :: 1000 mg IV daily × 3-5 days (if unable to take PO or severe/Ramsay Hunt) | Same | Same | STAT | STAT | - | - |
+| Dexamethasone (CPT 96374) | IV | Alternative IV corticosteroid for acute facial palsy | 10 mg :: IV :: daily :: 10 mg IV/PO daily × 7-10 days (alternative) | Same | Same | STAT | STAT | - | - |
 
 ### 3B. Antiviral Therapy
 
@@ -145,44 +145,44 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Valacyclovir (moderate-severe Bell's) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function | STAT | STAT | ROUTINE | - |
-| Acyclovir (alternative) | PO | - | 400 mg :: PO :: daily :: 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
-| Valacyclovir (Ramsay Hunt) | PO | - | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
-| Acyclovir IV (severe Ramsay Hunt) (CPT 96365) | IV | - | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration | - | STAT | - | - |
+| Valacyclovir (moderate-severe Bell's) | PO | Antiviral adjunct for moderate-severe Bell's palsy with steroids | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7 days; ALWAYS with steroids | Renal impairment (reduce dose) | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir (alternative) | PO | Alternative oral antiviral for Bell's palsy with steroids | 400 mg :: PO :: daily :: 400 mg PO 5× daily × 7-10 days; or 800 mg PO TID × 7 days | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Valacyclovir (Ramsay Hunt) | PO | Mandatory antiviral for Ramsay Hunt syndrome with steroids | 1000 mg :: PO :: TID :: 1000 mg PO TID × 7-10 days; MANDATORY with steroids | Renal impairment | Renal function | STAT | STAT | ROUTINE | - |
+| Acyclovir IV (severe Ramsay Hunt) (CPT 96365) | IV | IV antiviral for severe Ramsay Hunt or inability to take oral | 10 mg/kg :: IV :: q8h :: 10 mg/kg IV q8h × 7-10 days | Renal impairment | Renal function, hydration | - | STAT | - | - |
 
 ### 3C. Eye Protection (CRITICAL - All Patients)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Artificial tears (preservative-free) | - | - | 1-2 drops :: - :: q1-2h :: 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Lubricating eye ointment (Lacri-Lube) | - | - | N/A :: - :: TID :: Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Eye patch or moisture chamber | Transdermal | - | N/A :: Transdermal :: continuous :: At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Tape eyelid closed at night | - | - | N/A :: - :: continuous :: If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
-| Wraparound glasses/sunglasses | - | - | N/A :: - :: continuous :: During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
+| Artificial tears (preservative-free) | Topical | Corneal lubrication to prevent exposure keratopathy | 1-2 drops :: Topical :: q1-2h :: 1-2 drops affected eye q1-2h while awake | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Lubricating eye ointment (Lacri-Lube) | Topical | Overnight corneal protection against drying and ulceration | N/A :: Topical :: TID :: Thin strip in affected eye at bedtime (and up to TID) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Eye patch or moisture chamber | - | Mechanical eye closure to prevent corneal exposure at night | N/A :: - :: continuous :: At night and in dusty/windy environments | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Tape eyelid closed at night | - | Forced eyelid closure for lagophthalmos during sleep | N/A :: - :: continuous :: If unable to close eye (use paper tape) | None | Corneal status | STAT | STAT | ROUTINE | - |
+| Wraparound glasses/sunglasses | - | Daytime eye protection from wind, dust, and debris | N/A :: - :: continuous :: During day for eye protection | None | Corneal status | - | ROUTINE | ROUTINE | - |
 
 ### 3D. Pain Management
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Acetaminophen | PO | - | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h PRN; max 3000 mg/day | - | Hepatic disease | LFTs if prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
-| Ibuprofen | PO | - | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h PRN with food | - | Renal disease, GI bleeding | Renal function | ROUTINE | ROUTINE | ROUTINE | - |
-| Gabapentin (post-herpetic neuralgia) | PO | - | 100-300 mg :: PO :: TID :: 100-300 mg TID; titrate as needed for Ramsay Hunt | - | Renal impairment | Sedation | - | ROUTINE | ROUTINE | - |
+| Acetaminophen | PO | First-line analgesic for facial pain in Bell's palsy | 650-1000 mg :: PO :: q6h :: 650-1000 mg PO q6h PRN; max 3000 mg/day | - | Hepatic disease | LFTs if prolonged use | ROUTINE | ROUTINE | ROUTINE | - |
+| Ibuprofen | PO | Anti-inflammatory analgesic for facial pain and periauricular pain | 400-600 mg :: PO :: q6h :: 400-600 mg PO q6h PRN with food | - | Renal disease, GI bleeding | Renal function | ROUTINE | ROUTINE | ROUTINE | - |
+| Gabapentin (post-herpetic neuralgia) | PO | Neuropathic pain management in Ramsay Hunt syndrome | 100-300 mg :: PO :: TID :: 100-300 mg TID; titrate as needed for Ramsay Hunt | - | Renal impairment | Sedation | - | ROUTINE | ROUTINE | - |
 
 ### 3E. Lyme Disease Treatment (If Positive)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Doxycycline | PO | - | 100 mg :: PO :: BID :: 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset | - | STAT | ROUTINE | - |
-| Ceftriaxone IV (CPT 96365) | IV | - | 2 g :: IV :: daily :: 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard | - | STAT | - | - |
+| Doxycycline | PO | First-line treatment for Lyme-associated facial palsy | 100 mg :: PO :: BID :: 100 mg PO BID × 14-21 days (isolated facial palsy) | Pregnancy, children <8 | GI upset | - | STAT | ROUTINE | - |
+| Ceftriaxone IV (CPT 96365) | IV | IV antibiotic for Lyme neuroborreliosis with CNS involvement | 2 g :: IV :: daily :: 2 g IV daily × 14-21 days (if CNS involvement) | Cephalosporin allergy | Standard | - | STAT | - | - |
 
 ### 3F. Physical Therapy
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Facial exercises | - | - | N/A :: - :: daily :: Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
-| Facial massage | - | - | N/A :: - :: daily :: Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
-| Electrical stimulation | - | - | N/A :: - :: continuous :: Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
-| Neuromuscular retraining | - | - | N/A :: - :: daily :: Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
+| Facial exercises | - | Active facial muscle rehabilitation during recovery phase | N/A :: - :: daily :: Mirror exercises, gentle facial movements | None | Start when recovery begins | - | ROUTINE | ROUTINE | - |
+| Facial massage | - | Maintain facial muscle tone and prevent contracture | N/A :: - :: daily :: Gentle massage to maintain muscle tone | None | Patient/family can perform | - | - | ROUTINE | - |
+| Electrical stimulation | - | Experimental facial nerve stimulation; limited evidence | N/A :: - :: continuous :: Controversial; limited evidence | None | Not routinely recommended | - | - | EXT | - |
+| Neuromuscular retraining | - | Specialized therapy to prevent synkinesis during recovery | N/A :: - :: daily :: Specialized PT for synkinesis prevention | None | If incomplete recovery | - | - | ROUTINE | - |
 
 ### 3G. Surgical Options (Refractory Cases)
 

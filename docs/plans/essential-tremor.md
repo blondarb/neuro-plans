@@ -128,49 +128,49 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Propranolol (Inderal) | PO | - | 20-40 mg :: PO :: BID :: Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses | Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression | HR, BP | - | ROUTINE | ROUTINE | - |
-| Propranolol LA | PO | - | 60-80 mg :: PO :: daily :: Start 60-80 mg daily; titrate to 160-320 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
-| Primidone (Mysoline) | PO | - | 12.5-25 mg :: PO :: QHS :: Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses | Porphyria, severe sedation | Sedation, ataxia, nausea (start very low) | - | ROUTINE | ROUTINE | - |
+| Propranolol (Inderal) | PO | First-line beta-blocker for essential tremor suppression | 20-40 mg :: PO :: BID :: Start 20-40 mg BID-TID; titrate to 120-320 mg/day in divided doses | Asthma, COPD, bradycardia, AV block, decompensated heart failure, depression | HR, BP | - | ROUTINE | ROUTINE | - |
+| Propranolol LA | PO | Long-acting formulation for sustained tremor control | 60-80 mg :: PO :: daily :: Start 60-80 mg daily; titrate to 160-320 mg daily | Same | Same | - | ROUTINE | ROUTINE | - |
+| Primidone (Mysoline) | PO | First-line anticonvulsant for essential tremor reduction | 12.5-25 mg :: PO :: QHS :: Start 12.5-25 mg QHS; titrate very slowly by 12.5-25 mg/week to 250-750 mg/day in divided doses | Porphyria, severe sedation | Sedation, ataxia, nausea (start very low) | - | ROUTINE | ROUTINE | - |
 
 ### 3B. Second-Line Pharmacologic Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Topiramate (Topamax) | PO | - | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, weight loss | - | ROUTINE | ROUTINE | - |
-| Gabapentin (Neurontin) | PO | - | 300 mg :: PO :: daily :: Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day) | Renal impairment (adjust dose) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
-| Alprazolam (Xanax) | PO | - | 0.25-0.5 mg :: PO :: TID :: 0.25-0.5 mg TID; max 3 mg/day; use cautiously | Respiratory depression, addiction potential, elderly falls | Sedation, dependence, falls | - | ROUTINE | ROUTINE | - |
-| Clonazepam (Klonopin) | PO | - | 0.5 mg :: PO :: TID :: 0.5 mg TID; titrate to 2-4 mg/day | Same as alprazolam | Same | - | ROUTINE | ROUTINE | - |
-| Atenolol | PO | - | 50-100 mg :: PO :: daily :: 50-100 mg daily; less CNS penetration than propranolol | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
-| Nadolol | PO | - | 40-160 mg :: PO :: daily :: 40-160 mg daily; long-acting, once daily | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
+| Topiramate (Topamax) | PO | Second-line agent for tremor refractory to first-line therapy | 25 mg :: PO :: daily :: Start 25 mg daily; titrate by 25-50 mg/week to 100-400 mg/day in divided doses | Kidney stones, glaucoma, pregnancy | Cognitive effects, paresthesias, weight loss | - | ROUTINE | ROUTINE | - |
+| Gabapentin (Neurontin) | PO | Adjunctive therapy for tremor with possible anxiolytic benefit | 300 mg :: PO :: daily :: Start 300 mg daily; titrate to 300-600 mg TID (900-1800 mg/day) | Renal impairment (adjust dose) | Sedation, dizziness, edema | - | ROUTINE | ROUTINE | - |
+| Alprazolam (Xanax) | PO | Tremor with significant anxiety component or situational use | 0.25-0.5 mg :: PO :: TID :: 0.25-0.5 mg TID; max 3 mg/day; use cautiously | Respiratory depression, addiction potential, elderly falls | Sedation, dependence, falls | - | ROUTINE | ROUTINE | - |
+| Clonazepam (Klonopin) | PO | Tremor with anxiety or when longer-acting benzodiazepine preferred | 0.5 mg :: PO :: TID :: 0.5 mg TID; titrate to 2-4 mg/day | Same as alprazolam | Same | - | ROUTINE | ROUTINE | - |
+| Atenolol | PO | Alternative beta-blocker with less CNS penetration | 50-100 mg :: PO :: daily :: 50-100 mg daily; less CNS penetration than propranolol | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
+| Nadolol | PO | Long-acting beta-blocker for once-daily tremor management | 40-160 mg :: PO :: daily :: 40-160 mg daily; long-acting, once daily | Same as propranolol | HR, BP | - | ROUTINE | ROUTINE | - |
 
 ### 3C. Third-Line and Adjunctive Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Botulinum toxin (OnabotulinumtoxinA) | - | - | 50-100 units :: - :: - :: 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) | - | - | ROUTINE | - |
-| Propranolol + Primidone combination | - | - | N/A :: - :: per protocol :: Use lower doses of each; synergistic effect | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
-| Nimodipine | PO | - | 30 mg :: PO :: TID :: 30 mg TID; limited evidence | Hypotension | BP | - | - | EXT | - |
-| Zonisamide | PO | - | 100-200 mg :: PO :: daily :: 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive | - | - | EXT | - |
+| Botulinum toxin (OnabotulinumtoxinA) | IM | Focal hand or head tremor refractory to oral medications | 50-100 units :: - :: - :: 50-100 units per arm for hand tremor; 40-400 units for head tremor; q3 months | Infection at injection site, myasthenia | Weakness, dysphagia (head/voice injections) | - | - | ROUTINE | - |
+| Propranolol + Primidone combination | PO | Synergistic dual therapy for refractory essential tremor | N/A :: - :: per protocol :: Use lower doses of each; synergistic effect | Per individual agents | Per individual agents | - | ROUTINE | ROUTINE | - |
+| Nimodipine | PO | Calcium channel blocker for tremor with limited evidence | 30 mg :: PO :: TID :: 30 mg TID; limited evidence | Hypotension | BP | - | - | EXT | - |
+| Zonisamide | PO | Off-label anticonvulsant for tremor unresponsive to standard agents | 100-200 mg :: PO :: daily :: 100-200 mg daily; off-label | Sulfa allergy, kidney stones | Kidney stones, cognitive | - | - | EXT | - |
 
 ### 3D. Interventional Treatments
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Deep brain stimulation (DBS) | - | - | N/A :: - :: continuous :: VIM thalamus target; bilateral or unilateral | - | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function | - | - | EXT | - |
-| MRI-guided focused ultrasound (MRgFUS) | - | - | N/A :: - :: per protocol :: VIM thalamotomy; unilateral only | - | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes | - | - | EXT | - |
-| Gamma Knife thalamotomy | - | - | N/A :: - :: per protocol :: VIM target; unilateral; delayed effect | - | Per radiosurgery | Same as MRgFUS | - | - | EXT | - |
+| Deep brain stimulation (DBS) | - | Medication-refractory tremor with adequate cognitive function | N/A :: - :: continuous :: VIM thalamus target; bilateral or unilateral | - | Bleeding risk, active infection, severe cognitive impairment | Speech, gait, stimulator function | - | - | EXT | - |
+| MRI-guided focused ultrasound (MRgFUS) | - | Unilateral refractory tremor when DBS not preferred or feasible | N/A :: - :: per protocol :: VIM thalamotomy; unilateral only | - | Skull density ratio issues, intracranial lesions | Speech, gait, sensory changes | - | - | EXT | - |
+| Gamma Knife thalamotomy | - | Refractory tremor when not candidate for DBS or MRgFUS | N/A :: - :: per protocol :: VIM target; unilateral; delayed effect | - | Per radiosurgery | Same as MRgFUS | - | - | EXT | - |
 
 ### 3E. Non-Pharmacologic Treatments
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Weighted utensils | - | - | N/A :: - :: per protocol :: Reduce tremor amplitude during eating | None | OT can assist with selection | - | - | ROUTINE | - |
-| Wrist weights | - | - | N/A :: - :: per protocol :: Dampen tremor during activities | None | May cause fatigue | - | - | ROUTINE | - |
-| Adaptive devices | - | - | N/A :: - :: per protocol :: Two-handled cups, rocker knives, button hooks | None | OT referral | - | - | ROUTINE | - |
-| Cala Trio device | - | - | N/A :: - :: BID :: FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device | - | - | ROUTINE | - |
-| Limit caffeine | - | - | N/A :: - :: per protocol :: Caffeine exacerbates tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
-| Avoid triggers | - | - | N/A :: - :: N/A :: Stress, fatigue, stimulants worsen tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
-| Stress management | - | - | N/A :: - :: per protocol :: Relaxation techniques, biofeedback | None | Tremor worsens with anxiety | - | - | ROUTINE | - |
+| Weighted utensils | - | Reduce functional impact of hand tremor during meals | N/A :: - :: per protocol :: Reduce tremor amplitude during eating | None | OT can assist with selection | - | - | ROUTINE | - |
+| Wrist weights | - | Dampen tremor amplitude during fine motor activities | N/A :: - :: per protocol :: Dampen tremor during activities | None | May cause fatigue | - | - | ROUTINE | - |
+| Adaptive devices | - | Improve independence in ADLs affected by upper limb tremor | N/A :: - :: per protocol :: Two-handled cups, rocker knives, button hooks | None | OT referral | - | - | ROUTINE | - |
+| Cala Trio device | - | FDA-cleared neuromodulation for hand tremor reduction | N/A :: - :: BID :: FDA-approved wrist-worn peripheral nerve stimulation; 2x daily for 40 min | Pacemaker/implanted device, pregnancy | Prescription medical device | - | - | ROUTINE | - |
+| Limit caffeine | - | Reduce tremor exacerbation from stimulant intake | N/A :: - :: per protocol :: Caffeine exacerbates tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Avoid triggers | - | Minimize modifiable factors that worsen tremor severity | N/A :: - :: N/A :: Stress, fatigue, stimulants worsen tremor | None | Patient education | - | ROUTINE | ROUTINE | - |
+| Stress management | - | Reduce anxiety-related tremor exacerbation | N/A :: - :: per protocol :: Relaxation techniques, biofeedback | None | Tremor worsens with anxiety | - | - | ROUTINE | - |
 
 ---
 

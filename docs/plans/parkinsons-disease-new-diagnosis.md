@@ -129,65 +129,65 @@ tags:
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Carbidopa/Levodopa (Sinemet) | PO | - | 100 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day | Narrow-angle glaucoma; caution with MAOIs | Dyskinesia, nausea, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa CR | PO | - | 200 mg :: PO :: BID :: 25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR | Same | Same; less predictable absorption | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa ODT (Parcopa) | - | - | N/A :: - :: per protocol :: Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa ER (Rytary) | PO | - | 95 mg :: PO :: TID :: Start 23.75/95 mg TID; titrate per response | Same | Same; more sustained release | - | - | ROUTINE | - |
-| Carbidopa/Levodopa intestinal gel (Duopa) | IV | - | N/A :: IV :: continuous :: Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications | - | - | EXT | - |
+| Carbidopa/Levodopa (Sinemet) | PO | First-line dopamine replacement for motor symptoms of PD | 100 mg :: PO :: TID :: Start 25/100 mg TID with meals; titrate by 25/100 mg q1-2 weeks; usual maintenance 300-800 mg levodopa/day | Narrow-angle glaucoma; caution with MAOIs | Dyskinesia, nausea, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa CR | PO | Controlled-release dopamine replacement for sustained motor benefit | 200 mg :: PO :: BID :: 25/100 or 50/200 mg BID-TID; ~30% less bioavailable than IR | Same | Same; less predictable absorption | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa ODT (Parcopa) | PO | Dopamine replacement for PD patients with dysphagia | N/A :: - :: per protocol :: Same dosing as IR; dissolves on tongue | Same | Same; useful for dysphagia | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa ER (Rytary) | PO | Extended-release dopamine replacement to reduce motor fluctuations | 95 mg :: PO :: TID :: Start 23.75/95 mg TID; titrate per response | Same | Same; more sustained release | - | - | ROUTINE | - |
+| Carbidopa/Levodopa intestinal gel (Duopa) | Enteral | Continuous levodopa delivery for advanced PD with motor fluctuations | N/A :: IV :: continuous :: Continuous infusion via PEG-J; specialist prescribing | Advanced PD; requires surgical placement | Device complications | - | - | EXT | - |
 
 ### 3B. Dopamine Agonists
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Pramipexole (Mirapex) | PO | - | 0.125 mg :: PO :: TID :: Start 0.125 mg TID; titrate weekly to 0.5-1.5 mg TID; max 4.5 mg/day | Impulse control disorders (relative); renal impairment (reduce dose) | ICDs (gambling, hypersexuality, shopping), sleepiness, hallucinations | - | ROUTINE | ROUTINE | - |
-| Pramipexole ER | PO | - | 0.375 mg :: PO :: daily :: Start 0.375 mg daily; titrate weekly; max 4.5 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
-| Ropinirole (Requip) | PO | - | 0.25 mg :: PO :: TID :: Start 0.25 mg TID; titrate weekly to 3-8 mg TID; max 24 mg/day | ICDs, hepatic impairment | Same as pramipexole | - | ROUTINE | ROUTINE | - |
-| Ropinirole XL | PO | - | 2 mg :: PO :: daily :: Start 2 mg daily; titrate weekly; max 24 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
-| Rotigotine patch (Neupro) | Transdermal | - | 2 mg :: PO :: - :: Start 2 mg/24h; increase by 2 mg/week; max 8 mg/24h (early PD) | Sulfite allergy, application site reactions | ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
-| Apomorphine SC (Apokyn) | SC | - | 0.2 mL :: PO :: - :: Rescue for off episodes; start 0.2 mL (2 mg) test dose; max 0.6 mL (6 mg) | Severe hypotension, 5-HT3 antagonist use | BP, nausea (pretreat with trimethobenzamide) | - | - | EXT | - |
+| Pramipexole (Mirapex) | PO | Dopamine agonist monotherapy or adjunct for early PD motor symptoms | 0.125 mg :: PO :: TID :: Start 0.125 mg TID; titrate weekly to 0.5-1.5 mg TID; max 4.5 mg/day | Impulse control disorders (relative); renal impairment (reduce dose) | ICDs (gambling, hypersexuality, shopping), sleepiness, hallucinations | - | ROUTINE | ROUTINE | - |
+| Pramipexole ER | PO | Extended-release dopamine agonist for once-daily PD motor treatment | 0.375 mg :: PO :: daily :: Start 0.375 mg daily; titrate weekly; max 4.5 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
+| Ropinirole (Requip) | PO | Dopamine agonist for PD motor symptoms, alternative to pramipexole | 0.25 mg :: PO :: TID :: Start 0.25 mg TID; titrate weekly to 3-8 mg TID; max 24 mg/day | ICDs, hepatic impairment | Same as pramipexole | - | ROUTINE | ROUTINE | - |
+| Ropinirole XL | PO | Extended-release dopamine agonist for once-daily PD motor treatment | 2 mg :: PO :: daily :: Start 2 mg daily; titrate weekly; max 24 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
+| Rotigotine patch (Neupro) | Transdermal | Transdermal dopamine agonist for continuous PD motor symptom control | 2 mg :: PO :: - :: Start 2 mg/24h; increase by 2 mg/week; max 8 mg/24h (early PD) | Sulfite allergy, application site reactions | ICDs, skin reactions | - | ROUTINE | ROUTINE | - |
+| Apomorphine SC (Apokyn) | SC | Rescue dopamine agonist for acute off episodes in advanced PD | 0.2 mL :: PO :: - :: Rescue for off episodes; start 0.2 mL (2 mg) test dose; max 0.6 mL (6 mg) | Severe hypotension, 5-HT3 antagonist use | BP, nausea (pretreat with trimethobenzamide) | - | - | EXT | - |
 
 ### 3C. MAO-B Inhibitors
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Rasagiline (Azilect) | - | - | 0.5-1 mg :: - :: daily :: 0.5-1 mg daily; may use as monotherapy early PD or adjunct | MAOIs, meperidine, tramadol, methadone, cyclobenzaprine | Serotonin syndrome; insomnia if taken late | - | ROUTINE | ROUTINE | - |
-| Selegiline (Eldepryl) | PO | - | 5 mg :: PO :: BID :: 5 mg BID (breakfast and lunch); avoid evening dosing | Same as rasagiline | Insomnia, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
-| Selegiline ODT (Zelapar) | - | - | 1.25-2.5 mg :: - :: daily :: 1.25-2.5 mg daily (buccal absorption) | Same | Same | - | ROUTINE | ROUTINE | - |
-| Safinamide (Xadago) | PO | - | 50-100 mg :: PO :: daily :: 50-100 mg daily; adjunct to levodopa | Same; severe hepatic impairment, retinal disease | Dyskinesia, falls | - | - | ROUTINE | - |
+| Rasagiline (Azilect) | PO | MAO-B inhibitor monotherapy for early PD or levodopa adjunct | 0.5-1 mg :: - :: daily :: 0.5-1 mg daily; may use as monotherapy early PD or adjunct | MAOIs, meperidine, tramadol, methadone, cyclobenzaprine | Serotonin syndrome; insomnia if taken late | - | ROUTINE | ROUTINE | - |
+| Selegiline (Eldepryl) | PO | MAO-B inhibitor for early PD motor symptoms or levodopa adjunct | 5 mg :: PO :: BID :: 5 mg BID (breakfast and lunch); avoid evening dosing | Same as rasagiline | Insomnia, orthostatic hypotension | - | ROUTINE | ROUTINE | - |
+| Selegiline ODT (Zelapar) | PO | Orally disintegrating MAO-B inhibitor with enhanced bioavailability | 1.25-2.5 mg :: - :: daily :: 1.25-2.5 mg daily (buccal absorption) | Same | Same | - | ROUTINE | ROUTINE | - |
+| Safinamide (Xadago) | PO | MAO-B inhibitor adjunct to levodopa for motor fluctuations | 50-100 mg :: PO :: daily :: 50-100 mg daily; adjunct to levodopa | Same; severe hepatic impairment, retinal disease | Dyskinesia, falls | - | - | ROUTINE | - |
 
 ### 3D. COMT Inhibitors (Adjunct to Levodopa)
 
 | Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Entacapone (Comtan) | PO | - | 200 mg :: PO :: - :: 200 mg with each levodopa dose; max 8 doses/day | - | None absolute | Orange urine, diarrhea, dyskinesia | - | ROUTINE | ROUTINE | - |
-| Carbidopa/Levodopa/Entacapone (Stalevo) | - | - | N/A :: - :: per protocol :: Various strengths; replace existing C/L with equivalent | - | Same | Same | - | ROUTINE | ROUTINE | - |
-| Opicapone (Ongentys) | PO | - | 50 mg :: PO :: daily :: 50 mg daily at bedtime; separate from levodopa by 1 hour | - | None absolute | Dyskinesia, constipation | - | - | ROUTINE | - |
-| Tolcapone (Tasmar) | - | - | 100-200 mg :: - :: TID :: 100-200 mg TID; rarely used due to hepatotoxicity | - | Hepatic disease | LFTs q2-4 weeks x6mo, then periodically | - | - | EXT | - |
+| Entacapone (Comtan) | PO | COMT inhibitor adjunct to extend levodopa duration per dose | 200 mg :: PO :: - :: 200 mg with each levodopa dose; max 8 doses/day | - | None absolute | Orange urine, diarrhea, dyskinesia | - | ROUTINE | ROUTINE | - |
+| Carbidopa/Levodopa/Entacapone (Stalevo) | PO | Combination tablet for PD with wearing-off on levodopa | N/A :: - :: per protocol :: Various strengths; replace existing C/L with equivalent | - | Same | Same | - | ROUTINE | ROUTINE | - |
+| Opicapone (Ongentys) | PO | Once-daily COMT inhibitor adjunct to levodopa for off episodes | 50 mg :: PO :: daily :: 50 mg daily at bedtime; separate from levodopa by 1 hour | - | None absolute | Dyskinesia, constipation | - | - | ROUTINE | - |
+| Tolcapone (Tasmar) | PO | Potent COMT inhibitor reserved for refractory wearing-off episodes | 100-200 mg :: - :: TID :: 100-200 mg TID; rarely used due to hepatotoxicity | - | Hepatic disease | LFTs q2-4 weeks x6mo, then periodically | - | - | EXT | - |
 
 ### 3E. Anticholinergics (Tremor-predominant, Younger Patients)
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Trihexyphenidyl (Artane) | PO | - | 1 mg :: PO :: daily :: Start 1 mg daily; titrate to 2 mg TID; max 15 mg/day | Glaucoma, urinary retention, cognitive impairment, age >65 | Confusion, urinary retention, dry mouth | - | ROUTINE | ROUTINE | - |
-| Benztropine (Cogentin) | PO | - | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate to 1-2 mg BID; max 6 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
+| Trihexyphenidyl (Artane) | PO | Anticholinergic for tremor-predominant PD in younger patients | 1 mg :: PO :: daily :: Start 1 mg daily; titrate to 2 mg TID; max 15 mg/day | Glaucoma, urinary retention, cognitive impairment, age >65 | Confusion, urinary retention, dry mouth | - | ROUTINE | ROUTINE | - |
+| Benztropine (Cogentin) | PO | Anticholinergic alternative for PD tremor in younger patients | 0.5 mg :: PO :: daily :: Start 0.5 mg daily; titrate to 1-2 mg BID; max 6 mg/day | Same | Same | - | ROUTINE | ROUTINE | - |
 
 ### 3F. Amantadine
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Amantadine IR | PO | - | 100 mg :: PO :: BID :: 100 mg BID-TID; avoid evening dosing | Renal impairment (reduce dose), seizures | Livedo reticularis, edema, hallucinations, insomnia | - | ROUTINE | ROUTINE | - |
-| Amantadine ER (Gocovri) | PO | - | 137-274 mg :: PO :: - :: 137-274 mg at bedtime; for dyskinesia | Same | Same | - | - | ROUTINE | - |
+| Amantadine IR | PO | Mild symptomatic benefit for early PD or adjunct for tremor | 100 mg :: PO :: BID :: 100 mg BID-TID; avoid evening dosing | Renal impairment (reduce dose), seizures | Livedo reticularis, edema, hallucinations, insomnia | - | ROUTINE | ROUTINE | - |
+| Amantadine ER (Gocovri) | PO | Extended-release amantadine for levodopa-induced dyskinesia | 137-274 mg :: PO :: - :: 137-274 mg at bedtime; for dyskinesia | Same | Same | - | - | ROUTINE | - |
 
 ### 3G. Non-Motor Symptom Treatment
 
 | Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
 | --- | --- | --- | --- | --- | --- | :--: | :--: | :--: | :--: |
-| Rivastigmine (cognitive) | PO | - | 4.6-13.3 mg :: PO :: - :: Patch 4.6-13.3 mg/24h; for PD dementia | GI bleeding, bradycardia | Nausea, bradycardia | - | - | ROUTINE | - |
-| Quetiapine (psychosis) | - | - | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; does not worsen parkinsonism | Metabolic syndrome | Sedation, glucose, QTc | - | ROUTINE | ROUTINE | - |
-| Pimavanserin (Nuplazid) | PO | - | 34 mg :: PO :: daily :: 34 mg daily; for PD psychosis | QTc prolongation | QTc monitoring | - | - | ROUTINE | - |
-| Droxidopa (orthostatic hypotension) | - | - | 100 mg :: PO :: TID :: Start 100 mg TID; max 600 mg TID | Supine HTN | BP supine and standing | - | ROUTINE | ROUTINE | - |
-| Fludrocortisone (orthostatic hypotension) | - | - | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily | Heart failure, HTN | K+, edema, supine BP | - | ROUTINE | ROUTINE | - |
-| Polyethylene glycol (constipation) | PO | - | 17 g :: PO :: daily :: 17 g daily in water | Bowel obstruction | Bowel movements | - | ROUTINE | ROUTINE | - |
+| Rivastigmine (cognitive) | Transdermal | Cholinesterase inhibitor for PD-associated dementia | 4.6-13.3 mg :: PO :: - :: Patch 4.6-13.3 mg/24h; for PD dementia | GI bleeding, bradycardia | Nausea, bradycardia | - | - | ROUTINE | - |
+| Quetiapine (psychosis) | PO | Low-dose atypical antipsychotic for PD-related psychosis and hallucinations | 12.5-100 mg :: - :: QHS :: 12.5-100 mg QHS; does not worsen parkinsonism | Metabolic syndrome | Sedation, glucose, QTc | - | ROUTINE | ROUTINE | - |
+| Pimavanserin (Nuplazid) | PO | Selective serotonin inverse agonist for PD psychosis | 34 mg :: PO :: daily :: 34 mg daily; for PD psychosis | QTc prolongation | QTc monitoring | - | - | ROUTINE | - |
+| Droxidopa (orthostatic hypotension) | PO | Norepinephrine prodrug for neurogenic orthostatic hypotension in PD | 100 mg :: PO :: TID :: Start 100 mg TID; max 600 mg TID | Supine HTN | BP supine and standing | - | ROUTINE | ROUTINE | - |
+| Fludrocortisone (orthostatic hypotension) | PO | Mineralocorticoid for volume expansion in orthostatic hypotension | 0.1-0.2 mg :: PO :: daily :: 0.1-0.2 mg daily | Heart failure, HTN | K+, edema, supine BP | - | ROUTINE | ROUTINE | - |
+| Polyethylene glycol (constipation) | PO | Osmotic laxative for PD-associated constipation | 17 g :: PO :: daily :: 17 g daily in water | Bowel obstruction | Bowel movements | - | ROUTINE | ROUTINE | - |
 
 ---
 
