@@ -10,9 +10,11 @@
 		48429B7D684F345754B27131 /* NeuroPlansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E722DF8A276C1D329B6C7 /* NeuroPlansApp.swift */; };
 		106C8ED50E394E908FB4F614 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52997B40ADABD1140955F7 /* Plan.swift */; };
 		1DA4CD0710BF12E963035778 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8D175776E368F7CF13158 /* Category.swift */; };
+		CAF551675E07DD05D357D135 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E496D3B9D01E33D9A62D67B /* Reference.swift */; };
 		14F2D502F550D5D498AA8AF3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664493D66193B78FB79739D /* Theme.swift */; };
 		F57624D3BDA5A2D578668EF9 /* PlanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E9E5BC94984876BA01D54 /* PlanStore.swift */; };
 		A9FC4FD37D8EA901D77A7108 /* PlanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1EFCD8298BEE64CA27944 /* PlanBuilder.swift */; };
+		D051B4B827EAB918DAFA6E08 /* ReferenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A4270F2B88F11ED6040C3B /* ReferenceStore.swift */; };
 		BF948192111AEDAFFBD4B002 /* PriorityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB60595666619CF99A27966 /* PriorityBadge.swift */; };
 		C437590125543DE2C87CDD57 /* SettingPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507B6F674929EFE39750F39 /* SettingPicker.swift */; };
 		F351A74A07ED8AF8A9C93243 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E81FD7ED190EE711462C6 /* GlassCard.swift */; };
@@ -29,7 +31,17 @@
 		863183ED4E8E1B819D51238D /* BuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BE8DC931E756F724E4BBB /* BuilderView.swift */; };
 		EC7865A1384EAA88E84F0AD5 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8831CF461F1C86B0E4045 /* FavoritesView.swift */; };
 		493DA2C548CDDD063917CBB3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E470B439A45526F757CB297 /* SettingsView.swift */; };
+		CA0E9BA4E0EA8163531616A2 /* ReferenceHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A98F65E2EC82E1A3DC53A8 /* ReferenceHomeView.swift */; };
+		DCC5651725FEBEAA99B978C5 /* ScaleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79764873D21629CFD07DA8C /* ScaleListView.swift */; };
+		627E8EDCE3891F54640748ED /* ScaleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F8DFF333DD7120A6E7564D /* ScaleDetailView.swift */; };
+		671036B2852085071D291E3D /* ExamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9D76143FE2ABA6265D2C1 /* ExamListView.swift */; };
+		42225C2D20D7FAD910750B6F /* ExamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990747A9A954B4EC049AA348 /* ExamDetailView.swift */; };
+		ED9B794B63DF898336133744 /* ToolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D504DBAF3728329AFB2B222A /* ToolListView.swift */; };
+		BB2E8DEEE36199BB36D6FFB9 /* ToolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A8A4F9D0A4FEC2340EBE7 /* ToolDetailView.swift */; };
 		7D170A6A2E0159693F5A623B /* plans.json in Resources */ = {isa = PBXBuildFile; fileRef = 4316A3C3972A79AD6DFBE220 /* plans.json */; };
+		CD52DDE0A569677F93DDD3C6 /* scales.json in Resources */ = {isa = PBXBuildFile; fileRef = 742DAB5838ED474106402D36 /* scales.json */; };
+		CF0CB7A1ED1FA097A22803EC /* exams.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BCB40DA6D71166DE7CA6A84 /* exams.json */; };
+		F16162B36E17F436547EE7C9 /* tools.json in Resources */ = {isa = PBXBuildFile; fileRef = 996A64BAE63175BB2EFA96F4 /* tools.json */; };
 		F7EF2FF2CAE7C504BB9CF5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D7F43EDCBBEE35BABFD04F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +49,11 @@
 		4B0E722DF8A276C1D329B6C7 /* NeuroPlansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroPlansApp.swift; sourceTree = "<group>"; };
 		9B52997B40ADABD1140955F7 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		18F8D175776E368F7CF13158 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1E496D3B9D01E33D9A62D67B /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		3664493D66193B78FB79739D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		051E9E5BC94984876BA01D54 /* PlanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanStore.swift; sourceTree = "<group>"; };
 		14A1EFCD8298BEE64CA27944 /* PlanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanBuilder.swift; sourceTree = "<group>"; };
+		E6A4270F2B88F11ED6040C3B /* ReferenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceStore.swift; sourceTree = "<group>"; };
 		5CB60595666619CF99A27966 /* PriorityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityBadge.swift; sourceTree = "<group>"; };
 		8507B6F674929EFE39750F39 /* SettingPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPicker.swift; sourceTree = "<group>"; };
 		EB3E81FD7ED190EE711462C6 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
@@ -56,7 +70,17 @@
 		345BE8DC931E756F724E4BBB /* BuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderView.swift; sourceTree = "<group>"; };
 		F0D8831CF461F1C86B0E4045 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		8E470B439A45526F757CB297 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		82A98F65E2EC82E1A3DC53A8 /* ReferenceHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceHomeView.swift; sourceTree = "<group>"; };
+		C79764873D21629CFD07DA8C /* ScaleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleListView.swift; sourceTree = "<group>"; };
+		99F8DFF333DD7120A6E7564D /* ScaleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleDetailView.swift; sourceTree = "<group>"; };
+		EDC9D76143FE2ABA6265D2C1 /* ExamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamListView.swift; sourceTree = "<group>"; };
+		990747A9A954B4EC049AA348 /* ExamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailView.swift; sourceTree = "<group>"; };
+		D504DBAF3728329AFB2B222A /* ToolListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolListView.swift; sourceTree = "<group>"; };
+		5B5A8A4F9D0A4FEC2340EBE7 /* ToolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDetailView.swift; sourceTree = "<group>"; };
 		4316A3C3972A79AD6DFBE220 /* plans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plans.json; sourceTree = "<group>"; };
+		742DAB5838ED474106402D36 /* scales.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scales.json; sourceTree = "<group>"; };
+		0BCB40DA6D71166DE7CA6A84 /* exams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exams.json; sourceTree = "<group>"; };
+		996A64BAE63175BB2EFA96F4 /* tools.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tools.json; sourceTree = "<group>"; };
 		A7D7F43EDCBBEE35BABFD04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7901E6A9C0D4ABCFC83DE4E /* Neuro Plans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neuro Plans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +139,7 @@
 			children = (
 				9B52997B40ADABD1140955F7 /* Plan.swift */,
 				18F8D175776E368F7CF13158 /* Category.swift */,
+				1E496D3B9D01E33D9A62D67B /* Reference.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +149,7 @@
 			children = (
 				051E9E5BC94984876BA01D54 /* PlanStore.swift */,
 				14A1EFCD8298BEE64CA27944 /* PlanBuilder.swift */,
+				E6A4270F2B88F11ED6040C3B /* ReferenceStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -147,6 +173,7 @@
 				9E647B1B520442F90CA795C7 /* Builder */,
 				C792D4A2D1B391EB63935E43 /* Favorites */,
 				AD64142BBBFA1569D1106200 /* Settings */,
+				48F17F5AB268D003BE4EDC5C /* Reference */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,10 +242,27 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		48F17F5AB268D003BE4EDC5C /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				82A98F65E2EC82E1A3DC53A8 /* ReferenceHomeView.swift */,
+				C79764873D21629CFD07DA8C /* ScaleListView.swift */,
+				99F8DFF333DD7120A6E7564D /* ScaleDetailView.swift */,
+				EDC9D76143FE2ABA6265D2C1 /* ExamListView.swift */,
+				990747A9A954B4EC049AA348 /* ExamDetailView.swift */,
+				D504DBAF3728329AFB2B222A /* ToolListView.swift */,
+				5B5A8A4F9D0A4FEC2340EBE7 /* ToolDetailView.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
 		2F25B4994708BA11A17FD20B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4316A3C3972A79AD6DFBE220 /* plans.json */,
+				742DAB5838ED474106402D36 /* scales.json */,
+				0BCB40DA6D71166DE7CA6A84 /* exams.json */,
+				996A64BAE63175BB2EFA96F4 /* tools.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -272,6 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D170A6A2E0159693F5A623B /* plans.json in Resources */,
+				CD52DDE0A569677F93DDD3C6 /* scales.json in Resources */,
+				CF0CB7A1ED1FA097A22803EC /* exams.json in Resources */,
+				F16162B36E17F436547EE7C9 /* tools.json in Resources */,
 				F7EF2FF2CAE7C504BB9CF5E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,9 +333,11 @@
 				48429B7D684F345754B27131 /* NeuroPlansApp.swift in Sources */,
 				106C8ED50E394E908FB4F614 /* Plan.swift in Sources */,
 				1DA4CD0710BF12E963035778 /* Category.swift in Sources */,
+				CAF551675E07DD05D357D135 /* Reference.swift in Sources */,
 				14F2D502F550D5D498AA8AF3 /* Theme.swift in Sources */,
 				F57624D3BDA5A2D578668EF9 /* PlanStore.swift in Sources */,
 				A9FC4FD37D8EA901D77A7108 /* PlanBuilder.swift in Sources */,
+				D051B4B827EAB918DAFA6E08 /* ReferenceStore.swift in Sources */,
 				BF948192111AEDAFFBD4B002 /* PriorityBadge.swift in Sources */,
 				C437590125543DE2C87CDD57 /* SettingPicker.swift in Sources */,
 				F351A74A07ED8AF8A9C93243 /* GlassCard.swift in Sources */,
@@ -305,6 +354,13 @@
 				863183ED4E8E1B819D51238D /* BuilderView.swift in Sources */,
 				EC7865A1384EAA88E84F0AD5 /* FavoritesView.swift in Sources */,
 				493DA2C548CDDD063917CBB3 /* SettingsView.swift in Sources */,
+				CA0E9BA4E0EA8163531616A2 /* ReferenceHomeView.swift in Sources */,
+				DCC5651725FEBEAA99B978C5 /* ScaleListView.swift in Sources */,
+				627E8EDCE3891F54640748ED /* ScaleDetailView.swift in Sources */,
+				671036B2852085071D291E3D /* ExamListView.swift in Sources */,
+				42225C2D20D7FAD910750B6F /* ExamDetailView.swift in Sources */,
+				ED9B794B63DF898336133744 /* ToolListView.swift in Sources */,
+				BB2E8DEEE36199BB36D6FFB9 /* ToolDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

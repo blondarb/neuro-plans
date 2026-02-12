@@ -9,6 +9,10 @@ struct MainTabView: View {
                 HomeView()
             }
 
+            Tab("Reference", systemImage: "book.fill") {
+                ReferenceHomeView()
+            }
+
             Tab("Favorites", systemImage: "star.fill") {
                 FavoritesView()
             }
@@ -30,4 +34,5 @@ struct MainTabView: View {
     MainTabView()
         .environment(PlanStore())
         .environment(PlanBuilder())
+        .environment(ReferenceStore())
 }

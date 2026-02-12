@@ -1,0 +1,743 @@
+[
+  {
+    "id": "gcs",
+    "title": "Glasgow Coma Scale",
+    "abbreviation": "GCS",
+    "category": "consciousness",
+    "description": "Standardized scale for assessing level of consciousness based on eye, verbal, and motor responses.",
+    "components": [
+      {
+        "id": "eye",
+        "name": "Eye Opening",
+        "options": [
+          {"label": "Spontaneous", "value": 4, "description": "Eyes open spontaneously"},
+          {"label": "To speech", "value": 3, "description": "Eyes open to verbal command"},
+          {"label": "To pain", "value": 2, "description": "Eyes open to painful stimulus"},
+          {"label": "None", "value": 1, "description": "No eye opening"}
+        ]
+      },
+      {
+        "id": "verbal",
+        "name": "Verbal Response",
+        "options": [
+          {"label": "Oriented", "value": 5, "description": "Oriented and converses"},
+          {"label": "Confused", "value": 4, "description": "Disoriented and converses"},
+          {"label": "Inappropriate words", "value": 3, "description": "Inappropriate words, no sustained conversation"},
+          {"label": "Incomprehensible sounds", "value": 2, "description": "Moaning, no words"},
+          {"label": "None", "value": 1, "description": "No verbal response"}
+        ]
+      },
+      {
+        "id": "motor",
+        "name": "Motor Response",
+        "options": [
+          {"label": "Obeys commands", "value": 6, "description": "Obeys commands for movement"},
+          {"label": "Localizes pain", "value": 5, "description": "Purposeful movement toward painful stimulus"},
+          {"label": "Withdrawal", "value": 4, "description": "Withdraws from painful stimulus"},
+          {"label": "Abnormal flexion", "value": 3, "description": "Decorticate posturing to painful stimulus"},
+          {"label": "Extension", "value": 2, "description": "Decerebrate posturing to painful stimulus"},
+          {"label": "None", "value": 1, "description": "No motor response"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 3, "max": 8, "label": "Severe brain injury", "color": "red", "action": "Consider intubation for airway protection; neurosurgical consultation"},
+      {"min": 9, "max": 12, "label": "Moderate brain injury", "color": "orange", "action": "Close monitoring; serial neurological assessments"},
+      {"min": 13, "max": 15, "label": "Mild brain injury", "color": "green", "action": "Monitor; assess for deterioration"}
+    ],
+    "citation": "Teasdale G, Jennett B. Assessment of coma and impaired consciousness: a practical scale. Lancet. 1974;2(7872):81-84.",
+    "relatedPlans": ["brain-death-evaluation", "elevated-icp-management", "intracerebral-hemorrhage"]
+  },
+  {
+    "id": "nihss",
+    "title": "NIH Stroke Scale",
+    "abbreviation": "NIHSS",
+    "category": "stroke",
+    "description": "Systematic assessment of neurological deficit severity in acute stroke patients across 15 items.",
+    "components": [
+      {
+        "id": "1a",
+        "name": "1a. Level of Consciousness",
+        "options": [
+          {"label": "Alert", "value": 0, "description": "Keenly responsive"},
+          {"label": "Not alert, arousable by minor stimulation", "value": 1, "description": "Drowsy but arousable to minor stimulation"},
+          {"label": "Not alert, requires repeated stimulation", "value": 2, "description": "Requires repeated stimulation or painful stimulus for movements"},
+          {"label": "Unresponsive or reflexive responses only", "value": 3, "description": "Reflex motor or autonomic effects only, or totally unresponsive"}
+        ]
+      },
+      {
+        "id": "1b",
+        "name": "1b. LOC Questions",
+        "options": [
+          {"label": "Answers both correctly", "value": 0, "description": "Correctly states month and age"},
+          {"label": "Answers one correctly", "value": 1, "description": "Answers one question correctly"},
+          {"label": "Answers neither correctly", "value": 2, "description": "Answers neither question correctly"}
+        ]
+      },
+      {
+        "id": "1c",
+        "name": "1c. LOC Commands",
+        "options": [
+          {"label": "Performs both correctly", "value": 0, "description": "Correctly performs both tasks (open/close eyes, grip/release hand)"},
+          {"label": "Performs one correctly", "value": 1, "description": "Performs one task correctly"},
+          {"label": "Performs neither correctly", "value": 2, "description": "Performs neither task correctly"}
+        ]
+      },
+      {
+        "id": "2",
+        "name": "2. Best Gaze",
+        "options": [
+          {"label": "Normal", "value": 0, "description": "Normal horizontal eye movements"},
+          {"label": "Partial gaze palsy", "value": 1, "description": "Partial gaze palsy; abnormal gaze in one or both eyes but no forced deviation or total gaze paresis"},
+          {"label": "Forced deviation or total gaze paresis", "value": 2, "description": "Forced deviation or total gaze paresis not overcome by oculocephalic maneuver"}
+        ]
+      },
+      {
+        "id": "3",
+        "name": "3. Visual Fields",
+        "options": [
+          {"label": "No visual loss", "value": 0, "description": "No visual field defect"},
+          {"label": "Partial hemianopia", "value": 1, "description": "Partial hemianopia or extinction"},
+          {"label": "Complete hemianopia", "value": 2, "description": "Complete hemianopia"},
+          {"label": "Bilateral hemianopia or blind", "value": 3, "description": "Bilateral hemianopia including cortical blindness"}
+        ]
+      },
+      {
+        "id": "4",
+        "name": "4. Facial Palsy",
+        "options": [
+          {"label": "Normal", "value": 0, "description": "Normal symmetric movements"},
+          {"label": "Minor paralysis", "value": 1, "description": "Minor paralysis (flattened nasolabial fold, asymmetry on smiling)"},
+          {"label": "Partial paralysis", "value": 2, "description": "Partial paralysis (total or near-total paralysis of lower face)"},
+          {"label": "Complete paralysis", "value": 3, "description": "Complete paralysis of one or both sides (absence of facial movement in upper and lower face)"}
+        ]
+      },
+      {
+        "id": "5a",
+        "name": "5a. Left Arm Motor",
+        "options": [
+          {"label": "No drift", "value": 0, "description": "Limb holds 90 (or 45) degrees for full 10 seconds"},
+          {"label": "Drift", "value": 1, "description": "Limb holds position but drifts down before full 10 seconds; does not hit bed"},
+          {"label": "Some effort against gravity", "value": 2, "description": "Some effort against gravity; limb cannot get to or maintain 90 (or 45) degrees, drifts down to bed"},
+          {"label": "No effort against gravity", "value": 3, "description": "No effort against gravity; limb falls immediately"},
+          {"label": "No movement", "value": 4, "description": "No movement"}
+        ]
+      },
+      {
+        "id": "5b",
+        "name": "5b. Right Arm Motor",
+        "options": [
+          {"label": "No drift", "value": 0, "description": "Limb holds 90 (or 45) degrees for full 10 seconds"},
+          {"label": "Drift", "value": 1, "description": "Limb holds position but drifts down before full 10 seconds; does not hit bed"},
+          {"label": "Some effort against gravity", "value": 2, "description": "Some effort against gravity; limb cannot get to or maintain 90 (or 45) degrees, drifts down to bed"},
+          {"label": "No effort against gravity", "value": 3, "description": "No effort against gravity; limb falls immediately"},
+          {"label": "No movement", "value": 4, "description": "No movement"}
+        ]
+      },
+      {
+        "id": "6a",
+        "name": "6a. Left Leg Motor",
+        "options": [
+          {"label": "No drift", "value": 0, "description": "Leg holds 30-degree position for full 5 seconds"},
+          {"label": "Drift", "value": 1, "description": "Leg drifts to intermediate position by end of 5-second period"},
+          {"label": "Some effort against gravity", "value": 2, "description": "Some effort against gravity; leg falls to bed by 5 seconds"},
+          {"label": "No effort against gravity", "value": 3, "description": "No effort against gravity; leg falls to bed immediately"},
+          {"label": "No movement", "value": 4, "description": "No movement"}
+        ]
+      },
+      {
+        "id": "6b",
+        "name": "6b. Right Leg Motor",
+        "options": [
+          {"label": "No drift", "value": 0, "description": "Leg holds 30-degree position for full 5 seconds"},
+          {"label": "Drift", "value": 1, "description": "Leg drifts to intermediate position by end of 5-second period"},
+          {"label": "Some effort against gravity", "value": 2, "description": "Some effort against gravity; leg falls to bed by 5 seconds"},
+          {"label": "No effort against gravity", "value": 3, "description": "No effort against gravity; leg falls to bed immediately"},
+          {"label": "No movement", "value": 4, "description": "No movement"}
+        ]
+      },
+      {
+        "id": "7",
+        "name": "7. Limb Ataxia",
+        "options": [
+          {"label": "Absent", "value": 0, "description": "No ataxia"},
+          {"label": "Present in one limb", "value": 1, "description": "Ataxia present in one limb"},
+          {"label": "Present in two or more limbs", "value": 2, "description": "Ataxia present in two or more limbs"}
+        ]
+      },
+      {
+        "id": "8",
+        "name": "8. Sensory",
+        "options": [
+          {"label": "Normal", "value": 0, "description": "No sensory loss"},
+          {"label": "Mild-to-moderate sensory loss", "value": 1, "description": "Mild-to-moderate sensory loss; patient feels pinprick is less sharp or dull on affected side"},
+          {"label": "Severe or total sensory loss", "value": 2, "description": "Severe or total sensory loss; patient is not aware of being touched in the face, arm, and leg"}
+        ]
+      },
+      {
+        "id": "9",
+        "name": "9. Best Language",
+        "options": [
+          {"label": "No aphasia", "value": 0, "description": "Normal; no aphasia"},
+          {"label": "Mild-to-moderate aphasia", "value": 1, "description": "Mild-to-moderate aphasia; some obvious loss of fluency or comprehension, without significant limitation on ideas expressed"},
+          {"label": "Severe aphasia", "value": 2, "description": "Severe aphasia; all communication is through fragmentary expression; great need for inference and guessing by examiner"},
+          {"label": "Mute or global aphasia", "value": 3, "description": "Mute, global aphasia; no usable speech or auditory comprehension"}
+        ]
+      },
+      {
+        "id": "10",
+        "name": "10. Dysarthria",
+        "options": [
+          {"label": "Normal", "value": 0, "description": "Normal articulation"},
+          {"label": "Mild-to-moderate dysarthria", "value": 1, "description": "Mild-to-moderate; slurs some words, can be understood with some difficulty"},
+          {"label": "Severe dysarthria", "value": 2, "description": "Severe; speech so slurred as to be unintelligible or mute/anarthric"}
+        ]
+      },
+      {
+        "id": "11",
+        "name": "11. Extinction and Inattention",
+        "options": [
+          {"label": "No abnormality", "value": 0, "description": "No neglect"},
+          {"label": "Inattention or extinction in one modality", "value": 1, "description": "Visual, tactile, auditory, spatial, or personal inattention, or extinction to bilateral simultaneous stimulation in one sensory modality"},
+          {"label": "Profound hemi-inattention or extinction in more than one modality", "value": 2, "description": "Profound hemi-inattention or extinction to more than one modality; does not recognize own hand or orients to only one side of space"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 0, "label": "No stroke symptoms", "color": "green", "action": null},
+      {"min": 1, "max": 4, "label": "Minor stroke", "color": "green", "action": "Consider IV alteplase if within window; evaluate for underlying etiology"},
+      {"min": 5, "max": 15, "label": "Moderate stroke", "color": "yellow", "action": "IV alteplase if within 4.5 hours; consider thrombectomy if LVO suspected"},
+      {"min": 16, "max": 20, "label": "Moderate-to-severe stroke", "color": "orange", "action": "IV alteplase and evaluate for mechanical thrombectomy"},
+      {"min": 21, "max": 42, "label": "Severe stroke", "color": "red", "action": "IV alteplase if eligible; strong consideration for mechanical thrombectomy; ICU admission"}
+    ],
+    "citation": "Brott T, Adams HP Jr, et al. Measurements of acute cerebral infarction: a clinical examination scale. Stroke. 1989;20(7):864-870.",
+    "relatedPlans": ["acute-ischemic-stroke"]
+  },
+  {
+    "id": "mrs",
+    "title": "Modified Rankin Scale",
+    "abbreviation": "mRS",
+    "category": "stroke",
+    "description": "Global outcome scale measuring degree of disability or dependence in daily activities after stroke or neurological disability.",
+    "components": [
+      {
+        "id": "score",
+        "name": "Functional Outcome",
+        "options": [
+          {"label": "0 - No symptoms", "value": 0, "description": "No symptoms at all"},
+          {"label": "1 - No significant disability", "value": 1, "description": "No significant disability despite symptoms; able to carry out all usual duties and activities"},
+          {"label": "2 - Slight disability", "value": 2, "description": "Unable to carry out all previous activities but able to look after own affairs without assistance"},
+          {"label": "3 - Moderate disability", "value": 3, "description": "Requiring some help, but able to walk without assistance"},
+          {"label": "4 - Moderately severe disability", "value": 4, "description": "Unable to walk and attend to bodily needs without assistance"},
+          {"label": "5 - Severe disability", "value": 5, "description": "Bedridden, incontinent, requiring constant nursing care and attention"},
+          {"label": "6 - Dead", "value": 6, "description": "Dead"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 0, "label": "No symptoms", "color": "green", "action": null},
+      {"min": 1, "max": 1, "label": "No significant disability", "color": "green", "action": "Routine follow-up; secondary stroke prevention"},
+      {"min": 2, "max": 2, "label": "Slight disability", "color": "yellow", "action": "Secondary prevention; consider rehabilitation referral"},
+      {"min": 3, "max": 3, "label": "Moderate disability", "color": "yellow", "action": "Rehabilitation services; home health assessment"},
+      {"min": 4, "max": 4, "label": "Moderately severe disability", "color": "orange", "action": "Comprehensive rehabilitation; evaluate for skilled nursing facility"},
+      {"min": 5, "max": 5, "label": "Severe disability", "color": "red", "action": "Long-term care planning; goals of care discussion"},
+      {"min": 6, "max": 6, "label": "Dead", "color": "red", "action": null}
+    ],
+    "citation": "van Swieten JC, Koudstaal PJ, et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke. 1988;19(5):604-607.",
+    "relatedPlans": ["acute-ischemic-stroke", "intracerebral-hemorrhage"]
+  },
+  {
+    "id": "abcd2",
+    "title": "ABCD2 Score for TIA",
+    "abbreviation": "ABCD2",
+    "category": "stroke",
+    "description": "Risk stratification tool predicting short-term stroke risk after transient ischemic attack.",
+    "components": [
+      {
+        "id": "age",
+        "name": "Age",
+        "options": [
+          {"label": "Age < 60 years", "value": 0, "description": null},
+          {"label": "Age >= 60 years", "value": 1, "description": null}
+        ]
+      },
+      {
+        "id": "bp",
+        "name": "Blood Pressure",
+        "options": [
+          {"label": "BP < 140/90 mmHg", "value": 0, "description": "Initial blood pressure below 140/90"},
+          {"label": "BP >= 140/90 mmHg", "value": 1, "description": "Initial blood pressure 140/90 or higher"}
+        ]
+      },
+      {
+        "id": "clinical",
+        "name": "Clinical Features",
+        "options": [
+          {"label": "Other symptoms", "value": 0, "description": "Symptoms other than weakness or speech disturbance"},
+          {"label": "Speech disturbance without weakness", "value": 1, "description": "Speech disturbance without unilateral weakness"},
+          {"label": "Unilateral weakness", "value": 2, "description": "Unilateral weakness with or without speech disturbance"}
+        ]
+      },
+      {
+        "id": "duration",
+        "name": "Duration of Symptoms",
+        "options": [
+          {"label": "< 10 minutes", "value": 0, "description": "Symptoms lasted less than 10 minutes"},
+          {"label": "10-59 minutes", "value": 1, "description": "Symptoms lasted 10 to 59 minutes"},
+          {"label": ">= 60 minutes", "value": 2, "description": "Symptoms lasted 60 minutes or more"}
+        ]
+      },
+      {
+        "id": "diabetes",
+        "name": "Diabetes",
+        "options": [
+          {"label": "No diabetes", "value": 0, "description": null},
+          {"label": "Diabetes present", "value": 1, "description": "History of diabetes mellitus"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 3, "label": "Low risk", "color": "green", "action": "2-day stroke risk ~1%; outpatient workup may be appropriate with close follow-up"},
+      {"min": 4, "max": 5, "label": "Moderate risk", "color": "orange", "action": "2-day stroke risk ~4%; consider hospital admission for expedited workup"},
+      {"min": 6, "max": 7, "label": "High risk", "color": "red", "action": "2-day stroke risk ~8%; hospital admission recommended for urgent evaluation and treatment"}
+    ],
+    "citation": "Johnston SC, Rothwell PM, et al. Validation and refinement of scores to predict very early stroke risk after transient ischaemic attack. Lancet. 2007;369(9558):283-292.",
+    "relatedPlans": ["transient-ischemic-attack"]
+  },
+  {
+    "id": "cha2ds2-vasc",
+    "title": "CHA2DS2-VASc Score",
+    "abbreviation": "CHA2DS2-VASc",
+    "category": "stroke",
+    "description": "Estimates stroke risk in patients with non-valvular atrial fibrillation to guide anticoagulation decisions.",
+    "components": [
+      {
+        "id": "chf",
+        "name": "Congestive Heart Failure",
+        "options": [
+          {"label": "Absent", "value": 0, "description": null},
+          {"label": "Present", "value": 1, "description": "History of congestive heart failure or LV dysfunction (EF <= 40%)"}
+        ]
+      },
+      {
+        "id": "htn",
+        "name": "Hypertension",
+        "options": [
+          {"label": "Absent", "value": 0, "description": null},
+          {"label": "Present", "value": 1, "description": "Resting BP > 140/90 mmHg on at least 2 occasions or current antihypertensive treatment"}
+        ]
+      },
+      {
+        "id": "age75",
+        "name": "Age >= 75 years",
+        "options": [
+          {"label": "No", "value": 0, "description": null},
+          {"label": "Yes", "value": 2, "description": "Age 75 years or older"}
+        ]
+      },
+      {
+        "id": "diabetes",
+        "name": "Diabetes Mellitus",
+        "options": [
+          {"label": "Absent", "value": 0, "description": null},
+          {"label": "Present", "value": 1, "description": "Fasting glucose > 125 mg/dL or treatment with oral hypoglycemic or insulin"}
+        ]
+      },
+      {
+        "id": "stroke",
+        "name": "Stroke/TIA/Thromboembolism",
+        "options": [
+          {"label": "Absent", "value": 0, "description": null},
+          {"label": "Present", "value": 2, "description": "Prior stroke, TIA, or systemic thromboembolism"}
+        ]
+      },
+      {
+        "id": "vascular",
+        "name": "Vascular Disease",
+        "options": [
+          {"label": "Absent", "value": 0, "description": null},
+          {"label": "Present", "value": 1, "description": "Prior MI, peripheral artery disease, or aortic plaque"}
+        ]
+      },
+      {
+        "id": "age65",
+        "name": "Age 65-74 years",
+        "options": [
+          {"label": "No", "value": 0, "description": null},
+          {"label": "Yes", "value": 1, "description": "Age 65 to 74 years"}
+        ]
+      },
+      {
+        "id": "sex",
+        "name": "Sex Category",
+        "options": [
+          {"label": "Male", "value": 0, "description": null},
+          {"label": "Female", "value": 1, "description": "Female sex"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 0, "label": "Low risk", "color": "green", "action": "No anticoagulation therapy recommended (male); if female with no other risk factors, low risk"},
+      {"min": 1, "max": 1, "label": "Low-moderate risk", "color": "yellow", "action": "Consider oral anticoagulation or antiplatelet therapy based on individual risk-benefit assessment"},
+      {"min": 2, "max": 9, "label": "Moderate-high risk", "color": "red", "action": "Oral anticoagulation recommended (DOAC preferred over warfarin unless mechanical valve or moderate-severe mitral stenosis)"}
+    ],
+    "citation": "Lip GY, Nieuwlaat R, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the Euro Heart Survey on Atrial Fibrillation. Chest. 2010;137(2):263-272.",
+    "relatedPlans": ["acute-ischemic-stroke", "transient-ischemic-attack"]
+  },
+  {
+    "id": "phq9",
+    "title": "Patient Health Questionnaire-9",
+    "abbreviation": "PHQ-9",
+    "category": "cognitive",
+    "description": "Self-administered screening tool for depression severity based on DSM criteria, frequently used in neurology for comorbid depression assessment.",
+    "components": [
+      {
+        "id": "interest",
+        "name": "Little interest or pleasure in doing things",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": "Several days over the last 2 weeks"},
+          {"label": "More than half the days", "value": 2, "description": "More than half the days over the last 2 weeks"},
+          {"label": "Nearly every day", "value": 3, "description": "Nearly every day over the last 2 weeks"}
+        ]
+      },
+      {
+        "id": "depressed",
+        "name": "Feeling down, depressed, or hopeless",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "sleep",
+        "name": "Trouble falling or staying asleep, or sleeping too much",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "energy",
+        "name": "Feeling tired or having little energy",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "appetite",
+        "name": "Poor appetite or overeating",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "selfblame",
+        "name": "Feeling bad about yourself, or that you are a failure, or have let yourself or your family down",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "concentration",
+        "name": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "psychomotor",
+        "name": "Moving or speaking so slowly that other people could have noticed, or being fidgety or restless",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "selfharm",
+        "name": "Thoughts that you would be better off dead, or of hurting yourself in some way",
+        "options": [
+          {"label": "Not at all", "value": 0, "description": null},
+          {"label": "Several days", "value": 1, "description": null},
+          {"label": "More than half the days", "value": 2, "description": null},
+          {"label": "Nearly every day", "value": 3, "description": null}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 4, "label": "Minimal depression", "color": "green", "action": "Monitor; no treatment typically indicated"},
+      {"min": 5, "max": 9, "label": "Mild depression", "color": "yellow", "action": "Watchful waiting; consider counseling or follow-up PHQ-9"},
+      {"min": 10, "max": 14, "label": "Moderate depression", "color": "orange", "action": "Consider pharmacotherapy and/or psychotherapy; treatment plan recommended"},
+      {"min": 15, "max": 19, "label": "Moderately severe depression", "color": "orange", "action": "Active treatment with pharmacotherapy and/or psychotherapy recommended"},
+      {"min": 20, "max": 27, "label": "Severe depression", "color": "red", "action": "Immediate initiation of pharmacotherapy; consider referral to psychiatry; assess for suicidality"}
+    ],
+    "citation": "Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001;16(9):606-613.",
+    "relatedPlans": ["dementia-evaluation", "alzheimers-disease"]
+  },
+  {
+    "id": "epworth",
+    "title": "Epworth Sleepiness Scale",
+    "abbreviation": "ESS",
+    "category": "sleep",
+    "description": "Subjective measure of daytime sleepiness assessing the likelihood of dozing in eight common daily situations.",
+    "components": [
+      {
+        "id": "reading",
+        "name": "Sitting and reading",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": "No chance of dozing"},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "tv",
+        "name": "Watching TV",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "inactive_public",
+        "name": "Sitting inactive in a public place (e.g., theater or meeting)",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "passenger",
+        "name": "As a passenger in a car for an hour without a break",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "lying_down",
+        "name": "Lying down to rest in the afternoon when circumstances permit",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "talking",
+        "name": "Sitting and talking to someone",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "after_lunch",
+        "name": "Sitting quietly after lunch without alcohol",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      },
+      {
+        "id": "car_stopped",
+        "name": "In a car, while stopped for a few minutes in traffic",
+        "options": [
+          {"label": "Would never doze", "value": 0, "description": null},
+          {"label": "Slight chance of dozing", "value": 1, "description": null},
+          {"label": "Moderate chance of dozing", "value": 2, "description": null},
+          {"label": "High chance of dozing", "value": 3, "description": null}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 7, "label": "Normal daytime sleepiness", "color": "green", "action": "Unlikely pathological sleepiness"},
+      {"min": 8, "max": 9, "label": "Borderline sleepiness", "color": "yellow", "action": "Consider further evaluation if clinical suspicion exists"},
+      {"min": 10, "max": 15, "label": "Excessive daytime sleepiness", "color": "orange", "action": "Further evaluation recommended; consider polysomnography or MSLT"},
+      {"min": 16, "max": 24, "label": "Severe excessive daytime sleepiness", "color": "red", "action": "Urgent sleep medicine evaluation; polysomnography indicated; counsel on driving safety"}
+    ],
+    "citation": "Johns MW. A new method for measuring daytime sleepiness: the Epworth Sleepiness Scale. Sleep. 1991;14(6):540-545.",
+    "relatedPlans": ["narcolepsy", "obstructive-sleep-apnea-neuro"]
+  },
+  {
+    "id": "hunt-hess",
+    "title": "Hunt and Hess Classification",
+    "abbreviation": "Hunt-Hess",
+    "category": "stroke",
+    "description": "Clinical grading scale for subarachnoid hemorrhage severity used to predict surgical risk and prognosis.",
+    "components": [
+      {
+        "id": "grade",
+        "name": "Clinical Grade",
+        "options": [
+          {"label": "Grade 1", "value": 1, "description": "Asymptomatic or minimal headache and slight nuchal rigidity"},
+          {"label": "Grade 2", "value": 2, "description": "Moderate to severe headache, nuchal rigidity, no neurological deficit other than cranial nerve palsy"},
+          {"label": "Grade 3", "value": 3, "description": "Drowsy, confused, or mild focal neurological deficit"},
+          {"label": "Grade 4", "value": 4, "description": "Stupor, moderate to severe hemiparesis, possible early decerebrate rigidity"},
+          {"label": "Grade 5", "value": 5, "description": "Deep coma, decerebrate rigidity, moribund appearance"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 1, "max": 1, "label": "Grade 1 - Low risk", "color": "green", "action": "Good prognosis; surgical/endovascular treatment of aneurysm recommended"},
+      {"min": 2, "max": 2, "label": "Grade 2 - Low risk", "color": "green", "action": "Good prognosis; early aneurysm treatment recommended"},
+      {"min": 3, "max": 3, "label": "Grade 3 - Moderate risk", "color": "orange", "action": "ICU admission; early aneurysm treatment; closely monitor for vasospasm"},
+      {"min": 4, "max": 4, "label": "Grade 4 - High risk", "color": "red", "action": "ICU admission; stabilize before aneurysm treatment; high mortality risk; consider EVD if hydrocephalus present"},
+      {"min": 5, "max": 5, "label": "Grade 5 - Very high risk", "color": "red", "action": "ICU admission; consider goals of care discussion; treatment individualized; very poor prognosis"}
+    ],
+    "citation": "Hunt WE, Hess RM. Surgical risk as related to time of intervention in the repair of intracranial aneurysms. J Neurosurg. 1968;28(1):14-20.",
+    "relatedPlans": ["subarachnoid-hemorrhage"]
+  },
+  {
+    "id": "ich-score",
+    "title": "ICH Score",
+    "abbreviation": "ICH Score",
+    "category": "stroke",
+    "description": "Prognostic grading scale for intracerebral hemorrhage predicting 30-day mortality based on clinical and radiographic features.",
+    "components": [
+      {
+        "id": "gcs",
+        "name": "Glasgow Coma Scale",
+        "options": [
+          {"label": "GCS 13-15", "value": 0, "description": "Mild impairment or normal consciousness"},
+          {"label": "GCS 5-12", "value": 1, "description": "Moderate impairment of consciousness"},
+          {"label": "GCS 3-4", "value": 2, "description": "Severe impairment of consciousness"}
+        ]
+      },
+      {
+        "id": "volume",
+        "name": "ICH Volume",
+        "options": [
+          {"label": "< 30 mL", "value": 0, "description": "ICH volume less than 30 mL (ABC/2 method)"},
+          {"label": ">= 30 mL", "value": 1, "description": "ICH volume 30 mL or greater"}
+        ]
+      },
+      {
+        "id": "ivh",
+        "name": "Intraventricular Hemorrhage",
+        "options": [
+          {"label": "No", "value": 0, "description": "No intraventricular extension"},
+          {"label": "Yes", "value": 1, "description": "Intraventricular hemorrhage present on CT"}
+        ]
+      },
+      {
+        "id": "infratentorial",
+        "name": "Infratentorial Origin",
+        "options": [
+          {"label": "No", "value": 0, "description": "Supratentorial hemorrhage origin"},
+          {"label": "Yes", "value": 1, "description": "Infratentorial (cerebellar or brainstem) hemorrhage origin"}
+        ]
+      },
+      {
+        "id": "age",
+        "name": "Age",
+        "options": [
+          {"label": "Age < 80 years", "value": 0, "description": null},
+          {"label": "Age >= 80 years", "value": 1, "description": null}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 0, "label": "30-day mortality ~0%", "color": "green", "action": "Favorable prognosis; standard ICH management"},
+      {"min": 1, "max": 1, "label": "30-day mortality ~13%", "color": "yellow", "action": "ICU admission; aggressive blood pressure control; monitor for expansion"},
+      {"min": 2, "max": 2, "label": "30-day mortality ~26%", "color": "orange", "action": "ICU admission; neurosurgical consultation; consider EVD if IVH with hydrocephalus"},
+      {"min": 3, "max": 3, "label": "30-day mortality ~72%", "color": "red", "action": "ICU admission; neurosurgical consultation; early goals of care discussion"},
+      {"min": 4, "max": 4, "label": "30-day mortality ~97%", "color": "red", "action": "Goals of care discussion; consider comfort measures vs aggressive intervention"},
+      {"min": 5, "max": 6, "label": "30-day mortality ~100%", "color": "red", "action": "Very poor prognosis; goals of care discussion with family"}
+    ],
+    "citation": "Hemphill JC 3rd, Bonovich DC, et al. The ICH Score: a simple, reliable grading scale for intracerebral hemorrhage. Stroke. 2001;32(4):891-897.",
+    "relatedPlans": ["intracerebral-hemorrhage"]
+  },
+  {
+    "id": "four-score",
+    "title": "Full Outline of UnResponsiveness Score",
+    "abbreviation": "FOUR Score",
+    "category": "consciousness",
+    "description": "Coma scale providing more neurological detail than GCS, including brainstem reflexes and respiratory pattern, and can be used in intubated patients.",
+    "components": [
+      {
+        "id": "eye",
+        "name": "Eye Response",
+        "options": [
+          {"label": "Eyelids remain closed with pain", "value": 0, "description": "No eye opening or tracking"},
+          {"label": "Eyelids closed, open to pain", "value": 1, "description": "Eyes open to painful stimulation"},
+          {"label": "Eyelids closed, open to loud voice", "value": 2, "description": "Eyes open to loud voice"},
+          {"label": "Eyelids open but not tracking", "value": 3, "description": "Eyes open, not tracking or following commands"},
+          {"label": "Eyelids open, tracking or blinking to command", "value": 4, "description": "Eyes open, tracking objects or blinking on command"}
+        ]
+      },
+      {
+        "id": "motor",
+        "name": "Motor Response",
+        "options": [
+          {"label": "No response to pain, or generalized myoclonus status", "value": 0, "description": "No motor response or myoclonus status epilepticus"},
+          {"label": "Extension response to pain", "value": 1, "description": "Decerebrate posturing"},
+          {"label": "Flexion response to pain", "value": 2, "description": "Decorticate posturing"},
+          {"label": "Localizing to pain", "value": 3, "description": "Localizes to painful stimulus"},
+          {"label": "Thumbs-up, fist, or peace sign to command", "value": 4, "description": "Follows specific hand-shape commands (thumbs up, fist, or peace sign)"}
+        ]
+      },
+      {
+        "id": "brainstem",
+        "name": "Brainstem Reflexes",
+        "options": [
+          {"label": "Absent pupil, corneal, and cough reflexes", "value": 0, "description": "All brainstem reflexes absent"},
+          {"label": "Pupil and corneal reflexes absent", "value": 1, "description": "Pupil and corneal reflexes both absent; cough may be present"},
+          {"label": "Pupil or corneal reflex absent", "value": 2, "description": "Either pupil OR corneal reflex absent"},
+          {"label": "One pupil wide and fixed", "value": 3, "description": "One pupil wide and fixed; corneal and cough reflexes present"},
+          {"label": "Pupil and corneal reflexes present", "value": 4, "description": "Both pupil and corneal reflexes present and reactive"}
+        ]
+      },
+      {
+        "id": "respiration",
+        "name": "Respiration",
+        "options": [
+          {"label": "Breathes at ventilator rate or apnea", "value": 0, "description": "No respiratory drive; apnea or breathing at set ventilator rate only"},
+          {"label": "Breathes above ventilator rate", "value": 1, "description": "Intubated, breathes above set ventilator rate"},
+          {"label": "Not intubated, irregular breathing", "value": 2, "description": "Not intubated; irregular or Cheyne-Stokes breathing pattern"},
+          {"label": "Not intubated, Cheyne-Stokes breathing", "value": 3, "description": "Not intubated; Cheyne-Stokes breathing pattern"},
+          {"label": "Not intubated, regular breathing pattern", "value": 4, "description": "Not intubated; regular respiratory pattern"}
+        ]
+      }
+    ],
+    "interpretation": [
+      {"min": 0, "max": 0, "label": "May suggest brain death or unresponsive state", "color": "red", "action": "Consider brain death evaluation if E0+M0+B0+R0; full ancillary testing indicated"},
+      {"min": 1, "max": 4, "label": "Severe impairment", "color": "red", "action": "ICU management; frequent reassessments; consider prognostic workup (EEG, SSEP)"},
+      {"min": 5, "max": 8, "label": "Moderate impairment", "color": "orange", "action": "ICU admission; serial monitoring; evaluate for treatable causes"},
+      {"min": 9, "max": 12, "label": "Mild-moderate impairment", "color": "yellow", "action": "Close monitoring; identify and treat underlying etiology"},
+      {"min": 13, "max": 16, "label": "Intact or near-intact responses", "color": "green", "action": "Good prognostic sign; continue supportive care and monitoring"}
+    ],
+    "citation": "Wijdicks EF, Bamlet WR, et al. Validation of a new coma scale: The FOUR score. Ann Neurol. 2005;58(4):585-593.",
+    "relatedPlans": ["brain-death-evaluation", "elevated-icp-management"]
+  }
+]

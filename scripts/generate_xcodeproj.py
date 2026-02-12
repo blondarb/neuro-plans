@@ -41,6 +41,7 @@ DETAIL_GROUP        = uid("detail-group")
 BUILDER_GROUP       = uid("builder-group")
 FAVORITES_GROUP     = uid("favorites-group")
 SETTINGS_VIEW_GROUP = uid("settings-view-group")
+REFERENCE_GROUP     = uid("reference-group")
 RESOURCES_GROUP     = uid("resources-group")
 PRODUCTS_GROUP      = uid("products-group")
 FRAMEWORKS_GROUP    = uid("frameworks-group")
@@ -68,33 +69,45 @@ PRODUCT_REF         = uid("product-ref")
 # ---------------------------------------------------------------------------
 
 SWIFT_FILES = [
-    ("NeuroPlansApp.swift",  "NeuroPlansApp.swift",  "sourcecode.swift", "source"),
-    ("Plan.swift",           "Plan.swift",           "sourcecode.swift", "models"),
-    ("Category.swift",       "Category.swift",       "sourcecode.swift", "models"),
-    ("Theme.swift",          "Theme.swift",          "sourcecode.swift", "theme"),
-    ("PlanStore.swift",      "PlanStore.swift",      "sourcecode.swift", "services"),
-    ("PlanBuilder.swift",    "PlanBuilder.swift",    "sourcecode.swift", "services"),
-    ("PriorityBadge.swift",  "PriorityBadge.swift",  "sourcecode.swift", "components"),
-    ("SettingPicker.swift",  "SettingPicker.swift",  "sourcecode.swift", "components"),
-    ("GlassCard.swift",      "GlassCard.swift",      "sourcecode.swift", "components"),
-    ("MetadataChip.swift",   "MetadataChip.swift",   "sourcecode.swift", "components"),
-    ("MainTabView.swift",    "MainTabView.swift",    "sourcecode.swift", "views"),
-    ("HomeView.swift",       "HomeView.swift",       "sourcecode.swift", "home"),
-    ("CategoryCard.swift",   "CategoryCard.swift",   "sourcecode.swift", "home"),
-    ("PlanListView.swift",   "PlanListView.swift",   "sourcecode.swift", "browse"),
-    ("PlanRow.swift",        "PlanRow.swift",        "sourcecode.swift", "browse"),
-    ("PlanDetailView.swift", "PlanDetailView.swift", "sourcecode.swift", "detail"),
-    ("SectionGroup.swift",   "SectionGroup.swift",   "sourcecode.swift", "detail"),
-    ("ItemRows.swift",       "ItemRows.swift",       "sourcecode.swift", "detail"),
-    ("TreatmentItemRow.swift","TreatmentItemRow.swift","sourcecode.swift","detail"),
-    ("BuilderView.swift",    "BuilderView.swift",    "sourcecode.swift", "builder"),
-    ("FavoritesView.swift",  "FavoritesView.swift",  "sourcecode.swift", "favorites"),
-    ("SettingsView.swift",   "SettingsView.swift",   "sourcecode.swift", "settings_view"),
+    ("NeuroPlansApp.swift",        "NeuroPlansApp.swift",        "sourcecode.swift", "source"),
+    ("Plan.swift",                 "Plan.swift",                 "sourcecode.swift", "models"),
+    ("Category.swift",             "Category.swift",             "sourcecode.swift", "models"),
+    ("Reference.swift",            "Reference.swift",            "sourcecode.swift", "models"),
+    ("Theme.swift",                "Theme.swift",                "sourcecode.swift", "theme"),
+    ("PlanStore.swift",            "PlanStore.swift",            "sourcecode.swift", "services"),
+    ("PlanBuilder.swift",          "PlanBuilder.swift",          "sourcecode.swift", "services"),
+    ("ReferenceStore.swift",       "ReferenceStore.swift",       "sourcecode.swift", "services"),
+    ("PriorityBadge.swift",        "PriorityBadge.swift",        "sourcecode.swift", "components"),
+    ("SettingPicker.swift",        "SettingPicker.swift",        "sourcecode.swift", "components"),
+    ("GlassCard.swift",            "GlassCard.swift",            "sourcecode.swift", "components"),
+    ("MetadataChip.swift",         "MetadataChip.swift",         "sourcecode.swift", "components"),
+    ("MainTabView.swift",          "MainTabView.swift",          "sourcecode.swift", "views"),
+    ("HomeView.swift",             "HomeView.swift",             "sourcecode.swift", "home"),
+    ("CategoryCard.swift",         "CategoryCard.swift",         "sourcecode.swift", "home"),
+    ("PlanListView.swift",         "PlanListView.swift",         "sourcecode.swift", "browse"),
+    ("PlanRow.swift",              "PlanRow.swift",              "sourcecode.swift", "browse"),
+    ("PlanDetailView.swift",       "PlanDetailView.swift",       "sourcecode.swift", "detail"),
+    ("SectionGroup.swift",         "SectionGroup.swift",         "sourcecode.swift", "detail"),
+    ("ItemRows.swift",             "ItemRows.swift",             "sourcecode.swift", "detail"),
+    ("TreatmentItemRow.swift",     "TreatmentItemRow.swift",     "sourcecode.swift", "detail"),
+    ("BuilderView.swift",          "BuilderView.swift",          "sourcecode.swift", "builder"),
+    ("FavoritesView.swift",        "FavoritesView.swift",        "sourcecode.swift", "favorites"),
+    ("SettingsView.swift",         "SettingsView.swift",         "sourcecode.swift", "settings_view"),
+    ("ReferenceHomeView.swift",    "ReferenceHomeView.swift",    "sourcecode.swift", "reference"),
+    ("ScaleListView.swift",        "ScaleListView.swift",        "sourcecode.swift", "reference"),
+    ("ScaleDetailView.swift",      "ScaleDetailView.swift",      "sourcecode.swift", "reference"),
+    ("ExamListView.swift",         "ExamListView.swift",         "sourcecode.swift", "reference"),
+    ("ExamDetailView.swift",       "ExamDetailView.swift",       "sourcecode.swift", "reference"),
+    ("ToolListView.swift",         "ToolListView.swift",         "sourcecode.swift", "reference"),
+    ("ToolDetailView.swift",       "ToolDetailView.swift",       "sourcecode.swift", "reference"),
 ]
 
 RESOURCE_FILES = [
-    ("plans.json",      "plans.json",      "text.json",            "resources"),
-    ("Assets.xcassets",  "Assets.xcassets",  "folder.assetcatalog", "source"),
+    ("plans.json",       "plans.json",       "text.json",            "resources"),
+    ("scales.json",      "scales.json",      "text.json",            "resources"),
+    ("exams.json",       "exams.json",       "text.json",            "resources"),
+    ("tools.json",       "tools.json",       "text.json",            "resources"),
+    ("Assets.xcassets",  "Assets.xcassets",   "folder.assetcatalog",  "source"),
 ]
 
 # Generate IDs for each file
@@ -122,6 +135,7 @@ GROUP_MAP = {
     "builder":       BUILDER_GROUP,
     "favorites":     FAVORITES_GROUP,
     "settings_view": SETTINGS_VIEW_GROUP,
+    "reference":     REFERENCE_GROUP,
     "resources":     RESOURCES_GROUP,
 }
 
@@ -284,6 +298,7 @@ def generate_pbxproj() -> str:
     w(f"\t\t\t\t{BUILDER_GROUP} /* Builder */,")
     w(f"\t\t\t\t{FAVORITES_GROUP} /* Favorites */,")
     w(f"\t\t\t\t{SETTINGS_VIEW_GROUP} /* Settings */,")
+    w(f"\t\t\t\t{REFERENCE_GROUP} /* Reference */,")
     w("\t\t\t);")
     w('\t\t\tpath = Views;')
     w('\t\t\tsourceTree = "<group>";')
@@ -296,6 +311,7 @@ def generate_pbxproj() -> str:
     write_group(BUILDER_GROUP, "Builder", "Builder", group_children["builder"])
     write_group(FAVORITES_GROUP, "Favorites", "Favorites", group_children["favorites"])
     write_group(SETTINGS_VIEW_GROUP, "Settings", "Settings", group_children["settings_view"])
+    write_group(REFERENCE_GROUP, "Reference", "Reference", group_children["reference"])
     write_group(RESOURCES_GROUP, "Resources", "Resources", group_children["resources"])
 
     w("/* End PBXGroup section */")
@@ -604,8 +620,8 @@ def main():
         f.write(content)
 
     print(f"Generated {pbxproj_path}")
-    print(f"  22 Swift source files")
-    print(f"  2 resource files (plans.json, Assets.xcassets)")
+    print(f"  {len(SWIFT_FILES)} Swift source files")
+    print(f"  {len(RESOURCE_FILES)} resource files")
     print(f"  Target: iOS 17.0, Swift 5.9")
     print(f"\nOpen in Xcode:")
     print(f"  open ios/NeuroPlans/NeuroPlans.xcodeproj")
