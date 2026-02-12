@@ -139,54 +139,54 @@ tags:
 
 **IV Antihypertensive Agents (ICU setting — continuous infusion preferred):**
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Nicardipine IV infusion | 5 mg/hr :: IV :: continuous infusion :: start 5 mg/hr, titrate by 2.5 mg/hr every 5-15 min, max 15 mg/hr | **First-line preferred** — smooth, titratable, no rebound; good for most hypertensive emergencies including PRES |
-| Labetalol IV | 20 mg :: IV :: bolus over 2 min :: may repeat 40-80 mg every 10 min (max 300 mg total); or infusion 0.5-2 mg/min | First-line alternative — combined alpha/beta blockade; avoid in severe bradycardia, heart block, decompensated HF, cocaine-induced (use nicardipine instead) |
-| Clevidipine IV | 1-2 mg/hr :: IV :: continuous infusion :: titrate by doubling dose every 90 sec initially, then increase by 1-2 mg/hr; max 32 mg/hr | Ultra-short acting calcium channel blocker; rapid onset/offset; useful when precise BP control needed; lipid emulsion — avoid in soy/egg allergy, pancreatitis |
-| Sodium nitroprusside IV | 0.25-0.5 mcg/kg/min :: IV :: continuous infusion :: titrate every 5 min; max 10 mcg/kg/min | **Use only when other agents unavailable** — risk of cyanide toxicity (monitor thiocyanate levels if >48h); theoretical concern about increasing ICP; requires arterial line |
-| Fenoldopam IV | 0.1 mcg/kg/min :: IV :: continuous infusion :: titrate by 0.05-0.1 mcg/kg/min every 15 min | Dopamine-1 agonist — renal protective effects; useful in hypertensive emergency with renal insufficiency |
-| Hydralazine IV | 10-20 mg :: IV :: bolus every 4-6 hours | Unpredictable response, long duration — NOT recommended first-line; consider only if other agents unavailable; commonly used in eclampsia (with magnesium) |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Nicardipine IV infusion | IV | First-line IV antihypertensive for hypertensive emergency including PRES | 5 mg/hr :: IV :: continuous infusion :: start 5 mg/hr, titrate by 2.5 mg/hr every 5-15 min, max 15 mg/hr | — | Continuous arterial BP monitoring; MAP trend; neurological status | STAT | - | - | STAT |
+| Labetalol IV | IV | First-line alternative IV antihypertensive; combined alpha/beta blockade | 20 mg :: IV :: bolus over 2 min :: may repeat 40-80 mg every 10 min (max 300 mg total); or infusion 0.5-2 mg/min | Severe bradycardia; heart block; decompensated HF; cocaine-induced hypertension (use nicardipine instead) | Heart rate; BP; cardiac rhythm | STAT | - | - | STAT |
+| Clevidipine IV | IV | Ultra-short acting CCB for precise BP control | 1-2 mg/hr :: IV :: continuous infusion :: titrate by doubling dose every 90 sec initially, then increase by 1-2 mg/hr; max 32 mg/hr | Soy/egg allergy; pancreatitis | Continuous BP monitoring; triglycerides (lipid emulsion) | STAT | - | - | STAT |
+| Sodium nitroprusside IV | IV | Last-resort IV antihypertensive when other agents unavailable | 0.25-0.5 mcg/kg/min :: IV :: continuous infusion :: titrate every 5 min; max 10 mcg/kg/min | Risk of cyanide toxicity; theoretical concern about increasing ICP | Thiocyanate levels if >48h; requires arterial line; continuous BP monitoring | STAT | - | - | STAT |
+| Fenoldopam IV | IV | Dopamine-1 agonist; hypertensive emergency with renal insufficiency | 0.1 mcg/kg/min :: IV :: continuous infusion :: titrate by 0.05-0.1 mcg/kg/min every 15 min | — | BP monitoring; renal function; urine output | STAT | - | - | STAT |
+| Hydralazine IV | IV | Backup IV antihypertensive when other agents unavailable; eclampsia (with magnesium) | 10-20 mg :: IV :: bolus every 4-6 hours | NOT recommended first-line (unpredictable response, long duration) | BP monitoring; heart rate (reflex tachycardia) | STAT | - | - | STAT |
 
 **Seizure Management (if seizures occur — common in PRES):**
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Lorazepam IV | 4 mg :: IV :: bolus over 2 min :: may repeat x1 after 5 min | First-line for acute seizures; have airway equipment ready |
-| Levetiracetam IV | 1000-1500 mg :: IV :: load over 15 min :: then 500-1000 mg BID | Preferred maintenance ASM — no hepatic metabolism, minimal drug interactions; safe in pregnancy |
-| Fosphenytoin IV | 20 mg PE/kg :: IV :: load at 150 mg PE/min :: then 5 mg PE/kg/day | Alternative load if seizures persist; monitor for hypotension and arrhythmia during infusion |
-| Magnesium sulfate IV | 4-6 g :: IV :: load over 15-20 min :: then 1-2 g/hr | **First-line for eclampsia-related seizures** — superior to phenytoin and diazepam (MAGPIE trial); monitor reflexes, UO |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Lorazepam IV | IV | First-line for acute seizures | 4 mg :: IV :: bolus over 2 min :: may repeat x1 after 5 min | — | Airway; respiratory status; sedation level | STAT | STAT | - | STAT |
+| Levetiracetam IV | IV | Preferred maintenance ASM; safe in pregnancy | 1000-1500 mg :: IV :: load over 15 min :: then 500-1000 mg BID | — | Renal function (dose adjust); behavioral changes | STAT | STAT | - | STAT |
+| Fosphenytoin IV | IV | Alternative ASM load if seizures persist | 20 mg PE/kg :: IV :: load at 150 mg PE/min :: then 5 mg PE/kg/day | — | BP and cardiac rhythm during infusion (risk of hypotension and arrhythmia); free phenytoin level | STAT | STAT | - | STAT |
+| Magnesium sulfate IV | IV | First-line for eclampsia-related seizures; superior to phenytoin and diazepam (MAGPIE trial) | 4-6 g :: IV :: load over 15-20 min :: then 1-2 g/hr | — | Reflexes; urine output; magnesium levels; respiratory rate | STAT | STAT | - | STAT |
 
 ### 3B — First-Line Maintenance Treatment (Hospital/Transition)
 
 **Oral BP Transition (once IV control achieved and stable for 6-12 hours):**
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Amlodipine PO | 5-10 mg :: PO :: once daily :: start 5 mg, titrate to 10 mg | Long-acting CCB; smooth onset; good first-line oral agent for transition |
-| Lisinopril PO | 10-40 mg :: PO :: once daily :: start 10 mg | ACE inhibitor; avoid in bilateral renal artery stenosis, pregnancy, hyperkalemia |
-| Losartan PO | 50-100 mg :: PO :: once daily :: start 50 mg | ARB; alternative to ACE-I (cough, angioedema); avoid in pregnancy |
-| Labetalol PO | 200-800 mg :: PO :: BID :: start 200 mg BID | Oral continuation if IV labetalol was effective |
-| Chlorthalidone PO | 12.5-25 mg :: PO :: once daily | Thiazide-like diuretic; consider adding for resistant hypertension |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Amlodipine PO | PO | Long-acting CCB; first-line oral agent for BP transition | 5-10 mg :: PO :: once daily :: start 5 mg, titrate to 10 mg | — | BP; peripheral edema; heart rate | - | ROUTINE | ROUTINE | - |
+| Lisinopril PO | PO | ACE inhibitor for maintenance BP control | 10-40 mg :: PO :: once daily :: start 10 mg | Bilateral renal artery stenosis; pregnancy; hyperkalemia | Potassium; creatinine; BP | - | ROUTINE | ROUTINE | - |
+| Losartan PO | PO | ARB; alternative to ACE-I (cough, angioedema) | 50-100 mg :: PO :: once daily :: start 50 mg | Pregnancy | Potassium; creatinine; BP | - | ROUTINE | ROUTINE | - |
+| Labetalol PO | PO | Oral continuation if IV labetalol was effective | 200-800 mg :: PO :: BID :: start 200 mg BID | — | Heart rate; BP | - | ROUTINE | ROUTINE | - |
+| Chlorthalidone PO | PO | Thiazide-like diuretic; add-on for resistant hypertension | 12.5-25 mg :: PO :: once daily | — | Electrolytes (potassium, sodium, magnesium); creatinine; uric acid | - | ROUTINE | ROUTINE | - |
 
 ### 3C — Second-Line / Adjunctive Treatment
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Hydralazine PO | 25-50 mg :: PO :: TID-QID | Direct vasodilator; often combined with nitrate to offset reflex tachycardia |
-| Clonidine PO | 0.1-0.3 mg :: PO :: BID-TID | Central alpha-2 agonist; useful as add-on; avoid abrupt discontinuation (rebound hypertension) |
-| Minoxidil PO | 5-10 mg :: PO :: BID :: start 5 mg | Potent vasodilator; reserved for truly resistant hypertension; causes fluid retention and hirsutism |
-| Spironolactone PO | 25-50 mg :: PO :: once daily | Aldosterone antagonist; effective in resistant hypertension; monitor potassium |
-| Dexamethasone IV | 4-8 mg :: IV :: every 6 hours | **Only for PRES with significant mass effect** — role controversial; some evidence for reducing vasogenic edema |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Hydralazine PO | PO | Direct vasodilator; often combined with nitrate | 25-50 mg :: PO :: TID-QID | — | BP; heart rate (reflex tachycardia) | - | ROUTINE | ROUTINE | - |
+| Clonidine PO | PO | Central alpha-2 agonist; add-on for BP control | 0.1-0.3 mg :: PO :: BID-TID | Avoid abrupt discontinuation (rebound hypertension) | BP; sedation; rebound hypertension on withdrawal | - | ROUTINE | ROUTINE | - |
+| Minoxidil PO | PO | Potent vasodilator for truly resistant hypertension | 5-10 mg :: PO :: BID :: start 5 mg | — | BP; fluid retention; weight; ECG | - | ROUTINE | ROUTINE | - |
+| Spironolactone PO | PO | Aldosterone antagonist for resistant hypertension | 25-50 mg :: PO :: once daily | — | Potassium; creatinine; BP | - | ROUTINE | ROUTINE | - |
+| Dexamethasone IV | IV | PRES with significant mass effect only (role controversial); reducing vasogenic edema | 4-8 mg :: IV :: every 6 hours | — | Blood glucose; GI prophylaxis; infection signs | - | ROUTINE | - | ROUTINE |
 
 ### 3D — Eclampsia-Specific Treatment
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Magnesium sulfate IV | 4-6 g :: IV :: load over 15-20 min :: then 1-2 g/hr :: continue 24 hours postpartum | **Definitive seizure treatment and prophylaxis in eclampsia** — superior to all other agents |
-| Labetalol IV (pregnancy) | 20 mg :: IV :: bolus :: then 40-80 mg every 10-20 min (max 300 mg) | First-line antihypertensive in pregnancy-related hypertensive emergency |
-| Hydralazine IV (pregnancy) | 5-10 mg :: IV :: every 20-30 min | Traditional agent for eclampsia/preeclampsia; less predictable than labetalol |
-| Nifedipine PO (pregnancy) | 10-20 mg :: PO :: every 30 min (immediate release for acute) | Oral option for acute BP control in preeclampsia; avoid sublingual route |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Magnesium sulfate IV | IV | Definitive seizure treatment and prophylaxis in eclampsia; superior to all other agents | 4-6 g :: IV :: load over 15-20 min :: then 1-2 g/hr :: continue 24 hours postpartum | — | Reflexes; urine output; magnesium levels; respiratory rate | STAT | STAT | - | STAT |
+| Labetalol IV (pregnancy) | IV | First-line antihypertensive in pregnancy-related hypertensive emergency | 20 mg :: IV :: bolus :: then 40-80 mg every 10-20 min (max 300 mg) | — | Heart rate; BP; fetal heart rate monitoring | STAT | STAT | - | STAT |
+| Hydralazine IV (pregnancy) | IV | Traditional agent for eclampsia/preeclampsia; less predictable than labetalol | 5-10 mg :: IV :: every 20-30 min | — | BP; heart rate; fetal heart rate monitoring | STAT | STAT | - | STAT |
+| Nifedipine PO (pregnancy) | PO | Oral option for acute BP control in preeclampsia | 10-20 mg :: PO :: every 30 min (immediate release for acute) | Avoid sublingual route | BP; heart rate; fetal heart rate monitoring | STAT | STAT | - | STAT |
 
 > **DO NOT USE in eclampsia/pregnancy:** Sodium nitroprusside (fetal cyanide toxicity), ACE inhibitors, ARBs (teratogenic), atenolol (IUGR)
 

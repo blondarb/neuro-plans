@@ -1,7 +1,7 @@
 ---
 title: "Anoxic Brain Injury / Neuroprognostication"
 description: "Evidence-based clinical decision support for post-cardiac arrest care, neuroprognostication, and rehabilitation of anoxic brain injury"
-version: "1.1"
+version: "1.2"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
@@ -12,9 +12,9 @@ tags:
 
 # Anoxic Brain Injury / Neuroprognostication
 
-**VERSION:** 1.1
+**VERSION:** 1.2
 **CREATED:** January 30, 2026
-**REVISED:** January 30, 2026
+**REVISED:** February 12, 2026
 **STATUS:** Approved
 
 ---
@@ -196,16 +196,16 @@ SECTION A: ACTION ITEMS
 
 ### 3D. Chronic/Rehabilitation Therapies (Survivors)
 
-| Treatment | Route | Indication | Dosing | Pre-Treatment Requirements | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-|-----------|-------|------------|--------|---------------------------|-------------------|------------|:--:|:----:|:---:|:---:|
-| ICD (implantable cardioverter-defibrillator) | Procedure | Secondary prevention of sudden cardiac death in survivors with cardiac etiology and EF <=35% (or per electrophysiology study); typically implanted before discharge or at 40 days post-MI | N/A :: Procedure :: once :: Per cardiology/electrophysiology; ICD vs S-ICD per anatomy | Cardiac workup complete; EF assessment; electrophysiology study if indicated; shared decision-making | Active infection; terminal illness with <1yr life expectancy | Device checks q3-6 months; wound; inappropriate shocks | - | ROUTINE | ROUTINE | - |
-| Amantadine | PO | Arousal promotion in patients with disorders of consciousness (vegetative state/minimally conscious state); accelerates functional recovery | 100 mg :: PO :: BID :: 100 mg PO BID (via NG if needed); increase to 200 mg BID; give before noon to avoid insomnia | Baseline renal function; seizure history assessment | Renal impairment (dose adjust); seizure history (relative — lowers threshold) | Renal function; seizure activity; livedo reticularis; hallucinations | - | ROUTINE | ROUTINE | ROUTINE |
-| Sertraline | PO | Depression and emotional lability in ABI survivors; common post-anoxic complication | 25 mg :: PO :: daily :: Start 25 mg PO daily; increase by 25 mg q1-2 weeks; max 200 mg daily | Baseline ECG if cardiac risk factors | MAOIs; QT prolongation | Suicidality; serotonin syndrome signs; QTc if risk factors | - | ROUTINE | ROUTINE | - |
-| Methylphenidate | PO | Cognitive impairment and attention deficits in ABI survivors; post-anoxic apathy/abulia | 5 mg :: PO :: BID :: Start 5 mg PO BID (morning and noon); titrate by 5 mg q3-5 days; max 60 mg/day; avoid afternoon dosing | Baseline HR and BP; cardiac arrhythmia screen | Uncontrolled hypertension; severe anxiety; cardiac arrhythmia; psychosis | HR; BP; appetite; sleep; behavioral changes | - | ROUTINE | ROUTINE | - |
-| Modafinil | PO | Excessive daytime somnolence and fatigue in ABI survivors | 100 mg :: PO :: daily :: Start 100 mg PO daily in morning; increase to 200 mg; max 400 mg/day | Baseline hepatic function; cardiac screening | Severe hepatic impairment; cardiac arrhythmia | BP; HR; sleep quality; mood | - | - | ROUTINE | - |
-| Baclofen | PO | Spasticity in ABI survivors with upper motor neuron signs; post-anoxic posturing or hypertonia | 5 mg :: PO :: TID :: Start 5 mg PO TID; titrate by 5 mg/dose q3d; max 80 mg/day; do not stop abruptly | Baseline renal function | Renal impairment (dose adjust); seizure risk (withdrawal) | Sedation; weakness; urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
-| Tizanidine | PO | Spasticity alternative; post-anoxic hypertonia | 2 mg :: PO :: TID :: Start 2 mg PO TID; titrate by 2 mg q3-7d; max 36 mg/day | Baseline LFTs; avoid concurrent CYP1A2 inhibitors | Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin) | LFTs at baseline, 1mo, 3mo, 6mo; BP (hypotension); sedation | - | ROUTINE | ROUTINE | - |
-| Botulinum toxin type A (Botox) | IM | Focal spasticity in ABI survivors (upper or lower extremity) not responding to oral agents | per muscle group :: IM :: q12 weeks :: Dose per target muscles; typical total 200-400 units; repeat q12 weeks; onset 3-7 days | Muscle selection by trained provider; identify target muscles with ultrasound/EMG guidance | Infection at injection site; neuromuscular junction disorder | Weakness (focal); dysphagia (if cervical muscles); antibody formation | - | - | ROUTINE | - |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| ICD (implantable cardioverter-defibrillator) | Procedure | Secondary prevention of sudden cardiac death in survivors with cardiac etiology and EF <=35% (or per electrophysiology study); typically implanted before discharge or at 40 days post-MI | N/A :: Procedure :: once :: Per cardiology/electrophysiology; ICD vs S-ICD per anatomy | Pre-treatment: cardiac workup complete, EF assessment, electrophysiology study if indicated, shared decision-making. Active infection; terminal illness with <1yr life expectancy | Device checks q3-6 months; wound; inappropriate shocks | - | ROUTINE | ROUTINE | - |
+| Amantadine | PO | Arousal promotion in patients with disorders of consciousness (vegetative state/minimally conscious state); accelerates functional recovery | 100 mg :: PO :: BID :: 100 mg PO BID (via NG if needed); increase to 200 mg BID; give before noon to avoid insomnia | Pre-treatment: baseline renal function, seizure history assessment. Renal impairment (dose adjust); seizure history (relative — lowers threshold) | Renal function; seizure activity; livedo reticularis; hallucinations | - | ROUTINE | ROUTINE | ROUTINE |
+| Sertraline | PO | Depression and emotional lability in ABI survivors; common post-anoxic complication | 25 mg :: PO :: daily :: Start 25 mg PO daily; increase by 25 mg q1-2 weeks; max 200 mg daily | Pre-treatment: baseline ECG if cardiac risk factors. MAOIs; QT prolongation | Suicidality; serotonin syndrome signs; QTc if risk factors | - | ROUTINE | ROUTINE | - |
+| Methylphenidate | PO | Cognitive impairment and attention deficits in ABI survivors; post-anoxic apathy/abulia | 5 mg :: PO :: BID :: Start 5 mg PO BID (morning and noon); titrate by 5 mg q3-5 days; max 60 mg/day; avoid afternoon dosing | Pre-treatment: baseline HR and BP, cardiac arrhythmia screen. Uncontrolled hypertension; severe anxiety; cardiac arrhythmia; psychosis | HR; BP; appetite; sleep; behavioral changes | - | ROUTINE | ROUTINE | - |
+| Modafinil | PO | Excessive daytime somnolence and fatigue in ABI survivors | 100 mg :: PO :: daily :: Start 100 mg PO daily in morning; increase to 200 mg; max 400 mg/day | Pre-treatment: baseline hepatic function, cardiac screening. Severe hepatic impairment; cardiac arrhythmia | BP; HR; sleep quality; mood | - | - | ROUTINE | - |
+| Baclofen | PO | Spasticity in ABI survivors with upper motor neuron signs; post-anoxic posturing or hypertonia | 5 mg :: PO :: TID :: Start 5 mg PO TID; titrate by 5 mg/dose q3d; max 80 mg/day; do not stop abruptly | Pre-treatment: baseline renal function. Renal impairment (dose adjust); seizure risk (withdrawal) | Sedation; weakness; urinary retention | - | ROUTINE | ROUTINE | ROUTINE |
+| Tizanidine | PO | Spasticity alternative; post-anoxic hypertonia | 2 mg :: PO :: TID :: Start 2 mg PO TID; titrate by 2 mg q3-7d; max 36 mg/day | Pre-treatment: baseline LFTs, avoid concurrent CYP1A2 inhibitors. Hepatic impairment; concurrent CYP1A2 inhibitors (fluvoxamine, ciprofloxacin) | LFTs at baseline, 1mo, 3mo, 6mo; BP (hypotension); sedation | - | ROUTINE | ROUTINE | - |
+| Botulinum toxin type A (Botox) | IM | Focal spasticity in ABI survivors (upper or lower extremity) not responding to oral agents | per muscle group :: IM :: q12 weeks :: Dose per target muscles; typical total 200-400 units; repeat q12 weeks; onset 3-7 days | Pre-treatment: muscle selection by trained provider, identify target muscles with ultrasound/EMG guidance. Infection at injection site; neuromuscular junction disorder | Weakness (focal); dysphagia (if cervical muscles); antibody formation | - | - | ROUTINE | - |
 
 ---
 
@@ -437,6 +437,11 @@ SECTION B: REFERENCE (Expand as Needed)
 ---
 
 ## CHANGE LOG
+
+**v1.2 (February 12, 2026)**
+- Converted Section 3D treatment table from non-standard 11-column format to standard 10-column format per style guide
+- Merged Pre-Treatment Requirements column into Contraindications column with "Pre-treatment:" prefix to preserve clinical data
+- All treatment tables (3A, 3B, 3C, 3D) now use consistent 10-column layout: Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU
 
 **v1.1 (January 30, 2026)**
 - Fixed column order in all lab tables (1A, 1B, 1C) to place venue columns (ED/HOSP/OPD/ICU) as last 4 columns per style guide

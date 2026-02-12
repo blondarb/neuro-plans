@@ -393,317 +393,505 @@
       "— Acute / First-Line Immunotherapy": [
         {
           "item": "Methylprednisolone IV (pulse)",
+          "route": "IV",
+          "indication": "First-line acute immunotherapy; often combined with IVIG or PLEX",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
+                "text": "1000 mg",
+                "orderSentence": "Methylprednisolone IV (pulse) 1000 mg IV"
               }
             ],
             "route": "IV",
-            "instructions": "infuse over 1 hour",
-            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
-          }
+            "instructions": "infuse over 1 hour; premedicate with famotidine",
+            "orderSentence": "Methylprednisolone IV (pulse) 1000 mg IV"
+          },
+          "contraindications": "Avoid if CJD is the primary concern (steroids do not help and delay diagnosis)",
+          "monitoring": "Glucose (hyperglycemia), blood pressure, insomnia, psychiatric side effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "IVIG (intravenous immunoglobulin)",
+          "route": "IV",
+          "indication": "First-line acute immunotherapy; often combined with steroids; preferred over PLEX in many centers due to ease of administration",
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg IV daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg IV divided over 2-5 days"
+                "text": "0.4 g/kg/day",
+                "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg/day IV"
               }
             ],
             "route": "IV",
-            "instructions": "infuse per protocol (total 2 g/kg divided over 5 days)",
-            "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
-          }
+            "instructions": "infuse per protocol (total 2 g/kg divided over 5 days); premedicate with acetaminophen, diphenhydramine",
+            "orderSentence": "IVIG (intravenous immunoglobulin) 0.4 g/kg/day IV"
+          },
+          "contraindications": "IgA deficiency (anaphylaxis risk — check IgA level before first dose); thrombosis risk",
+          "monitoring": "Infusion reactions, IgA level before first dose",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         },
         {
           "item": "Plasma exchange (PLEX)",
+          "route": "Extracorporeal",
+          "indication": "First-line alternative to IVIG; preferred in severe/ICU cases; more rapid antibody clearance",
           "dosing": {
             "doseOptions": [
               {
                 "text": "5-7 sessions",
-                "orderSentence": "Plasma exchange (PLEX) 5-7 sessions every other day"
+                "orderSentence": "Plasma exchange (PLEX) 5-7 sessions extracorporeal"
               }
             ],
-            "route": "every other day",
-            "instructions": "5-7 sessions :: every other day :: total 1-1.5 plasma volumes per session",
-            "orderSentence": "Plasma exchange (PLEX) 5-7 sessions every other day"
-          }
+            "route": "extracorporeal",
+            "instructions": "total 1-1.5 plasma volumes per session; requires central venous access",
+            "orderSentence": "Plasma exchange (PLEX) 5-7 sessions extracorporeal"
+          },
+          "contraindications": "-",
+          "monitoring": "Hypotension, electrolyte imbalance, coagulopathy, line infection",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ],
       "— Second-Line Immunotherapy (If First-Line Fails)": [
         {
           "item": "Rituximab IV",
+          "route": "IV",
+          "indication": "First-choice second-line agent; anti-CD20 B-cell depletion; effective in NMDAR, LGI1, CASPR2, and many other antibody-mediated encephalitides",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "375 mg/m²",
+                "orderSentence": "Rituximab IV 375 mg/m² IV"
               }
             ],
             "route": "IV",
-            "instructions": "or 1000 mg IV x 2 doses 2 weeks apart",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-          }
+            "instructions": "or 1000 mg IV x 2 doses 2 weeks apart; pre-treat with methylprednisolone 100 mg IV, acetaminophen, diphenhydramine",
+            "orderSentence": "Rituximab IV 375 mg/m² IV"
+          },
+          "contraindications": "Hepatitis B (reactivation risk — screen before starting); PML risk (rare)",
+          "monitoring": "Onset of action 2-4 weeks; hepatitis B serology before starting",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
         },
         {
           "item": "Cyclophosphamide IV",
+          "route": "IV",
+          "indication": "Second-choice second-line; used with rituximab in severe refractory anti-NMDAR encephalitis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-              },
-              {
-                "text": "1000 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
+                "text": "750-1000 mg/m²",
+                "orderSentence": "Cyclophosphamide IV 750-1000 mg/m² IV"
               }
             ],
             "route": "IV",
             "instructions": "with MESNA and aggressive hydration",
-            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-          }
+            "orderSentence": "Cyclophosphamide IV 750-1000 mg/m² IV"
+          },
+          "contraindications": "Significant toxicity: hemorrhagic cystitis, infertility, secondary malignancy",
+          "monitoring": "CBC weekly during treatment; myelosuppression monitoring",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "ROUTINE",
+          "ICU": "URGENT"
         }
       ],
       "— Maintenance Immunotherapy (Relapse Prevention)": [
         {
           "item": "Prednisone PO (taper)",
+          "route": "PO",
+          "indication": "Oral steroid bridge after IV pulse; long-term maintenance in relapse-prone patients",
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg daily",
-                "orderSentence": "Prednisone 5 mg PO daily"
-              },
-              {
-                "text": "10 mg daily",
-                "orderSentence": "Prednisone 10 mg PO daily"
-              },
-              {
-                "text": "20 mg daily",
-                "orderSentence": "Prednisone 20 mg PO daily"
-              },
-              {
-                "text": "40 mg daily",
-                "orderSentence": "Prednisone 40 mg PO daily"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Prednisone 60 mg PO daily"
-              },
-              {
-                "text": "1 mg/kg daily",
-                "orderSentence": "Prednisone 1 mg/kg PO daily"
+                "text": "60 mg",
+                "orderSentence": "Prednisone PO (taper) 60 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "taper by 10 mg/week to 20 mg, then 5 mg/week to off; or maintain 10-20 mg daily long-term if relapse-prone",
-            "orderSentence": "Prednisone 5 mg PO daily"
-          }
+            "orderSentence": "Prednisone PO (taper) 60 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Cushingoid effects, osteoporosis (start calcium + vitamin D), hyperglycemia, cataracts",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Mycophenolate mofetil PO",
+          "route": "PO",
+          "indication": "Steroid-sparing maintenance; commonly used for LGI1, CASPR2, autoimmune encephalitis relapse prevention",
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
+                "text": "500-1000 mg",
+                "orderSentence": "Mycophenolate mofetil PO 500-1000 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "start 500 mg BID, increase to 1000 mg BID over 2-4 weeks",
-            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-          }
+            "orderSentence": "Mycophenolate mofetil PO 500-1000 mg PO"
+          },
+          "contraindications": "Teratogenic — pregnancy prevention mandatory",
+          "monitoring": "CBC every 2-4 weeks initially",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Azathioprine PO",
+          "route": "PO",
+          "indication": "Alternative steroid-sparing maintenance agent",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Azathioprine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Azathioprine 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Azathioprine 150 mg PO daily"
-              },
-              {
-                "text": "2-3 mg/kg daily",
-                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
+                "text": "1-3 mg/kg/day",
+                "orderSentence": "Azathioprine PO 1-3 mg/kg/day PO"
               }
             ],
             "route": "PO",
             "instructions": "start 50 mg daily, titrate up over 4-6 weeks",
-            "orderSentence": "Azathioprine 50 mg PO daily"
-          }
+            "orderSentence": "Azathioprine PO 1-3 mg/kg/day PO"
+          },
+          "contraindications": "Poor TPMT metabolizers at risk for severe myelosuppression (check TPMT genotype before starting)",
+          "monitoring": "CBC, LFTs; onset of action 3-6 months",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
           "item": "Rituximab IV (maintenance)",
+          "route": "IV",
+          "indication": "Long-term B-cell depletion for relapsing autoimmune encephalitis",
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "500-1000 mg",
+                "orderSentence": "Rituximab IV (maintenance) 500-1000 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "or guided by CD19/CD20 B-cell reconstitution",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-          }
+            "orderSentence": "Rituximab IV (maintenance) 500-1000 mg IV"
+          },
+          "contraindications": "Infection risk; hypogammaglobulinemia with repeated cycles",
+          "monitoring": "Immunoglobulins (hypogammaglobulinemia), CD19/CD20 B-cell count",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "— Tumor Treatment (Paraneoplastic Cases)": [
         {
-          "item": "**Tumor resection/treatment**",
-          "details": "**Essential in all paraneoplastic cases** — neurologic improvement is unlikely without tumor treatment; ovarian teratoma removal in anti-NMDAR encephalitis often leads to dramatic improvement; SCLC treatment (chemo/radiation); thymectomy for thymoma-associated cases"
+          "item": "Tumor resection/treatment",
+          "route": "-",
+          "indication": "Essential in all paraneoplastic cases; neurologic improvement is unlikely without tumor treatment",
+          "dosing": {
+            "instructions": "Ovarian teratoma removal (anti-NMDAR); SCLC treatment (chemo/radiation); thymectomy for thymoma-associated cases",
+            "orderSentence": "Tumor resection/treatment - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Post-operative neurologic status; antibody titers post-resection",
+          "ED": "-",
+          "HOSP": "URGENT",
+          "OPD": "URGENT",
+          "ICU": "URGENT"
         },
         {
-          "item": "**Repeat cancer screening**",
-          "details": "If initial screening negative but paraneoplastic antibodies are confirmed — repeat imaging at 3-6 month intervals for up to 5 years; occult tumors may emerge later"
+          "item": "Repeat cancer screening",
+          "route": "-",
+          "indication": "Paraneoplastic antibodies confirmed but initial screening negative; occult tumors may emerge later",
+          "dosing": {
+            "instructions": "Repeat imaging at 3-6 month intervals for up to 5 years",
+            "orderSentence": "Repeat cancer screening - - - see dosing"
+          },
+          "contraindications": "-",
+          "monitoring": "Serial imaging (CT, PET/CT) per cancer surveillance schedule",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         }
       ],
       "— Seizure Management": [
         {
           "item": "Levetiracetam",
+          "route": "PO/IV",
+          "indication": "First-line ASM for autoimmune encephalitis seizures; minimal drug interactions",
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg BID",
-                "orderSentence": "Levetiracetam 250 mg PO/IV BID"
-              },
-              {
-                "text": "500 mg BID",
-                "orderSentence": "Levetiracetam 500 mg PO/IV BID"
-              },
-              {
-                "text": "750 mg BID",
-                "orderSentence": "Levetiracetam 750 mg PO/IV BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Levetiracetam 1000 mg PO/IV BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Levetiracetam 1500 mg PO/IV BID"
+                "text": "500-1500 mg",
+                "orderSentence": "Levetiracetam 500-1500 mg PO/IV"
               }
             ],
             "route": "PO/IV",
             "instructions": "start 500 mg BID, titrate to effect",
-            "orderSentence": "Levetiracetam 250 mg PO/IV BID"
-          }
+            "orderSentence": "Levetiracetam 500-1500 mg PO/IV"
+          },
+          "contraindications": "May exacerbate psychiatric symptoms (irritability)",
+          "monitoring": "Psychiatric side effects, renal function",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         },
         {
           "item": "Lacosamide",
+          "route": "PO/IV",
+          "indication": "Well-tolerated alternative ASM; good IV formulation",
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg BID",
-                "orderSentence": "Lacosamide 50 mg PO/IV BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Lacosamide 100 mg PO/IV BID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Lacosamide 150 mg PO/IV BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Lacosamide 200 mg PO/IV BID"
+                "text": "50-200 mg",
+                "orderSentence": "Lacosamide 50-200 mg PO/IV"
               }
             ],
             "route": "PO/IV",
             "instructions": "start 50 mg BID, titrate by 50 mg/week",
-            "orderSentence": "Lacosamide 50 mg PO/IV BID"
-          }
+            "orderSentence": "Lacosamide 50-200 mg PO/IV"
+          },
+          "contraindications": "-",
+          "monitoring": "PR interval",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         },
         {
           "item": "Brivaracetam",
+          "route": "PO/IV",
+          "indication": "Alternative to levetiracetam with potentially fewer psychiatric side effects",
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg BID",
-                "orderSentence": "Brivaracetam 25 mg PO/IV BID"
-              },
-              {
-                "text": "50 mg BID",
-                "orderSentence": "Brivaracetam 50 mg PO/IV BID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Brivaracetam 75 mg PO/IV BID"
-              },
-              {
-                "text": "100 mg BID",
-                "orderSentence": "Brivaracetam 100 mg PO/IV BID"
+                "text": "25-100 mg",
+                "orderSentence": "Brivaracetam 25-100 mg PO/IV"
               }
             ],
             "route": "PO/IV",
             "instructions": "25-100 mg :: PO/IV :: BID",
-            "orderSentence": "Brivaracetam 25 mg PO/IV BID"
-          }
+            "orderSentence": "Brivaracetam 25-100 mg PO/IV"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         }
       ],
       "— Symptomatic and Supportive Treatment": [
         {
-          "item": "Quetiapine 25-100 mg PO qhs; or olanzapine 2.5-5 mg PO/IM"
+          "item": "Quetiapine",
+          "route": "PO",
+          "indication": "Psychiatric symptoms (agitation, psychosis); common in NMDAR encephalitis; low-dose atypical antipsychotics preferred",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-100 mg",
+                "orderSentence": "Quetiapine 25-100 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-100 mg :: PO :: qhs",
+            "orderSentence": "Quetiapine 25-100 mg PO"
+          },
+          "contraindications": "Avoid high doses (may lower seizure threshold)",
+          "monitoring": "Sedation, metabolic effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         },
         {
-          "item": "Melatonin 3-6 mg PO qhs; trazodone 25-50 mg PO qhs"
+          "item": "Olanzapine",
+          "route": "PO/IM",
+          "indication": "Psychiatric symptoms (agitation, psychosis); alternative to quetiapine",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "2.5-5 mg",
+                "orderSentence": "Olanzapine 2.5-5 mg PO/IM"
+              }
+            ],
+            "route": "PO/IM",
+            "instructions": "2.5-5 mg :: PO/IM :: as needed",
+            "orderSentence": "Olanzapine 2.5-5 mg PO/IM"
+          },
+          "contraindications": "Avoid high doses (may lower seizure threshold)",
+          "monitoring": "Sedation, metabolic effects",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "ROUTINE",
+          "ICU": "STAT"
         },
         {
-          "item": "ICU monitoring; avoid sympathomimetics; labetalol for hypertension; atropine for bradycardia"
+          "item": "Melatonin",
+          "route": "PO",
+          "indication": "Insomnia/sleep-wake disruption; common in anti-LGI1, NMDAR",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "3-6 mg",
+                "orderSentence": "Melatonin 3-6 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "3-6 mg :: PO :: qhs",
+            "orderSentence": "Melatonin 3-6 mg PO"
+          },
+          "contraindications": "-",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
         },
         {
-          "item": "Benzodiazepines (lorazepam, midazolam); consider propofol for severe cases"
+          "item": "Trazodone",
+          "route": "PO",
+          "indication": "Insomnia/sleep-wake disruption; alternative to melatonin",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "25-50 mg",
+                "orderSentence": "Trazodone 25-50 mg PO"
+              }
+            ],
+            "route": "PO",
+            "instructions": "25-50 mg :: PO :: qhs",
+            "orderSentence": "Trazodone 25-50 mg PO"
+          },
+          "contraindications": "Avoid benzodiazepines long-term",
+          "monitoring": "-",
+          "ED": "-",
+          "HOSP": "ROUTINE",
+          "OPD": "ROUTINE",
+          "ICU": "-"
+        },
+        {
+          "item": "Labetalol",
+          "route": "IV/PO",
+          "indication": "Autonomic instability — hypertension in NMDAR encephalitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per hypertension protocol",
+                "orderSentence": "Labetalol Per hypertension protocol IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "Per hypertension protocol :: IV/PO :: as needed",
+            "orderSentence": "Labetalol Per hypertension protocol IV/PO"
+          },
+          "contraindications": "Avoid sympathomimetics",
+          "monitoring": "ICU monitoring; central autonomic instability can be life-threatening; mechanical ventilation may be needed",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Atropine",
+          "route": "IV",
+          "indication": "Autonomic instability — bradycardia in NMDAR encephalitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per ACLS protocol",
+                "orderSentence": "Atropine Per ACLS protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Per ACLS protocol :: IV :: as needed",
+            "orderSentence": "Atropine Per ACLS protocol IV"
+          },
+          "contraindications": "-",
+          "monitoring": "ICU monitoring; heart rate, rhythm",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Lorazepam",
+          "route": "IV/PO",
+          "indication": "Dystonia/dyskinesias in NMDAR encephalitis; orofacial dyskinesias and dystonic posturing",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "0.5-2 mg",
+                "orderSentence": "Lorazepam 0.5-2 mg IV/PO"
+              }
+            ],
+            "route": "IV/PO",
+            "instructions": "0.5-2 mg :: IV/PO :: as needed",
+            "orderSentence": "Lorazepam 0.5-2 mg IV/PO"
+          },
+          "contraindications": "-",
+          "monitoring": "Sedation; refractory cases may require ICU sedation",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Midazolam",
+          "route": "IV",
+          "indication": "Dystonia/dyskinesias in NMDAR encephalitis; alternative to lorazepam",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "1-2 mg",
+                "orderSentence": "Midazolam 1-2 mg IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "1-2 mg :: IV :: as needed",
+            "orderSentence": "Midazolam 1-2 mg IV"
+          },
+          "contraindications": "-",
+          "monitoring": "Sedation, respiratory status",
+          "ED": "STAT",
+          "HOSP": "STAT",
+          "OPD": "-",
+          "ICU": "STAT"
+        },
+        {
+          "item": "Propofol",
+          "route": "IV",
+          "indication": "Severe refractory dystonia/dyskinesias in NMDAR encephalitis",
+          "dosing": {
+            "doseOptions": [
+              {
+                "text": "Per ICU sedation protocol",
+                "orderSentence": "Propofol Per ICU sedation protocol IV"
+              }
+            ],
+            "route": "IV",
+            "instructions": "Per ICU sedation protocol :: IV :: continuous infusion",
+            "orderSentence": "Propofol Per ICU sedation protocol IV"
+          },
+          "contraindications": "-",
+          "monitoring": "ICU sedation monitoring; propofol infusion syndrome risk",
+          "ED": "-",
+          "HOSP": "-",
+          "OPD": "-",
+          "ICU": "STAT"
         }
       ]
     },

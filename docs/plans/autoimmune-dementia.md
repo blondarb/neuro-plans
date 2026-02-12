@@ -144,55 +144,60 @@ tags:
 
 ### 3A — Acute / First-Line Immunotherapy
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Methylprednisolone IV (pulse) | 1000 mg :: IV :: once daily x 3-5 days :: infuse over 1 hour | **First-line acute immunotherapy** — often combined with IVIG or PLEX; premedicate with famotidine; monitor glucose (hyperglycemia), blood pressure, insomnia, psychiatric side effects; avoid if CJD is the primary concern (steroids do not help and delay diagnosis) |
-| IVIG (intravenous immunoglobulin) | 0.4 g/kg/day :: IV :: daily x 5 days :: infuse per protocol (total 2 g/kg divided over 5 days) | **First-line — often combined with steroids**; preferred over PLEX in many centers due to ease of administration; premedicate with acetaminophen, diphenhydramine; check IgA level before first dose (IgA deficiency → anaphylaxis risk); infusion reactions common; thrombosis risk |
-| Plasma exchange (PLEX) | 5-7 sessions :: every other day :: total 1-1.5 plasma volumes per session | **First-line alternative to IVIG** — preferred in severe/ICU cases; more rapid antibody clearance; requires central venous access; complications: hypotension, electrolyte imbalance, coagulopathy, line infection; may be combined with steroids |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Methylprednisolone IV (pulse) | IV | First-line acute immunotherapy; often combined with IVIG or PLEX | 1000 mg :: IV :: once daily x 3-5 days :: infuse over 1 hour; premedicate with famotidine | Avoid if CJD is the primary concern (steroids do not help and delay diagnosis) | Glucose (hyperglycemia), blood pressure, insomnia, psychiatric side effects | STAT | STAT | - | STAT |
+| IVIG (intravenous immunoglobulin) | IV | First-line acute immunotherapy; often combined with steroids; preferred over PLEX in many centers due to ease of administration | 0.4 g/kg/day :: IV :: daily x 5 days :: infuse per protocol (total 2 g/kg divided over 5 days); premedicate with acetaminophen, diphenhydramine | IgA deficiency (anaphylaxis risk — check IgA level before first dose); thrombosis risk | Infusion reactions, IgA level before first dose | STAT | STAT | - | STAT |
+| Plasma exchange (PLEX) | Extracorporeal | First-line alternative to IVIG; preferred in severe/ICU cases; more rapid antibody clearance | 5-7 sessions :: extracorporeal :: every other day :: total 1-1.5 plasma volumes per session; requires central venous access | - | Hypotension, electrolyte imbalance, coagulopathy, line infection | STAT | STAT | - | STAT |
 
 **Response assessment:** Evaluate at 2-4 weeks after first-line therapy. If no improvement or continued deterioration, escalate to second-line immunotherapy.
 
 ### 3B — Second-Line Immunotherapy (If First-Line Fails)
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Rituximab IV | 375 mg/m² :: IV :: weekly x 4 doses :: or 1000 mg IV x 2 doses 2 weeks apart | **First-choice second-line agent** — anti-CD20 B-cell depletion; onset of action 2-4 weeks; effective in NMDAR, LGI1, CASPR2, and many other antibody-mediated encephalitides; pre-treat with methylprednisolone 100 mg IV, acetaminophen, diphenhydramine; screen for hepatitis B before starting (reactivation risk); PML risk (rare) |
-| Cyclophosphamide IV | 750-1000 mg/m² :: IV :: monthly x 6 cycles :: with MESNA and aggressive hydration | Second-choice; used with rituximab in severe refractory anti-NMDAR encephalitis; significant toxicity (myelosuppression, hemorrhagic cystitis, infertility, secondary malignancy); monitor CBC weekly during treatment |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Rituximab IV | IV | First-choice second-line agent; anti-CD20 B-cell depletion; effective in NMDAR, LGI1, CASPR2, and many other antibody-mediated encephalitides | 375 mg/m² :: IV :: weekly x 4 doses :: or 1000 mg IV x 2 doses 2 weeks apart; pre-treat with methylprednisolone 100 mg IV, acetaminophen, diphenhydramine | Hepatitis B (reactivation risk — screen before starting); PML risk (rare) | Onset of action 2-4 weeks; hepatitis B serology before starting | - | URGENT | ROUTINE | URGENT |
+| Cyclophosphamide IV | IV | Second-choice second-line; used with rituximab in severe refractory anti-NMDAR encephalitis | 750-1000 mg/m² :: IV :: monthly x 6 cycles :: with MESNA and aggressive hydration | Significant toxicity: hemorrhagic cystitis, infertility, secondary malignancy | CBC weekly during treatment; myelosuppression monitoring | - | URGENT | ROUTINE | URGENT |
 
 ### 3C — Maintenance Immunotherapy (Relapse Prevention)
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Prednisone PO (taper) | 60 mg :: PO :: once daily :: taper by 10 mg/week to 20 mg, then 5 mg/week to off; or maintain 10-20 mg daily long-term if relapse-prone | Oral steroid bridge after IV pulse; long-term maintenance in some patients; monitor for cushingoid effects, osteoporosis (start calcium + vitamin D), hyperglycemia, cataracts |
-| Mycophenolate mofetil PO | 500-1000 mg :: PO :: BID :: start 500 mg BID, increase to 1000 mg BID over 2-4 weeks | Steroid-sparing maintenance agent; commonly used for LGI1, CASPR2, autoimmune encephalitis relapse prevention; monitor CBC every 2-4 weeks initially; teratogenic — pregnancy prevention mandatory |
-| Azathioprine PO | 1-3 mg/kg/day :: PO :: once daily or divided BID :: start 50 mg daily, titrate up over 4-6 weeks | Alternative steroid-sparing agent; check TPMT genotype before starting (poor metabolizers at risk for severe myelosuppression); monitor CBC, LFTs; onset of action 3-6 months |
-| Rituximab IV (maintenance) | 500-1000 mg :: IV :: every 6 months :: or guided by CD19/CD20 B-cell reconstitution | Long-term B-cell depletion for relapsing autoimmune encephalitis; monitor immunoglobulins (hypogammaglobulinemia with repeated cycles); infection risk |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Prednisone PO (taper) | PO | Oral steroid bridge after IV pulse; long-term maintenance in relapse-prone patients | 60 mg :: PO :: once daily :: taper by 10 mg/week to 20 mg, then 5 mg/week to off; or maintain 10-20 mg daily long-term if relapse-prone | - | Cushingoid effects, osteoporosis (start calcium + vitamin D), hyperglycemia, cataracts | - | ROUTINE | ROUTINE | - |
+| Mycophenolate mofetil PO | PO | Steroid-sparing maintenance; commonly used for LGI1, CASPR2, autoimmune encephalitis relapse prevention | 500-1000 mg :: PO :: BID :: start 500 mg BID, increase to 1000 mg BID over 2-4 weeks | Teratogenic — pregnancy prevention mandatory | CBC every 2-4 weeks initially | - | ROUTINE | ROUTINE | - |
+| Azathioprine PO | PO | Alternative steroid-sparing maintenance agent | 1-3 mg/kg/day :: PO :: once daily or divided BID :: start 50 mg daily, titrate up over 4-6 weeks | Poor TPMT metabolizers at risk for severe myelosuppression (check TPMT genotype before starting) | CBC, LFTs; onset of action 3-6 months | - | ROUTINE | ROUTINE | - |
+| Rituximab IV (maintenance) | IV | Long-term B-cell depletion for relapsing autoimmune encephalitis | 500-1000 mg :: IV :: every 6 months :: or guided by CD19/CD20 B-cell reconstitution | Infection risk; hypogammaglobulinemia with repeated cycles | Immunoglobulins (hypogammaglobulinemia), CD19/CD20 B-cell count | - | ROUTINE | ROUTINE | - |
 
 ### 3D — Tumor Treatment (Paraneoplastic Cases)
 
-| Approach | Details |
-|----------|---------|
-| **Tumor resection/treatment** | **Essential in all paraneoplastic cases** — neurologic improvement is unlikely without tumor treatment; ovarian teratoma removal in anti-NMDAR encephalitis often leads to dramatic improvement; SCLC treatment (chemo/radiation); thymectomy for thymoma-associated cases |
-| **Repeat cancer screening** | If initial screening negative but paraneoplastic antibodies are confirmed — repeat imaging at 3-6 month intervals for up to 5 years; occult tumors may emerge later |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Tumor resection/treatment | - | Essential in all paraneoplastic cases; neurologic improvement is unlikely without tumor treatment | Ovarian teratoma removal (anti-NMDAR); SCLC treatment (chemo/radiation); thymectomy for thymoma-associated cases | - | Post-operative neurologic status; antibody titers post-resection | - | URGENT | URGENT | URGENT |
+| Repeat cancer screening | - | Paraneoplastic antibodies confirmed but initial screening negative; occult tumors may emerge later | Repeat imaging at 3-6 month intervals for up to 5 years | - | Serial imaging (CT, PET/CT) per cancer surveillance schedule | - | - | ROUTINE | - |
 
 ### 3E — Seizure Management
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Levetiracetam | 500-1500 mg :: PO/IV :: BID :: start 500 mg BID, titrate to effect | First-line ASM for autoimmune encephalitis seizures; minimal drug interactions; may exacerbate psychiatric symptoms (irritability) |
-| Lacosamide | 50-200 mg :: PO/IV :: BID :: start 50 mg BID, titrate by 50 mg/week | Well-tolerated alternative; good IV formulation; monitor PR interval |
-| Brivaracetam | 25-100 mg :: PO/IV :: BID | Alternative to levetiracetam with potentially fewer psychiatric side effects |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Levetiracetam | PO/IV | First-line ASM for autoimmune encephalitis seizures; minimal drug interactions | 500-1500 mg :: PO/IV :: BID :: start 500 mg BID, titrate to effect | May exacerbate psychiatric symptoms (irritability) | Psychiatric side effects, renal function | STAT | STAT | ROUTINE | STAT |
+| Lacosamide | PO/IV | Well-tolerated alternative ASM; good IV formulation | 50-200 mg :: PO/IV :: BID :: start 50 mg BID, titrate by 50 mg/week | - | PR interval | STAT | STAT | ROUTINE | STAT |
+| Brivaracetam | PO/IV | Alternative to levetiracetam with potentially fewer psychiatric side effects | 25-100 mg :: PO/IV :: BID | - | - | STAT | STAT | ROUTINE | STAT |
 
 > **Important:** Seizures in autoimmune encephalitis are driven by the underlying autoimmune process. Immunotherapy is the definitive seizure treatment — ASMs are adjunctive. Refractory seizures should prompt escalation of immunotherapy, not just addition of more ASMs.
 
 ### 3F — Symptomatic and Supportive Treatment
 
-| Symptom | Treatment | Notes |
-|---------|-----------|-------|
-| **Psychiatric symptoms** (agitation, psychosis) | Quetiapine 25-100 mg PO qhs; or olanzapine 2.5-5 mg PO/IM | Common in NMDAR encephalitis; low-dose atypical antipsychotics preferred; avoid high doses (may lower seizure threshold); benzodiazepines for acute agitation |
-| **Insomnia/sleep-wake disruption** | Melatonin 3-6 mg PO qhs; trazodone 25-50 mg PO qhs | Common in anti-LGI1, NMDAR; avoid benzodiazepines long-term |
-| **Autonomic instability** (NMDAR) | ICU monitoring; avoid sympathomimetics; labetalol for hypertension; atropine for bradycardia | Central autonomic instability in severe NMDAR encephalitis can be life-threatening; mechanical ventilation may be needed |
-| **Dystonia/dyskinesias** (NMDAR) | Benzodiazepines (lorazepam, midazolam); consider propofol for severe cases | Orofacial dyskinesias and dystonic posturing common in NMDAR; refractory cases may require ICU sedation |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Quetiapine | PO | Psychiatric symptoms (agitation, psychosis); common in NMDAR encephalitis; low-dose atypical antipsychotics preferred | 25-100 mg :: PO :: qhs | Avoid high doses (may lower seizure threshold) | Sedation, metabolic effects | STAT | STAT | ROUTINE | STAT |
+| Olanzapine | PO/IM | Psychiatric symptoms (agitation, psychosis); alternative to quetiapine | 2.5-5 mg :: PO/IM :: as needed | Avoid high doses (may lower seizure threshold) | Sedation, metabolic effects | STAT | STAT | ROUTINE | STAT |
+| Melatonin | PO | Insomnia/sleep-wake disruption; common in anti-LGI1, NMDAR | 3-6 mg :: PO :: qhs | - | - | - | ROUTINE | ROUTINE | - |
+| Trazodone | PO | Insomnia/sleep-wake disruption; alternative to melatonin | 25-50 mg :: PO :: qhs | Avoid benzodiazepines long-term | - | - | ROUTINE | ROUTINE | - |
+| Labetalol | IV/PO | Autonomic instability — hypertension in NMDAR encephalitis | Per hypertension protocol :: IV/PO :: as needed | Avoid sympathomimetics | ICU monitoring; central autonomic instability can be life-threatening; mechanical ventilation may be needed | STAT | STAT | - | STAT |
+| Atropine | IV | Autonomic instability — bradycardia in NMDAR encephalitis | Per ACLS protocol :: IV :: as needed | - | ICU monitoring; heart rate, rhythm | STAT | STAT | - | STAT |
+| Lorazepam | IV/PO | Dystonia/dyskinesias in NMDAR encephalitis; orofacial dyskinesias and dystonic posturing | 0.5-2 mg :: IV/PO :: as needed | - | Sedation; refractory cases may require ICU sedation | STAT | STAT | - | STAT |
+| Midazolam | IV | Dystonia/dyskinesias in NMDAR encephalitis; alternative to lorazepam | 1-2 mg :: IV :: as needed | - | Sedation, respiratory status | STAT | STAT | - | STAT |
+| Propofol | IV | Severe refractory dystonia/dyskinesias in NMDAR encephalitis | Per ICU sedation protocol :: IV :: continuous infusion | - | ICU sedation monitoring; propofol infusion syndrome risk | - | - | - | STAT |
 
 ---
 

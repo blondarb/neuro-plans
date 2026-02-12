@@ -119,43 +119,43 @@ tags:
 
 > **Step 1: Identify and treat precipitants FIRST**
 
-| Action | Details |
-|--------|---------|
-| **Rule out delirium** | UTI, pneumonia, constipation/fecal impaction, medication changes, hospitalization itself — treat the underlying cause; psychosis may resolve entirely |
-| **Medication review — eliminate offending agents** | Systematic deprescribing in order of cognitive risk (stop first → stop last): **anticholinergics** (benztropine, trihexyphenidyl) → **amantadine** → **MAO-B inhibitors** (selegiline, rasagiline) → **dopamine agonists** (pramipexole, ropinirole, rotigotine) → **COMT inhibitors** (entacapone) → **reduce levodopa dose** (last resort — maintain motor function) |
-| **Environmental measures** | Adequate lighting (reduce visual hallucinations), familiar objects, reorientation, sleep hygiene, minimize polypharmacy |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Rule out delirium | - | Identify treatable precipitants of psychosis | - :: - :: - :: UTI, pneumonia, constipation/fecal impaction, medication changes, hospitalization itself — treat the underlying cause; psychosis may resolve entirely | - | Vital signs, urinalysis, CBC, CMP, chest X-ray | STAT | STAT | ROUTINE | STAT |
+| Medication review — eliminate offending agents | - | Deprescribe medications contributing to psychosis | - :: - :: - :: Systematic deprescribing in order of cognitive risk (stop first → stop last): **anticholinergics** (benztropine, trihexyphenidyl) → **amantadine** → **MAO-B inhibitors** (selegiline, rasagiline) → **dopamine agonists** (pramipexole, ropinirole, rotigotine) → **COMT inhibitors** (entacapone) → **reduce levodopa dose** (last resort — maintain motor function) | Do not abruptly discontinue dopaminergic agents — risk of neuroleptic malignant-like syndrome | Motor function (UPDRS); symptom re-assessment after each change | STAT | STAT | ROUTINE | STAT |
+| Environmental measures | - | Non-pharmacologic psychosis management | - :: - :: - :: Adequate lighting (reduce visual hallucinations), familiar objects, reorientation, sleep hygiene, minimize polypharmacy | - | Psychosis symptom frequency; sleep quality | STAT | STAT | ROUTINE | STAT |
 
 **If acute agitation requires pharmacologic intervention:**
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Quetiapine PO | 12.5-25 mg :: PO :: as needed :: start 12.5 mg, may repeat in 2 hours | **First-line for acute agitation in PDP** — lowest D2 affinity among available agents; sedating at low doses; avoid IM formulation |
-| Lorazepam | 0.5-1 mg :: PO/IV/IM :: as needed | **If severe agitation** — benzodiazepine safer than typical antipsychotic for acute PDP agitation; use lowest effective dose; fall risk |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Quetiapine | PO | Acute agitation in PDP — first-line; lowest D2 affinity among available agents | 12.5-25 mg :: PO :: as needed :: start 12.5 mg, may repeat in 2 hours | Avoid IM formulation; avoid if QTc >500 ms | Sedation level; QTc; metabolic panel; glucose | STAT | STAT | - | STAT |
+| Lorazepam | PO/IV/IM | Severe agitation in PDP — benzodiazepine safer than typical antipsychotic | 0.5-1 mg :: PO/IV/IM :: as needed :: use lowest effective dose | Respiratory depression; avoid in severe hepatic impairment | Sedation level; respiratory rate; fall risk | STAT | STAT | - | STAT |
 
 > **NEVER give:** haloperidol, olanzapine, risperidone, chlorpromazine, fluphenazine, or any other typical/atypical antipsychotic (except quetiapine/clozapine/pimavanserin) to a patient with PD or DLB. Even one dose can precipitate severe rigidity, akinetic crisis, or NMS-like syndrome.
 
 ### 3B — First-Line Chronic Treatment
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Pimavanserin (Nuplazid) | 34 mg :: PO :: once daily :: no titration needed | **Only FDA-approved medication for PDP** (2016); selective 5-HT2A inverse agonist; **no D2 blockade** — does not worsen motor symptoms; onset of effect 4-6 weeks; **QTc prolongation risk** — obtain baseline ECG, avoid if QTc >500 ms; avoid with strong CYP3A4 inhibitors; no dose adjustment in renal impairment; cost is significant — prior authorization usually required |
-| Quetiapine PO (chronic) | 12.5-150 mg :: PO :: at bedtime :: start 12.5 mg, titrate by 12.5-25 mg every 3-5 days; target lowest effective dose | Best-studied alternative to pimavanserin; AAN practice parameter notes limited evidence but wide clinical use; very low D2 affinity at low doses; sedation may benefit sleep; metabolic monitoring needed; orthostatic hypotension risk (already a PD issue); typical effective range 25-100 mg qhs |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Pimavanserin (Nuplazid) | PO | PDP — only FDA-approved medication (2016); selective 5-HT2A inverse agonist; no D2 blockade | 34 mg :: PO :: once daily :: no titration needed; onset of effect 4-6 weeks | Avoid if QTc >500 ms; avoid with strong CYP3A4 inhibitors | Baseline ECG and periodic QTc monitoring; no dose adjustment in renal impairment; prior authorization usually required | - | ROUTINE | ROUTINE | - |
+| Quetiapine (chronic) | PO | PDP — best-studied alternative to pimavanserin; very low D2 affinity at low doses | 12.5-150 mg :: PO :: at bedtime :: start 12.5 mg, titrate by 12.5-25 mg every 3-5 days; target lowest effective dose; typical effective range 25-100 mg qhs | Orthostatic hypotension risk (already a PD issue) | Metabolic panel; fasting glucose and lipids; weight; orthostatic blood pressure | - | ROUTINE | ROUTINE | - |
 
 ### 3C — Second-Line Treatment
 
-| Medication | Dose | Notes |
-|------------|------|-------|
-| Clozapine PO | 6.25-50 mg :: PO :: at bedtime :: start 6.25 mg (1/4 of 25 mg tablet), titrate by 6.25 mg every 3-7 days; target 12.5-50 mg/day | **Best evidence for efficacy** in PDP (Level B, AAN); low D2 affinity; effective at very low doses in PDP; **MAJOR LIMITATION: requires REMS program enrollment, mandatory ANC monitoring** (weekly x6 months, then biweekly x6 months, then monthly); risk of agranulocytosis (~1%); risk of myocarditis (rare); metabolic syndrome; sedation; sialorrhea |
-| Cholinesterase inhibitors (rivastigmine, donepezil) | Rivastigmine :: 1.5 mg :: PO :: BID :: titrate by 1.5 mg every 2 weeks to 6 mg BID; or rivastigmine patch 4.6 mg/24h → 9.5 mg/24h → 13.3 mg/24h | Evidence supports use in **PD dementia with psychosis** — addresses underlying cholinergic deficit; rivastigmine preferred (best evidence in PDD — EXPRESS trial); may reduce hallucinations as secondary benefit; GI side effects common with oral; patch better tolerated; tremor may transiently worsen |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Clozapine | PO | PDP — best evidence for efficacy (Level B, AAN); low D2 affinity; effective at very low doses | 6.25-50 mg :: PO :: at bedtime :: start 6.25 mg (1/4 of 25 mg tablet), titrate by 6.25 mg every 3-7 days; target 12.5-50 mg/day | Requires REMS program enrollment; contraindicated if unable to comply with ANC monitoring; risk of agranulocytosis (~1%); risk of myocarditis (rare) | Mandatory ANC monitoring (weekly x6 months, then biweekly x6 months, then monthly); metabolic panel; fasting glucose and lipids; weight | - | ROUTINE | ROUTINE | - |
+| Rivastigmine | PO/transdermal | PD dementia with psychosis — addresses cholinergic deficit; may reduce hallucinations (EXPRESS trial) | Rivastigmine :: 1.5 mg :: PO :: BID :: titrate by 1.5 mg every 2 weeks to 6 mg BID; or rivastigmine patch 4.6 mg/24h → 9.5 mg/24h → 13.3 mg/24h | GI side effects common with oral; tremor may transiently worsen | GI tolerability; cognitive testing (MMSE/MoCA); tremor severity | - | ROUTINE | ROUTINE | - |
 
 ### 3D — Refractory Psychosis Management
 
-| Approach | Details |
-|----------|---------|
-| **Combination therapy** | Pimavanserin + quetiapine (or + clozapine) — limited evidence but used in practice for severe cases |
-| **Electroconvulsive therapy (ECT)** | Case reports/small series show benefit for severe PDP refractory to medications; also improves motor symptoms temporarily; logistic and access barriers |
-| **Reduce levodopa** | If all else fails, gradually reduce levodopa — accept some motor worsening to control psychosis; family discussion about trade-offs essential |
-| **Structured care environment** | If psychosis is persistent and dangerous — consider memory care or psychiatric facility with movement disorder expertise |
+| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
+|-----------|-------|------------|--------|-------------------|------------|:--:|:----:|:---:|:---:|
+| Combination therapy (pimavanserin + quetiapine or + clozapine) | PO | Severe refractory PDP — limited evidence but used in practice | - :: - :: - :: Use pimavanserin + quetiapine (or + clozapine) per individual dosing guidelines above | Additive QTc prolongation risk with pimavanserin + quetiapine; additive sedation | QTc (combined agents); ANC if clozapine included; metabolic panel; sedation level | - | ROUTINE | ROUTINE | - |
+| Electroconvulsive therapy (ECT) | - | Severe PDP refractory to all medications; also improves motor symptoms temporarily | - :: - :: - :: Case reports/small series show benefit; logistic and access barriers | Standard ECT contraindications (raised ICP, pheochromocytoma, unstable aneurysm) | Post-procedure cognitive assessment; motor function (UPDRS); seizure duration | - | STAT | - | - |
+| Reduce levodopa | PO | Refractory psychosis — last resort; accept some motor worsening to control psychosis | - :: PO :: - :: If all else fails, gradually reduce levodopa; family discussion about trade-offs essential | Never abruptly discontinue — risk of neuroleptic malignant-like syndrome | Motor function (UPDRS); psychosis severity; ADL function | - | ROUTINE | ROUTINE | - |
+| Structured care environment | - | Persistent and dangerous psychosis unresponsive to treatment | - :: - :: - :: Consider memory care or psychiatric facility with movement disorder expertise | - | Safety assessments; psychosis severity; caregiver burden | - | ROUTINE | ROUTINE | - |
 
 > **Avoid in PDP:**
 > - Haloperidol (any dose, any route — catastrophic motor worsening)
