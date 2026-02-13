@@ -309,36 +309,53 @@ struct OtherRecItem: Codable, Identifiable, SettingFilterable {
 // MARK: - Reference Sections
 
 struct DifferentialItem: Codable, Identifiable {
-    let condition: String?
+    let diagnosis: String?      // JSON uses "diagnosis"
     let features: String?
-    let distinguishing: String?
+    let tests: String?          // JSON uses "tests" for distinguishing tests
 
-    var id: String { condition ?? UUID().uuidString }
+    var id: String { diagnosis ?? UUID().uuidString }
+    
+    // Computed property for backward compatibility with views
+    var condition: String? { diagnosis }
+    var distinguishing: String? { tests }
 }
 
 struct EvidenceItem: Codable, Identifiable {
-    let reference: String?
-    let summary: String?
-    let grade: String?
+    let recommendation: String? // JSON uses "recommendation"
+    let evidenceLevel: String?  // JSON uses "evidenceLevel"
+    let source: String?         // JSON uses "source" for the reference links
 
-    var id: String { reference ?? UUID().uuidString }
+    var id: String { recommendation ?? UUID().uuidString }
+    
+    // Computed properties for view compatibility
+    var reference: String? { recommendation }
+    var grade: String? { evidenceLevel }
+    var summary: String? { source }
 }
 
 struct MonitoringItem: Codable, Identifiable {
-    let parameter: String?
+    let item: String?           // JSON uses "item"
     let frequency: String?
-    let target: String?
     let action: String?
+    let ED: String?
+    let HOSP: String?
+    let OPD: String?
+    let ICU: String?
 
-    var id: String { parameter ?? UUID().uuidString }
+    var id: String { item ?? UUID().uuidString }
+    
+    // Computed property for backward compatibility
+    var parameter: String? { item }
 }
 
 struct DispositionItem: Codable, Identifiable {
-    let setting: String?
+    let disposition: String?    // JSON uses "disposition"
     let criteria: String?
-    let notes: String?
 
-    var id: String { setting ?? UUID().uuidString }
+    var id: String { disposition ?? UUID().uuidString }
+    
+    // Computed property for backward compatibility
+    var setting: String? { disposition }
 }
 
 // MARK: - Unified Selectable Item (for builder)

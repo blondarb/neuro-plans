@@ -364,18 +364,25 @@ private struct MonitoringSection: View {
 
     var body: some View {
         DisclosureGroup(isExpanded: $expanded) {
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 8) {
                 ForEach(items) { item in
-                    HStack(alignment: .top, spacing: 8) {
-                        Image(systemName: "chart.line.uptrend.xyaxis")
-                            .font(.system(size: 12))
-                            .foregroundStyle(.purple)
-                            .frame(width: 16)
-                        VStack(alignment: .leading, spacing: 2) {
+                    GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
+                        VStack(alignment: .leading, spacing: 4) {
                             Text(item.parameter ?? "—")
                                 .font(.system(.subheadline, weight: .medium))
                             if let freq = item.frequency {
-                                Text(freq).font(.caption).foregroundStyle(.secondary)
+                                HStack(spacing: 4) {
+                                    Image(systemName: "clock")
+                                        .font(.system(size: 10))
+                                    Text(freq)
+                                }
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                            }
+                            if let action = item.action {
+                                Text(action)
+                                    .font(.caption)
+                                    .foregroundStyle(.purple)
                             }
                         }
                     }
@@ -396,18 +403,20 @@ private struct DispositionSection: View {
 
     var body: some View {
         DisclosureGroup(isExpanded: $expanded) {
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: 8) {
                 ForEach(items) { item in
-                    HStack(alignment: .top, spacing: 8) {
-                        Image(systemName: "arrow.right.circle")
-                            .font(.system(size: 12))
-                            .foregroundStyle(.green)
-                            .frame(width: 16)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(item.setting ?? "—")
-                                .font(.system(.subheadline, weight: .medium))
+                    GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            HStack(spacing: 6) {
+                                Image(systemName: "arrow.right.circle.fill")
+                                    .foregroundStyle(.green)
+                                Text(item.setting ?? "—")
+                                    .font(.system(.subheadline, weight: .medium))
+                            }
                             if let criteria = item.criteria {
-                                Text(criteria).font(.caption).foregroundStyle(.secondary)
+                                Text(criteria)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
                             }
                         }
                     }
@@ -430,20 +439,26 @@ private struct EvidenceSection: View {
         DisclosureGroup(isExpanded: $expanded) {
             VStack(alignment: .leading, spacing: 8) {
                 ForEach(items) { item in
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(item.reference ?? "—")
-                            .font(.system(.caption, design: .default))
-                            .foregroundStyle(.primary)
-                        if let summary = item.summary {
-                            Text(summary)
-                                .font(.caption2)
-                                .foregroundStyle(.secondary)
-                        }
-                        if let grade = item.grade, !grade.isEmpty {
-                            MetadataChip(icon: "checkmark.seal", text: grade, color: .green)
+                    GlassCard(cornerRadius: AppTheme.smallCornerRadius) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            // Recommendation text
+                            Text(item.recommendation ?? "—")
+                                .font(.system(.subheadline, weight: .medium))
+                            
+                            // Evidence level badge
+                            if let level = item.evidenceLevel, !level.isEmpty {
+                                MetadataChip(icon: "checkmark.seal.fill", text: level, color: .green)
+                            }
+                            
+                            // Source/references - parse markdown links
+                            if let source = item.source {
+                                Text(parseMarkdownLinks(source))
+                                    .font(.caption)
+                                    .foregroundStyle(.blue)
+                                    .tint(.blue)
+                            }
                         }
                     }
-                    Divider().opacity(0.3)
                 }
             }
             .padding(.horizontal)
@@ -452,6 +467,54 @@ private struct EvidenceSection: View {
         }
         .tint(.secondary)
         .padding(.horizontal)
+    }
+    
+    // Parse markdown-style links and return AttributedString
+    private func parseMarkdownLinks(_ text: String) -> AttributedString {
+        var result = AttributedString()
+        let pattern = #"\[([^\]]+)\]\(([^)]+)\)"#
+        
+        guard let regex = try? NSRegularExpression(pattern: pattern) else {
+            return AttributedString(text)
+        }
+        
+        var lastEnd = text.startIndex
+        let nsRange = NSRange(text.startIndex..., in: text)
+        
+        for match in regex.matches(in: text, range: nsRange) {
+            // Add text before this match
+            if let beforeRange = Range(NSRange(location: nsRange.location, length: match.range.location - nsRange.location), in: text) {
+                let beforeText = String(text[lastEnd..<beforeRange.upperBound])
+                if !beforeText.isEmpty {
+                    result += AttributedString(beforeText)
+                }
+            }
+            
+            // Extract link text and URL
+            if let textRange = Range(match.range(at: 1), in: text),
+               let urlRange = Range(match.range(at: 2), in: text) {
+                let linkText = String(text[textRange])
+                let urlString = String(text[urlRange])
+                
+                var linkAttr = AttributedString(linkText)
+                if let url = URL(string: urlString) {
+                    linkAttr.link = url
+                    linkAttr.underlineStyle = .single
+                }
+                result += linkAttr
+            }
+            
+            if let matchRange = Range(match.range, in: text) {
+                lastEnd = matchRange.upperBound
+            }
+        }
+        
+        // Add remaining text
+        if lastEnd < text.endIndex {
+            result += AttributedString(String(text[lastEnd...]))
+        }
+        
+        return result
     }
 }
 
