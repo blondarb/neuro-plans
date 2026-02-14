@@ -340,13 +340,13 @@ private struct SubscriptionStatusRow: View {
                         Button {
                             onVerifyEmail()
                         } label: {
-                            Text("Team Member?")
+                            Text("Check Eligibility")
                                 .font(.system(.caption, design: .rounded, weight: .medium))
                                 .foregroundStyle(.purple)
                         }
                     }
                 }
-                
+
             case .subscribed(let expiration):
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Thank you for subscribing!")
@@ -373,14 +373,14 @@ private struct SubscriptionStatusRow: View {
                 
             case .whitelisted(let email):
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Free access with \(email)")
+                    Text("Complimentary access via \(email)")
                         .font(.caption)
                         .foregroundStyle(.secondary)
-                    
+
                     Button {
                         entitlement.clearVerifiedEmail()
                     } label: {
-                        Text("Remove Team Email")
+                        Text("Remove Verified Email")
                             .font(.system(.caption2, design: .rounded))
                             .foregroundStyle(.red.opacity(0.8))
                     }
@@ -424,7 +424,7 @@ private struct SubscriptionStatusRow: View {
                         Button {
                             onVerifyEmail()
                         } label: {
-                            Text("Team Member?")
+                            Text("Check Eligibility")
                                 .font(.system(.caption, design: .rounded, weight: .medium))
                                 .foregroundStyle(.purple)
                         }

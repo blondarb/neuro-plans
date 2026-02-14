@@ -322,6 +322,12 @@ struct EvidenceItem: Codable, Identifiable {
     let grade: String?
 
     var id: String { reference ?? UUID().uuidString }
+
+    private enum CodingKeys: String, CodingKey {
+        case reference = "source"
+        case summary = "recommendation"
+        case grade = "evidenceLevel"
+    }
 }
 
 struct MonitoringItem: Codable, Identifiable {

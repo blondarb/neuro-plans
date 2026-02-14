@@ -81,6 +81,7 @@ SWIFT_FILES = [
     ("SettingPicker.swift",        "SettingPicker.swift",        "sourcecode.swift", "components"),
     ("GlassCard.swift",            "GlassCard.swift",            "sourcecode.swift", "components"),
     ("MetadataChip.swift",         "MetadataChip.swift",         "sourcecode.swift", "components"),
+    ("MarkdownLinkText.swift",     "MarkdownLinkText.swift",     "sourcecode.swift", "components"),
     ("MainTabView.swift",          "MainTabView.swift",          "sourcecode.swift", "views"),
     ("HomeView.swift",             "HomeView.swift",             "sourcecode.swift", "home"),
     ("CategoryCard.swift",         "CategoryCard.swift",         "sourcecode.swift", "home"),

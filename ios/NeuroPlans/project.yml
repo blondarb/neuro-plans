@@ -6,6 +6,11 @@ options:
     iOS: "17.0"
   xcodeVersion: "15.0"
 
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    majorVersion: 2.0.0
+
 settings:
   base:
     SWIFT_VERSION: "5.9"
@@ -20,6 +25,8 @@ targets:
       - path: NeuroPlans
         excludes:
           - "**/.DS_Store"
+    dependencies:
+      - package: Supabase
     settings:
       base:
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES

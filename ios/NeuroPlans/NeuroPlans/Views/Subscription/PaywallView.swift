@@ -198,19 +198,19 @@ struct PaywallView: View {
             HStack {
                 Image(systemName: "building.2.fill")
                     .foregroundStyle(.purple)
-                Text("Sevaro Team Member?")
+                Text("Verify Your Email")
                     .font(.system(.subheadline, design: .rounded, weight: .medium))
             }
-            
-            Text("If you have a @sevaro.com email, you get free access.")
+
+            Text("Some organizations provide complimentary access.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
-            
+
             Button {
                 showEmailVerification = true
             } label: {
-                Text("Verify Team Email")
+                Text("Check Eligibility")
                     .font(.system(.subheadline, design: .rounded, weight: .semibold))
                     .foregroundStyle(.purple)
                     .padding(.horizontal, 20)

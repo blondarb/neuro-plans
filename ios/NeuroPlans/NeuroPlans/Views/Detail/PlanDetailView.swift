@@ -431,13 +431,17 @@ private struct EvidenceSection: View {
             VStack(alignment: .leading, spacing: 8) {
                 ForEach(items) { item in
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(item.reference ?? "—")
-                            .font(.system(.caption, design: .default))
-                            .foregroundStyle(.primary)
-                        if let summary = item.summary {
+                        if let summary = item.summary, !summary.isEmpty {
                             Text(summary)
-                                .font(.caption2)
-                                .foregroundStyle(.secondary)
+                                .font(.system(.caption, design: .default))
+                                .foregroundStyle(.primary)
+                        }
+                        if let reference = item.reference, !reference.isEmpty {
+                            MarkdownLinkText(
+                                text: reference,
+                                font: .caption2,
+                                color: .secondary
+                            )
                         }
                         if let grade = item.grade, !grade.isEmpty {
                             MetadataChip(icon: "checkmark.seal", text: grade, color: .green)
