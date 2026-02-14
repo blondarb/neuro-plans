@@ -485,8 +485,8 @@ BREAKTHROUGH SEIZURE IN KNOWN EPILEPSY
 
 | Population | Considerations |
 |-----------|---------------|
-| **Pregnancy** | Folic acid 0.4-4 mg daily (start preconception); avoid valproate if possible (highest teratogenicity); lamotrigine and levetiracetam generally preferred; levels drop in pregnancy (especially lamotrigine) — monitor monthly and increase doses; valproate level may be falsely reassuring (protein binding changes) |
-| **Women of childbearing potential** | Counsel all on teratogenicity; contraception counseling (enzyme inducers reduce OCP efficacy); preconception planning; folic acid; prefer lamotrigine, levetiracetam over valproate |
+| **Pregnancy** | Folic acid 0.4-4 mg daily (start preconception); **avoid valproate, topiramate, and phenobarbital** (teratogenic — per AAN/AES/SMFM 2024 guideline); lamotrigine, levetiracetam, and oxcarbazepine generally preferred; levels drop in pregnancy (especially lamotrigine) — monitor monthly and increase doses; valproate level may be falsely reassuring (protein binding changes) |
+| **Women of childbearing potential** | Counsel all on teratogenicity; contraception counseling (enzyme inducers reduce OCP efficacy); preconception planning; folic acid; prefer lamotrigine, levetiracetam, or oxcarbazepine over valproate, topiramate, and phenobarbital |
 | **Elderly** | Increased sensitivity to ASM side effects; cognitive effects; falls; start low, go slow; drug interactions (polypharmacy); lamotrigine, levetiracetam, lacosamide generally well-tolerated; avoid phenobarbital, high-dose phenytoin |
 | **Renal impairment** | Reduce doses of renally-cleared ASMs: levetiracetam, gabapentin, pregabalin, topiramate, lacosamide; phenytoin, carbamazepine, valproate less affected |
 | **Hepatic impairment** | Reduce doses of hepatically-metabolized ASMs: phenytoin, carbamazepine, valproate, lamotrigine; levetiracetam, gabapentin safer |

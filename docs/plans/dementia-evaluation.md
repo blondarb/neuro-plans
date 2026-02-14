@@ -40,6 +40,18 @@ tags:
 
 ---
 
+**EVALUATION FRAMEWORK (Alzheimer's Association DETeCD-ADRD 2024):**
+The DETeCD-ADRD guideline recommends a structured 7-element evaluation:
+1. **Symptom assessment** — onset, progression, domains affected
+2. **Medical history review** — risk factors, medications, comorbidities
+3. **Cognitive testing** — standardized screening (MoCA or equivalent)
+4. **Neurological examination** — motor, sensory, cranial nerves, gait
+5. **Laboratory testing** — B12, TSH, metabolic panel (see Section 1A below)
+6. **Structural neuroimaging** — MRI preferred (see Section 2A below)
+7. **Etiological determination** — integrate findings to identify cause; consider biomarkers
+
+---
+
 **PRIORITY KEY:** STAT = Immediate | URGENT = Within hours | ROUTINE = Standard | EXT = Extended/atypical cases | - = Not applicable to this setting
 
 ---

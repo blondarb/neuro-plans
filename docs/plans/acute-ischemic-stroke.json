@@ -505,19 +505,19 @@
           "ICU": "STAT"
         },
         {
-          "item": "Tenecteplase IV (CPT 96374) (if available)",
+          "item": "Tenecteplase IV (CPT 96374)",
           "route": "IV",
-          "indication": "Acute ischemic stroke; single-bolus thrombolytic (LVO planned for thrombectomy)",
+          "indication": "Acute ischemic stroke; Class I alternative to alteplase (single-bolus)",
           "dosing": {
             "doseOptions": [
               {
                 "text": "0.25 mg/kg",
-                "orderSentence": "Tenecteplase IV (CPT 96374) (if available) 0.25 mg/kg IV"
+                "orderSentence": "Tenecteplase IV (CPT 96374) 0.25 mg/kg IV"
               }
             ],
             "route": "IV",
-            "instructions": "0.25 mg/kg IV single bolus (max 25 mg); preferred if LVO planned for thrombectomy",
-            "orderSentence": "Tenecteplase IV (CPT 96374) (if available) 0.25 mg/kg IV"
+            "instructions": "0.25 mg/kg IV single bolus (max 25 mg); Class I recommendation per AHA/ASA 2026 guidelines as non-inferior alternative to alteplase for all eligible patients; single-bolus administration simplifies workflow and is preferred when endovascular thrombectomy is planned",
+            "orderSentence": "Tenecteplase IV (CPT 96374) 0.25 mg/kg IV"
           },
           "contraindications": "Same as alteplase",
           "monitoring": "Same as alteplase",
@@ -529,7 +529,7 @@
         {
           "item": "Endovascular thrombectomy",
           "route": "-",
-          "indication": "Large vessel occlusion (ICA, M1, basilar); within 24h if eligible",
+          "indication": "Large vessel occlusion (ICA, M1, M2, basilar); within 24h if eligible",
           "dosing": {
             "doseOptions": [
               {
@@ -538,10 +538,10 @@
               }
             ],
             "route": "-",
-            "instructions": "For LVO (ICA, M1, M1-M2 junction, basilar); within 24h if eligible per DAWN/DEFUSE-3 criteria. 0-6h: NIHSS ≥6, ASPECTS ≥6. 6-24h: clinical-core mismatch on perfusion imaging",
+            "instructions": "For LVO (ICA, M1, M1-M2 junction, select M2, basilar artery); 0-6h: NIHSS ≥6, ASPECTS ≥6 (ASPECTS 3-5 may be eligible per RESCUE-Japan LIMIT and SELECT2 trials — discuss with neurointerventionalist). 6-24h: clinical-core mismatch on perfusion imaging per DAWN/DEFUSE-3 criteria. Basilar artery occlusion: within 24h per ATTENTION and BAOCHE trials",
             "orderSentence": "Endovascular thrombectomy N/A -"
           },
-          "contraindications": "Large established infarct core (ASPECTS <6 in 0-6h window); no LVO; poor premorbid function (mRS >2 relative); life expectancy <6 months",
+          "contraindications": "Large completed infarct without salvageable tissue; no LVO; poor premorbid function (mRS >2 relative); life expectancy <6 months",
           "monitoring": "Continuous monitoring in neuro-ICU post-procedure; groin check; BP per post-thrombectomy protocol",
           "ED": "STAT",
           "HOSP": "STAT",
@@ -1638,9 +1638,9 @@
       "source": "[AHA/ASA 2026 AIS Guidelines (Prabhakaran et al.)](https://pubmed.ncbi.nlm.nih.gov/41582814/); [NINDS trial (NEJM 1995)](https://pubmed.ncbi.nlm.nih.gov/7477192/); [ECASS III (Hacke et al. NEJM 2008)](https://pubmed.ncbi.nlm.nih.gov/18815396/)"
     },
     {
-      "recommendation": "Tenecteplase non-inferior to alteplase for LVO",
-      "evidenceLevel": "Class IIa, Level B-R",
-      "source": "[AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); [EXTEND-IA TNK](https://pubmed.ncbi.nlm.nih.gov/29694815/)"
+      "recommendation": "Tenecteplase non-inferior to alteplase (all eligible patients)",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[AHA/ASA 2026 AIS Guidelines (Prabhakaran et al.)](https://pubmed.ncbi.nlm.nih.gov/41582814/); [AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); [EXTEND-IA TNK](https://pubmed.ncbi.nlm.nih.gov/29694815/)"
     },
     {
       "recommendation": "Thrombectomy for LVO 0-6h",
@@ -1651,6 +1651,16 @@
       "recommendation": "Thrombectomy for LVO 6-24h (selected patients)",
       "evidenceLevel": "Class I, Level A",
       "source": "[DAWN trial (Nogueira et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29129157/); [DEFUSE-3 (Albers et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29364767/)"
+    },
+    {
+      "recommendation": "Thrombectomy for basilar artery occlusion",
+      "evidenceLevel": "Class I, Level A",
+      "source": "[ATTENTION (Tao et al. NEJM 2022)](https://pubmed.ncbi.nlm.nih.gov/36239645/); [BAOCHE (Jovin et al. NEJM 2022)](https://pubmed.ncbi.nlm.nih.gov/36239644/)"
+    },
+    {
+      "recommendation": "Thrombectomy for large core infarcts (ASPECTS 3-5)",
+      "evidenceLevel": "Class IIa, Level B-R",
+      "source": "[RESCUE-Japan LIMIT (Yoshimura et al. NEJM 2022)](https://pubmed.ncbi.nlm.nih.gov/36083649/); [SELECT2 (Sarraj et al. NEJM 2023)](https://pubmed.ncbi.nlm.nih.gov/36762865/)"
     },
     {
       "recommendation": "DAPT 21 days for minor stroke/high-risk TIA",

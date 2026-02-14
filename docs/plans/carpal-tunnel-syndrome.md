@@ -131,9 +131,9 @@ SECTION A: ACTION ITEMS
 | Platelet-rich plasma (PRP) injection | Local injection | Experimental; refractory cases; patient preference to avoid surgery | 2-3 mL PRP :: Local injection :: Single injection :: Single injection under ultrasound; emerging evidence | Infection; thrombocytopenia; malignancy | Observe 15 min post-injection | - | - | EXT | - |
 
 **Injection Therapy Notes:**
-- Corticosteroid injection provides short-term relief (1-3 months) in most patients
-- Efficacy decreases with repeated injections
-- Best as bridge to surgery or for patients with contraindications to surgery
+- Corticosteroid injection provides **short-term relief only** (1-3 months); **no evidence of long-term benefit** per AAOS/ASSH 2025 guideline
+- Efficacy decreases with repeated injections; not a substitute for surgical release in moderate-severe CTS
+- Best as bridge to surgery, short-term symptom management, or for patients with contraindications to surgery
 - Ultrasound guidance improves accuracy and reduces median nerve injury risk
 - Pregnancy-related CTS often responds well to injection; many resolve postpartum
 
@@ -167,7 +167,7 @@ SECTION A: ACTION ITEMS
 | Hand surgery or orthopedic surgery referral for carpal tunnel release evaluation when conservative therapy fails or severe CTS present | - | ROUTINE | ROUTINE | - |
 | Electrodiagnostic medicine/neurology for NCS/EMG to confirm diagnosis and grade severity before surgical intervention | - | ROUTINE | ROUTINE | - |
 | Occupational medicine for workplace ergonomic assessment and work restrictions if occupational risk factors present | - | - | ROUTINE | - |
-| Physical/occupational therapy for nerve gliding exercises, ergonomic training, and activity modification | - | ROUTINE | ROUTINE | - |
+| Physical/occupational therapy for nerve gliding exercises, ergonomic training, and activity modification (pre-operative; routine post-operative PT/OT not shown to improve outcomes per AAOS/ASSH 2025) | - | ROUTINE | ROUTINE | - |
 | Rheumatology referral if inflammatory arthritis suspected as underlying cause (RA, gout) | - | ROUTINE | ROUTINE | - |
 | Endocrinology for diabetes optimization or hypothyroidism management if contributing to CTS | - | ROUTINE | ROUTINE | - |
 | Primary care for management of modifiable risk factors (diabetes, obesity, hypothyroidism) | - | ROUTINE | ROUTINE | - |
@@ -186,7 +186,7 @@ SECTION A: ACTION ITEMS
 | Avoid sleeping with wrists curled under pillow; maintain neutral wrist position during sleep | - | ROUTINE | ROUTINE |
 | If pregnant, symptoms often improve after delivery; conservative management preferred during pregnancy | - | ROUTINE | ROUTINE |
 | After corticosteroid injection, temporary increase in symptoms may occur first 24-48 hours before improvement | - | ROUTINE | ROUTINE |
-| Post-surgical: Keep incision clean and dry; elevate hand; start motion as directed; full grip strength recovery may take 3-6 months | - | ROUTINE | ROUTINE |
+| Post-surgical: Keep incision clean and dry; elevate hand; start motion as directed; full grip strength recovery may take 3-6 months; routine post-op PT/immobilization not shown to improve outcomes (AAOS/ASSH 2025) | - | ROUTINE | ROUTINE |
 
 ### 4C. Lifestyle & Prevention
 
@@ -279,6 +279,9 @@ SECTION B: REFERENCE (Expand as Needed)
 | Pregnancy-related CTS often resolves postpartum | Class III, Level C | [Padua L et al. Muscle Nerve 2010](https://pubmed.ncbi.nlm.nih.gov/20976778/) |
 | Median nerve CSA >10-12 mm² on ultrasound supports CTS diagnosis | Class II, Level B | [Cartwright MS et al. Muscle Nerve 2012](https://pubmed.ncbi.nlm.nih.gov/22806381/) |
 | Nerve gliding exercises may provide modest benefit as adjunct therapy | Class II, Level C | [Ballestero-Perez R et al. J Orthop Sports Phys Ther 2017](https://pubmed.ncbi.nlm.nih.gov/27842937/) |
+| CTS-6 clinical prediction tool recommended for diagnosis | Guideline | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
+| Steroid injection provides short-term relief only; no long-term benefit | Class I, Level A | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
+| Routine post-operative PT/immobilization not shown to improve outcomes | Class II, Level B | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
 | AAOS Clinical Practice Guideline for CTS | Guideline | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
 | AANEM practice parameter for electrodiagnosis of CTS | Guideline | [Jablecki CK et al. Muscle Nerve 2002](https://pubmed.ncbi.nlm.nih.gov/15389664/) |
 
@@ -372,6 +375,21 @@ SECTION B: REFERENCE (Expand as Needed)
 - Technique: Raise hands above head for 1-2 minutes
 - Positive: Reproduction of numbness/paresthesias
 - Sensitivity: 75-89%; Specificity: 87-98%
+
+### CTS-6 Clinical Prediction Tool (AAOS/ASSH 2025 Guideline Recommended)
+
+The CTS-6 is a validated clinical prediction tool recommended by the 2025 AAOS/ASSH guideline for CTS diagnosis. Six items are scored:
+
+| Item | Finding | Points |
+|------|---------|--------|
+| 1. Numbness in median nerve distribution | Present | +1 |
+| 2. Nocturnal numbness | Present | +1 |
+| 3. Thenar atrophy/weakness | Present | +1 |
+| 4. Positive Phalen test | Positive within 60 sec | +1 |
+| 5. Loss of two-point discrimination | >5 mm | +1 |
+| 6. Positive Tinel sign | Present | +1 |
+
+**Interpretation:** Higher scores increase probability of CTS. A score of ≥4 has high positive predictive value. Can help guide the decision of whether NCS/EMG is needed prior to surgical referral.
 
 ### Severity Assessment
 
