@@ -355,7 +355,7 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | Diabetes is most common cause of polyneuropathy in developed countries | Class I | [Dyck PJ et al. Neurology 1993](https://pubmed.ncbi.nlm.nih.gov/8469345/) |
 | HbA1c <7% reduces neuropathy incidence in Type 1 DM | Class I, Level A | [DCCT](https://pubmed.ncbi.nlm.nih.gov/8366922/)/EDIC |
-| Gabapentin, pregabalin, duloxetine first-line for painful diabetic neuropathy | Class I, Level A | [AAN/AANEM Practice Guideline](https://pubmed.ncbi.nlm.nih.gov/19056666/) 2011, 2022 update |
+| Gabapentin, pregabalin, duloxetine first-line for painful diabetic neuropathy | Class I, Level A | [AAN/AANEM Practice Guideline (Bril et al. 2011)](https://pubmed.ncbi.nlm.nih.gov/21497321/), 2022 update |
 | Tricyclic antidepressants effective for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | NCS/EMG for characterization of peripheral neuropathy | Class I, Level B | AAN Practice Parameter |
 | SPEP indicated in idiopathic neuropathy workup | Class II, Level B | [England JD et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
