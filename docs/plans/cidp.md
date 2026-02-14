@@ -5,11 +5,9 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - headache
   - demyelinating
-  - infectious
   - neuromuscular
-  - neuro-oncology
+  - autoimmune
 ---
 
 # Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)

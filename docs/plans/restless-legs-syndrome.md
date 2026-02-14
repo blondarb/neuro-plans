@@ -6,10 +6,7 @@ setting: "HOSP, OPD, ICU"
 status: approved
 tags:
   - movement-disorders
-  - neuromuscular
-  - autoimmune
-  - spine
-  - neuro-otology
+  - sleep
 ---
 
 # Restless Legs Syndrome

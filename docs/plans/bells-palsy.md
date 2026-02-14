@@ -5,11 +5,8 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - cerebrovascular
-  - demyelinating
+  - cranial-neuropathy
   - infectious
-  - neuromuscular
-  - neuro-oncology
 ---
 
 # Bell's Palsy

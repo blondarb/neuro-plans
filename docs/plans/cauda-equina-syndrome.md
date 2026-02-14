@@ -5,11 +5,9 @@ version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
-  - neurodegenerative
-  - demyelinating
-  - infectious
+  - spine
   - neuromuscular
-  - neuro-oncology
+  - surgical-emergency
 ---
 
 # Cauda Equina Syndrome

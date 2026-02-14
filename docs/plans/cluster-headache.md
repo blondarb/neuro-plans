@@ -5,11 +5,7 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - cerebrovascular
   - headache
-  - neurodegenerative
-  - neuromuscular
-  - neuro-oncology
 ---
 
 # Cluster Headache

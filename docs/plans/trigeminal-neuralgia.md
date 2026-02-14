@@ -5,11 +5,8 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - cerebrovascular
-  - headache
-  - neuromuscular
-  - neuro-oncology
-  - autoimmune
+  - cranial-neuropathy
+  - pain
 ---
 
 # Trigeminal Neuralgia

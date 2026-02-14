@@ -5,11 +5,7 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - epilepsy
-  - cerebrovascular
   - headache
-  - neurodegenerative
-  - movement-disorders
 ---
 
 # Migraine

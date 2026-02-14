@@ -5,11 +5,8 @@ version: "1.0"
 setting: "HOSP, OPD, ICU"
 status: approved
 tags:
-  - epilepsy
   - neurodegenerative
   - movement-disorders
-  - infectious
-  - neuromuscular
 ---
 
 # Parkinson's Disease - New Diagnosis

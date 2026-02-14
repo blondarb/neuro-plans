@@ -5,11 +5,9 @@ version: "1.0"
 setting: "ED, HOSP, OPD, ICU"
 status: approved
 tags:
-  - epilepsy
-  - cerebrovascular
-  - headache
-  - neurodegenerative
-  - movement-disorders
+  - autoimmune
+  - encephalitis
+  - neuro-oncology
 ---
 
 # Autoimmune Encephalitis

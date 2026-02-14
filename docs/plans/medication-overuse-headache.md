@@ -6,10 +6,6 @@ setting: "HOSP, OPD, ICU"
 status: approved
 tags:
   - headache
-  - neurodegenerative
-  - neuromuscular
-  - neuro-oncology
-  - autoimmune
 ---
 
 # Medication Overuse Headache
