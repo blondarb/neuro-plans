@@ -237,7 +237,7 @@ tags:
 | CGRP monoclonal antibodies show promise for treatment-refractory NDPH (case series) | Class IIb, Level C | [Rozen TD. Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31490552/) |
 | IV DHE (Raskin protocol) is effective bridge therapy for refractory chronic daily headache | Class IIa, Level B | Raskin NH. Headache 1986 |
 | Mexiletine has shown benefit in refractory NDPH in small series | Class IIb, Level C | Marmura MJ. Cephalalgia 2013 |
-| OnabotulinumtoxinA (PREEMPT protocol) for chronic migraine; extrapolated to NDPH with migrainous features | Class I, Level A (for CM); Class IIb for NDPH | [Aurora SK et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/28071935/) |
+| OnabotulinumtoxinA (PREEMPT protocol) for chronic migraine; extrapolated to NDPH with migrainous features | Class I, Level A (for CM); Class IIb for NDPH | [Aurora SK et al. Cephalalgia 2010](https://pubmed.ncbi.nlm.nih.gov/20647170/) |
 | Self-limiting subtype resolves in approximately 15-20% of cases | Class IIa, Level C | Vanast WJ. Neurology 1986 |
 
 ---

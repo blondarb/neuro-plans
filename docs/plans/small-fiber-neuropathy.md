@@ -310,8 +310,8 @@ tags:
 |----------------|----------------|--------|
 | Skin biopsy (IENFD) as diagnostic standard for SFN | Class II, Level B | [Lauria et al. European Journal of Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20298428/) |
 | QSART for sudomotor function assessment in SFN | Class II, Level B | [Low et al. Muscle & Nerve 1983](https://pubmed.ncbi.nlm.nih.gov/6652106/) |
-| Impaired glucose tolerance as cause of SFN | Class II, Level B | [Singleton et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/16093067/) |
-| Sjogren syndrome associated with SFN | Class II, Level B | [Chai et al. Annals of Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/17282462/) |
+| Impaired glucose tolerance as cause of SFN | Class II, Level B | [Singleton JR et al. Diabetes Care 2001](https://pubmed.ncbi.nlm.nih.gov/11473085/) |
+| Sjogren syndrome associated with SFN | Class II, Level B | [Chai J et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16186536/) |
 | Duloxetine for neuropathic pain | Class I, Level A | [Lunn et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/24385423/) |
 | Gabapentin for neuropathic pain | Class I, Level A | [Wiffen et al. Cochrane 2017](https://pubmed.ncbi.nlm.nih.gov/28597471/) |
 | Pregabalin for neuropathic pain | Class I, Level A | [Derry et al. Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/30673120/) |

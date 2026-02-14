@@ -349,7 +349,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | 2017 McDonald Criteria for MS diagnosis | Class I | [Thompson AJ et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29275977/) |
 | MRI brain/spine with contrast for diagnosis | Class I, Level A | [MAGNIMS-CMSC-NAIMS Consensus 2021](https://pubmed.ncbi.nlm.nih.gov/34139157/) |
 | CSF OCBs can substitute for dissemination in time | Class II, Level B | 2017 McDonald Criteria |
-| IV methylprednisolone 1g Ã— 3-5 days for acute attacks | Class I, Level A | [AAN Practice Guideline 2022](https://pubmed.ncbi.nlm.nih.gov/29686116/) |
+| IV methylprednisolone 1g × 3-5 days for acute attacks | Class I, Level A | [AAN Practice Guideline (Rae-Grant et al. 2018)](https://pubmed.ncbi.nlm.nih.gov/29686116/) |
 | PLEX for steroid-refractory attacks | Class II, Level B | Cochrane Review 2016 |
 | Cell-based assay (FACS) for NMO/MOG antibodies | Class I, Level B | [Waters et al. 2015](https://pubmed.ncbi.nlm.nih.gov/25821844/); Pittock et al. |
 | Vitamin D supplementation | Class II, Level B | Multiple observational studies; CHOLINE, SOLAR trials |

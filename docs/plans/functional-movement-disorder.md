@@ -314,7 +314,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | DaTscan normal in functional parkinsonism; differentiates from PD | Class III | [Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149](https://pubmed.ncbi.nlm.nih.gov/22249490/) |
 | Consensus recommendations for FMD physiotherapy | Expert Consensus | [Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719871/) |
 | FMD prognosis: majority of patients unchanged or worse without treatment at follow-up | Class II | [Gelauff J et al. J Neurol Neurosurg Psychiatry 2014;85:220-226](https://pubmed.ncbi.nlm.nih.gov/24029543/) |
-| Prevalence of FMD in movement disorder clinics (~3-5% of referrals) | Class III | [Factor SA et al. Mov Disord 1995;10:731-735](https://pubmed.ncbi.nlm.nih.gov/25851084/) |
+| Prevalence of FMD in movement disorder clinics (~3-5% of referrals) | Class III | [Factor SA et al. J Neurol Neurosurg Psychiatry 1995;59:406-412](https://pubmed.ncbi.nlm.nih.gov/7561921/) |
 | Jerk-locked back-averaging for functional myoclonus diagnosis | Class II | [Cassim F, Houdayer E. Neurophysiol Clin 2006;36:253-261](https://pubmed.ncbi.nlm.nih.gov/17336772/) |
 | Intensive multidisciplinary FMD rehabilitation outcomes | Class III | [Czarnecki K et al. Parkinsonism Relat Disord 2012;18:829-831](https://pubmed.ncbi.nlm.nih.gov/22113131/) |
 | DSM-5 diagnostic criteria for conversion disorder (positive neurological signs required) | Expert Consensus | [American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm) |
