@@ -8,6 +8,12 @@ E-utilities (free, no API key needed) for all lookups.
 
 Designed to run monthly to keep a paid subscription product current.
 
+Features:
+  - PMID health check (retraction/erratum detection)
+  - Newer version search (PubMed ESearch by org + topic)
+  - Age-tier flagging (guidelines >5 years old flagged for periodic review)
+  - Plan cross-referencing (shows which plan files cite each guideline)
+
 Usage:
     python scripts/check_guideline_freshness.py
     python scripts/check_guideline_freshness.py --cache
@@ -41,7 +47,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
 LOOKUP_FILE = SCRIPT_DIR / "landmark_pmids.json"
+PLANS_DIR = SCRIPT_DIR.parent / "docs" / "plans"
 CACHE_FILE = SCRIPT_DIR.parent / "docs" / "data" / "pmid-cache.json"
+
+# Age-tier thresholds (years since publication)
+AGE_TIER_REVIEW = 5     # ≥5 years old → "review recommended"
+AGE_TIER_STALE = 8      # ≥8 years old → "aging — prioritize review"
 
 ESUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -281,6 +292,66 @@ def extract_topic(entry_name: str):
     return None
 
 
+def classify_age_tier(pub_year: int, current_year: int) -> str:
+    """Classify a guideline by age into review tiers."""
+    if pub_year is None:
+        return "unknown"
+    age = current_year - pub_year
+    if age >= AGE_TIER_STALE:
+        return "aging"
+    elif age >= AGE_TIER_REVIEW:
+        return "review_recommended"
+    return "current"
+
+
+def scan_plan_references() -> dict:
+    """
+    Scan all plan .md files and build a map of which plans reference
+    each guideline/trial from landmark_pmids.json.
+
+    Returns dict: {entry_name: [list of plan file stems]}
+    """
+    if not PLANS_DIR.exists():
+        return {}
+
+    # Load landmark entries for matching
+    with open(LOOKUP_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Build search patterns: entry_name → list of strings to search for
+    search_map = {}
+    for section in ("trials", "guidelines"):
+        for name, info in data.get(section, {}).items():
+            patterns = [name]
+            patterns.extend(info.get("match_patterns", []))
+            # Also search for PMID in link form
+            pmid = info.get("pmid", "")
+            if pmid:
+                patterns.append(pmid)
+            search_map[name] = patterns
+
+    # Scan plan files
+    ref_map = {name: [] for name in search_map}
+    plan_files = sorted(PLANS_DIR.glob("*.md"))
+    for plan_path in plan_files:
+        try:
+            content = plan_path.read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            continue
+
+        plan_stem = plan_path.stem
+        content_lower = content.lower()
+
+        for name, patterns in search_map.items():
+            for pattern in patterns:
+                if pattern.lower() in content_lower:
+                    if plan_stem not in ref_map[name]:
+                        ref_map[name].append(plan_stem)
+                    break  # found in this plan, move to next entry
+
+    return ref_map
+
+
 def check_pmid_health(pmid: str, metadata: dict) -> dict:
     """
     Check a single PMID's health status.
@@ -396,6 +467,11 @@ def run_freshness_check(
         for name, info in trials.items():
             entries.append(("trial", name, info))
 
+    # Scan plan files for cross-references
+    if not quiet:
+        print("Scanning plan files for guideline references...")
+    plan_refs = scan_plan_references()
+
     if not quiet:
         print(f"Checking {len(entries)} entries ({sum(1 for e in entries if e[0] == 'guideline')} guidelines, "
               f"{sum(1 for e in entries if e[0] == 'trial')} trials)")
@@ -452,6 +528,8 @@ def run_freshness_check(
         "flagged_health": 0,
         "not_found": 0,
         "skipped_no_search": 0,
+        "aging_guidelines": 0,
+        "review_recommended_guidelines": 0,
     }
 
     guideline_entries = [(t, n, i) for t, n, i in entries if t == "guideline"]
@@ -466,6 +544,8 @@ def run_freshness_check(
         meta = metadata.get(pmid, {})
         health = check_pmid_health(pmid, meta)
         pub_year = extract_year(info.get("citation", ""))
+        age_tier = classify_age_tier(pub_year, current_year) if entry_type == "guideline" else None
+        affected_plans = plan_refs.get(name, [])
 
         entry_result = {
             "name": name,
@@ -474,7 +554,15 @@ def run_freshness_check(
             "citation": info.get("citation", ""),
             "year": pub_year,
             "health": health["status"],
+            "age_tier": age_tier,
+            "affected_plans": affected_plans,
         }
+
+        # Track age tier stats for guidelines
+        if entry_type == "guideline" and age_tier == "aging":
+            stats["aging_guidelines"] += 1
+        elif entry_type == "guideline" and age_tier == "review_recommended":
+            stats["review_recommended_guidelines"] += 1
 
         if health["status"] == "not_found":
             entry_result["status"] = "error"
@@ -534,16 +622,18 @@ def format_markdown_report(report: dict) -> str:
 
     s = report["summary"]
     lines.append("\n## Summary\n")
-    lines.append(f"| Metric | Count |")
-    lines.append(f"|--------|-------|")
+    lines.append("| Metric | Count |")
+    lines.append("|--------|-------|")
     lines.append(f"| Total checked | {s['total_checked']} |")
     lines.append(f"| Current | {s['current']} |")
     lines.append(f"| Newer version available | {s['flagged_newer_available']} |")
     lines.append(f"| Health issues (retracted/erratum) | {s['flagged_health']} |")
     lines.append(f"| PMID not found | {s['not_found']} |")
     lines.append(f"| Skipped (no org/topic match) | {s['skipped_no_search']} |")
+    lines.append(f"| Guidelines aging (≥{AGE_TIER_STALE}yr, no newer found) | {s['aging_guidelines']} |")
+    lines.append(f"| Guidelines for review (≥{AGE_TIER_REVIEW}yr) | {s['review_recommended_guidelines']} |")
 
-    # Show flagged items
+    # Show flagged items (newer available, health issues)
     flagged = [e for e in report["entries"]
                if e["status"] in ("newer_available", "flagged_health", "error")]
 
@@ -573,12 +663,58 @@ def format_markdown_report(report: dict) -> str:
             if entry.get("detail"):
                 lines.append(f"- **Detail:** {entry['detail']}")
 
+            plans = entry.get("affected_plans", [])
+            if plans:
+                lines.append(f"- **Affected plans ({len(plans)}):** {', '.join(plans)}")
+            else:
+                lines.append(f"- **Affected plans:** none (not referenced in any plan)")
+
             lines.append("")
     else:
-        lines.append("\n## ✅ All entries are current\n")
-        lines.append("No guidelines or trials were flagged for review.")
+        lines.append("\n## ✅ No newer versions or health issues detected\n")
 
-    # Show current items (collapsed)
+    # Age-tier section: guidelines that are old even if no newer version was found
+    aging = [e for e in report["entries"]
+             if e.get("age_tier") in ("aging", "review_recommended")
+             and e["status"] == "current"]
+
+    if aging:
+        lines.append(f"\n## 📅 Guidelines by Age (Periodic Review Needed)\n")
+        lines.append("These guidelines are current (no newer PubMed version found) but are "
+                      f"≥{AGE_TIER_REVIEW} years old. They may still be the authoritative "
+                      "source, but should be periodically verified against society websites.\n")
+
+        # Split into aging (≥8yr) and review (≥5yr)
+        tier_aging = sorted(
+            [e for e in aging if e.get("age_tier") == "aging"],
+            key=lambda e: e.get("year") or 9999
+        )
+        tier_review = sorted(
+            [e for e in aging if e.get("age_tier") == "review_recommended"],
+            key=lambda e: e.get("year") or 9999
+        )
+
+        if tier_aging:
+            lines.append(f"### 🔴 Aging (≥{AGE_TIER_STALE} years old) — Prioritize Review\n")
+            lines.append("| Guideline | Year | Age | Affected Plans |")
+            lines.append("|-----------|------|-----|----------------|")
+            for e in tier_aging:
+                age = (datetime.now().year - e["year"]) if e.get("year") else "?"
+                plans = ", ".join(e.get("affected_plans", [])) or "none"
+                lines.append(f"| {e['name']} | {e.get('year', '?')} | {age}yr | {plans} |")
+            lines.append("")
+
+        if tier_review:
+            lines.append(f"### 🟡 Review Recommended (≥{AGE_TIER_REVIEW} years old)\n")
+            lines.append("| Guideline | Year | Age | Affected Plans |")
+            lines.append("|-----------|------|-----|----------------|")
+            for e in tier_review:
+                age = (datetime.now().year - e["year"]) if e.get("year") else "?"
+                plans = ", ".join(e.get("affected_plans", [])) or "none"
+                lines.append(f"| {e['name']} | {e.get('year', '?')} | {age}yr | {plans} |")
+            lines.append("")
+
+    # Show current items
     current = [e for e in report["entries"] if e["status"] == "current"]
     if current:
         lines.append(f"\n## Current ({len(current)} entries)\n")
@@ -607,13 +743,20 @@ def print_summary(report: dict):
     print(f"  Health issues:     {s['flagged_health']}")
     print(f"  PMID errors:       {s['not_found']}")
     print(f"  Skipped (no match):{s['skipped_no_search']}")
+    print(f"  Aging (≥{AGE_TIER_STALE}yr):      {s['aging_guidelines']}")
+    print(f"  Review (≥{AGE_TIER_REVIEW}yr):     {s['review_recommended_guidelines']}")
     print("=" * 60)
 
-    if s["flagged_newer_available"] + s["flagged_health"] + s["not_found"] == 0:
+    total_flagged = s["flagged_newer_available"] + s["flagged_health"] + s["not_found"]
+    total_aging = s["aging_guidelines"] + s["review_recommended_guidelines"]
+
+    if total_flagged == 0 and total_aging == 0:
         print("\n  ✅ All entries appear current. No action needed.")
     else:
-        total_flagged = s["flagged_newer_available"] + s["flagged_health"] + s["not_found"]
-        print(f"\n  ⚠ {total_flagged} item(s) need review. See report for details.")
+        if total_flagged > 0:
+            print(f"\n  ⚠ {total_flagged} item(s) need immediate review (newer/health).")
+        if total_aging > 0:
+            print(f"  📅 {total_aging} guideline(s) are ≥{AGE_TIER_REVIEW}yr old — periodic review recommended.")
 
 
 # ---------------------------------------------------------------------------

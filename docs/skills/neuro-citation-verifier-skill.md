@@ -343,6 +343,49 @@ VERIFIER: Claude (neuro-citation-verifier v1.1)
 | [What to cite] | [Actual source found] | [PubMed](url) | [Why it should be added] |
 ```
 
+## Guideline Age Flagging
+
+### Why Age Matters
+
+Guidelines ≥5 years old may no longer reflect current evidence. During citation verification, flag aging guidelines so physicians can prioritize review.
+
+### Age Tiers
+
+| Age | Tier | Flag | Action |
+|-----|------|------|--------|
+| ≥8 years | 🔴 Aging | **CRITICAL** | Check society website for updates; may be superseded without a new PMID |
+| ≥5 years | 🟡 Review | **RECOMMENDED** | Verify content still matches current practice |
+| <5 years | — | None | Current; no action needed |
+
+### During Verification
+
+When verifying a guideline citation:
+
+1. **Check publication year** — If ≥5 years old, add an age flag to the verification report
+2. **Search for newer version** — Use `"{Organization}" AND "{topic}" AND "guideline" AND {year+1}:{current_year}[Date - Publication]"` on PubMed
+3. **Log in report** — Add aging guidelines to a separate "Guideline Age Review" section
+
+### Integration with Freshness Checker
+
+The `check_guideline_freshness.py` script automates this at scale:
+
+```bash
+# Run monthly — checks all guidelines in landmark_pmids.json
+python3 scripts/check_guideline_freshness.py --cache
+
+# Review the report
+cat docs/data/freshness-report.md
+```
+
+The freshness report identifies:
+- **Newer versions available** — Update plan references immediately
+- **Aging (≥8yr)** — Prioritize manual society website check
+- **Review recommended (≥5yr)** — Periodic content verification needed
+
+See `docs/GUIDELINE_MAINTENANCE.md` for the full update workflow when a newer guideline is found.
+
+---
+
 ## Common Citation Issues
 
 ### Hallucination Patterns
@@ -354,7 +397,7 @@ VERIFIER: Claude (neuro-citation-verifier v1.1)
 | Wrong year | "NEJM 2019" (actually published 2020) | Verify publication date |
 | Wrong journal | "Published in Lancet" (actually in BMJ) | Check actual publication venue |
 | Conflated studies | Combines findings from 2 different papers | Read abstracts carefully |
-| Outdated guidelines | Cites 2007 guideline when 2022 update exists | Search for latest version |
+| Outdated guidelines | Cites 2007 guideline when 2022 update exists | Run `check_guideline_freshness.py --cache`; check `docs/data/freshness-report.md` |
 | Misattributed findings | Claims study shows X when it shows Y | Read abstract/full text |
 
 ### Red Flags Requiring Extra Scrutiny
@@ -470,7 +513,7 @@ When logging, note any patterns in the "Patterns & Improvement Opportunities" se
 |--------------|---------|
 | Trial confusion | Multiple trials for same drug, different indications |
 | Generic references | "Multiple RCTs" without specific citations |
-| Outdated guidelines | Citing old version when newer exists |
+| Outdated guidelines | Citing old version when newer exists (cross-ref `docs/data/freshness-report.md`) |
 | Author name variations | Different spellings across sources |
 | Paywall barriers | Cannot access to verify content |
 
@@ -487,6 +530,12 @@ This data helps improve the builder and checker skills over time.
 When a source cannot be verified due to access limitations, recommend physician verification or suggest alternative citable sources.
 
 ## Change Log
+
+**v1.4 (February 2026)**
+- Added "Guideline Age Flagging" section with age tiers (≥5yr review, ≥8yr aging)
+- Integration with `check_guideline_freshness.py` for automated monthly checks
+- Cross-references `docs/GUIDELINE_MAINTENANCE.md` for update workflow
+- Updated hallucination patterns and pattern tracking to reference freshness report
 
 **v1.3 (January 2026)**
 - Added CRITICAL section on PMID content verification with common error types

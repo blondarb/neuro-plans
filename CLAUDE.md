@@ -18,6 +18,7 @@ Clinical decision support templates for neurological diagnoses.
 | `scripts/extract_medications.py` | Extract medications from plan files |
 | `scripts/harvest_medications.py` | Harvest meds from plans into central DB |
 | `scripts/generate_treatment_row.py` | Generate 10-column treatment table rows |
+| `scripts/check_guideline_freshness.py` | Monthly PubMed freshness checker for guidelines/trials |
 | `scripts/build.py` | Extracts plan metadata, generates index (runs during CI) |
 | `scripts/convert_to_structured_dosing.py` | Normalize dosing to `::` format |
 | `scripts/fix_dosing_frequency.py` | Fill missing frequency fields |
@@ -26,6 +27,8 @@ Clinical decision support templates for neurological diagnoses.
 | `docs/clinical/index.html` | Interactive clinical tool (consumes plans.json) |
 | `docs/ROADMAP.md` | Medication format & feature roadmap |
 | `docs/HANDOFF.md` | Developer handoff & support guide |
+| `docs/GUIDELINE_MAINTENANCE.md` | Guideline freshness process & quarterly review cadence |
+| `docs/data/freshness-report.md` | Latest guideline freshness report (auto-generated) |
 
 ## Skills
 
@@ -123,6 +126,10 @@ python -X utf8 scripts/harvest_medications.py --merge
 python -X utf8 scripts/generate_treatment_row.py <med-name> --header
 python -X utf8 scripts/generate_treatment_row.py <med-name> --context <context-id>
 python -X utf8 scripts/generate_treatment_row.py --indication "neuropathic pain"
+
+# Guideline freshness check (monthly, requires internet)
+python3 scripts/check_guideline_freshness.py --cache
+python3 scripts/check_guideline_freshness.py --guidelines-only --cache --quiet
 ```
 
 Always use `-X utf8` flag on Windows.
@@ -132,6 +139,16 @@ Always use `-X utf8` flag on Windows.
 - **90%+ score** (54/60) on checker
 - All C-codes (critical issues) resolved
 - All medications: individual rows, structured dosing, complete columns
+
+## Guideline Maintenance
+
+Run `check_guideline_freshness.py --cache` monthly (1st of each month). See `docs/GUIDELINE_MAINTENANCE.md` for the full process. Key actions:
+
+- **"newer_available"** → Update plan references and content immediately (Steps 1-3 in maintenance doc)
+- **"aging" (≥8yr)** → Check society website manually; PubMed may miss reaffirmations
+- **"review_recommended" (≥5yr)** → Verify content still reflects current practice
+
+After updating plan files: regenerate JSON → copy to iOS bundle → verify parity.
 
 ## QA & Testing
 

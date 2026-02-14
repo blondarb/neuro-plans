@@ -6,12 +6,14 @@
 
 | Metric | Count |
 |--------|-------|
-| Total checked | 105 |
-| Current | 100 |
+| Total checked | 49 |
+| Current | 44 |
 | Newer version available | 2 |
 | Health issues (retracted/erratum) | 0 |
 | PMID not found | 0 |
 | Skipped (no org/topic match) | 3 |
+| Guidelines aging (≥8yr, no newer found) | 32 |
+| Guidelines for review (≥5yr) | 8 |
 
 ## ⚠ Items Requiring Review
 
@@ -25,6 +27,7 @@
   - Title: Evidence-based guideline: Treatment of painful diabetic neuropathy: report of the American Academy of Neurology, the American Association of Neuromuscular and Electrodiagnostic Medicine, and the American Academy of Physical Medicine and Rehabilitation.
   - Journal: PM R
   - PubMed: https://pubmed.ncbi.nlm.nih.gov/21497321/
+- **Affected plans (2):** paresthesia-numbness-tingling, peripheral-neuropathy
 
 ### 🔄 AAN Brain Death 2010
 - **Type:** guideline
@@ -36,9 +39,63 @@
   - Title: Update of clinical practice guidelines for brain death determination in an academic heath center.
   - Journal: J Neurosci Nurs
   - PubMed: https://pubmed.ncbi.nlm.nih.gov/25565594/
+- **Affected plans (1):** brain-death-evaluation
 
 
-## Current (103 entries)
+## 📅 Guidelines by Age (Periodic Review Needed)
+
+These guidelines are current (no newer PubMed version found) but are ≥5 years old. They may still be the authoritative source, but should be periodically verified against society websites.
+
+### 🔴 Aging (≥8 years old) — Prioritize Review
+
+| Guideline | Year | Age | Affected Plans |
+|-----------|------|-----|----------------|
+| AAN Practice Parameter GBS | 2003 | 23yr | none |
+| IDSA Bacterial Meningitis Guidelines | 2004 | 22yr | bacterial-meningitis, viral-meningitis |
+| AAN/EFNS Trigeminal Neuralgia 2008 | 2008 | 18yr | trigeminal-neuralgia |
+| AAN Dystonia Guideline 2008 | 2008 | 18yr | dystonia, progressive-supranuclear-palsy |
+| IDSA Encephalitis Guidelines 2008 | 2008 | 18yr | hsv-encephalitis |
+| AASLD Wilson Disease 2008 | 2008 | 18yr | dystonia, metabolic-encephalopathy, wilsons-disease |
+| AAN ALS Practice Parameter 2009 | 2009 | 17yr | als |
+| AANEM Radiculopathy 2010 | 2010 | 16yr | radiculopathy |
+| EFNS/PNS MMN Guideline 2010 | 2010 | 16yr | lambert-eaton-syndrome, multifocal-motor-neuropathy, peripheral-neuropathy |
+| AHA/ASA CVT Guidelines 2011 | 2011 | 15yr | cerebral-venous-thrombosis, headache-evaluation, thunderclap-headache-evaluation |
+| AAN Essential Tremor Guidelines 2011 | 2011 | 15yr | essential-tremor, tremor-unspecified |
+| EFNS Dystonia Guideline 2011 | 2011 | 15yr | dystonia |
+| AAN Bell's Palsy Guidelines 2012 | 2012 | 14yr | bells-palsy |
+| AAN/AHS Migraine Prevention 2012 | 2012 | 14yr | chronic-migraine, headache-evaluation, migraine, status-migrainosus |
+| EASL Wilson Disease 2012 | 2012 | 14yr | chorea-evaluation, tremor-unspecified, wilsons-disease |
+| NCS Status Epilepticus 2012 | 2012 | 14yr | ncse, status-epilepticus |
+| AAN Concussion Guideline 2013 | 2013 | 13yr | chronic-traumatic-encephalopathy |
+| NASS Lumbar Stenosis 2013 | 2013 | 13yr | lumbar-stenosis |
+| AHA Endocarditis Guidelines 2015 | 2015 | 11yr | brain-abscess |
+| AAN/AES First Seizure Guideline 2015 | 2015 | 11yr | new-onset-seizure |
+| AHA/ASA 2016 Rehab Guidelines | 2016 | 10yr | post-stroke-management |
+| IDSA Aspergillosis 2016 | 2016 | 10yr | brain-abscess, fungal-meningitis |
+| IDSA Coccidioidomycosis 2016 | 2016 | 10yr | fungal-meningitis |
+| AES Status Epilepticus 2016 | 2016 | 10yr | ncse, status-epilepticus |
+| AAN SUDEP Guideline 2017 | 2017 | 9yr | drug-resistant-epilepsy, epilepsy-chronic-management |
+| ESO CVT Guidelines 2017 | 2017 | 9yr | cerebral-venous-thrombosis, thunderclap-headache-evaluation |
+| AAN MCI Practice Parameter 2018 | 2018 | 8yr | functional-cognitive-disorder, mild-cognitive-impairment |
+| AAN Myotonic Dystrophy 2018 | 2018 | 8yr | myotonic-dystrophy |
+| AAN MS Practice Guideline 2018 | 2018 | 8yr | ms-new-diagnosis |
+| IDSA Neurocysticercosis 2018 | 2018 | 8yr | neurocysticercosis |
+
+### 🟡 Review Recommended (≥5 years old)
+
+| Guideline | Year | Age | Affected Plans |
+|-----------|------|-----|----------------|
+| AAN Tics/Tourette 2019 | 2019 | 7yr | tics-tourette-syndrome |
+| ASAM Alcohol Withdrawal 2020 | 2020 | 6yr | alcohol-withdrawal-seizure |
+| ACOG Eclampsia 2020 | 2020 | 6yr | eclampsia-seizure-pregnancy, migraine-with-aura |
+| AHA/ASA 2021 Secondary Prevention Guidelines | 2021 | 5yr | acute-ischemic-stroke, carotid-stenosis, cervical-artery-dissection, post-stroke-management, transient-ischemic-attack |
+| IDSA Lyme Disease 2021 | 2021 | 5yr | lyme-neuroborreliosis |
+| CDC STI Treatment Guidelines 2021 | 2021 | 5yr | neurosyphilis |
+| MAGNIMS/CMSC MS Diagnosis 2021 | 2021 | 5yr | ms-new-diagnosis |
+| EFNS/PNS CIDP Guideline 2021 | 2021 | 5yr | cidp |
+
+
+## Current (47 entries)
 
 | Name | Type | PMID | Year |
 |------|------|------|------|
@@ -63,7 +120,6 @@
 | AAOS/ASSH Carpal Tunnel 2025 | guideline | 39637428 | 2025 |
 | AASLD Wilson Disease 2008 | guideline | 18506894 | 2008 |
 | ACOG Eclampsia 2020 | guideline | 32443079 | 2020 |
-| ADAPT | trial | 34146511 | 2021 |
 | AES Status Epilepticus 2016 | guideline | 26900382 | 2016 |
 | AHA Endocarditis Guidelines 2015 | guideline | 26373316 | 2015 |
 | AHA/ASA 2016 Rehab Guidelines | guideline | 27145936 | 2016 |
@@ -72,76 +128,21 @@
 | AHA/ASA 2023 SAH Guidelines | guideline | 37212182 | 2023 |
 | AHA/ASA 2026 AIS Guidelines | guideline | 41582814 | 2026 |
 | AHA/ASA CVT Guidelines 2011 | guideline | 21293023 | 2011 |
-| ANNEXA-4 | trial | 30730782 | 2019 |
-| APOLLO | trial | 29972753 | 2018 |
-| ARISTOTLE | trial | 21870978 | 2011 |
 | ASAM Alcohol Withdrawal 2020 | guideline | 31916890 | 2020 |
-| ATACH-2 | trial | 27276234 | 2016 |
-| ATTR-ACT | trial | 30145929 | 2018 |
-| AVERT | trial | 25892679 | 2015 |
 | Alzheimer's Association DETeCD-ADRD 2024 | guideline | 39713957 | 2024 |
-| CADISS | trial | 25684164 | 2015 |
 | CDC STI Treatment Guidelines 2021 | guideline | 34292926 | 2021 |
-| CHANCE | trial | 23803136 | 2013 |
-| CLOSE | trial | 28902593 | 2017 |
-| CRYSTAL-AF | trial | 25259387 | 2014 |
-| DAWN | trial | 29129157 | 2018 |
-| DCCT | trial | 8366922 | 1993 |
-| DECIMAL | trial | 17690311 | 2007 |
-| DEFUSE-3 | trial | 29364767 | 2018 |
-| DESTINY | trial | 17690310 | 2007 |
 | EASL Wilson Disease 2012 | guideline | 22340672 | 2012 |
-| ECST | trial | 9593407 | 1998 |
 | EFNS Dystonia Guideline 2011 | guideline | 20482602 | 2011 |
 | EFNS/PNS CIDP Guideline 2021 | guideline | 34327760 | 2021 |
 | EFNS/PNS MMN Guideline 2010 | guideline | 21199100 | 2010 |
-| EMBRACE | trial | 24963566 | 2014 |
-| ENGAGE AF | trial | 24251359 | 2013 |
-| ENRICH | trial | 38598795 | 2024 |
-| ESCAPE | trial | 25671798 | 2015 |
-| ESETT | trial | 31774955 | 2019 |
 | ESO CVT Guidelines 2017 | guideline | 28833980 | 2017 |
-| EXPAND | trial | 29576505 | 2018 |
-| EXTEND-IA TNK | trial | 29694815 | 2018 |
-| HAMLET | trial | 19269254 | 2009 |
 | IDSA Aspergillosis 2016 | guideline | 27365388 | 2016 |
 | IDSA Bacterial Meningitis Guidelines | guideline | 15494903 | 2004 |
 | IDSA Coccidioidomycosis 2016 | guideline | 27470238 | 2016 |
 | IDSA Encephalitis Guidelines 2008 | guideline | 18582201 | 2008 |
 | IDSA Lyme Disease 2021 | guideline | 33417672 | 2021 |
 | IDSA Neurocysticercosis 2018 | guideline | 29481580 | 2018 |
-| IIHTT | trial | 24756514 | 2014 |
-| INCH | trial | 27302126 | 2016 |
-| INTERACT2 | trial | 23713578 | 2013 |
-| ISAT | trial | 12414200 | 2002 |
-| ISSUE-3 | trial | 22565936 | 2012 |
 | MAGNIMS/CMSC MS Diagnosis 2021 | guideline | 34139157 | 2021 |
-| MGTX | trial | 27509100 | 2016 |
-| MISTIE III | trial | 30739747 | 2019 |
-| MR CLEAN | trial | 25517348 | 2015 |
-| NASCET | trial | 1852179 | 1991 |
 | NASS Lumbar Stenosis 2013 | guideline | 23830297 | 2013 |
 | NCS Status Epilepticus 2012 | guideline | 22528274 | 2012 |
-| NEURO-TTR | trial | 29972757 | 2018 |
-| NOA-08 | trial | 22578793 | 2012 |
-| ONTT | trial | 1734247 | 1992 |
-| ORATORIO | trial | 28002688 | 2017 |
-| PATCH | trial | 27178479 | 2016 |
-| POINT | trial | 29766750 | 2018 |
-| PROGRESS | trial | 11589932 | 2001 |
-| RE-LY | trial | 19717844 | 2009 |
-| RE-VERSE AD | trial | 28693366 | 2017 |
-| REDUCE | trial | 28902580 | 2017 |
-| REGAIN | trial | 29066163 | 2017 |
-| RESPECT | trial | 28902590 | 2017 |
-| REVASCAT | trial | 25882510 | 2015 |
-| ROCKET-AF | trial | 21830957 | 2011 |
-| SPARCL | trial | 16899775 | 2006 |
-| SPS3 | trial | 23726159 | 2013 |
-| STICH | trial | 15680453 | 2005 |
-| STICH II | trial | 23726393 | 2013 |
-| SWIFT-PRIME | trial | 26352820 | 2015 |
-| THALES | trial | 32668111 | 2020 |
-| TICH-2 | trial | 29778325 | 2018 |
-| TTM | trial | 24237006 | 2013 |
 | WHO TB Guidelines 2022 | guideline | 35536703 | 2022 |
