@@ -1064,7 +1064,8 @@ class ParityChecker:
                                         'asm', 'phase', 'sign', 'syndrome', 'finding',
                                         'scenario', 'medication class', 'medication/class',
                                         'intervention', 'location', 'population',
-                                        'symptom', 'situation'}
+                                        'symptom', 'situation',
+                                        'referral', 'topic', 'combination'}
                         # Prefix-match header words
                         prefix_headers = ['alternative diagnosis', 'nystagmus type',
                                          'level of care', 'evidence level', 'test (', 'study (',
