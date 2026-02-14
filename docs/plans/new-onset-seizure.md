@@ -344,11 +344,11 @@ SECTION B: REFERENCE (Expand as Needed)
 | Levetiracetam non-inferior to phenytoin for acute seizure cessation | Class I, Level A | [ESETT Trial, Kapur et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
 | Risk of recurrence after first unprovoked seizure ~40-50% | Class I | [Hauser et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9459646/) |
 | Starting ASM after first seizure reduces recurrence but not long-term remission | Class I, Level A | FIRST Trial; [MESS Trial, Marson et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15950714/) |
-| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | [AAN/AES Guidelines 2009](https://pubmed.ncbi.nlm.nih.gov/19398681/); MONEAD Study |
+| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | [AAN/AES/SMFM Epilepsy & Pregnancy Guideline 2024 (Pack et al.)](https://pubmed.ncbi.nlm.nih.gov/38748979/); MONEAD Study |
 | Driving restrictions reduce accident risk | Class II, Level B | Multiple observational studies |
 | Prolactin elevation supports diagnosis of epileptic seizure (if drawn <20 min) | Class II, Level B | [Chen et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16157897/) |
 | Continuous EEG detects non-convulsive status in altered patients | Class II, Level B | [Claassen et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15159471/) |
-| Folate supplementation reduces teratogenicity risk | Class II, Level B | [AAN/AES Practice Parameter 2009](https://pubmed.ncbi.nlm.nih.gov/19398681/) |
+| Folate supplementation reduces teratogenicity risk | Class II, Level B | [AAN/AES/SMFM Epilepsy & Pregnancy Guideline 2024 (Pack et al.)](https://pubmed.ncbi.nlm.nih.gov/38748979/) |
 
 ---
 

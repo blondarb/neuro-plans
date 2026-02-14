@@ -363,7 +363,7 @@ SECTION B: SUPPORTING INFORMATION
 |-----------|--------|------|-------------------|
 | Practice Guideline Update: Efficacy and Tolerability of ASMs | AAN | 2018 | Levetiracetam, lamotrigine, oxcarbazepine, topiramate established for monotherapy; choose based on seizure type, side effect profile, comorbidities |
 | Management of Adult Epilepsy | AES/ILAE | Ongoing updates | Drug-resistant epilepsy defined as failure of 2 appropriate ASMs at adequate doses; refer for surgery evaluation; multidisciplinary care |
-| Epilepsy in Women | AAN | 2009/Updates | Folic acid 0.4-4 mg daily for all women of childbearing potential; avoid valproate in pregnancy if possible; lamotrigine and levetiracetam generally preferred |
+| Epilepsy & Pregnancy | AAN/AES/SMFM | 2024 | Folic acid 0.4-4 mg daily for all women of childbearing potential; avoid valproate in pregnancy if possible; lamotrigine and levetiracetam generally preferred ([Pack et al. Neurology 2024](https://pubmed.ncbi.nlm.nih.gov/38748979/)) |
 | SUDEP Prevention | AAN | 2017 | Counsel on sudden unexpected death in epilepsy; nocturnal supervision reduces risk; seizure control reduces risk |
 
 ### Landmark Studies

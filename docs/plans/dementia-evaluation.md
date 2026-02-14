@@ -297,8 +297,8 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MRI recommended in dementia workup | Class I, Level A | [AAN Practice Parameters (Knopman et al., Neurology 2001)](https://pubmed.ncbi.nlm.nih.gov/11342678/) |
-| B12, TSH, metabolic panel in all patients | Class I, Level A | [AAN Practice Parameters (Knopman et al., Neurology 2001)](https://pubmed.ncbi.nlm.nih.gov/11342678/) |
+| MRI recommended in dementia workup | Class I, Level A | [Alzheimer's Association DETeCD-ADRD Guidelines (Atri et al., Alzheimers Dement 2024)](https://pubmed.ncbi.nlm.nih.gov/39713957/) |
+| B12, TSH, metabolic panel in all patients | Class I, Level A | [Alzheimer's Association DETeCD-ADRD Guidelines (Atri et al., Alzheimers Dement 2024)](https://pubmed.ncbi.nlm.nih.gov/39713957/) |
 | Cholinesterase inhibitors for mild-moderate AD | Class I, Level A | Cochrane Reviews |
 | Memantine for moderate-severe AD | Class I, Level A | Cochrane Reviews |
 | Combination ChEI + memantine | Class I, Level A | [DOMINO trial (Howard et al., NEJM 2012)](https://pubmed.ncbi.nlm.nih.gov/22397651/) |

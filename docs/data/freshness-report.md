@@ -7,46 +7,13 @@
 | Metric | Count |
 |--------|-------|
 | Total checked | 105 |
-| Current | 98 |
-| Newer version available | 6 |
+| Current | 100 |
+| Newer version available | 2 |
 | Health issues (retracted/erratum) | 0 |
 | PMID not found | 0 |
-| Skipped (no org/topic match) | 1 |
+| Skipped (no org/topic match) | 3 |
 
 ## ⚠ Items Requiring Review
-
-### 🔄 AHA/ASA 2019 Stroke Guidelines
-- **Type:** guideline
-- **Current PMID:** 31662037
-- **Citation:** Powers et al. Stroke 2019
-- **Year:** 2019
-- **Status:** newer_available
-- **Newer candidate:** PMID 35579034 (2022)
-  - Title: 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage: A Guideline From the American Heart Association/American Stroke Association.
-  - Journal: Stroke
-  - PubMed: https://pubmed.ncbi.nlm.nih.gov/35579034/
-
-### 🔄 AAN Dementia Practice Parameter 2001
-- **Type:** guideline
-- **Current PMID:** 11342678
-- **Citation:** Knopman et al. Neurology 2001
-- **Year:** 2001
-- **Status:** newer_available
-- **Newer candidate:** PMID 20385882 (2010)
-  - Title: Practice parameter update: evaluation and management of driving risk in dementia: report of the Quality Standards Subcommittee of the American Academy of Neurology.
-  - Journal: Neurology
-  - PubMed: https://pubmed.ncbi.nlm.nih.gov/20385882/
-
-### 🔄 AAN/AES Epilepsy Women 2009
-- **Type:** guideline
-- **Current PMID:** 19398681
-- **Citation:** Harden et al. Neurology 2009
-- **Year:** 2009
-- **Status:** newer_available
-- **Newer candidate:** PMID 22218281 (2012)
-  - Title: Evidence-based guideline: Antiepileptic drug selection for people with HIV/AIDS: report of the Quality Standards Subcommittee of the American Academy of Neurology and the Ad Hoc Task Force of the Commission on Therapeutic Strategies of the International League Against Epilepsy.
-  - Journal: Neurology
-  - PubMed: https://pubmed.ncbi.nlm.nih.gov/22218281/
 
 ### 🔄 AAN Peripheral Neuropathy 2009
 - **Type:** guideline
@@ -70,19 +37,8 @@
   - Journal: J Neurosci Nurs
   - PubMed: https://pubmed.ncbi.nlm.nih.gov/25565594/
 
-### 🔄 AAOS Carpal Tunnel 2016
-- **Type:** guideline
-- **Current PMID:** 26803543
-- **Citation:** AAOS. J Am Acad Orthop Surg 2016
-- **Year:** 2016
-- **Status:** newer_available
-- **Newer candidate:** PMID 39637428 (2025)
-  - Title: American Academy of Orthopaedic Surgeons/ASSH Clinical Practice Guideline Summary Management of Carpal Tunnel Syndrome.
-  - Journal: J Am Acad Orthop Surg
-  - PubMed: https://pubmed.ncbi.nlm.nih.gov/39637428/
 
-
-## Current (99 entries)
+## Current (103 entries)
 
 | Name | Type | PMID | Year |
 |------|------|------|------|
@@ -99,10 +55,12 @@
 | AAN SUDEP Guideline 2017 | guideline | 28438841 | 2017 |
 | AAN Tics/Tourette 2019 | guideline | 31061208 | 2019 |
 | AAN/AES First Seizure Guideline 2015 | guideline | 25901057 | 2015 |
+| AAN/AES/SMFM Epilepsy & Pregnancy 2024 | guideline | 38748979 | 2024 |
 | AAN/AHA/NCS Brain Death 2023 | guideline | 37829552 | 2023 |
 | AAN/AHS Migraine Prevention 2012 | guideline | 22529202 | 2012 |
 | AAN/EFNS Trigeminal Neuralgia 2008 | guideline | 18716236 | 2008 |
 | AANEM Radiculopathy 2010 | guideline | 20645032 | 2010 |
+| AAOS/ASSH Carpal Tunnel 2025 | guideline | 39637428 | 2025 |
 | AASLD Wilson Disease 2008 | guideline | 18506894 | 2008 |
 | ACOG Eclampsia 2020 | guideline | 32443079 | 2020 |
 | ADAPT | trial | 34146511 | 2021 |
@@ -112,6 +70,7 @@
 | AHA/ASA 2021 Secondary Prevention Guidelines | guideline | 34024117 | 2021 |
 | AHA/ASA 2022 ICH Guidelines | guideline | 35579034 | 2022 |
 | AHA/ASA 2023 SAH Guidelines | guideline | 37212182 | 2023 |
+| AHA/ASA 2026 AIS Guidelines | guideline | 41582814 | 2026 |
 | AHA/ASA CVT Guidelines 2011 | guideline | 21293023 | 2011 |
 | ANNEXA-4 | trial | 30730782 | 2019 |
 | APOLLO | trial | 29972753 | 2018 |
@@ -120,6 +79,7 @@
 | ATACH-2 | trial | 27276234 | 2016 |
 | ATTR-ACT | trial | 30145929 | 2018 |
 | AVERT | trial | 25892679 | 2015 |
+| Alzheimer's Association DETeCD-ADRD 2024 | guideline | 39713957 | 2024 |
 | CADISS | trial | 25684164 | 2015 |
 | CDC STI Treatment Guidelines 2021 | guideline | 34292926 | 2021 |
 | CHANCE | trial | 23803136 | 2013 |

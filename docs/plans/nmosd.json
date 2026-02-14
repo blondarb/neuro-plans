@@ -635,21 +635,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "250 mg daily",
-                "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
-              },
-              {
-                "text": "500 mg daily",
-                "orderSentence": "Methylprednisolone Iv 500 mg IV daily"
-              },
-              {
-                "text": "1000 mg daily x3-5 days",
-                "orderSentence": "Methylprednisolone Iv 1000 mg IV daily x3-5 days"
+                "text": "1000 mg daily x 5 days",
+                "orderSentence": "Methylprednisolone IV 1000 mg daily x 5 days IV"
               }
             ],
             "route": "IV",
             "instructions": "1000 mg IV daily for 5 days; infuse over 1-2 hours; follow with oral prednisone taper",
-            "orderSentence": "Methylprednisolone Iv 250 mg IV daily"
+            "orderSentence": "Methylprednisolone IV 1000 mg daily x 5 days IV"
           },
           "contraindications": "Active untreated infection; uncontrolled diabetes; psychosis from steroids",
           "monitoring": "Glucose q6h (target <180); BP; mood/sleep; GI prophylaxis",
@@ -665,17 +657,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "20 mg daily",
-                "orderSentence": "Omeprazole 20 mg PO daily"
-              },
-              {
                 "text": "40 mg daily",
-                "orderSentence": "Omeprazole 40 mg PO daily"
+                "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg daily PO"
               }
             ],
             "route": "PO",
             "instructions": "40 mg PO/IV daily during steroid course and taper",
-            "orderSentence": "Omeprazole 20 mg PO daily"
+            "orderSentence": "Omeprazole (GI prophylaxis during steroids) 40 mg daily PO"
           },
           "contraindications": "PPI allergy",
           "monitoring": "None routine",
@@ -735,21 +723,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "0.4 g/kg daily x5 days",
-                "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
-              },
-              {
-                "text": "1 g/kg daily x2 days",
-                "orderSentence": "Ivig 1 g/kg IV daily x2 days"
-              },
-              {
-                "text": "2 g/kg divided over 2-5 days",
-                "orderSentence": "Ivig 2 g/kg IV divided over 2-5 days"
+                "text": "0.4 g/kg",
+                "orderSentence": "IVIG (if PLEX unavailable or contraindicated) 0.4 g/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "0.4 g/kg/day IV x 5 days (total 2 g/kg); infuse per weight-based protocol",
-            "orderSentence": "Ivig 0.4 g/kg IV daily x5 days"
+            "orderSentence": "IVIG (if PLEX unavailable or contraindicated) 0.4 g/kg IV"
           },
           "contraindications": "IgA deficiency (anaphylaxis risk); recent thromboembolic event; renal failure",
           "monitoring": "Renal function daily; headache; thrombosis; volume overload; check IgA before first dose",
@@ -789,29 +769,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg TID",
-                "orderSentence": "Gabapentin 100 mg PO TID"
-              },
-              {
-                "text": "300 mg TID",
-                "orderSentence": "Gabapentin 300 mg PO TID"
-              },
-              {
-                "text": "600 mg TID",
-                "orderSentence": "Gabapentin 600 mg PO TID"
-              },
-              {
-                "text": "900 mg TID",
-                "orderSentence": "Gabapentin 900 mg PO TID"
-              },
-              {
-                "text": "1200 mg TID",
-                "orderSentence": "Gabapentin 1200 mg PO TID"
+                "text": "300 mg",
+                "orderSentence": "Gabapentin 300 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 300 mg qHS; titrate by 300 mg q3-5d; max 3600 mg/day",
-            "orderSentence": "Gabapentin 100 mg PO TID"
+            "orderSentence": "Gabapentin 300 mg PO"
           },
           "contraindications": "Renal impairment (adjust dose per CrCl)",
           "monitoring": "Sedation; dizziness; edema; renal function",
@@ -827,33 +791,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg TID",
-                "orderSentence": "Pregabalin 50 mg PO TID"
-              },
-              {
-                "text": "75 mg BID",
-                "orderSentence": "Pregabalin 75 mg PO BID"
-              },
-              {
-                "text": "100 mg TID",
-                "orderSentence": "Pregabalin 100 mg PO TID"
-              },
-              {
-                "text": "150 mg BID",
-                "orderSentence": "Pregabalin 150 mg PO BID"
-              },
-              {
-                "text": "200 mg BID",
-                "orderSentence": "Pregabalin 200 mg PO BID"
-              },
-              {
-                "text": "300 mg BID",
-                "orderSentence": "Pregabalin 300 mg PO BID"
+                "text": "75 mg",
+                "orderSentence": "Pregabalin 75 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 75 mg BID; titrate q1wk; max 600 mg/day",
-            "orderSentence": "Pregabalin 50 mg PO TID"
+            "orderSentence": "Pregabalin 75 mg PO"
           },
           "contraindications": "Renal impairment (adjust dose per CrCl)",
           "monitoring": "Sedation; weight gain; edema; renal function",
@@ -869,25 +813,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "30 mg daily",
-                "orderSentence": "Duloxetine 30 mg PO daily"
-              },
-              {
-                "text": "60 mg daily",
-                "orderSentence": "Duloxetine 60 mg PO daily"
-              },
-              {
-                "text": "90 mg daily",
-                "orderSentence": "Duloxetine 90 mg PO daily"
-              },
-              {
-                "text": "120 mg daily",
-                "orderSentence": "Duloxetine 120 mg PO daily"
+                "text": "30 mg",
+                "orderSentence": "Duloxetine 30 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 30 mg daily x 1 week; increase to 60 mg daily; max 120 mg/day",
-            "orderSentence": "Duloxetine 30 mg PO daily"
+            "orderSentence": "Duloxetine 30 mg PO"
           },
           "contraindications": "Hepatic impairment; concurrent MAOIs; uncontrolled glaucoma",
           "monitoring": "BP; LFTs; serotonin syndrome risk",
@@ -903,25 +835,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg TID",
-                "orderSentence": "Baclofen 5 mg PO TID"
-              },
-              {
-                "text": "10 mg TID",
-                "orderSentence": "Baclofen 10 mg PO TID"
-              },
-              {
-                "text": "20 mg TID",
-                "orderSentence": "Baclofen 20 mg PO TID"
-              },
-              {
-                "text": "20 mg QID",
-                "orderSentence": "Baclofen 20 mg PO QID"
+                "text": "5 mg",
+                "orderSentence": "Baclofen 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg TID; titrate by 5 mg/dose q3d; max 80 mg/day",
-            "orderSentence": "Baclofen 5 mg PO TID"
+            "orderSentence": "Baclofen 5 mg PO"
           },
           "contraindications": "Seizure history (lowers threshold on withdrawal); renal impairment",
           "monitoring": "Sedation; weakness; withdrawal risk (do not stop abruptly)",
@@ -937,21 +857,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "2 mg TID",
-                "orderSentence": "Tizanidine 2 mg PO TID"
-              },
-              {
-                "text": "4 mg TID",
-                "orderSentence": "Tizanidine 4 mg PO TID"
-              },
-              {
-                "text": "8 mg TID",
-                "orderSentence": "Tizanidine 8 mg PO TID"
+                "text": "2 mg",
+                "orderSentence": "Tizanidine 2 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 2 mg qHS; titrate by 2 mg q3-7d; max 36 mg/day in divided doses",
-            "orderSentence": "Tizanidine 2 mg PO TID"
+            "orderSentence": "Tizanidine 2 mg PO"
           },
           "contraindications": "Hepatic impairment; concurrent CYP1A2 inhibitors (cipro, fluvoxamine)",
           "monitoring": "LFTs at baseline, 1, 3, 6 months; sedation; hypotension; dry mouth",
@@ -967,25 +879,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "5 mg BID",
-                "orderSentence": "Oxybutynin 5 mg PO BID"
-              },
-              {
-                "text": "5 mg TID",
-                "orderSentence": "Oxybutynin 5 mg PO TID"
-              },
-              {
-                "text": "10 mg daily XL",
-                "orderSentence": "Oxybutynin 10 mg PO daily XL"
-              },
-              {
-                "text": "15 mg daily XL",
-                "orderSentence": "Oxybutynin 15 mg PO daily XL"
+                "text": "5 mg",
+                "orderSentence": "Oxybutynin 5 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 5 mg BID; max 5 mg TID",
-            "orderSentence": "Oxybutynin 5 mg PO BID"
+            "orderSentence": "Oxybutynin 5 mg PO"
           },
           "contraindications": "Uncontrolled narrow-angle glaucoma; urinary retention; GI obstruction",
           "monitoring": "Anticholinergic effects; post-void residual if retention suspected",
@@ -1002,16 +902,12 @@
             "doseOptions": [
               {
                 "text": "0.4 mg daily",
-                "orderSentence": "Tamsulosin 0.4 mg PO daily"
-              },
-              {
-                "text": "0.8 mg daily",
-                "orderSentence": "Tamsulosin 0.8 mg PO daily"
+                "orderSentence": "Tamsulosin 0.4 mg daily PO"
               }
             ],
             "route": "PO",
             "instructions": "0.4 mg PO daily; may increase to 0.8 mg if needed",
-            "orderSentence": "Tamsulosin 0.4 mg PO daily"
+            "orderSentence": "Tamsulosin 0.4 mg daily PO"
           },
           "contraindications": "Orthostatic hypotension",
           "monitoring": "BP; dizziness; intraoperative floppy iris (inform ophthalmology)",
@@ -1027,21 +923,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "100 mg daily",
-                "orderSentence": "Modafinil 100 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Modafinil 200 mg PO daily"
-              },
-              {
-                "text": "400 mg daily",
-                "orderSentence": "Modafinil 400 mg PO daily"
+                "text": "100 mg",
+                "orderSentence": "Modafinil 100 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 100 mg qAM; may increase to 200 mg; avoid afternoon dosing",
-            "orderSentence": "Modafinil 100 mg PO daily"
+            "orderSentence": "Modafinil 100 mg PO"
           },
           "contraindications": "Cardiac arrhythmia; hepatic impairment",
           "monitoring": "BP; HR; insomnia; headache",
@@ -1057,29 +945,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "25 mg daily",
-                "orderSentence": "Sertraline 25 mg PO daily"
-              },
-              {
-                "text": "50 mg daily",
-                "orderSentence": "Sertraline 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Sertraline 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Sertraline 150 mg PO daily"
-              },
-              {
-                "text": "200 mg daily",
-                "orderSentence": "Sertraline 200 mg PO daily"
+                "text": "50 mg",
+                "orderSentence": "Sertraline 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg daily; titrate q2-4wk; max 200 mg/day",
-            "orderSentence": "Sertraline 25 mg PO daily"
+            "orderSentence": "Sertraline 50 mg PO"
           },
           "contraindications": "Concurrent MAOIs; QTc prolongation",
           "monitoring": "Suicidality monitoring (first 8 weeks); serotonin syndrome; QTc",
@@ -1095,17 +967,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg q8h PRN",
-                "orderSentence": "Ondansetron 4 mg PO q8h PRN"
-              },
-              {
-                "text": "8 mg q8h PRN",
-                "orderSentence": "Ondansetron 8 mg PO q8h PRN"
+                "text": "4 mg",
+                "orderSentence": "Ondansetron 4 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "4-8 mg PO/IV q6-8h PRN",
-            "orderSentence": "Ondansetron 4 mg PO q8h PRN"
+            "orderSentence": "Ondansetron 4 mg PO"
           },
           "contraindications": "QTc prolongation; congenital long QT",
           "monitoring": "QTc if risk factors; constipation; headache",
@@ -1121,25 +989,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "1 mg QHS",
-                "orderSentence": "Melatonin 1 mg PO QHS"
-              },
-              {
-                "text": "3 mg QHS",
-                "orderSentence": "Melatonin 3 mg PO QHS"
-              },
-              {
-                "text": "5 mg QHS",
-                "orderSentence": "Melatonin 5 mg PO QHS"
-              },
-              {
-                "text": "10 mg QHS",
-                "orderSentence": "Melatonin 10 mg PO QHS"
+                "text": "3-10 mg qHS",
+                "orderSentence": "Melatonin 3-10 mg qHS PO"
               }
             ],
             "route": "PO",
             "instructions": "3-10 mg PO qHS",
-            "orderSentence": "Melatonin 1 mg PO QHS"
+            "orderSentence": "Melatonin 3-10 mg qHS PO"
           },
           "contraindications": "None significant",
           "monitoring": "Sleep quality",
@@ -1223,17 +1079,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
-              },
-              {
-                "text": "1000 mg/m2 monthly",
-                "orderSentence": "Cyclophosphamide 1000 mg/m2 IV monthly"
+                "text": "750 mg/m2",
+                "orderSentence": "Cyclophosphamide (refractory acute attack) 750 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "750 mg/m2 IV single pulse; pre-hydrate with 1L NS; administer with MESNA",
-            "orderSentence": "Cyclophosphamide 500 mg/m2 IV monthly"
+            "orderSentence": "Cyclophosphamide (refractory acute attack) 750 mg/m2 IV"
           },
           "contraindications": "Pregnancy; active infection; bone marrow failure",
           "monitoring": "CBC weekly x 4 weeks (nadir day 10-14); urinalysis; fertility counseling",
@@ -1251,13 +1103,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "900 mg weekly x4 then 1200 mg q2wk",
-                "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+                "text": "900 mg",
+                "orderSentence": "**Eculizumab (Soliris)** 900 mg IV"
               }
             ],
             "route": "IV",
             "instructions": "Induction: 900 mg IV weekly x 4 weeks; then 1200 mg IV at week 5; maintenance: 1200 mg IV every 2 weeks",
-            "orderSentence": "Eculizumab 900 mg IV weekly x4 then 1200 mg q2wk"
+            "orderSentence": "**Eculizumab (Soliris)** 900 mg IV"
           },
           "pretreatment": "Meningococcal vaccination (ACWY + serogroup B) ≥2 weeks before first dose; CBC; hepatitis B/C screen; quantitative Ig",
           "contraindications": "Unresolved Neisseria meningitidis infection; not vaccinated against meningococcal disease",
@@ -1343,21 +1195,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "375 mg/m2 weekly x4",
-                "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
-              },
-              {
-                "text": "500 mg q6mo",
-                "orderSentence": "Rituximab 500 mg IV q6mo"
-              },
-              {
-                "text": "1000 mg q6mo",
-                "orderSentence": "Rituximab 1000 mg IV q6mo"
+                "text": "375 mg/m2",
+                "orderSentence": "Rituximab (off-label) 375 mg/m2 IV"
               }
             ],
             "route": "IV",
             "instructions": "Induction: 375 mg/m2 IV weekly x 4 OR 1000 mg IV x 2 doses (2 weeks apart); maintenance: 1000 mg IV every 6 months or re-dose based on CD19/CD20 repopulation",
-            "orderSentence": "Rituximab 375 mg/m2 IV weekly x4"
+            "orderSentence": "Rituximab (off-label) 375 mg/m2 IV"
           },
           "pretreatment": "Hepatitis B screen; CBC; quantitative Ig; TB screen; live vaccine washout",
           "contraindications": "Active hepatitis B; severe active infection; live vaccines within 4 weeks",
@@ -1374,21 +1218,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
-              },
-              {
-                "text": "1000 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1000 mg PO BID"
-              },
-              {
-                "text": "1500 mg BID",
-                "orderSentence": "Mycophenolate Mofetil 1500 mg PO BID"
+                "text": "500 mg",
+                "orderSentence": "Mycophenolate mofetil (off-label) 500 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 500 mg PO BID; increase to 1000-1500 mg BID over 2-4 weeks; target 2000-3000 mg/day",
-            "orderSentence": "Mycophenolate Mofetil 500 mg PO BID"
+            "orderSentence": "Mycophenolate mofetil (off-label) 500 mg PO"
           },
           "pretreatment": "Pregnancy (Category D -- teratogenic); active infection",
           "contraindications": "CBC q2 weeks x 3 months, then monthly; LFTs; GI symptoms; infection surveillance; pregnancy prevention",
@@ -1404,25 +1240,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "50 mg daily",
-                "orderSentence": "Azathioprine 50 mg PO daily"
-              },
-              {
-                "text": "100 mg daily",
-                "orderSentence": "Azathioprine 100 mg PO daily"
-              },
-              {
-                "text": "150 mg daily",
-                "orderSentence": "Azathioprine 150 mg PO daily"
-              },
-              {
-                "text": "2-3 mg/kg daily",
-                "orderSentence": "Azathioprine 2-3 mg/kg PO daily"
+                "text": "50 mg",
+                "orderSentence": "Azathioprine (off-label) 50 mg PO"
               }
             ],
             "route": "PO",
             "instructions": "Start 50 mg PO daily; increase by 50 mg q2wk to target 2-3 mg/kg/day",
-            "orderSentence": "Azathioprine 50 mg PO daily"
+            "orderSentence": "Azathioprine (off-label) 50 mg PO"
           },
           "pretreatment": "TPMT deficiency (check before starting); pregnancy (relative)",
           "contraindications": "TPMT genotype before starting; CBC q2 weeks x 2 months, then monthly; LFTs; pancreatitis",
@@ -1438,17 +1262,13 @@
           "dosing": {
             "doseOptions": [
               {
-                "text": "4 mg/kg q4wk",
-                "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
-              },
-              {
-                "text": "8 mg/kg q4wk",
-                "orderSentence": "Tocilizumab 8 mg/kg IV q4wk"
+                "text": "8 mg/kg",
+                "orderSentence": "Tocilizumab (off-label) 8 mg/kg IV"
               }
             ],
             "route": "IV",
             "instructions": "8 mg/kg IV every 4 weeks (max 800 mg) or 162 mg SC weekly",
-            "orderSentence": "Tocilizumab 4 mg/kg IV q4wk"
+            "orderSentence": "Tocilizumab (off-label) 8 mg/kg IV"
           },
           "pretreatment": "Active infection; hepatic impairment; diverticulitis",
           "contraindications": "CBC, LFTs, lipids q4-8 weeks; infection; GI perforation risk; neutropenia",
@@ -1752,7 +1572,7 @@
     {
       "recommendation": "Early PLEX improves outcomes in severe NMOSD relapses",
       "evidenceLevel": "Class III",
-      "source": "Bonnan M et al. Mult Scler 2009;15:765-769"
+      "source": "[Bonnan M et al. Mult Scler 2009;15:765-769](https://pubmed.ncbi.nlm.nih.gov/19324982/)"
     },
     {
       "recommendation": "PLEX within 5 days of steroid failure shows best outcomes",

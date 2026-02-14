@@ -372,7 +372,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | SPEP indicated in idiopathic neuropathy workup | Class II, Level B | [England JD et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19056666/) |
 | Skin biopsy (IENFD) for small fiber neuropathy diagnosis | Class II, Level B | [Lauria G et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642627/) |
 | B12 deficiency neuropathy: early treatment improves outcomes | Class II, Level B | [Healton EB et al. Medicine 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
-| Acute stroke: time-critical evaluation of sensory deficits | Class I, Level A | [Powers WJ et al. AHA/ASA Stroke Guidelines 2019](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| Acute stroke: time-critical evaluation of sensory deficits | Class I, Level A | [Prabhakaran et al. AHA/ASA 2026 AIS Guidelines](https://pubmed.ncbi.nlm.nih.gov/41582814/) |
 | GBS: IVIG or PLEX within 2 weeks of onset | Class I, Level A | [Hughes RA et al. Cochrane Review 2014](https://pubmed.ncbi.nlm.nih.gov/25238327/) |
 | Hypocalcemia causes perioral and acral paresthesia | Class III | Standard physiology texts; [Cooper MS et al. BMJ 2008](https://pubmed.ncbi.nlm.nih.gov/18535072/) |
 | Excessive vitamin B6 causes sensory neuropathy | Class II | [Schaumburg H et al. N Engl J Med 1983](https://pubmed.ncbi.nlm.nih.gov/6308447/) |
@@ -387,7 +387,7 @@ SECTION B: REFERENCE (Expand as Needed)
 **v1.2 (February 2, 2026)**
 - Citation Verification: Fixed 5 incorrect PMIDs in Section 8 (Cho SC 12510035->15389656, Healton EB 1988766->1648656, Cooper MS 18556318->18535072, Fehlings MG 28072639->29164035, Gilron I 15784664->15800228)
 - Citation Verification: Corrected journal name for Cho SC (Phys Med Rehabil Clin N Am 2003 -> Muscle Nerve 2004) and Fehlings MG (Spine 2017 -> Global Spine J 2017)
-- Citation Verification: Added PubMed link for AHA/ASA Stroke Guidelines 2019 (Powers WJ et al. PMID 31662037)
+- Citation Verification: Added PubMed link for AHA/ASA Stroke Guidelines (updated to Prabhakaran et al. 2026, PMID 41582814)
 - CPT Enrichment: Added CPT codes to 8 labs in Section 1B (OGTT 82951, free light chains 83883, vitamin B6 84207, vitamin E 84446, Anti-SSA/SSB 86235, rheumatoid factor 86431, Lyme serology 86618, ACE level 82164)
 - CPT Enrichment: Added CPT codes to 6 labs in Section 1C (cryoglobulins 82784, Anti-CASPR2/LGI1 86255, genetic testing 81479, fat pad biopsy 88313, complement C3/C4 86160/86161, ANCA 86200)
 - CPT Enrichment: Added CPT codes to 5 imaging studies in Section 2B/2C (MRI brachial plexus 73221, MRI lumbar plexus 72197, QST 0108T, nerve ultrasound 76882, MR neurography 76498, CT chest/abdomen/pelvis 74177)

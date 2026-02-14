@@ -274,12 +274,12 @@ SECTION B: REFERENCE (Expand as Needed)
 | Ultrasound-guided injection improves accuracy and outcomes | Class II, Level B | Ustun N et al. Arch Phys Med Rehabil 2013 |
 | Diabetes mellitus is significant risk factor for CTS | Class II, Level B | [Pourmemari MH et al. Diabet Med 2016](https://pubmed.ncbi.nlm.nih.gov/26173490/) |
 | Clinical examination (Phalen, Tinel) has moderate sensitivity/specificity | Class II, Level B | [Middleton SD et al. J Hand Surg Eur Vol 2014](https://pubmed.ncbi.nlm.nih.gov/23735809/) |
-| Severe CTS with thenar atrophy should be referred for surgery | Class II, Level B | [Graham B et al. J Am Acad Orthop Surg 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/) |
+| Severe CTS with thenar atrophy should be referred for surgery | Class II, Level B | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
 | Endoscopic and open CTR have equivalent long-term outcomes | Class I, Level A | [Scholten RJ et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17943805/) |
 | Pregnancy-related CTS often resolves postpartum | Class III, Level C | [Padua L et al. Muscle Nerve 2010](https://pubmed.ncbi.nlm.nih.gov/20976778/) |
 | Median nerve CSA >10-12 mm² on ultrasound supports CTS diagnosis | Class II, Level B | [Cartwright MS et al. Muscle Nerve 2012](https://pubmed.ncbi.nlm.nih.gov/22806381/) |
 | Nerve gliding exercises may provide modest benefit as adjunct therapy | Class II, Level C | [Ballestero-Perez R et al. J Orthop Sports Phys Ther 2017](https://pubmed.ncbi.nlm.nih.gov/27842937/) |
-| AAOS Clinical Practice Guideline for CTS | Guideline | [AAOS Guideline 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/) |
+| AAOS Clinical Practice Guideline for CTS | Guideline | [AAOS/ASSH CTS Guideline 2025](https://pubmed.ncbi.nlm.nih.gov/39637428/) |
 | AANEM practice parameter for electrodiagnosis of CTS | Guideline | [Jablecki CK et al. Muscle Nerve 2002](https://pubmed.ncbi.nlm.nih.gov/15389664/) |
 
 ---
