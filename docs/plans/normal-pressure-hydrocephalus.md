@@ -299,7 +299,7 @@ tags:
 | Short symptom duration predicts better shunt outcome | Class II, Level B | [Relkin et al. Neurosurgery 2005](https://pubmed.ncbi.nlm.nih.gov/16160425/) |
 | CSF biomarkers help differentiate NPH from AD | Class III, Level C | [Tarnaris et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21411220/) |
 | Shunt infection rate 5-10%; requires shunt removal for treatment | Class III, Level C | [McGirt et al. J Neurosurg 2003](https://pubmed.ncbi.nlm.nih.gov/12816268/) |
-| Japanese iNPH Guidelines diagnostic criteria | Class II, Level B | [Mori et al. Neurol Med Chir 2012](https://pubmed.ncbi.nlm.nih.gov/23037929/) |
+| Japanese iNPH Guidelines diagnostic criteria | Class II, Level B | Mori et al. Neurol Med Chir 2012 |
 
 ---
 

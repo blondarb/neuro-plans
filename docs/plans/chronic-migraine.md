@@ -328,30 +328,30 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ICHD-3 criteria for chronic migraine (1.3) | Expert Consensus | Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
-| Topiramate effective for chronic migraine prevention | Class I, Level A | Silberstein SD et al. Headache 2007;47(2):170-180 [PubMed](https://pubmed.ncbi.nlm.nih.gov/17300356/) |
-| OnabotulinumtoxinA for chronic migraine (PREEMPT trial) | Class I, Level A | Dodick DW et al. Headache 2010;50(6):921-936 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20487038/) |
-| OnabotulinumtoxinA PREEMPT-2 results | Class I, Level A | Aurora SK et al. Cephalalgia 2010;30(7):804-814 [PubMed](https://pubmed.ncbi.nlm.nih.gov/20647171/) |
-| Erenumab for chronic migraine prevention | Class I, Level A | Tepper SJ et al. Lancet Neurol 2017;16(6):425-434 [PubMed](https://pubmed.ncbi.nlm.nih.gov/28460892/) |
-| Fremanezumab for chronic migraine (HALO-CM) | Class I, Level A | Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29171818/) |
-| Galcanezumab for chronic migraine (REGAIN) | Class I, Level A | Detke HC et al. Neurology 2018;91(24):e2211-e2221 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30446596/) |
-| Eptinezumab for chronic migraine (PROMISE-2) | Class I, Level A | Lipton RB et al. Neurology 2020;94(13):e1365-e1377 [PubMed](https://pubmed.ncbi.nlm.nih.gov/32209650/) |
-| Atogepant for chronic migraine prevention (PROGRESS) | Class I, Level A | Pozo-Rosich P et al. Lancet 2023;402(10404):775-785 [PubMed](https://pubmed.ncbi.nlm.nih.gov/37478885/) |
-| Rimegepant for migraine prevention | Class I, Level A | Croop R et al. Lancet 2021;397(10268):51-60 [PubMed](https://pubmed.ncbi.nlm.nih.gov/33338437/) |
-| AAN/AHS practice guideline update on migraine prevention | Expert Consensus | Silberstein SD et al. Neurology 2012;78(17):1337-1345 [PubMed](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
-| AHS consensus statement on CGRP mAbs in migraine | Expert Consensus | American Headache Society. Headache 2019;59(1):1-18 [PubMed](https://pubmed.ncbi.nlm.nih.gov/30536394/) |
-| Behavioral treatments for migraine (biofeedback, CBT, relaxation) | Class I, Level A | Penzien DB et al. Neurology 2005;64(10):2010-2015 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15929764/) |
-| Prochlorperazine/metoclopramide for acute migraine | Class I, Level A | Friedman BW et al. Ann Emerg Med 2008;52(4):399-406 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18006188/) |
-| Dexamethasone reduces migraine recurrence | Class I, Level A | Singh A et al. Acad Emerg Med 2008;15(12):1223-1233 [PubMed](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
-| DHE for refractory status migrainosus | Class II, Level B | Raskin NH. Neurology 1986;36(7):995-997 [PubMed](https://pubmed.ncbi.nlm.nih.gov/3520384/) |
-| Riboflavin for migraine prevention | Class II, Level B | Schoenen J et al. Neurology 1998;50(2):466-470 [PubMed](https://pubmed.ncbi.nlm.nih.gov/9484373/) |
-| Magnesium for migraine prevention | Class II, Level B | Peikert A et al. Cephalalgia 1996;16(4):257-263 [PubMed](https://pubmed.ncbi.nlm.nih.gov/8792038/) |
-| Ubrogepant for acute migraine (ACHIEVE-I and ACHIEVE-II) | Class I, Level A | Dodick DW et al. JAMA 2019;322(24):2489-2496 [PubMed](https://pubmed.ncbi.nlm.nih.gov/31860047/) |
-| Acupuncture for migraine prevention (Cochrane review) | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27351677/) |
-| Beta-blockers (propranolol) for migraine prevention | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225 [PubMed](https://pubmed.ncbi.nlm.nih.gov/15106196/) |
-| Medication overuse headache criteria and management | Expert Consensus | Diener HC et al. Nat Rev Neurol 2016;12(10):575-583 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27615418/) |
-| Candesartan for migraine prevention | Class II, Level B | Stovner LJ et al. JAMA 2014;311(11):1091-1099 [PubMed](https://pubmed.ncbi.nlm.nih.gov/24643616/) |
-| Neuromodulation devices for migraine (sTMS, eTNS, nVNS) | Class II, Level B | Starling AJ et al. Headache 2018;58(S1):187-196 [PubMed](https://pubmed.ncbi.nlm.nih.gov/29527677/) |
+| ICHD-3 criteria for chronic migraine (1.3) | Expert Consensus | Headache Classification Committee of the International Headache Society. Cephalalgia 2018;38(1):1-211 PubMed |
+| Topiramate effective for chronic migraine prevention | Class I, Level A | Silberstein SD et al. Headache 2007;47(2):170-180 PubMed |
+| OnabotulinumtoxinA for chronic migraine (PREEMPT trial) | Class I, Level A | Dodick DW et al. Headache 2010;50(6):921-936 PubMed |
+| OnabotulinumtoxinA PREEMPT-2 results | Class I, Level A | [Aurora SK et al. Cephalalgia 2010;30(7):804-814 PubMed](https://pubmed.ncbi.nlm.nih.gov/20647170/) |
+| Erenumab for chronic migraine prevention | Class I, Level A | [Tepper SJ et al. Lancet Neurol 2017;16(6):425-434 PubMed](https://pubmed.ncbi.nlm.nih.gov/28460892/) |
+| Fremanezumab for chronic migraine (HALO-CM) | Class I, Level A | [Silberstein SD et al. N Engl J Med 2017;377(22):2113-2122 PubMed](https://pubmed.ncbi.nlm.nih.gov/29171818/) |
+| Galcanezumab for chronic migraine (REGAIN) | Class I, Level A | [Detke HC et al. Neurology 2018;91(24):e2211-e2221 PubMed](https://pubmed.ncbi.nlm.nih.gov/30446596/) |
+| Eptinezumab for chronic migraine (PROMISE-2) | Class I, Level A | [Lipton RB et al. Neurology 2020;94(13):e1365-e1377 PubMed](https://pubmed.ncbi.nlm.nih.gov/32747522/) |
+| Atogepant for chronic migraine prevention (PROGRESS) | Class I, Level A | [Pozo-Rosich P et al. Lancet 2023;402(10404):775-785 PubMed](https://pubmed.ncbi.nlm.nih.gov/37516125/) |
+| Rimegepant for migraine prevention | Class I, Level A | [Croop R et al. Lancet 2021;397(10268):51-60 PubMed](https://pubmed.ncbi.nlm.nih.gov/33338437/) |
+| AAN/AHS practice guideline update on migraine prevention | Expert Consensus | [Silberstein SD et al. Neurology 2012;78(17):1337-1345 PubMed](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
+| AHS consensus statement on CGRP mAbs in migraine | Expert Consensus | American Headache Society. Headache 2019;59(1):1-18 PubMed |
+| Behavioral treatments for migraine (biofeedback, CBT, relaxation) | Class I, Level A | Penzien DB et al. Neurology 2005;64(10):2010-2015 PubMed |
+| Prochlorperazine/metoclopramide for acute migraine | Class I, Level A | [Friedman BW et al. Ann Emerg Med 2008;52(4):399-406 PubMed](https://pubmed.ncbi.nlm.nih.gov/18632186/) |
+| Dexamethasone reduces migraine recurrence | Class I, Level A | [Singh A et al. Acad Emerg Med 2008;15(12):1223-1233 PubMed](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
+| DHE for refractory status migrainosus | Class II, Level B | [Raskin NH. Neurology 1986;36(7):995-997 PubMed](https://pubmed.ncbi.nlm.nih.gov/3520384/) |
+| Riboflavin for migraine prevention | Class II, Level B | [Schoenen J et al. Neurology 1998;50(2):466-470 PubMed](https://pubmed.ncbi.nlm.nih.gov/9484373/) |
+| Magnesium for migraine prevention | Class II, Level B | [Peikert A et al. Cephalalgia 1996;16(4):257-263 PubMed](https://pubmed.ncbi.nlm.nih.gov/8792038/) |
+| Ubrogepant for acute migraine (ACHIEVE-I and ACHIEVE-II) | Class I, Level A | Dodick DW et al. JAMA 2019;322(24):2489-2496 PubMed |
+| Acupuncture for migraine prevention (Cochrane review) | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2016;(6):CD001218 PubMed |
+| Beta-blockers (propranolol) for migraine prevention | Class I, Level A | Linde K et al. Cochrane Database Syst Rev 2004;(2):CD003225 PubMed |
+| Medication overuse headache criteria and management | Expert Consensus | [Diener HC et al. Nat Rev Neurol 2016;12(10):575-583 PubMed](https://pubmed.ncbi.nlm.nih.gov/27615418/) |
+| Candesartan for migraine prevention | Class II, Level B | Stovner LJ et al. JAMA 2014;311(11):1091-1099 PubMed |
+| Neuromodulation devices for migraine (sTMS, eTNS, nVNS) | Class II, Level B | Starling AJ et al. Headache 2018;58(S1):187-196 PubMed |
 
 ---
 

@@ -383,13 +383,13 @@ SECTION B: SUPPORTING INFORMATION
 | 4-Aminopyridine effective for episodic ataxia type 2 and downbeat nystagmus | Class I, Level B | [Strupp et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21734179/) |
 | Riluzole for cerebellar ataxia — moderate improvement in SARA scores across mixed ataxia etiologies | Class I, Level B | [Romano et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/26321318/) |
 | Acetazolamide for episodic ataxia type 2 — reduces episode frequency and severity | Class III, Level C | [Griggs et al. Ann Neurol 1978](https://pubmed.ncbi.nlm.nih.gov/677818/) |
-| Omaveloxolone (Skyclarys) — FDA-approved for Friedreich ataxia; improved mFARS score | Class I, Level B | [Lynch et al. N Engl J Med 2024](https://pubmed.ncbi.nlm.nih.gov/41583108/) |
+| Omaveloxolone (Skyclarys) — FDA-approved for Friedreich ataxia; improved mFARS score | Class I, Level B | Lynch et al. N Engl J Med 2024 |
 | IVIG for autoimmune cerebellar ataxia (anti-GAD) — case series showing improvement | Class IV, Level C | [Arino et al. JAMA Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24934144/) |
 | Friedreich ataxia — natural history and cardiac involvement require surveillance | Class III, Level C | [Pandolfo. Arch Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18852343/) |
 | SARA scale — validated rating scale for cerebellar ataxia assessment and monitoring | Validation study | [Schmitz-Hubsch et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16769946/) |
-| Alcohol-related cerebellar degeneration — anterior vermis atrophy pattern; abstinence may halt progression | Class III, Level C | [Fitzpatrick et al. Eur Radiol 2008](https://pubmed.ncbi.nlm.nih.gov/18034347/) |
+| Alcohol-related cerebellar degeneration — anterior vermis atrophy pattern; abstinence may halt progression | Class III, Level C | [Fitzpatrick et al. Eur Radiol 2008](https://pubmed.ncbi.nlm.nih.gov/19434885/) |
 | MSA-C diagnostic criteria and natural history | Consensus criteria | [Gilman et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18725592/) |
-| Thiamine replacement for Wernicke encephalopathy — IV thiamine prevents permanent cerebellar damage | Class III, Level C | [Galvin et al. J Neurol Neurosurg Psychiatry 2010](https://pubmed.ncbi.nlm.nih.gov/21294435/) |
+| Thiamine replacement for Wernicke encephalopathy — IV thiamine prevents permanent cerebellar damage | Class III, Level C | Galvin et al. J Neurol Neurosurg Psychiatry 2010 |
 | Rituximab for autoimmune cerebellar ataxia — emerging evidence for anti-GAD and paraneoplastic | Class IV, Level C | [Jarius et al. J Neuroimmunol 2010](https://pubmed.ncbi.nlm.nih.gov/20813415/) |
 
 ---

@@ -297,7 +297,7 @@ tags:
 |----------------|----------------|--------|
 | Diagnostic criteria for bvFTD (International Consensus) | Class I, Level A | [Rascovsky et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21810890/) |
 | Diagnostic criteria for PPA variants | Class I, Level A | [Gorno-Tempini et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21325651/) |
-| SSRIs for behavioral symptoms in FTD | Class II, Level B | [Herrmann et al. J Clin Psychiatry 2012](https://pubmed.ncbi.nlm.nih.gov/23658467/) |
+| SSRIs for behavioral symptoms in FTD | Class II, Level B | Herrmann et al. J Clin Psychiatry 2012 |
 | Trazodone for FTD behavioral symptoms | Class II, Level B | [Lebert et al. Dement Geriatr Cogn Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15178953/) |
 | Cholinesterase inhibitors not recommended in FTD | Class II, Level B | [Mendez et al. Am J Alzheimers Dis Other Demen 2007](https://pubmed.ncbi.nlm.nih.gov/17804830/) |
 | Antipsychotic mortality risk in dementia | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16234500/) |
@@ -306,8 +306,8 @@ tags:
 | FDG-PET in FTD diagnosis | Class II, Level B | [Foster et al. Ann Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/18693901/) |
 | CSF NfL as prognostic biomarker in FTD | Class II, Level B | [Rohrer et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27581216/) |
 | Memantine limited efficacy in FTD | Class II, Level C | [Boxer et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23290598/) |
-| FTD-ALS continuum | Class I, Level A | [Burrell et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/28230552/) |
-| Serum progranulin as GRN mutation screen | Class II, Level B | [Finch et al. J Mol Diagn 2009](https://pubmed.ncbi.nlm.nih.gov/20930952/) |
+| FTD-ALS continuum | Class I, Level A | Burrell et al. Lancet Neurol 2016 |
+| Serum progranulin as GRN mutation screen | Class II, Level B | Finch et al. J Mol Diagn 2009 |
 | Practice guidelines for FTD management | Class III, Level C | [Tsai et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34746377/) |
 | Riluzole in ALS | Class I, Level A | [Miller et al. Cochrane 2012](https://pubmed.ncbi.nlm.nih.gov/22419278/) |
 | Relyvrio (AMX0035) withdrawn after PHOENIX trial failure | N/A | Amylyx Pharmaceuticals press release, April 2024; PHOENIX trial (NCT05021536) |

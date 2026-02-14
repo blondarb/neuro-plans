@@ -267,14 +267,14 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| CSF JCV PCR is the definitive diagnostic test for PML; sensitivity 72-92% | Class I, Level B | [Berger JR et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23526723/) |
-| ART is the primary treatment for HIV-PML; immune reconstitution improves survival | Class I, Level B | [Marzocchetti A et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19564582/) |
-| Natalizumab-associated PML: PLEX accelerates drug clearance and immune reconstitution | Class IIa, Level C | [Clifford DB et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20975054/) |
-| PML-IRIS occurs in ~15-25% of HIV-PML patients starting ART; corticosteroids are standard treatment | Class IIa, Level C | [Tan K et al. J Neurovirol 2009](https://pubmed.ncbi.nlm.nih.gov/19370545/) |
-| Mirtazapine as adjunctive therapy (5-HT2A antagonism blocks JCV entry): limited clinical evidence | Class IIb, Level C | [Elphick GF et al. Science 2004](https://pubmed.ncbi.nlm.nih.gov/15528448/) |
-| Pembrolizumab (anti-PD-1) for non-HIV PML: case series showing potential benefit | Class IIb, Level C | [Cortese I et al. N Engl J Med 2019](https://pubmed.ncbi.nlm.nih.gov/31050378/) |
-| JCV antibody index stratifies natalizumab-PML risk | Class IIa, Level B | [Plavina T et al. Ann Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25164539/) |
-| AAN practice guideline on PML risk stratification with natalizumab | Guideline | [McGuigan C et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/26764028/) |
+| CSF JCV PCR is the definitive diagnostic test for PML; sensitivity 72-92% | Class I, Level B | [Berger JR et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/25813523/) |
+| ART is the primary treatment for HIV-PML; immune reconstitution improves survival | Class I, Level B | [Marzocchetti A et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19901246/) |
+| Natalizumab-associated PML: PLEX accelerates drug clearance and immune reconstitution | Class IIa, Level C | [Clifford DB et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20338919/) |
+| PML-IRIS occurs in ~15-25% of HIV-PML patients starting ART; corticosteroids are standard treatment | Class IIa, Level C | [Tan K et al. J Neurovirol 2009](https://pubmed.ncbi.nlm.nih.gov/21158024/) |
+| Mirtazapine as adjunctive therapy (5-HT2A antagonism blocks JCV entry): limited clinical evidence | Class IIb, Level C | [Elphick GF et al. Science 2004](https://pubmed.ncbi.nlm.nih.gov/15550673/) |
+| Pembrolizumab (anti-PD-1) for non-HIV PML: case series showing potential benefit | Class IIb, Level C | [Cortese I et al. N Engl J Med 2019](https://pubmed.ncbi.nlm.nih.gov/30969503/) |
+| JCV antibody index stratifies natalizumab-PML risk | Class IIa, Level B | [Plavina T et al. Ann Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25273271/) |
+| AAN practice guideline on PML risk stratification with natalizumab | Guideline | [McGuigan C et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/27869557/) |
 
 ---
 

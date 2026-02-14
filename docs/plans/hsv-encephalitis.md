@@ -295,7 +295,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | IV acyclovir 10 mg/kg q8h x 14-21 days | Class I, Level A | [Whitley et al. (NEJM 1986)](https://pubmed.ncbi.nlm.nih.gov/3001520/) — acyclovir vs placebo landmark trial; reduced mortality from 70% to 20% |
-| Start acyclovir empirically; do NOT delay for diagnostics | Class I, Level A | IDSA Encephalitis Guidelines ([Tunkel et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/18582201/)); every hour of delay worsens outcomes |
+| Start acyclovir empirically; do NOT delay for diagnostics | Class I, Level A | [IDSA Encephalitis Guidelines](https://pubmed.ncbi.nlm.nih.gov/18582201/) ([Tunkel et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/18582201/)); every hour of delay worsens outcomes |
 | CSF HSV PCR as gold standard (sensitivity 96-98%) | Class I, Level A | [Lakeman & Whitley (JID 1995)](https://pubmed.ncbi.nlm.nih.gov/7706811/) |
 | Repeat HSV PCR if initially negative with high clinical suspicion | Class I, Level B | False negative rate ~5% in first 72h; Roullet (2007) |
 | MRI with DWI is most sensitive imaging | Class I, Level A | Sensitivity >90% within 48h; temporal lobe predilection |

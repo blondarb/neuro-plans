@@ -334,9 +334,9 @@ tags:
 | Pyridostigmine for symptomatic treatment of MG | Class I, Level A | [Mehndiratta MM et al. Cochrane 2014](https://pubmed.ncbi.nlm.nih.gov/25310725/) |
 | Thymectomy improves outcomes in AChR+ generalized MG age 18-65 | Class I, Level B | [Wolfe GI et al. NEJM 2016 (MGTX Trial)](https://pubmed.ncbi.nlm.nih.gov/27509100/) |
 | Corticosteroids effective for MG | Class II, Level B | [Schneider-Gold C et al. Cochrane 2005](https://pubmed.ncbi.nlm.nih.gov/15846640/) |
-| Azathioprine as steroid-sparing agent | Class I, Level B | [Palace J et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/10070480/) |
+| Azathioprine as steroid-sparing agent | Class I, Level B | Palace J et al. NEJM 1998 |
 | Mycophenolate mofetil in MG (mixed evidence) | Class II, Level B | [Sanders DB et al. Muscle Nerve 2016](https://pubmed.ncbi.nlm.nih.gov/26661270/) |
-| Rituximab effective in MuSK-positive MG | Class II, Level B | [Nowak RJ et al. Neurology 2022](https://pubmed.ncbi.nlm.nih.gov/36380885/) |
+| Rituximab effective in MuSK-positive MG | Class II, Level B | [Nowak RJ et al. Neurology 2022](https://pubmed.ncbi.nlm.nih.gov/35733619/) |
 | Rituximab in refractory AChR+ MG | Class II, Level C | [Tandan R et al. Muscle Nerve 2017](https://pubmed.ncbi.nlm.nih.gov/28164324/) |
 | Eculizumab for refractory generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2017 (REGAIN)](https://pubmed.ncbi.nlm.nih.gov/29066163/) |
 | Efgartigimod for generalized AChR+ MG | Class I, Level A | [Howard JF et al. Lancet Neurol 2021 (ADAPT)](https://pubmed.ncbi.nlm.nih.gov/34146511/) |

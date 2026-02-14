@@ -304,20 +304,20 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | ICSD-3 diagnostic criteria for disorders of arousal (sleepwalking, sleep terrors, confusional arousals) | Consensus guidelines | [American Academy of Sleep Medicine. ICSD-3-TR 2023](https://aasm.org/clinical-resources/international-classification-sleep-disorders/) |
-| NREM parasomnias pathophysiology: local slow-wave dissociation during arousals from N3 sleep | Class II | [Castelnovo et al. Sleep Med Rev 2018](https://pubmed.ncbi.nlm.nih.gov/28363449/) |
-| Comprehensive review of NREM parasomnias: epidemiology, genetics, clinical features, and management | Expert review | [Arnulf et al. Sleep Med Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22024172/) |
-| Distinguishing nocturnal frontal lobe epilepsy from NREM parasomnias: clinical and video-PSG features | Class II, Level B | [Derry et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/16513659/) |
-| Nocturnal frontal lobe epilepsy: clinical and polysomnographic features distinguishing from parasomnias | Class II | [Provini et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10468515/) |
-| Treatment of parasomnias: pharmacologic and non-pharmacologic approaches including clonazepam and scheduled awakenings | Expert review | [Attarian & Zhu. Curr Treat Options Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23609781/) |
-| Parasomnias clinical guidelines: diagnosis, safety management, and evidence-based treatment | Clinical guidelines | [Fleetham & Fleming. CMAJ 2014](https://pubmed.ncbi.nlm.nih.gov/25349007/) |
-| Clonazepam efficacy for NREM parasomnias; suppression of slow-wave sleep arousals | Class III, Level C | [Schenck & Mahowald. Sleep 1996](https://pubmed.ncbi.nlm.nih.gov/8855039/) |
-| OSA as trigger for NREM parasomnias: resolution of sleepwalking and sleep terrors with CPAP | Class III, Level C | [Guilleminault et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/15897165/) |
-| Sleep deprivation as primary trigger for disorders of arousal; experimental provocation studies | Class II | [Zadra et al. Ann Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18571773/) |
+| NREM parasomnias pathophysiology: local slow-wave dissociation during arousals from N3 sleep | Class II | Castelnovo et al. Sleep Med Rev 2018 |
+| Comprehensive review of NREM parasomnias: epidemiology, genetics, clinical features, and management | Expert review | [Arnulf et al. Sleep Med Rev 2012](https://pubmed.ncbi.nlm.nih.gov/22995695/) |
+| Distinguishing nocturnal frontal lobe epilepsy from NREM parasomnias: clinical and video-PSG features | Class II, Level B | [Derry et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/17381337/) |
+| Nocturnal frontal lobe epilepsy: clinical and polysomnographic features distinguishing from parasomnias | Class II | [Provini et al. Brain 1999](https://pubmed.ncbi.nlm.nih.gov/10356056/) |
+| Treatment of parasomnias: pharmacologic and non-pharmacologic approaches including clonazepam and scheduled awakenings | Expert review | Attarian & Zhu. Curr Treat Options Neurol 2013 |
+| Parasomnias clinical guidelines: diagnosis, safety management, and evidence-based treatment | Clinical guidelines | [Fleetham & Fleming. CMAJ 2014](https://pubmed.ncbi.nlm.nih.gov/24799552/) |
+| Clonazepam efficacy for NREM parasomnias; suppression of slow-wave sleep arousals | Class III, Level C | [Schenck & Mahowald. Sleep 1996](https://pubmed.ncbi.nlm.nih.gov/8969420/) |
+| OSA as trigger for NREM parasomnias: resolution of sleepwalking and sleep terrors with CPAP | Class III, Level C | [Guilleminault et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16240364/) |
+| Sleep deprivation as primary trigger for disorders of arousal; experimental provocation studies | Class II | [Zadra et al. Ann Neurol 2008](https://pubmed.ncbi.nlm.nih.gov/18351640/) |
 | Anti-IgLON5 disease: autoimmune disorder with prominent NREM parasomnia features | Class III | [Sabater et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24703753/) |
-| Genetic predisposition to sleepwalking: family and twin studies showing strong heritability | Class II | [Licis et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21242494/) |
+| Genetic predisposition to sleepwalking: family and twin studies showing strong heritability | Class II | [Licis et al. Neurology 2011](https://pubmed.ncbi.nlm.nih.gov/21205695/) |
 | Melatonin for NREM parasomnias: consolidation of sleep architecture and reduction of arousals | Class III, Level C | Expert consensus; case series |
-| Topiramate for sleep-related eating disorder | Class III, Level C | [Winkelman. Sleep Med 2003](https://pubmed.ncbi.nlm.nih.gov/14592363/) |
-| European Sleep Research Society guideline on parasomnias | Guideline, expert consensus | [Galbiati et al. J Sleep Res 2019](https://pubmed.ncbi.nlm.nih.gov/30710407/) |
+| Topiramate for sleep-related eating disorder | Class III, Level C | [Winkelman. Sleep Med 2003](https://pubmed.ncbi.nlm.nih.gov/14592329/) |
+| European Sleep Research Society guideline on parasomnias | Guideline, expert consensus | [Galbiati et al. J Sleep Res 2019](https://pubmed.ncbi.nlm.nih.gov/32158481/) |
 
 ---
 

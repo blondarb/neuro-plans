@@ -262,18 +262,18 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| OSA is an independent risk factor for ischemic stroke with 2-3 fold increased risk; dose-response relationship with AHI severity | Class I, Prospective cohort (N=1022) | [Yaggi et al. N Engl J Med 2005](https://pubmed.ncbi.nlm.nih.gov/16306520/) |
-| OSA causes significant neurocognitive impairment including deficits in attention, executive function, visuospatial processing, and memory | Systematic review | [Lal et al. Chest 2012](https://pubmed.ncbi.nlm.nih.gov/22556319/) |
-| CPAP treatment reduces fatal and non-fatal cardiovascular events in severe OSA; untreated severe OSA has significantly higher cardiovascular mortality | Class I, Prospective cohort (N=1651, 10-year follow-up) | [Marin et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15766999/) |
-| Untreated OSA worsens seizure control; CPAP treatment reduces seizure frequency in patients with comorbid epilepsy | Class II, Prospective study | [Malow et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18316690/) |
-| OSA-related cognitive deficits are partially reversible with CPAP treatment; attention and executive function show most improvement; memory deficits may persist | Meta-analysis | [Bucks et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/23904683/) |
+| OSA is an independent risk factor for ischemic stroke with 2-3 fold increased risk; dose-response relationship with AHI severity | Class I, Prospective cohort (N=1022) | [Yaggi et al. N Engl J Med 2005](https://pubmed.ncbi.nlm.nih.gov/16282178/) |
+| OSA causes significant neurocognitive impairment including deficits in attention, executive function, visuospatial processing, and memory | Systematic review | [Lal et al. Chest 2012](https://pubmed.ncbi.nlm.nih.gov/22670023/) |
+| CPAP treatment reduces fatal and non-fatal cardiovascular events in severe OSA; untreated severe OSA has significantly higher cardiovascular mortality | Class I, Prospective cohort (N=1651, 10-year follow-up) | [Marin et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15781100/) |
+| Untreated OSA worsens seizure control; CPAP treatment reduces seizure frequency in patients with comorbid epilepsy | Class II, Prospective study | [Malow et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18711110/) |
+| OSA-related cognitive deficits are partially reversible with CPAP treatment; attention and executive function show most improvement; memory deficits may persist | Meta-analysis | [Bucks et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/23997362/) |
 | OSA prevalence has increased substantially; estimated 10-17% of adult men and 3-9% of adult women affected; prevalence increases with obesity epidemic | Prospective population-based cohort (Wisconsin Sleep Cohort, 20-year follow-up) | [Peppard et al. Am J Epidemiol 2013](https://pubmed.ncbi.nlm.nih.gov/23589584/) |
-| 10% body weight loss produces 26% reduction in AHI; weight management is critical adjunct to CPAP therapy | Class I, Prospective cohort | [Peppard et al. JAMA 2000](https://pubmed.ncbi.nlm.nih.gov/11126694/) |
-| OSA is the most common identifiable cause of resistant hypertension; CPAP reduces blood pressure 2-10 mmHg in compliant users | Meta-analysis, Level A | [Bazzano et al. JAMA 2007](https://pubmed.ncbi.nlm.nih.gov/18073359/) |
+| 10% body weight loss produces 26% reduction in AHI; weight management is critical adjunct to CPAP therapy | Class I, Prospective cohort | [Peppard et al. JAMA 2000](https://pubmed.ncbi.nlm.nih.gov/11122588/) |
+| OSA is the most common identifiable cause of resistant hypertension; CPAP reduces blood pressure 2-10 mmHg in compliant users | Meta-analysis, Level A | [Bazzano et al. JAMA 2007](https://pubmed.ncbi.nlm.nih.gov/17785637/) |
 | AASM clinical practice guideline for diagnostic testing of OSA; PSG is gold standard; HSAT acceptable for uncomplicated patients | Clinical practice guideline | [Kapur et al. J Clin Sleep Med 2017](https://pubmed.ncbi.nlm.nih.gov/28162150/) |
-| Modafinil is effective for residual EDS in OSA patients adherent to CPAP; FDA-approved for this indication | Class I, RCT | [Black et al. Am J Respir Crit Care Med 2007](https://pubmed.ncbi.nlm.nih.gov/17962641/) |
-| OSA is associated with increased prevalence of white matter hyperintensities and silent cerebral infarcts on MRI; severity correlates with AHI and hypoxemia burden | Cross-sectional neuroimaging study | [Kim et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/23729926/) |
-| CPAP treatment for 3 months improves white matter integrity and neurocognitive function in severe OSA; structural brain changes are partially reversible | Prospective treatment study with DTI | [Castronovo et al. Am J Respir Crit Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25233138/) |
+| Modafinil is effective for residual EDS in OSA patients adherent to CPAP; FDA-approved for this indication | Class I, RCT | Black et al. Am J Respir Crit Care Med 2007 |
+| OSA is associated with increased prevalence of white matter hyperintensities and silent cerebral infarcts on MRI; severity correlates with AHI and hypoxemia burden | Cross-sectional neuroimaging study | [Kim et al. Sleep 2013](https://pubmed.ncbi.nlm.nih.gov/24293752/) |
+| CPAP treatment for 3 months improves white matter integrity and neurocognitive function in severe OSA; structural brain changes are partially reversible | Prospective treatment study with DTI | [Castronovo et al. Am J Respir Crit Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/25142557/) |
 
 ---
 

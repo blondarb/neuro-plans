@@ -342,10 +342,10 @@ SECTION B: REFERENCE
 | MRI with STIR sequences is essential for plexus evaluation; detects denervation muscle edema and nerve signal abnormalities | Class II, Level B | Stable-Delma A et al. Skeletal Radiol 2021 |
 | EMG/NCS is the gold standard for confirming and localizing plexopathy; optimal timing 3-4 weeks post-onset | Class I, Level A | [Ferrante MA. Continuum (Minneap Minn) 2014](https://pubmed.ncbi.nlm.nih.gov/25299285/) |
 | Diabetic lumbosacral radiculoplexus neuropathy (DLRPN) is caused by microvasculitis; immunotherapy may help | Class II, Level B | [Dyck PJ et al. Neurology 1999](https://pubmed.ncbi.nlm.nih.gov/10599791/) |
-| IVIg did not show significant benefit over placebo in DLRPN in a randomized trial but may help selected severe cases | Class I, Level B | Dyck PJB et al. Neurology 2006 |
+| IVIg did not show significant benefit over placebo in DLRPN in a randomized trial but may help selected severe cases | Class I, Level B | [Dyck PJB et al. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16401837/) |
 | Corticosteroids are commonly used for acute neuralgic amyotrophy but evidence is limited to retrospective/observational data | Class III, Level C | [van Eijk JJ, van Alfen N et al. J Neurol Neurosurg Psychiatry 2009](https://pubmed.ncbi.nlm.nih.gov/19321467/) |
 | Radiation-induced plexopathy: myokymic discharges on EMG are pathognomonic; differentiates from tumor recurrence | Class II, Level B | [Harper CM Jr et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2538777/) |
-| PET-CT helps differentiate radiation plexopathy from tumor recurrence (FDG-avid suggests recurrence) | Class II, Level B | Basu S et al. Mol Imaging Biol 2011 |
+| PET-CT helps differentiate radiation plexopathy from tumor recurrence (FDG-avid suggests recurrence) | Class II, Level B | [Basu S et al. Mol Imaging Biol 2011](https://pubmed.ncbi.nlm.nih.gov/21161689/) |
 | Gabapentin/pregabalin are first-line for neuropathic pain including plexopathy-related neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | Early nerve repair (within 6 months) for traumatic brachial plexus injury improves outcomes | Class II, Level B | [Terzis JK, Kostopoulos VK. Plast Reconstr Surg 2007](https://pubmed.ncbi.nlm.nih.gov/17496583/) |
 | Nerve transfer procedures improve functional outcomes for proximal brachial plexus injuries with root avulsion | Class II, Level B | [Bertelli JA, Ghizoni MF. J Neurosurg 2004](https://pubmed.ncbi.nlm.nih.gov/15540915/) |

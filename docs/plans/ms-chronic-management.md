@@ -265,13 +265,13 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | High-efficacy DMTs reduce relapses/progression | Class I, Level A | Multiple RCTs |
-| Ocrelizumab effective for PPMS | Class I, Level A | [ORATORIO trial](https://pubmed.ncbi.nlm.nih.gov/28002688/) |
+| Ocrelizumab effective for PPMS | Class I, Level A | [ORATORIO](https://pubmed.ncbi.nlm.nih.gov/28002688/) trial |
 | Early high-efficacy treatment improves long-term outcomes | Class II, Level B | Observational data |
 | IV steroids for acute relapse | Class I, Level A | Multiple RCTs |
 | Vitamin D supplementation may reduce relapse | Class II, Level B | Observational data; RCTs ongoing |
 | Exercise improves fatigue and quality of life | Class I, Level A | Multiple RCTs |
 | Natalizumab PML risk stratification | Class I | JCV antibody testing; risk algorithms |
-| Siponimod for active SPMS | Class I, Level A | [EXPAND trial](https://pubmed.ncbi.nlm.nih.gov/29576505/) |
+| Siponimod for active SPMS | Class I, Level A | [EXPAND](https://pubmed.ncbi.nlm.nih.gov/29576505/) trial |
 
 ---
 

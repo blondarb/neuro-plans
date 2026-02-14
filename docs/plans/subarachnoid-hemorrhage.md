@@ -153,7 +153,7 @@ SECTION A: ACTION ITEMS
 | Blood pressure control: Clevidipine IV (CPT 96365) | IV | Ultra-short-acting alternative for BP control | 1-2 mg/h :: IV :: - :: 1-2 mg/h IV; max 32 mg/h | Soy/egg allergy | BP continuous | STAT | STAT | - | STAT |
 | Nimodipine (CORNERSTONE of vasospasm prevention) | PO | Vasospasm prevention; start within 96h of SAH onset x 21 days | 60 mg :: IV :: q4h :: 60 mg PO/NG q4h x 21 days. START within 96h of SAH onset. If hypotension: 30 mg q2h. This is an ORAL calcium channel blocker — do NOT give IV (severe hypotension). Proven to reduce poor outcomes from vasospasm | Hypotension (SBP <90 — reduce dose); do NOT crush extended-release formulations; use oral syringe if NG | BP with each dose; do NOT give IV; ensure enteral route only | - | STAT | - | STAT |
 | External ventricular drain (EVD) | - | Acute hydrocephalus; GCS declining; ICP monitoring needed | N/A :: - :: once :: For acute hydrocephalus (GCS declining; CT showing ventriculomegaly); allows ICP monitoring and CSF drainage. Set drain height per neurosurgery (typically 15-20 cm above tragus) | Coagulopathy (correct first) | ICP continuous; CSF output q1h; drain position; infection surveillance (CSF culture q3 days per some protocols) | STAT | STAT | - | STAT |
-| Seizure prophylaxis (short-term) | IV | Short-term (3-7 days) seizure prophylaxis per AHA 2012 | 1000 mg :: IV :: BID :: Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA 2012: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.) | Renal impairment (dose adjust) | Seizure monitoring | STAT | STAT | - | STAT |
+| Seizure prophylaxis (short-term) | IV | Short-term (3-7 days) seizure prophylaxis per AHA/ASA 2023 | 1000 mg :: IV :: BID :: Levetiracetam 1000 mg IV/PO load, then 500-1000 mg BID. AHA/ASA 2023: short-term (3-7 days) prophylaxis is reasonable. Avoid phenytoin (associated with worse cognitive outcomes in SAH — Naidech et al.) | Renal impairment (dose adjust) | Seizure monitoring | STAT | STAT | - | STAT |
 | Intubation / Airway protection | - | GCS ≤8; airway protection; respiratory failure; impending herniation | N/A :: - :: once :: GCS ≤8; inability to protect airway; respiratory failure; impending herniation | N/A | Avoid hypotension during RSI; maintain SBP goal | STAT | STAT | - | STAT |
 | Aminocaproic acid (antifibrinolytic) (CPT 96365) | IV | Short-term (<72h) if aneurysm securing delayed; reduces re-bleeding | 4g :: IV :: once :: 4g IV load then 1g/h IV infusion. ONLY use for short-term (<72h) if aneurysm securing will be delayed. Reduces re-bleeding risk but increases thrombotic risk. Discontinue once aneurysm is secured | Active DIC; DVT/PE; renal impairment | Coagulation; thrombotic events; discontinue when aneurysm treated | STAT | STAT | - | STAT |
 | IV isotonic fluids (euvolemia) | IV | Euvolemia maintenance; hypovolemia worsens vasospasm | 1-1.5 mL/kg :: - :: - :: NS at 1-1.5 mL/kg/h (80-125 mL/h); goal euvolemia. Avoid hypovolemia (worsens vasospasm) and avoid aggressive hypervolemia (no proven benefit; risk of pulmonary edema). Target CVP 5-8 or clinical euvolemia | Volume overload; CHF | I/O; daily weights; CVP if central line; serum Na q6-8h | STAT | STAT | - | STAT |
@@ -295,21 +295,21 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Nimodipine 60 mg PO q4h x 21 days | Class I, Level A | [Pickard et al. (BMJ 1989)](https://pubmed.ncbi.nlm.nih.gov/2496789/); only proven agent to improve outcomes in SAH vasospasm |
-| Early aneurysm securing (<24h, ideally <12h) | Class I, Level B | ISAT; AHA/ASA 2012 SAH Guidelines; [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
-| Endovascular coiling preferred over clipping for most aneurysms | Class I, Level A | ISAT trial ([Molyneux et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12414200/)); long-term follow-up |
-| SBP <160 until aneurysm secured | Class I, Level B | AHA/ASA 2012 SAH Guidelines |
+| Early aneurysm securing (<24h, ideally <12h) | Class I, Level B | [ISAT](https://pubmed.ncbi.nlm.nih.gov/12414200/); [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/); [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
+| Endovascular coiling preferred over clipping for most aneurysms | Class I, Level A | [ISAT](https://pubmed.ncbi.nlm.nih.gov/12414200/) trial ([Molyneux et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12414200/)); long-term follow-up |
+| SBP <160 until aneurysm secured | Class I, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
 | Euvolemia (avoid hypovolemia; avoid prophylactic hypervolemia) | Class I, Level B | [Lennihan et al. (Stroke 2000)](https://pubmed.ncbi.nlm.nih.gov/10657410/); HIMALAIA trial |
-| Induced hypertension for clinical vasospasm (after aneurysm secured) | Class IIa, Level B | AHA/ASA Guidelines; standard practice |
-| TCD daily for vasospasm monitoring | Class IIa, Level B | [Sloan et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15136667/); AHA/ASA Guidelines |
-| Short-term seizure prophylaxis (3-7 days) reasonable | Class IIb, Level B | AHA/ASA 2012 |
+| Induced hypertension for clinical vasospasm (after aneurysm secured) | Class IIa, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/); standard practice |
+| TCD daily for vasospasm monitoring | Class IIa, Level B | [Sloan et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15136667/); [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
+| Short-term seizure prophylaxis (3-7 days) reasonable | Class IIb, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
 | Avoid phenytoin in SAH (worse cognitive outcomes) | Class III (Harm) | [Naidech et al. (Stroke 2005)](https://pubmed.ncbi.nlm.nih.gov/15662039/) |
 | CT sensitivity ~100% within 6h | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/); [Backes et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22821609/) |
-| LP if CT negative but clinical suspicion | Class I, Level B | AHA/ASA Guidelines; standard of care |
-| Aminocaproic acid (short-term) if aneurysm securing delayed | Class IIa, Level B | [Hillman et al. (J Neurosurg 2002)](https://pubmed.ncbi.nlm.nih.gov/12405362/); AHA/ASA 2012 |
+| LP if CT negative but clinical suspicion | Class I, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/); standard of care |
+| Aminocaproic acid (short-term) if aneurysm securing delayed | Class IIa, Level B | [Hillman et al. (J Neurosurg 2002)](https://pubmed.ncbi.nlm.nih.gov/12405362/); [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
 | Magnesium infusion does NOT improve outcomes | Class III (No Benefit) | MASH-2 trial ([Dorhout Mees et al. Lancet 2012](https://pubmed.ncbi.nlm.nih.gov/22633825/)) |
 | Fludrocortisone for cerebral salt wasting | Class IIa, Level B | [Hasan et al. (Stroke 1989)](https://pubmed.ncbi.nlm.nih.gov/2672426/) |
-| Intra-arterial vasodilator / balloon angioplasty for refractory vasospasm | Class IIa, Level B | Multiple case series; AHA/ASA Guidelines |
-| Avoid self-fulfilling prophecy in poor-grade SAH | Class I, Level C | AHA/ASA 2012: aggressive treatment for at least 72h in poor-grade |
+| Intra-arterial vasodilator / balloon angioplasty for refractory vasospasm | Class IIa, Level B | Multiple case series; [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
+| Avoid self-fulfilling prophecy in poor-grade SAH | Class I, Level C | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/): aggressive treatment for at least 72h in poor-grade |
 
 ---
 

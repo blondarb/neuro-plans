@@ -374,24 +374,24 @@ SECTION B: REFERENCE (Expand as Needed)
 | Clinical spectrum and natural history of SPS | Class III, Retrospective | [Dalakas MC. Curr Treat Options Neurol 2009;11:102-110](https://pubmed.ncbi.nlm.nih.gov/19210912/) |
 | Comprehensive review of SPS spectrum disorders (classic, SLS, PERM) | Expert Review | [Dalakas MC. N Engl J Med 2024;390:1935-1948](https://pubmed.ncbi.nlm.nih.gov/39227464/) |
 | EMG findings: continuous motor unit activity at rest in SPS | Class II | [Gordon EE et al. Am J Med 1967;42:582-599](https://pubmed.ncbi.nlm.nih.gov/5336989/) |
-| Original description of stiff-man syndrome (Moersch and Woltman) | Historical | Moersch FP, Woltman HW. Proc Staff Meet Mayo Clin 1956;31:421-427 |
+| Original description of stiff-man syndrome (Moersch and Woltman) | Historical | [Moersch FP, Woltman HW. Proc Staff Meet Mayo Clin 1956;31:421-427](https://pubmed.ncbi.nlm.nih.gov/13350379/) |
 | Anti-amphiphysin antibodies and paraneoplastic SPS | Class III | [De Camilli P et al. N Engl J Med 1993;328:546-551](https://pubmed.ncbi.nlm.nih.gov/8257595/) |
 | Diazepam as first-line symptomatic treatment for SPS | Expert Consensus | [Dalakas MC. Curr Treat Options Neurol 2009;11:102-110](https://pubmed.ncbi.nlm.nih.gov/19210912/) |
 | Baclofen as adjunctive therapy for rigidity and spasms in SPS | Class IV, Case Series | [Stayer C, Tronnier V. J Neurol 1997;244:244-245](https://pubmed.ncbi.nlm.nih.gov/9409352/) |
 | Anti-glycine receptor antibodies in PERM variant | Class III | [Carvajal-Gonzalez A et al. JAMA Neurol 2014;71:1009-1016](https://pubmed.ncbi.nlm.nih.gov/25580252/) |
-| Anti-DPPX antibodies and hyperexcitability syndrome including SPS spectrum | Class III | [Boronat A et al. Neurology 2013;80:1133-1139](https://pubmed.ncbi.nlm.nih.gov/24329083/) |
+| Anti-DPPX antibodies and hyperexcitability syndrome including SPS spectrum | Class III | Boronat A et al. Neurology 2013;80:1133-1139 |
 | Rituximab for SPS (case series showing benefit) | Class IV, Case Series | [Dalakas MC et al. Ann Neurol 2017;82:271-277](https://pubmed.ncbi.nlm.nih.gov/28749549/) |
-| Plasmapheresis for acute SPS exacerbations | Class IV, Case Reports | [Shariatmadar S, Noto TA. J Clin Apher 2001;16:55-59](https://pubmed.ncbi.nlm.nih.gov/12210710/) |
+| Plasmapheresis for acute SPS exacerbations | Class IV, Case Reports | [Shariatmadar S, Noto TA. J Clin Apher 2001;16:55-59](https://pubmed.ncbi.nlm.nih.gov/11258614/) |
 | Intrathecal baclofen for refractory SPS | Class IV, Case Reports | [Stayer C et al. J Neurol 1997;244:244-245](https://pubmed.ncbi.nlm.nih.gov/9409352/) |
 | Association of SPS with type 1 diabetes mellitus (30-60% comorbidity) | Class II, Retrospective | [Baizabal-Carvallo JF, Jankovic J. J Neurol 2015;262:2030-2040](https://pubmed.ncbi.nlm.nih.gov/26194199/) |
 | Paraneoplastic SPS: cancer screening recommendations | Expert Consensus | [Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2008;79:1304-1306](https://pubmed.ncbi.nlm.nih.gov/18779614/) |
 | High-titer anti-GAD (>2000 IU/mL) differentiates SPS from T1DM | Class II | [Saiz A et al. Arch Neurol 2008;65:889-894](https://pubmed.ncbi.nlm.nih.gov/19045820/) |
 | SPS and autoimmune comorbidities (thyroiditis, pernicious anemia, vitiligo) | Class III | [Alexopoulos H, Dalakas MC. Neurol Neuroimmunol Neuroinflamm 2019;6:e571](https://pubmed.ncbi.nlm.nih.gov/31846700/) |
-| Status spasticus as a medical emergency in SPS | Class IV, Case Reports | [Stiff-person syndrome and status spasticus. Neurology 2008;71:2093-2094](https://pubmed.ncbi.nlm.nih.gov/19092769/) |
+| Status spasticus as a medical emergency in SPS | Class IV, Case Reports | Stiff-person syndrome and status spasticus. Neurology 2008;71:2093-2094 |
 | CSF anti-GAD antibodies and intrathecal synthesis in SPS | Class III | [Dalakas MC et al. Neurology 2001;57:780-784](https://pubmed.ncbi.nlm.nih.gov/11552003/) |
 | Updated diagnostic criteria and classification of SPS spectrum | Expert Review | [Newsome SD, Johnson T. J Neuroimmunol 2022;369:577915](https://pubmed.ncbi.nlm.nih.gov/35717735/) |
 | Mycophenolate as immunosuppressive agent in SPS | Class IV, Case Series | Expert consensus; limited published evidence; extrapolated from autoimmune neurology practice |
-| GABAergic pathway dysfunction as pathophysiology of SPS | Class II, Basic Science | [Levy LM et al. N Engl J Med 1999;341:1511-1516](https://pubmed.ncbi.nlm.nih.gov/10564686/) |
+| GABAergic pathway dysfunction as pathophysiology of SPS | Class II, Basic Science | [Levy LM et al. N Engl J Med 1999;341:1511-1516](https://pubmed.ncbi.nlm.nih.gov/10387935/) |
 
 ---
 

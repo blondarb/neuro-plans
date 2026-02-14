@@ -307,7 +307,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | STAT MRI entire spine for acute myelopathy | Class I, Level B | AAN Practice Guideline; [Transverse Myelitis Consortium Working Group (2002)](https://pubmed.ncbi.nlm.nih.gov/12236201/) |
-| IV methylprednisolone 1g/day x 3-5 days for inflammatory myelitis | Class I, Level B | Consensus; extrapolated from MS relapse data (ONTT) and TM studies |
+| IV methylprednisolone 1g/day x 3-5 days for inflammatory myelitis | Class I, Level B | Consensus; extrapolated from MS relapse data ([ONTT](https://pubmed.ncbi.nlm.nih.gov/1734247/)) and TM studies |
 | PLEX for steroid-refractory inflammatory myelitis | Class IIa, Level B | [Weinshenker et al. (Ann Neurol 1999)](https://pubmed.ncbi.nlm.nih.gov/10589540/); superior to sham in severe demyelinating attacks |
 | AQP4-IgG (cell-based assay) for NMOSD diagnosis | Class I, Level A | [Wingerchuk et al. IPND 2015 criteria](https://pubmed.ncbi.nlm.nih.gov/26092914/) |
 | MOG-IgG for MOGAD diagnosis | Class I, Level B | [Banwell et al. (Lancet Neurol 2023)](https://pubmed.ncbi.nlm.nih.gov/36706773/) |

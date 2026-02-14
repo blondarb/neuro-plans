@@ -309,14 +309,14 @@ tags:
 
 ## Section 8: Evidence & References
 
-1. Graus F, Titulaer MJ, Balu R, et al. **A clinical approach to diagnosis of autoimmune encephalitis.** *Lancet Neurol.* 2016;15(4):391-404. [PMID: 26906964](https://pubmed.ncbi.nlm.nih.gov/26906964/) *(Graus diagnostic criteria — foundational)*
-2. Dalmau J, Gleichman AJ, Hughes EG, et al. **Anti-NMDA-receptor encephalitis: case series and analysis of the effects of antibodies.** *Lancet Neurol.* 2008;7(12):1091-1098. [PMID: 18851928](https://pubmed.ncbi.nlm.nih.gov/18851928/)
-3. Titulaer MJ, McCracken L, Gabilondo I, et al. **Treatment and prognostic factors for long-term outcome in patients with anti-NMDA receptor encephalitis: an observational cohort study.** *Lancet Neurol.* 2013;12(2):157-165. [PMID: 23290630](https://pubmed.ncbi.nlm.nih.gov/23290630/)
-4. Irani SR, Alexander S, Waters P, et al. **Antibodies to Kv1 potassium channel-complex proteins leucine-rich, glioma inactivated 1 protein and contactin-associated protein-2 in limbic encephalitis, Morvan's syndrome and acquired neuromyotonia.** *Brain.* 2010;133(9):2734-2748. [PMID: 20663977](https://pubmed.ncbi.nlm.nih.gov/20663977/)
-5. Flanagan EP, McKeon A, Lennon VA, et al. **Autoimmune dementia: clinical course and predictors of immunotherapy response.** *Mayo Clin Proc.* 2010;85(10):881-897. [PMID: 20884824](https://pubmed.ncbi.nlm.nih.gov/20884824/) *(Mayo autoimmune dementia cohort)*
-6. Dubey D, Pittock SJ, Kelly CR, et al. **Autoimmune encephalitis epidemiology and a comparison to infectious encephalitis.** *Ann Neurol.* 2018;83(1):166-177. [PMID: 29293273](https://pubmed.ncbi.nlm.nih.gov/29293273/)
-7. Bien CG, Vincent A, Barnett MH, et al. **Immunopathology of autoantibody-associated encephalitides: clues for pathogenesis.** *Brain.* 2012;135(Pt 5):1622-1638. [PMID: 22539258](https://pubmed.ncbi.nlm.nih.gov/22539258/)
-8. McKeon A, Lennon VA, Pittock SJ. **Immunotherapy-responsive dementias and encephalopathies.** *Continuum (Minneap Minn).* 2010;16(2 Dementia):80-101. [PMID: 22810280](https://pubmed.ncbi.nlm.nih.gov/22810280/)
+1. Graus F, Titulaer MJ, Balu R, et al. **A clinical approach to diagnosis of autoimmune encephalitis.** *Lancet Neurol.* 2016;15(4):391-404. PMID: 26906964 *(Graus diagnostic criteria — foundational)*
+2. Dalmau J, Gleichman AJ, Hughes EG, et al. **Anti-NMDA-receptor encephalitis: case series and analysis of the effects of antibodies.** *Lancet Neurol.* 2008;7(12):1091-1098. PMID: 18851928
+3. Titulaer MJ, McCracken L, Gabilondo I, et al. **Treatment and prognostic factors for long-term outcome in patients with anti-NMDA receptor encephalitis: an observational cohort study.** *Lancet Neurol.* 2013;12(2):157-165. PMID: 23290630
+4. Irani SR, Alexander S, Waters P, et al. **Antibodies to Kv1 potassium channel-complex proteins leucine-rich, glioma inactivated 1 protein and contactin-associated protein-2 in limbic encephalitis, Morvan's syndrome and acquired neuromyotonia.** *Brain.* 2010;133(9):2734-2748. PMID: 20663977
+5. Flanagan EP, McKeon A, Lennon VA, et al. **Autoimmune dementia: clinical course and predictors of immunotherapy response.** *Mayo Clin Proc.* 2010;85(10):881-897. PMID: 20884824 *(Mayo autoimmune dementia cohort)*
+6. Dubey D, Pittock SJ, Kelly CR, et al. **Autoimmune encephalitis epidemiology and a comparison to infectious encephalitis.** *Ann Neurol.* 2018;83(1):166-177. PMID: 29293273
+7. Bien CG, Vincent A, Barnett MH, et al. **Immunopathology of autoantibody-associated encephalitides: clues for pathogenesis.** *Brain.* 2012;135(Pt 5):1622-1638. PMID: 22539258
+8. McKeon A, Lennon VA, Pittock SJ. **Immunotherapy-responsive dementias and encephalopathies.** *Continuum (Minneap Minn).* 2010;16(2 Dementia):80-101. PMID: 22810280
 
 ---
 

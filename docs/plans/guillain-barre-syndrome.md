@@ -298,7 +298,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Early rehabilitation improves outcomes | Class I, Level B | [Khan & Amatya, Eur J Phys Rehabil Med 2012](https://pubmed.ncbi.nlm.nih.gov/22820829/); GBS-CIDP Foundation recommendations |
 | DVT prophylaxis | Class I, Level C | Standard of care for immobilized patients |
 | Anti-ganglioside antibodies (diagnostic, not required) | Class IIa, Level B | Diagnostic sensitivity varies by subtype |
-| Brighton criteria for GBS diagnosis | Class IIa, Level C | [Brighton Collaboration, Vaccine 2011](https://pubmed.ncbi.nlm.nih.gov/20600491/) |
+| Brighton criteria for GBS diagnosis | Class IIa, Level C | Brighton Collaboration, Vaccine 2011 |
 | IgA level before IVIG | Class I, Level C | Standard safety measure |
 | LP with albuminocytologic dissociation | Class I, Level B | Classic diagnostic finding; may be normal in first week |
 

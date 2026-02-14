@@ -328,30 +328,30 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Definition and diagnostic criteria for PCS | Consensus | ICD-10 F07.81; McCrory P et al. Br J Sports Med 2017 (Berlin Consensus Statement on Concussion in Sport) |
-| Persistent symptoms defined as >3 months post-injury | Consensus | Silverberg ND, Iverson GL. J Head Trauma Rehabil 2013 |
-| Graded aerobic exercise improves recovery from PCS | Class I, Level A | Leddy JJ et al. Clin J Sport Med 2019 (Buffalo Concussion Treadmill Test) |
+| Definition and diagnostic criteria for PCS | Consensus | ICD-10 F07.81; [McCrory P et al. Br J Sports Med 2017](https://pubmed.ncbi.nlm.nih.gov/29098980/) (Berlin Consensus Statement on Concussion in Sport) |
+| Persistent symptoms defined as >3 months post-injury | Consensus | [Silverberg ND, Iverson GL. J Head Trauma Rehabil 2013](https://pubmed.ncbi.nlm.nih.gov/23640544/) |
+| Graded aerobic exercise improves recovery from PCS | Class I, Level A | [Leddy JJ et al. Clin J Sport Med 2019 (Buffalo Concussion Treadmill Test)](https://pubmed.ncbi.nlm.nih.gov/30239422/) |
 | Sub-threshold aerobic exercise safe and beneficial for PCS | Class I, Level A | Leddy JJ et al. J Head Trauma Rehabil 2010 |
-| Vestibular rehabilitation effective for post-traumatic dizziness | Class I, Level A | Alsalaheen BA et al. Am J Phys Med Rehabil 2010 |
-| Amitriptyline effective for chronic post-traumatic headache | Class II, Level B | Cushman DM et al. Headache 2019 |
+| Vestibular rehabilitation effective for post-traumatic dizziness | Class I, Level A | [Alsalaheen BA et al. Am J Phys Med Rehabil 2010](https://pubmed.ncbi.nlm.nih.gov/20588094/) |
+| Amitriptyline effective for chronic post-traumatic headache | Class II, Level B | [Cushman DM et al. Headache 2019](https://pubmed.ncbi.nlm.nih.gov/30451286/) |
 | Topiramate for post-traumatic headache prevention | Class II, Level B | Packard RC. Curr Pain Headache Rep 2000; VA/DoD Clinical Practice Guideline 2016 |
-| Cognitive rehabilitation improves attention and executive function post-TBI | Class I, Level A | Cicerone KD et al. Arch Phys Med Rehabil 2019 (systematic review) |
+| Cognitive rehabilitation improves attention and executive function post-TBI | Class I, Level A | [Cicerone KD et al. Arch Phys Med Rehabil 2019 (systematic review)](https://pubmed.ncbi.nlm.nih.gov/30926291/) |
 | Neuropsychological testing recommended for persistent cognitive complaints | Class II, Level B | Iverson GL et al. NeuroRehabilitation 2009 |
 | Methylphenidate improves cognitive fatigue and processing speed post-TBI | Class II, Level B | Willmott C, Ponsford J. Neurology 2009 |
-| Amantadine improves cognitive function after TBI | Class I, Level A | Giacino JT et al. NEJM 2012 |
+| Amantadine improves cognitive function after TBI | Class I, Level A | [Giacino JT et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22375973/) |
 | Post-traumatic hypopituitarism occurs in up to 25% of TBI cases | Class II, Level B | Tanriverdi F et al. J Clin Endocrinol Metab 2015 |
 | CBT effective for PCS-related mood and anxiety symptoms | Class I, Level A | Potter S et al. Neuropsychol Rev 2016 |
 | Melatonin improves sleep quality post-TBI | Class II, Level B | Grima NA et al. J Neurotrauma 2018 |
 | BPPV is common following concussion and responds to repositioning | Class I, Level A | Fife TD et al. Neurology 2008 (AAN Practice Parameter) |
 | Post-traumatic headache management follows migraine treatment paradigm | Consensus | Seifert T. Curr Pain Headache Rep 2011; AHS 2019 |
-| OnabotulinumtoxinA for chronic post-traumatic headache | Class II, Level B | Yerry JA et al. Headache 2015 |
-| Occipital nerve block effective for post-traumatic headache | Class II, Level B | Ashkenazi A, Levin M. Headache 2007 |
+| OnabotulinumtoxinA for chronic post-traumatic headache | Class II, Level B | [Yerry JA et al. Headache 2015](https://pubmed.ncbi.nlm.nih.gov/25644249/) |
+| Occipital nerve block effective for post-traumatic headache | Class II, Level B | [Ashkenazi A, Levin M. Headache 2007](https://pubmed.ncbi.nlm.nih.gov/17355508/) |
 | Modafinil for post-TBI fatigue and somnolence | Class II, Level B | Kaiser PR et al. J Clin Psychopharmacol 2010 |
 | Berlin Consensus Statement on Concussion in Sport, 5th International Conference | Consensus | McCrory P et al. Br J Sports Med 2017 |
-| Amsterdam Consensus Statement on Concussion in Sport, 6th International Conference | Consensus | Patricios JS et al. Br J Sports Med 2023 |
+| Amsterdam Consensus Statement on Concussion in Sport, 6th International Conference | Consensus | [Patricios JS et al. Br J Sports Med 2023](https://pubmed.ncbi.nlm.nih.gov/37316210/) |
 | VA/DoD Clinical Practice Guideline for Management of Concussion/mTBI | Class I | VA/DoD Evidence-Based Clinical Practice Guideline 2021 |
 | ACR Appropriateness Criteria for head trauma | Class II, Level B | ACR Appropriateness Criteria Panel 2020 |
-| Risk of chronic symptoms after mTBI: 15-30% at 3 months | Class I | Levin HS, Diaz-Arrastia RR. NEJM 2015 |
+| Risk of chronic symptoms after mTBI: 15-30% at 3 months | Class I | [Levin HS, Diaz-Arrastia RR. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/25564911/) |
 
 ---
 

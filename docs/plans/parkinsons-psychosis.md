@@ -261,14 +261,14 @@ tags:
 
 ## Section 8: Evidence & References
 
-1. Cummings J, Isaacson S, Mills R, et al. **Pimavanserin for patients with Parkinson's disease psychosis: a randomised, placebo-controlled phase 3 trial.** *Lancet.* 2014;383(9916):533-540. [PMID: 24183563](https://pubmed.ncbi.nlm.nih.gov/24183563/)
-2. Pollak P, Tison F, Rascol O, et al. **Clozapine in drug induced psychosis in Parkinson's disease: a randomised, placebo controlled study with open follow up.** *J Neurol Neurosurg Psychiatry.* 2004;75(5):689-695. [PMID: 15090560](https://pubmed.ncbi.nlm.nih.gov/15090560/) *(French Clozapine Study)*
-3. Parkinson Study Group. **Low-dose clozapine for the treatment of drug-induced psychosis in Parkinson's disease.** *N Engl J Med.* 1999;340(10):757-763. [PMID: 10072410](https://pubmed.ncbi.nlm.nih.gov/10072410/)
-4. Ondo WG, Tintner R, Voung KD, et al. **Double-blind, placebo-controlled, unforced titration parallel trial of quetiapine for dopaminergic-induced hallucinations in Parkinson's disease.** *Mov Disord.* 2005;20(8):958-963. [PMID: 15800937](https://pubmed.ncbi.nlm.nih.gov/15800937/)
-5. Seppi K, Ray Chaudhuri K, Coelho M, et al. **Update on treatments for nonmotor symptoms of Parkinson's disease — an evidence-based medicine review.** *Mov Disord.* 2019;34(2):180-198. [PMID: 30653247](https://pubmed.ncbi.nlm.nih.gov/30653247/) *(MDS EBM Review)*
-6. Emre M, Aarsland D, Albanese A, et al. **Rivastigmine for dementia associated with Parkinson's disease.** *N Engl J Med.* 2004;351(24):2509-2518. [PMID: 15590953](https://pubmed.ncbi.nlm.nih.gov/15590953/) *(EXPRESS trial)*
-7. Ffytche DH, Creese B, Politis M, et al. **The psychosis spectrum in Parkinson disease.** *Nat Rev Neurol.* 2017;13(2):81-95. [PMID: 28106066](https://pubmed.ncbi.nlm.nih.gov/28106066/)
-8. Ravina B, Marder K, Fernandez HH, et al. **Diagnostic criteria for psychosis in Parkinson's disease: report of an NINDS, NIMH work group.** *Mov Disord.* 2007;22(8):1061-1068. [PMID: 17266092](https://pubmed.ncbi.nlm.nih.gov/17266092/)
+1. Cummings J, Isaacson S, Mills R, et al. **Pimavanserin for patients with Parkinson's disease psychosis: a randomised, placebo-controlled phase 3 trial.** *Lancet.* 2014;383(9916):533-540. PMID: 24183563
+2. Pollak P, Tison F, Rascol O, et al. **Clozapine in drug induced psychosis in Parkinson's disease: a randomised, placebo controlled study with open follow up.** *J Neurol Neurosurg Psychiatry.* 2004;75(5):689-695. PMID: 15090560 *(French Clozapine Study)*
+3. Parkinson Study Group. **Low-dose clozapine for the treatment of drug-induced psychosis in Parkinson's disease.** *N Engl J Med.* 1999;340(10):757-763. PMID: 10072410
+4. Ondo WG, Tintner R, Voung KD, et al. **Double-blind, placebo-controlled, unforced titration parallel trial of quetiapine for dopaminergic-induced hallucinations in Parkinson's disease.** *Mov Disord.* 2005;20(8):958-963. PMID: 15800937
+5. Seppi K, Ray Chaudhuri K, Coelho M, et al. **Update on treatments for nonmotor symptoms of Parkinson's disease — an evidence-based medicine review.** *Mov Disord.* 2019;34(2):180-198. PMID: 30653247 *(MDS EBM Review)*
+6. Emre M, Aarsland D, Albanese A, et al. **Rivastigmine for dementia associated with Parkinson's disease.** *N Engl J Med.* 2004;351(24):2509-2518. PMID: 15590953 *(EXPRESS trial)*
+7. Ffytche DH, Creese B, Politis M, et al. **The psychosis spectrum in Parkinson disease.** *Nat Rev Neurol.* 2017;13(2):81-95. PMID: 28106066
+8. Ravina B, Marder K, Fernandez HH, et al. **Diagnostic criteria for psychosis in Parkinson's disease: report of an NINDS, NIMH work group.** *Mov Disord.* 2007;22(8):1061-1068. PMID: 17266092
 
 ---
 

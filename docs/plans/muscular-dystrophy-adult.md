@@ -257,14 +257,14 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Cardiac screening recommended for all muscular dystrophy patients | Class I, Level B | [Groh WJ et al. Heart Rhythm 2008](https://pubmed.ncbi.nlm.nih.gov/18534376/) |
-| LMNA mutation carriers: prophylactic ICD reduces sudden cardiac death risk | Class IIa, Level B | [Meune C et al. J Am Coll Cardiol 2006](https://pubmed.ncbi.nlm.nih.gov/16979003/) |
-| ACE inhibitors delay cardiomyopathy progression in Becker MD | Class IIa, Level B | [Duboc D et al. J Am Coll Cardiol 2005](https://pubmed.ncbi.nlm.nih.gov/16168286/) |
-| NIV improves survival in neuromuscular respiratory failure | Class I, Level B | [Simonds AK. Eur Respir J 2006](https://pubmed.ncbi.nlm.nih.gov/16387949/) |
+| Cardiac screening recommended for all muscular dystrophy patients | Class I, Level B | [Groh WJ et al. Heart Rhythm 2008](https://pubmed.ncbi.nlm.nih.gov/18065285/) |
+| LMNA mutation carriers: prophylactic ICD reduces sudden cardiac death risk | Class IIa, Level B | [Meune C et al. J Am Coll Cardiol 2006](https://pubmed.ncbi.nlm.nih.gov/17236468/) |
+| ACE inhibitors delay cardiomyopathy progression in Becker MD | Class IIa, Level B | [Duboc D et al. J Am Coll Cardiol 2005](https://pubmed.ncbi.nlm.nih.gov/15766818/) |
+| NIV improves survival in neuromuscular respiratory failure | Class I, Level B | [Simonds AK. Eur Respir J 2006](https://pubmed.ncbi.nlm.nih.gov/16585081/) |
 | Avoid succinylcholine in all muscular dystrophies (hyperkalemic arrest risk) | Class I, Level C | [Hayes J et al. Br J Anaesth 2008](https://pubmed.ncbi.nlm.nih.gov/18344556/) |
 | FSHD genetic diagnosis: D4Z4 contraction on 4qA allele | Class I, Level A | [Lemmers RJLF et al. Science 2010](https://pubmed.ncbi.nlm.nih.gov/20724583/) |
 | LGMD classification update (2018) | Consensus | [Straub V et al. Neuromuscul Disord 2018](https://pubmed.ncbi.nlm.nih.gov/30055862/) |
-| Cricopharyngeal myotomy improves swallowing in OPMD | Class IIa, Level B | [Coiffier L et al. Neuromuscul Disord 2006](https://pubmed.ncbi.nlm.nih.gov/16427281/) |
+| Cricopharyngeal myotomy improves swallowing in OPMD | Class IIa, Level B | [Coiffier L et al. Neuromuscul Disord 2006](https://pubmed.ncbi.nlm.nih.gov/18632466/) |
 
 ---
 

@@ -280,14 +280,14 @@ SECTION B: REFERENCE
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Deutetrabenazine reduces chorea in Huntington disease (FIRST-HD and ARC-HD trials) | Class I, Level A | [Frank S et al. JAMA Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27400766/) |
+| Deutetrabenazine reduces chorea in Huntington disease (FIRST-HD and ARC-HD trials) | Class I, Level A | Frank S et al. JAMA Neurol 2016 |
 | Tetrabenazine reduces chorea in Huntington disease (TETRA-HD trial) | Class I, Level A | [Huntington Study Group. Neurology 2006](https://pubmed.ncbi.nlm.nih.gov/16894106/) |
 | VMAT2 inhibitors: tetrabenazine BLACK BOX WARNING for depression and suicidality | FDA Labeling | [FDA Xenazine Label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2008/021894lbl.pdf) |
-| Non-ketotic hyperglycemic hemichorea: glucose correction resolves symptoms | Class IIa, Level B | [Oh SH et al. Diabetes Care 2002](https://pubmed.ncbi.nlm.nih.gov/12351497/) |
-| AAN practice guideline on pharmacologic treatment of chorea in HD | Guideline | [Armstrong MJ, Miyasaki JM. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22815558/) |
+| Non-ketotic hyperglycemic hemichorea: glucose correction resolves symptoms | Class IIa, Level B | [Oh SH et al. Diabetes Care 2002](https://pubmed.ncbi.nlm.nih.gov/11772901/) |
+| AAN practice guideline on pharmacologic treatment of chorea in HD | Guideline | [Armstrong MJ, Miyasaki JM. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22815556/) |
 | Wilson disease diagnosis and treatment | Guideline | [EASL Clinical Practice Guidelines. J Hepatol 2012](https://pubmed.ncbi.nlm.nih.gov/22340672/) |
-| Sydenham chorea management per rheumatic fever guidelines | Guideline | [Gewitz MH et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/25877495/) |
-| Antiphospholipid syndrome-associated chorea responds to immunosuppression and anticoagulation | Class IIa, Level C | [Cervera R et al. Medicine 1997](https://pubmed.ncbi.nlm.nih.gov/9065650/) |
+| Sydenham chorea management per rheumatic fever guidelines | Guideline | [Gewitz MH et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/25908771/) |
+| Antiphospholipid syndrome-associated chorea responds to immunosuppression and anticoagulation | Class IIa, Level C | [Cervera R et al. Medicine 1997](https://pubmed.ncbi.nlm.nih.gov/9193455/) |
 
 ---
 

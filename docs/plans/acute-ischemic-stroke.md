@@ -285,25 +285,25 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | IV alteplase within 4.5h | Class I, Level A | [AHA/ASA 2019 Guidelines (Powers et al.)](https://pubmed.ncbi.nlm.nih.gov/31662037/); [NINDS trial (NEJM 1995)](https://pubmed.ncbi.nlm.nih.gov/7477192/); [ECASS III (Hacke et al. NEJM 2008)](https://pubmed.ncbi.nlm.nih.gov/18815396/) |
-| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | [AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); EXTEND-IA TNK |
-| Thrombectomy for LVO 0-6h | Class I, Level A | [MR CLEAN (Berkhemer et al. NEJM 2015)](https://pubmed.ncbi.nlm.nih.gov/25517348/), ESCAPE, EXTEND-IA, SWIFT-PRIME, REVASCAT |
+| Tenecteplase non-inferior to alteplase for LVO | Class IIa, Level B-R | [AcT trial (Menon et al. Lancet 2022)](https://pubmed.ncbi.nlm.nih.gov/35779553/); [EXTEND-IA TNK](https://pubmed.ncbi.nlm.nih.gov/29694815/) |
+| Thrombectomy for LVO 0-6h | Class I, Level A | [MR CLEAN (Berkhemer et al. NEJM 2015)](https://pubmed.ncbi.nlm.nih.gov/25517348/), [ESCAPE](https://pubmed.ncbi.nlm.nih.gov/25671798/), EXTEND-IA, [SWIFT-PRIME](https://pubmed.ncbi.nlm.nih.gov/26352820/), [REVASCAT](https://pubmed.ncbi.nlm.nih.gov/25882510/) |
 | Thrombectomy for LVO 6-24h (selected patients) | Class I, Level A | [DAWN trial (Nogueira et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29129157/); [DEFUSE-3 (Albers et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29364767/) |
-| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/); POINT trial |
-| Aspirin + ticagrelor 30 days for minor stroke | Class IIa, Level B-R | THALES trial |
-| High-intensity statin therapy | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021 |
-| Anticoagulation for AF-related stroke | Class I, Level A | RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF |
-| BP target <130/80 for secondary prevention | Class I, Level A | SPS3 trial; AHA/ASA 2021 |
-| Early mobilization (24-48h, not aggressive) | Class IIa, Level B-R | AVERT trial (very early <24h aggressive mobilization harmful) |
-| Decompressive craniectomy for malignant MCA | Class I, Level A (age <60) | DESTINY, DECIMAL, HAMLET pooled analysis |
-| Extended cardiac monitoring for cryptogenic stroke | Class IIa, Level B-R | CRYSTAL-AF, EMBRACE trials |
-| Dysphagia screening before PO intake | Class I, Level B-NR | AHA/ASA 2019 Guidelines |
-| Carotid endarterectomy for symptomatic stenosis ≥50% | Class I, Level A | NASCET, ECST trials |
-| PFO closure for cryptogenic stroke age 18-60 | Class IIa, Level B-R | CLOSE, RESPECT, REDUCE trials |
-| Permissive hypertension (up to 220/120 if no tPA) | Class I, Level B-R | AHA/ASA 2019 Guidelines |
-| Target glucose 140-180 mg/dL | Class I, Level C | AHA/ASA 2019 Guidelines |
-| DVT prophylaxis within 24-48h | Class I, Level A | AHA/ASA 2019 Guidelines |
-| Depression screening post-stroke | Class I, Level B-NR | AHA/ASA 2019 Guidelines |
-| Normothermia maintenance | Class I, Level C | AHA/ASA 2019 Guidelines |
+| DAPT 21 days for minor stroke/high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/); [POINT](https://pubmed.ncbi.nlm.nih.gov/29766750/) trial |
+| Aspirin + ticagrelor 30 days for minor stroke | Class IIa, Level B-R | [THALES](https://pubmed.ncbi.nlm.nih.gov/32668111/) trial |
+| High-intensity statin therapy | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [AHA/ASA 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
+| Anticoagulation for AF-related stroke | Class I, Level A | [RE-LY](https://pubmed.ncbi.nlm.nih.gov/19717844/), [ROCKET-AF](https://pubmed.ncbi.nlm.nih.gov/21830957/), [ARISTOTLE](https://pubmed.ncbi.nlm.nih.gov/21870978/), [ENGAGE AF](https://pubmed.ncbi.nlm.nih.gov/24251359/) |
+| BP target <130/80 for secondary prevention | Class I, Level A | [SPS3](https://pubmed.ncbi.nlm.nih.gov/23726159/) trial; [AHA/ASA 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
+| Early mobilization (24-48h, not aggressive) | Class IIa, Level B-R | [AVERT](https://pubmed.ncbi.nlm.nih.gov/25892679/) trial (very early <24h aggressive mobilization harmful) |
+| Decompressive craniectomy for malignant MCA | Class I, Level A (age <60) | [DESTINY](https://pubmed.ncbi.nlm.nih.gov/17690310/), [DECIMAL](https://pubmed.ncbi.nlm.nih.gov/17690311/), [HAMLET](https://pubmed.ncbi.nlm.nih.gov/19269254/) pooled analysis |
+| Extended cardiac monitoring for cryptogenic stroke | Class IIa, Level B-R | [CRYSTAL-AF](https://pubmed.ncbi.nlm.nih.gov/25259387/), [EMBRACE](https://pubmed.ncbi.nlm.nih.gov/24963566/) trials |
+| Dysphagia screening before PO intake | Class I, Level B-NR | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| Carotid endarterectomy for symptomatic stenosis ≥50% | Class I, Level A | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/), [ECST](https://pubmed.ncbi.nlm.nih.gov/9593407/) trials |
+| PFO closure for cryptogenic stroke age 18-60 | Class IIa, Level B-R | [CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902593/), [RESPECT](https://pubmed.ncbi.nlm.nih.gov/28902590/), [REDUCE](https://pubmed.ncbi.nlm.nih.gov/28902580/) trials |
+| Permissive hypertension (up to 220/120 if no tPA) | Class I, Level B-R | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| Target glucose 140-180 mg/dL | Class I, Level C | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| DVT prophylaxis within 24-48h | Class I, Level A | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| Depression screening post-stroke | Class I, Level B-NR | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
+| Normothermia maintenance | Class I, Level C | [AHA/ASA 2019 Guidelines](https://pubmed.ncbi.nlm.nih.gov/31662037/) |
 
 ---
 

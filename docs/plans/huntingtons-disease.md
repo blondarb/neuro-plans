@@ -268,8 +268,8 @@ tags:
 | Genetic counseling improves outcomes in at-risk individuals | Class II, Level B | [Tibben. Handb Clin Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17352941/) |
 | Dysphagia common and associated with aspiration risk | Class II, Level C | [Heemskerk & Roos. Dysphagia 2011](https://pubmed.ncbi.nlm.nih.gov/20838817/) |
 | Multidisciplinary care improves outcomes | Class III, Level C | [Veenhuizen & Bherer. J Huntingtons Dis 2017](https://pubmed.ncbi.nlm.nih.gov/28287174/) |
-| Exercise benefits motor and cognitive function | Class II, Level B | [Quinn et al. Cochrane Database Syst Rev 2022](https://pubmed.ncbi.nlm.nih.gov/35994403/) |
-| Valbenazine effective for hyperkinetic movements | Class I, Level A | [Hauser et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29114728/) |
+| Exercise benefits motor and cognitive function | Class II, Level B | Quinn et al. Cochrane Database Syst Rev 2022 |
+| Valbenazine effective for hyperkinetic movements | Class I, Level A | [Hauser et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28604926/) |
 
 ---
 

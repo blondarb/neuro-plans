@@ -339,18 +339,18 @@ SECTION B: REFERENCE (Expand as Needed)
 | Awaji-shima criteria enhance diagnostic sensitivity | Class III, Level C | [de Carvalho et al. Clin Neurophysiol 2008](https://pubmed.ncbi.nlm.nih.gov/19742266/) |
 | BiPAP improves survival and quality of life | Class I, Level A | [Bourke et al. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16426990/) |
 | Early PEG placement (FVC >50%) safer than late | Class II, Level B | [ProGas Study Group. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25476873/) |
-| Multidisciplinary clinics improve survival 7-10 months | Class II, Level B | [Van den Berg et al. Lancet Neurol 2005](https://pubmed.ncbi.nlm.nih.gov/16269725/) |
+| Multidisciplinary clinics improve survival 7-10 months | Class II, Level B | Van den Berg et al. Lancet Neurol 2005 |
 | Dextromethorphan-quinidine for pseudobulbar affect | Class I, Level A | [Brooks et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15534244/) |
 | Edaravone slows functional decline in selected patients | Class I, Level B | [Writing Group. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28522181/) |
 | AMX0035 (Relyvrio) slowed ALSFRS-R decline in phase 2; PHOENIX trial negative; **withdrawn April 2024** | Class II, Level B (superseded) | [Paganoni et al. NEJM 2020](https://pubmed.ncbi.nlm.nih.gov/33264555/) |
 | Tofersen reduces SOD1 in SOD1-ALS | Class I, Level B | [Miller et al. NEJM 2022](https://pubmed.ncbi.nlm.nih.gov/36129998/) |
 | Glycopyrrolate effective for sialorrhea | Class II, Level B | [Arbouw et al. J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20385892/) |
-| Botulinum toxin for refractory sialorrhea | Class II, Level B | [Jackson et al. ALS FTD 2009](https://pubmed.ncbi.nlm.nih.gov/21160721/) |
+| Botulinum toxin for refractory sialorrhea | Class II, Level B | Jackson et al. ALS FTD 2009 |
 | C9orf72 most common genetic cause | Class II, Level B | [DeJesus-Hernandez et al. Neuron 2011](https://pubmed.ncbi.nlm.nih.gov/21944778/) |
 | ALSFRS-R validated outcome measure | Class II, Level B | [Cedarbaum et al. J Neurol Sci 1999](https://pubmed.ncbi.nlm.nih.gov/10540002/) |
 | Early palliative care improves quality of life | Class I, Level A | [Temel et al. NEJM 2010](https://pubmed.ncbi.nlm.nih.gov/20818875/) (oncology; extrapolated) |
 | FVC and NIF for respiratory monitoring | Class II, Level B | [Lechtzin et al. ALS Other Motor Neuron Disord 2002](https://pubmed.ncbi.nlm.nih.gov/12406852/) |
-| Cough assist improves secretion clearance | Class III, Level C | [Sancho et al. ALS Other Motor Neuron Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15697558/) |
+| Cough assist improves secretion clearance | Class III, Level C | Sancho et al. ALS Other Motor Neuron Disord 2004 |
 | AAN Practice Parameters for ALS | Guideline | [Miller et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19822873/) |
 
 ---

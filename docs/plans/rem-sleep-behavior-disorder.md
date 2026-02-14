@@ -266,18 +266,18 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| ICSD-3-TR diagnostic criteria for RBD require video-PSG demonstrating REM without atonia and dream enactment behavior | Consensus guidelines | [Hogl et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29452687/) |
+| ICSD-3-TR diagnostic criteria for RBD require video-PSG demonstrating REM without atonia and dream enactment behavior | Consensus guidelines | [Hogl et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30244828/) |
 | Isolated RBD is the strongest prodromal marker of synucleinopathies with >90% lifetime phenoconversion risk to PD, DLB, or MSA | Class I, prospective cohort | [Postuma et al. Brain 2019](https://pubmed.ncbi.nlm.nih.gov/30789229/) |
-| RBD strongly associated with future development of PD and DLB; phenoconversion biomarkers include DaT scan, olfactory testing, and cognitive assessment | Class I, longitudinal cohort | [St Louis & Boeve. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28655027/) |
-| Melatonin effective for RBD with favorable safety profile; preferred first-line in elderly and patients with OSA | Class II, Level B | [Li et al. Ann Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28543731/) |
-| Clonazepam effective in 80-90% of RBD patients; use limited by sedation, fall risk, and OSA exacerbation | Class III, Level C | [Aurora et al. J Clin Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/20572421/) |
-| AASM Best Practice Guide recommends clonazepam and melatonin as first-line pharmacotherapy for RBD | Best Practice Guide | [Aurora et al. J Clin Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/20572421/) |
-| DaT scan, cardiac MIBG, olfactory testing, and cognitive assessment serve as biomarkers for prodromal synucleinopathy in iRBD | Class II, prospective biomarker study | [Iranzo et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26860513/) |
-| SSRIs and SNRIs can trigger or exacerbate RBD; medication review and substitution recommended | Class III, case series | [Postuma et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23966249/) |
-| Alpha-synuclein seed amplification assay in CSF shows high sensitivity and specificity for prodromal synucleinopathy in iRBD patients | Class II, emerging biomarker | [Siderowf et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/36804093/) |
-| Video-PSG with expanded EMG montage (SINBAR method) is the gold standard for RSWA quantification and RBD diagnosis | Expert consensus, Class II | [Frauscher et al. Sleep 2012](https://pubmed.ncbi.nlm.nih.gov/22331903/) |
-| Environmental safety measures and bedroom modifications are first-line non-pharmacologic interventions for all RBD patients | Expert consensus | [Hogl et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29452687/) |
-| Phenoconversion risk stratification using multimodal biomarkers (DaT, olfaction, cognition, autonomic function) enables early identification of neurodegenerative trajectory | Class II, prospective cohort | [Iranzo et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26860513/) |
+| RBD strongly associated with future development of PD and DLB; phenoconversion biomarkers include DaT scan, olfactory testing, and cognitive assessment | Class I, longitudinal cohort | St Louis & Boeve. JAMA Neurol 2017 |
+| Melatonin effective for RBD with favorable safety profile; preferred first-line in elderly and patients with OSA | Class II, Level B | Li et al. Ann Neurol 2017 |
+| Clonazepam effective in 80-90% of RBD patients; use limited by sedation, fall risk, and OSA exacerbation | Class III, Level C | [Aurora et al. J Clin Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/20726290/) |
+| AASM Best Practice Guide recommends clonazepam and melatonin as first-line pharmacotherapy for RBD | Best Practice Guide | [Aurora et al. J Clin Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/20726290/) |
+| DaT scan, cardiac MIBG, olfactory testing, and cognitive assessment serve as biomarkers for prodromal synucleinopathy in iRBD | Class II, prospective biomarker study | [Iranzo et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26971662/) |
+| SSRIs and SNRIs can trigger or exacerbate RBD; medication review and substitution recommended | Class III, case series | [Postuma et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23892703/) |
+| Alpha-synuclein seed amplification assay in CSF shows high sensitivity and specificity for prodromal synucleinopathy in iRBD patients | Class II, emerging biomarker | [Siderowf et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37863605/) |
+| Video-PSG with expanded EMG montage (SINBAR method) is the gold standard for RSWA quantification and RBD diagnosis | Expert consensus, Class II | [Frauscher et al. Sleep 2012](https://pubmed.ncbi.nlm.nih.gov/22654203/) |
+| Environmental safety measures and bedroom modifications are first-line non-pharmacologic interventions for all RBD patients | Expert consensus | [Hogl et al. Lancet Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/30244828/) |
+| Phenoconversion risk stratification using multimodal biomarkers (DaT, olfaction, cognition, autonomic function) enables early identification of neurodegenerative trajectory | Class II, prospective cohort | [Iranzo et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/26971662/) |
 
 ---
 

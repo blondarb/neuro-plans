@@ -251,18 +251,18 @@ SECTION B: REFERENCE (Expand as Needed)
 | DAPT (aspirin + clopidogrel 21 days) for minor stroke / high-risk TIA | Class I, Level A | [CHANCE trial (Wang et al. NEJM 2013)](https://pubmed.ncbi.nlm.nih.gov/23803136/) |
 | DAPT (aspirin + clopidogrel 90 days) for minor stroke / high-risk TIA | Class IIa, Level B | [POINT trial (Johnston et al. NEJM 2018)](https://pubmed.ncbi.nlm.nih.gov/29766750/); higher ICH risk than 21 days |
 | Aspirin + ticagrelor x 30 days for minor stroke (NIHSS ≤5) | Class IIa, Level B | [THALES trial (Johnston et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/32668111/) |
-| High-intensity statin for TIA secondary prevention | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); AHA/ASA 2021 |
+| High-intensity statin for TIA secondary prevention | Class I, Level A | [SPARCL trial (Amarenco et al. NEJM 2006)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [AHA/ASA 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 | LDL target <70 mg/dL | Class I, Level A | [TST trial (Amarenco et al. NEJM 2020)](https://pubmed.ncbi.nlm.nih.gov/31738483/) |
-| BP target <130/80 for secondary prevention | Class I, Level A | [SPS3 trial](https://pubmed.ncbi.nlm.nih.gov/23726159/); [PROGRESS](https://pubmed.ncbi.nlm.nih.gov/11589932/); AHA/ASA 2021 |
-| CEA within 2 weeks for symptomatic stenosis ≥50% | Class I, Level A | [NASCET (NEJM 1991)](https://pubmed.ncbi.nlm.nih.gov/1852179/); ECST; [Rothwell et al. (Lancet 2004)](https://pubmed.ncbi.nlm.nih.gov/15043958/) — maximum benefit if performed within 2 weeks |
-| DOACs preferred over warfarin for AF-related TIA/stroke | Class I, Level A | RE-LY, ROCKET-AF, ARISTOTLE, ENGAGE AF |
+| BP target <130/80 for secondary prevention | Class I, Level A | [SPS3](https://pubmed.ncbi.nlm.nih.gov/23726159/) trial; [PROGRESS](https://pubmed.ncbi.nlm.nih.gov/11589932/); [AHA/ASA 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
+| CEA within 2 weeks for symptomatic stenosis ≥50% | Class I, Level A | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/) (NEJM 1991); [ECST](https://pubmed.ncbi.nlm.nih.gov/9593407/); [Rothwell et al. (Lancet 2004)](https://pubmed.ncbi.nlm.nih.gov/15043958/) — maximum benefit if performed within 2 weeks |
+| DOACs preferred over warfarin for AF-related TIA/stroke | Class I, Level A | [RE-LY](https://pubmed.ncbi.nlm.nih.gov/19717844/), [ROCKET-AF](https://pubmed.ncbi.nlm.nih.gov/21830957/), [ARISTOTLE](https://pubmed.ncbi.nlm.nih.gov/21870978/), [ENGAGE AF](https://pubmed.ncbi.nlm.nih.gov/24251359/) |
 | Extended cardiac monitoring for cryptogenic TIA | Class IIa, Level B | [CRYSTAL-AF (Sanna et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963567/); [EMBRACE (Gladstone et al. NEJM 2014)](https://pubmed.ncbi.nlm.nih.gov/24963566/) |
-| PFO closure for cryptogenic stroke/TIA age 18-60 | Class IIa, Level B | CLOSE, RESPECT, REDUCE trials |
+| PFO closure for cryptogenic stroke/TIA age 18-60 | Class IIa, Level B | [CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902593/), [RESPECT](https://pubmed.ncbi.nlm.nih.gov/28902590/), [REDUCE](https://pubmed.ncbi.nlm.nih.gov/28902580/) trials |
 | MRI DWI within 24h (DWI+ = higher stroke risk) | Class I, Level B | AHA/ASA Guidelines; [Coutts et al. (Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22302109/) |
 | ABCD2 score for risk stratification | Class IIa, Level B | [Johnston et al. (Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/19030430/); useful but imperfect; imaging adds value |
 | Rapid TIA evaluation reduces 90-day stroke risk | Class I, Level B | [EXPRESS trial (Rothwell et al. Lancet 2007)](https://pubmed.ncbi.nlm.nih.gov/17928046/); [SOS-TIA (Lavallée et al. Lancet Neurol 2007)](https://pubmed.ncbi.nlm.nih.gov/17928270/) |
 | Medical therapy superior to stenting for intracranial stenosis | Class I, Level A | [SAMMPRIS trial (Chimowitz et al. NEJM 2011)](https://pubmed.ncbi.nlm.nih.gov/21899409/) |
-| OSA screening and CPAP | Class IIa, Level B | AHA/ASA 2021 Guidelines |
+| OSA screening and CPAP | Class IIa, Level B | [AHA/ASA 2021 Guidelines](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
 
 ---
 

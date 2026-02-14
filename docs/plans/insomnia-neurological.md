@@ -287,17 +287,17 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | CBT-I as first-line treatment for chronic insomnia in adults | Guideline, Strong recommendation | [Qaseem et al. Ann Intern Med 2016](https://pubmed.ncbi.nlm.nih.gov/27136449/) |
-| European guideline on insomnia diagnosis and treatment; strong recommendation for CBT-I; conditional for pharmacotherapy | Guideline, GRADE methodology | [Riemann et al. J Sleep Res 2017](https://pubmed.ncbi.nlm.nih.gov/28271506/) |
-| Suvorexant (DORA) improves sleep in patients with Alzheimer's disease insomnia without worsening cognition | Class I, Level A | [Herring et al. Ann Neurol 2020](https://pubmed.ncbi.nlm.nih.gov/31743476/) |
+| European guideline on insomnia diagnosis and treatment; strong recommendation for CBT-I; conditional for pharmacotherapy | Guideline, GRADE methodology | [Riemann et al. J Sleep Res 2017](https://pubmed.ncbi.nlm.nih.gov/28884892/) |
+| Suvorexant (DORA) improves sleep in patients with Alzheimer's disease insomnia without worsening cognition | Class I, Level A | Herring et al. Ann Neurol 2020 |
 | CBT-I produces sustained improvements in sleep onset latency and wake after sleep onset; meta-analysis of 20 RCTs | Class I, Level A (meta-analysis) | [Trauer et al. Ann Intern Med 2015](https://pubmed.ncbi.nlm.nih.gov/26054060/) |
 | AASM clinical practice guideline for pharmacologic treatment of chronic insomnia; recommendations for suvorexant, doxepin, ramelteon, and others | Guideline, systematic review | [Sateia et al. J Clin Sleep Med 2017](https://pubmed.ncbi.nlm.nih.gov/27998379/) |
-| CBT-I effective for insomnia following TBI; significant improvements in ISI and sleep diary parameters | Class II, Level B | [Ouellet et al. J Head Trauma Rehabil 2015](https://pubmed.ncbi.nlm.nih.gov/24495916/) |
+| CBT-I effective for insomnia following TBI; significant improvements in ISI and sleep diary parameters | Class II, Level B | Ouellet et al. J Head Trauma Rehabil 2015 |
 | Lemborexant efficacy and safety for insomnia disorder (SUNRISE 1 and 2 trials) | Class I, Level A | [Rosenberg et al. JAMA Netw Open 2019](https://pubmed.ncbi.nlm.nih.gov/31880796/) |
-| Low-dose doxepin (3-6 mg) FDA-approved for sleep maintenance insomnia; selective H1 antagonism at low doses | Class I, Level A | [Krystal et al. Sleep 2011](https://pubmed.ncbi.nlm.nih.gov/21532951/) |
-| Gabapentin improves sleep in patients with restless legs syndrome and comorbid insomnia | Class I, Level A | [Winkelman et al. Sleep Med 2007](https://pubmed.ncbi.nlm.nih.gov/17368098/) |
-| Ramelteon efficacy for sleep onset insomnia; melatonin receptor agonist with no abuse potential | Class I, Level A | [Roth et al. Sleep Med 2006](https://pubmed.ncbi.nlm.nih.gov/16459136/) |
+| Low-dose doxepin (3-6 mg) FDA-approved for sleep maintenance insomnia; selective H1 antagonism at low doses | Class I, Level A | [Krystal et al. Sleep 2011](https://pubmed.ncbi.nlm.nih.gov/21966075/) |
+| Gabapentin improves sleep in patients with restless legs syndrome and comorbid insomnia | Class I, Level A | [Winkelman et al. Sleep Med 2007](https://pubmed.ncbi.nlm.nih.gov/17239657/) |
+| Ramelteon efficacy for sleep onset insomnia; melatonin receptor agonist with no abuse potential | Class I, Level A | [Roth et al. Sleep Med 2006](https://pubmed.ncbi.nlm.nih.gov/16815744/) |
 | Insomnia as risk factor for cognitive decline and dementia in older adults | Class II, Level B | [Shi et al. Sleep Med Rev 2018](https://pubmed.ncbi.nlm.nih.gov/28890168/) |
-| AAN practice parameter on insomnia in neurological conditions; behavioral interventions recommended across neurological populations | Practice parameter | [Silber et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15477546/) |
+| AAN practice parameter on insomnia in neurological conditions; behavioral interventions recommended across neurological populations | Practice parameter | [Silber et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/16264791/) |
 
 ---
 

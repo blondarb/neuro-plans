@@ -280,16 +280,16 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Midodrine and droxidopa as first-line for neurogenic OH | Class I, Level B | [Gibbons CH et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28341643/) |
-| Droxidopa FDA approval for neurogenic OH based on controlled trials | Class I, Level A | [Kaufmann H et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24477107/) |
-| Autonomic testing with CASS scoring for diagnosis and classification | Class IIa, Level B | [Low PA et al. Clin Auton Res 2003](https://pubmed.ncbi.nlm.nih.gov/12630926/) |
-| Fludrocortisone for volume expansion in neurogenic OH | Class IIa, Level C | [Freeman R. Continuum 2020](https://pubmed.ncbi.nlm.nih.gov/31688052/) |
-| Ganglionic AChR antibodies diagnostic for AAG | Class IIa, Level B | [Vernino S et al. N Engl J Med 2000](https://pubmed.ncbi.nlm.nih.gov/10816185/) |
-| IVIg and immunotherapy for autoimmune autonomic ganglionopathy | Class IIb, Level C | [Iodice V et al. Brain 2009](https://pubmed.ncbi.nlm.nih.gov/19042932/) |
+| Midodrine and droxidopa as first-line for neurogenic OH | Class I, Level B | [Gibbons CH et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/29133613/) |
+| Droxidopa FDA approval for neurogenic OH based on controlled trials | Class I, Level A | [Kaufmann H et al. Neurology 2014](https://pubmed.ncbi.nlm.nih.gov/24944260/) |
+| Autonomic testing with CASS scoring for diagnosis and classification | Class IIa, Level B | [Low PA et al. Clin Auton Res 2003](https://pubmed.ncbi.nlm.nih.gov/16120323/) |
+| Fludrocortisone for volume expansion in neurogenic OH | Class IIa, Level C | [Freeman R. Continuum 2020](https://pubmed.ncbi.nlm.nih.gov/31996622/) |
+| Ganglionic AChR antibodies diagnostic for AAG | Class IIa, Level B | [Vernino S et al. N Engl J Med 2000](https://pubmed.ncbi.nlm.nih.gov/10995864/) |
+| IVIg and immunotherapy for autoimmune autonomic ganglionopathy | Class IIb, Level C | [Iodice V et al. Brain 2009](https://pubmed.ncbi.nlm.nih.gov/19584099/) |
 | Tafamidis for hATTR amyloidosis with cardiomyopathy and neuropathy | Class I, Level A | [Maurer MS et al. N Engl J Med 2018](https://pubmed.ncbi.nlm.nih.gov/30145929/) |
 | Patisiran for hATTR polyneuropathy including autonomic improvement | Class I, Level A | [Adams D et al. N Engl J Med 2018](https://pubmed.ncbi.nlm.nih.gov/29972753/) |
-| Diabetic CAN associated with increased cardiovascular mortality | Class I, Level A | [Pop-Busui R et al. Diabetes Care 2017](https://pubmed.ncbi.nlm.nih.gov/27999002/) |
-| Non-pharmacologic measures (fluids, salt, compression, exercise) as foundation for OH management | Consensus, Level C | [Gibbons CH et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28341643/) |
+| Diabetic CAN associated with increased cardiovascular mortality | Class I, Level A | [Pop-Busui R et al. Diabetes Care 2017](https://pubmed.ncbi.nlm.nih.gov/27999003/) |
+| Non-pharmacologic measures (fluids, salt, compression, exercise) as foundation for OH management | Consensus, Level C | [Gibbons CH et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/29133613/) |
 
 ---
 

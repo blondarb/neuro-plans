@@ -328,27 +328,27 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Ceruloplasmin <20 mg/dL as screening test for WD | Class II, Level B | Ferenci et al., Liver Int 2003 [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/) |
-| 24-hour urine copper >100 mcg as diagnostic criterion | Class II, Level B | Roberts & Schilsky, Hepatology 2008 (AASLD Practice Guidelines) [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
-| D-Penicillamine as first-line chelation therapy | Class II, Level B | Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
-| Trientine as alternative first-line chelator with lower neurologic worsening risk | Class II, Level B | Walshe, Lancet 1982; Weiss et al., J Hepatol 2013 [PubMed: 23485523](https://pubmed.ncbi.nlm.nih.gov/23485523/) |
-| Zinc acetate for maintenance therapy | Class II, Level B | Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996 [PubMed: 8967753](https://pubmed.ncbi.nlm.nih.gov/8967753/) |
-| Neurologic worsening occurs in 10-50% of patients starting D-penicillamine | Class II, Level B | Brewer et al., Arch Neurol 1994 [PubMed: 7944997](https://pubmed.ncbi.nlm.nih.gov/7944997/); Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993 [PubMed: 8505642](https://pubmed.ncbi.nlm.nih.gov/8505642/) |
-| Liver transplantation for fulminant WD and decompensated cirrhosis | Class I, Level B | Arnon et al., Hepatology 2011 [PubMed: 21254169](https://pubmed.ncbi.nlm.nih.gov/21254169/); Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/) |
-| New Wilson Index ≥11 predicts need for transplantation in pediatric fulminant WD | Class II, Level B | Dhawan et al., Gut 2005 [PubMed: 15753547](https://pubmed.ncbi.nlm.nih.gov/15753547/) |
-| Kayser-Fleischer rings present in >95% of neurologic WD | Class II, Level B | Walshe, Brain 1976; Ala et al., Lancet 2007 [PubMed: 17276780](https://pubmed.ncbi.nlm.nih.gov/17276780/) |
-| Leipzig Scoring System for WD diagnosis (score ≥4 = established) | Class IIa, Level C | Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease) [PubMed: 14506258](https://pubmed.ncbi.nlm.nih.gov/14506258/) |
-| ATP7B gene testing for definitive diagnosis and family screening | Class I, Level B | Loudianos & Gitlin, Semin Liver Dis 2000 [PubMed: 11200483](https://pubmed.ncbi.nlm.nih.gov/11200483/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/) |
-| MRI brain findings: T2 hyperintensity in putamen ("face of giant panda" sign) | Class II, Level C | King et al., Mov Disord 1996 [PubMed: 8866494](https://pubmed.ncbi.nlm.nih.gov/8866494/); Sinha et al., AJNR 2006 [PubMed: 16551993](https://pubmed.ncbi.nlm.nih.gov/16551993/) |
-| Low-copper diet during initial decoppering phase | Class III, Level C | Expert consensus; EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/) |
-| Plasmapheresis for acute hemolytic crisis in fulminant WD | Class IIb, Level C | Jhang et al., J Clin Apher 2007 [PubMed: 17722038](https://pubmed.ncbi.nlm.nih.gov/17722038/); Akyildiz et al., Ther Apher Dial 2004 [PubMed: 15255163](https://pubmed.ncbi.nlm.nih.gov/15255163/) |
-| Free (non-ceruloplasmin-bound) copper as monitoring parameter | Class II, Level B | Walshe, Ann Clin Biochem 2003 [PubMed: 12880538](https://pubmed.ncbi.nlm.nih.gov/12880538/); EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/) |
-| Pregnancy management: switch to zinc; chelators are teratogenic | Class II, Level C | Brewer et al., J Lab Clin Med 2000 [PubMed: 10638697](https://pubmed.ncbi.nlm.nih.gov/10638697/); Tarnacka et al., Fertil Steril 2000 [PubMed: 10685533](https://pubmed.ncbi.nlm.nih.gov/10685533/) |
-| Family screening with ceruloplasmin, 24h urine copper, and ATP7B genotyping | Class I, Level B | EASL Clinical Practice Guidelines 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/); Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/) |
-| AASLD Practice Guidelines for Wilson Disease | Class I (Guidelines) | Roberts & Schilsky, Hepatology 2008 [PubMed: 18506894](https://pubmed.ncbi.nlm.nih.gov/18506894/); Schilsky, Clin Liver Dis 2017 [PubMed: 28364808](https://pubmed.ncbi.nlm.nih.gov/28364808/) |
-| EASL Clinical Practice Guidelines on Wilson's Disease | Class I (Guidelines) | European Association for the Study of the Liver, J Hepatol 2012 [PubMed: 22276820](https://pubmed.ncbi.nlm.nih.gov/22276820/) |
-| Trientine tetrahydrochloride (Cuvrior) as improved formulation | Class II, Level B | Weiss et al., Lancet Gastroenterol Hepatol 2022 [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/) |
-| Bis-choline tetrathiomolybdate for neurologic WD (phase 3 data) | Class II, Level B | Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial) [PubMed: 35276119](https://pubmed.ncbi.nlm.nih.gov/35276119/) |
+| Ceruloplasmin <20 mg/dL as screening test for WD | Class II, Level B | Ferenci et al., Liver Int 2003 PubMed: 14506258 |
+| 24-hour urine copper >100 mcg as diagnostic criterion | Class II, Level B | Roberts & Schilsky, Hepatology 2008 ([AASLD Practice Guidelines](https://pubmed.ncbi.nlm.nih.gov/18506894/)) PubMed: 18506894 |
+| D-Penicillamine as first-line chelation therapy | Class II, Level B | Walshe, Lancet 1956; Roberts & Schilsky, Hepatology 2008 PubMed: 18506894 |
+| Trientine as alternative first-line chelator with lower neurologic worsening risk | Class II, Level B | [Walshe, Lancet 1982; Weiss et al., J Hepatol 2013 PubMed: 23485523](https://pubmed.ncbi.nlm.nih.gov/6121964/) |
+| Zinc acetate for maintenance therapy | Class II, Level B | Brewer et al., Arch Neurol 1987; Czlonkowska et al., Ann Neurol 1996 PubMed: 8967753 |
+| Neurologic worsening occurs in 10-50% of patients starting D-penicillamine | Class II, Level B | Brewer et al., Arch Neurol 1994 PubMed: 7944997; Walshe & Yealland, J Neurol Neurosurg Psychiatry 1993 PubMed: 8505642 |
+| Liver transplantation for fulminant WD and decompensated cirrhosis | Class I, Level B | Arnon et al., Hepatology 2011 PubMed: 21254169; Dhawan et al., Gut 2005 PubMed: 15753547 |
+| New Wilson Index ≥11 predicts need for transplantation in pediatric fulminant WD | Class II, Level B | Dhawan et al., Gut 2005 PubMed: 15753547 |
+| Kayser-Fleischer rings present in >95% of neurologic WD | Class II, Level B | Walshe, Brain 1976; Ala et al., Lancet 2007 PubMed: 17276780 |
+| Leipzig Scoring System for WD diagnosis (score ≥4 = established) | Class IIa, Level C | Ferenci et al., Liver Int 2003 (8th International Meeting on Wilson Disease) PubMed: 14506258 |
+| ATP7B gene testing for definitive diagnosis and family screening | Class I, Level B | Loudianos & Gitlin, Semin Liver Dis 2000 PubMed: 11200483; [EASL Clinical Practice Guidelines](https://pubmed.ncbi.nlm.nih.gov/22340672/) 2012 PubMed: 22276820 |
+| MRI brain findings: T2 hyperintensity in putamen ("face of giant panda" sign) | Class II, Level C | King et al., Mov Disord 1996 PubMed: 8866494; Sinha et al., AJNR 2006 PubMed: 16551993 |
+| Low-copper diet during initial decoppering phase | Class III, Level C | Expert consensus; [EASL Clinical Practice Guidelines](https://pubmed.ncbi.nlm.nih.gov/22340672/) 2012 PubMed: 22276820 |
+| Plasmapheresis for acute hemolytic crisis in fulminant WD | Class IIb, Level C | [Jhang et al., J Clin Apher 2007 PubMed: 17722038; Akyildiz et al., Ther Apher Dial 2004 PubMed: 15255163](https://pubmed.ncbi.nlm.nih.gov/17285615/) |
+| Free (non-ceruloplasmin-bound) copper as monitoring parameter | Class II, Level B | Walshe, Ann Clin Biochem 2003 PubMed: 12880538; [EASL Clinical Practice Guidelines](https://pubmed.ncbi.nlm.nih.gov/22340672/) 2012 PubMed: 22276820 |
+| Pregnancy management: switch to zinc; chelators are teratogenic | Class II, Level C | Brewer et al., J Lab Clin Med 2000 PubMed: 10638697; Tarnacka et al., Fertil Steril 2000 PubMed: 10685533 |
+| Family screening with ceruloplasmin, 24h urine copper, and ATP7B genotyping | Class I, Level B | [EASL Clinical Practice Guidelines](https://pubmed.ncbi.nlm.nih.gov/22340672/) 2012 PubMed: 22276820; Roberts & Schilsky, Hepatology 2008 PubMed: 18506894 |
+| AASLD Practice Guidelines for Wilson Disease | Class I (Guidelines) | Roberts & Schilsky, Hepatology 2008 PubMed: 18506894; Schilsky, Clin Liver Dis 2017 PubMed: 28364808 |
+| EASL Clinical Practice Guidelines on Wilson's Disease | Class I (Guidelines) | European Association for the Study of the Liver, J Hepatol 2012 PubMed: 22276820 |
+| Trientine tetrahydrochloride (Cuvrior) as improved formulation | Class II, Level B | Weiss et al., Lancet Gastroenterol Hepatol 2022 PubMed: 35276119 |
+| Bis-choline tetrathiomolybdate for neurologic WD (phase 3 data) | Class II, Level B | Weiss et al., Lancet Gastroenterol Hepatol 2022 (WTX101-301 trial) PubMed: 35276119 |
 
 ---
 

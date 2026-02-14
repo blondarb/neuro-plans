@@ -265,7 +265,7 @@ tags:
 | Cardiac MIBG differentiates Lewy body disorders from MSA | Diagnostic Study | [Goldstein et al. Ann Intern Med 2000](https://pubmed.ncbi.nlm.nih.gov/10979878/) |
 | Pyridostigmine for nOH: augments ganglionic transmission with minimal supine HTN | RCT | [Singer et al. Arch Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16476804/) |
 | Water drinking as pressor response in autonomic failure | Mechanistic/Clinical | [Jordan et al. Circulation 2000](https://pubmed.ncbi.nlm.nih.gov/10662747/) |
-| Consensus definition of neurogenic supine hypertension in autonomic failure | Consensus Statement | [Biaggioni et al. Clin Auton Res 2018](https://pubmed.ncbi.nlm.nih.gov/29766366/) |
+| Consensus definition of neurogenic supine hypertension in autonomic failure | Consensus Statement | [Biaggioni et al. Clin Auton Res 2018](https://pubmed.ncbi.nlm.nih.gov/29982276/) |
 | Expert consensus on nOH screening, diagnosis, and treatment algorithm | Expert Consensus | [Gibbons et al. J Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28050656/) |
 
 ---

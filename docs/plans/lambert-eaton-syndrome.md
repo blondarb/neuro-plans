@@ -410,32 +410,32 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| P/Q-type VGCC antibodies diagnostic for LEMS (~85-90% sensitivity) | Class I | Lennon VA et al. N Engl J Med 1995; 332:1467-1474 |
-| LEMS association with SCLC (~60% paraneoplastic) | Class II | Titulaer MJ et al. J Clin Oncol 2011; 29:902-908 |
+| P/Q-type VGCC antibodies diagnostic for LEMS (~85-90% sensitivity) | Class I | [Lennon VA et al. N Engl J Med 1995; 332:1467-1474](https://pubmed.ncbi.nlm.nih.gov/7739683/) |
+| LEMS association with SCLC (~60% paraneoplastic) | Class II | [Titulaer MJ et al. J Clin Oncol 2011; 29:902-908](https://pubmed.ncbi.nlm.nih.gov/21245427/) |
 | DELTA-P score for paraneoplastic risk stratification | Class II | Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2011; 82:1222-1228 |
 | SOX1 antibody as SCLC biomarker in LEMS (~64% sensitivity) | Class II | Titulaer MJ et al. J Neuroimmunol 2009; 210:78-82 |
-| Repetitive nerve stimulation: >100% increment at high-rate diagnostic for presynaptic NMJ disorder | Class I | Oh SJ et al. Muscle Nerve 2005; 32:549-556 |
-| Low resting CMAP amplitudes as hallmark of LEMS | Class I | Sanders DB. Ann N Y Acad Sci 2003; 998:500-508 |
+| Repetitive nerve stimulation: >100% increment at high-rate diagnostic for presynaptic NMJ disorder | Class I | [Oh SJ et al. Muscle Nerve 2005; 32:549-556](https://pubmed.ncbi.nlm.nih.gov/16003742/) |
+| Low resting CMAP amplitudes as hallmark of LEMS | Class I | [Sanders DB. Ann N Y Acad Sci 2003; 998:500-508](https://pubmed.ncbi.nlm.nih.gov/14592920/) |
 | Post-exercise facilitation (>100% CMAP increment) equivalent to high-rate RNS | Class II | Oh SJ et al. Muscle Nerve 2005; 32:549-556 |
 | 3,4-Diaminopyridine as first-line symptomatic treatment for LEMS | Class I, Level A | Wirtz PW et al. Neurology 2009; 73:1849-1854 |
-| 3,4-DAP improves strength and autonomic symptoms in LEMS (randomized controlled trial) | Class I | Oh SJ et al. Muscle Nerve 2009; 40:795-800 |
+| 3,4-DAP improves strength and autonomic symptoms in LEMS (randomized controlled trial) | Class I | [Oh SJ et al. Muscle Nerve 2009; 40:795-800](https://pubmed.ncbi.nlm.nih.gov/19722254/) |
 | Amifampridine (Firdapse) FDA approval for LEMS | Regulatory | FDA approval November 2018; NDA 208078 |
 | Pyridostigmine as adjunctive therapy in LEMS (less effective than in MG) | Class III | Tim RW, Sanders DB. Semin Neurol 2004; 24:49-57 |
 | IVIg effective for LEMS acute exacerbation | Class I | Bain PG et al. J Neurol Neurosurg Psychiatry 1996; 61:510-515 |
-| Plasma exchange for LEMS exacerbation | Class II | Newsom-Davis J, Murray NM. Neurology 1984; 34:480-485 |
-| Cancer treatment improves neurological symptoms in P-LEMS | Class II | Chalk CH et al. Neurology 1990; 40:1644-1645 |
+| Plasma exchange for LEMS exacerbation | Class II | [Newsom-Davis J, Murray NM. Neurology 1984; 34:480-485](https://pubmed.ncbi.nlm.nih.gov/6322050/) |
+| Cancer treatment improves neurological symptoms in P-LEMS | Class II | [Chalk CH et al. Neurology 1990; 40:1644-1645](https://pubmed.ncbi.nlm.nih.gov/2170866/) |
 | Cancer screening every 6 months for 2 years in LEMS | Consensus | Titulaer MJ et al. J Neurol Neurosurg Psychiatry 2011; 82:1222-1228 |
 | PET/CT more sensitive than CT alone for detecting occult SCLC in LEMS | Class II | Titulaer MJ et al. Chest 2011; 139:1187-1193 |
 | Azathioprine as steroid-sparing agent in autoimmune LEMS | Class III | Newsom-Davis J. Muscle Nerve 1998; 21:1762-1768 |
 | Rituximab for refractory autoimmune LEMS (case series) | Class IV | Maddison P et al. Neurology 2011; 76:474-476 |
 | Lambert sign (post-exercise facilitation of reflexes) as clinical hallmark | Class II | Lambert EH, Eaton LM, Rooke ED. Am J Physiol 1956; 187:612-613 |
-| Autonomic dysfunction in LEMS (dry mouth, constipation, erectile dysfunction) | Class II | O'Neill JH et al. Brain 1988; 111:577-596 |
-| EFNS/PNS guidelines for LEMS management | Consensus | Titulaer MJ et al. Eur J Neurol 2011; 18:486-490 |
+| Autonomic dysfunction in LEMS (dry mouth, constipation, erectile dysfunction) | Class II | [O'Neill JH et al. Brain 1988; 111:577-596](https://pubmed.ncbi.nlm.nih.gov/2838124/) |
+| EFNS/PNS guidelines for LEMS management | Consensus | [Titulaer MJ et al. Eur J Neurol 2011; 18:486-490](https://pubmed.ncbi.nlm.nih.gov/20880069/) |
 | Immune checkpoint inhibitors may worsen paraneoplastic syndromes | Class III | Guidon AC et al. Neurology 2021; 97:e234-e245 |
-| Calcium channel blockers particularly dangerous in LEMS (direct pathophysiologic antagonism) | Class III | Sanders DB et al. Neurology 2000; 54:2163-2167 |
-| Neuromuscular blocking agent sensitivity in LEMS (1/10 normal dose) | Class II | Baraka A. Can J Anaesth 1992; 39:817-819 |
+| Calcium channel blockers particularly dangerous in LEMS (direct pathophysiologic antagonism) | Class III | [Sanders DB et al. Neurology 2000; 54:2163-2167](https://pubmed.ncbi.nlm.nih.gov/11094131/) |
+| Neuromuscular blocking agent sensitivity in LEMS (1/10 normal dose) | Class II | [Baraka A. Can J Anaesth 1992; 39:817-819](https://pubmed.ncbi.nlm.nih.gov/1596979/) |
 | FVC and NIF monitoring for respiratory assessment in neuromuscular disease | Class I, Level B | Thomas CE et al. Neurology 1997; 48:1253-1260 |
-| Midodrine for orthostatic hypotension management | Class I | Low PA et al. JAMA 1997; 277:1046-1051 |
+| Midodrine for orthostatic hypotension management | Class I | [Low PA et al. JAMA 1997; 277:1046-1051](https://pubmed.ncbi.nlm.nih.gov/11536812/) |
 | 3,4-DAP seizure risk and QTc monitoring requirement | Class II | FDA prescribing information for Firdapse (amifampridine) 2018 |
 
 ---

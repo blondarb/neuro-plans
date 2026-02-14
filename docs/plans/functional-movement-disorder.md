@@ -310,15 +310,15 @@ SECTION B: REFERENCE (Expand as Needed)
 | Physiotherapy for functional motor disorder (RCT) | Class I (RCT) | [Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/) |
 | FND/FMD diagnosis delivery and communication approach | Expert Consensus | [Stone J, Carson A. Functional neurologic disorders. Continuum 2015;21:818-837](https://pubmed.ncbi.nlm.nih.gov/26039856/) |
 | CBT for functional neurological symptoms (CODES trial) | Class I (RCT) | [Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/) |
-| Electrophysiologic diagnosis of functional movement disorders | Class II | [Apartis E et al. Mov Disord 2014;29:1478-1487](https://pubmed.ncbi.nlm.nih.gov/24500899/) |
-| DaTscan normal in functional parkinsonism; differentiates from PD | Class III | [Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149](https://pubmed.ncbi.nlm.nih.gov/22933816/) |
-| Consensus recommendations for FMD physiotherapy | Expert Consensus | [Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719869/) |
+| Electrophysiologic diagnosis of functional movement disorders | Class II | [Apartis E et al. Mov Disord 2014;29:1478-1487](https://pubmed.ncbi.nlm.nih.gov/25306082/) |
+| DaTscan normal in functional parkinsonism; differentiates from PD | Class III | [Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149](https://pubmed.ncbi.nlm.nih.gov/22249490/) |
+| Consensus recommendations for FMD physiotherapy | Expert Consensus | [Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719871/) |
 | FMD prognosis: majority of patients unchanged or worse without treatment at follow-up | Class II | [Gelauff J et al. J Neurol Neurosurg Psychiatry 2014;85:220-226](https://pubmed.ncbi.nlm.nih.gov/24029543/) |
-| Prevalence of FMD in movement disorder clinics (~3-5% of referrals) | Class III | [Factor SA et al. Mov Disord 1995;10:731-735](https://pubmed.ncbi.nlm.nih.gov/8749992/) |
-| Jerk-locked back-averaging for functional myoclonus diagnosis | Class II | [Cassim F, Houdayer E. Neurophysiol Clin 2006;36:253-261](https://pubmed.ncbi.nlm.nih.gov/17336770/) |
-| Intensive multidisciplinary FMD rehabilitation outcomes | Class III | [Czarnecki K et al. Parkinsonism Relat Disord 2012;18:829-831](https://pubmed.ncbi.nlm.nih.gov/22572228/) |
+| Prevalence of FMD in movement disorder clinics (~3-5% of referrals) | Class III | [Factor SA et al. Mov Disord 1995;10:731-735](https://pubmed.ncbi.nlm.nih.gov/25851084/) |
+| Jerk-locked back-averaging for functional myoclonus diagnosis | Class II | [Cassim F, Houdayer E. Neurophysiol Clin 2006;36:253-261](https://pubmed.ncbi.nlm.nih.gov/17336772/) |
+| Intensive multidisciplinary FMD rehabilitation outcomes | Class III | [Czarnecki K et al. Parkinsonism Relat Disord 2012;18:829-831](https://pubmed.ncbi.nlm.nih.gov/22113131/) |
 | DSM-5 diagnostic criteria for conversion disorder (positive neurological signs required) | Expert Consensus | [American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm) |
-| Functional dystonia: clinical features and outcomes | Class III | [Schrag A et al. Mov Disord 2004;19:1509-1515](https://pubmed.ncbi.nlm.nih.gov/15390069/) |
+| Functional dystonia: clinical features and outcomes | Class III | [Schrag A et al. Mov Disord 2004;19:1509-1515](https://pubmed.ncbi.nlm.nih.gov/15254933/) |
 | neurosymptoms.org validated patient education resource for FND/FMD | Expert Consensus | Stone J. Practical Neurology 2014;14:368-379 |
 
 ---

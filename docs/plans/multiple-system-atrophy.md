@@ -350,30 +350,30 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| 2022 MDS diagnostic criteria for MSA | Consensus guidelines | Wenning et al., Mov Disord 2022 [PubMed: 35445419](https://pubmed.ncbi.nlm.nih.gov/35445419/) |
-| Midodrine first-line for neurogenic OH | Class I, Level A | Low et al., JAMA 1997 [PubMed: 9343467](https://pubmed.ncbi.nlm.nih.gov/9343467/) |
-| Droxidopa for neurogenic OH | Class I, Level A | Biaggioni et al., Neurology 2015 [PubMed: 25411440](https://pubmed.ncbi.nlm.nih.gov/25411440/) |
-| Fludrocortisone for neurogenic OH | Class II, Level B | Expert consensus; Kaufmann et al., Clin Auton Res 2017 [PubMed: 28578472](https://pubmed.ncbi.nlm.nih.gov/28578472/) |
-| Pyridostigmine for OH without supine hypertension | Class II, Level B | Singer et al., Neurology 2006 [PubMed: 16567700](https://pubmed.ncbi.nlm.nih.gov/16567700/) |
-| Melatonin for REM sleep behavior disorder | Class II, Level B | McGrane et al., Sleep Med Rev 2015 [PubMed: 25613822](https://pubmed.ncbi.nlm.nih.gov/25613822/) |
-| Clonazepam for REM sleep behavior disorder | Class II, Level B | Schenck & Mahowald, Mov Disord 2002 [PubMed: 12465050](https://pubmed.ncbi.nlm.nih.gov/12465050/) |
-| Levodopa trial in MSA (30% partial response) | Class II, Level B | Wenning et al., Mov Disord 2000 [PubMed: 10752569](https://pubmed.ncbi.nlm.nih.gov/10752569/) |
-| Hot cross bun sign on MRI | Diagnostic marker | Schrag et al., J Neurol Neurosurg Psychiatry 2000 [PubMed: 10753770](https://pubmed.ncbi.nlm.nih.gov/10753770/) |
-| Putaminal slit sign on MRI | Diagnostic marker | Kraft et al., Mov Disord 2002 [PubMed: 12210890](https://pubmed.ncbi.nlm.nih.gov/12210890/) |
-| MIBG scintigraphy preserved in MSA vs reduced in PD | Class II, Level B | Braune, Clin Auton Res 2001 [PubMed: 11570609](https://pubmed.ncbi.nlm.nih.gov/11570609/) |
-| Alpha-synuclein SAA for synucleinopathies | Emerging evidence | Siderowf et al., NEJM 2023 [PubMed: 36449420](https://pubmed.ncbi.nlm.nih.gov/36449420/) |
-| Nonpharmacologic OH management (compression, fluids, salt) | Class III, Level C | Lahrmann et al., Eur J Neurol 2006 [PubMed: 16930356](https://pubmed.ncbi.nlm.nih.gov/16930356/) |
-| Rapid water drinking pressor effect | Class II, Level B | Jordan et al., Circulation 2000 [PubMed: 10648763](https://pubmed.ncbi.nlm.nih.gov/10648763/) |
-| Supine hypertension management in neurogenic OH | Expert consensus | Fanciulli & Wenning, Clin Auton Res 2015 [PubMed: 25859752](https://pubmed.ncbi.nlm.nih.gov/25859752/) |
-| Vocal cord abductor paralysis and stridor in MSA | Case series | Isozaki et al., J Neurol Neurosurg Psychiatry 1996 [PubMed: 8916507](https://pubmed.ncbi.nlm.nih.gov/8916507/) |
-| Natural history of MSA (median survival 6-10 years) | Observational | Wenning et al., Lancet Neurol 2004 [PubMed: 14980530](https://pubmed.ncbi.nlm.nih.gov/14980530/) |
-| External anal sphincter EMG in MSA | Class III, Level C | Gilman et al., Neurology 2008 [PubMed: 18172063](https://pubmed.ncbi.nlm.nih.gov/18172063/) |
-| Botulinum toxin for MSA dystonia | Class III, Level C | Expert consensus; Jankovic, Mov Disord 2004 [PubMed: 15077235](https://pubmed.ncbi.nlm.nih.gov/15077235/) |
-| MSA autonomic testing battery | Practice guideline | Freeman et al., Clin Auton Res 2011 [PubMed: 21431947](https://pubmed.ncbi.nlm.nih.gov/21431947/) |
-| Desmopressin for nocturnal polyuria in autonomic failure | Class II, Level B | Mathias et al., BMJ 1986 [PubMed: 3089429](https://pubmed.ncbi.nlm.nih.gov/3089429/) |
-| Octreotide for postprandial hypotension | Class II, Level B | Hoeldtke et al., Am J Med 1989 [PubMed: 2672593](https://pubmed.ncbi.nlm.nih.gov/2672593/) |
-| Atomoxetine for neurogenic OH | Class II, Level B | Ramirez et al., Hypertension 2014 [PubMed: 24446058](https://pubmed.ncbi.nlm.nih.gov/24446058/) |
-| Mirabegron preferred over antimuscarinics for neurogenic OAB | Expert consensus | Herschorn et al., Neurourol Urodyn 2020 [PubMed: 31926040](https://pubmed.ncbi.nlm.nih.gov/31926040/) |
+| 2022 MDS diagnostic criteria for MSA | Consensus guidelines | Wenning et al., Mov Disord 2022 PubMed: 35445419 |
+| Midodrine first-line for neurogenic OH | Class I, Level A | Low et al., JAMA 1997 PubMed: 9343467 |
+| Droxidopa for neurogenic OH | Class I, Level A | Biaggioni et al., Neurology 2015 PubMed: 25411440 |
+| Fludrocortisone for neurogenic OH | Class II, Level B | Expert consensus; Kaufmann et al., Clin Auton Res 2017 PubMed: 28578472 |
+| Pyridostigmine for OH without supine hypertension | Class II, Level B | Singer et al., Neurology 2006 PubMed: 16567700 |
+| Melatonin for REM sleep behavior disorder | Class II, Level B | McGrane et al., Sleep Med Rev 2015 PubMed: 25613822 |
+| Clonazepam for REM sleep behavior disorder | Class II, Level B | Schenck & Mahowald, Mov Disord 2002 PubMed: 12465050 |
+| Levodopa trial in MSA (30% partial response) | Class II, Level B | Wenning et al., Mov Disord 2000 PubMed: 10752569 |
+| Hot cross bun sign on MRI | Diagnostic marker | [Schrag et al., J Neurol Neurosurg Psychiatry 2000 PubMed: 10753770](https://pubmed.ncbi.nlm.nih.gov/11200689/) |
+| Putaminal slit sign on MRI | Diagnostic marker | Kraft et al., Mov Disord 2002 PubMed: 12210890 |
+| MIBG scintigraphy preserved in MSA vs reduced in PD | Class II, Level B | Braune, Clin Auton Res 2001 PubMed: 11570609 |
+| Alpha-synuclein SAA for synucleinopathies | Emerging evidence | Siderowf et al., NEJM 2023 PubMed: 36449420 |
+| Nonpharmacologic OH management (compression, fluids, salt) | Class III, Level C | [Lahrmann et al., Eur J Neurol 2006 PubMed: 16930356](https://pubmed.ncbi.nlm.nih.gov/16930356/) |
+| Rapid water drinking pressor effect | Class II, Level B | Jordan et al., Circulation 2000 PubMed: 10648763 |
+| Supine hypertension management in neurogenic OH | Expert consensus | Fanciulli & Wenning, Clin Auton Res 2015 PubMed: 25859752 |
+| Vocal cord abductor paralysis and stridor in MSA | Case series | Isozaki et al., J Neurol Neurosurg Psychiatry 1996 PubMed: 8916507 |
+| Natural history of MSA (median survival 6-10 years) | Observational | Wenning et al., Lancet Neurol 2004 PubMed: 14980530 |
+| External anal sphincter EMG in MSA | Class III, Level C | Gilman et al., Neurology 2008 PubMed: 18172063 |
+| Botulinum toxin for MSA dystonia | Class III, Level C | Expert consensus; Jankovic, Mov Disord 2004 PubMed: 15077235 |
+| MSA autonomic testing battery | Practice guideline | Freeman et al., Clin Auton Res 2011 PubMed: 21431947 |
+| Desmopressin for nocturnal polyuria in autonomic failure | Class II, Level B | Mathias et al., BMJ 1986 PubMed: 3089429 |
+| Octreotide for postprandial hypotension | Class II, Level B | [Hoeldtke et al., Am J Med 1989 PubMed: 2672593](https://pubmed.ncbi.nlm.nih.gov/2658575/) |
+| Atomoxetine for neurogenic OH | Class II, Level B | Ramirez et al., Hypertension 2014 PubMed: 24446058 |
+| Mirabegron preferred over antimuscarinics for neurogenic OAB | Expert consensus | Herschorn et al., Neurourol Urodyn 2020 PubMed: 31926040 |
 
 ---
 

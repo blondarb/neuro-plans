@@ -260,14 +260,14 @@ tags:
 |----------------|----------------|--------|
 | McKeith diagnostic criteria for DLB | Consensus Guidelines | [McKeith et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28592453/) |
 | DaTscan indicative biomarker for DLB | Class II, Level B | [McKeith et al. Lancet Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17362834/) |
-| Cardiac MIBG indicative biomarker | Class II, Level B | [Yoshita et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/26002489/) |
+| Cardiac MIBG indicative biomarker | Class II, Level B | [Yoshita et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/26598877/) |
 | Rivastigmine for PDD/DLB cognition | Class I, Level A | [Emre et al. NEJM 2004](https://pubmed.ncbi.nlm.nih.gov/15590953/) |
 | Donepezil for DLB | Class I, Level A | [Mori et al. Ann Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22829268/) |
-| Cholinesterase inhibitors reduce visual hallucinations | Class II, Level B | [Stinton et al. Int J Geriatr Psychiatry 2015](https://pubmed.ncbi.nlm.nih.gov/24838443/) |
+| Cholinesterase inhibitors reduce visual hallucinations | Class II, Level B | [Stinton et al. Int J Geriatr Psychiatry 2015](https://pubmed.ncbi.nlm.nih.gov/26085043/) |
 | Neuroleptic sensitivity in DLB | Class II, Level B | [McKeith et al. BMJ 1992](https://pubmed.ncbi.nlm.nih.gov/1356550/) |
 | Antipsychotic mortality risk in dementia | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16234500/) |
 | Pimavanserin for PD psychosis | Class I, Level A | [Cummings et al. Lancet 2014](https://pubmed.ncbi.nlm.nih.gov/24183563/) |
-| Melatonin for REM sleep behavior disorder | Class II, Level B | [Kunz et al. Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/20810311/) |
+| Melatonin for REM sleep behavior disorder | Class II, Level B | [Kunz et al. Sleep Med 2010](https://pubmed.ncbi.nlm.nih.gov/21619862/) |
 | Clonazepam for REM sleep behavior disorder | Class II, Level B | [Aurora et al. Sleep 2010](https://pubmed.ncbi.nlm.nih.gov/21061864/) |
 | CSF alpha-synuclein SAA for synucleinopathies | Class II, Level B | [Siderowf et al. Lancet Neurol 2023](https://pubmed.ncbi.nlm.nih.gov/37863605/) |
 

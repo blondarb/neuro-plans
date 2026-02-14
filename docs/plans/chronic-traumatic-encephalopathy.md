@@ -312,24 +312,24 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| NINDS/NIBIB consensus diagnostic criteria for traumatic encephalopathy syndrome (TES) | Consensus | [Katz DI et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34341079/) |
+| NINDS/NIBIB consensus diagnostic criteria for traumatic encephalopathy syndrome (TES) | Consensus | [Katz DI et al. Neurology 2021](https://pubmed.ncbi.nlm.nih.gov/34992965/) |
 | Neuropathological criteria for CTE: perivascular p-tau at sulcal depths as pathognomonic lesion | Consensus | [McKee AC et al. Acta Neuropathol 2016](https://pubmed.ncbi.nlm.nih.gov/26667418/) |
-| CTE found in 99% of examined NFL players (neuropathological series) | Class III | [Mez J et al. JAMA 2017](https://pubmed.ncbi.nlm.nih.gov/28724145/) |
+| CTE found in 99% of examined NFL players (neuropathological series) | Class III | [Mez J et al. JAMA 2017](https://pubmed.ncbi.nlm.nih.gov/28742910/) |
 | Updated NINDS CTE diagnostic criteria and biomarker framework | Consensus | [Alosco ML et al. Alzheimers Dement 2023](https://pubmed.ncbi.nlm.nih.gov/37496298/) |
-| Repetitive head impacts as primary risk factor for CTE; dose-response relationship | Class II, Level B | [Bieniek KF et al. Acta Neuropathol 2020](https://pubmed.ncbi.nlm.nih.gov/31907599/) |
-| CSF biomarkers (p-tau 217, NfL) in CTE-related neurodegeneration | Class III | [Stern RA et al. JAMA Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30715078/) |
+| Repetitive head impacts as primary risk factor for CTE; dose-response relationship | Class II, Level B | Bieniek KF et al. Acta Neuropathol 2020 |
+| CSF biomarkers (p-tau 217, NfL) in CTE-related neurodegeneration | Class III | Stern RA et al. JAMA Neurol 2019 |
 | Tau PET imaging patterns distinguish CTE from Alzheimer disease | Class III | [Stern RA et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/30969506/) |
 | Cholinesterase inhibitors for dementia (applicable to CTE with cognitive impairment) | Class I, Level A | [Birks J. Cochrane Database Syst Rev 2006](https://pubmed.ncbi.nlm.nih.gov/16437532/) |
 | Memantine for moderate-to-severe dementia | Class I, Level A | [McShane R et al. Cochrane Database Syst Rev 2019](https://pubmed.ncbi.nlm.nih.gov/30891742/) |
-| Methylphenidate improves attention and processing speed post-TBI | Class II, Level B | [Willmott C, Ponsford J. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19289734/) |
-| Amantadine improves cognitive function after TBI | Class I, Level A | [Giacino JT et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22397651/) |
-| SSRIs for depression in neurodegenerative disease | Class II, Level B | [Leong C. Drugs Aging 2014](https://pubmed.ncbi.nlm.nih.gov/24634248/) |
+| Methylphenidate improves attention and processing speed post-TBI | Class II, Level B | [Willmott C, Ponsford J. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19658596/) |
+| Amantadine improves cognitive function after TBI | Class I, Level A | [Giacino JT et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22375973/) |
+| SSRIs for depression in neurodegenerative disease | Class II, Level B | [Leong C. Drugs Aging 2014](https://pubmed.ncbi.nlm.nih.gov/25821333/) |
 | Black box warning: increased mortality with antipsychotics in elderly dementia patients | FDA Warning | [FDA Safety Alert 2005; updated 2008](https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/antipsychotics) |
-| Propranolol for aggression in TBI and dementia | Class II, Level B | [Fleminger S et al. Cochrane Database Syst Rev 2006](https://pubmed.ncbi.nlm.nih.gov/17054218/) |
+| Propranolol for aggression in TBI and dementia | Class II, Level B | [Fleminger S et al. Cochrane Database Syst Rev 2006](https://pubmed.ncbi.nlm.nih.gov/17054165/) |
 | Dextromethorphan-quinidine for pseudobulbar affect | Class I, Level A | [Pioro EP et al. Ann Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20839238/) |
-| Post-traumatic hypopituitarism prevalence and screening | Class II, Level B | [Tanriverdi F et al. J Clin Endocrinol Metab 2015](https://pubmed.ncbi.nlm.nih.gov/25423570/) |
+| Post-traumatic hypopituitarism prevalence and screening | Class II, Level B | [Tanriverdi F et al. J Clin Endocrinol Metab 2015](https://pubmed.ncbi.nlm.nih.gov/27239613/) |
 | Concussion Legacy Foundation clinical and research resources for CTE families | Expert Resource | [Concussion Legacy Foundation](https://concussionfoundation.org/) |
-| AAN practice guideline: evaluation and management of concussion | Class I | [Giza CC et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23479929/) |
+| AAN practice guideline: evaluation and management of concussion | Class I | [Giza CC et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23508730/) |
 
 ---
 

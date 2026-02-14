@@ -215,13 +215,13 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| EMG/NCS is the gold standard for confirming ulnar neuropathy and localizing the site of entrapment | Class I, Level B | [AANEM Practice Parameter: electrodiagnosis of ulnar neuropathy at the elbow](https://pubmed.ncbi.nlm.nih.gov/10234589/) |
+| EMG/NCS is the gold standard for confirming ulnar neuropathy and localizing the site of entrapment | Class I, Level B | AANEM Practice Parameter: electrodiagnosis of ulnar neuropathy at the elbow |
 | Conservative management with activity modification and night splinting is effective for mild cubital tunnel syndrome | Class IIa, Level B | [Svernlov B et al. Scand J Plast Reconstr Surg Hand Surg 2009](https://pubmed.ncbi.nlm.nih.gov/19282413/) |
 | Simple decompression and anterior transposition have similar outcomes for primary cubital tunnel surgery | Class I, Level A | [Zlowodzki M et al. J Bone Joint Surg Am 2007 (meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/18056489/) |
 | Ultrasound cross-sectional area >10 mm² at the elbow is a reliable diagnostic marker for cubital tunnel syndrome | Class IIa, Level B | [Beekman R et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15534254/) |
 | Night splinting reduces nocturnal elbow flexion and improves symptoms in mild cubital tunnel syndrome | Class IIa, Level B | [Shah CM et al. J Hand Surg Am 2013](https://pubmed.ncbi.nlm.nih.gov/23455407/) |
 | Nerve recovery after transposition proceeds at ~1 mm/day; complete recovery may take 6-18 months depending on severity | Class IIa, Level C | [Mackinnon SE, Novak CB. Clin Orthop Relat Res 1996](https://pubmed.ncbi.nlm.nih.gov/8958578/) |
-| AAOS Clinical Practice Guideline on cubital tunnel syndrome treatment | Guideline | [Goldfarb CA et al. J Am Acad Orthop Surg 2009](https://pubmed.ncbi.nlm.nih.gov/19810811/) |
+| AAOS Clinical Practice Guideline on cubital tunnel syndrome treatment | Guideline | Goldfarb CA et al. J Am Acad Orthop Surg 2009 |
 | Surgical treatment is recommended when EMG shows axonal loss or motor weakness is present | Class IIa, Level B | [Caliandro P et al. Cochrane Database Syst Rev 2016](https://pubmed.ncbi.nlm.nih.gov/27845501/) |
 
 ---

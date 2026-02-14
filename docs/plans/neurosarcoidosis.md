@@ -404,29 +404,29 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Zajicek diagnostic criteria for neurosarcoidosis (definite, probable, possible) | Expert Consensus, Class III | Zajicek JP et al. J Neurol Neurosurg Psychiatry 1999;67:517-521 |
-| Updated consensus diagnostic criteria for neurosarcoidosis (Stern et al.) | Expert Consensus | Stern BJ et al. JAMA Neurol 2018;75:1546-1553 |
+| Updated consensus diagnostic criteria for neurosarcoidosis (Stern et al.) | Expert Consensus | [Stern BJ et al. JAMA Neurol 2018;75:1546-1553](https://pubmed.ncbi.nlm.nih.gov/30167654/) |
 | High-dose IV methylprednisolone as first-line acute treatment | Class III, Expert Consensus | Fritz D et al. J Neuroimmunol 2016;299:146-151 |
 | Prednisone oral taper following IV pulse therapy | Expert Consensus | Tavee JO, Stern BJ. Neurol Clin 2015;33:553-577 |
 | Methotrexate as first-line steroid-sparing agent | Class III, Retrospective | Lower EE, Broderick JP. Neurology 2004;62:2198-2202 |
 | Methotrexate efficacy in neurosarcoidosis | Class III, Retrospective | Scott TF et al. Neurology 2007;68:1405-1407 |
 | Mycophenolate mofetil as steroid-sparing agent | Class IV, Case Series | Moravan M, Segal BM. Arch Neurol 2009;66:1144-1145 |
-| Infliximab for refractory neurosarcoidosis | Class III, Retrospective | Gelfand JM et al. Neurology 2017;89:2092-2100 |
+| Infliximab for refractory neurosarcoidosis | Class III, Retrospective | [Gelfand JM et al. Neurology 2017;89:2092-2100](https://pubmed.ncbi.nlm.nih.gov/29030454/) |
 | Infliximab safety and efficacy in sarcoidosis | Class III | Judson MA et al. Sarcoidosis Vasc Diffuse Lung Dis 2008;25:49-57 |
-| Adalimumab for refractory sarcoidosis | Class IV, Case Series | Erckens RJ et al. Ophthalmology 2012;119:2020-2028 |
-| Rituximab for refractory neurosarcoidosis | Class IV, Case Reports | Bomprezzi R et al. J Neurol 2010;257:1108-1110 |
-| Cranial neuropathy (CN VII most common) in neurosarcoidosis | Class II, Retrospective | Stern BJ et al. Arch Neurol 1985;42:909-917 |
-| Optic neuropathy in neurosarcoidosis | Class III | Koczman JJ et al. Ophthalmology 2008;115:890-896 |
-| CSF ACE levels -- sensitivity and specificity in neurosarcoidosis | Class II | Dale JC, O'Brien JF. Mayo Clin Proc 1999;74:535-540 |
+| Adalimumab for refractory sarcoidosis | Class IV, Case Series | [Erckens RJ et al. Ophthalmology 2012;119:2020-2028](https://pubmed.ncbi.nlm.nih.gov/22119879/) |
+| Rituximab for refractory neurosarcoidosis | Class IV, Case Reports | [Bomprezzi R et al. J Neurol 2010;257:1108-1110](https://pubmed.ncbi.nlm.nih.gov/20697110/) |
+| Cranial neuropathy (CN VII most common) in neurosarcoidosis | Class II, Retrospective | [Stern BJ et al. Arch Neurol 1985;42:909-917](https://pubmed.ncbi.nlm.nih.gov/3896208/) |
+| Optic neuropathy in neurosarcoidosis | Class III | [Koczman JJ et al. Ophthalmology 2008;115:890-896](https://pubmed.ncbi.nlm.nih.gov/18432542/) |
+| CSF ACE levels -- sensitivity and specificity in neurosarcoidosis | Class II | [Dale JC, O'Brien JF. Mayo Clin Proc 1999;74:535-540](https://pubmed.ncbi.nlm.nih.gov/10319092/) |
 | Serum ACE -- limited sensitivity in neurosarcoidosis (~30-50%) | Class II | Miyoshi S et al. Clin Biochem 2010;43:1004-1008 |
-| MRI patterns in neurosarcoidosis (leptomeningeal enhancement most common) | Class III, Retrospective | Shah R et al. AJR Am J Roentgenol 2009;193:1317-1332 |
+| MRI patterns in neurosarcoidosis (leptomeningeal enhancement most common) | Class III, Retrospective | [Shah R et al. AJR Am J Roentgenol 2009;193:1317-1332](https://pubmed.ncbi.nlm.nih.gov/19234271/) |
 | Hypothalamic-pituitary involvement in neurosarcoidosis | Class III | Anthony J et al. QJM 2016;109:643-648 |
 | Diabetes insipidus as presenting feature of neurosarcoidosis | Class IV, Case Series | Stuart CA et al. Am J Med 1978;65:585-594 |
-| Scadding staging for pulmonary sarcoidosis | Class II | Scadding JG. Br Med J 1961;2:1165-1172 |
+| Scadding staging for pulmonary sarcoidosis | Class II | [Scadding JG. Br Med J 1961;2:1165-1172](https://pubmed.ncbi.nlm.nih.gov/14497750/) |
 | FDG-PET for biopsy site identification in sarcoidosis | Class III | Teirstein AS et al. Sarcoidosis Vasc Diffuse Lung Dis 2007;24:85-92 |
-| Small fiber neuropathy in sarcoidosis | Class III | Hoitsma E et al. Lancet Neurol 2004;3:349-353 |
+| Small fiber neuropathy in sarcoidosis | Class III | [Hoitsma E et al. Lancet Neurol 2004;3:349-353](https://pubmed.ncbi.nlm.nih.gov/15207796/) |
 | Neurosarcoidosis clinical features and outcomes | Class II, Retrospective | Joubert B et al. Medicine (Baltimore) 2017;96:e8340 |
-| Hypercalcemia mechanism in sarcoidosis (1,25-dihydroxyvitamin D) | Class II | Bell NH et al. J Clin Invest 1979;64:218-225 |
-| Cyclophosphamide for refractory neurosarcoidosis | Class IV, Case Series | Doty JD et al. Chest 2003;124:2023-2027 |
+| Hypercalcemia mechanism in sarcoidosis (1,25-dihydroxyvitamin D) | Class II | [Bell NH et al. J Clin Invest 1979;64:218-225](https://pubmed.ncbi.nlm.nih.gov/312811/) |
+| Cyclophosphamide for refractory neurosarcoidosis | Class IV, Case Series | [Doty JD et al. Chest 2003;124:2023-2027](https://pubmed.ncbi.nlm.nih.gov/14605084/) |
 | Long-term outcomes of neurosarcoidosis treatment | Class III | Bitoun S et al. Medicine (Baltimore) 2016;95:e3241 |
 
 ---

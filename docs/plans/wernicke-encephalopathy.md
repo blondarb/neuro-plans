@@ -258,7 +258,7 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| High-dose IV thiamine (500 mg TID) for suspected WE | Class II, Level B | [EFNS guidelines](https://pubmed.ncbi.nlm.nih.gov/20642790/); Cochrane review (limited RCT data but expert consensus) |
+| High-dose IV thiamine (500 mg TID) for suspected WE | Class II, Level B | EFNS guidelines; Cochrane review (limited RCT data but expert consensus) |
 | Thiamine before glucose in at-risk patients | Class I (practice standard) | Physiologic rationale; case reports of precipitation |
 | MRI typical findings in WE | Class II, Level B | Multiple case series; imaging studies |
 | Magnesium replacement essential | Class II, Level B | Cofactor for thiamine-dependent enzymes |

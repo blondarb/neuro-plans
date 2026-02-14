@@ -307,12 +307,12 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | Empiric vancomycin + ceftriaxone +/- ampicillin | Class I, Level A | IDSA Guidelines ([Tunkel et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15494903/); [van de Beek et al. NEJM 2006](https://pubmed.ncbi.nlm.nih.gov/16394301/)) |
 | Dexamethasone before or with first antibiotic dose | Class I, Level A | [de Gans & van de Beek (NEJM 2002)](https://pubmed.ncbi.nlm.nih.gov/12432041/) — reduces mortality and hearing loss in S. pneumoniae |
-| Do NOT delay antibiotics for imaging | Class I, Level A | IDSA Guidelines; multiple observational studies showing increased mortality with delay |
+| Do NOT delay antibiotics for imaging | Class I, Level A | [IDSA Guidelines; multiple observational](https://pubmed.ncbi.nlm.nih.gov/15494903/) studies showing increased mortality with delay |
 | CT before LP only for specific indications | Class I, Level A | [Hasbun et al. (NEJM 2001)](https://pubmed.ncbi.nlm.nih.gov/11742046/) — criteria for when to CT before LP |
 | Blood cultures before antibiotics (if obtainable without delay) | Class I, Level B | IDSA Guidelines |
 | BioFire ME Panel for rapid diagnosis | Class IIa, Level B | [Leber et al. (JCM 2016)](https://pubmed.ncbi.nlm.nih.gov/27335149/); FDA-cleared multiplex PCR |
 | CSF lactate >3.5 mmol/L for bacterial vs viral | Class IIa, Level B | Meta-analysis: [Sakushima et al. (J Infect 2011)](https://pubmed.ncbi.nlm.nih.gov/21382412/) |
-| Targeted antibiotic therapy by organism | Class I, Level A | IDSA Guidelines; organism-specific duration data |
+| Targeted antibiotic therapy by organism | Class I, Level A | [IDSA Guidelines; organism-specific](https://pubmed.ncbi.nlm.nih.gov/15494903/) duration data |
 | Close contact prophylaxis for meningococcal | Class I, Level A | CDC MMWR recommendations |
 | Hearing assessment post-meningitis | Class I, Level B | High incidence of hearing loss (up to 30% S. pneumoniae) |
 | Seizure treatment (not routine prophylaxis) | Class IIb, Level C | Expert consensus; no clear data supporting prophylaxis |

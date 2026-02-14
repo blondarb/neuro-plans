@@ -232,13 +232,13 @@ tags:
 |----------------|----------------|--------|
 | ICHD-3 diagnostic criteria for new daily persistent headache (4.10) | Consensus | [IHS Classification Committee. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 | NDPH is a primary headache disorder defined by daily and unremitting headache from onset, distinctly remembered | Class IIa, Level C | [Rozen TD. Curr Pain Headache Rep 2014](https://pubmed.ncbi.nlm.nih.gov/24820732/) |
-| Post-infectious trigger is common; EBV and other viral infections identified in many NDPH series | Class IIa, Level C | [Li D, Rozen TD. Cephalalgia 2004](https://pubmed.ncbi.nlm.nih.gov/15154855/) |
+| Post-infectious trigger is common; EBV and other viral infections identified in many NDPH series | Class IIa, Level C | Li D, Rozen TD. Cephalalgia 2004 |
 | Topiramate has best available evidence among preventives for chronic daily headache | Class I, Level A | [Silberstein SD et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17301339/) |
 | CGRP monoclonal antibodies show promise for treatment-refractory NDPH (case series) | Class IIb, Level C | [Rozen TD. Headache 2019](https://pubmed.ncbi.nlm.nih.gov/31490552/) |
-| IV DHE (Raskin protocol) is effective bridge therapy for refractory chronic daily headache | Class IIa, Level B | [Raskin NH. Headache 1986](https://pubmed.ncbi.nlm.nih.gov/3519528/) |
-| Mexiletine has shown benefit in refractory NDPH in small series | Class IIb, Level C | [Marmura MJ. Cephalalgia 2013](https://pubmed.ncbi.nlm.nih.gov/23263899/) |
+| IV DHE (Raskin protocol) is effective bridge therapy for refractory chronic daily headache | Class IIa, Level B | Raskin NH. Headache 1986 |
+| Mexiletine has shown benefit in refractory NDPH in small series | Class IIb, Level C | Marmura MJ. Cephalalgia 2013 |
 | OnabotulinumtoxinA (PREEMPT protocol) for chronic migraine; extrapolated to NDPH with migrainous features | Class I, Level A (for CM); Class IIb for NDPH | [Aurora SK et al. Cephalalgia 2011](https://pubmed.ncbi.nlm.nih.gov/28071935/) |
-| Self-limiting subtype resolves in approximately 15-20% of cases | Class IIa, Level C | [Vanast WJ. Neurology 1986](https://pubmed.ncbi.nlm.nih.gov/10899069/) |
+| Self-limiting subtype resolves in approximately 15-20% of cases | Class IIa, Level C | Vanast WJ. Neurology 1986 |
 
 ---
 

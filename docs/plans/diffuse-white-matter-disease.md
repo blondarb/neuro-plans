@@ -339,13 +339,13 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | Cerebral small vessel disease is the most common cause of white matter hyperintensities; Fazekas scale grades severity and correlates with cognitive decline | Class I, Level A | [Debette S, Markus HS. BMJ 2010](https://pubmed.ncbi.nlm.nih.gov/20660506/) |
 | Blood pressure control reduces white matter hyperintensity progression; SPRINT-MIND showed intensive BP control (<120 systolic) reduced WMH volume | Class I, Level A | [SPRINT MIND Investigators. JAMA 2019](https://pubmed.ncbi.nlm.nih.gov/30688979/) |
-| White matter hyperintensities independently predict stroke, dementia, and death; Rotterdam Scan Study | Class I, Level A | [Vernooij MW et al. Radiology 2009](https://pubmed.ncbi.nlm.nih.gov/19789227/) |
-| MRI with FLAIR is the gold standard for detecting white matter disease; DWI and SWI provide additional diagnostic information for acuity and microbleeds | Class I, Level B | [Defined by AAN Practice Parameters; Defined by STandards for ReportIng Vascular changes on nEuroimaging (STRIVE)](https://pubmed.ncbi.nlm.nih.gov/23396163/) |
+| White matter hyperintensities independently predict stroke, dementia, and death; Rotterdam Scan Study | Class I, Level A | [Vernooij MW et al. Radiology 2009](https://pubmed.ncbi.nlm.nih.gov/19800674/) |
+| MRI with FLAIR is the gold standard for detecting white matter disease; DWI and SWI provide additional diagnostic information for acuity and microbleeds | Class I, Level B | Defined by AAN Practice Parameters; Defined by STandards for ReportIng Vascular changes on nEuroimaging (STRIVE) |
 | CADASIL is the most common genetic cause of white matter disease; anterior temporal pole and external capsule involvement are characteristic | Class IIa, Level B | [Chabriat H et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19539236/) |
-| Donepezil provides modest benefit in vascular cognitive impairment; evidence from randomized controlled trials | Class IIa, Level B | [Erkinjuntti T et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/11943260/) |
-| Primary CNS vasculitis requires tissue diagnosis; angiography alone has limited sensitivity and specificity | Class IIa, Level C | [Salvarani C et al. Lancet Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/23237904/) |
-| Adult-onset leukodystrophies are increasingly recognized; systematic diagnostic approach yields diagnosis in 50% of cases | Class IIb, Level C | [Lynch DS et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28877014/) |
-| Mediterranean diet associated with reduced white matter hyperintensity burden and slower cognitive decline | Class IIa, Level B | [Gardener H et al. Arch Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22431837/) |
+| Donepezil provides modest benefit in vascular cognitive impairment; evidence from randomized controlled trials | Class IIa, Level B | [Erkinjuntti T et al. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/11965273/) |
+| Primary CNS vasculitis requires tissue diagnosis; angiography alone has limited sensitivity and specificity | Class IIa, Level C | Salvarani C et al. Lancet Neurol 2012 |
+| Adult-onset leukodystrophies are increasingly recognized; systematic diagnostic approach yields diagnosis in 50% of cases | Class IIb, Level C | [Lynch DS et al. Neurology 2017](https://pubmed.ncbi.nlm.nih.gov/28955727/) |
+| Mediterranean diet associated with reduced white matter hyperintensity burden and slower cognitive decline | Class IIa, Level B | [Gardener H et al. Arch Neurol 2012](https://pubmed.ncbi.nlm.nih.gov/22332193/) |
 
 ---
 

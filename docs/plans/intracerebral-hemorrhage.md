@@ -280,25 +280,25 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| SBP target <140 mmHg in acute ICH (presenting SBP 150-220) | Class I, Level A | INTERACT2 ([Anderson et al. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23713578/)); AHA/ASA 2022 Guidelines |
-| Intensive BP lowering safe but benefit on functional outcome modest | Class IIa, Level A | ATACH-2 ([Qureshi et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27276234/)) — <140 vs <180 safe; no functional difference |
-| 4-factor PCC preferred over FFP for warfarin reversal | Class I, Level B | INCH trial ([Steiner et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27647638/)) |
-| Idarucizumab for dabigatran reversal | Class I, Level B | RE-VERSE AD trial ([Pollack et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28693366/)) |
-| Andexanet alfa for factor Xa inhibitor reversal | Class IIa, Level B | ANNEXA-4 ([Connolly et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/30730782/)) |
-| Platelet transfusion NOT beneficial for antiplatelet-associated ICH | Class III (No Benefit) | PATCH trial ([Baharoglu et al. Lancet 2016](https://pubmed.ncbi.nlm.nih.gov/27178479/)) |
-| TXA reduces expansion but NOT mortality | Class IIb, Level B | TICH-2 ([Sprigg et al. Lancet 2018](https://pubmed.ncbi.nlm.nih.gov/29778325/)) |
+| SBP target <140 mmHg in acute ICH (presenting SBP 150-220) | Class I, Level A | [INTERACT2](https://pubmed.ncbi.nlm.nih.gov/23713578/) ([Anderson et al. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23713578/)); [AHA/ASA 2022 Guidelines](https://pubmed.ncbi.nlm.nih.gov/35579034/) |
+| Intensive BP lowering safe but benefit on functional outcome modest | Class IIa, Level A | [ATACH-2](https://pubmed.ncbi.nlm.nih.gov/27276234/) ([Qureshi et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27276234/)) — <140 vs <180 safe; no functional difference |
+| 4-factor PCC preferred over FFP for warfarin reversal | Class I, Level B | [INCH](https://pubmed.ncbi.nlm.nih.gov/27302126/) trial ([Steiner et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27647638/)) |
+| Idarucizumab for dabigatran reversal | Class I, Level B | [RE-VERSE AD](https://pubmed.ncbi.nlm.nih.gov/28693366/) trial ([Pollack et al. NEJM 2017](https://pubmed.ncbi.nlm.nih.gov/28693366/)) |
+| Andexanet alfa for factor Xa inhibitor reversal | Class IIa, Level B | [ANNEXA-4](https://pubmed.ncbi.nlm.nih.gov/30730782/) ([Connolly et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/30730782/)) |
+| Platelet transfusion NOT beneficial for antiplatelet-associated ICH | Class III (No Benefit) | [PATCH](https://pubmed.ncbi.nlm.nih.gov/27178479/) trial ([Baharoglu et al. Lancet 2016](https://pubmed.ncbi.nlm.nih.gov/27178479/)) |
+| TXA reduces expansion but NOT mortality | Class IIb, Level B | [TICH-2](https://pubmed.ncbi.nlm.nih.gov/29778325/) ([Sprigg et al. Lancet 2018](https://pubmed.ncbi.nlm.nih.gov/29778325/)) |
 | Surgical evacuation for cerebellar ICH with deterioration | Class I, Level B | AHA/ASA Guidelines; strong consensus |
-| No benefit from routine supratentorial open surgery | Class III (No Benefit) | STICH ([Mendelow et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15680453/)); STICH II (2013) |
-| Minimally invasive surgery emerging benefit | Class IIb, Level B | MISTIE III ([Hanley et al. Lancet 2019](https://pubmed.ncbi.nlm.nih.gov/30739747/)); ENRICH (2024) |
+| No benefit from routine supratentorial open surgery | Class III (No Benefit) | [STICH](https://pubmed.ncbi.nlm.nih.gov/15680453/) ([Mendelow et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15680453/)); [STICH](https://pubmed.ncbi.nlm.nih.gov/15680453/) II (2013) |
+| Minimally invasive surgery emerging benefit | Class IIb, Level B | [MISTIE III](https://pubmed.ncbi.nlm.nih.gov/30739747/) ([Hanley et al. Lancet 2019](https://pubmed.ncbi.nlm.nih.gov/30739747/)); [ENRICH](https://pubmed.ncbi.nlm.nih.gov/38598795/) (2024) |
 | EVD for IVH with hydrocephalus | Class I, Level B | AHA/ASA Guidelines |
 | Intraventricular tPA (CLEAR III) | Class IIb, Level B | [Hanley et al. (Lancet 2017)](https://pubmed.ncbi.nlm.nih.gov/28081952/) — reduced mortality but not functional outcome |
-| Seizure prophylaxis NOT recommended routinely | Class III (No Benefit) | AHA/ASA 2022 — treat clinical/electrographic seizures; cEEG if altered |
-| Anticoagulation restart 4-8 weeks for AF | Class IIb, Level B | AHA/ASA 2022; observational data |
+| Seizure prophylaxis NOT recommended routinely | Class III (No Benefit) | [AHA/ASA 2022](https://pubmed.ncbi.nlm.nih.gov/35579034/) — treat clinical/electrographic seizures; cEEG if altered |
+| Anticoagulation restart 4-8 weeks for AF | Class IIb, Level B | [AHA/ASA 2022](https://pubmed.ncbi.nlm.nih.gov/35579034/); observational data |
 | Antiplatelet restart appears safe (RESTART trial) | Class IIa, Level B | [RESTART trial (Lancet 2019)](https://pubmed.ncbi.nlm.nih.gov/31128924/) |
-| DVT prophylaxis: pneumatic devices immediately; pharmacologic at 24-48h | Class I, Level B | AHA/ASA 2022 Guidelines |
+| DVT prophylaxis: pneumatic devices immediately; pharmacologic at 24-48h | Class I, Level B | [AHA/ASA 2022 Guidelines](https://pubmed.ncbi.nlm.nih.gov/35579034/) |
 | ICH Score for prognosis | Class IIa, Level B | [Hemphill et al. (Stroke 2001)](https://pubmed.ncbi.nlm.nih.gov/11283388/) |
-| Normothermia improves outcomes | Class I, Level C | AHA/ASA Guidelines |
-| Avoid self-fulfilling prophecy (DNR discussion timing) | Class I, Level C | AHA/ASA 2022: delay new DNR orders until at least 24h after admission |
+| Normothermia improves outcomes | Class I, Level C | [AHA/ASA 2022 ICH Guidelines (Greenberg et al.)](https://pubmed.ncbi.nlm.nih.gov/35579034/) |
+| Avoid self-fulfilling prophecy (DNR discussion timing) | Class I, Level C | [AHA/ASA 2022](https://pubmed.ncbi.nlm.nih.gov/35579034/): delay new DNR orders until at least 24h after admission |
 
 ---
 

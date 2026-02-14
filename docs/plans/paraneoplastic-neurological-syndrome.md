@@ -396,7 +396,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Anti-Hu syndrome: encephalomyelitis and SCLC association | Class III | [Dalmau J et al. Medicine 1992;71:59-72](https://pubmed.ncbi.nlm.nih.gov/1312211/) |
 | Anti-Yo paraneoplastic cerebellar degeneration and gynecologic cancer | Class III | [Peterson K et al. Neurology 1992;42:1931-1937](https://pubmed.ncbi.nlm.nih.gov/1407575/) |
 | Anti-Ri opsoclonus-myoclonus and breast cancer | Class III | [Pittock SJ et al. Ann Neurol 2003;53:580-587](https://pubmed.ncbi.nlm.nih.gov/12730991/) |
-| Anti-CV2/CRMP5 neuropathy and SCLC | Class III | [Honnorat J et al. Ann Neurol 2009;65:370-380](https://pubmed.ncbi.nlm.nih.gov/19913860/) |
+| Anti-CV2/CRMP5 neuropathy and SCLC | Class III | Honnorat J et al. Ann Neurol 2009;65:370-380 |
 | Anti-Ma2 limbic encephalitis and testicular germ cell tumor | Class III | [Dalmau J et al. Brain 2004;127:1831-1844](https://pubmed.ncbi.nlm.nih.gov/15215214/) |
 | Anti-VGCC and Lambert-Eaton myasthenic syndrome with SCLC | Class II | [Titulaer MJ et al. J Clin Oncol 2011;29:902-908](https://pubmed.ncbi.nlm.nih.gov/21245427/) |
 | LEMS DELTA-P score for SCLC prediction | Class II | [Titulaer MJ et al. Neurology 2011;76:1410-1415](https://pubmed.ncbi.nlm.nih.gov/22094130/) |

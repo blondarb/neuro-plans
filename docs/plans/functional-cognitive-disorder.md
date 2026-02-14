@@ -279,15 +279,15 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| FCD diagnostic criteria and clinical features | Expert Consensus | [Ball HA et al. Brain 2020;143:2895-2903](https://pubmed.ncbi.nlm.nih.gov/33011770/) |
-| FCD prevalence and clinical characterization in memory clinics | Class II | [Pennington C et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272](https://pubmed.ncbi.nlm.nih.gov/25511789/) |
-| Neuropsychological profile differentiation: FCD vs MCI vs early AD | Class II | [Stone J et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272](https://pubmed.ncbi.nlm.nih.gov/25511789/) |
+| FCD diagnostic criteria and clinical features | Expert Consensus | [Ball HA et al. Brain 2020;143:2895-2903](https://pubmed.ncbi.nlm.nih.gov/32791521/) |
+| FCD prevalence and clinical characterization in memory clinics | Class II | Pennington C et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272 |
+| Neuropsychological profile differentiation: FCD vs MCI vs early AD | Class II | Stone J et al. J Neurol Neurosurg Psychiatry 2015;86:1264-1272 |
 | CBT for health anxiety and functional somatic symptoms (applicable to FCD) | Class I (RCT) | [Tyrer P et al. Lancet 2014;383:219-225](https://pubmed.ncbi.nlm.nih.gov/24139977/) |
-| Attention-memory model of functional cognitive symptoms | Expert Consensus | [Teodoro T et al. Neurol Clin 2023;41:703-717](https://pubmed.ncbi.nlm.nih.gov/37775206/) |
-| FND including functional cognitive symptoms -- comprehensive review | Expert Consensus | [Perez DL et al. Lancet Neurol 2021;20:973-985](https://pubmed.ncbi.nlm.nih.gov/34687636/) |
+| Attention-memory model of functional cognitive symptoms | Expert Consensus | Teodoro T et al. Neurol Clin 2023;41:703-717 |
+| FND including functional cognitive symptoms -- comprehensive review | Expert Consensus | Perez DL et al. Lancet Neurol 2021;20:973-985 |
 | Subjective cognitive decline framework and biomarker differentiation | Class II | [Jessen F et al. Alzheimers Dement 2014;10:844-852](https://pubmed.ncbi.nlm.nih.gov/24798886/) |
 | CSF and amyloid PET biomarkers to exclude Alzheimer pathology | Class I | [Jack CR et al. Alzheimers Dement 2018;14:535-562](https://pubmed.ncbi.nlm.nih.gov/29653606/) |
-| Metacognitive therapy for health anxiety and worry (applicable to FCD) | Class I (RCT) | [Wells A et al. J Consult Clin Psychol 2015;83:629-639](https://pubmed.ncbi.nlm.nih.gov/25495361/) |
+| Metacognitive therapy for health anxiety and worry (applicable to FCD) | Class I (RCT) | Wells A et al. J Consult Clin Psychol 2015;83:629-639 |
 | Sleep disruption and cognitive performance in healthy adults | Class II | [Lim J, Dinges DF. Ann NY Acad Sci 2008;1129:305-322](https://pubmed.ncbi.nlm.nih.gov/18591490/) |
 | Cholinesterase inhibitors not indicated for subjective cognitive complaints without objective impairment | Expert Consensus | [Petersen RC et al. Neurology 2018;90:126-135](https://pubmed.ncbi.nlm.nih.gov/29282327/) |
 | FND diagnosis communication -- best practices | Expert Consensus | Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621 |

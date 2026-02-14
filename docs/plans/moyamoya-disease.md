@@ -249,12 +249,12 @@ SECTION B: REFERENCE (Expand as Needed)
 | STA-MCA bypass effective in reducing stroke risk in adult moyamoya | Class II evidence (prospective cohort) | [Miyamoto et al. Stroke 2014 (JAM Trial)](https://pubmed.ncbi.nlm.nih.gov/24803589/) |
 | RNF213 as susceptibility gene for moyamoya disease | Class II evidence (GWAS) | [Kamada et al. J Hum Genet 2011](https://pubmed.ncbi.nlm.nih.gov/21048783/) |
 | Suzuki staging system for moyamoya angiographic progression | Class III evidence (descriptive) | [Suzuki & Takaku. Arch Neurol 1969](https://pubmed.ncbi.nlm.nih.gov/5775283/) |
-| Direct bypass superior to indirect in adults; combined approach recommended | Class II evidence (systematic review) | [Jeon et al. J Neurosurg 2018](https://pubmed.ncbi.nlm.nih.gov/28862543/) |
+| Direct bypass superior to indirect in adults; combined approach recommended | Class II evidence (systematic review) | Jeon et al. J Neurosurg 2018 |
 | Hemorrhagic moyamoya management: surgical revascularization reduces rebleeding | Class I evidence (RCT) | [Miyamoto et al. Stroke 2014 (JAM Trial)](https://pubmed.ncbi.nlm.nih.gov/24803589/) |
 | Hyperventilation avoidance critical in moyamoya (cerebrovascular reactivity impaired) | Expert consensus; physiologic studies | Expert consensus; cerebrovascular physiology literature |
 | Dehydration is major stroke trigger in moyamoya; hydration maintenance essential | Class III evidence; case series | [Kim. J Korean Neurosurg Soc 2016](https://pubmed.ncbi.nlm.nih.gov/26962416/) |
-| Cerebrovascular reserve testing (acetazolamide SPECT/PET) predicts surgical benefit | Class II evidence | [Kuroda et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11524479/) |
-| Family screening recommended for first-degree relatives; 10-15% familial incidence | Class III evidence; cohort studies | [Baba et al. J Neurosurg 2008](https://pubmed.ncbi.nlm.nih.gov/18826346/) |
+| Cerebrovascular reserve testing (acetazolamide SPECT/PET) predicts surgical benefit | Class II evidence | Kuroda et al. Neurology 2001 |
+| Family screening recommended for first-degree relatives; 10-15% familial incidence | Class III evidence; cohort studies | Baba et al. J Neurosurg 2008 |
 
 ---
 

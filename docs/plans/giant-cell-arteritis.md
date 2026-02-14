@@ -269,13 +269,13 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | ACR 1990 classification criteria for GCA | Expert Consensus | [Hunder GG et al. Arthritis Rheum 1990;33:1122-1128](https://pubmed.ncbi.nlm.nih.gov/2202311/) |
-| ACR/EULAR 2022 classification criteria for GCA | Expert Consensus | Ponte C et al. Ann Rheum Dis 2022;81:1647-1653 |
+| ACR/EULAR 2022 classification criteria for GCA | Expert Consensus | [Ponte C et al. Ann Rheum Dis 2022;81:1647-1653](https://pubmed.ncbi.nlm.nih.gov/36351706/) |
 | GiACTA trial: tocilizumab for GCA (FDA approval) | Class I (RCT) | [Stone JH et al. N Engl J Med 2017;377:317-328](https://pubmed.ncbi.nlm.nih.gov/28745999/) |
 | Temporal artery ultrasound halo sign (TABUL study) | Class II | [Luqmani R et al. Health Technol Assess 2016;20:1-238](https://pubmed.ncbi.nlm.nih.gov/27925577/) |
 | Fast-track pathway for GCA diagnosis reduces vision loss | Class III | Diamantopoulos AP et al. Ann Rheum Dis 2016;75:1961-1964 |
-| IV methylprednisolone for vision-threatening GCA | Class III, Expert Consensus | Hayreh SS et al. Ophthalmology 2002;109:1757-1765 |
+| IV methylprednisolone for vision-threatening GCA | Class III, Expert Consensus | [Hayreh SS et al. Ophthalmology 2002;109:1757-1765](https://pubmed.ncbi.nlm.nih.gov/12359587/) |
 | Low-dose aspirin reduces ischemic complications in GCA | Class III | [Nesher G et al. Arthritis Rheum 2004;50:1332-1337](https://pubmed.ncbi.nlm.nih.gov/15077317/) |
-| Biopsy sensitivity: unilateral ~85%, bilateral ~90% | Class II | Breuer GS et al. Isr Med Assoc J 2013;15:756-760 |
+| Biopsy sensitivity: unilateral ~85%, bilateral ~90% | Class II | [Breuer GS et al. Isr Med Assoc J 2013;15:756-760](https://pubmed.ncbi.nlm.nih.gov/23882888/) |
 | Biopsy remains positive for 2-6 weeks after starting steroids | Class III | [Achkar AA et al. Ann Intern Med 1994;120:987-992](https://pubmed.ncbi.nlm.nih.gov/8185147/) |
 | GCA relapse rate on steroid taper (~50%) | Class II | Martinez-Lado L et al. Semin Arthritis Rheum 2011;41:252-263 |
 | ESR normal in ~4-10% of biopsy-proven GCA | Class III | Parikh M et al. Clin Exp Rheumatol 2006;24(2 Suppl 41):S35-40 |
@@ -284,7 +284,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Tocilizumab suppresses ESR/CRP; cannot use for monitoring | Class II | [Stone JH et al. N Engl J Med 2017](https://pubmed.ncbi.nlm.nih.gov/28745999/) |
 | Methotrexate as steroid-sparing in GCA (mixed evidence) | Class I (3 RCTs) | [Mahr AD et al. Arthritis Rheum 2007;56:2789-2797](https://pubmed.ncbi.nlm.nih.gov/17665429/) |
 | FDG-PET for large-vessel GCA diagnosis and monitoring | Class II | [Dejaco C et al. Ann Rheum Dis 2018;77:636-643](https://pubmed.ncbi.nlm.nih.gov/29358285/) |
-| BSR/BHPR guidelines for management of GCA | Expert Consensus | Mackie SL et al. Rheumatology 2020;59:e1-e23 |
+| BSR/BHPR guidelines for management of GCA | Expert Consensus | [Mackie SL et al. Rheumatology 2020;59:e1-e23](https://pubmed.ncbi.nlm.nih.gov/33026077/) |
 
 ---
 

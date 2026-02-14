@@ -255,12 +255,12 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Armstrong criteria for corticobasal degeneration and corticobasal syndrome diagnosis | Consensus | [Armstrong MJ et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23359374/) |
-| CBS may be caused by multiple pathologies; ~25% have AD pathology | Class IIa, Level B | [Ling H et al. Brain 2010](https://pubmed.ncbi.nlm.nih.gov/20805098/) |
-| Levodopa trial recommended; poor response expected but partial benefit possible | Class IIa, Level C | [Kompoliti K et al. Mov Disord 1998](https://pubmed.ncbi.nlm.nih.gov/9539350/) |
-| Clonazepam effective for cortical myoclonus in CBS | Class IIa, Level C | [Caviness JN. Mov Disord 2003](https://pubmed.ncbi.nlm.nih.gov/14639666/) |
-| Botulinum toxin for focal dystonia in CBS | Class IIa, Level C | [Vanek ZF, Jankovic J. Mov Disord 2001](https://pubmed.ncbi.nlm.nih.gov/11748736/) |
-| FDG-PET shows asymmetric frontoparietal hypometabolism in CBS | Class IIa, Level B | [Pardini M et al. Eur J Nucl Med Mol Imaging 2019](https://pubmed.ncbi.nlm.nih.gov/30456496/) |
-| Amyloid PET differentiates AD-CBS from non-AD CBS | Class IIa, Level B | [Sha SJ et al. Neurology 2015](https://pubmed.ncbi.nlm.nih.gov/25568296/) |
+| CBS may be caused by multiple pathologies; ~25% have AD pathology | Class IIa, Level B | [Ling H et al. Brain 2010](https://pubmed.ncbi.nlm.nih.gov/20584946/) |
+| Levodopa trial recommended; poor response expected but partial benefit possible | Class IIa, Level C | [Kompoliti K et al. Mov Disord 1998](https://pubmed.ncbi.nlm.nih.gov/9613740/) |
+| Clonazepam effective for cortical myoclonus in CBS | Class IIa, Level C | [Caviness JN. Mov Disord 2003](https://pubmed.ncbi.nlm.nih.gov/14534920/) |
+| Botulinum toxin for focal dystonia in CBS | Class IIa, Level C | [Vanek ZF, Jankovic J. Mov Disord 2001](https://pubmed.ncbi.nlm.nih.gov/11295777/) |
+| FDG-PET shows asymmetric frontoparietal hypometabolism in CBS | Class IIa, Level B | [Pardini M et al. Eur J Nucl Med Mol Imaging 2019](https://pubmed.ncbi.nlm.nih.gov/30554257/) |
+| Amyloid PET differentiates AD-CBS from non-AD CBS | Class IIa, Level B | Sha SJ et al. Neurology 2015 |
 | Multidisciplinary care improves quality of life in atypical parkinsonian syndromes | Class IIa, Level C | Expert consensus; CurePSP guidelines |
 
 ---

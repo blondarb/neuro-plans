@@ -298,12 +298,12 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Maximal safe resection improves overall survival in GBM | Class II, Level B | Lacroix et al. J Neurosurg 2001; Sanai et al. J Neurosurg 2011 |
-| 5-ALA fluorescence-guided surgery improves extent of resection | Class I, Level A | Stummer et al. Lancet Oncol 2006 |
+| 5-ALA fluorescence-guided surgery improves extent of resection | Class I, Level A | [Stummer et al. Lancet Oncol 2006](https://pubmed.ncbi.nlm.nih.gov/16648043/) |
 | Concurrent temozolomide + radiation (Stupp protocol) standard of care for newly diagnosed GBM | Class I, Level A | Stupp et al. NEJM 2005; Stupp et al. Lancet Oncol 2009 (5-year data) |
-| MGMT promoter methylation predicts temozolomide response and overall survival | Class I, Level A | Hegi et al. NEJM 2005 |
-| Tumor Treating Fields (TTFields) with adjuvant temozolomide improves OS in newly diagnosed GBM | Class I, Level A | Stupp et al. JAMA 2017 (EF-14 trial) |
+| MGMT promoter methylation predicts temozolomide response and overall survival | Class I, Level A | [Hegi et al. NEJM 2005](https://pubmed.ncbi.nlm.nih.gov/15758010/) |
+| Tumor Treating Fields (TTFields) with adjuvant temozolomide improves OS in newly diagnosed GBM | Class I, Level A | [Stupp et al. JAMA 2017 (EF-14 trial)](https://pubmed.ncbi.nlm.nih.gov/29260225/) |
 | Hypofractionated RT (40 Gy/15 fractions) + temozolomide beneficial in elderly GBM | Class I, Level A | Perry et al. NEJM 2017 |
-| Temozolomide alone vs. RT alone in elderly GBM; treatment guided by MGMT status | Class I, Level A | Wick et al. Lancet Oncol 2012 (NOA-08); Malmstrom et al. Lancet Oncol 2012 (Nordic trial) |
+| Temozolomide alone vs. RT alone in elderly GBM; treatment guided by MGMT status | Class I, Level A | Wick et al. Lancet Oncol 2012 ([NOA-08](https://pubmed.ncbi.nlm.nih.gov/22578793/)); Malmstrom et al. Lancet Oncol 2012 (Nordic trial) |
 | Bevacizumab for recurrent GBM: PFS benefit, no OS benefit | Class I, Level B | Friedman et al. J Clin Oncol 2009; Wick et al. Lancet Oncol 2017 (EORTC 26101) |
 | Bevacizumab in newly diagnosed GBM: PFS benefit, no OS benefit | Class I, Level A | Chinot et al. NEJM 2014 (AVAglio); Gilbert et al. NEJM 2014 (RTOG 0825) |
 | WHO 2021 classification: IDH-wildtype glioblastoma defined by molecular criteria | Expert Consensus | Louis et al. Neuro-Oncology 2021 (WHO CNS5) |
@@ -313,7 +313,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | DVT prophylaxis safe in brain tumor patients | Class II, Level B | Perry et al. Lancet 2010 (PRODIGE trial) |
 | Dexamethasone for vasogenic edema; use minimum effective dose and taper | Class II, Level B | Ryken et al. J Neurooncol 2010 (CNS systematic review) |
 | Pseudoprogression occurs in 20-30% of GBM patients post-chemoradiation, especially MGMT methylated | Class II, Level B | Brandsma et al. Lancet Oncol 2008; RANO criteria 2010 |
-| RANO response criteria for glioblastoma clinical assessment | Expert Consensus | Wen et al. J Clin Oncol 2010 |
+| RANO response criteria for glioblastoma clinical assessment | Expert Consensus | [Wen et al. J Clin Oncol 2010](https://pubmed.ncbi.nlm.nih.gov/20231676/) |
 | Lomustine for recurrent GBM; combination with bevacizumab PFS benefit | Class I, Level B | Wick et al. Lancet Oncol 2017 (EORTC 26101) |
 | PJP prophylaxis recommended during concurrent chemoradiation | Class II, Level C | Expert consensus; NCCN guidelines |
 | Supratotal resection may improve outcomes beyond contrast-enhancing boundary | Class II, Level C | Li et al. World Neurosurg 2016; emerging evidence |

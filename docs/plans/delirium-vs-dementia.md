@@ -262,7 +262,7 @@ tags:
 | Benzodiazepines are a major risk factor for delirium and should be avoided except for alcohol withdrawal | Class I, Level B | [Clegg A, Young JB. Age Ageing 2011](https://pubmed.ncbi.nlm.nih.gov/21169280/) |
 | Dexmedetomidine reduces delirium incidence in ICU compared to benzodiazepine sedation | Class I, Level A | [Riker RR et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19188334/) |
 | Delirium superimposed on dementia occurs in up to 65% of hospitalized dementia patients | Class IIa, Level B | [Fick DM et al. J Am Geriatr Soc 2002](https://pubmed.ncbi.nlm.nih.gov/12366629/) |
-| APA Practice Guidelines for Delirium | Guideline | [American Psychiatric Association 1999 (updated 2010)](https://pubmed.ncbi.nlm.nih.gov/10627500/) |
+| APA Practice Guidelines for Delirium | Guideline | American Psychiatric Association 1999 (updated 2010) |
 | Thiamine 500 mg IV TID for suspected Wernicke encephalopathy | Class IIa, Level C | [Galvin R et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642790/) |
 | MoCA is preferred over MMSE for cognitive screening; more sensitive for MCI and vascular cognitive impairment | Class I, Level B | [Nasreddine ZS et al. J Am Geriatr Soc 2005](https://pubmed.ncbi.nlm.nih.gov/15817019/) |
 

@@ -255,11 +255,11 @@ SECTION B: REFERENCE (Expand as Needed)
 | High-intensity statin with LDL <70 for secondary stroke prevention | Class I, Level A | [Amarenco et al. NEJM 2006 (SPARCL)](https://pubmed.ncbi.nlm.nih.gov/16899775/); [Amarenco et al. NEJM 2020 (TST)](https://pubmed.ncbi.nlm.nih.gov/33053300/) |
 | Apixaban superior to warfarin for stroke prevention in AF | Class I, Level A | [Granger et al. NEJM 2011 (ARISTOTLE)](https://pubmed.ncbi.nlm.nih.gov/21870978/) |
 | BP target <130/80 for secondary stroke prevention | Class I, Level A | [AHA/ASA Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34024117/) |
-| PFO closure for cryptogenic stroke age <60 with moderate-large shunt | Class I, Level A (RCTs) | [Mas et al. NEJM 2017 (CLOSE)](https://pubmed.ncbi.nlm.nih.gov/28902580/); [Søndergaard et al. NEJM 2017 (REDUCE)](https://pubmed.ncbi.nlm.nih.gov/28902580/) |
+| PFO closure for cryptogenic stroke age <60 with moderate-large shunt | Class I, Level A (RCTs) | Mas et al. NEJM 2017 ([CLOSE](https://pubmed.ncbi.nlm.nih.gov/28902593/)); Søndergaard et al. NEJM 2017 ([REDUCE](https://pubmed.ncbi.nlm.nih.gov/28902580/)) |
 | SSRIs improve post-stroke depression and may improve motor recovery | Class I, Level B | [Chollet et al. Lancet Neurol 2011 (FLAME)](https://pubmed.ncbi.nlm.nih.gov/21216670/) |
 | Early mobilization and rehabilitation improve outcomes post-stroke | Class I, Level A | [AHA/ASA Rehab Guidelines 2016](https://pubmed.ncbi.nlm.nih.gov/27145936/) |
 | Implantable loop recorder detects 30% AF at 3 years in cryptogenic stroke | Class I, Level B | [Sanna et al. NEJM 2014 (CRYSTAL-AF)](https://pubmed.ncbi.nlm.nih.gov/24963567/) |
-| Sleep apnea highly prevalent post-stroke; CPAP may improve outcomes | Class II, Level B | [Brown et al. Stroke 2013](https://pubmed.ncbi.nlm.nih.gov/24203845/) |
+| Sleep apnea highly prevalent post-stroke; CPAP may improve outcomes | Class II, Level B | Brown et al. Stroke 2013 |
 | Mediterranean diet reduces recurrent cardiovascular events | Class I, Level A | [Estruch et al. NEJM 2018 (PREDIMED)](https://pubmed.ncbi.nlm.nih.gov/29897866/) |
 
 ---

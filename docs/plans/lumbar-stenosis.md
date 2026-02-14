@@ -251,16 +251,16 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MRI is the imaging modality of choice for lumbar spinal stenosis | Class I, Level B | [Defined MRI grading improves correlation with clinical severity](https://pubmed.ncbi.nlm.nih.gov/20881510/) |
+| MRI is the imaging modality of choice for lumbar spinal stenosis | Class I, Level B | Defined MRI grading improves correlation with clinical severity |
 | Physical therapy with flexion-based exercises improves walking distance and function | Class I, Level A | [Delitto A et al. Ann Intern Med 2015](https://pubmed.ncbi.nlm.nih.gov/25844995/) |
 | Epidural steroid injections provide short-term (2-6 week) pain relief for neurogenic claudication | Class IIa, Level B | [Friedly JL et al. NEJM 2014](https://pubmed.ncbi.nlm.nih.gov/24988555/) |
 | Surgical decompression is superior to continued conservative treatment for moderate-severe stenosis after 6+ months | Class I, Level A | [Weinstein JN et al. NEJM 2008 (SPORT trial)](https://pubmed.ncbi.nlm.nih.gov/18287602/) |
 | Gabapentin reduces radicular pain in spinal stenosis | Class IIa, Level B | [Yaksi A et al. Spine 2007](https://pubmed.ncbi.nlm.nih.gov/17450066/) |
 | Walking capacity measured by self-paced walking test is a valid outcome measure for lumbar stenosis | Class IIa, Level B | [Tomkins-Lane C et al. Spine 2012](https://pubmed.ncbi.nlm.nih.gov/22405613/) |
 | Fusion is recommended when spondylolisthesis accompanies stenosis requiring decompression | Class IIa, Level B | [Ghogawala Z et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27074067/) |
-| NASS Clinical Guidelines for Lumbar Spinal Stenosis | Guideline | [NASS Evidence-Based Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/21488246/) |
+| NASS Clinical Guidelines for Lumbar Spinal Stenosis | Guideline | NASS Evidence-Based Guidelines 2011 |
 | Cauda equina syndrome requires surgical decompression within 24-48 hours for optimal outcomes | Class I, Level B | [Ahn UM et al. Spine 2000](https://pubmed.ncbi.nlm.nih.gov/10851107/) |
-| Interspinous spacer devices provide non-inferior results to laminectomy for mild-moderate stenosis | Class IIb, Level B | [Patel VV et al. Spine 2015](https://pubmed.ncbi.nlm.nih.gov/26630435/) |
+| Interspinous spacer devices provide non-inferior results to laminectomy for mild-moderate stenosis | Class IIb, Level B | [Patel VV et al. Spine 2015](https://pubmed.ncbi.nlm.nih.gov/25996011/) |
 
 ---
 

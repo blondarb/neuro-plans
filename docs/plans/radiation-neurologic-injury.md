@@ -301,22 +301,22 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Bevacizumab effective for radiation necrosis; reduces edema and allows steroid taper | Class II, Level B | [Levin et al. Int J Radiat Oncol Biol Phys 2011](https://pubmed.ncbi.nlm.nih.gov/20675073/); [Tye et al. J Neurooncol 2014](https://pubmed.ncbi.nlm.nih.gov/24718705/) |
-| Bevacizumab for radiation necrosis: randomized placebo-controlled trial demonstrating radiographic response | Class I, Level B | [Levin et al. Int J Radiat Oncol Biol Phys 2011](https://pubmed.ncbi.nlm.nih.gov/20675073/) |
-| MR perfusion (rCBV) differentiates radiation necrosis from tumor recurrence | Class II, Level B | [Barajas et al. AJNR 2009](https://pubmed.ncbi.nlm.nih.gov/19147716/); [Patel et al. Radiology 2017](https://pubmed.ncbi.nlm.nih.gov/28873048/) |
-| MR spectroscopy differentiates radiation necrosis from tumor recurrence (elevated lipid/lactate in necrosis; elevated choline in recurrence) | Class II, Level B | [Weybright et al. AJNR 2005](https://pubmed.ncbi.nlm.nih.gov/15661712/) |
-| FET-PET superior to FDG-PET for distinguishing radiation necrosis from tumor recurrence | Class II, Level B | [Galldiks et al. Neuro-Oncology 2015](https://pubmed.ncbi.nlm.nih.gov/25543126/) |
+| Bevacizumab effective for radiation necrosis; reduces edema and allows steroid taper | Class II, Level B | [Levin et al. Int J Radiat Oncol Biol Phys 2011](https://pubmed.ncbi.nlm.nih.gov/20399573/); [Tye et al. J Neurooncol 2014](https://pubmed.ncbi.nlm.nih.gov/24504500/) |
+| Bevacizumab for radiation necrosis: randomized placebo-controlled trial demonstrating radiographic response | Class I, Level B | [Levin et al. Int J Radiat Oncol Biol Phys 2011](https://pubmed.ncbi.nlm.nih.gov/20399573/) |
+| MR perfusion (rCBV) differentiates radiation necrosis from tumor recurrence | Class II, Level B | [Barajas et al. AJNR 2009](https://pubmed.ncbi.nlm.nih.gov/19022867/); [Patel et al. Radiology 2017](https://pubmed.ncbi.nlm.nih.gov/28498794/) |
+| MR spectroscopy differentiates radiation necrosis from tumor recurrence (elevated lipid/lactate in necrosis; elevated choline in recurrence) | Class II, Level B | [Weybright et al. AJNR 2005](https://pubmed.ncbi.nlm.nih.gov/16304000/) |
+| FET-PET superior to FDG-PET for distinguishing radiation necrosis from tumor recurrence | Class II, Level B | [Galldiks et al. Neuro-Oncology 2015](https://pubmed.ncbi.nlm.nih.gov/26130743/) |
 | Memantine reduces cognitive decline during whole brain radiation therapy | Class II, Level B | [Brown et al. Neuro-Oncology 2013 (RTOG 0614)](https://pubmed.ncbi.nlm.nih.gov/23956241/) |
-| Hippocampal avoidance during WBRT preserves memory | Class I, Level A | [Brown et al. J Clin Oncol 2020 (NRG CC001)](https://pubmed.ncbi.nlm.nih.gov/31986084/) |
-| Pentoxifylline and vitamin E combination for late radiation-induced fibrosis | Class III, Level C | [Delanian et al. Radiother Oncol 2004](https://pubmed.ncbi.nlm.nih.gov/15363621/) |
-| Radiation necrosis pathophysiology: VEGF-mediated vascular permeability | Class III, Level C | [Wong et al. Nat Rev Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25896085/) |
-| EMG myokymic discharges distinguish radiation plexopathy from tumor infiltration | Class II, Level B | [Harper et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2538774/) |
-| Radiation-induced hypothalamic-pituitary dysfunction: long-term endocrine monitoring guidelines | Class II, Level B | [Darzy and Shalet. Endocr Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19196979/) |
-| LITT for radiation necrosis: safe and effective minimally invasive option | Class III, Level C | [Rao et al. Neurosurgery 2014](https://pubmed.ncbi.nlm.nih.gov/24335782/) |
-| Radiation myelopathy: clinical features, pathophysiology, and management | Class III, Level C | [Schultheiss et al. Int J Radiat Oncol Biol Phys 1995](https://pubmed.ncbi.nlm.nih.gov/7713792/) |
+| Hippocampal avoidance during WBRT preserves memory | Class I, Level A | [Brown et al. J Clin Oncol 2020 (NRG CC001)](https://pubmed.ncbi.nlm.nih.gov/32783673/) |
+| Pentoxifylline and vitamin E combination for late radiation-induced fibrosis | Class III, Level C | [Delanian et al. Radiother Oncol 2004](https://pubmed.ncbi.nlm.nih.gov/15542158/) |
+| Radiation necrosis pathophysiology: VEGF-mediated vascular permeability | Class III, Level C | [Wong et al. Nat Rev Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/26215627/) |
+| EMG myokymic discharges distinguish radiation plexopathy from tumor infiltration | Class II, Level B | [Harper et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2538777/) |
+| Radiation-induced hypothalamic-pituitary dysfunction: long-term endocrine monitoring guidelines | Class II, Level B | [Darzy and Shalet. Endocr Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19293601/) |
+| LITT for radiation necrosis: safe and effective minimally invasive option | Class III, Level C | [Rao et al. Neurosurgery 2014](https://pubmed.ncbi.nlm.nih.gov/24584138/) |
+| Radiation myelopathy: clinical features, pathophysiology, and management | Class III, Level C | [Schultheiss et al. Int J Radiat Oncol Biol Phys 1995](https://pubmed.ncbi.nlm.nih.gov/7607963/) |
 | Prophylactic AEDs NOT recommended in brain tumor patients without seizures | Class I, Level A | [Glantz et al. Neurology 2000 (AAN Practice Parameter)](https://pubmed.ncbi.nlm.nih.gov/11087787/) |
-| Levetiracetam preferred AED in neuro-oncology patients (no CYP induction) | Class II, Level B | [Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/19768384/) |
-| Radiation tolerance doses for CNS structures; dose-volume constraints | Expert Consensus | [Marks et al. Int J Radiat Oncol Biol Phys 2010 (QUANTEC)](https://pubmed.ncbi.nlm.nih.gov/20171515/) |
+| Levetiracetam preferred AED in neuro-oncology patients (no CYP induction) | Class II, Level B | Rosati et al. J Neurooncol 2010 |
+| Radiation tolerance doses for CNS structures; dose-volume constraints | Expert Consensus | [Marks et al. Int J Radiat Oncol Biol Phys 2010 (QUANTEC)](https://pubmed.ncbi.nlm.nih.gov/20457357/) |
 
 ---
 

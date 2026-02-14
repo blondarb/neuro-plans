@@ -617,8 +617,8 @@ SECTION B: REFERENCE (Expand as Needed)
 | Benzodiazepines first-line for SE | Class I, Level A | [NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/); [AES Guidelines 2016](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
 | Lorazepam preferred IV benzodiazepine | Class I, Level A | [Alldredge et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11547716/) |
 | IM midazolam non-inferior to IV lorazepam | Class I, Level A | [RAMPART Trial, Silbergleit et al. NEJM 2012](https://pubmed.ncbi.nlm.nih.gov/22335736/) |
-| Second-line agents (LEV, VPA, fPHT) equivalent efficacy | Class I, Level A | [ESETT Trial, Kapur et al. NEJM 2019;381:2103-2113](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
-| Levetiracetam 60 mg/kg dosing | Class I, Level A | [ESETT Trial](https://pubmed.ncbi.nlm.nih.gov/31774955/) - higher than traditional 20-40 mg/kg |
+| Second-line agents (LEV, VPA, fPHT) equivalent efficacy | Class I, Level A | [ESETT](https://pubmed.ncbi.nlm.nih.gov/31774955/) Trial, Kapur et al. NEJM 2019;381:2103-2113 |
+| Levetiracetam 60 mg/kg dosing | Class I, Level A | [ESETT](https://pubmed.ncbi.nlm.nih.gov/31774955/) Trial - higher than traditional 20-40 mg/kg |
 | Levetiracetam 40 mg/kg may be adequate | Class II, Level B | Meta-analysis, pharmacokinetic modeling 2023-2024 |
 | cEEG monitoring in RSE | Class I, Level B | [NCS Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22528274/) |
 | Burst suppression target for RSE | Class IIb, Level C | Expert consensus |

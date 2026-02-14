@@ -330,10 +330,10 @@ SECTION B: REFERENCE (Expand as Needed)
 | Combination of HD-MTX with rituximab improves outcomes in PCNSL (IELSG #32); MATRix regimen (MTX, Ara-C, Thiotepa, Rituximab) is effective induction for PCNSL | Class I, Level A | [Ferreri et al. Lancet Haematol 2016 (IELSG #32)](https://pubmed.ncbi.nlm.nih.gov/27132696/) |
 | R-MPV regimen (Rituximab, Methotrexate, Procarbazine, Vincristine) followed by reduced-dose WBRT | Class II, Level B | [Morris et al. J Clin Oncol 2013](https://pubmed.ncbi.nlm.nih.gov/24101038/) |
 | Reduced-dose WBRT (23.4 Gy) after CR to MTX-based chemotherapy preserves neurocognitive function (RTOG 1114) | Class II, Level B | [Thiel et al. Lancet Haematol 2022 (G-PCNSL-SG-1)](https://pubmed.ncbi.nlm.nih.gov/34732322/) |
-| WBRT omission with ASCT consolidation is noninferior to WBRT in younger patients | Class I, Level B | [Houillier et al. Lancet Haematol 2019 (PRECIS)](https://pubmed.ncbi.nlm.nih.gov/31672324/) |
-| HDC-ASCT is effective consolidation for PCNSL with thiotepa-based conditioning | Class II, Level B | [Illerhaus et al. Blood 2016](https://pubmed.ncbi.nlm.nih.gov/27207798/); [Omuro et al. Blood 2015](https://pubmed.ncbi.nlm.nih.gov/25568347/) |
+| WBRT omission with ASCT consolidation is noninferior to WBRT in younger patients | Class I, Level B | Houillier et al. Lancet Haematol 2019 (PRECIS) |
+| HDC-ASCT is effective consolidation for PCNSL with thiotepa-based conditioning | Class II, Level B | [Illerhaus et al. Blood 2016](https://pubmed.ncbi.nlm.nih.gov/26834241/); [Omuro et al. Blood 2015](https://pubmed.ncbi.nlm.nih.gov/25568347/) |
 | Ibrutinib has CNS activity in relapsed/refractory PCNSL | Class II, Level B | [Grommes et al. Cancer Discov 2017](https://pubmed.ncbi.nlm.nih.gov/28619981/) |
-| Lenalidomide plus rituximab (R2) active in relapsed PCNSL | Class II, Level C | [Ghesquieres et al. Eur J Cancer 2019](https://pubmed.ncbi.nlm.nih.gov/31082693/) |
+| Lenalidomide plus rituximab (R2) active in relapsed PCNSL | Class II, Level C | Ghesquieres et al. Eur J Cancer 2019 |
 | Corticosteroids cause vanishing tumor in PCNSL; avoid before biopsy | Class III, Level C | [Kuhlmann et al. Acta Neuropathol 2008](https://pubmed.ncbi.nlm.nih.gov/18175128/); Expert consensus |
 | MYD88 L265P mutation present in ~70-80% of PCNSL; diagnostic and therapeutic target | Class II, Level B | [Gonzalez-Aguilar et al. Clin Cancer Res 2012](https://pubmed.ncbi.nlm.nih.gov/22837180/) |
 | IELSG prognostic scoring system for PCNSL (age, ECOG, LDH, CSF protein, deep brain involvement) | Class II, Level B | [Ferreri et al. J Clin Oncol 2003](https://pubmed.ncbi.nlm.nih.gov/12805341/) |
@@ -342,12 +342,12 @@ SECTION B: REFERENCE (Expand as Needed)
 | EBV CSF PCR highly specific for HIV-associated PCNSL | Class II, Level B | [Cingolani et al. J Clin Oncol 2000](https://pubmed.ncbi.nlm.nih.gov/11013271/) |
 | Rituximab requires HBV screening before administration (fatal reactivation risk) | Class I, Level A | [FDA Black Box Warning]; [Evens et al. Blood 2011](https://pubmed.ncbi.nlm.nih.gov/21653327/) |
 | Prophylactic AEDs NOT recommended in brain tumor patients without seizures | Class I, Level A | [Glantz et al. Neurology 2000 (AAN Practice Parameter)](https://pubmed.ncbi.nlm.nih.gov/10993896/) |
-| Levetiracetam preferred AED in CNS tumor patients (no CYP enzyme induction) | Class II, Level B | [Rosati et al. J Neurooncol 2010](https://pubmed.ncbi.nlm.nih.gov/21438297/) |
-| Pemetrexed active in relapsed PCNSL | Class II, Level C | [Raizer et al. J Clin Oncol 2012](https://pubmed.ncbi.nlm.nih.gov/23082735/) |
+| Levetiracetam preferred AED in CNS tumor patients (no CYP enzyme induction) | Class II, Level B | Rosati et al. J Neurooncol 2010 |
+| Pemetrexed active in relapsed PCNSL | Class II, Level C | Raizer et al. J Clin Oncol 2012 |
 | CSF IL-10/IL-6 ratio >1.0 supports CNS lymphoma diagnosis | Class II, Level B | [Rubenstein et al. Blood 2013](https://pubmed.ncbi.nlm.nih.gov/23287856/) |
-| Temozolomide has activity in relapsed PCNSL | Class II, Level C | [Reni et al. J Clin Oncol 2007](https://pubmed.ncbi.nlm.nih.gov/17878489/) |
-| Thallium SPECT differentiates PCNSL from toxoplasmosis in HIV patients | Class II, Level B | [Antinori et al. J Neurooncol 1999](https://pubmed.ncbi.nlm.nih.gov/10599018/) |
-| Dexamethasone eye drops prevent cytarabine-induced chemical conjunctivitis | Class II, Level B | Expert consensus; [Cerci & Ostronoff J Clin Oncol 2014](https://pubmed.ncbi.nlm.nih.gov/25422493/) |
+| Temozolomide has activity in relapsed PCNSL | Class II, Level C | [Reni et al. J Clin Oncol 2007](https://pubmed.ncbi.nlm.nih.gov/17993246/) |
+| Thallium SPECT differentiates PCNSL from toxoplasmosis in HIV patients | Class II, Level B | Antinori et al. J Neurooncol 1999 |
+| Dexamethasone eye drops prevent cytarabine-induced chemical conjunctivitis | Class II, Level B | Expert consensus; Cerci & Ostronoff J Clin Oncol 2014 |
 | Memorial Sloan Kettering prognostic model for PCNSL (age, KPS) | Class II, Level B | [Abrey et al. J Clin Oncol 2006](https://pubmed.ncbi.nlm.nih.gov/17116938/) |
 
 ---

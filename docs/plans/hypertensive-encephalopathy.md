@@ -290,14 +290,14 @@ tags:
 
 ## Section 8: Evidence & References
 
-1. Vaughan CJ, Delanty N. **Hypertensive emergencies.** *Lancet.* 2000;356(9227):411-417. [PMID: 10972386](https://pubmed.ncbi.nlm.nih.gov/10972386/)
-2. Fugate JE, Rabinstein AA. **Posterior reversible encephalopathy syndrome: clinical and radiological manifestations, pathophysiology, and outstanding questions.** *Lancet Neurol.* 2015;14(9):914-925. [PMID: 26184985](https://pubmed.ncbi.nlm.nih.gov/26184985/)
-3. Whelton PK, Carey RM, Aronow WS, et al. **2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults.** *J Am Coll Cardiol.* 2018;71(19):e127-e248. [PMID: 29146535](https://pubmed.ncbi.nlm.nih.gov/29146535/)
-4. Altman D, Carroli G, Duley L, et al. **Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial: a randomised placebo-controlled trial.** *Lancet.* 2002;359(9321):1877-1890. [PMID: 12057549](https://pubmed.ncbi.nlm.nih.gov/12057549/)
-5. Anderson CS, Heeley E, Huang Y, et al. **Rapid blood-pressure lowering in patients with acute intracerebral hemorrhage.** *N Engl J Med.* 2013;368(25):2355-2365. [PMID: 23713578](https://pubmed.ncbi.nlm.nih.gov/23713578/) *(INTERACT2 — informs BP management thresholds)*
-6. Hobson EV, Craven I, Blank SC. **Posterior reversible encephalopathy syndrome: a truly treatable neurologic illness.** *Perit Dial Int.* 2012;32(6):590-594. [PMID: 23212858](https://pubmed.ncbi.nlm.nih.gov/23212858/)
-7. Hinchey J, Chaves C, Appignani B, et al. **A reversible posterior leukoencephalopathy syndrome.** *N Engl J Med.* 1996;334(8):494-500. [PMID: 8559202](https://pubmed.ncbi.nlm.nih.gov/8559202/) *(Original PRES description)*
-8. Varon J. **Treatment of acute severe hypertension: current and newer agents.** *Drugs.* 2008;68(3):283-297. [PMID: 18257607](https://pubmed.ncbi.nlm.nih.gov/18257607/)
+1. Vaughan CJ, Delanty N. **Hypertensive emergencies.** *Lancet.* 2000;356(9227):411-417. PMID: 10972386
+2. Fugate JE, Rabinstein AA. **Posterior reversible encephalopathy syndrome: clinical and radiological manifestations, pathophysiology, and outstanding questions.** *Lancet Neurol.* 2015;14(9):914-925. PMID: 26184985
+3. Whelton PK, Carey RM, Aronow WS, et al. **2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults.** *J Am Coll Cardiol.* 2018;71(19):e127-e248. PMID: 29146535
+4. Altman D, Carroli G, Duley L, et al. **Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial: a randomised placebo-controlled trial.** *Lancet.* 2002;359(9321):1877-1890. PMID: 12057549
+5. Anderson CS, Heeley E, Huang Y, et al. **Rapid blood-pressure lowering in patients with acute intracerebral hemorrhage.** *N Engl J Med.* 2013;368(25):2355-2365. PMID: 23713578 *(INTERACT2 — informs BP management thresholds)*
+6. Hobson EV, Craven I, Blank SC. **Posterior reversible encephalopathy syndrome: a truly treatable neurologic illness.** *Perit Dial Int.* 2012;32(6):590-594. PMID: 23212858
+7. Hinchey J, Chaves C, Appignani B, et al. **A reversible posterior leukoencephalopathy syndrome.** *N Engl J Med.* 1996;334(8):494-500. PMID: 8559202 *(Original PRES description)*
+8. Varon J. **Treatment of acute severe hypertension: current and newer agents.** *Drugs.* 2008;68(3):283-297. PMID: 18257607
 
 ---
 

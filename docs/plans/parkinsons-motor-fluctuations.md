@@ -235,7 +235,7 @@ tags:
 |----------------|----------------|--------|
 | MDS Evidence-Based Medicine Review of Treatments for Motor Symptoms in PD | Guideline | [Fox SH et al. Mov Disord 2018](https://pubmed.ncbi.nlm.nih.gov/29570866/) |
 | Levodopa fractionation (shorter intervals) is first approach to wearing off | Class I, Level B | [Fox SH et al. Mov Disord 2018](https://pubmed.ncbi.nlm.nih.gov/29570866/) |
-| Entacapone as adjunct to levodopa reduces off time by ~1 hour/day | Class I, Level A | [Stocchi F et al. Mov Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15372588/) |
+| Entacapone as adjunct to levodopa reduces off time by ~1 hour/day | Class I, Level A | [Stocchi F et al. Mov Disord 2004](https://pubmed.ncbi.nlm.nih.gov/15326260/) |
 | Amantadine extended-release (Gocovri) reduces levodopa-induced dyskinesia | Class I, Level A | [Pahwa R et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29114728/) |
 | STN-DBS improves motor fluctuations, off time, and quality of life in advanced PD | Class I, Level A | [Deuschl G et al. NEJM 2006](https://pubmed.ncbi.nlm.nih.gov/16943402/) |
 | Apomorphine SC injection provides rapid rescue from off episodes (onset 10-20 min) | Class I, Level A | [Olanow CW et al. Lancet Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19938101/) |

@@ -276,17 +276,17 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| High-dose IV thiamine (500 mg TID) for WE treatment and prevention of Korsakoff syndrome | Class II, Level B | [Galvin R et al. Cochrane Database Syst Rev 2010](https://pubmed.ncbi.nlm.nih.gov/20614462/); [Thomson AD et al. Alcohol Alcohol 2002](https://pubmed.ncbi.nlm.nih.gov/12414541/) |
+| High-dose IV thiamine (500 mg TID) for WE treatment and prevention of Korsakoff syndrome | Class II, Level B | Galvin R et al. Cochrane Database Syst Rev 2010; [Thomson AD et al. Alcohol Alcohol 2002](https://pubmed.ncbi.nlm.nih.gov/12414541/) |
 | Korsakoff syndrome develops in approximately 80% of untreated or inadequately treated WE cases | Class II, Level B | [Victor M, Adams RD, Collins GH. The Wernicke-Korsakoff Syndrome and Related Neurologic Disorders Due to Alcoholism and Malnutrition. 1989](https://pubmed.ncbi.nlm.nih.gov/2667707/) |
-| MRI findings (mammillary body atrophy, thalamic signal changes) support WKS diagnosis | Class II, Level B | [Zuccoli G et al. AJNR Am J Neuroradiol 2007](https://pubmed.ncbi.nlm.nih.gov/17893203/); [Sullivan EV, Pfefferbaum A. Neuropsychol Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19184444/) |
-| Errorless learning and spaced retrieval techniques improve functional outcomes in Korsakoff syndrome | Class II, Level B | [Oudman E et al. Neuropsychol Rev 2015](https://pubmed.ncbi.nlm.nih.gov/26412231/) |
-| Cholinesterase inhibitors (donepezil) show limited but suggestive benefit in alcohol-related cognitive impairment | Class III, Level C | [Rustembegovic A et al. Med Arh 2003](https://pubmed.ncbi.nlm.nih.gov/14608170/) |
-| Oral thiamine has limited bioavailability in patients with alcohol use disorder; parenteral route preferred | Class II, Level B | [Thomson AD, Marshall EJ. Alcohol Alcohol 2006](https://pubmed.ncbi.nlm.nih.gov/16855004/) |
-| Magnesium is essential cofactor for thiamine pyrophosphokinase; replacement critical for thiamine efficacy | Class II, Level B | [Traviesa DC. Am J Clin Nutr 1974](https://pubmed.ncbi.nlm.nih.gov/4472911/) |
-| Naltrexone and acamprosate reduce alcohol relapse; critical for preventing WKS progression | Class I, Level A | [Jonas DE et al. JAMA 2014](https://pubmed.ncbi.nlm.nih.gov/24825643/) |
-| Neuropsychological profile of Korsakoff syndrome: disproportionate amnesia with relatively preserved IQ and procedural memory | Class II, Level B | [Kopelman MD et al. Neuropsychol Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19430900/) |
-| EFNS guidelines for diagnosis and management of Wernicke encephalopathy | Class II, Level B | [Galvin R et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20236172/) |
-| Recovery from Korsakoff syndrome: approximately 25% show significant improvement with adequate treatment and abstinence | Class II, Level C | [Kopelman MD. J Neurol Neurosurg Psychiatry 1995](https://pubmed.ncbi.nlm.nih.gov/7629519/) |
+| MRI findings (mammillary body atrophy, thalamic signal changes) support WKS diagnosis | Class II, Level B | [Zuccoli G et al. AJNR Am J Neuroradiol 2007](https://pubmed.ncbi.nlm.nih.gov/17698536/); [Sullivan EV, Pfefferbaum A. Neuropsychol Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19466594/) |
+| Errorless learning and spaced retrieval techniques improve functional outcomes in Korsakoff syndrome | Class II, Level B | [Oudman E et al. Neuropsychol Rev 2015](https://pubmed.ncbi.nlm.nih.gov/26047664/) |
+| Cholinesterase inhibitors (donepezil) show limited but suggestive benefit in alcohol-related cognitive impairment | Class III, Level C | [Rustembegovic A et al. Med Arh 2003](https://pubmed.ncbi.nlm.nih.gov/12858653/) |
+| Oral thiamine has limited bioavailability in patients with alcohol use disorder; parenteral route preferred | Class II, Level B | [Thomson AD, Marshall EJ. Alcohol Alcohol 2006](https://pubmed.ncbi.nlm.nih.gov/16384871/) |
+| Magnesium is essential cofactor for thiamine pyrophosphokinase; replacement critical for thiamine efficacy | Class II, Level B | [Traviesa DC. Am J Clin Nutr 1974](https://pubmed.ncbi.nlm.nih.gov/4420329/) |
+| Naltrexone and acamprosate reduce alcohol relapse; critical for preventing WKS progression | Class I, Level A | [Jonas DE et al. JAMA 2014](https://pubmed.ncbi.nlm.nih.gov/25268447/) |
+| Neuropsychological profile of Korsakoff syndrome: disproportionate amnesia with relatively preserved IQ and procedural memory | Class II, Level B | [Kopelman MD et al. Neuropsychol Rev 2009](https://pubmed.ncbi.nlm.nih.gov/19995433/) |
+| EFNS guidelines for diagnosis and management of Wernicke encephalopathy | Class II, Level B | [Galvin R et al. Eur J Neurol 2010](https://pubmed.ncbi.nlm.nih.gov/20642790/) |
+| Recovery from Korsakoff syndrome: approximately 25% show significant improvement with adequate treatment and abstinence | Class II, Level C | [Kopelman MD. J Neurol Neurosurg Psychiatry 1995](https://pubmed.ncbi.nlm.nih.gov/7669156/) |
 
 ---
 

@@ -298,14 +298,14 @@ SECTION B: REFERENCE (Expand as Needed)
 | EAN guideline on CVT | Expert Consensus | [Ferro JM et al. Eur J Neurol 2017;24:1203-1213](https://pubmed.ncbi.nlm.nih.gov/28833980/) |
 | ISCVT (International Study on CVT): largest cohort study | Class II | [Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
 | Anticoagulation safe and beneficial even with hemorrhagic infarction | Class II | Einhaupl K et al. J Neurol Neurosurg Psychiatry 1991;54:396-401 |
-| LMWH preferred over UFH (ISCVT data) | Class III | Coutinho JM et al. Stroke 2010;41:2519-2524 |
+| LMWH preferred over UFH (ISCVT data) | Class III | [Coutinho JM et al. Stroke 2010;41:2519-2524](https://pubmed.ncbi.nlm.nih.gov/20930161/) |
 | RE-SPECT CVT trial: dabigatran vs warfarin | Class II (RCT) | Ferro JM et al. Lancet Neurol 2019;18:1147-1156 |
 | D-dimer in CVT diagnosis (high NPV) | Class II | [Dentali F et al. J Thromb Haemost 2012;10:582-589](https://pubmed.ncbi.nlm.nih.gov/22257124/) |
-| Thrombophilia prevalence in CVT (~35%) | Class II | Martinelli I et al. Blood 1998;92:3152-3157 |
+| Thrombophilia prevalence in CVT (~35%) | Class II | [Martinelli I et al. Blood 1998;92:3152-3157](https://pubmed.ncbi.nlm.nih.gov/9746774/) |
 | Oral contraceptives as major CVT risk factor | Class II | de Bruijn SF et al. Stroke 1998;29:2588-2592 |
-| Decompressive surgery for malignant CVT | Class III | Ferro JM et al. Cerebrovasc Dis 2009;27:55-62 |
+| Decompressive surgery for malignant CVT | Class III | [Ferro JM et al. Cerebrovasc Dis 2009;27:55-62](https://pubmed.ncbi.nlm.nih.gov/19420921/) |
 | Endovascular thrombectomy for severe CVT | Class III, Case Series | Siddiqui FM et al. J Neurointerv Surg 2015;7:442-447 |
-| Seizure incidence in CVT (~40%) | Class II | Ferro JM et al. Stroke 2008;39:3222-3227 |
+| Seizure incidence in CVT (~40%) | Class II | [Ferro JM et al. Stroke 2008;39:3222-3227](https://pubmed.ncbi.nlm.nih.gov/18309177/) |
 | Long-term prognosis of CVT (good in most cases) | Class II | [Ferro JM et al. Stroke 2004;35:664-670](https://pubmed.ncbi.nlm.nih.gov/14976332/) |
 | Duration of anticoagulation in CVT | Expert Consensus | [Saposnik G et al. Stroke 2011;42:1158-1192](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
 | CTV and MRV sensitivity for CVT diagnosis | Class II | Defined F et al. AJNR 2007;28:1694-1697 |

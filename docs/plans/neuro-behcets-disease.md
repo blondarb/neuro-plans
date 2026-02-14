@@ -397,31 +397,31 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| International Study Group (ISG) diagnostic criteria for Behcet's disease | Expert Consensus | International Study Group for Behcet's Disease. Lancet 1990;335:1078-1080. [PubMed](https://pubmed.ncbi.nlm.nih.gov/1970380/) |
-| International Criteria for Behcet's Disease (ICBD, 2014 revision) | Expert Consensus, Multicenter Validation | International Team for the Revision of the ICBD. J Eur Acad Dermatol Venereol 2014;28:338-347. [PubMed](https://pubmed.ncbi.nlm.nih.gov/23441863/) |
-| Consensus recommendations for management of Behcet's disease (EULAR) | Expert Consensus, Systematic Review | Hatemi G et al. Ann Rheum Dis 2018;77:808-818. [PubMed](https://pubmed.ncbi.nlm.nih.gov/29514754/) |
-| Updated EULAR recommendations for Behcet's disease management | Expert Consensus | Hatemi G et al. Ann Rheum Dis 2024;83:25-32. [PubMed](https://pubmed.ncbi.nlm.nih.gov/37793908/) |
-| Consensus statement on Neuro-Behcet's disease (International Neuro-Behcet Advisory Group) | Expert Consensus | Kalra S et al. J Neurol 2014;261:1662-1676. [PubMed](https://pubmed.ncbi.nlm.nih.gov/24366651/) |
-| Parenchymal Neuro-Behcet's: clinical features, MRI, and prognosis | Class II, Retrospective | Al-Araji A, Kidd DP. Brain 2009;132:714-724. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19168451/) |
-| Azathioprine as first-line steroid-sparing agent in Behcet's (landmark RCT) | Class I, RCT | Yazici H et al. N Engl J Med 1990;322:281-285. [PubMed](https://pubmed.ncbi.nlm.nih.gov/2404204/) |
-| Azathioprine long-term prevention of new Behcet's attacks | Class II, Long-term Follow-up | Hamuryudan V et al. Arthritis Rheum 1997;40:769-774. [PubMed](https://pubmed.ncbi.nlm.nih.gov/9125262/) |
-| Infliximab for refractory Neuro-Behcet's disease | Class III, Case Series | Hirohata S et al. J Neurol 2015;262:338-344. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25359262/) |
-| Anti-TNF therapy for refractory Behcet's disease | Class III, Retrospective | Vallet H et al. Autoimmun Rev 2015;14:693-698. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25869498/) |
-| CSF IL-6 as biomarker in Neuro-Behcet's disease | Class II, Prospective Cohort | Hirohata S et al. Medicine (Baltimore) 2008;87:195-203. [PubMed](https://pubmed.ncbi.nlm.nih.gov/18626302/) |
-| CSF findings in Neuro-Behcet's disease | Class III, Retrospective | Akman-Demir G et al. Brain 1999;122:2171-2182. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10545401/) |
-| HLA-B51 and Behcet's disease: meta-analysis | Class I, Meta-analysis | de Menthon M et al. Arthritis Rheum 2009;61:1287-1296. [PubMed](https://pubmed.ncbi.nlm.nih.gov/19790126/) |
-| Pathergy test in Behcet's disease: systematic review | Class II, Systematic Review | Davatchi F et al. Adv Exp Med Biol 2003;528:51-56. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12918685/) |
-| Cyclosporine and neurological involvement in Behcet's disease | Class III, Retrospective | Kotter I et al. Rheumatology (Oxford) 2006;45:1461-1464. [PubMed](https://pubmed.ncbi.nlm.nih.gov/16998231/) |
-| Cerebral venous thrombosis in Behcet's disease | Class III, Retrospective | Aguiar de Sousa D et al. Stroke 2011;42:1153-1155. [PubMed](https://pubmed.ncbi.nlm.nih.gov/21393595/) |
-| MRI patterns in Neuro-Behcet's disease | Class III, Retrospective | Kocer N et al. Neuroradiology 1999;41:636-643. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10525763/) |
-| Tocilizumab for refractory Behcet's disease | Class IV, Case Series | Atienza-Mateo B et al. Semin Arthritis Rheum 2019;49:126-135. [PubMed](https://pubmed.ncbi.nlm.nih.gov/30655078/) |
-| Adalimumab for non-infectious posterior uveitis (VISUAL-I trial) | Class I, RCT | Jaffe GJ et al. N Engl J Med 2016;375:932-943. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27602665/) |
-| Interferon-alpha for refractory Behcet's disease | Class III, Prospective | Kotter I et al. Arthritis Rheum 2004;50:3628-3636. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15529353/) |
-| Cyclophosphamide for severe Neuro-Behcet's disease | Class IV, Case Series | Kidd DP. J Neurol 2017;264:434-439. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27757516/) |
-| Prognosis and long-term outcomes of Neuro-Behcet's disease | Class II, Retrospective Cohort | Noel N et al. Medicine (Baltimore) 2014;93:e68. [PubMed](https://pubmed.ncbi.nlm.nih.gov/25171876/) |
-| Hughes-Stovin syndrome: pulmonary artery aneurysm and thrombosis in Behcet's | Class IV, Case Series | Emad Y et al. Eur J Intern Med 2007;18:392-395. [PubMed](https://pubmed.ncbi.nlm.nih.gov/17693229/) |
-| Apremilast for oral ulcers in Behcet's disease (RELIEF trial) | Class I, RCT | Hatemi G et al. N Engl J Med 2019;381:1918-1928. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31722152/) |
-| Rituximab for refractory Behcet's disease | Class IV, Case Reports | Zhao C et al. Orphanet J Rare Dis 2021;16:1-9. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34407857/) |
+| International Study Group (ISG) diagnostic criteria for Behcet's disease | Expert Consensus | International Study Group for Behcet's Disease. Lancet 1990;335:1078-1080. PubMed |
+| International Criteria for Behcet's Disease (ICBD, 2014 revision) | Expert Consensus, Multicenter Validation | International Team for the Revision of the ICBD. J Eur Acad Dermatol Venereol 2014;28:338-347. PubMed |
+| Consensus recommendations for management of Behcet's disease (EULAR) | Expert Consensus, Systematic Review | [Hatemi G et al. Ann Rheum Dis 2018;77:808-818. PubMed](https://pubmed.ncbi.nlm.nih.gov/29625968/) |
+| Updated EULAR recommendations for Behcet's disease management | Expert Consensus | Hatemi G et al. Ann Rheum Dis 2024;83:25-32. PubMed |
+| Consensus statement on Neuro-Behcet's disease (International Neuro-Behcet Advisory Group) | Expert Consensus | [Kalra S et al. J Neurol 2014;261:1662-1676. PubMed](https://pubmed.ncbi.nlm.nih.gov/24366648/) |
+| Parenchymal Neuro-Behcet's: clinical features, MRI, and prognosis | Class II, Retrospective | Al-Araji A, Kidd DP. Brain 2009;132:714-724. PubMed |
+| Azathioprine as first-line steroid-sparing agent in Behcet's (landmark RCT) | Class I, RCT | [Yazici H et al. N Engl J Med 1990;322:281-285. PubMed](https://pubmed.ncbi.nlm.nih.gov/2404204/) |
+| Azathioprine long-term prevention of new Behcet's attacks | Class II, Long-term Follow-up | [Hamuryudan V et al. Arthritis Rheum 1997;40:769-774. PubMed](https://pubmed.ncbi.nlm.nih.gov/9125262/) |
+| Infliximab for refractory Neuro-Behcet's disease | Class III, Case Series | Hirohata S et al. J Neurol 2015;262:338-344. PubMed |
+| Anti-TNF therapy for refractory Behcet's disease | Class III, Retrospective | Vallet H et al. Autoimmun Rev 2015;14:693-698. PubMed |
+| CSF IL-6 as biomarker in Neuro-Behcet's disease | Class II, Prospective Cohort | Hirohata S et al. Medicine (Baltimore) 2008;87:195-203. PubMed |
+| CSF findings in Neuro-Behcet's disease | Class III, Retrospective | [Akman-Demir G et al. Brain 1999;122:2171-2182. PubMed](https://pubmed.ncbi.nlm.nih.gov/10545401/) |
+| HLA-B51 and Behcet's disease: meta-analysis | Class I, Meta-analysis | de Menthon M et al. Arthritis Rheum 2009;61:1287-1296. PubMed |
+| Pathergy test in Behcet's disease: systematic review | Class II, Systematic Review | [Davatchi F et al. Adv Exp Med Biol 2003;528:51-56. PubMed](https://pubmed.ncbi.nlm.nih.gov/12918769/) |
+| Cyclosporine and neurological involvement in Behcet's disease | Class III, Retrospective | Kotter I et al. Rheumatology (Oxford) 2006;45:1461-1464. PubMed |
+| Cerebral venous thrombosis in Behcet's disease | Class III, Retrospective | Aguiar de Sousa D et al. Stroke 2011;42:1153-1155. PubMed |
+| MRI patterns in Neuro-Behcet's disease | Class III, Retrospective | [Kocer N et al. Neuroradiology 1999;41:636-643. PubMed](https://pubmed.ncbi.nlm.nih.gov/10445437/) |
+| Tocilizumab for refractory Behcet's disease | Class IV, Case Series | [Atienza-Mateo B et al. Semin Arthritis Rheum 2019;49:126-135. PubMed](https://pubmed.ncbi.nlm.nih.gov/31237427/) |
+| Adalimumab for non-infectious posterior uveitis (VISUAL-I trial) | Class I, RCT | [Jaffe GJ et al. N Engl J Med 2016;375:932-943. PubMed](https://pubmed.ncbi.nlm.nih.gov/27602665/) |
+| Interferon-alpha for refractory Behcet's disease | Class III, Prospective | Kotter I et al. Arthritis Rheum 2004;50:3628-3636. PubMed |
+| Cyclophosphamide for severe Neuro-Behcet's disease | Class IV, Case Series | [Kidd DP. J Neurol 2017;264:434-439. PubMed](https://pubmed.ncbi.nlm.nih.gov/28283819/) |
+| Prognosis and long-term outcomes of Neuro-Behcet's disease | Class II, Retrospective Cohort | Noel N et al. Medicine (Baltimore) 2014;93:e68. PubMed |
+| Hughes-Stovin syndrome: pulmonary artery aneurysm and thrombosis in Behcet's | Class IV, Case Series | Emad Y et al. Eur J Intern Med 2007;18:392-395. PubMed |
+| Apremilast for oral ulcers in Behcet's disease (RELIEF trial) | Class I, RCT | [Hatemi G et al. N Engl J Med 2019;381:1918-1928. PubMed](https://pubmed.ncbi.nlm.nih.gov/31722152/) |
+| Rituximab for refractory Behcet's disease | Class IV, Case Reports | [Zhao C et al. Orphanet J Rare Dis 2021;16:1-9. PubMed](https://pubmed.ncbi.nlm.nih.gov/34627351/) |
 
 ---
 

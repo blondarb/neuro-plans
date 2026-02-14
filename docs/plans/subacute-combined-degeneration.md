@@ -298,20 +298,20 @@ tags:
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Subacute combined degeneration: clinical features, pathology, and outcomes in 153 patients | Class II, Level B | [Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
-| MRI posterior column T2 hyperintensity ("inverted V sign") characteristic of SCD | Class III, Level C | [Timms SR et al. Neuroradiology 1993](https://pubmed.ncbi.nlm.nih.gov/8274505/) |
+| MRI posterior column T2 hyperintensity ("inverted V sign") characteristic of SCD | Class III, Level C | Timms SR et al. Neuroradiology 1993 |
 | Serum B12 <200 pg/mL diagnostic; MMA and homocysteine for borderline levels; functional B12 markers | Class II, Level B | [Stabler SP. NEJM 2013](https://pubmed.ncbi.nlm.nih.gov/23697526/) |
 | British guidelines for parenteral B12 replacement in neurological B12 deficiency | Class II, Level B | [Devalia V et al. Br J Haematol 2014](https://pubmed.ncbi.nlm.nih.gov/24942828/) |
 | Neurological damage may be irreversible if treatment delayed >6 months from symptom onset | Class II, Level B | [Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
 | Copper deficiency myeloneuropathy mimics B12 SCD; must be excluded in all cases | Class III, Level C | [Kumar N et al. Mayo Clin Proc 2006](https://pubmed.ncbi.nlm.nih.gov/17036563/) |
 | Nitrous oxide precipitates acute SCD by irreversibly oxidizing B12; can occur with normal serum B12 | Class III, Level C | [Flippo TS, Holder WD Jr. South Med J 1993](https://pubmed.ncbi.nlm.nih.gov/8250714/) |
-| Nitrous oxide-induced myelopathy: clinical and MRI features; series of 25 patients | Class III, Level C | [Garakani A et al. J Clin Neuromuscul Dis 2016](https://pubmed.ncbi.nlm.nih.gov/27552406/) |
+| Nitrous oxide-induced myelopathy: clinical and MRI features; series of 25 patients | Class III, Level C | [Garakani A et al. J Clin Neuromuscul Dis 2016](https://pubmed.ncbi.nlm.nih.gov/27037733/) |
 | Gabapentin, pregabalin, duloxetine first-line for neuropathic pain (NeuPSIG guidelines) | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | Folate supplementation without B12 may worsen neurological manifestations by masking hematologic markers | Class II, Level B | [Reynolds EH. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/17052662/) |
 | High-dose oral B12 (1000-2000 mcg/day) may be as effective as IM for maintenance in selected patients | Class I, Level B | [Vidal-Alaball J et al. Cochrane Database Syst Rev 2005](https://pubmed.ncbi.nlm.nih.gov/16034940/) |
 | Pernicious anemia associated with 3-fold increased risk of gastric carcinoid and adenocarcinoma | Class II, Level B | [Hsing AW et al. JNCI 1993](https://pubmed.ncbi.nlm.nih.gov/8431855/) |
-| Baclofen and tizanidine for spasticity management in spinal cord disease | Class I, Level B | [Taricco M et al. Cochrane Database Syst Rev 2000](https://pubmed.ncbi.nlm.nih.gov/10908530/) |
+| Baclofen and tizanidine for spasticity management in spinal cord disease | Class I, Level B | [Taricco M et al. Cochrane Database Syst Rev 2000](https://pubmed.ncbi.nlm.nih.gov/10796750/) |
 | SCD can occur with normal CBC and MCV; absence of macrocytosis does not exclude diagnosis | Class II, Level B | [Lindenbaum J et al. NEJM 1988](https://pubmed.ncbi.nlm.nih.gov/3374544/) |
-| MRI resolution of posterior column signal changes with B12 treatment correlates with clinical improvement | Class III, Level C | [Gupta PK et al. J Neurol Sci 2014](https://pubmed.ncbi.nlm.nih.gov/24411092/) |
+| MRI resolution of posterior column signal changes with B12 treatment correlates with clinical improvement | Class III, Level C | [Gupta PK et al. J Neurol Sci 2014](https://pubmed.ncbi.nlm.nih.gov/24290500/) |
 
 ---
 

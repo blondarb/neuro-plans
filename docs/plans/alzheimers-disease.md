@@ -311,13 +311,13 @@ tags:
 | Combination therapy (ChEI + memantine) | Class I, Level A | [Tariot et al. JAMA 2004](https://pubmed.ncbi.nlm.nih.gov/14734594/) |
 | Lecanemab slows cognitive decline in early AD | Class I, Level A | [van Dyck et al. NEJM 2023 (Clarity AD)](https://pubmed.ncbi.nlm.nih.gov/36449413/) |
 | Donanemab slows cognitive decline | Class I, Level A | [Sims et al. JAMA 2023 (TRAILBLAZER-ALZ 2)](https://pubmed.ncbi.nlm.nih.gov/37459141/) |
-| Brexpiprazole for agitation in AD | Class I, Level A | [Grossberg et al. NEJM 2024](https://pubmed.ncbi.nlm.nih.gov/38598795/) |
+| Brexpiprazole for agitation in AD | Class I, Level A | Grossberg et al. NEJM 2024 |
 | Antipsychotic mortality risk in dementia | Class I, Level A | [Schneider et al. JAMA 2005](https://pubmed.ncbi.nlm.nih.gov/16234500/) |
 | Mediterranean diet reduces dementia risk | Class II, Level B | [Scarmeas et al. Ann Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/16622828/) |
 | Physical exercise may slow cognitive decline | Class II, Level B | [Livingston et al. Lancet 2020](https://pubmed.ncbi.nlm.nih.gov/32738937/) |
-| APOE genotyping for ARIA risk stratification | Class II, Level B | [Sperling et al. JAMA Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/39726460/) |
+| APOE genotyping for ARIA risk stratification | Class II, Level B | Sperling et al. JAMA Neurol 2024 |
 | Citalopram for agitation in AD (CitAD) | Class II, Level B | [Porsteinsson et al. JAMA 2014](https://pubmed.ncbi.nlm.nih.gov/24549548/) |
-| Hearing aid use reduces dementia risk | Class II, Level B | [Lin et al. JAMA Intern Med 2023](https://pubmed.ncbi.nlm.nih.gov/37669058/) |
+| Hearing aid use reduces dementia risk | Class II, Level B | [Lin et al. JAMA Intern Med 2023](https://pubmed.ncbi.nlm.nih.gov/36972042/) |
 | Driving assessment in dementia | Class III, Level C | [Iverson et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/20439849/) |
 
 ---

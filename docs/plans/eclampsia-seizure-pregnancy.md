@@ -265,9 +265,9 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Magnesium sulfate superior to phenytoin and diazepam for eclampsia prevention and treatment | Class I, Level A (large RCTs) | [The Magpie Trial. Lancet 2002](https://pubmed.ncbi.nlm.nih.gov/12076175/) |
-| MgSO4 reduces eclampsia risk by 58% compared to placebo in severe preeclampsia | Class I, Level A | [Altman et al. BJOG 2002 (Magpie follow-up)](https://pubmed.ncbi.nlm.nih.gov/12197373/) |
+| MgSO4 reduces eclampsia risk by 58% compared to placebo in severe preeclampsia | Class I, Level A | [Altman et al. BJOG 2002 (Magpie follow-up)](https://pubmed.ncbi.nlm.nih.gov/14501203/) |
 | Labetalol and nifedipine equally effective for acute severe hypertension in pregnancy | Class I (RCT) | [Shekhar et al. Pregnancy Hypertens 2016](https://pubmed.ncbi.nlm.nih.gov/26907777/) |
-| PRES is the neuroimaging correlate of eclampsia in majority of cases | Class III evidence (case series) | [Brewer et al. AJNR 2013](https://pubmed.ncbi.nlm.nih.gov/23764728/) |
+| PRES is the neuroimaging correlate of eclampsia in majority of cases | Class III evidence (case series) | [Brewer et al. AJNR 2013](https://pubmed.ncbi.nlm.nih.gov/22976236/) |
 | Low-dose aspirin 81 mg from 12-16 weeks reduces preeclampsia risk in high-risk women | Class I, Level A | [Rolnik et al. NEJM 2017 (ASPRE trial)](https://pubmed.ncbi.nlm.nih.gov/28657417/) |
 | Lamotrigine and levetiracetam preferred ASMs in pregnancy (lowest teratogenicity) | Class II evidence; Registry data | [Tomson et al. Lancet Neurol 2018 (EURAP)](https://pubmed.ncbi.nlm.nih.gov/30129470/) |
 | Lamotrigine levels decrease 50-70% during pregnancy; monthly monitoring needed | Class II evidence | [Pennell et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18046009/) |

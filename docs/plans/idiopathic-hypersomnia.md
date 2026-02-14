@@ -275,16 +275,16 @@ tags:
 |----------------|----------------|--------|
 | ICSD-3-TR diagnostic criteria for idiopathic hypersomnia (daily EDS ≥3 months, <2 SOREMPs, mean latency ≤8 min or total sleep ≥660 min, insufficient sleep excluded) | Consensus guidelines | [AASM. International Classification of Sleep Disorders, 3rd ed., Text Revision (ICSD-3-TR) 2023](https://aasm.org/) |
 | Comprehensive review of IH pathophysiology, diagnosis, and management; evidence for GABA-A receptor potentiation hypothesis | Expert review | [Dauvilliers et al. Brain 2017](https://pubmed.ncbi.nlm.nih.gov/29077793/) |
-| Flumazenil as treatment for IH targeting GABA-A receptor abnormality; demonstrated improvement in subjective sleepiness and sleep inertia | Class III, pilot data | [Trotti et al. Sleep 2016](https://pubmed.ncbi.nlm.nih.gov/26518693/) |
-| Diagnosis of central disorders of hypersomnolence; distinction between IH and narcolepsy type 2; MSLT limitations and biomarker development | Expert review/guideline | [Lammers et al. Lancet Neurol 2020](https://pubmed.ncbi.nlm.nih.gov/32171434/) |
-| Low-sodium oxybate (Xywav) efficacy for IH; reduced EDS, sleep inertia, and total sleep time; basis for FDA approval in IH | Class I, Level A (RCT) | [Thorpy et al. Sleep 2019](https://pubmed.ncbi.nlm.nih.gov/31579937/) |
-| IH treatment update; review of modafinil, stimulants, oxybate, pitolisant, and investigational agents for IH management | Expert review | [Ali et al. J Clin Sleep Med 2023](https://pubmed.ncbi.nlm.nih.gov/36458561/) |
+| Flumazenil as treatment for IH targeting GABA-A receptor abnormality; demonstrated improvement in subjective sleepiness and sleep inertia | Class III, pilot data | [Trotti et al. Sleep 2016](https://pubmed.ncbi.nlm.nih.gov/27568889/) |
+| Diagnosis of central disorders of hypersomnolence; distinction between IH and narcolepsy type 2; MSLT limitations and biomarker development | Expert review/guideline | Lammers et al. Lancet Neurol 2020 |
+| Low-sodium oxybate (Xywav) efficacy for IH; reduced EDS, sleep inertia, and total sleep time; basis for FDA approval in IH | Class I, Level A (RCT) | [Thorpy et al. Sleep 2019](https://pubmed.ncbi.nlm.nih.gov/31091535/) |
+| IH treatment update; review of modafinil, stimulants, oxybate, pitolisant, and investigational agents for IH management | Expert review | [Ali et al. J Clin Sleep Med 2023](https://pubmed.ncbi.nlm.nih.gov/37082825/) |
 | Modafinil efficacy for EDS; first-line wake-promoting agent (evidence primarily from narcolepsy trials, extrapolated to IH) | Class I, Level A (extrapolated) | [US Modafinil in Narcolepsy Multicenter Study Group. Neurology 2000](https://pubmed.ncbi.nlm.nih.gov/10720292/) |
 | Solriamfetol efficacy for EDS; dopamine/norepinephrine reuptake inhibitor (FDA approved for narcolepsy and OSA; off-label for IH) | Class I, Level A (extrapolated) | [Thorpy et al. Ann Neurol 2019](https://pubmed.ncbi.nlm.nih.gov/30694576/) |
 | Pitolisant efficacy for EDS; histamine H3 inverse agonist; non-controlled substance option (off-label for IH) | Class I, Level A (extrapolated) | [Dauvilliers et al. Lancet Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/24107292/) |
 | European guideline on management of central hypersomnolence; treatment recommendations applicable to IH (modafinil/armodafinil first-line for EDS) | Guideline, GRADE methodology | [Bassetti et al. J Sleep Res 2021](https://pubmed.ncbi.nlm.nih.gov/34173288/) |
 | Xywav REMS program required for prescribing; FDA mandate for safety monitoring | FDA mandate | [FDA labeling / REMS](https://www.accessdata.fda.gov/scripts/cder/rems/) |
-| MSLT interpretation and validation; <2 SOREMPs with mean latency ≤8 min distinguishes IH from NT2 | Class II | [Arand et al. Sleep 2005](https://pubmed.ncbi.nlm.nih.gov/16171275/) |
+| MSLT interpretation and validation; <2 SOREMPs with mean latency ≤8 min distinguishes IH from NT2 | Class II | [Arand et al. Sleep 2005](https://pubmed.ncbi.nlm.nih.gov/15700728/) |
 
 ---
 

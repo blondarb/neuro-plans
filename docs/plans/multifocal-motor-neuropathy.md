@@ -249,13 +249,13 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IVIg is the only proven effective treatment for MMN (randomized controlled trials) | Class I, Level A | [Azulay JP et al. Neurology 1994](https://pubmed.ncbi.nlm.nih.gov/7969237/) |
-| EFNS/PNS guideline on MMN diagnosis and treatment | Guideline | [Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199098/) |
-| Anti-GM1 IgM antibodies present in ~30-80% of MMN patients; supports diagnosis | Class IIa, Level B | [Pestronk A et al. Ann Neurol 1988](https://pubmed.ncbi.nlm.nih.gov/2455377/) |
-| Corticosteroids and plasma exchange are ineffective and may worsen MMN | Class I, Level A | [Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199098/) |
-| SCIg non-inferior to IVIg for maintenance in MMN | Class I, Level B | [Harbo T et al. Eur J Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19236462/) |
-| Conduction block is the electrodiagnostic hallmark; must test proximal segments | Class I, Level A | [Olney RK et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12629247/) |
-| Long-term IVIg prevents progressive axonal loss; early treatment improves outcomes | Class IIa, Level B | [Van den Berg-Vos RM et al. Brain 2002](https://pubmed.ncbi.nlm.nih.gov/11912111/) |
+| IVIg is the only proven effective treatment for MMN (randomized controlled trials) | Class I, Level A | [Azulay JP et al. Neurology 1994](https://pubmed.ncbi.nlm.nih.gov/8145910/) |
+| EFNS/PNS guideline on MMN diagnosis and treatment | Guideline | [Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199100/) |
+| Anti-GM1 IgM antibodies present in ~30-80% of MMN patients; supports diagnosis | Class IIa, Level B | [Pestronk A et al. Ann Neurol 1988](https://pubmed.ncbi.nlm.nih.gov/2843079/) |
+| Corticosteroids and plasma exchange are ineffective and may worsen MMN | Class I, Level A | [Joint Task Force EFNS/PNS. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199100/) |
+| SCIg non-inferior to IVIg for maintenance in MMN | Class I, Level B | [Harbo T et al. Eur J Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19469830/) |
+| Conduction block is the electrodiagnostic hallmark; must test proximal segments | Class I, Level A | [Olney RK et al. Neurology 2003](https://pubmed.ncbi.nlm.nih.gov/12743240/) |
+| Long-term IVIg prevents progressive axonal loss; early treatment improves outcomes | Class IIa, Level B | [Van den Berg-Vos RM et al. Brain 2002](https://pubmed.ncbi.nlm.nih.gov/12519564/) |
 | Cyclophosphamide has limited evidence for IVIg-refractory MMN | Class IIb, Level C | [Piepers S et al. J Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17357802/) |
 
 ---

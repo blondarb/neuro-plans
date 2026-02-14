@@ -374,29 +374,29 @@ SECTION B: SUPPORTING INFORMATION
 
 | Guideline | Source | Year | Key Recommendation |
 |-----------|--------|------|-------------------|
-| BPPV Practice Guideline | [AAO-HNS](https://pubmed.ncbi.nlm.nih.gov/29344368/) | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
+| BPPV Practice Guideline | AAO-HNS | 2017 | Dix-Hallpike is gold standard for diagnosis; Epley maneuver is first-line treatment; vestibular suppressants NOT recommended |
 | Vestibular Migraine Diagnostic Criteria | ICHD-3 / Barany Society | 2012/2018 | Diagnostic criteria; often underdiagnosed; migraine preventives effective |
 | Meniere's Disease Guidelines | AAO-HNS | 2020 | Definite, probable, possible classification; conservative management first; intratympanic therapy for refractory |
-| HINTS Exam | [Kattah et al.](https://pubmed.ncbi.nlm.nih.gov/19762709/) / [Tarnutzer](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
+| HINTS Exam | Kattah et al. / Tarnutzer | 2009/2011 | HINTS more sensitive than early MRI for stroke in acute vestibular syndrome; requires training |
 
 ### Landmark Studies
 
 | Study | Finding | Impact |
 |-------|---------|--------|
-| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
+| Kattah et al. (2009) | HINTS exam (H: head impulse; I: nystagmus; TS: test of skew) was 100% sensitive and 96% specific for stroke in acute vestibular syndrome; superior to MRI in first 24-48h | HINTS should be performed in acute vestibular syndrome; more sensitive than early MRI |
 | [Strupp et al. (2004)](https://pubmed.ncbi.nlm.nih.gov/15269315/) | Methylprednisolone improved vestibular function recovery in vestibular neuritis vs. placebo | Steroids are standard of care for vestibular neuritis |
 | [Hilton et al. Cochrane (2014)](https://pubmed.ncbi.nlm.nih.gov/25485940/) | Epley maneuver highly effective for posterior canal BPPV; NNT ~3 | Epley is definitive treatment for BPPV |
-| [Tarnutzer et al. (2011)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
+| Tarnutzer et al. (2011) | Individual HINTS components analyzed; normal head impulse most predictive of stroke | "Dangerous" HIT (normal in acute vertigo) = central cause until proven otherwise |
 | [Choi et al. (2018)](https://pubmed.ncbi.nlm.nih.gov/30341546/) | 12-20% of posterior fossa strokes missed on early MRI (<48h) but detected on repeat MRI | If high clinical suspicion for stroke and initial MRI negative, repeat MRI or treat as stroke |
-| [Fife et al. AAO-HNS (2017)](https://pubmed.ncbi.nlm.nih.gov/29344368/) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
+| Fife et al. AAO-HNS (2017) | Comprehensive BPPV guideline; repositioning maneuvers recommended; vestibular suppressants NOT recommended | Standard of care for BPPV |
 
 ### HINTS Exam Validity
 
 | Study | Sensitivity for Stroke | Specificity |
 |-------|----------------------|-------------|
-| [Kattah et al. (2009)](https://pubmed.ncbi.nlm.nih.gov/19762709/) | 100% | 96% |
+| Kattah et al. (2009) | 100% | 96% |
 | [Newman-Toker et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24127701/) | 96% | 98% |
-| [Tarnutzer et al. (2011, meta-analysis)](https://pubmed.ncbi.nlm.nih.gov/21576300/) | 98% (pooled) | 85% (pooled) |
+| Tarnutzer et al. (2011, meta-analysis) | 98% (pooled) | 85% (pooled) |
 
 **Important:** HINTS should ONLY be performed in the **Acute Vestibular Syndrome** (continuous vertigo/nystagmus lasting >24h). It is NOT valid for episodic vertigo (BPPV, Meniere's, vestibular migraine).
 

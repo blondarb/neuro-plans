@@ -256,7 +256,7 @@ tags:
 | DBS improves motor fluctuations | Class I, Level A | [Weaver et al. JAMA 2009](https://pubmed.ncbi.nlm.nih.gov/19126811/) |
 | Rivastigmine for PD dementia | Class I, Level A | [Emre et al. NEJM 2004](https://pubmed.ncbi.nlm.nih.gov/15590953/) |
 | Exercise improves motor function | Class II, Level B | [Schenkman et al. JAMA Neurol 2018](https://pubmed.ncbi.nlm.nih.gov/29228079/) |
-| LSVT LOUD improves speech | Class I, Level B | [Ramig et al. JSLHR 2001](https://pubmed.ncbi.nlm.nih.gov/11708525/) |
+| LSVT LOUD improves speech | Class I, Level B | [Ramig et al. JSLHR 2001](https://pubmed.ncbi.nlm.nih.gov/11324652/) |
 | Clonazepam and melatonin for RBD | Class II, Level B | [Aurora et al. AASM 2010](https://pubmed.ncbi.nlm.nih.gov/21061864/) |
 | Amantadine reduces dyskinesia | Class I, Level A | [Ory-Magne et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/25340202/) |
 | Duopa for motor fluctuations | Class I, Level A | [Olanow et al. Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24361112/) |

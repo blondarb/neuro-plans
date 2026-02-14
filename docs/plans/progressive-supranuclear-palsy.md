@@ -348,28 +348,28 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| MDS-PSP diagnostic criteria | Class II, Level B | Hoglinger et al., Mov Disord 2017 |
-| Levodopa trial recommended in PSP workup | Class II, Level B | Respondek et al., Mov Disord 2014 |
-| Limited levodopa response in PSP (<30% of patients) | Class II, Level B | Kompoliti et al., Mov Disord 1998 |
+| MDS-PSP diagnostic criteria | Class II, Level B | [Hoglinger et al., Mov Disord 2017](https://pubmed.ncbi.nlm.nih.gov/28467028/) |
+| Levodopa trial recommended in PSP workup | Class II, Level B | [Respondek et al., Mov Disord 2014](https://pubmed.ncbi.nlm.nih.gov/25370486/) |
+| Limited levodopa response in PSP (<30% of patients) | Class II, Level B | [Kompoliti et al., Mov Disord 1998](https://pubmed.ncbi.nlm.nih.gov/9613740/) |
 | MRI midbrain atrophy (hummingbird sign) supports PSP diagnosis | Class II, Level B | Massey et al., Neurology 2012 |
 | Magnetic resonance parkinsonism index (MRPI) distinguishes PSP from PD | Class II, Level B | Quattrone et al., Neurology 2008 |
 | MIBG cardiac scintigraphy normal in PSP, reduced in PD | Class III, Level C | Nagayama et al., Neurology 2005 |
 | Amantadine may improve gait freezing in parkinsonian syndromes | Class III, Level C | Kompoliti et al., Neurology 1998 |
-| Botulinum toxin effective for blepharospasm and dystonia | Class I, Level A | Simpson et al., Neurology 2008 (AAN guideline) |
+| Botulinum toxin effective for blepharospasm and dystonia | Class I, Level A | [Simpson et al., Neurology 2008 (AAN guideline)](https://pubmed.ncbi.nlm.nih.gov/18458229/) |
 | Botulinum toxin effective for sialorrhea in neurodegenerative disease | Class I, Level A | Jost et al., J Neurol 2019 |
-| Dextromethorphan/quinidine (Nuedexta) FDA-approved for pseudobulbar affect | Class I, Level A | Pioro et al., Ann Neurol 2010 (STAR trial) |
-| Cholinesterase inhibitors for cognitive symptoms in PSP | Class III, Level C | Litvan et al., Neurology 2001 |
-| Coenzyme Q10 failed to show efficacy in PSP | Class I, Level A | Apetauerova et al., Neurology 2016 (QE3 trial) |
+| Dextromethorphan/quinidine (Nuedexta) FDA-approved for pseudobulbar affect | Class I, Level A | [Pioro et al., Ann Neurol 2010 (STAR trial)](https://pubmed.ncbi.nlm.nih.gov/20839238/) |
+| Cholinesterase inhibitors for cognitive symptoms in PSP | Class III, Level C | [Litvan et al., Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11502915/) |
+| Coenzyme Q10 failed to show efficacy in PSP | Class I, Level A | [Apetauerova et al., Neurology 2016 (QE3 trial)](https://pubmed.ncbi.nlm.nih.gov/27583276/) |
 | Riluzole failed to show benefit in PSP | Class I, Level A | Bensimon et al., Lancet Neurol 2009 (NNIPPS trial) |
-| Davunetide failed phase II/III in PSP | Class I, Level A | Boxer et al., Lancet Neurol 2014 |
+| Davunetide failed phase II/III in PSP | Class I, Level A | [Boxer et al., Lancet Neurol 2014](https://pubmed.ncbi.nlm.nih.gov/24873720/) |
 | Weighted walker superior to standard walker for PSP backward falls | Class III, Level C | Bluett et al., Mov Disord 2020 |
-| Early palliative care improves quality of life in neurodegenerative disease | Class I, Level A | Temel et al., NEJM 2010 (extrapolated from ALS/oncology) |
+| Early palliative care improves quality of life in neurodegenerative disease | Class I, Level A | [Temel et al., NEJM 2010 (extrapolated from ALS/oncology)](https://pubmed.ncbi.nlm.nih.gov/20818875/) |
 | PSP-RS most common variant; median survival 6-9 years | Class II, Level B | Respondek et al., Ann Neurol 2014 |
 | PSP neuropathology: 4-repeat tauopathy with globose neurofibrillary tangles | Class I, Level A | Dickson et al., J Neuropathol Exp Neurol 2007 |
-| Tau PET imaging in PSP shows subcortical uptake | Class III, Level C | Whitwell et al., Brain 2018 |
-| Serum neurofilament light chain elevated in PSP | Class II, Level B | Rojas et al., Ann Clin Transl Neurol 2016 |
+| Tau PET imaging in PSP shows subcortical uptake | Class III, Level C | [Whitwell et al., Brain 2018](https://pubmed.ncbi.nlm.nih.gov/29390126/) |
+| Serum neurofilament light chain elevated in PSP | Class II, Level B | [Rojas et al., Ann Clin Transl Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27042681/) |
 | Zolpidem transient improvement in oculomotor and motor function (case series) | Class IV, Level U | Daniele et al., Mov Disord 1999 |
-| PSP clinical variants and tau pathology correlations | Class II, Level B | Kovacs et al., Acta Neuropathol 2020 |
+| PSP clinical variants and tau pathology correlations | Class II, Level B | [Kovacs et al., Acta Neuropathol 2020](https://pubmed.ncbi.nlm.nih.gov/32383020/) |
 | Physical therapy and exercise benefit in atypical parkinsonism | Class II, Level B | Zampieri and Di Fabio, Phys Ther 2008 |
 | PEG placement timing in neurodegenerative dysphagia | Class III, Level C | ProGas Study Group, Lancet Neurol 2015 |
 

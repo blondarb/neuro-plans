@@ -300,20 +300,20 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | Salzburg consensus criteria for NCSE | Expert Consensus | [Leitinger M et al. Lancet Neurol 2016;15:1054-1062](https://pubmed.ncbi.nlm.nih.gov/27571157/) |
-| ACNS standardized EEG terminology for critically ill patients | Expert Consensus | Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320 |
+| ACNS standardized EEG terminology for critically ill patients | Expert Consensus | [Hirsch LJ et al. J Clin Neurophysiol 2021;38:296-320](https://pubmed.ncbi.nlm.nih.gov/33475321/) |
 | Continuous EEG monitoring detects NCSE in ~20% of critically ill with altered consciousness | Class II | [Claassen J et al. Neurology 2004;62:1743-1748](https://pubmed.ncbi.nlm.nih.gov/15159471/) |
 | ESETT trial: levetiracetam, fosphenytoin, valproic acid equivalent for benzodiazepine-refractory SE | Class I (RCT) | [Kapur J et al. N Engl J Med 2019;381:2103-2113](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
 | NCS guidelines for continuous EEG monitoring in critically ill | Expert Consensus | [Herman ST et al. J Clin Neurophysiol 2015;32:87-95](https://pubmed.ncbi.nlm.nih.gov/25626778/) |
 | Benzodiazepine trial for NCSE diagnosis | Expert Consensus | [Leitinger M et al. Lancet Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27571157/) |
 | NCSE outcomes depend on etiology more than duration | Class II | Legriel S et al. Crit Care Med 2015;43:1003-1012 |
 | Risk of over-treatment: periodic discharges ≠ NCSE in all cases | Expert Consensus | Hirsch LJ. Epilepsy Curr 2004;4:116-122 |
-| NORSE/FIRES: autoimmune NCSE requiring immunotherapy | Class III | Gaspard N et al. Neurology 2015;85:1605-1613 |
-| Propofol infusion syndrome (PRIS) risk in prolonged SE treatment | Class III | Roberts RJ et al. Crit Care Med 2009;37:3024-3030 |
+| NORSE/FIRES: autoimmune NCSE requiring immunotherapy | Class III | [Gaspard N et al. Neurology 2015;85:1605-1613](https://pubmed.ncbi.nlm.nih.gov/26296517/) |
+| Propofol infusion syndrome (PRIS) risk in prolonged SE treatment | Class III | [Roberts RJ et al. Crit Care Med 2009;37:3024-3030](https://pubmed.ncbi.nlm.nih.gov/19865006/) |
 | CSF pleocytosis from seizures alone (up to 20 WBC) | Class III | [Barry E & Hauser WA. Arch Neurol 1994;51:190-193](https://pubmed.ncbi.nlm.nih.gov/8304844/) |
 | Ketamine for super-refractory SE | Class III | Gaspard N et al. Neurocrit Care 2013;18:168-174 |
 | HSV encephalitis presenting as NCSE | Class III | Misra UK et al. Seizure 2008;17:672-676 |
 | L-carnitine for VPA-induced hyperammonemia | Class III | Lheureux PE et al. Clin Toxicol 2009;47:101-111 |
-| Aggressive vs conservative NCSE treatment outcomes | Class III | Sutter R et al. Neurology 2016;87:2195-2203 |
+| Aggressive vs conservative NCSE treatment outcomes | Class III | [Sutter R et al. Neurology 2016;87:2195-2203](https://pubmed.ncbi.nlm.nih.gov/27063108/) |
 | AES guidelines on SE management | Expert Consensus | [Glauser T et al. Epilepsy Curr 2016;16:48-61](https://pubmed.ncbi.nlm.nih.gov/26900382/) |
 
 ---

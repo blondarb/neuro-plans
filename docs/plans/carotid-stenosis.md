@@ -250,7 +250,7 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| CEA for symptomatic carotid stenosis 70-99% reduces ipsilateral stroke risk (ARR 17% at 2 years; NNT 6) | Class I, Level A (RCT) | [NASCET Collaborators. NEJM 1991](https://pubmed.ncbi.nlm.nih.gov/1852179/) |
+| CEA for symptomatic carotid stenosis 70-99% reduces ipsilateral stroke risk (ARR 17% at 2 years; NNT 6) | Class I, Level A (RCT) | [NASCET](https://pubmed.ncbi.nlm.nih.gov/1852179/) Collaborators. NEJM 1991 |
 | CEA benefit in symptomatic 50-69% stenosis is moderate (ARR 6.5% at 5 years) and greatest in men, recent events, and hemisphere symptoms | Class I, Level A (RCT) | [Barnett et al. NEJM 1998 (NASCET 50-69%)](https://pubmed.ncbi.nlm.nih.gov/9811916/) |
 | CEA for symptomatic stenosis confirmed in European trial with different measurement method | Class I, Level A (RCT) | [European Carotid Surgery Trial (ECST). Lancet 1998](https://pubmed.ncbi.nlm.nih.gov/9593407/) |
 | CEA for asymptomatic stenosis >=60% reduces 5-year stroke risk (ARR 5.9%; NNT 17); benefit requires perioperative risk <3% | Class I, Level A (RCT) | [ACAS Executive Committee. JAMA 1995](https://pubmed.ncbi.nlm.nih.gov/7723155/) |

@@ -280,7 +280,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | ICUAW defined as MRC sum score <48/60 in cooperative ICU patients | Class I, Level B | [Stevens et al. Crit Care Med 2009](https://pubmed.ncbi.nlm.nih.gov/20838559/) |
 | Sepsis and multi-organ failure are primary risk factors for ICUAW | Class I, Level A | [De Jonghe et al. JAMA 2002](https://pubmed.ncbi.nlm.nih.gov/12472328/) |
 | NCS/EMG differentiates CIM (myopathic, normal SNAPs) from CIP (axonal sensorimotor) | Class I, Level B | [Latronico & Bolton. Lancet Neurol 2011](https://pubmed.ncbi.nlm.nih.gov/21939902/) |
-| Direct muscle stimulation (DMS) differentiates CIM from CIP in uncooperative patients | Class IIa, Level B | [Rich et al. Muscle Nerve 1996](https://pubmed.ncbi.nlm.nih.gov/10155996/) |
+| Direct muscle stimulation (DMS) differentiates CIM from CIP in uncooperative patients | Class IIa, Level B | Rich et al. Muscle Nerve 1996 |
 | Hyperglycemia is independent risk factor; glycemic control reduces ICUAW incidence | Class I, Level A | [Van den Berghe et al. NEJM 2001](https://pubmed.ncbi.nlm.nih.gov/11942631/); [Hermans et al. Lancet 2007](https://pubmed.ncbi.nlm.nih.gov/18064865/) |
 | NICE-SUGAR target glucose 140-180 mg/dL (tight control increases mortality) | Class I, Level A | [NICE-SUGAR Investigators. NEJM 2009](https://pubmed.ncbi.nlm.nih.gov/19318384/) |
 | Corticosteroids combined with NMBAs greatly increase CIM risk | Class I, Level B | [De Jonghe et al. Crit Care Med 2009](https://pubmed.ncbi.nlm.nih.gov/20838559/); [Hermans et al. Intensive Care Med 2014](https://pubmed.ncbi.nlm.nih.gov/24441670/) |
@@ -293,8 +293,8 @@ SECTION B: REFERENCE (Expand as Needed)
 | Protein intake 1.2-2.0 g/kg/day recommended for critically ill patients | Class IIa, Level B | [McClave et al. JPEN 2016 (ASPEN/SCCM Guidelines)](https://pubmed.ncbi.nlm.nih.gov/26773077/) |
 | No specific pharmacologic treatment proven effective for CIM or CIP | Class I, Level C | [Hermans & Van den Berghe. NEJM 2015](https://pubmed.ncbi.nlm.nih.gov/26786743/) |
 | Electrical muscle stimulation may attenuate muscle wasting (emerging evidence) | Class IIb, Level C | [Routsi et al. Crit Care Med 2010](https://pubmed.ncbi.nlm.nih.gov/21078149/) |
-| ICU-acquired weakness is associated with increased mortality and prolonged mechanical ventilation | Class I, Level A | [Fan et al. CMAJ 2014](https://pubmed.ncbi.nlm.nih.gov/27011495/) |
-| ABCDEF bundle implementation reduces ICUAW and delirium | Class I, Level B | [Pun et al. Lancet Respir Med 2019](https://pubmed.ncbi.nlm.nih.gov/31889136/) |
+| ICU-acquired weakness is associated with increased mortality and prolonged mechanical ventilation | Class I, Level A | Fan et al. CMAJ 2014 |
+| ABCDEF bundle implementation reduces ICUAW and delirium | Class I, Level B | Pun et al. Lancet Respir Med 2019 |
 | Vitamin D deficiency is associated with ICU-acquired weakness | Class IIb, Level C | [Amrein et al. JAMA 2014](https://pubmed.ncbi.nlm.nih.gov/25268295/) |
 
 ---

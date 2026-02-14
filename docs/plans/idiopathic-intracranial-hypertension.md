@@ -267,8 +267,8 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Acetazolamide effective for IIH | Class I, Level A | IIHTT (Idiopathic Intracranial Hypertension Treatment Trial) |
-| Weight loss improves IIH | Class II, Level B | Multiple studies; IIHTT secondary analysis |
+| Acetazolamide effective for IIH | Class I, Level A | [IIHTT](https://pubmed.ncbi.nlm.nih.gov/24756514/) (Idiopathic Intracranial Hypertension Treatment Trial) |
+| Weight loss improves IIH | Class II, Level B | Multiple studies; [IIHTT](https://pubmed.ncbi.nlm.nih.gov/24756514/) secondary analysis |
 | ONSF protects vision in IIH | Class III, Level B | Case series; observational data |
 | CSF shunting reduces ICP and headache | Class III, Level B | Case series; high revision rate noted |
 | Venous sinus stenting emerging therapy | Class III, Level C | Growing evidence; case series |

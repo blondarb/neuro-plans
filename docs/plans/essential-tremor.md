@@ -256,12 +256,12 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Propranolol effective for ET | Class I, Level A | Cochrane Reviews; AAN Guidelines 2011 |
-| Primidone effective for ET | Class I, Level A | Cochrane Reviews; AAN Guidelines 2011 |
-| Propranolol + Primidone combination | Class II, Level B | AAN Guidelines 2011 |
-| Topiramate effective for ET | Class I, Level B | AAN Guidelines 2011 |
-| Gabapentin possibly effective | Class II, Level U | AAN Guidelines 2011 |
-| Botulinum toxin for hand tremor | Class II, Level B | AAN Guidelines 2011 |
+| Propranolol effective for ET | Class I, Level A | Cochrane Reviews; [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Primidone effective for ET | Class I, Level A | Cochrane Reviews; [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Propranolol + Primidone combination | Class II, Level B | [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Topiramate effective for ET | Class I, Level B | [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Gabapentin possibly effective | Class II, Level U | [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
+| Botulinum toxin for hand tremor | Class II, Level B | [AAN Guidelines 2011](https://pubmed.ncbi.nlm.nih.gov/22013182/) |
 | DBS effective for medically refractory ET | Class I, Level A | Multiple RCTs |
 | MRgFUS (focused ultrasound) effective | Class I, Level A | [Elias et al., NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27557301/) |
 | DaTscan differentiates ET from PD | Class II, Level B | FDA approved 2011 |

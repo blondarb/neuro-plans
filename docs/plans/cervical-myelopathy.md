@@ -280,23 +280,23 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Surgical decompression superior to conservative management for moderate-severe CSM | Class I, Level B | [Fehlings et al. CSM-North America (2013)](https://pubmed.ncbi.nlm.nih.gov/24499474/); [Fehlings et al. Spine (2017)](https://pubmed.ncbi.nlm.nih.gov/28291407/) |
+| Surgical decompression superior to conservative management for moderate-severe CSM | Class I, Level B | Fehlings et al. CSM-North America (2013); Fehlings et al. Spine (2017) |
 | Earlier surgical intervention associated with better neurologic outcomes in moderate-severe CSM | Class IIa, Level B | [Tetreault et al. Neurosurgery (2015)](https://pubmed.ncbi.nlm.nih.gov/26378358/); duration of symptoms is strongest predictor of outcome |
 | mJOA score validated for severity grading and surgical decision-making in CSM | Class I, Level B | [Tetreault et al. Global Spine J (2015)](https://pubmed.ncbi.nlm.nih.gov/26682095/); mild ≥15, moderate 12-14, severe <12 |
 | MRI T2 signal change (myelomalacia) correlates with worse surgical outcomes | Class II, Level B | [Nouri et al. Spine (2015)](https://pubmed.ncbi.nlm.nih.gov/25893357/); [Tetreault et al. Spine (2013)](https://pubmed.ncbi.nlm.nih.gov/23962996/) |
-| T1 hypointensity on MRI indicates irreversible cord damage and poorer prognosis | Class II, Level B | [Nouri et al. Spine J (2017)](https://pubmed.ncbi.nlm.nih.gov/27836772/) |
+| T1 hypointensity on MRI indicates irreversible cord damage and poorer prognosis | Class II, Level B | Nouri et al. Spine J (2017) |
 | ACDF effective for 1-2 level anterior compression in CSM | Class I, Level B | [Ghogawala et al. Lancet Neurol (2019)](https://pubmed.ncbi.nlm.nih.gov/31153155/) |
 | Laminoplasty effective for multi-level posterior compression with preserved lordosis | Class IIa, Level B | [Hirabayashi et al. Spine (1983)](https://pubmed.ncbi.nlm.nih.gov/6420895/); original technique; multiple validation studies |
 | C5 palsy occurs in 5-10% after posterior decompression; usually recovers | Class II, Level B | [Nassr et al. J Bone Joint Surg Am (2012)](https://pubmed.ncbi.nlm.nih.gov/22293780/) |
 | Conservative management reasonable for mild CSM (mJOA ≥15) with close monitoring | Class IIb, Level C | [Kadanka et al. Spine (2011)](https://pubmed.ncbi.nlm.nih.gov/21519928/); mild cases may not progress; surgery for progression |
-| Smoking cessation improves fusion rates and surgical outcomes | Class I, Level B | [Berman et al. Spine (2017)](https://pubmed.ncbi.nlm.nih.gov/29849372/); pseudarthrosis rates 2-3x higher in smokers |
+| Smoking cessation improves fusion rates and surgical outcomes | Class I, Level B | Berman et al. Spine (2017); pseudarthrosis rates 2-3x higher in smokers |
 | Gabapentin and pregabalin effective for neuropathic pain in myelopathy | Class I, Level A | [Finnerup et al. Lancet Neurol (2015)](https://pubmed.ncbi.nlm.nih.gov/25575710/); NeuPSIG guidelines for neuropathic pain |
 | Baclofen first-line for spasticity in spinal cord conditions | Class I, Level B | Expert consensus; extensive clinical experience; [Taricco et al. Cochrane (2000)](https://pubmed.ncbi.nlm.nih.gov/10796750/) |
 | DVT prophylaxis in acute myelopathy with immobilization | Class I, Level A | High thrombotic risk in immobilized patients with spinal cord dysfunction; [Geerts et al. Chest (2008)](https://pubmed.ncbi.nlm.nih.gov/18574271/) |
-| Retropharyngeal hematoma is life-threatening complication after anterior cervical surgery requiring emergent surgical evacuation | Class I, Level C | [Palumbo et al. Eur Spine J (2012)](https://pubmed.ncbi.nlm.nih.gov/23477277/); incidence 1-6%; airway compromise can be fatal |
-| AAN/CNS/AANS guidelines recommend against conservative management for rapidly progressive CSM | Class I, Level B | [Mummaneni et al. J Neurosurg Spine (2009)](https://pubmed.ncbi.nlm.nih.gov/19951015/) |
+| Retropharyngeal hematoma is life-threatening complication after anterior cervical surgery requiring emergent surgical evacuation | Class I, Level C | Palumbo et al. Eur Spine J (2012); incidence 1-6%; airway compromise can be fatal |
+| AAN/CNS/AANS guidelines recommend against conservative management for rapidly progressive CSM | Class I, Level B | [Mummaneni et al. J Neurosurg Spine (2009)](https://pubmed.ncbi.nlm.nih.gov/19951014/) |
 | Flexion-extension X-rays for dynamic instability assessment in CSM | Class II, Level C | Expert consensus; translation >3.5 mm or angulation >11° indicates instability requiring fusion |
-| Tandem stenosis (cervical + lumbar) present in 5-25% of CSM patients | Class II, Level C | [Dagi et al. J Neurosurg Spine (2011)](https://pubmed.ncbi.nlm.nih.gov/22220162/); always evaluate for tandem stenosis |
+| Tandem stenosis (cervical + lumbar) present in 5-25% of CSM patients | Class II, Level C | Dagi et al. J Neurosurg Spine (2011); always evaluate for tandem stenosis |
 | OPLL more common in East Asian populations; CT superior to MRI for detection | Class II, Level B | [Epstein et al. Spine (2002)](https://pubmed.ncbi.nlm.nih.gov/12435969/); prevalence 1.9-4.3% in Japanese populations |
 | Intermittent catheterization preferred over indwelling catheter for neurogenic bladder | Class I, Level B | Spinal cord injury guidelines; lower UTI rates with intermittent catheterization |
 

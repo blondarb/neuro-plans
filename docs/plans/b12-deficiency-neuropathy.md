@@ -273,7 +273,7 @@ tags:
 | Parenteral B12 replacement for neurological B12 deficiency | Class II, Level B | [Devalia V et al. Br J Haematol 2014](https://pubmed.ncbi.nlm.nih.gov/24942828/) |
 | High-dose oral B12 (1000-2000 mcg/day) may be as effective as IM for maintenance in selected patients | Class I, Level B | [Vidal-Alaball J et al. Cochrane Database Syst Rev 2005](https://pubmed.ncbi.nlm.nih.gov/16034940/) |
 | Intrinsic factor antibodies highly specific (>95%) for pernicious anemia | Class II, Level B | [Toh BH et al. NEJM 1997](https://pubmed.ncbi.nlm.nih.gov/9358143/) |
-| MRI posterior column T2 hyperintensity in subacute combined degeneration | Class III, Level C | [Timms SR et al. Neuroradiology 1993](https://pubmed.ncbi.nlm.nih.gov/8274505/) |
+| MRI posterior column T2 hyperintensity in subacute combined degeneration | Class III, Level C | Timms SR et al. Neuroradiology 1993 |
 | Neurological damage may be irreversible if treatment delayed >6 months | Class II, Level B | [Healton EB et al. Medicine (Baltimore) 1991](https://pubmed.ncbi.nlm.nih.gov/1648656/) |
 | Gabapentin, pregabalin, duloxetine first-line for neuropathic pain | Class I, Level A | [Finnerup NB et al. Lancet Neurol 2015](https://pubmed.ncbi.nlm.nih.gov/25575710/) |
 | Folate supplementation without B12 may worsen neurological manifestations | Class II, Level B | [Reynolds EH. Lancet Neurol 2006](https://pubmed.ncbi.nlm.nih.gov/17052662/) |

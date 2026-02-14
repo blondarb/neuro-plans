@@ -376,19 +376,19 @@ SECTION B: REFERENCE (Expand as Needed)
 | PACNS diagnostic criteria and clinical characterization | Class III, Expert Consensus | [Calabrese LH, Mallek JA. Medicine (Baltimore) 1988;67:20-39](https://pubmed.ncbi.nlm.nih.gov/3275856/) |
 | Brain biopsy as gold standard for PACNS diagnosis (sensitivity 53-74%) | Class III, Retrospective | [Miller DV et al. Ann Neurol 2009;65:677-683](https://pubmed.ncbi.nlm.nih.gov/19334062/) |
 | CSF abnormal in 80-90% of biopsy-confirmed PACNS | Class III | [Salvarani C et al. Ann Neurol 2007;62:442-451](https://pubmed.ncbi.nlm.nih.gov/17924545/) |
-| Cyclophosphamide plus corticosteroids as standard induction therapy | Class III, Expert Consensus | [Salvarani C et al. Arthritis Rheum 2012;64:899-907](https://pubmed.ncbi.nlm.nih.gov/21953306/) |
+| Cyclophosphamide plus corticosteroids as standard induction therapy | Class III, Expert Consensus | Salvarani C et al. Arthritis Rheum 2012;64:899-907 |
 | Large cohort characterization of PACNS (163 patients) | Class III, Retrospective | [Salvarani C et al. Ann Neurol 2007;62:442-451](https://pubmed.ncbi.nlm.nih.gov/17924545/) |
 | PACNS relapse rate 25-30% and long-term outcomes | Class III | [de Boysson H et al. Medicine (Baltimore) 2016;95:e3134](https://pubmed.ncbi.nlm.nih.gov/27858872/) |
-| Differentiation of PACNS from RCVS by clinical and imaging features | Class III | [Singhal AB et al. Ann Neurol 2011;70:44-56](https://pubmed.ncbi.nlm.nih.gov/24533364/) |
+| Differentiation of PACNS from RCVS by clinical and imaging features | Class III | Singhal AB et al. Ann Neurol 2011;70:44-56 |
 | Vessel wall imaging in CNS vasculitis (concentric vs. eccentric enhancement) | Class III | [Mandell DM et al. Stroke 2012;43:1408-1415](https://pubmed.ncbi.nlm.nih.gov/22156692/) |
 | Conventional angiography sensitivity and specificity for PACNS | Class III | [Duna GF, Calabrese LH. J Rheumatol 1995;22:662-667](https://pubmed.ncbi.nlm.nih.gov/7791160/) |
 | VZV vasculopathy as PACNS mimic; CSF VZV antibody more sensitive than PCR | Class III | [Nagel MA et al. Ann Neurol 2008;64:411-419](https://pubmed.ncbi.nlm.nih.gov/19529834/) |
 | Azathioprine as maintenance therapy following cyclophosphamide induction | Class III, Expert Consensus | [de Boysson H et al. Neurology 2014;82:1291-1298](https://pubmed.ncbi.nlm.nih.gov/26182823/) |
 | Mycophenolate mofetil as maintenance alternative in PACNS | Class IV, Case Series | [de Boysson H et al. Medicine (Baltimore) 2016;95:e3134](https://pubmed.ncbi.nlm.nih.gov/27858872/) |
-| Rituximab for refractory CNS vasculitis | Class IV, Case Series | [De Boysson H et al. J Neurol 2013;260:2636-2644](https://pubmed.ncbi.nlm.nih.gov/25332562/) |
-| Granulomatous histologic pattern associated with worse prognosis | Class III | [Salvarani C et al. Arthritis Rheum 2015;67:1732-1741](https://pubmed.ncbi.nlm.nih.gov/26523063/) |
+| Rituximab for refractory CNS vasculitis | Class IV, Case Series | De Boysson H et al. J Neurol 2013;260:2636-2644 |
+| Granulomatous histologic pattern associated with worse prognosis | Class III | Salvarani C et al. Arthritis Rheum 2015;67:1732-1741 |
 | Amyloid-beta-related angiitis (ABRA) as distinct entity | Class III | [Scolding NJ et al. Neurology 2005;65:199-204](https://pubmed.ncbi.nlm.nih.gov/15721820/) |
-| Role of FDG-PET in large vessel vasculitis and PACNS | Class III | [Salvarani C et al. Arthritis Care Res 2014;66:850-856](https://pubmed.ncbi.nlm.nih.gov/25344366/) |
+| Role of FDG-PET in large vessel vasculitis and PACNS | Class III | Salvarani C et al. Arthritis Care Res 2014;66:850-856 |
 | Intravascular lymphoma mimicking CNS vasculitis | Class IV, Case Series | [Beristain X, Bhatt M. BMJ Case Rep 2012;2012](https://pubmed.ncbi.nlm.nih.gov/22421365/) |
 | European consensus on PACNS diagnosis and management | Expert Consensus | [de Boysson H et al. Rev Neurol (Paris) 2016;172:566-579](https://pubmed.ncbi.nlm.nih.gov/28930416/) |
 | Serial CSF monitoring to guide treatment response | Class III, Expert Consensus | [Salvarani C et al. Ann Neurol 2007](https://pubmed.ncbi.nlm.nih.gov/17924545/) |
@@ -398,7 +398,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Cyclophosphamide bladder toxicity prevention with MESNA | Class I (oncology data) | [Shepherd JD et al. J Clin Oncol 1991;9:2016-2020](https://pubmed.ncbi.nlm.nih.gov/1941060/) |
 | High-dose corticosteroid protocols in CNS inflammatory disease | Class III | [Birnbaum J, Hellmann DB. Arch Neurol 2009](https://pubmed.ncbi.nlm.nih.gov/19506130/) |
 | Bone protection during prolonged corticosteroid therapy | Class I (guideline) | [Buckley L et al. Arthritis Rheumatol 2017;69:1521-1537](https://pubmed.ncbi.nlm.nih.gov/28585373/) |
-| ABRA and cerebral amyloid angiopathy overlap | Class III | [Salvarani C et al. Arthritis Rheum 2013;65:1862-1868](https://pubmed.ncbi.nlm.nih.gov/23740665/) |
+| ABRA and cerebral amyloid angiopathy overlap | Class III | Salvarani C et al. Arthritis Rheum 2013;65:1862-1868 |
 
 ---
 

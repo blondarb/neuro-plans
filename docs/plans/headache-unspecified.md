@@ -291,14 +291,14 @@ SECTION B: REFERENCE (Expand as Needed)
 | Prochlorperazine superior to placebo for acute headache | Class I, Level A | [Coppola et al. Ann Emerg Med 1995](https://pubmed.ncbi.nlm.nih.gov/7486359/) |
 | Ketorolac effective for acute headache in ED | Class I, Level A | [Taggart et al. Headache 2013](https://pubmed.ncbi.nlm.nih.gov/23298250/) |
 | Dexamethasone single dose reduces headache recurrence at 24-72h | Class I, Level A (meta-analysis) | [Singh et al. Acad Emerg Med 2008](https://pubmed.ncbi.nlm.nih.gov/18976336/) |
-| Diphenhydramine prevents akathisia from dopamine antagonists | Class II, Level B | [Vinson et al. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15226705/) |
+| Diphenhydramine prevents akathisia from dopamine antagonists | Class II, Level B | [Vinson et al. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15658187/) |
 | Combination parenteral therapy (cocktail) more effective than single agents | Class II, Level B | [Orr et al. Acad Emerg Med 2016](https://pubmed.ncbi.nlm.nih.gov/28451092/) |
 | IV magnesium sulfate as adjunct for acute headache | Class II, Level B | [Bigal et al. Headache 2002](https://pubmed.ncbi.nlm.nih.gov/12482208/) |
 | ICHD-3 classification criteria for headache disorders | Expert Consensus | [Headache Classification Committee. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
 | SNNOOP10 red flags for secondary headache screening | Expert Consensus | [Do et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/30587518/) |
 | IV valproate for refractory acute headache | Class II, Level B | [Mathew et al. Headache 2009](https://pubmed.ncbi.nlm.nih.gov/19912346/) |
 | Occipital nerve block for refractory headache in ED | Class II, Level B | [Afridi et al. Brain 2006](https://pubmed.ncbi.nlm.nih.gov/18778577/) |
-| Chlorpromazine effective for acute headache | Class I, Level B | [Kelly et al. Emerg Med J 2009](https://pubmed.ncbi.nlm.nih.gov/19934128/) |
+| Chlorpromazine effective for acute headache | Class I, Level B | [Kelly et al. Emerg Med J 2009](https://pubmed.ncbi.nlm.nih.gov/20695065/) |
 | Simple analgesics (acetaminophen, NSAIDs) for acute headache | Class I, Level A | [Stephens et al. Cochrane 2016](https://pubmed.ncbi.nlm.nih.gov/27306653/) |
 | MOH prevalence and prevention with acute medication limits | Expert Consensus | [Diener et al. Nat Rev Neurol 2016](https://pubmed.ncbi.nlm.nih.gov/27615418/) |
 | Sumatriptan SC for acute headache with suspected migraine | Class I, Level A | [Derry et al. Cochrane Review 2014](https://pubmed.ncbi.nlm.nih.gov/24865446/) |

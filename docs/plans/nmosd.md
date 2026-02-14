@@ -328,7 +328,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | 2015 IPND diagnostic criteria for NMOSD | Expert Consensus | [Wingerchuk DM et al. Neurology 2015;85:177-189](https://pubmed.ncbi.nlm.nih.gov/26092914/) |
 | AQP4-IgG cell-based assay as diagnostic gold standard | Class II | Waters PJ et al. Arch Neurol 2012;69:615-622 |
 | IV methylprednisolone for acute NMOSD attacks | Class III, Expert Consensus | [Trebst C et al. J Neurol 2014;261:1-16](https://pubmed.ncbi.nlm.nih.gov/24272588/) |
-| Early PLEX improves outcomes in severe NMOSD relapses | Class III | Bonnan M et al. Mult Scler 2009;15:765-769 |
+| Early PLEX improves outcomes in severe NMOSD relapses | Class III | [Bonnan M et al. Mult Scler 2009;15:765-769](https://pubmed.ncbi.nlm.nih.gov/19324982/) |
 | PLEX within 5 days of steroid failure shows best outcomes | Class III | Kleiter I et al. Neurol Neuroimmunol Neuroinflamm 2016;3:e215 |
 | Eculizumab FDA approval (PREVENT trial) | Class I (RCT) | [Pittock SJ et al. N Engl J Med 2019;381:614-625](https://pubmed.ncbi.nlm.nih.gov/31050279/) |
 | Inebilizumab FDA approval (N-MOmentum trial) | Class I (RCT) | [Cree BAC et al. Lancet 2019;394:1352-1363](https://pubmed.ncbi.nlm.nih.gov/31495497/) |

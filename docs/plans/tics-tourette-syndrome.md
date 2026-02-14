@@ -280,14 +280,14 @@ SECTION B: REFERENCE
 | Fluphenazine effective for tic suppression | Class II, Level B | [Borison RL et al. J Clin Psychopharmacol 1983](https://pubmed.ncbi.nlm.nih.gov/6578865/) |
 | Stimulant medications do not worsen tics in most patients | Class I, Level A | [Pringsheim T et al. Neurology 2019 (AAN Guideline)](https://pubmed.ncbi.nlm.nih.gov/31061208/) |
 | YGTSS is the gold standard for tic severity assessment | Expert consensus | [Leckman JF et al. J Am Acad Child Adolesc Psychiatry 1989](https://pubmed.ncbi.nlm.nih.gov/2768151/) |
-| DBS (GPi/CM-Pf) for refractory Tourette syndrome | Class II-III, Level C | [Martinez-Ramirez D et al. Brain Stimul 2018](https://pubmed.ncbi.nlm.nih.gov/30718148/) |
+| DBS (GPi/CM-Pf) for refractory Tourette syndrome | Class II-III, Level C | Martinez-Ramirez D et al. Brain Stimul 2018 |
 | Botulinum toxin for focal motor and phonic tics | Class II, Level B | [Marras C et al. Mov Disord 2001](https://pubmed.ncbi.nlm.nih.gov/11391758/) |
 | Tetrabenazine for hyperkinetic movement disorders including tics | Class II, Level B | [Jankovic J, Beach J. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9040721/) |
 | Topiramate for tic reduction | Class II, Level B | [Jankovic J et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/21874743/) |
 | PANDAS/PANS clinical criteria and management | Expert consensus | [Swedo SE et al. Pediatrics 1998](https://pubmed.ncbi.nlm.nih.gov/9464208/) |
 | European guidelines on Tourette syndrome assessment and treatment | Expert consensus | [Roessner V et al. Eur Child Adolesc Psychiatry 2011](https://pubmed.ncbi.nlm.nih.gov/21445724/) |
 | AAN guideline on treatment of tics in people with Tourette syndrome and chronic tic disorders | Expert consensus, Level A-C | [Pringsheim T et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31061208/) |
-| Natural history of Tourette syndrome (waxing/waning, adolescent peak, adult improvement) | Class II, Level B | [Bloch MH et al. Lancet 2006](https://pubmed.ncbi.nlm.nih.gov/17946130/) |
+| Natural history of Tourette syndrome (waxing/waning, adolescent peak, adult improvement) | Class II, Level B | Bloch MH et al. Lancet 2006 |
 
 ---
 

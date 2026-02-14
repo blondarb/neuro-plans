@@ -271,7 +271,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | NCS/EMG recommended for diagnostic confirmation before surgery | Class II, Level B | [Werner RA et al. Muscle Nerve 2011](https://pubmed.ncbi.nlm.nih.gov/21922474/) |
 | Corticosteroid injection provides short-term symptom relief | Class I, Level A | [Marshall S et al. Cochrane Database Syst Rev 2007](https://pubmed.ncbi.nlm.nih.gov/17636670/) |
 | Carpal tunnel release surgery is effective for moderate-severe CTS | Class I, Level A | [Verdugo RJ et al. Cochrane Database Syst Rev 2008](https://pubmed.ncbi.nlm.nih.gov/18843618/) |
-| Ultrasound-guided injection improves accuracy and outcomes | Class II, Level B | [Ustun N et al. Arch Phys Med Rehabil 2013](https://pubmed.ncbi.nlm.nih.gov/24453906/) |
+| Ultrasound-guided injection improves accuracy and outcomes | Class II, Level B | Ustun N et al. Arch Phys Med Rehabil 2013 |
 | Diabetes mellitus is significant risk factor for CTS | Class II, Level B | [Pourmemari MH et al. Diabet Med 2016](https://pubmed.ncbi.nlm.nih.gov/26173490/) |
 | Clinical examination (Phalen, Tinel) has moderate sensitivity/specificity | Class II, Level B | [Middleton SD et al. J Hand Surg Eur Vol 2014](https://pubmed.ncbi.nlm.nih.gov/23735809/) |
 | Severe CTS with thenar atrophy should be referred for surgery | Class II, Level B | [Graham B et al. J Am Acad Orthop Surg 2016](https://pubmed.ncbi.nlm.nih.gov/26803543/) |

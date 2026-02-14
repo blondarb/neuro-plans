@@ -295,20 +295,20 @@ SECTION B: REFERENCE (Expand as Needed)
 | IV penicillin G 18-24 million units/day x 10-14 days for neurosyphilis | Class I, Level A | [CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/); [Workowski et al. MMWR 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | CSF VDRL is the standard diagnostic test for neurosyphilis (highly specific but insensitive) | Class I, Level B | [Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15796090/) |
 | CSF FTA-ABS has high negative predictive value (negative result essentially excludes neurosyphilis) | Class IIa, Level B | [Marra et al. JID 2004](https://pubmed.ncbi.nlm.nih.gov/14745693/) |
-| CSF pleocytosis (WBC >5) is the most sensitive marker of active neurosyphilis | Class I, Level B | [Marra et al. Clin Infect Dis 2008](https://pubmed.ncbi.nlm.nih.gov/18715153/) |
-| Ceftriaxone 2g IV daily x 10-14 days as alternative to penicillin | Class IIa, Level B | [Marra et al. CID 2000](https://pubmed.ncbi.nlm.nih.gov/11749352/); CDC STI Guidelines 2021 |
+| CSF pleocytosis (WBC >5) is the most sensitive marker of active neurosyphilis | Class I, Level B | [Marra et al. Clin Infect Dis 2008](https://pubmed.ncbi.nlm.nih.gov/18715154/) |
+| Ceftriaxone 2g IV daily x 10-14 days as alternative to penicillin | Class IIa, Level B | Marra et al. CID 2000; [CDC STI Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | Serial CSF monitoring at 6-month intervals post-treatment | Class I, Level B | [Marra et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15249615/) |
 | HIV co-infection increases risk of neurosyphilis and treatment failure | Class I, Level B | [Ghanem et al. CID 2008](https://pubmed.ncbi.nlm.nih.gov/19308585/) |
-| LP recommended for all HIV-positive patients with syphilis (especially CD4 <350 or RPR >=1:32) | Class IIa, Level B | [Ghanem et al. STD 2009](https://pubmed.ncbi.nlm.nih.gov/20180366/); CDC STI Guidelines 2021 |
+| LP recommended for all HIV-positive patients with syphilis (especially CD4 <350 or RPR >=1:32) | Class IIa, Level B | [Ghanem et al. STD 2009](https://pubmed.ncbi.nlm.nih.gov/20180366/); [CDC STI Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | Ocular syphilis requires neurosyphilis treatment (IV penicillin) regardless of CSF findings | Class I, Level B | [Oliver et al. STD 2016](https://pubmed.ncbi.nlm.nih.gov/28702511/); CDC Clinical Advisory 2015 |
-| Otic syphilis requires neurosyphilis treatment (IV penicillin) regardless of CSF findings | Class I, Level B | CDC STI Treatment Guidelines 2021 |
+| Otic syphilis requires neurosyphilis treatment (IV penicillin) regardless of CSF findings | Class I, Level B | [CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | Jarisch-Herxheimer reaction occurs in up to 50% of neurosyphilis patients | Class IIa, Level B | Expert consensus; [Belum et al. Am J Med 2013](https://pubmed.ncbi.nlm.nih.gov/23996476/) |
 | Penicillin desensitization is safe and effective for penicillin-allergic patients requiring treatment | Class IIa, Level B | [Wendel et al. NEJM 1985](https://pubmed.ncbi.nlm.nih.gov/3921835/) |
-| Four-fold decline in serum RPR by 6-12 months defines adequate treatment response | Class I, Level B | CDC STI Treatment Guidelines 2021 |
+| Four-fold decline in serum RPR by 6-12 months defines adequate treatment response | Class I, Level B | [CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/) |
 | CSF WBC should normalize within 6 months of successful treatment | Class I, Level B | [Marra et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15249615/) |
-| Retreatment indicated if CSF WBC has not declined at 6 months | Class IIa, Level B | CDC STI Guidelines 2021; [Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15796090/) |
+| Retreatment indicated if CSF WBC has not declined at 6 months | Class IIa, Level B | [CDC STI Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/); [Marra et al. CID 2004](https://pubmed.ncbi.nlm.nih.gov/15796090/) |
 | Doxycycline 200 mg BID x 28 days as third-line alternative (limited evidence) | Class IIb, Level C | Expert consensus; limited data for CNS penetration |
-| All patients with syphilis should be tested for HIV | Class I, Level A | CDC STI Treatment Guidelines 2021; WHO Guidelines |
+| All patients with syphilis should be tested for HIV | Class I, Level A | [CDC STI Treatment Guidelines 2021](https://pubmed.ncbi.nlm.nih.gov/34292926/); WHO Guidelines |
 
 ---
 

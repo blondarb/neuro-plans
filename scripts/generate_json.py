@@ -26,7 +26,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 from dataclasses import dataclass, field
 
 
@@ -573,7 +573,7 @@ class MarkdownParser:
 
         return items
 
-    def _find_section_start(self, section_key: str) -> int | None:
+    def _find_section_start(self, section_key: str) -> Optional[int]:
         """Find the starting line index of a section."""
         pattern = self.SECTION_PATTERNS.get(section_key)
         if not pattern:
@@ -585,7 +585,7 @@ class MarkdownParser:
 
         return None
 
-    def _find_next_section(self, after_key: str) -> int | None:
+    def _find_next_section(self, after_key: str) -> Optional[int]:
         """Find the next section after the given one."""
         # Get ordered list of section keys
         keys = list(self.SECTION_PATTERNS.keys())
@@ -691,7 +691,7 @@ class MarkdownParser:
 
         return items
 
-    def _parse_table_row(self, cells: list, headers: list) -> dict | None:
+    def _parse_table_row(self, cells: list, headers: list) -> Optional[dict]:
         """Parse a single table row into an item dictionary."""
         if not cells or not cells[0]:
             return None
@@ -732,7 +732,7 @@ class MarkdownParser:
 
         return item if item else None
 
-    def _map_header_to_field(self, header: str) -> str | None:
+    def _map_header_to_field(self, header: str) -> Optional[str]:
         """Map a table header to a JSON field name."""
         header = header.lower().strip()
 

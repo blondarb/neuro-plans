@@ -339,12 +339,12 @@ SECTION B: REFERENCE (Expand as Needed)
 |----------------|----------------|--------|
 | ILAE 2017 seizure classification | Class I | [Fisher RS et al. Epilepsia 2017](https://pubmed.ncbi.nlm.nih.gov/28276060/) |
 | ILAE 2014 practical definition of epilepsy | Class I | [Fisher RS et al. Epilepsia 2014](https://pubmed.ncbi.nlm.nih.gov/24730690/) |
-| EEG within 24-48h increases yield | Class II, Level B | [AAN Practice Parameter 2007](https://pubmed.ncbi.nlm.nih.gov/18025394/) |
+| EEG within 24-48h increases yield | Class II, Level B | [AAN/AES Guideline 2015 (Krumholz et al.)](https://pubmed.ncbi.nlm.nih.gov/25901057/) |
 | MRI superior to CT for epilepsy evaluation | Class I, Level A | [ILAE Neuroimaging Task Force 2019](https://pubmed.ncbi.nlm.nih.gov/31135062/) |
 | Levetiracetam non-inferior to phenytoin for acute seizure cessation | Class I, Level A | [ESETT Trial, Kapur et al. NEJM 2019](https://pubmed.ncbi.nlm.nih.gov/31774955/) |
 | Risk of recurrence after first unprovoked seizure ~40-50% | Class I | [Hauser et al. NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9459646/) |
-| Starting ASM after first seizure reduces recurrence but not long-term remission | Class I, Level A | [FIRST Trial](https://pubmed.ncbi.nlm.nih.gov/8450987/); [MESS Trial, Marson et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15950714/) |
-| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | [AAN/AES Guidelines 2009](https://pubmed.ncbi.nlm.nih.gov/19398681/); [MONEAD Study](https://pubmed.ncbi.nlm.nih.gov/31806691/) |
+| Starting ASM after first seizure reduces recurrence but not long-term remission | Class I, Level A | FIRST Trial; [MESS Trial, Marson et al. Lancet 2005](https://pubmed.ncbi.nlm.nih.gov/15950714/) |
+| Lamotrigine and levetiracetam preferred in women of childbearing potential | Class II, Level B | [AAN/AES Guidelines 2009](https://pubmed.ncbi.nlm.nih.gov/19398681/); MONEAD Study |
 | Driving restrictions reduce accident risk | Class II, Level B | Multiple observational studies |
 | Prolactin elevation supports diagnosis of epileptic seizure (if drawn <20 min) | Class II, Level B | [Chen et al. Neurology 2005](https://pubmed.ncbi.nlm.nih.gov/16157897/) |
 | Continuous EEG detects non-convulsive status in altered patients | Class II, Level B | [Claassen et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15159471/) |

@@ -391,7 +391,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Aspirin as adjunctive antiplatelet therapy in Susac syndrome | Expert Consensus | [Rennebohm RM et al. Curr Treat Options Neurol 2008;10:36-45](https://pubmed.ncbi.nlm.nih.gov/18325301/) |
 | Susac syndrome relapse risk and treatment duration recommendations | Expert Consensus | [Rennebohm RM et al. Int J Stroke 2020;15:606-614](https://pubmed.ncbi.nlm.nih.gov/29319463/) |
 | Bone protection during prolonged corticosteroid therapy | Class I (guideline) | [Buckley L et al. Arthritis Rheumatol 2017;69:1521-1537](https://pubmed.ncbi.nlm.nih.gov/28585373/) |
-| PJP prophylaxis during combined immunosuppression | Expert Consensus | Park JW et al. J Rheumatol 2018;45:135-142 |
+| PJP prophylaxis during combined immunosuppression | Expert Consensus | [Park JW et al. J Rheumatol 2018;45:135-142](https://pubmed.ncbi.nlm.nih.gov/29961681/) |
 | OCT monitoring for retinal pathology in Susac syndrome | Class III | [Ringelstein M et al. Neurology 2015;85:610-618](https://pubmed.ncbi.nlm.nih.gov/26203089/) |
 | Proposed diagnostic criteria for Susac syndrome (definite, probable, possible) | Expert Consensus | [Kleffner I et al. J Neurol Neurosurg Psychiatry 2016;87:1287-1295](https://pubmed.ncbi.nlm.nih.gov/28103199/) |
 

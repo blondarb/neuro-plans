@@ -242,10 +242,10 @@ tags:
 | Deutetrabenazine FDA-approved for TD (ARM-TD/AIM-TD) | Class I, Level A | [Anderson et al. JAMA Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/28586827/) |
 | Tetrabenazine efficacy for TD | Class II, Level B | [Kenney et al. Expert Rev Neurother 2006](https://pubmed.ncbi.nlm.nih.gov/16466307/) |
 | AIMS as standard TD assessment | Class II, Level B | [Guy W. ECDEU Assessment Manual 1976](https://pubmed.ncbi.nlm.nih.gov/1049937/) |
-| Clozapine lowest TD risk | Class II, Level B | [Correll et al. J Clin Psychiatry 2004](https://pubmed.ncbi.nlm.nih.gov/15554755/) |
+| Clozapine lowest TD risk | Class II, Level B | Correll et al. J Clin Psychiatry 2004 |
 | Second-generation antipsychotics lower TD risk than first-generation | Class I, Level A | [Carbon et al. World Psychiatry 2017](https://pubmed.ncbi.nlm.nih.gov/28861457/) |
 | Risk factors for TD (age, duration, dose, diabetes) | Class II, Level B | [Woerner et al. J Clin Psychopharmacol 1998](https://pubmed.ncbi.nlm.nih.gov/9812112/) |
-| AAN evidence-based guideline for TD treatment | Class I-IV, Level A-U | [Bhidayasiri et al. Mov Disord 2018](https://pubmed.ncbi.nlm.nih.gov/30731467/) |
+| AAN evidence-based guideline for TD treatment | Class I-IV, Level A-U | Bhidayasiri et al. Mov Disord 2018 |
 | DBS for medication-refractory TD | Class IV, Level C | [Macerollo et al. J Neurol 2020](https://pubmed.ncbi.nlm.nih.gov/32917824/) |
 | Ginkgo biloba modest benefit in TD | Class II, Level B | [Zhang et al. J Clin Psychiatry 2011](https://pubmed.ncbi.nlm.nih.gov/20868638/) |
 | Vitamin E for TD prevention (not treatment) | Class II, Level U | [Soares-Weiser et al. Cochrane 2018](https://pubmed.ncbi.nlm.nih.gov/29552749/) |

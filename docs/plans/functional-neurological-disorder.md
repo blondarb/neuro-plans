@@ -281,19 +281,19 @@ SECTION B: REFERENCE (Expand as Needed)
 | DSM-5 FND diagnostic criteria (positive neurological signs required) | Expert Consensus | [American Psychiatric Association. DSM-5. 2013](https://psychiatry.org/psychiatrists/practice/dsm) |
 | FND is a positive diagnosis based on clinical signs, not exclusion | Expert Consensus | Stone J et al. J Neurol Neurosurg Psychiatry 2020;91:615-621 |
 | Hoover sign sensitivity and specificity for functional weakness | Class II | Stone J et al. J Neurol 2002;249:1468-1474 |
-| Video-EEG gold standard for PNES/functional seizure diagnosis | Class II | LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52 |
+| Video-EEG gold standard for PNES/functional seizure diagnosis | Class II | [LaFrance WC et al. Epilepsia 2013;54 Suppl 1:44-52](https://pubmed.ncbi.nlm.nih.gov/24111933/) |
 | CODES trial: CBT for dissociative seizures (largest RCT) | Class I (RCT) | [Goldstein LH et al. Lancet Psychiatry 2020;7:491-505](https://pubmed.ncbi.nlm.nih.gov/32445688/) |
 | Physiotherapy for FND (Nielsen et al. RCT) | Class I (RCT) | [Nielsen G et al. J Neurol Neurosurg Psychiatry 2015;86:1113-1119](https://pubmed.ncbi.nlm.nih.gov/25433033/) |
 | FND prognosis: ~40% same or worse at follow-up without treatment | Class II | Stone J et al. Brain 2003;126:1692-1698 |
 | neurosymptoms.org: validated patient education resource | Expert Consensus | Stone J. Practical Neurology 2014;14:368-379 |
 | Diagnosis communication approach ("software not hardware") | Expert Consensus | Stone J et al. J Neurol Neurosurg Psychiatry 2020 |
 | Comorbid epilepsy in 10-20% of PNES patients (dual diagnosis) | Class II | [Benbadis SR et al. Neurology 2001;57:915-917](https://pubmed.ncbi.nlm.nih.gov/11552032/) |
-| Tremor entrainment as positive sign for functional tremor | Class II | Schwingenschuh P et al. Mov Disord 2016;31:1710-1719 |
+| Tremor entrainment as positive sign for functional tremor | Class II | [Schwingenschuh P et al. Mov Disord 2016;31:1710-1719](https://pubmed.ncbi.nlm.nih.gov/26879346/) |
 | DaTscan normal in functional parkinsonism | Class III | Gaig C et al. J Neurol Neurosurg Psychiatry 2012;83:1145-1149 |
-| FND-specialized physiotherapy approach | Expert Consensus | Nielsen G et al. Handb Clin Neurol 2016;139:555-569 |
+| FND-specialized physiotherapy approach | Expert Consensus | [Nielsen G et al. Handb Clin Neurol 2016;139:555-569](https://pubmed.ncbi.nlm.nih.gov/27719871/) |
 | Anti-seizure medication taper in confirmed PNES | Expert Consensus | LaFrance WC et al. Neurology 2022;98:186-196 |
-| Benzodiazepine harm in functional seizures | Class III | Reuber M et al. Epilepsy Behav 2003;4:74-78 |
-| Multidisciplinary inpatient FND rehabilitation outcomes | Class III | Saifee TA et al. J Neurol 2012;259:1934-1940 |
+| Benzodiazepine harm in functional seizures | Class III | [Reuber M et al. Epilepsy Behav 2003;4:74-78](https://pubmed.ncbi.nlm.nih.gov/12791321/) |
+| Multidisciplinary inpatient FND rehabilitation outcomes | Class III | [Saifee TA et al. J Neurol 2012;259:1934-1940](https://pubmed.ncbi.nlm.nih.gov/22584953/) |
 | Predictors of FND prognosis | Class II | Gelauff J et al. J Neurol Neurosurg Psychiatry 2019;90:615-623 |
 
 ---

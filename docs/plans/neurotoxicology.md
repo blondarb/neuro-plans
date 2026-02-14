@@ -291,16 +291,16 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Cefepime neurotoxicity — systematic review of risk factors and outcomes | Class II, Level B | [Payne et al. Crit Care 2017](https://pubmed.ncbi.nlm.nih.gov/28511182/) PMID: 28511182 |
-| Cefepime neurotoxicity — meta-analysis of incidence and EEG patterns | Class II, Level B | [Appa et al. J Antimicrob Chemother 2017](https://pubmed.ncbi.nlm.nih.gov/28402085/) PMID: 28402085 |
+| Cefepime neurotoxicity — systematic review of risk factors and outcomes | Class II, Level B | [Payne et al. Crit Care 2017](https://pubmed.ncbi.nlm.nih.gov/29137682/) PMID: 28511182 |
+| Cefepime neurotoxicity — meta-analysis of incidence and EEG patterns | Class II, Level B | [Appa et al. J Antimicrob Chemother 2017](https://pubmed.ncbi.nlm.nih.gov/29071284/) PMID: 28402085 |
 | Checkpoint inhibitor encephalitis — ASCO management guidelines for irAEs | Consensus Guidelines | [Brahmer et al. J Clin Oncol 2018](https://pubmed.ncbi.nlm.nih.gov/29442540/) PMID: 29442540 |
-| SILENT syndrome — irreversible lithium neurotoxicity review | Class III, Level C | [Adityanjee et al. Clin Neuropharmacol 2005](https://pubmed.ncbi.nlm.nih.gov/15580632/) PMID: 15580632 |
-| Hemodialysis indications for lithium toxicity — EXTRIP workgroup recommendations | Consensus Guidelines | [Decker et al. Clin J Am Soc Nephrol 2015](https://pubmed.ncbi.nlm.nih.gov/26045248/) PMID: 26045248 |
+| SILENT syndrome — irreversible lithium neurotoxicity review | Class III, Level C | [Adityanjee et al. Clin Neuropharmacol 2005](https://pubmed.ncbi.nlm.nih.gov/16062103/) PMID: 15580632 |
+| Hemodialysis indications for lithium toxicity — EXTRIP workgroup recommendations | Consensus Guidelines | [Decker et al. Clin J Am Soc Nephrol 2015](https://pubmed.ncbi.nlm.nih.gov/25583292/) PMID: 26045248 |
 | Lithium toxicity management — NKF/KDOQI clinical practice guidelines | Consensus Guidelines | [National Kidney Foundation — KDOQI Guidelines](https://www.kidney.org/professionals/kdoqi-guidelines) |
-| EEG patterns in cefepime neurotoxicity — triphasic waves and NCSE | Class III, Level C | [Fugate et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/24089386/) PMID: 24089386 |
-| Checkpoint inhibitor neurological irAEs — NCCN management consensus | Consensus Guidelines | [Thompson et al. JAMA Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/31895407/) PMID: 31895407 |
-| Cefepime-induced NCSE — case series and risk factor analysis | Class III, Level C | [Grill and Maganti. Neurocrit Care 2011](https://pubmed.ncbi.nlm.nih.gov/21547502/) PMID: 21547502 |
-| Lithium pharmacokinetics and toxicity — comprehensive review | Class III, Level C | [Timmer and Sands. Clin Pharmacokinet 1999](https://pubmed.ncbi.nlm.nih.gov/10496302/) PMID: 10496302 |
+| EEG patterns in cefepime neurotoxicity — triphasic waves and NCSE | Class III, Level C | [Fugate et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/29473642/) PMID: 24089386 |
+| Checkpoint inhibitor neurological irAEs — NCCN management consensus | Consensus Guidelines | [Thompson et al. JAMA Oncol 2020](https://pubmed.ncbi.nlm.nih.gov/32379281/) PMID: 31895407 |
+| Cefepime-induced NCSE — case series and risk factor analysis | Class III, Level C | [Grill and Maganti. Neurocrit Care 2011](https://pubmed.ncbi.nlm.nih.gov/22324166/) PMID: 21547502 |
+| Lithium pharmacokinetics and toxicity — comprehensive review | Class III, Level C | [Timmer and Sands. Clin Pharmacokinet 1999](https://pubmed.ncbi.nlm.nih.gov/10892897/) PMID: 10496302 |
 
 ---
 

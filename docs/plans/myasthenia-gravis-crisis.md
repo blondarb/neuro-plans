@@ -290,9 +290,9 @@ SECTION B: REFERENCE (Expand as Needed)
 | Avoid aminoglycosides, fluoroquinolones in MG | Class III (Harm) | FDA safety communication; multiple case reports |
 | Avoid IV magnesium in MG | Class III (Harm) | NMJ blockade; case reports of respiratory failure |
 | Steroids can transiently worsen MG (monitor closely when initiating) | Class IIa, Level B | Multiple observational studies |
-| Thymectomy benefit in non-thymomatous MG | Class I, Level B | MGTX trial ([Wolfe et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/)) |
-| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | REGAIN trial ([Howard et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29066163/)) |
-| Efgartigimod for AChR+ generalized MG | Class I, Level A | ADAPT trial ([Howard et al. Lancet Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34146511/)) |
+| Thymectomy benefit in non-thymomatous MG | Class I, Level B | [MGTX](https://pubmed.ncbi.nlm.nih.gov/27509100/) trial ([Wolfe et al. NEJM 2016](https://pubmed.ncbi.nlm.nih.gov/27509100/)) |
+| Eculizumab for refractory AChR+ generalized MG | Class I, Level A | [REGAIN](https://pubmed.ncbi.nlm.nih.gov/29066163/) trial ([Howard et al. Lancet Neurol 2017](https://pubmed.ncbi.nlm.nih.gov/29066163/)) |
+| Efgartigimod for AChR+ generalized MG | Class I, Level A | [ADAPT](https://pubmed.ncbi.nlm.nih.gov/34146511/) trial ([Howard et al. Lancet Neurol 2021](https://pubmed.ncbi.nlm.nih.gov/34146511/)) |
 | Rituximab for MuSK-positive MG | Class IIa, Level B | [Hehir et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/28801338/); [Díaz-Manera et al. (2012)](https://pubmed.ncbi.nlm.nih.gov/22218276/) |
 | 20/30/40 rule for intubation | Class IIa, Level C | Wijdicks & Klein (2017) |
 | Bedside FVC superior to ABG for monitoring | Class I, Level B | Multiple studies; ABG changes are LATE findings |

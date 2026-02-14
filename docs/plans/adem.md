@@ -265,12 +265,12 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| IPMSSG diagnostic criteria for ADEM (2013 revision) | Consensus | [Krupp LB et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23530151/) |
-| High-dose IV methylprednisolone as first-line treatment for ADEM | Class IIa, Level C | [Tenembaum S et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17898335/) |
-| IVIg for steroid-refractory ADEM | Class IIb, Level C | [Pohl D et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15596748/) |
-| PLEX for fulminant steroid-refractory ADEM | Class IIb, Level C | [Keegan M et al. Neurology 2002](https://pubmed.ncbi.nlm.nih.gov/11865132/) |
-| MOG-IgG associated ADEM: clinical features and prognosis | Class IIa, Level B | [Hacohen Y et al. Brain 2015](https://pubmed.ncbi.nlm.nih.gov/26209313/) |
-| ADEM vs MS differentiation: MRI and CSF features | Class IIa, Level B | [Callen DJ et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19221297/) |
+| IPMSSG diagnostic criteria for ADEM (2013 revision) | Consensus | [Krupp LB et al. Neurology 2013](https://pubmed.ncbi.nlm.nih.gov/23339207/) |
+| High-dose IV methylprednisolone as first-line treatment for ADEM | Class IIa, Level C | [Tenembaum S et al. Neurology 2007](https://pubmed.ncbi.nlm.nih.gov/17438235/) |
+| IVIg for steroid-refractory ADEM | Class IIb, Level C | [Pohl D et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15557527/) |
+| PLEX for fulminant steroid-refractory ADEM | Class IIb, Level C | [Keegan M et al. Neurology 2002](https://pubmed.ncbi.nlm.nih.gov/11781423/) |
+| MOG-IgG associated ADEM: clinical features and prognosis | Class IIa, Level B | Hacohen Y et al. Brain 2015 |
+| ADEM vs MS differentiation: MRI and CSF features | Class IIa, Level B | [Callen DJ et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19038852/) |
 | Oral steroid taper of 4-6 weeks reduces relapse risk | Class IIa, Level C | Expert consensus; IPMSSG recommendations |
 | Persistent MOG-IgG positivity associated with higher relapse risk | Class IIa, Level B | [Waters PJ et al. Lancet Neurol 2020](https://pubmed.ncbi.nlm.nih.gov/31708357/) |
 

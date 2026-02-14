@@ -288,7 +288,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | IBM diagnostic criteria and clinical features | Expert consensus | [Griggs RC et al. Ann Neurol 1995](https://pubmed.ncbi.nlm.nih.gov/7486861/); [Rose MR et al. Neuromuscul Disord 2013 (ENMC criteria)](https://pubmed.ncbi.nlm.nih.gov/24268584/) |
 | ENMC 2011 diagnostic criteria for IBM (clinico-pathologically defined, clinically defined, probable) | Expert consensus | [Rose MR et al. Neuromuscul Disord 2013](https://pubmed.ncbi.nlm.nih.gov/24268584/) |
 | Anti-cN1A (NT5C1A) antibody as IBM biomarker | Class II, Level B | [Pluk H et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23460448/); [Larman HB et al. Ann Neurol 2013](https://pubmed.ncbi.nlm.nih.gov/23596012/) |
-| Anti-cN1A antibody sensitivity and specificity | Class II, Level B | [Herbert MK et al. Neurology 2016](https://pubmed.ncbi.nlm.nih.gov/28148330/) |
+| Anti-cN1A antibody sensitivity and specificity | Class II, Level B | Herbert MK et al. Neurology 2016 |
 | MRI pattern of selective muscle involvement in IBM | Class II, Level B | [Cox FM et al. Rheumatology 2011](https://pubmed.ncbi.nlm.nih.gov/21288962/); [Phillips BA et al. Muscle Nerve 2001](https://pubmed.ncbi.nlm.nih.gov/11745956/) |
 | EMG showing mixed myopathic and neurogenic pattern in IBM | Class II, Level B | [Lotz BP et al. Neurology 1989](https://pubmed.ncbi.nlm.nih.gov/2477381/) |
 | Muscle biopsy: rimmed vacuoles, endomysial inflammation, amyloid deposits | Class II, Level A | [Askanas V, Engel WK. Curr Opin Rheumatol 2003](https://pubmed.ncbi.nlm.nih.gov/14569203/) |
@@ -297,16 +297,16 @@ SECTION B: REFERENCE (Expand as Needed)
 | IVIG for IBM: no significant benefit for strength; possible dysphagia improvement | Class I, Level B | [Dalakas MC et al. Neurology 1997](https://pubmed.ncbi.nlm.nih.gov/9065553/); [Dalakas MC et al. Neurology 2001](https://pubmed.ncbi.nlm.nih.gov/11552003/) |
 | Immunosuppressive therapies (steroids, methotrexate, azathioprine) not effective for IBM | Class II, Level B | [Barohn RJ et al. Neurology 1995](https://pubmed.ncbi.nlm.nih.gov/7617187/); [Leff RL et al. Ann Intern Med 1993](https://pubmed.ncbi.nlm.nih.gov/8256895/) |
 | Bimagrumab (anti-activin receptor II antibody) trial for IBM (RESILIENT) | Class I, Level B (negative) | [Hanna MG et al. Neurology 2019](https://pubmed.ncbi.nlm.nih.gov/31397289/) |
-| Arimoclomol trial for IBM (failed primary endpoint) | Class I, Level B (negative) | [Benatar M et al. JAMA Neurol 2024](https://pubmed.ncbi.nlm.nih.gov/39685797/) |
+| Arimoclomol trial for IBM (failed primary endpoint) | Class I, Level B (negative) | Benatar M et al. JAMA Neurol 2024 |
 | Rapamycin (sirolimus) trial for IBM | Class I, Level B (mixed results) | [Benveniste O et al. Lancet Rheumatol 2021](https://pubmed.ncbi.nlm.nih.gov/38273639/) |
 | Exercise is safe and beneficial in IBM | Class II, Level B | [Johnson LG et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19901250/) |
 | Creatine supplementation modest benefit in myopathies | Class II, Level C | [Tarnopolsky M et al. Neurology 2004](https://pubmed.ncbi.nlm.nih.gov/15159476/) |
-| Dysphagia prevalence and management in IBM | Class II, Level C | [Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/19096596/); [Cox FM et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/19195084/) |
-| Cricopharyngeal myotomy for IBM dysphagia | Class III (case series) | [Murata KY et al. Neuromuscul Disord 2012](https://pubmed.ncbi.nlm.nih.gov/23513817/) |
+| Dysphagia prevalence and management in IBM | Class II, Level C | [Oh TH et al. Semin Arthritis Rheum 2007](https://pubmed.ncbi.nlm.nih.gov/19096596/); [Cox FM et al. Neurology 2009](https://pubmed.ncbi.nlm.nih.gov/21119759/) |
+| Cricopharyngeal myotomy for IBM dysphagia | Class III (case series) | Murata KY et al. Neuromuscul Disord 2012 |
 | Botulinum toxin for cricopharyngeal dysfunction | Class III (case series) | [Schrey A et al. Eur Arch Otorhinolaryngol 2017](https://pubmed.ncbi.nlm.nih.gov/28870555/) |
 | Natural history of IBM: slow progression, 10-15 years to wheelchair | Class II | [Benveniste O et al. Brain 2011](https://pubmed.ncbi.nlm.nih.gov/21994327/) |
 | IBM Functional Rating Scale (IBMFRS) | Class II | [Jackson CE et al. Neurology 2008](https://pubmed.ncbi.nlm.nih.gov/18253100/) |
-| GNE myopathy (hereditary IBM) genetics and differentiation | Class II | [Nishino I et al. Science 2002](https://pubmed.ncbi.nlm.nih.gov/16290723/) |
+| GNE myopathy (hereditary IBM) genetics and differentiation | Class II | [Nishino I et al. Science 2002](https://pubmed.ncbi.nlm.nih.gov/16233243/) |
 | Pathogenesis: combined degenerative and inflammatory mechanisms in IBM | Expert review | [Greenberg SA. Nat Rev Rheumatol 2019](https://pubmed.ncbi.nlm.nih.gov/30837708/) |
 | Fall prevention in neuromuscular disease | Class II, Level C | Expert consensus; standard of care for neuromuscular disorders |
 

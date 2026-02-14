@@ -272,14 +272,14 @@ tags:
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Combined nerve and muscle biopsy has highest sensitivity (~80%) for vasculitic neuropathy diagnosis | Class IIa, Level B | [Collins MP et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/21135380/) |
+| Combined nerve and muscle biopsy has highest sensitivity (~80%) for vasculitic neuropathy diagnosis | Class IIa, Level B | [Collins MP et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/21841976/) |
 | Rituximab non-inferior to cyclophosphamide for AAV induction (RAVE trial) | Class I, Level A | [Stone JH et al. N Engl J Med 2010](https://pubmed.ncbi.nlm.nih.gov/20647199/) |
-| Cyclophosphamide remains standard induction for severe vasculitic neuropathy | Class I, Level A | [de Groot K et al. Ann Intern Med 2009](https://pubmed.ncbi.nlm.nih.gov/19805771/) |
-| NSVN requires less aggressive immunosuppression than systemic vasculitis | Class IIa, Level C | [Collins MP et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/21135380/) |
+| Cyclophosphamide remains standard induction for severe vasculitic neuropathy | Class I, Level A | [de Groot K et al. Ann Intern Med 2009](https://pubmed.ncbi.nlm.nih.gov/20838559/) |
+| NSVN requires less aggressive immunosuppression than systemic vasculitis | Class IIa, Level C | [Collins MP et al. Neurology 2010](https://pubmed.ncbi.nlm.nih.gov/21841976/) |
 | Prednisone + azathioprine effective maintenance for vasculitic neuropathy | Class IIa, Level B | [Jayne D et al. N Engl J Med 2003](https://pubmed.ncbi.nlm.nih.gov/12840090/) |
 | Rituximab maintenance prevents relapse in AAV (MAINRITSAN trial) | Class I, Level A | [Guillevin L et al. N Engl J Med 2014](https://pubmed.ncbi.nlm.nih.gov/25372085/) |
-| Peripheral Nerve Society guideline on classification and diagnosis of vasculitic neuropathy | Guideline | [Collins MP et al. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21199100/) |
-| PAN associated with hepatitis B; antiviral therapy is first-line for HBV-PAN | Class IIa, Level B | [Trepo C, Guillevin L. Medicine 2016](https://pubmed.ncbi.nlm.nih.gov/27472721/) |
+| Peripheral Nerve Society guideline on classification and diagnosis of vasculitic neuropathy | Guideline | [Collins MP et al. J Peripher Nerv Syst 2010](https://pubmed.ncbi.nlm.nih.gov/21040139/) |
+| PAN associated with hepatitis B; antiviral therapy is first-line for HBV-PAN | Class IIa, Level B | Trepo C, Guillevin L. Medicine 2016 |
 | Plasma exchange for severe renal vasculitis (PEXIVAS trial — nuanced benefit) | Class I, Level A | [Walsh M et al. N Engl J Med 2020](https://pubmed.ncbi.nlm.nih.gov/32053298/) |
 
 ---

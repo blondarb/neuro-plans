@@ -307,7 +307,7 @@ SECTION B: REFERENCE (Expand as Needed)
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
 | CT head sensitivity ~98-100% within 6h for SAH | Class I, Level A | [Perry et al. (BMJ 2011)](https://pubmed.ncbi.nlm.nih.gov/21768192/) — Prospective cohort; 3132 patients; sensitivity 100% (95% CI 97-100%) for CT within 6h |
-| LP mandatory if CT negative but clinical suspicion for SAH persists | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
+| LP mandatory if CT negative but clinical suspicion for SAH persists | Class I, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
 | Xanthochromia by spectrophotometry is gold standard CSF test for SAH | Class I, Level B | [Dubosh NM, Bellolio MF, Rabinstein AA, Edlow JA (Stroke 2016)](https://pubmed.ncbi.nlm.nih.gov/26797666/); sensitivity >95% at 12h-2 weeks |
 | CTA sensitivity 95-100% for aneurysms >3mm | Class I, Level A | [White PM et al. (Radiology 2001)](https://pubmed.ncbi.nlm.nih.gov/11376263/) — Prospective blinded comparison of CTA and MRA for intracranial aneurysm detection; [White PM et al. (Radiology 2000)](https://pubmed.ncbi.nlm.nih.gov/11058629/) — Systematic review of noninvasive imaging for intracranial aneurysms |
 | Anticoagulation for CVT even with hemorrhagic infarct | Class I, Level A | [ESO Guidelines (Ferro et al. Eur J Neurol 2017)](https://pubmed.ncbi.nlm.nih.gov/28833980/); [AHA/ASA CVT Guidelines (Saposnik et al. Stroke 2011)](https://pubmed.ncbi.nlm.nih.gov/21293023/) |
@@ -320,8 +320,8 @@ SECTION B: REFERENCE (Expand as Needed)
 | Ottawa SAH Rule: 100% sensitivity for ruling out SAH in ED (validated clinical decision rule) | Class IIa, Level B | [Perry et al. (JAMA 2013)](https://pubmed.ncbi.nlm.nih.gov/24065011/) |
 | Recurrent thunderclap headaches over days suggest RCVS over SAH | Class IIa, Level C | [Ducros et al. (Brain 2007)](https://pubmed.ncbi.nlm.nih.gov/18025032/) |
 | Primary thunderclap headache is a diagnosis of exclusion only | Class I, Level C | [ICHD-3 (Headache Classification Committee, Cephalalgia 2018)](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
-| SBP <160 until aneurysm secured in SAH | Class I, Level B | [AHA/ASA SAH Guidelines (Connolly et al. Stroke 2012)](https://pubmed.ncbi.nlm.nih.gov/22556195/) |
-| Early aneurysm securing (<24h) improves outcomes | Class I, Level B | [AHA/ASA SAH Guidelines 2012](https://pubmed.ncbi.nlm.nih.gov/22556195/); [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
+| SBP <160 until aneurysm secured in SAH | Class I, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/) |
+| Early aneurysm securing (<24h) improves outcomes | Class I, Level B | [AHA/ASA 2023 SAH Guidelines (Hoh et al.)](https://pubmed.ncbi.nlm.nih.gov/37212182/); [de Gans et al. (Neurosurgery 2002)](https://pubmed.ncbi.nlm.nih.gov/11844269/) |
 
 ---
 

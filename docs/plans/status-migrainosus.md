@@ -293,9 +293,9 @@ SECTION B: REFERENCE (Expand as Needed)
 | Chlorpromazine IV effective for acute migraine in ED | Class I, Level B | [Kelly et al. Ann Emerg Med 2017](https://pubmed.ncbi.nlm.nih.gov/30270920/) |
 | Sub-anesthetic ketamine infusion for refractory migraine | Class III, Level C | [Pomeroy et al. Headache 2017](https://pubmed.ncbi.nlm.nih.gov/28025837/); [Schwenk et al. Reg Anesth Pain Med 2018](https://pubmed.ncbi.nlm.nih.gov/29923953/) |
 | IV lidocaine for refractory migraine and status migrainosus | Class III, Level C | [Williams & Bhatt. Anesthesiology 2007](https://pubmed.ncbi.nlm.nih.gov/18073577/); [Rosen et al. Headache 2009](https://pubmed.ncbi.nlm.nih.gov/19222600/) |
-| Diphenhydramine co-administration prevents akathisia from dopamine antagonists | Class II, Level B | [Vinson. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15226705/) |
+| Diphenhydramine co-administration prevents akathisia from dopamine antagonists | Class II, Level B | [Vinson. Ann Emerg Med 2004](https://pubmed.ncbi.nlm.nih.gov/15658187/) |
 | ICHD-3 diagnostic criteria for status migrainosus | Consensus | [ICHD-3. Cephalalgia 2018](https://pubmed.ncbi.nlm.nih.gov/29368949/) |
-| AHS consensus statement on migraine treatment in the ED | Consensus/Guidelines | [American Headache Society. Headache 2016](https://pubmed.ncbi.nlm.nih.gov/27300483/) |
+| AHS consensus statement on migraine treatment in the ED | Consensus/Guidelines | American Headache Society. Headache 2016 |
 | Lifestyle modifications (sleep, exercise, stress management) reduce migraine frequency | Class I, Level B | [AAN/AHS Practice Guidelines, Silberstein et al. Neurology 2012](https://pubmed.ncbi.nlm.nih.gov/22529202/) |
 
 ---

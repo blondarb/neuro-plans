@@ -321,23 +321,23 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| Empiric ceftriaxone + metronidazole +/- vancomycin for brain abscess | Class I, Level B | [Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278579/) — comprehensive review of brain abscess management |
+| Empiric ceftriaxone + metronidazole +/- vancomycin for brain abscess | Class I, Level B | Brouwer et al. Clin Microbiol Rev 2014 — comprehensive review of brain abscess management |
 | MRI with DWI to distinguish abscess from tumor (restricted diffusion = abscess) | Class I, Level A | [Reddy et al. AJNR 2006](https://pubmed.ncbi.nlm.nih.gov/18632487/) — DWI specificity ~95% for abscess vs. necrotic tumor |
 | Stereotactic aspiration for abscesses >2.5 cm | Class IIa, Level B | [Mamelak et al. Neurosurgery 1995](https://pubmed.ncbi.nlm.nih.gov/7708172/) — CT-guided aspiration outcomes and indications |
-| Total duration of IV antibiotics 6-8 weeks | Class I, Level B | [Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278579/); [Helweg-Larsen et al. Clin Microbiol Infect 2012](https://pubmed.ncbi.nlm.nih.gov/23193986/) |
-| Seizure prophylaxis for supratentorial brain abscess | Class IIa, Level C | [Lv et al. World Neurosurg 2019](https://pubmed.ncbi.nlm.nih.gov/31295606/) — seizure incidence 25-50% in brain abscess; prophylaxis widely practiced |
-| Dexamethasone only for significant mass effect (not routine) | Class IIb, Level C | [Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278579/) — steroids may impair capsule formation and reduce antibiotic penetration; use only when necessary |
+| Total duration of IV antibiotics 6-8 weeks | Class I, Level B | Brouwer et al. Clin Microbiol Rev 2014; [Helweg-Larsen et al. Clin Microbiol Infect 2012](https://pubmed.ncbi.nlm.nih.gov/23193986/) |
+| Seizure prophylaxis for supratentorial brain abscess | Class IIa, Level C | Lv et al. World Neurosurg 2019 — seizure incidence 25-50% in brain abscess; prophylaxis widely practiced |
+| Dexamethasone only for significant mass effect (not routine) | Class IIb, Level C | Brouwer et al. Clin Microbiol Rev 2014 — steroids may impair capsule formation and reduce antibiotic penetration; use only when necessary |
 | Surgical excision for posterior fossa abscess | Class IIa, Level B | [Muzumdar et al. J Neurosurg 2011](https://pubmed.ncbi.nlm.nih.gov/22069434/) — posterior fossa abscesses have higher morbidity due to brainstem compression and hydrocephalus |
 | Pyrimethamine + sulfadiazine for Toxoplasma abscess | Class I, Level A | [IDSA Guidelines — Kaplan et al. MMWR 2009](https://pubmed.ncbi.nlm.nih.gov/19357635/) — standard treatment for CNS toxoplasmosis in HIV |
 | Voriconazole first-line for Aspergillus brain abscess | Class I, Level A | [IDSA Aspergillosis Guidelines — Patterson et al. CID 2016](https://pubmed.ncbi.nlm.nih.gov/27365388/) |
 | MR spectroscopy to differentiate abscess vs. tumor | Class IIa, Level B | [Lai et al. AJNR 2002](https://pubmed.ncbi.nlm.nih.gov/12223380/) — amino acid peaks and succinate specific for abscess |
 | Serial imaging to monitor treatment response | Class I, Level B | Expert consensus; imaging at 1-2 week intervals during treatment; abscess should decrease in size by 2-4 weeks |
-| Source identification and control (dental, otogenic, sinus) | Class I, Level B | [Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278579/) — source control essential to prevent recurrence; dental source in 25-30% |
+| Source identification and control (dental, otogenic, sinus) | Class I, Level B | Brouwer et al. Clin Microbiol Rev 2014 — source control essential to prevent recurrence; dental source in 25-30% |
 | Metronidazole for anaerobic coverage with excellent CNS penetration | Class I, Level B | [Ingham et al. J Antimicrob Chemother 1977](https://pubmed.ncbi.nlm.nih.gov/73952/); virtually 100% oral bioavailability allows early PO switch |
 | Endocarditis screening in brain abscess with S. aureus bacteremia | Class I, Level A | [AHA Endocarditis Guidelines — Baddour et al. Circulation 2015](https://pubmed.ncbi.nlm.nih.gov/26373316/) |
 | LP generally contraindicated in brain abscess due to herniation risk | Class I, Level B | Expert consensus; mass effect from abscess creates herniation risk with CSF drainage |
 | Craniotomy for multiloculated, posterior fossa, or fungal abscesses | Class IIa, Level B | [Menon et al. J Clin Neurosci 2008](https://pubmed.ncbi.nlm.nih.gov/18078755/) — excision preferred when aspiration unlikely to be curative |
-| EVD for intraventricular rupture with ventriculitis | Class IIa, Level C | [Brouwer et al. Clin Microbiol Rev 2014](https://pubmed.ncbi.nlm.nih.gov/25278579/) — intraventricular rupture carries 80-100% mortality without intervention |
+| EVD for intraventricular rupture with ventriculitis | Class IIa, Level C | Brouwer et al. Clin Microbiol Rev 2014 — intraventricular rupture carries 80-100% mortality without intervention |
 
 ---
 

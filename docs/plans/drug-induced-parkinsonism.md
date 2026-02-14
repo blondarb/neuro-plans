@@ -272,26 +272,26 @@ SECTION B: REFERENCE (Expand as Needed)
 
 | Recommendation | Evidence Level | Source |
 |----------------|----------------|--------|
-| DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs | Class II, Level B | Shin HW, Chung SJ. J Clin Neurol 2012 [PubMed: 22787491](https://pubmed.ncbi.nlm.nih.gov/22787491/) |
-| Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD | Class II, Level B | Lopez-Sendon J et al. Expert Rev Neurother 2012 [PubMed: 23002938](https://pubmed.ncbi.nlm.nih.gov/23002938/) |
-| DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity | Class I, Level A | Brigo F et al. Parkinsonism Relat Disord 2014 [PubMed: 25258329](https://pubmed.ncbi.nlm.nih.gov/25258329/) |
-| Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use | Class II, Level B | Avorn J et al. Ann Intern Med 1995 [PubMed: 7872590](https://pubmed.ncbi.nlm.nih.gov/7872590/) |
-| Symptoms typically resolve within weeks to months after discontinuation of the causative agent | Class II, Level B | Brigo F et al. J Neurol Sci 2014 [PubMed: 25108809](https://pubmed.ncbi.nlm.nih.gov/25108809/) |
-| Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD | Class II, Level B | Burn DJ, Brooks DJ. Brain 1993 [PubMed: 8461577](https://pubmed.ncbi.nlm.nih.gov/8461577/) |
-| DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD | Class I, Level A | Tinazzi M et al. Neurology 2009 [PubMed: 19528516](https://pubmed.ncbi.nlm.nih.gov/19528516/) |
-| Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis | Class III, Level C | Silver H, Geraisy N. J Clin Psychiatry 1995 [PubMed: 7615484](https://pubmed.ncbi.nlm.nih.gov/7615484/) |
-| Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly | Class II, Level B | Ward KM, Citrome L. Ther Adv Psychopharmacol 2018 [PubMed: 30181862](https://pubmed.ncbi.nlm.nih.gov/30181862/) |
-| Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes | Class I, Level A | Leucht S et al. Lancet 2013 [PubMed: 23810019](https://pubmed.ncbi.nlm.nih.gov/23810019/) |
-| Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis | Class I, Level A | Kane J et al. Arch Gen Psychiatry 1988 [PubMed: 3046553](https://pubmed.ncbi.nlm.nih.gov/3046553/) |
-| Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics | Class I, Level B | Divac N et al. Psychiatr Danub 2014 [PubMed: 25191777](https://pubmed.ncbi.nlm.nih.gov/25191777/) |
-| Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US | Class II, Level B | Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 [PubMed: 20608992](https://pubmed.ncbi.nlm.nih.gov/20608992/) |
-| Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation | Class III, Level C | Armon C et al. Neurology 1996 [PubMed: 8710098](https://pubmed.ncbi.nlm.nih.gov/8710098/) |
-| MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP | Class I, Level A | Postuma RB et al. Mov Disord 2015 [PubMed: 26474316](https://pubmed.ncbi.nlm.nih.gov/26474316/) |
-| Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool | Class II, Level B | Morley JF, Duda JE. Mov Disord 2010 [PubMed: 20669302](https://pubmed.ncbi.nlm.nih.gov/20669302/) |
-| MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP | Class II, Level B | Spiegel J et al. Mov Disord 2005 [PubMed: 15584032](https://pubmed.ncbi.nlm.nih.gov/15584032/) |
-| Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism | Class I, Level A | Kovac AL. Drugs 2000 [PubMed: 10776835](https://pubmed.ncbi.nlm.nih.gov/10776835/) |
-| Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses | Class II, Level B | Thanvi B, Treadwell S. Postgrad Med J 2009 [PubMed: 19789195](https://pubmed.ncbi.nlm.nih.gov/19789195/) |
-| Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide | Class II, Level B | Reddymasu SC et al. Expert Opin Drug Saf 2007 [PubMed: 17559511](https://pubmed.ncbi.nlm.nih.gov/17559511/) |
+| DIP is the second most common cause of parkinsonism after idiopathic PD; occurs in 20-40% of patients on DRBAs | Class II, Level B | Shin HW, Chung SJ. J Clin Neurol 2012 PubMed: 22787491 |
+| Symmetric parkinsonism and absence of rest tremor favor DIP over idiopathic PD | Class II, Level B | Lopez-Sendon J et al. Expert Rev Neurother 2012 PubMed: 23002938 |
+| DaTscan (ioflupane I-123) effectively differentiates DIP from idiopathic PD with high sensitivity and specificity | Class I, Level A | Brigo F et al. Parkinsonism Relat Disord 2014 PubMed: 25258329 |
+| Metoclopramide is the most common non-antipsychotic cause of DIP; FDA black box warning for prolonged use | Class II, Level B | Avorn J et al. Ann Intern Med 1995 PubMed: 7872590 |
+| Symptoms typically resolve within weeks to months after discontinuation of the causative agent | Class II, Level B | Brigo F et al. J Neurol Sci 2014 PubMed: 25108809 |
+| Approximately 10-15% of DIP patients have persistent parkinsonism after drug withdrawal suggesting unmasked underlying PD | Class II, Level B | Burn DJ, Brooks DJ. Brain 1993 PubMed: 8461577 |
+| DaTscan is normal in pure DIP but abnormal in patients with DIP unmasking subclinical PD | Class I, Level A | Tinazzi M et al. Neurology 2009 PubMed: 19528516 |
+| Amantadine provides symptomatic benefit for drug-induced parkinsonism without worsening psychosis | Class III, Level C | Silver H, Geraisy N. J Clin Psychiatry 1995 PubMed: 7615484 |
+| Anticholinergics (benztropine, trihexyphenidyl) are effective for DIP but limited by cognitive side effects especially in elderly | Class II, Level B | Ward KM, Citrome L. Ther Adv Psychopharmacol 2018 PubMed: 30181862 |
+| Quetiapine and clozapine have lowest EPS risk among antipsychotics and are preferred substitutes | Class I, Level A | [Leucht S et al. Lancet 2013 PubMed: 23810019](https://pubmed.ncbi.nlm.nih.gov/24315170/) |
+| Clozapine has the lowest risk of EPS among all antipsychotics but requires REMS monitoring for agranulocytosis | Class I, Level A | Kane J et al. Arch Gen Psychiatry 1988 PubMed: 3046553 |
+| Risperidone produces dose-dependent EPS; higher doses (>6 mg/day) have EPS risk similar to typical antipsychotics | Class I, Level B | Divac N et al. Psychiatr Danub 2014 PubMed: 25191777 |
+| Calcium channel blockers (flunarizine, cinnarizine) are important causes of DIP outside the US | Class II, Level B | Bondon-Guitton E et al. Fundam Clin Pharmacol 2011 PubMed: 20608992 |
+| Valproate-induced parkinsonism is dose-related and typically reversible with dose reduction or discontinuation | Class III, Level C | [Armon C et al. Neurology 1996 PubMed: 8710098](https://pubmed.ncbi.nlm.nih.gov/8960753/) |
+| MDS Clinical Diagnostic Criteria distinguish clinically established and probable PD from secondary causes including DIP | Class I, Level A | Postuma RB et al. Mov Disord 2015 PubMed: 26474316 |
+| Olfactory testing helps distinguish DIP (normal) from idiopathic PD (impaired) as a supportive clinical tool | Class II, Level B | Morley JF, Duda JE. Mov Disord 2010 PubMed: 20669302 |
+| MIBG cardiac scintigraphy shows reduced uptake in PD but normal uptake in pure DIP | Class II, Level B | Spiegel J et al. Mov Disord 2005 PubMed: 15584032 |
+| Ondansetron is a safe antiemetic alternative that does not block dopamine receptors and does not cause parkinsonism | Class I, Level A | Kovac AL. Drugs 2000 PubMed: 10776835 |
+| Risk factors for DIP include female sex, older age, pre-existing brain injury, and higher DRBA doses | Class II, Level B | [Thanvi B, Treadwell S. Postgrad Med J 2009 PubMed: 19789195](https://pubmed.ncbi.nlm.nih.gov/19528308/) |
+| Domperidone does not significantly cross the blood-brain barrier and has minimal extrapyramidal side effects compared to metoclopramide | Class II, Level B | Reddymasu SC et al. Expert Opin Drug Saf 2007 PubMed: 17559511 |
 | Serial clinical monitoring with UPDRS motor scores recommended to track DIP resolution and identify non-resolving cases requiring DaTscan | Class III, Level C | Expert consensus; movement disorders practice |
 
 ---
