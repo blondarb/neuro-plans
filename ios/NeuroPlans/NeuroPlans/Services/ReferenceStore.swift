@@ -11,6 +11,7 @@ final class ReferenceStore {
     var tools: [NeurologyTool] = []
     var isLoaded = false
     var searchText: String = ""
+    var loadingError: String? = nil
 
     // MARK: - Computed
 
@@ -110,19 +111,26 @@ final class ReferenceStore {
     private func loadJSON<T: Decodable>(_ type: T.Type, from resource: String) async -> T {
         do {
             guard let url = Bundle.main.url(forResource: resource, withExtension: "json") else {
-                print("\(resource).json not found in bundle")
+                let msg = "\(resource).json not found in bundle"
+                print(msg)
+                await MainActor.run { self.loadingError = msg }
                 if let empty = [String]() as? T { return empty }
-                fatalError("\(resource).json missing")
+                if let empty = [ClinicalScale]() as? T { return empty }
+                if let empty = [NeurologyExam]() as? T { return empty }
+                if let empty = [NeurologyTool]() as? T { return empty }
+                return [] as! T
             }
             let data = try Data(contentsOf: url)
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
-            print("Failed to load \(resource): \(error)")
+            let msg = "Failed to load \(resource): \(error.localizedDescription)"
+            print(msg)
+            await MainActor.run { self.loadingError = msg }
             if let empty = [String]() as? T { return empty }
             if let empty = [ClinicalScale]() as? T { return empty }
             if let empty = [NeurologyExam]() as? T { return empty }
             if let empty = [NeurologyTool]() as? T { return empty }
-            fatalError("Cannot decode \(resource).json: \(error)")
+            return [] as! T
         }
     }
 }

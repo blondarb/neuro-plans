@@ -12,6 +12,7 @@ final class PlanStore {
     var selectedSetting: ClinicalSetting = .opd
     var searchText: String = ""
     var isLoaded = false
+    var loadingError: String? = nil
 
     // MARK: - Computed
 
@@ -53,7 +54,10 @@ final class PlanStore {
         guard !isLoaded else { return }
         do {
             guard let url = Bundle.main.url(forResource: "plans", withExtension: "json") else {
-                print("plans.json not found in bundle")
+                await MainActor.run {
+                    self.loadingError = "Clinical plans data file not found."
+                    self.isLoaded = true
+                }
                 return
             }
             let data = try Data(contentsOf: url)
@@ -63,7 +67,10 @@ final class PlanStore {
                 self.isLoaded = true
             }
         } catch {
-            print("Failed to load plans: \(error)")
+            await MainActor.run {
+                self.loadingError = "Unable to load clinical plans: \(error.localizedDescription)"
+                self.isLoaded = true
+            }
         }
     }
 

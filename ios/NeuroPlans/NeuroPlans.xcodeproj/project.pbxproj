@@ -58,6 +58,8 @@
 		F7E0D4E711260D7A93815FB5 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED622C2AA2DA8137479E67E7 /* PlanDetailView.swift */; };
 		F7EF2FF2CAE7C504BB9CF5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D7F43EDCBBEE35BABFD04F /* Assets.xcassets */; };
 		FBB2642BE892D5D9682AA148 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = D655C68C3D68C9F5B364C874 /* Supabase */; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6A7B8C9D0E1F2A3 /* PrivacyInfo.xcprivacy */; };
+		C1D2E3F4A5B6C7D8E9F0A1B2 /* SpecialtyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E3F4A5B6C7D8E9F0A1B2C3 /* SpecialtyConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		4316A3C3972A79AD6DFBE220 /* plans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plans.json; sourceTree = "<group>"; };
 		447DC3FE92719D0004BD825A /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
 		4B0E722DF8A276C1D329B6C7 /* NeuroPlansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroPlansApp.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6A7B8C9D0E1F2A3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E1A2B3C4D5E6F7A8B9C0D1E2 /* NeuroPlans.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuroPlans.entitlements; sourceTree = "<group>"; };
 		57C3AF7498A55F90D742C9B8 /* SubscriptionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
 		5B5A8A4F9D0A4FEC2340EBE7 /* ToolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDetailView.swift; sourceTree = "<group>"; };
 		5CB60595666619CF99A27966 /* PriorityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityBadge.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		F0D8831CF461F1C86B0E4045 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		F7901E6A9C0D4ABCFC83DE4E /* Neuro Plans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neuro Plans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BF42F25BA33008E27C26B0 /* SectionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionGroup.swift; sourceTree = "<group>"; };
+		D2E3F4A5B6C7D8E9F0A1B2C3 /* SpecialtyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialtyConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +227,10 @@
 		81A380EB15907B5D82018DD9 /* NeuroPlans */ = {
 			isa = PBXGroup;
 			children = (
+				E1A2B3C4D5E6F7A8B9C0D1E2 /* NeuroPlans.entitlements */,
+				B2C3D4E5F6A7B8C9D0E1F2A3 /* PrivacyInfo.xcprivacy */,
 				4B0E722DF8A276C1D329B6C7 /* NeuroPlansApp.swift */,
+				D2E3F4A5B6C7D8E9F0A1B2C3 /* SpecialtyConfig.swift */,
 				A7D7F43EDCBBEE35BABFD04F /* Assets.xcassets */,
 				C3A2F3A3BCE1A888A30F8D8E /* Models */,
 				52F15E108E9EA4CF371860B8 /* Services */,
@@ -379,6 +387,7 @@
 				CF0CB7A1ED1FA097A22803EC /* exams.json in Resources */,
 				F16162B36E17F436547EE7C9 /* tools.json in Resources */,
 				F7EF2FF2CAE7C504BB9CF5E1 /* Assets.xcassets in Resources */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +443,7 @@
 				5F092F0471C77F0AE4EDAA48 /* EmailVerificationView.swift in Sources */,
 				716491BF0775D5E24E0FE73F /* ErrorReportMailView.swift in Sources */,
 				5432584D441E7602AECCDE45 /* PaywallView.swift in Sources */,
+				C1D2E3F4A5B6C7D8E9F0A1B2 /* SpecialtyConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,8 +512,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NeuroPlans/NeuroPlans.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YUSSM83T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Neuro Plans";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -589,8 +601,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NeuroPlans/NeuroPlans.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YUSSM83T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Neuro Plans";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

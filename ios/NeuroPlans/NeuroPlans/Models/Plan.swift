@@ -314,6 +314,12 @@ struct DifferentialItem: Codable, Identifiable {
     let distinguishing: String?
 
     var id: String { condition ?? UUID().uuidString }
+
+    private enum CodingKeys: String, CodingKey {
+        case condition = "diagnosis"
+        case features
+        case distinguishing = "tests"
+    }
 }
 
 struct EvidenceItem: Codable, Identifiable {
@@ -335,8 +341,19 @@ struct MonitoringItem: Codable, Identifiable {
     let frequency: String?
     let target: String?
     let action: String?
+    let interpretation: String?
+    let ED: String?
+    let HOSP: String?
+    let OPD: String?
+    let ICU: String?
 
     var id: String { parameter ?? UUID().uuidString }
+
+    private enum CodingKeys: String, CodingKey {
+        case parameter = "item"
+        case frequency, target, action, interpretation
+        case ED, HOSP, OPD, ICU
+    }
 }
 
 struct DispositionItem: Codable, Identifiable {
@@ -345,6 +362,11 @@ struct DispositionItem: Codable, Identifiable {
     let notes: String?
 
     var id: String { setting ?? UUID().uuidString }
+
+    private enum CodingKeys: String, CodingKey {
+        case setting = "disposition"
+        case criteria, notes
+    }
 }
 
 // MARK: - Unified Selectable Item (for builder)

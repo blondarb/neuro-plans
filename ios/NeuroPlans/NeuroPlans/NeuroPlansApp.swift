@@ -29,6 +29,32 @@ struct NeuroPlansApp: App {
                         store.loadRecents()
                         await referenceStore.loadAll()
                     }
+                    .alert("Data Loading Error",
+                           isPresented: .constant(store.loadingError != nil || referenceStore.loadingError != nil)) {
+                        Button("Retry") {
+                            let planError = store.loadingError != nil
+                            let refError = referenceStore.loadingError != nil
+                            store.loadingError = nil
+                            referenceStore.loadingError = nil
+                            if planError { store.isLoaded = false }
+                            if refError { referenceStore.isLoaded = false }
+                            Task {
+                                if planError {
+                                    await store.loadPlans()
+                                    store.loadRecents()
+                                }
+                                if refError {
+                                    await referenceStore.loadAll()
+                                }
+                            }
+                        }
+                        Button("Continue Anyway", role: .cancel) {
+                            store.loadingError = nil
+                            referenceStore.loadingError = nil
+                        }
+                    } message: {
+                        Text(store.loadingError ?? referenceStore.loadingError ?? "An error occurred loading clinical data.")
+                    }
             } else {
                 DisclaimerView(hasAcceptedDisclaimer: $hasAcceptedDisclaimer)
                     .environment(entitlementService)
