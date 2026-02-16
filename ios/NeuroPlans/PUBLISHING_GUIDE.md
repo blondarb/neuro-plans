@@ -466,6 +466,48 @@ Please guide me through the next steps.
 
 ---
 
+## Submission Log: Version 1.0 (February 15, 2026)
+
+**Status: Submitted for App Review (Waiting for Review)**
+
+### What Was Done
+
+| Step | Status | Notes |
+|------|--------|-------|
+| Apple Developer Account | Done | Individual enrollment, Team ID: 92YUSSM83T |
+| App Store Connect record | Done | App ID: 6759209586, Bundle ID: com.neuroplans.app |
+| Subscription configured | Done | Annual $12.99, Group ID: 21934633, Product Apple ID: 6759209768 |
+| Subscription group localization | Done | English (U.S.), display name: "Neuro Plans Subscriptions" |
+| Subscription review notes | Done | Describes paywall flow and trial |
+| Age rating | Done | 4+ (Medical/Treatment Information: Infrequent/Mild) |
+| App Privacy | Done | Published as "Data Not Collected" |
+| Pricing | Done | Free ($0.00), 175 countries |
+| iPhone screenshots (6.9") | Done | 5 screenshots, 1320x2868 (using 6.5" display slot) |
+| iPad screenshots (13") | Done | 5 screenshots, 2048x2732 |
+| Build archived via xcodebuild | Done | Archive at /tmp/NeuroPlans.xcarchive |
+| Build uploaded via xcodebuild | Done | Version 1.0.0, Build 1 |
+| Export compliance | Done | No encryption (HTTPS exemption only) |
+| Build selected on version page | Done | Build 1.0.0 (1) |
+| Submitted for review | Done | February 15, 2026 |
+
+### What Was NOT Done (Post-Approval)
+
+- **Introductory Offer (14-day free trial):** Not available in App Store Connect UI for first-time subscriptions. Must be configured after initial approval.
+- **Agreements, Tax, and Banking:** Required for receiving subscription payments. Must be completed in App Store Connect Business section.
+- **Subscription review screenshot:** Optional, was not required for submission.
+- **Sandbox tester:** Not created yet. Recommended for post-approval testing.
+
+### Key Learnings
+
+1. **iPad screenshots are required** if `TARGETED_DEVICE_FAMILY = "1,2"` (iPhone + iPad). Set to `"1"` if iPhone-only to avoid this requirement.
+2. **App Privacy must be explicitly Published** -- configuring responses is not enough; you must click the "Publish" button.
+3. **Subscription group localization is required** -- even for English, you must create a localization entry for the subscription group.
+4. **Screenshot uploads require manual interaction** -- browser automation cannot programmatically set files on file inputs due to browser security. Plan for manual drag-and-drop.
+5. **xcodebuild can archive and export from CLI** -- no Xcode GUI needed for build/upload if signing is configured.
+6. **Export compliance "No" for HTTPS-only apps** -- standard HTTPS exemption applies.
+
+---
+
 ## Support Contacts
 
 - Apple Developer Support: https://developer.apple.com/contact/
