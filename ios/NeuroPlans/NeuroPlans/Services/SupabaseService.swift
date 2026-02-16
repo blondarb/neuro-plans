@@ -6,8 +6,8 @@ enum SupabaseService {
     // MARK: - Client
 
     static let client = SupabaseClient(
-        supabaseURL: URL(string: "https://cyaginuvsqcbvyeuizlu.supabase.co")!,
-        supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5YWdpbnV2c3FjYnZ5ZXVpemx1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwMDY5NjUsImV4cCI6MjA4NjU4Mjk2NX0.UGJN-vnfGy7eECbmT33g4-OXME-2bbwC9sm3ckOmpWA"
+        supabaseURL: URL(string: SpecialtyConfig.supabaseUrl)!,
+        supabaseKey: SpecialtyConfig.supabaseAnonKey
     )
 
     // MARK: - Models
@@ -29,21 +29,23 @@ enum SupabaseService {
         let email: String
         let domain: String
         let isWhitelisted: Bool
+        let specialty: String
 
         enum CodingKeys: String, CodingKey {
-            case email, domain
+            case email, domain, specialty
             case isWhitelisted = "is_whitelisted"
         }
     }
 
     // MARK: - Domain Whitelist
 
-    /// Fetch active whitelisted domains from Supabase
-    static func fetchWhitelistedDomains() async throws -> [String] {
+    /// Fetch active whitelisted domains from Supabase, filtered by specialty
+    static func fetchWhitelistedDomains(for specialty: String) async throws -> [String] {
         let domains: [WhitelistedDomain] = try await client
             .from("whitelisted_domains")
             .select()
             .eq("is_active", value: true)
+            .or("specialties.cs.{\(specialty)},specialties.cs.{all}")
             .execute()
             .value
 
@@ -57,7 +59,8 @@ enum SupabaseService {
         let record = VerifiedEmailRecord(
             email: email,
             domain: domain,
-            isWhitelisted: isWhitelisted
+            isWhitelisted: isWhitelisted,
+            specialty: SpecialtyConfig.specialty
         )
 
         try await client

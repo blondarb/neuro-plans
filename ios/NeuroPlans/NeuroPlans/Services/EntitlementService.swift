@@ -53,7 +53,7 @@ final class EntitlementService {
     static let trialDurationDays = 14
 
     /// Product identifier for annual subscription
-    static let annualSubscriptionID = "com.neuroplans.annual"
+    static let annualSubscriptionID = SpecialtyConfig.storeKitProductId
 
     // MARK: - Domain Cache
 
@@ -278,7 +278,7 @@ final class EntitlementService {
         }
 
         do {
-            let domains = try await SupabaseService.fetchWhitelistedDomains()
+            let domains = try await SupabaseService.fetchWhitelistedDomains(for: SpecialtyConfig.specialty)
             cachedDomains = domains
             domainsFetchedAt = Date()
             // Persist to UserDefaults for offline access

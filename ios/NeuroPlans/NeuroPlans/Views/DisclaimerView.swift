@@ -12,7 +12,7 @@ struct DisclaimerView: View {
                     .font(.system(size: 60))
                     .foregroundStyle(.blue)
                 
-                Text("Neuro Plans")
+                Text(SpecialtyConfig.disclaimerTitle)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 

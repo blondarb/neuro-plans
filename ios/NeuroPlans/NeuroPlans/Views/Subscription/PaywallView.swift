@@ -80,7 +80,7 @@ struct PaywallView: View {
                     )
                 )
             
-            Text("Neuro Plans Pro")
+            Text("\(SpecialtyConfig.appName) Pro")
                 .font(.system(.title, design: .rounded, weight: .bold))
             
             Text("Your trial has ended. Subscribe to continue accessing all clinical plans and tools.")
@@ -235,8 +235,8 @@ struct PaywallView: View {
                 .multilineTextAlignment(.center)
             
             HStack(spacing: 16) {
-                Link("Terms of Service", destination: URL(string: "https://neuroplans.app/terms")!)
-                Link("Privacy Policy", destination: URL(string: "https://neuroplans.app/privacy")!)
+                Link("Terms of Service", destination: URL(string: SpecialtyConfig.termsURL)!)
+                Link("Privacy Policy", destination: URL(string: SpecialtyConfig.privacyURL)!)
             }
             .font(.caption2)
             .foregroundStyle(.secondary)

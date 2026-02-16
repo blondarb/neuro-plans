@@ -114,7 +114,7 @@ final class ClinicalErrorService {
     }
     
     /// Email address for receiving error reports
-    static let reportEmailAddress = "errors@neuroplans.app"
+    static let reportEmailAddress = SpecialtyConfig.errorReportEmail
     
     /// Number of unsent reports
     var unsentReportCount: Int {

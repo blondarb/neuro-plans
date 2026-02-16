@@ -1,12 +1,26 @@
 import SwiftUI
 
+// MARK: - Hex Color Initializer
+
+extension Color {
+    init(hex: String) {
+        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+        var int: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&int)
+        let r = Double((int >> 16) & 0xFF) / 255.0
+        let g = Double((int >> 8) & 0xFF) / 255.0
+        let b = Double(int & 0xFF) / 255.0
+        self.init(red: r, green: g, blue: b)
+    }
+}
+
 // MARK: - Design System
 
 enum AppTheme {
-    // Brand colors
-    static let teal = Color(red: 0.051, green: 0.580, blue: 0.533)       // #0D9488
-    static let tealDark = Color(red: 0.059, green: 0.463, blue: 0.431)   // #0F766E
-    static let tealLight = Color(red: 0.800, green: 0.984, blue: 0.945)  // #CCFBF1
+    // Brand colors (derived from SpecialtyConfig)
+    static let teal = Color(hex: SpecialtyConfig.brandColorHex)
+    static let tealDark = Color(red: 0.059, green: 0.463, blue: 0.431)   // darker variant
+    static let tealLight = Color(red: 0.800, green: 0.984, blue: 0.945)  // lighter variant
 
     // Priority colors
     static let statColor = Color.red
