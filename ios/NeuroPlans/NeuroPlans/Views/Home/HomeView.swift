@@ -5,6 +5,7 @@ struct HomeView: View {
     @Environment(ReferenceStore.self) private var referenceStore
     @Environment(UserPreferences.self) private var prefs
     @State private var searchText = ""
+    @State private var showWhatsNew = false
 
     private var greeting: String {
         let hour = Calendar.current.component(.hour, from: Date())
@@ -18,42 +19,81 @@ struct HomeView: View {
     var body: some View {
         @Bindable var store = store
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
-
-                    // Setting Picker
-                    SettingPicker(selected: $store.selectedSetting)
-                        .padding(.horizontal)
-
-                    // Render sections in user's preferred order
-                    ForEach(prefs.plansSectionOrder, id: \.self) { sectionId in
-                        switch sectionId {
-                        case "recents":
-                            if !store.recentPlans.isEmpty {
-                                RecentPlansHeroCard(plans: store.recentPlans)
-                                    .padding(.horizontal)
-                            }
-                        case "favorites":
-                            if !store.favorites.isEmpty {
-                                FavoritesPlanSection(
-                                    sectionId: "favorites",
-                                    plans: store.favoritePlans
-                                )
-                            }
-                        case "categories":
-                            CategoriesPlanSection(
-                                sectionId: "categories",
-                                categories: store.categories,
-                                totalPlans: store.plans.count
-                            )
-                        default:
-                            EmptyView()
-                        }
+            Group {
+                if !store.isLoaded {
+                    // Loading state for cold start
+                    VStack(spacing: 16) {
+                        Spacer()
+                        ProgressView()
+                            .scaleEffect(1.2)
+                        Text("Loading clinical plans...")
+                            .font(.system(.subheadline, design: .rounded))
+                            .foregroundStyle(.secondary)
+                        Spacer()
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 16) {
 
-                    Spacer(minLength: 40)
+                            // What's New banner
+                            if store.hasUnseenChanges {
+                                Button {
+                                    showWhatsNew = true
+                                } label: {
+                                    HStack {
+                                        Image(systemName: "sparkles")
+                                            .foregroundStyle(.yellow)
+                                        Text("New plans added — see what's new")
+                                            .font(.system(.subheadline, design: .rounded, weight: .medium))
+                                        Spacer()
+                                        Image(systemName: "chevron.right")
+                                            .font(.caption)
+                                            .foregroundStyle(.tertiary)
+                                    }
+                                    .padding(.horizontal, 16)
+                                    .padding(.vertical, 12)
+                                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+                                }
+                                .buttonStyle(.plain)
+                                .padding(.horizontal)
+                            }
+
+                            // Setting Picker
+                            SettingPicker(selected: $store.selectedSetting)
+                                .padding(.horizontal)
+
+                            // Render sections in user's preferred order
+                            ForEach(prefs.plansSectionOrder, id: \.self) { sectionId in
+                                switch sectionId {
+                                case "recents":
+                                    if !store.recentPlans.isEmpty {
+                                        RecentPlansHeroCard(plans: store.recentPlans)
+                                            .padding(.horizontal)
+                                    }
+                                case "favorites":
+                                    if !store.favorites.isEmpty {
+                                        FavoritesPlanSection(
+                                            sectionId: "favorites",
+                                            plans: store.favoritePlans
+                                        )
+                                    }
+                                case "categories":
+                                    CategoriesPlanSection(
+                                        sectionId: "categories",
+                                        categories: store.categories,
+                                        totalPlans: store.plans.count
+                                    )
+                                default:
+                                    EmptyView()
+                                }
+                            }
+
+                            Spacer(minLength: 40)
+                        }
+                        .padding(.top, 8)
+                    }
                 }
-                .padding(.top, 8)
             }
             .background { AdaptiveBackground() }
             .navigationTitle(greeting)
@@ -101,6 +141,10 @@ struct HomeView: View {
                         tools: referenceStore.filteredTools
                     )
                 }
+            }
+            .sheet(isPresented: $showWhatsNew) {
+                WhatsNewView()
+                    .environment(store)
             }
         }
     }

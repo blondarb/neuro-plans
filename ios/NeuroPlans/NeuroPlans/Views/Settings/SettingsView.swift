@@ -9,6 +9,7 @@ struct SettingsView: View {
     @State private var showFeedbackSent = false
     @State private var showPaywall = false
     @State private var showEmailVerification = false
+    @State private var showPlanRequest = false
 
     var body: some View {
         @Bindable var store = store
@@ -111,6 +112,19 @@ struct SettingsView: View {
                     }
                 }
 
+                // Request a Plan
+                Section {
+                    Button {
+                        showPlanRequest = true
+                    } label: {
+                        Label("Request a Plan", systemImage: "lightbulb.fill")
+                    }
+                } header: {
+                    Text("Content")
+                } footer: {
+                    Text("Suggest a clinical plan you'd like us to add.")
+                }
+
                 // About
                 Section("About") {
                     HStack {
@@ -141,6 +155,9 @@ struct SettingsView: View {
             }
             .sheet(isPresented: $showEmailVerification) {
                 EmailVerificationView()
+            }
+            .sheet(isPresented: $showPlanRequest) {
+                PlanRequestView()
             }
         }
     }

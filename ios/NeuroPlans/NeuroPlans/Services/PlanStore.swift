@@ -13,6 +13,7 @@ final class PlanStore {
     var searchText: String = ""
     var isLoaded = false
     var loadingError: String? = nil
+    var changelog: Changelog?
 
     // MARK: - Computed
 
@@ -65,6 +66,7 @@ final class PlanStore {
             await MainActor.run {
                 self.plans = decoded
                 self.isLoaded = true
+                self.loadChangelog()
             }
         } catch {
             await MainActor.run {
@@ -164,5 +166,64 @@ final class PlanStore {
         if let saved = UserDefaults.standard.stringArray(forKey: "recents") {
             recentPlanIds = saved
         }
+    }
+
+    // MARK: - Changelog
+
+    var hasUnseenChanges: Bool {
+        guard let changelog = changelog, !changelog.entries.isEmpty else { return false }
+        let lastSeen = UserDefaults.standard.string(forKey: "lastSeenChangelogVersion") ?? ""
+        return changelog.version != lastSeen
+    }
+
+    func markChangelogSeen() {
+        guard let changelog = changelog else { return }
+        UserDefaults.standard.set(changelog.version, forKey: "lastSeenChangelogVersion")
+    }
+
+    func loadChangelog() {
+        guard let url = Bundle.main.url(forResource: "changelog", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let decoded = try? JSONDecoder().decode(Changelog.self, from: data) else {
+            return
+        }
+        changelog = decoded
+    }
+}
+
+// MARK: - Changelog Models
+
+struct ChangelogEntry: Codable, Identifiable {
+    var id: String { planId }
+    let type: String           // "new" or "updated"
+    let planId: String
+    let title: String
+    let category: String?
+    let summary: String?
+
+    enum CodingKeys: String, CodingKey {
+        case type, title, category, summary
+        case planId = "plan_id"
+    }
+}
+
+struct Changelog: Codable {
+    let version: String
+    let date: String
+    let entries: [ChangelogEntry]
+    let stats: ChangelogStats
+}
+
+struct ChangelogStats: Codable {
+    let totalPlans: Int
+    let newPlans: Int
+    let updatedPlans: Int
+    let newCitations: Int
+
+    enum CodingKeys: String, CodingKey {
+        case totalPlans = "total_plans"
+        case newPlans = "new_plans"
+        case updatedPlans = "updated_plans"
+        case newCitations = "new_citations"
     }
 }

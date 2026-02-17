@@ -68,4 +68,41 @@ enum SupabaseService {
             .insert(record)
             .execute()
     }
+
+    // MARK: - Plan Requests
+
+    struct PlanRequestRecord: Encodable {
+        let specialty: String
+        let requestText: String
+        let deviceId: String
+
+        enum CodingKeys: String, CodingKey {
+            case specialty
+            case requestText = "request_text"
+            case deviceId = "device_id"
+        }
+    }
+
+    static func submitPlanRequest(text: String) async throws {
+        let deviceId = getOrCreateDeviceId()
+        let record = PlanRequestRecord(
+            specialty: SpecialtyConfig.specialty,
+            requestText: text,
+            deviceId: deviceId
+        )
+        try await client
+            .from("plan_requests")
+            .insert(record)
+            .execute()
+    }
+
+    private static func getOrCreateDeviceId() -> String {
+        let key = "plan_request_device_id"
+        if let existing = UserDefaults.standard.string(forKey: key) {
+            return existing
+        }
+        let newId = UUID().uuidString
+        UserDefaults.standard.set(newId, forKey: key)
+        return newId
+    }
 }
