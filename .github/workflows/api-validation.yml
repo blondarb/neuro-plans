@@ -36,6 +36,10 @@ jobs:
           python scripts/validate_icd10.py --all --verify --quiet \
             --save-report icd10-report.md
 
+      - name: Validate enriched citations (topic check)
+        continue-on-error: true
+        run: python scripts/validate_enriched_citations.py --check
+
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4

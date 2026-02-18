@@ -847,14 +847,29 @@ def parse_citation_text(text: str) -> dict:
     if re.match(r'^PubMed:\s*\d+$', text.strip()):
         return result
 
-    # Extract year (4-digit number 19xx or 20xx)
-    year_match = re.search(r'\b((?:19|20)\d{2})\b', text)
-    if year_match:
-        result["year"] = year_match.group(1)
+    # Extract year — use the LAST year in the citation, not the first.
+    # Citations like "NASCET 1991 (updated analysis 2005)" should use 2005.
+    # If the structured paren-citation regex fires later, it overrides this.
+    all_years = re.findall(r'\b((?:19|20)\d{2})\b', text)
+    if all_years:
+        result["year"] = all_years[-1]
 
     # Check if guideline-style citation
     ct_lower = _strip_diacritics(text).lower()
     result["is_guideline"] = any(gw in ct_lower for gw in GUIDELINE_INDICATORS)
+
+    # Check for "TRIAL (Author et al. JOURNAL YEAR)" format BEFORE stripping parens
+    # This is a common clinical citation format
+    paren_citation = re.search(
+        r'\(([A-Z][a-zA-Zéèêëàâäùûüïîôöç\' -]+?)\s+et\s+al\.?\s*[.,]?\s*'
+        r'([A-Z][A-Za-z .]+?)\s+((?:19|20)\d{2})\)',
+        text
+    )
+    if paren_citation:
+        result["author"] = paren_citation.group(1).strip().rstrip(',')
+        result["journal"] = paren_citation.group(2).strip().rstrip('.')
+        result["year"] = paren_citation.group(3)
+        return result
 
     # Remove trial name in parens, volume/pages, DOI
     clean = re.sub(r'\([^)]*\)', '', text)        # Remove (REGAIN), (CHAMPION-MG)
@@ -1064,16 +1079,18 @@ def _score_candidate(citation_text: str, parsed: dict, meta: dict) -> int:
     ct = _strip_diacritics(citation_text).lower()
 
     # Author match (+2 for first author, +1 for any author)
+    # Use word-boundary regex to prevent short surnames ("li", "ma", "an")
+    # from matching inside unrelated words ("likelier", "manage", "analysis")
     first_author = meta.get("first_author", "")
     if first_author:
         fa_surname = _strip_diacritics(first_author.split()[0]).lower() if first_author.split() else ""
-        if fa_surname and fa_surname in ct:
+        if fa_surname and len(fa_surname) > 1 and re.search(r'\b' + re.escape(fa_surname) + r'\b', ct):
             score += 2
         else:
             # Check any of the first 5 authors
             for auth in meta.get("authors", [])[:5]:
                 surname = _strip_diacritics(auth.split()[0]).lower() if auth.split() else ""
-                if surname and len(surname) > 2 and surname in ct:
+                if surname and len(surname) > 2 and re.search(r'\b' + re.escape(surname) + r'\b', ct):
                     score += 1
                     break
 
@@ -1094,6 +1111,29 @@ def _score_candidate(citation_text: str, parsed: dict, meta: dict) -> int:
         resolved = _resolve_journal_for_search(journal_hint).lower()
         if resolved and (resolved in journal_abbrev or journal_abbrev in resolved
                          or resolved in journal_full or journal_full in resolved):
+            score += 1
+
+    # Title keyword match (+1 if 2+ meaningful words from citation appear
+    # in the PubMed article title, or vice versa). This catches matches
+    # where author+year is right but journal parsing failed.
+    title = _strip_diacritics(meta.get("title", "")).lower()
+    if title:
+        # Extract meaningful words from citation (skip author, year, journal, stopwords)
+        citation_words = set()
+        for w in ct.split():
+            w_clean = w.strip('.,;:()[]')
+            if (len(w_clean) > 4 and w_clean.isalpha()
+                    and w_clean not in {"trial", "study", "group", "their",
+                                        "these", "those", "which", "about",
+                                        "other", "after", "before", "during",
+                                        "first", "second", "level", "class",
+                                        "based", "using", "review", "between"}):
+                citation_words.add(w_clean)
+        # Count how many citation words appear in the article title
+        # Use word-boundary check to avoid "cardiac" matching "pericardial"
+        title_matches = sum(1 for w in citation_words
+                            if re.search(r'\b' + re.escape(w) + r'\b', title))
+        if title_matches >= 2:
             score += 1
 
     return score

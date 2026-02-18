@@ -31,5 +31,8 @@ jobs:
       - name: Lint ICD-10 codes
         run: python scripts/validate_icd10.py --all --lint --quiet
 
+      - name: Validate enriched citations
+        run: python scripts/validate_enriched_citations.py --check
+
       - name: Validate build metadata
         run: python scripts/build.py --strict

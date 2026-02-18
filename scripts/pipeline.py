@@ -14,15 +14,17 @@ Usage:
     python3 scripts/pipeline.py --verbose          # Show subprocess output
 
 Pipeline steps:
-    1. Link landmark citations      (non-gate)
-    2. Verify citations via PubMed  (GATE)
-    3. Validate ICD-10 codes        (GATE)
-    4. Validate medications          (non-gate)
-    5. Generate JSON                 (GATE)
-    6. Parity check                  (GATE)
-    7. Copy plans.json to iOS bundle (non-gate)
-    8. Generate changelog            (non-gate, internal)
-    9. Xcode build                   (GATE)
+    1. Link landmark citations       (non-gate)
+    2. Verify citations via PubMed   (GATE)
+    3. Validate ICD-10 codes         (GATE)
+    4. Validate medications           (non-gate)
+    5. Generate JSON                  (GATE)
+    6. Parity check                   (GATE)
+    7. Enrich unlinked citations      (non-gate, PubMed API)
+    8. Validate enriched citations    (non-gate)
+    9. Copy plans.json to iOS bundle  (non-gate)
+   10. Generate changelog             (non-gate, internal)
+   11. Xcode build                    (GATE)
 
 Gate steps halt the pipeline on failure. Non-gate steps log warnings
 but allow the pipeline to continue.
@@ -287,9 +289,36 @@ def build_steps(args):
         "skip": dry,  # parity check is meaningless in dry-run (JSON wasn't regenerated)
     })
 
-    # 7 — Copy plans.json to iOS bundle
+    # 7 — Enrich unlinked citations (PubMed API)
+    #     Runs after JSON generation so it can add PubMed links to plans.json.
+    #     Non-gate: enrichment failures shouldn't block the build.
+    #     Skipped in dry-run and when --skip-verify (both imply no API calls).
+    if dry:
+        cmd7 = ["python3", "scripts/enrich_json_citations.py", "--quiet"]
+    else:
+        cmd7 = ["python3", "scripts/enrich_json_citations.py", "--apply", "--quiet"]
     steps.append({
         "num": 7,
+        "name": "Enrich citations",
+        "cmd": cmd7,
+        "gate": False,
+        "skip": dry or args.skip_verify,
+    })
+
+    # 8 — Validate enriched citations (topic mismatch check)
+    #     Quick post-enrichment sanity check — catches wrong-topic PMIDs.
+    #     Report-only (--check), doesn't modify data.
+    steps.append({
+        "num": 8,
+        "name": "Validate enrichment",
+        "cmd": ["python3", "scripts/validate_enriched_citations.py", "--check"],
+        "gate": False,
+        "skip": dry or args.skip_verify,
+    })
+
+    # 9 — Copy plans.json to iOS bundle
+    steps.append({
+        "num": 9,
         "name": "Copy to iOS bundle",
         "cmd": None,  # handled internally (file copy)
         "gate": False,
@@ -297,9 +326,9 @@ def build_steps(args):
         "internal": "copy_plans",
     })
 
-    # 8 — Generate changelog (internal diff)
+    # 10 — Generate changelog (internal diff)
     steps.append({
-        "num": 8,
+        "num": 10,
         "name": "Generate changelog",
         "cmd": None,
         "gate": False,
@@ -307,9 +336,9 @@ def build_steps(args):
         "internal": "changelog",
     })
 
-    # 9 — Xcode build
+    # 11 — Xcode build
     steps.append({
-        "num": 9,
+        "num": 11,
         "name": "Xcode build",
         "cmd": [
             "xcodebuild", "build",
