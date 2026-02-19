@@ -31,7 +31,7 @@ RepGenius generates personalized workout plans using artificial intelligence. We
 
 ## API Keys (BYOK Users)
 
-Basic tier users may provide their own API keys for AI providers (OpenAI, Google Gemini, Anthropic Claude). These keys are stored securely in your device's Keychain and are sent directly from your device to the respective AI provider. We never see or store your API keys.
+Basic tier users may provide their own OpenAI API key. This key is stored securely in your device's Keychain and is sent directly from your device to OpenAI. We never see or store your API key.
 
 ## How We Use Your Information
 
@@ -43,10 +43,7 @@ Basic tier users may provide their own API keys for AI providers (OpenAI, Google
 ## Third-Party Services
 
 - **Supabase:** Handles authentication and routes workout generation requests. [Supabase Privacy Policy](https://supabase.com/privacy)
-- **AI Providers:** Workout generation requests are processed by OpenAI, Google Gemini, or Anthropic Claude depending on your settings. Requests are routed through our backend proxy (for Trial, Free, and Pro tiers) so your identity is not shared with AI providers. BYOK users connect directly.
-    - [OpenAI Privacy Policy](https://openai.com/privacy)
-    - [Google AI Privacy Policy](https://ai.google/privacy)
-    - [Anthropic Privacy Policy](https://www.anthropic.com/privacy)
+- **OpenAI:** Workout generation requests are processed by OpenAI. Requests are routed through our backend proxy (for Trial, Free, and Pro tiers) so your identity is not shared with OpenAI. BYOK users connect directly. [OpenAI Privacy Policy](https://openai.com/privacy)
 - **Apple:** StoreKit handles subscriptions and payments. HealthKit handles fitness data. [Apple Privacy Policy](https://www.apple.com/privacy/)
 
 ## Data Storage and Security
