@@ -100,7 +100,7 @@ struct ClinicalErrorReportView: View {
                     dismiss()
                 }
             } message: {
-                Text("Thank you for your valuable clinical feedback! You've earned one year of free access to Neuro Plans. Would you like to send this report now?")
+                Text("Thank you for your valuable clinical feedback! You've earned one year of free access to \(SpecialtyConfig.appName). Would you like to send this report now?")
             }
             .sheet(isPresented: $showMailComposer, onDismiss: {
                 dismiss()

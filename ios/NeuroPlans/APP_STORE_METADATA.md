@@ -81,9 +81,11 @@ https://neuroplans.app/privacy/
 
 This is a clinical reference app for healthcare professionals. It displays evidence-based treatment protocols for neurological conditions. The app does not provide diagnoses, does not collect patient data, and does not connect to electronic health record systems.
 
-Subscription: The app offers a 14-day free trial followed by an annual subscription ($12.99/year). All content is accessible during the trial period.
+**Subscription:** The app provides a 14-day free trial on first launch (no sign-up required). After the trial, users subscribe at $12.99/year via StoreKit. All content is accessible during the trial and subscription periods.
 
-No login required. No test account needed.
+**Email Verification (optional):** On the paywall screen, users can tap "Check Eligibility" to verify their institutional email. This sends a one-time code via email (Supabase Auth OTP). If the email domain is on our partner organization list, the user receives complimentary access. This is entirely optional — it is not required to use the app.
+
+**No login required.** No test account needed. To test the email verification flow, any email will work to receive a code — but only whitelisted institutional domains grant free access.
 
 ---
 

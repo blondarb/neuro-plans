@@ -75,7 +75,7 @@ struct EmailVerificationView: View {
                 Text("Verify Your Email")
                     .font(.system(.title2, design: .rounded, weight: .bold))
 
-                Text("Some organizations provide complimentary access to Neuro Plans.")
+                Text("Some organizations provide complimentary access to \(SpecialtyConfig.appName).")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -300,7 +300,7 @@ struct EmailVerificationView: View {
             Text("Email Verified!")
                 .font(.system(.title2, design: .rounded, weight: .bold))
 
-            Text("You now have complimentary access to Neuro Plans.")
+            Text("You now have complimentary access to \(SpecialtyConfig.appName).")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)

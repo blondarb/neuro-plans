@@ -195,7 +195,7 @@ final class ClinicalErrorService {
         guard !unsent.isEmpty else { return "" }
         
         var output = """
-        NEURO PLANS - CLINICAL ERROR REPORTS
+        \(SpecialtyConfig.appName.uppercased()) - CLINICAL ERROR REPORTS
         ====================================
         Total Reports: \(unsent.count)
         Generated: \(Date().formatted())

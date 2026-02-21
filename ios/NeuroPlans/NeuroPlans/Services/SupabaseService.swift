@@ -5,8 +5,16 @@ import Supabase
 enum SupabaseService {
     // MARK: - Client
 
+    // swiftlint:disable:next force_unwrapping
+    private static let supabaseURL: URL = {
+        guard let url = URL(string: SpecialtyConfig.supabaseUrl) else {
+            fatalError("Invalid Supabase URL in SpecialtyConfig: \(SpecialtyConfig.supabaseUrl)")
+        }
+        return url
+    }()
+
     static let client = SupabaseClient(
-        supabaseURL: URL(string: SpecialtyConfig.supabaseUrl)!,
+        supabaseURL: supabaseURL,
         supabaseKey: SpecialtyConfig.supabaseAnonKey
     )
 

@@ -117,7 +117,7 @@ struct SendAllReportsButton: View {
         }
         .sheet(isPresented: $showMailComposer) {
             ErrorReportMailView(
-                subject: "Neuro Plans - Clinical Error Reports (\(errorService.unsentReportCount))",
+                subject: "\(SpecialtyConfig.appName) - Clinical Error Reports (\(errorService.unsentReportCount))",
                 body: errorService.formatUnsentReportsForEmail(),
                 recipients: [ClinicalErrorService.reportEmailAddress]
             ) { success in
