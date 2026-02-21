@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import os
 
 // MARK: - Exam Tools Grid View
 
@@ -280,7 +281,7 @@ struct PenlightToolView: View {
             
             device.unlockForConfiguration()
         } catch {
-            print("Flash error: \(error)")
+            Logger(subsystem: Bundle.main.bundleIdentifier ?? "com.neuroplans", category: "ExamTools").error("Flash error: \(error)")
         }
     }
 }

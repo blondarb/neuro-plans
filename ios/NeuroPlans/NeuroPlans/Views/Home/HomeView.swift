@@ -63,6 +63,12 @@ struct HomeView: View {
                             SettingPicker(selected: $store.selectedSetting)
                                 .padding(.horizontal)
 
+                            // Quick Actions
+                            if !SpecialtyConfig.quickActions.isEmpty {
+                                QuickActionsBar(store: store)
+                                    .padding(.horizontal)
+                            }
+
                             // Render sections in user's preferred order
                             ForEach(prefs.plansSectionOrder, id: \.self) { sectionId in
                                 switch sectionId {
@@ -798,6 +804,36 @@ private struct ToolSearchRow: View {
         case "reference_table": "Reference"
         case "conversion": "Conversion"
         default: "Tool"
+        }
+    }
+}
+
+// MARK: - Quick Actions Bar
+
+private struct QuickActionsBar: View {
+    let store: PlanStore
+
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(SpecialtyConfig.quickActions, id: \.id) { action in
+                    if let plan = store.plan(for: action.planId) {
+                        NavigationLink(value: plan) {
+                            HStack(spacing: 6) {
+                                Image(systemName: action.icon)
+                                    .font(.system(size: 13, weight: .semibold))
+                                Text(action.title)
+                                    .font(.system(.caption, design: .rounded, weight: .semibold))
+                            }
+                            .foregroundStyle(AppTheme.teal)
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 8)
+                            .background(AppTheme.teal.opacity(0.12), in: Capsule())
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
         }
     }
 }

@@ -11,12 +11,14 @@ enum SpecialtyConfig {
 
     // MARK: - Branding
     static let brandColorHex = "#0D9488"
+    static let headerIcon = "brain.head.profile"
 
     // MARK: - Subscription
     static let storeKitProductId = "com.neuroplans.annual"
 
-    // MARK: - Error Reporting
+    // MARK: - Contact
     static let errorReportEmail = "errors@neuroplans.app"
+    static let supportEmail = "support@neuroplans.app"
 
     // MARK: - Supabase
     static let supabaseUrl = "https://cyaginuvsqcbvyeuizlu.supabase.co"
@@ -26,4 +28,24 @@ enum SpecialtyConfig {
     static let termsURL = "https://neuroplans.app/terms"
     static let privacyURL = "https://neuroplans.app/privacy"
     static let disclaimerTitle = "Neuro Plans"
+
+    // MARK: - Paywall Features
+    /// Features displayed on the paywall screen. Each specialty shows different features.
+    static let paywallFeatures: [(icon: String, title: String, description: String)] = [
+        ("list.bullet.clipboard.fill", "All Clinical Plans", "Complete neurology treatment protocols"),
+        ("brain", "Clinical Scales", "NIHSS, mRS, GCS, and more"),
+        ("stethoscope", "Exam Guides", "Step-by-step neurological exams"),
+        ("hammer.fill", "Clinical Tools", "Calculators, timers, and converters"),
+        ("square.and.pencil", "Plan Builder", "Create custom order sets"),
+        ("arrow.triangle.2.circlepath", "Free Updates", "New plans and features as they're released")
+    ]
+
+    // MARK: - Quick Actions
+    /// Specialty-specific shortcuts shown on the home screen.
+    /// Each links to a plan by its ID for one-tap access.
+    static let quickActions: [(id: String, title: String, icon: String, planId: String)] = [
+        ("stroke-alert", "Stroke Alert", "bolt.heart.fill", "acute-ischemic-stroke"),
+        ("status-epilepticus", "Status Epilepticus", "waveform.path.ecg", "status-epilepticus"),
+        ("meningitis", "Acute Meningitis", "allergens.fill", "bacterial-meningitis")
+    ]
 }
