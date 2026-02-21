@@ -72,9 +72,13 @@ Before resubmission, the Cardio Plans clone needs these additional changes:
 
 ### Must Do (Required for 4.3 compliance)
 
-1. **Replace `ExamToolsView.swift` enum** - Remove neuro tools (penlight, OKN stripes,
-   pupil gauge, red desaturation). Add cardio tools (ECG rhythm identifier,
-   stethoscope auscultation guide, pulse assessment, S1/S2 heart sound reference).
+1. **Replace `ExamToolsView.swift` enum** (**HARDCODED — requires full rewrite**) -
+   This file has an `ExamToolType` enum with 8 neurology-specific cases (penlight,
+   OKN stripes, pupil gauge, red desaturation, etc.) plus a `ExamToolDetailView`
+   that renders each tool's interactive UI. This is NOT config-driven and must be
+   manually rewritten for each specialty. For cardio: ECG rhythm identifier,
+   stethoscope auscultation guide, pulse assessment, S1/S2 heart sound reference.
+   See `NEW_SPECIALTY_CHECKLIST.md` Phase 3.2 for example code.
 
 2. **Different brand color** - Set `brandColorHex` to a cardiology color
    (e.g., `#E74C3C` red or `#3498DB` blue). This changes the entire app theme.

@@ -497,39 +497,39 @@ Run this checklist **every time** before submitting any specialty app:
 
 ### 7.5 New Specialty App Setup
 
-When cloning the codebase for a new specialty (e.g., Cardio Plans, Pulm Plans):
+> **Complete guide:** See `NEW_SPECIALTY_CHECKLIST.md` for the full step-by-step
+> walkthrough with Supabase setup, Xcode configuration, code examples, and
+> App Store Connect instructions.
 
-1. **Change ALL values in `SpecialtyConfig.swift`** — not just identity:
-   - `appName`, `specialty`, `bundleId`
-   - `brandColorHex`, `headerIcon`, `tagline`
-   - `storeKitProductId`
-   - `errorReportEmail`, `supportEmail`
-   - `supabaseUrl`, `supabaseAnonKey` (create separate Supabase project)
-   - `termsURL`, `privacyURL`, `disclaimerTitle`
-   - `paywallFeatures` (specialty-specific feature descriptions)
-   - `aboutDescription`, `aboutIcon`
-   - `quickActions` (specialty-specific emergency protocols)
+**Summary of phases:**
 
-2. **Replace content files:**
-   - `Category.swift` — new categories and plan IDs
-   - `Reference.swift` — new scales, exams, and tools
-   - `CalculatorEngine.swift` — add specialty-specific calculators
-   - `ExamToolsView.swift` — replace exam tool enum with specialty tools
-   - `plans.json` — new clinical plan data
-   - `scales.json`, `exams.json`, `tools.json` — new reference data
+1. **Infrastructure** — Register domain, create Supabase project, host legal pages
+2. **Xcode Setup** — Update Display Name, Bundle ID, app icon, signing team
+3. **Code Changes** — Update `SpecialtyConfig.swift` (all 18 properties), replace
+   `ExamToolsView.swift` (full rewrite required — neurology tools hardcoded),
+   replace `Category.swift`, `Reference.swift`, `CalculatorEngine.swift`, and
+   all JSON content files
+4. **App Store Connect** — Create app record, subscription with trial, App Privacy,
+   tax/banking, screenshots showing your specialty content, review notes
+5. **Test & Submit** — Run `ios-preflight.sh`, sandbox test purchases, archive, upload
 
-3. **Create legal pages:**
-   - Privacy policy at new domain (not shared with other apps)
-   - Terms of service at new domain
-   - Unique support email
+**Critical files requiring full replacement (not just config changes):**
 
-4. **App Store Connect:**
-   - Create separate app record
-   - Create new subscription group and product
-   - Upload unique screenshots
-   - Write unique description and keywords
+| File | Why | Difficulty |
+|------|-----|------------|
+| `ExamToolsView.swift` | Hardcoded neurology exam tools enum + detail views | Hard |
+| `Category.swift` | All plan categories are neuro-specific | Medium |
+| `Reference.swift` | All scales/exams/tools data is neuro-specific | Medium |
+| `CalculatorEngine.swift` | Calculator formulas are specialty-specific | Hard |
 
-5. **Run the Pre-Submission Checklist (Section 7.4)**
+**Guideline 4.3 (Spam) — key differentiators that Apple checks:**
+- App icon must be visually distinct (different shape/color/symbol)
+- Brand color (`brandColorHex`) must be different
+- Quick actions on home screen must be different
+- Exam tools must be completely different
+- Paywall feature list must mention your specialty
+- App Store screenshots must show your specialty content
+- Review notes must explain how your app differs
 
 ---
 

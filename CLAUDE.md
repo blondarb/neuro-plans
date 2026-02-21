@@ -105,6 +105,8 @@ See `docs/skills/style-guide.md` for supported column layouts.
 | `ios/NeuroPlans/APP_STORE_METADATA.md` | App Store description, keywords, review notes |
 | `ios/NeuroPlans/NeuroPlans/SpecialtyConfig.swift` | Single file to customize for each specialty app |
 | `ios/scripts/ios-preflight.sh` | Automated pre-submission validation script |
+| `ios/NeuroPlans/NEW_SPECIALTY_CHECKLIST.md` | Complete guide for creating a new specialty app |
+| `ios/NeuroPlans/templates/` | Privacy policy and terms of service templates |
 | `docs/PUBLISHING_SETUP.md` | Domain, accounts, and infrastructure setup |
 
 ### iOS Pre-Submission Workflow
@@ -114,7 +116,13 @@ See `docs/skills/style-guide.md` for supported column layouts.
 4. Archive, upload, and submit in App Store Connect
 
 ### New Specialty App
-Follow `PUBLISHING_GUIDE.md` Section 7.5. Key: change ALL values in `SpecialtyConfig.swift`, replace content files, create separate legal pages and Supabase project.
+Follow `NEW_SPECIALTY_CHECKLIST.md` for the complete step-by-step guide (6 phases, ~50 steps). Critical points:
+- Change ALL 18 values in `SpecialtyConfig.swift`
+- **Full rewrite** required for `ExamToolsView.swift` (hardcoded neuro tools)
+- Replace `Category.swift`, `Reference.swift`, `CalculatorEngine.swift` (all neuro-specific content)
+- Create separate domain, Supabase project, and legal pages
+- Use templates from `ios/NeuroPlans/templates/` for legal docs
+- Run `ios-preflight.sh` before submission — checks for placeholders and hardcoded names
 
 ## Commands
 

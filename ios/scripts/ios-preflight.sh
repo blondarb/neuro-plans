@@ -156,6 +156,14 @@ if [ -n "$STOREKIT_CONFIG" ]; then
     else
         warn "StoreKit config has no introductory offer (configure if advertising free trial)"
     fi
+
+    # Check for placeholder values in StoreKit config
+    if grep -q '1234567890' "$STOREKIT_CONFIG"; then
+        warn "StoreKit config has placeholder _applicationInternalID (update after creating App Store record)"
+    fi
+    if grep -q 'XXXXXXXXXX' "$STOREKIT_CONFIG"; then
+        warn "StoreKit config has placeholder _developerTeamID (update with your Team ID)"
+    fi
 else
     warn "No .storekit configuration file found"
 fi
@@ -177,12 +185,32 @@ if [ -f "$CONFIG" ]; then
             fail "SpecialtyConfig.$prop missing"
         fi
     done
+
+    # Check for placeholder/default values that should be customized
+    if grep -q 'XXXXXXXXXX' "$CONFIG"; then
+        fail "SpecialtyConfig contains placeholder values (XXXXXXXXXX) — update before submission"
+    fi
+    if grep -q '1234567890' "$CONFIG"; then
+        fail "SpecialtyConfig contains placeholder app ID (1234567890) — update before submission"
+    fi
+
+    # Verify Supabase URL is not empty or placeholder
+    SUPA_URL=$(grep 'supabaseUrl' "$CONFIG" | head -1 || true)
+    if echo "$SUPA_URL" | grep -q 'your-project\|example\|placeholder'; then
+        fail "Supabase URL is a placeholder — create a Supabase project and update SpecialtyConfig"
+    else
+        pass "Supabase URL appears configured"
+    fi
 else
     fail "SpecialtyConfig.swift not found"
 fi
 
-# Check for hardcoded app name in view files
-HARDCODED=$(grep -rn '"Neuro Plans"\|"Cardio Plans"\|"Pulm Plans"' "$PROJECT_DIR" --include="*.swift" \
+# Detect current app name from SpecialtyConfig
+APP_NAME=$(grep 'static let appName' "$PROJECT_DIR/SpecialtyConfig.swift" 2>/dev/null \
+    | sed 's/.*= *"\(.*\)".*/\1/' || echo "")
+
+# Check for hardcoded app name in view files (checks all known specialty names)
+HARDCODED=$(grep -rn '"Neuro Plans"\|"Cardio Plans"\|"Pulm Plans"\|"GI Plans"\|"Renal Plans"' "$PROJECT_DIR" --include="*.swift" \
     | grep -v 'SpecialtyConfig.swift' \
     | grep -v 'Tests/' \
     || true)
