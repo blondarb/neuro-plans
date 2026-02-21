@@ -589,11 +589,11 @@ Please guide me through the next steps.
 
 ---
 
-## Submission Log: Version 1.0 (February 15, 2026)
+## Submission Log
 
-**Status: Submitted for App Review (Waiting for Review)**
+### Version 1.0 — Submission 1 (February 15, 2026)
 
-### What Was Done
+**Status: REJECTED**
 
 | Step | Status | Notes |
 |------|--------|-------|
@@ -601,33 +601,61 @@ Please guide me through the next steps.
 | App Store Connect record | Done | App ID: 6759209586, Bundle ID: com.neuroplans.app |
 | Subscription configured | Done | Annual $12.99, Group ID: 21934633, Product Apple ID: 6759209768 |
 | Subscription group localization | Done | English (U.S.), display name: "Neuro Plans Subscriptions" |
-| Subscription review notes | Done | Describes paywall flow and trial |
 | Age rating | Done | 4+ (Medical/Treatment Information: Infrequent/Mild) |
-| App Privacy | Done | Published as "Data Not Collected" |
+| App Privacy | **NEEDS UPDATE** | Was "Data Not Collected" — must now declare Email, Purchase History, Device ID |
 | Pricing | Done | Free ($0.00), 175 countries |
-| iPhone screenshots (6.9") | Done | 5 screenshots, 1320x2868 (using 6.5" display slot) |
-| iPad screenshots (13") | Done | 5 screenshots, 2048x2732 |
-| Build archived via xcodebuild | Done | Archive at /tmp/NeuroPlans.xcarchive |
-| Build uploaded via xcodebuild | Done | Version 1.0.0, Build 1 |
-| Export compliance | Done | No encryption (HTTPS exemption only) |
-| Build selected on version page | Done | Build 1.0.0 (1) |
+| Screenshots | Done | iPhone 6.9" (5), iPad 13" (5) |
+| Build uploaded | Done | Version 1.0.0, Build 1 |
 | Submitted for review | Done | February 15, 2026 |
 
-### What Was NOT Done (Post-Approval)
+**Rejection reasons (inferred from code audit):**
+- Guideline 3.1.1 — Subscription disclosure issues (hardcoded price/period, missing legal text)
+- Guideline 4.3 — Neuro Plans and Cardio Plans too similar (same UI, same text)
+- Guideline 5.1.1 — Privacy manifest incomplete (missing data type declarations)
 
-- **Introductory Offer (14-day free trial):** Not available in App Store Connect UI for first-time subscriptions. Must be configured after initial approval.
-- **Agreements, Tax, and Banking:** Required for receiving subscription payments. Must be completed in App Store Connect Business section.
-- **Subscription review screenshot:** Optional, was not required for submission.
-- **Sandbox tester:** Not created yet. Recommended for post-approval testing.
+### Version 1.0 — Submission 2 (Pending)
+
+**Status: CODE FIXES COMPLETE — Waiting for App Store Connect updates**
+
+#### Code fixes applied (branch: `claude/investigate-app-store-rejection-SDB7O`)
+
+| Commit | Fix | Guideline |
+|--------|-----|-----------|
+| `965ca41` | Differentiation framework — SpecialtyConfig expansion, config-driven views, quick actions bar | 4.3 |
+| `6c6cab4` | Subscription disclosures — StoreKit-driven pricing, legal text, revocation handling | 3.1.1 |
+| `093603c` | Privacy manifest — added data type declarations, replaced debug prints with OSLog | 5.1.1, 2.1 |
+| `f149d91` | Free trial in StoreKit config, 9 hardcoded strings → config-driven, safe URL init, review notes | 3.1.1, 4.3 |
+
+#### Still required in App Store Connect (manual):
+
+- [ ] **Update App Privacy section** — change from "Data Not Collected" to declare: Email Address, Purchase History, Device ID (all: Not Linked, Not Tracking, App Functionality)
+- [ ] **Click "Publish" on App Privacy** after updating
+- [ ] **Configure introductory offer** — 14-day free trial on the annual subscription
+- [ ] **Complete Agreements, Tax, and Banking** (required for subscription payments)
+- [ ] **Create sandbox tester** and test full purchase flow on device
+- [ ] **Update review notes** in App Store Connect (copy from APP_STORE_METADATA.md Section "Review Notes")
+- [ ] **Re-archive and upload** new build (version 1.0.0, build 2)
+- [ ] **Verify legal URLs load** — neuroplans.app/privacy/ and neuroplans.app/terms/
+- [ ] Submit for review
+
+#### Pre-submission validation
+
+Run `ios/scripts/ios-preflight.sh` before every submission to catch common rejection risks automatically.
 
 ### Key Learnings
 
-1. **iPad screenshots are required** if `TARGETED_DEVICE_FAMILY = "1,2"` (iPhone + iPad). Set to `"1"` if iPhone-only to avoid this requirement.
-2. **App Privacy must be explicitly Published** -- configuring responses is not enough; you must click the "Publish" button.
-3. **Subscription group localization is required** -- even for English, you must create a localization entry for the subscription group.
-4. **Screenshot uploads require manual interaction** -- browser automation cannot programmatically set files on file inputs due to browser security. Plan for manual drag-and-drop.
-5. **xcodebuild can archive and export from CLI** -- no Xcode GUI needed for build/upload if signing is configured.
-6. **Export compliance "No" for HTTPS-only apps** -- standard HTTPS exemption applies.
+1. **iPad screenshots are required** if `TARGETED_DEVICE_FAMILY = "1,2"` (iPhone + iPad). Set to `"1"` if iPhone-only.
+2. **App Privacy must be explicitly Published** -- configuring responses is not enough; you must click "Publish."
+3. **Subscription group localization is required** -- even for English.
+4. **Screenshot uploads require manual interaction** -- browser security blocks programmatic file input.
+5. **xcodebuild can archive and export from CLI** -- no Xcode GUI needed.
+6. **Export compliance "No" for HTTPS-only apps** -- standard exemption.
+7. **Never hardcode subscription price or period** -- always read from StoreKit `Product` object.
+8. **"Data Not Collected" is wrong** if you use Supabase email verification, StoreKit, or device IDs.
+9. **Multi-specialty apps need aggressive differentiation** -- different icons, colors, features, content, and legal docs. Use `SpecialtyConfig.swift` for everything.
+10. **All user-visible strings must be config-driven** -- grep for hardcoded app name before submission.
+11. **Force-unwrapped URLs are a crash risk** -- use `guard let` or `if let` for all URL(string:) calls.
+12. **Remove all print() before submission** -- use `Logger` from `OSLog` instead.
 
 ---
 
@@ -636,7 +664,3 @@ Please guide me through the next steps.
 - Apple Developer Support: https://developer.apple.com/contact/
 - App Review: https://developer.apple.com/contact/app-store/
 - Finance/Payments: Through App Store Connect
-
----
-
-Good luck with your launch! 🚀

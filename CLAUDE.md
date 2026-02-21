@@ -29,6 +29,7 @@ Clinical decision support templates for neurological diagnoses.
 | `docs/HANDOFF.md` | Developer handoff & support guide |
 | `docs/GUIDELINE_MAINTENANCE.md` | Guideline freshness process & quarterly review cadence |
 | `docs/data/freshness-report.md` | Latest guideline freshness report (auto-generated) |
+| `ios/scripts/ios-preflight.sh` | App Store pre-submission validation script |
 
 ## Skills
 
@@ -95,9 +96,32 @@ Use `::` not `|`. First field = starting dose only.
 
 See `docs/skills/style-guide.md` for supported column layouts.
 
+## iOS App Publishing
+
+| File | Purpose |
+|------|---------|
+| `ios/NeuroPlans/PUBLISHING_GUIDE.md` | Full publishing walkthrough, checklists, submission log |
+| `ios/NeuroPlans/APP_STORE_DIFFERENTIATION.md` | Guideline 4.3 differentiation strategy for multi-specialty |
+| `ios/NeuroPlans/APP_STORE_METADATA.md` | App Store description, keywords, review notes |
+| `ios/NeuroPlans/NeuroPlans/SpecialtyConfig.swift` | Single file to customize for each specialty app |
+| `ios/scripts/ios-preflight.sh` | Automated pre-submission validation script |
+| `docs/PUBLISHING_SETUP.md` | Domain, accounts, and infrastructure setup |
+
+### iOS Pre-Submission Workflow
+1. Merge code changes to the app
+2. Run `./ios/scripts/ios-preflight.sh` — must pass with 0 FAIL
+3. Follow the Pre-Submission Checklist in `PUBLISHING_GUIDE.md` Section 7.4
+4. Archive, upload, and submit in App Store Connect
+
+### New Specialty App
+Follow `PUBLISHING_GUIDE.md` Section 7.5. Key: change ALL values in `SpecialtyConfig.swift`, replace content files, create separate legal pages and Supabase project.
+
 ## Commands
 
 ```bash
+# iOS pre-submission validation
+./ios/scripts/ios-preflight.sh
+
 # JSON generation & validation
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --validate-only
 python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --merge
