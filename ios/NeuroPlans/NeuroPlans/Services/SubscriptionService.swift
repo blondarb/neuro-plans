@@ -152,13 +152,14 @@ final class SubscriptionService {
     
     // MARK: - Private Methods
     
-    /// Listen for transaction updates (renewals, refunds, etc.)
+    /// Listen for transaction updates (renewals, refunds, revocations, etc.)
     private func listenForTransactions() async {
         for await result in Transaction.updates {
             if case .verified(let transaction) = result {
                 await transaction.finish()
-                
+
                 // Notify that entitlements may have changed
+                // This covers renewals, expirations, refunds, and revocations
                 await MainActor.run {
                     NotificationCenter.default.post(
                         name: .entitlementDidChange,

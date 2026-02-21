@@ -330,13 +330,15 @@ final class EntitlementService {
     }
 
     private func checkSubscriptionStatus() async -> AccessLevel? {
-        do {
-            // Check for active subscription using StoreKit 2
-            for await result in Transaction.currentEntitlements {
-                if case .verified(let transaction) = result {
-                    if transaction.productID == Self.annualSubscriptionID {
-                        return .subscribed(expirationDate: transaction.expirationDate)
+        // Check for active subscription using StoreKit 2
+        for await result in Transaction.currentEntitlements {
+            if case .verified(let transaction) = result {
+                if transaction.productID == Self.annualSubscriptionID {
+                    // Check if the transaction has been revoked (refunded)
+                    if transaction.revocationDate != nil {
+                        continue // Skip revoked transactions
                     }
+                    return .subscribed(expirationDate: transaction.expirationDate)
                 }
             }
         }
