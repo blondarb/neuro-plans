@@ -6,17 +6,17 @@ struct DisclaimerView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // Header
+            // Header (specialty-specific icon and tagline)
             VStack(spacing: 8) {
-                Image(systemName: "brain.head.profile")
+                Image(systemName: SpecialtyConfig.headerIcon)
                     .font(.system(size: 60))
-                    .foregroundStyle(.blue)
-                
+                    .foregroundStyle(AppTheme.teal)
+
                 Text(SpecialtyConfig.disclaimerTitle)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                
-                Text("Clinical Decision Support")
+
+                Text(SpecialtyConfig.tagline)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

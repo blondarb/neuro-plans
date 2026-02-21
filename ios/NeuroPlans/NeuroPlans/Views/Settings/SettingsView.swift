@@ -141,7 +141,7 @@ struct SettingsView: View {
                             .foregroundStyle(.secondary)
                     }
 
-                    Label("Evidence-based clinical decision support for neurological diagnoses", systemImage: "brain.fill")
+                    Label(SpecialtyConfig.aboutDescription, systemImage: SpecialtyConfig.aboutIcon)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }

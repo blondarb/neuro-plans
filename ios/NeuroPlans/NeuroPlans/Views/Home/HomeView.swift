@@ -63,6 +63,12 @@ struct HomeView: View {
                             SettingPicker(selected: $store.selectedSetting)
                                 .padding(.horizontal)
 
+                            // Quick Actions (specialty-specific emergency protocols)
+                            if !SpecialtyConfig.quickActions.isEmpty {
+                                QuickActionsBar(plans: store.plans)
+                                    .padding(.horizontal)
+                            }
+
                             // Render sections in user's preferred order
                             ForEach(prefs.plansSectionOrder, id: \.self) { sectionId in
                                 switch sectionId {
@@ -798,6 +804,79 @@ private struct ToolSearchRow: View {
         case "reference_table": "Reference"
         case "conversion": "Conversion"
         default: "Tool"
+        }
+    }
+}
+
+// MARK: - Quick Actions Bar
+
+private struct QuickActionsBar: View {
+    @Environment(\.colorScheme) var colorScheme
+    let plans: [Plan]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Quick Access")
+                .font(.system(.caption, design: .rounded, weight: .semibold))
+                .foregroundStyle(.secondary)
+                .padding(.leading, 4)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    ForEach(Array(SpecialtyConfig.quickActions.enumerated()), id: \.offset) { _, action in
+                        if let plan = plans.first(where: { $0.id == action.id }) {
+                            NavigationLink(value: plan) {
+                                quickActionChip(action)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private func quickActionChip(_ action: (id: String, label: String, icon: String, color: String)) -> some View {
+        HStack(spacing: 8) {
+            Image(systemName: action.icon)
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(actionColor(action.color))
+
+            Text(action.label)
+                .font(.system(.caption, design: .rounded, weight: .semibold))
+                .foregroundStyle(.primary)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background {
+            if colorScheme == .dark {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(actionColor(action.color).opacity(0.15))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(actionColor(action.color).opacity(0.3), lineWidth: 1)
+                    }
+            } else {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(actionColor(action.color).opacity(0.08))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 12)
+                            .strokeBorder(actionColor(action.color).opacity(0.2), lineWidth: 1)
+                    }
+            }
+        }
+    }
+
+    private func actionColor(_ name: String) -> Color {
+        switch name {
+        case "red": .red
+        case "orange": .orange
+        case "yellow": .yellow
+        case "green": .green
+        case "blue": .blue
+        case "purple": .purple
+        case "pink": .pink
+        default: AppTheme.teal
         }
     }
 }

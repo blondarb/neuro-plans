@@ -67,4 +67,4 @@ These Terms are governed by the laws of the State of Montana. Disputes are subje
 
 ## 13. Contact
 
-support@neuroplans.app
+support@cardioplans.app

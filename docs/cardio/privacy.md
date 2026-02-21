@@ -19,7 +19,7 @@ Cardio Plans is a clinical reference tool. We do not require account creation, d
 
 **Email Address (Optional).** If you verify your email for team access, it is stored locally on your device to check domain eligibility. It is not sent to us or any third party.
 
-**Clinical Error Reports (Optional).** If you submit a clinical error report, the report content (plan name, section, error description, severity, and any suggested correction) is stored locally on your device. You may choose to send the report to errors@neuroplans.app via your device's mail app. Reports do not contain personal information unless you voluntarily include it.
+**Clinical Error Reports (Optional).** If you submit a clinical error report, the report content (plan name, section, error description, severity, and any suggested correction) is stored locally on your device. You may choose to send the report to errors@cardioplans.app via your device's mail app. Reports do not contain personal information unless you voluntarily include it.
 
 ## Information Stored on Your Device
 
@@ -47,4 +47,4 @@ We may update this policy and will post changes at this URL.
 
 ## Contact
 
-support@neuroplans.app
+support@cardioplans.app

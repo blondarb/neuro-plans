@@ -66,11 +66,11 @@ struct PaywallView: View {
     }
     
     // MARK: - Header Section
-    
+
     private var headerSection: some View {
         VStack(spacing: 16) {
-            // App icon
-            Image(systemName: "brain.head.profile")
+            // App icon (specialty-specific)
+            Image(systemName: SpecialtyConfig.headerIcon)
                 .font(.system(size: 60))
                 .foregroundStyle(
                     LinearGradient(
@@ -98,13 +98,10 @@ struct PaywallView: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("What's Included")
                 .font(.system(.headline, design: .rounded, weight: .semibold))
-            
-            FeatureRow(icon: "list.bullet.clipboard.fill", title: "All Clinical Plans", description: "Complete neurology treatment protocols")
-            FeatureRow(icon: "brain", title: "Clinical Scales", description: "NIHSS, mRS, GCS, and more")
-            FeatureRow(icon: "stethoscope", title: "Exam Guides", description: "Step-by-step neurological exams")
-            FeatureRow(icon: "hammer.fill", title: "Clinical Tools", description: "Calculators, timers, and converters")
-            FeatureRow(icon: "square.and.pencil", title: "Plan Builder", description: "Create custom order sets")
-            FeatureRow(icon: "arrow.triangle.2.circlepath", title: "Free Updates", description: "New plans and features as they're released")
+
+            ForEach(Array(SpecialtyConfig.paywallFeatures.enumerated()), id: \.offset) { _, feature in
+                FeatureRow(icon: feature.icon, title: feature.title, description: feature.description)
+            }
         }
         .padding()
         .background {
