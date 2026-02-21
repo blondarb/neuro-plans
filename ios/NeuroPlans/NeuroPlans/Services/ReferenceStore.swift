@@ -1,5 +1,8 @@
 import Foundation
+import OSLog
 import SwiftUI
+
+private let logger = Logger(subsystem: SpecialtyConfig.bundleId, category: "ReferenceStore")
 
 @Observable
 final class ReferenceStore {
@@ -112,7 +115,7 @@ final class ReferenceStore {
         do {
             guard let url = Bundle.main.url(forResource: resource, withExtension: "json") else {
                 let msg = "\(resource).json not found in bundle"
-                print(msg)
+                logger.error("\(msg)")
                 await MainActor.run { self.loadingError = msg }
                 if let empty = [String]() as? T { return empty }
                 if let empty = [ClinicalScale]() as? T { return empty }
@@ -124,7 +127,7 @@ final class ReferenceStore {
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
             let msg = "Failed to load \(resource): \(error.localizedDescription)"
-            print(msg)
+            logger.error("\(msg)")
             await MainActor.run { self.loadingError = msg }
             if let empty = [String]() as? T { return empty }
             if let empty = [ClinicalScale]() as? T { return empty }

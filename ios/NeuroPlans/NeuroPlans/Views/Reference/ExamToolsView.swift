@@ -280,7 +280,7 @@ struct PenlightToolView: View {
             
             device.unlockForConfiguration()
         } catch {
-            print("Flash error: \(error)")
+            // Camera flash configuration failed — non-critical, degrade gracefully
         }
     }
 }

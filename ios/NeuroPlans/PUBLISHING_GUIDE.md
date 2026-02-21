@@ -391,22 +391,145 @@ In App Store Connect:
 
 ### 7.3 Common Rejection Reasons & Fixes
 
-1. **Guideline 3.1.1 - Subscription issues**
-   - Ensure all disclosures are present
-   - Privacy policy accessible
-   - Terms of service accessible
+#### Guideline 3.1.1 — Subscription Disclosure (HIGH RISK)
 
-2. **Guideline 5.1.1 - Privacy**
-   - Privacy policy must be accessible
-   - Data collection must be disclosed
+Apple requires **all** of the following near the purchase button:
 
-3. **Guideline 4.2 - Minimum functionality**
-   - App must provide value
-   - Not just a website wrapper
+- [ ] Subscription price pulled from StoreKit (not hardcoded)
+- [ ] Subscription period pulled from StoreKit (not hardcoded "/year")
+- [ ] Explicit auto-renewal statement with price and period
+- [ ] Cancellation instructions ("Settings > Apple ID > Subscriptions")
+- [ ] Working "Restore Purchases" button (labeled clearly)
+- [ ] Working links to Terms of Service and Privacy Policy
+- [ ] Links must NOT force-unwrap: use `if let url = URL(...)` not `URL(...)!`
 
-4. **Guideline 2.1 - Crashes**
-   - Test thoroughly before submission
-   - Check crash logs in Xcode
+**Example disclosure text (must include actual price from StoreKit):**
+> Payment of $12.99 will be charged to your Apple ID account at confirmation of purchase. Subscription automatically renews at $12.99/year unless canceled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your device's Settings > Apple ID > Subscriptions.
+
+**Common mistake:** Advertising a free trial in the App Store description or paywall UI when the introductory offer is NOT configured in App Store Connect. If you advertise "14-day free trial," the StoreKit product must have a matching introductory offer.
+
+#### Guideline 4.3 — Spam / Duplicate Apps (HIGH RISK for multi-specialty)
+
+If you publish multiple apps from the same template (e.g., Neuro Plans + Cardio Plans), Apple will reject both unless they are "sufficiently different." Each app must have:
+
+- [ ] Different app icon and brand color
+- [ ] Different header icon on disclaimer and paywall screens
+- [ ] Different tagline and about description
+- [ ] Different paywall feature list (mentions specialty-specific content)
+- [ ] Different quick actions on home screen
+- [ ] Different exam tools (specialty-specific, not shared)
+- [ ] Different clinical scales and calculators
+- [ ] Different categories and plan content
+- [ ] Separate support email and legal documents
+- [ ] Unique App Store screenshots showing specialty content
+- [ ] App Review notes that explain the specialty focus
+
+**All differentiation is driven through `SpecialtyConfig.swift`.** See `APP_STORE_DIFFERENTIATION.md` for the full strategy.
+
+#### Guideline 5.1.1 — Privacy (MEDIUM RISK)
+
+- [ ] `PrivacyInfo.xcprivacy` declares ALL accessed APIs and collected data types
+- [ ] Privacy policy URL is live and accessible (test from a fresh browser)
+- [ ] If using Supabase or any third-party backend, disclose it in privacy policy
+- [ ] App Store Connect "App Privacy" section matches PrivacyInfo.xcprivacy
+
+**Data types to declare in PrivacyInfo.xcprivacy:**
+- `NSPrivacyAccessedAPICategoryUserDefaults` (for preferences, trial date, etc.)
+- `NSPrivacyCollectedDataTypeEmailAddress` (if email verification is used)
+- `NSPrivacyCollectedDataTypePurchaseHistory` (StoreKit subscription data)
+- `NSPrivacyCollectedDataTypeDeviceID` (if device ID is generated for plan requests)
+
+#### Guideline 4.2 — Minimum Functionality (LOW RISK)
+
+App must provide native value beyond a web wrapper. Our apps include:
+- Interactive clinical scales with scoring
+- Exam tools with hardware integration (camera flash, gyroscope)
+- Plan Builder with export
+- Clinical calculators
+
+#### Guideline 2.1 — Crashes (LOW RISK)
+
+- [ ] No `fatalError()` calls in production code
+- [ ] No force-unwraps (`!`) on values that could be nil at runtime
+- [ ] No `print()` statements in production — use `os_log` / `Logger`
+- [ ] Test on device (not just simulator) before submission
+- [ ] Check Xcode Organizer for crash logs after TestFlight
+
+---
+
+### 7.4 Pre-Submission Checklist
+
+Run this checklist **every time** before submitting any specialty app:
+
+#### Code Quality
+- [ ] Zero `fatalError()` calls (search entire project)
+- [ ] Zero `print()` calls (use `Logger` from OSLog)
+- [ ] No force-unwrapped URLs: `URL(string:)!` → `if let url = URL(string:)`
+- [ ] All strings in PaywallView, SettingsView, DisclaimerView read from `SpecialtyConfig`
+- [ ] `PrivacyInfo.xcprivacy` declares all APIs and data types
+
+#### Subscription Compliance (Guideline 3.1.1)
+- [ ] Price displayed from `product.displayPrice` (not hardcoded)
+- [ ] Period displayed from `subscription.subscriptionPeriod(for:)` (not hardcoded)
+- [ ] Auto-renewal disclosure includes price, period, and cancellation path
+- [ ] "Restore Purchases" button visible and labeled
+- [ ] Terms of Service link works
+- [ ] Privacy Policy link works
+- [ ] Manage Subscription link available for subscribed users
+- [ ] Revoked/refunded transactions handled (`transaction.revocationDate` check)
+
+#### App Store Connect
+- [ ] Agreements, Tax, and Banking completed (status: "Active")
+- [ ] Introductory offer configured (if trial is advertised)
+- [ ] Sandbox tester created and tested
+- [ ] App Privacy section published (not just configured)
+- [ ] Screenshots uploaded for all required device sizes
+- [ ] App Review notes explain subscription flow
+
+#### Multi-Specialty (Guideline 4.3)
+- [ ] Run `APP_STORE_DIFFERENTIATION.md` checklist
+- [ ] Support email is unique per app (not shared)
+- [ ] Legal docs reference correct app name and email
+- [ ] App Store screenshots show specialty-specific content
+- [ ] Review notes explain how this app differs from others
+
+---
+
+### 7.5 New Specialty App Setup
+
+When cloning the codebase for a new specialty (e.g., Cardio Plans, Pulm Plans):
+
+1. **Change ALL values in `SpecialtyConfig.swift`** — not just identity:
+   - `appName`, `specialty`, `bundleId`
+   - `brandColorHex`, `headerIcon`, `tagline`
+   - `storeKitProductId`
+   - `errorReportEmail`, `supportEmail`
+   - `supabaseUrl`, `supabaseAnonKey` (create separate Supabase project)
+   - `termsURL`, `privacyURL`, `disclaimerTitle`
+   - `paywallFeatures` (specialty-specific feature descriptions)
+   - `aboutDescription`, `aboutIcon`
+   - `quickActions` (specialty-specific emergency protocols)
+
+2. **Replace content files:**
+   - `Category.swift` — new categories and plan IDs
+   - `Reference.swift` — new scales, exams, and tools
+   - `CalculatorEngine.swift` — add specialty-specific calculators
+   - `ExamToolsView.swift` — replace exam tool enum with specialty tools
+   - `plans.json` — new clinical plan data
+   - `scales.json`, `exams.json`, `tools.json` — new reference data
+
+3. **Create legal pages:**
+   - Privacy policy at new domain (not shared with other apps)
+   - Terms of service at new domain
+   - Unique support email
+
+4. **App Store Connect:**
+   - Create separate app record
+   - Create new subscription group and product
+   - Upload unique screenshots
+   - Write unique description and keywords
+
+5. **Run the Pre-Submission Checklist (Section 7.4)**
 
 ---
 
