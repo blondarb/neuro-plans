@@ -1,3 +1,13 @@
+---
+title: App Store Rejection Fixes
+description: Fix App Store rejection issues (Guidelines 3.1.1, 4.3, 5.1.1) for NeuroPlans resubmission
+version: "1.0"
+status: approved
+tags:
+  - app-store
+  - submission
+---
+
 # App Store Rejection Fixes — Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
