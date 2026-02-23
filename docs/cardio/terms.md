@@ -7,7 +7,7 @@ hide:
 
 # Cardio Plans — Terms of Service
 
-*Last updated: February 18, 2026*
+*Last updated: February 23, 2026*
 
 By using the Cardio Plans application (the "App"), you agree to these Terms. If you do not agree, do not use the App.
 
