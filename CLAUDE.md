@@ -189,3 +189,24 @@ All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
 
 > "Run the checker on docs/drafts/new-onset-seizure.md"
 > "Skip the queue and work on the MS plan"
+
+## Body of Work
+
+**Status**: Maintenance
+
+### Recent
+- v1.0 live on App Store (READY_FOR_SALE)
+- Added citation enrichment pipeline, linked 194 new citations
+- Added monthly content cadence system and guideline freshness checker
+- Legal pages for Cardio Plans served from this repo
+- Updated RepGenius privacy policy and terms
+
+### In Progress
+- Monthly guideline freshness checks (automated cadence)
+
+### Planned
+- Quarterly guideline review cycle
+- Add new clinical plans as drafted by physician
+
+### Known Issues
+- CI parity check fails in GitHub Actions but passes locally (environment difference)
