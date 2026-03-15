@@ -195,11 +195,11 @@ All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
 **Status**: Maintenance
 
 ### Recent
+- Migrated iOS data API calls from Supabase to v2 REST API
 - v1.0 live on App Store (READY_FOR_SALE)
 - Added citation enrichment pipeline, linked 194 new citations
 - Added monthly content cadence system and guideline freshness checker
 - Legal pages for Cardio Plans served from this repo
-- Updated RepGenius privacy policy and terms
 
 ### In Progress
 - Monthly guideline freshness checks (automated cadence)
