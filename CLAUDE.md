@@ -2,6 +2,11 @@
 
 Clinical decision support templates for neurological diagnoses.
 
+## Design System (MANDATORY)
+- **Reference:** `~/dev/repos/sevaro-design-system/DESIGN_SYSTEM.md` — all colors, typography, components
+- **Figma:** [Sevaro Design System](https://www.figma.com/design/2SvpMV4WE5CFjxvsxTRg1w/Sevaro-Design-System) (file key: `2SvpMV4WE5CFjxvsxTRg1w`)
+- All UI must match the design system 1:1. Read the reference doc before building any UI component.
+
 ## Key Files
 
 | File | Purpose |
@@ -210,3 +215,17 @@ All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
 
 ### Known Issues
 - CI parity check fails in GitHub Actions but passes locally (environment difference)
+
+## Documentation Files
+
+Update these when committing changes (per global Commit Workflow rules):
+
+- `CLAUDE.md` — update if architecture, config, or status changed
+- `docs/HANDOFF.md` — update with session summary and next steps
+- `docs/ROADMAP.md` — update if feature plans or priorities changed
+- `docs/APP_STRATEGY.md` — update if app distribution or platform strategy changed
+- `docs/DESIGN_SYSTEM.md` — update if UI/UX patterns or components changed
+- `docs/PUBLISHING_SETUP.md` — update if App Store or publishing config changed
+- `qa/TEST_RUNBOOK.md` — update if test procedures changed
+- `qa/RELEASE_CHECKLIST.md` — update if deploy process changed
+- `qa/runs/` — create mission brief for each release
