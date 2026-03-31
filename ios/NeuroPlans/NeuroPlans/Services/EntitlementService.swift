@@ -247,7 +247,7 @@ final class EntitlementService {
 
         // 3. Record for analytics (fire and forget)
         Task {
-            try? await SupabaseService.recordVerifiedEmail(
+            try? await APIService.recordVerifiedEmail(
                 email: trimmedEmail,
                 domain: domain,
                 isWhitelisted: isWhitelisted
@@ -268,7 +268,7 @@ final class EntitlementService {
 
     // MARK: - Domain Whitelist
 
-    /// Fetch whitelisted domains from Supabase, using cache if fresh
+    /// Fetch whitelisted domains from v2 API, using cache if fresh
     func fetchWhitelistedDomains() async -> [String] {
         // Return cache if fresh
         if let fetchedAt = domainsFetchedAt,
@@ -278,7 +278,7 @@ final class EntitlementService {
         }
 
         do {
-            let domains = try await SupabaseService.fetchWhitelistedDomains(for: SpecialtyConfig.specialty)
+            let domains = try await APIService.fetchWhitelistedDomains(for: SpecialtyConfig.specialty)
             cachedDomains = domains
             domainsFetchedAt = Date()
             // Persist to UserDefaults for offline access
