@@ -7,7 +7,7 @@ hide:
 
 # RepGenius — Privacy Policy
 
-*Last updated: February 14, 2026*
+*Last updated: March 25, 2026*
 
 Steven Arbogast ("we," "our," or "us") operates the RepGenius mobile application (the "App"), an AI-powered fitness coach for iOS and Apple Watch.
 
@@ -23,9 +23,9 @@ RepGenius generates personalized workout plans using artificial intelligence. We
 
 **Motion Data.** The Apple Watch companion app uses accelerometer data to count exercise repetitions in real time. This data is processed entirely on your device and is never transmitted or stored.
 
-**Voice Input (Optional).** If you use voice input to describe workout preferences, audio is processed on your device using Apple's Speech framework. Audio recordings are not stored or transmitted to our servers.
+**Voice Input (Optional).** If you use voice input to describe workout preferences, audio is processed on your device using Apple's Speech framework. Audio recordings are not stored or transmitted. The text transcript of your voice answers may be sent to OpenAI for structured profile extraction (see "Third-Party AI Service" below).
 
-**Workout Generation Requests.** When you generate a workout, your fitness profile (goals, experience level, available equipment) and the AI prompt are sent to our server to generate your plan. We do not store the content of generated workouts on our servers.
+**Workout Generation Requests.** When you generate a workout, your fitness profile is sent to OpenAI to generate your plan. See "Third-Party AI Service" below for the full list of data sent.
 
 **Usage Data.** We track workout generation counts to enforce tier limits (e.g., 3 per week for Trial, 1 per month for Free). These counts are stored locally in your device's Keychain.
 
@@ -33,17 +33,43 @@ RepGenius generates personalized workout plans using artificial intelligence. We
 
 Basic tier users may provide their own OpenAI API key. This key is stored securely in your device's Keychain and is sent directly from your device to OpenAI. We never see or store your API key.
 
+## Third-Party AI Service — OpenAI
+
+RepGenius uses **OpenAI's GPT-5 Mini** model to generate personalized workouts. The App requests your explicit permission before sending any data to OpenAI. You can grant or revoke this consent at any time in Settings under "AI Data Sharing."
+
+**Data sent to OpenAI when you generate a workout:**
+
+- Your fitness level and conditioning level
+- Your primary fitness goal (strength, cardio, flexibility, weight loss, general fitness)
+- Preferred workout duration and environment (home, gym, outdoor)
+- Available equipment list
+- Joint movement constraints (load tolerance, range-of-motion limitations, pain flags, and notes for shoulder, elbow, wrist, neck, upper back, lower back, hip, knee, ankle)
+- Balance profile (support requirements, vertigo flags)
+- Cardio tolerance (high intensity tolerance, exertion symptoms)
+- Exercise format preference (reps, time, or mixed)
+- Recent workout history (last 3 workouts: exercise names, sets, reps, weights, RPE)
+- Exercise feedback history (last 30 days: which exercises were rated too hard or too easy)
+
+**How data is transmitted:**
+
+- For Trial, Free, and Pro tiers: data is sent through our secure server proxy (Supabase Edge Function) to OpenAI. Your data passes through our server only in transit — it is not stored.
+- For Basic (BYOK) tier: data is sent directly from your device to OpenAI using your own API key.
+- All transmissions use HTTPS/TLS encryption.
+
+**Data retention by OpenAI:** OpenAI processes the data to generate a workout response and does not retain your data after the response is generated, per OpenAI's API data usage policy. [OpenAI Privacy Policy](https://openai.com/privacy)
+
+**If you decline consent:** You will not be able to generate AI-powered workouts, but you can still use offline workout templates.
+
 ## How We Use Your Information
 
 - **Authentication:** To verify your identity and manage your subscription
-- **Workout Generation:** To create personalized AI-generated workout plans
+- **Workout Generation:** To create personalized AI-generated workout plans via OpenAI
 - **Tier Enforcement:** To apply workout limits based on your subscription
 - **Service Improvement:** Aggregated, anonymous usage patterns may inform future development
 
-## Third-Party Services
+## Other Third-Party Services
 
 - **Supabase:** Handles authentication and routes workout generation requests. [Supabase Privacy Policy](https://supabase.com/privacy)
-- **OpenAI:** Workout generation requests are processed by OpenAI. Requests are routed through our backend proxy (for Trial, Free, and Pro tiers) so your identity is not shared with OpenAI. BYOK users connect directly. [OpenAI Privacy Policy](https://openai.com/privacy)
 - **Apple:** StoreKit handles subscriptions and payments. HealthKit handles fitness data. [Apple Privacy Policy](https://www.apple.com/privacy/)
 
 ## Data Storage and Security

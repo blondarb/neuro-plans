@@ -162,7 +162,7 @@ struct PlanRequestView: View {
         submitState = .submitting
         Task {
             do {
-                try await SupabaseService.submitPlanRequest(text: requestText.trimmingCharacters(in: .whitespaces))
+                try await APIService.submitPlanRequest(text: requestText.trimmingCharacters(in: .whitespaces))
                 UserDefaults.standard.set(Date(), forKey: "lastPlanRequestDate")
                 await MainActor.run {
                     withAnimation {

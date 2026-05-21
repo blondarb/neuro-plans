@@ -20,7 +20,10 @@ enum SpecialtyConfig {
     static let errorReportEmail = "errors@neuroplans.app"
     static let supportEmail = "support@neuroplans.app"
 
-    // MARK: - Supabase
+    // MARK: - API
+    static let apiBaseURL = "https://plans.neuroplans.app"
+
+    // MARK: - Supabase (Auth OTP only — data calls use v2 API)
     static let supabaseUrl = "https://cyaginuvsqcbvyeuizlu.supabase.co"
     static let supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5YWdpbnV2c3FjYnZ5ZXVpemx1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwMDY5NjUsImV4cCI6MjA4NjU4Mjk2NX0.UGJN-vnfGy7eECbmT33g4-OXME-2bbwC9sm3ckOmpWA"
 
