@@ -1,11 +1,6 @@
 # Neuro Plans - Claude Code Instructions
 
-Clinical decision support templates for neurological diagnoses.
-
-## Design System (MANDATORY)
-- **Reference:** `~/dev/repos/sevaro-design-system/DESIGN_SYSTEM.md` — all colors, typography, components
-- **Figma:** [Sevaro Design System](https://www.figma.com/design/2SvpMV4WE5CFjxvsxTRg1w/Sevaro-Design-System) (file key: `2SvpMV4WE5CFjxvsxTRg1w`)
-- All UI must match the design system 1:1. Read the reference doc before building any UI component.
+Clinical decision support templates for neurological diagnoses. MkDocs site auto-deploys from `main` via GitHub Actions. v1.0 live on App Store. Status: Maintenance.
 
 ## Key Files
 
@@ -14,26 +9,9 @@ Clinical decision support templates for neurological diagnoses.
 | `docs/drafts/queue.md` | Plans awaiting review |
 | `docs/plans/index.md` | Approved plans index |
 | `docs/data/plans.json` | JSON data for clinical tool |
-| `mkdocs.yml` | Site navigation |
-| `scripts/generate_json.py` | Markdown-to-JSON converter |
-| `scripts/verify_citations.py` | PubMed citation verifier and PMID repair |
-| `scripts/validate_icd10.py` | ICD-10-CM code validation (lint + NLM API) |
-| `scripts/validate_medication.py` | RxNorm/OpenFDA medication validation |
-| `scripts/medication_resolver.py` | Central medication DB lookup |
-| `scripts/extract_medications.py` | Extract medications from plan files |
-| `scripts/harvest_medications.py` | Harvest meds from plans into central DB |
-| `scripts/generate_treatment_row.py` | Generate 10-column treatment table rows |
-| `scripts/check_guideline_freshness.py` | Monthly PubMed freshness checker for guidelines/trials |
-| `scripts/build.py` | Extracts plan metadata, generates index (runs during CI) |
-| `scripts/convert_to_structured_dosing.py` | Normalize dosing to `::` format |
-| `scripts/fix_dosing_frequency.py` | Fill missing frequency fields |
-| `scripts/expand_dose_options.py` | Generate dose option ranges for clinical tool |
 | `docs/data/medications.json` | Central medication database (936 meds) |
 | `docs/clinical/index.html` | Interactive clinical tool (consumes plans.json) |
-| `docs/ROADMAP.md` | Medication format & feature roadmap |
-| `docs/HANDOFF.md` | Developer handoff & support guide |
-| `docs/GUIDELINE_MAINTENANCE.md` | Guideline freshness process & quarterly review cadence |
-| `docs/data/freshness-report.md` | Latest guideline freshness report (auto-generated) |
+| `mkdocs.yml` | Site navigation |
 
 ## Skills
 
@@ -44,188 +22,49 @@ Clinical decision support templates for neurological diagnoses.
 | Rebuilder | `skills/neuro-rebuilder-SKILL.md` |
 | Citation Verifier | `docs/skills/neuro-citation-verifier-skill.md` |
 | CPT/Synonym Enricher | `docs/skills/neuro-cpt-synonym-enricher-skill.md` |
-| Comment Review | `skills/neuro-comment-review-SKILL.md` |
 | Style Guide | `docs/skills/style-guide.md` |
 
 ## Workflow
 
-### Draft Pipeline
-1. Check `docs/drafts/queue.md` for `pending` plans
-2. Claim plan (set `in_progress`)
-3. Run skills: checker -> rebuilder -> re-validate -> generate JSON -> citations -> CPT/synonyms
-4. Mark `completed` in queue, commit and push
+**Draft Pipeline:** Check `docs/drafts/queue.md` for `pending` → claim (`in_progress`) → run checker → rebuilder → validate → generate JSON → citations → CPT/synonyms → mark `completed`, commit/push.
 
-### Approval (Physician approves a completed plan)
-1. Copy `docs/drafts/<plan>.md` to `docs/plans/<plan>.md`
-2. Update metadata: frontmatter `status: approved`, remove draft banner, set STATUS line
-3. Add to `docs/plans/index.md` and `mkdocs.yml` nav
-4. Move from Queue to Approved table in `queue.md`
-5. Regenerate JSON: `python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --merge`
-6. Parity check: `python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --check-parity`
-7. Commit, push, create PR, provide compare URL for mobile review
+**Approval:** Copy draft to `docs/plans/`, update frontmatter (`status: approved`), add to `index.md` + `mkdocs.yml`, move in queue, regenerate JSON (`--merge` then `--check-parity`), commit/push/PR.
 
 ## JSON Schema (Critical)
 
 ```json
-{
-  "Plan Name": {
-    "id": "plan-id", "title": "Plan Name", "version": "1.0",
-    "icd10": [], "scope": "...",
-    "notes": [],        // MUST be array
-    "sections": {},     // MUST be object
-    "differential": [], "evidence": [], "monitoring": [], "disposition": []
-  }
-}
+{ "Plan Name": { "id": "", "title": "", "version": "1.0", "icd10": [], "scope": "",
+    "notes": [], "sections": {}, "differential": [], "evidence": [], "monitoring": [], "disposition": [] } }
 ```
 
 `notes` = array (never string). `sections` = object (never array).
 
 ## Medication Format (v3.0)
 
-All treatment tables use 10 columns:
-```
-| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |
-```
+10-column treatment tables: `| Treatment | Route | Indication | Dosing | Contraindications | Monitoring | ED | HOSP | OPD | ICU |`
 
-Structured dosing: `[dose] :: [route] :: [frequency] :: [full_instructions]`
-Use `::` not `|`. First field = starting dose only.
+Structured dosing: `[dose] :: [route] :: [frequency] :: [full_instructions]`. Use `::` not `|`.
 
 ## Table Layout Detection
 
-`docs/assets/js/table-layout.js` detects venue column positions by reading header text and adds `data-venue-pos` attributes. CSS targets these attributes instead of column count. Three patterns:
-
-- `last4` — venue cols are last 4 (treatment tables, some workup tables)
-- `mid` — 4 venue cols at positions 2-5 (workup/imaging with ICU)
-- `mid3` — 3 venue cols at positions 2-4 (LP/workup without ICU)
-
-See `docs/skills/style-guide.md` for supported column layouts.
-
-## Commands
-
-```bash
-# JSON generation & validation
-python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --validate-only
-python -X utf8 scripts/generate_json.py docs/drafts/<plan>.md --merge
-python -X utf8 scripts/generate_json.py docs/plans/<plan>.md --check-parity
-
-# Citation verification (requires internet for --verify)
-python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify
-python -X utf8 scripts/verify_citations.py docs/plans/<plan>.md --verify --repair --apply
-
-# ICD-10 code validation
-python -X utf8 scripts/validate_icd10.py docs/drafts/<plan>.md --lint
-python -X utf8 scripts/validate_icd10.py docs/drafts/<plan>.md --verify
-python -X utf8 scripts/validate_icd10.py --all --lint --quiet
-python -X utf8 scripts/validate_icd10.py --all --verify --save-report docs/data/icd10-report.md
-
-# Medication validation (requires internet)
-python3 scripts/validate_medication.py --validate-db
-python3 scripts/validate_medication.py --batch-from-plans --save-report docs/data/full-validation-report.md
-
-# Medication harvest (expand central DB from plan data)
-python -X utf8 scripts/harvest_medications.py --stats
-python -X utf8 scripts/harvest_medications.py --preview
-python -X utf8 scripts/harvest_medications.py --merge
-
-# Treatment row generation (from central DB)
-python -X utf8 scripts/generate_treatment_row.py <med-name> --header
-python -X utf8 scripts/generate_treatment_row.py <med-name> --context <context-id>
-python -X utf8 scripts/generate_treatment_row.py --indication "neuropathic pain"
-
-# Guideline freshness check (monthly, requires internet)
-python3 scripts/check_guideline_freshness.py --cache
-python3 scripts/check_guideline_freshness.py --guidelines-only --cache --quiet
-```
-
-Always use `-X utf8` flag on Windows.
+`docs/assets/js/table-layout.js` adds `data-venue-pos` attributes. Three patterns: `last4` (venue cols last 4), `mid` (positions 2-5), `mid3` (positions 2-4). See `docs/skills/style-guide.md`.
 
 ## Quality Targets
 
-- **90%+ score** (54/60) on checker
-- All C-codes (critical issues) resolved
-- All medications: individual rows, structured dosing, complete columns
+- **90%+ score** (54/60) on checker. All C-codes resolved. All meds: individual rows, structured dosing.
 
-## Guideline Maintenance
+## On-Demand Reference
 
-Run `check_guideline_freshness.py --cache` monthly (1st of each month). See `docs/GUIDELINE_MAINTENANCE.md` for the full process. Key actions:
+| Area | Read first |
+|------|-----------|
+| CLI commands | `docs/COMMANDS.md` |
+| Guideline maintenance | `docs/GUIDELINE_MAINTENANCE.md` |
+| Roadmap | `docs/ROADMAP.md` |
+| Handoff | `docs/HANDOFF.md` |
+| QA | `qa/TEST_RUNBOOK.md` |
 
-- **"newer_available"** → Update plan references and content immediately (Steps 1-3 in maintenance doc)
-- **"aging" (≥8yr)** → Check society website manually; PubMed may miss reaffirmations
-- **"review_recommended" (≥5yr)** → Verify content still reflects current practice
+## Deploy
 
-After updating plan files: regenerate JSON → copy to iOS bundle → verify parity.
+Auto-deploys from `main` via GitHub Actions. CI: `scripts/build.py` → `mkdocs build` → GitHub Pages.
 
-## QA & Testing
-
-All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
-
-| Doc | Purpose |
-|-----|---------|
-| `qa/TEST_RUNBOOK.md` | Smoke, regression, role-based test procedures |
-| `qa/TEST_CASES.yaml` | Structured test cases with IDs, steps, expected results |
-| `qa/BUG_TEMPLATE.md` | Bug report template |
-| `qa/RELEASE_CHECKLIST.md` | Pre-deploy and post-deploy checks |
-| `qa/runs/RUN_TEMPLATE.md` | Per-release run log (copy for each run) |
-
-**Rules:**
-- Run smoke tests (SMK-01 through SMK-07) after every deploy to main
-- Use `qa/RELEASE_CHECKLIST.md` for every PR merge
-- File bugs using `qa/BUG_TEMPLATE.md` with a TEST_CASES.yaml reference
-- Do not rewrite the runbook each release -- write a short mission brief in `qa/runs/`
-- **Planner** (VS Code / Claude Code): selects test cases, writes mission brief
-- **Executor** (Claude Code for Chrome): runs test cases against live site
-
-## Git & Deploy
-
-- Site auto-deploys from `main` via GitHub Actions (`.github/workflows/deploy.yml`)
-- CI pipeline: `scripts/build.py` (generates index) → `mkdocs build` → GitHub Pages
-- Always work on feature branches, merge via PR
-- Use `gh pr create` and `gh pr merge` for PRs
-- Provide `https://github.com/blondarb/neuro-plans/compare/main...<branch>` for mobile review
-- Use `-X utf8` for all Python commands on Windows
-
-## Clinical Tool & Comments
-
-- **Clinical tool** (`docs/clinical/index.html`): Interactive plan viewer consuming `docs/data/plans.json`
-- **Comment system** (`docs/assets/js/comments.js`): Firebase-backed inline comments for physician review
-- **Data directory** (`docs/data/`): Source files (plans.json, medications.json) + auto-generated artifacts (.medication_cache.json, validation reports)
-
-## Manual Override
-
-> "Run the checker on docs/drafts/new-onset-seizure.md"
-> "Skip the queue and work on the MS plan"
-
-## Body of Work
-
-**Status**: Maintenance
-
-### Recent
-- Migrated iOS data API calls from Supabase to v2 REST API
-- v1.0 live on App Store (READY_FOR_SALE)
-- Added citation enrichment pipeline, linked 194 new citations
-- Added monthly content cadence system and guideline freshness checker
-- Legal pages for Cardio Plans served from this repo
-
-### In Progress
-- Monthly guideline freshness checks (automated cadence)
-
-### Planned
-- Quarterly guideline review cycle
-- Add new clinical plans as drafted by physician
-
-### Known Issues
-- CI parity check fails in GitHub Actions but passes locally (environment difference)
-
-## Documentation Files
-
-Update these when committing changes (per global Commit Workflow rules):
-
-- `CLAUDE.md` — update if architecture, config, or status changed
-- `docs/HANDOFF.md` — update with session summary and next steps
-- `docs/ROADMAP.md` — update if feature plans or priorities changed
-- `docs/APP_STRATEGY.md` — update if app distribution or platform strategy changed
-- `docs/DESIGN_SYSTEM.md` — update if UI/UX patterns or components changed
-- `docs/PUBLISHING_SETUP.md` — update if App Store or publishing config changed
-- `qa/TEST_RUNBOOK.md` — update if test procedures changed
-- `qa/RELEASE_CHECKLIST.md` — update if deploy process changed
-- `qa/runs/` — create mission brief for each release
+*Last updated: April 9, 2026*
