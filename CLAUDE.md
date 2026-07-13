@@ -1,5 +1,7 @@
 # Neuro Plans - Claude Code Instructions
 
+> **MEMORY PROTOCOL:** Read HANDOFF.md first and update it last every session — it is the shared source of truth with ChatGPT/Codex.
+
 Clinical decision support templates for neurological diagnoses. MkDocs site auto-deploys from `main` via GitHub Actions. v1.0 live on App Store. Status: Maintenance.
 
 ## Key Files
