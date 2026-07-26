@@ -193,3 +193,20 @@ All testing docs live in `/qa`. Do not duplicate test procedures elsewhere.
 ## Gotchas
 
 - CI parity check fails in GitHub Actions but passes locally (environment difference)
+
+## Where this repo fits (read before changing plan content)
+
+This is **v1** — the original Python/mkdocs authoring system. It is **superseded but not
+dead**: its 167 markdown plans seeded production, but live neurology is now **487 plans**,
+so this repo holds roughly a third of what is actually served. It is no longer the source
+of truth.
+
+- Plans are authored and validated today by **`sevaro-plan-pipeline`** (AWS Lambda +
+  Bedrock: `generate_plan`, `verify_citations`, `verify_clinical`, `verify_drugs`,
+  `enrich_dosing`), parameterised by `DATABASE_NAME` per specialty.
+- They are served by **`neuro-plans-v2`** at `plans.neuroplans.app` and
+  `neuro.neuroplans.app`, reading the `neuro_plans` Postgres database.
+
+Editing markdown here does **not** change what clinicians see. `scripts/import-plans.mjs`
+in neuro-plans-v2 is a manual one-off seeder pointed at this repo as a local sibling — it
+is not a pipeline.
